@@ -18,7 +18,7 @@ This has only been tested in CATIA V5 R21.
 ## Requirements
 
 * python >= 3.6 
-* See requirements.txt
+* pywin32
 * CATIA V5/V6
 
 ## Example Usage
