@@ -4,7 +4,7 @@ from catia_python import Application
 from catia_python import Document
 from catia_python import create_reference, create_measurable
 from catia_python import CATIAMeasurable
-from catia_python import Part
+from catia_python import Part, get_document_part_object
 from catia_python import create_spa_workbench
 
 catia = Application()

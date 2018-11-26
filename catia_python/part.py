@@ -1,15 +1,35 @@
 #! /usr/bin/python36
 
+from catia_python import Application
+from catia_python import Document
+
 
 class Part:
 
     def __init__(self, document):
         """
 
-        :param document:
+        ### FROM CAA V5 Visual Basic help ###
+        # The root level object inside a PartDocument object.
+        # Role: It aggregates all the objects making up the part document.
+        # It provides many factories and collections. The collections list only the direct children of the part.
+        # Selection.Search allows to get all objects of one type.
+
+        The CATIA Part object is accessible using either self.part.Part of self.catia_part.
+
+        :param document: CATIA Document COM object.
         """
 
         self.part = document.Part
+
+    @property
+    def catia_part(self):
+        """
+        Returns the CATIA Part object. Same as self.part.Part.
+        :return:
+        """
+
+        return self.part.part
 
     @property
     def name(self):
@@ -149,3 +169,16 @@ class Part:
         :return:
         """
         return f'Part object (name: {self.name})'
+
+
+def get_document_part_object():
+    """
+
+    :return: Part(), Document()
+    """
+
+    catia = Application()
+    document = Document(catia.catia).document
+    part = Part(document)
+
+    return document, part

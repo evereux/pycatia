@@ -1,19 +1,14 @@
 #! /usr/bin/python36
 
-from catia_python import Application
-from catia_python import Document
 from catia_python import create_reference, create_measurable
 from catia_python import CATIAMeasurable
-from catia_python import Part
+from catia_python import get_document_part_object
 from catia_python import create_spa_workbench
 
-catia = Application()
-document = Document(catia.catia).document
-# document.name = caita_measurable_part.CATPart
+document, part = get_document_part_object()
+# document.name = catia_measurable_part.CATPart
+# part.name = catia_measurable_part
 spa_workbench = create_spa_workbench(document)
-
-part = Part(document)
-# part.name = caita_measurable_part
 
 bodies = part.get_bodies()
 body_names = part.get_bodies_names()
@@ -36,5 +31,5 @@ catia_measurable = CATIAMeasurable(measurable)
 
 # run the VB function Measurable.GetCOG()
 center_of_gravity = catia_measurable.get_cog()
-
 # center_of_gravity = (86.06520158074527, 81.36458658122612, 10.0)
+print(center_of_gravity)
