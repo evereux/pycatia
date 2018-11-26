@@ -22,43 +22,6 @@ This has only been tested in CATIA V5 R21.
 * CATIA V5/V6
 
 ## Example Usage
+# 
 1. Open the file catia_measurable.CATPart
-
-        from catia_python import Application
-        from catia_python import Document
-        from catia_python import create_reference, create_measurable
-        from catia_python import CATIAMeasurable
-        from catia_python import Part
-        from catia_python import create_spa_workbench
-        
-        catia = Application()
-        document = Document(catia.catia).document
-        # document.name = caita_measurable_part.CATPart
-        spa_workbench = create_spa_workbench(document)
-        
-        part = Part(document)
-        # part.name = caita_measurable_part
-        
-        bodies = part.get_bodies()
-        body_names = part.get_bodies_names()
-        # body_names = ['PartBody', 'EmptyPartBody']
-        
-        # gets first body in bodies list.
-        body = bodies[0]
-        
-        # or get the body by name
-        body_by_name = part.get_body_by_name('PartBody')
-        
-        # equivalent to VB CreateReferenceFromObject()
-        # part.part is the VB Part object.
-        reference = create_reference(part.part, body)
-        
-        # equivalent to VB GetMeasurable() 
-        measurable = create_measurable(spa_workbench, reference)
-        
-        # the measurable object
-        catia_measurable = CATIAMeasurable(measurable)
-        
-        # run the VB function Measurable.GetCOG()
-        center_of_gravity = catia_measurable.get_cog()
-        # center_of_gravity = (86.06520158074527, 81.36458658122612, 10.0)
+2. Run the script example_1.py

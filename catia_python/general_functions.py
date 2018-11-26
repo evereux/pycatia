@@ -1,4 +1,4 @@
-#! /user/bin/python36
+#! /user/bin/python3.6
 
 
 def create_reference(com_part, catia_object):

@@ -1,4 +1,4 @@
-#! /usr/bin/python36
+#! /usr/bin/python3.6
 
 from .application import Application
 from .document import Document

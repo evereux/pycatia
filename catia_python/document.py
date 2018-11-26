@@ -1,4 +1,4 @@
-#! /usr/bin/python36
+#! /usr/bin/python3.6
 
 
 class Document:
@@ -17,23 +17,13 @@ class Document:
         # the active window. A document aggregates the current object or set of objects in the Selection
         # object, and Cameras, a camera collection.
 
-        The CATIA Document object is accessible using either self.document.Document or self.catia_document.
+        The CATIA Document object is accessible using either self.document.
 
         :param catia: CATIA CATIA COM object.
         :return:
         """
 
         self.document = catia.ActiveDocument
-
-    @property
-    def catia_document(self):
-        """
-
-        Returns the Document object. Same as self.document.Document.
-
-        :return:
-        """
-        return self.document
 
     @property
     def name(self):

@@ -1,4 +1,4 @@
-#! /usr/bin/python36
+#! /usr/bin/python3.6
 
 from catia_python import Application
 from catia_python import Document
@@ -15,21 +15,12 @@ class Part:
         # It provides many factories and collections. The collections list only the direct children of the part.
         # Selection.Search allows to get all objects of one type.
 
-        The CATIA Part object is accessible using either self.part.Part of self.catia_part.
+        The CATIA Part object is accessible using self.part.part.
 
         :param document: CATIA Document COM object.
         """
 
         self.part = document.Part
-
-    @property
-    def catia_part(self):
-        """
-        Returns the CATIA Part object. Same as self.part.Part.
-        :return:
-        """
-
-        return self.part.part
 
     @property
     def name(self):
@@ -39,6 +30,53 @@ class Part:
         """
 
         return self.part.Name
+
+    @property
+    def density(self):
+        """
+
+        ### FROM CAA V5 Visual Basic help ###
+        # Returns the part density.
+        # Example:
+        # The following example displays the density of the part:
+        #       Set partRoot = partDoc.Part
+        #       MsgBox "The density is " & partRoot.Density
+
+        :return:
+        """
+
+        return self.part.Density
+
+    def get_geometric_elements(self):
+        """
+
+        # Returns the collection object containing the part geometrical elements. Only 3D elements are concerned here,
+        # 2D elements are managed in sketches. The origin elements are also accessible thru that collection.
+        # Example:
+        # The following example returns in geomElts the 3D elements of the partRoot part from the partDoc part document:
+        #       Set partRoot = partDoc.Part
+        #       Set geomElts = partRoot.GeometricElements
+
+        :return:
+        """
+
+        return self.part.GeometricElements
+
+    def get_annotation_sets(self):
+        """
+
+        ### FROM CAA V5 Visual Basic help ###
+        # Returns the collection object containing the annotation sets. All the annotation sets that are aggregated in the part might be accessed thru that collection.
+        # Example:
+        # The following example returns in annotationSets the annotation sets of the partRoot part from the partDoc part document:
+        #       Set partRoot = partDoc.Part
+        #       Dim annotationSets As AnnotationSets
+        #       Set annotationSets = partRoot.AnnotationSets
+
+        :return:
+        """
+
+        return self.part.AnnotationSets
 
     def get_axis_systems(self):
         """
