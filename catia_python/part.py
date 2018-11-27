@@ -2,6 +2,18 @@
 
 from catia_python import Application
 from catia_python import Document
+from catia_python import create_reference
+
+geometrical_feature_type = [
+    'Unknown',
+    'Point',
+    'Curve',
+    'Line',
+    'Circle',
+    'Surface',
+    'Plane',
+    'Solid, Volume'
+]
 
 
 class Part:
@@ -47,21 +59,6 @@ class Part:
 
         return self.part.Density
 
-    def get_geometric_elements(self):
-        """
-
-        # Returns the collection object containing the part geometrical elements. Only 3D elements are concerned here,
-        # 2D elements are managed in sketches. The origin elements are also accessible thru that collection.
-        # Example:
-        # The following example returns in geomElts the 3D elements of the partRoot part from the partDoc part document:
-        #       Set partRoot = partDoc.Part
-        #       Set geomElts = partRoot.GeometricElements
-
-        :return:
-        """
-
-        return self.part.GeometricElements
-
     def get_annotation_sets(self):
         """
 
@@ -73,10 +70,24 @@ class Part:
         #       Dim annotationSets As AnnotationSets
         #       Set annotationSets = partRoot.AnnotationSets
 
-        :return:
+        :return: AnnotationSets COM object
         """
 
         return self.part.AnnotationSets
+
+    def get_axes_names(self):
+        """
+
+        :return: list()
+        """
+
+        names = list()
+
+        for axis in self.get_axis_systems():
+            name = axis.name
+            names.append(name)
+
+        return names
 
     def get_axis_systems(self):
         """
@@ -95,24 +106,10 @@ class Part:
 
         return axes
 
-    def get_axes_names(self):
-        """
-
-        :return:
-        """
-
-        names = list()
-
-        for axis in self.get_axis_systems():
-            name = axis.name
-            names.append(name)
-
-        return names
-
     def get_axis_by_name(self, name):
         """
 
-        :return:
+        :return: Axis System COM object
         """
 
         for axis_name in self.get_axes_names():
@@ -123,7 +120,7 @@ class Part:
     def get_bodies(self):
         """
 
-        :return:
+        :return: list()
         """
 
         catia_bodies = self.part.Bodies
@@ -138,7 +135,7 @@ class Part:
     def get_bodies_names(self):
         """
 
-        :return:
+        :return: list()
         """
 
         names = list()
@@ -152,7 +149,7 @@ class Part:
     def get_body_by_name(self, name):
         """
 
-        :return:
+        :return: Body COM object
         """
 
         for body_name in self.get_bodies_names():
@@ -160,10 +157,47 @@ class Part:
                 return self.part.Bodies.Item(name)
         return None
 
+    def get_geometric_elements(self):
+        """
+
+        # Returns the collection object containing the part geometrical elements. Only 3D elements are concerned here,
+        # 2D elements are managed in sketches. The origin elements are also accessible thru that collection.
+        # Example:
+        # The following example returns in geomElts the 3D elements of the partRoot part from the partDoc part document:
+        #       Set partRoot = partDoc.Part
+        #       Set geomElts = partRoot.GeometricElements
+
+        !!! WARNING !!! The items outputted from this don't return the correct geometrical_feature_type.
+        As yet, not sure what impact that will have on measuring.
+
+        elem = geomtric_elements.Item(5)
+        print(elem.name, part.get_geometrical_feature_type(elem))
+        returns Point.1 Unknown
+
+        :return: GeometricElements COM object.
+        """
+
+        return self.part.GeometricElements
+
+    def get_geometrical_feature_type(self, geometrical_feature):
+        """
+
+        !!! WARNING !!! Use with care on items returned from self.get_geometric_elements()
+        Reported types are incorrect with the version of CATIA tested with.
+
+        :param geometrical_feature:
+        :return:
+        """
+
+        reference_object = create_reference(self.part, geometrical_feature)
+        feature_type = self.part.HybridShapeFactory.GetGeometricalFeatureType(reference_object)
+
+        return geometrical_feature_type[feature_type]
+
     def get_hybrid_bodies(self):
         """
 
-        :return:
+        :return: list()
         """
 
         hybrid_bodies = self.part.HybridBodies
@@ -178,7 +212,7 @@ class Part:
     def get_hybrid_bodies_names(self):
         """
 
-        :return:
+        :return: list
         """
 
         hybrid_bodies = self.get_hybrid_bodies()
@@ -193,13 +227,25 @@ class Part:
     def get_hybrid_body_by_name(self, name):
         """
 
-        :return:
+        :return: HybridBody COM object.
         """
 
         for hybrid_body_name in self.get_hybrid_bodies_names():
             if name == hybrid_body_name:
                 return self.part.HybridBodies.Item(name)
         return None
+
+    def get_hybrid_shapes_from_hybrid_body(self, hybrid_body):
+        """
+
+        :return: list()
+        """
+
+        shapes = list()
+        for i in range(hybrid_body.HybridShapes.Count):
+            shapes.append(hybrid_body.HybridShapes.Item(i+1))
+
+        return shapes
 
     def __repr__(self):
         """
@@ -212,7 +258,9 @@ class Part:
 def get_document_part_object():
     """
 
-    :return: Part(), Document()
+    Initialises the CATIA Application object.
+
+    :return: Document COM object, Part()
     """
 
     catia = Application()

@@ -393,3 +393,17 @@ def test_centre_of_gravity():
         round(centre_of_gravity[0], 6),
         round(centre_of_gravity[1], 6),
         round(centre_of_gravity[2], 6))
+
+
+def test_get_hybrid_shapes_from_hybrid_body():
+    """
+
+    :return:
+    """
+
+    point_shapes = 11
+
+    hybrid_body = part.get_hybrid_body_by_name('Points')
+    catia_point_shapes = part.get_hybrid_shapes_from_hybrid_body(hybrid_body)
+
+    assert point_shapes == len(catia_point_shapes)
