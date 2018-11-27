@@ -1,4 +1,13 @@
-#! /usr/bin/python36
+#! /usr/bin/python3.6
+
+"""
+
+    Example 1:
+
+    Shows how to access the CATIA COM object with a .CATPart open and get the center
+    of gravity for the part body 'PartBody'.
+
+"""
 
 from catia_python import create_reference, create_measurable
 from catia_python import CATIAMeasurable
