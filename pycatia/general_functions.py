@@ -1,5 +1,7 @@
 #! /user/bin/python3.6
 
+from win32com.client import Dispatch
+
 
 def create_reference(com_part, catia_object):
     """

@@ -1,8 +1,8 @@
 #! /usr/bin/python3.6
 
-from catia_python import Application
-from catia_python import Document
-from catia_python import create_reference
+from pycatia import CATIA_Application
+from pycatia import Document
+from pycatia import create_reference
 
 geometrical_feature_type = [
     'Unknown',
@@ -243,7 +243,7 @@ class Part:
 
         shapes = list()
         for i in range(hybrid_body.HybridShapes.Count):
-            shapes.append(hybrid_body.HybridShapes.Item(i+1))
+            shapes.append(hybrid_body.HybridShapes.Item(i + 1))
 
         return shapes
 
@@ -263,7 +263,7 @@ def get_document_part_object():
     :return: Document COM object, Part()
     """
 
-    catia = Application()
+    catia = CATIA_Application()
     document = Document(catia.catia).document
     part = Part(document)
 

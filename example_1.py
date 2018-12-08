@@ -9,10 +9,10 @@
 
 """
 
-from catia_python import create_reference, create_measurable
-from catia_python import CATIAMeasurable
-from catia_python import get_document_part_object
-from catia_python import create_spa_workbench
+from pycatia import create_reference, create_measurable
+from pycatia import CATIAMeasurable
+from pycatia import get_document_part_object
+from pycatia import create_spa_workbench
 
 document, part = get_document_part_object()
 # document.name = catia_measurable_part.CATPart
