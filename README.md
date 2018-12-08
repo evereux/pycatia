@@ -36,6 +36,10 @@ This has only been tested in CATIA V5 R21.
 
     Shows how to get all the points in the geometrical set 'Points' and get the co-ordinate.
     
+    Example 3:
+    
+    Shows how to search for all points in the document and return the co-ordinates.
+    
 ## Running The Tests
 * CATIA must be running the the part catia_measurable_part.CATPart open.
-* Run the command: `python -m pytest tests\test_1.py`
+* Run the command: `py.test -v --cov-report term-missing --cov=pycatia tests/`
