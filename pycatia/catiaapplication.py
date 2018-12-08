@@ -3,7 +3,7 @@
 from win32com.client import Dispatch
 
 
-class Application:
+class CATIA_Application:
     """
 
     ### FROM CAA V5 Visual Basic help ###
@@ -25,4 +25,4 @@ class Application:
 
         :return:
         """
-        return f'Application object ()'
+        return f'CATIA_Application object ()'

@@ -1,17 +1,17 @@
-#! /usr/bin/python36
+#! /usr/bin/python3.6
 
-from catia_python import Application
-from catia_python import Document
-from catia_python import create_reference, create_measurable
-from catia_python import CATIAMeasurable
-from catia_python import Part, get_document_part_object
-from catia_python import create_spa_workbench
+from pycatia import CATIA_Application
+from pycatia import Document
+from pycatia import create_reference, create_measurable
+from pycatia import CATIAMeasurable
+from pycatia import Part, get_document_part_object
+from pycatia import create_spa_workbench
 
-catia = Application()
-document = Document(catia.catia).document
-spa_workbench = create_spa_workbench(document)
+catia = CATIA_Application()
+document = Document(catia.catia)
+spa_workbench = create_spa_workbench(document.document)
 
-part = Part(document)
+part = Part(document.document)
 
 bodies = part.get_bodies()
 body = bodies[0]
@@ -73,7 +73,24 @@ cylinder_measurable = create_measurable(spa_workbench, cylinder_reference)
 catia_measurable_cylinder = CATIAMeasurable(cylinder_measurable)
 
 
+def test_application():
+
+    assert 'CATIA_Application' in catia.__repr__()
+
+
+def test_document():
+
+    assert 'catia_measurable_part.CATPart' == document.name
+    assert 'Document object' in document.__repr__()
+
+    # search for all points
+    selection_items = document.search_for_items(document, ['Point'])
+
+    assert len(selection_items) == 11
+
+
 def round_tuple(tuple_object, decimal_places=6):
+
     rounded_list = list()
 
     for item in tuple_object:
