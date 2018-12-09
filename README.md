@@ -24,7 +24,7 @@ This has currently only been tested in CATIA V5 R21.
 
 ## Installation
 
-## with pip
+### with pip
 
     pip install pycatia
 
