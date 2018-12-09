@@ -1,13 +1,13 @@
 #! /usr/bin/python3.6
 
-from pycatia import CATIA_Application
+from pycatia import CATIAApplication
 from pycatia import Document
 from pycatia import create_reference, create_measurable
 from pycatia import CATIAMeasurable
 from pycatia import Part
 from pycatia import create_spa_workbench
 
-catia = CATIA_Application()
+catia = CATIAApplication()
 document = Document(catia.catia)
 spa_workbench = create_spa_workbench(document.document)
 
@@ -75,7 +75,7 @@ catia_measurable_cylinder = CATIAMeasurable(cylinder_measurable)
 
 def test_application():
 
-    assert 'CATIA_Application' in catia.__repr__()
+    assert 'CATIAApplication' in catia.__repr__()
 
 
 def test_document():
