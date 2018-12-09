@@ -4,7 +4,7 @@ from pycatia import CATIA_Application
 from pycatia import Document
 from pycatia import create_reference, create_measurable
 from pycatia import CATIAMeasurable
-from pycatia import Part, get_document_part_object
+from pycatia import Part
 from pycatia import create_spa_workbench
 
 catia = CATIA_Application()
@@ -122,9 +122,9 @@ def test_geometry_name():
     """
 
     geometry_name = 'CatMeasurableVolume'
-    catia_geomertry_name = catia_measurable.geometry_name
+    catia_geometry_name = catia_measurable.geometry_name
 
-    assert geometry_name == catia_geomertry_name
+    assert geometry_name == catia_geometry_name
 
 
 def test_length():
@@ -139,16 +139,16 @@ def test_length():
     assert length == round(catia_length, 6)
 
 
-def test_permieter():
+def test_perimeter():
     """
 
     :return:
     """
 
-    perimiter = 265.946845
-    catia_permieter = catia_measurable_surface.perimeter
+    perimeter = 265.946845
+    catia_perimeter = catia_measurable_surface.perimeter
 
-    assert perimiter == round(catia_permieter, 6)
+    assert perimeter == round(catia_perimeter, 6)
 
 
 def test_radius():

@@ -1,6 +1,6 @@
 #! /usr/bin/python3.6
 
-from .catiaapplication import CATIA_Application
+from .catiaapplication import CATIAApplication
 from .document import Document
 from .general_functions import create_measurable, create_reference
 from .measurable import CATIAMeasurable
