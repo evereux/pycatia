@@ -1,6 +1,6 @@
 #! /usr/bin/python3.6
 
-from pycatia import CATIA_Application
+from pycatia import CATIAApplication
 from pycatia import Document
 from pycatia import create_reference
 
@@ -63,9 +63,11 @@ class Part:
         """
 
         ### FROM CAA V5 Visual Basic help ###
-        # Returns the collection object containing the annotation sets. All the annotation sets that are aggregated in the part might be accessed thru that collection.
+        # Returns the collection object containing the annotation sets. All the annotation sets
+        # that are aggregated in the part might be accessed thru that collection.
         # Example:
-        # The following example returns in annotationSets the annotation sets of the partRoot part from the partDoc part document:
+        # The following example returns in annotationSets the annotation sets of the partRoot part
+        # from the partDoc part document:
         #       Set partRoot = partDoc.Part
         #       Dim annotationSets As AnnotationSets
         #       Set annotationSets = partRoot.AnnotationSets
@@ -170,7 +172,7 @@ class Part:
         !!! WARNING !!! The items outputted from this don't return the correct geometrical_feature_type.
         As yet, not sure what impact that will have on measuring.
 
-        elem = geomtric_elements.Item(5)
+        elem = geometric_elements.Item(5)
         print(elem.name, part.get_geometrical_feature_type(elem))
         returns Point.1 Unknown
 
@@ -235,7 +237,8 @@ class Part:
                 return self.part.HybridBodies.Item(name)
         return None
 
-    def get_hybrid_shapes_from_hybrid_body(self, hybrid_body):
+    @staticmethod
+    def get_hybrid_shapes_from_hybrid_body(hybrid_body):
         """
 
         :return: list()
@@ -263,7 +266,7 @@ def get_document_part_object():
     :return: Document COM object, Part()
     """
 
-    catia = CATIA_Application()
+    catia = CATIAApplication()
     document = Document(catia.catia).document
     part = Part(document)
 

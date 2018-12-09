@@ -26,6 +26,7 @@ catia_measurable_name_list = ['CatMeasurableUnknown',
                               'CatMeasurableAxisSystem', ]
 
 
+# noinspection SpellCheckingInspection
 class CATIAMeasurable:
     """
 
@@ -399,37 +400,38 @@ class CATIAMeasurable:
         return result
 
     def get_minimum_distance(self, reference):
+        # noinspection SpellCheckingInspection
         """
 
-        ### FROM CAA V5 Visual Basic help ###
-        # Func GetMinimumDistance( Reference  iMeasuredItem) As double
-        #
-        # Compute the minimum distance between the CATIAMeasurable and another. Bodies (openbody, hybridbody..) cannot
-        # be measured between.
-        # Parameters:
-        # oCoordinates
-        # The information of the axis system with respect to the product coordinate system:
-        # oComponents(0) is the X coordinate of the origin of the axis system
-        # oComponents(1) is the Y coordinate of the origin of the axis system
-        # oComponents(2) is the Z coordinate of the origin of the axis system
-        # oComponents(3) is the X coordinate of the first direction of the axis system
-        # oComponents(4) is the Y coordinate of the first direction of the axis system
-        # oComponents(5) is the Z coordinate of the first direction of the axis system
-        # Example:
-        #   This example retrieves the distance between the reference1 and reference2.
-        #   Dim reference1 As Reference
-        #   Set reference1 = part1.CreateReferenceFromObject(object1)
-        #   Dim reference2 As Reference
-        #   Set reference2 = part1.CreateReferenceFromObject(object1)
-        #   Dim TheSPAWorkbench As Workbench
-        #   Set TheSPAWorkbench = CATIA.ActiveDocument.GetWorkbench ( "SPAWorkbench" )
-        #   Dim TheMeasurable As Measurable
-        #   Set TheMeasurable = TheSPAWorkbench.GetMeasurable(reference1)
-        #   Dim MinimumDistance As double
-        #   MinimumDistance = TheMeasurable.GetMinimumDistance(reference2)
+                ### FROM CAA V5 Visual Basic help ###
+                # Func GetMinimumDistance( Reference  iMeasuredItem) As double
+                #
+                # Compute the minimum distance between the CATIAMeasurable and another.
+                # Bodies (openbody, hybridbody..) cannot be measured between.
+                # Parameters:
+                # oCoordinates
+                # The information of the axis system with respect to the product coordinate system:
+                # oComponents(0) is the X coordinate of the origin of the axis system
+                # oComponents(1) is the Y coordinate of the origin of the axis system
+                # oComponents(2) is the Z coordinate of the origin of the axis system
+                # oComponents(3) is the X coordinate of the first direction of the axis system
+                # oComponents(4) is the Y coordinate of the first direction of the axis system
+                # oComponents(5) is the Z coordinate of the first direction of the axis system
+                # Example:
+                #   This example retrieves the distance between the reference1 and reference2.
+                #   Dim reference1 As Reference
+                #   Set reference1 = part1.CreateReferenceFromObject(object1)
+                #   Dim reference2 As Reference
+                #   Set reference2 = part1.CreateReferenceFromObject(object1)
+                #   Dim TheSPAWorkbench As Workbench
+                #   Set TheSPAWorkbench = CATIA.ActiveDocument.GetWorkbench ( "SPAWorkbench" )
+                #   Dim TheMeasurable As Measurable
+                #   Set TheMeasurable = TheSPAWorkbench.GetMeasurable(reference1)
+                #   Dim MinimumDistance As double
+                #   MinimumDistance = TheMeasurable.GetMinimumDistance(reference2)
 
-        :return:
-        """
+                :return:
+                """
 
         return self.measurable.GetMinimumDistance(reference)
 
@@ -543,32 +545,33 @@ class CATIAMeasurable:
         return self.run_system_service(vba_code, vba_function_name, [self.measurable])
 
     def get_points_on_axis(self):
+        # noinspection SpellCheckingInspection,SpellCheckingInspection
         """
 
-        ### FROM CAA V5 Visual Basic help ###
-        # Sub GetPointsOnAxis( CATSafeArrayVariant  oCoordinates)
-        #
-        # Retrieves the the characteristic points of the axis with respect of the size of the revolution object.
-        # Parameters:
-        # oCoordinates
-        # The information of the characteristic points with respect to the product coordinate system:
-        # oCoordinates(0) is the X coordinate of the centerpoint of the axis
-        # oCoordinates(1) is the Y coordinate of the centerpoint of the axis
-        # oCoordinates(2) is the Z coordinate of the centerpoint of the axis
-        # oCoordinates(3) is the X coordinate of the startpoint of the axis
-        # oCoordinates(4) is the Y coordinate of the startpoint of the axis
-        # oCoordinates(5) is the Z coordinate of the startpoint of the axis
-        # oCoordinates(6) is the X coordinate of the endpoint of the axis
-        # oCoordinates(7) is the Y coordinate of the endpoint of the axis
-        # oCoordinates(8) is the Z coordinate of the endpoint of the axis
-        # Example:
-        # This example retrieves the characteristic points of the axis of NewMeasurable measure.
-        #     Dim Coordinates (8)
-        #     NewMeasurable.GetPointsOnAxis Coordinates
-        #
+                ### FROM CAA V5 Visual Basic help ###
+                # Sub GetPointsOnAxis( CATSafeArrayVariant  oCoordinates)
+                #
+                # Retrieves the the characteristic points of the axis with respect of the size of the revolution object.
+                # Parameters:
+                # oCoordinates
+                # The information of the characteristic points with respect to the product coordinate system:
+                # oCoordinates(0) is the X coordinate of the centerpoint of the axis
+                # oCoordinates(1) is the Y coordinate of the centerpoint of the axis
+                # oCoordinates(2) is the Z coordinate of the centerpoint of the axis
+                # oCoordinates(3) is the X coordinate of the startpoint of the axis
+                # oCoordinates(4) is the Y coordinate of the startpoint of the axis
+                # oCoordinates(5) is the Z coordinate of the startpoint of the axis
+                # oCoordinates(6) is the X coordinate of the endpoint of the axis
+                # oCoordinates(7) is the Y coordinate of the endpoint of the axis
+                # oCoordinates(8) is the Z coordinate of the endpoint of the axis
+                # Example:
+                # This example retrieves the characteristic points of the axis of NewMeasurable measure.
+                #     Dim Coordinates (8)
+                #     NewMeasurable.GetPointsOnAxis Coordinates
+                #
 
-        :return:
-        """
+                :return:
+                """
 
         vba_function_name = 'get_points_on_axis'
         vba_function = 'GetPointsOnAxis'
@@ -640,5 +643,6 @@ class CATIAMeasurable:
             return run
 
         except ValueError:
+            # noinspection SpellCheckingInspection
             print(f'There was a problem running SystemService.Evalue(*args) on the VBA code. The inputs were:')
             print(f'vba_code: {vba_code}, function_name: {function_name}')

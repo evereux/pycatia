@@ -19,7 +19,7 @@ class Document:
 
         The CATIA Document object is accessible using either self.document.
 
-        :param catia: CATIA CATIA COM object.
+        :param catia: CATIA COM object.
         :return:
         """
 
@@ -41,13 +41,14 @@ class Document:
         # todo: This search is currently restricted to GSD objects only.
 
         Selection objects is a list of items to search for.
-        Exameple: selection_objects = ['Point', 'Line']
+        Example: selection_objects = ['Point', 'Line']
 
         Example query string to search for all lines and points
         "('Generative Shape Design'.Point + 'Generative Shape Design'.Line),in"
 
-        :param selection_objects: list()
-        :return: Selected Automation Object
+        :param document:
+        :param selection_objects: list():
+        :return Selected Automation Object:
         """
 
         gsd_items = [
