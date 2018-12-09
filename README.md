@@ -93,5 +93,4 @@ the class CATIAMeasurable in `measurable.py`.
     
 ## Running The Tests
 * CATIA must be running the the part catia_measurable_part.CATPart open.
-* You will
 * Run the command: `py.test -v --cov-report term-missing --cov=pycatia tests/`
