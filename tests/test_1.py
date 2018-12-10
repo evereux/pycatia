@@ -11,7 +11,7 @@ catia = CATIAApplication()
 document = Document(catia.catia)
 spa_workbench = create_spa_workbench(document.document)
 
-part = Part(document.document)
+part = document.part
 
 bodies = part.get_bodies()
 body = bodies[0]

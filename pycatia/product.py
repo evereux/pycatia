@@ -1,6 +1,6 @@
 class Product:
 
-    def __init__(self, document):
+    def __init__(self, product):
         """
 
         ### FROM CAA V5 Visual Basic help ###
@@ -16,10 +16,28 @@ class Product:
         # reference objects only, and some others are for components only. This is clearly stated
         # for each property or method concerned.
 
-        :param document:
+        :param product: Product COM object
         """
 
-        self.product = document.Product
+        self.product = product
+
+    @property
+    def name(self):
+        """
+
+        :return:
+        """
+
+        return self.product.Name
+
+    @property
+    def file_name(self):
+        """
+
+        :return:
+        """
+
+        return self.product.ReferenceProduct.Parent.Name
 
     @property
     def part_number(self):
@@ -149,20 +167,53 @@ class Product:
 
         return self.product.ReferenceProduct
 
+    def is_catproduct(self):
+
+        if 'catproduct' == self.file_name.rsplit('.')[1].lower():
+            return True
+
+        return False
+
+    def is_catpart(self):
+
+        if 'catpart' == self.file_name.rsplit('.')[1].lower():
+            return True
+
+        return False
+
+    def get_products(self):
+        """
+
+        :return: list()
+        """
+        products = list()
+
+        for i in range(0, self.product.Products.Count):
+            product = Product(self.product.Products.Item(i+1))
+            products.append(product)
+
+        return products
+
     def attributes(self):
         """
+
+        Prints a list of attributes associated with the Product instance.
 
         :return:
         """
 
-        print(f'<Product> Attributes... ')
-        print(f'Part Number: {self.part_number}')
-        print(f'Revision: {self.revision}')
-        print(f'Definition: {self.definition}')
-        print(f'Nomenclature: {self.nomenclature}')
-        print(f'Description Instance: {self.description_instance}')
-        print(f'Description Reference: {self.description_reference}')
-        print(f'Reference : {self.reference_product}')
+        print('<Product> Attributes... \n'
+              f'File Name:             {self.file_name}\n'
+              f'Name:                  {self.name}\n'
+              f'Part Number:           {self.part_number}\n'
+              f'Revision:              {self.revision}\n'
+              f'Definition:            {self.definition}\n'
+              f'Nomenclature:          {self.nomenclature}\n'
+              f'Description Instance:  {self.description_instance}\n'
+              f'Description Reference: {self.description_reference}\n'
+              f'Reference:             {self.reference_product}\n'
+              f'Is CATProduct:         {self.is_catproduct()}\n'
+              f'Is CATPart:            {self.is_catpart()}\n')
 
     def __repr__(self):
-        return f'<Product: {self.part_number}>'
+        return f'<Product  part_number: {self.part_number}, file_name: {self.file_name})'

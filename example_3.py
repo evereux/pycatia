@@ -8,7 +8,7 @@
 
 """
 
-from pycatia import CATIA_Application
+from pycatia import CATIAApplication
 from pycatia import CATIAMeasurable
 from pycatia import create_measurable
 from pycatia import create_reference
@@ -16,7 +16,7 @@ from pycatia import create_spa_workbench
 from pycatia import Document
 from pycatia import Part
 
-catia = CATIA_Application()
+catia = CATIAApplication()
 document = Document(catia.catia)
 spa_workbench = create_spa_workbench(document.document)
 part = Part(document.document)

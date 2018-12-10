@@ -1,5 +1,8 @@
 #! /usr/bin/python3.6
 
+from .part import Part
+from .product import Product
+
 
 class Document:
 
@@ -33,6 +36,44 @@ class Document:
         """
 
         return self.document.Name
+
+    @property
+    def product(self):
+        """
+        :return: Product()
+        """
+
+        try:
+            return Product(self.document.Product)
+        except AttributeError:
+            return None
+
+
+    @property
+    def part(self):
+        """
+        :return: Part()
+        """
+
+        try:
+            return Part(self.document)
+        except AttributeError:
+            return None
+
+    @property
+    def is_product(self):
+
+        if self.product:
+            return True
+        return False
+
+    @property
+    def is_part(self):
+
+        if not self.is_product:
+            return True
+
+        return True
 
     @staticmethod
     def search_for_items(document, selection_objects):
@@ -73,7 +114,7 @@ class Document:
 
         selected = list()
         for i in range(0, selection.Count):
-            selected.append(selection.Item(i+1).Value)
+            selected.append(selection.Item(i + 1).Value)
 
         return selected
 
