@@ -1,14 +1,8 @@
 #! /user/bin/python3.6
 
-
-def create_reference(com_part, catia_object):
-    """
-
-    :param com_part:
-    :param catia_object:
-    :return:
-    """
-    return com_part.CreateReferenceFromObject(catia_object)
+from .catiaapplication import CATIAApplication
+from .document import Document
+from .part import Part
 
 
 def create_measurable(spa_workbench, com_reference):
@@ -20,3 +14,18 @@ def create_measurable(spa_workbench, com_reference):
     """
 
     return spa_workbench.GetMeasurable(com_reference)
+
+
+def get_document_part_object():
+    """
+
+    Initialises the CATIA Application object.
+
+    :return: Document COM object, Part()
+    """
+
+    catia = CATIAApplication()
+    document = Document(catia.catia).document
+    part = Part(document)
+
+    return document, part

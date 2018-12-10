@@ -1,8 +1,6 @@
 #! /usr/bin/python3.6
 
-from pycatia import CATIAApplication
-from pycatia import Document
-from pycatia import create_reference
+from .reference import create_reference
 
 geometrical_feature_type = [
     'Unknown',
@@ -256,18 +254,3 @@ class Part:
         :return:
         """
         return f'Part object (name: {self.name})'
-
-
-def get_document_part_object():
-    """
-
-    Initialises the CATIA Application object.
-
-    :return: Document COM object, Part()
-    """
-
-    catia = CATIAApplication()
-    document = Document(catia.catia).document
-    part = Part(document)
-
-    return document, part
