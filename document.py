@@ -1,5 +1,8 @@
 #! /usr/bin/python3.6
 
+from pywintypes import com_error
+
+from .exceptions import CATIAApplicationException
 from .part import Part
 from .product import Product
 
@@ -26,7 +29,11 @@ class Document:
         :return:
         """
 
-        self.document = catia.ActiveDocument
+        try:
+            self.document = catia.ActiveDocument
+        except com_error:
+            message = "Could not activate document."
+            raise CATIAApplicationException(message)
 
     @property
     def name(self):
@@ -48,7 +55,6 @@ class Document:
         except AttributeError:
             return None
 
-
     @property
     def part(self):
         """
@@ -56,7 +62,7 @@ class Document:
         """
 
         try:
-            return Part(self.document)
+            return Part(self.document.Part)
         except AttributeError:
             return None
 

@@ -3,7 +3,6 @@
 from .catiaapplication import CATIAApplication
 from .document import Document
 from .general_functions import create_measurable
-from .general_functions import get_document_part_object
 from .measurable import CATIAMeasurable
 from .part import Part
 from .product import Product
