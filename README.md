@@ -80,16 +80,23 @@ the class CATIAMeasurable in `measurable.py`.
 
     [Example 1](https://github.com/evereux/pycatia/blob/master/example_1.py):
 
-    Shows how to access the CATIA COM object with a .CATPart open and get the center
-    of gravity for the part body 'PartBody'.
+    Shows how to access the CATIA COM object with a .CATPart open and
+    get the center of gravity for the part body 'PartBody'.
     
     [Example 2](https://github.com/evereux/pycatia/blob/master/example_2.py):
 
-    Shows how to get all the points in the geometrical set 'Points' and get the co-ordinate.
+    Shows how to get all the points in the geometrical set 'Points' and
+    get the co-ordinate.
     
     [Example 3](https://github.com/evereux/pycatia/blob/master/example_3.py):
     
-    Shows how to search for all points in the document and return the co-ordinates.
+    Shows how to search for all points in the document and return the
+    co-ordinates.
+
+    [Example 4](https://github.com/evereux/pycatia/blob/master/example_4.py):
+
+    Shows how to loop through a product and determine whether child is
+    a CATProduct or CATPart.
     
 ## Running The Tests
 * CATIA must be running the the part catia_measurable_part.CATPart open.

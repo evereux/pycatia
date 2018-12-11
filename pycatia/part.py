@@ -16,7 +16,7 @@ geometrical_feature_type = [
 
 class Part:
 
-    def __init__(self, document):
+    def __init__(self, part):
         """
 
         ### FROM CAA V5 Visual Basic help ###
@@ -27,10 +27,10 @@ class Part:
 
         The CATIA Part object is accessible using self.part.part.
 
-        :param document: CATIA Document COM object.
+        :param part: CATIA Part COM object.
         """
 
-        self.part = document.Part
+        self.part = part
 
     @property
     def name(self):
