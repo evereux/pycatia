@@ -143,7 +143,8 @@ class Product:
         #
         # Returns or sets the product's nomenclature.
         # Nomenclature is valid for reference products only.
-        # According to the STEP AP203, the nomenclature is "a name by which the part is commonly known within an organization".
+        # According to the STEP AP203, the nomenclature is
+        # "a name by which the part is commonly known within an organization".
         # Example:
         # This example retrieves the nomenclature the Engine product in EngineNom.
         #  EngineNom = Engine.Nomenclature
@@ -181,6 +182,28 @@ class Product:
 
         return False
 
+    def has_children(self):
+
+        if self.product.Products.Count > 0:
+            return True
+
+        return False
+
+    def get_children(self):
+        """
+
+        :return: list(Product)
+        """
+
+        children = list()
+
+        if self.has_children():
+            for i in range(self.product.Products.Count):
+                child = Product(self.product.Products.Item(i+1))
+                children.append(child)
+
+        return children
+
     def get_products(self):
         """
 
@@ -189,7 +212,7 @@ class Product:
         products = list()
 
         for i in range(0, self.product.Products.Count):
-            product = Product(self.product.Products.Item(i+1))
+            product = Product(self.product.Products.Item(i + 1))
             products.append(product)
 
         return products
@@ -197,23 +220,23 @@ class Product:
     def attributes(self):
         """
 
-        Prints a list of attributes associated with the Product instance.
+        Returns a string describing the products attributes.
 
         :return:
         """
 
-        print('<Product> Attributes... \n'
-              f'File Name:             {self.file_name}\n'
-              f'Name:                  {self.name}\n'
-              f'Part Number:           {self.part_number}\n'
-              f'Revision:              {self.revision}\n'
-              f'Definition:            {self.definition}\n'
-              f'Nomenclature:          {self.nomenclature}\n'
-              f'Description Instance:  {self.description_instance}\n'
-              f'Description Reference: {self.description_reference}\n'
-              f'Reference:             {self.reference_product}\n'
-              f'Is CATProduct:         {self.is_catproduct()}\n'
-              f'Is CATPart:            {self.is_catpart()}\n')
+        return ('<Product> Attributes... \n'
+                f'File Name:             {self.file_name}\n'
+                f'Name:                  {self.name}\n'
+                f'Part Number:           {self.part_number}\n'
+                f'Revision:              {self.revision}\n'
+                f'Definition:            {self.definition}\n'
+                f'Nomenclature:          {self.nomenclature}\n'
+                f'Description Instance:  {self.description_instance}\n'
+                f'Description Reference: {self.description_reference}\n'
+                f'Reference:             {self.reference_product}\n'
+                f'Is CATProduct:         {self.is_catproduct()}\n'
+                f'Is CATPart:            {self.is_catpart()}\n')
 
     def __repr__(self):
         return f'<Product  part_number: {self.part_number}, file_name: {self.file_name})'
