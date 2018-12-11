@@ -4,7 +4,6 @@ from pycatia import CATIAApplication
 from pycatia import Document
 from pycatia import create_reference, create_measurable
 from pycatia import CATIAMeasurable
-from pycatia import Part
 from pycatia import create_spa_workbench
 
 catia = CATIAApplication()
@@ -74,12 +73,10 @@ catia_measurable_cylinder = CATIAMeasurable(cylinder_measurable)
 
 
 def test_application():
-
     assert 'CATIAApplication' in catia.__repr__()
 
 
 def test_document():
-
     assert 'catia_measurable_part.CATPart' == document.name
     assert 'Document object' in document.__repr__()
 
@@ -90,7 +87,6 @@ def test_document():
 
 
 def round_tuple(tuple_object, decimal_places=6):
-
     rounded_list = list()
 
     for item in tuple_object:
