@@ -10,14 +10,15 @@
 """
 
 from pycatia import create_reference, create_measurable
+from pycatia import CATIAApplication
 from pycatia import CATIAMeasurable
-from pycatia import get_document_part_object
 from pycatia import create_spa_workbench
+from pycatia import Document
 
-document, part = get_document_part_object()
-# document.name = catia_measurable_part.CATPart
-# part.name = catia_measurable_part
-spa_workbench = create_spa_workbench(document)
+catia = CATIAApplication()
+document = Document(catia.catia)
+part = document.part
+spa_workbench = create_spa_workbench(document.document)
 
 bodies = part.get_bodies()
 body_names = part.get_bodies_names()

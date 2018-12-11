@@ -14,12 +14,11 @@ from pycatia import create_measurable
 from pycatia import create_reference
 from pycatia import create_spa_workbench
 from pycatia import Document
-from pycatia import Part
 
 catia = CATIAApplication()
 document = Document(catia.catia)
 spa_workbench = create_spa_workbench(document.document)
-part = Part(document.document)
+part = document.part
 
 
 selected = document.search_for_items(document, ['Point'])

@@ -7,13 +7,16 @@
     Shows how to get all the points in the geometrical set 'Points' and get the co-ordinate.
 
 """
+from pycatia import CATIAApplication
 from pycatia import CATIAMeasurable
 from pycatia import create_reference, create_measurable
-from pycatia import get_document_part_object
 from pycatia import create_spa_workbench
+from pycatia import Document
 
-document, part = get_document_part_object()
-spa_workbench = create_spa_workbench(document)
+catia = CATIAApplication()
+document = Document(catia.catia)
+part = document.part
+spa_workbench = create_spa_workbench(document.document)
 
 hybrid_body = part.get_hybrid_body_by_name('Points')
 points = part.get_hybrid_shapes_from_hybrid_body(hybrid_body)
