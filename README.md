@@ -1,7 +1,9 @@
 # pycatia
 
 pycatia currently only contains access to the CATIA API Measurable 
-object and it's methods without the need of visual basic / CATScripts. 
+object and it's methods without the need of visual basic / CATScripts.
+pycatia also provides easy to use python methods to loop through a
+product and it's children.
 
 Some of the methods can be accessed simply using the pywin32 module but further 
 access to methods such as GetCOG do not seem to be accessible using pure python.
