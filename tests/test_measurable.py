@@ -2,11 +2,14 @@
 
 from pycatia import CATIAApplication
 from pycatia import Document
+from pycatia import Documents
 from pycatia import create_reference, create_measurable
 from pycatia import CATIAMeasurable
 from pycatia import create_spa_workbench
 
 catia = CATIAApplication()
+documents = Documents(catia.catia)
+documents.open(r'tests/CF_catia_measurable_part.CATPart')
 document = Document(catia.catia)
 spa_workbench = create_spa_workbench(document.document)
 
@@ -77,7 +80,7 @@ def test_application():
 
 
 def test_document():
-    assert 'catia_measurable_part.CATPart' == document.name
+    assert 'CF_catia_measurable_part.CATPart' == document.name
     assert 'Document object' in document.__repr__()
 
     # search for all points
@@ -420,3 +423,39 @@ def test_get_hybrid_shapes_from_hybrid_body():
     catia_point_shapes = part.get_hybrid_shapes_from_hybrid_body(hybrid_body)
 
     assert point_shapes == len(catia_point_shapes)
+
+
+def test_angle():
+    """
+
+    :return:
+    """
+
+    angle = 360
+    catia_angle = catia_measurable_arc.angle
+
+    assert angle == catia_angle
+
+
+def test_center():
+    """
+    
+    :return: 
+    """
+
+    center = (-47.039, 83.488, 0.0)
+    catia_center = catia_measurable_arc.get_center()
+
+    assert center == catia_center
+
+
+# This must be the last test in this file.
+def test_document_close():
+    """
+
+    :return:
+    """
+
+    document.close()
+
+    assert documents.documents.Count == 0
