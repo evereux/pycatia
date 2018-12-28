@@ -1,10 +1,58 @@
 #! /usr/bin/python3.6
 
+import os
 from pywintypes import com_error
 
 from .exceptions import CATIAApplicationException
 from .part import Part
 from .product import Product
+
+
+class Documents:
+
+    def __init__(self, catia):
+        """
+        ###
+        # A collection of all the Document objects currently managed by the application.
+        # These documents belong to one of the following types: PartDocument, ProductDocument, and Drawing.
+
+        :param catia: CATIA COM object
+        """
+
+        self.documents = catia.Documents
+
+    def open(self, file_name):
+        """
+        ### FROM CAA V5 Visual Basic help ###
+        # * Func Open( CATBSTR  iFileName) As Document
+        #
+        # Opens a document stored in a file. Reads a document stored in a file, displays it in a new window, adds the
+        # document to the documents collection and the window to the windows collection, and makes both the document
+        # and the window the active ones.
+        #
+        # Parameters:
+        #   iFileName
+        #       The name of the file containing the document
+        #   Returns:
+        #       The retrieved document
+        # Example:
+        # The following example opens the Doc document contained in the FileToOpen file.
+        #   FileToOpen = "e:/users/psr/Parts/ThisIsANicePart.CATPart"
+        #   Dim Doc As Document
+        #   Set Doc = Documents.Open(FileToOpen)
+
+        :param file_name: full path to catia file.
+        :type file_name: str()
+        :return:
+        """
+
+        if not os.path.isfile(file_name):
+            raise FileNotFoundError(f'Could not find file {file_name}.')
+
+        # get the full path to the file
+        file_name = os.path.abspath(file_name)
+
+        self.documents.Open(file_name)
 
 
 class Document:
@@ -80,6 +128,104 @@ class Document:
             return True
 
         return True
+
+    @property
+    def is_saved(self):
+        """ Returns true if document is saved.
+
+        ### FROM CAA V5 Visual Basic help ###
+        # Property Saved( ) As boolean (Read Only)
+        #
+        # Returns whether the document has been modified, and thus needs to be saved.
+        # This happens when the document has changed since either its creation or its last save.
+        # True if the document has not been changed: the document doesn't need to be saved.
+        # False if the document has been changed: the document needs to be saved.
+        # Example:
+        # This example retrieves in HasChanged whether the Doc document needs to be saved.
+        #  HasChanged = NOT Doc.Saved
+
+        :return: True or False
+        :type: Boolean()
+        """
+
+        if self.document.Saved():
+            return True
+
+        return False
+
+    def activate(self):
+        """ Activates the document
+
+        ### FROM CAA V5 Visual Basic help ###
+        # o Sub Activate( )
+        #
+        # Activates the document. Activating a document means that this document is the one on which the end user is
+        # now working on. This document possibly reconfigures the menu bar and toolbars with its own commands if its
+        # type is different from the type of the previous active document. The first window in the window collection
+        # which contains this document becomes the active one.
+        # Example:
+        # This example activates the Doc document.
+        #  Doc.Activate()
+        :return:
+        """
+
+        self.document.Activate()
+
+    def close(self):
+        """Closes the current document.
+
+        ### FROM CAA V5 Visual Basic help ###
+        # Sub Close( )
+        #
+        # Closes the document. This closes all the windows displaying the document. If the document needs to be saved,
+        # the end user is prompted whether to save the document, or to close it anyway.
+        # Example:
+        # This example closes the Doc document
+        #  Doc.Close()
+
+        :return:
+        """
+
+        self.document.Close()
+
+    def save(self):
+        """ Save the current document.
+
+        ### FROM CAA V5 Visual Basic help ###
+        # Sub Save( )
+        #
+        # Saves the document.
+        # Example:
+        # This example saves the Doc document.
+        #  Doc.Save()
+
+        :return: None
+        """
+
+        self.document.Save()
+
+    def save_as(self, file_name):
+        """Save the document to a new name.
+
+        ### FROM CAA V5 Visual Basic help ###
+        # Sub SaveAs( CATBSTR  fileName)
+        #
+        # Saves the document with another name.
+        #   Parameters:
+        #       fileName
+        #           The name to assign to the document
+        # Example:
+        # This example saves the Doc document with the NewName name.
+        #  Doc.SaveAs("NewName")
+
+        :param file_name: full pathname to new file_name
+        :return: None
+        """
+
+        file_name = os.path.abspath(file_name)
+        if os.path.isfile(file_name):
+            raise FileExistsError(f'File: {file_name} already exists.')
+        self.document.SaveAs(file_name)
 
     @staticmethod
     def search_for_items(document, selection_objects):

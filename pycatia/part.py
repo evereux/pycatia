@@ -18,7 +18,6 @@ class Part:
 
     def __init__(self, part):
         """
-
         ### FROM CAA V5 Visual Basic help ###
         # The root level object inside a PartDocument object.
         # Role: It aggregates all the objects making up the part document.
@@ -44,7 +43,6 @@ class Part:
     @property
     def density(self):
         """
-
         ### FROM CAA V5 Visual Basic help ###
         # Returns the part density.
         # Example:
@@ -59,7 +57,6 @@ class Part:
 
     def get_annotation_sets(self):
         """
-
         ### FROM CAA V5 Visual Basic help ###
         # Returns the collection object containing the annotation sets. All the annotation sets
         # that are aggregated in the part might be accessed thru that collection.
@@ -77,7 +74,6 @@ class Part:
 
     def get_axes_names(self):
         """
-
         :return: list()
         """
 
@@ -108,7 +104,6 @@ class Part:
 
     def get_axis_by_name(self, name):
         """
-
         :return: Axis System COM object
         """
 
@@ -119,7 +114,6 @@ class Part:
 
     def get_bodies(self):
         """
-
         :return: list()
         """
 
@@ -134,7 +128,6 @@ class Part:
 
     def get_bodies_names(self):
         """
-
         :return: list()
         """
 
@@ -148,7 +141,6 @@ class Part:
 
     def get_body_by_name(self, name):
         """
-
         :return: Body COM object
         """
 
@@ -159,7 +151,7 @@ class Part:
 
     def get_geometric_elements(self):
         """
-
+        ### FROM CAA V5 Visual Basic help ###
         # Returns the collection object containing the part geometrical elements. Only 3D elements are concerned here,
         # 2D elements are managed in sketches. The origin elements are also accessible thru that collection.
         # Example:
@@ -248,9 +240,36 @@ class Part:
 
         return shapes
 
-    def __repr__(self):
+    def create_geometrical_set(self, name):
+        """
+        Creates a new geometrical set / HybridBody with name.
+        :param name: str()
+        :return:
         """
 
+        new_geometrical_set = self.part.HybridBodies.Add()
+        new_geometrical_set.Name = name
+
+        return new_geometrical_set
+
+    def update(self):
+        """
+        ### FROM CAA V5 Visual Basic help ###
+        # o Sub Update( )
+        # Updates of the part result with respect to its specifications. Any composing specification that hasn't its result up-to-date will recompute it, thus propagating changes to the whole part.
+        # Example:
+        # The following example update the part:
+        #  Set partRoot = partDoc.Part
+        #  partRoot.Update
+        #
+
         :return:
+        """
+
+        self.part.Update()
+
+    def __repr__(self):
+        """
+        :return: str()
         """
         return f'Part object (name: {self.name})'

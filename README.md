@@ -99,6 +99,14 @@ the class CATIAMeasurable in `measurable.py`.
 
     Shows how to loop through a product and determine whether child is
     a CATProduct or CATPart.
+
+    [Example 5](https://github.com/evereux/pycatia/blob/master/example_5.py):
+
+    Shows how to parse and csv file and create points in a CATIA part.
+
+    [Example 6](https://github.com/evereux/pycatia/blob/master/example_6.py):
+
+    Examples of how to open, save as and close a CATIA file.
     
 ## Running The Tests
 * CATIA must be running the the part catia_measurable_part.CATPart open.
