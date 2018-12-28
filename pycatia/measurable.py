@@ -9,7 +9,7 @@
 
 """
 
-from win32com.client import Dispatch
+from .general_functions import run_system_service
 
 catia_measurable_name_list = ['CatMeasurableUnknown',
                               'CatMeasurable',
@@ -29,7 +29,6 @@ catia_measurable_name_list = ['CatMeasurableUnknown',
 # noinspection SpellCheckingInspection
 class CATIAMeasurable:
     """
-
     The interface to access a CATIAMeasurable Get measurements on the object.
 
     ### FROM CAA V5 Visual Basic help ###
@@ -55,24 +54,16 @@ class CATIAMeasurable:
 
     def __init__(self, measurable):
         """
-
         :param measurable:
         """
 
         self.cat_script_language = 0
 
         self.measurable = measurable
-        # self.area = self.measurable.Area
-        # self.geometry_name = self.measurable.GeometryName
-        # self.length = self.measurable.Length
-        # self.perimeter = self.measurable.Perimeter
-        # self.radius = self.measurable.Radius
-        # self.volume = self.measurable.volume
 
     @property
     def angle(self):
         """
-
         ### FROM CAA V5 Visual Basic help ###
         # Property Angle( ) As double (Read Only)
         #
@@ -89,7 +80,6 @@ class CATIAMeasurable:
     @property
     def area(self):
         """
-
         ### FROM CAA V5 Visual Basic help ###
         # Property Area( ) As double (Read Only)
         #
@@ -106,7 +96,6 @@ class CATIAMeasurable:
     @property
     def geometry_name(self):
         """
-
         ### FROM CAA V5 Visual Basic help ###
         # Property GeometryName( ) As CatMeasurableName (Read Only)
         #
@@ -123,7 +112,6 @@ class CATIAMeasurable:
     @property
     def length(self):
         """
-
         ### FROM CAA V5 Visual Basic help ###
         # Property Length( ) As double (Read Only)
         #
@@ -140,7 +128,6 @@ class CATIAMeasurable:
     @property
     def perimeter(self):
         """
-
         ### FROM CAA V5 Visual Basic help ###
         # Property Perimeter( ) As double (Read Only)
         #
@@ -157,7 +144,6 @@ class CATIAMeasurable:
     @property
     def radius(self):
         """
-
         ### FROM CAA V5 Visual Basic help ###
         # Property Radius( ) As double (Read Only)
         #
@@ -174,7 +160,6 @@ class CATIAMeasurable:
     @property
     def volume(self):
         """
-
         ### FROM CAA V5 Visual Basic help ###
         # Property Volume( ) As double (Read Only)
         #
@@ -190,7 +175,6 @@ class CATIAMeasurable:
 
     def get_angle_between(self, reference_measurable):
         """
-
         ### FROM CAA V5 Visual Basic help ###
         # Func GetAngleBetween( Reference  iMeasuredItem) As double
         #
@@ -220,7 +204,6 @@ class CATIAMeasurable:
 
     def get_axis(self):
         """
-
         ### FROM CAA V5 Visual Basic help ###
         # Sub GetAxis( CATSafeArrayVariant  oAxisVector)
         #
@@ -247,13 +230,12 @@ class CATIAMeasurable:
             {vba_function_name} = AxisVector
         End Function
         '''
-        result = self.run_system_service(vba_code, vba_function_name, [self.measurable])
+        result = run_system_service(vba_code, vba_function_name, [self.measurable])
 
         return result
 
     def get_axis_system(self):
         """
-
         ### FROM CAA V5 Visual Basic help ###
         # Sub GetAxisSystem( CATSafeArrayVariant  oComponents)
         #
@@ -291,13 +273,12 @@ class CATIAMeasurable:
             End Function
             '''
 
-        result = self.run_system_service(vba_code, vba_function_name, [self.measurable])
+        result = run_system_service(vba_code, vba_function_name, [self.measurable])
 
         return result
 
     def get_cog(self):
         """
-
         ### FROM CAA V5 Visual Basic help ###
         # Sub GetCOG( CATSafeArrayVariant  oCoordinates)
         #
@@ -325,13 +306,12 @@ class CATIAMeasurable:
             {vba_function_name} = coord
         End Function
         '''
-        result = self.run_system_service(vba_code, vba_function_name, [self.measurable])
+        result = run_system_service(vba_code, vba_function_name, [self.measurable])
 
         return result
 
     def get_center(self):
         """
-
         ### FROM CAA V5 Visual Basic help ###
         # Sub GetCenter( CATSafeArrayVariant  oCoordinates)
         #
@@ -345,13 +325,13 @@ class CATIAMeasurable:
         # Example:
         # This example retrieves the position of the center of NewMeasurable measure.
         #     Dim Coordinates (2)
-        #     NewMeasurable.GetCOGPosition Coordinates
+        #     NewMeasurable.GetCenter Coordinates << fixed typo in help
 
         :return:
         """
 
         vba_function_name = 'get_center'
-        vba_function = 'GetCOGPosition'
+        vba_function = 'GetCenter'
         vba_code = f'''        
         Public Function {vba_function_name}(measurable)
             Dim Coordinates (2)
@@ -360,13 +340,12 @@ class CATIAMeasurable:
         End Function
         '''
 
-        result = self.run_system_service(vba_code, vba_function_name, [self.measurable])
+        result = run_system_service(vba_code, vba_function_name, [self.measurable])
 
         return result
 
     def get_direction(self):
         """
-
         ### FROM CAA V5 Visual Basic help ###
         # Sub GetDirection( CATSafeArrayVariant  oDirection)
         #
@@ -395,43 +374,42 @@ class CATIAMeasurable:
         End Function
         '''
 
-        result = self.run_system_service(vba_code, vba_function_name, [self.measurable])
+        result = run_system_service(vba_code, vba_function_name, [self.measurable])
 
         return result
 
     def get_minimum_distance(self, reference):
         # noinspection SpellCheckingInspection
         """
+        ### FROM CAA V5 Visual Basic help ###
+        # Func GetMinimumDistance( Reference  iMeasuredItem) As double
+        #
+        # Compute the minimum distance between the CATIAMeasurable and another.
+        # Bodies (openbody, hybridbody..) cannot be measured between.
+        # Parameters:
+        # oCoordinates
+        # The information of the axis system with respect to the product coordinate system:
+        # oComponents(0) is the X coordinate of the origin of the axis system
+        # oComponents(1) is the Y coordinate of the origin of the axis system
+        # oComponents(2) is the Z coordinate of the origin of the axis system
+        # oComponents(3) is the X coordinate of the first direction of the axis system
+        # oComponents(4) is the Y coordinate of the first direction of the axis system
+        # oComponents(5) is the Z coordinate of the first direction of the axis system
+        # Example:
+        #   This example retrieves the distance between the reference1 and reference2.
+        #   Dim reference1 As Reference
+        #   Set reference1 = part1.CreateReferenceFromObject(object1)
+        #   Dim reference2 As Reference
+        #   Set reference2 = part1.CreateReferenceFromObject(object1)
+        #   Dim TheSPAWorkbench As Workbench
+        #   Set TheSPAWorkbench = CATIA.ActiveDocument.GetWorkbench ( "SPAWorkbench" )
+        #   Dim TheMeasurable As Measurable
+        #   Set TheMeasurable = TheSPAWorkbench.GetMeasurable(reference1)
+        #   Dim MinimumDistance As double
+        #   MinimumDistance = TheMeasurable.GetMinimumDistance(reference2)
 
-                ### FROM CAA V5 Visual Basic help ###
-                # Func GetMinimumDistance( Reference  iMeasuredItem) As double
-                #
-                # Compute the minimum distance between the CATIAMeasurable and another.
-                # Bodies (openbody, hybridbody..) cannot be measured between.
-                # Parameters:
-                # oCoordinates
-                # The information of the axis system with respect to the product coordinate system:
-                # oComponents(0) is the X coordinate of the origin of the axis system
-                # oComponents(1) is the Y coordinate of the origin of the axis system
-                # oComponents(2) is the Z coordinate of the origin of the axis system
-                # oComponents(3) is the X coordinate of the first direction of the axis system
-                # oComponents(4) is the Y coordinate of the first direction of the axis system
-                # oComponents(5) is the Z coordinate of the first direction of the axis system
-                # Example:
-                #   This example retrieves the distance between the reference1 and reference2.
-                #   Dim reference1 As Reference
-                #   Set reference1 = part1.CreateReferenceFromObject(object1)
-                #   Dim reference2 As Reference
-                #   Set reference2 = part1.CreateReferenceFromObject(object1)
-                #   Dim TheSPAWorkbench As Workbench
-                #   Set TheSPAWorkbench = CATIA.ActiveDocument.GetWorkbench ( "SPAWorkbench" )
-                #   Dim TheMeasurable As Measurable
-                #   Set TheMeasurable = TheSPAWorkbench.GetMeasurable(reference1)
-                #   Dim MinimumDistance As double
-                #   MinimumDistance = TheMeasurable.GetMinimumDistance(reference2)
-
-                :return:
-                """
+        :return:
+        """
 
         return self.measurable.GetMinimumDistance(reference)
 
@@ -469,7 +447,7 @@ class CATIAMeasurable:
         End Function
         '''
 
-        return self.run_system_service(vba_code, vba_function_name, [self.measurable, point_reference])
+        return run_system_service(vba_code, vba_function_name, [self.measurable, point_reference])
 
     def get_plane(self):
         """
@@ -508,7 +486,7 @@ class CATIAMeasurable:
         End Function
         '''
 
-        return self.run_system_service(vba_code, vba_function_name, [self.measurable])
+        return run_system_service(vba_code, vba_function_name, [self.measurable])
 
     def get_point(self):
         """
@@ -542,7 +520,7 @@ class CATIAMeasurable:
         End Function
         '''
 
-        return self.run_system_service(vba_code, vba_function_name, [self.measurable])
+        return run_system_service(vba_code, vba_function_name, [self.measurable])
 
     def get_points_on_axis(self):
         # noinspection SpellCheckingInspection,SpellCheckingInspection
@@ -583,11 +561,10 @@ class CATIAMeasurable:
         End Function
         '''
 
-        return self.run_system_service(vba_code, vba_function_name, [self.measurable])
+        return run_system_service(vba_code, vba_function_name, [self.measurable])
 
     def get_points_on_curve(self):
         """
-
         ### FROM CAA V5 Visual Basic help ###
         # Sub GetPointsOnCurve( CATSafeArrayVariant  oCoordinates)
         #
@@ -622,27 +599,4 @@ class CATIAMeasurable:
         End Function
         '''
 
-        return self.run_system_service(vba_code, vba_function_name, [self.measurable])
-
-    def run_system_service(self, vba_code, function_name, measurable_items):
-        """
-
-        :param vba_code:
-        :param function_name:
-        :param measurable_items:
-        :return:
-        """
-        try:
-            run = Dispatch('CATIA.Application').SystemService.Evaluate(
-                vba_code,
-                self.cat_script_language,
-                function_name,
-                measurable_items,
-            )
-
-            return run
-
-        except ValueError:
-            # noinspection SpellCheckingInspection
-            print(f'There was a problem running SystemService.Evalue(*args) on the VBA code. The inputs were:')
-            print(f'vba_code: {vba_code}, function_name: {function_name}')
+        return run_system_service(vba_code, vba_function_name, [self.measurable])
