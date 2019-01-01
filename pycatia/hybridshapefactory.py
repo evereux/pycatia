@@ -15,23 +15,24 @@ class HybridShapeFactory:
 
     def add_new_point_coord(self, geometrical_set, new_point, point_name):
         """
-        ### FROM CAA V5 Visual Basic help ###
-        # o Func AddNewPointCoord(  double  iX,
-        #                           double  iY,
-        #                           double  iZ) As HybridShapePointCoord
-        #
-        #       Creates a new point defined by its cartesian coordinates within the current body.
-        #       Parameters:
-        #       iX
-        #           X coordinate for the point
-        #       iY
-        #           Y coordinate for the point
-        #       iZ
-        #           Z coordinate for the point
-        #       oPoint
-        #           Created point
+        .. note::
+            CAA V5 Visual Basic help
 
-        :return:
+            | Func AddNewPointCoord(double  iX,
+            |                       double  iY,
+            |                       double  iZ) As HybridShapePointCoord
+
+            | Creates a new point defined by its cartesian coordinates within the current body.
+            | Parameters:
+            | iX
+            |     X coordinate for the point
+            | iY
+            |     Y coordinate for the point
+            | iZ
+            |     Z coordinate for the point
+            | oPoint
+            |     Created point
+
         """
 
         point = self.hsf.AddNewPointCoord(new_point[0], new_point[1], new_point[2])

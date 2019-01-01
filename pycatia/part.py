@@ -15,19 +15,19 @@ geometrical_feature_type = [
 
 
 class Part:
+    """
+    .. note::
+        CAA V5 Visual Basic help
+
+        The root level object inside a PartDocument object.
+        Role: It aggregates all the objects making up the part document.
+        It provides many factories and collections. The collections list only the direct children of the part.
+        Selection.Search allows to get all objects of one type.
+
+    :param part: CATIA Part COM object.
+    """
 
     def __init__(self, part):
-        """
-        ### FROM CAA V5 Visual Basic help ###
-        # The root level object inside a PartDocument object.
-        # Role: It aggregates all the objects making up the part document.
-        # It provides many factories and collections. The collections list only the direct children of the part.
-        # Selection.Search allows to get all objects of one type.
-
-        The CATIA Part object is accessible using self.part.part.
-
-        :param part: CATIA Part COM object.
-        """
 
         self.part = part
 
@@ -35,7 +35,7 @@ class Part:
     def name(self):
         """
 
-        :return:
+        :return: part name
         """
 
         return self.part.Name
@@ -43,29 +43,35 @@ class Part:
     @property
     def density(self):
         """
-        ### FROM CAA V5 Visual Basic help ###
-        # Returns the part density.
-        # Example:
-        # The following example displays the density of the part:
-        #       Set partRoot = partDoc.Part
-        #       MsgBox "The density is " & partRoot.Density
+        .. note::
+            CAA V5 Visual Basic help
 
-        :return:
+            Returns the part density.
+            | Example:
+            | The following example displays the density of the part:
+            |     Set partRoot = partDoc.Part
+            |       MsgBox "The density is " & partRoot.Density
+
+        :return: density
         """
 
         return self.part.Density
 
     def get_annotation_sets(self):
         """
-        ### FROM CAA V5 Visual Basic help ###
-        # Returns the collection object containing the annotation sets. All the annotation sets
-        # that are aggregated in the part might be accessed thru that collection.
-        # Example:
-        # The following example returns in annotationSets the annotation sets of the partRoot part
-        # from the partDoc part document:
-        #       Set partRoot = partDoc.Part
-        #       Dim annotationSets As AnnotationSets
-        #       Set annotationSets = partRoot.AnnotationSets
+        .. note::
+            CAA V5 Visual Basic help
+
+            Returns the collection object containing the annotation sets. All the annotation sets
+            that are aggregated in the part might be accessed thru that collection.
+
+            | Example:
+            | The following example returns in annotationSets the annotation sets of the partRoot part
+            | from the partDoc part document:
+            |
+            | Set partRoot = partDoc.Part
+            | Dim annotationSets As AnnotationSets
+            | Set annotationSets = partRoot.AnnotationSets
 
         :return: AnnotationSets COM object
         """
@@ -74,7 +80,7 @@ class Part:
 
     def get_axes_names(self):
         """
-        :return: list()
+        :return: list of axis names
         """
 
         names = list()
@@ -88,8 +94,8 @@ class Part:
     def get_axis_systems(self):
         """
         This will not return axis systems inside geometrical sets.
-        #todo implement selection search feature to get all axis systems
-            inside parts.
+        # todo implement selection search feature to get all axis systems inside parts.
+
         :return:
         """
 
