@@ -6,12 +6,6 @@ from .general_functions import run_system_service
 
 class CATIAMeasurable:
     """
-    Python Class to aid access of the CATIAMeasurable methods.
-
-    There doesn't seem to be a solution to access some of the measurement functions other than running the VBA code
-    itself and returning and capturing that output. Which in those cases some methods do. Otherwise, the COM object
-    itself is accessed.
-
     The interface to access a CATIAMeasurable Get measurements on the object.
 
     .. note::
