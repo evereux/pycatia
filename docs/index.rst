@@ -1,50 +1,14 @@
 pycatia documentation
 =====================
 
-Examples
---------
+pycatia is a python module for interfacing with the CATIA Automation COM object.
 
-Example 1
-~~~~~~~~~
+I could not find a solution using python to access some of the CATIA Automation methods of the CATIAMeasurable object.
+After much googling I discovered a solution and decided to create this python API. Currently this module covers all
+functionality of the SpaceAnalysisInterfaces CATIAMeasurable / Measurable object and partial coverage of other
+Automation objects.
 
-Access the CATIA COM object with a .CATPart open and get the center of gravity for the part body 'PartBody'.
-
-.. literalinclude:: ..\example_1.py
-
-Example 2
-~~~~~~~~~
-
-Get all the points in the geometrical set 'Points' and print the co-ordinate.
-
-.. literalinclude:: ..\example_2.py
-
-Example 3
-~~~~~~~~~
-
-Find all points in the CATPart and print it's co-ordinate.
-
-.. literalinclude:: ..\example_3.py
-
-Example 4
-~~~~~~~~~
-
-Loop through a CATProduct and find if sub component is a CATPart or CATProduct.
-
-.. literalinclude:: ..\example_4.py
-
-Example 5
-~~~~~~~~~
-
-Reads a csv file containing point data and adds to the active catia part.
-
-.. literalinclude:: ..\example_5.py
-
-Example 6
-~~~~~~~~~
-
-Open a catia file and close a catia file.
-
-.. literalinclude:: ..\example_6.py
+See the examples section for how to use this module.
 
 
 .. toctree::
@@ -52,6 +16,7 @@ Open a catia file and close a catia file.
    :caption: Contents:
 
    install
+   examples
    tutorial
 
 
