@@ -8,21 +8,19 @@ from .hybridshapefactory import HybridShapeFactory
 
 def csv_reader(file_name, delimiter=','):
     """
-    Reads contents of csv file and returns an iterable of tuples in the format:
-    [
-        (
-            str(<point_name>),
-            int(X coordinate),
-            int(Y coordinate),
-            int(Z cooridnate)
-        ),
-    ]
+    | Reads contents of csv file and returns a generator object containing tuples in the format:
+    | [
+    |     (
+    |         str(<point_name>),
+    |         int(X coordinate),
+    |         int(Y coordinate),
+    |         int(Z cooridnate)
+    |     ),
+    | ]
 
     :param file_name: full path to csv file.
-    :type file_name: str()
     :param delimiter:
-    :type delimiter: str()
-    :return: iterable()
+    :return: generator()
     """
 
     if not os.path.isfile(file_name):
@@ -40,12 +38,12 @@ def csv_reader(file_name, delimiter=','):
 
 def create_points(part, file_name, geometry_set_name='New_Points'):
     """
-    :param part:
-    :type part:
+    Parses a csv file in the format defined in :func:`~csv_reader` and populates the geometry_set_name with new
+    points. Once complete the part is updated.
+
+    :param part: active CATPart to add the points to
     :param file_name: full path to csv file.
-    :type file_name: str()
-    :param geometry_set_name:
-    :type geometry_set_name: str()
+    :param geometry_set_name: name of new geometrical set in which to add points.
     :return:
     """
 

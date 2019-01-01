@@ -1,55 +1,39 @@
 #! /usr/bin/python3.6
 
-"""
-
-    Python Class to aid access of the CATIAMeasurable measurements.
-
-    There doesn't seem to be a solution to access some of the measurement functions other than running the VBA code
-    itself and returning and capturing that output.
-
-"""
 
 from .general_functions import run_system_service
 
-catia_measurable_name_list = ['CatMeasurableUnknown',
-                              'CatMeasurable',
-                              'CatMeasurableVolume',
-                              'CatMeasurableSurface',
-                              'CatMeasurableCylinder',
-                              'CatMeasurableSphere',
-                              'CatMeasurableCone',
-                              'CatMeasurablePlane',
-                              'CatMeasurableCurve',
-                              'CatMeasurableCircle',
-                              'CatMeasurableLine',
-                              'CatMeasurablePoint',
-                              'CatMeasurableAxisSystem', ]
 
-
-# noinspection SpellCheckingInspection
 class CATIAMeasurable:
     """
+    Python Class to aid access of the CATIAMeasurable methods.
+
+    There doesn't seem to be a solution to access some of the measurement functions other than running the VBA code
+    itself and returning and capturing that output. Which in those cases some methods do. Otherwise, the COM object
+    itself is accessed.
+
     The interface to access a CATIAMeasurable Get measurements on the object.
 
-    ### FROM CAA V5 Visual Basic help ###
-    # Two types of measurement can be done:
-    #
-    # itself : gives dimensions related to the object itself (ex the radius of a circle).
-    # between : gives dimensions related to another object (ex the distance between two products). A restriction occurs
-    # for distance between: bodies (CATBody) cannot be measured.
-    #
-    # Methods on VOLUME : GetVolume GetArea GetCOG
-    # Methods on SURFACE : GetArea GetCOG GetPerimeter
-    # Methods on PLANE : GetArea GetCOG GetPlane
-    # Methods on CYLINDER : GetArea GetCOG GetAxis GetPointsOnAxis GetRadius
-    # Methods on CONE : GetArea GetCOG GetAxis GetPointsOnAxis GetAngle
-    # Methods on SPHERE : GetArea GetCOG GetRadius GetCenter
-    # Methods on CURVE : GetLength GetCOG GetPointsOnCurve
-    # Methods on LINE : GetLength GetCOG GetPointsOnCurve GetDirection
-    # Methods on CIRCLE : GetLength GetCOG GetPointsOnCurve GetRadius GetCenter GetAngle GetAxis
-    # Methods on POINT : GetPoint
-    # Methods on AXIS SYST : GetAxisSystem
+    .. note::
+        CAA V5 Visual Basic help
 
+        Two types of measurement can be done:
+
+        | itself : gives dimensions related to the object itself (ex the radius of a circle).
+        | between : gives dimensions related to another object (ex the distance between two products).
+        | A restriction occurs for distance between: bodies (CATBody) cannot be measured.
+
+        | Methods on VOLUME : GetVolume GetArea GetCOG
+        | Methods on SURFACE : GetArea GetCOG GetPerimeter
+        | Methods on PLANE : GetArea GetCOG GetPlane
+        | Methods on CYLINDER : GetArea GetCOG GetAxis GetPointsOnAxis GetRadius
+        | Methods on CONE : GetArea GetCOG GetAxis GetPointsOnAxis GetAngle
+        | Methods on SPHERE : GetArea GetCOG GetRadius GetCenter
+        | Methods on CURVE : GetLength GetCOG GetPointsOnCurve
+        | Methods on LINE : GetLength GetCOG GetPointsOnCurve GetDirection
+        | Methods on CIRCLE : GetLength GetCOG GetPointsOnCurve GetRadius GetCenter GetAngle GetAxis
+        | Methods on POINT : GetPoint
+        | Methods on AXIS SYST : GetAxisSystem
     """
 
     def __init__(self, measurable):
@@ -64,162 +48,196 @@ class CATIAMeasurable:
     @property
     def angle(self):
         """
-        ### FROM CAA V5 Visual Basic help ###
-        # Property Angle( ) As double (Read Only)
-        #
-        # Returns the Angle of a circle or cone.
-        # Example:
-        # This example retrieves the Angle of NewMeasurable measure.
-        #     Dim AAngle As double
-        #     AAngle = NewMeasurable.Angle
+        .. note::
+            CAA V5 Visual Basic help
 
-        :return:
+            Property Angle( ) As double (Read Only)
+
+            | Returns the Angle of a circle or cone.
+            | Example:
+            | This example retrieves the Angle of NewMeasurable measure.
+            |
+            | Dim AAngle As double
+            | AAngle = NewMeasurable.Angle
+
+        :return: angle
         """
         return self.measurable.Angle
 
     @property
     def area(self):
         """
-        ### FROM CAA V5 Visual Basic help ###
-        # Property Area( ) As double (Read Only)
-        #
-        # Returns the area of the surface or wet area from volume.
-        # Example:
-        # This example retrieves the area of NewMeasurable measure. The area unit given by oArea is m²
-        #     Dim AArea As double
-        #     AArea = NewMeasurable.Area
+        .. note::
+            CAA V5 Visual Basic help
 
-        :return:
+            Property Area( ) As double (Read Only)
+
+            | Returns the area of the surface or wet area from volume.
+            | Example:
+            | This example retrieves the area of NewMeasurable measure. The area unit given by oArea is m²
+            |   Dim AArea As double
+            |   AArea = NewMeasurable.Area
+
+        :return: area
         """
         return self.measurable.Area
 
     @property
     def geometry_name(self):
         """
-        ### FROM CAA V5 Visual Basic help ###
-        # Property GeometryName( ) As CatMeasurableName (Read Only)
-        #
-        # Returns the name of the geometry of the measured object.
-        # Example:
-        # This example retrieves the name of the geometry of the NewMeasurable measure.
-        #     Dim AGeometryName As CatMeasurableName
-        #     AGeometryName = NewMeasurable.GeometryName
 
-        :return:
+        .. note::
+            CAA V5 Visual Basic help
+
+            Property GeometryName( ) As CatMeasurableName (Read Only)
+
+            | Returns the name of the geometry of the measured object.
+            | Example:
+            | This example retrieves the name of the geometry of the NewMeasurable measure.
+            |   Dim AGeometryName As CatMeasurableName
+            |   AGeometryName = NewMeasurable.GeometryName
+
+        :return: geometry name
         """
+
+        catia_measurable_name_list = ['CatMeasurableUnknown',
+                                      'CatMeasurable',
+                                      'CatMeasurableVolume',
+                                      'CatMeasurableSurface',
+                                      'CatMeasurableCylinder',
+                                      'CatMeasurableSphere',
+                                      'CatMeasurableCone',
+                                      'CatMeasurablePlane',
+                                      'CatMeasurableCurve',
+                                      'CatMeasurableCircle',
+                                      'CatMeasurableLine',
+                                      'CatMeasurablePoint',
+                                      'CatMeasurableAxisSystem', ]
+
         return catia_measurable_name_list[self.measurable.GeometryName]
 
     @property
     def length(self):
         """
-        ### FROM CAA V5 Visual Basic help ###
-        # Property Length( ) As double (Read Only)
-        #
-        # Returns the Length of a curve.
-        # Example:
-        # This example retrieves the Length of NewMeasurable measure.
-        #     Dim ALength As double
-        #     ALength = NewMeasurable.Length
+        ..note:: lalal
+            CAA V5 Visual Basic help
 
-        :return:
+            Property Length( ) As double (Read Only)
+
+            | Returns the Length of a curve.
+            | Example:
+            | This example retrieves the Length of NewMeasurable measure.
+            |   Dim ALength As double
+            |   ALength = NewMeasurable.Length
+
+        :return: length
         """
         return self.measurable.Length
 
     @property
     def perimeter(self):
         """
-        ### FROM CAA V5 Visual Basic help ###
-        # Property Perimeter( ) As double (Read Only)
-        #
-        # Returns the perimeter of a surface.
-        # Example:
-        # This example retrieves the perimeter of NewMeasurable measure.
-        #     Dim APerimeter As double
-        #     APerimeter = NewMeasurable.Perimeter
+        .. note::
+            CAA V5 Visual Basic help
 
-        :return:
+            Property Perimeter( ) As double (Read Only)
+
+            | Returns the perimeter of a surface.
+            | Example:
+            | This example retrieves the perimeter of NewMeasurable measure.
+            |    Dim APerimeter As double
+            |    APerimeter = NewMeasurable.Perimeter
+
+        :return: permiter
         """
         return self.measurable.Perimeter
 
     @property
     def radius(self):
         """
-        ### FROM CAA V5 Visual Basic help ###
-        # Property Radius( ) As double (Read Only)
-        #
-        # Returns the radius of an arc, cylinder or sphere.
-        # Example:
-        # This example retrieves the Radius of NewMeasurable measure.
-        #     Dim ARadius As double
-        #     ARadius = NewMeasurable.Radius
+        ..note ::
+            CAA V5 Visual Basic help
 
-        :return:
+            Property Radius( ) As double (Read Only)
+
+            | Returns the radius of an arc, cylinder or sphere.
+            | Example:
+            | This example retrieves the Radius of NewMeasurable measure.
+            |   Dim ARadius As double
+            |   ARadius = NewMeasurable.Radius
+
+        :return: radius
         """
         return self.measurable.Radius
 
     @property
     def volume(self):
         """
-        ### FROM CAA V5 Visual Basic help ###
-        # Property Volume( ) As double (Read Only)
-        #
-        # Returns the volume.
-        # Example:
-        # This example retrieves the volume of NewMeasurable measure. The volume unit given by oVolume is m^3
-        #     Dim AVolume As double
-        #     AVolume = NewMeasurable.Volume
+        ..note::
+            CAA V5 Visual Basic help
+            Property Volume( ) As double (Read Only)
 
-        :return:
+            | Returns the volume.
+            | Example:
+            | This example retrieves the volume of NewMeasurable measure. The volume unit given by oVolume is m^3
+            |   Dim AVolume As double
+            |   AVolume = NewMeasurable.Volume
+
+        :return: volume
         """
         return self.measurable.Volume
 
     def get_angle_between(self, reference_measurable):
         """
-        ### FROM CAA V5 Visual Basic help ###
-        # Func GetAngleBetween( Reference  iMeasuredItem) As double
-        #
-        # Compute the angle between the CATIAMeasurable and another.
-        # Example:
-        # This example retrieves the angle between the reference1 and reference2.
-        #
-        # Dim reference1 As Reference
-        # Set reference1 = part1.CreateReferenceFromObject(object1)
-        #
-        # Dim reference2 As Reference
-        # Set reference2 = part1.CreateReferenceFromObject(object1)
-        #
-        # Dim TheSPAWorkbench As Workbench
-        # Set TheSPAWorkbench = CATIA.ActiveDocument.GetWorkbench ( "SPAWorkbench" )
-        #
-        # Dim TheMeasurable As Measurable
-        # Set TheMeasurable = TheSPAWorkbench.GetMeasurable(reference1)
-        #
-        # Dim MinimumDistance As double
-        # MinimumDistance = TheMeasurable.GetAngleBetween(reference2)
+        .. note::
+            CAA V5 Visual Basic help
 
-        :return:
+            Func GetAngleBetween( Reference  iMeasuredItem) As double
+
+            | Compute the angle between the CATIAMeasurable and another.
+            | Example:
+            | This example retrieves the angle between the reference1 and reference2.
+
+            | Dim reference1 As Reference
+            | Set reference1 = part1.CreateReferenceFromObject(object1)
+
+            | Dim reference2 As Reference
+            | Set reference2 = part1.CreateReferenceFromObject(object1)
+
+            | Dim TheSPAWorkbench As Workbench
+            | Set TheSPAWorkbench = CATIA.ActiveDocument.GetWorkbench ( "SPAWorkbench" )
+
+            | Dim TheMeasurable As Measurable
+            | Set TheMeasurable = TheSPAWorkbench.GetMeasurable(reference1)
+
+            | Dim MinimumDistance As double
+            | MinimumDistance = TheMeasurable.GetAngleBetween(reference2)
+
+        :return: angle
         """
 
         return self.measurable.GetAngleBetween(reference_measurable)
 
     def get_axis(self):
         """
-        ### FROM CAA V5 Visual Basic help ###
-        # Sub GetAxis( CATSafeArrayVariant  oAxisVector)
-        #
-        # Retrieves the axis vector of the cylinder or a cone.
-        # Parameters:
-        # oVector
-        # The axis vector of the cylinder or a cone with respect to the product coordinate system:
-        # oAxisVector(0) is the X direction
-        # oAxisVector(1) is the Y direction
-        # oAxisVector(2) is the Z direction
-        # Example:
-        # This example retrieves the axis vector of the cylinder or a cone of NewMeasurable measure.
-        #     Dim AxisVector (2)
-        #     NewMeasurable.GetAxis AxisVector
+        ..note::
+            CAA V5 Visual Basic help
 
-        :return:
+            Sub GetAxis( CATSafeArrayVariant  oAxisVector)
+
+            | Retrieves the axis vector of the cylinder or a cone.
+            | Parameters:
+            | oVector
+            | The axis vector of the cylinder or a cone with respect to the product coordinate system:
+            | oAxisVector(0) is the X direction
+            | oAxisVector(1) is the Y direction
+            | oAxisVector(2) is the Z direction
+            | Example:
+            | This example retrieves the axis vector of the cylinder or a cone of NewMeasurable measure.
+            |    Dim AxisVector (2)
+            |    NewMeasurable.GetAxis AxisVector
+
+        :return: axis
         """
         vba_function_name = 'get_axis'
         vba_function = 'GetAxis'
@@ -236,31 +254,33 @@ class CATIAMeasurable:
 
     def get_axis_system(self):
         """
-        ### FROM CAA V5 Visual Basic help ###
-        # Sub GetAxisSystem( CATSafeArrayVariant  oComponents)
-        #
-        # Retrieves the information of the axis system.
-        # Parameters:
-        # oCoordinates
-        # The information of the axis system with respect to the product coordinate system:
-        # oComponents(0) is the X coordinate of the origin of the axis system
-        # oComponents(1) is the Y coordinate of the origin of the axis system
-        # oComponents(2) is the Z coordinate of the origin of the axis system
-        # oComponents(3) is the X coordinate of the first direction of the axis system
-        # oComponents(4) is the Y coordinate of the first direction of the axis system
-        # oComponents(5) is the Z coordinate of the first direction of the axis system
-        # oComponents(6) is the X coordinate of the second direction of the axis system
-        # oComponents(7) is the Y coordinate of the second direction of the axis system
-        # oComponents(8) is the Z coordinate of the second direction of the axis system
-        # oComponents(9) is the X coordinate of the third direction of the axis system
-        # oComponents(10) is the Y coordinate of the third direction of the axis system
-        # oComponents(11) is the Z coordinate of the third direction of the axis system
-        # Example:
-        # This example retrieves information of the axis system of NewMeasurable measure.
-        #     Dim Components (11)
-        #     NewMeasurable.GetAxisSystem Components
+        ..note ::
+            CAA V5 Visual Basic help
 
-        :return:
+            Sub GetAxisSystem( CATSafeArrayVariant  oComponents)
+
+            | Retrieves the information of the axis system.
+            | Parameters:
+            | oCoordinates
+            | The information of the axis system with respect to the product coordinate system:
+            | oComponents(0) is the X coordinate of the origin of the axis system
+            | oComponents(1) is the Y coordinate of the origin of the axis system
+            | oComponents(2) is the Z coordinate of the origin of the axis system
+            | oComponents(3) is the X coordinate of the first direction of the axis system
+            | oComponents(4) is the Y coordinate of the first direction of the axis system
+            | oComponents(5) is the Z coordinate of the first direction of the axis system
+            | oComponents(6) is the X coordinate of the second direction of the axis system
+            | oComponents(7) is the Y coordinate of the second direction of the axis system
+            | oComponents(8) is the Z coordinate of the second direction of the axis system
+            | oComponents(9) is the X coordinate of the third direction of the axis system
+            | oComponents(10) is the Y coordinate of the third direction of the axis system
+            | oComponents(11) is the Z coordinate of the third direction of the axis system
+            | Example:
+            | This example retrieves information of the axis system of NewMeasurable measure.
+            |    Dim Components (11)
+            |    NewMeasurable.GetAxisSystem Components
+
+        :return: axis system
         """
 
         vba_function_name = 'get_axis_system'
@@ -279,22 +299,24 @@ class CATIAMeasurable:
 
     def get_cog(self):
         """
-        ### FROM CAA V5 Visual Basic help ###
-        # Sub GetCOG( CATSafeArrayVariant  oCoordinates)
-        #
-        # Retrieves the position of the center of gravity of a surface and volume .
-        # Parameters:
-        # oCoordinates
-        # The position of the center of gravity with respect to the product coordinate system:
-        # oCoordinates(0) is the X coordinate
-        # oCoordinates(1) is the Y coordinate
-        # oCoordinates(2) is the Z coordinate
-        # Example:
-        # This example retrieves the position of the center of gravity of NewMeasurable measure.
-        #     Dim Coordinates (2)
-        #     NewMeasurable.GetCOG Coordinates
+        .. note::
+            FROM CAA V5 Visual Basic help
 
-        :return:
+            Sub GetCOG( CATSafeArrayVariant  oCoordinates)
+
+            | Retrieves the position of the center of gravity of a surface and volume .
+            | Parameters:
+            | oCoordinates
+            | The position of the center of gravity with respect to the product coordinate system:
+            | oCoordinates(0) is the X coordinate
+            | oCoordinates(1) is the Y coordinate
+            | oCoordinates(2) is the Z coordinate
+            | Example:
+            | This example retrieves the position of the center of gravity of NewMeasurable measure.
+            |    Dim Coordinates (2)
+            |    NewMeasurable.GetCOG Coordinates
+
+        :return: center of gravity
         """
 
         vba_function_name = 'create_cog'
@@ -312,22 +334,23 @@ class CATIAMeasurable:
 
     def get_center(self):
         """
-        ### FROM CAA V5 Visual Basic help ###
-        # Sub GetCenter( CATSafeArrayVariant  oCoordinates)
-        #
-        # Retrieves the position of the center of a circle or sphere.
-        # Parameters:
-        # oCoordinates
-        # The position of the center with respect to the product coordinate system:
-        # oCoordinates(0) is the X coordinate
-        # oCoordinates(1) is the Y coordinate
-        # oCoordinates(2) is the Z coordinate
-        # Example:
-        # This example retrieves the position of the center of NewMeasurable measure.
-        #     Dim Coordinates (2)
-        #     NewMeasurable.GetCenter Coordinates << fixed typo in help
+        ..note::
+            CAA V5 Visual Basic help
+            Sub GetCenter( CATSafeArrayVariant  oCoordinates)
 
-        :return:
+            | Retrieves the position of the center of a circle or sphere.
+            | Parameters:
+            | oCoordinates
+            | The position of the center with respect to the product coordinate system:
+            | oCoordinates(0) is the X coordinate
+            | oCoordinates(1) is the Y coordinate
+            | oCoordinates(2) is the Z coordinate
+            | Example:
+            | This example retrieves the position of the center of NewMeasurable measure.
+            |    Dim Coordinates (2)
+            |    NewMeasurable.GetCenter Coordinates << fixed typo in help
+
+        :return: center
         """
 
         vba_function_name = 'get_center'
@@ -346,22 +369,24 @@ class CATIAMeasurable:
 
     def get_direction(self):
         """
-        ### FROM CAA V5 Visual Basic help ###
-        # Sub GetDirection( CATSafeArrayVariant  oDirection)
-        #
-        # Retrieves the direction of the line.
-        # Parameters:
-        # oDirection
-        # The direction of the line with respect to the product coordinate system:
-        # oDirection(0) is the X direction
-        # oDirection(1) is the Y direction
-        # oDirection(2) is the Z direction
-        # Example:
-        # This example retrieves the direction of the line of NewMeasurable measure.
-        #     Dim Direction (2)
-        #     NewMeasurable.GetDirection Direction
+        .. note::
+            CAA V5 Visual Basic help
 
-        :return: 
+            Sub GetDirection( CATSafeArrayVariant  oDirection)
+
+            | Retrieves the direction of the line.
+            | Parameters:
+            | oDirection
+            | The direction of the line with respect to the product coordinate system:
+            | oDirection(0) is the X direction
+            | oDirection(1) is the Y direction
+            | oDirection(2) is the Z direction
+            | Example:
+            | This example retrieves the direction of the line of NewMeasurable measure.
+            |    Dim Direction (2)
+            |    NewMeasurable.GetDirection Direction
+
+        :return: direction
         """
 
         vba_function_name = 'get_direction'
@@ -381,60 +406,62 @@ class CATIAMeasurable:
     def get_minimum_distance(self, reference):
         # noinspection SpellCheckingInspection
         """
-        ### FROM CAA V5 Visual Basic help ###
-        # Func GetMinimumDistance( Reference  iMeasuredItem) As double
-        #
-        # Compute the minimum distance between the CATIAMeasurable and another.
-        # Bodies (openbody, hybridbody..) cannot be measured between.
-        # Parameters:
-        # oCoordinates
-        # The information of the axis system with respect to the product coordinate system:
-        # oComponents(0) is the X coordinate of the origin of the axis system
-        # oComponents(1) is the Y coordinate of the origin of the axis system
-        # oComponents(2) is the Z coordinate of the origin of the axis system
-        # oComponents(3) is the X coordinate of the first direction of the axis system
-        # oComponents(4) is the Y coordinate of the first direction of the axis system
-        # oComponents(5) is the Z coordinate of the first direction of the axis system
-        # Example:
-        #   This example retrieves the distance between the reference1 and reference2.
-        #   Dim reference1 As Reference
-        #   Set reference1 = part1.CreateReferenceFromObject(object1)
-        #   Dim reference2 As Reference
-        #   Set reference2 = part1.CreateReferenceFromObject(object1)
-        #   Dim TheSPAWorkbench As Workbench
-        #   Set TheSPAWorkbench = CATIA.ActiveDocument.GetWorkbench ( "SPAWorkbench" )
-        #   Dim TheMeasurable As Measurable
-        #   Set TheMeasurable = TheSPAWorkbench.GetMeasurable(reference1)
-        #   Dim MinimumDistance As double
-        #   MinimumDistance = TheMeasurable.GetMinimumDistance(reference2)
+        .. note::
+            CAA V5 Visual Basic help
 
-        :return:
+            Func GetMinimumDistance( Reference  iMeasuredItem) As double
+
+            | Compute the minimum distance between the CATIAMeasurable and another.
+            | Bodies (openbody, hybridbody..) cannot be measured between.
+            | Parameters:
+            | oCoordinates
+            | The information of the axis system with respect to the product coordinate system:
+            | oComponents(0) is the X coordinate of the origin of the axis system
+            | oComponents(1) is the Y coordinate of the origin of the axis system
+            | oComponents(2) is the Z coordinate of the origin of the axis system
+            | oComponents(3) is the X coordinate of the first direction of the axis system
+            | oComponents(4) is the Y coordinate of the first direction of the axis system
+            | oComponents(5) is the Z coordinate of the first direction of the axis system
+            | Example:
+            |   This example retrieves the distance between the reference1 and reference2.
+            |   Dim reference1 As Reference
+            |   Set reference1 = part1.CreateReferenceFromObject(object1)
+            |   Dim reference2 As Reference
+            |   Set reference2 = part1.CreateReferenceFromObject(object1)
+            |   Dim TheSPAWorkbench As Workbench
+            |   Set TheSPAWorkbench = CATIA.ActiveDocument.GetWorkbench ( "SPAWorkbench" )
+            |   Dim TheMeasurable As Measurable
+            |   Set TheMeasurable = TheSPAWorkbench.GetMeasurable(reference1)
+            |   Dim MinimumDistance As double
+            |   MinimumDistance = TheMeasurable.GetMinimumDistance(reference2)
+
+        :return: minimum distance
         """
 
         return self.measurable.GetMinimumDistance(reference)
 
     def get_minimum_distance_points(self, point_reference):
         """
+        .. note::
+            CAA V5 Visual Basic help
 
-        ### FROM CAA V5 Visual Basic help ###
-        # Sub GetMinimumDistancePoints( Reference  iMeasuredItem,
-        #  CATSafeArrayVariant  oCoordinates)
-        #
-        # Compute the points corresponding to the minimum distance between the two references.
-        # Example:
-        # This example retrieves the points corresponding to the distance between the reference1 and reference2.
-        #   Dim reference1 As Reference
-        #   Set reference1 = part1.CreateReferenceFromObject(object1)
-        #   Dim reference2 As Reference
-        #   Set reference2 = part1.CreateReferenceFromObject(object1)
-        #   Dim TheSPAWorkbench As Workbench
-        #   Set TheSPAWorkbench = CATIA.ActiveDocument.GetWorkbench ( "SPAWorkbench" )
-        #   Dim TheMeasurable As Measurable
-        #   Set TheMeasurable = TheSPAWorkbench.GetMeasurable(reference1)
-        #   Dim Coordinates (8)
-        #   TheMeasurable.GetMinimumDistancePoints reference2, Coordinates
+            Sub GetMinimumDistancePoints( Reference  iMeasuredItem, CATSafeArrayVariant  oCoordinates)
 
-        :return:
+            | Compute the points corresponding to the minimum distance between the two references.
+            | Example:
+            | This example retrieves the points corresponding to the distance between the reference1 and reference2.
+            |   Dim reference1 As Reference
+            |   Set reference1 = part1.CreateReferenceFromObject(object1)
+            |   Dim reference2 As Reference
+            |   Set reference2 = part1.CreateReferenceFromObject(object1)
+            |   Dim TheSPAWorkbench As Workbench
+            |   Set TheSPAWorkbench = CATIA.ActiveDocument.GetWorkbench ( "SPAWorkbench" )
+            |   Dim TheMeasurable As Measurable
+            |   Set TheMeasurable = TheSPAWorkbench.GetMeasurable(reference1)
+            |   Dim Coordinates (8)
+            |   TheMeasurable.GetMinimumDistancePoints reference2, Coordinates
+
+        :return: the points corresponding to the distance between the reference1 and reference2.
         """
 
         vba_function_name = 'get_minimum_distance_points'
@@ -451,29 +478,30 @@ class CATIAMeasurable:
 
     def get_plane(self):
         """
+        .. note::
+            CAA V5 Visual Basic help
 
-        ### FROM CAA V5 Visual Basic help ###
-        # Sub GetPlane( CATSafeArrayVariant  oComponents)
-        #
-        # Retrieves informations of the plane.
-        # Parameters:
-        # oComponents
-        # The informations of the plane with respect to the product coordinate system:
-        # oComponents(0) is the X coordinate of the origin
-        # oComponents(1) is the Y coordinate of the origin
-        # oComponents(2) is the Z coordinate of the origin
-        # oComponents(3) is the X coordinate of the first direction of the plane
-        # oComponents(4) is the Y coordinate of the first direction of the plane
-        # oComponents(5) is the Z coordinate of the first direction of the plane
-        # oComponents(6) is the X coordinate of the second direction of the plane
-        # oComponents(7) is the Y coordinate of the second direction of the plane
-        # oComponents(8) is the Z coordinate of the second direction of the plane
-        # Example:
-        # This example retrieves informations of the plane of NewMeasurable measure.
-        #     Dim Components (8)
-        #     NewMeasurable.GetPlane Components
+            Sub GetPlane( CATSafeArrayVariant  oComponents)
 
-        :return:
+            | Retrieves informations of the plane.
+            | Parameters:
+            | oComponents
+            | The informations of the plane with respect to the product coordinate system:
+            | oComponents(0) is the X coordinate of the origin
+            | oComponents(1) is the Y coordinate of the origin
+            | oComponents(2) is the Z coordinate of the origin
+            | oComponents(3) is the X coordinate of the first direction of the plane
+            | oComponents(4) is the Y coordinate of the first direction of the plane
+            | oComponents(5) is the Z coordinate of the first direction of the plane
+            | oComponents(6) is the X coordinate of the second direction of the plane
+            | oComponents(7) is the Y coordinate of the second direction of the plane
+            | oComponents(8) is the Z coordinate of the second direction of the plane
+            | Example:
+            | This example retrieves informations of the plane of NewMeasurable measure.
+            |    Dim Components (8)
+            |    NewMeasurable.GetPlane Components
+
+        :return: informations of the plane.
         """
 
         vba_function_name = 'get_plane'
@@ -490,24 +518,24 @@ class CATIAMeasurable:
 
     def get_point(self):
         """
+        .. note::
+            CAA V5 Visual Basic help
+            Sub GetPoint( CATSafeArrayVariant  oCoordinates)
 
-        ### FROM CAA V5 Visual Basic help ###
-        # Sub GetPoint( CATSafeArrayVariant  oCoordinates)
-        #
-        # Retrieves the position of the point.
-        # Parameters:
-        # oCoordinates
-        # The coordinate of the point with respect to the product coordinate system:
-        # oCoordinates(0) is the X coordinate
-        # oCoordinates(1) is the Y coordinate
-        # oCoordinates(2) is the Z coordinate
-        # Example:
-        # This example retrieves the coordinate of the point of NewMeasurable measure.
-        #     Dim Coordinates (2)
-        #     NewMeasurable.GetPoint Coordinates
-        #
+            | Retrieves the position of the point.
+            | Parameters:
+            | oCoordinates
+            | The coordinate of the point with respect to the product coordinate system:
+            | oCoordinates(0) is the X coordinate
+            | oCoordinates(1) is the Y coordinate
+            | oCoordinates(2) is the Z coordinate
+            | Example:
+            | This example retrieves the coordinate of the point of NewMeasurable measure.
+            |    Dim Coordinates (2)
+            |    NewMeasurable.GetPoint Coordinates
 
-        :return:
+
+        :return: the position of the point.
         """
 
         vba_function_name = 'get_point'
@@ -523,33 +551,33 @@ class CATIAMeasurable:
         return run_system_service(vba_code, vba_function_name, [self.measurable])
 
     def get_points_on_axis(self):
-        # noinspection SpellCheckingInspection,SpellCheckingInspection
         """
+        .. note::
+            CAA V5 Visual Basic help
 
-                ### FROM CAA V5 Visual Basic help ###
-                # Sub GetPointsOnAxis( CATSafeArrayVariant  oCoordinates)
-                #
-                # Retrieves the the characteristic points of the axis with respect of the size of the revolution object.
-                # Parameters:
-                # oCoordinates
-                # The information of the characteristic points with respect to the product coordinate system:
-                # oCoordinates(0) is the X coordinate of the centerpoint of the axis
-                # oCoordinates(1) is the Y coordinate of the centerpoint of the axis
-                # oCoordinates(2) is the Z coordinate of the centerpoint of the axis
-                # oCoordinates(3) is the X coordinate of the startpoint of the axis
-                # oCoordinates(4) is the Y coordinate of the startpoint of the axis
-                # oCoordinates(5) is the Z coordinate of the startpoint of the axis
-                # oCoordinates(6) is the X coordinate of the endpoint of the axis
-                # oCoordinates(7) is the Y coordinate of the endpoint of the axis
-                # oCoordinates(8) is the Z coordinate of the endpoint of the axis
-                # Example:
-                # This example retrieves the characteristic points of the axis of NewMeasurable measure.
-                #     Dim Coordinates (8)
-                #     NewMeasurable.GetPointsOnAxis Coordinates
-                #
+            Sub GetPointsOnAxis( CATSafeArrayVariant  oCoordinates)
 
-                :return:
-                """
+            | Retrieves the the characteristic points of the axis with respect of the size of the revolution object.
+            | Parameters:
+            | oCoordinates
+            | The information of the characteristic points with respect to the product coordinate system:
+            | oCoordinates(0) is the X coordinate of the centerpoint of the axis
+            | oCoordinates(1) is the Y coordinate of the centerpoint of the axis
+            | oCoordinates(2) is the Z coordinate of the centerpoint of the axis
+            | oCoordinates(3) is the X coordinate of the startpoint of the axis
+            | oCoordinates(4) is the Y coordinate of the startpoint of the axis
+            | oCoordinates(5) is the Z coordinate of the startpoint of the axis
+            | oCoordinates(6) is the X coordinate of the endpoint of the axis
+            | oCoordinates(7) is the Y coordinate of the endpoint of the axis
+            | oCoordinates(8) is the Z coordinate of the endpoint of the axis
+            | Example:
+            | This example retrieves the characteristic points of the axis of NewMeasurable measure.
+            |    Dim Coordinates (8)
+            |    NewMeasurable.GetPointsOnAxis Coordinates
+
+
+        :return: characteristic points of the axis with respect of the size of the revolution object
+        """
 
         vba_function_name = 'get_points_on_axis'
         vba_function = 'GetPointsOnAxis'
@@ -565,28 +593,30 @@ class CATIAMeasurable:
 
     def get_points_on_curve(self):
         """
-        ### FROM CAA V5 Visual Basic help ###
-        # Sub GetPointsOnCurve( CATSafeArrayVariant  oCoordinates)
-        #
-        # Retrieves the the characteristic points of the curve : the start point, the middle point and the end point.
-        # Parameters:
-        # oCoordinates
-        # The information of the characteristic points of the curve with respect to the product coordinate system:
-        # oCoordinates(0) is the X coordinate of the startpoint of the curve
-        # oCoordinates(1) is the Y coordinate of the startpoint of the curve
-        # oCoordinates(2) is the Z coordinate of the startpoint of the curve
-        # oCoordinates(3) is the X coordinate of the midpoint of the curve
-        # oCoordinates(4) is the Y coordinate of the midpoint of the curve
-        # oCoordinates(5) is the Z coordinate of the midpoint of the curve
-        # oCoordinates(6) is the X coordinate of the endpoint of the curve
-        # oCoordinates(7) is the Y coordinate of the endpoint of the curve
-        # oCoordinates(8) is the Z coordinate of the endpoint of the curve
-        # Example:
-        # This example retrieves the characteristic points of the curve of NewMeasurable measure.
-        #     Dim Coordinates (8)
-        #     NewMeasurable.GetPointsOnCurve Coordinates
+        .. note::
+            CAA V5 Visual Basic help
 
-        :return:
+            Sub GetPointsOnCurve( CATSafeArrayVariant  oCoordinates)
+
+            | Retrieves the characteristic points of the curve : the start point, the middle point and the end point.
+            | Parameters:
+            | oCoordinates
+            | The information of the characteristic points of the curve with respect to the product coordinate system:
+            | oCoordinates(0) is the X coordinate of the startpoint of the curve
+            | oCoordinates(1) is the Y coordinate of the startpoint of the curve
+            | oCoordinates(2) is the Z coordinate of the startpoint of the curve
+            | oCoordinates(3) is the X coordinate of the midpoint of the curve
+            | oCoordinates(4) is the Y coordinate of the midpoint of the curve
+            | oCoordinates(5) is the Z coordinate of the midpoint of the curve
+            | oCoordinates(6) is the X coordinate of the endpoint of the curve
+            | oCoordinates(7) is the Y coordinate of the endpoint of the curve
+            | oCoordinates(8) is the Z coordinate of the endpoint of the curve
+            | Example:
+            | This example retrieves the characteristic points of the curve of NewMeasurable measure.
+            |    Dim Coordinates (8)
+            |    NewMeasurable.GetPointsOnCurve Coordinates
+
+        :return: the characteristic points of the curve : the start point, the middle point and the end point.
         """
 
         vba_function_name = 'get_points_on_curve'
