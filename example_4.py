@@ -4,8 +4,7 @@
 
     Example 4:
 
-    Shows how to loop through a CATProduct and find if sub component is
-    a CATPart or CATProduct.
+    Loop through a CATProduct and find if sub component is a CATPart or CATProduct.
 
 """
 

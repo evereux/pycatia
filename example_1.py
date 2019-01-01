@@ -4,7 +4,7 @@
 
     Example 1:
 
-    Shows how to access the CATIA COM object with a .CATPart open and get the center
+    Access the CATIA COM object with a .CATPart open and get the center
     of gravity for the part body 'PartBody'.
 
 """

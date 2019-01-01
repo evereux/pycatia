@@ -4,7 +4,7 @@
 
     Example 3:
 
-    Find all points in the CATPart and find it's co-ordinate.
+    Find all points in the CATPart and print it's co-ordinate.
 
 """
 

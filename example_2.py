@@ -4,7 +4,7 @@
 
     Example 2:
 
-    Shows how to get all the points in the geometrical set 'Points' and get the co-ordinate.
+    Get all the points in the geometrical set 'Points' and print the co-ordinate.
 
 """
 from pycatia import CATIAApplication
