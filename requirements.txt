@@ -7,4 +7,3 @@ py==1.7.0
 pytest==4.0.0
 pytest-cov==2.6.0
 pywin32==224
-
