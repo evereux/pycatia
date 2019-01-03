@@ -14,11 +14,21 @@
 #
 import os
 import sys
+from unittest.mock import MagicMock
 
 import sphinx_rtd_theme
 
 sys.path.insert(0, os.path.abspath('..'))
 
+
+class Mock(MagicMock):
+    @classmethod
+    def __getattr__(cls, name):
+        return MagicMock()
+
+
+MOCK_MODULES = ['pywin32']
+sys.modules.update((mod_name, Mock()) for mod_name in MOCK_MODULES)
 
 # -- Project information -----------------------------------------------------
 
@@ -30,7 +40,6 @@ author = 'Paul Bourne'
 version = ''
 # The full version, including alpha/beta/rc tags
 release = '0.0.3'
-
 
 # -- General configuration ---------------------------------------------------
 
@@ -76,7 +85,6 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = None
 
-
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
@@ -112,7 +120,6 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'pycatiadoc'
 
-
 # -- Options for LaTeX output ------------------------------------------------
 
 latex_elements = {
@@ -141,7 +148,6 @@ latex_documents = [
      'Paul Bourne', 'manual'),
 ]
 
-
 # -- Options for manual page output ------------------------------------------
 
 # One entry per manual page. List of tuples
@@ -150,7 +156,6 @@ man_pages = [
     (master_doc, 'pycatia', 'pycatia Documentation',
      [author], 1)
 ]
-
 
 # -- Options for Texinfo output ----------------------------------------------
 
@@ -162,7 +167,6 @@ texinfo_documents = [
      author, 'pycatia', 'One line description of project.',
      'Miscellaneous'),
 ]
-
 
 # -- Options for Epub output -------------------------------------------------
 
@@ -180,7 +184,6 @@ epub_title = project
 
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
-
 
 # -- Extension configuration -------------------------------------------------
 
