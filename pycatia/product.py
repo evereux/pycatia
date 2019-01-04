@@ -199,7 +199,7 @@ class Product:
 
         if self.has_children():
             for i in range(self.product.Products.Count):
-                child = Product(self.product.Products.Item(i+1))
+                child = Product(self.product.Products.Item(i + 1))
                 children.append(child)
 
         return children
