@@ -27,7 +27,7 @@ class Mock(MagicMock):
         return MagicMock()
 
 
-MOCK_MODULES = ['pywin32', 'win32com.client']
+MOCK_MODULES = ['pywin32', 'win32com.client', 'pywintypes']
 
 sys.modules.update((mod_name, Mock()) for mod_name in MOCK_MODULES)
 
