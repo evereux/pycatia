@@ -28,13 +28,12 @@ class Documents:
             ProductDocument,
             Drawing.
 
+
+    :param catia: CATIA COM object
+
     """
 
     def __init__(self, catia):
-        """
-
-        :param catia: CATIA COM object
-        """
 
         self.documents = catia.Documents
 
@@ -78,6 +77,9 @@ class Documents:
 class Document:
     """
     The Document object is used to access the currently active document in the catia session.
+
+    If the document fails to activate try closing CATIA and killing any existing COM object
+    processes in task manager.
 
     .. note::
 
@@ -144,7 +146,7 @@ class Document:
         :return: boolean()
         """
 
-        if self.product:
+        if self.product.is_catproduct():
             return True
         return False
 
@@ -154,8 +156,11 @@ class Document:
         Determine whether the active document is a CATPart.
         :return:
         """
-        if not self.is_product:
-            return True
+        try:
+            if self.part.part:
+                return True
+        except AttributeError:
+            return False
 
         return True
 
