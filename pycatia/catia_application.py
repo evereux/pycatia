@@ -28,6 +28,20 @@ class CATIAApplication:
 
     catia = Dispatch('CATIA.Application')
 
-    def __repr__(self):
+    def documents(self):
+        """
+        :return: Documents()
+        """
 
+        return Documents(self.catia)
+
+    def document(self):
+        """
+
+        :return: Document()
+        """
+
+        return Document(self.catia)
+
+    def __repr__(self):
         return '<CATIAApplication object ()>'

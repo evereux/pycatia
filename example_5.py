@@ -14,11 +14,10 @@
 """
 
 from pycatia import CATIAApplication
-from pycatia import Document
 from pycatia import create_points
 
 catia = CATIAApplication()
-document = Document(catia.catia)
+document = catia.document()
 part = document.part
 
 # full path name to csv file.

@@ -15,15 +15,15 @@ from pycatia import Document
 from pycatia import Documents
 
 # path to file to open.
-file_name = r'tests\Part_1.CATPart'
+file_name = r'tests\CF_Part_1.CATPart'
 new_file_name = 'new_part.CATPart'
 
 catia = CATIAApplication()
 # open document
-documents = Documents(catia.catia)
+documents = catia.documents()
 documents.open(file_name)
 
-document = Document(catia.catia)
+document = catia.document()
 # save document as new name.
 document.save_as(new_file_name)
 # close document

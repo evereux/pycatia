@@ -11,10 +11,9 @@ from pycatia import CATIAApplication
 from pycatia import CATIAMeasurable
 from pycatia import create_reference, create_measurable
 from pycatia import create_spa_workbench
-from pycatia import Document
 
 catia = CATIAApplication()
-document = Document(catia.catia)
+document = catia.document()
 part = document.part
 spa_workbench = create_spa_workbench(document.document)
 
