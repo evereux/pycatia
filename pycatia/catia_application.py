@@ -15,7 +15,6 @@ class CATIAApplication:
         catia = CATIAApplication()
 
     .. note::
-
         CAA V5 Visual Basic help
 
         CATIA products. The root object is the Application, which aggregates, or includes, Documents, a
