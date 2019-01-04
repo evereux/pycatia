@@ -2,6 +2,8 @@
 
 from win32com.client import Dispatch
 
+from .document import Documents, Document
+
 
 class CATIAApplication:
     """
@@ -28,4 +30,4 @@ class CATIAApplication:
 
     def __repr__(self):
 
-        return f'<CATIAApplication object ()>'
+        return '<CATIAApplication object ()>'
