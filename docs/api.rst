@@ -7,11 +7,13 @@ V5Automation.chm file which is bundled with CATIA.
 
 .. module:: pycatia
 
+
 CATIAApplication
 ----------------
 
 .. autoclass:: CATIAApplication
     :members:
+
 
 Documents
 ---------
@@ -23,11 +25,19 @@ Documents
     :members:
 
 
+Product
+----
+
+.. autoclass:: Product
+    :members:
+
+
 Part
 ----
 
 .. autoclass:: Part
     :members:
+
 
 CATIAMeasurable
 ---------------
@@ -35,12 +45,35 @@ CATIAMeasurable
 .. autoclass:: CATIAMeasurable
     :members:
 
+
 HybridShapeFactory
 ------------------
+
 .. autoclass:: HybridShapeFactory
     :members:
 
+Reference
+---------
+
+.. autofunction:: create_reference
+
+Workbenches
+-----------
+
+.. autofucntion:: create_spa_workbench
+
+
+General Functions
+-----------------
+
+.. autofunction:: create_measurable
+
+.. autofunction:: run_system_service
+
+
 CSV Tools
 ---------
+
 .. autofunction:: create_points
+
 .. autofunction:: csv_reader
