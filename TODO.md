@@ -2,4 +2,3 @@
 in a CATProduct.
 * Expand doc strings.
 * Add more tests.
-* Create documentation.
