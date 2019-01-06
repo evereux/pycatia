@@ -37,6 +37,41 @@ class Documents:
 
         self.documents = catia.Documents
 
+    def add(self, document_type):
+        """
+        .. note::
+            CATIA V5 Visual Basic Help
+
+            Func Add( CATBSTR  docType) As Document
+
+            Creates a Document object and adds it to the documents collection. This document becomes the active one,
+            and a window is created to accomodate it which becomes the active window.
+            | Parameters:
+            |   docType
+            | The type of the document to create, chosen among:
+            |   Part
+            |       For PartDocument
+            |   Product
+            |       For ProductDocument
+            |   Drawing
+            |       For Drawing
+            |   Returns:
+            |       The created document
+            | Example:
+            | The following example creates a PartDocument document in the collection retrieved in PartDoc.
+            |   Dim PartDoc As Document
+            |   Set PartDoc = Documents.Add("Part")
+
+        :param document_type:
+        :return:
+        """
+
+        document_types = ['Part', 'Product', 'Drawing']
+        if document_type not in document_types:
+            raise ValueError(f'Document type must be in [{document_types}]')
+
+        self.documents.Add(document_type)
+
     def open(self, file_name):
         """
         Open CATIA document `file_name` in current CATIA session.
@@ -100,7 +135,6 @@ class Document:
     """
 
     def __init__(self, catia):
-
 
         try:
             self.document = catia.ActiveDocument

@@ -1,5 +1,7 @@
 #! /usr/bin/python3.6
 
+import os
+
 from .catia_application import CATIAApplication
 from .csv_tools import create_points
 from .csv_tools import csv_reader
@@ -23,3 +25,5 @@ __version__ = "0.0.3"
 __url__ = "https://github.com/evereux/pycatia"
 
 name = __name__
+
+macro_path = os.path.join(os.path.realpath(__file__), r'macros')

@@ -1,0 +1,4 @@
+Public Function add_point (geometrical_set, point, point_name)
+    geometrical_set.AppendHybridShape point
+    point.Name = point_name
+End Function
