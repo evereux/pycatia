@@ -1,4 +1,5 @@
-# pycatia
+pycatia
+=======
 
 pycatia currently only contains access to the CATIA API Measurable 
 object and it's methods without the need of visual basic / CATScripts.
@@ -13,35 +14,50 @@ in python.
 
 pycatia accesses these methods by running VBA scripts using the 
 `Dispatch('CATIA.Application').SystemService.Evaluate()` function where required
- and passing a small public function to it. Otherwise, pycatia uses the VB method 
+and passing a small public function to it. Otherwise, pycatia uses the VB method
 directly but exposes it within the same python class.
 
 This has currently only been tested in CATIA V5 R21.
 
-## Requirements
+Requirements
+------------
 
 * python >= 3.6 
 * CATIA V5/V6
 * see requirements.txt
 
-## Installation
+Installation
+------------
 
-### with pip
+with pip
+~~~~~~~~
+
+.. code-block::
 
     pip install pycatia
 
-### with git
+with git
+~~~~~~~~
+
 Clone the master branch from github into your working folder.
+
+.. code-block::
 
     git clone https://github.com/evereux/pycatia.git
 
-### download zip
-Download and unpack the  [master branch zip](https://github.com/evereux/pycatia/archive/master.zip) into your working folder.
+download zip
+~~~~~~~~~~~~
+.. _master_branch.zip: https://github.com/evereux/pycatia/archive/master.zip
+
+Download and unpack the  master_branch.zip_
 
 
-## Usage
+Usage
+-----
 
 This example shows how to get the first point in the geometrical set 'Points'.
+
+.. code-block::
 
     # initial set-up to get access to the CATIA COM objects.
     import pycatia
@@ -75,39 +91,56 @@ This example shows how to get the first point in the geometrical set 'Points'.
 For a complete list of methods available on a measurable object see
 the class CATIAMeasurable in `measurable.py`.
 
-## Examples
+Links
+-----
+.. _pycatia.readthedocs.io: https://pycatia.readthedocs.io
+.. _pypi.org: https://pypi.org/project/pycatia/
+
+Documentation: pycatia.readthedocs.io_.
+
+Releases: pycatia @ pypi.org_
+
+Examples
+--------
+
+.. _example_1: https://github.com/evereux/pycatia/blob/master/example_1.py
+.. _example_2: https://github.com/evereux/pycatia/blob/master/example_2.py
+.. _example_3: https://github.com/evereux/pycatia/blob/master/example_3.py
+.. _example_4: https://github.com/evereux/pycatia/blob/master/example_4.py
+.. _example_5: https://github.com/evereux/pycatia/blob/master/example_5.py
+.. _example_6: https://github.com/evereux/pycatia/blob/master/example_6.py
 
 1. Open the file catia_measurable.CATPart from the folder tests.
 2. Run the example scripts.
 
-    [Example 1](https://github.com/evereux/pycatia/blob/master/example_1.py):
+   example_1_
 
-    Shows how to access the CATIA COM object with a .CATPart open and
-    get the center of gravity for the part body 'PartBody'.
+   Shows how to access the CATIA COM object with a .CATPart open and
+   get the center of gravity for the part body 'PartBody'.
     
-    [Example 2](https://github.com/evereux/pycatia/blob/master/example_2.py):
+   example_2_
 
-    Shows how to get all the points in the geometrical set 'Points' and
-    get the co-ordinate.
+   Shows how to get all the points in the geometrical set 'Points' and
+   get the co-ordinate.
     
-    [Example 3](https://github.com/evereux/pycatia/blob/master/example_3.py):
+   example_3_
     
-    Shows how to search for all points in the document and return the
-    co-ordinates.
+   Shows how to search for all points in the document and return the
+   co-ordinates.
 
-    [Example 4](https://github.com/evereux/pycatia/blob/master/example_4.py):
+   example_4_
 
-    Shows how to loop through a product and determine whether child is
-    a CATProduct or CATPart.
+   Shows how to loop through a product and determine whether child is
+   a CATProduct or CATPart.
 
-    [Example 5](https://github.com/evereux/pycatia/blob/master/example_5.py):
+   example_5_
 
-    Shows how to parse and csv file and create points in a CATIA part.
+   Shows how to parse and csv file and create points in a CATIA part.
 
-    [Example 6](https://github.com/evereux/pycatia/blob/master/example_6.py):
+   example_6_
 
-    Examples of how to open, save as and close a CATIA file.
+   Examples of how to open, save as and close a CATIA file.
     
-## Running The Tests
-* CATIA must be running the the part catia_measurable_part.CATPart open.
+Running The Tests
+-----------------
 * Run the command: `py.test -v --cov-report term-missing --cov=pycatia tests/`
