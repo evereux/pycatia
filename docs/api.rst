@@ -26,7 +26,7 @@ Documents
 
 
 Product
-----
+-------
 
 .. autoclass:: Product
     :members:
@@ -60,7 +60,7 @@ Reference
 Workbenches
 -----------
 
-.. autofucntion:: create_spa_workbench
+.. autofunction:: create_spa_workbench
 
 
 General Functions
