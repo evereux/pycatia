@@ -260,14 +260,17 @@ class Part:
 
     def update(self):
         """
-        ### FROM CAA V5 Visual Basic help ###
-        # o Sub Update( )
-        # Updates of the part result with respect to its specifications. Any composing specification that hasn't its result up-to-date will recompute it, thus propagating changes to the whole part.
-        # Example:
-        # The following example update the part:
-        #  Set partRoot = partDoc.Part
-        #  partRoot.Update
-        #
+        .. note::
+            CAA V5 Visual Basic help
+
+            Sub Update( )
+            Updates of the part result with respect to its specifications. Any composing specification that hasn't its
+            result up-to-date will recompute it, thus propagating changes to the whole part.
+            | Example:
+            | The following example update the part:
+            | Set partRoot = partDoc.Part
+            |   partRoot.Update
+
 
         :return:
         """
