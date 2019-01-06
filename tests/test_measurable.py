@@ -182,7 +182,7 @@ def test_get_axis():
     """
 
     axis = (0.0, 0.0, 2025.0)
-    catia_axis = catia_measurable_arc.get_axis()
+    catia_axis = catia_measurable_arc.get_axis(catia)
 
     assert axis == (round(catia_axis[0], 6), round(catia_axis[1], 6), round(catia_axis[2], 6))
 
@@ -205,7 +205,7 @@ def test_get_axis_system():
         0.000000,
         0.000000,
         -1.000000)
-    catia_axis = catia_measurable_axis.get_axis_system()
+    catia_axis = catia_measurable_axis.get_axis_system(catia)
 
     assert axis_system == (
         round(catia_axis[0], 6),
@@ -251,7 +251,7 @@ def test_get_direction():
     """
 
     direction_vector = (0.939344, 0.207529, -0.273065)
-    catia_direction = catia_measurable_line1.get_direction()
+    catia_direction = catia_measurable_line1.get_direction(catia)
 
     assert direction_vector == (
         round(catia_direction[0], 6),
@@ -289,7 +289,7 @@ def test_get_minimum_distance_points():
         None,
         None
     )
-    catia_minimum_distance_points = catia_measurable_point1.get_minimum_distance_points(point2_reference)
+    catia_minimum_distance_points = catia_measurable_point1.get_minimum_distance_points(catia, point2_reference)
     print(catia_minimum_distance_points)
 
     assert minimum_distance_points == round_tuple(catia_minimum_distance_points, 6)
@@ -312,7 +312,7 @@ def test_get_plane():
         -0.796162,
         -0.605083
     )
-    catia_plane = catia_measurable_plane.get_plane()
+    catia_plane = catia_measurable_plane.get_plane(catia)
     catia_plane = round_tuple(catia_plane, 6)
 
     assert plane == catia_plane
@@ -329,7 +329,7 @@ def test_get_point():
         8.0,
         -4.0,
     )
-    catia_point = catia_measurable_point1.get_point()
+    catia_point = catia_measurable_point1.get_point(catia)
     catia_point = round_tuple(catia_point, 6)
 
     assert point == catia_point
@@ -352,7 +352,7 @@ def test_get_points_on_axis():
         142.675,
         0.000,
     )
-    catia_cylinder = catia_measurable_cylinder.get_points_on_axis()
+    catia_cylinder = catia_measurable_cylinder.get_points_on_axis(catia)
     catia_cylinder = round_tuple(catia_cylinder, 6)
 
     assert cylinder == catia_cylinder
@@ -375,7 +375,7 @@ def test_get_points_on_curve():
         27,
         -29,
     )
-    catia_points_on_curve = catia_measurable_line1.get_points_on_curve()
+    catia_points_on_curve = catia_measurable_line1.get_points_on_curve(catia)
     catia_points_on_curve = round_tuple(catia_points_on_curve, 6)
 
     assert points_on_curve == catia_points_on_curve
@@ -403,7 +403,7 @@ def test_centre_of_gravity():
     gy = 81.364587
     gz = 10.000000
 
-    centre_of_gravity = catia_measurable.get_cog()
+    centre_of_gravity = catia_measurable.get_cog(catia)
 
     assert (gx, gy, gz) == (
         round(centre_of_gravity[0], 6),
@@ -444,7 +444,7 @@ def test_center():
     """
 
     center = (-47.039, 83.488, 0.0)
-    catia_center = catia_measurable_arc.get_center()
+    catia_center = catia_measurable_arc.get_center(catia)
 
     assert center == catia_center
 

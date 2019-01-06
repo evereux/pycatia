@@ -26,7 +26,7 @@ test_requirements = [
     'pytest-cov == 2.6.0',
 ]
 
-with open("README.md", "r") as fh:
+with open("README.rst", "r") as fh:
     long_description = fh.read()
 
 setup(
