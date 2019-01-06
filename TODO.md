@@ -2,3 +2,4 @@
 in a CATProduct.
 * Expand doc strings.
 * Add more tests.
+* add ignore warnings to save and close methods.
