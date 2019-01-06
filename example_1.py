@@ -15,8 +15,14 @@ from pycatia import create_reference, create_measurable
 from pycatia import create_spa_workbench
 
 catia = CATIAApplication()
+
+documents = catia.documents()
+documents.open(r'tests\CF_catia_measurable_part.CATPart')
+
 document = catia.document()
+
 part = document.part
+
 spa_workbench = create_spa_workbench(document.document)
 
 bodies = part.get_bodies()
@@ -39,6 +45,6 @@ measurable = create_measurable(spa_workbench, reference)
 catia_measurable = CATIAMeasurable(measurable)
 
 # run the VB function Measurable.GetCOG()
-center_of_gravity = catia_measurable.get_cog()
+center_of_gravity = catia_measurable.get_cog(catia)
 # center_of_gravity = (86.06520158074527, 81.36458658122612, 10.0)
 print(center_of_gravity)

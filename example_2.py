@@ -13,6 +13,10 @@ from pycatia import create_reference, create_measurable
 from pycatia import create_spa_workbench
 
 catia = CATIAApplication()
+
+documents = catia.documents()
+documents.open(r'tests\CF_catia_measurable_part.CATPart')
+
 document = catia.document()
 part = document.part
 spa_workbench = create_spa_workbench(document.document)
@@ -24,5 +28,5 @@ for point in points:
     reference = create_reference(part.part, point)
     measurable = create_measurable(spa_workbench, reference)
     point_measurable = CATIAMeasurable(measurable)
-    coordinates = point_measurable.get_point()
+    coordinates = point_measurable.get_point(catia)
     print(f'{point.name}: {coordinates}')

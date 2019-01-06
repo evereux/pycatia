@@ -11,6 +11,10 @@
 from pycatia import CATIAApplication
 
 catia = CATIAApplication()
+
+documents = catia.documents()
+documents.open(r'tests\CF_TopLevelAssy.CATProduct')
+
 document = catia.document()
 part = document.part
 product = document.product
