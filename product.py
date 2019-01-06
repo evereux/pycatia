@@ -53,9 +53,9 @@ class Product:
 
             Returns or sets the product's part number.
             PartNumber is valid for reference products only.
-            Example:
-            This example sets the Engine product's part number to A120-253X-7.
-                  Engine.PartNumber("A120-253X-7")
+            | Example:
+            | This example sets the Engine product's part number to A120-253X-7.
+            |     Engine.PartNumber("A120-253X-7")
 
 
         :return:
@@ -93,9 +93,9 @@ class Product:
 
             Returns or sets the product's definition.
             Definition is valid for reference products only.
-            Example:
-            This example retrieves the definition of the Engine product in EngineDef.
-                  EngineDef = Engine.Definition
+            | Example:
+            | This example retrieves the definition of the Engine product in EngineDef.
+            |     EngineDef = Engine.Definition
 
 
         :return: str()
