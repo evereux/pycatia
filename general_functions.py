@@ -2,6 +2,7 @@
 
 from win32com.client import Dispatch
 
+
 def create_measurable(spa_workbench, com_reference):
     """
 
