@@ -1,9 +1,6 @@
 #! /usr/bin/python3.6
 
 
-from .general_functions import run_system_service
-
-
 class CATIAMeasurable:
     """
     The interface to access a CATIAMeasurable Get measurements on the object.
@@ -34,9 +31,6 @@ class CATIAMeasurable:
         """
         :param measurable:
         """
-
-        self.cat_script_language = 0
-
         self.measurable = measurable
 
     @property
@@ -113,7 +107,7 @@ class CATIAMeasurable:
     @property
     def length(self):
         """
-        ..note:: lalal
+        ..note::
             CAA V5 Visual Basic help
 
             Property Length( ) As double (Read Only)
@@ -142,7 +136,7 @@ class CATIAMeasurable:
             |    Dim APerimeter As double
             |    APerimeter = NewMeasurable.Perimeter
 
-        :return: permiter
+        :return: perimeter
         """
         return self.measurable.Perimeter
 
@@ -212,7 +206,7 @@ class CATIAMeasurable:
 
         return self.measurable.GetAngleBetween(reference_measurable)
 
-    def get_axis(self):
+    def get_axis(self, catia):
         """
         ..note::
             CAA V5 Visual Basic help
@@ -231,6 +225,7 @@ class CATIAMeasurable:
             |    Dim AxisVector (2)
             |    NewMeasurable.GetAxis AxisVector
 
+        :param catia:
         :return: axis
         """
         vba_function_name = 'get_axis'
@@ -242,11 +237,11 @@ class CATIAMeasurable:
             {vba_function_name} = AxisVector
         End Function
         '''
-        result = run_system_service(vba_code, vba_function_name, [self.measurable])
+        result = catia.evaluate(vba_code, vba_function_name, [self.measurable])
 
         return result
 
-    def get_axis_system(self):
+    def get_axis_system(self, catia):
         """
         ..note ::
             CAA V5 Visual Basic help
@@ -274,6 +269,7 @@ class CATIAMeasurable:
             |    Dim Components (11)
             |    NewMeasurable.GetAxisSystem Components
 
+        :param catia: CATIAApplication()
         :return: axis system
         """
 
@@ -287,11 +283,11 @@ class CATIAMeasurable:
             End Function
             '''
 
-        result = run_system_service(vba_code, vba_function_name, [self.measurable])
+        result = catia.evaluate(vba_code, vba_function_name, [self.measurable])
 
         return result
 
-    def get_cog(self):
+    def get_cog(self, catia):
         """
         .. note::
             FROM CAA V5 Visual Basic help
@@ -310,6 +306,7 @@ class CATIAMeasurable:
             |    Dim Coordinates (2)
             |    NewMeasurable.GetCOG Coordinates
 
+        :param catia: CATIAApplication()
         :return: center of gravity
         """
 
@@ -322,11 +319,11 @@ class CATIAMeasurable:
             {vba_function_name} = coord
         End Function
         '''
-        result = run_system_service(vba_code, vba_function_name, [self.measurable])
+        result = catia.evaluate(vba_code, vba_function_name, [self.measurable])
 
         return result
 
-    def get_center(self):
+    def get_center(self, catia):
         """
         ..note::
             CAA V5 Visual Basic help
@@ -344,6 +341,7 @@ class CATIAMeasurable:
             |    Dim Coordinates (2)
             |    NewMeasurable.GetCenter Coordinates << fixed typo in help
 
+        :param catia: CATIAApplication()
         :return: center
         """
 
@@ -357,11 +355,11 @@ class CATIAMeasurable:
         End Function
         '''
 
-        result = run_system_service(vba_code, vba_function_name, [self.measurable])
+        result = catia.evaluate(vba_code, vba_function_name, [self.measurable])
 
         return result
 
-    def get_direction(self):
+    def get_direction(self, catia):
         """
         .. note::
             CAA V5 Visual Basic help
@@ -380,6 +378,7 @@ class CATIAMeasurable:
             |    Dim Direction (2)
             |    NewMeasurable.GetDirection Direction
 
+        :param catia:
         :return: direction
         """
 
@@ -393,7 +392,7 @@ class CATIAMeasurable:
         End Function
         '''
 
-        result = run_system_service(vba_code, vba_function_name, [self.measurable])
+        result = catia.evaluate(vba_code, vba_function_name, [self.measurable])
 
         return result
 
@@ -434,7 +433,7 @@ class CATIAMeasurable:
 
         return self.measurable.GetMinimumDistance(reference)
 
-    def get_minimum_distance_points(self, point_reference):
+    def get_minimum_distance_points(self, catia, point_reference):
         """
         .. note::
             CAA V5 Visual Basic help
@@ -455,6 +454,8 @@ class CATIAMeasurable:
             |   Dim Coordinates (8)
             |   TheMeasurable.GetMinimumDistancePoints reference2, Coordinates
 
+        :param catia: CATIAApplication()
+        :param point_reference:
         :return: the points corresponding to the distance between the reference1 and reference2.
         """
 
@@ -468,9 +469,9 @@ class CATIAMeasurable:
         End Function
         '''
 
-        return run_system_service(vba_code, vba_function_name, [self.measurable, point_reference])
+        return catia.evaluate(vba_code, vba_function_name, [self.measurable, point_reference])
 
-    def get_plane(self):
+    def get_plane(self, catia):
         """
         .. note::
             CAA V5 Visual Basic help
@@ -495,6 +496,7 @@ class CATIAMeasurable:
             |    Dim Components (8)
             |    NewMeasurable.GetPlane Components
 
+        :param catia:
         :return: informations of the plane.
         """
 
@@ -508,9 +510,9 @@ class CATIAMeasurable:
         End Function
         '''
 
-        return run_system_service(vba_code, vba_function_name, [self.measurable])
+        return catia.evaluate(vba_code, vba_function_name, [self.measurable])
 
-    def get_point(self):
+    def get_point(self, catia):
         """
         .. note::
             CAA V5 Visual Basic help
@@ -529,6 +531,7 @@ class CATIAMeasurable:
             |    NewMeasurable.GetPoint Coordinates
 
 
+        :param catia: CATIAApplication()
         :return: the position of the point.
         """
 
@@ -542,9 +545,9 @@ class CATIAMeasurable:
         End Function
         '''
 
-        return run_system_service(vba_code, vba_function_name, [self.measurable])
+        return catia.evaluate(vba_code, vba_function_name, [self.measurable])
 
-    def get_points_on_axis(self):
+    def get_points_on_axis(self, catia):
         """
         .. note::
             CAA V5 Visual Basic help
@@ -583,9 +586,9 @@ class CATIAMeasurable:
         End Function
         '''
 
-        return run_system_service(vba_code, vba_function_name, [self.measurable])
+        return catia.evaluate(vba_code, vba_function_name, [self.measurable])
 
-    def get_points_on_curve(self):
+    def get_points_on_curve(self, catia):
         """
         .. note::
             CAA V5 Visual Basic help
@@ -610,6 +613,7 @@ class CATIAMeasurable:
             |    Dim Coordinates (8)
             |    NewMeasurable.GetPointsOnCurve Coordinates
 
+        :param catia: CATIAApplication()
         :return: the characteristic points of the curve : the start point, the middle point and the end point.
         """
 
@@ -623,4 +627,4 @@ class CATIAMeasurable:
         End Function
         '''
 
-        return run_system_service(vba_code, vba_function_name, [self.measurable])
+        return catia.evaluate(vba_code, vba_function_name, [self.measurable])
