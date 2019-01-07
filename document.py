@@ -220,7 +220,7 @@ class Document:
         :return: True or False
         """
 
-        if self.document.Saved():
+        if self.document.Saved:
             return True
 
         return False
