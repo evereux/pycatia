@@ -218,4 +218,4 @@ class CATIAApplication:
         return run
 
     def __repr__(self):
-        return '<CATIAApplication object ()>'
+        return '<CATIAApplication>'

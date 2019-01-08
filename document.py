@@ -139,7 +139,7 @@ class Document:
         try:
             self.document = catia.ActiveDocument
         except com_error:
-            message = "Could not activate document."
+            message = "Could not activate document. Is a document open?"
             raise CATIAApplicationException(message)
 
     @property
@@ -157,10 +157,7 @@ class Document:
         :return: Product()
         """
 
-        try:
-            return Product(self.document.Product)
-        except AttributeError:
-            return None
+        return Product(self.document.Product)
 
     @property
     def part(self):
@@ -168,10 +165,7 @@ class Document:
         :return: Part()
         """
 
-        try:
-            return Part(self.document.Part)
-        except AttributeError:
-            return None
+        return Part(self.document.Part)
 
     @property
     def is_product(self):
@@ -196,9 +190,6 @@ class Document:
         except AttributeError:
             return False
 
-        return True
-
-    @property
     def is_saved(self):
         """
         Returns true if document is saved.
@@ -220,10 +211,7 @@ class Document:
         :return: True or False
         """
 
-        if self.document.Saved:
-            return True
-
-        return False
+        return self.document.Saved
 
     def activate(self):
         """
@@ -354,4 +342,4 @@ class Document:
         return selected
 
     def __repr__(self):
-        return f'Document object (name: {self.name})'
+        return f'<Document> (name: {self.name})'

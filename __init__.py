@@ -7,6 +7,7 @@ from .csv_tools import create_points
 from .csv_tools import csv_reader
 from .document import Document
 from .document import Documents
+from .exceptions import CATIAApplicationException
 from .general_functions import create_measurable
 from .general_functions import run_system_service
 from .hybridshapefactory import HybridShapeFactory
