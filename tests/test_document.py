@@ -13,15 +13,18 @@ catia = CATIAApplication()
 documents = catia.documents()
 now_string = datetime.now().strftime('%Y%m%d-%H%M%S')
 
-cat_part = 'tests/CF_catia_measurable_part.CATPart'
-cat_product = 'tests/CF_TopLevelAssy.CATProduct'
+cat_part = r'tests/CF_catia_measurable_part.CATPart'
+cat_product = r'tests/CF_TopLevelAssy.CATProduct'
+
 
 def test_document_exception():
 
     with pytest.raises(CATIAApplicationException):
         document = catia.document()
 
+
 def test_open_document():
+
     assert documents.documents.Count == 0
     documents.open(cat_part)
     assert documents.documents.Count == 1
@@ -38,6 +41,7 @@ def test_open_document():
 
 
 def test_add_documents():
+
     documents.add('Part')
     document = catia.document()
     assert 'CATPart' in document.name
@@ -63,6 +67,7 @@ def test_add_documents():
 
 
 def test_product():
+
     documents.open(cat_product)
     document = catia.document()
     product = document.product
@@ -73,6 +78,7 @@ def test_product():
 
 
 def test_part():
+
     documents.open(cat_part)
     document = catia.document()
     part = document.part
@@ -83,6 +89,7 @@ def test_part():
 
 
 def test_is_saved():
+
     documents.open(cat_part)
     document = catia.document()
     document.is_saved()

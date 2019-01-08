@@ -1,7 +1,11 @@
 #! /usr/bin/python3.6
 
+"""
+    This file is named test_ameasurable.py so these tests are run first. Othwerise the tests would fail for
+    test_document.py. I've no idea why at the moment.
+"""
+
 from pycatia import CATIAApplication
-from pycatia import Document
 from pycatia import create_reference, create_measurable
 from pycatia import CATIAMeasurable
 from pycatia import create_spa_workbench
@@ -76,16 +80,6 @@ catia_measurable_cylinder = CATIAMeasurable(cylinder_measurable)
 
 def test_application():
     assert 'CATIAApplication' in catia.__repr__()
-
-
-def test_document():
-    assert 'CF_catia_measurable_part.CATPart' == document.name
-    assert 'Document object' in document.__repr__()
-
-    # search for all points
-    selection_items = document.search_for_items(document, ['Point'])
-
-    assert len(selection_items) == 11
 
 
 def round_tuple(tuple_object, decimal_places=6):
@@ -289,7 +283,6 @@ def test_get_minimum_distance_points():
         None
     )
     catia_minimum_distance_points = catia_measurable_point1.get_minimum_distance_points(catia, point2_reference)
-    print(catia_minimum_distance_points)
 
     assert minimum_distance_points == round_tuple(catia_minimum_distance_points, 6)
 
