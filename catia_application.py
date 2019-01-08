@@ -60,7 +60,7 @@ class CATIAApplication:
 
         return Document(self.catia)
 
-    def refresh_display(self, state=True):
+    def refresh_display(self, state=None):
         """
         Set refresh_display to False to speed up macros.
 
@@ -83,11 +83,14 @@ class CATIAApplication:
         :return: boolean
         """
 
+        if state is None:
+            state = self.catia.RefreshDisplay
+
         self.catia.RefreshDisplay = state
 
         return self.catia.RefreshDisplay
 
-    def visible(self, state=True):
+    def visible(self, state=None):
         """
         .. note::
             Property Visible( ) As boolean
@@ -101,6 +104,9 @@ class CATIAApplication:
         :param state:
         :return:
         """
+
+        if state is None:
+            state = self.catia.Visible
 
         self.catia.Visible = state
 
@@ -147,19 +153,15 @@ class CATIAApplication:
          CATJScriptLanguage]
         :return:
         """
-        try:
-            run = self.catia.SystemService.Evaluate(
-                vba_code,
-                cat_script_language,
-                function_name,
-                measurable_items,
-            )
 
-            return run
+        run = self.catia.SystemService.Evaluate(
+            vba_code,
+            cat_script_language,
+            function_name,
+            measurable_items,
+        )
 
-        except ValueError:
-            print(f'There was a problem running SystemService.Evaluate(*args) on the VBA code. The inputs were:')
-            print(f'vba_code: {vba_code}, function_name: {function_name}')
+        return run
 
     def execute_script(self, library_name, library_type, program_name, function_name, items):
         """
