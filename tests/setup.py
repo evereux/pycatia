@@ -2,6 +2,7 @@
 
 from pycatia import CATIAApplication
 
+
 def initialise():
     """
 
