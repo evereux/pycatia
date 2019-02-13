@@ -5,6 +5,7 @@ import os
 from .catia_application import CATIAApplication
 from .csv_tools import create_points
 from .csv_tools import csv_reader
+from .context import CATIADocHandler
 from .document import Document
 from .document import Documents
 from .exceptions import CATIAApplicationException

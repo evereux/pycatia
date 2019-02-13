@@ -108,6 +108,23 @@ class Documents:
 
         self.documents.Open(file_name)
 
+    def num_open(self):
+        """
+        Returns the number of open documents.
+
+        .. note::
+
+            Sometimes COM object returns the incorrect number of documents open. This appears to be a bug in the version
+            of CATIA I'm using as the process COM surrogate process is not closing correctly?
+
+        :return: int()
+        """
+
+        for i in range(0, self.documents.Count):
+            print(self.documents.Item(i + 1).Name)
+
+        return self.documents.Count
+
 
 class Document:
     """
