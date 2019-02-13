@@ -32,7 +32,7 @@ Installation
 with pip
 ~~~~~~~~
 
-.. code-block::
+.. code-block:: python
 
     pip install pycatia
 
@@ -41,7 +41,7 @@ with git
 
 Clone the master branch from github into your working folder.
 
-.. code-block::
+.. code-block:: python
 
     git clone https://github.com/evereux/pycatia.git
 
@@ -57,7 +57,7 @@ Usage
 
 This example shows how to get the first point in the geometrical set 'Points'.
 
-.. code-block::
+.. code-block:: python
 
     # initial set-up to get access to the CATIA COM objects.
     import pycatia
@@ -83,10 +83,11 @@ This example shows how to get the first point in the geometrical set 'Points'.
     point_coordinate = measurable.get_point()
     # point_coordinate is a tuple representing it's x, y, z values.
     print(point_coordinate)
-    >>> (0.0, 8.0, -4.0)
+
+    # outputs (0.0, 8.0, -4.0)
     # print x
     print(point_coordinate[0]
-    >>> 0,0
+    # output 0,0
 
 For a complete list of methods available on a measurable object see
 the class CATIAMeasurable in `measurable.py`.
@@ -109,6 +110,7 @@ Examples
 .. _example_4: https://github.com/evereux/pycatia/blob/master/example_4.py
 .. _example_5: https://github.com/evereux/pycatia/blob/master/example_5.py
 .. _example_6: https://github.com/evereux/pycatia/blob/master/example_6.py
+.. _example_6: https://github.com/evereux/pycatia/blob/master/example_7.py
 
 1. Open the file catia_measurable.CATPart from the folder tests.
 2. Run the example scripts.
@@ -140,7 +142,15 @@ Examples
    example_6_
 
    Examples of how to open, save as and close a CATIA file.
+
+   example_7_
+
+   Example of how open a document using the context manager.
     
 Running The Tests
 -----------------
-* Run the command: `py.test -v --cov-report term-missing --cov=pycatia tests/`
+To run the tests with coverage:
+
+.. code-block:: python
+
+    py.test -v --cov-report term-missing --cov=pycatia

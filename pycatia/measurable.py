@@ -27,7 +27,7 @@ class CATIAMeasurable:
         | Methods on AXIS SYST : GetAxisSystem
     """
 
-    def __init__(self, measurable):
+    def __init__(self, measurable: object):
         """
         :param measurable:
         """

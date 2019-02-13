@@ -29,6 +29,7 @@ test_requirements = [
 with open("README.rst", "r") as fh:
     long_description = fh.read()
 
+
 setup(
     name=__name__,
     version=__version__,
@@ -36,7 +37,7 @@ setup(
     author_email=__author_email,
     description=__description__,
     long_description=long_description,
-    long_description_content_type="text/markdown",
+    long_description_content_type="text/x-rst",
     url=__url__,
     packages=['pycatia'],
     python_requires=">=3.6",

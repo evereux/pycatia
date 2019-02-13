@@ -43,6 +43,13 @@ class Part:
     @property
     def density(self):
         """
+        Returns the density of the part in kg_m3.
+
+        .. warning::
+            This will only display the density of the main part body. If there are several bodies within the part with
+            different densities you should not rely on this method!.
+
+
         .. note::
             CAA V5 Visual Basic help
 
@@ -52,7 +59,7 @@ class Part:
             |     Set partRoot = partDoc.Part
             |       MsgBox "The density is " & partRoot.Density
 
-        :return: density
+        :return float(): density
         """
 
         return self.part.Density
