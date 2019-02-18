@@ -44,3 +44,12 @@ Example 6
 Open a catia file and close a catia file.
 
 .. literalinclude:: ../example_6.py
+
+
+Example 7
+---------
+
+Using the context manager.
+
+.. literalinclude:: ../example_7.py
+

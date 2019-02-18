@@ -39,6 +39,12 @@ Part
     :members:
 
 
+Context Manager
+---------------
+
+.. autoclass:: CATIADocHandler
+    :members:
+
 CATIAMeasurable
 ---------------
 
