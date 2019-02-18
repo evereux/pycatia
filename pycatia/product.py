@@ -63,6 +63,11 @@ class Product:
 
         return self.product.PartNumber
 
+    @part_number.setter
+    def part_number(self, part_number):
+
+        self.product.PartNumber = part_number
+
     @property
     def revision(self):
         """
@@ -81,7 +86,12 @@ class Product:
         :return:
         """
 
-        return self.product.revision
+        return self.product.Revision
+
+    @revision.setter
+    def revision(self, revision):
+
+        self.product.Revision = revision
 
     @property
     def definition(self):
@@ -102,6 +112,11 @@ class Product:
         """
 
         return self.product.Definition
+
+    @definition.setter
+    def definition(self, definition):
+
+        self.product.Definition = definition
 
     @property
     def description_instance(self):
@@ -125,6 +140,11 @@ class Product:
 
         return self.product.DescriptionInst
 
+    @description_instance.setter
+    def description_instance(self, description_instance):
+
+        self.product.DescriptionInst = description_instance
+
     @property
     def description_reference(self):
         """
@@ -147,6 +167,11 @@ class Product:
 
         return self.product.DescriptionRef
 
+    @description_reference.setter
+    def description_reference(self, description_reference):
+
+        self.product.DescriptionRef = description_reference
+
     @property
     def nomenclature(self):
         """
@@ -167,7 +192,12 @@ class Product:
         :return:
         """
 
-        return self.product.Nomenclature
+        return self.product.nomenclature
+
+    @nomenclature.setter
+    def nomenclature(self, nomenclature):
+
+        self.product.nomenclature = nomenclature
 
     @property
     def reference_product(self):
@@ -223,6 +253,7 @@ class Product:
 
     def get_products(self):
         """
+        Returns a list of Products().
 
         :return: list()
         """
@@ -241,7 +272,7 @@ class Product:
         :return:
         """
 
-        return ('<Product> Attributes... \n'
+        return ('(Product) Attributes... \n'
                 f'File Name:             {self.file_name}\n'
                 f'Name:                  {self.name}\n'
                 f'Part Number:           {self.part_number}\n'
@@ -252,7 +283,7 @@ class Product:
                 f'Description Reference: {self.description_reference}\n'
                 f'Reference:             {self.reference_product}\n'
                 f'Is CATProduct:         {self.is_catproduct()}\n'
-                f'Is CATPart:            {self.is_catpart()}\n')
+                f'Is CATPart:            {self.is_catpart()}')
 
     def __repr__(self):
-        return f'<Product  part_number: {self.part_number}, file_name: {self.file_name})'
+        return f'(Product) part_number: {self.part_number}, file_name: {self.file_name}'
