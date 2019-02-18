@@ -110,7 +110,7 @@ Examples
 .. _example_4: https://github.com/evereux/pycatia/blob/master/example_4.py
 .. _example_5: https://github.com/evereux/pycatia/blob/master/example_5.py
 .. _example_6: https://github.com/evereux/pycatia/blob/master/example_6.py
-.. _example_6: https://github.com/evereux/pycatia/blob/master/example_7.py
+.. _example_7: https://github.com/evereux/pycatia/blob/master/example_7.py
 
 1. Open the file catia_measurable.CATPart from the folder tests.
 2. Run the example scripts.
