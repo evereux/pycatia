@@ -122,7 +122,7 @@ class Part:
 
         for axis_name in self.get_axes_names():
             if name == axis_name:
-                return self.part.AxesSystems.Item(name)
+                return self.part.AxisSystems.Item(name)
         return None
 
     def get_bodies(self):
@@ -164,13 +164,18 @@ class Part:
 
     def get_geometric_elements(self):
         """
-        ### FROM CAA V5 Visual Basic help ###
-        # Returns the collection object containing the part geometrical elements. Only 3D elements are concerned here,
-        # 2D elements are managed in sketches. The origin elements are also accessible thru that collection.
-        # Example:
-        # The following example returns in geomElts the 3D elements of the partRoot part from the partDoc part document:
-        #       Set partRoot = partDoc.Part
-        #       Set geomElts = partRoot.GeometricElements
+
+        .. note::
+            CAA V5 Visual Basic help
+
+            | Returns the collection object containing the part geometrical elements. Only 3D elements are concerned
+            | here, 2D elements are managed in sketches. The origin elements are also accessible thru that collection.
+            | Example:
+            | The following example returns in geomElts the 3D elements of the partRoot part from the partDoc part
+            | document:
+            |       Set partRoot = partDoc.Part
+            |       Set geomElts = partRoot.GeometricElements
+
 
         !!! WARNING !!! The items outputted from this don't return the correct geometrical_feature_type.
         As yet, not sure what impact that will have on measuring.
@@ -265,6 +270,38 @@ class Part:
 
         return new_geometrical_set
 
+    def is_upated(self, catia_object):
+        """
+
+        Example usage to test if a part is upto date::
+
+            with CATIADocHandler(cat_part) as handler:
+                part = handler.document.part()
+
+                assert part.is_upated(part.part)
+
+        .. note::
+            CAA V5 Visual Basic help
+
+            Func IsUpToDate( AnyObject  iObject) As boolean
+
+            | Indicates whether an object needs to be updated. An object which is not up-to-date has not be calculated
+            | with the last specifications.
+            | Parameters:
+            |   iObject
+            |The object to examine
+            |   Example:
+            | The following example returns in isuptodate whether the pad1 pad is up-to-date:
+            |   Set partRoot = partDoc.Part
+            |   Set pad1 = partRoot.FindObjectByName("Pad.1")
+            |   isuptodate = partRoot.IsUpToDate(pad1)
+
+        :param catia_object:
+        :return:
+        """
+
+        return self.part.IsUpToDate(catia_object)
+
     def update(self):
         """
         .. note::
@@ -288,4 +325,4 @@ class Part:
         """
         :return: str()
         """
-        return f'Part object (name: {self.name})'
+        return f'Part(name: {self.name})'
