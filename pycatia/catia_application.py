@@ -220,4 +220,4 @@ class CATIAApplication:
         return run
 
     def __repr__(self):
-        return '<CATIAApplication>'
+        return '(CATIAApplication)'
