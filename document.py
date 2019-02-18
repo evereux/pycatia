@@ -2,6 +2,7 @@
 
 import os
 from pywintypes import com_error
+import warnings
 
 from .exceptions import CATIAApplicationException
 from .part import Part
@@ -35,6 +36,7 @@ class Documents:
 
     def __init__(self, catia):
 
+        self.catia = catia
         self.documents = catia.Documents
 
     def add(self, document_type):
@@ -72,6 +74,41 @@ class Documents:
 
         self.documents.Add(document_type)
 
+    def new_from(self, file_name):
+        """
+
+        .. note::
+            CAA V5 Visual Basic help
+
+            Creates a new document from a document stored in a file. Role: Reads a document stored in a file and
+            creates a new document containing the resulting data, adds the new document to the document collection,
+            displays it in a new window, adds the window to the window collection and activates both the document and
+            the window.
+
+            | Parameters:
+            |   The name of the file containing the document.
+            | Returns:
+            |   The created document.
+            | Example:
+            | The following example creates a new Doc document from the contents of the FileToRead file.
+            |   FileToRead = "e:\\users\\psr\\Parts\\ThisIsANicePart.CATPart"
+            |   Dim Doc As Document
+            |   Set Doc = Documents.NewFrom(FileToRead)
+
+
+        :param file_name:
+        :return:
+
+        """
+
+        if not os.path.isfile(file_name):
+            raise FileNotFoundError(f'Could not find file {file_name}.')
+
+        # get the full path to the file
+        file_name = os.path.abspath(file_name)
+
+        return self.documents.NewFrom(file_name)
+
     def open(self, file_name):
         """
         Open CATIA document `file_name` in current CATIA session.
@@ -106,23 +143,30 @@ class Documents:
         # get the full path to the file
         file_name = os.path.abspath(file_name)
 
-        self.documents.Open(file_name)
+        return self.documents.Open(file_name)
 
     def num_open(self):
         """
         Returns the number of open documents.
 
-        .. note::
+        .. warning::
 
-            Sometimes COM object returns the incorrect number of documents open. This appears to be a bug in the version
-            of CATIA I'm using as the process COM surrogate process is not closing correctly?
+            The COM object can return the incorrect number of documents open. After a document is closed CATIA can keep
+            the linked document `ABQMaterialPropertiesCatalog.CATfct` open.
 
         :return: int()
         """
 
-        for i in range(0, self.documents.Count):
-            print(self.documents.Item(i + 1).Name)
+        # for i in range(0, self.documents.Count):
+        #     print(self.documents.Item(i + 1).Name)
 
+        warning_string = (
+            'The COM object can return the incorrect number of documents open. \n'
+            'For example, after a CATPart document is closed CATIA can keep'
+            'the linked document `ABQMaterialPropertiesCatalog.CATfct` loaded in the session.'
+        )
+
+        warnings.warn(warning_string)
         return self.documents.Count
 
 
@@ -160,29 +204,16 @@ class Document:
             raise CATIAApplicationException(message)
 
     @property
-    def name(self):
+    def is_part(self):
         """
-
-        :return: document name
+        Determine whether the active document is a CATPart.
+        :return:
         """
-
-        return self.document.Name
-
-    @property
-    def product(self):
-        """
-        :return: Product()
-        """
-
-        return Product(self.document.Product)
-
-    @property
-    def part(self):
-        """
-        :return: Part()
-        """
-
-        return Part(self.document.Part)
+        try:
+            if self.part().part:
+                return True
+        except AttributeError:
+            return False
 
     @property
     def is_product(self):
@@ -191,22 +222,11 @@ class Document:
         :return: boolean()
         """
 
-        if self.product.is_catproduct():
+        if self.product().is_catproduct():
             return True
         return False
 
     @property
-    def is_part(self):
-        """
-        Determine whether the active document is a CATPart.
-        :return:
-        """
-        try:
-            if self.part.part:
-                return True
-        except AttributeError:
-            return False
-
     def is_saved(self):
         """
         Returns true if document is saved.
@@ -229,6 +249,75 @@ class Document:
         """
 
         return self.document.Saved
+
+    @property
+    def name(self):
+        """
+
+        :return: document name as str()
+        """
+
+        return self.document.Name
+
+    @property
+    def full_name(self):
+        """
+
+        .. note::
+            CAA V5 Visual Basic help
+
+            Property FullName( ) As CATBSTR (Read Only)
+
+            | Returns the document's full file name, including its path.
+            | Example:
+            | This example retrieves in DocFullName the Doc document's full file name.
+            |     DocFullName = Doc.FullName
+            |
+            | The returned value is like this:
+            |     e:\\users\\psr\\Parts\\MyNicePart.CATPart
+
+
+        :return: full path document name as str()
+        """
+
+        return self.document.FullName
+
+    @property
+    def path(self):
+        """
+
+        .. note::
+            CAA V5 Visual Basic help
+
+            Property Path( ) As CATBSTR (Read Only)
+
+            | Returns the document's file path.
+            | Example:
+            | This example retrieves in DocPath the path where the Doc document is stored.
+            |     DocPath = Doc.Path
+            |
+            | The returned value is like this:
+            |     e:\\users\\psr\\Parts
+
+
+        :return: path to document as str()
+        """
+
+        return self.document.Path
+
+    def product(self):
+        """
+        :return: Product()
+        """
+
+        return Product(self.document.Product)
+
+    def part(self):
+        """
+        :return: Part()
+        """
+
+        return Part(self.document.Part)
 
     def activate(self):
         """
