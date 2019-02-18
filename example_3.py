@@ -23,7 +23,7 @@ document = catia.document()
 
 
 spa_workbench = create_spa_workbench(document.document)
-part = document.part
+part = document.part()
 
 selected = document.search_for_items(document, ['Point'])
 

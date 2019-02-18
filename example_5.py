@@ -33,7 +33,7 @@ documents = catia.documents()
 documents.add('Part')
 
 document = catia.document()
-part = document.part
+part = document.part()
 
 # full path name to csv file.
 file = r'tests\Sample_Point_CSV_File3_medium.csv'

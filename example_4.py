@@ -16,8 +16,7 @@ documents = catia.documents()
 documents.open(r'tests\CF_TopLevelAssy.CATProduct')
 
 document = catia.document()
-part = document.part
-product = document.product
+product = document.product()
 
 
 products = product.get_products()
@@ -28,12 +27,12 @@ if len(products) == 0:
 for item in product.get_products():
 
     if item.is_catpart():
-        print(f'This is a part: "{part}"')
+        print(f'This is a part: "{item}"')
         print('')
 
     if item.is_catproduct():
         product = item
-        print(f'This is a product: "{product}"')
+        print(f'This is a product: "{item}"')
 
         if item.has_children():
             print('This product has children.')

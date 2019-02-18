@@ -18,7 +18,7 @@ documents = catia.documents()
 documents.open(r'tests\CF_catia_measurable_part.CATPart')
 
 document = catia.document()
-part = document.part
+part = document.part()
 spa_workbench = create_spa_workbench(document.document)
 
 hybrid_body = part.get_hybrid_body_by_name('Points')

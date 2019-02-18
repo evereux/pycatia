@@ -21,7 +21,7 @@ documents.open(r'tests\CF_catia_measurable_part.CATPart')
 
 document = catia.document()
 
-part = document.part
+part = document.part()
 
 spa_workbench = create_spa_workbench(document.document)
 
