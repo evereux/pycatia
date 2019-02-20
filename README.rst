@@ -1,10 +1,14 @@
+.. _pycatia.readthedocs.io: https://pycatia.readthedocs.io
+.. _pypi.org: https://pypi.org/project/pycatia/
+
 pycatia
 =======
 
-pycatia currently only contains access to the CATIA API Measurable 
+pycatia was primarily created to access the CATIA API Measurable
 object and it's methods without the need of visual basic / CATScripts.
-pycatia also provides easy to use python methods to loop through a
-product and it's children.
+There is further functionaliy available which can be seen by looking at
+the examples provided and reading the API at pycatia.readthedocs.io_.
+
 
 Some of the methods can be accessed simply using the pywin32 module but further 
 access to methods such as GetCOG do not seem to be accessible using pure python.
@@ -94,8 +98,7 @@ the class CATIAMeasurable in `measurable.py`.
 
 Links
 -----
-.. _pycatia.readthedocs.io: https://pycatia.readthedocs.io
-.. _pypi.org: https://pypi.org/project/pycatia/
+
 
 Documentation: pycatia.readthedocs.io_.
 
