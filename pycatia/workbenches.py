@@ -5,7 +5,7 @@ def create_spa_workbench(document):
     """
 
     :param document:
-    :return:
+    :return: workbench com object
     """
 
     return document.GetWorkbench("SPAWorkbench")
