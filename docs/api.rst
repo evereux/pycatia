@@ -8,7 +8,7 @@ V5Automation.chm file which is bundled with CATIA.
 .. module:: pycatia
 
 
-Context Manager
+CATIADocHandler
 ---------------
 
 .. autoclass:: CATIADocHandler
@@ -74,8 +74,6 @@ General Functions
 -----------------
 
 .. autofunction:: create_measurable
-
-.. autofunction:: run_system_service
 
 
 CSV Tools
