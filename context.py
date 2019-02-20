@@ -9,24 +9,35 @@ from .exceptions import CATIAApplicationException
 
 class CATIADocHandler:
 
-    def __init__(self, file_name=None, new_document=False):
+    def __init__(self, file_name=None, new_document=None):
         """
-        A document handler to open a CATIA document and close upon exit.
+        A context manager to open or create a CATIA document. The CATIA document will be closed upon exit.
 
-        example:
+        basic example::
 
         >>> catia_part = 'tests\\CF_catia_measurable_part.CATPart'
         >>> with CATIADocHandler(catia_part) as handler:
-        >>>     document, documents, catia = handler
+        >>>     # create the CATIA() object.
+        >>>     catia = handler.catia
+        >>>     # create the documents object.
+        >>>     documents = handler.documents
+        >>>     # create the document object.
+        >>>     document = handler.document
+        >>>     # do some stuff
 
-        New documents can also be created. new_document must be a string contraining: `Product` or `Part` or
-        `Drawing`
+        example to create new CATPart document::
 
+        >>>
+        >>> with CATIADocHandler(new_document='Part') as handler:
+        >>>     # create the CATIA() object.
+        >>>     catia = handler.catia
+        >>>     # create the documents object.
+        >>>     documents = handler.documents
+        >>>     # create the document object.
+        >>>     document = handler.document
 
-        Also see example_7.py
-
-        :param file_name:
-        :param new_document:
+        :param file_name: (optional) path filename to file
+        :param new_document: (option) string 'Part', 'Product' or 'Drawing'.
         """
 
         self.catia = CATIAApplication()
