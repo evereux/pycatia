@@ -40,20 +40,9 @@ with pip
 
     pip install pycatia
 
-with git
-~~~~~~~~
 
-Clone the master branch from github into your working folder.
-
-.. code-block:: python
-
-    git clone https://github.com/evereux/pycatia.git
-
-download zip
-~~~~~~~~~~~~
-.. _master_branch.zip: https://github.com/evereux/pycatia/archive/master.zip
-
-Download and unpack the  master_branch.zip_
+For more detailed instructions please refer to the installation instructions
+available at pycatia.readthedocs.io_.
 
 
 Usage
@@ -93,12 +82,13 @@ This example shows how to get the first point in the geometrical set 'Points'.
     print(point_coordinate[0]
     # output 0,0
 
-For a complete list of methods available on a measurable object see
-the class CATIAMeasurable in `measurable.py`.
+    document.close()
+
+See the examples provided for more pycatia goodness.
+
 
 Links
 -----
-
 
 Documentation: pycatia.readthedocs.io_.
 
