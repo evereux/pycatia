@@ -272,13 +272,12 @@ class Part:
 
     def is_upated(self, catia_object):
         """
+        :Example:
 
-        Example usage to test if a part is upto date::
-
-            with CATIADocHandler(cat_part) as handler:
-                part = handler.document.part()
-
-                assert part.is_upated(part.part)
+            >>> with CATIADocHandler(cat_part) as handler:
+            >>>    part = handler.document.part()
+            >>>
+            >>>    assert part.is_upated(part.part)
 
         .. note::
             CAA V5 Visual Basic help
@@ -289,7 +288,7 @@ class Part:
             | with the last specifications.
             | Parameters:
             |   iObject
-            |The object to examine
+            | The object to examine
             |   Example:
             | The following example returns in isuptodate whether the pad1 pad is up-to-date:
             |   Set partRoot = partDoc.Part
@@ -310,6 +309,7 @@ class Part:
             Sub Update( )
             Updates of the part result with respect to its specifications. Any composing specification that hasn't its
             result up-to-date will recompute it, thus propagating changes to the whole part.
+
             | Example:
             | The following example update the part:
             | Set partRoot = partDoc.Part

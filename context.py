@@ -8,12 +8,12 @@ from .exceptions import CATIAApplicationException
 
 
 class CATIADocHandler:
+    """
+    A context manager to open or create a CATIA document. The CATIA document will be closed upon exit.
 
-    def __init__(self, file_name=None, new_document=None):
-        """
-        A context manager to open or create a CATIA document. The CATIA document will be closed upon exit.
+    Only file_name __or__ new_document are required as one document is handled at a time.
 
-        basic example::
+    :Example - Open a CATPart:
 
         >>> catia_part = 'tests\\CF_catia_measurable_part.CATPart'
         >>> with CATIADocHandler(catia_part) as handler:
@@ -25,9 +25,8 @@ class CATIADocHandler:
         >>>     document = handler.document
         >>>     # do some stuff
 
-        example to create new CATPart document::
+    :Example - Create a new CATPart:
 
-        >>>
         >>> with CATIADocHandler(new_document='Part') as handler:
         >>>     # create the CATIA() object.
         >>>     catia = handler.catia
@@ -36,9 +35,12 @@ class CATIADocHandler:
         >>>     # create the document object.
         >>>     document = handler.document
 
-        :param file_name: (optional) path filename to file
-        :param new_document: (option) string 'Part', 'Product' or 'Drawing'.
-        """
+    :param str file_name: (optional) path filename to file
+    :param str new_document: (optional) 'Part', 'Product' or 'Drawing'.
+    """
+
+    def __init__(self, file_name=None, new_document=None):
+
 
         self.catia = CATIAApplication()
         self.documents = self.catia.documents()

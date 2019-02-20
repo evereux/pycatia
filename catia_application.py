@@ -9,13 +9,13 @@ class CATIAApplication:
     """
     All pycatia scripts will start with the creation on the CATIAApplication() object.
 
-    Usage::
+    :Example:
 
-        from pycatia import CATIAApplication
-        catia = CATIAApplication()
-        documents = catia.documents()
-        file_name = 'my_new_part.CATPart'
-        documents.open(file_name)
+        >>> from pycatia import CATIAApplication
+        >>> catia = CATIAApplication()
+        >>> documents = catia.documents()
+        >>> file_name = 'my_new_part.CATPart'
+        >>> documents.open(file_name)
 
     .. note::
         CAA V5 Visual Basic help
@@ -80,7 +80,8 @@ class CATIAApplication:
             | This example makes the update of the CATIA application's display disabled during the script replay.
             |    CATIA.RefreshDisplay = False
 
-        :return: boolean
+        :param bool state:
+        :return: bool
         """
 
         if state is None:
@@ -101,8 +102,8 @@ class CATIAApplication:
             | This example makes the CATIA application's window visible.
             |   CATIA.Visibility = True
 
-        :param state:
-        :return:
+        :param bool state:
+        :return: bool
         """
 
         if state is None:
@@ -145,11 +146,11 @@ class CATIAApplication:
             |   CATIA.SystemService.Evaluate CodeToEvaluate, CATVBScriptLanguage, "CATMain", params
 
 
-        :param str() vba_code: String containing script to run.
-        :param str() function_name: Name of function within vba script.
-        :param list() measurable_items: list of items to pass to script.
-        :param int() cat_script_language: An integer representing the language selection from list()
-         CATScriptLanguage[CATVBScriptLanguage, CATVBALanguage, CATBasicScriptLanguage, CATJavaLanguage,
+        :param str vba_code: String containing script to run.
+        :param str function_name: Name of function within vba script.
+        :param list measurable_items: list of items to pass to script.
+        :param int cat_script_language: An integer representing the language selection from list()
+         [CATVBScriptLanguage, CATVBALanguage, CATBasicScriptLanguage, CATJavaLanguage,
          CATJScriptLanguage]
         :return:
         """
@@ -199,13 +200,13 @@ class CATIAApplication:
             |       "CATMain",
             |       params
 
-        :param str() library_name: Full path to location of catia script.
-        :param int() library_type:  An integer representing the library type selection from list()
+        :param str library_name: Full path to location of catia script.
+        :param int library_type:  An integer representing the library type selection from list()
          CatScriptLibraryType[catScriptLibraryTypeDocument, catScriptLibraryTypeDirectory,
          catScriptLibraryTypeVBAProject]
-        :param str() program_name: file name of script.
-        :param function_name: Name of function to call within script.
-        :param list() items: List of items to pass to script.
+        :param str program_name: file name of script.
+        :param str function_name: Name of function to call within script.
+        :param list items: List of items to pass to script.
         :return:
         """
 
@@ -220,4 +221,4 @@ class CATIAApplication:
         return run
 
     def __repr__(self):
-        return '(CATIAApplication)'
+        return 'CATIAApplication()'

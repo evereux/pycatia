@@ -96,7 +96,7 @@ class Documents:
             |   Set Doc = Documents.NewFrom(FileToRead)
 
 
-        :param file_name:
+        :param str file_name:
         :return:
 
         """
@@ -134,7 +134,7 @@ class Documents:
             | Dim Doc As Document
             | Set Doc = Documents.Open(FileToOpen)
 
-        :param file_name: full path to catia file.
+        :param str file_name: full path to catia file.
         """
 
         if not os.path.isfile(file_name):
@@ -142,8 +142,7 @@ class Documents:
 
         # get the full path to the file
         file_name = os.path.abspath(file_name)
-
-        return self.documents.Open(file_name)
+        self.documents.Open(file_name)
 
     def num_open(self):
         """
@@ -207,7 +206,8 @@ class Document:
     def is_part(self):
         """
         Determine whether the active document is a CATPart.
-        :return:
+
+        :return: bool
         """
         try:
             if self.part().part:
@@ -219,7 +219,8 @@ class Document:
     def is_product(self):
         """
         Determine whether the active document is a CATProduct.
-        :return: boolean()
+
+        :return: bool
         """
 
         if self.product().is_catproduct():
@@ -245,7 +246,7 @@ class Document:
             | This example retrieves in HasChanged whether the Doc document needs to be saved.
             | HasChanged = NOT Doc.Saved
 
-        :return: True or False
+        :return: bool
         """
 
         return self.document.Saved
@@ -254,7 +255,7 @@ class Document:
     def name(self):
         """
 
-        :return: document name as str()
+        :return: str - document name.
         """
 
         return self.document.Name
@@ -277,7 +278,7 @@ class Document:
             |     e:\\users\\psr\\Parts\\MyNicePart.CATPart
 
 
-        :return: full path document name as str()
+        :return: str - full path document name
         """
 
         return self.document.FullName
@@ -300,21 +301,21 @@ class Document:
             |     e:\\users\\psr\\Parts
 
 
-        :return: path to document as str()
+        :return: str - path to document
         """
 
         return self.document.Path
 
     def product(self):
         """
-        :return: Product()
+        :return: :class:`Product()`
         """
 
         return Product(self.document.Product)
 
     def part(self):
         """
-        :return: Part()
+        :return: :class:`Part()`
         """
 
         return Part(self.document.Part)
@@ -396,7 +397,7 @@ class Document:
             | This example saves the Doc document with the NewName name.
             | Doc.SaveAs("NewName")
 
-        :param file_name: full pathname to new file_name
+        :param str file_name: full pathname to new file_name
         """
 
         file_name = os.path.abspath(file_name)
@@ -417,7 +418,7 @@ class Document:
         "('Generative Shape Design'.Point + 'Generative Shape Design'.Line),in"
 
         :param document:
-        :param selection_objects: list():
+        :param list selection_objects:
         :return Selected Automation Object:
         """
 
@@ -448,4 +449,4 @@ class Document:
         return selected
 
     def __repr__(self):
-        return f'<Document> (name: {self.name})'
+        return f'Document() name: {self.name}'
