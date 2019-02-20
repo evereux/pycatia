@@ -30,7 +30,7 @@ def test_open_document():
     with CATIADocHandler(cat_part) as handler:
         document = handler.document
         assert document.name in cat_part
-        assert f'<Document> (name: {document.name})' == document.__repr__()
+        assert f'Document() name: {document.name}' == document.__repr__()
 
 
 def test_add_documents():
