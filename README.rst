@@ -23,7 +23,7 @@ Requirements
 ------------
 
 * python >= 3.6 
-* CATIA V5/V6
+* CATIA V5
 * see requirements.txt
 
 Installation
