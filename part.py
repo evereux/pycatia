@@ -1,5 +1,7 @@
 #! /usr/bin/python3.6
 
+import warnings
+
 from .reference import create_reference
 
 geometrical_feature_type = [
@@ -35,7 +37,7 @@ class Part:
     def name(self):
         """
 
-        :return: part name
+        :return: str - part name
         """
 
         return self.part.Name
@@ -59,7 +61,7 @@ class Part:
             |     Set partRoot = partDoc.Part
             |       MsgBox "The density is " & partRoot.Density
 
-        :return float(): density
+        :return: float
         """
 
         return self.part.Density
@@ -87,7 +89,7 @@ class Part:
 
     def get_axes_names(self):
         """
-        :return: list of axis names
+        :return: list(str) - axis names
         """
 
         names = list()
@@ -100,10 +102,13 @@ class Part:
 
     def get_axis_systems(self):
         """
-        This will not return axis systems inside geometrical sets.
-        # todo implement selection search feature to get all axis systems inside parts.
+        .. warning::
+            This will not return axis systems inside geometrical sets.
 
-        :return:
+
+        # todo: implement selection search feature to get all axis systems inside parts.
+
+        :return: list(axis) - com objects
         """
 
         catia_axes = self.part.AxisSystems
@@ -113,11 +118,16 @@ class Part:
             axis = catia_axes.Item(i + 1)
             axes.append(axis)
 
+        warning_text = ('Axis systems contained with geometrical sets are not currently returned.' 
+                        'Axis systems must be contained within the annotation set `Axis Systems`')
+
+        warnings.warn(warning_text)
+
         return axes
 
     def get_axis_by_name(self, name):
         """
-        :return: Axis System COM object
+        :return: Axis System COM object if found otherwise None.
         """
 
         for axis_name in self.get_axes_names():
@@ -127,7 +137,7 @@ class Part:
 
     def get_bodies(self):
         """
-        :return: list()
+        :return: list
         """
 
         catia_bodies = self.part.Bodies
@@ -141,7 +151,7 @@ class Part:
 
     def get_bodies_names(self):
         """
-        :return: list()
+        :return: list
         """
 
         names = list()
@@ -154,7 +164,7 @@ class Part:
 
     def get_body_by_name(self, name):
         """
-        :return: Body COM object
+        :return: Body COM object if found otherwise None.
         """
 
         for body_name in self.get_bodies_names():
@@ -175,14 +185,16 @@ class Part:
             | document:
             |       Set partRoot = partDoc.Part
             |       Set geomElts = partRoot.GeometricElements
+                    elem = geometric_elements.Item(5)
 
 
-        !!! WARNING !!! The items outputted from this don't return the correct geometrical_feature_type.
-        As yet, not sure what impact that will have on measuring.
+        .. warning::
+            The items outputted from this don't return the correct geometrical_feature_type.
+            As yet, not sure what impact that will have on measuring.
 
-        elem = geometric_elements.Item(5)
-        print(elem.name, part.get_geometrical_feature_type(elem))
-        returns Point.1 Unknown
+            print(elem.name, part.get_geometrical_feature_type(elem))
+            returns Point.1 Unknown
+
 
         :return: GeometricElements COM object.
         """
@@ -192,8 +204,10 @@ class Part:
     def get_geometrical_feature_type(self, geometrical_feature):
         """
 
-        !!! WARNING !!! Use with care on items returned from self.get_geometric_elements()
-        Reported types are incorrect with the version of CATIA tested with.
+        .. warning::
+            Use with care on items returned from self.get_geometric_elements()
+            Reported types are incorrect with the version of CATIA tested with.
+
 
         :param geometrical_feature:
         :return:
@@ -202,12 +216,16 @@ class Part:
         reference_object = create_reference(self.part, geometrical_feature)
         feature_type = self.part.HybridShapeFactory.GetGeometricalFeatureType(reference_object)
 
+        warning_text = ('Use with care on items returned from self.get_geometric_elements()'
+                        'Reported types are incorrect with the version of CATIA tested with.')
+        warnings.warn()
+
         return geometrical_feature_type[feature_type]
 
     def get_hybrid_bodies(self):
         """
 
-        :return: list()
+        :return: list
         """
 
         hybrid_bodies = self.part.HybridBodies
@@ -237,7 +255,7 @@ class Part:
     def get_hybrid_body_by_name(self, name):
         """
 
-        :return: HybridBody COM object.
+        :return: HybridBody COM object if found otherwise None.
         """
 
         for hybrid_body_name in self.get_hybrid_bodies_names():
@@ -249,7 +267,7 @@ class Part:
     def get_hybrid_shapes_from_hybrid_body(hybrid_body):
         """
 
-        :return: list()
+        :return: list
         """
 
         shapes = list()
@@ -260,9 +278,9 @@ class Part:
 
     def create_geometrical_set(self, name):
         """
-        Creates a new geometrical set / HybridBody with name.
-        :param name: str()
-        :return:
+
+        :param str name: new geometrical set name.
+        :return: geometrical_set
         """
 
         new_geometrical_set = self.part.HybridBodies.Add()
@@ -274,6 +292,8 @@ class Part:
         """
         :Example:
 
+            >>> from pycatia import CATIADocHandler
+            >>> cat_part = r'my_part.CATPart'
             >>> with CATIADocHandler(cat_part) as handler:
             >>>    part = handler.document.part()
             >>>
@@ -296,13 +316,15 @@ class Part:
             |   isuptodate = partRoot.IsUpToDate(pad1)
 
         :param catia_object:
-        :return:
+        :return: bool
         """
 
         return self.part.IsUpToDate(catia_object)
 
     def update(self):
         """
+        Update the document.
+
         .. note::
             CAA V5 Visual Basic help
 
@@ -315,14 +337,12 @@ class Part:
             | Set partRoot = partDoc.Part
             |   partRoot.Update
 
-
-        :return:
         """
 
         self.part.Update()
 
     def __repr__(self):
         """
-        :return: str()
+        :return: str
         """
         return f'Part(name: {self.name})'
