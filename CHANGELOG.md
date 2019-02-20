@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.1.1
+
+* Removed reference to CATIA V6 pre-requisite.
+* 
+
+## 0.1.0
+
+* Expanded tests.
+* Added documentation.
+* Added context manager.
+* Many more changes ...
+
 ## 0.0.3
 
 * Added ability to parse csv and create points in a CATIA part.
