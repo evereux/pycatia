@@ -1,9 +1,1 @@
-atomicwrites==1.2.1
-attrs==18.2.0
-colorama==0.4.0
-more-itertools==4.3.0
-pluggy==0.8.0
-py==1.7.0
-pytest==4.0.0
-pytest-cov==2.6.0
 pywin32==224
