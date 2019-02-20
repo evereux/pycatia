@@ -10,7 +10,8 @@ def test_repr():
     with CATIADocHandler(cat_part) as handler:
         part = handler.document.product()
 
-        assert '(Product) part_number: CF_catia_measurable_part, file_name: CF_catia_measurable_part.CATPart' == part.__repr__()
+        assert '(Product) part_number: CF_catia_measurable_part, file_name: CF_catia_measurable_part.CATPart' == \
+               part.__repr__()
 
 
 def test_name():

@@ -163,4 +163,5 @@ def test_full_name():
     with CATIADocHandler(cat_part) as handler:
         document = handler.document
 
-        assert r'C:\Users\paul\Dropbox\python\projects\pycatia\tests\CF_catia_measurable_part.CATPart' == document.full_name
+        assert r'C:\Users\paul\Dropbox\python\projects\pycatia\tests\CF_catia_measurable_part.CATPart' == \
+               document.full_name
