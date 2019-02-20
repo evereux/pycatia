@@ -41,7 +41,6 @@ class CATIADocHandler:
 
     def __init__(self, file_name=None, new_document=None):
 
-
         self.catia = CATIAApplication()
         self.documents = self.catia.documents()
         self.file_name = file_name

@@ -218,7 +218,7 @@ class Part:
 
         warning_text = ('Use with care on items returned from self.get_geometric_elements()'
                         'Reported types are incorrect with the version of CATIA tested with.')
-        warnings.warn()
+        warnings.warn(warning_text)
 
         return geometrical_feature_type[feature_type]
 
