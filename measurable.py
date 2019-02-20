@@ -25,6 +25,7 @@ class CATIAMeasurable:
         | Methods on CIRCLE : GetLength GetCOG GetPointsOnCurve GetRadius GetCenter GetAngle GetAxis
         | Methods on POINT : GetPoint
         | Methods on AXIS SYST : GetAxisSystem
+
     """
 
     def __init__(self, measurable: object):
@@ -48,6 +49,7 @@ class CATIAMeasurable:
             | Dim AAngle As double
             | AAngle = NewMeasurable.Angle
 
+
         :return: angle
         """
         return self.measurable.Angle
@@ -66,14 +68,14 @@ class CATIAMeasurable:
             |   Dim AArea As double
             |   AArea = NewMeasurable.Area
 
-        :return: area
+
+        :return: float
         """
         return self.measurable.Area
 
     @property
     def geometry_name(self):
         """
-
         .. note::
             CAA V5 Visual Basic help
 
@@ -85,7 +87,8 @@ class CATIAMeasurable:
             |   Dim AGeometryName As CatMeasurableName
             |   AGeometryName = NewMeasurable.GeometryName
 
-        :return: geometry name
+
+        :return: str
         """
 
         catia_measurable_name_list = ['CatMeasurableUnknown',
@@ -118,8 +121,10 @@ class CATIAMeasurable:
             |   Dim ALength As double
             |   ALength = NewMeasurable.Length
 
-        :return: length
+
+        :return: float
         """
+
         return self.measurable.Length
 
     @property
@@ -136,8 +141,10 @@ class CATIAMeasurable:
             |    Dim APerimeter As double
             |    APerimeter = NewMeasurable.Perimeter
 
-        :return: perimeter
+
+        :return: float
         """
+
         return self.measurable.Perimeter
 
     @property
@@ -154,8 +161,10 @@ class CATIAMeasurable:
             |   Dim ARadius As double
             |   ARadius = NewMeasurable.Radius
 
-        :return: radius
+
+        :return: float
         """
+
         return self.measurable.Radius
 
     @property
@@ -171,7 +180,8 @@ class CATIAMeasurable:
             |   Dim AVolume As double
             |   AVolume = NewMeasurable.Volume
 
-        :return: volume
+
+        :return: float
         """
         return self.measurable.Volume
 
@@ -201,7 +211,8 @@ class CATIAMeasurable:
             | Dim MinimumDistance As double
             | MinimumDistance = TheMeasurable.GetAngleBetween(reference2)
 
-        :return: angle
+
+        :return: float
         """
 
         return self.measurable.GetAngleBetween(reference_measurable)
@@ -225,8 +236,9 @@ class CATIAMeasurable:
             |    Dim AxisVector (2)
             |    NewMeasurable.GetAxis AxisVector
 
+
         :param catia:
-        :return: axis
+        :return: tuple(float, float, float)
         """
         vba_function_name = 'get_axis'
         vba_function = 'GetAxis'
@@ -269,8 +281,9 @@ class CATIAMeasurable:
             |    Dim Components (11)
             |    NewMeasurable.GetAxisSystem Components
 
+
         :param catia: CATIAApplication()
-        :return: axis system
+        :return: tuple(float, float, float, float, float, float, float, float, float, float, float, float)
         """
 
         vba_function_name = 'get_axis_system'
@@ -306,8 +319,9 @@ class CATIAMeasurable:
             |    Dim Coordinates (2)
             |    NewMeasurable.GetCOG Coordinates
 
+
         :param catia: CATIAApplication()
-        :return: center of gravity
+        :return: tuple(float, float, float)
         """
 
         vba_function_name = 'create_cog'
@@ -341,8 +355,9 @@ class CATIAMeasurable:
             |    Dim Coordinates (2)
             |    NewMeasurable.GetCenter Coordinates << fixed typo in help
 
+
         :param catia: CATIAApplication()
-        :return: center
+        :return: tuple(float, float, float)
         """
 
         vba_function_name = 'get_center'
@@ -378,8 +393,9 @@ class CATIAMeasurable:
             |    Dim Direction (2)
             |    NewMeasurable.GetDirection Direction
 
+
         :param catia:
-        :return: direction
+        :return: tuple(float, float, float)
         """
 
         vba_function_name = 'get_direction'
@@ -428,7 +444,8 @@ class CATIAMeasurable:
             |   Dim MinimumDistance As double
             |   MinimumDistance = TheMeasurable.GetMinimumDistance(reference2)
 
-        :return: minimum distance
+
+        :return: float
         """
 
         return self.measurable.GetMinimumDistance(reference)
@@ -454,9 +471,10 @@ class CATIAMeasurable:
             |   Dim Coordinates (8)
             |   TheMeasurable.GetMinimumDistancePoints reference2, Coordinates
 
+
         :param catia: CATIAApplication()
         :param point_reference:
-        :return: the points corresponding to the distance between the reference1 and reference2.
+        :return: tuple(float, float, float, float, float, float, float, float)
         """
 
         vba_function_name = 'get_minimum_distance_points'
@@ -496,8 +514,9 @@ class CATIAMeasurable:
             |    Dim Components (8)
             |    NewMeasurable.GetPlane Components
 
+
         :param catia:
-        :return: informations of the plane.
+        :return: tuple(float, float, float, float, float, float, float, float)
         """
 
         vba_function_name = 'get_plane'
@@ -532,7 +551,7 @@ class CATIAMeasurable:
 
 
         :param catia: CATIAApplication()
-        :return: the position of the point.
+        :return: tuple(float, float, float)
         """
 
         vba_function_name = 'get_point'
@@ -573,7 +592,7 @@ class CATIAMeasurable:
             |    NewMeasurable.GetPointsOnAxis Coordinates
 
 
-        :return: characteristic points of the axis with respect of the size of the revolution object
+        :return: tuple(float, float, float, float, float, float, float, float)
         """
 
         vba_function_name = 'get_points_on_axis'
@@ -613,8 +632,9 @@ class CATIAMeasurable:
             |    Dim Coordinates (8)
             |    NewMeasurable.GetPointsOnCurve Coordinates
 
+
         :param catia: CATIAApplication()
-        :return: the characteristic points of the curve : the start point, the middle point and the end point.
+        :return: tuple(float, float, float, float, float, float, float, float)
         """
 
         vba_function_name = 'get_points_on_curve'

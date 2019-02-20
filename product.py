@@ -28,7 +28,7 @@ class Product:
     def name(self):
         """
 
-        :return:
+        :return: str
         """
 
         return self.product.Name
@@ -37,7 +37,7 @@ class Product:
     def file_name(self):
         """
 
-        :return:
+        :return: str
         """
 
         return self.product.ReferenceProduct.Parent.Name
@@ -58,7 +58,7 @@ class Product:
             |     Engine.PartNumber("A120-253X-7")
 
 
-        :return:
+        :return: str
         """
 
         return self.product.PartNumber
@@ -83,7 +83,7 @@ class Product:
             | This example sets the Engine product's revision number to 3A.
             |     Engine.Revision("3A")
 
-        :return:
+        :return: str
         """
 
         return self.product.Revision
@@ -135,7 +135,7 @@ class Product:
             |     Desc = "This is the Engine component product description"
             |     EngineComp.DescriptionInst(Desc)
 
-        :return:
+        :return: str
         """
 
         return self.product.DescriptionInst
@@ -162,7 +162,7 @@ class Product:
             |      Desc = "This is the Engine reference product description"
             |      Engine.DescriptionRef(Desc)
 
-        :return:
+        :return: str
         """
 
         return self.product.DescriptionRef
@@ -189,7 +189,7 @@ class Product:
             | This example retrieves the nomenclature the Engine product in EngineNom.
             | EngineNom = Engine.Nomenclature
 
-        :return:
+        :return: str
         """
 
         return self.product.nomenclature
@@ -210,12 +210,16 @@ class Product:
 
             Returns the Reference Product of this instance.
 
-        :return:
+        :return: reference product COM object
         """
 
         return self.product.ReferenceProduct
 
     def is_catproduct(self):
+        """
+
+        :return: bool
+        """
 
         if 'catproduct' == self.file_name.rsplit('.')[1].lower():
             return True
@@ -223,6 +227,10 @@ class Product:
         return False
 
     def is_catpart(self):
+        """
+
+        :return: bool
+        """
 
         if 'catpart' == self.file_name.rsplit('.')[1].lower():
             return True
@@ -230,6 +238,10 @@ class Product:
         return False
 
     def has_children(self):
+        """
+
+        :return: bool
+        """
 
         if self.product.Products.Count > 0:
             return True
@@ -239,7 +251,7 @@ class Product:
     def get_children(self):
         """
 
-        :return: list(Product)
+        :return: list(Product())
         """
 
         children = list()
@@ -255,7 +267,7 @@ class Product:
         """
         Returns a list of Products().
 
-        :return: list()
+        :return: list(Proucts())
         """
         products = list()
 
@@ -269,7 +281,7 @@ class Product:
         """
         Returns a string describing the products attributes.
 
-        :return:
+        :return: str
         """
 
         return ('(Product) Attributes... \n'
