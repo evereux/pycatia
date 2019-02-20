@@ -8,6 +8,13 @@ V5Automation.chm file which is bundled with CATIA.
 .. module:: pycatia
 
 
+Context Manager
+---------------
+
+.. autoclass:: CATIADocHandler
+    :members:
+
+
 CATIAApplication
 ----------------
 
@@ -38,12 +45,6 @@ Part
 .. autoclass:: Part
     :members:
 
-
-Context Manager
----------------
-
-.. autoclass:: CATIADocHandler
-    :members:
 
 CATIAMeasurable
 ---------------
