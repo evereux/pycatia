@@ -19,6 +19,8 @@ To get the latest development version from github
 .. code-block::
 
     git clone https://github.com/evereux/pycatia.git
+    # install pycatia requirement
+    pip install -r requirements\requirements.txt
 
 
 The Long Version
