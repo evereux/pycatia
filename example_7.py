@@ -2,7 +2,7 @@
 
 """
 
-    Example 1:
+    Example 7:
 
     Use the context manager to open CATIA documents and close
 
