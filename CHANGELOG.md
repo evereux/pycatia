@@ -1,9 +1,13 @@
 # Changelog
 
+## 0.1.2
+
+* Added support to export files along with example.
+* Updated example_3.py to show how to export the data to a csv file.
+
 ## 0.1.1
 
 * Removed reference to CATIA V6 pre-requisite.
-* 
 
 ## 0.1.0
 
