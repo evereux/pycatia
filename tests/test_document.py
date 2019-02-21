@@ -165,3 +165,21 @@ def test_full_name():
 
         assert r'C:\Users\paul\Dropbox\python\projects\pycatia\tests\CF_catia_measurable_part.CATPart' == \
                document.full_name
+
+
+def test_export_document():
+    with CATIADocHandler(cat_part) as handler:
+        document = handler.document
+
+        export_type = 'igs'
+        export_name = 'export_file'
+
+        path = os.path.dirname(os.path.abspath(cat_part))
+        export_name = os.path.join(path, export_name)
+
+        document.export_data(export_name, export_type)
+
+        assert os.path.isfile(f'{export_name}.igs')
+
+        os.remove(f'{export_name}.igs')
+
