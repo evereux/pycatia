@@ -53,3 +53,11 @@ Using the context manager.
 
 .. literalinclude:: ../example_7.py
 
+Example 8
+---------
+
+Find all .CATParts in folder and export to IGS.
+
+.. literalinclude:: ../example_8.py
+
+
