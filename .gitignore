@@ -117,5 +117,6 @@ dmypy.json
 .idea/
 
 __archive__
+__junk__
 __reference_scripts__
 my_script_tst.py
