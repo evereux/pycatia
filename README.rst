@@ -104,6 +104,7 @@ Examples
 .. _example_5: https://github.com/evereux/pycatia/blob/master/example_5.py
 .. _example_6: https://github.com/evereux/pycatia/blob/master/example_6.py
 .. _example_7: https://github.com/evereux/pycatia/blob/master/example_7.py
+.. _example_8: https://github.com/evereux/pycatia/blob/master/example_8.py
 
 1. Open the file catia_measurable.CATPart from the folder tests.
 2. Run the example scripts.
@@ -120,8 +121,8 @@ Examples
     
    example_3_
     
-   Shows how to search for all points in the document and return the
-   co-ordinates.
+   Shows how to search for all points in the document, print the result
+   to the console and write to a CSV file.
 
    example_4_
 
@@ -139,6 +140,11 @@ Examples
    example_7_
 
    Example of how open a document using the context manager.
+
+
+   example_8_
+
+   How traverse through a directory and convert all CATParts to IGS.
     
 Running The Tests
 -----------------
