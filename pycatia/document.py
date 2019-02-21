@@ -306,6 +306,32 @@ class Document:
 
         return self.document.Path
 
+    def export_data(self, filename, filetype):
+
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+            Sub ExportData( CATBSTR  fileName, CATBSTR  format)
+
+            | Exports the data contained in the document to another format.
+            | Parameters:
+            |   fileName
+            |       The name of the exported file
+            |   format
+            |       The name of the format
+            | Example:
+            |   This example writes the Doc document in the IGES format under the IGESDoc name.
+            |       Doc.ExportData("IGESDoc", "igs")
+
+
+        :param str filename: filename including full path.
+        :param str filetype: filetype is the extension of required filetype. The filetype must be supported by CATIA.
+        :return:
+        """
+
+        self.document.ExportData(filename, filetype)
+
     def product(self):
         """
         :return: :class:`Product()`
