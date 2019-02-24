@@ -13,7 +13,6 @@ import csv
 from pycatia import CATIAApplication
 from pycatia import CATIAMeasurable
 from pycatia import create_measurable
-from pycatia import create_reference
 from pycatia import create_spa_workbench
 
 catia = CATIAApplication()
@@ -34,7 +33,7 @@ with open(csv_file_name, 'w', newline='') as csv_file:
     csv_writer = csv.writer(csv_file, delimiter=',')
 
     for selection in selected:
-        reference = create_reference(part.part, selection)
+        reference = part.create_reference(selection)
         selection_measurable = create_measurable(spa_workbench, reference)
         measurable = CATIAMeasurable(selection_measurable)
 
