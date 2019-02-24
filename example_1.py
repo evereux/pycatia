@@ -11,7 +11,7 @@
 
 from pycatia import CATIAApplication
 from pycatia import CATIAMeasurable
-from pycatia import create_reference, create_measurable
+from pycatia import create_measurable
 from pycatia import create_spa_workbench
 
 catia = CATIAApplication()
@@ -36,7 +36,7 @@ body = bodies[0]
 body_by_name = part.get_body_by_name('PartBody')
 
 # equivalent to VB CreateReferenceFromObject()
-reference = create_reference(part.part, body)
+reference = part.create_reference(body)
 
 # equivalent to VB GetMeasurable()
 measurable = create_measurable(spa_workbench, reference)

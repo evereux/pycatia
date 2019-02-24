@@ -11,8 +11,6 @@
 """
 
 from pycatia import CATIAApplication
-from pycatia import Document
-from pycatia import Documents
 
 # path to file to open.
 file_name = r'tests\CF_Part_1.CATPart'

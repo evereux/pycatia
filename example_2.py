@@ -9,7 +9,7 @@
 """
 from pycatia import CATIAApplication
 from pycatia import CATIAMeasurable
-from pycatia import create_reference, create_measurable
+from pycatia import create_measurable
 from pycatia import create_spa_workbench
 
 catia = CATIAApplication()
@@ -25,7 +25,7 @@ hybrid_body = part.get_hybrid_body_by_name('Points')
 points = part.get_hybrid_shapes_from_hybrid_body(hybrid_body)
 
 for point in points:
-    reference = create_reference(part.part, point)
+    reference = part.create_reference(point)
     measurable = create_measurable(spa_workbench, reference)
     point_measurable = CATIAMeasurable(measurable)
     coordinates = point_measurable.get_point(catia)
