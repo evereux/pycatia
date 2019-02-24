@@ -56,7 +56,8 @@ class HybridShapeFactory:
         vba_function_name = 'add_point'
 
         message = ('Adding points gets exponentially slower for tested version of CATIA.'
-                   'If this slow down becomes an issue please split input files.')
+                   'If this slow down becomes an issue please split input files. This is not a limitation of pycatia'
+                   'but of the CATIA automation API.')
         warnings.warn(message)
 
         catia.execute_script(macro_path,
