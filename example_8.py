@@ -4,9 +4,7 @@
 
     Example 8:
 
-    Use the context manager to open CATIA documents and close.
-
-    CATIA must already be running.
+    Open all CATParts in source directiory and save to IGS in target directory.
 
 """
 
