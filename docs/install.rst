@@ -46,26 +46,26 @@ The virtual environment allows you to install python packages in a sanboxed
 environment away from the python installation itself.
 
 * Create a new directory where you'll be creating your pycatia scripts. For
-  this example this will be `c:\Users\Paul\python\pycatia-scripts`
+  this example this will be `c:\\Users\\<username>\\python\\pycatia-scripts`
 
 * Change directory into this folder::
 
-    c:\Users\paul> cd c:\Users\Paul\python\pycatia-scripts
+    c:\Users\<username>> cd c:\Users\<username>\python\pycatia-scripts
 
 
 * Create the virtual environment::
 
-    c:\Users\Paul\python\pycatia-scripts> python -m virtualenv env
+    c:\Users\<username>\python\pycatia-scripts> python -m virtualenv env
 
 
 * Activate the virtual environment::
 
-    c:\Users\Paul\python\pycatia-scripts> env\Scripts\Activate
+    c:\Users\<username>\python\pycatia-scripts> env\Scripts\Activate
 
 
 You should see the command prompt change to something like this::
 
-    (env) c:\Users\Paul\python\pycatia-scripts>
+    (env) c:\Users\<username>\python\pycatia-scripts>
 
 * Install pycatia::
 
@@ -80,7 +80,7 @@ All done!
 
 * Confirm all is working. At the command prompt try the following::
 
-    (env) C:\Users\paul\python\pycatia-scripts>python
+    (env) C:\Users\<username>\python\pycatia-scripts>python
     Python 3.6.7 (v3.6.7:6ec5cf24b7, Oct 20 2018, 13:35:33) [MSC v.1900 64 bit (AMD64)] on win32
     Type "help", "copyright", "credits" or "license" for more information.
     >>> from pycatia import CATIADocHandler
