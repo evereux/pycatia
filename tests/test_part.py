@@ -136,3 +136,23 @@ def test_is_updated():
         part = handler.document.part()
 
         assert not part.is_upated(part.part)
+
+
+def test_in_work_object():
+    with CATIADocHandler(cat_part) as handler:
+        part = handler.document.part()
+
+        planes_hybrid_body = part.get_hybrid_body_by_name('Planes')
+
+        part.in_work_object = planes_hybrid_body
+
+        assert part.in_work_object.name == 'Planes'
+
+
+def test_find_object_by_name():
+    with CATIADocHandler(cat_part) as handler:
+        part = handler.document.part()
+
+        item = part.find_object_by_name('Extrude.1')
+
+        assert item.name == 'Extrude.1'

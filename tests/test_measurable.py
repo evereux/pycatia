@@ -5,7 +5,7 @@
     test_document.py. I've no idea why at the moment.
 """
 
-from pycatia import create_reference, create_measurable
+from pycatia import create_measurable
 from pycatia import CATIAMeasurable
 from pycatia import CATIADocHandler
 from pycatia import create_spa_workbench
@@ -36,7 +36,7 @@ def test_area():
         bodies = part.get_bodies()
         body = bodies[0]
 
-        reference = create_reference(part.part, body)
+        reference = part.create_reference(body)
         measurable = create_measurable(spa_workbench, reference)
         catia_measurable = CATIAMeasurable(measurable)
 
@@ -56,7 +56,7 @@ def test_geometry_name():
         bodies = part.get_bodies()
         body = bodies[0]
 
-        reference = create_reference(part.part, body)
+        reference = part.create_reference(body)
         measurable = create_measurable(spa_workbench, reference)
         catia_measurable = CATIAMeasurable(measurable)
 
@@ -75,7 +75,7 @@ def test_length():
 
         hybrid_body = part.get_hybrid_body_by_name('Lines')
         line1 = hybrid_body.HybridShapes.Item(1)
-        line1_reference = create_reference(part.part, line1)
+        line1_reference = part.create_reference(line1)
         line1_measurable = create_measurable(spa_workbench, line1_reference)
         catia_measurable_line1 = CATIAMeasurable(line1_measurable)
 
@@ -94,7 +94,7 @@ def test_perimeter():
 
         hybrid_body = part.get_hybrid_body_by_name('Surfaces')
         surface = hybrid_body.HybridShapes.Item(1)
-        surface_reference = create_reference(part.part, surface)
+        surface_reference = part.create_reference(surface)
         surface_measurable = create_measurable(spa_workbench, surface_reference)
         catia_measurable_surface = CATIAMeasurable(surface_measurable)
         perimeter = 265.946845
@@ -112,7 +112,7 @@ def test_radius():
 
         hybrid_body = part.get_hybrid_body_by_name('Arcs')
         arc = hybrid_body.HybridShapes.Item(1)
-        arc_reference = create_reference(part.part, arc)
+        arc_reference = part.create_reference(arc)
         arc_measurable = create_measurable(spa_workbench, arc_reference)
         catia_measurable_arc = CATIAMeasurable(arc_measurable)
         radius = 45.0
@@ -130,11 +130,11 @@ def test_angle_between():
 
         hybrid_body = part.get_hybrid_body_by_name('Lines')
         line1 = hybrid_body.HybridShapes.Item(1)
-        line1_reference = create_reference(part.part, line1)
+        line1_reference = part.create_reference(line1)
         line1_measurable = create_measurable(spa_workbench, line1_reference)
         catia_measurable_line1 = CATIAMeasurable(line1_measurable)
         line2 = hybrid_body.HybridShapes.Item(2)
-        line2_reference = create_reference(part.part, line2)
+        line2_reference = part.create_reference(line2)
         angle = 71.496249
         catia_angle = catia_measurable_line1.get_angle_between(line2_reference)
 
@@ -155,7 +155,7 @@ def test_get_axis():
         spa_workbench = create_spa_workbench(document.document)
         hybrid_body = part.get_hybrid_body_by_name('Arcs')
         arc = hybrid_body.HybridShapes.Item(1)
-        arc_reference = create_reference(part.part, arc)
+        arc_reference = part.create_reference(arc)
         arc_measurable = create_measurable(spa_workbench, arc_reference)
         catia_measurable_arc = CATIAMeasurable(arc_measurable)
 
@@ -178,7 +178,7 @@ def test_get_axis_system():
 
         axis_systems = part.get_axis_systems()
         axis = axis_systems[0]
-        axis_reference = create_reference(part.part, axis)
+        axis_reference = part.create_reference(axis)
         axis_measurable = create_measurable(spa_workbench, axis_reference)
         catia_measurable_axis = CATIAMeasurable(axis_measurable)
 
@@ -244,7 +244,7 @@ def test_get_direction():
 
         hybrid_body = part.get_hybrid_body_by_name('Lines')
         line1 = hybrid_body.HybridShapes.Item(1)
-        line1_reference = create_reference(part.part, line1)
+        line1_reference = part.create_reference(line1)
         line1_measurable = create_measurable(spa_workbench, line1_reference)
         catia_measurable_line1 = CATIAMeasurable(line1_measurable)
 
@@ -267,13 +267,13 @@ def test_get_minimum_distance():
 
         hybrid_body = part.get_hybrid_body_by_name('Lines')
         line1 = hybrid_body.HybridShapes.Item(1)
-        line1_reference = create_reference(part.part, line1)
+        line1_reference = part.create_reference(line1)
         line1_measurable = create_measurable(spa_workbench, line1_reference)
         catia_measurable_line1 = CATIAMeasurable(line1_measurable)
 
         hybrid_body = part.get_hybrid_body_by_name('Arcs')
         arc = hybrid_body.HybridShapes.Item(1)
-        arc_reference = create_reference(part.part, arc)
+        arc_reference = part.create_reference(arc)
 
         minimum_distance = 44.126069
         catia_minimum_distance = catia_measurable_line1.get_minimum_distance(arc_reference)
@@ -291,12 +291,12 @@ def test_get_minimum_distance_points():
 
         hybrid_body = part.get_hybrid_body_by_name('Points')
         point1 = hybrid_body.HybridShapes.Item(1)
-        point1_reference = create_reference(part.part, point1)
+        point1_reference = part.create_reference(point1)
         point1_measurable = create_measurable(spa_workbench, point1_reference)
         catia_measurable_point1 = CATIAMeasurable(point1_measurable)
 
         point2 = hybrid_body.HybridShapes.Item(2)
-        point2_reference = create_reference(part.part, point2)
+        point2_reference = part.create_reference(point2)
 
         minimum_distance_points = (
             0.000000,
@@ -324,7 +324,7 @@ def test_get_plane():
 
         hybrid_body = part.get_hybrid_body_by_name('Planes')
         plane = hybrid_body.HybridShapes.Item(1)
-        plane_reference = create_reference(part.part, plane)
+        plane_reference = part.create_reference(plane)
         plane_measurable = create_measurable(spa_workbench, plane_reference)
         catia_measurable_plane = CATIAMeasurable(plane_measurable)
 
@@ -355,7 +355,7 @@ def test_get_point():
 
         hybrid_body = part.get_hybrid_body_by_name('Points')
         point1 = hybrid_body.HybridShapes.Item(1)
-        point1_reference = create_reference(part.part, point1)
+        point1_reference = part.create_reference(point1)
         point1_measurable = create_measurable(spa_workbench, point1_reference)
         catia_measurable_point1 = CATIAMeasurable(point1_measurable)
 
@@ -380,7 +380,7 @@ def test_get_points_on_axis():
 
         hybrid_body = part.get_hybrid_body_by_name('Cylinders')
         cylinder = hybrid_body.HybridShapes.Item(1)
-        cylinder_reference = create_reference(part.part, cylinder)
+        cylinder_reference = part.create_reference(cylinder)
         cylinder_measurable = create_measurable(spa_workbench, cylinder_reference)
         catia_measurable_cylinder = CATIAMeasurable(cylinder_measurable)
 
@@ -411,7 +411,7 @@ def test_get_points_on_curve():
 
         hybrid_body = part.get_hybrid_body_by_name('Lines')
         line1 = hybrid_body.HybridShapes.Item(1)
-        line1_reference = create_reference(part.part, line1)
+        line1_reference = part.create_reference(line1)
         line1_measurable = create_measurable(spa_workbench, line1_reference)
         catia_measurable_line1 = CATIAMeasurable(line1_measurable)
 
@@ -442,7 +442,7 @@ def test_volume():
         bodies = part.get_bodies()
         body = bodies[0]
 
-        reference = create_reference(part.part, body)
+        reference = part.create_reference(body)
         measurable = create_measurable(spa_workbench, reference)
         catia_measurable = CATIAMeasurable(measurable)
 
@@ -463,7 +463,7 @@ def test_centre_of_gravity():
         bodies = part.get_bodies()
         body = bodies[0]
 
-        reference = create_reference(part.part, body)
+        reference = part.create_reference(body)
         measurable = create_measurable(spa_workbench, reference)
         catia_measurable = CATIAMeasurable(measurable)
 
@@ -507,7 +507,7 @@ def test_angle():
 
         hybrid_body = part.get_hybrid_body_by_name('Arcs')
         arc = hybrid_body.HybridShapes.Item(1)
-        arc_reference = create_reference(part.part, arc)
+        arc_reference = part.create_reference(arc)
         arc_measurable = create_measurable(spa_workbench, arc_reference)
         catia_measurable_arc = CATIAMeasurable(arc_measurable)
 
@@ -535,7 +535,7 @@ def test_center():
         hybrid_body = part.get_hybrid_body_by_name('Arcs')
         arc = hybrid_body.HybridShapes.Item(1)
 
-        arc_reference = create_reference(part.part, arc)
+        arc_reference = part.create_reference(arc)
         arc_measurable = create_measurable(spa_workbench, arc_reference)
 
         catia_measurable_arc = CATIAMeasurable(arc_measurable)

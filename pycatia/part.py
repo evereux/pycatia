@@ -2,8 +2,6 @@
 
 import warnings
 
-from .reference import create_reference
-
 geometrical_feature_type = [
     'Unknown',
     'Point',
@@ -42,6 +40,38 @@ class Part:
 
         return self.part.Name
 
+    def create_geometrical_set(self, name):
+        """
+
+        :param str name: new geometrical set name.
+        :return: geometrical_set
+        """
+
+        new_geometrical_set = self.part.HybridBodies.Add()
+        new_geometrical_set.Name = name
+
+        return new_geometrical_set
+
+    def create_reference(self, catia_object):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+            Func CreateReferenceFromObject( AnyObject  iObject) As Reference
+
+            | Creates a reference from a operator. Use of reference allows a uniform handling of B-Rep and non B-Rep
+            | objects.
+            | Parameters:
+            |   iObject
+            |       The geometric object to be referenced. It can be a plane, a line or a point.
+            |   Returns:
+            |       The reference to the object. This way, a direction can be either an edge of a pad or a 3D line.
+
+        :return:
+        """
+
+        return self.part.CreateReferenceFromObject(catia_object)
+
     @property
     def density(self):
         """
@@ -65,6 +95,34 @@ class Part:
         """
 
         return self.part.Density
+
+    @property
+    def in_work_object(self):
+        """
+
+        .. note::
+            CAA V5 Visual Basic help
+
+            Property InWorkObject( ) As AnyObject
+
+            | Returns or sets the in work object of the part. The in work object is the object after which a new object
+            | is added.
+            | Example:
+            |   Set partRoot = partDoc.Part
+            |   Set partRoot.InWorkObject = cylindricPad
+            |   If ( partRoot.InWorkObject <> cylindricPad ) Then
+            |       MsgBox "There is a big problem"
+            |   End If
+
+        :return: the in work COM object.
+        """
+
+        return self.part.InWorkObject
+
+    @in_work_object.setter
+    def in_work_object(self, in_work_object):
+
+        self.part.InWorkObject = in_work_object
 
     def get_annotation_sets(self):
         """
@@ -118,7 +176,7 @@ class Part:
             axis = catia_axes.Item(i + 1)
             axes.append(axis)
 
-        warning_text = ('Axis systems contained with geometrical sets are not currently returned.' 
+        warning_text = ('Axis systems contained with geometrical sets are not currently returned.'
                         'Axis systems must be contained within the annotation set `Axis Systems`')
 
         warnings.warn(warning_text)
@@ -201,7 +259,7 @@ class Part:
 
         return self.part.GeometricElements
 
-    def get_geometrical_feature_type(self, geometrical_feature):
+    def get_geometrical_feature_type(self, reference_object):
         """
 
         .. warning::
@@ -209,11 +267,10 @@ class Part:
             Reported types are incorrect with the version of CATIA tested with.
 
 
-        :param geometrical_feature:
+        :param reference_object:
         :return:
         """
 
-        reference_object = create_reference(self.part, geometrical_feature)
         feature_type = self.part.HybridShapeFactory.GetGeometricalFeatureType(reference_object)
 
         warning_text = ('Use with care on items returned from self.get_geometric_elements()'
@@ -276,17 +333,31 @@ class Part:
 
         return shapes
 
-    def create_geometrical_set(self, name):
+    def find_object_by_name(self, name):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+            Func FindObjectByName( CATBSTR  iObjName) As AnyObject
+
+            Finds an object that is not a collection by its name. Scan in depth among all the direct and indirect children (expensive, but hard to escape).
+            Parameters:
+            iObjName
+            The name to be searched
+            Returns:
+            The object, if found
+            Example:
+            The following example tests if the object was found:
+             Set partRoot = partDoc.Part
+             Set obj = partRoot.FindObjectByName("Wrong name")
+             If TypeName(obj)="Nothing" Then
+                  MsgBox "Object not found"
+             End If
+
+        :param str name:
+        :return:
         """
 
-        :param str name: new geometrical set name.
-        :return: geometrical_set
-        """
-
-        new_geometrical_set = self.part.HybridBodies.Add()
-        new_geometrical_set.Name = name
-
-        return new_geometrical_set
+        return self.part.FindObjectByName(name)
 
     def is_upated(self, catia_object):
         """

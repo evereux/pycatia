@@ -38,7 +38,7 @@ copyright = '2018, Paul Bourne'
 author = 'Paul Bourne'
 
 # The short X.Y version
-version = '0.1.2'
+version = '0.1.3'
 # The full version, including alpha/beta/rc tags
 release = version
 

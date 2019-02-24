@@ -59,10 +59,6 @@ HybridShapeFactory
 .. autoclass:: HybridShapeFactory
     :members:
 
-Reference
----------
-
-.. autofunction:: create_reference
 
 Workbenches
 -----------
