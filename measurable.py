@@ -28,7 +28,7 @@ class CATIAMeasurable:
 
     """
 
-    def __init__(self, measurable: object):
+    def __init__(self, measurable):
         """
         :param measurable:
         """
