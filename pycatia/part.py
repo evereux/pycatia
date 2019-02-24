@@ -40,38 +40,6 @@ class Part:
 
         return self.part.Name
 
-    def create_geometrical_set(self, name):
-        """
-
-        :param str name: new geometrical set name.
-        :return: geometrical_set
-        """
-
-        new_geometrical_set = self.part.HybridBodies.Add()
-        new_geometrical_set.Name = name
-
-        return new_geometrical_set
-
-    def create_reference(self, catia_object):
-        """
-        .. note::
-            CAA V5 Visual Basic help
-
-            Func CreateReferenceFromObject( AnyObject  iObject) As Reference
-
-            | Creates a reference from a operator. Use of reference allows a uniform handling of B-Rep and non B-Rep
-            | objects.
-            | Parameters:
-            |   iObject
-            |       The geometric object to be referenced. It can be a plane, a line or a point.
-            |   Returns:
-            |       The reference to the object. This way, a direction can be either an edge of a pad or a 3D line.
-
-        :return:
-        """
-
-        return self.part.CreateReferenceFromObject(catia_object)
-
     @property
     def density(self):
         """
@@ -123,6 +91,61 @@ class Part:
     def in_work_object(self, in_work_object):
 
         self.part.InWorkObject = in_work_object
+
+    def activate(self, item):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+            Sub Activate( AnyObject  iObject)
+
+            | Unsuppresses an object for the update process. A unsuppressed object is again taken into account for the calculation of the part.
+            | Parameters:
+            |   iObject
+            |       The object to unsuppress for the update process
+            | Example:
+            |   The following example unsuppresses the pad1 pad:
+            |       Set partRoot = partDoc.Part
+            |       Set pad1 = partRoot.FindObjectByName("Pad.1")
+            |       partRoot.Activate(pad1)
+
+        :param item:
+        :return:
+        """
+
+        self.part.Activate(item)
+
+    def create_geometrical_set(self, name):
+        """
+
+        :param str name: new geometrical set name.
+        :return: geometrical_set
+        """
+
+        new_geometrical_set = self.part.HybridBodies.Add()
+        new_geometrical_set.Name = name
+
+        return new_geometrical_set
+
+    def create_reference(self, catia_object):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+            Func CreateReferenceFromObject( AnyObject  iObject) As Reference
+
+            | Creates a reference from a operator. Use of reference allows a uniform handling of B-Rep and non B-Rep
+            | objects.
+            | Parameters:
+            |   iObject
+            |       The geometric object to be referenced. It can be a plane, a line or a point.
+            |   Returns:
+            |       The reference to the object. This way, a direction can be either an edge of a pad or a 3D line.
+
+        :return:
+        """
+
+        return self.part.CreateReferenceFromObject(catia_object)
 
     def get_annotation_sets(self):
         """
@@ -339,25 +362,71 @@ class Part:
             CAA V5 Visual Basic help
             Func FindObjectByName( CATBSTR  iObjName) As AnyObject
 
-            Finds an object that is not a collection by its name. Scan in depth among all the direct and indirect children (expensive, but hard to escape).
-            Parameters:
-            iObjName
-            The name to be searched
-            Returns:
-            The object, if found
-            Example:
-            The following example tests if the object was found:
-             Set partRoot = partDoc.Part
-             Set obj = partRoot.FindObjectByName("Wrong name")
-             If TypeName(obj)="Nothing" Then
-                  MsgBox "Object not found"
-             End If
+            | Finds an object that is not a collection by its name. Scan in depth among all the direct and indirect children (expensive, but hard to escape).
+            | Parameters:
+            |   iObjName
+            |       The name to be searched
+            | Returns:
+            |   The object, if found
+            | Example:
+            |   The following example tests if the object was found:
+            |       Set partRoot = partDoc.Part
+            |       Set obj = partRoot.FindObjectByName("Wrong name")
+            |       If TypeName(obj)="Nothing" Then
+            |           MsgBox "Object not found"
+            |       End If
 
         :param str name:
         :return:
         """
 
         return self.part.FindObjectByName(name)
+
+    def deactivate(self, item):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+            Sub Inactivate( AnyObject  iObject)
+
+            | Suppresses an object from being updated. A suppressed object is not taken into account for the calculation of the part.
+            | Parameters:
+            |   iObject
+            |       The object to suppress from being updated
+            | Example:
+            |   The following example suppresses the pad1 pad from being updated:
+            |       Set partRoot = partDoc.Part
+            |       Set pad1 = partRoot.FindObjectByName("Pad.1")
+            |       partRoot.Inactivate(pad1)
+
+        :return:
+        """
+
+        self.part.Inactivate(item)
+
+    def is_inactive(self, item):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+            Func IsInactive( AnyObject  iObject) As boolean
+
+            | Indicates whether an object is deactivated. A deactivated object is not taken into account for the calculation of the part.
+            | Parameters:
+            |   iObject
+            |       The object to examine
+            | Example:
+            |   The following example returns in isInactive whether the pad1 pad is deactivated:
+            |       Set partRoot = partDoc.Part
+            |       Set pad1 = partRoot.FindObjectByName("Pad.1")
+            |       isInactive = partRoot.IsInactive(pad1)
+
+
+        :param item:
+        :return: bool
+        """
+
+        return self.part.IsInactive(item)
 
     def is_upated(self, catia_object):
         """

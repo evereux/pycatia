@@ -156,3 +156,16 @@ def test_find_object_by_name():
         item = part.find_object_by_name('Extrude.1')
 
         assert item.name == 'Extrude.1'
+
+
+def test_activation():
+    with CATIADocHandler(cat_part) as handler:
+        part = handler.document.part()
+
+        item = part.find_object_by_name('Point.1')
+
+        assert not part.is_inactive(item)
+
+        part.deactivate(item)
+
+        assert part.is_inactive(item)

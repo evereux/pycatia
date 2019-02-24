@@ -5,6 +5,7 @@
 * Added in_work_object method to class Part().
 * Moved create_reference method to class Part(). It's proper home.
 * Added find_object_by_name method to class Part().
+* Added methods activate, deactivate and is_inactive to class Part().
 
 ## 0.1.2
 
