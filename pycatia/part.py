@@ -99,7 +99,8 @@ class Part:
 
             Sub Activate( AnyObject  iObject)
 
-            | Unsuppresses an object for the update process. A unsuppressed object is again taken into account for the calculation of the part.
+            | Unsuppresses an object for the update process. A unsuppressed object is again taken into account for the
+            | calculation of the part.
             | Parameters:
             |   iObject
             |       The object to unsuppress for the update process
@@ -362,7 +363,8 @@ class Part:
             CAA V5 Visual Basic help
             Func FindObjectByName( CATBSTR  iObjName) As AnyObject
 
-            | Finds an object that is not a collection by its name. Scan in depth among all the direct and indirect children (expensive, but hard to escape).
+            | Finds an object that is not a collection by its name. Scan in depth among all the direct and indirect
+            | children (expensive, but hard to escape).
             | Parameters:
             |   iObjName
             |       The name to be searched
@@ -389,7 +391,8 @@ class Part:
 
             Sub Inactivate( AnyObject  iObject)
 
-            | Suppresses an object from being updated. A suppressed object is not taken into account for the calculation of the part.
+            | Suppresses an object from being updated. A suppressed object is not taken into account for the
+            | calculation of the part.
             | Parameters:
             |   iObject
             |       The object to suppress from being updated
@@ -411,7 +414,8 @@ class Part:
 
             Func IsInactive( AnyObject  iObject) As boolean
 
-            | Indicates whether an object is deactivated. A deactivated object is not taken into account for the calculation of the part.
+            | Indicates whether an object is deactivated. A deactivated object is not taken into account for the
+            | calculation of the part.
             | Parameters:
             |   iObject
             |       The object to examine
