@@ -31,12 +31,14 @@ Installing Python
 
 * Download python 3 (3.6 or later) from: https://www.python.org/downloads/
 
-* Install python. Ensure to check the box `Add python to PATH`.
+* Install python. Ensure to check the box to add python to environment variables.
+
+.. image:: images/2019-03-03_14_35_49-Window.png
 
 * Install virtualenv for python. From the adminsitrator command prompt run
   the following::
 
-    python -m pip install virualenv
+    python -m pip install virtualenv
 
 
 Create The Virtual Environment
@@ -50,17 +52,17 @@ environment away from the python installation itself.
 
 * Change directory into this folder::
 
-    c:\Users\<username>> cd c:\Users\<username>\python\pycatia-scripts
+    cd c:\Users\<username>\python\pycatia-scripts
 
 
 * Create the virtual environment::
 
-    c:\Users\<username>\python\pycatia-scripts> python -m virtualenv env
+    python -m virtualenv env
 
 
 * Activate the virtual environment::
 
-    c:\Users\<username>\python\pycatia-scripts> env\Scripts\Activate
+    env\Scripts\Activate
 
 
 You should see the command prompt change to something like this::
