@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.5
+* Added unit requirement to create_points function. 
+  Previously it was assumed all inputs were millimeters.
+* Added missing macros file to pypi package.
+
+## 0.1.4
+* Added CATDrawing methods
+
 ## 0.1.3
 
 * Added in_work_object method to class Part().

@@ -160,10 +160,16 @@ def test_num_open():
 
 
 def test_full_name():
+    """
+
+    TODO: make the assertion work whereever the respository is cloned to.
+
+    :return:
+    """
     with CATIADocHandler(cat_part) as handler:
         document = handler.document
 
-        assert r'C:\Users\paul\Dropbox\python\projects\pycatia\tests\CF_catia_measurable_part.CATPart' == \
+        assert r'P:\python\projects\pycatia\tests\CF_catia_measurable_part.CATPart' == \
                document.full_name
 
 

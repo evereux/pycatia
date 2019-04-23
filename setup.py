@@ -49,4 +49,6 @@ setup(
     ],
     tests_require=test_requirements,
     install_requires=requires,
+    package_dir={'pycatia': 'pycatia'},
+    package_data={'pycatia', ['macros/*.catvbs']}
 )

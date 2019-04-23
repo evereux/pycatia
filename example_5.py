@@ -36,10 +36,10 @@ document = catia.document()
 part = document.part()
 
 # full path name to csv file.
-file = r'tests\Sample_Point_CSV_File3_medium.csv'
+file = r'tests\Sample_Point_CSV_File1_small.csv'
 
 # create the points in currently open CATIA part.
-create_points(catia, part, file)
+create_points(catia, part, file, 'in')
 
 # re-enable display refresh
 catia.refresh_display(True)
