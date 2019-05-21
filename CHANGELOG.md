@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.1.5.1
+* Attempt to fix pip installation error.
+
 ## 0.1.5
 * Added unit requirement to create_points function. 
   Previously it was assumed all inputs were millimeters.
