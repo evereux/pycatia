@@ -1,3 +1,6 @@
+from pycatia.position import Position
+
+
 class Product:
 
     def __init__(self, product):
@@ -67,6 +70,11 @@ class Product:
     def part_number(self, part_number):
 
         self.product.PartNumber = part_number
+
+    @property
+    def position(self):
+
+        return Position(self.product)
 
     @property
     def revision(self):

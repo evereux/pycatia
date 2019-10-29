@@ -60,4 +60,10 @@ Find all .CATParts in folder and export to IGS.
 
 .. literalinclude:: ../example_8.py
 
+Example 9
+---------
+
+Get the position matrix of products (CATPart or CATProduct) in product.
+
+.. literalinclude:: ../example_9.py
 

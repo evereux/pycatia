@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.1.6
+* Added feature to get position matrix of product. See new example 9.
+
 ## 0.1.5.1
 * Attempt to fix pip installation error.
 
