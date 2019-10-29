@@ -36,7 +36,6 @@ class Documents:
 
     def __init__(self, catia):
 
-        self.catia = catia
         self.documents = catia.Documents
 
     def add(self, document_type):
@@ -198,6 +197,7 @@ class Document:
 
         try:
             self.document = catia.ActiveDocument
+            self.catia = catia
         except com_error:
             message = "Could not activate document. Is a document open?"
             raise CATIAApplicationException(message)
