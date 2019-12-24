@@ -18,7 +18,7 @@ requires = [
     'more-itertools==4.3.0',
     'pluggy==0.8.0',
     'py==1.7.0',
-    'pywin32==224',
+    'pywin32>=224',
 ]
 
 test_requirements = [
