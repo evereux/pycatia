@@ -47,6 +47,7 @@ class Documents:
 
             Creates a Document object and adds it to the documents collection. This document becomes the active one,
             and a window is created to accomodate it which becomes the active window.
+
             | Parameters:
             |   docType
             | The type of the document to create, chosen among:
