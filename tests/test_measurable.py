@@ -213,27 +213,6 @@ def test_get_axis_system():
         )
 
 
-def test_get_center():
-    """
-
-    :return:
-    """
-
-    # todo: this test fails, not sure why, this is the error message.
-    #    Object doesn't support this property or method: 'measurable.GetCOGPosition'\nLine: 4\nColumn: 12\n)\n",
-    #    None, 0, -2147467259), None)
-    # x = -47.039
-    # y = 83.488
-    # z = 0
-    #
-    # center = (x, y, z)
-    # catia_center = catia_measurable_arc.get_center()
-    #
-    # assert center == catia_center
-
-    pass
-
-
 def test_get_direction():
     with CATIADocHandler(measurable_part) as handler:
         catia = handler.catia
