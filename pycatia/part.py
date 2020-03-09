@@ -339,10 +339,13 @@ class Part:
         :return: HybridBody COM object if found otherwise None.
         """
 
-        for hybrid_body_name in self.get_hybrid_bodies_names():
-            if name == hybrid_body_name:
-                return self.part.HybridBodies.Item(name)
-        return None
+        if len(self.get_hybrid_bodies_names) = 0:
+            print("There is no geometric set named %s " % self.name)
+        else:
+            for hybrid_body_name in self.get_hybrid_bodies_names():
+                if name == hybrid_body_name:
+                    return self.part.HybridBodies.Item(name)
+            return None
 
     @staticmethod
     def get_hybrid_shapes_from_hybrid_body(hybrid_body):
