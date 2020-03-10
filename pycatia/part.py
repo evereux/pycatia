@@ -339,10 +339,16 @@ class Part:
         :return: HybridBody COM object if found otherwise None.
         """
 
+        hybrid_body = None
+
         for hybrid_body_name in self.get_hybrid_bodies_names():
             if name == hybrid_body_name:
-                return self.part.HybridBodies.Item(name)
-        return None
+                hybrid_body = self.part.HybridBodies.Item(name)
+        
+        if hybrid_body is None:
+            raise CATIAApplicationException(f'Could not find hybrid_body name "{name}".')
+
+        return hybrid_body
 
     @staticmethod
     def get_hybrid_shapes_from_hybrid_body(hybrid_body):
