@@ -18,6 +18,10 @@ documents.open(r'tests\CF_TopLevelAssy.CATProduct')
 document = catia.document()
 product = document.product()
 
+# Change the work mode to Design Mode.
+# This is useful for CATIA configurations that work with a cache otherwise methods on children may fail
+# due to the document not being loaded.
+product.apply_work_mode("DESIGN_MODE")
 
 products = product.get_products()
 
