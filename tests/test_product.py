@@ -1,53 +1,50 @@
 #! /usr/bin/python3.6
 
 from pycatia import CATIADocHandler
+from pycatia import Product
 
 cat_part = r'tests/CF_catia_measurable_part.CATPart'
 cat_product = r'tests/CF_TopLevelAssy.CATProduct'
 
 
-def test_repr():
-    with CATIADocHandler(cat_part) as handler:
-        part = handler.document.product()
+def test_analyze():
+    with CATIADocHandler(cat_product) as handler:
+        catia = handler.catia
+        product = handler.document.product()
 
-        assert '(Product) part_number: CF_catia_measurable_part, file_name: CF_catia_measurable_part.CATPart' == \
-               part.__repr__()
+        product.apply_work_mode("DESIGN_MODE")
 
+        Product.activate_terminal_node(product.get_products())
 
-def test_name():
-    with CATIADocHandler(cat_part) as handler:
-        part_product = handler.document.product()
-
-        assert 'CF_catia_measurable_part' == part_product.name
-
-
-def test_file_name():
-    with CATIADocHandler(cat_part) as handler:
-        part_product = handler.document.product()
-
-        assert 'CF_catia_measurable_part.CATPart' == part_product.file_name
+        assert (
+                0.3061919497633215 == product.analyze.mass and
+                306191.9497633215 == product.analyze.volume and
+                39341.17217653142 == product.analyze.wet_area and
+                (65.39210812865413, -25.857059154544192, 0.0) == product.analyze.get_gravity_center(catia) and
+                (246.46031165305178, 137.67448741239653, 0.0,
+                 137.67448741239653, 337.7416949626834, 0.0,
+                 0.0, 0.0, 502.5508200121834) == product.analyze.get_inertia(catia)
+        )
 
 
-def test_part_number():
-    with CATIADocHandler(cat_part) as handler:
-        part_product = handler.document.product()
+def test_attributes():
+    with CATIADocHandler(cat_product) as handler:
+        product = handler.document.product()
 
-        assert 'CF_catia_measurable_part' == part_product.part_number
+        attributes = ('(Product) Attributes... \n'
+                      'File Name:             CF_TopLevelAssy.CATProduct\n'
+                      'Name:                  CF_TopLevelAssy\n'
+                      'Part Number:           CF_TopLevelAssy\n'
+                      'Revision:              A\n'
+                      'Definition:            This is the definition for TopLevelAssy\n'
+                      'Nomenclature:          This is the nomenclature for TopLevelAssy\n'
+                      'Description Instance:  \n'
+                      'Description Reference: This is the description for TopLevelAssy\n'
+                      'Reference:             <COMObject <unknown>>\n'
+                      'Is CATProduct:         True\n'
+                      'Is CATPart:            False')
 
-        part_product.part_number = 'new_part_number'
-
-        assert 'new_part_number' == part_product.part_number
-
-
-def test_revision():
-    with CATIADocHandler(cat_part) as handler:
-        part_product = handler.document.product()
-
-        assert 'A' == part_product.revision
-
-        part_product.revision = 'B'
-
-        assert 'B' == part_product.revision
+        assert product.attributes() == attributes
 
 
 def test_definition():
@@ -89,24 +86,31 @@ def test_description_reference():
         assert new_description_reference == child.description_reference
 
 
-def test_nomenclature():
+def test_file_name():
     with CATIADocHandler(cat_part) as handler:
         part_product = handler.document.product()
 
-        assert 'Test Part' == part_product.nomenclature
-
-        new_nomenclature = 'New Test Part'
-
-        part_product.nomenclature = new_nomenclature
-
-        assert new_nomenclature == part_product.nomenclature
+        assert 'CF_catia_measurable_part.CATPart' == part_product.file_name
 
 
-def test_reference_product():
+def test_get_products():
     with CATIADocHandler(cat_product) as handler:
+        product = handler.document.product()
+        products = product.get_products()
+
+        assert '(Product) part_number: CF_SubProduct1, file_name: CF_SubProduct1.CATProduct' == products[0].__repr__()
+
+
+def test_has_children():
+    with CATIADocHandler(cat_product) as handler:
+        product = handler.document.product()
+
+        assert product.has_children()
+
+    with CATIADocHandler(cat_part) as handler:
         part_product = handler.document.product()
 
-        assert part_product.reference_product.name == 'CF_TopLevelAssy'
+        assert not part_product.has_children()
 
 
 def test_is_catproduct_is_catpart():
@@ -123,41 +127,226 @@ def test_is_catproduct_is_catpart():
         assert not part.is_catproduct()
 
 
-def test_has_children():
+def test_move():
     with CATIADocHandler(cat_product) as handler:
+        catia = handler.catia
         product = handler.document.product()
 
-        assert product.has_children()
+        product.apply_work_mode("DESIGN_MODE")
 
+        transformation = (
+            1.000,
+            0,
+            0,
+            0,
+            0.707,
+            0.707,
+            0,
+            -0.707,
+            0.707,
+            10.000,
+            20.000,
+            30.000
+        )
+
+        Product.activate_terminal_node(product.get_products())
+        # move the first child in parent.
+        product = product.get_products()[0]
+
+        product.move.apply(transformation)
+
+        assert ((65.41613484215364, 0.0, 0.0,
+                 0.0, 68.97147661807078, -13.970786852103165,
+                 0.0, -13.970786852103165, 68.97147661807078) == product.analyze.get_inertia(catia))
+
+
+def test_name():
     with CATIADocHandler(cat_part) as handler:
         part_product = handler.document.product()
 
-        assert not part_product.has_children()
+        assert 'CF_catia_measurable_part' == part_product.name
 
 
-def test_get_products():
+def test_nomenclature():
+    with CATIADocHandler(cat_part) as handler:
+        part_product = handler.document.product()
+
+        assert 'Test Part' == part_product.nomenclature
+
+        new_nomenclature = 'New Test Part'
+
+        part_product.nomenclature = new_nomenclature
+
+        assert new_nomenclature == part_product.nomenclature
+
+
+def test_part_number():
+    with CATIADocHandler(cat_part) as handler:
+        part_product = handler.document.product()
+
+        assert 'CF_catia_measurable_part' == part_product.part_number
+
+        part_product.part_number = 'new_part_number'
+
+        assert 'new_part_number' == part_product.part_number
+
+
+def test_position():
+    # todo: write test feature
+    pass
+
+
+def test_proudcts():
+    # todo: write test feature
+    pass
+
+
+def test_publications():
+    # todo: write test feature
+    pass
+
+
+def test_reference_product():
     with CATIADocHandler(cat_product) as handler:
-        product = handler.document.product()
-        products = product.get_products()
+        part_product = handler.document.product()
 
-        assert '(Product) part_number: CF_SubProduct1, file_name: CF_SubProduct1.CATProduct' == products[0].__repr__()
+        assert part_product.reference_product.name == 'CF_TopLevelAssy'
 
 
-def test_attributes():
-    with CATIADocHandler(cat_product) as handler:
-        product = handler.document.product()
+def test_relations():
+    # todo: write test feature.
+    pass
 
-        attributes = ('(Product) Attributes... \n'
-                      'File Name:             CF_TopLevelAssy.CATProduct\n'
-                      'Name:                  CF_TopLevelAssy\n'
-                      'Part Number:           CF_TopLevelAssy\n'
-                      'Revision:              A\n'
-                      'Definition:            This is the definition for TopLevelAssy\n'
-                      'Nomenclature:          This is the nomenclature for TopLevelAssy\n'
-                      'Description Instance:  \n'
-                      'Description Reference: This is the description for TopLevelAssy\n'
-                      'Reference:             <COMObject <unknown>>\n'
-                      'Is CATProduct:         True\n'
-                      'Is CATPart:            False')
 
-        assert product.attributes() == attributes
+def test_revision():
+    with CATIADocHandler(cat_part) as handler:
+        part_product = handler.document.product()
+
+        assert 'A' == part_product.revision
+
+        part_product.revision = 'B'
+
+        assert 'B' == part_product.revision
+
+
+def test_activate_default_shape():
+    # todo: write test feature
+    pass
+
+
+def test_activate_shape():
+    # todo: write test feature
+    pass
+
+
+def test_add_master_shape_representation():
+    # todo: write test feature
+    pass
+
+
+def test_add_shape_representation():
+    # todo: write test feature
+    pass
+
+
+def test_connections():
+    # todo: write test feature
+    pass
+
+
+def test_create_reference_from_name():
+    # todo: write test feature
+    pass
+
+
+def test_desactivate_default_shape():
+    # todo: write test feature
+    pass
+
+
+def test_desactivate_shape():
+    # todo: write test feature
+    pass
+
+
+def test_extract_bom():
+    # todo: write test feature
+    pass
+
+
+def test_get_active_shape_name():
+    # todo: write test feature
+    pass
+
+
+def test_get_all_shape_names():
+    # todo: write test feature
+    pass
+
+
+def test_get_children():
+    # todo: write test feature
+    pass
+
+
+def test_get_default_shape_name():
+    # todo: write test feature
+    pass
+
+
+def test_get_master_shape_representation():
+    # todo: write test feature
+    pass
+
+
+def test_get_master_shape_representation_path_name():
+    # todo: write test feature
+    pass
+
+
+def test_get_number_of_shapes():
+    # todo: write test feature
+    pass
+
+
+def test_get_shape_path_name():
+    # todo: write test feature
+    pass
+
+
+def test_get_shape_representation():
+    # todo: write test feature
+    pass
+
+
+def test_get_technological_object():
+    # todo: write test feature
+    pass
+
+
+def test_has_shape_representation():
+    # todo: write test feature
+    pass
+
+
+def test_remove_master_shape_representation():
+    # todo: write test feature
+    pass
+
+
+def test_remove_shape_representation():
+    # todo: write test feature
+    pass
+
+
+def test_update():
+    # todp: write test feature
+    pass
+
+
+def test_repr():
+    with CATIADocHandler(cat_part) as handler:
+        part = handler.document.product()
+
+        assert '(Product) part_number: CF_catia_measurable_part, file_name: CF_catia_measurable_part.CATPart' == \
+               part.__repr__()

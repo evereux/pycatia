@@ -237,6 +237,7 @@ class Product:
 
 
         """
+        # todo: not implemented yet.
         return self.product.Parameters
 
     @property
@@ -455,17 +456,17 @@ class Product:
         :return: str
         """
 
-        return ('(Product) Attributes... /n'
-                f'File Name:             {self.file_name}/n'
-                f'Name:                  {self.name}/n'
-                f'Part Number:           {self.part_number}/n'
-                f'Revision:              {self.revision}/n'
-                f'Definition:            {self.definition}/n'
-                f'Nomenclature:          {self.nomenclature}/n'
-                f'Description Instance:  {self.description_instance}/n'
-                f'Description Reference: {self.description_reference}/n'
-                f'Reference:             {self.reference_product}/n'
-                f'Is CATProduct:         {self.is_catproduct()}/n'
+        return ('(Product) Attributes... \n'
+                f'File Name:             {self.file_name}\n'
+                f'Name:                  {self.name}\n'
+                f'Part Number:           {self.part_number}\n'
+                f'Revision:              {self.revision}\n'
+                f'Definition:            {self.definition}\n'
+                f'Nomenclature:          {self.nomenclature}\n'
+                f'Description Instance:  {self.description_instance}\n'
+                f'Description Reference: {self.description_reference}\n'
+                f'Reference:             {self.reference_product}\n'
+                f'Is CATProduct:         {self.is_catproduct()}\n'
                 f'Is CATPart:            {self.is_catpart()}')
 
     def activate_default_shape(self):
@@ -517,7 +518,6 @@ class Product:
         def loop_d_loop(products):
 
             for product in products:
-                print(product.name)
                 if product.is_catpart():
                     product.activate_default_shape()
                 elif product.is_catproduct():
@@ -558,6 +558,7 @@ class Product:
                 |
                 |
         """
+        # todo: not yet implemented
         return self.product.AddMasterShapeRepresentation(i_shape_path_name)
 
     def add_shape_representation(self, i_shape_path_name, i_shape_name, i_rep_behavior, i_context):
@@ -609,6 +610,7 @@ class Product:
                 |
 
         """
+        # todo: not yet implemented
         return self.product.AddShapeRepresentation(i_shape_path_name, i_shape_name, i_rep_behavior, i_context)
 
     def apply_work_mode(self, new_mode):
