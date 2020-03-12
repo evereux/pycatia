@@ -95,3 +95,9 @@ To run the tests with coverage:
 .. code-block:: python
 
     py.test -v --cov-report term-missing --cov=pycatia
+
+To run a specific test:
+
+.. code-block:: python
+
+    py.test -v tests/test_product.py::test_move
