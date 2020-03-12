@@ -1,3 +1,6 @@
+#! /usr/bin/python3.6
+
+from pycatia.analyze import Analyze
 from pycatia.position import Position
 from .catia_enum_types import cat_file_types
 from .catia_enum_types import cat_work_mode_types
@@ -49,7 +52,8 @@ class Product:
 
         :return: analyze object
         """
-        return self.product.Analyze
+
+        return Analyze(self.product)
 
     @property
     def definition(self):
