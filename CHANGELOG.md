@@ -1,7 +1,7 @@
 # Changelog
 
 ## 0.1.8
-* updated get_hybrid_by_name to now raise a meaninful exception if the user has 
+* updated get_hybrid_by_name to now raise a meaningful exception if the user has 
   input a name that doesn't exist.
 * many updates to the Product class properties and methods. One of the more useful
   is probably Product.apply_work_mode(). See example_4.py for example. 
