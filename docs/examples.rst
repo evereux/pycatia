@@ -74,3 +74,10 @@ Loop through a CATProduct and analyse children if CATPart.
 
 .. literalinclude:: ../example_10.py
 
+Example 11
+----------
+
+Move first child in product.
+
+.. literalinclude:: ../example_11.py
+

@@ -1,6 +1,7 @@
 #! /usr/bin/python3.6
 
 from pycatia.analyze import Analyze
+from pycatia.move import Move
 from pycatia.position import Position
 from .catia_enum_types import cat_file_types
 from .catia_enum_types import cat_work_mode_types
@@ -174,7 +175,7 @@ class Product:
 
 
         """
-        return self.product.Move
+        return Move(self.product)
 
     @property
     def name(self):
@@ -502,6 +503,27 @@ class Product:
 
         """
         return self.product.ActivateShape(shape_name)
+
+    @staticmethod
+    def activate_terminal_node(products):
+        """
+        Method to 'Activate Terminal Node'.
+
+        Loops through ALL products in product and activates_default_shape().
+
+        :param products: self.get_products()
+        """
+
+        def loop_d_loop(products):
+
+            for product in products:
+                print(product.name)
+                if product.is_catpart():
+                    product.activate_default_shape()
+                elif product.is_catproduct():
+                    loop_d_loop(product.get_products())
+
+        loop_d_loop(products)
 
     def add_master_shape_representation(self, i_shape_path_name):
         """
