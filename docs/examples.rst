@@ -67,3 +67,10 @@ Get the position matrix of products (CATPart or CATProduct) in product.
 
 .. literalinclude:: ../example_9.py
 
+Example 10
+----------
+
+Loop through a CATProduct and analyse children if CATPart.
+
+.. literalinclude:: ../example_10.py
+
