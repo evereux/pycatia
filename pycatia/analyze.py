@@ -1,5 +1,5 @@
 #! /usr/bin/python3.6
-# module initially auto generated using V5Automation.chm from CATVIA R25
+# module initially auto generated using V5Automation.chm from CATIA V5 R25
 
 
 class Analyze:
@@ -106,7 +106,6 @@ class Analyze:
                 |
                 |
         """
-        # return self.analyze.GetGravityCenter()
 
         vba_function_name = 'get_gravity_center'
         vba_function = 'GetGravityCenter'
@@ -173,4 +172,3 @@ class Analyze:
         result = catia.evaluate(vba_code, vba_function_name, [self.analyze])
 
         return result
-

@@ -5,6 +5,9 @@
   input a name that doesn't exist.
 * many updates to the Product class properties and methods. One of the more useful
   is probably Product.apply_work_mode(). See example_4.py for example. 
+* can now analyse (analyze) products for mass, volume, wet area, center of gravity 
+  and inertia. See example_10.py
+* enabled Product.move() method. See example_11.py
 
 ## 0.1.7
 * updated pywin32 requirement so pycatia can work with later versions of python.
