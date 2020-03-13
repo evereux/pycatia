@@ -47,8 +47,8 @@ def test_add_documents():
         assert 'CATPart' in document.name
 
     with pytest.raises(ValueError):
-        with CATIADocHandler(new_document='lala') as handler:
-            document = handler.document
+        with CATIADocHandler(new_document='lala'):
+            pass
 
 
 def test_product():
