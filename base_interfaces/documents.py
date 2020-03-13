@@ -12,6 +12,7 @@ class Documents:
     Usage::
 
         >>> from pycatia.base_interfaces import CATIAApplication
+        >>> from pycatia.base_interfaces import Document
         >>> catia = CATIAApplication()
         >>> documents = Document(catia.catia)
 
