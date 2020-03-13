@@ -69,9 +69,9 @@ Examples
 .. _example_6: https://github.com/evereux/pycatia/blob/master/example_6.py
 .. _example_7: https://github.com/evereux/pycatia/blob/master/example_7.py
 .. _example_8: https://github.com/evereux/pycatia/blob/master/example_8.py
-.. _example_8: https://github.com/evereux/pycatia/blob/master/example_9.py
-.. _example_8: https://github.com/evereux/pycatia/blob/master/example_10.py
-.. _example_8: https://github.com/evereux/pycatia/blob/master/example_11.py
+.. _example_9: https://github.com/evereux/pycatia/blob/master/example_9.py
+.. _example_10: https://github.com/evereux/pycatia/blob/master/example_10.py
+.. _example_11: https://github.com/evereux/pycatia/blob/master/example_11.py
 
 Asking Questions
 ----------------
