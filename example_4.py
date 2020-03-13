@@ -8,7 +8,7 @@
 
 """
 
-from pycatia import CATIAApplication
+from pycatia.base_interfaces import CATIAApplication
 
 catia = CATIAApplication()
 

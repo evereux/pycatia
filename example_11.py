@@ -8,8 +8,8 @@
 
 """
 
-from pycatia import CATIAApplication
-from pycatia import Product
+from pycatia.base_interfaces import CATIAApplication
+from pycatia.product_structure_interfaces import Product
 
 catia = CATIAApplication()
 
@@ -18,7 +18,6 @@ documents.open(r'tests\CF_TopLevelAssy.CATProduct')
 
 document = catia.document()
 top_product = document.product()
-
 
 # Change the work mode to Design Mode.
 # This is useful for CATIA configurations that work with a cache otherwise methods on children may fail

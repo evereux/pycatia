@@ -10,10 +10,10 @@
 
 import csv
 
-from pycatia import CATIAApplication
-from pycatia import CATIAMeasurable
-from pycatia import create_measurable
-from pycatia import create_spa_workbench
+from pycatia.base_interfaces import CATIAApplication
+from pycatia.space_analyses_interfaces import CATIAMeasurable
+from pycatia.space_analyses_interfaces import create_measurable
+from pycatia.workbenches import create_spa_workbench
 
 catia = CATIAApplication()
 

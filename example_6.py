@@ -12,7 +12,7 @@
 
 """
 
-from pycatia import CATIAApplication
+from pycatia.base_interfaces import CATIAApplication
 
 # path to file to open.
 file_name = r'tests\CF_Part_1.CATPart'
@@ -33,5 +33,3 @@ document.export_data(new_export_file_name, "stp")
 
 # close document
 document.close()
-
-

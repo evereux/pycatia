@@ -4,7 +4,7 @@ import csv
 import os
 import time
 
-from .hybridshapefactory import HybridShapeFactory
+from pycatia.hybrid_shape_interfaces.hybridshapefactory import HybridShapeFactory
 
 unit_conversion = {
     'mm': 1,

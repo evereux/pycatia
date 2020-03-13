@@ -2,6 +2,8 @@
 
 import warnings
 
+from pycatia.exception_handling import CATIAApplicationException
+
 geometrical_feature_type = [
     'Unknown',
     'Point',
@@ -344,7 +346,7 @@ class Part:
         for hybrid_body_name in self.get_hybrid_bodies_names():
             if name == hybrid_body_name:
                 hybrid_body = self.part.HybridBodies.Item(name)
-        
+
         if hybrid_body is None:
             raise CATIAApplicationException(f'Could not find hybrid_body name "{name}".')
 
@@ -442,7 +444,7 @@ class Part:
         """
         :Example:
 
-            >>> from pycatia import CATIADocHandler
+            >>> from pycatia.base_interfaces import CATIADocHandler
             >>> cat_part = r'my_part.CATPart'
             >>> with CATIADocHandler(cat_part) as handler:
             >>>    part = handler.document.part()

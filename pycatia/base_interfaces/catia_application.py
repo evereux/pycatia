@@ -2,7 +2,8 @@
 
 from win32com.client import Dispatch
 
-from .document import Documents, Document
+from .document import Document
+from .documents import Documents
 
 
 class CATIAApplication:
@@ -11,7 +12,7 @@ class CATIAApplication:
 
     :Example:
 
-        >>> from pycatia import CATIAApplication
+        >>> from pycatia.base_interfaces import CATIAApplication
         >>> catia = CATIAApplication()
         >>> documents = catia.documents()
         >>> file_name = 'my_new_part.CATPart'
