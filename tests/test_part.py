@@ -114,8 +114,10 @@ def test_get_hybrid_by_name():
 
         assert hybrid_body.name == 'Arcs'
 
-        with pytest.raises(CATIAApplicationException, match='Could not find hybrid_body name "lala".'):
-            pass
+        with pytest.raises(CATIAApplicationException, match='Could not find hybrid_body name "name does not exist".'):
+            hybrid_body = part.get_hybrid_body_by_name('name does not exist')
+
+            assert hybrid_body.name == 'Arcs'
 
 
 def test_create_geometrical_set():
