@@ -1,3 +1,4 @@
 Sphinx==1.8.3
 sphinx-rtd-theme==0.4.2
 pytest==4.3.0
+pytest-con==2.6.1
