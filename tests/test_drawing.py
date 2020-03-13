@@ -2,10 +2,9 @@
 
 import pytest
 
-from pycatia import CATIAApplicationException
-from pycatia import CATIADocHandler
-from pycatia import DrawingRoot
-
+from pycatia.base_interfaces import CATIADocHandler
+from pycatia.drafting_interfaces import DrawingRoot
+from pycatia.exception_handling import CATIAApplicationException
 
 cat_drawing = r'tests/CF_Drawing1.CATDrawing'
 
@@ -116,4 +115,3 @@ def test_view_scale():
         assert view.scale == 1.0
         view.scale = 2.0
         assert view.scale == 2.0
-

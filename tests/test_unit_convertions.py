@@ -1,6 +1,6 @@
 #! /usr/bin/python3.6
 
-from pycatia.csv_tools import convert_units, unit_conversion
+from pycatia.scripts import unit_conversion
 
 
 def test_units():

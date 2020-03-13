@@ -1,6 +1,14 @@
 # Changelog
 
 ## 0.1.8
+* There have been a lot of changes at this revision. If you are upgrading from a 
+  previous revision the changes will break your existing scripts (sorry!). They will 
+  be mostly simply fixes to import statements. See the updated examples for ideas 
+  on how you should correct them.
+  
+  These changes were made to allow for the future expansion of pycatia by having a 
+  more modular approach (hopefully).
+* module re-organisation.
 * updated get_hybrid_by_name to now raise a meaningful exception if the user has 
   input a name that doesn't exist.
 * many updates to the Product class properties and methods. One of the more useful

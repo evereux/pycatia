@@ -1,7 +1,10 @@
 #! /usr/bin/python3.6
 
-from pycatia import CATIAApplication
-from pycatia import CATIADocHandler
+import pytest
+
+from pycatia.base_interfaces import CATIAApplication
+from pycatia.base_interfaces import CATIADocHandler
+from pycatia.exception_handling import CATIAApplicationException
 
 catia = CATIAApplication()
 cat_part = r'tests/CF_catia_measurable_part.CATPart'
@@ -111,9 +114,8 @@ def test_get_hybrid_by_name():
 
         assert hybrid_body.name == 'Arcs'
 
-        hybrid_body = part.get_hybrid_body_by_name('lala')
-
-        assert hybrid_body is None
+        with pytest.raises(CATIAApplicationException, match='Could not find hybrid_body name "lala".'):
+            hybrid_body = part.get_hybrid_body_by_name('lala')
 
 
 def test_create_geometrical_set():

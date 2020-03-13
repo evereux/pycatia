@@ -1,11 +1,11 @@
 #! /usr/bin/python3.6
 
-from pycatia.analyze import Analyze
-from pycatia.move import Move
-from pycatia.position import Position
-from .catia_enum_types import cat_file_types
-from .catia_enum_types import cat_work_mode_types
-from .catia_enum_types import cat_rep_types
+from pycatia.product_structure_interfaces.analyze import Analyze
+from pycatia.base_interfaces.move import Move
+from pycatia.base_interfaces.position import Position
+from .enumeration_types import cat_file_types
+from .enumeration_types import cat_work_mode_types
+from .enumeration_types import cat_rep_types
 
 
 class Product:

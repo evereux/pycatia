@@ -5,10 +5,10 @@
     test_document.py. I've no idea why at the moment.
 """
 
-from pycatia import create_measurable
-from pycatia import CATIAMeasurable
-from pycatia import CATIADocHandler
-from pycatia import create_spa_workbench
+from pycatia.base_interfaces import CATIADocHandler
+from pycatia.space_analyses_interfaces import create_measurable
+from pycatia.space_analyses_interfaces import CATIAMeasurable
+from pycatia.workbenches import create_spa_workbench
 
 measurable_part = 'tests\\CF_catia_measurable_part.CATPart'
 

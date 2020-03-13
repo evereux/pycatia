@@ -1,7 +1,7 @@
 #! /usr/bin/python3.6
 
-from pycatia import CATIADocHandler
-from pycatia import Product
+from pycatia.base_interfaces import CATIADocHandler
+from pycatia.product_structure_interfaces import Product
 
 cat_part = r'tests/CF_catia_measurable_part.CATPart'
 cat_product = r'tests/CF_TopLevelAssy.CATProduct'

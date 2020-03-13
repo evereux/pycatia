@@ -5,9 +5,9 @@ import os
 
 import pytest
 
-from pycatia import CATIAApplication
-from pycatia import CATIADocHandler
-from pycatia import HybridShapeFactory
+from pycatia.base_interfaces import CATIAApplication
+from pycatia.base_interfaces import CATIADocHandler
+from pycatia.hybrid_shape_interfaces import HybridShapeFactory
 
 now_string = datetime.now().strftime('%Y%m%d-%H%M%S')
 
@@ -169,7 +169,7 @@ def test_full_name():
     with CATIADocHandler(cat_part) as handler:
         document = handler.document
 
-        assert r'P:\python\projects\pycatia\tests\CF_catia_measurable_part.CATPart' == \
+        assert r'pycatia\tests\CF_catia_measurable_part.CATPart' in \
                document.full_name
 
 
@@ -188,4 +188,3 @@ def test_export_document():
         assert os.path.isfile(f'{export_name}.igs')
 
         os.remove(f'{export_name}.igs')
-

@@ -1,6 +1,6 @@
 #! /usr/bin/python3.6
 
-from pycatia import CATIAApplication
+from pycatia.base_interfaces import CATIAApplication
 
 catia = CATIAApplication()
 cat_part = r'tests/CF_catia_measurable_part.CATPart'
@@ -11,7 +11,6 @@ def test_application():
 
 
 def test_refresh():
-
     documents = catia.documents()
     documents.open(cat_part)
     document = catia.document()
@@ -26,7 +25,6 @@ def test_refresh():
 
 
 def test_visible():
-
     documents = catia.documents()
     documents.open(cat_part)
     document = catia.document()

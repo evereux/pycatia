@@ -1,6 +1,6 @@
 #! /usr/bin/python3.6
 
-from pycatia import CATIAApplication
+from pycatia.base_interfaces import CATIAApplication
 
 
 def initialise():

@@ -77,7 +77,12 @@ Asking Questions
 ----------------
 
 Please don't raise an issue here until you have read the documentation, understood and met the requirements (YOU NEED
-CATIA INSTALLED) and have run the examples. Once you have done that please give as much information as you can so I may
+CATIA INSTALLED) and have run the examples.
+
+If you are upgrading from an earlier versions and your scripts break please check the changelog to give you clues on
+what to do to resolve those issues.
+
+Once you have done that please give as much information as you can so I may
 try and reproduce the issue. Please provide the following information:
 
 * Windows OS version
@@ -87,6 +92,7 @@ try and reproduce the issue. Please provide the following information:
 * Your code!
 * Full stack trace of error you encounter (properly formatted text please, not picture).
 
+Thanks! :-)
 
 Running The Tests
 -----------------
