@@ -2,7 +2,7 @@
 
 from pywintypes import com_error
 
-from .exceptions import CATIAApplicationException
+from pycatia.exception_handling import CATIAApplicationException
 
 paper_sizes = [
     'catPaperLetter',  # [0]

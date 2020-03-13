@@ -1,5 +1,6 @@
 #! /usr/bin/python3.6
 
+from pathlib import Path
 import os
 import warnings
 
@@ -49,7 +50,10 @@ class HybridShapeFactory:
         :param point_name:
         """
 
-        macro_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), r'macros')
+        path = os.path.dirname(os.path.realpath(__file__))
+        pure_path = Path(path)
+        parent = pure_path.parent
+        macro_path = Path(parent, 'macros')
 
         point = self.hsf.AddNewPointCoord(new_point[0], new_point[1], new_point[2])
 

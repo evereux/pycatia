@@ -1,4 +1,14 @@
+#! /usr/bin/python3.6
+
+
 class Position:
+    """
+            .. note::
+                CAA V5 Visual Basic help
+
+                | Represents the position object.
+                | The position object is the 3D-axis system associated with an object.
+    """
 
     def __init__(self, _object):
         self.position = _object.Position

@@ -3,8 +3,8 @@
 import os
 import warnings
 
-from .catia_application import CATIAApplication
-from .exceptions import CATIAApplicationException
+from pycatia.base_interfaces.catia_application import CATIAApplication
+from pycatia.exception_handling.exceptions import CATIAApplicationException
 
 
 class CATIADocHandler:
@@ -15,6 +15,7 @@ class CATIADocHandler:
 
     :Example - Open a CATPart:
 
+        >>> from pycatia.base_interfaces import CATIADocHandler
         >>> catia_part = 'tests\\CF_catia_measurable_part.CATPart'
         >>> with CATIADocHandler(catia_part) as handler:
         >>>     # create the CATIA() object.
@@ -27,6 +28,7 @@ class CATIADocHandler:
 
     :Example - Create a new CATPart:
 
+        >>> from pycatia.base_interfaces import CATIADocHandler
         >>> with CATIADocHandler(new_document='Part') as handler:
         >>>     # create the CATIA() object.
         >>>     catia = handler.catia

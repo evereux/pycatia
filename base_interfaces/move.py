@@ -86,4 +86,3 @@ class Move:
         """
 
         return self.move.Apply(i_transformation_array)
-
