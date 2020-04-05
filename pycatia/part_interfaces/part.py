@@ -42,6 +42,41 @@ class Part:
 
         return self.part.Name
 
+        @property
+    def file_name(self):
+        """
+
+        :return: str
+        """
+        try:
+            return self.part.ReferenceProduct.Parent.Name
+        except AttributeError:
+            return self.part.Parent.Name
+
+    @property
+    def full_name(self):
+        """
+
+        :return: str
+        """
+        try:
+            return self.part.ReferenceProduct.Parent.FullName
+        except AttributeError:
+            return self.part.Parent.FullName
+
+    @property
+    def path(self):
+        """
+
+        :return: str
+        """
+        fullname = self.full_name
+
+        if fullname.find("\\") > -1:
+            return fullname[:fullname.rfind("\\")]
+        else:
+            return None
+    
     @property
     def density(self):
         """
@@ -497,4 +532,4 @@ class Part:
         """
         :return: str
         """
-        return f'Part(name: {self.name})'
+        return f'(Part) name: {self.name}, file_name: {self.file_name}'
