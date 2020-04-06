@@ -1082,7 +1082,7 @@ class Product:
         :return: bool
         """
 
-        if 'catproduct' == self.file_name.rsplit('.')[1].lower():
+        if 'catproduct' == self.file_name.rsplit('.')[-1].lower():
             return True
 
         return False
@@ -1093,7 +1093,7 @@ class Product:
         :return: bool
         """
 
-        if 'catpart' == self.file_name.rsplit('.')[1].lower():
+        if 'catpart' == self.file_name.rsplit('.')[-1].lower():
             return True
 
         return False
