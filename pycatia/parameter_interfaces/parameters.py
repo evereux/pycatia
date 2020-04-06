@@ -168,7 +168,7 @@ class ParameterSets(ParameterSet):
         :return: item
         """
         if not self.is_item(index):
-            raise CATIAApplicationException(f'Could not find parameter name "{index}".')
+            raise CATIAApplicationException(f'Could not find item name "{index}".')
 
         return self.parametersets.Item(index)
    
