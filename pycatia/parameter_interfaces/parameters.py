@@ -1,4 +1,5 @@
 #! /usr/bin/python3.7
+from pycatia.exception_handling import CATIAApplicationException
 from pywintypes import com_error
 from .parameter import Parameter
 
@@ -30,28 +31,28 @@ class Parameters:
         """
         return self.parameters.Name
 
-    def is_parameter(self, parameter_index):
+    def is_parameter(self, index):
         """
 
-        :param str parameter_index: parameter name.
+        :param str/int index: parameter name or parameter number
         :return: bool
         """
         try:
-            if self.parameters.Item(parameter_index):
+            if self.parameters.Item(index):
                 return True
         except com_error:
             return False
 
-    def get_parameter(self, parameter_index):
+    def get_parameter(self, index):
         """
 
-        :param str parameter_index: parameter name.
+        :param str/int index: parameter name or parameter number
         :return: parameter
         """
-        if not self.is_parameter(parameter_index):
-            raise AttributeError(f'Parameter [{parameter_index}] could not be found')
+        if not self.is_parameter(index):
+            raise CATIAApplicationException(f'Could not find parameter name "{index}".')
 
-        return Parameter(self.parameters.Item(parameter_index))
+        return Parameter(self.parameters.Item(index))
 
     def count_parameters(self):
         """
@@ -148,6 +149,29 @@ class ParameterSets(ParameterSet):
     def create_new_set(self, set_name):
         return self.parametersets.CreateSet(set_name)
 
+    def is_item(self, index):
+        """
+
+        :param str/int index: parametersets name or parameter number
+        :return: bool
+        """
+        try:
+            if self.parametersets.Item(index):
+                return True
+        except com_error:
+            return False
+
+    def get_item_by_index(self, index):
+        """
+
+        :param str/int index: parametersets name or parameter number
+        :return: item
+        """
+        if not self.is_item(index):
+            raise CATIAApplicationException(f'Could not find parameter name "{index}".')
+
+        return self.parametersets.Item(index)
+   
     def get_item_by_index(self, index):
         """
         :return: Body COM object if found otherwise None.
