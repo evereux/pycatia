@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.7
 
 from .parameters import Parameters
 from .parameters import ParameterSet, ParameterSets
