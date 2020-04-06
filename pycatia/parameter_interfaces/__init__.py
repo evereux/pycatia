@@ -1,4 +1,4 @@
 #! /usr/bin/python3.6
 
-from .parameters import Parameters
-from .parameter import Parameter, BoolParam, IntParam, RealParam, StrParam
+from .parameters import Parameters, BoolParam, IntParam, RealParam, StrParam
+from .parameter import Parameter
