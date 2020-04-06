@@ -17,8 +17,11 @@ class Parameters:
     def __init__(self, parameters):
         self.parameters = parameters
 
-    def get_parameterset(self):
+    def get_parameters(self):
         return self.parameters
+
+    def get_root_parameter_set(self):
+        return ParameterSet(self.parameters.RootParameterSet)
 
     @property
     def name(self):
@@ -65,7 +68,7 @@ class Parameters:
 
         return False
 
-    def get_parameters(self):
+    def get_all_parameter(self):
         """
 
         :return: list(Parameter())
@@ -82,7 +85,6 @@ class Parameters:
 
     def add_bool_parameter(self, name, value):
         return BoolParam(name, value, self.parameters)
-        # return self.parameters.CreateBoolean(name, value)
 
     def add_dim_parameter(self, name, unit_type, value):
 
@@ -108,17 +110,87 @@ class Parameters:
         return self.parameters.Remove(name)
 
 
+class ParameterSet(Parameters):
+    def __init__(self, parameterset):
+        self.parameterset = parameterset
+
+    @property
+    def name(self):
+        return self.parameterset.Name
+
+    def get_parameterset(self):
+        return self.parameterset
+
+    def get_all_parameters(self):
+        return Parameters(self.parameterset.AllParameters)
+
+    def get_direct_parameters(self):
+        return Parameters(self.parameterset.DirectParameters)
+
+    def get_child_parametersets(self):
+        return ParameterSets(self.parameterset.ParameterSets)
+
+
+class ParameterSets(ParameterSet):
+    def __init__(self, parametersets):
+        self.parametersets = parametersets
+
+    def get_parametersets(self):
+        return self.parametersets
+
+    @property
+    def name(self):
+        return self.parametersets.Name
+
+    def count(self):
+        return self.parametersets.Count
+
+    def create_new_set(self, set_name):
+        return self.parametersets.CreateSet(set_name)
+
+    def get_item_by_index(self, index):
+        """
+        :return: Body COM object if found otherwise None.
+        """
+        return self.parametersets.Item(index)
+
+    def get_items(self):
+        """
+        :return: list(Parameter())
+        """
+        sets = []
+
+        for i in range(self.parametersets.Count):
+            set = ParameterSet(self.parametersets.Item(i + 1))
+            sets.append(set)
+
+        return sets
+
+    def get_item_names(self):
+        """
+        :return: list
+        """
+
+        names = []
+
+        for i in range(self.parametersets.Count):
+            name = self.parametersets.Item(i + 1).name
+            names.append(name)
+
+        return names
+
+
 class IntParam(Parameter):
     def __init__(self, name, value, parameters):
         if not isinstance(value, int):
             raise ValueError(f'Parameter value [{value}] has to be int()')
 
-        self.parameters = self.set_parameterset(parameters)
+        self.parameters = self.set_parameters(parameters)
         self.parameter = self.parameters.CreateInteger(name, value)
 
-    def set_parameterset(self, parameters):
+    def set_parameters(self, parameters):
         if isinstance(parameters, Parameters):
-            return parameters.get_parameterset()
+            return parameters.get_parameters()
         else:
             return parameters
 
@@ -168,12 +240,12 @@ class BoolParam(Parameter):
         if not isinstance(value, bool):
             raise ValueError(f'Parameter value [{value}] has to be bool()')
 
-        self.parameters = self.set_parameterset(parameters)
+        self.parameters = self.set_parameters(parameters)
         self.parameter = self.parameters.CreateBoolean(name, value)
 
-    def set_parameterset(self, parameters):
+    def set_parameters(self, parameters):
         if isinstance(parameters, Parameters):
-            return parameters.get_parameterset()
+            return parameters.get_parameters()
         else:
             return parameters
 
@@ -191,12 +263,12 @@ class StrParam(Parameter):
         if not isinstance(text, str):
             raise ValueError(f'Parameter text [{text}] has to be str()')
 
-        self.parameters = self.set_parameterset(parameters)
+        self.parameters = self.set_parameters(parameters)
         self.parameter = self.parameters.CreateBoolean(name, text)
 
-    def set_parameterset(self, parameters):
+    def set_parameters(self, parameters):
         if isinstance(parameters, Parameters):
-            return parameters.get_parameterset()
+            return parameters.get_parameters()
         else:
             return parameters
 
@@ -214,12 +286,12 @@ class RealParam(Parameter):
         if not isinstance(value, float):
             raise ValueError(f'Parameter value [{value}] has to be float()')
 
-        self.parameters = self.set_parameterset(parameters)
+        self.parameters = self.set_parameters(parameters)
         self.parameter = self.parameters.CreateBoolean(name, value)
 
-    def set_parameterset(self, parameters):
+    def set_parameters(self, parameters):
         if isinstance(parameters, Parameters):
-            return parameters.get_parameterset()
+            return parameters.get_parameters()
         else:
             return parameters
 
