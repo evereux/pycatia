@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.1.9
+* Updated setup.py due to pypi builds not scanning pycatia folder recursively.
+
 ## 0.1.8
 * There have been a lot of changes at this revision. If you are upgrading from a 
   previous revision the changes will break your existing scripts (sorry!). They will 

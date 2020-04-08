@@ -1,6 +1,6 @@
 #! /usr/bin/python3.6
 
-from setuptools import setup, find_packages
+from setuptools import setup, find_packages, find_namespace_packages
 
 from pycatia import __author__, __author_email, __description__, __name__, __version__, __url__
 
@@ -29,7 +29,6 @@ test_requirements = [
 with open("README.rst", "r") as fh:
     long_description = fh.read()
 
-
 setup(
     name=__name__,
     version=__version__,
@@ -39,7 +38,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/x-rst",
     url=__url__,
-    packages=['pycatia'],
+    packages=find_namespace_packages(include=['pycatia.*']),
     python_requires=">=3.6",
     classifiers=[
         'Programming Language :: Python :: 3.6',
@@ -50,5 +49,5 @@ setup(
     tests_require=test_requirements,
     install_requires=requires,
     package_dir={'pycatia': 'pycatia'},
-    package_data={'pycatia': ['macros/*.catvbs']},
+    package_data={'pycatia': ['pycatia/macros/*.catvbs']},
 )
