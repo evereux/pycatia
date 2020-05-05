@@ -141,6 +141,46 @@ class Documents:
         file_name = os.path.abspath(file_name)
         self.documents.Open(file_name)
 
+    def item(self, index):
+        return self.documents.Item(index)
+
+    def get_documents(self):
+
+        items = []
+
+        for index in range(1, self.documents.count):
+            items.append(self.documents.Item(index))
+
+        return items
+
+    def get_documents_name(self):
+
+        names = []
+
+        for index in range(1, self.documents.count + 1):
+            names.append(self.documents.Item(index).Name)
+
+        return names
+
+    def count(self, file_typ_list):
+        """
+        Returns the number of documents which presents special file extensions like:
+            'catpart', 'catdrawing', 'catproduct', 'catmaterial', 'catalog', 'catfct'
+
+
+        :param str (list) file_typ_list: filetyp(es) to count.
+        :return: int()
+        """
+
+        items = self.get_documents_name()
+
+        if not type(file_typ_list) == list:
+            file_typ_list = [elem.lower() for elem in [file_typ_list]]
+        else:
+            file_typ_list = [elem.lower() for elem in file_typ_list]
+
+        return len([True for name in items for typ in file_typ_list if name.lower().find(typ) > 0])
+        
     def num_open(self):
         """
         Returns the number of open documents.
