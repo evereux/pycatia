@@ -12,8 +12,8 @@ from pycatia.knowledge_interfaces import Relations
 
 catia = CATIAApplication()
 
-# documents = catia.documents()
-# documents.open(r'tests\CF_Part_3.CATPart')
+documents = catia.documents()
+documents.open(r'tests\CF_Part_3.CATPart')
 
 document = catia.document()
 
