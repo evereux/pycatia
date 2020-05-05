@@ -145,15 +145,6 @@ class Product:
         self.product.DescriptionRef = description_reference
 
     @property
-    def file_name(self):
-        """
-
-        :return: str
-        """
-
-        return self.product.ReferenceProduct.Parent.Name
-
-    @property
     def move(self):
         """
         .. note::
@@ -185,6 +176,38 @@ class Product:
         """
 
         return self.product.Name
+ 
+    @property
+    def file_name(self):
+        """
+
+        :return: str()
+        """
+
+        return self.product.ReferenceProduct.Parent.Name
+ 
+    @property
+    def full_name(self):
+        """
+       
+        :return: str()
+        """
+        
+        return self.product.ReferenceProduct.Parent.FullName
+
+    @property
+    def path(self):
+        """
+       
+        :return: str()
+        """
+        
+        fullname = self.full_name
+
+        if fullname.find("\\") > -1:
+            return fullname[:fullname.rfind("\\")]
+        else:
+            return None
 
     @property
     def nomenclature(self):
@@ -806,6 +829,13 @@ class Product:
         """
         return self.product.GetAllShapesNames(olistshape)
 
+    def count_children(self):
+         """
+
+        :return: int()
+        """
+        return self.product.Products.Count    
+    
     def get_children(self):
         """
 
@@ -820,6 +850,9 @@ class Product:
                 children.append(child)
 
         return children
+ 
+    def get_child(self, index):
+        return self.product.Products.Item(index)
 
     def get_default_shape_name(self):
         """
