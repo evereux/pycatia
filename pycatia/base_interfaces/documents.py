@@ -4,6 +4,8 @@ import os
 
 import warnings
 
+from pycatia.base_interfaces.document import Document
+
 
 class Documents:
     """
@@ -12,9 +14,9 @@ class Documents:
     Usage::
 
         >>> from pycatia.base_interfaces import CATIAApplication
-        >>> from pycatia.base_interfaces import Document
+        >>> from pycatia.base_interfaces import Documents
         >>> catia = CATIAApplication()
-        >>> documents = Document(catia.catia)
+        >>> documents = Documents(catia.catia)
 
     .. note::
         CAA V5 Visual Basic help
@@ -71,6 +73,55 @@ class Documents:
 
         self.documents.Add(document_type)
 
+    def count_types(self, file_type_list):
+        """
+        Returns the number of documents which presents special file extensions like:
+            'catpart', 'catdrawing', 'catproduct', 'catmaterial', 'catalog', 'catfct'
+
+
+        :param str (list) file_type_list: filetype(s) to count.
+        :return: int()
+        """
+
+        items = self.get_documents_name()
+
+        if not type(file_type_list) == list:
+            file_type_list = [elem.lower() for elem in [file_type_list]]
+        else:
+            file_type_list = [elem.lower() for elem in file_type_list]
+
+        return len([True for name in items for typ in file_type_list if name.lower().find(typ) > 0])
+
+    def get_documents(self):
+        """
+
+        Returns a list of Document COM objects.
+
+        :return list:
+        """
+
+        items = []
+
+        for index in range(1, self.documents.count):
+            items.append(self.documents.Item(index))
+
+        return items
+
+    def get_documents_names(self):
+        """
+
+        Returns a list of documents currently open in catia.
+
+        :return list:
+        """
+
+        names = []
+
+        for index in range(1, self.documents.count + 1):
+            names.append(self.documents.Item(index).Name)
+
+        return names
+
     def new_from(self, file_name):
         """
 
@@ -88,7 +139,7 @@ class Documents:
             |   The created document.
             | Example:
             | The following example creates a new Doc document from the contents of the FileToRead file.
-            |   FileToRead = "e:\\users\\psr\\Parts\\ThisIsANicePart.CATPart"
+            |   FileToRead = "e:\\\\users\\\\psr\\\\Parts\\\\ThisIsANicePart.CATPart"
             |   Dim Doc As Document
             |   Set Doc = Documents.NewFrom(FileToRead)
 
@@ -105,6 +156,86 @@ class Documents:
         file_name = os.path.abspath(file_name)
 
         return self.documents.NewFrom(file_name)
+
+    def item(self, index):
+        """
+
+        .. warning::
+
+            The index when not a string must be it's python index (indexs in python start from 0) from the Documents.get_documents()
+            collection. The visual basic index starts at 1.
+
+        .. note::
+            CAA V5 Visual Basic help
+
+                | Item
+                | o Func Item(CATVariant iIndex) As Document
+                |
+                | Returns a document using its index or its name from the documents
+                | collection.
+
+
+                | Parameters:
+                | iIndex
+                |    The index or the name of the document to retrieve frm
+                |    the collection of documents.
+                |    As a numerics, this index is the rank of the document
+                |    in the collection.
+                |    The index of the first document in the collection is 1, and
+                |    the index of the last document is Count.
+                |    As a string, it is the name you assigned to the document using
+                |    the
+                |
+                |  activateLinkAnchor('AnyObject','Name','AnyObject.Name')  property.
+                |    Returns:
+                |   The retrieved document
+
+
+                | Examples:
+                |
+                |
+                | This example retrieves in ThisDoc the fifth document
+                | in the collection and in ThatDoc the document
+                | named MyDoc.
+                |
+                | Dim ThisDoc As Document
+                | Set ThisDoc = Documents.Item(5)
+                | Dim ThatDoc As Document
+                | Set ThatDoc = Documents.Item("MyDoc")
+                |
+
+        :param int|str index:
+        :return Document COM object:
+        """
+
+        if isinstance(index, int):
+            index += 1
+
+        return self.documents.Item(index)
+
+    def num_open(self):
+        """
+        Returns the number of open documents.
+
+        .. warning::
+
+            The COM object can return the incorrect number of documents open. After a document is closed CATIA can keep
+            the linked document `ABQMaterialPropertiesCatalog.CATfct` open.
+
+        :return: int()
+        """
+
+        # for i in range(0, self.documents.Count):
+        #     print(self.documents.Item(i + 1).Name)
+
+        warning_string = (
+            'The COM object can return the incorrect number of documents open. \\n'
+            'For example, after a CATPart document is closed CATIA can keep'
+            'the linked document `ABQMaterialPropertiesCatalog.CATfct` loaded in the session.'
+        )
+
+        warnings.warn(warning_string)
+        return self.documents.Count
 
     def open(self, file_name):
         """
@@ -141,66 +272,45 @@ class Documents:
         file_name = os.path.abspath(file_name)
         self.documents.Open(file_name)
 
-    def item(self, index):
-        return self.documents.Item(index)
-
-    def get_documents(self):
-
-        items = []
-
-        for index in range(1, self.documents.count):
-            items.append(self.documents.Item(index))
-
-        return items
-
-    def get_documents_name(self):
-
-        names = []
-
-        for index in range(1, self.documents.count + 1):
-            names.append(self.documents.Item(index).Name)
-
-        return names
-
-    def count(self, file_typ_list):
+    def read(self, file_name):
         """
-        Returns the number of documents which presents special file extensions like:
-            'catpart', 'catdrawing', 'catproduct', 'catmaterial', 'catalog', 'catfct'
+        .. note::
+            CAA V5 Visual Basic help
+
+                | Read
+                | o Func Read(    CATBSTR    iFileName) As Document
+                |
+                | Reads a document stored in a file. This method has to be used only for
+                | Browse purpose, for instance to retrieve Product properties. Be
+                | careful, it doesn't open any editor (no visualization, no undo/redo
+                | capabilities...) As soon as you want to modify the V5 document, you
+                | have to use  the VB Open method collection. If this solution is not
+                | satisfactory because it opens an editor for every document, you have
+                | to move to C++ and use the CAA methods CATDocumentServices::Open and
+                | CATDocumentServices::SaveAs with the same file name as the initial
+                | one.
 
 
-        :param str (list) file_typ_list: filetyp(es) to count.
-        :return: int()
+                | Parameters:
+                | iFileName
+                |    The name of the file containing the document
+                |
+                |
+                |  Returns:
+                |   The retrieved document
+
+
+                | Examples:
+                |
+                |
+                | The following example reads the Doc document
+                | contained in the FileToOpen file.
+                |
+                | FileToOpen = "e:\\users\\psr\\Parts\\ThisIsANicePart.CATPart"
+                | Dim Doc As Document
+                | Set Doc = Documents.Read(FileToOpen)
+                |
+                |
+                |
         """
-
-        items = self.get_documents_name()
-
-        if not type(file_typ_list) == list:
-            file_typ_list = [elem.lower() for elem in [file_typ_list]]
-        else:
-            file_typ_list = [elem.lower() for elem in file_typ_list]
-
-        return len([True for name in items for typ in file_typ_list if name.lower().find(typ) > 0])
-        
-    def num_open(self):
-        """
-        Returns the number of open documents.
-
-        .. warning::
-
-            The COM object can return the incorrect number of documents open. After a document is closed CATIA can keep
-            the linked document `ABQMaterialPropertiesCatalog.CATfct` open.
-
-        :return: int()
-        """
-
-        # for i in range(0, self.documents.Count):
-        #     print(self.documents.Item(i + 1).Name)
-
-        warning_string = (
-            'The COM object can return the incorrect number of documents open. \n'
-            'For example, after a CATPart document is closed CATIA can keep'
-            'the linked document `ABQMaterialPropertiesCatalog.CATfct` loaded in the session.'
-        )
-
-        warnings.warn(warning_string)
-        return self.documents.Count
+        return self.documents.Read(file_name)
