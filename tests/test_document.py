@@ -7,6 +7,8 @@ import pytest
 
 from pycatia.base_interfaces import CATIAApplication
 from pycatia.base_interfaces import CATIADocHandler
+from pycatia.base_interfaces import Documents
+from pycatia.base_interfaces import Document
 from pycatia.hybrid_shape_interfaces import HybridShapeFactory
 
 now_string = datetime.now().strftime('%Y%m%d-%H%M%S')
@@ -15,22 +17,24 @@ cat_part = r'tests/CF_catia_measurable_part.CATPart'
 cat_product = r'tests/CF_TopLevelAssy.CATProduct'
 
 
-def test_no_such_file():
-    with pytest.raises(FileNotFoundError):
-        catia = CATIAApplication()
-        documents = catia.documents()
-        documents.open('lala')
+def test_activate_document():
+    catia = CATIAApplication()
+    documents = catia.documents()
+    documents.open(cat_part)
+    document_part = catia.document()
+    documents.open(cat_product)
+    document_product = catia.document()
 
+    assert document_part.name == os.path.basename(cat_part)
+    assert document_product.name == os.path.basename(cat_product)
 
-def test_open_document():
-    # This assertion has been removed as my version of CATIA keeps an open link to ABQMaterialPropertiesCatalog.CATfct
-    # once the document is closed. I don't know if this is a CATIA bug or `feature` to keep the linked item loaded.
-    # assert documents.documents.Count == 0
+    document_part.activate()
+    document = catia.document()
 
-    with CATIADocHandler(cat_part) as handler:
-        document = handler.document
-        assert document.name in cat_part
-        assert f'Document() name: {document.name}' == document.__repr__()
+    assert document.name == os.path.basename(cat_part)
+
+    document_part.close()
+    document_product.close()
 
 
 def test_add_documents():
@@ -51,22 +55,66 @@ def test_add_documents():
             pass
 
 
-def test_product():
+def test_count_types():
     with CATIADocHandler(cat_product) as handler:
-        document = handler.document
-        product = document.product()
-        assert product.name in cat_product
-        assert document.is_product
-        assert not document.is_part
+        documents = handler.documents
+
+        num = documents.count_types('.catpart')
+
+        assert num == 3
 
 
-def test_part():
+def test_export_document():
     with CATIADocHandler(cat_part) as handler:
         document = handler.document
-        part = document.part()
-        assert part.name in cat_part
-        assert document.is_part
-        assert not document.is_product
+
+        export_type = 'igs'
+        export_name = 'export_file'
+
+        path = os.path.dirname(os.path.abspath(cat_part))
+        export_name = os.path.join(path, export_name)
+
+        document.export_data(export_name, export_type)
+
+        assert os.path.isfile(f'{export_name}.igs')
+
+        os.remove(f'{export_name}.igs')
+
+
+def test_full_name():
+    """
+
+    TODO: make the assertion work whereever the respository is cloned to.
+
+    :return:
+    """
+    with CATIADocHandler(cat_part) as handler:
+        document = handler.document
+
+        assert r'pycatia\tests\CF_catia_measurable_part.CATPart' in \
+               document.full_name
+
+
+def test_get_documents():
+    with CATIADocHandler(cat_product) as handler:
+        documents = handler.documents
+
+        assert len(documents.get_documents()) == 5
+
+
+def test_get_documents_names():
+    with CATIADocHandler(cat_product) as handler:
+        documents = handler.documents
+
+        expected_names = [
+            'ABQMaterialPropertiesCatalog.CATfct',
+            'CF_TopLevelAssy.CATProduct',
+            'CF_Part_1.CATPart',
+            'CF_SubProduct1.CATProduct', 'CF_Part_2.CATPart',
+            'CF_SubProduct2.CATProduct'
+        ]
+
+        assert documents.get_documents_names() == expected_names
 
 
 def test_is_saved():
@@ -91,14 +139,71 @@ def test_is_saved():
         assert not document.is_saved
 
 
-def test_search_for_items():
+def test_item():
+    with CATIADocHandler(cat_product) as handler:
+        documents = handler.documents
+        document_to_get = 'CF_SubProduct2.CATProduct'
+        doc_com1 = documents.item(document_to_get)
+        doc_com2 = documents.item(1)
+
+        assert (doc_com1.Name == document_to_get) and (doc_com2.Name == 'CF_TopLevelAssy.CATProduct')
+
+
+def test_new_from():
+    catia = CATIAApplication()
+    documents = catia.documents()
+    document = documents.new_from(cat_part)
+
+    assert document.name is not os.path.basename(cat_part)
+
+    document.close()
+
+    with pytest.raises(FileNotFoundError):
+        documents.new_from('lala')
+
+
+def test_no_such_file():
+    with pytest.raises(FileNotFoundError):
+        catia = CATIAApplication()
+        documents = catia.documents()
+        documents.open('lala')
+
+
+def test_num_open():
+    with CATIADocHandler(cat_part) as handler:
+        documents = handler.documents
+        # see warning in documentation for num_open()
+
+        assert documents.num_open() == 2
+
+
+def test_open_document():
+    # This assertion has been removed as my version of CATIA keeps an open link to ABQMaterialPropertiesCatalog.CATfct
+    # once the document is closed. I don't know if this is a CATIA bug or `feature` to keep the linked item loaded.
+    # assert documents.documents.Count == 0
+
     with CATIADocHandler(cat_part) as handler:
         document = handler.document
+        assert document.name in cat_part
+        assert f'Document() name: {document.name}' == document.__repr__()
 
-        # search for all points
-        selection_items = document.search_for_items(document, ['Point', 'Line'])
 
-        assert len(selection_items) == 16
+def test_part():
+    with CATIADocHandler(cat_part) as handler:
+        document = handler.document
+        part = document.part()
+        assert part.name in cat_part
+        assert document.is_part
+        assert not document.is_product
+
+
+def test_product():
+    with CATIADocHandler(cat_product) as handler:
+        document = handler.document
+        product = document.product()
+        assert product.name in cat_product
+        assert document.is_product
+        assert not document.is_part
 
 
 def test_saving():
@@ -118,73 +223,11 @@ def test_saving():
     os.remove(new_filename)
 
 
-def test_activate_document():
-    catia = CATIAApplication()
-    documents = catia.documents()
-    documents.open(cat_part)
-    document_part = catia.document()
-    documents.open(cat_product)
-    document_product = catia.document()
-
-    assert document_part.name == os.path.basename(cat_part)
-    assert document_product.name == os.path.basename(cat_product)
-
-    document_part.activate()
-    document = catia.document()
-
-    assert document.name == os.path.basename(cat_part)
-
-    document_part.close()
-    document_product.close()
-
-
-def test_new_from():
-    catia = CATIAApplication()
-    documents = catia.documents()
-    document = documents.new_from(cat_part)
-
-    assert document.name is not os.path.basename(cat_part)
-
-    document.close()
-
-    with pytest.raises(FileNotFoundError):
-        documents.new_from('lala')
-
-
-def test_num_open():
-    with CATIADocHandler(cat_part) as handler:
-        documents = handler.documents
-        # see warning in documentation for num_open()
-
-        assert documents.num_open() == 2
-
-
-def test_full_name():
-    """
-
-    TODO: make the assertion work whereever the respository is cloned to.
-
-    :return:
-    """
+def test_search_for_items():
     with CATIADocHandler(cat_part) as handler:
         document = handler.document
 
-        assert r'pycatia\tests\CF_catia_measurable_part.CATPart' in \
-               document.full_name
+        # search for all points
+        selection_items = document.search_for_items(document, ['Point', 'Line'])
 
-
-def test_export_document():
-    with CATIADocHandler(cat_part) as handler:
-        document = handler.document
-
-        export_type = 'igs'
-        export_name = 'export_file'
-
-        path = os.path.dirname(os.path.abspath(cat_part))
-        export_name = os.path.join(path, export_name)
-
-        document.export_data(export_name, export_type)
-
-        assert os.path.isfile(f'{export_name}.igs')
-
-        os.remove(f'{export_name}.igs')
+        assert len(selection_items) == 16
