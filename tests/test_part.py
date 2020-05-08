@@ -5,26 +5,25 @@ import pytest
 from pycatia.base_interfaces import CATIAApplication
 from pycatia.base_interfaces import CATIADocHandler
 from pycatia.exception_handling import CATIAApplicationException
+from pycatia.part_interfaces import Part
 
 catia = CATIAApplication()
 cat_part = r'tests/CF_catia_measurable_part.CATPart'
 cat_part_not_updated = r'tests/CF_part_not_updated.CATPart'
+cat_product = r'tests/CF_TopLevelAssy.CATProduct'
 
 
-def test_repr():
+def test_activation():
     with CATIADocHandler(cat_part) as handler:
-        document = handler.document
-        part = document.part()
+        part = handler.document.part()
 
-        assert 'Part(name: CF_catia_measurable_part)' == part.__repr__()
+        item = part.find_object_by_name('Point.1')
 
+        assert not part.is_inactive(item)
 
-def test_density_of_part():
-    with CATIADocHandler(cat_part) as handler:
-        document = handler.document
-        part = document.part()
+        part.deactivate(item)
 
-        assert part.density == 8216.0
+        assert part.is_inactive(item)
 
 
 def test_annotation_sets():
@@ -35,6 +34,58 @@ def test_annotation_sets():
         annotation_sets = part.get_annotation_sets()
 
         assert annotation_sets.Item(1).name == 'Annotation Set.1'
+
+
+def test_create_geometrical_set():
+    with CATIADocHandler(cat_part) as handler:
+        document = handler.document
+        part = document.part()
+
+        geometrical_set = part.create_geometrical_set('lala')
+
+        assert geometrical_set.name == 'lala'
+
+
+def test_density_of_part():
+    with CATIADocHandler(cat_part) as handler:
+        document = handler.document
+        part = document.part()
+
+        assert part.density == 8216.0
+
+
+def test_find_object_by_name():
+    with CATIADocHandler(cat_part) as handler:
+        part = handler.document.part()
+
+        item = part.find_object_by_name('Extrude.1')
+
+        assert item.name == 'Extrude.1'
+
+
+def test_file_name():
+    with CATIADocHandler(cat_product) as handler:
+        document = handler.document
+        product = document.product()
+        products = product.get_products()
+
+        for product in products:
+            if product.is_catpart():
+                part = Part(product.product)
+                assert part.file_name == 'CF_Part_1.CATPart'
+
+
+def test_full_name():
+    with CATIADocHandler(cat_product) as handler:
+        document = handler.document
+        product = document.product()
+        products = product.get_products()
+
+        for product in products:
+            if product.is_catpart():
+                part = Part(product.product)
+                # todo: make test not specific to my test env
+                assert part.full_name == r'C:\Users\evereux\python\projects\pycatia\tests\CF_Part_1.CATPart'
 
 
 def test_get_axes_names():
@@ -120,16 +171,6 @@ def test_get_hybrid_by_name():
             assert hybrid_body.name == 'Arcs'
 
 
-def test_create_geometrical_set():
-    with CATIADocHandler(cat_part) as handler:
-        document = handler.document
-        part = document.part()
-
-        geometrical_set = part.create_geometrical_set('lala')
-
-        assert geometrical_set.name == 'lala'
-
-
 def test_is_updated():
     with CATIADocHandler(cat_part) as handler:
         part = handler.document.part()
@@ -153,23 +194,22 @@ def test_in_work_object():
         assert part.in_work_object.name == 'Planes'
 
 
-def test_find_object_by_name():
+def test_path():
+    with CATIADocHandler(cat_product) as handler:
+        document = handler.document
+        product = document.product()
+        products = product.get_products()
+
+        for product in products:
+            if product.is_catpart():
+                part = Part(product.product)
+                # todo: make test not specific to my test env
+                assert part.path == r'C:\Users\evereux\python\projects\pycatia\tests'
+
+
+def test_repr():
     with CATIADocHandler(cat_part) as handler:
-        part = handler.document.part()
+        document = handler.document
+        part = document.part()
 
-        item = part.find_object_by_name('Extrude.1')
-
-        assert item.name == 'Extrude.1'
-
-
-def test_activation():
-    with CATIADocHandler(cat_part) as handler:
-        part = handler.document.part()
-
-        item = part.find_object_by_name('Point.1')
-
-        assert not part.is_inactive(item)
-
-        part.deactivate(item)
-
-        assert part.is_inactive(item)
+        assert 'Part(name: CF_catia_measurable_part)' == part.__repr__()
