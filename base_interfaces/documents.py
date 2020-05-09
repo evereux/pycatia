@@ -163,7 +163,7 @@ class Documents:
         .. warning::
 
             The index when not a string must be it's python index (indexs in python start from 0) from the Documents.get_documents()
-            collection. The visual basic index starts at 1.
+            collection. The COM interface index starts at 1.
 
         .. note::
             CAA V5 Visual Basic help
