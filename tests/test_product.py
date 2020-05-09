@@ -47,6 +47,13 @@ def test_attributes():
         assert product.attributes() == attributes
 
 
+def test_count_children():
+    with CATIADocHandler(cat_product) as handler:
+        product = handler.document.product()
+
+        assert product.count_children() == 5
+
+
 def test_definition():
     with CATIADocHandler(cat_part) as handler:
         part_product = handler.document.product()
@@ -91,6 +98,20 @@ def test_file_name():
         part_product = handler.document.product()
 
         assert 'CF_catia_measurable_part.CATPart' == part_product.file_name
+
+
+def test_full_name():
+    with CATIADocHandler(cat_part) as handler:
+        part_product = handler.document.product()
+
+        assert r'C:\Users\evereux\python\projects\pycatia\tests\CF_catia_measurable_part.CATPart' == part_product.full_name
+
+
+def test_get_child():
+    with CATIADocHandler(cat_product) as handler:
+        product = handler.document.product()
+        child = product.get_child(0)
+        assert child.part_number == 'CF_SubProduct1'
 
 
 def test_get_products():
@@ -189,6 +210,13 @@ def test_part_number():
         part_product.part_number = 'new_part_number'
 
         assert 'new_part_number' == part_product.part_number
+
+
+def test_path():
+    with CATIADocHandler(cat_part) as handler:
+        part_product = handler.document.product()
+
+        assert r'C:\Users\evereux\python\projects\pycatia\tests' == part_product.path
 
 
 def test_position():
