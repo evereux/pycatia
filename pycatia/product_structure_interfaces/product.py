@@ -169,15 +169,6 @@ class Product:
         return Move(self.product)
 
     @property
-    def name(self):
-        """
-
-        :return: str()
-        """
-
-        return self.product.Name
- 
-    @property
     def file_name(self):
         """
 
@@ -185,15 +176,24 @@ class Product:
         """
 
         return self.product.ReferenceProduct.Parent.Name
- 
+
     @property
     def full_name(self):
         """
-       
+
         :return: str()
         """
-        
+
         return self.product.ReferenceProduct.Parent.FullName
+
+    @property
+    def name(self):
+        """
+
+        :return: str()
+        """
+
+        return self.product.Name
 
     @property
     def path(self):
@@ -201,7 +201,7 @@ class Product:
        
         :return: str()
         """
-        
+
         fullname = self.full_name
 
         if fullname.find("\\") > -1:
@@ -830,12 +830,25 @@ class Product:
         return self.product.GetAllShapesNames(olistshape)
 
     def count_children(self):
-         """
-
-        :return: int()
         """
-        return self.product.Products.Count    
-    
+
+       :return: int()
+       """
+
+        return self.product.Products.Count
+
+    def get_child(self, index):
+        """
+
+        .. warning::
+
+        The index MUST be it's python index (indexs in python start from 0) from the Documents.get_documents()
+        collection. The COM interface index starts at 1.
+
+        :return: Product()
+        """
+        return Product(self.product.Products.Item(index + 1))
+
     def get_children(self):
         """
 
@@ -850,9 +863,6 @@ class Product:
                 children.append(child)
 
         return children
- 
-    def get_child(self, index):
-        return self.product.Products.Item(index)
 
     def get_default_shape_name(self):
         """
