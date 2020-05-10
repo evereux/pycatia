@@ -233,4 +233,4 @@ class Parameter:
         return self.parameter.ValueAsString()
 
     def __repr__(self):
-        return "(Parameter) {}".format(self.name)
+        return f'Parameter() name={self.name}'
