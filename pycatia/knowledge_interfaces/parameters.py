@@ -44,14 +44,14 @@ class Parameters:
         :return: list(Parameter())
         """
 
-        parameter = list()
+        parameters = []
 
         if self.has_parameters():
             for i in range(self.parameters.Count):
                 para = Parameter(self.parameters.Item(i + 1))
-                parameter.append(para)
+                parameters.append(para)
 
-        return parameter
+        return parameters
 
     def create_boolean(self, name, value):
         """
@@ -331,7 +331,16 @@ class Parameters:
                 | collection:
                 |
                 | Set lastParameter = parameters.Item(parameters.Count)
+
+        .. warning::
+
+            The index MUST be it's python index (indexs in python start from 0) from the Documents.get_documents()
+            collection. The COM interface index starts at 1.
+
         """
+
+        if isinstance(index, int):
+            index += 1
 
         parameter = None
 
@@ -436,3 +445,6 @@ class Parameters:
                 | is created.
         """
         return ParameterSet(self.parameters.RootParameterSet)
+
+    def __repr__(self):
+        return 'Parameters()'

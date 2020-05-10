@@ -73,7 +73,7 @@ class Part:
             return fullname[:fullname.rfind("\\")]
         else:
             return None
- 
+
     @property
     def density(self):
         """
@@ -529,4 +529,4 @@ class Part:
         """
         :return: str
         """
-        return f'(Part) name: {self.name}, file_name: {self.file_name}'
+        return f'Part(name: {self.name}, file_name: {self.file_name})'

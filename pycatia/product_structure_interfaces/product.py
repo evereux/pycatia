@@ -1234,4 +1234,4 @@ class Product:
         return self.product.Update()
 
     def __repr__(self):
-        return f'(Product) part_number: {self.part_number}, file_name: {self.file_name}'
+        return f'Product(part_number="{self.part_number}", file_name="{self.file_name}")'
