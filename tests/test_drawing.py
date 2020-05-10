@@ -5,8 +5,7 @@ import pytest
 from pycatia.base_interfaces import CATIADocHandler
 from pycatia.drafting_interfaces import DrawingRoot
 from pycatia.exception_handling import CATIAApplicationException
-
-cat_drawing = r'tests/CF_Drawing1.CATDrawing'
+from tests.source_files import cat_drawing
 
 
 # todo: tests for parameters and relations

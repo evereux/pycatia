@@ -1,9 +1,9 @@
 #! /usr/bin/python3.6
 
 from pycatia.base_interfaces import CATIAApplication
+from tests.source_files import cat_part_measurable
 
 catia = CATIAApplication()
-cat_part = r'tests/CF_catia_measurable_part.CATPart'
 
 
 def test_application():
@@ -12,7 +12,7 @@ def test_application():
 
 def test_refresh():
     documents = catia.documents()
-    documents.open(cat_part)
+    documents.open(cat_part_measurable)
     document = catia.document()
 
     catia.refresh_display(state=False)
@@ -26,7 +26,7 @@ def test_refresh():
 
 def test_visible():
     documents = catia.documents()
-    documents.open(cat_part)
+    documents.open(cat_part_measurable)
     document = catia.document()
 
     catia.visible(state=False)
