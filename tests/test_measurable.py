@@ -9,8 +9,7 @@ from pycatia.base_interfaces import CATIADocHandler
 from pycatia.space_analyses_interfaces import create_measurable
 from pycatia.space_analyses_interfaces import CATIAMeasurable
 from pycatia.workbenches import create_spa_workbench
-
-measurable_part = 'tests\\CF_catia_measurable_part.CATPart'
+from tests.source_files import cat_part_measurable
 
 
 def round_tuple(tuple_object, decimal_places=6):
@@ -27,7 +26,7 @@ def round_tuple(tuple_object, decimal_places=6):
 
 
 def test_area():
-    with CATIADocHandler(measurable_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
 
         spa_workbench = create_spa_workbench(document.document)
@@ -47,7 +46,7 @@ def test_area():
 
 
 def test_geometry_name():
-    with CATIADocHandler(measurable_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
 
         spa_workbench = create_spa_workbench(document.document)
@@ -67,7 +66,7 @@ def test_geometry_name():
 
 
 def test_length():
-    with CATIADocHandler(measurable_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
 
         part = document.part()
@@ -86,7 +85,7 @@ def test_length():
 
 
 def test_perimeter():
-    with CATIADocHandler(measurable_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
 
         part = document.part()
@@ -104,7 +103,7 @@ def test_perimeter():
 
 
 def test_radius():
-    with CATIADocHandler(measurable_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
 
         part = document.part()
@@ -122,7 +121,7 @@ def test_radius():
 
 
 def test_angle_between():
-    with CATIADocHandler(measurable_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
 
         part = document.part()
@@ -148,7 +147,7 @@ def test_get_axis():
     :return:
     """
 
-    with CATIADocHandler(measurable_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         catia = handler.catia
         document = handler.document
         part = document.part()
@@ -169,7 +168,7 @@ def test_get_axis_system():
     """
     :return:
     """
-    with CATIADocHandler(measurable_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         catia = handler.catia
         document = handler.document
 
@@ -214,7 +213,7 @@ def test_get_axis_system():
 
 
 def test_get_direction():
-    with CATIADocHandler(measurable_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         catia = handler.catia
         document = handler.document
 
@@ -238,7 +237,7 @@ def test_get_direction():
 
 
 def test_get_minimum_distance():
-    with CATIADocHandler(measurable_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
 
         part = document.part()
@@ -261,7 +260,7 @@ def test_get_minimum_distance():
 
 
 def test_get_minimum_distance_points():
-    with CATIADocHandler(measurable_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         catia = handler.catia
         document = handler.document
 
@@ -294,7 +293,7 @@ def test_get_minimum_distance_points():
 
 
 def test_get_plane():
-    with CATIADocHandler(measurable_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         catia = handler.catia
         document = handler.document
 
@@ -325,7 +324,7 @@ def test_get_plane():
 
 
 def test_get_point():
-    with CATIADocHandler(measurable_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         catia = handler.catia
         document = handler.document
 
@@ -350,7 +349,7 @@ def test_get_point():
 
 
 def test_get_points_on_axis():
-    with CATIADocHandler(measurable_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         catia = handler.catia
         document = handler.document
 
@@ -381,7 +380,7 @@ def test_get_points_on_axis():
 
 
 def test_get_points_on_curve():
-    with CATIADocHandler(measurable_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         catia = handler.catia
         document = handler.document
 
@@ -412,7 +411,7 @@ def test_get_points_on_curve():
 
 
 def test_volume():
-    with CATIADocHandler(measurable_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
 
         spa_workbench = create_spa_workbench(document.document)
@@ -432,7 +431,7 @@ def test_volume():
 
 
 def test_centre_of_gravity():
-    with CATIADocHandler(measurable_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         catia = handler.catia
         document = handler.document
 
@@ -464,7 +463,7 @@ def test_get_hybrid_shapes_from_hybrid_body():
     :return:
     """
 
-    with CATIADocHandler(measurable_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
 
         part = document.part()
@@ -478,7 +477,7 @@ def test_get_hybrid_shapes_from_hybrid_body():
 
 
 def test_angle():
-    with CATIADocHandler(measurable_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
 
         part = document.part()
@@ -502,7 +501,7 @@ def test_center():
     :return:
     """
 
-    with CATIADocHandler(measurable_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         catia = handler.catia
         document = handler.document
 

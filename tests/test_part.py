@@ -6,15 +6,15 @@ from pycatia.base_interfaces import CATIAApplication
 from pycatia.base_interfaces import CATIADocHandler
 from pycatia.exception_handling import CATIAApplicationException
 from pycatia.part_interfaces import Part
+from tests.source_files import cat_part_measurable
+from tests.source_files import cat_product
+from tests.source_files import cat_part_not_updated
 
 catia = CATIAApplication()
-cat_part = r'tests/CF_catia_measurable_part.CATPart'
-cat_part_not_updated = r'tests/CF_part_not_updated.CATPart'
-cat_product = r'tests/CF_TopLevelAssy.CATProduct'
 
 
 def test_activation():
-    with CATIADocHandler(cat_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         part = handler.document.part()
 
         item = part.find_object_by_name('Point.1')
@@ -27,7 +27,7 @@ def test_activation():
 
 
 def test_annotation_sets():
-    with CATIADocHandler(cat_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
         part = document.part()
 
@@ -37,7 +37,7 @@ def test_annotation_sets():
 
 
 def test_create_geometrical_set():
-    with CATIADocHandler(cat_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
         part = document.part()
 
@@ -47,7 +47,7 @@ def test_create_geometrical_set():
 
 
 def test_density_of_part():
-    with CATIADocHandler(cat_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
         part = document.part()
 
@@ -55,7 +55,7 @@ def test_density_of_part():
 
 
 def test_find_object_by_name():
-    with CATIADocHandler(cat_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         part = handler.document.part()
 
         item = part.find_object_by_name('Extrude.1')
@@ -89,7 +89,7 @@ def test_full_name():
 
 
 def test_get_axes_names():
-    with CATIADocHandler(cat_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
         part = document.part()
 
@@ -100,7 +100,7 @@ def test_get_axes_names():
 
 
 def test_get_axis_by_name():
-    with CATIADocHandler(cat_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
         part = document.part()
 
@@ -114,7 +114,7 @@ def test_get_axis_by_name():
 
 
 def test_get_bodies_names():
-    with CATIADocHandler(cat_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
         part = document.part()
 
@@ -125,7 +125,7 @@ def test_get_bodies_names():
 
 
 def test_get_body_by_name():
-    with CATIADocHandler(cat_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
         part = document.part()
 
@@ -139,7 +139,7 @@ def test_get_body_by_name():
 
 
 def test_get_hybrid_bodies_names():
-    with CATIADocHandler(cat_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
         part = document.part()
 
@@ -157,7 +157,7 @@ def test_get_hybrid_bodies_names():
 
 
 def test_get_hybrid_by_name():
-    with CATIADocHandler(cat_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
         part = document.part()
 
@@ -172,7 +172,7 @@ def test_get_hybrid_by_name():
 
 
 def test_is_updated():
-    with CATIADocHandler(cat_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         part = handler.document.part()
 
         assert part.is_upated(part.part)
@@ -184,7 +184,7 @@ def test_is_updated():
 
 
 def test_in_work_object():
-    with CATIADocHandler(cat_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         part = handler.document.part()
 
         planes_hybrid_body = part.get_hybrid_body_by_name('Planes')
@@ -208,7 +208,7 @@ def test_path():
 
 
 def test_repr():
-    with CATIADocHandler(cat_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
         part = document.part()
 

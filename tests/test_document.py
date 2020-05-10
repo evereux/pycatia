@@ -10,28 +10,27 @@ from pycatia.base_interfaces import CATIADocHandler
 from pycatia.base_interfaces import Documents
 from pycatia.base_interfaces import Document
 from pycatia.hybrid_shape_interfaces import HybridShapeFactory
+from tests.source_files import cat_part_measurable
+from tests.source_files import cat_product
 
 now_string = datetime.now().strftime('%Y%m%d-%H%M%S')
-
-cat_part = r'tests/CF_catia_measurable_part.CATPart'
-cat_product = r'tests/CF_TopLevelAssy.CATProduct'
 
 
 def test_activate_document():
     catia = CATIAApplication()
     documents = catia.documents()
-    documents.open(cat_part)
+    documents.open(cat_part_measurable)
     document_part = catia.document()
     documents.open(cat_product)
     document_product = catia.document()
 
-    assert document_part.name == os.path.basename(cat_part)
+    assert document_part.name == os.path.basename(cat_part_measurable)
     assert document_product.name == os.path.basename(cat_product)
 
     document_part.activate()
     document = catia.document()
 
-    assert document.name == os.path.basename(cat_part)
+    assert document.name == os.path.basename(cat_part_measurable)
 
     document_part.close()
     document_product.close()
@@ -65,13 +64,13 @@ def test_count_types():
 
 
 def test_export_document():
-    with CATIADocHandler(cat_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
 
         export_type = 'igs'
         export_name = 'export_file'
 
-        path = os.path.dirname(os.path.abspath(cat_part))
+        path = os.path.dirname(os.path.abspath(cat_part_measurable))
         export_name = os.path.join(path, export_name)
 
         document.export_data(export_name, export_type)
@@ -88,7 +87,7 @@ def test_full_name():
 
     :return:
     """
-    with CATIADocHandler(cat_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
 
         assert r'pycatia\tests\CF_catia_measurable_part.CATPart' in \
@@ -118,7 +117,7 @@ def test_get_documents_names():
 
 
 def test_is_saved():
-    with CATIADocHandler(cat_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         catia = handler.catia
         document = handler.document
         assert document.is_saved
@@ -152,9 +151,9 @@ def test_item():
 def test_new_from():
     catia = CATIAApplication()
     documents = catia.documents()
-    document = documents.new_from(cat_part)
+    document = documents.new_from(cat_part_measurable)
 
-    assert document.name is not os.path.basename(cat_part)
+    assert document.name is not os.path.basename(cat_part_measurable)
 
     document.close()
 
@@ -170,7 +169,7 @@ def test_no_such_file():
 
 
 def test_num_open():
-    with CATIADocHandler(cat_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         documents = handler.documents
         # see warning in documentation for num_open()
 
@@ -182,17 +181,17 @@ def test_open_document():
     # once the document is closed. I don't know if this is a CATIA bug or `feature` to keep the linked item loaded.
     # assert documents.documents.Count == 0
 
-    with CATIADocHandler(cat_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
-        assert document.name in cat_part
+        assert document.name in cat_part_measurable
         assert f'Document() name: {document.name}' == document.__repr__()
 
 
 def test_part():
-    with CATIADocHandler(cat_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
         part = document.part()
-        assert part.name in cat_part
+        assert part.name in cat_part_measurable
         assert document.is_part
         assert not document.is_product
 
@@ -209,7 +208,7 @@ def test_product():
 def test_saving():
     new_filename = '__junk__/' + now_string + '.CATPart'
 
-    with CATIADocHandler(cat_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
 
         document.save_as(new_filename)
@@ -224,7 +223,7 @@ def test_saving():
 
 
 def test_search_for_items():
-    with CATIADocHandler(cat_part) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
 
         # search for all points
