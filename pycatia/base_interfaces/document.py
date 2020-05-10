@@ -315,4 +315,4 @@ class Document:
         return selected
 
     def __repr__(self):
-        return f'Document() name: {self.name}'
+        return f'Document(name: "{self.name})"'
