@@ -1,9 +1,11 @@
-#! /usr/bin/python3.7
+#! /usr/bin/python3.6
+
 from pycatia.knowledge_interfaces.parameter import Parameter
 
 
 class IntParam(Parameter):
     def __init__(self, name=None, value=None, parameter=None, parent=None):
+        super().__init__(parameter)
         if value and not isinstance(value, int):
             raise ValueError(f'Parameter value [{value}] has to be int()')
 
@@ -14,7 +16,8 @@ class IntParam(Parameter):
         else:
             self.parameter = Parameter(self.parameters.CreateInteger(name, value))
 
-    def set_parameters(self, parent):
+    @staticmethod
+    def set_parameters(parent):
         try:
             # if parent is <class "Parameters">
             return parent.parameters

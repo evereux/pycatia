@@ -1,4 +1,5 @@
-#! /usr/bin/python3.7
+#! /usr/bin/python3.6
+
 from pycatia.knowledge_interfaces.relation import Relation
 
 
@@ -41,9 +42,9 @@ class Formula(Relation):
     # def __init__(self, formula):
     #     self.formula = formula
 
-    def __init__(self, name=None, comment=None, output_parameter=None, formula_body=None,
-                 parent=None):
+    def __init__(self, relation, name=None, comment=None, output_parameter=None, formula_body=None, parent=None):
 
+        super().__init__(relation)
         if formula_body and not isinstance(formula_body, str):
             raise ValueError(f'Parameter formula_body [{formula_body}] has to be str()')
 
@@ -51,7 +52,8 @@ class Formula(Relation):
         self.formula = Relation(self.relations.CreateFormula(
             name, comment, output_parameter, formula_body))
 
-    def set_relations(self, parent):
+    @staticmethod
+    def set_relations(parent):
         try:
             # if parent is <class "Relations">
             return parent.relations

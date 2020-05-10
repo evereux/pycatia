@@ -1,4 +1,5 @@
-#! /usr/bin/python3.7
+#! /usr/bin/python3.6
+
 from pycatia.knowledge_interfaces import parameters
 from pycatia.knowledge_interfaces import parametersets
 

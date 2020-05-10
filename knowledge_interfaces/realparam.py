@@ -1,9 +1,11 @@
-#! /usr/bin/python3.7
+#! /usr/bin/python3.6
+
 from pycatia.knowledge_interfaces.parameter import Parameter
 
 
 class RealParam(Parameter):
     def __init__(self, name=None, value=None, parameter=None, parent=None):
+        super().__init__(parameter)
         if value and not isinstance(value, float):
             raise ValueError(f'Parameter value [{value}] has to be float()')
 
