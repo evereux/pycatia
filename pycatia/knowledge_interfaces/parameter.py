@@ -26,32 +26,6 @@ class Parameter:
         self.parameter = parameter
 
     @property
-    def name(self):
-        """
-
-        :return: str
-        """
-        return self.parameter.Name
-
-    def rename(self, new_name):
-        self.parameter.Rename(new_name)
-
-    @property
-    def formula_name(self):
-        if self.parameter.name.find("\\"):
-            return self.parameter.name.split("\\", 1)[1]
-
-        return self.parameter.name
-
-    @property
-    def value(self):
-        return self.parameter.Value
-
-    @value.setter
-    def value(self, value):
-        self.parameter.Value = value
-
-    @property
     def comment(self):
         """
 
@@ -77,15 +51,12 @@ class Parameter:
         """
         return self.parameter.Context
 
-    def isVisible(self):
-        """
+    @property
+    def formula_name(self):
+        if self.parameter.name.find("\\"):
+            return self.parameter.name.split("\\", 1)[1]
 
-        :return: bool
-        """
-        return not self.parameter.Hidden
-
-    def setVisible(self, state):
-        self.parameter.Hidden = not state
+        return self.parameter.name
 
     @property
     def is_true_parameter(self):
@@ -101,12 +72,6 @@ class Parameter:
                 | curves, surfaces).
         """
         return self.parameter.IsTrueParameter
-
-    def has_relation(self):
-        if self.parameter.OptionalRelation:
-            return True
-
-        return False
 
     @property
     def optional_relation(self):
@@ -133,8 +98,75 @@ class Parameter:
             return Relation(self.parameter.OptionalRelation)
 
     @property
+    def name(self):
+        """
+
+        :return: str
+        """
+        return self.parameter.Name
+
+    @property
     def read_only(self):
         return self.parameter.ReadOnly
+
+    @property
+    def type(self):
+        """
+        Returns the last element of parlament
+
+        | Example:
+        | Parameter.Name = Part.Name\\GeometricalSet\\SubGeometricalSet\\Element\\Radius
+        | Parameter.type = Radius
+        | EngineNom = Engine.Nomenclature
+
+        :return: str
+        """
+        if self.is_renamed():
+            return self.parameter.name00
+        else:
+            return self.parameter.name.rsplit("\\")[-1]
+
+    @property
+    def user_access_mode(self):
+        """
+        Returns the user access mode of the parameter:
+        0 - Read only parameter (cannot be destroyed).
+        1 - Read/write parameter (cannot be destroyed).
+        2 - User parameter (can be read, written and destroyed).
+        """
+        return self.parameter.UserAccessMode
+
+    @property
+    def value(self):
+        return self.parameter.Value
+
+    @value.setter
+    def value(self, value):
+        self.parameter.Value = value
+
+    def attributes(self):
+        """
+        Returns a string describing the parameter attributes.
+
+        :return: str
+        """
+
+        return ('(Parameter) Attributes... \n'
+                f'Name:                  {self.name}\n'
+                f'Type:                  {self.type}\n'
+                f'Class:                 {type(self)}\n'
+                f'Comment:               {self.comment}\n'
+                f'Context:               {self.context}\n'
+                f'Visible:               {self.isVisible()}\n'
+                f'Renamed:               {self.is_renamed()}\n'
+                f'Read only:             {self.read_only}\n'
+                f'Relation:              {self.has_relation()}')
+
+    def has_relation(self):
+        if self.parameter.OptionalRelation:
+            return True
+
+        return False
 
     def is_renamed(self):
         """
@@ -149,15 +181,18 @@ class Parameter:
         """
         return self.parameter.Renamed
 
-    @property
-    def user_access_mode(self):
+    def is_visible(self):
         """
-        Returns the user access mode of the parameter:
-        0 - Read only parameter (cannot be destroyed).
-        1 - Read/write parameter (cannot be destroyed).
-        2 - User parameter (can be read, written and destroyed).
+
+        :return: bool
         """
-        return self.parameter.UserAccessMode
+        return not self.parameter.Hidden
+
+    def rename(self, new_name):
+        self.parameter.Rename(new_name)
+
+    def set_visible(self, state):
+        self.parameter.Hidden = not state
 
     def valuate_from_string(self, i_value):
         """
@@ -195,41 +230,6 @@ class Parameter:
                 | Returns the value of the parameter as a string.
         """
         return self.parameter.ValueAsString()
-
-    @property
-    def type(self):
-        """
-        Returns the last element of parlament
-
-        | Example:
-        | Parameter.Name = Part.Name\\GeometricalSet\\SubGeometricalSet\\Element\\Radius
-        | Parameter.type = Radius
-        | EngineNom = Engine.Nomenclature
-
-        :return: str
-        """
-        if self.is_renamed():
-            return self.parameter.name00
-        else:
-            return self.parameter.name.rsplit("\\")[-1]
-
-    def attributes(self):
-        """
-        Returns a string describing the parameter attributes.
-
-        :return: str
-        """
-
-        return ('(Parameter) Attributes... \n'
-                f'Name:                  {self.name}\n'
-                f'Type:                  {self.type}\n'
-                f'Class:                 {type(self)}\n'
-                f'Comment:               {self.comment}\n'
-                f'Context:               {self.context}\n'
-                f'Visible:               {self.isVisible()}\n'
-                f'Renamed:               {self.is_renamed()}\n'
-                f'Read only:             {self.read_only}\n'
-                f'Relation:              {self.has_relation()}')
 
     def __repr__(self):
         return "(Parameter) {}".format(self.name)
