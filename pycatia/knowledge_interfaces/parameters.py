@@ -127,6 +127,7 @@ class Parameters:
                 | depth.ValuateFromString("300mm")
         """
         unit_types = ["LENGTH", "ANGLE"]
+        unit_type = unit_type.upper()
         if unit_type not in unit_types:
             raise ValueError(f'Dimension type must be in [{unit_types}]')
 
