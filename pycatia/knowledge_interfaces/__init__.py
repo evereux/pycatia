@@ -1,4 +1,4 @@
-#! /usr/bin/python3.7
+#! /usr/bin/python3.6
 
 from .parameter import Parameter
 from .parameters import Parameters

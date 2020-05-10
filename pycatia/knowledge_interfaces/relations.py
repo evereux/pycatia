@@ -1,4 +1,5 @@
 #! /usr/bin/python3.6
+
 from pywintypes import com_error
 from pycatia.exception_handling import CATIAApplicationException
 from pycatia.knowledge_interfaces import relation
@@ -69,123 +70,6 @@ class Relations:
     def count(self):
         return self.relations.Count
 
-    def item(self, index):
-        """
-        .. note::
-            CAA V5 Visual Basic help
-
-                | Item
-                | o Func Item(    CATVariant    iIndex) As Relation
-                |
-                | Retrieves a relation using its index or its name from the Relations
-                | collection.
-
-                | Parameters:
-                | iIndex
-                |    The index or the name of the relation to retrieve from
-                |    the collection of relations.
-                |    As a numerics, this index is the rank of the relation
-                |    in the collection.
-                |    The index of the first relation in the collection is 1, and
-                |    the index of the last relation is Count.
-                |    As a string, it is the name you assigned to the relation using
-                |    the
-                |
-                |  activateLinkAnchor('AnyObject','Name','AnyObject.Name')  property or when creating the relation.
-                |    Returns:
-                |   The retrieved relation
-
-                | Examples:
-                | This example retrieves the last relation in the relations
-                | collection.
-                |
-                | Dim lastRelation As Relation
-                | Set lastRelation = relations.Item(relations.Count)
-        """
-        return self.relations.Item(index)
-
-    def is_item(self, index):
-        """
-
-        :param str/int index: parametersets name or parameter number
-        :return: bool
-        """
-        try:
-            if self.relations.Item(index):
-                return True
-        except com_error:
-            return False
-
-    def get_item_by_index(self, index):
-        """
-
-        :param str/int index: parametersets name or parameter number
-        :return: item
-        """
-        if not self.is_item(index):
-            raise CATIAApplicationException(f'Could not find parameter name "{index}".')
-
-        return relation.Relation(self.relations.Item(index))
-
-    def get_items(self):
-        """
-        :return: list(Parameter())
-        """
-        sets = []
-
-        for i in range(self.relations.Count):
-            set = relation.Relation(self.relations.Item(i + 1))
-            sets.append(set)
-
-        return sets
-
-    def get_item_names(self):
-        """
-        :return: list
-        """
-
-        names = []
-
-        for i in range(self.relations.Count):
-            name = self.relations.Item(i + 1).name
-            names.append(name)
-
-        return names
-
-    def remove(self, index):
-        """
-        .. note::
-            CAA V5 Visual Basic help
-
-                | Remove
-                | o Sub Remove(    CATVariant    iIndex)
-                |
-                | Removes a relation from the Relations collection.
-
-                | Parameters:
-                | iIndex
-                |    The index or the name of the relation to remove from
-                |    the collection of relations.
-                |    As a numerics, this index is the rank of the relation
-                |    in the collection.
-                |    The index of the first relation in the collection is 1, and
-                |    the index of the last relation is Count.
-                |    As a string, it is the name you assigned to the relation using
-                |    the
-                |
-                |  activateLinkAnchor('AnyObject','Name','AnyObject.Name')  property or when creating the relation.
-
-                | Examples:
-                | This example removes the relation named density from
-                | the relations collection.
-                |
-                | relations.Remove("density")
-        """
-        if not self.is_item(index):
-            raise CATIAApplicationException(f'Could not find formula "{index}".')
-
-        return self.relations.Remove(index)
-
     def create_check(self, name, comment, check_formula):
         """
         .. note::
@@ -229,6 +113,50 @@ class Relations:
                 |                                            "mass<10kg")
         """
         return self.relations.CreateCheck(name, comment, check_formula)
+
+    def create_design_table(self, name, comment, copy_mode, sheet_path):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+                | CreateDesignTable
+                | o Func CreateDesignTable(    CATBSTR    iName,
+                |                              CATBSTR    iComment,
+                |                              boolean    iCopyMode,
+                |                              CATBSTR    iSheetPath) As DesignTable
+                |
+                | Creates a design table based on a file organized in an vertical way
+                | and adds it to the part's collection of relations.
+
+                | Parameters:
+                | iName
+                |     The design table name
+                |
+                |  iComment
+                |     A description of the design table
+                |
+                |  iCopyMode
+
+                |  Returns:
+                |   The created design table
+
+                | Examples:
+                | This example creates the dt design table
+                | and adds it to the newly created part:
+                |
+                | Dim CATDocs As Documents
+                | Set CATDocs = CATIA.Documents
+                | Dim partdoc As Document
+                | Set partdoc = CATDocs.Add("CATPart")
+                | Dim part As Part
+                | Set part = partdoc.Part
+                | Dim designtable As DesignTable
+                | Set designtable = part.Relations.CreateDesignTable("dt",
+                |                                                    "Mass is less than 10 kg",
+                |                                                    TRUE,
+                |                                                    "/users/client/data/sheet.txt")
+        """
+        return self.relations.CreateDesignTable(name, comment, copy_mode, sheet_path)
 
     def create_formula(self, name, comment, output_parameter, formula_body):
         """
@@ -277,50 +205,6 @@ class Relations:
                 |                                                "(height*width*depth)*density")
         """
         return self.relations.CreateFormula(name, comment, output_parameter, formula_body)
-
-    def create_design_table(self, name, comment, copy_mode, sheet_path):
-        """
-        .. note::
-            CAA V5 Visual Basic help
-
-                | CreateDesignTable
-                | o Func CreateDesignTable(    CATBSTR    iName,
-                |                              CATBSTR    iComment,
-                |                              boolean    iCopyMode,
-                |                              CATBSTR    iSheetPath) As DesignTable
-                |
-                | Creates a design table based on a file organized in an vertical way
-                | and adds it to the part's collection of relations.
-
-                | Parameters:
-                | iName
-                |     The design table name
-                |
-                |  iComment
-                |     A description of the design table
-                |
-                |  iCopyMode
-
-                |  Returns:
-                |   The created design table
-
-                | Examples:
-                | This example creates the dt design table
-                | and adds it to the newly created part:
-                |
-                | Dim CATDocs As Documents
-                | Set CATDocs = CATIA.Documents
-                | Dim partdoc As Document
-                | Set partdoc = CATDocs.Add("CATPart")
-                | Dim part As Part
-                | Set part = partdoc.Part
-                | Dim designtable As DesignTable
-                | Set designtable = part.Relations.CreateDesignTable("dt",
-                |                                                    "Mass is less than 10 kg",
-                |                                                    TRUE,
-                |                                                    "/users/client/data/sheet.txt")
-        """
-        return self.relations.CreateDesignTable(name, comment, copy_mode, sheet_path)
 
     def create_horizontal_design_table(self, name, comment, copy_mode, sheet_path):
         """
@@ -517,6 +401,89 @@ class Relations:
         """
         return self.relations.GenerateXMLReportForChecks(name)
 
+    def get_items(self):
+        """
+        :return: list(Parameter())
+        """
+        parm_sets = []
+
+        for i in range(self.relations.Count):
+            parm_set = relation.Relation(self.relations.Item(i + 1))
+            parm_sets.append(parm_set)
+
+        return parm_sets
+
+    def get_item_by_index(self, index):
+        """
+
+        :param str/int index: parametersets name or parameter number
+        :return: item
+        """
+        if not self.is_item(index):
+            raise CATIAApplicationException(f'Could not find parameter name "{index}".')
+
+        return relation.Relation(self.relations.Item(index))
+
+    def get_item_names(self):
+        """
+        :return: list
+        """
+
+        names = []
+
+        for i in range(self.relations.Count):
+            name = self.relations.Item(i + 1).name
+            names.append(name)
+
+        return names
+
+    def is_item(self, index):
+        """
+
+        :param str/int index: parametersets name or parameter number
+        :return: bool
+        """
+        try:
+            if self.relations.Item(index):
+                return True
+        except com_error:
+            return False
+
+    def item(self, index):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+                | Item
+                | o Func Item(    CATVariant    iIndex) As Relation
+                |
+                | Retrieves a relation using its index or its name from the Relations
+                | collection.
+
+                | Parameters:
+                | iIndex
+                |    The index or the name of the relation to retrieve from
+                |    the collection of relations.
+                |    As a numerics, this index is the rank of the relation
+                |    in the collection.
+                |    The index of the first relation in the collection is 1, and
+                |    the index of the last relation is Count.
+                |    As a string, it is the name you assigned to the relation using
+                |    the
+                |
+                |  activateLinkAnchor('AnyObject','Name','AnyObject.Name')  property or when creating the relation.
+                |    Returns:
+                |   The retrieved relation
+
+                | Examples:
+                | This example retrieves the last relation in the relations
+                | collection.
+                |
+                | Dim lastRelation As Relation
+                | Set lastRelation = relations.Item(relations.Count)
+        """
+        return self.relations.Item(index)
+
     def sub_list(self, feature, recursively):
         """
         .. note::
@@ -554,3 +521,37 @@ class Relations:
                 | Set Relations2 = Relations1.SubList(Pad1, TRUE)
         """
         return self.relations.SubList(feature, recursively)
+
+    def remove(self, index):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+                | Remove
+                | o Sub Remove(    CATVariant    iIndex)
+                |
+                | Removes a relation from the Relations collection.
+
+                | Parameters:
+                | iIndex
+                |    The index or the name of the relation to remove from
+                |    the collection of relations.
+                |    As a numerics, this index is the rank of the relation
+                |    in the collection.
+                |    The index of the first relation in the collection is 1, and
+                |    the index of the last relation is Count.
+                |    As a string, it is the name you assigned to the relation using
+                |    the
+                |
+                |  activateLinkAnchor('AnyObject','Name','AnyObject.Name')  property or when creating the relation.
+
+                | Examples:
+                | This example removes the relation named density from
+                | the relations collection.
+                |
+                | relations.Remove("density")
+        """
+        if not self.is_item(index):
+            raise CATIAApplicationException(f'Could not find formula "{index}".')
+
+        return self.relations.Remove(index)

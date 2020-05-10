@@ -1,4 +1,5 @@
-#! /usr/bin/python3.7
+#! /usr/bin/python3.6
+
 from pycatia.knowledge_interfaces.relation import Relation
 
 
@@ -157,7 +158,7 @@ class Parameter:
                 f'Class:                 {type(self)}\n'
                 f'Comment:               {self.comment}\n'
                 f'Context:               {self.context}\n'
-                f'Visible:               {self.isVisible()}\n'
+                f'Visible:               {self.is_visible()}\n'
                 f'Renamed:               {self.is_renamed()}\n'
                 f'Read only:             {self.read_only}\n'
                 f'Relation:              {self.has_relation()}')

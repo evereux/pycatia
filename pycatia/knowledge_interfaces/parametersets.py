@@ -1,22 +1,23 @@
-#! /usr/bin/python3.7
+#! /usr/bin/python3.6
+
 from pywintypes import com_error
 from pycatia.exception_handling import CATIAApplicationException
 from pycatia.knowledge_interfaces import parameterset
 
 
 class ParameterSets:
-    def __init__(self, parametersets):
-        self.parametersets = parametersets
+    def __init__(self, parameter_sets):
+        self.parameter_sets = parameter_sets
 
     @property
     def name(self):
-        return self.parametersets.Name
+        return self.parameter_sets.Name
 
     def count(self):
-        return self.parametersets.Count
+        return self.parameter_sets.Count
 
     def create_new_set(self, set_name):
-        return self.parametersets.CreateSet(set_name)
+        return self.parameter_sets.CreateSet(set_name)
 
     def is_item(self, index):
         """
@@ -25,7 +26,7 @@ class ParameterSets:
         :return: bool
         """
         try:
-            if self.parametersets.Item(index):
+            if self.parameter_sets.Item(index):
                 return True
         except com_error:
             return False
@@ -39,19 +40,19 @@ class ParameterSets:
         if not self.is_item(index):
             raise CATIAApplicationException(f'Could not find parameter name "{index}".')
 
-        return parameterset.ParameterSet(self.parametersets.Item(index))
+        return parameterset.ParameterSet(self.parameter_sets.Item(index))
 
     def get_items(self):
         """
         :return: list(Parameter())
         """
-        sets = []
+        parm_sets = []
 
-        for i in range(self.parametersets.Count):
-            set = parameterset.ParameterSet(self.parametersets.Item(i + 1))
-            sets.append(set)
+        for i in range(self.parameter_sets.Count):
+            parm_set = parameterset.ParameterSet(self.parameter_sets.Item(i + 1))
+            parm_sets.append(parm_set)
 
-        return sets
+        return parm_sets
 
     def get_item_names(self):
         """
@@ -60,8 +61,8 @@ class ParameterSets:
 
         names = []
 
-        for i in range(self.parametersets.Count):
-            name = self.parametersets.Item(i + 1).name
+        for i in range(self.parameter_sets.Count):
+            name = self.parameter_sets.Item(i + 1).name
             names.append(name)
 
         return names

@@ -1,4 +1,5 @@
-#! /usr/bin/python3.7
+#! /usr/bin/python3.6
+
 from pywintypes import com_error
 from pycatia.exception_handling import CATIAApplicationException
 from pycatia.knowledge_interfaces.parameter import Parameter
@@ -30,19 +31,6 @@ class Parameters:
     def __init__(self, parameters):
         self.parameters = parameters
 
-    def root_parameter_set(self):
-        """
-        .. note::
-            CAA V5 Visual Basic help
-
-                | RootParameterSet
-                | o Property RootParameterSet(    ) As ParameterSet
-                |
-                | Returns the root parameter set of a document. If it doesn't exist, it
-                | is created.
-        """
-        return ParameterSet(self.parameters.RootParameterSet)
-
     @property
     def name(self):
         """
@@ -50,118 +38,7 @@ class Parameters:
         """
         return self.parameters.Name
 
-    def is_parameter(self, index):
-        """
-
-        :param str/int index: parameter name or parameter number
-        :return: bool
-        """
-        try:
-            if self.parameters.Item(index):
-                return True
-        except com_error:
-            return False
-
-    def item(self, index):
-        """
-        .. note::
-            CAA V5 Visual Basic help
-
-                | Item
-                | o Func Item(    CATVariant    iIndex) As Parameter
-                |
-                | Retrieves a parameter  using its index or its name from the from the
-                | Parameters collection.
-
-                | Parameters:
-                | iIndex
-                |    The index or the name of the parameter to retrieve from
-                |    the collection of parameters.
-                |    As a numerics, this index is the rank of the parameter
-                |    in the collection.
-                |    The index of the first parameter in the collection is 1, and
-                |    the index of the last parameter is Count.
-                |    As a string, it is the name you assigned to the parameter using
-                |    the
-                |
-                |  activateLinkAnchor('AnyObject','Name','AnyObject.Name')  property or when
-                |  creating the parameter.
-
-                | Examples:
-                | This example retrieves the last parameter in the parameters
-                | collection:
-                |
-                | Set lastParameter = parameters.Item(parameters.Count)
-        """
-        if not self.is_parameter(index):
-            raise CATIAApplicationException(f'Could not find parameter name "{index}".')
-
-        if isinstance(self.parameters.Item(index).value, bool):
-            parameter = BoolParam(parameter=self.parameters.Item(index),
-                                  parent=self.parameters)
-
-        elif isinstance(self.parameters.Item(index).value, str):
-            parameter = StrParam(parameter=self.parameters.Item(index),
-                                 parent=self.parameters)
-
-        elif isinstance(self.parameters.Item(index).value, int):
-            parameter = IntParam(parameter=self.parameters.Item(index),
-                                 parent=self.parameters)
-
-        elif isinstance(self.parameters.Item(index).value, float):
-            parameter = RealParam(parameter=self.parameters.Item(index),
-                                  parent=self.parameters)
-
-        return parameter
-
-    def remove_item(self, index):
-        """
-        .. note::
-            CAA V5 Visual Basic help
-
-                | Remove
-                | o Sub Remove(CATVariant iIndex)
-                |
-                | Removes a parameter from the Parameters collection.
-
-                | Parameters:
-                | iIndex
-                |    The index or the name of the parameter to remove from
-                |    the collection of parameters.
-                |    As a numerics, this index is the rank of the parameter
-                |    in the collection.
-                |    The index of the first parameter in the collection is 1, and
-                |    the index of the last parameter is Count.
-                |    As a string, it is the name you assigned to the parameter using
-                |    the
-                |
-                |  activateLinkAnchor('AnyObject','Name','AnyObject.Name')  property or when
-                |  creating the parameter.
-
-                | Examples:
-                | This example removes the "depth" parameter from the parameters
-                | collection.
-                |
-                | parameters.Remove("depth")
-        """
-        return self.parameters.Remove(index)
-
-    def count_parameters(self):
-        """
-        :return: int
-        """
-        return self.parameters.Count
-
-    def has_parameters(self):
-        """
-        :return: bool
-        """
-        if self.parameters.Count > 0:
-            return True
-
-        return False
-
-    def all_parameter(self):
+    def all_parameters(self):
         """
 
         :return: list(Parameter())
@@ -287,6 +164,37 @@ class Parameters:
         """
         return IntParam(name, value, self.parameters)
 
+    def create_list(self, name):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+                | CreateList
+                | o Func CreateList(    CATBSTR    iName) As ListParameter
+                |
+                | Creates a list parameter and adds it to the part's collection of
+                | parameters.
+
+                | Parameters:
+                | iName
+                |     The parameter name
+
+                | Examples:
+                | This example creates the ListName list parameter
+                | and adds it to the newly created part:
+                |
+                | Set CATDocs = CATIA.Documents
+                | Set part1   = CATDocs.Add("CATPart")
+                | Set list1 = part1.Part.Parameters.CreateList ("ListName")
+        """
+        return self.parameters.CreateList(name)
+
+    def count_parameters(self):
+        """
+        :return: int
+        """
+        return self.parameters.Count
+
     def create_real(self, name, value):
         """
         .. note::
@@ -319,30 +227,17 @@ class Parameters:
         """
         return RealParam(name, value, self.parameters)
 
-    def create_list(self, name):
+    def create_set_of_parameters(self, parent):
         """
         .. note::
             CAA V5 Visual Basic help
 
-                | CreateList
-                | o Func CreateList(    CATBSTR    iName) As ListParameter
+                | CreateSetOfParameters
+                | o Sub CreateSetOfParameters(    AnyObject    iFather)
                 |
-                | Creates a list parameter and adds it to the part's collection of
-                | parameters.
-
-                | Parameters:
-                | iName
-                |     The parameter name
-
-                | Examples:
-                | This example creates the ListName list parameter
-                | and adds it to the newly created part:
-                |
-                | Set CATDocs = CATIA.Documents
-                | Set part1   = CATDocs.Add("CATPart")
-                | Set list1 = part1.Part.Parameters.CreateList ("ListName")
+                | Creates a set of parameters and appends it to argument iFather.
         """
-        return self.parameters.CreateList(name)
+        return self.parameters.CreateSetOfParameters(parent)
 
     def create_string(self, name, text):
         """
@@ -373,19 +268,7 @@ class Parameters:
         """
         return StrParam(name, text, self.parameters)
 
-    def create_set_of_parameters(self, parent):
-        """
-        .. note::
-            CAA V5 Visual Basic help
-
-                | CreateSetOfParameters
-                | o Sub CreateSetOfParameters(    AnyObject    iFather)
-                |
-                | Creates a set of parameters and appends it to argument iFather.
-        """
-        return self.parameters.CreateSetOfParameters(parent)
-
-    def get_name_to_use_in_relation(self, object):
+    def get_name_to_use_in_relation(self, i_object):
         """
         .. note::
             CAA V5 Visual Basic help
@@ -395,9 +278,85 @@ class Parameters:
                 |
                 | Returns a correct name of a feature to use it in a relation.
         """
-        return self.parameters.GetNameToUseInRelation(object.parameter)
+        return self.parameters.GetNameToUseInRelation(i_object.parameter)
 
-    def sub_list(self, object, recursively):
+    def has_parameters(self):
+        """
+        :return: bool
+        """
+        if self.parameters.Count > 0:
+            return True
+
+        return False
+
+    def is_parameter(self, index):
+        """
+
+        :param str/int index: parameter name or parameter number
+        :return: bool
+        """
+        try:
+            if self.parameters.Item(index):
+                return True
+        except com_error:
+            return False
+
+    def item(self, index):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+                | Item
+                | o Func Item(    CATVariant    iIndex) As Parameter
+                |
+                | Retrieves a parameter  using its index or its name from the from the
+                | Parameters collection.
+
+                | Parameters:
+                | iIndex
+                |    The index or the name of the parameter to retrieve from
+                |    the collection of parameters.
+                |    As a numerics, this index is the rank of the parameter
+                |    in the collection.
+                |    The index of the first parameter in the collection is 1, and
+                |    the index of the last parameter is Count.
+                |    As a string, it is the name you assigned to the parameter using
+                |    the
+                |
+                |  activateLinkAnchor('AnyObject','Name','AnyObject.Name')  property or when
+                |  creating the parameter.
+
+                | Examples:
+                | This example retrieves the last parameter in the parameters
+                | collection:
+                |
+                | Set lastParameter = parameters.Item(parameters.Count)
+        """
+
+        parameter = None
+
+        if not self.is_parameter(index):
+            raise CATIAApplicationException(f'Could not find parameter name "{index}".')
+
+        if isinstance(self.parameters.Item(index).value, bool):
+            parameter = BoolParam(parameter=self.parameters.Item(index),
+                                  parent=self.parameters)
+
+        elif isinstance(self.parameters.Item(index).value, str):
+            parameter = StrParam(parameter=self.parameters.Item(index),
+                                 parent=self.parameters)
+
+        elif isinstance(self.parameters.Item(index).value, int):
+            parameter = IntParam(parameter=self.parameters.Item(index),
+                                 parent=self.parameters)
+
+        elif isinstance(self.parameters.Item(index).value, float):
+            parameter = RealParam(parameter=self.parameters.Item(index),
+                                  parent=self.parameters)
+
+        return parameter
+
+    def sub_list(self, i_object, recursively):
         """
         .. note::
             CAA V5 Visual Basic help
@@ -431,4 +390,49 @@ class Parameters:
                 | # gets the collection of parameters that are under the pad Pad.1
                 | Set Parameters2 = Parameters1.SubList(Pad1,TRUE)
         """
-        return self.parameters.SubList(object, recursively)
+        return self.parameters.SubList(i_object, recursively)
+
+    def remove_item(self, index):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+                | Remove
+                | o Sub Remove(CATVariant iIndex)
+                |
+                | Removes a parameter from the Parameters collection.
+
+                | Parameters:
+                | iIndex
+                |    The index or the name of the parameter to remove from
+                |    the collection of parameters.
+                |    As a numerics, this index is the rank of the parameter
+                |    in the collection.
+                |    The index of the first parameter in the collection is 1, and
+                |    the index of the last parameter is Count.
+                |    As a string, it is the name you assigned to the parameter using
+                |    the
+                |
+                |  activateLinkAnchor('AnyObject','Name','AnyObject.Name')  property or when
+                |  creating the parameter.
+
+                | Examples:
+                | This example removes the "depth" parameter from the parameters
+                | collection.
+                |
+                | parameters.Remove("depth")
+        """
+        return self.parameters.Remove(index)
+
+    def root_parameter_set(self):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+                | RootParameterSet
+                | o Property RootParameterSet(    ) As ParameterSet
+                |
+                | Returns the root parameter set of a document. If it doesn't exist, it
+                | is created.
+        """
+        return ParameterSet(self.parameters.RootParameterSet)
