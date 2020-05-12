@@ -83,7 +83,7 @@ class Parameters:
                 | Dim chk As BooleanParam
                 | Set chk = part1.Part.Parameters.CreateBoolean("checked", False)
         """
-        return BoolParam(name, value, parent=self.parameters)
+        return BoolParam(self.parameters.CreateBoolean(name, value))
 
     def create_dimension(self, name, unit_type, value):
         """
