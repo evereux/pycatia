@@ -1,6 +1,6 @@
 #! /usr/bin/python3.6
 
-import os
+from pathlib import Path
 from pywintypes import com_error
 
 from pycatia.exception_handling import CATIAApplicationException
@@ -121,30 +121,7 @@ class Document:
         :return: str - full path document name
         """
 
-        return self.document.FullName
-
-    @property
-    def path(self):
-        """
-
-        .. note::
-            CAA V5 Visual Basic help
-
-            Property Path( ) As CATBSTR (Read Only)
-
-            | Returns the document's file path.
-            | Example:
-            | This example retrieves in DocPath the path where the Doc document is stored.
-            |     DocPath = Doc.Path
-            |
-            | The returned value is like this:
-            |     e:\\users\\psr\\Parts
-
-
-        :return: str - path to document
-        """
-
-        return self.document.Path
+        return str(self.path())
 
     def export_data(self, filename, filetype):
 
@@ -171,6 +148,24 @@ class Document:
         """
 
         self.document.ExportData(filename, filetype)
+
+    def path(self):
+        """
+
+        Returns the pathlib.Path() object of the document fullname.
+
+        example e:\\users\\psr\\Parts\\MyNicePart.CATPart
+        >>> Document.path().name
+        MyNicePart.CATPart
+        >>> Document.path().parent
+        e:\\users\\psr\\Parts\\
+        >>> Document.path().suffix
+        .CATPart
+
+        :return: Path()
+        """
+
+        return Path(self.document.FullName)
 
     def product(self):
         """
@@ -266,8 +261,8 @@ class Document:
         :param str file_name: full pathname to new file_name
         """
 
-        file_name = os.path.abspath(file_name)
-        if os.path.isfile(file_name):
+        file_name = Path(file_name)
+        if file_name.is_file():
             raise FileExistsError(f'File: {file_name} already exists.')
         self.document.SaveAs(file_name)
 
@@ -315,4 +310,4 @@ class Document:
         return selected
 
     def __repr__(self):
-        return f'Document(name: "{self.name})"'
+        return f'Document(name="{self.name}")'

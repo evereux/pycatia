@@ -1,5 +1,8 @@
 #! /usr/bin/python3.6
 
+import os
+from pathlib import Path
+
 from pycatia.base_interfaces import CATIADocHandler
 from pycatia.product_structure_interfaces import Product
 from tests.source_files import cat_product
@@ -96,14 +99,14 @@ def test_file_name():
     with CATIADocHandler(cat_part_measurable) as handler:
         part_product = handler.document.product()
 
-        assert 'CF_catia_measurable_part.CATPart' == part_product.file_name
+        assert cat_part_measurable.name == part_product.file_name
 
 
 def test_full_name():
     with CATIADocHandler(cat_part_measurable) as handler:
         part_product = handler.document.product()
 
-        assert r'C:\Users\evereux\python\projects\pycatia\tests\CF_catia_measurable_part.CATPart' == part_product.full_name
+        assert str(cat_part_measurable) == part_product.full_name
 
 
 def test_get_child():
@@ -118,7 +121,7 @@ def test_get_products():
         product = handler.document.product()
         products = product.get_products()
 
-        assert '(Product) part_number: CF_SubProduct1, file_name: CF_SubProduct1.CATProduct' == products[0].__repr__()
+        assert 'Product(part_number="CF_SubProduct1", file_name="CF_SubProduct1.CATProduct")' == products[0].__repr__()
 
 
 def test_has_children():
@@ -215,7 +218,9 @@ def test_path():
     with CATIADocHandler(cat_part_measurable) as handler:
         part_product = handler.document.product()
 
-        assert r'C:\Users\evereux\python\projects\pycatia\tests' == part_product.path
+        product_path = Path(os.getcwd(), cat_part_measurable)
+
+        assert product_path == part_product.path()
 
 
 def test_position():
@@ -375,5 +380,5 @@ def test_repr():
     with CATIADocHandler(cat_part_measurable) as handler:
         part = handler.document.product()
 
-        assert '(Product) part_number: CF_catia_measurable_part, file_name: CF_catia_measurable_part.CATPart' == \
+        assert 'Product(part_number="CF_catia_measurable_part", file_name="CF_catia_measurable_part.CATPart")' == \
                part.__repr__()

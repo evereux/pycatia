@@ -9,6 +9,7 @@ from pycatia.part_interfaces import Part
 from tests.source_files import cat_part_measurable
 from tests.source_files import cat_product
 from tests.source_files import cat_part_not_updated
+from tests.source_files import cat_part_1
 
 catia = CATIAApplication()
 
@@ -72,7 +73,7 @@ def test_file_name():
         for product in products:
             if product.is_catpart():
                 part = Part(product.product)
-                assert part.file_name == 'CF_Part_1.CATPart'
+                assert part.file_name == cat_part_1.name
 
 
 def test_full_name():
@@ -84,8 +85,7 @@ def test_full_name():
         for product in products:
             if product.is_catpart():
                 part = Part(product.product)
-                # todo: make test not specific to my test env
-                assert part.full_name == r'C:\Users\evereux\python\projects\pycatia\tests\CF_Part_1.CATPart'
+                assert part.full_name == str(cat_part_1)
 
 
 def test_get_axes_names():
@@ -203,8 +203,7 @@ def test_path():
         for product in products:
             if product.is_catpart():
                 part = Part(product.product)
-                # todo: make test not specific to my test env
-                assert part.path == r'C:\Users\evereux\python\projects\pycatia\tests'
+                assert part.path() == cat_part_1
 
 
 def test_repr():
@@ -212,4 +211,4 @@ def test_repr():
         document = handler.document
         part = document.part()
 
-        assert 'Part(name: CF_catia_measurable_part)' == part.__repr__()
+        assert 'Part(name="CF_catia_measurable_part")' == part.__repr__()
