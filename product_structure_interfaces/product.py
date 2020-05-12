@@ -1,5 +1,7 @@
 #! /usr/bin/python3.6
 
+from pathlib import Path
+
 from pycatia.product_structure_interfaces.analyze import Analyze
 from pycatia.base_interfaces.move import Move
 from pycatia.base_interfaces.position import Position
@@ -195,19 +197,23 @@ class Product:
 
         return self.product.Name
 
-    @property
     def path(self):
         """
        
-        :return: str()
+        Returns the pathlib.Path() object of the document fullname.
+
+        example e:\\users\\psr\\Parts\\MyNiceProduct.CATProduct
+        >>> Product.path().name
+        MyNiceProduct.CATProduct
+        >>> Product.path().parent
+        e:\\users\\psr\\Parts\\
+        >>> Product.path().suffix
+        .CATProduct
+
+        :return: Path()
         """
 
-        fullname = self.full_name
-
-        if fullname.find("\\") > -1:
-            return fullname[:fullname.rfind("\\")]
-        else:
-            return None
+        return Path(self.full_name)
 
     @property
     def nomenclature(self):

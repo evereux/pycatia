@@ -1,5 +1,6 @@
 #! /usr/bin/python3.6
 
+from pathlib import Path
 import warnings
 
 from pycatia.exception_handling import CATIAApplicationException
@@ -61,18 +62,6 @@ class Part:
             return self.part.ReferenceProduct.Parent.FullName
         except AttributeError:
             return self.part.Parent.FullName
-
-    @property
-    def path(self):
-        """
-        :return: str()
-        """
-        fullname = self.full_name
-
-        if fullname.find("\\") > -1:
-            return fullname[:fullname.rfind("\\")]
-        else:
-            return None
 
     @property
     def density(self):
@@ -505,6 +494,22 @@ class Part:
 
         return self.part.IsUpToDate(catia_object)
 
+    def path(self):
+        """
+
+        Returns the pathlib.Path() object of the document fullname.
+        example e:\\users\\psr\\Parts\\MyNicePart.CATPart
+        >>> Part.path().name
+        MyNicePart.CATPart
+        >>> Part.path().parent
+        e:\\users\\psr\\Parts\\
+        >>> Part.path().suffix
+        .CATPart
+
+        :return: Path()
+        """
+        return Path(self.full_name)
+
     def update(self):
         """
         Update the document.
@@ -529,4 +534,4 @@ class Part:
         """
         :return: str
         """
-        return f'Part(name: {self.name}, file_name: {self.file_name})'
+        return f'Part(name="{self.name}")'

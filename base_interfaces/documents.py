@@ -83,7 +83,7 @@ class Documents:
         :return: int()
         """
 
-        items = self.get_documents_name()
+        items = self.get_documents_names()
 
         if not type(file_type_list) == list:
             file_type_list = [elem.lower() for elem in [file_type_list]]
