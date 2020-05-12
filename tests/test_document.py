@@ -60,7 +60,7 @@ def test_count_types():
 
         num = documents.count_types('.catpart')
 
-        assert num == 3
+        assert num == 2
 
 
 def test_export_document():
@@ -183,15 +183,15 @@ def test_open_document():
 
     with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
-        assert document.name in cat_part_measurable
-        assert f'Document() name: {document.name}' == document.__repr__()
+        assert document.name == cat_part_measurable.name
+        assert f'Document(name="{document.name}")' == document.__repr__()
 
 
 def test_part():
     with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
         part = document.part()
-        assert part.name in cat_part_measurable
+        assert part.name == "CF_catia_measurable_part"
         assert document.is_part
         assert not document.is_product
 
@@ -200,13 +200,13 @@ def test_product():
     with CATIADocHandler(cat_product) as handler:
         document = handler.document
         product = document.product()
-        assert product.name in cat_product
+        assert product.name in cat_product.name
         assert document.is_product
         assert not document.is_part
 
 
 def test_saving():
-    new_filename = '__junk__/' + now_string + '.CATPart'
+    new_filename = os.path.join(os.getcwd(), '__junk__/', (now_string + '.CATPart'))
 
     with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
