@@ -106,6 +106,10 @@ class Parameter:
         """
         return self.parameter.Name
 
+    @name.setter
+    def name(self, name):
+        self.parameter.Rename(name)
+
     @property
     def read_only(self):
         return self.parameter.ReadOnly
@@ -190,6 +194,29 @@ class Parameter:
         return not self.parameter.Hidden
 
     def rename(self, new_name):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+                | Rename
+                | o Sub Rename( CATBSTR iName)
+                |
+                | Renames the parameter.
+                |
+                | Parameters:
+                | iName
+                |    The new name of the parameter.
+                |  If iName contains "Local:" prefix the rename will affect the local name.
+                |  If not, it will affect the global name.
+                |
+                | Examples:
+                |
+                | This example renames the param1 parameter
+                | to PartSeatbodyMinimumThickness:
+                |
+                | Call param1.Rename("PartSeatbodyMinimumThickness")
+            """
+
         self.parameter.Rename(new_name)
 
     def set_visible(self, state):
