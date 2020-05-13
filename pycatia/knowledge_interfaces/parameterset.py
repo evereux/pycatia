@@ -20,3 +20,6 @@ class ParameterSet:
 
     def root_parameter_sets(self):
         return parametersets.ParameterSets(self.parameterset.ParameterSets)
+
+    def __repr__(self):
+        return 'ParameterSet()'

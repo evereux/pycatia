@@ -38,6 +38,20 @@ class Parameters:
         """
         return self.parameters.Name
 
+    @property
+    def root_parameter_set(self):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+                | RootParameterSet
+                | o Property RootParameterSet(    ) As ParameterSet
+                |
+                | Returns the root parameter set of a document. If it doesn't exist, it
+                | is created.
+        """
+        return ParameterSet(self.parameters.RootParameterSet)
+
     def all_parameters(self):
         """
 
@@ -82,6 +96,9 @@ class Parameters:
                 | Set part1 = CATDocs.Add("CATPart")
                 | Dim chk As BooleanParam
                 | Set chk = part1.Part.Parameters.CreateBoolean("checked", False)
+
+        :param str name:
+        :param boolean value:
         """
         return BoolParam(self.parameters.CreateBoolean(name, value))
 
@@ -131,7 +148,7 @@ class Parameters:
         if unit_type not in unit_types:
             raise ValueError(f'Dimension type must be in [{unit_types}]')
 
-        return self.parameters.CreateDimension(name, unit_type, value)
+        return Parameter(self.parameters.CreateDimension(name, unit_type, value))
 
     def create_integer(self, name, value):
         """
@@ -162,8 +179,15 @@ class Parameters:
                 | Set part1   = CATDocs.Add("CATPart")
                 | Dim revision As IntParam
                 | Set revision = part1.Part.Parameters.CreateInteger ("RevisionRumber", 17)
+
+            :param str name:
+            :param int value:
         """
-        return IntParam(name, value, self.parameters)
+
+        if not isinstance(value, int):
+            raise ValueError(f'Value "{value}" must be int.')
+
+        return IntParam(self.parameters.CreateInteger(name, value))
 
     def create_list(self, name):
         """
@@ -188,7 +212,7 @@ class Parameters:
                 | Set part1   = CATDocs.Add("CATPart")
                 | Set list1 = part1.Part.Parameters.CreateList ("ListName")
         """
-        return self.parameters.CreateList(name)
+        return Parameter(self.parameters.CreateList(name))
 
     def count_parameters(self):
         """
@@ -225,8 +249,14 @@ class Parameters:
                 | Set part1   = CATDocs.Add("CATPart")
                 | Dim rate As RealParam
                 | Set rate = part1.Part.Parameters.CreateReal ("ReliabilityRate", 2.5 )
+
+        :param str name:
+        :param float value:
         """
-        return RealParam(name, value, self.parameters)
+
+        if not isinstance(value, float):
+            raise ValueError(f'Value "{value}" should be float.')
+        return RealParam(self.parameters.CreateReal(name, value))
 
     def create_set_of_parameters(self, parent):
         """
@@ -238,7 +268,7 @@ class Parameters:
                 |
                 | Creates a set of parameters and appends it to argument iFather.
         """
-        return self.parameters.CreateSetOfParameters(parent)
+        return ParameterSet(self.parameters.CreateSetOfParameters(parent.parameterset))
 
     def create_string(self, name, text):
         """
@@ -266,8 +296,14 @@ class Parameters:
                 | Set CATDocs = CATIA.Documents
                 | Set part1   = CATDocs.Add("CATPart")
                 | Set density = part1.Part.Parameters.CreateString ("responsible", "The Boss")
+
+        :param str name:
+        :param str text:
         """
-        return StrParam(name, text, self.parameters)
+        if not isinstance(text, str):
+            raise ValueError(f'Text "{text}" must be a string.')
+
+        return StrParam(self.parameters.CreateString(name, text))
 
     def get_name_to_use_in_relation(self, i_object):
         """
@@ -293,9 +329,18 @@ class Parameters:
     def is_parameter(self, index):
         """
 
+        .. warning::
+
+            The index when not a string must be it's python index (indexs in python start from 0).
+            collection. The COM interface index starts at 1.
+
         :param str/int index: parameter name or parameter number
         :return: bool
         """
+
+        if isinstance(index, int):
+            index += 1
+
         try:
             if self.parameters.Item(index):
                 return True
@@ -304,6 +349,12 @@ class Parameters:
 
     def item(self, index):
         """
+
+        .. warning::
+
+            The index when not a string must be it's python index (indexs in python start from 0).
+            collection. The COM interface index starts at 1.
+
         .. note::
             CAA V5 Visual Basic help
 
@@ -333,11 +384,6 @@ class Parameters:
                 |
                 | Set lastParameter = parameters.Item(parameters.Count)
 
-        .. warning::
-
-            The index MUST be it's python index (indexs in python start from 0) from the Documents.get_documents()
-            collection. The COM interface index starts at 1.
-
         """
 
         if isinstance(index, int):
@@ -349,20 +395,16 @@ class Parameters:
             raise CATIAApplicationException(f'Could not find parameter name "{index}".')
 
         if isinstance(self.parameters.Item(index).value, bool):
-            parameter = BoolParam(parameter=self.parameters.Item(index),
-                                  parent=self.parameters)
-
-        elif isinstance(self.parameters.Item(index).value, str):
-            parameter = StrParam(parameter=self.parameters.Item(index),
-                                 parent=self.parameters)
+            parameter = BoolParam(self.parameters.Item(index))
 
         elif isinstance(self.parameters.Item(index).value, int):
-            parameter = IntParam(parameter=self.parameters.Item(index),
-                                 parent=self.parameters)
+            parameter = IntParam(self.parameters.Item(index))
+
+        elif isinstance(self.parameters.Item(index).value, str):
+            parameter = StrParam(self.parameters.Item(index))
 
         elif isinstance(self.parameters.Item(index).value, float):
-            parameter = RealParam(parameter=self.parameters.Item(index),
-                                  parent=self.parameters)
+            parameter = RealParam(self.parameters.Item(index))
 
         return parameter
 
@@ -399,11 +441,22 @@ class Parameters:
                 | Dim Parameters2 As Parameters
                 | # gets the collection of parameters that are under the pad Pad.1
                 | Set Parameters2 = Parameters1.SubList(Pad1,TRUE)
+
+            :param i_object:
+            :param bool recursively:
         """
         return self.parameters.SubList(i_object, recursively)
 
     def remove_item(self, index):
+
         """
+
+        .. warning::
+
+            The index when not a string must be it's python index (indexs in python start from 0).
+            collection. The COM interface index starts at 1.
+
+
         .. note::
             CAA V5 Visual Basic help
 
@@ -432,20 +485,11 @@ class Parameters:
                 |
                 | parameters.Remove("depth")
         """
+
+        if isinstance(index, int):
+            index += 1
+
         return self.parameters.Remove(index)
-
-    def root_parameter_set(self):
-        """
-        .. note::
-            CAA V5 Visual Basic help
-
-                | RootParameterSet
-                | o Property RootParameterSet(    ) As ParameterSet
-                |
-                | Returns the root parameter set of a document. If it doesn't exist, it
-                | is created.
-        """
-        return ParameterSet(self.parameters.RootParameterSet)
 
     def __repr__(self):
         return 'Parameters()'
