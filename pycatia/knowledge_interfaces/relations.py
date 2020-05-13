@@ -2,7 +2,10 @@
 
 from pywintypes import com_error
 from pycatia.exception_handling import CATIAApplicationException
-from pycatia.knowledge_interfaces import relation
+from pycatia.knowledge_interfaces.design_table import DesignTable
+from pycatia.knowledge_interfaces.formula import Formula
+from pycatia.knowledge_interfaces.law import Law
+from pycatia.knowledge_interfaces.relation import Relation
 
 
 class Relations:
@@ -44,8 +47,8 @@ class Relations:
                 | Set relations = part.Relations
     """
 
-    def __init__(self, relations):
-        self.relations = relations
+    def __init__(self, relations_com_object):
+        self.relations = relations_com_object
 
     @property
     def optimizations(self):
@@ -111,10 +114,15 @@ class Relations:
                 | Set massCheck = part.Relations.CreateCheck("maximummass",
                 |                                            "Mass is less than 10 kg",
                 |                                            "mass<10kg")
+
+            :param str name:
+            :param str comment:
+            :param
         """
-        return self.relations.CreateCheck(name, comment, check_formula)
+        return Relation(self.relations.CreateCheck(name, comment, check_formula))
 
     def create_design_table(self, name, comment, copy_mode, sheet_path):
+
         """
         .. note::
             CAA V5 Visual Basic help
@@ -155,8 +163,14 @@ class Relations:
                 |                                                    "Mass is less than 10 kg",
                 |                                                    TRUE,
                 |                                                    "/users/client/data/sheet.txt")
+
+        :param str name:
+        :param str comment:
+        :param bool copy_mode:
+        :param Path() sheet_path:
+
         """
-        return self.relations.CreateDesignTable(name, comment, copy_mode, sheet_path)
+        return DesignTable(self.relations.CreateDesignTable(name, comment, copy_mode, sheet_path))
 
     def create_formula(self, name, comment, output_parameter, formula_body):
         """
@@ -203,8 +217,14 @@ class Relations:
                 |                                                "Computes the cuboid mass",
                 |                                                mass,
                 |                                                "(height*width*depth)*density")
+
+        :param str name:
+        :param str comment:
+        :param Parameter() output_parameter:
+        :param formula_body:
+
         """
-        return self.relations.CreateFormula(name, comment, output_parameter, formula_body)
+        return Formula(self.relations.CreateFormula(name, comment, output_parameter.parameter, formula_body))
 
     def create_horizontal_design_table(self, name, comment, copy_mode, sheet_path):
         """
@@ -248,8 +268,13 @@ class Relations:
                 |           "Mass is less than 10 kg",
                 |           TRUE,
                 |           "/users/client/data/horizontalsheet.txt")
+
+            :param str name:
+            :param str comment:
+            :param bool copy_mode:
+            :param Path() sheet_path:
         """
-        return self.relations.CreateHorizontalDesignTable(name, comment, copy_mode, sheet_path)
+        return DesignTable(self.relations.CreateHorizontalDesignTable(name, comment, copy_mode, sheet_path))
 
     def create_law(self, name, comment, law_body):
         """
@@ -277,7 +302,7 @@ class Relations:
                 |  Returns:
                 |   The created law
         """
-        return self.relations.CreateLaw(name, comment, law_body)
+        return Law(self.relations.CreateLaw(name, comment, law_body))
 
     def create_program(self, name, comment, program_body):
         """
@@ -321,7 +346,7 @@ class Relations:
                 |           "Select depth with respect to mass",
                 |           "if (mass>2kg) { depth=2mm } else { depth=1 mm }")
         """
-        return self.relations.CreateProgram(name, comment, program_body)
+        return Relation(self.relations.CreateProgram(name, comment, program_body))
 
     def create_rule_base(self, name):
         """
@@ -342,7 +367,7 @@ class Relations:
                 |    See also:
                 |   activateLinkAnchor('ExpertRuleBase','','ExpertRuleBase')
         """
-        return self.relations.CreateRuleBase(name)
+        return Relation(self.relations.CreateRuleBase(name))
 
     def create_set_of_equations(self, name, comment, formula_body):
         """
@@ -367,7 +392,7 @@ class Relations:
                 |  Returns:
                 |     The created set of equations
         """
-        return self.relations.CreateSetOfEquations(name, comment, formula_body)
+        return Relation(self.relations.CreateSetOfEquations(name, comment, formula_body))
 
     def create_set_of_relations(self, parent):
         """
@@ -408,7 +433,7 @@ class Relations:
         parm_sets = []
 
         for i in range(self.relations.Count):
-            parm_set = relation.Relation(self.relations.Item(i + 1))
+            parm_set = Relation(self.relations.Item(i + 1))
             parm_sets.append(parm_set)
 
         return parm_sets
@@ -422,7 +447,7 @@ class Relations:
         if not self.is_item(index):
             raise CATIAApplicationException(f'Could not find parameter name "{index}".')
 
-        return relation.Relation(self.relations.Item(index))
+        return Relation(self.relations.Item(index))
 
     def get_item_names(self):
         """
@@ -555,3 +580,6 @@ class Relations:
             raise CATIAApplicationException(f'Could not find formula "{index}".')
 
         return self.relations.Remove(index)
+
+    def __repr__(self):
+        return f'Relations()'

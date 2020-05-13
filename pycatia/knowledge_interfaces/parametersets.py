@@ -1,68 +1,82 @@
 #! /usr/bin/python3.6
-
-from pywintypes import com_error
-from pycatia.exception_handling import CATIAApplicationException
-from pycatia.knowledge_interfaces import parameterset
+# module initially auto generated using V5Automation.chm from CATIA V5 R25
 
 
 class ParameterSets:
-    def __init__(self, parameter_sets):
-        self.parameter_sets = parameter_sets
+    """
+        .. note::
+            CAA V5 Visual Basic help
 
-    @property
-    def name(self):
-        return self.parameter_sets.Name
+                | Represents a collection of parameter sets.The ParameterSet object is a
+                | neutral object that contains parameters, like the Parameters node in
+                | the specification tree.
+                |
+                | The following example shows how to retrieve it
+                | on a part:
+                | Dim CATDocs As Documents
+                | Set CATDocs = CATIA.Documents
+                | Dim part1 As Document
+                | Set part1 = CATDocs.Add("CATPart")
+                | Dim parameters1 As Parameters
+                | Set parameters1 = part1.Part.Parameters
+                | Dim ParameterSet1 As ParameterSet
+                | Set ParameterSet1 = parameters1.RootParameterSet
+                | Dim parameterSets1 As ParameterSets
+                | Set parameterSets1 = parameter.Set1.ParameterSets
+                |
+                | This collection is not a collection of all parameter sets of a document, but a collection of
+                | all parameter sets in the current parameter set.
 
-    def count(self):
-        return self.parameter_sets.Count
+    """
 
-    def create_new_set(self, set_name):
-        return self.parameter_sets.CreateSet(set_name)
+    def __init__(self, parametersets):
+        self.parametersets = parametersets
 
-    def is_item(self, index):
+    def create_set(self, i_name):
         """
+        .. note::
+            CAA V5 Visual Basic help
 
-        :param str/int index: parametersets name or parameter number
-        :return: bool
+                | CreateSet
+                | o Func CreateSet( CATBSTR iName) As ParameterSet
+                |
+                | Creates a set of parameters and appends it to the parameter set which
+                | corresponds to this collection.
         """
-        try:
-            if self.parameter_sets.Item(index):
-                return True
-        except com_error:
-            return False
+        return self.parametersets.CreateSet(i_name)
 
-    def get_item_by_index(self, index):
+    def item(self, i_index):
         """
+        .. note::
+            CAA V5 Visual Basic help
 
-        :param str/int index: parametersets name or parameter number
-        :return: item
+                | Item
+                | o Func Item( CATVariant iIndex) As ParameterSet
+                |
+                | Returns a parameter set using its index or its name from the
+                | ParameterSets collection.
+                |
+                | Parameters:
+                | iIndex
+                |    The index or the name of the parameter set to retrieve from
+                |    the collection of parameter sets.
+                |    As a numerics, this index is the rank of the parameter set
+                |    in the collection.
+                |    The index of the first parameter set in the collection is 1, and
+                |    the index of the last parameter set is Count.
+                |    As a string, it is the name you assigned to the parameter set using
+                |    the
+                |
+                |  activateLinkAnchor('AnyObject','Name','AnyObject.Name')  property .
+                |
+                | Examples:
+                | This example retrieves the parameter set named "Parameters.1" in the parameterSets
+                | collection:
+                |
+                | Set theSet = parameterSets.Item("Parameters.1")
+
         """
-        if not self.is_item(index):
-            raise CATIAApplicationException(f'Could not find parameter name "{index}".')
+        return self.parametersets.Item(i_index)
 
-        return parameterset.ParameterSet(self.parameter_sets.Item(index))
-
-    def get_items(self):
-        """
-        :return: list(Parameter())
-        """
-        parm_sets = []
-
-        for i in range(self.parameter_sets.Count):
-            parm_set = parameterset.ParameterSet(self.parameter_sets.Item(i + 1))
-            parm_sets.append(parm_set)
-
-        return parm_sets
-
-    def get_item_names(self):
-        """
-        :return: list
-        """
-
-        names = []
-
-        for i in range(self.parameter_sets.Count):
-            name = self.parameter_sets.Item(i + 1).name
-            names.append(name)
-
-        return names
+    def __repr__(self):
+        return f'ParameterSets()'

@@ -1,7 +1,9 @@
 #! /usr/bin/python3.6
 
+from .base_object import BaseKnowledge
 
-class Relation:
+
+class Relation(BaseKnowledge):
     """
         .. note::
             CAA V5 Visual Basic help
@@ -12,26 +14,8 @@ class Relation:
     """
 
     def __init__(self, relation):
+        super().__init__(relation)
         self.relation = relation
-
-    @property
-    def comment(self):
-        """
-        .. note::
-            CAA V5 Visual Basic help
-
-                | Comment
-                | o Property Comment(    ) As CATBSTR
-                |
-                | Returns or sets the comment associated with the relation. The comment
-                | explains the relation's purpose. It is passed as the second input
-                | argument of the relation creation methods of the
-                | activateLinkAnchor('Relations','','Relations')  collection.  Example:
-                | This example retrieves the maximummass relation comment and displays
-                | it in a message box:  relcomment = maximummass.Comment MsgBox
-                | "maximummass comment : " & relcomment
-        """
-        return self.relation.Comment
 
     @property
     def context(self):
@@ -101,6 +85,10 @@ class Relation:
                 | MsgBox "maximummass relation is defined as " & reldef
         """
         return self.relation.Value
+
+    @value.setter
+    def value(self, value):
+        self.relation.Value = value
 
     def get_in_parameter(self, index):
         """
@@ -179,3 +167,6 @@ class Relation:
                 |    The new relation name
         """
         return self.relation.Rename(name)
+
+    def __repr__(self):
+        return f'Relation(value="{self.value}")'

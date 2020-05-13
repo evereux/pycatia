@@ -1,13 +1,15 @@
 #! /usr/bin/python3.6
 
+from .boolparam import BoolParam
+from .design_table import DesignTable
+from .formula import Formula
+from .intparam import IntParam
+from .law import Law
 from .parameter import Parameter
 from .parameters import Parameters
 from .parameterset import ParameterSet
 from .parametersets import ParameterSets
-from .boolparam import BoolParam
-from .intparam import IntParam
 from .realparam import RealParam
-from .strparam import StrParam
-from .formula import Formula
-from .relations import Relations
 from .relation import Relation
+from .relations import Relations
+from .strparam import StrParam
