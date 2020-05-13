@@ -1,29 +1,48 @@
 #! /usr/bin/python3.6
+# module initially auto generated using V5Automation.chm from CATIA V5 R25
 
 from pycatia.knowledge_interfaces.parameter import Parameter
 
 
 class StrParam(Parameter):
-    def __init__(self, name=None, value=None, parameter=None, parent=None):
-        super().__init__(parameter)
-        if value and not isinstance(value, str):
-            raise ValueError(f'Parameter value [{value}] has to be str()')
+    """
+        .. note::
+            CAA V5 Visual Basic help
 
-        self.parameters = self.set_parameters(parent)
+                | Represents the string parameter.The following example shows how to
+                | create it:Dim CATDocs As Documents Set CATDocs = CATIA.Documents Dim
+                | part1 As Document Set part1   = CATDocs.Add("CATPart") Dim material As
+                | String Set material = part1.Parameters.CreateString("material",
+                | "glass")
 
-        if parameter:
-            self.parameter = parameter
-        else:
-            self.parameter = Parameter(self.parameters.CreateBoolean(name, value))
+    """
 
-    @staticmethod
-    def set_parameters(parent):
-        try:
-            # if parent is <class "Parameters">
-            return parent.parameters
-        except AttributeError:
-            # if parent is something like Catia.ActiveDocument.Part.Parameters
-            return parent
+    def __init__(self, com_string_parameter):
+        super().__init__(com_string_parameter)
+
+    @property
+    def value(self):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+                | Value
+                | o Property Value(    ) As CATBSTR
+                |
+                | Returns or sets the string parameter value.  Example:This example
+                | returns in myValue the value of the string parameter material:
+                | myValue = material.Value
+
+
+                | Parameters:
+
+
+        """
+        return self.parameter.Value
+
+    @value.setter
+    def value(self, value):
+        self.parameter.Value = value
 
     def get_enumerate_values(self, o_safe_array):
         """
@@ -31,18 +50,18 @@ class StrParam(Parameter):
             CAA V5 Visual Basic help
 
                 | GetEnumerateValues
-                | o Sub GetEnumerateValues(CATSafeArrayVariant oSafeArray)
+                | o Sub GetEnumerateValues(    CATSafeArrayVariant    oSafeArray)
                 |
                 | Returns an array containing the different values that the real param
-                | can take in the case of multiple values.
+                | can take in the case of multiple values.  Example: Dim enumValues ()
+                | as Variant ReDim enumValues (aStrParameter.GetEnumerateValuesSize() -
+                | 1) aStrParameter.GetEnumerateValues(enumValues) For i =
+                | LBound(enumValues) to UBound(enumValues)   ... Next
 
-                | Example:
-                | Dim enumValues() as Variant
-                | ReDim enumValues(aStrParameter.GetEnumerateValuesSize() - 1)
-                | aStrParameter.GetEnumerateValues(enumValues)
-                | For i = LBound(enumValues) to UBound(enumValues)
-                |     ...
-                | Next
+
+                | Parameters:
+
+
         """
         return self.parameter.GetEnumerateValues(o_safe_array)
 
@@ -52,9 +71,14 @@ class StrParam(Parameter):
             CAA V5 Visual Basic help
 
                 | GetEnumerateValuesSize
-                | o Func GetEnumerateValuesSize() As long
+                | o Func GetEnumerateValuesSize(    ) As long
                 |
                 | Returns the number of enumerate values.
+
+
+                | Parameters:
+
+
         """
         return self.parameter.GetEnumerateValuesSize()
 
@@ -64,13 +88,17 @@ class StrParam(Parameter):
             CAA V5 Visual Basic help
 
                 | SetEnumerateValues
-                | o Sub SetEnumerateValues(CATSafeArrayVariant iSafeArray)
+                | o Sub SetEnumerateValues(    CATSafeArrayVariant    iSafeArray)
                 |
                 | Sets an array containing the different values that the StrParam object
                 | can take in the case of multiple values.
 
+
                 | Parameters:
-                | The array of enumerated values.
+                | The
+                |  array of enumerated values.
+
+
         """
         return self.parameter.SetEnumerateValues(i_safe_array)
 
@@ -80,8 +108,16 @@ class StrParam(Parameter):
             CAA V5 Visual Basic help
 
                 | SuppressEnumerateValues
-                | o Sub SuppressEnumerateValues()
+                | o Sub SuppressEnumerateValues(    )
                 |
                 | Resets the status of the object to a single value object.
+
+
+                | Parameters:
+
+
         """
         return self.parameter.SuppressEnumerateValues()
+
+    def __repr__(self):
+        return f'StrParam(name="{self.name}". value="{self.value}")'

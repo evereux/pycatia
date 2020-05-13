@@ -1,73 +1,280 @@
 #! /usr/bin/python3.6
+# module initially auto generated using V5Automation.chm from CATIA V5 R25
 
 from pycatia.knowledge_interfaces.parameter import Parameter
 
 
 class RealParam(Parameter):
-    def __init__(self, name=None, value=None, parameter=None, parent=None):
-        super().__init__(parameter)
-        if value and not isinstance(value, float):
-            raise ValueError(f'Parameter value [{value}] has to be float()')
+    """
+        .. note::
+            CAA V5 Visual Basic help
 
-        self.parameters = self.set_parameters(parent)
+                | Represents the real parameter.The following example shows how to
+                | create it:Dim CATDocs As Documents  Set CATDocs = CATIA.Documents  Dim
+                | part1 As Document  Set part1   = CATDocs.Add("CATPart")  Dim density
+                | As RealParam  Set density =
+                | part1.Part.Parameters.CreateReal("density", 2.5)The real parameter is
+                | the base object for dimensions.
 
-        if parameter:
-            self.parameter = parameter
-        else:
-            self.parameter = Parameter(self.parameters.CreateBoolean(name, value))
+    """
 
-    def set_parameters(self, parent):
-        try:
-            # if parent is <class "Parameters">
-            return parent.parameters
-        except AttributeError:
-            # if parent is something like Catia.ActiveDocument.Part.Parameters
-            return parent
+    def __init__(self, com_real_parameter):
+        super().__init__(com_real_parameter)
 
     @property
-    def max_tolerance(self):
+    def maximum_tolerance(self):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+                | MaximumTolerance
+                | o Property MaximumTolerance(    ) As double
+                |
+                | Returns or sets the value of the maximum tolerance of a parameter.
+                | Units are expressed in the IS unit system.  Example: This example sets
+                | the MaximumTolerance value to 0 if its value is bigger than 0:  If
+                | (Length.MaximumTolerance < 0.0)  Then     Length.MaximumTolerance =
+                | 0.0 End If
+
+
+                | Parameters:
+
+
+        """
         return self.parameter.MaximumTolerance
 
-    @max_tolerance.setter
-    def max_tolerance(self, max_tolerance):
-        self.parameter.MaximumTolerance = max_tolerance
-
     @property
-    def min_tolerance(self):
-        return self.parameter.MinimumTolerance
+    def minimum_tolerance(self):
+        """
+        .. note::
+            CAA V5 Visual Basic help
 
-    @min_tolerance.setter
-    def min_tolerance(self, min_tolerance):
-        self.parameter.MinimumTolerance = min_tolerance
+                | MinimumTolerance
+                | o Property MinimumTolerance(    ) As double
+                |
+                | Returns or sets the value of the minimum tolerance of a parameter.
+                | Units are expressed in the IS unit system.  Example: This example sets
+                | the MinumumTolerance value to 0 if its value is bigger than 0:  If
+                | (Length.MinimumTolerance > 0.0)  Then     Length.MinimumTolerance =
+                | 0.0 End If
+
+
+                | Parameters:
+
+
+        """
+        return self.parameter.MinimumTolerance
 
     @property
     def range_max(self):
-        return self.parameter.RangeMax
+        """
+        .. note::
+            CAA V5 Visual Basic help
 
-    @range_max.setter
-    def range_max(self, range_max):
-        self.parameter.RangeMax = range_max
+                | RangeMax
+                | o Property RangeMax(    ) As double
+                |
+                | Returns or sets the value of the upper bound that the parameter object
+                | value can take.  Example: This example sets the RangeMax value to 0 if
+                | its value is smaller than 0:  If (Length.RangeMax < 0.0 and
+                | Length.RangeMaxValidity <> 0)  Then     Length.RangeMax = 0.0 End If
+
+
+                | Parameters:
+
+
+        """
+        return self.parameter.RangeMax
 
     @property
     def range_max_validity(self):
-        return self.parameters.RangeMaxValidity
+        """
+        .. note::
+            CAA V5 Visual Basic help
 
-    @range_max_validity.setter
-    def range_max_validity(self, range_max_validity):
-        self.parameters.RangeMaxValidity = range_max_validity
+                | RangeMaxValidity
+                | o Property RangeMaxValidity(    ) As long
+                |
+                | Returns or sets the type of the upper bound of the parameter. 0the
+                | upper bound is meaningless 1the upper bound can be reached 2the upper
+                | bound cannot be reached
+
+
+                | Parameters:
+
+
+        """
+        return self.parameter.RangeMaxValidity
 
     @property
     def range_min(self):
-        return self.parameter.RangeMin
+        """
+        .. note::
+            CAA V5 Visual Basic help
 
-    @range_min.setter
-    def range_min(self, range_min):
-        self.parameter.RangeMin = range_min
+                | RangeMin
+                | o Property RangeMin(    ) As double
+                |
+                | Returns or sets the value of the lower bound that the parameter object
+                | value can take.  Example: This example sets the RangeMin value to 0 if
+                | its value is bigger than 0:  If (Length.RangeMin > 0.0 and
+                | Length.RangeMinValidity <> 0)  Then     Length.RangeMin = 0.0 End If
+
+
+                | Parameters:
+
+
+        """
+        return self.parameter.RangeMin
 
     @property
     def range_min_validity(self):
-        return self.parameters.RangeMinValidity
+        """
+        .. note::
+            CAA V5 Visual Basic help
 
-    @range_min_validity.setter
-    def range_min_validity(self, range_min_validity):
-        self.parameters.RangeMinValidity = range_min_validity
+                | RangeMinValidity
+                | o Property RangeMinValidity(    ) As long
+                |
+                | Returns or sets the type of the lower bound of the parameter. 0the
+                | lower bound is meaningless 1the lower bound can be reached 2the lower
+                | bound cannot be reached
+
+
+                | Parameters:
+
+
+        """
+        return self.parameter.RangeMinValidity
+
+    @property
+    def value(self):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+                | Value
+                | o Property Value(    ) As double
+                |
+                | Returns or sets the value of the real parameter. Units are expressed
+                | in the IS unit system, except for lengthes expressed in millimeters,
+                | and angles expressed in decimal degrees.  Example: This example sets
+                | the density value to 1 if its value is greater than 2.5:  If
+                | (density.Value > 2.5)  Then     density.Value = 1 End If
+
+
+                | Parameters:
+
+
+        """
+        return self.parameter.Value
+
+    @value.setter
+    def value(self, value):
+        self.parameter.Value = value
+
+    def get_enumerate_values(self, o_safe_array):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+                | GetEnumerateValues
+                | o Sub GetEnumerateValues(    CATSafeArrayVariant    oSafeArray)
+                |
+                | Returns an array containing the different values that the real param
+                | can take in the case of multiple values.  Example: Dim enumValues ()
+                | as Variant ReDim enumValues (aRealParameter.GetEnumerateValuesSize() -
+                | 1) aRealParameter.GetEnumerateValues(enumValues) For i =
+                | LBound(enumValues) to UBound(enumValues)   ... Next
+
+
+                | Parameters:
+
+
+        """
+        return self.parameter.GetEnumerateValues(o_safe_array)
+
+    def get_enumerate_values_size(self):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+                | GetEnumerateValuesSize
+                | o Func GetEnumerateValuesSize(    ) As long
+                |
+                | Returns the number of enumerate values.
+
+
+                | Parameters:
+
+
+        """
+        return self.parameter.GetEnumerateValuesSize()
+
+    def is_equal_to(self, i_value_to_compare):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+                | IsEqualTo
+                | o Func IsEqualTo(    double    iValueToCompare) As boolean
+                |
+                | Tests the equality of the parameter value with a given value.
+
+
+                | Parameters:
+                | iValueToCompare
+                |    The value to compare the parameter value with
+                |
+                |
+                |  Returns:
+                |
+                | True
+                | If the current value of the parameter (the one get by the get_Value property, for dimensions
+                |  notice that it is not the MKS value) is equal to the one given in argument.
+                |  Notice that two values are considered as equal if their difference is insignificant faced with the
+                |  two compared values. This method allows you to avoid problems due to computation errors.
+                | False
+                | If the two values are different.
+
+
+        """
+        return self.parameter.IsEqualTo(i_value_to_compare)
+
+    def set_enumerate_values(self, i_safe_array):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+                | SetEnumerateValues
+                | o Sub SetEnumerateValues(    CATSafeArrayVariant    iSafeArray)
+                |
+                | Sets an array containing the different values that the real param can
+                | take in the case of multiple values.
+
+
+                | Parameters:
+
+
+        """
+        return self.parameter.SetEnumerateValues(i_safe_array)
+
+    def suppress_enumerate_values(self):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+                | SuppressEnumerateValues
+                | o Sub SuppressEnumerateValues(    )
+                |
+                | Resets the status of the object to a single value object.
+
+
+                | Parameters:
+
+
+        """
+        return self.parameter.SuppressEnumerateValues()
+
+    def __repr__(self):
+        return f'RealParam(name="{self.name}". value="{self.value}")'
