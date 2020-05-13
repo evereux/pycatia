@@ -14,3 +14,5 @@ cat_part_measurable = Path(os.getcwd(), r"tests/CF_catia_measurable_part.CATPart
 cat_part_not_updated = Path(os.getcwd(), r"tests/CF_part_not_updated.CATPart")
 
 cat_drawing = Path(os.getcwd(), r"tests/CF_Drawing1.CATDrawing")
+
+design_table_1 = Path(os.getcwd(), r"tests/design_table_1.txt")
