@@ -28,8 +28,8 @@ class Parameters:
                 | Set parameterList = part1.Part.Parameters
     """
 
-    def __init__(self, parameters):
-        self.parameters = parameters
+    def __init__(self, parameters_com_object):
+        self.parameters = parameters_com_object
 
     @property
     def name(self):
@@ -104,6 +104,11 @@ class Parameters:
 
     def create_dimension(self, name, unit_type, value):
         """
+
+        .. warning::
+            The documentation below isn't quite right. There are many more dimension
+            types available other than "LENGTH" and "ANGLE".
+
         .. note::
             CAA V5 Visual Basic help
 
@@ -142,13 +147,13 @@ class Parameters:
                 | Dim depth As Dimension
                 | Set depth = parameters.CreateDimension("depth", "LENGTH", 20)
                 | depth.ValuateFromString("300mm")
-        """
-        unit_types = ["LENGTH", "ANGLE"]
-        unit_type = unit_type.upper()
-        if unit_type not in unit_types:
-            raise ValueError(f'Dimension type must be in [{unit_types}]')
 
-        return Parameter(self.parameters.CreateDimension(name, unit_type, value))
+
+        """
+        try:
+            return Parameter(self.parameters.CreateDimension(name, unit_type, value))
+        except com_error:
+            raise ValueError(f'Dimension type not allowed.')
 
     def create_integer(self, name, value):
         """
