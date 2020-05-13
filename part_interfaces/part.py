@@ -510,6 +510,12 @@ class Part:
         """
         return Path(self.full_name)
 
+    def parameters_com_obj(self):
+        return self.part.Parameters
+
+    def relations_com_obj(self):
+        return self.part.Relations
+
     def update(self):
         """
         Update the document.
