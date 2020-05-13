@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.1
+* Added knowledge_ware parameter features.
+* Object.path() now returns pathlib.Path() objects.
+* 
+
 ## 0.1.9
 * Updated setup.py due to pypi builds not scanning pycatia folder recursively.
 
