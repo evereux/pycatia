@@ -3,7 +3,7 @@
 from pathlib import Path
 import warnings
 
-from pycatia.base_interfaces.base_object import AnyObject
+from pycatia.system_interfaces.base_object import AnyObject
 from pycatia.exception_handling import CATIAApplicationException
 
 geometrical_feature_type = [
