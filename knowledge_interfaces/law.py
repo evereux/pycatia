@@ -1,10 +1,10 @@
 #! /usr/bin/python3.6
 # module initially auto generated using V5Automation.chm from CATIA V5 R25
 
-from .base_object import BaseKnowledge
+from .relation import Relation
 
 
-class Law(BaseKnowledge):
+class Law(Relation):
     """
         .. note::
             CAA V5 Visual Basic help
@@ -58,3 +58,6 @@ class Law(BaseKnowledge):
 
         """
         return self.law.RemoveFormalParameter(i_name)
+
+    def __repr__(self):
+        return f'Law(name="{self.name}")'

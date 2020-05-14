@@ -2,10 +2,10 @@
 # module initially auto generated using V5Automation.chm from CATIA V5 R25
 
 
-from .base_object import BaseKnowledge
+from .relation import Relation
 
 
-class Formula(BaseKnowledge):
+class Formula(Relation):
     """
         .. note::
             CAA V5 Visual Basic help

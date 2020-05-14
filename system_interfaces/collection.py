@@ -1,0 +1,144 @@
+#! /usr/bin/python3.6
+# module initially auto generated using V5Automation.chm from CATIA V5 R25
+
+
+class Collection:
+    """
+        .. note::
+            CAA V5 Visual Basic help
+
+                | Represents the base object for collections.As a base object, it
+                | provides properties and methods shared by any other object.
+
+    """
+
+    def __init__(self, collection_com_object):
+        self.com_object = collection_com_object
+
+    @property
+    def application(self):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+                | Application
+                | o Property Application(    ) As Application
+                |
+                | Returns the application. The application is the root object in the
+                | object structure and can be retrieved from any object in the object
+                | structure using the Application property. The Application property is
+                | the way to jump from any object up to the root of the object data
+                | structure, allowing then to navigate downwards. For in-process
+                | scripting, the application is always referred to as CATIA. Note that
+                | the Application property of the Application object returns the
+                | Application object itself.  Example: This example retrieves in
+                | CurrentApplication the application object, root of the object
+                | structure, from a given object of this structure: a document refered
+                | to using the MyDocCollecion variable.  Dim CurrentApplication As
+                | Application Set CurrentApplication = MyDocCollecion.Application
+
+
+                | Parameters:
+
+
+        """
+        return self.com_object.Application
+
+    @property
+    def count(self):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+                | Count
+                | o Property Count(    ) As long
+                |
+                | Returns the number of objects in the collection. This is handy to scan
+                | all the objects in a collection.  Example: This example retrieves in
+                | ObjectNumber the number of objects currently gathered in MyCollection.
+                | ObjectNumber = MyCollection.Count
+
+
+                | Parameters:
+
+
+        """
+        return self.com_object.Count
+
+    @property
+    def name(self):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+                | Name
+                | o Property Name(    ) As CATBSTR
+                |
+                | Returns or sets the name of the object. The name is a character string
+                | you can assign to any object to handle it easier. In the case of an
+                | object part of a collection, the name can often be used in place of
+                | the object rank to retrieve or remove the object, providing the Item
+                | and Remove methods of the collection feature an argument with the
+                | Variant type. If the object has no name set, the name returned is the
+                | one of its parent.  Example: This example sets to MyObject the name
+                | Nice and Handy Object Name.  MyObject.Name("Nice and Handy Object
+                | Name")
+
+
+                | Parameters:
+
+
+        """
+        return self.com_object.Name
+
+    @property
+    def parent(self):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+                | Parent
+                | o Property Parent(    ) As CATBaseDispatch
+                |
+                | Returns the parent object. The parent object of a given object is the
+                | object that created this object, usually the object just above in the
+                | object tree structure and that aggregates it. In the case of an object
+                | part of a collection, the parent object is not the collection object
+                | itself, but the object that aggregates the collection object. The
+                | Parent property is the way to step upwards in the object data
+                | structure. Note that the Parent property of the Application object
+                | returns the Application object itself.  Example: This example
+                | retrieves in ParentObject the parent object of the GivenObject object.
+                | Dim ParentObject As AnyObject Set ParentObject = GivenObject.Parent
+
+
+                | Parameters:
+
+
+        """
+        return self.com_object.Parent
+
+    def get_item(self, id_name):
+        """
+        .. note::
+            CAA V5 Visual Basic help
+
+                | GetItem
+                | o Func GetItem(    CATBSTR    IDName) As CATBaseDispatch
+                |
+                | Returns an object from its name. Role: To retrieve an object when only
+                | its name is available. You should not use this method, but you can
+                | find it in the macros generated by the Tools->Macro command.
+
+
+                | Parameters:
+                | IDName
+                |    The searched obect name
+                |
+                |
+                |  Returns:
+                |     The searched object
+
+
+        """
+        return self.com_object.GetItem(id_name)

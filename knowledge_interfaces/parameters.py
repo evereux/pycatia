@@ -259,7 +259,7 @@ class Parameters:
         :param float value:
         """
 
-        if not isinstance(value, float):
+        if not any([isinstance(value, float), isinstance(value, int)]):
             raise ValueError(f'Value "{value}" should be float.')
         return RealParam(self.parameters.CreateReal(name, value))
 

@@ -12,4 +12,5 @@ from .parametersets import ParameterSets
 from .realparam import RealParam
 from .relation import Relation
 from .relations import Relations
+from .setofequation import SetOfEquation
 from .strparam import StrParam

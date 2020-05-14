@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-from pycatia.base_interfaces.base_object import AnyObject
+from pycatia.system_interfaces.base_object import AnyObject
 from pycatia.product_structure_interfaces.analyze import Analyze
 from pycatia.base_interfaces.move import Move
 from pycatia.base_interfaces.position import Position
