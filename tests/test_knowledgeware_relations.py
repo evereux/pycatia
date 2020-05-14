@@ -1,5 +1,8 @@
 #! /usr/bin/python3.6
 
+import os
+from pathlib import Path
+
 from pycatia.base_interfaces import CATIADocHandler
 
 from pycatia.knowledge_interfaces import Parameters
@@ -135,45 +138,83 @@ def test_relations_create_set_of_equations():
 
 
 def test_relations_create_set_of_relations():
-    # todo: add test fixture
-    pass
-    # with CATIADocHandler(cat_part_blank) as handler:
-    #     document = handler.document
-    #     part = document.part()
-    #     relations = Relations(part.relations_com_obj())
-    #     rel_set = relations.create_set_of_relations(relations.relations)
-    #
-    #     assert rel_set.relations.name == 'new-eq-set'
+    with CATIADocHandler(cat_part_blank) as handler:
+        document = handler.document
+        part = document.part()
+        relations = Relations(part.relations_com_obj())
+        relations.create_set_of_relations(relations)
+
+        assert relations.name == 'Relations'
 
 
 def test_relations_generate_xml():
-    # todo: add test fixture
     pass
+    # todo: this test fails.
+    #
+    # xml_name = Path(os.getcwd(), 'testxml.xml')
+    # with CATIADocHandler(cat_part_3) as handler:
+    #     document = handler.document
+    #     part = document.part()
+    #
+    #     parameters = Parameters(part.parameters_com_obj())
+    #
+    #     lower_mass = parameters.create_dimension('lower_mass', 'MASS', 5)
+    #     lm_name = parameters.get_name_to_use_in_relation(lower_mass)
+    #
+    #     upper_mass = parameters.create_dimension('upper_mass', 'MASS', 10)
+    #     um_name = parameters.get_name_to_use_in_relation(upper_mass)
+    #
+    #     relations = Relations(part.relations_com_obj())
+    #     relations.create_check('mass-check', 'this is the comment', f"{lm_name}<{um_name}")
+    #
+    #     relations.generate_xml_report_for_checks(str(xml_name))
+    #
+    #     assert xml_name.is_file()
 
 
 def test_relations_get_items():
-    # todo: add test fixture
-    pass
+    with CATIADocHandler(cat_part_3) as handler:
+        document = handler.document
+        part = document.part()
+
+        relations = Relations(part.relations_com_obj())
+        items = relations.get_items()
+
+        assert len(items) == 6
+        assert items[0].name == 'Formula.1'
 
 
 def test_relations_get_item_by_index():
-    # todo: add test fixture
-    pass
+    with CATIADocHandler(cat_part_3) as handler:
+        document = handler.document
+        part = document.part()
+
+        relations = Relations(part.relations_com_obj())
+        item = relations.get_item_by_index(0)
+
+        assert item.name == 'Formula.1'
 
 
 def test_relations_get_item_names():
-    # todo: add test fixture
-    pass
+    with CATIADocHandler(cat_part_3) as handler:
+        document = handler.document
+        part = document.part()
 
+        relations = Relations(part.relations_com_obj())
+        item_names = relations.get_item_names()
 
-def test_relations_is_item():
-    # todo: add test fixture
-    pass
+        ref_names = ['Formula.1', 'Formula.2', 'Formula.3', 'Formula.4', 'Formula.5', 'Formula.7']
+        assert item_names == ref_names
 
 
 def test_relations_item():
-    # todo: add test fixture
-    pass
+    with CATIADocHandler(cat_part_3) as handler:
+        document = handler.document
+        part = document.part()
+
+        relations = Relations(part.relations_com_obj())
+        relation = relations.item(0)
+        assert relation.name == 'Formula.1'
 
 
 def test_relations_sub_list():
@@ -182,5 +223,14 @@ def test_relations_sub_list():
 
 
 def test_relations_remove():
-    # todo: add test fixture
-    pass
+    with CATIADocHandler(cat_part_3) as handler:
+        document = handler.document
+        part = document.part()
+
+        relations = Relations(part.relations_com_obj())
+        relation = relations.item(0)
+        assert relation.name == 'Formula.1'
+
+        relations.remove(0)
+        relation = relations.item(0)
+        assert relation.name != 'Formula.1'

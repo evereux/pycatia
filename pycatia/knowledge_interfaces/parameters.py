@@ -2,15 +2,17 @@
 
 from pywintypes import com_error
 from pycatia.exception_handling import CATIAApplicationException
-from pycatia.knowledge_interfaces.parameter import Parameter
 from pycatia.knowledge_interfaces.boolparam import BoolParam
+from pycatia.knowledge_interfaces.dimension import Dimension
 from pycatia.knowledge_interfaces.intparam import IntParam
+from pycatia.knowledge_interfaces.parameter import Parameter
+from pycatia.knowledge_interfaces.parameterset import ParameterSet
 from pycatia.knowledge_interfaces.realparam import RealParam
 from pycatia.knowledge_interfaces.strparam import StrParam
-from pycatia.knowledge_interfaces.parameterset import ParameterSet
+from pycatia.system_interfaces.collection import Collection
 
 
-class Parameters:
+class Parameters(Collection):
     """
         .. note::
             CAA V5 Visual Basic help
@@ -29,6 +31,7 @@ class Parameters:
     """
 
     def __init__(self, parameters_com_object):
+        super().__init__(parameters_com_object)
         self.parameters = parameters_com_object
 
     @property
@@ -151,7 +154,7 @@ class Parameters:
 
         """
         try:
-            return Parameter(self.parameters.CreateDimension(name, unit_type, value))
+            return Dimension(self.parameters.CreateDimension(name, unit_type, value))
         except com_error:
             raise ValueError(f'Dimension type not allowed.')
 
@@ -336,10 +339,10 @@ class Parameters:
 
         .. warning::
 
-            The index when not a string must be it's python index (indexs in python start from 0).
+            The index when not a string must be it's python index (indexes in python start from 0).
             collection. The COM interface index starts at 1.
 
-        :param str/int index: parameter name or parameter number
+        :param str or int index: parameter name or parameter number
         :return: bool
         """
 
