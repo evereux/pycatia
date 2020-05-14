@@ -3,12 +3,13 @@
 from pathlib import Path
 from pywintypes import com_error
 
+from pycatia.system_interfaces.base_object import AnyObject
 from pycatia.exception_handling import CATIAApplicationException
 from pycatia.part_interfaces import Part
 from pycatia.product_structure_interfaces import Product
 
 
-class Document:
+class Document(AnyObject):
     """
     The Document object is used to access the currently active document in the catia session.
 
@@ -33,11 +34,12 @@ class Document:
     :param catia: CATIA COM object.
     """
 
-    def __init__(self, catia):
+    def __init__(self, document_com_object):
 
+        super().__init__(document_com_object)
         try:
-            self.document = catia.ActiveDocument
-            self.catia = catia
+            self.document = document_com_object.ActiveDocument
+            self.catia = document_com_object
         except com_error:
             message = "Could not activate document. Is a document open?"
             raise CATIAApplicationException(message)
