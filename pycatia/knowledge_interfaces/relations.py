@@ -2,10 +2,12 @@
 
 from pywintypes import com_error
 from pycatia.exception_handling import CATIAApplicationException
+from pycatia.knowledge_interfaces.check import Check
 from pycatia.knowledge_interfaces.design_table import DesignTable
 from pycatia.knowledge_interfaces.formula import Formula
 from pycatia.knowledge_interfaces.law import Law
 from pycatia.knowledge_interfaces.relation import Relation
+from pycatia.knowledge_interfaces.rule import Rule
 from pycatia.knowledge_interfaces.setofequation import SetOfEquation
 from pycatia.system_interfaces.collection import Collection
 
@@ -117,9 +119,10 @@ class Relations(Collection):
 
             :param str name:
             :param str comment:
-            :param check_formula:
+            :param str check_formula:
+            :return: Check()
         """
-        return Relation(self.relations.CreateCheck(name, comment, check_formula))
+        return Check(self.relations.CreateCheck(name, comment, check_formula))
 
     def create_design_table(self, name, comment, copy_mode, sheet_path):
 
@@ -168,7 +171,7 @@ class Relations(Collection):
         :param str comment:
         :param bool copy_mode:
         :param Path() sheet_path:
-
+        :return: DesignTable
         """
         return DesignTable(self.relations.CreateDesignTable(name, comment, copy_mode, sheet_path))
 
@@ -222,6 +225,7 @@ class Relations(Collection):
         :param str comment:
         :param Parameter() output_parameter:
         :param formula_body:
+        :return: Formula()
 
         """
         return Formula(self.relations.CreateFormula(name, comment, output_parameter.parameter, formula_body))
@@ -273,6 +277,7 @@ class Relations(Collection):
             :param str comment:
             :param bool copy_mode:
             :param Path() sheet_path:
+            :return: DesignTable()
         """
         return DesignTable(self.relations.CreateHorizontalDesignTable(name, comment, copy_mode, sheet_path))
 
@@ -301,6 +306,12 @@ class Relations(Collection):
 
                 |  Returns:
                 |   The created law
+
+            :param str name:
+            :para str comment:
+            :param str law_body:
+
+            :return: Law()
         """
         return Law(self.relations.CreateLaw(name, comment, law_body))
 
@@ -345,8 +356,14 @@ class Relations(Collection):
                 | Set depthProgram = part.Relations.CreateProgram("selectdepth",
                 |           "Select depth with respect to mass",
                 |           "if (mass>2kg) { depth=2mm } else { depth=1 mm }")
+
+            :param str name:
+            :param str comment:
+            :param str program_body:
+            :return: Relation()
+
         """
-        return Relation(self.relations.CreateProgram(name, comment, program_body))
+        return Rule(self.relations.CreateProgram(name, comment, program_body))
 
     def create_rule_base(self, name):
         """
@@ -366,6 +383,9 @@ class Relations(Collection):
                 |      The created rulebase.
                 |    See also:
                 |   activateLinkAnchor('ExpertRuleBase','','ExpertRuleBase')
+
+        :param str name:
+        :return: Relation()
         """
         return Relation(self.relations.CreateRuleBase(name))
 
@@ -391,6 +411,11 @@ class Relations(Collection):
                 |
                 |  Returns:
                 |     The created set of equations
+
+        :param str name:
+        :param str comment:
+        :param str formula_body:
+        :return: SetOfEquation()
         """
         return SetOfEquation(self.relations.CreateSetOfEquations(name, comment, formula_body))
 
@@ -407,8 +432,11 @@ class Relations(Collection):
                 | Parameters:
                 | iParent
                 |  The object to which the set is appended
+
+        :param parent:
+        :return: Relations
         """
-        return Relations(self.relations.CreateSetOfRelations(parent))
+        return Relations(self.relations.CreateSetOfRelations(parent.parent))
 
     def generate_xml_report_for_checks(self, name):
         """
@@ -423,29 +451,38 @@ class Relations(Collection):
                 | Parameters:
                 | iName
                 |  The name of the XML file
+            :param str name:
+            :return:
         """
-        return self.relations.GenerateXMLReportForChecks(name)
+        self.relations.GenerateXMLReportForChecks(name)
 
     def get_items(self):
         """
-        :return: list(Parameter())
+        :return: [Relation()]
         """
-        parm_sets = []
+        relation_list = []
 
         for i in range(self.relations.Count):
-            parm_set = Relation(self.relations.Item(i + 1))
-            parm_sets.append(parm_set)
+            relation = Relation(self.relations.Item(i + 1))
+            relation_list.append(relation)
 
-        return parm_sets
+        return relation_list
 
     def get_item_by_index(self, index):
         """
 
-        :param str/int index: parametersets name or parameter number
+        .. warning::
+
+            The index when not a string must be it's python index (indexes in python start from 0).
+            collection. The COM interface index starts at 1.
+
+
+        :param str/int index: relation name or index
         :return: item
         """
-        if not self.is_item(index):
-            raise CATIAApplicationException(f'Could not find parameter name "{index}".')
+
+        if isinstance(index, int):
+            index += 1
 
         return Relation(self.relations.Item(index))
 
@@ -462,20 +499,14 @@ class Relations(Collection):
 
         return names
 
-    def is_item(self, index):
-        """
-
-        :param str/int index: parametersets name or parameter number
-        :return: bool
-        """
-        try:
-            if self.relations.Item(index):
-                return True
-        except com_error:
-            return False
-
     def item(self, index):
         """
+        .. warning::
+
+        The index when not a string must be it's python index (indexes in python start from 0).
+        collection. The COM interface index starts at 1.
+
+
         .. note::
             CAA V5 Visual Basic help
 
@@ -506,8 +537,15 @@ class Relations(Collection):
                 |
                 | Dim lastRelation As Relation
                 | Set lastRelation = relations.Item(relations.Count)
+
+            :param str or int index:
+            :return: Relation()
         """
-        return self.relations.Item(index)
+
+        if isinstance(index, int):
+            index += 1
+
+        return Relation(self.relations.Item(index))
 
     def sub_list(self, feature, recursively):
         """
@@ -545,10 +583,17 @@ class Relations(Collection):
                 | 'gets the collection of relations that are under the pad Pad.1
                 | Set Relations2 = Relations1.SubList(Pad1, TRUE)
         """
+
         return self.relations.SubList(feature, recursively)
 
     def remove(self, index):
         """
+
+        .. warning::
+
+            The index when not a string must be it's python index (indexes in python start from 0).
+            collection. The COM interface index starts at 1.
+
         .. note::
             CAA V5 Visual Basic help
 
@@ -575,11 +620,14 @@ class Relations(Collection):
                 | the relations collection.
                 |
                 | relations.Remove("density")
-        """
-        if not self.is_item(index):
-            raise CATIAApplicationException(f'Could not find formula "{index}".')
 
-        return self.relations.Remove(index)
+            :param str|int index:
+        """
+
+        if isinstance(index, int):
+            index += 1
+
+        self.relations.Remove(index)
 
     def __repr__(self):
-        return f'Relations()'
+        return f'Relations(name="{self.name}")'
