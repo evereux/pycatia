@@ -2,6 +2,7 @@
 
 from pathlib import Path
 
+from pycatia.base_interfaces.base_object import AnyObject
 from pycatia.product_structure_interfaces.analyze import Analyze
 from pycatia.base_interfaces.move import Move
 from pycatia.base_interfaces.position import Position
@@ -10,9 +11,9 @@ from .enumeration_types import cat_work_mode_types
 from .enumeration_types import cat_rep_types
 
 
-class Product:
+class Product(AnyObject):
 
-    def __init__(self, product):
+    def __init__(self, product_com_object):
         """
 
         .. note::
@@ -34,7 +35,8 @@ class Product:
         :param product: Product COM object
         """
 
-        self.product = product
+        super().__init__(product_com_object)
+        self.product = product_com_object
 
     @property
     def analyze(self):
@@ -187,15 +189,6 @@ class Product:
         """
 
         return self.product.ReferenceProduct.Parent.FullName
-
-    @property
-    def name(self):
-        """
-
-        :return: str()
-        """
-
-        return self.product.Name
 
     def path(self):
         """

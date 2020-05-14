@@ -3,6 +3,7 @@
 from pathlib import Path
 import warnings
 
+from pycatia.base_interfaces.base_object import AnyObject
 from pycatia.exception_handling import CATIAApplicationException
 
 geometrical_feature_type = [
@@ -17,7 +18,7 @@ geometrical_feature_type = [
 ]
 
 
-class Part:
+class Part(AnyObject):
     """
     .. note::
         CAA V5 Visual Basic help
@@ -30,18 +31,9 @@ class Part:
     :param part: CATIA Part COM object.
     """
 
-    def __init__(self, part):
-
-        self.part = part
-
-    @property
-    def name(self):
-        """
-
-        :return: str - part name
-        """
-
-        return self.part.Name
+    def __init__(self, part_com_object):
+        super().__init__(part_com_object)
+        self.part = part_com_object
 
     @property
     def file_name(self):
@@ -51,7 +43,7 @@ class Part:
         try:
             return self.part.ReferenceProduct.Parent.Name
         except AttributeError:
-            return self.part.Parent.Name
+            return self.parent.Name
 
     @property
     def full_name(self):
@@ -61,7 +53,7 @@ class Part:
         try:
             return self.part.ReferenceProduct.Parent.FullName
         except AttributeError:
-            return self.part.Parent.FullName
+            return self.parent.FullName
 
     @property
     def density(self):
