@@ -1,10 +1,10 @@
 #! /usr/bin/python3.6
 # module initially auto generated using V5Automation.chm from CATIA V5 R25
 
-from pycatia.knowledge_interfaces.parameter import Parameter
+from pycatia.knowledge_interfaces.enumparam import EnumParam
 
 
-class BoolParam(Parameter):
+class BoolParam(EnumParam):
     """
         .. note::
             CAA V5 Visual Basic help

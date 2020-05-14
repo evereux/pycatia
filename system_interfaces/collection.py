@@ -40,7 +40,6 @@ class Collection:
 
                 | Parameters:
 
-
         """
         return self.com_object.Application
 
@@ -61,7 +60,7 @@ class Collection:
 
                 | Parameters:
 
-
+        :return: int
         """
         return self.com_object.Count
 
@@ -87,7 +86,7 @@ class Collection:
 
                 | Parameters:
 
-
+            :return: str
         """
         return self.com_object.Name
 
@@ -139,6 +138,7 @@ class Collection:
                 |  Returns:
                 |     The searched object
 
-
+            :param int|str id_name:
+            :return:
         """
         return self.com_object.GetItem(id_name)
