@@ -171,7 +171,7 @@ def test_sub_list():
         parameters = Parameters(part.parameters_com_obj())
         sub_list = parameters.sub_list(pad, True)
 
-        assert sub_list.Item(1).Name == r'CF_Part3\PartBody\Pad.1\FirstLimit\Length'
+        assert sub_list.item(0).name == r'CF_Part3\PartBody\Pad.1\FirstLimit\Length'
 
 
 def test_remove_item():
