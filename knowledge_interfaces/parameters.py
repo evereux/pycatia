@@ -5,6 +5,7 @@ from pycatia.exception_handling import CATIAApplicationException
 from pycatia.knowledge_interfaces.boolparam import BoolParam
 from pycatia.knowledge_interfaces.dimension import Dimension
 from pycatia.knowledge_interfaces.intparam import IntParam
+from pycatia.knowledge_interfaces.listparameter import ListParameter
 from pycatia.knowledge_interfaces.parameter import Parameter
 from pycatia.knowledge_interfaces.parameterset import ParameterSet
 from pycatia.knowledge_interfaces.realparam import RealParam
@@ -220,7 +221,7 @@ class Parameters(Collection):
                 | Set part1   = CATDocs.Add("CATPart")
                 | Set list1 = part1.Part.Parameters.CreateList ("ListName")
         """
-        return Parameter(self.parameters.CreateList(name))
+        return ListParameter(self.parameters.CreateList(name))
 
     def count_parameters(self):
         """
@@ -453,7 +454,7 @@ class Parameters(Collection):
             :param i_object:
             :param bool recursively:
         """
-        return self.parameters.SubList(i_object, recursively)
+        return Parameters(self.parameters.SubList(i_object, recursively))
 
     def remove_item(self, index):
 
