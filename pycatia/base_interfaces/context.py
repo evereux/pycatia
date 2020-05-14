@@ -9,7 +9,8 @@ from pycatia.exception_handling.exceptions import CATIAApplicationException
 
 class CATIADocHandler:
     """
-    A context manager to open or create a CATIA document. The CATIA document will be closed upon exit.
+    A context manager to open or create a CATIA document. The CATIA document will be closed (and not automatically
+    saved) upon exit.
 
     Only file_name __or__ new_document are required as one document is handled at a time.
 
@@ -25,6 +26,8 @@ class CATIADocHandler:
         >>>     # create the document object.
         >>>     document = handler.document
         >>>     # do some stuff
+        >>>     # save document!
+        >>>     document.save()
 
     :Example - Create a new CATPart:
 
@@ -36,6 +39,8 @@ class CATIADocHandler:
         >>>     documents = handler.documents
         >>>     # create the document object.
         >>>     document = handler.document
+        >>>     # save document!
+        >>>     document.save()
 
     :param str file_name: (optional) path filename to file
     :param str new_document: (optional) 'Part', 'Product' or 'Drawing'.
