@@ -6,9 +6,11 @@ from pycatia.knowledge_interfaces.design_table import DesignTable
 from pycatia.knowledge_interfaces.formula import Formula
 from pycatia.knowledge_interfaces.law import Law
 from pycatia.knowledge_interfaces.relation import Relation
+from pycatia.knowledge_interfaces.setofequation import SetOfEquation
+from pycatia.system_interfaces.collection import Collection
 
 
-class Relations:
+class Relations(Collection):
     """
         .. note::
             CAA V5 Visual Basic help
@@ -48,6 +50,7 @@ class Relations:
     """
 
     def __init__(self, relations_com_object):
+        super().__init__(relations_com_object)
         self.relations = relations_com_object
 
     @property
@@ -69,9 +72,6 @@ class Relations:
 
         """
         return self.relations.Optimizations
-
-    def count(self):
-        return self.relations.Count
 
     def create_check(self, name, comment, check_formula):
         """
@@ -117,7 +117,7 @@ class Relations:
 
             :param str name:
             :param str comment:
-            :param
+            :param check_formula:
         """
         return Relation(self.relations.CreateCheck(name, comment, check_formula))
 
@@ -392,7 +392,7 @@ class Relations:
                 |  Returns:
                 |     The created set of equations
         """
-        return Relation(self.relations.CreateSetOfEquations(name, comment, formula_body))
+        return SetOfEquation(self.relations.CreateSetOfEquations(name, comment, formula_body))
 
     def create_set_of_relations(self, parent):
         """
@@ -408,7 +408,7 @@ class Relations:
                 | iParent
                 |  The object to which the set is appended
         """
-        return self.relations.CreateSetOfRelations(parent)
+        return Relations(self.relations.CreateSetOfRelations(parent))
 
     def generate_xml_report_for_checks(self, name):
         """

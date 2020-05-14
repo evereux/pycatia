@@ -16,7 +16,7 @@ def test_relations_count():
         part = document.part()
         relations = Relations(part.relations_com_obj())
 
-        assert relations.count() == 6
+        assert relations.count == 6
 
 
 def test_relations_create_check():
@@ -86,5 +86,101 @@ def test_relations_create_horizontal_design_table():
 
 
 def test_relations_create_law():
-    # todo: add text fixture.
+    with CATIADocHandler(cat_part_blank) as handler:
+        document = handler.document
+        part = document.part()
+        relations = Relations(part.relations_com_obj())
+
+        law = relations.create_law('new-law', 'this is a comment', '/* code comments */')
+
+        assert law.name == 'new-law'
+
+
+def test_relations_create_program():
+    with CATIADocHandler(cat_part_blank) as handler:
+        document = handler.document
+        part = document.part()
+        relations = Relations(part.relations_com_obj())
+
+        program = relations.create_program('new-program', 'this is a comment', '/* code comments */')
+
+        assert program.name == 'new-program'
+
+
+def test_relations_create_rule_base():
+    with CATIADocHandler(cat_part_blank) as handler:
+        document = handler.document
+        part = document.part()
+        relations = Relations(part.relations_com_obj())
+
+        rule_base = relations.create_rule_base('new-rule-base')
+
+        assert rule_base.name == 'new-rule-base'
+
+
+def test_relations_create_set_of_equations():
+    with CATIADocHandler(cat_part_blank) as handler:
+        document = handler.document
+        part = document.part()
+        parameters = Parameters(part.parameters_com_obj())
+        relations = Relations(part.relations_com_obj())
+
+        dim_b = parameters.create_real("dim_b", 1.2)
+        dim_b_name = parameters.get_name_to_use_in_relation(dim_b)
+        result = parameters.create_real("result", 0)
+
+        eq_set = relations.create_set_of_equations('new-eq-set', 'some comment', f'{result}=={dim_b_name} + 4;')
+
+        assert eq_set.name == 'new-eq-set'
+
+
+def test_relations_create_set_of_relations():
+    # todo: add test fixture
+    pass
+    # with CATIADocHandler(cat_part_blank) as handler:
+    #     document = handler.document
+    #     part = document.part()
+    #     relations = Relations(part.relations_com_obj())
+    #     rel_set = relations.create_set_of_relations(relations.relations)
+    #
+    #     assert rel_set.relations.name == 'new-eq-set'
+
+
+def test_relations_generate_xml():
+    # todo: add test fixture
+    pass
+
+
+def test_relations_get_items():
+    # todo: add test fixture
+    pass
+
+
+def test_relations_get_item_by_index():
+    # todo: add test fixture
+    pass
+
+
+def test_relations_get_item_names():
+    # todo: add test fixture
+    pass
+
+
+def test_relations_is_item():
+    # todo: add test fixture
+    pass
+
+
+def test_relations_item():
+    # todo: add test fixture
+    pass
+
+
+def test_relations_sub_list():
+    # todo: add test fixture
+    pass
+
+
+def test_relations_remove():
+    # todo: add test fixture
     pass

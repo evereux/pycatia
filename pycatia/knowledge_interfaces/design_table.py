@@ -1,10 +1,10 @@
 #! /usr/bin/python3.6
 # module initially auto generated using V5Automation.chm from CATIA V5 R25
 
-from .base_object import BaseKnowledge
+from .relation import Relation
 
 
-class DesignTable(BaseKnowledge):
+class DesignTable(Relation):
     """
         .. note::
             CAA V5 Visual Basic help
@@ -15,7 +15,7 @@ class DesignTable(BaseKnowledge):
 
     def __init__(self, design_table):
         super().__init__(design_table)
-        self.designtable = design_table
+        self.design_table = design_table
 
     @property
     def columns_nb(self):
@@ -33,7 +33,7 @@ class DesignTable(BaseKnowledge):
 
 
         """
-        return self.designtable.ColumnsNb
+        return self.design_table.ColumnsNb
 
     @property
     def configuration(self):
@@ -52,7 +52,7 @@ class DesignTable(BaseKnowledge):
 
 
         """
-        return self.designtable.Configuration
+        return self.design_table.Configuration
 
     @property
     def configurations_nb(self):
@@ -70,7 +70,7 @@ class DesignTable(BaseKnowledge):
 
 
         """
-        return self.designtable.ConfigurationsNb
+        return self.design_table.ConfigurationsNb
 
     @property
     def copy_mode(self):
@@ -89,7 +89,7 @@ class DesignTable(BaseKnowledge):
 
 
         """
-        return self.designtable.CopyMode
+        return self.design_table.CopyMode
 
     @property
     def file_path(self):
@@ -107,7 +107,7 @@ class DesignTable(BaseKnowledge):
 
 
         """
-        return self.designtable.FilePath
+        return self.design_table.FilePath
 
     def add_association(self, i_parameter, i_sheet_column):
         """
@@ -133,7 +133,7 @@ class DesignTable(BaseKnowledge):
 
 
         """
-        return self.designtable.AddAssociation(i_parameter, i_sheet_column)
+        return self.design_table.AddAssociation(i_parameter, i_sheet_column)
 
     def add_new_row(self):
         """
@@ -159,7 +159,7 @@ class DesignTable(BaseKnowledge):
 
 
         """
-        return self.designtable.AddNewRow()
+        return self.design_table.AddNewRow()
 
     def cell_as_string(self, i_row, i_column):
         """
@@ -181,7 +181,7 @@ class DesignTable(BaseKnowledge):
 
 
         """
-        return self.designtable.CellAsString(i_row, i_column)
+        return self.design_table.CellAsString(i_row, i_column)
 
     def remove_association(self, i_sheet_column):
         """
@@ -201,7 +201,7 @@ class DesignTable(BaseKnowledge):
 
 
         """
-        return self.designtable.RemoveAssociation(i_sheet_column)
+        return self.design_table.RemoveAssociation(i_sheet_column)
 
     def synchronize(self):
         """
@@ -215,7 +215,7 @@ class DesignTable(BaseKnowledge):
                 | managed in Enovia LCA, copies this file on local disk, and
                 | synchronizes design table content.
         """
-        return self.designtable.Synchronize()
+        return self.design_table.Synchronize()
 
     def __repr__(self):
         return f'DesignTable()'

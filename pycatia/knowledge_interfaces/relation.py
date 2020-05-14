@@ -1,9 +1,9 @@
 #! /usr/bin/python3.6
 
-from .base_object import BaseKnowledge
+from .knowledgeactivateobject import KnowledgeObject
 
 
-class Relation(BaseKnowledge):
+class Relation(KnowledgeObject):
     """
         .. note::
             CAA V5 Visual Basic help
@@ -13,9 +13,9 @@ class Relation(BaseKnowledge):
                 | table, formula, rule, objects derive.
     """
 
-    def __init__(self, relation):
-        super().__init__(relation)
-        self.relation = relation
+    def __init__(self, relation_com_object):
+        super().__init__(relation_com_object)
+        self.relation = relation_com_object
 
     @property
     def context(self):
