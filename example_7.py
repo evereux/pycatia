@@ -10,7 +10,7 @@
 
 import time
 
-from pycatia.base_interfaces import CATIADocHandler
+from pycatia.base_interfaces.context import CATIADocHandler
 
 catia_part = r'tests\CF_catia_measurable_part.CATPart'
 

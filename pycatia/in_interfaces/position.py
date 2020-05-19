@@ -1,7 +1,10 @@
 #! /usr/bin/python3.6
 
+from pycatia.system_interfaces.systemservice import SystemService
+from .move import Move
 
-class Position:
+
+class Position(Move):
     """
             .. note::
                 CAA V5 Visual Basic help
@@ -10,10 +13,11 @@ class Position:
                 | The position object is the 3D-axis system associated with an object.
     """
 
-    def __init__(self, _object):
-        self.position = _object.Position
+    def __init__(self, com_object):
+        super().__init__(com_object)
+        self.position = com_object.Position
 
-    def get_components(self, catia):
+    def get_components(self):
         """
 
         .. note::
@@ -25,7 +29,7 @@ class Position:
             oAxisComponentsArray
 
             The array used to store the twelve components retrieved from the objet's position. The first nine
-            represent succcessively the components of the x-axis, y-axis, and z-axis. The last three represent the
+            represent successively the components of the x-axis, y-axis, and z-axis. The last three represent the
             coordinates of the origin point.
             | Example:
             | This example retrieves in oAxisComponentsArray the 3D-axis system components from the Position object
@@ -33,7 +37,6 @@ class Position:
             |     Dim oAxisComponentsArray ( 11 )
             |     MyObject.Position.GetComponents oAxisComponentsArray
 
-        :param catia:
         :return:
         """
 
@@ -47,8 +50,8 @@ class Position:
             {vba_function_name} = oAxisComponentsArray
         End Function
         '''
-
-        return catia.evaluate(vba_code, vba_function_name, [self.position])
+        system_service = SystemService(self.application.SystemService)
+        return system_service.evaluate(vba_code, 0, vba_function_name, [self.position])
 
     def set_components(self):
         """
@@ -93,3 +96,6 @@ class Position:
 
         # todo
         return False
+
+    def __repr__(self):
+        return f'Position(name="{self.name}")'

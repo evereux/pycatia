@@ -102,31 +102,6 @@ class IntParam(Parameter):
         """
         return self.parameter.RangeMinValidity
 
-    @property
-    def value(self):
-        """
-        .. note::
-            CAA V5 Visual Basic help
-
-                | Value
-                | o Property Value(    ) As long
-                |
-                | Returns or sets the value of the integer parameter. Units are
-                | expressed in the IS unit system.  Example: This example sets the year
-                | value to 0 if its value is equal to 2000:  If (year.Value = 2000)
-                | Then     year.Value = 0 End If
-
-
-                | Parameters:
-
-
-        """
-        return self.parameter.Value
-
-    @value.setter
-    def value(self, value):
-        self.parameter.Value = value
-
     def get_enumerate_values(self, o_safe_array):
         """
         .. note::

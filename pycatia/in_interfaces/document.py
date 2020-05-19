@@ -1,12 +1,15 @@
 #! /usr/bin/python3.6
 
 from pathlib import Path
+import warnings
+
 from pywintypes import com_error
 
-from pycatia.system_interfaces.base_object import AnyObject
 from pycatia.exception_handling import CATIAApplicationException
-from pycatia.part_interfaces import Part
-from pycatia.product_structure_interfaces import Product
+from pycatia.mec_mod_interfaces.part import Part
+from pycatia.product_structure_interfaces.product import Product
+from pycatia.system_interfaces.base_object import AnyObject
+from pycatia.drafting_interfaces.drawingroot import DrawingRoot
 
 
 class Document(AnyObject):
@@ -30,15 +33,12 @@ class Document(AnyObject):
         the active window. A document aggregates the current object or set of objects in the Selection
         object, and Cameras, a camera collection.
 
-
-    :param catia: CATIA COM object.
     """
 
     def __init__(self, document_com_object):
-
         super().__init__(document_com_object)
         try:
-            self.document = document_com_object.ActiveDocument
+            self.document = document_com_object
             self.catia = document_com_object
         except com_error:
             message = "Could not activate document. Is a document open?"
@@ -125,6 +125,12 @@ class Document(AnyObject):
 
         return str(self.path())
 
+    def drawing_root(self):
+        """
+        :return:
+        """
+        return DrawingRoot(self.document.DrawingRoot)
+
     def export_data(self, filename, filetype):
 
         """
@@ -169,19 +175,19 @@ class Document(AnyObject):
 
         return Path(self.document.FullName)
 
+    def part(self):
+        """
+        :return: Part()
+        """
+
+        return Part(self.document.Part)
+
     def product(self):
         """
         :return: :class:`Product()`
         """
 
         return Product(self.document.Product)
-
-    def part(self):
-        """
-        :return: :class:`Part()`
-        """
-
-        return Part(self.document.Part)
 
     def activate(self):
         """
@@ -243,7 +249,7 @@ class Document(AnyObject):
 
         self.document.Save()
 
-    def save_as(self, file_name):
+    def save_as(self, file_name, overwrite=False):
         """
         Save the document to a new name.
 
@@ -261,11 +267,16 @@ class Document(AnyObject):
             | Doc.SaveAs("NewName")
 
         :param str file_name: full pathname to new file_name
+        :param bool overwrite:
         """
 
         file_name = Path(file_name)
-        if file_name.is_file():
-            raise FileExistsError(f'File: {file_name} already exists.')
+        if overwrite is False:
+            if file_name.is_file():
+                raise FileExistsError(f'File: {file_name} already exists.')
+        else:
+            if file_name.is_file():
+                warnings.warn('File already exists. Click YES in CATIA V5.')
         self.document.SaveAs(file_name)
 
     @staticmethod
@@ -307,7 +318,7 @@ class Document(AnyObject):
 
         selected = list()
         for i in range(0, selection.Count):
-            selected.append(selection.Item(i + 1).Value)
+            selected.append(AnyObject(selection.Item(i + 1).Value))
 
         return selected
 

@@ -8,19 +8,16 @@
 
 """
 
-from pycatia.base_interfaces import CATIAApplication
+from pycatia.in_interfaces.application import catia_application as catia
 
-catia = CATIAApplication()
-
-documents = catia.documents()
+documents = catia.documents
 documents.open(r'tests\CF_TopLevelAssy.CATProduct')
-
-document = catia.document()
+document = catia.active_document
 product = document.product()
 
 # Change the work mode to Design Mode.
-# This is useful for CATIA configurations that work with a cache otherwise methods on children may fail
-# due to the document not being loaded.
+# This is useful for CATIA configurations that work with a cache otherwise
+# methods on children may fail due to the document not being loaded.
 product.apply_work_mode("DESIGN_MODE")
 
 products = product.get_products()
@@ -28,7 +25,7 @@ products = product.get_products()
 if len(products) == 0:
     print("Active document has no children or is not a CATProduct.")
 
-for item in product.get_products():
+for item in products:
 
     if item.is_catpart():
         print(f'This is a part: "{item}"')

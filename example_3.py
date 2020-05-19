@@ -10,19 +10,15 @@
 
 import csv
 
-from pycatia.base_interfaces import CATIAApplication
-from pycatia.space_analyses_interfaces import CATIAMeasurable
-from pycatia.space_analyses_interfaces import create_measurable
-from pycatia.workbenches import create_spa_workbench
+from pycatia.in_interfaces.application import catia_application as catia
+from pycatia.space_analyses_interfaces.spaworkbench import SPAWorkbench
 
-catia = CATIAApplication()
-
-documents = catia.documents()
+documents = catia.documents
 documents.open(r'tests\CF_catia_measurable_part.CATPart')
 
-document = catia.document()
+document = catia.active_document
 
-spa_workbench = create_spa_workbench(document.document)
+spa_workbench = SPAWorkbench(document.document)
 part = document.part()
 
 selected = document.search_for_items(document, ['Point'])
@@ -33,13 +29,11 @@ with open(csv_file_name, 'w', newline='') as csv_file:
     csv_writer = csv.writer(csv_file, delimiter=',')
 
     for selection in selected:
-        reference = part.create_reference(selection)
-        selection_measurable = create_measurable(spa_workbench, reference)
-        measurable = CATIAMeasurable(selection_measurable)
+        reference = part.create_reference_from_object(selection)
+        measurable = spa_workbench.get_measurable(reference)
 
         # print to console.
-        print(selection.Name, measurable.get_point(catia))
+        print(selection.name, measurable.get_point())
 
-        point_name = selection.Name
-        x, y, z = measurable.get_point(catia)
-        csv_writer.writerow([point_name, x, y, z])
+        x, y, z = measurable.get_point()
+        csv_writer.writerow([selection.name, x, y, z])

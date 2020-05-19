@@ -20,30 +20,6 @@ class StrParam(Parameter):
     def __init__(self, com_string_parameter):
         super().__init__(com_string_parameter)
 
-    @property
-    def value(self):
-        """
-        .. note::
-            CAA V5 Visual Basic help
-
-                | Value
-                | o Property Value(    ) As CATBSTR
-                |
-                | Returns or sets the string parameter value.  Example:This example
-                | returns in myValue the value of the string parameter material:
-                | myValue = material.Value
-
-
-                | Parameters:
-
-
-        """
-        return self.parameter.Value
-
-    @value.setter
-    def value(self, value):
-        self.parameter.Value = value
-
     def get_enumerate_values(self, o_safe_array):
         """
         .. note::

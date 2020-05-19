@@ -1,8 +1,11 @@
 #! /usr/bin/python3.6
 # module initially auto generated using V5Automation.chm from CATIA V5 R25
 
+from pycatia.system_interfaces.base_object import AnyObject
+from pycatia.system_interfaces.systemservice import SystemService
 
-class Analyze:
+
+class Analyze(AnyObject):
     """
         .. note::
             CAA V5 Visual Basic help
@@ -11,8 +14,9 @@ class Analyze:
 
     """
 
-    def __init__(self, product):
-        self.analyze = product.Analyze
+    def __init__(self, com_object):
+        super().__init__(com_object)
+        self.analyze = com_object
 
     @property
     def mass(self):
@@ -27,10 +31,7 @@ class Analyze:
                 | MassValue from   the Analyze object associated with myProduct:
                 | MassValue = myProduct.Analyze.Mass
 
-
-                | Parameters:
-
-
+        :return: float
         """
         return self.analyze.Mass
 
@@ -75,7 +76,7 @@ class Analyze:
         """
         return self.analyze.WetArea
 
-    def get_gravity_center(self, catia):
+    def get_gravity_center(self):
         """
         .. note::
             CAA V5 Visual Basic help
@@ -84,16 +85,13 @@ class Analyze:
                 | o Sub GetGravityCenter(    CATSafeArrayVariant    oGravityCenterCoordinatesArray)
                 |
                 | Returns the gravity center coordinates of product.
-
-
+                |
                 | Parameters:
                 | Coordinates
                 |    The array storing the three gravity center coordinates.
                 |    This array must be previously initialized.
-
-
-                | Examples:
                 |
+                | Examples:
                 | This example retrieves the gravity center coordinates in
                 | oGravityCenterCoordinatesArray from
                 | the Analyze object associated with myProduct:
@@ -102,9 +100,6 @@ class Analyze:
                 | Dim oGravityCenterCoordinatesArray ( 2 )
                 | ' Get value in array
                 | Myproduct.Analyze.GetGravityCenter oGravityCenterCoordinatesArray
-                |
-                |
-                |
         """
 
         vba_function_name = 'get_gravity_center'
@@ -116,11 +111,12 @@ class Analyze:
             {vba_function_name} = coord
         End Function
         '''
-        result = catia.evaluate(vba_code, vba_function_name, [self.analyze])
+        system_service = SystemService(self.application.SystemService)
+        result = system_service.evaluate(vba_code, 0, vba_function_name, [self.analyze])
 
         return result
 
-    def get_inertia(self, catia):
+    def get_inertia(self):
         """
         .. note::
             CAA V5 Visual Basic help
@@ -169,6 +165,10 @@ class Analyze:
             {vba_function_name} = coord
         End Function
         '''
-        result = catia.evaluate(vba_code, vba_function_name, [self.analyze])
+        system_service = SystemService(self.application.SystemService)
+        result = system_service.evaluate(vba_code, 0, vba_function_name, [self.analyze])
 
         return result
+
+    def __repr__(self):
+        return f'Analyze()'

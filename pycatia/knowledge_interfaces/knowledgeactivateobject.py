@@ -14,6 +14,7 @@ class KnowledgeActivateObject(KnowledgeObject):
     """
 
     def __init__(self, knowledge_com_object):
+        super().__init__(knowledge_com_object)
         self.knowledge_com_object = knowledge_com_object
 
     @property
