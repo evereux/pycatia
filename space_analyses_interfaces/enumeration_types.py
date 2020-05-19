@@ -1,0 +1,15 @@
+measurable_name = (
+    "CatMeasurableUnknown",
+    "CatMeasurable",
+    "CatMeasurableVolume",
+    "CatMeasurableSurface",
+    "CatMeasurableCylinder",
+    "CatMeasurableSphere",
+    "CatMeasurableCone",
+    "CatMeasurablePlane",
+    "CatMeasurableCurve",
+    "CatMeasurableCircle",
+    "CatMeasurableLine",
+    "CatMeasurablePoint",
+    "CatMeasurableAxisSystem",
+)

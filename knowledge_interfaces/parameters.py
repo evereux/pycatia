@@ -277,7 +277,7 @@ class Parameters(Collection):
                 |
                 | Creates a set of parameters and appends it to argument iFather.
         """
-        return ParameterSet(self.parameters.CreateSetOfParameters(parent.parameterset))
+        self.parameters.CreateSetOfParameters(parent.parameterset)
 
     def create_string(self, name, text):
         """
@@ -454,7 +454,7 @@ class Parameters(Collection):
             :param i_object:
             :param bool recursively:
         """
-        return Parameters(self.parameters.SubList(i_object, recursively))
+        return Parameters(self.parameters.SubList(i_object.com_object, recursively))
 
     def remove_item(self, index):
 

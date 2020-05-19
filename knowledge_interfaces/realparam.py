@@ -147,32 +147,6 @@ class RealParam(Parameter):
         """
         return self.parameter.RangeMinValidity
 
-    @property
-    def value(self):
-        """
-        .. note::
-            CAA V5 Visual Basic help
-
-                | Value
-                | o Property Value(    ) As double
-                |
-                | Returns or sets the value of the real parameter. Units are expressed
-                | in the IS unit system, except for lengthes expressed in millimeters,
-                | and angles expressed in decimal degrees.  Example: This example sets
-                | the density value to 1 if its value is greater than 2.5:  If
-                | (density.Value > 2.5)  Then     density.Value = 1 End If
-
-
-                | Parameters:
-
-
-        """
-        return self.parameter.Value
-
-    @value.setter
-    def value(self, value):
-        self.parameter.Value = value
-
     def get_enumerate_values(self, o_safe_array):
         """
         .. note::

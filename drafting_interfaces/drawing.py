@@ -280,6 +280,7 @@ class DrawingSheet:
 
         return drawing_orientation[self.sheet.Orientation]
 
+    # noinspection PyShadowingNames
     @orientation.setter
     def orientation(self, drawing_orientation):
         """
