@@ -5,10 +5,8 @@ import os
 
 import pytest
 
-from pycatia.base_interfaces import CATIAApplication
-from pycatia.base_interfaces import CATIADocHandler
-from pycatia.base_interfaces import Documents
-from pycatia.base_interfaces import Document
+from pycatia.in_interfaces.application import catia_application as catia
+from pycatia.base_interfaces.context import CATIADocHandler
 from pycatia.hybrid_shape_interfaces import HybridShapeFactory
 from tests.source_files import cat_part_measurable
 from tests.source_files import cat_product
@@ -17,18 +15,17 @@ now_string = datetime.now().strftime('%Y%m%d-%H%M%S')
 
 
 def test_activate_document():
-    catia = CATIAApplication()
-    documents = catia.documents()
+    documents = catia.documents
     documents.open(cat_part_measurable)
-    document_part = catia.document()
+    document_part = catia.active_document
     documents.open(cat_product)
-    document_product = catia.document()
+    document_product = catia.active_document
 
     assert document_part.name == os.path.basename(cat_part_measurable)
     assert document_product.name == os.path.basename(cat_product)
 
     document_part.activate()
-    document = catia.document()
+    document = catia.active_document
 
     assert document.name == os.path.basename(cat_part_measurable)
 
@@ -149,8 +146,7 @@ def test_item():
 
 
 def test_new_from():
-    catia = CATIAApplication()
-    documents = catia.documents()
+    documents = catia.documents
     document = documents.new_from(cat_part_measurable)
 
     assert document.name is not os.path.basename(cat_part_measurable)
@@ -163,8 +159,7 @@ def test_new_from():
 
 def test_no_such_file():
     with pytest.raises(FileNotFoundError):
-        catia = CATIAApplication()
-        documents = catia.documents()
+        documents = catia.documents
         documents.open('lala')
 
 

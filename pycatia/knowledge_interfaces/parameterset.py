@@ -1,8 +1,12 @@
 #! /usr/bin/python3.6
 # module initially auto generated using V5Automation.chm from CATIA V5 R25
 
+from pycatia.system_interfaces.base_object import AnyObject
 
-class ParameterSet:
+from .parametersets import ParameterSets
+
+
+class ParameterSet(AnyObject):
     """
         .. note::
             CAA V5 Visual Basic help
@@ -11,8 +15,9 @@ class ParameterSet:
 
     """
 
-    def __init__(self, parameterset):
-        self.parameterset = parameterset
+    def __init__(self, com_object):
+        super().__init__(com_object)
+        self.parameterset = com_object
 
     @property
     def all_parameters(self):
@@ -30,7 +35,11 @@ class ParameterSet:
 
 
         """
-        return self.parameterset.AllParameters
+        from .parameter import Parameter
+        items = []
+        for i in range(0, self.parameterset.AllParameters.Count):
+            items.append(Parameter(self.parameterset.AllParameters.Item(i + 1)))
+        return items
 
     @property
     def direct_parameters(self):
@@ -48,7 +57,8 @@ class ParameterSet:
 
 
         """
-        return self.parameterset.DirectParameters
+        from .parameters import Parameters
+        return Parameters(self.parameterset.DirectParameters)
 
     @property
     def parameter_sets(self):
@@ -66,7 +76,7 @@ class ParameterSet:
 
 
         """
-        return self.parameterset.ParameterSets
+        return ParameterSets(self.parameterset.ParameterSets)
 
     def __repr__(self):
-        return f'ParameterSet()'
+        return f'ParameterSet(name="{self.name}")'

@@ -5,7 +5,7 @@ from pathlib import Path
 from pycatia.system_interfaces.base_object import AnyObject
 from pycatia.product_structure_interfaces.analyze import Analyze
 from pycatia.base_interfaces.move import Move
-from pycatia.base_interfaces.position import Position
+from pycatia.in_interfaces.position import Position
 from .enumeration_types import cat_file_types
 from .enumeration_types import cat_work_mode_types
 from .enumeration_types import cat_rep_types
@@ -13,7 +13,7 @@ from .enumeration_types import cat_rep_types
 
 class Product(AnyObject):
 
-    def __init__(self, product_com_object):
+    def __init__(self, com_object):
         """
 
         .. note::
@@ -32,11 +32,11 @@ class Product(AnyObject):
             reference objects only, and some others are for components only. This is clearly stated
             for each property or method concerned.
 
-        :param product: Product COM object
+        :param com_object: Product COM object
         """
 
-        super().__init__(product_com_object)
-        self.product = product_com_object
+        super().__init__(com_object)
+        self.product = com_object
 
     @property
     def analyze(self):
@@ -58,7 +58,7 @@ class Product(AnyObject):
         :return: analyze object
         """
 
-        return Analyze(self.product)
+        return Analyze(self.product.Analyze)
 
     @property
     def definition(self):
@@ -537,6 +537,7 @@ class Product(AnyObject):
         :param products: self.get_products()
         """
 
+        # noinspection PyShadowingNames
         def loop_d_loop(products):
 
             for product in products:
@@ -953,9 +954,9 @@ class Product(AnyObject):
         """
         Returns a list of Products().
 
-        :return: list(Proucts())
+        :return: list(Prouct())
         """
-        products = list()
+        products = []
 
         for i in range(0, self.product.Products.Count):
             product = Product(self.product.Products.Item(i + 1))
@@ -1233,4 +1234,4 @@ class Product(AnyObject):
         return self.product.Update()
 
     def __repr__(self):
-        return f'Product(part_number="{self.part_number}", file_name="{self.file_name}")'
+        return f'Product(name="{self.name}")'

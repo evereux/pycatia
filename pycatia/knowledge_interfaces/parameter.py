@@ -1,9 +1,10 @@
 #! /usr/bin/python3.6
 
+from pycatia.system_interfaces.base_object import AnyObject
 from pycatia.knowledge_interfaces.relation import Relation
 
 
-class Parameter:
+class Parameter(AnyObject):
     """
         .. note::
             CAA V5 Visual Basic help
@@ -23,8 +24,9 @@ class Parameter:
 
     """
 
-    def __init__(self, parameter):
-        self.parameter = parameter
+    def __init__(self, com_object):
+        super().__init__(com_object)
+        self.parameter = com_object
 
     @property
     def comment(self):
@@ -97,18 +99,6 @@ class Parameter:
         """
         if self.has_relation():
             return Relation(self.parameter.OptionalRelation)
-
-    @property
-    def name(self):
-        """
-
-        :return: str
-        """
-        return self.parameter.Name
-
-    @name.setter
-    def name(self, name):
-        self.parameter.Rename(name)
 
     @property
     def read_only(self):

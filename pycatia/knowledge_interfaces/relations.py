@@ -1,7 +1,5 @@
 #! /usr/bin/python3.6
 
-from pywintypes import com_error
-from pycatia.exception_handling import CATIAApplicationException
 from pycatia.knowledge_interfaces.check import Check
 from pycatia.knowledge_interfaces.design_table import DesignTable
 from pycatia.knowledge_interfaces.formula import Formula
@@ -308,7 +306,7 @@ class Relations(Collection):
                 |   The created law
 
             :param str name:
-            :para str comment:
+            :param str comment:
             :param str law_body:
 
             :return: Law()
@@ -457,6 +455,7 @@ class Relations(Collection):
         self.relations.GenerateXMLReportForChecks(name)
 
     def get_items(self):
+        # todo: remove this as Collection().items should work? Need to test.
         """
         :return: [Relation()]
         """

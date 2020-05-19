@@ -80,6 +80,10 @@ class AnyObject:
         """
         return self.com_object.Name
 
+    @name.setter
+    def name(self, value):
+        self.com_object.Name = value
+
     @property
     def parent(self):
         """
@@ -119,7 +123,7 @@ class AnyObject:
                 |
                 | Parameters:
                 | IDName
-                |    The searched obect name
+                |    The searched object name
                 |  Returns:
                 |     The searched object
 

@@ -1,22 +1,22 @@
 #! /usr/bin/python3.6
 
 import os
-
 import warnings
 
-from pycatia.base_interfaces.document import Document
+from pywintypes import com_error
+
+from pycatia.system_interfaces.collection import Collection
+from pycatia.exception_handling import CATIAApplicationException
 
 
-class Documents:
+class Documents(Collection):
     """
     The Documents object is used to access multiple open documents in the catia session.
 
     Usage::
 
-        >>> from pycatia.base_interfaces import CATIAApplication
-        >>> from pycatia.base_interfaces import Documents
-        >>> catia = CATIAApplication()
-        >>> documents = Documents(catia.catia)
+        >>> from pycatia.in_interfaces.application import catia_application as catia
+        >>> documents = catia.documents
 
     .. note::
         CAA V5 Visual Basic help
@@ -27,15 +27,11 @@ class Documents:
             PartDocument,
             ProductDocument,
             Drawing.
-
-
-    :param catia: CATIA COM object
-
     """
 
-    def __init__(self, catia):
-
-        self.documents = catia.Documents
+    def __init__(self, com_object):
+        super().__init__(com_object)
+        self.documents = com_object
 
     def add(self, document_type):
         """
@@ -162,7 +158,8 @@ class Documents:
 
         .. warning::
 
-            The index when not a string must be it's python index (indexs in python start from 0) from the Documents.get_documents()
+            The index when not a string must be it's python index (indexes
+            in python start from 0) from the Documents.get_documents()
             collection. The COM interface index starts at 1.
 
         .. note::
@@ -270,7 +267,13 @@ class Documents:
 
         # get the full path to the file
         file_name = os.path.abspath(file_name)
-        self.documents.Open(file_name)
+
+        try:
+            self.documents.Open(file_name)
+        except com_error:
+            raise CATIAApplicationException(
+                'Could not open document. '
+                'Check file type and ensure the version of CATIA it was created with is compatible.')
 
     def read(self, file_name):
         """
@@ -314,3 +317,6 @@ class Documents:
                 |
         """
         return self.documents.Read(file_name)
+
+    def __repr__(self):
+        return f'Documents(name="{self.name}")'
