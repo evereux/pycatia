@@ -19,7 +19,7 @@ class Constraints(Collection):
     """
 
     def __init__(self, collection_com_object):
-        super().__init__(collection_com_object)
+        super().__init__(collection_com_object, child_object=Constraint)
         self.constraints = collection_com_object
 
     @property
@@ -104,7 +104,8 @@ class Constraints(Collection):
         :param Reference() i_second_elem:
         :return: Constraint()
         """
-        return Constraint(self.constraints.AddBiEltCst(i_cst_type, i_first_elem.com_object, i_second_elem.com_object))
+        return self.child_object(
+            self.constraints.AddBiEltCst(i_cst_type, i_first_elem.com_object, i_second_elem.com_object))
 
     def add_mono_elt_cst(self, i_cst_type, i_elem):
         """
@@ -139,7 +140,7 @@ class Constraints(Collection):
         :param Reference() i_elem:
         :return: Constraint()
         """
-        return Constraint(self.constraints.AddMonoEltCst(i_cst_type, i_elem.com_object))
+        return self.child_object(self.constraints.AddMonoEltCst(i_cst_type, i_elem.com_object))
 
     def add_tri_elt_cst(self, i_cst_type, i_first_elem, i_second_elem, i_third_elem):
         """
@@ -193,7 +194,7 @@ class Constraints(Collection):
         :param Reference() i_third_elem:
         :return: Constraint()
         """
-        return Constraint(
+        return self.child_object(
             self.constraints.AddTriEltCst(i_cst_type,
                                           i_first_elem.com_object,
                                           i_second_elem.com_object,
@@ -221,7 +222,7 @@ class Constraints(Collection):
                 | iIndex
                 |    The index or the name of the constraint to retrieve frm
                 |    the collection of constraints.
-                |    As a numerics, this index is the rank of the constraint
+                |    As a numeric, this index is the rank of the constraint
                 |    in the collection.
                 |    The index of the first constraint in the collection is 1, and
                 |    the index of the last constraint is Count.
@@ -244,7 +245,7 @@ class Constraints(Collection):
         if isinstance(i_index, int):
             i_index += 1
 
-        return Constraint(self.constraints.Item(i_index))
+        return self.child_object(self.constraints.Item(i_index))
 
     def remove(self, i_index):
         """
@@ -266,7 +267,7 @@ class Constraints(Collection):
                 | iIndex
                 |    The index or the name of the constraint to remove from the Constraints
                 |    collection.
-                |    As a numerics, this index is the rank of the constraint
+                |    As a numeric, this index is the rank of the constraint
                 |    in the collection.
                 |    The index of the first constraint in the collection is 1, and
                 |    the index of the last constraint is Count.
@@ -288,4 +289,4 @@ class Constraints(Collection):
         return self.constraints.Remove(i_index)
 
     def __repr__(self):
-        return f'Contraints()'
+        return f'Constraints(name="{self.name}")'

@@ -1,6 +1,7 @@
 #! /usr/bin/python3.6
 
 from pywintypes import com_error
+
 from pycatia.exception_handling import CATIAApplicationException
 from pycatia.knowledge_interfaces.boolparam import BoolParam
 from pycatia.knowledge_interfaces.dimension import Dimension
@@ -32,15 +33,8 @@ class Parameters(Collection):
     """
 
     def __init__(self, parameters_com_object):
-        super().__init__(parameters_com_object)
+        super().__init__(parameters_com_object, child_object=Parameter)
         self.parameters = parameters_com_object
-
-    @property
-    def name(self):
-        """
-        :return: str - parameterset name
-        """
-        return self.parameters.Name
 
     @property
     def root_parameter_set(self):
@@ -117,9 +111,9 @@ class Parameters(Collection):
             CAA V5 Visual Basic help
 
                 | CreateDimension
-                | o Func CreateDimension(    CATBSTR    iName,
-                |                            CATBSTR    iMagnitude,
-                |                            double    iValue) As Dimension
+                | o Func CreateDimension(CATBSTR iName,
+                |                        CATBSTR iMagnitude,
+                |                        double iValue) As Dimension
                 |
                 | Creates a user dimension and adds it to the part's collection of
                 | parameters.
@@ -127,21 +121,18 @@ class Parameters(Collection):
                 | Parameters:
                 | iName
                 |     The dimension name
-                |
                 |  iMagnitude
                 |     The dimension magnitude. Units are those of the IS system. Valid magnitudes
                 |     are:
                 |        "LENGTH": the unit is the meter.
                 |        "ANGLE": the unit is the radian.
-                |
                 |     The activateLinkAnchor('Dimension','','Dimension')  object provides the
                 |     activateLinkAnchor('Dimension','ValuateFromString','Dimension.ValuateFromStrin
                 |      g') method with which you may express the value in any unit for a given
                 |      dimension.
-                |
                 | iValue
                 |     The dimension value provided as a real number
-
+                |
                 | Examples:
                 | This example creates a LENGTH dimension
                 | and adds it to the newly created part. The initial value
@@ -152,7 +143,7 @@ class Parameters(Collection):
                 | Set depth = parameters.CreateDimension("depth", "LENGTH", 20)
                 | depth.ValuateFromString("300mm")
 
-
+        :return: Dimension()
         """
         try:
             return Dimension(self.parameters.CreateDimension(name, unit_type, value))
@@ -187,7 +178,7 @@ class Parameters(Collection):
                 | Dim part1 As Document
                 | Set part1   = CATDocs.Add("CATPart")
                 | Dim revision As IntParam
-                | Set revision = part1.Part.Parameters.CreateInteger ("RevisionRumber", 17)
+                | Set revision = part1.Part.Parameters.CreateInteger ("RevisionNumber", 17)
 
             :param str name:
             :param int value:
@@ -223,7 +214,7 @@ class Parameters(Collection):
         """
         return ListParameter(self.parameters.CreateList(name))
 
-    def count_parameters(self):
+    def count(self):
         """
         :return: int
         """
@@ -323,6 +314,8 @@ class Parameters(Collection):
                 | o Func GetNameToUseInRelation(    AnyObject    iObject) As CATBSTR
                 |
                 | Returns a correct name of a feature to use it in a relation.
+
+        :return: str
         """
         return self.parameters.GetNameToUseInRelation(i_object.parameter)
 
@@ -377,7 +370,7 @@ class Parameters(Collection):
                 | iIndex
                 |    The index or the name of the parameter to retrieve from
                 |    the collection of parameters.
-                |    As a numerics, this index is the rank of the parameter
+                |    As a numeric, this index is the rank of the parameter
                 |    in the collection.
                 |    The index of the first parameter in the collection is 1, and
                 |    the index of the last parameter is Count.
@@ -478,7 +471,7 @@ class Parameters(Collection):
                 | iIndex
                 |    The index or the name of the parameter to remove from
                 |    the collection of parameters.
-                |    As a numerics, this index is the rank of the parameter
+                |    As a numeric, this index is the rank of the parameter
                 |    in the collection.
                 |    The index of the first parameter in the collection is 1, and
                 |    the index of the last parameter is Count.

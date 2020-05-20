@@ -193,7 +193,7 @@ class Products:
                 |    The index of the product to retrieve in the collection of products.
                 |    This index can either be the rank of the product in the collection
                 |    or the name you assign to the product.
-                |    As a numerics, this index is the rank of the product 
+                |    As a numeric, this index is the rank of the product
                 |    in the collection.
                 |    The index of the first product in the collection is 1, and
                 |    the index of the last product is Count.
@@ -238,7 +238,7 @@ class Products:
                 |    The index of the product to remove.
                 |    This index can either be the rank of the product in the collection
                 |    or the name you assigned to the product.
-                |    As a numerics, this index is the rank of the product 
+                |    As a numeric, this index is the rank of the product
                 |    in the collection.
                 |    The index of the first product in the collection is 1, and
                 |    the index of the last product is Count.

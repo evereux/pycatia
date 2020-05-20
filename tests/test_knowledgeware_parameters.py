@@ -86,7 +86,7 @@ def test_count_parameters():
         part = document.part()
         parameters = part.parameters
 
-        assert parameters.count_parameters() == 5
+        assert parameters.count() == 5
 
 
 def test_create_real():

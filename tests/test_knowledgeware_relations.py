@@ -178,7 +178,7 @@ def test_relations_get_items():
         part = document.part()
 
         relations = part.relations
-        items = relations.get_items()
+        items = relations.items()
 
         assert len(items) == 6
         assert items[0].name == 'Formula.1'

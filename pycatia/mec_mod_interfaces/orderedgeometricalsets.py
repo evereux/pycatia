@@ -15,8 +15,8 @@ class OrderedGeometricalSets(Collection):
     """
 
     def __init__(self, collection_com_object):
-        super().__init__(collection_com_object)
-        self.orderedgeometricalsets = collection_com_object
+        super().__init__(collection_com_object, child_object=OrderedGeometricalSet)
+        self.ordered_geometrical_sets = collection_com_object
 
     def add(self):
         """
@@ -27,7 +27,7 @@ class OrderedGeometricalSets(Collection):
                 | o Func Add(    ) As
                 | 
                 | Creates a new ordered geometrical set and adds it to the
-                | OrderedGeometricalSets collection. Thisordered geometrical set becomes
+                | OrderedGeometricalSets collection. This ordered geometrical set becomes
                 | the current one  Returns:  The created ordered geometrical set
                 |
                 | Example:
@@ -38,7 +38,7 @@ class OrderedGeometricalSets(Collection):
                 | Set NewPartBody = rootPart.OrderedGeometricalSets.Add()
 
         """
-        self.orderedgeometricalsets.Add()
+        return self.child_object(self.ordered_geometrical_sets.Add())
 
     def item(self, i_index):
         """
@@ -61,7 +61,7 @@ class OrderedGeometricalSets(Collection):
                 | iIndex
                 |    The index or the name of the ordered geometrical set to retrieve from
                 |    the collection of ordered geometrical sets.
-                |    As a numerics, this index is the rank of the ordered geometrical set
+                |    As a numeric, this index is the rank of the ordered geometrical set
                 |    in the collection.
                 |    The index of the first ordered geometrical set in the collection is 1, and
                 |    the index of the last ordered geometrical set is Count.
@@ -89,7 +89,7 @@ class OrderedGeometricalSets(Collection):
         """
         if isinstance(i_index, int):
             i_index += 1
-        return OrderedGeometricalSet(self.orderedgeometricalsets.Item(i_index))
+        return self.child_object(self.ordered_geometrical_sets.Item(i_index))
 
     def __repr__(self):
-        return f'OrderedGeometricalSets()'
+        return f'OrderedGeometricalSets(name="{self.name}")'

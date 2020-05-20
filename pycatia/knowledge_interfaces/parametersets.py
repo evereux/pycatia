@@ -1,6 +1,7 @@
 #! /usr/bin/python3.6
 # module initially auto generated using V5Automation.chm from CATIA V5 R25
 
+from pycatia.knowledge_interfaces.parameterset import ParameterSet
 from pycatia.system_interfaces.collection import Collection
 
 
@@ -32,7 +33,7 @@ class ParameterSets(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=ParameterSet)
         self.parameter_sets = com_object
 
     def create_set(self, i_name):
@@ -45,9 +46,9 @@ class ParameterSets(Collection):
                 |
                 | Creates a set of parameters and appends it to the parameter set which
                 | corresponds to this collection.
+
         """
-        from .parameterset import ParameterSet
-        return ParameterSet(self.parameter_sets.CreateSet(i_name))
+        return self.child_object(self.parameter_sets.CreateSet(i_name))
 
     def item(self, i_index):
         """
@@ -69,7 +70,7 @@ class ParameterSets(Collection):
                 | iIndex
                 |    The index or the name of the parameter set to retrieve from
                 |    the collection of parameter sets.
-                |    As a numerics, this index is the rank of the parameter set
+                |    As a numeric, this index is the rank of the parameter set
                 |    in the collection.
                 |    The index of the first parameter set in the collection is 1, and
                 |    the index of the last parameter set is Count.
@@ -84,26 +85,13 @@ class ParameterSets(Collection):
                 |
                 | Set theSet = parameterSets.Item("Parameters.1")
 
+        :return: ParameterSet()
         """
-        from .parameterset import ParameterSet
 
         if isinstance(i_index, int):
             i_index += 1
 
-        return ParameterSet(self.parameter_sets.Item(i_index))
-
-    def items(self):
-        """
-        :return: [AnyObject()]
-        """
-        from .parameterset import ParameterSet
-        items_list = []
-
-        for i in range(self.com_object.Count):
-            item = ParameterSet(self.com_object.Item(i + 1))
-            items_list.append(item)
-
-        return items_list
+        return self.child_object(self.parameter_sets.Item(i_index))
 
     def __repr__(self):
-        return f'ParameterSets()'
+        return f'ParameterSets(name="{self.name}")'

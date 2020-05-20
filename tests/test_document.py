@@ -91,13 +91,6 @@ def test_full_name():
                document.full_name
 
 
-def test_get_documents():
-    with CATIADocHandler(cat_product) as handler:
-        documents = handler.documents
-
-        assert len(documents.get_documents()) == 5
-
-
 def test_get_documents_names():
     with CATIADocHandler(cat_product) as handler:
         documents = handler.documents
@@ -110,7 +103,7 @@ def test_get_documents_names():
             'CF_SubProduct2.CATProduct'
         ]
 
-        assert documents.get_documents_names() == expected_names
+        assert documents.get_item_names() == expected_names
 
 
 def test_is_saved():
@@ -142,7 +135,7 @@ def test_item():
         doc_com1 = documents.item(document_to_get)
         doc_com2 = documents.item(1)
 
-        assert (doc_com1.Name == document_to_get) and (doc_com2.Name == 'CF_TopLevelAssy.CATProduct')
+        assert (doc_com1.name == document_to_get) and (doc_com2.name == 'CF_TopLevelAssy.CATProduct')
 
 
 def test_new_from():

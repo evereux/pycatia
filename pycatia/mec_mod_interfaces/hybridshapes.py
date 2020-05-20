@@ -17,8 +17,8 @@ class HybridShapes(Collection):
     """
 
     def __init__(self, collection_com_object):
-        super().__init__(collection_com_object)
-        self.hybridshapes = collection_com_object
+        super().__init__(collection_com_object, child_object=HybridShape)
+        self.hybrid_shapes = collection_com_object
 
     def get_boundary(self, i_label):
         """
@@ -42,7 +42,7 @@ class HybridShapes(Collection):
 
 
         """
-        return Boundary(self.hybridshapes.GetBoundary(i_label))
+        return Boundary(self.hybrid_shapes.GetBoundary(i_label))
 
     def item(self, i_index):
         """
@@ -67,7 +67,7 @@ class HybridShapes(Collection):
                 | iIndex
                 |    The index or the name of the HybridShape to retrieve from
                 |    the collection of HybridShapes.
-                |    As a numerics, this index is the rank of the HybridShape
+                |    As a numeric, this index is the rank of the HybridShape
                 |    in the collection.
                 |    The index of the first HybridShape in the collection is 1, and
                 |    the index of the last HybridShape is 
@@ -99,9 +99,9 @@ class HybridShapes(Collection):
             i_index += 1
 
         try:
-            return HybridShape(self.hybridshapes.Item(i_index))
+            return self.child_object(self.hybrid_shapes.Item(i_index))
         except CATIAApplicationException:
             raise CATIAApplicationException('Could not find item.')
 
     def __repr__(self):
-        return f'HybridShapes()'
+        return f'HybridShapes(name="{self.name}")'
