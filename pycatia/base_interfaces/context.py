@@ -3,7 +3,7 @@
 import os
 import warnings
 
-from pycatia.in_interfaces.application import catia_application as catia
+from pycatia.base_interfaces.base_application import catia_application
 from pycatia.exception_handling.exceptions import CATIAApplicationException
 
 
@@ -45,8 +45,8 @@ class CATIADocHandler:
     """
 
     def __init__(self, file_name=None, new_document=None):
-        self.catia = catia
-        self.documents = catia.documents
+        self.catia = catia_application()
+        self.documents = self.catia.documents
         self.file_name = file_name
         self.new_document = new_document
 
@@ -54,15 +54,15 @@ class CATIADocHandler:
             raise CATIAApplicationException(f'Could not find file: {file_name}')
 
     def __enter__(self):
-        self.documents = catia.documents
+        self.documents = self.catia.documents
         self.document = None
 
         if self.file_name:
             self.documents.open(self.file_name)
-            self.document = catia.active_document
+            self.document = self.catia.active_document
         elif self.new_document:
             self.documents.add(self.new_document)
-            self.document = catia.active_document
+            self.document = self.catia.active_document
 
         return self
 

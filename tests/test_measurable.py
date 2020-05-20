@@ -5,7 +5,7 @@
     test_document.py. I've no idea why at the moment.
 """
 
-from pycatia.base_interfaces.context import CATIADocHandler
+from pycatia import CATIADocHandler
 from pycatia.space_analyses_interfaces.enumeration_types import measurable_name
 from pycatia.space_analyses_interfaces.spaworkbench import SPAWorkbench
 from tests.source_files import cat_part_measurable

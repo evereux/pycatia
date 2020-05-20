@@ -10,7 +10,7 @@
 
 import os
 
-from pycatia.base_interfaces.context import CATIADocHandler
+from pycatia import CATIADocHandler
 
 # make these directories the full pathname.
 source_directory = 'tests'

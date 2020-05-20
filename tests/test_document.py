@@ -5,9 +5,9 @@ import os
 
 import pytest
 
-from pycatia.in_interfaces.application import catia_application as catia
+from pycatia import catia
 from pycatia.base_interfaces.context import CATIADocHandler
-from pycatia.hybrid_shape_interfaces import HybridShapeFactory
+from pycatia.hybrid_shape_interfaces.hybridshapefactory import HybridShapeFactory
 from tests.source_files import cat_part_measurable
 from tests.source_files import cat_product
 

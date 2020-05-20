@@ -7,7 +7,7 @@
     Get all the points in the geometrical set 'Points' and print the co-ordinate.
 
 """
-from pycatia.in_interfaces.application import catia_application as catia
+from pycatia import catia
 from pycatia.space_analyses_interfaces.spaworkbench import SPAWorkbench
 
 documents = catia.documents

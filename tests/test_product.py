@@ -3,7 +3,7 @@
 import os
 from pathlib import Path
 
-from pycatia.base_interfaces.context import CATIADocHandler
+from pycatia import CATIADocHandler
 from pycatia.product_structure_interfaces.product import Product
 from tests.source_files import cat_product
 from tests.source_files import cat_part_measurable
@@ -11,7 +11,6 @@ from tests.source_files import cat_part_measurable
 
 def test_analyze():
     with CATIADocHandler(cat_product) as handler:
-        catia = handler.catia
         product = handler.document.product()
 
         assert (

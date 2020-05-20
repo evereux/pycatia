@@ -9,7 +9,7 @@
 
 """
 
-from pycatia.in_interfaces.application import catia_application as catia
+from pycatia import catia
 
 documents = catia.documents
 documents.open(r'tests\CF_TopLevelAssy.CATProduct')

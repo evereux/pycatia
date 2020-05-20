@@ -10,7 +10,7 @@
 
 import csv
 
-from pycatia.in_interfaces.application import catia_application as catia
+from pycatia import catia
 from pycatia.space_analyses_interfaces.spaworkbench import SPAWorkbench
 
 documents = catia.documents

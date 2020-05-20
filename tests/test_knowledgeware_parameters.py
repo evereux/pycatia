@@ -1,12 +1,12 @@
 #! /usr/bin/python3.6
 
-from pycatia.base_interfaces.context import CATIADocHandler
+from pycatia import CATIADocHandler
 from pycatia.mec_mod_interfaces.body import Body
 from pycatia.mec_mod_interfaces.shape import Shape
-from pycatia.knowledge_interfaces import BoolParam
-from pycatia.knowledge_interfaces import IntParam
-from pycatia.knowledge_interfaces import StrParam
-from pycatia.knowledge_interfaces import RealParam
+from pycatia.knowledge_interfaces.boolparam import BoolParam
+from pycatia.knowledge_interfaces.intparam import IntParam
+from pycatia.knowledge_interfaces.strparam import StrParam
+from pycatia.knowledge_interfaces.realparam import RealParam
 from tests.source_files import cat_part_3
 from tests.source_files import cat_part_blank
 

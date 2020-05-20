@@ -2,6 +2,11 @@
 
 import os
 
+from pycatia.base_interfaces.base_application import catia_application
+from pycatia.base_interfaces.context import CATIADocHandler
+
+catia = catia_application()
+
 __author__ = 'Paul Bourne'
 __author_email = 'evereux@gmail.com'
 __description__ = 'A python module to access the CATIA Measurable object.'

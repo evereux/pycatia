@@ -1,15 +1,10 @@
 #! /usr/bin/python3.6
 
-import os
-from pathlib import Path
 
-from pycatia.base_interfaces.context import CATIADocHandler
+from pycatia import CATIADocHandler
 
-from pycatia.knowledge_interfaces import Parameters
-from pycatia.knowledge_interfaces import Relations
 from tests.source_files import cat_part_3
 from tests.source_files import cat_part_blank
-from tests.source_files import cat_part_temp
 from tests.source_files import design_table_1
 
 
