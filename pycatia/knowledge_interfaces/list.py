@@ -53,7 +53,7 @@ class List(Collection):
                 | iIndex
                 |    The index or the name of the Feature to retrieve from
                 |    the collection of Features.
-                |    As a numerics, this index is the rank of the Feature
+                |    As a numeric, this index is the rank of the Feature
                 |    in the collection.
                 |    The index of the first Feature in the collection is 1, and
                 |    the index of the last Feature is Count.
@@ -94,7 +94,7 @@ class List(Collection):
                 | iIndex
                 |    The index or the name of the Feature to retrieve from
                 |    the collection of Features.
-                |    As a numerics, this index is the rank of the Feature
+                |    As a numeric, this index is the rank of the Feature
                 |    in the collection.
                 |    The index of the first Feature in the collection is 1, and
                 |    the index of the last Feature is Count.

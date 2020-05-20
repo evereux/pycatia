@@ -5,8 +5,9 @@ import warnings
 
 from pywintypes import com_error
 
-from pycatia.system_interfaces.collection import Collection
 from pycatia.exception_handling import CATIAApplicationException
+from pycatia.in_interfaces.document import Document
+from pycatia.system_interfaces.collection import Collection
 
 
 class Documents(Collection):
@@ -30,7 +31,7 @@ class Documents(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Document)
         self.documents = com_object
 
     def add(self, document_type):
@@ -67,7 +68,7 @@ class Documents(Collection):
         if document_type not in document_types:
             raise ValueError(f'Document type must be in [{document_types}]')
 
-        self.documents.Add(document_type)
+        return self.child_object(self.documents.Add(document_type))
 
     def count_types(self, file_type_list):
         """
@@ -79,7 +80,7 @@ class Documents(Collection):
         :return: int()
         """
 
-        items = self.get_documents_names()
+        items = self.get_item_names()
 
         if not type(file_type_list) == list:
             file_type_list = [elem.lower() for elem in [file_type_list]]
@@ -87,36 +88,6 @@ class Documents(Collection):
             file_type_list = [elem.lower() for elem in file_type_list]
 
         return len([True for name in items for typ in file_type_list if name.lower().find(typ) > 0])
-
-    def get_documents(self):
-        """
-
-        Returns a list of Document COM objects.
-
-        :return list:
-        """
-
-        items = []
-
-        for index in range(1, self.documents.count):
-            items.append(self.documents.Item(index))
-
-        return items
-
-    def get_documents_names(self):
-        """
-
-        Returns a list of documents currently open in catia.
-
-        :return list:
-        """
-
-        names = []
-
-        for index in range(1, self.documents.count + 1):
-            names.append(self.documents.Item(index).Name)
-
-        return names
 
     def new_from(self, file_name):
         """
@@ -176,7 +147,7 @@ class Documents(Collection):
                 | iIndex
                 |    The index or the name of the document to retrieve frm
                 |    the collection of documents.
-                |    As a numerics, this index is the rank of the document
+                |    As a numeric, this index is the rank of the document
                 |    in the collection.
                 |    The index of the first document in the collection is 1, and
                 |    the index of the last document is Count.
@@ -208,7 +179,7 @@ class Documents(Collection):
         if isinstance(index, int):
             index += 1
 
-        return self.documents.Item(index)
+        return self.child_object(self.documents.Item(index))
 
     def num_open(self):
         """

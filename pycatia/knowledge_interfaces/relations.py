@@ -50,7 +50,7 @@ class Relations(Collection):
     """
 
     def __init__(self, relations_com_object):
-        super().__init__(relations_com_object)
+        super().__init__(relations_com_object, child_object=Relation)
         self.relations = relations_com_object
 
     @property
@@ -432,7 +432,7 @@ class Relations(Collection):
                 |  The object to which the set is appended
 
         :param parent:
-        :return: Relations
+        :return: Relations()
         """
         return Relations(self.relations.CreateSetOfRelations(parent.parent))
 
@@ -453,50 +453,6 @@ class Relations(Collection):
             :return:
         """
         self.relations.GenerateXMLReportForChecks(name)
-
-    def get_items(self):
-        # todo: remove this as Collection().items should work? Need to test.
-        """
-        :return: [Relation()]
-        """
-        relation_list = []
-
-        for i in range(self.relations.Count):
-            relation = Relation(self.relations.Item(i + 1))
-            relation_list.append(relation)
-
-        return relation_list
-
-    def get_item_by_index(self, index):
-        """
-
-        .. warning::
-
-            The index when not a string must be it's python index (indexes in python start from 0).
-            collection. The COM interface index starts at 1.
-
-
-        :param str/int index: relation name or index
-        :return: item
-        """
-
-        if isinstance(index, int):
-            index += 1
-
-        return Relation(self.relations.Item(index))
-
-    def get_item_names(self):
-        """
-        :return: list
-        """
-
-        names = []
-
-        for i in range(self.relations.Count):
-            name = self.relations.Item(i + 1).name
-            names.append(name)
-
-        return names
 
     def item(self, index):
         """
@@ -519,7 +475,7 @@ class Relations(Collection):
                 | iIndex
                 |    The index or the name of the relation to retrieve from
                 |    the collection of relations.
-                |    As a numerics, this index is the rank of the relation
+                |    As a numeric, this index is the rank of the relation
                 |    in the collection.
                 |    The index of the first relation in the collection is 1, and
                 |    the index of the last relation is Count.
@@ -605,7 +561,7 @@ class Relations(Collection):
                 | iIndex
                 |    The index or the name of the relation to remove from
                 |    the collection of relations.
-                |    As a numerics, this index is the rank of the relation
+                |    As a numeric, this index is the rank of the relation
                 |    in the collection.
                 |    The index of the first relation in the collection is 1, and
                 |    the index of the last relation is Count.

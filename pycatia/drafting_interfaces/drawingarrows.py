@@ -16,7 +16,7 @@ class DrawingArrows(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=DrawingArrow)
         self.drawing_arrows = com_object
 
     def add(self, i_head_point_x, i_head_point_y, i_tail_point_x, i_tail_point_y):
@@ -56,7 +56,8 @@ class DrawingArrows(Collection):
         :param float i_tail_point_y:
         :return: DrawingArrow()
         """
-        return DrawingArrow(self.drawing_arrows.Add(i_head_point_x, i_head_point_y, i_tail_point_x, i_tail_point_y))
+        return self.child_object(
+            self.drawing_arrows.Add(i_head_point_x, i_head_point_y, i_tail_point_x, i_tail_point_y))
 
     def item(self, i_index):
         """
@@ -78,7 +79,7 @@ class DrawingArrows(Collection):
                 | Parameters:
                 | iIndex
                 |    The index of the drawing arrow to retrieve from the collection of drawing arows.
-                |    As a numerics, this index is the rank of the drawing arrow in the collection.
+                |    As a numeric, this index is the rank of the drawing arrow in the collection.
                 |    The index of the first drawing arrow in the collection is 1, and
                 |    the index of the last drawing arrow is Count.
                 | Returns:
@@ -120,7 +121,7 @@ class DrawingArrows(Collection):
                 | iIndex
                 |    The index of the drawing arrow to remove from
                 |    the collection of drawing arrows.
-                |    As a numerics, this index is the rank of the drawing arrow
+                |    As a numeric, this index is the rank of the drawing arrow
                 |    in the collection.
                 |    The index of the first drawing arrow in the collection is 1, and
                 |    the index of the last drawing arrow is Count.
@@ -141,4 +142,4 @@ class DrawingArrows(Collection):
         self.drawing_arrows.Remove(i_index)
 
     def __repr__(self):
-        return f'DrawingArrows()'
+        return f'DrawingArrows(name="{self.name}")'

@@ -14,8 +14,9 @@ class Collection:
 
     """
 
-    def __init__(self, com_object):
-        self.com_object = com_object
+    def __init__(self, com_collection_object, child_object=AnyObject):
+        self.com_object = com_collection_object
+        self.child_object = child_object
 
     @property
     def application(self):
@@ -68,15 +69,33 @@ class Collection:
 
     def items(self):
         """
-        :return: [AnyObject()]
+        :return: [self.child_object()]
         """
         items_list = []
 
         for i in range(self.com_object.Count):
-            item = AnyObject(self.com_object.Item(i + 1))
+            item = self.child_object(self.com_object.Item(i + 1))
             items_list.append(item)
 
         return items_list
+
+    def get_item_by_index(self, index):
+        """
+
+        .. warning::
+
+            The index when not a string must be it's python index (indexes in python start from 0).
+            collection. The COM interface index starts at 1.
+
+
+        :param str/int index: relation name or index
+        :return: item
+        """
+
+        if isinstance(index, int):
+            index += 1
+
+        return self.child_object(self.com_object.Item(index))
 
     def get_item_names(self):
         names = []
@@ -89,7 +108,7 @@ class Collection:
     def get_item_by_name(self, name):
         for i in range(self.com_object.Count):
             if self.com_object.Item(i + 1).Name == name:
-                return AnyObject(self.com_object.Item(i + 1))
+                return self.child_object(self.com_object.Item(i + 1))
 
         return None
 

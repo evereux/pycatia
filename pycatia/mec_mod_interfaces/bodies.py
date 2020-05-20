@@ -15,7 +15,7 @@ class Bodies(Collection):
     """
 
     def __init__(self, collection_com_object):
-        super().__init__(collection_com_object)
+        super().__init__(collection_com_object, child_object=Body)
         self.bodies = collection_com_object
 
     def add(self):
@@ -38,7 +38,7 @@ class Bodies(Collection):
 
 
         """
-        return self.bodies.Add()
+        return self.child_object(self.bodies.Add())
 
     def item(self, i_index):
         """
@@ -61,7 +61,7 @@ class Bodies(Collection):
                 | iIndex
                 |    The index or the name of the body to retrieve from
                 |    the collection of bodies.
-                |    As a numerics, this index is the rank of the body
+                |    As a numeric, this index is the rank of the body
                 |    in the collection.
                 |    The index of the first body in the collection is 1, and
                 |    the index of the last body is Count.
@@ -87,7 +87,7 @@ class Bodies(Collection):
 
         if isinstance(i_index, int):
             i_index += 1
-        return Body(self.bodies.Item(i_index))
+        return self.child_object(self.bodies.Item(i_index))
 
     def __repr__(self):
         return f'Bodies()'

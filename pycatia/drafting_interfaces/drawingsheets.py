@@ -17,7 +17,7 @@ class DrawingSheets(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=DrawingSheet)
         self.drawing_sheets = com_object
 
     @property
@@ -41,7 +41,7 @@ class DrawingSheets(Collection):
 
         :return:
         """
-        return self.drawing_sheets.ActiveSheet
+        return self.child_object(self.drawing_sheets.ActiveSheet)
 
     def add(self, i_drawing_sheet_name):
         """
@@ -134,7 +134,7 @@ class DrawingSheets(Collection):
                 | iIndex
                 |    The index or the name of the drawing sheet to retrieve from
                 |    the collection of drawing sheets.
-                |    As a numerics, this index is the rank of the drawing sheet
+                |    As a numeric, this index is the rank of the drawing sheet
                 |    in the collection.
                 |    The index of the first drawing sheet in the collection is 1, and
                 |    the index of the last drawing sheet is Count.
@@ -163,7 +163,7 @@ class DrawingSheets(Collection):
         if isinstance(i_index, int):
             i_index += 1
 
-        return DrawingSheet(self.drawing_sheets.Item(i_index))
+        return self.child_object(self.drawing_sheets.Item(i_index))
 
     def remove(self, i_index):
         """
@@ -181,7 +181,7 @@ class DrawingSheets(Collection):
                 | iIndex
                 |    The index or the name of the drawing sheet to remove from
                 |    the collection of drawing sheets.
-                |    As a numerics, this index is the rank of the drawing sheet
+                |    As a numeric, this index is the rank of the drawing sheet
                 |    in the collection.
                 |    The index of the first drawing sheet in the collection is 1, and
                 |    the index of the last drawing sheet is Count.
@@ -205,4 +205,4 @@ class DrawingSheets(Collection):
         return self.drawing_sheets.Remove(i_index)
 
     def __repr__(self):
-        return f'DrawingSheets()'
+        return f'DrawingSheets(name="{self.name}")'

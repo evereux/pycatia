@@ -1,8 +1,8 @@
 #! /usr/bin/python3.6
 # module initially auto generated using V5Automation.chm from CATIA V5 R25
 
-from pycatia.system_interfaces.collection import Collection
 from pycatia.sketcher_interfaces.sketch import Sketch
+from pycatia.system_interfaces.collection import Collection
 from .boundary import Boundary
 
 
@@ -16,7 +16,7 @@ class Sketches(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Sketch)
         self.sketches = com_object
 
     def add(self, i_plane):
@@ -51,7 +51,7 @@ class Sketches(Collection):
 
         :return Sketch()
         """
-        return Sketch(self.sketches.Add(i_plane))
+        return self.child_object(self.sketches.Add(i_plane))
 
     def get_boundary(self, i_label):
         """
@@ -97,7 +97,7 @@ class Sketches(Collection):
                 | iIndex
                 |    The index or the name of the sketch to retrieve from
                 |    the collection of sketches.
-                |    As a numerics, this index is the rank of the sketch
+                |    As a numeric, this index is the rank of the sketch
                 |    in the collection.
                 |    The index of the first sketch in the collection is 1, and
                 |    the index of the last sketch is Count.
@@ -117,7 +117,7 @@ class Sketches(Collection):
         if isinstance(i_index, int):
             i_index += 1
 
-        return Sketch(self.sketches.Item(i_index))
+        return self.child_object(self.sketches.Item(i_index))
 
     def __repr__(self):
-        return f'Sketches()'
+        return f'Sketches(name="{self.name}")'
