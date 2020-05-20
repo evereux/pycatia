@@ -19,7 +19,7 @@ class GeometricElements(Collection):
 
     def __init__(self, collection_com_object):
         super().__init__(collection_com_object)
-        self.geometricelements = collection_com_object
+        self.geometric_elements = collection_com_object
 
     def item(self, i_index):
         """
@@ -37,7 +37,7 @@ class GeometricElements(Collection):
                 | iIndex
                 |    The index or the name of the geometric element to retrieve from
                 |    the collection of geometric elements.
-                |    As a numerics, this index is the rank of the geometric element
+                |    As a numeric, this index is the rank of the geometric element
                 |    in the collection.
                 |    The index of the first geometric element in the collection is 1, and
                 |    the index of the last geometric element is Count.
@@ -59,7 +59,7 @@ class GeometricElements(Collection):
             see sketcher_interfaces.enumeration_types.geometric_type
             :return: int
         """
-        return self.geometricelements.Item(i_index)
+        return self.geometric_elements.Item(i_index)
 
     def __repr__(self):
         return f'GeometricElements()'

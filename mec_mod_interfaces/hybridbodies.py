@@ -15,15 +15,8 @@ class HybridBodies(Collection):
     """
 
     def __init__(self, collection_com_object):
-        super().__init__(collection_com_object)
+        super().__init__(collection_com_object, child_object=HybridBody)
         self.hybrid_bodies = collection_com_object
-
-    def get_item_by_name(self, name):
-        for i in range(self.com_object.Count):
-            if self.com_object.Item(i + 1).Name == name:
-                return HybridBody(self.com_object.Item(i + 1))
-
-        return None
 
     def add(self):
         """
@@ -46,7 +39,7 @@ class HybridBodies(Collection):
 
         :return: HybridBody()
         """
-        return HybridBody(self.hybrid_bodies.Add())
+        return self.child_object(self.hybrid_bodies.Add())
 
     def item(self, i_index):
         """
@@ -67,7 +60,7 @@ class HybridBodies(Collection):
                 | iIndex
                 |    The index or the name of the hybrid body to retrieve from
                 |    the collection of hybrid bodies.
-                |    As a numerics, this index is the rank of the hybrid body
+                |    As a numeric, this index is the rank of the hybrid body
                 |    in the collection.
                 |    The index of the first hybrid body in the collection is 1, and
                 |    the index of the last hybrid body is Count.
@@ -94,7 +87,7 @@ class HybridBodies(Collection):
         """
         if isinstance(i_index, int):
             i_index += 1
-        return HybridBody(self.hybrid_bodies.Item(i_index))
+        return self.child_object(self.hybrid_bodies.Item(i_index))
 
     def __repr__(self):
-        return f'HybridBodies()'
+        return f'HybridBodies(name="{self.name}")'

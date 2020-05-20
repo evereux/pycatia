@@ -17,7 +17,7 @@ class DrawingViews(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=DrawingView)
         self.drawing_views = com_object
 
     @property
@@ -44,7 +44,7 @@ class DrawingViews(Collection):
                 |
         :return:
         """
-        return DrawingView(self.drawing_views.ActiveView)
+        return self.child_object(self.drawing_views.ActiveView)
 
     def add(self, i_drawing_view_name):
         """
@@ -99,7 +99,7 @@ class DrawingViews(Collection):
                 | iIndex
                 |    The index or the name of the drawing view to retrieve from
                 |    the collection of drawing views.
-                |    As a numerics, this index is the rank of the drawing view
+                |    As a numeric, this index is the rank of the drawing view
                 |    in the collection.
                 |    The index of the first drawing view in the collection is 1, and
                 |    the index of the last drawing view is Count.
@@ -126,7 +126,7 @@ class DrawingViews(Collection):
         :param i_index:
         :return:
         """
-        return self.drawing_views.Item(i_index)
+        return self.child_object(self.drawing_views.Item(i_index))
 
     def remove(self, i_index):
         """
@@ -145,7 +145,7 @@ class DrawingViews(Collection):
                 | iIndex
                 |    The index or the name of the drawing view to remove from
                 |    the collection of drawing views.
-                |    As a numerics, this index is the rank of the drawing view
+                |    As a numeric, this index is the rank of the drawing view
                 |    in the collection.
                 |    The index of the first drawing view in the collection is 1, and
                 |    the index of the last drawing view is Count.
@@ -170,4 +170,4 @@ class DrawingViews(Collection):
         return self.drawing_views.Remove(i_index)
 
     def __repr__(self):
-        return f'DrawingViews()'
+        return f'DrawingViews(name="{self.name}")'

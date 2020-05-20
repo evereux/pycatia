@@ -15,7 +15,7 @@ class AxisSystems(Collection):
     """
 
     def __init__(self, collection_com_object):
-        super().__init__(collection_com_object)
+        super().__init__(collection_com_object, child_object=AxisSystem)
         self.axis_systems = collection_com_object
 
     def add(self):
@@ -37,7 +37,7 @@ class AxisSystems(Collection):
 
 
         """
-        return AxisSystem(self.axis_systems.Add())
+        return self.child_object(self.axis_systems.Add())
 
     def item(self, i_index):
         """
@@ -61,7 +61,7 @@ class AxisSystems(Collection):
                 | iIndex
                 |    The index or the name of the AxisSystem to retrieve from
                 |    the collection of AxisSystems.
-                |    As a numerics, this index is the rank of the AxisSystem
+                |    As a numeric, this index is the rank of the AxisSystem
                 |    in the collection.
                 |    The index of the first AxisSystem in the collection is 1, and
                 |    the index of the last AxisSystem is Count.
@@ -90,7 +90,7 @@ class AxisSystems(Collection):
         if isinstance(i_index, int):
             i_index += 1
 
-        return AxisSystem(self.axis_systems.Item(i_index))
+        return self.child_object(self.axis_systems.Item(i_index))
 
     def __repr__(self):
         return f'AxisSystems()'

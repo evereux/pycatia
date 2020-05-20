@@ -3,8 +3,6 @@
 
 from pycatia.system_interfaces.base_object import AnyObject
 
-from .parametersets import ParameterSets
-
 
 class ParameterSet(AnyObject):
     """
@@ -76,6 +74,7 @@ class ParameterSet(AnyObject):
 
 
         """
+        from .parametersets import ParameterSets
         return ParameterSets(self.parameterset.ParameterSets)
 
     def __repr__(self):

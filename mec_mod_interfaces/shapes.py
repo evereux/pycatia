@@ -16,7 +16,7 @@ class Shapes(Collection):
     """
 
     def __init__(self, collection_com_object):
-        super().__init__(collection_com_object)
+        super().__init__(collection_com_object, child_object=Shape)
         self.shapes = collection_com_object
 
     def get_boundary(self, i_label):
@@ -62,7 +62,7 @@ class Shapes(Collection):
                 | iIndex
                 |    The index or the name of the shape to retrieve from
                 |    the collection of shapes.
-                |    As a numerics, this index is the rank of the shape
+                |    As a numeric, this index is the rank of the shape
                 |    in the collection.
                 |    The index of the first shape in the collection is 1, and
                 |    the index of the last shape is 
@@ -89,7 +89,7 @@ class Shapes(Collection):
         if isinstance(i_index, int):
             i_index += 1
 
-        return Shape(self.shapes.Item(i_index))
+        return self.child_object(self.shapes.Item(i_index))
 
     def __repr__(self):
-        return f'Shapes()'
+        return f'Shapes(name="{self.name}")'
