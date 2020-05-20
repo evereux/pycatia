@@ -3,8 +3,6 @@
 
 from pathlib import Path
 
-from win32com.client import Dispatch
-
 from pycatia.system_interfaces.base_object import AnyObject
 from pycatia.in_interfaces.document import Document
 from pycatia.in_interfaces.documents import Documents
@@ -17,7 +15,7 @@ class Application(AnyObject):
 
                 | Represents the current CNext application and its frame window.The
                 | application is the root object for all the other objects you can use
-                | and access from scripts. It directly aggregates:
+                | and access from scripts. It directly aggregates.
 
     """
 
@@ -951,6 +949,3 @@ class Application(AnyObject):
 
     def __repr__(self):
         return f'Application(name="{self.name}")'
-
-
-catia_application = Application(Dispatch('CATIA.Application'))
