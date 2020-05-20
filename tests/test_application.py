@@ -1,6 +1,6 @@
 #! /usr/bin/python3.6
 
-from pycatia.in_interfaces.application import catia_application as catia
+from pycatia import catia
 from tests.source_files import cat_part_measurable
 
 

@@ -8,7 +8,7 @@
 
 """
 
-from pycatia.in_interfaces.application import catia_application as catia
+from pycatia import catia
 from pycatia.in_interfaces.position import Position
 
 documents = catia.documents

@@ -1,10 +1,8 @@
 #! /usr/bin/python3.6
 
-import pytest
-
-from pycatia.base_interfaces.context import CATIADocHandler
-from pycatia.exception_handling import CATIAApplicationException
+from pycatia import CATIADocHandler
 from pycatia.mec_mod_interfaces.part import Part
+
 from tests.source_files import cat_part_measurable
 from tests.source_files import cat_product
 from tests.source_files import cat_part_not_updated

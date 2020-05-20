@@ -1,9 +1,6 @@
 #! /usr/bin/python3.6
 
-import pytest
-
-from pycatia.base_interfaces.context import CATIADocHandler
-from pycatia.drafting_interfaces.drawingroot import DrawingRoot
+from pycatia import CATIADocHandler
 from pycatia.drafting_interfaces.enumeration_types import drawing_standard
 from pycatia.drafting_interfaces.enumeration_types import paper_orientation
 from pycatia.drafting_interfaces.enumeration_types import sheet_projection_method

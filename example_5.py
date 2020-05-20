@@ -18,8 +18,8 @@
 
 """
 
-from pycatia.in_interfaces.application import catia_application as catia
-from pycatia.scripts import create_points
+from pycatia import catia
+from pycatia.scripts.csv_tools import create_points
 
 # disable display refreshing to try tp speed up point generation.
 catia.refresh_display = False

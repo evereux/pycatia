@@ -15,7 +15,7 @@
 from pathlib import Path
 import os
 
-from pycatia.in_interfaces.application import catia_application as catia
+from pycatia import catia
 
 # path to file to open.
 file_name = r'tests\CF_Part_1.CATPart'

@@ -9,7 +9,7 @@
 
 """
 
-from pycatia.in_interfaces.application import catia_application as catia
+from pycatia import catia
 
 # from pycatia.knowledge_interfaces import BoolParam
 
