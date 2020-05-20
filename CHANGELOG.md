@@ -1,9 +1,14 @@
 # Changelog
 
+
+## 0.3.0
+* Major restructuring. This will break everything again. Sorry! But ... 
+  this should now be stable. As always, see the examples.
+* Lots of added features added.
+
 ## 0.2.1
 * Added knowledge_ware parameter features.
 * Object.path() now returns pathlib.Path() objects.
-* 
 
 ## 0.1.9
 * Updated setup.py due to pypi builds not scanning pycatia folder recursively.
