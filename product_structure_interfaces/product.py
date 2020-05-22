@@ -6,9 +6,9 @@ from pycatia.system_interfaces.base_object import AnyObject
 from pycatia.product_structure_interfaces.analyze import Analyze
 from pycatia.base_interfaces.move import Move
 from pycatia.in_interfaces.position import Position
-from .enumeration_types import cat_file_types
-from .enumeration_types import cat_work_mode_types
-from .enumeration_types import cat_rep_types
+from pycatia.enumeration.enumeration_types import cat_file_type
+from pycatia.enumeration.enumeration_types import cat_work_mode_type
+from pycatia.enumeration.enumeration_types import cat_rep_type
 
 
 class Product(AnyObject):
@@ -541,7 +541,7 @@ class Product(AnyObject):
         return self.product.AddMasterShapeRepresentation(i_shape_path_name)
 
     def add_shape_representation(
-        self, i_shape_path_name, i_shape_name, i_rep_behavior, i_context
+            self, i_shape_path_name, i_shape_name, i_rep_behavior, i_context
     ):
         """
         .. note::
@@ -608,7 +608,7 @@ class Product(AnyObject):
 
         :param str new_mode:
         """
-        return self.product.ApplyWorkMode(cat_work_mode_types[new_mode])
+        return self.product.ApplyWorkMode(cat_work_mode_type.index(new_mode))
 
     def connections(self, i_connections_type):
         """
@@ -724,7 +724,7 @@ class Product(AnyObject):
 
 
         """
-        return self.product.ExtractBOM(cat_file_types[i_file_type], i_file)
+        return self.product.ExtractBOM(cat_file_type[i_file_type], i_file)
 
     def get_active_shape_name(self):
         """
@@ -895,7 +895,7 @@ class Product(AnyObject):
         return self.product.GetShapePathName(i_shape_name)
 
     def get_shape_representation(
-        self, i_load_if_necessary, i_shape_name, i_rep_behavior, i_context
+            self, i_load_if_necessary, i_shape_name, i_rep_behavior, i_context
     ):
         """
 
@@ -937,7 +937,7 @@ class Product(AnyObject):
 
         """
         return self.product.GetShapeRepresentation(
-            i_load_if_necessary, i_shape_name, cat_rep_types[i_rep_behavior], i_context
+            i_load_if_necessary, i_shape_name, cat_rep_type[i_rep_behavior], i_context
         )
 
     def get_technological_object(self, i_application_type):
@@ -1015,7 +1015,7 @@ class Product(AnyObject):
 
         """
         return self.product.HasShapeRepresentation(
-            i_shape_name, cat_rep_types[i_rep_behavior], i_context
+            i_shape_name, cat_rep_type[i_rep_behavior], i_context
         )
 
     def is_catproduct(self):
@@ -1102,7 +1102,7 @@ class Product(AnyObject):
 
         """
         return self.product.RemoveShapeRepresentation(
-            i_shape_name, cat_rep_types[i_rep_behavior], i_context
+            i_shape_name, cat_rep_type[i_rep_behavior], i_context
         )
 
     def update(self):
