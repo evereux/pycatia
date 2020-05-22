@@ -3,6 +3,7 @@
 
 from pathlib import Path
 
+from pycatia.hybrid_shape_interfaces.hybridshapefactory import HybridShapeFactory
 from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.parameters import Parameters
 from pycatia.knowledge_interfaces.relations import Relations
@@ -210,9 +211,9 @@ class Part(AnyObject):
                 | Dim hybridShapeFact As Factory
                 | Set hybridShapeFact = partRoot.HybridShapeFactory
 
-        :return: Factory()
+        :return: HybridShapeFactory()
         """
-        return Factory(self.part.HybridShapeFactory)
+        return HybridShapeFactory(self.part.HybridShapeFactory)
 
     @property
     def in_work_object(self):
