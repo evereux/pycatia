@@ -31,17 +31,18 @@ class DrawingViews(Collection):
                 | 
                 | Returns the active drawing view of the active drawing sheet.
                 | Warning: This method is not available with 2D Layout for 3D
-                | Design. Example: The following example retrieves in
+                | Design.
+                |
+                | Example:
+                | The following example retrieves in
                 | ViewToWorkIn the active drawing view in the DrawingSheets
-                | collection of the document named CATDrawing1 Dim
-                | MyDrawingDoc As Document Set MyDrawingDoc =
-                | CATIA.Documents.Item("CATDrawing1") Dim ViewToWorkIn As
-                | DrawingView Set ViewToWorkIn =
-                | MyDrawingDoc.Sheets.ActiveSheet.DrawingViews.ActiveView
+                | collection of the document named CATDrawing1
                 |
-                | Parameters:
+                | Dim MyDrawingDoc As Document
+                | Set MyDrawingDoc = CATIA.Documents.Item("CATDrawing1")
+                | Dim ViewToWorkIn As DrawingView
+                | Set ViewToWorkIn = MyDrawingDoc.Sheets.ActiveSheet.DrawingViews.ActiveView
 
-                |
         :return:
         """
         return self.child_object(self.drawing_views.ActiveView)
@@ -110,8 +111,8 @@ class DrawingViews(Collection):
                 |  method. 
                 |    Returns:
                 |   The retrieved drawing view
-
-                |                | Examples:
+                |
+                | Examples:
                 | This example retrieves in ThisDrawingView the second drawing
                 | view, and in ThatDrawingView the drawing view named MyView
                 | in the drawing view collection of the active sheet in the

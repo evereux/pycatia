@@ -117,13 +117,14 @@ class Body(AnyObject):
                 | 
                 | Returns the body's Shapes collection. These shapes make up the
                 | sequence of shapes that will produce an intermediate result for the
-                | part, or the final result in the case of the main body.  Example:The
-                | following example returns in shapColl the collection of shapes managed
-                | by the main body of the partDoc part document:  Dim body As Body Set
-                | body = partDoc.Part.Bodies.MainBody Set shapColl = body.Shapes
-
-
-                | Parameters:
+                | part, or the final result in the case of the main body.
+                |
+                | Example:
+                | The following example returns in shapColl the collection of shapes managed
+                | by the main body of the partDoc part document:
+                | Dim body As Body
+                | Set body = partDoc.Part.Bodies.MainBody
+                | Set shapColl = body.Shapes
 
 
         """
@@ -171,6 +172,7 @@ class Body(AnyObject):
                 | to the body Body1:
                 | 
                 | Body1.InsertHybridShape (HybridShape1)
+
         """
         self.body.InsertHybridShape(i_hybrid_shape)
 

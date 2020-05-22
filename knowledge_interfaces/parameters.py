@@ -332,7 +332,6 @@ class Parameters(Collection):
         """
 
         .. warning::
-
             The index when not a string must be it's python index (indexes in python start from 0).
             collection. The COM interface index starts at 1.
 

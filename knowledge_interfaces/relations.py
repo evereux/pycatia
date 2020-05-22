@@ -33,9 +33,9 @@ class Relations(Collection):
                 | It only contains conditions on parameter values. For example, the following is a
                 | check:
                 |       CheckBody = mass<10kg
-
+                |
                 | The parameters should be defined previously.
-
+                |
                 | Example:
                 | The following example shows how to retrieve the collection of relations from a
                 | newly created part document:
@@ -47,6 +47,7 @@ class Relations(Collection):
                 | Set CATDocs = CATIA.Documents
                 | Set part  = CATDocs.Add("CATPart")
                 | Set relations = part.Relations
+
     """
 
     def __init__(self, relations_com_object):
@@ -66,10 +67,6 @@ class Relations(Collection):
                 | optimization is defined in the document. This property is available
                 | only when the Product Engineering Optimizer license is available.
 
-
-                | Parameters:
-
-
         """
         return self.relations.Optimizations
 
@@ -85,20 +82,17 @@ class Relations(Collection):
                 |
                 | Creates a check relation and adds it to the part's collection of
                 | relations.
-
+                |
                 | Parameters:
                 | iName
                 |     The check name
-                |
                 |  iComment
                 |     A description of the check
-                |
                 |  iCheckBody
                 |     The check definition
-                |
                 |  Returns:
                 |   The created check
-
+                |
                 | Examples:
                 | This example creates the maximummass check relation
                 | and adds it to the newly created part:
@@ -136,19 +130,17 @@ class Relations(Collection):
                 |
                 | Creates a design table based on a file organized in an vertical way
                 | and adds it to the part's collection of relations.
-
+                |
                 | Parameters:
                 | iName
                 |     The design table name
-                |
                 |  iComment
                 |     A description of the design table
                 |
                 |  iCopyMode
-
                 |  Returns:
                 |   The created design table
-
+                |
                 | Examples:
                 | This example creates the dt design table
                 | and adds it to the newly created part:
@@ -186,23 +178,19 @@ class Relations(Collection):
                 |
                 | Creates a formula relation and adds it to the part's collection of
                 | relations.
-
+                |
                 | Parameters:
                 | iName
                 |     The formula name
                 |
-                |  iComment
                 |     A description of the formula
-                |
                 |  iOutputParameter
                 |     The parameter which stores the result of the formula
-                |
                 |  iFormulaBody
                 |     The formula definition
-
                 |  Returns:
                 |   The created formula
-
+                |
                 | Examples:
                 | This example creates the computemass formula relation
                 | and adds it to the newly created part:
@@ -241,20 +229,16 @@ class Relations(Collection):
                 |
                 | Creates a design table based on a file organized in an horizontal way
                 | and adds it to the part's collection of relations.
-
+                |
                 | Parameters:
                 | iName
                 |     The design table name
-                |
                 |  iComment
                 |     A description of the design table
-                |
                 |  iCopyMode
-
                 |  Returns:
                 |   The created design table
-
-
+                |
                 | Examples:
                 | This example creates the dt design table
                 | and adds it to the newly created part:
@@ -271,11 +255,11 @@ class Relations(Collection):
                 |           TRUE,
                 |           "/users/client/data/horizontalsheet.txt")
 
-            :param str name:
-            :param str comment:
-            :param bool copy_mode:
-            :param Path() sheet_path:
-            :return: DesignTable()
+        :param str name:
+        :param str comment:
+        :param bool copy_mode:
+        :param Path() sheet_path:
+        :return: DesignTable()
         """
         return DesignTable(self.relations.CreateHorizontalDesignTable(name, comment, copy_mode, sheet_path))
 
@@ -291,25 +275,22 @@ class Relations(Collection):
                 |
                 | Creates a law relation and adds it to the part's collection of
                 | relations.
-
+                |
                 | Parameters:
                 | iName
                 |     The law name
-                |
                 |  iComment
                 |     A description of the law
-                |
                 |  iLawBody
                 |     The law definition
-
                 |  Returns:
                 |   The created law
 
-            :param str name:
-            :param str comment:
-            :param str law_body:
+        :param str name:
+        :param str comment:
+        :param str law_body:
 
-            :return: Law()
+        :return: Law()
         """
         return Law(self.relations.CreateLaw(name, comment, law_body))
 
@@ -325,21 +306,17 @@ class Relations(Collection):
                 |
                 | Creates a program relation and adds it to the part's collection of
                 | relations.
-
+                |
                 | Parameters:
                 | iName
                 |     The program name
-                |
                 |  iComment
                 |     A description of the program
-                |
                 |  iProgramBody
                 |     The program definition
-                |
-                |
                 |  Returns:
                 |   The created program
-
+                |
                 | Examples:
                 | This example creates the selectdepth program relation
                 | and adds it to the newly created part:
@@ -355,11 +332,10 @@ class Relations(Collection):
                 |           "Select depth with respect to mass",
                 |           "if (mass>2kg) { depth=2mm } else { depth=1 mm }")
 
-            :param str name:
-            :param str comment:
-            :param str program_body:
-            :return: Relation()
-
+        :param str name:
+        :param str comment:
+        :param str program_body:
+        :return: Relation()
         """
         return Rule(self.relations.CreateProgram(name, comment, program_body))
 
@@ -372,11 +348,11 @@ class Relations(Collection):
                 | o Func CreateRuleBase(    CATBSTR    iName) As Relation
                 |
                 | Creates a rulebase.
-
+                |
                 | Parameters:
                 | iName
                 |    The name of the rulebase.
-
+                |
                 |  Returns:
                 |      The created rulebase.
                 |    See also:
@@ -398,7 +374,7 @@ class Relations(Collection):
                 |                                 CATBSTR    iFormulaBody) As SetOfEquation
                 |
                 | Creates a set of equations.
-
+                |
                 | Parameters:
                 | iName
                 |  The name of the set of equation.
@@ -426,7 +402,7 @@ class Relations(Collection):
                 | o Sub CreateSetOfRelations(    AnyObject    iParent)
                 |
                 | Creates a set of relations and appends it to a parent object.
-
+                |
                 | Parameters:
                 | iParent
                 |  The object to which the set is appended
@@ -445,21 +421,21 @@ class Relations(Collection):
                 | o Sub GenerateXMLReportForChecks(    CATBSTR    iName)
                 |
                 | Generates an XML Report on all checks in the current document.
-
+                |
                 | Parameters:
                 | iName
                 |  The name of the XML file
-            :param str name:
-            :return:
+
+        :param str name:
+        :return:
         """
         self.relations.GenerateXMLReportForChecks(name)
 
     def item(self, index):
         """
         .. warning::
-
-        The index when not a string must be it's python index (indexes in python start from 0).
-        collection. The COM interface index starts at 1.
+            The index when not a string must be it's python index (indexes in python start from 0).
+            collection. The COM interface index starts at 1.
 
 
         .. note::
@@ -470,7 +446,7 @@ class Relations(Collection):
                 |
                 | Retrieves a relation using its index or its name from the Relations
                 | collection.
-
+                |
                 | Parameters:
                 | iIndex
                 |    The index or the name of the relation to retrieve from
@@ -485,7 +461,7 @@ class Relations(Collection):
                 |  activateLinkAnchor('AnyObject','Name','AnyObject.Name')  property or when creating the relation.
                 |    Returns:
                 |   The retrieved relation
-
+                |
                 | Examples:
                 | This example retrieves the last relation in the relations
                 | collection.
@@ -493,8 +469,8 @@ class Relations(Collection):
                 | Dim lastRelation As Relation
                 | Set lastRelation = relations.Item(relations.Count)
 
-            :param str or int index:
-            :return: Relation()
+        :param str or int index:
+        :return: Relation()
         """
 
         if isinstance(index, int):
@@ -512,19 +488,18 @@ class Relations(Collection):
                 |                    boolean    iRecursively) As Relations
                 |
                 | Returns a sub-collection of relations aggregated to an object.
-
+                |
                 | Parameters:
                 | iFeature
                 |  The object used to filter the the whole relation collection
                 |  to get the resulting sub-collection.
                 |
-                |  iRecursively
+                | iRecursively
                 |  A flag to specify if children parameters are to be searched for in the returned
                 |  collection
-
-                |  Returns:
+                | Returns:
                 |   The resulting sub-collection
-
+                |
                 | Examples:
                 | This example shows how to get a collection of relations that are under a Pad
                 |
@@ -537,15 +512,14 @@ class Relations(Collection):
                 | Set Pad1 = Body0.Shapes.Item("Pad.1")
                 | 'gets the collection of relations that are under the pad Pad.1
                 | Set Relations2 = Relations1.SubList(Pad1, TRUE)
+
         """
 
         return self.relations.SubList(feature, recursively)
 
     def remove(self, index):
         """
-
         .. warning::
-
             The index when not a string must be it's python index (indexes in python start from 0).
             collection. The COM interface index starts at 1.
 
@@ -569,14 +543,14 @@ class Relations(Collection):
                 |    the
                 |
                 |  activateLinkAnchor('AnyObject','Name','AnyObject.Name')  property or when creating the relation.
-
+                |
                 | Examples:
                 | This example removes the relation named density from
                 | the relations collection.
                 |
                 | relations.Remove("density")
 
-            :param str|int index:
+        :param str|int index:
         """
 
         if isinstance(index, int):
