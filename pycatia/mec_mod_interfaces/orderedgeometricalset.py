@@ -66,6 +66,7 @@ class OrderedGeometricalSet(AnyObject):
                 | setOrderedGeometricalSet1:
                 | Dim HybridShapes1 As HybridShapes
                 | Set HybridShapes1 = OrderedGeometricalSet1.HybridShapes
+
         :return: HybridShapes
         """
         return HybridShapes(self.ordered_geometrical_set.HybridShapes)

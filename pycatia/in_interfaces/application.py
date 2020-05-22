@@ -677,6 +677,7 @@ class Application(AnyObject):
                 | This example prevents new transactions to
                 | be created, which may increase performance.
                 | CATIA.DisableNewUndoRedoTransaction()
+
         :return:
         """
         return self.application.DisableNewUndoRedoTransaction()
@@ -699,7 +700,9 @@ class Application(AnyObject):
         """
         return self.application.EnableNewUndoRedoTransaction()
 
-    def execute_script(self, library_name, library_type, program_name, function_name, items):
+    def execute_script(
+        self, library_name, library_type, program_name, function_name, items
+    ):
         """
 
         .. note::
@@ -746,16 +749,14 @@ class Application(AnyObject):
         """
 
         run = self.com_object.SystemService.ExecuteScript(
-            library_name,
-            library_type,
-            program_name,
-            function_name,
-            items
+            library_name, library_type, program_name, function_name, items
         )
 
         return run
 
-    def evaluate(self, vba_code, function_name, measurable_items, cat_script_language=0):
+    def evaluate(
+        self, vba_code, function_name, measurable_items, cat_script_language=0
+    ):
         """
 
         .. note::
@@ -798,10 +799,7 @@ class Application(AnyObject):
         """
 
         run = self.application.SystemService.Evaluate(
-            vba_code,
-            cat_script_language,
-            function_name,
-            measurable_items,
+            vba_code, cat_script_language, function_name, measurable_items,
         )
 
         return run
@@ -834,7 +832,7 @@ class Application(AnyObject):
                 | Examples:
                 | This example asks the user to select a text file and prints the path of the selected
                 | file.
-                | filepath = CATIA.FileSelectionBox("Select a text file", "*.txt", CatFileSelectionModeOpen)
+                | filepath = CATIA.FileSelectionBox("Select a text file", "\*.txt", CatFileSelectionModeOpen)
                 | CATIA.SystemServices.Print "The selected file is " & filepath
 
         :param i_title:

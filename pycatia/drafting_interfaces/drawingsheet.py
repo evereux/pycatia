@@ -32,7 +32,6 @@ class DrawingSheet(AnyObject):
                 | of the MySheet drawing sheet so that after an update,
                 | existing and unmodified geometries don't move globally.
                 | MySheet.GenViewsPosMode = catFixedAxis
-                |
 
         :return:
         """
@@ -57,7 +56,7 @@ class DrawingSheet(AnyObject):
                 | Returns or sets the paper orientation. Example: This example
                 | sets the paper orientation for the MySheet drawing sheet to
                 | catPaperLandscape. MySheet.Orientation = catPaperLandscape
-                |
+
 
         :return:
         """
@@ -83,7 +82,6 @@ class DrawingSheet(AnyObject):
                 | page setup for the MySheet drawing sheet. Dim
                 | MySheetPageSetup As DrawingPageSetup Set MySheetPageSetup =
                 | MySheet.PageSetup
-                |
 
         :return:
         """
@@ -101,7 +99,6 @@ class DrawingSheet(AnyObject):
                 | Returns or sets the paper size. Example: This example sets
                 | the page size for the MySheet drawing sheet to catPaperA4.
                 | MySheet.PaperSize = catPaperA4
-                |
 
         :return:
         """
@@ -127,7 +124,6 @@ class DrawingSheet(AnyObject):
                 | example returns the print area for the MySheet drawing
                 | sheet. Dim MyPrintArea As PrintArea Set MyPrintArea =
                 | MySheet.PrintArea
-                |
 
         :return:
         """
@@ -146,7 +142,6 @@ class DrawingSheet(AnyObject):
                 | example sets the projection mode of the MySheet drawing
                 | sheet to catFirstAngle. MySheet.ProjectionMethod =
                 | catFirstAngle
-                |
 
         :return:
         """
@@ -171,7 +166,6 @@ class DrawingSheet(AnyObject):
                 | Returns or sets the scale of the drawing sheet. Example:
                 | This example sets the scale of the MySheet drawing sheet to
                 | 0.5. MySheet.Scale = 0.5
-                |
 
         :return:
         """
@@ -196,7 +190,6 @@ class DrawingSheet(AnyObject):
                 | Returns or sets the scale of the drawing sheet (Workaround
                 | for VBA keyword). Example: This example sets the scale of
                 | the MySheet drawing sheet to 0.5. MySheet.Scale2 = 0.5
-                |
 
         :return:
         """
@@ -224,7 +217,6 @@ class DrawingSheet(AnyObject):
                 | the collection of views of the MySheet drawing sheet. Dim
                 | ViewCollection As DrawingViews Set ViewCollection =
                 | MySheet.Views
-                |
 
         :return:
         """
@@ -244,10 +236,7 @@ class DrawingSheet(AnyObject):
                 | collection which contains this drawing sheet becomes the
                 | active one. Example: This example activates the MySheet
                 | drawing sheet. MySheet.Activate
-                |
-                | Parameters:
 
-                |
         :return:
         """
         return self.drawing_sheet.Activate()
@@ -269,10 +258,7 @@ class DrawingSheet(AnyObject):
                 | Layout for 3D Design. Example: This example forces the
                 | update of all the dawing views in the MySheet drawing sheet.
                 | MySheet.ForceUpdate
-                |
-                | Parameters:
 
-                |
         :return:
         """
         return self.drawing_sheet.ForceUpdate()
@@ -294,10 +280,7 @@ class DrawingSheet(AnyObject):
                 | Layout for 3D Design. Example: This example generates the
                 | dimensions for all the views in the MySheet drawing sheet.
                 | MySheet.GenerateDimensions
-                |
-                | Parameters:
 
-                |
         :return:
         """
         return self.drawing_sheet.GenerateDimensions()
@@ -314,8 +297,8 @@ class DrawingSheet(AnyObject):
                 |
                 | Parameters:
                 | oPaperHeight
-
-                |                | Examples:
+                |
+                | Examples:
                 | This example get the height of the DrawingSheet1.
                 | DrawingSheet1.GetPaperHeight oPaperHeight
 
@@ -335,8 +318,8 @@ class DrawingSheet(AnyObject):
                 |
                 | Parameters:
                 | oPaperWidth
-
-                |                | Examples:
+                |
+                | Examples:
                 | This example get the width of the DrawingSheet1.
                 | DrawingSheet1.GetPaperWidth oPaperWidth
 
@@ -357,10 +340,7 @@ class DrawingSheet(AnyObject):
                 | if the sheet is a detail sheet. Example: This example checks
                 | whether MySheet is a detail sheet. IsDetail =
                 | MySheet.IsDetail
-                |
-                | Parameters:
 
-                |
         :return:
         """
         return self.drawing_sheet.IsDetail()
@@ -376,10 +356,7 @@ class DrawingSheet(AnyObject):
                 | Isolates the drawing sheet. Warning: This method is not
                 | available with 2D Layout for 3D Design. Example: This
                 | example isolates the MySheet drawing sheet. MySheet.Isolate
-                |
-                | Parameters:
 
-                |
         :return:
         """
         return self.drawing_sheet.Isolate()
@@ -396,10 +373,7 @@ class DrawingSheet(AnyObject):
                 | default printer. Warning: This method is not available with
                 | 2D Layout for 3D Design. Example: This example prints the
                 | DrawingSheet1 on the default printer. DrawingSheet1.PrintOut
-                |
-                | Parameters:
 
-                |
         :return:
         """
         return self.drawing_sheet.PrintOut()
@@ -419,8 +393,8 @@ class DrawingSheet(AnyObject):
                 | fileName
                 |    The full pathname of the file receiving the data.
                 |  Warning: This method is not available with 2D Layout for 3D Design.
-
-                |                | Examples:
+                |
+                | Examples:
                 | This example prints the DrawingSheet1 in a file.
                 | DrawingSheet1.PrintToFile "e:\\temp\\sheet1.prn"
 
@@ -443,10 +417,7 @@ class DrawingSheet(AnyObject):
                 | not available with 2D Layout for 3D Design. Example: This
                 | example changes the MySheet into a detail sheet.
                 | MySheet.SetAsDetail
-                |
-                | Parameters:
 
-                |
         :return:
         """
         return self.drawing_sheet.SetAsDetail()
@@ -464,8 +435,8 @@ class DrawingSheet(AnyObject):
                 |
                 | Parameters:
                 | iPaperHeight
-
-                |                | Examples:
+                |
+                | Examples:
                 | This example set the height of the DrawingSheet1.
                 | DrawingSheet1.PaperSize = catPaperUser
                 | DrawingSheet1.SetPaperHeight iPaperHeight
@@ -488,8 +459,8 @@ class DrawingSheet(AnyObject):
                 |
                 | Parameters:
                 | iPaperWidth
-
-                |                | Examples:
+                |
+                | Examples:
                 | This example set the width of the DrawingSheet1.
                 | DrawingSheet1.PaperSize = catPaperUser
                 | DrawingSheet1.SetPaperWidth iPaperWidth
@@ -516,10 +487,7 @@ class DrawingSheet(AnyObject):
                 | This method is not available with 2D Layout for 3D Design.
                 | Example: This example updates the drawing views in the
                 | MySheet drawing sheet. MySheet.Update
-                |
-                | Parameters:
 
-                |
         :return:
         """
         return self.drawing_sheet.Update()
@@ -546,10 +514,7 @@ class DrawingSheet(AnyObject):
                 | drwviews.item(3) Set view2 = drwviews.item(4) newvieworder =
                 | Array(mainview, backview, view2, view1)
                 | drwviewsorder.reorder_Views(newvieworder)
-                |
-                | Parameters:
 
-                |
         :param i_ordered_views:
         :return:
         """
