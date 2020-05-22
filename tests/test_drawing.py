@@ -1,10 +1,10 @@
 #! /usr/bin/python3.6
 
 from pycatia import CATIADocHandler
-from pycatia.drafting_interfaces.enumeration_types import drawing_standard
-from pycatia.drafting_interfaces.enumeration_types import paper_orientation
-from pycatia.drafting_interfaces.enumeration_types import sheet_projection_method
-from pycatia.in_interfaces.enumeration_types import paper_size
+from pycatia.enumeration.enumeration_types import cat_drawing_standard
+from pycatia.enumeration.enumeration_types import cat_paper_orientation
+from pycatia.enumeration.enumeration_types import cat_sheet_projection_method
+from pycatia.enumeration.enumeration_types import cat_paper_size
 from tests.source_files import cat_drawing
 
 
@@ -25,9 +25,9 @@ def test_orientation():
         drawing_root = catia.active_document.drawing_root()
         sheets = drawing_root.sheets
         sheet_1 = sheets.item(0)
-        assert sheet_1.orientation == paper_orientation.index('catPaperLandscape')
+        assert sheet_1.orientation == cat_paper_orientation.index('catPaperLandscape')
         sheet_1.orientation = 0
-        assert sheet_1.orientation == paper_orientation.index('catPaperPortrait')
+        assert sheet_1.orientation == cat_paper_orientation.index('catPaperPortrait')
 
 
 def test_paper_size():
@@ -36,9 +36,9 @@ def test_paper_size():
         drawing_root = catia.active_document.drawing_root()
         sheets = drawing_root.sheets
         sheet_1 = sheets.item(0)
-        assert sheet_1.paper_size == paper_size.index('catPaperA0')
+        assert sheet_1.paper_size == cat_paper_size.index('catPaperA0')
         sheet_1.paper_size = 5
-        assert sheet_1.paper_size == paper_size.index('catPaperA3')
+        assert sheet_1.paper_size == cat_paper_size.index('catPaperA3')
 
 
 def test_sheets():
@@ -53,7 +53,7 @@ def test_standard():
     with CATIADocHandler(cat_drawing) as handler:
         catia = handler.catia
         root = catia.active_document.drawing_root()
-        assert root.standard == drawing_standard.index('catISO')
+        assert root.standard == cat_drawing_standard.index('catISO')
 
 
 def test_reorder():
@@ -90,4 +90,4 @@ def test_projection_method():
         sheets = handler.catia.active_document.drawing_root().sheets
         sheet_1 = sheets.item(1)
 
-        assert sheet_1.projection_method == sheet_projection_method.index('catFirstAngle')
+        assert sheet_1.projection_method == cat_sheet_projection_method.index('catFirstAngle')

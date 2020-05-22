@@ -4,7 +4,7 @@
 from pycatia.system_interfaces.base_object import AnyObject
 from pycatia.knowledge_interfaces.angle import Angle
 from pycatia.in_interfaces.reference import Reference
-from pycatia.mec_mod_interfaces import enumeration_types
+from pycatia.enumeration.enumeration_types import cat_axis_system_axis_type
 
 
 class AxisSystem(AnyObject):
@@ -126,7 +126,7 @@ class AxisSystem(AnyObject):
 
     @origin_type.setter
     def origin_type(self, value):
-        types = [x for x in enumeration_types.axis_system_origin_type]
+        types = [x for x in cat_axis_system_axis_type]
         if not isinstance(value, int) or value not in types:
             raise ValueError(
                 f'Value "value" must be an int and in the range "{types}".'
@@ -155,7 +155,7 @@ class AxisSystem(AnyObject):
 
     @type.setter
     def type(self, value):
-        types = [x for x in enumeration_types.axis_system_main_type]
+        types = [x for x in cat_axis_system_axis_type]
         if not isinstance(value, int) or value not in types:
             raise ValueError(
                 f'Value "value" must be an int and in the range "{types}".'
@@ -188,7 +188,7 @@ class AxisSystem(AnyObject):
 
     @x_axis_direction.setter
     def x_axis_direction(self, value):
-        types = [x for x in enumeration_types.axis_system_axis_type]
+        types = [x for x in cat_axis_system_axis_type]
         if not isinstance(value, int) or value not in types:
             raise ValueError(
                 f'Value "value" must be an int and in the range "{types}".'
@@ -249,7 +249,7 @@ class AxisSystem(AnyObject):
 
     @y_axis_direction.setter
     def y_axis_direction(self, value):
-        types = [x for x in enumeration_types.axis_system_axis_type]
+        types = [x for x in cat_axis_system_axis_type]
         if not isinstance(value, int) or value not in types:
             raise ValueError(
                 f'Value "value" must be an int and in the range "{types}".'
@@ -310,7 +310,7 @@ class AxisSystem(AnyObject):
 
     @y_axis_direction.setter
     def y_axis_direction(self, value):
-        types = [x for x in enumeration_types.axis_system_axis_type]
+        types = [x for x in cat_axis_system_axis_type]
         if not isinstance(value, int) or value not in types:
             raise ValueError(
                 f'Value "value" must be an int and in the range "{types}".'

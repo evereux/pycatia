@@ -6,7 +6,7 @@
 """
 
 from pycatia import CATIADocHandler
-from pycatia.space_analyses_interfaces.enumeration_types import measurable_name
+from pycatia.enumeration.enumeration_types import cat_measurable_name
 from pycatia.space_analyses_interfaces.spaworkbench import SPAWorkbench
 from tests.source_files import cat_part_measurable
 
@@ -54,7 +54,7 @@ def test_geometry_name():
         reference = part.create_reference_from_object(body)
         measurable = spa_workbench.get_measurable(reference)
 
-        assert measurable.geometry_name == measurable_name.index('CatMeasurableVolume')
+        assert measurable.geometry_name == cat_measurable_name.index('CatMeasurableVolume')
 
 
 def test_length():
