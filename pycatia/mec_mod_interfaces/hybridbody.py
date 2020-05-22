@@ -149,7 +149,7 @@ class HybridBody(AnyObject):
                 | 
                 | hybridBody.AppendHybridShape (hybridShape)
         """
-        self.hybridbody.AppendHybridShape(i_hybrid_shape)
+        self.hybridbody.AppendHybridShape(i_hybrid_shape.com_object)
 
     def __repr__(self):
         return f'HybridBody(name="{self.name}")'
