@@ -10,10 +10,13 @@ class BoolParam(EnumParam):
             CAA V5 Visual Basic help
 
                 | Represents the boolean parameter.The following example shows how to
-                | create it:Dim CATDocs As Documents  Set CATDocs      = CATIA.Documents
-                | Dim part1 As Document  Set part1        = CATDocs.Add("CATPart")
-                | Dim availability As BooleanParam  Set availability =
-                | part1.Parameters.CreateBoolean("availability", True)
+                | create it:
+                | Dim CATDocs As Documents
+                | Set CATDocs = CATIA.Documents
+                | Dim part1 As Document
+                | Set part1 = CATDocs.Add("CATPart")
+                | Dim availability As BooleanParam
+                | Set availability = part1.Parameters.CreateBoolean("availability", True)
 
     """
 
