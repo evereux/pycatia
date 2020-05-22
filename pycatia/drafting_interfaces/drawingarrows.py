@@ -63,9 +63,8 @@ class DrawingArrows(Collection):
         """
 
         .. warning::
-
-        The index when not a string must be it's python index (indexes in python start from 0).
-        collection. The COM interface index starts at 1.
+            The index when not a string must be it's python index (indexes in python start from 0).
+            collection. The COM interface index starts at 1.
 
         .. note::
             CAA V5 Visual Basic help
@@ -78,7 +77,7 @@ class DrawingArrows(Collection):
                 |
                 | Parameters:
                 | iIndex
-                |    The index of the drawing arrow to retrieve from the collection of drawing arows.
+                |    The index of the drawing arrow to retrieve from the collection of drawing arrows.
                 |    As a numeric, this index is the rank of the drawing arrow in the collection.
                 |    The index of the first drawing arrow in the collection is 1, and
                 |    the index of the last drawing arrow is Count.
@@ -89,9 +88,11 @@ class DrawingArrows(Collection):
                 | This example retrieves in ThisDrawingArrow the second
                 | drawing arrow, in the drawing view collection of the active
                 | view in the active sheet, in the active document supposed to
-                | be a drawing document. Dim MyView As DrawingView Set MyView
-                | = MySheet.Views.ActiveView Dim ThisDrawingArrow As
-                | DrawingArrow Set ThisDrawingArrow = MyView.Arrows.Item(2)
+                | be a drawing document.
+                | Dim MyView As DrawingView
+                | Set MyView = MySheet.Views.ActiveView
+                | Dim ThisDrawingArrow As DrawingArrow
+                | Set ThisDrawingArrow = MyView.Arrows.Item(2)
 
         :param int i_index:
         :return: DrawingArrow()
@@ -105,9 +106,8 @@ class DrawingArrows(Collection):
     def remove(self, i_index):
         """
         .. warning::
-
-        The index when not a string must be it's python index (indexes in python start from 0).
-        collection. The COM interface index starts at 1.
+            The index when not a string must be it's python index (indexes in python start from 0).
+            collection. The COM interface index starts at 1.
 
         .. note::
             CAA V5 Visual Basic help

@@ -31,7 +31,10 @@ class DrawingView(AnyObject):
                 | axis system of the drawing sheet where the drawing view
                 | lies. The angle is measured in radians and is counted
                 | counterclockwise. Warning: This method is not available with
-                | 2D Layout for 3D Design. Example: This example sets the
+                | 2D Layout for 3D Design.
+                |
+                | Example:
+                | This example sets the
                 | angle of the MyView drawing view to 90 degrees clockwise.
                 | You first need to compute the angle in radians and set the
                 | minus sign to indicate the rotation is clockwise. PI =
@@ -76,12 +79,14 @@ class DrawingView(AnyObject):
                 | o Property Components(    ) As   (Read Only)
                 | 
                 | Returns the drawing component instances collection (i.e.
-                | ditto collection) of the drawing view. Warning: This method
-                | is not available with 2D Layout for 3D Design. Example: This
-                | example retrieves in ComponentCollection the collection of
-                | component instances of the MyView drawing view. Dim
-                | ComponentCollection As DrawingComponents Set
-                | ComponentCollection = MyView.Components
+                | ditto collection) of the drawing view.
+                | Warning: This method is not available with 2D Layout for 3D Design.
+                |
+                | Example:
+                | This example retrieves in ComponentCollection the collection of
+                | component instances of the MyView drawing view.
+                | Dim ComponentCollection As DrawingComponents
+                | Set ComponentCollection = MyView.Components
 
         :return:
         """
@@ -98,11 +103,13 @@ class DrawingView(AnyObject):
                 | 
                 | Returns the drawing dimension collection of the drawing
                 | view. Warning: This method is not available with 2D Layout
-                | for 3D Design. Example: This example retrieves in
+                | for 3D Design.
+                |
+                | Example: This example retrieves in
                 | DimensionCollection the collection of dimensions of the
-                | MyView drawing view. Dim DimensionCollection As
-                | DrawingDimensions Set DimensionCollection =
-                | MyView.Dimensions
+                | MyView drawing view.
+                | Dim DimensionCollection As DrawingDimensions
+                | Set DimensionCollection = MyView.Dimensions
 
 
         :return:
@@ -124,9 +131,11 @@ class DrawingView(AnyObject):
                 | sketch to keep all modifications before saving document.
                 | Warning: This method is not available with 2D Layout for 3D
                 | Design. To get Sketch from factory2D: Set mySketch =
-                | my2DFactory.GetParent Example: The following example returns
-                | in my2DFactory the 2D factory of the view myView: Set
-                | my2DFactory = myView.Factory2D
+                | my2DFactory.GetParent
+                |
+                | Example: The following example returns
+                | in my2DFactory the 2D factory of the view myView:
+                | Set my2DFactory = myView.Factory2D
 
         :return:
         """
@@ -144,12 +153,12 @@ class DrawingView(AnyObject):
                 | Returns or sets the drawing view frame visualization state.
                 | True if the drawing view frame is visible. Warning: This
                 | method is not available with 2D Layout for 3D Design.
-                | Example: This example shows the frame of the MyView drawing
-                | view. MyView.FrameVisualization = True
                 |
-                | Parameters:
+                | Example:
+                | This example shows the frame of the MyView drawing
+                | view.
+                | MyView.FrameVisualization = True
 
-                |
         :return:
         """
         return self.drawing_view.FrameVisualization
@@ -169,10 +178,14 @@ class DrawingView(AnyObject):
                 | 
                 | Returns the generative behavior of the drawing view.
                 | Warning: This method is not available with 2D Layout for 3D
-                | Design. Example: This example retrieves in MyViewGenBehavior
-                | the generative behavior of the MyView drawing view. Dim
-                | MyViewGenBehavior As DrawingViewGenerativeBehavior Set
-                | MyViewGenBehavior = MyView.GenerativeBehavior
+                | Design.
+                |
+                | Example:
+                | This example retrieves in MyViewGenBehavior
+                | the generative behavior of the MyView drawing view.
+                |
+                | Dim MyViewGenBehavior As DrawingViewGenerativeBehavior
+                | Set MyViewGenBehavior = MyView.GenerativeBehavior
 
         :return:
         """
@@ -189,10 +202,12 @@ class DrawingView(AnyObject):
                 | 
                 | Returns the generative links of the drawing view. Warning:
                 | This method is not available with 2D Layout for 3D Design.
-                | Example: This example retrieves in MyViewGenLinks the
-                | generative links of the MyView drawing view. Dim
-                | MyViewGenLinks As DrawingViewGenerativeLinks Set
-                | MyViewGenLinks = MyView.GenerativeLinks
+                |
+                | Example:
+                | This example retrieves in MyViewGenLinks the
+                | generative links of the MyView drawing view.
+                | Dim MyViewGenLinks As DrawingViewGenerativeLinks
+                | Set MyViewGenLinks = MyView.GenerativeLinks
 
         :return:
         """
@@ -209,9 +224,13 @@ class DrawingView(AnyObject):
                 | 
                 | Returns the collection of geometric elements included in the
                 | drawing view sketch. Warning: This method is not available
-                | with 2D Layout for 3D Design. Example: The following example
+                | with 2D Layout for 3D Design.
+                |
+                | Example:
+                | The following example
                 | returns in colGeometry the list of geometric elements in the
-                | view myView: Dim colGeometry As GeometricElements Set
+                | view myView:
+                | Dim colGeometry As GeometricElements Set
                 | colGeometry = myView.GeometricElements
 
         :return:
@@ -257,9 +276,9 @@ class DrawingView(AnyObject):
                 | Returns the drawing picture collection of the drawing view.
                 | Warning: This method is not available with 2D Layout for 3D
                 | Design. Example: This example retrieves in PictureCollection
-                | the collection of pictures of the MyView drawing view. Dim
-                | PictureCollection As DrawingPictures Set PictureCollection =
-                | MyView.Pictures
+                | the collection of pictures of the MyView drawing view.
+                | Dim PictureCollection As DrawingPictures
+                | Set PictureCollection = MyView.Pictures
 
         :return:
         """
@@ -285,10 +304,14 @@ class DrawingView(AnyObject):
                 | For example, a left view can move horizontally and a top
                 | view can move vertically. To update the scale of the current
                 | drawing view according to the modification performed to the
-                | one of the reference drawing view. Warning: This method is
-                | not available with 2D Layout for 3D Design. Example: This
-                | example retrieves in ReferenceView the view used as
-                | reference by the MyView drawing view. Dim ReferenceView As
+                | one of the reference drawing view.
+                | Warning: This method is
+                | not available with 2D Layout for 3D Design.
+                |
+                | Example:
+                | This example retrieves in ReferenceView the view used as
+                | reference by the MyView drawing view.
+                | Dim ReferenceView As
 
         :return:
         """
@@ -312,8 +335,10 @@ class DrawingView(AnyObject):
                 | 
                 | Returns or sets the scale of the drawing view. Warning: This
                 | method is not available with 2D Layout for 3D Design.
-                | Example: This example sets the scale of the MyView drawing
-                | view to 0.5. MyView.Scale = 0.5
+                |
+                | Example:
+                | This example sets the scale of the MyView drawing view to 0.5.
+                | MyView.Scale = 0.5
 
         :return: float
         """
@@ -337,8 +362,11 @@ class DrawingView(AnyObject):
                 | 
                 | Returns or sets the scale of the drawing view (Workaround
                 | for VBA keyword). Warning: This method is not available with
-                | 2D Layout for 3D Design. Example: This example sets the
-                | scale of the MyView drawing view to 0.5. MyView.Scale2 = 0.5
+                | 2D Layout for 3D Design.
+                |
+                | Example:
+                | This example sets the scale of the MyView drawing view to 0.5.
+                | MyView.Scale2 = 0.5
 
         :return: float
         """
@@ -363,9 +391,9 @@ class DrawingView(AnyObject):
                 | Returns the drawing table collection of the drawing view.
                 | Warning: This method is not available with 2D Layout for 3D
                 | Design. Example: This example retrieves in TextCollection
-                | the collection of texts of the MyView drawing view. Dim
-                | TableCollection As DrawingTables Set TableCollection =
-                | MyView.Tables
+                | the collection of texts of the MyView drawing view.
+                | Dim TableCollection As DrawingTables
+                | Set TableCollection = MyView.Tables
 
         :return:
         """
@@ -382,10 +410,13 @@ class DrawingView(AnyObject):
                 | 
                 | Returns the drawing text collection of the drawing view.
                 | Warning: This method is not available with 2D Layout for 3D
-                | Design. Example: This example retrieves in TextCollection
-                | the collection of texts of the MyView drawing view. Dim
-                | TextCollection As DrawingTexts Set TextCollection =
-                | MyView.Texts
+                | Design.
+                |
+                | Example:
+                | This example retrieves in TextCollection
+                | the collection of texts of the MyView drawing view.
+                | Dim TextCollection As DrawingTexts
+                | Set TextCollection = MyView.Texts
 
         :return:
         """
@@ -402,10 +433,13 @@ class DrawingView(AnyObject):
                 | 
                 | Returns the drawing thread collection of the drawing view.
                 | Warning: This method is not available with 2D Layout for 3D
-                | Design. Example: This example retrieves in ThreadCollection
-                | the collection of threads of the MyView drawing view. Dim
-                | ThreadCollection As DrawingThreads Set ThreadCollection =
-                | MyView.Threads
+                | Design.
+                |
+                | Example:
+                | This example retrieves in ThreadCollection
+                | the collection of threads of the MyView drawing view.
+                | Dim ThreadCollection As DrawingThreads
+                | Set ThreadCollection = MyView.Threads
 
         :return:
         """
@@ -439,9 +473,9 @@ class DrawingView(AnyObject):
                 | Returns the drawing welding collection of the drawing view.
                 | Warning: This method is not available with 2D Layout for 3D
                 | Design. Example: This example retrieves in weldingCollection
-                | the collection of weldings of the MyView drawing view. Dim
-                | weldingCollection As DrawingWeldings Set weldingCollection =
-                | MyView.Weldings
+                | the collection of weldings of the MyView drawing view.
+                | Dim weldingCollection As DrawingWeldings
+                | Set weldingCollection = MyView.Weldings
 
         :return:
         """
@@ -463,8 +497,11 @@ class DrawingView(AnyObject):
                 | respect to the sheet coordinate system. This coordinate,
                 | like any length, is measured in millimeters. Warning: This
                 | method is not available with 2D Layout for 3D Design.
-                | Example: This example retrieves the x coordinate of the view
-                | relative position MyView. X = MyView.x
+                |
+                | Example:
+                | This example retrieves the x coordinate of the view
+                | relative position MyView.
+                | X = MyView.x
 
         :return:
         """
@@ -483,9 +520,12 @@ class DrawingView(AnyObject):
                 | coordinate system origin. It is expressed with respect to
                 | the sheet coordinate system. This coordinate, like any
                 | length, is measured in millimeters. Warning: This method is
-                | not available with 2D Layout for 3D Design. Example: This
-                | example retrieves the x coordinate of the coordinate system
-                | origin of the MyView drawing view. X = MyView.xAxisData
+                | not available with 2D Layout for 3D Design.
+                |
+                | Example:
+                | This example retrieves the x coordinate of the coordinate system
+                | origin of the MyView drawing view.
+                | X = MyView.xAxisData
 
         :return:
         """
@@ -514,10 +554,13 @@ class DrawingView(AnyObject):
                 | respect to the sheet coordinate system. This coordinate,
                 | like any length, is measured in millimeters. Warning: This
                 | method is not available with 2D Layout for 3D Design.
-                | Example: This example sets the y coordinate of the view
+                |
+                | Example:
+                | This example sets the y coordinate of the view
                 | relative position MyView to 5 inches. You need first to
-                | convert the 5 inches into millimeters. NewYCoordinate =
-                | 5*25.4 MyView.y = NewYCoordinate
+                | convert the 5 inches into millimeters.
+                | NewYCoordinate = 5*25.4
+                | MyView.y = NewYCoordinate
 
         :return:
         """
@@ -536,11 +579,14 @@ class DrawingView(AnyObject):
                 | coordinate system origin. It is expressed with respect to
                 | the sheet coordinate system. This coordinate, like any
                 | length, is measured in millimeters. Warning: This method is
-                | not available with 2D Layout for 3D Design. Example: This
-                | example sets the y coordinate of the coordinate system
+                | not available with 2D Layout for 3D Design.
+                |
+                | Example:
+                | This example sets the y coordinate of the coordinate system
                 | origin of the MyView drawing view to 5 inches. You need
                 | first to convert the 5 inches into millimeters.
-                | NewYCoordinate = 5*25.4 MyView.yAxisData = NewYCoordinate
+                | NewYCoordinate = 5*25.4
+                | MyView.yAxisData = NewYCoordinate
 
         :return:
         """
@@ -564,8 +610,11 @@ class DrawingView(AnyObject):
                 | Activates the drawing view. Activating a drawing view means
                 | that this drawing view is the one on which the end-user is
                 | now working. Warning: This method is not available with 2D
-                | Layout for 3D Design. Example: This example activates the
-                | ViewToWorkOn drawing view. ViewToWorkOn.Activate()
+                | Layout for 3D Design.
+                |
+                | Example:
+                | This example activates the ViewToWorkOn drawing view.
+                | ViewToWorkOn.Activate()
 
         :return:
         """
@@ -583,9 +632,13 @@ class DrawingView(AnyObject):
                 | the alignment with the reference view restores the
                 | constraints that the reference view imposes to the current
                 | drawing view. Warning: This method is not available with 2D
-                | Layout for 3D Design. Example: This example activates the
+                | Layout for 3D Design.
+                |
+                | Example:
+                | This example activates the
                 | alignment from the MyView drawing view to its reference
-                | view. MyView.AlignedWithReferenceView()
+                | view.
+                | MyView.AlignedWithReferenceView()
 
         :return:
         """
@@ -606,10 +659,13 @@ class DrawingView(AnyObject):
                 | component reference. Note: Prefix of drawing view can be
                 | also retrieved across name property defined in CATIABase
                 | Warning: This method is not available with 2D Layout for 3D
-                | Design. Example: This example gets the prefix, the ident,
-                | and the suffix of the name of the MyView drawing view Dim
-                | MyPrefix, MyIdent, MySuffix As CATBSTR MyView.GetViewName
-                | (MyPrefix, MyIdent, MySuffix)
+                | Design.
+                |
+                | Example:
+                | This example gets the prefix, the ident,
+                | and the suffix of the name of the MyView drawing view
+                | Dim MyPrefix, MyIdent, MySuffix As CATBSTR
+                | MyView.GetViewName(MyPrefix, MyIdent, MySuffix)
 
         :param i_view_name_prefix:
         :param i_view_name_ident:
@@ -634,14 +690,14 @@ class DrawingView(AnyObject):
                 | Parameters:
                 | iFirst
                 |    The first character from which the parameter is inserted 
-                |  
                 |  ioText
                 |    The text on which the scale parameter will be inserted
                 |
                 | Examples:
                 | This example insert the Angle parameter of MyView drawing
-                | view at the end of MyText drawing text. index =
-                | Len(MyText.Text)+1 MyView.InsertViewScale index, MyText
+                | view at the end of MyText drawing text.
+                | index = Len(MyText.Text)+1
+                | MyView.InsertViewScale index, MyText
 
         :param i_first:
         :param io_text:
@@ -690,9 +746,11 @@ class DrawingView(AnyObject):
                 | Returns whether the drawing view has a generative behavior.
                 | Warning: This method is not available with 2D Layout for 3D
                 | Design. True if the drawing view has a generative behavior.
-                | Example: This example retrieves in GenView if the MyView
-                | drawing view has a generative behavior property set. GenView
-                | = MyView.IsGenerative()
+                |
+                | Example:
+                | This example retrieves in GenView if the MyView
+                | drawing view has a generative behavior property set.
+                | GenView = MyView.IsGenerative()
 
         :return:
         """
@@ -707,8 +765,10 @@ class DrawingView(AnyObject):
                 | o Sub Isolate(    )
                 | 
                 | Isolates the drawing view. Warning: This method is not
-                | available with 2D Layout for 3D Design. Example: This
-                | example isolates the MyView drawing view. MyView.Isolate
+                | available with 2D Layout for 3D Design.
+                |
+                | Example: This example isolates the MyView drawing view.
+                | MyView.Isolate
 
         :return:
         """
@@ -728,10 +788,14 @@ class DrawingView(AnyObject):
                 | a view, this view is open in edition while the previous
                 | active view is closed in edition. So calling SaveEdition()
                 | before exiting a macro without changing active view will
-                | allow a correct UNDO/REDO behavior. Warning: This method is
-                | not available with 2D Layout for 3D Design. Example: The
-                | following example saves the edition of the drawing view
+                | allow a correct UNDO/REDO behavior.
+                |
+                | Warning: This method is not available with 2D Layout for 3D Design.
+                |
+                | Example:
+                | The following example saves the edition of the drawing view
                 | MyView: MyView.SaveEdition
+
         :return:
         """
         return self.drawing_view.SaveEdition()
@@ -751,7 +815,10 @@ class DrawingView(AnyObject):
                 | component reference. Note: Prefix of drawing view can be
                 | also modified across name property defined in CATIABase
                 | Warning: This method is not available with 2D Layout for 3D
-                | Design. Example: This example sets the prefix, the ident,
+                | Design.
+                |
+                | Example:
+                | This example sets the prefix, the ident,
                 | and the suffix of the name of the MyView drawing view
                 | respectively to "MyPrefix", "MyIdent", and "MySuffix".
                 | MyView.SetViewName ("MyPrefix", "MyIdent", "MySuffix")
@@ -780,8 +847,13 @@ class DrawingView(AnyObject):
                 |
                 | Examples:
                 | This example gets the bounding box of the ViewToWorkOn
-                | drawing view. Dim oXY(4) As Double ViewToWorkOn.Size oXY
-                | Xmin = oXY(0) Xmax = oXY(1) Ymin = oXY(2) Ymax = oXY(3)
+                | drawing view.
+                | Dim oXY(4) As Double
+                | ViewToWorkOn.Size oXY
+                | Xmin = oXY(0)
+                | Xmax = oXY(1)
+                | Ymin = oXY(2)
+                | Ymax = oXY(3)
 
         :param o_values:
         :return:
@@ -801,9 +873,12 @@ class DrawingView(AnyObject):
                 | constraints that the reference view imposes to the current
                 | drawing view. You can then, for example, move and position
                 | it freely. Warning: This method is not available with 2D
-                | Layout for 3D Design. Example: This example deactivates the
+                | Layout for 3D Design.
+                |
+                | Example: This example deactivates the
                 | alignment from the MyView drawing view to its reference
-                | view. MyView.UnAlignedWithReferenceView()
+                | view.
+                | MyView.UnAlignedWithReferenceView()
 
         :return:
         """

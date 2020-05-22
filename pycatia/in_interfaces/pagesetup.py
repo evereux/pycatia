@@ -6,14 +6,14 @@ from pycatia.system_interfaces.base_object import AnyObject
 
 class PageSetup(AnyObject):
     """
-        .. note::
-            CAA V5 Visual Basic help
+    .. note::
+        CAA V5 Visual Basic help
 
-                | Represents the page setup.The page setup is the object that stores
-                | data which defines how yourdocuments and images are actually printed
-                | on paper.This data includes namely the paper size, the orientation,the
-                | bottom, top, right, and left margins, the zoom factor, the banner,and
-                | the printing quality.
+            | Represents the page setup.The page setup is the object that stores
+            | data which defines how yourdocuments and images are actually printed
+            | on paper.This data includes namely the paper size, the orientation,the
+            | bottom, top, right, and left margins, the zoom factor, the banner,and
+            | the printing quality.
 
     """
 
@@ -258,7 +258,6 @@ class PageSetup(AnyObject):
                 | document or the image to print at 25 mm from the paper lower left corner
                 | for the SetupForMyPrint page setup.
                 | SetupForMyPrint.Left = 25
-
 
         :return: float
         """
@@ -607,7 +606,7 @@ class PageSetup(AnyObject):
             CAA V5 Visual Basic help
 
                 | Quality
-                |o Property Quality(    ) As
+                | o Property Quality(    ) As
                 | 
                 | Returns or sets the printing  quality.
                 | Refer to
@@ -615,7 +614,7 @@ class PageSetup(AnyObject):
                 | Example:
                 | This example sets the printing quality to draft for the
                 | SetupForMyPrint page setup.
-
+                |
                 | SetupForMyPrint.Quality = catPrintQualityDraft
 
         :return: int enumeration_type
@@ -641,7 +640,7 @@ class PageSetup(AnyObject):
                 |
                 | Example:
                 | This example sets the right margin for the SetupForMyPrint page setup
-                 | to 12 mm.
+                | to 12 mm.
                 | SetupForMyPrint.RightMargin = 12
 
         :return: int
@@ -877,4 +876,4 @@ class PageSetup(AnyObject):
         self.page_setup.Zoom = value
 
     def __repr__(self):
-        return f'PageSetup()'
+        return f"PageSetup()"

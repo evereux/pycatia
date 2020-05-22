@@ -12,7 +12,6 @@ from .enumeration_types import cat_rep_types
 
 
 class Product(AnyObject):
-
     def __init__(self, com_object):
         """
 
@@ -52,8 +51,6 @@ class Product(AnyObject):
                 | object of the Engine product.  Dim EngineAnalysis As Analyze Set
                 | EngineAnalysis = Engine.Analyze
 
-
-                | Parameters:
 
         :return: analyze object
         """
@@ -165,10 +162,6 @@ class Product(AnyObject):
                 | Engine product.  Dim EngineMoveObject As Move Set EngineMoveObject =
                 | Engine.Move
 
-
-                | Parameters:
-
-
         """
         return Move(self.product)
 
@@ -197,11 +190,11 @@ class Product(AnyObject):
 
         example e:\\users\\psr\\Parts\\MyNiceProduct.CATProduct
         >>> Product.path().name
-        MyNiceProduct.CATProduct
+        >>> # MyNiceProduct.CATProduct
         >>> Product.path().parent
-        e:\\users\\psr\\Parts\\
+        >>> # e:\\users\\psr\\Parts\\
         >>> Product.path().suffix
-        .CATProduct
+        >>> # .CATProduct
 
         :return: Path()
         """
@@ -254,10 +247,6 @@ class Product(AnyObject):
                 | product from the productDoc product document:  Set productRoot =
                 | productDoc.Product Set params = productRoot.Parameters
 
-
-                | Parameters:
-
-
         """
         # todo: not implemented yet.
         return self.product.Parameters
@@ -307,9 +296,6 @@ class Product(AnyObject):
                  | EnginePositionObject As Position Set EnginePositionObject =
                  | Engine.Position
 
-
-                 | Parameters:
-
          """
 
         return Position(self.product)
@@ -328,10 +314,6 @@ class Product(AnyObject):
                 | products contained in the Engine product.  Dim EngineChildren As
                 | Products Set EngineChildren = Engine.Products
 
-
-                | Parameters:
-
-
         """
         return self.product.Products
 
@@ -346,10 +328,6 @@ class Product(AnyObject):
                 |
                 | Returns the collection of publications managed by the product.
 
-
-                | Parameters:
-
-
         """
         return self.product.Publications
 
@@ -363,10 +341,6 @@ class Product(AnyObject):
                 | o Property ReferenceProduct(    ) As Product
                 |
                 | Returns the Reference Product of this instance.
-
-
-                | Parameters:
-
 
         """
         return self.product.ReferenceProduct
@@ -386,10 +360,6 @@ class Product(AnyObject):
                 | returns in rels the relations of the productRoot product from the
                 | productDoc product document:  Set productRoot = productDoc.Product Set
                 | rels = productRoot.Relations
-
-
-                | Parameters:
-
 
         """
         return self.product.Relations
@@ -440,10 +410,6 @@ class Product(AnyObject):
                 | example sets the source for the Engine product to catProductMade.
                 | Engine.Source(catProductMade)
 
-
-                | Parameters:
-
-
         """
         return self.product.Source
 
@@ -464,10 +430,6 @@ class Product(AnyObject):
                 | productDoc product document:  Set productRoot = productDoc.Product Set
                 | UserProps = productRoot.UserRefProperties
 
-
-                | Parameters:
-
-
         """
         return self.product.UserRefProperties
 
@@ -478,18 +440,20 @@ class Product(AnyObject):
         :return: str
         """
 
-        return ('(Product) Attributes... \n'
-                f'File Name:             {self.file_name}\n'
-                f'Name:                  {self.name}\n'
-                f'Part Number:           {self.part_number}\n'
-                f'Revision:              {self.revision}\n'
-                f'Definition:            {self.definition}\n'
-                f'Nomenclature:          {self.nomenclature}\n'
-                f'Description Instance:  {self.description_instance}\n'
-                f'Description Reference: {self.description_reference}\n'
-                f'Reference:             {self.reference_product}\n'
-                f'Is CATProduct:         {self.is_catproduct()}\n'
-                f'Is CATPart:            {self.is_catpart()}')
+        return (
+            "(Product) Attributes... \n"
+            f"File Name:             {self.file_name}\n"
+            f"Name:                  {self.name}\n"
+            f"Part Number:           {self.part_number}\n"
+            f"Revision:              {self.revision}\n"
+            f"Definition:            {self.definition}\n"
+            f"Nomenclature:          {self.nomenclature}\n"
+            f"Description Instance:  {self.description_instance}\n"
+            f"Description Reference: {self.description_reference}\n"
+            f"Reference:             {self.reference_product}\n"
+            f"Is CATProduct:         {self.is_catproduct()}\n"
+            f"Is CATPart:            {self.is_catpart()}"
+        )
 
     def activate_default_shape(self):
         """
@@ -500,10 +464,6 @@ class Product(AnyObject):
                 | o Sub ActivateDefaultShape(    )
                 |
                 | Activate default shape.
-
-
-                | Parameters:
-
 
         """
         return self.product.ActivateDefaultShape()
@@ -517,8 +477,7 @@ class Product(AnyObject):
                 | o Sub ActivateShape(    CATBSTR    ShapeName)
                 |
                 | Activate one shape.
-
-
+                |
                 | Parameters:
                 | ShapeName
                 |            The name of the shape.
@@ -569,22 +528,21 @@ class Product(AnyObject):
                 | Parameters:
                 | iShapePathName
                 |    The path name where the master shape representation can be found
-
-
+                |
                 | Examples:
                 |
                 | This example adds the e:/Models/Engine.model as
                 | the master shape representation to the Engine product.
                 |
                 | Engine.AddMasterShapeRepresentation("e:/Models/Engine.model")
-                |
-                |
-                |
+
         """
         # todo: not yet implemented
         return self.product.AddMasterShapeRepresentation(i_shape_path_name)
 
-    def add_shape_representation(self, i_shape_path_name, i_shape_name, i_rep_behavior, i_context):
+    def add_shape_representation(
+        self, i_shape_path_name, i_shape_name, i_rep_behavior, i_context
+    ):
         """
         .. note::
             CAA V5 Visual Basic help
@@ -603,38 +561,32 @@ class Product(AnyObject):
                 | can also be added within a context or not. A representation on a
                 | product is optional, but many representation with  different behavior
                 | (or the same) is supported
-
-
+                |
                 | Parameters:
                 | iShapePathName
                 |    The path name where the representation can be found
-                |
                 |  iShapeName
                 |    The name that is given to the representation
                 |    This name is a user free choice
-                |
                 |  iRepBehavior
                 |    The behavior of the added representation.
                 |    It can take the values catRep3D if the representation is a 3D one,
                 |    catRep2D if the representation is a 2D one,
                 |    or catRepText if the representation is a text one.
-                |
                 |  iContext
                 |    A condition to specify if the added representation can be
                 |    displayed with the representation of other products.
-
-
-                | Examples:
                 |
+                | Examples:
                 | This example adds the e:/Models/Engine.model as
                 | a 3D representation to the Engine product within an assembly context.
-                |
                 | Engine.AddShapeRepresentation("e:/Models/Engine.model","MyShape",catRep3D,TRUE)
-                |
 
         """
         # todo: not yet implemented
-        return self.product.AddShapeRepresentation(i_shape_path_name, i_shape_name, i_rep_behavior, i_context)
+        return self.product.AddShapeRepresentation(
+            i_shape_path_name, i_shape_name, i_rep_behavior, i_context
+        )
 
     def apply_work_mode(self, new_mode):
         """
@@ -649,8 +601,7 @@ class Product(AnyObject):
                 | o Sub ApplyWorkMode(    CatWorkModeType    newMode)
                 |
                 | Applies a new working mode.
-
-
+                |
                 | Parameters:
                 | newMode
                 |            The new working mode.
@@ -673,10 +624,6 @@ class Product(AnyObject):
                 | constraint collection for the Engine product.  Dim EngineConstraints
                 | As Collection Set EngineConstraints = Engine.Constraints
 
-
-                | Parameters:
-
-
         """
         return self.product.Connections(i_connections_type)
 
@@ -692,8 +639,7 @@ class Product(AnyObject):
                 | stand for any geometrical object. Creating references is necessary for
                 | adding constraints between two components using Brep elements of the
                 | representations of these components.
-
-
+                |
                 | Parameters:
                 | iLabel
                 |    The path of the Brep element to use in the constraint.
@@ -703,13 +649,10 @@ class Product(AnyObject):
                 |    Components are separated using "/", and the product path is separated
                 |    from the Brep using "/!". For separating parameter from product path use "/".
                 |
-                |
                 |  Returns:
                 |   The created reference
-
-
-                | Examples:
                 |
+                | Examples:
                 | This example creates a reference from the path of a Brep element
                 | in the Prod2 product located below the Root root
                 | product. The face is located in the Pad.1 pad and limited by the
@@ -717,13 +660,11 @@ class Product(AnyObject):
                 |
                 | Dim Ref As Reference
                 | Ref = Prod2.CreateReferenceFromName("Root/Prod2/!Face:(Brp:(Pad.1:0(Brp:(Circle.1))):None())")
-                |
-                |
-                |
+
         """
         return self.product.CreateReferenceFromName(i_label)
 
-    def desactivate_default_shape(self):
+    def deactivate_default_shape(self):
         """
         .. note::
             CAA V5 Visual Basic help
@@ -733,14 +674,10 @@ class Product(AnyObject):
                 |
                 | Deactivate default shape.
 
-
-                | Parameters:
-
-
         """
         return self.product.DesactivateDefaultShape()
 
-    def desactivate_shape(self, shape_name):
+    def deactivate_shape(self, shape_name):
         """
         .. note::
             CAA V5 Visual Basic help
@@ -749,12 +686,10 @@ class Product(AnyObject):
                 | o Sub DesactivateShape(    CATBSTR    ShapeName)
                 |
                 | Deactivate one shape.
-
-
+                |
                 | Parameters:
                 | ShapeName
                 |            The name of the shape.
-
 
         """
         return self.product.DesactivateShape(shape_name)
@@ -775,8 +710,7 @@ class Product(AnyObject):
                 | Extracts the product's contents as a bill of materials (BOM). The bill
                 | of material displays, for every sub-assembly in the product, the one
                 | level depth components and some of their properties.
-
-
+                |
                 | Parameters:
                 | iFileType
                 |    Set this parameter to catFileTypeHTML to save to the html format.
@@ -803,10 +737,6 @@ class Product(AnyObject):
                 | Returns the name of the active shape.  Returns:  oShapeName
                 | The name of the active shape.
 
-
-                | Parameters:
-
-
         """
         return self.product.GetActiveShapeName()
 
@@ -821,10 +751,6 @@ class Product(AnyObject):
                 | List the name of all shapes.  Returns:  olistshape           The list
                 | of the names  The tab olistshape has to be allocated with a size given
                 | by GetNumberOfShapes.
-
-
-                | Parameters:
-
 
         """
         return self.product.GetAllShapesNames(olistshape)
@@ -841,9 +767,8 @@ class Product(AnyObject):
         """
 
         .. warning::
-
-        The index MUST be it's python index (indexs in python start from 0) from the Documents.get_documents()
-        collection. The COM interface index starts at 1.
+            The index MUST be it's python index (indexs in python start from 0) from the Documents.get_documents()
+            collection. The COM interface index starts at 1.
 
         :return: Product()
         """
@@ -875,10 +800,6 @@ class Product(AnyObject):
                 | Returns the default shape.  Returns:  oShapeName           The name of
                 | the default shape.
 
-
-                | Parameters:
-
-
         """
         return self.product.GetDefaultShapeName()
 
@@ -891,14 +812,12 @@ class Product(AnyObject):
                 | o Func GetMasterShapeRepresentation(    boolean    iLoadIfNecessary) As CATBaseDispatch
                 |
                 | Retrieves the product's master shape representation.
-
-
+                |
                 | Parameters:
                 | iLoadIfNecessary
                 |    Parameter to set to True if the master shape representation
                 |    should be loaded to determine if it exists, or to False otherwise.
-
-
+                |
                 | Examples:
                 |
                 | This example retrieves in MSRep the
@@ -906,9 +825,8 @@ class Product(AnyObject):
                 |
                 | Dim MSRep As Object
                 | Set MSRep = Engine.GetMasterShapeRepresentation(True)
-                |
-                |
-                |
+
+
         """
         return self.product.GetMasterShapeRepresentation(i_load_if_necessary)
 
@@ -925,10 +843,6 @@ class Product(AnyObject):
                 | master shape representation.  Set MSRepPath =
                 | Engine.GetMasterShapeRepresentationPathName
 
-
-                | Parameters:
-
-
         """
         return self.product.GetMasterShapeRepresentationPathName()
 
@@ -943,18 +857,14 @@ class Product(AnyObject):
                 | Returns the number of Shapes  Returns:  oNbShapes           The number
                 | of Shapes.
 
-
-                | Parameters:
-
-
         """
         return self.product.GetNumberOfShapes()
 
     def get_products(self):
         """
-        Returns a list of Products().
+        Returns a list of Product().
 
-        :return: list(Prouct())
+        :return: [Product()]
         """
         products = []
 
@@ -973,24 +883,24 @@ class Product(AnyObject):
                 | o Func GetShapePathName(    CATBSTR    iShapeName) As CATBSTR
                 |
                 | Returns the path name of a shape for a given shape name.
-
-
+                |
                 | Parameters:
                 | iShapeName
                 |    The name of the shape.
                 |
-                |
                 |  Returns:
                 |   oShapePathName           The path name of the shape.
-
 
         """
         return self.product.GetShapePathName(i_shape_name)
 
-    def get_shape_representation(self, i_load_if_necessary, i_shape_name, i_rep_behavior, i_context):
+    def get_shape_representation(
+        self, i_load_if_necessary, i_shape_name, i_rep_behavior, i_context
+    ):
         """
 
         i_rep_behaviour must be a string taken from KEY value of cat_rep_types
+
         .. note::
             CAA V5 Visual Basic help
 
@@ -1001,27 +911,22 @@ class Product(AnyObject):
                 |                                   boolean    iContext) As CATBaseDispatch
                 |
                 | Retrieves the product's  representation with the given parameters.
-
-
+                |
                 | Parameters:
                 | iLoadIfNecessary
                 |    Parameter to set to True if the master shape representation
                 |    should be loaded to determine if it exists, or to False otherwise.
-                |
                 |  iShapeName
                 |    The name of the representation of the product.
-                |
                 |  iRepBehavior
                 |    The behavior of the representation.
                 |    It can take the values catRep3D if the representation is a 3D one,
                 |    catRep2D if the representation is a 2D one,
                 |    or catRepText if the representation is a text one.
-                |
                 |  iContext
                 |    A condition to specify if the representation is
                 |    displayed with the representation of other products.
-
-
+                |
                 | Examples:
                 |
                 | This example retrieves in MSRep the
@@ -1029,15 +934,15 @@ class Product(AnyObject):
                 |
                 | Dim MSRep As Object
                 | Set MSRep = Engine.GetMasterShapeRepresentation(True,"PART",catRep3D,TRUE)
-                |
-                |
-                |
+
         """
-        return self.product.GetShapeRepresentation(i_load_if_necessary, i_shape_name, cat_rep_types[i_rep_behavior],
-                                                   i_context)
+        return self.product.GetShapeRepresentation(
+            i_load_if_necessary, i_shape_name, cat_rep_types[i_rep_behavior], i_context
+        )
 
     def get_technological_object(self, i_application_type):
         """
+
         .. note::
             CAA V5 Visual Basic help
 
@@ -1047,13 +952,11 @@ class Product(AnyObject):
                 | Returns the product's applicative data which type is the given
                 | parameter. The data returned can be either a collection or a simple
                 | object.
-
-
+                |
                 | Parameters:
                 | iApplicationType
                 |    The type of applicative data searched.
-
-
+                |
                 | Examples:
                 |
                 | This example retrieves the constraints for the
@@ -1061,9 +964,7 @@ class Product(AnyObject):
                 |
                 | Dim EngineConstraints As Collection
                 | Set EngineConstraints = Engine.GetTechnologicalObject("Constraints")
-                |
-                |
-                |
+
         """
         return self.product.GetTechnologicalObject(i_application_type)
 
@@ -1090,8 +991,7 @@ class Product(AnyObject):
                 |
                 | Returns whether the product has a representation of the given name
                 | with a given behavior. True if the product has such a representation.
-
-
+                |
                 | Parameters:
                 | iShapeName
                 |    The name of the representation of the product.
@@ -1105,19 +1005,18 @@ class Product(AnyObject):
                 |  iContext
                 |    A condition to specify if the representation is
                 |    displayed with the representation of other products.
-
-
+                |
                 | Examples:
                 |
                 | This example retrieves in HasRep whether the
                 | Engine product has a master shape representation.
                 |
                 | HasRep = Engine.HasRepresentation("PART",catRep3D,TRUE)
-                |
-                |
-                |
+
         """
-        return self.product.HasShapeRepresentation(i_shape_name, cat_rep_types[i_rep_behavior], i_context)
+        return self.product.HasShapeRepresentation(
+            i_shape_name, cat_rep_types[i_rep_behavior], i_context
+        )
 
     def is_catproduct(self):
         """
@@ -1125,7 +1024,7 @@ class Product(AnyObject):
         :return: bool
         """
 
-        if 'catproduct' == self.file_name.rsplit('.')[-1].lower():
+        if "catproduct" == self.file_name.rsplit(".")[-1].lower():
             return True
 
         return False
@@ -1136,7 +1035,7 @@ class Product(AnyObject):
         :return: bool
         """
 
-        if 'catpart' == self.file_name.rsplit('.')[-1].lower():
+        if "catpart" == self.file_name.rsplit(".")[-1].lower():
             return True
 
         return False
@@ -1160,10 +1059,6 @@ class Product(AnyObject):
                 | removes the master shape representation of the Engine product.
                 | Engine.RemoveMasterShapeRepresentation()
 
-
-                | Parameters:
-
-
         """
         return self.product.RemoveMasterShapeRepresentation()
 
@@ -1182,8 +1077,7 @@ class Product(AnyObject):
                 | visualization of the product.. It can be a CATIA V4 model, a VRML
                 | file, or any other type of document that can be displayed. Note: This
                 | representation is optional.
-
-
+                |
                 | Parameters:
                 | iShapeName
                 |    The name of the representation of the product.
@@ -1197,8 +1091,7 @@ class Product(AnyObject):
                 |  iContext
                 |    A condition to specify if the representation is
                 |    displayed with the representation of other products.
-
-
+                |
                 | Examples:
                 |
                 | This example removes the 3D representation named "PART" of the
@@ -1206,11 +1099,11 @@ class Product(AnyObject):
                 |
                 | Engine.RemoveMasterShapeRepresentation
                 | ("PART",catRep3D,TRUE)
-                |
-                |
-                |
+
         """
-        return self.product.RemoveShapeRepresentation(i_shape_name, cat_rep_types[i_rep_behavior], i_context)
+        return self.product.RemoveShapeRepresentation(
+            i_shape_name, cat_rep_types[i_rep_behavior], i_context
+        )
 
     def update(self):
         """
@@ -1225,10 +1118,6 @@ class Product(AnyObject):
                 | account the  components of the product at any level  Example:     The
                 | following example updates the root product:  Dim RootProduct As
                 | Product Set Rootproduct = productDoc.Product Rootproduct.Update
-
-
-                | Parameters:
-
 
         """
         return self.product.Update()

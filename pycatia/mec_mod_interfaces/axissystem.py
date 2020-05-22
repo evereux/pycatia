@@ -34,10 +34,6 @@ class AxisSystem(AnyObject):
                 | axis system is defined by a rotation around an axis, which means that
                 | its type is catAxisSystemAxisRotation.
 
-
-                | Parameters:
-
-
         """
         return Angle(self.axis_system.AxisRotationAngle)
 
@@ -53,10 +49,6 @@ class AxisSystem(AnyObject):
                 | Returns the reference for the axis rotation. Succeeds only if the axis
                 | system is defined by a rotation around an axis, which means that its
                 | type is catAxisSystemAxisRotation.
-
-
-                | Parameters:
-
 
         """
         return Reference(self.axis_system.AxisRotationReference)
@@ -77,10 +69,6 @@ class AxisSystem(AnyObject):
                 | following example sets the axis system axisSystem as the current one :
                 | axisSystem.IsCurrent = 1The following example sets the axis system
                 | axisSystem as not the current one :   axisSystem.IsCurrent = 0
-
-
-                | Parameters:
-
 
         """
         return self.axis_system.IsCurrent
@@ -105,10 +93,6 @@ class AxisSystem(AnyObject):
                 | Reference Set Reference6 =
                 | CATIA.ActiveDocument.Part.CreateReferenceFromGeometry  (
                 | HybridShapePointCoord5 )  AxisSystem0.OriginPoint = Reference6
-
-
-                | Parameters:
-
 
         """
         return Reference(self.axis_system.OriginPoint)
@@ -136,9 +120,6 @@ class AxisSystem(AnyObject):
                 | axisSystem.OriginTypeThe following example sets the origin type to 1 :
                 | axisSystem.OriginType = 1
 
-
-                | Parameters:
-
             :return int:
         """
         return self.axis_system.OriginType
@@ -147,7 +128,9 @@ class AxisSystem(AnyObject):
     def origin_type(self, value):
         types = [x for x in enumeration_types.axis_system_origin_type]
         if not isinstance(value, int) or value not in types:
-            raise ValueError(f'Value "value" must be an int and in the range "{types}".')
+            raise ValueError(
+                f'Value "value" must be an int and in the range "{types}".'
+            )
 
     @property
     def type(self):
@@ -174,7 +157,9 @@ class AxisSystem(AnyObject):
     def type(self, value):
         types = [x for x in enumeration_types.axis_system_main_type]
         if not isinstance(value, int) or value not in types:
-            raise ValueError(f'Value "value" must be an int and in the range "{types}".')
+            raise ValueError(
+                f'Value "value" must be an int and in the range "{types}".'
+            )
 
     @property
     def x_axis_direction(self):
@@ -197,7 +182,7 @@ class AxisSystem(AnyObject):
                 | CATIA.ActiveDocument.Part.CreateReferenceFromGeometry  (
                 | HybridShapePointCoord5 )  AxisSystem0.XAxisDirection = Reference6
 
-            :return: int
+        :return: int
         """
         return self.axis_system.XAxisDirection
 
@@ -205,7 +190,9 @@ class AxisSystem(AnyObject):
     def x_axis_direction(self, value):
         types = [x for x in enumeration_types.axis_system_axis_type]
         if not isinstance(value, int) or value not in types:
-            raise ValueError(f'Value "value" must be an int and in the range "{types}".')
+            raise ValueError(
+                f'Value "value" must be an int and in the range "{types}".'
+            )
 
     @property
     def x_axis_type(self):
@@ -231,7 +218,7 @@ class AxisSystem(AnyObject):
                 | axisSystem.XAxisTypeThe following example sets the X axis type to 1 :
                 | axisSystem.XAxisType = 1
 
-            :return: Reference()
+        :return: Reference()
         """
         return Reference(self.axis_system.XAxisType)
 
@@ -256,7 +243,7 @@ class AxisSystem(AnyObject):
                 | CATIA.ActiveDocument.Part.CreateReferenceFromGeometry  (
                 | HybridShapePointCoord5 )  AxisSystem0.YAxisDirection = Reference6
 
-            :return: int
+        :return: int
         """
         return self.axis_system.YAxisDirection
 
@@ -264,7 +251,9 @@ class AxisSystem(AnyObject):
     def y_axis_direction(self, value):
         types = [x for x in enumeration_types.axis_system_axis_type]
         if not isinstance(value, int) or value not in types:
-            raise ValueError(f'Value "value" must be an int and in the range "{types}".')
+            raise ValueError(
+                f'Value "value" must be an int and in the range "{types}".'
+            )
 
     @property
     def y_axis_type(self):
@@ -289,7 +278,8 @@ class AxisSystem(AnyObject):
                 | the Y axis type :  Catia.SystemService.Print " YAxisType = " &
                 | axisSystem.YAxisTypeThe following example sets the Y axis type to 1 :
                 | axisSystem.YAxisType = 1
-            :return: Reference()
+
+        :return: Reference()
         """
         return Reference(self.axis_system.YAxisType)
 
@@ -314,7 +304,7 @@ class AxisSystem(AnyObject):
                 | CATIA.ActiveDocument.Part.CreateReferenceFromGeometry  (
                 | HybridShapePointCoord5 )  AxisSystem0.ZAxisDirection = Reference6
 
-            :return: int
+        :return: int
         """
         return self.axis_system.ZAxisDirection
 
@@ -322,7 +312,9 @@ class AxisSystem(AnyObject):
     def y_axis_direction(self, value):
         types = [x for x in enumeration_types.axis_system_axis_type]
         if not isinstance(value, int) or value not in types:
-            raise ValueError(f'Value "value" must be an int and in the range "{types}".')
+            raise ValueError(
+                f'Value "value" must be an int and in the range "{types}".'
+            )
 
     @property
     def z_axis_type(self):
@@ -348,7 +340,7 @@ class AxisSystem(AnyObject):
                 | axisSystem.ZAxisTypeThe following example sets the Z axis type to 1 :
                 | axisSystem.ZAxisType = 1
 
-            :return: Reference()
+        :return: Reference()
         """
         return Reference(self.axis_system.ZAxisType)
 
@@ -366,12 +358,10 @@ class AxisSystem(AnyObject):
                 | system is defined by Euler angles, which means its type is
                 | catAxisSystemEulerAngles.
 
-
-                | Parameters:
-
-
         """
-        return self.axis_system.GetEulerAngles(o_first_angle, o_second_angle, third_angle)
+        return self.axis_system.GetEulerAngles(
+            o_first_angle, o_second_angle, third_angle
+        )
 
     def get_origin(self, o_origin):
         """
@@ -382,14 +372,12 @@ class AxisSystem(AnyObject):
                 | o Sub GetOrigin(    CATSafeArrayVariant    oOrigin)
                 | 
                 | Returns the coordinates X,Y,Z of the origin point of the axis system.
-
-
+                |
                 | Parameters:
                 | oOrigin
                 |    A Safe Array made up of 3 doubles: X, Y, Z, representing the 
                 |    coordinates in model space of the origin point of the axis system.
-
-
+                |
                 | Examples:
                 | 
                 | The following example retrieves in originCoord the coordinates
@@ -397,9 +385,7 @@ class AxisSystem(AnyObject):
                 | 
                 | Dim originCoord(2)
                 | axisSystem.GetOrigin originCoord
-                | 
-                | 
-                | 
+
         """
         return self.axis_system.GetOrigin(o_origin)
 
@@ -413,8 +399,7 @@ class AxisSystem(AnyObject):
                 |                      CATSafeArrayVariant    oVectorY)
                 | 
                 | Returns the coordinates X,Y,Z of the axes X and Y of the axis system.
-
-
+                |
                 | Parameters:
                 | oVectorX
                 |    A Safe Array made up of 3 doubles: X, Y, Z, representing the 
@@ -423,8 +408,7 @@ class AxisSystem(AnyObject):
                 |  oVectorY
                 |    A Safe Array made up of 3 doubles: X, Y, Z, representing the 
                 |    coordinates in model space of the Y axis vector of the axis system.
-
-
+                |
                 | Examples:
                 | 
                 | The following example retrieves in vectorXCoord and vectorYCoord
@@ -433,9 +417,8 @@ class AxisSystem(AnyObject):
                 | Dim vectorXCoord(2)
                 | Dim vectorYCoord(2)
                 | axisSystem.GetVectors vectorXCoord, vectorYCoord
-                | 
-                | 
-                | 
+
+
         """
         return self.axis_system.GetVectors(o_vector_x, o_vector_y)
 
@@ -448,14 +431,12 @@ class AxisSystem(AnyObject):
                 | o Sub GetXAxis(    CATSafeArrayVariant    oXAxis)
                 | 
                 | Returns the coordinates X,Y,Z of the X axis of the axis system.
-
-
+                |
                 | Parameters:
                 | oXAxis
                 |    A Safe Array made up of 3 doubles: X, Y, Z, representing the 
                 |    coordinates in model space of the X axis of the axis system.
-
-
+                |
                 | Examples:
                 | 
                 | The following example retrieves in XAxisCoord the coordinates
@@ -463,9 +444,8 @@ class AxisSystem(AnyObject):
                 | 
                 | Dim XAxisCoord(2)
                 | axisSystem.GetXAxis XAxisCoord
-                | 
-                | 
-                | 
+
+
         """
         return self.axis_system.GetXAxis(o_x_axis)
 
@@ -478,14 +458,12 @@ class AxisSystem(AnyObject):
                 | o Sub GetYAxis(    CATSafeArrayVariant    oYAxis)
                 | 
                 | Returns the coordinates X,Y,Z of the Y axis of the axis system.
-
-
+                |
                 | Parameters:
                 | oYAxis
                 |    A Safe Array made up of 3 doubles: X, Y, Z, representing the 
                 |    coordinates in model space of the Y axis of the axis system.
-
-
+                |
                 | Examples:
                 | 
                 | The following example retrieves in YAxisCoord the coordinates
@@ -493,9 +471,8 @@ class AxisSystem(AnyObject):
                 | 
                 | Dim YAxisCoord(2)
                 | axisSystem.GetYAxis XAxisCoord
-                | 
-                | 
-                | 
+
+
         """
         return self.axis_system.GetYAxis(o_y_axis)
 
@@ -508,14 +485,12 @@ class AxisSystem(AnyObject):
                 | o Sub GetZAxis(    CATSafeArrayVariant    oZAxis)
                 | 
                 | Returns the coordinates X,Y,Z of the Z axis of the axis system.
-
-
+                |
                 | Parameters:
                 | oZAxis
                 |    A Safe Array made up of 3 doubles: X, Y, Z, representing the 
                 |    coordinates in model space of the Z axis of the axis system.
-
-
+                |
                 | Examples:
                 | 
                 | The following example retrieves in ZAxisCoord the coordinates
@@ -523,9 +498,8 @@ class AxisSystem(AnyObject):
                 | 
                 | Dim ZAxisCoord(2)
                 | axisSystem.GetZAxis ZAxisCoord
-                | 
-                | 
-                | 
+
+
         """
         return self.axis_system.GetZAxis(o_z_axis)
 
@@ -538,14 +512,12 @@ class AxisSystem(AnyObject):
                 | o Sub PutOrigin(    CATSafeArrayVariant    iOrigin)
                 | 
                 | Defines the coordinates X,Y,Z of the origin point of the axis system.
-
-
+                |
                 | Parameters:
                 | iOrigin
                 |    A Safe Array made up of 3 doubles: X, Y, Z, representing the 
                 |    coordinates in model space of the origin point of the axis system.
-
-
+                |
                 | Examples:
                 | 
                 | The following example puts in originCoord the new coordinates of
@@ -556,9 +528,8 @@ class AxisSystem(AnyObject):
                 | originCoord ( 1 )  = 200.000000
                 | originCoord ( 2 )  = 10.000000
                 | axisSystem.PutOrigin originCoord
-                | 
-                | 
-                | 
+
+
         """
         return self.axis_system.PutOrigin(i_origin)
 
@@ -572,18 +543,15 @@ class AxisSystem(AnyObject):
                 |                      CATSafeArrayVariant    iVectorY)
                 | 
                 | Defines the coordinates X,Y,Z of the axes X and Y of the axis system.
-
-
+                |
                 | Parameters:
                 | iVectorX
                 |    A Safe Array made up of 3 doubles: X, Y, Z, representing the 
                 |    coordinates in model space of the X axis vector of the axis system.
-                |  
                 |  iVectorY
                 |    A Safe Array made up of 3 doubles: X, Y, Z, representing the 
                 |    coordinates in model space of the Y axis vector of the axis system.
-
-
+                |
                 | Examples:
                 | 
                 | The following example modifies in vectorXCoord and vectorYCoord
@@ -598,9 +566,8 @@ class AxisSystem(AnyObject):
                 | vectorYCoord ( 1 )  = 0.000000
                 | vectorYCoord ( 2 )  = 1.000000
                 | axisSystem.PutVectors vectorXCoord, vectorYCoord
-                | 
-                | 
-                | 
+
+
         """
         return self.axis_system.PutVectors(i_vector_x, i_vector_y)
 
@@ -613,14 +580,12 @@ class AxisSystem(AnyObject):
                 | o Sub PutXAxis(    CATSafeArrayVariant    iXAxis)
                 | 
                 | Defines the coordinates X,Y,Z of the X axis of the axis system.
-
-
+                |
                 | Parameters:
                 | iXAxis
                 |    A Safe Array made up of 3 doubles: X, Y, Z, representing the 
                 |    coordinates in model space of the X axis of the axis system.
-
-
+                |
                 | Examples:
                 | 
                 | The following example puts in XAxisCoord the new coordinates of
@@ -631,9 +596,8 @@ class AxisSystem(AnyObject):
                 | XAxis ( 1 )  = 200.000000
                 | XAxis ( 2 )  = 10.000000
                 | axisSystem.PutXAxis XAxis
-                | 
-                | 
-                | 
+
+
         """
         return self.axis_system.PutXAxis(i_x_axis)
 
@@ -646,14 +610,12 @@ class AxisSystem(AnyObject):
                 | o Sub PutYAxis(    CATSafeArrayVariant    iYAxis)
                 | 
                 | Defines the coordinates X,Y,Z of the Y axis of the axis system.
-
-
+                |
                 | Parameters:
                 | iYAxis
                 |    A Safe Array made up of 3 doubles: X, Y, Z, representing the 
                 |    coordinates in model space of the Y axis of the axis system.
-
-
+                |
                 | Examples:
                 | 
                 | The following example puts in XAxisCoord the new coordinates of
@@ -664,9 +626,8 @@ class AxisSystem(AnyObject):
                 | YAxis ( 1 )  = 200.000000
                 | YAxis ( 2 )  = 10.000000
                 | axisSystem.PutYAxis YAxis
-                | 
-                | 
-                | 
+
+
         """
         return self.axis_system.PutYAxis(i_y_axis)
 
@@ -679,14 +640,12 @@ class AxisSystem(AnyObject):
                 | o Sub PutZAxis(    CATSafeArrayVariant    iZAxis)
                 | 
                 | Defines the coordinates X,Y,Z of the Z axis of the axis system.
-
-
+                |
                 | Parameters:
                 | iZAxis
                 |    A Safe Array made up of 3 doubles: X, Y, Z, representing the 
                 |    coordinates in model space of the Z axis of the axis system.
-
-
+                |
                 | Examples:
                 | 
                 | The following example puts in ZAxisCoord the new coordinates of
@@ -697,11 +656,10 @@ class AxisSystem(AnyObject):
                 | ZAxis ( 1 )  = 200.000000
                 | ZAxis ( 2 )  = 10.000000
                 | axisSystem.PutZAxis ZAxis
-                | 
-                | 
-                | 
+
+
         """
         return self.axis_system.PutZAxis(i_z_axis)
 
     def __repr__(self):
-        return f'AxisSystem()'
+        return f"AxisSystem()"

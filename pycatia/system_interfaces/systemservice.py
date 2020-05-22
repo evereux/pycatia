@@ -6,10 +6,11 @@ from pycatia.system_interfaces.base_object import AnyObject
 
 class SystemService(AnyObject):
     """
-        .. note::
-            CAA V5 Visual Basic help
+    .. note::
+        CAA V5 Visual Basic help
 
-                | Represents an object which provides system services.
+            | Represents an object which provides system services.
+
 
     """
 
@@ -68,7 +69,6 @@ class SystemService(AnyObject):
                 |  
                 |  oResult
                 |  The value returned by the function (if any)
-
                 |
                 | Examples:
                 | This example executes the function CATMain from the
@@ -86,7 +86,9 @@ class SystemService(AnyObject):
         :param i_parameters:
         :return:
         """
-        return self.system_service.Evaluate(i_script_text, i_language, i_function_name, i_parameters)
+        return self.system_service.Evaluate(
+            i_script_text, i_language, i_function_name, i_parameters
+        )
 
     def execute_background_processus(self, i_executable_path):
         """
@@ -113,15 +115,14 @@ class SystemService(AnyObject):
                 | 		quote character ''' : 
                 | 		for example CATIA.SystemService.ExecuteBackgroundProcess "'C:\\Program Files\\myApp\\myApp.exe'
                 |       myArg".
-                |  
-                | 
+                |
                 |  Returns:
                 |     Non significative return code. It's never the asynchronous process return code
-
-                |                | Examples:
+                |
+                | Examples:
                 | This example executes the command located at and doesn't
                 | wait the end of its execution.
-                | CATIA.SystemService.ExecuteBackgroundProcessus ""
+                | CATIA.SystemService.ExecuteBackgroundProcessus
 
         :param i_executable_path:
         :return:
@@ -164,12 +165,10 @@ class SystemService(AnyObject):
                 |             inside the single enclosing quote, with the double quote character.
                 |             For example CATIA.SystemService.ExecuteProcessus "cmd.exe /c '" & Chr$(34) &
                 |              "E:\\My Bat File.bat" & Chr$(34) & "'"
-                |  
-                | 
                 |  Returns:
                 |     The synchronous process return code
-
-                |                | Examples:
+                |
+                | Examples:
                 | This example executes the command located at waits for it to
                 | end, and returns its return code. ReturnCode =
                 | CATIA.SystemService.ExecuteProcessus("")
@@ -179,7 +178,9 @@ class SystemService(AnyObject):
         """
         return self.system_service.ExecuteProcessus(i_executable_path)
 
-    def execute_script(self, i_library_name, i_type, i_program_name, i_function_name, i_parameters):
+    def execute_script(
+            self, i_library_name, i_type, i_program_name, i_function_name, i_parameters
+    ):
         """
         .. note::
             CAA V5 Visual Basic help
@@ -196,23 +197,18 @@ class SystemService(AnyObject):
                 | Parameters:
                 | iLibraryName
                 |  The library in which the script is contained
-                |  
                 |  iLibraryType
                 |  The type of the library
-                |  
                 |  iProgramName
                 |  The name of the program in the library
-                |  
                 |  iFunctionName
                 |  The name of the function to invoke
-                |  
                 |  iParameters
                 |  An array of parameters for the function
-                |  
                 |  oResult
                 |  The value returned by the function (if any)
-
-                |                | Examples:
+                |
+                | Examples:
                 | This example executes the function CATMain in the program
                 | Macro1.catvbs contained by Part1.CATPart Dim params()
                 | CATIA.SystemService.ExecuteScript"Part1.CATPart",
@@ -226,7 +222,9 @@ class SystemService(AnyObject):
         :param i_parameters:
         :return:
         """
-        return self.system_service.ExecuteScript(i_library_name, i_type, i_program_name, i_function_name, i_parameters)
+        return self.system_service.ExecuteScript(
+            i_library_name, i_type, i_program_name, i_function_name, i_parameters
+        )
 
     def print(self, i_string):
         """
@@ -241,8 +239,8 @@ class SystemService(AnyObject):
                 | Parameters:
                 | iString
                 |    The string to print
-
-                |                | Examples:
+                |
+                | Examples:
                 | This example prints the string "Hello world!".
                 | CATIA.SystemService.Print("Hello world!")
 
@@ -252,4 +250,4 @@ class SystemService(AnyObject):
         return self.system_service.Print(i_string)
 
     def __repr__(self):
-        return f'SystemService()'
+        return f"SystemService()"

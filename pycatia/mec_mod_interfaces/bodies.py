@@ -27,15 +27,14 @@ class Bodies(Collection):
                 | o Func Add(    ) As Body
                 | 
                 | Creates a new body and adds it to the Bodies collection. This body
-                | becomes the current one  Returns:  The created body  Example: The
-                | following example creates a body names NewBody in the body collection
+                | becomes the current one  Returns:  The created body
+                |
+                | Example:
+                | The following example creates a body names NewBody in the body collection
                 | of the rootPart part in the partDoc part document. NewBody becomes the
-                | current body in partDoc.  Set rootPart = partDoc.Part Set NewBody =
-                | rootPart.Bodies.Add()
-
-
-                | Parameters:
-
+                | current body in partDoc.
+                | Set rootPart = partDoc.Part
+                | Set NewBody = rootPart.Bodies.Add()
 
         """
         return self.child_object(self.bodies.Add())
@@ -90,4 +89,4 @@ class Bodies(Collection):
         return self.child_object(self.bodies.Item(i_index))
 
     def __repr__(self):
-        return f'Bodies()'
+        return f'Bodies(name="{self.name}")'
