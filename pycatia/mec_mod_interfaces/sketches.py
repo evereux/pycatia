@@ -49,6 +49,7 @@ class Sketches(Collection):
                 | Set XYPlane = myPart.OriginElements.PlaneXY()
                 | Set newSketch = myPart.Sketches.Add(XYPlane)
 
+        :param Reference() i_plane:
         :return Sketch()
         """
         return self.child_object(self.sketches.Add(i_plane))
@@ -71,7 +72,6 @@ class Sketches(Collection):
                 |  activateLinkAnchor('Reference','DisplayName','Reference.DisplayName') . 
                 |    Returns:
                 |   The retrieved boundary
-
 
         """
         return Boundary(self.sketches.GetBoundary(i_label))
