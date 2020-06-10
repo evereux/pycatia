@@ -25,7 +25,7 @@ class Shapes(Collection):
             CAA V5 Visual Basic help
 
                 | GetBoundary
-                | o Func GetBoundary(        iLabel) As Boundary
+                | o Func GetBoundary(iLabel) As Boundary
                 | 
                 | Returns a boundary using its label.
                 |
@@ -42,17 +42,11 @@ class Shapes(Collection):
 
     def item(self, i_index):
         """
-
-        .. warning::
-
-            The index when not a string must be it's python index (indexes in python start from 0).
-            collection. The COM interface index starts at 1.
-
         .. note::
             CAA V5 Visual Basic help
 
                 | Item
-                | o Func Item(        iIndex) As
+                | o Func Item(iIndex) As
                 | 
                 | Returns a shape using its index or its name from the Shapes
                 | collection.
@@ -85,10 +79,6 @@ class Shapes(Collection):
 
         :return: Shape()
         """
-
-        if isinstance(i_index, int):
-            i_index += 1
-
         return self.child_object(self.shapes.Item(i_index))
 
     def __repr__(self):

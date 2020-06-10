@@ -4,6 +4,12 @@
 pycatia
 =======
 
+This is alpha software. All the test cases and examples work but there will be many
+failures outside of the test framework. The CATIA com interface is huge and I'm
+currently just attacking the items I think will be most useful. The framework is in
+place for others to contribute so if you know CATIA and python please contribute. Bonus
+points for adding tests too.
+
 pycatia was primarily created to access the CATIA API Measurable
 object and it's methods without the need of visual basic / CATScripts.
 There is further functionaliy available which can be seen by looking at
@@ -21,7 +27,6 @@ pycatia accesses these methods by running VBA scripts using the
 and passing a small public function to it. Otherwise, pycatia uses the VB method
 directly but exposes it within the same python class.
 
-This has currently only been tested in CATIA V5 R21.
 
 Requirements
 ------------

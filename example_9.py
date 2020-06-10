@@ -9,7 +9,6 @@
 """
 
 from pycatia import catia
-from pycatia.in_interfaces.position import Position
 
 documents = catia.documents
 documents.open(r'tests\CF_TopLevelAssy.CATProduct')
@@ -19,8 +18,7 @@ product = document.product()
 products = product.get_products()
 
 for product in products:
-    position = Position(product.com_object)
-    print(position.get_components())
+    print(product.position.get_components())
     # print(product.name, position.get_components())
 
 document.close()

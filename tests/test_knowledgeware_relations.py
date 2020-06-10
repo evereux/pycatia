@@ -137,7 +137,7 @@ def test_relations_create_set_of_relations():
         document = handler.document
         part = document.part()
         relations = part.relations
-        relations.create_set_of_relations(relations)
+        relations.create_set_of_relations(part)
 
         assert relations.name == 'Relations'
 
@@ -185,7 +185,7 @@ def test_relations_get_item_by_index():
         part = document.part()
 
         relations = part.relations
-        item = relations.get_item_by_index(0)
+        item = relations.get_item_by_index(1)
 
         assert item.name == 'Formula.1'
 
@@ -208,7 +208,7 @@ def test_relations_item():
         part = document.part()
 
         relations = part.relations
-        relation = relations.item(0)
+        relation = relations.item(1)
         assert relation.name == 'Formula.1'
 
 
@@ -223,9 +223,9 @@ def test_relations_remove():
         part = document.part()
 
         relations = part.relations
-        relation = relations.item(0)
+        relation = relations.item(1)
         assert relation.name == 'Formula.1'
 
-        relations.remove(0)
-        relation = relations.item(0)
+        relations.remove(1)
+        relation = relations.item(1)
         assert relation.name != 'Formula.1'

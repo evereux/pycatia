@@ -1,7 +1,7 @@
 #! /usr/bin/python3.6
 
-from pycatia.system_interfaces.base_object import AnyObject
-from pycatia.system_interfaces.systemservice import SystemService
+from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.system_interfaces.system_service import SystemService
 
 
 class Measurable(AnyObject):

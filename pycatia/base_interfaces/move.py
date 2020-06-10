@@ -27,7 +27,7 @@ class Move:
             CAA V5 Visual Basic help
 
                 | MovableObject
-                | o Property MovableObject(    ) As Move
+                | o Property MovableObject() As Move
                 |
                 | Returns the movable object associated with the used object. Example:
                 | This example retrieves the myMovableObject from  Move object

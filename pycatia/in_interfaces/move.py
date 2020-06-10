@@ -1,7 +1,7 @@
 #! /usr/bin/python3.6
 # module initially auto generated using V5Automation.chm from CATIA R25 on 2020-05-18 10:56:40.651039
 
-from pycatia.system_interfaces.base_object import AnyObject
+from pycatia.system_interfaces.any_object import AnyObject
 
 
 class Move(AnyObject):
@@ -30,7 +30,7 @@ class Move(AnyObject):
             CAA V5 Visual Basic help
 
                 | MovableObject
-                | o Property MovableObject(    ) As   (Read Only)
+                | o Property MovableObject() As   (Read Only)
                 | 
                 | Returns the movable object associated with the used object.
                 | Example: This example retrieves the myMovableObject from
@@ -48,7 +48,7 @@ class Move(AnyObject):
             CAA V5 Visual Basic help
 
                 | Apply
-                | o Sub Apply(        iTransformationArray)
+                | o Sub Apply(iTransformationArray)
                 | 
                 | Applies a move transformation to a movable object.
                 |

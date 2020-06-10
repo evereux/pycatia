@@ -125,3 +125,5 @@ v5automation/*
 my_script_tst.py
 
 quick_n_dirty.py
+
+*.ipynb

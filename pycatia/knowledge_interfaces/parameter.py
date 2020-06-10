@@ -1,6 +1,6 @@
 #! /usr/bin/python3.6
 
-from pycatia.system_interfaces.base_object import AnyObject
+from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.knowledge_interfaces.relation import Relation
 
 
@@ -47,7 +47,7 @@ class Parameter(AnyObject):
             CAA V5 Visual Basic help
 
                 | Context
-                | o Property Context(    ) As AnyObject
+                | o Property Context() As AnyObject
                 |
                 | Returns the context of the parameter : a part, a product, a drafting,
                 | a process, depending where the parameter is.
@@ -68,7 +68,7 @@ class Parameter(AnyObject):
             CAA V5 Visual Basic help
 
                 | IsTrueParameter
-                | o Property IsTrueParameter(    ) As boolean
+                | o Property IsTrueParameter() As boolean
                 |
                 | Returns a boolean saying if the parameter is a true one (real,
                 | dimension, string, etc.) or a geometrical one (isolated points,
@@ -83,7 +83,7 @@ class Parameter(AnyObject):
             CAA V5 Visual Basic help
 
                 | OptionalRelation
-                | o Property OptionalRelation(    ) As Relation
+                | o Property OptionalRelation() As Relation
                 |
                 | Returns the relation that can be used to compute the parameter. As
                 | this relation might not exist, NULL may be returned, so a test is
@@ -169,7 +169,7 @@ class Parameter(AnyObject):
             CAA V5 Visual Basic help
 
                 | Renamed
-                | o Property Renamed(    ) As boolean
+                | o Property Renamed() As boolean
                 |
                 | Returns a boolean saying if the parameter is a renamed parameter or
                 | not.
@@ -243,7 +243,7 @@ class Parameter(AnyObject):
             CAA V5 Visual Basic help
 
                 | ValueAsString
-                | o Func ValueAsString(    ) As CATBSTR
+                | o Func ValueAsString() As CATBSTR
                 |
                 | Returns the value of the parameter as a string.
         """

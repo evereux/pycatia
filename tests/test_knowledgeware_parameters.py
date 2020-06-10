@@ -3,10 +3,10 @@
 from pycatia import CATIADocHandler
 from pycatia.mec_mod_interfaces.body import Body
 from pycatia.mec_mod_interfaces.shape import Shape
-from pycatia.knowledge_interfaces.boolparam import BoolParam
-from pycatia.knowledge_interfaces.intparam import IntParam
-from pycatia.knowledge_interfaces.strparam import StrParam
-from pycatia.knowledge_interfaces.realparam import RealParam
+from pycatia.knowledge_interfaces.bool_param import BoolParam
+from pycatia.knowledge_interfaces.int_param import IntParam
+from pycatia.knowledge_interfaces.str_param import StrParam
+from pycatia.knowledge_interfaces.real_param import RealParam
 from tests.source_files import cat_part_3
 from tests.source_files import cat_part_blank
 
@@ -17,7 +17,7 @@ def test_parameters_name():
         part = document.part()
         parameters = part.parameters
 
-        first_parameter = parameters.item(0)
+        first_parameter = parameters.item(1)
 
         assert first_parameter.name == r'CF_Part3\PartBody\Pad.1\FirstLimit\Length'
 
@@ -171,7 +171,7 @@ def test_sub_list():
         parameters = part.parameters
         sub_list = parameters.sub_list(shape, True)
 
-        assert sub_list.item(0).name == r'CF_Part3\PartBody\Pad.1\FirstLimit\Length'
+        assert sub_list.item(1).name == r'CF_Part3\PartBody\Pad.1\FirstLimit\Length'
 
 
 def test_remove_item():
@@ -185,9 +185,11 @@ def test_remove_item():
         parameters.create_boolean(bool_name, True)
         all_params = parameters.all_parameters
         index = None
+        # get all the parameters and find the index of the item called var name "bool_name".
         for i, p in enumerate(all_params()):
             if bool_name in p.name:
-                index = i
+                # all calls to object.index() methods start at 1. so add 1.
+                index = i + 1
         assert isinstance(index, int)
 
         parameters.remove_item(index)

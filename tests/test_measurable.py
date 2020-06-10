@@ -7,7 +7,7 @@
 
 from pycatia import CATIADocHandler
 from pycatia.enumeration.enumeration_types import cat_measurable_name
-from pycatia.space_analyses_interfaces.spaworkbench import SPAWorkbench
+from pycatia.space_analyses_interfaces.spa_workbench import SPAWorkbench
 from tests.source_files import cat_part_measurable
 
 
@@ -31,7 +31,7 @@ def test_area():
 
         part = document.part()
         bodies = part.bodies
-        body = bodies.item(0)
+        body = bodies.item(1)
 
         reference = part.create_reference_from_object(body)
         measurable = spa_workbench.get_measurable(reference)
@@ -49,7 +49,7 @@ def test_geometry_name():
 
         part = document.part()
         bodies = part.bodies
-        body = bodies.item(0)
+        body = bodies.item(1)
 
         reference = part.create_reference_from_object(body)
         measurable = spa_workbench.get_measurable(reference)
@@ -65,7 +65,7 @@ def test_length():
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name('Lines')
-        line1 = hybrid_body.hybrid_shapes.item(0)
+        line1 = hybrid_body.hybrid_shapes.item(1)
         line1_reference = part.create_reference_from_object(line1)
         line1_measurable = spa_workbench.get_measurable(line1_reference)
 
@@ -82,7 +82,7 @@ def test_perimeter():
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name('Surfaces')
-        surface = hybrid_body.hybrid_shapes.item(0)
+        surface = hybrid_body.hybrid_shapes.item(1)
         surface_reference = part.create_reference_from_object(surface)
         surface_measurable = spa_workbench.get_measurable(surface_reference)
 
@@ -100,7 +100,7 @@ def test_radius():
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name('Arcs')
-        arc = hybrid_body.hybrid_shapes.item(0)
+        arc = hybrid_body.hybrid_shapes.item(1)
         arc_reference = part.create_reference_from_object(arc)
         arc_measurable = spa_workbench.get_measurable(arc_reference)
         radius = 45.0
@@ -117,10 +117,10 @@ def test_angle_between():
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name('Lines')
-        line1 = hybrid_body.hybrid_shapes.item(0)
+        line1 = hybrid_body.hybrid_shapes.item(1)
         line1_reference = part.create_reference_from_object(line1)
         line1_measurable = spa_workbench.get_measurable(line1_reference)
-        line2 = hybrid_body.hybrid_shapes.item(1)
+        line2 = hybrid_body.hybrid_shapes.item(2)
         line2_reference = part.create_reference_from_object(line2)
         angle = 71.496249
         catia_angle = line1_measurable.get_angle_between(line2_reference)
@@ -142,7 +142,7 @@ def test_get_axis():
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name('Arcs')
-        arc = hybrid_body.hybrid_shapes.item(0)
+        arc = hybrid_body.hybrid_shapes.item(1)
         arc_reference = part.create_reference_from_object(arc)
         arc_measurable = spa_workbench.get_measurable(arc_reference)
 
@@ -163,7 +163,7 @@ def test_get_axis_system():
         spa_workbench = SPAWorkbench(document.com_object)
 
         axis_systems = part.axis_systems
-        axis = axis_systems.item(0)
+        axis = axis_systems.item(1)
         axis_reference = part.create_reference_from_object(axis)
         axis_measurable = spa_workbench.get_measurable(axis_reference)
 
@@ -206,7 +206,7 @@ def test_get_direction():
         spa_workbench = SPAWorkbench(document.com_object)
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name('Lines')
-        line1 = hybrid_body.hybrid_shapes.item(0)
+        line1 = hybrid_body.hybrid_shapes.item(1)
         line1_reference = part.create_reference_from_object(line1)
         line1_measurable = spa_workbench.get_measurable(line1_reference)
 
@@ -229,12 +229,12 @@ def test_get_minimum_distance():
 
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name('Lines')
-        line1 = hybrid_body.hybrid_shapes.item(0)
+        line1 = hybrid_body.hybrid_shapes.item(1)
         line1_reference = part.create_reference_from_object(line1)
         line1_measurable = spa_workbench.get_measurable(line1_reference)
 
         hybrid_body = hybrid_bodies.get_item_by_name('Arcs')
-        arc = hybrid_body.hybrid_shapes.item(0)
+        arc = hybrid_body.hybrid_shapes.item(1)
         arc_reference = part.create_reference_from_object(arc)
 
         minimum_distance = 44.126069
@@ -251,11 +251,11 @@ def test_get_minimum_distance_points():
         spa_workbench = SPAWorkbench(document.com_object)
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name('Points')
-        point1 = hybrid_body.hybrid_shapes.item(0)
+        point1 = hybrid_body.hybrid_shapes.item(1)
         point1_reference = part.create_reference_from_object(point1)
         point1_measurable = spa_workbench.get_measurable(point1_reference)
 
-        point2 = hybrid_body.hybrid_shapes.item(1)
+        point2 = hybrid_body.hybrid_shapes.item(2)
         point2_reference = part.create_reference_from_object(point2)
 
         minimum_distance_points = (
@@ -282,7 +282,7 @@ def test_get_plane():
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name('Planes')
-        plane = hybrid_body.hybrid_shapes.item(0)
+        plane = hybrid_body.hybrid_shapes.item(1)
         plane_reference = part.create_reference_from_object(plane)
         plane_measurable = spa_workbench.get_measurable(plane_reference)
 
@@ -311,7 +311,7 @@ def test_get_point():
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name('Points')
-        point1 = hybrid_body.hybrid_shapes.item(0)
+        point1 = hybrid_body.hybrid_shapes.item(1)
         point1_reference = part.create_reference_from_object(point1)
         point1_measurable = spa_workbench.get_measurable(point1_reference)
 
@@ -334,7 +334,7 @@ def test_get_points_on_axis():
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name('Cylinders')
-        cylinder = hybrid_body.hybrid_shapes.item(0)
+        cylinder = hybrid_body.hybrid_shapes.item(1)
         cylinder_reference = part.create_reference_from_object(cylinder)
         cylinder_measurable = spa_workbench.get_measurable(cylinder_reference)
 
@@ -363,7 +363,7 @@ def test_get_points_on_curve():
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name('Lines')
-        line1 = hybrid_body.hybrid_shapes.item(0)
+        line1 = hybrid_body.hybrid_shapes.item(1)
         line1_reference = part.create_reference_from_object(line1)
         line1_measurable = spa_workbench.get_measurable(line1_reference)
 
@@ -391,7 +391,7 @@ def test_volume():
 
         part = document.part()
         bodies = part.bodies
-        body = bodies.item(0)
+        body = bodies.item(1)
 
         reference = part.create_reference_from_object(body)
         measurable = spa_workbench.get_measurable(reference)
@@ -409,7 +409,7 @@ def test_centre_of_gravity():
 
         part = document.part()
         bodies = part.bodies
-        body = bodies.item(0)
+        body = bodies.item(1)
 
         reference = part.create_reference_from_object(body)
         measurable = spa_workbench.get_measurable(reference)
@@ -434,7 +434,7 @@ def test_angle():
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name('Arcs')
-        arc = hybrid_body.hybrid_shapes.item(0)
+        arc = hybrid_body.hybrid_shapes.item(1)
         arc_reference = part.create_reference_from_object(arc)
         arc_measurable = spa_workbench.get_measurable(arc_reference)
 
@@ -452,7 +452,7 @@ def test_center():
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name('Arcs')
-        arc = hybrid_body.hybrid_shapes.item(0)
+        arc = hybrid_body.hybrid_shapes.item(1)
 
         arc_reference = part.create_reference_from_object(arc)
         arc_measurable = spa_workbench.get_measurable(arc_reference)

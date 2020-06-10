@@ -20,18 +20,20 @@ hybrid_bodes = part.hybrid_bodies
 # get the hybrid body to add the items too.
 hybrid_body = hybrid_bodes.item("Geometrical Set.1")
 # define the points
-point_1 = factory.add_new_point_coord(1, 2, 3)
-point_2 = factory.add_new_point_coord(100, 200, 300)
+point_11 = factory.add_new_point_coord(1, 2, 3)
+point_12 = factory.add_new_point_coord(100, 200, 300)
 # add the points
-hybrid_body.append_hybrid_shape(point_1)
-hybrid_body.append_hybrid_shape(point_2)
+hybrid_body.append_hybrid_shape(point_11)
+hybrid_body.append_hybrid_shape(point_12)
 
 hybrid_shapes = hybrid_body.hybrid_shapes
-point_1 = hybrid_shapes.item(0)
-point_2 = hybrid_shapes.item(1)
+point_1 = hybrid_shapes.item(1)
+point_2 = hybrid_shapes.item(2)
 # create references to use to draw line with.
-ref_point_1 = part.create_reference_from_object(point_1)
-ref_point_2 = part.create_reference_from_object(point_2)
-# define the line
+ref_point_1 = part.create_reference_from_object(point_11)
+ref_point_2 = part.create_reference_from_object(point_12)
+print(point_11, ref_point_1)
+# # define the line
 line_1 = factory.add_new_line_pt_pt(ref_point_1, ref_point_2)
 hybrid_body.append_hybrid_shape(line_1)
+part.update()

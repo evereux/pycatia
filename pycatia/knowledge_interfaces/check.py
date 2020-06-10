@@ -26,7 +26,7 @@ class Check(Relation):
             CAA V5 Visual Basic help
 
                 | Diagnosis
-                | o Property Diagnosis(    ) As boolean
+                | o Property Diagnosis() As boolean
                 | 
                 | Returns the check diagnosis. True if the condition of the check is
                 | verified. False otherwise.
@@ -45,7 +45,7 @@ class Check(Relation):
             CAA V5 Visual Basic help
 
                 | Severity
-                | o Property Severity(    ) As long
+                | o Property Severity() As long
                 | 
                 | Returns or sets the check severity. The severity is the way the check
                 | will manifest itself:             Silent (1)Information (2)Warning (3)

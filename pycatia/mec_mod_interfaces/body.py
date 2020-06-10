@@ -1,10 +1,10 @@
 #! /usr/bin/python3.6
 # module initially auto generated using V5Automation.chm from CATIA V5 R25
 
-from pycatia.system_interfaces.base_object import AnyObject
-from .hybridbodies import HybridBodies
-from .hybridshapes import HybridShapes
-from .orderedgeometricalsets import OrderedGeometricalSets
+from pycatia.system_interfaces.any_object import AnyObject
+from .hybrid_bodies import HybridBodies
+from .hybrid_shapes import HybridShapes
+from .ordered_geometrical_sets import OrderedGeometricalSets
 from .shapes import Shapes
 from .sketches import Sketches
 
@@ -34,7 +34,7 @@ class Body(AnyObject):
             CAA V5 Visual Basic help
 
                 | HybridBodies
-                | o Property HybridBodies(    ) As HybridBodies
+                | o Property HybridBodies() As HybridBodies
                 | 
                 | Returns the body's HybridBodies collection.  Example:The following
                 | example returns in hybridBodyColl the collection of hybrid bodies of
@@ -51,7 +51,7 @@ class Body(AnyObject):
             CAA V5 Visual Basic help
 
                 | HybridShapes
-                | o Property HybridShapes(    ) As HybridShapes
+                | o Property HybridShapes() As HybridShapes
                 | 
                 | Returns the list of hybrid shapes included in the body.  Returns:
                 | oHybridShapes   The list of hybrid shapes in the body (@see
@@ -73,7 +73,7 @@ class Body(AnyObject):
             CAA V5 Visual Basic help
 
                 | InBooleanOperation
-                | o Property InBooleanOperation(    ) As boolean
+                | o Property InBooleanOperation() As boolean
                 | 
                 | Returns True if the body is involved in a boolean operation, else
                 | returns False.
@@ -93,7 +93,7 @@ class Body(AnyObject):
             CAA V5 Visual Basic help
 
                 | OrderedGeometricalSets
-                | o Property OrderedGeometricalSets(    ) As OrderedGeometricalSets
+                | o Property OrderedGeometricalSets() As OrderedGeometricalSets
                 | 
                 | Returns the body's OrderedGeometricalSets collection.
                 | ometricalSetColl = Body1.OrderedGeometricalSets
@@ -113,7 +113,7 @@ class Body(AnyObject):
             CAA V5 Visual Basic help
 
                 | Shapes
-                | o Property Shapes(    ) As Shapes
+                | o Property Shapes() As Shapes
                 | 
                 | Returns the body's Shapes collection. These shapes make up the
                 | sequence of shapes that will produce an intermediate result for the
@@ -137,7 +137,7 @@ class Body(AnyObject):
             CAA V5 Visual Basic help
 
                 | Sketches
-                | o Property Sketches(    ) As Sketches
+                | o Property Sketches() As Sketches
                 | 
                 | Returns the body's Sketches collection. These sketches are those
                 | inside the body at all levels.

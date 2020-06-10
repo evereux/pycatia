@@ -85,15 +85,6 @@ def test_file_name():
                 assert part.file_name == cat_part_1.name
 
 
-def test_find_object_by_name():
-    with CATIADocHandler(cat_part_measurable) as handler:
-        part = handler.document.part()
-
-        item = part.find_object_by_name('Extrude.1')
-
-        assert item.name == 'Extrude.1'
-
-
 def test_full_name():
     with CATIADocHandler(cat_product) as handler:
         document = handler.document
@@ -119,8 +110,6 @@ def test_find_object_by_name():
 
 
 def test_in_work_object():
-    part_body_name = 'AnotherPartBody'
-
     with CATIADocHandler(cat_part_measurable) as handler:
         part_body_name = 'AnotherPartBody'
 

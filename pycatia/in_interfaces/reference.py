@@ -1,7 +1,7 @@
 #! /usr/bin/python3.6
 # module initially auto generated using V5Automation.chm from CATIA V5 R25
 
-from pycatia.system_interfaces.base_object import AnyObject
+from pycatia.system_interfaces.any_object import AnyObject
 
 
 class Reference(AnyObject):
@@ -31,7 +31,7 @@ class Reference(AnyObject):
             CAA V5 Visual Basic help
 
                 | DisplayName
-                | o Property DisplayName(    ) As CATBSTR
+                | o Property DisplayName() As CATBSTR
                 | 
                 | Returns the name of the referenced object. The name of the referenced
                 | object is either the name displayed in the specification tree for a

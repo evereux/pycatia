@@ -1,7 +1,7 @@
 #! /usr/bin/python3.6
 # module initially auto generated using V5Automation.chm from CATIA V5 R25
 
-from .realparam import RealParam
+from .real_param import RealParam
 from .unit import Unit
 
 
@@ -27,7 +27,7 @@ class Dimension(RealParam):
             CAA V5 Visual Basic help
 
                 | Unit
-                | o Property Unit(    ) As Unit
+                | o Property Unit() As Unit
                 | 
                 | Returns the unit used for this dimension object.
 

@@ -11,7 +11,7 @@
 import csv
 
 from pycatia import catia
-from pycatia.space_analyses_interfaces.spaworkbench import SPAWorkbench
+from pycatia.space_analyses_interfaces.spa_workbench import SPAWorkbench
 
 documents = catia.documents
 documents.open(r'tests\CF_catia_measurable_part.CATPart')
