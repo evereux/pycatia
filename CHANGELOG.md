@@ -1,10 +1,13 @@
 # Changelog
 
 
-## 0.3.0
+## 0.3.0a
 * Major restructuring. This will break everything again. Sorry! But ... 
-  this should now be stable. As always, see the examples.
-* Lots of added features added.
+  this structure should now be stable. As always, see the examples.
+* This is alpha software. Please note many new interfaces may not work. If that is the case please
+  raise an issue.
+* All .index methods are now back to starting at 1. This is easier to manage.
+* Added hybrid_shape_interfaces. Still much work to do here but at least the templates are in place.
 
 ## 0.2.1
 * Added knowledge_ware parameter features.
