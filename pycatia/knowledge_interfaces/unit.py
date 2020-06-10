@@ -1,7 +1,7 @@
 #! /usr/bin/python3.6
 # module initially auto generated using V5Automation.chm from CATIA V5 R25
 
-from pycatia.system_interfaces.base_object import AnyObject
+from pycatia.system_interfaces.any_object import AnyObject
 
 
 class Unit(AnyObject):
@@ -24,7 +24,7 @@ class Unit(AnyObject):
             CAA V5 Visual Basic help
 
                 | Magnitude
-                | o Property Magnitude(    ) As CATBSTR
+                | o Property Magnitude() As CATBSTR
                 | 
                 | Returns the magnitude associated to the unit.
 
@@ -38,7 +38,7 @@ class Unit(AnyObject):
             CAA V5 Visual Basic help
 
                 | Symbol
-                | o Property Symbol(    ) As CATBSTR
+                | o Property Symbol() As CATBSTR
                 | 
                 | Returns the symbol associated to the unit.
 

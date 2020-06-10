@@ -8,8 +8,8 @@ from pywintypes import com_error
 from pycatia.exception_handling import CATIAApplicationException
 from pycatia.mec_mod_interfaces.part import Part
 from pycatia.product_structure_interfaces.product import Product
-from pycatia.system_interfaces.base_object import AnyObject
-from pycatia.drafting_interfaces.drawingroot import DrawingRoot
+from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.drafting_interfaces.drawing_root import DrawingRoot
 
 
 class Document(AnyObject):

@@ -30,7 +30,7 @@ class Solid(Shape):
             CAA V5 Visual Basic help
 
                 | Move
-                | o Property Move(    ) As   (Read Only)
+                | o Property Move() As   (Read Only)
                 | 
                 | Returns the move object of the solid. Role: The move object
                 | is aggregated by the solid object and itself aggregates a
@@ -55,7 +55,7 @@ class Solid(Shape):
             CAA V5 Visual Basic help
 
                 | SourceElement
-                | o Property SourceElement(    ) As   (Read Only)
+                | o Property SourceElement() As   (Read Only)
                 | 
                 | Returns the source element of the imported solid. Role:
                 | returns the linked element in the source part. 
@@ -77,7 +77,7 @@ class Solid(Shape):
             CAA V5 Visual Basic help
 
                 | SourceProduct
-                | o Property SourceProduct(    ) As   (Read Only)
+                | o Property SourceProduct() As   (Read Only)
                 | 
                 | Returns the source product instance of the imported solid.
                 | Role: returns the product instance which was selected when

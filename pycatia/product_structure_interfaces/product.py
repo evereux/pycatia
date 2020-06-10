@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-from pycatia.system_interfaces.base_object import AnyObject
+from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.product_structure_interfaces.analyze import Analyze
 from pycatia.base_interfaces.move import Move
 from pycatia.in_interfaces.position import Position
@@ -44,7 +44,7 @@ class Product(AnyObject):
             CAA V5 Visual Basic help
 
                 | Analyze
-                | o Property Analyze(    ) As Analyze
+                | o Property Analyze() As Analyze
                 |
                 | Returns the Analyze object associated to the current product.
                 | Example:    This example retrieves in EngineAnalysis the Analyze
@@ -152,7 +152,7 @@ class Product(AnyObject):
             CAA V5 Visual Basic help
 
                 | Move
-                | o Property Move(    ) As Move
+                | o Property Move() As Move
                 |
                 | Returns the product's move object. The move object is aggregated by
                 | the product object and itself aggregates a movable object to which you
@@ -238,7 +238,7 @@ class Product(AnyObject):
             CAA V5 Visual Basic help
 
                 | Parameters
-                | o Property Parameters(    ) As Parameters
+                | o Property Parameters() As Parameters
                 |
                 | Returns the collection object containing the product parameters. All
                 | the parameters that are aggregated in the different objects of the
@@ -287,7 +287,7 @@ class Product(AnyObject):
              CAA V5 Visual Basic help
 
                  | Position
-                 | o Property Position(    ) As Position
+                 | o Property Position() As Position
                  |
                  | Returns the product's position object. The position object is the
                  | object aggregated by the product object that holds the position of the
@@ -307,7 +307,7 @@ class Product(AnyObject):
             CAA V5 Visual Basic help
 
                 | Products
-                | o Property Products(    ) As Products
+                | o Property Products() As Products
                 |
                 | Returns the collection of products contained in the current product.
                 | Example:    This example retrieves in EngineChildren the collection of
@@ -324,7 +324,7 @@ class Product(AnyObject):
             CAA V5 Visual Basic help
 
                 | Publications
-                | o Property Publications(    ) As Publications
+                | o Property Publications() As Publications
                 |
                 | Returns the collection of publications managed by the product.
 
@@ -338,7 +338,7 @@ class Product(AnyObject):
             CAA V5 Visual Basic help
 
                 | ReferenceProduct
-                | o Property ReferenceProduct(    ) As Product
+                | o Property ReferenceProduct() As Product
                 |
                 | Returns the Reference Product of this instance.
 
@@ -352,7 +352,7 @@ class Product(AnyObject):
             CAA V5 Visual Basic help
 
                 | Relations
-                | o Property Relations(    ) As Relations
+                | o Property Relations() As Relations
                 |
                 | Returns the collection object containing the product relations. All
                 | the relations that are used to valuate the parameters of the product
@@ -399,7 +399,7 @@ class Product(AnyObject):
             CAA V5 Visual Basic help
 
                 | Source
-                | o Property Source(    ) As CatProductSource
+                | o Property Source() As CatProductSource
                 |
                 | Returns or sets the product's source. Source is valid for reference
                 | products only.  According to the STEP AP203, the source is the "design
@@ -420,7 +420,7 @@ class Product(AnyObject):
             CAA V5 Visual Basic help
 
                 | UserRefProperties
-                | o Property UserRefProperties(    ) As Parameters
+                | o Property UserRefProperties() As Parameters
                 |
                 | Returns the collection object containing the product properties. All
                 | the user defined properties that are created in the reference product
@@ -461,7 +461,7 @@ class Product(AnyObject):
             CAA V5 Visual Basic help
 
                 | ActivateDefaultShape
-                | o Sub ActivateDefaultShape(    )
+                | o Sub ActivateDefaultShape()
                 |
                 | Activate default shape.
 
@@ -670,7 +670,7 @@ class Product(AnyObject):
             CAA V5 Visual Basic help
 
                 | DesactivateDefaultShape
-                | o Sub DesactivateDefaultShape(    )
+                | o Sub DesactivateDefaultShape()
                 |
                 | Deactivate default shape.
 
@@ -732,7 +732,7 @@ class Product(AnyObject):
             CAA V5 Visual Basic help
 
                 | GetActiveShapeName
-                | o Func GetActiveShapeName(    ) As CATBSTR
+                | o Func GetActiveShapeName() As CATBSTR
                 |
                 | Returns the name of the active shape.  Returns:  oShapeName
                 | The name of the active shape.
@@ -765,11 +765,6 @@ class Product(AnyObject):
 
     def get_child(self, index):
         """
-
-        .. warning::
-            The index MUST be it's python index (indexs in python start from 0) from the Documents.get_documents()
-            collection. The COM interface index starts at 1.
-
         :return: Product()
         """
         return Product(self.product.Products.Item(index + 1))
@@ -795,7 +790,7 @@ class Product(AnyObject):
             CAA V5 Visual Basic help
 
                 | GetDefaultShapeName
-                | o Func GetDefaultShapeName(    ) As CATBSTR
+                | o Func GetDefaultShapeName() As CATBSTR
                 |
                 | Returns the default shape.  Returns:  oShapeName           The name of
                 | the default shape.
@@ -836,7 +831,7 @@ class Product(AnyObject):
             CAA V5 Visual Basic help
 
                 | GetMasterShapeRepresentationPathName
-                | o Func GetMasterShapeRepresentationPathName(    ) As CATBSTR
+                | o Func GetMasterShapeRepresentationPathName() As CATBSTR
                 |
                 | Retrieves the product's master shape representation pathname.
                 | Example:    This example retrieves in MSRep the  Engine product's
@@ -852,7 +847,7 @@ class Product(AnyObject):
             CAA V5 Visual Basic help
 
                 | GetNumberOfShapes
-                | o Func GetNumberOfShapes(    ) As short
+                | o Func GetNumberOfShapes() As short
                 |
                 | Returns the number of Shapes  Returns:  oNbShapes           The number
                 | of Shapes.
@@ -1046,7 +1041,7 @@ class Product(AnyObject):
             CAA V5 Visual Basic help
 
                 | RemoveMasterShapeRepresentation
-                | o Sub RemoveMasterShapeRepresentation(    )
+                | o Sub RemoveMasterShapeRepresentation()
                 |
                 | Removes the master shape representation from the product. The master
                 | shape representation is the object that gives a geometric shape and
@@ -1111,7 +1106,7 @@ class Product(AnyObject):
             CAA V5 Visual Basic help
 
                 | Update
-                | o Sub Update(    )
+                | o Sub Update()
                 |
                 | Updates the product. This update is performed with respect to the part
                 | making the product or to the product's representation. It takes into

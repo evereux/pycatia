@@ -7,11 +7,6 @@
 
     Reads a csv file containing point data and adds to the new catia part.
 
-    .. note::
-
-        Please see :class:`HybridShapeFactory` and method add_new_point_coord()
-        for caveats regarding large csv files.
-
 
     Formatting of csv data should be:
         <point_name>,<x coordinate>,<y coordinate>,<z coordinate>
@@ -37,7 +32,7 @@ part = document.part()
 file = r'tests\Sample_Point_CSV_File1_small.csv'
 
 # create the points.
-create_points(catia, part, file, 'in', 'Points_Construction')
+create_points(part, file, units='in', geometry_set_name='Points_Construction')
 
 # re-enable display refresh
 catia.refresh_display = True

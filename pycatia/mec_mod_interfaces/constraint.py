@@ -1,7 +1,7 @@
 #! /usr/bin/python3.6
 # module initially auto generated using V5Automation.chm from CATIA V5 R25
 
-from pycatia.system_interfaces.base_object import AnyObject
+from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.knowledge_interfaces.dimension import Dimension
 from pycatia.in_interfaces.reference import Reference
 
@@ -27,7 +27,7 @@ class Constraint(AnyObject):
             CAA V5 Visual Basic help
 
                 | AngleSector
-                | o Property AngleSector(    ) As CatConstraintAngleSector
+                | o Property AngleSector() As CatConstraintAngleSector
                 | 
                 | Returns or sets the constraint angle (or angular) sector. The
                 | geometric elements of an angle constraint         (e.g. : 2 lines or 2
@@ -84,7 +84,7 @@ class Constraint(AnyObject):
             CAA V5 Visual Basic help
 
                 | Dimension
-                | o Property Dimension(    ) As Dimension
+                | o Property Dimension() As Dimension
                 | 
                 | Returns the constraint dimension. The dimension may be meaningless for
                 | some types of constraints  such as tangency constraints,  or if the
@@ -108,7 +108,7 @@ class Constraint(AnyObject):
             CAA V5 Visual Basic help
 
                 | DistanceConfig
-                | o Property DistanceConfig(    ) As CatConstraintDistConfig
+                | o Property DistanceConfig() As CatConstraintDistConfig
                 | 
                 | Returns or sets the distance constraint configuration. Distance
                 | constraints between lines and cylinders offer  often more degrees of
@@ -133,7 +133,7 @@ class Constraint(AnyObject):
             CAA V5 Visual Basic help
 
                 | DistanceDirection
-                | o Property DistanceDirection(    ) As CatConstraintDistDirection
+                | o Property DistanceDirection() As CatConstraintDistDirection
                 | 
                 | Returns or sets the distance constraint direction. This property is
                 | useless for constraints whose type is not Distance (1). Distance
@@ -160,7 +160,7 @@ class Constraint(AnyObject):
             CAA V5 Visual Basic help
 
                 | Mode
-                | o Property Mode(    ) As CatConstraintMode
+                | o Property Mode() As CatConstraintMode
                 | 
                 | Returns or sets the constraint driving  mode.  For constraint types
                 | supporting the concept of value, such as distance  constraints, the
@@ -183,7 +183,7 @@ class Constraint(AnyObject):
             CAA V5 Visual Basic help
 
                 | Orientation
-                | o Property Orientation(    ) As CatConstraintOrientation
+                | o Property Orientation() As CatConstraintOrientation
                 | 
                 | Returns or sets the constraint orientation. This is used for
                 | constraints that involve  two  geometric elements and specifies the
@@ -207,7 +207,7 @@ class Constraint(AnyObject):
             CAA V5 Visual Basic help
 
                 | ReferenceAxis
-                | o Property ReferenceAxis(    ) As CatConstraintRefAxis
+                | o Property ReferenceAxis() As CatConstraintRefAxis
                 | 
                 | Returns or sets the constraint reference axis. AxisParallel or
                 | AxisPerpendicular constraint types define which axis they relate to
@@ -230,7 +230,7 @@ class Constraint(AnyObject):
             CAA V5 Visual Basic help
 
                 | ReferenceType
-                | o Property ReferenceType(    ) As CatConstraintRefType
+                | o Property ReferenceType() As CatConstraintRefType
                 | 
                 | Returns or sets the constraint reference type. This property is used
                 | only for Reference constraints in the Assembly context.  Example:The
@@ -252,7 +252,7 @@ class Constraint(AnyObject):
             CAA V5 Visual Basic help
 
                 | Side
-                | o Property Side(    ) As CatConstraintSide
+                | o Property Side() As CatConstraintSide
                 | 
                 | Returns or sets the constraint side.  Some constraint types need to
                 | relatively position the constrained geometries, when several possible
@@ -274,7 +274,7 @@ class Constraint(AnyObject):
             CAA V5 Visual Basic help
 
                 | Status
-                | o Property Status(    ) As CatConstraintStatus
+                | o Property Status() As CatConstraintStatus
                 | 
                 | Returns the constraint status. The constraint status is a diagnosis on
                 | whether the constraint is satisfied.  Example:The following example
@@ -295,7 +295,7 @@ class Constraint(AnyObject):
             CAA V5 Visual Basic help
 
                 | Type
-                | o Property Type(    ) As CatConstraintType
+                | o Property Type() As CatConstraintType
                 | 
                 | Returns the  constraint type.  Example:The following example returns
                 | in cstType the type  of the firstCst constraint:  cstType =
@@ -314,7 +314,7 @@ class Constraint(AnyObject):
             CAA V5 Visual Basic help
 
                 | Activate
-                | o Sub Activate(    )
+                | o Sub Activate()
                 | 
                 | Unsuppresses a constraint for the update process. An activated
                 | constraint is again taken into account  for the calculation of the
@@ -331,7 +331,7 @@ class Constraint(AnyObject):
             CAA V5 Visual Basic help
 
                 | Deactivate
-                | o Sub Deactivate(    )
+                | o Sub Deactivate()
                 | 
                 | Suppresses the constraint from being updated. A deactivated constraint
                 | is not taken into account  for the calculation of the part or of the
@@ -341,14 +341,7 @@ class Constraint(AnyObject):
         self.constraint.Deactivate()
 
     def get_constraint_element(self, i_element_number):
-
         """
-
-        .. warning::
-
-            The index when not a string must be it's python index (indexes in python start from 0).
-            collection. The COM interface index starts at 1.
-
         .. note::
             CAA V5 Visual Basic help
 
@@ -380,10 +373,6 @@ class Constraint(AnyObject):
                 | 
                 | 
         """
-
-        if isinstance(i_element_number, int):
-            i_element_number += 1
-
         return Reference(self.constraint.GetConstraintElement(i_element_number))
 
     def get_constraint_visu_location(self, o_anchor_point, o_anchor_vector):
@@ -432,7 +421,7 @@ class Constraint(AnyObject):
             CAA V5 Visual Basic help
 
                 | IsInactive
-                | o Func IsInactive(    ) As boolean
+                | o Func IsInactive() As boolean
                 | 
                 | Indicates whether a constraint is suppressed from the update process.
                 | A suppressed constraint is not taken into account for the calculation

@@ -7,7 +7,6 @@ import pytest
 
 from pycatia import catia
 from pycatia.base_interfaces.context import CATIADocHandler
-from pycatia.hybrid_shape_interfaces.hybridshapefactory import HybridShapeFactory
 from tests.source_files import cat_part_measurable
 from tests.source_files import cat_product
 
@@ -108,21 +107,21 @@ def test_get_documents_names():
 
 def test_is_saved():
     with CATIADocHandler(cat_part_measurable) as handler:
-        catia = handler.catia
         document = handler.document
         assert document.is_saved
 
         part = document.part()
 
         # create a new geometrical set to add point.
-        geometrical_set = part.part.HybridBodies.Add()
+        geometrical_set = part.hybrid_bodies.add()
         geometrical_set.Name = 'lalalalalala'
 
         # just adding geometrical set isn't enough to trigger is_saved to be False
         # catia r21 bug?
         # so a new point is also added.
-        hsf = HybridShapeFactory(part)
-        hsf.add_new_point_coord(catia, geometrical_set, (0, 1, 2), 'Point.1')
+        factory = part.hybrid_shape_factory
+        point = factory.add_new_point_coord(0, 1, 2)
+        geometrical_set.append_hybrid_shape(point)
         part.update()
 
         assert not document.is_saved
@@ -133,7 +132,7 @@ def test_item():
         documents = handler.documents
         document_to_get = 'CF_SubProduct2.CATProduct'
         doc_com1 = documents.item(document_to_get)
-        doc_com2 = documents.item(1)
+        doc_com2 = documents.item(2)
 
         assert (doc_com1.name == document_to_get) and (doc_com2.name == 'CF_TopLevelAssy.CATProduct')
 

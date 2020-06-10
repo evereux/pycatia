@@ -24,7 +24,7 @@ def test_orientation():
         catia = handler.catia
         drawing_root = catia.active_document.drawing_root()
         sheets = drawing_root.sheets
-        sheet_1 = sheets.item(0)
+        sheet_1 = sheets.item(1)
         assert sheet_1.orientation == cat_paper_orientation.index('catPaperLandscape')
         sheet_1.orientation = 0
         assert sheet_1.orientation == cat_paper_orientation.index('catPaperPortrait')
@@ -35,7 +35,7 @@ def test_paper_size():
         catia = handler.catia
         drawing_root = catia.active_document.drawing_root()
         sheets = drawing_root.sheets
-        sheet_1 = sheets.item(0)
+        sheet_1 = sheets.item(1)
         assert sheet_1.paper_size == cat_paper_size.index('catPaperA0')
         sheet_1.paper_size = 5
         assert sheet_1.paper_size == cat_paper_size.index('catPaperA3')
@@ -46,7 +46,7 @@ def test_sheets():
         catia = handler.catia
         drawing_root = catia.active_document.drawing_root()
         sheets = drawing_root.sheets
-        assert sheets.item(2).name == 'Sheet.3 (Detail)'
+        assert sheets.item(3).name == 'Sheet.3 (Detail)'
 
 
 def test_standard():
@@ -61,17 +61,17 @@ def test_reorder():
         catia = handler.catia
         root = catia.active_document.drawing_root()
         sheets = root.sheets
-        sheet_1 = sheets.item(0)
-        sheet_2 = sheets.item(1)
-        sheet_3 = sheets.item(2)
+        sheet_1 = sheets.item(1)
+        sheet_2 = sheets.item(2)
+        sheet_3 = sheets.item(3)
 
-        new_order = [sheet_2, sheet_1, sheet_3]
+        new_order = (sheet_2, sheet_1, sheet_3)
         root.reorder_sheets(new_order)
 
         sheets = root.sheets
 
-        assert not sheets.item(0).name == 'Sheet.1'
-        assert sheets.item(0).name == 'Sheet.2'
+        assert not sheets.item(1).name == 'Sheet.1'
+        assert sheets.item(1).name == 'Sheet.2'
 
 
 def test_scale():
@@ -79,7 +79,7 @@ def test_scale():
         catia = handler.catia
         root = catia.active_document.drawing_root()
         sheets = root.sheets
-        sheet_1 = sheets.item(0)
+        sheet_1 = sheets.item(1)
         assert sheet_1.scale == 1.0
         sheet_1.scale = 2.0
         assert sheet_1.scale == 2.0

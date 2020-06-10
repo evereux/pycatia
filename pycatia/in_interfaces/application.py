@@ -3,7 +3,7 @@
 
 from pathlib import Path
 
-from pycatia.system_interfaces.base_object import AnyObject
+from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.in_interfaces.document import Document
 from pycatia.in_interfaces.documents import Documents
 
@@ -11,11 +11,39 @@ from pycatia.in_interfaces.documents import Documents
 class Application(AnyObject):
     """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
 
-                | Represents the current CNext application and its frame window.The
-                | application is the root object for all the other objects you can use
-                | and access from scripts. It directly aggregates.
+                | System.IUnknown
+                |     System.IDispatch
+                |         System.CATBaseUnknown
+                |             System.CATBaseDispatch
+                |                 System.AnyObject
+                |                     Application
+                |
+                | Represents the current CNext application and its frame window.
+                | The application is the root object for all the other objects you can use and
+                | access from scripts. It directly aggregates:
+                |
+                |     The document collection represented by the Documents object. This
+                |     collection contains all the documents currently opened by the
+                |     application
+                |     The window collection represented by the Windows object. This collection
+                |     contains all the windows currently opened by the application, each window
+                |     displaying one of the documents contained in the document
+                |     collection
+                |     The SystemService object, providing information about the system
+                |     environment.
+                |
+                | The active document and the active window are two key objects for the
+                | application you can access using the ActiveDocument and ActiveWindow properties
+                | respectively. The active window is the window the end user is currently working
+                | in, and the active document is the document displayed in this active window and
+                | that the end user is being editing. This document sets its workshop, that is
+                | the available menus and toolbars that make it possible to edit it, according to
+                | its type.
+                |
+                | When you create or use macros for in-process access, the application is always
+                | referred to as CATIA.
 
     """
 
@@ -29,7 +57,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | ActiveDocument
-                | o Property ActiveDocument(    ) As   (Read Only)
+                | o Property ActiveDocument() As   (Read Only)
                 | 
                 | Returns the active document. The active document is the document the
                 | end user is being editing.
@@ -49,7 +77,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | ActivePrinter
-                | o Property ActivePrinter(    ) As Printer
+                | o Property ActivePrinter() As Printer
                 | 
                 | Returns or sets the active printer. The active printer is the printer
                 | on which documents are printed
@@ -69,7 +97,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | ActiveWindow
-                | o Property ActiveWindow(    ) As Window   (Read Only)
+                | o Property ActiveWindow() As Window   (Read Only)
                 | 
                 | Returns the active window. The active window is the window in which
                 | the end user is currently editing the active document.
@@ -91,7 +119,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | CacheSize
-                | o Property CacheSize(    ) As
+                | o Property CacheSize() As
                 | 
                 | Returns or sets the default local cache size used by the application.
                 |
@@ -112,7 +140,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | Caption
-                | o Property Caption(    ) As
+                | o Property Caption() As
                 | 
                 | Returns or sets the application's window title. This title is
                 | displayed in the application's window title bar.
@@ -134,7 +162,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | DisplayFileAlerts
-                | o Property DisplayFileAlerts(    ) As
+                | o Property DisplayFileAlerts() As
                 | 
                 | Returns or sets the application ability to display file alerts. True
                 | if the application enables file alert display.  True is the default. A
@@ -159,7 +187,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | Documents
-                | o Property Documents(    ) As   (Read Only)
+                | o Property Documents() As   (Read Only)
                 | 
                 | Returns the collection of documents currently managed by the
                 | application.
@@ -181,7 +209,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | FileSearchOrder
-                | o Property FileSearchOrder(    ) As CATBSTR
+                | o Property FileSearchOrder() As CATBSTR
                 | 
                 | Returns or sets the default path concatenation. Role: This property
                 | returns or sets the default path concatenation used by Other folders
@@ -212,7 +240,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | FileSystem
-                | o Property FileSystem(    ) As FileSystem  (Read Only)
+                | o Property FileSystem() As FileSystem  (Read Only)
                 | 
                 | Returns the file system. The file system provides access to a
                 | computer's file system.
@@ -232,7 +260,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | FullName
-                | o Property FullName(    ) As   (Read Only)
+                | o Property FullName() As   (Read Only)
                 | 
                 | Returns the application's executable file full name, including its
                 | path. This name is the name of the executable file used to start the
@@ -256,7 +284,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | HSOSynchronized
-                | o Property HSOSynchronized(    ) As
+                | o Property HSOSynchronized() As
                 | 
                 | For selection performance purposes, returns or sets the HSO
                 | synchronization in comparison with the CSO. Role: Precises if, for all
@@ -293,7 +321,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | Height
-                | o Property Height(    ) As
+                | o Property Height() As
                 | 
                 | Returns or sets the height of the application's frame window. The
                 | height is expressed in pixels.
@@ -316,7 +344,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | Interactive
-                | o Property Interactive(    ) As
+                | o Property Interactive() As
                 | 
                 | Returns or sets the application sensitivity to end user interactions.
                 | True if the application is end user interaction sensitive.  Example:
@@ -338,7 +366,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | Left
-                | o Property Left(    ) As
+                | o Property Left() As
                 | 
                 | Returns or sets the distance from the application's frame window left
                 | side to the left side of the screen. This distance is expressed in
@@ -364,7 +392,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | LocalCache
-                | o Property LocalCache(    ) As
+                | o Property LocalCache() As
                 | 
                 | Returns or sets the default local cache path used by the application.
                 | Example: This example sets the cache path for by the CATIA application
@@ -386,7 +414,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | Path
-                | o Property Path(    ) As   (Read Only)
+                | o Property Path() As   (Read Only)
                 | 
                 | Returns the path of the application's executable files.
                 |
@@ -407,7 +435,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | Printers
-                | o Property Printers(    ) As   (Read Only)
+                | o Property Printers() As   (Read Only)
                 | 
                 | Returns the collection of the printers currently managed by the
                 | application.
@@ -429,7 +457,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | RefreshDisplay
-                | o Property RefreshDisplay(    ) As
+                | o Property RefreshDisplay() As
                 | 
                 | Enables or disables the update of the display during the script
                 | replay. To improve performance, this update can be temporarily
@@ -458,7 +486,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | StatusBar
-                | o Property StatusBar(    ) As
+                | o Property StatusBar() As
                 | 
                 | Returns or sets the text displayed in the application's window status
                 | bar.
@@ -484,7 +512,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | SystemConfiguration
-                | o Property SystemConfiguration(    ) As   (Read Only)
+                | o Property SystemConfiguration() As   (Read Only)
                 | 
                 | Returns the system configuration object (an object which provides
                 | access to system or configuration dependent resources).
@@ -504,7 +532,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | SystemService
-                | o Property SystemService(    ) As   (Read Only)
+                | o Property SystemService() As   (Read Only)
                 | 
                 | Returns system services. Example: This example retrieves in
                 | AppliSysSer the CATIA application's system services.  Dim AppliSysSer
@@ -521,7 +549,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | Top
-                | o Property Top(    ) As
+                | o Property Top() As
                 | 
                 | Returns or sets the distance from the application'si frame window top
                 | to the top of the screen. This distance is expressed in pixels.
@@ -546,7 +574,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | UndoRedoLock
-                | o Property UndoRedoLock(    ) As
+                | o Property UndoRedoLock() As
                 | 
                 | Returns or sets the application status about Undo/Redo. True if the
                 | Undo/Redo mechanism is locked.  False is the default. Since Undo/Redo
@@ -574,7 +602,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | Visible
-                | o Property Visible(    ) As
+                | o Property Visible() As
                 | 
                 | Returns or sets the application's window visibility. True if the
                 | application's window is visible to the end user.
@@ -601,7 +629,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | Width
-                | o Property Width(    ) As
+                | o Property Width() As
                 | 
                 | Returns or sets the width of the application's frame window. The width
                 | is expressed in pixels.
@@ -625,7 +653,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | Windows
-                | o Property Windows(    ) As   (Read Only)
+                | o Property Windows() As   (Read Only)
                 | 
                 | Returns the collection of windows currently managed by the
                 | application.
@@ -645,7 +673,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | CreateSendTo
-                | o Func CreateSendTo(    ) As
+                | o Func CreateSendTo() As
                 | 
                 | Creates a Send TO.  Role:This method creates a  instance. Warning :
                 | CATIASendToService interface requires  the installation of CATIA - PPR
@@ -662,7 +690,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | DisableNewUndoRedoTransaction
-                | o Sub DisableNewUndoRedoTransaction(    )
+                | o Sub DisableNewUndoRedoTransaction()
                 | 
                 | Prevents new Undo/Redo transaction creation.  If too many Undo/Redo
                 | transactions are created during macro execution, it may affect
@@ -688,7 +716,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | EnableNewUndoRedoTransaction
-                | o Sub EnableNewUndoRedoTransaction(    )
+                | o Sub EnableNewUndoRedoTransaction()
                 | 
                 | Allows new Undo/Redo transaction creation.
                 |
@@ -701,7 +729,7 @@ class Application(AnyObject):
         return self.application.EnableNewUndoRedoTransaction()
 
     def execute_script(
-        self, library_name, library_type, program_name, function_name, items
+            self, library_name, library_type, program_name, function_name, items
     ):
         """
 
@@ -755,7 +783,7 @@ class Application(AnyObject):
         return run
 
     def evaluate(
-        self, vba_code, function_name, measurable_items, cat_script_language=0
+            self, vba_code, function_name, measurable_items, cat_script_language=0
     ):
         """
 
@@ -848,7 +876,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | GetWorkbenchId
-                | o Func GetWorkbenchId(    ) As
+                | o Func GetWorkbenchId() As
                 | 
                 | Returns the identifier of the CATIA current workbench.
                 |
@@ -866,7 +894,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | Help
-                | o Sub Help(        iHelpID)
+                | o Sub Help(iHelpID)
                 | 
                 | Displays application's online help.
                 |
@@ -891,7 +919,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | Quit
-                | o Sub Quit(    )
+                | o Sub Quit()
                 | 
                 | Exits the application and closes all open documents.
                 | Example: This example exits the CATIA application
@@ -908,7 +936,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | StartCommand
-                | o Sub StartCommand(        iCommandId)
+                | o Sub StartCommand(iCommandId)
                 | 
                 | Starts a CATIA command. Role:This method starts a command and executes
                 | it until its first interaction. Please notice interactions such as
@@ -932,7 +960,7 @@ class Application(AnyObject):
             CAA V5 Visual Basic help
 
                 | StartWorkbench
-                | o Sub StartWorkbench(        iworkbenchId)
+                | o Sub StartWorkbench(iworkbenchId)
                 | 
                 | Starts a CATIA workbench.
                 |

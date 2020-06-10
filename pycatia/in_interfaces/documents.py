@@ -16,7 +16,7 @@ class Documents(Collection):
 
     Usage::
 
-        >>> from pycatia.in_interfaces.application import catia_application as catia
+        >>> from pycatia import catia_application as catia
         >>> documents = catia.documents
 
     .. note::
@@ -126,13 +126,6 @@ class Documents(Collection):
 
     def item(self, index):
         """
-
-        .. warning::
-
-            The index when not a string must be it's python index (indexes
-            in python start from 0) from the Documents.get_documents()
-            collection. The COM interface index starts at 1.
-
         .. note::
             CAA V5 Visual Basic help
 
@@ -175,9 +168,6 @@ class Documents(Collection):
         :param int|str index:
         :return Document COM object:
         """
-
-        if isinstance(index, int):
-            index += 1
 
         return self.child_object(self.documents.Item(index))
 
@@ -243,7 +233,7 @@ class Documents(Collection):
             self.documents.Open(file_name)
         except com_error:
             raise CATIAApplicationException(
-                'Could not open document. '
+                f'Could not open document "{file_name}". '
                 'Check file type and ensure the version of CATIA it was created with is compatible.')
 
     def read(self, file_name):
