@@ -1,6 +1,6 @@
 #! /usr/bin/python3.6
 
-from pycatia.system_interfaces.systemservice import SystemService
+from pycatia.system_interfaces.system_service import SystemService
 from .move import Move
 
 

@@ -24,7 +24,7 @@ class DesignTable(Relation):
             CAA V5 Visual Basic help
 
                 | ColumnsNb
-                | o Property ColumnsNb(    ) As short
+                | o Property ColumnsNb() As short
                 |
                 | Returns the nb of columns in the design table file.
 
@@ -42,7 +42,7 @@ class DesignTable(Relation):
             CAA V5 Visual Basic help
 
                 | Configuration
-                | o Property Configuration(    ) As short
+                | o Property Configuration() As short
                 |
                 | Returns or sets the current configuration.  Legal values:  1 to
                 | ConfigurationsNb.
@@ -61,7 +61,7 @@ class DesignTable(Relation):
             CAA V5 Visual Basic help
 
                 | ConfigurationsNb
-                | o Property ConfigurationsNb(    ) As short
+                | o Property ConfigurationsNb() As short
                 |
                 | Returns the number of design table configurations.
 
@@ -79,7 +79,7 @@ class DesignTable(Relation):
             CAA V5 Visual Basic help
 
                 | CopyMode
-                | o Property CopyMode(    ) As boolean
+                | o Property CopyMode() As boolean
                 |
                 | Returns or sets whether the data contained in the file must be
                 | included inside the CATIA model.
@@ -98,7 +98,7 @@ class DesignTable(Relation):
             CAA V5 Visual Basic help
 
                 | FilePath
-                | o Property FilePath(    ) As CATBSTR
+                | o Property FilePath() As CATBSTR
                 |
                 | Returns or sets the path of the design table (read/write property).
 
@@ -141,7 +141,7 @@ class DesignTable(Relation):
             CAA V5 Visual Basic help
 
                 | AddNewRow
-                | o Sub AddNewRow(    )
+                | o Sub AddNewRow()
                 |
                 | Adds a row in the design table source file.  The new row is filled in
                 | with values of associated parameters. ##### Since V5R14 #####  If the
@@ -209,7 +209,7 @@ class DesignTable(Relation):
             CAA V5 Visual Basic help
 
                 | Synchronize
-                | o Sub Synchronize(    )
+                | o Sub Synchronize()
                 |
                 | Synchronizes the design table with its source file. If the file is
                 | managed in Enovia LCA, copies this file on local disk, and

@@ -1,6 +1,6 @@
 #! /usr/bin/python3.6
 
-from .knowledgeactivateobject import KnowledgeObject
+from .knowledge_activate_object import KnowledgeObject
 
 
 class Relation(KnowledgeObject):
@@ -24,7 +24,7 @@ class Relation(KnowledgeObject):
             CAA V5 Visual Basic help
 
                 | Context
-                | o Property Context(    ) As AnyObject
+                | o Property Context() As AnyObject
                 |
                 | Returns the context of the parameter. The context of a parameter can
                 | be a part, a product, a drafting, or a process document, depending
@@ -42,7 +42,7 @@ class Relation(KnowledgeObject):
             CAA V5 Visual Basic help
 
                 | NbInParameters
-                | o Property NbInParameters(    ) As long
+                | o Property NbInParameters() As long
                 |
                 | Returns the number of input parameters of the relation.
         """
@@ -55,7 +55,7 @@ class Relation(KnowledgeObject):
             CAA V5 Visual Basic help
 
                 | NbOutParameters
-                | o Property NbOutParameters(    ) As long
+                | o Property NbOutParameters() As long
                 |
                 | Returns the number of output parameters of the relation. The output
                 | parameters of the relation are those constrained by the relation.
@@ -69,7 +69,7 @@ class Relation(KnowledgeObject):
             CAA V5 Visual Basic help
 
                 | Value
-                | o Property Value(    ) As CATBSTR
+                | o Property Value() As CATBSTR
                 |
                 | Returns the definition of the relation.  It returns an empty string if
                 | the relation is not an expressional one (for example for a design

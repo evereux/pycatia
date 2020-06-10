@@ -3,14 +3,14 @@
 from pywintypes import com_error
 
 from pycatia.exception_handling import CATIAApplicationException
-from pycatia.knowledge_interfaces.boolparam import BoolParam
+from pycatia.knowledge_interfaces.bool_param import BoolParam
 from pycatia.knowledge_interfaces.dimension import Dimension
-from pycatia.knowledge_interfaces.intparam import IntParam
-from pycatia.knowledge_interfaces.listparameter import ListParameter
+from pycatia.knowledge_interfaces.int_param import IntParam
+from pycatia.knowledge_interfaces.list_parameter import ListParameter
 from pycatia.knowledge_interfaces.parameter import Parameter
-from pycatia.knowledge_interfaces.parameterset import ParameterSet
-from pycatia.knowledge_interfaces.realparam import RealParam
-from pycatia.knowledge_interfaces.strparam import StrParam
+from pycatia.knowledge_interfaces.parameter_set import ParameterSet
+from pycatia.knowledge_interfaces.real_param import RealParam
+from pycatia.knowledge_interfaces.str_param import StrParam
 from pycatia.system_interfaces.collection import Collection
 
 
@@ -43,7 +43,7 @@ class Parameters(Collection):
             CAA V5 Visual Basic help
 
                 | RootParameterSet
-                | o Property RootParameterSet(    ) As ParameterSet
+                | o Property RootParameterSet() As ParameterSet
                 |
                 | Returns the root parameter set of a document. If it doesn't exist, it
                 | is created.
@@ -330,18 +330,9 @@ class Parameters(Collection):
 
     def is_parameter(self, index):
         """
-
-        .. warning::
-            The index when not a string must be it's python index (indexes in python start from 0).
-            collection. The COM interface index starts at 1.
-
         :param str or int index: parameter name or parameter number
         :return: bool
         """
-
-        if isinstance(index, int):
-            index += 1
-
         try:
             if self.parameters.Item(index):
                 return True
@@ -350,12 +341,6 @@ class Parameters(Collection):
 
     def item(self, index):
         """
-
-        .. warning::
-
-            The index when not a string must be it's python index (indexs in python start from 0).
-            collection. The COM interface index starts at 1.
-
         .. note::
             CAA V5 Visual Basic help
 
@@ -386,10 +371,6 @@ class Parameters(Collection):
                 | Set lastParameter = parameters.Item(parameters.Count)
 
         """
-
-        if isinstance(index, int):
-            index += 1
-
         parameter = None
 
         if not self.is_parameter(index):
@@ -451,13 +432,6 @@ class Parameters(Collection):
     def remove_item(self, index):
 
         """
-
-        .. warning::
-
-            The index when not a string must be it's python index (indexs in python start from 0).
-            collection. The COM interface index starts at 1.
-
-
         .. note::
             CAA V5 Visual Basic help
 
@@ -486,10 +460,6 @@ class Parameters(Collection):
                 |
                 | parameters.Remove("depth")
         """
-
-        if isinstance(index, int):
-            index += 1
-
         return self.parameters.Remove(index)
 
     def __repr__(self):

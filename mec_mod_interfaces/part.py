@@ -3,21 +3,21 @@
 
 from pathlib import Path
 
-from pycatia.hybrid_shape_interfaces.hybridshapefactory import HybridShapeFactory
+from pycatia.hybrid_shape_interfaces.hybrid_shape_factory import HybridShapeFactory
 from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.parameters import Parameters
 from pycatia.knowledge_interfaces.relations import Relations
-from pycatia.system_interfaces.base_object import AnyObject
+from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
-from .axissystems import AxisSystems
+from .axis_systems import AxisSystems
 from .bodies import Bodies
 from .body import Body
 from .constraints import Constraints
 from .factory import Factory
-from .geometricelements import GeometricElements
-from .hybridbodies import HybridBodies
-from .orderedgeometricalsets import OrderedGeometricalSets
-from .originelements import OriginElements
+from .geometric_elements import GeometricElements
+from .hybrid_bodies import HybridBodies
+from .ordered_geometrical_sets import OrderedGeometricalSets
+from .originel_ements import OriginElements
 
 
 class Part(AnyObject):
@@ -36,6 +36,7 @@ class Part(AnyObject):
     def __init__(self, com_part_object):
         super().__init__(com_part_object)
         self.part = com_part_object
+        self.com_object = com_part_object
 
     @property
     def annotation_sets(self):
@@ -44,7 +45,7 @@ class Part(AnyObject):
             CAA V5 Visual Basic help
 
                 | AnnotationSets
-                | o Property AnnotationSets(    ) As Collection
+                | o Property AnnotationSets() As Collection
                 | 
                 | Returns the collection object containing the annotation sets. All the
                 | annotation sets that are aggregated in the part  might be accessed
@@ -64,7 +65,7 @@ class Part(AnyObject):
             CAA V5 Visual Basic help
 
                 | AxisSystems
-                | o Property AxisSystems(    ) As AxisSystems
+                | o Property AxisSystems() As AxisSystems
                 | 
                 | Returns the collection object containing the coordinate systems. All
                 | the coordinate systems that are aggregated in the part  might be
@@ -84,7 +85,7 @@ class Part(AnyObject):
             CAA V5 Visual Basic help
 
                 | Bodies
-                | o Property Bodies(    ) As Bodies
+                | o Property Bodies() As Bodies
                 | 
                 | Returns the collection object containing the bodies that are direct
                 | children of the part. It does not return all the bodies of the part,
@@ -104,7 +105,7 @@ class Part(AnyObject):
             CAA V5 Visual Basic help
 
                 | Constraints
-                | o Property Constraints(    ) As Constraints
+                | o Property Constraints() As Constraints
                 | 
                 | Returns the collection object containing the part constraints. Only 3D
                 | constraints are concerned here, 2D constraints are managed in
@@ -123,7 +124,7 @@ class Part(AnyObject):
             CAA V5 Visual Basic help
 
                 | Density
-                | o Property Density(    ) As double
+                | o Property Density() As double
                 | 
                 | Returns the part density.  Example:The following example displays the
                 | density of the part:  Set partRoot = partDoc.Part MsgBox "The density
@@ -160,7 +161,7 @@ class Part(AnyObject):
             CAA V5 Visual Basic help
 
                 | GeometricElements
-                | o Property GeometricElements(    ) As GeometricElements
+                | o Property GeometricElements() As GeometricElements
                 | 
                 | Returns the collection object containing the part geometrical
                 | elements. Only 3D elements are concerned here, 2D elements are managed
@@ -180,7 +181,7 @@ class Part(AnyObject):
             CAA V5 Visual Basic help
 
                 | HybridBodies
-                | o Property HybridBodies(    ) As HybridBodies
+                | o Property HybridBodies() As HybridBodies
                 | 
                 | Returns the collection object containing the hybrid bodies that are
                 | direct children of the part.  Example:The following example returns in
@@ -199,7 +200,7 @@ class Part(AnyObject):
             CAA V5 Visual Basic help
 
                 | HybridShapeFactory
-                | o Property HybridShapeFactory(    ) As Factory
+                | o Property HybridShapeFactory() As Factory
                 | 
                 | Returns the part hybrid shape factory. It allows the creation of
                 | hybrid shapes in the part.
@@ -222,7 +223,7 @@ class Part(AnyObject):
             CAA V5 Visual Basic help
 
                 | InWorkObject
-                | o Property InWorkObject(    ) As AnyObject
+                | o Property InWorkObject() As AnyObject
                 | 
                 | Returns or sets the in work object of the part. The in work object is
                 | the object after which a new object is added.  Example: Set partRoot =
@@ -246,7 +247,7 @@ class Part(AnyObject):
             CAA V5 Visual Basic help
 
                 | MainBody
-                | o Property MainBody(    ) As Body
+                | o Property MainBody() As Body
                 | 
                 | Returns or sets the main body of the part.  Example:The following
                 | example returns the main body  of the part of the current document.
@@ -263,7 +264,7 @@ class Part(AnyObject):
             CAA V5 Visual Basic help
 
                 | OrderedGeometricalSets
-                | o Property OrderedGeometricalSets(    ) As OrderedGeometricalSets
+                | o Property OrderedGeometricalSets() As OrderedGeometricalSets
                 | 
                 | Returns the collection object containing the ordered geometrical sets
                 | of the part.  Example:The following example returns in ogsColl the
@@ -280,7 +281,7 @@ class Part(AnyObject):
             CAA V5 Visual Basic help
 
                 | OriginElements
-                | o Property OriginElements(    ) As OriginElements
+                | o Property OriginElements() As OriginElements
                 | 
                 | Returns the object defining the part 3D reference axis system.
                 |
@@ -301,7 +302,7 @@ class Part(AnyObject):
             CAA V5 Visual Basic help
 
                 | Parameters
-                | o Property Parameters(    ) As Parameters
+                | o Property Parameters() As Parameters
                 |
                 | Returns the collection object containing the part parameters. All the
                 | parameters that are aggregated in the different objects of the part
@@ -321,7 +322,7 @@ class Part(AnyObject):
             CAA V5 Visual Basic help
 
                 | Relations
-                | o Property Relations(    ) As Relations
+                | o Property Relations() As Relations
                 |
                 | Returns the collection object containing the part relations. All the
                 | relations that are used to valuate  the parameters of the part might
@@ -341,7 +342,7 @@ class Part(AnyObject):
             CAA V5 Visual Basic help
 
                 | ShapeFactory
-                | o Property ShapeFactory(    ) As Factory
+                | o Property ShapeFactory() As Factory
                 |
                 | Returns the part shape factory. It allows the creation of shapes in
                 | the part.  Example:The following example returns in shapeFact the
@@ -360,7 +361,7 @@ class Part(AnyObject):
             CAA V5 Visual Basic help
 
                 | SheetMetalFactory
-                | o Property SheetMetalFactory(    ) As Factory
+                | o Property SheetMetalFactory() As Factory
                 |
                 | Returns the sheet metal factory of the part. It allows the creation of
                 | sheet metal elements in the part.  Example:The following example
@@ -379,7 +380,7 @@ class Part(AnyObject):
             CAA V5 Visual Basic help
 
                 | SheetMetalParameters
-                | o Property SheetMetalParameters(    ) As AnyObject
+                | o Property SheetMetalParameters() As AnyObject
                 |
                 | Returns the sheet metal parameters of the part.  Example:The following
                 | example returns in sheetMetalParm the sheet metal parameters of the
@@ -396,7 +397,7 @@ class Part(AnyObject):
             CAA V5 Visual Basic help
 
                 | UserSurfaces
-                | o Property UserSurfaces(    ) As Collection
+                | o Property UserSurfaces() As Collection
                 |
                 | Returns the collection object containing the user surfaces. All the
                 | user surfaces that are aggregated in the part  might be accessed thru
@@ -674,7 +675,7 @@ class Part(AnyObject):
             CAA V5 Visual Basic help
 
                 | Update
-                | o Sub Update(    )
+                | o Sub Update()
                 | 
                 | Updates of the part result with respect to its specifications. Any
                 | composing specification that hasn't its result up-to-date will

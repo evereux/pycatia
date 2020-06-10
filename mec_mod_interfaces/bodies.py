@@ -24,7 +24,7 @@ class Bodies(Collection):
             CAA V5 Visual Basic help
 
                 | Add
-                | o Func Add(    ) As Body
+                | o Func Add() As Body
                 | 
                 | Creates a new body and adds it to the Bodies collection. This body
                 | becomes the current one  Returns:  The created body
@@ -41,12 +41,6 @@ class Bodies(Collection):
 
     def item(self, i_index):
         """
-
-        .. warning::
-
-            The index when not a string must be it's python index (indexes in python start from 0).
-            collection. The COM interface index starts at 1.
-
         .. note::
             CAA V5 Visual Basic help
 
@@ -83,9 +77,6 @@ class Bodies(Collection):
 
         :return: Body()
         """
-
-        if isinstance(i_index, int):
-            i_index += 1
         return self.child_object(self.bodies.Item(i_index))
 
     def __repr__(self):

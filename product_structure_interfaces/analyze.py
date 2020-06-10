@@ -1,8 +1,8 @@
 #! /usr/bin/python3.6
 # module initially auto generated using V5Automation.chm from CATIA V5 R25
 
-from pycatia.system_interfaces.base_object import AnyObject
-from pycatia.system_interfaces.systemservice import SystemService
+from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.system_interfaces.system_service import SystemService
 
 
 class Analyze(AnyObject):
@@ -25,7 +25,7 @@ class Analyze(AnyObject):
             CAA V5 Visual Basic help
 
                 | Mass
-                | o Property Mass(    ) As double
+                | o Property Mass() As double
                 |
                 | Returns the product mass value.  Example:    This example retrieves
                 | MassValue from   the Analyze object associated with myProduct:
@@ -42,7 +42,7 @@ class Analyze(AnyObject):
             CAA V5 Visual Basic help
 
                 | Volume
-                | o Property Volume(    ) As double
+                | o Property Volume() As double
                 |
                 | Returns the product volume value.  Example:    This example retrieves
                 | VolumeValue from   the Analyze object associated with myProduct:
@@ -62,7 +62,7 @@ class Analyze(AnyObject):
             CAA V5 Visual Basic help
 
                 | WetArea
-                | o Property WetArea(    ) As double
+                | o Property WetArea() As double
                 |
                 | Returns the product wet area (outer volume). Note: This method uses
                 | mm2 instead of default Catia V5 unit.  Example:    This example

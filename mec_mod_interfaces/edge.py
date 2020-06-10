@@ -1,7 +1,7 @@
 #! /usr/bin/python3.6
 # module initially auto generated using V5Automation.chm from CATIA R25 on 2020-05-18 10:56:40.651039
 
-from pycatia.system_interfaces.base_object import AnyObject
+from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
 
 from .boundary import Boundary

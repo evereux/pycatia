@@ -29,7 +29,7 @@ class Constraints(Collection):
             CAA V5 Visual Basic help
 
                 | BrokenConstraintsCount
-                | o Property BrokenConstraintsCount(    ) As long
+                | o Property BrokenConstraintsCount() As long
                 | 
                 | Returns the number of broken constraints from the Constraints
                 | collection.
@@ -50,7 +50,7 @@ class Constraints(Collection):
             CAA V5 Visual Basic help
 
                 | UnUpdatedConstraintsCount
-                | o Property UnUpdatedConstraintsCount(    ) As long
+                | o Property UnUpdatedConstraintsCount() As long
                 | 
                 | Returns the number of unupdated constraints from the Constraints
                 | collection.
@@ -203,12 +203,6 @@ class Constraints(Collection):
 
     def item(self, i_index):
         """
-
-        .. warning::
-
-            The index when not a string must be it's python index (indexes in python start from 0).
-            collection. The COM interface index starts at 1.
-
         .. note::
             CAA V5 Visual Basic help
 
@@ -241,20 +235,10 @@ class Constraints(Collection):
 
         :return: Constraint()
         """
-
-        if isinstance(i_index, int):
-            i_index += 1
-
         return self.child_object(self.constraints.Item(i_index))
 
     def remove(self, i_index):
         """
-
-        .. warning::
-
-            The index when not a string must be it's python index (indexes in python start from 0).
-            collection. The COM interface index starts at 1.
-
         .. note::
             CAA V5 Visual Basic help
 
@@ -282,10 +266,6 @@ class Constraints(Collection):
                 |   cstList.Remove(cstList.Count)
 
         """
-
-        if isinstance(i_index, int):
-            i_index += 1
-
         return self.constraints.Remove(i_index)
 
     def __repr__(self):

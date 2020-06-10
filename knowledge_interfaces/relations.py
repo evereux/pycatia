@@ -6,7 +6,7 @@ from pycatia.knowledge_interfaces.formula import Formula
 from pycatia.knowledge_interfaces.law import Law
 from pycatia.knowledge_interfaces.relation import Relation
 from pycatia.knowledge_interfaces.rule import Rule
-from pycatia.knowledge_interfaces.setofequation import SetOfEquation
+from pycatia.knowledge_interfaces.set_of_equation import SetOfEquation
 from pycatia.system_interfaces.collection import Collection
 
 
@@ -61,7 +61,7 @@ class Relations(Collection):
             CAA V5 Visual Basic help
 
                 | Optimizations
-                | o Property Optimizations(    ) As Optimizations
+                | o Property Optimizations() As Optimizations
                 |
                 | Returns the optimization collection.  It can be empty if no
                 | optimization is defined in the document. This property is available
@@ -117,7 +117,6 @@ class Relations(Collection):
         return Check(self.relations.CreateCheck(name, comment, check_formula))
 
     def create_design_table(self, name, comment, copy_mode, sheet_path):
-
         """
         .. note::
             CAA V5 Visual Basic help
@@ -410,7 +409,7 @@ class Relations(Collection):
         :param parent:
         :return: Relations()
         """
-        return Relations(self.relations.CreateSetOfRelations(parent.parent))
+        return Relations(self.relations.CreateSetOfRelations(parent.com_object))
 
     def generate_xml_report_for_checks(self, name):
         """
@@ -433,11 +432,6 @@ class Relations(Collection):
 
     def item(self, index):
         """
-        .. warning::
-            The index when not a string must be it's python index (indexes in python start from 0).
-            collection. The COM interface index starts at 1.
-
-
         .. note::
             CAA V5 Visual Basic help
 
@@ -472,10 +466,6 @@ class Relations(Collection):
         :param str or int index:
         :return: Relation()
         """
-
-        if isinstance(index, int):
-            index += 1
-
         return Relation(self.relations.Item(index))
 
     def sub_list(self, feature, recursively):
@@ -519,10 +509,6 @@ class Relations(Collection):
 
     def remove(self, index):
         """
-        .. warning::
-            The index when not a string must be it's python index (indexes in python start from 0).
-            collection. The COM interface index starts at 1.
-
         .. note::
             CAA V5 Visual Basic help
 
@@ -552,10 +538,6 @@ class Relations(Collection):
 
         :param str|int index:
         """
-
-        if isinstance(index, int):
-            index += 1
-
         self.relations.Remove(index)
 
     def __repr__(self):
