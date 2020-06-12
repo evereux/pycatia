@@ -1,144 +1,266 @@
-#! /usr/bin/python3.6
+#! usr/bin/python3.6
+"""
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+
+    .. warning::
+        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+        They are there as a guide as to how the visual basic / catscript functions work
+        and thus help debugging in pycatia.
+        
+"""
 
 from pycatia.knowledge_interfaces.relation import Relation
+from pycatia.system_interfaces.any_object import AnyObject
 
 
-class Parameter:
+class Parameter(AnyObject):
     """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
-                | Represents the parameter.It can be computed from a relation: formula,
-                | program, or check. It is an abstract object which is not intended to
-                | be created as such, but from which the integer, bolean, real, and
-                | string parameters derive.
-                |
-                | Here is an example to create one:
-                | Dim CATDocs As Documents
-                | Set CATDocs = CATIA.Documents
-                | Dim part1 As Document
-                | Set part1 = CATDocs.Add("CATPart")
-                | Dim density As RealParam
-                | Set density = part1.Part.Parameters.CreateReal("density", 2.5)
-
+                | System.IUnknown
+                |     System.IDispatch
+                |         System.CATBaseUnknown
+                |             System.CATBaseDispatch
+                |                 System.AnyObject
+                |                     Parameter
+                | 
+                | Represents the parameter.
+                | It can be computed from a relation: formula, program, or check. It is an
+                | abstract object which is not intended to be created as such, but from which the
+                | integer, bolean, real, and string parameters derive. Here is an example to
+                | create one:
+                | 
+                | 	Dim CATDocs As Documents
+                |  Set CATDocs = CATIA.Documents
+                |  Dim part1 As Document
+                |  Set part1   = CATDocs.Add("CATPart")
+                |  Dim density As RealParam
+                |  Set density = part1.Part.Parameters.CreateReal("density", 2.5)
+                |  
+                | 
+                | See also:
+                |     IntParam, BoolParam, RealParam, StrParam, Formula, Rule, Check
+    
     """
 
-    def __init__(self, parameter):
-        self.parameter = parameter
+    def __init__(self, com_object):
+        super().__init__(com_object)
+        self.parameter = com_object
 
     @property
     def comment(self):
         """
+        .. note::
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property Comment() As CATBSTR
+                | 
+                |     Returns or sets the parameter object comment.
 
         :return: str
         """
+
         return self.parameter.Comment
 
     @comment.setter
-    def comment(self, comment):
-        self.parameter.Comment = comment
+    def comment(self, value):
+        """
+        :param str value:
+        """
+
+        self.parameter.Comment = value
 
     @property
     def context(self):
         """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property Context() As AnyObject (Read Only)
+                | 
+                |     Returns the context of the parameter : a part, a product, a drafting, a process, depending where
+                |     the parameter is.
 
-                | Context
-                | o Property Context(    ) As AnyObject
-                |
-                | Returns the context of the parameter : a part, a product, a drafting,
-                | a process, depending where the parameter is.
+        :return: AnyObject
         """
-        return self.parameter.Context
+
+        return AnyObject(self.parameter.Context)
 
     @property
-    def formula_name(self):
-        if self.parameter.name.find("\\"):
-            return self.parameter.name.split("\\", 1)[1]
+    def hidden(self):
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property Hidden() As boolean
+                | 
+                |     Returns or sets wether the parameter is hidden or should be hidden. or not.
 
-        return self.parameter.name
+        :return: bool
+        """
+
+        return self.parameter.Hidden
+
+    @hidden.setter
+    def hidden(self, value):
+        """
+        :param bool value:
+        """
+
+        self.parameter.Hidden = value
 
     @property
     def is_true_parameter(self):
         """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property IsTrueParameter() As boolean (Read Only)
+                | 
+                |     Returns a boolean saying if the parameter is a true one (real, dimension,
+                |     string, etc.) or a geometrical one (isolated points, curves, surfaces).
 
-                | IsTrueParameter
-                | o Property IsTrueParameter(    ) As boolean
-                |
-                | Returns a boolean saying if the parameter is a true one (real,
-                | dimension, string, etc.) or a geometrical one (isolated points,
-                | curves, surfaces).
+        :return: bool
         """
+
         return self.parameter.IsTrueParameter
 
     @property
     def optional_relation(self):
         """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property OptionalRelation() As Relation (Read Only)
+                | 
+                |     Returns the relation that can be used to compute the parameter. As this
+                |     relation might not exist, NULL may be returned, so a test is
+                |     required.
+                | 
+                |     Example:
+                |         This example checks if there is a relation to compute the param1
+                |         parameter, and if no relation exists, displays a message
+                |         box:
+                | 
+                |          Set param1_rel = param1.OptionalRelation
+                |          If param1_rel is Nothing Then
+                |               MsgBox "No relation to compute param1"
+                |          End If
 
-                | OptionalRelation
-                | o Property OptionalRelation(    ) As Relation
-                |
-                | Returns the relation that can be used to compute the parameter. As
-                | this relation might not exist, NULL may be returned, so a test is
-                | required.
-
-                | Example:
-                | This example checks if there is a relation to compute the param1
-                | parameter, and if no relation exists, displays a message box:
-                |
-                | Set param1_rel = param1.OptionalRelation
-                | If param1_rel is Nothing Then
-                |     MsgBox "No relation to compute param1" End If
-        """
-        if self.has_relation():
-            return Relation(self.parameter.OptionalRelation)
-
-    @property
-    def name(self):
+        :return: Relation
         """
 
-        :return: str
-        """
-        return self.parameter.Name
-
-    @name.setter
-    def name(self, name):
-        self.parameter.Rename(name)
+        return Relation(self.parameter.OptionalRelation)
 
     @property
     def read_only(self):
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property ReadOnly() As boolean (Read Only)
+                | 
+                |     Returns whether the parameter can be modified.
+                | 
+                |     Example:
+                |         This example checks if the param1 parameter can be modified, and if it
+                |         cannot, displays a message box:
+                | 
+                |          If ( param1.ReadOnly ) Then
+                |               MsgBox "No way to change param1"
+                |          End If
+
+        :return: bool
+        """
+
         return self.parameter.ReadOnly
 
     @property
-    def type(self):
+    def renamed(self):
         """
-        Returns the last element of parlament
+        .. note::
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property Renamed() As boolean (Read Only)
+                | 
+                |     Returns a boolean saying if the parameter is a renamed parameter or not.
 
-        | Example:
-        | Parameter.Name = Part.Name\\GeometricalSet\\SubGeometricalSet\\Element\\Radius
-        | Parameter.type = Radius
-        | EngineNom = Engine.Nomenclature
-
-        :return: str
+        :return: bool
         """
-        if self.is_renamed():
-            return self.parameter.name00
-        else:
-            return self.parameter.name.rsplit("\\")[-1]
+
+        return self.parameter.Renamed
 
     @property
     def user_access_mode(self):
         """
-        Returns the user access mode of the parameter:
-        0 - Read only parameter (cannot be destroyed).
-        1 - Read/write parameter (cannot be destroyed).
-        2 - User parameter (can be read, written and destroyed).
+        .. note::
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property UserAccessMode() As long (Read Only)
+                | 
+                |     Returns the user access mode of the parameter. 
+                | 
+                | 0
+                |     Read only parameter (cannot be destroyed). 
+                | 1
+                |     Read/write parameter (cannot be destroyed). 
+                | 2
+                |     User parameter (can be read, written and destroyed).
+                |     Methods
+                | 
+                | o Sub Rename(CATBSTR iName)
+                | 
+                |     Renames the parameter.
+                | 
+                |     Parameters:
+                | 
+                |         iName
+                |             The new name of the parameter. If iName contains "Local:" prefix
+                |             the rename will affect the local name. If not, it will affect the global name.
+                |             
+                | 
+                |     Example:
+                |         This example renames the param1 parameter to
+                |         PartSeatbodyMinimumThickness:
+                | 
+                |          Call param1.Rename("PartSeatbodyMinimumThickness")
+                |          
+                | 
+                | o Sub ValuateFromString(CATBSTR iValue)
+                | 
+                |     Valuates a parameter using a string as input. The string depends on
+                |     parameter nature :
+                | 
+                |     "True" or "False" for Boolean
+                | 
+                |     a numerical value for Integer or Real
+                | 
+                |     a numerical value with or without a unit for Dimension
+                | 
+                |     Parameters:
+                | 
+                |         iValue
+                |             The value to assign to the dimension parameter 
+                | 
+                |     Example:
+                |         This example sets the value of the existing dimension parameter to a
+                |         new value:
+                | 
+                |          dimension.ValuateFromString("300mm");
+                |          
+                | 
+                | o Func ValueAsString() As CATBSTR
+                | 
+                |     Returns the value of the parameter as a string.
+                | 
+                | Example:
+                |     This example gets the value of the existing dimension parameter and shows
+                |     it in a message box
+                | 
+                |      Dim str
+                |      str = dimension.ValueAsString;
+                |      MessageBox str
+                |      
+                | 
+                |     Copyright © 1999-2011, Dassault Systèmes. All rights
+                |     reserved.
+
+        :return: int
         """
+
         return self.parameter.UserAccessMode
 
     @property
@@ -148,116 +270,6 @@ class Parameter:
     @value.setter
     def value(self, value):
         self.parameter.Value = value
-
-    def attributes(self):
-        """
-        Returns a string describing the parameter attributes.
-
-        :return: str
-        """
-
-        return ('(Parameter) Attributes... \n'
-                f'Name:                  {self.name}\n'
-                f'Type:                  {self.type}\n'
-                f'Class:                 {type(self)}\n'
-                f'Comment:               {self.comment}\n'
-                f'Context:               {self.context}\n'
-                f'Visible:               {self.is_visible()}\n'
-                f'Renamed:               {self.is_renamed()}\n'
-                f'Read only:             {self.read_only}\n'
-                f'Relation:              {self.has_relation()}')
-
-    def has_relation(self):
-        if self.parameter.OptionalRelation:
-            return True
-
-        return False
-
-    def is_renamed(self):
-        """
-        .. note::
-            CAA V5 Visual Basic help
-
-                | Renamed
-                | o Property Renamed(    ) As boolean
-                |
-                | Returns a boolean saying if the parameter is a renamed parameter or
-                | not.
-        """
-        return self.parameter.Renamed
-
-    def is_visible(self):
-        """
-
-        :return: bool
-        """
-        return not self.parameter.Hidden
-
-    def rename(self, new_name):
-        """
-        .. note::
-            CAA V5 Visual Basic help
-
-                | Rename
-                | o Sub Rename( CATBSTR iName)
-                |
-                | Renames the parameter.
-                |
-                | Parameters:
-                | iName
-                |    The new name of the parameter.
-                |  If iName contains "Local:" prefix the rename will affect the local name.
-                |  If not, it will affect the global name.
-                |
-                | Examples:
-                |
-                | This example renames the param1 parameter
-                | to PartSeatbodyMinimumThickness:
-                |
-                | Call param1.Rename("PartSeatbodyMinimumThickness")
-            """
-
-        self.parameter.Rename(new_name)
-
-    def set_visible(self, state):
-        self.parameter.Hidden = not state
-
-    def valuate_from_string(self, i_value):
-        """
-        .. note::
-            CAA V5 Visual Basic help
-
-                | ValuateFromString
-                | o Sub ValuateFromString(    CATBSTR    iValue)
-                |
-                | Valuates a parameter using a string as input. The string depends on
-                | parameter nature : "True" or "False" for Boolean a numerical value for
-                | Integer or Real a numerical value with or without a unit for Dimension
-
-
-                | Parameters:
-                | iValue
-                |    The value to assign to the dimension parameter
-                |
-                | Examples:
-                | This example sets the value of the existing dimension parameter
-                | to a new value:
-                |
-                | dimension.ValuateFromString("300mm");
-        """
-        return self.parameter.ValuateFromString(i_value)
-
-    def value_as_string(self):
-        """
-        .. note::
-            CAA V5 Visual Basic help
-
-                | ValueAsString
-                | o Func ValueAsString(    ) As CATBSTR
-                |
-                | Returns the value of the parameter as a string.
-        """
-        return self.parameter.ValueAsString()
 
     def __repr__(self):
         return f'Parameter(name="{self.name}")'

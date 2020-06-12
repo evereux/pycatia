@@ -1,6 +1,7 @@
 #! /usr/bin/python3.6
 
-from pycatia.base_interfaces import CATIAApplication
+from pycatia import catia
+from pycatia.exception_handling import CATIAApplicationException
 
 
 def initialise():
@@ -8,7 +9,8 @@ def initialise():
 
     :return:
     """
-    catia = CATIAApplication()
-    documents = catia.documents()
+    documents = catia.documents
+    if documents.count > 0:
+        raise CATIAApplicationException('Please close all documents before running tests.')
 
     return catia, documents

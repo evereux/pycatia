@@ -7,26 +7,22 @@
     Get all the points in the geometrical set 'Points' and print the co-ordinate.
 
 """
-from pycatia.base_interfaces import CATIAApplication
-from pycatia.space_analyses_interfaces import CATIAMeasurable
-from pycatia.space_analyses_interfaces import create_measurable
-from pycatia.workbenches import create_spa_workbench
+from pycatia import catia
+from pycatia.space_analyses_interfaces.spa_workbench import SPAWorkbench
 
-catia = CATIAApplication()
-
-documents = catia.documents()
+documents = catia.documents
 documents.open(r'tests\CF_catia_measurable_part.CATPart')
 
-document = catia.document()
+document = catia.active_document
 part = document.part()
-spa_workbench = create_spa_workbench(document.document)
+spa_workbench = SPAWorkbench(document.document)
 
-hybrid_body = part.get_hybrid_body_by_name('Points')
-points = part.get_hybrid_shapes_from_hybrid_body(hybrid_body)
+hybrid_bodies = part.hybrid_bodies
+hybrid_body = hybrid_bodies.get_item_by_name('Points')
+shapes = hybrid_body.hybrid_shapes.items()
 
-for point in points:
-    reference = part.create_reference(point)
-    measurable = create_measurable(spa_workbench, reference)
-    point_measurable = CATIAMeasurable(measurable)
-    coordinates = point_measurable.get_point(catia)
+for point in shapes:
+    reference = part.create_reference_from_object(point)
+    measurable = spa_workbench.get_measurable(reference)
+    coordinates = measurable.get_point()
     print(f'{point.name}: {coordinates}')

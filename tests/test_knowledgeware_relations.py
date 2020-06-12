@@ -1,15 +1,10 @@
 #! /usr/bin/python3.6
 
-import os
-from pathlib import Path
 
-from pycatia.base_interfaces import CATIADocHandler
+from pycatia import CATIADocHandler
 
-from pycatia.knowledge_interfaces import Parameters
-from pycatia.knowledge_interfaces import Relations
 from tests.source_files import cat_part_3
 from tests.source_files import cat_part_blank
-from tests.source_files import cat_part_temp
 from tests.source_files import design_table_1
 
 
@@ -17,7 +12,7 @@ def test_relations_count():
     with CATIADocHandler(cat_part_3) as handler:
         document = handler.document
         part = document.part()
-        relations = Relations(part.relations_com_obj())
+        relations = part.relations
 
         assert relations.count == 6
 
@@ -26,7 +21,7 @@ def test_relations_create_check():
     with CATIADocHandler(cat_part_blank) as handler:
         document = handler.document
         part = document.part()
-        parameters = Parameters(part.parameters_com_obj())
+        parameters = part.parameters
 
         lower_mass = parameters.create_dimension('lower_mass', 'MASS', 5)
         lm_name = parameters.get_name_to_use_in_relation(lower_mass)
@@ -34,7 +29,7 @@ def test_relations_create_check():
         upper_mass = parameters.create_dimension('upper_mass', 'MASS', 10)
         um_name = parameters.get_name_to_use_in_relation(upper_mass)
 
-        relations = Relations(part.relations_com_obj())
+        relations = part.relations
         new_check = relations.create_check('mass-check', 'this is the comment', f"{lm_name}<{um_name}")
 
         assert new_check.name == 'mass-check'
@@ -44,7 +39,7 @@ def test_relations_create_design_table():
     with CATIADocHandler(cat_part_blank) as handler:
         document = handler.document
         part = document.part()
-        relations = Relations(part.relations_com_obj())
+        relations = part.relations
 
         design_table = relations.create_design_table('new-design-table', 'this is a comment', True, design_table_1)
 
@@ -59,7 +54,7 @@ def test_relations_create_formula():
         document = handler.document
         part = document.part()
 
-        parameters = Parameters(part.parameters_com_obj())
+        parameters = part.parameters
 
         lower_mass = parameters.create_dimension('lower_mass', 'MASS', 5)
         lm_name = parameters.get_name_to_use_in_relation(lower_mass)
@@ -69,7 +64,7 @@ def test_relations_create_formula():
 
         target_parm = parameters.create_dimension('target_mass', 'MASS', 0)
 
-        relations = Relations(part.relations_com_obj())
+        relations = part.relations
 
         formula = relations.create_formula(name, comment, target_parm, f"{lm_name}+{um_name}")
 
@@ -80,7 +75,7 @@ def test_relations_create_horizontal_design_table():
     with CATIADocHandler(cat_part_blank) as handler:
         document = handler.document
         part = document.part()
-        relations = Relations(part.relations_com_obj())
+        relations = part.relations
 
         design_table = relations.create_horizontal_design_table('new-design-table', 'this is a comment', True,
                                                                 design_table_1)
@@ -92,7 +87,7 @@ def test_relations_create_law():
     with CATIADocHandler(cat_part_blank) as handler:
         document = handler.document
         part = document.part()
-        relations = Relations(part.relations_com_obj())
+        relations = part.relations
 
         law = relations.create_law('new-law', 'this is a comment', '/* code comments */')
 
@@ -103,7 +98,7 @@ def test_relations_create_program():
     with CATIADocHandler(cat_part_blank) as handler:
         document = handler.document
         part = document.part()
-        relations = Relations(part.relations_com_obj())
+        relations = part.relations
 
         program = relations.create_program('new-program', 'this is a comment', '/* code comments */')
 
@@ -114,7 +109,7 @@ def test_relations_create_rule_base():
     with CATIADocHandler(cat_part_blank) as handler:
         document = handler.document
         part = document.part()
-        relations = Relations(part.relations_com_obj())
+        relations = part.relations
 
         rule_base = relations.create_rule_base('new-rule-base')
 
@@ -125,8 +120,8 @@ def test_relations_create_set_of_equations():
     with CATIADocHandler(cat_part_blank) as handler:
         document = handler.document
         part = document.part()
-        parameters = Parameters(part.parameters_com_obj())
-        relations = Relations(part.relations_com_obj())
+        parameters = part.parameters
+        relations = part.relations
 
         dim_b = parameters.create_real("dim_b", 1.2)
         dim_b_name = parameters.get_name_to_use_in_relation(dim_b)
@@ -141,8 +136,8 @@ def test_relations_create_set_of_relations():
     with CATIADocHandler(cat_part_blank) as handler:
         document = handler.document
         part = document.part()
-        relations = Relations(part.relations_com_obj())
-        relations.create_set_of_relations(relations)
+        relations = part.relations
+        relations.create_set_of_relations(part)
 
         assert relations.name == 'Relations'
 
@@ -156,7 +151,7 @@ def test_relations_generate_xml():
     #     document = handler.document
     #     part = document.part()
     #
-    #     parameters = Parameters(part.parameters_com_obj())
+    #     parameters = part.parameters
     #
     #     lower_mass = parameters.create_dimension('lower_mass', 'MASS', 5)
     #     lm_name = parameters.get_name_to_use_in_relation(lower_mass)
@@ -164,7 +159,7 @@ def test_relations_generate_xml():
     #     upper_mass = parameters.create_dimension('upper_mass', 'MASS', 10)
     #     um_name = parameters.get_name_to_use_in_relation(upper_mass)
     #
-    #     relations = Relations(part.relations_com_obj())
+    #     relations = part.relations
     #     relations.create_check('mass-check', 'this is the comment', f"{lm_name}<{um_name}")
     #
     #     relations.generate_xml_report_for_checks(str(xml_name))
@@ -177,8 +172,8 @@ def test_relations_get_items():
         document = handler.document
         part = document.part()
 
-        relations = Relations(part.relations_com_obj())
-        items = relations.get_items()
+        relations = part.relations
+        items = relations.items()
 
         assert len(items) == 6
         assert items[0].name == 'Formula.1'
@@ -189,8 +184,8 @@ def test_relations_get_item_by_index():
         document = handler.document
         part = document.part()
 
-        relations = Relations(part.relations_com_obj())
-        item = relations.get_item_by_index(0)
+        relations = part.relations
+        item = relations.get_item_by_index(1)
 
         assert item.name == 'Formula.1'
 
@@ -200,7 +195,7 @@ def test_relations_get_item_names():
         document = handler.document
         part = document.part()
 
-        relations = Relations(part.relations_com_obj())
+        relations = part.relations
         item_names = relations.get_item_names()
 
         ref_names = ['Formula.1', 'Formula.2', 'Formula.3', 'Formula.4', 'Formula.5', 'Formula.7']
@@ -212,8 +207,8 @@ def test_relations_item():
         document = handler.document
         part = document.part()
 
-        relations = Relations(part.relations_com_obj())
-        relation = relations.item(0)
+        relations = part.relations
+        relation = relations.item(1)
         assert relation.name == 'Formula.1'
 
 
@@ -227,10 +222,10 @@ def test_relations_remove():
         document = handler.document
         part = document.part()
 
-        relations = Relations(part.relations_com_obj())
-        relation = relations.item(0)
+        relations = part.relations
+        relation = relations.item(1)
         assert relation.name == 'Formula.1'
 
-        relations.remove(0)
-        relation = relations.item(0)
+        relations.remove(1)
+        relation = relations.item(1)
         assert relation.name != 'Formula.1'

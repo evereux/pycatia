@@ -9,33 +9,31 @@
 
 """
 
-from pycatia.base_interfaces import CATIAApplication
+from pycatia import catia
 
-catia = CATIAApplication()
-
-documents = catia.documents()
+documents = catia.documents
 documents.open(r'tests\CF_TopLevelAssy.CATProduct')
 
-document = catia.document()
-top_product = document.product()
+document = catia.active_document
+product = document.product()
 
 # Change the work mode to Design Mode.
 # This is useful for CATIA configurations that work with a cache otherwise methods on children may fail
 # due to the document not being loaded.
-top_product.apply_work_mode("DESIGN_MODE")
+product.apply_work_mode("DESIGN_MODE")
 
 
-def print_properties(product):
-    print(f"{product.name}: mass: {product.analyze.mass}, \n"
-          f"    volume: {product.analyze.volume}, \n"
-          f"    wet_area: {product.analyze.wet_area}, \n"
-          f"    gravity_center: {product.analyze.get_gravity_center(catia)}, \n"
-          f"    inertia: {product.analyze.get_inertia(catia)}"
+def print_properties(obj):
+    print(f"{obj.name}: mass: {obj.analyze.mass}, \n"
+          f"    volume: {obj.analyze.volume}, \n"
+          f"    wet_area: {obj.analyze.wet_area}, \n"
+          f"    gravity_center: {obj.analyze.get_gravity_center()}, \n"
+          f"    inertia: {obj.analyze.get_inertia()}"
           )
 
 
 # I know, this isn't pretty, but my intent is to keep examples simple.
-for sub_product in top_product.get_products():
+for sub_product in product.get_products():
 
     if sub_product.is_catproduct():
 

@@ -4,13 +4,13 @@
 
     Example 8:
 
-    Open all CATParts in source directiory and save to IGS in target directory.
+    Open all CATParts in source directory and save to IGS in target directory.
 
 """
 
 import os
 
-from pycatia.base_interfaces import CATIADocHandler
+from pycatia import CATIADocHandler
 
 # make these directories the full pathname.
 source_directory = 'tests'

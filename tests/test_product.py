@@ -3,29 +3,24 @@
 import os
 from pathlib import Path
 
-from pycatia.base_interfaces import CATIADocHandler
-from pycatia.product_structure_interfaces import Product
+from pycatia import CATIADocHandler
+from pycatia.product_structure_interfaces.product import Product
 from tests.source_files import cat_product
 from tests.source_files import cat_part_measurable
 
 
 def test_analyze():
     with CATIADocHandler(cat_product) as handler:
-        catia = handler.catia
         product = handler.document.product()
-
-        product.apply_work_mode("DESIGN_MODE")
-
-        Product.activate_terminal_node(product.get_products())
 
         assert (
                 0.3061919497633215 == product.analyze.mass and
                 306191.9497633215 == product.analyze.volume and
                 39341.17217653142 == product.analyze.wet_area and
-                (65.39210812865413, -25.857059154544192, 0.0) == product.analyze.get_gravity_center(catia) and
+                (65.39210812865413, -25.857059154544192, 0.0) == product.analyze.get_gravity_center() and
                 (246.46031165305178, 137.67448741239653, 0.0,
                  137.67448741239653, 337.7416949626834, 0.0,
-                 0.0, 0.0, 502.5508200121834) == product.analyze.get_inertia(catia)
+                 0.0, 0.0, 502.5508200121834) == product.analyze.get_inertia()
         )
 
 
@@ -121,7 +116,7 @@ def test_get_products():
         product = handler.document.product()
         products = product.get_products()
 
-        assert 'Product(part_number="CF_SubProduct1", file_name="CF_SubProduct1.CATProduct")' == products[0].__repr__()
+        assert 'Product(name="CF_SubProduct1.1")' == products[0].__repr__()
 
 
 def test_has_children():
@@ -152,7 +147,6 @@ def test_is_catproduct_is_catpart():
 
 def test_move():
     with CATIADocHandler(cat_product) as handler:
-        catia = handler.catia
         product = handler.document.product()
 
         product.apply_work_mode("DESIGN_MODE")
@@ -180,7 +174,7 @@ def test_move():
 
         assert ((65.41613484215364, 0.0, 0.0,
                  0.0, 68.97147661807078, -13.970786852103165,
-                 0.0, -13.970786852103165, 68.97147661807078) == product.analyze.get_inertia(catia))
+                 0.0, -13.970786852103165, 68.97147661807078) == product.analyze.get_inertia())
 
 
 def test_name():
@@ -380,5 +374,4 @@ def test_repr():
     with CATIADocHandler(cat_part_measurable) as handler:
         part = handler.document.product()
 
-        assert 'Product(part_number="CF_catia_measurable_part", file_name="CF_catia_measurable_part.CATPart")' == \
-               part.__repr__()
+        assert 'Product(name="CF_catia_measurable_part")' == part.__repr__()

@@ -5,11 +5,8 @@ import os
 
 import pytest
 
-from pycatia.base_interfaces import CATIAApplication
-from pycatia.base_interfaces import CATIADocHandler
-from pycatia.base_interfaces import Documents
-from pycatia.base_interfaces import Document
-from pycatia.hybrid_shape_interfaces import HybridShapeFactory
+from pycatia import catia
+from pycatia.base_interfaces.context import CATIADocHandler
 from tests.source_files import cat_part_measurable
 from tests.source_files import cat_product
 
@@ -17,18 +14,17 @@ now_string = datetime.now().strftime('%Y%m%d-%H%M%S')
 
 
 def test_activate_document():
-    catia = CATIAApplication()
-    documents = catia.documents()
+    documents = catia.documents
     documents.open(cat_part_measurable)
-    document_part = catia.document()
+    document_part = catia.active_document
     documents.open(cat_product)
-    document_product = catia.document()
+    document_product = catia.active_document
 
     assert document_part.name == os.path.basename(cat_part_measurable)
     assert document_product.name == os.path.basename(cat_product)
 
     document_part.activate()
-    document = catia.document()
+    document = catia.active_document
 
     assert document.name == os.path.basename(cat_part_measurable)
 
@@ -94,13 +90,6 @@ def test_full_name():
                document.full_name
 
 
-def test_get_documents():
-    with CATIADocHandler(cat_product) as handler:
-        documents = handler.documents
-
-        assert len(documents.get_documents()) == 5
-
-
 def test_get_documents_names():
     with CATIADocHandler(cat_product) as handler:
         documents = handler.documents
@@ -113,26 +102,26 @@ def test_get_documents_names():
             'CF_SubProduct2.CATProduct'
         ]
 
-        assert documents.get_documents_names() == expected_names
+        assert documents.get_item_names() == expected_names
 
 
 def test_is_saved():
     with CATIADocHandler(cat_part_measurable) as handler:
-        catia = handler.catia
         document = handler.document
         assert document.is_saved
 
         part = document.part()
 
         # create a new geometrical set to add point.
-        geometrical_set = part.part.HybridBodies.Add()
+        geometrical_set = part.hybrid_bodies.add()
         geometrical_set.Name = 'lalalalalala'
 
         # just adding geometrical set isn't enough to trigger is_saved to be False
         # catia r21 bug?
         # so a new point is also added.
-        hsf = HybridShapeFactory(part)
-        hsf.add_new_point_coord(catia, geometrical_set, (0, 1, 2), 'Point.1')
+        factory = part.hybrid_shape_factory
+        point = factory.add_new_point_coord(0, 1, 2)
+        geometrical_set.append_hybrid_shape(point)
         part.update()
 
         assert not document.is_saved
@@ -143,14 +132,13 @@ def test_item():
         documents = handler.documents
         document_to_get = 'CF_SubProduct2.CATProduct'
         doc_com1 = documents.item(document_to_get)
-        doc_com2 = documents.item(1)
+        doc_com2 = documents.item(2)
 
-        assert (doc_com1.Name == document_to_get) and (doc_com2.Name == 'CF_TopLevelAssy.CATProduct')
+        assert (doc_com1.name == document_to_get) and (doc_com2.name == 'CF_TopLevelAssy.CATProduct')
 
 
 def test_new_from():
-    catia = CATIAApplication()
-    documents = catia.documents()
+    documents = catia.documents
     document = documents.new_from(cat_part_measurable)
 
     assert document.name is not os.path.basename(cat_part_measurable)
@@ -163,8 +151,7 @@ def test_new_from():
 
 def test_no_such_file():
     with pytest.raises(FileNotFoundError):
-        catia = CATIAApplication()
-        documents = catia.documents()
+        documents = catia.documents
         documents.open('lala')
 
 

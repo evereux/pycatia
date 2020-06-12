@@ -1,23 +1,23 @@
 #! /usr/bin/python3.6
 
-from pycatia.base_interfaces import CATIADocHandler
-from pycatia.knowledge_interfaces import Parameters
-from pycatia.knowledge_interfaces import BoolParam
-from pycatia.knowledge_interfaces import IntParam
-from pycatia.knowledge_interfaces import StrParam
-from pycatia.knowledge_interfaces import RealParam
+from pycatia import CATIADocHandler
+from pycatia.mec_mod_interfaces.body import Body
+from pycatia.mec_mod_interfaces.shape import Shape
+from pycatia.knowledge_interfaces.bool_param import BoolParam
+from pycatia.knowledge_interfaces.int_param import IntParam
+from pycatia.knowledge_interfaces.str_param import StrParam
+from pycatia.knowledge_interfaces.real_param import RealParam
 from tests.source_files import cat_part_3
 from tests.source_files import cat_part_blank
-from tests.source_files import cat_part_temp
 
 
 def test_parameters_name():
     with CATIADocHandler(cat_part_3) as handler:
         document = handler.document
         part = document.part()
-        parameters = Parameters(part.parameters_com_obj())
+        parameters = part.parameters
 
-        first_parameter = parameters.item(0)
+        first_parameter = parameters.item(1)
 
         assert first_parameter.name == r'CF_Part3\PartBody\Pad.1\FirstLimit\Length'
 
@@ -26,7 +26,7 @@ def test_all_parameters():
     with CATIADocHandler(cat_part_3) as handler:
         document = handler.document
         part = document.part()
-        parameters = Parameters(part.parameters_com_obj())
+        parameters = part.parameters
 
         all_parms = parameters.all_parameters()
 
@@ -37,19 +37,19 @@ def test_create_boolean():
     with CATIADocHandler(cat_part_blank) as handler:
         document = handler.document
         part = document.part()
-        parameters = Parameters(part.parameters_com_obj())
+        parameters = part.parameters
 
         new_boolean_parm = parameters.create_boolean('new_boolean', True)
 
         assert new_boolean_parm.name == r'CF_Part_Blank\new_boolean'
-        assert new_boolean_parm.value == True
+        assert new_boolean_parm.value is True
 
 
 def test_create_dimension():
     with CATIADocHandler(cat_part_blank) as handler:
         document = handler.document
         part = document.part()
-        parameters = Parameters(part.parameters_com_obj())
+        parameters = part.parameters
 
         new_dimension_parm = parameters.create_dimension('new_dimension', "length", 30.1)
 
@@ -61,7 +61,7 @@ def test_create_int():
     with CATIADocHandler(cat_part_blank) as handler:
         document = handler.document
         part = document.part()
-        parameters = Parameters(part.parameters_com_obj())
+        parameters = part.parameters
 
         new_int_parm = parameters.create_integer('new_int', 30)
 
@@ -73,7 +73,7 @@ def test_create_list():
     with CATIADocHandler(cat_part_blank) as handler:
         document = handler.document
         part = document.part()
-        parameters = Parameters(part.parameters_com_obj())
+        parameters = part.parameters
 
         new_list = parameters.create_list('new_list')
 
@@ -84,16 +84,16 @@ def test_count_parameters():
     with CATIADocHandler(cat_part_blank) as handler:
         document = handler.document
         part = document.part()
-        parameters = Parameters(part.parameters_com_obj())
+        parameters = part.parameters
 
-        assert parameters.count_parameters() == 5
+        assert parameters.count == 5
 
 
 def test_create_real():
     with CATIADocHandler(cat_part_blank) as handler:
         document = handler.document
         part = document.part()
-        parameters = Parameters(part.parameters_com_obj())
+        parameters = part.parameters
 
         new_list = parameters.create_real('new_real', 5.4)
 
@@ -105,19 +105,18 @@ def test_create_parameters_set():
     with CATIADocHandler(cat_part_blank) as handler:
         document = handler.document
         part = document.part()
-        parameters = Parameters(part.parameters_com_obj())
+        parameters = part.parameters
         root_parameter_set = parameters.root_parameter_set
-
-        new_parm_set = parameters.create_set_of_parameters(root_parameter_set)
-
-        assert new_parm_set.__repr__() == 'ParameterSet()'
+        parameters.create_set_of_parameters(root_parameter_set)
+        parameter_sets = root_parameter_set.parameter_sets.items()
+        assert parameter_sets[0].__repr__() == 'ParameterSet(name="Parameters.1")'
 
 
 def test_create_string():
     with CATIADocHandler(cat_part_blank) as handler:
         document = handler.document
         part = document.part()
-        parameters = Parameters(part.parameters_com_obj())
+        parameters = part.parameters
 
         new_string = parameters.create_string('new_string', "this is a string")
 
@@ -129,7 +128,7 @@ def test_get_name_to_use_in_relation():
     with CATIADocHandler(cat_part_blank) as handler:
         document = handler.document
         part = document.part()
-        parameters = Parameters(part.parameters_com_obj())
+        parameters = part.parameters
 
         new_string = parameters.create_string('new_string', "this is a string")
         name_to_use = parameters.get_name_to_use_in_relation(new_string)
@@ -141,7 +140,7 @@ def test_has_parameters():
     with CATIADocHandler(cat_part_blank) as handler:
         document = handler.document
         part = document.part()
-        parameters = Parameters(part.parameters_com_obj())
+        parameters = part.parameters
 
         assert parameters.has_parameters() > 0
 
@@ -150,7 +149,7 @@ def test_item():
     with CATIADocHandler(cat_part_blank) as handler:
         document = handler.document
         part = document.part()
-        parameters = Parameters(part.parameters_com_obj())
+        parameters = part.parameters
         bool_param = parameters.create_boolean('new_boolean', True)
         int_param = parameters.create_integer('new_integer', 10)
         str_param = parameters.create_string('new_string', 'new_value')
@@ -166,31 +165,34 @@ def test_sub_list():
     with CATIADocHandler(cat_part_3) as handler:
         document = handler.document
         part = document.part()
-        body = part.get_body_by_name('PartBody')
-        pad = body.Shapes.Item('Pad.1')
-        parameters = Parameters(part.parameters_com_obj())
-        sub_list = parameters.sub_list(pad, True)
+        bodies = part.bodies
+        body = Body(bodies.get_item_by_name('PartBody').com_object)
+        shape = Shape(body.shapes.get_item_by_name('Pad.1').com_object)
+        parameters = part.parameters
+        sub_list = parameters.sub_list(shape, True)
 
-        assert sub_list.item(0).name == r'CF_Part3\PartBody\Pad.1\FirstLimit\Length'
+        assert sub_list.item(1).name == r'CF_Part3\PartBody\Pad.1\FirstLimit\Length'
 
 
-def test_remove_item():
+def test_remove():
     with CATIADocHandler(cat_part_blank) as handler:
         document = handler.document
         part = document.part()
-        parameters = Parameters(part.parameters_com_obj())
+        parameters = part.parameters
 
         bool_name = 'new-boolean'
 
-        new_bool_param = parameters.create_boolean(bool_name, True)
+        parameters.create_boolean(bool_name, True)
         all_params = parameters.all_parameters
         index = None
+        # get all the parameters and find the index of the item called var name "bool_name".
         for i, p in enumerate(all_params()):
             if bool_name in p.name:
-                index = i
+                # all calls to object.index() methods start at 1. so add 1.
+                index = i + 1
         assert isinstance(index, int)
 
-        parameters.remove_item(index)
+        parameters.remove(index)
         gone = any(bool_name in x.name for x in all_params())
 
         assert gone is False
