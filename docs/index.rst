@@ -21,8 +21,8 @@ See the examples section for how to use this module.
 
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
    :caption: Programmer Reference:
 
-   api
+   api_index
 

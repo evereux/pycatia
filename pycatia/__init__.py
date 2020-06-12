@@ -1,5 +1,20 @@
 #! /usr/bin/python3.6
 
+"""
+
+    The base object from which most other functionality derives. See examples for more information.
+
+    >>> from pycatia import catia
+    >>> documents = catia.documents
+    >>> # documents represenents the collection of currently open documents.
+    >>> document = catia.active_document
+    >>> # document is the currently active document.
+    >>>
+    >>> # open a new CATPart document
+    >>> documents.add('Part')
+
+"""
+
 import os
 
 from pycatia.base_interfaces.base_application import catia_application
