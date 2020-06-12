@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class LicenseSettingAtt(SettingController):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
@@ -171,7 +170,7 @@ class LicenseSettingAtt(SettingController):
 
         self.license_setting_att.ShowLicense = value
 
-    def get_demo_mode_info(self, io_admin_level=None, io_locked=None):
+    def get_demo_mode_info(self, io_admin_level, io_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -188,7 +187,7 @@ class LicenseSettingAtt(SettingController):
         """
         return self.license_setting_att.GetDemoModeInfo(io_admin_level, io_locked)
 
-    def get_frequency_info(self, io_admin_level=None, io_locked=None):
+    def get_frequency_info(self, io_admin_level, io_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -205,7 +204,7 @@ class LicenseSettingAtt(SettingController):
         """
         return self.license_setting_att.GetFrequencyInfo(io_admin_level, io_locked)
 
-    def get_granted_licenses_list(self, i_default_licenses=None):
+    def get_granted_licenses_list(self, i_default_licenses):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -220,7 +219,7 @@ class LicenseSettingAtt(SettingController):
         """
         return tuple(self.license_setting_att.GetGrantedLicensesList(i_default_licenses))
 
-    def get_license(self, i_license=None):
+    def get_license(self, i_license):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -247,7 +246,8 @@ class LicenseSettingAtt(SettingController):
                 |     Returns:
                 |         the value of the License:
                 |         NotRequested : License is not Requested
-                |         key : the name of the license, the default available license has been chosen by the user. License is Requested.
+                |         key : the name of the license, the default available license has been chosen by the user.
+                |               License is Requested.
                 |         License Number : a specific license number has been chosen by the user. License is Requested.
 
         :param str i_license:
@@ -255,7 +255,7 @@ class LicenseSettingAtt(SettingController):
         """
         return str(self.license_setting_att.GetLicense(i_license))
 
-    def get_license_info(self, i_license=None, io_admin_level=None, io_locked=None):
+    def get_license_info(self, i_license, io_admin_level, io_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -273,7 +273,7 @@ class LicenseSettingAtt(SettingController):
         """
         return self.license_setting_att.GetLicenseInfo(i_license, io_admin_level, io_locked)
 
-    def get_licenses_list(self, i_default_licenses=None):
+    def get_licenses_list(self, i_default_licenses):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -308,7 +308,7 @@ class LicenseSettingAtt(SettingController):
         """
         return tuple(self.license_setting_att.GetLicensesList(i_default_licenses))
 
-    def get_licenses_list_info(self, io_admin_level=None, io_lock=None):
+    def get_licenses_list_info(self, io_admin_level, io_lock):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -347,7 +347,7 @@ class LicenseSettingAtt(SettingController):
         """
         return self.license_setting_att.GetLicensesListInfo(io_admin_level, io_lock)
 
-    def get_nodelock_alert_info(self, io_admin_level=None, io_locked=None):
+    def get_nodelock_alert_info(self, io_admin_level, io_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -364,7 +364,7 @@ class LicenseSettingAtt(SettingController):
         """
         return self.license_setting_att.GetNodelockAlertInfo(io_admin_level, io_locked)
 
-    def get_server_time_out_info(self, io_admin_level=None, io_locked=None):
+    def get_server_time_out_info(self, io_admin_level, io_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -380,7 +380,7 @@ class LicenseSettingAtt(SettingController):
         """
         return self.license_setting_att.GetServerTimeOutInfo(io_admin_level, io_locked)
 
-    def get_show_license_info(self, io_admin_level=None, io_locked=None):
+    def get_show_license_info(self, io_admin_level, io_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -397,7 +397,7 @@ class LicenseSettingAtt(SettingController):
         """
         return self.license_setting_att.GetShowLicenseInfo(io_admin_level, io_locked)
 
-    def set_demo_mode_lock(self, i_lock=None):
+    def set_demo_mode_lock(self, i_lock):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -426,7 +426,7 @@ class LicenseSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_frequency_lock(self, i_lock=None):
+    def set_frequency_lock(self, i_lock):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -455,7 +455,7 @@ class LicenseSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_license(self, i_license=None, i_value=None):
+    def set_license(self, i_license, i_value):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -480,8 +480,10 @@ class LicenseSettingAtt(SettingController):
                 | 
                 |             the value of the License:
                 |             NotRequested : License is not Requested
-                |             key : the name of the license, the default available license has been chosen by the user. License is Requested.
-                |             License Number : a specific license number has been chosen by the user. License is Requested.
+                |             key : the name of the license, the default available license has been chosen by the user.
+                |                   License is Requested.
+                |             License Number : a specific license number has been chosen by the user.
+                |                              License is Requested.
 
         :param str i_license:
         :param str i_value:
@@ -489,7 +491,7 @@ class LicenseSettingAtt(SettingController):
         """
         return self.license_setting_att.SetLicense(i_license, i_value)
 
-    def set_license_lock(self, i_license=None, i_lock=None):
+    def set_license_lock(self, i_license, i_lock):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -520,7 +522,7 @@ class LicenseSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_licenses_list_lock(self, i_lock=None):
+    def set_licenses_list_lock(self, i_lock):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -563,7 +565,7 @@ class LicenseSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_nodelock_alert_lock(self, i_lock=None):
+    def set_nodelock_alert_lock(self, i_lock):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -593,7 +595,7 @@ class LicenseSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_server_time_out_lock(self, i_lock=None):
+    def set_server_time_out_lock(self, i_lock):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -622,7 +624,7 @@ class LicenseSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_show_license_lock(self, i_lock=None):
+    def set_show_license_lock(self, i_lock):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -652,4 +654,4 @@ class LicenseSettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'LicenseSettingAtt(name="{ self.name }")'
+        return f'LicenseSettingAtt(name="{self.name}")'

@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -19,7 +19,7 @@ class HybridShapeTranslate(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -58,7 +58,7 @@ class HybridShapeTranslate(HybridShape):
     def coord_x_value(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CoordXValue() As double
                 | 
                 |     Returns or sets the translate X coordinate value.
@@ -80,7 +80,7 @@ class HybridShapeTranslate(HybridShape):
     def coord_y_value(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CoordYValue() As double
                 | 
                 |     Returns or sets the translate Y coordinate value.
@@ -102,7 +102,7 @@ class HybridShapeTranslate(HybridShape):
     def coord_z_value(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CoordZValue() As double
                 | 
                 |     Returns or sets the translate Z coordinate value.
@@ -124,7 +124,7 @@ class HybridShapeTranslate(HybridShape):
     def direction(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Direction() As HybridShapeDirection
                 | 
                 |     Returns or sets the translate direction.
@@ -153,7 +153,7 @@ class HybridShapeTranslate(HybridShape):
     def distance(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Distance() As Length (Read Only)
                 | 
                 |     Returns the translate distance.
@@ -167,7 +167,7 @@ class HybridShapeTranslate(HybridShape):
     def distance_value(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DistanceValue() As double
                 | 
                 |     Returns or sets the translate distance value.
@@ -196,7 +196,7 @@ class HybridShapeTranslate(HybridShape):
     def elem_to_translate(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ElemToTranslate() As Reference
                 | 
                 |     Returns or sets the element to translate.
@@ -225,7 +225,7 @@ class HybridShapeTranslate(HybridShape):
     def first_point(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FirstPoint() As Reference
                 | 
                 |     Returns or sets the first point defining the translation.
@@ -247,7 +247,7 @@ class HybridShapeTranslate(HybridShape):
     def ref_axis_system(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property RefAxisSystem() As Reference
                 | 
                 |     Returns or Sets the reference Axis System for Translate
@@ -281,7 +281,7 @@ class HybridShapeTranslate(HybridShape):
     def second_point(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SecondPoint() As Reference
                 | 
                 |     Returns or sets the second point defining the translation.
@@ -303,7 +303,7 @@ class HybridShapeTranslate(HybridShape):
     def vector_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property VectorType() As long
                 | 
                 |     Returns or sets the way the translation vector is defined.
@@ -330,7 +330,7 @@ class HybridShapeTranslate(HybridShape):
     def volume_result(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property VolumeResult() As boolean
                 | 
                 |     Returns or sets the volume result.
@@ -362,7 +362,7 @@ class HybridShapeTranslate(HybridShape):
     def get_creation_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetCreationMode() As long
                 | 
                 |     Gets the creation mode.
@@ -384,12 +384,12 @@ class HybridShapeTranslate(HybridShape):
 
         :return: int
         """
-        return int(self.hybrid_shape_translate.GetCreationMode())
+        return self.hybrid_shape_translate.GetCreationMode()
 
-    def set_creation_mode(self, i_creation=None):
+    def set_creation_mode(self, i_creation):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetCreationMode(boolean iCreation)
                 | 
                 |     Sets the creation mode(creation or modification).

@@ -167,7 +167,7 @@ class SettingController(AnyObject):
         """
         return self.setting_controller.ResetToAdminValues()
 
-    def reset_to_admin_values_by_name(self, i_att_list=None):
+    def reset_to_admin_values_by_name(self, i_att_list):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))

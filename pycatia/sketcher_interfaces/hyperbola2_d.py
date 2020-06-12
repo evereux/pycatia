@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -8,15 +8,13 @@
         and thus help debugging in pycatia.
         
 """
-
-
+from pycatia.sketcher_interfaces.curve2_d import Curve2D
 
 
 class Hyperbola2D(Curve2D):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -40,7 +38,7 @@ class Hyperbola2D(Curve2D):
     def imaginary_radius(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ImaginaryRadius() As double (Read Only)
                 | 
                 |     Returns the minor radius of the hyperbola in 2D space
@@ -59,7 +57,7 @@ class Hyperbola2D(Curve2D):
     def radius(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Radius() As double (Read Only)
                 | 
                 |     Returns the major radius of the hyperbola in 2D space
@@ -74,10 +72,10 @@ class Hyperbola2D(Curve2D):
 
         return self.hyperbola2_d.Radius
 
-    def get_axis(self, o_axis=None):
+    def get_axis(self, o_axis):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetAxis(CATSafeArrayVariant oAxis)
                 | 
                 |     Returns the axis vector direction of the hyperbola in 2D
@@ -110,10 +108,10 @@ class Hyperbola2D(Curve2D):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_center(self, o_center=None):
+    def get_center(self, o_center):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetCenter(CATSafeArrayVariant oCenter)
                 | 
                 |     Returns the center point of the hyperbola in 2D space
@@ -147,10 +145,10 @@ class Hyperbola2D(Curve2D):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_data(self, i_center_x=None, i_center_y=None, i_axis_x=None, i_axis_y=None, i_major_radius=None, i_minor_radius=None):
+    def set_data(self, i_center_x, i_center_y, i_axis_x, i_axis_y, i_major_radius, i_minor_radius):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetData(double iCenterX,
                 | double iCenterY,
                 | double iAxisX,
@@ -186,4 +184,4 @@ class Hyperbola2D(Curve2D):
         return self.hyperbola2_d.SetData(i_center_x, i_center_y, i_axis_x, i_axis_y, i_major_radius, i_minor_radius)
 
     def __repr__(self):
-        return f'Hyperbola2D(name="{ self.name }")'
+        return f'Hyperbola2D(name="{self.name}")'

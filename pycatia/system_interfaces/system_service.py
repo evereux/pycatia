@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class SystemService(AnyObject):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
@@ -33,7 +32,7 @@ class SystemService(AnyObject):
         super().__init__(com_object)
         self.system_service = com_object
 
-    def environ(self, i_env_string=None):
+    def environ(self, i_env_string):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -57,7 +56,7 @@ class SystemService(AnyObject):
         """
         return str(self.system_service.Environ(i_env_string))
 
-    def evaluate(self, i_script_text=None, i_language=None, i_function_name=None, i_parameters=None):
+    def evaluate(self, i_script_text, i_language, i_function_name, i_parameters):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -97,12 +96,12 @@ class SystemService(AnyObject):
         :param str i_script_text:
         :param CATScriptLanguage i_language:
         :param str i_function_name:
-        :param tuple i_parameters:
+        :param list i_parameters:
         :return: None
         """
         return self.system_service.Evaluate(i_script_text, i_language, i_function_name, i_parameters)
 
-    def execute_background_processus(self, i_executable_path=None):
+    def execute_background_processus(self, i_executable_path):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -119,7 +118,10 @@ class SystemService(AnyObject):
                 |     Parameters:
                 | 
                 |         iExecutablePath
-                |             The path of the executable to run and its arguments If the executable is not present in the PATH environment variable, you must specify its complete absolute path. If this path contains blanks, you must enclose it with the simple quote character ''' : for example CATIA.SystemService.ExecuteBackgroundProcess "'C:\Program Files\myApp\myApp.exe' myArg". 
+                |             The path of the executable to run and its arguments If the executable is not present in
+                |             the PATH environment variable, you must specify its complete absolute path. If this path
+                |             contains blanks, you must enclose it with the simple quote character ''' : for example
+                |             CATIA.SystemService.ExecuteBackgroundProcess "'C:/Program Files/myApp/myApp.exe' myArg".
                 | 
                 |     Returns:
                 |         Non significative return code. It's never the asynchronous process
@@ -137,7 +139,7 @@ class SystemService(AnyObject):
         """
         return int(self.system_service.ExecuteBackgroundProcessus(i_executable_path))
 
-    def execute_processus(self, i_executable_path=None):
+    def execute_processus(self, i_executable_path):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -154,7 +156,23 @@ class SystemService(AnyObject):
                 |     Parameters:
                 | 
                 |         iExecutablePath
-                |             The path of the executable to run and its arguments. If the executable is not present in the PATH environment variable, you must specify its complete absolute path. If this executable path contains blanks, you must enclose it with the simple quote character ''' to allow the implementation to follow the whole line to the MS call (otherwise only the last part will be sent to the MS call) : Additionally, arguments with blank must be enclosed in double quote in Microsoft call (do not forget to espace double quote in VBA, with another double quote). for example CATIA.SystemService.ExecuteProcessus("'""C:\Program Files\myApp\myApp.exe""' myArg1 '""myAr g2""'") will start the command line "C:\Program Files\myApp\myApp.exe" myArg1 "myAr g2" on Microsoft OS. On Windows, to run a batch file you must execute the command interpreter : set the executable to cmd.exe set the arguments to the following ones : /c plus the name of the batch file. For example CATIA.SystemService.ExecuteProcessus "cmd.exe /c E:\MyBatchFile.bat" On Windows, an argument that contains a blank must be doubly enclosed ; first with the single quote character then, inside the single enclosing quote, with the double quote character. For example CATIA.SystemService.ExecuteProcessus "cmd.exe /c '" & Chr$(34) & "E:\My Bat File.bat" & Chr$(34) & "'" 
+                |             The path of the executable to run and its arguments. If the executable is not present in
+                |             the PATH environment variable, you must specify its complete absolute path. If this
+                |             executable path contains blanks, you must enclose it with the simple quote
+                |             character ''' to allow the implementation to follow the whole line to the MS call
+                |             (otherwise only the last part will be sent to the MS call) : Additionally, arguments
+                |             with blank must be enclosed in double quote in Microsoft call (do not forget to espace
+                |             double quote in VBA, with another double quote).
+                |             for example CATIA.SystemService.ExecuteProcessus("'""C:/Program Files/myApp/myApp.exe""'
+                |                  myArg1 '""myAr g2""'")
+                |             will start the command line "C:/Program Files/myApp/myApp.exe" myArg1 "myAr g2"
+                |             on Microsoft OS. On Windows, to run a batch file you must execute the command interpreter
+                |             : set the executable to cmd.exe set the arguments to the following ones
+                |             : /c plus the name of the batch file. For example CATIA.SystemService.ExecuteProcessus
+                |             "cmd.exe /c E:/MyBatchFile.bat" On Windows, an argument that contains a blank must be
+                |             doubly enclosed ; first with the single quote character then, inside the single enclosing
+                |             quote, with the double quote character. For example CATIA.SystemService.ExecuteProcessus
+                |             "cmd.exe /c '" & Chr$(34) & "E:/My Bat File.bat" & Chr$(34) & "'"
                 | 
                 |     Returns:
                 |         The synchronous process return code 
@@ -171,7 +189,7 @@ class SystemService(AnyObject):
         """
         return int(self.system_service.ExecuteProcessus(i_executable_path))
 
-    def execute_script(self, i_library_name=None, i_type=None, i_program_name=None, i_function_name=None, i_parameters=None):
+    def execute_script(self, i_library_name, i_type, i_program_name, i_function_name, i_parameters):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -216,7 +234,7 @@ class SystemService(AnyObject):
         """
         return self.system_service.ExecuteScript(i_library_name, i_type, i_program_name, i_function_name, i_parameters)
 
-    def print(self, i_string=None):
+    def print(self, i_string):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -240,4 +258,4 @@ class SystemService(AnyObject):
         return self.system_service.Print(i_string)
 
     def __repr__(self):
-        return f'SystemService(name="{ self.name }")'
+        return f'SystemService(name="{self.name}")'

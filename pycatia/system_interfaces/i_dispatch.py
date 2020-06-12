@@ -30,7 +30,7 @@ class IDispatch(IUnknown):
     """
 
     def __init__(self):
-        pass
-    
+        super().__init__()
+
     def __repr__(self):
-        return f'IDispatch(name="{self.name}")'
+        return f'IDispatch()'

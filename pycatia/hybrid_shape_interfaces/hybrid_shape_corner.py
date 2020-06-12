@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -19,7 +19,7 @@ class HybridShapeCorner(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -53,7 +53,7 @@ class HybridShapeCorner(HybridShape):
     def begin_of_corner(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property BeginOfCorner() As long
                 | 
                 |     Return or Set the number of the beginning curve of the corner. This
@@ -84,7 +84,7 @@ class HybridShapeCorner(HybridShape):
     def corner_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CornerType() As long
                 | 
                 |     Returns or sets the Corner Type.
@@ -115,7 +115,7 @@ class HybridShapeCorner(HybridShape):
     def direction(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Direction() As HybridShapeDirection
                 | 
                 |     Returns or sets the 3D corner direction.
@@ -149,7 +149,7 @@ class HybridShapeCorner(HybridShape):
     def discrimination_index(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DiscriminationIndex() As long
                 | 
                 |     Returns or set the discrimination index of the current corner. Several
@@ -183,7 +183,7 @@ class HybridShapeCorner(HybridShape):
     def first_elem(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FirstElem() As Reference
                 | 
                 |     Returns or sets the corner first reference element.
@@ -218,7 +218,7 @@ class HybridShapeCorner(HybridShape):
     def first_orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FirstOrientation() As long
                 | 
                 |     Returns or sets the orientation of the corner first reference element. The
@@ -256,7 +256,7 @@ class HybridShapeCorner(HybridShape):
     def first_tangent_orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FirstTangentOrientation() As long
                 | 
                 |     Returns or sets the tangent orientation of the corner first reference
@@ -289,7 +289,7 @@ class HybridShapeCorner(HybridShape):
     def on_vertex(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property OnVertex() As boolean
                 | 
                 |     Returns or sets the On Vertex mode off/on.
@@ -320,7 +320,7 @@ class HybridShapeCorner(HybridShape):
     def radius(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Radius() As Length (Read Only)
                 | 
                 |     Returns the corner radius.
@@ -343,7 +343,7 @@ class HybridShapeCorner(HybridShape):
     def second_elem(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SecondElem() As Reference
                 | 
                 |     Returns or sets the corner second reference element.
@@ -378,7 +378,7 @@ class HybridShapeCorner(HybridShape):
     def second_orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SecondOrientation() As long
                 | 
                 |     Returns or sets the orientation of the corner second reference element. The
@@ -417,7 +417,7 @@ class HybridShapeCorner(HybridShape):
     def second_tangent_orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SecondTangentOrientation() As long
                 | 
                 |     Returns or sets the tangent orientation of the corner second reference
@@ -450,7 +450,7 @@ class HybridShapeCorner(HybridShape):
     def support(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets the corner support.
@@ -483,7 +483,7 @@ class HybridShapeCorner(HybridShape):
     def trim(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Trim() As boolean
                 | 
                 |     Returns or sets whether the corner reference curves are or should be
@@ -518,7 +518,7 @@ class HybridShapeCorner(HybridShape):
     def trim_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TrimMode() As long
                 | 
                 |     Returns or sets whether the corner reference curves are or should be
@@ -554,7 +554,7 @@ class HybridShapeCorner(HybridShape):
     def invert_first_orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub InvertFirstOrientation()
                 | 
                 |     Inverts the first reference element orientation used to compute the
@@ -576,7 +576,7 @@ class HybridShapeCorner(HybridShape):
     def invert_second_orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub InvertSecondOrientation()
                 | 
                 |     Inverts the second reference element orientation used to compute the

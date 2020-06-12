@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -14,10 +14,9 @@ from pycatia.in_interfaces.reference import Reference
 
 
 class HybridShapeLineBiTangent(Line):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -42,7 +41,7 @@ class HybridShapeLineBiTangent(Line):
     def curve1(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Curve1() As Reference
                 | 
                 |     Returns or Sets the first tangency curve lying on the support
@@ -74,7 +73,7 @@ class HybridShapeLineBiTangent(Line):
     def element2(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Element2() As Reference
                 | 
                 |     Returns or Sets the second tangency element (point, curve) lying on the
@@ -106,7 +105,7 @@ class HybridShapeLineBiTangent(Line):
     def support(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Support() As Reference
                 | 
                 |     Returns or Sets the supporting surface.
@@ -132,10 +131,10 @@ class HybridShapeLineBiTangent(Line):
 
         self.hybrid_shape_line_bi_tangent.Support = value
 
-    def get_choice_no(self, val1=None, val2=None, val3=None, val4=None, val5=None):
+    def get_choice_no(self, val1, val2, val3, val4, val5):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetChoiceNo(long val1,
                 | long val2,
                 | long val3,
@@ -163,8 +162,10 @@ class HybridShapeLineBiTangent(Line):
                 |     specific side of the first curve.
                 |     It can take 3 values:
                 | 
-                |         +1 : curvature direction of curve and cross product of support normal and result direction are in the same direction,
-                |         -1 : curvature direction of curve and cross product of support normal and result direction are in opposite directions,
+                |         +1 : curvature direction of curve and cross product of support normal and result direction
+                |         are in the same direction,
+                |         -1 : curvature direction of curve and cross product of support normal and result direction
+                |         are in opposite directions,
                 |         0 : no orientation is specified.
                 | 
                 |     val4 = oOriTgt2
@@ -185,8 +186,10 @@ class HybridShapeLineBiTangent(Line):
                 |     curve.
                 |     It can take 3 values:
                 | 
-                |         +1 : curvature direction of curve and cross product of support normal and result direction are in the same direction,
-                |         -1 : curvature direction of curve and cross product of support normal and result direction are in opposite directions,
+                |         +1 : curvature direction of curve and cross product of support normal and result direction
+                |         are in the same direction,
+                |         -1 : curvature direction of curve and cross product of support normal and result direction
+                |         are in opposite directions,
                 |         0 : no orientation is specified.
                 | 
                 |     Example:
@@ -212,7 +215,7 @@ class HybridShapeLineBiTangent(Line):
     def get_length_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetLengthType() As long
                 | 
                 |     Gets the length type Default is 0.
@@ -220,16 +223,19 @@ class HybridShapeLineBiTangent(Line):
                 |     Parameters:
                 | 
                 |         oType
-                |             The length type = 0 : length - the line is limited by its extremities = 1 : infinite - the line is infinite = 2 : infinite start point - the line is infinite on the side of the start point = 3 : infinite end point - the line is infinite on the side of the end point
+                |             The length type = 0 : length - the line is limited by its extremities = 1 :
+                |             infinite - the line is infinite = 2 : infinite start point - the line is infinite on
+                |             the side of the start point = 3 : infinite end point - the line is infinite on the side
+                |             of the end point
 
         :return: int
         """
-        return int(self.hybrid_shape_line_bi_tangent.GetLengthType())
+        return self.hybrid_shape_line_bi_tangent.GetLengthType()
 
-    def set_choice_no(self, val1=None, val2=None, val3=None, val4=None, val5=None):
+    def set_choice_no(self, val1, val2, val3, val4, val5):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetChoiceNo(long val1,
                 | long val2,
                 | long val3,
@@ -257,8 +263,10 @@ class HybridShapeLineBiTangent(Line):
                 |     specific side of the first curve.
                 |     It can take 3 values:
                 | 
-                |         +1 : curvature direction of curve and cross product of support normal and result direction are in the same direction,
-                |         -1 : curvature direction of curve and cross product of support normal and result direction are in opposite directions,
+                |         +1 : curvature direction of curve and cross product of support normal and result direction
+                |         are in the same direction,
+                |         -1 : curvature direction of curve and cross product of support normal and result direction
+                |         are in opposite directions,
                 |         0 : no orientation is specified.
                 | 
                 |     val4 = oOriTgt2
@@ -279,8 +287,10 @@ class HybridShapeLineBiTangent(Line):
                 |     curve.
                 |     It can take 3 values:
                 | 
-                |         +1 : curvature direction of curve and cross product of support normal and result direction are in the same direction,
-                |         -1 : curvature direction of curve and cross product of support normal and result direction are in opposite directions,
+                |         +1 : curvature direction of curve and cross product of support normal and result direction
+                |         are in the same direction,
+                |         -1 : curvature direction of curve and cross product of support normal and result direction
+                |         are in opposite directions,
                 |         0 : no orientation is specified.
                 | 
                 |     Example:
@@ -308,10 +318,10 @@ class HybridShapeLineBiTangent(Line):
         """
         return self.hybrid_shape_line_bi_tangent.SetChoiceNo(val1, val2, val3, val4, val5)
 
-    def set_length_type(self, i_type=None):
+    def set_length_type(self, i_type):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetLengthType(long iType)
                 | 
                 |     Sets the length type Default is 0.
@@ -319,7 +329,10 @@ class HybridShapeLineBiTangent(Line):
                 |     Parameters:
                 | 
                 |         iType
-                |             The length type = 0 : length - the line is limited by its extremities = 1 : infinite - the line is infinite = 2 : infinite start point - the line is infinite on the side of the start point = 3 : infinite end point - the line is infinite on the side of the end point
+                |             The length type = 0 : length - the line is limited by its extremities = 1 : infinite -
+                |             the line is infinite = 2 : infinite start point - the line is infinite on the side of
+                |             the start point = 3 : infinite end point - the line is infinite on the side of the end
+                |             point
 
         :param int i_type:
         :return: None
@@ -327,4 +340,4 @@ class HybridShapeLineBiTangent(Line):
         return self.hybrid_shape_line_bi_tangent.SetLengthType(i_type)
 
     def __repr__(self):
-        return f'HybridShapeLineBiTangent(name="{ self.name }")'
+        return f'HybridShapeLineBiTangent(name="{self.name}")'

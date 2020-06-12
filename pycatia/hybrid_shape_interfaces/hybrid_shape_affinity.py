@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -18,7 +18,7 @@ class HybridShapeAffinity(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -63,7 +63,7 @@ class HybridShapeAffinity(HybridShape):
     def axis_first_direction(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AxisFirstDirection() As Reference
                 | 
                 |     Returns or sets the first direction of the reference coordinate
@@ -96,7 +96,7 @@ class HybridShapeAffinity(HybridShape):
     def axis_origin(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AxisOrigin() As Reference
                 | 
                 |     Returns or sets the origin of the reference coordinate
@@ -127,7 +127,7 @@ class HybridShapeAffinity(HybridShape):
     def axis_plane(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AxisPlane() As Reference
                 | 
                 |     Returns or sets the reference plane of the reference coordinate
@@ -160,7 +160,7 @@ class HybridShapeAffinity(HybridShape):
     def creation_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CreationMode() As boolean
                 | 
                 |     Returns or sets the creation mode(creation or
@@ -193,7 +193,7 @@ class HybridShapeAffinity(HybridShape):
     def elem_to_transform(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ElemToTransform() As Reference
                 | 
                 |     Returns or sets the element to transform using the
@@ -223,7 +223,7 @@ class HybridShapeAffinity(HybridShape):
     def volume_result(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property VolumeResult() As boolean
                 | 
                 |     Returns or sets the volume result.
@@ -256,7 +256,7 @@ class HybridShapeAffinity(HybridShape):
     def x_ratios(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property XRatios() As RealParam (Read Only)
                 | 
                 |     Returns the affinity ratio along the X Direction of the reference
@@ -279,7 +279,7 @@ class HybridShapeAffinity(HybridShape):
     def y_ratios(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property YRatios() As RealParam (Read Only)
                 | 
                 |     Returns the affinity ratio along the Y Direction of the reference
@@ -302,7 +302,7 @@ class HybridShapeAffinity(HybridShape):
     def z_ratios(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ZRatios() As RealParam (Read Only)
                 | 
                 |     Returns the affinity ratio along the Z Direction of the reference

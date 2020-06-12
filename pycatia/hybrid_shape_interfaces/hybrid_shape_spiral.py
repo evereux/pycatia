@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -21,7 +21,7 @@ class HybridShapeSpiral(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -59,7 +59,7 @@ class HybridShapeSpiral(HybridShape):
     def axis(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Axis() As HybridShapeDirection
                 | 
                 |     Reads / Changes the Spiral axis (Reference direction).
@@ -81,7 +81,7 @@ class HybridShapeSpiral(HybridShape):
     def center_point(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CenterPoint() As Reference
                 | 
                 |     Reads / Changes the center point of the Spiral.
@@ -103,7 +103,7 @@ class HybridShapeSpiral(HybridShape):
     def clockwise_revolution(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ClockwiseRevolution() As boolean
                 | 
                 |     Reads / Modifies the sense of revolutions .
@@ -127,7 +127,7 @@ class HybridShapeSpiral(HybridShape):
     def ending_angle(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property EndingAngle() As Angle
                 | 
                 |     Reads / Changes the Ending Angle of the Spiral.
@@ -149,7 +149,7 @@ class HybridShapeSpiral(HybridShape):
     def ending_radius(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property EndingRadius() As Length
                 | 
                 |     Reads / Changes the ending radius of the Spiral.
@@ -171,7 +171,7 @@ class HybridShapeSpiral(HybridShape):
     def invert_axis(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property InvertAxis() As boolean
                 | 
                 |     Reads / Modifies the orientation .
@@ -196,7 +196,7 @@ class HybridShapeSpiral(HybridShape):
     def pitch(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Pitch() As Length
                 | 
                 |     Reads / Changes the pitch of the Spiral.
@@ -218,7 +218,7 @@ class HybridShapeSpiral(HybridShape):
     def revol_number(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property RevolNumber() As RealParam
                 | 
                 |     Reads / Changes the revolution number of the Spiral.
@@ -240,7 +240,7 @@ class HybridShapeSpiral(HybridShape):
     def starting_radius(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property StartingRadius() As Length
                 | 
                 |     Reads / Changes the starting radius of the Spiral.
@@ -262,7 +262,7 @@ class HybridShapeSpiral(HybridShape):
     def support(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Support() As Reference
                 | 
                 |     Reads / Changes the spiral plane support.
@@ -284,7 +284,7 @@ class HybridShapeSpiral(HybridShape):
     def type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Type() As long
                 | 
                 |     Reads / Changes the spiral type.
@@ -302,10 +302,10 @@ class HybridShapeSpiral(HybridShape):
 
         self.hybrid_shape_spiral.Type = value
 
-    def set_angle_pitch_param(self, i_end_angle=None, i_revol_number=None, i_pitch=None):
+    def set_angle_pitch_param(self, i_end_angle, i_revol_number, i_pitch):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetAnglePitchParam(double iEndAngle,
                 | double iRevolNumber,
                 | double iPitch)
@@ -319,10 +319,10 @@ class HybridShapeSpiral(HybridShape):
         """
         return self.hybrid_shape_spiral.SetAnglePitchParam(i_end_angle, i_revol_number, i_pitch)
 
-    def set_angle_radius_param(self, i_end_angle=None, i_revol_number=None, i_end_radius=None):
+    def set_angle_radius_param(self, i_end_angle, i_revol_number, i_end_radius):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetAngleRadiusParam(double iEndAngle,
                 | double iRevolNumber,
                 | double iEndRadius)
@@ -336,10 +336,10 @@ class HybridShapeSpiral(HybridShape):
         """
         return self.hybrid_shape_spiral.SetAngleRadiusParam(i_end_angle, i_revol_number, i_end_radius)
 
-    def set_radius_pitch_param(self, i_end_radius=None, i_pitch=None):
+    def set_radius_pitch_param(self, i_end_radius, i_pitch):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetRadiusPitchParam(double iEndRadius,
                 | double iPitch)
                 | 

@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -16,7 +16,7 @@ from pycatia.system_interfaces.collection import Collection
 class DrawingComponents(Collection):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -30,15 +30,14 @@ class DrawingComponents(Collection):
     
     """
 
-    def __init__(self, com_object, child_object=DrawingComponent):
-        super().__init__(com_object, child_object=DrawingComponent)
+    def __init__(self, com_object):
+        super().__init__(com_object)
         self.drawing_components = com_object
-        self.child_object = DrawingComponent
 
-    def add(self, i_drawing_component_ref=None, i_position_x=None, i_position_y=None):
+    def add(self, i_drawing_component_ref, i_position_x, i_position_y):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add(DrawingView iDrawingComponentRef,
                 | double iPositionX,
                 | double iPositionY) As DrawingComponent
@@ -77,14 +76,20 @@ class DrawingComponents(Collection):
         :param DrawingView i_drawing_component_ref:
         :param float i_position_x:
         :param float i_position_y:
-        :return: None
+        :return: DrawingComponent
         """
-        return self.drawing_components.Add(i_drawing_component_ref, i_position_x, i_position_y)
+        return DrawingComponent(
+            self.drawing_components.Add(
+                i_drawing_component_ref.com_object,
+                i_position_x,
+                i_position_y
+            )
+        )
 
-    def item(self, i_index=None):
+    def item(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(CATVariant iIndex) As DrawingComponent
                 | 
                 |     Returns a drawing component instance using its index or its name from the
@@ -122,10 +127,10 @@ class DrawingComponents(Collection):
         """
         return DrawingComponent(self.drawing_components.Item(i_index))
 
-    def remove(self, i_index=None):
+    def remove(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a drawing component from the DrawingComponents
@@ -173,4 +178,4 @@ class DrawingComponents(Collection):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'DrawingComponents(name="{self.name}")'
+        return f'DrawingComponents()'

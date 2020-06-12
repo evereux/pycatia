@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -8,15 +8,13 @@
         and thus help debugging in pycatia.
         
 """
-
-
+from pycatia.sketcher_interfaces.point2_d import Point2D
 
 
 class ControlPoint2D(Point2D):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -40,7 +38,7 @@ class ControlPoint2D(Point2D):
     def curvature(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Curvature() As double
                 | 
                 |     Returns the curvature properties of the spline control
@@ -65,10 +63,10 @@ class ControlPoint2D(Point2D):
 
         self.control_point2_d.Curvature = value
 
-    def get_tangent(self, o_tangent=None):
+    def get_tangent(self, o_tangent):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetTangent(CATSafeArrayVariant oTangent)
                 | 
                 |     Returns the tangent properties of the spline control point
@@ -102,10 +100,10 @@ class ControlPoint2D(Point2D):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_tangent(self, i_tangent_x=None, i_tangent_y=None):
+    def set_tangent(self, i_tangent_x, i_tangent_y):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetTangent(double iTangentX,
                 | double iTangentY)
                 | 
@@ -129,7 +127,7 @@ class ControlPoint2D(Point2D):
     def unset_curvature(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub UnsetCurvature()
                 | 
                 |     Unsets the curvature properties of the spline control point
@@ -141,7 +139,7 @@ class ControlPoint2D(Point2D):
     def unset_tangent(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub UnsetTangent()
                 | 
                 |     Unsets the tangent properties of the spline control point
@@ -151,4 +149,4 @@ class ControlPoint2D(Point2D):
         return self.control_point2_d.UnsetTangent()
 
     def __repr__(self):
-        return f'ControlPoint2D(name="{ self.name }")'
+        return f'ControlPoint2D(name="{self.name}")'

@@ -16,7 +16,7 @@ class Documents(Collection):
 
     Usage::
 
-        >>> from pycatia import catia_application as catia
+        >>> from pycatia import catia
         >>> documents = catia.documents
 
     .. note::
@@ -106,7 +106,7 @@ class Documents(Collection):
             |   The created document.
             | Example:
             | The following example creates a new Doc document from the contents of the FileToRead file.
-            |   FileToRead = "e:\\\\users\\\\psr\\\\Parts\\\\ThisIsANicePart.CATPart"
+            |   FileToRead = "e:////users////psr////Parts////ThisIsANicePart.CATPart"
             |   Dim Doc As Document
             |   Set Doc = Documents.NewFrom(FileToRead)
 
@@ -187,7 +187,7 @@ class Documents(Collection):
         #     print(self.documents.Item(i + 1).Name)
 
         warning_string = (
-            'The COM object can return the incorrect number of documents open. \\n'
+            'The COM object can return the incorrect number of documents open. //n'
             'For example, after a CATPart document is closed CATIA can keep'
             'the linked document `ABQMaterialPropertiesCatalog.CATfct` loaded in the session.'
         )
@@ -270,7 +270,7 @@ class Documents(Collection):
                 | The following example reads the Doc document
                 | contained in the FileToOpen file.
                 |
-                | FileToOpen = "e:\\users\\psr\\Parts\\ThisIsANicePart.CATPart"
+                | FileToOpen = "e://users//psr//Parts//ThisIsANicePart.CATPart"
                 | Dim Doc As Document
                 | Set Doc = Documents.Read(FileToOpen)
                 |

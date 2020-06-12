@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -8,14 +8,13 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia.system_interfaces.cat_base_dispatch import CATBaseDispatch
 
-from pycatia.system_interfaces.cat_base_dispatch import CatBaseDispatch
 
-
-class DrawingTextProperties(CatBaseDispatch):
+class DrawingTextProperties(CATBaseDispatch):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -32,14 +31,14 @@ class DrawingTextProperties(CatBaseDispatch):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__()
         self.drawing_text_properties = com_object
 
     @property
     def anchor_point(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AnchorPoint() As CatTextAnchorPosition
                 | 
                 |     Returns or sets the anchor point of the drawing text.
@@ -67,7 +66,7 @@ class DrawingTextProperties(CatBaseDispatch):
     def blanking(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Blanking() As CatBlankingMode
                 | 
                 |     Returns or sets the blanking mode of the drawing text.
@@ -95,7 +94,7 @@ class DrawingTextProperties(CatBaseDispatch):
     def bold(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Bold() As long
                 | 
                 |     Returns or sets the drawing text font bold property.
@@ -124,7 +123,7 @@ class DrawingTextProperties(CatBaseDispatch):
     def color(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Color() As long
                 | 
                 |     Returns or sets the color of the drawing text.
@@ -154,7 +153,7 @@ class DrawingTextProperties(CatBaseDispatch):
     def font_name(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FontName() As CATBSTR
                 | 
                 |     Returns or sets the font name of the drawing text.
@@ -182,7 +181,7 @@ class DrawingTextProperties(CatBaseDispatch):
     def font_size(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FontSize() As double
                 | 
                 |     Returns or sets the font size of the drawing text.
@@ -211,7 +210,7 @@ class DrawingTextProperties(CatBaseDispatch):
     def frame_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FrameType() As CatTextFrameType
                 | 
                 |     Returns or sets the frame type of the drawing text.
@@ -239,7 +238,7 @@ class DrawingTextProperties(CatBaseDispatch):
     def italic(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Italic() As long
                 | 
                 |     Returns or sets the drawing text font italic property.
@@ -268,7 +267,7 @@ class DrawingTextProperties(CatBaseDispatch):
     def justification(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Justification() As CatJustification
                 | 
                 |     Returns or sets the drawing text font justification
@@ -298,7 +297,7 @@ class DrawingTextProperties(CatBaseDispatch):
     def kerning(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Kerning() As long
                 | 
                 |     Font kerning property.
@@ -327,7 +326,7 @@ class DrawingTextProperties(CatBaseDispatch):
     def mirror(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Mirror() As CatTextFlipMode
                 | 
                 |     Returns or sets the mirroring of the drawing text.
@@ -355,7 +354,7 @@ class DrawingTextProperties(CatBaseDispatch):
     def overline(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Overline() As long
                 | 
                 |     Returns or sets the drawing text font overline property.
@@ -384,7 +383,7 @@ class DrawingTextProperties(CatBaseDispatch):
     def strike_thru(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property StrikeThru() As long
                 | 
                 |     Returns or sets the drawing text font strikethrough
@@ -414,7 +413,7 @@ class DrawingTextProperties(CatBaseDispatch):
     def subscript(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Subscript() As long
                 | 
                 |     Returns or sets the drawing text font subscript property.
@@ -443,7 +442,7 @@ class DrawingTextProperties(CatBaseDispatch):
     def superscript(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Superscript() As long
                 | 
                 |     Returns or sets the drawing text font superscript
@@ -473,7 +472,7 @@ class DrawingTextProperties(CatBaseDispatch):
     def underline(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Underline() As long
                 | 
                 |     Returns or sets the drawing text font underline property.
@@ -498,10 +497,10 @@ class DrawingTextProperties(CatBaseDispatch):
 
         self.drawing_text_properties.Underline = value
 
-    def activate_frame(self, i_type=None):
+    def activate_frame(self, i_type):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub ActivateFrame(CatTextFrameType iType)
                 | 
                 |     Activates the text frame of the drawing text.
@@ -530,7 +529,7 @@ class DrawingTextProperties(CatBaseDispatch):
         :param CatTextFrameType i_type:
         :return: None
         """
-        return self.drawing_text_properties.ActivateFrame(i_type)
+        return self.drawing_text_properties.ActivateFrame(i_type.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -550,7 +549,7 @@ class DrawingTextProperties(CatBaseDispatch):
     def update(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Update()
                 | 
                 |     Update the properties of the drawing text. 
@@ -569,4 +568,4 @@ class DrawingTextProperties(CatBaseDispatch):
         return self.drawing_text_properties.Update()
 
     def __repr__(self):
-        return f'DrawingTextProperties(name="{self.name}")'
+        return f'DrawingTextProperties()'

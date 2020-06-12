@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class DynLicenseSettingAtt(SettingController):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
@@ -46,7 +45,7 @@ class DynLicenseSettingAtt(SettingController):
         super().__init__(com_object)
         self.dyn_license_setting_att = com_object
 
-    def get_license(self, i_license=None):
+    def get_license(self, i_license):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -72,7 +71,7 @@ class DynLicenseSettingAtt(SettingController):
         """
         return str(self.dyn_license_setting_att.GetLicense(i_license))
 
-    def get_license_info(self, i_license=None, io_admin_level=None, io_locked=None):
+    def get_license_info(self, i_license, io_admin_level, io_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -102,7 +101,8 @@ class DynLicenseSettingAtt(SettingController):
                 |         Parameter 1 : the name of the License.
                 |         Parameter 2 : "Default value".
                 |         Parameter 3 : locking state of the licenses Unlocked / Locked / Locked at Admin Level j.
-                |         Return value : Always false, because the status of the license is not modified, only the lock status is modified.
+                |         Return value : Always false, because the status of the license is not modified, only the lock
+                |           status is modified.
 
         :param str i_license:
         :param str io_admin_level:
@@ -129,7 +129,7 @@ class DynLicenseSettingAtt(SettingController):
         """
         return tuple(self.dyn_license_setting_att.GetLicensesList())
 
-    def get_licenses_list_info(self, io_admin_level=None, io_locked=None):
+    def get_licenses_list_info(self, io_admin_level, io_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -168,7 +168,7 @@ class DynLicenseSettingAtt(SettingController):
         """
         return self.dyn_license_setting_att.GetLicensesListInfo(io_admin_level, io_locked)
 
-    def set_license_lock(self, i_license=None, i_lock=None):
+    def set_license_lock(self, i_license, i_lock):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -212,7 +212,7 @@ class DynLicenseSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_licenses_list_lock(self, i_lock=None):
+    def set_licenses_list_lock(self, i_lock):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -255,4 +255,4 @@ class DynLicenseSettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'DynLicenseSettingAtt(name="{ self.name }")'
+        return f'DynLicenseSettingAtt(name="{self.name}")'

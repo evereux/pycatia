@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -16,10 +16,9 @@ from pycatia.knowledge_interfaces.length import Length
 
 
 class HybridShapeSweepCircle(HybridShapeSweep):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -52,7 +51,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
     def canonical_detection(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CanonicalDetection() As long
                 | 
                 |     Returns or sets whether canonical surfaces of the swept surface are
@@ -78,7 +77,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
     def choice_no(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ChoiceNo() As long
                 | 
                 |     Returns or sets the choice number, which corresponds to each solution of a
@@ -103,7 +102,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
     def context(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Context() As long
                 | 
                 |     Returns or sets the context on Sweep feature.
@@ -138,7 +137,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
     def first_angle_law(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FirstAngleLaw() As Reference
                 | 
                 |     Returns or sets the first angle law useful in some circular sweep types.
@@ -160,7 +159,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
     def first_angle_law_inversion(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FirstAngleLawInversion() As long
                 | 
                 |     Returns or sets the first angle law inversion information.
@@ -182,7 +181,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
     def first_guide_crv(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FirstGuideCrv() As Reference
                 | 
                 |     Returns or sets the sweep operation first guide curve.
@@ -204,7 +203,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
     def guide_deviation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property GuideDeviation() As Length (Read Only)
                 | 
                 |     Returns the deviation value (length) from guide curves allowed during a
@@ -219,7 +218,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
     def guide_deviation_activity(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property GuideDeviationActivity() As boolean
                 | 
                 |     Returns or sets information whether a deviation from guide curves is
@@ -246,7 +245,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
     def mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Mode() As long
                 | 
                 |     Returns or sets the circular sweep mode.
@@ -287,7 +286,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
     def radius_law(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property RadiusLaw() As Reference
                 | 
                 |     Returns or sets the radius law feature.
@@ -309,7 +308,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
     def radius_law_inversion(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property RadiusLawInversion() As long
                 | 
                 |     Returns or sets the radius law inversion information.
@@ -331,7 +330,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
     def radius_law_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property RadiusLawType() As long
                 | 
                 |     Returns or sets the radius law type.
@@ -353,7 +352,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
     def reference(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Reference() As Reference
                 | 
                 |     Returns or sets the reference (functional curve or guide surface).
@@ -375,7 +374,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
     def second_angle_law(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SecondAngleLaw() As Reference
                 | 
                 |     Returns or sets the second angle law useful in some circular sweep types.
@@ -397,7 +396,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
     def second_angle_law_inversion(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SecondAngleLawInversion() As long
                 | 
                 |     Returns or sets the second angle law inversion information.
@@ -419,7 +418,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
     def second_guide_crv(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SecondGuideCrv() As Reference
                 | 
                 |     Returns or sets the sweep operation second guide curve.
@@ -441,7 +440,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
     def smooth_activity(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SmoothActivity() As boolean
                 | 
                 |     Returns or sets information whether a sweeping operation is smoothed or
@@ -466,7 +465,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
     def smooth_angle_threshold(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SmoothAngleThreshold() As Angle (Read Only)
                 | 
                 |     Returns the angular threshold.
@@ -480,7 +479,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
     def spine(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Spine() As Reference
                 | 
                 |     Returns or sets the sweep operation spine (optional).
@@ -502,7 +501,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
     def third_guide_crv(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ThirdGuideCrv() As Reference
                 | 
                 |     Returns or sets the sweep operation third guide curve.
@@ -524,7 +523,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
     def trim_option(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TrimOption() As long
                 | 
                 |     Returns or sets the trim option status.
@@ -546,10 +545,10 @@ class HybridShapeSweepCircle(HybridShapeSweep):
 
         self.hybrid_shape_sweep_circle.TrimOption = value
 
-    def get_angle(self, i_i=None):
+    def get_angle(self, i_i):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetAngle(long iI) As Angle
                 | 
                 |     Returns the angle values useful in some circular sweep
@@ -568,10 +567,10 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         """
         return Angle(self.hybrid_shape_sweep_circle.GetAngle(i_i))
 
-    def get_angle_law_types(self, o_first_type=None, o_second_type=None):
+    def get_angle_law_types(self, o_first_type, o_second_type):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetAngleLawTypes(long oFirstType,
                 | long oSecondType)
                 | 
@@ -599,10 +598,10 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         """
         return self.hybrid_shape_sweep_circle.GetAngleLawTypes(o_first_type, o_second_type)
 
-    def get_first_angle_law(self, o_elem1=None, o_elem2=None, ol_law_type=None):
+    def get_first_angle_law(self, o_elem1, o_elem2, ol_law_type):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetFirstAngleLaw(Angle oElem1,
                 | Angle oElem2,
                 | long olLawType)
@@ -624,7 +623,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         :param int ol_law_type:
         :return: None
         """
-        return self.hybrid_shape_sweep_circle.GetFirstAngleLaw(o_elem1, o_elem2, ol_law_type)
+        return self.hybrid_shape_sweep_circle.GetFirstAngleLaw(o_elem1.com_object, o_elem2.com_object, ol_law_type)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -641,10 +640,10 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_longitudinal_relimiters(self, op_ia_elem1=None, op_ia_elem2=None):
+    def get_longitudinal_relimiters(self, op_ia_elem1, op_ia_elem2):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetLongitudinalRelimiters(Reference opIAElem1,
                 | Reference opIAElem2)
                 | 
@@ -662,7 +661,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         :param Reference op_ia_elem2:
         :return: None
         """
-        return self.hybrid_shape_sweep_circle.GetLongitudinalRelimiters(op_ia_elem1, op_ia_elem2)
+        return self.hybrid_shape_sweep_circle.GetLongitudinalRelimiters(op_ia_elem1.com_object, op_ia_elem2.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -679,10 +678,10 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_nb_angle(self, o_ang=None):
+    def get_nb_angle(self, o_ang):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetNbAngle(long oAng)
                 | 
                 |     Retrieves the number of angles.
@@ -697,10 +696,10 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         """
         return self.hybrid_shape_sweep_circle.GetNbAngle(o_ang)
 
-    def get_nb_guide(self, o_num=None):
+    def get_nb_guide(self, o_num):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetNbGuide(long oNum)
                 | 
                 |     Retrieves the number of guide curves.
@@ -715,10 +714,10 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         """
         return self.hybrid_shape_sweep_circle.GetNbGuide(o_num)
 
-    def get_nb_radius(self, o_rad=None):
+    def get_nb_radius(self, o_rad):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetNbRadius(long oRad)
                 | 
                 |     Retrieves the number of radii.
@@ -733,10 +732,10 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         """
         return self.hybrid_shape_sweep_circle.GetNbRadius(o_rad)
 
-    def get_radius(self, i_i=None):
+    def get_radius(self, i_i):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetRadius(long iI) As Length
                 | 
                 |     Returns the radius value useful in some circular sweep
@@ -756,10 +755,10 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         """
         return Length(self.hybrid_shape_sweep_circle.GetRadius(i_i))
 
-    def get_relimiters(self, op_ia_elem1=None, op_orient1=None, op_ia_elem2=None, op_orient2=None):
+    def get_relimiters(self, op_ia_elem1, op_orient1, op_ia_elem2, op_orient2):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetRelimiters(Reference opIAElem1,
                 | long opOrient1,
                 | Reference opIAElem2,
@@ -788,7 +787,10 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         :param int op_orient2:
         :return: None
         """
-        return self.hybrid_shape_sweep_circle.GetRelimiters(op_ia_elem1, op_orient1, op_ia_elem2, op_orient2)
+        return self.hybrid_shape_sweep_circle.GetRelimiters(op_ia_elem1.com_object,
+                                                            op_orient1,
+                                                            op_ia_elem2.com_object,
+                                                            op_orient2)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -805,10 +807,10 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_second_angle_law(self, o_elem1=None, o_elem2=None, ol_law_type=None):
+    def get_second_angle_law(self, o_elem1, o_elem2, ol_law_type):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetSecondAngleLaw(Angle oElem1,
                 | Angle oElem2,
                 | long olLawType)
@@ -830,7 +832,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         :param int ol_law_type:
         :return: None
         """
-        return self.hybrid_shape_sweep_circle.GetSecondAngleLaw(o_elem1, o_elem2, ol_law_type)
+        return self.hybrid_shape_sweep_circle.GetSecondAngleLaw(o_elem1.com_object, o_elem2.com_object, ol_law_type)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -847,10 +849,10 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_tangency_choice_no(self, o_no=None, o_shell_ori=None, o_guide_ori=None):
+    def get_tangency_choice_no(self, o_no, o_shell_ori, o_guide_ori):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetTangencyChoiceNo(long oNo,
                 | long oShellOri,
                 | long oGuideOri)
@@ -890,7 +892,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
     def remove_angle(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveAngle()
                 | 
                 |     Removes an angle.
@@ -902,7 +904,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
     def remove_guide(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveGuide()
                 | 
                 |     Removes a guide curve.
@@ -914,7 +916,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
     def remove_radius(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveRadius()
                 | 
                 |     Removes a radius.
@@ -923,10 +925,10 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         """
         return self.hybrid_shape_sweep_circle.RemoveRadius()
 
-    def set_angle(self, i_i=None, i_elem=None):
+    def set_angle(self, i_i, i_elem):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetAngle(long iI,
                 | double iElem)
                 | 
@@ -945,10 +947,10 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         """
         return self.hybrid_shape_sweep_circle.SetAngle(i_i, i_elem)
 
-    def set_angle_law_types(self, i_first_type=None, i_second_type=None):
+    def set_angle_law_types(self, i_first_type, i_second_type):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetAngleLawTypes(long iFirstType,
                 | long iSecondType)
                 | 
@@ -977,10 +979,10 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         """
         return self.hybrid_shape_sweep_circle.SetAngleLawTypes(i_first_type, i_second_type)
 
-    def set_first_angle_law(self, i_elem1=None, i_elem2=None, il_law_type=None):
+    def set_first_angle_law(self, i_elem1, i_elem2, il_law_type):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetFirstAngleLaw(double iElem1,
                 | double iElem2,
                 | long ilLawType)
@@ -1004,10 +1006,10 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         """
         return self.hybrid_shape_sweep_circle.SetFirstAngleLaw(i_elem1, i_elem2, il_law_type)
 
-    def set_guide_deviation(self, i_length=None):
+    def set_guide_deviation(self, i_length):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetGuideDeviation(double iLength)
                 | 
                 |     Sets the deviation value (length) from guide curves allowed during sweeping
@@ -1023,10 +1025,10 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         """
         return self.hybrid_shape_sweep_circle.SetGuideDeviation(i_length)
 
-    def set_longitudinal_relimiters(self, ip_ia_elem1=None, ip_ia_elem2=None):
+    def set_longitudinal_relimiters(self, ip_ia_elem1, ip_ia_elem2):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetLongitudinalRelimiters(Reference ipIAElem1,
                 | Reference ipIAElem2)
                 | 
@@ -1044,7 +1046,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         :param Reference ip_ia_elem2:
         :return: None
         """
-        return self.hybrid_shape_sweep_circle.SetLongitudinalRelimiters(ip_ia_elem1, ip_ia_elem2)
+        return self.hybrid_shape_sweep_circle.SetLongitudinalRelimiters(ip_ia_elem1.com_object, ip_ia_elem2.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1061,10 +1063,10 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_radius(self, i_i=None, i_radius=None):
+    def set_radius(self, i_i, i_radius):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetRadius(long iI,
                 | double iRadius)
                 | 
@@ -1084,10 +1086,10 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         """
         return self.hybrid_shape_sweep_circle.SetRadius(i_i, i_radius)
 
-    def set_relimiters(self, ip_ia_elem1=None, ip_orient1=None, ip_ia_elem2=None, ip_orient2=None):
+    def set_relimiters(self, ip_ia_elem1, ip_orient1, ip_ia_elem2, ip_orient2):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetRelimiters(Reference ipIAElem1,
                 | long ipOrient1,
                 | Reference ipIAElem2,
@@ -1116,7 +1118,11 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         :param int ip_orient2:
         :return: None
         """
-        return self.hybrid_shape_sweep_circle.SetRelimiters(ip_ia_elem1, ip_orient1, ip_ia_elem2, ip_orient2)
+        return self.hybrid_shape_sweep_circle.SetRelimiters(ip_ia_elem1.com_object,
+                                                            ip_orient1,
+                                                            ip_ia_elem2.com_object,
+                                                            ip_orient2
+                                                            )
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1133,10 +1139,10 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_second_angle_law(self, i_elem1=None, i_elem2=None, il_law_type=None):
+    def set_second_angle_law(self, i_elem1, i_elem2, il_law_type):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetSecondAngleLaw(double iElem1,
                 | double iElem2,
                 | long ilLawType)
@@ -1160,10 +1166,10 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         """
         return self.hybrid_shape_sweep_circle.SetSecondAngleLaw(i_elem1, i_elem2, il_law_type)
 
-    def set_smooth_angle_threshold(self, i_angle=None):
+    def set_smooth_angle_threshold(self, i_angle):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetSmoothAngleThreshold(double iAngle)
                 | 
                 |     Sets the angular threshold.
@@ -1178,15 +1184,15 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         """
         return self.hybrid_shape_sweep_circle.SetSmoothAngleThreshold(i_angle)
 
-    def set_tangency_choice_no(self, i_shell_ori=None, i_guide_ori=None, i_no=None):
+    def set_tangency_choice_no(self, i_shell_ori, i_guide_ori, i_no):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetTangencyChoiceNo(long iShellOri,
                 | long iGuideOri,
                 | long iNo)
                 | 
-                |     Sets a sequence which identifies a solutionamong all possibilities of a
+                |     Sets a sequence which identifies a solution among all possibilities of a
                 |     circular profile sweep tangent to a surface.
                 | 
                 |     Parameters:
@@ -1218,4 +1224,4 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         return self.hybrid_shape_sweep_circle.SetTangencyChoiceNo(i_shell_ori, i_guide_ori, i_no)
 
     def __repr__(self):
-        return f'HybridShapeSweepCircle(name="{ self.name }")'
+        return f'HybridShapeSweepCircle(name="{self.name}")'

@@ -70,11 +70,11 @@ object_pocket_activity = part_parameters.item("PartBody\\Pocket.1\\Activity")
 # create the formula to combine the sketch and pocket activity with the parameter <pocket_activity>
 part_relations.create_formula("Activity_Sketch_Pocket",
                               "Checks weather the Pocket should be activated or not", sketch_pocket_activity,
-                              pocket_activity.formula_name)
+                              pocket_activity.name)
 
 part_relations.create_formula("Activity_Object_Pocket",
                               "Checks weather the Pocket should be activated or not", object_pocket_activity,
-                              pocket_activity.formula_name)
+                              pocket_activity.name)
 
 part.update()
 

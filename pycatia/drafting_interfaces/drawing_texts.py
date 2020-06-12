@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class DrawingTexts(Collection):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -35,10 +35,10 @@ class DrawingTexts(Collection):
         super().__init__(com_object)
         self.drawing_texts = com_object
 
-    def add(self, i_drawing_text=None, i_position_x=None, i_position_y=None):
+    def add(self, i_drawing_text, i_position_x, i_position_y):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add(CATBSTR iDrawingText,
                 | double iPositionX,
                 | double iPositionY) As DrawingText
@@ -73,14 +73,14 @@ class DrawingTexts(Collection):
         :param str i_drawing_text:
         :param float i_position_x:
         :param float i_position_y:
-        :return: None
+        :return: DrawingText
         """
-        return self.drawing_texts.Add(i_drawing_text, i_position_x, i_position_y)
+        return DrawingText(self.drawing_texts.Add(i_drawing_text, i_position_x, i_position_y))
 
-    def item(self, i_index=None):
+    def item(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(long iIndex) As DrawingText
                 | 
                 |     Returns a drawing text using its index from the DrawingTexts
@@ -111,10 +111,10 @@ class DrawingTexts(Collection):
         """
         return DrawingText(self.drawing_texts.Item(i_index))
 
-    def remove(self, i_index=None):
+    def remove(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(long iIndex)
                 | 
                 |     Removes a drawing text from the DrawingTexts collection.

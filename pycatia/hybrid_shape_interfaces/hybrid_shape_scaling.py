@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -18,7 +18,7 @@ class HybridShapeScaling(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -58,7 +58,7 @@ class HybridShapeScaling(HybridShape):
     def center(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Center() As Reference
                 | 
                 |     Returns or sets the reference element.This element can be a point or a
@@ -90,7 +90,7 @@ class HybridShapeScaling(HybridShape):
     def creation_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CreationMode() As boolean
                 | 
                 |     Returns or sets the creation mode(creation or
@@ -123,7 +123,7 @@ class HybridShapeScaling(HybridShape):
     def elem_to_scale(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ElemToScale() As Reference
                 | 
                 |     Returns or sets the element to scale.
@@ -152,7 +152,7 @@ class HybridShapeScaling(HybridShape):
     def ratio(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Ratio() As RealParam (Read Only)
                 | 
                 |     Returns the scaling ratio.
@@ -166,7 +166,7 @@ class HybridShapeScaling(HybridShape):
     def ratio_value(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property RatioValue() As double
                 | 
                 |     Returns or sets the scaling ratio value.
@@ -195,7 +195,7 @@ class HybridShapeScaling(HybridShape):
     def volume_result(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property VolumeResult() As boolean
                 | 
                 |     Returns or sets the volume result.

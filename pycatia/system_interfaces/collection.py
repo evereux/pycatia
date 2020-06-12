@@ -10,7 +10,9 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.system_interfaces.cat_base_dispatch import CatBaseDispatch
+
+
+# from pycatia.system_interfaces.cat_base_dispatch import CATBaseDispatch
 
 
 class Collection:
@@ -136,7 +138,7 @@ class Collection:
 
         return AnyObject(self.collection.Parent)
 
-    def get_item(self, id_name=None):
+    def get_item(self, id_name):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-10 10:58:07.270911))
@@ -182,7 +184,7 @@ class Collection:
                 return self.child_object(self.com_object.Item(i + 1))
 
         return None
-    
+
     def items(self):
         """
         :return: [self.child_object()]

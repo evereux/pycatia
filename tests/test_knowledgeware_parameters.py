@@ -86,7 +86,7 @@ def test_count_parameters():
         part = document.part()
         parameters = part.parameters
 
-        assert parameters.count() == 5
+        assert parameters.count == 5
 
 
 def test_create_real():
@@ -174,7 +174,7 @@ def test_sub_list():
         assert sub_list.item(1).name == r'CF_Part3\PartBody\Pad.1\FirstLimit\Length'
 
 
-def test_remove_item():
+def test_remove():
     with CATIADocHandler(cat_part_blank) as handler:
         document = handler.document
         part = document.part()
@@ -192,7 +192,7 @@ def test_remove_item():
                 index = i + 1
         assert isinstance(index, int)
 
-        parameters.remove_item(index)
+        parameters.remove(index)
         gone = any(bool_name in x.name for x in all_params())
 
         assert gone is False

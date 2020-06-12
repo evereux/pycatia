@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -14,10 +14,9 @@ from pycatia.system_interfaces.collection import Collection
 
 
 class DrawingArrows(Collection):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -35,10 +34,10 @@ class DrawingArrows(Collection):
         super().__init__(com_object)
         self.drawing_arrows = com_object
 
-    def add(self, i_head_point_x=None, i_head_point_y=None, i_tail_point_x=None, i_tail_point_y=None):
+    def add(self, i_head_point_x, i_head_point_y, i_tail_point_x, i_tail_point_y):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add(double iHeadPointX,
                 | double iHeadPointY,
                 | double iTailPointX,
@@ -73,14 +72,14 @@ class DrawingArrows(Collection):
         :param float i_head_point_y:
         :param float i_tail_point_x:
         :param float i_tail_point_y:
-        :return: None
+        :return: DrawingArrow
         """
-        return self.drawing_arrows.Add(i_head_point_x, i_head_point_y, i_tail_point_x, i_tail_point_y)
+        return DrawingArrow(self.drawing_arrows.Add(i_head_point_x, i_head_point_y, i_tail_point_x, i_tail_point_y))
 
-    def item(self, i_index=None):
+    def item(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(long iIndex) As DrawingArrow
                 | 
                 |     Returns a drawing arrow using its index from the DrawingArrows
@@ -90,7 +89,7 @@ class DrawingArrows(Collection):
                 | 
                 |         iIndex
                 |             The index of the drawing arrow to retrieve from the collection of
-                |             drawing arows. As a numerics, this index is the rank of the drawing arrow in
+                |             drawing arrows. As a numerics, this index is the rank of the drawing arrow in
                 |             the collection. The index of the first drawing arrow in the collection is 1,
                 |             and the index of the last drawing arrow is Count. 
                 | 
@@ -111,10 +110,10 @@ class DrawingArrows(Collection):
         """
         return DrawingArrow(self.drawing_arrows.Item(i_index))
 
-    def remove(self, i_index=None):
+    def remove(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(long iIndex)
                 | 
                 |     Removes a drawing arrow from the DrawingArrows collection.
@@ -142,4 +141,4 @@ class DrawingArrows(Collection):
         return self.drawing_arrows.Remove(i_index)
 
     def __repr__(self):
-        return f'DrawingArrows(name="{ self.name }")'
+        return f'DrawingArrows(name="{self.name}")'

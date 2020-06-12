@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -15,10 +15,9 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeMidSurface(HybridShape):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -53,10 +52,11 @@ class HybridShapeMidSurface(HybridShape):
     def auto_thickness_threshold(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AutoThicknessThreshold() As long
                 | 
-                |     Returns or sets AutoThicknessThreshold. Automatic Thickmess Threshold Check Button ON :1, OFF : 0 (Only Automatic Creation Mode Available for Automation)
+                |     Returns or sets AutoThicknessThreshold. Automatic Thickmess Threshold Check Button ON :1, OFF :
+                |     0 (Only Automatic Creation Mode Available for Automation)
 
         :return: int
         """
@@ -75,10 +75,11 @@ class HybridShapeMidSurface(HybridShape):
     def creation_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CreationMode() As long
                 | 
-                |     Returns or sets CreationMode. Face Pairs : 0, Faces To Offset : 1, Automatic : 2 (Only Automatic Creation Mode Available for Automation)
+                |     Returns or sets CreationMode. Face Pairs : 0, Faces To Offset : 1, Automatic :
+                |     2 (Only Automatic Creation Mode Available for Automation)
 
         :return: int
         """
@@ -97,7 +98,7 @@ class HybridShapeMidSurface(HybridShape):
     def support(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets Support Body. Reference.
@@ -119,7 +120,7 @@ class HybridShapeMidSurface(HybridShape):
     def threshold(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Threshold() As Length
                 | 
                 |     Returns or sets Threshold Thickness. Length.
@@ -138,4 +139,4 @@ class HybridShapeMidSurface(HybridShape):
         self.hybrid_shape_mid_surface.Threshold = value
 
     def __repr__(self):
-        return f'HybridShapeMidSurface(name="{ self.name }")'
+        return f'HybridShapeMidSurface(name="{self.name}")'

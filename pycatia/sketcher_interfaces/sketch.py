@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -11,14 +11,16 @@
 
 from pycatia.mec_mod_interfaces.constraints import Constraints
 from pycatia.mec_mod_interfaces.geometric_elements import GeometricElements
+from pycatia.sketcher_interfaces.axis2_d import Axis2D
+from pycatia.sketcher_interfaces.factory2_d import Factory2D
+from pycatia.sketcher_interfaces.line2_d import Line2D
 from pycatia.system_interfaces.any_object import AnyObject
 
 
 class Sketch(AnyObject):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -41,7 +43,7 @@ class Sketch(AnyObject):
     def absolute_axis(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AbsoluteAxis() As Axis2D (Read Only)
                 | 
                 |     Returns the 2D absolute axis of the sketch. The absolute axis is used for
@@ -69,7 +71,7 @@ class Sketch(AnyObject):
     def center_line(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CenterLine() As Line2D
                 | 
                 |     Returns the geometric 2D line defined as the center line of the sketch.
@@ -103,7 +105,7 @@ class Sketch(AnyObject):
     def constraints(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Constraints() As Constraints (Read Only)
                 | 
                 |     Returns the list of constraints included in the sketch.
@@ -129,7 +131,7 @@ class Sketch(AnyObject):
     def factory2_d(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Factory2D() As Factory2D (Read Only)
                 | 
                 |     Returns the 2D factory of the sketch. Take care that you must open
@@ -157,7 +159,7 @@ class Sketch(AnyObject):
     def geometric_elements(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property GeometricElements() As GeometricElements (Read
                 | Only)
                 | 
@@ -184,7 +186,7 @@ class Sketch(AnyObject):
     def close_edition(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub CloseEdition()
                 | 
                 |     Closes the Sketch Edition. Once you have finished working with the sketch,
@@ -205,7 +207,7 @@ class Sketch(AnyObject):
     def evaluate(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Evaluate()
                 | 
                 |     Evaluate the constraint system of the sketch
@@ -214,10 +216,10 @@ class Sketch(AnyObject):
         """
         return self.sketch.Evaluate()
 
-    def get_absolute_axis_data(self, o_axis_data=None):
+    def get_absolute_axis_data(self, o_axis_data):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetAbsoluteAxisData(CATSafeArrayVariant oAxisData)
                 | 
                 |     Returns the sketch axis coordinates in 3D space. The matrix returned
@@ -272,7 +274,7 @@ class Sketch(AnyObject):
     def inverse_orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub InverseOrientation()
                 | 
                 |     Inverse Orientation Of Sketch
@@ -284,7 +286,7 @@ class Sketch(AnyObject):
     def open_edition(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func OpenEdition() As Factory2D
                 | 
                 |     Opens the Sketch Edition. You must open edition on a sketch before you can
@@ -307,10 +309,10 @@ class Sketch(AnyObject):
         """
         return Factory2D(self.sketch.OpenEdition())
 
-    def set_absolute_axis_data(self, i_axis_data=None):
+    def set_absolute_axis_data(self, i_axis_data):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetAbsoluteAxisData(CATSafeArrayVariant iAxisData)
                 | 
                 |     Sets the absolute axis of the sketch in 3D space.
@@ -346,4 +348,4 @@ class Sketch(AnyObject):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'Sketch(name="{ self.name }")'
+        return f'Sketch(name="{self.name}")'

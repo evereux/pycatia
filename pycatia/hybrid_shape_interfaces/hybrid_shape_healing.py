@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -19,7 +19,7 @@ class HybridShapeHealing(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -46,7 +46,7 @@ class HybridShapeHealing(HybridShape):
     def canonic_free_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CanonicFreeMode(long iMode)
                 | 
                 |     Returns or sets the Canonic Free Mode of the healing.
@@ -87,7 +87,7 @@ class HybridShapeHealing(HybridShape):
     def continuity(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Continuity(long iContinuity)
                 | 
                 |     Returns or sets the continuity type of the healing.
@@ -124,7 +124,7 @@ class HybridShapeHealing(HybridShape):
     def distance_objective(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DistanceObjective() As Length (Read Only)
                 | 
                 |     Returns the Distance Objective of the healing.
@@ -151,7 +151,7 @@ class HybridShapeHealing(HybridShape):
     def merging_distance(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property MergingDistance() As Length (Read Only)
                 | 
                 |     Returns the Merging Distance of the healing.
@@ -178,7 +178,7 @@ class HybridShapeHealing(HybridShape):
     def no_of_bodies_to_heal(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property NoOfBodiesToHeal() As long (Read Only)
                 | 
                 |     Returns the number of bodies to heal of the healing.
@@ -204,7 +204,7 @@ class HybridShapeHealing(HybridShape):
     def no_of_edges_to_keep_sharp(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property NoOfEdgesToKeepSharp() As long (Read Only)
                 | 
                 |     Returns the number of edges to keep sharp of the healing.
@@ -230,7 +230,7 @@ class HybridShapeHealing(HybridShape):
     def no_of_elements_to_freeze(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property NoOfElementsToFreeze() As long (Read Only)
                 | 
                 |     Returns the number of elements to heal of the healing.
@@ -256,7 +256,7 @@ class HybridShapeHealing(HybridShape):
     def sharpness_angle(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SharpnessAngle() As Angle (Read Only)
                 | 
                 |     Returns the Sharpness Angle of the healing.
@@ -283,7 +283,7 @@ class HybridShapeHealing(HybridShape):
     def tangency_angle(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TangencyAngle() As Angle (Read Only)
                 | 
                 |     Returns the Tangency Angle of the healing.
@@ -309,7 +309,7 @@ class HybridShapeHealing(HybridShape):
     def tangency_objective(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TangencyObjective() As Length (Read Only)
                 | 
                 |     Returns the Tangency Objective of the healing.
@@ -332,10 +332,10 @@ class HybridShapeHealing(HybridShape):
 
         return Length(self.hybrid_shape_healing.TangencyObjective)
 
-    def add_body_to_heal(self, i_body=None):
+    def add_body_to_heal(self, i_body):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddBodyToHeal(Reference iBody)
                 | 
                 |     Adds the body to be healed to the list.
@@ -354,7 +354,7 @@ class HybridShapeHealing(HybridShape):
         :param Reference i_body:
         :return: None
         """
-        return self.hybrid_shape_healing.AddBodyToHeal(i_body)
+        return self.hybrid_shape_healing.AddBodyToHeal(i_body.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -371,10 +371,10 @@ class HybridShapeHealing(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def add_edge_to_keep_sharp(self, i_edge=None):
+    def add_edge_to_keep_sharp(self, i_edge):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddEdgeToKeepSharp(Reference iEdge)
                 | 
                 |     Adds the edge to be kept sharp while healing, to the list.
@@ -394,7 +394,7 @@ class HybridShapeHealing(HybridShape):
         :param Reference i_edge:
         :return: None
         """
-        return self.hybrid_shape_healing.AddEdgeToKeepSharp(i_edge)
+        return self.hybrid_shape_healing.AddEdgeToKeepSharp(i_edge.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -411,10 +411,10 @@ class HybridShapeHealing(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def add_elements_to_freeze(self, i_element=None):
+    def add_elements_to_freeze(self, i_element):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddElementsToFreeze(Reference iElement)
                 | 
                 |     Adds the body to be freezed while healing, to the list.
@@ -433,7 +433,7 @@ class HybridShapeHealing(HybridShape):
         :param Reference i_element:
         :return: None
         """
-        return self.hybrid_shape_healing.AddElementsToFreeze(i_element)
+        return self.hybrid_shape_healing.AddElementsToFreeze(i_element.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -450,10 +450,10 @@ class HybridShapeHealing(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_body_to_heal(self, i_position=None):
+    def get_body_to_heal(self, i_position):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetBodyToHeal(long iPosition) As Reference
                 | 
                 |     Returns the body to be healed from the list at specified
@@ -479,10 +479,10 @@ class HybridShapeHealing(HybridShape):
         """
         return Reference(self.hybrid_shape_healing.GetBodyToHeal(i_position))
 
-    def get_edge_to_keep_sharp(self, i_position=None):
+    def get_edge_to_keep_sharp(self, i_position):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetEdgeToKeepSharp(long iPosition) As Reference
                 | 
                 |     Returns the edge to be kept sharp from the list at specified
@@ -508,10 +508,10 @@ class HybridShapeHealing(HybridShape):
         """
         return Reference(self.hybrid_shape_healing.GetEdgeToKeepSharp(i_position))
 
-    def get_element_to_freeze(self, i_position=None):
+    def get_element_to_freeze(self, i_position):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetElementToFreeze(long iPosition) As Reference
                 | 
                 |     Returns the element to be freezed from the list at specified
@@ -537,10 +537,10 @@ class HybridShapeHealing(HybridShape):
         """
         return Reference(self.hybrid_shape_healing.GetElementToFreeze(i_position))
 
-    def remove_body_to_heal(self, i_position=None):
+    def remove_body_to_heal(self, i_position):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveBodyToHeal(long iPosition)
                 | 
                 |     Removes the body to be healed from the list at specified
@@ -563,10 +563,10 @@ class HybridShapeHealing(HybridShape):
         """
         return self.hybrid_shape_healing.RemoveBodyToHeal(i_position)
 
-    def remove_edge_to_keep_sharp(self, i_position=None):
+    def remove_edge_to_keep_sharp(self, i_position):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveEdgeToKeepSharp(long iPosition)
                 | 
                 |     Removes the edge from the list of edges to be kept sharp at specified
@@ -589,10 +589,10 @@ class HybridShapeHealing(HybridShape):
         """
         return self.hybrid_shape_healing.RemoveEdgeToKeepSharp(i_position)
 
-    def remove_element_to_freeze(self, i_position=None):
+    def remove_element_to_freeze(self, i_position):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveElementToFreeze(long iPosition)
                 | 
                 |     Removes the element from the list of elements to be freezed at specified
@@ -615,10 +615,10 @@ class HybridShapeHealing(HybridShape):
         """
         return self.hybrid_shape_healing.RemoveElementToFreeze(i_position)
 
-    def replace_to_heal_element(self, i_index=None, i_new_heal=None):
+    def replace_to_heal_element(self, i_index, i_new_heal):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub ReplaceToHealElement(long iIndex,
                 | Reference iNewHeal)
                 | 
@@ -635,7 +635,7 @@ class HybridShapeHealing(HybridShape):
         :param Reference i_new_heal:
         :return: None
         """
-        return self.hybrid_shape_healing.ReplaceToHealElement(i_index, i_new_heal)
+        return self.hybrid_shape_healing.ReplaceToHealElement(i_index, i_new_heal.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -652,10 +652,10 @@ class HybridShapeHealing(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_distance_objective(self, i_distance_objective=None):
+    def set_distance_objective(self, i_distance_objective):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetDistanceObjective(double iDistanceObjective)
                 | 
                 |     Sets the distance objective for healing entity.
@@ -677,10 +677,10 @@ class HybridShapeHealing(HybridShape):
         """
         return self.hybrid_shape_healing.SetDistanceObjective(i_distance_objective)
 
-    def set_merging_distance(self, i_merging_distance=None):
+    def set_merging_distance(self, i_merging_distance):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetMergingDistance(double iMergingDistance)
                 | 
                 |     Sets the Merging distance for healing entity.
@@ -702,10 +702,10 @@ class HybridShapeHealing(HybridShape):
         """
         return self.hybrid_shape_healing.SetMergingDistance(i_merging_distance)
 
-    def set_sharpness_angle(self, i_sharpness_angle=None):
+    def set_sharpness_angle(self, i_sharpness_angle):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetSharpnessAngle(double iSharpnessAngle)
                 | 
                 |     Sets the Sharpness Angle for healing entity.
@@ -727,10 +727,10 @@ class HybridShapeHealing(HybridShape):
         """
         return self.hybrid_shape_healing.SetSharpnessAngle(i_sharpness_angle)
 
-    def set_tangency_angle(self, i_tangency_angle=None):
+    def set_tangency_angle(self, i_tangency_angle):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetTangencyAngle(double iTangencyAngle)
                 | 
                 |     Sets the distance objective for healing entity.
@@ -752,10 +752,10 @@ class HybridShapeHealing(HybridShape):
         """
         return self.hybrid_shape_healing.SetTangencyAngle(i_tangency_angle)
 
-    def set_tangency_objective(self, i_tangency_objective=None):
+    def set_tangency_objective(self, i_tangency_objective):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetTangencyObjective(double iTangencyObjective)
                 | 
                 |     Sets the tangency objective for healing entity.

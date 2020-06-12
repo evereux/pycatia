@@ -1,10 +1,9 @@
 #! /usr/bin/python3.6
 # module initially auto generated using V5Automation.chm from CATIA R25 on 2020-05-18 10:56:40.651039
 
-from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.system_interfaces.collection import Collection
 
 from .boundary import Boundary
+
 
 class Edge(Boundary):
     """
@@ -33,7 +32,7 @@ class Edge(Boundary):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.edge = com_object     
+        self.edge = com_object
 
     def __repr__(self):
         return f'Edge()'

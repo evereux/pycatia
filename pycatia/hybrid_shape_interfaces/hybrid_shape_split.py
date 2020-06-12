@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -14,10 +14,9 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeSplit(HybridShape):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -55,10 +54,15 @@ class HybridShapeSplit(HybridShape):
     def automatic_extrapolation_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AutomaticExtrapolationMode() As boolean
                 | 
-                |     Gets or sets the automatic extrapolation mode status. AutomaticExtrapolationMode = TRUE : Automatic extrapolation mode is on. = FALSE : Automatic extrapolation mode is off. This example retrieves in AutoExtrapolMode the automatic extrapolation mode status for the Split hybrid shape feature.
+                |     Gets or sets the automatic extrapolation mode status.
+                |     AutomaticExtrapolationMode = TRUE :
+                |     Automatic extrapolation mode is on. = FALSE :
+                |     Automatic extrapolation mode is off.
+                |     This example retrieves in AutoExtrapolMode the automatic extrapolation mode status for the
+                |     Split hybrid shape feature.
                 | 
                 |      Dim AutoExtrapolMode As boolean
                 |      AutoExtrapolMode = Split.AutomaticExtrapolationMode
@@ -80,10 +84,15 @@ class HybridShapeSplit(HybridShape):
     def both_sides_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property BothSidesMode() As boolean
                 | 
-                |     Gets or sets both sides computation mode. BothSidesMode = TRUE : Both sides are computed. = FALSE : Both sides are not computed. This example retrieves in BothSides the both sides computation mode for the Split hybrid shape feature.
+                |     Gets or sets both sides computation mode.
+                |     BothSidesMode = TRUE :
+                |     Both sides are computed. = FALSE :
+                |     Both sides are not computed.
+                |     This example retrieves in BothSides the both sides computation mode for the Split hybrid shape
+                |     feature.
                 | 
                 |      Dim BothSides As boolean
                 |      BothSides = Split.BothSidesMode
@@ -105,7 +114,7 @@ class HybridShapeSplit(HybridShape):
     def cutting_elem(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CuttingElem() As Reference
                 | 
                 |     Returns or sets the cutting element.
@@ -136,7 +145,7 @@ class HybridShapeSplit(HybridShape):
     def elem_to_cut(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ElemToCut() As Reference
                 | 
                 |     Returns or sets the element to cut.
@@ -165,10 +174,15 @@ class HybridShapeSplit(HybridShape):
     def extrapolation_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ExtrapolationType() As long
                 | 
-                |     Gets or sets the extrapolation type. ExtrapolationType = CATGSMExtrapolationType_None(0). = CATGSMExtrapolationType_Tangent(1). = CATGSMExtrapolationType_Curvature(2). This example retrieves in ExtrapolateType the extrapolation type for the Split hybrid shape feature.
+                |     Gets or sets the extrapolation type.
+                |     ExtrapolationType = CATGSMExtrapolationType_None(0).
+                |     = CATGSMExtrapolationType_Tangent(1).
+                |     = CATGSMExtrapolationType_Curvature(2).
+                |     This example retrieves in ExtrapolateType the extrapolation type for the Split hybrid shape
+                |     feature.
 
         :return: int
         """
@@ -187,10 +201,15 @@ class HybridShapeSplit(HybridShape):
     def intersection_computation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property IntersectionComputation() As boolean
                 | 
-                |     Gets or sets Intersection computation mode. IntersectionComputation = TRUE : Intersection is computed. = FALSE : Intersection is not computed. This example retrieves in Intersection the Intersection computation mode for the Split hybrid shape feature.
+                |     Gets or sets Intersection computation mode.
+                |     IntersectionComputation
+                |     = TRUE : Intersection is computed.
+                |     = FALSE : Intersection is not computed.
+                |     This example retrieves in Intersection the Intersection computation mode for the Split hybrid
+                |     shape feature.
                 | 
                 |      Dim Intersection As boolean
                 |      Intersection = Split.IntersectionComputation
@@ -212,7 +231,7 @@ class HybridShapeSplit(HybridShape):
     def orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Orientation() As long
                 | 
                 |     Returns or sets the orientation used to compute the split.
@@ -226,8 +245,10 @@ class HybridShapeSplit(HybridShape):
                 |     "natural" normal to the cutting feature
                 | 
                 |     When splitting a surface by a curve :
-                |     - If orientation value is 1: kept parts are specified by the result of the cross product : normal(surface)^tangent(curve)
-                |     - If orientation value is -1: Kept parts are specified by the inverse of the result of the cross product : normal(surface)^tangent(curve)
+                |     - If orientation value is 1: kept parts are specified by the result of the cross product :
+                |         normal(surface)^tangent(curve)
+                |     - If orientation value is -1: Kept parts are specified by the inverse of the result of the cross
+                |         product : normal(surface)^tangent(curve)
                 | 
                 |     When splitting a curve by a point or a curve (without support specified)
                 |     :
@@ -241,8 +262,10 @@ class HybridShapeSplit(HybridShape):
                 |     of the curve.
                 | 
                 |     When splitting a curve on support:
-                |     - If orientation value is 1: Kept parts are specified by the result of the cross product : normal(support surface)^tangent(cutting curve)
-                |     - If orientation value is -1: Kept parts are specified by the inverse of the result of the cross product : normal(support surface)^tangent(cutting curve)
+                |     - If orientation value is 1: Kept parts are specified by the result of the cross product :
+                |         normal(support surface)^tangent(cutting curve)
+                |     - If orientation value is -1: Kept parts are specified by the inverse of the result of the cross
+                |         product : normal(support surface)^tangent(cutting curve)
                 | 
                 |     When splitting a curve by a surface:
                 |     - If orientation value is 1: Kept parts are specified by the inverse of the
@@ -274,7 +297,7 @@ class HybridShapeSplit(HybridShape):
     def support(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets the support element.
@@ -305,7 +328,7 @@ class HybridShapeSplit(HybridShape):
     def volume_result(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property VolumeResult() As long
                 | 
                 |     Returns or sets the Result Type.
@@ -338,10 +361,10 @@ class HybridShapeSplit(HybridShape):
 
         self.hybrid_shape_split.VolumeResult = value
 
-    def add_cutting_elem(self, i_elem=None, i_orientation=None):
+    def add_cutting_elem(self, i_elem, i_orientation):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddCuttingElem(Reference iElem,
                 | long iOrientation)
                 | 
@@ -352,13 +375,14 @@ class HybridShapeSplit(HybridShape):
                 |         iElem
                 |             cutting feature 
                 |         iOrientation
-                |             Orientation iOrientation = 1 : SameOrientation = -1 : InvertOrientation = 2 : KoOrientation
+                |             Orientation
+                |                 iOrientation = 1 : SameOrientation = -1 : InvertOrientation = 2 : KoOrientation
 
         :param Reference i_elem:
         :param int i_orientation:
         :return: None
         """
-        return self.hybrid_shape_split.AddCuttingElem(i_elem, i_orientation)
+        return self.hybrid_shape_split.AddCuttingElem(i_elem.com_object, i_orientation)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -375,10 +399,10 @@ class HybridShapeSplit(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def add_element_to_keep(self, i_element=None):
+    def add_element_to_keep(self, i_element):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddElementToKeep(Reference iElement)
                 | 
                 |     Adds an element to specifications. This element will be
@@ -392,7 +416,7 @@ class HybridShapeSplit(HybridShape):
         :param Reference i_element:
         :return: None
         """
-        return self.hybrid_shape_split.AddElementToKeep(i_element)
+        return self.hybrid_shape_split.AddElementToKeep(i_element.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -409,10 +433,10 @@ class HybridShapeSplit(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def add_element_to_remove(self, i_element=None):
+    def add_element_to_remove(self, i_element):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddElementToRemove(Reference iElement)
                 | 
                 |     Adds an element to specifications. This element will be
@@ -426,7 +450,7 @@ class HybridShapeSplit(HybridShape):
         :param Reference i_element:
         :return: None
         """
-        return self.hybrid_shape_split.AddElementToRemove(i_element)
+        return self.hybrid_shape_split.AddElementToRemove(i_element.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -443,10 +467,10 @@ class HybridShapeSplit(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_cutting_elem(self, i_rank=None):
+    def get_cutting_elem(self, i_rank):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetCuttingElem(long iRank) As Reference
                 | 
                 |     Gets the cutting feature at a given index (a point, a curve or a
@@ -464,10 +488,10 @@ class HybridShapeSplit(HybridShape):
         """
         return Reference(self.hybrid_shape_split.GetCuttingElem(i_rank))
 
-    def get_intersection(self, i_rank=None):
+    def get_intersection(self, i_rank):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetIntersection(long iRank) As Reference
                 | 
                 |     Gets the intersection at a given index.
@@ -484,10 +508,10 @@ class HybridShapeSplit(HybridShape):
         """
         return Reference(self.hybrid_shape_split.GetIntersection(i_rank))
 
-    def get_kept_elem(self, i_rank=None):
+    def get_kept_elem(self, i_rank):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetKeptElem(long iRank) As Reference
                 | 
                 |     Gets the kept feature at a given index.
@@ -507,7 +531,7 @@ class HybridShapeSplit(HybridShape):
     def get_nb_cutting_elem(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetNbCuttingElem() As long
                 | 
                 |     Gets the number of cutting features.
@@ -519,12 +543,12 @@ class HybridShapeSplit(HybridShape):
 
         :return: int
         """
-        return int(self.hybrid_shape_split.GetNbCuttingElem())
+        return self.hybrid_shape_split.GetNbCuttingElem()
 
     def get_nb_elements_to_keep(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetNbElementsToKeep() As long
                 | 
                 |     Gets the number of elements to keep.
@@ -536,12 +560,12 @@ class HybridShapeSplit(HybridShape):
 
         :return: int
         """
-        return int(self.hybrid_shape_split.GetNbElementsToKeep())
+        return self.hybrid_shape_split.GetNbElementsToKeep()
 
     def get_nb_elements_to_remove(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetNbElementsToRemove() As long
                 | 
                 |     Gets the number of elements to remove.
@@ -553,12 +577,12 @@ class HybridShapeSplit(HybridShape):
 
         :return: int
         """
-        return int(self.hybrid_shape_split.GetNbElementsToRemove())
+        return self.hybrid_shape_split.GetNbElementsToRemove()
 
-    def get_orientation(self, i_rank=None):
+    def get_orientation(self, i_rank):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetOrientation(long iRank) As long
                 | 
                 |     Gets Orientation used to compute the split.
@@ -568,17 +592,18 @@ class HybridShapeSplit(HybridShape):
                 |         oOrientation
                 |             Orientation 
                 |         iRank
-                |             index of the cutting feature oOrientation = 1 : SameOrientation = -1 : InvertOrientation = 2 : KoOrientation
+                |             index of the cutting feature oOrientation = 1 : SameOrientation = -1 :
+                |             InvertOrientation = 2 : KoOrientation
 
         :param int i_rank:
         :return: int
         """
-        return int(self.hybrid_shape_split.GetOrientation(i_rank))
+        return self.hybrid_shape_split.GetOrientation(i_rank)
 
     def get_other_side(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetOtherSide() As Reference
                 | 
                 |     Gets the other side.
@@ -592,10 +617,10 @@ class HybridShapeSplit(HybridShape):
         """
         return Reference(self.hybrid_shape_split.GetOtherSide())
 
-    def get_removed_elem(self, i_rank=None):
+    def get_removed_elem(self, i_rank):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetRemovedElem(long iRank) As Reference
                 | 
                 |     Gets the removed feature at a given index.
@@ -615,7 +640,7 @@ class HybridShapeSplit(HybridShape):
     def invert_orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub InvertOrientation()
                 | 
                 |     Inverts the orientation used to compute the split.
@@ -624,10 +649,10 @@ class HybridShapeSplit(HybridShape):
         """
         return self.hybrid_shape_split.InvertOrientation()
 
-    def remove_cutting_elem(self, i_elem=None):
+    def remove_cutting_elem(self, i_elem):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveCuttingElem(Reference iElem)
                 | 
                 |     Removes a cutting feature.
@@ -640,7 +665,7 @@ class HybridShapeSplit(HybridShape):
         :param Reference i_elem:
         :return: None
         """
-        return self.hybrid_shape_split.RemoveCuttingElem(i_elem)
+        return self.hybrid_shape_split.RemoveCuttingElem(i_elem.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -657,10 +682,10 @@ class HybridShapeSplit(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def remove_element_to_keep(self, i_rank=None):
+    def remove_element_to_keep(self, i_rank):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveElementToKeep(long iRank)
                 | 
                 |     Removes an element from specifications.
@@ -675,10 +700,10 @@ class HybridShapeSplit(HybridShape):
         """
         return self.hybrid_shape_split.RemoveElementToKeep(i_rank)
 
-    def remove_element_to_remove(self, i_rank=None):
+    def remove_element_to_remove(self, i_rank):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveElementToRemove(long iRank)
                 | 
                 |     Removes an element from specifications.
@@ -693,10 +718,10 @@ class HybridShapeSplit(HybridShape):
         """
         return self.hybrid_shape_split.RemoveElementToRemove(i_rank)
 
-    def set_orientation(self, i_rank=None, i_orientation=None):
+    def set_orientation(self, i_rank, i_orientation):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetOrientation(long iRank,
                 | long iOrientation)
                 | 
@@ -707,7 +732,8 @@ class HybridShapeSplit(HybridShape):
                 |         iOrientation
                 |             Orientation 
                 |         iRank
-                |             index of the cutting feature iOrientation = 1 : SameOrientation = -1 : InvertOrientation = 2 : KoOrientation
+                |             index of the cutting feature iOrientation = 1 : SameOrientation = -1 :
+                |             InvertOrientation = 2 : KoOrientation
 
         :param int i_rank:
         :param int i_orientation:
@@ -716,4 +742,4 @@ class HybridShapeSplit(HybridShape):
         return self.hybrid_shape_split.SetOrientation(i_rank, i_orientation)
 
     def __repr__(self):
-        return f'HybridShapeSplit(name="{ self.name }")'
+        return f'HybridShapeSplit(name="{self.name}")'

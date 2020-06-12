@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -20,7 +20,7 @@ class HybridShapeExtremumPolar(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -52,7 +52,7 @@ class HybridShapeExtremumPolar(HybridShape):
     def angle(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Angle() As Angle (Read Only)
                 | 
                 |     returns the resulting angle of extremum.
@@ -66,7 +66,7 @@ class HybridShapeExtremumPolar(HybridShape):
     def contour(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Contour() As Reference
                 | 
                 |     returns or sets the input contour.
@@ -88,7 +88,7 @@ class HybridShapeExtremumPolar(HybridShape):
     def dir(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Dir() As HybridShapeDirection
                 | 
                 |     returns or sets the direction of computation.
@@ -110,7 +110,7 @@ class HybridShapeExtremumPolar(HybridShape):
     def extremum_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ExtremumType() As short
                 | 
                 |     returns or sets the type of extremum.
@@ -132,7 +132,7 @@ class HybridShapeExtremumPolar(HybridShape):
     def origin(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Origin() As Reference
                 | 
                 |     returns or sets the origin of the polar axis.
@@ -154,7 +154,7 @@ class HybridShapeExtremumPolar(HybridShape):
     def radius(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Radius() As Length (Read Only)
                 | 
                 |     returns the resulting radius of extremum.
@@ -168,7 +168,7 @@ class HybridShapeExtremumPolar(HybridShape):
     def support(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Support() As Reference
                 | 
                 |     returns or sets the support (if exist).

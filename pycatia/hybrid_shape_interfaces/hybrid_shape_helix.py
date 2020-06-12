@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -20,7 +20,7 @@ class HybridShapeHelix(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -53,7 +53,7 @@ class HybridShapeHelix(HybridShape):
     def axis(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Axis() As Reference
                 | 
                 |     Reads / Changes the Helix axis.
@@ -84,7 +84,7 @@ class HybridShapeHelix(HybridShape):
     def clockwise_revolution(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ClockwiseRevolution() As boolean
                 | 
                 |     Reads / Modifies the sense of revolutions .
@@ -112,7 +112,7 @@ class HybridShapeHelix(HybridShape):
     def height(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Height() As Length (Read Only)
                 | 
                 |     Reads the height of the Helix.
@@ -131,7 +131,7 @@ class HybridShapeHelix(HybridShape):
     def invert_axis(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property InvertAxis() As boolean
                 | 
                 |     Reads / Modifies the orientation .
@@ -159,7 +159,7 @@ class HybridShapeHelix(HybridShape):
     def pitch(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Pitch() As Length (Read Only)
                 | 
                 |     Reads the pitch of the Helix.
@@ -178,7 +178,7 @@ class HybridShapeHelix(HybridShape):
     def pitch2(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Pitch2() As Length (Read Only)
                 | 
                 |     Reads the Helix pitch2.
@@ -197,7 +197,7 @@ class HybridShapeHelix(HybridShape):
     def pitch_law_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property PitchLawType() As long
                 | 
                 |     Reads / Changes the Helix pitch law type.
@@ -224,7 +224,7 @@ class HybridShapeHelix(HybridShape):
     def profile(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Profile() As Reference
                 | 
                 |     Reads / Changes the Helix profile.
@@ -251,7 +251,7 @@ class HybridShapeHelix(HybridShape):
     def revol_number(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property RevolNumber() As RealParam (Read Only)
                 | 
                 |     Reads the revolution number of the Helix.
@@ -270,7 +270,7 @@ class HybridShapeHelix(HybridShape):
     def starting_angle(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property StartingAngle() As Angle (Read Only)
                 | 
                 |     Reads the helix starting angle.
@@ -289,7 +289,7 @@ class HybridShapeHelix(HybridShape):
     def starting_point(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property StartingPoint() As Reference
                 | 
                 |     Reads / Changes the starting point of the Helix. The starting point must
@@ -320,7 +320,7 @@ class HybridShapeHelix(HybridShape):
     def taper_angle(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TaperAngle() As Angle (Read Only)
                 | 
                 |     Reads the helix taper angle.
@@ -339,7 +339,7 @@ class HybridShapeHelix(HybridShape):
     def taper_outward(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TaperOutward() As boolean
                 | 
                 |     Reads / Modifies the taper angle sense of variation.
@@ -363,10 +363,10 @@ class HybridShapeHelix(HybridShape):
 
         self.hybrid_shape_helix.TaperOutward = value
 
-    def set_height(self, i_height=None):
+    def set_height(self, i_height):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetHeight(double iHeight)
                 | 
                 |     Sets the helix height.
@@ -381,10 +381,10 @@ class HybridShapeHelix(HybridShape):
         """
         return self.hybrid_shape_helix.SetHeight(i_height)
 
-    def set_pitch(self, i_pitch=None):
+    def set_pitch(self, i_pitch):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetPitch(double iPitch)
                 | 
                 |     Sets the helix pitch.
@@ -399,10 +399,10 @@ class HybridShapeHelix(HybridShape):
         """
         return self.hybrid_shape_helix.SetPitch(i_pitch)
 
-    def set_pitch2(self, i_pitch2=None):
+    def set_pitch2(self, i_pitch2):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetPitch2(double iPitch2)
                 | 
                 |     Changes the Helix pitch2 .
@@ -417,10 +417,10 @@ class HybridShapeHelix(HybridShape):
         """
         return self.hybrid_shape_helix.SetPitch2(i_pitch2)
 
-    def set_revolution_number(self, i_nb_revol=None):
+    def set_revolution_number(self, i_nb_revol):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetRevolutionNumber(double iNbRevol)
                 | 
                 |     Changes the Revolution Numbers.
@@ -435,10 +435,10 @@ class HybridShapeHelix(HybridShape):
         """
         return self.hybrid_shape_helix.SetRevolutionNumber(i_nb_revol)
 
-    def set_starting_angle(self, i_starting_angle=None):
+    def set_starting_angle(self, i_starting_angle):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetStartingAngle(double iStartingAngle)
                 | 
                 |     Sets the helix starting angle.
@@ -453,10 +453,10 @@ class HybridShapeHelix(HybridShape):
         """
         return self.hybrid_shape_helix.SetStartingAngle(i_starting_angle)
 
-    def set_taper_angle(self, i_taper_angle=None):
+    def set_taper_angle(self, i_taper_angle):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetTaperAngle(double iTaperAngle)
                 | 
                 |     Sets the helix taper angle.

@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -27,7 +27,7 @@ from pycatia.system_interfaces.any_object import AnyObject
 class DrawingView(AnyObject):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -54,7 +54,7 @@ class DrawingView(AnyObject):
     def angle(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Angle() As double
                 | 
                 |     Returns or sets the angle of the drawing view. The angle is measured
@@ -90,7 +90,7 @@ class DrawingView(AnyObject):
     def arrows(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Arrows() As DrawingArrows (Read Only)
                 | 
                 |     Returns the drawing arrow collection of the drawing view.
@@ -113,7 +113,7 @@ class DrawingView(AnyObject):
     def components(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Components() As DrawingComponents (Read Only)
                 | 
                 |     Returns the drawing component instances collection (i.e. ditto collection)
@@ -137,7 +137,7 @@ class DrawingView(AnyObject):
     def dimensions(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Dimensions() As DrawingDimensions (Read Only)
                 | 
                 |     Returns the drawing dimension collection of the drawing
@@ -161,7 +161,7 @@ class DrawingView(AnyObject):
     def factory2_d(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Factory2D() As Factory2D (Read Only)
                 | 
                 |     Returns the 2D factory of the drawing view. Take care that you must open
@@ -190,7 +190,7 @@ class DrawingView(AnyObject):
     def frame_visualization(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FrameVisualization() As boolean
                 | 
                 |     Returns or sets the drawing view frame visualization
@@ -222,7 +222,7 @@ class DrawingView(AnyObject):
     def generative_behavior(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property GenerativeBehavior() As DrawingViewGenerativeBehavior (Read
                 | Only)
                 | 
@@ -247,7 +247,7 @@ class DrawingView(AnyObject):
     def generative_links(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property GenerativeLinks() As DrawingViewGenerativeLinks (Read
                 | Only)
                 | 
@@ -271,7 +271,7 @@ class DrawingView(AnyObject):
     def geometric_elements(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property GeometricElements() As GeometricElements (Read
                 | Only)
                 | 
@@ -296,7 +296,7 @@ class DrawingView(AnyObject):
     def lock_status(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property LockStatus() As boolean
                 | 
                 |     Returns or sets the lock status of a drawing view.
@@ -327,7 +327,7 @@ class DrawingView(AnyObject):
     def pictures(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Pictures() As DrawingPictures (Read Only)
                 | 
                 |     Returns the drawing picture collection of the drawing
@@ -351,7 +351,7 @@ class DrawingView(AnyObject):
     def reference_view(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ReferenceView() As DrawingView
                 | 
                 |     Returns or sets the reference view. The reference view is also the parent
@@ -395,7 +395,7 @@ class DrawingView(AnyObject):
     def scale(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Scale() As double
                 | 
                 |     Returns or sets the scale of the drawing view.
@@ -425,7 +425,7 @@ class DrawingView(AnyObject):
     def scale2(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Scale2() As double
                 | 
                 |     Returns or sets the scale of the drawing view (Workaround for VBA
@@ -456,7 +456,7 @@ class DrawingView(AnyObject):
     def tables(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Tables() As DrawingTables (Read Only)
                 | 
                 |     Returns the drawing table collection of the drawing view.
@@ -479,7 +479,7 @@ class DrawingView(AnyObject):
     def texts(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Texts() As DrawingTexts (Read Only)
                 | 
                 |     Returns the drawing text collection of the drawing view.
@@ -502,7 +502,7 @@ class DrawingView(AnyObject):
     def threads(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Threads() As DrawingThreads (Read Only)
                 | 
                 |     Returns the drawing thread collection of the drawing view.
@@ -525,7 +525,7 @@ class DrawingView(AnyObject):
     def view_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ViewType() As CatDrawingViewType (Read Only)
                 | 
                 |     Returns the drawing view type.
@@ -540,7 +540,7 @@ class DrawingView(AnyObject):
     def weldings(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Weldings() As DrawingWeldings (Read Only)
                 | 
                 |     Returns the drawing welding collection of the drawing
@@ -564,7 +564,7 @@ class DrawingView(AnyObject):
     def x(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property x() As double
                 | 
                 |     For an interactive view, get_x and put_x methods are equivalents to
@@ -598,7 +598,7 @@ class DrawingView(AnyObject):
     def x_axis_data(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property xAxisData() As double
                 | 
                 |     Returns or sets the x coordinate of the drawing view coordinate system
@@ -630,7 +630,7 @@ class DrawingView(AnyObject):
     def y(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property y() As double
                 | 
                 |     For an interactive view, get_y and put_y methods are equivalents to
@@ -666,7 +666,7 @@ class DrawingView(AnyObject):
     def y_axis_data(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property yAxisData() As double
                 | 
                 |     Returns or sets the y coordinate of the drawing view coordinate system
@@ -699,7 +699,7 @@ class DrawingView(AnyObject):
     def activate(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Activate()
                 | 
                 |     Activates the drawing view. Activating a drawing view means that this
@@ -720,7 +720,7 @@ class DrawingView(AnyObject):
     def aligned_with_reference_view(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AlignedWithReferenceView()
                 | 
                 |     Activates the alignment with the reference view. Activating the alignment
@@ -739,10 +739,10 @@ class DrawingView(AnyObject):
         """
         return self.drawing_view.AlignedWithReferenceView()
 
-    def get_view_name(self, i_view_name_prefix=None, i_view_name_ident=None, i_view_name_suffix=None):
+    def get_view_name(self, i_view_name_prefix, i_view_name_ident, i_view_name_suffix):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetViewName(CATBSTR iViewNamePrefix,
                 | CATBSTR iViewNameIdent,
                 | CATBSTR iViewNameSuffix)
@@ -772,10 +772,10 @@ class DrawingView(AnyObject):
         """
         return self.drawing_view.GetViewName(i_view_name_prefix, i_view_name_ident, i_view_name_suffix)
 
-    def insert_view_angle(self, i_first=None, io_text=None):
+    def insert_view_angle(self, i_first, io_text):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub InsertViewAngle(long iFirst,
                 | DrawingText ioText)
                 | 
@@ -804,7 +804,7 @@ class DrawingView(AnyObject):
         :param DrawingText io_text:
         :return: None
         """
-        return self.drawing_view.InsertViewAngle(i_first, io_text)
+        return self.drawing_view.InsertViewAngle(i_first, io_text.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -821,10 +821,10 @@ class DrawingView(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def insert_view_scale(self, i_first=None, io_text=None):
+    def insert_view_scale(self, i_first, io_text):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub InsertViewScale(long iFirst,
                 | DrawingText ioText)
                 | 
@@ -852,7 +852,7 @@ class DrawingView(AnyObject):
         :param DrawingText io_text:
         :return: None
         """
-        return self.drawing_view.InsertViewScale(i_first, io_text)
+        return self.drawing_view.InsertViewScale(i_first, io_text.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -872,7 +872,7 @@ class DrawingView(AnyObject):
     def is_generative(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func IsGenerative() As boolean
                 | 
                 |     Returns whether the drawing view has a generative
@@ -889,12 +889,12 @@ class DrawingView(AnyObject):
 
         :return: bool
         """
-        return bool(self.drawing_view.IsGenerative())
+        return self.drawing_view.IsGenerative()
 
     def isolate(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Isolate()
                 | 
                 |     Isolates the drawing view.
@@ -913,7 +913,7 @@ class DrawingView(AnyObject):
     def save_edition(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SaveEdition()
                 | 
                 |     Saves the Sketch Edition. Once you have finished working with the drawing
@@ -935,10 +935,10 @@ class DrawingView(AnyObject):
         """
         return self.drawing_view.SaveEdition()
 
-    def set_view_name(self, i_view_name_prefix=None, i_view_name_ident=None, i_view_name_suffix=None):
+    def set_view_name(self, i_view_name_prefix, i_view_name_ident, i_view_name_suffix):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetViewName(CATBSTR iViewNamePrefix,
                 | CATBSTR iViewNameIdent,
                 | CATBSTR iViewNameSuffix)
@@ -970,10 +970,10 @@ class DrawingView(AnyObject):
         """
         return self.drawing_view.SetViewName(i_view_name_prefix, i_view_name_ident, i_view_name_suffix)
 
-    def size(self, o_values=None):
+    def size(self, o_values):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Size(CATSafeArrayVariant oValues)
                 | 
                 |     Returns the bounding box of the drawing view.
@@ -1002,7 +1002,7 @@ class DrawingView(AnyObject):
                 |              Ymax = oXY(3)
 
         :param tuple o_values:
-        :return: None
+        :return: double
         """
         return self.drawing_view.Size(o_values)
         # # # # Autogenerated comment: 
@@ -1024,7 +1024,7 @@ class DrawingView(AnyObject):
     def un_aligned_with_reference_view(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub UnAlignedWithReferenceView()
                 | 
                 |     Deactivates the alignment with the reference view. Deactivating the

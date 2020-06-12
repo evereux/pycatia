@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -15,10 +15,9 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeLoft(HybridShape):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -61,7 +60,7 @@ class HybridShapeLoft(HybridShape):
     def area_law(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AreaLaw() As Reference
                 | 
                 |     Gets or sets the optional area law for multi-sections element definition.
@@ -84,7 +83,7 @@ class HybridShapeLoft(HybridShape):
     def area_law_tolerance(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AreaLawTolerance() As double
                 | 
                 |     Gets or sets the tolerance applied to area law. The value is in mm.
@@ -106,10 +105,13 @@ class HybridShapeLoft(HybridShape):
     def boolean_operation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property BooleanOperation() As long
                 | 
-                |     Gets or sets the boolean operation for closed lofted surface. TO BE USED ONLY for Part Loft (closed loft). BooleanOperation = 1 : No boolean operation. = 2 : Union boolean operation. = 3 : Removal boolean operation. This example retrieves in BoolOp the type of boolean operation for the Loft hybrid shape feature.
+                |     Gets or sets the boolean operation for closed lofted surface. TO BE USED ONLY for Part Loft
+                |     (closed loft). BooleanOperation = 1 : No boolean operation. = 2 : Union boolean operation. = 3 :
+                |     Removal boolean operation. This example retrieves in BoolOp the type of boolean operation for the
+                |     Loft hybrid shape feature.
                 | 
                 |      Dim BoolOp
                 |      BoolOp = Loft.BooleanOperation
@@ -131,7 +133,7 @@ class HybridShapeLoft(HybridShape):
     def canonical_detection(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CanonicalDetection() As long
                 | 
                 |     Returns or sets whether canonical surfaces of the lofted surface are
@@ -162,7 +164,7 @@ class HybridShapeLoft(HybridShape):
     def comp_end_section_tangent(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CompEndSectionTangent() As long
                 | 
                 |     Returns or sets whether the tangent surface to the end section of the
@@ -191,7 +193,7 @@ class HybridShapeLoft(HybridShape):
     def comp_start_section_tangent(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CompStartSectionTangent() As long
                 | 
                 |     Returns or sets whether the tangent surface to the start section of the
@@ -220,7 +222,7 @@ class HybridShapeLoft(HybridShape):
     def context(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Context() As long
                 | 
                 |     Returns or sets the context on Loft feature.
@@ -256,7 +258,7 @@ class HybridShapeLoft(HybridShape):
     def relimitation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Relimitation() As long
                 | 
                 |     Returns or sets the relimitation type between sections of the
@@ -319,7 +321,7 @@ class HybridShapeLoft(HybridShape):
     def section_coupling(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SectionCoupling() As long
                 | 
                 |     Returns or sets the type of coupling between sections of the
@@ -359,7 +361,7 @@ class HybridShapeLoft(HybridShape):
     def smooth_angle_threshold(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SmoothAngleThreshold() As double
                 | 
                 |     Returns or sets the angular threshold under which discontinuities (moving
@@ -382,7 +384,7 @@ class HybridShapeLoft(HybridShape):
     def smooth_angle_threshold_activity(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SmoothAngleThresholdActivity() As boolean
                 | 
                 |     Returns or sets whether a angular threshold is allowed or not during
@@ -413,7 +415,7 @@ class HybridShapeLoft(HybridShape):
     def smooth_deviation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SmoothDeviation() As double
                 | 
                 |     Returns or sets the deviation value (length) allowed during lofting
@@ -436,7 +438,7 @@ class HybridShapeLoft(HybridShape):
     def smooth_deviation_activity(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SmoothDeviationActivity() As boolean
                 | 
                 |     Returns or sets whether a deviation is allowed or not during lofting
@@ -463,10 +465,10 @@ class HybridShapeLoft(HybridShape):
 
         self.hybrid_shape_loft.SmoothDeviationActivity = value
 
-    def add_guide(self, i_guide=None):
+    def add_guide(self, i_guide):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddGuide(Reference iGuide)
                 | 
                 |     Adds a guide curve to the lofted surface.
@@ -483,7 +485,7 @@ class HybridShapeLoft(HybridShape):
         :param Reference i_guide:
         :return: None
         """
-        return self.hybrid_shape_loft.AddGuide(i_guide)
+        return self.hybrid_shape_loft.AddGuide(i_guide.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -500,10 +502,10 @@ class HybridShapeLoft(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def add_guide_with_tangent(self, i_guide=None, i_tangent=None):
+    def add_guide_with_tangent(self, i_guide, i_tangent):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddGuideWithTangent(Reference iGuide,
                 | Reference iTangent)
                 | 
@@ -528,7 +530,7 @@ class HybridShapeLoft(HybridShape):
         :param Reference i_tangent:
         :return: None
         """
-        return self.hybrid_shape_loft.AddGuideWithTangent(i_guide, i_tangent)
+        return self.hybrid_shape_loft.AddGuideWithTangent(i_guide.com_object, i_tangent.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -545,10 +547,10 @@ class HybridShapeLoft(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def add_section_to_loft(self, i_crv=None, i_ori=None, i_point=None):
+    def add_section_to_loft(self, i_crv, i_ori, i_point):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddSectionToLoft(Reference iCrv,
                 | long iOri,
                 | Reference iPoint)
@@ -569,7 +571,7 @@ class HybridShapeLoft(HybridShape):
         :param Reference i_point:
         :return: None
         """
-        return self.hybrid_shape_loft.AddSectionToLoft(i_crv, i_ori, i_point)
+        return self.hybrid_shape_loft.AddSectionToLoft(i_crv.com_object, i_ori, i_point.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -589,7 +591,7 @@ class HybridShapeLoft(HybridShape):
     def get_area_law_tolerance_parameter(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetAreaLawToleranceParameter() As Length
                 | 
                 |     Gets the tolerance parameter applied to area law.
@@ -598,10 +600,10 @@ class HybridShapeLoft(HybridShape):
         """
         return Length(self.hybrid_shape_loft.GetAreaLawToleranceParameter())
 
-    def get_faces_for_closing(self, o_start_face=None, o_end_face=None):
+    def get_faces_for_closing(self, o_start_face, o_end_face):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetFacesForClosing(Reference oStartFace,
                 | Reference oEndFace)
                 | 
@@ -620,7 +622,7 @@ class HybridShapeLoft(HybridShape):
         :param Reference o_end_face:
         :return: None
         """
-        return self.hybrid_shape_loft.GetFacesForClosing(o_start_face, o_end_face)
+        return self.hybrid_shape_loft.GetFacesForClosing(o_start_face.com_object, o_end_face.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -637,10 +639,10 @@ class HybridShapeLoft(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_guide(self, i_pos=None, o_guide=None, o_guide_tangent=None):
+    def get_guide(self, i_pos, o_guide, o_guide_tangent):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetGuide(long iPos,
                 | Reference oGuide,
                 | Reference oGuideTangent)
@@ -663,7 +665,7 @@ class HybridShapeLoft(HybridShape):
         :param Reference o_guide_tangent:
         :return: None
         """
-        return self.hybrid_shape_loft.GetGuide(i_pos, o_guide, o_guide_tangent)
+        return self.hybrid_shape_loft.GetGuide(i_pos, o_guide.com_object, o_guide_tangent.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -683,7 +685,7 @@ class HybridShapeLoft(HybridShape):
     def get_nb_of_guides(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetNbOfGuides() As long
                 | 
                 |     Returns the number of guides in the loft object.
@@ -702,12 +704,12 @@ class HybridShapeLoft(HybridShape):
 
         :return: int
         """
-        return int(self.hybrid_shape_loft.GetNbOfGuides())
+        return self.hybrid_shape_loft.GetNbOfGuides()
 
-    def get_section_from_loft(self, i_rank=None, o_crv=None, o_ori=None, o_point=None):
+    def get_section_from_loft(self, i_rank, o_crv, o_ori, o_point):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetSectionFromLoft(long iRank,
                 | Reference oCrv,
                 | long oOri,
@@ -732,7 +734,7 @@ class HybridShapeLoft(HybridShape):
         :param Reference o_point:
         :return: None
         """
-        return self.hybrid_shape_loft.GetSectionFromLoft(i_rank, o_crv, o_ori, o_point)
+        return self.hybrid_shape_loft.GetSectionFromLoft(i_rank, o_crv.com_object, o_ori, o_point.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -749,10 +751,10 @@ class HybridShapeLoft(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_spine(self, o_spine_type=None, o_spine=None):
+    def get_spine(self, o_spine_type, o_spine):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetSpine(long oSpineType,
                 | Reference oSpine)
                 | 
@@ -770,7 +772,7 @@ class HybridShapeLoft(HybridShape):
         :param Reference o_spine:
         :return: None
         """
-        return self.hybrid_shape_loft.GetSpine(o_spine_type, o_spine)
+        return self.hybrid_shape_loft.GetSpine(o_spine_type, o_spine.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -787,10 +789,10 @@ class HybridShapeLoft(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_start_and_end_section_tangent(self, o_start_section_tangent=None, o_end_section_tangent=None):
+    def get_start_and_end_section_tangent(self, o_start_section_tangent, o_end_section_tangent):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetStartAndEndSectionTangent(Reference
                 | oStartSectionTangent,
                 | Reference oEndSectionTangent)
@@ -809,7 +811,8 @@ class HybridShapeLoft(HybridShape):
         :param Reference o_end_section_tangent:
         :return: None
         """
-        return self.hybrid_shape_loft.GetStartAndEndSectionTangent(o_start_section_tangent, o_end_section_tangent)
+        return self.hybrid_shape_loft.GetStartAndEndSectionTangent(o_start_section_tangent.com_object,
+                                                                   o_end_section_tangent.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -826,10 +829,10 @@ class HybridShapeLoft(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def insert_coupling(self, i_position=None):
+    def insert_coupling(self, i_position):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub InsertCoupling(long iPosition)
                 | 
                 |     Inserts a coupling to the loft.
@@ -849,10 +852,10 @@ class HybridShapeLoft(HybridShape):
         """
         return self.hybrid_shape_loft.InsertCoupling(i_position)
 
-    def insert_coupling_point(self, i_coupling_index=None, i_position=None, i_point=None):
+    def insert_coupling_point(self, i_coupling_index, i_position, i_point):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub InsertCouplingPoint(long iCouplingIndex,
                 | long iPosition,
                 | Reference iPoint)
@@ -881,7 +884,7 @@ class HybridShapeLoft(HybridShape):
         :param Reference i_point:
         :return: None
         """
-        return self.hybrid_shape_loft.InsertCouplingPoint(i_coupling_index, i_position, i_point)
+        return self.hybrid_shape_loft.InsertCouplingPoint(i_coupling_index, i_position, i_point.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -898,10 +901,10 @@ class HybridShapeLoft(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def insert_section_to_loft(self, i_type=None, i_crv=None, i_ori=None, i_point=None, i_section_ref=None):
+    def insert_section_to_loft(self, i_type, i_crv, i_ori, i_point, i_section_ref):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub InsertSectionToLoft(boolean iType,
                 | Reference iCrv,
                 | long iOri,
@@ -932,7 +935,8 @@ class HybridShapeLoft(HybridShape):
         :param Reference i_section_ref:
         :return: None
         """
-        return self.hybrid_shape_loft.InsertSectionToLoft(i_type, i_crv, i_ori, i_point, i_section_ref)
+        return self.hybrid_shape_loft.InsertSectionToLoft(i_type, i_crv.com_object, i_ori, i_point.com_object,
+                                                          i_section_ref.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -949,10 +953,10 @@ class HybridShapeLoft(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def modify_guide_curve(self, i_guide=None, i_new_guide=None):
+    def modify_guide_curve(self, i_guide, i_new_guide):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub ModifyGuideCurve(Reference iGuide,
                 | Reference iNewGuide)
                 | 
@@ -969,7 +973,7 @@ class HybridShapeLoft(HybridShape):
         :param Reference i_new_guide:
         :return: None
         """
-        return self.hybrid_shape_loft.ModifyGuideCurve(i_guide, i_new_guide)
+        return self.hybrid_shape_loft.ModifyGuideCurve(i_guide.com_object, i_new_guide.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -986,11 +990,11 @@ class HybridShapeLoft(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def modify_section_curve(self, i_section=None, i_new_section=None, o_curve_section=None, o_closing_point=None, o_pt_diag=None):
+    def modify_section_curve(self, i_section, i_new_section, o_curve_section, o_closing_point, o_pt_diag):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
-                | o Sub ModifySectionCurve(Reference iSection,
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Sub modifiesectionCurve(Reference iSection,
                 | Reference iNewSection,
                 | Reference oCurveSection,
                 | Reference oClosingPoint,
@@ -1014,7 +1018,10 @@ class HybridShapeLoft(HybridShape):
                 |             of iSection. if iSection is a face, oClosingPoint is a new closing point the
                 |             boundary of iSection. 
                 |         oPtDiag
-                |             Information on closing point = 0 : No closing point has been created nor retrieved. = 1 : A closing point has been created as a vertex. = 2 : A closing point has been created as an extremum. = 3 : A closing point has been retrieved as an extremum.
+                |             Information on closing point = 0 : No closing point has been created nor retrieved. = 1 :
+                |             A closing point has been created as a vertex. = 2 :
+                |             A closing point has been created as an extremum. = 3 :
+                |             A closing point has been retrieved as an extremum.
 
         :param Reference i_section:
         :param Reference i_new_section:
@@ -1023,7 +1030,9 @@ class HybridShapeLoft(HybridShape):
         :param int o_pt_diag:
         :return: None
         """
-        return self.hybrid_shape_loft.ModifySectionCurve(i_section, i_new_section, o_curve_section, o_closing_point, o_pt_diag)
+        return self.hybrid_shape_loft.modifiesectionCurve(i_section.com_object, i_new_section.com_object,
+                                                          o_curve_section.com_object, o_closing_point.com_object,
+                                                          o_pt_diag)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1032,7 +1041,7 @@ class HybridShapeLoft(HybridShape):
         # # vba_code = """
         # # Public Function modify_section_curve(hybrid_shape_loft)
         # #     Dim iSection (2)
-        # #     hybrid_shape_loft.ModifySectionCurve iSection
+        # #     hybrid_shape_loft.modifiesectionCurve iSection
         # #     modify_section_curve = iSection
         # # End Function
         # # """
@@ -1040,11 +1049,11 @@ class HybridShapeLoft(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def modify_section_orient(self, i_section=None, i_orient=None):
+    def modify_section_orient(self, i_section, i_orient):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
-                | o Sub ModifySectionOrient(Reference iSection,
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Sub modifiesectionOrient(Reference iSection,
                 | long iOrient)
                 | 
                 |     Modifies the orientation of the curve of a section from the lofted
@@ -1055,13 +1064,14 @@ class HybridShapeLoft(HybridShape):
                 |         iSection
                 |             section curve to be modified. 
                 |         iOrient
-                |             orientation of the section curve = 1 : same orientation. = -1 : inverted orientation. = 2 : ko orientation.
+                |             orientation of the section curve = 1 : same orientation. = -1 :
+                |             inverted orientation. = 2 : ko orientation.
 
         :param Reference i_section:
         :param int i_orient:
         :return: None
         """
-        return self.hybrid_shape_loft.ModifySectionOrient(i_section, i_orient)
+        return self.hybrid_shape_loft.modifiesectionOrient(i_section.com_object, i_orient)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1070,7 +1080,7 @@ class HybridShapeLoft(HybridShape):
         # # vba_code = """
         # # Public Function modify_section_orient(hybrid_shape_loft)
         # #     Dim iSection (2)
-        # #     hybrid_shape_loft.ModifySectionOrient iSection
+        # #     hybrid_shape_loft.modifiesectionOrient iSection
         # #     modify_section_orient = iSection
         # # End Function
         # # """
@@ -1078,10 +1088,10 @@ class HybridShapeLoft(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def remove_face_for_closing(self, i_section=None):
+    def remove_face_for_closing(self, i_section):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveFaceForClosing(Reference iSection)
                 | 
                 |     Removes face used to close the lofted surface.
@@ -1094,7 +1104,7 @@ class HybridShapeLoft(HybridShape):
         :param Reference i_section:
         :return: None
         """
-        return self.hybrid_shape_loft.RemoveFaceForClosing(i_section)
+        return self.hybrid_shape_loft.RemoveFaceForClosing(i_section.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1111,10 +1121,10 @@ class HybridShapeLoft(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def remove_guide(self, i_guide=None):
+    def remove_guide(self, i_guide):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveGuide(Reference iGuide)
                 | 
                 |     Removes a guide curve from the lofted surface.
@@ -1131,7 +1141,7 @@ class HybridShapeLoft(HybridShape):
         :param Reference i_guide:
         :return: None
         """
-        return self.hybrid_shape_loft.RemoveGuide(i_guide)
+        return self.hybrid_shape_loft.RemoveGuide(i_guide.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1148,10 +1158,10 @@ class HybridShapeLoft(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def remove_guide_tangent(self, i_guide=None):
+    def remove_guide_tangent(self, i_guide):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveGuideTangent(Reference iGuide)
                 | 
                 |     Removes a tangent surface of a guide from the lofted
@@ -1166,7 +1176,7 @@ class HybridShapeLoft(HybridShape):
         :param Reference i_guide:
         :return: None
         """
-        return self.hybrid_shape_loft.RemoveGuideTangent(i_guide)
+        return self.hybrid_shape_loft.RemoveGuideTangent(i_guide.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1183,10 +1193,10 @@ class HybridShapeLoft(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def remove_section(self, i_section=None):
+    def remove_section(self, i_section):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveSection(Reference iSection)
                 | 
                 |     Removes a loft section from the lofted surface.
@@ -1203,7 +1213,7 @@ class HybridShapeLoft(HybridShape):
         :param Reference i_section:
         :return: None
         """
-        return self.hybrid_shape_loft.RemoveSection(i_section)
+        return self.hybrid_shape_loft.RemoveSection(i_section.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1220,10 +1230,10 @@ class HybridShapeLoft(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def remove_section_point(self, i_section=None):
+    def remove_section_point(self, i_section):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveSectionPoint(Reference iSection)
                 | 
                 |     Removes a closing point of a section from the lofted surface. The curve
@@ -1238,7 +1248,7 @@ class HybridShapeLoft(HybridShape):
         :param Reference i_section:
         :return: None
         """
-        return self.hybrid_shape_loft.RemoveSectionPoint(i_section)
+        return self.hybrid_shape_loft.RemoveSectionPoint(i_section.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1255,10 +1265,10 @@ class HybridShapeLoft(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def remove_section_tangent(self, i_section=None):
+    def remove_section_tangent(self, i_section):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveSectionTangent(Reference iSection)
                 | 
                 |     Removes the tangent surface of a section from the lofted surface. The
@@ -1274,7 +1284,7 @@ class HybridShapeLoft(HybridShape):
         :param Reference i_section:
         :return: None
         """
-        return self.hybrid_shape_loft.RemoveSectionTangent(i_section)
+        return self.hybrid_shape_loft.RemoveSectionTangent(i_section.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1291,10 +1301,10 @@ class HybridShapeLoft(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_end_face_for_closing(self, i_face=None):
+    def set_end_face_for_closing(self, i_face):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetEndFaceForClosing(Reference iFace)
                 | 
                 |     Sets a face to the end section from the lofted surface.
@@ -1310,7 +1320,7 @@ class HybridShapeLoft(HybridShape):
         :param Reference i_face:
         :return: None
         """
-        return self.hybrid_shape_loft.SetEndFaceForClosing(i_face)
+        return self.hybrid_shape_loft.SetEndFaceForClosing(i_face.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1327,10 +1337,10 @@ class HybridShapeLoft(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_end_section_tangent(self, i_tangent_section=None):
+    def set_end_section_tangent(self, i_tangent_section):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetEndSectionTangent(Reference iTangentSection)
                 | 
                 |     Sets a tangent surface to the end section from the lofted
@@ -1348,7 +1358,7 @@ class HybridShapeLoft(HybridShape):
         :param Reference i_tangent_section:
         :return: None
         """
-        return self.hybrid_shape_loft.SetEndSectionTangent(i_tangent_section)
+        return self.hybrid_shape_loft.SetEndSectionTangent(i_tangent_section.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1365,10 +1375,10 @@ class HybridShapeLoft(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_spine(self, i_spine=None):
+    def set_spine(self, i_spine):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetSpine(Reference iSpine)
                 | 
                 |     Sets the spine to the lofted surface.
@@ -1384,7 +1394,7 @@ class HybridShapeLoft(HybridShape):
         :param Reference i_spine:
         :return: None
         """
-        return self.hybrid_shape_loft.SetSpine(i_spine)
+        return self.hybrid_shape_loft.SetSpine(i_spine.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1401,10 +1411,10 @@ class HybridShapeLoft(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_start_face_for_closing(self, i_face=None):
+    def set_start_face_for_closing(self, i_face):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetStartFaceForClosing(Reference iFace)
                 | 
                 |     Sets a face to the start section from the lofted surface.
@@ -1420,7 +1430,7 @@ class HybridShapeLoft(HybridShape):
         :param Reference i_face:
         :return: None
         """
-        return self.hybrid_shape_loft.SetStartFaceForClosing(i_face)
+        return self.hybrid_shape_loft.SetStartFaceForClosing(i_face.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1437,10 +1447,10 @@ class HybridShapeLoft(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_start_section_tangent(self, i_tangent_section=None):
+    def set_start_section_tangent(self, i_tangent_section):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetStartSectionTangent(Reference iTangentSection)
                 | 
                 |     Sets a tangent surface to the start section from the lofted
@@ -1458,7 +1468,7 @@ class HybridShapeLoft(HybridShape):
         :param Reference i_tangent_section:
         :return: None
         """
-        return self.hybrid_shape_loft.SetStartSectionTangent(i_tangent_section)
+        return self.hybrid_shape_loft.SetStartSectionTangent(i_tangent_section.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1476,4 +1486,4 @@ class HybridShapeLoft(HybridShape):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'HybridShapeLoft(name="{ self.name }")'
+        return f'HybridShapeLoft(name="{self.name}")'

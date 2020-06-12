@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -8,15 +8,13 @@
         and thus help debugging in pycatia.
         
 """
-
-
+from pycatia.sketcher_interfaces.geometry2_d import Geometry2D
 
 
 class Point2D(Geometry2D):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -35,10 +33,10 @@ class Point2D(Geometry2D):
         super().__init__(com_object)
         self.point2_d = com_object
 
-    def get_coordinates(self, o_point=None):
+    def get_coordinates(self, o_point):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetCoordinates(CATSafeArrayVariant oPoint)
                 | 
                 |     Returns the coordinates of the point
@@ -70,10 +68,10 @@ class Point2D(Geometry2D):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_data(self, i_x=None, i_y=None):
+    def set_data(self, i_x, i_y):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetData(double iX,
                 | double iY)
                 | 
@@ -93,4 +91,4 @@ class Point2D(Geometry2D):
         return self.point2_d.SetData(i_x, i_y)
 
     def __repr__(self):
-        return f'Point2D(name="{ self.name }")'
+        return f'Point2D(name="{self.name}")'

@@ -4,17 +4,23 @@
 pycatia
 =======
 
+alpha software
+--------------
+
 This is alpha software. All the test cases and examples work but there will be many
-failures outside of the test framework. The CATIA com interface is huge and I'm
+issues outside of the test framework. The CATIA com interface is huge and I'm
 currently just attacking the items I think will be most useful. The framework is in
 place for others to contribute so if you know CATIA and python please contribute. Bonus
 points for adding tests too.
+
+
+Why was it made?
+----------------
 
 pycatia was primarily created to access the CATIA API Measurable
 object and it's methods without the need of visual basic / CATScripts.
 There is further functionaliy available which can be seen by looking at
 the examples provided and reading the API at pycatia.readthedocs.io_.
-
 
 Some of the methods can be accessed simply using the pywin32 module but further 
 access to methods such as GetCOG do not seem to be accessible using pure python.
@@ -32,7 +38,7 @@ Requirements
 ------------
 
 * python >= 3.6 
-* CATIA V5
+* **CATIA V5**
 * see requirements.txt
 
 Installation

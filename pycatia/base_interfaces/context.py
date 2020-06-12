@@ -20,7 +20,7 @@ class CATIADocHandler:
     :Example - Open a CATPart:
 
         >>> from pycatia.base_interfaces.context import CATIADocHandler
-        >>> catia_part = 'tests\\CF_catia_measurable_part.CATPart'
+        >>> catia_part = 'tests//CF_catia_measurable_part.CATPart'
         >>> with CATIADocHandler(catia_part) as handler:
         >>>     # create the documents object.
         >>>     documents = handler.documents

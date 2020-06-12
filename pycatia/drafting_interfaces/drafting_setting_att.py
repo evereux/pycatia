@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -16,7 +16,7 @@ class DraftingSettingAtt(SettingController):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -38,7 +38,7 @@ class DraftingSettingAtt(SettingController):
     def create_new_sheet_from(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CreateNewSheetFrom() As CatDrwNewSheetFrom
                 | 
                 |     Returns the CreateNewSheetFrom parameter.
@@ -60,7 +60,7 @@ class DraftingSettingAtt(SettingController):
     def display_reset_button(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DisplayResetButton() As boolean
                 | 
                 |     Returns the DisplayResetButton parameter.
@@ -82,7 +82,7 @@ class DraftingSettingAtt(SettingController):
     def lock_user_default(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property LockUserDefault() As boolean
                 | 
                 |     Returns the LockUserDefault parameter.
@@ -104,7 +104,7 @@ class DraftingSettingAtt(SettingController):
     def prevent_background_access(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property PreventBackgroundAccess() As boolean
                 | 
                 |     Returns the PreventBackgroundAccess parameter.
@@ -126,7 +126,7 @@ class DraftingSettingAtt(SettingController):
     def prevent_dim_driving3_d_cstr(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property PreventDimDriving3DCstr() As boolean
                 | 
                 |     Returns the PreventDimDriving3DCstr parameter.
@@ -148,7 +148,7 @@ class DraftingSettingAtt(SettingController):
     def prevent_file_new(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property PreventFileNew() As boolean
                 | 
                 |     Returns the PreventFileNew parameter.
@@ -170,7 +170,7 @@ class DraftingSettingAtt(SettingController):
     def prevent_gen_view_style(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property PreventGenViewStyle() As boolean
                 | 
                 |     Returns the PreventGenViewStyle parameter.
@@ -192,7 +192,7 @@ class DraftingSettingAtt(SettingController):
     def prevent_set_as_default(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property PreventSetAsDefault() As boolean
                 | 
                 |     Returns the PreventSetAsDefault parameter.
@@ -214,7 +214,7 @@ class DraftingSettingAtt(SettingController):
     def prevent_switch_standard(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property PreventSwitchStandard() As boolean
                 | 
                 |     Returns the PreventSwitchStandard parameter.
@@ -236,7 +236,7 @@ class DraftingSettingAtt(SettingController):
     def prevent_true_dimension_creation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property PreventTrueDimensionCreation() As boolean
                 | 
                 |     Returns the PreventTrueDimensionCreation parameter.
@@ -258,7 +258,7 @@ class DraftingSettingAtt(SettingController):
     def prevent_update_standard(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property PreventUpdateStandard() As boolean
                 | 
                 |     Returns the PreventUpdateStandard parameter.
@@ -280,7 +280,7 @@ class DraftingSettingAtt(SettingController):
     def prevent_view_geom_upgrade(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property PreventViewGeomUpgrade() As boolean
                 | 
                 |     Returns the PreventViewGeomUpgrade parameter.
@@ -302,7 +302,7 @@ class DraftingSettingAtt(SettingController):
     def use_style_create_objects(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property UseStyleCreateObjects() As boolean
                 | 
                 |     Returns the UseStyleCreateObjects parameter.
@@ -320,10 +320,10 @@ class DraftingSettingAtt(SettingController):
 
         self.drafting_setting_att.UseStyleCreateObjects = value
 
-    def get_create_new_sheet_from_info(self, io_admin_level=None, io_locked=None):
+    def get_create_new_sheet_from_info(self, io_admin_level, io_locked):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetCreateNewSheetFromInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -350,14 +350,14 @@ class DraftingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: None
+        :return: bool
         """
         return self.drafting_setting_att.GetCreateNewSheetFromInfo(io_admin_level, io_locked)
 
-    def get_display_reset_button_info(self, io_admin_level=None, io_locked=None):
+    def get_display_reset_button_info(self, io_admin_level, io_locked):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetDisplayResetButtonInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -384,14 +384,14 @@ class DraftingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: None
+        :return: bool
         """
         return self.drafting_setting_att.GetDisplayResetButtonInfo(io_admin_level, io_locked)
 
-    def get_lock_user_default_info(self, io_admin_level=None, io_locked=None):
+    def get_lock_user_default_info(self, io_admin_level, io_locked):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetLockUserDefaultInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -418,14 +418,14 @@ class DraftingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: None
+        :return: bool
         """
         return self.drafting_setting_att.GetLockUserDefaultInfo(io_admin_level, io_locked)
 
-    def get_prevent_background_access_info(self, io_admin_level=None, io_locked=None):
+    def get_prevent_background_access_info(self, io_admin_level, io_locked):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetPreventBackgroundAccessInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -452,14 +452,14 @@ class DraftingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: None
+        :return: bool
         """
         return self.drafting_setting_att.GetPreventBackgroundAccessInfo(io_admin_level, io_locked)
 
-    def get_prevent_dim_driving3_d_cstr_info(self, io_admin_level=None, io_locked=None):
+    def get_prevent_dim_driving3_d_cstr_info(self, io_admin_level, io_locked):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetPreventDimDriving3DCstrInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -486,14 +486,14 @@ class DraftingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: None
+        :return: bool
         """
         return self.drafting_setting_att.GetPreventDimDriving3DCstrInfo(io_admin_level, io_locked)
 
-    def get_prevent_file_new_info(self, io_admin_level=None, io_locked=None, o_modified=None):
+    def get_prevent_file_new_info(self, io_admin_level, io_locked, o_modified):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetPreventFileNewInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked,
                 | boolean oModified)
@@ -541,10 +541,10 @@ class DraftingSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_prevent_gen_view_style_info(self, io_admin_level=None, io_locked=None):
+    def get_prevent_gen_view_style_info(self, io_admin_level, io_locked):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetPreventGenViewStyleInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -571,14 +571,14 @@ class DraftingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: None
+        :return: bool
         """
         return self.drafting_setting_att.GetPreventGenViewStyleInfo(io_admin_level, io_locked)
 
-    def get_prevent_set_as_default_info(self, io_admin_level=None, io_locked=None):
+    def get_prevent_set_as_default_info(self, io_admin_level, io_locked):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetPreventSetAsDefaultInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -605,14 +605,14 @@ class DraftingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: None
+        :return: bool
         """
         return self.drafting_setting_att.GetPreventSetAsDefaultInfo(io_admin_level, io_locked)
 
-    def get_prevent_switch_standard_info(self, io_admin_level=None, io_locked=None):
+    def get_prevent_switch_standard_info(self, io_admin_level, io_locked):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetPreventSwitchStandardInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -639,14 +639,14 @@ class DraftingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: None
+        :return: bool
         """
         return self.drafting_setting_att.GetPreventSwitchStandardInfo(io_admin_level, io_locked)
 
-    def get_prevent_true_dimension_creation_info(self, io_admin_level=None, io_locked=None):
+    def get_prevent_true_dimension_creation_info(self, io_admin_level, io_locked):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetPreventTrueDimensionCreationInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -674,14 +674,14 @@ class DraftingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: None
+        :return: bool
         """
         return self.drafting_setting_att.GetPreventTrueDimensionCreationInfo(io_admin_level, io_locked)
 
-    def get_prevent_update_standard_info(self, io_admin_level=None, io_locked=None):
+    def get_prevent_update_standard_info(self, io_admin_level, io_locked):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetPreventUpdateStandardInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -708,14 +708,14 @@ class DraftingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: None
+        :return: bool
         """
         return self.drafting_setting_att.GetPreventUpdateStandardInfo(io_admin_level, io_locked)
 
-    def get_prevent_view_geom_upgrade_info(self, io_admin_level=None, io_locked=None):
+    def get_prevent_view_geom_upgrade_info(self, io_admin_level, io_locked):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetPreventViewGeomUpgradeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -742,14 +742,14 @@ class DraftingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: None
+        :return: bool
         """
         return self.drafting_setting_att.GetPreventViewGeomUpgradeInfo(io_admin_level, io_locked)
 
-    def get_use_style_create_objects_info(self, io_admin_level=None, io_locked=None):
+    def get_use_style_create_objects_info(self, io_admin_level, io_locked):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetUseStyleCreateObjectsInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -776,14 +776,14 @@ class DraftingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: None
+        :return: bool
         """
         return self.drafting_setting_att.GetUseStyleCreateObjectsInfo(io_admin_level, io_locked)
 
-    def set_create_new_sheet_from_lock(self, i_locked=None):
+    def set_create_new_sheet_from_lock(self, i_locked):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetCreateNewSheetFromLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the CreateNewSheetFrom parameter.
@@ -819,10 +819,10 @@ class DraftingSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_display_reset_button_lock(self, i_locked=None):
+    def set_display_reset_button_lock(self, i_locked):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetDisplayResetButtonLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the DisplayResetButton parameter.
@@ -858,10 +858,10 @@ class DraftingSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_lock_user_default_lock(self, i_locked=None):
+    def set_lock_user_default_lock(self, i_locked):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetLockUserDefaultLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the LockUserDefault parameter.
@@ -897,10 +897,10 @@ class DraftingSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_prevent_background_access_lock(self, i_locked=None):
+    def set_prevent_background_access_lock(self, i_locked):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetPreventBackgroundAccessLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PreventBackgroundAccess parameter.
@@ -936,10 +936,10 @@ class DraftingSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_prevent_dim_driving3_d_cstr_lock(self, i_locked=None):
+    def set_prevent_dim_driving3_d_cstr_lock(self, i_locked):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetPreventDimDriving3DCstrLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PreventDimDriving3DCstr parameter.
@@ -975,10 +975,10 @@ class DraftingSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_prevent_file_new_lock(self, i_locked=None):
+    def set_prevent_file_new_lock(self, i_locked):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetPreventFileNewLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PreventFileNew parameter.
@@ -1014,10 +1014,10 @@ class DraftingSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_prevent_gen_view_style_lock(self, i_locked=None):
+    def set_prevent_gen_view_style_lock(self, i_locked):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetPreventGenViewStyleLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PreventGenViewStyle parameter.
@@ -1053,10 +1053,10 @@ class DraftingSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_prevent_set_as_default_lock(self, i_locked=None):
+    def set_prevent_set_as_default_lock(self, i_locked):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetPreventSetAsDefaultLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PreventSetAsDefault parameter.
@@ -1092,10 +1092,10 @@ class DraftingSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_prevent_switch_standard_lock(self, i_locked=None):
+    def set_prevent_switch_standard_lock(self, i_locked):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetPreventSwitchStandardLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PreventSwitchStandard parameter.
@@ -1131,10 +1131,10 @@ class DraftingSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_prevent_true_dimension_creation_lock(self, i_locked=None):
+    def set_prevent_true_dimension_creation_lock(self, i_locked):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetPreventTrueDimensionCreationLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PreventTrueDimensionCreation
@@ -1171,10 +1171,10 @@ class DraftingSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_prevent_update_standard_lock(self, i_locked=None):
+    def set_prevent_update_standard_lock(self, i_locked):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetPreventUpdateStandardLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PreventUpdateStandard parameter.
@@ -1210,10 +1210,10 @@ class DraftingSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_prevent_view_geom_upgrade_lock(self, i_locked=None):
+    def set_prevent_view_geom_upgrade_lock(self, i_locked):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetPreventViewGeomUpgradeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PreventViewGeomUpgrade parameter.
@@ -1249,10 +1249,10 @@ class DraftingSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_use_style_create_objects_lock(self, i_locked=None):
+    def set_use_style_create_objects_lock(self, i_locked):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetUseStyleCreateObjectsLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the UseStyleCreateObjects parameter.

@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -16,7 +16,7 @@ from pycatia.system_interfaces.collection import Collection
 class DrawingLeaders(Collection):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -30,15 +30,14 @@ class DrawingLeaders(Collection):
     
     """
 
-    def __init__(self, com_object, child_object=DrawingLeader):
-        super().__init__(com_object, child_object=DrawingLeader)
+    def __init__(self, com_object):
+        super().__init__(com_object)
         self.drawing_leaders = com_object
-        self.child_object = DrawingLeader
-        
-    def add(self, i_head_point_x=None, i_head_point_y=None):
+
+    def add(self, i_head_point_x, i_head_point_y):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add(double iHeadPointX,
                 | double iHeadPointY) As DrawingLeader
                 | 
@@ -68,14 +67,14 @@ class DrawingLeaders(Collection):
 
         :param float i_head_point_x:
         :param float i_head_point_y:
-        :return: None
+        :return: DrawingLeader
         """
-        return self.drawing_leaders.Add(i_head_point_x, i_head_point_y)
+        return DrawingLeader(self.drawing_leaders.Add(i_head_point_x, i_head_point_y))
 
-    def item(self, i_index=None):
+    def item(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(long iIndex) As DrawingLeader
                 | 
                 |     Returns a drawing leader using its index from the DrawingLeaders
@@ -85,7 +84,7 @@ class DrawingLeaders(Collection):
                 | 
                 |         iIndex
                 |             The index of the drawing leader to retrieve from the collection of
-                |             drawing arows. As a numerics, this index is the rank of the drawing leader in
+                |             drawing arrows. As a numerics, this index is the rank of the drawing leader in
                 |             the collection. The index of the first drawing leader in the collection is 1,
                 |             and the index of the last drawing leader is Count.
                 |             
@@ -107,10 +106,10 @@ class DrawingLeaders(Collection):
         """
         return DrawingLeader(self.drawing_leaders.Item(i_index))
 
-    def remove(self, i_index=None):
+    def remove(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(long iIndex)
                 | 
                 |     Removes a drawing leader from the DrawingLeaders

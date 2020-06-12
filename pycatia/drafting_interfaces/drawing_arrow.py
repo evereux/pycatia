@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -13,10 +13,9 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class DrawingArrow(AnyObject):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -37,7 +36,7 @@ class DrawingArrow(AnyObject):
     def head_symbol(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property HeadSymbol() As CatSymbolType
                 | 
                 |     Returns or sets symbol type of head side.
@@ -65,7 +64,7 @@ class DrawingArrow(AnyObject):
     def head_target(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property HeadTarget() As CATBaseDispatch
                 | 
                 |     Returns or sets target element of head side.
@@ -93,7 +92,7 @@ class DrawingArrow(AnyObject):
     def nb_interruption(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property NbInterruption() As long (Read Only)
                 | 
                 |     Returns the number of interruptions of arrow path.
@@ -113,7 +112,7 @@ class DrawingArrow(AnyObject):
     def nb_point(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property NbPoint() As long (Read Only)
                 | 
                 |     Returns the number of points of arrow path.
@@ -133,7 +132,7 @@ class DrawingArrow(AnyObject):
     def tail_symbol(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TailSymbol() As CatSymbolType
                 | 
                 |     Returns or sets symbol type of tail side.
@@ -161,7 +160,7 @@ class DrawingArrow(AnyObject):
     def tail_target(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TailTarget() As CATBaseDispatch
                 | 
                 |     Returns or sets target element of tail side.
@@ -185,10 +184,10 @@ class DrawingArrow(AnyObject):
 
         self.drawing_arrow.TailTarget = value
 
-    def add_interruption(self, i_first_point_x=None, i_first_point_y=None, i_second_point_x=None, i_second_point_y=None):
+    def add_interruption(self, i_first_point_x, i_first_point_y, i_second_point_x, i_second_point_y):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddInterruption(double iFirstPointX,
                 | double iFirstPointY,
                 | double iSecondPointX,
@@ -224,10 +223,10 @@ class DrawingArrow(AnyObject):
         """
         return self.drawing_arrow.AddInterruption(i_first_point_x, i_first_point_y, i_second_point_x, i_second_point_y)
 
-    def add_point(self, i_num=None, i_x=None, i_y=None):
+    def add_point(self, i_num, i_x, i_y):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddPoint(long iNum,
                 | double iX,
                 | double iY)
@@ -258,10 +257,10 @@ class DrawingArrow(AnyObject):
         """
         return self.drawing_arrow.AddPoint(i_num, i_x, i_y)
 
-    def get_interruptions(self, o_interruptions=None):
+    def get_interruptions(self, o_interruptions):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetInterruptions(CATSafeArrayVariant oInterruptions) As
                 | long
                 | 
@@ -283,12 +282,12 @@ class DrawingArrow(AnyObject):
         :param tuple o_interruptions:
         :return: int
         """
-        return int(self.drawing_arrow.GetInterruptions(o_interruptions))
+        return self.drawing_arrow.GetInterruptions(o_interruptions)
 
-    def get_point(self, i_num=None, o_x=None, o_y=None):
+    def get_point(self, i_num, o_x, o_y):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetPoint(long iNum,
                 | double oX,
                 | double oY)
@@ -316,10 +315,10 @@ class DrawingArrow(AnyObject):
         """
         return self.drawing_arrow.GetPoint(i_num, o_x, o_y)
 
-    def get_points(self, o_points=None):
+    def get_points(self, o_points):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetPoints(CATSafeArrayVariant oPoints) As long
                 | 
                 |     Get arrow path.
@@ -340,12 +339,12 @@ class DrawingArrow(AnyObject):
         :param tuple o_points:
         :return: int
         """
-        return int(self.drawing_arrow.GetPoints(o_points))
+        return self.drawing_arrow.GetPoints(o_points)
 
-    def modify_point(self, i_num=None, i_x=None, i_y=None):
+    def modify_point(self, i_num, i_x, i_y):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub ModifyPoint(long iNum,
                 | double iX,
                 | double iY)
@@ -361,7 +360,7 @@ class DrawingArrow(AnyObject):
                 |         iY
                 |             Y coordinates of new point. 
                 |         Example:
-                |             This example modifys a point to MyArrow.
+                |             This example modifies a point to MyArrow.
                 | 
                 |              iNum = 1
                 |              iX = -10.
@@ -375,10 +374,10 @@ class DrawingArrow(AnyObject):
         """
         return self.drawing_arrow.ModifyPoint(i_num, i_x, i_y)
 
-    def remove_interruption(self, i_num=None):
+    def remove_interruption(self, i_num):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveInterruption(long iNum)
                 | 
                 |     Remove an interruption to an arrow.
@@ -400,10 +399,10 @@ class DrawingArrow(AnyObject):
         """
         return self.drawing_arrow.RemoveInterruption(i_num)
 
-    def remove_point(self, i_num=None):
+    def remove_point(self, i_num):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemovePoint(long iNum)
                 | 
                 |     Remove a point from an arrow.
@@ -424,4 +423,4 @@ class DrawingArrow(AnyObject):
         return self.drawing_arrow.RemovePoint(i_num)
 
     def __repr__(self):
-        return f'DrawingArrow(name="{ self.name }")'
+        return f'DrawingArrow(name="{self.name}")'

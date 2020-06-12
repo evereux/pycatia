@@ -25,7 +25,8 @@ class HybridBody(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.hybridbody = com_object
+        self.hybrid_body = com_object
+        self.com_object = com_object
 
     @property
     def bodies(self):
@@ -42,7 +43,7 @@ class HybridBody(AnyObject):
 
         :return: Body()
         """
-        return bodies.Bodies(self.hybridbody.Bodies)
+        return bodies.Bodies(self.hybrid_body.Bodies)
 
     @property
     def geometric_elements(self):
@@ -65,7 +66,7 @@ class HybridBody(AnyObject):
 
         :return: GeometricElements()
         """
-        return GeometricElements(self.hybridbody.GeometricElements)
+        return GeometricElements(self.hybrid_body.GeometricElements)
 
     @property
     def hybrid_bodies(self):
@@ -85,7 +86,7 @@ class HybridBody(AnyObject):
 
         :return: HybridBodies()
         """
-        return hybridbodies.HybridBodies(self.hybridbody.HybridBodies)
+        return hybridbodies.HybridBodies(self.hybrid_body.HybridBodies)
 
     @property
     def hybrid_shapes(self):
@@ -108,7 +109,7 @@ class HybridBody(AnyObject):
 
         :return: HybridShapes()
         """
-        return HybridShapes(self.hybridbody.HybridShapes)
+        return HybridShapes(self.hybrid_body.HybridShapes)
 
     @property
     def hybrid_sketches(self):
@@ -126,7 +127,7 @@ class HybridBody(AnyObject):
 
         :return: Sketches()
         """
-        return Sketches(self.hybridbody.HybridSketches)
+        return Sketches(self.hybrid_body.HybridSketches)
 
     def append_hybrid_shape(self, i_hybrid_shape):
         """
@@ -149,7 +150,7 @@ class HybridBody(AnyObject):
                 | 
                 | hybridBody.AppendHybridShape (hybridShape)
         """
-        self.hybridbody.AppendHybridShape(i_hybrid_shape.com_object)
+        self.hybrid_body.AppendHybridShape(i_hybrid_shape.com_object)
 
     def __repr__(self):
         return f'HybridBody(name="{self.name}")'

@@ -151,7 +151,7 @@ class GlobalStatisticsSettingAtt(SettingController):
 
         self.global_statistics_setting_att.MaxSizePerFile = value
 
-    def get_thematics_parameter_info(self, admin_level=None, o_locked=None):
+    def get_thematics_parameter_info(self, admin_level, o_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -168,7 +168,7 @@ class GlobalStatisticsSettingAtt(SettingController):
         """
         return self.global_statistics_setting_att.GetThematicsParameterInfo(admin_level, o_locked)
 
-    def set_thematics_parameter_lock(self, i_locked=None):
+    def set_thematics_parameter_lock(self, i_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))

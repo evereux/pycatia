@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -20,7 +20,7 @@ class HybridShapePointOnCurve(Point):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -58,7 +58,7 @@ class HybridShapePointOnCurve(Point):
     def curve(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Curve() As Reference
                 | 
                 |     Returns or sets the curve onto which the point is or should be
@@ -93,7 +93,7 @@ class HybridShapePointOnCurve(Point):
     def direction(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Direction() As HybridShapeDirection
                 | 
                 |     Returns or sets the direction along which the point is or should be
@@ -123,7 +123,7 @@ class HybridShapePointOnCurve(Point):
     def distance_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DistanceType() As long
                 | 
                 |     Returns or sets the distance type.
@@ -163,7 +163,7 @@ class HybridShapePointOnCurve(Point):
     def offset(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Offset() As Length (Read Only)
                 | 
                 |     Returns the distance to the reference point.
@@ -191,7 +191,7 @@ class HybridShapePointOnCurve(Point):
     def on_curve_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property OnCurveType() As long
                 | 
                 |     Returns or sets the OnCurve type for created point on
@@ -215,7 +215,7 @@ class HybridShapePointOnCurve(Point):
     def orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Orientation() As long
                 | 
                 |     Returns or sets the curve orientation.
@@ -254,7 +254,7 @@ class HybridShapePointOnCurve(Point):
     def point(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Point() As Reference
                 | 
                 |     Returns or sets the reference point.
@@ -296,7 +296,7 @@ class HybridShapePointOnCurve(Point):
     def ratio(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Ratio() As RealParam (Read Only)
                 | 
                 |     Returns the distance ratio to the reference point.
@@ -325,7 +325,7 @@ class HybridShapePointOnCurve(Point):
     def type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Type() As long (Read Only)
                 | 
                 |     Returns the distance stored value type.

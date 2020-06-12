@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -14,10 +14,9 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeThickness(HybridShape):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -45,12 +44,14 @@ class HybridShapeThickness(HybridShape):
     def orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Orientation() As long
                 | 
                 |     Returns or sets the orientation.
                 |     Role:
-                |     Orientation = 1 means that the first thickness is measured with the normal of the support Orientation = -1 means that the first thickness is measured with the inverted normal of the support
+                |     Orientation
+                |         = 1 means that the first thickness is measured with the normal of the support Orientation
+                |         = -1 means that the first thickness is measured with the inverted normal of the support
                 | 
                 |     Example:
                 |         This example retrieves in Orient the orientation for the Thickness1
@@ -76,7 +77,7 @@ class HybridShapeThickness(HybridShape):
     def thickness1(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Thickness1() As double
                 | 
                 |     Returns or sets the first thickness value in mm.
@@ -104,7 +105,7 @@ class HybridShapeThickness(HybridShape):
     def thickness1_value(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Thickness1Value() As Length (Read Only)
                 | 
                 |     Returns the first thickness value.
@@ -125,7 +126,7 @@ class HybridShapeThickness(HybridShape):
     def thickness2(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Thickness2() As double
                 | 
                 |     Returns or sets the second thickness value in mm.
@@ -153,7 +154,7 @@ class HybridShapeThickness(HybridShape):
     def thickness2_value(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Thickness2Value() As Length (Read Only)
                 | 
                 |     Returns the second thickness value.
@@ -171,4 +172,4 @@ class HybridShapeThickness(HybridShape):
         return Length(self.hybrid_shape_thickness.Thickness2Value)
 
     def __repr__(self):
-        return f'HybridShapeThickness(name="{ self.name }")'
+        return f'HybridShapeThickness(name="{self.name}")'

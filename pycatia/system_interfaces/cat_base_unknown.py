@@ -12,7 +12,7 @@
 from pycatia.system_interfaces.i_dispatch import IDispatch
 
 
-class CatBaseUnknown(IDispatch):
+class CATBaseUnknown(IDispatch):
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
@@ -34,7 +34,7 @@ class CatBaseUnknown(IDispatch):
     """
 
     def __init__(self):
-        pass
+        super().__init__()
 
     def __repr__(self):
-        return f'CatBaseUnknown(name="{self.name}")'
+        return f'CatBaseUnknown()'

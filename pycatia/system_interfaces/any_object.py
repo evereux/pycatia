@@ -29,7 +29,6 @@ class AnyObject:
     """
 
     def __init__(self, com_object):
-        self.any_object = com_object
         self.com_object = com_object
 
     @property
@@ -64,7 +63,7 @@ class AnyObject:
 
         :return: Application
         """
-        return self.any_object.Application
+        return self.com_object.Application
 
     @property
     def name(self):
@@ -95,7 +94,7 @@ class AnyObject:
         :return: str
         """
 
-        return self.any_object.Name
+        return self.com_object.Name
 
     @name.setter
     def name(self, value):
@@ -103,7 +102,7 @@ class AnyObject:
         :param str value:
         """
 
-        self.any_object.Name = value
+        self.com_object.Name = value
 
     @property
     def parent(self):
@@ -130,9 +129,9 @@ class AnyObject:
         :return: AnyObject
         """
 
-        return AnyObject(self.any_object.Parent)
+        return AnyObject(self.com_object.Parent)
 
-    def get_item(self, id_name=None):
+    def get_item(self, id_name):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -153,7 +152,7 @@ class AnyObject:
         :param str id_name:
         :return: AnyObject
         """
-        return AnyObject(self.any_object.GetItem(id_name))
+        return AnyObject(self.com_object.GetItem(id_name))
 
     def __repr__(self):
         return f'AnyObject(name="{self.name}")'

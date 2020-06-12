@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -18,7 +18,7 @@ class HybridShapeCombine(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -49,7 +49,7 @@ class HybridShapeCombine(HybridShape):
     def direction1(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Direction1() As HybridShapeDirection
                 | 
                 |     Returns or sets the first direction used to create the combined curve. The
@@ -82,7 +82,7 @@ class HybridShapeCombine(HybridShape):
     def direction2(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Direction2() As HybridShapeDirection
                 | 
                 |     Returns or sets the second direction used to create the combined
@@ -115,7 +115,7 @@ class HybridShapeCombine(HybridShape):
     def elem1(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Elem1() As Reference
                 | 
                 |     Returns or sets the first curve used to create the combined
@@ -149,7 +149,7 @@ class HybridShapeCombine(HybridShape):
     def elem2(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Elem2() As Reference
                 | 
                 |     Returns or sets the second curve used to create the combined
@@ -184,7 +184,7 @@ class HybridShapeCombine(HybridShape):
     def nearest_solution(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property NearestSolution() As long
                 | 
                 |     Returns or sets whether the combined curve is or should be created as the
@@ -222,7 +222,7 @@ class HybridShapeCombine(HybridShape):
     def solution_type_combine(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SolutionTypeCombine() As long
                 | 
                 |     Returns or sets whether the curves that create the combined curve are or

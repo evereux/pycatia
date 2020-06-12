@@ -270,7 +270,7 @@ class Application(AnyObject):
                 | the CATIA application's executable file full name.
                 | ApplicationFullName = CATIA.FullName
                 | The returned value is like this:
-                | \\lisa\\cxr1arel\\bsf\\alpha_a\\code\\bin\\CNEXT.exe
+                | //lisa//cxr1arel//bsf//alpha_a//code//bin//CNEXT.exe
 
 
         :return: str
@@ -422,7 +422,7 @@ class Application(AnyObject):
                 | application executable files are located.
                 | ApplicationPath = CATIA.Path
                 | The returned value is like this:
-                | \\lisa\\cxr1arel\\bsf\\alpha_a\\code\\bin
+                | //lisa//cxr1arel//bsf//alpha_a//code//bin
 
         :return: Path()
         """
@@ -860,7 +860,7 @@ class Application(AnyObject):
                 | Examples:
                 | This example asks the user to select a text file and prints the path of the selected
                 | file.
-                | filepath = CATIA.FileSelectionBox("Select a text file", "\*.txt", CatFileSelectionModeOpen)
+                | filepath = CATIA.FileSelectionBox("Select a text file", "/*.txt", CatFileSelectionModeOpen)
                 | CATIA.SystemServices.Print "The selected file is " & filepath
 
         :param i_title:
