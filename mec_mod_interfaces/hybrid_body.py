@@ -2,9 +2,7 @@
 # module initially auto generated using V5Automation.chm from CATIA V5 R25
 
 from pycatia.system_interfaces.any_object import AnyObject
-import pycatia.mec_mod_interfaces.bodies as bodies
 from .geometric_elements import GeometricElements
-import pycatia.mec_mod_interfaces.hybrid_bodies as hybridbodies
 from .hybrid_shapes import HybridShapes
 from .sketches import Sketches
 
@@ -43,7 +41,8 @@ class HybridBody(AnyObject):
 
         :return: Body()
         """
-        return bodies.Bodies(self.hybrid_body.Bodies)
+        from pycatia.mec_mod_interfaces.bodies import Bodies
+        return Bodies(self.hybrid_body.Bodies)
 
     @property
     def geometric_elements(self):
@@ -86,7 +85,8 @@ class HybridBody(AnyObject):
 
         :return: HybridBodies()
         """
-        return hybridbodies.HybridBodies(self.hybrid_body.HybridBodies)
+        from pycatia.mec_mod_interfaces.hybrid_bodies import HybridBodies
+        return HybridBodies(self.hybrid_body.HybridBodies)
 
     @property
     def hybrid_shapes(self):
