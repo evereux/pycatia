@@ -3,7 +3,7 @@ API INDEX
 
 
 .. toctree::
-    :maxdepth: 0
+    :maxdepth: 2
     :caption: Contents:
 
     api_pycatia
@@ -21,5 +21,4 @@ API INDEX
     api_sketcher_interfaces
     api_space_analyses_interfaces
     api_system_interfaces
-    api_temp
     api_workbenches
