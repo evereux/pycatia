@@ -24,8 +24,8 @@ class Loop(KnowledgeActivateObject):
                 |             System.CATBaseDispatch
                 |                 System.AnyObject
                 |                     KnowledgeInterfaces.KnowledgeObject
-                |                        
-KnowledgeInterfaces.KnowledgeActivateObject                |                             Loop
+                |                        KnowledgeInterfaces.KnowledgeActivateObject
+                |                             Loop
                 | 
                 | The interface to access a CATIALoop.
                 | 

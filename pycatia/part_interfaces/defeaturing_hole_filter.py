@@ -24,8 +24,8 @@ class DefeaturingHoleFilter(DefeaturingFilterWithRange):
                 |             System.CATBaseDispatch
                 |                 System.AnyObject
                 |                     PartInterfaces.DefeaturingFilter
-                |                        
-PartInterfaces.DefeaturingFilterWithRange                |                             DefeaturingHoleFilter
+                |                        PartInterfaces.DefeaturingFilterWithRange
+                |                             DefeaturingHoleFilter
                 | 
                 | Represents the defeaturing hole filter.
                 | 

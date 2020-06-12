@@ -24,8 +24,8 @@ class Law(Relation):
                 |             System.CATBaseDispatch
                 |                 System.AnyObject
                 |                     KnowledgeInterfaces.KnowledgeObject
-                |                        
-KnowledgeInterfaces.KnowledgeActivateObject                |                             KnowledgeInterfaces.Relation
+                |                        KnowledgeInterfaces.KnowledgeActivateObject
+                |                             KnowledgeInterfaces.Relation
                 |                                 Law
                 | 
                 | Represents the Law object.

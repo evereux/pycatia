@@ -24,8 +24,8 @@ class Relation(KnowledgeActivateObject):
                 |             System.CATBaseDispatch
                 |                 System.AnyObject
                 |                     KnowledgeInterfaces.KnowledgeObject
-                |                        
-KnowledgeInterfaces.KnowledgeActivateObject                |                             Relation
+                |                        KnowledgeInterfaces.KnowledgeActivateObject
+                |                             Relation
                 | 
                 | Represents the relation object.
                 | It is an abstract object which is not intended to be created as such, but from
