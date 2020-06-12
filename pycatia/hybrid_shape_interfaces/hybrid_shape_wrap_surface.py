@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapeWrapSurface(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -52,7 +52,7 @@ class HybridShapeWrapSurface(HybridShape):
     def deformation_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DeformationMode() As long
                 | 
                 |     Returns or sets whether the wrap surface is or should be created as
@@ -86,7 +86,7 @@ class HybridShapeWrapSurface(HybridShape):
     def reference_surface(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ReferenceSurface() As Reference
                 | 
                 |     Returns or sets the reference surface of the WrapSurface. 
@@ -114,7 +114,7 @@ class HybridShapeWrapSurface(HybridShape):
     def surface(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Surface() As Reference
                 | 
                 |     Returns or sets the reference surface to deform of the WrapSurface.
@@ -143,7 +143,7 @@ class HybridShapeWrapSurface(HybridShape):
     def target_surface(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TargetSurface() As Reference
                 | 
                 |     Returns or sets the target surface of the WrapSurface. 

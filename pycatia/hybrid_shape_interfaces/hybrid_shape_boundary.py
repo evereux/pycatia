@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -16,7 +16,7 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeBoundary(HybridShape):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -50,7 +50,7 @@ class HybridShapeBoundary(HybridShape):
     def from_py(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property From() As Reference
                 | 
                 |     Removes or sets the ending limit(i.e Limit2) of the boundary
@@ -72,7 +72,7 @@ class HybridShapeBoundary(HybridShape):
     def from_orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FromOrientation() As long
                 | 
                 |     Gets or sets the Ending Limit Orientation (i.e same or inverse)
@@ -94,7 +94,7 @@ class HybridShapeBoundary(HybridShape):
     def initial_element(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property InitialElement() As Reference
                 | 
                 |     Returns or sets the element used to initialize the boundary
@@ -126,7 +126,7 @@ class HybridShapeBoundary(HybridShape):
     def propagation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Propagation() As long
                 | 
                 |     Returns or sets the boundary propagation.
@@ -155,7 +155,7 @@ class HybridShapeBoundary(HybridShape):
     def support(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets the support surface around which the boundary is
@@ -186,7 +186,7 @@ class HybridShapeBoundary(HybridShape):
     def to(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property To() As Reference
                 | 
                 |     Removes or sets the starting limit(i.e Limit1) of the boundary
@@ -208,7 +208,7 @@ class HybridShapeBoundary(HybridShape):
     def to_orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ToOrientation() As long
                 | 
                 |     Gets or sets the Starting Limit Orientation (i.e same or inverse)

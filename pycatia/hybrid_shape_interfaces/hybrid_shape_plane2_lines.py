@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -14,10 +14,9 @@ from pycatia.in_interfaces.reference import Reference
 
 
 class HybridShapePlane2Lines(Plane):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -42,7 +41,7 @@ class HybridShapePlane2Lines(Plane):
     def first(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property First() As Reference
                 | 
                 |     Role: Get the first line.
@@ -77,10 +76,11 @@ class HybridShapePlane2Lines(Plane):
     def forbid_non_coplanar_lines(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ForbidNonCoplanarLines(boolean iCoplanarLines)
                 | 
-                |     if ForbidNonCoplanarLines = TRUE, both lines have to be on the same plane. if ForbidNonCoplanarLines = FALSE, both lines can be non coplanar.
+                |     if ForbidNonCoplanarLines = TRUE, both lines have to be on the same plane.
+                |     if ForbidNonCoplanarLines = FALSE, both lines can be non coplanar.
 
         :return: False
         """
@@ -99,7 +99,7 @@ class HybridShapePlane2Lines(Plane):
     def second(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Second() As Reference
                 | 
                 |     Role: Get the second line.
@@ -131,4 +131,4 @@ class HybridShapePlane2Lines(Plane):
         self.hybrid_shape_plane2_lines.Second = value
 
     def __repr__(self):
-        return f'HybridShapePlane2Lines(name="{ self.name }")'
+        return f'HybridShapePlane2Lines(name="{self.name}")'

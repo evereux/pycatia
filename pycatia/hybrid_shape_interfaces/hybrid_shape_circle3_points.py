@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapeCircle3Points(HybridShapeCircle):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -50,7 +50,7 @@ class HybridShapeCircle3Points(HybridShapeCircle):
     def element1(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Element1() As Reference
                 | 
                 |     Returns or sets the circle first passing point.
@@ -82,7 +82,7 @@ class HybridShapeCircle3Points(HybridShapeCircle):
     def element2(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Element2() As Reference
                 | 
                 |     Returns or sets the circle second passing point.
@@ -111,7 +111,7 @@ class HybridShapeCircle3Points(HybridShapeCircle):
     def element3(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Element3() As Reference
                 | 
                 |     Returns or sets the circle third passing point.
@@ -143,7 +143,7 @@ class HybridShapeCircle3Points(HybridShapeCircle):
     def support(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets the circle support surface.
@@ -172,7 +172,7 @@ class HybridShapeCircle3Points(HybridShapeCircle):
     def remove_support(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveSupport()
                 | 
                 |     Removes the support surface.

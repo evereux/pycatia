@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -16,10 +16,9 @@ from pycatia.knowledge_interfaces.length import Length
 
 
 class HybridShapeSweepConic(HybridShapeSweep):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -46,7 +45,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
     def canonical_detection(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CanonicalDetection() As long
                 | 
                 |     Returns or sets whether canonical surfaces of the swept surface are
@@ -72,7 +71,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
     def fifth_guide_crv(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FifthGuideCrv() As Reference
                 | 
                 |     Returns or sets the fifth guide curve.
@@ -94,7 +93,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
     def first_guide_crv(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FirstGuideCrv() As Reference
                 | 
                 |     Returns or sets the first guide curve.
@@ -116,7 +115,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
     def fourth_guide_crv(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FourthGuideCrv() As Reference
                 | 
                 |     Returns or sets the fourth guide curve.
@@ -138,7 +137,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
     def guide_deviation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property GuideDeviation() As Length (Read Only)
                 | 
                 |     Returns deviation value (length) from guide curves allowed during sweeping
@@ -153,7 +152,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
     def guide_deviation_activity(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property GuideDeviationActivity() As boolean
                 | 
                 |     Returns or sets information whether a deviation from guide curves is
@@ -179,7 +178,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
     def parameter(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Parameter() As double
                 | 
                 |     Returns or sets the parameter for conic sweep operation.
@@ -203,7 +202,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
     def parameter_law(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ParameterLaw() As Reference
                 | 
                 |     Returns or sets the parameter law useful in conic sweep operation.
@@ -225,7 +224,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
     def parameter_law_inversion(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ParameterLawInversion() As boolean
                 | 
                 |     Returns or sets the parameter law inversion flag of conic sweep
@@ -250,7 +249,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
     def parameter_law_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ParameterLawType() As long
                 | 
                 |     Returns or sets the parameter law type in conic sweep operation.
@@ -272,7 +271,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
     def second_guide_crv(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SecondGuideCrv() As Reference
                 | 
                 |     Returns or sets the second guide curve.
@@ -294,7 +293,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
     def smooth_activity(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SmoothActivity() As boolean
                 | 
                 |     Returns or sets information whether sweeping operation is smoothed or
@@ -318,7 +317,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
     def smooth_angle_threshold(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SmoothAngleThreshold() As Angle (Read Only)
                 | 
                 |     Returns angular threshold under which discontinuities .
@@ -334,7 +333,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
     def spine(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Spine() As Reference
                 | 
                 |     Returns or sets the spine (optional) for sweep operation.
@@ -360,7 +359,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
     def third_guide_crv(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ThirdGuideCrv() As Reference
                 | 
                 |     Returns or sets the third guide curve.
@@ -378,10 +377,10 @@ class HybridShapeSweepConic(HybridShapeSweep):
 
         self.hybrid_shape_sweep_conic.ThirdGuideCrv = value
 
-    def get_longitudinal_relimiters(self, op_ia_elem1=None, op_ia_elem2=None):
+    def get_longitudinal_relimiters(self, op_ia_elem1, op_ia_elem2):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetLongitudinalRelimiters(Reference opIAElem1,
                 | Reference opIAElem2)
                 | 
@@ -395,7 +394,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         :param Reference op_ia_elem2:
         :return: None
         """
-        return self.hybrid_shape_sweep_conic.GetLongitudinalRelimiters(op_ia_elem1, op_ia_elem2)
+        return self.hybrid_shape_sweep_conic.GetLongitudinalRelimiters(op_ia_elem1.com_object, op_ia_elem2.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -412,10 +411,10 @@ class HybridShapeSweepConic(HybridShapeSweep):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_nb_guides(self, o_num=None):
+    def get_nb_guides(self, o_num):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetNbGuides(long oNum)
                 | 
                 |     Gets the number of guides.
@@ -426,10 +425,10 @@ class HybridShapeSweepConic(HybridShapeSweep):
         """
         return self.hybrid_shape_sweep_conic.GetNbGuides(o_num)
 
-    def get_parameter_law(self, o_param_start=None, o_param_end=None, o_law_type=None):
+    def get_parameter_law(self, o_param_start, o_param_end, o_law_type):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetParameterLaw(double oParamStart,
                 | double oParamEnd,
                 | long oLawType)
@@ -446,10 +445,10 @@ class HybridShapeSweepConic(HybridShapeSweep):
         """
         return self.hybrid_shape_sweep_conic.GetParameterLaw(o_param_start, o_param_end, o_law_type)
 
-    def get_relimiters(self, op_ia_elem1=None, op_orient1=None, op_ia_elem2=None, op_orient2=None):
+    def get_relimiters(self, op_ia_elem1, op_orient1, op_ia_elem2, op_orient2):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetRelimiters(Reference opIAElem1,
                 | long opOrient1,
                 | Reference opIAElem2,
@@ -478,7 +477,11 @@ class HybridShapeSweepConic(HybridShapeSweep):
         :param int op_orient2:
         :return: None
         """
-        return self.hybrid_shape_sweep_conic.GetRelimiters(op_ia_elem1, op_orient1, op_ia_elem2, op_orient2)
+        return self.hybrid_shape_sweep_conic.GetRelimiters(op_ia_elem1.com_object,
+                                                           op_orient1,
+                                                           op_ia_elem2.com_object,
+                                                           op_orient2
+                                                           )
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -495,10 +498,10 @@ class HybridShapeSweepConic(HybridShapeSweep):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_tangency(self, op_ia_elem=None, op_ia_angle_start=None, op_ia_angle_end=None, o_law_type=None, i_index=None):
+    def get_tangency(self, op_ia_elem, op_ia_angle_start, op_ia_angle_end, o_law_type, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetTangency(Reference opIAElem,
                 | Angle opIAAngleStart,
                 | Angle opIAAngleEnd,
@@ -520,7 +523,12 @@ class HybridShapeSweepConic(HybridShapeSweep):
         :param int i_index:
         :return: None
         """
-        return self.hybrid_shape_sweep_conic.GetTangency(op_ia_elem, op_ia_angle_start, op_ia_angle_end, o_law_type, i_index)
+        return self.hybrid_shape_sweep_conic.GetTangency(op_ia_elem.com_object,
+                                                         op_ia_angle_start.com_object,
+                                                         op_ia_angle_end.com_object,
+                                                         o_law_type,
+                                                         i_index
+                                                         )
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -537,10 +545,10 @@ class HybridShapeSweepConic(HybridShapeSweep):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_tangency_angle_law_inversion(self, i_index=None, o_inversion=None):
+    def get_tangency_angle_law_inversion(self, i_index, o_inversion):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetTangencyAngleLawInversion(long iIndex,
                 | long oInversion)
                 | 
@@ -555,10 +563,10 @@ class HybridShapeSweepConic(HybridShapeSweep):
         """
         return self.hybrid_shape_sweep_conic.GetTangencyAngleLawInversion(i_index, o_inversion)
 
-    def get_tangency_law(self, op_ia_elem=None, op_ia_law=None, i_index=None):
+    def get_tangency_law(self, op_ia_elem, op_ia_law, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetTangencyLaw(Reference opIAElem,
                 | Reference opIALaw,
                 | long iIndex)
@@ -574,7 +582,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         :param int i_index:
         :return: None
         """
-        return self.hybrid_shape_sweep_conic.GetTangencyLaw(op_ia_elem, op_ia_law, i_index)
+        return self.hybrid_shape_sweep_conic.GetTangencyLaw(op_ia_elem.com_object, op_ia_law.com_object, i_index)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -591,10 +599,10 @@ class HybridShapeSweepConic(HybridShapeSweep):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def remove_guide(self, i_index=None):
+    def remove_guide(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveGuide(long iIndex)
                 | 
                 |     Removes a guide curve given its index.
@@ -609,7 +617,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
     def remove_parameter(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveParameter()
                 | 
                 |     Removes conical sweep parameter, whether it is a single value or a law.
@@ -618,10 +626,10 @@ class HybridShapeSweepConic(HybridShapeSweep):
         """
         return self.hybrid_shape_sweep_conic.RemoveParameter()
 
-    def remove_tangency(self, i_index=None):
+    def remove_tangency(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveTangency(long iIndex)
                 | 
                 |     removes tangency surface or curve and its angle given the guide curve
@@ -633,10 +641,10 @@ class HybridShapeSweepConic(HybridShapeSweep):
         """
         return self.hybrid_shape_sweep_conic.RemoveTangency(i_index)
 
-    def set_guide_deviation(self, i_length=None):
+    def set_guide_deviation(self, i_length):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetGuideDeviation(double iLength)
                 | 
                 |     Sets deviation value (length) from guide curves allowed during sweeping
@@ -648,10 +656,10 @@ class HybridShapeSweepConic(HybridShapeSweep):
         """
         return self.hybrid_shape_sweep_conic.SetGuideDeviation(i_length)
 
-    def set_longitudinal_relimiters(self, ip_ia_elem1=None, ip_ia_elem2=None):
+    def set_longitudinal_relimiters(self, ip_ia_elem1, ip_ia_elem2):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetLongitudinalRelimiters(Reference ipIAElem1,
                 | Reference ipIAElem2)
                 | 
@@ -665,7 +673,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         :param Reference ip_ia_elem2:
         :return: None
         """
-        return self.hybrid_shape_sweep_conic.SetLongitudinalRelimiters(ip_ia_elem1, ip_ia_elem2)
+        return self.hybrid_shape_sweep_conic.SetLongitudinalRelimiters(ip_ia_elem1.com_object, ip_ia_elem2.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -682,10 +690,10 @@ class HybridShapeSweepConic(HybridShapeSweep):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_parameter_law(self, i_param_start=None, i_param_end=None, i_law_type=None):
+    def set_parameter_law(self, i_param_start, i_param_end, i_law_type):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetParameterLaw(double iParamStart,
                 | double iParamEnd,
                 | long iLawType)
@@ -703,10 +711,10 @@ class HybridShapeSweepConic(HybridShapeSweep):
         """
         return self.hybrid_shape_sweep_conic.SetParameterLaw(i_param_start, i_param_end, i_law_type)
 
-    def set_relimiters(self, ip_ia_elem1=None, ip_orient1=None, ip_ia_elem2=None, ip_orient2=None):
+    def set_relimiters(self, ip_ia_elem1, ip_orient1, ip_ia_elem2, ip_orient2):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetRelimiters(Reference ipIAElem1,
                 | long ipOrient1,
                 | Reference ipIAElem2,
@@ -735,7 +743,11 @@ class HybridShapeSweepConic(HybridShapeSweep):
         :param int ip_orient2:
         :return: None
         """
-        return self.hybrid_shape_sweep_conic.SetRelimiters(ip_ia_elem1, ip_orient1, ip_ia_elem2, ip_orient2)
+        return self.hybrid_shape_sweep_conic.SetRelimiters(ip_ia_elem1.com_object,
+                                                           ip_orient1,
+                                                           ip_ia_elem2.com_object,
+                                                           ip_orient2
+                                                           )
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -752,10 +764,10 @@ class HybridShapeSweepConic(HybridShapeSweep):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_smooth_angle_threshold(self, i_angle=None):
+    def set_smooth_angle_threshold(self, i_angle):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetSmoothAngleThreshold(double iAngle)
                 | 
                 |     Sets angular threshold under which discontinuities.
@@ -768,10 +780,10 @@ class HybridShapeSweepConic(HybridShapeSweep):
         """
         return self.hybrid_shape_sweep_conic.SetSmoothAngleThreshold(i_angle)
 
-    def set_tangency(self, ip_ia_elem=None, i_angle_start=None, i_angle_end=None, ilaw_type=None, i_index=None):
+    def set_tangency(self, ip_ia_elem, i_angle_start, i_angle_end, ilaw_type, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetTangency(Reference ipIAElem,
                 | double iAngleStart,
                 | double iAngleEnd,
@@ -793,7 +805,12 @@ class HybridShapeSweepConic(HybridShapeSweep):
         :param int i_index:
         :return: None
         """
-        return self.hybrid_shape_sweep_conic.SetTangency(ip_ia_elem, i_angle_start, i_angle_end, ilaw_type, i_index)
+        return self.hybrid_shape_sweep_conic.SetTangency(ip_ia_elem.com_object,
+                                                         i_angle_start,
+                                                         i_angle_end,
+                                                         ilaw_type,
+                                                         i_index
+                                                         )
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -810,10 +827,10 @@ class HybridShapeSweepConic(HybridShapeSweep):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_tangency_angle_law_inversion(self, i_index=None, i_inversion=None):
+    def set_tangency_angle_law_inversion(self, i_index, i_inversion):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetTangencyAngleLawInversion(long iIndex,
                 | long iInversion)
                 | 
@@ -828,10 +845,10 @@ class HybridShapeSweepConic(HybridShapeSweep):
         """
         return self.hybrid_shape_sweep_conic.SetTangencyAngleLawInversion(i_index, i_inversion)
 
-    def set_tangency_law(self, ip_ia_elem=None, ip_ia_law=None, i_index=None):
+    def set_tangency_law(self, ip_ia_elem, ip_ia_law, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetTangencyLaw(Reference ipIAElem,
                 | Reference ipIALaw,
                 | long iIndex)
@@ -847,7 +864,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         :param int i_index:
         :return: None
         """
-        return self.hybrid_shape_sweep_conic.SetTangencyLaw(ip_ia_elem, ip_ia_law, i_index)
+        return self.hybrid_shape_sweep_conic.SetTangencyLaw(ip_ia_elem.com_object, ip_ia_law.com_object, i_index)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -865,4 +882,4 @@ class HybridShapeSweepConic(HybridShapeSweep):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'HybridShapeSweepConic(name="{ self.name }")'
+        return f'HybridShapeSweepConic(name="{self.name}")'

@@ -9,10 +9,10 @@
         
 """
 
-from pycatia.system_interfaces.cat_base_unknown import CatBaseUnknown
+from pycatia.system_interfaces.cat_base_unknown import CATBaseUnknown
 
 
-class CatBaseDispatch(CatBaseUnknown):
+class CATBaseDispatch(CATBaseUnknown):
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
@@ -35,7 +35,7 @@ class CatBaseDispatch(CatBaseUnknown):
     """
 
     def __init__(self):
-        pass
+        super().__init__()
 
     def __repr__(self):
-        return f'CatBaseDispatch(name="{self.name}")'
+        return f'CatBaseDispatch()'

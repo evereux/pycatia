@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -16,10 +16,9 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class DrawingSheet(AnyObject):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -45,7 +44,7 @@ class DrawingSheet(AnyObject):
     def gen_views_pos_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property GenViewsPosMode() As CatSheetGenViewsPosMode
                 | 
                 |     Returns or sets the generative views position stability
@@ -77,7 +76,7 @@ class DrawingSheet(AnyObject):
     def orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Orientation() As CatPaperOrientation
                 | 
                 |     Returns or sets the paper orientation.
@@ -105,7 +104,7 @@ class DrawingSheet(AnyObject):
     def page_setup(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property PageSetup() As DrawingPageSetup (Read Only)
                 | 
                 |     Returns the page setup.
@@ -126,7 +125,7 @@ class DrawingSheet(AnyObject):
     def paper_size(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property PaperSize() As CatPaperSize
                 | 
                 |     Returns or sets the paper size.
@@ -154,7 +153,7 @@ class DrawingSheet(AnyObject):
     def print_area(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property PrintArea() As PrintArea (Read Only)
                 | 
                 |     Returns the print area definition object.
@@ -175,7 +174,7 @@ class DrawingSheet(AnyObject):
     def projection_method(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ProjectionMethod() As CatSheetProjectionMethod
                 | 
                 |     Returns or sets the sheet projection mode .
@@ -203,7 +202,7 @@ class DrawingSheet(AnyObject):
     def scale(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Scale() As double
                 | 
                 |     Returns or sets the scale of the drawing sheet.
@@ -231,7 +230,7 @@ class DrawingSheet(AnyObject):
     def scale2(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Scale2() As double
                 | 
                 |     Returns or sets the scale of the drawing sheet (Workaround for VBA
@@ -260,7 +259,7 @@ class DrawingSheet(AnyObject):
     def views(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Views() As DrawingViews (Read Only)
                 | 
                 |     Returns the drawing view collection of the drawing sheet.
@@ -282,7 +281,7 @@ class DrawingSheet(AnyObject):
     def activate(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Activate()
                 | 
                 |     Activates the drawing sheet. Activating a drawing sheet means that this
@@ -302,7 +301,7 @@ class DrawingSheet(AnyObject):
     def force_update(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub ForceUpdate()
                 | 
                 |     Forces the update of all the drawing views of the drawing sheet. This
@@ -314,7 +313,7 @@ class DrawingSheet(AnyObject):
                 |     Design.
                 | 
                 |     Example:
-                |         This example forces the update of all the dawing views in the MySheet
+                |         This example forces the update of all the drawing views in the MySheet
                 |         drawing sheet.
                 | 
                 |          MySheet.ForceUpdate
@@ -326,7 +325,7 @@ class DrawingSheet(AnyObject):
     def generate_dimensions(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GenerateDimensions()
                 | 
                 |     Generates dimensions in all the drawing views of the drawing sheet. These
@@ -350,7 +349,7 @@ class DrawingSheet(AnyObject):
     def get_paper_height(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetPaperHeight() As double
                 | 
                 |     Gets the paper width of the drawing sheet.
@@ -367,12 +366,12 @@ class DrawingSheet(AnyObject):
 
         :return: float
         """
-        return float(self.drawing_sheet.GetPaperHeight())
+        return self.drawing_sheet.GetPaperHeight()
 
     def get_paper_width(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetPaperWidth() As double
                 | 
                 |     Gets the paper width of the drawing sheet.
@@ -389,12 +388,12 @@ class DrawingSheet(AnyObject):
 
         :return: float
         """
-        return float(self.drawing_sheet.GetPaperWidth())
+        return self.drawing_sheet.GetPaperWidth()
 
     def is_detail(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func IsDetail() As boolean
                 | 
                 |     Checks whether the sheet is a detail sheet.
@@ -409,12 +408,12 @@ class DrawingSheet(AnyObject):
 
         :return: bool
         """
-        return bool(self.drawing_sheet.IsDetail())
+        return self.drawing_sheet.IsDetail()
 
     def isolate(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Isolate()
                 | 
                 |     Isolates the drawing sheet.
@@ -433,7 +432,7 @@ class DrawingSheet(AnyObject):
     def print_out(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub PrintOut()
                 | 
                 |     Prints the drawing sheet according to its page setup on the default
@@ -451,10 +450,10 @@ class DrawingSheet(AnyObject):
         """
         return self.drawing_sheet.PrintOut()
 
-    def print_to_file(self, file_name=None):
+    def print_to_file(self, file_name):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub PrintToFile(CATBSTR fileName)
                 | 
                 |     Prints the drawing sheet according its page setup in a file instead of
@@ -470,7 +469,7 @@ class DrawingSheet(AnyObject):
                 |     Example:
                 |         This example prints the DrawingSheet1 in a file.
                 | 
-                |          DrawingSheet1.PrintToFile "e:\temp\sheet1.prn"
+                |          DrawingSheet1.PrintToFile "e://temp//sheet1.prn"
 
         :param str file_name:
         :return: None
@@ -480,7 +479,7 @@ class DrawingSheet(AnyObject):
     def set_as_detail(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetAsDetail()
                 | 
                 |     Sets the sheet as a detail sheet. You can now create views into this sheet
@@ -498,13 +497,13 @@ class DrawingSheet(AnyObject):
         """
         return self.drawing_sheet.SetAsDetail()
 
-    def set_paper_height(self, o_paper_height=None):
+    def set_paper_height(self, o_paper_height):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetPaperHeight(double oPaperHeight)
                 | 
-                |     Sets the paper width of the drawing sheet, avalaible on user
+                |     Sets the paper width of the drawing sheet, available on user
                 |     format.
                 | 
                 |     Parameters:
@@ -523,13 +522,13 @@ class DrawingSheet(AnyObject):
         """
         return self.drawing_sheet.SetPaperHeight(o_paper_height)
 
-    def set_paper_width(self, o_paper_width=None):
+    def set_paper_width(self, o_paper_width):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetPaperWidth(double oPaperWidth)
                 | 
-                |     Sets the paper width of the drawing sheet, avalaible on user
+                |     Sets the paper width of the drawing sheet, available on user
                 |     format.
                 | 
                 |     Parameters:
@@ -551,7 +550,7 @@ class DrawingSheet(AnyObject):
     def update(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Update()
                 | 
                 |     Updates the drawing views of the drawing sheet. This update redraws all the
@@ -572,10 +571,10 @@ class DrawingSheet(AnyObject):
         """
         return self.drawing_sheet.Update()
 
-    def reorder_views(self, i_ordered_views=None):
+    def reorder_views(self, i_ordered_views):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub reorder_Views(CATSafeArrayVariant iOrderedViews)
                 | 
                 |     Changes the positions of the views in this sheet according to the given
@@ -619,4 +618,4 @@ class DrawingSheet(AnyObject):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'DrawingSheet(name="{ self.name }")'
+        return f'DrawingSheet(name="{self.name}")'

@@ -477,7 +477,7 @@ class GeneralStatisticsSettingAtt(SettingController):
 
         self.general_statistics_setting_att.USER = value
 
-    def get_format_mode(self, flag=None):
+    def get_format_mode(self, flag):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -500,7 +500,7 @@ class GeneralStatisticsSettingAtt(SettingController):
         """
         return bool(self.general_statistics_setting_att.GetFormatMode(flag))
 
-    def get_thematics_parameter_info(self, admin_level=None, o_locked=None):
+    def get_thematics_parameter_info(self, admin_level, o_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -517,7 +517,7 @@ class GeneralStatisticsSettingAtt(SettingController):
         """
         return self.general_statistics_setting_att.GetThematicsParameterInfo(admin_level, o_locked)
 
-    def set_format_mode(self, i_format_mode=None, flag=None):
+    def set_format_mode(self, i_format_mode, flag):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -557,7 +557,7 @@ class GeneralStatisticsSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_thematics_parameter_lock(self, i_locked=None):
+    def set_thematics_parameter_lock(self, i_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))

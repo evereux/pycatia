@@ -85,7 +85,7 @@ class DisconnectionSettingAtt(SettingController):
 
         self.disconnection_setting_att.InactivityDuration = value
 
-    def get_activation_state_info(self, admin_level=None, o_locked=None):
+    def get_activation_state_info(self, admin_level, o_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -102,7 +102,7 @@ class DisconnectionSettingAtt(SettingController):
         """
         return self.disconnection_setting_att.GetActivationStateInfo(admin_level, o_locked)
 
-    def get_inactivity_duration_info(self, admin_level=None, o_locked=None):
+    def get_inactivity_duration_info(self, admin_level, o_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -119,7 +119,7 @@ class DisconnectionSettingAtt(SettingController):
         """
         return self.disconnection_setting_att.GetInactivityDurationInfo(admin_level, o_locked)
 
-    def set_activation_state_lock(self, i_locked=None):
+    def set_activation_state_lock(self, i_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -149,7 +149,7 @@ class DisconnectionSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_inactivity_duration_lock(self, i_locked=None):
+    def set_inactivity_duration_lock(self, i_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))

@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -8,15 +8,15 @@
         and thus help debugging in pycatia.
         
 """
-
-
+from pycatia.sketcher_interfaces.geometry2_d import Geometry2D
+from pycatia.sketcher_interfaces.line2_d import Line2D
+from pycatia.sketcher_interfaces.point2_d import Point2D
 
 
 class Axis2D(Geometry2D):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -39,7 +39,7 @@ class Axis2D(Geometry2D):
     def horizontal_reference(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property HorizontalReference() As Line2D (Read Only)
                 | 
                 |     Returns the 2D coordinate system horizontal axis.
@@ -53,7 +53,7 @@ class Axis2D(Geometry2D):
     def origin(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Origin() As Point2D (Read Only)
                 | 
                 |     Returns the 2D coordinate system origin.
@@ -67,7 +67,7 @@ class Axis2D(Geometry2D):
     def vertical_reference(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property VerticalReference() As Line2D (Read Only)
                 | 
                 |     Returns the 2D coordinate system vertical axis.
@@ -78,4 +78,4 @@ class Axis2D(Geometry2D):
         return Line2D(self.axis2_d.VerticalReference)
 
     def __repr__(self):
-        return f'Axis2D(name="{ self.name }")'
+        return f'Axis2D(name="{self.name}")'

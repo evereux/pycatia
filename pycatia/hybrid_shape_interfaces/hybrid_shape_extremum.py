@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -18,7 +18,7 @@ class HybridShapeExtremum(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -52,7 +52,7 @@ class HybridShapeExtremum(HybridShape):
     def direction(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Direction() As HybridShapeDirection
                 | 
                 |     Returns or sets the direction into which the extremum is detected.
@@ -74,7 +74,7 @@ class HybridShapeExtremum(HybridShape):
     def direction2(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Direction2() As HybridShapeDirection
                 | 
                 |     Returns or sets the second direction into which the extremum is detected.
@@ -96,7 +96,7 @@ class HybridShapeExtremum(HybridShape):
     def direction3(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Direction3() As HybridShapeDirection
                 | 
                 |     Returns or sets the third direction into which the extremum is detected.
@@ -118,7 +118,7 @@ class HybridShapeExtremum(HybridShape):
     def extremum_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ExtremumType() As long
                 | 
                 |     Returns or sets the extremum type.
@@ -141,7 +141,7 @@ class HybridShapeExtremum(HybridShape):
     def extremum_type2(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ExtremumType2() As long
                 | 
                 |     Returns or sets the extremum type of the second direction.
@@ -164,7 +164,7 @@ class HybridShapeExtremum(HybridShape):
     def extremum_type3(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ExtremumType3() As long
                 | 
                 |     Returns or sets the extremum type of the third direction.
@@ -187,7 +187,7 @@ class HybridShapeExtremum(HybridShape):
     def reference_element(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ReferenceElement() As Reference
                 | 
                 |     Returns or sets the object on which the extremum is detected.

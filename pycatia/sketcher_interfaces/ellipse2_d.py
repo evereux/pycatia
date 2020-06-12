@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -8,15 +8,14 @@
         and thus help debugging in pycatia.
         
 """
-
-
+from pycatia.sketcher_interfaces.curve2_d import Curve2D
+from pycatia.sketcher_interfaces.point2_d import Point2D
 
 
 class Ellipse2D(Curve2D):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -40,7 +39,7 @@ class Ellipse2D(Curve2D):
     def center_point(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CenterPoint() As Point2D
                 | 
                 |     Returns the center point of the ellipse.
@@ -67,7 +66,7 @@ class Ellipse2D(Curve2D):
     def major_radius(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property MajorRadius() As double (Read Only)
                 | 
                 |     Returns the radius of the ellipse major axis
@@ -86,7 +85,7 @@ class Ellipse2D(Curve2D):
     def minor_radius(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property MinorRadius() As double (Read Only)
                 | 
                 |     Returns the radius of the ellipse minor axis
@@ -101,10 +100,10 @@ class Ellipse2D(Curve2D):
 
         return self.ellipse2_d.MinorRadius
 
-    def get_center(self, o_center=None):
+    def get_center(self, o_center):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetCenter(CATSafeArrayVariant oCenter)
                 | 
                 |     Returns the center of the ellipse in 2D space
@@ -138,10 +137,10 @@ class Ellipse2D(Curve2D):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_major_axis(self, o_major_axis=None):
+    def get_major_axis(self, o_major_axis):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetMajorAxis(CATSafeArrayVariant oMajorAxis)
                 | 
                 |     Returns the unit vector of the major axis of the ellipse in 2D
@@ -174,10 +173,10 @@ class Ellipse2D(Curve2D):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_minor_axis(self, o_major_axis=None):
+    def get_minor_axis(self, o_major_axis):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetMinorAxis(CATSafeArrayVariant oMajorAxis)
                 | 
                 |     Returns the unit vector of the minor axis of the ellipse in 2D
@@ -210,10 +209,10 @@ class Ellipse2D(Curve2D):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_data(self, i_center_x=None, i_center_y=None, i_major_x=None, i_major_y=None, i_major_radius=None, i_minor_radius=None):
+    def set_data(self, i_center_x, i_center_y, i_major_x, i_major_y, i_major_radius, i_minor_radius):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetData(double iCenterX,
                 | double iCenterY,
                 | double iMajorX,
@@ -249,4 +248,4 @@ class Ellipse2D(Curve2D):
         return self.ellipse2_d.SetData(i_center_x, i_center_y, i_major_x, i_major_y, i_major_radius, i_minor_radius)
 
     def __repr__(self):
-        return f'Ellipse2D(name="{ self.name }")'
+        return f'Ellipse2D(name="{self.name}")'

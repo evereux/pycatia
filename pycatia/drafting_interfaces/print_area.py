@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -16,7 +16,7 @@ class PrintArea(AnyObject):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -39,7 +39,7 @@ class PrintArea(AnyObject):
     def activation_state(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ActivationState(boolean iActivated)
                 | 
                 |     Activates or deactivates the print area.
@@ -75,7 +75,7 @@ class PrintArea(AnyObject):
     def area_heigth(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AreaHeigth(double iHeigth)
                 | 
                 |     Valuates the heigth of the print area.
@@ -109,7 +109,7 @@ class PrintArea(AnyObject):
     def area_low_x(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AreaLowX(double iX)
                 | 
                 |     Valuates the low x coordinate of the print area.
@@ -142,7 +142,7 @@ class PrintArea(AnyObject):
     def area_low_y(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AreaLowY(double iY)
                 | 
                 |     Valuates the low y coordinate of the print area.
@@ -175,7 +175,7 @@ class PrintArea(AnyObject):
     def area_width(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AreaWidth(double iWidth)
                 | 
                 |     Valuates the width of the print area.
@@ -205,10 +205,10 @@ class PrintArea(AnyObject):
 
         self.print_area.AreaWidth = value
 
-    def get_area(self, o_x=None, o_y=None, o_width=None, o_heigth=None, o_activated=None):
+    def get_area(self, o_x, o_y, o_width, o_heigth, o_activated):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetArea(double oX,
                 | double oY,
                 | double oWidth,
@@ -265,10 +265,10 @@ class PrintArea(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_area(self, i_x=None, i_y=None, i_width=None, i_heigth=None):
+    def set_area(self, i_x, i_y, i_width, i_heigth):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetArea(double iX,
                 | double iY,
                 | double iWidth,

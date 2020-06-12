@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -14,10 +14,9 @@ from pycatia.system_interfaces.collection import Collection
 
 
 class DrawingTables(Collection):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -35,10 +34,10 @@ class DrawingTables(Collection):
         super().__init__(com_object)
         self.drawing_tables = com_object
 
-    def add(self, i_position_x=None, i_position_y=None, i_number_of_row=None, i_number_of_column=None, i_row_height=None, i_column_width=None):
+    def add(self, i_position_x, i_position_y, i_number_of_row, i_number_of_column, i_row_height, i_column_width):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add(double iPositionX,
                 | double iPositionY,
                 | long iNumberOfRow,
@@ -79,14 +78,23 @@ class DrawingTables(Collection):
         :param int i_number_of_column:
         :param float i_row_height:
         :param float i_column_width:
-        :return: None
+        :return: DrawingTable
         """
-        return self.drawing_tables.Add(i_position_x, i_position_y, i_number_of_row, i_number_of_column, i_row_height, i_column_width)
+        return DrawingTable(
+            self.drawing_tables.Add(
+                i_position_x,
+                i_position_y,
+                i_number_of_row,
+                i_number_of_column,
+                i_row_height,
+                i_column_width
+            )
+        )
 
-    def item(self, i_index=None):
+    def item(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(long iIndex) As DrawingTable
                 | 
                 |     Returns a drawing table using its index from the DrawingTables
@@ -117,10 +125,10 @@ class DrawingTables(Collection):
         """
         return DrawingTable(self.drawing_tables.Item(i_index))
 
-    def remove(self, i_index=None):
+    def remove(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(long iIndex)
                 | 
                 |     Removes a drawing table from the DrawingTables collection.
@@ -148,4 +156,4 @@ class DrawingTables(Collection):
         return self.drawing_tables.Remove(i_index)
 
     def __repr__(self):
-        return f'DrawingTables(name="{ self.name }")'
+        return f'DrawingTables(name="{self.name}")'

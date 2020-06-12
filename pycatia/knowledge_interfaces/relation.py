@@ -1,172 +1,248 @@
-#! /usr/bin/python3.6
+#! usr/bin/python3.6
+"""
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
-from .knowledge_activate_object import KnowledgeObject
+    .. warning::
+        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+        They are there as a guide as to how the visual basic / catscript functions work
+        and thus help debugging in pycatia.
+        
+"""
+
+from pycatia.knowledge_interfaces.knowledge_activate_object import KnowledgeActivateObject
+from pycatia.system_interfaces.any_object import AnyObject
 
 
-class Relation(KnowledgeObject):
+class Relation(KnowledgeActivateObject):
     """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
-                | Represents the relation object.It is an abstract object which is not
-                | intended to be created as such, but from which the check, design
-                | table, formula, rule, objects derive.
+                | System.IUnknown
+                |     System.IDispatch
+                |         System.CATBaseUnknown
+                |             System.CATBaseDispatch
+                |                 System.AnyObject
+                |                     KnowledgeInterfaces.KnowledgeObject
+                |                        
+KnowledgeInterfaces.KnowledgeActivateObject                |                             Relation
+                | 
+                | Represents the relation object.
+                | It is an abstract object which is not intended to be created as such, but from
+                | which the check, design table, formula, rule, objects derive.
+                | 
+                | See also:
+                |     Check, DesignTable, Formula, Rule
+    
     """
 
-    def __init__(self, relation_com_object):
-        super().__init__(relation_com_object)
-        self.relation = relation_com_object
+    def __init__(self, com_object):
+        super().__init__(com_object)
+        self.relation = com_object
+
+    @property
+    def comment(self):
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property Comment() As CATBSTR
+                | 
+                |     Returns or sets the comment associated with the relation. The comment
+                |     explains the relation's purpose. It is passed as the second input argument of
+                |     the relation creation methods of the Relations collection.
+                | 
+                |     Example:
+                |         This example retrieves the maximummass relation comment and displays it
+                |         in a message box:
+                | 
+                |          relcomment = maximummass.Comment
+                |          MsgBox "maximummass comment : " & relcomment
+
+        :return: str
+        """
+
+        return self.relation.Comment
+
+    @comment.setter
+    def comment(self, value):
+        """
+        :param str value:
+        """
+
+        self.relation.Comment = value
 
     @property
     def context(self):
         """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property Context() As AnyObject (Read Only)
+                | 
+                |     Returns the context of the parameter.
+                |     The context of a parameter can be a part, a product, a drafting, or a
+                |     process document, depending where the parameter is.
+                | 
+                |     Returns:
+                |         The context 
+                |     See also:
+                |         Part, Product, CATIADrawing, CATIAProcess
 
-                | Context
-                | o Property Context() As AnyObject
-                |
-                | Returns the context of the parameter. The context of a parameter can
-                | be a part, a product, a drafting, or a process document, depending
-                | where the parameter is.  Returns:   The context    See also:
-                | activateLinkAnchor('Part','','Part') ,
-                | activateLinkAnchor('Product','','Product') , CATIADrawing,
-                | CATIAProcess
+        :return: AnyObject
         """
-        return self.relation.Context
+
+        return AnyObject(self.relation.Context)
 
     @property
     def nb_in_parameters(self):
         """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property NbInParameters() As long (Read Only)
+                | 
+                |     Returns the number of input parameters of the relation.
 
-                | NbInParameters
-                | o Property NbInParameters() As long
-                |
-                | Returns the number of input parameters of the relation.
+        :return: int
         """
+
         return self.relation.NbInParameters
 
     @property
     def nb_out_parameters(self):
         """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property NbOutParameters() As long (Read Only)
+                | 
+                |     Returns the number of output parameters of the relation.
+                |     The output parameters of the relation are those constrained by the
+                |     relation.
 
-                | NbOutParameters
-                | o Property NbOutParameters() As long
-                |
-                | Returns the number of output parameters of the relation. The output
-                | parameters of the relation are those constrained by the relation.
+        :return: int
         """
+
         return self.relation.NbOutParameters
 
     @property
     def value(self):
         """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property Value() As CATBSTR (Read Only)
+                | 
+                |     Returns the definition of the relation. It returns an empty string if the
+                |     relation is not an expressional one (for example for a design table). The
+                |     definition is the body to be executed to compute one or several parameters. It
+                |     is passed as the last input argument of the relation creation methods of the
+                |     Relations collection.
+                | 
+                |     Example:
+                |         This example retrieves the maximummass relation definition and displays
+                |         it in a message box:
+                | 
+                |          reldef = maximummass.Value
+                |          MsgBox "maximummass relation is defined as " & reldef
 
-                | Value
-                | o Property Value() As CATBSTR
-                |
-                | Returns the definition of the relation.  It returns an empty string if
-                | the relation is not an expressional one (for example for a design
-                | table). The definition is the body to be executed to compute one or
-                | several parameters. It is passed as the last input argument of the
-                | relation creation methods of the
-                | activateLinkAnchor('Relations','','Relations')  collection.
-
-                | Example:
-                | This example retrieves the maximummass relation definition and
-                | displays it in a message box:
-                | reldef = maximummass.Value
-                | MsgBox "maximummass relation is defined as " & reldef
+        :return: str
         """
+
         return self.relation.Value
 
-    @value.setter
-    def value(self, value):
-        self.relation.Value = value
-
-    def get_in_parameter(self, index):
+    def get_in_parameter(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Func GetInParameter(long iIndex) As AnyObject
+                | 
+                |     Returns an input parameter of the relation.
+                |     This method can return an object that is not a parameter, that is, you
+                |     cannot handle it as a Parameter object. For example, in a relation
+                |     like
+                | 
+                |     Area.1 = area(PartBody/Pad.1/Sketch.1)
+                | 
+                |     the object PartBody/Pad.1/Sketch.1 is a sketch and not a
+                |     parameter.
+                |     To use such an object, call the Visual Basic TypeName function to retrieve
+                |     its real type.
+                | 
+                |     Dim objectType
+                |      objectType = TypeName(oParameter)
+                |      If objectType = "Parameter" Then
+                |      ...
+                | 
+                |     Parameters:
+                | 
+                |         iIndex
+                |             The searched input parameter index in the
+                |             relation.
+                |             Legal values: 1 ≤ iIndex ≤ 
+                | 
+                |         NbInParameters
 
-                | GetInParameter
-                | o Func GetInParameter(    long    iIndex) As AnyObject
-                |
-                | Returns an input parameter of the relation. This method can return an
-                | object that is not a parameter, that is, you cannot handle it as a
-                | Parameter object.
-                | For example, in a relation like Area.1 = area(PartBody\\Pad.1\\Sketch.1) the
-                | object PartBody\\Pad.1\\Sketch.1 is a sketch and not a parameter. To use such an
-                | object, call the Visual Basic TypeName function to retrieve its real type.
-                | Dim objectType objectType = TypeName(oParameter)
-                | If objectType = "Parameter" Then ...
-
-                | Parameters:
-                | iIndex
-                |  The searched input parameter index in the relation.
-                |  Legal values: 1 ≤ iIndex ≤
-                |
-                |  activateLinkAnchor('','NbInParameters','NbInParameters')
+        :param int i_index:
+        :return: AnyObject
         """
-        return self.relation.GetInParameter(index)
+        return AnyObject(self.relation.GetInParameter(i_index))
 
-    def get_out_parameter(self, index):
-        """
-        .. note::
-            CAA V5 Visual Basic help
-
-                | GetOutParameter
-                | o Func GetOutParameter(    long    iIndex) As Parameter
-                |
-                | Returns an output parameter of the relation.  Use TypeName method on
-                | the returned parameter to get the real type of the parameter.
-
-                | Parameters:
-                | iIndex
-                |  The searched input parameter index in the relation.
-                |  Legal values: 1 ≤ iIndex ≤
-                |
-                |  activateLinkAnchor('','NbOutParameters','NbOutParameters')
-        """
-        return self.relation.GetOutParameter(index)
-
-    def modify(self, value):
+    def get_out_parameter(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Func GetOutParameter(long iIndex) As Parameter
+                | 
+                |     Returns an output parameter of the relation. Use TypeName method on the
+                |     returned parameter to get the real type of the parameter.
+                | 
+                |     Parameters:
+                | 
+                |         iIndex
+                |             The searched input parameter index in the
+                |             relation.
+                |             Legal values: 1 ≤ iIndex ≤ 
+                | 
+                |         NbOutParameters
 
-                | Modify
-                | o Sub Modify(    CATBSTR    iValue)
-                |
-                | Modifies the relation.
-
-                | Parameters:
-                | iValue
-                |    The new relation value
+        :param int i_index:
+        :return: Parameter
         """
-        return self.relation.Modify(value)
+        from pycatia.knowledge_interfaces.parameter import Parameter
+        return Parameter(self.relation.GetOutParameter(i_index))
 
-    def rename(self, name):
+    def modify(self, i_value):
         """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Sub Modify(CATBSTR iValue)
+                | 
+                |     Modifies the relation.
+                | 
+                |     Parameters:
+                | 
+                |         iValue
+                |             The new relation value
 
-                | Rename
-                | o Sub Rename(    CATBSTR    iName)
-                |
-                | Renames the relation.
-
-                | Parameters:
-                | iName
-                |    The new relation name
+        :param str i_value:
+        :return: None
         """
-        return self.relation.Rename(name)
+        return self.relation.Modify(i_value)
+
+    def rename(self, i_name):
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Sub Rename(CATBSTR iName)
+                | 
+                |     Renames the relation.
+                | 
+                |     Parameters:
+                | 
+                |         iName
+                |             The new relation name
+
+        :param str i_name:
+        :return: None
+        """
+        return self.relation.Rename(i_name)
 
     def __repr__(self):
-        return f'Relation(value="{self.value}")'
+        return f'Relation(name="{self.name}")'

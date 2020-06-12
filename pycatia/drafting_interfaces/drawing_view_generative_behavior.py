@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -10,13 +10,13 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.system_interfaces.cat_base_dispatch import CatBaseDispatch
+from pycatia.system_interfaces.cat_base_dispatch import CATBaseDispatch
 
 
-class DrawingViewGenerativeBehavior(CatBaseDispatch):
+class DrawingViewGenerativeBehavior(CATBaseDispatch):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -35,14 +35,14 @@ class DrawingViewGenerativeBehavior(CatBaseDispatch):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__()
         self.drawing_view_generative_behavior = com_object
 
     @property
     def color_inheritance_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ColorInheritanceMode() As
                 | Cat3DColorInheritanceMode
                 | 
@@ -78,7 +78,7 @@ MyView.GenerativeBehavior.ColorInheritanceMode(cat3DColorInheritanceModeOn)
     def document(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Document() As AnyObject
                 | 
                 |     Returns or sets the document used to generate the drawing view. This
@@ -116,7 +116,7 @@ MyView.GenerativeBehavior.ColorInheritanceMode(cat3DColorInheritanceModeOn)
     def fillet_representation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FilletRepresentation() As CatFilletRepresentation
                 | 
                 |     Returns or sets the view Fillet representation mode. The Fillet
@@ -149,7 +149,7 @@ MyView.GenerativeBehavior.ColorInheritanceMode(cat3DColorInheritanceModeOn)
     def hidden_line_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property HiddenLineMode() As CatHiddenLineMode
                 | 
                 |     Returns or sets the view hidden line drawing mode. The hidden line drawing
@@ -183,7 +183,7 @@ MyView.GenerativeBehavior.ColorInheritanceMode(cat3DColorInheritanceModeOn)
     def image_view_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ImageViewMode() As CatImageViewMode
                 | 
                 |     Returns or sets the view generation mode as pixel image.
@@ -224,7 +224,7 @@ MyView.GenerativeBehavior.CatImageViewMode(catImageModeHRD)
     def limit_bounding_box(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property LimitBoundingBox() As double
                 | 
                 |     Returns or sets the bounding box limits under which a part. will not be
@@ -254,7 +254,7 @@ MyView.GenerativeBehavior.CatImageViewMode(catImageModeHRD)
     def parent_view(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ParentView() As DrawingView (Read Only)
                 | 
                 |     Returns the parent view.
@@ -278,7 +278,7 @@ MyView.GenerativeBehavior.CatImageViewMode(catImageModeHRD)
     def points_projection_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property PointsProjectionMode() As CatPointsProjectionMode
                 | 
                 |     Returns or sets projection mode for 3D points. This mode indicates whether
@@ -312,7 +312,7 @@ MyView.GenerativeBehavior.CatImageViewMode(catImageModeHRD)
     def points_symbol(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property PointsSymbol() As short
                 | 
                 |     Returns or sets symbol for projected points. The 0 value means that
@@ -335,7 +335,7 @@ MyView.GenerativeBehavior.CatImageViewMode(catImageModeHRD)
     def representation_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property RepresentationMode() As CatRepresentationMode
                 | 
                 |     Returns or sets generated geometry representation mode.
@@ -370,10 +370,10 @@ MyView.GenerativeBehavior.CatImageViewMode(catImageModeHRD)
 
         self.drawing_view_generative_behavior.RepresentationMode = value
 
-    def apply_breakout_to(self, i_parent_view=None):
+    def apply_breakout_to(self, i_parent_view):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub ApplyBreakoutTo(DrawingViewGenerativeBehavior
                 | iParentView)
                 | 
@@ -388,13 +388,12 @@ MyView.GenerativeBehavior.CatImageViewMode(catImageModeHRD)
                 |          on the view MyDestinationView.
                 |          
                 | 
-                |         
-MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
+                |         MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
 
         :param DrawingViewGenerativeBehavior i_parent_view:
         :return: None
         """
-        return self.drawing_view_generative_behavior.ApplyBreakoutTo(i_parent_view)
+        return self.drawing_view_generative_behavior.ApplyBreakoutTo(i_parent_view.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -411,11 +410,11 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def define_auxiliary_view(self, i_x_start_point=None, i_y_start_point=None, i_x_end_point=None, y_end_point=None,
-                              i_side_to_draw=None, i_parent_view_generative_behavior=None):
+    def define_auxiliary_view(self, i_x_start_point, i_y_start_point, i_x_end_point, y_end_point,
+                              i_side_to_draw, i_parent_view_generative_behavior):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineAuxiliaryView(double iXStartPoint,
                 | double iYStartPoint,
                 | double iXEndPoint,
@@ -478,7 +477,7 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         """
         return self.drawing_view_generative_behavior.DefineAuxiliaryView(i_x_start_point, i_y_start_point,
                                                                          i_x_end_point, y_end_point, i_side_to_draw,
-                                                                         i_parent_view_generative_behavior)
+                                                                         i_parent_view_generative_behavior.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -495,10 +494,10 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def define_box3_d_view(self, i_boxable_object=None):
+    def define_box3_d_view(self, i_boxable_object):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineBox3DView(AnyObject iBoxableObject)
                 | 
                 |     Defines a drawing view intersected with a 3D box. The 3D box is defined by
@@ -513,12 +512,12 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         :param AnyObject i_boxable_object:
         :return: None
         """
-        return self.drawing_view_generative_behavior.DefineBox3DView(i_boxable_object)
+        return self.drawing_view_generative_behavior.DefineBox3DView(i_boxable_object.com_object)
 
-    def define_breakout(self, i_profil=None, i_plane1=None, i_plane2=None):
+    def define_breakout(self, i_profil, i_plane1, i_plane2):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineBreakout(CATSafeArrayVariant iProfil,
                 | CATSafeArrayVariant iPlane1,
                 | CATSafeArrayVariant iPlane2)
@@ -532,10 +531,14 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
                 |             coordinates, of dimension 2*n, n the number of control points on profile.
                 |             
                 |         Plane1
-                |             the first reference plane, stored as a CATSafeArrayVariant [9] : Plane1 [0...2] : Plane origine coordinates Plane1 [3...5] : First direction vector coordinates Plane1 [6...8] : Second direction vector coordinates. This plane must intersect the 3D Volume. 
+                |             the first reference plane, stored as a CATSafeArrayVariant [9] : Plane1 [0...2] : Plane
+                |             origine coordinates Plane1 [3...5] : First direction vector coordinates Plane1 [6...8] :
+                |             Second direction vector coordinates. This plane must intersect the 3D Volume.
                 |         Plane2
-                |             the second reference plane, stored as a CATSafeArrayVariant [9] : This plane2 is not used. Returns
-                |             Legal values : S_OK if breakout definition succeeded or E_FAIL if the breakout definition failed
+                |             the second reference plane, stored as a CATSafeArrayVariant [9] : This plane2 is not used.
+                |         Returns
+                |             Legal values : S_OK if breakout definition succeeded or E_FAIL if the breakout definition
+                |             failed
 
         :param tuple i_profil:
         :param tuple i_plane1:
@@ -559,10 +562,10 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def define_broken_view(self, i_broken_lines_extremities=None, i_x_direction=None, i_y_direction=None):
+    def define_broken_view(self, i_broken_lines_extremities, i_x_direction, i_y_direction):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineBrokenView(CATSafeArrayVariant
                 | iBrokenLinesExtremities,
                 | double iXDirection,
@@ -640,10 +643,10 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def define_circular_clipping_view(self, x_center=None, y_center=None, radius=None):
+    def define_circular_clipping_view(self, x_center, y_center, radius):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineCircularClippingView(double XCenter,
                 | double YCenter,
                 | double Radius)
@@ -656,7 +659,8 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
                 |             YCenter clipping circle center position. 
                 |         Radius
                 |             clipping circle radius. Returns
-                |             Legal values : S_OK if clipping definition succeeded or E_FAIL if the clipping definition failed
+                |             Legal values : S_OK if clipping definition succeeded or E_FAIL if the clipping definition
+                |             failed
 
         :param float x_center:
         :param float y_center:
@@ -665,11 +669,11 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         """
         return self.drawing_view_generative_behavior.DefineCircularClippingView(x_center, y_center, radius)
 
-    def define_circular_detail_view(self, i_x_center=None, i_y_center=None, i_radius=None,
-                                    i_parent_view_generative_behavior=None):
+    def define_circular_detail_view(self, i_x_center, i_y_center, i_radius,
+                                    i_pv_generative_behavior):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineCircularDetailView(double iXCenter,
                 | double iYCenter,
                 | double iRadius,
@@ -699,7 +703,7 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
                 |          MyParentViewGB.
                 |          The clipped area is a circle defined using its center coordinates
                 |          (100.,
-                |          150.), and its radius (75.) with respsect to the parent view axis
+                |          150.), and its radius (75.) with respect to the parent view axis
                 |          system.
                 |          
                 | 
@@ -709,11 +713,11 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         :param float i_x_center:
         :param float i_y_center:
         :param float i_radius:
-        :param DrawingViewGenerativeBehavior i_parent_view_generative_behavior:
+        :param DrawingViewGenerativeBehavior i_pv_generative_behavior:
         :return: None
         """
         return self.drawing_view_generative_behavior.DefineCircularDetailView(i_x_center, i_y_center, i_radius,
-                                                                              i_parent_view_generative_behavior)
+                                                                              i_pv_generative_behavior.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -730,10 +734,10 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def define_circular_exact_clipping_view(self, x_center=None, y_center=None, radius=None):
+    def define_circular_exact_clipping_view(self, x_center, y_center, radius):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineCircularExactClippingView(double XCenter,
                 | double YCenter,
                 | double Radius)
@@ -746,7 +750,8 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
                 |             YCenter clipping circle center position. 
                 |         Radius
                 |             clipping circle radius. Returns
-                |             Legal values : S_OK if clipping definition succeeded or E_FAIL if the clipping definition failed
+                |             Legal values : S_OK if clipping definition succeeded or E_FAIL if the clipping definition
+                |             failed
 
         :param float x_center:
         :param float y_center:
@@ -755,10 +760,10 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         """
         return self.drawing_view_generative_behavior.DefineCircularExactClippingView(x_center, y_center, radius)
 
-    def define_front_view(self, i_x1=None, i_y1=None, i_z1=None, i_x2=None, i_y2=None, i_z2=None):
+    def define_front_view(self, i_x1, i_y1, i_z1, i_x2, i_y2, i_z2):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineFrontView(double iX1,
                 | double iY1,
                 | double iZ1,
@@ -800,10 +805,10 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         """
         return self.drawing_view_generative_behavior.DefineFrontView(i_x1, i_y1, i_z1, i_x2, i_y2, i_z2)
 
-    def define_isometric_view(self, i_x1=None, i_y1=None, i_z1=None, i_x2=None, i_y2=None, i_z2=None):
+    def define_isometric_view(self, i_x1, i_y1, i_z1, i_x2, i_y2, i_z2):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineIsometricView(double iX1,
                 | double iY1,
                 | double iZ1,
@@ -847,10 +852,10 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         """
         return self.drawing_view_generative_behavior.DefineIsometricView(i_x1, i_y1, i_z1, i_x2, i_y2, i_z2)
 
-    def define_polygonal_clipping_view(self, profil=None):
+    def define_polygonal_clipping_view(self, profil):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefinePolygonalClippingView(CATSafeArrayVariant
                 | profil)
                 | 
@@ -862,7 +867,8 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
                 |             the profile used, stored as a CATSafeArrayVariant of 2D
                 |             coordinates, of dimension 2*n, n the number of control points on profile.
                 |             Returns
-                |             Legal values : S_OK if clipping definition succeeded or E_FAIL if the clipping definition failed
+                |             Legal values : S_OK if clipping definition succeeded or E_FAIL if the clipping definition
+                |             failed
 
         :param tuple profil:
         :return: None
@@ -884,10 +890,10 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def define_polygonal_detail_view(self, i_profile=None, i_parent_view_generative_behavior=None):
+    def define_polygonal_detail_view(self, i_profile, i_pv_generative_behavior):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefinePolygonalDetailView(CATSafeArrayVariant
                 | iProfile,
                 | DrawingViewGenerativeBehavior iParentViewGenerativeBehavior)
@@ -936,11 +942,14 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
                 |          100., 100., 0., 100., MyParentViewGB
 
         :param tuple i_profile:
-        :param DrawingViewGenerativeBehavior i_parent_view_generative_behavior:
+        :param DrawingViewGenerativeBehavior i_pv_generative_behavior:
         :return: None
+
+        Args:
+            i_pv_generative_behavior:
         """
         return self.drawing_view_generative_behavior.DefinePolygonalDetailView(i_profile,
-                                                                               i_parent_view_generative_behavior)
+                                                                               i_pv_generative_behavior.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -957,10 +966,10 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def define_polygonal_exact_clipping_view(self, profil=None):
+    def define_polygonal_exact_clipping_view(self, profil):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefinePolygonalExactClippingView(CATSafeArrayVariant
                 | profil)
                 | 
@@ -972,7 +981,8 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
                 |             the profile used, stored as a CATSafeArrayVariant of 2D
                 |             coordinates, of dimension 2*n, n the number of control points on profile.
                 |             Returns
-                |             Legal values : S_OK if clipping definition succeeded or E_FAIL if the clipping definition failed
+                |             Legal values : S_OK if clipping definition succeeded or E_FAIL if the clipping definition
+                 |            failed
 
         :param tuple profil:
         :return: None
@@ -994,10 +1004,10 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def define_projection_view(self, i_parent_view_generative_behavior=None, i_type=None):
+    def define_projection_view(self, i_parent_view_generative_behavior, i_type):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineProjectionView(DrawingViewGenerativeBehavior
                 | iParentViewGenerativeBehavior,
                 | CatProjViewType iType)
@@ -1028,7 +1038,8 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         :param CatProjViewType i_type:
         :return: None
         """
-        return self.drawing_view_generative_behavior.DefineProjectionView(i_parent_view_generative_behavior, i_type)
+        return self.drawing_view_generative_behavior.DefineProjectionView(i_parent_view_generative_behavior.com_object,
+                                                                          i_type.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1045,11 +1056,11 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def define_section_view(self, i_profile=None, i_section_type=None, i_profile_type=None, i_side_to_draw=None,
-                            i_parent_view_generative_behavior=None):
+    def define_section_view(self, i_profile, i_section_type, i_profile_type, i_side_to_draw,
+                            i_parent_view_generative_behavior):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineSectionView(CATSafeArrayVariant iProfile,
                 | CATBSTR iSectionType,
                 | CATBSTR iProfileType,
@@ -1137,7 +1148,7 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         """
         return self.drawing_view_generative_behavior.DefineSectionView(i_profile, i_section_type, i_profile_type,
                                                                        i_side_to_draw,
-                                                                       i_parent_view_generative_behavior)
+                                                                       i_parent_view_generative_behavior.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1154,11 +1165,11 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def define_stand_alone_section(self, profil=None, type_of_section=None, type_of_profile=None, i_plane=None,
-                                   i_side=None):
+    def define_stand_alone_section(self, profil, type_of_section, type_of_profile, i_plane,
+                                   i_side):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineStandAloneSection(CATSafeArrayVariant profil,
                 | CATBSTR type_of_section,
                 | CATBSTR type_of_profile,
@@ -1180,7 +1191,9 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
                 | 
                 |             Legal values : Aligned Offset 
                 |         iPlane
-                |             the reference plane, on which the profile lies Plane1 [0...2] : Plane origine coordinates Plane1 [3...5] : First direction vector coordinates Plane1 [6...8] : Second direction vector coordinates. 
+                |             the reference plane, on which the profile lies Plane1 [0...2] : Plane origine coordinates
+                |             Plane1 [3...5] : First direction vector coordinates Plane1 [6...8] : Second direction
+                |             vector coordinates.
                 |         iSide
                 | 
                 |             Legal values : 1 -1 
@@ -1242,11 +1255,11 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def define_tps_section_view(self, i_profile=None, i_section_type=None, i_profile_type=None, i_side_to_draw=None,
-                                i_parent_view_generative_behavior=None):
+    def define_tps_section_view(self, i_profile, i_section_type, i_profile_type, i_side_to_draw,
+                                i_parent_view_generative_behavior):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineTPSSectionView(CATSafeArrayVariant iProfile,
                 | CATBSTR iSectionType,
                 | CATBSTR iProfileType,
@@ -1334,7 +1347,7 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         """
         return self.drawing_view_generative_behavior.DefineTPSSectionView(i_profile, i_section_type, i_profile_type,
                                                                           i_side_to_draw,
-                                                                          i_parent_view_generative_behavior)
+                                                                          i_parent_view_generative_behavior.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1351,10 +1364,10 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def define_unfolded_view(self, i_x1=None, i_y1=None, i_z1=None, i_x2=None, i_y2=None, i_z2=None):
+    def define_unfolded_view(self, i_x1, i_y1, i_z1, i_x2, i_y2, i_z2):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineUnfoldedView(double iX1,
                 | double iY1,
                 | double iZ1,
@@ -1399,7 +1412,7 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
     def force_update(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub ForceUpdate()
                 | 
                 |     Forces the Update the drawing view even if not necessary.
@@ -1415,10 +1428,10 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         """
         return self.drawing_view_generative_behavior.ForceUpdate()
 
-    def get_axis_systeme(self, o_product=None, o_axis_systeme=None):
+    def get_axis_systeme(self, o_product, o_axis_systeme):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetAxisSysteme(AnyObject oProduct,
                 | AnyObject oAxisSysteme)
                 | 
@@ -1435,12 +1448,12 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         :param AnyObject o_axis_systeme:
         :return: None
         """
-        return self.drawing_view_generative_behavior.GetAxisSysteme(o_product, o_axis_systeme)
+        return self.drawing_view_generative_behavior.GetAxisSysteme(o_product.com_object, o_axis_systeme.com_object)
 
     def get_gps_name(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetGPSName() As CATBSTR
                 | 
                 |     Retrieves the set of generative parameters currently applied to the view.
@@ -1467,12 +1480,12 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
 
         :return: str
         """
-        return str(self.drawing_view_generative_behavior.GetGPSName())
+        return self.drawing_view_generative_behavior.GetGPSName()
 
-    def get_projection_plane(self, o_x1=None, o_y1=None, o_z1=None, o_x2=None, o_y2=None, o_z2=None):
+    def get_projection_plane(self, o_x1, o_y1, o_z1, o_x2, o_y2, o_z2):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetProjectionPlane(double oX1,
                 | double oY1,
                 | double oZ1,
@@ -1512,10 +1525,10 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         """
         return self.drawing_view_generative_behavior.GetProjectionPlane(o_x1, o_y1, o_z1, o_x2, o_y2, o_z2)
 
-    def get_projection_plane_normal(self, o_x_normal=None, o_y_normal=None, o_z_normal=None):
+    def get_projection_plane_normal(self, o_x_normal, o_y_normal, o_z_normal):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetProjectionPlaneNormal(double oXNormal,
                 | double oYNormal,
                 | double oZNormal)
@@ -1546,10 +1559,10 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         """
         return self.drawing_view_generative_behavior.GetProjectionPlaneNormal(o_x_normal, o_y_normal, o_z_normal)
 
-    def set_axis_systeme(self, i_product=None, i_axis_systeme=None):
+    def set_axis_systeme(self, i_product, i_axis_systeme):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetAxisSysteme(AnyObject iProduct,
                 | AnyObject iAxisSysteme)
                 | 
@@ -1566,12 +1579,12 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         :param AnyObject i_axis_systeme:
         :return: None
         """
-        return self.drawing_view_generative_behavior.SetAxisSysteme(i_product, i_axis_systeme)
+        return self.drawing_view_generative_behavior.SetAxisSysteme(i_product.com_object, i_axis_systeme.com_object)
 
-    def set_gps_name(self, i_gps_name=None):
+    def set_gps_name(self, i_gps_name):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetGPSName(CATBSTR iGPSName)
                 | 
                 |     Applies a set of generative parameters to the current view. Parameters will
@@ -1601,10 +1614,10 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         """
         return self.drawing_view_generative_behavior.SetGPSName(i_gps_name)
 
-    def set_projection_plane(self, i_x1=None, i_y1=None, i_z1=None, i_x2=None, i_y2=None, i_z2=None):
+    def set_projection_plane(self, i_x1, i_y1, i_z1, i_x2, i_y2, i_z2):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetProjectionPlane(double iX1,
                 | double iY1,
                 | double iZ1,
@@ -1655,7 +1668,7 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
     def un_break(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub UnBreak()
                 | 
                 |     If a view have been broken with lines in order to hide an area of this
@@ -1677,7 +1690,7 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
     def un_breakout(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub UnBreakout()
                 | 
                 |     If a view have gone through a breakout view operation, this method removes
@@ -1696,10 +1709,10 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         """
         return self.drawing_view_generative_behavior.UnBreakout()
 
-    def un_breakout_num(self, i_breakout_number=None):
+    def un_breakout_num(self, i_breakout_number):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub UnBreakoutNum(short iBreakoutNumber)
                 | 
                 |     If a view have gone through a breakout view operation, this method removes
@@ -1743,7 +1756,7 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
     def un_clip(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub UnClip()
                 | 
                 |     If a view have been clipped, this method removes the last clipping view
@@ -1764,7 +1777,7 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
     def update(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Update()
                 | 
                 |     Updates the drawing view. This update is performed with respect to any
@@ -1783,4 +1796,4 @@ MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
         return self.drawing_view_generative_behavior.Update()
 
     def __repr__(self):
-        return f'DrawingViewGenerativeBehavior(name="{self.name}")'
+        return f'DrawingViewGenerativeBehavior()'

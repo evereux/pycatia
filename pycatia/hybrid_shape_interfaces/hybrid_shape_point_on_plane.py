@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -19,7 +19,7 @@ class HybridShapePointOnPlane(Point):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -47,7 +47,7 @@ class HybridShapePointOnPlane(Point):
     def first_direction(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FirstDirection() As HybridShapeDirection
                 | 
                 |     Returns or sets the first direction on the plane to compute the point (for
@@ -78,7 +78,7 @@ class HybridShapePointOnPlane(Point):
     def plane(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Plane() As Reference
                 | 
                 |     Returns or sets the support plane.
@@ -110,7 +110,7 @@ class HybridShapePointOnPlane(Point):
     def point(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Point() As Reference
                 | 
                 |     Returns or sets the reference point.
@@ -144,7 +144,7 @@ class HybridShapePointOnPlane(Point):
     def projection_surface(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ProjectionSurface() As Reference
                 | 
                 |     Returns or sets the projection surface to compute the
@@ -175,7 +175,7 @@ class HybridShapePointOnPlane(Point):
     def x_offset(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property XOffset() As Length (Read Only)
                 | 
                 |     Returns the X cartesian coordinate in the plane.
@@ -197,7 +197,7 @@ class HybridShapePointOnPlane(Point):
     def y_offset(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property YOffset() As Length (Read Only)
                 | 
                 |     Returns the Y cartesian coordinate in the plane.
@@ -215,10 +215,10 @@ class HybridShapePointOnPlane(Point):
 
         return Length(self.hybrid_shape_point_on_plane.YOffset)
 
-    def get_second_direction(self, o_dir_x=None, o_dir_y=None, o_dir_z=None):
+    def get_second_direction(self, o_dir_x, o_dir_y, o_dir_z):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetSecondDirection(double oDirX,
                 | double oDirY,
                 | double oDirZ)
@@ -243,10 +243,10 @@ class HybridShapePointOnPlane(Point):
         """
         return self.hybrid_shape_point_on_plane.GetSecondDirection(o_dir_x, o_dir_y, o_dir_z)
 
-    def set_second_direction(self, i_dir_x=None, i_dir_y=None, i_dir_z=None):
+    def set_second_direction(self, i_dir_x, i_dir_y, i_dir_z):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetSecondDirection(double iDirX,
                 | double iDirY,
                 | double iDirZ)

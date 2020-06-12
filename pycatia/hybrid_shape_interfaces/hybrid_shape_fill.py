@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -14,10 +14,9 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeFill(HybridShape):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -39,7 +38,7 @@ class HybridShapeFill(HybridShape):
     def advanced_tolerant_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AdvancedTolerantMode() As long
                 | 
                 |     Returns or sets the tolerant mode taken into account during fill
@@ -82,7 +81,7 @@ class HybridShapeFill(HybridShape):
     def constraint(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Constraint() As Reference
                 | 
                 |     Returns or sets the passing point for the Fill.
@@ -111,7 +110,7 @@ class HybridShapeFill(HybridShape):
     def continuity(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Continuity() As long
                 | 
                 |     Returns or sets the continuity between the support and
@@ -149,7 +148,7 @@ class HybridShapeFill(HybridShape):
     def detection(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Detection() As short
                 | 
                 |     Returns or sets the Canonical portion detection option.
@@ -177,7 +176,7 @@ class HybridShapeFill(HybridShape):
     def maximum_deviation_value(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property MaximumDeviationValue() As double
                 | 
                 |     Sets or Gets the maximum deviation allowed for smoothing operation in fill
@@ -206,7 +205,7 @@ class HybridShapeFill(HybridShape):
     def plane_only_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property PlaneOnlyMode() As boolean
                 | 
                 |     Returns or sets whether Planar Boundaries only should be considered during
@@ -237,11 +236,13 @@ class HybridShapeFill(HybridShape):
     def tolerant_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TolerantMode() As boolean
                 | 
                 |     Deprecated:
-                |         V5R26 Use HybridShapeFill.AdvancedTolerantMode Returns or sets the Tolerant mode option. Role: To activate or not the tolerant mode option TRUE : Tolerant mode is active. Uses deviation parameter to do tolerant fill. FALSE : Tolerant mode is not active.
+                |         V5R26 Use HybridShapeFill.AdvancedTolerantMode Returns or sets the Tolerant mode option.
+                |         Role: To activate or not the tolerant mode option TRUE : Tolerant mode is active. Uses
+                |         deviation parameter to do tolerant fill. FALSE : Tolerant mode is not active.
                 | 
                 |         Example: This example retrieves in tolMode the tolerant mode for the
                 |         Fill hybrid shape feature.
@@ -262,10 +263,10 @@ class HybridShapeFill(HybridShape):
 
         self.hybrid_shape_fill.TolerantMode = value
 
-    def add_bound(self, i_boundary=None):
+    def add_bound(self, i_boundary):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddBound(Reference iBoundary)
                 | 
                 |     Adds an boundary to the hybrid shape fill feature object.
@@ -285,7 +286,7 @@ class HybridShapeFill(HybridShape):
         :param Reference i_boundary:
         :return: None
         """
-        return self.hybrid_shape_fill.AddBound(i_boundary)
+        return self.hybrid_shape_fill.AddBound(i_boundary.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -302,10 +303,10 @@ class HybridShapeFill(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def add_support_at_bound(self, i_boundary=None, i_support=None):
+    def add_support_at_bound(self, i_boundary, i_support):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddSupportAtBound(Reference iBoundary,
                 | Reference iSupport)
                 | 
@@ -329,7 +330,7 @@ class HybridShapeFill(HybridShape):
         :param Reference i_support:
         :return: None
         """
-        return self.hybrid_shape_fill.AddSupportAtBound(i_boundary, i_support)
+        return self.hybrid_shape_fill.AddSupportAtBound(i_boundary.com_object, i_support.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -346,10 +347,10 @@ class HybridShapeFill(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def append_constraint(self, i_constraint=None):
+    def append_constraint(self, i_constraint):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AppendConstraint(Reference iConstraint)
                 | 
                 |     Appends an constraint to the hybrid shape fill feature object. ========
@@ -369,7 +370,7 @@ class HybridShapeFill(HybridShape):
         :param Reference i_constraint:
         :return: None
         """
-        return self.hybrid_shape_fill.AppendConstraint(i_constraint)
+        return self.hybrid_shape_fill.AppendConstraint(i_constraint.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -386,10 +387,10 @@ class HybridShapeFill(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_bound_at_position(self, i_pos=None):
+    def get_bound_at_position(self, i_pos):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetBoundAtPosition(long iPos) As Reference
                 | 
                 |     Retrieves the boundary at specified position in the hybrid shape fill
@@ -412,10 +413,10 @@ class HybridShapeFill(HybridShape):
         """
         return Reference(self.hybrid_shape_fill.GetBoundAtPosition(i_pos))
 
-    def get_bound_position(self, i_boundary=None):
+    def get_bound_position(self, i_boundary):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetBoundPosition(Reference iBoundary) As long
                 | 
                 |     Retrieves the position of a boundary used by the hybrid shape fill feature
@@ -436,12 +437,12 @@ class HybridShapeFill(HybridShape):
         :param Reference i_boundary:
         :return: int
         """
-        return int(self.hybrid_shape_fill.GetBoundPosition(i_boundary))
+        return self.hybrid_shape_fill.GetBoundPosition(i_boundary.com_object)
 
     def get_bound_size(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetBoundSize() As long
                 | 
                 |     Returns the number of boundaries in the Fill object.
@@ -460,12 +461,12 @@ class HybridShapeFill(HybridShape):
 
         :return: int
         """
-        return int(self.hybrid_shape_fill.GetBoundSize())
+        return self.hybrid_shape_fill.GetBoundSize()
 
-    def get_boundary_continuity(self, i_pos=None):
+    def get_boundary_continuity(self, i_pos):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetBoundaryContinuity(long iPos) As long
                 | 
                 |     Returns the continuity mode for a boundary at specified position in the
@@ -497,12 +498,12 @@ class HybridShapeFill(HybridShape):
         :param int i_pos:
         :return: int
         """
-        return int(self.hybrid_shape_fill.GetBoundaryContinuity(i_pos))
+        return self.hybrid_shape_fill.GetBoundaryContinuity(i_pos)
 
-    def get_constraint_at_position(self, i_pos=None):
+    def get_constraint_at_position(self, i_pos):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetConstraintAtPosition(long iPos) As Reference
                 | 
                 |     Retrieves the constraint at specified position in the hybrid shape fill
@@ -528,7 +529,7 @@ class HybridShapeFill(HybridShape):
     def get_constraints_size(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetConstraintsSize() As long
                 | 
                 |     Returns the number of constraints in the Fill object.
@@ -547,12 +548,12 @@ class HybridShapeFill(HybridShape):
 
         :return: int
         """
-        return int(self.hybrid_shape_fill.GetConstraintsSize())
+        return self.hybrid_shape_fill.GetConstraintsSize()
 
-    def get_support_at_position(self, i_pos=None):
+    def get_support_at_position(self, i_pos):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetSupportAtPosition(long iPos) As Reference
                 | 
                 |     Retrieves the support at specified position in the hybrid shape fill
@@ -575,10 +576,10 @@ class HybridShapeFill(HybridShape):
         """
         return Reference(self.hybrid_shape_fill.GetSupportAtPosition(i_pos))
 
-    def insert_bound_after_position(self, i_boundary=None, i_pos=None):
+    def insert_bound_after_position(self, i_boundary, i_pos):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub InsertBoundAfterPosition(Reference iBoundary,
                 | long iPos)
                 | 
@@ -602,7 +603,7 @@ class HybridShapeFill(HybridShape):
         :param int i_pos:
         :return: None
         """
-        return self.hybrid_shape_fill.InsertBoundAfterPosition(i_boundary, i_pos)
+        return self.hybrid_shape_fill.InsertBoundAfterPosition(i_boundary.com_object, i_pos)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -622,7 +623,7 @@ class HybridShapeFill(HybridShape):
     def remove_all_bound(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveAllBound()
                 | 
                 |     Removes all boundaries of the hybrid shape fill feature object.
@@ -641,7 +642,7 @@ class HybridShapeFill(HybridShape):
     def remove_all_constraints(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveAllConstraints()
                 | 
                 |     Removes all constraints.
@@ -650,10 +651,10 @@ class HybridShapeFill(HybridShape):
         """
         return self.hybrid_shape_fill.RemoveAllConstraints()
 
-    def remove_bound_at_position(self, i_pos=None):
+    def remove_bound_at_position(self, i_pos):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveBoundAtPosition(long iPos)
                 | 
                 |     Removes boundary at specified position in hybrid shape fill feature
@@ -675,10 +676,10 @@ class HybridShapeFill(HybridShape):
         """
         return self.hybrid_shape_fill.RemoveBoundAtPosition(i_pos)
 
-    def remove_constraint(self, i_pos=None):
+    def remove_constraint(self, i_pos):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveConstraint(long iPos)
                 | 
                 |     Removes constraint at specified position in hybrid shape fill feature
@@ -700,10 +701,10 @@ class HybridShapeFill(HybridShape):
         """
         return self.hybrid_shape_fill.RemoveConstraint(i_pos)
 
-    def remove_support_at_position(self, i_pos=None):
+    def remove_support_at_position(self, i_pos):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveSupportAtPosition(long iPos)
                 | 
                 |     Removes support at specified position in hybrid shape fill feature
@@ -725,10 +726,10 @@ class HybridShapeFill(HybridShape):
         """
         return self.hybrid_shape_fill.RemoveSupportAtPosition(i_pos)
 
-    def replace_bound_at_position(self, i_boundary=None, i_pos=None):
+    def replace_bound_at_position(self, i_boundary, i_pos):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub ReplaceBoundAtPosition(Reference iBoundary,
                 | long iPos)
                 | 
@@ -751,7 +752,7 @@ class HybridShapeFill(HybridShape):
         :param int i_pos:
         :return: None
         """
-        return self.hybrid_shape_fill.ReplaceBoundAtPosition(i_boundary, i_pos)
+        return self.hybrid_shape_fill.ReplaceBoundAtPosition(i_boundary.com_object, i_pos)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -768,10 +769,10 @@ class HybridShapeFill(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def replace_constraint(self, i_pos=None, i_constraint=None):
+    def replace_constraint(self, i_pos, i_constraint):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub ReplaceConstraint(long iPos,
                 | Reference iConstraint)
                 | 
@@ -795,7 +796,7 @@ class HybridShapeFill(HybridShape):
         :param Reference i_constraint:
         :return: None
         """
-        return self.hybrid_shape_fill.ReplaceConstraint(i_pos, i_constraint)
+        return self.hybrid_shape_fill.ReplaceConstraint(i_pos, i_constraint.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -812,10 +813,10 @@ class HybridShapeFill(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def replace_support_at_position(self, i_support=None, i_pos=None):
+    def replace_support_at_position(self, i_support, i_pos):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub ReplaceSupportAtPosition(Reference iSupport,
                 | long iPos)
                 | 
@@ -838,7 +839,7 @@ class HybridShapeFill(HybridShape):
         :param int i_pos:
         :return: None
         """
-        return self.hybrid_shape_fill.ReplaceSupportAtPosition(i_support, i_pos)
+        return self.hybrid_shape_fill.ReplaceSupportAtPosition(i_support.com_object, i_pos)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -855,10 +856,10 @@ class HybridShapeFill(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_boundary_continuity(self, i_continuity=None, i_pos=None):
+    def set_boundary_continuity(self, i_continuity, i_pos):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetBoundaryContinuity(long iContinuity,
                 | long iPos)
                 | 
@@ -894,4 +895,4 @@ class HybridShapeFill(HybridShape):
         return self.hybrid_shape_fill.SetBoundaryContinuity(i_continuity, i_pos)
 
     def __repr__(self):
-        return f'HybridShapeFill(name="{ self.name }")'
+        return f'HybridShapeFill(name="{self.name}")'

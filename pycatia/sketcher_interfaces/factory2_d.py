@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -10,14 +10,22 @@
 """
 
 from pycatia.mec_mod_interfaces.geometric_elements import GeometricElements
+from pycatia.sketcher_interfaces.circle2_d import Circle2D
+from pycatia.sketcher_interfaces.control_point2_d import ControlPoint2D
+from pycatia.sketcher_interfaces.ellipse2_d import Ellipse2D
+from pycatia.sketcher_interfaces.geometry2_d import Geometry2D
+from pycatia.sketcher_interfaces.hyperbola2_d import Hyperbola2D
+from pycatia.sketcher_interfaces.line2_d import Line2D
+from pycatia.sketcher_interfaces.parabola2_d import Parabola2D
+from pycatia.sketcher_interfaces.point2_d import Point2D
+from pycatia.sketcher_interfaces.spline2_d import Spline2D
 from pycatia.system_interfaces.any_object import AnyObject
 
 
 class Factory2D(AnyObject):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -34,10 +42,10 @@ class Factory2D(AnyObject):
         super().__init__(com_object)
         self.factory2_d = com_object
 
-    def create_circle(self, i_center_x=None, i_center_y=None, i_radius=None, i_start_param=None, i_end_param=None):
+    def create_circle(self, i_center_x, i_center_y, i_radius, i_start_param, i_end_param):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateCircle(double iCenterX,
                 | double iCenterY,
                 | double iRadius,
@@ -69,14 +77,14 @@ class Factory2D(AnyObject):
         :param float i_radius:
         :param float i_start_param:
         :param float i_end_param:
-        :return: None
+        :return: Circle2D
         """
-        return self.factory2_d.CreateCircle(i_center_x, i_center_y, i_radius, i_start_param, i_end_param)
+        return Circle2D(self.factory2_d.CreateCircle(i_center_x, i_center_y, i_radius, i_start_param, i_end_param))
 
-    def create_closed_circle(self, i_center_x=None, i_center_y=None, i_radius=None):
+    def create_closed_circle(self, i_center_x, i_center_y, i_radius):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateClosedCircle(double iCenterX,
                 | double iCenterY,
                 | double iRadius) As Circle2D
@@ -95,14 +103,14 @@ class Factory2D(AnyObject):
         :param float i_center_x:
         :param float i_center_y:
         :param float i_radius:
-        :return: None
+        :return: Circle2D
         """
-        return self.factory2_d.CreateClosedCircle(i_center_x, i_center_y, i_radius)
+        return Circle2D(self.factory2_d.CreateClosedCircle(i_center_x, i_center_y, i_radius))
 
-    def create_closed_ellipse(self, i_center_x=None, i_center_y=None, i_major_x=None, i_major_y=None, i_major_radius=None, i_minor_radius=None):
+    def create_closed_ellipse(self, i_center_x, i_center_y, i_major_x, i_major_y, i_major_radius, i_minor_radius):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateClosedEllipse(double iCenterX,
                 | double iCenterY,
                 | double iMajorX,
@@ -133,14 +141,23 @@ class Factory2D(AnyObject):
         :param float i_major_y:
         :param float i_major_radius:
         :param float i_minor_radius:
-        :return: None
+        :return: Ellipse2D
         """
-        return self.factory2_d.CreateClosedEllipse(i_center_x, i_center_y, i_major_x, i_major_y, i_major_radius, i_minor_radius)
+        return Ellipse2D(
+            self.factory2_d.CreateClosedEllipse(
+                i_center_x,
+                i_center_y,
+                i_major_x,
+                i_major_y,
+                i_major_radius,
+                i_minor_radius
+            )
+        )
 
-    def create_control_point(self, i_x=None, i_y=None):
+    def create_control_point(self, i_x, i_y):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateControlPoint(double iX,
                 | double iY) As ControlPoint2D
                 | 
@@ -155,14 +172,15 @@ class Factory2D(AnyObject):
 
         :param float i_x:
         :param float i_y:
-        :return: None
+        :return: ControlPoint2D
         """
-        return self.factory2_d.CreateControlPoint(i_x, i_y)
+        return ControlPoint2D(self.factory2_d.CreateControlPoint(i_x, i_y))
 
-    def create_ellipse(self, i_center_x=None, i_center_y=None, i_major_x=None, i_major_y=None, i_major_radius=None, i_minor_radius=None, i_start_param=None, i_end_param=None):
+    def create_ellipse(self, i_center_x, i_center_y, i_major_x, i_major_y, i_major_radius, i_minor_radius,
+                       i_start_param, i_end_param):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateEllipse(double iCenterX,
                 | double iCenterY,
                 | double iMajorX,
@@ -206,14 +224,16 @@ class Factory2D(AnyObject):
         :param float i_minor_radius:
         :param float i_start_param:
         :param float i_end_param:
-        :return: None
+        :return: Ellipse2D
         """
-        return self.factory2_d.CreateEllipse(i_center_x, i_center_y, i_major_x, i_major_y, i_major_radius, i_minor_radius, i_start_param, i_end_param)
+        return Ellipse2D(
+            self.factory2_d.CreateEllipse(i_center_x, i_center_y, i_major_x, i_major_y, i_major_radius, i_minor_radius,
+                                          i_start_param, i_end_param))
 
-    def create_hyperbola(self, i_center_x=None, i_center_y=None, i_axis_x=None, i_axis_y=None, i_major_radius=None, i_minor_radius=None):
+    def create_hyperbola(self, i_center_x, i_center_y, i_axis_x, i_axis_y, i_major_radius, i_minor_radius):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateHyperbola(double iCenterX,
                 | double iCenterY,
                 | double iAxisX,
@@ -244,14 +264,22 @@ class Factory2D(AnyObject):
         :param float i_axis_y:
         :param float i_major_radius:
         :param float i_minor_radius:
-        :return: None
+        :return: Hyperbola2D
         """
-        return self.factory2_d.CreateHyperbola(i_center_x, i_center_y, i_axis_x, i_axis_y, i_major_radius, i_minor_radius)
+        return Hyperbola2D(
+            self.factory2_d.CreateHyperbola(
+                i_center_x,
+                i_center_y,
+                i_axis_x,
+                i_axis_y,
+                i_major_radius, i_minor_radius
+            )
+        )
 
-    def create_intersection(self, i_geometry=None):
+    def create_intersection(self, i_geometry):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateIntersection(Reference iGeometry) As Geometry2D
                 | 
                 |     Creates and returns the intersection of an object with the
@@ -265,12 +293,12 @@ class Factory2D(AnyObject):
         :param Reference i_geometry:
         :return: Geometry2D
         """
-        return Geometry2D(self.factory2_d.CreateIntersection(i_geometry))
+        return Geometry2D(self.factory2_d.CreateIntersection(i_geometry.com_object))
 
-    def create_intersections(self, i_geometry=None):
+    def create_intersections(self, i_geometry):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateIntersections(Reference iGeometry) As
                 | GeometricElements
                 | 
@@ -285,12 +313,12 @@ class Factory2D(AnyObject):
         :param Reference i_geometry:
         :return: GeometricElements
         """
-        return GeometricElements(self.factory2_d.CreateIntersections(i_geometry))
+        return GeometricElements(self.factory2_d.CreateIntersections(i_geometry.com_object))
 
-    def create_line(self, i_x1=None, i_y1=None, i_x2=None, i_y2=None):
+    def create_line(self, i_x1, i_y1, i_x2, i_y2):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateLine(double iX1,
                 | double iY1,
                 | double iX2,
@@ -313,14 +341,14 @@ class Factory2D(AnyObject):
         :param float i_y1:
         :param float i_x2:
         :param float i_y2:
-        :return: None
+        :return: Line2D
         """
-        return self.factory2_d.CreateLine(i_x1, i_y1, i_x2, i_y2)
+        return Line2D(self.factory2_d.CreateLine(i_x1, i_y1, i_x2, i_y2))
 
-    def create_line_from_vector(self, i_x1=None, i_y1=None, i_ux=None, i_uy=None):
+    def create_line_from_vector(self, i_x1, i_y1, i_ux, i_uy):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateLineFromVector(double iX1,
                 | double iY1,
                 | double iUX,
@@ -343,14 +371,14 @@ class Factory2D(AnyObject):
         :param float i_y1:
         :param float i_ux:
         :param float i_uy:
-        :return: None
+        :return: Line2D
         """
-        return self.factory2_d.CreateLineFromVector(i_x1, i_y1, i_ux, i_uy)
+        return Line2D(self.factory2_d.CreateLineFromVector(i_x1, i_y1, i_ux, i_uy))
 
-    def create_parabola(self, i_center_x=None, i_center_y=None, i_axis_x=None, i_axis_y=None, i_focal_distance=None):
+    def create_parabola(self, i_center_x, i_center_y, i_axis_x, i_axis_y, i_focal_distance):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateParabola(double iCenterX,
                 | double iCenterY,
                 | double iAxisX,
@@ -377,14 +405,14 @@ class Factory2D(AnyObject):
         :param float i_axis_x:
         :param float i_axis_y:
         :param float i_focal_distance:
-        :return: None
+        :return: Parabola2D
         """
-        return self.factory2_d.CreateParabola(i_center_x, i_center_y, i_axis_x, i_axis_y, i_focal_distance)
+        return Parabola2D(self.factory2_d.CreateParabola(i_center_x, i_center_y, i_axis_x, i_axis_y, i_focal_distance))
 
-    def create_point(self, i_x=None, i_y=None):
+    def create_point(self, i_x, i_y):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreatePoint(double iX,
                 | double iY) As Point2D
                 | 
@@ -399,14 +427,14 @@ class Factory2D(AnyObject):
 
         :param float i_x:
         :param float i_y:
-        :return: None
+        :return: Point2D
         """
-        return self.factory2_d.CreatePoint(i_x, i_y)
+        return Point2D(self.factory2_d.CreatePoint(i_x, i_y))
 
-    def create_projection(self, i_geometry=None):
+    def create_projection(self, i_geometry):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateProjection(Reference iGeometry) As Geometry2D
                 | 
                 |     Creates and returns the projection of an object on the
@@ -420,12 +448,12 @@ class Factory2D(AnyObject):
         :param Reference i_geometry:
         :return: Geometry2D
         """
-        return Geometry2D(self.factory2_d.CreateProjection(i_geometry))
+        return Geometry2D(self.factory2_d.CreateProjection(i_geometry.com_object))
 
-    def create_projections(self, i_geometry=None):
+    def create_projections(self, i_geometry):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateProjections(Reference iGeometry) As
                 | GeometricElements
                 | 
@@ -440,12 +468,12 @@ class Factory2D(AnyObject):
         :param Reference i_geometry:
         :return: GeometricElements
         """
-        return GeometricElements(self.factory2_d.CreateProjections(i_geometry))
+        return GeometricElements(self.factory2_d.CreateProjections(i_geometry.com_object))
 
-    def create_spline(self, i_poles=None):
+    def create_spline(self, i_poles):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateSpline(CATSafeArrayVariant iPoles) As Spline2D
                 | 
                 |     Creates and returns a 2D b-spline.
@@ -462,4 +490,4 @@ class Factory2D(AnyObject):
         return Spline2D(self.factory2_d.CreateSpline(i_poles))
 
     def __repr__(self):
-        return f'Factory2D(name="{ self.name }")'
+        return f'Factory2D(name="{self.name}")'

@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapeAxisToAxis(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -56,7 +56,7 @@ class HybridShapeAxisToAxis(HybridShape):
     def creation_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CreationMode() As boolean
                 | 
                 |     Returns or sets the creation mode(creation or
@@ -90,7 +90,7 @@ class HybridShapeAxisToAxis(HybridShape):
     def elem_to_transform(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ElemToTransform() As Reference
                 | 
                 |     Returns or sets the element to transform.
@@ -119,7 +119,7 @@ class HybridShapeAxisToAxis(HybridShape):
     def reference_axis(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ReferenceAxis() As Reference
                 | 
                 |     Returns or sets the reference axis.
@@ -148,7 +148,7 @@ class HybridShapeAxisToAxis(HybridShape):
     def target_axis(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TargetAxis() As Reference
                 | 
                 |     Returns or sets the target axis.
@@ -177,7 +177,7 @@ class HybridShapeAxisToAxis(HybridShape):
     def volume_result(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property VolumeResult() As boolean
                 | 
                 |     Returns or sets the volume result.

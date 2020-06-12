@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class SettingRepository(SettingController):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
@@ -35,7 +34,7 @@ class SettingRepository(SettingController):
         super().__init__(com_object)
         self.setting_repository = com_object
 
-    def get_attr(self, i_attr_name=None):
+    def get_attr(self, i_attr_name):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -58,9 +57,9 @@ class SettingRepository(SettingController):
         :param str i_attr_name:
         :return: CATVariant
         """
-        return CATVariant(self.setting_repository.GetAttr(i_attr_name))
+        return self.setting_repository.GetAttr(i_attr_name)
 
-    def get_attr_array(self, i_attr_name=None):
+    def get_attr_array(self, i_attr_name):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -86,7 +85,7 @@ class SettingRepository(SettingController):
         """
         return tuple(self.setting_repository.GetAttrArray(i_attr_name))
 
-    def get_attr_info(self, i_attr_name=None, admin_level=None, locked=None, o_modified=None):
+    def get_attr_info(self, i_attr_name, admin_level, locked, o_modified):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -175,7 +174,7 @@ class SettingRepository(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def put_attr(self, i_attr_name=None, i_attr=None):
+    def put_attr(self, i_attr_name, i_attr):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -217,7 +216,7 @@ class SettingRepository(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def put_attr_array(self, i_attr_name=None, i_array=None):
+    def put_attr_array(self, i_attr_name, i_array):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -259,7 +258,7 @@ class SettingRepository(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_attr_lock(self, i_attr_name=None, i_locked=None):
+    def set_attr_lock(self, i_attr_name, i_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -304,4 +303,4 @@ class SettingRepository(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'SettingRepository(name="{ self.name }")'
+        return f'SettingRepository(name="{self.name}")'

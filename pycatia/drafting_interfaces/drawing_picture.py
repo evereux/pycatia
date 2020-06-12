@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -13,10 +13,9 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class DrawingPicture(AnyObject):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -37,7 +36,7 @@ class DrawingPicture(AnyObject):
     def crop_bottom(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property cropBottom() As double
                 | 
                 |     Returns or sets the cropBottom of the drawing picture. The cropBottom is
@@ -67,7 +66,7 @@ class DrawingPicture(AnyObject):
     def crop_left(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property cropLeft() As double
                 | 
                 |     Returns or sets the cropLeft of the drawing picture. The cropLeft is the
@@ -97,7 +96,7 @@ class DrawingPicture(AnyObject):
     def crop_right(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property cropRight() As double
                 | 
                 |     Returns or sets the cropRight of the drawing picture. The cropRight is the
@@ -127,7 +126,7 @@ class DrawingPicture(AnyObject):
     def crop_top(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property cropTop() As double
                 | 
                 |     Returns or sets the cropTop of the drawing picture. The cropTop is the size
@@ -157,7 +156,7 @@ class DrawingPicture(AnyObject):
     def format(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property format() As CatPictureFormat
                 | 
                 |     Sets the picture format.
@@ -199,7 +198,7 @@ class DrawingPicture(AnyObject):
     def height(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property height() As double
                 | 
                 |     Returns or sets the height of the drawing picture. The height, like any
@@ -228,13 +227,13 @@ class DrawingPicture(AnyObject):
     def ratio_lock(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ratioLock() As boolean
                 | 
                 |     Returns or sets the ratioLock of the drawing picture. The ratioLock is a
                 |     boolean value If ratioLock is True it means that the size must not be changed
                 |     by command in a interactive session.But it does not avoid size modifications
-                |     thru VBscript exec (height and width still available for
+                |     thru VBScript exec (height and width still available for
                 |     modification).
                 | 
                 |     Example:
@@ -260,7 +259,7 @@ class DrawingPicture(AnyObject):
     def width(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property width() As double
                 | 
                 |     Returns or sets the width of the drawing picture. The width, like any
@@ -289,7 +288,7 @@ class DrawingPicture(AnyObject):
     def x(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property x() As double
                 | 
                 |     Returns or sets the x coordinate of the drawing picture position. It is
@@ -321,7 +320,7 @@ class DrawingPicture(AnyObject):
     def y(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property y() As double
                 | 
                 |     Returns or sets the y coordinate of the drawing picture position. It is
@@ -352,7 +351,7 @@ class DrawingPicture(AnyObject):
     def get_original_height(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetOriginalHeight() As double
                 | 
                 |     Gets the original height of the drawing picture. The height, like any
@@ -366,12 +365,12 @@ class DrawingPicture(AnyObject):
 
         :return: float
         """
-        return float(self.drawing_picture.GetOriginalHeight())
+        return self.drawing_picture.GetOriginalHeight()
 
     def get_original_width(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetOriginalWidth() As double
                 | 
                 |     Gets the original width of the drawing picture. The width, like any length,
@@ -385,7 +384,7 @@ class DrawingPicture(AnyObject):
 
         :return: float
         """
-        return float(self.drawing_picture.GetOriginalWidth())
+        return self.drawing_picture.GetOriginalWidth()
 
     def __repr__(self):
-        return f'DrawingPicture(name="{ self.name }")'
+        return f'DrawingPicture(name="{self.name}")'

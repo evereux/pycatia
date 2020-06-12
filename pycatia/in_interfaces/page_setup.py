@@ -411,10 +411,10 @@ class PageSetup(AnyObject):
                 | Example:
                 | This example sets the logo file to the
                 | following file:
-                | e:\\users\\psr\\Images\\Logo.tif
+                | e://users//psr//Images//Logo.tif
                 | for the SetupForMyPrint page
                 | setup.
-                | SetupForMyPrint.Logo = "e:\\users\\psr\\Images\\Logo.tif"
+                | SetupForMyPrint.Logo = "e://users//psr//Images//Logo.tif"
 
 
         :return: str

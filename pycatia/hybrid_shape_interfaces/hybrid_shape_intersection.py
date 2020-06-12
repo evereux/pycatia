@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapeIntersection(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -50,7 +50,7 @@ class HybridShapeIntersection(HybridShape):
     def element1(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Element1() As Reference
                 | 
                 |     Returns or sets the first element to intersect.
@@ -81,7 +81,7 @@ class HybridShapeIntersection(HybridShape):
     def element2(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Element2() As Reference
                 | 
                 |     Returns or sets the second element to intersect.
@@ -112,7 +112,7 @@ class HybridShapeIntersection(HybridShape):
     def extend_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ExtendMode() As long
                 | 
                 |     Returns or sets the ExtendMode flag for intersect.
@@ -151,7 +151,7 @@ class HybridShapeIntersection(HybridShape):
     def extrapolate_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ExtrapolateMode() As boolean
                 | 
                 |     Returns or sets the ExtrapolateMode flag for intersect.
@@ -180,7 +180,7 @@ class HybridShapeIntersection(HybridShape):
     def intersect_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property IntersectMode() As boolean
                 | 
                 |     Returns or sets the IntersectMode flag for intersect.
@@ -209,7 +209,7 @@ class HybridShapeIntersection(HybridShape):
     def point_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property PointType() As long
                 | 
                 |     Returns or sets the PointType flag for intersect.
@@ -238,7 +238,7 @@ class HybridShapeIntersection(HybridShape):
     def solid_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SolidMode() As boolean
                 | 
                 |     Returns or sets the SolidMode flag for intersect.

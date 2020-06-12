@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -12,14 +12,14 @@
 from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.angle import Angle
 from pycatia.knowledge_interfaces.length import Length
+from pycatia.knowledge_interfaces.real_param import RealParam
 from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeBlend(HybridShape):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -56,7 +56,7 @@ class HybridShapeBlend(HybridShape):
     def coupling(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Coupling() As long
                 | 
                 |     Returns or sets the type of coupling between the limits of the
@@ -109,7 +109,7 @@ class HybridShapeBlend(HybridShape):
     def ruled_developable_surface(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property RuledDevelopableSurface() As boolean
                 | 
                 |     Returns or sets the ruled developable surface mode.
@@ -132,7 +132,7 @@ class HybridShapeBlend(HybridShape):
     def smooth_angle_threshold(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SmoothAngleThreshold() As Angle (Read Only)
                 | 
                 |     Returns the angular threshold.
@@ -146,7 +146,7 @@ class HybridShapeBlend(HybridShape):
     def smooth_angle_threshold_activity(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SmoothAngleThresholdActivity() As boolean
                 | 
                 |     Returns or sets information whether a blending operation is smoothed or
@@ -171,7 +171,7 @@ class HybridShapeBlend(HybridShape):
     def smooth_deviation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SmoothDeviation() As Length (Read Only)
                 | 
                 |     Returns the deviation value (length) from guide curves allowed during a
@@ -186,7 +186,7 @@ class HybridShapeBlend(HybridShape):
     def smooth_deviation_activity(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SmoothDeviationActivity() As boolean
                 | 
                 |     Returns or sets information whether a deviation from guide curves is
@@ -213,7 +213,7 @@ class HybridShapeBlend(HybridShape):
     def spine(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Spine() As Reference
                 | 
                 |     Returns or sets a curve used as spine for coupling in Blend computation.
@@ -238,10 +238,10 @@ class HybridShapeBlend(HybridShape):
 
         self.hybrid_shape_blend.Spine = value
 
-    def get_border_mode(self, i_blend_limit=None):
+    def get_border_mode(self, i_blend_limit):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetBorderMode(long iBlendLimit) As long
                 | 
                 |     Returns the type of border to a limit of the blend.
@@ -275,12 +275,12 @@ class HybridShapeBlend(HybridShape):
         :param int i_blend_limit:
         :return: int
         """
-        return int(self.hybrid_shape_blend.GetBorderMode(i_blend_limit))
+        return self.hybrid_shape_blend.GetBorderMode(i_blend_limit)
 
-    def get_closing_point(self, i_blend_limit=None):
+    def get_closing_point(self, i_blend_limit):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetClosingPoint(long iBlendLimit) As Reference
                 | 
                 |     Returns the closing point of a closed curve of the blend.
@@ -309,10 +309,10 @@ class HybridShapeBlend(HybridShape):
         """
         return Reference(self.hybrid_shape_blend.GetClosingPoint(i_blend_limit))
 
-    def get_continuity(self, i_blend_limit=None):
+    def get_continuity(self, i_blend_limit):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetContinuity(long iBlendLimit) As long
                 | 
                 |     Retrieves the continuity of a limit of the blend.
@@ -345,12 +345,12 @@ class HybridShapeBlend(HybridShape):
         :param int i_blend_limit:
         :return: int
         """
-        return int(self.hybrid_shape_blend.GetContinuity(i_blend_limit))
+        return self.hybrid_shape_blend.GetContinuity(i_blend_limit)
 
-    def get_curve(self, i_blend_limit=None):
+    def get_curve(self, i_blend_limit):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetCurve(long iBlendLimit) As Reference
                 | 
                 |     Returns a curve from the blend.
@@ -378,10 +378,10 @@ class HybridShapeBlend(HybridShape):
         """
         return Reference(self.hybrid_shape_blend.GetCurve(i_blend_limit))
 
-    def get_orientation(self, i_blend_limit=None):
+    def get_orientation(self, i_blend_limit):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetOrientation(long iBlendLimit) As long
                 | 
                 |     Returns the orientation of a curve of the blend.
@@ -407,12 +407,12 @@ class HybridShapeBlend(HybridShape):
         :param int i_blend_limit:
         :return: int
         """
-        return int(self.hybrid_shape_blend.GetOrientation(i_blend_limit))
+        return self.hybrid_shape_blend.GetOrientation(i_blend_limit)
 
-    def get_ruled_developable_surface_connection(self, i_blend_limit=None):
+    def get_ruled_developable_surface_connection(self, i_blend_limit):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetRuledDevelopableSurfaceConnection(long iBlendLimit) As
                 | long
                 | 
@@ -440,12 +440,12 @@ class HybridShapeBlend(HybridShape):
         :param int i_blend_limit:
         :return: int
         """
-        return int(self.hybrid_shape_blend.GetRuledDevelopableSurfaceConnection(i_blend_limit))
+        return self.hybrid_shape_blend.GetRuledDevelopableSurfaceConnection(i_blend_limit)
 
-    def get_support(self, i_blend_limit=None):
+    def get_support(self, i_blend_limit):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetSupport(long iBlendLimit) As Reference
                 | 
                 |     Returns a support from the blend.
@@ -473,10 +473,10 @@ class HybridShapeBlend(HybridShape):
         """
         return Reference(self.hybrid_shape_blend.GetSupport(i_blend_limit))
 
-    def get_tension_in_double(self, i_blend_limit=None, i_rank=None):
+    def get_tension_in_double(self, i_blend_limit, i_rank):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetTensionInDouble(long iBlendLimit,
                 | long iRank) As RealParam
                 | 
@@ -514,14 +514,14 @@ class HybridShapeBlend(HybridShape):
 
         :param int i_blend_limit:
         :param int i_rank:
-        :return: None
+        :return: RealParam
         """
-        return self.hybrid_shape_blend.GetTensionInDouble(i_blend_limit, i_rank)
+        return RealParam(self.hybrid_shape_blend.GetTensionInDouble(i_blend_limit, i_rank))
 
-    def get_tension_type(self, i_blend_limit=None):
+    def get_tension_type(self, i_blend_limit):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetTensionType(long iBlendLimit) As long
                 | 
                 |     Returns the tension type of a limit of the blend.
@@ -554,12 +554,12 @@ class HybridShapeBlend(HybridShape):
         :param int i_blend_limit:
         :return: int
         """
-        return int(self.hybrid_shape_blend.GetTensionType(i_blend_limit))
+        return self.hybrid_shape_blend.GetTensionType(i_blend_limit)
 
-    def get_transition(self, i_blend_limit=None):
+    def get_transition(self, i_blend_limit):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetTransition(long iBlendLimit) As long
                 | 
                 |     Returns the transition orientation from a limit of the
@@ -591,12 +591,12 @@ class HybridShapeBlend(HybridShape):
         :param int i_blend_limit:
         :return: int
         """
-        return int(self.hybrid_shape_blend.GetTransition(i_blend_limit))
+        return self.hybrid_shape_blend.GetTransition(i_blend_limit)
 
-    def get_trim_support(self, i_blend_limit=None):
+    def get_trim_support(self, i_blend_limit):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetTrimSupport(long iBlendLimit) As long
                 | 
                 |     Returns whether a support of the blend will be trimmed
@@ -630,12 +630,12 @@ class HybridShapeBlend(HybridShape):
         :param int i_blend_limit:
         :return: int
         """
-        return int(self.hybrid_shape_blend.GetTrimSupport(i_blend_limit))
+        return self.hybrid_shape_blend.GetTrimSupport(i_blend_limit)
 
-    def insert_coupling(self, i_position=None):
+    def insert_coupling(self, i_position):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub InsertCoupling(long iPosition)
                 | 
                 |     Inserts a coupling into the blend.
@@ -658,10 +658,10 @@ class HybridShapeBlend(HybridShape):
         """
         return self.hybrid_shape_blend.InsertCoupling(i_position)
 
-    def insert_coupling_point(self, i_coupling_index=None, i_position=None, i_point=None):
+    def insert_coupling_point(self, i_coupling_index, i_position, i_point):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub InsertCouplingPoint(long iCouplingIndex,
                 | long iPosition,
                 | Reference iPoint)
@@ -696,7 +696,7 @@ class HybridShapeBlend(HybridShape):
         :param Reference i_point:
         :return: None
         """
-        return self.hybrid_shape_blend.InsertCouplingPoint(i_coupling_index, i_position, i_point)
+        return self.hybrid_shape_blend.InsertCouplingPoint(i_coupling_index, i_position, i_point.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -713,10 +713,10 @@ class HybridShapeBlend(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_border_mode(self, i_blend_limit=None, i_border=None):
+    def set_border_mode(self, i_blend_limit, i_border):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetBorderMode(long iBlendLimit,
                 | long iBorder)
                 | 
@@ -766,10 +766,10 @@ class HybridShapeBlend(HybridShape):
         """
         return self.hybrid_shape_blend.SetBorderMode(i_blend_limit, i_border)
 
-    def set_closing_point(self, i_blend_limit=None, i_closing_point=None):
+    def set_closing_point(self, i_blend_limit, i_closing_point):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetClosingPoint(long iBlendLimit,
                 | Reference iClosingPoint)
                 | 
@@ -799,7 +799,7 @@ class HybridShapeBlend(HybridShape):
         :param Reference i_closing_point:
         :return: None
         """
-        return self.hybrid_shape_blend.SetClosingPoint(i_blend_limit, i_closing_point)
+        return self.hybrid_shape_blend.SetClosingPoint(i_blend_limit, i_closing_point.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -816,10 +816,10 @@ class HybridShapeBlend(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_continuity(self, i_blend_limit=None, i_continuity=None):
+    def set_continuity(self, i_blend_limit, i_continuity):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetContinuity(long iBlendLimit,
                 | long iContinuity)
                 | 
@@ -855,10 +855,10 @@ class HybridShapeBlend(HybridShape):
         """
         return self.hybrid_shape_blend.SetContinuity(i_blend_limit, i_continuity)
 
-    def set_curve(self, i_blend_limit=None, i_curve=None):
+    def set_curve(self, i_blend_limit, i_curve):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetCurve(long iBlendLimit,
                 | Reference iCurve)
                 | 
@@ -887,7 +887,7 @@ class HybridShapeBlend(HybridShape):
         :param Reference i_curve:
         :return: None
         """
-        return self.hybrid_shape_blend.SetCurve(i_blend_limit, i_curve)
+        return self.hybrid_shape_blend.SetCurve(i_blend_limit, i_curve.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -904,10 +904,10 @@ class HybridShapeBlend(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_orientation(self, i_blend_limit=None, i_orientation=None):
+    def set_orientation(self, i_blend_limit, i_orientation):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetOrientation(long iBlendLimit,
                 | long iOrientation)
                 | 
@@ -936,10 +936,10 @@ class HybridShapeBlend(HybridShape):
         """
         return self.hybrid_shape_blend.SetOrientation(i_blend_limit, i_orientation)
 
-    def set_ruled_developable_surface_connection(self, i_blend_limit=None, i_blend_connection=None):
+    def set_ruled_developable_surface_connection(self, i_blend_limit, i_blend_connection):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetRuledDevelopableSurfaceConnection(long iBlendLimit,
                 | long iBlendConnection)
 
@@ -949,10 +949,10 @@ class HybridShapeBlend(HybridShape):
         """
         return self.hybrid_shape_blend.SetRuledDevelopableSurfaceConnection(i_blend_limit, i_blend_connection)
 
-    def set_smooth_angle_threshold(self, i_angle=None):
+    def set_smooth_angle_threshold(self, i_angle):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetSmoothAngleThreshold(double iAngle)
                 | 
                 |     Sets the angular threshold.
@@ -967,10 +967,10 @@ class HybridShapeBlend(HybridShape):
         """
         return self.hybrid_shape_blend.SetSmoothAngleThreshold(i_angle)
 
-    def set_smooth_deviation(self, i_length=None):
+    def set_smooth_deviation(self, i_length):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetSmoothDeviation(double iLength)
                 | 
                 |     Sets the deviation value (length) from guide curves allowed during sweeping
@@ -986,10 +986,10 @@ class HybridShapeBlend(HybridShape):
         """
         return self.hybrid_shape_blend.SetSmoothDeviation(i_length)
 
-    def set_support(self, i_blend_limit=None, i_support=None):
+    def set_support(self, i_blend_limit, i_support):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetSupport(long iBlendLimit,
                 | Reference iSupport)
                 | 
@@ -1018,7 +1018,7 @@ class HybridShapeBlend(HybridShape):
         :param Reference i_support:
         :return: None
         """
-        return self.hybrid_shape_blend.SetSupport(i_blend_limit, i_support)
+        return self.hybrid_shape_blend.SetSupport(i_blend_limit, i_support.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1035,10 +1035,10 @@ class HybridShapeBlend(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_tension_in_double(self, i_blend_limit=None, i_tension_type=None, i_first_tension=None, i_second_tension=None):
+    def set_tension_in_double(self, i_blend_limit, i_tension_type, i_first_tension, i_second_tension):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetTensionInDouble(long iBlendLimit,
                 | long iTensionType,
                 | double iFirstTension,
@@ -1087,12 +1087,17 @@ class HybridShapeBlend(HybridShape):
         :param float i_second_tension:
         :return: None
         """
-        return self.hybrid_shape_blend.SetTensionInDouble(i_blend_limit, i_tension_type, i_first_tension, i_second_tension)
+        return self.hybrid_shape_blend.SetTensionInDouble(
+            i_blend_limit,
+            i_tension_type,
+            i_first_tension,
+            i_second_tension
+        )
 
-    def set_tension_type(self, i_blend_limit=None, i_tension_type=None):
+    def set_tension_type(self, i_blend_limit, i_tension_type):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetTensionType(long iBlendLimit,
                 | long iTensionType)
                 | 
@@ -1130,10 +1135,10 @@ class HybridShapeBlend(HybridShape):
         """
         return self.hybrid_shape_blend.SetTensionType(i_blend_limit, i_tension_type)
 
-    def set_transition(self, i_blend_limit=None, i_transition=None):
+    def set_transition(self, i_blend_limit, i_transition):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetTransition(long iBlendLimit,
                 | long iTransition)
                 | 
@@ -1166,10 +1171,10 @@ class HybridShapeBlend(HybridShape):
         """
         return self.hybrid_shape_blend.SetTransition(i_blend_limit, i_transition)
 
-    def set_trim_support(self, i_blend_limit=None, i_trim_support=None):
+    def set_trim_support(self, i_blend_limit, i_trim_support):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetTrimSupport(long iBlendLimit,
                 | long iTrimSupport)
                 | 
@@ -1205,10 +1210,10 @@ class HybridShapeBlend(HybridShape):
         """
         return self.hybrid_shape_blend.SetTrimSupport(i_blend_limit, i_trim_support)
 
-    def unset_closing_point(self, i_blend_limit=None):
+    def unset_closing_point(self, i_blend_limit):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub UnsetClosingPoint(long iBlendLimit)
                 | 
                 |     Unsets the closing point of a closed curve of the blend.
@@ -1232,10 +1237,10 @@ class HybridShapeBlend(HybridShape):
         """
         return self.hybrid_shape_blend.UnsetClosingPoint(i_blend_limit)
 
-    def unset_support(self, i_blend_limit=None):
+    def unset_support(self, i_blend_limit):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub UnsetSupport(long iBlendLimit)
                 | 
                 |     Unsets a support from the blend.
@@ -1260,4 +1265,4 @@ class HybridShapeBlend(HybridShape):
         return self.hybrid_shape_blend.UnsetSupport(i_blend_limit)
 
     def __repr__(self):
-        return f'HybridShapeBlend(name="{ self.name }")'
+        return f'HybridShapeBlend(name="{self.name}")'

@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapeFilletTriTangent(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -46,7 +46,7 @@ class HybridShapeFilletTriTangent(HybridShape):
     def first_elem(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FirstElem() As Reference
                 | 
                 |     Returns or sets the first support surface feature.
@@ -75,7 +75,7 @@ class HybridShapeFilletTriTangent(HybridShape):
     def first_orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FirstOrientation() As long
                 | 
                 |     Returns or sets the first orientation used to specify fillet center
@@ -100,7 +100,7 @@ class HybridShapeFilletTriTangent(HybridShape):
     def remove_elem(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property RemoveElem() As Reference
                 | 
                 |     Returns or sets the support surface to remove feature.
@@ -122,7 +122,7 @@ class HybridShapeFilletTriTangent(HybridShape):
     def remove_orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property RemoveOrientation() As long
                 | 
                 |     Returns or sets the third orientation used to specify fillet center
@@ -147,7 +147,7 @@ class HybridShapeFilletTriTangent(HybridShape):
     def ribbon_relimitation_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property RibbonRelimitationMode() As long
                 | 
                 |     Returns or sets fillet ribbon relimitation mode (or fillet extremities
@@ -171,7 +171,7 @@ class HybridShapeFilletTriTangent(HybridShape):
     def second_elem(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SecondElem() As Reference
                 | 
                 |     Returns or sets the Second support surface feature.
@@ -206,7 +206,7 @@ class HybridShapeFilletTriTangent(HybridShape):
     def second_orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SecondOrientation() As long
                 | 
                 |     Returns or sets the Second orientation used to specify fillet center
@@ -231,7 +231,7 @@ class HybridShapeFilletTriTangent(HybridShape):
     def supports_trim_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SupportsTrimMode() As long
                 | 
                 |     Returns or sets whether support surfaces are trimmed or
@@ -256,7 +256,7 @@ class HybridShapeFilletTriTangent(HybridShape):
     def invert_first_orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub InvertFirstOrientation()
                 | 
                 |     Inverts first orientation used to specify fillet center position.
@@ -268,7 +268,7 @@ class HybridShapeFilletTriTangent(HybridShape):
     def invert_remove_orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub InvertRemoveOrientation()
                 | 
                 |     Inverts third orientation used to specify fillet center position.
@@ -280,7 +280,7 @@ class HybridShapeFilletTriTangent(HybridShape):
     def invert_second_orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub InvertSecondOrientation()
                 | 
                 |     Inverts second orientation used to specify fillet center position.

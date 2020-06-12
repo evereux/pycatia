@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapeSymmetry(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -56,7 +56,7 @@ class HybridShapeSymmetry(HybridShape):
     def creation_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CreationMode() As boolean
                 | 
                 |     Returns or sets the creation mode(creation or
@@ -89,7 +89,7 @@ class HybridShapeSymmetry(HybridShape):
     def elem_to_symmetry(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ElemToSymmetry() As Reference
                 | 
                 |     Returns or sets the element to transform.
@@ -118,7 +118,7 @@ class HybridShapeSymmetry(HybridShape):
     def reference(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Reference() As Reference
                 | 
                 |     Returns or sets the reference element.This element can be a point, a line
@@ -150,7 +150,7 @@ class HybridShapeSymmetry(HybridShape):
     def volume_result(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property VolumeResult() As boolean
                 | 
                 |     Returns or sets the volume result.

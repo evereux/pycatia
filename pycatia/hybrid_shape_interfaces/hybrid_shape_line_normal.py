@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -15,10 +15,9 @@ from pycatia.knowledge_interfaces.length import Length
 
 
 class HybridShapeLineNormal(Line):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -55,7 +54,7 @@ class HybridShapeLineNormal(Line):
     def begin_offset(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property BeginOffset() As Length (Read Only)
                 | 
                 |     Returns the start length of the line.
@@ -77,7 +76,7 @@ class HybridShapeLineNormal(Line):
     def end_offset(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property EndOffset() As Length (Read Only)
                 | 
                 |     Returns the end length of the line.
@@ -99,13 +98,14 @@ class HybridShapeLineNormal(Line):
     def orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Orientation() As long
                 | 
                 |     Returns or Sets the line orientation.
                 |     Orientation allows to reverse the line direction from the reference
                 |     point.
-                |     For a line of L length, it is the same as creating this line with -L length : Orientation : can be 1 or -1
+                |     For a line of L length, it is the same as creating this line with -L length : Orientation :
+                |     can be 1 or -1
                 | 
                 |     Example:
                 |         This example retrieves in oOrientation the starting length for the
@@ -131,7 +131,7 @@ class HybridShapeLineNormal(Line):
     def point(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Point() As Reference
                 | 
                 |     Returns or Sets the starting point of the line.
@@ -161,7 +161,7 @@ class HybridShapeLineNormal(Line):
     def surface(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Surface() As Reference
                 | 
                 |     Returns or Sets the surface to which the line will be
@@ -191,7 +191,7 @@ class HybridShapeLineNormal(Line):
     def get_length_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetLengthType() As long
                 | 
                 |     Gets the length type Default is 0.
@@ -199,16 +199,19 @@ class HybridShapeLineNormal(Line):
                 |     Parameters:
                 | 
                 |         oType
-                |             The length type = 0 : length - the line is limited by its extremities = 1 : infinite - the line is infinite = 2 : infinite start point - the line is infinite on the side of the start point = 3 : infinite end point - the line is infinite on the side of the end point
+                |             The length type = 0 : length - the line is limited by its extremities = 1 :
+                |             infinite - the line is infinite = 2 : infinite start point - the line is infinite on the
+                |             side of the start point = 3 : infinite end point - the line is infinite on the side of
+                |             the end point
 
         :return: int
         """
-        return int(self.hybrid_shape_line_normal.GetLengthType())
+        return self.hybrid_shape_line_normal.GetLengthType()
 
     def get_symmetrical_extension(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetSymmetricalExtension() As boolean
                 | 
                 |     Gets whether the symmetrical extension of the line is
@@ -221,12 +224,12 @@ class HybridShapeLineNormal(Line):
 
         :return: bool
         """
-        return bool(self.hybrid_shape_line_normal.GetSymmetricalExtension())
+        return self.hybrid_shape_line_normal.GetSymmetricalExtension()
 
-    def set_length_type(self, i_type=None):
+    def set_length_type(self, i_type):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetLengthType(long iType)
                 | 
                 |     Sets the length type Default is 0.
@@ -234,17 +237,19 @@ class HybridShapeLineNormal(Line):
                 |     Parameters:
                 | 
                 |         iType
-                |             The length type = 0 : length - the line is limited by its extremities = 1 : infinite - the line is infinite = 2 : infinite start point - the line is infinite on the side of the start point = 3 : infinite end point - the line is infinite on the side of the end point
+                |             The length type = 0 : length - the line is limited by its extremities = 1 : infinite -
+                |             the line is infinite = 2 : infinite start point - the line is infinite on the side of the
+                |             start point = 3 : infinite end point - the line is infinite on the side of the end point
 
         :param int i_type:
         :return: None
         """
         return self.hybrid_shape_line_normal.SetLengthType(i_type)
 
-    def set_symmetrical_extension(self, i_sym=None):
+    def set_symmetrical_extension(self, i_sym):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetSymmetricalExtension(boolean iSym)
                 | 
                 |     Sets the symmetrical extension of the line (start = -end).
@@ -275,4 +280,4 @@ class HybridShapeLineNormal(Line):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'HybridShapeLineNormal(name="{ self.name }")'
+        return f'HybridShapeLineNormal(name="{self.name}")'

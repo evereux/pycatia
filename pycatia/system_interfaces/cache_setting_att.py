@@ -229,7 +229,7 @@ class CacheSettingAtt(SettingController):
 
         self.cache_setting_att.UTCTimeFormat = value
 
-    def get_activation_mode_info(self, admin_level=None, o_locked=None):
+    def get_activation_mode_info(self, admin_level, o_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -245,7 +245,7 @@ class CacheSettingAtt(SettingController):
         """
         return self.cache_setting_att.GetActivationModeInfo(admin_level, o_locked)
 
-    def get_cache_max_size_mo_info(self, admin_level=None, o_locked=None):
+    def get_cache_max_size_mo_info(self, admin_level, o_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -262,7 +262,7 @@ class CacheSettingAtt(SettingController):
         """
         return self.cache_setting_att.GetCacheMaxSizeMoInfo(admin_level, o_locked)
 
-    def get_lod_mode_info(self, admin_level=None, o_locked=None):
+    def get_lod_mode_info(self, admin_level, o_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -279,7 +279,7 @@ class CacheSettingAtt(SettingController):
         """
         return self.cache_setting_att.GetLODModeInfo(admin_level, o_locked)
 
-    def get_local_path_info(self, admin_level=None, o_locked=None):
+    def get_local_path_info(self, admin_level, o_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -319,7 +319,7 @@ class CacheSettingAtt(SettingController):
         """
         return tuple(self.cache_setting_att.GetReleasePath())
 
-    def get_release_path_info(self, admin_level=None, locked=None):
+    def get_release_path_info(self, admin_level, locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -336,7 +336,7 @@ class CacheSettingAtt(SettingController):
         """
         return self.cache_setting_att.GetReleasePathInfo(admin_level, locked)
 
-    def get_released_voxel_info(self, admin_level=None, o_locked=None):
+    def get_released_voxel_info(self, admin_level, o_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -353,7 +353,7 @@ class CacheSettingAtt(SettingController):
         """
         return self.cache_setting_att.GetReleasedVoxelInfo(admin_level, o_locked)
 
-    def get_size_control_info(self, admin_level=None, o_locked=None):
+    def get_size_control_info(self, admin_level, o_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -370,7 +370,7 @@ class CacheSettingAtt(SettingController):
         """
         return self.cache_setting_att.GetSizeControlInfo(admin_level, o_locked)
 
-    def get_timestamp_mode_info(self, admin_level=None, o_locked=None):
+    def get_timestamp_mode_info(self, admin_level, o_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -387,7 +387,7 @@ class CacheSettingAtt(SettingController):
         """
         return self.cache_setting_att.GetTimestampModeInfo(admin_level, o_locked)
 
-    def get_utc_time_format_info(self, admin_level=None, o_locked=None):
+    def get_utc_time_format_info(self, admin_level, o_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -404,7 +404,7 @@ class CacheSettingAtt(SettingController):
         """
         return self.cache_setting_att.GetUTCTimeFormatInfo(admin_level, o_locked)
 
-    def put_release_path(self, i_rel_path=None):
+    def put_release_path(self, i_rel_path):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -443,7 +443,7 @@ class CacheSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_activation_mode_lock(self, i_locked=None):
+    def set_activation_mode_lock(self, i_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -472,7 +472,7 @@ class CacheSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_cache_max_size_mo_lock(self, i_locked=None):
+    def set_cache_max_size_mo_lock(self, i_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -501,7 +501,7 @@ class CacheSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_lod_mode_lock(self, i_locked=None):
+    def set_lod_mode_lock(self, i_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -530,7 +530,7 @@ class CacheSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_local_path_lock(self, i_locked=None):
+    def set_local_path_lock(self, i_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -559,7 +559,7 @@ class CacheSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_release_path_lock(self, i_locked=None):
+    def set_release_path_lock(self, i_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -588,7 +588,7 @@ class CacheSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_released_voxel_lock(self, i_locked=None):
+    def set_released_voxel_lock(self, i_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -617,7 +617,7 @@ class CacheSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_size_control_lock(self, i_locked=None):
+    def set_size_control_lock(self, i_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -646,7 +646,7 @@ class CacheSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_timestamp_mode_lock(self, i_locked=None):
+    def set_timestamp_mode_lock(self, i_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -675,7 +675,7 @@ class CacheSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_utc_time_format_lock(self, i_locked=None):
+    def set_utc_time_format_lock(self, i_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))

@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -19,7 +19,7 @@ class HybridShape3DCurveOffset(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -46,7 +46,7 @@ class HybridShape3DCurveOffset(HybridShape):
     def corner_radius_value(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CornerRadiusValue() As Length
                 | 
                 |     Returns or sets the Corner Radius Value.
@@ -68,7 +68,7 @@ class HybridShape3DCurveOffset(HybridShape):
     def corner_tension_value(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CornerTensionValue() As double
                 | 
                 |     Returns or sets the Corner Tension Value.
@@ -90,7 +90,7 @@ class HybridShape3DCurveOffset(HybridShape):
     def curve_to_offset(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CurveToOffset() As Reference
                 | 
                 |     Returns or sets the curve to offset.
@@ -112,7 +112,7 @@ class HybridShape3DCurveOffset(HybridShape):
     def direction(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Direction() As HybridShapeDirection
                 | 
                 |     Returns or sets the direction.
@@ -134,7 +134,7 @@ class HybridShape3DCurveOffset(HybridShape):
     def invert_direction(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property InvertDirection() As boolean
                 | 
                 |     Returns or sets the direction orientation.
@@ -156,7 +156,7 @@ class HybridShape3DCurveOffset(HybridShape):
     def offset_value(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property OffsetValue() As Length
                 | 
                 |     Returns or sets the OffsetValue.

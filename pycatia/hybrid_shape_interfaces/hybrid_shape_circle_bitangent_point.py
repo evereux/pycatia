@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -55,7 +55,7 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
     def begin_of_circle(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property BeginOfCircle() As long
                 | 
                 |     Return or Set the number of the beginning curve of the circle. This
@@ -86,7 +86,7 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
     def curve1(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Curve1() As Reference
                 | 
                 |     Returns or sets the first curve to which the circle is or will be
@@ -118,7 +118,7 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
     def curve2(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Curve2() As Reference
                 | 
                 |     Returns or sets the second curve to which the circle is or will be
@@ -149,7 +149,7 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
     def discrimination_index(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DiscriminationIndex() As long
                 | 
                 |     Return or set the discrimination index of the current circle. Several
@@ -183,7 +183,7 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
     def orientation1(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Orientation1() As long
                 | 
                 |     Returns or sets the orientation of the first curve to which the circle is
@@ -220,7 +220,7 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
     def orientation2(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Orientation2() As long
                 | 
                 |     Returns or sets the orientation of the second curve to which the circle is
@@ -257,7 +257,7 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
     def pt(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Pt() As Reference
                 | 
                 |     Returns or sets the circle passing point. This point must lie on second
@@ -288,7 +288,7 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
     def support(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets the circle support surface.
@@ -318,7 +318,7 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
     def tangent_orientation1(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TangentOrientation1() As long
                 | 
                 |     Returns or sets the tangent orientation of the circle first reference
@@ -351,7 +351,7 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
     def tangent_orientation2(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TangentOrientation2() As long
                 | 
                 |     Returns or sets the tangent orientation of the circle second reference
@@ -384,7 +384,7 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
     def trim_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TrimMode() As long
                 | 
                 |     Returns or sets whether the circle reference curves are or should be

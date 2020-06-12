@@ -7,6 +7,7 @@ from pycatia.hybrid_shape_interfaces.hybrid_shape_factory import HybridShapeFact
 from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.parameters import Parameters
 from pycatia.knowledge_interfaces.relations import Relations
+from pycatia.part_interfaces.shape_factory import ShapeFactory
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
 from .axis_systems import AxisSystems
@@ -17,7 +18,7 @@ from .factory import Factory
 from .geometric_elements import GeometricElements
 from .hybrid_bodies import HybridBodies
 from .ordered_geometrical_sets import OrderedGeometricalSets
-from .originel_ements import OriginElements
+from .origin_ements import OriginElements
 
 
 class Part(AnyObject):
@@ -220,41 +221,52 @@ class Part(AnyObject):
     def in_work_object(self):
         """
         .. note::
-            CAA V5 Visual Basic help
-
-                | InWorkObject
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property InWorkObject() As AnyObject
-                | 
-                | Returns or sets the in work object of the part. The in work object is
-                | the object after which a new object is added.  Example: Set partRoot =
-                | partDoc.Part Set partRoot.InWorkObject = cylindricPad If (
-                | partRoot.InWorkObject <> cylindricPad ) Then      MsgBox "There is a
-                | big problem" End If
+                |
+                |     Returns or sets the in work object of the part. The in work object is the
+                |     object after which a new object is added.
+                |
+                |     Example:
+                |
+                |      Set partRoot = partDoc.Part
+                |      Set partRoot.InWorkObject = cylindricPad
+                |      If ( partRoot.InWorkObject <> cylindricPad ) Then
+                |           MsgBox "There is a big problem"
+                |      End If
 
-        :return: AnyObject()
+        :return: AnyObject
         """
+
         return AnyObject(self.part.InWorkObject)
 
     @in_work_object.setter
-    def in_work_object(self, work_object):
+    def in_work_object(self, value):
+        """
+        :param AnyObject value:
+        """
 
-        self.part.InWorkObject = work_object.com_object
+        self.part.InWorkObject = value.com_object
 
     @property
     def main_body(self):
         """
         .. note::
-            CAA V5 Visual Basic help
-
-                | MainBody
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property MainBody() As Body
-                | 
-                | Returns or sets the main body of the part.  Example:The following
-                | example returns the main body  of the part of the current document.
-                | Dim mainBody As Body Set mainBody=CATIA.ActiveDocument.Part.MainBody
+                |
+                |     Returns or sets the main body of the part.
+                |
+                |     Example:
+                |         The following example returns the main body of the part of the current
+                |         document.
+                |
+                |          Dim mainBody As Body
+                |          Set mainBody=CATIA.ActiveDocument.Part.MainBody
 
-        :return: Body()
+        :return: Body
         """
+
         return Body(self.part.MainBody)
 
     @property
@@ -352,7 +364,7 @@ class Part(AnyObject):
 
         :return: Factory()
         """
-        return Factory(self.part.ShapeFactory)
+        return ShapeFactory(self.part.ShapeFactory)
 
     @property
     def sheet_metal_factory(self):
@@ -657,11 +669,11 @@ class Part(AnyObject):
         """
 
         Returns the pathlib.Path() object of the document fullname.
-        example e:\\users\\psr\\Parts\\MyNicePart.CATPart
+        example e://users//psr//Parts//MyNicePart.CATPart
         >>> Part.path().name
         MyNicePart.CATPart
         >>> Part.path().parent
-        e:\\users\\psr\\Parts\\
+        e://users//psr//Parts//
         >>> Part.path().suffix
         .CATPart
 

@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -19,7 +19,7 @@ class HybridShapeCurveSmooth(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -57,7 +57,7 @@ class HybridShapeCurveSmooth(HybridShape):
     def correction_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CorrectionMode() As long
                 | 
                 |     Returns or sets the correction mode (threshold, point, tangency or
@@ -99,7 +99,7 @@ class HybridShapeCurveSmooth(HybridShape):
     def curvature_threshold(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CurvatureThreshold() As double
                 | 
                 |     Returns or sets the CurvatureThreshold.
@@ -127,7 +127,7 @@ class HybridShapeCurveSmooth(HybridShape):
     def curvature_threshold_activity(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CurvatureThresholdActivity() As boolean
                 | 
                 |     Returns or sets the CurvatureThresholdActivity.
@@ -155,7 +155,7 @@ class HybridShapeCurveSmooth(HybridShape):
     def curve_to_smooth(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CurveToSmooth() As Reference
                 | 
                 |     Returns or sets the curve to smooth.
@@ -183,7 +183,7 @@ class HybridShapeCurveSmooth(HybridShape):
     def end_extremity_continuity(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property EndExtremityContinuity() As long
                 | 
                 |     Returns or sets the continuity condition (curvature, tangency or point)
@@ -223,7 +223,7 @@ class HybridShapeCurveSmooth(HybridShape):
     def maximum_deviation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property MaximumDeviation() As Length (Read Only)
                 | 
                 |     Returns the MaximumDeviation.
@@ -243,7 +243,7 @@ class HybridShapeCurveSmooth(HybridShape):
     def maximum_deviation_activity(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property MaximumDeviationActivity() As boolean
                 | 
                 |     Returns or sets the MaximumDeviationActivity.
@@ -271,7 +271,7 @@ class HybridShapeCurveSmooth(HybridShape):
     def start_extremity_continuity(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property StartExtremityContinuity() As long
                 | 
                 |     Returns or sets the continuity condition (curvature, tangency or point)
@@ -311,7 +311,7 @@ class HybridShapeCurveSmooth(HybridShape):
     def support(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets the support of the curve.
@@ -340,7 +340,7 @@ class HybridShapeCurveSmooth(HybridShape):
     def tangency_threshold(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TangencyThreshold() As Angle (Read Only)
                 | 
                 |     Returns the TangencyThreshold.
@@ -360,7 +360,7 @@ class HybridShapeCurveSmooth(HybridShape):
     def topology_simplification_activity(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TopologySimplificationActivity() As boolean
                 | 
                 |     Returns or sets the TopologySimplificationActivity.

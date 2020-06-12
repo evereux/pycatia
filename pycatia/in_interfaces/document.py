@@ -94,15 +94,6 @@ class Document(AnyObject):
         return self.document.Saved
 
     @property
-    def name(self):
-        """
-
-        :return: str - document name.
-        """
-
-        return self.document.Name
-
-    @property
     def full_name(self):
         """
 
@@ -117,7 +108,7 @@ class Document(AnyObject):
             |     DocFullName = Doc.FullName
             |
             | The returned value is like this:
-            |     e:\\users\\psr\\Parts\\MyNicePart.CATPart
+            |     e://users//psr//Parts//MyNicePart.CATPart
 
 
         :return: str - full path document name
@@ -162,11 +153,11 @@ class Document(AnyObject):
 
         Returns the pathlib.Path() object of the document fullname.
 
-        example e:\\users\\psr\\Parts\\MyNicePart.CATPart
+        example e://users//psr//Parts//MyNicePart.CATPart
         >>> Document.path().name
         MyNicePart.CATPart
         >>> Document.path().parent
-        e:\\users\\psr\\Parts\\
+        e://users//psr//Parts//
         >>> Document.path().suffix
         .CATPart
 

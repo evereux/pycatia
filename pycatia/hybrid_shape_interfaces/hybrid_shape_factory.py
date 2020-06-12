@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -9,38 +9,103 @@
         
 """
 
+from pycatia.hybrid_shape_interfaces.hybrid_shape3_d_curve_offset import HybridShape3DCurveOffset
+from pycatia.hybrid_shape_interfaces.hybrid_shape_affinity import HybridShapeAffinity
+from pycatia.hybrid_shape_interfaces.hybrid_shape_assemble import HybridShapeAssemble
 from pycatia.hybrid_shape_interfaces.hybrid_shape_axis_line import HybridShapeAxisLine
+from pycatia.hybrid_shape_interfaces.hybrid_shape_axis_to_axis import HybridShapeAxisToAxis
 from pycatia.hybrid_shape_interfaces.hybrid_shape_blend import HybridShapeBlend
 from pycatia.hybrid_shape_interfaces.hybrid_shape_boundary import HybridShapeBoundary
 from pycatia.hybrid_shape_interfaces.hybrid_shape_bump import HybridShapeBump
+from pycatia.hybrid_shape_interfaces.hybrid_shape_circle2_points_rad import HybridShapeCircle2PointsRad
+from pycatia.hybrid_shape_interfaces.hybrid_shape_circle3_points import HybridShapeCircle3Points
+from pycatia.hybrid_shape_interfaces.hybrid_shape_circle_bitangent_point import HybridShapeCircleBitangentPoint
+from pycatia.hybrid_shape_interfaces.hybrid_shape_circle_bitangent_radius import HybridShapeCircleBitangentRadius
+from pycatia.hybrid_shape_interfaces.hybrid_shape_circle_center_axis import HybridShapeCircleCenterAxis
+from pycatia.hybrid_shape_interfaces.hybrid_shape_circle_center_tangent import HybridShapeCircleCenterTangent
+from pycatia.hybrid_shape_interfaces.hybrid_shape_circle_ctr_pt import HybridShapeCircleCtrPt
+from pycatia.hybrid_shape_interfaces.hybrid_shape_circle_ctr_rad import HybridShapeCircleCtrRad
 from pycatia.hybrid_shape_interfaces.hybrid_shape_circle_explicit import HybridShapeCircleExplicit
+from pycatia.hybrid_shape_interfaces.hybrid_shape_circle_tritangent import HybridShapeCircleTritangent
+from pycatia.hybrid_shape_interfaces.hybrid_shape_combine import HybridShapeCombine
+from pycatia.hybrid_shape_interfaces.hybrid_shape_conic import HybridShapeConic
+from pycatia.hybrid_shape_interfaces.hybrid_shape_connect import HybridShapeConnect
+from pycatia.hybrid_shape_interfaces.hybrid_shape_corner import HybridShapeCorner
 from pycatia.hybrid_shape_interfaces.hybrid_shape_curve_explicit import HybridShapeCurveExplicit
+from pycatia.hybrid_shape_interfaces.hybrid_shape_curve_par import HybridShapeCurvePar
 from pycatia.hybrid_shape_interfaces.hybrid_shape_curve_smooth import HybridShapeCurveSmooth
+from pycatia.hybrid_shape_interfaces.hybrid_shape_cylinder import HybridShapeCylinder
+from pycatia.hybrid_shape_interfaces.hybrid_shape_develop import HybridShapeDevelop
 from pycatia.hybrid_shape_interfaces.hybrid_shape_direction import HybridShapeDirection
 from pycatia.hybrid_shape_interfaces.hybrid_shape_extract import HybridShapeExtract
 from pycatia.hybrid_shape_interfaces.hybrid_shape_extract_multi import HybridShapeExtractMulti
+from pycatia.hybrid_shape_interfaces.hybrid_shape_extrapol import HybridShapeExtrapol
+from pycatia.hybrid_shape_interfaces.hybrid_shape_extremum import HybridShapeExtremum
+from pycatia.hybrid_shape_interfaces.hybrid_shape_extremum_polar import HybridShapeExtremumPolar
+from pycatia.hybrid_shape_interfaces.hybrid_shape_extrude import HybridShapeExtrude
 from pycatia.hybrid_shape_interfaces.hybrid_shape_fill import HybridShapeFill
+from pycatia.hybrid_shape_interfaces.hybrid_shape_fillet_bi_tangent import HybridShapeFilletBiTangent
+from pycatia.hybrid_shape_interfaces.hybrid_shape_fillet_tri_tangent import HybridShapeFilletTriTangent
 from pycatia.hybrid_shape_interfaces.hybrid_shape_healing import HybridShapeHealing
+from pycatia.hybrid_shape_interfaces.hybrid_shape_helix import HybridShapeHelix
 from pycatia.hybrid_shape_interfaces.hybrid_shape_integrated_law import HybridShapeIntegratedLaw
+from pycatia.hybrid_shape_interfaces.hybrid_shape_intersection import HybridShapeIntersection
+from pycatia.hybrid_shape_interfaces.hybrid_shape_inverse import HybridShapeInverse
+from pycatia.hybrid_shape_interfaces.hybrid_shape_law_dist_proj import HybridShapeLawDistProj
+from pycatia.hybrid_shape_interfaces.hybrid_shape_line_angle import HybridShapeLineAngle
+from pycatia.hybrid_shape_interfaces.hybrid_shape_line_bi_tangent import HybridShapeLineBiTangent
+from pycatia.hybrid_shape_interfaces.hybrid_shape_line_bisecting import HybridShapeLineBisecting
 from pycatia.hybrid_shape_interfaces.hybrid_shape_line_explicit import HybridShapeLineExplicit
+from pycatia.hybrid_shape_interfaces.hybrid_shape_line_normal import HybridShapeLineNormal
+from pycatia.hybrid_shape_interfaces.hybrid_shape_line_pt_dir import HybridShapeLinePtDir
 from pycatia.hybrid_shape_interfaces.hybrid_shape_line_pt_pt import HybridShapeLinePtPt
+from pycatia.hybrid_shape_interfaces.hybrid_shape_line_tangency import HybridShapeLineTangency
 from pycatia.hybrid_shape_interfaces.hybrid_shape_loft import HybridShapeLoft
+from pycatia.hybrid_shape_interfaces.hybrid_shape_mid_surface import HybridShapeMidSurface
+from pycatia.hybrid_shape_interfaces.hybrid_shape_near import HybridShapeNear
+from pycatia.hybrid_shape_interfaces.hybrid_shape_offset import HybridShapeOffset
 from pycatia.hybrid_shape_interfaces.hybrid_shape_plane1_curve import HybridShapePlane1Curve
+from pycatia.hybrid_shape_interfaces.hybrid_shape_plane1_line1_pt import HybridShapePlane1Line1Pt
+from pycatia.hybrid_shape_interfaces.hybrid_shape_plane2_lines import HybridShapePlane2Lines
+from pycatia.hybrid_shape_interfaces.hybrid_shape_plane3_points import HybridShapePlane3Points
+from pycatia.hybrid_shape_interfaces.hybrid_shape_plane_angle import HybridShapePlaneAngle
+from pycatia.hybrid_shape_interfaces.hybrid_shape_plane_equation import HybridShapePlaneEquation
 from pycatia.hybrid_shape_interfaces.hybrid_shape_plane_explicit import HybridShapePlaneExplicit
+from pycatia.hybrid_shape_interfaces.hybrid_shape_plane_mean import HybridShapePlaneMean
+from pycatia.hybrid_shape_interfaces.hybrid_shape_plane_normal import HybridShapePlaneNormal
+from pycatia.hybrid_shape_interfaces.hybrid_shape_plane_offset import HybridShapePlaneOffset
+from pycatia.hybrid_shape_interfaces.hybrid_shape_plane_offset_pt import HybridShapePlaneOffsetPt
+from pycatia.hybrid_shape_interfaces.hybrid_shape_plane_tangent import HybridShapePlaneTangent
+from pycatia.hybrid_shape_interfaces.hybrid_shape_point_between import HybridShapePointBetween
 from pycatia.hybrid_shape_interfaces.hybrid_shape_point_center import HybridShapePointCenter
 from pycatia.hybrid_shape_interfaces.hybrid_shape_point_coord import HybridShapePointCoord
 from pycatia.hybrid_shape_interfaces.hybrid_shape_point_explicit import HybridShapePointExplicit
+from pycatia.hybrid_shape_interfaces.hybrid_shape_point_on_curve import HybridShapePointOnCurve
+from pycatia.hybrid_shape_interfaces.hybrid_shape_point_on_plane import HybridShapePointOnPlane
+from pycatia.hybrid_shape_interfaces.hybrid_shape_point_on_surface import HybridShapePointOnSurface
+from pycatia.hybrid_shape_interfaces.hybrid_shape_point_tangent import HybridShapePointTangent
 from pycatia.hybrid_shape_interfaces.hybrid_shape_polyline import HybridShapePolyline
 from pycatia.hybrid_shape_interfaces.hybrid_shape_position_transfo import HybridShapePositionTransfo
+from pycatia.hybrid_shape_interfaces.hybrid_shape_project import HybridShapeProject
+from pycatia.hybrid_shape_interfaces.hybrid_shape_reflect_line import HybridShapeReflectLine
+from pycatia.hybrid_shape_interfaces.hybrid_shape_revol import HybridShapeRevol
 from pycatia.hybrid_shape_interfaces.hybrid_shape_rotate import HybridShapeRotate
+from pycatia.hybrid_shape_interfaces.hybrid_shape_scaling import HybridShapeScaling
 from pycatia.hybrid_shape_interfaces.hybrid_shape_section import HybridShapeSection
+from pycatia.hybrid_shape_interfaces.hybrid_shape_sphere import HybridShapeSphere
 from pycatia.hybrid_shape_interfaces.hybrid_shape_spine import HybridShapeSpine
+from pycatia.hybrid_shape_interfaces.hybrid_shape_spiral import HybridShapeSpiral
 from pycatia.hybrid_shape_interfaces.hybrid_shape_spline import HybridShapeSpline
+from pycatia.hybrid_shape_interfaces.hybrid_shape_split import HybridShapeSplit
 from pycatia.hybrid_shape_interfaces.hybrid_shape_surface_explicit import HybridShapeSurfaceExplicit
 from pycatia.hybrid_shape_interfaces.hybrid_shape_sweep_circle import HybridShapeSweepCircle
 from pycatia.hybrid_shape_interfaces.hybrid_shape_sweep_conic import HybridShapeSweepConic
+from pycatia.hybrid_shape_interfaces.hybrid_shape_sweep_explicit import HybridShapeSweepExplicit
 from pycatia.hybrid_shape_interfaces.hybrid_shape_sweep_line import HybridShapeSweepLine
+from pycatia.hybrid_shape_interfaces.hybrid_shape_symmetry import HybridShapeSymmetry
+from pycatia.hybrid_shape_interfaces.hybrid_shape_transfer import HybridShapeTransfer
 from pycatia.hybrid_shape_interfaces.hybrid_shape_translate import HybridShapeTranslate
+from pycatia.hybrid_shape_interfaces.hybrid_shape_trim import HybridShapeTrim
 from pycatia.hybrid_shape_interfaces.hybrid_shape_unfold import HybridShapeUnfold
 from pycatia.hybrid_shape_interfaces.hybrid_shape_volume_explicit import HybridShapeVolumeExplicit
 from pycatia.hybrid_shape_interfaces.hybrid_shape_wrap_curve import HybridShapeWrapCurve
@@ -51,7 +116,7 @@ from pycatia.mec_mod_interfaces.factory import Factory
 class HybridShapeFactory(Factory):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -84,11 +149,10 @@ class HybridShapeFactory(Factory):
         super().__init__(com_object)
         self.hybrid_shape_factory = com_object
 
-    def add_new3_d_corner(self, i_element1=None, i_element2=None, i_direction=None, i_radius=None, i_orientation1=None,
-                          i_orientation2=None, i_trim=None):
+    def add_new3_d_corner(self, i_element1, i_element2, i_direction, i_radius, i_orientation1, i_orientation2, i_trim):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNew3DCorner(Reference iElement1,
                 | Reference iElement2,
                 | HybridShapeDirection iDirection,
@@ -131,16 +195,20 @@ class HybridShapeFactory(Factory):
         :param int i_orientation1:
         :param int i_orientation2:
         :param bool i_trim:
-        :return: None
+        :return: HybridShapeCorner
         """
-        return self.hybrid_shape_factory.AddNew3DCorner(i_element1, i_element2, i_direction, i_radius, i_orientation1,
-                                                        i_orientation2, i_trim)
+        return HybridShapeCorner(self.hybrid_shape_factory.AddNew3DCorner(i_element1.com_object,
+                                                                          i_element2.com_object,
+                                                                          i_direction.com_object,
+                                                                          i_radius,
+                                                                          i_orientation1,
+                                                                          i_orientation2,
+                                                                          i_trim))
 
-    def add_new3_d_curve_offset(self, i_curve_to_offset=None, i_direction=None, i_offset=None, i_corner_radius=None,
-                                i_corner_tension=None):
+    def add_new3_d_curve_offset(self, i_curve_to_offset, i_direction, i_offset, i_corner_radius, i_corner_tension):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNew3DCurveOffset(Reference iCurveToOffset,
                 | HybridShapeDirection iDirection,
                 | double iOffset,
@@ -170,15 +238,22 @@ class HybridShapeFactory(Factory):
         :param float i_offset:
         :param float i_corner_radius:
         :param float i_corner_tension:
-        :return: None
+        :return: HybridShape3DCurveOffset
         """
-        return self.hybrid_shape_factory.AddNew3DCurveOffset(i_curve_to_offset, i_direction, i_offset, i_corner_radius,
-                                                             i_corner_tension)
+        return HybridShape3DCurveOffset(
+            self.hybrid_shape_factory.AddNew3DCurveOffset(
+                i_curve_to_offset.com_object,
+                i_direction.com_object,
+                i_offset,
+                i_corner_radius,
+                i_corner_tension
+            )
+        )
 
-    def add_new_affinity(self, i_element=None, i_x_ratio=None, i_y_ratio=None, i_z_ratio=None):
+    def add_new_affinity(self, i_element, i_x_ratio, i_y_ratio, i_z_ratio):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewAffinity(Reference iElement,
                 | double iXRatio,
                 | double iYRatio,
@@ -207,14 +282,21 @@ class HybridShapeFactory(Factory):
         :param float i_x_ratio:
         :param float i_y_ratio:
         :param float i_z_ratio:
-        :return: None
+        :return: HybridShapeAffinity
         """
-        return self.hybrid_shape_factory.AddNewAffinity(i_element, i_x_ratio, i_y_ratio, i_z_ratio)
+        return HybridShapeAffinity(
+            self.hybrid_shape_factory.AddNewAffinity(
+                i_element.com_object,
+                i_x_ratio,
+                i_y_ratio,
+                i_z_ratio
+            )
+        )
 
-    def add_new_axis_line(self, i_element=None):
+    def add_new_axis_line(self, i_element):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewAxisLine(Reference iElement) As
                 | HybridShapeAxisLine
                 | 
@@ -231,12 +313,12 @@ class HybridShapeFactory(Factory):
         :param Reference i_element:
         :return: HybridShapeAxisLine
         """
-        return HybridShapeAxisLine(self.hybrid_shape_factory.AddNewAxisLine(i_element))
+        return HybridShapeAxisLine(self.hybrid_shape_factory.AddNewAxisLine(i_element.com_object))
 
-    def add_new_axis_to_axis(self, i_object=None, i_reference_axis=None, i_target_axis=None):
+    def add_new_axis_to_axis(self, i_object, i_reference_axis, i_target_axis):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewAxisToAxis(Reference iObject,
                 | Reference iReferenceAxis,
                 | Reference iTargetAxis) As HybridShapeAxisToAxis
@@ -258,14 +340,20 @@ class HybridShapeFactory(Factory):
         :param Reference i_object:
         :param Reference i_reference_axis:
         :param Reference i_target_axis:
-        :return: None
+        :return: HybridShapeAxisToAxis
         """
-        return self.hybrid_shape_factory.AddNewAxisToAxis(i_object, i_reference_axis, i_target_axis)
+        return HybridShapeAxisToAxis(
+            self.hybrid_shape_factory.AddNewAxisToAxis(
+                i_object.com_object,
+                i_reference_axis.com_object,
+                i_target_axis.com_object
+            )
+        )
 
     def add_new_blend(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewBlend() As HybridShapeBlend
                 | 
                 |     Creates a new blend surface within the current body.
@@ -279,10 +367,10 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapeBlend(self.hybrid_shape_factory.AddNewBlend())
 
-    def add_new_boundary(self, i_initial_element=None, i_support=None, i_typede_propagation=None):
+    def add_new_boundary(self, i_initial_element, i_support, i_typede_propagation):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewBoundary(Reference iInitialElement,
                 | Reference iSupport,
                 | long iTypedePropagation) As HybridShapeBoundary
@@ -314,14 +402,20 @@ class HybridShapeFactory(Factory):
         :param Reference i_initial_element:
         :param Reference i_support:
         :param int i_typede_propagation:
-        :return: None
+        :return: HybridShapeBoundary
         """
-        return self.hybrid_shape_factory.AddNewBoundary(i_initial_element, i_support, i_typede_propagation)
+        return HybridShapeBoundary(
+            self.hybrid_shape_factory.AddNewBoundary(
+                i_initial_element.com_object,
+                i_support.com_object,
+                i_typede_propagation
+            )
+        )
 
-    def add_new_boundary_of_surface(self, surface=None):
+    def add_new_boundary_of_surface(self, surface):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewBoundaryOfSurface(Reference Surface) As
                 | HybridShapeBoundary
                 | 
@@ -339,12 +433,12 @@ class HybridShapeFactory(Factory):
         :param Reference surface:
         :return: HybridShapeBoundary
         """
-        return HybridShapeBoundary(self.hybrid_shape_factory.AddNewBoundaryOfSurface(surface))
+        return HybridShapeBoundary(self.hybrid_shape_factory.AddNewBoundaryOfSurface(surface.com_object))
 
-    def add_new_bump(self, i_body_to_bump=None):
+    def add_new_bump(self, i_body_to_bump):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewBump(Reference iBodyToBump) As HybridShapeBump
                 | 
                 |     Creates a new Bump within the current body.
@@ -360,13 +454,12 @@ class HybridShapeFactory(Factory):
         :param Reference i_body_to_bump:
         :return: HybridShapeBump
         """
-        return HybridShapeBump(self.hybrid_shape_factory.AddNewBump(i_body_to_bump))
+        return HybridShapeBump(self.hybrid_shape_factory.AddNewBump(i_body_to_bump.com_object))
 
-    def add_new_circle2_points_rad(self, i_point1=None, i_point2=None, i_support=None, i_geodesic=None, i_radius=None,
-                                   i_ori=None):
+    def add_new_circle2_points_rad(self, i_point1, i_point2, i_support, i_geodesic, i_radius, i_ori):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewCircle2PointsRad(Reference iPoint1,
                 | Reference iPoint2,
                 | Reference iSupport,
@@ -410,15 +503,23 @@ class HybridShapeFactory(Factory):
         :param bool i_geodesic:
         :param float i_radius:
         :param int i_ori:
-        :return: None
+        :return: HybridShapeCircle2PointsRad
         """
-        return self.hybrid_shape_factory.AddNewCircle2PointsRad(i_point1, i_point2, i_support, i_geodesic, i_radius,
-                                                                i_ori)
+        return HybridShapeCircle2PointsRad(
+            self.hybrid_shape_factory.AddNewCircle2PointsRad(
+                i_point1.com_object,
+                i_point2.com_object,
+                i_support.com_object,
+                i_geodesic,
+                i_radius,
+                i_ori
+            )
+        )
 
-    def add_new_circle3_points(self, i_point1=None, i_point2=None, i_point3=None):
+    def add_new_circle3_points(self, i_point1, i_point2, i_point3):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewCircle3Points(Reference iPoint1,
                 | Reference iPoint2,
                 | Reference iPoint3) As HybridShapeCircle3Points
@@ -447,15 +548,20 @@ class HybridShapeFactory(Factory):
         :param Reference i_point1:
         :param Reference i_point2:
         :param Reference i_point3:
-        :return: None
+        :return: HybridShapeCircle3Points
         """
-        return self.hybrid_shape_factory.AddNewCircle3Points(i_point1, i_point2, i_point3)
+        return HybridShapeCircle3Points(
+            self.hybrid_shape_factory.AddNewCircle3Points(
+                i_point1.com_object,
+                i_point2.com_object,
+                i_point3.com_object
+            )
+        )
 
-    def add_new_circle_bitangent_point(self, i_curve1=None, i_curve2=None, i_point=None, i_support=None, i_ori1=None,
-                                       i_ori2=None):
+    def add_new_circle_bitangent_point(self, i_curve1, i_curve2, i_point, i_support, i_ori1, i_ori2):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewCircleBitangentPoint(Reference iCurve1,
                 | Reference iCurve2,
                 | Reference iPoint,
@@ -499,16 +605,23 @@ class HybridShapeFactory(Factory):
         :param Reference i_support:
         :param int i_ori1:
         :param int i_ori2:
-        :return: None
+        :return: HybridShapeCircleBitangentPoint
         """
-        return self.hybrid_shape_factory.AddNewCircleBitangentPoint(i_curve1, i_curve2, i_point, i_support, i_ori1,
-                                                                    i_ori2)
+        return HybridShapeCircleBitangentPoint(
+            self.hybrid_shape_factory.AddNewCircleBitangentPoint(
+                i_curve1.com_object,
+                i_curve2.com_object,
+                i_point.com_object,
+                i_support.com_object,
+                i_ori1,
+                i_ori2
+            )
+        )
 
-    def add_new_circle_bitangent_radius(self, i_curve1=None, i_curve2=None, i_support=None, i_radius=None, i_ori1=None,
-                                        i_ori2=None):
+    def add_new_circle_bitangent_radius(self, i_curve1, i_curve2, i_support, i_radius, i_ori1, i_ori2):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewCircleBitangentRadius(Reference iCurve1,
                 | Reference iCurve2,
                 | Reference iSupport,
@@ -551,15 +664,23 @@ class HybridShapeFactory(Factory):
         :param float i_radius:
         :param int i_ori1:
         :param int i_ori2:
-        :return: None
+        :return: HybridShapeCircleBitangentRadius
         """
-        return self.hybrid_shape_factory.AddNewCircleBitangentRadius(i_curve1, i_curve2, i_support, i_radius, i_ori1,
-                                                                     i_ori2)
+        return HybridShapeCircleBitangentRadius(
+            self.hybrid_shape_factory.AddNewCircleBitangentRadius(
+                i_curve1.com_object,
+                i_curve2.com_object,
+                i_support.com_object,
+                i_radius,
+                i_ori1,
+                i_ori2
+            )
+        )
 
-    def add_new_circle_center_axis(self, i_axis=None, i_point=None, i_value=None, i_projection=None):
+    def add_new_circle_center_axis(self, i_axis, i_point, i_value, i_projection):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewCircleCenterAxis(Reference iAxis,
                 | Reference iPoint,
                 | double iValue,
@@ -572,12 +693,14 @@ class HybridShapeFactory(Factory):
                 |         iAxis
                 |             Axis of plane in which circle is lying 
                 |         iPoint
-                |             Point used for center computation. It will be the center if ProjectionMode is False. If ProjectionMode = True, this point will be projected on to axis/line 
+                |             Point used for center computation. It will be the center if ProjectionMode is False.
+                |             If ProjectionMode = True, this point will be projected on to axis/line
                 |         iValue
                 |             Value specified is considered as radius. To use this value as
                 |             diameter, set DiameterMode property 
                 |         iProjection
-                |             Sets Projection Mode. ProjectionMode = TRUE implies point will be projected on to axis/line, ProjectionMode = FALSE implies that point will be center of the circle. 
+                |             Sets Projection Mode. ProjectionMode = TRUE implies point will be projected on to
+                |             axis/line, ProjectionMode = FALSE implies that point will be center of the circle.
                 |         oCircle
                 |             Created circle
 
@@ -585,15 +708,27 @@ class HybridShapeFactory(Factory):
         :param Reference i_point:
         :param float i_value:
         :param bool i_projection:
-        :return: None
+        :return: HybridShapeCircleCenterAxis
         """
-        return self.hybrid_shape_factory.AddNewCircleCenterAxis(i_axis, i_point, i_value, i_projection)
+        return HybridShapeCircleCenterAxis(
+            self.hybrid_shape_factory.AddNewCircleCenterAxis(
+                i_axis.com_object,
+                i_point.com_object,
+                i_value,
+                i_projection
+            )
+        )
 
-    def add_new_circle_center_axis_with_angles(self, i_axis=None, i_point=None, i_value=None, i_projection=None,
-                                               i_start_angle=None, i_end_angle=None):
+    def add_new_circle_center_axis_with_angles(self,
+                                               i_axis,
+                                               i_point,
+                                               i_value,
+                                               i_projection,
+                                               i_start_angle,
+                                               i_end_angle):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewCircleCenterAxisWithAngles(Reference iAxis,
                 | Reference iPoint,
                 | double iValue,
@@ -611,13 +746,15 @@ class HybridShapeFactory(Factory):
                 | 
                 |         Boundary object): 
                 |     iPoint
-                |         Point used for center computation. It will be the center if ProjectionMode is False. If ProjectionMode = True, this point will be projected on to axis/line
+                |         Point used for center computation. It will be the center if ProjectionMode is False.
+                |         If ProjectionMode = True, this point will be projected on to axis/line
                 |         Sub-element(s) supported (see Boundary object):
                 |     iValue
                 |         Value specified is considered as radius. To use this value as diameter,
                 |         set DiameterMode property 
                 |     iProjection
-                |         Sets Projection Mode. ProjectionMode = TRUE implies point will be projected on to axis/line, ProjectionMode = FALSE implies that point will be center of the circle. 
+                |         Sets Projection Mode. ProjectionMode = TRUE implies point will be projected on to axis/line,
+                |         ProjectionMode = FALSE implies that point will be center of the circle.
                 |     iStartAngle
                 |         start angle 
                 |     iEndAngle
@@ -631,15 +768,16 @@ class HybridShapeFactory(Factory):
         :param bool i_projection:
         :param float i_start_angle:
         :param float i_end_angle:
-        :return: None
+        :return: HybridShapeCircleCenterAxis
         """
-        return self.hybrid_shape_factory.AddNewCircleCenterAxisWithAngles(i_axis, i_point, i_value, i_projection,
-                                                                          i_start_angle, i_end_angle)
+        return HybridShapeCircleCenterAxis(
+            self.hybrid_shape_factory.AddNewCircleCenterAxisWithAngles(i_axis.com_object, i_point.com_object, i_value,
+                                                                       i_projection, i_start_angle, i_end_angle))
 
-    def add_new_circle_center_tangent(self, i_center_elem=None, i_tangent_curve=None, i_support=None, i_radius=None):
+    def add_new_circle_center_tangent(self, i_center_elem, i_tangent_curve, i_support, i_radius):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewCircleCenterTangent(Reference iCenterElem,
                 | Reference iTangentCurve,
                 | Reference iSupport,
@@ -667,14 +805,16 @@ class HybridShapeFactory(Factory):
         :param Reference i_tangent_curve:
         :param Reference i_support:
         :param float i_radius:
-        :return: None
+        :return: HybridShapeCircleCenterTangent
         """
-        return self.hybrid_shape_factory.AddNewCircleCenterTangent(i_center_elem, i_tangent_curve, i_support, i_radius)
+        return HybridShapeCircleCenterTangent(
+            self.hybrid_shape_factory.AddNewCircleCenterTangent(i_center_elem.com_object, i_tangent_curve.com_object,
+                                                                i_support.com_object, i_radius))
 
-    def add_new_circle_ctr_pt(self, i_center=None, i_crossing_point=None, i_support=None, i_geodesic=None):
+    def add_new_circle_ctr_pt(self, i_center, i_crossing_point, i_support, i_geodesic):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewCircleCtrPt(Reference iCenter,
                 | Reference iCrossingPoint,
                 | Reference iSupport,
@@ -707,15 +847,17 @@ class HybridShapeFactory(Factory):
         :param Reference i_crossing_point:
         :param Reference i_support:
         :param bool i_geodesic:
-        :return: None
+        :return: HybridShapeCircleCtrPt
         """
-        return self.hybrid_shape_factory.AddNewCircleCtrPt(i_center, i_crossing_point, i_support, i_geodesic)
+        return HybridShapeCircleCtrPt(
+            self.hybrid_shape_factory.AddNewCircleCtrPt(i_center.com_object, i_crossing_point.com_object,
+                                                        i_support.com_object, i_geodesic))
 
-    def add_new_circle_ctr_pt_with_angles(self, i_center=None, i_crossing_point=None, i_support=None, i_geodesic=None,
-                                          i_start_angle=None, i_end_angle=None):
+    def add_new_circle_ctr_pt_with_angles(self, i_center, i_crossing_point, i_support, i_geodesic, i_start_angle,
+                                          i_end_angle):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewCircleCtrPtWithAngles(Reference iCenter,
                 | Reference iCrossingPoint,
                 | Reference iSupport,
@@ -756,15 +898,17 @@ class HybridShapeFactory(Factory):
         :param bool i_geodesic:
         :param float i_start_angle:
         :param float i_end_angle:
-        :return: None
+        :return: HybridShapeCircleCtrPt
         """
-        return self.hybrid_shape_factory.AddNewCircleCtrPtWithAngles(i_center, i_crossing_point, i_support, i_geodesic,
-                                                                     i_start_angle, i_end_angle)
+        return HybridShapeCircleCtrPt(
+            self.hybrid_shape_factory.AddNewCircleCtrPtWithAngles(i_center.com_object, i_crossing_point.com_object,
+                                                                  i_support.com_object, i_geodesic, i_start_angle,
+                                                                  i_end_angle))
 
-    def add_new_circle_ctr_rad(self, i_center=None, i_support=None, i_geodesic=None, i_radius=None):
+    def add_new_circle_ctr_rad(self, i_center, i_support, i_geodesic, i_radius):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewCircleCtrRad(Reference iCenter,
                 | Reference iSupport,
                 | boolean iGeodesic,
@@ -796,15 +940,16 @@ class HybridShapeFactory(Factory):
         :param Reference i_support:
         :param bool i_geodesic:
         :param float i_radius:
-        :return: None
+        :return: HybridShapeCircleCtrRad
         """
-        return self.hybrid_shape_factory.AddNewCircleCtrRad(i_center, i_support, i_geodesic, i_radius)
+        return HybridShapeCircleCtrRad(
+            self.hybrid_shape_factory.AddNewCircleCtrRad(i_center.com_object, i_support.com_object, i_geodesic,
+                                                         i_radius))
 
-    def add_new_circle_ctr_rad_with_angles(self, i_center=None, i_support=None, i_geodesic=None, i_radius=None,
-                                           i_start_angle=None, i_end_angle=None):
+    def add_new_circle_ctr_rad_with_angles(self, i_center, i_support, i_geodesic, i_radius, i_start_angle, i_end_angle):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewCircleCtrRadWithAngles(Reference iCenter,
                 | Reference iSupport,
                 | boolean iGeodesic,
@@ -844,15 +989,16 @@ class HybridShapeFactory(Factory):
         :param float i_radius:
         :param float i_start_angle:
         :param float i_end_angle:
-        :return: None
+        :return: HybridShapeCircleCtrRad
         """
-        return self.hybrid_shape_factory.AddNewCircleCtrRadWithAngles(i_center, i_support, i_geodesic, i_radius,
-                                                                      i_start_angle, i_end_angle)
+        return HybridShapeCircleCtrRad(
+            self.hybrid_shape_factory.AddNewCircleCtrRadWithAngles(i_center.com_object, i_support.com_object,
+                                                                   i_geodesic, i_radius, i_start_angle, i_end_angle))
 
-    def add_new_circle_datum(self, i_object=None):
+    def add_new_circle_datum(self, i_object):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewCircleDatum(Reference iObject) As
                 | HybridShapeCircleExplicit
                 | 
@@ -871,13 +1017,12 @@ class HybridShapeFactory(Factory):
         :param Reference i_object:
         :return: HybridShapeCircleExplicit
         """
-        return HybridShapeCircleExplicit(self.hybrid_shape_factory.AddNewCircleDatum(i_object))
+        return HybridShapeCircleExplicit(self.hybrid_shape_factory.AddNewCircleDatum(i_object.com_object))
 
-    def add_new_circle_tritangent(self, i_curve1=None, i_curve2=None, i_curve3=None, i_support=None, i_ori1=None,
-                                  i_ori2=None, i_ori3=None):
+    def add_new_circle_tritangent(self, i_curve1, i_curve2, i_curve3, i_support, i_ori1, i_ori2, i_ori3):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewCircleTritangent(Reference iCurve1,
                 | Reference iCurve2,
                 | Reference iCurve3,
@@ -924,15 +1069,17 @@ class HybridShapeFactory(Factory):
         :param int i_ori1:
         :param int i_ori2:
         :param int i_ori3:
-        :return: None
+        :return: HybridShapeCircleTritangent
         """
-        return self.hybrid_shape_factory.AddNewCircleTritangent(i_curve1, i_curve2, i_curve3, i_support, i_ori1, i_ori2,
-                                                                i_ori3)
+        return HybridShapeCircleTritangent(
+            self.hybrid_shape_factory.AddNewCircleTritangent(i_curve1.com_object, i_curve2.com_object,
+                                                             i_curve3.com_object, i_support.com_object, i_ori1, i_ori2,
+                                                             i_ori3))
 
-    def add_new_combine(self, i_first_curve=None, i_second_curve=None, i_nearest_solutions=None):
+    def add_new_combine(self, i_first_curve, i_second_curve, i_nearest_solutions):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewCombine(Reference iFirstCurve,
                 | Reference iSecondCurve,
                 | long iNearestSolutions) As HybridShapeCombine
@@ -964,14 +1111,16 @@ class HybridShapeFactory(Factory):
         :param Reference i_first_curve:
         :param Reference i_second_curve:
         :param int i_nearest_solutions:
-        :return: None
+        :return: HybridShapeCombine
         """
-        return self.hybrid_shape_factory.AddNewCombine(i_first_curve, i_second_curve, i_nearest_solutions)
+        return HybridShapeCombine(
+            self.hybrid_shape_factory.AddNewCombine(i_first_curve.com_object, i_second_curve.com_object,
+                                                    i_nearest_solutions))
 
-    def add_new_conic(self, i_support=None, i_starting_point=None, i_end_point=None):
+    def add_new_conic(self, i_support, i_starting_point, i_end_point):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewConic(Reference iSupport,
                 | Reference iStartingPoint,
                 | Reference iEndPoint) As HybridShapeConic
@@ -1000,15 +1149,15 @@ class HybridShapeFactory(Factory):
         :param Reference i_support:
         :param Reference i_starting_point:
         :param Reference i_end_point:
-        :return: None
+        :return: HybridShapeConic
         """
-        return self.hybrid_shape_factory.AddNewConic(i_support, i_starting_point, i_end_point)
+        return HybridShapeConic(self.hybrid_shape_factory.AddNewConic(i_support.com_object, i_starting_point.com_object,
+                                                                      i_end_point.com_object))
 
-    def add_new_conical_reflect_line_with_type(self, i_support=None, i_origin=None, i_angle=None,
-                                               i_orientation_support=None, i_type=None):
+    def add_new_conical_reflect_line_with_type(self, i_support, i_origin, i_angle, i_orientation_support, i_type):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewConicalReflectLineWithType(Reference iSupport,
                 | Reference iOrigin,
                 | double iAngle,
@@ -1049,16 +1198,17 @@ class HybridShapeFactory(Factory):
         :param float i_angle:
         :param int i_orientation_support:
         :param int i_type:
-        :return: None
+        :return: HybridShapeReflectLine
         """
-        return self.hybrid_shape_factory.AddNewConicalReflectLineWithType(i_support, i_origin, i_angle,
-                                                                          i_orientation_support, i_type)
+        return HybridShapeReflectLine(
+            self.hybrid_shape_factory.AddNewConicalReflectLineWithType(i_support.com_object, i_origin.com_object,
+                                                                       i_angle, i_orientation_support, i_type))
 
-    def add_new_connect(self, i_curve1=None, i_point1=None, i_orient1=None, i_continuity1=None, i_tension1=None,
-                        i_curve2=None, i_point2=None, i_orient2=None, i_continuity2=None, i_tension2=None, trim=None):
+    def add_new_connect(self, i_curve1, i_point1, i_orient1, i_continuity1, i_tension1, i_curve2, i_point2, i_orient2,
+                        i_continuity2, i_tension2, trim):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewConnect(Reference iCurve1,
                 | Reference iPoint1,
                 | long iOrient1,
@@ -1123,16 +1273,17 @@ class HybridShapeFactory(Factory):
         :param int i_continuity2:
         :param float i_tension2:
         :param bool trim:
-        :return: None
+        :return: HybridShapeConnect
         """
-        return self.hybrid_shape_factory.AddNewConnect(i_curve1, i_point1, i_orient1, i_continuity1, i_tension1,
-                                                       i_curve2, i_point2, i_orient2, i_continuity2, i_tension2, trim)
+        return HybridShapeConnect(
+            self.hybrid_shape_factory.AddNewConnect(i_curve1.com_object, i_point1.com_object, i_orient1, i_continuity1,
+                                                    i_tension1, i_curve2.com_object, i_point2.com_object, i_orient2,
+                                                    i_continuity2, i_tension2, trim))
 
-    def add_new_corner(self, i_element1=None, i_element2=None, i_support=None, i_radius=None, i_orientation1=None,
-                       i_orientation2=None, i_trim=None):
+    def add_new_corner(self, i_element1, i_element2, i_support, i_radius, i_orientation1, i_orientation2, i_trim):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewCorner(Reference iElement1,
                 | Reference iElement2,
                 | Reference iSupport,
@@ -1183,15 +1334,16 @@ class HybridShapeFactory(Factory):
         :param int i_orientation1:
         :param int i_orientation2:
         :param bool i_trim:
-        :return: None
+        :return: HybridShapeCorner
         """
-        return self.hybrid_shape_factory.AddNewCorner(i_element1, i_element2, i_support, i_radius, i_orientation1,
-                                                      i_orientation2, i_trim)
+        return HybridShapeCorner(
+            self.hybrid_shape_factory.AddNewCorner(i_element1.com_object, i_element2.com_object, i_support.com_object,
+                                                   i_radius, i_orientation1, i_orientation2, i_trim))
 
-    def add_new_curve_datum(self, i_object=None):
+    def add_new_curve_datum(self, i_object):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewCurveDatum(Reference iObject) As
                 | HybridShapeCurveExplicit
                 | 
@@ -1210,12 +1362,12 @@ class HybridShapeFactory(Factory):
         :param Reference i_object:
         :return: HybridShapeCurveExplicit
         """
-        return HybridShapeCurveExplicit(self.hybrid_shape_factory.AddNewCurveDatum(i_object))
+        return HybridShapeCurveExplicit(self.hybrid_shape_factory.AddNewCurveDatum(i_object.com_object))
 
-    def add_new_curve_par(self, curve=None, support=None, distance=None, invert_direction=None, geodesic=None):
+    def add_new_curve_par(self, curve, support, distance, invert_direction, geodesic):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewCurvePar(Reference Curve,
                 | Reference Support,
                 | double Distance,
@@ -1251,14 +1403,16 @@ class HybridShapeFactory(Factory):
         :param float distance:
         :param bool invert_direction:
         :param bool geodesic:
-        :return: None
+        :return: HybridShapeCurvePar
         """
-        return self.hybrid_shape_factory.AddNewCurvePar(curve, support, distance, invert_direction, geodesic)
+        return HybridShapeCurvePar(
+            self.hybrid_shape_factory.AddNewCurvePar(curve.com_object, support.com_object, distance, invert_direction,
+                                                     geodesic))
 
-    def add_new_curve_smooth(self, ip_ia_curve=None):
+    def add_new_curve_smooth(self, ip_ia_curve):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewCurveSmooth(Reference ipIACurve) As
                 | HybridShapeCurveSmooth
                 | 
@@ -1274,13 +1428,12 @@ class HybridShapeFactory(Factory):
         :param Reference ip_ia_curve:
         :return: HybridShapeCurveSmooth
         """
-        return HybridShapeCurveSmooth(self.hybrid_shape_factory.AddNewCurveSmooth(ip_ia_curve))
+        return HybridShapeCurveSmooth(self.hybrid_shape_factory.AddNewCurveSmooth(ip_ia_curve.com_object))
 
-    def add_new_cylinder(self, i_center=None, i_radius=None, i_first_length=None, i_second_length=None,
-                         i_direction=None):
+    def add_new_cylinder(self, i_center, i_radius, i_first_length, i_second_length, i_direction):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewCylinder(Reference iCenter,
                 | double iRadius,
                 | double iFirstLength,
@@ -1312,15 +1465,16 @@ class HybridShapeFactory(Factory):
         :param float i_first_length:
         :param float i_second_length:
         :param HybridShapeDirection i_direction:
-        :return: None
+        :return: HybridShapeCylinder
         """
-        return self.hybrid_shape_factory.AddNewCylinder(i_center, i_radius, i_first_length, i_second_length,
-                                                        i_direction)
+        return HybridShapeCylinder(
+            self.hybrid_shape_factory.AddNewCylinder(i_center.com_object, i_radius, i_first_length, i_second_length,
+                                                     i_direction.com_object))
 
-    def add_new_datums(self, i_elem=None):
+    def add_new_datums(self, i_elem):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewDatums(Reference iElem) As CATSafeArrayVariant
                 | 
                 |     Creates datums from a multi-domain result feature, one datum is created by
@@ -1360,12 +1514,12 @@ class HybridShapeFactory(Factory):
         :param Reference i_elem:
         :return: tuple
         """
-        return tuple(self.hybrid_shape_factory.AddNewDatums(i_elem))
+        return self.hybrid_shape_factory.AddNewDatums(i_elem.com_object)
 
-    def add_new_develop(self, i_mode=None, i_to_develop=None, i_support=None):
+    def add_new_develop(self, i_mode, i_to_develop, i_support):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewDevelop(long iMode,
                 | Reference iToDevelop,
                 | Reference iSupport) As HybridShapeDevelop
@@ -1393,14 +1547,15 @@ class HybridShapeFactory(Factory):
         :param int i_mode:
         :param Reference i_to_develop:
         :param Reference i_support:
-        :return: None
+        :return: HybridShapeDevelop
         """
-        return self.hybrid_shape_factory.AddNewDevelop(i_mode, i_to_develop, i_support)
+        return HybridShapeDevelop(
+            self.hybrid_shape_factory.AddNewDevelop(i_mode, i_to_develop.com_object, i_support.com_object))
 
-    def add_new_direction(self, i_element=None):
+    def add_new_direction(self, i_element):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewDirection(Reference iElement) As
                 | HybridShapeDirection
                 | 
@@ -1424,12 +1579,12 @@ class HybridShapeFactory(Factory):
         :param Reference i_element:
         :return: HybridShapeDirection
         """
-        return HybridShapeDirection(self.hybrid_shape_factory.AddNewDirection(i_element))
+        return HybridShapeDirection(self.hybrid_shape_factory.AddNewDirection(i_element.com_object))
 
-    def add_new_direction_by_coord(self, i_x=None, i_y=None, i_z=None):
+    def add_new_direction_by_coord(self, i_x, i_y, i_z):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewDirectionByCoord(double iX,
                 | double iY,
                 | double iZ) As HybridShapeDirection
@@ -1451,14 +1606,14 @@ class HybridShapeFactory(Factory):
         :param float i_x:
         :param float i_y:
         :param float i_z:
-        :return: None
+        :return: HybridShapeDirection
         """
-        return self.hybrid_shape_factory.AddNewDirectionByCoord(i_x, i_y, i_z)
+        return HybridShapeDirection(self.hybrid_shape_factory.AddNewDirectionByCoord(i_x, i_y, i_z))
 
     def add_new_empty_rotate(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewEmptyRotate() As HybridShapeRotate
                 | 
                 |     Creates a new empty Rotate within the current body.
@@ -1470,7 +1625,7 @@ class HybridShapeFactory(Factory):
     def add_new_empty_translate(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewEmptyTranslate() As HybridShapeTranslate
                 | 
                 |     Creates a new empty Translate within the current body.
@@ -1479,10 +1634,10 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapeTranslate(self.hybrid_shape_factory.AddNewEmptyTranslate())
 
-    def add_new_extract(self, element=None):
+    def add_new_extract(self, element):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewExtract(Reference Element) As
                 | HybridShapeExtract
                 | 
@@ -1502,12 +1657,12 @@ class HybridShapeFactory(Factory):
         :param Reference element:
         :return: HybridShapeExtract
         """
-        return HybridShapeExtract(self.hybrid_shape_factory.AddNewExtract(element))
+        return HybridShapeExtract(self.hybrid_shape_factory.AddNewExtract(element.com_object))
 
-    def add_new_extract_multi(self, element=None):
+    def add_new_extract_multi(self, element):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewExtractMulti(Reference Element) As
                 | HybridShapeExtractMulti
                 | 
@@ -1527,12 +1682,12 @@ class HybridShapeFactory(Factory):
         :param Reference element:
         :return: HybridShapeExtractMulti
         """
-        return HybridShapeExtractMulti(self.hybrid_shape_factory.AddNewExtractMulti(element))
+        return HybridShapeExtractMulti(self.hybrid_shape_factory.AddNewExtractMulti(element.com_object))
 
-    def add_new_extrapol_length(self, i_boundary=None, i_to_extrapol=None, i_length=None):
+    def add_new_extrapol_length(self, i_boundary, i_to_extrapol, i_length):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewExtrapolLength(Reference iBoundary,
                 | Reference iToExtrapol,
                 | double iLength) As HybridShapeExtrapol
@@ -1561,14 +1716,15 @@ class HybridShapeFactory(Factory):
         :param Reference i_boundary:
         :param Reference i_to_extrapol:
         :param float i_length:
-        :return: None
+        :return: HybridShapeExtrapol
         """
-        return self.hybrid_shape_factory.AddNewExtrapolLength(i_boundary, i_to_extrapol, i_length)
+        return HybridShapeExtrapol(
+            self.hybrid_shape_factory.AddNewExtrapolLength(i_boundary.com_object, i_to_extrapol.com_object, i_length))
 
-    def add_new_extrapol_until(self, i_boundary=None, i_to_extrapol=None, i_until=None):
+    def add_new_extrapol_until(self, i_boundary, i_to_extrapol, i_until):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewExtrapolUntil(Reference iBoundary,
                 | Reference iToExtrapol,
                 | Reference iUntil) As HybridShapeExtrapol
@@ -1597,14 +1753,16 @@ class HybridShapeFactory(Factory):
         :param Reference i_boundary:
         :param Reference i_to_extrapol:
         :param Reference i_until:
-        :return: None
+        :return: HybridShapeExtrapol
         """
-        return self.hybrid_shape_factory.AddNewExtrapolUntil(i_boundary, i_to_extrapol, i_until)
+        return HybridShapeExtrapol(
+            self.hybrid_shape_factory.AddNewExtrapolUntil(i_boundary.com_object, i_to_extrapol.com_object,
+                                                          i_until.com_object))
 
-    def add_new_extremum(self, i_objet=None, i_dir=None, i_min_max=None):
+    def add_new_extremum(self, i_objet, i_dir, i_min_max):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewExtremum(Reference iObjet,
                 | HybridShapeDirection iDir,
                 | long iMinMax) As HybridShapeExtremum
@@ -1630,14 +1788,15 @@ class HybridShapeFactory(Factory):
         :param Reference i_objet:
         :param HybridShapeDirection i_dir:
         :param int i_min_max:
-        :return: None
+        :return: HybridShapeExtremum
         """
-        return self.hybrid_shape_factory.AddNewExtremum(i_objet, i_dir, i_min_max)
+        return HybridShapeExtremum(
+            self.hybrid_shape_factory.AddNewExtremum(i_objet.com_object, i_dir.com_object, i_min_max))
 
-    def add_new_extremum_polar(self, i_type=None, ip_ia_contour=None):
+    def add_new_extremum_polar(self, i_type, ip_ia_contour):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewExtremumPolar(short iType,
                 | Reference ipIAContour) As HybridShapeExtremumPolar
                 | 
@@ -1655,14 +1814,14 @@ class HybridShapeFactory(Factory):
 
         :param enum i_type:
         :param Reference ip_ia_contour:
-        :return: None
+        :return: HybridShapeExtremumPolar
         """
-        return self.hybrid_shape_factory.AddNewExtremumPolar(i_type, ip_ia_contour)
+        return HybridShapeExtremumPolar(self.hybrid_shape_factory.AddNewExtremumPolar(i_type, ip_ia_contour.com_object))
 
-    def add_new_extrude(self, i_object_to_extrude=None, i_offset_debut=None, i_offset_fin=None, i_direction=None):
+    def add_new_extrude(self, i_object_to_extrude, i_offset_debut, i_offset_fin, i_direction):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewExtrude(Reference iObjectToExtrude,
                 | double iOffsetDebut,
                 | double iOffsetFin,
@@ -1692,14 +1851,16 @@ class HybridShapeFactory(Factory):
         :param float i_offset_debut:
         :param float i_offset_fin:
         :param HybridShapeDirection i_direction:
-        :return: None
+        :return: HybridShapeExtrude
         """
-        return self.hybrid_shape_factory.AddNewExtrude(i_object_to_extrude, i_offset_debut, i_offset_fin, i_direction)
+        return HybridShapeExtrude(
+            self.hybrid_shape_factory.AddNewExtrude(i_object_to_extrude.com_object, i_offset_debut, i_offset_fin,
+                                                    i_direction.com_object))
 
     def add_new_fill(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewFill() As HybridShapeFill
                 | 
                 |     Creates a new Fill within the current body.
@@ -1713,11 +1874,11 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapeFill(self.hybrid_shape_factory.AddNewFill())
 
-    def add_new_fillet_bi_tangent(self, i_element1=None, i_element2=None, i_radius=None, i_orientation1=None,
-                                  i_orientation2=None, i_supports_trim_mode=None, i_ribbon_relimitation_mode=None):
+    def add_new_fillet_bi_tangent(self, i_element1, i_element2, i_radius, i_orientation1, i_orientation2,
+                                  i_supports_trim_mode, i_ribbon_relimitation_mode):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewFilletBiTangent(Reference iElement1,
                 | Reference iElement2,
                 | double iRadius,
@@ -1749,7 +1910,11 @@ class HybridShapeFactory(Factory):
                 |         The 2 supports can be trimmed and assembled with the fillet. Value can
                 |         be 0 (No trim ) or 1 (Trim) 
                 |     iRibbonRelimitationMode
-                |         Manage the relimition of fillet extremities. Value can be : 0 (Smooth), 1 (Straight), 2 (Maximum) or 3 (Minimum) 
+                |         Manage the relimition of fillet extremities. Value can be :
+                |         0 (Smooth),
+                |         1 (Straight),
+                |         2 (Maximum) or
+                |         3 (Minimum)
                 |     oFillet
                 |         Created fillet.
 
@@ -1760,18 +1925,18 @@ class HybridShapeFactory(Factory):
         :param int i_orientation2:
         :param int i_supports_trim_mode:
         :param int i_ribbon_relimitation_mode:
-        :return: None
+        :return: HybridShapeFilletBiTangent
         """
-        return self.hybrid_shape_factory.AddNewFilletBiTangent(i_element1, i_element2, i_radius, i_orientation1,
-                                                               i_orientation2, i_supports_trim_mode,
-                                                               i_ribbon_relimitation_mode)
+        return HybridShapeFilletBiTangent(
+            self.hybrid_shape_factory.AddNewFilletBiTangent(i_element1.com_object, i_element2.com_object, i_radius,
+                                                            i_orientation1, i_orientation2, i_supports_trim_mode,
+                                                            i_ribbon_relimitation_mode))
 
-    def add_new_fillet_tri_tangent(self, i_element1=None, i_element2=None, i_remove_elem=None, i_orientation1=None,
-                                   i_orientation2=None, i_remove_orientation=None, i_supports_trim_mode=None,
-                                   i_ribbon_relimitation_mode=None):
+    def add_new_fillet_tri_tangent(self, i_element1, i_element2, i_remove_elem, i_orientation1, i_orientation2,
+                                   i_remove_orientation, i_supports_trim_mode, i_ribbon_relimitation_mode):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewFilletTriTangent(Reference iElement1,
                 | Reference iElement2,
                 | Reference iRemoveElem,
@@ -1808,7 +1973,8 @@ class HybridShapeFactory(Factory):
                 |         The 2 supports can be trimmed and assembled with the fillet. Value can
                 |         be 0 (No trim ) or 1 (Trim) 
                 |     iRibbonRelimitationMode
-                |         Manage the relimition of fillet extremities. Value can be : 0 (Smooth), 1 (Straight), 2 (Maximum) or 3 (Minimum) 
+                |         Manage the relimition of fillet extremities. Value can be : 0 (Smooth), 1 (Straight),
+                |         2 (Maximum) or 3 (Minimum)
                 |     oFillet
                 |         Created fillet.
 
@@ -1820,16 +1986,18 @@ class HybridShapeFactory(Factory):
         :param int i_remove_orientation:
         :param int i_supports_trim_mode:
         :param int i_ribbon_relimitation_mode:
-        :return: None
+        :return: HybridShapeFilletTriTangent
         """
-        return self.hybrid_shape_factory.AddNewFilletTriTangent(i_element1, i_element2, i_remove_elem, i_orientation1,
-                                                                i_orientation2, i_remove_orientation,
-                                                                i_supports_trim_mode, i_ribbon_relimitation_mode)
+        return HybridShapeFilletTriTangent(
+            self.hybrid_shape_factory.AddNewFilletTriTangent(i_element1.com_object, i_element2.com_object,
+                                                             i_remove_elem.com_object, i_orientation1, i_orientation2,
+                                                             i_remove_orientation, i_supports_trim_mode,
+                                                             i_ribbon_relimitation_mode))
 
-    def add_new_healing(self, i_body_toheal=None):
+    def add_new_healing(self, i_body_toheal):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewHealing(Reference iBodyToheal) As
                 | HybridShapeHealing
                 | 
@@ -1845,13 +2013,13 @@ class HybridShapeFactory(Factory):
         :param Reference i_body_toheal:
         :return: HybridShapeHealing
         """
-        return HybridShapeHealing(self.hybrid_shape_factory.AddNewHealing(i_body_toheal))
+        return HybridShapeHealing(self.hybrid_shape_factory.AddNewHealing(i_body_toheal.com_object))
 
-    def add_new_helix(self, i_axis=None, i_invert_axis=None, i_starting_point=None, i_pitch=None, i_height=None,
-                      i_clockwise_revolution=None, i_starting_angle=None, i_taper_angle=None, i_taper_outward=None):
+    def add_new_helix(self, i_axis, i_invert_axis, i_starting_point, i_pitch, i_height, i_clockwise_revolution,
+                      i_starting_angle, i_taper_angle, i_taper_outward):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewHelix(Reference iAxis,
                 | boolean iInvertAxis,
                 | Reference iStartingPoint,
@@ -1904,16 +2072,17 @@ class HybridShapeFactory(Factory):
         :param float i_starting_angle:
         :param float i_taper_angle:
         :param bool i_taper_outward:
-        :return: None
+        :return: HybridShapeHelix
         """
-        return self.hybrid_shape_factory.AddNewHelix(i_axis, i_invert_axis, i_starting_point, i_pitch, i_height,
-                                                     i_clockwise_revolution, i_starting_angle, i_taper_angle,
-                                                     i_taper_outward)
+        return HybridShapeHelix(
+            self.hybrid_shape_factory.AddNewHelix(i_axis.com_object, i_invert_axis, i_starting_point.com_object,
+                                                  i_pitch, i_height, i_clockwise_revolution, i_starting_angle,
+                                                  i_taper_angle, i_taper_outward))
 
-    def add_new_hybrid_scaling(self, i_elem_to_scale=None, i_center=None, i_ratio=None):
+    def add_new_hybrid_scaling(self, i_elem_to_scale, i_center, i_ratio):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewHybridScaling(Reference iElemToScale,
                 | Reference iCenter,
                 | double iRatio) As HybridShapeScaling
@@ -1940,14 +2109,15 @@ class HybridShapeFactory(Factory):
         :param Reference i_elem_to_scale:
         :param Reference i_center:
         :param float i_ratio:
-        :return: None
+        :return: HybridShapeScaling
         """
-        return self.hybrid_shape_factory.AddNewHybridScaling(i_elem_to_scale, i_center, i_ratio)
+        return HybridShapeScaling(
+            self.hybrid_shape_factory.AddNewHybridScaling(i_elem_to_scale.com_object, i_center.com_object, i_ratio))
 
-    def add_new_hybrid_split(self, i_element1=None, i_element2=None, i_orientation=None):
+    def add_new_hybrid_split(self, i_element1, i_element2, i_orientation):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewHybridSplit(Reference iElement1,
                 | Reference iElement2,
                 | long iOrientation) As HybridShapeSplit
@@ -1975,14 +2145,15 @@ class HybridShapeFactory(Factory):
         :param Reference i_element1:
         :param Reference i_element2:
         :param int i_orientation:
-        :return: None
+        :return: HybridShapeSplit
         """
-        return self.hybrid_shape_factory.AddNewHybridSplit(i_element1, i_element2, i_orientation)
+        return HybridShapeSplit(
+            self.hybrid_shape_factory.AddNewHybridSplit(i_element1.com_object, i_element2.com_object, i_orientation))
 
-    def add_new_hybrid_trim(self, i_element1=None, i_orientation1=None, i_element2=None, i_orientation2=None):
+    def add_new_hybrid_trim(self, i_element1, i_orientation1, i_element2, i_orientation2):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewHybridTrim(Reference iElement1,
                 | long iOrientation1,
                 | Reference iElement2,
@@ -2011,14 +2182,16 @@ class HybridShapeFactory(Factory):
         :param int i_orientation1:
         :param Reference i_element2:
         :param int i_orientation2:
-        :return: None
+        :return: HybridShapeTrim
         """
-        return self.hybrid_shape_factory.AddNewHybridTrim(i_element1, i_orientation1, i_element2, i_orientation2)
+        return HybridShapeTrim(
+            self.hybrid_shape_factory.AddNewHybridTrim(i_element1.com_object, i_orientation1, i_element2.com_object,
+                                                       i_orientation2))
 
-    def add_new_integrated_law(self, i_type=None):
+    def add_new_integrated_law(self, i_type):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewIntegratedLaw(long iType) As
                 | HybridShapeIntegratedLaw
                 | 
@@ -2027,17 +2200,23 @@ class HybridShapeFactory(Factory):
                 |     Parameters:
                 | 
                 |         iType
-                |             Type of law = 0 : None = 1 : Constant = 2 : Linear = 3 : SType = 4 : Advanced = 5 : Implicit
+                |             Type of law
+                |             = 0 : None
+                |             = 1 : Constant
+                |             = 2 : Linear
+                |             = 3 : SType
+                |             = 4 : Advanced
+                |             = 5 : Implicit
 
         :param int i_type:
         :return: HybridShapeIntegratedLaw
         """
         return HybridShapeIntegratedLaw(self.hybrid_shape_factory.AddNewIntegratedLaw(i_type))
 
-    def add_new_intersection(self, i_object1=None, i_object2=None):
+    def add_new_intersection(self, i_object1, i_object2):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewIntersection(Reference iObject1,
                 | Reference iObject2) As HybridShapeIntersection
                 | 
@@ -2061,14 +2240,15 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_object1:
         :param Reference i_object2:
-        :return: None
+        :return: HybridShapeIntersection
         """
-        return self.hybrid_shape_factory.AddNewIntersection(i_object1, i_object2)
+        return HybridShapeIntersection(
+            self.hybrid_shape_factory.AddNewIntersection(i_object1.com_object, i_object2.com_object))
 
-    def add_new_inverse(self, element=None, inverse=None):
+    def add_new_inverse(self, element, inverse):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewInverse(Reference Element,
                 | long Inverse) As HybridShapeInverse
                 | 
@@ -2086,14 +2266,14 @@ class HybridShapeFactory(Factory):
 
         :param Reference element:
         :param int inverse:
-        :return: None
+        :return: HybridShapeInverse
         """
-        return self.hybrid_shape_factory.AddNewInverse(element, inverse)
+        return HybridShapeInverse(self.hybrid_shape_factory.AddNewInverse(element.com_object, inverse))
 
-    def add_new_join(self, element1=None, element2=None):
+    def add_new_join(self, element1, element2):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewJoin(Reference Element1,
                 | Reference Element2) As HybridShapeAssemble
                 | 
@@ -2119,14 +2299,14 @@ class HybridShapeFactory(Factory):
 
         :param Reference element1:
         :param Reference element2:
-        :return: None
+        :return: HybridShapeAssemble
         """
-        return self.hybrid_shape_factory.AddNewJoin(element1, element2)
+        return HybridShapeAssemble(self.hybrid_shape_factory.AddNewJoin(element1.com_object, element2.com_object))
 
-    def add_new_law_dist_proj(self, i_reference=None, i_definition=None):
+    def add_new_law_dist_proj(self, i_reference, i_definition):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewLawDistProj(Reference iReference,
                 | Reference iDefinition) As HybridShapeLawDistProj
                 | 
@@ -2149,15 +2329,16 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_reference:
         :param Reference i_definition:
-        :return: None
+        :return: HybridShapeLawDistProj
         """
-        return self.hybrid_shape_factory.AddNewLawDistProj(i_reference, i_definition)
+        return HybridShapeLawDistProj(
+            self.hybrid_shape_factory.AddNewLawDistProj(i_reference.com_object, i_definition.com_object))
 
-    def add_new_line_angle(self, i_curve=None, i_surface=None, i_point=None, i_geodesic=None, i_begin_offset=None,
-                           i_end_offset=None, i_angle=None, i_orientation=None):
+    def add_new_line_angle(self, i_curve, i_surface, i_point, i_geodesic, i_begin_offset, i_end_offset, i_angle,
+                           i_orientation):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewLineAngle(Reference iCurve,
                 | Reference iSurface,
                 | Reference iPoint,
@@ -2208,15 +2389,16 @@ class HybridShapeFactory(Factory):
         :param float i_end_offset:
         :param float i_angle:
         :param bool i_orientation:
-        :return: None
+        :return: HybridShapeLineAngle
         """
-        return self.hybrid_shape_factory.AddNewLineAngle(i_curve, i_surface, i_point, i_geodesic, i_begin_offset,
-                                                         i_end_offset, i_angle, i_orientation)
+        return HybridShapeLineAngle(
+            self.hybrid_shape_factory.AddNewLineAngle(i_curve.com_object, i_surface.com_object, i_point.com_object,
+                                                      i_geodesic, i_begin_offset, i_end_offset, i_angle, i_orientation))
 
-    def add_new_line_bi_tangent(self, i_curve1=None, i_element2=None, i_support=None):
+    def add_new_line_bi_tangent(self, i_curve1, i_element2, i_support):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewLineBiTangent(Reference iCurve1,
                 | Reference iElement2,
                 | Reference iSupport) As HybridShapeLineBiTangent
@@ -2246,15 +2428,16 @@ class HybridShapeFactory(Factory):
         :param Reference i_curve1:
         :param Reference i_element2:
         :param Reference i_support:
-        :return: None
+        :return: HybridShapeLineBiTangent
         """
-        return self.hybrid_shape_factory.AddNewLineBiTangent(i_curve1, i_element2, i_support)
+        return HybridShapeLineBiTangent(
+            self.hybrid_shape_factory.AddNewLineBiTangent(i_curve1.com_object, i_element2.com_object,
+                                                          i_support.com_object))
 
-    def add_new_line_bisecting(self, i_line1=None, i_line2=None, i_begin_offset=None, i_end_offset=None,
-                               i_orientation=None, solution_nb=None):
+    def add_new_line_bisecting(self, i_line1, i_line2, i_begin_offset, i_end_offset, i_orientation, solution_nb):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewLineBisecting(Reference iLine1,
                 | Reference iLine2,
                 | double iBeginOffset,
@@ -2294,16 +2477,17 @@ class HybridShapeFactory(Factory):
         :param float i_end_offset:
         :param bool i_orientation:
         :param int solution_nb:
-        :return: None
+        :return: HybridShapeLineBisecting
         """
-        return self.hybrid_shape_factory.AddNewLineBisecting(i_line1, i_line2, i_begin_offset, i_end_offset,
-                                                             i_orientation, solution_nb)
+        return HybridShapeLineBisecting(
+            self.hybrid_shape_factory.AddNewLineBisecting(i_line1.com_object, i_line2.com_object, i_begin_offset,
+                                                          i_end_offset, i_orientation, solution_nb))
 
-    def add_new_line_bisecting_on_support(self, i_line1=None, i_line2=None, i_surface=None, i_begin_offset=None,
-                                          i_end_offset=None, i_orientation=None, solution_nb=None):
+    def add_new_line_bisecting_on_support(self, i_line1, i_line2, i_surface, i_begin_offset, i_end_offset,
+                                          i_orientation, solution_nb):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewLineBisectingOnSupport(Reference iLine1,
                 | Reference iLine2,
                 | Reference iSurface,
@@ -2350,17 +2534,18 @@ class HybridShapeFactory(Factory):
         :param float i_end_offset:
         :param bool i_orientation:
         :param int solution_nb:
-        :return: None
+        :return: HybridShapeLineBisecting
         """
-        return self.hybrid_shape_factory.AddNewLineBisectingOnSupport(i_line1, i_line2, i_surface, i_begin_offset,
-                                                                      i_end_offset, i_orientation, solution_nb)
+        return HybridShapeLineBisecting(
+            self.hybrid_shape_factory.AddNewLineBisectingOnSupport(i_line1.com_object, i_line2.com_object,
+                                                                   i_surface.com_object, i_begin_offset, i_end_offset,
+                                                                   i_orientation, solution_nb))
 
-    def add_new_line_bisecting_on_support_with_point(self, i_line1=None, i_line2=None, i_ref_point=None, i_surface=None,
-                                                     i_begin_offset=None, i_end_offset=None, i_orientation=None,
-                                                     solution_nb=None):
+    def add_new_line_bisecting_on_support_with_point(self, i_line1, i_line2, i_ref_point, i_surface, i_begin_offset,
+                                                     i_end_offset, i_orientation, solution_nb):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewLineBisectingOnSupportWithPoint(Reference
                 | iLine1,
                 | Reference iLine2,
@@ -2414,17 +2599,19 @@ class HybridShapeFactory(Factory):
         :param float i_end_offset:
         :param bool i_orientation:
         :param int solution_nb:
-        :return: None
+        :return: HybridShapeLineBisecting
         """
-        return self.hybrid_shape_factory.AddNewLineBisectingOnSupportWithPoint(i_line1, i_line2, i_ref_point, i_surface,
-                                                                               i_begin_offset, i_end_offset,
-                                                                               i_orientation, solution_nb)
+        return HybridShapeLineBisecting(
+            self.hybrid_shape_factory.AddNewLineBisectingOnSupportWithPoint(i_line1.com_object, i_line2.com_object,
+                                                                            i_ref_point.com_object,
+                                                                            i_surface.com_object, i_begin_offset,
+                                                                            i_end_offset, i_orientation, solution_nb))
 
-    def add_new_line_bisecting_with_point(self, i_line1=None, i_line2=None, i_ref_point=None, i_begin_offset=None,
-                                          i_end_offset=None, i_orientation=None, solution_nb=None):
+    def add_new_line_bisecting_with_point(self, i_line1, i_line2, i_ref_point, i_begin_offset, i_end_offset,
+                                          i_orientation, solution_nb):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewLineBisectingWithPoint(Reference iLine1,
                 | Reference iLine2,
                 | Reference iRefPoint,
@@ -2471,15 +2658,17 @@ class HybridShapeFactory(Factory):
         :param float i_end_offset:
         :param bool i_orientation:
         :param int solution_nb:
-        :return: None
+        :return: HybridShapeLineBisecting
         """
-        return self.hybrid_shape_factory.AddNewLineBisectingWithPoint(i_line1, i_line2, i_ref_point, i_begin_offset,
-                                                                      i_end_offset, i_orientation, solution_nb)
+        return HybridShapeLineBisecting(
+            self.hybrid_shape_factory.AddNewLineBisectingWithPoint(i_line1.com_object, i_line2.com_object,
+                                                                   i_ref_point.com_object, i_begin_offset, i_end_offset,
+                                                                   i_orientation, solution_nb))
 
-    def add_new_line_datum(self, i_object=None):
+    def add_new_line_datum(self, i_object):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewLineDatum(Reference iObject) As
                 | HybridShapeLineExplicit
                 | 
@@ -2498,13 +2687,12 @@ class HybridShapeFactory(Factory):
         :param Reference i_object:
         :return: HybridShapeLineExplicit
         """
-        return HybridShapeLineExplicit(self.hybrid_shape_factory.AddNewLineDatum(i_object))
+        return HybridShapeLineExplicit(self.hybrid_shape_factory.AddNewLineDatum(i_object.com_object))
 
-    def add_new_line_normal(self, i_surface=None, i_point=None, i_begin_offset=None, i_end_offset=None,
-                            i_orientation=None):
+    def add_new_line_normal(self, i_surface, i_point, i_begin_offset, i_end_offset, i_orientation):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewLineNormal(Reference iSurface,
                 | Reference iPoint,
                 | double iBeginOffset,
@@ -2540,16 +2728,16 @@ class HybridShapeFactory(Factory):
         :param float i_begin_offset:
         :param float i_end_offset:
         :param bool i_orientation:
-        :return: None
+        :return: HybridShapeLineNormal
         """
-        return self.hybrid_shape_factory.AddNewLineNormal(i_surface, i_point, i_begin_offset, i_end_offset,
-                                                          i_orientation)
+        return HybridShapeLineNormal(
+            self.hybrid_shape_factory.AddNewLineNormal(i_surface.com_object, i_point.com_object, i_begin_offset,
+                                                       i_end_offset, i_orientation))
 
-    def add_new_line_pt_dir(self, i_pt=None, i_direction=None, i_begin_offset=None, i_end_offset=None,
-                            i_orientation=None):
+    def add_new_line_pt_dir(self, i_pt, i_direction, i_begin_offset, i_end_offset, i_orientation):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewLinePtDir(Reference iPt,
                 | HybridShapeDirection iDirection,
                 | double iBeginOffset,
@@ -2584,15 +2772,16 @@ class HybridShapeFactory(Factory):
         :param float i_begin_offset:
         :param float i_end_offset:
         :param bool i_orientation:
-        :return: None
+        :return: HybridShapeLinePtDir
         """
-        return self.hybrid_shape_factory.AddNewLinePtDir(i_pt, i_direction, i_begin_offset, i_end_offset, i_orientation)
+        return HybridShapeLinePtDir(
+            self.hybrid_shape_factory.AddNewLinePtDir(i_pt.com_object, i_direction.com_object, i_begin_offset,
+                                                      i_end_offset, i_orientation))
 
-    def add_new_line_pt_dir_on_support(self, i_pt=None, i_direction=None, i_support=None, i_begin_offset=None,
-                                       i_end_offset=None, i_orientation=None):
+    def add_new_line_pt_dir_on_support(self, i_pt, i_direction, i_support, i_begin_offset, i_end_offset, i_orientation):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewLinePtDirOnSupport(Reference iPt,
                 | HybridShapeDirection iDirection,
                 | Reference iSupport,
@@ -2634,15 +2823,17 @@ class HybridShapeFactory(Factory):
         :param float i_begin_offset:
         :param float i_end_offset:
         :param bool i_orientation:
-        :return: None
+        :return: HybridShapeLinePtDir
         """
-        return self.hybrid_shape_factory.AddNewLinePtDirOnSupport(i_pt, i_direction, i_support, i_begin_offset,
-                                                                  i_end_offset, i_orientation)
+        return HybridShapeLinePtDir(
+            self.hybrid_shape_factory.AddNewLinePtDirOnSupport(i_pt.com_object, i_direction.com_object,
+                                                               i_support.com_object, i_begin_offset, i_end_offset,
+                                                               i_orientation))
 
-    def add_new_line_pt_pt(self, i_pt_origine=None, i_pt_extremite=None):
+    def add_new_line_pt_pt(self, i_pt_origine, i_pt_extremite):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewLinePtPt(Reference iPtOrigine,
                 | Reference iPtExtremite) As HybridShapeLinePtPt
                 | 
@@ -2664,16 +2855,15 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_pt_origine:
         :param Reference i_pt_extremite:
-        :return: None
+        :return: HybridShapeLinePtPt
         """
         return HybridShapeLinePtPt(
             self.hybrid_shape_factory.AddNewLinePtPt(i_pt_origine.com_object, i_pt_extremite.com_object))
 
-    def add_new_line_pt_pt_extended(self, i_pt_origine=None, i_pt_extremite=None, i_begin_offset=None,
-                                    i_end_offset=None):
+    def add_new_line_pt_pt_extended(self, i_pt_origine, i_pt_extremite, i_begin_offset, i_end_offset):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewLinePtPtExtended(Reference iPtOrigine,
                 | Reference iPtExtremite,
                 | double iBeginOffset,
@@ -2704,15 +2894,16 @@ class HybridShapeFactory(Factory):
         :param Reference i_pt_extremite:
         :param float i_begin_offset:
         :param float i_end_offset:
-        :return: None
+        :return: HybridShapeLinePtPt
         """
-        return self.hybrid_shape_factory.AddNewLinePtPtExtended(i_pt_origine, i_pt_extremite, i_begin_offset,
-                                                                i_end_offset)
+        return HybridShapeLinePtPt(
+            self.hybrid_shape_factory.AddNewLinePtPtExtended(i_pt_origine.com_object, i_pt_extremite.com_object,
+                                                             i_begin_offset, i_end_offset))
 
-    def add_new_line_pt_pt_on_support(self, i_pt_origine=None, i_pt_extremite=None, i_support=None):
+    def add_new_line_pt_pt_on_support(self, i_pt_origine, i_pt_extremite, i_support):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewLinePtPtOnSupport(Reference iPtOrigine,
                 | Reference iPtExtremite,
                 | Reference iSupport) As HybridShapeLinePtPt
@@ -2742,15 +2933,17 @@ class HybridShapeFactory(Factory):
         :param Reference i_pt_origine:
         :param Reference i_pt_extremite:
         :param Reference i_support:
-        :return: None
+        :return: HybridShapeLinePtPt
         """
-        return self.hybrid_shape_factory.AddNewLinePtPtOnSupport(i_pt_origine, i_pt_extremite, i_support)
+        return HybridShapeLinePtPt(
+            self.hybrid_shape_factory.AddNewLinePtPtOnSupport(i_pt_origine.com_object, i_pt_extremite.com_object,
+                                                              i_support.com_object))
 
-    def add_new_line_pt_pt_on_support_extended(self, i_pt_origine=None, i_pt_extremite=None, i_support=None,
-                                               i_begin_offset=None, i_end_offset=None):
+    def add_new_line_pt_pt_on_support_extended(self, i_pt_origine, i_pt_extremite, i_support, i_begin_offset,
+                                               i_end_offset):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewLinePtPtOnSupportExtended(Reference iPtOrigine,
                 | Reference iPtExtremite,
                 | Reference iSupport,
@@ -2788,16 +2981,18 @@ class HybridShapeFactory(Factory):
         :param Reference i_support:
         :param float i_begin_offset:
         :param float i_end_offset:
-        :return: None
+        :return: HybridShapeLinePtPt
         """
-        return self.hybrid_shape_factory.AddNewLinePtPtOnSupportExtended(i_pt_origine, i_pt_extremite, i_support,
-                                                                         i_begin_offset, i_end_offset)
+        return HybridShapeLinePtPt(self.hybrid_shape_factory.AddNewLinePtPtOnSupportExtended(i_pt_origine.com_object,
+                                                                                             i_pt_extremite.com_object,
+                                                                                             i_support.com_object,
+                                                                                             i_begin_offset,
+                                                                                             i_end_offset))
 
-    def add_new_line_tangency(self, i_curve=None, i_point=None, i_begin_offset=None, i_end_offset=None,
-                              i_orientation=None):
+    def add_new_line_tangency(self, i_curve, i_point, i_begin_offset, i_end_offset, i_orientation):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewLineTangency(Reference iCurve,
                 | Reference iPoint,
                 | double iBeginOffset,
@@ -2834,16 +3029,17 @@ class HybridShapeFactory(Factory):
         :param float i_begin_offset:
         :param float i_end_offset:
         :param bool i_orientation:
-        :return: None
+        :return: HybridShapeLineTangency
         """
-        return self.hybrid_shape_factory.AddNewLineTangency(i_curve, i_point, i_begin_offset, i_end_offset,
-                                                            i_orientation)
+        return HybridShapeLineTangency(
+            self.hybrid_shape_factory.AddNewLineTangency(i_curve.com_object, i_point.com_object, i_begin_offset,
+                                                         i_end_offset, i_orientation))
 
-    def add_new_line_tangency_on_support(self, i_curve=None, i_point=None, i_support=None, i_begin_offset=None,
-                                         i_end_offset=None, i_orientation=None):
+    def add_new_line_tangency_on_support(self, i_curve, i_point, i_support, i_begin_offset, i_end_offset,
+                                         i_orientation):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewLineTangencyOnSupport(Reference iCurve,
                 | Reference iPoint,
                 | Reference iSupport,
@@ -2887,15 +3083,17 @@ class HybridShapeFactory(Factory):
         :param float i_begin_offset:
         :param float i_end_offset:
         :param bool i_orientation:
-        :return: None
+        :return: HybridShapeLineTangency
         """
-        return self.hybrid_shape_factory.AddNewLineTangencyOnSupport(i_curve, i_point, i_support, i_begin_offset,
-                                                                     i_end_offset, i_orientation)
+        return HybridShapeLineTangency(
+            self.hybrid_shape_factory.AddNewLineTangencyOnSupport(i_curve.com_object, i_point.com_object,
+                                                                  i_support.com_object, i_begin_offset, i_end_offset,
+                                                                  i_orientation))
 
     def add_new_loft(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewLoft() As HybridShapeLoft
                 | 
                 |     Creates a new Loft within the current body.
@@ -2909,10 +3107,10 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapeLoft(self.hybrid_shape_factory.AddNewLoft())
 
-    def add_new_mid_surface(self, i_support=None, i_creation_mode=None, i_threshold=None):
+    def add_new_mid_surface(self, i_support, i_creation_mode, i_threshold):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewMidSurface(Reference iSupport,
                 | long iCreationMode,
                 | double iThreshold) As HybridShapeMidSurface
@@ -2934,15 +3132,16 @@ class HybridShapeFactory(Factory):
         :param Reference i_support:
         :param int i_creation_mode:
         :param float i_threshold:
-        :return: None
+        :return: HybridShapeMidSurface
         """
-        return self.hybrid_shape_factory.AddNewMidSurface(i_support, i_creation_mode, i_threshold)
+        return HybridShapeMidSurface(
+            self.hybrid_shape_factory.AddNewMidSurface(i_support.com_object, i_creation_mode, i_threshold))
 
-    def add_new_mid_surface_with_auto_threshold(self, i_support=None, i_creation_mode=None, i_threshold=None,
-                                                i_auto_thickness_threshold=None):
+    def add_new_mid_surface_with_auto_threshold(self, i_support, i_creation_mode, i_threshold,
+                                                i_auto_thickness_threshold):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewMidSurfaceWithAutoThreshold(Reference iSupport,
                 | long iCreationMode,
                 | double iThreshold,
@@ -2968,15 +3167,16 @@ class HybridShapeFactory(Factory):
         :param int i_creation_mode:
         :param float i_threshold:
         :param int i_auto_thickness_threshold:
-        :return: None
+        :return: HybridShapeMidSurface
         """
-        return self.hybrid_shape_factory.AddNewMidSurfaceWithAutoThreshold(i_support, i_creation_mode, i_threshold,
-                                                                           i_auto_thickness_threshold)
+        return HybridShapeMidSurface(
+            self.hybrid_shape_factory.AddNewMidSurfaceWithAutoThreshold(i_support.com_object, i_creation_mode,
+                                                                        i_threshold, i_auto_thickness_threshold))
 
-    def add_new_near(self, multi_element=None, reference_element=None):
+    def add_new_near(self, multi_element, reference_element):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewNear(Reference MultiElement,
                 | Reference ReferenceElement) As HybridShapeNear
                 | 
@@ -3001,14 +3201,15 @@ class HybridShapeFactory(Factory):
 
         :param Reference multi_element:
         :param Reference reference_element:
-        :return: None
+        :return: HybridShapeNear
         """
-        return self.hybrid_shape_factory.AddNewNear(multi_element, reference_element)
+        return HybridShapeNear(
+            self.hybrid_shape_factory.AddNewNear(multi_element.com_object, reference_element.com_object))
 
-    def add_new_offset(self, i_object_to_offset=None, i_offset=None, i_orientation=None, i_precision=None):
+    def add_new_offset(self, i_object_to_offset, i_offset, i_orientation, i_precision):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewOffset(Reference iObjectToOffset,
                 | double iOffset,
                 | boolean iOrientation,
@@ -3037,14 +3238,15 @@ class HybridShapeFactory(Factory):
         :param float i_offset:
         :param bool i_orientation:
         :param float i_precision:
-        :return: None
+        :return: HybridShapeOffset
         """
-        return self.hybrid_shape_factory.AddNewOffset(i_object_to_offset, i_offset, i_orientation, i_precision)
+        return HybridShapeOffset(
+            self.hybrid_shape_factory.AddNewOffset(i_object_to_offset.com_object, i_offset, i_orientation, i_precision))
 
-    def add_new_plane1_curve(self, i_planar_curve=None):
+    def add_new_plane1_curve(self, i_planar_curve):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPlane1Curve(Reference iPlanarCurve) As
                 | HybridShapePlane1Curve
                 | 
@@ -3065,12 +3267,12 @@ class HybridShapeFactory(Factory):
         :param Reference i_planar_curve:
         :return: HybridShapePlane1Curve
         """
-        return HybridShapePlane1Curve(self.hybrid_shape_factory.AddNewPlane1Curve(i_planar_curve))
+        return HybridShapePlane1Curve(self.hybrid_shape_factory.AddNewPlane1Curve(i_planar_curve.com_object))
 
-    def add_new_plane1_line1_pt(self, i_ln=None, i_pt=None):
+    def add_new_plane1_line1_pt(self, i_ln, i_pt):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPlane1Line1Pt(Reference iLn,
                 | Reference iPt) As HybridShapePlane1Line1Pt
                 | 
@@ -3095,14 +3297,14 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_ln:
         :param Reference i_pt:
-        :return: None
+        :return: HybridShapePlane1Line1Pt
         """
-        return self.hybrid_shape_factory.AddNewPlane1Line1Pt(i_ln, i_pt)
+        return HybridShapePlane1Line1Pt(self.hybrid_shape_factory.AddNewPlane1Line1Pt(i_ln.com_object, i_pt.com_object))
 
-    def add_new_plane2_lines(self, i_ln1=None, i_ln2=None):
+    def add_new_plane2_lines(self, i_ln1, i_ln2):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPlane2Lines(Reference iLn1,
                 | Reference iLn2) As HybridShapePlane2Lines
                 | 
@@ -3128,14 +3330,14 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_ln1:
         :param Reference i_ln2:
-        :return: None
+        :return: HybridShapePlane2Lines
         """
-        return self.hybrid_shape_factory.AddNewPlane2Lines(i_ln1, i_ln2)
+        return HybridShapePlane2Lines(self.hybrid_shape_factory.AddNewPlane2Lines(i_ln1.com_object, i_ln2.com_object))
 
-    def add_new_plane3_points(self, i_pt1=None, i_pt2=None, i_pt3=None):
+    def add_new_plane3_points(self, i_pt1, i_pt2, i_pt3):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPlane3Points(Reference iPt1,
                 | Reference iPt2,
                 | Reference iPt3) As HybridShapePlane3Points
@@ -3164,14 +3366,15 @@ class HybridShapeFactory(Factory):
         :param Reference i_pt1:
         :param Reference i_pt2:
         :param Reference i_pt3:
-        :return: None
+        :return: HybridShapePlane3Points
         """
-        return self.hybrid_shape_factory.AddNewPlane3Points(i_pt1, i_pt2, i_pt3)
+        return HybridShapePlane3Points(
+            self.hybrid_shape_factory.AddNewPlane3Points(i_pt1.com_object, i_pt2.com_object, i_pt3.com_object))
 
-    def add_new_plane_angle(self, i_plane=None, i_revol_axis=None, i_angle=None, i_orientation=None):
+    def add_new_plane_angle(self, i_plane, i_revol_axis, i_angle, i_orientation):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPlaneAngle(Reference iPlane,
                 | Reference iRevolAxis,
                 | double iAngle,
@@ -3205,14 +3408,16 @@ class HybridShapeFactory(Factory):
         :param Reference i_revol_axis:
         :param float i_angle:
         :param bool i_orientation:
-        :return: None
+        :return: HybridShapePlaneAngle
         """
-        return self.hybrid_shape_factory.AddNewPlaneAngle(i_plane, i_revol_axis, i_angle, i_orientation)
+        return HybridShapePlaneAngle(
+            self.hybrid_shape_factory.AddNewPlaneAngle(i_plane.com_object, i_revol_axis.com_object, i_angle,
+                                                       i_orientation))
 
-    def add_new_plane_datum(self, i_object=None):
+    def add_new_plane_datum(self, i_object):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPlaneDatum(Reference iObject) As
                 | HybridShapePlaneExplicit
                 | 
@@ -3231,12 +3436,12 @@ class HybridShapeFactory(Factory):
         :param Reference i_object:
         :return: HybridShapePlaneExplicit
         """
-        return HybridShapePlaneExplicit(self.hybrid_shape_factory.AddNewPlaneDatum(i_object))
+        return HybridShapePlaneExplicit(self.hybrid_shape_factory.AddNewPlaneDatum(i_object.com_object))
 
-    def add_new_plane_equation(self, i_a_coeff=None, i_b_coeff=None, i_c_coeff=None, i_d_coeff=None):
+    def add_new_plane_equation(self, i_a_coeff, i_b_coeff, i_c_coeff, i_d_coeff):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPlaneEquation(double iA_Coeff,
                 | double iB_Coeff,
                 | double iC_Coeff,
@@ -3261,14 +3466,15 @@ class HybridShapeFactory(Factory):
         :param float i_b_coeff:
         :param float i_c_coeff:
         :param float i_d_coeff:
-        :return: None
+        :return: HybridShapePlaneEquation
         """
-        return self.hybrid_shape_factory.AddNewPlaneEquation(i_a_coeff, i_b_coeff, i_c_coeff, i_d_coeff)
+        return HybridShapePlaneEquation(
+            self.hybrid_shape_factory.AddNewPlaneEquation(i_a_coeff, i_b_coeff, i_c_coeff, i_d_coeff))
 
-    def add_new_plane_mean(self, i_list_of_points=None, nb_point=None):
+    def add_new_plane_mean(self, i_list_of_points, nb_point):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPlaneMean(CATSafeArrayVariant iListOfPoints,
                 | long NbPoint) As HybridShapePlaneMean
                 | 
@@ -3278,7 +3484,8 @@ class HybridShapeFactory(Factory):
                 |     Parameters:
                 | 
                 |         oIListOfPoints
-                |             list of passing points Warning : Input and Output parameter for CATScript applications, procedural type 
+                |             list of passing points Warning : Input and Output parameter for CATScript applications,
+                |             procedural type
                 |         iNbPoint
                 |             Number of points 
                 |         oPlane
@@ -3286,14 +3493,14 @@ class HybridShapeFactory(Factory):
 
         :param tuple i_list_of_points:
         :param int nb_point:
-        :return: None
+        :return: HybridShapePlaneMean
         """
-        return self.hybrid_shape_factory.AddNewPlaneMean(i_list_of_points, nb_point)
+        return HybridShapePlaneMean(self.hybrid_shape_factory.AddNewPlaneMean(i_list_of_points, nb_point))
 
-    def add_new_plane_normal(self, i_curve=None, i_pt=None):
+    def add_new_plane_normal(self, i_curve, i_pt):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPlaneNormal(Reference iCurve,
                 | Reference iPt) As HybridShapePlaneNormal
                 | 
@@ -3316,14 +3523,14 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_curve:
         :param Reference i_pt:
-        :return: None
+        :return: HybridShapePlaneNormal
         """
-        return self.hybrid_shape_factory.AddNewPlaneNormal(i_curve, i_pt)
+        return HybridShapePlaneNormal(self.hybrid_shape_factory.AddNewPlaneNormal(i_curve.com_object, i_pt.com_object))
 
-    def add_new_plane_offset(self, i_plane=None, i_offset=None, i_orientation=None):
+    def add_new_plane_offset(self, i_plane, i_offset, i_orientation):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPlaneOffset(Reference iPlane,
                 | double iOffset,
                 | boolean iOrientation) As HybridShapePlaneOffset
@@ -3349,14 +3556,15 @@ class HybridShapeFactory(Factory):
         :param Reference i_plane:
         :param float i_offset:
         :param bool i_orientation:
-        :return: None
+        :return: HybridShapePlaneOffset
         """
-        return self.hybrid_shape_factory.AddNewPlaneOffset(i_plane, i_offset, i_orientation)
+        return HybridShapePlaneOffset(
+            self.hybrid_shape_factory.AddNewPlaneOffset(i_plane.com_object, i_offset, i_orientation))
 
-    def add_new_plane_offset_pt(self, i_plane=None, i_pt=None):
+    def add_new_plane_offset_pt(self, i_plane, i_pt):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPlaneOffsetPt(Reference iPlane,
                 | Reference iPt) As HybridShapePlaneOffsetPt
                 | 
@@ -3380,14 +3588,15 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_plane:
         :param Reference i_pt:
-        :return: None
+        :return: HybridShapePlaneOffsetPt
         """
-        return self.hybrid_shape_factory.AddNewPlaneOffsetPt(i_plane, i_pt)
+        return HybridShapePlaneOffsetPt(
+            self.hybrid_shape_factory.AddNewPlaneOffsetPt(i_plane.com_object, i_pt.com_object))
 
-    def add_new_plane_tangent(self, i_surface=None, i_pt=None):
+    def add_new_plane_tangent(self, i_surface, i_pt):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPlaneTangent(Reference iSurface,
                 | Reference iPt) As HybridShapePlaneTangent
                 | 
@@ -3409,14 +3618,15 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_surface:
         :param Reference i_pt:
-        :return: None
+        :return: HybridShapePlaneTangent
         """
-        return self.hybrid_shape_factory.AddNewPlaneTangent(i_surface, i_pt)
+        return HybridShapePlaneTangent(
+            self.hybrid_shape_factory.AddNewPlaneTangent(i_surface.com_object, i_pt.com_object))
 
-    def add_new_point_between(self, i_point1=None, i_point2=None, i_ratio=None, i_orientation=None):
+    def add_new_point_between(self, i_point1, i_point2, i_ratio, i_orientation):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPointBetween(Reference iPoint1,
                 | Reference iPoint2,
                 | double iRatio,
@@ -3446,14 +3656,16 @@ class HybridShapeFactory(Factory):
         :param Reference i_point2:
         :param float i_ratio:
         :param int i_orientation:
-        :return: None
+        :return: HybridShapePointBetween
         """
-        return self.hybrid_shape_factory.AddNewPointBetween(i_point1, i_point2, i_ratio, i_orientation)
+        return HybridShapePointBetween(
+            self.hybrid_shape_factory.AddNewPointBetween(i_point1.com_object, i_point2.com_object, i_ratio,
+                                                         i_orientation))
 
-    def add_new_point_center(self, i_curve=None):
+    def add_new_point_center(self, i_curve):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPointCenter(Reference iCurve) As
                 | HybridShapePointCenter
                 | 
@@ -3473,12 +3685,12 @@ class HybridShapeFactory(Factory):
         :param Reference i_curve:
         :return: HybridShapePointCenter
         """
-        return HybridShapePointCenter(self.hybrid_shape_factory.AddNewPointCenter(i_curve))
+        return HybridShapePointCenter(self.hybrid_shape_factory.AddNewPointCenter(i_curve.com_object))
 
-    def add_new_point_coord(self, i_x=None, i_y=None, i_z=None):
+    def add_new_point_coord(self, i_x, i_y, i_z):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPointCoord(double iX,
                 | double iY,
                 | double iZ) As HybridShapePointCoord
@@ -3500,14 +3712,14 @@ class HybridShapeFactory(Factory):
         :param float i_x:
         :param float i_y:
         :param float i_z:
-        :return: None
+        :return: HybridShapePointCoord
         """
         return HybridShapePointCoord(self.hybrid_shape_factory.AddNewPointCoord(i_x, i_y, i_z))
 
-    def add_new_point_coord_with_reference(self, i_x=None, i_y=None, i_z=None, i_pt=None):
+    def add_new_point_coord_with_reference(self, i_x, i_y, i_z, i_pt):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPointCoordWithReference(double iX,
                 | double iY,
                 | double iZ,
@@ -3536,14 +3748,15 @@ class HybridShapeFactory(Factory):
         :param float i_y:
         :param float i_z:
         :param Reference i_pt:
-        :return: None
+        :return: HybridShapePointCoord
         """
-        return self.hybrid_shape_factory.AddNewPointCoordWithReference(i_x, i_y, i_z, i_pt)
+        return HybridShapePointCoord(
+            self.hybrid_shape_factory.AddNewPointCoordWithReference(i_x, i_y, i_z, i_pt.com_object))
 
-    def add_new_point_datum(self, i_object=None):
+    def add_new_point_datum(self, i_object):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPointDatum(Reference iObject) As
                 | HybridShapePointExplicit
                 | 
@@ -3562,12 +3775,12 @@ class HybridShapeFactory(Factory):
         :param Reference i_object:
         :return: HybridShapePointExplicit
         """
-        return HybridShapePointExplicit(self.hybrid_shape_factory.AddNewPointDatum(i_object))
+        return HybridShapePointExplicit(self.hybrid_shape_factory.AddNewPointDatum(i_object.com_object))
 
-    def add_new_point_on_curve_along_direction(self, i_crv=None, i_long=None, i_orientation=None, i_direction=None):
+    def add_new_point_on_curve_along_direction(self, i_crv, i_long, i_orientation, i_direction):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPointOnCurveAlongDirection(Reference iCrv,
                 | double iLong,
                 | boolean iOrientation,
@@ -3598,14 +3811,16 @@ class HybridShapeFactory(Factory):
         :param float i_long:
         :param bool i_orientation:
         :param HybridShapeDirection i_direction:
-        :return: None
+        :return: HybridShapePointOnCurve
         """
-        return self.hybrid_shape_factory.AddNewPointOnCurveAlongDirection(i_crv, i_long, i_orientation, i_direction)
+        return HybridShapePointOnCurve(
+            self.hybrid_shape_factory.AddNewPointOnCurveAlongDirection(i_crv.com_object, i_long, i_orientation,
+                                                                       i_direction.com_object))
 
-    def add_new_point_on_curve_from_distance(self, i_crv=None, i_long=None, i_orientation=None):
+    def add_new_point_on_curve_from_distance(self, i_crv, i_long, i_orientation):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPointOnCurveFromDistance(Reference iCrv,
                 | double iLong,
                 | boolean iOrientation) As HybridShapePointOnCurve
@@ -3624,21 +3839,23 @@ class HybridShapeFactory(Factory):
                 |     iLong
                 |         distance to extremity 
                 |     iOrientation
-                |         Orientation = TRUE means that distance is measured in the other orientation of the curve and from the other extremity. 
+                |         Orientation = TRUE means that distance is measured in the other orientation of the curve and
+                |         from the other extremity.
                 |     oPoint
                 |         Created point
 
         :param Reference i_crv:
         :param float i_long:
         :param bool i_orientation:
-        :return: None
+        :return: HybridShapePointOnCurve
         """
-        return self.hybrid_shape_factory.AddNewPointOnCurveFromDistance(i_crv, i_long, i_orientation)
+        return HybridShapePointOnCurve(
+            self.hybrid_shape_factory.AddNewPointOnCurveFromDistance(i_crv.com_object, i_long, i_orientation))
 
-    def add_new_point_on_curve_from_percent(self, i_crv=None, i_long=None, i_orientation=None):
+    def add_new_point_on_curve_from_percent(self, i_crv, i_long, i_orientation):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPointOnCurveFromPercent(Reference iCrv,
                 | double iLong,
                 | boolean iOrientation) As HybridShapePointOnCurve
@@ -3657,22 +3874,23 @@ class HybridShapeFactory(Factory):
                 |     iLong
                 |         Ratio of curve length 
                 |     iOrientation
-                |         Orientation = TRUE means that ratio is measured in the other orientation of the curve and from the other extremity. 
+                |         Orientation = TRUE means that ratio is measured in the other orientation of the curve and
+                |         from the other extremity.
                 |     oPoint
                 |         Created point
 
         :param Reference i_crv:
         :param float i_long:
         :param bool i_orientation:
-        :return: None
+        :return: HybridShapePointOnCurve
         """
-        return self.hybrid_shape_factory.AddNewPointOnCurveFromPercent(i_crv, i_long, i_orientation)
+        return HybridShapePointOnCurve(
+            self.hybrid_shape_factory.AddNewPointOnCurveFromPercent(i_crv.com_object, i_long, i_orientation))
 
-    def add_new_point_on_curve_with_reference_along_direction(self, i_crv=None, i_pt=None, i_long=None,
-                                                              i_orientation=None, i_direction=None):
+    def add_new_point_on_curve_with_reference_along_direction(self, i_crv, i_pt, i_long, i_orientation, i_direction):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPointOnCurveWithReferenceAlongDirection(Reference
                 | iCrv,
                 | Reference iPt,
@@ -3709,16 +3927,17 @@ class HybridShapeFactory(Factory):
         :param float i_long:
         :param bool i_orientation:
         :param HybridShapeDirection i_direction:
-        :return: None
+        :return: HybridShapePointOnCurve
         """
-        return self.hybrid_shape_factory.AddNewPointOnCurveWithReferenceAlongDirection(i_crv, i_pt, i_long,
-                                                                                       i_orientation, i_direction)
+        return HybridShapePointOnCurve(
+            self.hybrid_shape_factory.AddNewPointOnCurveWithReferenceAlongDirection(i_crv.com_object, i_pt.com_object,
+                                                                                    i_long, i_orientation,
+                                                                                    i_direction.com_object))
 
-    def add_new_point_on_curve_with_reference_from_distance(self, i_crv=None, i_pt=None, i_long=None,
-                                                            i_orientation=None):
+    def add_new_point_on_curve_with_reference_from_distance(self, i_crv, i_pt, i_long, i_orientation):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPointOnCurveWithReferenceFromDistance(Reference
                 | iCrv,
                 | Reference iPt,
@@ -3751,15 +3970,16 @@ class HybridShapeFactory(Factory):
         :param Reference i_pt:
         :param float i_long:
         :param bool i_orientation:
-        :return: None
+        :return: HybridShapePointOnCurve
         """
-        return self.hybrid_shape_factory.AddNewPointOnCurveWithReferenceFromDistance(i_crv, i_pt, i_long, i_orientation)
+        return HybridShapePointOnCurve(
+            self.hybrid_shape_factory.AddNewPointOnCurveWithReferenceFromDistance(i_crv.com_object, i_pt.com_object,
+                                                                                  i_long, i_orientation))
 
-    def add_new_point_on_curve_with_reference_from_percent(self, i_crv=None, i_pt=None, i_long=None,
-                                                           i_orientation=None):
+    def add_new_point_on_curve_with_reference_from_percent(self, i_crv, i_pt, i_long, i_orientation):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPointOnCurveWithReferenceFromPercent(Reference
                 | iCrv,
                 | Reference iPt,
@@ -3792,14 +4012,16 @@ class HybridShapeFactory(Factory):
         :param Reference i_pt:
         :param float i_long:
         :param bool i_orientation:
-        :return: None
+        :return: HybridShapePointOnCurve
         """
-        return self.hybrid_shape_factory.AddNewPointOnCurveWithReferenceFromPercent(i_crv, i_pt, i_long, i_orientation)
+        return HybridShapePointOnCurve(
+            self.hybrid_shape_factory.AddNewPointOnCurveWithReferenceFromPercent(i_crv.com_object, i_pt.com_object,
+                                                                                 i_long, i_orientation))
 
-    def add_new_point_on_plane(self, i_plane=None, i_x=None, i_y=None):
+    def add_new_point_on_plane(self, i_plane, i_x, i_y):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPointOnPlane(Reference iPlane,
                 | double iX,
                 | double iY) As HybridShapePointOnPlane
@@ -3824,14 +4046,14 @@ class HybridShapeFactory(Factory):
         :param Reference i_plane:
         :param float i_x:
         :param float i_y:
-        :return: None
+        :return: HybridShapePointOnPlane
         """
-        return self.hybrid_shape_factory.AddNewPointOnPlane(i_plane, i_x, i_y)
+        return HybridShapePointOnPlane(self.hybrid_shape_factory.AddNewPointOnPlane(i_plane.com_object, i_x, i_y))
 
-    def add_new_point_on_plane_with_reference(self, i_plane=None, i_pt=None, i_x=None, i_y=None):
+    def add_new_point_on_plane_with_reference(self, i_plane, i_pt, i_x, i_y):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPointOnPlaneWithReference(Reference iPlane,
                 | Reference iPt,
                 | double iX,
@@ -3864,14 +4086,15 @@ class HybridShapeFactory(Factory):
         :param Reference i_pt:
         :param float i_x:
         :param float i_y:
-        :return: None
+        :return: HybridShapePointOnPlane
         """
-        return self.hybrid_shape_factory.AddNewPointOnPlaneWithReference(i_plane, i_pt, i_x, i_y)
+        return HybridShapePointOnPlane(
+            self.hybrid_shape_factory.AddNewPointOnPlaneWithReference(i_plane.com_object, i_pt.com_object, i_x, i_y))
 
-    def add_new_point_on_surface(self, i_surface=None, i_direction=None, i_x=None):
+    def add_new_point_on_surface(self, i_surface, i_direction, i_x):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPointOnSurface(Reference iSurface,
                 | HybridShapeDirection iDirection,
                 | double iX) As HybridShapePointOnSurface
@@ -3896,14 +4119,15 @@ class HybridShapeFactory(Factory):
         :param Reference i_surface:
         :param HybridShapeDirection i_direction:
         :param float i_x:
-        :return: None
+        :return: HybridShapePointOnSurface
         """
-        return self.hybrid_shape_factory.AddNewPointOnSurface(i_surface, i_direction, i_x)
+        return HybridShapePointOnSurface(
+            self.hybrid_shape_factory.AddNewPointOnSurface(i_surface.com_object, i_direction.com_object, i_x))
 
-    def add_new_point_on_surface_with_reference(self, i_surface=None, i_pt=None, i_direction=None, i_x=None):
+    def add_new_point_on_surface_with_reference(self, i_surface, i_pt, i_direction, i_x):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPointOnSurfaceWithReference(Reference iSurface,
                 | Reference iPt,
                 | HybridShapeDirection iDirection,
@@ -3935,14 +4159,16 @@ class HybridShapeFactory(Factory):
         :param Reference i_pt:
         :param HybridShapeDirection i_direction:
         :param float i_x:
-        :return: None
+        :return: HybridShapePointOnSurface
         """
-        return self.hybrid_shape_factory.AddNewPointOnSurfaceWithReference(i_surface, i_pt, i_direction, i_x)
+        return HybridShapePointOnSurface(
+            self.hybrid_shape_factory.AddNewPointOnSurfaceWithReference(i_surface.com_object, i_pt.com_object,
+                                                                        i_direction.com_object, i_x))
 
-    def add_new_point_tangent(self, i_curve=None, i_direction=None):
+    def add_new_point_tangent(self, i_curve, i_direction):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPointTangent(Reference iCurve,
                 | HybridShapeDirection iDirection) As HybridShapePointTangent
                 | 
@@ -3963,14 +4189,15 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_curve:
         :param HybridShapeDirection i_direction:
-        :return: None
+        :return: HybridShapePointTangent
         """
-        return self.hybrid_shape_factory.AddNewPointTangent(i_curve, i_direction)
+        return HybridShapePointTangent(
+            self.hybrid_shape_factory.AddNewPointTangent(i_curve.com_object, i_direction.com_object))
 
     def add_new_polyline(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPolyline() As HybridShapePolyline
                 | 
                 |     Creates a new Polyline within the current body.
@@ -3984,10 +4211,10 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapePolyline(self.hybrid_shape_factory.AddNewPolyline())
 
-    def add_new_position_transfo(self, i_mode=None):
+    def add_new_position_transfo(self, i_mode):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewPositionTransfo(long iMode) As
                 | HybridShapePositionTransfo
                 | 
@@ -4006,10 +4233,10 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapePositionTransfo(self.hybrid_shape_factory.AddNewPositionTransfo(i_mode))
 
-    def add_new_project(self, i_element=None, i_support=None):
+    def add_new_project(self, i_element, i_support):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewProject(Reference iElement,
                 | Reference iSupport) As HybridShapeProject
                 | 
@@ -4032,15 +4259,14 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_element:
         :param Reference i_support:
-        :return: None
+        :return: HybridShapeProject
         """
-        return self.hybrid_shape_factory.AddNewProject(i_element, i_support)
+        return HybridShapeProject(self.hybrid_shape_factory.AddNewProject(i_element.com_object, i_support.com_object))
 
-    def add_new_reflect_line(self, i_support=None, i_dir=None, i_angle=None, i_orientation_support=None,
-                             i_orientation_direction=None):
+    def add_new_reflect_line(self, i_support, i_dir, i_angle, i_orientation_support, i_orientation_direction):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewReflectLine(Reference iSupport,
                 | HybridShapeDirection iDir,
                 | double iAngle,
@@ -4075,16 +4301,17 @@ class HybridShapeFactory(Factory):
         :param float i_angle:
         :param int i_orientation_support:
         :param int i_orientation_direction:
-        :return: None
+        :return: HybridShapeReflectLine
         """
-        return self.hybrid_shape_factory.AddNewReflectLine(i_support, i_dir, i_angle, i_orientation_support,
-                                                           i_orientation_direction)
+        return HybridShapeReflectLine(
+            self.hybrid_shape_factory.AddNewReflectLine(i_support.com_object, i_dir.com_object, i_angle,
+                                                        i_orientation_support, i_orientation_direction))
 
-    def add_new_reflect_line_with_type(self, i_support=None, i_dir=None, i_angle=None, i_orientation_support=None,
-                                       i_orientation_direction=None, i_type=None):
+    def add_new_reflect_line_with_type(self, i_support, i_dir, i_angle, i_orientation_support, i_orientation_direction,
+                                       i_type):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewReflectLineWithType(Reference iSupport,
                 | HybridShapeDirection iDir,
                 | double iAngle,
@@ -4128,15 +4355,16 @@ class HybridShapeFactory(Factory):
         :param int i_orientation_support:
         :param int i_orientation_direction:
         :param int i_type:
-        :return: None
+        :return: HybridShapeReflectLine
         """
-        return self.hybrid_shape_factory.AddNewReflectLineWithType(i_support, i_dir, i_angle, i_orientation_support,
-                                                                   i_orientation_direction, i_type)
+        return HybridShapeReflectLine(
+            self.hybrid_shape_factory.AddNewReflectLineWithType(i_support.com_object, i_dir.com_object, i_angle,
+                                                                i_orientation_support, i_orientation_direction, i_type))
 
-    def add_new_revol(self, i_object_to_extrude=None, i_offset_debut=None, i_offset_fin=None, i_axis=None):
+    def add_new_revol(self, i_object_to_extrude, i_offset_debut, i_offset_fin, i_axis):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewRevol(Reference iObjectToExtrude,
                 | double iOffsetDebut,
                 | double iOffsetFin,
@@ -4171,14 +4399,16 @@ class HybridShapeFactory(Factory):
         :param float i_offset_debut:
         :param float i_offset_fin:
         :param Reference i_axis:
-        :return: None
+        :return: HybridShapeRevol
         """
-        return self.hybrid_shape_factory.AddNewRevol(i_object_to_extrude, i_offset_debut, i_offset_fin, i_axis)
+        return HybridShapeRevol(
+            self.hybrid_shape_factory.AddNewRevol(i_object_to_extrude.com_object, i_offset_debut, i_offset_fin,
+                                                  i_axis.com_object))
 
-    def add_new_rotate(self, i_to_rotate=None, i_axis=None, i_angle=None):
+    def add_new_rotate(self, i_to_rotate, i_axis, i_angle):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewRotate(Reference iToRotate,
                 | Reference iAxis,
                 | double iAngle) As HybridShapeRotate
@@ -4205,14 +4435,15 @@ class HybridShapeFactory(Factory):
         :param Reference i_to_rotate:
         :param Reference i_axis:
         :param float i_angle:
-        :return: None
+        :return: HybridShapeRotate
         """
-        return self.hybrid_shape_factory.AddNewRotate(i_to_rotate, i_axis, i_angle)
+        return HybridShapeRotate(
+            self.hybrid_shape_factory.AddNewRotate(i_to_rotate.com_object, i_axis.com_object, i_angle))
 
     def add_new_section(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewSection() As HybridShapeSection
                 | 
                 |     Creates a new section.
@@ -4226,11 +4457,11 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapeSection(self.hybrid_shape_factory.AddNewSection())
 
-    def add_new_sphere(self, i_center=None, i_axis=None, i_radius=None, i_begin_parallel_angle=None,
-                       i_end_parallel_angle=None, i_begin_meridian_angle=None, i_end_meridian_angle=None):
+    def add_new_sphere(self, i_center, i_axis, i_radius, i_begin_parallel_angle, i_end_parallel_angle,
+                       i_begin_meridian_angle, i_end_meridian_angle):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewSphere(Reference iCenter,
                 | Reference iAxis,
                 | double iRadius,
@@ -4270,16 +4501,17 @@ class HybridShapeFactory(Factory):
         :param float i_end_parallel_angle:
         :param float i_begin_meridian_angle:
         :param float i_end_meridian_angle:
-        :return: None
+        :return: HybridShapeSphere
         """
-        return self.hybrid_shape_factory.AddNewSphere(i_center, i_axis, i_radius, i_begin_parallel_angle,
-                                                      i_end_parallel_angle, i_begin_meridian_angle,
-                                                      i_end_meridian_angle)
+        return HybridShapeSphere(
+            self.hybrid_shape_factory.AddNewSphere(i_center.com_object, i_axis.com_object, i_radius,
+                                                   i_begin_parallel_angle, i_end_parallel_angle, i_begin_meridian_angle,
+                                                   i_end_meridian_angle))
 
     def add_new_spine(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewSpine() As HybridShapeSpine
                 | 
                 |     Creates a new spine within the current body.
@@ -4293,11 +4525,10 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapeSpine(self.hybrid_shape_factory.AddNewSpine())
 
-    def add_new_spiral(self, i_type=None, i_support=None, i_center_point=None, i_axis=None, i_starting_radius=None,
-                       i_clockwise_revolution=None):
+    def add_new_spiral(self, i_type, i_support, i_center_point, i_axis, i_starting_radius, i_clockwise_revolution):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewSpiral(long iType,
                 | Reference iSupport,
                 | Reference iCenterPoint,
@@ -4333,15 +4564,16 @@ class HybridShapeFactory(Factory):
         :param HybridShapeDirection i_axis:
         :param float i_starting_radius:
         :param bool i_clockwise_revolution:
-        :return: None
+        :return: HybridShapeSpiral
         """
-        return self.hybrid_shape_factory.AddNewSpiral(i_type, i_support, i_center_point, i_axis, i_starting_radius,
-                                                      i_clockwise_revolution)
+        return HybridShapeSpiral(
+            self.hybrid_shape_factory.AddNewSpiral(i_type, i_support.com_object, i_center_point.com_object,
+                                                   i_axis.com_object, i_starting_radius, i_clockwise_revolution))
 
     def add_new_spline(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewSpline() As HybridShapeSpline
                 | 
                 |     Creates a new Spline within the current body.
@@ -4355,10 +4587,10 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapeSpline(self.hybrid_shape_factory.AddNewSpline())
 
-    def add_new_surface_datum(self, i_object=None):
+    def add_new_surface_datum(self, i_object):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewSurfaceDatum(Reference iObject) As
                 | HybridShapeSurfaceExplicit
                 | 
@@ -4377,12 +4609,12 @@ class HybridShapeFactory(Factory):
         :param Reference i_object:
         :return: HybridShapeSurfaceExplicit
         """
-        return HybridShapeSurfaceExplicit(self.hybrid_shape_factory.AddNewSurfaceDatum(i_object))
+        return HybridShapeSurfaceExplicit(self.hybrid_shape_factory.AddNewSurfaceDatum(i_object.com_object))
 
-    def add_new_sweep_circle(self, i_guide1=None):
+    def add_new_sweep_circle(self, i_guide1):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewSweepCircle(Reference iGuide1) As
                 | HybridShapeSweepCircle
                 | 
@@ -4402,12 +4634,12 @@ class HybridShapeFactory(Factory):
         :param Reference i_guide1:
         :return: HybridShapeSweepCircle
         """
-        return HybridShapeSweepCircle(self.hybrid_shape_factory.AddNewSweepCircle(i_guide1))
+        return HybridShapeSweepCircle(self.hybrid_shape_factory.AddNewSweepCircle(i_guide1.com_object))
 
-    def add_new_sweep_conic(self, ip_ia_guide1=None):
+    def add_new_sweep_conic(self, ip_ia_guide1):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewSweepConic(Reference ipIAGuide1) As
                 | HybridShapeSweepConic
                 | 
@@ -4423,12 +4655,12 @@ class HybridShapeFactory(Factory):
         :param Reference ip_ia_guide1:
         :return: HybridShapeSweepConic
         """
-        return HybridShapeSweepConic(self.hybrid_shape_factory.AddNewSweepConic(ip_ia_guide1))
+        return HybridShapeSweepConic(self.hybrid_shape_factory.AddNewSweepConic(ip_ia_guide1.com_object))
 
-    def add_new_sweep_explicit(self, i_profile=None, i_guide=None):
+    def add_new_sweep_explicit(self, i_profile, i_guide):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewSweepExplicit(Reference iProfile,
                 | Reference iGuide) As HybridShapeSweepExplicit
                 | 
@@ -4451,14 +4683,15 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_profile:
         :param Reference i_guide:
-        :return: None
+        :return: HybridShapeSweepExplicit
         """
-        return self.hybrid_shape_factory.AddNewSweepExplicit(i_profile, i_guide)
+        return HybridShapeSweepExplicit(
+            self.hybrid_shape_factory.AddNewSweepExplicit(i_profile.com_object, i_guide.com_object))
 
-    def add_new_sweep_line(self, i_guide1=None):
+    def add_new_sweep_line(self, i_guide1):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewSweepLine(Reference iGuide1) As
                 | HybridShapeSweepLine
                 | 
@@ -4474,12 +4707,12 @@ class HybridShapeFactory(Factory):
         :param Reference i_guide1:
         :return: HybridShapeSweepLine
         """
-        return HybridShapeSweepLine(self.hybrid_shape_factory.AddNewSweepLine(i_guide1))
+        return HybridShapeSweepLine(self.hybrid_shape_factory.AddNewSweepLine(i_guide1.com_object))
 
-    def add_new_symmetry(self, i_object=None, i_reference=None):
+    def add_new_symmetry(self, i_object, i_reference):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewSymmetry(Reference iObject,
                 | Reference iReference) As HybridShapeSymmetry
                 | 
@@ -4502,14 +4735,15 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_object:
         :param Reference i_reference:
-        :return: None
+        :return: HybridShapeSymmetry
         """
-        return self.hybrid_shape_factory.AddNewSymmetry(i_object, i_reference)
+        return HybridShapeSymmetry(
+            self.hybrid_shape_factory.AddNewSymmetry(i_object.com_object, i_reference.com_object))
 
-    def add_new_transfer(self, i_element_to_transfer=None, i_type_of_transfer=None):
+    def add_new_transfer(self, i_element_to_transfer, i_type_of_transfer):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewTransfer(Reference iElementToTransfer,
                 | long iTypeOfTransfer) As HybridShapeTransfer
                 | 
@@ -4527,14 +4761,15 @@ class HybridShapeFactory(Factory):
 
         :param Reference i_element_to_transfer:
         :param int i_type_of_transfer:
-        :return: None
+        :return: HybridShapeTransfer
         """
-        return self.hybrid_shape_factory.AddNewTransfer(i_element_to_transfer, i_type_of_transfer)
+        return HybridShapeTransfer(
+            self.hybrid_shape_factory.AddNewTransfer(i_element_to_transfer.com_object, i_type_of_transfer))
 
-    def add_new_translate(self, i_element=None, i_direction=None, i_distance=None):
+    def add_new_translate(self, i_element, i_direction, i_distance):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewTranslate(Reference iElement,
                 | HybridShapeDirection iDirection,
                 | double iDistance) As HybridShapeTranslate
@@ -4562,14 +4797,15 @@ class HybridShapeFactory(Factory):
         :param Reference i_element:
         :param HybridShapeDirection i_direction:
         :param float i_distance:
-        :return: None
+        :return: HybridShapeTranslate
         """
-        return self.hybrid_shape_factory.AddNewTranslate(i_element, i_direction, i_distance)
+        return HybridShapeTranslate(
+            self.hybrid_shape_factory.AddNewTranslate(i_element.com_object, i_direction.com_object, i_distance))
 
     def add_new_unfold(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewUnfold() As HybridShapeUnfold
                 | 
                 |     Creates a new Unfold within the current body.
@@ -4584,10 +4820,10 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapeUnfold(self.hybrid_shape_factory.AddNewUnfold())
 
-    def add_new_volume_datum(self, i_object=None):
+    def add_new_volume_datum(self, i_object):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewVolumeDatum(Reference iObject) As
                 | HybridShapeVolumeExplicit
                 | 
@@ -4607,12 +4843,12 @@ class HybridShapeFactory(Factory):
         :param Reference i_object:
         :return: HybridShapeVolumeExplicit
         """
-        return HybridShapeVolumeExplicit(self.hybrid_shape_factory.AddNewVolumeDatum(i_object))
+        return HybridShapeVolumeExplicit(self.hybrid_shape_factory.AddNewVolumeDatum(i_object.com_object))
 
     def add_new_wrap_curve(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewWrapCurve() As HybridShapeWrapCurve
                 | 
                 |     Creates a new Wrap Curve Surface within the current body.
@@ -4627,10 +4863,10 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapeWrapCurve(self.hybrid_shape_factory.AddNewWrapCurve())
 
-    def add_new_wrap_surface(self, i_body_to_deform=None):
+    def add_new_wrap_surface(self, i_body_to_deform):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewWrapSurface(Reference iBodyToDeform) As
                 | HybridShapeWrapSurface
                 | 
@@ -4647,12 +4883,12 @@ class HybridShapeFactory(Factory):
         :param Reference i_body_to_deform:
         :return: HybridShapeWrapSurface
         """
-        return HybridShapeWrapSurface(self.hybrid_shape_factory.AddNewWrapSurface(i_body_to_deform))
+        return HybridShapeWrapSurface(self.hybrid_shape_factory.AddNewWrapSurface(i_body_to_deform.com_object))
 
-    def change_feature_name(self, i_elem=None, name=None):
+    def change_feature_name(self, i_elem, name):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub ChangeFeatureName(Reference iElem,
                 | CATBSTR Name)
                 | 
@@ -4669,7 +4905,7 @@ class HybridShapeFactory(Factory):
         :param str name:
         :return: None
         """
-        return self.hybrid_shape_factory.ChangeFeatureName(i_elem, name)
+        return self.hybrid_shape_factory.ChangeFeatureName(i_elem.com_object, name)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -4686,10 +4922,10 @@ class HybridShapeFactory(Factory):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def delete_object_for_datum(self, i_object=None):
+    def delete_object_for_datum(self, i_object):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DeleteObjectForDatum(Reference iObject)
                 | 
                 |     Deletes an object within the current body.
@@ -4702,7 +4938,7 @@ class HybridShapeFactory(Factory):
         :param Reference i_object:
         :return: None
         """
-        return self.hybrid_shape_factory.DeleteObjectForDatum(i_object)
+        return self.hybrid_shape_factory.DeleteObjectForDatum(i_object.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -4719,10 +4955,10 @@ class HybridShapeFactory(Factory):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def gsm_visibility(self, i_elem=None, show=None):
+    def gsm_visibility(self, i_elem, show):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GSMVisibility(Reference iElem,
                 | long Show)
                 | 
@@ -4739,7 +4975,7 @@ class HybridShapeFactory(Factory):
         :param int show:
         :return: None
         """
-        return self.hybrid_shape_factory.GSMVisibility(i_elem, show)
+        return self.hybrid_shape_factory.GSMVisibility(i_elem.com_object, show)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -4756,10 +4992,10 @@ class HybridShapeFactory(Factory):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_geometrical_feature_type(self, i_elem=None):
+    def get_geometrical_feature_type(self, i_elem):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetGeometricalFeatureType(Reference iElem) As short
                 | 
                 |     Returns type of "geometrical" shape Design feature .
@@ -4769,13 +5005,21 @@ class HybridShapeFactory(Factory):
                 |         iElem
                 |             Reference element 
                 |         oType
-                |             Type of feature = 0 , Unknown = 1 , Point = 2 , Curve = 3 , Line = 4 , Circle = 5 , Surface = 6 , Plane = 7 , Solid, Volume
+                |             Type of feature
+                |             = 0 , Unknown
+                |             = 1 , Point
+                |             = 2 , Curve
+                |             = 3 , Line
+                |             = 4 , Circle
+                |             = 5 , Surface
+                |             = 6 , Plane
+                |             = 7 , Solid, Volume
                 |             Level of availability = V5R14
 
         :param Reference i_elem:
         :return: enum
         """
-        return enum(self.hybrid_shape_factory.GetGeometricalFeatureType(i_elem))
+        return self.hybrid_shape_factory.GetGeometricalFeatureType(i_elem.com_object)
 
     def __repr__(self):
         return f'HybridShapeFactory(name="{self.name}")'

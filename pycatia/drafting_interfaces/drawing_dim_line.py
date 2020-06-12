@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -13,10 +13,9 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class DrawingDimLine(AnyObject):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -40,7 +39,7 @@ class DrawingDimLine(AnyObject):
     def color(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Color() As long
                 | 
                 |     Returns or sets color of dimension line.
@@ -68,7 +67,7 @@ class DrawingDimLine(AnyObject):
     def dim_line_graph_rep(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DimLineGraphRep() As CatDimLineGraphRep
                 | 
                 |     Returns or graphic representation of dimension line.
@@ -96,7 +95,7 @@ class DrawingDimLine(AnyObject):
     def dim_line_orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DimLineOrientation() As CatDimOrientation
                 | 
                 |     Returns or orientation of dimension line.
@@ -124,7 +123,7 @@ class DrawingDimLine(AnyObject):
     def dim_line_reference(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DimLineReference() As CatDimReference
                 | 
                 |     Returns or reference of dimension line.
@@ -152,7 +151,7 @@ class DrawingDimLine(AnyObject):
     def dim_line_rep(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DimLineRep() As CatDimLineRep (Read Only)
                 | 
                 |     Returns or representation of dimension line.
@@ -172,7 +171,7 @@ class DrawingDimLine(AnyObject):
     def dim_line_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DimLineType() As long (Read Only)
                 | 
                 |     Returns type of dimension line.
@@ -192,7 +191,7 @@ class DrawingDimLine(AnyObject):
     def thickness(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Thickness() As double
                 | 
                 |     Returns or sets thickness of dimension line.
@@ -216,10 +215,10 @@ class DrawingDimLine(AnyObject):
 
         self.drawing_dim_line.Thickness = value
 
-    def get_dim_line_dir(self, o_dir_x=None, o_dir_y=None):
+    def get_dim_line_dir(self, o_dir_x, o_dir_y):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetDimLineDir(double oDirX,
                 | double oDirY)
                 | 
@@ -243,20 +242,20 @@ class DrawingDimLine(AnyObject):
         """
         return self.drawing_dim_line.GetDimLineDir(o_dir_x, o_dir_y)
 
-    def get_geom_info(self, o_geom_infos=None):
+    def get_geom_info(self, o_geom_infos):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetGeomInfo(CATSafeArrayVariant oGeomInfos)
                 | 
-                |     Get geometrical infomation of dimension line.
+                |     Get geometrical information of dimension line.
                 | 
                 |     Parameters:
                 | 
                 |         oGeomInfos
                 |             geometrical information. 
                 |         Example:
-                |             This example gets geometrical infomation of MyDimLine
+                |             This example gets geometrical information of MyDimLine
                 |             path.
                 | 
                 |              MyDimLine.GetGeomInfo(oGeomInfos)
@@ -281,10 +280,10 @@ class DrawingDimLine(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_symb_color(self, index=None):
+    def get_symb_color(self, index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetSymbColor(long Index) As long
                 | 
                 |     Get symbol color of dimension line.
@@ -303,12 +302,12 @@ class DrawingDimLine(AnyObject):
         :param int index:
         :return: int
         """
-        return int(self.drawing_dim_line.GetSymbColor(index))
+        return self.drawing_dim_line.GetSymbColor(index)
 
-    def get_symb_thickness(self, index=None):
+    def get_symb_thickness(self, index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetSymbThickness(long Index) As double
                 | 
                 |     Get symbol thickness of dimension line.
@@ -328,12 +327,12 @@ class DrawingDimLine(AnyObject):
         :param int index:
         :return: float
         """
-        return float(self.drawing_dim_line.GetSymbThickness(index))
+        return self.drawing_dim_line.GetSymbThickness(index)
 
-    def get_symb_type(self, index=None):
+    def get_symb_type(self, index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetSymbType(long Index) As CatDimSymbols
                 | 
                 |     Get symbol type of dimension line.
@@ -350,14 +349,14 @@ class DrawingDimLine(AnyObject):
                 |              typeSymb = MyDimLine.GetSymbType(Index)
 
         :param int index:
-        :return: CatDimSymbols
+        :return: enum cat_dim_symbols
         """
-        return CatDimSymbols(self.drawing_dim_line.GetSymbType(index))
+        return self.drawing_dim_line.GetSymbType(index)
 
-    def set_symb_color(self, index=None, i_color_symb=None):
+    def set_symb_color(self, index, i_color_symb):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetSymbColor(long Index,
                 | long iColorSymb)
                 | 
@@ -380,10 +379,10 @@ class DrawingDimLine(AnyObject):
         """
         return self.drawing_dim_line.SetSymbColor(index, i_color_symb)
 
-    def set_symb_thickness(self, index=None, i_thick_symb=None):
+    def set_symb_thickness(self, index, i_thick_symb):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetSymbThickness(long Index,
                 | double iThickSymb)
                 | 
@@ -407,10 +406,10 @@ class DrawingDimLine(AnyObject):
         """
         return self.drawing_dim_line.SetSymbThickness(index, i_thick_symb)
 
-    def set_symb_type(self, index=None, i_symb_type=None):
+    def set_symb_type(self, index, i_symb_type):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetSymbType(long Index,
                 | CatDimSymbols iSymbType)
                 | 
@@ -431,7 +430,7 @@ class DrawingDimLine(AnyObject):
         :param CatDimSymbols i_symb_type:
         :return: None
         """
-        return self.drawing_dim_line.SetSymbType(index, i_symb_type)
+        return self.drawing_dim_line.SetSymbType(index, i_symb_type.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -449,4 +448,4 @@ class DrawingDimLine(AnyObject):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'DrawingDimLine(name="{ self.name }")'
+        return f'DrawingDimLine(name="{self.name}")'
