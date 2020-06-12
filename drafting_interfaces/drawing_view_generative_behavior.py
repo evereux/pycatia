@@ -58,8 +58,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 |          from.
                 |          
                 | 
-                |         
-MyView.GenerativeBehavior.ColorInheritanceMode(cat3DColorInheritanceModeOn)
+                |          MyView.GenerativeBehavior.ColorInheritanceMode(cat3DColorInheritanceModeOn)
 
         :return: enum cat3_d_color_inheritance_mode
         """
@@ -204,8 +203,7 @@ MyView.GenerativeBehavior.ColorInheritanceMode(cat3DColorInheritanceModeOn)
                 |      HRD image.
                 |      
                 | 
-                |     
-MyView.GenerativeBehavior.CatImageViewMode(catImageModeHRD)
+                |     MyView.GenerativeBehavior.CatImageViewMode(catImageModeHRD)
 
         :return: enum cat_image_view_mode
         """

@@ -76,8 +76,8 @@ class FixTogether(AnyObject):
                 | myFixTogether.AddFixTogether(fixTogether)
                 |
                 | Parameters:
-
                 |
+
         :param FixTogether() i_fix_together:
         :return:
         """

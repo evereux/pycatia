@@ -24,10 +24,8 @@ class ConstraintSatisfaction(SetOfEquation):
                 |             System.CATBaseDispatch
                 |                 System.AnyObject
                 |                     KnowledgeInterfaces.KnowledgeObject
-                |                        
-KnowledgeInterfaces.KnowledgeActivateObject                |                             KnowledgeInterfaces.Relation
-                |                                
-KnowledgeInterfaces.SetOfEquation                |                                     ConstraintSatisfaction
+                |                        KnowledgeInterfaces.KnowledgeActivateObject                |                             KnowledgeInterfaces.Relation
+                |                                KnowledgeInterfaces.SetOfEquation                |                                     ConstraintSatisfaction
                 | 
                 | Represents the set of equation.
     

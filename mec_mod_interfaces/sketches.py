@@ -10,7 +10,6 @@ class Sketches(Collection):
     """
         .. note::
             CAA V5 Visual Basic help
-
                 | The body's collection of sketches not yet used by any shape.
 
     """
@@ -26,7 +25,7 @@ class Sketches(Collection):
 
                 | Add
                 | o Func Add(    Reference    iPlane) As Sketch
-                | 
+                |
                 | Creates a new sketch and adds it to the sketch collection. The sketch
                 | creation implies to specify a supporting plane. Once created, the
                 | sketch exists, but is empty. You must use the
@@ -36,10 +35,10 @@ class Sketches(Collection):
                 | Parameters:
                 | iPlane
                 |    The sketch supporting plane
-                |  The following 
-                | 
-                |  activateLinkAnchor('Boundary','','Boundary')  object is supported:  
-                |  activateLinkAnchor('PlanarFace','','PlanarFace') . 
+                |  The following
+                |
+                |  activateLinkAnchor('Boundary','','Boundary')  object is supported:
+                |  activateLinkAnchor('PlanarFace','','PlanarFace') .
                 |    Returns:
                 |   oNewSketch   The created sketch
                 |
@@ -49,8 +48,8 @@ class Sketches(Collection):
                 | Set XYPlane = myPart.OriginElements.PlaneXY()
                 | Set newSketch = myPart.Sketches.Add(XYPlane)
 
-        :param Reference() i_plane:
-        :return Sketch()
+        :param Reference i_plane:
+        :return Sketch:
         """
         return self.child_object(self.sketches.Add(i_plane))
 

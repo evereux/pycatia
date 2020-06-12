@@ -184,8 +184,7 @@ class Thickness(DressUpShape):
                 |     The following example removes the existing face thickened face from the
                 |     thickness firstThickness:
                 | 
-                |      call
-firstThickness.RemoveFaceWithDifferentThickness(face)(face)
+                |      call firstThickness.RemoveFaceWithDifferentThickness(face)(face)
 
         :param Reference i_face_to_remove:
         :return: None

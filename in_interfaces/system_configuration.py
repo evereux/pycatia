@@ -155,12 +155,10 @@ class SystemConfiguration(AnyObject):
                 |                  Dim SystemConfiguration1 As
                 |                  SystemConfiguration
                 |                  Set SystemConfiguration1 = CATIA.SystemConfiguration
-                |                  ReDim
-NameArray(SystemConfiguration1.ProductNamesCount)                |                  SystemConfiguration1.GetProductNames
+                |                  ReDim NameArray(SystemConfiguration1.ProductNamesCount)                |                  SystemConfiguration1.GetProductNames
                 |                  NameArray
                 |                  MsgBox "IsProductAuthorized for product " & NameArray(0) & " 
-                |                  returns " &
-SystemConfiguration1.IsProductAuthorized(NameArray(0))
+                |                  returns " & SystemConfiguration1.IsProductAuthorized(NameArray(0))
 
         :param tuple io_product_names:
         :return: None

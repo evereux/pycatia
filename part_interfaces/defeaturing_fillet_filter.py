@@ -24,8 +24,8 @@ class DefeaturingFilletFilter(DefeaturingFilterWithRange):
                 |             System.CATBaseDispatch
                 |                 System.AnyObject
                 |                     PartInterfaces.DefeaturingFilter
-                |                        
-PartInterfaces.DefeaturingFilterWithRange                |                             DefeaturingFilletFilter
+                |                        PartInterfaces.DefeaturingFilterWithRange
+                |                             DefeaturingFilletFilter
                 | 
                 | Represents the defeaturing fillet filter.
                 | 

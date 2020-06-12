@@ -11,7 +11,6 @@
 
 from pycatia.in_interfaces.file_component import FileComponent
 from pycatia.in_interfaces.files import Files
-from pycatia.in_interfaces.folders import Folders
 
 
 class Folder(FileComponent):
@@ -77,7 +76,7 @@ class Folder(FileComponent):
 
         :return: Folders
         """
-
+        from pycatia.in_interfaces.folders import Folders
         return Folders(self.folder.SubFolders)
 
     def __repr__(self):

@@ -24,8 +24,7 @@ class Check(Relation):
                 |             System.CATBaseDispatch
                 |                 System.AnyObject
                 |                     KnowledgeInterfaces.KnowledgeObject
-                |                        
-KnowledgeInterfaces.KnowledgeActivateObject                |                             KnowledgeInterfaces.Relation
+                |                        KnowledgeInterfaces.KnowledgeActivateObject                |                             KnowledgeInterfaces.Relation
                 |                                 Check
                 | 
                 | Represents the check relation.

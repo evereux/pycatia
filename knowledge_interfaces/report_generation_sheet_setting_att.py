@@ -292,8 +292,7 @@ class ReportGenerationSheetSettingAtt(Collection):
                 |                              "Ensures that the mass is less than 10
                 |                              kg",
                 |                              TRUE,
-                |                             
-"/u/users/client/data/horizontalsheet.txt")
+                |                             "/u/users/client/data/horizontalsheet.txt")
 
         :param str i_name:
         :param str i_comment:

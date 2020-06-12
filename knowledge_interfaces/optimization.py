@@ -190,7 +190,7 @@ class Optimization(KnowledgeObject):
                 | o Property ObjectiveParameter() As RealParam
                 | 
                 |     Returns or sets the objective parameter of the optimization. This parameter
-                |     can not exist (in this case the get_ method returns E_FAIL) when the
+                |     can not exist (in this case the get method returns E_FAIL) when the
                 |     optimization contains only constraints and uses Simulated Annealing, or if the
                 |     optimization feature doesn't contain all information necessary to be run.
 
