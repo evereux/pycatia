@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -15,10 +15,9 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeProject(HybridShape):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -55,7 +54,7 @@ class HybridShapeProject(HybridShape):
     def direction(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Direction() As HybridShapeDirection
                 | 
                 |     Returns or sets the projection direction.
@@ -83,7 +82,7 @@ class HybridShapeProject(HybridShape):
     def elem_to_project(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ElemToProject() As Reference
                 | 
                 |     Returns or sets the element to project.This element can be a point or a
@@ -114,7 +113,7 @@ class HybridShapeProject(HybridShape):
     def extrapolation_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ExtrapolationMode() As long
                 | 
                 |     Returns or sets the extrapolation mode. The extrapolation mode is overriden
@@ -145,7 +144,7 @@ class HybridShapeProject(HybridShape):
     def maximum_deviation_value(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property MaximumDeviationValue() As double
                 | 
                 |     Sets or Gets the maximum deviation allowed for smoothing
@@ -177,7 +176,7 @@ class HybridShapeProject(HybridShape):
     def normal(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Normal() As boolean
                 | 
                 |     Returns or sets the direction option. Role: To define the type of
@@ -208,7 +207,7 @@ class HybridShapeProject(HybridShape):
     def smoothing_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SmoothingType() As long
                 | 
                 |     Sets or Gets Smoothing Type.
@@ -240,7 +239,7 @@ class HybridShapeProject(HybridShape):
     def solution_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SolutionType() As long
                 | 
                 |     Returns or sets the solution type. When the solution type being set is 'All
@@ -271,7 +270,7 @@ class HybridShapeProject(HybridShape):
     def support(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets the support element.This element can be a plane or a
@@ -302,10 +301,12 @@ class HybridShapeProject(HybridShape):
     def p3_d_smoothing(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property p3DSmoothing() As boolean
                 | 
-                |     Returns or sets the '3D Smoothing' option. Role: To activate or not the 3D smoothing option Available only for tangent or curvature smoothing type TRUE : Smoothing performed without specifying support FALSE : Smoothing performed with specific support
+                |     Returns or sets the '3D Smoothing' option. Role: To activate or not the 3D smoothing option
+                |     Available only for tangent or curvature smoothing type TRUE : Smoothing performed without
+                |     specifying support FALSE : Smoothing performed with specific support
                 | 
                 |     Example: This example retrieves in 3DSmoothingOption the support for the
                 |     Project hybrid shape feature.
@@ -327,4 +328,4 @@ class HybridShapeProject(HybridShape):
         self.hybrid_shape_project.p3DSmoothing = value
 
     def __repr__(self):
-        return f'HybridShapeProject(name="{ self.name }")'
+        return f'HybridShapeProject(name="{self.name}")'

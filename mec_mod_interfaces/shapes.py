@@ -77,7 +77,7 @@ class Shapes(Collection):
                 | Set ThisShape = CATIA.ActiveDocument.Shapes.Item(3)
                 | Set ThatShape = CATIA.ActiveDocument.Shapes.Item("MyShape")
 
-        :return: Shape()
+        :return: Shape
         """
         return self.child_object(self.shapes.Item(i_index))
 

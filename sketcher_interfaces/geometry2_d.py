@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -8,15 +8,13 @@
         and thus help debugging in pycatia.
         
 """
-
-
+from pycatia.sketcher_interfaces.geometric_element import GeometricElement
 
 
 class Geometry2D(GeometricElement):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -38,7 +36,7 @@ class Geometry2D(GeometricElement):
     def construction(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Construction() As boolean
                 | 
                 |     Returns the construction mode of the 2D geometry
@@ -60,7 +58,7 @@ class Geometry2D(GeometricElement):
     def report_name(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ReportName() As long
                 | 
                 |     Returns the report name of the 2D geometry
@@ -84,4 +82,4 @@ class Geometry2D(GeometricElement):
         self.geometry2_d.ReportName = value
 
     def __repr__(self):
-        return f'Geometry2D(name="{ self.name }")'
+        return f'Geometry2D(name="{self.name}")'

@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -8,15 +8,13 @@
         and thus help debugging in pycatia.
         
 """
-
-
+from pycatia.sketcher_interfaces.curve2_d import Curve2D
 
 
 class Line2D(Curve2D):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -36,10 +34,10 @@ class Line2D(Curve2D):
         super().__init__(com_object)
         self.line2_d = com_object
 
-    def get_direction(self, o_direction=None):
+    def get_direction(self, o_direction):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetDirection(CATSafeArrayVariant oDirection)
                 | 
                 |     Returns the unit-vector pointing in the direction of the
@@ -74,10 +72,10 @@ class Line2D(Curve2D):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_origin(self, o_origin=None):
+    def get_origin(self, o_origin):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetOrigin(CATSafeArrayVariant oOrigin)
                 | 
                 |     Returns a point lying on the line
@@ -109,10 +107,10 @@ class Line2D(Curve2D):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_data(self, i_x=None, i_y=None, i_x_direction=None, i_y_direction=None):
+    def set_data(self, i_x, i_y, i_x_direction, i_y_direction):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetData(double iX,
                 | double iY,
                 | double iXDirection,
@@ -142,4 +140,4 @@ class Line2D(Curve2D):
         return self.line2_d.SetData(i_x, i_y, i_x_direction, i_y_direction)
 
     def __repr__(self):
-        return f'Line2D(name="{ self.name }")'
+        return f'Line2D(name="{self.name}")'

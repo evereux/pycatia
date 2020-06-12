@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -16,7 +16,7 @@ class Plane(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -42,10 +42,10 @@ class Plane(HybridShape):
         super().__init__(com_object)
         self.plane = com_object
 
-    def get_first_axis(self, o_first_axis=None):
+    def get_first_axis(self, o_first_axis):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetFirstAxis(CATSafeArrayVariant oFirstAxis)
                 | 
                 |     Returns the coordinates of the first plane axis.
@@ -82,10 +82,10 @@ class Plane(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_origin(self, o_origin=None):
+    def get_origin(self, o_origin):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetOrigin(CATSafeArrayVariant oOrigin)
                 | 
                 |     Returns the origin of the plane.
@@ -122,10 +122,10 @@ class Plane(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_position(self, o_x=None, o_y=None, o_z=None):
+    def get_position(self, o_x, o_y, o_z):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetPosition(double oX,
                 | double oY,
                 | double oZ)
@@ -151,10 +151,10 @@ class Plane(HybridShape):
         """
         return self.plane.GetPosition(o_x, o_y, o_z)
 
-    def get_second_axis(self, o_second_axis=None):
+    def get_second_axis(self, o_second_axis):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetSecondAxis(CATSafeArrayVariant oSecondAxis)
                 | 
                 |     Returns the coordinates of the second plane axis.
@@ -194,7 +194,7 @@ class Plane(HybridShape):
     def is_a_ref_plane(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func IsARefPlane() As long
                 | 
                 |     Queries whether the plane is a reference plane (fixed axis
@@ -205,12 +205,12 @@ class Plane(HybridShape):
 
         :return: int
         """
-        return int(self.plane.IsARefPlane())
+        return self.plane.IsARefPlane()
 
-    def put_first_axis(self, i_first_axis=None):
+    def put_first_axis(self, i_first_axis):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub PutFirstAxis(CATSafeArrayVariant iFirstAxis)
                 | 
                 |     Sets the first axis. The first plane axis must be a point-direction
@@ -250,10 +250,10 @@ class Plane(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def put_origin(self, i_origin=None):
+    def put_origin(self, i_origin):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub PutOrigin(CATSafeArrayVariant iOrigin)
                 | 
                 |     Sets the origin of the plane.
@@ -292,10 +292,10 @@ class Plane(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def put_second_axis(self, i_second_axis=None):
+    def put_second_axis(self, i_second_axis):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub PutSecondAxis(CATSafeArrayVariant iSecondAxis)
                 | 
                 |     Sets the coordinates of the second plane axis. The second plane axis must
@@ -338,7 +338,7 @@ class Plane(HybridShape):
     def remove_position(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemovePosition()
                 | 
                 |     Removes reference position of a plane.
@@ -348,10 +348,10 @@ class Plane(HybridShape):
         """
         return self.plane.RemovePosition()
 
-    def set_position(self, i_x=None, i_y=None, i_z=None):
+    def set_position(self, i_x, i_y, i_z):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetPosition(double iX,
                 | double iY,
                 | double iZ)

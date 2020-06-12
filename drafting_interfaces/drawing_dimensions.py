@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -14,10 +14,9 @@ from pycatia.system_interfaces.collection import Collection
 
 
 class DrawingDimensions(Collection):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -35,10 +34,10 @@ class DrawingDimensions(Collection):
         super().__init__(com_object)
         self.drawing_dimensions = com_object
 
-    def add(self, i_type_dim=None, i_geom_elem=None, i_pt_coord_elem=None, i_line_rep=None):
+    def add(self, i_type_dim, i_geom_elem, i_pt_coord_elem, i_line_rep):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add(CatDimType iTypeDim,
                 | CATSafeArrayVariant iGeomElem,
                 | CATSafeArrayVariant iPtCoordElem,
@@ -101,15 +100,21 @@ class DrawingDimensions(Collection):
         :param CatDimType i_type_dim:
         :param tuple i_geom_elem:
         :param tuple i_pt_coord_elem:
-        :param CatDimLineRep i_line_rep:
-        :return: None
+        :param enum i_line_rep:
+        :return: DrawingDimension
         """
-        return self.drawing_dimensions.Add(i_type_dim, i_geom_elem, i_pt_coord_elem, i_line_rep)
+        return DrawingDimension(
+            self.drawing_dimensions.Add(
+                i_type_dim.com_object,
+                i_geom_elem,
+                i_pt_coord_elem,
+                i_line_rep)
+        )
 
-    def add2(self, i_type_dim=None, i_geom_elem=None, i_pt_coord_elem=None, i_ldc_ref_elem=None, i_ldc_ref_angle=None):
+    def add2(self, i_type_dim, i_geom_elem, i_pt_coord_elem, i_ldc_ref_elem, i_ldc_ref_angle):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add2(CatDimType iTypeDim,
                 | CATSafeArrayVariant iGeomElem,
                 | CATSafeArrayVariant iPtCoordElem,
@@ -122,9 +127,10 @@ class DrawingDimensions(Collection):
                 |     Parameters:
                 | 
                 |         iTypeDim
-                |             Dimension type (available types : catDimDistance, catDimLength, catDimRadiusTangent and catDimDiameterTangent) 
+                |             Dimension type (available types : catDimDistance, catDimLength, catDimRadiusTangent and
+                |             catDimDiameterTangent)
                 |         iGeomElem
-                |             Parent geometorical element(s) of dimension 
+                |             Parent geometrical element(s) of dimension
                 |         iPtCoordElem
                 |             Array of pointers on the selection points of each element of
                 |             iGeomElem 
@@ -171,14 +177,21 @@ class DrawingDimensions(Collection):
         :param tuple i_pt_coord_elem:
         :param CATVariant i_ldc_ref_elem:
         :param int i_ldc_ref_angle:
-        :return: None
+        :return: DrawingDimension
         """
-        return self.drawing_dimensions.Add2(i_type_dim, i_geom_elem, i_pt_coord_elem, i_ldc_ref_elem, i_ldc_ref_angle)
+        return DrawingDimension(
+            self.drawing_dimensions.Add2(
+                i_type_dim.com_object,
+                i_geom_elem,
+                i_pt_coord_elem,
+                i_ldc_ref_elem,
+                i_ldc_ref_angle)
+        )
 
-    def item(self, i_index=None):
+    def item(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(CATVariant iIndex) As DrawingDimension
                 | 
                 |     Returns a drawing dimension using its index or its name from the
@@ -220,10 +233,10 @@ class DrawingDimensions(Collection):
         """
         return DrawingDimension(self.drawing_dimensions.Item(i_index))
 
-    def remove(self, i_index=None):
+    def remove(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a drawing dimension from the DrawingDimensions
@@ -268,4 +281,4 @@ class DrawingDimensions(Collection):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'DrawingDimensions(name="{ self.name }")'
+        return f'DrawingDimensions(name="{self.name}")'

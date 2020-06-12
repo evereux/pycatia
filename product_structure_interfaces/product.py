@@ -188,11 +188,11 @@ class Product(AnyObject):
        
         Returns the pathlib.Path() object of the document fullname.
 
-        example e:\\users\\psr\\Parts\\MyNiceProduct.CATProduct
+        example e://users//psr//Parts//MyNiceProduct.CATProduct
         >>> Product.path().name
         >>> # MyNiceProduct.CATProduct
         >>> Product.path().parent
-        >>> # e:\\users\\psr\\Parts\\
+        >>> # e://users//psr//Parts//
         >>> Product.path().suffix
         >>> # .CATProduct
 

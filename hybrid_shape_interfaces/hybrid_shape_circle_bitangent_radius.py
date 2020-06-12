@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -18,7 +18,7 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -56,7 +56,7 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def begin_of_circle(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property BeginOfCircle() As long
                 | 
                 |     Return or Set the number of the beginning curve of the circle. This
@@ -87,7 +87,7 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def curve1(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Curve1() As Reference
                 | 
                 |     Returns or sets the first curve to which the circle is or will be
@@ -119,7 +119,7 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def curve2(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Curve2() As Reference
                 | 
                 |     Returns or sets the second curve to which the circle is or will be
@@ -150,7 +150,7 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def diameter(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Diameter() As Length (Read Only)
                 | 
                 |     Returns the circle diameter. It is expressed as a Length literal. Succeeds
@@ -172,7 +172,7 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def diameter_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DiameterMode() As boolean
                 | 
                 |     Returns or sets the DiameterMode.
@@ -205,7 +205,7 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def discrimination_index(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DiscriminationIndex() As long
                 | 
                 |     Return or set the discrimination index of the current circle. Several
@@ -239,7 +239,7 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def orientation1(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Orientation1() As long
                 | 
                 |     Returns or sets the orientation of the first curve to which the circle is
@@ -273,7 +273,7 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def orientation2(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Orientation2() As long
                 | 
                 |     Returns or sets the orientation of the second curve to which the circle is
@@ -307,7 +307,7 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def radius(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Radius() As Length (Read Only)
                 | 
                 |     Returns the circle radius. It is expressed as a Length literal. Succeeds
@@ -329,7 +329,7 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def support(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets the circle support surface.
@@ -359,7 +359,7 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def tangent_orientation1(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TangentOrientation1() As long
                 | 
                 |     Returns or sets the tangent orientation of the circle first reference
@@ -392,7 +392,7 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def tangent_orientation2(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TangentOrientation2() As long
                 | 
                 |     Returns or sets the tangent orientation of the circle second reference
@@ -425,7 +425,7 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def trim_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TrimMode() As long
                 | 
                 |     Returns or sets whether the circle reference curves are or should be

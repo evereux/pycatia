@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -10,13 +10,13 @@
 """
 
 from pycatia.drafting_interfaces.drawing_text_properties import DrawingTextProperties
-from pycatia.system_interfaces.cat_base_dispatch import CatBaseDispatch
+from pycatia.system_interfaces.cat_base_dispatch import CATBaseDispatch
 
 
-class DrawingTextRange(CatBaseDispatch):
+class DrawingTextRange(CATBaseDispatch):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -34,14 +34,14 @@ class DrawingTextRange(CatBaseDispatch):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__()
         self.drawing_text_range = com_object
 
     @property
     def length(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Length() As long (Read Only)
                 | 
                 |     Returns the number of characters of the drawing text
@@ -62,7 +62,7 @@ class DrawingTextRange(CatBaseDispatch):
     def start(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Start() As long (Read Only)
                 | 
                 |     Returns the starting character position of the drawing text
@@ -83,7 +83,7 @@ class DrawingTextRange(CatBaseDispatch):
     def text(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Text() As CATBSTR
                 | 
                 |     Returns or sets the character string making up the drawing text
@@ -118,7 +118,7 @@ class DrawingTextRange(CatBaseDispatch):
     def text_properties(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TextProperties() As DrawingTextProperties (Read
                 | Only)
                 | 
@@ -140,10 +140,10 @@ class DrawingTextRange(CatBaseDispatch):
 
         return DrawingTextProperties(self.drawing_text_range.TextProperties)
 
-    def get_text_range(self, i_start=None, i_end=None):
+    def get_text_range(self, i_start, i_end):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetTextRange(long iStart,
                 | long iEnd) As DrawingTextRange
                 | 
@@ -172,14 +172,14 @@ class DrawingTextRange(CatBaseDispatch):
 
         :param int i_start:
         :param int i_end:
-        :return: None
+        :return: DrawingTextRange
         """
-        return self.drawing_text_range.GetTextRange(i_start, i_end)
+        return DrawingTextRange(self.drawing_text_range.GetTextRange(i_start, i_end))
 
-    def insert_after(self, i_string=None):
+    def insert_after(self, i_string):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub InsertAfter(CATBSTR iString)
                 | 
                 |     Inserts a character string at the end of the drawing text
@@ -208,10 +208,10 @@ class DrawingTextRange(CatBaseDispatch):
         """
         return self.drawing_text_range.InsertAfter(i_string)
 
-    def insert_before(self, i_string=None):
+    def insert_before(self, i_string):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub InsertBefore(CATBSTR iString)
                 | 
                 |     Inserts a character string at the beginning of the drawing text
@@ -244,4 +244,4 @@ class DrawingTextRange(CatBaseDispatch):
         return self.drawing_text_range.InsertBefore(i_string)
 
     def __repr__(self):
-        return f'DrawingTextRange(name="{self.name}")'
+        return f'DrawingTextRange()'

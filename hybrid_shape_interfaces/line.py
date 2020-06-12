@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class Line(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -47,7 +47,7 @@ class Line(HybridShape):
     def first_upto_elem(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FirstUptoElem() As Reference
                 | 
                 |     Role: Gets the First upto element of the line.
@@ -76,7 +76,7 @@ class Line(HybridShape):
     def second_upto_elem(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SecondUptoElem() As Reference
                 | 
                 |     Role: Gets the Second upto element of the line.
@@ -101,10 +101,10 @@ class Line(HybridShape):
 
         self.line.SecondUptoElem = value
 
-    def get_direction(self, o_direction=None):
+    def get_direction(self, o_direction):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetDirection(CATSafeArrayVariant oDirection)
                 | 
                 |     Role: Returns the unit-vector pointing in the direction of the
@@ -149,10 +149,10 @@ class Line(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_origin(self, o_origin=None):
+    def get_origin(self, o_origin):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetOrigin(CATSafeArrayVariant oOrigin)
                 | 
                 |     Role: Returns the origin of the line.
@@ -194,10 +194,10 @@ class Line(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def put_direction(self, i_direction=None):
+    def put_direction(self, i_direction):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub PutDirection(CATSafeArrayVariant iDirection)
                 | 
                 |     Role: Sets the unit-vector pointing in the direction of the

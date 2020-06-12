@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -19,7 +19,7 @@ class HybridShapePointOnSurface(Point):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -53,7 +53,7 @@ class HybridShapePointOnSurface(Point):
     def direction(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Direction() As HybridShapeDirection
                 | 
                 |     Returns or Sets the direction from the reference point in which the point
@@ -84,7 +84,7 @@ class HybridShapePointOnSurface(Point):
     def offset(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Offset() As Length (Read Only)
                 | 
                 |     Returns the geodesic length.
@@ -106,7 +106,7 @@ class HybridShapePointOnSurface(Point):
     def point(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Point() As Reference
                 | 
                 |     Returns or Sets the reference point.
@@ -140,7 +140,7 @@ class HybridShapePointOnSurface(Point):
     def surface(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Surface() As Reference
                 | 
                 |     Returns or Sets the surface.

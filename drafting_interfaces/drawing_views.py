@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -9,14 +9,15 @@
         
 """
 
-from pycatia.system_interfaces.collection import Collection
 from pycatia.drafting_interfaces.drawing_view import DrawingView
+from pycatia.system_interfaces.collection import Collection
 
 
 class DrawingViews(Collection):
+
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -33,16 +34,15 @@ class DrawingViews(Collection):
     
     """
 
-    def __init__(self, com_object, child_object=DrawingView):
-        super().__init__(com_object, child_object=DrawingView)
+    def __init__(self, com_object):
+        super().__init__(com_object)
         self.drawing_views = com_object
-        self.child_object = child_object
 
     @property
     def active_view(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ActiveView() As DrawingView (Read Only)
                 | 
                 |     Returns the active drawing view of the active drawing
@@ -62,12 +62,13 @@ class DrawingViews(Collection):
 
         :return: DrawingView
         """
+
         return DrawingView(self.drawing_views.ActiveView)
 
-    def add(self, i_drawing_view_name=None):
+    def add(self, i_drawing_view_name):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add(CATBSTR iDrawingViewName) As DrawingView
                 | 
                 |     Creates a drawing view and adds it to the drawing view collection. This
@@ -101,10 +102,10 @@ class DrawingViews(Collection):
         """
         return DrawingView(self.drawing_views.Add(i_drawing_view_name))
 
-    def item(self, i_index=None):
+    def item(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(CATVariant iIndex) As DrawingView
                 | 
                 |     Returns a drawing view using its index or its name from the DrawingViews
@@ -149,10 +150,10 @@ class DrawingViews(Collection):
         """
         return DrawingView(self.drawing_views.Item(i_index))
 
-    def remove(self, i_index=None):
+    def remove(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a drawing view from the DrawingViews collection.
@@ -204,4 +205,4 @@ class DrawingViews(Collection):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'DrawingViews(name="{self.name}")'
+        return f'DrawingViews(name="{ self.name }")'

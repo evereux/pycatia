@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -15,10 +15,9 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeCurvePar(HybridShape):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -48,7 +47,7 @@ class HybridShapeCurvePar(HybridShape):
     def curve_offseted(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CurveOffseted() As Reference
                 | 
                 |     Returns or sets the offset curve of the curve parameter
@@ -82,7 +81,7 @@ class HybridShapeCurvePar(HybridShape):
     def curve_par_law(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CurveParLaw() As Reference
                 | 
                 |     Returns or sets the offset law.
@@ -111,7 +110,7 @@ class HybridShapeCurvePar(HybridShape):
     def curve_par_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CurveParType() As long
                 | 
                 |     Returns or sets the corner type.
@@ -145,7 +144,7 @@ class HybridShapeCurvePar(HybridShape):
     def geodesic(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Geodesic() As boolean
                 | 
                 |     Returns or sets Geodesic mode.
@@ -178,7 +177,7 @@ class HybridShapeCurvePar(HybridShape):
     def invert_direction(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property InvertDirection() As boolean
                 | 
                 |     Returns or sets the orientation.
@@ -213,7 +212,7 @@ class HybridShapeCurvePar(HybridShape):
     def invert_mapping_law(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property InvertMappingLaw() As boolean
                 | 
                 |     Returns or sets the mapping orientation of the law (if offset is specified
@@ -248,7 +247,7 @@ class HybridShapeCurvePar(HybridShape):
     def keep_both_sides(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property KeepBothSides() As boolean
                 | 
                 |     Returns or sets the both sides mode of the curve parameter
@@ -280,7 +279,7 @@ class HybridShapeCurvePar(HybridShape):
     def law_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property LawType() As long
                 | 
                 |     Returns or sets the law type.
@@ -321,7 +320,7 @@ class HybridShapeCurvePar(HybridShape):
     def maximum_deviation_value(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property MaximumDeviationValue() As double
                 | 
                 |     Sets or Gets the maximum deviation allowed for smoothing
@@ -353,7 +352,7 @@ class HybridShapeCurvePar(HybridShape):
     def offset(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Offset() As Length (Read Only)
                 | 
                 |     Returns the offset parameter of the curve parameter
@@ -377,7 +376,7 @@ class HybridShapeCurvePar(HybridShape):
     def offset2(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Offset2() As Length (Read Only)
                 | 
                 |     Returns the second offset parameter of the curve parameter
@@ -402,7 +401,7 @@ class HybridShapeCurvePar(HybridShape):
     def other_side(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property OtherSide() As Reference (Read Only)
                 | 
                 |     Returns the other side of parallel curve if both sides mode is
@@ -426,7 +425,7 @@ class HybridShapeCurvePar(HybridShape):
     def passing_point(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property PassingPoint() As Reference
                 | 
                 |     Returns or sets the passing point of the curve parameter
@@ -459,7 +458,7 @@ class HybridShapeCurvePar(HybridShape):
     def smoothing_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SmoothingType() As long
                 | 
                 |     Returns or sets the smoothing Type.
@@ -492,7 +491,7 @@ class HybridShapeCurvePar(HybridShape):
     def support(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets the support of the curve..
@@ -521,10 +520,12 @@ class HybridShapeCurvePar(HybridShape):
     def p3_d_smoothing(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property p3DSmoothing() As boolean
                 | 
-                |     Returns or sets the '3D Smoothing' option. Role: To activate or not the 3D smoothing option Available only for tangent or curvature smoothing type TRUE : Smoothing performed without specifying support FALSE : Smoothing performed with specific support
+                |     Returns or sets the '3D Smoothing' option. Role: To activate or not the 3D smoothing option
+                |     Available only for tangent or curvature smoothing type TRUE : Smoothing performed without
+                |     specifying support FALSE : Smoothing performed with specific support
                 | 
                 |     Example: This example retrieves in 3DSmoothingOption the support for the
                 |     Project hybrid shape feature.
@@ -545,10 +546,10 @@ class HybridShapeCurvePar(HybridShape):
 
         self.hybrid_shape_curve_par.p3DSmoothing = value
 
-    def get_plane_normal(self, o_normal=None):
+    def get_plane_normal(self, o_normal):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetPlaneNormal(CATSafeArrayVariant oNormal)
                 | 
                 |     Returns the Normal of the plane created when the Support of the curve is
@@ -594,10 +595,10 @@ class HybridShapeCurvePar(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def put_plane_normal(self, i_normal=None):
+    def put_plane_normal(self, i_normal):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub PutPlaneNormal(CATSafeArrayVariant iNormal)
                 | 
                 |     Sets the Normal of the plane created when the Support of the curve is not
@@ -634,4 +635,4 @@ class HybridShapeCurvePar(HybridShape):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'HybridShapeCurvePar(name="{ self.name }")'
+        return f'HybridShapeCurvePar(name="{self.name}")'

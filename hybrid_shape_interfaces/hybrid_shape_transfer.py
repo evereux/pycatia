@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapeTransfer(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -51,7 +51,7 @@ class HybridShapeTransfer(HybridShape):
     def element_to_transfer(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ElementToTransfer() As Reference
                 | 
                 |     Returns or sets the element to transfer.
@@ -73,7 +73,7 @@ class HybridShapeTransfer(HybridShape):
     def surface_to_unfold(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SurfaceToUnfold() As Reference
                 | 
                 |     Returns or sets the surface to unfold.
@@ -95,7 +95,7 @@ class HybridShapeTransfer(HybridShape):
     def type_of_transfer(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TypeOfTransfer() As long
                 | 
                 |     Returns or sets the type of transfer.
@@ -121,7 +121,7 @@ class HybridShapeTransfer(HybridShape):
     def unfold_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property UnfoldType() As long
                 | 
                 |     Returns or sets the type of unfold to take into account during
@@ -148,7 +148,7 @@ class HybridShapeTransfer(HybridShape):
     def unfolded_surface(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property UnfoldedSurface() As Reference
                 | 
                 |     Returns or sets the unfolded surface.

@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -15,10 +15,9 @@ from pycatia.knowledge_interfaces.length import Length
 
 
 class HybridShapeLineBisecting(Line):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -56,7 +55,7 @@ class HybridShapeLineBisecting(Line):
     def begin_offset(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property BeginOffset() As Length (Read Only)
                 | 
                 |     Returns the start offset of the line.
@@ -70,7 +69,7 @@ class HybridShapeLineBisecting(Line):
     def elem1(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Elem1() As Reference
                 | 
                 |     Returns or sets the first line used to create the bisecting
@@ -96,7 +95,7 @@ class HybridShapeLineBisecting(Line):
     def elem2(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Elem2() As Reference
                 | 
                 |     Returns or sets the second line used to create the bisecting
@@ -121,7 +120,7 @@ class HybridShapeLineBisecting(Line):
     def end_offset(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property EndOffset() As Length (Read Only)
                 | 
                 |     Returns the end offset of the line.
@@ -135,7 +134,7 @@ class HybridShapeLineBisecting(Line):
     def orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Orientation() As long
                 | 
                 |     Returns or sets the orientation used to compute the bisecting
@@ -160,7 +159,7 @@ class HybridShapeLineBisecting(Line):
     def ref_point(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property RefPoint() As Reference
                 | 
                 |     Returns or sets the reference point used to create the bisecting
@@ -184,7 +183,7 @@ class HybridShapeLineBisecting(Line):
     def solution_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SolutionType() As boolean
                 | 
                 |     Returns or sets the solution type.
@@ -207,7 +206,7 @@ class HybridShapeLineBisecting(Line):
     def support(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets the support used to create the bisecting
@@ -237,7 +236,7 @@ class HybridShapeLineBisecting(Line):
     def get_length_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetLengthType() As long
                 | 
                 |     Gets the length type Default is 0.
@@ -245,16 +244,19 @@ class HybridShapeLineBisecting(Line):
                 |     Parameters:
                 | 
                 |         oType
-                |             The length type = 0 : length - the line is limited by its extremities = 1 : infinite - the line is infinite = 2 : infinite start point - the line is infinite on the side of the start point = 3 : infinite end point - the line is infinite on the side of the end point
+                |             The length type = 0 : length - the line is limited by its extremities = 1 :
+                |             infinite - the line is infinite = 2 : infinite start point - the line is infinite on the
+                |             side of the start point = 3 : infinite end point - the line is infinite on the side of
+                |             the end point
 
         :return: int
         """
-        return int(self.hybrid_shape_line_bisecting.GetLengthType())
+        return self.hybrid_shape_line_bisecting.GetLengthType()
 
     def get_symmetrical_extension(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetSymmetricalExtension() As boolean
                 | 
                 |     Gets whether the symmetrical extension of the line is
@@ -267,12 +269,12 @@ class HybridShapeLineBisecting(Line):
 
         :return: bool
         """
-        return bool(self.hybrid_shape_line_bisecting.GetSymmetricalExtension())
+        return self.hybrid_shape_line_bisecting.GetSymmetricalExtension()
 
-    def set_length_type(self, i_type=None):
+    def set_length_type(self, i_type):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetLengthType(long iType)
                 | 
                 |     Sets the length type Default is 0.
@@ -280,17 +282,20 @@ class HybridShapeLineBisecting(Line):
                 |     Parameters:
                 | 
                 |         iType
-                |             The length type = 0 : length - the line is limited by its extremities = 1 : infinite - the line is infinite = 2 : infinite start point - the line is infinite on the side of the start point = 3 : infinite end point - the line is infinite on the side of the end point
+                |             The length type = 0 : length - the line is limited by its extremities = 1 :
+                |             infinite - the line is infinite = 2 : infinite start point - the line is infinite on the
+                |             side of the start point = 3 : infinite end point - the line is infinite on the side of
+                |             the end point
 
         :param int i_type:
         :return: None
         """
         return self.hybrid_shape_line_bisecting.SetLengthType(i_type)
 
-    def set_symmetrical_extension(self, i_sym=None):
+    def set_symmetrical_extension(self, i_sym):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetSymmetricalExtension(boolean iSym)
                 | 
                 |     Sets the symmetrical extension of the line (start = -end).
@@ -321,4 +326,4 @@ class HybridShapeLineBisecting(Line):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'HybridShapeLineBisecting(name="{ self.name }")'
+        return f'HybridShapeLineBisecting(name="{self.name}")'

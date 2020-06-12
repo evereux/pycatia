@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -19,7 +19,7 @@ class HybridShapeReflectLine(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -54,7 +54,7 @@ class HybridShapeReflectLine(HybridShape):
     def angle(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Angle() As Angle
                 | 
                 |     Returns or sets the angle used to create the reflectline.
@@ -83,7 +83,7 @@ class HybridShapeReflectLine(HybridShape):
     def direction(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Direction() As HybridShapeDirection
                 | 
                 |     Returns or sets the direction used to create the cylindrical
@@ -113,7 +113,7 @@ class HybridShapeReflectLine(HybridShape):
     def orientation_direction(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property OrientationDirection() As long
                 | 
                 |     Returns or sets the direction orientation used to compute the reflect
@@ -141,7 +141,7 @@ class HybridShapeReflectLine(HybridShape):
     def orientation_support(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property OrientationSupport() As long
                 | 
                 |     Returns or sets the support orientation used to compute the reflect
@@ -169,7 +169,7 @@ class HybridShapeReflectLine(HybridShape):
     def origin(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Origin() As Reference
                 | 
                 |     Returns or sets the origin point used to create the conical
@@ -200,7 +200,7 @@ class HybridShapeReflectLine(HybridShape):
     def source_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SourceType() As long
                 | 
                 |     Returns or sets whether the reflectline curve is or should be created with
@@ -228,7 +228,7 @@ class HybridShapeReflectLine(HybridShape):
     def support(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets the support surface used to create the
@@ -259,7 +259,7 @@ class HybridShapeReflectLine(HybridShape):
     def type_solution(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TypeSolution() As long
                 | 
                 |     Returns or sets whether the reflectline curve is or should be created with
@@ -287,7 +287,7 @@ class HybridShapeReflectLine(HybridShape):
     def invert_orientation_direction(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub InvertOrientationDirection()
                 | 
                 |     Inverts the orientation of direction. This example inverts the direction
@@ -303,7 +303,7 @@ class HybridShapeReflectLine(HybridShape):
     def invert_orientation_support(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub InvertOrientationSupport()
                 | 
                 |     Inverts the orientation of support. This example inverts the support

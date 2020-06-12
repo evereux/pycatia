@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -16,10 +16,9 @@ from pycatia.knowledge_interfaces.length import Length
 
 
 class HybridShapeLineAngle(Line):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -45,7 +44,7 @@ class HybridShapeLineAngle(Line):
     def angle(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Angle() As Angle (Read Only)
                 | 
                 |     Role: Get the angle to the reference curve of the line.
@@ -64,7 +63,7 @@ class HybridShapeLineAngle(Line):
     def begin_offset(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property BeginOffset() As Length (Read Only)
                 | 
                 |     Role: Get the start length of the line.
@@ -83,7 +82,7 @@ class HybridShapeLineAngle(Line):
     def curve(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Curve() As Reference
                 | 
                 |     Role: Get the reference curve.
@@ -110,7 +109,7 @@ class HybridShapeLineAngle(Line):
     def end_offset(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property EndOffset() As Length (Read Only)
                 | 
                 |     Role: Get the end length of the line.
@@ -129,7 +128,7 @@ class HybridShapeLineAngle(Line):
     def geodesic(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Geodesic() As boolean
                 | 
                 |     Role: Get geodesic mode. If geodesic, the line lies on the support surface,
@@ -158,7 +157,7 @@ class HybridShapeLineAngle(Line):
     def orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Orientation() As long
                 | 
                 |     Role: Get the line orientation. Orientation allows to reverse the line
@@ -187,7 +186,7 @@ class HybridShapeLineAngle(Line):
     def point(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Point() As Reference
                 | 
                 |     Role: Get the starting point of the line.
@@ -214,7 +213,7 @@ class HybridShapeLineAngle(Line):
     def surface(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Surface() As Reference
                 | 
                 |     Role: Get the support surface.
@@ -240,7 +239,7 @@ class HybridShapeLineAngle(Line):
     def get_length_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetLengthType() As long
                 | 
                 |     Gets the length type Default is 0.
@@ -248,16 +247,19 @@ class HybridShapeLineAngle(Line):
                 |     Parameters:
                 | 
                 |         oType
-                |             The length type = 0 : length - the line is limited by its extremities = 1 : infinite - the line is infinite = 2 : infinite start point - the line is infinite on the side of the start point = 3 : infinite end point - the line is infinite on the side of the end point
+                |             The length type = 0 : length - the line is limited by its extremities = 1 :
+                |             infinite - the line is infinite = 2 : infinite start point - the line is infinite on the
+                |             side of the start point = 3 : infinite end point - the line is infinite on the side of
+                |             the end point
 
         :return: int
         """
-        return int(self.hybrid_shape_line_angle.GetLengthType())
+        return self.hybrid_shape_line_angle.GetLengthType()
 
     def get_symmetrical_extension(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetSymmetricalExtension() As boolean
                 | 
                 |     Gets whether the symmetrical extension of the line is
@@ -270,12 +272,12 @@ class HybridShapeLineAngle(Line):
 
         :return: bool
         """
-        return bool(self.hybrid_shape_line_angle.GetSymmetricalExtension())
+        return self.hybrid_shape_line_angle.GetSymmetricalExtension()
 
-    def set_length_type(self, i_type=None):
+    def set_length_type(self, i_type):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetLengthType(long iType)
                 | 
                 |     Sets the length type Default is 0.
@@ -283,17 +285,19 @@ class HybridShapeLineAngle(Line):
                 |     Parameters:
                 | 
                 |         iType
-                |             The length type = 0 : length - the line is limited by its extremities = 1 : infinite - the line is infinite = 2 : infinite start point - the line is infinite on the side of the start point = 3 : infinite end point - the line is infinite on the side of the end point
+                |             The length type = 0 : length - the line is limited by its extremities = 1 : infinite -
+                |             the line is infinite = 2 : infinite start point - the line is infinite on the side of the
+                |             start point = 3 : infinite end point - the line is infinite on the side of the end point
 
         :param int i_type:
         :return: None
         """
         return self.hybrid_shape_line_angle.SetLengthType(i_type)
 
-    def set_symmetrical_extension(self, i_sym=None):
+    def set_symmetrical_extension(self, i_sym):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetSymmetricalExtension(boolean iSym)
                 | 
                 |     Sets the symmetrical extension of the line (start = -end).
@@ -324,4 +328,4 @@ class HybridShapeLineAngle(Line):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'HybridShapeLineAngle(name="{ self.name }")'
+        return f'HybridShapeLineAngle(name="{self.name}")'

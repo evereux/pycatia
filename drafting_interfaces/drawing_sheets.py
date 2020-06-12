@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class DrawingSheets(Collection):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -42,7 +42,7 @@ class DrawingSheets(Collection):
     def active_sheet(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ActiveSheet() As DrawingSheet (Read Only)
                 | 
                 |     Returns the active drawing sheet of the drawing document.
@@ -63,10 +63,10 @@ class DrawingSheets(Collection):
 
         return DrawingSheet(self.drawing_sheets.ActiveSheet)
 
-    def add(self, i_drawing_sheet_name=None):
+    def add(self, i_drawing_sheet_name):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add(CATBSTR iDrawingSheetName) As DrawingSheet
                 | 
                 |     Creates a drawing sheet and adds it to the DrawingSheets collection. This
@@ -97,10 +97,10 @@ class DrawingSheets(Collection):
         """
         return DrawingSheet(self.drawing_sheets.Add(i_drawing_sheet_name))
 
-    def add_detail(self, i_drawing_sheet_name=None):
+    def add_detail(self, i_drawing_sheet_name):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddDetail(CATBSTR iDrawingSheetName) As DrawingSheet
                 | 
                 |     Creates a detail drawing sheet and adds it to the DrawingSheets collection.
@@ -131,10 +131,10 @@ class DrawingSheets(Collection):
         """
         return DrawingSheet(self.drawing_sheets.AddDetail(i_drawing_sheet_name))
 
-    def item(self, i_index=None):
+    def item(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(CATVariant iIndex) As DrawingSheet
                 | 
                 |     Returns a drawing sheet using its index or its name from the DrawingSheets
@@ -172,10 +172,10 @@ class DrawingSheets(Collection):
         """
         return DrawingSheet(self.drawing_sheets.Item(i_index))
 
-    def remove(self, i_index=None):
+    def remove(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a drawing sheet from the DrawingSheets collection.

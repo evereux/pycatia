@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class DrawingWeldings(Collection):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -35,10 +35,10 @@ class DrawingWeldings(Collection):
         super().__init__(com_object)
         self.drawing_weldings = com_object
 
-    def add(self, i_symbol=None, i_position_x=None, i_position_y=None):
+    def add(self, i_symbol, i_position_x, i_position_y):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add(CatWeldingSymbol iSymbol,
                 | double iPositionX,
                 | double iPositionY) As DrawingWelding
@@ -73,14 +73,14 @@ class DrawingWeldings(Collection):
         :param CatWeldingSymbol i_symbol:
         :param float i_position_x:
         :param float i_position_y:
-        :return: None
+        :return: DrawingWelding
         """
-        return self.drawing_weldings.Add(i_symbol, i_position_x, i_position_y)
+        return DrawingWelding(self.drawing_weldings.Add(i_symbol.com_object, i_position_x, i_position_y))
 
-    def item(self, i_index=None):
+    def item(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(long iIndex) As DrawingWelding
                 | 
                 |     Returns a drawing welding using its index from the drawing weldings
@@ -113,10 +113,10 @@ class DrawingWeldings(Collection):
         """
         return DrawingWelding(self.drawing_weldings.Item(i_index))
 
-    def remove(self, i_index=None):
+    def remove(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(long iIndex)
                 | 
                 |     Removes a drawing welding from the drawing weldings

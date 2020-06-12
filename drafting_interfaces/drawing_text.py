@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -15,10 +15,9 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class DrawingText(AnyObject):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -39,7 +38,7 @@ class DrawingText(AnyObject):
     def anchor_position(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AnchorPosition() As CatTextAnchorPosition
                 | 
                 |     Returns or sets the anchor position of the drawing text.
@@ -67,7 +66,7 @@ class DrawingText(AnyObject):
     def angle(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Angle() As double
                 | 
                 |     Returns or sets the angle of the drawing text. The angle is measured
@@ -100,7 +99,7 @@ class DrawingText(AnyObject):
     def associative_element(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AssociativeElement() As CATBaseDispatch
                 | 
                 |     Returns or sets the associative object of the drawing
@@ -129,7 +128,7 @@ class DrawingText(AnyObject):
     def frame_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FrameType() As CatTextFrameType
                 | 
                 |     Returns or sets the frame type of the drawing text.
@@ -157,7 +156,7 @@ class DrawingText(AnyObject):
     def leaders(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Leaders() As DrawingLeaders (Read Only)
                 | 
                 |     Returns the drawing leader collection of the drawing text.
@@ -178,7 +177,7 @@ class DrawingText(AnyObject):
     def text(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Text() As CATBSTR
                 | 
                 |     Returns or sets character string that makes up the text.
@@ -206,7 +205,7 @@ class DrawingText(AnyObject):
     def text_properties(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TextProperties() As DrawingTextProperties (Read
                 | Only)
                 | 
@@ -230,7 +229,7 @@ class DrawingText(AnyObject):
     def wrapping_width(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property WrappingWidth() As double
                 | 
                 |     Returns or sets the wrapping width of the drawing text.
@@ -258,7 +257,7 @@ class DrawingText(AnyObject):
     def x(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property x() As double
                 | 
                 |     Returns or sets the x coordinate of the text. It is expressed with respect
@@ -288,7 +287,7 @@ class DrawingText(AnyObject):
     def y(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property y() As double
                 | 
                 |     Returns or sets the y coordinate of the text. It is expressed with respect
@@ -316,10 +315,10 @@ class DrawingText(AnyObject):
 
         self.drawing_text.y = value
 
-    def activate_frame(self, itype=None):
+    def activate_frame(self, itype):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub ActivateFrame(CatTextFrameType itype)
                 | 
                 |     Activates the text frame of the drawing text.
@@ -340,7 +339,7 @@ class DrawingText(AnyObject):
         :param CatTextFrameType itype:
         :return: None
         """
-        return self.drawing_text.ActivateFrame(itype)
+        return self.drawing_text.ActivateFrame(itype.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -357,10 +356,10 @@ class DrawingText(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_font_name(self, i_first=None, inb_character=None):
+    def get_font_name(self, i_first, inb_character):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetFontName(long iFirst,
                 | long inbCharacter) As CATBSTR
                 | 
@@ -384,14 +383,14 @@ class DrawingText(AnyObject):
 
         :param int i_first:
         :param int inb_character:
-        :return: None
+        :return: str
         """
         return self.drawing_text.GetFontName(i_first, inb_character)
 
-    def get_font_size(self, i_first=None, inb_character=None):
+    def get_font_size(self, i_first, inb_character):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetFontSize(long iFirst,
                 | long inbCharacter) As double
                 | 
@@ -415,14 +414,14 @@ class DrawingText(AnyObject):
 
         :param int i_first:
         :param int inb_character:
-        :return: None
+        :return: float
         """
         return self.drawing_text.GetFontSize(i_first, inb_character)
 
     def get_modifiable_in2_d_component_instances(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetModifiableIn2DComponentInstances() As boolean
                 | 
                 |     Returns if the text is modifiable or not in 2D component instances. The
@@ -436,12 +435,12 @@ class DrawingText(AnyObject):
 
         :return: bool
         """
-        return bool(self.drawing_text.GetModifiableIn2DComponentInstances())
+        return self.drawing_text.GetModifiableIn2DComponentInstances()
 
-    def get_parameter_on_sub_string(self, i_param=None, i_first=None, inb_character=None):
+    def get_parameter_on_sub_string(self, i_param, i_first, inb_character):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetParameterOnSubString(CatTextProperty iParam,
                 | long iFirst,
                 | long inbCharacter) As long
@@ -473,14 +472,14 @@ class DrawingText(AnyObject):
         :param CatTextProperty i_param:
         :param int i_first:
         :param int inb_character:
-        :return: None
+        :return: int
         """
-        return self.drawing_text.GetParameterOnSubString(i_param, i_first, inb_character)
+        return self.drawing_text.GetParameterOnSubString(i_param.com_object, i_first, inb_character)
 
-    def insert_variable(self, i_first=None, inb_character=None, ibase=None):
+    def insert_variable(self, i_first, inb_character, ibase):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub InsertVariable(long iFirst,
                 | long inbCharacter,
                 | CATBaseDispatch ibase)
@@ -505,7 +504,7 @@ class DrawingText(AnyObject):
                 |              Set DrwDocument = CATIA.ActiveDocument
                 | 
                 |              Dim iParameter As Parameter
-                |              Set iParameter = DrwDocument.Parameters.Item("Drawing\Sheet.1\ViewMakeUp.1\Scale")
+                |              Set iParameter = DrwDocument.Parameters.Item("Drawing/Sheet.1/ViewMakeUp.1/Scale")
                 | 
                 |              MyText.InsertVariable 0, 0, iParameter
 
@@ -514,12 +513,12 @@ class DrawingText(AnyObject):
         :param AnyObject ibase:
         :return: None
         """
-        return self.drawing_text.InsertVariable(i_first, inb_character, ibase)
+        return self.drawing_text.InsertVariable(i_first, inb_character, ibase.com_object)
 
-    def set_font_name(self, i_first=None, inb_character=None, i_font_name=None):
+    def set_font_name(self, i_first, inb_character, i_font_name):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetFontName(long iFirst,
                 | long inbCharacter,
                 | CATBSTR iFontName)
@@ -550,10 +549,10 @@ class DrawingText(AnyObject):
         """
         return self.drawing_text.SetFontName(i_first, inb_character, i_font_name)
 
-    def set_font_size(self, i_first=None, inb_character=None, i_font_size=None):
+    def set_font_size(self, i_first, inb_character, i_font_size):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetFontSize(long iFirst,
                 | long inbCharacter,
                 | double iFontSize)
@@ -586,7 +585,7 @@ class DrawingText(AnyObject):
     def set_modifiable_in2_d_component_instances(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetModifiableIn2DComponentInstances()
                 | 
                 |     Sets the text as modifiable in 2D component instances.The text must own to
@@ -603,10 +602,10 @@ class DrawingText(AnyObject):
         """
         return self.drawing_text.SetModifiableIn2DComponentInstances()
 
-    def set_parameter_on_sub_string(self, i_param=None, i_first=None, inb_character=None, i_val=None):
+    def set_parameter_on_sub_string(self, i_param, i_first, inb_character, i_val):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetParameterOnSubString(CatTextProperty iParam,
                 | long iFirst,
                 | long inbCharacter,
@@ -643,7 +642,7 @@ class DrawingText(AnyObject):
         :param int i_val:
         :return: None
         """
-        return self.drawing_text.SetParameterOnSubString(i_param, i_first, inb_character, i_val)
+        return self.drawing_text.SetParameterOnSubString(i_param.com_object, i_first, inb_character, i_val)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -661,4 +660,4 @@ class DrawingText(AnyObject):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'DrawingText(name="{ self.name }")'
+        return f'DrawingText(name="{self.name}")'

@@ -26,6 +26,7 @@ class Body(AnyObject):
     def __init__(self, com_object):
         super().__init__(com_object)
         self.body = com_object
+        self.com_object = com_object
 
     @property
     def hybrid_bodies(self):

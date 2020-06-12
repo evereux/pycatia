@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -19,7 +19,7 @@ class HybridShapeBump(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -41,7 +41,7 @@ class HybridShapeBump(HybridShape):
     def body_to_bump(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property BodyToBump() As Reference
                 | 
                 |     Returns or sets the element to Bump.
@@ -63,7 +63,7 @@ class HybridShapeBump(HybridShape):
     def center_tension(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CenterTension() As RealParam
                 | 
                 |     Returns or sets the tension center parameter.
@@ -85,7 +85,7 @@ class HybridShapeBump(HybridShape):
     def continuity_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ContinuityType() As long
                 | 
                 |     Returns or sets the continuity type ..
@@ -112,7 +112,7 @@ class HybridShapeBump(HybridShape):
     def deformation_center(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DeformationCenter() As Reference
                 | 
                 |     Returns or sets the Deformation Center.
@@ -134,7 +134,7 @@ class HybridShapeBump(HybridShape):
     def deformation_dir(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DeformationDir() As Reference
                 | 
                 |     Returns or sets the Deformation Direction.
@@ -156,7 +156,7 @@ class HybridShapeBump(HybridShape):
     def deformation_dist(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DeformationDist() As Length
                 | 
                 |     Returns the translate distance (CATIA Parameter).
@@ -182,7 +182,7 @@ class HybridShapeBump(HybridShape):
     def deformation_dist_value(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DeformationDistValue() As double
                 | 
                 |     Returns or sets the Deformation distance (double) .
@@ -206,7 +206,7 @@ class HybridShapeBump(HybridShape):
     def limit_curve(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property LimitCurve() As Reference
                 | 
                 |     Returns or sets the limit curve.
@@ -228,7 +228,7 @@ class HybridShapeBump(HybridShape):
     def projection_dir(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ProjectionDir() As Reference
                 | 
                 |     Returns or sets the limit curve.

@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -15,10 +15,9 @@ from pycatia.knowledge_interfaces.real_param import RealParam
 
 
 class HybridShapePointBetween(Point):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -50,7 +49,7 @@ class HybridShapePointBetween(Point):
     def first_point(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FirstPoint() As Reference
                 | 
                 |     Returns or sets the first reference point.
@@ -80,7 +79,7 @@ class HybridShapePointBetween(Point):
     def orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Orientation() As long
                 | 
                 |     Returns or sets the orientation. Role:
@@ -110,11 +109,12 @@ class HybridShapePointBetween(Point):
     def ratio(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Ratio() As RealParam (Read Only)
                 | 
                 |     Get the ratio. Role:
-                |     if d1 is the distance between the first point and the created point, and d2 is the distance between the first point and the second point, then ratio = d1/d2.
+                |     if d1 is the distance between the first point and the created point, and d2 is the distance
+                |     between the first point and the second point, then ratio = d1/d2.
                 | 
                 |     Example:
                 |         This example retrieves in ratio the orientation for the PointBetween
@@ -132,7 +132,7 @@ class HybridShapePointBetween(Point):
     def second_point(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SecondPoint() As Reference
                 | 
                 |     Returns or sets the second reference point.
@@ -162,7 +162,7 @@ class HybridShapePointBetween(Point):
     def support(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Support() As Reference
                 | 
                 |     Returns or Sets the support.
@@ -193,4 +193,4 @@ class HybridShapePointBetween(Point):
         self.hybrid_shape_point_between.Support = value
 
     def __repr__(self):
-        return f'HybridShapePointBetween(name="{ self.name }")'
+        return f'HybridShapePointBetween(name="{self.name}")'

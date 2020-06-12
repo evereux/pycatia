@@ -1,16 +1,33 @@
-#! /usr/bin/python3.6
-# module initially auto generated using V5Automation.chm from CATIA R25 on 2020-05-22 08:14:46.168311
+#! usr/bin/python3.6
+"""
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
-from .parameter import Parameter
+    .. warning::
+        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+        They are there as a guide as to how the visual basic / catscript functions work
+        and thus help debugging in pycatia.
+        
+"""
+
+from pycatia.knowledge_interfaces.parameter import Parameter
 
 
 class EnumParam(Parameter):
+
     """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
+                | System.IUnknown
+                |     System.IDispatch
+                |         System.CATBaseUnknown
+                |             System.CATBaseDispatch
+                |                 System.AnyObject
+                |                     KnowledgeInterfaces.Parameter
+                |                         EnumParam
+                | 
                 | Represents the enum parameter.
-
+    
     """
 
     def __init__(self, com_object):
@@ -21,33 +38,33 @@ class EnumParam(Parameter):
     def value_enum(self):
         """
         .. note::
-            CAA V5 Visual Basic help
-
-                | ValueEnum
-                | o Property ValueEnum() As
-                |
-                | Returns or sets the value of the EnumParameter object. Units
-                | are expressed in the IS unit system, except for lengthes
-                | expressed in millimeters, and angles expressed in decimal
-                | degrees.
-                |
-                | Example:
-                | This example sets the param1 value to 1 if
-                | its value is greater than 2.5:
-                | If (density.Value > 2.5) Then
-                |   density.Value = 1
-                | End If
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property ValueEnum() As CATBSTR
+                | 
+                |     Returns or sets the value of the EnumParameter object. Units are expressed
+                |     in the IS unit system, except for lengthes expressed in millimeters, and angles
+                |     expressed in decimal degrees.
+                | 
+                |     Example:
+                |         This example sets the param1 value to 1 if its value is greater than
+                |         2.5:
+                | 
+                |          If (density.Value > 2.5)  Then
+                |              density.Value = 1
+                |          End If
 
         :return: str
         """
+
         return self.enum_param.ValueEnum
 
     @value_enum.setter
     def value_enum(self, value):
         """
-            :param str value:
+        :param str value:
         """
+
         self.enum_param.ValueEnum = value
 
     def __repr__(self):
-        return f'EnumParam()'
+        return f'EnumParam(name="{ self.name }")'

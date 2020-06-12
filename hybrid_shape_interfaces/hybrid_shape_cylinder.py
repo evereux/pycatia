@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -19,7 +19,7 @@ class HybridShapeCylinder(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -55,7 +55,7 @@ class HybridShapeCylinder(HybridShape):
     def center(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Center() As Reference
                 | 
                 |     Returns or sets the center of the cylinder object.
@@ -84,7 +84,7 @@ class HybridShapeCylinder(HybridShape):
     def direction(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Direction() As HybridShapeDirection
                 | 
                 |     Returns or sets the direction of the cylinder object.
@@ -114,7 +114,7 @@ class HybridShapeCylinder(HybridShape):
     def length1(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Length1() As Length
                 | 
                 |     Returns or sets the length of the cylinder object in the given extrusion
@@ -145,7 +145,7 @@ class HybridShapeCylinder(HybridShape):
     def length2(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Length2() As Length
                 | 
                 |     Returns or sets the length of the cylinder object in the opposite direction
@@ -176,7 +176,7 @@ class HybridShapeCylinder(HybridShape):
     def orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Orientation(boolean iOrientation)
                 | 
                 |     Returns or sets the the inversion of extrusion direction.
@@ -205,7 +205,7 @@ class HybridShapeCylinder(HybridShape):
     def radius(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Radius() As Length
                 | 
                 |     Returns or sets the radius of the cylinder object.
@@ -234,7 +234,7 @@ class HybridShapeCylinder(HybridShape):
     def symmetrical_extension(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SymmetricalExtension() As boolean
                 | 
                 |     Gets or Sets the symmetrical extension of Cylinder (Length 2 = -Length 1).
@@ -260,7 +260,7 @@ class HybridShapeCylinder(HybridShape):
     def invert_orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub InvertOrientation()
                 | 
                 |     Inverts the Orientation of Cylinder object.

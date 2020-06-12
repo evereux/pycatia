@@ -111,7 +111,7 @@ class MemoryWarningSettingAtt(SettingController):
 
         self.memory_warning_setting_att.UsageLimit = value
 
-    def get_activation_state_info(self, admin_level=None, o_locked=None):
+    def get_activation_state_info(self, admin_level, o_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -128,7 +128,7 @@ class MemoryWarningSettingAtt(SettingController):
         """
         return self.memory_warning_setting_att.GetActivationStateInfo(admin_level, o_locked)
 
-    def get_memory_stopper_state_info(self, admin_level=None, o_locked=None):
+    def get_memory_stopper_state_info(self, admin_level, o_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -145,7 +145,7 @@ class MemoryWarningSettingAtt(SettingController):
         """
         return self.memory_warning_setting_att.GetMemoryStopperStateInfo(admin_level, o_locked)
 
-    def get_usage_limit_info(self, admin_level=None, o_locked=None):
+    def get_usage_limit_info(self, admin_level, o_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -162,7 +162,7 @@ class MemoryWarningSettingAtt(SettingController):
         """
         return self.memory_warning_setting_att.GetUsageLimitInfo(admin_level, o_locked)
 
-    def set_activation_state_lock(self, i_locked=None):
+    def set_activation_state_lock(self, i_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -192,7 +192,7 @@ class MemoryWarningSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_memory_stopper_state_lock(self, i_locked=None):
+    def set_memory_stopper_state_lock(self, i_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -222,7 +222,7 @@ class MemoryWarningSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_usage_limit_lock(self, i_locked=None):
+    def set_usage_limit_lock(self, i_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))

@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapeExtract(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -47,7 +47,7 @@ class HybridShapeExtract(HybridShape):
     def angular_threshold(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AngularThreshold() As double
                 | 
                 |     Returns or sets the AngularThreshold.
@@ -75,7 +75,7 @@ class HybridShapeExtract(HybridShape):
     def angular_threshold_activity(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AngularThresholdActivity() As boolean
                 | 
                 |     Returns or sets the AngularThresholdActivity.
@@ -103,7 +103,7 @@ class HybridShapeExtract(HybridShape):
     def complementary_extract(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ComplementaryExtract() As boolean
                 | 
                 |     Returns or sets the ComplementaryExtract checked/unchecked for the extract.
@@ -125,7 +125,7 @@ class HybridShapeExtract(HybridShape):
     def curvature_threshold(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CurvatureThreshold() As double
                 | 
                 |     Returns or sets the CurvatureThreshold.
@@ -153,7 +153,7 @@ class HybridShapeExtract(HybridShape):
     def curvature_threshold_activity(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CurvatureThresholdActivity() As boolean
                 | 
                 |     Returns or sets the CurvatureThresholdActivity.
@@ -181,7 +181,7 @@ class HybridShapeExtract(HybridShape):
     def distance_threshold(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DistanceThreshold() As double
                 | 
                 |     Returns or sets the DistanceThreshold.
@@ -209,7 +209,7 @@ class HybridShapeExtract(HybridShape):
     def distance_threshold_activity(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DistanceThresholdActivity() As boolean
                 | 
                 |     Returns or sets the DistanceThresholdActivity.
@@ -237,7 +237,7 @@ class HybridShapeExtract(HybridShape):
     def elem(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Elem() As Reference
                 | 
                 |     Returns or sets the sub element used as init for the
@@ -263,7 +263,7 @@ class HybridShapeExtract(HybridShape):
     def is_federated(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property IsFederated() As boolean
                 | 
                 |     Returns or sets the IsFederated flag checked/unchecked for the extract.
@@ -285,7 +285,7 @@ class HybridShapeExtract(HybridShape):
     def propagation_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property PropagationType() As long
                 | 
                 |     Returns or sets the type of propagation for the extract.
@@ -313,7 +313,7 @@ class HybridShapeExtract(HybridShape):
     def support(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets the support for the extract.

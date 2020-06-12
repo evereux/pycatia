@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -20,7 +20,7 @@ class DrawingDocument(Document):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -42,7 +42,7 @@ class DrawingDocument(Document):
     def drawing_root(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DrawingRoot() As DrawingRoot (Read Only)
                 | 
                 |     Retrieves the drawing root in the drawing document.
@@ -62,7 +62,7 @@ class DrawingDocument(Document):
     def parameters(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Parameters() As Parameters (Read Only)
                 | 
                 |     Returns the collection of parameters of the drawing
@@ -89,7 +89,7 @@ class DrawingDocument(Document):
     def relations(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Relations() As Relations (Read Only)
                 | 
                 |     Returns the collection of relations of the drawing
@@ -116,7 +116,7 @@ class DrawingDocument(Document):
     def sheets(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Sheets() As DrawingSheets (Read Only)
                 | 
                 |     Returns the collection of drawing sheets of the drawing
@@ -139,7 +139,7 @@ class DrawingDocument(Document):
     def standard(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Standard() As CatDrawingStandard
                 | 
                 |     Returns or sets the drawing standard of the drawing
@@ -167,7 +167,7 @@ class DrawingDocument(Document):
     def isolate(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Isolate()
                 | 
                 |     Isolates all the drawing views of all the drawing sheets of the drawing
@@ -187,7 +187,7 @@ class DrawingDocument(Document):
     def update(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Update()
                 | 
                 |     Updates all the drawing sheets of the drawing document.

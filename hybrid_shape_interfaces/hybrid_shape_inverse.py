@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -14,10 +14,9 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeInverse(HybridShape):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -39,7 +38,7 @@ class HybridShapeInverse(HybridShape):
     def element(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Element() As Reference
                 | 
                 |     Role: To get the element inverted.
@@ -75,16 +74,17 @@ class HybridShapeInverse(HybridShape):
     def orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Orientation() As long
                 | 
-                |     Gets or sets the element's orientation. Orientation = 1 : the element is not inverted. = -1 : the element is inverted, = 2 : the element can not be inverted. Orientation can not be set to 2.
+                |     Gets or sets the element's orientation. Orientation = 1 : the element is not inverted. = -1 : 
+                |     the element is inverted, = 2 : the element can not be inverted. Orientation can not be set to 2.
 
         :return: int
         """
 
         return self.hybrid_shape_inverse.Orientation
-
+    
     @orientation.setter
     def orientation(self, value):
         """
@@ -94,4 +94,4 @@ class HybridShapeInverse(HybridShape):
         self.hybrid_shape_inverse.Orientation = value
 
     def __repr__(self):
-        return f'HybridShapeInverse(name="{ self.name }")'
+        return f'HybridShapeInverse(name="{self.name}")'

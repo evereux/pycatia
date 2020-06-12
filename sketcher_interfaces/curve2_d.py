@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -8,15 +8,14 @@
         and thus help debugging in pycatia.
         
 """
-
-
+from pycatia.sketcher_interfaces.geometry2_d import Geometry2D
+from pycatia.sketcher_interfaces.point2_d import Point2D
 
 
 class Curve2D(Geometry2D):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -39,7 +38,7 @@ class Curve2D(Geometry2D):
     def continuity(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Continuity() As short (Read Only)
                 | 
                 |     Returns the highest level of geometric continuity the curve
@@ -59,7 +58,7 @@ class Curve2D(Geometry2D):
     def end_point(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property EndPoint() As Point2D
                 | 
                 |     Returns the end point of the curve. The end point is decided with respect
@@ -87,7 +86,7 @@ class Curve2D(Geometry2D):
     def period(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Period() As double (Read Only)
                 | 
                 |     Returns the period of a periodic curve.
@@ -106,7 +105,7 @@ class Curve2D(Geometry2D):
     def start_point(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property StartPoint() As Point2D
                 | 
                 |     Returns the start point of the curve. The start point is decided with
@@ -131,10 +130,10 @@ class Curve2D(Geometry2D):
 
         self.curve2_d.StartPoint = value
 
-    def get_curvature(self, i_param=None, o_curvature=None):
+    def get_curvature(self, i_param, o_curvature):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetCurvature(double iParam,
                 | CATSafeArrayVariant oCurvature)
                 | 
@@ -172,10 +171,10 @@ class Curve2D(Geometry2D):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_derivatives(self, i_param=None, o_derivative=None):
+    def get_derivatives(self, i_param, o_derivative):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetDerivatives(double iParam,
                 | CATSafeArrayVariant oDerivative)
                 | 
@@ -214,10 +213,10 @@ class Curve2D(Geometry2D):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_end_points(self, o_end_points=None):
+    def get_end_points(self, o_end_points):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetEndPoints(CATSafeArrayVariant oEndPoints)
                 | 
                 |     Returns the end-points of the curve. The start point and the end point are
@@ -255,10 +254,10 @@ class Curve2D(Geometry2D):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_length_at_param(self, i_from_param=None, i_to_param=None):
+    def get_length_at_param(self, i_from_param, i_to_param):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetLengthAtParam(double iFromParam,
                 | double iToParam) As double
                 | 
@@ -278,14 +277,14 @@ class Curve2D(Geometry2D):
 
         :param float i_from_param:
         :param float i_to_param:
-        :return: None
+        :return: float
         """
         return self.curve2_d.GetLengthAtParam(i_from_param, i_to_param)
 
-    def get_param_at_length(self, i_from_param=None, i_length=None):
+    def get_param_at_length(self, i_from_param, i_length):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetParamAtLength(double iFromParam,
                 | double iLength) As double
                 | 
@@ -308,14 +307,14 @@ class Curve2D(Geometry2D):
 
         :param float i_from_param:
         :param float i_length:
-        :return: None
+        :return: float
         """
         return self.curve2_d.GetParamAtLength(i_from_param, i_length)
 
-    def get_param_extents(self, o_params=None):
+    def get_param_extents(self, o_params):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetParamExtents(CATSafeArrayVariant oParams)
                 | 
                 |     Returns the parametric extents of the curve. This is the parametric
@@ -350,10 +349,10 @@ class Curve2D(Geometry2D):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_point_at_param(self, i_param=None, o_point=None):
+    def get_point_at_param(self, i_param, o_point):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetPointAtParam(double iParam,
                 | CATSafeArrayVariant oPoint)
                 | 
@@ -389,10 +388,10 @@ class Curve2D(Geometry2D):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_range_box(self, o_bound_point=None):
+    def get_range_box(self, o_bound_point):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetRangeBox(CATSafeArrayVariant oBoundPoint)
                 | 
                 |     Returns the range box (or bounding box) of the object
@@ -430,10 +429,10 @@ class Curve2D(Geometry2D):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_tangent(self, i_param=None, o_tangency=None):
+    def get_tangent(self, i_param, o_tangency):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetTangent(double iParam,
                 | CATSafeArrayVariant oTangency)
                 | 
@@ -472,7 +471,7 @@ class Curve2D(Geometry2D):
     def is_periodic(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func IsPeriodic() As boolean
                 | 
                 |     Specifies whether a curve is periodic or not.
@@ -484,7 +483,7 @@ class Curve2D(Geometry2D):
 
         :return: bool
         """
-        return bool(self.curve2_d.IsPeriodic())
+        return self.curve2_d.IsPeriodic()
 
     def __repr__(self):
-        return f'Curve2D(name="{ self.name }")'
+        return f'Curve2D(name="{self.name}")'

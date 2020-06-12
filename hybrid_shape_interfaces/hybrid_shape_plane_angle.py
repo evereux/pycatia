@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -15,10 +15,9 @@ from pycatia.knowledge_interfaces.angle import Angle
 
 
 class HybridShapePlaneAngle(Plane):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -53,7 +52,7 @@ class HybridShapePlaneAngle(Plane):
     def angle(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Angle() As Angle (Read Only)
                 | 
                 |     Returns the rotation angle.
@@ -67,7 +66,7 @@ class HybridShapePlaneAngle(Plane):
     def orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Orientation() As long
                 | 
                 |     Returns or sets the plane orientation.
@@ -93,7 +92,7 @@ class HybridShapePlaneAngle(Plane):
     def plane(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Plane() As Reference
                 | 
                 |     Returns or sets the reference plane.
@@ -116,10 +115,13 @@ class HybridShapePlaneAngle(Plane):
     def projection_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ProjectionMode() As boolean
                 | 
-                |     Gets or sets the projection mode status. ProjectionMode = TRUE : Rotation axis will be projected on to reference plane. = FALSE(default) : Rotation axis will be as it is. This example retrieves in ProjMode the projection mode status for the PlaneAngle hybrid shape feature.
+                |     Gets or sets the projection mode status. ProjectionMode = TRUE :
+                |     Rotation axis will be projected on to reference plane. = FALSE(default) :
+                |     Rotation axis will be as it is. This example retrieves in ProjMode the projection mode status
+                |     for the PlaneAngle hybrid shape feature.
                 | 
                 |      Dim ProjMode As boolean
                 |      ProjMode = PlaneAngle.ProjectionMode
@@ -141,7 +143,7 @@ class HybridShapePlaneAngle(Plane):
     def revol_axis(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property RevolAxis() As Reference
                 | 
                 |     Returns or sets the rotation axis.
@@ -162,4 +164,4 @@ class HybridShapePlaneAngle(Plane):
         self.hybrid_shape_plane_angle.RevolAxis = value
 
     def __repr__(self):
-        return f'HybridShapePlaneAngle(name="{ self.name }")'
+        return f'HybridShapePlaneAngle(name="{self.name}")'

@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class DrawingThreads(Collection):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -35,10 +35,10 @@ class DrawingThreads(Collection):
         super().__init__(com_object)
         self.drawing_threads = com_object
 
-    def add(self, i_geom_elem=None):
+    def add(self, i_geom_elem):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add(CATBaseDispatch iGeomElem) As DrawingThread
                 | 
                 |     Creates a drawing thread and adds it to the DrawingThreads
@@ -66,12 +66,12 @@ class DrawingThreads(Collection):
         :param AnyObject i_geom_elem:
         :return: DrawingThread
         """
-        return DrawingThread(self.drawing_threads.Add(i_geom_elem))
+        return DrawingThread(self.drawing_threads.Add(i_geom_elem.com_object))
 
-    def item(self, i_index=None):
+    def item(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(long iIndex) As DrawingThread
                 | 
                 |     Returns a drawing thread using its index from the DrawingThreads
@@ -103,10 +103,10 @@ class DrawingThreads(Collection):
         """
         return DrawingThread(self.drawing_threads.Item(i_index))
 
-    def remove(self, i_index=None):
+    def remove(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(long iIndex)
                 | 
                 |     Removes a drawing thread from the DrawingThreads

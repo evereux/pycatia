@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -15,10 +15,9 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeConnect(HybridShape):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -48,7 +47,7 @@ class HybridShapeConnect(HybridShape):
     def base_curve(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property BaseCurve() As Reference
                 | 
                 |     Returns or sets the base curve.
@@ -71,7 +70,7 @@ class HybridShapeConnect(HybridShape):
     def connect_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ConnectType() As long
                 | 
                 |     Returns or sets whether the connect curve is or should be created as
@@ -105,10 +104,11 @@ class HybridShapeConnect(HybridShape):
     def first_continuity(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FirstContinuity() As long
                 | 
-                |     Gets or Sets the continuity on first curve. FirstContinuity = 0 : Point continuity = 1 : Tangency continuity = 2 : Curvature continuity
+                |     Gets or Sets the continuity on first curve. FirstContinuity = 0 : Point continuity = 1 :
+                |     Tangency continuity = 2 : Curvature continuity
 
         :return: int
         """
@@ -127,7 +127,7 @@ class HybridShapeConnect(HybridShape):
     def first_curve(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FirstCurve() As Reference
                 | 
                 |     Gets or Sets the first reference curve. new first reference curve
@@ -149,10 +149,11 @@ class HybridShapeConnect(HybridShape):
     def first_orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FirstOrientation() As long
                 | 
-                |     Gets or Sets the orientation of first curve FirstOrientation = 1 : SameOrientation. = -1 : InvertOrientation. = 2 : KoOrientation
+                |     Gets or Sets the orientation of first curve FirstOrientation = 1 : SameOrientation. = -1 :
+                |     InvertOrientation. = 2 : KoOrientation
 
         :return: int
         """
@@ -171,7 +172,7 @@ class HybridShapeConnect(HybridShape):
     def first_point(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FirstPoint() As Reference
                 | 
                 |     Gets or Sets the first reference point. new first reference point
@@ -193,7 +194,7 @@ class HybridShapeConnect(HybridShape):
     def first_tension(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FirstTension() As RealParam (Read Only)
                 | 
                 |     Returns the tension on the first curve making up the connect
@@ -218,10 +219,11 @@ class HybridShapeConnect(HybridShape):
     def second_continuity(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SecondContinuity() As long
                 | 
-                |     Gets or Sets the continuity on second curve. SecondContinuity = 0 : Point continuity = 1 : Tangency continuity = 2 : Curvature continuity
+                |     Gets or Sets the continuity on second curve. SecondContinuity = 0 : Point continuity = 1 :
+                |     Tangency continuity = 2 : Curvature continuity
 
         :return: int
         """
@@ -240,7 +242,7 @@ class HybridShapeConnect(HybridShape):
     def second_curve(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SecondCurve() As Reference
                 | 
                 |     Gets or Sets the second reference curve. new second reference curve
@@ -262,10 +264,11 @@ class HybridShapeConnect(HybridShape):
     def second_orientation(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SecondOrientation() As long
                 | 
-                |     Gets or Sets the orientation of second curve SecondOrientation = 1 : SameOrientation. = -1 : InvertOrientation. = 2 : KoOrientation
+                |     Gets or Sets the orientation of second curve SecondOrientation = 1 : SameOrientation. = -1 :
+                |     InvertOrientation. = 2 : KoOrientation
 
         :return: int
         """
@@ -284,7 +287,7 @@ class HybridShapeConnect(HybridShape):
     def second_point(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SecondPoint() As Reference
                 | 
                 |     Gets or Sets the second reference point. new second reference point
@@ -306,7 +309,7 @@ class HybridShapeConnect(HybridShape):
     def second_tension(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SecondTension() As RealParam (Read Only)
                 | 
                 |     Returns the tension on the second curve making up the connect
@@ -331,10 +334,11 @@ class HybridShapeConnect(HybridShape):
     def trim(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Trim() As boolean
                 | 
-                |     Gets or Sets the trim mode. Trim = FALSE : Connected curves are not trimmed. = TRUE : Connected curves are trimmed.
+                |     Gets or Sets the trim mode. Trim = FALSE : Connected curves are not trimmed. = TRUE :
+                |     Connected curves are trimmed.
 
         :return: bool
         """
@@ -350,4 +354,4 @@ class HybridShapeConnect(HybridShape):
         self.hybrid_shape_connect.Trim = value
 
     def __repr__(self):
-        return f'HybridShapeConnect(name="{ self.name }")'
+        return f'HybridShapeConnect(name="{self.name}")'

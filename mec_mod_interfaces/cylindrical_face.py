@@ -1,10 +1,9 @@
 #! /usr/bin/python3.6
 # module initially auto generated using V5Automation.chm from CATIA R25 on 2020-05-18 10:56:40.651039
 
-from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.system_interfaces.collection import Collection
 
 from .face import Face
+
 
 class CylindricalFace(Face):
     """
@@ -28,7 +27,7 @@ class CylindricalFace(Face):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.cylindrical_face = com_object     
+        self.cylindrical_face = com_object
 
     def get_direction(self, o_direction):
         """

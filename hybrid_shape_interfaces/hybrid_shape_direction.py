@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -15,10 +15,9 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeDirection(HybridShape):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -52,7 +51,7 @@ class HybridShapeDirection(HybridShape):
     def object(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Object() As Reference
                 | 
                 |     Returns or sets the object that specifies the direction.
@@ -86,7 +85,7 @@ class HybridShapeDirection(HybridShape):
     def ref_axis_system(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property RefAxisSystem() As Reference
                 | 
                 |     Returns or Sets the reference Axis System for Direction
@@ -120,7 +119,7 @@ class HybridShapeDirection(HybridShape):
     def type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Type() As long (Read Only)
                 | 
                 |     Returns the direction type.
@@ -141,7 +140,7 @@ class HybridShapeDirection(HybridShape):
     def direction_specification(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func DirectionSpecification() As long
                 | 
                 |     Queries the direction specification status.
@@ -149,16 +148,17 @@ class HybridShapeDirection(HybridShape):
                 |     Parameters:
                 | 
                 |         oDir
-                |             direction specification = 0 : Direction is not specified. = 1 : Direction is specified and is valid. = -1 : Direction is specified but is not valid.
+                |             direction specification = 0 : Direction is not specified. = 1 :
+                |            Direction is specified and is valid. = -1 : Direction is specified but is not valid.
 
         :return: int
         """
-        return int(self.hybrid_shape_direction.DirectionSpecification())
+        return self.hybrid_shape_direction.DirectionSpecification()
 
     def get_x(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetX() As RealParam
                 | 
                 |     Returns the direction X component. This method succeeds only when direction
@@ -178,7 +178,7 @@ class HybridShapeDirection(HybridShape):
     def get_x_val(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetXVal() As double
                 | 
                 |     Returns the direction X component as Double. This method succeeds
@@ -191,12 +191,12 @@ class HybridShapeDirection(HybridShape):
 
         :return: float
         """
-        return float(self.hybrid_shape_direction.GetXVal())
+        return self.hybrid_shape_direction.GetXVal()
 
     def get_y(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetY() As RealParam
                 | 
                 |     Returns the direction Y component. This method succeeds only when direction
@@ -216,7 +216,7 @@ class HybridShapeDirection(HybridShape):
     def get_y_val(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetYVal() As double
                 | 
                 |     Returns the direction Y component as Double.This method succeeds
@@ -229,12 +229,12 @@ class HybridShapeDirection(HybridShape):
 
         :return: float
         """
-        return float(self.hybrid_shape_direction.GetYVal())
+        return self.hybrid_shape_direction.GetYVal()
 
     def get_z(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetZ() As RealParam
                 | 
                 |     Returns the direction Z component. This method succeeds only when direction
@@ -254,7 +254,7 @@ class HybridShapeDirection(HybridShape):
     def get_z_val(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetZVal() As double
                 | 
                 |     Returns the direction Z component as Double.This method succeeds
@@ -267,7 +267,7 @@ class HybridShapeDirection(HybridShape):
 
         :return: float
         """
-        return float(self.hybrid_shape_direction.GetZVal())
+        return self.hybrid_shape_direction.GetZVal()
 
     def __repr__(self):
-        return f'HybridShapeDirection(name="{ self.name }")'
+        return f'HybridShapeDirection(name="{self.name}")'

@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -54,7 +54,7 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def begin_of_circle(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property BeginOfCircle() As long
                 | 
                 |     Return or Set the number of the beginning curve of the circle. This
@@ -85,7 +85,7 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def curve1(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Curve1() As Reference
                 | 
                 |     Returns or sets the first curve to which the circle is or will be
@@ -117,7 +117,7 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def curve2(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Curve2() As Reference
                 | 
                 |     Returns or sets the second curve to which the circle is or will be
@@ -148,7 +148,7 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def curve3(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Curve3() As Reference
                 | 
                 |     Returns or sets the third curve to which the circle is or will be
@@ -180,7 +180,7 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def discrimination_index(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DiscriminationIndex() As long
                 | 
                 |     Return or set the discrimination index of the current circle. Several
@@ -214,7 +214,7 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def orientation1(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Orientation1() As long
                 | 
                 |     Returns or sets the orientation of the first curve to which the circle is
@@ -251,7 +251,7 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def orientation2(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Orientation2() As long
                 | 
                 |     Returns or sets the orientation of the second curve to which the circle is
@@ -288,7 +288,7 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def orientation3(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Orientation3() As long
                 | 
                 |     Returns or sets the orientation of the third curve to which the circle is
@@ -325,7 +325,7 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def support(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets the circle support surface.
@@ -355,7 +355,7 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def tangent_orientation1(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TangentOrientation1() As long
                 | 
                 |     Returns or sets the tangent orientation of the circle first reference
@@ -388,7 +388,7 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def tangent_orientation2(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TangentOrientation2() As long
                 | 
                 |     Returns or sets the tangent orientation of the circle second reference
@@ -421,7 +421,7 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def tangent_orientation3(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TangentOrientation3() As long
                 | 
                 |     Returns or sets the tangent orientation of the circle third reference
@@ -454,7 +454,7 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def trim_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TrimMode() As long
                 | 
                 |     Returns or sets whether the circle reference curves are or should be

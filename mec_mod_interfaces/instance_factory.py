@@ -22,7 +22,7 @@ class InstanceFactory(Factory):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.instance_factory = com_object     
+        self.instance_factory = com_object
 
     def instantiation_mode(self, i_instantiation_mode_bstr):
         """
@@ -95,7 +95,7 @@ class InstanceFactory(Factory):
                 |                | Examples:
                 | The following example initializes the factory with a
                 | document and a reference: InstanceFactory.BeginInstanceFacto
-                | ry"NameOfReference","c:\tmp\NameOfDocument.CATPart"
+                | ry"NameOfReference","c:/tmp/NameOfDocument.CATPart"
 
         :param i_name_of_reference:
         :param i_name_of_document:

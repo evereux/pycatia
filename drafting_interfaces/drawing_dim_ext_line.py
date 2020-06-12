@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -13,10 +13,9 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class DrawingDimExtLine(AnyObject):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -40,7 +39,7 @@ class DrawingDimExtLine(AnyObject):
     def color(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Color() As long
                 | 
                 |     Returns or sets color of extension line.
@@ -68,7 +67,7 @@ class DrawingDimExtLine(AnyObject):
     def ext_line_slant(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ExtLineSlant() As double
                 | 
                 |     Returns or sets slant angle of extension line.
@@ -96,7 +95,7 @@ class DrawingDimExtLine(AnyObject):
     def ext_line_type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ExtLineType() As long (Read Only)
                 | 
                 |     Returns extension line type of dimension.
@@ -116,7 +115,7 @@ class DrawingDimExtLine(AnyObject):
     def thickness(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Thickness() As double
                 | 
                 |     Returns or sets thickness of extension line.
@@ -140,10 +139,10 @@ class DrawingDimExtLine(AnyObject):
 
         self.drawing_dim_ext_line.Thickness = value
 
-    def add_interrupt(self, i_index=None, i_two_points=None):
+    def add_interrupt(self, i_index, i_two_points):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddInterrupt(long iIndex,
                 | CATSafeArrayVariant iTwoPoints)
                 | 
@@ -182,17 +181,17 @@ class DrawingDimExtLine(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_funnel(self, i_index=None, o_mode=None, o_angle=None, o_height=None, o_width=None):
+    def get_funnel(self, i_index, o_mode, o_angle, o_height, o_width):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetFunnel(long iIndex,
                 | long oMode,
                 | double oAngle,
                 | double oHeight,
                 | double oWidth)
                 | 
-                |     Get funnel infomation of dimension extension line.
+                |     Get funnel information of dimension extension line.
                 | 
                 |     Parameters:
                 | 
@@ -207,7 +206,7 @@ class DrawingDimExtLine(AnyObject):
                 |         oWidth
                 |             funnel width. 
                 |         Example:
-                |             This example gets funnel infomation of MyExtLine
+                |             This example gets funnel information of MyExtLine
                 |             path.
                 | 
                 |              MyExtLine.GetFunnel(iIndex, oMode, oAngle, oHeight,
@@ -222,10 +221,10 @@ class DrawingDimExtLine(AnyObject):
         """
         return self.drawing_dim_ext_line.GetFunnel(i_index, o_mode, o_angle, o_height, o_width)
 
-    def get_gap(self, i_index=None):
+    def get_gap(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetGap(long iIndex) As double
                 | 
                 |     Get gap of dimension extension line.
@@ -244,16 +243,16 @@ class DrawingDimExtLine(AnyObject):
         :param int i_index:
         :return: float
         """
-        return float(self.drawing_dim_ext_line.GetGap(i_index))
+        return self.drawing_dim_ext_line.GetGap(i_index)
 
-    def get_geom_info(self, i_index=None, o_geom_infos=None):
+    def get_geom_info(self, i_index, o_geom_infos):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetGeomInfo(long iIndex,
                 | CATSafeArrayVariant oGeomInfos)
                 | 
-                |     Get geometrical infomation of dimension extension line.
+                |     Get geometrical information of dimension extension line.
                 | 
                 |     Parameters:
                 | 
@@ -263,7 +262,7 @@ class DrawingDimExtLine(AnyObject):
                 |             List of geometric coordinates (X1,Y1,X2,Y2,X3,Y3).
                 |             
                 |         Example:
-                |             This example gets geometrical infomation of MyExtLine
+                |             This example gets geometrical information of MyExtLine
                 |             path.
                 | 
                 |              MyExtLine.GetGeomInfo(iIndex, oGeomInfos)
@@ -289,10 +288,10 @@ class DrawingDimExtLine(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_interrupt(self, i_index=None):
+    def get_interrupt(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetInterrupt(long iIndex) As long
                 | 
                 |     Get the number of interruptions stored in each extension
@@ -313,12 +312,12 @@ class DrawingDimExtLine(AnyObject):
         :param int i_index:
         :return: int
         """
-        return int(self.drawing_dim_ext_line.GetInterrupt(i_index))
+        return self.drawing_dim_ext_line.GetInterrupt(i_index)
 
-    def get_overrun(self, i_index=None):
+    def get_overrun(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetOverrun(long iIndex) As double
                 | 
                 |     Get overrun of dimension extension line.
@@ -337,15 +336,15 @@ class DrawingDimExtLine(AnyObject):
         :param int i_index:
         :return: float
         """
-        return float(self.drawing_dim_ext_line.GetOverrun(i_index))
+        return self.drawing_dim_ext_line.GetOverrun(i_index)
 
-    def get_visibility(self, i_index=None):
+    def get_visibility(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetVisibility(long iIndex) As long
                 | 
-                |     Get visivility of dimension extension line.
+                |     Get visibility of dimension extension line.
                 | 
                 |     Parameters:
                 | 
@@ -354,19 +353,19 @@ class DrawingDimExtLine(AnyObject):
                 |         oGap
                 |             Gap. 
                 |         Example:
-                |             This example gets visivility of MyExtLine path.
+                |             This example gets visibility of MyExtLine path.
                 | 
                 |              ExtlineVisibility = MyExtLine.GetVisibility(iIndex)
 
         :param int i_index:
         :return: int
         """
-        return int(self.drawing_dim_ext_line.GetVisibility(i_index))
+        return self.drawing_dim_ext_line.GetVisibility(i_index)
 
-    def remove_interrupt(self, i_index=None):
+    def remove_interrupt(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveInterrupt(long iIndex)
                 | 
                 |     Remove interruption on extension lines.
@@ -386,17 +385,17 @@ class DrawingDimExtLine(AnyObject):
         """
         return self.drawing_dim_ext_line.RemoveInterrupt(i_index)
 
-    def set_funnel(self, i_index=None, i_mode=None, i_angle=None, i_height=None, i_width=None):
+    def set_funnel(self, i_index, i_mode, i_angle, i_height, i_width):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetFunnel(long iIndex,
                 | long iMode,
                 | double iAngle,
                 | double iHeight,
                 | double iWidth)
                 | 
-                |     Set funnel infomation of dimension extension line.
+                |     Set funnel information of dimension extension line.
                 | 
                 |     Parameters:
                 | 
@@ -411,7 +410,7 @@ class DrawingDimExtLine(AnyObject):
                 |         iWidth
                 |             funnel width. 
                 |         Example:
-                |             This example sets funnel infomation of MyExtLine
+                |             This example sets funnel information of MyExtLine
                 |             path.
                 | 
                 |              MyExtLine.SetFunnel(iIndex, iMode, iAngle, iHeight,
@@ -426,10 +425,10 @@ class DrawingDimExtLine(AnyObject):
         """
         return self.drawing_dim_ext_line.SetFunnel(i_index, i_mode, i_angle, i_height, i_width)
 
-    def set_gap(self, i_index=None, i_gap=None):
+    def set_gap(self, i_index, i_gap):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetGap(long iIndex,
                 | double iGap)
                 | 
@@ -452,10 +451,10 @@ class DrawingDimExtLine(AnyObject):
         """
         return self.drawing_dim_ext_line.SetGap(i_index, i_gap)
 
-    def set_overrun(self, i_index=None, i_overrun=None):
+    def set_overrun(self, i_index, i_overrun):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetOverrun(long iIndex,
                 | double iOverrun)
                 | 
@@ -478,23 +477,23 @@ class DrawingDimExtLine(AnyObject):
         """
         return self.drawing_dim_ext_line.SetOverrun(i_index, i_overrun)
 
-    def set_visibility(self, i_index=None, i_extline_visibility=None):
+    def set_visibility(self, i_index, i_extline_visibility):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetVisibility(long iIndex,
                 | long iExtlineVisibility)
                 | 
-                |     Set visivility of dimension extension line.
+                |     Set visibility of dimension extension line.
                 | 
                 |     Parameters:
                 | 
                 |         iIndex
                 |             1: first extension line 2: second extension line 
                 |         iExtlineVisibility
-                |             visivility 
+                |             visibility
                 |         Example:
-                |             This example sets visivility of MyExtLine path.
+                |             This example sets visibility of MyExtLine path.
                 | 
                 |              MyExtLine.SetVisibility(iIndex,
                 |              iExtlineVisibility)
@@ -506,4 +505,4 @@ class DrawingDimExtLine(AnyObject):
         return self.drawing_dim_ext_line.SetVisibility(i_index, i_extline_visibility)
 
     def __repr__(self):
-        return f'DrawingDimExtLine(name="{ self.name }")'
+        return f'DrawingDimExtLine(name="{self.name}")'

@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-09 09:53:18.676780
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -14,10 +14,9 @@ from pycatia.system_interfaces.collection import Collection
 
 
 class DrawingPictures(Collection):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -35,10 +34,10 @@ class DrawingPictures(Collection):
         super().__init__(com_object)
         self.drawing_pictures = com_object
 
-    def add(self, i_drawing_picture_path=None, i_position_x=None, i_position_y=None):
+    def add(self, i_drawing_picture_path, i_position_x, i_position_y):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add(CATBSTR iDrawingPicturePath,
                 | double iPositionX,
                 | double iPositionY) As DrawingPicture
@@ -49,7 +48,7 @@ class DrawingPictures(Collection):
                 |     Parameters:
                 | 
                 |         iDrawingPicturePath
-                |             The path of the picture file (ex : "C:\tmp\ball.bmp") . 
+                |             The path of the picture file (ex : "C:/tmp/ball.bmp") .
                 |         iPositionX,iPositionY
                 |             The drawing picture x and y coordinates, expressed in millimeters,
                 |             with respect to the drawing view coordinate system
@@ -68,19 +67,19 @@ class DrawingPictures(Collection):
                 |      Dim MyView As DrawingView
                 |      Set MyView = MySheet.Views.ActiveView
                 |      Dim MyDrawingPicture1 As DrawingPicture
-                |      Set MyDrawingPicture1 = MyView.Pictures.Add("C:\tmp\ball.bmp", 100., 50.)
+                |      Set MyDrawingPicture1 = MyView.Pictures.Add("C:/tmp/ball.bmp", 100., 50.)
 
         :param str i_drawing_picture_path:
         :param float i_position_x:
         :param float i_position_y:
-        :return: None
+        :return: DrawingPicture
         """
-        return self.drawing_pictures.Add(i_drawing_picture_path, i_position_x, i_position_y)
+        return DrawingPicture(self.drawing_pictures.Add(i_drawing_picture_path, i_position_x, i_position_y))
 
-    def item(self, i_index=None):
+    def item(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(CATVariant iIndex) As DrawingPicture
                 | 
                 |     Returns a drawing picture using its index or its name from the
@@ -117,10 +116,10 @@ class DrawingPictures(Collection):
         """
         return DrawingPicture(self.drawing_pictures.Item(i_index))
 
-    def remove(self, i_index=None):
+    def remove(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a drawing picture from the DrawingPictures
@@ -168,4 +167,4 @@ class DrawingPictures(Collection):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'DrawingPictures(name="{ self.name }")'
+        return f'DrawingPictures(name="{self.name}")'
