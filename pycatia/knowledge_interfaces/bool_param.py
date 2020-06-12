@@ -13,7 +13,6 @@ from pycatia.knowledge_interfaces.enum_param import EnumParam
 
 
 class BoolParam(EnumParam):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -30,11 +29,11 @@ class BoolParam(EnumParam):
                 | Represents the boolean parameter.
                 | The following example shows how to create it:
                 | 
-                | 	Dim CATDocs As Documents
+                |   Dim CATDocs As Documents
                 |   Set CATDocs      = CATIA.Documents
-                | 	Dim part1 As Document
+                |   Dim part1 As Document
                 |   Set part1        = CATDocs.Add("CATPart")
-                | 	Dim availability As BooleanParam
+                |   Dim availability As BooleanParam
                 |   Set availability = part1.Parameters.CreateBoolean("availability", True)
     
     """
@@ -74,4 +73,4 @@ class BoolParam(EnumParam):
         self.bool_param.Value = value
 
     def __repr__(self):
-        return f'BoolParam(name="{ self.name }")'
+        return f'BoolParam(name="{self.name}")'
