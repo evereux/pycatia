@@ -2,9 +2,7 @@
 # module initially auto generated using V5Automation.chm from CATIA R25
 
 from pycatia.system_interfaces.any_object import AnyObject
-import pycatia.mec_mod_interfaces.bodies as bodies
 from .hybrid_shapes import HybridShapes
-import pycatia.mec_mod_interfaces.ordered_geometrical_sets as ordered_geom_sets
 from .sketches import Sketches
 
 
@@ -44,7 +42,8 @@ class OrderedGeometricalSet(AnyObject):
 
         :return: Bodies()
         """
-        return bodies.Bodies(self.ordered_geometrical_set.Bodies)
+        from pycatia.mec_mod_interfaces.bodies import Bodies
+        return Bodies(self.ordered_geometrical_set.Bodies)
 
     @property
     def hybrid_shapes(self):
@@ -90,7 +89,8 @@ class OrderedGeometricalSet(AnyObject):
 
         :return: OrderedGeometricalSets()
         """
-        return ordered_geom_sets.OrderedGeometricalSets(self.ordered_geometrical_set.OrderedGeometricalSets)
+        from pycatia.mec_mod_interfaces.ordered_geometrical_sets import OrderedGeometricalSets
+        return OrderedGeometricalSets(self.ordered_geometrical_set.OrderedGeometricalSets)
 
     @property
     def ordered_sketches(self):
