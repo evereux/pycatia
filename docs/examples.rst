@@ -81,3 +81,17 @@ Move first child in product.
 
 .. literalinclude:: ../example_11.py
 
+Example 12
+----------
+
+Move first child in product.
+
+.. literalinclude:: ../example_12.py
+
+Example 13
+----------
+
+Move first child in product.
+
+.. literalinclude:: ../example_13.py
+

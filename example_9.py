@@ -8,18 +8,17 @@
 
 """
 
-from pycatia.base_interfaces import CATIAApplication
+from pycatia import catia
 
-catia = CATIAApplication()
-
-documents = catia.documents()
+documents = catia.documents
 documents.open(r'tests\CF_TopLevelAssy.CATProduct')
-document = catia.document()
+document = catia.active_document
 
-main_product = document.product()
-products = main_product.get_products()
+product = document.product()
+products = product.get_products()
 
 for product in products:
-    print(product.name, product.position.get_components(catia))
+    print(product.position.get_components())
+    # print(product.name, position.get_components())
 
 document.close()

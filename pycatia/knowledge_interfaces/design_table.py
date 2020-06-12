@@ -1,221 +1,251 @@
-#! /usr/bin/python3.6
-# module initially auto generated using V5Automation.chm from CATIA V5 R25
+#! usr/bin/python3.6
+"""
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
-from .relation import Relation
+    .. warning::
+        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+        They are there as a guide as to how the visual basic / catscript functions work
+        and thus help debugging in pycatia.
+        
+"""
+
+from pycatia.knowledge_interfaces.relation import Relation
 
 
 class DesignTable(Relation):
     """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
+                | System.IUnknown
+                |     System.IDispatch
+                |         System.CATBaseUnknown
+                |             System.CATBaseDispatch
+                |                 System.AnyObject
+                |                     KnowledgeInterfaces.KnowledgeObject
+                |                        KnowledgeInterfaces.KnowledgeActivateObject                |                             KnowledgeInterfaces.Relation
+                |                                 DesignTable
+                | 
                 | Represents the DesignTable object.
-
+    
     """
 
-    def __init__(self, design_table):
-        super().__init__(design_table)
-        self.design_table = design_table
+    def __init__(self, com_object):
+        super().__init__(com_object)
+        self.design_table = com_object
 
     @property
     def columns_nb(self):
         """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property ColumnsNb() As short (Read Only)
+                | 
+                |     Returns the nb of columns in the design table file.
 
-                | ColumnsNb
-                | o Property ColumnsNb(    ) As short
-                |
-                | Returns the nb of columns in the design table file.
-
-
-                | Parameters:
-
-
+        :return: enum
         """
+
         return self.design_table.ColumnsNb
 
     @property
     def configuration(self):
         """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property Configuration() As short
+                | 
+                |     Returns or sets the current configuration. Legal values: 1 to
+                |     ConfigurationsNb.
 
-                | Configuration
-                | o Property Configuration(    ) As short
-                |
-                | Returns or sets the current configuration.  Legal values:  1 to
-                | ConfigurationsNb.
-
-
-                | Parameters:
-
-
+        :return: enum
         """
+
         return self.design_table.Configuration
+
+    @configuration.setter
+    def configuration(self, value):
+        """
+        :param enum value:
+        """
+
+        self.design_table.Configuration = value
 
     @property
     def configurations_nb(self):
         """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property ConfigurationsNb() As short (Read Only)
+                | 
+                |     Returns the number of design table configurations.
 
-                | ConfigurationsNb
-                | o Property ConfigurationsNb(    ) As short
-                |
-                | Returns the number of design table configurations.
-
-
-                | Parameters:
-
-
+        :return: enum
         """
+
         return self.design_table.ConfigurationsNb
 
     @property
     def copy_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property CopyMode() As boolean
+                | 
+                |     Returns or sets whether the data contained in the file must be included
+                |     inside the CATIA model.
 
-                | CopyMode
-                | o Property CopyMode(    ) As boolean
-                |
-                | Returns or sets whether the data contained in the file must be
-                | included inside the CATIA model.
-
-
-                | Parameters:
-
-
+        :return: bool
         """
+
         return self.design_table.CopyMode
+
+    @copy_mode.setter
+    def copy_mode(self, value):
+        """
+        :param bool value:
+        """
+
+        self.design_table.CopyMode = value
 
     @property
     def file_path(self):
         """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property FilePath() As CATBSTR
+                | 
+                |     Returns or sets the path of the design table (read/write property).
 
-                | FilePath
-                | o Property FilePath(    ) As CATBSTR
-                |
-                | Returns or sets the path of the design table (read/write property).
-
-
-                | Parameters:
-
-
+        :return: str
         """
+
         return self.design_table.FilePath
+
+    @file_path.setter
+    def file_path(self, value):
+        """
+        :param str value:
+        """
+
+        self.design_table.FilePath = value
 
     def add_association(self, i_parameter, i_sheet_column):
         """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Sub AddAssociation(Parameter iParameter,
+                | CATBSTR iSheetColumn)
+                | 
+                |     Adds an association between a parameter iParameter and a column of the
+                |     design table. This method does nothing if the column does not exist or if the
+                |     type of the parameter isn t compliant with the column
+                |     type.
+                | 
+                |     Parameters:
+                | 
+                |         iParameter
+                |             The parameter. 
+                |         iSheetColumn
+                |             The name of the column to be associated with the
+                |             parameter.
 
-                | AddAssociation
-                | o Sub AddAssociation(    Parameter    iParameter,
-                |                          CATBSTR    iSheetColumn)
-                |
-                | Adds an association between a parameter iParameter and a  column of
-                | the design table.    This method does nothing if the column does not
-                | exist or if  the type of the parameter isn t compliant with the column
-                | type.
-
-
-                | Parameters:
-                | iParameter
-                |  The parameter.
-                |
-                |  iSheetColumn
-                |  The name of the column to be associated with the parameter.
-
-
+        :param Parameter i_parameter:
+        :param str i_sheet_column:
+        :return: None
         """
-        return self.design_table.AddAssociation(i_parameter, i_sheet_column)
+        return self.design_table.AddAssociation(i_parameter.com_object, i_sheet_column)
+        # # # # Autogenerated comment: 
+        # # some methods require a system service call as the methods expects a vb array object
+        # # passed to it and there is no way to do this directly with python. In those cases the following code
+        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
+        # # vba_function_name = 'add_association'
+        # # vba_code = """
+        # # Public Function add_association(design_table)
+        # #     Dim iParameter (2)
+        # #     design_table.AddAssociation iParameter
+        # #     add_association = iParameter
+        # # End Function
+        # # """
+
+        # # system_service = SystemService(self.application.SystemService)
+        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_new_row(self):
         """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Sub AddNewRow()
+                | 
+                |     Adds a row in the design table source file. The new row is filled in with values of associated
+                |     parameters. ##### Since V5R14 ##### If the file contains at least one empty row between two not
+                |     empty rows, the behavior of this method is the same for Excel and Text files : => the new row
+                |     containing the current parameters values replaces the first empty row found from the beginning of
+                |     the file. RQ : before R14, for text files, the new row was appended at the end of the file. The
+                |     empty rows were never filed by this way, so that the new row was not visible in Design Table
+                |     dialog.
+                | 
+                |     Returns:
+                |         S_OK if succeeded, E_FAIL else.
 
-                | AddNewRow
-                | o Sub AddNewRow(    )
-                |
-                | Adds a row in the design table source file.  The new row is filled in
-                | with values of associated parameters. ##### Since V5R14 #####  If the
-                | file contains at least one empty row between two not empty rows, the
-                | behavior of this method is the same for Excel and Text files : => the
-                | new row containing the current parameters values replaces the first
-                | empty row found from the beginning of the file. RQ : before R14, for
-                | text files, the new row was appended at the end of the file.      The
-                | empty rows were never filed by this way, so that the new row was not
-                | visible in Design Table dialog. ######################  Returns:  S_OK
-                | if succeeded, E_FAIL else.
-
-
-                | Parameters:
-
-
+        :return: None
         """
         return self.design_table.AddNewRow()
 
     def cell_as_string(self, i_row, i_column):
         """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Func CellAsString(short iRow,
+                | short iColumn) As CATBSTR
+                | 
+                |     Returns the content of a specific cell.
+                | 
+                |     Parameters:
+                | 
+                |         iRow
+                |             the index of the row where the cell is located. 
+                |         iColumn
+                |             the index of the column where the cell is located.
 
-                | CellAsString
-                | o Func CellAsString(    short    iRow,
-                |                         short    iColumn) As CATBSTR
-                |
-                | Returns the content of a specific cell.
-
-
-                | Parameters:
-                | iRow
-                |  the index of the row where the cell is located.
-                |  iColumn
-                |  the index of the column where the cell is located.
-
-
+        :param enum i_row:
+        :param enum i_column:
+        :return: str
         """
         return self.design_table.CellAsString(i_row, i_column)
 
     def remove_association(self, i_sheet_column):
         """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Sub RemoveAssociation(CATBSTR iSheetColumn)
+                | 
+                |     Removes an existing association. This method does nothing if the column isn
+                |     t associated or if it doesn t exist.
+                | 
+                |     Parameters:
+                | 
+                |         iSheetColumn
+                |             The name of an associated column.
 
-                | RemoveAssociation
-                | o Sub RemoveAssociation(    CATBSTR    iSheetColumn)
-                |
-                | Removes an existing association. This method does nothing if the
-                | column isn t associated or  if it doesn t exist.
-
-
-                | Parameters:
-                | iSheetColumn
-                |  The name of an associated column.
-
-
+        :param str i_sheet_column:
+        :return: None
         """
         return self.design_table.RemoveAssociation(i_sheet_column)
 
     def synchronize(self):
         """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Sub Synchronize()
+                | 
+                |     Synchronizes the design table with its source file. If the file is managed
+                |     in Enovia LCA, copies this file on local disk, and synchronizes design table
+                |     content
 
-                | Synchronize
-                | o Sub Synchronize(    )
-                |
-                | Synchronizes the design table with its source file. If the file is
-                | managed in Enovia LCA, copies this file on local disk, and
-                | synchronizes design table content.
+        :return: None
         """
         return self.design_table.Synchronize()
 
     def __repr__(self):
-        return f'DesignTable()'
+        return f'DesignTable(name="{self.name}")'

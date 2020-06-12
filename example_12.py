@@ -1,57 +1,54 @@
 #! /usr/bin/python3.7
 
 """
+
     Example 12:
-    Access the CATIA COM object with a .CATPart open and and display each parameter along with its name, value and its associated parameter set.
+
+    Access the CATIA COM object with a .CATPart open and and display
+    each parameter along with its name, value and its associated parameter set.
+
 """
 
-from pycatia.base_interfaces import CATIAApplication
-from pycatia.knowledge_interfaces import Parameters
-from pycatia.knowledge_interfaces import Relations
+from pycatia import catia
+
 # from pycatia.knowledge_interfaces import BoolParam
 
-catia = CATIAApplication()
 
-documents = catia.documents()
+documents = catia.documents
 documents.open(r'tests\CF_Part_3.CATPart')
 
-document = catia.document()
+document = catia.active_document
 
 part = document.part()
 
 # gets part parameters
-part_parameters = Parameters(part.part.parameters)
+part_parameters = part.parameters
 
 # create parameter to activate pocket
 part_parameters.create_boolean("Activate_Pocket", True)
+
 # find and assign parameters
 pocket_activity = part_parameters.item("Activate_Pocket")
-# or create and assign it in one process with one of this tow methods
-## pocket_activity = part_parameters.create_boolean("Activate_Pocket", True)
-## pocket_activity = BoolParam("Activate_Pocket", True, parent=part_parameters)
 
 # gets RootParameterSet inside of parameters
-root_parameterset = part_parameters.root_parameter_set()
+root_parameter_set = part_parameters.root_parameter_set
+# ParameterSet(name="Parameters")
 
 # gets ParameterSets inside of RootParameterSet
-root_parametersets = root_parameterset.root_parameter_sets()
-# root_parametersets.count() == 2
+parameter_sets = root_parameter_set.parameter_sets
 
-# gets every item inside of ParameterSets
-root_parametersets_items = root_parametersets.get_items()
-root_parametersets_items_names = root_parametersets.get_item_names()
-# root_parametersets_items_names = ['Parameters_Pad', 'Parameters_Pocket']
+# gets all parameter sets  inside of parameter_sets
+sub_parameter_set = parameter_sets.items()
+# [ParameterSet(name="Parameters_Pad"), ParameterSet(name="Parameters_Pocket")]
 
-for item in root_parametersets_items:
-    print("ParameterSet name: {}".format(item.name))
-    subitems = item.all_parameters()
-    for subitem in subitems.all_parameter():
-        print("Parameter name: {} - Value: {}".format(subitem.name, subitem.value))
+for parm_set in sub_parameter_set:
+    print(parm_set.name)
+    sub_parms = parm_set.all_parameters
+    for sub_item in sub_parms:
+        print(sub_item)
+        print("Parameter name: {} - Value: {}".format(sub_item.name, sub_item.value))
     print()
 
-# -----------------------------------------------------------------
-# Output
-# -----------------------------------------------------------------
 # ParameterSet name: Parameters_Pad
 # Parameter name: CF_Part_3\Parameters_Pad\Width| value: 120.0
 # Parameter name: CF_Part_3\Parameters_Pad\Length| value: 60.0
@@ -65,19 +62,19 @@ for item in root_parametersets_items:
 
 
 # gets part relations
-part_relations = Relations(part.part.relations)
+part_relations = part.relations
 # create the parameter to which you want to assign a formula
 sketch_pocket_activity = part_parameters.item("Sketches\\Sketch_Pocket\\Activity")
 object_pocket_activity = part_parameters.item("PartBody\\Pocket.1\\Activity")
 
 # create the formula to combine the sketch and pocket activity with the parameter <pocket_activity>
 part_relations.create_formula("Activity_Sketch_Pocket",
-                              "Checks weather the Pocket schould be activated or not", sketch_pocket_activity.parameter,
-                              pocket_activity.formula_name)
+                              "Checks weather the Pocket should be activated or not", sketch_pocket_activity,
+                              pocket_activity.name)
 
 part_relations.create_formula("Activity_Object_Pocket",
-                              "Checks weather the Pocket schould be activated or not", object_pocket_activity.parameter,
-                              pocket_activity.formula_name)
+                              "Checks weather the Pocket should be activated or not", object_pocket_activity,
+                              pocket_activity.name)
 
 part.update()
 

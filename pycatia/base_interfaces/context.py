@@ -3,24 +3,25 @@
 import os
 import warnings
 
-from pycatia.base_interfaces.catia_application import CATIAApplication
+from pycatia.base_interfaces.base_application import catia_application
 from pycatia.exception_handling.exceptions import CATIAApplicationException
 
 
 class CATIADocHandler:
     """
-    A context manager to open or create a CATIA document. The CATIA document will be closed (and not automatically
-    saved) upon exit.
+    A context manager to open or create a CATIA document.
+
+    .. warning::
+        The CATIA document will be closed (and not automatically
+        saved) upon exit.
 
     Only file_name __or__ new_document are required as one document is handled at a time.
 
     :Example - Open a CATPart:
 
-        >>> from pycatia.base_interfaces import CATIADocHandler
-        >>> catia_part = 'tests\\CF_catia_measurable_part.CATPart'
+        >>> from pycatia.base_interfaces.context import CATIADocHandler
+        >>> catia_part = 'tests//CF_catia_measurable_part.CATPart'
         >>> with CATIADocHandler(catia_part) as handler:
-        >>>     # create the CATIA() object.
-        >>>     catia = handler.catia
         >>>     # create the documents object.
         >>>     documents = handler.documents
         >>>     # create the document object.
@@ -31,7 +32,7 @@ class CATIADocHandler:
 
     :Example - Create a new CATPart:
 
-        >>> from pycatia.base_interfaces import CATIADocHandler
+        >>> from pycatia.base_interfaces.context import CATIADocHandler
         >>> with CATIADocHandler(new_document='Part') as handler:
         >>>     # create the CATIA() object.
         >>>     catia = handler.catia
@@ -47,9 +48,8 @@ class CATIADocHandler:
     """
 
     def __init__(self, file_name=None, new_document=None):
-
-        self.catia = CATIAApplication()
-        self.documents = self.catia.documents()
+        self.catia = catia_application()
+        self.documents = self.catia.documents
         self.file_name = file_name
         self.new_document = new_document
 
@@ -57,16 +57,15 @@ class CATIADocHandler:
             raise CATIAApplicationException(f'Could not find file: {file_name}')
 
     def __enter__(self):
-        self.catia = CATIAApplication()
-        self.documents = self.catia.documents()
+        self.documents = self.catia.documents
         self.document = None
 
         if self.file_name:
             self.documents.open(self.file_name)
-            self.document = self.catia.document()
+            self.document = self.catia.active_document
         elif self.new_document:
             self.documents.add(self.new_document)
-            self.document = self.catia.document()
+            self.document = self.catia.active_document
 
         return self
 

@@ -1,58 +1,94 @@
-#! /usr/bin/python3.6
-# module initially auto generated using V5Automation.chm from CATIA V5 R25
+#! usr/bin/python3.6
+"""
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
-from .relation import Relation
+    .. warning::
+        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+        They are there as a guide as to how the visual basic / catscript functions work
+        and thus help debugging in pycatia.
+        
+"""
+
+from pycatia.knowledge_interfaces.relation import Relation
 
 
 class Check(Relation):
+
     """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
-                | Represents the check relation.The following example shows how to
-                | create a check which checks if a given mass is less than 10kg. The
-                | mass should be defined previously:
-
+                | System.IUnknown
+                |     System.IDispatch
+                |         System.CATBaseUnknown
+                |             System.CATBaseDispatch
+                |                 System.AnyObject
+                |                     KnowledgeInterfaces.KnowledgeObject
+                |                        KnowledgeInterfaces.KnowledgeActivateObject                |                             KnowledgeInterfaces.Relation
+                |                                 Check
+                | 
+                | Represents the check relation.
+                | The following example shows how to create a check which checks if a given mass
+                | is less than 10kg. The mass should be defined previously:
+                | 
+                | 	Dim CATDocs As Documents
+                |  Set CATDocs = CATIA.Documents
+                |  Dim part1 As Document
+                |  Set part1   = CATDocs.Add("CATPart")
+                |  Dim mass As RealParam
+                |  Set mass         = part1.Part.Parameters.CreateReal("mass", 5.)
+                |  Dim maximummass As Check
+                |  Set maximummass = part1.Relations.CreateCheck
+                |                     ("maximummass",
+                |                      "Ensures that mass is less than 10 kg",
+                |                      "mass<10kg")
+    
     """
 
-    def __init__(self, relation_com_object):
-        super().__init__(relation_com_object)
-        self.check = relation_com_object
+    def __init__(self, com_object):
+        super().__init__(com_object)
+        self.check = com_object
 
     @property
     def diagnosis(self):
         """
         .. note::
-            CAA V5 Visual Basic help
-
-                | Diagnosis
-                | o Property Diagnosis(    ) As boolean
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property Diagnosis() As boolean (Read Only)
                 | 
-                | Returns the check diagnosis. True if the condition of the check is
-                | verified. False otherwise.
+                |     Returns the check diagnosis. True if the condition of the check is
+                |     verified. False otherwise.
 
-
-                | Parameters:
-
-
+        :return: bool
         """
+
         return self.check.Diagnosis
 
     @property
     def severity(self):
         """
         .. note::
-            CAA V5 Visual Basic help
-
-                | Severity
-                | o Property Severity(    ) As long
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property Severity() As long
                 | 
-                | Returns or sets the check severity. The severity is the way the check
-                | will manifest itself:             Silent (1)Information (2)Warning (3)
+                |     Returns or sets the check severity. The severity is the way the check will
+                |     manifest itself:
+                |     Silent (1)
+                |     Information (2)
+                |     Warning (3)
 
-
-                | Parameters:
-
-
+        :return: int
         """
+
         return self.check.Severity
+
+    @severity.setter
+    def severity(self, value):
+        """
+        :param int value:
+        """
+
+        self.check.Severity = value
+
+    def __repr__(self):
+        return f'Check(name="{ self.name }")'
