@@ -119,8 +119,7 @@ class SelectedElement(AnyObject):
                 |                  (TypeName(AutomationTreeNodeOrProduct.Parent.Parent)<>"Application")
                 |                  then
                 |                      Set Position = AutomationTreeNodeOrProduct.Position
-                |                      Call
-Position.GetComponents(AxisComponentsArray)                |                      msgbox AxisComponentsArray(9)
+                |                      Call Position.GetComponents(AxisComponentsArray)                |                      msgbox AxisComponentsArray(9)
                 |                  end if
                 |              end if
                 |          end if

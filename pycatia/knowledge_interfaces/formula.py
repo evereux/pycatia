@@ -24,8 +24,8 @@ class Formula(Relation):
                 |             System.CATBaseDispatch
                 |                 System.AnyObject
                 |                     KnowledgeInterfaces.KnowledgeObject
-                |                        
-KnowledgeInterfaces.KnowledgeActivateObject                |                             KnowledgeInterfaces.Relation
+                |                        KnowledgeInterfaces.KnowledgeActivateObject
+                |                             KnowledgeInterfaces.Relation
                 |                                 Formula
                 | 
                 | Represents the formula relation.

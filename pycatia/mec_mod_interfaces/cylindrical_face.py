@@ -48,8 +48,8 @@ class CylindricalFace(Face):
                 |    
                 |  oDirection[2]
                 |    The Z Coordinate of the axis direction
-
                 |
+
         :param o_direction:
         :return:
         """
@@ -74,8 +74,8 @@ class CylindricalFace(Face):
                 |    
                 |  oOrigin[2]
                 |    The Z Coordinate of the axis origin
-
                 |
+
         :param o_origin:
         :return:
         """

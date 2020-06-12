@@ -24,8 +24,8 @@ class Rule(Relation):
                 |             System.CATBaseDispatch
                 |                 System.AnyObject
                 |                     KnowledgeInterfaces.KnowledgeObject
-                |                        
-KnowledgeInterfaces.KnowledgeActivateObject                |                             KnowledgeInterfaces.Relation
+                |                        KnowledgeInterfaces.KnowledgeActivateObject
+                |                             KnowledgeInterfaces.Relation
                 |                                 Rule
                 | 
                 | Represents the program relation.

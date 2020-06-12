@@ -60,8 +60,8 @@ class InstanceFactory(Factory):
                 | Parameters:
                 | iReference
                 |    The reference shape or hybrid shape.
-
-                |                | Examples:
+                |
+                | Examples:
                 | This example creates the instance NewInstance in the part.
                 | Set NewInstance = instanceFactory.AddInstance(reference)
 
@@ -91,8 +91,8 @@ class InstanceFactory(Factory):
                 |  
                 |  iDocumentFileName
                 |   The name of the file containing the document where to find the reference to be instantiated.
-
-                |                | Examples:
+                |
+                | Examples:
                 | The following example initializes the factory with a
                 | document and a reference: InstanceFactory.BeginInstanceFacto
                 | ry"NameOfReference","c:/tmp/NameOfDocument.CATPart"
@@ -119,7 +119,6 @@ class InstanceFactory(Factory):
                 |
                 | Parameters:
 
-                |
         :return:
         """
         return self.instance_factory.BeginInstantiate()
@@ -139,8 +138,8 @@ class InstanceFactory(Factory):
                 | instantiation: InstanceFactory.EndInstanceFactory
                 |
                 | Parameters:
-
                 |
+
         :return:
         """
         return self.instance_factory.EndInstanceFactory()
@@ -161,8 +160,8 @@ class InstanceFactory(Factory):
                 | InstanceFactory.EndInstantiate
                 |
                 | Parameters:
-
                 |
+
         :return:
         """
         return self.instance_factory.EndInstantiate()
@@ -186,8 +185,8 @@ class InstanceFactory(Factory):
                 | Parameters:
                 | iName
                 |    The name of the parameter.
-
-                |                | Examples:
+                |
+                | Examples:
                 | The following example retrieves a parameter on the
                 | reference: Set parameter =
                 | InstanceFactory.GetParameter("Parameter1")
@@ -216,8 +215,8 @@ class InstanceFactory(Factory):
                 | Set Instance = InstanceFactory.Instantiate
                 |
                 | Parameters:
-
                 |
+
         :return:
         """
         return self.instance_factory.Instantiate()
@@ -245,8 +244,8 @@ class InstanceFactory(Factory):
                 |    All types of 
                 | 
                 |  object are possibly supported.
-
-                |                | Examples:
+                |
+                | Examples:
                 | The following example sets a value to an input of the
                 | reference: The input is a point and its name is Input1.
                 | InstanceFactory.PutInputData "Input1",point1

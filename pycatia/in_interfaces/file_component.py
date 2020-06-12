@@ -9,7 +9,7 @@
         
 """
 
-from pycatia.in_interfaces.folder import Folder
+
 from pycatia.system_interfaces.any_object import AnyObject
 
 
@@ -55,7 +55,7 @@ class FileComponent(AnyObject):
 
         :return: Folder
         """
-
+        from pycatia.in_interfaces.folder import Folder
         return Folder(self.file_component.ParentFolder)
 
     @parent_folder.setter

@@ -1045,19 +1045,8 @@ class VisPropertySet(AnyObject):
                 |                 8 : a dot
                 |                 9 : a smalldot (one pixel)
                 |                 10 : a kind of arrow which points to the bottom-left
-                | 
-                |                      /
-                |                 |  /
-                |                 |/__
                 |                 
-                | 
-                |                 11 : a kind of arrow which points to the top-rigth
-                | 
-                |                     ___ 
-                |                       /| 
-                |                     /  |
-                |                   /
-                |                 
+                |                 11 : a kind of arrow which points to the top-right
                 | 
                 |                 FULLCIRCLE2 : a big 12
                 |                 FULLSQUARE2 : a big 13
