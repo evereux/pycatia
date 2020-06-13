@@ -1,6 +1,9 @@
 # Changelog
 
 
+## 0.3.1
+* Added basic logging.
+
 ## 0.3.0a
 * Major restructuring. This will break everything again. Sorry! But ... 
   this structure should now be stable. As always, see the examples.

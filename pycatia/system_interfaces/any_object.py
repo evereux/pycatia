@@ -9,8 +9,10 @@
 
 """
 
+from pycatia.base_interfaces.pycatia import PyCATIA
 
-class AnyObject:
+
+class AnyObject(PyCATIA):
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
@@ -29,6 +31,7 @@ class AnyObject:
     """
 
     def __init__(self, com_object):
+        super().__init__()
         self.com_object = com_object
 
     @property
