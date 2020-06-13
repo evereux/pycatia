@@ -9,13 +9,14 @@
 
 """
 
+from pycatia.base_interfaces.pycatia import PyCATIA
 from pycatia.system_interfaces.any_object import AnyObject
 
 
 # from pycatia.system_interfaces.cat_base_dispatch import CATBaseDispatch
 
 
-class Collection:
+class Collection(PyCATIA):
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-10 10:58:07.270911)
@@ -33,6 +34,7 @@ class Collection:
     """
 
     def __init__(self, com_object, child_object=AnyObject):
+        super().__init__()
         self.collection = com_object
         self.com_object = com_object
         self.child_object = child_object
