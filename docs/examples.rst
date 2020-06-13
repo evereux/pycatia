@@ -95,3 +95,10 @@ Move first child in product.
 
 .. literalinclude:: ../example_13.py
 
+Example 14
+----------
+
+Using logging.
+
+.. literalinclude:: ../example_14.py
+

@@ -42,7 +42,7 @@ class Documents(Collection):
             Func Add( CATBSTR  docType) As Document
 
             Creates a Document object and adds it to the documents collection. This document becomes the active one,
-            and a window is created to accomodate it which becomes the active window.
+            and a window is created to accommodate it which becomes the active window.
 
             | Parameters:
             |   docType
@@ -67,6 +67,8 @@ class Documents(Collection):
         document_types = ['Part', 'Product', 'Drawing']
         if document_type not in document_types:
             raise ValueError(f'Document type must be in [{document_types}]')
+
+        self.logger.info(f'Creating a new "{document_type}".')
 
         return self.child_object(self.documents.Add(document_type))
 
@@ -230,6 +232,7 @@ class Documents(Collection):
         file_name = os.path.abspath(file_name)
 
         try:
+            self.logger.info(f'Opening document "{file_name}".')
             self.documents.Open(file_name)
         except com_error:
             raise CATIAApplicationException(
@@ -253,8 +256,7 @@ class Documents(Collection):
                 | to move to C++ and use the CAA methods CATDocumentServices::Open and
                 | CATDocumentServices::SaveAs with the same file name as the initial
                 | one.
-
-
+                |
                 | Parameters:
                 | iFileName
                 |    The name of the file containing the document
@@ -262,8 +264,7 @@ class Documents(Collection):
                 |
                 |  Returns:
                 |   The retrieved document
-
-
+                |
                 | Examples:
                 |
                 |

@@ -219,7 +219,8 @@ class Document(AnyObject):
             |  Doc.Close()
 
         """
-
+        self.logger.info(f'Closing current active document.'
+                         f' CATIA will prompt you to save if you haven\'t already done so.')
         self.document.Close()
 
     def save(self):
@@ -237,7 +238,7 @@ class Document(AnyObject):
             | Doc.Save()
 
         """
-
+        self.logger.info(f'Saving the current document.')
         self.document.Save()
 
     def save_as(self, file_name, overwrite=False):
