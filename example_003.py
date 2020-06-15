@@ -11,14 +11,13 @@
 import csv
 
 from pycatia import catia
-from pycatia.space_analyses_interfaces.spa_workbench import SPAWorkbench
 
 documents = catia.documents
 documents.open(r'tests\CF_catia_measurable_part.CATPart')
 
 document = catia.active_document
 
-spa_workbench = SPAWorkbench(document.document)
+spa_workbench = document.spa_workbench()
 part = document.part()
 
 selected = document.search_for_items(document, ['Point'])

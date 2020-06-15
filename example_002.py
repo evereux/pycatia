@@ -4,18 +4,17 @@
 
     Example 2:
 
-    Get all the points in the geometrical set 'Points' and print the co-ordinate.
+    Get all the points in the geometrical set 'Points' and output co-ordinate to console.
 
 """
 from pycatia import catia
-from pycatia.space_analyses_interfaces.spa_workbench import SPAWorkbench
 
 documents = catia.documents
 documents.open(r'tests\CF_catia_measurable_part.CATPart')
 
 document = catia.active_document
 part = document.part()
-spa_workbench = SPAWorkbench(document.document)
+spa_workbench = document.spa_workbench()
 
 hybrid_bodies = part.hybrid_bodies
 hybrid_body = hybrid_bodies.get_item_by_name('Points')

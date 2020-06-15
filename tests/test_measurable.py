@@ -7,7 +7,6 @@
 
 from pycatia import CATIADocHandler
 from pycatia.enumeration.enumeration_types import cat_measurable_name
-from pycatia.space_analyses_interfaces.spa_workbench import SPAWorkbench
 from tests.source_files import cat_part_measurable
 
 
@@ -27,7 +26,7 @@ def round_tuple(tuple_object, decimal_places=6):
 def test_area():
     with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
-        spa_workbench = SPAWorkbench(document.com_object)
+        spa_workbench = document.spa_workbench()
 
         part = document.part()
         bodies = part.bodies
@@ -45,7 +44,7 @@ def test_area():
 def test_geometry_name():
     with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
-        spa_workbench = SPAWorkbench(document.com_object)
+        spa_workbench = document.spa_workbench()
 
         part = document.part()
         bodies = part.bodies
@@ -60,7 +59,7 @@ def test_geometry_name():
 def test_length():
     with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
-        spa_workbench = SPAWorkbench(document.com_object)
+        spa_workbench = document.spa_workbench()
 
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
@@ -78,7 +77,7 @@ def test_length():
 def test_perimeter():
     with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
-        spa_workbench = SPAWorkbench(document.com_object)
+        spa_workbench = document.spa_workbench()
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name('Surfaces')
@@ -95,7 +94,7 @@ def test_perimeter():
 def test_radius():
     with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
-        spa_workbench = SPAWorkbench(document.com_object)
+        spa_workbench = document.spa_workbench()
 
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
@@ -112,7 +111,7 @@ def test_radius():
 def test_angle_between():
     with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
-        spa_workbench = SPAWorkbench(document.com_object)
+        spa_workbench = document.spa_workbench()
 
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
@@ -137,7 +136,7 @@ def test_get_axis():
 
     with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
-        spa_workbench = SPAWorkbench(document.com_object)
+        spa_workbench = document.spa_workbench()
 
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
@@ -160,7 +159,7 @@ def test_get_axis_system():
         document = handler.document
 
         part = document.part()
-        spa_workbench = SPAWorkbench(document.com_object)
+        spa_workbench = document.spa_workbench()
 
         axis_systems = part.axis_systems
         axis = axis_systems.item(1)
@@ -203,7 +202,7 @@ def test_get_direction():
         document = handler.document
 
         part = document.part()
-        spa_workbench = SPAWorkbench(document.com_object)
+        spa_workbench = document.spa_workbench()
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name('Lines')
         line1 = hybrid_body.hybrid_shapes.item(1)
@@ -225,7 +224,7 @@ def test_get_minimum_distance():
         document = handler.document
 
         part = document.part()
-        spa_workbench = SPAWorkbench(document.com_object)
+        spa_workbench = document.spa_workbench()
 
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name('Lines')
@@ -248,7 +247,7 @@ def test_get_minimum_distance_points():
         document = handler.document
 
         part = document.part()
-        spa_workbench = SPAWorkbench(document.com_object)
+        spa_workbench = document.spa_workbench()
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name('Points')
         point1 = hybrid_body.hybrid_shapes.item(1)
@@ -278,7 +277,7 @@ def test_get_plane():
     with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
 
-        spa_workbench = SPAWorkbench(document.com_object)
+        spa_workbench = document.spa_workbench()
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name('Planes')
@@ -306,7 +305,7 @@ def test_get_plane():
 def test_get_point():
     with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
-        spa_workbench = SPAWorkbench(document.com_object)
+        spa_workbench = document.spa_workbench()
 
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
@@ -329,7 +328,7 @@ def test_get_point():
 def test_get_points_on_axis():
     with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
-        spa_workbench = SPAWorkbench(document.com_object)
+        spa_workbench = document.spa_workbench()
 
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
@@ -358,7 +357,7 @@ def test_get_points_on_axis():
 def test_get_points_on_curve():
     with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
-        spa_workbench = SPAWorkbench(document.com_object)
+        spa_workbench = document.spa_workbench()
 
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
@@ -387,7 +386,7 @@ def test_get_points_on_curve():
 def test_volume():
     with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
-        spa_workbench = SPAWorkbench(document.com_object)
+        spa_workbench = document.spa_workbench()
 
         part = document.part()
         bodies = part.bodies
@@ -405,7 +404,7 @@ def test_volume():
 def test_centre_of_gravity():
     with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
-        spa_workbench = SPAWorkbench(document.com_object)
+        spa_workbench = document.spa_workbench()
 
         part = document.part()
         bodies = part.bodies
@@ -429,7 +428,7 @@ def test_centre_of_gravity():
 def test_angle():
     with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
-        spa_workbench = SPAWorkbench(document.com_object)
+        spa_workbench = document.spa_workbench()
 
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
@@ -448,7 +447,7 @@ def test_center():
     with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
 
-        spa_workbench = SPAWorkbench(document.com_object)
+        spa_workbench = document.spa_workbench()
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name('Arcs')
