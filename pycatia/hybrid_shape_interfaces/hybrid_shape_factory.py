@@ -3685,7 +3685,11 @@ class HybridShapeFactory(Factory):
         :param Reference i_curve:
         :return: HybridShapePointCenter
         """
-        return HybridShapePointCenter(self.hybrid_shape_factory.AddNewPointCenter(i_curve.com_object))
+        return HybridShapePointCenter(
+            self.hybrid_shape_factory.AddNewPointCenter(
+                i_curve.com_object
+            )
+        )
 
     def add_new_point_coord(self, i_x, i_y, i_z):
         """

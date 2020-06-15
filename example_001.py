@@ -4,8 +4,7 @@
 
     Example 1:
 
-    Get the center
-    of gravity for the part body 'PartBody'.
+    Get the center of gravity for the part body 'PartBody'.
 
 """
 
