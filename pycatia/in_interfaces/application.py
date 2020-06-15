@@ -1,8 +1,11 @@
 #! /usr/bin/python3.6
 # module initially auto generated using V5Automation.chm from CATIA R25
 
+from pywintypes import com_error
+
 from pathlib import Path
 
+from pycatia.exception_handling.exceptions import CATIAApplicationException
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.in_interfaces.document import Document
 from pycatia.in_interfaces.documents import Documents
@@ -68,7 +71,10 @@ class Application(AnyObject):
 
         :return: Document()
         """
-        return Document(self.application.ActiveDocument)
+        try:
+            return Document(self.application.ActiveDocument)
+        except com_error:
+            raise CATIAApplicationException('Is there an active document?')
 
     @property
     def active_printer(self):

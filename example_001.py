@@ -4,13 +4,11 @@
 
     Example 1:
 
-    Get the center
-    of gravity for the part body 'PartBody'.
+    Get the center of gravity for the part body 'PartBody'.
 
 """
 
 from pycatia import catia
-from pycatia.space_analyses_interfaces.spa_workbench import SPAWorkbench
 
 documents = catia.documents
 documents.open(r'tests\CF_catia_measurable_part.CATPart')
@@ -37,7 +35,7 @@ body = bodies.item(1)
 # >>> Body(name="AnotherPartBody")
 
 # initialise the spa workbench
-spa_workbench = SPAWorkbench(document.document)
+spa_workbench = document.spa_workbench()
 # create a reference to measure.
 reference = part.create_reference_from_object(body)
 
