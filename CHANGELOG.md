@@ -3,6 +3,8 @@
 
 ## 0.3.1
 * Added basic logging.
+* Changed Point.point property name to prevent breakage of child classes.
+* Added spa_workbench method to Document().
 
 ## 0.3.0a
 * Major restructuring. This will break everything again. Sorry! But ... 
