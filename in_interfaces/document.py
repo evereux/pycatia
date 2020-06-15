@@ -8,6 +8,7 @@ from pywintypes import com_error
 from pycatia.exception_handling import CATIAApplicationException
 from pycatia.mec_mod_interfaces.part import Part
 from pycatia.product_structure_interfaces.product import Product
+from pycatia.space_analyses_interfaces.spa_workbench import SPAWorkbench
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.drafting_interfaces.drawing_root import DrawingRoot
 
@@ -313,6 +314,15 @@ class Document(AnyObject):
             selected.append(AnyObject(selection.Item(i + 1).Value))
 
         return selected
+
+    def spa_workbench(self):
+        """
+
+        Returns:
+
+        """
+
+        return SPAWorkbench(self.com_object)
 
     def __repr__(self):
         return f'Document(name="{self.name}")'
