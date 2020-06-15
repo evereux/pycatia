@@ -4,7 +4,6 @@
 from pycatia import CATIADocHandler
 
 from tests.source_files import cat_part_3
-from tests.source_files import cat_part_blank
 from tests.source_files import design_table_1
 
 
@@ -18,7 +17,7 @@ def test_relations_count():
 
 
 def test_relations_create_check():
-    with CATIADocHandler(cat_part_blank) as handler:
+    with CATIADocHandler(new_document='Part') as handler:
         document = handler.document
         part = document.part()
         parameters = part.parameters
@@ -36,7 +35,7 @@ def test_relations_create_check():
 
 
 def test_relations_create_design_table():
-    with CATIADocHandler(cat_part_blank) as handler:
+    with CATIADocHandler(new_document='Part') as handler:
         document = handler.document
         part = document.part()
         relations = part.relations
@@ -47,7 +46,7 @@ def test_relations_create_design_table():
 
 
 def test_relations_create_formula():
-    with CATIADocHandler(cat_part_blank) as handler:
+    with CATIADocHandler(new_document='Part') as handler:
         name = "new-formula"
         comment = "this is a comment"
 
@@ -72,7 +71,7 @@ def test_relations_create_formula():
 
 
 def test_relations_create_horizontal_design_table():
-    with CATIADocHandler(cat_part_blank) as handler:
+    with CATIADocHandler(new_document='Part') as handler:
         document = handler.document
         part = document.part()
         relations = part.relations
@@ -84,7 +83,7 @@ def test_relations_create_horizontal_design_table():
 
 
 def test_relations_create_law():
-    with CATIADocHandler(cat_part_blank) as handler:
+    with CATIADocHandler(new_document='Part') as handler:
         document = handler.document
         part = document.part()
         relations = part.relations
@@ -95,7 +94,7 @@ def test_relations_create_law():
 
 
 def test_relations_create_program():
-    with CATIADocHandler(cat_part_blank) as handler:
+    with CATIADocHandler(new_document='Part') as handler:
         document = handler.document
         part = document.part()
         relations = part.relations
@@ -106,7 +105,7 @@ def test_relations_create_program():
 
 
 def test_relations_create_rule_base():
-    with CATIADocHandler(cat_part_blank) as handler:
+    with CATIADocHandler(new_document='Part') as handler:
         document = handler.document
         part = document.part()
         relations = part.relations
@@ -117,7 +116,7 @@ def test_relations_create_rule_base():
 
 
 def test_relations_create_set_of_equations():
-    with CATIADocHandler(cat_part_blank) as handler:
+    with CATIADocHandler(new_document='Part') as handler:
         document = handler.document
         part = document.part()
         parameters = part.parameters
@@ -133,7 +132,7 @@ def test_relations_create_set_of_equations():
 
 
 def test_relations_create_set_of_relations():
-    with CATIADocHandler(cat_part_blank) as handler:
+    with CATIADocHandler(new_document='Part') as handler:
         document = handler.document
         part = document.part()
         relations = part.relations
