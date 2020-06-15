@@ -55,7 +55,7 @@ def test_line_point_point():
         part.update()
 
         line_ref = part.create_reference_from_object(line)
-        spa_wb = SPAWorkbench(document.com_object)
+        spa_wb = document.spa_workbench()
         measurable = spa_wb.get_measurable(line_ref)
 
         assert measurable.length == length
