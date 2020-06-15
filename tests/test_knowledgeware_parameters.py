@@ -8,7 +8,6 @@ from pycatia.knowledge_interfaces.int_param import IntParam
 from pycatia.knowledge_interfaces.str_param import StrParam
 from pycatia.knowledge_interfaces.real_param import RealParam
 from tests.source_files import cat_part_3
-from tests.source_files import cat_part_blank
 
 
 def test_parameters_name():
@@ -34,43 +33,43 @@ def test_all_parameters():
 
 
 def test_create_boolean():
-    with CATIADocHandler(cat_part_blank) as handler:
+    with CATIADocHandler(new_document='Part') as handler:
         document = handler.document
         part = document.part()
         parameters = part.parameters
 
         new_boolean_parm = parameters.create_boolean('new_boolean', True)
 
-        assert new_boolean_parm.name == r'CF_Part_Blank\new_boolean'
+        assert new_boolean_parm.name == rf'{part.name}\new_boolean'
         assert new_boolean_parm.value is True
 
 
 def test_create_dimension():
-    with CATIADocHandler(cat_part_blank) as handler:
+    with CATIADocHandler(new_document='Part') as handler:
         document = handler.document
         part = document.part()
         parameters = part.parameters
 
         new_dimension_parm = parameters.create_dimension('new_dimension', "length", 30.1)
 
-        assert new_dimension_parm.name == r'CF_Part_Blank\new_dimension'
+        assert new_dimension_parm.name == rf'{part.name}\new_dimension'
         assert new_dimension_parm.value == 30.1
 
 
 def test_create_int():
-    with CATIADocHandler(cat_part_blank) as handler:
+    with CATIADocHandler(new_document='Part') as handler:
         document = handler.document
         part = document.part()
         parameters = part.parameters
 
         new_int_parm = parameters.create_integer('new_int', 30)
 
-        assert new_int_parm.name == r'CF_Part_Blank\new_int'
+        assert new_int_parm.name == rf'{part.name}\new_int'
         assert new_int_parm.value == 30
 
 
 def test_create_list():
-    with CATIADocHandler(cat_part_blank) as handler:
+    with CATIADocHandler(new_document='Part') as handler:
         document = handler.document
         part = document.part()
         parameters = part.parameters
@@ -81,7 +80,7 @@ def test_create_list():
 
 
 def test_count_parameters():
-    with CATIADocHandler(cat_part_blank) as handler:
+    with CATIADocHandler(new_document='Part') as handler:
         document = handler.document
         part = document.part()
         parameters = part.parameters
@@ -90,19 +89,19 @@ def test_count_parameters():
 
 
 def test_create_real():
-    with CATIADocHandler(cat_part_blank) as handler:
+    with CATIADocHandler(new_document='Part') as handler:
         document = handler.document
         part = document.part()
         parameters = part.parameters
 
         new_list = parameters.create_real('new_real', 5.4)
 
-        assert new_list.name == r'CF_Part_Blank\new_real'
+        assert new_list.name == rf'{part.name}\new_real'
         assert new_list.value == 5.4
 
 
 def test_create_parameters_set():
-    with CATIADocHandler(cat_part_blank) as handler:
+    with CATIADocHandler(new_document='Part') as handler:
         document = handler.document
         part = document.part()
         parameters = part.parameters
@@ -113,19 +112,19 @@ def test_create_parameters_set():
 
 
 def test_create_string():
-    with CATIADocHandler(cat_part_blank) as handler:
+    with CATIADocHandler(new_document='Part') as handler:
         document = handler.document
         part = document.part()
         parameters = part.parameters
 
         new_string = parameters.create_string('new_string', "this is a string")
 
-        assert new_string.name == r'CF_Part_Blank\new_string'
+        assert new_string.name == rf'{part.name}\new_string'
         assert new_string.value == "this is a string"
 
 
 def test_get_name_to_use_in_relation():
-    with CATIADocHandler(cat_part_blank) as handler:
+    with CATIADocHandler(new_document='Part') as handler:
         document = handler.document
         part = document.part()
         parameters = part.parameters
@@ -137,7 +136,7 @@ def test_get_name_to_use_in_relation():
 
 
 def test_has_parameters():
-    with CATIADocHandler(cat_part_blank) as handler:
+    with CATIADocHandler(new_document='Part') as handler:
         document = handler.document
         part = document.part()
         parameters = part.parameters
@@ -146,7 +145,7 @@ def test_has_parameters():
 
 
 def test_item():
-    with CATIADocHandler(cat_part_blank) as handler:
+    with CATIADocHandler(new_document='Part') as handler:
         document = handler.document
         part = document.part()
         parameters = part.parameters
@@ -175,7 +174,7 @@ def test_sub_list():
 
 
 def test_remove():
-    with CATIADocHandler(cat_part_blank) as handler:
+    with CATIADocHandler(new_document='Part') as handler:
         document = handler.document
         part = document.part()
         parameters = part.parameters
