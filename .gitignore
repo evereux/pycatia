@@ -128,3 +128,4 @@ quick_n_dirty.py
 
 *.ipynb
 /inspections/
+.vscode
