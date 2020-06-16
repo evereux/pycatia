@@ -4,45 +4,45 @@ sketcher_interfaces
 .. highlight:: console
 
 
-axis2_d
+axis_2D
 -------
 
-.. automodule:: pycatia.sketcher_interfaces.axis2_d
+.. automodule:: pycatia.sketcher_interfaces.axis_2D
     :members:
 
 
-circle2_d
+circle_2D
 ---------
 
-.. automodule:: pycatia.sketcher_interfaces.circle2_d
+.. automodule:: pycatia.sketcher_interfaces.circle_2D
     :members:
 
 
-control_point2_d
+control_point_2D
 ----------------
 
-.. automodule:: pycatia.sketcher_interfaces.control_point2_d
+.. automodule:: pycatia.sketcher_interfaces.control_point_2D
     :members:
 
 
-curve2_d
+curve_2D
 --------
 
-.. automodule:: pycatia.sketcher_interfaces.curve2_d
+.. automodule:: pycatia.sketcher_interfaces.curve_2D
     :members:
 
 
-ellipse2_d
+ellipse_2D
 ----------
 
-.. automodule:: pycatia.sketcher_interfaces.ellipse2_d
+.. automodule:: pycatia.sketcher_interfaces.ellipse_2D
     :members:
 
 
-factory2_d
+factory_2D
 ----------
 
-.. automodule:: pycatia.sketcher_interfaces.factory2_d
+.. automodule:: pycatia.sketcher_interfaces.factory_2D
     :members:
 
 
@@ -53,38 +53,38 @@ geometric_element
     :members:
 
 
-geometry2_d
+geometry_2D
 -----------
 
-.. automodule:: pycatia.sketcher_interfaces.geometry2_d
+.. automodule:: pycatia.sketcher_interfaces.geometry_2D
     :members:
 
 
-hyperbola2_d
+hyperbola_2D
 ------------
 
-.. automodule:: pycatia.sketcher_interfaces.hyperbola2_d
+.. automodule:: pycatia.sketcher_interfaces.hyperbola_2D
     :members:
 
 
-line2_d
+line_2D
 -------
 
-.. automodule:: pycatia.sketcher_interfaces.line2_d
+.. automodule:: pycatia.sketcher_interfaces.line_2D
     :members:
 
 
-parabola2_d
+parabola_2D
 -----------
 
-.. automodule:: pycatia.sketcher_interfaces.parabola2_d
+.. automodule:: pycatia.sketcher_interfaces.parabola_2D
     :members:
 
 
-point2_d
+point_2D
 --------
 
-.. automodule:: pycatia.sketcher_interfaces.point2_d
+.. automodule:: pycatia.sketcher_interfaces.point_2D
     :members:
 
 
@@ -95,10 +95,10 @@ sketch
     :members:
 
 
-spline2_d
+spline_2D
 ---------
 
-.. automodule:: pycatia.sketcher_interfaces.spline2_d
+.. automodule:: pycatia.sketcher_interfaces.spline_2D
     :members:
 
 
