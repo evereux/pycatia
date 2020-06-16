@@ -3720,6 +3720,23 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapePointCoord(self.hybrid_shape_factory.AddNewPointCoord(i_x, i_y, i_z))
 
+    def add_new_point_coords(self, coord_list):
+        """
+        coord_list must be a list of iterables of length 3.
+
+        Example: coord_list = [[0, 0, 1], [0, 1, 0]]
+
+        :param list() coord_list:
+        :returns: list[HybridShapePointCoord]
+        """
+
+        r = []
+
+        for coord in coord_list:
+            r.append(self.add_new_point_coord(coord[0], coord[1], coord[2]))
+
+        return r
+
     def add_new_point_coord_with_reference(self, i_x, i_y, i_z, i_pt):
         """
         .. note::
