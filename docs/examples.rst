@@ -102,3 +102,17 @@ Using logging.
 
 .. literalinclude:: ../example_014.py
 
+Example 15
+----------
+
+Draw a line between two points.
+
+.. literalinclude:: ../example_015.py
+
+Example 16
+----------
+
+Creates a square in a sketch and fully constrains it. Sketch then used to pad.
+
+.. literalinclude:: ../example_016.py
+
