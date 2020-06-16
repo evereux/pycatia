@@ -88,6 +88,13 @@ file_access_statistics_setting_att
     :members:
 
 
+general_statistics_setting_att [conflicted]
+-------------------------------------------
+
+.. automodule:: pycatia.system_interfaces.general_statistics_setting_att [conflicted]
+    :members:
+
+
 general_statistics_setting_att
 ------------------------------
 
@@ -120,6 +127,13 @@ license_setting_att
 -------------------
 
 .. automodule:: pycatia.system_interfaces.license_setting_att
+    :members:
+
+
+memory_warning_setting_att [conflicted]
+---------------------------------------
+
+.. automodule:: pycatia.system_interfaces.memory_warning_setting_att [conflicted]
     :members:
 
 
