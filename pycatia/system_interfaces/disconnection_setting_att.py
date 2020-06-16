@@ -94,7 +94,7 @@ class DisconnectionSettingAtt(SettingController):
                 | 
                 |     Retrieves informations about the activation mode of automatic
                 |     disconnection.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param str admin_level:
         :param str o_locked:
@@ -111,7 +111,7 @@ class DisconnectionSettingAtt(SettingController):
                 | 
                 |     Retrieves environment informations for inactivity
                 |     duration.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param str admin_level:
         :param str o_locked:
@@ -127,7 +127,7 @@ class DisconnectionSettingAtt(SettingController):
                 | 
                 |     Locks or unlocks the activation mode of automatic
                 |     disconnection.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
         :return: None
@@ -156,7 +156,7 @@ class DisconnectionSettingAtt(SettingController):
                 | o Sub SetInactivityDurationLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the inactivity duration.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
         :return: None

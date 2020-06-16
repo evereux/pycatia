@@ -15,7 +15,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeCircle(HybridShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -357,4 +356,4 @@ class HybridShapeCircle(HybridShape):
         return self.hybrid_shape_circle.SetLimitation(i_limitation)
 
     def __repr__(self):
-        return f'HybridShapeCircle(name="{ self.name }")'
+        return f'HybridShapeCircle(name="{self.name}")'

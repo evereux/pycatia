@@ -242,7 +242,7 @@ class RealParam(Parameter):
                 | o Property Value() As double
                 | 
                 |     Returns or sets the value of the real parameter. Units are expressed in the
-                |     IS unit system, except for lengthes expressed in millimeters, and angles
+                |     IS unit system, except for lengths expressed in millimeters, and angles
                 |     expressed in decimal degrees.
                 | 
                 |     Example:

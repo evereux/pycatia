@@ -27,8 +27,8 @@ class PcsStatisticsSettingAtt(GeneralStatisticsSettingAtt):
                 |                         System.GeneralStatisticsSettingAtt
                 |                             PCSStatisticsSettingAtt
                 | 
-                | Interface for PCS statistic Controler
-                | Role: the PCS statistics controler manages the values of all or only a part of
+                | Interface for PCS statistic Controller
+                | Role: the PCS statistics controller manages the values of all or only a part of
                 | the attributes available for the thematic.
                 | 
                 | For the definitions of methods and variables common to every thematic, see the

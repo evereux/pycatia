@@ -219,7 +219,7 @@ class HybridShapeLinePtPt(Line):
                 |     Parameters:
                 | 
                 |         oSym
-                |             Symetry flag
+                |             Symmetry flag
 
         :return: bool
         """
@@ -269,7 +269,7 @@ class HybridShapeLinePtPt(Line):
                 |     Parameters:
                 | 
                 |         iSym
-                |             Symetry flag
+                |             Symmetry flag
 
         :param bool i_sym:
         :return: None

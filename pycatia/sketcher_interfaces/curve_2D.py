@@ -8,8 +8,8 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia.sketcher_interfaces.geometry2_d import Geometry2D
-from pycatia.sketcher_interfaces.point2_d import Point2D
+from pycatia.sketcher_interfaces.geometry_2D import Geometry2D
+from pycatia.sketcher_interfaces.point_2D import Point2D
 
 
 class Curve2D(Geometry2D):
@@ -75,12 +75,12 @@ class Curve2D(Geometry2D):
         return Point2D(self.curve2_d.EndPoint)
 
     @end_point.setter
-    def end_point(self, value):
+    def end_point(self, point_2D):
         """
-        :param Point2D value:
+        :param Point2D point_2D:
         """
 
-        self.curve2_d.EndPoint = value
+        self.curve2_d.EndPoint = point_2D.com_object
 
     @property
     def period(self):
@@ -123,12 +123,12 @@ class Curve2D(Geometry2D):
         return Point2D(self.curve2_d.StartPoint)
 
     @start_point.setter
-    def start_point(self, value):
+    def start_point(self, point_2D):
         """
-        :param Point2D value:
+        :param Point2D point_2D:
         """
 
-        self.curve2_d.StartPoint = value
+        self.curve2_d.StartPoint = point_2D.com_object
 
     def get_curvature(self, i_param, o_curvature):
         """

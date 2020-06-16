@@ -26,8 +26,8 @@ class GlobalStatisticsSettingAtt(SettingController):
                 |                     System.SettingController
                 |                         GlobalStatisticsSettingAtt
                 | 
-                | Interface for Global statistic Controler
-                | Role: the global statistics controler manages the values of all or only a part
+                | Interface for Global statistic Controller
+                | Role: the global statistics controller manages the values of all or only a part
                 | of the attributes available for all the statistics thematics.
     
     """
@@ -160,7 +160,7 @@ class GlobalStatisticsSettingAtt(SettingController):
                 | 
                 |     Retrieves environment informations for the global statistics
                 |     parameters.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param str admin_level:
         :param str o_locked:

@@ -152,5 +152,13 @@ class HybridBody(AnyObject):
         """
         self.hybrid_body.AppendHybridShape(i_hybrid_shape.com_object)
 
+    def append_hybrid_shapes(self, shapes):
+        """
+        :param list(HybridShape) shapes:
+        :return:
+        """
+        for shape in shapes:
+            self.append_hybrid_shape(shape)
+
     def __repr__(self):
         return f'HybridBody(name="{self.name}")'

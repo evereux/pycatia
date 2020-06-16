@@ -271,20 +271,20 @@ class ShapeFactory(Factory):
                 |         the first chamfer element iObjectToChamfer, when it is an edge
                 |         
                 |     iMode
-                |         Controls if the chamfer is defined by two lengthes, or by an angle and
+                |         Controls if the chamfer is defined by two lengths, or by an angle and
                 |         a length
                 |         The value of this argument changes the way the arguments iLength1 and
                 |         iLength2OrAngle should be interpreted. 
                 |     iOrientation
                 |         Defines the relative meaning of arguments iLength1 and iLength2OrAngle
-                |         when defining a chamfer by two lengthes 
+                |         when defining a chamfer by two lengths
                 |     iLength1
                 |         The first value for chamfer dimensioning. It represents the chamfer
-                |         first length if the chamfer is defined by two lengthes, or the chamfer length
+                |         first length if the chamfer is defined by two lengths, or the chamfer length
                 |         if the chamfer is defined by a length and an angle. 
                 |     iLength2OrAngle
                 |         The second value for chamfer dimensioning. It represents the chamfer
-                |         second length if the chamfer is defined by two lengthes, or the chamfer angle
+                |         second length if the chamfer is defined by two lengths, or the chamfer angle
                 |         if the chamfer is defined by a length and an angle. 
                 |     Returns:
                 |         The created chamfer

@@ -251,7 +251,7 @@ class HybridShapeLinePtDir(Line):
                 |     Parameters:
                 | 
                 |         oSym
-                |             Symetry flag
+                |             Symmetry flag
 
         :return: bool
         """
@@ -301,7 +301,7 @@ class HybridShapeLinePtDir(Line):
                 |     Parameters:
                 | 
                 |         iSym
-                |             Symetry flag
+                |             Symmetry flag
 
         :param bool i_sym:
         :return: None
