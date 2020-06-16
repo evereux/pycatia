@@ -189,7 +189,6 @@ def test_product():
         product = document.product()
         assert product.name in cat_product.name
         assert document.is_product
-        assert not document.is_part
 
 
 def test_saving():
