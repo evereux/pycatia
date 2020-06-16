@@ -32,7 +32,7 @@ class Chamfer(DressUpShape):
                 | 
                 | Represents the chamfer shape.
                 | A chamfer is made up of a list of geometrical elements to process, such as
-                | faces, and is defined using a couple of parameters, such as two lengthes, or a
+                | faces, and is defined using a couple of parameters, such as two lengths, or a
                 | length and an angle.
     
     """
@@ -92,7 +92,7 @@ class Chamfer(DressUpShape):
                 | o Property Length1() As Length (Read Only)
                 | 
                 |     Returns the chamfer first length. This is the first length if the chamfer
-                |     is defined by two lengthes, or the chamfer if the chamfer is defined by a
+                |     is defined by two lengths, or the chamfer if the chamfer is defined by a
                 |     length and an angle.
                 | 
                 |     Example:
@@ -114,7 +114,7 @@ class Chamfer(DressUpShape):
                 | o Property Length2() As Length (Read Only)
                 | 
                 |     Returns the chamfer second length. This is valid only if the chamfer is
-                |     defined using two lengthes, that is if the chamfer definition mode
+                |     defined using two lengths, that is if the chamfer definition mode
                 |     CatChamferMode is set to catTwoLengthChamfer.
                 | 
                 |     Example:
@@ -136,7 +136,7 @@ class Chamfer(DressUpShape):
                 | o Property Mode() As CatChamferMode
                 | 
                 |     Returns or sets the chamfer definition mode. The chamfer definition mode
-                |     enables the chamfer to be defined using either two lengthes or a length and an
+                |     enables the chamfer to be defined using either two lengths or a length and an
                 |     angle.
                 | 
                 |     Example:

@@ -242,7 +242,7 @@ class HybridShapeCylinder(HybridShape):
                 |     Parameters:
                 | 
                 |         iSym
-                |             Symetry flag
+                |             Symmetry flag
 
         :return: bool
         """
