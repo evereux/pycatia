@@ -78,16 +78,12 @@ def test_export_document():
 
 def test_full_name():
     """
-
-    TODO: make the assertion work whereever the respository is cloned to.
-
     :return:
     """
     with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
 
-        assert r'pycatia\tests\CF_catia_measurable_part.CATPart' in \
-               document.full_name
+        assert str(cat_part_measurable) == document.full_name
 
 
 def test_get_documents_names():
