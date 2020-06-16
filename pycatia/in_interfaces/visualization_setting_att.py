@@ -1423,26 +1423,26 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.Viz2DFixedAccuracy = value
 
     @property
-    def viz2_d_proportionnal_accuracy(self):
+    def viz2_d_proportional_accuracy(self):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property Viz2DProportionnalAccuracy() As double
+                | o Property Viz2DproportionalAccuracy() As double
                 | 
-                |     Returns the 2DProportionnalAccuracy parameter.
+                |     Returns the 2DproportionalAccuracy parameter.
 
         :return: float
         """
 
-        return self.visualization_setting_att.Viz2DProportionnalAccuracy
+        return self.visualization_setting_att.Viz2DproportionalAccuracy
 
-    @viz2_d_proportionnal_accuracy.setter
-    def viz2_d_proportionnal_accuracy(self, value):
+    @viz2_d_proportional_accuracy.setter
+    def viz2_d_proportional_accuracy(self, value):
         """
         :param float value:
         """
 
-        self.visualization_setting_att.Viz2DProportionnalAccuracy = value
+        self.visualization_setting_att.Viz2DproportionalAccuracy = value
 
     @property
     def viz3_d_accuracy_mode(self):
@@ -1511,26 +1511,26 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.Viz3DFixedAccuracy = value
 
     @property
-    def viz3_d_proportionnal_accuracy(self):
+    def viz3_d_proportional_accuracy(self):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property Viz3DProportionnalAccuracy() As double
+                | o Property Viz3DproportionalAccuracy() As double
                 | 
-                |     Returns the Viz3DProportionnalAccuracy parameter.
+                |     Returns the Viz3DproportionalAccuracy parameter.
 
         :return: float
         """
 
-        return self.visualization_setting_att.Viz3DProportionnalAccuracy
+        return self.visualization_setting_att.Viz3DproportionalAccuracy
 
-    @viz3_d_proportionnal_accuracy.setter
-    def viz3_d_proportionnal_accuracy(self, value):
+    @viz3_d_proportional_accuracy.setter
+    def viz3_d_proportional_accuracy(self, value):
         """
         :param float value:
         """
 
-        self.visualization_setting_att.Viz3DProportionnalAccuracy = value
+        self.visualization_setting_att.Viz3DproportionalAccuracy = value
 
     def get_accurate_picking_mode_info(self, io_admin_level, io_locked):
         """
@@ -2968,15 +2968,15 @@ class VisualizationSettingAtt(SettingController):
         """
         return self.visualization_setting_att.GetViz2DFixedAccuracyInfo(io_admin_level, io_locked)
 
-    def get_viz2_d_proportionnal_accuracy_info(self, io_admin_level, io_locked):
+    def get_viz2_d_proportional_accuracy_info(self, io_admin_level, io_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func GetViz2DProportionnalAccuracyInfo(CATBSTR
+                | o Func GetViz2DproportionalAccuracyInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
-                |     Retrieves information about the 2DProportionnalAccuracy setting
+                |     Retrieves information about the 2DproportionalAccuracy setting
                 |     parameter.
                 |     Refer to SettingController for a detailed description.
 
@@ -2984,7 +2984,7 @@ class VisualizationSettingAtt(SettingController):
         :param str io_locked:
         :return: bool
         """
-        return self.visualization_setting_att.GetViz2DProportionnalAccuracyInfo(io_admin_level, io_locked)
+        return self.visualization_setting_att.GetViz2DproportionalAccuracyInfo(io_admin_level, io_locked)
 
     def get_viz3_d_accuracy_mode_info(self, io_admin_level, io_locked):
         """
@@ -3037,15 +3037,15 @@ class VisualizationSettingAtt(SettingController):
         """
         return self.visualization_setting_att.GetViz3DFixedAccuracyInfo(io_admin_level, io_locked)
 
-    def get_viz3_d_proportionnal_accuracy_info(self, io_admin_level, io_locked):
+    def get_viz3_d_proportional_accuracy_info(self, io_admin_level, io_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func GetViz3DProportionnalAccuracyInfo(CATBSTR
+                | o Func GetViz3DproportionalAccuracyInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
-                |     Retrieves information about the Viz3DProportionnalAccuracy setting
+                |     Retrieves information about the Viz3DproportionalAccuracy setting
                 |     parameter.
                 |     Refer to SettingController for a detailed description.
 
@@ -3053,7 +3053,7 @@ class VisualizationSettingAtt(SettingController):
         :param str io_locked:
         :return: bool
         """
-        return self.visualization_setting_att.GetViz3DProportionnalAccuracyInfo(io_admin_level, io_locked)
+        return self.visualization_setting_att.GetViz3DproportionalAccuracyInfo(io_admin_level, io_locked)
 
     def put_back_face_culling_mode(self, i_back_face_culling_mode):
         """
@@ -5400,30 +5400,30 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_viz2_d_proportionnal_accuracy_lock(self, i_locked):
+    def set_viz2_d_proportional_accuracy_lock(self, i_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub SetViz2DProportionnalAccuracyLock(boolean iLocked)
+                | o Sub SetViz2DproportionalAccuracyLock(boolean iLocked)
                 | 
-                |     Locks or unlocks the 2DProportionnalAccuracy setting
+                |     Locks or unlocks the 2DproportionalAccuracy setting
                 |     parameter.
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
         :return: None
         """
-        return self.visualization_setting_att.SetViz2DProportionnalAccuracyLock(i_locked)
+        return self.visualization_setting_att.SetViz2DproportionalAccuracyLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_viz2_d_proportionnal_accuracy_lock'
+        # # vba_function_name = 'set_viz2_d_proportional_accuracy_lock'
         # # vba_code = """
-        # # Public Function set_viz2_d_proportionnal_accuracy_lock(visualization_setting_att)
+        # # Public Function set_viz2_d_proportional_accuracy_lock(visualization_setting_att)
         # #     Dim iLocked (2)
-        # #     visualization_setting_att.SetViz2DProportionnalAccuracyLock iLocked
-        # #     set_viz2_d_proportionnal_accuracy_lock = iLocked
+        # #     visualization_setting_att.SetViz2DproportionalAccuracyLock iLocked
+        # #     set_viz2_d_proportional_accuracy_lock = iLocked
         # # End Function
         # # """
 
@@ -5517,30 +5517,30 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_viz3_d_proportionnal_accuracy_lock(self, i_locked):
+    def set_viz3_d_proportional_accuracy_lock(self, i_locked):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub SetViz3DProportionnalAccuracyLock(boolean iLocked)
+                | o Sub SetViz3DproportionalAccuracyLock(boolean iLocked)
                 | 
-                |     Locks or unlocks the Viz3DProportionnalAccuracy setting
+                |     Locks or unlocks the Viz3DproportionalAccuracy setting
                 |     parameter.
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
         :return: None
         """
-        return self.visualization_setting_att.SetViz3DProportionnalAccuracyLock(i_locked)
+        return self.visualization_setting_att.SetViz3DproportionalAccuracyLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_viz3_d_proportionnal_accuracy_lock'
+        # # vba_function_name = 'set_viz3_d_proportional_accuracy_lock'
         # # vba_code = """
-        # # Public Function set_viz3_d_proportionnal_accuracy_lock(visualization_setting_att)
+        # # Public Function set_viz3_d_proportional_accuracy_lock(visualization_setting_att)
         # #     Dim iLocked (2)
-        # #     visualization_setting_att.SetViz3DProportionnalAccuracyLock iLocked
-        # #     set_viz3_d_proportionnal_accuracy_lock = iLocked
+        # #     visualization_setting_att.SetViz3DproportionalAccuracyLock iLocked
+        # #     set_viz3_d_proportional_accuracy_lock = iLocked
         # # End Function
         # # """
 

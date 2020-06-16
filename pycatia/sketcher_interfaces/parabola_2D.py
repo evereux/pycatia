@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia.sketcher_interfaces.curve2_d import Curve2D
+from pycatia.sketcher_interfaces.curve_2D import Curve2D
 
 
 class Parabola2D(Curve2D):

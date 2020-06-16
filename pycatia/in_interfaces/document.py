@@ -171,8 +171,10 @@ class Document(AnyObject):
         """
         :return: Part()
         """
-
-        return Part(self.document.Part)
+        try:
+            return Part(self.document.Part)
+        except AttributeError:
+            raise CATIAApplicationException('Is document .CATPart?')
 
     def product(self):
         """

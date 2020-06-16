@@ -162,7 +162,7 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
                 |         defined and active ELSE the method FAILS (to avoid this,
                 |         getMinimumValueActivity/getMaximumValueActivity can be called prior to calling
                 |         getMinimumValue/getMaximumValue) Signature with double works for angles as well
-                |         as for lengthes / EXPRESSED in MODEL UNIT (mm/deg) Signatures with CATIALength
+                |         as for lengths / EXPRESSED in MODEL UNIT (mm/deg) Signatures with CATIALength
                 |         or CATIAAngle must be used with care and will fail if the range nature and the
                 |         expected type are incompatible
                 | 

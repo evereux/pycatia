@@ -27,9 +27,9 @@ class AccesslogStatisticsSettingAtt(GeneralStatisticsSettingAtt):
                 |                         System.GeneralStatisticsSettingAtt
                 |                             AccesslogStatisticsSettingAtt
                 | 
-                | Interface for Accesslog statistic Controler.
+                | Interface for Accesslog statistic Controller.
                 | 
-                | Role: the accesslog statistics controler manages the values of all or only a
+                | Role: the accesslog statistics controller manages the values of all or only a
                 | part of the attributes available for the thematic.
                 | For the definitions of methods and variables common to every thematic, see the
                 | GeneralStatisticsSettingAtt.

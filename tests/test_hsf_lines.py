@@ -1,8 +1,6 @@
 #! /usr/bin/python3.6
 
 from pycatia.base_interfaces.context import CATIADocHandler
-from pycatia.space_analyses_interfaces.spa_workbench import SPAWorkbench
-from tests.source_files import cat_part_blank
 
 
 def test_line_angle():
@@ -34,7 +32,7 @@ def test_line_point_point():
     co_ord_1 = (0, 0, 0)
     co_ord_2 = (length, 0, 0)
 
-    with CATIADocHandler(cat_part_blank) as catia:
+    with CATIADocHandler(new_document='Part') as catia:
         document = catia.document
         part = document.part()
         hsf = part.hybrid_shape_factory

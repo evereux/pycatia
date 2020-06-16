@@ -265,7 +265,7 @@ class HybridShapeLineBisecting(Line):
                 |     Parameters:
                 | 
                 |         oSym
-                |             Symetry flag
+                |             Symmetry flag
 
         :return: bool
         """
@@ -303,7 +303,7 @@ class HybridShapeLineBisecting(Line):
                 |     Parameters:
                 | 
                 |         iSym
-                |             Symetry flag
+                |             Symmetry flag
 
         :param bool i_sym:
         :return: None

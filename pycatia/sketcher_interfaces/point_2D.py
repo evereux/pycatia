@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia.sketcher_interfaces.geometry2_d import Geometry2D
+from pycatia.sketcher_interfaces.geometry_2D import Geometry2D
 
 
 class Point2D(Geometry2D):

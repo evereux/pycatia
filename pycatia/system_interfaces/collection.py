@@ -142,6 +142,7 @@ class Collection(PyCATIA):
 
     def get_item(self, id_name):
         """
+
         .. note::
             CAA V5 Visual Basic Help (2020-06-10 10:58:07.270911))
                 | o Func GetItem(CATBSTR IDName) As CATBaseDispatch
@@ -160,14 +161,15 @@ class Collection(PyCATIA):
                 |         The searched object
 
         :param str id_name:
-        :return: AnyObject
+        :return: child_object
         """
-        return AnyObject(self.collection.GetItem(id_name))
+
+        return self.child_object(self.com_object.GetItem(id_name))
 
     def get_item_by_index(self, index):
         """
         :param str/int index: relation name or index
-        :return: item
+        :return: child_object
         """
 
         return self.child_object(self.com_object.Item(index))

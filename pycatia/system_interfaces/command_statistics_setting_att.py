@@ -27,8 +27,8 @@ class CommandStatisticsSettingAtt(GeneralStatisticsSettingAtt):
                 |                         System.GeneralStatisticsSettingAtt
                 |                             CommandStatisticsSettingAtt
                 | 
-                | Interface for Command statistic Controler
-                | Role: the command statistics controler manages the values of all or only a part
+                | Interface for Command statistic Controller
+                | Role: the command statistics controller manages the values of all or only a part
                 | of the attributes available for the thematic.
                 | 
                 | For the definitions of methods and variables common to every thematic, see the
