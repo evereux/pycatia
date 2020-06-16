@@ -11,9 +11,9 @@
 
 from pycatia.mec_mod_interfaces.constraints import Constraints
 from pycatia.mec_mod_interfaces.geometric_elements import GeometricElements
-from pycatia.sketcher_interfaces.axis2_d import Axis2D
-from pycatia.sketcher_interfaces.factory2_d import Factory2D
-from pycatia.sketcher_interfaces.line2_d import Line2D
+from pycatia.sketcher_interfaces.axis_2D import Axis2D
+from pycatia.sketcher_interfaces.factory_2D import Factory2D
+from pycatia.sketcher_interfaces.line_2D import Line2D
 from pycatia.system_interfaces.any_object import AnyObject
 
 
@@ -128,7 +128,7 @@ class Sketch(AnyObject):
         return Constraints(self.sketch.Constraints)
 
     @property
-    def factory2_d(self):
+    def factory_2D(self):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -202,6 +202,7 @@ class Sketch(AnyObject):
 
         :return: None
         """
+        self.logger.info(f'Closing sketch "{self.name}".')
         return self.sketch.CloseEdition()
 
     def evaluate(self):
@@ -307,6 +308,7 @@ class Sketch(AnyObject):
 
         :return: Factory2D
         """
+        self.logger.info(f'Opening sketch "{self.name}".')
         return Factory2D(self.sketch.OpenEdition())
 
     def set_absolute_axis_data(self, i_axis_data):
