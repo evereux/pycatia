@@ -1,65 +1,78 @@
-#! /usr/bin/python3.6
-# module initially auto generated using V5Automation.chm from CATIA V5 R25
+#! usr/bin/python3.6
+"""
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
+    .. warning::
+        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+        They are there as a guide as to how the visual basic / catscript functions work
+        and thus help debugging in pycatia.
+
+"""
+from pycatia.sketcher_interfaces.geometric_element import GeometricElement
 from pycatia.system_interfaces.collection import Collection
 
 
 class GeometricElements(Collection):
     """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
+                | System.IUnknown
+                |     System.IDispatch
+                |         System.CATBaseUnknown
+                |             System.CATBaseDispatch
+                |                 System.Collection
+                |                     GeometricElements
+                |
                 | A collection of all geometric elements contained in a part or a
-                | sketch.Geometric elements are created with the 2D factory for the
-                | sketch and with the 3D factory for the part. Geometric elements thus
-                | created are then aggregated either in the sketch or as part of the
-                | geometric element collection.
+                | sketch.
+                | Geometric elements are created with the 2D factory for the sketch and with the
+                | 3D factory for the part. Geometric elements thus created are then aggregated
+                | either in the sketch or as part of the geometric element
+                | collection.
+                |
+                | See also:
+                |     Factory2D, HybridShapeFactory
 
     """
 
-    def __init__(self, collection_com_object):
-        super().__init__(collection_com_object)
-        self.geometric_elements = collection_com_object
+    def __init__(self, com_object, child_object=GeometricElement):
+        super().__init__(com_object, child_object=GeometricElement)
+        self.geometric_elements = com_object
+        self.child_object = child_object
 
     def item(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Func Item(CATVariant iIndex) As GeometricElement
+                |
+                |     Returns a geometric element using its index or its name from the
+                |     GeometricElements collection.
+                |
+                |     Parameters:
+                |
+                |         iIndex
+                |             The index or the name of the geometric element to retrieve from the
+                |             collection of geometric elements. As a numerics, this index is the rank of the
+                |             geometric element in the collection. The index of the first geometric element
+                |             in the collection is 1, and the index of the last geometric element is Count.
+                |             As a string, it is the name you assigned to the geometric element using the
+                |
+                |
+                |         AnyObject.Name property.
+                |     Returns:
+                |         The retrieved geometric element
+                |     Example:
+                |         This example retrieves the last item in the geometric element
+                |         collection.
+                |
+                |          Set lastCst = cstList.Item(cstList.Count)
 
-                | Item
-                | o Func Item(    CATVariant    iIndex) As GeometricElement
-                | 
-                | Returns a geometric element using its index or its name from the
-                | GeometricElements collection.
-
-
-                | Parameters:
-                | iIndex
-                |    The index or the name of the geometric element to retrieve from
-                |    the collection of geometric elements.
-                |    As a numeric, this index is the rank of the geometric element
-                |    in the collection.
-                |    The index of the first geometric element in the collection is 1, and
-                |    the index of the last geometric element is Count.
-                |    As a string, it is the name you assigned to the geometric element using
-                |    the 
-                | 
-                |  activateLinkAnchor('AnyObject','Name','AnyObject.Name')  property. 
-                |    Returns:
-                |   The retrieved geometric element
-
-
-                | Examples:
-                | 
-                | 
-                | This example retrieves the last item in the geometric element collection.
-                | 
-                | Set lastCst = cstList.Item(cstList.Count)
-
-            see sketcher_interfaces.enumeration_types.geometric_type
-            :return: int
+        :param CATVariant i_index:
+        :return: GeometricElement
         """
-        return self.geometric_elements.Item(i_index)
+        return GeometricElement(self.geometric_elements.Item(i_index))
 
     def __repr__(self):
-        return f'GeometricElements()'
+        return f'GeometricElements(name="{self.name}")'
