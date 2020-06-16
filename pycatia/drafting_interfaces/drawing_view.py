@@ -20,7 +20,7 @@ from pycatia.drafting_interfaces.drawing_view_generative_behavior import Drawing
 from pycatia.drafting_interfaces.drawing_view_generative_links import DrawingViewGenerativeLinks
 from pycatia.drafting_interfaces.drawing_weldings import DrawingWeldings
 from pycatia.mec_mod_interfaces.geometric_elements import GeometricElements
-from pycatia.sketcher_interfaces.factory2_d import Factory2D
+from pycatia.sketcher_interfaces.factory_2D import Factory2D
 from pycatia.system_interfaces.any_object import AnyObject
 
 
