@@ -15,7 +15,7 @@ from pycatia import catia
 
 
 documents = catia.documents
-documents.open(r'tests\CF_Part_3.CATPart')
+documents.open(r'cat_files/CF_Part_3.CATPart')
 
 document = catia.active_document
 
