@@ -27,8 +27,8 @@ class SessionStatisticsSettingAtt(GeneralStatisticsSettingAtt):
                 |                         System.GeneralStatisticsSettingAtt
                 |                             SessionStatisticsSettingAtt
                 | 
-                | Interface for Session statistic Controler
-                | Role: the session statistics controler manages the values of all or only a part
+                | Interface for Session statistic Controller
+                | Role: the session statistics controller manages the values of all or only a part
                 | of the attributes available for the thematic.
                 | 
                 | For the definitions of methods and variables common to every thematic, see the

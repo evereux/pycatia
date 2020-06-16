@@ -42,7 +42,7 @@ class EnumParam(Parameter):
                 | o Property ValueEnum() As CATBSTR
                 | 
                 |     Returns or sets the value of the EnumParameter object. Units are expressed
-                |     in the IS unit system, except for lengthes expressed in millimeters, and angles
+                |     in the IS unit system, except for lengths expressed in millimeters, and angles
                 |     expressed in decimal degrees.
                 | 
                 |     Example:

@@ -27,8 +27,8 @@ class FileAccessStatisticsSettingAtt(GeneralStatisticsSettingAtt):
                 |                         System.GeneralStatisticsSettingAtt
                 |                             FileAccessStatisticsSettingAtt
                 | 
-                | Interface for FileAccess statistic Controler
-                | Role: the FileAccess statistics controler manages the values of all or only a
+                | Interface for FileAccess statistic Controller
+                | Role: the FileAccess statistics controller manages the values of all or only a
                 | part of the attributes available for the thematic.
                 | 
                 | For the definitions of methods and variables common to every thematic, see the

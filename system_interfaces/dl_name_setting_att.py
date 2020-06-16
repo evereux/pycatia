@@ -136,7 +136,7 @@ class DlNameSettingAtt(SettingController):
                 | CATBSTR oLocked) As boolean
                 | 
                 |     Retrieves the state of the parameter DLNameCreationRight.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param str admin_level:
         :param str o_locked:
@@ -311,7 +311,7 @@ class DlNameSettingAtt(SettingController):
                 | 
                 |     Retrieves the state of the parameter
                 |     RootDLNameCreationRight.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param str admin_level:
         :param str o_locked:
@@ -445,7 +445,7 @@ class DlNameSettingAtt(SettingController):
                 | o Sub SetDLNameCreationRightLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the parameter DLNameCreationRight.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
         :return: None
@@ -522,7 +522,7 @@ class DlNameSettingAtt(SettingController):
                 | o Sub SetRootDLNameCreationRightLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the parameter RootDLNameCreationRight.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
         :return: None

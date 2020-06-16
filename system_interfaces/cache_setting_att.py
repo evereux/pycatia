@@ -237,7 +237,7 @@ class CacheSettingAtt(SettingController):
                 | CATBSTR oLocked) As boolean
                 | 
                 |     Retrieves informations about the Cache activation mode.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param str admin_level:
         :param str o_locked:
@@ -254,7 +254,7 @@ class CacheSettingAtt(SettingController):
                 | 
                 |     Retrieves environment informations for the Cache maximum
                 |     size.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param str admin_level:
         :param str o_locked:
@@ -271,7 +271,7 @@ class CacheSettingAtt(SettingController):
                 | 
                 |     Retrieves environment informations for the LOD generation
                 |     mode.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param str admin_level:
         :param str o_locked:
@@ -288,7 +288,7 @@ class CacheSettingAtt(SettingController):
                 | 
                 |     Retrieves environment informations for the Cache local
                 |     path.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param str admin_level:
         :param str o_locked:
@@ -328,7 +328,7 @@ class CacheSettingAtt(SettingController):
                 | 
                 |     Retrieves environment informations for the Cache release
                 |     path.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param str admin_level:
         :param str locked:
@@ -345,7 +345,7 @@ class CacheSettingAtt(SettingController):
                 | 
                 |     Retrieves environment informations for the Cache released
                 |     voxel.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param str admin_level:
         :param str o_locked:
@@ -362,7 +362,7 @@ class CacheSettingAtt(SettingController):
                 | 
                 |     Retrieves environment informations for the size control
                 |     mode.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param str admin_level:
         :param str o_locked:
@@ -379,7 +379,7 @@ class CacheSettingAtt(SettingController):
                 | 
                 |     Retrieves environment informations for the timestamp control
                 |     mode.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param str admin_level:
         :param str o_locked:
@@ -396,7 +396,7 @@ class CacheSettingAtt(SettingController):
                 | 
                 |     Retrieves environment informations for the timestamp control
                 |     mode.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param str admin_level:
         :param str o_locked:
@@ -450,7 +450,7 @@ class CacheSettingAtt(SettingController):
                 | o Sub SetActivationModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Cache Activation mode.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
         :return: None
@@ -479,7 +479,7 @@ class CacheSettingAtt(SettingController):
                 | o Sub SetCacheMaxSizeMoLock(boolean iLocked)
                 | 
                 |     Locks the paramater Cache maximum size.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
         :return: None
@@ -508,7 +508,7 @@ class CacheSettingAtt(SettingController):
                 | o Sub SetLODModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the LOD generation mode.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
         :return: None
@@ -537,7 +537,7 @@ class CacheSettingAtt(SettingController):
                 | o Sub SetLocalPathLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the cache local path parameter.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
         :return: None
@@ -566,7 +566,7 @@ class CacheSettingAtt(SettingController):
                 | o Sub SetReleasePathLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the cache local path parameter.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
         :return: None
@@ -595,7 +595,7 @@ class CacheSettingAtt(SettingController):
                 | o Sub SetReleasedVoxelLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the released voxel parameter.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
         :return: None
@@ -624,7 +624,7 @@ class CacheSettingAtt(SettingController):
                 | o Sub SetSizeControlLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the cache size control parameter.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
         :return: None
@@ -653,7 +653,7 @@ class CacheSettingAtt(SettingController):
                 | o Sub SetTimestampModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the timestamp control in cache.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
         :return: None
@@ -682,7 +682,7 @@ class CacheSettingAtt(SettingController):
                 | o Sub SetUTCTimeFormatLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the timestamp format.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
         :return: None

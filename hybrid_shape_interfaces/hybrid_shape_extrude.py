@@ -391,7 +391,7 @@ class HybridShapeExtrude(HybridShape):
                 |     Parameters:
                 | 
                 |         iSym
-                |             Symetry flag
+                |             Symmetry flag
 
         :return: bool
         """
