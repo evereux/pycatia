@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.2
+* Renamed sketcher interfaces.
+* Collection object returns child_object on get_item.
+* Added methods to recursively add shapes and bodies. Simple but useful.
+* Remove CATIA files.
+    * All tests / examples will eventually be independent of any source CATIA data.
 
 ## 0.3.1
 * Added basic logging.
