@@ -10,15 +10,15 @@
 """
 
 from pycatia.mec_mod_interfaces.geometric_elements import GeometricElements
-from pycatia.sketcher_interfaces.circle2_d import Circle2D
-from pycatia.sketcher_interfaces.control_point2_d import ControlPoint2D
-from pycatia.sketcher_interfaces.ellipse2_d import Ellipse2D
-from pycatia.sketcher_interfaces.geometry2_d import Geometry2D
-from pycatia.sketcher_interfaces.hyperbola2_d import Hyperbola2D
-from pycatia.sketcher_interfaces.line2_d import Line2D
-from pycatia.sketcher_interfaces.parabola2_d import Parabola2D
-from pycatia.sketcher_interfaces.point2_d import Point2D
-from pycatia.sketcher_interfaces.spline2_d import Spline2D
+from pycatia.sketcher_interfaces.circle_2D import Circle2D
+from pycatia.sketcher_interfaces.control_point_2D import ControlPoint2D
+from pycatia.sketcher_interfaces.ellipse_2D import Ellipse2D
+from pycatia.sketcher_interfaces.geometry_2D import Geometry2D
+from pycatia.sketcher_interfaces.hyperbola_2D import Hyperbola2D
+from pycatia.sketcher_interfaces.line_2D import Line2D
+from pycatia.sketcher_interfaces.parabola_2D import Parabola2D
+from pycatia.sketcher_interfaces.point_2D import Point2D
+from pycatia.sketcher_interfaces.spline_2D import Spline2D
 from pycatia.system_interfaces.any_object import AnyObject
 
 

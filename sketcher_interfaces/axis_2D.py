@@ -8,9 +8,9 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia.sketcher_interfaces.geometry2_d import Geometry2D
-from pycatia.sketcher_interfaces.line2_d import Line2D
-from pycatia.sketcher_interfaces.point2_d import Point2D
+from pycatia.sketcher_interfaces.geometry_2D import Geometry2D
+from pycatia.sketcher_interfaces.line_2D import Line2D
+from pycatia.sketcher_interfaces.point_2D import Point2D
 
 
 class Axis2D(Geometry2D):

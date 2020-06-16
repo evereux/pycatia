@@ -8,8 +8,8 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia.sketcher_interfaces.curve2_d import Curve2D
-from pycatia.sketcher_interfaces.point2_d import Point2D
+from pycatia.sketcher_interfaces.curve_2D import Curve2D
+from pycatia.sketcher_interfaces.point_2D import Point2D
 
 
 class Circle2D(Curve2D):
