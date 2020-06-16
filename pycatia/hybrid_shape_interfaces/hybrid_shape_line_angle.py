@@ -268,7 +268,7 @@ class HybridShapeLineAngle(Line):
                 |     Parameters:
                 | 
                 |         oSym
-                |             Symetry flag
+                |             Symmetry flag
 
         :return: bool
         """
@@ -305,7 +305,7 @@ class HybridShapeLineAngle(Line):
                 |     Parameters:
                 | 
                 |         iSym
-                |             Symetry flag
+                |             Symmetry flag
 
         :param bool i_sym:
         :return: None
