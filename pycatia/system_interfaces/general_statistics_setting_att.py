@@ -26,9 +26,9 @@ class GeneralStatisticsSettingAtt(SettingController):
                 |                     System.SettingController
                 |                         GeneralStatisticsSettingAtt
                 | 
-                | Interface for General statistic Controler.
+                | Interface for General statistic Controller.
                 | 
-                | Role: the General statistics controler is a generic interface for all the
+                | Role: the General statistics controller is a generic interface for all the
                 | thematics. One should never use it as a statistics thematic.
     
     """
@@ -509,7 +509,7 @@ class GeneralStatisticsSettingAtt(SettingController):
                 | 
                 |     Retrieves environment informations for the general statistics
                 |     parameters.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param str admin_level:
         :param str o_locked:

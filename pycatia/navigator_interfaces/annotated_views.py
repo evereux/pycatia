@@ -1,0 +1,184 @@
+#! usr/bin/python3.6
+"""
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+
+    .. warning::
+        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+        They are there as a guide as to how the visual basic / catscript functions work
+        and thus help debugging in pycatia.
+        
+"""
+from pycatia.navigator_interfaces.annotated_view import AnnotatedView
+from pycatia.system_interfaces.collection import Collection
+
+
+class AnnotatedViews(Collection):
+
+    """
+        .. note::
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+
+                | System.IUnknown
+                |     System.IDispatch
+                |         System.CATBaseUnknown
+                |             System.CATBaseDispatch
+                |                 System.Collection
+                |                     AnnotatedViews
+                | 
+                | A collection of AnnotatedView objects.
+                | 
+                | The method Product.GetTechnologicalObject ("AnnotatedViews") on the root
+                | product retrieves this collection.
+    
+    """
+
+    def __init__(self, com_object):
+        super().__init__(com_object)
+        self.annotated_views = com_object
+
+    def add(self):
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Func Add() As AnnotatedView
+                | 
+                |     Creates an annotated view using the current viewpoint and adds it to the
+                |     AnnotatedView collection.
+                | 
+                |     Returns:
+                |         The created AnnotatedView 
+                |     Example:
+                | 
+                |              This example creates a new AnnotatedView in the TheAnnotatedViews
+                |              collection.
+                |             
+                | 
+                |             Dim NewAnnotatedView As AnnotatedView
+                |             Set NewAnnotatedView = TheAnnotatedViews.Add
+
+        :return: AnnotatedView
+        """
+        return AnnotatedView(self.annotated_views.Add())
+
+    def add_from_viewpoint(self, i_viewpoint=None):
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Func AddFromViewpoint(Viewpoint3D iViewpoint) As
+                | AnnotatedView
+                | 
+                |     Creates an annotated view using a given viewpoint and adds it to the
+                |     AnnotatedView collection.
+                | 
+                |     Parameters:
+                | 
+                |         iViewpoint
+                |             The viewpoint. 
+                | 
+                |     Returns:
+                |         The created AnnotatedView 
+                |     Example:
+                | 
+                |              This example creates a new AnnotatedView in the TheAnnotatedViews
+                |              collection using a 
+                |             AViewpoint viewpoint object.
+                |             
+                | 
+                |             Dim NewAnnotatedView As AnnotatedView
+                |             Set NewAnnotatedView = TheAnnotatedViews.AddFromViewpoint(AViewpoint)
+
+        :param Viewpoint3D i_viewpoint:
+        :return: AnnotatedView
+        """
+        return AnnotatedView(self.annotated_views.AddFromViewpoint(i_viewpoint.com_object))
+
+    def item(self, i_index=None):
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Func Item(CATVariant iIndex) As AnnotatedView
+                | 
+                |     Returns an annotated view using its index or its name from the
+                |     AnnotatedViews collection.
+                | 
+                |     Parameters:
+                | 
+                |         iIndex
+                |             The index or the name of the AnnotatedView to retrieve from the
+                |             collection of AnnotatedViews. As a numerics, this index is the rank of the
+                |             AnnotatedView in the collection. The index of the first AnnotatedView in the
+                |             collection is 1, and the index of the last AnnotatedView is Count. As a string,
+                |             it is the name you assigned to the AnnotatedView. 
+                | 
+                |     Returns:
+                |         The retrieved AnnotatedView 
+                |     Example:
+                | 
+                |              This example retrieves in ThisAnnotatedView the ninth
+                |              AnnotatedView,
+                |             and in ThatAnnotatedView the AnnotatedView named
+                |             AnnotatedView3 from the TheAnnotatedViews collection.
+                |             
+                |             
+                | 
+                |             Dim ThisAnnotatedView As AnnotatedView
+                |             Set ThisAnnotatedView = TheAnnotatedViews.Item(9)
+                |             Dim ThatAnnotatedView As AnnotatedView
+                |             Set ThatAnnotatedView = TheAnnotatedViews.Item("AnnotatedView3")
+
+        :param CATVariant i_index:
+        :return: AnnotatedView
+        """
+        return AnnotatedView(self.annotated_views.Item(i_index.com_object))
+
+    def remove(self, i_index=None):
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Sub Remove(CATVariant iIndex)
+                | 
+                |     Removes an annotated view from the AnnotatedViews
+                |     collection.
+                | 
+                |     Parameters:
+                | 
+                |         iIndex
+                |             The index or the name of the AnnotatedView to retrieve from he
+                |             collection of AnnotatedViews. As a numerics, this index is the rank of the
+                |             AnnotatedView in the collection. The index of the first AnnotatedView in the
+                |             collection is 1, and the index of the last AnnotatedView is Count. As a string,
+                |             it is the name you assigned to the AnnotatedView. 
+                | 
+                |     Example:
+                | 
+                |              The following example removes the tenth AnnotatedView and the
+                |              AnnotatedView named
+                |             AnnotatedView2 from the TheAnnotatedViews
+                |             collection.
+                |             
+                | 
+                |             TheAnnotatedViews.Remove(10)
+                |             TheAnnotatedViews.Remove("AnnotatedView2")
+
+        :param CATVariant i_index:
+        :return: None
+        """
+        return self.annotated_views.Remove(i_index.com_object)
+        # # # # Autogenerated comment: 
+        # # some methods require a system service call as the methods expects a vb array object
+        # # passed to it and there is no way to do this directly with python. In those cases the following code
+        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
+        # # vba_function_name = 'remove'
+        # # vba_code = """
+        # # Public Function remove(annotated_views)
+        # #     Dim iIndex (2)
+        # #     annotated_views.Remove iIndex
+        # #     remove = iIndex
+        # # End Function
+        # # """
+
+        # # system_service = SystemService(self.application.SystemService)
+        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+
+    def __repr__(self):
+        return f'AnnotatedViews(name="{ self.name }")'

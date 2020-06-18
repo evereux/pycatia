@@ -1,27 +1,45 @@
-#! /usr/bin/python3.6
-# module initially auto generated using V5Automation.chm from CATIA R25 on 2020-05-22 12:54:36.956119
+#! usr/bin/python3.6
+"""
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
-from .vertex import Vertex
+    .. warning::
+        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+        They are there as a guide as to how the visual basic / catscript functions work
+        and thus help debugging in pycatia.
+        
+"""
+
+from pycatia.mec_mod_interfaces.vertex import Vertex
 
 
 class ZeroDimFeatVertexOrWireBoundaryMonoDimFeatVertex(Vertex):
     """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
-                | 0-D boundary beeing either an isolated point or the extremity of a
-                | feature whose topological result is one dimensional.Role:
-                | ThisactivateLinkAnchor('Boundary','','Boundary')object may be, for
-                | example, the extremity of a line segment.  You will create a
-                | ZeroDimFeatVertexOrWireBoundaryMonoDimFeatVertex object using theactiv
-                | ateLinkAnchor('Shapes','GetBoundary','Shapes.GetBoundary'),activateLin
-                | kAnchor('HybridShapes','GetBoundary','HybridShapes.GetBoundary'),activ
-                | ateLinkAnchor('Sketches','GetBoundary','Sketches.GetBoundary')oractiva
-                | teLinkAnchor('Selection','SelectElement2','Selection.SelectElement2')m
-                | ethod.  Then, you pass it to the operator.  The lifetime of a
-                | ZeroDimFeatVertexOrWireBoundaryMonoDimFeatVertex object is limited,
-                | seeactivateLinkAnchor('Boundary','','Boundary').
-
+                | System.IUnknown
+                |     System.IDispatch
+                |         System.CATBaseUnknown
+                |             System.CATBaseDispatch
+                |                 System.AnyObject
+                |                     InfInterfaces.Reference
+                |                         MecModInterfaces.Boundary
+                |                             MecModInterfaces.Vertex
+                |                                ZeroDimFeatVertexOrWireBoundaryMonoDimFeatVertex
+                | 
+                | 0-D boundary being either an isolated point or the extremity of a feature
+                | whose topological result is one dimensional.
+                | Role: This Boundary object may be, for example, the extremity of a line
+                | segment.
+                | You will create a ZeroDimFeatVertexOrWireBoundaryMonoDimFeatVertex object using
+                | the Shapes.GetBoundary , HybridShapes.GetBoundary , Sketches.GetBoundary or
+                | Selection.SelectElement2 method. Then, you pass it to the
+                | operator.
+                | The lifetime of a ZeroDimFeatVertexOrWireBoundaryMonoDimFeatVertex object is
+                | limited, see Boundary.
+                | 
+                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
+    
     """
 
     def __init__(self, com_object):
@@ -29,4 +47,4 @@ class ZeroDimFeatVertexOrWireBoundaryMonoDimFeatVertex(Vertex):
         self.zero_dim_feat_vertex_or_wire_boundary_mono_dim_feat_vertex = com_object
 
     def __repr__(self):
-        return f'ZeroDimFeatVertexOrWireBoundaryMonoDimFeatVertex()'
+        return f'ZeroDimFeatVertexOrWireBoundaryMonoDimFeatVertex(name="{self.name}")'

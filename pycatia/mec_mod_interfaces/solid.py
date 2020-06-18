@@ -1,22 +1,39 @@
-#! /usr/bin/python3.6
-# module initially auto generated using V5Automation.chm from CATIA R25 on 2020-05-22 12:54:36.956119
+#! usr/bin/python3.6
+"""
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+
+    .. warning::
+        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+        They are there as a guide as to how the visual basic / catscript functions work
+        and thus help debugging in pycatia.
+        
+"""
 
 from pycatia.in_interfaces.move import Move
-from .shape import Shape
+from pycatia.mec_mod_interfaces.shape import Shape
+from pycatia.system_interfaces.any_object import AnyObject
 
 
 class Solid(Shape):
+
     """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
-                | Represents an imported solid object.Role: the imported solid is a
-                | solid obtained from copy/paste with link or design in context.The
-                | solid object has a link to a source element obtained
-                | fromactivateLinkAnchor('','SourceElement','SourceElement')and a source
-                | product obtained
-                | fromactivateLinkAnchor('','SourceProduct','SourceProduct').
-
+                | System.IUnknown
+                |     System.IDispatch
+                |         System.CATBaseUnknown
+                |             System.CATBaseDispatch
+                |                 System.AnyObject
+                |                     MecModInterfaces.Shape
+                |                         Solid
+                | 
+                | Represents an imported solid object.
+                | Role: the imported solid is a solid obtained from copy/paste with link or
+                | design in context.
+                | The solid object has a link to a source element obtained from SourceElement and
+                | a source product obtained from SourceProduct .
+    
     """
 
     def __init__(self, com_object):
@@ -27,70 +44,79 @@ class Solid(Shape):
     def move(self):
         """
         .. note::
-            CAA V5 Visual Basic help
-
-                | Move
-                | o Property Move() As   (Read Only)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property Move() As Move (Read Only)
                 | 
-                | Returns the move object of the solid. Role: The move object
-                | is aggregated by the solid object and itself aggregates a
-                | movable object to which you can apply a move transformation
-                | by means of an isometry matrix. It moves the solid according
-                | to this isometry. 
-                |
-                | Example:
-                | This example retrieves the move
-                | object EngineMoveObject for the Engine product. Dim
-                | EngineMoveObject As Move Set EngineMoveObject = Engine.Move
-                | See also:
+                |     Returns the move object of the solid.
+                |     Role: The move object is aggregated by the solid object and itself
+                |     aggregates a movable object to which you can apply a move transformation by
+                |     means of an isometry matrix. It moves the solid according to this
+                |     isometry.
+                | 
+                |     Example:
+                | 
+                |           This example retrieves the move object EngineMoveObject for
+                |           the
+                |          Engine product.
+                |          
+                | 
+                |          Dim EngineMoveObject As Move
+                |          Set EngineMoveObject = Engine.Move
+                |          
+                | 
+                | 
+                |          
+                | 
+                |     See also:
+                |         Move
 
-        :return:
+        :return: Move
         """
+
         return Move(self.solid.Move)
 
     @property
     def source_element(self):
         """
         .. note::
-            CAA V5 Visual Basic help
-
-                | SourceElement
-                | o Property SourceElement() As   (Read Only)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property SourceElement() As AnyObject (Read Only)
                 | 
-                | Returns the source element of the imported solid. Role:
-                | returns the linked element in the source part. 
-                |
-                | Example:
-                | The
-                | following example returns in element the source element of
-                | the imported solid importedSolid: Set element =
-                | importedSolid.SourceElement
+                |     Returns the source element of the imported solid.
+                |     Role: returns the linked element in the source part.
+                | 
+                |     Example:
+                |         The following example returns in element the source element of the
+                |         imported solid importedSolid:
+                | 
+                |          Set element = importedSolid.SourceElement
 
-        :return: AnyObject()
+        :return: AnyObject
         """
-        return self.solid.SourceElement
+
+        return AnyObject(self.solid.SourceElement)
 
     @property
     def source_product(self):
         """
         .. note::
-            CAA V5 Visual Basic help
-
-                | SourceProduct
-                | o Property SourceProduct() As   (Read Only)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property SourceProduct() As AnyObject (Read Only)
                 | 
-                | Returns the source product instance of the imported solid.
-                | Role: returns the product instance which was selected when
-                | the import was created. 
-                |
-                | Example:
-                | The following example
-                | returns in prod1 the source product instance of the imported
-                | solid importedSolid: Set prod1 = importedSolid.SourceProduct
+                |     Returns the source product instance of the imported solid.
+                |     Role: returns the product instance which was selected when the import was
+                |     created.
+                | 
+                |     Example:
+                |         The following example returns in prod1 the source product instance of
+                |         the imported solid importedSolid:
+                | 
+                |          Set prod1 = importedSolid.SourceProduct
 
         :return: AnyObject
         """
-        return self.solid.SourceProduct
+
+        return AnyObject(self.solid.SourceProduct)
 
     def __repr__(self):
-        return f'Solid()'
+        return f'Solid(name="{ self.name }")'

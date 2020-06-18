@@ -1,69 +1,91 @@
-#! /usr/bin/python3.6
-# module initially auto generated using V5Automation.chm from CATIA V5 R25
+#! usr/bin/python3.6
+"""
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+
+    .. warning::
+        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+        They are there as a guide as to how the visual basic / catscript functions work
+        and thus help debugging in pycatia.
+
+"""
 
 from pycatia.in_interfaces.document import Document
+from pycatia.mec_mod_interfaces.part import Part
 from pycatia.product_structure_interfaces.product import Product
-from .part import Part
 
 
 class PartDocument(Document):
+
     """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
-                | Represents the Document object for parts.Role: When a PartDocument
-                | object is created, a Part object is also created. This Part object is
-                | the root object  of the Part structure.A reference Product object is
-                | also created in each PartDocument. It is used to access Publications,
-                | PartNumber.
+                | System.IUnknown
+                |     System.IDispatch
+                |         System.CATBaseUnknown
+                |             System.CATBaseDispatch
+                |                 System.AnyObject
+                |                     InfInterfaces.Document
+                |                         PartDocument
+                |
+                | Represents the Document object for parts.
+                |
+                | Role: When a PartDocument object is created, a Part object is also created.
+                | This Part object is the root object of the Part structure.
+                |
+                | A reference Product object is also created in each PartDocument. It is used to
+                | access Publications, PartNumber.
+                |
+                | See also:
+                |     Product, Part
 
     """
 
-    def __init__(self, part_document_com_object):
-        super().__init__(part_document_com_object)
-        self.partdocument = part_document_com_object
+    def __init__(self, com_object):
+        super().__init__(com_object)
+        self.part_document = com_object
 
     @property
     def part(self):
         """
         .. note::
-            CAA V5 Visual Basic help
-
-                | Part
-                | o Property Part() As Part
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property Part() As Part (Read Only)
+                |
+                |     Returns the root Part object from the current part
+                |     document.
+                |
+                |     Example:
+                |         The following example retrieves in RootPart the root Part object of the
+                |         active document, assumed to be a part document:
                 | 
-                | Returns the root Part object from the current part document.
-                | Example:The following example retrieves in RootPart the root Part
-                | object of the active document, assumed to be a part document:  Set
-                | RootPart = CATIA.ActiveDocument.Part
+                |          Set RootPart = CATIA.ActiveDocument.Part
 
-
-                | Parameters:
-
-
+        :return: Part
         """
-        return Part(self.partdocument.Part)
+
+        return Part(self.part_document.Part)
 
     @property
     def product(self):
         """
         .. note::
-            CAA V5 Visual Basic help
-
-                | Product
-                | o Property Product() As Product
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property Product() As Product (Read Only)
+                |
+                |     Returns the root Product object from the current part
+                |     document.
+                |
+                |     Example:
+                |         The following example retrieves in RootProd the root Product object of
+                |         the active document, assumed to be a part document:
                 | 
-                | Returns the root Product object from the current part document.
-                | Example:The following example retrieves in RootProd the root Product
-                | object of the active document, assumed to be a part document:  Set
-                | RootProd = CATIA.ActiveDocument.Part
+                |          Set RootProd = CATIA.ActiveDocument.Part
 
-
-                | Parameters:
-
-
+        :return: Product
         """
-        return Product(self.partdocument.Product)
+
+        return Product(self.part_document.Product)
 
     def __repr__(self):
-        return f'PartDocument'
+        return f'PartDocument(name="{ self.name }")'

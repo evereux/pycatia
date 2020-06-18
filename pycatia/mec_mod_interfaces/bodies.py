@@ -1,15 +1,32 @@
-#! /usr/bin/python3.6
-# module initially auto generated using V5Automation.chm from CATIA V5 R25
+#! usr/bin/python3.6
+"""
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
+    .. warning::
+        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+        They are there as a guide as to how the visual basic / catscript functions work
+        and thus help debugging in pycatia.
+
+"""
+
+from pycatia.mec_mod_interfaces.body import Body
 from pycatia.system_interfaces.collection import Collection
 from .body import Body
 
 
 class Bodies(Collection):
+
     """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
+                | System.IUnknown
+                |     System.IDispatch
+                |         System.CATBaseUnknown
+                |             System.CATBaseDispatch
+                |                 System.Collection
+                |                     Bodies
+                |
                 | A collection of all the Body objects contained in the part.
 
     """
@@ -21,63 +38,60 @@ class Bodies(Collection):
     def add(self):
         """
         .. note::
-            CAA V5 Visual Basic help
-
-                | Add
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add() As Body
                 | 
-                | Creates a new body and adds it to the Bodies collection. This body
-                | becomes the current one  Returns:  The created body
+                |     Creates a new body and adds it to the Bodies collection. This body becomes
+                |     the current one
                 |
-                | Example:
-                | The following example creates a body names NewBody in the body collection
-                | of the rootPart part in the partDoc part document. NewBody becomes the
-                | current body in partDoc.
-                | Set rootPart = partDoc.Part
-                | Set NewBody = rootPart.Bodies.Add()
+                |     Returns:
+                |         The created body
+                |     Example:
+                |         The following example creates a body names NewBody in the body
+                |         collection of the rootPart part in the partDoc part document. NewBody becomes
+                |         the current body in partDoc.
+                |
+                |          Set rootPart = partDoc.Part
+                |          Set NewBody = rootPart.Bodies.Add()
 
+        :return: Body
         """
-        return self.child_object(self.bodies.Add())
+        return Body(self.bodies.Add())
 
     def item(self, i_index):
         """
         .. note::
-            CAA V5 Visual Basic help
-
-                | Item
-                | o Func Item(    CATVariant    iIndex) As Body
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Func Item(CATVariant iIndex) As Body
                 | 
-                | Returns a body using its index or its name from the Bodies collection.
-
-
-                | Parameters:
-                | iIndex
-                |    The index or the name of the body to retrieve from
-                |    the collection of bodies.
-                |    As a numeric, this index is the rank of the body
-                |    in the collection.
-                |    The index of the first body in the collection is 1, and
-                |    the index of the last body is Count.
-                |    As a string, it is the name you assigned to the body using
-                |    the 
-                | 
-                |  activateLinkAnchor('AnyObject','Name','AnyObject.Name')  property. 
-                |    Returns:
-                |   The retrieved body
+                |     Returns a body using its index or its name from the Bodies
+                |     collection.
                 |
-                | Examples:
-                | This example retrieves in ThisBody the fifth body
-                | in the collection and in ThatBody the body
-                | named MyBody in the body collection of the partDoc
-                | part document.
+                |     Parameters:
+                |
+                |         iIndex
+                |             The index or the name of the body to retrieve from the collection
+                |             of bodies. As a numerics, this index is the rank of the body in the collection.
+                |             The index of the first body in the collection is 1, and the index of the last
+                |             body is Count. As a string, it is the name you assigned to the body using the
+                |
                 | 
-                | Set BodyColl = partDoc.Part.Bodies
-                | Set ThisBody = BodyColl.Item(5)
-                | Set ThatBody = BodyColl.Item("MyBody")
+                |         AnyObject.Name property.
+                |     Returns:
+                |         The retrieved body
+                |     Example:
+                |         This example retrieves in ThisBody the fifth body in the collection and
+                |         in ThatBody the body named MyBody in the body collection of the partDoc part
+                |         document.
+                | 
+                |          Set BodyColl = partDoc.Part.Bodies
+                |          Set ThisBody = BodyColl.Item(5)
+                |          Set ThatBody = BodyColl.Item("MyBody")
 
-        :return: Body()
+        :param CATVariant i_index:
+        :return: Body
         """
-        return self.child_object(self.bodies.Item(i_index))
+        return Body(self.bodies.Item(i_index))
 
     def __repr__(self):
         return f'Bodies(name="{self.name}")'

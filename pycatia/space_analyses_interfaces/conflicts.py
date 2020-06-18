@@ -1,0 +1,70 @@
+#! usr/bin/python3.6
+"""
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+
+    .. warning::
+        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+        They are there as a guide as to how the visual basic / catscript functions work
+        and thus help debugging in pycatia.
+        
+"""
+from pycatia.space_analyses_interfaces.conflict import Conflict
+from pycatia.system_interfaces.collection import Collection
+
+
+class Conflicts(Collection):
+
+    """
+        .. note::
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+
+                | System.IUnknown
+                |     System.IDispatch
+                |         System.CATBaseUnknown
+                |             System.CATBaseDispatch
+                |                 System.Collection
+                |                     Conflicts
+                | 
+                | A collection of all Conflict objects currently detected by a Clash
+                | object.
+    
+    """
+
+    def __init__(self, com_object):
+        super().__init__(com_object)
+        self.conflicts = com_object
+
+    def item(self, i_index=None):
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Func Item(CATVariant iIndex) As Conflict
+                | 
+                |     Returns a Conflict object using its index from the Conflicts
+                |     collection.
+                | 
+                |     Parameters:
+                | 
+                |         iIndex
+                |             The index of the Conflict object to retrieve from the collection of
+                |             Conflicts. As a numerics, this index is the rank of the Conflict in the
+                |             collection. The index of the first Conflict in the collection is 1, and the
+                |             index of the last Conflict is Count. 
+                | 
+                |     Example:
+                | 
+                |              This example retrieves in ThisConflict the ninth
+                |              Conflict
+                |             from the TheConflicts collection. 
+                |             
+                | 
+                |             Dim ThisConflict As Conflict
+                |             Set ThisConflict = TheConflicts.Item(9)
+
+        :param CATVariant i_index:
+        :return: Conflict
+        """
+        return Conflict(self.conflicts.Item(i_index.com_object))
+
+    def __repr__(self):
+        return f'Conflicts(name="{ self.name }")'
