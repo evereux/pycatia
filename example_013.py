@@ -64,3 +64,5 @@ hybrid_body_surface.append_hybrid_shape(extrusion)
 main_body = part.main_body
 part.in_work_object = main_body
 part_shape_factory.add_new_thick_surface(extrusion, 1, 5, 0)
+
+part.update()
