@@ -4,6 +4,8 @@ workbenches
 .. highlight:: console
 
 
+.. _workbenches-workbenches:
+
 workbenches
 -----------
 

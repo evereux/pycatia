@@ -4,6 +4,8 @@ exception_handling
 .. highlight:: console
 
 
+.. _exception_handling-exceptions:
+
 exceptions
 ----------
 
