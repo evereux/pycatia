@@ -15,6 +15,7 @@ API INDEX
     api_in_interfaces
     api_knowledge_interfaces
     api_mec_mod_interfaces
+    api_navigator_interfaces
     api_part_interfaces
     api_product_structure_interfaces
     api_scripts

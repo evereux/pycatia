@@ -1,28 +1,46 @@
-#! /usr/bin/python3.6
-# module initially auto generated using V5Automation.chm from CATIA R25 on 2020-05-22 12:54:36.956119
+#! usr/bin/python3.6
+"""
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
-from .edge import Edge
+    .. warning::
+        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+        They are there as a guide as to how the visual basic / catscript functions work
+        and thus help debugging in pycatia.
+        
+"""
+
+from pycatia.mec_mod_interfaces.edge import Edge
 
 
 class MonoDimFeatEdge(Edge):
+
     """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
+                | System.IUnknown
+                |     System.IDispatch
+                |         System.CATBaseUnknown
+                |             System.CATBaseDispatch
+                |                 System.AnyObject
+                |                     InfInterfaces.Reference
+                |                         MecModInterfaces.Boundary
+                |                             MecModInterfaces.Edge
+                |                                 MonoDimFeatEdge
+                | 
                 | 1-D boundary belonging to a feature whose topological result is one
-                | dimensional.Role:
-                | ThisactivateLinkAnchor('Boundary','','Boundary')object may be, for
-                | example, in a part containing a Sketch which is made up of a circle
-                | arc and a spline, the circle arc.  You will create a MonoDimFeatEdge
-                | object using theactivateLinkAnchor('Shapes','GetBoundary','Shapes.GetB
-                | oundary'),activateLinkAnchor('HybridShapes','GetBoundary','HybridShape
-                | s.GetBoundary'),activateLinkAnchor('Sketches','GetBoundary','Sketches.
-                | GetBoundary')oractivateLinkAnchor('Selection','SelectElement2','Select
-                | ion.SelectElement2')method. Then, you pass it to the operator (such as
-                | activateLinkAnchor('HybridShapeFactory','AddNewPointTangent','HybridSh
-                | apeFactory.AddNewPointTangent')).  The lifetime of a MonoDimFeatEdge
-                | object is limited, seeactivateLinkAnchor('Boundary','','Boundary').
-
+                | dimensional.
+                | Role: This Boundary object may be, for example, in a part containing a Sketch
+                | which is made up of a circle arc and a spline, the circle arc.
+                | You will create a MonoDimFeatEdge object using the Shapes.GetBoundary ,
+                | HybridShapes.GetBoundary , Sketches.GetBoundary or Selection.SelectElement2
+                | method. Then, you pass it to the operator (such as
+                | HybridShapeFactory.AddNewPointTangent ).
+                | The lifetime of a MonoDimFeatEdge object is limited, see
+                | Boundary.
+                | 
+                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
+    
     """
 
     def __init__(self, com_object):
@@ -30,4 +48,4 @@ class MonoDimFeatEdge(Edge):
         self.mono_dim_feat_edge = com_object
 
     def __repr__(self):
-        return f'MonoDimFeatEdge(name="{self.name}")'
+        return f'MonoDimFeatEdge(name="{ self.name }")'

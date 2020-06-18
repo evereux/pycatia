@@ -120,7 +120,7 @@ class MemoryWarningSettingAtt(SettingController):
                 | 
                 |     Retrieves environment informations for the memory warning
                 |     mechanism.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param str admin_level:
         :param str o_locked:
@@ -137,7 +137,7 @@ class MemoryWarningSettingAtt(SettingController):
                 | 
                 |     Retrieves environment informations for the memory stopper
                 |     mechanism.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param str admin_level:
         :param str o_locked:
@@ -154,7 +154,7 @@ class MemoryWarningSettingAtt(SettingController):
                 | 
                 |     Retrieves environment informations for the alert
                 |     percentage.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param str admin_level:
         :param str o_locked:
@@ -170,7 +170,7 @@ class MemoryWarningSettingAtt(SettingController):
                 | 
                 |     Locks or unlocks the activation mode of the memory warning
                 |     mechanism.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
         :return: None
@@ -200,7 +200,7 @@ class MemoryWarningSettingAtt(SettingController):
                 | 
                 |     Locks or unlocks the activation mode of the memory stopper
                 |     mechanism.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
         :return: None
@@ -229,7 +229,7 @@ class MemoryWarningSettingAtt(SettingController):
                 | o Sub SetUsageLimitLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the the alert percentage.
-                |     Refer to SettingController for a detailled description.
+                |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
         :return: None

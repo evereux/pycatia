@@ -10,9 +10,10 @@
 """
 
 from pycatia import catia
+from pycatia.enumeration.enumeration_types import cat_work_mode_type
 
 documents = catia.documents
-documents.open(r'tests\CF_TopLevelAssy.CATProduct')
+documents.open(r'cat_files\CF_TopLevelAssy.CATProduct')
 
 document = catia.active_document
 product = document.product()
@@ -20,7 +21,7 @@ product = document.product()
 # Change the work mode to Design Mode.
 # This is useful for CATIA configurations that work with a cache otherwise methods on children may fail
 # due to the document not being loaded.
-product.apply_work_mode("DESIGN_MODE")
+product.apply_work_mode(cat_work_mode_type.index("DESIGN_MODE"))
 
 
 def print_properties(obj):

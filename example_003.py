@@ -13,7 +13,7 @@ import csv
 from pycatia import catia
 
 documents = catia.documents
-documents.open(r'tests\CF_catia_measurable_part.CATPart')
+documents.open(r'cat_files/CF_catia_measurable_part.CATPart')
 
 document = catia.active_document
 

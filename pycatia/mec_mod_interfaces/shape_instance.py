@@ -1,16 +1,34 @@
-#! /usr/bin/python3.6
-# module initially auto generated using V5Automation.chm from CATIA R25 on 2020-05-22 12:54:36.956119
+#! usr/bin/python3.6
+"""
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
-from .shape import Shape
+    .. warning::
+        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+        They are there as a guide as to how the visual basic / catscript functions work
+        and thus help debugging in pycatia.
+        
+"""
+
+from pycatia.mec_mod_interfaces.shape import Shape
+from pycatia.system_interfaces.any_object import AnyObject
 
 
 class ShapeInstance(Shape):
+
     """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
+                | System.IUnknown
+                |     System.IDispatch
+                |         System.CATBaseUnknown
+                |             System.CATBaseDispatch
+                |                 System.AnyObject
+                |                     MecModInterfaces.Shape
+                |                         ShapeInstance
+                | 
                 | The interface to access a CATIAShapeInstance.
-
+    
     """
 
     def __init__(self, com_object):
@@ -21,362 +39,355 @@ class ShapeInstance(Shape):
     def inputs_count(self):
         """
         .. note::
-            CAA V5 Visual Basic help
-
-                | InputsCount
-                | o Property InputsCount() As   (Read Only)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property InputsCount() As long (Read Only)
                 | 
-                | Returns the number of Inputs. 
-                |
-                | Example:
-                | The following example
-                | retrieves in inputsCount the number of Inputs of
-                | hybridShapeInstance: inputsCount =
-                | hybridShapeInstance.InputsCount
+                |     Returns the number of Inputs.
+                | 
+                |     Example:
+                |         The following example retrieves in inputsCount the number of Inputs of
+                |         hybridShapeInstance:
+                | 
+                |          inputsCount = hybridShapeInstance.InputsCount
 
         :return: int
         """
+
         return self.shape_instance.InputsCount
 
     @property
     def outputs_count(self):
         """
         .. note::
-            CAA V5 Visual Basic help
-
-                | OutputsCount
-                | o Property OutputsCount() As   (Read Only)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property OutputsCount() As long (Read Only)
                 | 
-                | Returns the number of Outputs. 
-                |
-                | Example:
-                | The following
-                | example retrieves in outputsCount the number of Outputs of
-                | hybridShapeInstance: outputsCount =
-                | hybridShapeInstance.OutputsCount
+                |     Returns the number of Outputs.
+                | 
+                |     Example:
+                |         The following example retrieves in outputsCount the number of Outputs
+                |         of hybridShapeInstance:
+                | 
+                |          outputsCount = hybridShapeInstance.OutputsCount
 
         :return: int
         """
+
         return self.shape_instance.OutputsCount
 
     @property
     def parameters_count(self):
         """
         .. note::
-            CAA V5 Visual Basic help
-
-                | ParametersCount
-                | o Property ParametersCount() As   (Read Only)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property ParametersCount() As long (Read Only)
                 | 
-                | Returns the number of Parameters. 
-                |
-                | Example:
-                | The following
-                | example retrieves in parametersCount the number of
-                | parameters of hybridShapeInstance: parametersCount =
-                | hybridShapeInstance.ParametersCount
+                |     Returns the number of Parameters.
+                | 
+                |     Example:
+                |         The following example retrieves in parametersCount the number of
+                |         parameters of hybridShapeInstance:
+                | 
+                |          parametersCount = hybridShapeInstance.ParametersCount
 
         :return: int
         """
+
         return self.shape_instance.ParametersCount
 
-    def get_input(self, i_name):
+    def get_input(self, i_name=None):
         """
         .. note::
-            CAA V5 Visual Basic help
-
-                | GetInput
-                | o Func GetInput(iName) As
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Func GetInput(CATBSTR iName) As AnyObject
                 | 
-                | Gets an input of a shape instance by its name.
-                |
-                | Parameters:
-                | iName
-                |    The name of the input of the shape instance
-                |  
-                |  Returns:
-                |      The input, if found
-                |
-                | Examples:
-                | The following example tests if the input was found: Set
-                | input = shapeInstance.GetInput("Input1") If
-                | TypeName(input)="Nothing" Then MsgBox "Input not found" End
-                | If
+                |     Gets an input of a shape instance by its name.
+                | 
+                |     Parameters:
+                | 
+                |         iName
+                |             The name of the input of the shape instance 
+                | 
+                |     Returns:
+                |         The input, if found 
+                |     Example:
+                |         The following example tests if the input was found:
+                | 
+                |          Set input = shapeInstance.GetInput("Input1")
+                |          If TypeName(input)="Nothing" Then
+                |               MsgBox "Input not found"
+                |          End If
 
         :param str i_name:
-        :return: AnyObject()
+        :return: AnyObject
         """
-        return self.shape_instance.GetInput(i_name)
+        return AnyObject(self.shape_instance.GetInput(i_name))
 
-    def get_input_data(self, i_name):
+    def get_input_data(self, i_name=None):
         """
         .. note::
-            CAA V5 Visual Basic help
-
-                | GetInputData
-                | o Func GetInputData(iName) As
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Func GetInputData(CATBSTR iName) As CATBaseDispatch
                 | 
-                | Gets an input of a shape instance by its name. Use this
-                | method if you want to retrieve a Reference.
-                |
-                | Parameters:
-                | iName
-                |    The name of the input of the shape instance
-                |  
-                |  Returns:
-                |      The input, if found
-                |
-                | Examples:
-                | The following example tests if the input was found: Set
-                | input = shapeInstance.GetInput("Input1")
-                | If TypeName(input)="Nothing"
-                |   Then MsgBox "Input not found"
-                | End If
+                |     Gets an input of a shape instance by its name. Use this method if you want
+                |     to retrieve a Reference.
+                | 
+                |     Parameters:
+                | 
+                |         iName
+                |             The name of the input of the shape instance 
+                | 
+                |     Returns:
+                |         The input, if found 
+                |     Example:
+                |         The following example tests if the input was found:
+                | 
+                |          Set input = shapeInstance.GetInput("Input1")
+                |          If TypeName(input)="Nothing" Then
+                |               MsgBox "Input not found"
+                |          End If
 
         :param str i_name:
-        :return:
+        :return: AnyObject
         """
         return self.shape_instance.GetInputData(i_name)
 
-    def get_input_data_from_position(self, i_position):
+    def get_input_data_from_position(self, i_position=None):
         """
         .. note::
-            CAA V5 Visual Basic help
-
-                | GetInputDataFromPosition
-                | o Func GetInputDataFromPosition(iPosition) As
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Func GetInputDataFromPosition(long iPosition) As
+                | CATBaseDispatch
                 | 
-                | Gets an input of a hybrid shape instance from its position.
-                | Use this method if you want to retrieve a Reference.
-                |
-                | Parameters:
-                | iPosition
-                |    The position 
-                |  
-                |  Returns:
-                |      The input, if found
-                |
-                | Examples:
-                | The following example tests if the input was found:
-                | Set input = hybridShapeInstance.GetInputFromPosition(2)
-                | If TypeName(input)="Nothing"
-                |   Then MsgBox "Input not found"
-                | End If
+                |     Gets an input of a hybrid shape instance from its position. Use this method
+                |     if you want to retrieve a Reference.
+                | 
+                |     Parameters:
+                | 
+                |         iPosition
+                |             The position 
+                | 
+                |     Returns:
+                |         The input, if found 
+                |     Example:
+                |         The following example tests if the input was found:
+                | 
+                |          Set input = hybridShapeInstance.GetInputFromPosition(2)
+                |          If TypeName(input)="Nothing" Then
+                |               MsgBox "Input not found"
+                |          End If
 
-        :param str i_position:
-        :return:
+        :param int i_position:
+        :return: AnyObject
         """
         return self.shape_instance.GetInputDataFromPosition(i_position)
 
-    def get_input_from_position(self, i_position):
+    def get_input_from_position(self, i_position=None):
         """
         .. note::
-            CAA V5 Visual Basic help
-
-                | GetInputFromPosition
-                | o Func GetInputFromPosition(iPosition) As
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Func GetInputFromPosition(long iPosition) As AnyObject
                 | 
-                | Gets an input of a hybrid shape instance from its position.
-                |
-                | Parameters:
-                | iPosition
-                |    The position 
-                |  
-                |  Returns:
-                |      The input, if found
-                |
-                | Examples:
-                | The following example tests if the input was found:
-                | Set input = hybridShapeInstance.GetInputFromPosition(2)
-                | If TypeName(input)="Nothing"
-                |   Then MsgBox "Input not found"
-                | End If
+                |     Gets an input of a hybrid shape instance from its
+                |     position.
+                | 
+                |     Parameters:
+                | 
+                |         iPosition
+                |             The position 
+                | 
+                |     Returns:
+                |         The input, if found 
+                |     Example:
+                |         The following example tests if the input was found:
+                | 
+                |          Set input = hybridShapeInstance.GetInputFromPosition(2)
+                |          If TypeName(input)="Nothing" Then
+                |               MsgBox "Input not found"
+                |          End If
 
-        :param str i_position:
-        :return:
+        :param int i_position:
+        :return: AnyObject
         """
-        return self.shape_instance.GetInputFromPosition(i_position)
+        return AnyObject(self.shape_instance.GetInputFromPosition(i_position))
 
-    def get_output(self, i_name):
+    def get_output(self, i_name=None):
         """
         .. note::
-            CAA V5 Visual Basic help
-
-                | GetOutput
-                | o Func GetOutput(iName) As
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Func GetOutput(CATBSTR iName) As AnyObject
                 | 
-                | Gets a Ouput by its name.
-                |
-                | Parameters:
-                | iName
-                |    The name of the output of the shape instance
-                |  
-                |  Returns:
-                |   	 The output, if found
-                |
-                | Examples:
-                | The following example tests if the output was found: Set
-                | output = shapeInstance.GetOuput("Output1") If
-                | TypeName(output)="Nothing" Then MsgBox "Output not found"
-                | End If
+                |     Gets a Ouput by its name.
+                | 
+                |     Parameters:
+                | 
+                |         iName
+                |             The name of the output of the shape instance 
+                | 
+                |     Returns:
+                |         The output, if found 
+                |     Example:
+                |         The following example tests if the output was found:
+                | 
+                |          Set output = shapeInstance.GetOuput("Output1")
+                |          If TypeName(output)="Nothing" Then
+                |               MsgBox "Output not found"
+                |          End If
 
         :param str i_name:
-        :return:
+        :return: AnyObject
         """
-        return self.shape_instance.GetOutput(i_name)
+        return AnyObject(self.shape_instance.GetOutput(i_name))
 
-    def get_output_from_position(self, i_position):
+    def get_output_from_position(self, i_position=None):
         """
         .. note::
-            CAA V5 Visual Basic help
-
-                | GetOutputFromPosition
-                | o Func GetOutputFromPosition(iPosition) As
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Func GetOutputFromPosition(long iPosition) As AnyObject
                 | 
-                | Gets a Ouput from its position.
-                |
-                | Parameters:
-                | iPosition
-                |    The position 
-                |  
-                |  Returns:
-                |   	 The output, if found
-                |
-                | Examples:
-                | The following example tests if the output was found: 
-                | Set output = shapeInstance.GetOuputFromPosition(2) 
-                | If TypeName(output)="Nothing" 
-                |   Then MsgBox "Output not found"
-                | End If
-
-        :param str i_position:
-        :return:
-        """
-        return self.shape_instance.GetOutputFromPosition(i_position)
-
-    def get_parameter(self, i_name):
-        """
-        .. note::
-            CAA V5 Visual Basic help
-
-                | GetParameter
-                | o Func GetParameter(iName) As
+                |     Gets a Ouput from its position.
                 | 
-                | Gets a parameter of a shape instance by its name.
-                |
-                | Parameters:
-                | iName
-                |    The name of the parameter of the shape instance
-                |  
-                |  Returns:
-                |   	 The parameter, if found
-                |
-                | Examples:
-                | The following example tests if the parameter was found: 
-                | Set parameter = shapeInstance.GetParameter("Parameter1") 
-                | If TypeName(parameter)="Nothing" 
-                |   Then MsgBox "Parameter not found" 
-                | End If
+                |     Parameters:
+                | 
+                |         iPosition
+                |             The position 
+                | 
+                |     Returns:
+                |         The output, if found 
+                |     Example:
+                |         The following example tests if the output was found:
+                | 
+                |          Set output = shapeInstance.GetOuputFromPosition(2)
+                |          If TypeName(output)="Nothing" Then
+                |               MsgBox "Output not found"
+                |          End If
 
-        :param str i_name:
-        :return:
+        :param int i_position:
+        :return: AnyObject
         """
-        return self.shape_instance.GetParameter(i_name)
+        return AnyObject(self.shape_instance.GetOutputFromPosition(i_position))
 
-    def get_parameter_from_position(self, i_position):
-        """
-        .. note::
-            CAA V5 Visual Basic help
-
-                | GetParameterFromPosition
-                | o Func GetParameterFromPosition(iPosition) As
-                |
-                | Gets a parameter of a hybrid shape instance from its
-                | position.
-                |
-                | Parameters:
-                | iPosition
-                |    The position
-                |
-                |  Returns:
-                |      The parameter, if found
-                |
-                | Examples:
-                | The following example tests if the parameter was found:
-                | Set parameter = hybridShapeInstance.GetParameterFromPosition(2)
-                | If TypeName(input)="Nothing"
-                | Then MsgBox "Parameter not found"
-                | End If
-
-        :param str i_position:
-        :return:
-        """
-        return self.shape_instance.GetParameterFromPosition(i_position)
-
-    def put_input(self, i_name, i_input):
+    def get_parameter(self, i_name=None):
         """
         .. note::
-            CAA V5 Visual Basic help
-
-                | PutInput
-                | o Sub PutInput(iName,
-                |                        iInput)
-                |
-                | Defines an input of a shape instance.
-                |
-                | Parameters:
-                | iName
-                |    The input name
-                |
-                |  iInput
-                |    The element wich will be input of the shape instance
-                |    All types of
-                |
-                |  object are possibly supported.
-                |
-                | Examples:
-                | The following example defines the input of a shape instance
-                | The input will be a point and its name will be Input1.
-                | shapeInstance.PutInput "Input1",point
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Func GetParameter(CATBSTR iName) As AnyObject
+                | 
+                |     Gets a parameter of a shape instance by its name.
+                | 
+                |     Parameters:
+                | 
+                |         iName
+                |             The name of the parameter of the shape instance 
+                | 
+                |     Returns:
+                |         The parameter, if found 
+                |     Example:
+                |         The following example tests if the parameter was
+                |         found:
+                | 
+                |          Set parameter = shapeInstance.GetParameter("Parameter1")
+                |          If TypeName(parameter)="Nothing" Then
+                |               MsgBox "Parameter not found"
+                |          End If
 
         :param str i_name:
-        :param i_input:
-        :return:
+        :return: AnyObject
         """
-        return self.shape_instance.PutInput(i_name, i_input)
+        return AnyObject(self.shape_instance.GetParameter(i_name))
 
-    def put_input_data(self, i_name, i_input):
+    def get_parameter_from_position(self, i_position=None):
         """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Func GetParameterFromPosition(long iPosition) As AnyObject
+                | 
+                |     Gets a parameter of a hybrid shape instance from its
+                |     position.
+                | 
+                |     Parameters:
+                | 
+                |         iPosition
+                |             The position 
+                | 
+                |     Returns:
+                |         The parameter, if found 
+                |     Example:
+                |         The following example tests if the parameter was
+                |         found:
+                | 
+                |          Set parameter = hybridShapeInstance.GetParameterFromPosition(2)
+                |          If TypeName(input)="Nothing" Then
+                |                MsgBox "Parameter not found"
+                |          End If
 
-                | PutInputData
-                | o Sub PutInputData(iName,
-                |                            iInput)
-                |
-                | Defines an input of a shape instance. Use this method if you
-                | want to set as input a Reference.
-                |
-                | Parameters:
-                | iName
-                |    The input name
-                |
-                |  iInput
-                |    The element wich will be input of the shape instance
-                |    All types of
-                |
-                |  object are possibly supported.
-                |
-                | Examples:
-                | The following example defines the input of a shape instance
-                | The input will be a point and its name will be Input1.
-                | shapeInstance.PutInput "Input1",point
+        :param int i_position:
+        :return: AnyObject
+        """
+        return AnyObject(self.shape_instance.GetParameterFromPosition(i_position))
+
+    def put_input(self, i_name=None, i_input=None):
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Sub PutInput(CATBSTR iName,
+                | AnyObject iInput)
+                | 
+                |     Defines an input of a shape instance.
+                | 
+                |     Parameters:
+                | 
+                |         iName
+                |             The input name 
+                |         iInput
+                |             The element wich will be input of the shape
+                |             instance
+                |             All types of 
+                | 
+                |         Boundary object are possibly supported. 
+                |     Example:
+                |         The following example defines the input of a shape instance The input
+                |         will be a point and its name will be Input1.
+                | 
+                |          shapeInstance.PutInput "Input1",point
 
         :param str i_name:
-        :param i_input:
-        :return:
+        :param AnyObject i_input:
+        :return: None
         """
-        return self.shape_instance.PutInputData(i_name, i_input)
+        return self.shape_instance.PutInput(i_name, i_input.com_object)
+
+    def put_input_data(self, i_name=None, i_input=None):
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Sub PutInputData(CATBSTR iName,
+                | CATBaseDispatch iInput)
+                | 
+                |     Defines an input of a shape instance. Use this method if you want to set as
+                |     input a Reference.
+                | 
+                |     Parameters:
+                | 
+                |         iName
+                |             The input name 
+                |         iInput
+                |             The element wich will be input of the shape
+                |             instance
+                |             All types of 
+                | 
+                |         Boundary object are possibly supported. 
+                |     Example:
+                |         The following example defines the input of a shape instance The input
+                |         will be a point and its name will be Input1.
+                | 
+                |          shapeInstance.PutInput "Input1",point
+
+        :param str i_name:
+        :param AnyObject i_input:
+        :return: None
+        """
+        return self.shape_instance.PutInputData(i_name, i_input.com_object)
 
     def __repr__(self):
-        return f'ShapeInstance()'
+        return f'ShapeInstance(name="{ self.name }")'

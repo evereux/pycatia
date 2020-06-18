@@ -1,7 +1,9 @@
+.. _examples:
+
 Examples
 ========
 
-The module pycatia must already be installed. CATIA sample files are available within the `github <https://github.com/evereux/pycatia/tree/master/tests>`_. repository.
+The module pycatia must already be installed.
 
 Example 1
 ---------
