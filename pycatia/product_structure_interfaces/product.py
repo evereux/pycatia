@@ -672,7 +672,7 @@ class Product(AnyObject):
                 |         newMode
                 |             The new working mode.
 
-        :param CatWorkModeType new_mode:
+        :param int new_mode:
         :return: None
         """
         return self.product.ApplyWorkMode(new_mode)
