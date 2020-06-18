@@ -1,32 +1,70 @@
-#! /usr/bin/python3.6
-# module initially auto generated using V5Automation.chm from CATIA R25 on 2020-05-18 10:56:40.651039
+#! usr/bin/python3.6
+"""
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
+    .. warning::
+        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+        They are there as a guide as to how the visual basic / catscript functions work
+        and thus help debugging in pycatia.
 
-from .boundary import Boundary
+"""
+
+from pycatia.mec_mod_interfaces.boundary import Boundary
 
 
 class Edge(Boundary):
+
     """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
-                | 1-D boundary.Role:
-                | ThisactivateLinkAnchor('Boundary','','Boundary')object may be, for
-                | example, the edge of a cylinder. You will create an Edge object using 
-                | theactivateLinkAnchor('Shapes','GetBoundary','Shapes.GetBoundary'),act
-                | ivateLinkAnchor('HybridShapes','GetBoundary','HybridShapes.GetBoundary
-                | '),activateLinkAnchor('Sketches','GetBoundary','Sketches.GetBoundary')
-                | oractivateLinkAnchor('Selection','SelectElement2','Selection.SelectEle
-                | ment2')method. Then, you pass it to the operator (such asactivateLinkA
-                | nchor('HybridShapeFactory','AddNewPointTangent','HybridShapeFactory.Ad
-                | dNewPointTangent')).  The lifetime of an Edge object is limited,
-                | seeactivateLinkAnchor('Boundary','','Boundary').See also:activateLinkA
-                | nchor('TriDimFeatEdge','','TriDimFeatEdge'),activateLinkAnchor('Rectil
-                | inearTriDimFeatEdge','','RectilinearTriDimFeatEdge'),activateLinkAncho
-                | r('BiDimFeatEdge','','BiDimFeatEdge'),activateLinkAnchor('RectilinearB
-                | iDimFeatEdge','','RectilinearBiDimFeatEdge'),activateLinkAnchor('MonoD
-                | imFeatEdge','','MonoDimFeatEdge'),activateLinkAnchor('RectilinearMonoD
-                | imFeatEdge','','RectilinearMonoDimFeatEdge').
+                | System.IUnknown
+                |     System.IDispatch
+                |         System.CATBaseUnknown
+                |             System.CATBaseDispatch
+                |                 System.AnyObject
+                |                     InfInterfaces.Reference
+                |                         MecModInterfaces.Boundary
+                |                             Edge
+                |
+                | 1-D boundary.
+                | Role: This Boundary object may be, for example, the edge of a
+                | cylinder.
+                | You will create an Edge object using the Shapes.GetBoundary ,
+                | HybridShapes.GetBoundary , Sketches.GetBoundary or Selection.SelectElement2
+                | method. Then, you pass it to the operator (such as
+                | HybridShapeFactory.AddNewPointTangent ).
+                | The lifetime of an Edge object is limited, see Boundary.
+                | See also:
+                | TriDimFeatEdge , RectilinearTriDimFeatEdge , BiDimFeatEdge ,
+                | RectilinearBiDimFeatEdge , MonoDimFeatEdge , RectilinearMonoDimFeatEdge
+                | .
+                |
+                | Example:
+                |     This example asks the end user to select a planar curve, whose plane is
+                |     parallel to the XY plane. Then, it creates a point on the tangent to the curve
+                |     in the X direction:
+                |
+                |      Dim InputObjectType(0)
+                |      Set Document = CATIA.ActiveDocument
+                |      Set Selection = Document.Selection
+                |      Set HybridBodies = Document.Part.HybridBodies
+                |      Set HybridBody = HybridBodies.Item("Geometrical Set.1")
+                |      'We propose to the user that he select a planar curve whose plane is
+                |      parallel to the XY plane
+                |      InputObjectType(0)="Edge"
+                |      Status=Selection.SelectElement2(InputObjectType,"Select a planar curve
+                |      whose plane is parallel to the XY plane",true)
+                |      if (Status = "cancel") then Exit Sub
+                |      Set PlanarCurve = Selection.Item(1).Value
+                |      Set HybridShapeDirection = HybridShapeFactory.AddNewDirectionByCoord(1.0,0.0,0.0)
+                |      Set HybridShapePointTangent = HybridShapeFactory.AddNewPointTangent(PlanarCurve,HybridShapeDirection)
+                |      HybridBody.AppendHybridShape HybridShapePointTangent
+                |      Document.Part.InWorkObject = HybridShapePointTangent
+                |      Document.Part.Update
+                |
+                |
+                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
 
     """
 
@@ -35,4 +73,4 @@ class Edge(Boundary):
         self.edge = com_object
 
     def __repr__(self):
-        return f'Edge()'
+        return f'Edge(name="{ self.name }")'

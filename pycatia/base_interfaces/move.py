@@ -1,8 +1,10 @@
 #! /usr/bin/python3.6
 # module initially auto generated using V5Automation.chm from CATIA V5 R25
 
+from pycatia.system_interfaces.any_object import AnyObject
 
-class Move:
+
+class Move(AnyObject):
     """
         .. note::
             CAA V5 Visual Basic help
@@ -17,8 +19,10 @@ class Move:
 
     """
 
-    def __init__(self, movable):
-        self.move = movable.Move
+    def __init__(self, com_object):
+        super().__init__(com_object)
+        self.move = com_object
+        self.com_object = com_object
 
     @property
     def movable_object(self):
