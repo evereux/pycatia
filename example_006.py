@@ -18,7 +18,7 @@ import os
 from pycatia import catia
 
 # path to file to open.
-file_name = r'tests\CF_Part_1.CATPart'
+file_name = r'cat_files\CF_Part_1.CATPart'
 
 # open document
 documents = catia.documents
@@ -31,9 +31,9 @@ new_file_name = Path(os.getcwd(), 'new_part.CATPart')
 # save document as new name.
 document.save_as(new_file_name, overwrite=True)
 
-# to export to another support fileformat (license permitting).
+# to export to another support file_format (license permitting).
 new_export_file_name = r"c:\temp\new_export_part"
-document.export_data(new_export_file_name, "stp")
+document.export_data(new_export_file_name, "stp", overwrite=True)
 
 # close document
 document.close()

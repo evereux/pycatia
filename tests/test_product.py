@@ -4,6 +4,7 @@ import os
 from pathlib import Path
 
 from pycatia import CATIADocHandler
+from pycatia.enumeration.enumeration_types import cat_work_mode_type
 from pycatia.product_structure_interfaces.product import Product
 from tests.source_files import cat_product
 from tests.source_files import cat_part_measurable
@@ -37,7 +38,7 @@ def test_attributes():
                       'Nomenclature:          This is the nomenclature for TopLevelAssy\n'
                       'Description Instance:  \n'
                       'Description Reference: This is the description for TopLevelAssy\n'
-                      'Reference:             <COMObject <unknown>>\n'
+                      'Reference:             Product(name="CF_TopLevelAssy")\n'
                       'Is CATProduct:         True\n'
                       'Is CATPart:            False')
 
@@ -149,7 +150,7 @@ def test_move():
     with CATIADocHandler(cat_product) as handler:
         product = handler.document.product()
 
-        product.apply_work_mode("DESIGN_MODE")
+        product.apply_work_mode(cat_work_mode_type.index("DESIGN_MODE"))
 
         transformation = (
             1.000,

@@ -11,7 +11,7 @@
 from pycatia import catia
 
 documents = catia.documents
-documents.open(r'tests\CF_TopLevelAssy.CATProduct')
+documents.open(r'cat_files\CF_TopLevelAssy.CATProduct')
 document = catia.active_document
 
 product = document.product()
