@@ -4,6 +4,8 @@ enumeration
 .. highlight:: console
 
 
+.. _enumeration-enumeration_types:
+
 enumeration_types
 -----------------
 
