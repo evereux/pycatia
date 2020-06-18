@@ -9,7 +9,6 @@
         
 """
 
-from pycatia.in_interfaces.document import Document
 from pycatia.in_interfaces.reference import Reference
 from pycatia.system_interfaces.any_object import AnyObject
 
@@ -48,7 +47,7 @@ class Selection(AnyObject):
 
         :return: Document
         """
-
+        from pycatia.in_interfaces.document import Document
         return Document(self.selection.Document)
 
     @property

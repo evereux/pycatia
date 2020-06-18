@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.3
+* Many updates to doc strings for methods from earlier versions.
+* Product.apply_work_mode() now expects an integer. See example_010 on new usage.
+* Many new modules and classes added. 
+
 ## 0.3.2
 * Renamed sketcher interfaces.
 * Collection object returns child_object on get_item.

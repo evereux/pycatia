@@ -82,13 +82,14 @@ def create_points(part, file_name, units='mm', geometry_set_name='New_Points'):
     points = csv_reader(file_name, units)
 
     geometrical_set = part.hybrid_bodies.add()
-    geometrical_set.Name = geometry_set_name
+    geometrical_set.name = geometry_set_name
 
     hsf = part.hybrid_shape_factory
 
     for point in points:
         start = time.time()
-        hsf.add_new_point_coord(point['x'], point['y'], point['z'])
+        new_point = hsf.add_new_point_coord(point['x'], point['y'], point['z'])
+        geometrical_set.append_hybrid_shape(new_point)
         end = time.time()
         time_taken = end - start
         print(f"Added point: {point['name']}. Time taken = {round(time_taken, 3)} seconds", end="\r")

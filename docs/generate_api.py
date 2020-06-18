@@ -12,26 +12,6 @@ api_text = 'API\n' \
 last_parent = None
 body = ''
 
-# for file in files:
-#     name = file.name
-#     parent_module = file.parent.name
-#     header = '\n' + str(parent_module)
-#     header = header + '\n' + '-' * len(header)
-#     header = header + '\n\n'
-#     if name != '__init__.py':
-#         auto_module = 'pycatia' + '.' + str(parent_module) + '.' + name
-#         auto_module = auto_module[0:-3]
-#         body = '.. automodule:: ' + auto_module + '\n' \
-#                                                   '    :members:\n\n'
-#         if last_parent != parent_module:
-#             api_text = api_text + header
-#         api_text = api_text + body
-#
-#         last_parent = parent_module
-#
-# with open('api.rst', 'w') as file:
-#     file.write(api_text)
-
 files = [file for file in files]
 files.sort()
 
@@ -76,7 +56,8 @@ for api in api_dict:
 
     with open(module_file_name, 'a') as file:
         for module in api_dict[api]:
-            content = f"{module}\n" \
+            content = f".. _{api}-{module}:\n\n" \
+                      f"{module}\n" \
                       f"{'-' * len(module)}\n\n" \
                       f".. automodule:: pycatia.{api}.{module}\n" \
                       f"    :members:\n\n\n"

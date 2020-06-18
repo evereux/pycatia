@@ -6,11 +6,14 @@
 
     Get all the points in the geometrical set 'Points' and output co-ordinate to console.
 
+    Create your own CATPart with a Geometrical Set called Points. Add some points to the Geometrical Set.
+
 """
 from pycatia import catia
 
 documents = catia.documents
-documents.open(r'tests\CF_catia_measurable_part.CATPart')
+# this should be the path to your file.
+documents.open(r'cat_files\CF_catia_measurable_part.CATPart')
 
 document = catia.active_document
 part = document.part()

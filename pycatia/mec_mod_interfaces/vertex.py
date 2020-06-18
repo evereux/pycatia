@@ -1,32 +1,74 @@
-#! /usr/bin/python3.6
-# module initially auto generated using V5Automation.chm from CATIA R25 on 2020-05-22 12:54:36.956119
+#! usr/bin/python3.6
+"""
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
-from .boundary import Boundary
+    .. warning::
+        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+        They are there as a guide as to how the visual basic / catscript functions work
+        and thus help debugging in pycatia.
+        
+"""
+
+from pycatia.mec_mod_interfaces.boundary import Boundary
 
 
 class Vertex(Boundary):
+
     """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
-                | 0-D boundary.Role:
-                | ThisactivateLinkAnchor('Boundary','','Boundary')object may be, for
-                | example, the corner of a Pad resulting from the extrusion of a
-                | square. You will create an Vertex object using theactivateLinkAnchor('
-                | Shapes','GetBoundary','Shapes.GetBoundary'),activateLinkAnchor('Hybrid
-                | Shapes','GetBoundary','HybridShapes.GetBoundary'),activateLinkAnchor('
-                | Sketches','GetBoundary','Sketches.GetBoundary')oractivateLinkAnchor('S
-                | election','SelectElement2','Selection.SelectElement2')method. Then,
-                | you pass it to the operator (such asactivateLinkAnchor('HybridShapeFac
-                | tory','AddNewLinePtPt','HybridShapeFactory.AddNewLinePtPt')).  The
-                | lifetime of a Vertex object is limited,
-                | seeactivateLinkAnchor('Boundary','','Boundary').See also:activateLinkA
-                | nchor('TriDimFeatVertexOrBiDimFeatVertex','','TriDimFeatVertexOrBiDimF
-                | eatVertex'),activateLinkAnchor('NotWireBoundaryMonoDimFeatVertex','','
-                | NotWireBoundaryMonoDimFeatVertex'),activateLinkAnchor('ZeroDimFeatVert
-                | exOrWireBoundaryMonoDimFeatVertex','','ZeroDimFeatVertexOrWireBoundary
-                | MonoDimFeatVertex').
-
+                | System.IUnknown
+                |     System.IDispatch
+                |         System.CATBaseUnknown
+                |             System.CATBaseDispatch
+                |                 System.AnyObject
+                |                     InfInterfaces.Reference
+                |                         MecModInterfaces.Boundary
+                |                             Vertex
+                | 
+                | 0-D boundary.
+                | Role: This Boundary object may be, for example, the corner of a Pad resulting
+                | from the extrusion of a square.
+                | You will create an Vertex object using the Shapes.GetBoundary ,
+                | HybridShapes.GetBoundary , Sketches.GetBoundary or Selection.SelectElement2
+                | method. Then, you pass it to the operator (such as
+                | HybridShapeFactory.AddNewLinePtPt ).
+                | The lifetime of a Vertex object is limited, see Boundary.
+                | See also:
+                | TriDimFeatVertexOrBiDimFeatVertex , NotWireBoundaryMonoDimFeatVertex ,
+                | ZeroDimFeatVertexOrWireBoundaryMonoDimFeatVertex .
+                | 
+                | Example:
+                |     This example asks the end user to select successively two vertices. Then,
+                |     it creates a line between these two vertices.
+                | 
+                |      Dim InputObjectType(0)
+                |      Set Document = CATIA.ActiveDocument
+                |      Set Selection = Document.Selection
+                |      Set HybridBodies = Document.Part.HybridBodies
+                |      Set HybridBody = HybridBodies.Item("Geometrical Set.1")
+                |      'We propose to the user that he select the first vertex
+                |      InputObjectType(0)="Vertex"
+                |      Status=Selection.SelectElement2(InputObjectType,"Select the first
+                |      vertex",true)
+                |      if (Status = "cancel") then Exit Sub
+                |      Set FirstVertex = Selection.Item(1).Value
+                |      Selection.Clear
+                |      'We propose to the user that he select the second vertex
+                |      InputObjectType(0)="Vertex"
+                |      Status=Selection.SelectElement2(InputObjectType,"Select the second
+                |      vertex",true)
+                |      if (Status = "cancel") then Exit Sub
+                |      Set SecondVertex = Selection.Item(1).Value
+                |      Set hybridShapeLinePtPt = HybridShapeFactory.AddNewLinePtPt(FirstVertex,SecondVertex)
+                |      HybridBody.AppendHybridShape hybridShapeLinePtPt
+                |      Document.Part.InWorkObject = hybridShapeLinePtPt
+                |      Document.Part.Update 
+                |      
+                | 
+                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
+    
     """
 
     def __init__(self, com_object):
@@ -34,4 +76,4 @@ class Vertex(Boundary):
         self.vertex = com_object
 
     def __repr__(self):
-        return f'Vertex(name="{self.name}")'
+        return f'Vertex(name="{ self.name }")'

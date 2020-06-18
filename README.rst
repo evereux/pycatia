@@ -116,6 +116,12 @@ to re-construct all the classes and methods for python. It's largely complete bu
 out the box without some tweaking. But these files should be the basis for any pull requests.
 They will save you sometime and effort and ensure some consistency for the project.
 
+If you have written a script using pycatia you would like to share you can:
+
+* email me your script: evereux@gmail.com
+* submit a pull request.
+* raise an issue
+
 
 Running The Tests
 -----------------
