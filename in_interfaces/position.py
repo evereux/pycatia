@@ -1,7 +1,7 @@
 #! /usr/bin/python3.6
 
+from pycatia.base_interfaces.move import Move
 from pycatia.system_interfaces.system_service import SystemService
-from .move import Move
 
 
 class Position(Move):
@@ -15,7 +15,7 @@ class Position(Move):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.position = com_object.Position
+        self.position = com_object
 
     def get_components(self):
         """

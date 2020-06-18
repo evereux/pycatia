@@ -1,15 +1,34 @@
-#! /usr/bin/python3.6
-# module initially auto generated using V5Automation.chm from CATIA R25
+#! usr/bin/python3.6
+"""
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+
+    .. warning::
+        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+        They are there as a guide as to how the visual basic / catscript functions work
+        and thus help debugging in pycatia.
+
+"""
 
 from pycatia.system_interfaces.any_object import AnyObject
 
 
 class Factory(AnyObject):
+
     """
         .. note::
-            CAA V5 Visual Basic help
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
-                | Abstract object gathering behaviours of all objects being a factory.
+                | System.IUnknown
+                |     System.IDispatch
+                |         System.CATBaseUnknown
+                |             System.CATBaseDispatch
+                |                 System.AnyObject
+                |                     Factory
+                |
+                | Abstract object gathering behaviours of all objects being a
+                | factory.
+                |
+                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
 
     """
 
@@ -18,4 +37,4 @@ class Factory(AnyObject):
         self.factory = com_object
 
     def __repr__(self):
-        return f'Factory()'
+        return f'Factory(name="{ self.name }")'

@@ -1,0 +1,162 @@
+#! usr/bin/python3.6
+"""
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+
+    .. warning::
+        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+        They are there as a guide as to how the visual basic / catscript functions work
+        and thus help debugging in pycatia.
+        
+"""
+
+from pycatia.system_interfaces.any_object import AnyObject
+
+
+class Hyperlink(AnyObject):
+
+    """
+        .. note::
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+
+                | System.IUnknown
+                |     System.IDispatch
+                |         System.CATBaseUnknown
+                |             System.CATBaseDispatch
+                |                 System.AnyObject
+                |                     Hyperlink
+                | 
+                | Represents a hyperlink marker.
+    
+    """
+
+    def __init__(self, com_object):
+        super().__init__(com_object)
+        self.hyperlink = com_object
+
+    def add_url(self, i_url=None):
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Sub AddUrl(CATBSTR iUrl)
+                | 
+                |     Adds a url to an Hyperlink.
+                | 
+                |     Parameters:
+                | 
+                |         iUrl
+                |             The URL to be added to the Hyperlink. 
+                | 
+                |     Example:
+                | 
+                |              This example links TheUrl to the NewHyperlink
+                |              Hyperlink.
+                |             
+                | 
+                |             NewHyperlink.AddUrl(TheUrl)
+
+        :param str i_url:
+        :return: None
+        """
+        return self.hyperlink.AddUrl(i_url)
+
+    def count_object(self):
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Func CountObject() As long
+                | 
+                |     Returns the number of Url which are linked to the
+                |     Hyperlink.
+                | 
+                |     Example:
+                | 
+                |              This example reads the number of Url in the Hyperlink NewHyperlink
+                |              .
+                |             
+                | 
+                |             Dim number As Integer
+                |             number = NewHyperlink.CountObject
+
+        :return: int
+        """
+        return self.hyperlink.CountObject()
+
+    def item_object(self, i_index=None):
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Func ItemObject(CATVariant iIndex) As CATBSTR
+                | 
+                |     Returns an Url which is linked to the Hyperlink using its
+                |     index.
+                | 
+                |     Parameters:
+                | 
+                |         iIndex
+                |             The index of the Url in the Hyperlink. The index of the first
+                |             object is 1, and the index of the last object is CountObject.
+                |             
+                | 
+                |     Returns:
+                |         The retrieved Url 
+                |     Example:
+                | 
+                |              This example retrieves in ThisUrl the ninth
+                |              object
+                |             from the NewHyperlink  Hyperlink.
+                |             
+                | 
+                |             Dim ThisUrl As String
+                |             Set ThisUrl = NewHyperlink.ItemObject(9)
+
+        :param CATVariant i_index:
+        :return: str
+        """
+        return self.hyperlink.ItemObject(i_index.com_object)
+
+    def remove_object(self, i_index=None):
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+                | o Sub RemoveObject(CATVariant iIndex)
+                | 
+                |     Removes an Url which is linked to the Hyperlink using its
+                |     index.
+                | 
+                |     Parameters:
+                | 
+                |         iIndex
+                |             The index of the object in the Hyperlink. The index of the first
+                |             object is 1, and the index of the last object is CountObject.
+                |             
+                | 
+                |     Example:
+                | 
+                |              This example removes the ninth Url
+                |             from the NewHyperlink  Hyperlink.
+                |             
+                | 
+                |             NewHyperlink.RemoveObject(9)
+
+        :param CATVariant i_index:
+        :return: None
+        """
+        return self.hyperlink.RemoveObject(i_index.com_object)
+        # # # # Autogenerated comment: 
+        # # some methods require a system service call as the methods expects a vb array object
+        # # passed to it and there is no way to do this directly with python. In those cases the following code
+        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
+        # # vba_function_name = 'remove_object'
+        # # vba_code = """
+        # # Public Function remove_object(hyperlink)
+        # #     Dim iIndex (2)
+        # #     hyperlink.RemoveObject iIndex
+        # #     remove_object = iIndex
+        # # End Function
+        # # """
+
+        # # system_service = SystemService(self.application.SystemService)
+        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+
+    def __repr__(self):
+        return f'Hyperlink(name="{ self.name }")'
