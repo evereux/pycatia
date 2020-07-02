@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.3.4
+* Fix pypi packaging issue.
+
 ## 0.3.3
 * Many updates to doc strings for methods from earlier versions.
 * Product.apply_work_mode() now expects an integer. See example_010 on new usage.

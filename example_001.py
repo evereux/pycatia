@@ -42,5 +42,4 @@ reference = part.create_reference_from_object(body)
 measurable = spa_workbench.get_measurable(reference)
 
 center_of_gravity = measurable.get_cog()
-# >>> print(center_of_gravity)
-# >>> center_of_gravity = (86.06520158074527, 81.36458658122612, 10.0)
+print(center_of_gravity)
