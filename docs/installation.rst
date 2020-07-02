@@ -20,6 +20,10 @@ To get the latest development version from github::
     # install pycatia requirement
     pip install -r requirements\requirements.txt
 
+ To upgrade your current installed version::
+
+    pip install pycatia --upgrade
+
 
 The Long Version
 ----------------
