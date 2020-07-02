@@ -14,7 +14,6 @@ from pycatia.system_interfaces.collection import Collection
 
 
 class DrawingTexts(Collection):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -34,6 +33,7 @@ class DrawingTexts(Collection):
     def __init__(self, com_object):
         super().__init__(com_object)
         self.drawing_texts = com_object
+        self.child_object = DrawingText
 
     def add(self, i_drawing_text, i_position_x, i_position_y):
         """
@@ -142,4 +142,4 @@ class DrawingTexts(Collection):
         return self.drawing_texts.Remove(i_index)
 
     def __repr__(self):
-        return f'DrawingTexts(name="{ self.name }")'
+        return f'DrawingTexts(name="{self.name}")'
