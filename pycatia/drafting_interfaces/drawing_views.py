@@ -14,7 +14,6 @@ from pycatia.system_interfaces.collection import Collection
 
 
 class DrawingViews(Collection):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -35,7 +34,7 @@ class DrawingViews(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=DrawingView)
         self.drawing_views = com_object
 
     @property
@@ -205,4 +204,4 @@ class DrawingViews(Collection):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'DrawingViews(name="{ self.name }")'
+        return f'DrawingViews(name="{self.name}")'

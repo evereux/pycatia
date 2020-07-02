@@ -14,7 +14,6 @@ from pycatia.system_interfaces.collection import Collection
 
 
 class DrawingWeldings(Collection):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -32,7 +31,7 @@ class DrawingWeldings(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=DrawingWelding)
         self.drawing_weldings = com_object
 
     def add(self, i_symbol, i_position_x, i_position_y):
@@ -146,4 +145,4 @@ class DrawingWeldings(Collection):
         return self.drawing_weldings.Remove(i_index)
 
     def __repr__(self):
-        return f'DrawingWeldings(name="{ self.name }")'
+        return f'DrawingWeldings(name="{self.name}")'

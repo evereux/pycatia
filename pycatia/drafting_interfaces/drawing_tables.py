@@ -31,7 +31,7 @@ class DrawingTables(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=DrawingTable)
         self.drawing_tables = com_object
 
     def add(self, i_position_x, i_position_y, i_number_of_row, i_number_of_column, i_row_height, i_column_width):

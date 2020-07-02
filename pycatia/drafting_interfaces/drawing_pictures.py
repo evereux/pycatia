@@ -31,7 +31,7 @@ class DrawingPictures(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=DrawingPicture)
         self.drawing_pictures = com_object
 
     def add(self, i_drawing_picture_path, i_position_x, i_position_y):
