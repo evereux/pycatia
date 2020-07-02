@@ -158,7 +158,7 @@ class DrawingView(AnyObject):
         return DrawingDimensions(self.drawing_view.Dimensions)
 
     @property
-    def factory2_d(self):
+    def factory_2d(self):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
