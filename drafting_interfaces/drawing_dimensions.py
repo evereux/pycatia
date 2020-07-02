@@ -31,7 +31,7 @@ class DrawingDimensions(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=DrawingDimension)
         self.drawing_dimensions = com_object
 
     def add(self, i_type_dim, i_geom_elem, i_pt_coord_elem, i_line_rep):

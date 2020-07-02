@@ -14,7 +14,6 @@ from pycatia.system_interfaces.collection import Collection
 
 
 class DrawingSheets(Collection):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -35,7 +34,7 @@ class DrawingSheets(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=DrawingSheet)
         self.drawing_sheets = com_object
 
     @property
@@ -208,4 +207,4 @@ class DrawingSheets(Collection):
         return self.drawing_sheets.Remove(i_index)
 
     def __repr__(self):
-        return f'DrawingSheets(name="{ self.name }")'
+        return f'DrawingSheets(name="{self.name}")'

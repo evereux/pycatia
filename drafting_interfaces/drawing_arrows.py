@@ -31,7 +31,7 @@ class DrawingArrows(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=DrawingArrow)
         self.drawing_arrows = com_object
 
     def add(self, i_head_point_x, i_head_point_y, i_tail_point_x, i_tail_point_y):
