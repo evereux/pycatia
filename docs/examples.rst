@@ -118,3 +118,10 @@ Creates a square in a sketch and fully constrains it. Sketch then used to pad.
 
 .. literalinclude:: ../example_016.py
 
+Example 17
+----------
+
+Creates a drawing border for an A0 landscape page.
+
+.. literalinclude:: ../example_017.py
+

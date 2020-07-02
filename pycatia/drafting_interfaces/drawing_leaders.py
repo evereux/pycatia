@@ -31,7 +31,7 @@ class DrawingLeaders(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=DrawingLeader)
         self.drawing_leaders = com_object
 
     def add(self, i_head_point_x, i_head_point_y):
