@@ -385,7 +385,10 @@ class Document(AnyObject):
         """
         :return:
         """
-        return DrawingRoot(self.document.DrawingRoot)
+        try:
+            return DrawingRoot(self.document.DrawingRoot)
+        except AttributeError:
+            raise CATIAApplicationException('Is document a Drawing?')
 
     def get_workbench(self, workbench_name=None):
         """
