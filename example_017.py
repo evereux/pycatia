@@ -8,7 +8,10 @@
 
 """
 from pycatia import catia
+from pycatia.exception_handling import CATIAApplicationException
 from pycatia.enumeration.enumeration_types import cat_text_anchor_position
+from pycatia.enumeration.enumeration_types import cat_paper_orientation
+from pycatia.enumeration.enumeration_types import cat_paper_size
 
 a0_x = 1189
 a0_y = 841
@@ -17,6 +20,13 @@ document = catia.active_document
 drawing = document.drawing_root()
 sheets = drawing.sheets
 sheet = sheets.active_sheet
+
+if cat_paper_orientation[sheet.orientation] != 'catPaperLandscape':
+    raise CATIAApplicationException('Sheet orientation is not landscape.')
+
+if cat_paper_size[sheet.paper_size] != 'catPaperA0':
+    raise CATIAApplicationException('Sheet size is not A0.')
+
 views = sheet.views
 main_view = views.get_item_by_name('Main View')
 background_view = views.get_item_by_name('Background View')
@@ -155,3 +165,5 @@ text_4_r.anchor_position = anchor_position
 text_4_r = change_text_properties(text_4_r)
 
 main_view.activate()
+
+sheet.force_update()
