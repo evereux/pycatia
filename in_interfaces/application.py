@@ -6,7 +6,6 @@ from pywintypes import com_error
 from pathlib import Path
 
 from pycatia.exception_handling.exceptions import CATIAApplicationException
-from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.in_interfaces.document import Document
 from pycatia.in_interfaces.documents import Documents
 from pycatia.in_interfaces.file_system import FileSystem
