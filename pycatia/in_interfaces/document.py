@@ -14,7 +14,6 @@ from pathlib import Path
 from pycatia.exception_handling import CATIAApplicationException
 from pycatia.in_interfaces.cameras import Cameras
 from pycatia.in_interfaces.reference import Reference
-from pycatia.in_interfaces.selection import Selection
 from pycatia.in_interfaces.window import Window
 from pycatia.in_interfaces.workbench import Workbench
 from pycatia.mec_mod_interfaces.part import Part
@@ -281,7 +280,7 @@ class Document(AnyObject):
 
         :return: Selection
         """
-
+        from pycatia.in_interfaces.selection import Selection
         return Selection(self.document.Selection)
 
     def activate(self):
