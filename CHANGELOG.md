@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.6
+* Fixed Selection class.
+
+## 0.3.5
+* Fixed missing setting of child_object for classes that inherit from Collection
+* Renamed drawing_view.factory_2d.
+
 ## 0.3.4
 * Fix pypi packaging issue.
 
