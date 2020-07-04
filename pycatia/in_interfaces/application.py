@@ -6,7 +6,6 @@ from pywintypes import com_error
 from pathlib import Path
 
 from pycatia.exception_handling.exceptions import CATIAApplicationException
-from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.in_interfaces.document import Document
 from pycatia.in_interfaces.documents import Documents
 from pycatia.in_interfaces.file_system import FileSystem
@@ -22,40 +21,42 @@ from pycatia.system_interfaces.system_service import SystemService
 
 class Application(AnyObject):
     """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
-                | System.IUnknown
-                |     System.IDispatch
-                |         System.CATBaseUnknown
-                |             System.CATBaseDispatch
-                |                 System.AnyObject
-                |                     Application
-                | 
-                | Represents the current CNext application and its frame window.
-                | The application is the root object for all the other objects you can use and
-                | access from scripts. It directly aggregates:
-                | 
-                |     The document collection represented by the Documents object. This
-                |     collection contains all the documents currently opened by the
-                |     application
-                |     The window collection represented by the Windows object. This collection
-                |     contains all the windows currently opened by the application, each window
-                |     displaying one of the documents contained in the document
-                |     collection
-                |     The SystemService object, providing information about the system
-                |     environment. 
-                | 
-                | The active document and the active window are two key objects for the
-                | application you can access using the ActiveDocument and ActiveWindow properties
-                | respectively. The active window is the window the end user is currently working
-                | in, and the active document is the document displayed in this active window and
-                | that the end user is being editing. This document sets its workshop, that is
-                | the available menus and toolbars that make it possible to edit it, according to
-                | its type.
-                | 
-                | When you create or use macros for in-process access, the application is always
-                | referred to as CATIA.
+    .. admonition:: Note
+
+        CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+
+            | System.IUnknown
+            |     System.IDispatch
+            |         System.CATBaseUnknown
+            |             System.CATBaseDispatch
+            |                 System.AnyObject
+            |                     Application
+            |
+            | Represents the current CNext application and its frame window.
+            | The application is the root object for all the other objects you can use and
+            | access from scripts. It directly aggregates:
+            |
+            |     The document collection represented by the Documents object. This
+            |     collection contains all the documents currently opened by the
+            |     application
+            |     The window collection represented by the Windows object. This collection
+            |     contains all the windows currently opened by the application, each window
+            |     displaying one of the documents contained in the document
+            |     collection
+            |     The SystemService object, providing information about the system
+            |     environment.
+            |
+            | The active document and the active window are two key objects for the
+            | application you can access using the ActiveDocument and ActiveWindow properties
+            | respectively. The active window is the window the end user is currently working
+            | in, and the active document is the document displayed in this active window and
+            | that the end user is being editing. This document sets its workshop, that is
+            | the available menus and toolbars that make it possible to edit it, according to
+            | its type.
+            |
+            | When you create or use macros for in-process access, the application is always
+            | referred to as CATIA.
     
     """
 
@@ -65,21 +66,23 @@ class Application(AnyObject):
     @property
     def active_document(self):
         """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property ActiveDocument() As Document (Read Only)
-                | 
-                |     Returns the active document. The active document is the document the end
-                |     user is being editing.
-                |
-                |     Example:
-                |         This example retrieves in ActiveDoc the active document of the CATIA
-                |         application.
-                |
-                |          Dim ActiveDoc As Document
-                |          Set ActiveDoc = CATIA.ActiveDocument
+        .. admonition:: Note
 
-        :return: Document
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+
+            | o Property ActiveDocument() As Document (Read Only)
+            |
+            |     Returns the active document. The active document is the document the end
+            |     user is being editing.
+            |
+            |     Example:
+            |         This example retrieves in ActiveDoc the active document of the CATIA
+            |         application.
+            |
+            |          Dim ActiveDoc As Document
+            |          Set ActiveDoc = CATIA.ActiveDocument
+
+        :return: Document()
         """
         try:
             return Document(self.application.ActiveDocument)
@@ -89,19 +92,21 @@ class Application(AnyObject):
     @property
     def active_printer(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property ActivePrinter() As Printer
-                | 
-                |     Returns or sets the active printer. The active printer is the printer on
-                |     which documents are printed
-                |
-                |     Example:
-                |         This example retrieves in ActivePrinter the active printer of the CATIA
-                |         application.
-                |
-                |          Dim ActivePrinter As Printer
-                |          Set ActivePrinter = CATIA.ActivePrinter
+
+            | o Property ActivePrinter() As Printer
+            |
+            |     Returns or sets the active printer. The active printer is the printer on
+            |     which documents are printed
+            |
+            |     Example:
+            |         This example retrieves in ActivePrinter the active printer of the CATIA
+            |         application.
+            |
+            |          Dim ActivePrinter As Printer
+            |          Set ActivePrinter = CATIA.ActivePrinter
 
         :return: Printer
         """
@@ -119,19 +124,21 @@ class Application(AnyObject):
     @property
     def active_window(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property ActiveWindow() As Window (Read Only)
-                | 
-                |     Returns the active window. The active window is the window in which the end
-                |     user is currently editing the active document.
-                |
-                |     Example:
-                |         This example retrieves in ActiveWin the active window of the CATIA
-                |         application.
-                |
-                |          Dim ActiveWin As Window
-                |          Set ActiveWin = CATIA.ActiveWindow
+
+            | o Property ActiveWindow() As Window (Read Only)
+            |
+            |     Returns the active window. The active window is the window in which the end
+            |     user is currently editing the active document.
+            |
+            |     Example:
+            |         This example retrieves in ActiveWin the active window of the CATIA
+            |         application.
+            |
+            |          Dim ActiveWin As Window
+            |          Set ActiveWin = CATIA.ActiveWindow
 
         :return: Window
         """
@@ -141,19 +148,21 @@ class Application(AnyObject):
     @property
     def cache_size(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property CacheSize() As long
-                | 
-                |     Returns or sets the default local cache size used by the
-                |     application.
-                |
-                |     Example:
-                |         This example sets the cache size for by the CATIA application to those
-                |         defined in LocalCacheSize.
-                |
-                |          LocalCacheSize= 10
-                |          CATIA.CacheSize = LocalCacheSize
+
+            | o Property CacheSize() As long
+            |
+            |     Returns or sets the default local cache size used by the
+            |     application.
+            |
+            |     Example:
+            |         This example sets the cache size for by the CATIA application to those
+            |         defined in LocalCacheSize.
+            |
+            |          LocalCacheSize= 10
+            |          CATIA.CacheSize = LocalCacheSize
 
         :return: int
         """
@@ -171,23 +180,25 @@ class Application(AnyObject):
     @property
     def caption(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property Caption() As CATBSTR
-                | 
-                |     Returns or sets the application's window title. This title is displayed in
-                |     the application's window title bar.
-                |
-                |     Example:
-                |         This example retrieves in Title the CATIA application's window
-                |         title.
-                |
-                |          Title = CATIA.Caption
-                |
-                |
-                |         The returned value is like this:
-                |
-                |          CNext
+
+            | o Property Caption() As CATBSTR
+            |
+            |     Returns or sets the application's window title. This title is displayed in
+            |     the application's window title bar.
+            |
+            |     Example:
+            |         This example retrieves in Title the CATIA application's window
+            |         title.
+            |
+            |          Title = CATIA.Caption
+            |
+            |
+            |         The returned value is like this:
+            |
+            |          CNext
 
         :return: str
         """
@@ -205,24 +216,26 @@ class Application(AnyObject):
     @property
     def display_file_alerts(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property DisplayFileAlerts() As boolean
-                | 
-                |     Returns or sets the application ability to display file
-                |     alerts.
-                |     True if the application enables file alert display.
-                |     True is the default. A file alert is, for example, the dialog box that
-                |     prompts you that the file you want to save is in read only mode, or that the
-                |     file you want to close needs to be saved. It could be handy to disable these
-                |     file alerts for automation since they may freeze your macro execution, waiting
-                |     for an end user input in the displayed dialog box.
-                |
-                |     Example:
-                |         This example disables file alerts for the CATIA
-                |         application.
-                |
-                |          CATIA.DisplayFileAlerts = False
+
+            | o Property DisplayFileAlerts() As boolean
+            |
+            |     Returns or sets the application ability to display file
+            |     alerts.
+            |     True if the application enables file alert display.
+            |     True is the default. A file alert is, for example, the dialog box that
+            |     prompts you that the file you want to save is in read only mode, or that the
+            |     file you want to close needs to be saved. It could be handy to disable these
+            |     file alerts for automation since they may freeze your macro execution, waiting
+            |     for an end user input in the displayed dialog box.
+            |
+            |     Example:
+            |         This example disables file alerts for the CATIA
+            |         application.
+            |
+            |          CATIA.DisplayFileAlerts = False
 
         :return: bool
         """
@@ -240,19 +253,21 @@ class Application(AnyObject):
     @property
     def documents(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property Documents() As Documents (Read Only)
-                | 
-                |     Returns the collection of documents currently managed by the
-                |     application.
-                |
-                |     Example:
-                |         This example retrieves in DocCollection the collection of documents
-                |         currently managed by the CATIA application.
-                |
-                |          Dim DocCollection As Documents
-                |          Set DocCollection = CATIA.Documents
+
+            | o Property Documents() As Documents (Read Only)
+            |
+            |     Returns the collection of documents currently managed by the
+            |     application.
+            |
+            |     Example:
+            |         This example retrieves in DocCollection the collection of documents
+            |         currently managed by the CATIA application.
+            |
+            |          Dim DocCollection As Documents
+            |          Set DocCollection = CATIA.Documents
 
         :return: Documents
         """
@@ -261,28 +276,31 @@ class Application(AnyObject):
     @property
     def file_search_order(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property FileSearchOrder() As CATBSTR
-                | 
-                |     Returns or sets the default path concatenation.
-                |     Role: This property returns or sets the default path concatenation used by
-                |     Other folders setting of the Linked Documents Localization function. The
-                |     primary aim of the Linked Documents Localization function is to resolve
-                |     document links and to manage the strategy that will be used to locate your
-                |     linked documents.
-                |
-                |     Example:
-                |         This example sets the paths to search for by the CATIA application to
-                |         those defined in PathConcatenation.
-                |
-                |          PathConcatenation = "/u/users/fbq/db/model:/u/users/psr/db/model"
-                |          CATIA.FileSearchOrder = PathConcatenation
-                |
-                |
-                |     Theese methods require the installation of CATIA - PPR xPDM Gateway 1
-                |     Product (PX1) In case this product is not granted, the first invocation to one
-                |     of the methods will fail.
+
+            | o Property FileSearchOrder() As CATBSTR
+            |
+            |     Returns or sets the default path concatenation.
+            |     Role: This property returns or sets the default path concatenation used by
+            |     Other folders setting of the Linked Documents Localization function. The
+            |     primary aim of the Linked Documents Localization function is to resolve
+            |     document links and to manage the strategy that will be used to locate your
+            |     linked documents.
+            |
+            |     Example:
+            |         This example sets the paths to search for by the CATIA application to
+            |         those defined in PathConcatenation.
+            |
+            |          PathConcatenation = "/u/users/fbq/db/model:/u/users/psr/db/model"
+            |          CATIA.FileSearchOrder = PathConcatenation
+            |
+            |
+            |
+            |     Theese methods require the installation of CATIA - PPR xPDM Gateway 1
+            |     Product (PX1) In case this product is not granted, the first invocation to one
+            |     of the methods will fail.
 
         :return: str
         """
@@ -300,19 +318,21 @@ class Application(AnyObject):
     @property
     def file_system(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property FileSystem() As FileSystem (Read Only)
-                | 
-                |     Returns the file system. The file system provides access to a computer's
-                |     file system.
-                |
-                |     Example:
-                |         This example retrieves in AppliFileSys the file sytem of the CATIA
-                |         application.
-                |
-                |          Dim AppliFileSys As FileSystem
-                |          Set AppliFileSys = CATIA.FileSystem
+
+            | o Property FileSystem() As FileSystem (Read Only)
+            |
+            |     Returns the file system. The file system provides access to a computer's
+            |     file system.
+            |
+            |     Example:
+            |         This example retrieves in AppliFileSys the file sytem of the CATIA
+            |         application.
+            |
+            |          Dim AppliFileSys As FileSystem
+            |          Set AppliFileSys = CATIA.FileSystem
 
         :return: FileSystem
         """
@@ -322,24 +342,26 @@ class Application(AnyObject):
     @property
     def full_name(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property FullName() As CATBSTR (Read Only)
-                | 
-                |     Returns the application's executable file full name, including its path.
-                |     This name is the name of the executable file used to start the
-                |     application.
-                |
-                |     Example:
-                |         This example retrieves in ApplicationFullName the CATIA application's
-                |         executable file full name.
-                |
-                |          ApplicationFullName = CATIA.FullName
-                |
-                |
-                |         The returned value is like this:
-                |
-                |          \\\\lisa\\cxr1arel\\bsf\\alpha_a\\code\\bin\\CNEXT.exe
+
+            | o Property FullName() As CATBSTR (Read Only)
+            |
+            |     Returns the application's executable file full name, including its path.
+            |     This name is the name of the executable file used to start the
+            |     application.
+            |
+            |     Example:
+            |         This example retrieves in ApplicationFullName the CATIA application's
+            |         executable file full name.
+            |
+            |          ApplicationFullName = CATIA.FullName
+            |
+            |
+            |         The returned value is like this:
+            |
+            |          \\\\lisa\\cxr1arel\\bsf\\alpha_a\\code\\bin\\CNEXT.exe
 
         :return: str
         """
@@ -349,46 +371,48 @@ class Application(AnyObject):
     @property
     def hso_synchronized(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property HSOSynchronized() As boolean
-                |
-                |     For selection performance purposes, returns or sets the HSO synchronization
-                |     in comparison with the CSO.
-                |     Role: Precises if, for all Selection object instances, the HSO (Highlighted
-                |     Set of Objects) is synchronized in comparison with the CSO (Current Set of
-                |     Objects).
-                |
-                |     Valid values are:
-                |
-                |         True: In this case, Selection methods work directly with CATIA's CSO,
-                |         to reflect instantly the changes made in Automation Selection. This ensures
-                |         correct selection results, but may impact performance in certain
-                |         cases.
-                |         This is the default value at the beginning of a CATIA
-                |         session.
-                |         False: In this case, Selection methods work with an internal SO buffer,
-                |         which allows faster execution when performing a large number of CSO-independent
-                |         Selection calls, or when performing a single Selection call working on a large
-                |         number of objects (usually the Search method). This may also prevent the
-                |         features from blinking between two user interactions.
-                | 
-                |     Note: even if this property is set to False, the HSO is synchronized in
-                |     comparison with the CSO at the begining of the following
-                |     methods:
-                |
-                |         Selection.SelectElement2
-                |         Selection.SelectElement3
-                |         Selection.SelectElement4
-                |         Selection.IndicateOrSelectElement2D
-                |         Selection.IndicateOrSelectElement3D
-                |         Application.StartCommand
-                |
-                |     CAUTION: If you use the False value of this property, you must make sure to
-                |     reset it to True for CATIA's CSO to reflect properly the changes made in
-                |     Automation Selection. For example, it should be reset to True before
-                |     interactive parts of your script: MsgBox, InputBox calls, VBA forms updates and
-                |     so on.
+
+            | o Property HSOSynchronized() As boolean
+            |
+            |     For selection performance purposes, returns or sets the HSO synchronization
+            |     in comparison with the CSO.
+            |     Role: Precises if, for all Selection object instances, the HSO (Highlighted
+            |     Set of Objects) is synchronized in comparison with the CSO (Current Set of
+            |     Objects).
+            |
+            |     Valid values are:
+            |
+            |         True: In this case, Selection methods work directly with CATIA's CSO,
+            |         to reflect instantly the changes made in Automation Selection. This ensures
+            |         correct selection results, but may impact performance in certain
+            |         cases.
+            |         This is the default value at the beginning of a CATIA
+            |         session.
+            |         False: In this case, Selection methods work with an internal SO buffer,
+            |         which allows faster execution when performing a large number of CSO-independent
+            |         Selection calls, or when performing a single Selection call working on a large
+            |         number of objects (usually the Search method). This may also prevent the
+            |         features from blinking between two user interactions.
+            |
+            |     Note: even if this property is set to False, the HSO is synchronized in
+            |     comparison with the CSO at the begining of the following
+            |     methods:
+            |
+            |         Selection.SelectElement2
+            |         Selection.SelectElement3
+            |         Selection.SelectElement4
+            |         Selection.IndicateOrSelectElement2D
+            |         Selection.IndicateOrSelectElement3D
+            |         Application.StartCommand
+            |
+            |     CAUTION: If you use the False value of this property, you must make sure to
+            |     reset it to True for CATIA's CSO to reflect properly the changes made in
+            |     Automation Selection. For example, it should be reset to True before
+            |     interactive parts of your script: MsgBox, InputBox calls, VBA forms updates and
+            |     so on.
 
         :return: bool
         """
@@ -406,18 +430,20 @@ class Application(AnyObject):
     @property
     def height(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property Height() As float
-                | 
-                |     Returns or sets the height of the application's frame window. The height is
-                |     expressed in pixels.
-                |
-                |     Example:
-                |         This example sets the height of the CATIA application's frame window to
-                |         300 pixels.
-                |
-                |          CATIA.Height = 300
+
+            | o Property Height() As float
+            |
+            |     Returns or sets the height of the application's frame window. The height is
+            |     expressed in pixels.
+            |
+            |     Example:
+            |         This example sets the height of the CATIA application's frame window to
+            |         300 pixels.
+            |
+            |          CATIA.Height = 300
 
         :return: float
         """
@@ -435,19 +461,21 @@ class Application(AnyObject):
     @property
     def interactive(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property Interactive() As boolean
-                | 
-                |     Returns or sets the application sensitivity to end user
-                |     interactions.
-                |     True if the application is end user interaction sensitive.
-                |
-                |     Example:
-                |         This example makes the CATIA application sensitive to end user
-                |         interactions.
-                |
-                |          CATIA.Interactive = True
+
+            | o Property Interactive() As boolean
+            |
+            |     Returns or sets the application sensitivity to end user
+            |     interactions.
+            |     True if the application is end user interaction sensitive.
+            |
+            |     Example:
+            |         This example makes the CATIA application sensitive to end user
+            |         interactions.
+            |
+            |          CATIA.Interactive = True
 
         :return: bool
         """
@@ -465,20 +493,22 @@ class Application(AnyObject):
     @property
     def left(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property Left() As float
-                | 
-                |     Returns or sets the distance from the application's frame window left side
-                |     to the left side of the screen. This distance is expressed in
-                |     pixels.
-                |
-                |     Example:
-                |         This example sets the distance from the CATIA application's frame
-                |         window left side to the left side of the screen to 150
-                |         pixels.
-                |
-                |          CATIA.Left = 150
+
+            | o Property Left() As float
+            |
+            |     Returns or sets the distance from the application's frame window left side
+            |     to the left side of the screen. This distance is expressed in
+            |     pixels.
+            |
+            |     Example:
+            |         This example sets the distance from the CATIA application's frame
+            |         window left side to the left side of the screen to 150
+            |         pixels.
+            |
+            |          CATIA.Left = 150
 
         :return: float
         """
@@ -496,19 +526,21 @@ class Application(AnyObject):
     @property
     def local_cache(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property LocalCache() As CATBSTR
-                |
-                |     Returns or sets the default local cache path used by the
-                |     application.
-                | 
-                |     Example:
-                |         This example sets the cache path for by the CATIA application to those
-                |         defined in LocalCachePath.
-                |
-                |          LocalCachePath= "/tmp/cache"
-                |          CATIA.LocalCache = LocalCachePath
+
+            | o Property LocalCache() As CATBSTR
+            |
+            |     Returns or sets the default local cache path used by the
+            |     application.
+            |
+            |     Example:
+            |         This example sets the cache path for by the CATIA application to those
+            |         defined in LocalCachePath.
+            |
+            |          LocalCachePath= "/tmp/cache"
+            |          CATIA.LocalCache = LocalCachePath
 
         :return: str
         """
@@ -526,22 +558,24 @@ class Application(AnyObject):
     @property
     def path(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property Path() As CATBSTR (Read Only)
-                | 
-                |     Returns the path of the application's executable files.
-                |
-                |     Example:
-                |         This example retrieves in ApplicationPath the path where the CATIA
-                |         application executable files are located.
-                |
-                |          ApplicationPath = CATIA.Path
-                |
-                |
-                |         The returned value is like this:
-                |
-                |          \\\\lisa\\cxr1arel\\bsf\\alpha_a\\code\\bin
+
+            | o Property Path() As CATBSTR (Read Only)
+            |
+            |     Returns the path of the application's executable files.
+            |
+            |     Example:
+            |         This example retrieves in ApplicationPath the path where the CATIA
+            |         application executable files are located.
+            |
+            |          ApplicationPath = CATIA.Path
+            |
+            |
+            |         The returned value is like this:
+            |
+            |          \\\\lisa\\cxr1arel\\bsf\\alpha_a\\code\\bin
 
         :return: Path()
         """
@@ -550,19 +584,21 @@ class Application(AnyObject):
     @property
     def printers(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property Printers() As Printers (Read Only)
-                | 
-                |     Returns the collection of the printers currently managed by the
-                |     application.
-                |
-                |     Example:
-                |         This example retrieves in PrintersCollection the collection of the
-                |         printers currently managed by the CATIA application.
-                |
-                |          Dim PrintersCollection As Windows
-                |          Set PrintersCollection = CATIA.Printers
+
+            | o Property Printers() As Printers (Read Only)
+            |
+            |     Returns the collection of the printers currently managed by the
+            |     application.
+            |
+            |     Example:
+            |         This example retrieves in PrintersCollection the collection of the
+            |         printers currently managed by the CATIA application.
+            |
+            |          Dim PrintersCollection As Windows
+            |          Set PrintersCollection = CATIA.Printers
 
         :return: Printers
         """
@@ -572,23 +608,25 @@ class Application(AnyObject):
     @property
     def refresh_display(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property RefreshDisplay() As boolean
-                | 
-                |     Enables or disables the update of the display during the script replay. To
-                |     improve performance, this update can be temporarely disabled by setting this
-                |     property to False in the script.
-                |     True (value set by default) if the application's display is refreshed after
-                |     each method call executed in late binding mode . This property does not affect
-                |     early binding calls nor the get methods because they are never followed by a
-                |     refresh of the display.
-                |
-                |     Example:
-                |         This example makes the update of the CATIA application's display
-                |         disabled during the script replay.
-                |
-                |          CATIA.RefreshDisplay = False
+
+            | o Property RefreshDisplay() As boolean
+            |
+            |     Enables or disables the update of the display during the script replay. To
+            |     improve performance, this update can be temporarely disabled by setting this
+            |     property to False in the script.
+            |     True (value set by default) if the application's display is refreshed after
+            |     each method call executed in late binding mode . This property does not affect
+            |     early binding calls nor the get methods because they are never followed by a
+            |     refresh of the display.
+            |
+            |     Example:
+            |         This example makes the update of the CATIA application's display
+            |         disabled during the script replay.
+            |
+            |          CATIA.RefreshDisplay = False
 
         :return: bool
         """
@@ -606,23 +644,25 @@ class Application(AnyObject):
     @property
     def status_bar(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property StatusBar() As CATBSTR
-                | 
-                |     Returns or sets the text displayed in the application's window status
-                |     bar.
-                |
-                |     Example:
-                |         This example retrieves in Text the text displayed in the CATIA
-                |         application's window status bar.
-                |
-                |          Text = CATIA.StatusBar
-                |
-                |
-                |         The returned value is like this:
-                |
-                |          Welcome to CATIA CxR1
+
+            | o Property StatusBar() As CATBSTR
+            |
+            |     Returns or sets the text displayed in the application's window status
+            |     bar.
+            |
+            |     Example:
+            |         This example retrieves in Text the text displayed in the CATIA
+            |         application's window status bar.
+            |
+            |          Text = CATIA.StatusBar
+            |
+            |
+            |         The returned value is like this:
+            |
+            |          Welcome to CATIA CxR1
 
         :return: str
         """
@@ -640,18 +680,20 @@ class Application(AnyObject):
     @property
     def system_configuration(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property SystemConfiguration() As SystemConfiguration (Read
-                | Only)
-                | 
-                |     Returns the system configuration object (an object which provides access to
-                |     system or configuration dependent resources).
-                |
-                |     Parameters:
-                |
-                |         oConfiguration
-                |             The system configuration object.
+
+            | o Property SystemConfiguration() As SystemConfiguration (Read
+            | Only)
+            |
+            |     Returns the system configuration object (an object which provides access to
+            |     system or configuration dependent resources).
+            |
+            |     Parameters:
+            |
+            |         oConfiguration
+            |             The system configuration object.
 
         :return: SystemConfiguration
         """
@@ -661,18 +703,20 @@ class Application(AnyObject):
     @property
     def system_service(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property SystemService() As SystemService (Read Only)
-                |
-                |     Returns system services.
-                |
-                |     Example:
-                |         This example retrieves in AppliSysSer the CATIA application's system
-                |         services.
-                | 
-                |          Dim AppliSysSer As SystemService
-                |          Set AppliSysSer = CATIA.SystemService
+
+            | o Property SystemService() As SystemService (Read Only)
+            |
+            |     Returns system services.
+            |
+            |     Example:
+            |         This example retrieves in AppliSysSer the CATIA application's system
+            |         services.
+            |
+            |          Dim AppliSysSer As SystemService
+            |          Set AppliSysSer = CATIA.SystemService
 
         :return: SystemService
         """
@@ -682,19 +726,21 @@ class Application(AnyObject):
     @property
     def top(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property Top() As float
-                | 
-                |     Returns or sets the distance from the application'si frame window top to
-                |     the top of the screen. This distance is expressed in
-                |     pixels.
-                | 
-                |     Example:
-                |         This example sets the distance from the CATIA application's frame
-                |         window top to the top of the screen to 50 pixels.
-                | 
-                |          CATIA.Top = 50
+
+            | o Property Top() As float
+            |
+            |     Returns or sets the distance from the application'si frame window top to
+            |     the top of the screen. This distance is expressed in
+            |     pixels.
+            |
+            |     Example:
+            |         This example sets the distance from the CATIA application's frame
+            |         window top to the top of the screen to 50 pixels.
+            |
+            |          CATIA.Top = 50
 
         :return: float
         """
@@ -712,25 +758,27 @@ class Application(AnyObject):
     @property
     def undo_redo_lock(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property UndoRedoLock() As boolean
-                | 
-                |     Returns or sets the application status about Undo/Redo.
-                |     True if the Undo/Redo mechanism is locked.
-                |     False is the default. Since Undo/Redo mechanism uses lots of memory, it can
-                |     be useful to disable it during consuming operations. Then Undo and Redo stacks
-                |     are flushed and no model modification is kept until the Undo/Redo mechanism is
-                |     unlocked. It is mandatory to unlock it before the end of the
-                |     macro.
-                | 
-                |     Example:
-                | 
-                |           This example disables Undo/Redo mechanism until it is
-                |           unlocked.
-                |          
-                | 
-                |          CATIA.UndoRedoLock = True
+
+            | o Property UndoRedoLock() As boolean
+            |
+            |     Returns or sets the application status about Undo/Redo.
+            |     True if the Undo/Redo mechanism is locked.
+            |     False is the default. Since Undo/Redo mechanism uses lots of memory, it can
+            |     be useful to disable it during consuming operations. Then Undo and Redo stacks
+            |     are flushed and no model modification is kept until the Undo/Redo mechanism is
+            |     unlocked. It is mandatory to unlock it before the end of the
+            |     macro.
+            |
+            |     Example:
+            |
+            |           This example disables Undo/Redo mechanism until it is
+            |           unlocked.
+            |
+            |
+            |          CATIA.UndoRedoLock = True
 
         :return: bool
         """
@@ -748,19 +796,21 @@ class Application(AnyObject):
     @property
     def visible(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property Visible() As boolean
-                | 
-                |     Returns or sets the application's window visibility.
-                |     True if the application's window is visible to the end
-                |     user.
-                | 
-                |     Example:
-                |         This example makes the CATIA application's window
-                |         visible.
-                | 
-                |          CATIA.Visibility = True
+
+            | o Property Visible() As boolean
+            |
+            |     Returns or sets the application's window visibility.
+            |     True if the application's window is visible to the end
+            |     user.
+            |
+            |     Example:
+            |         This example makes the CATIA application's window
+            |         visible.
+            |
+            |          CATIA.Visibility = True
 
         :return: bool
         """
@@ -778,18 +828,20 @@ class Application(AnyObject):
     @property
     def width(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property Width() As float
-                | 
-                |     Returns or sets the width of the application's frame window. The width is
-                |     expressed in pixels.
-                | 
-                |     Example:
-                |         This example sets the width of the CATIA application's frame window to
-                |         350 pixels.
-                | 
-                |          CATIA.Width = 350
+
+            | o Property Width() As float
+            |
+            |     Returns or sets the width of the application's frame window. The width is
+            |     expressed in pixels.
+            |
+            |     Example:
+            |         This example sets the width of the CATIA application's frame window to
+            |         350 pixels.
+            |
+            |          CATIA.Width = 350
 
         :return: float
         """
@@ -807,19 +859,21 @@ class Application(AnyObject):
     @property
     def windows(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property Windows() As Windows (Read Only)
-                | 
-                |     Returns the collection of windows currently managed by the
-                |     application.
-                | 
-                |     Example:
-                |         This example retrieves in WinCollection the collection of windows
-                |         currently managed by the CATIA application.
-                | 
-                |          Dim WinCollection As Windows
-                |          Set WinCollection = CATIA.Windows
+
+            | o Property Windows() As Windows (Read Only)
+            |
+            |     Returns the collection of windows currently managed by the
+            |     application.
+            |
+            |     Example:
+            |         This example retrieves in WinCollection the collection of windows
+            |         currently managed by the CATIA application.
+            |
+            |          Dim WinCollection As Windows
+            |          Set WinCollection = CATIA.Windows
 
         :return: Windows
         """
@@ -828,16 +882,18 @@ class Application(AnyObject):
 
     def create_send_to(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func CreateSendTo() As SendToService
-                | 
-                |     Creates a Send TO.
-                |     Role:This method creates a SendToService instance.
-                |     Warning : CATIASendToService interface requires the
-                |     installation of CATIA - PPR xPDM Gateway 1 Product (PX1)
-                |     In case this product is not granted, the first invocation
-                |     to one of CATIASendToService methods will fail.
+
+            | o Func CreateSendTo() As SendToService
+            |
+            |     Creates a Send TO.
+            |     Role:This method creates a SendToService instance.
+            |     Warning : CATIASendToService interface requires the
+            |     installation of CATIA - PPR xPDM Gateway 1 Product (PX1)
+            |     In case this product is not granted, the first invocation
+            |     to one of CATIASendToService methods will fail.
 
         :return: SendToService
         """
@@ -845,25 +901,27 @@ class Application(AnyObject):
 
     def disable_new_undo_redo_transaction(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub DisableNewUndoRedoTransaction()
-                | 
-                |     Prevents new Undo/Redo transaction creation.
-                |     If too many Undo/Redo transactions are created during macro execution, it
-                |     may affect performance. So it is valuable to prevent Undo/Redo transaction
-                |     creation during macro execution when lots of data are created, deleted or
-                |     modified.
-                |     Note: preventing Undo/Redo transaction creation must not be done when a
-                |     selection is required in the macro
-                |     Do not forget to call EnableNewUndoRedoTransaction at the end of the macro
-                |     or before selection to restore the common behavior.
-                | 
-                |     Example:
-                |         This example prevents new transactions to be created, which may
-                |         increase performance.
-                | 
-                |          CATIA.DisableNewUndoRedoTransaction()
+
+            | o Sub DisableNewUndoRedoTransaction()
+            |
+            |     Prevents new Undo/Redo transaction creation.
+            |     If too many Undo/Redo transactions are created during macro execution, it
+            |     may affect performance. So it is valuable to prevent Undo/Redo transaction
+            |     creation during macro execution when lots of data are created, deleted or
+            |     modified.
+            |     Note: preventing Undo/Redo transaction creation must not be done when a
+            |     selection is required in the macro
+            |     Do not forget to call EnableNewUndoRedoTransaction at the end of the macro
+            |     or before selection to restore the common behavior.
+            |
+            |     Example:
+            |         This example prevents new transactions to be created, which may
+            |         increase performance.
+            |
+            |          CATIA.DisableNewUndoRedoTransaction()
 
         :return: None
         """
@@ -871,17 +929,19 @@ class Application(AnyObject):
 
     def enable_new_undo_redo_transaction(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub EnableNewUndoRedoTransaction()
-                | 
-                |     Allows new Undo/Redo transaction creation.
-                | 
-                |     Example:
-                |         This example restores the common behavior after
-                |         DisableNewUndoRedoTransaction has been called.
-                | 
-                |          CATIA.EnableNewUndoRedoTransaction()
+
+            | o Sub EnableNewUndoRedoTransaction()
+            |
+            |     Allows new Undo/Redo transaction creation.
+            |
+            |     Example:
+            |         This example restores the common behavior after
+            |         DisableNewUndoRedoTransaction has been called.
+            |
+            |          CATIA.EnableNewUndoRedoTransaction()
 
         :return: None
         """
@@ -892,7 +952,8 @@ class Application(AnyObject):
     ):
         """
 
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic help
 
             | Func ExecuteScript( CATBSTR  iLibraryName,
@@ -946,7 +1007,8 @@ class Application(AnyObject):
     ):
         """
 
-        .. note::
+        .. admonition:: Note
+
             CATIA V5 Visual Basic help
 
             | Func Evaluate( CATBSTR  iScriptText,
@@ -993,37 +1055,39 @@ class Application(AnyObject):
 
     def file_selection_box(self, i_title, i_extension, i_mode):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func FileSelectionBox(CATBSTR iTitle,
-                | CATBSTR iExtension,
-                | CatFileSelectionMode iMode) As CATBSTR
-                | 
-                |     Displays a modal dialog box which can be used to select / enter the name of
-                |     a file to open / save.
-                | 
-                |     Parameters:
-                | 
-                |         iTitle
-                |             The title of the dialog box. 
-                |         iExtension
-                |             A file extension filter. 
-                |         iMode
-                |             The mode in which to run the dialog box (either
-                |             CatFileSelectionModeOpen or CatFileSelectionModeSave.
-                |             
-                |         oFilePath
-                |             The return string containing the full path of the selected file, or
-                |             a zero-length string if the user selects Cancel.
-                | 
-                |             Example:
-                |                 This example asks the user to select a text file and prints the
-                |                 path of the selected file.
-                | 
-                |                  filepath = CATIA.FileSelectionBox("Select a text file",
-                |                                                     "*.txt", CatFileSelectionModeOpen)
-                |                  CATIA.SystemServices.Print "The selected file is " &
-                |                  filepath
+
+            | o Func FileSelectionBox(CATBSTR iTitle,
+            | CATBSTR iExtension,
+            | CatFileSelectionMode iMode) As CATBSTR
+            |
+            |     Displays a modal dialog box which can be used to select / enter the name of
+            |     a file to open / save.
+            |
+            |     Parameters:
+            |
+            |         iTitle
+            |             The title of the dialog box.
+            |         iExtension
+            |             A file extension filter.
+            |         iMode
+            |             The mode in which to run the dialog box (either
+            |             CatFileSelectionModeOpen or CatFileSelectionModeSave.
+            |
+            |         oFilePath
+            |             The return string containing the full path of the selected file, or
+            |             a zero-length string if the user selects Cancel.
+            |
+            |             Example:
+            |                 This example asks the user to select a text file and prints the
+            |                 path of the selected file.
+            |
+            |                  filepath = CATIA.FileSelectionBox("Select a text file",
+            |                                                     "\*.txt", CatFileSelectionModeOpen)
+            |                  CATIA.SystemServices.Print "The selected file is " &
+            |                  filepath
 
         :param str i_title:
         :param str i_extension:
@@ -1034,16 +1098,18 @@ class Application(AnyObject):
 
     def get_workbench_id(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func GetWorkbenchId() As CATBSTR
-                | 
-                |     Returns the identifier of the CATIA current workbench.
-                | 
-                |     Parameters:
-                | 
-                |         oworkbenchId
-                |             The id of the current workbench.
+
+            | o Func GetWorkbenchId() As CATBSTR
+            |
+            |     Returns the identifier of the CATIA current workbench.
+            |
+            |     Parameters:
+            |
+            |         oworkbenchId
+            |             The id of the current workbench.
 
         :return: str
         """
@@ -1051,22 +1117,24 @@ class Application(AnyObject):
 
     def help(self, i_help_id):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub Help(CATBSTR iHelpID)
-                | 
-                |     Displays application's online help.
-                | 
-                |     Parameters:
-                | 
-                |         iHelpID
-                |             Identifier of the help message to display 
-                | 
-                |     Example:
-                |         This example displays the string referred to by the HelpKey message key
-                |         in the message catalog concatenation.
-                | 
-                |          CATIA.Help("HelpKey")
+
+            | o Sub Help(CATBSTR iHelpID)
+            |
+            |     Displays application's online help.
+            |
+            |     Parameters:
+            |
+            |         iHelpID
+            |             Identifier of the help message to display
+            |
+            |     Example:
+            |         This example displays the string referred to by the HelpKey message key
+            |         in the message catalog concatenation.
+            |
+            |          CATIA.Help("HelpKey")
 
         :param str i_help_id:
         :return: None
@@ -1075,17 +1143,19 @@ class Application(AnyObject):
 
     def quit(self):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub Quit()
-                |
-                |     Exits the application and closes all open documents.
-                |
-                |     Example:
-                |         This example exits the CATIA application and closes all its open
-                |         documents.
-                |
-                |          CATIA.Quit()
+
+            | o Sub Quit()
+            |
+            |     Exits the application and closes all open documents.
+            |
+            |     Example:
+            |         This example exits the CATIA application and closes all its open
+            |         documents.
+            |
+            |          CATIA.Quit()
 
         :return: None
         """
@@ -1093,22 +1163,24 @@ class Application(AnyObject):
 
     def start_command(self, i_command_id):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub StartCommand(CATBSTR iCommandId)
-                |
-                |     Starts a CATIA command.
-                |     Role:This method starts a command and executes it untill its first
-                |     interaction. Please notice interactions such as selections you could add after
-                |     in your macro will not work. StartCommand is useful to execute one-shot (not
-                |     interactive) commands, it is not safe for interactive
-                |     commands.
-                |
-                |     Parameters:
-                |
-                |         iCommandId
-                |             The id of the command to be started. This id can be the name of the
-                |             command or its alias.
+
+            | o Sub StartCommand(CATBSTR iCommandId)
+            |
+            |     Starts a CATIA command.
+            |     Role:This method starts a command and executes it untill its first
+            |     interaction. Please notice interactions such as selections you could add after
+            |     in your macro will not work. StartCommand is useful to execute one-shot (not
+            |     interactive) commands, it is not safe for interactive
+            |     commands.
+            |
+            |     Parameters:
+            |
+            |         iCommandId
+            |             The id of the command to be started. This id can be the name of the
+            |             command or its alias.
 
         :param str i_command_id:
         :return: None
@@ -1117,16 +1189,18 @@ class Application(AnyObject):
 
     def start_workbench(self, iworkbench_id):
         """
-        .. note::
+        .. admonition:: Note
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub StartWorkbench(CATBSTR iworkbenchId)
-                |
-                |     Starts a CATIA workbench.
-                |
-                |     Parameters:
-                |
-                |         iworkbenchId
-                |             The id of the workbench to be started.
+
+            | o Sub StartWorkbench(CATBSTR iworkbenchId)
+            |
+            |     Starts a CATIA workbench.
+            |
+            |     Parameters:
+            |
+            |         iworkbenchId
+            |             The id of the workbench to be started.
 
         :param str iworkbench_id:
         :return: None
