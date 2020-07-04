@@ -125,3 +125,10 @@ Creates a drawing border for an A0 landscape page.
 
 .. literalinclude:: ../example_017.py
 
+Example 18
+----------
+
+Reorder a Product tree alphabetically
+
+.. literalinclude:: ../example_017.py
+
