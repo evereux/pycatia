@@ -9,11 +9,10 @@
         
 """
 
-from pycatia.in_interfaces.viewer2_d import Viewer2D
+from pycatia.in_interfaces.viewer_2d import Viewer2D
 
 
 class SpecsViewer(Viewer2D):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -71,4 +70,4 @@ class SpecsViewer(Viewer2D):
         self.specs_viewer.Layout = value
 
     def __repr__(self):
-        return f'SpecsViewer(name="{ self.name }")'
+        return f'SpecsViewer(name="{self.name}")'
