@@ -14,7 +14,6 @@ from pycatia.system_interfaces.collection import Collection
 
 
 class References(Collection):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -34,7 +33,7 @@ class References(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Reference)
         self.references = com_object
 
     def item(self, i_index):
@@ -71,4 +70,4 @@ class References(Collection):
         return Reference(self.references.Item(i_index))
 
     def __repr__(self):
-        return f'References(name="{ self.name }")'
+        return f'References(name="{self.name}")'

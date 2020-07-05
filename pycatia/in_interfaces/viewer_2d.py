@@ -10,11 +10,10 @@
 """
 
 from pycatia.in_interfaces.viewer import Viewer
-from pycatia.in_interfaces.viewpoint2_d import Viewpoint2D
+from pycatia.in_interfaces.viewpoint_2d import Viewpoint2D
 
 
 class Viewer2D(Viewer):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -66,4 +65,4 @@ class Viewer2D(Viewer):
         self.viewer2_d.Viewpoint2D = value
 
     def __repr__(self):
-        return f'Viewer2D(name="{ self.name }")'
+        return f'Viewer2D(name="{self.name}")'

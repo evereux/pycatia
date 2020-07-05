@@ -14,7 +14,6 @@ from pycatia.system_interfaces.collection import Collection
 
 
 class Windows(Collection):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -32,7 +31,7 @@ class Windows(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Window)
         self.windows = com_object
 
     def arrange(self, i_style):
@@ -111,4 +110,4 @@ class Windows(Collection):
         return Window(self.windows.Item(i_index))
 
     def __repr__(self):
-        return f'Windows(name="{ self.name }")'
+        return f'Windows(name="{self.name}")'
