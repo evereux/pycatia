@@ -8,7 +8,9 @@
         and thus help debugging in pycatia.
 
 """
+from pywintypes import com_error
 
+from pycatia.exception_handling import CATIAApplicationException
 from pycatia.in_interfaces.selected_element import SelectedElement
 from pycatia.in_interfaces.vis_property_set import VisPropertySet
 from pycatia.system_interfaces.any_object import AnyObject
@@ -370,7 +372,7 @@ class Selection(AnyObject):
         """
         return self.selection.Delete()
 
-    def filter_correspondence(self, i_filter_type=None):
+    def filter_correspondence(self, i_filter_type):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
@@ -534,7 +536,7 @@ class Selection(AnyObject):
         """
         return self.selection.FilterCorrespondence(i_filter_type)
 
-    def find_object(self, i_object_type=None):
+    def find_object(self, i_object_type):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
@@ -565,10 +567,10 @@ class Selection(AnyObject):
         """
         return AnyObject(self.selection.FindObject(i_object_type))
 
-    def indicate_or_select_element_2d(self, i_message=None, i_filter_type=None,
-                                      i_object_selection_before_command_use_possibility=None, i_tooltip=None,
-                                      i_triggering_on_mouse_move=None, o_object_selected=None,
-                                      o_document_window_location=None):
+    def indicate_or_select_element_2d(self, i_message, i_filter_type,
+                                      i_object_selection_before_command_use_possibility, i_tooltip,
+                                      i_triggering_on_mouse_move, o_object_selected,
+                                      o_document_window_location):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
@@ -709,10 +711,10 @@ class Selection(AnyObject):
                                                         i_triggering_on_mouse_move, o_object_selected,
                                                         o_document_window_location)
 
-    def indicate_or_select_element3_d(self, i_planar_geometric_object=None, i_message=None, i_filter_type=None,
-                                      i_object_selection_before_command_use_possibility=None, i_tooltip=None,
-                                      i_triggering_on_mouse_move=None, o_object_selected=None,
-                                      o_window_location2_d=None, o_window_location3_d=None):
+    def indicate_or_select_element_3d(self, i_planar_geometric_object, i_message, i_filter_type,
+                                      i_object_selection_before_command_use_possibility, i_tooltip,
+                                      i_triggering_on_mouse_move, o_object_selected,
+                                      o_window_location2_d, o_window_location3_d):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
@@ -863,7 +865,7 @@ class Selection(AnyObject):
                                                         i_triggering_on_mouse_move, o_object_selected,
                                                         o_window_location2_d, o_window_location3_d)
 
-    def item(self, i_index=None):
+    def item(self, i_index):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
@@ -880,7 +882,7 @@ class Selection(AnyObject):
         """
         return SelectedElement(self.selection.Item(i_index))
 
-    def item2(self, i_index=None):
+    def item2(self, i_index):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
@@ -943,7 +945,7 @@ class Selection(AnyObject):
         """
         return self.selection.Paste()
 
-    def paste_special(self, i_format=None):
+    def paste_special(self, i_format):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
@@ -1053,7 +1055,7 @@ class Selection(AnyObject):
         """
         return self.selection.PasteSpecial(i_format)
 
-    def remove(self, i_index=None):
+    def remove(self, i_index):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
@@ -1069,7 +1071,7 @@ class Selection(AnyObject):
         """
         return self.selection.Remove(i_index)
 
-    def remove2(self, i_index=None):
+    def remove2(self, i_index):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
@@ -1099,7 +1101,7 @@ class Selection(AnyObject):
         """
         return self.selection.Remove2(i_index)
 
-    def search(self, i_string_bstr=None):
+    def search(self, i_string_bstr):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
@@ -1121,16 +1123,18 @@ class Selection(AnyObject):
                 |         Navigator URL put into the selection although it is not exposed to
                 |         automation.
                 |
-                |
-CATIA.ActiveDocument.Selection.Search("Part.Sketcher.Color='White',all")
+                |         CATIA.ActiveDocument.Selection.Search("Part.Sketcher.Color='White',all")
 
         :param str i_string_bstr:
         :return: None
         """
-        return self.selection.Search(i_string_bstr)
+        try:
+            return self.selection.Search(i_string_bstr)
+        except com_error:
+            raise CATIAApplicationException('The method Search failed. Try changing your search string.')
 
-    def select_element2(self, i_filter_type=None, i_message=None,
-                        i_object_selection_before_command_use_possibility=None):
+    def select_element2(self, i_filter_type, i_message,
+                        i_object_selection_before_command_use_possibility):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
@@ -1600,9 +1604,9 @@ CATIA.ActiveDocument.Selection.Search("Part.Sketcher.Color='White',all")
         return self.selection.SelectElement2(i_filter_type, i_message,
                                              i_object_selection_before_command_use_possibility)
 
-    def select_element3(self, i_filter_type=None, i_message=None,
-                        i_object_selection_before_command_use_possibility=None, i_multi_selection_mode=None,
-                        i_tooltip=None):
+    def select_element3(self, i_filter_type, i_message,
+                        i_object_selection_before_command_use_possibility, i_multi_selection_mode,
+                        i_tooltip):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
@@ -1787,8 +1791,8 @@ CATIA.ActiveDocument.Selection.Search("Part.Sketcher.Color='White',all")
                                              i_object_selection_before_command_use_possibility,
                                              i_multi_selection_mode.com_object, i_tooltip)
 
-    def select_element4(self, i_filter_type=None, i_active_document_message=None, i_non_active_document_message=None,
-                        i_tooltip=None, o_document=None):
+    def select_element4(self, i_filter_type, i_active_document_message, i_non_active_document_message,
+                        i_tooltip, o_document):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
