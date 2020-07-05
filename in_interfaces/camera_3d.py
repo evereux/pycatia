@@ -10,11 +10,10 @@
 """
 
 from pycatia.in_interfaces.camera import Camera
-from pycatia.in_interfaces.viewpoint3_d import Viewpoint3D
+from pycatia.in_interfaces.viewpoint_3d import Viewpoint3D
 
 
 class Camera3D(Camera):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -72,4 +71,4 @@ class Camera3D(Camera):
         self.camera3_d.Viewpoint3D = value
 
     def __repr__(self):
-        return f'Camera3D(name="{ self.name }")'
+        return f'Camera3D(name="{self.name}")'

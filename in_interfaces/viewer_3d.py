@@ -11,11 +11,10 @@
 
 from pycatia.in_interfaces.light_sources import LightSources
 from pycatia.in_interfaces.viewer import Viewer
-from pycatia.in_interfaces.viewpoint3_d import Viewpoint3D
+from pycatia.in_interfaces.viewpoint_3d import Viewpoint3D
 
 
 class Viewer3D(Viewer):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -428,4 +427,4 @@ class Viewer3D(Viewer):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'Viewer3D(name="{ self.name }")'
+        return f'Viewer3D(name="{self.name}")'
