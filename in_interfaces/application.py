@@ -65,7 +65,7 @@ class Application(AnyObject):
         super().__init__(com_object)
 
     @property
-    def active_document(self):
+    def active_document(self) -> Document:
         """
         .. admonition:: Note
 
@@ -83,7 +83,8 @@ class Application(AnyObject):
             |          Dim ActiveDoc As Document
             |          Set ActiveDoc = CATIA.ActiveDocument
 
-        :return: Document()
+        :return: Document
+        :rtype: Document
         """
         try:
             return Document(self.application.ActiveDocument)
@@ -91,7 +92,7 @@ class Application(AnyObject):
             raise CATIAApplicationException('Is there an active document?')
 
     @property
-    def active_printer(self):
+    def active_printer(self) -> Printer:
         """
         .. admonition:: Note
 
@@ -110,12 +111,13 @@ class Application(AnyObject):
             |          Set ActivePrinter = CATIA.ActivePrinter
 
         :return: Printer
+        :rtype: Printer
         """
 
         return Printer(self.application.ActivePrinter)
 
     @active_printer.setter
-    def active_printer(self, value):
+    def active_printer(self, value: Printer):
         """
         :param Printer value:
         """
@@ -123,7 +125,7 @@ class Application(AnyObject):
         self.application.ActivePrinter = value
 
     @property
-    def active_window(self):
+    def active_window(self) -> Window:
         """
         .. admonition:: Note
 
@@ -142,12 +144,13 @@ class Application(AnyObject):
             |          Set ActiveWin = CATIA.ActiveWindow
 
         :return: Window
+        :rtype: Window
         """
 
         return Window(self.application.ActiveWindow)
 
     @property
-    def cache_size(self):
+    def cache_size(self) -> int:
         """
         .. admonition:: Note
 
@@ -166,12 +169,13 @@ class Application(AnyObject):
             |          CATIA.CacheSize = LocalCacheSize
 
         :return: int
+        :rtype: int
         """
 
         return self.application.CacheSize
 
     @cache_size.setter
-    def cache_size(self, value):
+    def cache_size(self, value: int):
         """
         :param int value:
         """
@@ -179,7 +183,7 @@ class Application(AnyObject):
         self.application.CacheSize = value
 
     @property
-    def caption(self):
+    def caption(self) -> str:
         """
         .. admonition:: Note
 
@@ -202,12 +206,13 @@ class Application(AnyObject):
             |          CNext
 
         :return: str
+        :rtype: str
         """
 
         return self.application.Caption
 
     @caption.setter
-    def caption(self, value):
+    def caption(self, value: str):
         """
         :param str value:
         """
@@ -215,7 +220,7 @@ class Application(AnyObject):
         self.application.Caption = value
 
     @property
-    def display_file_alerts(self):
+    def display_file_alerts(self) -> bool:
         """
         .. admonition:: Note
 
@@ -239,12 +244,13 @@ class Application(AnyObject):
             |          CATIA.DisplayFileAlerts = False
 
         :return: bool
+        :rtype: bool
         """
 
         return self.application.DisplayFileAlerts
 
     @display_file_alerts.setter
-    def display_file_alerts(self, value):
+    def display_file_alerts(self, value: bool):
         """
         :param bool value:
         """
@@ -252,7 +258,7 @@ class Application(AnyObject):
         self.application.DisplayFileAlerts = value
 
     @property
-    def documents(self):
+    def documents(self) -> Documents:
         """
         .. admonition:: Note
 
@@ -271,11 +277,12 @@ class Application(AnyObject):
             |          Set DocCollection = CATIA.Documents
 
         :return: Documents
+        :rtype: Documents
         """
         return Documents(self.application.Documents)
 
     @property
-    def file_search_order(self):
+    def file_search_order(self) -> str:
         """
         .. admonition:: Note
 
@@ -304,12 +311,13 @@ class Application(AnyObject):
             |     of the methods will fail.
 
         :return: str
+        :rtype: str
         """
 
         return self.application.FileSearchOrder
 
     @file_search_order.setter
-    def file_search_order(self, value):
+    def file_search_order(self, value: str):
         """
         :param str value:
         """
@@ -317,7 +325,7 @@ class Application(AnyObject):
         self.application.FileSearchOrder = value
 
     @property
-    def file_system(self):
+    def file_system(self) -> FileSystem:
         """
         .. admonition:: Note
 
@@ -336,12 +344,13 @@ class Application(AnyObject):
             |          Set AppliFileSys = CATIA.FileSystem
 
         :return: FileSystem
+        :rtype: FileSystem
         """
 
         return FileSystem(self.application.FileSystem)
 
     @property
-    def full_name(self):
+    def full_name(self) -> str:
         """
         .. admonition:: Note
 
@@ -365,12 +374,13 @@ class Application(AnyObject):
             |          \\\\lisa\\cxr1arel\\bsf\\alpha_a\\code\\bin\\CNEXT.exe
 
         :return: str
+        :rtype: str
         """
 
         return self.application.FullName
 
     @property
-    def hso_synchronized(self):
+    def hso_synchronized(self) -> bool:
         """
         .. admonition:: Note
 
@@ -416,12 +426,13 @@ class Application(AnyObject):
             |     so on.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.application.HSOSynchronized
 
     @hso_synchronized.setter
-    def hso_synchronized(self, value):
+    def hso_synchronized(self, value: bool):
         """
         :param bool value:
         """
@@ -429,7 +440,7 @@ class Application(AnyObject):
         self.application.HSOSynchronized = value
 
     @property
-    def height(self):
+    def height(self) -> float:
         """
         .. admonition:: Note
 
@@ -447,12 +458,13 @@ class Application(AnyObject):
             |          CATIA.Height = 300
 
         :return: float
+        :rtype: float
         """
 
         return self.application.Height
 
     @height.setter
-    def height(self, value):
+    def height(self, value: float):
         """
         :param float value:
         """
@@ -460,7 +472,7 @@ class Application(AnyObject):
         self.application.Height = value
 
     @property
-    def interactive(self):
+    def interactive(self) -> bool:
         """
         .. admonition:: Note
 
@@ -479,12 +491,13 @@ class Application(AnyObject):
             |          CATIA.Interactive = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.application.Interactive
 
     @interactive.setter
-    def interactive(self, value):
+    def interactive(self, value: bool):
         """
         :param bool value:
         """
@@ -492,7 +505,7 @@ class Application(AnyObject):
         self.application.Interactive = value
 
     @property
-    def left(self):
+    def left(self) -> float:
         """
         .. admonition:: Note
 
@@ -512,12 +525,13 @@ class Application(AnyObject):
             |          CATIA.Left = 150
 
         :return: float
+        :rtype: float
         """
 
         return self.application.Left
 
     @left.setter
-    def left(self, value):
+    def left(self, value: float):
         """
         :param float value:
         """
@@ -525,7 +539,7 @@ class Application(AnyObject):
         self.application.Left = value
 
     @property
-    def local_cache(self):
+    def local_cache(self) -> str:
         """
         .. admonition:: Note
 
@@ -544,12 +558,13 @@ class Application(AnyObject):
             |          CATIA.LocalCache = LocalCachePath
 
         :return: str
+        :rtype: str
         """
 
         return self.application.LocalCache
 
     @local_cache.setter
-    def local_cache(self, value):
+    def local_cache(self, value: str):
         """
         :param str value:
         """
@@ -557,7 +572,7 @@ class Application(AnyObject):
         self.application.LocalCache = value
 
     @property
-    def path(self):
+    def path(self) -> str:
         """
         .. admonition:: Note
 
@@ -578,12 +593,14 @@ class Application(AnyObject):
             |
             |          \\\\lisa\\cxr1arel\\bsf\\alpha_a\\code\\bin
 
-        :return: Path()
+        :return: str
+        :rtype: str
         """
-        return Path(self.application.Path)
+
+        return self.application.Path
 
     @property
-    def printers(self):
+    def printers(self) -> Printers:
         """
         .. admonition:: Note
 
@@ -602,12 +619,13 @@ class Application(AnyObject):
             |          Set PrintersCollection = CATIA.Printers
 
         :return: Printers
+        :rtype: Printers
         """
 
         return Printers(self.application.Printers)
 
     @property
-    def refresh_display(self):
+    def refresh_display(self) -> bool:
         """
         .. admonition:: Note
 
@@ -630,12 +648,13 @@ class Application(AnyObject):
             |          CATIA.RefreshDisplay = False
 
         :return: bool
+        :rtype: bool
         """
 
         return self.application.RefreshDisplay
 
     @refresh_display.setter
-    def refresh_display(self, value):
+    def refresh_display(self, value: bool):
         """
         :param bool value:
         """
@@ -643,7 +662,7 @@ class Application(AnyObject):
         self.application.RefreshDisplay = value
 
     @property
-    def status_bar(self):
+    def status_bar(self) -> str:
         """
         .. admonition:: Note
 
@@ -666,12 +685,13 @@ class Application(AnyObject):
             |          Welcome to CATIA CxR1
 
         :return: str
+        :rtype: str
         """
 
         return self.application.StatusBar
 
     @status_bar.setter
-    def status_bar(self, value):
+    def status_bar(self, value: str):
         """
         :param str value:
         """
@@ -679,7 +699,7 @@ class Application(AnyObject):
         self.application.StatusBar = value
 
     @property
-    def system_configuration(self):
+    def system_configuration(self) -> SystemConfiguration:
         """
         .. admonition:: Note
 
@@ -697,12 +717,13 @@ class Application(AnyObject):
             |             The system configuration object.
 
         :return: SystemConfiguration
+        :rtype: SystemConfiguration
         """
 
         return SystemConfiguration(self.application.SystemConfiguration)
 
     @property
-    def system_service(self):
+    def system_service(self) -> SystemService:
         """
         .. admonition:: Note
 
@@ -720,12 +741,13 @@ class Application(AnyObject):
             |          Set AppliSysSer = CATIA.SystemService
 
         :return: SystemService
+        :rtype: SystemService
         """
 
         return SystemService(self.application.SystemService)
 
     @property
-    def top(self):
+    def top(self) -> float:
         """
         .. admonition:: Note
 
@@ -744,12 +766,13 @@ class Application(AnyObject):
             |          CATIA.Top = 50
 
         :return: float
+        :rtype: float
         """
 
         return self.application.Top
 
     @top.setter
-    def top(self, value):
+    def top(self, value: float):
         """
         :param float value:
         """
@@ -757,7 +780,7 @@ class Application(AnyObject):
         self.application.Top = value
 
     @property
-    def undo_redo_lock(self):
+    def undo_redo_lock(self) -> bool:
         """
         .. admonition:: Note
 
@@ -782,12 +805,13 @@ class Application(AnyObject):
             |          CATIA.UndoRedoLock = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.application.UndoRedoLock
 
     @undo_redo_lock.setter
-    def undo_redo_lock(self, value):
+    def undo_redo_lock(self, value: bool):
         """
         :param bool value:
         """
@@ -795,7 +819,7 @@ class Application(AnyObject):
         self.application.UndoRedoLock = value
 
     @property
-    def visible(self):
+    def visible(self) -> bool:
         """
         .. admonition:: Note
 
@@ -814,12 +838,13 @@ class Application(AnyObject):
             |          CATIA.Visibility = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.application.Visible
 
     @visible.setter
-    def visible(self, value):
+    def visible(self, value: bool):
         """
         :param bool value:
         """
@@ -827,7 +852,7 @@ class Application(AnyObject):
         self.application.Visible = value
 
     @property
-    def width(self):
+    def width(self) -> float:
         """
         .. admonition:: Note
 
@@ -845,12 +870,13 @@ class Application(AnyObject):
             |          CATIA.Width = 350
 
         :return: float
+        :rtype: float
         """
 
         return self.application.Width
 
     @width.setter
-    def width(self, value):
+    def width(self, value: float):
         """
         :param float value:
         """
@@ -858,7 +884,7 @@ class Application(AnyObject):
         self.application.Width = value
 
     @property
-    def windows(self):
+    def windows(self) -> Windows:
         """
         .. admonition:: Note
 
@@ -877,11 +903,12 @@ class Application(AnyObject):
             |          Set WinCollection = CATIA.Windows
 
         :return: Windows
+        :rtype: Windows
         """
 
         return Windows(self.application.Windows)
 
-    def create_send_to(self):
+    def create_send_to(self) -> SendToService:
         """
         .. admonition:: Note
 
@@ -897,10 +924,11 @@ class Application(AnyObject):
             |     to one of CATIASendToService methods will fail.
 
         :return: SendToService
+        :rtype: SendToService
         """
         return SendToService(self.application.CreateSendTo())
 
-    def disable_new_undo_redo_transaction(self):
+    def disable_new_undo_redo_transaction(self) -> None:
         """
         .. admonition:: Note
 
@@ -925,10 +953,11 @@ class Application(AnyObject):
             |          CATIA.DisableNewUndoRedoTransaction()
 
         :return: None
+        :rtype: None
         """
         return self.application.DisableNewUndoRedoTransaction()
 
-    def enable_new_undo_redo_transaction(self):
+    def enable_new_undo_redo_transaction(self) -> None:
         """
         .. admonition:: Note
 
@@ -945,6 +974,7 @@ class Application(AnyObject):
             |          CATIA.EnableNewUndoRedoTransaction()
 
         :return: None
+        :rtype: None
         """
         return self.application.EnableNewUndoRedoTransaction()
 
@@ -1054,7 +1084,7 @@ class Application(AnyObject):
 
         return run
 
-    def file_selection_box(self, i_title, i_extension, i_mode):
+    def file_selection_box(self, i_title: str, i_extension: str, i_mode: int) -> str:
         """
         .. admonition:: Note
 
@@ -1094,10 +1124,11 @@ class Application(AnyObject):
         :param str i_extension:
         :param CatFileSelectionMode i_mode:
         :return: str
+        :rtype: str
         """
-        return self.application.FileSelectionBox(i_title, i_extension, i_mode.com_object)
+        return self.application.FileSelectionBox(i_title, i_extension, i_mode)
 
-    def get_workbench_id(self):
+    def get_workbench_id(self) -> str:
         """
         .. admonition:: Note
 
@@ -1113,10 +1144,11 @@ class Application(AnyObject):
             |             The id of the current workbench.
 
         :return: str
+        :rtype: str
         """
         return self.application.GetWorkbenchId()
 
-    def help(self, i_help_id):
+    def help(self, i_help_id: str) -> None:
         """
         .. admonition:: Note
 
@@ -1139,6 +1171,7 @@ class Application(AnyObject):
 
         :param str i_help_id:
         :return: None
+        :rtype: None
         """
         return self.application.Help(i_help_id)
 
@@ -1213,7 +1246,7 @@ class Application(AnyObject):
             [message_text, buttons, title]
         )
 
-    def quit(self):
+    def quit(self) -> None:
         """
         .. admonition:: Note
 
@@ -1230,10 +1263,11 @@ class Application(AnyObject):
             |          CATIA.Quit()
 
         :return: None
+        :rtype: None
         """
         return self.application.Quit()
 
-    def start_command(self, i_command_id):
+    def start_command(self, i_command_id: str) -> None:
         """
         .. admonition:: Note
 
@@ -1256,10 +1290,11 @@ class Application(AnyObject):
 
         :param str i_command_id:
         :return: None
+        :rtype: None
         """
         return self.application.StartCommand(i_command_id)
 
-    def start_workbench(self, iworkbench_id):
+    def start_workbench(self, iworkbench_id: str) -> None:
         """
         .. admonition:: Note
 
@@ -1276,6 +1311,7 @@ class Application(AnyObject):
 
         :param str iworkbench_id:
         :return: None
+        :rtype: None
         """
         return self.application.StartWorkbench(iworkbench_id)
 
