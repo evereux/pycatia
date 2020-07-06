@@ -5,6 +5,7 @@ from pywintypes import com_error
 
 from pathlib import Path
 
+from pycatia.enumeration.enumeration_types import cat_script_language
 from pycatia.exception_handling.exceptions import CATIAApplicationException
 from pycatia.in_interfaces.document import Document
 from pycatia.in_interfaces.documents import Documents
@@ -1140,6 +1141,77 @@ class Application(AnyObject):
         :return: None
         """
         return self.application.Help(i_help_id)
+
+    def message_box(self, message_text, buttons=0, title=""):
+        """
+
+        The buttons argument settings are:
+
+        =====================   ======= ==============================================================================================================
+        Constant                Value   Description
+        ---------------------   ------- --------------------------------------------------------------------------------------------------------------
+        vbOKOnly                0       Display OK button only.
+        vbOKCancel              1       Display OK and Cancel buttons.
+        vbAbortRetryIgnore      2       Display Abort, Retry, and Ignore buttons.
+        vbYesNoCancel           3       Display Yes, No, and Cancel buttons.
+        vbYesNo                 4       Display Yes and No buttons.
+        vbRetryCancel           5       Display Retry and Cancel buttons.
+        vbCritical              16      Display Critical Message icon.
+        vbQuestion              32      Display Warning Query icon.
+        vbExclamation           48      Display Warning Message icon.
+        vbInformation           64      Display Information Message icon.
+        vbDefaultButton1        0       First button is default.
+        vbDefaultButton2        256     Second button is default.
+        vbDefaultButton3        512     Third button is default.
+        vbDefaultButton4        768     Fourth button is default.
+        vbApplicationModal      0       Application modal; the user must respond to the message box before continuing work in the current application.
+        vbSystemModal           4096    System modal; all applications are suspended until the user responds to the message box.
+        vbMsgBoxHelpButton      16384   Adds Help button to the message box.
+        vbMsgBoxSetForeground   65536   Specifies the message box window as the foreground window.
+        vbMsgBoxRight           524288  Text is right-aligned.
+        vbMsgBoxRtlReading      1048576 Specifies text should appear as right-to-left reading on Hebrew and Arabic systems.
+        =====================   ======= ==============================================================================================================
+
+        Return values
+
+        ========  =====  ===========
+        Constant  Value  Description
+        --------  -----  -----------
+        vbOK          1  OK
+        vbCancel      2  Cancel
+        vbAbort       3  Abort
+        vbRetry       4  Retry
+        vbIgnore      5  Ignore
+        vbYes         6  Yes
+        vbNo          7  No
+        ========  =====  ===========
+
+        Example::
+
+        This creates a message box with the buttons abort, retry ignore and displays the Warning Query icon.
+
+        >>> from pycatia import catia
+        >>> buttons = 2 + 32
+        >>> result = catia.message_box('Hello World!?', buttons=buttons, title='Asking a question.')
+        >>> # result = 3 if the user presses Abort.
+
+        :param str message_text: Text to be displayed in the message box window.
+        :param int buttons: Defines the message box configuration. See example.
+        :param str title: Text to be displayed in the message box title bar.
+        :return: Returns an int which is representative of the button pressed.
+        :rtype: int
+        """
+        function_name = "message_box"
+        msg_box = f"Public Function {function_name}(message_text, buttons, title)\n" \
+                  f"    {function_name} = MsgBox(message_text, buttons, title)\n" \
+                  "End Function"
+
+        return self.system_service.evaluate(
+            msg_box,
+            cat_script_language.index('CATVBScriptLanguage'),
+            function_name,
+            [message_text, buttons, title]
+        )
 
     def quit(self):
         """
