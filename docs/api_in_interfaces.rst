@@ -22,21 +22,21 @@ camera
     :members:
 
 
-.. _in_interfaces-camera2_d:
+.. _in_interfaces-camera_2d:
 
-camera2_d
+camera_2d
 ---------
 
-.. automodule:: pycatia.in_interfaces.camera2_d
+.. automodule:: pycatia.in_interfaces.camera_2d
     :members:
 
 
-.. _in_interfaces-camera3_d:
+.. _in_interfaces-camera_3d:
 
-camera3_d
+camera_3d
 ---------
 
-.. automodule:: pycatia.in_interfaces.camera3_d
+.. automodule:: pycatia.in_interfaces.camera_3d
     :members:
 
 
@@ -364,21 +364,21 @@ viewer
     :members:
 
 
-.. _in_interfaces-viewer2_d:
+.. _in_interfaces-viewer_2d:
 
-viewer2_d
+viewer_2d
 ---------
 
-.. automodule:: pycatia.in_interfaces.viewer2_d
+.. automodule:: pycatia.in_interfaces.viewer_2d
     :members:
 
 
-.. _in_interfaces-viewer3_d:
+.. _in_interfaces-viewer_3d:
 
-viewer3_d
+viewer_3d
 ---------
 
-.. automodule:: pycatia.in_interfaces.viewer3_d
+.. automodule:: pycatia.in_interfaces.viewer_3d
     :members:
 
 
@@ -391,21 +391,21 @@ viewers
     :members:
 
 
-.. _in_interfaces-viewpoint2_d:
+.. _in_interfaces-viewpoint_2d:
 
-viewpoint2_d
+viewpoint_2d
 ------------
 
-.. automodule:: pycatia.in_interfaces.viewpoint2_d
+.. automodule:: pycatia.in_interfaces.viewpoint_2d
     :members:
 
 
-.. _in_interfaces-viewpoint3_d:
+.. _in_interfaces-viewpoint_3d:
 
-viewpoint3_d
+viewpoint_3d
 ------------
 
-.. automodule:: pycatia.in_interfaces.viewpoint3_d
+.. automodule:: pycatia.in_interfaces.viewpoint_3d
     :members:
 
 
