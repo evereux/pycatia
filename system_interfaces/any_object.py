@@ -35,7 +35,7 @@ class AnyObject(PyCATIA):
         self.com_object = com_object
 
     @property
-    def application(self):
+    def application(self) -> Application:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
@@ -65,11 +65,13 @@ class AnyObject(PyCATIA):
                 |          Set CurrentApplication = MyDoc.Application
 
         :return: Application
+        :rtype: Application
         """
-        return self.com_object.Application
+
+        return Application(self.any_object.Application)
 
     @property
-    def name(self):
+    def name(self) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
@@ -95,20 +97,21 @@ class AnyObject(PyCATIA):
                 |          MyObjectName = MyObject.Name
 
         :return: str
+        :rtype: str
         """
 
-        return self.com_object.Name
+        return self.any_object.Name
 
     @name.setter
-    def name(self, value):
+    def name(self, value: str):
         """
         :param str value:
         """
 
-        self.com_object.Name = value
+        self.any_object.Name = value
 
     @property
-    def parent(self):
+    def parent(self) -> AnyObject:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
@@ -130,11 +133,12 @@ class AnyObject(PyCATIA):
                 |          Set ParentObject = GivenObject.Parent
 
         :return: AnyObject
+        :rtype: AnyObject
         """
 
-        return AnyObject(self.com_object.Parent)
+        return AnyObject(self.any_object.Parent)
 
-    def get_item(self, id_name):
+    def get_item(self, id_name: str) -> AnyObject:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -154,8 +158,9 @@ class AnyObject(PyCATIA):
 
         :param str id_name:
         :return: AnyObject
+        :rtype: AnyObject
         """
-        return AnyObject(self.com_object.GetItem(id_name))
+        return self.any_object.GetItem(id_name)
 
     def __repr__(self):
         return f'AnyObject(name="{self.name}")'
