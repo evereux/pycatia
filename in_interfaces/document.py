@@ -14,7 +14,6 @@ from pathlib import Path
 from pycatia.exception_handling import CATIAApplicationException
 from pycatia.in_interfaces.cameras import Cameras
 from pycatia.in_interfaces.reference import Reference
-from pycatia.in_interfaces.selection import Selection
 from pycatia.in_interfaces.window import Window
 from pycatia.in_interfaces.workbench import Workbench
 from pycatia.mec_mod_interfaces.part import Part
@@ -266,7 +265,7 @@ class Document(AnyObject):
         self.document.SeeHiddenElements = value
 
     @property
-    def selection(self) -> Selection:
+    def selection(self) -> 'Selection':
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -312,6 +311,8 @@ class Document(AnyObject):
         :return: None
         :rtype: None
         """
+
+        return self.document.Activate()
 
     def close(self) -> None:
         """
