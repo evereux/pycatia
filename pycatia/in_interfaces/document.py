@@ -14,6 +14,7 @@ from pathlib import Path
 from pycatia.exception_handling import CATIAApplicationException
 from pycatia.in_interfaces.cameras import Cameras
 from pycatia.in_interfaces.reference import Reference
+from pycatia.in_interfaces.selection import Selection
 from pycatia.in_interfaces.window import Window
 from pycatia.in_interfaces.workbench import Workbench
 from pycatia.mec_mod_interfaces.part import Part
@@ -55,7 +56,7 @@ class Document(AnyObject):
         self.document = com_object
 
     @property
-    def cameras(self):
+    def cameras(self) -> Cameras:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -71,12 +72,13 @@ class Document(AnyObject):
                 |          Set CameraCollection = Doc.Cameras
 
         :return: Cameras
+        :rtype: Cameras
         """
 
         return Cameras(self.document.Cameras)
 
     @property
-    def current_filter(self):
+    def current_filter(self) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -94,12 +96,13 @@ class Document(AnyObject):
                 |          Doc.CurrentFilter = "Filter001"
 
         :return: str
+        :rtype: str
         """
 
         return self.document.CurrentFilter
 
     @current_filter.setter
-    def current_filter(self, value):
+    def current_filter(self, value: str):
         """
         :param str value:
         """
@@ -107,7 +110,7 @@ class Document(AnyObject):
         self.document.CurrentFilter = value
 
     @property
-    def current_layer(self):
+    def current_layer(self) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -124,12 +127,13 @@ class Document(AnyObject):
                 |          Doc.CurrentLayer = "Layer 3"
 
         :return: str
+        :rtype: str
         """
 
         return self.document.CurrentLayer
 
     @current_layer.setter
-    def current_layer(self, value):
+    def current_layer(self, value: str):
         """
         :param str value:
         """
@@ -209,7 +213,7 @@ class Document(AnyObject):
         return str(self.path())
 
     @property
-    def read_only(self):
+    def read_only(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -226,6 +230,7 @@ class Document(AnyObject):
                 |          IsReadOnly = Doc.ReadOnly
 
         :return: bool
+        :rtype: bool
         """
 
         return self.document.ReadOnly
@@ -253,7 +258,7 @@ class Document(AnyObject):
         return self.document.SeeHiddenElements
 
     @see_hidden_elements.setter
-    def see_hidden_elements(self, value):
+    def see_hidden_elements(self, value: bool):
         """
         :param bool value:
         """
@@ -261,7 +266,7 @@ class Document(AnyObject):
         self.document.SeeHiddenElements = value
 
     @property
-    def selection(self):
+    def selection(self) -> Selection:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -279,11 +284,12 @@ class Document(AnyObject):
                 |          Set CurSel = Doc.Selection
 
         :return: Selection
+        :rtype: Selection
         """
         from pycatia.in_interfaces.selection import Selection
         return Selection(self.document.Selection)
 
-    def activate(self):
+    def activate(self) -> None:
         """
         Activates the document
 
@@ -303,11 +309,11 @@ class Document(AnyObject):
                 |
                 |          Doc.Activate()
 
+        :return: None
+        :rtype: None
         """
 
-        self.document.Activate()
-
-    def close(self):
+    def close(self) -> None:
         """
         Closes the current document.
 
@@ -329,7 +335,7 @@ class Document(AnyObject):
                          f' CATIA will prompt you to save if you haven\'t already done so.')
         self.document.Close()
 
-    def create_filter(self, i_filter_name=None, i_filter_definition=None):
+    def create_filter(self, i_filter_name: str, i_filter_definition: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -355,10 +361,11 @@ class Document(AnyObject):
         :param str i_filter_name:
         :param str i_filter_definition:
         :return: None
+        :rtype: None
         """
         return self.document.CreateFilter(i_filter_name, i_filter_definition)
 
-    def create_reference_from_name(self, i_label=None):
+    def create_reference_from_name(self, i_label: str) -> Reference:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -377,6 +384,7 @@ class Document(AnyObject):
 
         :param str i_label:
         :return: Reference
+        :rtype: Reference
         """
         return Reference(self.document.CreateReferenceFromName(i_label))
 
@@ -389,7 +397,7 @@ class Document(AnyObject):
         except AttributeError:
             raise CATIAApplicationException('Is document a Drawing?')
 
-    def get_workbench(self, workbench_name=None):
+    def get_workbench(self, workbench_name: str) -> Workbench:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -410,6 +418,7 @@ class Document(AnyObject):
 
         :param str workbench_name:
         :return: Workbench
+        :rtype: Workbench
         """
         return Workbench(self.document.GetWorkbench(workbench_name))
 
@@ -704,7 +713,7 @@ class Document(AnyObject):
         """
         return self.document.RemoveFilter(i_filter_name)
 
-    def save(self):
+    def save(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -718,11 +727,12 @@ class Document(AnyObject):
                 |          Doc.Save()
 
         :return: None
+        :rtype: None
         """
         self.logger.info(f'Saving the current document.')
         self.document.Save()
 
-    def save_as(self, file_name, overwrite=False):
+    def save_as(self, file_name: str) -> None:
         """
         Save the document to a new name.
 
