@@ -34,7 +34,7 @@ class Analyze(AnyObject):
         self.analyze = com_object
 
     @property
-    def mass(self):
+    def mass(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -52,12 +52,13 @@ class Analyze(AnyObject):
                 |          MassValue = myProduct.Analyze.Mass
 
         :return: float
+        :rtype: float
         """
 
         return self.analyze.Mass
 
     @property
-    def volume(self):
+    def volume(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -75,12 +76,13 @@ class Analyze(AnyObject):
                 |          VolumeValue = myProduct.Analyze.Volume
 
         :return: float
+        :rtype: float
         """
 
         return self.analyze.Volume
 
     @property
-    def wet_area(self):
+    def wet_area(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -102,6 +104,7 @@ class Analyze(AnyObject):
                 |          WetAreaValue = myProduct.Analyze.WetArea
 
         :return: float
+        :rtype: float
         """
 
         return self.analyze.WetArea
