@@ -63,6 +63,7 @@ class Application(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
+        self.com_object = com_object
 
     @property
     def active_document(self) -> Document:
@@ -87,7 +88,7 @@ class Application(AnyObject):
         :rtype: Document
         """
         try:
-            return Document(self.application.ActiveDocument)
+            return Document(self.com_object.ActiveDocument)
         except com_error:
             raise CATIAApplicationException('Is there an active document?')
 
@@ -114,7 +115,7 @@ class Application(AnyObject):
         :rtype: Printer
         """
 
-        return Printer(self.application.ActivePrinter)
+        return Printer(self.com_object.ActivePrinter)
 
     @active_printer.setter
     def active_printer(self, value: Printer):
@@ -122,7 +123,7 @@ class Application(AnyObject):
         :param Printer value:
         """
 
-        self.application.ActivePrinter = value
+        self.com_object.ActivePrinter = value
 
     @property
     def active_window(self) -> Window:
@@ -147,7 +148,7 @@ class Application(AnyObject):
         :rtype: Window
         """
 
-        return Window(self.application.ActiveWindow)
+        return Window(self.com_object.ActiveWindow)
 
     @property
     def cache_size(self) -> int:
@@ -172,7 +173,7 @@ class Application(AnyObject):
         :rtype: int
         """
 
-        return self.application.CacheSize
+        return self.com_object.CacheSize
 
     @cache_size.setter
     def cache_size(self, value: int):
@@ -180,7 +181,7 @@ class Application(AnyObject):
         :param int value:
         """
 
-        self.application.CacheSize = value
+        self.com_object.CacheSize = value
 
     @property
     def caption(self) -> str:
@@ -209,7 +210,7 @@ class Application(AnyObject):
         :rtype: str
         """
 
-        return self.application.Caption
+        return self.com_object.Caption
 
     @caption.setter
     def caption(self, value: str):
@@ -217,7 +218,7 @@ class Application(AnyObject):
         :param str value:
         """
 
-        self.application.Caption = value
+        self.com_object.Caption = value
 
     @property
     def display_file_alerts(self) -> bool:
@@ -247,7 +248,7 @@ class Application(AnyObject):
         :rtype: bool
         """
 
-        return self.application.DisplayFileAlerts
+        return self.com_object.DisplayFileAlerts
 
     @display_file_alerts.setter
     def display_file_alerts(self, value: bool):
@@ -255,7 +256,7 @@ class Application(AnyObject):
         :param bool value:
         """
 
-        self.application.DisplayFileAlerts = value
+        self.com_object.DisplayFileAlerts = value
 
     @property
     def documents(self) -> Documents:
@@ -279,7 +280,7 @@ class Application(AnyObject):
         :return: Documents
         :rtype: Documents
         """
-        return Documents(self.application.Documents)
+        return Documents(self.com_object.Documents)
 
     @property
     def file_search_order(self) -> str:
@@ -314,7 +315,7 @@ class Application(AnyObject):
         :rtype: str
         """
 
-        return self.application.FileSearchOrder
+        return self.com_object.FileSearchOrder
 
     @file_search_order.setter
     def file_search_order(self, value: str):
@@ -322,7 +323,7 @@ class Application(AnyObject):
         :param str value:
         """
 
-        self.application.FileSearchOrder = value
+        self.com_object.FileSearchOrder = value
 
     @property
     def file_system(self) -> FileSystem:
@@ -347,7 +348,7 @@ class Application(AnyObject):
         :rtype: FileSystem
         """
 
-        return FileSystem(self.application.FileSystem)
+        return FileSystem(self.com_object.FileSystem)
 
     @property
     def full_name(self) -> str:
@@ -377,7 +378,7 @@ class Application(AnyObject):
         :rtype: str
         """
 
-        return self.application.FullName
+        return self.com_object.FullName
 
     @property
     def hso_synchronized(self) -> bool:
@@ -429,7 +430,7 @@ class Application(AnyObject):
         :rtype: bool
         """
 
-        return self.application.HSOSynchronized
+        return self.com_object.HSOSynchronized
 
     @hso_synchronized.setter
     def hso_synchronized(self, value: bool):
@@ -437,7 +438,7 @@ class Application(AnyObject):
         :param bool value:
         """
 
-        self.application.HSOSynchronized = value
+        self.com_object.HSOSynchronized = value
 
     @property
     def height(self) -> float:
@@ -461,7 +462,7 @@ class Application(AnyObject):
         :rtype: float
         """
 
-        return self.application.Height
+        return self.com_object.Height
 
     @height.setter
     def height(self, value: float):
@@ -469,7 +470,7 @@ class Application(AnyObject):
         :param float value:
         """
 
-        self.application.Height = value
+        self.com_object.Height = value
 
     @property
     def interactive(self) -> bool:
@@ -494,7 +495,7 @@ class Application(AnyObject):
         :rtype: bool
         """
 
-        return self.application.Interactive
+        return self.com_object.Interactive
 
     @interactive.setter
     def interactive(self, value: bool):
@@ -502,7 +503,7 @@ class Application(AnyObject):
         :param bool value:
         """
 
-        self.application.Interactive = value
+        self.com_object.Interactive = value
 
     @property
     def left(self) -> float:
@@ -528,7 +529,7 @@ class Application(AnyObject):
         :rtype: float
         """
 
-        return self.application.Left
+        return self.com_object.Left
 
     @left.setter
     def left(self, value: float):
@@ -536,7 +537,7 @@ class Application(AnyObject):
         :param float value:
         """
 
-        self.application.Left = value
+        self.com_object.Left = value
 
     @property
     def local_cache(self) -> str:
@@ -561,7 +562,7 @@ class Application(AnyObject):
         :rtype: str
         """
 
-        return self.application.LocalCache
+        return self.com_object.LocalCache
 
     @local_cache.setter
     def local_cache(self, value: str):
@@ -569,7 +570,7 @@ class Application(AnyObject):
         :param str value:
         """
 
-        self.application.LocalCache = value
+        self.com_object.LocalCache = value
 
     @property
     def path(self) -> str:
@@ -597,7 +598,7 @@ class Application(AnyObject):
         :rtype: str
         """
 
-        return self.application.Path
+        return self.com_object.Path
 
     @property
     def printers(self) -> Printers:
@@ -622,7 +623,7 @@ class Application(AnyObject):
         :rtype: Printers
         """
 
-        return Printers(self.application.Printers)
+        return Printers(self.com_object.Printers)
 
     @property
     def refresh_display(self) -> bool:
@@ -651,7 +652,7 @@ class Application(AnyObject):
         :rtype: bool
         """
 
-        return self.application.RefreshDisplay
+        return self.com_object.RefreshDisplay
 
     @refresh_display.setter
     def refresh_display(self, value: bool):
@@ -659,7 +660,7 @@ class Application(AnyObject):
         :param bool value:
         """
 
-        self.application.RefreshDisplay = value
+        self.com_object.RefreshDisplay = value
 
     @property
     def status_bar(self) -> str:
@@ -688,7 +689,7 @@ class Application(AnyObject):
         :rtype: str
         """
 
-        return self.application.StatusBar
+        return self.com_object.StatusBar
 
     @status_bar.setter
     def status_bar(self, value: str):
@@ -696,7 +697,7 @@ class Application(AnyObject):
         :param str value:
         """
 
-        self.application.StatusBar = value
+        self.com_object.StatusBar = value
 
     @property
     def system_configuration(self) -> SystemConfiguration:
@@ -720,7 +721,7 @@ class Application(AnyObject):
         :rtype: SystemConfiguration
         """
 
-        return SystemConfiguration(self.application.SystemConfiguration)
+        return SystemConfiguration(self.com_object.SystemConfiguration)
 
     @property
     def system_service(self) -> SystemService:
@@ -744,7 +745,7 @@ class Application(AnyObject):
         :rtype: SystemService
         """
 
-        return SystemService(self.application.SystemService)
+        return SystemService(self.com_object.SystemService)
 
     @property
     def top(self) -> float:
@@ -769,7 +770,7 @@ class Application(AnyObject):
         :rtype: float
         """
 
-        return self.application.Top
+        return self.com_object.Top
 
     @top.setter
     def top(self, value: float):
@@ -777,7 +778,7 @@ class Application(AnyObject):
         :param float value:
         """
 
-        self.application.Top = value
+        self.com_object.Top = value
 
     @property
     def undo_redo_lock(self) -> bool:
@@ -808,7 +809,7 @@ class Application(AnyObject):
         :rtype: bool
         """
 
-        return self.application.UndoRedoLock
+        return self.com_object.UndoRedoLock
 
     @undo_redo_lock.setter
     def undo_redo_lock(self, value: bool):
@@ -816,7 +817,7 @@ class Application(AnyObject):
         :param bool value:
         """
 
-        self.application.UndoRedoLock = value
+        self.com_object.UndoRedoLock = value
 
     @property
     def visible(self) -> bool:
@@ -841,7 +842,7 @@ class Application(AnyObject):
         :rtype: bool
         """
 
-        return self.application.Visible
+        return self.com_object.Visible
 
     @visible.setter
     def visible(self, value: bool):
@@ -849,7 +850,7 @@ class Application(AnyObject):
         :param bool value:
         """
 
-        self.application.Visible = value
+        self.com_object.Visible = value
 
     @property
     def width(self) -> float:
@@ -873,7 +874,7 @@ class Application(AnyObject):
         :rtype: float
         """
 
-        return self.application.Width
+        return self.com_object.Width
 
     @width.setter
     def width(self, value: float):
@@ -881,7 +882,7 @@ class Application(AnyObject):
         :param float value:
         """
 
-        self.application.Width = value
+        self.com_object.Width = value
 
     @property
     def windows(self) -> Windows:
@@ -906,7 +907,7 @@ class Application(AnyObject):
         :rtype: Windows
         """
 
-        return Windows(self.application.Windows)
+        return Windows(self.com_object.Windows)
 
     def create_send_to(self) -> SendToService:
         """
@@ -926,7 +927,7 @@ class Application(AnyObject):
         :return: SendToService
         :rtype: SendToService
         """
-        return SendToService(self.application.CreateSendTo())
+        return SendToService(self.com_object.CreateSendTo())
 
     def disable_new_undo_redo_transaction(self) -> None:
         """
@@ -955,7 +956,7 @@ class Application(AnyObject):
         :return: None
         :rtype: None
         """
-        return self.application.DisableNewUndoRedoTransaction()
+        return self.com_object.DisableNewUndoRedoTransaction()
 
     def enable_new_undo_redo_transaction(self) -> None:
         """
@@ -976,7 +977,7 @@ class Application(AnyObject):
         :return: None
         :rtype: None
         """
-        return self.application.EnableNewUndoRedoTransaction()
+        return self.com_object.EnableNewUndoRedoTransaction()
 
     def execute_script(
             self, library_name, library_type, program_name, function_name, items
@@ -1078,7 +1079,7 @@ class Application(AnyObject):
         :return:
         """
 
-        run = self.application.SystemService.Evaluate(
+        run = self.com_object.SystemService.Evaluate(
             vba_code, cat_script_language, function_name, measurable_items,
         )
 
@@ -1126,7 +1127,7 @@ class Application(AnyObject):
         :return: str
         :rtype: str
         """
-        return self.application.FileSelectionBox(i_title, i_extension, i_mode)
+        return self.com_object.FileSelectionBox(i_title, i_extension, i_mode)
 
     def get_workbench_id(self) -> str:
         """
@@ -1146,7 +1147,7 @@ class Application(AnyObject):
         :return: str
         :rtype: str
         """
-        return self.application.GetWorkbenchId()
+        return self.com_object.GetWorkbenchId()
 
     def help(self, i_help_id: str) -> None:
         """
@@ -1173,7 +1174,7 @@ class Application(AnyObject):
         :return: None
         :rtype: None
         """
-        return self.application.Help(i_help_id)
+        return self.com_object.Help(i_help_id)
 
     def message_box(self, message_text, buttons=0, title=""):
         """
@@ -1265,7 +1266,7 @@ class Application(AnyObject):
         :return: None
         :rtype: None
         """
-        return self.application.Quit()
+        return self.com_object.Quit()
 
     def start_command(self, i_command_id: str) -> None:
         """
@@ -1292,7 +1293,7 @@ class Application(AnyObject):
         :return: None
         :rtype: None
         """
-        return self.application.StartCommand(i_command_id)
+        return self.com_object.StartCommand(i_command_id)
 
     def start_workbench(self, iworkbench_id: str) -> None:
         """
@@ -1313,7 +1314,7 @@ class Application(AnyObject):
         :return: None
         :rtype: None
         """
-        return self.application.StartWorkbench(iworkbench_id)
+        return self.com_object.StartWorkbench(iworkbench_id)
 
     def __repr__(self):
         return f'Application(name="{self.name}")'
