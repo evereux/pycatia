@@ -125,7 +125,7 @@ If you have written a script using pycatia you would like to share you can:
 
 Running The Tests
 -----------------
-To run the tests with coverage:
+To run the tests with coverage (-v is verbosity):
 
 .. code-block:: python
 
@@ -136,3 +136,7 @@ To run a specific test:
 .. code-block:: python
 
     py.test -v tests/test_product.py::test_move
+
+To stop tests running after first failure.
+
+    py.text -vx
