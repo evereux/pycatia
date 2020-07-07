@@ -48,6 +48,8 @@ for api in api_dict:
     if module_file_name == 'api_pycatia.rst':
         continue
 
+    print(f'writing file {module_file_name}')
+
     header = f"{api}\n" \
              f"{'=' * len(api)}\n\n" \
              f".. highlight:: console\n\n\n"

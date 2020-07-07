@@ -573,7 +573,7 @@ class Application(AnyObject):
         self.com_object.LocalCache = value
 
     @property
-    def path(self) -> str:
+    def path(self) -> Path:
         """
         .. admonition:: Note
 
@@ -594,11 +594,11 @@ class Application(AnyObject):
             |
             |          \\\\lisa\\cxr1arel\\bsf\\alpha_a\\code\\bin
 
-        :return: str
-        :rtype: str
+        :return: Path
+        :rtype: Path
         """
 
-        return self.com_object.Path
+        return Path(self.com_object.Path)
 
     @property
     def printers(self) -> Printers:
@@ -1176,17 +1176,17 @@ class Application(AnyObject):
         """
         return self.com_object.Help(i_help_id)
 
-    def message_box(self, message_text, buttons=0, title=""):
+    def message_box(self, message_text: str, buttons: int = 0, title: str = ""):
         """
 
-        The buttons argument settings are:
+        The button values
 
-        =====================   ======= ==============================================================================================================
+        =====================   ======= ========================================
         Constant                Value   Description
-        ---------------------   ------- --------------------------------------------------------------------------------------------------------------
+        ---------------------   ------- ----------------------------------------
         vbOKOnly                0       Display OK button only.
         vbOKCancel              1       Display OK and Cancel buttons.
-        vbAbortRetryIgnore      2       Display Abort, Retry, and Ignore buttons.
+        vbAbortRetryIgnore      2       Display Abort, Retry, and Ignore buttons
         vbYesNoCancel           3       Display Yes, No, and Cancel buttons.
         vbYesNo                 4       Display Yes and No buttons.
         vbRetryCancel           5       Display Retry and Cancel buttons.
@@ -1198,13 +1198,21 @@ class Application(AnyObject):
         vbDefaultButton2        256     Second button is default.
         vbDefaultButton3        512     Third button is default.
         vbDefaultButton4        768     Fourth button is default.
-        vbApplicationModal      0       Application modal; the user must respond to the message box before continuing work in the current application.
-        vbSystemModal           4096    System modal; all applications are suspended until the user responds to the message box.
+        vbApplicationModal      0       Application modal; the user must respond
+                                        to the message box before continuing
+                                        work in the current application.
+        vbSystemModal           4096    System modal; all applications are
+                                        suspended until the user responds to the
+                                        message box.
         vbMsgBoxHelpButton      16384   Adds Help button to the message box.
-        vbMsgBoxSetForeground   65536   Specifies the message box window as the foreground window.
+        vbMsgBoxSetForeground   65536   Specifies the message box window as the
+                                        foreground window.
         vbMsgBoxRight           524288  Text is right-aligned.
-        vbMsgBoxRtlReading      1048576 Specifies text should appear as right-to-left reading on Hebrew and Arabic systems.
-        =====================   ======= ==============================================================================================================
+        vbMsgBoxRtlReading      1048576 Specifies text should appear as
+                                        right-to-left reading on Hebrew and
+                                        Arabic systems.
+        =====================   ======= ========================================
+
 
         Return values
 
@@ -1220,14 +1228,16 @@ class Application(AnyObject):
         vbNo          7  No
         ========  =====  ===========
 
+
         Example::
 
-        This creates a message box with the buttons abort, retry ignore and displays the Warning Query icon.
+            This creates a message box with the buttons abort, retry ignore and displays the Warning Query icon.
 
-        >>> from pycatia import catia
-        >>> buttons = 2 + 32
-        >>> result = catia.message_box('Hello World!?', buttons=buttons, title='Asking a question.')
-        >>> # result = 3 if the user presses Abort.
+            >>> from pycatia import catia
+            >>> buttons = 2 + 32
+            >>> result = catia.message_box('Hello World!?', buttons=buttons, title='Asking a question.')
+            >>> # result = 3 if the user presses Abort.
+
 
         :param str message_text: Text to be displayed in the message box window.
         :param int buttons: Defines the message box configuration. See example.
