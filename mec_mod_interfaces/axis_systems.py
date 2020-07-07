@@ -31,7 +31,7 @@ class AxisSystems(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=AxisSystem)
         self.axis_systems = com_object
 
     def add(self):
