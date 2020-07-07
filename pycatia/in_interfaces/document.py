@@ -388,9 +388,10 @@ class Document(AnyObject):
         """
         return Reference(self.document.CreateReferenceFromName(i_label))
 
-    def drawing_root(self):
+    def drawing_root(self) -> DrawingRoot:
         """
-        :return:
+        :return: DrawingRoot
+        :rtype: DrawingRoot
         """
         try:
             return DrawingRoot(self.document.DrawingRoot)
@@ -422,7 +423,7 @@ class Document(AnyObject):
         """
         return Workbench(self.document.GetWorkbench(workbench_name))
 
-    def export_data(self, file_name, file_type, overwrite=False):
+    def export_data(self, file_name: str, file_type: str, overwrite=False) -> None:
 
         """
         .. note::
@@ -459,7 +460,7 @@ class Document(AnyObject):
 
         self.document.ExportData(file_name, file_type)
 
-    def indicate_2d(self, i_message=None, io_document_window_location=None):
+    def indicate_2d(self, i_message: str, io_document_window_location: tuple) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -535,8 +536,8 @@ class Document(AnyObject):
         """
         return self.document.Indicate2D(i_message, io_document_window_location)
 
-    def indicate_3d(self, i_planar_geometric_object=None, i_message=None, io_window_location2_d=None,
-                    io_window_location3_d=None):
+    def indicate_3d(self, i_planar_geometric_object: AnyObject, i_message: str, io_window_location2_d: tuple,
+                    io_window_location3_d: tuple) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -556,13 +557,13 @@ class Document(AnyObject):
                 |
                 |     In these cases, Indicate2D must be used.
                 |     See also: Selection.IndicateOrSelectElement3D which can, in particular,
-                |     enable indication and not selection (positionning the iFilterType parameter to
-                |     an empty string), whichs enables to subscribe to mouse move events,
-                |     positionning the iTriggeringOnPreSelection to true.
+                |     enable indication and not selection (positioning the iFilterType parameter to
+                |     an empty string), which enables to subscribe to mouse move events,
+                |     positioning the iTriggeringOnPreSelection to true.
                 |     Note:If the scripting language is Visual Basic for Applications or Visual
                 |     Basic 6 Development Studio, then, you have to know that during the execution of
                 |     an interactive selection method such as this one, no form (dialog box) must be
-                |     displayed, otherwise it would lead to unpredictible results. In a form method,
+                |     displayed, otherwise it would lead to unpredictable results. In a form method,
                 |     before calling an interactive selection method such as Document.Indicate2D, you
                 |     must hide all forms, and, after the call to the method, you must show the
                 |     forms.
@@ -599,8 +600,6 @@ class Document(AnyObject):
                 |           The following example asks the end user to select a location in the
                 |
                 |          document window, on the Plane.1 plane, and creates a
-                |
-                |
                 |
                 |     HybridShapePointOnPlane at the specified location:
                 |
@@ -710,6 +709,7 @@ class Document(AnyObject):
 
         :param str i_filter_name:
         :return: None
+        :rtype: None
         """
         return self.document.RemoveFilter(i_filter_name)
 
@@ -755,6 +755,8 @@ class Document(AnyObject):
 
         :param str file_name: full pathname to new file_name
         :param bool overwrite:
+        :return: None.
+        :rtype: None
         """
 
         file_name = Path(file_name)
@@ -769,9 +771,8 @@ class Document(AnyObject):
 
     def spa_workbench(self):
         """
-
-        Returns:
-
+        :return:
+        :rtype: SPAWorkbench
         """
 
         return SPAWorkbench(self.com_object)
