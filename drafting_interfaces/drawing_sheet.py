@@ -41,7 +41,7 @@ class DrawingSheet(AnyObject):
         self.drawing_sheet = com_object
 
     @property
-    def gen_views_pos_mode(self):
+    def gen_views_pos_mode(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -59,21 +59,22 @@ class DrawingSheet(AnyObject):
                 | 
                 |          MySheet.GenViewsPosMode = catFixedAxis
 
-        :return: enum cat_sheet_gen_views_pos_mode
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_sheet.GenViewsPosMode
 
     @gen_views_pos_mode.setter
-    def gen_views_pos_mode(self, value):
+    def gen_views_pos_mode(self, value: int):
         """
-        :param enum cat_sheet_gen_views_pos_mode value:
+        :param int value:
         """
 
         self.drawing_sheet.GenViewsPosMode = value
 
     @property
-    def orientation(self):
+    def orientation(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -87,13 +88,14 @@ class DrawingSheet(AnyObject):
                 | 
                 |          MySheet.Orientation = catPaperLandscape
 
-        :return: enum cat_paper_orientation
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_sheet.Orientation
 
     @orientation.setter
-    def orientation(self, value):
+    def orientation(self, value: int):
         """
         :param enum cat_paper_orientation value:
         """
@@ -101,7 +103,7 @@ class DrawingSheet(AnyObject):
         self.drawing_sheet.Orientation = value
 
     @property
-    def page_setup(self):
+    def page_setup(self) -> DrawingPageSetup:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -117,12 +119,13 @@ class DrawingSheet(AnyObject):
                 |          Set MySheetPageSetup = MySheet.PageSetup
 
         :return: DrawingPageSetup
+        :rtype: DrawingPageSetup
         """
 
         return DrawingPageSetup(self.drawing_sheet.PageSetup)
 
     @property
-    def paper_size(self):
+    def paper_size(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -136,21 +139,22 @@ class DrawingSheet(AnyObject):
                 | 
                 |          MySheet.PaperSize = catPaperA4
 
-        :return: enum cat_paper_size
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_sheet.PaperSize
 
     @paper_size.setter
-    def paper_size(self, value):
+    def paper_size(self, value: int):
         """
-        :param enum cat_paper_size value:
+        :param int value:
         """
 
         self.drawing_sheet.PaperSize = value
 
     @property
-    def print_area(self):
+    def print_area(self) -> PrintArea:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -166,12 +170,13 @@ class DrawingSheet(AnyObject):
                 |          Set MyPrintArea = MySheet.PrintArea
 
         :return: PrintArea
+        :rtype: PrintArea
         """
 
         return PrintArea(self.drawing_sheet.PrintArea)
 
     @property
-    def projection_method(self):
+    def projection_method(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -185,21 +190,22 @@ class DrawingSheet(AnyObject):
                 | 
                 |          MySheet.ProjectionMethod = catFirstAngle
 
-        :return: enum cat_sheet_projection_method
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_sheet.ProjectionMethod
 
     @projection_method.setter
-    def projection_method(self, value):
+    def projection_method(self, value: int):
         """
-        :param enum cat_sheet_projection_method value:
+        :param int value:
         """
 
         self.drawing_sheet.ProjectionMethod = value
 
     @property
-    def scale(self):
+    def scale(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -214,12 +220,13 @@ class DrawingSheet(AnyObject):
                 |          MySheet.Scale = 0.5
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_sheet.Scale
 
     @scale.setter
-    def scale(self, value):
+    def scale(self, value: float):
         """
         :param float value:
         """
@@ -227,7 +234,7 @@ class DrawingSheet(AnyObject):
         self.drawing_sheet.Scale = value
 
     @property
-    def scale2(self):
+    def scale2(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -243,12 +250,13 @@ class DrawingSheet(AnyObject):
                 |          MySheet.Scale2 = 0.5
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_sheet.Scale2
 
     @scale2.setter
-    def scale2(self, value):
+    def scale2(self, value: float):
         """
         :param float value:
         """
@@ -256,7 +264,7 @@ class DrawingSheet(AnyObject):
         self.drawing_sheet.Scale2 = value
 
     @property
-    def views(self):
+    def views(self) -> DrawingViews:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -274,11 +282,12 @@ class DrawingSheet(AnyObject):
                 |          Set ViewCollection = MySheet.Views
 
         :return: DrawingViews
+        :rtype: DrawingViews
         """
 
         return DrawingViews(self.drawing_sheet.Views)
 
-    def activate(self):
+    def activate(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -295,10 +304,11 @@ class DrawingSheet(AnyObject):
                 |          MySheet.Activate
 
         :return: None
+        :rtype: None
         """
         return self.drawing_sheet.Activate()
 
-    def force_update(self):
+    def force_update(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -319,10 +329,11 @@ class DrawingSheet(AnyObject):
                 |          MySheet.ForceUpdate
 
         :return: None
+        :rtype: None
         """
         return self.drawing_sheet.ForceUpdate()
 
-    def generate_dimensions(self):
+    def generate_dimensions(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -343,10 +354,11 @@ class DrawingSheet(AnyObject):
                 |          MySheet.GenerateDimensions
 
         :return: None
+        :rtype: None
         """
         return self.drawing_sheet.GenerateDimensions()
 
-    def get_paper_height(self):
+    def get_paper_height(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -365,10 +377,11 @@ class DrawingSheet(AnyObject):
                 |                  DrawingSheet1.GetPaperHeight oPaperHeight
 
         :return: float
+        :rtype: float
         """
         return self.drawing_sheet.GetPaperHeight()
 
-    def get_paper_width(self):
+    def get_paper_width(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -387,10 +400,11 @@ class DrawingSheet(AnyObject):
                 |                  DrawingSheet1.GetPaperWidth oPaperWidth
 
         :return: float
+        :rtype: float
         """
         return self.drawing_sheet.GetPaperWidth()
 
-    def is_detail(self):
+    def is_detail(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -407,10 +421,11 @@ class DrawingSheet(AnyObject):
                 |          IsDetail = MySheet.IsDetail
 
         :return: bool
+        :rtype: bool
         """
         return self.drawing_sheet.IsDetail()
 
-    def isolate(self):
+    def isolate(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -426,10 +441,11 @@ class DrawingSheet(AnyObject):
                 |          MySheet.Isolate
 
         :return: None
+        :rtype: None
         """
         return self.drawing_sheet.Isolate()
 
-    def print_out(self):
+    def print_out(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -447,10 +463,11 @@ class DrawingSheet(AnyObject):
                 |          DrawingSheet1.PrintOut
 
         :return: None
+        :rtype: None
         """
         return self.drawing_sheet.PrintOut()
 
-    def print_to_file(self, file_name):
+    def print_to_file(self, file_name: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -473,10 +490,11 @@ class DrawingSheet(AnyObject):
 
         :param str file_name:
         :return: None
+        :rtype: None
         """
         return self.drawing_sheet.PrintToFile(file_name)
 
-    def set_as_detail(self):
+    def set_as_detail(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -494,10 +512,11 @@ class DrawingSheet(AnyObject):
                 |          MySheet.SetAsDetail
 
         :return: None
+        :rtype: None
         """
         return self.drawing_sheet.SetAsDetail()
 
-    def set_paper_height(self, o_paper_height):
+    def set_paper_height(self, o_paper_height: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -519,10 +538,11 @@ class DrawingSheet(AnyObject):
 
         :param float o_paper_height:
         :return: None
+        :rtype: None
         """
         return self.drawing_sheet.SetPaperHeight(o_paper_height)
 
-    def set_paper_width(self, o_paper_width):
+    def set_paper_width(self, o_paper_width: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -544,10 +564,11 @@ class DrawingSheet(AnyObject):
 
         :param float o_paper_width:
         :return: None
+        :rtype: None
         """
         return self.drawing_sheet.SetPaperWidth(o_paper_width)
 
-    def update(self):
+    def update(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -568,10 +589,11 @@ class DrawingSheet(AnyObject):
                 |          MySheet.Update
 
         :return: None
+        :rtype: None
         """
         return self.drawing_sheet.Update()
 
-    def reorder_views(self, i_ordered_views):
+    def reorder_views(self, i_ordered_views: tuple) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -599,6 +621,7 @@ class DrawingSheet(AnyObject):
 
         :param tuple i_ordered_views:
         :return: None
+        :rtype: None
         """
         return self.drawing_sheet.reorder_Views(i_ordered_views)
         # # # # Autogenerated comment: 

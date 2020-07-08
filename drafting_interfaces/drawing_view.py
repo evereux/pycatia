@@ -51,7 +51,7 @@ class DrawingView(AnyObject):
         self.drawing_view = com_object
 
     @property
-    def angle(self):
+    def angle(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -74,12 +74,13 @@ class DrawingView(AnyObject):
                 |          MyView.Angle = Angle90Clockwise
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_view.Angle
 
     @angle.setter
-    def angle(self, value):
+    def angle(self, value: float):
         """
         :param float value:
         """
@@ -87,7 +88,7 @@ class DrawingView(AnyObject):
         self.drawing_view.Angle = value
 
     @property
-    def arrows(self):
+    def arrows(self) -> DrawingArrows:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -105,12 +106,13 @@ class DrawingView(AnyObject):
                 |          Set ArrowCollection = MyView.Arrows
 
         :return: DrawingArrows
+        :rtype: DrawingArrows
         """
 
         return DrawingArrows(self.drawing_view.Arrows)
 
     @property
-    def components(self):
+    def components(self) -> DrawingComponents:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -129,12 +131,13 @@ class DrawingView(AnyObject):
                 |          Set ComponentCollection = MyView.Components
 
         :return: DrawingComponents
+        :rtype: DrawingComponents
         """
 
         return DrawingComponents(self.drawing_view.Components)
 
     @property
-    def dimensions(self):
+    def dimensions(self) -> DrawingDimensions:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -153,12 +156,13 @@ class DrawingView(AnyObject):
                 |          Set DimensionCollection = MyView.Dimensions
 
         :return: DrawingDimensions
+        :rtype: DrawingDimensions
         """
 
         return DrawingDimensions(self.drawing_view.Dimensions)
 
     @property
-    def factory_2d(self):
+    def factory2_d(self) -> Factory2D:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -182,12 +186,13 @@ class DrawingView(AnyObject):
                 |          Set my2DFactory = myView.Factory2D
 
         :return: Factory2D
+        :rtype: Factory2D
         """
 
         return Factory2D(self.drawing_view.Factory2D)
 
     @property
-    def frame_visualization(self):
+    def frame_visualization(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -206,12 +211,13 @@ class DrawingView(AnyObject):
                 |          MyView.FrameVisualization = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.drawing_view.FrameVisualization
 
     @frame_visualization.setter
-    def frame_visualization(self, value):
+    def frame_visualization(self, value: bool):
         """
         :param bool value:
         """
@@ -219,7 +225,7 @@ class DrawingView(AnyObject):
         self.drawing_view.FrameVisualization = value
 
     @property
-    def generative_behavior(self):
+    def generative_behavior(self) -> DrawingViewGenerativeBehavior:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -239,12 +245,13 @@ class DrawingView(AnyObject):
                 |          Set MyViewGenBehavior = MyView.GenerativeBehavior
 
         :return: DrawingViewGenerativeBehavior
+        :rtype: DrawingViewGenerativeBehavior
         """
 
         return DrawingViewGenerativeBehavior(self.drawing_view.GenerativeBehavior)
 
     @property
-    def generative_links(self):
+    def generative_links(self) -> DrawingViewGenerativeLinks:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -263,12 +270,13 @@ class DrawingView(AnyObject):
                 |          Set MyViewGenLinks = MyView.GenerativeLinks
 
         :return: DrawingViewGenerativeLinks
+        :rtype: DrawingViewGenerativeLinks
         """
 
         return DrawingViewGenerativeLinks(self.drawing_view.GenerativeLinks)
 
     @property
-    def geometric_elements(self):
+    def geometric_elements(self) -> GeometricElements:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -288,12 +296,13 @@ class DrawingView(AnyObject):
                 |          Set colGeometry = myView.GeometricElements
 
         :return: GeometricElements
+        :rtype: GeometricElements
         """
 
         return GeometricElements(self.drawing_view.GeometricElements)
 
     @property
-    def lock_status(self):
+    def lock_status(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -311,12 +320,13 @@ class DrawingView(AnyObject):
                 |          ViewToWorkOn.LockStatus = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.drawing_view.LockStatus
 
     @lock_status.setter
-    def lock_status(self, value):
+    def lock_status(self, value: bool):
         """
         :param bool value:
         """
@@ -324,7 +334,7 @@ class DrawingView(AnyObject):
         self.drawing_view.LockStatus = value
 
     @property
-    def pictures(self):
+    def pictures(self) -> DrawingPictures:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -343,12 +353,13 @@ class DrawingView(AnyObject):
                 |          Set PictureCollection = MyView.Pictures
 
         :return: DrawingPictures
+        :rtype: DrawingPictures
         """
 
         return DrawingPictures(self.drawing_view.Pictures)
 
     @property
-    def reference_view(self):
+    def reference_view(self) -> DrawingView:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -379,12 +390,13 @@ class DrawingView(AnyObject):
                 |          Set ReferenceView = MyView.RefView
 
         :return: DrawingView
+        :rtype: DrawingView
         """
 
         return DrawingView(self.drawing_view.ReferenceView)
 
     @reference_view.setter
-    def reference_view(self, value):
+    def reference_view(self, value: DrawingView):
         """
         :param DrawingView value:
         """
@@ -392,7 +404,7 @@ class DrawingView(AnyObject):
         self.drawing_view.ReferenceView = value
 
     @property
-    def scale(self):
+    def scale(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -409,12 +421,13 @@ class DrawingView(AnyObject):
                 |          MyView.Scale = 0.5
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_view.Scale
 
     @scale.setter
-    def scale(self, value):
+    def scale(self, value: float):
         """
         :param float value:
         """
@@ -422,7 +435,7 @@ class DrawingView(AnyObject):
         self.drawing_view.Scale = value
 
     @property
-    def scale2(self):
+    def scale2(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -440,12 +453,13 @@ class DrawingView(AnyObject):
                 |          MyView.Scale2 = 0.5
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_view.Scale2
 
     @scale2.setter
-    def scale2(self, value):
+    def scale2(self, value: float):
         """
         :param float value:
         """
@@ -453,7 +467,7 @@ class DrawingView(AnyObject):
         self.drawing_view.Scale2 = value
 
     @property
-    def tables(self):
+    def tables(self) -> DrawingTables:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -471,12 +485,13 @@ class DrawingView(AnyObject):
                 |          Set TableCollection = MyView.Tables
 
         :return: DrawingTables
+        :rtype: DrawingTables
         """
 
         return DrawingTables(self.drawing_view.Tables)
 
     @property
-    def texts(self):
+    def texts(self) -> DrawingTexts:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -494,12 +509,13 @@ class DrawingView(AnyObject):
                 |          Set TextCollection = MyView.Texts
 
         :return: DrawingTexts
+        :rtype: DrawingTexts
         """
 
         return DrawingTexts(self.drawing_view.Texts)
 
     @property
-    def threads(self):
+    def threads(self) -> DrawingThreads:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -517,12 +533,13 @@ class DrawingView(AnyObject):
                 |          Set ThreadCollection = MyView.Threads
 
         :return: DrawingThreads
+        :rtype: DrawingThreads
         """
 
         return DrawingThreads(self.drawing_view.Threads)
 
     @property
-    def view_type(self):
+    def view_type(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -531,13 +548,14 @@ class DrawingView(AnyObject):
                 |     Returns the drawing view type.
                 |     Warning: This method is not available with 2D Layout for 3D Design.
 
-        :return: enum cat_drawing_view_type
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_view.ViewType
 
     @property
-    def weldings(self):
+    def weldings(self) -> DrawingWeldings:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -556,12 +574,13 @@ class DrawingView(AnyObject):
                 |          Set weldingCollection = MyView.Weldings
 
         :return: DrawingWeldings
+        :rtype: DrawingWeldings
         """
 
         return DrawingWeldings(self.drawing_view.Weldings)
 
     @property
-    def x(self):
+    def x(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -582,12 +601,13 @@ class DrawingView(AnyObject):
                 |          X = MyView.x
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_view.x
 
     @x.setter
-    def x(self, value):
+    def x(self, value: float):
         """
         :param float value:
         """
@@ -595,7 +615,7 @@ class DrawingView(AnyObject):
         self.drawing_view.x = value
 
     @property
-    def x_axis_data(self):
+    def x_axis_data(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -614,12 +634,13 @@ class DrawingView(AnyObject):
                 |          X = MyView.xAxisData
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_view.xAxisData
 
     @x_axis_data.setter
-    def x_axis_data(self, value):
+    def x_axis_data(self, value: float):
         """
         :param float value:
         """
@@ -627,7 +648,7 @@ class DrawingView(AnyObject):
         self.drawing_view.xAxisData = value
 
     @property
-    def y(self):
+    def y(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -650,12 +671,13 @@ class DrawingView(AnyObject):
                 |          MyView.y = NewYCoordinate
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_view.y
 
     @y.setter
-    def y(self, value):
+    def y(self, value: float):
         """
         :param float value:
         """
@@ -663,7 +685,7 @@ class DrawingView(AnyObject):
         self.drawing_view.y = value
 
     @property
-    def y_axis_data(self):
+    def y_axis_data(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -684,19 +706,20 @@ class DrawingView(AnyObject):
                 |          MyView.yAxisData = NewYCoordinate
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_view.yAxisData
 
     @y_axis_data.setter
-    def y_axis_data(self, value):
+    def y_axis_data(self, value: float):
         """
         :param float value:
         """
 
         self.drawing_view.yAxisData = value
 
-    def activate(self):
+    def activate(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -714,10 +737,11 @@ class DrawingView(AnyObject):
                 |          ViewToWorkOn.Activate()
 
         :return: None
+        :rtype: None
         """
         return self.drawing_view.Activate()
 
-    def aligned_with_reference_view(self):
+    def aligned_with_reference_view(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -736,10 +760,11 @@ class DrawingView(AnyObject):
                 |          MyView.AlignedWithReferenceView()
 
         :return: None
+        :rtype: None
         """
         return self.drawing_view.AlignedWithReferenceView()
 
-    def get_view_name(self, i_view_name_prefix, i_view_name_ident, i_view_name_suffix):
+    def get_view_name(self, i_view_name_prefix: str, i_view_name_ident: str, i_view_name_suffix: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -769,10 +794,11 @@ class DrawingView(AnyObject):
         :param str i_view_name_ident:
         :param str i_view_name_suffix:
         :return: None
+        :rtype: None
         """
         return self.drawing_view.GetViewName(i_view_name_prefix, i_view_name_ident, i_view_name_suffix)
 
-    def insert_view_angle(self, i_first, io_text):
+    def insert_view_angle(self, i_first: int, io_text: DrawingText) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -803,6 +829,7 @@ class DrawingView(AnyObject):
         :param int i_first:
         :param DrawingText io_text:
         :return: None
+        :rtype: None
         """
         return self.drawing_view.InsertViewAngle(i_first, io_text.com_object)
         # # # # Autogenerated comment: 
@@ -821,7 +848,7 @@ class DrawingView(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def insert_view_scale(self, i_first, io_text):
+    def insert_view_scale(self, i_first: int, io_text: DrawingText) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -851,6 +878,7 @@ class DrawingView(AnyObject):
         :param int i_first:
         :param DrawingText io_text:
         :return: None
+        :rtype: None
         """
         return self.drawing_view.InsertViewScale(i_first, io_text.com_object)
         # # # # Autogenerated comment: 
@@ -869,7 +897,7 @@ class DrawingView(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def is_generative(self):
+    def is_generative(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -888,10 +916,11 @@ class DrawingView(AnyObject):
                 |          GenView = MyView.IsGenerative()
 
         :return: bool
+        :rtype: bool
         """
         return self.drawing_view.IsGenerative()
 
-    def isolate(self):
+    def isolate(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -907,10 +936,11 @@ class DrawingView(AnyObject):
                 |          MyView.Isolate
 
         :return: None
+        :rtype: None
         """
         return self.drawing_view.Isolate()
 
-    def save_edition(self):
+    def save_edition(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -932,10 +962,11 @@ class DrawingView(AnyObject):
                 |          MyView.SaveEdition
 
         :return: None
+        :rtype: None
         """
         return self.drawing_view.SaveEdition()
 
-    def set_view_name(self, i_view_name_prefix, i_view_name_ident, i_view_name_suffix):
+    def set_view_name(self, i_view_name_prefix: str, i_view_name_ident: str, i_view_name_suffix: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -967,10 +998,11 @@ class DrawingView(AnyObject):
         :param str i_view_name_ident:
         :param str i_view_name_suffix:
         :return: None
+        :rtype: None
         """
         return self.drawing_view.SetViewName(i_view_name_prefix, i_view_name_ident, i_view_name_suffix)
 
-    def size(self, o_values):
+    def size(self, o_values: tuple) -> Double:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1002,7 +1034,8 @@ class DrawingView(AnyObject):
                 |              Ymax = oXY(3)
 
         :param tuple o_values:
-        :return: double
+        :return: Double
+        :rtype: Double
         """
         return self.drawing_view.Size(o_values)
         # # # # Autogenerated comment: 
@@ -1021,7 +1054,7 @@ class DrawingView(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def un_aligned_with_reference_view(self):
+    def un_aligned_with_reference_view(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1041,6 +1074,7 @@ class DrawingView(AnyObject):
                 |          MyView.UnAlignedWithReferenceView()
 
         :return: None
+        :rtype: None
         """
         return self.drawing_view.UnAlignedWithReferenceView()
 

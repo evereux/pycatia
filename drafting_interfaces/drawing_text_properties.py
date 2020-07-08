@@ -35,7 +35,7 @@ class DrawingTextProperties(CATBaseDispatch):
         self.drawing_text_properties = com_object
 
     @property
-    def anchor_point(self):
+    def anchor_point(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -49,21 +49,22 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.AnchorPoint = catRight
 
-        :return: enum cat_text_anchor_position
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_text_properties.AnchorPoint
 
     @anchor_point.setter
-    def anchor_point(self, value):
+    def anchor_point(self, value: int):
         """
-        :param enum cat_text_anchor_position value:
+        :param int value:
         """
 
         self.drawing_text_properties.AnchorPoint = value
 
     @property
-    def blanking(self):
+    def blanking(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -77,21 +78,22 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.Blanking = catBlankingOnGeom
 
-        :return: enum cat_blanking_mode
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_text_properties.Blanking
 
     @blanking.setter
-    def blanking(self, value):
+    def blanking(self, value: int):
         """
-        :param enum cat_blanking_mode value:
+        :param int value:
         """
 
         self.drawing_text_properties.Blanking = value
 
     @property
-    def bold(self):
+    def bold(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -107,12 +109,13 @@ class DrawingTextProperties(CATBaseDispatch):
                 |          oVal = MyText.Bold
 
         :return: int
+        :rtype: int
         """
 
         return self.drawing_text_properties.Bold
 
     @bold.setter
-    def bold(self, value):
+    def bold(self, value: int):
         """
         :param int value:
         """
@@ -120,7 +123,7 @@ class DrawingTextProperties(CATBaseDispatch):
         self.drawing_text_properties.Bold = value
 
     @property
-    def color(self):
+    def color(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -137,12 +140,13 @@ class DrawingTextProperties(CATBaseDispatch):
                 |          MyText.Color = redCol
 
         :return: int
+        :rtype: int
         """
 
         return self.drawing_text_properties.Color
 
     @color.setter
-    def color(self, value):
+    def color(self, value: int):
         """
         :param int value:
         """
@@ -150,7 +154,7 @@ class DrawingTextProperties(CATBaseDispatch):
         self.drawing_text_properties.Color = value
 
     @property
-    def font_name(self):
+    def font_name(self) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -165,12 +169,13 @@ class DrawingTextProperties(CATBaseDispatch):
                 |          MyText.SetFontName("Courrier 10 BT")
 
         :return: str
+        :rtype: str
         """
 
         return self.drawing_text_properties.FontName
 
     @font_name.setter
-    def font_name(self, value):
+    def font_name(self, value: str):
         """
         :param str value:
         """
@@ -178,7 +183,7 @@ class DrawingTextProperties(CATBaseDispatch):
         self.drawing_text_properties.FontName = value
 
     @property
-    def font_size(self):
+    def font_size(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -194,12 +199,13 @@ class DrawingTextProperties(CATBaseDispatch):
                 |          MyText.SetFontSize 0, 0, iFontSize
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_text_properties.FontSize
 
     @font_size.setter
-    def font_size(self, value):
+    def font_size(self, value: float):
         """
         :param float value:
         """
@@ -207,7 +213,7 @@ class DrawingTextProperties(CATBaseDispatch):
         self.drawing_text_properties.FontSize = value
 
     @property
-    def frame_type(self):
+    def frame_type(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -221,21 +227,22 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.FrameType = catEllipse
 
-        :return: enum cat_text_frame_type
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_text_properties.FrameType
 
     @frame_type.setter
-    def frame_type(self, value):
+    def frame_type(self, value: int):
         """
-        :param enum cat_text_frame_type value:
+        :param int value:
         """
 
         self.drawing_text_properties.FrameType = value
 
     @property
-    def italic(self):
+    def italic(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -251,12 +258,13 @@ class DrawingTextProperties(CATBaseDispatch):
                 |          MyText.Italic = 1
 
         :return: int
+        :rtype: int
         """
 
         return self.drawing_text_properties.Italic
 
     @italic.setter
-    def italic(self, value):
+    def italic(self, value: int):
         """
         :param int value:
         """
@@ -264,7 +272,7 @@ class DrawingTextProperties(CATBaseDispatch):
         self.drawing_text_properties.Italic = value
 
     @property
-    def justification(self):
+    def justification(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -280,21 +288,22 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.Justification = catRight
 
-        :return: enum cat_justification
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_text_properties.Justification
 
     @justification.setter
-    def justification(self, value):
+    def justification(self, value: int):
         """
-        :param enum cat_justification value:
+        :param int value:
         """
 
         self.drawing_text_properties.Justification = value
 
     @property
-    def kerning(self):
+    def kerning(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -310,12 +319,13 @@ class DrawingTextProperties(CATBaseDispatch):
                 |          MyText.Kerning = 1
 
         :return: int
+        :rtype: int
         """
 
         return self.drawing_text_properties.Kerning
 
     @kerning.setter
-    def kerning(self, value):
+    def kerning(self, value: int):
         """
         :param int value:
         """
@@ -323,7 +333,7 @@ class DrawingTextProperties(CATBaseDispatch):
         self.drawing_text_properties.Kerning = value
 
     @property
-    def mirror(self):
+    def mirror(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -337,21 +347,22 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.Mirror = catTextNoFlip
 
-        :return: enum cat_text_flip_mode
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_text_properties.Mirror
 
     @mirror.setter
-    def mirror(self, value):
+    def mirror(self, value: int):
         """
-        :param enum cat_text_flip_mode value:
+        :param int value:
         """
 
         self.drawing_text_properties.Mirror = value
 
     @property
-    def overline(self):
+    def overline(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -367,12 +378,13 @@ class DrawingTextProperties(CATBaseDispatch):
                 |          oval = MyText.Overline()
 
         :return: int
+        :rtype: int
         """
 
         return self.drawing_text_properties.Overline
 
     @overline.setter
-    def overline(self, value):
+    def overline(self, value: int):
         """
         :param int value:
         """
@@ -380,7 +392,7 @@ class DrawingTextProperties(CATBaseDispatch):
         self.drawing_text_properties.Overline = value
 
     @property
-    def strike_thru(self):
+    def strike_thru(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -397,12 +409,13 @@ class DrawingTextProperties(CATBaseDispatch):
                 |          MyText.StrikeThru = 1
 
         :return: int
+        :rtype: int
         """
 
         return self.drawing_text_properties.StrikeThru
 
     @strike_thru.setter
-    def strike_thru(self, value):
+    def strike_thru(self, value: int):
         """
         :param int value:
         """
@@ -410,7 +423,7 @@ class DrawingTextProperties(CATBaseDispatch):
         self.drawing_text_properties.StrikeThru = value
 
     @property
-    def subscript(self):
+    def subscript(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -426,12 +439,13 @@ class DrawingTextProperties(CATBaseDispatch):
                 |          MyText.Subscript = 1
 
         :return: int
+        :rtype: int
         """
 
         return self.drawing_text_properties.Subscript
 
     @subscript.setter
-    def subscript(self, value):
+    def subscript(self, value: int):
         """
         :param int value:
         """
@@ -439,7 +453,7 @@ class DrawingTextProperties(CATBaseDispatch):
         self.drawing_text_properties.Subscript = value
 
     @property
-    def superscript(self):
+    def superscript(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -456,12 +470,13 @@ class DrawingTextProperties(CATBaseDispatch):
                 |          MyText.Superscript = 1
 
         :return: int
+        :rtype: int
         """
 
         return self.drawing_text_properties.Superscript
 
     @superscript.setter
-    def superscript(self, value):
+    def superscript(self, value: int):
         """
         :param int value:
         """
@@ -469,7 +484,7 @@ class DrawingTextProperties(CATBaseDispatch):
         self.drawing_text_properties.Superscript = value
 
     @property
-    def underline(self):
+    def underline(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -485,19 +500,20 @@ class DrawingTextProperties(CATBaseDispatch):
                 |          oval = MyText.Underline
 
         :return: int
+        :rtype: int
         """
 
         return self.drawing_text_properties.Underline
 
     @underline.setter
-    def underline(self, value):
+    def underline(self, value: int):
         """
         :param int value:
         """
 
         self.drawing_text_properties.Underline = value
 
-    def activate_frame(self, i_type):
+    def activate_frame(self, i_type: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -526,8 +542,9 @@ class DrawingTextProperties(CATBaseDispatch):
                 |      CatTextFrameType itype = catNone
                 |      MyText.ActivateFrame itype
 
-        :param CatTextFrameType i_type:
+        :param int i_type:
         :return: None
+        :rtype: None
         """
         return self.drawing_text_properties.ActivateFrame(i_type.com_object)
         # # # # Autogenerated comment: 
@@ -546,7 +563,7 @@ class DrawingTextProperties(CATBaseDispatch):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def update(self):
+    def update(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -564,6 +581,7 @@ class DrawingTextProperties(CATBaseDispatch):
                 |     reserved.
 
         :return: None
+        :rtype: None
         """
         return self.drawing_text_properties.Update()
 

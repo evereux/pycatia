@@ -33,7 +33,7 @@ class DrawingArrow(AnyObject):
         self.drawing_arrow = com_object
 
     @property
-    def head_symbol(self):
+    def head_symbol(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -47,21 +47,22 @@ class DrawingArrow(AnyObject):
                 | 
                 |          oSymbol = MyArrow.HeadSymbol
 
-        :return: enum cat_symbol_type
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_arrow.HeadSymbol
 
     @head_symbol.setter
-    def head_symbol(self, value):
+    def head_symbol(self, value: int):
         """
-        :param enum cat_symbol_type value:
+        :param int value:
         """
 
         self.drawing_arrow.HeadSymbol = value
 
     @property
-    def head_target(self):
+    def head_target(self) -> AnyObject:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -76,12 +77,13 @@ class DrawingArrow(AnyObject):
                 |          oTarget = MyArrow.HeadTarget
 
         :return: AnyObject
+        :rtype: AnyObject
         """
 
         return AnyObject(self.drawing_arrow.HeadTarget)
 
     @head_target.setter
-    def head_target(self, value):
+    def head_target(self, value: AnyObject):
         """
         :param AnyObject value:
         """
@@ -89,7 +91,7 @@ class DrawingArrow(AnyObject):
         self.drawing_arrow.HeadTarget = value
 
     @property
-    def nb_interruption(self):
+    def nb_interruption(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -104,12 +106,13 @@ class DrawingArrow(AnyObject):
                 |          oNbInterruption = MyArrow.NbInterruption
 
         :return: int
+        :rtype: int
         """
 
         return self.drawing_arrow.NbInterruption
 
     @property
-    def nb_point(self):
+    def nb_point(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -124,12 +127,13 @@ class DrawingArrow(AnyObject):
                 |          oNbPoint = MyArrow.NbPoint
 
         :return: int
+        :rtype: int
         """
 
         return self.drawing_arrow.NbPoint
 
     @property
-    def tail_symbol(self):
+    def tail_symbol(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -143,21 +147,22 @@ class DrawingArrow(AnyObject):
                 | 
                 |          oSymbol = MyArrow.TailSymbol
 
-        :return: enum cat_symbol_type
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_arrow.TailSymbol
 
     @tail_symbol.setter
-    def tail_symbol(self, value):
+    def tail_symbol(self, value: int):
         """
-        :param enum cat_symbol_type value:
+        :param int value:
         """
 
         self.drawing_arrow.TailSymbol = value
 
     @property
-    def tail_target(self):
+    def tail_target(self) -> AnyObject:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -172,19 +177,20 @@ class DrawingArrow(AnyObject):
                 |          oTarget = MyArrow.TailTarget
 
         :return: AnyObject
+        :rtype: AnyObject
         """
 
         return AnyObject(self.drawing_arrow.TailTarget)
 
     @tail_target.setter
-    def tail_target(self, value):
+    def tail_target(self, value: AnyObject):
         """
         :param AnyObject value:
         """
 
         self.drawing_arrow.TailTarget = value
 
-    def add_interruption(self, i_first_point_x, i_first_point_y, i_second_point_x, i_second_point_y):
+    def add_interruption(self, i_first_point_x: float, i_first_point_y: float, i_second_point_x: float, i_second_point_y: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -220,10 +226,11 @@ class DrawingArrow(AnyObject):
         :param float i_second_point_x:
         :param float i_second_point_y:
         :return: None
+        :rtype: None
         """
         return self.drawing_arrow.AddInterruption(i_first_point_x, i_first_point_y, i_second_point_x, i_second_point_y)
 
-    def add_point(self, i_num, i_x, i_y):
+    def add_point(self, i_num: int, i_x: float, i_y: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -254,10 +261,11 @@ class DrawingArrow(AnyObject):
         :param float i_x:
         :param float i_y:
         :return: None
+        :rtype: None
         """
         return self.drawing_arrow.AddPoint(i_num, i_x, i_y)
 
-    def get_interruptions(self, o_interruptions):
+    def get_interruptions(self, o_interruptions: tuple) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -281,10 +289,11 @@ class DrawingArrow(AnyObject):
 
         :param tuple o_interruptions:
         :return: int
+        :rtype: int
         """
         return self.drawing_arrow.GetInterruptions(o_interruptions)
 
-    def get_point(self, i_num, o_x, o_y):
+    def get_point(self, i_num: int, o_x: float, o_y: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -312,10 +321,11 @@ class DrawingArrow(AnyObject):
         :param float o_x:
         :param float o_y:
         :return: None
+        :rtype: None
         """
         return self.drawing_arrow.GetPoint(i_num, o_x, o_y)
 
-    def get_points(self, o_points):
+    def get_points(self, o_points: tuple) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -338,10 +348,11 @@ class DrawingArrow(AnyObject):
 
         :param tuple o_points:
         :return: int
+        :rtype: int
         """
         return self.drawing_arrow.GetPoints(o_points)
 
-    def modify_point(self, i_num, i_x, i_y):
+    def modify_point(self, i_num: int, i_x: float, i_y: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -371,10 +382,11 @@ class DrawingArrow(AnyObject):
         :param float i_x:
         :param float i_y:
         :return: None
+        :rtype: None
         """
         return self.drawing_arrow.ModifyPoint(i_num, i_x, i_y)
 
-    def remove_interruption(self, i_num):
+    def remove_interruption(self, i_num: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -396,10 +408,11 @@ class DrawingArrow(AnyObject):
 
         :param int i_num:
         :return: None
+        :rtype: None
         """
         return self.drawing_arrow.RemoveInterruption(i_num)
 
-    def remove_point(self, i_num):
+    def remove_point(self, i_num: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -419,6 +432,7 @@ class DrawingArrow(AnyObject):
 
         :param int i_num:
         :return: None
+        :rtype: None
         """
         return self.drawing_arrow.RemovePoint(i_num)
 
