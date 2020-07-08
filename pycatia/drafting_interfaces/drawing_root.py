@@ -40,7 +40,7 @@ class DrawingRoot(AnyObject):
         self.drawing_root = com_object
 
     @property
-    def active_sheet(self):
+    def active_sheet(self) -> DrawingSheet:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -57,12 +57,13 @@ class DrawingRoot(AnyObject):
                 |          CATIA.ActiveDocument.DrawingRoot.GetActiveSheet
 
         :return: DrawingSheet
+        :rtype: DrawingSheet
         """
 
         return DrawingSheet(self.drawing_root.ActiveSheet)
 
     @active_sheet.setter
-    def active_sheet(self, value):
+    def active_sheet(self, value: DrawingSheet):
         """
         :param DrawingSheet value:
         """
@@ -70,7 +71,7 @@ class DrawingRoot(AnyObject):
         self.drawing_root.ActiveSheet = value
 
     @property
-    def parameters(self):
+    def parameters(self) -> Parameters:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -94,12 +95,13 @@ class DrawingRoot(AnyObject):
                 |          Set DrawingParameters = CATIA.ActiveDocument.Parameters
 
         :return: Parameters
+        :rtype: Parameters
         """
 
         return Parameters(self.drawing_root.Parameters)
 
     @property
-    def relations(self):
+    def relations(self) -> Relations:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -123,12 +125,13 @@ class DrawingRoot(AnyObject):
                 |          Set DrawingRelations = CATIA.ActiveDocument.Relations
 
         :return: Relations
+        :rtype: Relations
         """
 
         return Relations(self.drawing_root.Relations)
 
     @property
-    def sheets(self):
+    def sheets(self) -> DrawingSheets:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -148,12 +151,13 @@ class DrawingRoot(AnyObject):
                 |          Set SheetCollection = CATIA.ActiveDocument.Sheets
 
         :return: DrawingSheets
+        :rtype: DrawingSheets
         """
 
         return DrawingSheets(self.drawing_root.Sheets)
 
     @property
-    def standard(self):
+    def standard(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -170,20 +174,21 @@ class DrawingRoot(AnyObject):
                 | 
                 |          CATIA.ActiveDocument.Standard = catISO
 
-        :return: enum cat_drawing_standard
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_root.Standard
 
     @standard.setter
-    def standard(self, value):
+    def standard(self, value: int):
         """
-        :param enum cat_drawing_standard value:
+        :param int value:
         """
 
         self.drawing_root.Standard = value
 
-    def isolate(self):
+    def isolate(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -202,10 +207,11 @@ class DrawingRoot(AnyObject):
                 |          CATIA.ActiveDocument.Isolate
 
         :return: None
+        :rtype: None
         """
         return self.drawing_root.Isolate()
 
-    def update(self):
+    def update(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -222,10 +228,11 @@ class DrawingRoot(AnyObject):
                 |          CATIA.ActiveDocument.Update
 
         :return: None
+        :rtype: None
         """
         return self.drawing_root.Update()
 
-    def reorder_sheets(self, i_ordered_sheets):
+    def reorder_sheets(self, i_ordered_sheets: tuple) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -250,6 +257,7 @@ class DrawingRoot(AnyObject):
 
         :param tuple i_ordered_sheets:
         :return: None
+        :rtype: None
         """
         i_ordered_sheets = [x.com_object for x in i_ordered_sheets]
         return self.drawing_root.reorder_Sheets(i_ordered_sheets)

@@ -35,7 +35,7 @@ class DrawingTable(AnyObject):
         self.drawing_table = com_object
 
     @property
-    def anchor_point(self):
+    def anchor_point(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -54,21 +54,22 @@ class DrawingTable(AnyObject):
                 | 
                 |                  MyTable.AnchorPoint = CatTableBottomLeft
 
-        :return: enum cat_table_position
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_table.AnchorPoint
 
     @anchor_point.setter
-    def anchor_point(self, value):
+    def anchor_point(self, value: int):
         """
-        :param enum cat_table_position value:
+        :param int value:
         """
 
         self.drawing_table.AnchorPoint = value
 
     @property
-    def angle(self):
+    def angle(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -84,12 +85,13 @@ class DrawingTable(AnyObject):
                 |          X = MyTable.Angle = PI/2
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_table.Angle
 
     @angle.setter
-    def angle(self, value):
+    def angle(self, value: float):
         """
         :param float value:
         """
@@ -97,7 +99,7 @@ class DrawingTable(AnyObject):
         self.drawing_table.Angle = value
 
     @property
-    def compute_mode(self):
+    def compute_mode(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -114,21 +116,22 @@ class DrawingTable(AnyObject):
                 | 
                 |          MyTable.ComputeMode = CatTableOFF
 
-        :return: enum cat_table_compute_mode
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_table.ComputeMode
 
     @compute_mode.setter
-    def compute_mode(self, value):
+    def compute_mode(self, value: int):
         """
-        :param enum cat_table_compute_mode value:
+        :param int value:
         """
 
         self.drawing_table.ComputeMode = value
 
     @property
-    def leaders(self):
+    def leaders(self) -> DrawingLeaders:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -145,12 +148,13 @@ class DrawingTable(AnyObject):
                 |          Set LeaderCollection = MyTable.Leaders
 
         :return: DrawingLeaders
+        :rtype: DrawingLeaders
         """
 
         return DrawingLeaders(self.drawing_table.Leaders)
 
     @property
-    def number_of_columns(self):
+    def number_of_columns(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -165,12 +169,13 @@ class DrawingTable(AnyObject):
                 |          oNbCol = MyTable.NumberOfColumns
 
         :return: int
+        :rtype: int
         """
 
         return self.drawing_table.NumberOfColumns
 
     @property
-    def number_of_rows(self):
+    def number_of_rows(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -185,12 +190,13 @@ class DrawingTable(AnyObject):
                 |          oNbRow = MyTable.NumberOfRows
 
         :return: int
+        :rtype: int
         """
 
         return self.drawing_table.NumberOfRows
 
     @property
-    def x(self):
+    def x(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -207,12 +213,13 @@ class DrawingTable(AnyObject):
                 |          X = MyTable.x
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_table.x
 
     @x.setter
-    def x(self, value):
+    def x(self, value: float):
         """
         :param float value:
         """
@@ -220,7 +227,7 @@ class DrawingTable(AnyObject):
         self.drawing_table.x = value
 
     @property
-    def y(self):
+    def y(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -239,19 +246,20 @@ class DrawingTable(AnyObject):
                 |          MyTable.y =  NewYCoordinate
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_table.y
 
     @y.setter
-    def y(self, value):
+    def y(self, value: float):
         """
         :param float value:
         """
 
         self.drawing_table.y = value
 
-    def add_column(self, i_col):
+    def add_column(self, i_col: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -274,10 +282,11 @@ class DrawingTable(AnyObject):
 
         :param int i_col:
         :return: None
+        :rtype: None
         """
         return self.drawing_table.AddColumn(i_col)
 
-    def add_row(self, i_row):
+    def add_row(self, i_row: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -299,10 +308,11 @@ class DrawingTable(AnyObject):
 
         :param int i_row:
         :return: None
+        :rtype: None
         """
         return self.drawing_table.AddRow(i_row)
 
-    def get_cell_alignment(self, i_row, i_col):
+    def get_cell_alignment(self, i_row: int, i_col: int) -> enum cat_table_position:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -332,10 +342,11 @@ class DrawingTable(AnyObject):
         :param int i_row:
         :param int i_col:
         :return: enum cat_table_position
+        :rtype: enum cat_table_position
         """
         return self.drawing_table.GetCellAlignment(i_row, i_col)
 
-    def get_cell_border_type(self, i_row, i_col):
+    def get_cell_border_type(self, i_row: int, i_col: int) -> enum cat_table_border_type:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -370,10 +381,11 @@ class DrawingTable(AnyObject):
         :param int i_row:
         :param int i_col:
         :return: enum cat_table_border_type
+        :rtype: enum cat_table_border_type
         """
         return self.drawing_table.GetCellBorderType(i_row, i_col)
 
-    def get_cell_name(self, i_row, i_col):
+    def get_cell_name(self, i_row: int, i_col: int) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -402,10 +414,11 @@ class DrawingTable(AnyObject):
         :param int i_row:
         :param int i_col:
         :return: str
+        :rtype: str
         """
         return self.drawing_table.GetCellName(i_row, i_col)
 
-    def get_cell_object(self, i_row, i_col):
+    def get_cell_object(self, i_row: int, i_col: int) -> DrawingText:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -437,10 +450,11 @@ class DrawingTable(AnyObject):
         :param int i_row:
         :param int i_col:
         :return: DrawingText
+        :rtype: DrawingText
         """
         return DrawingText(self.drawing_table.GetCellObject(i_row, i_col))
 
-    def get_cell_string(self, i_row, i_col):
+    def get_cell_string(self, i_row: int, i_col: int) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -473,7 +487,7 @@ class DrawingTable(AnyObject):
         """
         return self.drawing_table.GetCellString(i_row, i_col)
 
-    def get_cells_merge(self, o_list_of_merge_cells):
+    def get_cells_merge(self, o_list_of_merge_cells: tuple) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -498,6 +512,7 @@ class DrawingTable(AnyObject):
 
         :param tuple o_list_of_merge_cells:
         :return: None
+        :rtype: None
         """
         return self.drawing_table.GetCellsMerge(o_list_of_merge_cells)
         # # # # Autogenerated comment: 
@@ -516,7 +531,7 @@ class DrawingTable(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_column_size(self, i_col):
+    def get_column_size(self, i_col: int) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -542,10 +557,11 @@ class DrawingTable(AnyObject):
 
         :param int i_col:
         :return: float
+        :rtype: float
         """
         return self.drawing_table.GetColumnSize(i_col)
 
-    def get_merge_infos(self, i_row, i_col, o_first_row, o_first_col, o_nb_row, o_nb_col):
+    def get_merge_infos(self, i_row: int, i_col: int, o_first_row: int, o_first_col: int, o_nb_row: int, o_nb_col: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -585,10 +601,11 @@ class DrawingTable(AnyObject):
         :param int o_nb_row:
         :param int o_nb_col:
         :return: None
+        :rtype: None
         """
         return self.drawing_table.GetMergeInfos(i_row, i_col, o_first_row, o_first_col, o_nb_row, o_nb_col)
 
-    def get_row_size(self, i_row):
+    def get_row_size(self, i_row: int) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -614,10 +631,11 @@ class DrawingTable(AnyObject):
 
         :param int i_row:
         :return: float
+        :rtype: float
         """
         return self.drawing_table.GetRowSize(i_row)
 
-    def invert_mode(self, i_mode):
+    def invert_mode(self, i_mode: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -631,8 +649,9 @@ class DrawingTable(AnyObject):
                 | 
                 |          MyTable.InvertMode CatInvertColumn
 
-        :param CatTableInvertMode i_mode:
+        :param int i_mode:
         :return: None
+        :rtype: None
         """
         return self.drawing_table.InvertMode(i_mode.com_object)
         # # # # Autogenerated comment: 
@@ -682,10 +701,11 @@ class DrawingTable(AnyObject):
         :param int i_nb_row_merge:
         :param int i_nb_col_merge:
         :return: None
+        :rtype: None
         """
         return self.drawing_table.MergeCells(i_first_row, i_first_col, i_nb_row_merge, i_nb_col_merge)
 
-    def move(self, i_delta_x, i_delta_y):
+    def move(self, i_delta_x: float, i_delta_y: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -712,10 +732,11 @@ class DrawingTable(AnyObject):
         :param float i_delta_x:
         :param float i_delta_y:
         :return: None
+        :rtype: None
         """
         return self.drawing_table.Move(i_delta_x, i_delta_y)
 
-    def remove_column(self, i_col):
+    def remove_column(self, i_col: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -737,6 +758,7 @@ class DrawingTable(AnyObject):
 
         :param int i_col:
         :return: None
+        :rtype: None
         """
         return self.drawing_table.RemoveColumn(i_col)
 
@@ -762,10 +784,11 @@ class DrawingTable(AnyObject):
 
         :param int i_row:
         :return: None
+        :rtype: None
         """
         return self.drawing_table.RemoveRow(i_row)
 
-    def rotate(self, i_delta_angle):
+    def rotate(self, i_delta_angle: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -787,10 +810,11 @@ class DrawingTable(AnyObject):
 
         :param float i_delta_angle:
         :return: None
+        :rtype: None
         """
         return self.drawing_table.Rotate(i_delta_angle)
 
-    def set_cell_alignment(self, i_row, i_col, i_align):
+    def set_cell_alignment(self, i_row: int, i_col: int, i_align: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -820,8 +844,9 @@ class DrawingTable(AnyObject):
 
         :param int i_row:
         :param int i_col:
-        :param CatTablePosition i_align:
+        :param int i_align:
         :return: None
+        :rtype: None
         """
         return self.drawing_table.SetCellAlignment(i_row, i_col, i_align.com_object)
         # # # # Autogenerated comment: 
@@ -840,7 +865,7 @@ class DrawingTable(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_cell_border_type(self, i_row, i_col, i_type):
+    def set_cell_border_type(self, i_row: int, i_col: int, i_type: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -880,10 +905,11 @@ class DrawingTable(AnyObject):
         :param int i_col:
         :param int i_type:
         :return: None
+        :rtype: None
         """
         return self.drawing_table.SetCellBorderType(i_row, i_col, i_type)
 
-    def set_cell_name(self, i_row, i_col, i_name):
+    def set_cell_name(self, i_row: int, i_col: int, i_name: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -915,10 +941,11 @@ class DrawingTable(AnyObject):
         :param int i_col:
         :param str i_name:
         :return: None
+        :rtype: None
         """
         return self.drawing_table.SetCellName(i_row, i_col, i_name)
 
-    def set_cell_object(self, i_row, i_col, i_text):
+    def set_cell_object(self, i_row: int, i_col: int, i_text: DrawingText) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -949,6 +976,7 @@ class DrawingTable(AnyObject):
         :param int i_col:
         :param DrawingText i_text:
         :return: None
+        :rtype: None
         """
         return self.drawing_table.SetCellObject(i_row, i_col, i_text.com_object)
         # # # # Autogenerated comment: 
@@ -967,7 +995,7 @@ class DrawingTable(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_cell_string(self, i_row, i_col, i_string):
+    def set_cell_string(self, i_row: int, i_col: int, i_string: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -999,10 +1027,11 @@ class DrawingTable(AnyObject):
         :param int i_col:
         :param str i_string:
         :return: None
+        :rtype: None
         """
         return self.drawing_table.SetCellString(i_row, i_col, i_string)
 
-    def set_column_size(self, i_col, i_col_size):
+    def set_column_size(self, i_col: int, i_col_size: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1030,10 +1059,11 @@ class DrawingTable(AnyObject):
         :param int i_col:
         :param float i_col_size:
         :return: None
+        :rtype: None
         """
         return self.drawing_table.SetColumnSize(i_col, i_col_size)
 
-    def set_row_size(self, i_row, i_row_size):
+    def set_row_size(self, i_row: int, i_row_size: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1061,10 +1091,11 @@ class DrawingTable(AnyObject):
         :param int i_row:
         :param float i_row_size:
         :return: None
+        :rtype: None
         """
         return self.drawing_table.SetRowSize(i_row, i_row_size)
 
-    def un_merge_cells(self, i_row, i_col):
+    def un_merge_cells(self, i_row: int, i_col: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1087,6 +1118,7 @@ class DrawingTable(AnyObject):
         :param int i_row:
         :param int i_col:
         :return: None
+        :rtype: None
         """
         return self.drawing_table.UnMergeCells(i_row, i_col)
 

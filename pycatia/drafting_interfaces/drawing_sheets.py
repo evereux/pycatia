@@ -38,7 +38,7 @@ class DrawingSheets(Collection):
         self.drawing_sheets = com_object
 
     @property
-    def active_sheet(self):
+    def active_sheet(self) -> DrawingSheet:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -58,11 +58,12 @@ class DrawingSheets(Collection):
                 |          Set SheetToWorkIn =  MyDrawingDoc.Sheets.ActiveSheet
 
         :return: DrawingSheet
+        :rtype: DrawingSheet
         """
 
         return DrawingSheet(self.drawing_sheets.ActiveSheet)
 
-    def add(self, i_drawing_sheet_name):
+    def add(self, i_drawing_sheet_name: str) -> DrawingSheet:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -93,10 +94,11 @@ class DrawingSheets(Collection):
 
         :param str i_drawing_sheet_name:
         :return: DrawingSheet
+        :rtype: DrawingSheet
         """
         return DrawingSheet(self.drawing_sheets.Add(i_drawing_sheet_name))
 
-    def add_detail(self, i_drawing_sheet_name):
+    def add_detail(self, i_drawing_sheet_name: str) -> DrawingSheet:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -127,10 +129,11 @@ class DrawingSheets(Collection):
 
         :param str i_drawing_sheet_name:
         :return: DrawingSheet
+        :rtype: DrawingSheet
         """
         return DrawingSheet(self.drawing_sheets.AddDetail(i_drawing_sheet_name))
 
-    def item(self, i_index):
+    def item(self, i_index: CATVariant) -> DrawingSheet:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -168,10 +171,11 @@ class DrawingSheets(Collection):
 
         :param CATVariant i_index:
         :return: DrawingSheet
+        :rtype: DrawingSheet
         """
-        return DrawingSheet(self.drawing_sheets.Item(i_index))
+        return DrawingSheet(self.drawing_sheets.Item(i_index.com_object))
 
-    def remove(self, i_index):
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))

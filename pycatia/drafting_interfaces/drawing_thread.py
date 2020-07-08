@@ -34,7 +34,7 @@ class DrawingThread(AnyObject):
         self.drawing_thread = com_object
 
     @property
-    def type(self):
+    def type(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -68,15 +68,16 @@ class DrawingThread(AnyObject):
                 | 
                 |      ThreadLinkType = MyThread.IsLinkedTo
 
-        :return: enum cat_thread_type
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_thread.Type
 
     @type.setter
-    def type(self, value):
+    def type(self, value: int):
         """
-        :param enum cat_thread_type value:
+        :param int value:
         """
 
         self.drawing_thread.Type = value

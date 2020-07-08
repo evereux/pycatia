@@ -34,7 +34,7 @@ class DrawingTables(Collection):
         super().__init__(com_object, child_object=DrawingTable)
         self.drawing_tables = com_object
 
-    def add(self, i_position_x, i_position_y, i_number_of_row, i_number_of_column, i_row_height, i_column_width):
+    def add(self, i_position_x: float, i_position_y: float, i_number_of_row: int, i_number_of_column: int, i_row_height: float, i_column_width: float) -> DrawingTable:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -79,6 +79,7 @@ class DrawingTables(Collection):
         :param float i_row_height:
         :param float i_column_width:
         :return: DrawingTable
+        :rtype: DrawingTable
         """
         return DrawingTable(
             self.drawing_tables.Add(
@@ -91,7 +92,7 @@ class DrawingTables(Collection):
             )
         )
 
-    def item(self, i_index):
+    def item(self, i_index: int) -> DrawingTable:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -122,10 +123,11 @@ class DrawingTables(Collection):
 
         :param int i_index:
         :return: DrawingTable
+        :rtype: DrawingTable
         """
         return DrawingTable(self.drawing_tables.Item(i_index))
 
-    def remove(self, i_index):
+    def remove(self, i_index: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))

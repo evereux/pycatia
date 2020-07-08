@@ -39,7 +39,7 @@ class DrawingDocument(Document):
         self.drawing_document = com_object
 
     @property
-    def drawing_root(self):
+    def drawing_root(self) -> DrawingRoot:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -54,12 +54,13 @@ class DrawingDocument(Document):
                 |          CATIA.ActiveDocument.DrawingRoot
 
         :return: DrawingRoot
+        :rtype: DrawingRoot
         """
 
         return DrawingRoot(self.drawing_document.DrawingRoot)
 
     @property
-    def parameters(self):
+    def parameters(self) -> Parameters:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -81,12 +82,13 @@ class DrawingDocument(Document):
                 |          Set DrawingParameters = CATIA.ActiveDocument.Parameters
 
         :return: Parameters
+        :rtype: Parameters
         """
 
         return Parameters(self.drawing_document.Parameters)
 
     @property
-    def relations(self):
+    def relations(self) -> Relations:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -108,12 +110,13 @@ class DrawingDocument(Document):
                 |          Set DrawingRelations = CATIA.ActiveDocument.Relations
 
         :return: Relations
+        :rtype: Relations
         """
 
         return Relations(self.drawing_document.Relations)
 
     @property
-    def sheets(self):
+    def sheets(self) -> DrawingSheets:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -131,12 +134,13 @@ class DrawingDocument(Document):
                 |          Set SheetCollection = CATIA.ActiveDocument.Sheets
 
         :return: DrawingSheets
+        :rtype: DrawingSheets
         """
 
         return DrawingSheets(self.drawing_document.Sheets)
 
     @property
-    def standard(self):
+    def standard(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -151,20 +155,21 @@ class DrawingDocument(Document):
                 | 
                 |          CATIA.ActiveDocument.Standard = catISO
 
-        :return: enum cat_drawing_standard
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_document.Standard
 
     @standard.setter
-    def standard(self, value):
+    def standard(self, value: int):
         """
-        :param enum cat_drawing_standard value:
+        :param int value:
         """
 
         self.drawing_document.Standard = value
 
-    def isolate(self):
+    def isolate(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -181,10 +186,11 @@ class DrawingDocument(Document):
                 |          CATIA.ActiveDocument.Isolate
 
         :return: None
+        :rtype: None
         """
         return self.drawing_document.Isolate()
 
-    def update(self):
+    def update(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -199,6 +205,7 @@ class DrawingDocument(Document):
                 |          CATIA.ActiveDocument.Update
 
         :return: None
+        :rtype: None
         """
         return self.drawing_document.Update()
 
