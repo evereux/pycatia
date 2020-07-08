@@ -202,13 +202,3 @@ def test_saving():
             document.save_as(new_filename)
 
     os.remove(new_filename)
-
-
-def test_search_for_items():
-    with CATIADocHandler(cat_part_measurable) as handler:
-        document = handler.document
-
-        # search for all points
-        selection_items = document.search_for_items(document, ['Point', 'Line'])
-
-        assert len(selection_items) == 16

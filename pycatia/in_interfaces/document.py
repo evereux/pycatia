@@ -55,7 +55,7 @@ class Document(AnyObject):
         self.document = com_object
 
     @property
-    def cameras(self):
+    def cameras(self) -> Cameras:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -71,12 +71,13 @@ class Document(AnyObject):
                 |          Set CameraCollection = Doc.Cameras
 
         :return: Cameras
+        :rtype: Cameras
         """
 
         return Cameras(self.document.Cameras)
 
     @property
-    def current_filter(self):
+    def current_filter(self) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -94,12 +95,13 @@ class Document(AnyObject):
                 |          Doc.CurrentFilter = "Filter001"
 
         :return: str
+        :rtype: str
         """
 
         return self.document.CurrentFilter
 
     @current_filter.setter
-    def current_filter(self, value):
+    def current_filter(self, value: str):
         """
         :param str value:
         """
@@ -107,7 +109,7 @@ class Document(AnyObject):
         self.document.CurrentFilter = value
 
     @property
-    def current_layer(self):
+    def current_layer(self) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -124,12 +126,13 @@ class Document(AnyObject):
                 |          Doc.CurrentLayer = "Layer 3"
 
         :return: str
+        :rtype: str
         """
 
         return self.document.CurrentLayer
 
     @current_layer.setter
-    def current_layer(self, value):
+    def current_layer(self, value: str):
         """
         :param str value:
         """
@@ -209,7 +212,7 @@ class Document(AnyObject):
         return str(self.path())
 
     @property
-    def read_only(self):
+    def read_only(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -226,6 +229,7 @@ class Document(AnyObject):
                 |          IsReadOnly = Doc.ReadOnly
 
         :return: bool
+        :rtype: bool
         """
 
         return self.document.ReadOnly
@@ -253,7 +257,7 @@ class Document(AnyObject):
         return self.document.SeeHiddenElements
 
     @see_hidden_elements.setter
-    def see_hidden_elements(self, value):
+    def see_hidden_elements(self, value: bool):
         """
         :param bool value:
         """
@@ -261,7 +265,7 @@ class Document(AnyObject):
         self.document.SeeHiddenElements = value
 
     @property
-    def selection(self):
+    def selection(self) -> 'Selection':
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -279,11 +283,12 @@ class Document(AnyObject):
                 |          Set CurSel = Doc.Selection
 
         :return: Selection
+        :rtype: Selection
         """
         from pycatia.in_interfaces.selection import Selection
         return Selection(self.document.Selection)
 
-    def activate(self):
+    def activate(self) -> None:
         """
         Activates the document
 
@@ -303,11 +308,13 @@ class Document(AnyObject):
                 |
                 |          Doc.Activate()
 
+        :return: None
+        :rtype: None
         """
 
-        self.document.Activate()
+        return self.document.Activate()
 
-    def close(self):
+    def close(self) -> None:
         """
         Closes the current document.
 
@@ -329,7 +336,7 @@ class Document(AnyObject):
                          f' CATIA will prompt you to save if you haven\'t already done so.')
         self.document.Close()
 
-    def create_filter(self, i_filter_name=None, i_filter_definition=None):
+    def create_filter(self, i_filter_name: str, i_filter_definition: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -355,10 +362,11 @@ class Document(AnyObject):
         :param str i_filter_name:
         :param str i_filter_definition:
         :return: None
+        :rtype: None
         """
         return self.document.CreateFilter(i_filter_name, i_filter_definition)
 
-    def create_reference_from_name(self, i_label=None):
+    def create_reference_from_name(self, i_label: str) -> Reference:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -377,19 +385,21 @@ class Document(AnyObject):
 
         :param str i_label:
         :return: Reference
+        :rtype: Reference
         """
         return Reference(self.document.CreateReferenceFromName(i_label))
 
-    def drawing_root(self):
+    def drawing_root(self) -> DrawingRoot:
         """
-        :return:
+        :return: DrawingRoot
+        :rtype: DrawingRoot
         """
         try:
             return DrawingRoot(self.document.DrawingRoot)
         except AttributeError:
             raise CATIAApplicationException('Is document a Drawing?')
 
-    def get_workbench(self, workbench_name=None):
+    def get_workbench(self, workbench_name: str) -> Workbench:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -410,10 +420,11 @@ class Document(AnyObject):
 
         :param str workbench_name:
         :return: Workbench
+        :rtype: Workbench
         """
         return Workbench(self.document.GetWorkbench(workbench_name))
 
-    def export_data(self, file_name, file_type, overwrite=False):
+    def export_data(self, file_name: str, file_type: str, overwrite=False) -> None:
 
         """
         .. note::
@@ -450,7 +461,7 @@ class Document(AnyObject):
 
         self.document.ExportData(file_name, file_type)
 
-    def indicate_2d(self, i_message=None, io_document_window_location=None):
+    def indicate_2d(self, i_message: str, io_document_window_location: tuple) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -526,8 +537,8 @@ class Document(AnyObject):
         """
         return self.document.Indicate2D(i_message, io_document_window_location)
 
-    def indicate_3d(self, i_planar_geometric_object=None, i_message=None, io_window_location2_d=None,
-                    io_window_location3_d=None):
+    def indicate_3d(self, i_planar_geometric_object: AnyObject, i_message: str, io_window_location2_d: tuple,
+                    io_window_location3_d: tuple) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -547,13 +558,13 @@ class Document(AnyObject):
                 |
                 |     In these cases, Indicate2D must be used.
                 |     See also: Selection.IndicateOrSelectElement3D which can, in particular,
-                |     enable indication and not selection (positionning the iFilterType parameter to
-                |     an empty string), whichs enables to subscribe to mouse move events,
-                |     positionning the iTriggeringOnPreSelection to true.
+                |     enable indication and not selection (positioning the iFilterType parameter to
+                |     an empty string), which enables to subscribe to mouse move events,
+                |     positioning the iTriggeringOnPreSelection to true.
                 |     Note:If the scripting language is Visual Basic for Applications or Visual
                 |     Basic 6 Development Studio, then, you have to know that during the execution of
                 |     an interactive selection method such as this one, no form (dialog box) must be
-                |     displayed, otherwise it would lead to unpredictible results. In a form method,
+                |     displayed, otherwise it would lead to unpredictable results. In a form method,
                 |     before calling an interactive selection method such as Document.Indicate2D, you
                 |     must hide all forms, and, after the call to the method, you must show the
                 |     forms.
@@ -590,8 +601,6 @@ class Document(AnyObject):
                 |           The following example asks the end user to select a location in the
                 |
                 |          document window, on the Plane.1 plane, and creates a
-                |
-                |
                 |
                 |     HybridShapePointOnPlane at the specified location:
                 |
@@ -701,10 +710,11 @@ class Document(AnyObject):
 
         :param str i_filter_name:
         :return: None
+        :rtype: None
         """
         return self.document.RemoveFilter(i_filter_name)
 
-    def save(self):
+    def save(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -718,11 +728,12 @@ class Document(AnyObject):
                 |          Doc.Save()
 
         :return: None
+        :rtype: None
         """
         self.logger.info(f'Saving the current document.')
         self.document.Save()
 
-    def save_as(self, file_name, overwrite=False):
+    def save_as(self, file_name: str, overwrite: bool = False) -> None:
         """
         Save the document to a new name.
 
@@ -745,6 +756,8 @@ class Document(AnyObject):
 
         :param str file_name: full pathname to new file_name
         :param bool overwrite:
+        :return: None.
+        :rtype: None
         """
 
         file_name = Path(file_name)
@@ -757,54 +770,10 @@ class Document(AnyObject):
                 self.logger.warning('File already exists. Click YES in CATIA V5.')
         self.document.SaveAs(file_name)
 
-    @staticmethod
-    def search_for_items(document, selection_objects):
-        """
-
-        # todo: This search is currently restricted to GSD objects only.
-
-        Selection objects is a list of items to search for.
-        Example: selection_objects = ['Point', 'Line']
-
-        Example query string to search for all lines and points
-        "('Generative Shape Design'.Point + 'Generative Shape Design'.Line),in"
-
-        :param document:
-        :param list selection_objects:
-        :return Selected Automation Object:
-        """
-
-        gsd_items = [
-            'Point',
-            'Line'
-        ]
-
-        query_string = str()
-        # build query string
-
-        for counter, item in enumerate(selection_objects):
-            boolean = str()
-            if counter > 0 and not counter == len(selection_objects):
-                boolean = ' + '
-            if item in gsd_items:
-                query_string = f"{query_string}{boolean}'Generative Shape Design'.{item}"
-
-        query_string = f"({query_string}),in"
-
-        selection = document.document.Selection
-        selection.Search(query_string)
-
-        selected = list()
-        for i in range(0, selection.Count):
-            selected.append(AnyObject(selection.Item(i + 1).Value))
-
-        return selected
-
     def spa_workbench(self):
         """
-
-        Returns:
-
+        :return:
+        :rtype: SPAWorkbench
         """
 
         return SPAWorkbench(self.com_object)
