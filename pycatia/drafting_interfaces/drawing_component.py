@@ -10,6 +10,7 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.types import cat_variant
 
 
 class DrawingComponent(AnyObject):
@@ -69,7 +70,7 @@ class DrawingComponent(AnyObject):
         self.drawing_component.Angle = value
 
     @property
-    def comp_ref(self) -> DrawingView:
+    def comp_ref(self) -> 'DrawingView':
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -253,7 +254,7 @@ class DrawingComponent(AnyObject):
         """
         return self.drawing_component.ExposeCompRef()
 
-    def expose_comp_ref_in_sheet(self, i_sheet: DrawingSheet) -> None:
+    def expose_comp_ref_in_sheet(self, i_sheet: 'DrawingSheet') -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -386,7 +387,7 @@ class DrawingComponent(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_modifiable_object(self, i_index: CATVariant) -> AnyObject:
+    def get_modifiable_object(self, i_index: cat_variant) -> AnyObject:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -401,7 +402,7 @@ class DrawingComponent(AnyObject):
                 | 
                 |          Object = MyComponent.GetModifiableObject(1)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: AnyObject
         :rtype: AnyObject
         """

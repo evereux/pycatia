@@ -75,7 +75,7 @@ class DrawingWeldings(Collection):
         :return: DrawingWelding
         :rtype: DrawingWelding
         """
-        return DrawingWelding(self.drawing_weldings.Add(i_symbol.com_object, i_position_x, i_position_y))
+        return DrawingWelding(self.drawing_weldings.Add(i_symbol, i_position_x, i_position_y))
 
     def item(self, i_index: int) -> DrawingWelding:
         """
