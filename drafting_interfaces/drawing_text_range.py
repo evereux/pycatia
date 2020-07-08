@@ -144,7 +144,7 @@ class DrawingTextRange(CATBaseDispatch):
 
         return DrawingTextProperties(self.drawing_text_range.TextProperties)
 
-    def get_text_range(self, i_start: int, i_end: int) -> DrawingTextRange:
+    def get_text_range(self, i_start: int, i_end: int) -> 'DrawingTextRange':
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
