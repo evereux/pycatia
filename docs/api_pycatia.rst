@@ -1,6 +1,0 @@
-pycatia
-=======
-
-
-.. automodule:: pycatia
-    :members:

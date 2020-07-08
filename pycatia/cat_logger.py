@@ -6,9 +6,19 @@ import sys
 # the following code was shamefully pilfered from Flask's logging.
 
 
-def has_level_handler(logger):
-    """Check if there is a handler in the logging chain that will handle the
-    given logger's :meth:`effective level <~logging.Logger.getEffectiveLevel>`.
+def has_level_handler(logger: logging.Logger):
+    """
+
+    Check if there is a handler in the logging chain that will handle the
+    given logger's :meth:`effective level <~logging.Logger.getEffectiveLevel>`
+
+    :param logger: logging.Logger
+    :return:
+    """
+    """
+        Check if there is a handler in the logging chain that will handle the
+        given logger's :meth:`effective level <~logging.Logger.getEffectiveLevel>`.
+    
     """
     level = logger.getEffectiveLevel()
     current = logger
@@ -25,14 +35,19 @@ def has_level_handler(logger):
     return False
 
 
-#: ``[%(asctime)s] %(levelname)s in %(module)s: %(message)s``.
-default_handler = logging.StreamHandler(sys.stderr)
-default_handler.setFormatter(
-    logging.Formatter("[%(asctime)s] %(levelname)s in %(module)s: %(message)s")
-)
+def create_logger() -> logging.Logger:
+    """
 
+    :return: Logger
+    :rtype: logging.Logger
+    """
 
-def create_logger(app):
+    #: ``[%(asctime)s] %(levelname)s in %(module)s: %(message)s``.
+    default_handler = logging.StreamHandler(sys.stderr)
+    default_handler.setFormatter(
+        logging.Formatter("[%(asctime)s] %(levelname)s in %(module)s: %(message)s")
+    )
+
     logger = logging.getLogger('pycatia')
 
     logger.setLevel(logging.INFO)

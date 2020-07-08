@@ -11,10 +11,10 @@
 
 from pycatia.product_structure_interfaces.publication import Publication
 from pycatia.system_interfaces.collection import Collection
+from pycatia.types import cat_variant
 
 
 class Publications(Collection):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -65,7 +65,7 @@ class Publications(Collection):
         """
         return Publication(self.publications.Add(i_public_name))
 
-    def item(self, i_identifier: CATVariant) -> Publication:
+    def item(self, i_identifier: cat_variant) -> Publication:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -87,11 +87,11 @@ class Publications(Collection):
                 |              Dim Prod1 As Product
                 |              Set Pub1 = Prod1.Item(PubId)
 
-        :param CATVariant i_identifier:
+        :param cat_variant i_identifier:
         :return: Publication
         :rtype: Publication
         """
-        return Publication(self.publications.Item(i_identifier.com_object))
+        return Publication(self.publications.Item(i_identifier))
 
     def remove(self, i_identifier: str) -> None:
         """
@@ -118,7 +118,7 @@ class Publications(Collection):
         """
         return self.publications.Remove(i_identifier)
 
-    def set_direct(self, i_identifier: CATVariant, i_pointed: Reference) -> None:
+    def set_direct(self, i_identifier: cat_variant, i_pointed: 'Reference') -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -145,7 +145,7 @@ class Publications(Collection):
                 |          Dim Prod1 As Product
                 |          Prod1.SetDirect(PubId,RefObject)
 
-        :param CATVariant i_identifier:
+        :param cat_variant i_identifier:
         :param Reference i_pointed:
         :return: None
         :rtype: None
@@ -167,7 +167,7 @@ class Publications(Collection):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_relay(self, i_identifier: CATVariant, i_relayer: Publications, i_name_in_relay: CATVariant) -> None:
+    def set_relay(self, i_identifier: cat_variant, i_relayer: 'Publications', i_name_in_relay: cat_variant) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -195,9 +195,9 @@ class Publications(Collection):
                 |              Dim Prod1 As Product
                 |              Prod1.SetRelay(PubId1,Prod2,PubId2)
 
-        :param CATVariant i_identifier:
+        :param cat_variant i_identifier:
         :param Publications i_relayer:
-        :param CATVariant i_name_in_relay:
+        :param cat_variant i_name_in_relay:
         :return: None
         :rtype: None
         """
@@ -219,4 +219,4 @@ class Publications(Collection):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'Publications(name="{ self.name }")'
+        return f'Publications(name="{self.name}")'

@@ -10,10 +10,10 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.product_structure_interfaces.product import Product
 
 
 class AssemblyConvertor(AnyObject):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -155,4 +155,4 @@ class AssemblyConvertor(AnyObject):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'AssemblyConvertor(name="{ self.name }")'
+        return f'AssemblyConvertor(name="{self.name}")'

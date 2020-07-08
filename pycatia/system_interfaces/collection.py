@@ -35,12 +35,11 @@ class Collection(PyCATIA):
 
     def __init__(self, com_object, child_object=AnyObject):
         super().__init__()
-        self.collection = com_object
         self.com_object = com_object
         self.child_object = child_object
 
     @property
-    def application(self) -> Application:
+    def application(self) -> 'Application':
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-10 10:58:07.270911)
@@ -66,7 +65,7 @@ class Collection(PyCATIA):
         :rtype: Application
         """
         from pycatia.in_interfaces.application import Application
-        return Application(self.collection.Application)
+        return Application(self.com_object.Application)
 
     @property
     def count(self) -> int:
@@ -88,7 +87,7 @@ class Collection(PyCATIA):
         :rtype: int
         """
 
-        return self.collection.Count
+        return self.com_object.Count
 
     @property
     def name(self) -> str:
@@ -114,7 +113,7 @@ class Collection(PyCATIA):
         :rtype: str
         """
 
-        return self.collection.Name
+        return self.com_object.Name
 
     @property
     def parent(self) -> AnyObject:
@@ -142,7 +141,7 @@ class Collection(PyCATIA):
         :rtype: AnyObject
         """
 
-        return AnyObject(self.collection.Parent)
+        return AnyObject(self.com_object.Parent)
 
     def get_item(self, id_name: str) -> AnyObject:
         """

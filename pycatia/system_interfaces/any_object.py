@@ -35,7 +35,7 @@ class AnyObject(PyCATIA):
         self.com_object = com_object
 
     @property
-    def application(self) -> Application:
+    def application(self) -> 'com_object':
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
@@ -64,11 +64,10 @@ class AnyObject(PyCATIA):
                 |          Dim CurrentApplication As Application
                 |          Set CurrentApplication = MyDoc.Application
 
-        :return: Application
-        :rtype: Application
+        :return: com_object
+        :rtype: com_object
         """
-
-        return Application(self.any_object.Application)
+        return self.com_object.Application
 
     @property
     def name(self) -> str:
@@ -100,7 +99,7 @@ class AnyObject(PyCATIA):
         :rtype: str
         """
 
-        return self.any_object.Name
+        return self.com_object.Name
 
     @name.setter
     def name(self, value: str):
@@ -108,10 +107,10 @@ class AnyObject(PyCATIA):
         :param str value:
         """
 
-        self.any_object.Name = value
+        self.com_object.Name = value
 
     @property
-    def parent(self) -> AnyObject:
+    def parent(self) -> 'AnyObject':
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
@@ -136,9 +135,9 @@ class AnyObject(PyCATIA):
         :rtype: AnyObject
         """
 
-        return AnyObject(self.any_object.Parent)
+        return AnyObject(self.com_object.Parent)
 
-    def get_item(self, id_name: str) -> AnyObject:
+    def get_item(self, id_name: str) -> 'AnyObject':
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
@@ -160,7 +159,7 @@ class AnyObject(PyCATIA):
         :return: AnyObject
         :rtype: AnyObject
         """
-        return self.any_object.GetItem(id_name)
+        return self.com_object.GetItem(id_name)
 
     def __repr__(self):
         return f'AnyObject(name="{self.name}")'

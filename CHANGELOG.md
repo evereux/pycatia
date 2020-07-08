@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.7
+* Restructured API documentation.
+* Added type hinting (not yet complete.)
+* Fixed issues with vis_property_set.
+* Added ability to create a message box (MsgBox). See examples.
+
+
 ## 0.3.6
 * Fixed Selection class.
 
