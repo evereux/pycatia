@@ -37,7 +37,7 @@ class DrawingDimValue(AnyObject):
         self.drawing_dim_value = com_object
 
     @property
-    def fake_dim_type(self):
+    def fake_dim_type(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -51,21 +51,22 @@ class DrawingDimValue(AnyObject):
                 | 
                 |          oFakeType = MyDimValue.FakeDimType
 
-        :return: enum cat_dim_fake
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_dim_value.FakeDimType
 
     @fake_dim_type.setter
-    def fake_dim_type(self, value):
+    def fake_dim_type(self, value: int):
         """
-        :param enum cat_dim_fake value:
+        :param int value:
         """
 
         self.drawing_dim_value.FakeDimType = value
 
     @property
-    def scoring_mode(self):
+    def scoring_mode(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -77,21 +78,22 @@ class DrawingDimValue(AnyObject):
                 | 
                 |      ValueScoreType = MyValue.ScoringMode
 
-        :return: enum cat_dim_score
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_dim_value.ScoringMode
 
     @scoring_mode.setter
-    def scoring_mode(self, value):
+    def scoring_mode(self, value: int):
         """
-        :param enum cat_dim_score value:
+        :param int value:
         """
 
         self.drawing_dim_value.ScoringMode = value
 
     @property
-    def value(self):
+    def value(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -106,12 +108,13 @@ class DrawingDimValue(AnyObject):
                 |          oValue = MyDimValue.Value
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_dim_value.Value
 
     @property
-    def value_framed_element(self):
+    def value_framed_element(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -124,21 +127,22 @@ class DrawingDimValue(AnyObject):
                 | 
                 |      ValueFramedElement = MyValue.ValueFramedElement
 
-        :return: enum cat_dim_framed_element
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_dim_value.ValueFramedElement
 
     @value_framed_element.setter
-    def value_framed_element(self, value):
+    def value_framed_element(self, value: int):
         """
-        :param enum cat_dim_framed_element value:
+        :param int value:
         """
 
         self.drawing_dim_value.ValueFramedElement = value
 
     @property
-    def value_framed_group(self):
+    def value_framed_group(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -152,20 +156,21 @@ class DrawingDimValue(AnyObject):
                 | 
                 |          oValueFramedGroup = MyDimValue.FakeDimType
 
-        :return: enum cat_dim_framed_group
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_dim_value.ValueFramedGroup
 
     @value_framed_group.setter
-    def value_framed_group(self, value):
+    def value_framed_group(self, value: int):
         """
-        :param enum cat_dim_framed_group value:
+        :param int value:
         """
 
         self.drawing_dim_value.ValueFramedGroup = value
 
-    def get_bault_text(self, i_index, o_before, o_after, o_upper, o_lower):
+    def get_bault_text(self, i_index: int, o_before: str, o_after: str, o_upper: str, o_lower: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -201,10 +206,11 @@ class DrawingDimValue(AnyObject):
         :param str o_upper:
         :param str o_lower:
         :return: None
+        :rtype: None
         """
         return self.drawing_dim_value.GetBaultText(i_index, o_before, o_after, o_upper, o_lower)
 
-    def get_display_unit(self, i_index):
+    def get_display_unit(self, i_index: int) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -225,10 +231,11 @@ class DrawingDimValue(AnyObject):
 
         :param int i_index:
         :return: int
+        :rtype: int
         """
         return self.drawing_dim_value.GetDisplayUnit(i_index)
 
-    def get_fake_dim_value(self, i_index):
+    def get_fake_dim_value(self, i_index: int) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -249,10 +256,11 @@ class DrawingDimValue(AnyObject):
 
         :param int i_index:
         :return: str
+        :rtype: str
         """
         return self.drawing_dim_value.GetFakeDimValue(i_index)
 
-    def get_format_display_factor(self, i_index):
+    def get_format_display_factor(self, i_index: int) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -274,10 +282,11 @@ class DrawingDimValue(AnyObject):
 
         :param int i_index:
         :return: int
+        :rtype: int
         """
         return self.drawing_dim_value.GetFormatDisplayFactor(i_index)
 
-    def get_format_name(self, i_index):
+    def get_format_name(self, i_index: int) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -298,10 +307,11 @@ class DrawingDimValue(AnyObject):
 
         :param int i_index:
         :return: str
+        :rtype: str
         """
         return self.drawing_dim_value.GetFormatName(i_index)
 
-    def get_format_precision(self, index):
+    def get_format_precision(self, index: int) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -323,10 +333,11 @@ class DrawingDimValue(AnyObject):
 
         :param int index:
         :return: float
+        :rtype: float
         """
         return self.drawing_dim_value.GetFormatPrecision(index)
 
-    def get_format_type(self, i_index):
+    def get_format_type(self, i_index: int) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -347,10 +358,11 @@ class DrawingDimValue(AnyObject):
 
         :param int i_index:
         :return: int
+        :rtype: int
         """
         return self.drawing_dim_value.GetFormatType(i_index)
 
-    def get_format_unit(self, i_index):
+    def get_format_unit(self, i_index: int) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -371,10 +383,11 @@ class DrawingDimValue(AnyObject):
 
         :param int i_index:
         :return: int
+        :rtype: int
         """
         return self.drawing_dim_value.GetFormatUnit(i_index)
 
-    def get_ps_text(self, i_index, o_prefix, o_suffix):
+    def get_ps_text(self, i_index: int, o_prefix: str, o_suffix: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -401,10 +414,11 @@ class DrawingDimValue(AnyObject):
         :param str o_prefix:
         :param str o_suffix:
         :return: None
+        :rtype: None
         """
         return self.drawing_dim_value.GetPSText(i_index, o_prefix, o_suffix)
 
-    def get_scored_element(self, i_index):
+    def get_scored_element(self, i_index: int) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -427,10 +441,11 @@ class DrawingDimValue(AnyObject):
 
         :param int i_index:
         :return: bool
+        :rtype: bool
         """
         return self.drawing_dim_value.GetScoredElement(i_index)
 
-    def set_bault_text(self, i_index, i_before, i_after, i_upper, i_lower):
+    def set_bault_text(self, i_index: int, i_before: str, i_after: str, i_upper: str, i_lower: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -466,10 +481,11 @@ class DrawingDimValue(AnyObject):
         :param str i_upper:
         :param str i_lower:
         :return: None
+        :rtype: None
         """
         return self.drawing_dim_value.SetBaultText(i_index, i_before, i_after, i_upper, i_lower)
 
-    def set_fake_dim_value(self, i_index, i_fake_dim_value):
+    def set_fake_dim_value(self, i_index: int, i_fake_dim_value: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -492,10 +508,11 @@ class DrawingDimValue(AnyObject):
         :param int i_index:
         :param str i_fake_dim_value:
         :return: None
+        :rtype: None
         """
         return self.drawing_dim_value.SetFakeDimValue(i_index, i_fake_dim_value)
 
-    def set_format_display_factor(self, i_index, i_frm_dsp_fact):
+    def set_format_display_factor(self, i_index: int, i_frm_dsp_fact: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -520,10 +537,11 @@ class DrawingDimValue(AnyObject):
         :param int i_index:
         :param int i_frm_dsp_fact:
         :return: None
+        :rtype: None
         """
         return self.drawing_dim_value.SetFormatDisplayFactor(i_index, i_frm_dsp_fact)
 
-    def set_format_name(self, i_index, i_frm_name):
+    def set_format_name(self, i_index: int, i_frm_name: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -546,10 +564,11 @@ class DrawingDimValue(AnyObject):
         :param int i_index:
         :param str i_frm_name:
         :return: None
+        :rtype: None
         """
         return self.drawing_dim_value.SetFormatName(i_index, i_frm_name)
 
-    def set_format_precision(self, i_index, i_frm_precision):
+    def set_format_precision(self, i_index: int, i_frm_precision: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -573,10 +592,11 @@ class DrawingDimValue(AnyObject):
         :param int i_index:
         :param float i_frm_precision:
         :return: None
+        :rtype: None
         """
         return self.drawing_dim_value.SetFormatPrecision(i_index, i_frm_precision)
 
-    def set_format_type(self, i_index, i_frm_type):
+    def set_format_type(self, i_index: int, i_frm_type: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -599,10 +619,11 @@ class DrawingDimValue(AnyObject):
         :param int i_index:
         :param int i_frm_type:
         :return: None
+        :rtype: None
         """
         return self.drawing_dim_value.SetFormatType(i_index, i_frm_type)
 
-    def set_format_unit(self, i_index, i_frm_unit):
+    def set_format_unit(self, i_index: int, i_frm_unit: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -625,10 +646,11 @@ class DrawingDimValue(AnyObject):
         :param int i_index:
         :param int i_frm_unit:
         :return: None
+        :rtype: None
         """
         return self.drawing_dim_value.SetFormatUnit(i_index, i_frm_unit)
 
-    def set_ps_text(self, i_index, i_prefix, i_suffix):
+    def set_ps_text(self, i_index: int, i_prefix: str, i_suffix: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -655,10 +677,11 @@ class DrawingDimValue(AnyObject):
         :param str i_prefix:
         :param str i_suffix:
         :return: None
+        :rtype: None
         """
         return self.drawing_dim_value.SetPSText(i_index, i_prefix, i_suffix)
 
-    def set_scored_element(self, i_index, i_scored_element):
+    def set_scored_element(self, i_index: int, i_scored_element: bool) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -683,6 +706,7 @@ class DrawingDimValue(AnyObject):
         :param int i_index:
         :param bool i_scored_element:
         :return: None
+        :rtype: None
         """
         return self.drawing_dim_value.SetScoredElement(i_index, i_scored_element)
         # # # # Autogenerated comment: 

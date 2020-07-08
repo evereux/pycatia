@@ -36,7 +36,7 @@ class DrawingDimLine(AnyObject):
         self.drawing_dim_line = com_object
 
     @property
-    def color(self):
+    def color(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -51,12 +51,13 @@ class DrawingDimLine(AnyObject):
                 |          oColorDimLine = MyDimLine.Color
 
         :return: int
+        :rtype: int
         """
 
         return self.drawing_dim_line.Color
 
     @color.setter
-    def color(self, value):
+    def color(self, value: int):
         """
         :param int value:
         """
@@ -64,7 +65,7 @@ class DrawingDimLine(AnyObject):
         self.drawing_dim_line.Color = value
 
     @property
-    def dim_line_graph_rep(self):
+    def dim_line_graph_rep(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -78,21 +79,22 @@ class DrawingDimLine(AnyObject):
                 | 
                 |          odimLineGraphRep = MyDimLine.DimLineGraphRep
 
-        :return: enum cat_dim_line_graph_rep
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_dim_line.DimLineGraphRep
 
     @dim_line_graph_rep.setter
-    def dim_line_graph_rep(self, value):
+    def dim_line_graph_rep(self, value: int):
         """
-        :param enum cat_dim_line_graph_rep value:
+        :param int value:
         """
 
         self.drawing_dim_line.DimLineGraphRep = value
 
     @property
-    def dim_line_orientation(self):
+    def dim_line_orientation(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -106,15 +108,16 @@ class DrawingDimLine(AnyObject):
                 | 
                 |          odimLineOrient = MyDimLine.DimLineOrientation
 
-        :return: enum cat_dim_orientation
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_dim_line.DimLineOrientation
 
     @dim_line_orientation.setter
-    def dim_line_orientation(self, value):
+    def dim_line_orientation(self, value: int):
         """
-        :param enum cat_dim_orientation value:
+        :param int value:
         """
 
         self.drawing_dim_line.DimLineOrientation = value
@@ -134,21 +137,22 @@ class DrawingDimLine(AnyObject):
                 | 
                 |          odimLineRef = MyDimLine.DimLineReference
 
-        :return: enum cat_dim_reference
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_dim_line.DimLineReference
 
     @dim_line_reference.setter
-    def dim_line_reference(self, value):
+    def dim_line_reference(self, value: int):
         """
-        :param enum cat_dim_reference value:
+        :param int value:
         """
 
         self.drawing_dim_line.DimLineReference = value
 
     @property
-    def dim_line_rep(self):
+    def dim_line_rep(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -162,13 +166,14 @@ class DrawingDimLine(AnyObject):
                 | 
                 |          odimLineRep = MyDimLine.DimLineRep
 
-        :return: enum cat_dim_line_rep
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_dim_line.DimLineRep
 
     @property
-    def dim_line_type(self):
+    def dim_line_type(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -183,12 +188,13 @@ class DrawingDimLine(AnyObject):
                 |          odimLineType = MyDimLine.DimLineType
 
         :return: int
+        :rtype: int
         """
 
         return self.drawing_dim_line.DimLineType
 
     @property
-    def thickness(self):
+    def thickness(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -203,19 +209,20 @@ class DrawingDimLine(AnyObject):
                 |          oThickDimLine = MyDimLine.Thickness
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_dim_line.Thickness
 
     @thickness.setter
-    def thickness(self, value):
+    def thickness(self, value: float):
         """
         :param float value:
         """
 
         self.drawing_dim_line.Thickness = value
 
-    def get_dim_line_dir(self, o_dir_x, o_dir_y):
+    def get_dim_line_dir(self, o_dir_x: float, o_dir_y: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -239,10 +246,11 @@ class DrawingDimLine(AnyObject):
         :param float o_dir_x:
         :param float o_dir_y:
         :return: None
+        :rtype: None
         """
         return self.drawing_dim_line.GetDimLineDir(o_dir_x, o_dir_y)
 
-    def get_geom_info(self, o_geom_infos):
+    def get_geom_info(self, o_geom_infos: tuple) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -262,6 +270,7 @@ class DrawingDimLine(AnyObject):
 
         :param tuple o_geom_infos:
         :return: None
+        :rtype: None
         """
         return self.drawing_dim_line.GetGeomInfo(o_geom_infos)
         # # # # Autogenerated comment: 
@@ -280,7 +289,7 @@ class DrawingDimLine(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_symb_color(self, index):
+    def get_symb_color(self, index: int) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -301,10 +310,11 @@ class DrawingDimLine(AnyObject):
 
         :param int index:
         :return: int
+        :rtype: int
         """
         return self.drawing_dim_line.GetSymbColor(index)
 
-    def get_symb_thickness(self, index):
+    def get_symb_thickness(self, index: int) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -326,10 +336,11 @@ class DrawingDimLine(AnyObject):
 
         :param int index:
         :return: float
+        :rtype: float
         """
         return self.drawing_dim_line.GetSymbThickness(index)
 
-    def get_symb_type(self, index):
+    def get_symb_type(self, index: int) -> enum cat_dim_symbols:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -350,10 +361,11 @@ class DrawingDimLine(AnyObject):
 
         :param int index:
         :return: enum cat_dim_symbols
+        :rtype: enum cat_dim_symbols
         """
         return self.drawing_dim_line.GetSymbType(index)
 
-    def set_symb_color(self, index, i_color_symb):
+    def set_symb_color(self, index: int, i_color_symb: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -376,10 +388,11 @@ class DrawingDimLine(AnyObject):
         :param int index:
         :param int i_color_symb:
         :return: None
+        :rtype: None
         """
         return self.drawing_dim_line.SetSymbColor(index, i_color_symb)
 
-    def set_symb_thickness(self, index, i_thick_symb):
+    def set_symb_thickness(self, index: int, i_thick_symb: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -403,10 +416,11 @@ class DrawingDimLine(AnyObject):
         :param int index:
         :param float i_thick_symb:
         :return: None
+        :rtype: None
         """
         return self.drawing_dim_line.SetSymbThickness(index, i_thick_symb)
 
-    def set_symb_type(self, index, i_symb_type):
+    def set_symb_type(self, index: int, i_symb_type: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -427,8 +441,9 @@ class DrawingDimLine(AnyObject):
                 |              MyDimLine.SetSymbType(Index, iSymbType)
 
         :param int index:
-        :param CatDimSymbols i_symb_type:
+        :param int i_symb_type:
         :return: None
+        :rtype: None
         """
         return self.drawing_dim_line.SetSymbType(index, i_symb_type.com_object)
         # # # # Autogenerated comment: 
