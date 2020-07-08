@@ -11,6 +11,7 @@
 
 from pycatia.drafting_interfaces.drawing_sheet import DrawingSheet
 from pycatia.system_interfaces.collection import Collection
+from pycatia.types import cat_variant
 
 
 class DrawingSheets(Collection):
@@ -133,7 +134,7 @@ class DrawingSheets(Collection):
         """
         return DrawingSheet(self.drawing_sheets.AddDetail(i_drawing_sheet_name))
 
-    def item(self, i_index: CATVariant) -> DrawingSheet:
+    def item(self, i_index: cat_variant) -> DrawingSheet:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -169,13 +170,13 @@ class DrawingSheets(Collection):
                 |          Dim ThatDrawingSheet As DrawingSheet
                 |          Set ThatDrawingSheet = CATIA.ActiveDocument.Sheets.Item("MySheet")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: DrawingSheet
         :rtype: DrawingSheet
         """
-        return DrawingSheet(self.drawing_sheets.Item(i_index.com_object))
+        return DrawingSheet(self.drawing_sheets.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -205,7 +206,7 @@ class DrawingSheets(Collection):
                 |         CATIA.ActiveDocument.DrawingSheets.Remove(2)
                 |         CATIA.ActiveDocument.DrawingSheets.Remove("SheetToBeRemoved")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: None
         """
         return self.drawing_sheets.Remove(i_index)

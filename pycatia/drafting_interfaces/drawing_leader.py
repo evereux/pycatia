@@ -149,7 +149,7 @@ class DrawingLeader(AnyObject):
         self.drawing_leader.HeadTarget = value
 
     @property
-    def leaders(self) -> DrawingLeaders:
+    def leaders(self) -> 'DrawingLeaders':
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -213,7 +213,8 @@ class DrawingLeader(AnyObject):
 
         return self.drawing_leader.NbPoint
 
-    def add_interruption(self, i_first_point_x: float, i_first_point_y: float, i_second_point_x: float, i_second_point_y: float) -> None:
+    def add_interruption(self, i_first_point_x: float, i_first_point_y: float, i_second_point_x: float,
+                         i_second_point_y: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
