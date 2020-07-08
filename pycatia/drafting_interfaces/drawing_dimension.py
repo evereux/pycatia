@@ -40,7 +40,7 @@ class DrawingDimension(AnyObject):
         self.drawing_dimension = com_object
 
     @property
-    def cumulate_mode(self):
+    def cumulate_mode(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -55,12 +55,13 @@ class DrawingDimension(AnyObject):
                 |          oCumulateMode = MyDimension.CumulateMode
 
         :return: bool
+        :rtype: bool
         """
 
         return self.drawing_dimension.CumulateMode
 
     @property
-    def dim_status(self):
+    def dim_status(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -74,13 +75,14 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oIsStatus = MyDimension.DimStatus
 
-        :return: enum cat_dim_analyse
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_dimension.DimStatus
 
     @property
-    def dim_type(self):
+    def dim_type(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -94,13 +96,14 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oTypeDim = MyDimension.DimType
 
-        :return: enum cat_dim_type
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_dimension.DimType
 
     @property
-    def dual_value(self):
+    def dual_value(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -114,21 +117,22 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oDualValue = MyDimension.DualValue
 
-        :return: enum cat_dim_dual_display
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_dimension.DualValue
 
     @dual_value.setter
-    def dual_value(self, value):
+    def dual_value(self, value: int):
         """
-        :param enum cat_dim_dual_display value:
+        :param int value:
         """
 
         self.drawing_dimension.DualValue = value
 
     @property
-    def forshortened(self):
+    def forshortened(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -143,12 +147,13 @@ class DrawingDimension(AnyObject):
                 |          oForsh = MyDimension.Forshortened
 
         :return: bool
+        :rtype: bool
         """
 
         return self.drawing_dimension.Forshortened
 
     @forshortened.setter
-    def forshortened(self, value):
+    def forshortened(self, value: bool):
         """
         :param bool value:
         """
@@ -156,7 +161,7 @@ class DrawingDimension(AnyObject):
         self.drawing_dimension.Forshortened = value
 
     @property
-    def half_dim_mode(self):
+    def half_dim_mode(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -171,12 +176,13 @@ class DrawingDimension(AnyObject):
                 |          oHalfDimMode = MyDimension.HalfDimMode
 
         :return: bool
+        :rtype: bool
         """
 
         return self.drawing_dimension.HalfDimMode
 
     @half_dim_mode.setter
-    def half_dim_mode(self, value):
+    def half_dim_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -184,7 +190,7 @@ class DrawingDimension(AnyObject):
         self.drawing_dimension.HalfDimMode = value
 
     @property
-    def is_clipped(self):
+    def is_clipped(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -198,12 +204,13 @@ class DrawingDimension(AnyObject):
                 |      myDimensionClippingStatus=MyDimension.IsClipped
 
         :return: bool
+        :rtype: bool
         """
 
         return self.drawing_dimension.IsClipped
 
     @property
-    def nb_ext_line(self):
+    def nb_ext_line(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -218,12 +225,13 @@ class DrawingDimension(AnyObject):
                 |          oNbExtline = MyDimension.NbExtLine
 
         :return: int
+        :rtype: int
         """
 
         return self.drawing_dimension.NbExtLine
 
     @property
-    def nb_symb(self):
+    def nb_symb(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -238,12 +246,13 @@ class DrawingDimension(AnyObject):
                 |          oNbSymb = MyDimension.NbSymb
 
         :return: int
+        :rtype: int
         """
 
         return self.drawing_dimension.NbSymb
 
     @property
-    def parameters(self):
+    def parameters(self) -> Parameters:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -267,12 +276,13 @@ class DrawingDimension(AnyObject):
                 |          Set DimValueParameter = DimensionParameters.Item("Measured length")
 
         :return: Parameters
+        :rtype: Parameters
         """
 
         return Parameters(self.drawing_dimension.Parameters)
 
     @property
-    def symbols_side(self):
+    def symbols_side(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -289,12 +299,13 @@ class DrawingDimension(AnyObject):
                 |          oSymbSide = MyDimension.SymbolsSide
 
         :return: int
+        :rtype: int
         """
 
         return self.drawing_dimension.SymbolsSide
 
     @symbols_side.setter
-    def symbols_side(self, value):
+    def symbols_side(self, value: int):
         """
         :param int value:
         """
@@ -302,7 +313,7 @@ class DrawingDimension(AnyObject):
         self.drawing_dimension.SymbolsSide = value
 
     @property
-    def true_dim_mode(self):
+    def true_dim_mode(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -322,7 +333,7 @@ class DrawingDimension(AnyObject):
         return self.drawing_dimension.TrueDimMode
 
     @property
-    def value_angle(self):
+    def value_angle(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -337,12 +348,13 @@ class DrawingDimension(AnyObject):
                 |          oValueAng = MyDimension.ValueAngle
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_dimension.ValueAngle
 
     @value_angle.setter
-    def value_angle(self, value):
+    def value_angle(self, value: float):
         """
         :param float value:
         """
@@ -350,7 +362,7 @@ class DrawingDimension(AnyObject):
         self.drawing_dimension.ValueAngle = value
 
     @property
-    def value_auto_mode(self):
+    def value_auto_mode(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -365,12 +377,13 @@ class DrawingDimension(AnyObject):
                 |          oValueAutoMode = MyDimension.ValueAutoMode
 
         :return: int
+        :rtype: int
         """
 
         return self.drawing_dimension.ValueAutoMode
 
     @value_auto_mode.setter
-    def value_auto_mode(self, value):
+    def value_auto_mode(self, value: int):
         """
         :param int value:
         """
@@ -378,7 +391,7 @@ class DrawingDimension(AnyObject):
         self.drawing_dimension.ValueAutoMode = value
 
     @property
-    def value_display(self):
+    def value_display(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -393,12 +406,13 @@ class DrawingDimension(AnyObject):
                 |          oValueDisplay = MyDimension.ValueDisplay
 
         :return: int
+        :rtype: int
         """
 
         return self.drawing_dimension.ValueDisplay
 
     @value_display.setter
-    def value_display(self, value):
+    def value_display(self, value: int):
         """
         :param int value:
         """
@@ -406,7 +420,7 @@ class DrawingDimension(AnyObject):
         self.drawing_dimension.ValueDisplay = value
 
     @property
-    def value_frame(self):
+    def value_frame(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -420,21 +434,22 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oValueFrame = MyDimension.ValueFrame
 
-        :return: enum cat_dim_frame
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_dimension.ValueFrame
 
     @value_frame.setter
-    def value_frame(self, value):
+    def value_frame(self, value: int):
         """
-        :param enum cat_dim_frame value:
+        :param int value:
         """
 
         self.drawing_dimension.ValueFrame = value
 
     @property
-    def value_in_out(self):
+    def value_in_out(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -449,12 +464,13 @@ class DrawingDimension(AnyObject):
                 |          oInOut = MyDimension.ValueInOut
 
         :return: int
+        :rtype: int
         """
 
         return self.drawing_dimension.ValueInOut
 
     @value_in_out.setter
-    def value_in_out(self, value):
+    def value_in_out(self, value: int):
         """
         :param int value:
         """
@@ -462,7 +478,7 @@ class DrawingDimension(AnyObject):
         self.drawing_dimension.ValueInOut = value
 
     @property
-    def value_orientation(self):
+    def value_orientation(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -476,21 +492,22 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oValueOrient = MyDimension.ValueOrientation
 
-        :return: enum cat_dim_orientation
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_dimension.ValueOrientation
 
     @value_orientation.setter
-    def value_orientation(self, value):
+    def value_orientation(self, value: int):
         """
-        :param enum cat_dim_orientation value:
+        :param int value:
         """
 
         self.drawing_dimension.ValueOrientation = value
 
     @property
-    def value_reference(self):
+    def value_reference(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -504,20 +521,21 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oValueRef = MyDimension.ValueReference
 
-        :return: enum cat_dim_reference
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_dimension.ValueReference
 
     @value_reference.setter
-    def value_reference(self, value):
+    def value_reference(self, value: int):
         """
-        :param enum cat_dim_reference value:
+        :param int value:
         """
 
         self.drawing_dimension.ValueReference = value
 
-    def get_boundary_box(self, o_values):
+    def get_boundary_box(self, o_values: tuple) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -538,6 +556,7 @@ class DrawingDimension(AnyObject):
 
         :param tuple o_values:
         :return: None
+        :rtype: None
         """
         return self.drawing_dimension.GetBoundaryBox(o_values)
         # # # # Autogenerated comment: 
@@ -556,7 +575,7 @@ class DrawingDimension(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_clip(self, x, y, o_kept_side):
+    def get_clip(self, x: float, y: float, o_kept_side: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -589,10 +608,11 @@ class DrawingDimension(AnyObject):
         :param float y:
         :param int o_kept_side:
         :return: None
+        :rtype: None
         """
         return self.drawing_dimension.GetClip(x, y, o_kept_side)
 
-    def get_dim_ext_line(self):
+    def get_dim_ext_line(self) -> DrawingDimExtLine:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -613,10 +633,11 @@ class DrawingDimension(AnyObject):
                 |         DrawingDimLine
 
         :return: DrawingDimExtLine
+        :rtype: DrawingDimExtLine
         """
         return DrawingDimExtLine(self.drawing_dimension.GetDimExtLine())
 
-    def get_dim_line(self):
+    def get_dim_line(self) -> DrawingDimLine:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -637,10 +658,11 @@ class DrawingDimension(AnyObject):
                 |         DrawingDimLine
 
         :return: DrawingDimLine
+        :rtype: DrawingDimLine
         """
         return DrawingDimLine(self.drawing_dimension.GetDimLine())
 
-    def get_tolerances(self, o_tol_type, o_tol_name, o_up_tol, o_low_tol, od_up_tol, od_low_tol, o_display_mode):
+    def get_tolerances(self, o_tol_type: int, o_tol_name: str, o_up_tol: str, o_low_tol: str, od_up_tol: float, od_low_tol: float, o_display_mode: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -685,6 +707,7 @@ class DrawingDimension(AnyObject):
         :param float od_low_tol:
         :param int o_display_mode:
         :return: None
+        :rtype: None
         """
         return self.drawing_dimension.GetTolerances(
             o_tol_type,
@@ -696,7 +719,7 @@ class DrawingDimension(AnyObject):
             o_display_mode
         )
 
-    def get_value(self):
+    def get_value(self) -> DrawingDimValue:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -716,10 +739,11 @@ class DrawingDimension(AnyObject):
                 |         DrawingDimValue
 
         :return: DrawingDimValue
+        :rtype: DrawingDimValue
         """
         return DrawingDimValue(self.drawing_dimension.GetValue())
 
-    def move_value(self, x, y, sub_part, dim_angle_behavior):
+    def move_value(self, x: float, y: float, sub_part: int, dim_angle_behavior: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -764,10 +788,11 @@ class DrawingDimension(AnyObject):
         :param int sub_part:
         :param int dim_angle_behavior:
         :return: None
+        :rtype: None
         """
         return self.drawing_dimension.MoveValue(x, y, sub_part, dim_angle_behavior)
 
-    def restore_value_position(self):
+    def restore_value_position(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -781,10 +806,11 @@ class DrawingDimension(AnyObject):
                 |      MyDimension.RestoreValuePosition()
 
         :return: None
+        :rtype: None
         """
         return self.drawing_dimension.RestoreValuePosition()
 
-    def set_clip(self, x, y, i_kept_side):
+    def set_clip(self, x: float, y: float, i_kept_side: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -816,10 +842,11 @@ class DrawingDimension(AnyObject):
         :param float y:
         :param int i_kept_side:
         :return: None
+        :rtype: None
         """
         return self.drawing_dimension.SetClip(x, y, i_kept_side)
 
-    def set_tolerances(self, i_tol_type, itol_name, i_up_tol, i_low_tol, id_up_tol, id_low_tol, display_mode):
+    def set_tolerances(self, i_tol_type: int, itol_name: str, i_up_tol: str, i_low_tol: str, id_up_tol: float, id_low_tol: float, display_mode: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -864,6 +891,7 @@ class DrawingDimension(AnyObject):
         :param float id_low_tol:
         :param int display_mode:
         :return: None
+        :rtype: None
         """
         return self.drawing_dimension.SetTolerances(
             i_tol_type,
@@ -875,7 +903,7 @@ class DrawingDimension(AnyObject):
             display_mode
         )
 
-    def unclip(self):
+    def unclip(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -889,6 +917,7 @@ class DrawingDimension(AnyObject):
                 |        MyDimension.Unclip
 
         :return: None
+        :rtype: None
         """
         return self.drawing_dimension.Unclip()
 

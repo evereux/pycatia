@@ -34,7 +34,7 @@ class DrawingWeldings(Collection):
         super().__init__(com_object, child_object=DrawingWelding)
         self.drawing_weldings = com_object
 
-    def add(self, i_symbol, i_position_x, i_position_y):
+    def add(self, i_symbol: int, i_position_x: float, i_position_y: float) -> DrawingWelding:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -69,14 +69,15 @@ class DrawingWeldings(Collection):
                 |      Set MyWelding = 
                 |         MyView.Weldings.Add(catSquareWelding, 0., 0.)
 
-        :param CatWeldingSymbol i_symbol:
+        :param int i_symbol:
         :param float i_position_x:
         :param float i_position_y:
         :return: DrawingWelding
+        :rtype: DrawingWelding
         """
         return DrawingWelding(self.drawing_weldings.Add(i_symbol.com_object, i_position_x, i_position_y))
 
-    def item(self, i_index):
+    def item(self, i_index: int) -> DrawingWelding:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -109,10 +110,11 @@ class DrawingWeldings(Collection):
 
         :param int i_index:
         :return: DrawingWelding
+        :rtype: DrawingWelding
         """
         return DrawingWelding(self.drawing_weldings.Item(i_index))
 
-    def remove(self, i_index):
+    def remove(self, i_index: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -141,6 +143,7 @@ class DrawingWeldings(Collection):
 
         :param int i_index:
         :return: None
+        :rtype: None
         """
         return self.drawing_weldings.Remove(i_index)
 
