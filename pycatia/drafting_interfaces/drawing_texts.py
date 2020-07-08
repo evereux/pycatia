@@ -31,11 +31,11 @@ class DrawingTexts(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=DrawingText)
         self.drawing_texts = com_object
         self.child_object = DrawingText
 
-    def add(self, i_drawing_text, i_position_x, i_position_y):
+    def add(self, i_drawing_text: str, i_position_x: float, i_position_y: float) -> DrawingText:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -74,10 +74,11 @@ class DrawingTexts(Collection):
         :param float i_position_x:
         :param float i_position_y:
         :return: DrawingText
+        :rtype: DrawingText
         """
         return DrawingText(self.drawing_texts.Add(i_drawing_text, i_position_x, i_position_y))
 
-    def item(self, i_index):
+    def item(self, i_index: int) -> DrawingText:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -108,10 +109,11 @@ class DrawingTexts(Collection):
 
         :param int i_index:
         :return: DrawingText
+        :rtype: DrawingText
         """
         return DrawingText(self.drawing_texts.Item(i_index))
 
-    def remove(self, i_index):
+    def remove(self, i_index: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -138,6 +140,7 @@ class DrawingTexts(Collection):
 
         :param int i_index:
         :return: None
+        :rtype: None
         """
         return self.drawing_texts.Remove(i_index)
 

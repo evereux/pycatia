@@ -34,7 +34,7 @@ class DrawingArrows(Collection):
         super().__init__(com_object, child_object=DrawingArrow)
         self.drawing_arrows = com_object
 
-    def add(self, i_head_point_x, i_head_point_y, i_tail_point_x, i_tail_point_y):
+    def add(self, i_head_point_x: float, i_head_point_y: float, i_tail_point_x: float, i_tail_point_y: float) -> DrawingArrow:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -73,10 +73,11 @@ class DrawingArrows(Collection):
         :param float i_tail_point_x:
         :param float i_tail_point_y:
         :return: DrawingArrow
+        :rtype: DrawingArrow
         """
         return DrawingArrow(self.drawing_arrows.Add(i_head_point_x, i_head_point_y, i_tail_point_x, i_tail_point_y))
 
-    def item(self, i_index):
+    def item(self, i_index: int) -> DrawingArrow:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -107,10 +108,11 @@ class DrawingArrows(Collection):
 
         :param int i_index:
         :return: DrawingArrow
+        :rtype: DrawingArrow
         """
         return DrawingArrow(self.drawing_arrows.Item(i_index))
 
-    def remove(self, i_index):
+    def remove(self, i_index: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -137,6 +139,7 @@ class DrawingArrows(Collection):
 
         :param int i_index:
         :return: None
+        :rtype: None
         """
         return self.drawing_arrows.Remove(i_index)
 

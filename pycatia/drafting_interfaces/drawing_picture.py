@@ -33,7 +33,7 @@ class DrawingPicture(AnyObject):
         self.drawing_picture = com_object
 
     @property
-    def crop_bottom(self):
+    def crop_bottom(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -50,12 +50,13 @@ class DrawingPicture(AnyObject):
                 |          MyPicture.cropBottom = 10.
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_picture.cropBottom
 
     @crop_bottom.setter
-    def crop_bottom(self, value):
+    def crop_bottom(self, value: float):
         """
         :param float value:
         """
@@ -63,7 +64,7 @@ class DrawingPicture(AnyObject):
         self.drawing_picture.cropBottom = value
 
     @property
-    def crop_left(self):
+    def crop_left(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -80,12 +81,13 @@ class DrawingPicture(AnyObject):
                 |          MyPicture.cropLeft = 10.
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_picture.cropLeft
 
     @crop_left.setter
-    def crop_left(self, value):
+    def crop_left(self, value: float):
         """
         :param float value:
         """
@@ -93,7 +95,7 @@ class DrawingPicture(AnyObject):
         self.drawing_picture.cropLeft = value
 
     @property
-    def crop_right(self):
+    def crop_right(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -110,12 +112,13 @@ class DrawingPicture(AnyObject):
                 |          MyPicture.cropRight = 10.
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_picture.cropRight
 
     @crop_right.setter
-    def crop_right(self, value):
+    def crop_right(self, value: float):
         """
         :param float value:
         """
@@ -123,7 +126,7 @@ class DrawingPicture(AnyObject):
         self.drawing_picture.cropRight = value
 
     @property
-    def crop_top(self):
+    def crop_top(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -140,12 +143,13 @@ class DrawingPicture(AnyObject):
                 |          MyPicture.cropTop = 10.
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_picture.cropTop
 
     @crop_top.setter
-    def crop_top(self, value):
+    def crop_top(self, value: float):
         """
         :param float value:
         """
@@ -153,7 +157,7 @@ class DrawingPicture(AnyObject):
         self.drawing_picture.cropTop = value
 
     @property
-    def format(self):
+    def format(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -181,21 +185,22 @@ class DrawingPicture(AnyObject):
                 |     See also:
                 |         CatPictureFormat
 
-        :return: enum cat_picture_format
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_picture.format
 
     @format.setter
-    def format(self, value):
+    def format(self, value: int):
         """
-        :param enum cat_picture_format value:
+        :param int value:
         """
 
         self.drawing_picture.format = value
 
     @property
-    def height(self):
+    def height(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -211,12 +216,13 @@ class DrawingPicture(AnyObject):
                 |          Height = MyPicture.height
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_picture.height
 
     @height.setter
-    def height(self, value):
+    def height(self, value: float):
         """
         :param float value:
         """
@@ -224,7 +230,7 @@ class DrawingPicture(AnyObject):
         self.drawing_picture.height = value
 
     @property
-    def ratio_lock(self):
+    def ratio_lock(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -243,12 +249,13 @@ class DrawingPicture(AnyObject):
                 |          MyPicture.ratioLock = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.drawing_picture.ratioLock
 
     @ratio_lock.setter
-    def ratio_lock(self, value):
+    def ratio_lock(self, value: bool):
         """
         :param bool value:
         """
@@ -256,7 +263,7 @@ class DrawingPicture(AnyObject):
         self.drawing_picture.ratioLock = value
 
     @property
-    def width(self):
+    def width(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -272,12 +279,13 @@ class DrawingPicture(AnyObject):
                 |          Width = MyPicture.width
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_picture.width
 
     @width.setter
-    def width(self, value):
+    def width(self, value: float):
         """
         :param float value:
         """
@@ -285,7 +293,7 @@ class DrawingPicture(AnyObject):
         self.drawing_picture.width = value
 
     @property
-    def x(self):
+    def x(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -304,12 +312,13 @@ class DrawingPicture(AnyObject):
                 |          MyPicture.x =  NewXCoordinate
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_picture.x
 
     @x.setter
-    def x(self, value):
+    def x(self, value: float):
         """
         :param float value:
         """
@@ -317,7 +326,7 @@ class DrawingPicture(AnyObject):
         self.drawing_picture.x = value
 
     @property
-    def y(self):
+    def y(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -336,19 +345,20 @@ class DrawingPicture(AnyObject):
                 |          MyPicture.y =  NewYCoordinate
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_picture.y
 
     @y.setter
-    def y(self, value):
+    def y(self, value: float):
         """
         :param float value:
         """
 
         self.drawing_picture.y = value
 
-    def get_original_height(self):
+    def get_original_height(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -364,10 +374,11 @@ class DrawingPicture(AnyObject):
                 |          Height = MyPicture.GetOriginalHeight()
 
         :return: float
+        :rtype: float
         """
         return self.drawing_picture.GetOriginalHeight()
 
-    def get_original_width(self):
+    def get_original_width(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -383,6 +394,7 @@ class DrawingPicture(AnyObject):
                 |          Width = MyPicture.GetOriginalWidth()
 
         :return: float
+        :rtype: float
         """
         return self.drawing_picture.GetOriginalWidth()
 
