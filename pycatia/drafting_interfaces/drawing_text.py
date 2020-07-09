@@ -431,7 +431,7 @@ class DrawingText(AnyObject):
         """
         return self.drawing_text.GetFontSize(i_first, inb_character)
 
-    def get_modifiable_in2_d_component_instances(self) -> bool:
+    def get_modifiable_in_2d_component_instances(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -600,7 +600,7 @@ class DrawingText(AnyObject):
         """
         return self.drawing_text.SetFontSize(i_first, inb_character, i_font_size)
 
-    def set_modifiable_in2_d_component_instances(self) -> None:
+    def set_modifiable_in_2d_component_instances(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
