@@ -3559,7 +3559,12 @@ class HybridShapeFactory(Factory):
         :return: HybridShapePlaneOffset
         """
         return HybridShapePlaneOffset(
-            self.hybrid_shape_factory.AddNewPlaneOffset(i_plane.com_object, i_offset, i_orientation))
+            self.hybrid_shape_factory.AddNewPlaneOffset(
+                i_plane.com_object,
+                i_offset,
+                i_orientation
+            )
+        )
 
     def add_new_plane_offset_pt(self, i_plane, i_pt):
         """
