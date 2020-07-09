@@ -16,7 +16,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeCylinder(HybridShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -103,12 +102,12 @@ class HybridShapeCylinder(HybridShape):
         return HybridShapeDirection(self.hybrid_shape_cylinder.Direction)
 
     @direction.setter
-    def direction(self, value):
+    def direction(self, direction):
         """
-        :param HybridShapeDirection value:
+        :param HybridShapeDirection direction:
         """
 
-        self.hybrid_shape_cylinder.Direction = value
+        self.hybrid_shape_cylinder.Direction = direction.com_object
 
     @property
     def length1(self):
@@ -276,4 +275,4 @@ class HybridShapeCylinder(HybridShape):
         return self.hybrid_shape_cylinder.InvertOrientation()
 
     def __repr__(self):
-        return f'HybridShapeCylinder(name="{ self.name }")'
+        return f'HybridShapeCylinder(name="{self.name}")'
