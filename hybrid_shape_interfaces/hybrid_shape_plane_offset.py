@@ -15,7 +15,6 @@ from pycatia.knowledge_interfaces.length import Length
 
 
 class HybridShapePlaneOffset(Plane):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -80,7 +79,7 @@ class HybridShapePlaneOffset(Plane):
         self.hybrid_shape_plane_offset.Orientation = value
 
     @property
-    def plane(self):
+    def plane_reference(self):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -94,13 +93,13 @@ class HybridShapePlaneOffset(Plane):
 
         return Reference(self.hybrid_shape_plane_offset.Plane)
 
-    @plane.setter
-    def plane(self, value):
+    @plane_reference.setter
+    def plane_reference(self, reference):
         """
-        :param Reference value:
+        :param Reference(Plane) reference:
         """
 
-        self.hybrid_shape_plane_offset.Plane = value
+        self.hybrid_shape_plane_offset.Plane = reference.com_object
 
     def __repr__(self):
-        return f'HybridShapePlaneOffset(name="{ self.name }")'
+        return f'HybridShapePlaneOffset(name="{self.name}")'
