@@ -9,6 +9,9 @@
         
 """
 
+from pathlib import Path
+
+from pycatia.exception_handling.exceptions import CATIAApplicationException
 from pycatia.knowledge_interfaces.check import Check
 from pycatia.knowledge_interfaces.design_table import DesignTable
 from pycatia.knowledge_interfaces.formula import Formula
@@ -149,7 +152,7 @@ class Relations(Collection):
         """
         return Check(self.relations.CreateCheck(i_name, i_comment, i_check_body))
 
-    def create_design_table(self, i_name, i_comment, i_copy_mode, i_sheet_path):
+    def create_design_table(self, i_name: str, i_comment: str, i_copy_mode: bool, i_sheet_path: Path):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -193,9 +196,13 @@ class Relations(Collection):
         :param str i_name:
         :param str i_comment:
         :param bool i_copy_mode:
-        :param str i_sheet_path:
+        :param Path i_sheet_path:
         :return: DesignTable
+        :rtype: DesignTable
         """
+        if not i_sheet_path.exists():
+            raise CATIAApplicationException(f'Could not find design table "{i_sheet_path}".')
+
         return DesignTable(self.relations.CreateDesignTable(i_name, i_comment, i_copy_mode, i_sheet_path))
 
     def create_formula(self, i_name, i_comment, i_output_parameter, i_formula_body):
