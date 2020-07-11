@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class DraftingSettingAtt(SettingController):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -471,7 +470,7 @@ class DraftingSettingAtt(SettingController):
         """
         return self.drafting_setting_att.GetPreventBackgroundAccessInfo(io_admin_level, io_locked)
 
-    def get_prevent_dim_driving3_d_cstr_info(self, io_admin_level: str, io_locked: str) -> bool:
+    def get_prevent_dim_driving_3d_cstr_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -964,7 +963,7 @@ class DraftingSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_prevent_dim_driving3_d_cstr_lock(self, i_locked: bool) -> None:
+    def set_prevent_dim_driving_3d_cstr_lock(self, i_locked: bool) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1325,4 +1324,4 @@ class DraftingSettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'DraftingSettingAtt(name="{ self.name }")'
+        return f'DraftingSettingAtt(name="{self.name}")'

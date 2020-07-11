@@ -1468,8 +1468,13 @@ class HybridShapeFactory(Factory):
         :return: HybridShapeCylinder
         """
         return HybridShapeCylinder(
-            self.hybrid_shape_factory.AddNewCylinder(i_center.com_object, i_radius, i_first_length, i_second_length,
-                                                     i_direction.com_object))
+            self.hybrid_shape_factory.AddNewCylinder(
+                i_center.com_object,
+                i_radius,
+                i_first_length,
+                i_second_length,
+                i_direction.com_object)
+        )
 
     def add_new_datums(self, i_elem):
         """
@@ -3559,7 +3564,12 @@ class HybridShapeFactory(Factory):
         :return: HybridShapePlaneOffset
         """
         return HybridShapePlaneOffset(
-            self.hybrid_shape_factory.AddNewPlaneOffset(i_plane.com_object, i_offset, i_orientation))
+            self.hybrid_shape_factory.AddNewPlaneOffset(
+                i_plane.com_object,
+                i_offset,
+                i_orientation
+            )
+        )
 
     def add_new_plane_offset_pt(self, i_plane, i_pt):
         """

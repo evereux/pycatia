@@ -3,16 +3,12 @@
 import os
 from pathlib import Path
 
-cat_product = Path(os.getcwd(), r"cat_files/CF_TopLevelAssy.CATProduct")
+from tests.create_source_parts import get_cat_part_measurable
+from tests.create_source_products import get_cat_product_top
+from tests.create_source_drawing import get_cat_drawing
 
-cat_part_1 = Path(os.getcwd(), r"cat_files/CF_Part_1.CATPart")
-cat_part_2 = Path(os.getcwd(), r"cat_files/CF_Part_2.CATPart")
-cat_part_3 = Path(os.getcwd(), r"cat_files/CF_Part_3.CATPart")
-cat_part_blank = Path(os.getcwd(), r"cat_files/CF_Part_Blank.CATPart")
-cat_part_temp = Path(os.getcwd(), r"cat_files/CF_Part_temp.CATPart")
-cat_part_measurable = Path(os.getcwd(), r"cat_files/CF_catia_measurable_part.CATPart")
-cat_part_not_updated = Path(os.getcwd(), r"cat_files/CF_part_not_updated.CATPart")
+design_table_1 = Path(os.getcwd(), r"tests/cat_files/design_table_1.txt")
 
-cat_drawing = Path(os.getcwd(), r"cat_files/CF_Drawing1.CATDrawing")
-
-design_table_1 = Path(os.getcwd(), r"cat_files/design_table_1.txt")
+cat_drawing = get_cat_drawing()
+cat_part_measurable = get_cat_part_measurable()
+cat_product = get_cat_product_top()
