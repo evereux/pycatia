@@ -29,10 +29,10 @@ class FreeParameters(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object, child_object=FreeParameter)
+        super().__init__(com_object)
         self.free_parameters = com_object
 
-    def add_free_parameter(self, parameter):
+    def add_free_parameter(self, parameter: RealParam) -> FreeParameter:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -43,10 +43,11 @@ class FreeParameters(Collection):
 
         :param RealParam parameter:
         :return: FreeParameter
+        :rtype: FreeParameter
         """
         return FreeParameter(self.free_parameters.AddFreeParameter(parameter.com_object))
 
-    def item(self, i_index):
+    def item(self, i_index: CATVariant) -> FreeParameter:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -77,10 +78,11 @@ class FreeParameters(Collection):
 
         :param CATVariant i_index:
         :return: FreeParameter
+        :rtype: FreeParameter
         """
         return FreeParameter(self.free_parameters.Item(i_index))
 
-    def remove_free_parameter(self, i_index):
+    def remove_free_parameter(self, i_index: CATVariant) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))

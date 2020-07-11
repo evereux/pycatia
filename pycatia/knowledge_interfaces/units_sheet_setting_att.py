@@ -36,7 +36,7 @@ class UnitsSheetSettingAtt(SettingController):
         self.units_sheet_setting_att = com_object
 
     @property
-    def display_trailing_zeros(self):
+    def display_trailing_zeros(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -54,21 +54,22 @@ class UnitsSheetSettingAtt(SettingController):
                 |             0 : to not display trailing zeros
                 |             1 : to display trailing zeros.
 
-        :return: enum
+        :return: int
+        :rtype: int
         """
 
         return self.units_sheet_setting_att.DisplayTrailingZeros
 
     @display_trailing_zeros.setter
-    def display_trailing_zeros(self, value):
+    def display_trailing_zeros(self, value: int):
         """
-        :param enum value:
+        :param int value:
         """
 
         self.units_sheet_setting_att.DisplayTrailingZeros = value
 
     @property
-    def exp_notation_values_greater(self):
+    def exp_notation_values_greater(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -85,12 +86,13 @@ class UnitsSheetSettingAtt(SettingController):
                 |             The minimum value for exponential notation values.
 
         :return: float
+        :rtype: float
         """
 
         return self.units_sheet_setting_att.ExpNotationValuesGreater
 
     @exp_notation_values_greater.setter
-    def exp_notation_values_greater(self, value):
+    def exp_notation_values_greater(self, value: float):
         """
         :param float value:
         """
@@ -98,7 +100,7 @@ class UnitsSheetSettingAtt(SettingController):
         self.units_sheet_setting_att.ExpNotationValuesGreater = value
 
     @property
-    def exp_notation_values_lower(self):
+    def exp_notation_values_lower(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -115,12 +117,13 @@ class UnitsSheetSettingAtt(SettingController):
                 |             The maximum value for exponential notation values.
 
         :return: float
+        :rtype: float
         """
 
         return self.units_sheet_setting_att.ExpNotationValuesLower
 
     @exp_notation_values_lower.setter
-    def exp_notation_values_lower(self, value):
+    def exp_notation_values_lower(self, value: float):
         """
         :param float value:
         """
@@ -128,7 +131,7 @@ class UnitsSheetSettingAtt(SettingController):
         self.units_sheet_setting_att.ExpNotationValuesLower = value
 
     @property
-    def list_of_magnitudes(self):
+    def list_of_magnitudes(self) -> tuple:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -140,12 +143,13 @@ class UnitsSheetSettingAtt(SettingController):
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :return: tuple
+        :rtype: tuple
         """
 
         return self.units_sheet_setting_att.ListOfMagnitudes
 
     @property
-    def list_of_magnitudes_size(self):
+    def list_of_magnitudes_size(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -156,12 +160,13 @@ class UnitsSheetSettingAtt(SettingController):
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :return: float
+        :rtype: float
         """
 
         return self.units_sheet_setting_att.ListOfMagnitudesSize
 
     @property
-    def same_display(self):
+    def same_display(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -179,20 +184,21 @@ class UnitsSheetSettingAtt(SettingController):
                 |             0 : to not display same display
                 |             1 : to display same display.
 
-        :return: enum
+        :return: int
+        :rtype: int
         """
 
         return self.units_sheet_setting_att.SameDisplay
 
     @same_display.setter
-    def same_display(self, value):
+    def same_display(self, value: int):
         """
-        :param enum value:
+        :param int value:
         """
 
         self.units_sheet_setting_att.SameDisplay = value
 
-    def commit_for_units(self):
+    def commit_for_units(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -204,10 +210,11 @@ class UnitsSheetSettingAtt(SettingController):
                 |         UnitsSheetSettingAtt.CommitForUnits
 
         :return: None
+        :rtype: None
         """
         return self.units_sheet_setting_att.CommitForUnits()
 
-    def get_decimal_read_only(self, i_magnitude_name, o_decimal_place_read_only):
+    def get_decimal_read_only(self, i_magnitude_name: str, o_decimal_place_read_only: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -219,10 +226,11 @@ class UnitsSheetSettingAtt(SettingController):
         :param str i_magnitude_name:
         :param float o_decimal_place_read_only:
         :return: None
+        :rtype: None
         """
         return self.units_sheet_setting_att.GetDecimalReadOnly(i_magnitude_name, o_decimal_place_read_only)
 
-    def get_decimal_read_write(self, i_magnitude_name, o_decimal_place_read_write):
+    def get_decimal_read_write(self, i_magnitude_name: str, o_decimal_place_read_write: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -234,10 +242,11 @@ class UnitsSheetSettingAtt(SettingController):
         :param str i_magnitude_name:
         :param float o_decimal_place_read_write:
         :return: None
+        :rtype: None
         """
         return self.units_sheet_setting_att.GetDecimalReadWrite(i_magnitude_name, o_decimal_place_read_write)
 
-    def get_dimensions_display_info(self, io_admin_level, io_locked):
+    def get_dimensions_display_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -251,10 +260,11 @@ class UnitsSheetSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.units_sheet_setting_att.GetDimensionsDisplayInfo(io_admin_level, io_locked)
 
-    def get_display_trailing_zeros_info(self, io_admin_level, io_locked):
+    def get_display_trailing_zeros_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -285,10 +295,11 @@ class UnitsSheetSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.units_sheet_setting_att.GetDisplayTrailingZerosInfo(io_admin_level, io_locked)
 
-    def get_exp_notation_values_greater_info(self, io_admin_level, io_locked):
+    def get_exp_notation_values_greater_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -319,10 +330,11 @@ class UnitsSheetSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.units_sheet_setting_att.GetExpNotationValuesGreaterInfo(io_admin_level, io_locked)
 
-    def get_exp_notation_values_lower_info(self, io_admin_level, io_locked):
+    def get_exp_notation_values_lower_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -353,10 +365,11 @@ class UnitsSheetSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.units_sheet_setting_att.GetExpNotationValuesLowerInfo(io_admin_level, io_locked)
 
-    def get_list_of_magnitudes_info(self, io_admin_level, io_locked):
+    def get_list_of_magnitudes_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -370,11 +383,11 @@ class UnitsSheetSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.units_sheet_setting_att.GetListOfMagnitudesInfo(io_admin_level, io_locked)
 
-    def get_magnitude_values(self, i_magnitude_name, o_unit_name, o_decimal_place_read_write,
-                             o_decimal_place_read_only):
+    def get_magnitude_values(self, i_magnitude_name: str, o_unit_name: str, o_decimal_place_read_write: float, o_decimal_place_read_only: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -392,11 +405,12 @@ class UnitsSheetSettingAtt(SettingController):
         :param float o_decimal_place_read_write:
         :param float o_decimal_place_read_only:
         :return: None
+        :rtype: None
         """
         return self.units_sheet_setting_att.GetMagnitudeValues(i_magnitude_name, o_unit_name,
                                                                o_decimal_place_read_write, o_decimal_place_read_only)
 
-    def get_same_display_info(self, io_admin_level, io_locked):
+    def get_same_display_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -427,10 +441,11 @@ class UnitsSheetSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.units_sheet_setting_att.GetSameDisplayInfo(io_admin_level, io_locked)
 
-    def reset_to_admin_values_for_units(self):
+    def reset_to_admin_values_for_units(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -442,10 +457,11 @@ class UnitsSheetSettingAtt(SettingController):
                 |         UnitsSheetSettingAtt.ResetToAdminValuesForUnits
 
         :return: None
+        :rtype: None
         """
         return self.units_sheet_setting_att.ResetToAdminValuesForUnits()
 
-    def rollback_for_units(self):
+    def rollback_for_units(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -457,10 +473,11 @@ class UnitsSheetSettingAtt(SettingController):
                 |         UnitsSheetSettingAtt.RollbackForUnits
 
         :return: None
+        :rtype: None
         """
         return self.units_sheet_setting_att.RollbackForUnits()
 
-    def save_repository_for_units(self):
+    def save_repository_for_units(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -472,10 +489,11 @@ class UnitsSheetSettingAtt(SettingController):
                 |         UnitsSheetSettingAtt.SaveRepositoryForUnits
 
         :return: None
+        :rtype: None
         """
         return self.units_sheet_setting_att.SaveRepositoryForUnits()
 
-    def set_dimensions_display_lock(self, i_locked):
+    def set_dimensions_display_lock(self, i_locked: bool) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -486,6 +504,7 @@ class UnitsSheetSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.units_sheet_setting_att.SetDimensionsDisplayLock(i_locked)
         # # # # Autogenerated comment: 
@@ -504,7 +523,7 @@ class UnitsSheetSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_display_trailing_zeros_lock(self, i_locked):
+    def set_display_trailing_zeros_lock(self, i_locked: bool) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -526,6 +545,7 @@ class UnitsSheetSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.units_sheet_setting_att.SetDisplayTrailingZerosLock(i_locked)
         # # # # Autogenerated comment: 
@@ -544,7 +564,7 @@ class UnitsSheetSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_exp_notation_values_greater_lock(self, i_locked):
+    def set_exp_notation_values_greater_lock(self, i_locked: bool) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -566,6 +586,7 @@ class UnitsSheetSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.units_sheet_setting_att.SetExpNotationValuesGreaterLock(i_locked)
         # # # # Autogenerated comment: 
@@ -584,7 +605,7 @@ class UnitsSheetSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_exp_notation_values_lower_lock(self, i_locked):
+    def set_exp_notation_values_lower_lock(self, i_locked: bool) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -606,6 +627,7 @@ class UnitsSheetSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.units_sheet_setting_att.SetExpNotationValuesLowerLock(i_locked)
         # # # # Autogenerated comment: 
@@ -624,7 +646,7 @@ class UnitsSheetSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_list_of_magnitudes_lock(self, i_locked):
+    def set_list_of_magnitudes_lock(self, i_locked: bool) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -635,6 +657,7 @@ class UnitsSheetSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.units_sheet_setting_att.SetListOfMagnitudesLock(i_locked)
         # # # # Autogenerated comment: 
@@ -653,8 +676,7 @@ class UnitsSheetSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_magnitude_values(self, i_magnitude_name, i_unit_name, i_decimal_place_read_write,
-                             i_decimal_place_read_only):
+    def set_magnitude_values(self, i_magnitude_name: str, i_unit_name: str, i_decimal_place_read_write: float, i_decimal_place_read_only: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -672,11 +694,12 @@ class UnitsSheetSettingAtt(SettingController):
         :param float i_decimal_place_read_write:
         :param float i_decimal_place_read_only:
         :return: None
+        :rtype: None
         """
         return self.units_sheet_setting_att.SetMagnitudeValues(i_magnitude_name, i_unit_name,
                                                                i_decimal_place_read_write, i_decimal_place_read_only)
 
-    def set_same_display_lock(self, i_locked):
+    def set_same_display_lock(self, i_locked: bool) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -698,6 +721,7 @@ class UnitsSheetSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.units_sheet_setting_att.SetSameDisplayLock(i_locked)
         # # # # Autogenerated comment: 

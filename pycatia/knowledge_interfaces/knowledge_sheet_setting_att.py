@@ -36,7 +36,7 @@ class KnowledgeSheetSettingAtt(SettingController):
         self.knowledge_sheet_setting_att = com_object
 
     @property
-    def design_tables_copy_data(self):
+    def design_tables_copy_data(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -54,21 +54,22 @@ class KnowledgeSheetSettingAtt(SettingController):
                 |             0 : default mode for design table : copy data into models
                 |             1 : default mode for design table : do not copy data into models.
 
-        :return: enum
+        :return: int
+        :rtype: int
         """
 
         return self.knowledge_sheet_setting_att.DesignTablesCopyData
 
     @design_tables_copy_data.setter
-    def design_tables_copy_data(self, value):
+    def design_tables_copy_data(self, value: int):
         """
-        :param enum value:
+        :param int value:
         """
 
         self.knowledge_sheet_setting_att.DesignTablesCopyData = value
 
     @property
-    def design_tables_synchronization(self):
+    def design_tables_synchronization(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -87,21 +88,22 @@ class KnowledgeSheetSettingAtt(SettingController):
                 |             1 : interactive synchronization at load for design table
                 |             2 : manual synchronization for design table.
 
-        :return: enum
+        :return: int
+        :rtype: int
         """
 
         return self.knowledge_sheet_setting_att.DesignTablesSynchronization
 
     @design_tables_synchronization.setter
-    def design_tables_synchronization(self, value):
+    def design_tables_synchronization(self, value: int):
         """
-        :param enum value:
+        :param int value:
         """
 
         self.knowledge_sheet_setting_att.DesignTablesSynchronization = value
 
     @property
-    def parameter_name_surrounded_by_the_symbol(self):
+    def parameter_name_surrounded_by_the_symbol(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -120,21 +122,22 @@ class KnowledgeSheetSettingAtt(SettingController):
                 |             0 : to see parameter name not surrounded by the symbol "'"
                 |             1 : to see parameter name surrounded by the symbol "'".
 
-        :return: enum
+        :return: int
+        :rtype: int
         """
 
         return self.knowledge_sheet_setting_att.ParameterNameSurroundedByTheSymbol
 
     @parameter_name_surrounded_by_the_symbol.setter
-    def parameter_name_surrounded_by_the_symbol(self, value):
+    def parameter_name_surrounded_by_the_symbol(self, value: int):
         """
-        :param enum value:
+        :param int value:
         """
 
         self.knowledge_sheet_setting_att.ParameterNameSurroundedByTheSymbol = value
 
     @property
-    def parameter_tree_view_with_formula(self):
+    def parameter_tree_view_with_formula(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -153,13 +156,14 @@ class KnowledgeSheetSettingAtt(SettingController):
                 |             0 : to see parameter tree view without formula
                 |             1 : to see parameter tree view with formula.
 
-        :return: enum
+        :return: int
+        :rtype: int
         """
 
         return self.knowledge_sheet_setting_att.ParameterTreeViewWithFormula
 
     @parameter_tree_view_with_formula.setter
-    def parameter_tree_view_with_formula(self, value):
+    def parameter_tree_view_with_formula(self, value: int):
         """
         :param enum value:
         """
@@ -167,7 +171,7 @@ class KnowledgeSheetSettingAtt(SettingController):
         self.knowledge_sheet_setting_att.ParameterTreeViewWithFormula = value
 
     @property
-    def parameter_tree_view_with_value(self):
+    def parameter_tree_view_with_value(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -185,21 +189,22 @@ class KnowledgeSheetSettingAtt(SettingController):
                 |             0 : to see parameter tree view without value
                 |             1 : to see parameter tree view with value.
 
-        :return: enum
+        :return: int
+        :rtype: int
         """
 
         return self.knowledge_sheet_setting_att.ParameterTreeViewWithValue
 
     @parameter_tree_view_with_value.setter
-    def parameter_tree_view_with_value(self, value):
+    def parameter_tree_view_with_value(self, value: int):
         """
-        :param enum value:
+        :param int value:
         """
 
         self.knowledge_sheet_setting_att.ParameterTreeViewWithValue = value
 
     @property
-    def relations_update_in_part_context_evaluate_during_update(self):
+    def relations_update_in_part_context_evaluate_during_update(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -219,21 +224,22 @@ class KnowledgeSheetSettingAtt(SettingController):
                 |             0 : creation of relations not evaluate during update
                 |             1 : creation of relations evaluate during update.
 
-        :return: enum
+        :return: int
+        :rtype: int
         """
 
         return self.knowledge_sheet_setting_att.RelationsUpdateInPartContextEvaluateDuringUpdate
 
     @relations_update_in_part_context_evaluate_during_update.setter
-    def relations_update_in_part_context_evaluate_during_update(self, value):
+    def relations_update_in_part_context_evaluate_during_update(self, value: int):
         """
-        :param enum value:
+        :param int value:
         """
 
         self.knowledge_sheet_setting_att.RelationsUpdateInPartContextEvaluateDuringUpdate = value
 
     @property
-    def relations_update_in_part_context_synchronous_relations(self):
+    def relations_update_in_part_context_synchronous_relations(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -253,20 +259,21 @@ class KnowledgeSheetSettingAtt(SettingController):
                 |             0 : creation of unsynchronous relations
                 |             1 : creation of synchronous relations.
 
-        :return: enum
+        :return: int
+        :rtype: int
         """
 
         return self.knowledge_sheet_setting_att.RelationsUpdateInPartContextSynchronousRelations
 
     @relations_update_in_part_context_synchronous_relations.setter
-    def relations_update_in_part_context_synchronous_relations(self, value):
+    def relations_update_in_part_context_synchronous_relations(self, value: int):
         """
-        :param enum value:
+        :param int value:
         """
 
         self.knowledge_sheet_setting_att.RelationsUpdateInPartContextSynchronousRelations = value
 
-    def get_design_tables_copy_data_info(self, io_admin_level, io_locked):
+    def get_design_tables_copy_data_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -297,10 +304,11 @@ class KnowledgeSheetSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.knowledge_sheet_setting_att.GetDesignTablesCopyDataInfo(io_admin_level, io_locked)
 
-    def get_design_tables_synchronization_info(self, io_admin_level, io_locked):
+    def get_design_tables_synchronization_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -332,10 +340,11 @@ class KnowledgeSheetSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.knowledge_sheet_setting_att.GetDesignTablesSynchronizationInfo(io_admin_level, io_locked)
 
-    def get_parameter_name_surrounded_by_the_symbol_info(self, io_admin_level, io_locked):
+    def get_parameter_name_surrounded_by_the_symbol_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -367,10 +376,11 @@ class KnowledgeSheetSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.knowledge_sheet_setting_att.GetParameterNameSurroundedByTheSymbolInfo(io_admin_level, io_locked)
 
-    def get_parameter_tree_view_with_formula_info(self, io_admin_level, io_locked):
+    def get_parameter_tree_view_with_formula_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -402,10 +412,11 @@ class KnowledgeSheetSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.knowledge_sheet_setting_att.GetParameterTreeViewWithFormulaInfo(io_admin_level, io_locked)
 
-    def get_parameter_tree_view_with_value_info(self, io_admin_level, io_locked):
+    def get_parameter_tree_view_with_value_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -437,10 +448,11 @@ class KnowledgeSheetSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.knowledge_sheet_setting_att.GetParameterTreeViewWithValueInfo(io_admin_level, io_locked)
 
-    def get_relations_update_in_part_context_evaluate_during_update_info(self, io_admin_level, io_locked):
+    def get_relations_update_in_part_context_evaluate_during_update_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -474,11 +486,12 @@ class KnowledgeSheetSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.knowledge_sheet_setting_att.GetRelationsUpdateInPartContextEvaluateDuringUpdateInfo(io_admin_level,
                                                                                                         io_locked)
 
-    def get_relations_update_in_part_context_synchronous_relations_info(self, io_admin_level, io_locked):
+    def get_relations_update_in_part_context_synchronous_relations_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -512,11 +525,12 @@ class KnowledgeSheetSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.knowledge_sheet_setting_att.GetRelationsUpdateInPartContextSynchronousRelationsInfo(io_admin_level,
                                                                                                         io_locked)
 
-    def set_design_tables_copy_data_lock(self, i_locked):
+    def set_design_tables_copy_data_lock(self, i_locked: bool) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -537,6 +551,7 @@ class KnowledgeSheetSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.knowledge_sheet_setting_att.SetDesignTablesCopyDataLock(i_locked)
         # # # # Autogenerated comment: 
@@ -555,7 +570,7 @@ class KnowledgeSheetSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_design_tables_synchronization_lock(self, i_locked):
+    def set_design_tables_synchronization_lock(self, i_locked: bool) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -577,6 +592,7 @@ class KnowledgeSheetSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.knowledge_sheet_setting_att.SetDesignTablesSynchronizationLock(i_locked)
         # # # # Autogenerated comment: 
@@ -595,7 +611,7 @@ class KnowledgeSheetSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_parameter_name_surrounded_by_the_symbol_lock(self, i_locked):
+    def set_parameter_name_surrounded_by_the_symbol_lock(self, i_locked: bool) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -618,6 +634,7 @@ class KnowledgeSheetSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.knowledge_sheet_setting_att.SetParameterNameSurroundedByTheSymbolLock(i_locked)
         # # # # Autogenerated comment: 
@@ -636,7 +653,7 @@ class KnowledgeSheetSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_parameter_tree_view_with_formula_lock(self, i_locked):
+    def set_parameter_tree_view_with_formula_lock(self, i_locked: bool) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -658,6 +675,7 @@ class KnowledgeSheetSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.knowledge_sheet_setting_att.SetParameterTreeViewWithFormulaLock(i_locked)
         # # # # Autogenerated comment: 
@@ -676,7 +694,7 @@ class KnowledgeSheetSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_parameter_tree_view_with_value_lock(self, i_locked):
+    def set_parameter_tree_view_with_value_lock(self, i_locked: bool) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -697,6 +715,7 @@ class KnowledgeSheetSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.knowledge_sheet_setting_att.SetParameterTreeViewWithValueLock(i_locked)
         # # # # Autogenerated comment: 
@@ -715,7 +734,7 @@ class KnowledgeSheetSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_relations_update_in_part_context_evaluate_during_update_lock(self, i_locked):
+    def set_relations_update_in_part_context_evaluate_during_update_lock(self, i_locked: bool) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -738,6 +757,7 @@ class KnowledgeSheetSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.knowledge_sheet_setting_att.SetRelationsUpdateInPartContextEvaluateDuringUpdateLock(i_locked)
         # # # # Autogenerated comment: 
@@ -756,7 +776,7 @@ class KnowledgeSheetSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_relations_update_in_part_context_synchronous_relations_lock(self, i_locked):
+    def set_relations_update_in_part_context_synchronous_relations_lock(self, i_locked: bool) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))

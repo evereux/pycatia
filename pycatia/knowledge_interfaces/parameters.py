@@ -53,7 +53,7 @@ class Parameters(Collection):
         self.parameters = com_object
 
     @property
-    def root_parameter_set(self):
+    def root_parameter_set(self) -> ParameterSet:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -63,12 +63,13 @@ class Parameters(Collection):
                 |     created.
 
         :return: ParameterSet
+        :rtype: ParameterSet
         """
         from pycatia.knowledge_interfaces.parameter_set import ParameterSet
         return ParameterSet(self.parameters.RootParameterSet)
 
     @property
-    def units(self):
+    def units(self) -> Units:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -77,6 +78,7 @@ class Parameters(Collection):
                 |     Returns the collection of units.
 
         :return: Units
+        :rtype: Units
         """
 
         return Units(self.parameters.Units)
@@ -126,10 +128,11 @@ class Parameters(Collection):
         :param str i_name:
         :param bool i_value:
         :return: BoolParam
+        :rtype: BoolParam
         """
         return BoolParam(self.parameters.CreateBoolean(i_name, i_value))
 
-    def create_dimension(self, i_name, i_magnitude, i_value):
+    def create_dimension(self, i_name: str, i_magnitude: str, i_value: float) -> Dimension:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -171,10 +174,11 @@ class Parameters(Collection):
         :param str i_magnitude:
         :param float i_value:
         :return: Dimension
+        :rtype: Dimension
         """
         return Dimension(self.parameters.CreateDimension(i_name, i_magnitude, i_value))
 
-    def create_integer(self, i_name, i_value):
+    def create_integer(self, i_name: str, i_value: int) -> IntParam:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -205,10 +209,11 @@ class Parameters(Collection):
         :param str i_name:
         :param int i_value:
         :return: IntParam
+        :rtype: IntParam
         """
         return IntParam(self.parameters.CreateInteger(i_name, i_value))
 
-    def create_list(self, i_name):
+    def create_list(self, i_name: str) -> ListParameter:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -232,10 +237,11 @@ class Parameters(Collection):
 
         :param str i_name:
         :return: ListParameter
+        :rtype: ListParameter
         """
         return ListParameter(self.parameters.CreateList(i_name))
 
-    def create_real(self, i_name, i_value):
+    def create_real(self, i_name: str, i_value: float) -> RealParam:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -266,10 +272,11 @@ class Parameters(Collection):
         :param str i_name:
         :param float i_value:
         :return: RealParam
+        :rtype: RealParam
         """
         return RealParam(self.parameters.CreateReal(i_name, i_value))
 
-    def create_set_of_parameters(self, i_father):
+    def create_set_of_parameters(self, i_father: AnyObject) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -279,10 +286,11 @@ class Parameters(Collection):
 
         :param AnyObject i_father:
         :return: None
+        :rtype: None
         """
         return self.parameters.CreateSetOfParameters(i_father.com_object)
 
-    def create_string(self, i_name, i_value):
+    def create_string(self, i_name: str, i_value: str) -> StrParam:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -310,10 +318,11 @@ class Parameters(Collection):
         :param str i_name:
         :param str i_value:
         :return: StrParam
+        :rtype: StrParam
         """
         return StrParam(self.parameters.CreateString(i_name, i_value))
 
-    def get_name_to_use_in_relation(self, i_object):
+    def get_name_to_use_in_relation(self, i_object: AnyObject) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -323,6 +332,7 @@ class Parameters(Collection):
 
         :param AnyObject i_object:
         :return: str
+        :rtype: str
         """
         return self.parameters.GetNameToUseInRelation(i_object.com_object)
 
@@ -393,7 +403,7 @@ class Parameters(Collection):
 
         return parameter
 
-    def remove(self, i_index):
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -420,10 +430,11 @@ class Parameters(Collection):
 
         :param CATVariant i_index:
         :return: None
+        :rtype: None
         """
         return self.parameters.Remove(i_index)
 
-    def sub_list(self, i_object, i_recursively):
+    def sub_list(self, i_object: AnyObject, i_recursively: bool) -> Parameters:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -459,6 +470,7 @@ class Parameters(Collection):
         :param AnyObject i_object:
         :param bool i_recursively:
         :return: Parameters
+        :rtype: Parameters
         """
         return Parameters(self.parameters.SubList(i_object.com_object, i_recursively))
 

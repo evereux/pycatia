@@ -35,7 +35,7 @@ class Unit(AnyObject):
         self.unit = com_object
 
     @property
-    def magnitude(self):
+    def magnitude(self) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -44,12 +44,13 @@ class Unit(AnyObject):
                 |     Returns the magnitude associated to the unit.
 
         :return: str
+        :rtype: str
         """
 
         return self.unit.Magnitude
 
     @property
-    def symbol(self):
+    def symbol(self) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -58,11 +59,12 @@ class Unit(AnyObject):
                 |     Returns the symbol associated to the unit.
 
         :return: str
+        :rtype: str
         """
 
         return self.unit.Symbol
 
-    def convert_from_mks(self, i_value_in_mks):
+    def convert_from_mks(self, i_value_in_mks: float) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -80,10 +82,11 @@ class Unit(AnyObject):
 
         :param float i_value_in_mks:
         :return: float
+        :rtype: float
         """
         return self.unit.ConvertFromMKS(i_value_in_mks)
 
-    def convert_from_storage_unit(self, i_value_in_storage_unit):
+    def convert_from_storage_unit(self, i_value_in_storage_unit: float) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -102,10 +105,11 @@ class Unit(AnyObject):
 
         :param float i_value_in_storage_unit:
         :return: float
+        :rtype: float
         """
         return self.unit.ConvertFromStorageUnit(i_value_in_storage_unit)
 
-    def convert_to_mks(self, i_value_in_this_unit):
+    def convert_to_mks(self, i_value_in_this_unit: float) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -122,10 +126,11 @@ class Unit(AnyObject):
 
         :param float i_value_in_this_unit:
         :return: float
+        :rtype: float
         """
         return self.unit.ConvertToMKS(i_value_in_this_unit)
 
-    def convert_to_storage_unit(self, i_value_in_this_unit):
+    def convert_to_storage_unit(self, i_value_in_this_unit: float) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -144,6 +149,7 @@ class Unit(AnyObject):
 
         :param float i_value_in_this_unit:
         :return: float
+        :rtype: float
         """
         return self.unit.ConvertToStorageUnit(i_value_in_this_unit)
 

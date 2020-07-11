@@ -37,7 +37,7 @@ class Optimizations(Collection):
         super().__init__(com_object, child_object=Optimization)
         self.optimizations = com_object
 
-    def create_constraints_satisfaction(self, i_name, i_comment, i_formula_body):
+    def create_constraints_satisfaction(self, i_name: str, i_comment: str, i_formula_body: str) -> SetOfEquation:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -61,10 +61,11 @@ class Optimizations(Collection):
         :param str i_comment:
         :param str i_formula_body:
         :return: SetOfEquation
+        :rtype: SetOfEquation
         """
         return SetOfEquation(self.optimizations.CreateConstraintsSatisfaction(i_name, i_comment, i_formula_body))
 
-    def create_optimization(self):
+    def create_optimization(self) -> Optimization:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -74,10 +75,11 @@ class Optimizations(Collection):
                 |     This optimization cannot be used while its properties have not been set.
 
         :return: Optimization
+        :rtype: Optimization
         """
         return Optimization(self.optimizations.CreateOptimization())
 
-    def item(self, i_index):
+    def item(self, i_index: CATVariant) -> AnyObject:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -110,6 +112,7 @@ class Optimizations(Collection):
 
         :param CATVariant i_index:
         :return: AnyObject
+        :rtype: AnyObject
         """
         return AnyObject(self.optimizations.Item(i_index))
 

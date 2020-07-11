@@ -49,7 +49,7 @@ class Parameter(AnyObject):
         self.parameter = com_object
 
     @property
-    def comment(self):
+    def comment(self) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -58,12 +58,13 @@ class Parameter(AnyObject):
                 |     Returns or sets the parameter object comment.
 
         :return: str
+        :rtype: str
         """
 
         return self.parameter.Comment
 
     @comment.setter
-    def comment(self, value):
+    def comment(self, value: str):
         """
         :param str value:
         """
@@ -71,7 +72,7 @@ class Parameter(AnyObject):
         self.parameter.Comment = value
 
     @property
-    def context(self):
+    def context(self) -> AnyObject:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -81,12 +82,13 @@ class Parameter(AnyObject):
                 |     the parameter is.
 
         :return: AnyObject
+        :rtype: AnyObject
         """
 
         return AnyObject(self.parameter.Context)
 
     @property
-    def hidden(self):
+    def hidden(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -95,12 +97,13 @@ class Parameter(AnyObject):
                 |     Returns or sets wether the parameter is hidden or should be hidden. or not.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.parameter.Hidden
 
     @hidden.setter
-    def hidden(self, value):
+    def hidden(self, value: bool):
         """
         :param bool value:
         """
@@ -108,7 +111,7 @@ class Parameter(AnyObject):
         self.parameter.Hidden = value
 
     @property
-    def is_true_parameter(self):
+    def is_true_parameter(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -118,12 +121,13 @@ class Parameter(AnyObject):
                 |     string, etc.) or a geometrical one (isolated points, curves, surfaces).
 
         :return: bool
+        :rtype: bool
         """
 
         return self.parameter.IsTrueParameter
 
     @property
-    def optional_relation(self):
+    def optional_relation(self) -> Relation:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -144,12 +148,13 @@ class Parameter(AnyObject):
                 |          End If
 
         :return: Relation
+        :rtype: Relation
         """
 
         return Relation(self.parameter.OptionalRelation)
 
     @property
-    def read_only(self):
+    def read_only(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -166,12 +171,13 @@ class Parameter(AnyObject):
                 |          End If
 
         :return: bool
+        :rtype: bool
         """
 
         return self.parameter.ReadOnly
 
     @property
-    def renamed(self):
+    def renamed(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -180,12 +186,13 @@ class Parameter(AnyObject):
                 |     Returns a boolean saying if the parameter is a renamed parameter or not.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.parameter.Renamed
 
     @property
-    def user_access_mode(self):
+    def user_access_mode(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -259,17 +266,11 @@ class Parameter(AnyObject):
                 |     reserved.
 
         :return: int
+        :rtype: int
         """
 
         return self.parameter.UserAccessMode
 
-    @property
-    def value(self):
-        return self.parameter.Value
-
-    @value.setter
-    def value(self, value):
-        self.parameter.Value = value
 
     def __repr__(self):
         return f'Parameter(name="{self.name}")'
