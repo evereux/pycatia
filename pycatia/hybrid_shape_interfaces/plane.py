@@ -13,7 +13,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class Plane(HybridShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -375,4 +374,4 @@ class Plane(HybridShape):
         return self.plane.SetPosition(i_x, i_y, i_z)
 
     def __repr__(self):
-        return f'Plane(name="{ self.name }")'
+        return f'Plane(name="{self.name}")'
