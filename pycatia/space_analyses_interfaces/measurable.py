@@ -39,7 +39,7 @@ class Measurable(AnyObject):
         self.measurable = com_object
 
     @property
-    def angle(self):
+    def angle(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic help
@@ -55,11 +55,13 @@ class Measurable(AnyObject):
 
 
         :return: float
+        :rtype: float
         """
+
         return self.measurable.Angle
 
     @property
-    def area(self):
+    def area(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic help
@@ -74,17 +76,18 @@ class Measurable(AnyObject):
 
 
         :return: float
+        :rtype: float
         """
         return self.measurable.Area
 
     @property
-    def geometry_name(self):
+    def geometry_name(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic help
 
-            Property GeometryName( ) As CatMeasurableName (Read Only)
-
+        :return: int
+        :rtype: int
             | Returns the name of the geometry of the measured object.
             | Example:
             | This example retrieves the name of the geometry of the NewMeasurable measure.
@@ -98,7 +101,7 @@ class Measurable(AnyObject):
         return self.measurable.GeometryName
 
     @property
-    def length(self):
+    def length(self) -> float:
         """
         ..note::
             CAA V5 Visual Basic help
@@ -113,12 +116,13 @@ class Measurable(AnyObject):
 
 
         :return: float
+        :rtype: float
         """
 
         return self.measurable.Length
 
     @property
-    def perimeter(self):
+    def perimeter(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic help
@@ -133,12 +137,13 @@ class Measurable(AnyObject):
 
 
         :return: float
+        :rtype: float
         """
 
         return self.measurable.Perimeter
 
     @property
-    def radius(self):
+    def radius(self) -> float:
         """
         ..note ::
             CAA V5 Visual Basic help
@@ -153,12 +158,13 @@ class Measurable(AnyObject):
 
 
         :return: float
+        :rtype: float
         """
 
         return self.measurable.Radius
 
     @property
-    def volume(self):
+    def volume(self) -> float:
         """
         ..note::
             CAA V5 Visual Basic help
@@ -172,15 +178,17 @@ class Measurable(AnyObject):
 
 
         :return: float
+        :rtype: float
         """
+
         return self.measurable.Volume
 
-    def get_angle_between(self, i_measured_item):
+    def get_angle_between(self, i_measured_item: Reference) -> float:
         """
         .. note::
             CAA V5 Visual Basic help
 
-            Func GetAngleBetween( Reference  iMeasuredItem) As double
+        :param Reference i_measured_item:
 
             | Compute the angle between the CATIAMeasurable and another.
             | Example:
@@ -203,6 +211,7 @@ class Measurable(AnyObject):
 
 
         :return: float
+        :rtype: float
         """
 
         return self.measurable.GetAngleBetween(i_measured_item.com_object)
