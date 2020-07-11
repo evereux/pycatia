@@ -51,7 +51,7 @@ class Check(Relation):
         self.check = com_object
 
     @property
-    def diagnosis(self):
+    def diagnosis(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -61,12 +61,13 @@ class Check(Relation):
                 |     verified. False otherwise.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.check.Diagnosis
 
     @property
-    def severity(self):
+    def severity(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -79,12 +80,13 @@ class Check(Relation):
                 |     Warning (3)
 
         :return: int
+        :rtype: int
         """
 
         return self.check.Severity
 
     @severity.setter
-    def severity(self, value):
+    def severity(self, value: int):
         """
         :param int value:
         """
