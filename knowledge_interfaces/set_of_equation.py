@@ -13,7 +13,6 @@ from pycatia.knowledge_interfaces.relation import Relation
 
 
 class SetOfEquation(Relation):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -106,7 +105,7 @@ class SetOfEquation(Relation):
         """
         return self.set_of_equation.SetMaxCalculationTime(i_max_time)
 
-    def set_parameter_as_input(self, i_parameter: Parameter) -> None:
+    def set_parameter_as_input(self, i_parameter: 'Parameter') -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -142,7 +141,7 @@ class SetOfEquation(Relation):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_parameter_as_output(self, i_parameter: Parameter) -> None:
+    def set_parameter_as_output(self, i_parameter: 'Parameter') -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -261,4 +260,4 @@ class SetOfEquation(Relation):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'SetOfEquation(name="{ self.name }")'
+        return f'SetOfEquation(name="{self.name}")'
