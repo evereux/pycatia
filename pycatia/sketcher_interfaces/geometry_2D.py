@@ -33,21 +33,22 @@ class Geometry2D(GeometricElement):
         self.geometry2_d = com_object
 
     @property
-    def construction(self):
+    def construction(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Construction() As boolean
                 | 
                 |     Returns the construction mode of the 2D geometry
 
         :return: bool
+        :rtype: bool
         """
 
         return self.geometry2_d.Construction
 
     @construction.setter
-    def construction(self, value):
+    def construction(self, value: bool):
         """
         :param bool value:
         """
@@ -55,10 +56,10 @@ class Geometry2D(GeometricElement):
         self.geometry2_d.Construction = value
 
     @property
-    def report_name(self):
+    def report_name(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ReportName() As long
                 | 
                 |     Returns the report name of the 2D geometry
@@ -69,12 +70,13 @@ class Geometry2D(GeometricElement):
                 |             The integer value of the report name
 
         :return: int
+        :rtype: int
         """
 
         return self.geometry2_d.ReportName
 
     @report_name.setter
-    def report_name(self, value):
+    def report_name(self, value: int):
         """
         :param int value:
         """
