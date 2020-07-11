@@ -16,6 +16,7 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class Distance(AnyObject):
+
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -38,7 +39,7 @@ class Distance(AnyObject):
         self.distance = com_object
 
     @property
-    def accuracy(self) -> float:
+    def accuracy(self):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -68,13 +69,12 @@ class Distance(AnyObject):
                 |                 NewDistance.Accuracy = 10.
 
         :return: float
-        :rtype: float
         """
 
         return self.distance.Accuracy
 
     @accuracy.setter
-    def accuracy(self, value: float):
+    def accuracy(self, value):
         """
         :param float value:
         """
@@ -82,7 +82,7 @@ class Distance(AnyObject):
         self.distance.Accuracy = value
 
     @property
-    def annotated_views(self) -> AnnotatedViews:
+    def annotated_views(self):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -100,13 +100,12 @@ class Distance(AnyObject):
                 |             Set TheAnnotatedViewsList = NewDistance.AnnotatedViews
 
         :return: AnnotatedViews
-        :rtype: AnnotatedViews
         """
 
         return AnnotatedViews(self.distance.AnnotatedViews)
 
     @property
-    def computation_type(self) -> int:
+    def computation_type(self):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -133,22 +132,21 @@ class Distance(AnyObject):
                 | 
                 |                 NewDistance.ComputationType = CatDistanceComputationTypeInsideOne
 
-        :return: int
-        :rtype: int
+        :return: enum cat_distance_computation_type
         """
 
         return self.distance.ComputationType
 
     @computation_type.setter
-    def computation_type(self, value: int):
+    def computation_type(self, value):
         """
-        :param int value:
+        :param enum cat_distance_computation_type value:
         """
 
         self.distance.ComputationType = value
 
     @property
-    def first_group(self) -> Group:
+    def first_group(self):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -177,13 +175,12 @@ class Distance(AnyObject):
                 |                 NewDistance.FirstGroup = FirstGroup
 
         :return: Group
-        :rtype: Group
         """
 
         return Group(self.distance.FirstGroup)
 
     @first_group.setter
-    def first_group(self, value: Group):
+    def first_group(self, value):
         """
         :param Group value:
         """
@@ -191,7 +188,7 @@ class Distance(AnyObject):
         self.distance.FirstGroup = value
 
     @property
-    def first_product(self) -> Product:
+    def first_product(self):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -210,13 +207,12 @@ class Distance(AnyObject):
                 |             Set AProduct = NewDistance.FirstProduct
 
         :return: Product
-        :rtype: Product
         """
 
         return Product(self.distance.FirstProduct)
 
     @property
-    def is_defined(self) -> int:
+    def is_defined(self):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -238,13 +234,12 @@ class Distance(AnyObject):
                 |             If NewDistance.IsDefined = 1 Then
 
         :return: int
-        :rtype: int
         """
 
         return self.distance.IsDefined
 
     @property
-    def marker_3ds(self) -> Marker3Ds:
+    def marker3_ds(self):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -262,13 +257,12 @@ class Distance(AnyObject):
                 |             Set TheMarker3DsList = NewDistance.Marker3Ds
 
         :return: Marker3Ds
-        :rtype: Marker3Ds
         """
 
         return Marker3Ds(self.distance.Marker3Ds)
 
     @property
-    def maximum_distance(self) -> float:
+    def maximum_distance(self):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -299,13 +293,12 @@ class Distance(AnyObject):
                 |                 NewDistance.MaximumDistance = 10.
 
         :return: float
-        :rtype: float
         """
 
         return self.distance.MaximumDistance
 
     @maximum_distance.setter
-    def maximum_distance(self, value: float):
+    def maximum_distance(self, value):
         """
         :param float value:
         """
@@ -313,7 +306,7 @@ class Distance(AnyObject):
         self.distance.MaximumDistance = value
 
     @property
-    def measure_type(self) -> int:
+    def measure_type(self):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -341,22 +334,21 @@ class Distance(AnyObject):
                 | 
                 |                 NewDistance.MeasureType = CatDistanceMeasureTypeMinimum
 
-        :return: int
-        :rtype: int
+        :return: enum cat_distance_measure_type
         """
 
         return self.distance.MeasureType
 
     @measure_type.setter
-    def measure_type(self, value: int):
+    def measure_type(self, value):
         """
-        :param int value:
+        :param enum cat_distance_measure_type value:
         """
 
         self.distance.MeasureType = value
 
     @property
-    def minimum_distance(self) -> float:
+    def minimum_distance(self):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -387,13 +379,12 @@ class Distance(AnyObject):
                 |                 NewDistance.MinimumDistance = 10.
 
         :return: float
-        :rtype: float
         """
 
         return self.distance.MinimumDistance
 
     @minimum_distance.setter
-    def minimum_distance(self, value: float):
+    def minimum_distance(self, value):
         """
         :param float value:
         """
@@ -401,7 +392,7 @@ class Distance(AnyObject):
         self.distance.MinimumDistance = value
 
     @property
-    def second_group(self) -> Group:
+    def second_group(self):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -430,13 +421,12 @@ class Distance(AnyObject):
                 |                 NewDistance.SecondGroup = SecondGroup
 
         :return: Group
-        :rtype: Group
         """
 
         return Group(self.distance.SecondGroup)
 
     @second_group.setter
-    def second_group(self, value: Group):
+    def second_group(self, value):
         """
         :param Group value:
         """
@@ -444,10 +434,10 @@ class Distance(AnyObject):
         self.distance.SecondGroup = value
 
     @property
-    def second_product(self) -> Product:
+    def second_product(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SecondProduct() As Product (Read Only)
                 | 
                 |     Returns the product belonging to the second group that realizes the minimum
@@ -463,13 +453,12 @@ class Distance(AnyObject):
                 |             Set AProduct = NewDistance.SecondProduct
 
         :return: Product
-        :rtype: Product
         """
 
         return Product(self.distance.SecondProduct)
 
     @property
-    def value(self) -> float:
+    def value(self):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -487,15 +476,14 @@ class Distance(AnyObject):
                 |             MinimumValue = NewDistance.Value
 
         :return: float
-        :rtype: float
         """
 
         return self.distance.Value
 
-    def compute(self) -> None:
+    def compute(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Compute()
                 | 
                 |     Computes the distance.
@@ -509,14 +497,13 @@ class Distance(AnyObject):
                 |             NewDistance.Compute
 
         :return: None
-        :rtype: None
         """
         return self.distance.Compute()
 
-    def get_first_point_coordinates(self, o_coordinates: tuple) -> None:
+    def get_first_point_coordinates(self, o_coordinates=None):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetFirstPointCoordinates(CATSafeArrayVariant
                 | oCoordinates)
                 | 
@@ -543,7 +530,6 @@ class Distance(AnyObject):
 
         :param tuple o_coordinates:
         :return: None
-        :rtype: None
         """
         return self.distance.GetFirstPointCoordinates(o_coordinates)
         # # # # Autogenerated comment: 
@@ -562,10 +548,10 @@ class Distance(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_second_point_coordinates(self, o_coordinates: tuple) -> None:
+    def get_second_point_coordinates(self, o_coordinates=None):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetSecondPointCoordinates(CATSafeArrayVariant
                 | oCoordinates)
                 | 
@@ -592,7 +578,6 @@ class Distance(AnyObject):
 
         :param tuple o_coordinates:
         :return: None
-        :rtype: None
         """
         return self.distance.GetSecondPointCoordinates(o_coordinates)
         # # # # Autogenerated comment: 
