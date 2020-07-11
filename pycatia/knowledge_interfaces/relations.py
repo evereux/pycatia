@@ -20,7 +20,9 @@ from pycatia.knowledge_interfaces.optimizations import Optimizations
 from pycatia.knowledge_interfaces.relation import Relation
 from pycatia.knowledge_interfaces.rule import Rule
 from pycatia.knowledge_interfaces.set_of_equation import SetOfEquation
+from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
+from pycatia.types import cat_variant
 
 
 class Relations(Collection):
@@ -154,7 +156,7 @@ class Relations(Collection):
         """
         return Check(self.relations.CreateCheck(i_name, i_comment, i_check_body))
 
-    def create_design_table(self, i_name: str, i_comment: str, i_copy_mode: bool, i_sheet_path: str) -> DesignTable:
+    def create_design_table(self, i_name: str, i_comment: str, i_copy_mode: bool, i_sheet_path: Path) -> DesignTable:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -198,7 +200,7 @@ class Relations(Collection):
         :param str i_name:
         :param str i_comment:
         :param bool i_copy_mode:
-        :param str i_sheet_path:
+        :param Path i_sheet_path:
         :return: DesignTable
         :rtype: DesignTable
         """
@@ -259,7 +261,11 @@ class Relations(Collection):
         """
         return Formula(self.relations.CreateFormula(i_name, i_comment, i_output_parameter.com_object, i_formula_body))
 
-    def create_horizontal_design_table(self, i_name: str, i_comment: str, i_copy_mode: bool, i_sheet_path: str) -> DesignTable:
+    def create_horizontal_design_table(self,
+                                       i_name: str,
+                                       i_comment: str,
+                                       i_copy_mode: bool,
+                                       i_sheet_path: str) -> DesignTable:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -482,7 +488,7 @@ class Relations(Collection):
         """
         return self.relations.GenerateXMLReportForChecks(i_name)
 
-    def item(self, i_index: CATVariant) -> Relation:
+    def item(self, i_index: cat_variant) -> Relation:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -511,13 +517,13 @@ class Relations(Collection):
                 |          Dim lastRelation As Relation
                 |          Set lastRelation = relations.Item(relations.Count)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: Relation
         :rtype: Relation
         """
         return Relation(self.relations.Item(i_index))
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -543,13 +549,13 @@ class Relations(Collection):
                 | 
                 |      relations.Remove("density")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: None
         :rtype: None
         """
         return self.relations.Remove(i_index)
 
-    def sub_list(self, i_feature: AnyObject, i_recursively: bool) -> Relations:
+    def sub_list(self, i_feature: AnyObject, i_recursively: bool) -> 'Relations':
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
