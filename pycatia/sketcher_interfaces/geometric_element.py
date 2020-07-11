@@ -34,10 +34,10 @@ class GeometricElement(AnyObject):
         self.geometric_element = com_object
 
     @property
-    def geometric_type(self):
+    def geometric_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property GeometricType() As CatGeometricType (Read Only)
                 | 
                 |     Returns the type of the underlying geometrical element
@@ -47,7 +47,8 @@ class GeometricElement(AnyObject):
                 |         oType
                 |             Specific type of the geometric interface
 
-        :return: enum cat_geometric_type
+        :return: int
+        :rtype: int
         """
 
         return self.geometric_element.GeometricType
