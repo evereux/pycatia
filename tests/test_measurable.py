@@ -8,6 +8,12 @@
 from pycatia import CATIADocHandler
 from pycatia.enumeration.enumeration_types import cat_measurable_name
 from tests.source_files import cat_part_measurable
+from tests.create_source_parts import geom_set_lines
+from tests.create_source_parts import geom_set_surfaces
+from tests.create_source_parts import geom_set_arcs
+from tests.create_source_parts import geom_set_points
+from tests.create_source_parts import geom_set_planes
+from tests.create_source_parts import geom_set_cylinders
 
 
 def round_tuple(tuple_object, decimal_places=6):
@@ -36,7 +42,7 @@ def test_area():
         measurable = spa_workbench.get_measurable(reference)
         area_m = measurable.area
 
-        area = 0.032119
+        area = 0.04
 
         assert area == round(area_m, 6)
 
@@ -63,12 +69,12 @@ def test_length():
 
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name('Lines')
+        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_lines)
         line1 = hybrid_body.hybrid_shapes.item(1)
         line1_reference = part.create_reference_from_object(line1)
         line1_measurable = spa_workbench.get_measurable(line1_reference)
 
-        length = 91.553263
+        length = 141.421356
         catia_length = line1_measurable.length
 
         assert length == round(catia_length, 6)
@@ -80,12 +86,12 @@ def test_perimeter():
         spa_workbench = document.spa_workbench()
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name('Surfaces')
+        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_surfaces)
         surface = hybrid_body.hybrid_shapes.item(1)
         surface_reference = part.create_reference_from_object(surface)
         surface_measurable = spa_workbench.get_measurable(surface_reference)
 
-        perimeter = 265.946845
+        perimeter = 400
         catia_perimeter = surface_measurable.perimeter
 
         assert perimeter == round(catia_perimeter, 6)
@@ -98,11 +104,11 @@ def test_radius():
 
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name('Arcs')
+        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_arcs)
         arc = hybrid_body.hybrid_shapes.item(1)
         arc_reference = part.create_reference_from_object(arc)
         arc_measurable = spa_workbench.get_measurable(arc_reference)
-        radius = 45.0
+        radius = 25.0
         catia_radius = arc_measurable.radius
 
         assert radius == round(catia_radius, 6)
@@ -115,13 +121,13 @@ def test_angle_between():
 
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name('Lines')
+        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_lines)
         line1 = hybrid_body.hybrid_shapes.item(1)
         line1_reference = part.create_reference_from_object(line1)
         line1_measurable = spa_workbench.get_measurable(line1_reference)
         line2 = hybrid_body.hybrid_shapes.item(2)
         line2_reference = part.create_reference_from_object(line2)
-        angle = 71.496249
+        angle = 45.0
         catia_angle = line1_measurable.get_angle_between(line2_reference)
 
         assert angle == round(catia_angle, 6)
@@ -140,12 +146,12 @@ def test_get_axis():
 
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name('Arcs')
+        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_arcs)
         arc = hybrid_body.hybrid_shapes.item(1)
         arc_reference = part.create_reference_from_object(arc)
         arc_measurable = spa_workbench.get_measurable(arc_reference)
 
-        axis = (0.0, 0.0, 2025.0)
+        axis = (0.0, 0.0, 441.941738)
         catia_axis = arc_measurable.get_axis()
 
         assert axis == (round(catia_axis[0], 6), round(catia_axis[1], 6), round(catia_axis[2], 6))
@@ -167,18 +173,18 @@ def test_get_axis_system():
         axis_measurable = spa_workbench.get_measurable(axis_reference)
 
         axis_system = (
-            -91.418000,
-            39.387000,
+            0.000,
+            0.000,
+            0.000,
+            1.000,
+            0.000,
+            0.000,
+            0.000,
+            1.000,
             0.000000,
-            0.709325,
-            0.704882,
-            0.000000,
-            0.704882,
-            -0.709325,
             0.000000,
             0.000000,
-            0.000000,
-            -1.000000)
+            1.000000)
         catia_axis = axis_measurable.get_axis_system()
 
         assert axis_system == (
@@ -204,12 +210,12 @@ def test_get_direction():
         part = document.part()
         spa_workbench = document.spa_workbench()
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name('Lines')
+        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_lines)
         line1 = hybrid_body.hybrid_shapes.item(1)
         line1_reference = part.create_reference_from_object(line1)
         line1_measurable = spa_workbench.get_measurable(line1_reference)
 
-        direction_vector = (0.939344, 0.207529, -0.273065)
+        direction_vector = (0.707107, 0.707107, 0)
         catia_direction = line1_measurable.get_direction()
 
         assert direction_vector == (
@@ -227,17 +233,17 @@ def test_get_minimum_distance():
         spa_workbench = document.spa_workbench()
 
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name('Lines')
+        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_lines)
         line1 = hybrid_body.hybrid_shapes.item(1)
         line1_reference = part.create_reference_from_object(line1)
         line1_measurable = spa_workbench.get_measurable(line1_reference)
 
-        hybrid_body = hybrid_bodies.get_item_by_name('Arcs')
-        arc = hybrid_body.hybrid_shapes.item(1)
-        arc_reference = part.create_reference_from_object(arc)
+        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_points)
+        point = hybrid_body.hybrid_shapes.item(2)
+        point_reference = part.create_reference_from_object(point)
 
-        minimum_distance = 44.126069
-        catia_minimum_distance = line1_measurable.get_minimum_distance(arc_reference)
+        minimum_distance = 70.710678
+        catia_minimum_distance = line1_measurable.get_minimum_distance(point_reference)
 
         assert minimum_distance == round(catia_minimum_distance, 6)
 
@@ -249,21 +255,21 @@ def test_get_minimum_distance_points():
         part = document.part()
         spa_workbench = document.spa_workbench()
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name('Points')
+        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_points)
         point1 = hybrid_body.hybrid_shapes.item(1)
         point1_reference = part.create_reference_from_object(point1)
         point1_measurable = spa_workbench.get_measurable(point1_reference)
 
-        point2 = hybrid_body.hybrid_shapes.item(2)
+        point2 = hybrid_body.hybrid_shapes.item(3)
         point2_reference = part.create_reference_from_object(point2)
 
         minimum_distance_points = (
             0.000000,
-            8.000000,
-            -4.000000,
-            86.000000,
-            27.000000,
-            -29.000000,
+            0.000000,
+            0.000000,
+            100.000000,
+            100.000000,
+            0.000000,
             None,
             None,
             None
@@ -280,21 +286,21 @@ def test_get_plane():
         spa_workbench = document.spa_workbench()
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name('Planes')
+        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_planes)
         plane = hybrid_body.hybrid_shapes.item(1)
         plane_reference = part.create_reference_from_object(plane)
         plane_measurable = spa_workbench.get_measurable(plane_reference)
 
         plane = (
-            86.0,
-            27.0,
-            -29.0,
-            0.342977,
-            -0.568381,
-            0.747870,
             0.0,
-            -0.796162,
-            -0.605083
+            0.0,
+            -200.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
         )
         catia_plane = plane_measurable.get_plane()
         catia_plane = round_tuple(catia_plane, 6)
@@ -309,15 +315,15 @@ def test_get_point():
 
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name('Points')
-        point1 = hybrid_body.hybrid_shapes.item(1)
+        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_points)
+        point1 = hybrid_body.hybrid_shapes.item(3)
         point1_reference = part.create_reference_from_object(point1)
         point1_measurable = spa_workbench.get_measurable(point1_reference)
 
         point = (
-            0.0,
-            8.0,
-            -4.0,
+            100,
+            100,
+            0,
         )
         catia_point = point1_measurable.get_point()
         catia_point = round_tuple(catia_point, 6)
@@ -332,21 +338,21 @@ def test_get_points_on_axis():
 
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name('Cylinders')
+        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_cylinders)
         cylinder = hybrid_body.hybrid_shapes.item(1)
         cylinder_reference = part.create_reference_from_object(cylinder)
         cylinder_measurable = spa_workbench.get_measurable(cylinder_reference)
 
         cylinder = (
-            -92.049,
-            142.675,
-            10.000,
-            -92.049,
-            142.675,
-            20.000,
-            -92.049,
-            142.675,
-            0.000,
+            100,
+            100,
+            50,
+            100,
+            100,
+            100,
+            100,
+            100,
+            0,
         )
         catia_cylinder = cylinder_measurable.get_points_on_axis()
         catia_cylinder = round_tuple(catia_cylinder, 6)
@@ -361,21 +367,21 @@ def test_get_points_on_curve():
 
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name('Lines')
+        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_lines)
         line1 = hybrid_body.hybrid_shapes.item(1)
         line1_reference = part.create_reference_from_object(line1)
         line1_measurable = spa_workbench.get_measurable(line1_reference)
 
         points_on_curve = (
             0.0,
-            8.0,
-            -4,
-            43.0,
-            17.5,
-            -16.5,
-            86.0,
-            27,
-            -29,
+            0.0,
+            0.0,
+            50.0,
+            50.0,
+            0,
+            100.0,
+            100.0,
+            0,
         )
         catia_points_on_curve = line1_measurable.get_points_on_curve()
         catia_points_on_curve = round_tuple(catia_points_on_curve, 6)
@@ -395,7 +401,7 @@ def test_volume():
         reference = part.create_reference_from_object(body)
         measurable = spa_workbench.get_measurable(reference)
 
-        volume = 0.000235
+        volume = 0.0005
         catia_volume = measurable.volume
 
         assert volume == round(catia_volume, 6)
@@ -413,9 +419,9 @@ def test_centre_of_gravity():
         reference = part.create_reference_from_object(body)
         measurable = spa_workbench.get_measurable(reference)
 
-        gx = 86.065202
-        gy = 81.364587
-        gz = 10.000000
+        gx = 50
+        gy = 50
+        gz = 25
 
         centre_of_gravity = measurable.get_cog()
 
@@ -432,7 +438,7 @@ def test_angle():
 
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name('Arcs')
+        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_arcs)
         arc = hybrid_body.hybrid_shapes.item(1)
         arc_reference = part.create_reference_from_object(arc)
         arc_measurable = spa_workbench.get_measurable(arc_reference)
@@ -450,12 +456,12 @@ def test_center():
         spa_workbench = document.spa_workbench()
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name('Arcs')
+        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_arcs)
         arc = hybrid_body.hybrid_shapes.item(1)
 
         arc_reference = part.create_reference_from_object(arc)
         arc_measurable = spa_workbench.get_measurable(arc_reference)
         catia_center = arc_measurable.get_center()
 
-        center = (-47.039, 83.488, 0.0)
+        center = (0, 100, 0)
         assert center == catia_center

@@ -7,6 +7,7 @@ import pytest
 
 from pycatia import catia
 from pycatia.base_interfaces.context import CATIADocHandler
+from tests.create_source_products import source_cat_sub_1
 from tests.source_files import cat_part_measurable
 from tests.source_files import cat_product
 
@@ -56,7 +57,7 @@ def test_count_types():
 
         num = documents.count_types('.catpart')
 
-        assert num == 2
+        assert num == 1
 
 
 def test_export_document():
@@ -91,11 +92,10 @@ def test_get_documents_names():
         documents = handler.documents
 
         expected_names = [
-            'ABQMaterialPropertiesCatalog.CATfct',
-            'CF_TopLevelAssy.CATProduct',
-            'CF_Part_1.CATPart',
-            'CF_SubProduct1.CATProduct', 'CF_Part_2.CATPart',
-            'CF_SubProduct2.CATProduct'
+            'product_top.CATProduct',
+            'product_sub_2.CATProduct',
+            'part_measurable.CATPart',
+            'product_sub_1.CATProduct',
         ]
 
         assert documents.get_item_names() == expected_names
@@ -126,11 +126,9 @@ def test_is_saved():
 def test_item():
     with CATIADocHandler(cat_product) as handler:
         documents = handler.documents
-        document_to_get = 'CF_SubProduct2.CATProduct'
-        doc_com1 = documents.item(document_to_get)
-        doc_com2 = documents.item(2)
+        doc_com1 = documents.item(source_cat_sub_1.name)
 
-        assert (doc_com1.name == document_to_get) and (doc_com2.name == 'CF_TopLevelAssy.CATProduct')
+        assert (doc_com1.name == source_cat_sub_1.name)
 
 
 def test_new_from():
@@ -156,7 +154,7 @@ def test_num_open():
         documents = handler.documents
         # see warning in documentation for num_open()
 
-        assert documents.num_open() == 2
+        assert documents.num_open() == 1
 
 
 def test_open_document():
@@ -174,7 +172,7 @@ def test_part():
     with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
         part = document.part()
-        assert part.name == "CF_catia_measurable_part"
+        assert part.name == "cat_part_measurable"
         assert document.is_part
         assert not document.is_product
 
@@ -183,7 +181,7 @@ def test_product():
     with CATIADocHandler(cat_product) as handler:
         document = handler.document
         product = document.product()
-        assert product.name in cat_product.name
+        assert 'cat_product_1' in product.name
         assert document.is_product
 
 

@@ -125,6 +125,12 @@ If you have written a script using pycatia you would like to share you can:
 
 Running The Tests
 -----------------
+
+On the first run, during the running of the tests, the test suite will create the CATIA drawing, products and part it
+requires to run in the folder tests/cat_files.
+
+CATIA V5 should already be running and have NO documents already open.
+
 To run the tests with coverage (-v is verbosity):
 
 .. code-block:: python
