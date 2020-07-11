@@ -190,7 +190,7 @@ class Relation(KnowledgeActivateObject):
         """
         return AnyObject(self.relation.GetInParameter(i_index))
 
-    def get_out_parameter(self, i_index: int) -> Parameter:
+    def get_out_parameter(self, i_index: int) -> 'Parameter':
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
