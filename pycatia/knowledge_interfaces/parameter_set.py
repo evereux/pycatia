@@ -69,7 +69,7 @@ class ParameterSet(AnyObject):
         return Parameters(self.parameter_set.DirectParameters)
 
     @property
-    def parameter_sets(self) -> ParameterSets:
+    def parameter_sets(self) -> 'ParameterSets':
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)

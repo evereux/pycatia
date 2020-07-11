@@ -94,7 +94,7 @@ class Parameter(AnyObject):
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Hidden() As boolean
                 | 
-                |     Returns or sets wether the parameter is hidden or should be hidden. or not.
+                |     Returns or sets whether the parameter is hidden or should be hidden or not.
 
         :return: bool
         :rtype: bool
@@ -270,7 +270,6 @@ class Parameter(AnyObject):
         """
 
         return self.parameter.UserAccessMode
-
 
     def __repr__(self):
         return f'Parameter(name="{self.name}")'

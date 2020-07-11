@@ -10,15 +10,6 @@
 """
 
 from pycatia.system_interfaces.setting_controller import SettingController
-from pycatia.knowledge_interfaces.design_table import DesignTable
-from pycatia.knowledge_interfaces.formula import Formula
-from pycatia.knowledge_interfaces.law import Law
-from pycatia.knowledge_interfaces.optimizations import Optimizations
-from pycatia.knowledge_interfaces.relation import Relation
-from pycatia.knowledge_interfaces.relations import Relations
-from pycatia.knowledge_interfaces.rule import Rule
-from pycatia.knowledge_interfaces.set_of_equation import SetOfEquation
-from pycatia.system_interfaces.collection import Collection
 
 
 class ReportGenerationSheetSettingAtt(SettingController):
@@ -1123,4 +1114,4 @@ class ReportGenerationSheetSettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'ReportGenerationSheetSettingAtt(name="{ self.name }")'
+        return f'ReportGenerationSheetSettingAtt(name="{self.name}")'

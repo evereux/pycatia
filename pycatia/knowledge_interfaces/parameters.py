@@ -20,7 +20,9 @@ from pycatia.knowledge_interfaces.parameter import Parameter
 from pycatia.knowledge_interfaces.real_param import RealParam
 from pycatia.knowledge_interfaces.str_param import StrParam
 from pycatia.knowledge_interfaces.units import Units
+from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
+from pycatia.types import cat_variant
 
 
 class Parameters(Collection):
@@ -53,7 +55,7 @@ class Parameters(Collection):
         self.parameters = com_object
 
     @property
-    def root_parameter_set(self) -> ParameterSet:
+    def root_parameter_set(self) -> 'ParameterSet':
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -97,7 +99,7 @@ class Parameters(Collection):
 
         return parameters
 
-    def create_boolean(self, i_name, i_value):
+    def create_boolean(self, i_name: str, i_value: bool):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -345,10 +347,11 @@ class Parameters(Collection):
 
         return False
 
-    def is_parameter(self, index):
+    def is_parameter(self, index: cat_variant):
         """
-        :param str or int index: parameter name or parameter number
+        :param cat_variant index: parameter name or parameter number
         :return: bool
+        :rtype: bool
         """
         try:
             if self.parameters.Item(index):
@@ -356,7 +359,7 @@ class Parameters(Collection):
         except com_error:
             return False
 
-    def item(self, index):
+    def item(self, index: cat_variant):
         """
         .. note::
             CAA V5 Visual Basic help
@@ -383,6 +386,11 @@ class Parameters(Collection):
                 | collection:
                 |
                 | Set lastParameter = parameters.Item(parameters.Count)
+
+
+        :param cat_variant index:
+        :return: Parameter
+        :rtype: Parameter
         """
         parameter = None
 
@@ -403,7 +411,7 @@ class Parameters(Collection):
 
         return parameter
 
-    def remove(self, i_index: CATVariant) -> None:
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -428,13 +436,13 @@ class Parameters(Collection):
                 | 
                 |          parameters.Remove("depth")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: None
         :rtype: None
         """
         return self.parameters.Remove(i_index)
 
-    def sub_list(self, i_object: AnyObject, i_recursively: bool) -> Parameters:
+    def sub_list(self, i_object: AnyObject, i_recursively: bool) -> 'Parameters':
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
