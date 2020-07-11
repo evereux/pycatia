@@ -9,8 +9,8 @@
         
 """
 
-from pycatia.in_interfaces.document import Document
 from pycatia.navigator_interfaces.annotated_views import AnnotatedViews
+from pycatia.navigator_interfaces.group import Group
 from pycatia.navigator_interfaces.marker_3Ds import Marker3Ds
 from pycatia.system_interfaces.any_object import AnyObject
 
@@ -158,7 +158,7 @@ class Section(AnyObject):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Group() As Group
                 | 
-                |     Returns or sets the sectionned group.
+                |     Returns or sets the sectioned group.
                 | 
                 |     By default, it is the all leaves group.
                 | 
@@ -166,19 +166,13 @@ class Section(AnyObject):
                 | 
                 |              The first example retrieves the group of NewSection
                 |              Section.
-                |             
-                | 
+                |
                 |             Dim AGroup As Group
                 |             AGroup = NewSection.Group
-                |             
-                | 
-                | 
-                |             
-                | 
+                |
                 |                 The second example sets the group of NewSection
                 |                 Section.
-                |                 
-                | 
+                |
                 |                 Dim AGroup As Group
                 |                 NewSection.Group = AGroup
 
@@ -396,7 +390,7 @@ class Section(AnyObject):
 
         self.section.Width = value
 
-    def export(self) -> Document:
+    def export(self) -> 'Document':
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
@@ -418,6 +412,7 @@ class Section(AnyObject):
         :return: Document
         :rtype: Document
         """
+        from pycatia.in_interfaces.document import Document
         return Document(self.section.Export())
 
     def get_position(self, o_components: tuple) -> None:

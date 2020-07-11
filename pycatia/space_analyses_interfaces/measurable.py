@@ -1,5 +1,6 @@
 #! /usr/bin/python3.6
 
+from pycatia.in_interfaces.reference import Reference
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.system_service import SystemService
 
