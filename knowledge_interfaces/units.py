@@ -35,7 +35,7 @@ class Units(Collection):
         super().__init__(com_object, child_object=Unit)
         self.units = com_object
 
-    def item(self, i_index):
+    def item(self, i_index: CATVariant) -> Unit:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -63,6 +63,7 @@ class Units(Collection):
 
         :param CATVariant i_index:
         :return: Unit
+        :rtype: Unit
         """
         return Unit(self.units.Item(i_index))
 

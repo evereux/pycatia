@@ -51,7 +51,7 @@ class ParameterSets(Collection):
         super().__init__(com_object, child_object=ParameterSet)
         self.parameter_sets = com_object
 
-    def create_set(self, i_name):
+    def create_set(self, i_name: str) -> ParameterSet:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -62,10 +62,11 @@ class ParameterSets(Collection):
 
         :param str i_name:
         :return: ParameterSet
+        :rtype: ParameterSet
         """
         return ParameterSet(self.parameter_sets.CreateSet(i_name))
 
-    def item(self, i_index):
+    def item(self, i_index: CATVariant) -> ParameterSet:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -93,6 +94,7 @@ class ParameterSets(Collection):
 
         :param CATVariant i_index:
         :return: ParameterSet
+        :rtype: ParameterSet
         """
         return ParameterSet(self.parameter_sets.Item(i_index))
 

@@ -35,7 +35,7 @@ class ParameterSet(AnyObject):
         self.parameter_set = com_object
 
     @property
-    def all_parameters(self):
+    def all_parameters(self) -> Parameters:
         """
         .. note::
             CAA V5 Visual Basic help
@@ -44,6 +44,8 @@ class ParameterSet(AnyObject):
                 |
                 | Returns all parameters under this set of parameter.
                 | Parameters:
+        :return: Parameters
+        :rtype: Parameters
         """
         from .parameter import Parameter
         items = []
@@ -52,7 +54,7 @@ class ParameterSet(AnyObject):
         return items
 
     @property
-    def direct_parameters(self):
+    def direct_parameters(self) -> Parameters:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -61,12 +63,13 @@ class ParameterSet(AnyObject):
                 |     Returns directly aggregated parameters.
 
         :return: Parameters
+        :rtype: Parameters
         """
 
         return Parameters(self.parameter_set.DirectParameters)
 
     @property
-    def parameter_sets(self):
+    def parameter_sets(self) -> ParameterSets:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -75,6 +78,7 @@ class ParameterSet(AnyObject):
                 |     Returns the children parameter sets.
 
         :return: ParameterSets
+        :rtype: ParameterSets
         """
         from pycatia.knowledge_interfaces.parameter_sets import ParameterSets
         return ParameterSets(self.parameter_set.ParameterSets)

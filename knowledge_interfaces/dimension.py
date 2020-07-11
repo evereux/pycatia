@@ -42,7 +42,7 @@ class Dimension(RealParam):
         self.dimension = com_object
 
     @property
-    def unit(self):
+    def unit(self) -> Unit:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -51,11 +51,12 @@ class Dimension(RealParam):
                 |     Returns the unit used for this dimension object.
 
         :return: Unit
+        :rtype: Unit
         """
 
         return Unit(self.dimension.Unit)
 
-    def value_as_string2(self, i_nb_decimals, i_show_trailing_zeros):
+    def value_as_string2(self, i_nb_decimals: int, i_show_trailing_zeros: bool) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -85,6 +86,7 @@ class Dimension(RealParam):
         :param int i_nb_decimals:
         :param bool i_show_trailing_zeros:
         :return: str
+        :rtype: str
         """
         return self.dimension.ValueAsString2(i_nb_decimals, i_show_trailing_zeros)
 
