@@ -3,17 +3,17 @@
 
 from pycatia import CATIADocHandler
 
-from tests.source_files import cat_part_3
+from tests.source_files import cat_part_measurable
 from tests.source_files import design_table_1
 
 
 def test_relations_count():
-    with CATIADocHandler(cat_part_3) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
         part = document.part()
         relations = part.relations
 
-        assert relations.count == 6
+        assert relations.count == 4
 
 
 def test_relations_create_check():
@@ -40,7 +40,12 @@ def test_relations_create_design_table():
         part = document.part()
         relations = part.relations
 
-        design_table = relations.create_design_table('new-design-table', 'this is a comment', True, design_table_1)
+        design_table = relations.create_design_table(
+            'new-design-table',
+            'this is a comment',
+            True,
+            design_table_1
+        )
 
         assert design_table.name == 'new-design-table'
 
@@ -167,48 +172,47 @@ def test_relations_generate_xml():
 
 
 def test_relations_get_items():
-    with CATIADocHandler(cat_part_3) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
         part = document.part()
 
         relations = part.relations
         items = relations.items()
 
-        assert len(items) == 6
-        assert items[0].name == 'Formula.1'
+        assert len(items) == 4
 
 
 def test_relations_get_item_by_index():
-    with CATIADocHandler(cat_part_3) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
         part = document.part()
 
         relations = part.relations
         item = relations.get_item_by_index(1)
 
-        assert item.name == 'Formula.1'
+        assert item.name == 'formula_1'
 
 
 def test_relations_get_item_names():
-    with CATIADocHandler(cat_part_3) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
         part = document.part()
 
         relations = part.relations
         item_names = relations.get_item_names()
 
-        ref_names = ['Formula.1', 'Formula.2', 'Formula.3', 'Formula.4', 'Formula.5', 'Formula.7']
+        ref_names = ['formula_1', 'formula_2', 'formula_3', 'formula_5']
         assert item_names == ref_names
 
 
 def test_relations_item():
-    with CATIADocHandler(cat_part_3) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
         part = document.part()
 
         relations = part.relations
         relation = relations.item(1)
-        assert relation.name == 'Formula.1'
+        assert relation.name == 'formula_1'
 
 
 def test_relations_sub_list():
@@ -217,14 +221,14 @@ def test_relations_sub_list():
 
 
 def test_relations_remove():
-    with CATIADocHandler(cat_part_3) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
         part = document.part()
 
         relations = part.relations
         relation = relations.item(1)
-        assert relation.name == 'Formula.1'
+        assert relation.name == 'formula_1'
 
         relations.remove(1)
         relation = relations.item(1)
-        assert relation.name != 'Formula.1'
+        assert relation.name != 'formula_1'

@@ -20,8 +20,8 @@ requires = [
 ]
 
 test_requirements = [
-    'pytest == 4.0.0',
-    'pytest-cov == 2.6.0',
+    'pytest == 5.4.2',
+    'pytest-cov == 2.8.1',
 ]
 
 with open("README.rst", "r") as fh:
