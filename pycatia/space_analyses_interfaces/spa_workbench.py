@@ -42,7 +42,7 @@ class SPAWorkbench(Workbench):
         self.spa_workbench = com_object.GetWorkbench("SPAWorkbench")
 
     @property
-    def clashes(self):
+    def clashes(self) -> Clashes:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -66,12 +66,13 @@ class SPAWorkbench(Workbench):
                 |             Set TheClashesList = TheSPAWorkbench.Clashes
 
         :return: Clashes
+        :rtype: Clashes
         """
 
         return Clashes(self.spa_workbench.Clashes)
 
     @property
-    def distances(self):
+    def distances(self) -> Distances:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -95,12 +96,13 @@ class SPAWorkbench(Workbench):
                 |             Set TheDistancesList = TheSPAWorkbench.Distances
 
         :return: Distances
+        :rtype: Distances
         """
 
         return Distances(self.spa_workbench.Distances)
 
     @property
-    def inertias(self):
+    def inertias(self) -> Inertias:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -124,12 +126,13 @@ class SPAWorkbench(Workbench):
                 |             Set TheInertiasList = TheSPAWorkbench.Inertias
 
         :return: Inertias
+        :rtype: Inertias
         """
 
         return Inertias(self.spa_workbench.Inertias)
 
     @property
-    def sections(self):
+    def sections(self) -> Sections:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -153,11 +156,12 @@ class SPAWorkbench(Workbench):
                 |             Set TheSectionsList = TheSPAWorkbench.Sections
 
         :return: Sections
+        :rtype: Sections
         """
 
         return Sections(self.spa_workbench.Sections)
 
-    def get_measurable(self, i_measured_item=None):
+    def get_measurable(self, i_measured_item: Reference) -> Measurable:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -180,6 +184,7 @@ class SPAWorkbench(Workbench):
 
         :param Reference i_measured_item:
         :return: Measurable
+        :rtype: Measurable
         """
         return Measurable(self.spa_workbench.GetMeasurable(i_measured_item.com_object))
 
