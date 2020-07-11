@@ -9,6 +9,7 @@
 
 """
 
+from pycatia.in_interfaces.reference import Reference
 from pycatia.in_interfaces.workbench import Workbench
 from pycatia.space_analyses_interfaces.clashes import Clashes
 from pycatia.space_analyses_interfaces.distances import Distances
