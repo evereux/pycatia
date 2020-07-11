@@ -17,7 +17,7 @@ class Conflict(AnyObject):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -38,10 +38,10 @@ class Conflict(AnyObject):
         self.conflict = com_object
 
     @property
-    def comment(self):
+    def comment(self) -> str:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Comment() As CATBSTR
                 | 
                 |     Returns or sets a comment on the conflict.
@@ -66,12 +66,13 @@ class Conflict(AnyObject):
                 |                 NewConflict.Comment = "OK : plastic part"
 
         :return: str
+        :rtype: str
         """
 
         return self.conflict.Comment
 
     @comment.setter
-    def comment(self, value):
+    def comment(self, value: str):
         """
         :param str value:
         """
@@ -79,10 +80,10 @@ class Conflict(AnyObject):
         self.conflict.Comment = value
 
     @property
-    def comparison_info(self):
+    def comparison_info(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ComparisonInfo() As CatConflictComparison (Read
                 | Only)
                 | 
@@ -98,16 +99,17 @@ class Conflict(AnyObject):
                 |             Dim anInfo As CatConflictComparison
                 |             anInfo = NewConflict.ComparisonInfo
 
-        :return: enum cat_conflict_comparison
+        :return: int
+        :rtype: int
         """
 
         return self.conflict.ComparisonInfo
 
     @property
-    def first_product(self):
+    def first_product(self) -> Product:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstProduct() As Product (Read Only)
                 | 
                 |     Returns the first product involved in the conflict.
@@ -122,15 +124,16 @@ class Conflict(AnyObject):
                 |             Set aProduct = NewConflict.FirstProduct
 
         :return: Product
+        :rtype: Product
         """
 
         return Product(self.conflict.FirstProduct)
 
     @property
-    def second_product(self):
+    def second_product(self) -> Product:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondProduct() As Product (Read Only)
                 | 
                 |     Returns the second product involved in the conflict.
@@ -145,15 +148,16 @@ class Conflict(AnyObject):
                 |             Set aProduct = NewConflict.SecondProduct
 
         :return: Product
+        :rtype: Product
         """
 
         return Product(self.conflict.SecondProduct)
 
     @property
-    def status(self):
+    def status(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Status() As CatConflictStatus
                 | 
                 |     Returns or sets the status of the conflict.
@@ -177,24 +181,25 @@ class Conflict(AnyObject):
                 | 
                 |                 NewConflict.Status = CatConflictStatusIrrelevant
 
-        :return: enum cat_conflict_status
+        :return: int
+        :rtype: int
         """
 
         return self.conflict.Status
 
     @status.setter
-    def status(self, value):
+    def status(self, value: int):
         """
-        :param enum cat_conflict_status value:
+        :param int value:
         """
 
         self.conflict.Status = value
 
     @property
-    def type(self):
+    def type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Type() As CatConflictType (Read Only)
                 | 
                 |     Returns the type of the conflict.
@@ -208,16 +213,17 @@ class Conflict(AnyObject):
                 |             Dim conflictType As CatConflictType
                 |             conflictType = NewConflict.Type
 
-        :return: enum cat_conflict_type
+        :return: int
+        :rtype: int
         """
 
         return self.conflict.Type
 
     @property
-    def value(self):
+    def value(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Value() As double (Read Only)
                 | 
                 |     Returns the conflict value.
@@ -235,14 +241,15 @@ class Conflict(AnyObject):
                 |             conflictValue = NewConflict.Value
 
         :return: float
+        :rtype: float
         """
 
         return self.conflict.Value
 
-    def get_first_point_coordinates(self, o_coordinates=None):
+    def get_first_point_coordinates(self, o_coordinates: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetFirstPointCoordinates(CATSafeArrayVariant
                 | oCoordinates)
                 | 
@@ -269,6 +276,7 @@ class Conflict(AnyObject):
 
         :param tuple o_coordinates:
         :return: None
+        :rtype: None
         """
         return self.conflict.GetFirstPointCoordinates(o_coordinates)
         # # # # Autogenerated comment: 
@@ -287,10 +295,10 @@ class Conflict(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_second_point_coordinates(self, o_coordinates=None):
+    def get_second_point_coordinates(self, o_coordinates: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetSecondPointCoordinates(CATSafeArrayVariant
                 | oCoordinates)
                 | 
@@ -317,6 +325,7 @@ class Conflict(AnyObject):
 
         :param tuple o_coordinates:
         :return: None
+        :rtype: None
         """
         return self.conflict.GetSecondPointCoordinates(o_coordinates)
         # # # # Autogenerated comment: 

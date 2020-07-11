@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class SectioningSettingAtt(SettingController):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -35,34 +34,35 @@ class SectioningSettingAtt(SettingController):
         self.sectioning_setting_att = com_object
 
     @property
-    def clipping_mode(self):
+    def clipping_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ClippingMode() As CatSectionClippingMode
                 | 
                 |     Returns or sets the ClippingMode parameter.
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: enum cat_section_clipping_mode
+        :return: int
+        :rtype: int
         """
 
         return self.sectioning_setting_att.ClippingMode
 
     @clipping_mode.setter
-    def clipping_mode(self, value):
+    def clipping_mode(self, value: int):
         """
-        :param enum cat_section_clipping_mode value:
+        :param int value:
         """
 
         self.sectioning_setting_att.ClippingMode = value
 
     @property
-    def display_cut_in_wireframe(self):
+    def display_cut_in_wireframe(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DisplayCutInWireframe() As boolean
                 | 
                 |     Returns or sets the DisplayCutInWireframe parameter.
@@ -70,12 +70,13 @@ class SectioningSettingAtt(SettingController):
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.sectioning_setting_att.DisplayCutInWireframe
 
     @display_cut_in_wireframe.setter
-    def display_cut_in_wireframe(self, value):
+    def display_cut_in_wireframe(self, value: bool):
         """
         :param bool value:
         """
@@ -83,10 +84,10 @@ class SectioningSettingAtt(SettingController):
         self.sectioning_setting_att.DisplayCutInWireframe = value
 
     @property
-    def grid_auto_filtering(self):
+    def grid_auto_filtering(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property GridAutoFiltering() As boolean
                 | 
                 |     Returns or sets the GridAutoFiltering parameter.
@@ -94,12 +95,13 @@ class SectioningSettingAtt(SettingController):
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.sectioning_setting_att.GridAutoFiltering
 
     @grid_auto_filtering.setter
-    def grid_auto_filtering(self, value):
+    def grid_auto_filtering(self, value: bool):
         """
         :param bool value:
         """
@@ -107,10 +109,10 @@ class SectioningSettingAtt(SettingController):
         self.sectioning_setting_att.GridAutoFiltering = value
 
     @property
-    def grid_auto_resize(self):
+    def grid_auto_resize(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property GridAutoResize() As boolean
                 | 
                 |     Returns or sets the GridAutoResize parameter.
@@ -118,12 +120,13 @@ class SectioningSettingAtt(SettingController):
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.sectioning_setting_att.GridAutoResize
 
     @grid_auto_resize.setter
-    def grid_auto_resize(self, value):
+    def grid_auto_resize(self, value: bool):
         """
         :param bool value:
         """
@@ -131,10 +134,10 @@ class SectioningSettingAtt(SettingController):
         self.sectioning_setting_att.GridAutoResize = value
 
     @property
-    def grid_height_step(self):
+    def grid_height_step(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property GridHeightStep() As float
                 | 
                 |     Returns or sets the GridHeightStep parameter.
@@ -142,12 +145,13 @@ class SectioningSettingAtt(SettingController):
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :return: float
+        :rtype: float
         """
 
         return self.sectioning_setting_att.GridHeightStep
 
     @grid_height_step.setter
-    def grid_height_step(self, value):
+    def grid_height_step(self, value: float):
         """
         :param float value:
         """
@@ -155,58 +159,60 @@ class SectioningSettingAtt(SettingController):
         self.sectioning_setting_att.GridHeightStep = value
 
     @property
-    def grid_position_mode(self):
+    def grid_position_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property GridPositionMode() As CatGridPositionMode
                 | 
                 |     Returns or sets the GridPositionMode parameter.
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: enum cat_grid_position_mode
+        :return: int
+        :rtype: int
         """
 
         return self.sectioning_setting_att.GridPositionMode
 
     @grid_position_mode.setter
-    def grid_position_mode(self, value):
+    def grid_position_mode(self, value: int):
         """
-        :param enum cat_grid_position_mode value:
+        :param int value:
         """
 
         self.sectioning_setting_att.GridPositionMode = value
 
     @property
-    def grid_style(self):
+    def grid_style(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property GridStyle() As CatSectionGridStyle
                 | 
                 |     Returns or sets the GridStyle parameter.
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: enum cat_section_grid_style
+        :return: int
+        :rtype: int
         """
 
         return self.sectioning_setting_att.GridStyle
 
     @grid_style.setter
-    def grid_style(self, value):
+    def grid_style(self, value: int):
         """
-        :param enum cat_section_grid_style value:
+        :param int value:
         """
 
         self.sectioning_setting_att.GridStyle = value
 
     @property
-    def grid_width_step(self):
+    def grid_width_step(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property GridWidthStep() As float
                 | 
                 |     Returns or sets the GridWidthStep parameter.
@@ -214,12 +220,13 @@ class SectioningSettingAtt(SettingController):
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :return: float
+        :rtype: float
         """
 
         return self.sectioning_setting_att.GridWidthStep
 
     @grid_width_step.setter
-    def grid_width_step(self, value):
+    def grid_width_step(self, value: float):
         """
         :param float value:
         """
@@ -227,10 +234,10 @@ class SectioningSettingAtt(SettingController):
         self.sectioning_setting_att.GridWidthStep = value
 
     @property
-    def hide_plane(self):
+    def hide_plane(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HidePlane() As boolean
                 | 
                 |     Returns or sets the HidePlane parameter.
@@ -238,12 +245,13 @@ class SectioningSettingAtt(SettingController):
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.sectioning_setting_att.HidePlane
 
     @hide_plane.setter
-    def hide_plane(self, value):
+    def hide_plane(self, value: bool):
         """
         :param bool value:
         """
@@ -251,10 +259,10 @@ class SectioningSettingAtt(SettingController):
         self.sectioning_setting_att.HidePlane = value
 
     @property
-    def hide_result(self):
+    def hide_result(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HideResult() As boolean
                 | 
                 |     Returns or sets the HideResult parameter.
@@ -262,12 +270,13 @@ class SectioningSettingAtt(SettingController):
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.sectioning_setting_att.HideResult
 
     @hide_result.setter
-    def hide_result(self, value):
+    def hide_result(self, value: bool):
         """
         :param bool value:
         """
@@ -275,58 +284,60 @@ class SectioningSettingAtt(SettingController):
         self.sectioning_setting_att.HideResult = value
 
     @property
-    def plane_normal(self):
+    def plane_normal(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PlaneNormal() As CatSectionPlaneNormal
                 | 
                 |     Returns or sets the PlaneNormal parameter.
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: enum cat_section_plane_normal
+        :return: int
+        :rtype: int
         """
 
         return self.sectioning_setting_att.PlaneNormal
 
     @plane_normal.setter
-    def plane_normal(self, value):
+    def plane_normal(self, value: int):
         """
-        :param enum cat_section_plane_normal value:
+        :param int value:
         """
 
         self.sectioning_setting_att.PlaneNormal = value
 
     @property
-    def plane_origin(self):
+    def plane_origin(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PlaneOrigin() As CatSectionPlaneOrigin
                 | 
                 |     Returns or sets the PlaneOrigin parameter.
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: enum cat_section_plane_origin
+        :return: int
+        :rtype: int
         """
 
         return self.sectioning_setting_att.PlaneOrigin
 
     @plane_origin.setter
-    def plane_origin(self, value):
+    def plane_origin(self, value: int):
         """
-        :param enum cat_section_plane_origin value:
+        :param int value:
         """
 
         self.sectioning_setting_att.PlaneOrigin = value
 
     @property
-    def section_export_type(self):
+    def section_export_type(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SectionExportType() As boolean
                 | 
                 |     Returns or sets the SectionExportType parameter.
@@ -334,12 +345,13 @@ class SectioningSettingAtt(SettingController):
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.sectioning_setting_att.SectionExportType
 
     @section_export_type.setter
-    def section_export_type(self, value):
+    def section_export_type(self, value: bool):
         """
         :param bool value:
         """
@@ -347,10 +359,10 @@ class SectioningSettingAtt(SettingController):
         self.sectioning_setting_att.SectionExportType = value
 
     @property
-    def section_fill(self):
+    def section_fill(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SectionFill() As boolean
                 | 
                 |     Returns or sets the SectionFill parameter.
@@ -358,12 +370,13 @@ class SectioningSettingAtt(SettingController):
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.sectioning_setting_att.SectionFill
 
     @section_fill.setter
-    def section_fill(self, value):
+    def section_fill(self, value: bool):
         """
         :param bool value:
         """
@@ -371,10 +384,10 @@ class SectioningSettingAtt(SettingController):
         self.sectioning_setting_att.SectionFill = value
 
     @property
-    def update_result(self):
+    def update_result(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property UpdateResult() As boolean
                 | 
                 |     Returns or sets the UpdateResult parameter.
@@ -382,12 +395,13 @@ class SectioningSettingAtt(SettingController):
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.sectioning_setting_att.UpdateResult
 
     @update_result.setter
-    def update_result(self, value):
+    def update_result(self, value: bool):
         """
         :param bool value:
         """
@@ -395,10 +409,10 @@ class SectioningSettingAtt(SettingController):
         self.sectioning_setting_att.UpdateResult = value
 
     @property
-    def viewer_auto_open(self):
+    def viewer_auto_open(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ViewerAutoOpen() As boolean
                 | 
                 |     Returns or sets the ViewerAutoOpen parameter.
@@ -406,12 +420,13 @@ class SectioningSettingAtt(SettingController):
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.sectioning_setting_att.ViewerAutoOpen
 
     @viewer_auto_open.setter
-    def viewer_auto_open(self, value):
+    def viewer_auto_open(self, value: bool):
         """
         :param bool value:
         """
@@ -419,10 +434,10 @@ class SectioningSettingAtt(SettingController):
         self.sectioning_setting_att.ViewerAutoOpen = value
 
     @property
-    def viewer_auto_reframe(self):
+    def viewer_auto_reframe(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ViewerAutoReframe() As boolean
                 | 
                 |     Returns or sets the ViewerAutoReframe parameter.
@@ -430,12 +445,13 @@ class SectioningSettingAtt(SettingController):
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.sectioning_setting_att.ViewerAutoReframe
 
     @viewer_auto_reframe.setter
-    def viewer_auto_reframe(self, value):
+    def viewer_auto_reframe(self, value: bool):
         """
         :param bool value:
         """
@@ -443,10 +459,10 @@ class SectioningSettingAtt(SettingController):
         self.sectioning_setting_att.ViewerAutoReframe = value
 
     @property
-    def viewer_lock2_d(self):
+    def viewer_lock_2d(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ViewerLock2D() As boolean
                 | 
                 |     Returns or sets the ViewerLock2D parameter.
@@ -454,12 +470,13 @@ class SectioningSettingAtt(SettingController):
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.sectioning_setting_att.ViewerLock2D
 
-    @viewer_lock2_d.setter
-    def viewer_lock2_d(self, value):
+    @viewer_lock_2d.setter
+    def viewer_lock_2d(self, value: bool):
         """
         :param bool value:
         """
@@ -467,10 +484,10 @@ class SectioningSettingAtt(SettingController):
         self.sectioning_setting_att.ViewerLock2D = value
 
     @property
-    def window_default_height(self):
+    def window_default_height(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property WindowDefaultHeight() As long
                 | 
                 | 
@@ -486,12 +503,13 @@ class SectioningSettingAtt(SettingController):
                 |         retrieved the window open mode
 
         :return: int
+        :rtype: int
         """
 
         return self.sectioning_setting_att.WindowDefaultHeight
 
     @window_default_height.setter
-    def window_default_height(self, value):
+    def window_default_height(self, value: int):
         """
         :param int value:
         """
@@ -499,10 +517,10 @@ class SectioningSettingAtt(SettingController):
         self.sectioning_setting_att.WindowDefaultHeight = value
 
     @property
-    def window_default_width(self):
+    def window_default_width(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property WindowDefaultWidth() As long
                 | 
                 | 
@@ -518,12 +536,13 @@ class SectioningSettingAtt(SettingController):
                 |         retrieved the window open mode
 
         :return: int
+        :rtype: int
         """
 
         return self.sectioning_setting_att.WindowDefaultWidth
 
     @window_default_width.setter
-    def window_default_width(self, value):
+    def window_default_width(self, value: int):
         """
         :param int value:
         """
@@ -531,10 +550,10 @@ class SectioningSettingAtt(SettingController):
         self.sectioning_setting_att.WindowDefaultWidth = value
 
     @property
-    def window_open_mode(self):
+    def window_open_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property WindowOpenMode() As CatSecWindowOpenMode
                 | 
                 | 
@@ -553,23 +572,24 @@ class SectioningSettingAtt(SettingController):
                 |         S_OK Successfully retieved the window open mode E_FAIL Failed to
                 |         retrieved the window open mode
 
-        :return: enum cat_sec_window_open_mode
+        :return: int
+        :rtype: int
         """
 
         return self.sectioning_setting_att.WindowOpenMode
 
     @window_open_mode.setter
-    def window_open_mode(self, value):
+    def window_open_mode(self, value: int):
         """
-        :param enum cat_sec_window_open_mode value:
+        :param int value:
         """
 
         self.sectioning_setting_att.WindowOpenMode = value
 
-    def get_clipping_mode_info(self, io_admin_level=None, io_locked=None):
+    def get_clipping_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetClippingModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -597,13 +617,14 @@ class SectioningSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.sectioning_setting_att.GetClippingModeInfo(io_admin_level, io_locked)
 
-    def get_display_cut_in_wireframe_info(self, io_admin_level=None, io_locked=None):
+    def get_display_cut_in_wireframe_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDisplayCutInWireframeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -631,13 +652,14 @@ class SectioningSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.sectioning_setting_att.GetDisplayCutInWireframeInfo(io_admin_level, io_locked)
 
-    def get_grid_auto_filtering_info(self, io_admin_level=None, io_locked=None):
+    def get_grid_auto_filtering_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetGridAutoFilteringInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -665,13 +687,14 @@ class SectioningSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.sectioning_setting_att.GetGridAutoFilteringInfo(io_admin_level, io_locked)
 
-    def get_grid_auto_resize_info(self, io_admin_level=None, io_locked=None):
+    def get_grid_auto_resize_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetGridAutoResizeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -699,13 +722,14 @@ class SectioningSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.sectioning_setting_att.GetGridAutoResizeInfo(io_admin_level, io_locked)
 
-    def get_grid_height_step_info(self, io_admin_level=None, io_locked=None):
+    def get_grid_height_step_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetGridHeightStepInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -733,13 +757,14 @@ class SectioningSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.sectioning_setting_att.GetGridHeightStepInfo(io_admin_level, io_locked)
 
-    def get_grid_position_mode_info(self, io_admin_level=None, io_locked=None):
+    def get_grid_position_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetGridPositionModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -767,13 +792,14 @@ class SectioningSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.sectioning_setting_att.GetGridPositionModeInfo(io_admin_level, io_locked)
 
-    def get_grid_style_info(self, io_admin_level=None, io_locked=None):
+    def get_grid_style_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetGridStyleInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -801,13 +827,14 @@ class SectioningSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.sectioning_setting_att.GetGridStyleInfo(io_admin_level, io_locked)
 
-    def get_grid_width_step_info(self, io_admin_level=None, io_locked=None):
+    def get_grid_width_step_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetGridWidthStepInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -835,13 +862,14 @@ class SectioningSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.sectioning_setting_att.GetGridWidthStepInfo(io_admin_level, io_locked)
 
-    def get_hide_plane_info(self, io_admin_level=None, io_locked=None):
+    def get_hide_plane_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetHidePlaneInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -869,13 +897,14 @@ class SectioningSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.sectioning_setting_att.GetHidePlaneInfo(io_admin_level, io_locked)
 
-    def get_hide_result_info(self, io_admin_level=None, io_locked=None):
+    def get_hide_result_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetHideResultInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -903,13 +932,14 @@ class SectioningSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.sectioning_setting_att.GetHideResultInfo(io_admin_level, io_locked)
 
-    def get_plane_color(self, o_r=None, o_g=None, o_b=None):
+    def get_plane_color(self, o_r: int, o_g: int, o_b: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetPlaneColor(long oR,
                 | long oG,
                 | long oB)
@@ -932,13 +962,14 @@ class SectioningSettingAtt(SettingController):
         :param int o_g:
         :param int o_b:
         :return: None
+        :rtype: None
         """
         return self.sectioning_setting_att.GetPlaneColor(o_r, o_g, o_b)
 
-    def get_plane_color_info(self, io_admin_level=None, io_locked=None):
+    def get_plane_color_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPlaneColorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -966,13 +997,14 @@ class SectioningSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.sectioning_setting_att.GetPlaneColorInfo(io_admin_level, io_locked)
 
-    def get_plane_normal_info(self, io_admin_level=None, io_locked=None):
+    def get_plane_normal_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPlaneNormalInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1000,13 +1032,14 @@ class SectioningSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.sectioning_setting_att.GetPlaneNormalInfo(io_admin_level, io_locked)
 
-    def get_plane_origin_info(self, io_admin_level=None, io_locked=None):
+    def get_plane_origin_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPlaneOriginInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1034,13 +1067,14 @@ class SectioningSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.sectioning_setting_att.GetPlaneOriginInfo(io_admin_level, io_locked)
 
-    def get_section_export_type_info(self, io_admin_level=None, io_locked=None):
+    def get_section_export_type_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetSectionExportTypeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1068,13 +1102,14 @@ class SectioningSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.sectioning_setting_att.GetSectionExportTypeInfo(io_admin_level, io_locked)
 
-    def get_section_fill_info(self, io_admin_level=None, io_locked=None):
+    def get_section_fill_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetSectionFillInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1102,13 +1137,14 @@ class SectioningSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.sectioning_setting_att.GetSectionFillInfo(io_admin_level, io_locked)
 
-    def get_update_result_info(self, io_admin_level=None, io_locked=None):
+    def get_update_result_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetUpdateResultInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1136,13 +1172,14 @@ class SectioningSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.sectioning_setting_att.GetUpdateResultInfo(io_admin_level, io_locked)
 
-    def get_viewer_auto_open_info(self, io_admin_level=None, io_locked=None):
+    def get_viewer_auto_open_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetViewerAutoOpenInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1170,13 +1207,14 @@ class SectioningSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.sectioning_setting_att.GetViewerAutoOpenInfo(io_admin_level, io_locked)
 
-    def get_viewer_auto_reframe_info(self, io_admin_level=None, io_locked=None):
+    def get_viewer_auto_reframe_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetViewerAutoReframeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1204,13 +1242,14 @@ class SectioningSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.sectioning_setting_att.GetViewerAutoReframeInfo(io_admin_level, io_locked)
 
-    def get_viewer_lock2_d_info(self, io_admin_level=None, io_locked=None):
+    def get_viewer_lock2_d_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetViewerLock2DInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1238,13 +1277,14 @@ class SectioningSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.sectioning_setting_att.GetViewerLock2DInfo(io_admin_level, io_locked)
 
-    def get_window_default_height_info(self, io_admin_level=None, io_locked=None):
+    def get_window_default_height_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetWindowDefaultHeightInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1272,13 +1312,14 @@ class SectioningSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.sectioning_setting_att.GetWindowDefaultHeightInfo(io_admin_level, io_locked)
 
-    def get_window_default_width_info(self, io_admin_level=None, io_locked=None):
+    def get_window_default_width_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetWindowDefaultWidthInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1306,13 +1347,14 @@ class SectioningSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.sectioning_setting_att.GetWindowDefaultWidthInfo(io_admin_level, io_locked)
 
-    def get_window_open_mode_info(self, io_admin_level=None, io_locked=None):
+    def get_window_open_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetWindowOpenModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1340,13 +1382,14 @@ class SectioningSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.sectioning_setting_att.GetWindowOpenModeInfo(io_admin_level, io_locked)
 
-    def set_clipping_mode_lock(self, i_locked=None):
+    def set_clipping_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetClippingModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ClippingMode parameter.
@@ -1364,6 +1407,7 @@ class SectioningSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.sectioning_setting_att.SetClippingModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -1382,10 +1426,10 @@ class SectioningSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_display_cut_in_wireframe_lock(self, i_locked=None):
+    def set_display_cut_in_wireframe_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDisplayCutInWireframeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the DisplayCutInWireframe parameter.
@@ -1403,6 +1447,7 @@ class SectioningSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.sectioning_setting_att.SetDisplayCutInWireframeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -1421,10 +1466,10 @@ class SectioningSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_grid_auto_filtering_lock(self, i_locked=None):
+    def set_grid_auto_filtering_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetGridAutoFilteringLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the GridAutoFiltering parameter.
@@ -1442,6 +1487,7 @@ class SectioningSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.sectioning_setting_att.SetGridAutoFilteringLock(i_locked)
         # # # # Autogenerated comment: 
@@ -1460,10 +1506,10 @@ class SectioningSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_grid_auto_resize_lock(self, i_locked=None):
+    def set_grid_auto_resize_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetGridAutoResizeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the GridAutoResize parameter.
@@ -1481,6 +1527,7 @@ class SectioningSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.sectioning_setting_att.SetGridAutoResizeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -1499,10 +1546,10 @@ class SectioningSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_grid_height_step_lock(self, i_locked=None):
+    def set_grid_height_step_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetGridHeightStepLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the GridHeightStep parameter.
@@ -1520,6 +1567,7 @@ class SectioningSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.sectioning_setting_att.SetGridHeightStepLock(i_locked)
         # # # # Autogenerated comment: 
@@ -1538,10 +1586,10 @@ class SectioningSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_grid_position_mode_lock(self, i_locked=None):
+    def set_grid_position_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetGridPositionModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the GridPositionMode parameter.
@@ -1559,6 +1607,7 @@ class SectioningSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.sectioning_setting_att.SetGridPositionModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -1577,10 +1626,10 @@ class SectioningSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_grid_style_lock(self, i_locked=None):
+    def set_grid_style_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetGridStyleLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the GridStyle parameter.
@@ -1598,6 +1647,7 @@ class SectioningSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.sectioning_setting_att.SetGridStyleLock(i_locked)
         # # # # Autogenerated comment: 
@@ -1616,10 +1666,10 @@ class SectioningSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_grid_width_step_lock(self, i_locked=None):
+    def set_grid_width_step_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetGridWidthStepLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the GridWidthStep parameter.
@@ -1637,6 +1687,7 @@ class SectioningSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.sectioning_setting_att.SetGridWidthStepLock(i_locked)
         # # # # Autogenerated comment: 
@@ -1655,10 +1706,10 @@ class SectioningSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_hide_plane_lock(self, i_locked=None):
+    def set_hide_plane_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetHidePlaneLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the HidePlane parameter.
@@ -1676,6 +1727,7 @@ class SectioningSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.sectioning_setting_att.SetHidePlaneLock(i_locked)
         # # # # Autogenerated comment: 
@@ -1694,10 +1746,10 @@ class SectioningSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_hide_result_lock(self, i_locked=None):
+    def set_hide_result_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetHideResultLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the HideResult parameter.
@@ -1715,6 +1767,7 @@ class SectioningSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.sectioning_setting_att.SetHideResultLock(i_locked)
         # # # # Autogenerated comment: 
@@ -1733,10 +1786,10 @@ class SectioningSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_plane_color(self, i_r=None, i_g=None, i_b=None):
+    def set_plane_color(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPlaneColor(long iR,
                 | long iG,
                 | long iB)
@@ -1759,13 +1812,14 @@ class SectioningSettingAtt(SettingController):
         :param int i_g:
         :param int i_b:
         :return: None
+        :rtype: None
         """
         return self.sectioning_setting_att.SetPlaneColor(i_r, i_g, i_b)
 
-    def set_plane_color_lock(self, i_locked=None):
+    def set_plane_color_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPlaneColorLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PlaneColor parameter.
@@ -1783,6 +1837,7 @@ class SectioningSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.sectioning_setting_att.SetPlaneColorLock(i_locked)
         # # # # Autogenerated comment: 
@@ -1801,10 +1856,10 @@ class SectioningSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_plane_normal_lock(self, i_locked=None):
+    def set_plane_normal_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPlaneNormalLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PlaneNormal parameter.
@@ -1822,6 +1877,7 @@ class SectioningSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.sectioning_setting_att.SetPlaneNormalLock(i_locked)
         # # # # Autogenerated comment: 
@@ -1840,10 +1896,10 @@ class SectioningSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_plane_origin_lock(self, i_locked=None):
+    def set_plane_origin_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPlaneOriginLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PlaneOrigin parameter.
@@ -1861,6 +1917,7 @@ class SectioningSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.sectioning_setting_att.SetPlaneOriginLock(i_locked)
         # # # # Autogenerated comment: 
@@ -1879,10 +1936,10 @@ class SectioningSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_section_export_type_lock(self, i_locked=None):
+    def set_section_export_type_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSectionExportTypeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SectionExportType parameter.
@@ -1900,6 +1957,7 @@ class SectioningSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.sectioning_setting_att.SetSectionExportTypeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -1918,10 +1976,10 @@ class SectioningSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_section_fill_lock(self, i_locked=None):
+    def set_section_fill_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSectionFillLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SectionFill parameter.
@@ -1939,6 +1997,7 @@ class SectioningSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.sectioning_setting_att.SetSectionFillLock(i_locked)
         # # # # Autogenerated comment: 
@@ -1957,10 +2016,10 @@ class SectioningSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_update_result_lock(self, i_locked=None):
+    def set_update_result_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetUpdateResultLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the UpdateResult parameter.
@@ -1978,6 +2037,7 @@ class SectioningSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.sectioning_setting_att.SetUpdateResultLock(i_locked)
         # # # # Autogenerated comment: 
@@ -1996,10 +2056,10 @@ class SectioningSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_viewer_auto_open_lock(self, i_locked=None):
+    def set_viewer_auto_open_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetViewerAutoOpenLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ViewerAutoOpen parameter.
@@ -2017,6 +2077,7 @@ class SectioningSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.sectioning_setting_att.SetViewerAutoOpenLock(i_locked)
         # # # # Autogenerated comment: 
@@ -2035,10 +2096,10 @@ class SectioningSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_viewer_auto_reframe_lock(self, i_locked=None):
+    def set_viewer_auto_reframe_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetViewerAutoReframeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ViewerAutoReframe parameter.
@@ -2056,6 +2117,7 @@ class SectioningSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.sectioning_setting_att.SetViewerAutoReframeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -2074,10 +2136,10 @@ class SectioningSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_viewer_lock2_d_lock(self, i_locked=None):
+    def set_viewer_lock2_d_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetViewerLock2DLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ViewerLock2D parameter.
@@ -2095,6 +2157,7 @@ class SectioningSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.sectioning_setting_att.SetViewerLock2DLock(i_locked)
         # # # # Autogenerated comment: 
@@ -2113,10 +2176,10 @@ class SectioningSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_window_default_height_lock(self, i_locked=None):
+    def set_window_default_height_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetWindowDefaultHeightLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the WindowDefaultHeight parameter.
@@ -2134,6 +2197,7 @@ class SectioningSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.sectioning_setting_att.SetWindowDefaultHeightLock(i_locked)
         # # # # Autogenerated comment: 
@@ -2152,10 +2216,10 @@ class SectioningSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_window_default_width_lock(self, i_locked=None):
+    def set_window_default_width_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetWindowDefaultWidthLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the WindowDefaultWidth parameter.
@@ -2173,6 +2237,7 @@ class SectioningSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.sectioning_setting_att.SetWindowDefaultWidthLock(i_locked)
         # # # # Autogenerated comment: 
@@ -2191,10 +2256,10 @@ class SectioningSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_window_open_mode_lock(self, i_locked=None):
+    def set_window_open_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetWindowOpenModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the WindowOpenMode parameter.
@@ -2212,6 +2277,7 @@ class SectioningSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.sectioning_setting_att.SetWindowOpenModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -2231,4 +2297,4 @@ class SectioningSettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'SectioningSettingAtt(name="{ self.name }")'
+        return f'SectioningSettingAtt(name="{self.name}")'
