@@ -42,7 +42,7 @@ class SPAWorkbench(Workbench):
         self.spa_workbench = com_object.GetWorkbench("SPAWorkbench")
 
     @property
-    def clashes(self):
+    def clashes(self) -> Clashes:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -66,111 +66,115 @@ class SPAWorkbench(Workbench):
                 |             Set TheClashesList = TheSPAWorkbench.Clashes
 
         :return: Clashes
+        :rtype: Clashes
         """
 
         return Clashes(self.spa_workbench.Clashes)
 
     @property
-    def distances(self):
+    def distances(self) -> Distances:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Distances() As Distances (Read Only)
                 | 
                 |     Returns the Distances collection.
-                |
+                | 
                 |     WARNING: this method will be DEPRECATED in the next release. It is
                 |     recommended to use the method GetTechnologicalObject("Distances") on the root
                 |     product, to retrieve the Distances collection.
-                |
+                | 
                 |     Example:
-                |
+                | 
                 |              This example retrieves the Distances collection of the active
                 |              document.
-                |
-                |
+                |             
+                | 
                 |             Dim TheSPAWorkbench As Workbench
                 |             Set TheSPAWorkbench = CATIA.ActiveDocument.GetWorkbench ( "SPAWorkbench" )
                 |             Dim TheDistancesList As Distances
                 |             Set TheDistancesList = TheSPAWorkbench.Distances
 
         :return: Distances
+        :rtype: Distances
         """
 
         return Distances(self.spa_workbench.Distances)
 
     @property
-    def inertias(self):
+    def inertias(self) -> Inertias:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Inertias() As Inertias (Read Only)
                 | 
                 |     Returns the Inertias collection.
-                |
+                | 
                 |     WARNING: this method will be DEPRECATED in the next release. It is
                 |     recommended to use the method GetTechnologicalObject("Inertia") on the product
                 |     to analyze, to retrieve an Inertia object.
-                |
+                | 
                 |     Example:
-                |
+                | 
                 |              This example retrieves the Inertias collection of the active
                 |              document.
-                |
-                |
+                |             
+                | 
                 |             Dim TheSPAWorkbench As Workbench
                 |             Set TheSPAWorkbench = CATIA.ActiveDocument.GetWorkbench ( "SPAWorkbench" )
                 |             Dim TheInertiasList As Inertias
                 |             Set TheInertiasList = TheSPAWorkbench.Inertias
 
         :return: Inertias
+        :rtype: Inertias
         """
 
         return Inertias(self.spa_workbench.Inertias)
 
     @property
-    def sections(self):
+    def sections(self) -> Sections:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Sections() As Sections (Read Only)
                 | 
                 |     Returns the Sections collection.
-                |
+                | 
                 |     WARNING: this method will be DEPRECATED in the next release. It is
                 |     recommended to use the method GetTechnologicalObject("Sections") on the root
                 |     product, to retrieve the Sections collection.
-                |
+                | 
                 |     Example:
-                |
+                | 
                 |              This example retrieves the Sections collection of the active
                 |              document.
-                |
-                |
+                |             
+                | 
                 |             Dim TheSPAWorkbench As Workbench
                 |             Set TheSPAWorkbench = CATIA.ActiveDocument.GetWorkbench ( "SPAWorkbench" )
                 |             Dim TheSectionsList As Sections
                 |             Set TheSectionsList = TheSPAWorkbench.Sections
 
         :return: Sections
+        :rtype: Sections
         """
 
         return Sections(self.spa_workbench.Sections)
 
-    def get_measurable(self, i_measured_item=None):
+    def get_measurable(self, i_measured_item: Reference) -> Measurable:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMeasurable(Reference iMeasuredItem) As Measurable
                 | 
                 |     Returns the Measurable object.
-                |
+                | 
                 |     Example:
-                |
+                | 
                 |              This example get the Measurable from the
                 |              SPAWorkBench.
-                |
-                |
+                |             
+                | 
                 |             Dim referenceObject As referenceObject
                 |             Set referenceObject = "GetReference"
                 |             Dim TheSPAWorkbench As Workbench
@@ -180,8 +184,9 @@ class SPAWorkbench(Workbench):
 
         :param Reference i_measured_item:
         :return: Measurable
+        :rtype: Measurable
         """
         return Measurable(self.spa_workbench.GetMeasurable(i_measured_item.com_object))
 
     def __repr__(self):
-        return f'SpaWorkbench(name="{self.name}")'
+        return f'SpaWorkbench(name="{ self.name }")'

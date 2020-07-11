@@ -34,7 +34,7 @@ class Conflicts(Collection):
         super().__init__(com_object)
         self.conflicts = com_object
 
-    def item(self, i_index=None):
+    def item(self, i_index: CATVariant) -> Conflict:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -63,6 +63,7 @@ class Conflicts(Collection):
 
         :param CATVariant i_index:
         :return: Conflict
+        :rtype: Conflict
         """
         return Conflict(self.conflicts.Item(i_index.com_object))
 
