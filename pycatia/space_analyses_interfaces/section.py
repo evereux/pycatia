@@ -16,10 +16,9 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class Section(AnyObject):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -39,10 +38,10 @@ class Section(AnyObject):
         self.section = com_object
 
     @property
-    def annotated_views(self) -> AnnotatedViews:
+    def annotated_views(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AnnotatedViews() As AnnotatedViews (Read Only)
                 | 
                 |     Returns the AnnotatedViews collection of the section.
@@ -57,16 +56,15 @@ class Section(AnyObject):
                 |             Set TheAnnotatedViewsList = NewSection.AnnotatedViews
 
         :return: AnnotatedViews
-        :rtype: AnnotatedViews
         """
 
         return AnnotatedViews(self.section.AnnotatedViews)
 
     @property
-    def behavior(self) -> int:
+    def behavior(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Behavior() As CatSectionBehavior
                 | 
                 |     Returns or sets the general behavior of the section: Freeze, Automatic
@@ -93,25 +91,24 @@ class Section(AnyObject):
                 | 
                 |                 NewSection.Behavior = catSectionBehaviorAutomatic
 
-        :return: int
-        :rtype: int
+        :return: enum cat_section_behavior
         """
 
         return self.section.Behavior
 
     @behavior.setter
-    def behavior(self, value: int):
+    def behavior(self, value):
         """
-        :param int value:
+        :param enum cat_section_behavior value:
         """
 
         self.section.Behavior = value
 
     @property
-    def cut_mode(self) -> int:
+    def cut_mode(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CutMode() As long
                 | 
                 |     Returns or sets the cutting mode of the section.
@@ -139,13 +136,12 @@ class Section(AnyObject):
                 |                 NewSection.CutMode = 1
 
         :return: int
-        :rtype: int
         """
 
         return self.section.CutMode
 
     @cut_mode.setter
-    def cut_mode(self, value: int):
+    def cut_mode(self, value):
         """
         :param int value:
         """
@@ -153,10 +149,10 @@ class Section(AnyObject):
         self.section.CutMode = value
 
     @property
-    def group(self) -> Group:
+    def group(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Group() As Group
                 | 
                 |     Returns or sets the sectionned group.
@@ -184,13 +180,12 @@ class Section(AnyObject):
                 |                 NewSection.Group = AGroup
 
         :return: Group
-        :rtype: Group
         """
 
         return Group(self.section.Group)
 
     @group.setter
-    def group(self, value: Group):
+    def group(self, value):
         """
         :param Group value:
         """
@@ -198,10 +193,10 @@ class Section(AnyObject):
         self.section.Group = value
 
     @property
-    def height(self) -> float:
+    def height(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Height() As double
                 | 
                 |     Returns or sets the height of the section.
@@ -228,13 +223,12 @@ class Section(AnyObject):
                 |                 NewSection.Height = 100.
 
         :return: float
-        :rtype: float
         """
 
         return self.section.Height
 
     @height.setter
-    def height(self, value: float):
+    def height(self, value):
         """
         :param float value:
         """
@@ -242,10 +236,10 @@ class Section(AnyObject):
         self.section.Height = value
 
     @property
-    def marker3_ds(self) -> Marker3Ds:
+    def marker3_ds(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Marker3Ds() As Marker3Ds (Read Only)
                 | 
                 |     Returns the Marker3Ds collection of the section.
@@ -260,16 +254,15 @@ class Section(AnyObject):
                 |             Set TheMarker3DsList = NewSection.Marker3Ds
 
         :return: Marker3Ds
-        :rtype: Marker3Ds
         """
 
         return Marker3Ds(self.section.Marker3Ds)
 
     @property
-    def thickness(self) -> float:
+    def thickness(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Thickness() As double
                 | 
                 |     Returns or sets the thickness of the section.
@@ -296,13 +289,12 @@ class Section(AnyObject):
                 |                 NewSection.Thickness = 100.
 
         :return: float
-        :rtype: float
         """
 
         return self.section.Thickness
 
     @thickness.setter
-    def thickness(self, value: float):
+    def thickness(self, value):
         """
         :param float value:
         """
@@ -310,10 +302,10 @@ class Section(AnyObject):
         self.section.Thickness = value
 
     @property
-    def type(self) -> int:
+    def type(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Type() As CatSectionType
                 | 
                 |     Returns or sets the type of the section.
@@ -339,25 +331,24 @@ class Section(AnyObject):
                 | 
                 |                 NewSection.Type = catSectionTypeSlice
 
-        :return: int
-        :rtype: int
+        :return: enum cat_section_type
         """
 
         return self.section.Type
 
     @type.setter
-    def type(self, value: int):
+    def type(self, value):
         """
-        :param int value:
+        :param enum cat_section_type value:
         """
 
         self.section.Type = value
 
     @property
-    def width(self) -> float:
+    def width(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Width() As double
                 | 
                 |     Returns or sets the width of the section.
@@ -384,23 +375,22 @@ class Section(AnyObject):
                 |                 NewSection.Width = 100.
 
         :return: float
-        :rtype: float
         """
 
         return self.section.Width
 
     @width.setter
-    def width(self, value: float):
+    def width(self, value):
         """
         :param float value:
         """
 
         self.section.Width = value
 
-    def export(self) -> Document:
+    def export(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Export() As Document
                 | 
                 |     Exports the sections curves of the section in a document.
@@ -417,14 +407,14 @@ class Section(AnyObject):
                 |             PartDoc = NewSection.Export
 
         :return: Document
-        :rtype: Document
         """
+        from pycatia.in_interfaces.document import Document
         return Document(self.section.Export())
 
-    def get_position(self, o_components: tuple) -> None:
+    def get_position(self, o_components=None):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetPosition(CATSafeArrayVariant oComponents)
                 | 
                 |     Retrieves the position of the section.
@@ -475,7 +465,6 @@ class Section(AnyObject):
 
         :param tuple o_components:
         :return: None
-        :rtype: None
         """
         return self.section.GetPosition(o_components)
         # # # # Autogenerated comment: 
@@ -494,10 +483,10 @@ class Section(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def is_empty(self) -> int:
+    def is_empty(self):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func IsEmpty() As long
                 | 
                 |     Indicates whether the section is empty.
@@ -515,14 +504,13 @@ class Section(AnyObject):
                 |             Indicator = NewSection.IsEmpty
 
         :return: int
-        :rtype: int
         """
         return self.section.IsEmpty()
 
-    def set_position(self, i_components: tuple) -> Double:
+    def set_position(self, i_components=None):
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetPosition(CATSafeArrayVariant iComponents)
                 | 
                 |     Sets the position of the section.
@@ -580,10 +568,9 @@ class Section(AnyObject):
                 |             NewSection.SetPosition MatrixPos
 
         :param tuple i_components:
-        :return: Double
-        :rtype: Double
+        :return:
         """
-        return Double(self.section.SetPosition(i_components))
+        return self.section.SetPosition(i_components)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -601,4 +588,4 @@ class Section(AnyObject):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'Section(name="{ self.name }")'
+        return f'Section(name="{self.name}")'

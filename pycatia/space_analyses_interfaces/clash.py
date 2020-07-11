@@ -39,7 +39,7 @@ class Clash(AnyObject):
         self.clash = com_object
 
     @property
-    def annotated_views(self) -> AnnotatedViews:
+    def annotated_views(self):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -57,13 +57,12 @@ class Clash(AnyObject):
                 |             Set TheAnnotatedViewsList = NewClash.AnnotatedViews
 
         :return: AnnotatedViews
-        :rtype: AnnotatedViews
         """
 
         return AnnotatedViews(self.clash.AnnotatedViews)
 
     @property
-    def clearance(self) -> float:
+    def clearance(self):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -94,13 +93,12 @@ class Clash(AnyObject):
                 |                 NewClash.Clearance = 10.
 
         :return: float
-        :rtype: float
         """
 
         return self.clash.Clearance
 
     @clearance.setter
-    def clearance(self, value: float):
+    def clearance(self, value):
         """
         :param float value:
         """
@@ -108,7 +106,7 @@ class Clash(AnyObject):
         self.clash.Clearance = value
 
     @property
-    def computation_type(self) -> int:
+    def computation_type(self):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -135,22 +133,21 @@ class Clash(AnyObject):
                 | 
                 |                 NewClash.ComputationType = catClashComputationTypeBetweenAll
 
-        :return: int
-        :rtype: int
+        :return: enum cat_clash_computation_type
         """
 
         return self.clash.ComputationType
 
     @computation_type.setter
-    def computation_type(self, value: int):
+    def computation_type(self, value):
         """
-        :param int value:
+        :param enum cat_clash_computation_type value:
         """
 
         self.clash.ComputationType = value
 
     @property
-    def conflicts(self) -> Conflicts:
+    def conflicts(self):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -168,13 +165,12 @@ class Clash(AnyObject):
                 |             Set NewConflicts = NewClash.Conflicts
 
         :return: Conflicts
-        :rtype: Conflicts
         """
 
         return Conflicts(self.clash.Conflicts)
 
     @property
-    def first_group(self) -> Group:
+    def first_group(self):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -203,13 +199,12 @@ class Clash(AnyObject):
                 |                 NewClash.FirstGroup = FirstGroup
 
         :return: Group
-        :rtype: Group
         """
 
         return Group(self.clash.FirstGroup)
 
     @first_group.setter
-    def first_group(self, value: Group):
+    def first_group(self, value):
         """
         :param Group value:
         """
@@ -217,7 +212,7 @@ class Clash(AnyObject):
         self.clash.FirstGroup = value
 
     @property
-    def interference_type(self) -> int:
+    def interference_type(self):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -244,22 +239,21 @@ class Clash(AnyObject):
                 | 
                 |                 NewClash.InterferenceType = CatClashInterferenceTypeContact
 
-        :return: int
-        :rtype: int
+        :return: enum cat_clash_interference_type
         """
 
         return self.clash.InterferenceType
 
     @interference_type.setter
-    def interference_type(self, value: int):
+    def interference_type(self, value):
         """
-        :param int value:
+        :param enum cat_clash_interference_type value:
         """
 
         self.clash.InterferenceType = value
 
     @property
-    def marker3_ds(self) -> Marker3Ds:
+    def marker3_ds(self):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -277,13 +271,12 @@ class Clash(AnyObject):
                 |             Set TheMarker3DsList = NewClash.Marker3Ds
 
         :return: Marker3Ds
-        :rtype: Marker3Ds
         """
 
         return Marker3Ds(self.clash.Marker3Ds)
 
     @property
-    def second_group(self) -> Group:
+    def second_group(self):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -312,20 +305,19 @@ class Clash(AnyObject):
                 |                 NewClash.SecondGroup = SecondGroup
 
         :return: Group
-        :rtype: Group
         """
 
         return Group(self.clash.SecondGroup)
 
     @second_group.setter
-    def second_group(self, value: Group):
+    def second_group(self, value):
         """
         :param Group value:
         """
 
         self.clash.SecondGroup = value
 
-    def compute(self) -> None:
+    def compute(self):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -342,11 +334,10 @@ class Clash(AnyObject):
                 |             NewClash.Compute
 
         :return: None
-        :rtype: None
         """
         return self.clash.Compute()
 
-    def export(self, i_type: int, i_path: str) -> None:
+    def export(self, i_type=None, i_path=None):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -372,10 +363,9 @@ class Clash(AnyObject):
                 |             NewClash.Export CatClashExportTypeXMLResultOnly,
                 |             "c:\\tmp\\sample.xml"
 
-        :param int i_type:
+        :param CatClashExportType i_type:
         :param str i_path:
         :return: None
-        :rtype: None
         """
         return self.clash.Export(i_type.com_object, i_path)
         # # # # Autogenerated comment: 
