@@ -42,6 +42,7 @@ class Documents(Collection):
     def __init__(self, com_object):
         super().__init__(com_object, child_object=Document)
         self.documents = com_object
+        self.child_object = Document
 
     def add(self, document_type):
         """
