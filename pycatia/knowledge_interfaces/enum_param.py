@@ -35,7 +35,7 @@ class EnumParam(Parameter):
         self.enum_param = com_object
 
     @property
-    def value_enum(self):
+    def value_enum(self) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -54,12 +54,13 @@ class EnumParam(Parameter):
                 |          End If
 
         :return: str
+        :rtype: str
         """
 
         return self.enum_param.ValueEnum
 
     @value_enum.setter
-    def value_enum(self, value):
+    def value_enum(self, value: str):
         """
         :param str value:
         """

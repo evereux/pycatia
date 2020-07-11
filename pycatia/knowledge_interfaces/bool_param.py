@@ -43,7 +43,7 @@ class BoolParam(EnumParam):
         self.bool_param = com_object
 
     @property
-    def value(self):
+    def value(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -60,12 +60,13 @@ class BoolParam(EnumParam):
                 |          End If
 
         :return: bool
+        :rtype: bool
         """
 
         return self.bool_param.Value
 
     @value.setter
-    def value(self, value):
+    def value(self, value: bool):
         """
         :param bool value:
         """

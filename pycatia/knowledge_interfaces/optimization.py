@@ -36,7 +36,7 @@ class Optimization(KnowledgeObject):
         self.optimization = com_object
 
     @property
-    def algorithm_type(self):
+    def algorithm_type(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -48,21 +48,22 @@ class Optimization(KnowledgeObject):
                 |     See also:
                 |         CatAlgorithmType
 
-        :return: enum cat_algorithm_type
+        :return: int
+        :rtype: int
         """
 
         return self.optimization.AlgorithmType
 
     @algorithm_type.setter
-    def algorithm_type(self, value):
+    def algorithm_type(self, value: int):
         """
-        :param enum cat_algorithm_type value:
+        :param int value:
         """
 
         self.optimization.AlgorithmType = value
 
     @property
-    def constraints(self):
+    def constraints(self) -> OptimizationConstraints:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -72,12 +73,13 @@ class Optimization(KnowledgeObject):
                 |     Returns the collection of optimization constraints.
 
         :return: OptimizationConstraints
+        :rtype: OptimizationConstraints
         """
 
         return OptimizationConstraints(self.optimization.Constraints)
 
     @property
-    def conv_speed(self):
+    def conv_speed(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -87,12 +89,13 @@ class Optimization(KnowledgeObject):
                 |     annealing.
 
         :return: int
+        :rtype: int
         """
 
         return self.optimization.ConvSpeed
 
     @conv_speed.setter
-    def conv_speed(self, value):
+    def conv_speed(self, value: int):
         """
         :param int value:
         """
@@ -100,7 +103,7 @@ class Optimization(KnowledgeObject):
         self.optimization.ConvSpeed = value
 
     @property
-    def free_parameters(self):
+    def free_parameters(self) -> FreeParameters:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -109,12 +112,13 @@ class Optimization(KnowledgeObject):
                 |     Returns the collection of the free parameters.
 
         :return: FreeParameters
+        :rtype: FreeParameters
         """
 
         return FreeParameters(self.optimization.FreeParameters)
 
     @property
-    def max_evals_nb(self):
+    def max_evals_nb(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -124,12 +128,13 @@ class Optimization(KnowledgeObject):
                 |     of the optimization.
 
         :return: int
+        :rtype: int
         """
 
         return self.optimization.MaxEvalsNb
 
     @max_evals_nb.setter
-    def max_evals_nb(self, value):
+    def max_evals_nb(self, value: int):
         """
         :param int value:
         """
@@ -137,7 +142,7 @@ class Optimization(KnowledgeObject):
         self.optimization.MaxEvalsNb = value
 
     @property
-    def max_evals_wo_improvement(self):
+    def max_evals_wo_improvement(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -147,12 +152,13 @@ class Optimization(KnowledgeObject):
                 |     the problem solution during one run of the optimization.
 
         :return: int
+        :rtype: int
         """
 
         return self.optimization.MaxEvalsWoImprovement
 
     @max_evals_wo_improvement.setter
-    def max_evals_wo_improvement(self, value):
+    def max_evals_wo_improvement(self, value: int):
         """
         :param int value:
         """
@@ -160,7 +166,7 @@ class Optimization(KnowledgeObject):
         self.optimization.MaxEvalsWoImprovement = value
 
     @property
-    def max_time(self):
+    def max_time(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -170,12 +176,13 @@ class Optimization(KnowledgeObject):
                 |     (in minutes).
 
         :return: int
+        :rtype: int
         """
 
         return self.optimization.MaxTime
 
     @max_time.setter
-    def max_time(self, value):
+    def max_time(self, value: int):
         """
         :param int value:
         """
@@ -183,7 +190,7 @@ class Optimization(KnowledgeObject):
         self.optimization.MaxTime = value
 
     @property
-    def objective_parameter(self):
+    def objective_parameter(self) -> RealParam:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -195,12 +202,13 @@ class Optimization(KnowledgeObject):
                 |     optimization feature doesn't contain all information necessary to be run.
 
         :return: RealParam
+        :rtype: RealParam
         """
 
         return RealParam(self.optimization.ObjectiveParameter)
 
     @objective_parameter.setter
-    def objective_parameter(self, value):
+    def objective_parameter(self, value: RealParam):
         """
         :param RealParam value:
         """
@@ -208,7 +216,7 @@ class Optimization(KnowledgeObject):
         self.optimization.ObjectiveParameter = value
 
     @property
-    def optimization_type(self):
+    def optimization_type(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -220,21 +228,22 @@ class Optimization(KnowledgeObject):
                 |     See also:
                 |         CatOptimizationType
 
-        :return: enum cat_optimization_type
+        :return: int
+        :rtype: int
         """
 
         return self.optimization.OptimizationType
 
     @optimization_type.setter
-    def optimization_type(self, value):
+    def optimization_type(self, value: int):
         """
-        :param enum cat_optimization_type value:
+        :param int value:
         """
 
         self.optimization.OptimizationType = value
 
     @property
-    def target_value(self):
+    def target_value(self) -> RealParam:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -244,12 +253,13 @@ class Optimization(KnowledgeObject):
                 |     optimization type is a target value search)
 
         :return: RealParam
+        :rtype: RealParam
         """
 
         return RealParam(self.optimization.TargetValue)
 
     @property
-    def use_max_evals_wo_improvement(self):
+    def use_max_evals_wo_improvement(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -259,12 +269,13 @@ class Optimization(KnowledgeObject):
                 |     solution has to be used as a termination criterion.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.optimization.UseMaxEvalsWoImprovement
 
     @use_max_evals_wo_improvement.setter
-    def use_max_evals_wo_improvement(self, value):
+    def use_max_evals_wo_improvement(self, value: bool):
         """
         :param bool value:
         """
@@ -272,7 +283,7 @@ class Optimization(KnowledgeObject):
         self.optimization.UseMaxEvalsWoImprovement = value
 
     @property
-    def use_max_time(self):
+    def use_max_time(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -281,19 +292,20 @@ class Optimization(KnowledgeObject):
                 |     Returns or sets if max time has to be used as a termination criterion.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.optimization.UseMaxTime
 
     @use_max_time.setter
-    def use_max_time(self, value):
+    def use_max_time(self, value: bool):
         """
         :param bool value:
         """
 
         self.optimization.UseMaxTime = value
 
-    def run(self, i_with_stop_dialog):
+    def run(self, i_with_stop_dialog: bool) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -309,6 +321,7 @@ class Optimization(KnowledgeObject):
 
         :param bool i_with_stop_dialog:
         :return: None
+        :rtype: None
         """
         return self.optimization.Run(i_with_stop_dialog)
         # # # # Autogenerated comment: 

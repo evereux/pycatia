@@ -89,7 +89,7 @@ class Relations(Collection):
         self.relations = com_object
 
     @property
-    def optimizations(self):
+    def optimizations(self) -> Optimizations:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -102,11 +102,12 @@ class Relations(Collection):
                 |     license is available.
 
         :return: Optimizations
+        :rtype: Optimizations
         """
 
         return Optimizations(self.relations.Optimizations)
 
-    def create_check(self, i_name, i_comment, i_check_body):
+    def create_check(self, i_name: str, i_comment: str, i_check_body: str) -> Check:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -149,10 +150,11 @@ class Relations(Collection):
         :param str i_comment:
         :param str i_check_body:
         :return: Check
+        :rtype: Check
         """
         return Check(self.relations.CreateCheck(i_name, i_comment, i_check_body))
 
-    def create_design_table(self, i_name: str, i_comment: str, i_copy_mode: bool, i_sheet_path: Path):
+    def create_design_table(self, i_name: str, i_comment: str, i_copy_mode: bool, i_sheet_path: str) -> DesignTable:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -196,7 +198,7 @@ class Relations(Collection):
         :param str i_name:
         :param str i_comment:
         :param bool i_copy_mode:
-        :param Path i_sheet_path:
+        :param str i_sheet_path:
         :return: DesignTable
         :rtype: DesignTable
         """
@@ -253,10 +255,11 @@ class Relations(Collection):
         :param Parameter i_output_parameter:
         :param str i_formula_body:
         :return: Formula
+        :rtype: Formula
         """
         return Formula(self.relations.CreateFormula(i_name, i_comment, i_output_parameter.com_object, i_formula_body))
 
-    def create_horizontal_design_table(self, i_name, i_comment, i_copy_mode, i_sheet_path):
+    def create_horizontal_design_table(self, i_name: str, i_comment: str, i_copy_mode: bool, i_sheet_path: str) -> DesignTable:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -301,10 +304,11 @@ class Relations(Collection):
         :param bool i_copy_mode:
         :param str i_sheet_path:
         :return: DesignTable
+        :rtype: DesignTable
         """
         return DesignTable(self.relations.CreateHorizontalDesignTable(i_name, i_comment, i_copy_mode, i_sheet_path))
 
-    def create_law(self, i_name, i_comment, i_law_body):
+    def create_law(self, i_name: str, i_comment: str, i_law_body: str) -> Law:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -331,10 +335,11 @@ class Relations(Collection):
         :param str i_comment:
         :param str i_law_body:
         :return: Law
+        :rtype: Law
         """
         return Law(self.relations.CreateLaw(i_name, i_comment, i_law_body))
 
-    def create_program(self, i_name, i_comment, i_program_body):
+    def create_program(self, i_name: str, i_comment: str, i_program_body: str) -> Rule:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -378,10 +383,11 @@ class Relations(Collection):
         :param str i_comment:
         :param str i_program_body:
         :return: Rule
+        :rtype: Rule
         """
         return Rule(self.relations.CreateProgram(i_name, i_comment, i_program_body))
 
-    def create_rule_base(self, i_name):
+    def create_rule_base(self, i_name: str) -> Relation:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -401,10 +407,11 @@ class Relations(Collection):
 
         :param str i_name:
         :return: Relation
+        :rtype: Relation
         """
         return Relation(self.relations.CreateRuleBase(i_name))
 
-    def create_set_of_equations(self, i_name, i_comment, i_formula_body):
+    def create_set_of_equations(self, i_name: str, i_comment: str, i_formula_body: str) -> SetOfEquation:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -431,10 +438,11 @@ class Relations(Collection):
         :param str i_comment:
         :param str i_formula_body:
         :return: SetOfEquation
+        :rtype: SetOfEquation
         """
         return SetOfEquation(self.relations.CreateSetOfEquations(i_name, i_comment, i_formula_body))
 
-    def create_set_of_relations(self, i_parent):
+    def create_set_of_relations(self, i_parent: AnyObject) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -450,10 +458,11 @@ class Relations(Collection):
 
         :param AnyObject i_parent:
         :return: None
+        :rtype: None
         """
         return self.relations.CreateSetOfRelations(i_parent.com_object)
 
-    def generate_xml_report_for_checks(self, i_name):
+    def generate_xml_report_for_checks(self, i_name: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -469,10 +478,11 @@ class Relations(Collection):
 
         :param str i_name:
         :return: None
+        :rtype: None
         """
         return self.relations.GenerateXMLReportForChecks(i_name)
 
-    def item(self, i_index):
+    def item(self, i_index: CATVariant) -> Relation:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -503,10 +513,11 @@ class Relations(Collection):
 
         :param CATVariant i_index:
         :return: Relation
+        :rtype: Relation
         """
         return Relation(self.relations.Item(i_index))
 
-    def remove(self, i_index):
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -534,10 +545,11 @@ class Relations(Collection):
 
         :param CATVariant i_index:
         :return: None
+        :rtype: None
         """
         return self.relations.Remove(i_index)
 
-    def sub_list(self, i_feature, i_recursively):
+    def sub_list(self, i_feature: AnyObject, i_recursively: bool) -> Relations:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -576,6 +588,7 @@ class Relations(Collection):
         :param AnyObject i_feature:
         :param bool i_recursively:
         :return: Relations
+        :rtype: Relations
         """
         return Relations(self.relations.SubList(i_feature.com_object, i_recursively))
 

@@ -36,7 +36,7 @@ class Law(Relation):
         super().__init__(com_object)
         self.law = com_object
 
-    def add_formal_parameter(self, i_name, i_magnitude):
+    def add_formal_parameter(self, i_name: str, i_magnitude: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -55,10 +55,11 @@ class Law(Relation):
         :param str i_name:
         :param str i_magnitude:
         :return: None
+        :rtype: None
         """
         return self.law.AddFormalParameter(i_name, i_magnitude)
 
-    def remove_formal_parameter(self, i_name):
+    def remove_formal_parameter(self, i_name: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -73,6 +74,7 @@ class Law(Relation):
 
         :param str i_name:
         :return: None
+        :rtype: None
         """
         return self.law.RemoveFormalParameter(i_name)
 
