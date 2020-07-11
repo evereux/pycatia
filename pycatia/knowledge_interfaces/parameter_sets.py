@@ -10,6 +10,7 @@
 """
 from pycatia.knowledge_interfaces.parameter_set import ParameterSet
 from pycatia.system_interfaces.collection import Collection
+from pycatia.types import cat_variant
 
 
 class ParameterSets(Collection):
@@ -66,7 +67,7 @@ class ParameterSets(Collection):
         """
         return ParameterSet(self.parameter_sets.CreateSet(i_name))
 
-    def item(self, i_index: CATVariant) -> ParameterSet:
+    def item(self, i_index: cat_variant) -> ParameterSet:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -92,7 +93,7 @@ class ParameterSets(Collection):
                 | 
                 |          Set theSet = parameterSets.Item("Parameters.1")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: ParameterSet
         :rtype: ParameterSet
         """

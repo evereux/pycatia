@@ -136,7 +136,7 @@ class DesignTable(Relation):
 
         self.design_table.FilePath = value
 
-    def add_association(self, i_parameter: Parameter, i_sheet_column: str) -> None:
+    def add_association(self, i_parameter: 'Parameter', i_sheet_column: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
