@@ -34,7 +34,7 @@ class KnowledgeObject(AnyObject):
         self.knowledge_object = com_object
 
     @property
-    def hidden(self):
+    def hidden(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -43,12 +43,13 @@ class KnowledgeObject(AnyObject):
                 |     Returns or sets wether the relation is hidden or should be hidden. or not.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.knowledge_object.Hidden
 
     @hidden.setter
-    def hidden(self, value):
+    def hidden(self, value: bool):
         """
         :param bool value:
         """
@@ -56,7 +57,7 @@ class KnowledgeObject(AnyObject):
         self.knowledge_object.Hidden = value
 
     @property
-    def is_const(self):
+    def is_const(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -65,12 +66,13 @@ class KnowledgeObject(AnyObject):
                 |     Returns or sets wether the relation is Const or should be Const. or not.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.knowledge_object.IsConst
 
     @is_const.setter
-    def is_const(self, value):
+    def is_const(self, value: bool):
         """
         :param bool value:
         """

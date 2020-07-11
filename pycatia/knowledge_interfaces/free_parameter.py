@@ -35,7 +35,7 @@ class FreeParameter(AnyObject):
         self.free_parameter = com_object
 
     @property
-    def inf_range(self):
+    def inf_range(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -45,12 +45,13 @@ class FreeParameter(AnyObject):
                 |     optimization cannot escape those bounds.
 
         :return: float
+        :rtype: float
         """
 
         return self.free_parameter.InfRange
 
     @inf_range.setter
-    def inf_range(self, value):
+    def inf_range(self, value: float):
         """
         :param float value:
         """
@@ -58,7 +59,7 @@ class FreeParameter(AnyObject):
         self.free_parameter.InfRange = value
 
     @property
-    def parameter(self):
+    def parameter(self) -> RealParam:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -68,12 +69,13 @@ class FreeParameter(AnyObject):
                 |     The parameter must be real.
 
         :return: RealParam
+        :rtype: RealParam
         """
 
         return RealParam(self.free_parameter.Parameter)
 
     @parameter.setter
-    def parameter(self, value):
+    def parameter(self, value: RealParam):
         """
         :param RealParam value:
         """
@@ -81,7 +83,7 @@ class FreeParameter(AnyObject):
         self.free_parameter.Parameter = value
 
     @property
-    def step(self):
+    def step(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -92,12 +94,13 @@ class FreeParameter(AnyObject):
                 |     during the optimisation process.
 
         :return: float
+        :rtype: float
         """
 
         return self.free_parameter.Step
 
     @step.setter
-    def step(self, value):
+    def step(self, value: float):
         """
         :param float value:
         """
@@ -105,7 +108,7 @@ class FreeParameter(AnyObject):
         self.free_parameter.Step = value
 
     @property
-    def sup_range(self):
+    def sup_range(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -115,12 +118,13 @@ class FreeParameter(AnyObject):
                 |     optimization cannot escape those bounds.
 
         :return: float
+        :rtype: float
         """
 
         return self.free_parameter.SupRange
 
     @sup_range.setter
-    def sup_range(self, value):
+    def sup_range(self, value: float):
         """
         :param float value:
         """
