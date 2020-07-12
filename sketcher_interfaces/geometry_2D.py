@@ -30,7 +30,7 @@ class Geometry2D(GeometricElement):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.geometry2_d = com_object
+        self.geometry_2d = com_object
 
     @property
     def construction(self) -> bool:
@@ -45,7 +45,7 @@ class Geometry2D(GeometricElement):
         :rtype: bool
         """
 
-        return self.geometry2_d.Construction
+        return self.geometry_2d.Construction
 
     @construction.setter
     def construction(self, value: bool):
@@ -53,7 +53,7 @@ class Geometry2D(GeometricElement):
         :param bool value:
         """
 
-        self.geometry2_d.Construction = value
+        self.geometry_2d.Construction = value
 
     @property
     def report_name(self) -> int:
@@ -73,7 +73,7 @@ class Geometry2D(GeometricElement):
         :rtype: int
         """
 
-        return self.geometry2_d.ReportName
+        return self.geometry_2d.ReportName
 
     @report_name.setter
     def report_name(self, value: int):
@@ -81,7 +81,7 @@ class Geometry2D(GeometricElement):
         :param int value:
         """
 
-        self.geometry2_d.ReportName = value
+        self.geometry_2d.ReportName = value
 
     def __repr__(self):
         return f'Geometry2D(name="{self.name}")'
