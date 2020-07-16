@@ -8,12 +8,11 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia.in_interfaces.reference import Reference
 from pycatia.part_interfaces.surface_based_shape import SurfaceBasedShape
 
 
 class SewSurface(SurfaceBasedShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -38,10 +37,10 @@ class SewSurface(SurfaceBasedShape):
         self.sew_surface = com_object
 
     @property
-    def deviation(self):
+    def deviation(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Deviation() As double
                 | 
                 |     Sets or Gets the maximum deviation allowed for smoothing operation in
@@ -54,12 +53,13 @@ class SewSurface(SurfaceBasedShape):
                 |      Set DeviationValue = Sew.MaximumDeviationValue
 
         :return: float
+        :rtype: float
         """
 
         return self.sew_surface.Deviation
 
     @deviation.setter
-    def deviation(self, value):
+    def deviation(self, value: float):
         """
         :param float value:
         """
@@ -67,10 +67,10 @@ class SewSurface(SurfaceBasedShape):
         self.sew_surface.Deviation = value
 
     @property
-    def deviation_mode(self):
+    def deviation_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DeviationMode() As long
                 | 
                 |     Returns or sets the Deviation mode taken into account during Sew
@@ -97,12 +97,13 @@ class SewSurface(SurfaceBasedShape):
                 |          Set oMode = Sew.DeviationMode
 
         :return: int
+        :rtype: int
         """
 
         return self.sew_surface.DeviationMode
 
     @deviation_mode.setter
-    def deviation_mode(self, value):
+    def deviation_mode(self, value: int):
         """
         :param int value:
         """
@@ -110,10 +111,10 @@ class SewSurface(SurfaceBasedShape):
         self.sew_surface.DeviationMode = value
 
     @property
-    def sewing_intersection_mode(self):
+    def sewing_intersection_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SewingIntersectionMode() As
                 | CatSewingIntersectionMode
                 | 
@@ -128,24 +129,25 @@ class SewSurface(SurfaceBasedShape):
                 |          Set sptSide = mySew.SewingSide
                 |          mySew.SewingSide = catPositiveSide
 
-        :return: enum cat_sewing_intersection_mode
+        :return: int
+        :rtype: int
         """
 
         return self.sew_surface.SewingIntersectionMode
 
     @sewing_intersection_mode.setter
-    def sewing_intersection_mode(self, value):
+    def sewing_intersection_mode(self, value: int):
         """
-        :param enum cat_sewing_intersection_mode value:
+        :param int value:
         """
 
         self.sew_surface.SewingIntersectionMode = value
 
     @property
-    def sewing_side(self):
+    def sewing_side(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SewingSide() As CatSplitSide
                 | 
                 |     Returns or sets the sewing side . The sewing side is the side of the body
@@ -159,23 +161,24 @@ class SewSurface(SurfaceBasedShape):
                 |          Set sptSide = mySew.SewingSide
                 |          mySew.SewingSide = catPositiveSide
 
-        :return: enum cat_split_side
+        :return: int
+        :rtype: int
         """
 
         return self.sew_surface.SewingSide
 
     @sewing_side.setter
-    def sewing_side(self, value):
+    def sewing_side(self, value: int):
         """
-        :param enum cat_split_side value:
+        :param int value:
         """
 
         self.sew_surface.SewingSide = value
 
-    def set_surface_support(self, i_support_surface):
+    def set_surface_support(self, i_support_surface: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSurfaceSupport(Reference iSupportSurface)
                 | 
                 |     Sets the surface support for surfacic sew surface.
@@ -189,6 +192,7 @@ class SewSurface(SurfaceBasedShape):
 
         :param Reference i_support_surface:
         :return: None
+        :rtype: None
         """
         return self.sew_surface.SetSurfaceSupport(i_support_surface.com_object)
         # # # # Autogenerated comment: 
@@ -207,10 +211,10 @@ class SewSurface(SurfaceBasedShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_volume_support(self, i_volume):
+    def set_volume_support(self, i_volume: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetVolumeSupport(Reference iVolume)
                 | 
                 |     Sets the volume support for volume sew surface.
@@ -231,6 +235,7 @@ class SewSurface(SurfaceBasedShape):
 
         :param Reference i_volume:
         :return: None
+        :rtype: None
         """
         return self.sew_surface.SetVolumeSupport(i_volume.com_object)
         # # # # Autogenerated comment: 
@@ -250,4 +255,4 @@ class SewSurface(SurfaceBasedShape):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'SewSurface(name="{ self.name }")'
+        return f'SewSurface(name="{self.name}")'

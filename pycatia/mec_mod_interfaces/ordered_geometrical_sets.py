@@ -33,10 +33,10 @@ class OrderedGeometricalSets(Collection):
         super().__init__(com_object)
         self.ordered_geometrical_sets = com_object
 
-    def add(self):
+    def add(self) -> OrderedGeometricalSet:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Add() As OrderedGeometricalSet
                 | 
                 |     Creates a new ordered geometrical set and adds it to the
@@ -54,13 +54,14 @@ class OrderedGeometricalSets(Collection):
                 |          Set NewPartBody = rootPart.OrderedGeometricalSets.Add()
 
         :return: OrderedGeometricalSet
+        :rtype: OrderedGeometricalSet
         """
         return OrderedGeometricalSet(self.ordered_geometrical_sets.Add())
 
-    def item(self, i_index):
+    def item(self, i_index: CATVariant) -> OrderedGeometricalSet:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(CATVariant iIndex) As OrderedGeometricalSet
                 | 
                 |     Returns a ordered geometrical set using its index or its name from the
@@ -91,8 +92,9 @@ class OrderedGeometricalSets(Collection):
 
         :param CATVariant i_index:
         :return: OrderedGeometricalSet
+        :rtype: OrderedGeometricalSet
         """
-        return OrderedGeometricalSet(self.ordered_geometrical_sets.Item(i_index))
+        return OrderedGeometricalSet(self.ordered_geometrical_sets.Item(i_index.com_object))
 
     def __repr__(self):
-        return f'OrderedGeometricalSets(name="{self.name}")'
+        return f'OrderedGeometricalSets(name="{ self.name }")'

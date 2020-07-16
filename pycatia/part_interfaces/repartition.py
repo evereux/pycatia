@@ -40,10 +40,10 @@ class Repartition(AnyObject):
         self.repartition = com_object
 
     @property
-    def instances_count(self):
+    def instances_count(self) -> IntParam:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property InstancesCount() As IntParam (Read Only)
                 | 
                 |     Returns the total number of copied shapes.
@@ -55,6 +55,7 @@ class Repartition(AnyObject):
                 |          Set Nb = firstRepartition.InstancesCount
 
         :return: IntParam
+        :rtype: IntParam
         """
 
         return IntParam(self.repartition.InstancesCount)

@@ -11,12 +11,13 @@
 
 from pycatia.part_interfaces.draft_domain import DraftDomain
 from pycatia.system_interfaces.collection import Collection
+from pycatia.types import cat_variant
 
 
 class DraftDomains(Collection):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -30,13 +31,13 @@ class DraftDomains(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object, child_object=DraftDomain)
+        super().__init__(com_object)
         self.draft_domains = com_object
 
-    def item(self, i_index):
+    def item(self, i_index: cat_variant) -> DraftDomain:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(CATVariant iIndex) As DraftDomain
                 | 
                 |     Returns a draft domain using its index or its name from the DraftDomains
@@ -61,8 +62,9 @@ class DraftDomains(Collection):
                 | 
                 |              Set domain = firstDraftDomains.Item(3)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: DraftDomain
+        :rtype: DraftDomain
         """
         return DraftDomain(self.draft_domains.Item(i_index))
 

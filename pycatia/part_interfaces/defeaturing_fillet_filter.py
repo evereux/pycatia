@@ -13,7 +13,6 @@ from pycatia.part_interfaces.defeaturing_filter_with_range import DefeaturingFil
 
 
 class DefeaturingFilletFilter(DefeaturingFilterWithRange):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -28,9 +27,7 @@ class DefeaturingFilletFilter(DefeaturingFilterWithRange):
                 |                             DefeaturingFilletFilter
                 | 
                 | Represents the defeaturing fillet filter.
-                | 
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
-    
+
     """
 
     def __init__(self, com_object):
@@ -38,4 +35,4 @@ class DefeaturingFilletFilter(DefeaturingFilterWithRange):
         self.defeaturing_fillet_filter = com_object
 
     def __repr__(self):
-        return f'DefeaturingFilletFilter(name="{ self.name }")'
+        return f'DefeaturingFilletFilter(name="{self.name}")'

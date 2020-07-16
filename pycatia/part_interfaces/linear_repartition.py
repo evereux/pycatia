@@ -43,10 +43,10 @@ class LinearRepartition(Repartition):
         self.linear_repartition = com_object
 
     @property
-    def spacing(self):
+    def spacing(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Spacing() As Length (Read Only)
                 | 
                 |     Returns the distance between two consecutive shapes along the repartition
@@ -59,6 +59,7 @@ class LinearRepartition(Repartition):
                 |          Set space1 = firstRepartition.Spacing
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.linear_repartition.Spacing)

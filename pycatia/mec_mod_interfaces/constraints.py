@@ -41,50 +41,52 @@ class Constraints(Collection):
         self.constraints = com_object
 
     @property
-    def broken_constraints_count(self):
+    def broken_constraints_count(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BrokenConstraintsCount() As long (Read Only)
                 | 
                 |     Returns the number of broken constraints from the Constraints
                 |     collection.
-                |
+                | 
                 |     Example:
                 |         The following example retrieves in BknCstNum the number of broken
                 |         constraints from the myListofConstraints collection of
                 |         constraints:
-                |
+                | 
                 |          BknCstNum = myListofConstraints.BrokenConstraintsCount
 
         :return: int
+        :rtype: int
         """
 
         return self.constraints.BrokenConstraintsCount
 
     @property
-    def un_updated_constraints_count(self):
+    def un_updated_constraints_count(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property UnUpdatedConstraintsCount() As long (Read Only)
                 | 
                 |     Returns the number of unupdated constraints from the Constraints
                 |     collection.
-                |
+                | 
                 |     Example:
                 |         The following example retrieves in UnUpdCstNum the number of unupdated
                 |         constraints from the myListofConstraints collection of
                 |         constraints:
-                |
+                | 
                 |          UnUpdCstNum = myListofConstraints.UnUpdatedConstraintsCount
 
         :return: int
+        :rtype: int
         """
 
         return self.constraints.UnUpdatedConstraintsCount
 
-    def add_bi_elt_cst(self, i_cst_type=None, i_first_elem=None, i_second_elem=None):
+    def add_bi_elt_cst(self, i_cst_type: int, i_first_elem: Reference, i_second_elem: Reference) -> Constraint:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -115,15 +117,15 @@ class Constraints(Collection):
                 |
                 |      Set newCst = skCstList.AddBiEltCst(4, c1, c2)
 
-        :param CatConstraintType i_cst_type:
+        :param int i_cst_type:
         :param Reference i_first_elem:
         :param Reference i_second_elem:
         :return: Constraint
+        :rtype: Constraint
         """
-        return Constraint(
-            self.constraints.AddBiEltCst(i_cst_type, i_first_elem.com_object, i_second_elem.com_object))
+        return Constraint(self.constraints.AddBiEltCst(i_cst_type, i_first_elem.com_object, i_second_elem.com_object))
 
-    def add_mono_elt_cst(self, i_cst_type=None, i_elem=None):
+    def add_mono_elt_cst(self, i_cst_type: int, i_elem: Reference) -> Constraint:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -151,13 +153,14 @@ class Constraints(Collection):
                 |
                 |      Set NewCst = cstList.AddMonoEltCst(0, P1)
 
-        :param CatConstraintType i_cst_type:
+        :param int i_cst_type:
         :param Reference i_elem:
         :return: Constraint
+        :rtype: Constraint
         """
         return Constraint(self.constraints.AddMonoEltCst(i_cst_type, i_elem.com_object))
 
-    def add_tri_elt_cst(self, i_cst_type=None, i_first_elem=None, i_second_elem=None, i_third_elem=None):
+    def add_tri_elt_cst(self, i_cst_type: int, i_first_elem: Reference, i_second_elem: Reference, i_third_elem: Reference) -> Constraint:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -192,17 +195,16 @@ class Constraints(Collection):
                 |
                 |      Set symCst = prtCstList.AddTriEltCst(15, cyl1, cyl2, symPlane)
 
-        :param CatConstraintType i_cst_type:
+        :param int i_cst_type:
         :param Reference i_first_elem:
         :param Reference i_second_elem:
         :param Reference i_third_elem:
         :return: Constraint
+        :rtype: Constraint
         """
-        return Constraint(
-            self.constraints.AddTriEltCst(i_cst_type.com_object, i_first_elem.com_object, i_second_elem.com_object,
-                                          i_third_elem.com_object))
+        return Constraint(self.constraints.AddTriEltCst(i_cst_type, i_first_elem.com_object, i_second_elem.com_object, i_third_elem.com_object))
 
-    def item(self, i_index):
+    def item(self, i_index: CATVariant) -> Constraint:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -233,10 +235,11 @@ class Constraints(Collection):
 
         :param CATVariant i_index:
         :return: Constraint
+        :rtype: Constraint
         """
-        return Constraint(self.constraints.Item(i_index))
+        return Constraint(self.constraints.Item(i_index.com_object))
 
-    def remove(self, i_index):
+    def remove(self, i_index: CATVariant) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -263,8 +266,24 @@ class Constraints(Collection):
 
         :param CATVariant i_index:
         :return: None
+        :rtype: None
         """
-        return self.constraints.Remove(i_index)
+        return self.constraints.Remove(i_index.com_object)
+        # # # # Autogenerated comment: 
+        # # some methods require a system service call as the methods expects a vb array object
+        # # passed to it and there is no way to do this directly with python. In those cases the following code
+        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
+        # # vba_function_name = 'remove'
+        # # vba_code = """
+        # # Public Function remove(constraints)
+        # #     Dim iIndex (2)
+        # #     constraints.Remove iIndex
+        # #     remove = iIndex
+        # # End Function
+        # # """
+
+        # # system_service = SystemService(self.application.SystemService)
+        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
         return f'Constraints(name="{self.name}")'

@@ -37,10 +37,10 @@ class Defeaturing(DressUpShape):
         self.defeaturing = com_object
 
     @property
-    def filters(self):
+    def filters(self) -> DefeaturingFilters:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Filters() As DefeaturingFilters (Read Only)
                 | 
                 |     Returns the filter collection of the Defeaturing. The returned object is
@@ -62,6 +62,7 @@ class Defeaturing(DressUpShape):
                 |              Set myDefeaturingFiltersCollection = firstDefeaturing.Filters
 
         :return: DefeaturingFilters
+        :rtype: DefeaturingFilters
         """
 
         return DefeaturingFilters(self.defeaturing.Filters)

@@ -40,24 +40,25 @@ class Mirror(TransformationShape):
         self.mirror = com_object
 
     @property
-    def mirroring_object(self):
+    def mirroring_object(self) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MirroringObject() As AnyObject (Read Only)
                 | 
                 |     Returns the mirroring Object.
 
         :return: AnyObject
+        :rtype: AnyObject
         """
 
         return AnyObject(self.mirror.MirroringObject)
 
     @property
-    def mirroring_plane(self):
+    def mirroring_plane(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MirroringPlane() As Reference
                 | 
                 |     Returns or sets the mirroring reference plane. It can be a plane, or a
@@ -75,12 +76,13 @@ class Mirror(TransformationShape):
                 |          firstMirroring.MirroringPlane = MyRef
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.mirror.MirroringPlane)
 
     @mirroring_plane.setter
-    def mirroring_plane(self, value):
+    def mirroring_plane(self, value: Reference):
         """
         :param Reference value:
         """

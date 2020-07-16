@@ -17,7 +17,7 @@ from pycatia.part_interfaces.sketch_based_shape import SketchBasedShape
 class Revolution(SketchBasedShape):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -41,10 +41,10 @@ class Revolution(SketchBasedShape):
         self.revolution = com_object
 
     @property
-    def first_angle(self):
+    def first_angle(self) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstAngle() As Angle (Read Only)
                 | 
                 |     Returns the revolution first angle. This angle is computed around the
@@ -59,15 +59,16 @@ class Revolution(SketchBasedShape):
                 |          Set firstAngle = MyRevolution.FirstAngle
 
         :return: Angle
+        :rtype: Angle
         """
 
         return Angle(self.revolution.FirstAngle)
 
     @property
-    def is_thin(self):
+    def is_thin(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property IsThin() As boolean
                 | 
                 |     Returns the Revol thin flag.
@@ -86,12 +87,13 @@ class Revolution(SketchBasedShape):
                 |              firstRevol.IsThin = TRUE
 
         :return: bool
+        :rtype: bool
         """
 
         return self.revolution.IsThin
 
     @is_thin.setter
-    def is_thin(self, value):
+    def is_thin(self, value: bool):
         """
         :param bool value:
         """
@@ -99,10 +101,10 @@ class Revolution(SketchBasedShape):
         self.revolution.IsThin = value
 
     @property
-    def merge_end(self):
+    def merge_end(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MergeEnd() As boolean
                 | 
                 |     Returns the Revol merge end flag (for thin Revol only).
@@ -120,12 +122,13 @@ class Revolution(SketchBasedShape):
                 |              firstRevol.IsMergeEnd = TRUE
 
         :return: bool
+        :rtype: bool
         """
 
         return self.revolution.MergeEnd
 
     @merge_end.setter
-    def merge_end(self, value):
+    def merge_end(self, value: bool):
         """
         :param bool value:
         """
@@ -133,10 +136,10 @@ class Revolution(SketchBasedShape):
         self.revolution.MergeEnd = value
 
     @property
-    def neutral_fiber(self):
+    def neutral_fiber(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NeutralFiber() As boolean
                 | 
                 |     Returns the Revol neutral fiber flag (for thin Revol
@@ -156,12 +159,13 @@ class Revolution(SketchBasedShape):
                 |              firstRevol.IsNeutralFiber = TRUE
 
         :return: bool
+        :rtype: bool
         """
 
         return self.revolution.NeutralFiber
 
     @neutral_fiber.setter
-    def neutral_fiber(self, value):
+    def neutral_fiber(self, value: bool):
         """
         :param bool value:
         """
@@ -169,10 +173,10 @@ class Revolution(SketchBasedShape):
         self.revolution.NeutralFiber = value
 
     @property
-    def revolute_axis(self):
+    def revolute_axis(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RevoluteAxis() As Reference
                 | 
                 |     Returns or sets the rotation axis for Revol.
@@ -181,17 +185,16 @@ class Revolution(SketchBasedShape):
                 |     RectilinearMonoDimFeatEdge.
                 | 
                 |     Example: This example retrieves in RevoluteAxis the rotation axis for the Rotate axis of the
-                |     Revol feature
-                |     Dim RevoluteAxis As Reference
-                |     Set RevoluteAxis = Rotate.Axis
+                |     Revol feature Dim RevoluteAxis As Reference Set RevoluteAxis = Rotate.Axis
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.revolution.RevoluteAxis)
 
     @revolute_axis.setter
-    def revolute_axis(self, value):
+    def revolute_axis(self, value: Reference):
         """
         :param Reference value:
         """
@@ -199,10 +202,10 @@ class Revolution(SketchBasedShape):
         self.revolution.RevoluteAxis = value
 
     @property
-    def second_angle(self):
+    def second_angle(self) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondAngle() As Angle (Read Only)
                 | 
                 |     Returns the revolution second angle. This angle is computed around the
@@ -218,6 +221,7 @@ class Revolution(SketchBasedShape):
                 |          Set secondAngle = MyRevolution.SecondAngle
 
         :return: Angle
+        :rtype: Angle
         """
 
         return Angle(self.revolution.SecondAngle)

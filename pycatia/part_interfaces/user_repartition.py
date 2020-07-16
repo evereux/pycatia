@@ -39,10 +39,10 @@ class UserRepartition(Repartition):
         self.user_repartition = com_object
 
     @property
-    def feature_to_locate_positions(self):
+    def feature_to_locate_positions(self) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FeatureToLocatePositions() As AnyObject (Read
                 | Only)
                 | 
@@ -55,14 +55,15 @@ class UserRepartition(Repartition):
                 |          Set list = firstPattern.FeatureToLocatePositions
 
         :return: AnyObject
+        :rtype: AnyObject
         """
 
         return AnyObject(self.user_repartition.FeatureToLocatePositions)
 
-    def add_feature_to_locate_positions(self, i_feature_to_locate_positions):
+    def add_feature_to_locate_positions(self, i_feature_to_locate_positions: AnyObject) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddFeatureToLocatePositions(AnyObject
                 | iFeatureToLocatePositions)
                 | 
@@ -81,6 +82,7 @@ class UserRepartition(Repartition):
 
         :param AnyObject i_feature_to_locate_positions:
         :return: None
+        :rtype: None
         """
         return self.user_repartition.AddFeatureToLocatePositions(i_feature_to_locate_positions.com_object)
 

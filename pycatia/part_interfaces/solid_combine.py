@@ -37,10 +37,10 @@ class SolidCombine(SketchBasedShape):
         self.solid_combine = com_object
 
     @property
-    def first_component_direction(self):
+    def first_component_direction(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstComponentDirection() As Reference
                 | 
                 |     Returns or sets the direction of first component of
@@ -55,12 +55,13 @@ class SolidCombine(SketchBasedShape):
                 |          Set firstSolidCombine.FirstComponentDirection = firstDirection2
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.solid_combine.FirstComponentDirection)
 
     @first_component_direction.setter
-    def first_component_direction(self, value):
+    def first_component_direction(self, value: Reference):
         """
         :param Reference value:
         """
@@ -68,10 +69,10 @@ class SolidCombine(SketchBasedShape):
         self.solid_combine.FirstComponentDirection = value
 
     @property
-    def first_component_profile(self):
+    def first_component_profile(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstComponentProfile() As Reference
                 | 
                 |     Returns or sets the profile of first component of
@@ -86,12 +87,13 @@ class SolidCombine(SketchBasedShape):
                 |          Set firstSolidCombine.FirstComponentProfile = firstProfile2
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.solid_combine.FirstComponentProfile)
 
     @first_component_profile.setter
-    def first_component_profile(self, value):
+    def first_component_profile(self, value: Reference):
         """
         :param Reference value:
         """
@@ -99,10 +101,10 @@ class SolidCombine(SketchBasedShape):
         self.solid_combine.FirstComponentProfile = value
 
     @property
-    def second_component_direction(self):
+    def second_component_direction(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondComponentDirection() As Reference
                 | 
                 |     Returns or sets the direction of second component of
@@ -117,12 +119,13 @@ class SolidCombine(SketchBasedShape):
                 |          Set firstSolidCombine.SecondComponentDirection = secondDirection2
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.solid_combine.SecondComponentDirection)
 
     @second_component_direction.setter
-    def second_component_direction(self, value):
+    def second_component_direction(self, value: Reference):
         """
         :param Reference value:
         """
@@ -130,10 +133,10 @@ class SolidCombine(SketchBasedShape):
         self.solid_combine.SecondComponentDirection = value
 
     @property
-    def second_component_profile(self):
+    def second_component_profile(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondComponentProfile() As Reference
                 | 
                 |     Returns or sets the profile of second component of
@@ -148,12 +151,13 @@ class SolidCombine(SketchBasedShape):
                 |          Set firstSolidCombine.SecondComponentProfile = secondProfile2
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.solid_combine.SecondComponentProfile)
 
     @second_component_profile.setter
-    def second_component_profile(self, value):
+    def second_component_profile(self, value: Reference):
         """
         :param Reference value:
         """

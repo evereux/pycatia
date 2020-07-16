@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.angle import Angle
 from pycatia.knowledge_interfaces.length import Length
 from pycatia.knowledge_interfaces.str_param import StrParam
@@ -39,10 +39,10 @@ class Hole(SketchBasedShape):
         self.hole = com_object
 
     @property
-    def anchor_mode(self):
+    def anchor_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AnchorMode() As CatHoleAnchorMode
                 | 
                 |     Returns the hole anchor mode.
@@ -59,24 +59,25 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set holeAnchorMode = firstHole.AnchorMode
 
-        :return: enum cat_hole_anchor_mode
+        :return: int
+        :rtype: int
         """
 
         return self.hole.AnchorMode
 
     @anchor_mode.setter
-    def anchor_mode(self, value):
+    def anchor_mode(self, value: int):
         """
-        :param enum cat_hole_anchor_mode value:
+        :param int value:
         """
 
         self.hole.AnchorMode = value
 
     @property
-    def bottom_angle(self):
+    def bottom_angle(self) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BottomAngle() As Angle (Read Only)
                 | 
                 |     Returns the hole bottom angle.
@@ -93,15 +94,16 @@ class Hole(SketchBasedShape):
                 |              Set holeBottomAngle = firstHole.BottomAngle
 
         :return: Angle
+        :rtype: Angle
         """
 
         return Angle(self.hole.BottomAngle)
 
     @property
-    def bottom_limit(self):
+    def bottom_limit(self) -> Limit:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BottomLimit() As Limit (Read Only)
                 | 
                 |     Returns the bottom limit.
@@ -118,15 +120,16 @@ class Hole(SketchBasedShape):
                 |              Set holeBottomLimit = firstHole.BottomLimit
 
         :return: Limit
+        :rtype: Limit
         """
 
         return Limit(self.hole.BottomLimit)
 
     @property
-    def bottom_type(self):
+    def bottom_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BottomType() As CatHoleBottomType
                 | 
                 |     Returns the hole bottom type.
@@ -141,24 +144,25 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set holeBottomType = firstHole.BottomType
 
-        :return: enum cat_hole_bottom_type
+        :return: int
+        :rtype: int
         """
 
         return self.hole.BottomType
 
     @bottom_type.setter
-    def bottom_type(self, value):
+    def bottom_type(self, value: int):
         """
-        :param enum cat_hole_bottom_type value:
+        :param int value:
         """
 
         self.hole.BottomType = value
 
     @property
-    def counter_sunk_mode(self):
+    def counter_sunk_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CounterSunkMode() As CatCSHoleMode
                 | 
                 |     Returns the mode of a countersunk hole .
@@ -173,24 +177,25 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set CSMode = firsthole.CounterSunkMode
 
-        :return: enum cat_cs_hole_mode
+        :return: int
+        :rtype: int
         """
 
         return self.hole.CounterSunkMode
 
     @counter_sunk_mode.setter
-    def counter_sunk_mode(self, value):
+    def counter_sunk_mode(self, value: int):
         """
-        :param enum cat_cs_hole_mode value:
+        :param int value:
         """
 
         self.hole.CounterSunkMode = value
 
     @property
-    def diameter(self):
+    def diameter(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Diameter() As Length (Read Only)
                 | 
                 |     Returns the hole diameter.
@@ -206,15 +211,16 @@ class Hole(SketchBasedShape):
                 |              Set holeDiam = firstHole.Diameter
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hole.Diameter)
 
     @property
-    def head_angle(self):
+    def head_angle(self) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HeadAngle() As Angle (Read Only)
                 | 
                 |     Returns the hole head angle.
@@ -231,15 +237,16 @@ class Hole(SketchBasedShape):
                 |              Set holeHeadAngle = firstHole.HeadAngle
 
         :return: Angle
+        :rtype: Angle
         """
 
         return Angle(self.hole.HeadAngle)
 
     @property
-    def head_depth(self):
+    def head_depth(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HeadDepth() As Length (Read Only)
                 | 
                 |     Returns the hole head depth.
@@ -256,15 +263,16 @@ class Hole(SketchBasedShape):
                 |              Set holeHeadDepth = firstHole.HeadDepth
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hole.HeadDepth)
 
     @property
-    def head_diameter(self):
+    def head_diameter(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HeadDiameter() As Length (Read Only)
                 | 
                 |     Returns the hole head diameter.
@@ -281,19 +289,20 @@ class Hole(SketchBasedShape):
                 |              Set holeHeadDiam = firstHole.HeadDiameter
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hole.HeadDiameter)
 
     @property
-    def hole_thread_description(self):
+    def hole_thread_description(self) -> StrParam:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HoleThreadDescription() As StrParam (Read Only)
                 | 
-                |     Returns the hole thread description parameter. This call is valid when the hole threading mode is:
-                |     CATThreadedHoleThreading.
+                |     Returns the hole thread description parameter.
+                |     This call is valid when the hole threading mode is : CATThreadedHoleThreading.
                 |     This call is valid only when a standard/user design table
                 |     exists
                 | 
@@ -308,15 +317,16 @@ class Hole(SketchBasedShape):
                 |              Set holeThreadDescription = firstHole.HoleThreadDescription
 
         :return: StrParam
+        :rtype: StrParam
         """
 
         return StrParam(self.hole.HoleThreadDescription)
 
     @property
-    def thread_depth(self):
+    def thread_depth(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ThreadDepth() As Length (Read Only)
                 | 
                 |     Returns the hole thread depth.
@@ -333,15 +343,16 @@ class Hole(SketchBasedShape):
                 |              Set holeThreadDepth = firstHole.ThreadDepth
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hole.ThreadDepth)
 
     @property
-    def thread_diameter(self):
+    def thread_diameter(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ThreadDiameter() As Length (Read Only)
                 | 
                 |     Returns the hole thread diameter.
@@ -358,15 +369,16 @@ class Hole(SketchBasedShape):
                 |              Set holeThreadDiameter = firstHole.ThreadDiameter
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hole.ThreadDiameter)
 
     @property
-    def thread_pitch(self):
+    def thread_pitch(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ThreadPitch() As Length (Read Only)
                 | 
                 |     Returns the hole thread pitch.
@@ -383,15 +395,16 @@ class Hole(SketchBasedShape):
                 |              Set holeThreadPitch = firstHole.ThreadPitch
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hole.ThreadPitch)
 
     @property
-    def thread_side(self):
+    def thread_side(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ThreadSide() As CatHoleThreadSide
                 | 
                 |     Returns the hole thread side.
@@ -406,24 +419,25 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set holeThreadSide = firstHole.ThreadSide
 
-        :return: enum cat_hole_thread_side
+        :return: int
+        :rtype: int
         """
 
         return self.hole.ThreadSide
 
     @thread_side.setter
-    def thread_side(self, value):
+    def thread_side(self, value: int):
         """
-        :param enum cat_hole_thread_side value:
+        :param int value:
         """
 
         self.hole.ThreadSide = value
 
     @property
-    def threading_mode(self):
+    def threading_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ThreadingMode() As CatHoleThreadingMode
                 | 
                 |     Returns the hole threading mode.
@@ -438,24 +452,25 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set holeThreadingMode = firstHole.ThreadingMode
 
-        :return: enum cat_hole_threading_mode
+        :return: int
+        :rtype: int
         """
 
         return self.hole.ThreadingMode
 
     @threading_mode.setter
-    def threading_mode(self, value):
+    def threading_mode(self, value: int):
         """
-        :param enum cat_hole_threading_mode value:
+        :param int value:
         """
 
         self.hole.ThreadingMode = value
 
     @property
-    def type(self):
+    def type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Type() As CatHoleType
                 | 
                 |     Returns the hole type.
@@ -470,23 +485,24 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set holeType = firstHole.Type
 
-        :return: enum cat_hole_type
+        :return: int
+        :rtype: int
         """
 
         return self.hole.Type
 
     @type.setter
-    def type(self, value):
+    def type(self, value: int):
         """
-        :param enum cat_hole_type value:
+        :param int value:
         """
 
         self.hole.Type = value
 
-    def create_standard_thread_design_table(self, i_standard_type):
+    def create_standard_thread_design_table(self, i_standard_type: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub CreateStandardThreadDesignTable(CatHoleThreadStandard
                 | iStandardType)
                 | 
@@ -507,30 +523,16 @@ class Hole(SketchBasedShape):
                 |              firstHole.CreateStandardThreadDesignTable
                 |              catHoleMetricThinPitch
 
-        :param CatHoleThreadStandard i_standard_type:
+        :param int i_standard_type:
         :return: None
+        :rtype: None
         """
-        return self.hole.CreateStandardThreadDesignTable(i_standard_type.com_object)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'create_standard_thread_design_table'
-        # # vba_code = """
-        # # Public Function create_standard_thread_design_table(hole)
-        # #     Dim iStandardType (2)
-        # #     hole.CreateStandardThreadDesignTable iStandardType
-        # #     create_standard_thread_design_table = iStandardType
-        # # End Function
-        # # """
+        return self.hole.CreateStandardThreadDesignTable(i_standard_type)
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def create_user_standard_design_table(self, i_standard_name, i_path):
+    def create_user_standard_design_table(self, i_standard_name: str, i_path: str) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub CreateUserStandardDesignTable(CATBSTR iStandardName,
                 | CATBSTR iPath)
                 | 
@@ -560,18 +562,19 @@ class Hole(SketchBasedShape):
                 |                 CATReffilesPath:
                 | 
                 |                  firstHole.CreateUserStandardDesignTable
-                |                  "","E://user//standard//UserStandard.txt"
+                |                  "","E:\\user\\standard\\UserStandard.txt"
 
         :param str i_standard_name:
         :param str i_path:
         :return: None
+        :rtype: None
         """
         return self.hole.CreateUserStandardDesignTable(i_standard_name, i_path)
 
-    def get_direction(self, io_direction):
+    def get_direction(self, io_direction: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetDirection(CATSafeArrayVariant ioDirection)
                 | 
                 |     Returns the hole direction with absolute coordinates.
@@ -591,6 +594,7 @@ class Hole(SketchBasedShape):
 
         :param tuple io_direction:
         :return: None
+        :rtype: None
         """
         return self.hole.GetDirection(io_direction)
         # # # # Autogenerated comment: 
@@ -609,10 +613,10 @@ class Hole(SketchBasedShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_origin(self, io_origin):
+    def get_origin(self, io_origin: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetOrigin(CATSafeArrayVariant ioOrigin)
                 | 
                 |     Returns the origin point which the hole is anchored to.
@@ -632,6 +636,7 @@ class Hole(SketchBasedShape):
 
         :param tuple io_origin:
         :return: None
+        :rtype: None
         """
         return self.hole.GetOrigin(io_origin)
         # # # # Autogenerated comment: 
@@ -650,10 +655,10 @@ class Hole(SketchBasedShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def reverse(self):
+    def reverse(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Reverse()
                 | 
                 |     Reverses the hole direction .
@@ -665,13 +670,14 @@ class Hole(SketchBasedShape):
                 |          firstHole.Reverse()
 
         :return: None
+        :rtype: None
         """
         return self.hole.Reverse()
 
-    def set_direction(self, i_direction):
+    def set_direction(self, i_direction: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDirection(Reference iDirection)
                 | 
                 |     Sets the hole associative direction.
@@ -694,6 +700,7 @@ class Hole(SketchBasedShape):
 
         :param Reference i_direction:
         :return: None
+        :rtype: None
         """
         return self.hole.SetDirection(i_direction.com_object)
         # # # # Autogenerated comment: 
@@ -712,10 +719,10 @@ class Hole(SketchBasedShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_origin(self, i_x, i_y, i_z):
+    def set_origin(self, i_x: float, i_y: float, i_z: float) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetOrigin(double iX,
                 | double iY,
                 | double iZ)
@@ -743,6 +750,7 @@ class Hole(SketchBasedShape):
         :param float i_y:
         :param float i_z:
         :return: None
+        :rtype: None
         """
         return self.hole.SetOrigin(i_x, i_y, i_z)
 
