@@ -37,10 +37,10 @@ class AxisSystem(AnyObject):
         self.axis_system = com_object
 
     @property
-    def axis_rotation_angle(self):
+    def axis_rotation_angle(self) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AxisRotationAngle() As Angle (Read Only)
                 | 
                 |     Returns the rotation angle of an axis system. Succeeds only if the axis
@@ -48,15 +48,16 @@ class AxisSystem(AnyObject):
                 |     catAxisSystemAxisRotation.
 
         :return: Angle
+        :rtype: Angle
         """
 
         return Angle(self.axis_system.AxisRotationAngle)
 
     @property
-    def axis_rotation_reference(self):
+    def axis_rotation_reference(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AxisRotationReference() As Reference
                 | 
                 |     Returns the reference for the axis rotation. Succeeds only if the axis
@@ -64,12 +65,13 @@ class AxisSystem(AnyObject):
                 |     catAxisSystemAxisRotation.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.axis_system.AxisRotationReference)
 
     @axis_rotation_reference.setter
-    def axis_rotation_reference(self, value):
+    def axis_rotation_reference(self, value: Reference):
         """
         :param Reference value:
         """
@@ -77,7 +79,7 @@ class AxisSystem(AnyObject):
         self.axis_system.AxisRotationReference = value
 
     @property
-    def is_current(self):
+    def is_current(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -103,12 +105,13 @@ class AxisSystem(AnyObject):
                 |          axisSystem.IsCurrent = 0
 
         :return: bool
+        :rtype: bool
         """
 
         return self.axis_system.IsCurrent
 
     @is_current.setter
-    def is_current(self, value):
+    def is_current(self, value: bool):
         """
         :param bool value:
         """
@@ -116,7 +119,7 @@ class AxisSystem(AnyObject):
         self.axis_system.IsCurrent = value
 
     @property
-    def origin_point(self):
+    def origin_point(self) -> Reference:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -141,11 +144,13 @@ class AxisSystem(AnyObject):
                 |          AxisSystem0.OriginPoint = Reference6
 
         :return: Reference
+        :rtype: Reference
         """
+
         return Reference(self.axis_system.OriginPoint)
 
     @origin_point.setter
-    def origin_point(self, value):
+    def origin_point(self, value: Reference):
         """
         :param Reference value:
         """
@@ -153,7 +158,7 @@ class AxisSystem(AnyObject):
         self.axis_system.OriginPoint = value
 
     @property
-    def origin_type(self):
+    def origin_type(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -170,105 +175,108 @@ class AxisSystem(AnyObject):
                 |     If OriginType=1, the origin is defined by three coordinates x,y,z. Then,
                 |     the origin will allways stays at the position defined by the
                 |     coordinates.
-                |
+                | 
                 |     Example:
                 |         The following example prints the origin type :
-                |
+                | 
                 |          Catia.SystemService.Print " OriginType = " & axisSystem.OriginType
-                |
+                | 
                 |         The following example sets the origin type to 1 :
-                |
+                | 
                 |          axisSystem.OriginType = 1
 
-        :return: enum cat_axis_system_origin_type
+        :return: int
+        :rtype: int
         """
 
         return self.axis_system.OriginType
 
     @origin_type.setter
-    def origin_type(self, value):
+    def origin_type(self, value: int):
         """
-        :param enum cat_axis_system_origin_type value:
+        :param int value:
         """
 
         self.axis_system.OriginType = value
 
     @property
-    def type(self):
+    def type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Type() As CATAxisSystemMainType
                 | 
                 |     Returns or sets the type of the axis system. Sets the axis system
                 |     type.
-                |
+                | 
                 |     Example:
                 |         The following example returns in type1 the type of the axis system
                 |         axisSystem1:
-                |
+                | 
                 |          type1 = axisSystem1.Type
-                |
+                | 
                 |         The following example sets the type of the axis system axisSystem1 as
                 |         standard:
-                |
+                | 
                 |          axisSystem1.Type = 0
-                |
+                | 
                 |         The following example sets the type of the axis system axisSystem1 as
                 |         axis rotation:
-                |
+                | 
                 |          axisSystem1.Type = 1
-                |
+                | 
                 |     The following example sets the type of the axis system axisSystem1 as datum
                 |     (explicit):
-                |
+                | 
                 |      axisSystem1.Type = 3
 
-        :return: enum cat_axis_system_main_type
+        :return: int
+        :rtype: int
         """
 
         return self.axis_system.Type
 
     @type.setter
-    def type(self, value):
+    def type(self, value: int):
         """
-        :param enum cat_axis_system_main_type value:
+        :param int value:
         """
 
         self.axis_system.Type = value
 
     @property
-    def x_axis_direction(self):
+    def x_axis_direction(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property XAxisDirection() As Reference
                 | 
                 |     Reads or sets the geometric point, line or plane which defines the
                 |     direction of the X axis.
                 |     AxisDirection is and must be a reference on a 3D point or 3D line or
                 |     plane.
-                |
+                | 
                 |     Example:
                 |         The following example sets the point Point.1 of the Geometrical Set
                 |         Geometrical Set.1 as the direction of the X axis of the axis system
                 |         AxisSystem0:
-                |
+                | 
                 |          Dim HybridBody4 As AnyObject
-                |          Set HybridBody4 = Body1.HybridBodies.Item  ( "Geometrical Set.1" )
+                |          Set HybridBody4 = Body1.HybridBodies.Item  ( "Geometrical Set.1" ) 
                 |          Dim HybridShapePointCoord5 As AnyObject
-                |          Set HybridShapePointCoord5 = HybridBody4.HybridShapes.Item  ( "Point.1" )
+                |          Set HybridShapePointCoord5 = HybridBody4.HybridShapes.Item  ( "Point.1" ) 
                 |          Dim Reference6 As Reference
-                |          Set Reference6 = CATIA.ActiveDocument.Part.CreateReferenceFromGeometry  ( HybridShapePointCoord5 )
+                |          Set Reference6 = CATIA.ActiveDocument.Part.CreateReferenceFromGeometry  ( HybridShapePointCoord5 ) 
                 |          AxisSystem0.XAxisDirection = Reference6
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.axis_system.XAxisDirection)
 
     @x_axis_direction.setter
-    def x_axis_direction(self, value):
+    def x_axis_direction(self, value: Reference):
         """
         :param Reference value:
         """
@@ -276,10 +284,10 @@ class AxisSystem(AnyObject):
         self.axis_system.XAxisDirection = value
 
     @property
-    def x_axis_type(self):
+    def x_axis_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property XAxisType() As CATAxisSystemAxisType
                 | 
                 |     Reads or sets the way the X axis is specified.
@@ -288,61 +296,63 @@ class AxisSystem(AnyObject):
                 |     AxisType = 0 : The axis is defined by a geometric point, line or plane and with the same direction.
                 |     AxisType = 1 : The axis direction is defined by the three coordinates x,y,z, of a vector, to which the axis will allways stay parallel.
                 |     AxisType = 2 : the axis is defined by a geometric point, line or plane and with the opposite direction. Notice : If the X axis is neither defined by coordinates nor by a point,line or plane, the axis will be automatically computed in order to build an orthogonal axis sytem with the other specified axes.
-                |
+                | 
                 |     Example:
                 |         The following example prints the X axis type :
-                |
+                | 
                 |          Catia.SystemService.Print " XAxisType = " & axisSystem.XAxisType
-                |
+                | 
                 |         The following example sets the X axis type to 1 :
-                |
+                | 
                 |          axisSystem.XAxisType = 1
 
-        :return: enum cat_axis_system_axis_type
+        :return: int
+        :rtype: int
         """
 
         return self.axis_system.XAxisType
 
     @x_axis_type.setter
-    def x_axis_type(self, value):
+    def x_axis_type(self, value: int):
         """
-        :param enum cat_axis_system_axis_type value:
+        :param int value:
         """
 
         self.axis_system.XAxisType = value
 
     @property
-    def y_axis_direction(self):
+    def y_axis_direction(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property YAxisDirection() As Reference
                 | 
                 |     Reads or sets the geometric point, line or plane which defines the
                 |     direction of the Y axis.
                 |     AxisDirection is and must be a reference on a 3D point or 3D line or
                 |     plane.
-                |
+                | 
                 |     Example:
                 |         The following example sets the point Point.1 of the Geometrical Set
                 |         Geometrical Set.1 as the direction of the Y axis of the axis system
                 |         AxisSystem0:
-                |
+                | 
                 |          Dim HybridBody4 As AnyObject
-                |          Set HybridBody4 = Body1.HybridBodies.Item  ( "Geometrical Set.1" )
+                |          Set HybridBody4 = Body1.HybridBodies.Item  ( "Geometrical Set.1" ) 
                 |          Dim HybridShapePointCoord5 As AnyObject
-                |          Set HybridShapePointCoord5 = HybridBody4.HybridShapes.Item  ( "Point.1" )
+                |          Set HybridShapePointCoord5 = HybridBody4.HybridShapes.Item  ( "Point.1" ) 
                 |          Dim Reference6 As Reference
-                |          Set Reference6 = CATIA.ActiveDocument.Part.CreateReferenceFromGeometry  ( HybridShapePointCoord5 )
+                |          Set Reference6 = CATIA.ActiveDocument.Part.CreateReferenceFromGeometry  ( HybridShapePointCoord5 ) 
                 |          AxisSystem0.YAxisDirection = Reference6
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.axis_system.YAxisDirection)
 
     @y_axis_direction.setter
-    def y_axis_direction(self, value):
+    def y_axis_direction(self, value: Reference):
         """
         :param Reference value:
         """
@@ -350,10 +360,10 @@ class AxisSystem(AnyObject):
         self.axis_system.YAxisDirection = value
 
     @property
-    def y_axis_type(self):
+    def y_axis_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property YAxisType() As CATAxisSystemAxisType
                 | 
                 |     Reads or sets the way the Y axis is specified.
@@ -362,61 +372,63 @@ class AxisSystem(AnyObject):
                 |     AxisType = 0 : The axis is defined by a geometric point, line or plane and with the same direction.
                 |     AxisType = 1 : The axis direction is defined by the three coordinates x,y,z, of a vector, to which the axis will allways stay parallel.
                 |     AxisType = 2 : the axis is defined by a geometric point, line or plane and with the opposite direction. Notice : If the Y axis is neither defined by coordinates nor by a point,line or plane, the axis will be automatically computed in order to build an orthogonal axis sytem with the other specified axes.
-                |
+                | 
                 |     Example:
                 |         The following example prints the Y axis type :
-                |
+                | 
                 |          Catia.SystemService.Print " YAxisType = " & axisSystem.YAxisType
-                |
+                | 
                 |         The following example sets the Y axis type to 1 :
-                |
+                | 
                 |          axisSystem.YAxisType = 1
 
-        :return: enum cat_axis_system_axis_type
+        :return: int
+        :rtype: int
         """
 
         return self.axis_system.YAxisType
 
     @y_axis_type.setter
-    def y_axis_type(self, value):
+    def y_axis_type(self, value: int):
         """
-        :param enum cat_axis_system_axis_type value:
+        :param int value:
         """
 
         self.axis_system.YAxisType = value
 
     @property
-    def z_axis_direction(self):
+    def z_axis_direction(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ZAxisDirection() As Reference
                 | 
                 |     Reads or sets the geometric point, line or plane which defines the
                 |     direction of the Z axis.
                 |     AxisDirection is and must be a reference on a 3D point or 3D line or
                 |     plane.
-                |
+                | 
                 |     Example:
                 |         The following example sets the point Point.1 of the Geometrical Set
                 |         Geometrical Set.1 as the direction of the Z axis of the axis system
                 |         AxisSystem0:
-                |
+                | 
                 |          Dim HybridBody4 As AnyObject
-                |          Set HybridBody4 = Body1.HybridBodies.Item  ( "Geometrical Set.1" )
+                |          Set HybridBody4 = Body1.HybridBodies.Item  ( "Geometrical Set.1" ) 
                 |          Dim HybridShapePointCoord5 As AnyObject
-                |          Set HybridShapePointCoord5 = HybridBody4.HybridShapes.Item  ( "Point.1" )
+                |          Set HybridShapePointCoord5 = HybridBody4.HybridShapes.Item  ( "Point.1" ) 
                 |          Dim Reference6 As Reference
-                |          Set Reference6 = CATIA.ActiveDocument.Part.CreateReferenceFromGeometry  ( HybridShapePointCoord5 )
+                |          Set Reference6 = CATIA.ActiveDocument.Part.CreateReferenceFromGeometry  ( HybridShapePointCoord5 ) 
                 |          AxisSystem0.ZAxisDirection = Reference6
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.axis_system.ZAxisDirection)
 
     @z_axis_direction.setter
-    def z_axis_direction(self, value):
+    def z_axis_direction(self, value: Reference):
         """
         :param Reference value:
         """
@@ -424,10 +436,10 @@ class AxisSystem(AnyObject):
         self.axis_system.ZAxisDirection = value
 
     @property
-    def z_axis_type(self):
+    def z_axis_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ZAxisType() As CATAxisSystemAxisType
                 | 
                 |     Reads or sets the way the Z axis is specified.
@@ -436,33 +448,34 @@ class AxisSystem(AnyObject):
                 |     AxisType = 0 : The axis is defined by a geometric point, line or plane and with the same direction.
                 |     AxisType = 1 : The axis direction is defined by the three coordinates x,y,z, of a vector, to which the axis will allways stay parallel.
                 |     AxisType = 2 : the axis is defined by a geometric point, line or plane and with the opposite direction. Notice : If the Z axis is neither defined by coordinates nor by a point,line or plane, the axis will be automatically computed in order to build an orthogonal axis sytem with the other specified axes.
-                |
+                | 
                 |     Example:
                 |         The following example prints the Z axis type :
-                |
+                | 
                 |          Catia.SystemService.Print " ZAxisType = " & axisSystem.ZAxisType
-                |
+                | 
                 |         The following example sets the Z axis type to 1 :
-                |
+                | 
                 |          axisSystem.ZAxisType = 1
 
-        :return: enum cat_axis_system_axis_type
+        :return: int
+        :rtype: int
         """
 
         return self.axis_system.ZAxisType
 
     @z_axis_type.setter
-    def z_axis_type(self, value):
+    def z_axis_type(self, value: int):
         """
-        :param enum cat_axis_system_axis_type value:
+        :param int value:
         """
 
         self.axis_system.ZAxisType = value
 
-    def get_euler_angles(self, o_first_angle=None, o_second_angle=None, third_angle=None):
+    def get_euler_angles(self, o_first_angle: Angle, o_second_angle: Angle, third_angle: Angle) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetEulerAngles(Angle oFirstAngle,
                 | Angle oSecondAngle,
                 | Angle ThirdAngle)
@@ -475,9 +488,10 @@ class AxisSystem(AnyObject):
         :param Angle o_second_angle:
         :param Angle third_angle:
         :return: None
+        :rtype: None
         """
         return self.axis_system.GetEulerAngles(o_first_angle.com_object, o_second_angle.com_object, third_angle.com_object)
-        # # # # Autogenerated comment:
+        # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -493,21 +507,21 @@ class AxisSystem(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_origin(self, o_origin=None):
+    def get_origin(self, o_origin: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetOrigin(CATSafeArrayVariant oOrigin)
                 | 
                 |     Returns the coordinates X,Y,Z of the origin point of the axis
                 |     system.
-                |
+                | 
                 |     Parameters:
-                |
+                | 
                 |         oOrigin
                 |             A Safe Array made up of 3 doubles: X, Y, Z, representing the
                 |             coordinates in model space of the origin point of the axis system.
-                |
+                |             
                 | 
                 |     Example:
                 |         The following example retrieves in originCoord the coordinates of the
@@ -518,9 +532,10 @@ class AxisSystem(AnyObject):
 
         :param tuple o_origin:
         :return: None
+        :rtype: None
         """
         return self.axis_system.GetOrigin(o_origin)
-        # # # # Autogenerated comment:
+        # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -536,26 +551,26 @@ class AxisSystem(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_vectors(self, o_vector_x=None, o_vector_y=None):
+    def get_vectors(self, o_vector_x: tuple, o_vector_y: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetVectors(CATSafeArrayVariant oVectorX,
                 | CATSafeArrayVariant oVectorY)
                 | 
                 |     Returns the coordinates X,Y,Z of the axes X and Y of the axis
                 |     system.
-                |
+                | 
                 |     Parameters:
-                |
+                | 
                 |         oVectorX
                 |             A Safe Array made up of 3 doubles: X, Y, Z, representing the
                 |             coordinates in model space of the X axis vector of the axis system.
-                |
+                |             
                 |         oVectorY
                 |             A Safe Array made up of 3 doubles: X, Y, Z, representing the
                 |             coordinates in model space of the Y axis vector of the axis system.
-                |
+                |             
                 | 
                 |     Example:
                 |         The following example retrieves in vectorXCoord and vectorYCoord the
@@ -569,9 +584,10 @@ class AxisSystem(AnyObject):
         :param tuple o_vector_x:
         :param tuple o_vector_y:
         :return: None
+        :rtype: None
         """
         return self.axis_system.GetVectors(o_vector_x, o_vector_y)
-        # # # # Autogenerated comment:
+        # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -587,21 +603,21 @@ class AxisSystem(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_x_axis(self, o_x_axis=None):
+    def get_x_axis(self, o_x_axis: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetXAxis(CATSafeArrayVariant oXAxis)
                 | 
                 |     Returns the coordinates X,Y,Z of the X axis of the axis
                 |     system.
-                |
+                | 
                 |     Parameters:
-                |
+                | 
                 |         oXAxis
                 |             A Safe Array made up of 3 doubles: X, Y, Z, representing the
                 |             coordinates in model space of the X axis of the axis system.
-                |
+                |             
                 | 
                 |     Example:
                 |         The following example retrieves in XAxisCoord the coordinates of the X
@@ -612,9 +628,10 @@ class AxisSystem(AnyObject):
 
         :param tuple o_x_axis:
         :return: None
+        :rtype: None
         """
         return self.axis_system.GetXAxis(o_x_axis)
-        # # # # Autogenerated comment:
+        # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -630,21 +647,21 @@ class AxisSystem(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_y_axis(self, o_y_axis=None):
+    def get_y_axis(self, o_y_axis: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetYAxis(CATSafeArrayVariant oYAxis)
                 | 
                 |     Returns the coordinates X,Y,Z of the Y axis of the axis
                 |     system.
-                |
+                | 
                 |     Parameters:
-                |
+                | 
                 |         oYAxis
                 |             A Safe Array made up of 3 doubles: X, Y, Z, representing the
                 |             coordinates in model space of the Y axis of the axis system.
-                |
+                |             
                 | 
                 |     Example:
                 |         The following example retrieves in YAxisCoord the coordinates of the Y
@@ -655,9 +672,10 @@ class AxisSystem(AnyObject):
 
         :param tuple o_y_axis:
         :return: None
+        :rtype: None
         """
         return self.axis_system.GetYAxis(o_y_axis)
-        # # # # Autogenerated comment:
+        # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -673,21 +691,21 @@ class AxisSystem(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_z_axis(self, o_z_axis=None):
+    def get_z_axis(self, o_z_axis: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetZAxis(CATSafeArrayVariant oZAxis)
                 | 
                 |     Returns the coordinates X,Y,Z of the Z axis of the axis
                 |     system.
-                |
+                | 
                 |     Parameters:
-                |
+                | 
                 |         oZAxis
                 |             A Safe Array made up of 3 doubles: X, Y, Z, representing the
                 |             coordinates in model space of the Z axis of the axis system.
-                |
+                |             
                 | 
                 |     Example:
                 |         The following example retrieves in ZAxisCoord the coordinates of the Z
@@ -698,9 +716,10 @@ class AxisSystem(AnyObject):
 
         :param tuple o_z_axis:
         :return: None
+        :rtype: None
         """
         return self.axis_system.GetZAxis(o_z_axis)
-        # # # # Autogenerated comment:
+        # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -716,21 +735,21 @@ class AxisSystem(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def put_origin(self, i_origin=None):
+    def put_origin(self, i_origin: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutOrigin(CATSafeArrayVariant iOrigin)
                 | 
                 |     Defines the coordinates X,Y,Z of the origin point of the axis
                 |     system.
-                |
+                | 
                 |     Parameters:
-                |
+                | 
                 |         iOrigin
                 |             A Safe Array made up of 3 doubles: X, Y, Z, representing the
                 |             coordinates in model space of the origin point of the axis system.
-                |
+                |             
                 | 
                 |     Example:
                 |         The following example puts in originCoord the new coordinates of the
@@ -744,9 +763,10 @@ class AxisSystem(AnyObject):
 
         :param tuple i_origin:
         :return: None
+        :rtype: None
         """
         return self.axis_system.PutOrigin(i_origin)
-        # # # # Autogenerated comment:
+        # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -762,26 +782,26 @@ class AxisSystem(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def put_vectors(self, i_vector_x=None, i_vector_y=None):
+    def put_vectors(self, i_vector_x: tuple, i_vector_y: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutVectors(CATSafeArrayVariant iVectorX,
                 | CATSafeArrayVariant iVectorY)
                 | 
                 |     Defines the coordinates X,Y,Z of the axes X and Y of the axis
                 |     system.
-                |
+                | 
                 |     Parameters:
-                |
+                | 
                 |         iVectorX
                 |             A Safe Array made up of 3 doubles: X, Y, Z, representing the
                 |             coordinates in model space of the X axis vector of the axis system.
-                |
+                |             
                 |         iVectorY
                 |             A Safe Array made up of 3 doubles: X, Y, Z, representing the
                 |             coordinates in model space of the Y axis vector of the axis system.
-                |
+                |             
                 | 
                 |     Example:
                 |         The following example modifies in vectorXCoord and vectorYCoord the
@@ -801,9 +821,10 @@ class AxisSystem(AnyObject):
         :param tuple i_vector_x:
         :param tuple i_vector_y:
         :return: None
+        :rtype: None
         """
         return self.axis_system.PutVectors(i_vector_x, i_vector_y)
-        # # # # Autogenerated comment:
+        # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -819,21 +840,21 @@ class AxisSystem(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def put_x_axis(self, i_x_axis=None):
+    def put_x_axis(self, i_x_axis: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutXAxis(CATSafeArrayVariant iXAxis)
                 | 
                 |     Defines the coordinates X,Y,Z of the X axis of the axis
                 |     system.
-                |
+                | 
                 |     Parameters:
-                |
+                | 
                 |         iXAxis
                 |             A Safe Array made up of 3 doubles: X, Y, Z, representing the
                 |             coordinates in model space of the X axis of the axis system.
-                |
+                |             
                 | 
                 |     Example:
                 |         The following example puts in XAxisCoord the new coordinates of the X
@@ -847,9 +868,10 @@ class AxisSystem(AnyObject):
 
         :param tuple i_x_axis:
         :return: None
+        :rtype: None
         """
         return self.axis_system.PutXAxis(i_x_axis)
-        # # # # Autogenerated comment:
+        # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -865,21 +887,21 @@ class AxisSystem(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def put_y_axis(self, i_y_axis=None):
+    def put_y_axis(self, i_y_axis: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutYAxis(CATSafeArrayVariant iYAxis)
                 | 
                 |     Defines the coordinates X,Y,Z of the Y axis of the axis
                 |     system.
-                |
+                | 
                 |     Parameters:
-                |
+                | 
                 |         iYAxis
                 |             A Safe Array made up of 3 doubles: X, Y, Z, representing the
                 |             coordinates in model space of the Y axis of the axis system.
-                |
+                |             
                 | 
                 |     Example:
                 |         The following example puts in XAxisCoord the new coordinates of the Y
@@ -893,9 +915,10 @@ class AxisSystem(AnyObject):
 
         :param tuple i_y_axis:
         :return: None
+        :rtype: None
         """
         return self.axis_system.PutYAxis(i_y_axis)
-        # # # # Autogenerated comment:
+        # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -911,21 +934,21 @@ class AxisSystem(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def put_z_axis(self, i_z_axis=None):
+    def put_z_axis(self, i_z_axis: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutZAxis(CATSafeArrayVariant iZAxis)
                 | 
                 |     Defines the coordinates X,Y,Z of the Z axis of the axis
                 |     system.
-                |
+                | 
                 |     Parameters:
-                |
+                | 
                 |         iZAxis
                 |             A Safe Array made up of 3 doubles: X, Y, Z, representing the
                 |             coordinates in model space of the Z axis of the axis system.
-                |
+                |             
                 | 
                 |     Example:
                 |         The following example puts in ZAxisCoord the new coordinates of the Z
@@ -939,9 +962,10 @@ class AxisSystem(AnyObject):
 
         :param tuple i_z_axis:
         :return: None
+        :rtype: None
         """
         return self.axis_system.PutZAxis(i_z_axis)
-        # # # # Autogenerated comment:
+        # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.

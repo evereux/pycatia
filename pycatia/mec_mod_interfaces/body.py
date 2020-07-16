@@ -42,17 +42,16 @@ class Body(AnyObject):
     def __init__(self, com_object):
         super().__init__(com_object)
         self.body = com_object
-        self.com_object = com_object
 
     @property
-    def hybrid_bodies(self):
+    def hybrid_bodies(self) -> HybridBodies:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HybridBodies() As HybridBodies (Read Only)
-                |
+                | 
                 |     Returns the body's HybridBodies collection.
-                |
+                | 
                 |     Example:
                 |         The following example returns in hybridBodyColl the collection of
                 |         hybrid bodies of the main body of partDoc part
@@ -63,139 +62,145 @@ class Body(AnyObject):
                 |          Set hybridBodyColl = body.HybridBodies
 
         :return: HybridBodies
+        :rtype: HybridBodies
         """
 
         return HybridBodies(self.body.HybridBodies)
 
     @property
-    def hybrid_shapes(self):
+    def hybrid_shapes(self) -> HybridShapes:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HybridShapes() As HybridShapes (Read Only)
                 | 
                 |     Returns the list of hybrid shapes included in the body.
-                |
+                | 
                 |     Returns:
                 |         oHybridShapes The list of hybrid shapes in the body (@see
                 |         CATIAHybridShapes
                 |         for more information).
-                |
+                | 
                 |         Example:
                 |             The following example returns in HybridShapes1 the list
                 |             of
                 |             hybrid shapes in the body Body1:
-                |
+                | 
                 |              Dim HybridShapes1 As HybridShapes
                 |              Set HybridShapes1 = Body1.HybridShapes
 
         :return: HybridShapes
+        :rtype: HybridShapes
         """
 
         return HybridShapes(self.body.HybridShapes)
 
     @property
-    def in_boolean_operation(self):
+    def in_boolean_operation(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property InBooleanOperation() As boolean (Read Only)
                 | 
                 |     Returns True if the body is involved in a boolean operation, else returns
                 |     False.
-                |
+                | 
                 |     Example:
                 |         The following example returns in operated True if the body body1belongs
                 |         to a boolean operation.
-                |
+                | 
                 |          operated = body1.InBooleanOperation
 
         :return: bool
+        :rtype: bool
         """
 
         return self.body.InBooleanOperation
 
     @property
-    def ordered_geometrical_sets(self):
+    def ordered_geometrical_sets(self) -> OrderedGeometricalSets:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OrderedGeometricalSets() As OrderedGeometricalSets (Read
                 | Only)
                 | 
                 |     Returns the body's OrderedGeometricalSets collection.
-                |
+                | 
                 |     ometricalSetColl = Body1.OrderedGeometricalSets Example:
                 |         The following example returns in OrderedGeometricalSetColl the
                 |         collection of ordered geometrical set of the body Body1
                 |         :
-                |
+                | 
                 |          Set OrderedGe
 
         :return: OrderedGeometricalSets
+        :rtype: OrderedGeometricalSets
         """
 
         return OrderedGeometricalSets(self.body.OrderedGeometricalSets)
 
     @property
-    def shapes(self):
+    def shapes(self) -> Shapes:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Shapes() As Shapes (Read Only)
                 | 
                 |     Returns the body's Shapes collection. These shapes make up the sequence of
                 |     shapes that will produce an intermediate result for the part, or the final
                 |     result in the case of the main body.
-                |
+                | 
                 |     Example:
                 |         The following example returns in shapColl the collection of shapes
                 |         managed by the main body of the partDoc part document:
-                |
+                | 
                 |          Dim body As Body
                 |          Set body = partDoc.Part.Bodies.MainBody
                 |          Set shapColl = body.Shapes
 
         :return: Shapes
+        :rtype: Shapes
         """
 
         return Shapes(self.body.Shapes)
 
     @property
-    def sketches(self):
+    def sketches(self) -> Sketches:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Sketches() As Sketches (Read Only)
                 | 
                 |     Returns the body's Sketches collection. These sketches are those inside the
                 |     body at all levels.
-                |
+                | 
                 |     Example:
                 |         The following example returns in skColl the collection of sketches of
                 |         the main body of partDoc part document:
-                |
+                | 
                 |          Dim body As Body
                 |          Set body = partDoc.Part.Bodies.MainBody
                 |          Set skColl = body.Sketches
 
         :return: Sketches
+        :rtype: Sketches
         """
 
         return Sketches(self.body.Sketches)
 
-    def insert_hybrid_shape(self, i_hybrid_shape):
+    def insert_hybrid_shape(self, i_hybrid_shape: HybridShape) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InsertHybridShape(HybridShape iHybridShape)
                 | 
                 |     Insert a hybrid shape to the body.
-                |
+                | 
                 |     Parameters:
-                |
+                | 
                 |         iHybriShape
-                |             The hybrid shape to insert.
+                |             The hybrid shape to insert. 
                 | 
                 |     Example:
                 |         This example inserts the hybrid shape HybridShape1 to the body
@@ -205,9 +210,10 @@ class Body(AnyObject):
 
         :param HybridShape i_hybrid_shape:
         :return: None
+        :rtype: None
         """
-        return self.body.InsertHybridShape(i_hybrid_shape)
-        # # # # Autogenerated comment:
+        return self.body.InsertHybridShape(i_hybrid_shape.com_object)
+        # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.

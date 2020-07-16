@@ -40,10 +40,10 @@ class GeometricElements(Collection):
         super().__init__(com_object)
         self.geometric_elements = com_object
 
-    def item(self, i_index):
+    def item(self, i_index: CATVariant) -> GeometricElement:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(CATVariant iIndex) As GeometricElement
                 | 
                 |     Returns a geometric element using its index or its name from the
@@ -70,8 +70,9 @@ class GeometricElements(Collection):
 
         :param CATVariant i_index:
         :return: GeometricElement
+        :rtype: GeometricElement
         """
-        return GeometricElement(self.geometric_elements.Item(i_index))
+        return GeometricElement(self.geometric_elements.Item(i_index.com_object))
 
     def __repr__(self):
         return f'GeometricElements(name="{self.name}")'
