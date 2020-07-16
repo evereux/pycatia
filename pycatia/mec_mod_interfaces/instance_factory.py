@@ -94,10 +94,10 @@ class InstanceFactory(Factory):
         self.instance_factory = com_object
 
     @property
-    def instantiation_mode(self):
+    def instantiation_mode(self) -> False:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property InstantiationMode(CATBSTR iInstantiationModeBSTR) (Write
                 | Only)
                 | 
@@ -114,22 +114,23 @@ class InstanceFactory(Factory):
                 |          InstanceFactory.InstantationMode = Mode
 
         :return: False
+        :rtype: False
         """
 
         return None
 
     @instantiation_mode.setter
-    def instantiation_mode(self, value):
+    def instantiation_mode(self, value: False):
         """
         :param False value:
         """
 
         self.instance_factory.InstantiationMode = value
 
-    def add_instance(self, i_reference=None):
+    def add_instance(self, i_reference: AnyObject) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddInstance(AnyObject iReference) As AnyObject
                 | 
                 |     Creates a new instance of a shape or hybrid shape.
@@ -147,13 +148,14 @@ class InstanceFactory(Factory):
 
         :param AnyObject i_reference:
         :return: AnyObject
+        :rtype: AnyObject
         """
         return AnyObject(self.instance_factory.AddInstance(i_reference.com_object))
 
-    def begin_instance_factory(self, i_name_of_reference=None, i_name_of_document=None):
+    def begin_instance_factory(self, i_name_of_reference: str, i_name_of_document: str) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub BeginInstanceFactory(CATBSTR iNameOfReference,
                 | CATBSTR iNameOfDocument)
                 | 
@@ -182,13 +184,14 @@ class InstanceFactory(Factory):
         :param str i_name_of_reference:
         :param str i_name_of_document:
         :return: None
+        :rtype: None
         """
         return self.instance_factory.BeginInstanceFactory(i_name_of_reference, i_name_of_document)
 
-    def begin_instantiate(self):
+    def begin_instantiate(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub BeginInstantiate()
                 | 
                 |     Initializes the data of the reference.
@@ -204,13 +207,14 @@ class InstanceFactory(Factory):
                 |          InstanceFactory.BeginInstantiate
 
         :return: None
+        :rtype: None
         """
         return self.instance_factory.BeginInstantiate()
 
-    def end_instance_factory(self):
+    def end_instance_factory(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub EndInstanceFactory()
                 | 
                 |     Ends the instantiation process.
@@ -225,13 +229,14 @@ class InstanceFactory(Factory):
                 |          InstanceFactory.EndInstanceFactory
 
         :return: None
+        :rtype: None
         """
         return self.instance_factory.EndInstanceFactory()
 
-    def end_instantiate(self):
+    def end_instantiate(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub EndInstantiate()
                 | 
                 |     Ends the instantiation of the reference.
@@ -247,13 +252,14 @@ class InstanceFactory(Factory):
                 |          InstanceFactory.EndInstantiate
 
         :return: None
+        :rtype: None
         """
         return self.instance_factory.EndInstantiate()
 
-    def get_parameter(self, i_name=None):
+    def get_parameter(self, i_name: str) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetParameter(CATBSTR iName) As AnyObject
                 | 
                 |     Retrieves a parameter of the reference by its name.
@@ -279,13 +285,14 @@ class InstanceFactory(Factory):
 
         :param str i_name:
         :return: AnyObject
+        :rtype: AnyObject
         """
         return AnyObject(self.instance_factory.GetParameter(i_name))
 
-    def instantiate(self):
+    def instantiate(self) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Instantiate() As AnyObject
                 | 
                 |     Instantiates the reference in the current document.
@@ -305,13 +312,14 @@ class InstanceFactory(Factory):
                 |          Set Instance = InstanceFactory.Instantiate
 
         :return: AnyObject
+        :rtype: AnyObject
         """
         return AnyObject(self.instance_factory.Instantiate())
 
-    def put_input_data(self, i_name=None, i_input=None):
+    def put_input_data(self, i_name: str, i_input: AnyObject) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutInputData(CATBSTR iName,
                 | CATBaseDispatch iInput)
                 | 
@@ -340,6 +348,7 @@ class InstanceFactory(Factory):
         :param str i_name:
         :param AnyObject i_input:
         :return: None
+        :rtype: None
         """
         return self.instance_factory.PutInputData(i_name, i_input.com_object)
 

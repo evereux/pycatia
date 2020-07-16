@@ -36,7 +36,7 @@ class Constraint(AnyObject):
         self.constraint = com_object
 
     @property
-    def angle_sector(self):
+    def angle_sector(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -81,21 +81,22 @@ class Constraint(AnyObject):
                 |                  angleSector = angleCst.AngleSector
                 |                  angleCst.AngleSector = 2
 
-        :return: enum cat_constraint_angle_sector
+        :return: int
+        :rtype: int
         """
 
         return self.constraint.AngleSector
 
     @angle_sector.setter
-    def angle_sector(self, value):
+    def angle_sector(self, value: int):
         """
-        :param enum cat_constraint_angle_sector value:
+        :param int value:
         """
 
         self.constraint.AngleSector = value
 
     @property
-    def dimension(self):
+    def dimension(self) -> Dimension:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -113,12 +114,13 @@ class Constraint(AnyObject):
                 |          Set cstDimension = firstCst.Dimension
 
         :return: Dimension
+        :rtype: Dimension
         """
 
         return Dimension(self.constraint.Dimension)
 
     @property
-    def distance_config(self):
+    def distance_config(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -136,21 +138,22 @@ class Constraint(AnyObject):
                 |
                 |          distCstConfig = distCst.DistanceConfig
 
-        :return: enum cat_constraint_dist_config
+        :return: int
+        :rtype: int
         """
 
         return self.constraint.DistanceConfig
 
     @distance_config.setter
-    def distance_config(self, value):
+    def distance_config(self, value: int):
         """
-        :param enum cat_constraint_dist_config value:
+        :param int value:
         """
 
         self.constraint.DistanceConfig = value
 
     @property
-    def distance_direction(self):
+    def distance_direction(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -158,31 +161,28 @@ class Constraint(AnyObject):
                 |
                 |     Returns or sets the distance constraint direction. This property is useless for constraints whose
                 |     type is not Distance (1). Distance constraints may be measured along a particular direction.
-                |     This property will be used if the direction is a reference axis : In 2D, 1 means the horizontal
-                |     axis, 2 the vertical axis. In 3D, 1 stands for the X axis, 2 for the Y axis, 3 for the Z axis.
-                |     0 means that no direction is specified and the distance is measured as usual.
-                |
                 |     Example:
                 |         The following example retrieves in distCstDirection the configuration
                 |         of the distCst distance constraint:
-                |
+                | 
                 |          distCstConfig = distCst.DistanceDirection
 
-        :return: enum cat_constraint_dist_direction
+        :return: int
+        :rtype: int
         """
 
         return self.constraint.DistanceDirection
 
     @distance_direction.setter
-    def distance_direction(self, value):
+    def distance_direction(self, value: int):
         """
-        :param enum cat_constraint_dist_direction value:
+        :param int value:
         """
 
         self.constraint.DistanceDirection = value
 
     @property
-    def mode(self):
+    def mode(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -199,21 +199,22 @@ class Constraint(AnyObject):
                 |
                 |          currentMode = distCst.Mode
 
-        :return: enum cat_constraint_mode
+        :return: int
+        :rtype: int
         """
 
         return self.constraint.Mode
 
     @mode.setter
-    def mode(self, value):
+    def mode(self, value: int):
         """
-        :param enum cat_constraint_mode value:
+        :param int value:
         """
 
         self.constraint.Mode = value
 
     @property
-    def orientation(self):
+    def orientation(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -230,21 +231,22 @@ class Constraint(AnyObject):
                 |
                 |          distCstOrient = distCst.Orientation
 
-        :return: enum cat_constraint_orientation
+        :return: int
+        :rtype: int
         """
 
         return self.constraint.Orientation
 
     @orientation.setter
-    def orientation(self, value):
+    def orientation(self, value: int):
         """
-        :param enum cat_constraint_orientation value:
+        :param int value:
         """
 
         self.constraint.Orientation = value
 
     @property
-    def reference_axis(self):
+    def reference_axis(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -261,21 +263,22 @@ class Constraint(AnyObject):
                 |
                 |          refAxis = axisPerpCst.ReferenceAxis
 
-        :return: enum cat_constraint_ref_axis
+        :return: int
+        :rtype: int
         """
 
         return self.constraint.ReferenceAxis
 
     @reference_axis.setter
-    def reference_axis(self, value):
+    def reference_axis(self, value: int):
         """
-        :param enum cat_constraint_ref_axis value:
+        :param int value:
         """
 
         self.constraint.ReferenceAxis = value
 
     @property
-    def reference_type(self):
+    def reference_type(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -290,21 +293,22 @@ class Constraint(AnyObject):
                 |
                 |          refCst2.ReferenceType = refCst1.ReferenceType
 
-        :return: enum cat_constraint_ref_type
+        :return: int
+        :rtype: int
         """
 
         return self.constraint.ReferenceType
 
     @reference_type.setter
-    def reference_type(self, value):
+    def reference_type(self, value: int):
         """
-        :param enum cat_constraint_ref_type value:
+        :param int value:
         """
 
         self.constraint.ReferenceType = value
 
     @property
-    def side(self):
+    def side(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -320,21 +324,22 @@ class Constraint(AnyObject):
                 |
                 |          distCstSide = distCst.Side
 
-        :return: enum cat_constraint_side
+        :return: int
+        :rtype: int
         """
 
         return self.constraint.Side
 
     @side.setter
-    def side(self, value):
+    def side(self, value: int):
         """
-        :param enum cat_constraint_side value:
+        :param int value:
         """
 
         self.constraint.Side = value
 
     @property
-    def status(self):
+    def status(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -349,13 +354,14 @@ class Constraint(AnyObject):
                 |
                 |          distCstSts = distCst.Status
 
-        :return: enum cat_constraint_status
+        :return: int
+        :rtype: int
         """
 
         return self.constraint.Status
 
     @property
-    def type(self):
+    def type(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -369,12 +375,13 @@ class Constraint(AnyObject):
                 |
                 |          cstType = firstCst.Type
 
-        :return: enum cat_constraint_type
+        :return: int
+        :rtype: int
         """
 
         return self.constraint.Type
 
-    def activate(self):
+    def activate(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -392,10 +399,11 @@ class Constraint(AnyObject):
                 |      tangencyCst.Activate
 
         :return: None
+        :rtype: None
         """
         return self.constraint.Activate()
 
-    def deactivate(self):
+    def deactivate(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -412,10 +420,11 @@ class Constraint(AnyObject):
                 |      tangencyCst.Deactivate
 
         :return: None
+        :rtype: None
         """
         return self.constraint.Deactivate()
 
-    def get_constraint_element(self, i_element_number=None):
+    def get_constraint_element(self, i_element_number: int) -> Reference:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -442,10 +451,11 @@ class Constraint(AnyObject):
 
         :param int i_element_number:
         :return: Reference
+        :rtype: Reference
         """
         return Reference(self.constraint.GetConstraintElement(i_element_number))
 
-    def get_constraint_visu_location(self, o_anchor_point=None, o_anchor_vector=None):
+    def get_constraint_visu_location(self, o_anchor_point: tuple, o_anchor_vector: tuple) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -480,6 +490,7 @@ class Constraint(AnyObject):
         :param tuple o_anchor_point:
         :param tuple o_anchor_vector:
         :return: None
+        :rtype: None
         """
         return self.constraint.GetConstraintVisuLocation(o_anchor_point, o_anchor_vector)
         # # # # Autogenerated comment:
@@ -498,7 +509,7 @@ class Constraint(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def is_inactive(self):
+    def is_inactive(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -515,10 +526,11 @@ class Constraint(AnyObject):
                 |      Set isInactive = tangencyCst.IsInactive
 
         :return: bool
+        :rtype: bool
         """
         return self.constraint.IsInactive()
 
-    def set_constraint_element(self, i_element_number=None, i_new_element=None):
+    def set_constraint_element(self, i_element_number: int, i_new_element: Reference) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -545,6 +557,7 @@ class Constraint(AnyObject):
         :param int i_element_number:
         :param Reference i_new_element:
         :return: None
+        :rtype: None
         """
         return self.constraint.SetConstraintElement(i_element_number, i_new_element.com_object)
         # # # # Autogenerated comment:
@@ -563,7 +576,7 @@ class Constraint(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_constraint_visu_location(self, i_new_x=None, i_new_y=None, i_new_z=None):
+    def set_constraint_visu_location(self, i_new_x: float, i_new_y: float, i_new_z: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -595,6 +608,7 @@ class Constraint(AnyObject):
         :param float i_new_y:
         :param float i_new_z:
         :return: None
+        :rtype: None
         """
         return self.constraint.SetConstraintVisuLocation(i_new_x, i_new_y, i_new_z)
 

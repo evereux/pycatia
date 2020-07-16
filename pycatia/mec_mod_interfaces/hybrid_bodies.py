@@ -34,7 +34,7 @@ class HybridBodies(Collection):
         self.hybrid_bodies = com_object
         self.child_object = child_object
 
-    def add(self):
+    def add(self) -> HybridBody:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -53,13 +53,14 @@ class HybridBodies(Collection):
                 |          Set NewPartBody = rootPart.Bodies.AddPartBody()
 
         :return: HybridBody
+        :rtype: HybridBody
         """
         return HybridBody(self.hybrid_bodies.Add())
 
-    def item(self, i_index):
+    def item(self, i_index: CATVariant) -> HybridBody:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(CATVariant iIndex) As HybridBody
                 | 
                 |     Returns a body using its index or its name from the Bodies
@@ -89,8 +90,9 @@ class HybridBodies(Collection):
 
         :param CATVariant i_index:
         :return: HybridBody
+        :rtype: HybridBody
         """
-        return HybridBody(self.hybrid_bodies.Item(i_index))
+        return HybridBody(self.hybrid_bodies.Item(i_index.com_object))
 
     def __repr__(self):
         return f'HybridBodies(name="{self.name}")'
