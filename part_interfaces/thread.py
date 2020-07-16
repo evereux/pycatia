@@ -17,7 +17,7 @@ from pycatia.part_interfaces.dress_up_shape import DressUpShape
 class Thread(DressUpShape):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -38,10 +38,10 @@ class Thread(DressUpShape):
         self.thread = com_object
 
     @property
-    def depth(self):
+    def depth(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Depth() As double
                 | 
                 |     Returns the thread/tap depth.
@@ -56,12 +56,13 @@ class Thread(DressUpShape):
                 |              Set Depth = firstthread.Depth
 
         :return: float
+        :rtype: float
         """
 
         return self.thread.Depth
 
     @depth.setter
-    def depth(self, value):
+    def depth(self, value: float):
         """
         :param float value:
         """
@@ -69,10 +70,10 @@ class Thread(DressUpShape):
         self.thread.Depth = value
 
     @property
-    def diameter(self):
+    def diameter(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Diameter() As double
                 | 
                 |     Returns the thread/tap diameter.
@@ -87,12 +88,13 @@ class Thread(DressUpShape):
                 |              Set ThreadDiameter = firstthread.Diameter
 
         :return: float
+        :rtype: float
         """
 
         return self.thread.Diameter
 
     @diameter.setter
-    def diameter(self, value):
+    def diameter(self, value: float):
         """
         :param float value:
         """
@@ -100,22 +102,23 @@ class Thread(DressUpShape):
         self.thread.Diameter = value
 
     @property
-    def lateral_face_element(self):
+    def lateral_face_element(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LateralFaceElement() As Reference
                 | 
                 |     Returns or sets the lateral face (must be cylindrical) .
                 |     To set the property, you can use the following Boundary object: Face.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.thread.LateralFaceElement)
 
     @lateral_face_element.setter
-    def lateral_face_element(self, value):
+    def lateral_face_element(self, value: Reference):
         """
         :param Reference value:
         """
@@ -123,22 +126,23 @@ class Thread(DressUpShape):
         self.thread.LateralFaceElement = value
 
     @property
-    def limit_face_element(self):
+    def limit_face_element(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LimitFaceElement() As Reference
                 | 
                 |     Returns or sets the limit face (must be planar ) .
                 |     To set the property, you can use the following Boundary object: PlanarFace.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.thread.LimitFaceElement)
 
     @limit_face_element.setter
-    def limit_face_element(self, value):
+    def limit_face_element(self, value: Reference):
         """
         :param Reference value:
         """
@@ -146,10 +150,10 @@ class Thread(DressUpShape):
         self.thread.LimitFaceElement = value
 
     @property
-    def pitch(self):
+    def pitch(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Pitch() As double
                 | 
                 |     Returns the thread/tap pitch.
@@ -164,12 +168,13 @@ class Thread(DressUpShape):
                 |              Set ThreadPitch = firstthread.ThreadPitch
 
         :return: float
+        :rtype: float
         """
 
         return self.thread.Pitch
 
     @pitch.setter
-    def pitch(self, value):
+    def pitch(self, value: float):
         """
         :param float value:
         """
@@ -177,10 +182,10 @@ class Thread(DressUpShape):
         self.thread.Pitch = value
 
     @property
-    def side(self):
+    def side(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Side() As CatThreadSide
                 | 
                 |     Returns the thread or tap side.
@@ -195,24 +200,25 @@ class Thread(DressUpShape):
                 | 
                 |              Set ThreadSide = firstthreadoThreadSide
 
-        :return: enum cat_thread_side
+        :return: int
+        :rtype: int
         """
 
         return self.thread.Side
 
     @side.setter
-    def side(self, value):
+    def side(self, value: int):
         """
-        :param enum cat_thread_side value:
+        :param int value:
         """
 
         self.thread.Side = value
 
     @property
-    def thread_description(self):
+    def thread_description(self) -> StrParam:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ThreadDescription() As StrParam (Read Only)
                 | 
                 |     Returns the thread/tap description parameter. This call is valid only when
@@ -229,14 +235,15 @@ class Thread(DressUpShape):
                 |              Set threadDescription = firstthread.ThreadDescription
 
         :return: StrParam
+        :rtype: StrParam
         """
 
         return StrParam(self.thread.ThreadDescription)
 
-    def create_standard_thread_design_table(self, i_standard_type):
+    def create_standard_thread_design_table(self, i_standard_type: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub CreateStandardThreadDesignTable(CatThreadStandard
                 | iStandardType)
                 | 
@@ -256,30 +263,16 @@ class Thread(DressUpShape):
                 |              firstthread.CreateStandardThreadDesignTable
                 |              catMetricThinPitch
 
-        :param CatThreadStandard i_standard_type:
+        :param int i_standard_type:
         :return: None
+        :rtype: None
         """
-        return self.thread.CreateStandardThreadDesignTable(i_standard_type.com_object)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'create_standard_thread_design_table'
-        # # vba_code = """
-        # # Public Function create_standard_thread_design_table(thread)
-        # #     Dim iStandardType (2)
-        # #     thread.CreateStandardThreadDesignTable iStandardType
-        # #     create_standard_thread_design_table = iStandardType
-        # # End Function
-        # # """
+        return self.thread.CreateStandardThreadDesignTable(i_standard_type)
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def create_user_standard_design_table(self, i_standard_name, i_path):
+    def create_user_standard_design_table(self, i_standard_name: str, i_path: str) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub CreateUserStandardDesignTable(CATBSTR iStandardName,
                 | CATBSTR iPath)
                 | 
@@ -308,30 +301,32 @@ class Thread(DressUpShape):
                 |                 CATReffilesPath:
                 | 
                 |                  firstThread.CreateUserStandardDesignTable
-                |                  "","E://user//standard//UserStandard.txt"
+                |                  "","E:\\user\\standard\\UserStandard.txt"
 
         :param str i_standard_name:
         :param str i_path:
         :return: None
+        :rtype: None
         """
         return self.thread.CreateUserStandardDesignTable(i_standard_name, i_path)
 
-    def reverse_direction(self):
+    def reverse_direction(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ReverseDirection()
                 | 
                 |     Swap the direction of the thread or the tap.
 
         :return: None
+        :rtype: None
         """
         return self.thread.ReverseDirection()
 
-    def set_explicit_polarity(self, i_thread_polarity):
+    def set_explicit_polarity(self, i_thread_polarity: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetExplicitPolarity(CatThreadPolarity iThreadPolarity)
                 | 
                 |     Sets the thread polarity explicit. Thread polarity is no more evaluated
@@ -350,25 +345,11 @@ class Thread(DressUpShape):
                 | 
                 |              firstthread.SetExplicitPolarity catTap
 
-        :param CatThreadPolarity i_thread_polarity:
+        :param int i_thread_polarity:
         :return: None
+        :rtype: None
         """
-        return self.thread.SetExplicitPolarity(i_thread_polarity.com_object)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_explicit_polarity'
-        # # vba_code = """
-        # # Public Function set_explicit_polarity(thread)
-        # #     Dim iThreadPolarity (2)
-        # #     thread.SetExplicitPolarity iThreadPolarity
-        # #     set_explicit_polarity = iThreadPolarity
-        # # End Function
-        # # """
-
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return self.thread.SetExplicitPolarity(i_thread_polarity)
 
     def __repr__(self):
         return f'Thread(name="{self.name}")'

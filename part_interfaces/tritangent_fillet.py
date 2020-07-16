@@ -42,10 +42,10 @@ class TritangentFillet(Fillet):
         self.tritangent_fillet = com_object
 
     @property
-    def face_to_remove(self):
+    def face_to_remove(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FaceToRemove() As Reference
                 | 
                 |     Returns the face to be removed by the tritangent fillet.
@@ -62,12 +62,13 @@ class TritangentFillet(Fillet):
                 |              Set removedFace = firstTritangentFillet.FaceToRemove
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.tritangent_fillet.FaceToRemove)
 
     @face_to_remove.setter
-    def face_to_remove(self, value):
+    def face_to_remove(self, value: Reference):
         """
         :param Reference value:
         """
@@ -75,10 +76,10 @@ class TritangentFillet(Fillet):
         self.tritangent_fillet.FaceToRemove = value
 
     @property
-    def first_face(self):
+    def first_face(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstFace() As Reference
                 | 
                 |     Returns the first face limiting the tritangent fillet.
@@ -95,12 +96,13 @@ class TritangentFillet(Fillet):
                 |              Set face1 = firstTritangentFillet.FirstFace
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.tritangent_fillet.FirstFace)
 
     @first_face.setter
-    def first_face(self, value):
+    def first_face(self, value: Reference):
         """
         :param Reference value:
         """
@@ -108,10 +110,10 @@ class TritangentFillet(Fillet):
         self.tritangent_fillet.FirstFace = value
 
     @property
-    def second_face(self):
+    def second_face(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondFace() As Reference
                 | 
                 |     Returns the second face limiting the tritangent fillet.
@@ -128,12 +130,13 @@ class TritangentFillet(Fillet):
                 |              Set face2 = firstTritangentFillet.SecondFace
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.tritangent_fillet.SecondFace)
 
     @second_face.setter
-    def second_face(self, value):
+    def second_face(self, value: Reference):
         """
         :param Reference value:
         """

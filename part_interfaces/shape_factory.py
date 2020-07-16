@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia.mec_mod_interfaces.body import Body
 from pycatia.mec_mod_interfaces.factory import Factory
 from pycatia.part_interfaces.add import Add
 from pycatia.part_interfaces.assemble import Assemble
@@ -47,13 +47,15 @@ from pycatia.part_interfaces.trim import Trim
 from pycatia.part_interfaces.tritangent_fillet import TritangentFillet
 from pycatia.part_interfaces.user_pattern import UserPattern
 from pycatia.part_interfaces.var_rad_edge_fillet import VarRadEdgeFillet
+from pycatia.sketcher_interfaces.sketch import Sketch
 from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.in_interfaces.reference import Reference
 
 
 class ShapeFactory(Factory):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -66,13 +68,13 @@ class ShapeFactory(Factory):
                 | Represents the factory for shapes to create all kinds of shapes that may be
                 | needed for part design.
                 | 
-                | The Shapefactory mission is to build from scratch shapes that will be used
+                | The ShapeFactory mission is to build from scratch shapes that will be used
                 | within the design process of parts. Those shapes have a strong mechanical
                 | built-in knowledge, such as chamfer or hole, and in most cases apply
                 | contextually to the part being designed. When created, they become part of the
                 | definition of whichever body or shape that is current at that time. After they
                 | are created, they become in turn the current body or shape. In most cases,
-                | shapes are created from a factory with a minimum number of parametersr. Other
+                | shapes are created from a factory with a minimum number of parameters. Other
                 | shapes parameters may be set further on by using methods offered by the shape
                 | itself.
     
@@ -82,10 +84,10 @@ class ShapeFactory(Factory):
         super().__init__(com_object)
         self.shape_factory = com_object
 
-    def add_new_add(self, i_body_to_add):
+    def add_new_add(self, i_body_to_add: Body) -> Add:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewAdd(Body iBodyToAdd) As Add
                 | 
                 |     Creates and returns a new add operation within the current
@@ -101,13 +103,14 @@ class ShapeFactory(Factory):
 
         :param Body i_body_to_add:
         :return: Add
+        :rtype: Add
         """
         return Add(self.shape_factory.AddNewAdd(i_body_to_add.com_object))
 
-    def add_new_affinity2(self, x_ratio, y_ratio, z_ratio):
+    def add_new_affinity2(self, x_ratio: float, y_ratio: float, z_ratio: float) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewAffinity2(double XRatio,
                 | double YRatio,
                 | double ZRatio) As AnyObject
@@ -130,13 +133,14 @@ class ShapeFactory(Factory):
         :param float y_ratio:
         :param float z_ratio:
         :return: AnyObject
+        :rtype: AnyObject
         """
         return AnyObject(self.shape_factory.AddNewAffinity2(x_ratio, y_ratio, z_ratio))
 
-    def add_new_assemble(self, i_body_to_assemble):
+    def add_new_assemble(self, i_body_to_assemble: Body) -> Assemble:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewAssemble(Body iBodyToAssemble) As Assemble
                 | 
                 |     Creates and returns a new assembly operation within the current
@@ -152,13 +156,14 @@ class ShapeFactory(Factory):
 
         :param Body i_body_to_assemble:
         :return: Assemble
+        :rtype: Assemble
         """
         return Assemble(self.shape_factory.AddNewAssemble(i_body_to_assemble.com_object))
 
-    def add_new_auto_draft(self, i_draft_angle):
+    def add_new_auto_draft(self, i_draft_angle: float) -> AutoDraft:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewAutoDraft(double iDraftAngle) As AutoDraft
                 | 
                 |     Creates and returns a new solid autodraft.
@@ -175,13 +180,14 @@ class ShapeFactory(Factory):
 
         :param float i_draft_angle:
         :return: AutoDraft
+        :rtype: AutoDraft
         """
         return AutoDraft(self.shape_factory.AddNewAutoDraft(i_draft_angle))
 
-    def add_new_auto_fillet(self, i_fillet_radius, i_round_radius):
+    def add_new_auto_fillet(self, i_fillet_radius: float, i_round_radius: float) -> AutoFillet:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewAutoFillet(double iFilletRadius,
                 | double iRoundRadius) As AutoFillet
                 | 
@@ -202,13 +208,14 @@ class ShapeFactory(Factory):
         :param float i_fillet_radius:
         :param float i_round_radius:
         :return: AutoFillet
+        :rtype: AutoFillet
         """
         return AutoFillet(self.shape_factory.AddNewAutoFillet(i_fillet_radius, i_round_radius))
 
-    def add_new_axis_to_axis2(self, i_reference, i_target):
+    def add_new_axis_to_axis2(self, i_reference: Reference, i_target: Reference) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewAxisToAxis2(Reference iReference,
                 | Reference iTarget) As AnyObject
                 | 
@@ -227,13 +234,14 @@ class ShapeFactory(Factory):
         :param Reference i_reference:
         :param Reference i_target:
         :return: AnyObject
+        :rtype: AnyObject
         """
         return AnyObject(self.shape_factory.AddNewAxisToAxis2(i_reference.com_object, i_target.com_object))
 
-    def add_new_blend(self):
+    def add_new_blend(self) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewBlend() As AnyObject
                 | 
                 |     Creates and returns a new Blend feature.
@@ -242,14 +250,15 @@ class ShapeFactory(Factory):
                 |         The created Blend feature
 
         :return: AnyObject
+        :rtype: AnyObject
         """
         return AnyObject(self.shape_factory.AddNewBlend())
 
-    def add_new_chamfer(self, i_object_to_chamfer, i_propagation, i_mode, i_orientation,
-                        i_length1, i_length2_or_angle):
+    def add_new_chamfer(self, i_object_to_chamfer: Reference, i_propagation: int, i_mode: int, i_orientation: int,
+                        i_length1: float, i_length2_or_angle: float) -> Chamfer:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewChamfer(Reference iObjectToChamfer,
                 | CatChamferPropagation iPropagation,
                 | CatChamferMode iMode,
@@ -271,45 +280,46 @@ class ShapeFactory(Factory):
                 |         the first chamfer element iObjectToChamfer, when it is an edge
                 |         
                 |     iMode
-                |         Controls if the chamfer is defined by two lengths, or by an angle and
+                |         Controls if the chamfer is defined by two lengthes, or by an angle and
                 |         a length
                 |         The value of this argument changes the way the arguments iLength1 and
                 |         iLength2OrAngle should be interpreted. 
                 |     iOrientation
                 |         Defines the relative meaning of arguments iLength1 and iLength2OrAngle
-                |         when defining a chamfer by two lengths
+                |         when defining a chamfer by two lengthes 
                 |     iLength1
                 |         The first value for chamfer dimensioning. It represents the chamfer
-                |         first length if the chamfer is defined by two lengths, or the chamfer length
+                |         first length if the chamfer is defined by two lengthes, or the chamfer length
                 |         if the chamfer is defined by a length and an angle. 
                 |     iLength2OrAngle
                 |         The second value for chamfer dimensioning. It represents the chamfer
-                |         second length if the chamfer is defined by two lengths, or the chamfer angle
+                |         second length if the chamfer is defined by two lengthes, or the chamfer angle
                 |         if the chamfer is defined by a length and an angle. 
                 |     Returns:
                 |         The created chamfer
 
         :param Reference i_object_to_chamfer:
-        :param CatChamferPropagation i_propagation:
-        :param CatChamferMode i_mode:
-        :param CatChamferOrientation i_orientation:
+        :param int i_propagation:
+        :param int i_mode:
+        :param int i_orientation:
         :param float i_length1:
         :param float i_length2_or_angle:
         :return: Chamfer
+        :rtype: Chamfer
         """
-        return Chamfer(self.shape_factory.AddNewChamfer(i_object_to_chamfer.com_object, i_propagation.com_object,
-                                                        i_mode.com_object, i_orientation.com_object, i_length1,
-                                                        i_length2_or_angle))
+        return Chamfer(
+            self.shape_factory.AddNewChamfer(i_object_to_chamfer.com_object, i_propagation, i_mode, i_orientation,
+                                             i_length1, i_length2_or_angle))
 
-    def add_new_circ_pattern(self, i_shape_to_copy, i_nb_of_copies_in_radial_dir,
-                             i_nb_of_copies_in_angular_dir, i_step_in_radial_dir, i_step_in_angular_dir,
-                             i_shape_to_copy_position_along_radial_dir,
-                             i_shape_to_copy_position_along_angular_dir, i_rotation_center,
-                             i_rotation_axis, i_is_reversed_rotation_axis, i_rotation_angle,
-                             i_is_radius_aligned):
+    def add_new_circ_pattern(self, i_shape_to_copy: AnyObject, i_nb_of_copies_in_radial_dir: int,
+                             i_nb_of_copies_in_angular_dir: int, i_step_in_radial_dir: float,
+                             i_step_in_angular_dir: float, i_shape_to_copy_position_along_radial_dir: int,
+                             i_shape_to_copy_position_along_angular_dir: int, i_rotation_center: Reference,
+                             i_rotation_axis: Reference, i_is_reversed_rotation_axis: bool, i_rotation_angle: float,
+                             i_is_radius_aligned: bool) -> CircPattern:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewCircPattern(AnyObject iShapeToCopy,
                 | long iNbOfCopiesInRadialDir,
                 | long iNbOfCopiesInAngularDir,
@@ -391,6 +401,7 @@ class ShapeFactory(Factory):
         :param float i_rotation_angle:
         :param bool i_is_radius_aligned:
         :return: CircPattern
+        :rtype: CircPattern
         """
         return CircPattern(
             self.shape_factory.AddNewCircPattern(i_shape_to_copy.com_object, i_nb_of_copies_in_radial_dir,
@@ -400,15 +411,15 @@ class ShapeFactory(Factory):
                                                  i_rotation_center.com_object, i_rotation_axis.com_object,
                                                  i_is_reversed_rotation_axis, i_rotation_angle, i_is_radius_aligned))
 
-    def add_new_circ_patternof_list(self, i_shape_to_copy, i_nb_of_copies_in_radial_dir,
-                                    i_nb_of_copies_in_angular_dir, i_step_in_radial_dir,
-                                    i_step_in_angular_dir, i_shape_to_copy_position_along_radial_dir,
-                                    i_shape_to_copy_position_along_angular_dir, i_rotation_center,
-                                    i_rotation_axis, i_is_reversed_rotation_axis, i_rotation_angle,
-                                    i_is_radius_aligned):
+    def add_new_circ_patternof_list(self, i_shape_to_copy: AnyObject, i_nb_of_copies_in_radial_dir: int,
+                                    i_nb_of_copies_in_angular_dir: int, i_step_in_radial_dir: float,
+                                    i_step_in_angular_dir: float, i_shape_to_copy_position_along_radial_dir: int,
+                                    i_shape_to_copy_position_along_angular_dir: int, i_rotation_center: Reference,
+                                    i_rotation_axis: Reference, i_is_reversed_rotation_axis: bool,
+                                    i_rotation_angle: float, i_is_radius_aligned: bool) -> CircPattern:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewCircPatternofList(AnyObject iShapeToCopy,
                 | long iNbOfCopiesInRadialDir,
                 | long iNbOfCopiesInAngularDir,
@@ -488,6 +499,7 @@ class ShapeFactory(Factory):
         :param float i_rotation_angle:
         :param bool i_is_radius_aligned:
         :return: CircPattern
+        :rtype: CircPattern
         """
         return CircPattern(
             self.shape_factory.AddNewCircPatternofList(i_shape_to_copy.com_object, i_nb_of_copies_in_radial_dir,
@@ -498,10 +510,10 @@ class ShapeFactory(Factory):
                                                        i_is_reversed_rotation_axis, i_rotation_angle,
                                                        i_is_radius_aligned))
 
-    def add_new_close_surface(self, i_close_element):
+    def add_new_close_surface(self, i_close_element: Reference) -> CloseSurface:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewCloseSurface(Reference iCloseElement) As
                 | CloseSurface
                 | 
@@ -518,13 +530,14 @@ class ShapeFactory(Factory):
 
         :param Reference i_close_element:
         :return: CloseSurface
+        :rtype: CloseSurface
         """
         return CloseSurface(self.shape_factory.AddNewCloseSurface(i_close_element.com_object))
 
-    def add_new_defeaturing(self):
+    def add_new_defeaturing(self) -> Defeaturing:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewDefeaturing() As Defeaturing
                 | 
                 |     Creates and returns a new defeaturing operation within the current
@@ -534,14 +547,16 @@ class ShapeFactory(Factory):
                 |         The created defeaturing operation
 
         :return: Defeaturing
+        :rtype: Defeaturing
         """
         return Defeaturing(self.shape_factory.AddNewDefeaturing())
 
-    def add_new_draft(self, i_face_to_draft, i_neutral, i_neutral_mode, i_parting, i_dir_x,
-                      i_dir_y, i_dir_z, i_mode, i_angle, i_multiselection_mode):
+    def add_new_draft(self, i_face_to_draft: Reference, i_neutral: Reference, i_neutral_mode: int, i_parting: Reference,
+                      i_dir_x: float, i_dir_y: float, i_dir_z: float, i_mode: int, i_angle: float,
+                      i_multiselection_mode: int) -> Draft:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewDraft(Reference iFaceToDraft,
                 | Reference iNeutral,
                 | CatDraftNeutralPropagationMode iNeutralMode,
@@ -607,25 +622,26 @@ class ShapeFactory(Factory):
 
         :param Reference i_face_to_draft:
         :param Reference i_neutral:
-        :param CatDraftNeutralPropagationMode i_neutral_mode:
+        :param int i_neutral_mode:
         :param Reference i_parting:
         :param float i_dir_x:
         :param float i_dir_y:
         :param float i_dir_z:
-        :param CatDraftMode i_mode:
+        :param int i_mode:
         :param float i_angle:
-        :param CatDraftMultiselectionMode i_multiselection_mode:
+        :param int i_multiselection_mode:
         :return: Draft
+        :rtype: Draft
         """
-        return Draft(
-            self.shape_factory.AddNewDraft(i_face_to_draft.com_object, i_neutral.com_object, i_neutral_mode.com_object,
-                                           i_parting.com_object, i_dir_x, i_dir_y, i_dir_z, i_mode.com_object, i_angle,
-                                           i_multiselection_mode.com_object))
+        return Draft(self.shape_factory.AddNewDraft(i_face_to_draft.com_object, i_neutral.com_object, i_neutral_mode,
+                                                    i_parting.com_object, i_dir_x, i_dir_y, i_dir_z, i_mode, i_angle,
+                                                    i_multiselection_mode))
 
-    def add_new_edge_fillet_with_constant_radius(self, i_edge_to_fillet, i_propag_mode, i_radius):
+    def add_new_edge_fillet_with_constant_radius(self, i_edge_to_fillet: Reference, i_propag_mode: int,
+                                                 i_radius: float) -> ConstRadEdgeFillet:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewEdgeFilletWithConstantRadius(Reference
                 | iEdgeToFillet,
                 | CatFilletEdgePropagation iPropagMode,
@@ -638,19 +654,19 @@ class ShapeFactory(Factory):
                 |         want to create
 
         :param Reference i_edge_to_fillet:
-        :param CatFilletEdgePropagation i_propag_mode:
+        :param int i_propag_mode:
         :param float i_radius:
         :return: ConstRadEdgeFillet
+        :rtype: ConstRadEdgeFillet
         """
         return ConstRadEdgeFillet(
-            self.shape_factory.AddNewEdgeFilletWithConstantRadius(i_edge_to_fillet.com_object, i_propag_mode.com_object,
-                                                                  i_radius))
+            self.shape_factory.AddNewEdgeFilletWithConstantRadius(i_edge_to_fillet.com_object, i_propag_mode, i_radius))
 
-    def add_new_edge_fillet_with_varying_radius(self, i_edge_to_fillet, i_propag_mode, i_variation_mode,
-                                                i_default_radius):
+    def add_new_edge_fillet_with_varying_radius(self, i_edge_to_fillet: Reference, i_propag_mode: int,
+                                                i_variation_mode: int, i_default_radius: float) -> VarRadEdgeFillet:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewEdgeFilletWithVaryingRadius(Reference
                 | iEdgeToFillet,
                 | CatFilletEdgePropagation iPropagMode,
@@ -664,19 +680,20 @@ class ShapeFactory(Factory):
                 |         want to create
 
         :param Reference i_edge_to_fillet:
-        :param CatFilletEdgePropagation i_propag_mode:
-        :param CatFilletVariation i_variation_mode:
+        :param int i_propag_mode:
+        :param int i_variation_mode:
         :param float i_default_radius:
         :return: VarRadEdgeFillet
+        :rtype: VarRadEdgeFillet
         """
         return VarRadEdgeFillet(
-            self.shape_factory.AddNewEdgeFilletWithVaryingRadius(i_edge_to_fillet.com_object, i_propag_mode.com_object,
-                                                                 i_variation_mode.com_object, i_default_radius))
+            self.shape_factory.AddNewEdgeFilletWithVaryingRadius(i_edge_to_fillet.com_object, i_propag_mode,
+                                                                 i_variation_mode, i_default_radius))
 
-    def add_new_face_fillet(self, i_f1, i_f2, i_radius):
+    def add_new_face_fillet(self, i_f1: Reference, i_f2: Reference, i_radius: float) -> FaceFillet:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewFaceFillet(Reference iF1,
                 | Reference iF2,
                 | double iRadius) As FaceFillet
@@ -689,18 +706,19 @@ class ShapeFactory(Factory):
         :param Reference i_f2:
         :param float i_radius:
         :return: FaceFillet
+        :rtype: FaceFillet
         """
         return FaceFillet(self.shape_factory.AddNewFaceFillet(i_f1.com_object, i_f2.com_object, i_radius))
 
-    def add_new_gsd_circ_pattern(self, i_shape_to_copy, i_nb_of_copies_in_radial_dir,
-                                 i_nb_of_copies_in_angular_dir, i_step_in_radial_dir,
-                                 i_step_in_angular_dir, i_shape_to_copy_position_along_radial_dir,
-                                 i_shape_to_copy_position_along_angular_dir, i_rotation_center,
-                                 i_rotation_axis, i_is_reversed_rotation_axis, i_rotation_angle,
-                                 i_is_radius_aligned, i_complete_crown, i_type):
+    def add_new_gsd_circ_pattern(self, i_shape_to_copy: AnyObject, i_nb_of_copies_in_radial_dir: int,
+                                 i_nb_of_copies_in_angular_dir: int, i_step_in_radial_dir: float,
+                                 i_step_in_angular_dir: float, i_shape_to_copy_position_along_radial_dir: int,
+                                 i_shape_to_copy_position_along_angular_dir: int, i_rotation_center: Reference,
+                                 i_rotation_axis: Reference, i_is_reversed_rotation_axis: bool, i_rotation_angle: float,
+                                 i_is_radius_aligned: bool, i_complete_crown: bool, i_type: float) -> CircPattern:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewGSDCircPattern(AnyObject iShapeToCopy,
                 | long iNbOfCopiesInRadialDir,
                 | long iNbOfCopiesInAngularDir,
@@ -734,6 +752,7 @@ class ShapeFactory(Factory):
         :param bool i_complete_crown:
         :param float i_type:
         :return: CircPattern
+        :rtype: CircPattern
         """
         return CircPattern(
             self.shape_factory.AddNewGSDCircPattern(i_shape_to_copy.com_object, i_nb_of_copies_in_radial_dir,
@@ -744,13 +763,14 @@ class ShapeFactory(Factory):
                                                     i_is_reversed_rotation_axis, i_rotation_angle, i_is_radius_aligned,
                                                     i_complete_crown, i_type))
 
-    def add_new_gsd_rect_pattern(self, i_shape_to_copy, i_nb_of_copies_in_dir1, i_nb_of_copies_in_dir2,
-                                 i_step_in_dir1, i_step_in_dir2, i_shape_to_copy_position_along_dir1,
-                                 i_shape_to_copy_position_along_dir2, i_dir1, i_dir2,
-                                 i_is_reversed_dir1, i_is_reversed_dir2, i_rotation_angle, i_type):
+    def add_new_gsd_rect_pattern(self, i_shape_to_copy: AnyObject, i_nb_of_copies_in_dir1: int,
+                                 i_nb_of_copies_in_dir2: int, i_step_in_dir1: float, i_step_in_dir2: float,
+                                 i_shape_to_copy_position_along_dir1: int, i_shape_to_copy_position_along_dir2: int,
+                                 i_dir1: Reference, i_dir2: Reference, i_is_reversed_dir1: bool,
+                                 i_is_reversed_dir2: bool, i_rotation_angle: float, i_type: float) -> RectPattern:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewGSDRectPattern(AnyObject iShapeToCopy,
                 | long iNbOfCopiesInDir1,
                 | long iNbOfCopiesInDir2,
@@ -782,6 +802,7 @@ class ShapeFactory(Factory):
         :param float i_rotation_angle:
         :param float i_type:
         :return: RectPattern
+        :rtype: RectPattern
         """
         return RectPattern(self.shape_factory.AddNewGSDRectPattern(i_shape_to_copy.com_object, i_nb_of_copies_in_dir1,
                                                                    i_nb_of_copies_in_dir2, i_step_in_dir1,
@@ -791,10 +812,10 @@ class ShapeFactory(Factory):
                                                                    i_is_reversed_dir1, i_is_reversed_dir2,
                                                                    i_rotation_angle, i_type))
 
-    def add_new_groove(self, i_sketch):
+    def add_new_groove(self, i_sketch: Sketch) -> Groove:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewGroove(Sketch iSketch) As Groove
                 | 
                 |     Creates and returns a new groove within the current body.
@@ -814,13 +835,14 @@ class ShapeFactory(Factory):
 
         :param Sketch i_sketch:
         :return: Groove
+        :rtype: Groove
         """
         return Groove(self.shape_factory.AddNewGroove(i_sketch.com_object))
 
-    def add_new_groove_from_ref(self, i_profile_elt):
+    def add_new_groove_from_ref(self, i_profile_elt: Reference) -> Groove:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewGrooveFromRef(Reference iProfileElt) As Groove
                 | 
                 |     Creates and returns a new groove within the current body.
@@ -836,13 +858,14 @@ class ShapeFactory(Factory):
 
         :param Reference i_profile_elt:
         :return: Groove
+        :rtype: Groove
         """
         return Groove(self.shape_factory.AddNewGrooveFromRef(i_profile_elt.com_object))
 
-    def add_new_hole(self, i_support, i_depth):
+    def add_new_hole(self, i_support: Reference, i_depth: float) -> Hole:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewHole(Reference iSupport,
                 | double iDepth) As Hole
                 | 
@@ -868,13 +891,14 @@ class ShapeFactory(Factory):
         :param Reference i_support:
         :param float i_depth:
         :return: Hole
+        :rtype: Hole
         """
         return Hole(self.shape_factory.AddNewHole(i_support.com_object, i_depth))
 
-    def add_new_hole_from_point(self, i_x, i_y, i_z, i_support, i_depth):
+    def add_new_hole_from_point(self, i_x: float, i_y: float, i_z: float, i_support: Reference, i_depth: float) -> Hole:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewHoleFromPoint(double iX,
                 | double iY,
                 | double iZ,
@@ -913,13 +937,14 @@ class ShapeFactory(Factory):
         :param Reference i_support:
         :param float i_depth:
         :return: Hole
+        :rtype: Hole
         """
         return Hole(self.shape_factory.AddNewHoleFromPoint(i_x, i_y, i_z, i_support.com_object, i_depth))
 
-    def add_new_hole_from_ref_point(self, i_origin, i_support, i_depth):
+    def add_new_hole_from_ref_point(self, i_origin: Reference, i_support: Reference, i_depth: float) -> Hole:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewHoleFromRefPoint(Reference iOrigin,
                 | Reference iSupport,
                 | double iDepth) As Hole
@@ -946,13 +971,14 @@ class ShapeFactory(Factory):
         :param Reference i_support:
         :param float i_depth:
         :return: Hole
+        :rtype: Hole
         """
         return Hole(self.shape_factory.AddNewHoleFromRefPoint(i_origin.com_object, i_support.com_object, i_depth))
 
-    def add_new_hole_from_sketch(self, i_sketch, i_depth):
+    def add_new_hole_from_sketch(self, i_sketch: Sketch, i_depth: float) -> Hole:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewHoleFromSketch(Sketch iSketch,
                 | double iDepth) As Hole
                 | 
@@ -977,14 +1003,15 @@ class ShapeFactory(Factory):
         :param Sketch i_sketch:
         :param float i_depth:
         :return: Hole
+        :rtype: Hole
         """
         return Hole(self.shape_factory.AddNewHoleFromSketch(i_sketch.com_object, i_depth))
 
-    def add_new_hole_with2_constraints(self, i_x, i_y, i_z, i_edge1, i_edge2, i_support,
-                                       i_depth):
+    def add_new_hole_with2_constraints(self, i_x: float, i_y: float, i_z: float, i_edge1: Reference, i_edge2: Reference,
+                                       i_support: Reference, i_depth: float) -> Hole:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewHoleWith2Constraints(double iX,
                 | double iY,
                 | double iZ,
@@ -1032,14 +1059,16 @@ class ShapeFactory(Factory):
         :param Reference i_support:
         :param float i_depth:
         :return: Hole
+        :rtype: Hole
         """
         return Hole(self.shape_factory.AddNewHoleWith2Constraints(i_x, i_y, i_z, i_edge1.com_object, i_edge2.com_object,
                                                                   i_support.com_object, i_depth))
 
-    def add_new_hole_with_constraint(self, i_x, i_y, i_z, i_edge, i_support, i_depth):
+    def add_new_hole_with_constraint(self, i_x: float, i_y: float, i_z: float, i_edge: Reference, i_support: Reference,
+                                     i_depth: float) -> Hole:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewHoleWithConstraint(double iX,
                 | double iY,
                 | double iZ,
@@ -1086,14 +1115,15 @@ class ShapeFactory(Factory):
         :param Reference i_support:
         :param float i_depth:
         :return: Hole
+        :rtype: Hole
         """
         return Hole(self.shape_factory.AddNewHoleWithConstraint(i_x, i_y, i_z, i_edge.com_object, i_support.com_object,
                                                                 i_depth))
 
-    def add_new_intersect(self, i_body_to_intersect):
+    def add_new_intersect(self, i_body_to_intersect: Body) -> Intersect:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewIntersect(Body iBodyToIntersect) As Intersect
                 | 
                 |     Creates and returns a new intersect operation within the current
@@ -1109,13 +1139,14 @@ class ShapeFactory(Factory):
 
         :param Body i_body_to_intersect:
         :return: Intersect
+        :rtype: Intersect
         """
         return Intersect(self.shape_factory.AddNewIntersect(i_body_to_intersect.com_object))
 
-    def add_new_loft(self):
+    def add_new_loft(self) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewLoft() As AnyObject
                 | 
                 |     Creates and returns a new Loft feature.
@@ -1124,13 +1155,14 @@ class ShapeFactory(Factory):
                 |         The created Loft feature
 
         :return: AnyObject
+        :rtype: AnyObject
         """
         return AnyObject(self.shape_factory.AddNewLoft())
 
-    def add_new_mirror(self, i_mirroring_element):
+    def add_new_mirror(self, i_mirroring_element: Reference) -> Mirror:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewMirror(Reference iMirroringElement) As Mirror
                 | 
                 |     Creates and returns a new mirror within the current body.
@@ -1150,13 +1182,14 @@ class ShapeFactory(Factory):
 
         :param Reference i_mirroring_element:
         :return: Mirror
+        :rtype: Mirror
         """
         return Mirror(self.shape_factory.AddNewMirror(i_mirroring_element.com_object))
 
-    def add_new_pad(self, i_sketch, i_height):
+    def add_new_pad(self, i_sketch: Sketch, i_height: float) -> Pad:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPad(Sketch iSketch,
                 | double iHeight) As Pad
                 | 
@@ -1175,13 +1208,14 @@ class ShapeFactory(Factory):
         :param Sketch i_sketch:
         :param float i_height:
         :return: Pad
+        :rtype: Pad
         """
         return Pad(self.shape_factory.AddNewPad(i_sketch.com_object, i_height))
 
-    def add_new_pad_from_ref(self, i_profile_elt, i_height):
+    def add_new_pad_from_ref(self, i_profile_elt: Reference, i_height: float) -> Pad:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPadFromRef(Reference iProfileElt,
                 | double iHeight) As Pad
                 | 
@@ -1201,13 +1235,14 @@ class ShapeFactory(Factory):
         :param Reference i_profile_elt:
         :param float i_height:
         :return: Pad
+        :rtype: Pad
         """
         return Pad(self.shape_factory.AddNewPadFromRef(i_profile_elt.com_object, i_height))
 
-    def add_new_pocket(self, i_sketch, i_height):
+    def add_new_pocket(self, i_sketch: Sketch, i_height: float) -> Pocket:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPocket(Sketch iSketch,
                 | double iHeight) As Pocket
                 | 
@@ -1226,13 +1261,14 @@ class ShapeFactory(Factory):
         :param Sketch i_sketch:
         :param float i_height:
         :return: Pocket
+        :rtype: Pocket
         """
         return Pocket(self.shape_factory.AddNewPocket(i_sketch.com_object, i_height))
 
-    def add_new_pocket_from_ref(self, i_profile_elt, i_height):
+    def add_new_pocket_from_ref(self, i_profile_elt: Reference, i_height: float) -> Pocket:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPocketFromRef(Reference iProfileElt,
                 | double iHeight) As Pocket
                 | 
@@ -1252,16 +1288,18 @@ class ShapeFactory(Factory):
         :param Reference i_profile_elt:
         :param float i_height:
         :return: Pocket
+        :rtype: Pocket
         """
         return Pocket(self.shape_factory.AddNewPocketFromRef(i_profile_elt.com_object, i_height))
 
-    def add_new_rect_pattern(self, i_shape_to_copy, i_nb_of_copies_in_dir1, i_nb_of_copies_in_dir2,
-                             i_step_in_dir1, i_step_in_dir2, i_shape_to_copy_position_along_dir1,
-                             i_shape_to_copy_position_along_dir2, i_dir1, i_dir2,
-                             i_is_reversed_dir1, i_is_reversed_dir2, i_rotation_angle):
+    def add_new_rect_pattern(self, i_shape_to_copy: AnyObject, i_nb_of_copies_in_dir1: int, i_nb_of_copies_in_dir2: int,
+                             i_step_in_dir1: float, i_step_in_dir2: float, i_shape_to_copy_position_along_dir1: int,
+                             i_shape_to_copy_position_along_dir2: int, i_dir1: Reference, i_dir2: Reference,
+                             i_is_reversed_dir1: bool, i_is_reversed_dir2: bool,
+                             i_rotation_angle: float) -> RectPattern:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewRectPattern(AnyObject iShapeToCopy,
                 | long iNbOfCopiesInDir1,
                 | long iNbOfCopiesInDir2,
@@ -1344,6 +1382,7 @@ class ShapeFactory(Factory):
         :param bool i_is_reversed_dir2:
         :param float i_rotation_angle:
         :return: RectPattern
+        :rtype: RectPattern
         """
         return RectPattern(self.shape_factory.AddNewRectPattern(i_shape_to_copy.com_object, i_nb_of_copies_in_dir1,
                                                                 i_nb_of_copies_in_dir2, i_step_in_dir1, i_step_in_dir2,
@@ -1352,14 +1391,14 @@ class ShapeFactory(Factory):
                                                                 i_dir2.com_object, i_is_reversed_dir1,
                                                                 i_is_reversed_dir2, i_rotation_angle))
 
-    def add_new_rect_patternof_list(self, i_shape_to_copy, i_nb_of_copies_in_dir1,
-                                    i_nb_of_copies_in_dir2, i_step_in_dir1, i_step_in_dir2,
-                                    i_shape_to_copy_position_along_dir1, i_shape_to_copy_position_along_dir2,
-                                    i_dir1, i_dir2, i_is_reversed_dir1, i_is_reversed_dir2,
-                                    i_rotation_angle):
+    def add_new_rect_patternof_list(self, i_shape_to_copy: AnyObject, i_nb_of_copies_in_dir1: int,
+                                    i_nb_of_copies_in_dir2: int, i_step_in_dir1: float, i_step_in_dir2: float,
+                                    i_shape_to_copy_position_along_dir1: int, i_shape_to_copy_position_along_dir2: int,
+                                    i_dir1: Reference, i_dir2: Reference, i_is_reversed_dir1: bool,
+                                    i_is_reversed_dir2: bool, i_rotation_angle: float) -> RectPattern:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewRectPatternofList(AnyObject iShapeToCopy,
                 | long iNbOfCopiesInDir1,
                 | long iNbOfCopiesInDir2,
@@ -1439,6 +1478,7 @@ class ShapeFactory(Factory):
         :param bool i_is_reversed_dir2:
         :param float i_rotation_angle:
         :return: RectPattern
+        :rtype: RectPattern
         """
         return RectPattern(
             self.shape_factory.AddNewRectPatternofList(i_shape_to_copy.com_object, i_nb_of_copies_in_dir1,
@@ -1448,10 +1488,10 @@ class ShapeFactory(Factory):
                                                        i_dir2.com_object, i_is_reversed_dir1, i_is_reversed_dir2,
                                                        i_rotation_angle))
 
-    def add_new_remove(self, i_body_to_remove):
+    def add_new_remove(self, i_body_to_remove: Body) -> Remove:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewRemove(Body iBodyToRemove) As Remove
                 | 
                 |     Creates and returns a new remove operation within the current
@@ -1467,13 +1507,14 @@ class ShapeFactory(Factory):
 
         :param Body i_body_to_remove:
         :return: Remove
+        :rtype: Remove
         """
         return Remove(self.shape_factory.AddNewRemove(i_body_to_remove.com_object))
 
-    def add_new_remove_face(self, i_keep_faces, i_remove_faces):
+    def add_new_remove_face(self, i_keep_faces: Reference, i_remove_faces: Reference) -> RemoveFace:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewRemoveFace(Reference iKeepFaces,
                 | Reference iRemoveFaces) As RemoveFace
                 | 
@@ -1492,13 +1533,14 @@ class ShapeFactory(Factory):
         :param Reference i_keep_faces:
         :param Reference i_remove_faces:
         :return: RemoveFace
+        :rtype: RemoveFace
         """
         return RemoveFace(self.shape_factory.AddNewRemoveFace(i_keep_faces.com_object, i_remove_faces.com_object))
 
-    def add_new_removed_blend(self):
+    def add_new_removed_blend(self) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewRemovedBlend() As AnyObject
                 | 
                 |     Creates and returns a new Removed Blend feature.
@@ -1507,13 +1549,14 @@ class ShapeFactory(Factory):
                 |         The created Removed Blend feature
 
         :return: AnyObject
+        :rtype: AnyObject
         """
         return AnyObject(self.shape_factory.AddNewRemovedBlend())
 
-    def add_new_removed_loft(self):
+    def add_new_removed_loft(self) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewRemovedLoft() As AnyObject
                 | 
                 |     Creates and returns a new Removed Loft feature.
@@ -1522,13 +1565,15 @@ class ShapeFactory(Factory):
                 |         The created Removed Loft feature
 
         :return: AnyObject
+        :rtype: AnyObject
         """
         return AnyObject(self.shape_factory.AddNewRemovedLoft())
 
-    def add_new_replace_face(self, i_split_plane, i_remove_face, i_splitting_side):
+    def add_new_replace_face(self, i_split_plane: Reference, i_remove_face: Reference,
+                             i_splitting_side: int) -> ReplaceFace:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewReplaceFace(Reference iSplitPlane,
                 | Reference iRemoveFace,
                 | CatSplitSide iSplittingSide) As ReplaceFace
@@ -1551,16 +1596,17 @@ class ShapeFactory(Factory):
 
         :param Reference i_split_plane:
         :param Reference i_remove_face:
-        :param CatSplitSide i_splitting_side:
+        :param int i_splitting_side:
         :return: ReplaceFace
+        :rtype: ReplaceFace
         """
-        return ReplaceFace(self.shape_factory.AddNewReplaceFace(i_split_plane.com_object, i_remove_face.com_object,
-                                                                i_splitting_side.com_object))
+        return ReplaceFace(
+            self.shape_factory.AddNewReplaceFace(i_split_plane.com_object, i_remove_face.com_object, i_splitting_side))
 
-    def add_new_rib(self, i_sketch, i_center_curve):
+    def add_new_rib(self, i_sketch: Sketch, i_center_curve: Sketch) -> Rib:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewRib(Sketch iSketch,
                 | Sketch iCenterCurve) As Rib
                 | 
@@ -1581,13 +1627,14 @@ class ShapeFactory(Factory):
         :param Sketch i_sketch:
         :param Sketch i_center_curve:
         :return: Rib
+        :rtype: Rib
         """
         return Rib(self.shape_factory.AddNewRib(i_sketch.com_object, i_center_curve.com_object))
 
-    def add_new_rib_from_ref(self, i_profile, i_center_curve):
+    def add_new_rib_from_ref(self, i_profile: Reference, i_center_curve: Reference) -> Rib:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewRibFromRef(Reference iProfile,
                 | Reference iCenterCurve) As Rib
                 | 
@@ -1608,13 +1655,14 @@ class ShapeFactory(Factory):
         :param Reference i_profile:
         :param Reference i_center_curve:
         :return: Rib
+        :rtype: Rib
         """
         return Rib(self.shape_factory.AddNewRibFromRef(i_profile.com_object, i_center_curve.com_object))
 
-    def add_new_scaling(self, i_scaling_reference, i_factor):
+    def add_new_scaling(self, i_scaling_reference: Reference, i_factor: float) -> Scaling:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewScaling(Reference iScalingReference,
                 | double iFactor) As Scaling
                 | 
@@ -1639,13 +1687,14 @@ class ShapeFactory(Factory):
         :param Reference i_scaling_reference:
         :param float i_factor:
         :return: Scaling
+        :rtype: Scaling
         """
         return Scaling(self.shape_factory.AddNewScaling(i_scaling_reference.com_object, i_factor))
 
-    def add_new_sew_surface(self, i_sewing_element, i_sewing_side):
+    def add_new_sew_surface(self, i_sewing_element: Reference, i_sewing_side: int) -> SewSurface:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSewSurface(Reference iSewingElement,
                 | CatSplitSide iSewingSide) As SewSurface
                 | 
@@ -1665,15 +1714,16 @@ class ShapeFactory(Factory):
                 |         The created sewing operation
 
         :param Reference i_sewing_element:
-        :param CatSplitSide i_sewing_side:
+        :param int i_sewing_side:
         :return: SewSurface
+        :rtype: SewSurface
         """
-        return SewSurface(self.shape_factory.AddNewSewSurface(i_sewing_element.com_object, i_sewing_side.com_object))
+        return SewSurface(self.shape_factory.AddNewSewSurface(i_sewing_element.com_object, i_sewing_side))
 
-    def add_new_shaft(self, i_sketch):
+    def add_new_shaft(self, i_sketch: Sketch) -> Shaft:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewShaft(Sketch iSketch) As Shaft
                 | 
                 |     Creates and returns a new shaft within the current body.
@@ -1701,13 +1751,14 @@ class ShapeFactory(Factory):
 
         :param Sketch i_sketch:
         :return: Shaft
+        :rtype: Shaft
         """
         return Shaft(self.shape_factory.AddNewShaft(i_sketch.com_object))
 
-    def add_new_shaft_from_ref(self, i_profile_elt):
+    def add_new_shaft_from_ref(self, i_profile_elt: Reference) -> Shaft:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewShaftFromRef(Reference iProfileElt) As Shaft
                 | 
                 |     Creates and returns a new shaft within the current body.
@@ -1723,13 +1774,15 @@ class ShapeFactory(Factory):
 
         :param Reference i_profile_elt:
         :return: Shaft
+        :rtype: Shaft
         """
         return Shaft(self.shape_factory.AddNewShaftFromRef(i_profile_elt.com_object))
 
-    def add_new_shell(self, i_face_to_remove, i_internal_thickness, i_external_thickness):
+    def add_new_shell(self, i_face_to_remove: Reference, i_internal_thickness: float,
+                      i_external_thickness: float) -> Shell:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewShell(Reference iFaceToRemove,
                 | double iInternalThickness,
                 | double iExternalThickness) As Shell
@@ -1758,14 +1811,15 @@ class ShapeFactory(Factory):
         :param float i_internal_thickness:
         :param float i_external_thickness:
         :return: Shell
+        :rtype: Shell
         """
         return Shell(
             self.shape_factory.AddNewShell(i_face_to_remove.com_object, i_internal_thickness, i_external_thickness))
 
-    def add_new_slot(self, i_sketch, i_center_curve):
+    def add_new_slot(self, i_sketch: Sketch, i_center_curve: Sketch) -> Slot:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSlot(Sketch iSketch,
                 | Sketch iCenterCurve) As Slot
                 | 
@@ -1786,13 +1840,14 @@ class ShapeFactory(Factory):
         :param Sketch i_sketch:
         :param Sketch i_center_curve:
         :return: Slot
+        :rtype: Slot
         """
         return Slot(self.shape_factory.AddNewSlot(i_sketch.com_object, i_center_curve.com_object))
 
-    def add_new_slot_from_ref(self, i_profile, i_center_curve):
+    def add_new_slot_from_ref(self, i_profile: Reference, i_center_curve: Reference) -> Slot:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSlotFromRef(Reference iProfile,
                 | Reference iCenterCurve) As Slot
                 | 
@@ -1813,13 +1868,14 @@ class ShapeFactory(Factory):
         :param Reference i_profile:
         :param Reference i_center_curve:
         :return: Slot
+        :rtype: Slot
         """
         return Slot(self.shape_factory.AddNewSlotFromRef(i_profile.com_object, i_center_curve.com_object))
 
-    def add_new_solid_combine(self, i_profile_elt_first, i_profile_elt_second):
+    def add_new_solid_combine(self, i_profile_elt_first: Reference, i_profile_elt_second: Reference) -> SolidCombine:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSolidCombine(Reference iProfileEltFirst,
                 | Reference iProfileEltSecond) As SolidCombine
                 | 
@@ -1840,14 +1896,16 @@ class ShapeFactory(Factory):
         :param Reference i_profile_elt_first:
         :param Reference i_profile_elt_second:
         :return: SolidCombine
+        :rtype: SolidCombine
         """
         return SolidCombine(
             self.shape_factory.AddNewSolidCombine(i_profile_elt_first.com_object, i_profile_elt_second.com_object))
 
-    def add_new_solid_edge_fillet_with_constant_radius(self, i_edge_to_fillet, i_propag_mode, i_radius):
+    def add_new_solid_edge_fillet_with_constant_radius(self, i_edge_to_fillet: Reference, i_propag_mode: int,
+                                                       i_radius: float) -> ConstRadEdgeFillet:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSolidEdgeFilletWithConstantRadius(Reference
                 | iEdgeToFillet,
                 | CatFilletEdgePropagation iPropagMode,
@@ -1872,19 +1930,21 @@ class ShapeFactory(Factory):
                 |         The created edge fillet
 
         :param Reference i_edge_to_fillet:
-        :param CatFilletEdgePropagation i_propag_mode:
+        :param int i_propag_mode:
         :param float i_radius:
         :return: ConstRadEdgeFillet
+        :rtype: ConstRadEdgeFillet
         """
         return ConstRadEdgeFillet(
-            self.shape_factory.AddNewSolidEdgeFilletWithConstantRadius(i_edge_to_fillet.com_object,
-                                                                       i_propag_mode.com_object, i_radius))
+            self.shape_factory.AddNewSolidEdgeFilletWithConstantRadius(i_edge_to_fillet.com_object, i_propag_mode,
+                                                                       i_radius))
 
-    def add_new_solid_edge_fillet_with_varying_radius(self, i_edge_to_fillet, i_propag_mode,
-                                                      i_variation_mode, i_default_radius):
+    def add_new_solid_edge_fillet_with_varying_radius(self, i_edge_to_fillet: Reference, i_propag_mode: int,
+                                                      i_variation_mode: int,
+                                                      i_default_radius: float) -> VarRadEdgeFillet:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSolidEdgeFilletWithVaryingRadius(Reference
                 | iEdgeToFillet,
                 | CatFilletEdgePropagation iPropagMode,
@@ -1914,20 +1974,20 @@ class ShapeFactory(Factory):
                 |         The created edge fillet
 
         :param Reference i_edge_to_fillet:
-        :param CatFilletEdgePropagation i_propag_mode:
-        :param CatFilletVariation i_variation_mode:
+        :param int i_propag_mode:
+        :param int i_variation_mode:
         :param float i_default_radius:
         :return: VarRadEdgeFillet
+        :rtype: VarRadEdgeFillet
         """
-        return VarRadEdgeFillet(self.shape_factory.AddNewSolidEdgeFilletWithVaryingRadius(i_edge_to_fillet.com_object,
-                                                                                          i_propag_mode.com_object,
-                                                                                          i_variation_mode.com_object,
-                                                                                          i_default_radius))
+        return VarRadEdgeFillet(
+            self.shape_factory.AddNewSolidEdgeFilletWithVaryingRadius(i_edge_to_fillet.com_object, i_propag_mode,
+                                                                      i_variation_mode, i_default_radius))
 
-    def add_new_solid_face_fillet(self, i_f1, i_f2, i_radius):
+    def add_new_solid_face_fillet(self, i_f1: Reference, i_f2: Reference, i_radius: float) -> FaceFillet:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSolidFaceFillet(Reference iF1,
                 | Reference iF2,
                 | double iRadius) As FaceFillet
@@ -1956,13 +2016,15 @@ class ShapeFactory(Factory):
         :param Reference i_f2:
         :param float i_radius:
         :return: FaceFillet
+        :rtype: FaceFillet
         """
         return FaceFillet(self.shape_factory.AddNewSolidFaceFillet(i_f1.com_object, i_f2.com_object, i_radius))
 
-    def add_new_solid_tritangent_fillet(self, i_f1, i_f2, i_removed_face):
+    def add_new_solid_tritangent_fillet(self, i_f1: Reference, i_f2: Reference,
+                                        i_removed_face: Reference) -> TritangentFillet:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSolidTritangentFillet(Reference iF1,
                 | Reference iF2,
                 | Reference iRemovedFace) As TritangentFillet
@@ -1995,14 +2057,15 @@ class ShapeFactory(Factory):
         :param Reference i_f2:
         :param Reference i_removed_face:
         :return: TritangentFillet
+        :rtype: TritangentFillet
         """
         return TritangentFillet(
             self.shape_factory.AddNewSolidTritangentFillet(i_f1.com_object, i_f2.com_object, i_removed_face.com_object))
 
-    def add_new_split(self, i_splitting_element, i_split_side):
+    def add_new_split(self, i_splitting_element: Reference, i_split_side: int) -> Split:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSplit(Reference iSplittingElement,
                 | CatSplitSide iSplitSide) As Split
                 | 
@@ -2023,15 +2086,16 @@ class ShapeFactory(Factory):
                 |         The created split operation
 
         :param Reference i_splitting_element:
-        :param CatSplitSide i_split_side:
+        :param int i_split_side:
         :return: Split
+        :rtype: Split
         """
-        return Split(self.shape_factory.AddNewSplit(i_splitting_element.com_object, i_split_side.com_object))
+        return Split(self.shape_factory.AddNewSplit(i_splitting_element.com_object, i_split_side))
 
-    def add_new_stiffener(self, i_sketch):
+    def add_new_stiffener(self, i_sketch: Sketch) -> Stiffener:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewStiffener(Sketch iSketch) As Stiffener
                 | 
                 |     Creates and returns a new stiffener within the current
@@ -2051,13 +2115,14 @@ class ShapeFactory(Factory):
 
         :param Sketch i_sketch:
         :return: Stiffener
+        :rtype: Stiffener
         """
         return Stiffener(self.shape_factory.AddNewStiffener(i_sketch.com_object))
 
-    def add_new_stiffener_from_ref(self, i_profile_elt):
+    def add_new_stiffener_from_ref(self, i_profile_elt: Reference) -> Stiffener:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewStiffenerFromRef(Reference iProfileElt) As
                 | Stiffener
                 | 
@@ -2075,14 +2140,15 @@ class ShapeFactory(Factory):
 
         :param Reference i_profile_elt:
         :return: Stiffener
+        :rtype: Stiffener
         """
         return Stiffener(self.shape_factory.AddNewStiffenerFromRef(i_profile_elt.com_object))
 
-    def add_new_surface_edge_fillet_with_constant_radius(self, i_edge_to_fillet, i_propag_mode,
-                                                         i_radius):
+    def add_new_surface_edge_fillet_with_constant_radius(self, i_edge_to_fillet: Reference, i_propag_mode: int,
+                                                         i_radius: float) -> ConstRadEdgeFillet:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSurfaceEdgeFilletWithConstantRadius(Reference
                 | iEdgeToFillet,
                 | CatFilletEdgePropagation iPropagMode,
@@ -2107,19 +2173,21 @@ class ShapeFactory(Factory):
                 |         The created edge fillet
 
         :param Reference i_edge_to_fillet:
-        :param CatFilletEdgePropagation i_propag_mode:
+        :param int i_propag_mode:
         :param float i_radius:
         :return: ConstRadEdgeFillet
+        :rtype: ConstRadEdgeFillet
         """
         return ConstRadEdgeFillet(
-            self.shape_factory.AddNewSurfaceEdgeFilletWithConstantRadius(i_edge_to_fillet.com_object,
-                                                                         i_propag_mode.com_object, i_radius))
+            self.shape_factory.AddNewSurfaceEdgeFilletWithConstantRadius(i_edge_to_fillet.com_object, i_propag_mode,
+                                                                         i_radius))
 
-    def add_new_surface_edge_fillet_with_varying_radius(self, i_edge_to_fillet, i_propag_mode,
-                                                        i_variation_mode, i_default_radius):
+    def add_new_surface_edge_fillet_with_varying_radius(self, i_edge_to_fillet: Reference, i_propag_mode: int,
+                                                        i_variation_mode: int,
+                                                        i_default_radius: float) -> VarRadEdgeFillet:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSurfaceEdgeFilletWithVaryingRadius(Reference
                 | iEdgeToFillet,
                 | CatFilletEdgePropagation iPropagMode,
@@ -2149,20 +2217,20 @@ class ShapeFactory(Factory):
                 |         The created edge fillet
 
         :param Reference i_edge_to_fillet:
-        :param CatFilletEdgePropagation i_propag_mode:
-        :param CatFilletVariation i_variation_mode:
+        :param int i_propag_mode:
+        :param int i_variation_mode:
         :param float i_default_radius:
         :return: VarRadEdgeFillet
+        :rtype: VarRadEdgeFillet
         """
-        return VarRadEdgeFillet(self.shape_factory.AddNewSurfaceEdgeFilletWithVaryingRadius(i_edge_to_fillet.com_object,
-                                                                                            i_propag_mode.com_object,
-                                                                                            i_variation_mode.com_object,
-                                                                                            i_default_radius))
+        return VarRadEdgeFillet(
+            self.shape_factory.AddNewSurfaceEdgeFilletWithVaryingRadius(i_edge_to_fillet.com_object, i_propag_mode,
+                                                                        i_variation_mode, i_default_radius))
 
-    def add_new_surface_face_fillet(self, i_f1, i_f2, i_radius):
+    def add_new_surface_face_fillet(self, i_f1: Reference, i_f2: Reference, i_radius: float) -> FaceFillet:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSurfaceFaceFillet(Reference iF1,
                 | Reference iF2,
                 | double iRadius) As FaceFillet
@@ -2191,13 +2259,15 @@ class ShapeFactory(Factory):
         :param Reference i_f2:
         :param float i_radius:
         :return: FaceFillet
+        :rtype: FaceFillet
         """
         return FaceFillet(self.shape_factory.AddNewSurfaceFaceFillet(i_f1.com_object, i_f2.com_object, i_radius))
 
-    def add_new_surface_tritangent_fillet(self, i_f1, i_f2, i_removed_face):
+    def add_new_surface_tritangent_fillet(self, i_f1: Reference, i_f2: Reference,
+                                          i_removed_face: Reference) -> TritangentFillet:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSurfaceTritangentFillet(Reference iF1,
                 | Reference iF2,
                 | Reference iRemovedFace) As TritangentFillet
@@ -2230,14 +2300,15 @@ class ShapeFactory(Factory):
         :param Reference i_f2:
         :param Reference i_removed_face:
         :return: TritangentFillet
+        :rtype: TritangentFillet
         """
         return TritangentFillet(self.shape_factory.AddNewSurfaceTritangentFillet(i_f1.com_object, i_f2.com_object,
                                                                                  i_removed_face.com_object))
 
-    def add_new_surfacic_auto_fillet(self, i_fillet_radius):
+    def add_new_surfacic_auto_fillet(self, i_fillet_radius: float) -> AutoFillet:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSurfacicAutoFillet(double iFilletRadius) As
                 | AutoFillet
                 | 
@@ -2255,18 +2326,20 @@ class ShapeFactory(Factory):
 
         :param float i_fillet_radius:
         :return: AutoFillet
+        :rtype: AutoFillet
         """
         return AutoFillet(self.shape_factory.AddNewSurfacicAutoFillet(i_fillet_radius))
 
-    def add_new_surfacic_circ_pattern(self, i_shape_to_copy, i_nb_of_copies_in_radial_dir,
-                                      i_nb_of_copies_in_angular_dir, i_step_in_radial_dir,
-                                      i_step_in_angular_dir, i_shape_to_copy_position_along_radial_dir,
-                                      i_shape_to_copy_position_along_angular_dir, i_rotation_center,
-                                      i_rotation_axis, i_is_reversed_rotation_axis, i_rotation_angle,
-                                      i_is_radius_aligned, i_complete_crown):
+    def add_new_surfacic_circ_pattern(self, i_shape_to_copy: AnyObject, i_nb_of_copies_in_radial_dir: int,
+                                      i_nb_of_copies_in_angular_dir: int, i_step_in_radial_dir: float,
+                                      i_step_in_angular_dir: float, i_shape_to_copy_position_along_radial_dir: int,
+                                      i_shape_to_copy_position_along_angular_dir: int, i_rotation_center: Reference,
+                                      i_rotation_axis: Reference, i_is_reversed_rotation_axis: bool,
+                                      i_rotation_angle: float, i_is_radius_aligned: bool,
+                                      i_complete_crown: bool) -> CircPattern:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSurfacicCircPattern(AnyObject iShapeToCopy,
                 | long iNbOfCopiesInRadialDir,
                 | long iNbOfCopiesInAngularDir,
@@ -2354,6 +2427,7 @@ class ShapeFactory(Factory):
         :param bool i_is_radius_aligned:
         :param bool i_complete_crown:
         :return: CircPattern
+        :rtype: CircPattern
         """
         return CircPattern(
             self.shape_factory.AddNewSurfacicCircPattern(i_shape_to_copy.com_object, i_nb_of_copies_in_radial_dir,
@@ -2365,14 +2439,15 @@ class ShapeFactory(Factory):
                                                          i_is_reversed_rotation_axis, i_rotation_angle,
                                                          i_is_radius_aligned, i_complete_crown))
 
-    def add_new_surfacic_rect_pattern(self, i_shape_to_copy, i_nb_of_copies_in_dir1,
-                                      i_nb_of_copies_in_dir2, i_step_in_dir1, i_step_in_dir2,
-                                      i_shape_to_copy_position_along_dir1,
-                                      i_shape_to_copy_position_along_dir2, i_dir1, i_dir2,
-                                      i_is_reversed_dir1, i_is_reversed_dir2, i_rotation_angle):
+    def add_new_surfacic_rect_pattern(self, i_shape_to_copy: AnyObject, i_nb_of_copies_in_dir1: int,
+                                      i_nb_of_copies_in_dir2: int, i_step_in_dir1: float, i_step_in_dir2: float,
+                                      i_shape_to_copy_position_along_dir1: int,
+                                      i_shape_to_copy_position_along_dir2: int, i_dir1: Reference, i_dir2: Reference,
+                                      i_is_reversed_dir1: bool, i_is_reversed_dir2: bool,
+                                      i_rotation_angle: float) -> RectPattern:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSurfacicRectPattern(AnyObject iShapeToCopy,
                 | long iNbOfCopiesInDir1,
                 | long iNbOfCopiesInDir2,
@@ -2455,6 +2530,7 @@ class ShapeFactory(Factory):
         :param bool i_is_reversed_dir2:
         :param float i_rotation_angle:
         :return: RectPattern
+        :rtype: RectPattern
         """
         return RectPattern(
             self.shape_factory.AddNewSurfacicRectPattern(i_shape_to_copy.com_object, i_nb_of_copies_in_dir1,
@@ -2464,11 +2540,11 @@ class ShapeFactory(Factory):
                                                          i_dir2.com_object, i_is_reversed_dir1, i_is_reversed_dir2,
                                                          i_rotation_angle))
 
-    def add_new_surfacic_sew_surface(self, i_type, i_support_surface, i_sewing_element,
-                                     i_sewing_side):
+    def add_new_surfacic_sew_surface(self, i_type: int, i_support_surface: Reference, i_sewing_element: Reference,
+                                     i_sewing_side: int) -> SewSurface:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSurfacicSewSurface(long iType,
                 | Reference iSupportSurface,
                 | Reference iSewingElement,
@@ -2497,17 +2573,17 @@ class ShapeFactory(Factory):
         :param int i_type:
         :param Reference i_support_surface:
         :param Reference i_sewing_element:
-        :param CatSplitSide i_sewing_side:
+        :param int i_sewing_side:
         :return: SewSurface
+        :rtype: SewSurface
         """
         return SewSurface(self.shape_factory.AddNewSurfacicSewSurface(i_type, i_support_surface.com_object,
-                                                                      i_sewing_element.com_object,
-                                                                      i_sewing_side.com_object))
+                                                                      i_sewing_element.com_object, i_sewing_side))
 
-    def add_new_surfacic_user_pattern(self, i_shape_to_copy, i_nb_of_copies):
+    def add_new_surfacic_user_pattern(self, i_shape_to_copy: AnyObject, i_nb_of_copies: int) -> UserPattern:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSurfacicUserPattern(AnyObject iShapeToCopy,
                 | long iNbOfCopies) As UserPattern
                 | 
@@ -2527,13 +2603,15 @@ class ShapeFactory(Factory):
         :param AnyObject i_shape_to_copy:
         :param int i_nb_of_copies:
         :return: UserPattern
+        :rtype: UserPattern
         """
         return UserPattern(self.shape_factory.AddNewSurfacicUserPattern(i_shape_to_copy.com_object, i_nb_of_copies))
 
-    def add_new_thick_surface(self, i_offset_element, i_isens_offset, i_top_offset, i_bot_offset):
+    def add_new_thick_surface(self, i_offset_element: Reference, i_isens_offset: int, i_top_offset: float,
+                              i_bot_offset: float) -> ThickSurface:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewThickSurface(Reference iOffsetElement,
                 | long iIsensOffset,
                 | double iTopOffset,
@@ -2564,20 +2642,16 @@ class ShapeFactory(Factory):
         :param float i_top_offset:
         :param float i_bot_offset:
         :return: ThickSurface
+        :rtype: ThickSurface
         """
         return ThickSurface(
-            self.shape_factory.AddNewThickSurface(
-                i_offset_element.com_object,
-                i_isens_offset,
-                i_top_offset,
-                i_bot_offset
-            )
-        )
+            self.shape_factory.AddNewThickSurface(i_offset_element.com_object, i_isens_offset, i_top_offset,
+                                                  i_bot_offset))
 
-    def add_new_thickness(self, i_face_to_thicken, i_offset):
+    def add_new_thickness(self, i_face_to_thicken: Reference, i_offset: float) -> Thickness:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewThickness(Reference iFaceToThicken,
                 | double iOffset) As Thickness
                 | 
@@ -2603,40 +2677,41 @@ class ShapeFactory(Factory):
         :param Reference i_face_to_thicken:
         :param float i_offset:
         :return: Thickness
+        :rtype: Thickness
         """
-        print(i_offset, type(i_offset))
         return Thickness(self.shape_factory.AddNewThickness(i_face_to_thicken.com_object, i_offset))
 
-    def add_new_thread_with_out_ref(self):
+    def add_new_thread_with_out_ref(self) -> Thread:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewThreadWithOutRef() As Thread
                 | 
-                |     Creates and returns a new thread/tap within the current
+                |     Creates and returns a new thread\tap within the current
                 |     body.
                 | 
                 |     Returns:
                 |         The created Thread
 
         :return: Thread
+        :rtype: Thread
         """
         return Thread(self.shape_factory.AddNewThreadWithOutRef())
 
-    def add_new_thread_with_ref(self, i_lateral_face, i_limit_face):
+    def add_new_thread_with_ref(self, i_lateral_face: Reference, i_limit_face: Reference) -> Thread:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewThreadWithRef(Reference iLateralFace,
                 | Reference iLimitFace) As Thread
                 | 
-                |     Creates and returns a new thread/tap within the current
+                |     Creates and returns a new thread\tap within the current
                 |     body.
                 | 
                 |     Parameters:
                 | 
                 |         iLateralFace
-                |             The Face defining the support of thread/tap
+                |             The Face defining the support of thread\tap
                 |             The following 
                 | 
                 |         Boundary object is supported: Face. 
@@ -2650,13 +2725,14 @@ class ShapeFactory(Factory):
         :param Reference i_lateral_face:
         :param Reference i_limit_face:
         :return: Thread
+        :rtype: Thread
         """
         return Thread(self.shape_factory.AddNewThreadWithRef(i_lateral_face.com_object, i_limit_face.com_object))
 
-    def add_new_trim(self, i_body_to_trim):
+    def add_new_trim(self, i_body_to_trim: Body) -> Trim:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewTrim(Body iBodyToTrim) As Trim
                 | 
                 |     Creates and returns a new Trim operation within the current
@@ -2672,13 +2748,15 @@ class ShapeFactory(Factory):
 
         :param Body i_body_to_trim:
         :return: Trim
+        :rtype: Trim
         """
         return Trim(self.shape_factory.AddNewTrim(i_body_to_trim.com_object))
 
-    def add_new_tritangent_fillet(self, i_f1, i_f2, i_removed_face):
+    def add_new_tritangent_fillet(self, i_f1: Reference, i_f2: Reference,
+                                  i_removed_face: Reference) -> TritangentFillet:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewTritangentFillet(Reference iF1,
                 | Reference iF2,
                 | Reference iRemovedFace) As TritangentFillet
@@ -2692,14 +2770,15 @@ class ShapeFactory(Factory):
         :param Reference i_f2:
         :param Reference i_removed_face:
         :return: TritangentFillet
+        :rtype: TritangentFillet
         """
         return TritangentFillet(
             self.shape_factory.AddNewTritangentFillet(i_f1.com_object, i_f2.com_object, i_removed_face.com_object))
 
-    def add_new_user_pattern(self, i_shape_to_copy, i_nb_of_copies):
+    def add_new_user_pattern(self, i_shape_to_copy: AnyObject, i_nb_of_copies: int) -> UserPattern:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewUserPattern(AnyObject iShapeToCopy,
                 | long iNbOfCopies) As UserPattern
                 | 
@@ -2719,13 +2798,14 @@ class ShapeFactory(Factory):
         :param AnyObject i_shape_to_copy:
         :param int i_nb_of_copies:
         :return: UserPattern
+        :rtype: UserPattern
         """
         return UserPattern(self.shape_factory.AddNewUserPattern(i_shape_to_copy.com_object, i_nb_of_copies))
 
-    def add_new_user_patternof_list(self, i_shape_to_copy, i_nb_of_copies):
+    def add_new_user_patternof_list(self, i_shape_to_copy: AnyObject, i_nb_of_copies: int) -> UserPattern:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewUserPatternofList(AnyObject iShapeToCopy,
                 | long iNbOfCopies) As UserPattern
                 | 
@@ -2746,13 +2826,14 @@ class ShapeFactory(Factory):
         :param AnyObject i_shape_to_copy:
         :param int i_nb_of_copies:
         :return: UserPattern
+        :rtype: UserPattern
         """
         return UserPattern(self.shape_factory.AddNewUserPatternofList(i_shape_to_copy.com_object, i_nb_of_copies))
 
-    def add_new_volume_add(self, i_body1, i_body2, i_type):
+    def add_new_volume_add(self, i_body1: Reference, i_body2: Reference, i_type: float) -> Add:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewVolumeAdd(Reference iBody1,
                 | Reference iBody2,
                 | double iType) As Add
@@ -2775,13 +2856,14 @@ class ShapeFactory(Factory):
         :param Reference i_body2:
         :param float i_type:
         :return: Add
+        :rtype: Add
         """
         return Add(self.shape_factory.AddNewVolumeAdd(i_body1.com_object, i_body2.com_object, i_type))
 
-    def add_new_volume_close_surface(self, i_close_element):
+    def add_new_volume_close_surface(self, i_close_element: Reference) -> CloseSurface:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewVolumeCloseSurface(Reference iCloseElement) As
                 | CloseSurface
                 | 
@@ -2798,13 +2880,14 @@ class ShapeFactory(Factory):
 
         :param Reference i_close_element:
         :return: CloseSurface
+        :rtype: CloseSurface
         """
         return CloseSurface(self.shape_factory.AddNewVolumeCloseSurface(i_close_element.com_object))
 
-    def add_new_volume_intersect(self, i_body1, i_body2, i_type):
+    def add_new_volume_intersect(self, i_body1: Reference, i_body2: Reference, i_type: float) -> Intersect:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewVolumeIntersect(Reference iBody1,
                 | Reference iBody2,
                 | double iType) As Intersect
@@ -2827,13 +2910,14 @@ class ShapeFactory(Factory):
         :param Reference i_body2:
         :param float i_type:
         :return: Intersect
+        :rtype: Intersect
         """
         return Intersect(self.shape_factory.AddNewVolumeIntersect(i_body1.com_object, i_body2.com_object, i_type))
 
-    def add_new_volume_remove(self, i_body1, i_body2, i_type):
+    def add_new_volume_remove(self, i_body1: Reference, i_body2: Reference, i_type: float) -> Remove:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewVolumeRemove(Reference iBody1,
                 | Reference iBody2,
                 | double iType) As Remove
@@ -2856,13 +2940,15 @@ class ShapeFactory(Factory):
         :param Reference i_body2:
         :param float i_type:
         :return: Remove
+        :rtype: Remove
         """
         return Remove(self.shape_factory.AddNewVolumeRemove(i_body1.com_object, i_body2.com_object, i_type))
 
-    def add_new_volume_sew_surface(self, i_type, i_support_volume, i_sewing_element, i_sewing_side):
+    def add_new_volume_sew_surface(self, i_type: int, i_support_volume: Reference, i_sewing_element: Reference,
+                                   i_sewing_side: int) -> SewSurface:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewVolumeSewSurface(long iType,
                 | Reference iSupportVolume,
                 | Reference iSewingElement,
@@ -2891,18 +2977,19 @@ class ShapeFactory(Factory):
         :param int i_type:
         :param Reference i_support_volume:
         :param Reference i_sewing_element:
-        :param CatSplitSide i_sewing_side:
+        :param int i_sewing_side:
         :return: SewSurface
+        :rtype: SewSurface
         """
         return SewSurface(
             self.shape_factory.AddNewVolumeSewSurface(i_type, i_support_volume.com_object, i_sewing_element.com_object,
-                                                      i_sewing_side.com_object))
+                                                      i_sewing_side))
 
-    def add_new_volume_shell(self, i_face_to_remove, i_internal_thickness, i_external_thickness,
-                             i_volume_support):
+    def add_new_volume_shell(self, i_face_to_remove: Reference, i_internal_thickness: float,
+                             i_external_thickness: float, i_volume_support: Reference) -> Shell:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewVolumeShell(Reference iFaceToRemove,
                 | double iInternalThickness,
                 | double iExternalThickness,
@@ -2936,15 +3023,16 @@ class ShapeFactory(Factory):
         :param float i_external_thickness:
         :param Reference i_volume_support:
         :return: Shell
+        :rtype: Shell
         """
         return Shell(self.shape_factory.AddNewVolumeShell(i_face_to_remove.com_object, i_internal_thickness,
                                                           i_external_thickness, i_volume_support.com_object))
 
-    def add_new_volume_thick_surface(self, i_offset_element, i_isens_offset, i_top_offset,
-                                     i_bot_offset):
+    def add_new_volume_thick_surface(self, i_offset_element: Reference, i_isens_offset: int, i_top_offset: float,
+                                     i_bot_offset: float) -> ThickSurface:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewVolumeThickSurface(Reference iOffsetElement,
                 | long iIsensOffset,
                 | double iTopOffset,
@@ -2975,15 +3063,17 @@ class ShapeFactory(Factory):
         :param float i_top_offset:
         :param float i_bot_offset:
         :return: ThickSurface
+        :rtype: ThickSurface
         """
         return ThickSurface(
             self.shape_factory.AddNewVolumeThickSurface(i_offset_element.com_object, i_isens_offset, i_top_offset,
                                                         i_bot_offset))
 
-    def add_new_volume_thickness(self, i_face_to_thicken, i_offset, i_type, i_volume_support):
+    def add_new_volume_thickness(self, i_face_to_thicken: Reference, i_offset: float, i_type: int,
+                                 i_volume_support: Reference) -> Thickness:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewVolumeThickness(Reference iFaceToThicken,
                 | double iOffset,
                 | long iType,
@@ -3017,14 +3107,15 @@ class ShapeFactory(Factory):
         :param int i_type:
         :param Reference i_volume_support:
         :return: Thickness
+        :rtype: Thickness
         """
         return Thickness(self.shape_factory.AddNewVolumeThickness(i_face_to_thicken.com_object, i_offset, i_type,
                                                                   i_volume_support.com_object))
 
-    def add_new_volume_trim(self, i_support_volume, i_cutting_volume):
+    def add_new_volume_trim(self, i_support_volume: Reference, i_cutting_volume: Reference) -> Trim:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewVolumeTrim(Reference iSupportVolume,
                 | Reference iCuttingVolume) As Trim
                 | 
@@ -3044,15 +3135,17 @@ class ShapeFactory(Factory):
         :param Reference i_support_volume:
         :param Reference i_cutting_volume:
         :return: Trim
+        :rtype: Trim
         """
         return Trim(self.shape_factory.AddNewVolumeTrim(i_support_volume.com_object, i_cutting_volume.com_object))
 
-    def add_new_volumic_draft(self, i_face_to_draft, i_neutral, i_neutral_mode, i_parting,
-                              i_dir_x, i_dir_y, i_dir_z, i_mode, i_angle,
-                              i_multiselection_mode, i_type, i_volume_support):
+    def add_new_volumic_draft(self, i_face_to_draft: Reference, i_neutral: Reference, i_neutral_mode: int,
+                              i_parting: Reference, i_dir_x: float, i_dir_y: float, i_dir_z: float, i_mode: int,
+                              i_angle: float, i_multiselection_mode: int, i_type: int,
+                              i_volume_support: Reference) -> Draft:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewVolumicDraft(Reference iFaceToDraft,
                 | Reference iNeutral,
                 | CatDraftNeutralPropagationMode iNeutralMode,
@@ -3125,23 +3218,23 @@ class ShapeFactory(Factory):
 
         :param Reference i_face_to_draft:
         :param Reference i_neutral:
-        :param CatDraftNeutralPropagationMode i_neutral_mode:
+        :param int i_neutral_mode:
         :param Reference i_parting:
         :param float i_dir_x:
         :param float i_dir_y:
         :param float i_dir_z:
-        :param CatDraftMode i_mode:
+        :param int i_mode:
         :param float i_angle:
-        :param CatDraftMultiselectionMode i_multiselection_mode:
+        :param int i_multiselection_mode:
         :param int i_type:
         :param Reference i_volume_support:
         :return: Draft
+        :rtype: Draft
         """
-        return Draft(self.shape_factory.AddNewVolumicDraft(i_face_to_draft.com_object, i_neutral.com_object,
-                                                           i_neutral_mode.com_object, i_parting.com_object, i_dir_x,
-                                                           i_dir_y, i_dir_z, i_mode.com_object, i_angle,
-                                                           i_multiselection_mode.com_object, i_type,
-                                                           i_volume_support.com_object))
+        return Draft(
+            self.shape_factory.AddNewVolumicDraft(i_face_to_draft.com_object, i_neutral.com_object, i_neutral_mode,
+                                                  i_parting.com_object, i_dir_x, i_dir_y, i_dir_z, i_mode, i_angle,
+                                                  i_multiselection_mode, i_type, i_volume_support.com_object))
 
     def __repr__(self):
         return f'ShapeFactory(name="{self.name}")'

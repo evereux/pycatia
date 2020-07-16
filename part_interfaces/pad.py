@@ -13,7 +13,6 @@ from pycatia.part_interfaces.prism import Prism
 
 
 class Pad(Prism):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -32,9 +31,7 @@ class Pad(Prism):
                 | A pad is created by extruding a profile represented by a sketch in one or two
                 | opposite directions. It is a "positive" shape: it adds material to the body it
                 | belongs to.
-                | 
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
-    
+
     """
 
     def __init__(self, com_object):
@@ -42,4 +39,4 @@ class Pad(Prism):
         self.pad = com_object
 
     def __repr__(self):
-        return f'Pad(name="{ self.name }")'
+        return f'Pad(name="{self.name}")'

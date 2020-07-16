@@ -40,10 +40,10 @@ class Scaling(DressUpShape):
         self.scaling = com_object
 
     @property
-    def factor(self):
+    def factor(self) -> RealParam:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Factor() As RealParam (Read Only)
                 | 
                 |     Returns the scaling factor.
@@ -55,15 +55,16 @@ class Scaling(DressUpShape):
                 |          Set factor = firstScaling.Factor
 
         :return: RealParam
+        :rtype: RealParam
         """
 
         return RealParam(self.scaling.Factor)
 
     @property
-    def scaling_reference(self):
+    def scaling_reference(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ScalingReference() As Reference
                 | 
                 |     Returns or sets the scaling reference element. It can be a
@@ -81,12 +82,13 @@ class Scaling(DressUpShape):
                 |          firstScaling.ScalingSupport = MyRef
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.scaling.ScalingReference)
 
     @scaling_reference.setter
-    def scaling_reference(self, value):
+    def scaling_reference(self, value: Reference):
         """
         :param Reference value:
         """

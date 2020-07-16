@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia.in_interfaces.reference import Reference
 from pycatia.in_interfaces.references import References
 from pycatia.knowledge_interfaces.angle import Angle
 from pycatia.knowledge_interfaces.length import Length
@@ -16,7 +16,6 @@ from pycatia.part_interfaces.dress_up_shape import DressUpShape
 
 
 class Chamfer(DressUpShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -42,10 +41,10 @@ class Chamfer(DressUpShape):
         self.chamfer = com_object
 
     @property
-    def angle(self):
+    def angle(self) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Angle() As Angle (Read Only)
                 | 
                 |     Returns the chamfer angle. This is valid only if the chamfer is defined
@@ -59,15 +58,16 @@ class Chamfer(DressUpShape):
                 |          Set angle = firstChamfer.Angle
 
         :return: Angle
+        :rtype: Angle
         """
 
         return Angle(self.chamfer.Angle)
 
     @property
-    def elements_to_chamfer(self):
+    def elements_to_chamfer(self) -> References:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ElementsToChamfer() As References (Read Only)
                 | 
                 |     Returns the collection of geometrical elements to be
@@ -80,19 +80,20 @@ class Chamfer(DressUpShape):
                 |          Set list = firstChamfer.ElementsToChamfer
 
         :return: References
+        :rtype: References
         """
 
         return References(self.chamfer.ElementsToChamfer)
 
     @property
-    def length1(self):
+    def length1(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Length1() As Length (Read Only)
                 | 
                 |     Returns the chamfer first length. This is the first length if the chamfer
-                |     is defined by two lengths, or the chamfer if the chamfer is defined by a
+                |     is defined by two lengthes, or the chamfer if the chamfer is defined by a
                 |     length and an angle.
                 | 
                 |     Example:
@@ -102,19 +103,20 @@ class Chamfer(DressUpShape):
                 |          Set length1 = firstChamfer.Length1
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.chamfer.Length1)
 
     @property
-    def length2(self):
+    def length2(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Length2() As Length (Read Only)
                 | 
                 |     Returns the chamfer second length. This is valid only if the chamfer is
-                |     defined using two lengths, that is if the chamfer definition mode
+                |     defined using two lengthes, that is if the chamfer definition mode
                 |     CatChamferMode is set to catTwoLengthChamfer.
                 | 
                 |     Example:
@@ -124,19 +126,20 @@ class Chamfer(DressUpShape):
                 |          Set length2 = firstChamfer.Length2
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.chamfer.Length2)
 
     @property
-    def mode(self):
+    def mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Mode() As CatChamferMode
                 | 
                 |     Returns or sets the chamfer definition mode. The chamfer definition mode
-                |     enables the chamfer to be defined using either two lengths or a length and an
+                |     enables the chamfer to be defined using either two lengthes or a length and an
                 |     angle.
                 | 
                 |     Example:
@@ -147,24 +150,25 @@ class Chamfer(DressUpShape):
                 |          Set mode = firstChamfer.Mode
                 |          firstChamfer.Mode = catTwoLengthChamfer
 
-        :return: enum cat_chamfer_mode
+        :return: int
+        :rtype: int
         """
 
         return self.chamfer.Mode
 
     @mode.setter
-    def mode(self, value):
+    def mode(self, value: int):
         """
-        :param enum cat_chamfer_mode value:
+        :param int value:
         """
 
         self.chamfer.Mode = value
 
     @property
-    def orientation(self):
+    def orientation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation() As CatChamferOrientation
                 | 
                 |     Returns or sets the chamfer orientation.
@@ -177,24 +181,25 @@ class Chamfer(DressUpShape):
                 |          Set orient = firstChamfer.Orientation
                 |          firstChamfer.Orientation = catReverseChamfer
 
-        :return: enum cat_chamfer_orientation
+        :return: int
+        :rtype: int
         """
 
         return self.chamfer.Orientation
 
     @orientation.setter
-    def orientation(self, value):
+    def orientation(self, value: int):
         """
-        :param enum cat_chamfer_orientation value:
+        :param int value:
         """
 
         self.chamfer.Orientation = value
 
     @property
-    def propagation(self):
+    def propagation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Propagation() As CatChamferPropagation
                 | 
                 |     Returns or sets the propagation mode of the geometrical elements to be
@@ -208,23 +213,24 @@ class Chamfer(DressUpShape):
                 |          Set prop = firstChamfer.Propagation
                 |          firstChamfer.Propagation = catMinimalChamfer
 
-        :return: enum cat_chamfer_propagation
+        :return: int
+        :rtype: int
         """
 
         return self.chamfer.Propagation
 
     @propagation.setter
-    def propagation(self, value):
+    def propagation(self, value: int):
         """
-        :param enum cat_chamfer_propagation value:
+        :param int value:
         """
 
         self.chamfer.Propagation = value
 
-    def add_element_to_chamfer(self, i_element_to_chamfer):
+    def add_element_to_chamfer(self, i_element_to_chamfer: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddElementToChamfer(Reference iElementToChamfer)
                 | 
                 |     Adds a new geometrical element to be chamfered.
@@ -245,6 +251,7 @@ class Chamfer(DressUpShape):
 
         :param Reference i_element_to_chamfer:
         :return: None
+        :rtype: None
         """
         return self.chamfer.AddElementToChamfer(i_element_to_chamfer.com_object)
         # # # # Autogenerated comment: 
@@ -263,10 +270,10 @@ class Chamfer(DressUpShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def withdraw_element_to_chamfer(self, i_element_to_withdraw):
+    def withdraw_element_to_chamfer(self, i_element_to_withdraw: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub WithdrawElementToChamfer(Reference iElementToWithdraw)
                 | 
                 |     Withdraws a geometrical element from those to be
@@ -288,6 +295,7 @@ class Chamfer(DressUpShape):
 
         :param Reference i_element_to_withdraw:
         :return: None
+        :rtype: None
         """
         return self.chamfer.WithdrawElementToChamfer(i_element_to_withdraw.com_object)
         # # # # Autogenerated comment: 
@@ -307,4 +315,4 @@ class Chamfer(DressUpShape):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'Chamfer(name="{ self.name }")'
+        return f'Chamfer(name="{self.name}")'
