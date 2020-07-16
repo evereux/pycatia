@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class MarkerSettingAtt(SettingController):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -86,22 +85,23 @@ class MarkerSettingAtt(SettingController):
         self.marker_setting_att = com_object
 
     @property
-    def marker2_d_auto_naming(self):
+    def marker_2d_auto_naming(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Marker2DAutoNaming() As boolean
                 | 
                 |     Returns or sets the activation state for 2D annotations automatic naming
                 |     (TRUE naming is automatic, FALSE the naming is not automatic).
 
         :return: bool
+        :rtype: bool
         """
 
         return self.marker_setting_att.Marker2DAutoNaming
 
-    @marker2_d_auto_naming.setter
-    def marker2_d_auto_naming(self, value):
+    @marker_2d_auto_naming.setter
+    def marker_2d_auto_naming(self, value: bool):
         """
         :param bool value:
         """
@@ -109,22 +109,23 @@ class MarkerSettingAtt(SettingController):
         self.marker_setting_att.Marker2DAutoNaming = value
 
     @property
-    def marker3_d_auto_naming(self):
+    def marker_3d_auto_naming(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Marker3DAutoNaming() As boolean
                 | 
                 |     Returns or sets the activation state for 3D annotations automatic naming
                 |     (TRUE naming is automatic, FALSE the naming is not automatic).
 
         :return: bool
+        :rtype: bool
         """
 
         return self.marker_setting_att.Marker3DAutoNaming
 
-    @marker3_d_auto_naming.setter
-    def marker3_d_auto_naming(self, value):
+    @marker_3d_auto_naming.setter
+    def marker_3d_auto_naming(self, value: bool):
         """
         :param bool value:
         """
@@ -132,22 +133,23 @@ class MarkerSettingAtt(SettingController):
         self.marker_setting_att.Marker3DAutoNaming = value
 
     @property
-    def marker_defaults_dashed(self):
+    def marker_defaults_dashed(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MarkerDefaultsDashed() As long
                 | 
                 |     Returns or sets the default dashed value of an annotation (oValue the
                 |     dashed value).
 
         :return: int
+        :rtype: int
         """
 
         return self.marker_setting_att.MarkerDefaultsDashed
 
     @marker_defaults_dashed.setter
-    def marker_defaults_dashed(self, value):
+    def marker_defaults_dashed(self, value: int):
         """
         :param int value:
         """
@@ -155,22 +157,23 @@ class MarkerSettingAtt(SettingController):
         self.marker_setting_att.MarkerDefaultsDashed = value
 
     @property
-    def marker_defaults_weight(self):
+    def marker_defaults_weight(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MarkerDefaultsWeight() As long
                 | 
                 |     Returns or sets the default weight value of an annotation (oValue the
                 |     weight value).
 
         :return: int
+        :rtype: int
         """
 
         return self.marker_setting_att.MarkerDefaultsWeight
 
     @marker_defaults_weight.setter
-    def marker_defaults_weight(self, value):
+    def marker_defaults_weight(self, value: int):
         """
         :param int value:
         """
@@ -178,22 +181,23 @@ class MarkerSettingAtt(SettingController):
         self.marker_setting_att.MarkerDefaultsWeight = value
 
     @property
-    def marker_text_dashed2_d(self):
+    def marker_text_dashed_2d(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MarkerTextDashed2D() As long
                 | 
                 |     Returns or sets the default dashed value of a 2D text annotation (oValue
                 |     the dashed value).
 
         :return: int
+        :rtype: int
         """
 
         return self.marker_setting_att.MarkerTextDashed2D
 
-    @marker_text_dashed2_d.setter
-    def marker_text_dashed2_d(self, value):
+    @marker_text_dashed_2d.setter
+    def marker_text_dashed_2d(self, value: int):
         """
         :param int value:
         """
@@ -201,22 +205,23 @@ class MarkerSettingAtt(SettingController):
         self.marker_setting_att.MarkerTextDashed2D = value
 
     @property
-    def marker_text_dashed3_d(self):
+    def marker_text_dashed_3d(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MarkerTextDashed3D() As long
                 | 
                 |     Returns or sets the default dashed value of a 3D text annotation (oValue
                 |     the dashed value).
 
         :return: int
+        :rtype: int
         """
 
         return self.marker_setting_att.MarkerTextDashed3D
 
-    @marker_text_dashed3_d.setter
-    def marker_text_dashed3_d(self, value):
+    @marker_text_dashed_3d.setter
+    def marker_text_dashed_3d(self, value: int):
         """
         :param int value:
         """
@@ -224,21 +229,22 @@ class MarkerSettingAtt(SettingController):
         self.marker_setting_att.MarkerTextDashed3D = value
 
     @property
-    def marker_text_defaults_font2_d(self):
+    def marker_text_defaults_font_2d(self) -> str:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MarkerTextDefaultsFont2D() As CATBSTR
                 | 
                 |     Returns or sets the default font of a 2D annotation (oValue the font name).
 
         :return: str
+        :rtype: str
         """
 
         return self.marker_setting_att.MarkerTextDefaultsFont2D
 
-    @marker_text_defaults_font2_d.setter
-    def marker_text_defaults_font2_d(self, value):
+    @marker_text_defaults_font_2d.setter
+    def marker_text_defaults_font_2d(self, value: str):
         """
         :param str value:
         """
@@ -246,21 +252,22 @@ class MarkerSettingAtt(SettingController):
         self.marker_setting_att.MarkerTextDefaultsFont2D = value
 
     @property
-    def marker_text_defaults_font3_d(self):
+    def marker_text_defaults_font_3d(self) -> False:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MarkerTextDefaultsFont3D(CATBSTR iValue)
                 | 
                 |     Returns or sets the default font of a 3D annotation (oValue the font name).
 
         :return: False
+        :rtype: False
         """
 
         return None
 
-    @marker_text_defaults_font3_d.setter
-    def marker_text_defaults_font3_d(self, value):
+    @marker_text_defaults_font_3d.setter
+    def marker_text_defaults_font_3d(self, value: False):
         """
         :param False value:
         """
@@ -268,22 +275,23 @@ class MarkerSettingAtt(SettingController):
         self.marker_setting_att.MarkerTextDefaultsFont3D = value
 
     @property
-    def marker_text_defaults_size2_d(self):
+    def marker_text_defaults_size_2d(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MarkerTextDefaultsSize2D() As long
                 | 
                 |     Returns or sets the default size value of a 2d annotation (oValue the size
                 |     value)..
 
         :return: int
+        :rtype: int
         """
 
         return self.marker_setting_att.MarkerTextDefaultsSize2D
 
-    @marker_text_defaults_size2_d.setter
-    def marker_text_defaults_size2_d(self, value):
+    @marker_text_defaults_size_2d.setter
+    def marker_text_defaults_size_2d(self, value: int):
         """
         :param int value:
         """
@@ -291,22 +299,23 @@ class MarkerSettingAtt(SettingController):
         self.marker_setting_att.MarkerTextDefaultsSize2D = value
 
     @property
-    def marker_text_defaults_size3_d(self):
+    def marker_text_defaults_size_3d(self) -> False:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MarkerTextDefaultsSize3D(long iValue)
                 | 
                 |     Returns or sets the default size value of a 3d annotation (oValue the size
                 |     value)..
 
         :return: False
+        :rtype: False
         """
 
         return None
 
-    @marker_text_defaults_size3_d.setter
-    def marker_text_defaults_size3_d(self, value):
+    @marker_text_defaults_size_3d.setter
+    def marker_text_defaults_size_3d(self, value: False):
         """
         :param False value:
         """
@@ -314,22 +323,23 @@ class MarkerSettingAtt(SettingController):
         self.marker_setting_att.MarkerTextDefaultsSize3D = value
 
     @property
-    def marker_text_weight2_d(self):
+    def marker_text_weight_2d(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MarkerTextWeight2D() As long
                 | 
                 |     Returns or sets the default weight value of a 2D text annotation (oValue
                 |     the weight value).
 
         :return: int
+        :rtype: int
         """
 
         return self.marker_setting_att.MarkerTextWeight2D
 
-    @marker_text_weight2_d.setter
-    def marker_text_weight2_d(self, value):
+    @marker_text_weight_2d.setter
+    def marker_text_weight_2d(self, value: int):
         """
         :param int value:
         """
@@ -337,32 +347,33 @@ class MarkerSettingAtt(SettingController):
         self.marker_setting_att.MarkerTextWeight2D = value
 
     @property
-    def marker_text_weight3_d(self):
+    def marker_text_weight_3d(self) -> False:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MarkerTextWeight3D(long iValue)
                 | 
                 |     Returns or sets the default weight value of a 3D text annotation (oValue
                 |     the weight value).
 
         :return: False
+        :rtype: False
         """
 
         return None
 
-    @marker_text_weight3_d.setter
-    def marker_text_weight3_d(self, value):
+    @marker_text_weight_3d.setter
+    def marker_text_weight_3d(self, value: False):
         """
         :param False value:
         """
 
         self.marker_setting_att.MarkerTextWeight3D = value
 
-    def get_marker2_d_auto_naming_info(self, io_admin_level=None, io_locked=None):
+    def get_marker_2d_auto_naming_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMarker2DAutoNamingInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -390,13 +401,14 @@ class MarkerSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.marker_setting_att.GetMarker2DAutoNamingInfo(io_admin_level, io_locked)
 
-    def get_marker3_d_auto_naming_info(self, io_admin_level=None, io_locked=None):
+    def get_marker_3d_auto_naming_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMarker3DAutoNamingInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -424,13 +436,14 @@ class MarkerSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.marker_setting_att.GetMarker3DAutoNamingInfo(io_admin_level, io_locked)
 
-    def get_marker_defaults_color(self, o_red=None, o_green=None, o_blue=None):
+    def get_marker_defaults_color(self, o_red: int, o_green: int, o_blue: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetMarkerDefaultsColor(long oRed,
                 | long oGreen,
                 | long oBlue)
@@ -442,13 +455,14 @@ class MarkerSettingAtt(SettingController):
         :param int o_green:
         :param int o_blue:
         :return: None
+        :rtype: None
         """
         return self.marker_setting_att.GetMarkerDefaultsColor(o_red, o_green, o_blue)
 
-    def get_marker_defaults_color_info(self, io_admin_level=None, io_locked=None):
+    def get_marker_defaults_color_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMarkerDefaultsColorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -476,13 +490,14 @@ class MarkerSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.marker_setting_att.GetMarkerDefaultsColorInfo(io_admin_level, io_locked)
 
-    def get_marker_defaults_dashed_info(self, io_admin_level=None, io_locked=None):
+    def get_marker_defaults_dashed_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMarkerDefaultsDashedInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -510,13 +525,14 @@ class MarkerSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.marker_setting_att.GetMarkerDefaultsDashedInfo(io_admin_level, io_locked)
 
-    def get_marker_defaults_weight_info(self, io_admin_level=None, io_locked=None):
+    def get_marker_defaults_weight_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMarkerDefaultsWeightInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -544,13 +560,14 @@ class MarkerSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.marker_setting_att.GetMarkerDefaultsWeightInfo(io_admin_level, io_locked)
 
-    def get_marker_text_color2_d(self, o_red=None, o_green=None, o_blue=None):
+    def get_marker_text_color_2d(self, o_red: int, o_green: int, o_blue: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetMarkerTextColor2D(long oRed,
                 | long oGreen,
                 | long oBlue)
@@ -562,13 +579,14 @@ class MarkerSettingAtt(SettingController):
         :param int o_green:
         :param int o_blue:
         :return: None
+        :rtype: None
         """
         return self.marker_setting_att.GetMarkerTextColor2D(o_red, o_green, o_blue)
 
-    def get_marker_text_color2_d_info(self, io_admin_level=None, io_locked=None):
+    def get_marker_text_color_2d_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMarkerTextColor2DInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -596,13 +614,14 @@ class MarkerSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.marker_setting_att.GetMarkerTextColor2DInfo(io_admin_level, io_locked)
 
-    def get_marker_text_color3_d(self, o_red=None, o_green=None, o_blue=None):
+    def get_marker_text_color_3d(self, o_red: int, o_green: int, o_blue: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetMarkerTextColor3D(long oRed,
                 | long oGreen,
                 | long oBlue)
@@ -614,13 +633,14 @@ class MarkerSettingAtt(SettingController):
         :param int o_green:
         :param int o_blue:
         :return: None
+        :rtype: None
         """
         return self.marker_setting_att.GetMarkerTextColor3D(o_red, o_green, o_blue)
 
-    def get_marker_text_color3_d_info(self, io_admin_level=None, io_locked=None):
+    def get_marker_text_color_3d_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMarkerTextColor3DInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -648,13 +668,14 @@ class MarkerSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.marker_setting_att.GetMarkerTextColor3DInfo(io_admin_level, io_locked)
 
-    def get_marker_text_dashed2_d_info(self, io_admin_level=None, io_locked=None):
+    def get_marker_text_dashed_2d_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMarkerTextDashed2DInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -682,13 +703,14 @@ class MarkerSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.marker_setting_att.GetMarkerTextDashed2DInfo(io_admin_level, io_locked)
 
-    def get_marker_text_dashed3_d_info(self, io_admin_level=None, io_locked=None):
+    def get_marker_text_dashed_3d_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMarkerTextDashed3DInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -716,13 +738,14 @@ class MarkerSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.marker_setting_att.GetMarkerTextDashed3DInfo(io_admin_level, io_locked)
 
-    def get_marker_text_defaults_font2_d_info(self, io_admin_level=None, io_locked=None):
+    def get_marker_text_defaults_font_2d_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMarkerTextDefaultsFont2DInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -750,13 +773,14 @@ class MarkerSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.marker_setting_att.GetMarkerTextDefaultsFont2DInfo(io_admin_level, io_locked)
 
-    def get_marker_text_defaults_font3_d_info(self, io_admin_level=None, io_locked=None):
+    def get_marker_text_defaults_font_3d_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMarkerTextDefaultsFont3DInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -784,13 +808,14 @@ class MarkerSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.marker_setting_att.GetMarkerTextDefaultsFont3DInfo(io_admin_level, io_locked)
 
-    def get_marker_text_defaults_size2_d_info(self, io_admin_level=None, io_locked=None):
+    def get_marker_text_defaults_size_2d_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMarkerTextDefaultsSize2DInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -818,13 +843,14 @@ class MarkerSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.marker_setting_att.GetMarkerTextDefaultsSize2DInfo(io_admin_level, io_locked)
 
-    def get_marker_text_defaults_size3_d_info(self, io_admin_level=None, io_locked=None):
+    def get_marker_text_defaults_size_3d_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMarkerTextDefaultsSize3DInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -852,13 +878,14 @@ class MarkerSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.marker_setting_att.GetMarkerTextDefaultsSize3DInfo(io_admin_level, io_locked)
 
-    def get_marker_text_weight2_d_info(self, io_admin_level=None, io_locked=None):
+    def get_marker_text_weight_2d_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMarkerTextWeight2DInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -886,13 +913,14 @@ class MarkerSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.marker_setting_att.GetMarkerTextWeight2DInfo(io_admin_level, io_locked)
 
-    def get_marker_text_weight3_d_info(self, io_admin_level=None, io_locked=None):
+    def get_marker_text_weight_3d_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMarkerTextWeight3DInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -920,13 +948,14 @@ class MarkerSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.marker_setting_att.GetMarkerTextWeight3DInfo(io_admin_level, io_locked)
 
-    def set_marker2_d_auto_naming_lock(self, i_locked=None):
+    def set_marker_2d_auto_naming_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarker2DAutoNamingLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Marker2DAutoNaming parameter.
@@ -944,28 +973,29 @@ class MarkerSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.marker_setting_att.SetMarker2DAutoNamingLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_marker2_d_auto_naming_lock'
+        # # vba_function_name = 'set_marker_2d_auto_naming_lock'
         # # vba_code = """
-        # # Public Function set_marker2_d_auto_naming_lock(marker_setting_att)
+        # # Public Function set_marker_2d_auto_naming_lock(marker_setting_att)
         # #     Dim iLocked (2)
         # #     marker_setting_att.SetMarker2DAutoNamingLock iLocked
-        # #     set_marker2_d_auto_naming_lock = iLocked
+        # #     set_marker_2d_auto_naming_lock = iLocked
         # # End Function
         # # """
 
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_marker3_d_auto_naming_lock(self, i_locked=None):
+    def set_marker_3d_auto_naming_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarker3DAutoNamingLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Marker3DAutoNaming parameter.
@@ -983,28 +1013,29 @@ class MarkerSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.marker_setting_att.SetMarker3DAutoNamingLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_marker3_d_auto_naming_lock'
+        # # vba_function_name = 'set_marker_3d_auto_naming_lock'
         # # vba_code = """
-        # # Public Function set_marker3_d_auto_naming_lock(marker_setting_att)
+        # # Public Function set_marker_3d_auto_naming_lock(marker_setting_att)
         # #     Dim iLocked (2)
         # #     marker_setting_att.SetMarker3DAutoNamingLock iLocked
-        # #     set_marker3_d_auto_naming_lock = iLocked
+        # #     set_marker_3d_auto_naming_lock = iLocked
         # # End Function
         # # """
 
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_marker_defaults_color(self, i_red=None, i_green=None, i_blue=None):
+    def set_marker_defaults_color(self, i_red: int, i_green: int, i_blue: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarkerDefaultsColor(long iRed,
                 | long iGreen,
                 | long iBlue)
@@ -1016,13 +1047,14 @@ class MarkerSettingAtt(SettingController):
         :param int i_green:
         :param int i_blue:
         :return: None
+        :rtype: None
         """
         return self.marker_setting_att.SetMarkerDefaultsColor(i_red, i_green, i_blue)
 
-    def set_marker_defaults_color_lock(self, i_locked=None):
+    def set_marker_defaults_color_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarkerDefaultsColorLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MarkerDefaultsColor parameter.
@@ -1040,6 +1072,7 @@ class MarkerSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.marker_setting_att.SetMarkerDefaultsColorLock(i_locked)
         # # # # Autogenerated comment: 
@@ -1058,10 +1091,10 @@ class MarkerSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_marker_defaults_dashed_lock(self, i_locked=None):
+    def set_marker_defaults_dashed_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarkerDefaultsDashedLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MarkerDefaultsDashed parameter.
@@ -1079,6 +1112,7 @@ class MarkerSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.marker_setting_att.SetMarkerDefaultsDashedLock(i_locked)
         # # # # Autogenerated comment: 
@@ -1097,10 +1131,10 @@ class MarkerSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_marker_defaults_weight_lock(self, i_locked=None):
+    def set_marker_defaults_weight_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarkerDefaultsWeightLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MarkerDefaultsWeight parameter.
@@ -1118,6 +1152,7 @@ class MarkerSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.marker_setting_att.SetMarkerDefaultsWeightLock(i_locked)
         # # # # Autogenerated comment: 
@@ -1136,10 +1171,10 @@ class MarkerSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_marker_text_color2_d(self, i_red=None, i_green=None, i_blue=None):
+    def set_marker_text_color_2d(self, i_red: int, i_green: int, i_blue: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarkerTextColor2D(long iRed,
                 | long iGreen,
                 | long iBlue)
@@ -1151,13 +1186,14 @@ class MarkerSettingAtt(SettingController):
         :param int i_green:
         :param int i_blue:
         :return: None
+        :rtype: None
         """
         return self.marker_setting_att.SetMarkerTextColor2D(i_red, i_green, i_blue)
 
-    def set_marker_text_color2_d_lock(self, i_locked=None):
+    def set_marker_text_color_2d_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarkerTextColor2DLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MarkerTextColor2D parameter.
@@ -1175,28 +1211,29 @@ class MarkerSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.marker_setting_att.SetMarkerTextColor2DLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_marker_text_color2_d_lock'
+        # # vba_function_name = 'set_marker_text_color_2d_lock'
         # # vba_code = """
-        # # Public Function set_marker_text_color2_d_lock(marker_setting_att)
+        # # Public Function set_marker_text_color_2d_lock(marker_setting_att)
         # #     Dim iLocked (2)
         # #     marker_setting_att.SetMarkerTextColor2DLock iLocked
-        # #     set_marker_text_color2_d_lock = iLocked
+        # #     set_marker_text_color_2d_lock = iLocked
         # # End Function
         # # """
 
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_marker_text_color3_d(self, i_red=None, i_green=None, i_blue=None):
+    def set_marker_text_color_3d(self, i_red: int, i_green: int, i_blue: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarkerTextColor3D(long iRed,
                 | long iGreen,
                 | long iBlue)
@@ -1208,13 +1245,14 @@ class MarkerSettingAtt(SettingController):
         :param int i_green:
         :param int i_blue:
         :return: None
+        :rtype: None
         """
         return self.marker_setting_att.SetMarkerTextColor3D(i_red, i_green, i_blue)
 
-    def set_marker_text_color3_d_lock(self, i_locked=None):
+    def set_marker_text_color_3d_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarkerTextColor3DLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MarkerTextColor3D parameter.
@@ -1232,28 +1270,29 @@ class MarkerSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.marker_setting_att.SetMarkerTextColor3DLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_marker_text_color3_d_lock'
+        # # vba_function_name = 'set_marker_text_color_3d_lock'
         # # vba_code = """
-        # # Public Function set_marker_text_color3_d_lock(marker_setting_att)
+        # # Public Function set_marker_text_color_3d_lock(marker_setting_att)
         # #     Dim iLocked (2)
         # #     marker_setting_att.SetMarkerTextColor3DLock iLocked
-        # #     set_marker_text_color3_d_lock = iLocked
+        # #     set_marker_text_color_3d_lock = iLocked
         # # End Function
         # # """
 
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_marker_text_dashed2_d_lock(self, i_locked=None):
+    def set_marker_text_dashed_2d_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarkerTextDashed2DLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MarkerTextDashed parameter.
@@ -1271,28 +1310,29 @@ class MarkerSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.marker_setting_att.SetMarkerTextDashed2DLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_marker_text_dashed2_d_lock'
+        # # vba_function_name = 'set_marker_text_dashed_2d_lock'
         # # vba_code = """
-        # # Public Function set_marker_text_dashed2_d_lock(marker_setting_att)
+        # # Public Function set_marker_text_dashed_2d_lock(marker_setting_att)
         # #     Dim iLocked (2)
         # #     marker_setting_att.SetMarkerTextDashed2DLock iLocked
-        # #     set_marker_text_dashed2_d_lock = iLocked
+        # #     set_marker_text_dashed_2d_lock = iLocked
         # # End Function
         # # """
 
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_marker_text_dashed3_d_lock(self, i_locked=None):
+    def set_marker_text_dashed_3d_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarkerTextDashed3DLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MarkerTextDashed3D parameter.
@@ -1310,28 +1350,29 @@ class MarkerSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.marker_setting_att.SetMarkerTextDashed3DLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_marker_text_dashed3_d_lock'
+        # # vba_function_name = 'set_marker_text_dashed_3d_lock'
         # # vba_code = """
-        # # Public Function set_marker_text_dashed3_d_lock(marker_setting_att)
+        # # Public Function set_marker_text_dashed_3d_lock(marker_setting_att)
         # #     Dim iLocked (2)
         # #     marker_setting_att.SetMarkerTextDashed3DLock iLocked
-        # #     set_marker_text_dashed3_d_lock = iLocked
+        # #     set_marker_text_dashed_3d_lock = iLocked
         # # End Function
         # # """
 
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_marker_text_defaults_font2_d_lock(self, i_locked=None):
+    def set_marker_text_defaults_font_2d_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarkerTextDefaultsFont2DLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MarkerDefaultsFont2D parameter.
@@ -1349,28 +1390,29 @@ class MarkerSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.marker_setting_att.SetMarkerTextDefaultsFont2DLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_marker_text_defaults_font2_d_lock'
+        # # vba_function_name = 'set_marker_text_defaults_font_2d_lock'
         # # vba_code = """
-        # # Public Function set_marker_text_defaults_font2_d_lock(marker_setting_att)
+        # # Public Function set_marker_text_defaults_font_2d_lock(marker_setting_att)
         # #     Dim iLocked (2)
         # #     marker_setting_att.SetMarkerTextDefaultsFont2DLock iLocked
-        # #     set_marker_text_defaults_font2_d_lock = iLocked
+        # #     set_marker_text_defaults_font_2d_lock = iLocked
         # # End Function
         # # """
 
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_marker_text_defaults_font3_d_lock(self, i_locked=None):
+    def set_marker_text_defaults_font_3d_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarkerTextDefaultsFont3DLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MarkerDefaultsFont3D parameter.
@@ -1388,28 +1430,29 @@ class MarkerSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.marker_setting_att.SetMarkerTextDefaultsFont3DLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_marker_text_defaults_font3_d_lock'
+        # # vba_function_name = 'set_marker_text_defaults_font_3d_lock'
         # # vba_code = """
-        # # Public Function set_marker_text_defaults_font3_d_lock(marker_setting_att)
+        # # Public Function set_marker_text_defaults_font_3d_lock(marker_setting_att)
         # #     Dim iLocked (2)
         # #     marker_setting_att.SetMarkerTextDefaultsFont3DLock iLocked
-        # #     set_marker_text_defaults_font3_d_lock = iLocked
+        # #     set_marker_text_defaults_font_3d_lock = iLocked
         # # End Function
         # # """
 
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_marker_text_defaults_size2_d_lock(self, i_locked=None):
+    def set_marker_text_defaults_size_2d_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarkerTextDefaultsSize2DLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MarkerDefaultsSize2D parameter.
@@ -1427,28 +1470,29 @@ class MarkerSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.marker_setting_att.SetMarkerTextDefaultsSize2DLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_marker_text_defaults_size2_d_lock'
+        # # vba_function_name = 'set_marker_text_defaults_size_2d_lock'
         # # vba_code = """
-        # # Public Function set_marker_text_defaults_size2_d_lock(marker_setting_att)
+        # # Public Function set_marker_text_defaults_size_2d_lock(marker_setting_att)
         # #     Dim iLocked (2)
         # #     marker_setting_att.SetMarkerTextDefaultsSize2DLock iLocked
-        # #     set_marker_text_defaults_size2_d_lock = iLocked
+        # #     set_marker_text_defaults_size_2d_lock = iLocked
         # # End Function
         # # """
 
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_marker_text_defaults_size3_d_lock(self, i_locked=None):
+    def set_marker_text_defaults_size_3d_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarkerTextDefaultsSize3DLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MarkerDefaultsSize3D parameter.
@@ -1466,28 +1510,29 @@ class MarkerSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.marker_setting_att.SetMarkerTextDefaultsSize3DLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_marker_text_defaults_size3_d_lock'
+        # # vba_function_name = 'set_marker_text_defaults_size_3d_lock'
         # # vba_code = """
-        # # Public Function set_marker_text_defaults_size3_d_lock(marker_setting_att)
+        # # Public Function set_marker_text_defaults_size_3d_lock(marker_setting_att)
         # #     Dim iLocked (2)
         # #     marker_setting_att.SetMarkerTextDefaultsSize3DLock iLocked
-        # #     set_marker_text_defaults_size3_d_lock = iLocked
+        # #     set_marker_text_defaults_size_3d_lock = iLocked
         # # End Function
         # # """
 
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_marker_text_weight2_d_lock(self, i_locked=None):
+    def set_marker_text_weight_2d_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarkerTextWeight2DLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MarkerTextWeight2D parameter.
@@ -1505,28 +1550,29 @@ class MarkerSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.marker_setting_att.SetMarkerTextWeight2DLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_marker_text_weight2_d_lock'
+        # # vba_function_name = 'set_marker_text_weight_2d_lock'
         # # vba_code = """
-        # # Public Function set_marker_text_weight2_d_lock(marker_setting_att)
+        # # Public Function set_marker_text_weight_2d_lock(marker_setting_att)
         # #     Dim iLocked (2)
         # #     marker_setting_att.SetMarkerTextWeight2DLock iLocked
-        # #     set_marker_text_weight2_d_lock = iLocked
+        # #     set_marker_text_weight_2d_lock = iLocked
         # # End Function
         # # """
 
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_marker_text_weight3_d_lock(self, i_locked=None):
+    def set_marker_text_weight_3d_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarkerTextWeight3DLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MarkerTextWeight3D parameter.
@@ -1544,18 +1590,19 @@ class MarkerSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.marker_setting_att.SetMarkerTextWeight3DLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_marker_text_weight3_d_lock'
+        # # vba_function_name = 'set_marker_text_weight_3d_lock'
         # # vba_code = """
-        # # Public Function set_marker_text_weight3_d_lock(marker_setting_att)
+        # # Public Function set_marker_text_weight_3d_lock(marker_setting_att)
         # #     Dim iLocked (2)
         # #     marker_setting_att.SetMarkerTextWeight3DLock iLocked
-        # #     set_marker_text_weight3_d_lock = iLocked
+        # #     set_marker_text_weight_3d_lock = iLocked
         # # End Function
         # # """
 
@@ -1563,4 +1610,4 @@ class MarkerSettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'MarkerSettingAtt(name="{ self.name }")'
+        return f'MarkerSettingAtt(name="{self.name}")'

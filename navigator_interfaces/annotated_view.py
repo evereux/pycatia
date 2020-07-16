@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class AnnotatedView(AnyObject):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -34,10 +33,10 @@ class AnnotatedView(AnyObject):
         self.annotated_view = com_object
 
     @property
-    def behavior_mode(self):
+    def behavior_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BehaviorMode() As CatAnnotatedViewBehavior
                 | 
                 |     Returns or sets the behavior mode of the annotated view. This behavior mode
@@ -53,24 +52,25 @@ class AnnotatedView(AnyObject):
                 |             Dim Mode
                 |             Mode = NewAnnotatedView.BehaviorMode
 
-        :return: enum cat_annotated_view_behavior
+        :return: int
+        :rtype: int
         """
 
         return self.annotated_view.BehaviorMode
 
     @behavior_mode.setter
-    def behavior_mode(self, value):
+    def behavior_mode(self, value: int):
         """
-        :param enum cat_annotated_view_behavior value:
+        :param int value:
         """
 
         self.annotated_view.BehaviorMode = value
 
     @property
-    def comment(self):
+    def comment(self) -> str:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Comment() As CATBSTR
                 | 
                 |     Returns or sets the comment associated with the annotated
@@ -86,12 +86,13 @@ class AnnotatedView(AnyObject):
                 |             text = NewAnnotatedView.Comment
 
         :return: str
+        :rtype: str
         """
 
         return self.annotated_view.Comment
 
     @comment.setter
-    def comment(self, value):
+    def comment(self, value: str):
         """
         :param str value:
         """
@@ -99,10 +100,10 @@ class AnnotatedView(AnyObject):
         self.annotated_view.Comment = value
 
     @property
-    def field_of_view(self):
+    def field_of_view(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FieldOfView() As double (Read Only)
                 | 
                 |     Returns the field of view associated with the annotated view. The field of
@@ -120,15 +121,16 @@ class AnnotatedView(AnyObject):
                 |             Field = NewAnnotatedView.FieldOfView
 
         :return: float
+        :rtype: float
         """
 
         return self.annotated_view.FieldOfView
 
     @property
-    def marker2_ds(self):
+    def marker2_ds(self) -> Marker2Ds:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Marker2Ds() As Marker2Ds (Read Only)
                 | 
                 |     Returns the Marker2D Collection associated with the annotated
@@ -145,15 +147,16 @@ class AnnotatedView(AnyObject):
                 |             Set TheMarker2Ds = NewAnnotatedView.Marker2Ds(9)
 
         :return: Marker2Ds
+        :rtype: Marker2Ds
         """
 
         return Marker2Ds(self.annotated_view.Marker2Ds)
 
     @property
-    def projection_mode(self):
+    def projection_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ProjectionMode() As CatProjectionMode (Read Only)
                 | 
                 |     Returns the projection mode of the annotated view. This projection mode is
@@ -168,16 +171,17 @@ class AnnotatedView(AnyObject):
                 |             Dim Mode
                 |             Mode = NewAnnotatedView.ProjectionMode
 
-        :return: enum cat_projection_mode
+        :return: int
+        :rtype: int
         """
 
         return self.annotated_view.ProjectionMode
 
     @property
-    def sound(self):
+    def sound(self) -> str:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Sound() As CATBSTR
                 | 
                 |     Returns or sets the path of the sound file associated with the annotated
@@ -204,12 +208,13 @@ class AnnotatedView(AnyObject):
                 |             path = NewAnnotatedView.Sound
 
         :return: str
+        :rtype: str
         """
 
         return self.annotated_view.Sound
 
     @sound.setter
-    def sound(self, value):
+    def sound(self, value: str):
         """
         :param str value:
         """
@@ -217,10 +222,10 @@ class AnnotatedView(AnyObject):
         self.annotated_view.Sound = value
 
     @property
-    def zoom(self):
+    def zoom(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Zoom() As double (Read Only)
                 | 
                 |     Returns the zoom factor associated with the annotated view. This property
@@ -237,14 +242,15 @@ class AnnotatedView(AnyObject):
                 |             ZoomFactor = NewAnnotatedView.Zoom
 
         :return: float
+        :rtype: float
         """
 
         return self.annotated_view.Zoom
 
-    def get_origin(self, o_origin=None):
+    def get_origin(self, o_origin: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetOrigin(CATSafeArrayVariant oOrigin)
                 | 
                 |     Retrieves the coordinates of the origin of the 3D viewpoint of the
@@ -271,6 +277,7 @@ class AnnotatedView(AnyObject):
 
         :param tuple o_origin:
         :return: None
+        :rtype: None
         """
         return self.annotated_view.GetOrigin(o_origin)
         # # # # Autogenerated comment: 
@@ -289,10 +296,10 @@ class AnnotatedView(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_sight_direction(self, o_sight=None):
+    def get_sight_direction(self, o_sight: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetSightDirection(CATSafeArrayVariant oSight)
                 | 
                 |     Retrieves the components of the sight direction of the 3D viewpoint of the
@@ -323,6 +330,7 @@ class AnnotatedView(AnyObject):
 
         :param tuple o_sight:
         :return: None
+        :rtype: None
         """
         return self.annotated_view.GetSightDirection(o_sight)
         # # # # Autogenerated comment: 
@@ -341,10 +349,10 @@ class AnnotatedView(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_up_direction(self, o_up=None):
+    def get_up_direction(self, o_up: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetUpDirection(CATSafeArrayVariant oUp)
                 | 
                 |     Retrieves the components of the up direction of the 3D viewpoint of the
@@ -371,6 +379,7 @@ class AnnotatedView(AnyObject):
 
         :param tuple o_up:
         :return: None
+        :rtype: None
         """
         return self.annotated_view.GetUpDirection(o_up)
         # # # # Autogenerated comment: 
@@ -389,10 +398,10 @@ class AnnotatedView(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def update(self):
+    def update(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Update()
                 | 
                 |     Updates the annotated view: that is to take into account all modifications
@@ -407,8 +416,9 @@ class AnnotatedView(AnyObject):
                 |             NewAnnotatedView.Update
 
         :return: None
+        :rtype: None
         """
         return self.annotated_view.Update()
 
     def __repr__(self):
-        return f'AnnotatedView(name="{ self.name }")'
+        return f'AnnotatedView(name="{self.name}")'
