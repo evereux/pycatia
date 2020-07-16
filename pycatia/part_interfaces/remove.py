@@ -13,7 +13,6 @@ from pycatia.part_interfaces.boolean_shape import BooleanShape
 
 
 class Remove(BooleanShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -29,9 +28,7 @@ class Remove(BooleanShape):
                 | 
                 | Represents the remove, or substract boolean operation.
                 | It is performed between a body and the current shape.
-                | 
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
-    
+
     """
 
     def __init__(self, com_object):
@@ -39,4 +36,4 @@ class Remove(BooleanShape):
         self.remove = com_object
 
     def __repr__(self):
-        return f'Remove(name="{ self.name }")'
+        return f'Remove(name="{self.name}")'

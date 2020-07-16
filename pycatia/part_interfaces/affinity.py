@@ -54,10 +54,10 @@ class Affinity(Shape):
         self.affinity = com_object
 
     @property
-    def hybrid_shape(self):
+    def hybrid_shape(self) -> HybridShape:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HybridShape() As HybridShape (Read Only)
                 | 
                 |     Gets the underlying HybridShapeAffinity.
@@ -71,6 +71,7 @@ class Affinity(Shape):
                 |           oHybridShape.ElemToAffinity = reference1
 
         :return: HybridShape
+        :rtype: HybridShape
         """
 
         return HybridShape(self.affinity.HybridShape)

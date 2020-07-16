@@ -13,7 +13,6 @@ from pycatia.part_interfaces.boolean_shape import BooleanShape
 
 
 class Assemble(BooleanShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -31,9 +30,7 @@ class Assemble(BooleanShape):
                 | It is performed between a body and the current shape. An assemble operation
                 | adds material if the body is "positive" and remove material if the body is
                 | "negative".
-                | 
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
-    
+
     """
 
     def __init__(self, com_object):
@@ -41,4 +38,4 @@ class Assemble(BooleanShape):
         self.assemble = com_object
 
     def __repr__(self):
-        return f'Assemble(name="{ self.name }")'
+        return f'Assemble(name="{self.name}")'

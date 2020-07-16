@@ -13,7 +13,6 @@ from pycatia.mec_mod_interfaces.shape import Shape
 
 
 class DressUpShape(Shape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -33,9 +32,7 @@ class DressUpShape(Shape):
                 | 
                 | See also:
                 |     Chamfer, Draft, Fillet, Scaling, Shell, Thickness 
-                | 
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
-    
+
     """
 
     def __init__(self, com_object):
@@ -43,4 +40,4 @@ class DressUpShape(Shape):
         self.dress_up_shape = com_object
 
     def __repr__(self):
-        return f'DressUpShape(name="{ self.name }")'
+        return f'DressUpShape(name="{self.name}")'

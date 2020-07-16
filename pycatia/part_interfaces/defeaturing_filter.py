@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class DefeaturingFilter(AnyObject):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -26,9 +25,7 @@ class DefeaturingFilter(AnyObject):
                 |                     DefeaturingFilter
                 | 
                 | Represents the base object for defeaturing filters.
-                | 
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
-    
+
     """
 
     def __init__(self, com_object):
@@ -36,4 +33,4 @@ class DefeaturingFilter(AnyObject):
         self.defeaturing_filter = com_object
 
     def __repr__(self):
-        return f'DefeaturingFilter(name="{ self.name }")'
+        return f'DefeaturingFilter(name="{self.name}")'

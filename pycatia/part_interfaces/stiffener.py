@@ -40,10 +40,10 @@ class Stiffener(SketchBasedShape):
         self.stiffener = com_object
 
     @property
-    def is_from_top(self):
+    def is_from_top(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property IsFromTop() As boolean
                 | 
                 |     Returns or sets whether the stiffener is From Side or From
@@ -61,12 +61,13 @@ class Stiffener(SketchBasedShape):
                 |          firstStiffener.IsFromTop  = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.stiffener.IsFromTop
 
     @is_from_top.setter
-    def is_from_top(self, value):
+    def is_from_top(self, value: bool):
         """
         :param bool value:
         """
@@ -74,10 +75,10 @@ class Stiffener(SketchBasedShape):
         self.stiffener.IsFromTop = value
 
     @property
-    def is_symmetric(self):
+    def is_symmetric(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property IsSymmetric() As boolean
                 | 
                 |     Returns or sets whether the stiffener is symmetric.
@@ -93,12 +94,13 @@ class Stiffener(SketchBasedShape):
                 |          firstStiffener.IsSymmetric  = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.stiffener.IsSymmetric
 
     @is_symmetric.setter
-    def is_symmetric(self, value):
+    def is_symmetric(self, value: bool):
         """
         :param bool value:
         """
@@ -106,10 +108,10 @@ class Stiffener(SketchBasedShape):
         self.stiffener.IsSymmetric = value
 
     @property
-    def thickness(self):
+    def thickness(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Thickness() As Length (Read Only)
                 | 
                 |     Returns the stiffener thickness. This is half of the thickness if the
@@ -122,15 +124,16 @@ class Stiffener(SketchBasedShape):
                 |          Set thickness = firstStiffener.Thickness
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.stiffener.Thickness)
 
     @property
-    def thickness_from_top(self):
+    def thickness_from_top(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ThicknessFromTop() As Length (Read Only)
                 | 
                 |     Returns the stiffener thickness top in case of From Top stiffener. This is
@@ -143,14 +146,15 @@ class Stiffener(SketchBasedShape):
                 |          Set thicknessfromtop = firstStiffener.ThicknessFromTop
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.stiffener.ThicknessFromTop)
 
-    def reverse_depth(self):
+    def reverse_depth(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ReverseDepth()
                 | 
                 |     Reverses the stiffener direction. This is useful for finding the shape to
@@ -163,13 +167,14 @@ class Stiffener(SketchBasedShape):
                 |          firstStiffener.ReverseDepth
 
         :return: None
+        :rtype: None
         """
         return self.stiffener.ReverseDepth()
 
-    def reverse_thickness(self):
+    def reverse_thickness(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ReverseThickness()
                 | 
                 |     Reverses the stiffener thickness direction. The stiffener thickness is
@@ -182,6 +187,7 @@ class Stiffener(SketchBasedShape):
                 |          firstStiffener.ReverseThickness
 
         :return: None
+        :rtype: None
         """
         return self.stiffener.ReverseThickness()
 

@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.int_param import IntParam
 from pycatia.part_interfaces.angular_repartition import AngularRepartition
 from pycatia.part_interfaces.linear_repartition import LinearRepartition
@@ -16,7 +16,6 @@ from pycatia.part_interfaces.pattern import Pattern
 
 
 class CircPattern(Pattern):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -47,10 +46,10 @@ class CircPattern(Pattern):
         self.circ_pattern = com_object
 
     @property
-    def angular_direction_row(self):
+    def angular_direction_row(self) -> IntParam:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AngularDirectionRow() As IntParam (Read Only)
                 | 
                 |     Returns the position of the shape to be copied along the angular
@@ -63,15 +62,16 @@ class CircPattern(Pattern):
                 |          Set AngularDirPos = firstPattern.AngularDirectionRow
 
         :return: IntParam
+        :rtype: IntParam
         """
 
         return IntParam(self.circ_pattern.AngularDirectionRow)
 
     @property
-    def angular_repartition(self):
+    def angular_repartition(self) -> AngularRepartition:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AngularRepartition() As AngularRepartition (Read
                 | Only)
                 | 
@@ -85,15 +85,16 @@ class CircPattern(Pattern):
                 |          Set repartA = firstPattern.AngularRepartition
 
         :return: AngularRepartition
+        :rtype: AngularRepartition
         """
 
         return AngularRepartition(self.circ_pattern.AngularRepartition)
 
     @property
-    def circular_pattern_parameters(self):
+    def circular_pattern_parameters(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CircularPatternParameters() As
                 | CatCircularPatternParameters
                 | 
@@ -110,24 +111,25 @@ class CircPattern(Pattern):
                 |          Set parameters = firstPattern.CircularPatternParameters
                 |          Set firstPattern.CircularPatternParameters = catCompleteCrown
 
-        :return: enum cat_circular_pattern_parameters
+        :return: int
+        :rtype: int
         """
 
         return self.circ_pattern.CircularPatternParameters
 
     @circular_pattern_parameters.setter
-    def circular_pattern_parameters(self, value):
+    def circular_pattern_parameters(self, value: int):
         """
-        :param enum cat_circular_pattern_parameters value:
+        :param int value:
         """
 
         self.circ_pattern.CircularPatternParameters = value
 
     @property
-    def radial_alignment(self):
+    def radial_alignment(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RadialAlignment() As boolean
                 | 
                 |     Returns or sets whether the copied shapes should be rotated or radial
@@ -143,12 +145,13 @@ class CircPattern(Pattern):
                 |          firstPattern.RadialAlignment = False
 
         :return: bool
+        :rtype: bool
         """
 
         return self.circ_pattern.RadialAlignment
 
     @radial_alignment.setter
-    def radial_alignment(self, value):
+    def radial_alignment(self, value: bool):
         """
         :param bool value:
         """
@@ -156,10 +159,10 @@ class CircPattern(Pattern):
         self.circ_pattern.RadialAlignment = value
 
     @property
-    def radial_direction_row(self):
+    def radial_direction_row(self) -> IntParam:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RadialDirectionRow() As IntParam (Read Only)
                 | 
                 |     Returns the position of the shape to be copied along the radial
@@ -172,15 +175,16 @@ class CircPattern(Pattern):
                 |          Set RadialDirPos = firstPattern.RadialDirectionRow
 
         :return: IntParam
+        :rtype: IntParam
         """
 
         return IntParam(self.circ_pattern.RadialDirectionRow)
 
     @property
-    def radial_repartition(self):
+    def radial_repartition(self) -> LinearRepartition:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RadialRepartition() As LinearRepartition (Read
                 | Only)
                 | 
@@ -194,15 +198,16 @@ class CircPattern(Pattern):
                 |          Set repartR = firstPattern.RadialRepartition
 
         :return: LinearRepartition
+        :rtype: LinearRepartition
         """
 
         return LinearRepartition(self.circ_pattern.RadialRepartition)
 
     @property
-    def rotation_orientation(self):
+    def rotation_orientation(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RotationOrientation() As boolean
                 | 
                 |     Returns or sets whether the shapes are copied clockwise on the crowns with
@@ -219,22 +224,23 @@ class CircPattern(Pattern):
                 |          firstPattern.RotationOrientation = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.circ_pattern.RotationOrientation
 
     @rotation_orientation.setter
-    def rotation_orientation(self, value):
+    def rotation_orientation(self, value: bool):
         """
         :param bool value:
         """
 
         self.circ_pattern.RotationOrientation = value
 
-    def get_rotation_axis(self, io_rotation_axis):
+    def get_rotation_axis(self, io_rotation_axis: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetRotationAxis(CATSafeArrayVariant ioRotationAxis)
                 | 
                 |     Returns the rotation axis. The rotation axis is returned as an array
@@ -255,6 +261,7 @@ class CircPattern(Pattern):
 
         :param tuple io_rotation_axis:
         :return: None
+        :rtype: None
         """
         return self.circ_pattern.GetRotationAxis(io_rotation_axis)
         # # # # Autogenerated comment: 
@@ -273,10 +280,10 @@ class CircPattern(Pattern):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_rotation_center(self, io_rotation_center):
+    def get_rotation_center(self, io_rotation_center: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetRotationCenter(CATSafeArrayVariant
                 | ioRotationCenter)
                 | 
@@ -300,6 +307,7 @@ class CircPattern(Pattern):
 
         :param tuple io_rotation_center:
         :return: None
+        :rtype: None
         """
         return self.circ_pattern.GetRotationCenter(io_rotation_center)
         # # # # Autogenerated comment: 
@@ -318,10 +326,10 @@ class CircPattern(Pattern):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_instance_angular_spacing(self, i_instance_number, i_angular_spacing):
+    def set_instance_angular_spacing(self, i_instance_number: int, i_angular_spacing: float) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetInstanceAngularSpacing(long iInstanceNumber,
                 | double iAngularSpacing)
                 | 
@@ -341,13 +349,14 @@ class CircPattern(Pattern):
         :param int i_instance_number:
         :param float i_angular_spacing:
         :return: None
+        :rtype: None
         """
         return self.circ_pattern.SetInstanceAngularSpacing(i_instance_number, i_angular_spacing)
 
-    def set_rotation_axis(self, i_rotation_axis):
+    def set_rotation_axis(self, i_rotation_axis: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetRotationAxis(Reference iRotationAxis)
                 | 
                 |     Sets the rotation axis.
@@ -372,6 +381,7 @@ class CircPattern(Pattern):
 
         :param Reference i_rotation_axis:
         :return: None
+        :rtype: None
         """
         return self.circ_pattern.SetRotationAxis(i_rotation_axis.com_object)
         # # # # Autogenerated comment: 
@@ -390,10 +400,10 @@ class CircPattern(Pattern):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_rotation_center(self, i_rotation_center):
+    def set_rotation_center(self, i_rotation_center: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetRotationCenter(Reference iRotationCenter)
                 | 
                 |     Sets the rotation center.
@@ -411,6 +421,7 @@ class CircPattern(Pattern):
 
         :param Reference i_rotation_center:
         :return: None
+        :rtype: None
         """
         return self.circ_pattern.SetRotationCenter(i_rotation_center.com_object)
         # # # # Autogenerated comment: 
@@ -429,10 +440,10 @@ class CircPattern(Pattern):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_unequal_instance_number(self, i_instance_number):
+    def set_unequal_instance_number(self, i_instance_number: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetUnequalInstanceNumber(long iInstanceNumber)
                 | 
                 |     Sets the Instance Number.
@@ -448,13 +459,14 @@ class CircPattern(Pattern):
 
         :param int i_instance_number:
         :return: None
+        :rtype: None
         """
         return self.circ_pattern.SetUnequalInstanceNumber(i_instance_number)
 
-    def set_unequal_step(self, i_instance_number):
+    def set_unequal_step(self, i_instance_number: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetUnequalStep(long iInstanceNumber)
                 | 
                 |     This method is deprecated Sets the UnequalStep.
@@ -470,8 +482,9 @@ class CircPattern(Pattern):
 
         :param int i_instance_number:
         :return: None
+        :rtype: None
         """
         return self.circ_pattern.SetUnequalStep(i_instance_number)
 
     def __repr__(self):
-        return f'CircPattern(name="{ self.name }")'
+        return f'CircPattern(name="{self.name}")'

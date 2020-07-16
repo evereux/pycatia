@@ -39,47 +39,49 @@ class Limit(AnyObject):
         self.limit = com_object
 
     @property
-    def dimension(self):
+    def dimension(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Dimension() As Length (Read Only)
                 | 
                 |     Returns or sets the limit dimension. This property is valid for the offset
                 |     limit mode only, that is when CatLimitMode is set to catOffsetLimit .
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.limit.Dimension)
 
     @property
-    def limit_mode(self):
+    def limit_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LimitMode() As CatLimitMode
                 | 
                 |     Returns or sets the limit mode.
 
-        :return: enum cat_limit_mode
+        :return: int
+        :rtype: int
         """
 
         return self.limit.LimitMode
 
     @limit_mode.setter
-    def limit_mode(self, value):
+    def limit_mode(self, value: int):
         """
-        :param enum cat_limit_mode value:
+        :param int value:
         """
 
         self.limit.LimitMode = value
 
     @property
-    def limiting_element(self):
+    def limiting_element(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LimitingElement() As Reference
                 | 
                 |     Returns or sets the limiting element. This property is valid when the
@@ -88,12 +90,13 @@ class Limit(AnyObject):
                 |     To set the property, you can use the following Boundary object: Face.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.limit.LimitingElement)
 
     @limiting_element.setter
-    def limiting_element(self, value):
+    def limiting_element(self, value: Reference):
         """
         :param Reference value:
         """
