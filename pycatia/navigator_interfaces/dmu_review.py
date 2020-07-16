@@ -33,10 +33,10 @@ class DMUReview(AnyObject):
         self.dmu_review = com_object
 
     @property
-    def activation(self):
+    def activation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Activation() As long
                 | 
                 |     Returns or sets the activation.
@@ -57,12 +57,13 @@ class DMUReview(AnyObject):
                 |             oDMUReview.Activation = 1
 
         :return: int
+        :rtype: int
         """
 
         return self.dmu_review.Activation
 
     @activation.setter
-    def activation(self, value):
+    def activation(self, value: int):
         """
         :param int value:
         """
@@ -70,10 +71,10 @@ class DMUReview(AnyObject):
         self.dmu_review.Activation = value
 
     @property
-    def dmu_reviews(self):
+    def dmu_reviews(self) -> 'DMUReviews':
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DMUReviews() As DMUReviews (Read Only)
                 | 
                 |     Returns the DMUReviews Collection associated with the DMUReview
@@ -88,6 +89,7 @@ class DMUReview(AnyObject):
                 |             Set cDMUReviews = oDMUReview.DMUReviews(9)
 
         :return: DMUReviews
+        :rtype: DMUReviews
         """
         from pycatia.navigator_interfaces.dmu_reviews import DMUReviews
         return DMUReviews(self.dmu_review.DMUReviews)

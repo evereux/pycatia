@@ -10,10 +10,10 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.types import cat_variant
 
 
 class Marker3D(AnyObject):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -31,13 +31,13 @@ class Marker3D(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.marker3_d = com_object
+        self.marker_3d = com_object
 
     @property
-    def fill(self):
+    def fill(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Fill() As long
                 | 
                 |     Returns or sets the marker 3D's filling status (1 the figure is filled, 0
@@ -53,23 +53,24 @@ class Marker3D(AnyObject):
                 |             status = NewMarker3D.Fill
 
         :return: int
+        :rtype: int
         """
 
-        return self.marker3_d.Fill
+        return self.marker_3d.Fill
 
     @fill.setter
-    def fill(self, value):
+    def fill(self, value: int):
         """
         :param int value:
         """
 
-        self.marker3_d.Fill = value
+        self.marker_3d.Fill = value
 
     @property
-    def frame(self):
+    def frame(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Frame() As long
                 | 
                 |     Returns or sets the marker 3D's framing status (1 the figure is framed, 0
@@ -85,23 +86,24 @@ class Marker3D(AnyObject):
                 |             status = NewMarker3D.Frame
 
         :return: int
+        :rtype: int
         """
 
-        return self.marker3_d.Frame
+        return self.marker_3d.Frame
 
     @frame.setter
-    def frame(self, value):
+    def frame(self, value: int):
         """
         :param int value:
         """
 
-        self.marker3_d.Frame = value
+        self.marker_3d.Frame = value
 
     @property
-    def text(self):
+    def text(self) -> str:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Text() As CATBSTR
                 | 
                 |     Returns or sets the text for a text marker 3D.
@@ -116,23 +118,24 @@ class Marker3D(AnyObject):
                 |             text = NewMarker3D.Text
 
         :return: str
+        :rtype: str
         """
 
-        return self.marker3_d.Text
+        return self.marker_3d.Text
 
     @text.setter
-    def text(self, value):
+    def text(self, value: str):
         """
         :param str value:
         """
 
-        self.marker3_d.Text = value
+        self.marker_3d.Text = value
 
     @property
-    def text_font(self):
+    def text_font(self) -> str:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TextFont() As CATBSTR
                 | 
                 |     Returns or sets the text's font for a marker 3D.
@@ -147,23 +150,24 @@ class Marker3D(AnyObject):
                 |             font = NewMarker3D.TextFont
 
         :return: str
+        :rtype: str
         """
 
-        return self.marker3_d.TextFont
+        return self.marker_3d.TextFont
 
     @text_font.setter
-    def text_font(self, value):
+    def text_font(self, value: str):
         """
         :param str value:
         """
 
-        self.marker3_d.TextFont = value
+        self.marker_3d.TextFont = value
 
     @property
-    def text_orientation(self):
+    def text_orientation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TextOrientation() As CatMarkerTextOrientation
                 | 
                 |     Returns or sets the orientation of text.
@@ -177,24 +181,25 @@ class Marker3D(AnyObject):
                 |             Dim orientation As CatMarkerTextOrientation
                 |             orientation = NewMarker3D.TextOrientation
 
-        :return: enum cat_marker_text_orientation
+        :return: int
+        :rtype: int
         """
 
-        return self.marker3_d.TextOrientation
+        return self.marker_3d.TextOrientation
 
     @text_orientation.setter
-    def text_orientation(self, value):
+    def text_orientation(self, value: int):
         """
-        :param enum cat_marker_text_orientation value:
+        :param int value:
         """
 
-        self.marker3_d.TextOrientation = value
+        self.marker_3d.TextOrientation = value
 
     @property
-    def text_size(self):
+    def text_size(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TextSize() As double
                 | 
                 |     Returns or sets the text's size for a marker 3D.
@@ -209,23 +214,24 @@ class Marker3D(AnyObject):
                 |             size = NewMarker3D.TextSize
 
         :return: float
+        :rtype: float
         """
 
-        return self.marker3_d.TextSize
+        return self.marker_3d.TextSize
 
     @text_size.setter
-    def text_size(self, value):
+    def text_size(self, value: float):
         """
         :param float value:
         """
 
-        self.marker3_d.TextSize = value
+        self.marker_3d.TextSize = value
 
     @property
-    def type(self):
+    def type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Type() As CatMarker3DType (Read Only)
                 | 
                 |     Returns the type of the marker 3D.
@@ -239,15 +245,16 @@ class Marker3D(AnyObject):
                 |             Dim type As CatMarker3DType
                 |             type = NewMarker3D.Type
 
-        :return: enum cat_marker3_d_type
+        :return: int
+        :rtype: int
         """
 
-        return self.marker3_d.Type
+        return self.marker_3d.Type
 
-    def add_object(self, i_object=None):
+    def add_object(self, i_object: AnyObject) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddObject(AnyObject iObject)
                 | 
                 |     Adds a link to an object.
@@ -267,13 +274,14 @@ class Marker3D(AnyObject):
 
         :param AnyObject i_object:
         :return: None
+        :rtype: None
         """
-        return self.marker3_d.AddObject(i_object.com_object)
+        return self.marker_3d.AddObject(i_object.com_object)
 
-    def count_object(self):
+    def count_object(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func CountObject() As long
                 | 
                 |     Returns the number of objects which are linked to the marker
@@ -289,13 +297,14 @@ class Marker3D(AnyObject):
                 |             number = NewMarker3D.CountObject
 
         :return: int
+        :rtype: int
         """
-        return self.marker3_d.CountObject()
+        return self.marker_3d.CountObject()
 
-    def get_object_positions(self, i_index=None, o_coordinates=None):
+    def get_object_positions(self, i_index: cat_variant, o_coordinates: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetObjectPositions(CATVariant iIndex,
                 | CATSafeArrayVariant oCoordinates)
                 | 
@@ -327,31 +336,17 @@ class Marker3D(AnyObject):
                 |             Dim Coordinates (3)
                 |             NewMarker3D.GetObjectPositions Coordinates
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :param tuple o_coordinates:
         :return: None
+        :rtype: None
         """
-        return self.marker3_d.GetObjectPositions(i_index.com_object, o_coordinates)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'get_object_positions'
-        # # vba_code = """
-        # # Public Function get_object_positions(marker3_d)
-        # #     Dim iIndex (2)
-        # #     marker3_d.GetObjectPositions iIndex
-        # #     get_object_positions = iIndex
-        # # End Function
-        # # """
+        return self.marker_3d.GetObjectPositions(i_index, o_coordinates)
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def get_text_positions(self, o_coordinates=None):
+    def get_text_positions(self, o_coordinates: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetTextPositions(CATSafeArrayVariant oCoordinates)
                 | 
                 |     Retrieves the coordinates of the positions of a text marker 3D. The
@@ -379,17 +374,18 @@ class Marker3D(AnyObject):
 
         :param tuple o_coordinates:
         :return: None
+        :rtype: None
         """
-        return self.marker3_d.GetTextPositions(o_coordinates)
+        return self.marker_3d.GetTextPositions(o_coordinates)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
         # # vba_function_name = 'get_text_positions'
         # # vba_code = """
-        # # Public Function get_text_positions(marker3_d)
+        # # Public Function get_text_positions(marker_3d)
         # #     Dim oCoordinates (2)
-        # #     marker3_d.GetTextPositions oCoordinates
+        # #     marker_3d.GetTextPositions oCoordinates
         # #     get_text_positions = oCoordinates
         # # End Function
         # # """
@@ -397,10 +393,10 @@ class Marker3D(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def item_object(self, i_index=None):
+    def item_object(self, i_index: cat_variant) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func ItemObject(CATVariant iIndex) As CATBaseDispatch
                 | 
                 |     Returns an object which is linked to the marker 3D using its
@@ -425,15 +421,16 @@ class Marker3D(AnyObject):
                 |             Dim ThisObject As Marker3D
                 |             Set ThisObject = NewMarker3D.ItemObject(9)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: AnyObject
+        :rtype: AnyObject
         """
-        return self.marker3_d.ItemObject(i_index.com_object)
+        return self.marker_3d.ItemObject(i_index)
 
-    def remove_object(self, i_index=None):
+    def remove_object(self, i_index: cat_variant) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveObject(CATVariant iIndex)
                 | 
                 |     Removes an object which is linked to the marker 3D using its
@@ -454,30 +451,16 @@ class Marker3D(AnyObject):
                 | 
                 |             NewMarker3D.RemoveObject(9)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: None
+        :rtype: None
         """
-        return self.marker3_d.RemoveObject(i_index.com_object)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'remove_object'
-        # # vba_code = """
-        # # Public Function remove_object(marker3_d)
-        # #     Dim iIndex (2)
-        # #     marker3_d.RemoveObject iIndex
-        # #     remove_object = iIndex
-        # # End Function
-        # # """
+        return self.marker_3d.RemoveObject(i_index)
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def set_object_positions(self, i_index=None, i_coordinates=None):
+    def set_object_positions(self, i_index: cat_variant, i_coordinates: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetObjectPositions(CATVariant iIndex,
                 | CATSafeArrayVariant iCoordinates)
                 | 
@@ -509,31 +492,17 @@ class Marker3D(AnyObject):
                 |             Dim Coordinates (3)
                 |             NewMarker3D.SetObjectPositions Coordinates
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :param tuple i_coordinates:
         :return: None
+        :rtype: None
         """
-        return self.marker3_d.SetObjectPositions(i_index.com_object, i_coordinates)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_object_positions'
-        # # vba_code = """
-        # # Public Function set_object_positions(marker3_d)
-        # #     Dim iIndex (2)
-        # #     marker3_d.SetObjectPositions iIndex
-        # #     set_object_positions = iIndex
-        # # End Function
-        # # """
+        return self.marker_3d.SetObjectPositions(i_index, i_coordinates)
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def set_text_positions(self, i_coordinates=None):
+    def set_text_positions(self, i_coordinates: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetTextPositions(CATSafeArrayVariant iCoordinates)
                 | 
                 |     Sets the coordinates of the positions of a text marker 3D.
@@ -561,17 +530,18 @@ class Marker3D(AnyObject):
 
         :param tuple i_coordinates:
         :return: None
+        :rtype: None
         """
-        return self.marker3_d.SetTextPositions(i_coordinates)
+        return self.marker_3d.SetTextPositions(i_coordinates)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
         # # vba_function_name = 'set_text_positions'
         # # vba_code = """
-        # # Public Function set_text_positions(marker3_d)
+        # # Public Function set_text_positions(marker_3d)
         # #     Dim iCoordinates (2)
-        # #     marker3_d.SetTextPositions iCoordinates
+        # #     marker_3d.SetTextPositions iCoordinates
         # #     set_text_positions = iCoordinates
         # # End Function
         # # """
@@ -579,10 +549,10 @@ class Marker3D(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def update(self):
+    def update(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Update()
                 | 
                 |     Updates the the marker 3D: that is to take into account all modifications
@@ -596,8 +566,9 @@ class Marker3D(AnyObject):
                 |             NewMarker3D.Update
 
         :return: None
+        :rtype: None
         """
-        return self.marker3_d.Update()
+        return self.marker_3d.Update()
 
     def __repr__(self):
-        return f'Marker3D(name="{ self.name }")'
+        return f'Marker3D(name="{self.name}")'

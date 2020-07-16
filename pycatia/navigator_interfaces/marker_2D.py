@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class Marker2D(AnyObject):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -31,13 +30,13 @@ class Marker2D(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.marker2_d = com_object
+        self.marker_2d = com_object
 
     @property
-    def fill(self):
+    def fill(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Fill() As long
                 | 
                 |     Returns or sets the Marker2D's filling status (1 the figure is filled, 0
@@ -53,23 +52,24 @@ class Marker2D(AnyObject):
                 |             status = NewMarker2D.Fill
 
         :return: int
+        :rtype: int
         """
 
-        return self.marker2_d.Fill
+        return self.marker_2d.Fill
 
     @fill.setter
-    def fill(self, value):
+    def fill(self, value: int):
         """
         :param int value:
         """
 
-        self.marker2_d.Fill = value
+        self.marker_2d.Fill = value
 
     @property
-    def frame(self):
+    def frame(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Frame() As long
                 | 
                 |     Returns or sets the Marker2D's framing status (1 the figure is framed, 0
@@ -85,23 +85,24 @@ class Marker2D(AnyObject):
                 |             status = NewMarker2D.Frame
 
         :return: int
+        :rtype: int
         """
 
-        return self.marker2_d.Frame
+        return self.marker_2d.Frame
 
     @frame.setter
-    def frame(self, value):
+    def frame(self, value: int):
         """
         :param int value:
         """
 
-        self.marker2_d.Frame = value
+        self.marker_2d.Frame = value
 
     @property
-    def picture(self):
+    def picture(self) -> str:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Picture() As CATBSTR
                 | 
                 |     Returns or sets the path to a picture file for a picture
@@ -117,23 +118,24 @@ class Marker2D(AnyObject):
                 |             path = NewMarker2D.Picture
 
         :return: str
+        :rtype: str
         """
 
-        return self.marker2_d.Picture
+        return self.marker_2d.Picture
 
     @picture.setter
-    def picture(self, value):
+    def picture(self, value: str):
         """
         :param str value:
         """
 
-        self.marker2_d.Picture = value
+        self.marker_2d.Picture = value
 
     @property
-    def text(self):
+    def text(self) -> str:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Text() As CATBSTR
                 | 
                 |     Returns or sets the text for a text Marker2D.
@@ -148,23 +150,24 @@ class Marker2D(AnyObject):
                 |             text = NewMarker2D.Text
 
         :return: str
+        :rtype: str
         """
 
-        return self.marker2_d.Text
+        return self.marker_2d.Text
 
     @text.setter
-    def text(self, value):
+    def text(self, value: str):
         """
         :param str value:
         """
 
-        self.marker2_d.Text = value
+        self.marker_2d.Text = value
 
     @property
-    def text_angle(self):
+    def text_angle(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TextAngle() As double
                 | 
                 |     Returns or sets the text's angle for a text Marker2D.
@@ -179,23 +182,24 @@ class Marker2D(AnyObject):
                 |             size = NewMarker2D.TextAngle
 
         :return: float
+        :rtype: float
         """
 
-        return self.marker2_d.TextAngle
+        return self.marker_2d.TextAngle
 
     @text_angle.setter
-    def text_angle(self, value):
+    def text_angle(self, value: float):
         """
         :param float value:
         """
 
-        self.marker2_d.TextAngle = value
+        self.marker_2d.TextAngle = value
 
     @property
-    def text_font(self):
+    def text_font(self) -> str:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TextFont() As CATBSTR
                 | 
                 |     Returns or sets the text's font for a text Marker2D.
@@ -210,23 +214,24 @@ class Marker2D(AnyObject):
                 |             font = NewMarker2D.TextFont
 
         :return: str
+        :rtype: str
         """
 
-        return self.marker2_d.TextFont
+        return self.marker_2d.TextFont
 
     @text_font.setter
-    def text_font(self, value):
+    def text_font(self, value: str):
         """
         :param str value:
         """
 
-        self.marker2_d.TextFont = value
+        self.marker_2d.TextFont = value
 
     @property
-    def text_orientation(self):
+    def text_orientation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TextOrientation() As CatMarkerTextOrientation
                 | 
                 |     Return or set the orientation of text.
@@ -240,24 +245,25 @@ class Marker2D(AnyObject):
                 |             Dim orientation As CatMarkerTextOrientation
                 |             orientation = NewMarker2D.TextOrientation
 
-        :return: enum cat_marker_text_orientation
+        :return: int
+        :rtype: int
         """
 
-        return self.marker2_d.TextOrientation
+        return self.marker_2d.TextOrientation
 
     @text_orientation.setter
-    def text_orientation(self, value):
+    def text_orientation(self, value: int):
         """
-        :param enum cat_marker_text_orientation value:
+        :param int value:
         """
 
-        self.marker2_d.TextOrientation = value
+        self.marker_2d.TextOrientation = value
 
     @property
-    def text_size(self):
+    def text_size(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TextSize() As double
                 | 
                 |     Returns or sets the text's size for a text Marker2D.
@@ -272,23 +278,24 @@ class Marker2D(AnyObject):
                 |             size = NewMarker2D.TextSize
 
         :return: float
+        :rtype: float
         """
 
-        return self.marker2_d.TextSize
+        return self.marker_2d.TextSize
 
     @text_size.setter
-    def text_size(self, value):
+    def text_size(self, value: float):
         """
         :param float value:
         """
 
-        self.marker2_d.TextSize = value
+        self.marker_2d.TextSize = value
 
     @property
-    def type(self):
+    def type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Type() As CatMarker2DType (Read Only)
                 | 
                 |     Returns the type of the marker 2D.
@@ -302,15 +309,16 @@ class Marker2D(AnyObject):
                 |             Dim type As CatMarker2DType
                 |             type = NewMarker2D.Type
 
-        :return: enum cat_marker2_d_type
+        :return: int
+        :rtype: int
         """
 
-        return self.marker2_d.Type
+        return self.marker_2d.Type
 
-    def get_positions(self, o_coordinates=None):
+    def get_positions(self, o_coordinates: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetPositions(CATSafeArrayVariant oCoordinates)
                 | 
                 |     Retrieves the coordinates of the positions of the
@@ -360,17 +368,18 @@ class Marker2D(AnyObject):
 
         :param tuple o_coordinates:
         :return: None
+        :rtype: None
         """
-        return self.marker2_d.GetPositions(o_coordinates)
+        return self.marker_2d.GetPositions(o_coordinates)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
         # # vba_function_name = 'get_positions'
         # # vba_code = """
-        # # Public Function get_positions(marker2_d)
+        # # Public Function get_positions(marker_2d)
         # #     Dim oCoordinates (2)
-        # #     marker2_d.GetPositions oCoordinates
+        # #     marker_2d.GetPositions oCoordinates
         # #     get_positions = oCoordinates
         # # End Function
         # # """
@@ -378,10 +387,10 @@ class Marker2D(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_positions(self, i_coordinates=None):
+    def set_positions(self, i_coordinates: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPositions(CATSafeArrayVariant iCoordinates)
                 | 
                 |     Sets the coordinates of the positions of the Marker2D.
@@ -430,17 +439,18 @@ class Marker2D(AnyObject):
 
         :param tuple i_coordinates:
         :return: None
+        :rtype: None
         """
-        return self.marker2_d.SetPositions(i_coordinates)
+        return self.marker_2d.SetPositions(i_coordinates)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
         # # vba_function_name = 'set_positions'
         # # vba_code = """
-        # # Public Function set_positions(marker2_d)
+        # # Public Function set_positions(marker_2d)
         # #     Dim iCoordinates (2)
-        # #     marker2_d.SetPositions iCoordinates
+        # #     marker_2d.SetPositions iCoordinates
         # #     set_positions = iCoordinates
         # # End Function
         # # """
@@ -449,4 +459,4 @@ class Marker2D(AnyObject):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'Marker2D(name="{ self.name }")'
+        return f'Marker2D(name="{self.name}")'
