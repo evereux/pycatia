@@ -50,24 +50,25 @@ class Rotate(Shape):
         self.rotate = com_object
 
     @property
-    def angle(self):
+    def angle(self) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Angle() As Angle (Read Only)
                 | 
                 |     Returns the rotation angle.
 
         :return: Angle
+        :rtype: Angle
         """
 
         return Angle(self.rotate.Angle)
 
     @property
-    def angle_value(self):
+    def angle_value(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AngleValue() As double
                 | 
                 |     Returns or sets the rotation angle value.
@@ -79,12 +80,13 @@ class Rotate(Shape):
                 |      Set AngleValue = Rotate.AngleValue
 
         :return: float
+        :rtype: float
         """
 
         return self.rotate.AngleValue
 
     @angle_value.setter
-    def angle_value(self, value):
+    def angle_value(self, value: float):
         """
         :param float value:
         """
@@ -92,10 +94,10 @@ class Rotate(Shape):
         self.rotate.AngleValue = value
 
     @property
-    def axis(self):
+    def axis(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Axis() As Reference
                 | 
                 |     Returns or sets the rotation axis.
@@ -110,12 +112,13 @@ class Rotate(Shape):
                 |      Set RotationAxis = Rotate.Axis
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.rotate.Axis)
 
     @axis.setter
-    def axis(self, value):
+    def axis(self, value: Reference):
         """
         :param Reference value:
         """
@@ -123,10 +126,10 @@ class Rotate(Shape):
         self.rotate.Axis = value
 
     @property
-    def hybrid_shape(self):
+    def hybrid_shape(self) -> HybridShape:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HybridShape() As HybridShape (Read Only)
                 | 
                 |     Gets the underlying HybridShapeRotate.
@@ -140,6 +143,7 @@ class Rotate(Shape):
                 |           oHybridShape.SectionCoupling = 2
 
         :return: HybridShape
+        :rtype: HybridShape
         """
 
         return HybridShape(self.rotate.HybridShape)

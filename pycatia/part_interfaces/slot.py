@@ -13,7 +13,6 @@ from pycatia.part_interfaces.sweep import Sweep
 
 
 class Slot(Sweep):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -33,9 +32,7 @@ class Slot(Sweep):
                 | center curve represented by another sketch. This is a "negative" shape: it
                 | removes material from the body it belongs to. The profile sketch is usually
                 | drawn on another shape face.
-                | 
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
-    
+
     """
 
     def __init__(self, com_object):
@@ -43,4 +40,4 @@ class Slot(Sweep):
         self.slot = com_object
 
     def __repr__(self):
-        return f'Slot(name="{ self.name }")'
+        return f'Slot(name="{self.name}")'

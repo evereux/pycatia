@@ -13,7 +13,6 @@ from pycatia.part_interfaces.prism import Prism
 
 
 class Pocket(Prism):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -33,9 +32,7 @@ class Pocket(Prism):
                 | two opposite directions. It is a "negative" shape: it removes material from the
                 | body it belongs to. The sketch is usually drawn on another shape
                 | face.
-                | 
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
-    
+
     """
 
     def __init__(self, com_object):
@@ -43,4 +40,4 @@ class Pocket(Prism):
         self.pocket = com_object
 
     def __repr__(self):
-        return f'Pocket(name="{ self.name }")'
+        return f'Pocket(name="{self.name}")'

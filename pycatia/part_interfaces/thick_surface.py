@@ -41,10 +41,10 @@ class ThickSurface(SurfaceBasedShape):
         self.thick_surface = com_object
 
     @property
-    def bot_offset(self):
+    def bot_offset(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BotOffset() As Length (Read Only)
                 | 
                 |     Returns the value of the bottom offset.
@@ -56,15 +56,16 @@ class ThickSurface(SurfaceBasedShape):
                 |          Set botoffset = firstThickSurface.BotOffset
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.thick_surface.BotOffset)
 
     @property
-    def offset_side(self):
+    def offset_side(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OffsetSide() As long (Read Only)
                 | 
                 |     Returns the offset direction (defines in regards of the normal direction)
@@ -77,15 +78,16 @@ class ThickSurface(SurfaceBasedShape):
                 |          Set offsetside = firstThickSurface.OffsetSide
 
         :return: int
+        :rtype: int
         """
 
         return self.thick_surface.OffsetSide
 
     @property
-    def top_offset(self):
+    def top_offset(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TopOffset() As Length (Read Only)
                 | 
                 |     Returns the value of the top offset.
@@ -97,14 +99,15 @@ class ThickSurface(SurfaceBasedShape):
                 |          Set topoffset = firstThickSurface.TopOffset
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.thick_surface.TopOffset)
 
-    def swap_offset_side(self):
+    def swap_offset_side(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub swap_OffsetSide()
                 | 
                 |     Swap the side of the offset. 
@@ -120,6 +123,7 @@ class ThickSurface(SurfaceBasedShape):
                 |     reserved.
 
         :return: None
+        :rtype: None
         """
         return self.thick_surface.swap_OffsetSide()
 
