@@ -15,9 +15,10 @@ from pycatia.sketcher_interfaces.sketch import Sketch
 
 
 class Sweep(SketchBasedShape):
+
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -38,10 +39,10 @@ class Sweep(SketchBasedShape):
         self.sweep = com_object
 
     @property
-    def anchor_dir_reverse(self):
+    def anchor_dir_reverse(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AnchorDirReverse() As boolean
                 | 
                 |     Returns the Sweep AnchorDirReverse flag (for Sweep Move Profile
@@ -56,12 +57,13 @@ class Sweep(SketchBasedShape):
                 |         Example:
 
         :return: bool
+        :rtype: bool
         """
 
         return self.sweep.AnchorDirReverse
 
     @anchor_dir_reverse.setter
-    def anchor_dir_reverse(self, value):
+    def anchor_dir_reverse(self, value: bool):
         """
         :param bool value:
         """
@@ -69,10 +71,10 @@ class Sweep(SketchBasedShape):
         self.sweep.AnchorDirReverse = value
 
     @property
-    def center_curve(self):
+    def center_curve(self) -> Sketch:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CenterCurve() As Sketch (Read Only)
                 | 
                 |     Returns the sketch used as the sweep center curve. The sweep is built along
@@ -85,15 +87,16 @@ class Sweep(SketchBasedShape):
                 |          Set centerCurve = firstSweep.CenterCurve
 
         :return: Sketch
+        :rtype: Sketch
         """
 
         return Sketch(self.sweep.CenterCurve)
 
     @property
-    def center_curve_element(self):
+    def center_curve_element(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CenterCurveElement() As Reference
                 | 
                 |     Returns or sets the center curve .
@@ -101,12 +104,13 @@ class Sweep(SketchBasedShape):
                 |     TriDimFeatEdge.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.sweep.CenterCurveElement)
 
     @center_curve_element.setter
-    def center_curve_element(self, value):
+    def center_curve_element(self, value: Reference):
         """
         :param Reference value:
         """
@@ -114,10 +118,10 @@ class Sweep(SketchBasedShape):
         self.sweep.CenterCurveElement = value
 
     @property
-    def is_thin(self):
+    def is_thin(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property IsThin() As boolean
                 | 
                 |     Returns the Sweep thin flag.
@@ -136,12 +140,13 @@ class Sweep(SketchBasedShape):
                 |              firstSweep.IsThin = TRUE
 
         :return: bool
+        :rtype: bool
         """
 
         return self.sweep.IsThin
 
     @is_thin.setter
-    def is_thin(self, value):
+    def is_thin(self, value: bool):
         """
         :param bool value:
         """
@@ -149,10 +154,10 @@ class Sweep(SketchBasedShape):
         self.sweep.IsThin = value
 
     @property
-    def merge_end(self):
+    def merge_end(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MergeEnd() As boolean
                 | 
                 |     Returns the Sweep merge end flag (for thin Sweep only).
@@ -170,12 +175,13 @@ class Sweep(SketchBasedShape):
                 |              firstSweep.IsMergeEnd = TRUE
 
         :return: bool
+        :rtype: bool
         """
 
         return self.sweep.MergeEnd
 
     @merge_end.setter
-    def merge_end(self, value):
+    def merge_end(self, value: bool):
         """
         :param bool value:
         """
@@ -183,32 +189,33 @@ class Sweep(SketchBasedShape):
         self.sweep.MergeEnd = value
 
     @property
-    def merge_mode(self):
+    def merge_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MergeMode() As CatMergeMode
                 | 
                 |     Returns or sets the end mode .
 
-        :return: enum cat_merge_mode
+        :return: int
+        :rtype: int
         """
 
         return self.sweep.MergeMode
 
     @merge_mode.setter
-    def merge_mode(self, value):
+    def merge_mode(self, value: int):
         """
-        :param enum cat_merge_mode value:
+        :param int value:
         """
 
         self.sweep.MergeMode = value
 
     @property
-    def move_profile_to_path(self):
+    def move_profile_to_path(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MoveProfileToPath() As boolean
                 | 
                 |     Returns the Sweep MoveProfileToPath flag (for Sweep Move Profile
@@ -223,12 +230,13 @@ class Sweep(SketchBasedShape):
                 |         Example:
 
         :return: bool
+        :rtype: bool
         """
 
         return self.sweep.MoveProfileToPath
 
     @move_profile_to_path.setter
-    def move_profile_to_path(self, value):
+    def move_profile_to_path(self, value: bool):
         """
         :param bool value:
         """
@@ -236,10 +244,10 @@ class Sweep(SketchBasedShape):
         self.sweep.MoveProfileToPath = value
 
     @property
-    def neutral_fiber(self):
+    def neutral_fiber(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NeutralFiber() As boolean
                 | 
                 |     Returns the Sweep neutral fiber flag (for thin Sweep
@@ -259,12 +267,13 @@ class Sweep(SketchBasedShape):
                 |              firstSweep.IsNeutralFiber = TRUE
 
         :return: bool
+        :rtype: bool
         """
 
         return self.sweep.NeutralFiber
 
     @neutral_fiber.setter
-    def neutral_fiber(self, value):
+    def neutral_fiber(self, value: bool):
         """
         :param bool value:
         """
@@ -272,10 +281,10 @@ class Sweep(SketchBasedShape):
         self.sweep.NeutralFiber = value
 
     @property
-    def normal_axis_dir_reverse(self):
+    def normal_axis_dir_reverse(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NormalAxisDirReverse() As boolean
                 | 
                 |     Returns the Sweep NormalAxisDirReverse flag (for Sweep Move Profile
@@ -290,12 +299,13 @@ class Sweep(SketchBasedShape):
                 |         Example:
 
         :return: bool
+        :rtype: bool
         """
 
         return self.sweep.NormalAxisDirReverse
 
     @normal_axis_dir_reverse.setter
-    def normal_axis_dir_reverse(self, value):
+    def normal_axis_dir_reverse(self, value: bool):
         """
         :param bool value:
         """
@@ -303,10 +313,10 @@ class Sweep(SketchBasedShape):
         self.sweep.NormalAxisDirReverse = value
 
     @property
-    def pulling_dir_element(self):
+    def pulling_dir_element(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PullingDirElement() As Reference
                 | 
                 |     Returns or sets the pulling direction .
@@ -315,12 +325,13 @@ class Sweep(SketchBasedShape):
                 |     RectilinearMonoDimFeatEdge.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.sweep.PullingDirElement)
 
     @pulling_dir_element.setter
-    def pulling_dir_element(self, value):
+    def pulling_dir_element(self, value: Reference):
         """
         :param Reference value:
         """
@@ -328,39 +339,41 @@ class Sweep(SketchBasedShape):
         self.sweep.PullingDirElement = value
 
     @property
-    def reference_surface_element(self):
+    def reference_surface_element(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ReferenceSurfaceElement() As Reference
                 | 
                 |     Returns or sets the reference surface .
                 |     To set the property, you can use the following Boundary object: Face.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.sweep.ReferenceSurfaceElement)
 
     @reference_surface_element.setter
-    def reference_surface_element(self, value):
+    def reference_surface_element(self, value: Reference):
         """
         :param Reference value:
         """
 
         self.sweep.ReferenceSurfaceElement = value
 
-    def set_keep_angle_option(self):
+    def set_keep_angle_option(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetKeepAngleOption()
                 | 
                 |     Actives KeepAngleOption.
 
         :return: None
+        :rtype: None
         """
         return self.sweep.SetKeepAngleOption()
 
     def __repr__(self):
-        return f'Sweep(name="{self.name}")'
+        return f'Sweep(name="{ self.name }")'

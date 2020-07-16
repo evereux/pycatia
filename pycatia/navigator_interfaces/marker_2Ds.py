@@ -10,10 +10,10 @@
 """
 from pycatia.navigator_interfaces.marker_2D import Marker2D
 from pycatia.system_interfaces.collection import Collection
+from pycatia.types import cat_variant
 
 
 class Marker2Ds(Collection):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -30,13 +30,13 @@ class Marker2Ds(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
-        self.marker2_ds = com_object
+        super().__init__(com_object, child_object=Marker2D)
+        self.marker_2ds = com_object
 
-    def add2_d_arrow(self, i_coordinates=None):
+    def add2_d_arrow(self, i_coordinates: tuple) -> Marker2D:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Add2DArrow(CATSafeArrayVariant iCoordinates) As
                 | Marker2D
                 | 
@@ -71,13 +71,14 @@ class Marker2Ds(Collection):
 
         :param tuple i_coordinates:
         :return: Marker2D
+        :rtype: Marker2D
         """
-        return Marker2D(self.marker2_ds.Add2DArrow(i_coordinates))
+        return Marker2D(self.marker_2ds.Add2DArrow(i_coordinates))
 
-    def add2_d_circle(self, i_coordinates=None, i_fill_status=None):
+    def add2_d_circle(self, i_coordinates: tuple, i_fill_status: int) -> Marker2D:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Add2DCircle(CATSafeArrayVariant iCoordinates,
                 | long iFillStatus) As Marker2D
                 | 
@@ -117,13 +118,14 @@ class Marker2Ds(Collection):
         :param tuple i_coordinates:
         :param int i_fill_status:
         :return: Marker2D
+        :rtype: Marker2D
         """
-        return Marker2D(self.marker2_ds.Add2DCircle(i_coordinates, i_fill_status))
+        return Marker2D(self.marker_2ds.Add2DCircle(i_coordinates, i_fill_status))
 
-    def add2_d_free_hand(self, i_coordinates=None):
+    def add2_d_free_hand(self, i_coordinates: tuple) -> Marker2D:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Add2DFreeHand(CATSafeArrayVariant iCoordinates) As
                 | Marker2D
                 | 
@@ -162,13 +164,14 @@ class Marker2Ds(Collection):
 
         :param tuple i_coordinates:
         :return: Marker2D
+        :rtype: Marker2D
         """
-        return Marker2D(self.marker2_ds.Add2DFreeHand(i_coordinates))
+        return Marker2D(self.marker_2ds.Add2DFreeHand(i_coordinates))
 
-    def add2_d_line(self, i_coordinates=None):
+    def add2_d_line(self, i_coordinates: tuple) -> Marker2D:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Add2DLine(CATSafeArrayVariant iCoordinates) As
                 | Marker2D
                 | 
@@ -203,13 +206,14 @@ class Marker2Ds(Collection):
 
         :param tuple i_coordinates:
         :return: Marker2D
+        :rtype: Marker2D
         """
-        return Marker2D(self.marker2_ds.Add2DLine(i_coordinates))
+        return Marker2D(self.marker_2ds.Add2DLine(i_coordinates))
 
-    def add2_d_picture(self, i_coordinates=None, i_path=None):
+    def add2_d_picture(self, i_coordinates: tuple, i_path: str) -> Marker2D:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Add2DPicture(CATSafeArrayVariant iCoordinates,
                 | CATBSTR iPath) As Marker2D
                 | 
@@ -248,13 +252,14 @@ class Marker2Ds(Collection):
         :param tuple i_coordinates:
         :param str i_path:
         :return: Marker2D
+        :rtype: Marker2D
         """
-        return Marker2D(self.marker2_ds.Add2DPicture(i_coordinates, i_path))
+        return Marker2D(self.marker_2ds.Add2DPicture(i_coordinates, i_path))
 
-    def add2_d_rectangle(self, i_coordinates=None, i_fill_status=None):
+    def add2_d_rectangle(self, i_coordinates: tuple, i_fill_status: int) -> Marker2D:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Add2DRectangle(CATSafeArrayVariant iCoordinates,
                 | long iFillStatus) As Marker2D
                 | 
@@ -294,13 +299,14 @@ class Marker2Ds(Collection):
         :param tuple i_coordinates:
         :param int i_fill_status:
         :return: Marker2D
+        :rtype: Marker2D
         """
-        return Marker2D(self.marker2_ds.Add2DRectangle(i_coordinates, i_fill_status))
+        return Marker2D(self.marker_2ds.Add2DRectangle(i_coordinates, i_fill_status))
 
-    def add2_d_text(self, i_coordinates=None, i_text=None):
+    def add2_d_text(self, i_coordinates: tuple, i_text: str) -> Marker2D:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Add2DText(CATSafeArrayVariant iCoordinates,
                 | CATBSTR iText) As Marker2D
                 | 
@@ -335,13 +341,14 @@ class Marker2Ds(Collection):
         :param tuple i_coordinates:
         :param str i_text:
         :return: Marker2D
+        :rtype: Marker2D
         """
-        return Marker2D(self.marker2_ds.Add2DText(i_coordinates, i_text))
+        return Marker2D(self.marker_2ds.Add2DText(i_coordinates, i_text))
 
-    def item(self, i_index=None):
+    def item(self, i_index: cat_variant) -> Marker2D:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(CATVariant iIndex) As Marker2D
                 | 
                 |     Returns a marker 2D using its index from the Marker2Ds
@@ -367,15 +374,16 @@ class Marker2Ds(Collection):
                 |             Dim ThisMarker2D As Marker2D
                 |             Set ThisMarker2D = TheMarker2Ds.Item(9)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: Marker2D
+        :rtype: Marker2D
         """
-        return Marker2D(self.marker2_ds.Item(i_index.com_object))
+        return Marker2D(self.marker_2ds.Item(i_index))
 
-    def remove(self, i_index=None):
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a marker 2D from the Marker2Ds collection.
@@ -396,25 +404,11 @@ class Marker2Ds(Collection):
                 | 
                 |             TheMarker2Ds.Remove(10)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: None
+        :rtype: None
         """
-        return self.marker2_ds.Remove(i_index.com_object)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'remove'
-        # # vba_code = """
-        # # Public Function remove(marker2_ds)
-        # #     Dim iIndex (2)
-        # #     marker2_ds.Remove iIndex
-        # #     remove = iIndex
-        # # End Function
-        # # """
-
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return self.marker_2ds.Remove(i_index)
 
     def __repr__(self):
-        return f'Marker2Ds(name="{ self.name }")'
+        return f'Marker2Ds(name="{self.name}")'

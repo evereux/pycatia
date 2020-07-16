@@ -48,10 +48,10 @@ class Symmetry(Shape):
         self.symmetry = com_object
 
     @property
-    def hybrid_shape(self):
+    def hybrid_shape(self) -> HybridShape:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HybridShape() As HybridShape (Read Only)
                 | 
                 |     Gets the underlying HybridShapeSymmetry.
@@ -65,6 +65,7 @@ class Symmetry(Shape):
                 |           oHybridShape.SectionCoupling = 2
 
         :return: HybridShape
+        :rtype: HybridShape
         """
 
         return HybridShape(self.symmetry.HybridShape)

@@ -40,10 +40,10 @@ class AutoFillet(DressUpShape):
         self.auto_fillet = com_object
 
     @property
-    def curvature_radius(self):
+    def curvature_radius(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CurvatureRadius() As Length (Read Only)
                 | 
                 |     Returns the Curvature radius.
@@ -55,15 +55,16 @@ class AutoFillet(DressUpShape):
                 |          Set Curvatureradius = Autofillet.Radius
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.auto_fillet.CurvatureRadius)
 
     @property
-    def faces_to_fillet(self):
+    def faces_to_fillet(self) -> References:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FacesToFillet() As References (Read Only)
                 | 
                 |     Returns or sets the faces to fillet.
@@ -77,24 +78,26 @@ class AutoFillet(DressUpShape):
                 |          autofillet.Facestofillet = NewFacestofillet
 
         :return: References
+        :rtype: References
         """
 
         return References(self.auto_fillet.FacesToFillet)
 
     @property
-    def faces_to_fillets(self):
+    def faces_to_fillets(self) -> False:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FacesToFillets(Reference iFace) (Write Only)
 
         :return: False
+        :rtype: False
         """
 
         return None
 
     @faces_to_fillets.setter
-    def faces_to_fillets(self, value):
+    def faces_to_fillets(self, value: False):
         """
         :param False value:
         """
@@ -102,10 +105,10 @@ class AutoFillet(DressUpShape):
         self.auto_fillet.FacesToFillets = value
 
     @property
-    def fillet_radius(self):
+    def fillet_radius(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FilletRadius() As Length (Read Only)
                 | 
                 |     Returns the Fillet radius.
@@ -117,24 +120,26 @@ class AutoFillet(DressUpShape):
                 |          Set Filletradius = Autofillet.Radius
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.auto_fillet.FilletRadius)
 
     @property
-    def functional_face(self):
+    def functional_face(self) -> False:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FunctionalFace(Reference iFace) (Write Only)
 
         :return: False
+        :rtype: False
         """
 
         return None
 
     @functional_face.setter
-    def functional_face(self, value):
+    def functional_face(self, value: False):
         """
         :param False value:
         """
@@ -142,10 +147,10 @@ class AutoFillet(DressUpShape):
         self.auto_fillet.FunctionalFace = value
 
     @property
-    def functional_faces(self):
+    def functional_faces(self) -> References:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FunctionalFaces() As References (Read Only)
                 | 
                 |     Returns or sets the functional face.
@@ -159,15 +164,16 @@ class AutoFillet(DressUpShape):
                 |          autofillet.FunctionalFace = NewfunctionalFace
 
         :return: References
+        :rtype: References
         """
 
         return References(self.auto_fillet.FunctionalFaces)
 
     @property
-    def parting_element(self):
+    def parting_element(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PartingElement() As Reference
                 | 
                 |     Returns or sets the parting element.
@@ -181,12 +187,13 @@ class AutoFillet(DressUpShape):
                 |          autofillet.PartingElement = NewPartingElement
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.auto_fillet.PartingElement)
 
     @parting_element.setter
-    def parting_element(self, value):
+    def parting_element(self, value: Reference):
         """
         :param Reference value:
         """
@@ -194,10 +201,10 @@ class AutoFillet(DressUpShape):
         self.auto_fillet.PartingElement = value
 
     @property
-    def round_radius(self):
+    def round_radius(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RoundRadius() As Length (Read Only)
                 | 
                 |     Returns the Round radius.
@@ -209,15 +216,16 @@ class AutoFillet(DressUpShape):
                 |          Set roundradius = Autofillet.Radius
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.auto_fillet.RoundRadius)
 
     @property
-    def round_radius_activation(self):
+    def round_radius_activation(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RoundRadiusActivation() As boolean
                 | 
                 |     Returns the AutoFillet RoundRadiusActivation flag (for AutoFillet
@@ -231,12 +239,13 @@ class AutoFillet(DressUpShape):
                 |         Example:
 
         :return: bool
+        :rtype: bool
         """
 
         return self.auto_fillet.RoundRadiusActivation
 
     @round_radius_activation.setter
-    def round_radius_activation(self, value):
+    def round_radius_activation(self, value: bool):
         """
         :param bool value:
         """
@@ -244,19 +253,20 @@ class AutoFillet(DressUpShape):
         self.auto_fillet.RoundRadiusActivation = value
 
     @property
-    def slivers_and_crack(self):
+    def slivers_and_crack(self) -> False:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SliversAndCrack(Reference iSlivers) (Write Only)
 
         :return: False
+        :rtype: False
         """
 
         return None
 
     @slivers_and_crack.setter
-    def slivers_and_crack(self, value):
+    def slivers_and_crack(self, value: False):
         """
         :param False value:
         """
@@ -264,10 +274,10 @@ class AutoFillet(DressUpShape):
         self.auto_fillet.SliversAndCrack = value
 
     @property
-    def slivers_and_cracks(self):
+    def slivers_and_cracks(self) -> References:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SliversAndCracks() As References (Read Only)
                 | 
                 |     Returns or sets the slivers face.
@@ -280,15 +290,16 @@ class AutoFillet(DressUpShape):
                 |          autofillet.SliversFace = NewsliversFace
 
         :return: References
+        :rtype: References
         """
 
         return References(self.auto_fillet.SliversAndCracks)
 
     @property
-    def support_surface(self):
+    def support_surface(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SupportSurface() As Reference
                 | 
                 |     Returns or sets the support surface.
@@ -302,12 +313,13 @@ class AutoFillet(DressUpShape):
                 |          autofillet.SupportSurface = NewSupportSurface
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.auto_fillet.SupportSurface)
 
     @support_surface.setter
-    def support_surface(self, value):
+    def support_surface(self, value: Reference):
         """
         :param Reference value:
         """

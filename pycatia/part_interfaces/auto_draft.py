@@ -15,9 +15,10 @@ from pycatia.part_interfaces.dress_up_shape import DressUpShape
 
 
 class AutoDraft(DressUpShape):
+
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -37,19 +38,20 @@ class AutoDraft(DressUpShape):
         self.auto_draft = com_object
 
     @property
-    def functional_face(self):
+    def functional_face(self) -> False:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FunctionalFace(Reference iFace) (Write Only)
 
         :return: False
+        :rtype: False
         """
 
         return None
 
     @functional_face.setter
-    def functional_face(self, value):
+    def functional_face(self, value: False):
         """
         :param False value:
         """
@@ -57,10 +59,10 @@ class AutoDraft(DressUpShape):
         self.auto_draft.FunctionalFace = value
 
     @property
-    def functional_faces(self):
+    def functional_faces(self) -> References:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FunctionalFaces() As References (Read Only)
                 | 
                 |     Returns or sets the functional faces.
@@ -74,15 +76,16 @@ class AutoDraft(DressUpShape):
                 |          AutoDraft.FunctionalFace = NewFunctionalFace
 
         :return: References
+        :rtype: References
         """
 
         return References(self.auto_draft.FunctionalFaces)
 
     @property
-    def main_draft_angle(self):
+    def main_draft_angle(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MainDraftAngle() As Reference
                 | 
                 |     Returns or sets the main draft angle.
@@ -96,12 +99,13 @@ class AutoDraft(DressUpShape):
                 |          AutoDraft.MainDraftAngle = NewMainDraftAngle
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.auto_draft.MainDraftAngle)
 
     @main_draft_angle.setter
-    def main_draft_angle(self, value):
+    def main_draft_angle(self, value: Reference):
         """
         :param Reference value:
         """
@@ -109,10 +113,10 @@ class AutoDraft(DressUpShape):
         self.auto_draft.MainDraftAngle = value
 
     @property
-    def mode(self):
+    def mode(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Mode() As Reference
                 | 
                 |     Returns or sets the draft mode.
@@ -125,12 +129,13 @@ class AutoDraft(DressUpShape):
                 |          AutoDraft.Mode = NewMode
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.auto_draft.Mode)
 
     @mode.setter
-    def mode(self, value):
+    def mode(self, value: Reference):
         """
         :param Reference value:
         """
@@ -138,10 +143,10 @@ class AutoDraft(DressUpShape):
         self.auto_draft.Mode = value
 
     @property
-    def parting_element(self):
+    def parting_element(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PartingElement() As Reference
                 | 
                 |     Returns or sets the parting element.
@@ -155,12 +160,13 @@ class AutoDraft(DressUpShape):
                 |          AutoDraft.PartingElement = NewPartingElement
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.auto_draft.PartingElement)
 
     @parting_element.setter
-    def parting_element(self, value):
+    def parting_element(self, value: Reference):
         """
         :param Reference value:
         """
@@ -168,10 +174,10 @@ class AutoDraft(DressUpShape):
         self.auto_draft.PartingElement = value
 
     @property
-    def pulling_direction(self):
+    def pulling_direction(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PullingDirection() As Reference
                 | 
                 |     Returns or sets the pulling direction.
@@ -185,12 +191,13 @@ class AutoDraft(DressUpShape):
                 |          AutoDraft.PullingDirection = NewPullingDirection
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.auto_draft.PullingDirection)
 
     @pulling_direction.setter
-    def pulling_direction(self, value):
+    def pulling_direction(self, value: Reference):
         """
         :param Reference value:
         """

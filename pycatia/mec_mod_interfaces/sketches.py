@@ -34,10 +34,10 @@ class Sketches(Collection):
         super().__init__(com_object)
         self.sketches = com_object
 
-    def add(self, i_plane=None):
+    def add(self, i_plane: Reference) -> Sketch:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Add(Reference iPlane) As Sketch
                 | 
                 |     Creates a new sketch and adds it to the sketch collection. The sketch
@@ -63,13 +63,14 @@ class Sketches(Collection):
 
         :param Reference i_plane:
         :return: Sketch
+        :rtype: Sketch
         """
         return Sketch(self.sketches.Add(i_plane.com_object))
 
-    def get_boundary(self, i_label):
+    def get_boundary(self, i_label: str) -> Boundary:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetBoundary(CATBSTR iLabel) As Boundary
                 | 
                 |     Returns a boundary using its label.
@@ -85,13 +86,14 @@ class Sketches(Collection):
 
         :param str i_label:
         :return: Boundary
+        :rtype: Boundary
         """
         return Boundary(self.sketches.GetBoundary(i_label))
 
-    def item(self, i_index):
+    def item(self, i_index: CATVariant) -> Sketch:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(CATVariant iIndex) As Sketch
                 | 
                 |     Returns a sketch using its index or its name from the Sketches
@@ -117,8 +119,9 @@ class Sketches(Collection):
 
         :param CATVariant i_index:
         :return: Sketch
+        :rtype: Sketch
         """
-        return Sketch(self.sketches.Item(i_index))
+        return Sketch(self.sketches.Item(i_index.com_object))
 
     def __repr__(self):
         return f'Sketches(name="{self.name}")'

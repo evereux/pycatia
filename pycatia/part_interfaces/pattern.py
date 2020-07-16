@@ -45,10 +45,10 @@ class Pattern(TransformationShape):
         self.pattern = com_object
 
     @property
-    def item_to_copy(self):
+    def item_to_copy(self) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ItemToCopy() As AnyObject
                 | 
                 |     Returns or sets the shape to be copied.
@@ -61,12 +61,13 @@ class Pattern(TransformationShape):
                 |          firstPattern.ItemToCopy = pad1
 
         :return: AnyObject
+        :rtype: AnyObject
         """
 
         return AnyObject(self.pattern.ItemToCopy)
 
     @item_to_copy.setter
-    def item_to_copy(self, value):
+    def item_to_copy(self, value: AnyObject):
         """
         :param AnyObject value:
         """
@@ -74,10 +75,10 @@ class Pattern(TransformationShape):
         self.pattern.ItemToCopy = value
 
     @property
-    def rotation_angle(self):
+    def rotation_angle(self) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RotationAngle() As Angle (Read Only)
                 | 
                 |     Returns the pattern global rotation angle. The rotation is applied to the
@@ -91,14 +92,15 @@ class Pattern(TransformationShape):
                 |          Set globAng = firstPattern.RotationAngle
 
         :return: Angle
+        :rtype: Angle
         """
 
         return Angle(self.pattern.RotationAngle)
 
-    def activate_position(self, i_pos_u, i_pos_v):
+    def activate_position(self, i_pos_u: int, i_pos_v: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ActivatePosition(long iPosU,
                 | long iPosV)
                 | 
@@ -114,13 +116,14 @@ class Pattern(TransformationShape):
         :param int i_pos_u:
         :param int i_pos_v:
         :return: None
+        :rtype: None
         """
         return self.pattern.ActivatePosition(i_pos_u, i_pos_v)
 
-    def desactivate_position(self, i_pos_u, i_pos_v):
+    def desactivate_position(self, i_pos_u: int, i_pos_v: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub DesactivatePosition(long iPosU,
                 | long iPosV)
                 | 
@@ -136,6 +139,7 @@ class Pattern(TransformationShape):
         :param int i_pos_u:
         :param int i_pos_v:
         :return: None
+        :rtype: None
         """
         return self.pattern.DesactivatePosition(i_pos_u, i_pos_v)
 
