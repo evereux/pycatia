@@ -34,10 +34,10 @@ class Shapes(Collection):
         super().__init__(com_object)
         self.shapes = com_object
 
-    def get_boundary(self, i_label=None):
+    def get_boundary(self, i_label: str) -> Boundary:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetBoundary(CATBSTR iLabel) As Boundary
                 | 
                 |     Returns a boundary using its label.
@@ -53,13 +53,14 @@ class Shapes(Collection):
 
         :param str i_label:
         :return: Boundary
+        :rtype: Boundary
         """
         return Boundary(self.shapes.GetBoundary(i_label))
 
-    def item(self, i_index):
+    def item(self, i_index: CATVariant) -> Shape:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(CATVariant iIndex) As Shape
                 | 
                 |     Returns a shape using its index or its name from the Shapes
@@ -87,6 +88,7 @@ class Shapes(Collection):
 
         :param CATVariant i_index:
         :return: Shape
+        :rtype: Shape
         """
         return Shape(self.shapes.Item(i_index))
 

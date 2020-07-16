@@ -46,15 +46,15 @@ class PartDocument(Document):
         self.part_document = com_object
 
     @property
-    def part(self):
+    def part(self) -> Part:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Part() As Part (Read Only)
-                |
+                | 
                 |     Returns the root Part object from the current part
                 |     document.
-                |
+                | 
                 |     Example:
                 |         The following example retrieves in RootPart the root Part object of the
                 |         active document, assumed to be a part document:
@@ -62,20 +62,21 @@ class PartDocument(Document):
                 |          Set RootPart = CATIA.ActiveDocument.Part
 
         :return: Part
+        :rtype: Part
         """
 
         return Part(self.part_document.Part)
 
     @property
-    def product(self):
+    def product(self) -> Product:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Product() As Product (Read Only)
-                |
+                | 
                 |     Returns the root Product object from the current part
                 |     document.
-                |
+                | 
                 |     Example:
                 |         The following example retrieves in RootProd the root Product object of
                 |         the active document, assumed to be a part document:
@@ -83,6 +84,7 @@ class PartDocument(Document):
                 |          Set RootProd = CATIA.ActiveDocument.Part
 
         :return: Product
+        :rtype: Product
         """
 
         return Product(self.part_document.Product)

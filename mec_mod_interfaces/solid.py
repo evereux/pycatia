@@ -41,10 +41,10 @@ class Solid(Shape):
         self.solid = com_object
 
     @property
-    def move(self):
+    def move(self) -> Move:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Move() As Move (Read Only)
                 | 
                 |     Returns the move object of the solid.
@@ -71,15 +71,16 @@ class Solid(Shape):
                 |         Move
 
         :return: Move
+        :rtype: Move
         """
 
         return Move(self.solid.Move)
 
     @property
-    def source_element(self):
+    def source_element(self) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SourceElement() As AnyObject (Read Only)
                 | 
                 |     Returns the source element of the imported solid.
@@ -92,15 +93,16 @@ class Solid(Shape):
                 |          Set element = importedSolid.SourceElement
 
         :return: AnyObject
+        :rtype: AnyObject
         """
 
         return AnyObject(self.solid.SourceElement)
 
     @property
-    def source_product(self):
+    def source_product(self) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SourceProduct() As AnyObject (Read Only)
                 | 
                 |     Returns the source product instance of the imported solid.
@@ -114,6 +116,7 @@ class Solid(Shape):
                 |          Set prod1 = importedSolid.SourceProduct
 
         :return: AnyObject
+        :rtype: AnyObject
         """
 
         return AnyObject(self.solid.SourceProduct)
