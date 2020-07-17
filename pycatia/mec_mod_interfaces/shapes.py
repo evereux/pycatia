@@ -12,6 +12,7 @@
 from pycatia.mec_mod_interfaces.boundary import Boundary
 from pycatia.mec_mod_interfaces.shape import Shape
 from pycatia.system_interfaces.collection import Collection
+from pycatia.types import cat_variant
 
 
 class Shapes(Collection):
@@ -31,7 +32,7 @@ class Shapes(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Shape)
         self.shapes = com_object
 
     def get_boundary(self, i_label: str) -> Boundary:
@@ -57,7 +58,7 @@ class Shapes(Collection):
         """
         return Boundary(self.shapes.GetBoundary(i_label))
 
-    def item(self, i_index: CATVariant) -> Shape:
+    def item(self, i_index: cat_variant) -> Shape:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
@@ -86,7 +87,7 @@ class Shapes(Collection):
                 |          Set ThisShape = CATIA.ActiveDocument.Shapes.Item(3)
                 |          Set ThatShape = CATIA.ActiveDocument.Shapes.Item("MyShape")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: Shape
         :rtype: Shape
         """

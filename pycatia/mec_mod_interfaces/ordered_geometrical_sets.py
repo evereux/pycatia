@@ -11,6 +11,7 @@
 
 from pycatia.mec_mod_interfaces.ordered_geometrical_set import OrderedGeometricalSet
 from pycatia.system_interfaces.collection import Collection
+from pycatia.types import cat_variant
 
 
 class OrderedGeometricalSets(Collection):
@@ -30,7 +31,7 @@ class OrderedGeometricalSets(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=OrderedGeometricalSet)
         self.ordered_geometrical_sets = com_object
 
     def add(self) -> OrderedGeometricalSet:
@@ -58,7 +59,7 @@ class OrderedGeometricalSets(Collection):
         """
         return OrderedGeometricalSet(self.ordered_geometrical_sets.Add())
 
-    def item(self, i_index: CATVariant) -> OrderedGeometricalSet:
+    def item(self, i_index: cat_variant) -> OrderedGeometricalSet:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
@@ -90,11 +91,11 @@ class OrderedGeometricalSets(Collection):
                 |          Set ThisOrderedGeometricalSet = orderedGeometricalSetColl.Item(5)
                 |          Set ThatOrderedGeometricalSet = orderedGeometricalSetColl.Item("MyOrderedGeometricalSet")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: OrderedGeometricalSet
         :rtype: OrderedGeometricalSet
         """
-        return OrderedGeometricalSet(self.ordered_geometrical_sets.Item(i_index.com_object))
+        return OrderedGeometricalSet(self.ordered_geometrical_sets.Item(i_index))
 
     def __repr__(self):
-        return f'OrderedGeometricalSets(name="{ self.name }")'
+        return f'OrderedGeometricalSets(name="{self.name}")'

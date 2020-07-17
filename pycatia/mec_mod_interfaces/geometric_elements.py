@@ -10,6 +10,7 @@
 """
 from pycatia.sketcher_interfaces.geometric_element import GeometricElement
 from pycatia.system_interfaces.collection import Collection
+from pycatia.types import cat_variant
 
 
 class GeometricElements(Collection):
@@ -37,10 +38,10 @@ class GeometricElements(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=GeometricElement)
         self.geometric_elements = com_object
 
-    def item(self, i_index: CATVariant) -> GeometricElement:
+    def item(self, i_index: cat_variant) -> GeometricElement:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
@@ -68,11 +69,11 @@ class GeometricElements(Collection):
                 | 
                 |          Set lastCst = cstList.Item(cstList.Count)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: GeometricElement
         :rtype: GeometricElement
         """
-        return GeometricElement(self.geometric_elements.Item(i_index.com_object))
+        return GeometricElement(self.geometric_elements.Item(i_index))
 
     def __repr__(self):
         return f'GeometricElements(name="{self.name}")'

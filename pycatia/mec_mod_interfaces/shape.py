@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class Shape(AnyObject):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -31,10 +30,7 @@ class Shape(AnyObject):
                 | 
                 | See also:
                 |     SketchBasedShape, BooleanShape, DressUpShape, TransformationShape
-                |     
-                | 
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
-    
+
     """
 
     def __init__(self, com_object):
@@ -42,4 +38,4 @@ class Shape(AnyObject):
         self.shape = com_object
 
     def __repr__(self):
-        return f'Shape(name="{ self.name }")'
+        return f'Shape(name="{self.name}")'
