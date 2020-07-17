@@ -10,6 +10,7 @@
 """
 
 from pycatia.mec_mod_interfaces.hybrid_bodies import HybridBodies
+from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 from pycatia.mec_mod_interfaces.hybrid_shapes import HybridShapes
 from pycatia.mec_mod_interfaces.ordered_geometrical_sets import OrderedGeometricalSets
 from pycatia.mec_mod_interfaces.shapes import Shapes
@@ -18,7 +19,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class Body(AnyObject):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)

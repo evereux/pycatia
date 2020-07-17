@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class Factory(AnyObject):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -27,8 +26,6 @@ class Factory(AnyObject):
                 |
                 | Abstract object gathering behaviours of all objects being a
                 | factory.
-                |
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
 
     """
 
@@ -37,4 +34,4 @@ class Factory(AnyObject):
         self.factory = com_object
 
     def __repr__(self):
-        return f'Factory(name="{ self.name }")'
+        return f'Factory(name="{self.name}")'

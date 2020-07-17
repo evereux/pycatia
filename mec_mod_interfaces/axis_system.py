@@ -15,7 +15,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class AxisSystem(AnyObject):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -135,13 +134,13 @@ class AxisSystem(AnyObject):
                 |         Geometrical Set.1 as the origin point of the axis system
                 |         AxisSystem0:
                 |
-                |          Dim HybridBody4 As AnyObject
-                |          Set HybridBody4 = Body1.HybridBodies.Item  ( "Geometrical Set.1" )
-                |          Dim HybridShapePointCoord5 As AnyObject
-                |          Set HybridShapePointCoord5 = HybridBody4.HybridShapes.Item  ( "Point.1" )
-                |          Dim Reference6 As Reference
-                |          Set Reference6 = CATIA.ActiveDocument.Part.CreateReferenceFromGeometry  ( HybridShapePointCoord5 )
-                |          AxisSystem0.OriginPoint = Reference6
+                |      Dim HybridBody4 As AnyObject
+                |      Set HybridBody4 = Body1.HybridBodies.Item  ( "Geometrical Set.1" )
+                |      Dim HybridShapePointCoord5 As AnyObject
+                |      Set HybridShapePointCoord5 = HybridBody4.HybridShapes.Item  ( "Point.1" )
+                |      Dim Reference6 As Reference
+                |      Set Reference6 = CATIA.ActiveDocument.Part.CreateReferenceFromGeometry(HybridShapePointCoord5)
+                |      AxisSystem0.OriginPoint = Reference6
 
         :return: Reference
         :rtype: Reference
@@ -261,13 +260,13 @@ class AxisSystem(AnyObject):
                 |         Geometrical Set.1 as the direction of the X axis of the axis system
                 |         AxisSystem0:
                 | 
-                |          Dim HybridBody4 As AnyObject
-                |          Set HybridBody4 = Body1.HybridBodies.Item  ( "Geometrical Set.1" ) 
-                |          Dim HybridShapePointCoord5 As AnyObject
-                |          Set HybridShapePointCoord5 = HybridBody4.HybridShapes.Item  ( "Point.1" ) 
-                |          Dim Reference6 As Reference
-                |          Set Reference6 = CATIA.ActiveDocument.Part.CreateReferenceFromGeometry  ( HybridShapePointCoord5 ) 
-                |          AxisSystem0.XAxisDirection = Reference6
+                |      Dim HybridBody4 As AnyObject
+                |      Set HybridBody4 = Body1.HybridBodies.Item  ( "Geometrical Set.1" )
+                |      Dim HybridShapePointCoord5 As AnyObject
+                |      Set HybridShapePointCoord5 = HybridBody4.HybridShapes.Item  ( "Point.1" )
+                |      Dim Reference6 As Reference
+                |      Set Reference6 = CATIA.ActiveDocument.Part.CreateReferenceFromGeometry( HybridShapePointCoord5 )
+                |      AxisSystem0.XAxisDirection = Reference6
 
         :return: Reference
         :rtype: Reference
@@ -293,9 +292,14 @@ class AxisSystem(AnyObject):
                 |     Reads or sets the way the X axis is specified.
                 |     An axis X,Y, or Z of the axis system can be defined by a geometric point,
                 |     line or plane, or by coordinates.
-                |     AxisType = 0 : The axis is defined by a geometric point, line or plane and with the same direction.
-                |     AxisType = 1 : The axis direction is defined by the three coordinates x,y,z, of a vector, to which the axis will allways stay parallel.
-                |     AxisType = 2 : the axis is defined by a geometric point, line or plane and with the opposite direction. Notice : If the X axis is neither defined by coordinates nor by a point,line or plane, the axis will be automatically computed in order to build an orthogonal axis sytem with the other specified axes.
+                |     AxisType = 0 : The axis is defined by a geometric point, line or plane and with the same
+                |                    direction.
+                |     AxisType = 1 : The axis direction is defined by the three coordinates x,y,z, of a vector, to
+                |                    which the axis will always stay parallel.
+                |     AxisType = 2 : the axis is defined by a geometric point, line or plane and with the opposite
+                |                    direction. Notice : If the X axis is neither defined by coordinates nor by a
+                |                    point,line or plane, the axis will be automatically computed in order to build an
+                |                    orthogonal axis system with the other specified axes.
                 | 
                 |     Example:
                 |         The following example prints the X axis type :
@@ -342,7 +346,8 @@ class AxisSystem(AnyObject):
                 |          Dim HybridShapePointCoord5 As AnyObject
                 |          Set HybridShapePointCoord5 = HybridBody4.HybridShapes.Item  ( "Point.1" ) 
                 |          Dim Reference6 As Reference
-                |          Set Reference6 = CATIA.ActiveDocument.Part.CreateReferenceFromGeometry  ( HybridShapePointCoord5 ) 
+                |          Set Reference6 = CATIA.ActiveDocument.Part.
+                |                               CreateReferenceFromGeometry(HybridShapePointCoord5 )
                 |          AxisSystem0.YAxisDirection = Reference6
 
         :return: Reference
@@ -369,9 +374,14 @@ class AxisSystem(AnyObject):
                 |     Reads or sets the way the Y axis is specified.
                 |     An axis X,Y, or Z of the axis system can be defined by a geometric point,
                 |     line or plane, or by coordinates.
-                |     AxisType = 0 : The axis is defined by a geometric point, line or plane and with the same direction.
-                |     AxisType = 1 : The axis direction is defined by the three coordinates x,y,z, of a vector, to which the axis will allways stay parallel.
-                |     AxisType = 2 : the axis is defined by a geometric point, line or plane and with the opposite direction. Notice : If the Y axis is neither defined by coordinates nor by a point,line or plane, the axis will be automatically computed in order to build an orthogonal axis sytem with the other specified axes.
+                |     AxisType = 0 : The axis is defined by a geometric point, line or plane and with the same
+                |                    direction.
+                |     AxisType = 1 : The axis direction is defined by the three coordinates x,y,z, of a vector, to
+                |                    which the axis will always stay parallel.
+                |     AxisType = 2 : the axis is defined by a geometric point, line or plane and with the opposite
+                |                    direction. Notice : If the Y axis is neither defined by coordinates nor by a
+                |                    point,line or plane, the axis will be automatically computed in order to build an
+                |                    orthogonal axis system with the other specified axes.
                 | 
                 |     Example:
                 |         The following example prints the Y axis type :
@@ -418,7 +428,8 @@ class AxisSystem(AnyObject):
                 |          Dim HybridShapePointCoord5 As AnyObject
                 |          Set HybridShapePointCoord5 = HybridBody4.HybridShapes.Item  ( "Point.1" ) 
                 |          Dim Reference6 As Reference
-                |          Set Reference6 = CATIA.ActiveDocument.Part.CreateReferenceFromGeometry  ( HybridShapePointCoord5 ) 
+                |          Set Reference6 = CATIA.ActiveDocument.Part.
+                |                               CreateReferenceFromGeometry(HybridShapePointCoord5)
                 |          AxisSystem0.ZAxisDirection = Reference6
 
         :return: Reference
@@ -445,9 +456,14 @@ class AxisSystem(AnyObject):
                 |     Reads or sets the way the Z axis is specified.
                 |     An axis X,Y, or Z of the axis system can be defined by a geometric point,
                 |     line or plane, or by coordinates.
-                |     AxisType = 0 : The axis is defined by a geometric point, line or plane and with the same direction.
-                |     AxisType = 1 : The axis direction is defined by the three coordinates x,y,z, of a vector, to which the axis will allways stay parallel.
-                |     AxisType = 2 : the axis is defined by a geometric point, line or plane and with the opposite direction. Notice : If the Z axis is neither defined by coordinates nor by a point,line or plane, the axis will be automatically computed in order to build an orthogonal axis sytem with the other specified axes.
+                |     AxisType = 0 : The axis is defined by a geometric point, line or plane and with the same
+                |                    direction.
+                |     AxisType = 1 : The axis direction is defined by the three coordinates x,y,z, of a vector, to
+                |                    which the axis will always stay parallel.
+                |     AxisType = 2 : the axis is defined by a geometric point, line or plane and with the opposite
+                |                    direction. Notice : If the Z axis is neither defined by coordinates nor by a
+                |                    point,line or plane, the axis will be automatically computed in order to build an
+                |                    orthogonal axis system with the other specified axes.
                 | 
                 |     Example:
                 |         The following example prints the Z axis type :
@@ -490,7 +506,8 @@ class AxisSystem(AnyObject):
         :return: None
         :rtype: None
         """
-        return self.axis_system.GetEulerAngles(o_first_angle.com_object, o_second_angle.com_object, third_angle.com_object)
+        return self.axis_system.GetEulerAngles(o_first_angle.com_object, o_second_angle.com_object,
+                                               third_angle.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -982,4 +999,4 @@ class AxisSystem(AnyObject):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'AxisSystem(name="{ self.name }")'
+        return f'AxisSystem(name="{self.name}")'

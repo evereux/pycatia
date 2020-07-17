@@ -39,7 +39,7 @@ class OrderedGeometricalSet(AnyObject):
         self.ordered_geometrical_set = com_object
 
     @property
-    def bodies(self) -> Bodies:
+    def bodies(self) -> 'Bodies':
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -90,7 +90,7 @@ class OrderedGeometricalSet(AnyObject):
         return HybridShapes(self.ordered_geometrical_set.HybridShapes)
 
     @property
-    def ordered_geometrical_sets(self) -> OrderedGeometricalSets:
+    def ordered_geometrical_sets(self) -> 'OrderedGeometricalSets':
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -136,7 +136,7 @@ class OrderedGeometricalSet(AnyObject):
 
         return Sketches(self.ordered_geometrical_set.OrderedSketches)
 
-    def insert_hybrid_shape(self, i_hybrid_shape: HybridShape) -> None:
+    def insert_hybrid_shape(self, i_hybrid_shape: 'HybridShape') -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))

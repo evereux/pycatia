@@ -39,9 +39,7 @@ class NotWireBoundaryMonoDimFeatVertex(Vertex):
                 | operator.
                 | The lifetime of a NotWireBoundaryMonoDimFeatVertex object is limited, see
                 | Boundary.
-                | 
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
-    
+
     """
 
     def __init__(self, com_object):
