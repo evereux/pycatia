@@ -13,7 +13,6 @@ from pycatia.mec_mod_interfaces.face import Face
 
 
 class CylindricalFace(Face):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -62,7 +61,8 @@ class CylindricalFace(Face):
                 |      if (Status = "cancel") then Exit Sub
                 |      Set CylindricalFace = Selection.Item(1).Value
                 |      Set RotationCenter = Document.Part.CreateReferenceFromName("")
-                |      Set CircPattern = ShapeFactory.AddNewCircPattern(Shape,1,4,20.0,45.0,1,4,RotationCenter,CylindricalFace,True,0.0,True)
+                |      Set CircPattern = ShapeFactory.AddNewCircPattern(Shape,1,4,20.0,45.0,1,4,RotationCenter,
+                |                            CylindricalFace,True,0.0,True)
                 |      Document.Part.Update
 
     """
@@ -147,4 +147,4 @@ class CylindricalFace(Face):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'CylindricalFace(name="{ self.name }")'
+        return f'CylindricalFace(name="{self.name}")'

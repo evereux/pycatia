@@ -13,7 +13,6 @@ from pycatia.mec_mod_interfaces.edge import Edge
 
 
 class TriDimFeatEdge(Edge):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -54,10 +53,7 @@ class TriDimFeatEdge(Edge):
                 |      Set EdgeFillet = ShapeFactory.AddNewEdgeFilletWithConstantRadius(Selection.Item(1).Value,1,5.0)
                 |      EdgeFillet.EdgePropagation = 1
                 |      Document.Part.Update 
-                |      
-                | 
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
-    
+
     """
 
     def __init__(self, com_object):
@@ -65,4 +61,4 @@ class TriDimFeatEdge(Edge):
         self.tri_dim_feat_edge = com_object
 
     def __repr__(self):
-        return f'TriDimFeatEdge(name="{ self.name }")'
+        return f'TriDimFeatEdge(name="{self.name}")'

@@ -59,7 +59,7 @@ class Part(AnyObject):
         self.com_object = com_part_object
 
     @property
-    def annotation_sets(self):
+    def annotation_sets(self) -> Collection:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -83,7 +83,7 @@ class Part(AnyObject):
         return Collection(self.part.AnnotationSets)
 
     @property
-    def axis_systems(self):
+    def axis_systems(self) -> AxisSystems:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -107,7 +107,7 @@ class Part(AnyObject):
         return AxisSystems(self.part.AxisSystems)
 
     @property
-    def bodies(self):
+    def bodies(self) -> Bodies:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -127,12 +127,13 @@ class Part(AnyObject):
                 |          Set bodiesColl = partRoot.Bodies
 
         :return: Bodies
+        :rtype: Bodies
         """
 
         return Bodies(self.part.Bodies)
 
     @property
-    def constraints(self):
+    def constraints(self) -> Constraints:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -150,12 +151,13 @@ class Part(AnyObject):
                 |          Set csts = partRoot.Constraints
 
         :return: Constraints
+        :rtype: Constraints
         """
 
         return Constraints(self.part.Constraints)
 
     @property
-    def density(self):
+    def density(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -171,32 +173,35 @@ class Part(AnyObject):
                 |          MsgBox "The density is " & partRoot.Density
 
         :return: float
+        :rtype: float
         """
 
         return self.part.Density
 
     @property
-    def file_name(self):
+    def file_name(self) -> str:
         """
-        :return: str()
+        :return: str
+        :rtype: str
         """
         try:
             return self.part.ReferenceProduct.Parent.Name
         except AttributeError:
-            return self.parent.Name
+            return self.part.Name
 
     @property
-    def full_name(self):
+    def full_name(self) -> str:
         """
-        :return: str()
+        :return: str
+        :rtype: str
         """
         try:
             return self.part.ReferenceProduct.Parent.FullName
         except AttributeError:
-            return self.parent.FullName
+            return self.part.FullName
 
     @property
-    def geometric_elements(self):
+    def geometric_elements(self) -> GeometricElements:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -215,12 +220,13 @@ class Part(AnyObject):
                 |          Set geomElts = partRoot.GeometricElements
 
         :return: GeometricElements
+        :rtype: GeometricElements
         """
 
         return GeometricElements(self.part.GeometricElements)
 
     @property
-    def hybrid_bodies(self):
+    def hybrid_bodies(self) -> HybridBodies:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -238,12 +244,13 @@ class Part(AnyObject):
                 |          Set hybridBodiesColl = partRoot.HybridBodies
 
         :return: HybridBodies
+        :rtype: HybridBodies
         """
 
         return HybridBodies(self.part.HybridBodies)
 
     @property
-    def hybrid_shape_factory(self):
+    def hybrid_shape_factory(self) -> HybridShapeFactory:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -262,12 +269,13 @@ class Part(AnyObject):
                 |          Set hybridShapeFact = partRoot.HybridShapeFactory
 
         :return: HybridShapeFactory
+        :rtype: HybridShapeFactory
         """
 
         return HybridShapeFactory(self.part.HybridShapeFactory)
 
     @property
-    def in_work_object(self):
+    def in_work_object(self) -> AnyObject:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -285,20 +293,21 @@ class Part(AnyObject):
                 |      End If
 
         :return: AnyObject
+        :rtype: AnyObject
         """
 
         return AnyObject(self.part.InWorkObject)
 
     @in_work_object.setter
-    def in_work_object(self, value):
+    def in_work_object(self, any_object: AnyObject):
         """
-        :param AnyObject value:
+        :param AnyObject any_object:
         """
 
-        self.part.InWorkObject = value.com_object
+        self.part.InWorkObject = any_object.com_object
 
     @property
-    def main_body(self):
+    def main_body(self) -> Body:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -314,20 +323,21 @@ class Part(AnyObject):
                 |          Set mainBody=CATIA.ActiveDocument.Part.MainBody
 
         :return: Body
+        :rtype: Body
         """
 
         return Body(self.part.MainBody)
 
     @main_body.setter
-    def main_body(self, value):
+    def main_body(self, body: Body):
         """
-        :param Body value:
+        :param Body body:
         """
 
-        self.part.MainBody = value
+        self.part.MainBody = body.com_object
 
     @property
-    def ordered_geometrical_sets(self):
+    def ordered_geometrical_sets(self) -> OrderedGeometricalSets:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -346,12 +356,13 @@ class Part(AnyObject):
                 |          Set ogsColl = partRoot.OrderedGeometricalSets
 
         :return: OrderedGeometricalSets
+        :rtype: OrderedGeometricalSets
         """
 
         return OrderedGeometricalSets(self.part.OrderedGeometricalSets)
 
     @property
-    def origin_elements(self):
+    def origin_elements(self) -> OriginElements:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -368,12 +379,13 @@ class Part(AnyObject):
                 |          Set originElts = partRoot.OriginElements
 
         :return: OriginElements
+        :rtype: OriginElements
         """
 
         return OriginElements(self.part.OriginElements)
 
     @property
-    def parameters(self):
+    def parameters(self) -> Parameters:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -392,12 +404,13 @@ class Part(AnyObject):
                 |          Set params = partRoot.Parameters
 
         :return: Parameters
+        :rtype: Parameters
         """
 
         return Parameters(self.part.Parameters)
 
     @property
-    def relations(self):
+    def relations(self) -> Relations:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -415,12 +428,13 @@ class Part(AnyObject):
                 |          Set rels = partRoot.Relations
 
         :return: Relations
+        :rtype: Relations
         """
 
         return Relations(self.part.Relations)
 
     @property
-    def shape_factory(self):
+    def shape_factory(self) -> ShapeFactory:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -438,12 +452,13 @@ class Part(AnyObject):
                 |          Set shapeFact = partRoot.ShapeFactory
 
         :return: ShapeFactory
+        :rtype: ShapeFactory
         """
 
         return ShapeFactory(self.part.ShapeFactory)
 
     @property
-    def sheet_metal_factory(self):
+    def sheet_metal_factory(self) -> Factory:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -461,12 +476,13 @@ class Part(AnyObject):
                 |          Set sheetMetalFact = partRoot.SheetMetalFactory
 
         :return: Factory
+        :return: Factory
         """
 
         return Factory(self.part.SheetMetalFactory)
 
     @property
-    def sheet_metal_parameters(self):
+    def sheet_metal_parameters(self) -> AnyObject:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -484,12 +500,13 @@ class Part(AnyObject):
                 |          Set sheetMetalFact = partRoot.SheetMetalParameters
 
         :return: AnyObject
+        :rtype: AnyObject
         """
 
         return AnyObject(self.part.SheetMetalParameters)
 
     @property
-    def user_surfaces(self):
+    def user_surfaces(self) -> Collection:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -508,11 +525,12 @@ class Part(AnyObject):
                 |          Set userSurfaces = partRoot.UserSurfaces
 
         :return: Collection
+        :rtype: Collection
         """
 
         return Collection(self.part.UserSurfaces)
 
-    def activate(self, i_object):
+    def activate(self, i_object: AnyObject) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -535,10 +553,11 @@ class Part(AnyObject):
 
         :param AnyObject i_object:
         :return: None
+        :rtype: None
         """
         return self.part.Activate(i_object.com_object)
 
-    def create_reference_from_b_rep_name(self, i_label, i_object_context):
+    def create_reference_from_b_rep_name(self, i_label: str, i_object_context: AnyObject):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -565,10 +584,11 @@ class Part(AnyObject):
         :param str i_label:
         :param AnyObject i_object_context:
         :return: Reference
+        :rtype: Reference
         """
         return Reference(self.part.CreateReferenceFromBRepName(i_label, i_object_context.com_object))
 
-    def create_reference_from_name(self, i_label):
+    def create_reference_from_name(self, i_label: str):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -589,10 +609,11 @@ class Part(AnyObject):
 
         :param str i_label:
         :return: Reference
+        :rtype: Reference
         """
         return Reference(self.part.CreateReferenceFromName(i_label))
 
-    def create_reference_from_object(self, i_object):
+    def create_reference_from_object(self, i_object: AnyObject):
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -614,13 +635,20 @@ class Part(AnyObject):
 
         :param AnyObject i_object:
         :return: Reference
+        :rtype: Reference
         """
         return Reference(self.part.CreateReferenceFromObject(i_object.com_object))
 
-    def deactivate(self, i_object):
-        self.inactivate(i_object)
+    def deactivate(self, i_object: AnyObject) -> None:
+        """
+        See inactivate
+        :param i_object:
+        :return: None
+        :rtype: None
+        """
+        self.inactivate(i_object.com_object)
 
-    def find_object_by_name(self, i_obj_name):
+    def find_object_by_name(self, i_obj_name: str) -> AnyObject:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -648,13 +676,15 @@ class Part(AnyObject):
 
         :param str i_obj_name:
         :return: AnyObject
+        :rtype: AnyObject
         """
+
         if self.part.FindObjectByName(i_obj_name):
             return AnyObject(self.part.FindObjectByName(i_obj_name))
+        else:
+            self.logger.warning('Could not find object.')
 
-        return None
-
-    def get_customer_factory(self, i_factory_iid=None):
+    def get_customer_factory(self, i_factory_iid: str) -> Factory:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -671,10 +701,11 @@ class Part(AnyObject):
 
         :param str i_factory_iid:
         :return: Factory
+        :rtype: Factory
         """
         return Factory(self.part.GetCustomerFactory(i_factory_iid))
 
-    def inactivate(self, i_object=None):
+    def inactivate(self, i_object: AnyObject) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -698,10 +729,11 @@ class Part(AnyObject):
 
         :param AnyObject i_object:
         :return: None
+        :rtype: None
         """
         return self.part.Inactivate(i_object.com_object)
 
-    def is_inactive(self, i_object=None):
+    def is_inactive(self, i_object: AnyObject) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -725,10 +757,11 @@ class Part(AnyObject):
 
         :param AnyObject i_object:
         :return: bool
+        :rtype: bool
         """
         return self.part.IsInactive(i_object.com_object)
 
-    def is_up_to_date(self, i_object):
+    def is_up_to_date(self, i_object: AnyObject) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -753,10 +786,11 @@ class Part(AnyObject):
 
         :param AnyObject i_object:
         :return: bool
+        :rtype: bool
         """
         return self.part.IsUpToDate(i_object.com_object)
 
-    def path(self):
+    def path(self) -> Path:
         """
 
         Returns the pathlib.Path() object of the document fullname.
@@ -769,10 +803,11 @@ class Part(AnyObject):
         .CATPart
 
         :return: Path()
+        :rtype: Path()
         """
         return Path(self.full_name)
 
-    def update(self):
+    def update(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -789,10 +824,11 @@ class Part(AnyObject):
                 |          partRoot.Update
 
         :return: None
+        :rtype: None
         """
         return self.part.Update()
 
-    def update_object(self, i_object):
+    def update_object(self, i_object: AnyObject) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -816,6 +852,7 @@ class Part(AnyObject):
 
         :param AnyObject i_object:
         :return: None
+        :rtype: None
         """
         return self.part.UpdateObject(i_object.com_object)
 

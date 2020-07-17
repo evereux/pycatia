@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class PartInfrastructureSettingAtt(SettingController):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -1996,7 +1995,8 @@ class PartInfrastructureSettingAtt(SettingController):
         :return: bool
         :rtype: bool
         """
-        return self.part_infrastructure_setting_att.GetColorSynchronizationModeOnSubElementsInfo(io_admin_level, io_locked)
+        return self.part_infrastructure_setting_att.GetColorSynchronizationModeOnSubElementsInfo(io_admin_level,
+                                                                                                 io_locked)
 
     def get_colors3_d_experience_management_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
@@ -2138,7 +2138,8 @@ class PartInfrastructureSettingAtt(SettingController):
         :return: bool
         :rtype: bool
         """
-        return self.part_infrastructure_setting_att.GetContextualFeaturesSelectableAtCreationInfo(io_admin_level, io_locked)
+        return self.part_infrastructure_setting_att.GetContextualFeaturesSelectableAtCreationInfo(io_admin_level,
+                                                                                                  io_locked)
 
     def get_default_colors_editability_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
@@ -2280,7 +2281,8 @@ class PartInfrastructureSettingAtt(SettingController):
         :return: bool
         :rtype: bool
         """
-        return self.part_infrastructure_setting_att.GetExpandSketchBasedFeaturesNodeAtCreationInfo(io_admin_level, io_locked)
+        return self.part_infrastructure_setting_att.GetExpandSketchBasedFeaturesNodeAtCreationInfo(io_admin_level,
+                                                                                                   io_locked)
 
     def get_external_references_as_visible_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
@@ -2352,7 +2354,8 @@ class PartInfrastructureSettingAtt(SettingController):
         :return: bool
         :rtype: bool
         """
-        return self.part_infrastructure_setting_att.GetExternalReferencesAssemblyRootContextInfo(io_admin_level, io_locked)
+        return self.part_infrastructure_setting_att.GetExternalReferencesAssemblyRootContextInfo(io_admin_level,
+                                                                                                 io_locked)
 
     def get_external_references_node_in_tree_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
@@ -2530,7 +2533,8 @@ class PartInfrastructureSettingAtt(SettingController):
         :return: bool
         :rtype: bool
         """
-        return self.part_infrastructure_setting_att.GetLinkedExternalReferencesOnlyOnPublicationInfo(io_admin_level, io_locked)
+        return self.part_infrastructure_setting_att.GetLinkedExternalReferencesOnlyOnPublicationInfo(io_admin_level,
+                                                                                                     io_locked)
 
     def get_linked_external_references_warning_at_creation_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
@@ -2566,7 +2570,8 @@ class PartInfrastructureSettingAtt(SettingController):
         :return: bool
         :rtype: bool
         """
-        return self.part_infrastructure_setting_att.GetLinkedExternalReferencesWarningAtCreationInfo(io_admin_level, io_locked)
+        return self.part_infrastructure_setting_att.GetLinkedExternalReferencesWarningAtCreationInfo(io_admin_level,
+                                                                                                     io_locked)
 
     def get_naming_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
@@ -2812,7 +2817,8 @@ class PartInfrastructureSettingAtt(SettingController):
         :return: bool
         :rtype: bool
         """
-        return self.part_infrastructure_setting_att.GetOnlyCurrentOperatedSolidSetInGeometryInfo(io_admin_level, io_locked)
+        return self.part_infrastructure_setting_att.GetOnlyCurrentOperatedSolidSetInGeometryInfo(io_admin_level,
+                                                                                                 io_locked)
 
     def get_only_current_solid_set_in_geometry_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
@@ -4872,4 +4878,4 @@ class PartInfrastructureSettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'PartInfrastructureSettingAtt(name="{ self.name }")'
+        return f'PartInfrastructureSettingAtt(name="{self.name}")'

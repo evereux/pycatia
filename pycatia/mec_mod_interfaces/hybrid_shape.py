@@ -33,7 +33,7 @@ class HybridShape(AnyObject):
         self.hybrid_shape = com_object
 
     @property
-    def thickness(self) -> HybridShape:
+    def thickness(self) -> 'HybridShape':
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -58,7 +58,7 @@ class HybridShape(AnyObject):
 
         return HybridShape(self.hybrid_shape.Thickness)
 
-    def append_hybrid_shape(self, i_hybrid_shape: HybridShape) -> None:
+    def append_hybrid_shape(self, i_hybrid_shape: 'HybridShape') -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))

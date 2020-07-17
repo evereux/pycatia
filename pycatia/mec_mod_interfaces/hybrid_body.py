@@ -12,13 +12,13 @@
 from pycatia.mec_mod_interfaces.bodies import Bodies
 from pycatia.mec_mod_interfaces.geometric_elements import GeometricElements
 from pycatia.mec_mod_interfaces.hybrid_bodies import HybridBodies
+from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 from pycatia.mec_mod_interfaces.hybrid_shapes import HybridShapes
 from pycatia.mec_mod_interfaces.sketches import Sketches
 from pycatia.system_interfaces.any_object import AnyObject
 
 
 class HybridBody(AnyObject):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
