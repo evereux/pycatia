@@ -13,7 +13,6 @@ from pycatia.mec_mod_interfaces.boundary import Boundary
 
 
 class Face(Boundary):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -60,9 +59,6 @@ class Face(Boundary):
                 |      Set SecondFace = Selection.Item(1).Value
                 |      Set FaceFillet = ShapeFactory.AddNewFaceFillet(FirstFace,SecondFace,5.0)
                 |      Document.Part.Update
-                |
-                |
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
 
     """
 
@@ -71,4 +67,4 @@ class Face(Boundary):
         self.face = com_object
 
     def __repr__(self):
-        return f'Face(name="{ self.name }")'
+        return f'Face(name="{self.name}")'

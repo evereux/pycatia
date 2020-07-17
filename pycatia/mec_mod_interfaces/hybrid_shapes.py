@@ -12,6 +12,7 @@
 from pycatia.mec_mod_interfaces.boundary import Boundary
 from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 from pycatia.system_interfaces.collection import Collection
+from pycatia.types import cat_variant
 
 
 class HybridShapes(Collection):
@@ -31,7 +32,7 @@ class HybridShapes(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=HybridShape)
         self.hybrid_shapes = com_object
 
     def get_boundary(self, i_label: str) -> Boundary:
@@ -57,7 +58,7 @@ class HybridShapes(Collection):
         """
         return Boundary(self.hybrid_shapes.GetBoundary(i_label))
 
-    def item(self, i_index: CATVariant) -> HybridShape:
+    def item(self, i_index: cat_variant) -> HybridShape:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
@@ -88,11 +89,11 @@ class HybridShapes(Collection):
                 |          Set ThisHybridShape = CATIA.ActiveDocument.HybridShapes.Item(3)
                 |          Set ThatHybridShape = CATIA.ActiveDocument.HybridShapes.Item("MyHybridShape")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: HybridShape
         :rtype: HybridShape
         """
-        return HybridShape(self.hybrid_shapes.Item(i_index.com_object))
+        return HybridShape(self.hybrid_shapes.Item(i_index))
 
     def __repr__(self):
         return f'HybridShapes(name="{self.name}")'

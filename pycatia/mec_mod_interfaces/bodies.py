@@ -11,10 +11,10 @@
 
 from pycatia.mec_mod_interfaces.body import Body
 from pycatia.system_interfaces.collection import Collection
+from pycatia.types import cat_variant
 
 
 class Bodies(Collection):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -58,7 +58,7 @@ class Bodies(Collection):
         """
         return Body(self.bodies.Add())
 
-    def item(self, i_index: CATVariant) -> Body:
+    def item(self, i_index: cat_variant) -> Body:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
@@ -88,11 +88,11 @@ class Bodies(Collection):
                 |          Set ThisBody = BodyColl.Item(5)
                 |          Set ThatBody = BodyColl.Item("MyBody")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: Body
         :rtype: Body
         """
-        return Body(self.bodies.Item(i_index.com_object))
+        return Body(self.bodies.Item(i_index))
 
     def __repr__(self):
         return f'Bodies(name="{self.name}")'

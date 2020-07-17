@@ -13,7 +13,6 @@ from pycatia.mec_mod_interfaces.boundary import Boundary
 
 
 class Vertex(Boundary):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -65,10 +64,7 @@ class Vertex(Boundary):
                 |      HybridBody.AppendHybridShape hybridShapeLinePtPt
                 |      Document.Part.InWorkObject = hybridShapeLinePtPt
                 |      Document.Part.Update 
-                |      
-                | 
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
-    
+
     """
 
     def __init__(self, com_object):
@@ -76,4 +72,4 @@ class Vertex(Boundary):
         self.vertex = com_object
 
     def __repr__(self):
-        return f'Vertex(name="{ self.name }")'
+        return f'Vertex(name="{self.name}")'

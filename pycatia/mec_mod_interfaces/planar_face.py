@@ -13,7 +13,6 @@ from pycatia.mec_mod_interfaces.face import Face
 
 
 class PlanarFace(Face):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -65,7 +64,9 @@ class PlanarFace(Face):
                 |      element",true)
                 |      if (Status = "cancel") then Exit Sub
                 |      Set PartingElement = Selection.Item(1).Value
-                |      Set Draft = ShapeFactory.AddNewDraft(FaceToDraft,NeutralFace,0,PartingElement,0.0,0.0,1.0,0,5.0,0)
+                |      Set Draft = ShapeFactory.AddNewDraft(
+                |                      FaceToDraft,NeutralFace,0,PartingElement,0.0,0.0,1.0,0,5.0,0
+                |                  )
                 |      Set DraftDomains = Draft.DraftDomains
                 |      Set DraftDomain = DraftDomains.Item(1)
                 |      DraftDomain.SetPullingDirection 0.0, 0.0,1.0
@@ -192,4 +193,4 @@ class PlanarFace(Face):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'PlanarFace(name="{ self.name }")'
+        return f'PlanarFace(name="{self.name}")'
