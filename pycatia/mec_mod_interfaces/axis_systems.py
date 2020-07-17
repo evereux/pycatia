@@ -11,6 +11,7 @@
 
 from pycatia.mec_mod_interfaces.axis_system import AxisSystem
 from pycatia.system_interfaces.collection import Collection
+from pycatia.types import cat_variant
 
 
 class AxisSystems(Collection):
@@ -58,7 +59,7 @@ class AxisSystems(Collection):
         """
         return AxisSystem(self.axis_systems.Add())
 
-    def item(self, i_index: CATVariant) -> AxisSystem:
+    def item(self, i_index: cat_variant) -> AxisSystem:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
@@ -89,11 +90,11 @@ class AxisSystems(Collection):
                 |          Set ThisAxisSystem = AxisSystemColl.Item(5)
                 |          Set ThatAxisSystem = AxisSystemColl.Item("MyAxisSystem")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: AxisSystem
         :rtype: AxisSystem
         """
-        return AxisSystem(self.axis_systems.Item(i_index.com_object))
+        return AxisSystem(self.axis_systems.Item(i_index))
 
     def __repr__(self):
         return f'AxisSystems(name="{self.name}")'

@@ -28,7 +28,7 @@ class TriDimFeatVertexOrBiDimFeatVertex(Vertex):
                 |                                TriDimFeatVertexOrBiDimFeatVertex
                 | 
                 | 0-D boundary belonging to a feature whose topological result is three
-                | dimensional or two dimentional.
+                | dimensional or two dimensional.
                 | Role: This Boundary object may be, for example, the corner of a Pad resulting
                 | from the extrusion of a square.
                 | You will create a TriDimFeatVertexOrBiDimFeatVertex object using the
@@ -37,9 +37,7 @@ class TriDimFeatVertexOrBiDimFeatVertex(Vertex):
                 | operator.
                 | The lifetime of a TriDimFeatVertexOrBiDimFeatVertex object is limited, see
                 | Boundary.
-                | 
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
-    
+
     """
 
     def __init__(self, com_object):

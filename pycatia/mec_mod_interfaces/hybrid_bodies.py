@@ -11,6 +11,7 @@
 
 from pycatia.mec_mod_interfaces.hybrid_body import HybridBody
 from pycatia.system_interfaces.collection import Collection
+from pycatia.types import cat_variant
 
 
 class HybridBodies(Collection):
@@ -57,7 +58,7 @@ class HybridBodies(Collection):
         """
         return HybridBody(self.hybrid_bodies.Add())
 
-    def item(self, i_index: CATVariant) -> HybridBody:
+    def item(self, i_index: cat_variant) -> HybridBody:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
@@ -88,11 +89,11 @@ class HybridBodies(Collection):
                 |          Set ThisHybridBody = hybridBodyColl.Item(5)
                 |          Set ThatHybridBody = hybridBodyColl.Item("MyHybridBody")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: HybridBody
         :rtype: HybridBody
         """
-        return HybridBody(self.hybrid_bodies.Item(i_index.com_object))
+        return HybridBody(self.hybrid_bodies.Item(i_index))
 
     def __repr__(self):
         return f'HybridBodies(name="{self.name}")'
