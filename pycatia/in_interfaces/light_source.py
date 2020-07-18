@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -9,26 +9,27 @@
         
 """
 
-from pycatia.system_interfaces.setting_controller import SettingController
+from pycatia.system_interfaces.any_object import AnyObject
 
 
-class LightSource(SettingController):
+class LightSource(AnyObject):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
                 |         System.CATBaseUnknown
                 |             System.CATBaseDispatch
                 |                 System.AnyObject
-                |                     System.SettingController
-                |                         GeneralSessionSettingAtt
+                |                     LightSource
                 | 
-                | Setting controller for the General property tab page.
-                | Role: This interface is implemented by a component which represents the
-                | controller of the general settings.
+                | Represents the light source.
+                | The light source is the object that stores lighting data used by a viewer to
+                | display a scene where a document is presented. Two kinds of light sources are
+                | available: an infinite light source and a neon lighting system simulating a set
+                | of parallel neon tubes.
     
     """
 
@@ -36,497 +37,73 @@ class LightSource(SettingController):
         super().__init__(com_object)
         self.light_source = com_object
 
-    @property
-    def auto_save(self):
+    def get_direction(self, o_direction: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property AutoSave() As CATGenDataSave
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub GetDirection(CATSafeArrayVariant oDirection)
                 | 
-                |     Returns the data save parameter.
-
-        :return: enum cat_gen_data_save
-        """
-
-        return self.light_source.AutoSave
-
-    @auto_save.setter
-    def auto_save(self, value):
-        """
-        :param enum cat_gen_data_save value:
-        """
-
-        self.light_source.AutoSave = value
-
-    @property
-    def conferencing(self):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property Conferencing() As CATGenConferencing
+                |     Returns the lighting direction as an array of 3 variants. This value is
+                |     available with an infinite light source only.
                 | 
-                |     Returns the conference driver parameter.
-
-        :return: enum cat_gen_conferencing
-        """
-
-        return self.light_source.Conferencing
-
-    @conferencing.setter
-    def conferencing(self, value):
-        """
-        :param enum cat_gen_conferencing value:
-        """
-
-        self.light_source.Conferencing = value
-
-    @property
-    def drag_drop(self):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property DragDrop() As boolean
+                |     Example:
+                |         This example gets the lighting direction of the LightSource light
+                |         source to the direction with components (5,8,-2).
                 | 
-                |     Returns the drag & drop parameter.
+                |          Dim direction(2)
+                |          LightSource.GetDirection direction
 
-        :return: bool
-        """
-
-        return self.light_source.DragDrop
-
-    @drag_drop.setter
-    def drag_drop(self, value):
-        """
-        :param bool value:
-        """
-
-        self.light_source.DragDrop = value
-
-    @property
-    def ref_doc(self):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property RefDoc() As boolean
-                | 
-                |     Returns the referenced documents parameter.
-
-        :return: bool
-        """
-
-        return self.light_source.RefDoc
-
-    @ref_doc.setter
-    def ref_doc(self, value):
-        """
-        :param bool value:
-        """
-
-        self.light_source.RefDoc = value
-
-    @property
-    def time_roll(self):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property TimeRoll() As long
-                | 
-                |     Returns the data save parameter (in milliseconds).
-
-        :return: int
-        """
-
-        return self.light_source.TimeRoll
-
-    @time_roll.setter
-    def time_roll(self, value):
-        """
-        :param int value:
-        """
-
-        self.light_source.TimeRoll = value
-
-    @property
-    def ui_style(self):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property UIStyle() As CATGenUIStyle
-                | 
-                |     Returns the user interface style parameter.
-
-        :return: enum cat_gen_ui_style
-        """
-
-        return self.light_source.UIStyle
-
-    @ui_style.setter
-    def ui_style(self, value):
-        """
-        :param enum cat_gen_ui_style value:
-        """
-
-        self.light_source.UIStyle = value
-
-    def get_auto_save_info(self, io_admin_level, io_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func GetAutoSaveInfo(CATBSTR ioAdminLevel,
-                | CATBSTR ioLocked) As boolean
-                | 
-                |     Retrieves environment informations for the data save
-                |     parameter.
-                |     Role:Retrieves the state of the data save parameter in the current
-                |     environment.
-                | 
-                |     Parameters:
-                | 
-                |         ioAdminLevel
-                | 
-                |             If the parameter is locked, AdminLevel gives the administration
-                |             level that imposes the value of the parameter.
-                |             If the parameter is not locked, AdminLevel gives the administration
-                |             level that will give the value of the parameter after a reset.
-                |             
-                |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
-                |     Returns:
-                |         Indicates if the parameter has been explicitly modified or remain to
-                |         the administrated value.
-
-        :param str io_admin_level:
-        :param str io_locked:
-        :return: bool
-        """
-        return self.light_source.GetAutoSaveInfo(io_admin_level, io_locked)
-
-    def get_conferencing_info(self, io_admin_level, io_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func GetConferencingInfo(CATBSTR ioAdminLevel,
-                | CATBSTR ioLocked) As boolean
-                | 
-                |     Retrieves environment informations for the conference driver
-                |     parameter.
-                |     Role:Retrieves the state of the conference driver parameter in the current
-                |     environment.
-                | 
-                |     Parameters:
-                | 
-                |         ioAdminLevel
-                | 
-                |             If the parameter is locked, AdminLevel gives the administration
-                |             level that imposes the value of the parameter.
-                |             If the parameter is not locked, AdminLevel gives the administration
-                |             level that will give the value of the parameter after a reset.
-                |             
-                |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
-                |     Returns:
-                |         Indicates if the parameter has been explicitly modified or remain to
-                |         the administrated value.
-
-        :param str io_admin_level:
-        :param str io_locked:
-        :return: bool
-        """
-        return self.light_source.GetConferencingInfo(io_admin_level, io_locked)
-
-    def get_drag_drop_info(self, io_admin_level, io_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func GetDragDropInfo(CATBSTR ioAdminLevel,
-                | CATBSTR ioLocked) As boolean
-                | 
-                |     Retrieves environment informations for the drag & drop
-                |     parameter.
-                |     Role:Retrieves the state of the drag & drop parameter in the current
-                |     environment.
-                | 
-                |     Parameters:
-                | 
-                |         ioAdminLevel
-                | 
-                |             If the parameter is locked, AdminLevel gives the administration
-                |             level that imposes the value of the parameter.
-                |             If the parameter is not locked, AdminLevel gives the administration
-                |             level that will give the value of the parameter after a reset.
-                |             
-                |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
-                |     Returns:
-                |         Indicates if the parameter has been explicitly modified or remain to
-                |         the administrated value.
-
-        :param str io_admin_level:
-        :param str io_locked:
-        :return: bool
-        """
-        return self.light_source.GetDragDropInfo(io_admin_level, io_locked)
-
-    def get_ref_doc_info(self, io_admin_level, io_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func GetRefDocInfo(CATBSTR ioAdminLevel,
-                | CATBSTR ioLocked) As boolean
-                | 
-                |     Retrieves environment informations for the referenced documents
-                |     parameter.
-                |     Role:Retrieves the state of the referenced documents parameter in the
-                |     current environment.
-                | 
-                |     Parameters:
-                | 
-                |         ioAdminLevel
-                | 
-                |             If the parameter is locked, AdminLevel gives the administration
-                |             level that imposes the value of the parameter.
-                |             If the parameter is not locked, AdminLevel gives the administration
-                |             level that will give the value of the parameter after a reset.
-                |             
-                |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
-                |     Returns:
-                |         Indicates if the parameter has been explicitly modified or remain to
-                |         the administrated value.
-
-        :param str io_admin_level:
-        :param str io_locked:
-        :return: bool
-        """
-        return self.light_source.GetRefDocInfo(io_admin_level, io_locked)
-
-    def get_ui_style_info(self, io_admin_level, io_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func GetUIStyleInfo(CATBSTR ioAdminLevel,
-                | CATBSTR ioLocked) As boolean
-                | 
-                |     Retrieves environment informations for the user interface style
-                |     parameter.
-                |     Role:Retrieves the state of the user interface style parameter in the
-                |     current environment.
-                | 
-                |     Parameters:
-                | 
-                |         ioAdminLevel
-                | 
-                |             If the parameter is locked, AdminLevel gives the administration
-                |             level that imposes the value of the parameter.
-                |             If the parameter is not locked, AdminLevel gives the administration
-                |             level that will give the value of the parameter after a reset.
-                |             
-                |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
-                |     Returns:
-                |         Indicates if the parameter has been explicitly modified or remain to
-                |         the administrated value.
-
-        :param str io_admin_level:
-        :param str io_locked:
-        :return: bool
-        """
-        return self.light_source.GetUIStyleInfo(io_admin_level, io_locked)
-
-    def set_auto_save_lock(self, i_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub SetAutoSaveLock(boolean iLocked)
-                | 
-                |     Locks or unlocks the data save parameter.
-                |     Role:Locks or unlocks the data save parameter if it is possible in the
-                |     current administrative context. In user mode this method will always return
-                |     E_FAIL.
-                | 
-                |     Parameters:
-                | 
-                |         iLocked
-                |             the locking operation to be performed Legal
-                |             values:
-                |             TRUE : to lock the parameter.
-                |             FALSE: to unlock the parameter.
-
-        :param bool i_locked:
+        :param tuple o_direction:
         :return: None
+        :rtype: None
         """
-        return self.light_source.SetAutoSaveLock(i_locked)
+        return self.light_source.GetDirection(o_direction)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_auto_save_lock'
+        # # vba_function_name = 'get_direction'
         # # vba_code = """
-        # # Public Function set_auto_save_lock(light_source)
-        # #     Dim iLocked (2)
-        # #     light_source.SetAutoSaveLock iLocked
-        # #     set_auto_save_lock = iLocked
+        # # Public Function get_direction(light_source)
+        # #     Dim oDirection (2)
+        # #     light_source.GetDirection oDirection
+        # #     get_direction = oDirection
         # # End Function
         # # """
 
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_conferencing_lock(self, i_locked):
+    def put_direction(self, o_direction: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub SetConferencingLock(boolean iLocked)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub PutDirection(CATSafeArrayVariant oDirection)
                 | 
-                |     Locks or unlocks the conference driver parameter.
-                |     Role:Locks or unlocks the conference driver parameter if it is possible in
-                |     the current administrative context. In user mode this method will always return
-                |     E_FAIL.
+                |     Defines the lighting direction as an array of 3 variants. This value can be
+                |     set with an infinite light source only.
                 | 
-                |     Parameters:
+                |     Example:
+                |         This example defines the lighting direction of the LightSource light
+                |         source to the direction with components (5,8,-2).
                 | 
-                |         iLocked
-                |             the locking operation to be performed Legal
-                |             values:
-                |             TRUE : to lock the parameter.
-                |             FALSE: to unlock the parameter.
+                |          LightSource.PutDirection Array(5,8,-2)
 
-        :param bool i_locked:
+        :param tuple o_direction:
         :return: None
+        :rtype: None
         """
-        return self.light_source.SetConferencingLock(i_locked)
+        return self.light_source.PutDirection(o_direction)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_conferencing_lock'
+        # # vba_function_name = 'put_direction'
         # # vba_code = """
-        # # Public Function set_conferencing_lock(light_source)
-        # #     Dim iLocked (2)
-        # #     light_source.SetConferencingLock iLocked
-        # #     set_conferencing_lock = iLocked
-        # # End Function
-        # # """
-
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def set_drag_drop_lock(self, i_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub SetDragDropLock(boolean iLocked)
-                | 
-                |     Locks or unlocks the drag & drop parameter.
-                |     Role:Locks or unlocks the drag & drop parameter if it is possible in the
-                |     current administrative context. In user mode this method will always return
-                |     E_FAIL.
-                | 
-                |     Parameters:
-                | 
-                |         iLocked
-                |             the locking operation to be performed Legal
-                |             values:
-                |             TRUE : to lock the parameter.
-                |             FALSE: to unlock the parameter.
-
-        :param bool i_locked:
-        :return: None
-        """
-        return self.light_source.SetDragDropLock(i_locked)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_drag_drop_lock'
-        # # vba_code = """
-        # # Public Function set_drag_drop_lock(light_source)
-        # #     Dim iLocked (2)
-        # #     light_source.SetDragDropLock iLocked
-        # #     set_drag_drop_lock = iLocked
-        # # End Function
-        # # """
-
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def set_ref_doc_lock(self, i_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub SetRefDocLock(boolean iLocked)
-                | 
-                |     Locks or unlocks the referenced documents parameter.
-                |     Role:Locks or unlocks the referenced documents parameter if it is possible
-                |     in the current administrative context. In user mode this method will always
-                |     return E_FAIL.
-                | 
-                |     Parameters:
-                | 
-                |         iLocked
-                |             the locking operation to be performed Legal
-                |             values:
-                |             TRUE : to lock the parameter.
-                |             FALSE: to unlock the parameter.
-
-        :param bool i_locked:
-        :return: None
-        """
-        return self.light_source.SetRefDocLock(i_locked)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_ref_doc_lock'
-        # # vba_code = """
-        # # Public Function set_ref_doc_lock(light_source)
-        # #     Dim iLocked (2)
-        # #     light_source.SetRefDocLock iLocked
-        # #     set_ref_doc_lock = iLocked
-        # # End Function
-        # # """
-
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def set_ui_style_lock(self, i_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub SetUIStyleLock(boolean iLocked)
-                | 
-                |     Locks or unlocks the user interface style parameter.
-                |     Role:Locks or unlocks the user interface style parameter if it is possible
-                |     in the current administrative context. In user mode this method will always
-                |     return E_FAIL.
-                | 
-                |     Parameters:
-                | 
-                |         iLocked
-                |             the locking operation to be performed Legal
-                |             values:
-                |             TRUE : to lock the parameter.
-                |             FALSE: to unlock the parameter.
-
-        :param bool i_locked:
-        :return: None
-        """
-        return self.light_source.SetUIStyleLock(i_locked)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_ui_style_lock'
-        # # vba_code = """
-        # # Public Function set_ui_style_lock(light_source)
-        # #     Dim iLocked (2)
-        # #     light_source.SetUIStyleLock iLocked
-        # #     set_ui_style_lock = iLocked
+        # # Public Function put_direction(light_source)
+        # #     Dim oDirection (2)
+        # #     light_source.PutDirection oDirection
+        # #     put_direction = oDirection
         # # End Function
         # # """
 

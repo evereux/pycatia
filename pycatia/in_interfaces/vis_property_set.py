@@ -118,10 +118,10 @@ class VisPropertySet(AnyObject):
         super().__init__(com_object)
         self.vis_property_set = com_object
 
-    def get_layer(self):
+    def get_layer(self, o_layer_type: int, o_layer_value: int) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetLayer(CatVisLayerType oLayerType,
                 | long oLayerValue) As CatVisPropertyStatus
                 | 
@@ -159,14 +159,17 @@ class VisPropertySet(AnyObject):
                 |          MsgBox "layer =" & layer
                 |          End If
 
-        :return: (cat_vis_property_status, cat_vis_layer_type, int)
+        :param int o_layer_type:
+        :param int o_layer_value:
+        :return: int
+        :rtype: int
         """
-        return self.vis_property_set.GetLayer()
+        return self.vis_property_set.GetLayer(o_layer_type, o_layer_value)
 
-    def get_pick(self):
+    def get_pick(self, o_pick: int) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPick(CatVisPropertyPick oPick) As
                 | CatVisPropertyStatus
                 | 
@@ -184,14 +187,16 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetPick pickstate
                 |          MsgBox "pick = " & pickstate
 
-        :return: (cat_vis_property_pick)
+        :param int o_pick:
+        :return: int
+        :rtype: int
         """
-        return self.vis_property_set.GetPick()[0]
+        return self.vis_property_set.GetPick(o_pick)
 
-    def get_real_color(self):
+    def get_real_color(self, o_red: int, o_green: int, o_blue: int) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetRealColor(long oRed,
                 | long oGreen,
                 | long oBlue) As CatVisPropertyStatus
@@ -228,15 +233,18 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetRealColor r, g, b 
                 |          MsgBox "r = " & r & " g = " & g & " b = " & b
 
-
-        :return: (int(cat_vis_property_status), int, int, int)
+        :param int o_red:
+        :param int o_green:
+        :param int o_blue:
+        :return: int
+        :rtype: int
         """
-        return self.vis_property_set.GetRealColor()
+        return self.vis_property_set.GetRealColor(o_red, o_green, o_blue)
 
-    def get_real_inheritance(self, property_type):
+    def get_real_inheritance(self, i_property_type: int, o_inheritance: int) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetRealInheritance(CatVisPropertyType iPropertyType,
                 | long oInheritance) As CatVisPropertyStatus
                 | 
@@ -283,19 +291,17 @@ class VisPropertySet(AnyObject):
                 |          MsgBox "Inheritance : linetype = " & inhLineType & "width =" & inhWidth & "Colour ="
                 |                 & inhColor & "Opacity =" & inhOpacity
 
-
-        0 = no inheritance
-        1 = inheritance
-
-        :param property_type: enum cat_vis_property_type
+        :param int i_property_type:
+        :param int o_inheritance:
         :return: int
+        :rtype: int
         """
-        return self.vis_property_set.GetRealInheritance(property_type)[0]
+        return self.vis_property_set.GetRealInheritance(i_property_type, o_inheritance)
 
-    def get_real_line_type(self):
+    def get_real_line_type(self, o_line_type: int) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetRealLineType(long oLineType) As
                 | CatVisPropertyStatus
                 | 
@@ -332,14 +338,16 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetRealLineType linetype
                 |          MsgBox "linetype = " & linetype
 
-        :return: (cat_vis_property_status, int)
+        :param int o_line_type:
+        :return: int
+        :rtype: int
         """
-        return self.vis_property_set.GetRealLineType()
+        return self.vis_property_set.GetRealLineType(o_line_type)
 
-    def get_real_opacity(self):
+    def get_real_opacity(self, o_opacity: int) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetRealOpacity(long oOpacity) As CatVisPropertyStatus
                 | 
                 |     Retrieves the real opacity for the current selection.
@@ -374,14 +382,16 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetRealOpacity op 
                 |          MsgBox "opacity = " & op
 
-        :return: (cat_vis_property_status, int)
+        :param int o_opacity:
+        :return: int
+        :rtype: int
         """
-        return self.vis_property_set.GetRealOpacity()
+        return self.vis_property_set.GetRealOpacity(o_opacity)
 
-    def get_real_width(self):
+    def get_real_width(self, o_line_width: int) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetRealWidth(long oLineWidth) As CatVisPropertyStatus
                 | 
                 |     Retrieves the real line width for the current selection.
@@ -417,14 +427,16 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetRealWidth width
                 |          MsgBox "width = " & width
 
-        :return: (cat_vis_property_status, int)
+        :param int o_line_width:
+        :return: int
+        :rtype: int
         """
-        return self.vis_property_set.GetRealWidth()
+        return self.vis_property_set.GetRealWidth(o_line_width)
 
-    def get_show(self):
+    def get_show(self, o_show: int) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetShow(CatVisPropertyShow oShow) As
                 | CatVisPropertyStatus
                 | 
@@ -442,14 +454,16 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetShow showstate
                 |          MsgBox "show = " & showstate
 
-        :return: (cat_vis_property_status, int)
+        :param int o_show:
+        :return: int
+        :rtype: int
         """
-        return self.vis_property_set.GetShow()
+        return self.vis_property_set.GetShow(o_show)
 
-    def get_symbol_type(self):
+    def get_symbol_type(self, o_symbol_type: int) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetSymbolType(long oSymbolType) As
                 | CatVisPropertyStatus
                 | 
@@ -476,21 +490,24 @@ class VisPropertySet(AnyObject):
                 | 
                 |           The following sample shows how to retrieve symbol line type of
                 |           current selection.
-                |
+                |          
+                | 
                 |          Dim symbol
                 |          symbol = CLng(0) 
                 |          Set visProperties1 = CATIA.ActiveDocument.Selection.VisProperties 
                 |          visProperties1.GetSymbolType symbol
                 |          MsgBox "Symbol = " & symbol
 
-        :return: (cat_vis_property_status, int)
+        :param int o_symbol_type:
+        :return: int
+        :rtype: int
         """
-        return self.vis_property_set.GetSymbolType()
+        return self.vis_property_set.GetSymbolType(o_symbol_type)
 
-    def get_visible_color(self):
+    def get_visible_color(self, o_red: int, o_green: int, o_blue: int) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetVisibleColor(long oRed,
                 | long oGreen,
                 | long oBlue) As CatVisPropertyStatus
@@ -531,14 +548,18 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetVisibleColor r, g, b 
                 |          MsgBox "r = " & r & " g = " & g & " b = " & b
 
-        :return: (cat_vis_property_status, int, int, int)
+        :param int o_red:
+        :param int o_green:
+        :param int o_blue:
+        :return: int
+        :rtype: int
         """
-        return self.vis_property_set.GetVisibleColor()
+        return self.vis_property_set.GetVisibleColor(o_red, o_green, o_blue)
 
-    def get_visible_inheritance(self, property_type):
+    def get_visible_inheritance(self, i_property_type: int, o_inheritance: int) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetVisibleInheritance(CatVisPropertyType
                 | iPropertyType,
                 | long oInheritance) As CatVisPropertyStatus
@@ -569,15 +590,17 @@ class VisPropertySet(AnyObject):
                 |                 The inheritance flag for iPropertyType is not the same for all
                 |                 elements of the current selection, so oInheritance is not valid
 
-        :param int(cat_vis_property_type) property_type:
-        :return: (cat_vis_property_status, int)
+        :param int i_property_type:
+        :param int o_inheritance:
+        :return: int
+        :rtype: int
         """
-        return self.vis_property_set.GetVisibleInheritance(property_type)
+        return self.vis_property_set.GetVisibleInheritance(i_property_type, o_inheritance)
 
-    def get_visible_line_type(self):
+    def get_visible_line_type(self, o_line_type: int) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetVisibleLineType(long oLineType) As
                 | CatVisPropertyStatus
                 | 
@@ -613,15 +636,16 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetVisibleLineType linetype
                 |          MsgBox "linetype = " & linetype
 
-
-        :return: (cat_vis_property_status, int)
+        :param int o_line_type:
+        :return: int
+        :rtype: int
         """
-        return self.vis_property_set.GetVisibleLineType()
+        return self.vis_property_set.GetVisibleLineType(o_line_type)
 
-    def get_visible_opacity(self):
+    def get_visible_opacity(self, o_opacity: int) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetVisibleOpacity(long oOpacity) As
                 | CatVisPropertyStatus
                 | 
@@ -659,14 +683,16 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetVisibleOpacity op 
                 |          MsgBox "opacity = " & op
 
-        :return: (cat_vis_property_status, int)
+        :param int o_opacity:
+        :return: int
+        :rtype: int
         """
-        return self.vis_property_set.GetVisibleOpacity()
+        return self.vis_property_set.GetVisibleOpacity(o_opacity)
 
-    def get_visible_width(self):
+    def get_visible_width(self, o_line_width: int) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetVisibleWidth(long oLineWidth) As
                 | CatVisPropertyStatus
                 | 
@@ -702,14 +728,16 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetVisibleWidth width
                 |          MsgBox "width = " & width
 
-        :return: (cat_vis_property_status, int)
+        :param int o_line_width:
+        :return:int
+        :rtype: int
         """
-        return self.vis_property_set.GetVisibleWidth()
+        return self.vis_property_set.GetVisibleWidth(o_line_width)
 
-    def set_layer(self, i_layer_type, i_layer_value):
+    def set_layer(self, i_layer_type: int, i_layer_value: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLayer(CatVisLayerType iLayerType,
                 | long iLayerValue)
                 | 
@@ -734,16 +762,17 @@ class VisPropertySet(AnyObject):
                 |          Set visProperties1 = CATIA.ActiveDocument.Selection.VisProperties 
                 |          visProperties1.SetLayer catVisLayerBasic, 100
 
-        :param int(cat_vis_layer_type) i_layer_type:
-        :param int i_layer_value: This value is only used if the cat_vis_layer_type is catVisLayerBasic.
+        :param int i_layer_type:
+        :param int i_layer_value:
         :return: None
+        :rtype: None
         """
         return self.vis_property_set.SetLayer(i_layer_type, i_layer_value)
 
-    def set_pick(self, i_pick):
+    def set_pick(self, i_pick: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPick(CatVisPropertyPick iPick)
                 | 
                 |     Sets the state pick mode for the current selection.
@@ -758,15 +787,16 @@ class VisPropertySet(AnyObject):
                 |          Set visProperties1 = CATIA.ActiveDocument.Selection.VisProperties 
                 |          visProperties1.SetPick catVisPropertyNoPickAttr
 
-        :param int(cat_vis_property_pick) i_pick:
+        :param int i_pick:
         :return: None
+        :rtype: None
         """
         return self.vis_property_set.SetPick(i_pick)
 
-    def set_real_color(self, i_red, i_green, i_blue, i_inheritance):
+    def set_real_color(self, i_red: int, i_green: int, i_blue: int, i_inheritance: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetRealColor(long iRed,
                 | long iGreen,
                 | long iBlue,
@@ -805,13 +835,14 @@ class VisPropertySet(AnyObject):
         :param int i_blue:
         :param int i_inheritance:
         :return: None
+        :rtype: None
         """
         return self.vis_property_set.SetRealColor(i_red, i_green, i_blue, i_inheritance)
 
-    def set_real_line_type(self, i_line_type, i_inheritance):
+    def set_real_line_type(self, i_line_type: int, i_inheritance: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetRealLineType(long iLineType,
                 | long iInheritance)
                 | 
@@ -842,13 +873,14 @@ class VisPropertySet(AnyObject):
         :param int i_line_type:
         :param int i_inheritance:
         :return: None
+        :rtype: None
         """
         return self.vis_property_set.SetRealLineType(i_line_type, i_inheritance)
 
-    def set_real_opacity(self, i_opacity, i_inheritance):
+    def set_real_opacity(self, i_opacity: int, i_inheritance: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetRealOpacity(long iOpacity,
                 | long iInheritance)
                 | 
@@ -878,13 +910,14 @@ class VisPropertySet(AnyObject):
         :param int i_opacity:
         :param int i_inheritance:
         :return: None
+        :rtype: None
         """
         return self.vis_property_set.SetRealOpacity(i_opacity, i_inheritance)
 
-    def set_real_width(self, i_line_width, i_inheritance):
+    def set_real_width(self, i_line_width: int, i_inheritance: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetRealWidth(long iLineWidth,
                 | long iInheritance)
                 | 
@@ -909,20 +942,22 @@ class VisPropertySet(AnyObject):
                 | 
                 |           The following sample shows how to change line width of current
                 |           selection.
-                |
+                |          
+                | 
                 |          Set visProperties1 = CATIA.ActiveDocument.Selection.VisProperties 
                 |          visProperties1.SetRealWidth 4,1
 
         :param int i_line_width:
         :param int i_inheritance:
         :return: None
+        :rtype: None
         """
         return self.vis_property_set.SetRealWidth(i_line_width, i_inheritance)
 
-    def set_show(self, i_show):
+    def set_show(self, i_show: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetShow(CatVisPropertyShow iShow)
                 | 
                 |     Sets the state show mode for the current selection.
@@ -937,15 +972,16 @@ class VisPropertySet(AnyObject):
                 |          Set visProperties1 = CATIA.ActiveDocument.Selection.VisProperties 
                 |          visProperties1.SetShow catVisPropertyNoShowAttr
 
-        :param int(cat_vis_property_show) i_show:
+        :param int i_show:
         :return: None
+        :rtype: None
         """
-        return self.vis_property_set.SetShow(i_show.com_object)
+        return self.vis_property_set.SetShow(i_show)
 
-    def set_symbol_type(self, i_symbol_type):
+    def set_symbol_type(self, i_symbol_type: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSymbolType(long iSymbolType)
                 | 
                 |     Sets the symbol type.
@@ -985,6 +1021,7 @@ class VisPropertySet(AnyObject):
 
         :param int i_symbol_type:
         :return: None
+        :rtype: None
         """
         return self.vis_property_set.SetSymbolType(i_symbol_type)
 

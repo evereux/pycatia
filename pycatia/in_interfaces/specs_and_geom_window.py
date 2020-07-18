@@ -46,10 +46,10 @@ class SpecsAndGeomWindow(Window):
         self.specs_and_geom_window = com_object
 
     @property
-    def layout(self):
+    def layout(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Layout() As CatSpecsAndGeomWindowLayout
                 | 
                 |     Returns or sets the specification and geometry window
@@ -61,24 +61,25 @@ class SpecsAndGeomWindow(Window):
                 | 
                 |          MyCADWindow.Layout = catWindowGeomOnly
 
-        :return: enum cat_specs_and_geom_window_layout
+        :return: int
+        :rtype: int
         """
 
         return self.specs_and_geom_window.Layout
 
     @layout.setter
-    def layout(self, value):
+    def layout(self, value: int):
         """
-        :param enum cat_specs_and_geom_window_layout value:
+        :param int value:
         """
 
         self.specs_and_geom_window.Layout = value
 
     @property
-    def specs_viewer(self):
+    def specs_viewer(self) -> SpecsViewer:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SpecsViewer() As SpecsViewer (Read Only)
                 | 
                 |     Returns the specifications viewer.
@@ -91,6 +92,7 @@ class SpecsAndGeomWindow(Window):
                 |          Set MyViewer = MyCADWindow.SpecsViewer
 
         :return: SpecsViewer
+        :rtype: SpecsViewer
         """
 
         return SpecsViewer(self.specs_and_geom_window.SpecsViewer)

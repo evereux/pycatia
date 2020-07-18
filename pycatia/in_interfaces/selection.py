@@ -11,6 +11,7 @@
 from pywintypes import com_error
 
 from pycatia.exception_handling import CATIAApplicationException
+from pycatia.in_interfaces.document import Document
 from pycatia.in_interfaces.selected_element import SelectedElement
 from pycatia.in_interfaces.vis_property_set import VisPropertySet
 from pycatia.system_interfaces.any_object import AnyObject
@@ -143,12 +144,12 @@ class Selection(AnyObject):
         self.selection = com_object
 
     @property
-    def count(self):
+    def count(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Count() As long (Read Only)
-                |
+                | 
                 |     Deprecated:
                 |         V5R16 #Count2 . The Count and Item Methods have been replaced by the
                 |         Count2 and Item2 methods because they did not process correctly features which
@@ -156,17 +157,18 @@ class Selection(AnyObject):
                 |         document).
 
         :return: int
+        :rtype: int
         """
 
         return self.selection.Count
 
     @property
-    def count2(self):
+    def count2(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Count2() As long (Read Only)
-                |
+                | 
                 |     Returns the number of SelectedElement objects contained by the current
                 |     selection.
                 |     Role: This method returns the number of SelectedElement objects contained
@@ -174,17 +176,18 @@ class Selection(AnyObject):
                 |     automation object associated to a selected feature.
 
         :return: int
+        :rtype: int
         """
 
         return self.selection.Count2
 
     @property
-    def vis_properties(self):
+    def vis_properties(self) -> VisPropertySet:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property VisProperties() As VisPropertySet (Read Only)
-                |
+                | 
                 |     Manages graphic properties on current selection.
                 |     Role: Gives a VisPropertySet automation object so that graphic properties
                 |     of the selected objects can be read or modified.
@@ -193,35 +196,36 @@ class Selection(AnyObject):
                 |     automation will be updated. After the execution of the VisProperties methods
                 |     which consult the selection to give the graphic properties, selected features
                 |     which are not exposed to automation will be consulted.
-                |
+                | 
                 |     Example:
                 |         This example sets in no show all elements of the current
                 |         selection:
-                |
+                | 
                 |          Dim Selection,VisPropertySet
                 |          Set Selection = CATIA.ActiveDocument.Selection
                 |          Set VisPropertySet = Selection.VisProperties
                 |          VisPropertySet.SetShow catVisPropertiesNoShowAttr
 
         :return: VisPropertySet
+        :rtype: VisPropertySet
         """
 
         return VisPropertySet(self.selection.VisProperties)
 
-    def add(self, i_object=None):
+    def add(self, i_object: AnyObject) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Add(AnyObject iObject)
-                |
+                | 
                 |     Creates a SelectedElement object which Value property is the given
                 |     automation object, and adds it to the selection.
                 |     Note: In a product structure aggregating a "Part1 (Part1.1)" Part document,
                 |     if you double-clic Part1 in the spectification tree:
-                |
+                | 
                 |         the "Part Design" workbench becomes active
                 |         the Part1 node is inside a blue button
-                |
+                | 
                 |     Here, Part1 is the UI Active Object.
                 |     Some editors, such as CatalogDocument editors, do not possess any UI Active
                 |     Object.
@@ -250,43 +254,45 @@ class Selection(AnyObject):
                 |             Otherwise: the method will create a SelectedElement object
                 |             corresponding to the first path, in the specification tree, whose leaf node is
                 |             iLeafNode
-                |
+                | 
                 |     Example:
                 |         This example creates a SelectedElement object, which Value property is
                 |         the ObjectToAdd automation object, the SelectedElement being added to the
                 |         current selection.
-                |
+                | 
                 |          CATIA.ActiveDocument.Selection.Add(ObjectToAdd)
 
         :param AnyObject i_object:
         :return: None
+        :rtype: None
         """
         return self.selection.Add(i_object.com_object)
 
-    def clear(self):
+    def clear(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Clear()
-                |
+                | 
                 |     Clears the selection.
-                |
+                | 
                 |     Example:
                 |         This example clears the selection. The selection is then
                 |         empty.
-                |
+                | 
                 |          CATIA.ActiveDocument.Selection.Clear()
 
         :return: None
+        :rtype: None
         """
         return self.selection.Clear()
 
-    def copy(self):
+    def copy(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Copy()
-                |
+                | 
                 |     Copies, in a copy and paste operation.
                 |     Role: Puts the contents of the selection in the clipboard, but leaves the
                 |     selected elements in the document, and clears the selection. This is the
@@ -294,32 +300,33 @@ class Selection(AnyObject):
                 |     menu.
                 |     Note: The method (and the script execution) fails if one of the following
                 |     errors occurs:
-                |
+                | 
                 |         The CSO is empty. The Copy operation could not be
                 |         performed.
                 |         No CSO element remains after the filtering through the UI active
                 |         object. The Copy operation could not be performed.
-                |
+                | 
                 |     Note: If a selected feature is not exposed to automation, it will be copied
                 |     into the clipboard all the way.
-                |
+                | 
                 |     Example:
                 |         This example copies, in a copy and paste operation. A selected DMU
                 |         Navigator URL will be put into the clipboard although it is not exposed to
                 |         automation.
-                |
+                | 
                 |          CATIA.ActiveDocument.Selection.Copy()
 
         :return: None
+        :rtype: None
         """
         return self.selection.Copy()
 
-    def cut(self):
+    def cut(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Cut()
-                |
+                | 
                 |     Cuts, in a cut and paste operation.
                 |     Role: Puts the contents of the selection in the clipboard, and removes the
                 |     selected elements from the document, and clears the selection. This is the
@@ -327,58 +334,60 @@ class Selection(AnyObject):
                 |     menu.
                 |     Note: The method (and the script execution) fails if one of the following
                 |     errors occurs:
-                |
+                | 
                 |         The CSO is empty. The Cut operation could not be
                 |         performed.
                 |         No CSO element remains after the filtering through the UI active
                 |         object. The Cut operation could not be performed.
-                |
+                | 
                 |     Note: If a selected feature is not exposed to automation, it will be copied
                 |     into the clipboard and removed from the document all the
                 |     way.
-                |
+                | 
                 |     Example:
                 |         This example cuts, in a cut and paste opertation. A selected DMU
                 |         Navigator URL will be put into the clipboard and removed from the document,
                 |         although it is not exposed to automation.
-                |
+                | 
                 |          CATIA.ActiveDocument.Selection.Cut()
 
         :return: None
+        :rtype: None
         """
         return self.selection.Cut()
 
-    def delete(self):
+    def delete(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Delete()
-                |
+                | 
                 |     Deletes all selected objects.
                 |     Role: For all the SelectedElement objects contained by the selection, the
                 |     SelectedElement.Value automation object is deleted from the
                 |     document.
                 |     Note: If a selected feature is not exposed to automation, it will deleted
                 |     all the way.
-                |
+                | 
                 |     Example:
                 |         This example deletes all the selected objects. A selected DMU Navigator
                 |         URL will be removed from the document, although it is not exposed to
                 |         automation.
-                |
+                | 
                 |          CATIA.ActiveDocument.Selection.Delete()
 
         :return: None
+        :rtype: None
         """
         return self.selection.Delete()
 
-    def filter_correspondence(self, i_filter_type):
+    def filter_correspondence(self, i_filter_type: tuple) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func FilterCorrespondence(CATSafeArrayVariant iFilterType) As
                 | boolean
-                |
+                | 
                 |     Specifies if the automation objects appearing as Value property of
                 |     SelectedElement objects fit a given filter.
                 |     Role: FilterCorrespondence filters the selection with respect to provided
@@ -533,15 +542,16 @@ class Selection(AnyObject):
 
         :param tuple i_filter_type:
         :return: bool
+        :rtype: bool
         """
         return self.selection.FilterCorrespondence(i_filter_type)
 
-    def find_object(self, i_object_type):
+    def find_object(self, i_object_type: str) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func FindObject(CATBSTR iObjectType) As AnyObject
-                |
+                | 
                 |     Finds an object in the current selection and deletes it from the
                 |     selection.
                 |     Role: Determines the first automation object specified in
@@ -554,26 +564,27 @@ class Selection(AnyObject):
                 |     Note: If the string specified in input is he "CATIAProduct" string, the
                 |     possible automation object specified in SelectedElement.LeafProduct is also
                 |     looked at.
-                |
+                | 
                 |     Example:
                 |         This example searches a Pad object in the current selection and puts it
                 |         into FoundObject.
-                |
+                | 
                 |          Dim FoundObject As AnyObject
                 |          Set FoundObject = CATIA.ActiveDocument.Selection.FindObject("CATIAPad")
 
         :param str i_object_type:
         :return: AnyObject
+        :rtype: AnyObject
         """
         return AnyObject(self.selection.FindObject(i_object_type))
 
-    def indicate_or_select_element_2d(self, i_message, i_filter_type,
-                                      i_object_selection_before_command_use_possibility, i_tooltip,
-                                      i_triggering_on_mouse_move, o_object_selected,
-                                      o_document_window_location):
+    def indicate_or_select_element2_d(self, i_message: str, i_filter_type: tuple,
+                                      i_object_selection_before_command_use_possibility: bool, i_tooltip: bool,
+                                      i_triggering_on_mouse_move: bool, o_object_selected: bool,
+                                      o_document_window_location: tuple) -> str:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func IndicateOrSelectElement2D(CATBSTR iMessage,
                 | CATSafeArrayVariant iFilterType,
                 | boolean iObjectSelectionBeforeCommandUsePossibility,
@@ -705,19 +716,20 @@ class Selection(AnyObject):
         :param bool o_object_selected:
         :param tuple o_document_window_location:
         :return: str
+        :rtype: str
         """
         return self.selection.IndicateOrSelectElement2D(i_message, i_filter_type,
                                                         i_object_selection_before_command_use_possibility, i_tooltip,
                                                         i_triggering_on_mouse_move, o_object_selected,
                                                         o_document_window_location)
 
-    def indicate_or_select_element_3d(self, i_planar_geometric_object, i_message, i_filter_type,
-                                      i_object_selection_before_command_use_possibility, i_tooltip,
-                                      i_triggering_on_mouse_move, o_object_selected,
-                                      o_window_location2_d, o_window_location3_d):
+    def indicate_or_select_element3_d(self, i_planar_geometric_object: AnyObject, i_message: str, i_filter_type: tuple,
+                                      i_object_selection_before_command_use_possibility: bool, i_tooltip: bool,
+                                      i_triggering_on_mouse_move: bool, o_object_selected: bool,
+                                      o_window_location2_d: tuple, o_window_location3_d: tuple) -> str:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func IndicateOrSelectElement3D(AnyObject
                 | iPlanarGeometricObject,
                 | CATBSTR iMessage,
@@ -859,18 +871,19 @@ class Selection(AnyObject):
         :param tuple o_window_location2_d:
         :param tuple o_window_location3_d:
         :return: str
+        :rtype: str
         """
         return self.selection.IndicateOrSelectElement3D(i_planar_geometric_object.com_object, i_message, i_filter_type,
                                                         i_object_selection_before_command_use_possibility, i_tooltip,
                                                         i_triggering_on_mouse_move, o_object_selected,
                                                         o_window_location2_d, o_window_location3_d)
 
-    def item(self, i_index):
+    def item(self, i_index: int) -> SelectedElement:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(long iIndex) As SelectedElement
-                |
+                | 
                 |     Deprecated:
                 |         V5R16 #Item2 . The Count and Item Methods have been replaced by the
                 |         Count2 and Item2 methods because they did not process correctly features which
@@ -879,47 +892,49 @@ class Selection(AnyObject):
 
         :param int i_index:
         :return: SelectedElement
+        :rtype: SelectedElement
         """
         return SelectedElement(self.selection.Item(i_index))
 
-    def item2(self, i_index):
+    def item2(self, i_index: int) -> SelectedElement:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item2(long iIndex) As SelectedElement
-                |
+                | 
                 |     Returns the iIndex-th SelectedElement object contained by the current
                 |     selection.
                 |     Role: Returns the iIndex-th SelectedElement object contained by the current
                 |     Selection. The Value property of the SelectedElement object is an automation
                 |     object associated to a selected feature.
-                |
+                | 
                 |     Parameters:
-                |
+                | 
                 |         iIndex
-                |             The index of the
-                |
+                |             The index of the 
+                | 
                 |         SelectedElement object to return, 1≤iIndex≤Selection.Count2 .
-                |
+                |         
                 |     oSelectedElement
                 |         The SelectedElement object
                 |     Example:
-                |
-                |           See the
-                |
+                | 
+                |           See the 
+                | 
                 |     SelectElement3 method first example.
 
         :param int i_index:
         :return: SelectedElement
+        :rtype: SelectedElement
         """
         return SelectedElement(self.selection.Item2(i_index))
 
-    def paste(self):
+    def paste(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Paste()
-                |
+                | 
                 |     Puts the contents of the clipboard in the document at the indicated
                 |     location.
                 |     Role: After the execution of the Paste method, there may be, among the
@@ -942,10 +957,11 @@ class Selection(AnyObject):
                 |          CATIA.ActiveDocument.Selection.Paste()
 
         :return: None
+        :rtype: None
         """
         return self.selection.Paste()
 
-    def paste_special(self, i_format):
+    def paste_special(self, i_format: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
@@ -1127,14 +1143,15 @@ class Selection(AnyObject):
 
         :param str i_string_bstr:
         :return: None
+        :rtype: None
         """
         try:
             return self.selection.Search(i_string_bstr)
         except com_error:
             raise CATIAApplicationException('The method Search failed. Try changing your search string.')
 
-    def select_element2(self, i_filter_type, i_message,
-                        i_object_selection_before_command_use_possibility):
+    def select_element2(self, i_filter_type: tuple, i_message: str,
+                        i_object_selection_before_command_use_possibility: bool) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
@@ -1600,13 +1617,14 @@ class Selection(AnyObject):
         :param str i_message:
         :param bool i_object_selection_before_command_use_possibility:
         :return: str
+        :rtype: str
         """
         return self.selection.SelectElement2(i_filter_type, i_message,
                                              i_object_selection_before_command_use_possibility)
 
-    def select_element3(self, i_filter_type, i_message,
-                        i_object_selection_before_command_use_possibility, i_multi_selection_mode,
-                        i_tooltip):
+    def select_element3(self, i_filter_type: tuple, i_message: str,
+                        i_object_selection_before_command_use_possibility: bool, i_multi_selection_mode: int,
+                        i_tooltip: bool) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
@@ -1783,16 +1801,17 @@ class Selection(AnyObject):
         :param tuple i_filter_type:
         :param str i_message:
         :param bool i_object_selection_before_command_use_possibility:
-        :param CATMultiSelectionMode i_multi_selection_mode:
+        :param int i_multi_selection_mode:
         :param bool i_tooltip:
         :return: str
+        :rtype: str
         """
         return self.selection.SelectElement3(i_filter_type, i_message,
-                                             i_object_selection_before_command_use_possibility,
-                                             i_multi_selection_mode.com_object, i_tooltip)
+                                             i_object_selection_before_command_use_possibility, i_multi_selection_mode,
+                                             i_tooltip)
 
-    def select_element4(self, i_filter_type, i_active_document_message, i_non_active_document_message,
-                        i_tooltip, o_document):
+    def select_element4(self, i_filter_type: tuple, i_active_document_message: str, i_non_active_document_message: str,
+                        i_tooltip: bool, o_document: Document) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
@@ -1917,6 +1936,7 @@ class Selection(AnyObject):
         :param bool i_tooltip:
         :param Document o_document:
         :return: str
+        :rtype: str
         """
         return self.selection.SelectElement4(i_filter_type, i_active_document_message, i_non_active_document_message,
                                              i_tooltip, o_document.com_object)

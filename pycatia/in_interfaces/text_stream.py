@@ -35,10 +35,10 @@ class TextStream(AnyObject):
         self.text_stream = com_object
 
     @property
-    def at_end_of_line(self):
+    def at_end_of_line(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AtEndOfLine() As boolean (Read Only)
                 | 
                 |     Returns a boolean value which specifies if the index position in the stream
@@ -52,15 +52,16 @@ class TextStream(AnyObject):
                 |          EndLine = TestStream.AtEndOfLine
 
         :return: bool
+        :rtype: bool
         """
 
         return self.text_stream.AtEndOfLine
 
     @property
-    def at_end_of_stream(self):
+    def at_end_of_stream(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AtEndOfStream() As boolean (Read Only)
                 | 
                 |     Returns a boolean value which specifies if the index position in the stream
@@ -74,14 +75,15 @@ class TextStream(AnyObject):
                 |          EndStream = TestStream.AtEndOfStream
 
         :return: bool
+        :rtype: bool
         """
 
         return self.text_stream.AtEndOfStream
 
-    def close(self):
+    def close(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Close()
                 | 
                 |     Closes a text stream.
@@ -92,13 +94,14 @@ class TextStream(AnyObject):
                 |          TestStream.Close
 
         :return: None
+        :rtype: None
         """
         return self.text_stream.Close()
 
-    def read(self, i_num_of_char):
+    def read(self, i_num_of_char: int) -> str:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Read(long iNumOfChar) As CATBSTR
                 | 
                 |     Returns a string which contains a given number of characters from the
@@ -121,13 +124,14 @@ class TextStream(AnyObject):
 
         :param int i_num_of_char:
         :return: str
+        :rtype: str
         """
         return self.text_stream.Read(i_num_of_char)
 
-    def read_line(self):
+    def read_line(self) -> str:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func ReadLine() As CATBSTR
                 | 
                 |     Returns a string which contains a line of charaters from the current
@@ -144,13 +148,14 @@ class TextStream(AnyObject):
                 |              Set ReadString = TestStream.ReadLine
 
         :return: str
+        :rtype: str
         """
         return self.text_stream.ReadLine()
 
-    def write(self, i_written_string):
+    def write(self, i_written_string: str) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Write(CATBSTR iWrittenString)
                 | 
                 |     Writes a string in the text stream.
@@ -168,6 +173,7 @@ class TextStream(AnyObject):
 
         :param str i_written_string:
         :return: None
+        :rtype: None
         """
         return self.text_stream.Write(i_written_string)
 

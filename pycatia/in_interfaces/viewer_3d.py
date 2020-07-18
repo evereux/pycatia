@@ -39,13 +39,13 @@ class Viewer3D(Viewer):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.viewer3_d = com_object
+        self.viewer_3d = com_object
 
     @property
-    def clipping_mode(self):
+    def clipping_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ClippingMode() As CatClippingMode
                 | 
                 |     Returns or sets the clipping mode.
@@ -56,24 +56,25 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.ClippingMode = catClippingModeNearAndFar
 
-        :return: enum cat_clipping_mode
+        :return: int
+        :rtype: int
         """
 
-        return self.viewer3_d.ClippingMode
+        return self.viewer_3d.ClippingMode
 
     @clipping_mode.setter
-    def clipping_mode(self, value):
+    def clipping_mode(self, value: int):
         """
-        :param enum cat_clipping_mode value:
+        :param int value:
         """
 
-        self.viewer3_d.ClippingMode = value
+        self.viewer_3d.ClippingMode = value
 
     @property
-    def far_limit(self):
+    def far_limit(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FarLimit() As double
                 | 
                 |     Returns or sets the far limit for the far clipping plane. The distance is
@@ -89,23 +90,24 @@ class Viewer3D(Viewer):
                 |          My3DViewer.FarLimit = 150
 
         :return: float
+        :rtype: float
         """
 
-        return self.viewer3_d.FarLimit
+        return self.viewer_3d.FarLimit
 
     @far_limit.setter
-    def far_limit(self, value):
+    def far_limit(self, value: float):
         """
         :param float value:
         """
 
-        self.viewer3_d.FarLimit = value
+        self.viewer_3d.FarLimit = value
 
     @property
-    def foggy(self):
+    def foggy(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Foggy() As boolean
                 | 
                 |     Returns or sets the fog mode. Useful when clipping is
@@ -118,23 +120,24 @@ class Viewer3D(Viewer):
                 |          My3DViewer.Foggy = True
 
         :return: bool
+        :rtype: bool
         """
 
-        return self.viewer3_d.Foggy
+        return self.viewer_3d.Foggy
 
     @foggy.setter
-    def foggy(self, value):
+    def foggy(self, value: bool):
         """
         :param bool value:
         """
 
-        self.viewer3_d.Foggy = value
+        self.viewer_3d.Foggy = value
 
     @property
-    def ground(self):
+    def ground(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Ground() As boolean
                 | 
                 |     Returns or sets the ground displaying mode.
@@ -146,23 +149,24 @@ class Viewer3D(Viewer):
                 |          My3DViewer.Ground = True
 
         :return: bool
+        :rtype: bool
         """
 
-        return self.viewer3_d.Ground
+        return self.viewer_3d.Ground
 
     @ground.setter
-    def ground(self, value):
+    def ground(self, value: bool):
         """
         :param bool value:
         """
 
-        self.viewer3_d.Ground = value
+        self.viewer_3d.Ground = value
 
     @property
-    def light_sources(self):
+    def light_sources(self) -> LightSources:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LightSources() As LightSources (Read Only)
                 | 
                 |     Returns the viewer's light source collection.
@@ -174,15 +178,16 @@ class Viewer3D(Viewer):
                 |          Set VPLightSources = My3DViewer.LightSources
 
         :return: LightSources
+        :rtype: LightSources
         """
 
-        return LightSources(self.viewer3_d.LightSources)
+        return LightSources(self.viewer_3d.LightSources)
 
     @property
-    def lighting_intensity(self):
+    def lighting_intensity(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LightingIntensity() As double
                 | 
                 |     Returns or sets the lighting intensity. The lighting intensity ranges
@@ -195,23 +200,24 @@ class Viewer3D(Viewer):
                 |          My3DViewer.LightingIntensity = 0.35
 
         :return: float
+        :rtype: float
         """
 
-        return self.viewer3_d.LightingIntensity
+        return self.viewer_3d.LightingIntensity
 
     @lighting_intensity.setter
-    def lighting_intensity(self, value):
+    def lighting_intensity(self, value: float):
         """
         :param float value:
         """
 
-        self.viewer3_d.LightingIntensity = value
+        self.viewer_3d.LightingIntensity = value
 
     @property
-    def lighting_mode(self):
+    def lighting_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LightingMode() As CatLightingMode
                 | 
                 |     Returns or sets the lighting mode.
@@ -222,24 +228,25 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.LightingMode = catInfiniteLightSource
 
-        :return: enum cat_lighting_mode
+        :return: int
+        :rtype: int
         """
 
-        return self.viewer3_d.LightingMode
+        return self.viewer_3d.LightingMode
 
     @lighting_mode.setter
-    def lighting_mode(self, value):
+    def lighting_mode(self, value: int):
         """
-        :param enum cat_lighting_mode value:
+        :param int value:
         """
 
-        self.viewer3_d.LightingMode = value
+        self.viewer_3d.LightingMode = value
 
     @property
-    def navigation_style(self):
+    def navigation_style(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NavigationStyle() As CatNavigationStyle
                 | 
                 |     Returns or sets the navigation style.
@@ -250,24 +257,25 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.NavigationStyle = catNavigationWalk
 
-        :return: enum cat_navigation_style
+        :return: int
+        :rtype: int
         """
 
-        return self.viewer3_d.NavigationStyle
+        return self.viewer_3d.NavigationStyle
 
     @navigation_style.setter
-    def navigation_style(self, value):
+    def navigation_style(self, value: int):
         """
-        :param enum cat_navigation_style value:
+        :param int value:
         """
 
-        self.viewer3_d.NavigationStyle = value
+        self.viewer_3d.NavigationStyle = value
 
     @property
-    def near_limit(self):
+    def near_limit(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NearLimit() As double
                 | 
                 |     Returns or sets the near limit for the near clipping plane. The distance is
@@ -283,23 +291,24 @@ class Viewer3D(Viewer):
                 |          My3DViewer.NearLimit = 75
 
         :return: float
+        :rtype: float
         """
 
-        return self.viewer3_d.NearLimit
+        return self.viewer_3d.NearLimit
 
     @near_limit.setter
-    def near_limit(self, value):
+    def near_limit(self, value: float):
         """
         :param float value:
         """
 
-        self.viewer3_d.NearLimit = value
+        self.viewer_3d.NearLimit = value
 
     @property
-    def rendering_mode(self):
+    def rendering_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RenderingMode() As CatRenderingMode
                 | 
                 |     Returns or sets the rendering mode.
@@ -310,24 +319,25 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.RenderingMode = catRenderShadingWithEdges
 
-        :return: enum cat_rendering_mode
+        :return: int
+        :rtype: int
         """
 
-        return self.viewer3_d.RenderingMode
+        return self.viewer_3d.RenderingMode
 
     @rendering_mode.setter
-    def rendering_mode(self, value):
+    def rendering_mode(self, value: int):
         """
-        :param enum cat_rendering_mode value:
+        :param int value:
         """
 
-        self.viewer3_d.RenderingMode = value
+        self.viewer_3d.RenderingMode = value
 
     @property
-    def viewpoint3_d(self):
+    def viewpoint_3d(self) -> Viewpoint3D:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Viewpoint3D() As Viewpoint3D
                 | 
                 |     Returns or sets the 3D viewpoint of a 3D viewer.
@@ -340,22 +350,23 @@ class Viewer3D(Viewer):
                 |          Set Nice3DViewpoint = My3DViewer.Viewpoint3D
 
         :return: Viewpoint3D
+        :rtype: Viewpoint3D
         """
 
-        return Viewpoint3D(self.viewer3_d.Viewpoint3D)
+        return Viewpoint3D(self.viewer_3d.Viewpoint3D)
 
-    @viewpoint3_d.setter
-    def viewpoint3_d(self, value):
+    @viewpoint_3d.setter
+    def viewpoint_3d(self, value: Viewpoint3D):
         """
         :param Viewpoint3D value:
         """
 
-        self.viewer3_d.Viewpoint3D = value
+        self.viewer_3d.Viewpoint3D = value
 
-    def rotate(self, i_axis, i_angle):
+    def rotate(self, i_axis: tuple, i_angle: float) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Rotate(CATSafeArrayVariant iAxis,
                 | double iAngle)
                 | 
@@ -373,17 +384,18 @@ class Viewer3D(Viewer):
         :param tuple i_axis:
         :param float i_angle:
         :return: None
+        :rtype: None
         """
-        return self.viewer3_d.Rotate(i_axis, i_angle)
+        return self.viewer_3d.Rotate(i_axis, i_angle)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
         # # vba_function_name = 'rotate'
         # # vba_code = """
-        # # Public Function rotate(viewer3_d)
+        # # Public Function rotate(viewer_3d)
         # #     Dim iAxis (2)
-        # #     viewer3_d.Rotate iAxis
+        # #     viewer_3d.Rotate iAxis
         # #     rotate = iAxis
         # # End Function
         # # """
@@ -391,10 +403,10 @@ class Viewer3D(Viewer):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def translate(self, i_vector):
+    def translate(self, i_vector: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Translate(CATSafeArrayVariant iVector)
                 | 
                 |     Applies a translation. The translation vector is iVector (an array of 3
@@ -408,17 +420,18 @@ class Viewer3D(Viewer):
 
         :param tuple i_vector:
         :return: None
+        :rtype: None
         """
-        return self.viewer3_d.Translate(i_vector)
+        return self.viewer_3d.Translate(i_vector)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
         # # vba_function_name = 'translate'
         # # vba_code = """
-        # # Public Function translate(viewer3_d)
+        # # Public Function translate(viewer_3d)
         # #     Dim iVector (2)
-        # #     viewer3_d.Translate iVector
+        # #     viewer_3d.Translate iVector
         # #     translate = iVector
         # # End Function
         # # """
