@@ -9,7 +9,6 @@
         
 """
 
-from pycatia.in_interfaces.folder import Folder
 from pycatia.system_interfaces.any_object import AnyObject
 
 
@@ -38,7 +37,7 @@ class FileComponent(AnyObject):
         self.file_component = com_object
 
     @property
-    def parent_folder(self) -> Folder:
+    def parent_folder(self) -> 'Folder':
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -59,7 +58,7 @@ class FileComponent(AnyObject):
         return Folder(self.file_component.ParentFolder)
 
     @parent_folder.setter
-    def parent_folder(self, value: Folder):
+    def parent_folder(self, value: 'Folder'):
         """
         :param Folder value:
         """
