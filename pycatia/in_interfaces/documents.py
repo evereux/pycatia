@@ -182,8 +182,10 @@ class Documents(Collection):
         :return: Document
         :rtype: Document
         """
-
-        return Document(self.child_object(self.documents.Item(index)))
+        try:
+            return Document(self.documents.Item(index))
+        except com_error:
+            raise CATIAApplicationException(f'Could not get item "{index}".')
 
     def num_open(self) -> int:
         """
