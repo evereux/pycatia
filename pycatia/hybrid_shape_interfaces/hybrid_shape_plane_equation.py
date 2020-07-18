@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -18,7 +18,7 @@ from pycatia.knowledge_interfaces.real_param import RealParam
 class HybridShapePlaneEquation(Plane):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -30,8 +30,8 @@ class HybridShapePlaneEquation(Plane):
                 |                             HybridShapePlaneEquation
                 | 
                 | Plane define by an equation plane.
-                | Role: Allows to access data of the plane feature created by its cartesian equation. Plane equation is
-                | Ax+By+Cz = D.
+                | Role: Allows to access data of the plane feature created by its cartesian equation.
+                | Plane equation is Ax+By+Cz = D.
     
     """
 
@@ -40,10 +40,10 @@ class HybridShapePlaneEquation(Plane):
         self.hybrid_shape_plane_equation = com_object
 
     @property
-    def a(self):
+    def a(self) -> RealParam:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property A() As RealParam (Read Only)
                 | 
                 |     Gets A coefficient for plane equation.
@@ -62,15 +62,16 @@ class HybridShapePlaneEquation(Plane):
                 |         HybridShapeFactory
 
         :return: RealParam
+        :rtype: RealParam
         """
 
         return RealParam(self.hybrid_shape_plane_equation.A)
 
     @property
-    def b(self):
+    def b(self) -> RealParam:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property B() As RealParam (Read Only)
                 | 
                 |     Gets B coefficient for plane equation.
@@ -89,15 +90,16 @@ class HybridShapePlaneEquation(Plane):
                 |         HybridShapeFactory
 
         :return: RealParam
+        :rtype: RealParam
         """
 
         return RealParam(self.hybrid_shape_plane_equation.B)
 
     @property
-    def c(self):
+    def c(self) -> RealParam:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property C() As RealParam (Read Only)
                 | 
                 |     Gets C coefficient for plane equation.
@@ -117,15 +119,16 @@ class HybridShapePlaneEquation(Plane):
                 |         HybridShapeFactory
 
         :return: RealParam
+        :rtype: RealParam
         """
 
         return RealParam(self.hybrid_shape_plane_equation.C)
 
     @property
-    def d(self):
+    def d(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property D() As Length (Read Only)
                 | 
                 |     Gets D coefficient for plane equation.
@@ -144,15 +147,16 @@ class HybridShapePlaneEquation(Plane):
                 |         HybridShapeFactory
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_plane_equation.D)
 
     @property
-    def ref_axis_system(self):
+    def ref_axis_system(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RefAxisSystem() As Reference
                 | 
                 |     Returns or Sets the reference Axis System for PlaneEquation
@@ -173,22 +177,23 @@ class HybridShapePlaneEquation(Plane):
                 |          Set oRefAxis  = PlaneEquation.RefAxisSystem
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_plane_equation.RefAxisSystem)
 
     @ref_axis_system.setter
-    def ref_axis_system(self, value):
+    def ref_axis_system(self, value: Reference):
         """
         :param Reference value:
         """
 
         self.hybrid_shape_plane_equation.RefAxisSystem = value
 
-    def get_reference_point(self):
+    def get_reference_point(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetReferencePoint() As Reference
                 | 
                 |     Gets the reference point.
@@ -199,13 +204,14 @@ class HybridShapePlaneEquation(Plane):
                 |             reference point
 
         :return: Reference
+        :rtype: Reference
         """
         return Reference(self.hybrid_shape_plane_equation.GetReferencePoint())
 
-    def set_reference_point(self, i_reference_point):
+    def set_reference_point(self, i_reference_point: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetReferencePoint(Reference iReferencePoint)
                 | 
                 |     Sets the reference point.
@@ -217,6 +223,7 @@ class HybridShapePlaneEquation(Plane):
 
         :param Reference i_reference_point:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_plane_equation.SetReferencePoint(i_reference_point.com_object)
         # # # # Autogenerated comment: 

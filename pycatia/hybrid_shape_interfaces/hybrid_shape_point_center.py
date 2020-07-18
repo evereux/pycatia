@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapePointCenter(Point):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -45,10 +45,10 @@ class HybridShapePointCenter(Point):
         self.hybrid_shape_point_center = com_object
 
     @property
-    def element(self):
+    def element(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Element() As Reference
                 | 
                 |     Returns or sets the circle, ellipse or sphere.
@@ -63,12 +63,13 @@ class HybridShapePointCenter(Point):
                 |          Set Ref_Circle = PointCenter.Element
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_point_center.Element)
 
     @element.setter
-    def element(self, value):
+    def element(self, value: Reference):
         """
         :param Reference value:
         """

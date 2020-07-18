@@ -146,3 +146,8 @@ To run a specific test:
 To stop tests running after first failure.
 
     py.text -vx
+
+Checks Prior To Release
+-----------------------
+
+1.

@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapePlaneTangent(Plane):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -39,10 +39,10 @@ class HybridShapePlaneTangent(Plane):
         self.hybrid_shape_plane_tangent = com_object
 
     @property
-    def point(self):
+    def point(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Point() As Reference
                 | 
                 |     Role: Get the tangency point.
@@ -61,12 +61,13 @@ class HybridShapePlaneTangent(Plane):
                 |         HybridShapeFactory
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_plane_tangent.Point)
 
     @point.setter
-    def point(self, value):
+    def point(self, value: Reference):
         """
         :param Reference value:
         """
@@ -74,10 +75,10 @@ class HybridShapePlaneTangent(Plane):
         self.hybrid_shape_plane_tangent.Point = value
 
     @property
-    def surface(self):
+    def surface(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Surface() As Reference
                 | 
                 |     Role: Get the surface to which the plane is to be tangent.
@@ -96,12 +97,13 @@ class HybridShapePlaneTangent(Plane):
                 |         HybridShapeFactory
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_plane_tangent.Surface)
 
     @surface.setter
-    def surface(self, value):
+    def surface(self, value: Reference):
         """
         :param Reference value:
         """

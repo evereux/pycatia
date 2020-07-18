@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapeSection(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -41,10 +41,10 @@ class HybridShapeSection(HybridShape):
         self.hybrid_shape_section = com_object
 
     @property
-    def section_plane(self):
+    def section_plane(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SectionPlane() As Reference
                 | 
                 |     Returns or sets the section plane..
@@ -62,12 +62,13 @@ class HybridShapeSection(HybridShape):
                 |                  Set RefPlane = HybridShapeSection.SectionPlane
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_section.SectionPlane)
 
     @section_plane.setter
-    def section_plane(self, value):
+    def section_plane(self, value: Reference):
         """
         :param Reference value:
         """

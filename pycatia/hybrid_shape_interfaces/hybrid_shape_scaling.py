@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -18,7 +18,7 @@ class HybridShapeScaling(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -55,10 +55,10 @@ class HybridShapeScaling(HybridShape):
         self.hybrid_shape_scaling = com_object
 
     @property
-    def center(self):
+    def center(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Center() As Reference
                 | 
                 |     Returns or sets the reference element.This element can be a point or a
@@ -74,12 +74,13 @@ class HybridShapeScaling(HybridShape):
                 |          Set RefElem = Scaling.Center
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_scaling.Center)
 
     @center.setter
-    def center(self, value):
+    def center(self, value: Reference):
         """
         :param Reference value:
         """
@@ -87,10 +88,10 @@ class HybridShapeScaling(HybridShape):
         self.hybrid_shape_scaling.Center = value
 
     @property
-    def creation_mode(self):
+    def creation_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CreationMode() As boolean
                 | 
                 |     Returns or sets the creation mode(creation or
@@ -107,12 +108,13 @@ class HybridShapeScaling(HybridShape):
                 |          hybShpScaling.CreationMode = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_scaling.CreationMode
 
     @creation_mode.setter
-    def creation_mode(self, value):
+    def creation_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -120,10 +122,10 @@ class HybridShapeScaling(HybridShape):
         self.hybrid_shape_scaling.CreationMode = value
 
     @property
-    def elem_to_scale(self):
+    def elem_to_scale(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ElemToScale() As Reference
                 | 
                 |     Returns or sets the element to scale.
@@ -136,12 +138,13 @@ class HybridShapeScaling(HybridShape):
                 |          Set Elem = Scaling.ElemToScale
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_scaling.ElemToScale)
 
     @elem_to_scale.setter
-    def elem_to_scale(self, value):
+    def elem_to_scale(self, value: Reference):
         """
         :param Reference value:
         """
@@ -149,24 +152,25 @@ class HybridShapeScaling(HybridShape):
         self.hybrid_shape_scaling.ElemToScale = value
 
     @property
-    def ratio(self):
+    def ratio(self) -> RealParam:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Ratio() As RealParam (Read Only)
                 | 
                 |     Returns the scaling ratio.
 
         :return: RealParam
+        :rtype: RealParam
         """
 
         return RealParam(self.hybrid_shape_scaling.Ratio)
 
     @property
-    def ratio_value(self):
+    def ratio_value(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RatioValue() As double
                 | 
                 |     Returns or sets the scaling ratio value.
@@ -179,12 +183,13 @@ class HybridShapeScaling(HybridShape):
                 |          Set Value = Scaling.RatioValue
 
         :return: float
+        :rtype: float
         """
 
         return self.hybrid_shape_scaling.RatioValue
 
     @ratio_value.setter
-    def ratio_value(self, value):
+    def ratio_value(self, value: float):
         """
         :param float value:
         """
@@ -192,10 +197,10 @@ class HybridShapeScaling(HybridShape):
         self.hybrid_shape_scaling.RatioValue = value
 
     @property
-    def volume_result(self):
+    def volume_result(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property VolumeResult() As boolean
                 | 
                 |     Returns or sets the volume result.
@@ -212,12 +217,13 @@ class HybridShapeScaling(HybridShape):
                 |          hybShpScaling.VolumeResult = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_scaling.VolumeResult
 
     @volume_result.setter
-    def volume_result(self, value):
+    def volume_result(self, value: bool):
         """
         :param bool value:
         """

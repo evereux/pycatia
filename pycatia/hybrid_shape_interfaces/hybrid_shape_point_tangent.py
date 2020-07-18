@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -18,7 +18,7 @@ class HybridShapePointTangent(Point):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -52,10 +52,10 @@ class HybridShapePointTangent(Point):
         self.hybrid_shape_point_tangent = com_object
 
     @property
-    def curve(self):
+    def curve(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Curve() As Reference
                 | 
                 |     Returns or Gets the supporting curve.
@@ -70,12 +70,13 @@ class HybridShapePointTangent(Point):
                 |          Set oCurve  = PointTangent.Curve
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_point_tangent.Curve)
 
     @curve.setter
-    def curve(self, value):
+    def curve(self, value: Reference):
         """
         :param Reference value:
         """
@@ -83,10 +84,10 @@ class HybridShapePointTangent(Point):
         self.hybrid_shape_point_tangent.Curve = value
 
     @property
-    def direction(self):
+    def direction(self) -> HybridShapeDirection:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Direction() As HybridShapeDirection
                 | 
                 |     Returns or Sets the direction.
@@ -100,12 +101,13 @@ class HybridShapePointTangent(Point):
                 |          Set oDirection  = PointTangent.Direction
 
         :return: HybridShapeDirection
+        :rtype: HybridShapeDirection
         """
 
         return HybridShapeDirection(self.hybrid_shape_point_tangent.Direction)
 
     @direction.setter
-    def direction(self, value):
+    def direction(self, value: HybridShapeDirection):
         """
         :param HybridShapeDirection value:
         """
