@@ -126,9 +126,9 @@ def test_is_saved():
 def test_item():
     with CATIADocHandler(cat_product) as handler:
         documents = handler.documents
-        doc_com1 = documents.item(source_cat_sub_1.name)
+        doc_com1 = documents.item(cat_product.name)
 
-        assert (doc_com1.name == source_cat_sub_1.name)
+        assert (doc_com1.name == cat_product.name)
 
 
 def test_new_from():
