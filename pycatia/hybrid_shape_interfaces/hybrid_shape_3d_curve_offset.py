@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -16,10 +16,9 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShape3DCurveOffset(HybridShape):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -40,139 +39,145 @@ class HybridShape3DCurveOffset(HybridShape):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.hybrid_shape3_d_curve_offset = com_object
+        self.hybrid_shape_3d_curve_offset = com_object
 
     @property
-    def corner_radius_value(self):
+    def corner_radius_value(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CornerRadiusValue() As Length
                 | 
                 |     Returns or sets the Corner Radius Value.
 
         :return: Length
+        :rtype: Length
         """
 
-        return Length(self.hybrid_shape3_d_curve_offset.CornerRadiusValue)
+        return Length(self.hybrid_shape_3d_curve_offset.CornerRadiusValue)
 
     @corner_radius_value.setter
-    def corner_radius_value(self, value):
+    def corner_radius_value(self, value: Length):
         """
         :param Length value:
         """
 
-        self.hybrid_shape3_d_curve_offset.CornerRadiusValue = value
+        self.hybrid_shape_3d_curve_offset.CornerRadiusValue = value
 
     @property
-    def corner_tension_value(self):
+    def corner_tension_value(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CornerTensionValue() As double
                 | 
                 |     Returns or sets the Corner Tension Value.
 
         :return: float
+        :rtype: float
         """
 
-        return self.hybrid_shape3_d_curve_offset.CornerTensionValue
+        return self.hybrid_shape_3d_curve_offset.CornerTensionValue
 
     @corner_tension_value.setter
-    def corner_tension_value(self, value):
+    def corner_tension_value(self, value: float):
         """
         :param float value:
         """
 
-        self.hybrid_shape3_d_curve_offset.CornerTensionValue = value
+        self.hybrid_shape_3d_curve_offset.CornerTensionValue = value
 
     @property
-    def curve_to_offset(self):
+    def curve_to_offset(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CurveToOffset() As Reference
                 | 
                 |     Returns or sets the curve to offset.
 
         :return: Reference
+        :rtype: Reference
         """
 
-        return Reference(self.hybrid_shape3_d_curve_offset.CurveToOffset)
+        return Reference(self.hybrid_shape_3d_curve_offset.CurveToOffset)
 
     @curve_to_offset.setter
-    def curve_to_offset(self, value):
+    def curve_to_offset(self, value: Reference):
         """
         :param Reference value:
         """
 
-        self.hybrid_shape3_d_curve_offset.CurveToOffset = value
+        self.hybrid_shape_3d_curve_offset.CurveToOffset = value
 
     @property
-    def direction(self):
+    def direction(self) -> HybridShapeDirection:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Direction() As HybridShapeDirection
                 | 
                 |     Returns or sets the direction.
 
         :return: HybridShapeDirection
+        :rtype: HybridShapeDirection
         """
 
-        return HybridShapeDirection(self.hybrid_shape3_d_curve_offset.Direction)
+        return HybridShapeDirection(self.hybrid_shape_3d_curve_offset.Direction)
 
     @direction.setter
-    def direction(self, value):
+    def direction(self, value: HybridShapeDirection):
         """
         :param HybridShapeDirection value:
         """
 
-        self.hybrid_shape3_d_curve_offset.Direction = value
+        self.hybrid_shape_3d_curve_offset.Direction = value
 
     @property
-    def invert_direction(self):
+    def invert_direction(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property InvertDirection() As boolean
                 | 
                 |     Returns or sets the direction orientation.
 
         :return: bool
+        :rtype: bool
         """
 
-        return self.hybrid_shape3_d_curve_offset.InvertDirection
+        return self.hybrid_shape_3d_curve_offset.InvertDirection
 
     @invert_direction.setter
-    def invert_direction(self, value):
+    def invert_direction(self, value: bool):
         """
         :param bool value:
         """
 
-        self.hybrid_shape3_d_curve_offset.InvertDirection = value
+        self.hybrid_shape_3d_curve_offset.InvertDirection = value
 
     @property
-    def offset_value(self):
+    def offset_value(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OffsetValue() As Length
                 | 
                 |     Returns or sets the OffsetValue.
 
         :return: Length
+        :rtype: Length
         """
 
-        return Length(self.hybrid_shape3_d_curve_offset.OffsetValue)
+        return Length(self.hybrid_shape_3d_curve_offset.OffsetValue)
 
     @offset_value.setter
-    def offset_value(self, value):
+    def offset_value(self, value: Length):
         """
         :param Length value:
         """
 
-        self.hybrid_shape3_d_curve_offset.OffsetValue = value
+        self.hybrid_shape_3d_curve_offset.OffsetValue = value
 
     def __repr__(self):
-        return f'HybridShape3DCurveOffset(name="{ self.name }")'
+        return f'HybridShape3DCurveOffset(name="{self.name}")'

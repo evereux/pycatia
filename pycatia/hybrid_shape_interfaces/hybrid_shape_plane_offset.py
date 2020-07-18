@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -15,9 +15,10 @@ from pycatia.knowledge_interfaces.length import Length
 
 
 class HybridShapePlaneOffset(Plane):
+
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -39,24 +40,25 @@ class HybridShapePlaneOffset(Plane):
         self.hybrid_shape_plane_offset = com_object
 
     @property
-    def offset(self):
+    def offset(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Offset() As Length (Read Only)
                 | 
                 |     Returns the offset value.
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_plane_offset.Offset)
 
     @property
-    def orientation(self):
+    def orientation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation() As long
                 | 
                 |     Returns or sets the plane orientation.
@@ -66,12 +68,13 @@ class HybridShapePlaneOffset(Plane):
                 |     inverted, and -1 otherwise.
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_plane_offset.Orientation
 
     @orientation.setter
-    def orientation(self, value):
+    def orientation(self, value: int):
         """
         :param int value:
         """
@@ -79,27 +82,28 @@ class HybridShapePlaneOffset(Plane):
         self.hybrid_shape_plane_offset.Orientation = value
 
     @property
-    def plane_reference(self):
+    def plane(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Plane() As Reference
                 | 
                 |     Returns or sets the reference plane.
                 |     Sub-element(s) supported (see Boundary object): PlanarFace.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_plane_offset.Plane)
 
-    @plane_reference.setter
-    def plane_reference(self, reference):
+    @plane.setter
+    def plane(self, value: Reference):
         """
-        :param Reference(Plane) reference:
+        :param Reference value:
         """
 
-        self.hybrid_shape_plane_offset.Plane = reference.com_object
+        self.hybrid_shape_plane_offset.Plane = value
 
     def __repr__(self):
-        return f'HybridShapePlaneOffset(name="{self.name}")'
+        return f'HybridShapePlaneOffset(name="{ self.name }")'

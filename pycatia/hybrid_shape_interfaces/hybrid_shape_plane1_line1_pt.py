@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapePlane1Line1Pt(Plane):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -39,10 +39,10 @@ class HybridShapePlane1Line1Pt(Plane):
         self.hybrid_shape_plane1_line1_pt = com_object
 
     @property
-    def line(self):
+    def line(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Line() As Reference
                 | 
                 |     Returns or sets the passing line.
@@ -58,12 +58,13 @@ class HybridShapePlane1Line1Pt(Plane):
                 |         HybridShapeFactory
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_plane1_line1_pt.Line)
 
     @line.setter
-    def line(self, value):
+    def line(self, value: Reference):
         """
         :param Reference value:
         """
@@ -71,10 +72,10 @@ class HybridShapePlane1Line1Pt(Plane):
         self.hybrid_shape_plane1_line1_pt.Line = value
 
     @property
-    def point(self):
+    def point(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Point() As Reference
                 | 
                 |     Return or sets the passing point.
@@ -90,12 +91,13 @@ class HybridShapePlane1Line1Pt(Plane):
                 |         HybridShapeFactory
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_plane1_line1_pt.Point)
 
     @point.setter
-    def point(self, value):
+    def point(self, value: Reference):
         """
         :param Reference value:
         """
