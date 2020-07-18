@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -15,10 +15,9 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeExtrapol(HybridShape):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -57,10 +56,10 @@ class HybridShapeExtrapol(HybridShape):
         self.hybrid_shape_extrapol = com_object
 
     @property
-    def border_type(self):
+    def border_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BorderType() As long
                 | 
                 |     Returns or sets the border type of extrapolation.
@@ -71,12 +70,13 @@ class HybridShapeExtrapol(HybridShape):
                 |     CATGSMTangentBorder(=1)).
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_extrapol.BorderType
 
     @border_type.setter
-    def border_type(self, value):
+    def border_type(self, value: int):
         """
         :param int value:
         """
@@ -84,10 +84,10 @@ class HybridShapeExtrapol(HybridShape):
         self.hybrid_shape_extrapol.BorderType = value
 
     @property
-    def boundary(self):
+    def boundary(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Boundary() As Reference
                 | 
                 |     This method is left available for compatibility reasons but it is
@@ -97,12 +97,13 @@ class HybridShapeExtrapol(HybridShape):
                 |     argument.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_extrapol.Boundary)
 
     @boundary.setter
-    def boundary(self, value):
+    def boundary(self, value: Reference):
         """
         :param Reference value:
         """
@@ -110,10 +111,10 @@ class HybridShapeExtrapol(HybridShape):
         self.hybrid_shape_extrapol.Boundary = value
 
     @property
-    def constant_length_mode(self):
+    def constant_length_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ConstantLengthMode() As boolean
                 | 
                 |     Returns or sets the constant distance mode in case of Length extrapolation
@@ -121,12 +122,13 @@ class HybridShapeExtrapol(HybridShape):
                 |     This applies in case of Length extrapolation limit.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_extrapol.ConstantLengthMode
 
     @constant_length_mode.setter
-    def constant_length_mode(self, value):
+    def constant_length_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -134,10 +136,10 @@ class HybridShapeExtrapol(HybridShape):
         self.hybrid_shape_extrapol.ConstantLengthMode = value
 
     @property
-    def continuity_type(self):
+    def continuity_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ContinuityType() As long
                 | 
                 |     This method is left available for compatibility reasons but it is
@@ -147,12 +149,13 @@ class HybridShapeExtrapol(HybridShape):
                 |     argument.
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_extrapol.ContinuityType
 
     @continuity_type.setter
-    def continuity_type(self, value):
+    def continuity_type(self, value: int):
         """
         :param int value:
         """
@@ -160,10 +163,10 @@ class HybridShapeExtrapol(HybridShape):
         self.hybrid_shape_extrapol.ContinuityType = value
 
     @property
-    def elem_to_extrapol(self):
+    def elem_to_extrapol(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ElemToExtrapol() As Reference
                 | 
                 |     Returns or sets the curve or surface to extrapolate.
@@ -171,12 +174,13 @@ class HybridShapeExtrapol(HybridShape):
                 |     or BiDimFeatEdge.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_extrapol.ElemToExtrapol)
 
     @elem_to_extrapol.setter
-    def elem_to_extrapol(self, value):
+    def elem_to_extrapol(self, value: Reference):
         """
         :param Reference value:
         """
@@ -184,10 +188,10 @@ class HybridShapeExtrapol(HybridShape):
         self.hybrid_shape_extrapol.ElemToExtrapol = value
 
     @property
-    def elem_until(self):
+    def elem_until(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ElemUntil() As Reference
                 | 
                 |     This method is left available for compatibility reasons but it is
@@ -197,12 +201,13 @@ class HybridShapeExtrapol(HybridShape):
                 |     argument.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_extrapol.ElemUntil)
 
     @elem_until.setter
-    def elem_until(self, value):
+    def elem_until(self, value: Reference):
         """
         :param Reference value:
         """
@@ -210,10 +215,10 @@ class HybridShapeExtrapol(HybridShape):
         self.hybrid_shape_extrapol.ElemUntil = value
 
     @property
-    def extend_edges_mode(self):
+    def extend_edges_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExtendEdgesMode() As boolean
                 | 
                 |     Returns or sets the extension of extrapolated edges mode.
@@ -221,12 +226,13 @@ class HybridShapeExtrapol(HybridShape):
                 |     assembled result.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_extrapol.ExtendEdgesMode
 
     @extend_edges_mode.setter
-    def extend_edges_mode(self, value):
+    def extend_edges_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -234,10 +240,10 @@ class HybridShapeExtrapol(HybridShape):
         self.hybrid_shape_extrapol.ExtendEdgesMode = value
 
     @property
-    def extrapol_both_sides_identically(self):
+    def extrapol_both_sides_identically(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExtrapolBothSidesIdentically() As boolean
                 | 
                 |     Returns or sets the the boolean telling if the second side is extrapolated
@@ -245,12 +251,13 @@ class HybridShapeExtrapol(HybridShape):
                 |     This applies in case the element to extrapol is a wire.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_extrapol.ExtrapolBothSidesIdentically
 
     @extrapol_both_sides_identically.setter
-    def extrapol_both_sides_identically(self, value):
+    def extrapol_both_sides_identically(self, value: bool):
         """
         :param bool value:
         """
@@ -258,10 +265,10 @@ class HybridShapeExtrapol(HybridShape):
         self.hybrid_shape_extrapol.ExtrapolBothSidesIdentically = value
 
     @property
-    def length(self):
+    def length(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Length() As Length (Read Only)
                 | 
                 |     This method is left available for compatibility reasons but it is
@@ -271,15 +278,16 @@ class HybridShapeExtrapol(HybridShape):
                 |     argument.
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_extrapol.Length)
 
     @property
-    def limit_type(self):
+    def limit_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LimitType() As long
                 | 
                 |     This method is left available for compatibility reasons but it is
@@ -289,12 +297,13 @@ class HybridShapeExtrapol(HybridShape):
                 |     argument.
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_extrapol.LimitType
 
     @limit_type.setter
-    def limit_type(self, value):
+    def limit_type(self, value: int):
         """
         :param int value:
         """
@@ -302,22 +311,23 @@ class HybridShapeExtrapol(HybridShape):
         self.hybrid_shape_extrapol.LimitType = value
 
     @property
-    def propagation_mode(self):
+    def propagation_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PropagationMode() As long
                 | 
                 |     Returns or sets the propagation mode.
                 |     This applies in case of curvature extrapolation of a shell.
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_extrapol.PropagationMode
 
     @propagation_mode.setter
-    def propagation_mode(self, value):
+    def propagation_mode(self, value: int):
         """
         :param int value:
         """
@@ -325,10 +335,10 @@ class HybridShapeExtrapol(HybridShape):
         self.hybrid_shape_extrapol.PropagationMode = value
 
     @property
-    def support(self):
+    def support(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets the support surface.
@@ -337,22 +347,23 @@ class HybridShapeExtrapol(HybridShape):
                 |     Sub-element(s) supported (see Boundary object): see Face.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_extrapol.Support)
 
     @support.setter
-    def support(self, value):
+    def support(self, value: Reference):
         """
         :param Reference value:
         """
 
         self.hybrid_shape_extrapol.Support = value
 
-    def get_boundary(self, i_pos):
+    def get_boundary(self, i_pos: int) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetBoundary(long iPos) As Reference
                 | 
                 |     Returns or sets the iPos-th boundary of an extrapolated curve or surface
@@ -366,13 +377,14 @@ class HybridShapeExtrapol(HybridShape):
 
         :param int i_pos:
         :return: Reference
+        :rtype: Reference
         """
         return Reference(self.hybrid_shape_extrapol.GetBoundary(i_pos))
 
-    def get_continuity_type(self, i_pos):
+    def get_continuity_type(self, i_pos: int) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetContinuityType(long iPos) As long
                 | 
                 |     Returns or sets the continuity type between extrapolated element and
@@ -384,13 +396,14 @@ class HybridShapeExtrapol(HybridShape):
 
         :param int i_pos:
         :return: int
+        :rtype: int
         """
         return self.hybrid_shape_extrapol.GetContinuityType(i_pos)
 
-    def get_elem_until(self, i_pos):
+    def get_elem_until(self, i_pos: int) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetElemUntil(long iPos) As Reference
                 | 
                 |     Returns or sets the surface or volume specifying the limit of the
@@ -401,13 +414,14 @@ class HybridShapeExtrapol(HybridShape):
 
         :param int i_pos:
         :return: Reference
+        :rtype: Reference
         """
         return Reference(self.hybrid_shape_extrapol.GetElemUntil(i_pos))
 
-    def get_internal_edges_element(self, i_pos):
+    def get_internal_edges_element(self, i_pos: int) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetInternalEdgesElement(long iPos) As Reference
                 | 
                 |     Gets an element in the list of internal elements (vertex or
@@ -422,13 +436,14 @@ class HybridShapeExtrapol(HybridShape):
 
         :param int i_pos:
         :return: Reference
+        :rtype: Reference
         """
         return Reference(self.hybrid_shape_extrapol.GetInternalEdgesElement(i_pos))
 
-    def get_length(self, i_pos):
+    def get_length(self, i_pos: int) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetLength(long iPos) As Length
                 | 
                 |     Returns or sets the length specifying the limit of the extrapolation that
@@ -439,13 +454,14 @@ class HybridShapeExtrapol(HybridShape):
 
         :param int i_pos:
         :return: Length
+        :rtype: Length
         """
         return Length(self.hybrid_shape_extrapol.GetLength(i_pos))
 
-    def get_limit_type(self, i_pos):
+    def get_limit_type(self, i_pos: int) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetLimitType(long iPos) As long
                 | 
                 |     Returns or sets the limit type of the extrapolation that begins from the
@@ -457,13 +473,14 @@ class HybridShapeExtrapol(HybridShape):
 
         :param int i_pos:
         :return: int
+        :rtype: int
         """
         return self.hybrid_shape_extrapol.GetLimitType(i_pos)
 
-    def get_number_of_extrapolations(self, o_number_of_extrapolations):
+    def get_number_of_extrapolations(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetNumberOfExtrapolations(long
                 | oNumberOfExtrapolations)
                 | 
@@ -471,15 +488,15 @@ class HybridShapeExtrapol(HybridShape):
                 |     a boundary of the element to extrapolate, a limit type, a limit and a
                 |     continuity type.
 
-        :param int o_number_of_extrapolations:
-        :return: None
+        :return: int
+        :rtype: int
         """
-        return self.hybrid_shape_extrapol.GetNumberOfExtrapolations(o_number_of_extrapolations)
+        return self.hybrid_shape_extrapol.GetNumberOfExtrapolations()
 
-    def is_assemble(self):
+    def is_assemble(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func IsAssemble() As boolean
                 | 
                 |     Retrieves whether extrapolation is assembled with extrapolated curve or
@@ -493,50 +510,54 @@ class HybridShapeExtrapol(HybridShape):
                 |             surface, and False otherwise
 
         :return: bool
+        :rtype: bool
         """
         return self.hybrid_shape_extrapol.IsAssemble()
 
-    def remove_all_extrapolations_except_the_first_one(self):
+    def remove_all_extrapolations_except_the_first_one(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveAllExtrapolationsExceptTheFirstOne()
                 | 
                 |     Removes all extrapolations that may have been set, except the first one.
 
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_extrapol.RemoveAllExtrapolationsExceptTheFirstOne()
 
-    def remove_all_internal_edges_element(self):
+    def remove_all_internal_edges_element(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveAllInternalEdgesElement()
                 | 
                 |     Removes all internal elements.
 
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_extrapol.RemoveAllInternalEdgesElement()
 
-    def remove_extrapolation(self, i_pos):
+    def remove_extrapolation(self, i_pos: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveExtrapolation(long iPos)
                 | 
                 |     Removes the iPos-th extrapolation that has been set.
 
         :param int i_pos:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_extrapol.RemoveExtrapolation(i_pos)
 
-    def set_assemble(self, i_assemble):
+    def set_assemble(self, i_assemble: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAssemble(boolean iAssemble)
                 | 
                 |     Sets whether extrapolation is to be assembled with extrapolated curve or
@@ -551,6 +572,7 @@ class HybridShapeExtrapol(HybridShape):
 
         :param bool i_assemble:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_extrapol.SetAssemble(i_assemble)
         # # # # Autogenerated comment: 
@@ -569,16 +591,17 @@ class HybridShapeExtrapol(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_boundary(self, i_pos, i_boundary):
+    def set_boundary(self, i_pos: int, i_boundary: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetBoundary(long iPos,
                 | Reference iBoundary)
 
         :param int i_pos:
         :param Reference i_boundary:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_extrapol.SetBoundary(i_pos, i_boundary.com_object)
         # # # # Autogenerated comment: 
@@ -597,29 +620,31 @@ class HybridShapeExtrapol(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_continuity_type(self, i_pos, i_lim):
+    def set_continuity_type(self, i_pos: int, i_lim: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetContinuityType(long iPos,
                 | long iLim)
 
         :param int i_pos:
         :param int i_lim:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_extrapol.SetContinuityType(i_pos, i_lim)
 
-    def set_elem_until(self, i_pos, i_elem_until):
+    def set_elem_until(self, i_pos: int, i_elem_until: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetElemUntil(long iPos,
                 | Reference iElemUntil)
 
         :param int i_pos:
         :param Reference i_elem_until:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_extrapol.SetElemUntil(i_pos, i_elem_until.com_object)
         # # # # Autogenerated comment: 
@@ -638,10 +663,10 @@ class HybridShapeExtrapol(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_length(self, i_pos, i_length):
+    def set_length(self, i_pos: int, i_length: Length) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLength(long iPos,
                 | Length iLength)
                 | 
@@ -650,6 +675,7 @@ class HybridShapeExtrapol(HybridShape):
         :param int i_pos:
         :param Length i_length:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_extrapol.SetLength(i_pos, i_length.com_object)
         # # # # Autogenerated comment: 
@@ -668,31 +694,33 @@ class HybridShapeExtrapol(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_length_d(self, i_pos, i_length):
+    def set_length_d(self, i_pos: int, i_length: float) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLengthD(long iPos,
                 | double iLength)
 
         :param int i_pos:
         :param float i_length:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_extrapol.SetLengthD(i_pos, i_length)
 
-    def set_limit_type(self, i_pos, i_lim):
+    def set_limit_type(self, i_pos: int, i_lim: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLimitType(long iPos,
                 | long iLim)
 
         :param int i_pos:
         :param int i_lim:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_extrapol.SetLimitType(i_pos, i_lim)
 
     def __repr__(self):
-        return f'HybridShapeExtrapol(name="{ self.name }")'
+        return f'HybridShapeExtrapol(name="{self.name}")'

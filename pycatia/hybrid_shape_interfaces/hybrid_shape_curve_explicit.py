@@ -13,7 +13,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeCurveExplicit(HybridShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -31,9 +30,7 @@ class HybridShapeCurveExplicit(HybridShape):
                 | 
                 | See also:
                 |     HybridShapeFactory.AddNewCurveDatum 
-                | 
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
-    
+
     """
 
     def __init__(self, com_object):
@@ -41,4 +38,4 @@ class HybridShapeCurveExplicit(HybridShape):
         self.hybrid_shape_curve_explicit = com_object
 
     def __repr__(self):
-        return f'HybridShapeCurveExplicit(name="{ self.name }")'
+        return f'HybridShapeCurveExplicit(name="{self.name}")'

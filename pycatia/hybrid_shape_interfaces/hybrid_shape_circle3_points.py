@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapeCircle3Points(HybridShapeCircle):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -47,10 +47,10 @@ class HybridShapeCircle3Points(HybridShapeCircle):
         self.hybrid_shape_circle3_points = com_object
 
     @property
-    def element1(self):
+    def element1(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Element1() As Reference
                 | 
                 |     Returns or sets the circle first passing point.
@@ -66,12 +66,13 @@ class HybridShapeCircle3Points(HybridShapeCircle):
                 |          HybShpCircle3Pt.Element1
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_circle3_points.Element1)
 
     @element1.setter
-    def element1(self, value):
+    def element1(self, value: Reference):
         """
         :param Reference value:
         """
@@ -79,10 +80,10 @@ class HybridShapeCircle3Points(HybridShapeCircle):
         self.hybrid_shape_circle3_points.Element1 = value
 
     @property
-    def element2(self):
+    def element2(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Element2() As Reference
                 | 
                 |     Returns or sets the circle second passing point.
@@ -95,12 +96,13 @@ class HybridShapeCircle3Points(HybridShapeCircle):
                 |          HybShpCircle3Pt.Element2 Point2
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_circle3_points.Element2)
 
     @element2.setter
-    def element2(self, value):
+    def element2(self, value: Reference):
         """
         :param Reference value:
         """
@@ -108,10 +110,10 @@ class HybridShapeCircle3Points(HybridShapeCircle):
         self.hybrid_shape_circle3_points.Element2 = value
 
     @property
-    def element3(self):
+    def element3(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Element3() As Reference
                 | 
                 |     Returns or sets the circle third passing point.
@@ -127,12 +129,13 @@ class HybridShapeCircle3Points(HybridShapeCircle):
                 |          HybShpCircle3Pt.Element3
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_circle3_points.Element3)
 
     @element3.setter
-    def element3(self, value):
+    def element3(self, value: Reference):
         """
         :param Reference value:
         """
@@ -140,10 +143,10 @@ class HybridShapeCircle3Points(HybridShapeCircle):
         self.hybrid_shape_circle3_points.Element3 = value
 
     @property
-    def support(self):
+    def support(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets the circle support surface.
@@ -157,27 +160,29 @@ class HybridShapeCircle3Points(HybridShapeCircle):
                 |          HybShpCircleSupportSurf = HybShpCircle.Support
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_circle3_points.Support)
 
     @support.setter
-    def support(self, value):
+    def support(self, value: Reference):
         """
         :param Reference value:
         """
 
         self.hybrid_shape_circle3_points.Support = value
 
-    def remove_support(self):
+    def remove_support(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveSupport()
                 | 
                 |     Removes the support surface.
 
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_circle3_points.RemoveSupport()
 

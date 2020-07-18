@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapeTransfer(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -48,21 +48,22 @@ class HybridShapeTransfer(HybridShape):
         self.hybrid_shape_transfer = com_object
 
     @property
-    def element_to_transfer(self):
+    def element_to_transfer(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ElementToTransfer() As Reference
                 | 
                 |     Returns or sets the element to transfer.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_transfer.ElementToTransfer)
 
     @element_to_transfer.setter
-    def element_to_transfer(self, value):
+    def element_to_transfer(self, value: Reference):
         """
         :param Reference value:
         """
@@ -70,21 +71,22 @@ class HybridShapeTransfer(HybridShape):
         self.hybrid_shape_transfer.ElementToTransfer = value
 
     @property
-    def surface_to_unfold(self):
+    def surface_to_unfold(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SurfaceToUnfold() As Reference
                 | 
                 |     Returns or sets the surface to unfold.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_transfer.SurfaceToUnfold)
 
     @surface_to_unfold.setter
-    def surface_to_unfold(self, value):
+    def surface_to_unfold(self, value: Reference):
         """
         :param Reference value:
         """
@@ -92,10 +94,10 @@ class HybridShapeTransfer(HybridShape):
         self.hybrid_shape_transfer.SurfaceToUnfold = value
 
     @property
-    def type_of_transfer(self):
+    def type_of_transfer(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TypeOfTransfer() As long
                 | 
                 |     Returns or sets the type of transfer.
@@ -105,12 +107,13 @@ class HybridShapeTransfer(HybridShape):
                 |         2= The type of surface is unfolded to folded
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_transfer.TypeOfTransfer
 
     @type_of_transfer.setter
-    def type_of_transfer(self, value):
+    def type_of_transfer(self, value: int):
         """
         :param int value:
         """
@@ -118,10 +121,10 @@ class HybridShapeTransfer(HybridShape):
         self.hybrid_shape_transfer.TypeOfTransfer = value
 
     @property
-    def unfold_type(self):
+    def unfold_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property UnfoldType() As long
                 | 
                 |     Returns or sets the type of unfold to take into account during
@@ -132,12 +135,13 @@ class HybridShapeTransfer(HybridShape):
                 |         2= the surface to unfold is all
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_transfer.UnfoldType
 
     @unfold_type.setter
-    def unfold_type(self, value):
+    def unfold_type(self, value: int):
         """
         :param int value:
         """
@@ -145,21 +149,22 @@ class HybridShapeTransfer(HybridShape):
         self.hybrid_shape_transfer.UnfoldType = value
 
     @property
-    def unfolded_surface(self):
+    def unfolded_surface(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property UnfoldedSurface() As Reference
                 | 
                 |     Returns or sets the unfolded surface.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_transfer.UnfoldedSurface)
 
     @unfolded_surface.setter
-    def unfolded_surface(self, value):
+    def unfolded_surface(self, value: Reference):
         """
         :param Reference value:
         """

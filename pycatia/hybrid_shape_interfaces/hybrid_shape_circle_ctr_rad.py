@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -19,7 +19,7 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -53,10 +53,10 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
         self.hybrid_shape_circle_ctr_rad = com_object
 
     @property
-    def center(self):
+    def center(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Center() As Reference
                 | 
                 |     Returns or sets the circle center.
@@ -70,12 +70,13 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
                 |          HybShpCircleCenter = HybShpCircle.Center
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_circle_ctr_rad.Center)
 
     @center.setter
-    def center(self, value):
+    def center(self, value: Reference):
         """
         :param Reference value:
         """
@@ -83,10 +84,10 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
         self.hybrid_shape_circle_ctr_rad.Center = value
 
     @property
-    def diameter(self):
+    def diameter(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Diameter() As Length (Read Only)
                 | 
                 |     Returns the circle diameter.
@@ -101,15 +102,16 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
                 |      HybShpCircleDiameter = HybShpCircle.Diameter
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_circle_ctr_rad.Diameter)
 
     @property
-    def diameter_mode(self):
+    def diameter_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DiameterMode() As boolean
                 | 
                 |     Returns or sets the DiameterMode.
@@ -126,12 +128,13 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
                 |           HybShpCircle.DiameterMode = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_circle_ctr_rad.DiameterMode
 
     @diameter_mode.setter
-    def diameter_mode(self, value):
+    def diameter_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -139,10 +142,10 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
         self.hybrid_shape_circle_ctr_rad.DiameterMode = value
 
     @property
-    def first_direction(self):
+    def first_direction(self) -> HybridShapeDirection:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstDirection() As HybridShapeDirection
                 | 
                 |     Returns or sets the first direction used to set the angles reference.
@@ -160,12 +163,13 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
                 |         HybridShapeDirection
 
         :return: HybridShapeDirection
+        :rtype: HybridShapeDirection
         """
 
         return HybridShapeDirection(self.hybrid_shape_circle_ctr_rad.FirstDirection)
 
     @first_direction.setter
-    def first_direction(self, value):
+    def first_direction(self, value: HybridShapeDirection):
         """
         :param HybridShapeDirection value:
         """
@@ -173,10 +177,10 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
         self.hybrid_shape_circle_ctr_rad.FirstDirection = value
 
     @property
-    def radius(self):
+    def radius(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Radius() As Length (Read Only)
                 | 
                 |     Returns the circle radius. It is expressed as a Length literal. Succeeds
@@ -190,15 +194,16 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
                 |      HybShpCircleRadius = HybShpCircle.Radius
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_circle_ctr_rad.Radius)
 
     @property
-    def support(self):
+    def support(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets the circle support surface.
@@ -212,22 +217,23 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
                 |          HybShpCircleSupportSurf = HybShpCircle.Support
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_circle_ctr_rad.Support)
 
     @support.setter
-    def support(self, value):
+    def support(self, value: Reference):
         """
         :param Reference value:
         """
 
         self.hybrid_shape_circle_ctr_rad.Support = value
 
-    def get_second_direction(self, o_dir_x, o_dir_y, o_dir_z):
+    def get_second_direction(self, o_dir_x: float, o_dir_y: float, o_dir_z: float) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetSecondDirection(double oDirX,
                 | double oDirY,
                 | double oDirZ)
@@ -249,13 +255,14 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
         :param float o_dir_y:
         :param float o_dir_z:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_circle_ctr_rad.GetSecondDirection(o_dir_x, o_dir_y, o_dir_z)
 
-    def is_geodesic(self):
+    def is_geodesic(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func IsGeodesic() As boolean
                 | 
                 |     Queries whether the circle is geodesic or not.
@@ -266,26 +273,28 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
                 |             geodesic type : when TRUE, the circle is geodesic.
 
         :return: bool
+        :rtype: bool
         """
         return self.hybrid_shape_circle_ctr_rad.IsGeodesic()
 
-    def set_geometry_on_support(self):
+    def set_geometry_on_support(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetGeometryOnSupport()
                 | 
                 |     Sets GeometryOnSupport of circle.
                 |     It puts the circle on the surface.
 
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_circle_ctr_rad.SetGeometryOnSupport()
 
-    def set_second_direction(self, i_dir_x, i_dir_y, i_dir_z):
+    def set_second_direction(self, i_dir_x: float, i_dir_y: float, i_dir_z: float) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSecondDirection(double iDirX,
                 | double iDirY,
                 | double iDirZ)
@@ -307,19 +316,21 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
         :param float i_dir_y:
         :param float i_dir_z:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_circle_ctr_rad.SetSecondDirection(i_dir_x, i_dir_y, i_dir_z)
 
-    def unset_geometry_on_support(self):
+    def unset_geometry_on_support(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub UnsetGeometryOnSupport()
                 | 
                 |     Inactivates GeometryOnSupport of circle.
                 |     Note: The circle becomes euclidean.
 
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_circle_ctr_rad.UnsetGeometryOnSupport()
 

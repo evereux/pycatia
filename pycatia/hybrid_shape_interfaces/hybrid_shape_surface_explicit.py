@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -13,10 +13,9 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeSurfaceExplicit(HybridShape):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -31,9 +30,7 @@ class HybridShapeSurfaceExplicit(HybridShape):
                 | 
                 | See also:
                 |     HybridShapeFactory.AddNewSurfaceDatum 
-                | 
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
-    
+
     """
 
     def __init__(self, com_object):
@@ -41,4 +38,4 @@ class HybridShapeSurfaceExplicit(HybridShape):
         self.hybrid_shape_surface_explicit = com_object
 
     def __repr__(self):
-        return f'HybridShapeSurfaceExplicit(name="{ self.name }")'
+        return f'HybridShapeSurfaceExplicit(name="{self.name}")'

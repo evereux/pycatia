@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ from pycatia.knowledge_interfaces.length import Length
 class HybridShapeLinePtPt(Line):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -50,10 +50,10 @@ class HybridShapeLinePtPt(Line):
         self.hybrid_shape_line_pt_pt = com_object
 
     @property
-    def begin_offset(self):
+    def begin_offset(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BeginOffset() As Length (Read Only)
                 | 
                 |     Returns the start length of the line.
@@ -67,15 +67,16 @@ class HybridShapeLinePtPt(Line):
                 |          Set oStart = LinePtPt.BeginOffset
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_line_pt_pt.BeginOffset)
 
     @property
-    def end_offset(self):
+    def end_offset(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property EndOffset() As Length (Read Only)
                 | 
                 |     Returns the end length of the line.
@@ -89,15 +90,16 @@ class HybridShapeLinePtPt(Line):
                 |          Set oEnd = LinePtPt.EndOffset
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_line_pt_pt.EndOffset)
 
     @property
-    def pt_extremity(self):
+    def pt_extremity(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PtExtremity() As Reference
                 | 
                 |     Returns or Sets the extremity point of the LinePtPt(Second
@@ -112,12 +114,13 @@ class HybridShapeLinePtPt(Line):
                 |          Set oPtExtremity = LinePtPt.PtExtremity
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_line_pt_pt.PtExtremity)
 
     @pt_extremity.setter
-    def pt_extremity(self, value):
+    def pt_extremity(self, value: Reference):
         """
         :param Reference value:
         """
@@ -125,10 +128,10 @@ class HybridShapeLinePtPt(Line):
         self.hybrid_shape_line_pt_pt.PtExtremity = value
 
     @property
-    def pt_origine(self):
+    def pt_origine(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PtOrigine() As Reference
                 | 
                 |     Returns or Sets the origin point of the LinePtPt(First
@@ -143,12 +146,13 @@ class HybridShapeLinePtPt(Line):
                 |          Set oPtOrigine = LinePtPt.PtOrigine
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_line_pt_pt.PtOrigine)
 
     @pt_origine.setter
-    def pt_origine(self, value):
+    def pt_origine(self, value: Reference):
         """
         :param Reference value:
         """
@@ -156,10 +160,10 @@ class HybridShapeLinePtPt(Line):
         self.hybrid_shape_line_pt_pt.PtOrigine = value
 
     @property
-    def support(self):
+    def support(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
                 |     Returns or Sets the supporting surface.
@@ -175,22 +179,23 @@ class HybridShapeLinePtPt(Line):
                 |          Set oSurface = LinePtPt.Surface
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_line_pt_pt.Support)
 
     @support.setter
-    def support(self, value):
+    def support(self, value: Reference):
         """
         :param Reference value:
         """
 
         self.hybrid_shape_line_pt_pt.Support = value
 
-    def get_length_type(self):
+    def get_length_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetLengthType() As long
                 | 
                 |     Gets the length type Default is 0.
@@ -198,19 +203,20 @@ class HybridShapeLinePtPt(Line):
                 |     Parameters:
                 | 
                 |         oType
-                |             The length type = 0 : length - the line is limited by its extremities = 1 :
-                |             infinite - the line is infinite = 2 :
-                |             infinite start point - the line is infinite on the side of the start point = 3 :
-                |             infinite end point - the line is infinite on the side of the end point
+                |             The length type = 0 : length - the line is limited by its extremities =
+                |             1 : infinite - the line is infinite = 2 : infinite start point - the line is infinite on
+                |             the side of the start point = 3 : infinite end point - the line is infinite on the side of
+                |             the end point
 
         :return: int
+        :rtype: int
         """
         return self.hybrid_shape_line_pt_pt.GetLengthType()
 
-    def get_symmetrical_extension(self):
+    def get_symmetrical_extension(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetSymmetricalExtension() As boolean
                 | 
                 |     Gets whether the symmetrical extension of the line is
@@ -219,28 +225,30 @@ class HybridShapeLinePtPt(Line):
                 |     Parameters:
                 | 
                 |         oSym
-                |             Symmetry flag
+                |             Symetry flag
 
         :return: bool
+        :rtype: bool
         """
         return self.hybrid_shape_line_pt_pt.GetSymmetricalExtension()
 
-    def remove_support(self):
+    def remove_support(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveSupport()
                 | 
                 |     Removes the support surface.
 
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_line_pt_pt.RemoveSupport()
 
-    def set_length_type(self, i_type):
+    def set_length_type(self, i_type: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLengthType(long iType)
                 | 
                 |     Sets the length type Default is 0.
@@ -248,20 +256,21 @@ class HybridShapeLinePtPt(Line):
                 |     Parameters:
                 | 
                 |         iType
-                |             The length type = 0 : length - the line is limited by its extremities = 1 :
-                |             infinite - the line is infinite = 2 :
-                |             infinite start point - the line is infinite on the side of the start point = 3 :
-                |             infinite end point - the line is infinite on the side of the end point
+                |             The length type = 0 : length - the line is limited by its extremities =
+                |             1 : infinite - the line is infinite = 2 : infinite start point - the line is infinite on
+                |             the side of the start point = 3 : infinite end point - the line is infinite on the side
+                |             of the end point
 
         :param int i_type:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_line_pt_pt.SetLengthType(i_type)
 
-    def set_symmetrical_extension(self, i_sym):
+    def set_symmetrical_extension(self, i_sym: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSymmetricalExtension(boolean iSym)
                 | 
                 |     Sets the symmetrical extension of the line (start = -end).
@@ -269,10 +278,11 @@ class HybridShapeLinePtPt(Line):
                 |     Parameters:
                 | 
                 |         iSym
-                |             Symmetry flag
+                |             Symetry flag
 
         :param bool i_sym:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_line_pt_pt.SetSymmetricalExtension(i_sym)
         # # # # Autogenerated comment: 

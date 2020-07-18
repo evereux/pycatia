@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -15,10 +15,9 @@ from pycatia.knowledge_interfaces.length import Length
 
 
 class HybridShapeCircleCenterAxis(HybridShapeCircle):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -55,10 +54,10 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
         self.hybrid_shape_circle_center_axis = com_object
 
     @property
-    def axis(self):
+    def axis(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Axis() As Reference
                 | 
                 |     Returns or sets the Axis of the circle.
@@ -72,12 +71,13 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
                 |          Set CircleAxis = HybShpCircle.Axis
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_circle_center_axis.Axis)
 
     @axis.setter
-    def axis(self, value):
+    def axis(self, value: Reference):
         """
         :param Reference value:
         """
@@ -85,10 +85,10 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
         self.hybrid_shape_circle_center_axis.Axis = value
 
     @property
-    def diameter(self):
+    def diameter(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Diameter() As Length (Read Only)
                 | 
                 |     Returns the circle diameter. It is expressed as a Length literal. Succeeds
@@ -102,15 +102,16 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
                 |      HybShpCircleDiameter = HybShpCircle.Diameter
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_circle_center_axis.Diameter)
 
     @property
-    def diameter_mode(self):
+    def diameter_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DiameterMode() As boolean
                 | 
                 |     Returns or sets the DiameterMode.
@@ -128,12 +129,13 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
                 |           HybShpCircle.DiameterMode = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_circle_center_axis.DiameterMode
 
     @diameter_mode.setter
-    def diameter_mode(self, value):
+    def diameter_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -141,10 +143,10 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
         self.hybrid_shape_circle_center_axis.DiameterMode = value
 
     @property
-    def point(self):
+    def point(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Point() As Reference
                 | 
                 |     Returns or sets the Point of the circle.
@@ -158,12 +160,13 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
                 |          Set CirclePoint = HybShpCircle.Point
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_circle_center_axis.Point)
 
     @point.setter
-    def point(self, value):
+    def point(self, value: Reference):
         """
         :param Reference value:
         """
@@ -171,10 +174,10 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
         self.hybrid_shape_circle_center_axis.Point = value
 
     @property
-    def projection_mode(self):
+    def projection_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ProjectionMode() As boolean
                 | 
                 |     Returns or sets the ProjectionMode.
@@ -192,12 +195,13 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
                 |           HybShpCircle.ProjectionMode = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_circle_center_axis.ProjectionMode
 
     @projection_mode.setter
-    def projection_mode(self, value):
+    def projection_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -205,10 +209,10 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
         self.hybrid_shape_circle_center_axis.ProjectionMode = value
 
     @property
-    def radius(self):
+    def radius(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Radius() As Length (Read Only)
                 | 
                 |     Returns the circle radius. It is expressed as a Length literal. Succeeds
@@ -220,15 +224,12 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
                 | 
                 |      Dim HybShpCircleRadius As Length
                 |      HybShpCircleRadius = HybShpCircle.Radius
-                |      
-                | 
-                |     Copyright © 1999-2011, Dassault Systèmes. All rights
-                |     reserved.
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_circle_center_axis.Radius)
 
     def __repr__(self):
-        return f'HybridShapeCircleCenterAxis(name="{ self.name }")'
+        return f'HybridShapeCircleCenterAxis(name="{self.name}")'

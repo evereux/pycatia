@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -20,7 +20,7 @@ class HybridShapePointOnCurve(Point):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -55,10 +55,10 @@ class HybridShapePointOnCurve(Point):
         self.hybrid_shape_point_on_curve = com_object
 
     @property
-    def curve(self):
+    def curve(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Curve() As Reference
                 | 
                 |     Returns or sets the curve onto which the point is or should be
@@ -77,12 +77,13 @@ class HybridShapePointOnCurve(Point):
                 |          Set oCurve = pointOnCurve.Curve
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_point_on_curve.Curve)
 
     @curve.setter
-    def curve(self, value):
+    def curve(self, value: Reference):
         """
         :param Reference value:
         """
@@ -90,10 +91,10 @@ class HybridShapePointOnCurve(Point):
         self.hybrid_shape_point_on_curve.Curve = value
 
     @property
-    def direction(self):
+    def direction(self) -> HybridShapeDirection:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Direction() As HybridShapeDirection
                 | 
                 |     Returns or sets the direction along which the point is or should be
@@ -107,12 +108,13 @@ class HybridShapePointOnCurve(Point):
                 |          Set Dir=pointOnCurve.Direction
 
         :return: HybridShapeDirection
+        :rtype: HybridShapeDirection
         """
 
         return HybridShapeDirection(self.hybrid_shape_point_on_curve.Direction)
 
     @direction.setter
-    def direction(self, value):
+    def direction(self, value: HybridShapeDirection):
         """
         :param HybridShapeDirection value:
         """
@@ -120,10 +122,10 @@ class HybridShapePointOnCurve(Point):
         self.hybrid_shape_point_on_curve.Direction = value
 
     @property
-    def distance_type(self):
+    def distance_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DistanceType() As long
                 | 
                 |     Returns or sets the distance type.
@@ -147,12 +149,13 @@ class HybridShapePointOnCurve(Point):
                 |          Set oDistanceType = pointOnCurve.DistanceType
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_point_on_curve.DistanceType
 
     @distance_type.setter
-    def distance_type(self, value):
+    def distance_type(self, value: int):
         """
         :param int value:
         """
@@ -160,10 +163,10 @@ class HybridShapePointOnCurve(Point):
         self.hybrid_shape_point_on_curve.DistanceType = value
 
     @property
-    def offset(self):
+    def offset(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Offset() As Length (Read Only)
                 | 
                 |     Returns the distance to the reference point.
@@ -183,15 +186,16 @@ class HybridShapePointOnCurve(Point):
                 |          Set oOffset = pointOnCurve.Offset
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_point_on_curve.Offset)
 
     @property
-    def on_curve_type(self):
+    def on_curve_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OnCurveType() As long
                 | 
                 |     Returns or sets the OnCurve type for created point on
@@ -199,12 +203,13 @@ class HybridShapePointOnCurve(Point):
                 |     Legal values: 0 = Distance on curve 1 = Distance along direction 2 = Ratio of Curve length
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_point_on_curve.OnCurveType
 
     @on_curve_type.setter
-    def on_curve_type(self, value):
+    def on_curve_type(self, value: int):
         """
         :param int value:
         """
@@ -212,10 +217,10 @@ class HybridShapePointOnCurve(Point):
         self.hybrid_shape_point_on_curve.OnCurveType = value
 
     @property
-    def orientation(self):
+    def orientation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation() As long
                 | 
                 |     Returns or sets the curve orientation.
@@ -238,12 +243,13 @@ class HybridShapePointOnCurve(Point):
                 |          Set oOrientation = pointOnCurve.Orientation
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_point_on_curve.Orientation
 
     @orientation.setter
-    def orientation(self, value):
+    def orientation(self, value: int):
         """
         :param int value:
         """
@@ -251,10 +257,10 @@ class HybridShapePointOnCurve(Point):
         self.hybrid_shape_point_on_curve.Orientation = value
 
     @property
-    def point(self):
+    def point(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Point() As Reference
                 | 
                 |     Returns or sets the reference point.
@@ -280,12 +286,13 @@ class HybridShapePointOnCurve(Point):
                 |          Set oRefPoint = pointOnCurve.Point
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_point_on_curve.Point)
 
     @point.setter
-    def point(self, value):
+    def point(self, value: Reference):
         """
         :param Reference value:
         """
@@ -293,10 +300,10 @@ class HybridShapePointOnCurve(Point):
         self.hybrid_shape_point_on_curve.Point = value
 
     @property
-    def ratio(self):
+    def ratio(self) -> RealParam:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Ratio() As RealParam (Read Only)
                 | 
                 |     Returns the distance ratio to the reference point.
@@ -317,15 +324,16 @@ class HybridShapePointOnCurve(Point):
                 |          Set oRatio = PointOnCurve.Ratio
 
         :return: RealParam
+        :rtype: RealParam
         """
 
         return RealParam(self.hybrid_shape_point_on_curve.Ratio)
 
     @property
-    def type(self):
+    def type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Type() As long (Read Only)
                 | 
                 |     Returns the distance stored value type.
@@ -345,6 +353,7 @@ class HybridShapePointOnCurve(Point):
                 |          Set oType = pointOnCurve.Type
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_point_on_curve.Type

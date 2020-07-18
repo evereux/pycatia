@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -18,7 +18,7 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -53,10 +53,10 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
         self.hybrid_shape_circle_bitangent_radius = com_object
 
     @property
-    def begin_of_circle(self):
+    def begin_of_circle(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BeginOfCircle() As long
                 | 
                 |     Return or Set the number of the beginning curve of the circle. This
@@ -71,12 +71,13 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
                 |          hybShpcircle.BeginOfCircle = 1
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_circle_bitangent_radius.BeginOfCircle
 
     @begin_of_circle.setter
-    def begin_of_circle(self, value):
+    def begin_of_circle(self, value: int):
         """
         :param int value:
         """
@@ -84,10 +85,10 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
         self.hybrid_shape_circle_bitangent_radius.BeginOfCircle = value
 
     @property
-    def curve1(self):
+    def curve1(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Curve1() As Reference
                 | 
                 |     Returns or sets the first curve to which the circle is or will be
@@ -103,12 +104,13 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
                 |          HybShpCircleFirstCurve = HybShpCircle.Curve1
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_circle_bitangent_radius.Curve1)
 
     @curve1.setter
-    def curve1(self, value):
+    def curve1(self, value: Reference):
         """
         :param Reference value:
         """
@@ -116,10 +118,10 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
         self.hybrid_shape_circle_bitangent_radius.Curve1 = value
 
     @property
-    def curve2(self):
+    def curve2(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Curve2() As Reference
                 | 
                 |     Returns or sets the second curve to which the circle is or will be
@@ -134,12 +136,13 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
                 |          HybShpCircle.Curve2 Crv5
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_circle_bitangent_radius.Curve2)
 
     @curve2.setter
-    def curve2(self, value):
+    def curve2(self, value: Reference):
         """
         :param Reference value:
         """
@@ -147,10 +150,10 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
         self.hybrid_shape_circle_bitangent_radius.Curve2 = value
 
     @property
-    def diameter(self):
+    def diameter(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Diameter() As Length (Read Only)
                 | 
                 |     Returns the circle diameter. It is expressed as a Length literal. Succeeds
@@ -164,15 +167,16 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
                 |      HybShpCircleDiameter = HybShpCircle.Diameter
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_circle_bitangent_radius.Diameter)
 
     @property
-    def diameter_mode(self):
+    def diameter_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DiameterMode() As boolean
                 | 
                 |     Returns or sets the DiameterMode.
@@ -189,12 +193,13 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
                 |           HybShpCircle.DiameterMode = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_circle_bitangent_radius.DiameterMode
 
     @diameter_mode.setter
-    def diameter_mode(self, value):
+    def diameter_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -202,10 +207,10 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
         self.hybrid_shape_circle_bitangent_radius.DiameterMode = value
 
     @property
-    def discrimination_index(self):
+    def discrimination_index(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DiscriminationIndex() As long
                 | 
                 |     Return or set the discrimination index of the current circle. Several
@@ -223,12 +228,13 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
                 |          hybShpcircle.DiscriminationIndex = 2
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_circle_bitangent_radius.DiscriminationIndex
 
     @discrimination_index.setter
-    def discrimination_index(self, value):
+    def discrimination_index(self, value: int):
         """
         :param int value:
         """
@@ -236,10 +242,10 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
         self.hybrid_shape_circle_bitangent_radius.DiscriminationIndex = value
 
     @property
-    def orientation1(self):
+    def orientation1(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation1() As long
                 | 
                 |     Returns or sets the orientation of the first curve to which the circle is
@@ -257,12 +263,13 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
                 |          HybShpCircle.Orientation1 -1
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_circle_bitangent_radius.Orientation1
 
     @orientation1.setter
-    def orientation1(self, value):
+    def orientation1(self, value: int):
         """
         :param int value:
         """
@@ -270,10 +277,10 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
         self.hybrid_shape_circle_bitangent_radius.Orientation1 = value
 
     @property
-    def orientation2(self):
+    def orientation2(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation2() As long
                 | 
                 |     Returns or sets the orientation of the second curve to which the circle is
@@ -291,12 +298,13 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
                 |          HybShpCircleOrientation = HybShpCircle.Orientation2
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_circle_bitangent_radius.Orientation2
 
     @orientation2.setter
-    def orientation2(self, value):
+    def orientation2(self, value: int):
         """
         :param int value:
         """
@@ -304,10 +312,10 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
         self.hybrid_shape_circle_bitangent_radius.Orientation2 = value
 
     @property
-    def radius(self):
+    def radius(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Radius() As Length (Read Only)
                 | 
                 |     Returns the circle radius. It is expressed as a Length literal. Succeeds
@@ -321,15 +329,16 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
                 |      HybShpCircleRadius = HybShpCircle.Radius
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_circle_bitangent_radius.Radius)
 
     @property
-    def support(self):
+    def support(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets the circle support surface.
@@ -343,12 +352,13 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
                 |          HybShpCircleSupportSurf = HybShpCircle.Support
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_circle_bitangent_radius.Support)
 
     @support.setter
-    def support(self, value):
+    def support(self, value: Reference):
         """
         :param Reference value:
         """
@@ -356,10 +366,10 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
         self.hybrid_shape_circle_bitangent_radius.Support = value
 
     @property
-    def tangent_orientation1(self):
+    def tangent_orientation1(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TangentOrientation1() As long
                 | 
                 |     Returns or sets the tangent orientation of the circle first reference
@@ -376,12 +386,13 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
                 |          firstOrient = hybShpcircle.FirstTangentOrientation
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_circle_bitangent_radius.TangentOrientation1
 
     @tangent_orientation1.setter
-    def tangent_orientation1(self, value):
+    def tangent_orientation1(self, value: int):
         """
         :param int value:
         """
@@ -389,10 +400,10 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
         self.hybrid_shape_circle_bitangent_radius.TangentOrientation1 = value
 
     @property
-    def tangent_orientation2(self):
+    def tangent_orientation2(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TangentOrientation2() As long
                 | 
                 |     Returns or sets the tangent orientation of the circle second reference
@@ -409,12 +420,13 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
                 |          secondOrient = hybShpcircle.SecondTangentOrientation
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_circle_bitangent_radius.TangentOrientation2
 
     @tangent_orientation2.setter
-    def tangent_orientation2(self, value):
+    def tangent_orientation2(self, value: int):
         """
         :param int value:
         """
@@ -422,10 +434,10 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
         self.hybrid_shape_circle_bitangent_radius.TangentOrientation2 = value
 
     @property
-    def trim_mode(self):
+    def trim_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TrimMode() As long
                 | 
                 |     Returns or sets whether the circle reference curves are or should be
@@ -446,12 +458,13 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
                 |          hybShpCircle.TrimMode = 1
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_circle_bitangent_radius.TrimMode
 
     @trim_mode.setter
-    def trim_mode(self, value):
+    def trim_mode(self, value: int):
         """
         :param int value:
         """

@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -18,7 +18,7 @@ class HybridShapePointCoord(Point):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -47,10 +47,10 @@ class HybridShapePointCoord(Point):
         self.hybrid_shape_point_coord = com_object
 
     @property
-    def pt_ref(self):
+    def pt_ref(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PtRef() As Reference
                 | 
                 |     Returns or Sets the reference point for PointCoord
@@ -70,12 +70,13 @@ class HybridShapePointCoord(Point):
                 |          Set oPtRef  = PointCoord.PtRef
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_point_coord.PtRef)
 
     @pt_ref.setter
-    def pt_ref(self, value):
+    def pt_ref(self, value: Reference):
         """
         :param Reference value:
         """
@@ -83,10 +84,10 @@ class HybridShapePointCoord(Point):
         self.hybrid_shape_point_coord.PtRef = value
 
     @property
-    def ref_axis_system(self):
+    def ref_axis_system(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RefAxisSystem() As Reference
                 | 
                 |     Returns or Sets the reference Axis System for PointCoord
@@ -107,12 +108,13 @@ class HybridShapePointCoord(Point):
                 |          Set oRefAxis  = PointCoord.RefAxisSystem
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_point_coord.RefAxisSystem)
 
     @ref_axis_system.setter
-    def ref_axis_system(self, value):
+    def ref_axis_system(self, value: Reference):
         """
         :param Reference value:
         """
@@ -120,10 +122,10 @@ class HybridShapePointCoord(Point):
         self.hybrid_shape_point_coord.RefAxisSystem = value
 
     @property
-    def x(self):
+    def x(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property X() As Length (Read Only)
                 | 
                 |     Returns X coordinate of the point.
@@ -137,15 +139,16 @@ class HybridShapePointCoord(Point):
                 |          Set oX = PointCoord.X
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_point_coord.X)
 
     @property
-    def y(self):
+    def y(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Y() As Length (Read Only)
                 | 
                 |     Returns Y coordinate of the point.
@@ -159,15 +162,16 @@ class HybridShapePointCoord(Point):
                 |          Set oY = PointCoord.Y
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_point_coord.Y)
 
     @property
-    def z(self):
+    def z(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Z() As Length (Read Only)
                 | 
                 |     Returns Z coordinate of the point.
@@ -181,6 +185,7 @@ class HybridShapePointCoord(Point):
                 |          Set oZ = PointCoord.Z
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_point_coord.Z)

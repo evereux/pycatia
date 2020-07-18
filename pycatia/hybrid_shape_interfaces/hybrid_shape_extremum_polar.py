@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -20,7 +20,7 @@ class HybridShapeExtremumPolar(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -49,35 +49,37 @@ class HybridShapeExtremumPolar(HybridShape):
         self.hybrid_shape_extremum_polar = com_object
 
     @property
-    def angle(self):
+    def angle(self) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Angle() As Angle (Read Only)
                 | 
                 |     returns the resulting angle of extremum.
 
         :return: Angle
+        :rtype: Angle
         """
 
         return Angle(self.hybrid_shape_extremum_polar.Angle)
 
     @property
-    def contour(self):
+    def contour(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Contour() As Reference
                 | 
                 |     returns or sets the input contour.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_extremum_polar.Contour)
 
     @contour.setter
-    def contour(self, value):
+    def contour(self, value: Reference):
         """
         :param Reference value:
         """
@@ -85,21 +87,22 @@ class HybridShapeExtremumPolar(HybridShape):
         self.hybrid_shape_extremum_polar.Contour = value
 
     @property
-    def dir(self):
+    def dir(self) -> HybridShapeDirection:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Dir() As HybridShapeDirection
                 | 
                 |     returns or sets the direction of computation.
 
         :return: HybridShapeDirection
+        :rtype: HybridShapeDirection
         """
 
         return HybridShapeDirection(self.hybrid_shape_extremum_polar.Dir)
 
     @dir.setter
-    def dir(self, value):
+    def dir(self, value: HybridShapeDirection):
         """
         :param HybridShapeDirection value:
         """
@@ -107,43 +110,45 @@ class HybridShapeExtremumPolar(HybridShape):
         self.hybrid_shape_extremum_polar.Dir = value
 
     @property
-    def extremum_type(self):
+    def extremum_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExtremumType() As short
                 | 
                 |     returns or sets the type of extremum.
 
-        :return: enum
+        :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_extremum_polar.ExtremumType
 
     @extremum_type.setter
-    def extremum_type(self, value):
+    def extremum_type(self, value: int):
         """
-        :param enum value:
+        :param int value:
         """
 
         self.hybrid_shape_extremum_polar.ExtremumType = value
 
     @property
-    def origin(self):
+    def origin(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Origin() As Reference
                 | 
                 |     returns or sets the origin of the polar axis.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_extremum_polar.Origin)
 
     @origin.setter
-    def origin(self, value):
+    def origin(self, value: Reference):
         """
         :param Reference value:
         """
@@ -151,35 +156,37 @@ class HybridShapeExtremumPolar(HybridShape):
         self.hybrid_shape_extremum_polar.Origin = value
 
     @property
-    def radius(self):
+    def radius(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Radius() As Length (Read Only)
                 | 
                 |     returns the resulting radius of extremum.
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_extremum_polar.Radius)
 
     @property
-    def support(self):
+    def support(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
                 |     returns or sets the support (if exist).
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_extremum_polar.Support)
 
     @support.setter
-    def support(self, value):
+    def support(self, value: Reference):
         """
         :param Reference value:
         """
