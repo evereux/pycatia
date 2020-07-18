@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapePlaneNormal(Plane):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -39,10 +39,10 @@ class HybridShapePlaneNormal(Plane):
         self.hybrid_shape_plane_normal = com_object
 
     @property
-    def curve(self):
+    def curve(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Curve() As Reference
                 | 
                 |     Role: Get the curve to which the plane is to be normal.
@@ -61,12 +61,13 @@ class HybridShapePlaneNormal(Plane):
                 |         HybridShapeFactory
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_plane_normal.Curve)
 
     @curve.setter
-    def curve(self, value):
+    def curve(self, value: Reference):
         """
         :param Reference value:
         """
@@ -74,10 +75,10 @@ class HybridShapePlaneNormal(Plane):
         self.hybrid_shape_plane_normal.Curve = value
 
     @property
-    def point(self):
+    def point(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Point() As Reference
                 | 
                 |     Role: Get the point where the plane is to be normal.
@@ -96,12 +97,13 @@ class HybridShapePlaneNormal(Plane):
                 |         HybridShapeFactory
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_plane_normal.Point)
 
     @point.setter
-    def point(self, value):
+    def point(self, value: Reference):
         """
         :param Reference value:
         """

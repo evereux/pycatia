@@ -13,7 +13,6 @@ from pycatia.hybrid_shape_interfaces.hybrid_shape_circle import HybridShapeCircl
 
 
 class HybridShapeCircleExplicit(HybridShapeCircle):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -39,9 +38,7 @@ class HybridShapeCircleExplicit(HybridShapeCircle):
                 | 
                 | See also:
                 |     HybridShapeFactory 
-                | 
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
-    
+
     """
 
     def __init__(self, com_object):
@@ -49,4 +46,4 @@ class HybridShapeCircleExplicit(HybridShapeCircle):
         self.hybrid_shape_circle_explicit = com_object
 
     def __repr__(self):
-        return f'HybridShapeCircleExplicit(name="{ self.name }")'
+        return f'HybridShapeCircleExplicit(name="{self.name}")'

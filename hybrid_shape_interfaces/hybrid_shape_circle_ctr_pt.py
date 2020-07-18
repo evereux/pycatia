@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -51,10 +51,10 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
         self.hybrid_shape_circle_ctr_pt = com_object
 
     @property
-    def center(self):
+    def center(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Center() As Reference
                 | 
                 |     Returns or sets the circle center.
@@ -68,12 +68,13 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
                 |          HybShpCircleCenter = HybShpCircle.Center
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_circle_ctr_pt.Center)
 
     @center.setter
-    def center(self, value):
+    def center(self, value: Reference):
         """
         :param Reference value:
         """
@@ -81,10 +82,10 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
         self.hybrid_shape_circle_ctr_pt.Center = value
 
     @property
-    def crossing_point(self):
+    def crossing_point(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CrossingPoint() As Reference
                 | 
                 |     Returns or sets the circle passing point.
@@ -98,12 +99,13 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
                 |          Set HybShpCirclePassingPoint = HybShpCircle.CrossingPoint
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_circle_ctr_pt.CrossingPoint)
 
     @crossing_point.setter
-    def crossing_point(self, value):
+    def crossing_point(self, value: Reference):
         """
         :param Reference value:
         """
@@ -111,10 +113,10 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
         self.hybrid_shape_circle_ctr_pt.CrossingPoint = value
 
     @property
-    def support(self):
+    def support(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets the circle support surface.
@@ -128,22 +130,23 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
                 |          HybShpCircleSupportSurf = HybShpCircle.Support
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_circle_ctr_pt.Support)
 
     @support.setter
-    def support(self, value):
+    def support(self, value: Reference):
         """
         :param Reference value:
         """
 
         self.hybrid_shape_circle_ctr_pt.Support = value
 
-    def is_geodesic(self):
+    def is_geodesic(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func IsGeodesic() As boolean
                 | 
                 |     Queries whether the circle is geodesic or not.
@@ -154,32 +157,35 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
                 |             geodesic type : when TRUE, the circle is geodesic.
 
         :return: bool
+        :rtype: bool
         """
         return self.hybrid_shape_circle_ctr_pt.IsGeodesic()
 
-    def set_geometry_on_support(self):
+    def set_geometry_on_support(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetGeometryOnSupport()
                 | 
                 |     Sets GeometryOnSupport of circle.
                 |     It puts the circle on the surface.
 
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_circle_ctr_pt.SetGeometryOnSupport()
 
-    def unset_geometry_on_support(self):
+    def unset_geometry_on_support(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub UnsetGeometryOnSupport()
                 | 
                 |     Inactivates GeometryOnSupport of circle.
                 |     Note: The circle becomes euclidean.
 
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_circle_ctr_pt.UnsetGeometryOnSupport()
 

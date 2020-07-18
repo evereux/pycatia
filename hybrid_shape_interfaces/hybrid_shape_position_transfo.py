@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -19,7 +19,7 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapePositionTransfo(HybridShape):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -51,10 +51,10 @@ class HybridShapePositionTransfo(HybridShape):
         self.hybrid_shape_position_transfo = com_object
 
     @property
-    def initial_direction_computation_mode(self):
+    def initial_direction_computation_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property InitialDirectionComputationMode() As long
                 | 
                 |     Gets or sets the computation mode of the X axis (or direction) of the
@@ -63,17 +63,20 @@ class HybridShapePositionTransfo(HybridShape):
                 |     Parameters:
                 | 
                 |         oDirCompMode
-                |             computation mode = 0 : no X axis specified = 1 : the X axis is implicitly the tangent of
-                |             the profile at the origin(the origin then HAS to be on the profile). = 2 : the X axis is
-                |             specified by a direction by SetPositionDirection(1,UserInputDirection).
+                |             computation mode =
+                |             0 : no X axis specified
+                |             1 : the X axis is implicitly the tangent
+                |                 of the profile at the origin(the origin then HAS to be on the profile).
+                |             2 : the X axis is specified by a direction by SetPositionDirection(1,UserInputDirection).
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_position_transfo.InitialDirectionComputationMode
 
     @initial_direction_computation_mode.setter
-    def initial_direction_computation_mode(self, value):
+    def initial_direction_computation_mode(self, value: int):
         """
         :param int value:
         """
@@ -81,10 +84,10 @@ class HybridShapePositionTransfo(HybridShape):
         self.hybrid_shape_position_transfo.InitialDirectionComputationMode = value
 
     @property
-    def mode(self):
+    def mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Mode() As long
                 | 
                 |     Returns or sets the positioning mode.
@@ -98,12 +101,13 @@ class HybridShapePositionTransfo(HybridShape):
                 |     CATGSMPositionMode_Develop
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_position_transfo.Mode
 
     @mode.setter
-    def mode(self, value):
+    def mode(self, value: int):
         """
         :param int value:
         """
@@ -111,31 +115,32 @@ class HybridShapePositionTransfo(HybridShape):
         self.hybrid_shape_position_transfo.Mode = value
 
     @property
-    def profile(self):
+    def profile(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Profile() As Reference
                 | 
                 |     Returns or sets the profile to be positioned.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_position_transfo.Profile)
 
     @profile.setter
-    def profile(self, value):
+    def profile(self, value: Reference):
         """
         :param Reference value:
         """
 
         self.hybrid_shape_position_transfo.Profile = value
 
-    def get_nb_pos_angle(self):
+    def get_nb_pos_angle(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNbPosAngle() As long
                 | 
                 |     Gets the number of numerical positioning parameters : first axis direction angles.
@@ -146,13 +151,14 @@ class HybridShapePositionTransfo(HybridShape):
                 |             Number of parameters
 
         :return: int
+        :rtype: int
         """
         return self.hybrid_shape_position_transfo.GetNbPosAngle()
 
-    def get_nb_pos_coord(self):
+    def get_nb_pos_coord(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNbPosCoord() As long
                 | 
                 |     Gets the number of numerical positioning parameters : origin planar coordinates.
@@ -163,13 +169,14 @@ class HybridShapePositionTransfo(HybridShape):
                 |             Number of parameters
 
         :return: int
+        :rtype: int
         """
         return self.hybrid_shape_position_transfo.GetNbPosCoord()
 
-    def get_pos_angle(self, i_i):
+    def get_pos_angle(self, i_i: int) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPosAngle(long iI) As Angle
                 | 
                 |     Returns angles of both initial and target coordinate systems from default
@@ -185,13 +192,14 @@ class HybridShapePositionTransfo(HybridShape):
 
         :param int i_i:
         :return: Angle
+        :rtype: Angle
         """
         return Angle(self.hybrid_shape_position_transfo.GetPosAngle(i_i))
 
-    def get_pos_coord(self, ii):
+    def get_pos_coord(self, ii: int) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPosCoord(long ii) As Length
                 | 
                 |     Returns translation coordinates if both initial and target coordinate
@@ -207,13 +215,14 @@ class HybridShapePositionTransfo(HybridShape):
 
         :param int ii:
         :return: Length
+        :rtype: Length
         """
         return Length(self.hybrid_shape_position_transfo.GetPosCoord(ii))
 
-    def get_pos_point(self, ii):
+    def get_pos_point(self, ii: int) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPosPoint(long ii) As Reference
                 | 
                 |     Returns the points designated as the origins of the initial and target
@@ -229,13 +238,14 @@ class HybridShapePositionTransfo(HybridShape):
 
         :param int ii:
         :return: Reference
+        :rtype: Reference
         """
         return Reference(self.hybrid_shape_position_transfo.GetPosPoint(ii))
 
-    def get_pos_swap_axes(self, ii):
+    def get_pos_swap_axes(self, ii: int) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPosSwapAxes(long ii) As long
                 | 
                 |     Returns axis inversion from previous definitions for both initial and
@@ -260,13 +270,14 @@ class HybridShapePositionTransfo(HybridShape):
 
         :param int ii:
         :return: int
+        :rtype: int
         """
         return self.hybrid_shape_position_transfo.GetPosSwapAxes(ii)
 
-    def get_position_direction(self, i_i):
+    def get_position_direction(self, i_i: int) -> HybridShapeDirection:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPositionDirection(long iI) As HybridShapeDirection
                 | 
                 |     Returns the positioning directions.
@@ -283,37 +294,40 @@ class HybridShapePositionTransfo(HybridShape):
 
         :param int i_i:
         :return: HybridShapeDirection
+        :rtype: HybridShapeDirection
         """
         return HybridShapeDirection(self.hybrid_shape_position_transfo.GetPositionDirection(i_i))
 
-    def remove_all_pos_angle(self):
+    def remove_all_pos_angle(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveAllPosAngle()
                 | 
                 |     Removes all numerical positioning parameters : first axis direction angles.
 
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_position_transfo.RemoveAllPosAngle()
 
-    def remove_all_pos_coord(self):
+    def remove_all_pos_coord(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveAllPosCoord()
                 | 
                 |     Removes all numerical positioning parameters : origin planar coordinates.
 
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_position_transfo.RemoveAllPosCoord()
 
-    def set_pos_angle(self, i_i, i_angle):
+    def set_pos_angle(self, i_i: int, i_angle: Angle) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPosAngle(long iI,
                 | Angle iAngle)
                 | 
@@ -330,6 +344,7 @@ class HybridShapePositionTransfo(HybridShape):
         :param int i_i:
         :param Angle i_angle:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_position_transfo.SetPosAngle(i_i, i_angle.com_object)
         # # # # Autogenerated comment: 
@@ -348,10 +363,10 @@ class HybridShapePositionTransfo(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_pos_coord(self, i_i, i_coordinate):
+    def set_pos_coord(self, i_i: int, i_coordinate: Length) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPosCoord(long iI,
                 | Length iCoordinate)
                 | 
@@ -369,6 +384,7 @@ class HybridShapePositionTransfo(HybridShape):
         :param int i_i:
         :param Length i_coordinate:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_position_transfo.SetPosCoord(i_i, i_coordinate.com_object)
         # # # # Autogenerated comment: 
@@ -387,10 +403,10 @@ class HybridShapePositionTransfo(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_pos_point(self, i_i, i_elem):
+    def set_pos_point(self, i_i: int, i_elem: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPosPoint(long iI,
                 | Reference iElem)
                 | 
@@ -408,6 +424,7 @@ class HybridShapePositionTransfo(HybridShape):
         :param int i_i:
         :param Reference i_elem:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_position_transfo.SetPosPoint(i_i, i_elem.com_object)
         # # # # Autogenerated comment: 
@@ -426,10 +443,10 @@ class HybridShapePositionTransfo(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_pos_swap_axes(self, ii, i_inversion):
+    def set_pos_swap_axes(self, ii: int, i_inversion: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPosSwapAxes(long ii,
                 | long iInversion)
                 | 
@@ -456,13 +473,14 @@ class HybridShapePositionTransfo(HybridShape):
         :param int ii:
         :param int i_inversion:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_position_transfo.SetPosSwapAxes(ii, i_inversion)
 
-    def set_position_direction(self, i_i, i_elem):
+    def set_position_direction(self, i_i: int, i_elem: HybridShapeDirection) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPositionDirection(long iI,
                 | HybridShapeDirection iElem)
                 | 
@@ -481,6 +499,7 @@ class HybridShapePositionTransfo(HybridShape):
         :param int i_i:
         :param HybridShapeDirection i_elem:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_position_transfo.SetPositionDirection(i_i, i_elem.com_object)
         # # # # Autogenerated comment: 

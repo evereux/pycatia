@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ from pycatia.knowledge_interfaces.real_param import RealParam
 class HybridShapePointBetween(Point):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -46,10 +46,10 @@ class HybridShapePointBetween(Point):
         self.hybrid_shape_point_between = com_object
 
     @property
-    def first_point(self):
+    def first_point(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstPoint() As Reference
                 | 
                 |     Returns or sets the first reference point.
@@ -63,12 +63,13 @@ class HybridShapePointBetween(Point):
                 |          Set RefPoint1 = PointBetween.FirstPoint
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_point_between.FirstPoint)
 
     @first_point.setter
-    def first_point(self, value):
+    def first_point(self, value: Reference):
         """
         :param Reference value:
         """
@@ -76,10 +77,10 @@ class HybridShapePointBetween(Point):
         self.hybrid_shape_point_between.FirstPoint = value
 
     @property
-    def orientation(self):
+    def orientation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation() As long
                 | 
                 |     Returns or sets the orientation. Role:
@@ -93,12 +94,13 @@ class HybridShapePointBetween(Point):
                 |          Set Orient = PointBetween.Orientation
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_point_between.Orientation
 
     @orientation.setter
-    def orientation(self, value):
+    def orientation(self, value: int):
         """
         :param int value:
         """
@@ -106,10 +108,10 @@ class HybridShapePointBetween(Point):
         self.hybrid_shape_point_between.Orientation = value
 
     @property
-    def ratio(self):
+    def ratio(self) -> RealParam:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Ratio() As RealParam (Read Only)
                 | 
                 |     Get the ratio. Role:
@@ -124,15 +126,16 @@ class HybridShapePointBetween(Point):
                 |          Get ratio = PointBetween.Ratio
 
         :return: RealParam
+        :rtype: RealParam
         """
 
         return RealParam(self.hybrid_shape_point_between.Ratio)
 
     @property
-    def second_point(self):
+    def second_point(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondPoint() As Reference
                 | 
                 |     Returns or sets the second reference point.
@@ -146,12 +149,13 @@ class HybridShapePointBetween(Point):
                 |          Set RefPoint2 = PointBetween.SecondPoint
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_point_between.SecondPoint)
 
     @second_point.setter
-    def second_point(self, value):
+    def second_point(self, value: Reference):
         """
         :param Reference value:
         """
@@ -159,10 +163,10 @@ class HybridShapePointBetween(Point):
         self.hybrid_shape_point_between.SecondPoint = value
 
     @property
-    def support(self):
+    def support(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
                 |     Returns or Sets the support.
@@ -180,12 +184,13 @@ class HybridShapePointBetween(Point):
                 |          Set oSupport = PointBetween.Support
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_point_between.Support)
 
     @support.setter
-    def support(self, value):
+    def support(self, value: Reference):
         """
         :param Reference value:
         """

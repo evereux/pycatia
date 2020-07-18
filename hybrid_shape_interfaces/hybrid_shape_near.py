@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapeNear(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -36,10 +36,10 @@ class HybridShapeNear(HybridShape):
         self.hybrid_shape_near = com_object
 
     @property
-    def multiple_solution(self):
+    def multiple_solution(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MultipleSolution() As Reference
                 | 
                 |     Role: To get_MultipleSolution on the object.
@@ -59,12 +59,13 @@ class HybridShapeNear(HybridShape):
                 |         HybridShapeFactory
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_near.MultipleSolution)
 
     @multiple_solution.setter
-    def multiple_solution(self, value):
+    def multiple_solution(self, value: Reference):
         """
         :param Reference value:
         """
@@ -72,10 +73,10 @@ class HybridShapeNear(HybridShape):
         self.hybrid_shape_near.MultipleSolution = value
 
     @property
-    def reference_element(self):
+    def reference_element(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ReferenceElement() As Reference
                 | 
                 |     Role: To get_ReferenceElement on the object.
@@ -95,12 +96,13 @@ class HybridShapeNear(HybridShape):
                 |         HybridShapeFactory
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_near.ReferenceElement)
 
     @reference_element.setter
-    def reference_element(self, value):
+    def reference_element(self, value: Reference):
         """
         :param Reference value:
         """

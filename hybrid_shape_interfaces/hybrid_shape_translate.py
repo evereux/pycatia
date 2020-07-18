@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -19,7 +19,7 @@ class HybridShapeTranslate(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -55,21 +55,22 @@ class HybridShapeTranslate(HybridShape):
         self.hybrid_shape_translate = com_object
 
     @property
-    def coord_x_value(self):
+    def coord_x_value(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CoordXValue() As double
                 | 
                 |     Returns or sets the translate X coordinate value.
 
         :return: float
+        :rtype: float
         """
 
         return self.hybrid_shape_translate.CoordXValue
 
     @coord_x_value.setter
-    def coord_x_value(self, value):
+    def coord_x_value(self, value: float):
         """
         :param float value:
         """
@@ -77,21 +78,22 @@ class HybridShapeTranslate(HybridShape):
         self.hybrid_shape_translate.CoordXValue = value
 
     @property
-    def coord_y_value(self):
+    def coord_y_value(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CoordYValue() As double
                 | 
                 |     Returns or sets the translate Y coordinate value.
 
         :return: float
+        :rtype: float
         """
 
         return self.hybrid_shape_translate.CoordYValue
 
     @coord_y_value.setter
-    def coord_y_value(self, value):
+    def coord_y_value(self, value: float):
         """
         :param float value:
         """
@@ -99,21 +101,22 @@ class HybridShapeTranslate(HybridShape):
         self.hybrid_shape_translate.CoordYValue = value
 
     @property
-    def coord_z_value(self):
+    def coord_z_value(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CoordZValue() As double
                 | 
                 |     Returns or sets the translate Z coordinate value.
 
         :return: float
+        :rtype: float
         """
 
         return self.hybrid_shape_translate.CoordZValue
 
     @coord_z_value.setter
-    def coord_z_value(self, value):
+    def coord_z_value(self, value: float):
         """
         :param float value:
         """
@@ -121,10 +124,10 @@ class HybridShapeTranslate(HybridShape):
         self.hybrid_shape_translate.CoordZValue = value
 
     @property
-    def direction(self):
+    def direction(self) -> HybridShapeDirection:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Direction() As HybridShapeDirection
                 | 
                 |     Returns or sets the translate direction.
@@ -137,12 +140,13 @@ class HybridShapeTranslate(HybridShape):
                 |          Set Dir=Translate.Direction
 
         :return: HybridShapeDirection
+        :rtype: HybridShapeDirection
         """
 
         return HybridShapeDirection(self.hybrid_shape_translate.Direction)
 
     @direction.setter
-    def direction(self, value):
+    def direction(self, value: HybridShapeDirection):
         """
         :param HybridShapeDirection value:
         """
@@ -150,24 +154,25 @@ class HybridShapeTranslate(HybridShape):
         self.hybrid_shape_translate.Direction = value
 
     @property
-    def distance(self):
+    def distance(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Distance() As Length (Read Only)
                 | 
                 |     Returns the translate distance.
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_translate.Distance)
 
     @property
-    def distance_value(self):
+    def distance_value(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DistanceValue() As double
                 | 
                 |     Returns or sets the translate distance value.
@@ -180,12 +185,13 @@ class HybridShapeTranslate(HybridShape):
                 |          Set DistVal =Translate.DistanceValue
 
         :return: float
+        :rtype: float
         """
 
         return self.hybrid_shape_translate.DistanceValue
 
     @distance_value.setter
-    def distance_value(self, value):
+    def distance_value(self, value: float):
         """
         :param float value:
         """
@@ -193,10 +199,10 @@ class HybridShapeTranslate(HybridShape):
         self.hybrid_shape_translate.DistanceValue = value
 
     @property
-    def elem_to_translate(self):
+    def elem_to_translate(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ElemToTranslate() As Reference
                 | 
                 |     Returns or sets the element to translate.
@@ -209,12 +215,13 @@ class HybridShapeTranslate(HybridShape):
                 |          Set Element=Translate.ElemToTranslate
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_translate.ElemToTranslate)
 
     @elem_to_translate.setter
-    def elem_to_translate(self, value):
+    def elem_to_translate(self, value: Reference):
         """
         :param Reference value:
         """
@@ -222,21 +229,22 @@ class HybridShapeTranslate(HybridShape):
         self.hybrid_shape_translate.ElemToTranslate = value
 
     @property
-    def first_point(self):
+    def first_point(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstPoint() As Reference
                 | 
                 |     Returns or sets the first point defining the translation.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_translate.FirstPoint)
 
     @first_point.setter
-    def first_point(self, value):
+    def first_point(self, value: Reference):
         """
         :param Reference value:
         """
@@ -244,10 +252,10 @@ class HybridShapeTranslate(HybridShape):
         self.hybrid_shape_translate.FirstPoint = value
 
     @property
-    def ref_axis_system(self):
+    def ref_axis_system(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RefAxisSystem() As Reference
                 | 
                 |     Returns or Sets the reference Axis System for Translate
@@ -265,12 +273,13 @@ class HybridShapeTranslate(HybridShape):
                 |      Set oRefAxis  = Translate.RefAxisSystem
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_translate.RefAxisSystem)
 
     @ref_axis_system.setter
-    def ref_axis_system(self, value):
+    def ref_axis_system(self, value: Reference):
         """
         :param Reference value:
         """
@@ -278,21 +287,22 @@ class HybridShapeTranslate(HybridShape):
         self.hybrid_shape_translate.RefAxisSystem = value
 
     @property
-    def second_point(self):
+    def second_point(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondPoint() As Reference
                 | 
                 |     Returns or sets the second point defining the translation.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_translate.SecondPoint)
 
     @second_point.setter
-    def second_point(self, value):
+    def second_point(self, value: Reference):
         """
         :param Reference value:
         """
@@ -300,10 +310,10 @@ class HybridShapeTranslate(HybridShape):
         self.hybrid_shape_translate.SecondPoint = value
 
     @property
-    def vector_type(self):
+    def vector_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property VectorType() As long
                 | 
                 |     Returns or sets the way the translation vector is defined.
@@ -314,12 +324,13 @@ class HybridShapeTranslate(HybridShape):
                 |         3= Unknown type
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_translate.VectorType
 
     @vector_type.setter
-    def vector_type(self, value):
+    def vector_type(self, value: int):
         """
         :param int value:
         """
@@ -327,10 +338,10 @@ class HybridShapeTranslate(HybridShape):
         self.hybrid_shape_translate.VectorType = value
 
     @property
-    def volume_result(self):
+    def volume_result(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property VolumeResult() As boolean
                 | 
                 |     Returns or sets the volume result.
@@ -347,22 +358,23 @@ class HybridShapeTranslate(HybridShape):
                 |          hybShpTranslate.VolumeResult = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_translate.VolumeResult
 
     @volume_result.setter
-    def volume_result(self, value):
+    def volume_result(self, value: bool):
         """
         :param bool value:
         """
 
         self.hybrid_shape_translate.VolumeResult = value
 
-    def get_creation_mode(self):
+    def get_creation_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetCreationMode() As long
                 | 
                 |     Gets the creation mode.
@@ -383,13 +395,14 @@ class HybridShapeTranslate(HybridShape):
                 |      oCreation = hybShpTranslate.GetCreationMode
 
         :return: int
+        :rtype: int
         """
         return self.hybrid_shape_translate.GetCreationMode()
 
-    def set_creation_mode(self, i_creation):
+    def set_creation_mode(self, i_creation: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetCreationMode(boolean iCreation)
                 | 
                 |     Sets the creation mode(creation or modification).
@@ -407,6 +420,7 @@ class HybridShapeTranslate(HybridShape):
 
         :param bool i_creation:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_translate.SetCreationMode(i_creation)
         # # # # Autogenerated comment: 

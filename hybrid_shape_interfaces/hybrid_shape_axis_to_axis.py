@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapeAxisToAxis(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -53,10 +53,10 @@ class HybridShapeAxisToAxis(HybridShape):
         self.hybrid_shape_axis_to_axis = com_object
 
     @property
-    def creation_mode(self):
+    def creation_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CreationMode() As boolean
                 | 
                 |     Returns or sets the creation mode(creation or
@@ -74,12 +74,13 @@ class HybridShapeAxisToAxis(HybridShape):
                 |          hybShpAxisToAxis.CreationMode = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_axis_to_axis.CreationMode
 
     @creation_mode.setter
-    def creation_mode(self, value):
+    def creation_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -87,10 +88,10 @@ class HybridShapeAxisToAxis(HybridShape):
         self.hybrid_shape_axis_to_axis.CreationMode = value
 
     @property
-    def elem_to_transform(self):
+    def elem_to_transform(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ElemToTransform() As Reference
                 | 
                 |     Returns or sets the element to transform.
@@ -103,12 +104,13 @@ class HybridShapeAxisToAxis(HybridShape):
                 |          Set Elem = AxisToAxis.ElemToTransform
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_axis_to_axis.ElemToTransform)
 
     @elem_to_transform.setter
-    def elem_to_transform(self, value):
+    def elem_to_transform(self, value: Reference):
         """
         :param Reference value:
         """
@@ -116,10 +118,10 @@ class HybridShapeAxisToAxis(HybridShape):
         self.hybrid_shape_axis_to_axis.ElemToTransform = value
 
     @property
-    def reference_axis(self):
+    def reference_axis(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ReferenceAxis() As Reference
                 | 
                 |     Returns or sets the reference axis.
@@ -132,12 +134,13 @@ class HybridShapeAxisToAxis(HybridShape):
                 |          Set Ref = AxisToAxis.ReferenceAxis
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_axis_to_axis.ReferenceAxis)
 
     @reference_axis.setter
-    def reference_axis(self, value):
+    def reference_axis(self, value: Reference):
         """
         :param Reference value:
         """
@@ -145,10 +148,10 @@ class HybridShapeAxisToAxis(HybridShape):
         self.hybrid_shape_axis_to_axis.ReferenceAxis = value
 
     @property
-    def target_axis(self):
+    def target_axis(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TargetAxis() As Reference
                 | 
                 |     Returns or sets the target axis.
@@ -161,12 +164,13 @@ class HybridShapeAxisToAxis(HybridShape):
                 |          Set Ref = AxisToAxis.ReferenceAxis
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_axis_to_axis.TargetAxis)
 
     @target_axis.setter
-    def target_axis(self, value):
+    def target_axis(self, value: Reference):
         """
         :param Reference value:
         """
@@ -174,10 +178,10 @@ class HybridShapeAxisToAxis(HybridShape):
         self.hybrid_shape_axis_to_axis.TargetAxis = value
 
     @property
-    def volume_result(self):
+    def volume_result(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property VolumeResult() As boolean
                 | 
                 |     Returns or sets the volume result.
@@ -195,12 +199,13 @@ class HybridShapeAxisToAxis(HybridShape):
                 |          hybShpAxisToAxis.VolumeResult = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_axis_to_axis.VolumeResult
 
     @volume_result.setter
-    def volume_result(self, value):
+    def volume_result(self, value: bool):
         """
         :param bool value:
         """

@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -13,10 +13,9 @@ from pycatia.hybrid_shape_interfaces.plane import Plane
 
 
 class HybridShapePlaneExplicit(Plane):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -32,9 +31,7 @@ class HybridShapePlaneExplicit(Plane):
                 | 
                 | See also:
                 |     HybridShapeFactory.AddNewPlaneDatum 
-                | 
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
-    
+
     """
 
     def __init__(self, com_object):
@@ -42,4 +39,4 @@ class HybridShapePlaneExplicit(Plane):
         self.hybrid_shape_plane_explicit = com_object
 
     def __repr__(self):
-        return f'HybridShapePlaneExplicit(name="{ self.name }")'
+        return f'HybridShapePlaneExplicit(name="{self.name}")'

@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia.hybrid_shape_interfaces.hybrid_shape_direction import HybridShapeDirection
 from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
@@ -16,7 +16,7 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeWrapCurve(HybridShape):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -50,16 +50,16 @@ class HybridShapeWrapCurve(HybridShape):
         self.hybrid_shape_wrap_curve = com_object
 
     @property
-    def first_curves_constraint(self):
+    def first_curves_constraint(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstCurvesConstraint() As long
                 | 
                 |     Returns or sets constraint at first curves of the
                 |     WrapCurve.
                 |     Legal values:
-                |     1 = no constraint,
+                |     1 = no constraint
                 |     2 = Deformed surface will have the same tangency and the same curvature as the original surface
                 |         at first curves.
                 | 
@@ -71,12 +71,13 @@ class HybridShapeWrapCurve(HybridShape):
                 |      Set FirstCurvesConstraint = ShpWrapCurve.FirstCurvesConstraint
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_wrap_curve.FirstCurvesConstraint
 
     @first_curves_constraint.setter
-    def first_curves_constraint(self, value):
+    def first_curves_constraint(self, value: int):
         """
         :param int value:
         """
@@ -84,16 +85,18 @@ class HybridShapeWrapCurve(HybridShape):
         self.hybrid_shape_wrap_curve.FirstCurvesConstraint = value
 
     @property
-    def last_curves_constraint(self):
+    def last_curves_constraint(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LastCurvesConstraint() As long
                 | 
                 |     Returns or sets constraint at last curves of the
                 |     WrapCurve.
-                |     Legal values: 1 = no constraint, 2 = Deformed surface will have the same tangency and the the
-                |     same curvatureas the original surface at last curves.
+                |     Legal values:
+                |     1 = no constraint,
+                |     2 = Deformed surface will have the same tangency and the the same curvatureas the original
+                |         surface at last curves.
                 | 
                 | Example:
                 |     This example retrieves in LastCurvesConstraint the constraint at last
@@ -103,12 +106,13 @@ class HybridShapeWrapCurve(HybridShape):
                 |      Set LastCurvesConstraint = ShpWrapCurve.LastCurvesConstraint
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_wrap_curve.LastCurvesConstraint
 
     @last_curves_constraint.setter
-    def last_curves_constraint(self, value):
+    def last_curves_constraint(self, value: int):
         """
         :param int value:
         """
@@ -116,10 +120,10 @@ class HybridShapeWrapCurve(HybridShape):
         self.hybrid_shape_wrap_curve.LastCurvesConstraint = value
 
     @property
-    def surface(self):
+    def surface(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Surface() As Reference
                 | 
                 |     Returns or sets the surface to deform of the WrapCurve.
@@ -132,22 +136,23 @@ class HybridShapeWrapCurve(HybridShape):
                 |      SurfaceToDeform = ShpWrapCurve.Surface
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_wrap_curve.Surface)
 
     @surface.setter
-    def surface(self, value):
+    def surface(self, value: Reference):
         """
         :param Reference value:
         """
 
         self.hybrid_shape_wrap_curve.Surface = value
 
-    def get_curves(self, i_position, o_reference_curve, o_target_curve):
+    def get_curves(self, i_position: int, o_reference_curve: Reference, o_target_curve: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetCurves(long iPosition,
                 | Reference oReferenceCurve,
                 | Reference oTargetCurve)
@@ -179,9 +184,9 @@ class HybridShapeWrapCurve(HybridShape):
         :param Reference o_reference_curve:
         :param Reference o_target_curve:
         :return: None
+        :rtype: None
         """
-        return self.hybrid_shape_wrap_curve.GetCurves(i_position,
-                                                      o_reference_curve.com_object,
+        return self.hybrid_shape_wrap_curve.GetCurves(i_position, o_reference_curve.com_object,
                                                       o_target_curve.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
@@ -199,10 +204,10 @@ class HybridShapeWrapCurve(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_number_of_curves(self):
+    def get_number_of_curves(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNumberOfCurves() As long
                 | 
                 |     Returns the number of couples of curves of the WrapCurve.
@@ -218,13 +223,14 @@ class HybridShapeWrapCurve(HybridShape):
                 |      NumberOfCurves = ShpWrapCurve.GetNumberOfCurves(2)
 
         :return: int
+        :rtype: int
         """
         return self.hybrid_shape_wrap_curve.GetNumberOfCurves()
 
-    def get_reference_direction(self, o_direction_type, o_direction):
+    def get_reference_direction(self, o_direction_type: int, o_direction: HybridShapeDirection) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetReferenceDirection(long oDirectionType,
                 | HybridShapeDirection oDirection)
                 | 
@@ -252,6 +258,7 @@ class HybridShapeWrapCurve(HybridShape):
         :param int o_direction_type:
         :param HybridShapeDirection o_direction:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_wrap_curve.GetReferenceDirection(o_direction_type, o_direction.com_object)
         # # # # Autogenerated comment: 
@@ -270,10 +277,10 @@ class HybridShapeWrapCurve(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_reference_spine(self, o_spine_type, o_spine):
+    def get_reference_spine(self, o_spine_type: int, o_spine: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetReferenceSpine(long oSpineType,
                 | Reference oSpine)
                 | 
@@ -283,8 +290,8 @@ class HybridShapeWrapCurve(HybridShape):
                 | 
                 |         oSpineType
                 |             type of spine.
-                |             Legal values: 1 = Reference Spine is equal to the first reference curve, and 2 = user
-                |                               spine.
+                |             Legal values: 1 = Reference Spine is equal to the first reference curve, and
+                |                           2 = user spine.
                 |         oSpine
                 |             curve to be added as a spine, if iSpineType = 2. 
                 | 
@@ -301,6 +308,7 @@ class HybridShapeWrapCurve(HybridShape):
         :param int o_spine_type:
         :param Reference o_spine:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_wrap_curve.GetReferenceSpine(o_spine_type, o_spine.com_object)
         # # # # Autogenerated comment: 
@@ -319,10 +327,10 @@ class HybridShapeWrapCurve(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def insert_curves(self, i_position, i_reference_curve, i_target_curve):
+    def insert_curves(self, i_position: int, i_reference_curve: Reference, i_target_curve: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InsertCurves(long iPosition,
                 | Reference iReferenceCurve,
                 | Reference iTargetCurve)
@@ -358,6 +366,7 @@ class HybridShapeWrapCurve(HybridShape):
         :param Reference i_reference_curve:
         :param Reference i_target_curve:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_wrap_curve.InsertCurves(i_position, i_reference_curve.com_object,
                                                          i_target_curve.com_object)
@@ -377,10 +386,10 @@ class HybridShapeWrapCurve(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def insert_reference_curve(self, i_position, i_reference_curve):
+    def insert_reference_curve(self, i_position: int, i_reference_curve: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InsertReferenceCurve(long iPosition,
                 | Reference iReferenceCurve)
                 | 
@@ -406,6 +415,7 @@ class HybridShapeWrapCurve(HybridShape):
         :param int i_position:
         :param Reference i_reference_curve:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_wrap_curve.InsertReferenceCurve(i_position, i_reference_curve.com_object)
         # # # # Autogenerated comment: 
@@ -424,10 +434,10 @@ class HybridShapeWrapCurve(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def remove_curves(self, i_position):
+    def remove_curves(self, i_position: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveCurves(long iPosition)
                 | 
                 |     Removes a couple of reference curve and target curve from the
@@ -449,13 +459,14 @@ class HybridShapeWrapCurve(HybridShape):
 
         :param int i_position:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_wrap_curve.RemoveCurves(i_position)
 
-    def set_reference_direction(self, i_direction):
+    def set_reference_direction(self, i_direction: HybridShapeDirection) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetReferenceDirection(HybridShapeDirection iDirection)
                 | 
                 |     Sets the reference direction projection to the wrap curve
@@ -474,6 +485,7 @@ class HybridShapeWrapCurve(HybridShape):
 
         :param HybridShapeDirection i_direction:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_wrap_curve.SetReferenceDirection(i_direction.com_object)
         # # # # Autogenerated comment: 
@@ -492,10 +504,10 @@ class HybridShapeWrapCurve(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_reference_spine(self, i_spine):
+    def set_reference_spine(self, i_spine: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetReferenceSpine(Reference iSpine)
                 | 
                 |     Sets the reference spine to the wrap curve feature.
@@ -516,6 +528,7 @@ class HybridShapeWrapCurve(HybridShape):
 
         :param Reference i_spine:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_wrap_curve.SetReferenceSpine(i_spine.com_object)
         # # # # Autogenerated comment: 
