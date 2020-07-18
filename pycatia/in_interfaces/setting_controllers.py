@@ -35,10 +35,10 @@ class SettingControllers(Collection):
         super().__init__(com_object)
         self.setting_controllers = com_object
 
-    def item(self, i_index):
+    def item(self, i_index: str) -> SettingController:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(CATBSTR iIndex) As SettingController
                 | 
                 |     Returns a setting controller using its name from the setting controllers
@@ -55,6 +55,7 @@ class SettingControllers(Collection):
 
         :param str i_index:
         :return: SettingController
+        :rtype: SettingController
         """
         return SettingController(self.setting_controllers.Item(i_index))
 

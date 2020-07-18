@@ -34,13 +34,13 @@ class Camera3D(Camera):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.camera3_d = com_object
+        self.camera_3d = com_object
 
     @property
-    def viewpoint3_d(self):
+    def viewpoint3_d(self) -> Viewpoint3D:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Viewpoint3D() As Viewpoint3D
                 | 
                 |     Returns or sets the 3D viewpoint of a 3D camera.
@@ -58,17 +58,18 @@ class Camera3D(Camera):
                 |          CATIA.ActiveWindow.ActiveViewer.Viewpoint3D = MyCamera.Viewpoint3D
 
         :return: Viewpoint3D
+        :rtype: Viewpoint3D
         """
 
-        return Viewpoint3D(self.camera3_d.Viewpoint3D)
+        return Viewpoint3D(self.camera_3d.Viewpoint3D)
 
     @viewpoint3_d.setter
-    def viewpoint3_d(self, value):
+    def viewpoint3_d(self, value: Viewpoint3D):
         """
         :param Viewpoint3D value:
         """
 
-        self.camera3_d.Viewpoint3D = value
+        self.camera_3d.Viewpoint3D = value
 
     def __repr__(self):
         return f'Camera3D(name="{self.name}")'

@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class Workbench(AnyObject):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -31,9 +30,7 @@ class Workbench(AnyObject):
                 | 
                 | See also:
                 |     Document 
-                | 
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
-    
+
     """
 
     def __init__(self, com_object):
@@ -41,4 +38,4 @@ class Workbench(AnyObject):
         self.workbench = com_object
 
     def __repr__(self):
-        return f'Workbench(name="{ self.name }")'
+        return f'Workbench(name="{self.name}")'

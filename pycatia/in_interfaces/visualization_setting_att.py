@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class VisualizationSettingAtt(SettingController):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -35,21 +34,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att = com_object
 
     @property
-    def accurate_picking_mode(self):
+    def accurate_picking_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AccuratePickingMode() As boolean
                 | 
                 |     Returns the AccuratePickingMode parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.AccuratePickingMode
 
     @accurate_picking_mode.setter
-    def accurate_picking_mode(self, value):
+    def accurate_picking_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -57,21 +57,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.AccuratePickingMode = value
 
     @property
-    def accurate_picking_window_size(self):
+    def accurate_picking_window_size(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AccuratePickingWindowSize() As long
                 | 
                 |     Returns the AccuratePickingWindowSize parameter.
 
         :return: int
+        :rtype: int
         """
 
         return self.visualization_setting_att.AccuratePickingWindowSize
 
     @accurate_picking_window_size.setter
-    def accurate_picking_window_size(self, value):
+    def accurate_picking_window_size(self, value: int):
         """
         :param int value:
         """
@@ -79,21 +80,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.AccuratePickingWindowSize = value
 
     @property
-    def all_z_buffer_element_mode(self):
+    def all_z_buffer_element_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AllZBufferElementMode() As boolean
                 | 
                 |     Returns the AllZBufferElementMode parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.AllZBufferElementMode
 
     @all_z_buffer_element_mode.setter
-    def all_z_buffer_element_mode(self, value):
+    def all_z_buffer_element_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -101,21 +103,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.AllZBufferElementMode = value
 
     @property
-    def ambient_activation(self):
+    def ambient_activation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AmbientActivation() As long
                 | 
                 |     Returns the AmbientActivation parameter.
 
         :return: int
+        :rtype: int
         """
 
         return self.visualization_setting_att.AmbientActivation
 
     @ambient_activation.setter
-    def ambient_activation(self, value):
+    def ambient_activation(self, value: int):
         """
         :param int value:
         """
@@ -123,21 +126,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.AmbientActivation = value
 
     @property
-    def anti_aliasing_mode(self):
+    def anti_aliasing_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AntiAliasingMode() As boolean
                 | 
                 |     Returns the AntiAliasingMode parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.AntiAliasingMode
 
     @anti_aliasing_mode.setter
-    def anti_aliasing_mode(self, value):
+    def anti_aliasing_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -145,21 +149,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.AntiAliasingMode = value
 
     @property
-    def anti_aliasing_offset(self):
+    def anti_aliasing_offset(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AntiAliasingOffset() As double
                 | 
                 |     Returns the AntiAliasingOffset parameter.
 
         :return: float
+        :rtype: float
         """
 
         return self.visualization_setting_att.AntiAliasingOffset
 
     @anti_aliasing_offset.setter
-    def anti_aliasing_offset(self, value):
+    def anti_aliasing_offset(self, value: float):
         """
         :param float value:
         """
@@ -167,21 +172,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.AntiAliasingOffset = value
 
     @property
-    def auxiliary_drill_viewer(self):
+    def auxiliary_drill_viewer(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AuxiliaryDrillViewer() As boolean
                 | 
                 |     Returns the AuxiliaryDrillViewer parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.AuxiliaryDrillViewer
 
     @auxiliary_drill_viewer.setter
-    def auxiliary_drill_viewer(self, value):
+    def auxiliary_drill_viewer(self, value: bool):
         """
         :param bool value:
         """
@@ -189,22 +195,23 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.AuxiliaryDrillViewer = value
 
     @property
-    def back_face_culling_mode(self):
+    def back_face_culling_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BackFaceCullingMode() As boolean
                 | 
                 |     Deprecated:
                 |         V5R16. Returns the BackFaceCullingMode parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.BackFaceCullingMode
 
     @back_face_culling_mode.setter
-    def back_face_culling_mode(self, value):
+    def back_face_culling_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -212,21 +219,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.BackFaceCullingMode = value
 
     @property
-    def border_edges_mode(self):
+    def border_edges_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BorderEdgesMode() As boolean
                 | 
                 |     Returns the BorderEdgesMode parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.BorderEdgesMode
 
     @border_edges_mode.setter
-    def border_edges_mode(self, value):
+    def border_edges_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -234,21 +242,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.BorderEdgesMode = value
 
     @property
-    def border_edges_thickness(self):
+    def border_edges_thickness(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BorderEdgesThickness() As long
                 | 
                 |     Returns the BorderEdgesThickness parameter.
 
         :return: int
+        :rtype: int
         """
 
         return self.visualization_setting_att.BorderEdgesThickness
 
     @border_edges_thickness.setter
-    def border_edges_thickness(self, value):
+    def border_edges_thickness(self, value: int):
         """
         :param int value:
         """
@@ -256,21 +265,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.BorderEdgesThickness = value
 
     @property
-    def bounding_box_selection_mode(self):
+    def bounding_box_selection_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BoundingBoxSelectionMode() As boolean
                 | 
                 |     Returns the BoundingBoxSelectionMode parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.BoundingBoxSelectionMode
 
     @bounding_box_selection_mode.setter
-    def bounding_box_selection_mode(self, value):
+    def bounding_box_selection_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -278,21 +288,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.BoundingBoxSelectionMode = value
 
     @property
-    def color_background_mode(self):
+    def color_background_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ColorBackgroundMode() As boolean
                 | 
                 |     Returns the ColorBackgroundMode parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.ColorBackgroundMode
 
     @color_background_mode.setter
-    def color_background_mode(self, value):
+    def color_background_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -300,21 +311,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.ColorBackgroundMode = value
 
     @property
-    def default_diffuse_ambient_coefficient(self):
+    def default_diffuse_ambient_coefficient(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DefaultDiffuseAmbientCoefficient() As double
                 | 
                 |     Returns the AmbientActivation parameter.
 
         :return: float
+        :rtype: float
         """
 
         return self.visualization_setting_att.DefaultDiffuseAmbientCoefficient
 
     @default_diffuse_ambient_coefficient.setter
-    def default_diffuse_ambient_coefficient(self, value):
+    def default_diffuse_ambient_coefficient(self, value: float):
         """
         :param float value:
         """
@@ -322,21 +334,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.DefaultDiffuseAmbientCoefficient = value
 
     @property
-    def default_shininess(self):
+    def default_shininess(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DefaultShininess() As double
                 | 
                 |     Returns the AmbientActivation parameter.
 
         :return: float
+        :rtype: float
         """
 
         return self.visualization_setting_att.DefaultShininess
 
     @default_shininess.setter
-    def default_shininess(self, value):
+    def default_shininess(self, value: float):
         """
         :param float value:
         """
@@ -344,21 +357,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.DefaultShininess = value
 
     @property
-    def default_specular_coefficient(self):
+    def default_specular_coefficient(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DefaultSpecularCoefficient() As double
                 | 
                 |     Returns the AmbientActivation parameter.
 
         :return: float
+        :rtype: float
         """
 
         return self.visualization_setting_att.DefaultSpecularCoefficient
 
     @default_specular_coefficient.setter
-    def default_specular_coefficient(self, value):
+    def default_specular_coefficient(self, value: float):
         """
         :param float value:
         """
@@ -366,21 +380,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.DefaultSpecularCoefficient = value
 
     @property
-    def display_current_scale(self):
+    def display_current_scale(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DisplayCurrentScale() As boolean
                 | 
                 |     Returns the SetStereoModeLock parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.DisplayCurrentScale
 
     @display_current_scale.setter
-    def display_current_scale(self, value):
+    def display_current_scale(self, value: bool):
         """
         :param bool value:
         """
@@ -388,21 +403,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.DisplayCurrentScale = value
 
     @property
-    def display_drill_list(self):
+    def display_drill_list(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DisplayDrillList() As boolean
                 | 
                 |     Returns the DisplayDrillList parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.DisplayDrillList
 
     @display_drill_list.setter
-    def display_drill_list(self, value):
+    def display_drill_list(self, value: bool):
         """
         :param bool value:
         """
@@ -410,21 +426,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.DisplayDrillList = value
 
     @property
-    def display_immersive_drill_viewer(self):
+    def display_immersive_drill_viewer(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DisplayImmersiveDrillViewer() As boolean
                 | 
                 |     Returns the DisplayImmersiveDrillViewer parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.DisplayImmersiveDrillViewer
 
     @display_immersive_drill_viewer.setter
-    def display_immersive_drill_viewer(self, value):
+    def display_immersive_drill_viewer(self, value: bool):
         """
         :param bool value:
         """
@@ -432,21 +449,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.DisplayImmersiveDrillViewer = value
 
     @property
-    def dynamic_cull(self):
+    def dynamic_cull(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DynamicCull() As long
                 | 
                 |     Returns the DynamicCull parameter.
 
         :return: int
+        :rtype: int
         """
 
         return self.visualization_setting_att.DynamicCull
 
     @dynamic_cull.setter
-    def dynamic_cull(self, value):
+    def dynamic_cull(self, value: int):
         """
         :param int value:
         """
@@ -454,21 +472,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.DynamicCull = value
 
     @property
-    def dynamic_lod(self):
+    def dynamic_lod(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DynamicLOD() As double
                 | 
                 |     Returns the DynamicLOD parameter.
 
         :return: float
+        :rtype: float
         """
 
         return self.visualization_setting_att.DynamicLOD
 
     @dynamic_lod.setter
-    def dynamic_lod(self, value):
+    def dynamic_lod(self, value: float):
         """
         :param float value:
         """
@@ -476,21 +495,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.DynamicLOD = value
 
     @property
-    def face_hl_drill(self):
+    def face_hl_drill(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FaceHLDrill() As boolean
                 | 
                 |     Returns the FaceHLDrill parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.FaceHLDrill
 
     @face_hl_drill.setter
-    def face_hl_drill(self, value):
+    def face_hl_drill(self, value: bool):
         """
         :param bool value:
         """
@@ -498,21 +518,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.FaceHLDrill = value
 
     @property
-    def fly_collision_mode(self):
+    def fly_collision_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FlyCollisionMode() As boolean
                 | 
                 |     Returns the FlyCollisionMode parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.FlyCollisionMode
 
     @fly_collision_mode.setter
-    def fly_collision_mode(self, value):
+    def fly_collision_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -520,21 +541,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.FlyCollisionMode = value
 
     @property
-    def fly_collision_sphere_radius(self):
+    def fly_collision_sphere_radius(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FlyCollisionSphereRadius() As double
                 | 
                 |     Returns the FlyCollisionSphereRadius parameter.
 
         :return: float
+        :rtype: float
         """
 
         return self.visualization_setting_att.FlyCollisionSphereRadius
 
     @fly_collision_sphere_radius.setter
-    def fly_collision_sphere_radius(self, value):
+    def fly_collision_sphere_radius(self, value: float):
         """
         :param float value:
         """
@@ -542,21 +564,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.FlyCollisionSphereRadius = value
 
     @property
-    def fly_collision_type(self):
+    def fly_collision_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FlyCollisionType() As long
                 | 
                 |     Returns the FlyCollisionType parameter.
 
         :return: int
+        :rtype: int
         """
 
         return self.visualization_setting_att.FlyCollisionType
 
     @fly_collision_type.setter
-    def fly_collision_type(self, value):
+    def fly_collision_type(self, value: int):
         """
         :param int value:
         """
@@ -564,21 +587,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.FlyCollisionType = value
 
     @property
-    def fly_sensitivity(self):
+    def fly_sensitivity(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FlySensitivity() As long
                 | 
                 |     Returns the FlySensitivity parameter.
 
         :return: int
+        :rtype: int
         """
 
         return self.visualization_setting_att.FlySensitivity
 
     @fly_sensitivity.setter
-    def fly_sensitivity(self, value):
+    def fly_sensitivity(self, value: int):
         """
         :param int value:
         """
@@ -586,21 +610,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.FlySensitivity = value
 
     @property
-    def fly_speed(self):
+    def fly_speed(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FlySpeed() As long
                 | 
                 |     Returns the FlySpeed parameter.
 
         :return: int
+        :rtype: int
         """
 
         return self.visualization_setting_att.FlySpeed
 
     @fly_speed.setter
-    def fly_speed(self, value):
+    def fly_speed(self, value: int):
         """
         :param int value:
         """
@@ -608,21 +633,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.FlySpeed = value
 
     @property
-    def fly_speed_mode(self):
+    def fly_speed_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FlySpeedMode() As long
                 | 
                 |     Returns the FlySpeedMode parameter.
 
         :return: int
+        :rtype: int
         """
 
         return self.visualization_setting_att.FlySpeedMode
 
     @fly_speed_mode.setter
-    def fly_speed_mode(self, value):
+    def fly_speed_mode(self, value: int):
         """
         :param int value:
         """
@@ -630,21 +656,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.FlySpeedMode = value
 
     @property
-    def follow_ground_altitude(self):
+    def follow_ground_altitude(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FollowGroundAltitude() As double
                 | 
                 |     Returns the FollowGroundAltitude parameter.
 
         :return: float
+        :rtype: float
         """
 
         return self.visualization_setting_att.FollowGroundAltitude
 
     @follow_ground_altitude.setter
-    def follow_ground_altitude(self, value):
+    def follow_ground_altitude(self, value: float):
         """
         :param float value:
         """
@@ -652,21 +679,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.FollowGroundAltitude = value
 
     @property
-    def follow_ground_mode(self):
+    def follow_ground_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FollowGroundMode() As boolean
                 | 
                 |     Returns the FollowGroundMode parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.FollowGroundMode
 
     @follow_ground_mode.setter
-    def follow_ground_mode(self, value):
+    def follow_ground_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -674,44 +702,46 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.FollowGroundMode = value
 
     @property
-    def full_scene_anti_aliasing_mode(self):
+    def full_scene_anti_aliasing_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FullSceneAntiAliasingMode() As
                 | CATFullSceneAntiAliasingMode
                 | 
                 |     Returns the AntiAliasingMode parameter.
 
-        :return: enum cat_full_scene_anti_aliasing_mode
+        :return: int
+        :rtype: int
         """
 
         return self.visualization_setting_att.FullSceneAntiAliasingMode
 
     @full_scene_anti_aliasing_mode.setter
-    def full_scene_anti_aliasing_mode(self, value):
+    def full_scene_anti_aliasing_mode(self, value: int):
         """
-        :param enum cat_full_scene_anti_aliasing_mode value:
+        :param int value:
         """
 
         self.visualization_setting_att.FullSceneAntiAliasingMode = value
 
     @property
-    def gravity(self):
+    def gravity(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Gravity() As boolean
                 | 
                 |     Returns the Gravity parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.Gravity
 
     @gravity.setter
-    def gravity(self, value):
+    def gravity(self, value: bool):
         """
         :param bool value:
         """
@@ -719,21 +749,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.Gravity = value
 
     @property
-    def gravity_axis(self):
+    def gravity_axis(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property GravityAxis() As long
                 | 
                 |     Returns the GravityAxis parameter.
 
         :return: int
+        :rtype: int
         """
 
         return self.visualization_setting_att.GravityAxis
 
     @gravity_axis.setter
-    def gravity_axis(self, value):
+    def gravity_axis(self, value: int):
         """
         :param int value:
         """
@@ -741,21 +772,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.GravityAxis = value
 
     @property
-    def halo_mode(self):
+    def halo_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HaloMode() As boolean
                 | 
                 |     Returns the HaloMode parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.HaloMode
 
     @halo_mode.setter
-    def halo_mode(self, value):
+    def halo_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -763,21 +795,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.HaloMode = value
 
     @property
-    def isopar_generation_mode(self):
+    def isopar_generation_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property IsoparGenerationMode() As boolean
                 | 
                 |     Returns the IsoparGenerationMode parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.IsoparGenerationMode
 
     @isopar_generation_mode.setter
-    def isopar_generation_mode(self, value):
+    def isopar_generation_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -785,21 +818,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.IsoparGenerationMode = value
 
     @property
-    def keyboard_rotation_angle_value(self):
+    def keyboard_rotation_angle_value(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property KeyboardRotationAngleValue() As long
                 | 
                 |     Retrieves the angle value for rotations operated through key combinations.
 
         :return: int
+        :rtype: int
         """
 
         return self.visualization_setting_att.KeyboardRotationAngleValue
 
     @keyboard_rotation_angle_value.setter
-    def keyboard_rotation_angle_value(self, value):
+    def keyboard_rotation_angle_value(self, value: int):
         """
         :param int value:
         """
@@ -807,21 +841,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.KeyboardRotationAngleValue = value
 
     @property
-    def light_viewer_mode(self):
+    def light_viewer_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LightViewerMode() As boolean
                 | 
                 |     Returns the LightViewerMode parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.LightViewerMode
 
     @light_viewer_mode.setter
-    def light_viewer_mode(self, value):
+    def light_viewer_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -829,21 +864,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.LightViewerMode = value
 
     @property
-    def lineic_cgr_mode(self):
+    def lineic_cgr_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LineicCgrMode() As boolean
                 | 
                 |     Returns the LineicCgrMode parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.LineicCgrMode
 
     @lineic_cgr_mode.setter
-    def lineic_cgr_mode(self, value):
+    def lineic_cgr_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -851,21 +887,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.LineicCgrMode = value
 
     @property
-    def max_selection_move(self):
+    def max_selection_move(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MaxSelectionMove() As long
                 | 
                 |     Returns the MaxSelectionMove parameter.
 
         :return: int
+        :rtype: int
         """
 
         return self.visualization_setting_att.MaxSelectionMove
 
     @max_selection_move.setter
-    def max_selection_move(self, value):
+    def max_selection_move(self, value: int):
         """
         :param int value:
         """
@@ -873,21 +910,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.MaxSelectionMove = value
 
     @property
-    def minimum_fps_mode(self):
+    def minimum_fps_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MinimumFPSMode() As boolean
                 | 
                 |     Returns the MinimumFPSMode parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.MinimumFPSMode
 
     @minimum_fps_mode.setter
-    def minimum_fps_mode(self, value):
+    def minimum_fps_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -895,21 +933,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.MinimumFPSMode = value
 
     @property
-    def minimum_space_fps_mode(self):
+    def minimum_space_fps_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MinimumSpaceFPSMode() As boolean
                 | 
                 |     Returns the MinimumSpaceFPSMode parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.MinimumSpaceFPSMode
 
     @minimum_space_fps_mode.setter
-    def minimum_space_fps_mode(self, value):
+    def minimum_space_fps_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -917,21 +956,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.MinimumSpaceFPSMode = value
 
     @property
-    def mouse_double_clic_delay(self):
+    def mouse_double_clic_delay(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MouseDoubleClicDelay() As long
                 | 
                 |     Returns the MouseDoubleClicDelay parameter.
 
         :return: int
+        :rtype: int
         """
 
         return self.visualization_setting_att.MouseDoubleClicDelay
 
     @mouse_double_clic_delay.setter
-    def mouse_double_clic_delay(self, value):
+    def mouse_double_clic_delay(self, value: int):
         """
         :param int value:
         """
@@ -939,21 +979,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.MouseDoubleClicDelay = value
 
     @property
-    def mouse_speed_value(self):
+    def mouse_speed_value(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MouseSpeedValue() As long
                 | 
                 |     Returns the MouseSpeedValue parameter.
 
         :return: int
+        :rtype: int
         """
 
         return self.visualization_setting_att.MouseSpeedValue
 
     @mouse_speed_value.setter
-    def mouse_speed_value(self, value):
+    def mouse_speed_value(self, value: int):
         """
         :param int value:
         """
@@ -961,21 +1002,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.MouseSpeedValue = value
 
     @property
-    def nb_isopars(self):
+    def nb_isopars(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NbIsopars() As long
                 | 
                 |     Returns the NbIsopars parameter.
 
         :return: int
+        :rtype: int
         """
 
         return self.visualization_setting_att.NbIsopars
 
     @nb_isopars.setter
-    def nb_isopars(self, value):
+    def nb_isopars(self, value: int):
         """
         :param int value:
         """
@@ -983,21 +1025,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.NbIsopars = value
 
     @property
-    def no_z_buffer_selection_mode(self):
+    def no_z_buffer_selection_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NoZBufferSelectionMode() As boolean
                 | 
                 |     Returns the NoZBufferSelectionMode parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.NoZBufferSelectionMode
 
     @no_z_buffer_selection_mode.setter
-    def no_z_buffer_selection_mode(self, value):
+    def no_z_buffer_selection_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -1005,21 +1048,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.NoZBufferSelectionMode = value
 
     @property
-    def number_of_minimum_fps(self):
+    def number_of_minimum_fps(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NumberOfMinimumFPS() As long
                 | 
                 |     Returns the NumberOfMinimumFPS parameter.
 
         :return: int
+        :rtype: int
         """
 
         return self.visualization_setting_att.NumberOfMinimumFPS
 
     @number_of_minimum_fps.setter
-    def number_of_minimum_fps(self, value):
+    def number_of_minimum_fps(self, value: int):
         """
         :param int value:
         """
@@ -1027,21 +1071,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.NumberOfMinimumFPS = value
 
     @property
-    def number_of_minimum_space_fps(self):
+    def number_of_minimum_space_fps(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NumberOfMinimumSpaceFPS() As long
                 | 
                 |     Returns the NumberOfMinimumSpaceFPS parameter.
 
         :return: int
+        :rtype: int
         """
 
         return self.visualization_setting_att.NumberOfMinimumSpaceFPS
 
     @number_of_minimum_space_fps.setter
-    def number_of_minimum_space_fps(self, value):
+    def number_of_minimum_space_fps(self, value: int):
         """
         :param int value:
         """
@@ -1049,21 +1094,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.NumberOfMinimumSpaceFPS = value
 
     @property
-    def occlusion_culling_mode(self):
+    def occlusion_culling_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OcclusionCullingMode() As boolean
                 | 
                 |     Returns the OcclusionCullingMode parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.OcclusionCullingMode
 
     @occlusion_culling_mode.setter
-    def occlusion_culling_mode(self, value):
+    def occlusion_culling_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -1071,21 +1117,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.OcclusionCullingMode = value
 
     @property
-    def opaque_faces(self):
+    def opaque_faces(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OpaqueFaces() As boolean
                 | 
                 |     Returns the SetStereoModeLock parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.OpaqueFaces
 
     @opaque_faces.setter
-    def opaque_faces(self, value):
+    def opaque_faces(self, value: bool):
         """
         :param bool value:
         """
@@ -1093,21 +1140,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.OpaqueFaces = value
 
     @property
-    def other_selection_timeout(self):
+    def other_selection_timeout(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OtherSelectionTimeout() As double
                 | 
                 |     Returns the OtherSelectionTimeout parameter.
 
         :return: float
+        :rtype: float
         """
 
         return self.visualization_setting_att.OtherSelectionTimeout
 
     @other_selection_timeout.setter
-    def other_selection_timeout(self, value):
+    def other_selection_timeout(self, value: float):
         """
         :param float value:
         """
@@ -1115,21 +1163,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.OtherSelectionTimeout = value
 
     @property
-    def other_selection_timeout_activity(self):
+    def other_selection_timeout_activity(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OtherSelectionTimeoutActivity() As boolean
                 | 
                 |     Returns the OtherSelectionTimeoutActivity parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.OtherSelectionTimeoutActivity
 
     @other_selection_timeout_activity.setter
-    def other_selection_timeout_activity(self, value):
+    def other_selection_timeout_activity(self, value: bool):
         """
         :param bool value:
         """
@@ -1137,21 +1186,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.OtherSelectionTimeoutActivity = value
 
     @property
-    def picking_window_size(self):
+    def picking_window_size(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PickingWindowSize() As long
                 | 
                 |     Returns the PickingWindowSize parameter.
 
         :return: int
+        :rtype: int
         """
 
         return self.visualization_setting_att.PickingWindowSize
 
     @picking_window_size.setter
-    def picking_window_size(self, value):
+    def picking_window_size(self, value: int):
         """
         :param int value:
         """
@@ -1159,21 +1209,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.PickingWindowSize = value
 
     @property
-    def pre_selection_mode(self):
+    def pre_selection_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PreSelectionMode() As boolean
                 | 
                 |     Returns the PreSelectionMode parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.PreSelectionMode
 
     @pre_selection_mode.setter
-    def pre_selection_mode(self, value):
+    def pre_selection_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -1181,21 +1232,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.PreSelectionMode = value
 
     @property
-    def preselected_element_linetype(self):
+    def preselected_element_linetype(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PreselectedElementLinetype() As long
                 | 
                 |     Returns the PreselectedElementLinetype parameter.
 
         :return: int
+        :rtype: int
         """
 
         return self.visualization_setting_att.PreselectedElementLinetype
 
     @preselected_element_linetype.setter
-    def preselected_element_linetype(self, value):
+    def preselected_element_linetype(self, value: int):
         """
         :param int value:
         """
@@ -1203,21 +1255,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.PreselectedElementLinetype = value
 
     @property
-    def rotation_sphere_mode(self):
+    def rotation_sphere_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RotationSphereMode() As boolean
                 | 
                 |     Returns the RotationSphereMode parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.RotationSphereMode
 
     @rotation_sphere_mode.setter
-    def rotation_sphere_mode(self, value):
+    def rotation_sphere_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -1225,21 +1278,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.RotationSphereMode = value
 
     @property
-    def shader_mode(self):
+    def shader_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ShaderMode() As boolean
                 | 
                 |     Returns the ShaderMode parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.ShaderMode
 
     @shader_mode.setter
-    def shader_mode(self, value):
+    def shader_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -1247,21 +1301,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.ShaderMode = value
 
     @property
-    def static_cull(self):
+    def static_cull(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property StaticCull() As long
                 | 
                 |     Returns the StaticCull parameter.
 
         :return: int
+        :rtype: int
         """
 
         return self.visualization_setting_att.StaticCull
 
     @static_cull.setter
-    def static_cull(self, value):
+    def static_cull(self, value: int):
         """
         :param int value:
         """
@@ -1269,21 +1324,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.StaticCull = value
 
     @property
-    def static_lod(self):
+    def static_lod(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property StaticLOD() As double
                 | 
                 |     Returns the StaticLOD parameter.
 
         :return: float
+        :rtype: float
         """
 
         return self.visualization_setting_att.StaticLOD
 
     @static_lod.setter
-    def static_lod(self, value):
+    def static_lod(self, value: float):
         """
         :param float value:
         """
@@ -1291,21 +1347,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.StaticLOD = value
 
     @property
-    def stereo_mode(self):
+    def stereo_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property StereoMode() As boolean
                 | 
                 |     Returns the StereoMode parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.StereoMode
 
     @stereo_mode.setter
-    def stereo_mode(self, value):
+    def stereo_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -1313,21 +1370,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.StereoMode = value
 
     @property
-    def transparency_mode(self):
+    def transparency_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TransparencyMode() As boolean
                 | 
                 |     Returns the TransparencyMode parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.TransparencyMode
 
     @transparency_mode.setter
-    def transparency_mode(self, value):
+    def transparency_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -1335,21 +1393,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.TransparencyMode = value
 
     @property
-    def two_side_lighting_mode(self):
+    def two_side_lighting_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TwoSideLightingMode() As boolean
                 | 
                 |     Returns the TwoSideLightingMode parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.TwoSideLightingMode
 
     @two_side_lighting_mode.setter
-    def two_side_lighting_mode(self, value):
+    def two_side_lighting_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -1357,21 +1416,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.TwoSideLightingMode = value
 
     @property
-    def viewpoint_animation_mode(self):
+    def viewpoint_animation_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ViewpointAnimationMode() As boolean
                 | 
                 |     Returns the ViewpointAnimationMode parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.ViewpointAnimationMode
 
     @viewpoint_animation_mode.setter
-    def viewpoint_animation_mode(self, value):
+    def viewpoint_animation_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -1379,21 +1439,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.ViewpointAnimationMode = value
 
     @property
-    def viz2_d_accuracy_mode(self):
+    def viz2_d_accuracy_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Viz2DAccuracyMode() As boolean
                 | 
                 |     Returns the 2DAccuracyMode parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.Viz2DAccuracyMode
 
     @viz2_d_accuracy_mode.setter
-    def viz2_d_accuracy_mode(self, value):
+    def viz2_d_accuracy_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -1401,21 +1462,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.Viz2DAccuracyMode = value
 
     @property
-    def viz2_d_fixed_accuracy(self):
+    def viz2_d_fixed_accuracy(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Viz2DFixedAccuracy() As double
                 | 
                 |     Returns the 2DFixedAccuracy parameter.
 
         :return: float
+        :rtype: float
         """
 
         return self.visualization_setting_att.Viz2DFixedAccuracy
 
     @viz2_d_fixed_accuracy.setter
-    def viz2_d_fixed_accuracy(self, value):
+    def viz2_d_fixed_accuracy(self, value: float):
         """
         :param float value:
         """
@@ -1423,43 +1485,45 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.Viz2DFixedAccuracy = value
 
     @property
-    def viz2_d_proportional_accuracy(self):
+    def viz2_d_proportionnal_accuracy(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property Viz2DproportionalAccuracy() As double
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+                | o Property Viz2DProportionnalAccuracy() As double
                 | 
-                |     Returns the 2DproportionalAccuracy parameter.
+                |     Returns the 2DProportionnalAccuracy parameter.
 
         :return: float
+        :rtype: float
         """
 
-        return self.visualization_setting_att.Viz2DproportionalAccuracy
+        return self.visualization_setting_att.Viz2DProportionnalAccuracy
 
-    @viz2_d_proportional_accuracy.setter
-    def viz2_d_proportional_accuracy(self, value):
+    @viz2_d_proportionnal_accuracy.setter
+    def viz2_d_proportionnal_accuracy(self, value: float):
         """
         :param float value:
         """
 
-        self.visualization_setting_att.Viz2DproportionalAccuracy = value
+        self.visualization_setting_att.Viz2DProportionnalAccuracy = value
 
     @property
-    def viz3_d_accuracy_mode(self):
+    def viz3_d_accuracy_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Viz3DAccuracyMode() As boolean
                 | 
                 |     Returns the Viz3DAccuracyMode parameter.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.visualization_setting_att.Viz3DAccuracyMode
 
     @viz3_d_accuracy_mode.setter
-    def viz3_d_accuracy_mode(self, value):
+    def viz3_d_accuracy_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -1467,21 +1531,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.Viz3DAccuracyMode = value
 
     @property
-    def viz3_d_curve_accuracy(self):
+    def viz3_d_curve_accuracy(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Viz3DCurveAccuracy() As double
                 | 
                 |     Returns the 3DCurveAccuracy parameter.
 
         :return: float
+        :rtype: float
         """
 
         return self.visualization_setting_att.Viz3DCurveAccuracy
 
     @viz3_d_curve_accuracy.setter
-    def viz3_d_curve_accuracy(self, value):
+    def viz3_d_curve_accuracy(self, value: float):
         """
         :param float value:
         """
@@ -1489,21 +1554,22 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.Viz3DCurveAccuracy = value
 
     @property
-    def viz3_d_fixed_accuracy(self):
+    def viz3_d_fixed_accuracy(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Viz3DFixedAccuracy() As double
                 | 
                 |     Returns the 3DFixedAccuracy parameter.
 
         :return: float
+        :rtype: float
         """
 
         return self.visualization_setting_att.Viz3DFixedAccuracy
 
     @viz3_d_fixed_accuracy.setter
-    def viz3_d_fixed_accuracy(self, value):
+    def viz3_d_fixed_accuracy(self, value: float):
         """
         :param float value:
         """
@@ -1511,31 +1577,32 @@ class VisualizationSettingAtt(SettingController):
         self.visualization_setting_att.Viz3DFixedAccuracy = value
 
     @property
-    def viz3_d_proportional_accuracy(self):
+    def viz3_d_proportionnal_accuracy(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property Viz3DproportionalAccuracy() As double
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+                | o Property Viz3DProportionnalAccuracy() As double
                 | 
-                |     Returns the Viz3DproportionalAccuracy parameter.
+                |     Returns the Viz3DProportionnalAccuracy parameter.
 
         :return: float
+        :rtype: float
         """
 
-        return self.visualization_setting_att.Viz3DproportionalAccuracy
+        return self.visualization_setting_att.Viz3DProportionnalAccuracy
 
-    @viz3_d_proportional_accuracy.setter
-    def viz3_d_proportional_accuracy(self, value):
+    @viz3_d_proportionnal_accuracy.setter
+    def viz3_d_proportionnal_accuracy(self, value: float):
         """
         :param float value:
         """
 
-        self.visualization_setting_att.Viz3DproportionalAccuracy = value
+        self.visualization_setting_att.Viz3DProportionnalAccuracy = value
 
-    def get_accurate_picking_mode_info(self, io_admin_level, io_locked):
+    def get_accurate_picking_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetAccuratePickingModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1546,13 +1613,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetAccuratePickingModeInfo(io_admin_level, io_locked)
 
-    def get_accurate_picking_window_size_info(self, io_admin_level, io_locked):
+    def get_accurate_picking_window_size_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetAccuratePickingWindowSizeInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1564,13 +1632,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetAccuratePickingWindowSizeInfo(io_admin_level, io_locked)
 
-    def get_all_z_buffer_element_mode_info(self, io_admin_level, io_locked):
+    def get_all_z_buffer_element_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetAllZBufferElementModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1581,13 +1650,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetAllZBufferElementModeInfo(io_admin_level, io_locked)
 
-    def get_ambient_activation_info(self, io_admin_level, io_locked):
+    def get_ambient_activation_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetAmbientActivationInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1598,13 +1668,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetAmbientActivationInfo(io_admin_level, io_locked)
 
-    def get_anti_aliasing_mode_info(self, io_admin_level, io_locked):
+    def get_anti_aliasing_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetAntiAliasingModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1615,13 +1686,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetAntiAliasingModeInfo(io_admin_level, io_locked)
 
-    def get_anti_aliasing_offset_info(self, io_admin_level, io_locked):
+    def get_anti_aliasing_offset_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetAntiAliasingOffsetInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1632,13 +1704,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetAntiAliasingOffsetInfo(io_admin_level, io_locked)
 
-    def get_auxiliary_drill_viewer_info(self, io_admin_level, io_locked):
+    def get_auxiliary_drill_viewer_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetAuxiliaryDrillViewerInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1649,13 +1722,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetAuxiliaryDrillViewerInfo(io_admin_level, io_locked)
 
-    def get_back_face_culling_mode(self):
+    def get_back_face_culling_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetBackFaceCullingMode() As CATBackFaceCullingMode
                 | 
                 |     Retrieves the BackFaceCullingMode parameter.
@@ -1677,14 +1751,15 @@ class VisualizationSettingAtt(SettingController):
                 |         E_FAIL
                 |             if the operation failed.
 
-        :return: enum cat_back_face_culling_mode
+        :return: int
+        :rtype: int
         """
         return self.visualization_setting_att.GetBackFaceCullingMode()
 
-    def get_back_face_culling_mode_info(self, io_admin_level, io_locked):
+    def get_back_face_culling_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetBackFaceCullingModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1695,13 +1770,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetBackFaceCullingModeInfo(io_admin_level, io_locked)
 
-    def get_background_rgb(self, io_r, io_g, io_b):
+    def get_background_rgb(self, io_r: int, io_g: int, io_b: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetBackgroundRGB(long ioR,
                 | long ioG,
                 | long ioB)
@@ -1712,13 +1788,14 @@ class VisualizationSettingAtt(SettingController):
         :param int io_g:
         :param int io_b:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.GetBackgroundRGB(io_r, io_g, io_b)
 
-    def get_background_rgb_info(self, io_admin_level, io_locked):
+    def get_background_rgb_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetBackgroundRGBInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1729,13 +1806,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetBackgroundRGBInfo(io_admin_level, io_locked)
 
-    def get_border_edges_mode_info(self, io_admin_level, io_locked):
+    def get_border_edges_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetBorderEdgesModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1746,13 +1824,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetBorderEdgesModeInfo(io_admin_level, io_locked)
 
-    def get_border_edges_rgb(self, io_r, io_g, io_b):
+    def get_border_edges_rgb(self, io_r: int, io_g: int, io_b: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetBorderEdgesRGB(long ioR,
                 | long ioG,
                 | long ioB)
@@ -1763,13 +1842,14 @@ class VisualizationSettingAtt(SettingController):
         :param int io_g:
         :param int io_b:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.GetBorderEdgesRGB(io_r, io_g, io_b)
 
-    def get_border_edges_rgb_info(self, io_admin_level, io_locked):
+    def get_border_edges_rgb_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetBorderEdgesRGBInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1780,13 +1860,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetBorderEdgesRGBInfo(io_admin_level, io_locked)
 
-    def get_border_edges_thickness_info(self, io_admin_level, io_locked):
+    def get_border_edges_thickness_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetBorderEdgesThicknessInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1797,13 +1878,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetBorderEdgesThicknessInfo(io_admin_level, io_locked)
 
-    def get_bounding_box_selection_mode_info(self, io_admin_level, io_locked):
+    def get_bounding_box_selection_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetBoundingBoxSelectionModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1814,13 +1896,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetBoundingBoxSelectionModeInfo(io_admin_level, io_locked)
 
-    def get_color_background_mode_info(self, io_admin_level, io_locked):
+    def get_color_background_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetColorBackgroundModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1831,13 +1914,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetColorBackgroundModeInfo(io_admin_level, io_locked)
 
-    def get_default_diffuse_ambient_coefficient_info(self, io_admin_level, io_locked):
+    def get_default_diffuse_ambient_coefficient_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDefaultDiffuseAmbientCoefficientInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1849,13 +1933,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetDefaultDiffuseAmbientCoefficientInfo(io_admin_level, io_locked)
 
-    def get_default_shininess_info(self, io_admin_level, io_locked):
+    def get_default_shininess_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDefaultShininessInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1866,13 +1951,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetDefaultShininessInfo(io_admin_level, io_locked)
 
-    def get_default_specular_coefficient_info(self, io_admin_level, io_locked):
+    def get_default_specular_coefficient_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDefaultSpecularCoefficientInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1884,13 +1970,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetDefaultSpecularCoefficientInfo(io_admin_level, io_locked)
 
-    def get_display_current_scale_info(self, io_admin_level, io_locked):
+    def get_display_current_scale_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDisplayCurrentScaleInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1901,13 +1988,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetDisplayCurrentScaleInfo(io_admin_level, io_locked)
 
-    def get_display_drill_list_info(self, io_admin_level, io_locked):
+    def get_display_drill_list_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDisplayDrillListInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1918,13 +2006,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetDisplayDrillListInfo(io_admin_level, io_locked)
 
-    def get_display_immersive_drill_viewer_info(self, io_admin_level, io_locked):
+    def get_display_immersive_drill_viewer_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDisplayImmersiveDrillViewerInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1936,13 +2025,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetDisplayImmersiveDrillViewerInfo(io_admin_level, io_locked)
 
-    def get_dynamic_cull_info(self, io_admin_level, io_locked):
+    def get_dynamic_cull_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDynamicCullInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1953,13 +2043,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetDynamicCullInfo(io_admin_level, io_locked)
 
-    def get_dynamic_lod_info(self, io_admin_level, io_locked):
+    def get_dynamic_lod_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDynamicLODInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1970,13 +2061,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetDynamicLODInfo(io_admin_level, io_locked)
 
-    def get_face_hl_drill_info(self, io_admin_level, io_locked):
+    def get_face_hl_drill_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetFaceHLDrillInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -1987,13 +2079,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetFaceHLDrillInfo(io_admin_level, io_locked)
 
-    def get_fly_collision_mode_info(self, io_admin_level, io_locked):
+    def get_fly_collision_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetFlyCollisionModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2004,13 +2097,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetFlyCollisionModeInfo(io_admin_level, io_locked)
 
-    def get_fly_collision_sphere_radius_info(self, io_admin_level, io_locked):
+    def get_fly_collision_sphere_radius_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetFlyCollisionSphereRadiusInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2021,13 +2115,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetFlyCollisionSphereRadiusInfo(io_admin_level, io_locked)
 
-    def get_fly_collision_type_info(self, io_admin_level, io_locked):
+    def get_fly_collision_type_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetFlyCollisionTypeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2038,13 +2133,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetFlyCollisionTypeInfo(io_admin_level, io_locked)
 
-    def get_fly_sensitivity_info(self, io_admin_level, io_locked):
+    def get_fly_sensitivity_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetFlySensitivityInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2055,13 +2151,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetFlySensitivityInfo(io_admin_level, io_locked)
 
-    def get_fly_speed_info(self, io_admin_level, io_locked):
+    def get_fly_speed_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetFlySpeedInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2072,13 +2169,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetFlySpeedInfo(io_admin_level, io_locked)
 
-    def get_fly_speed_mode_info(self, io_admin_level, io_locked):
+    def get_fly_speed_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetFlySpeedModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2089,13 +2187,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetFlySpeedModeInfo(io_admin_level, io_locked)
 
-    def get_follow_ground_altitude_info(self, io_admin_level, io_locked):
+    def get_follow_ground_altitude_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetFollowGroundAltitudeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2106,13 +2205,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetFollowGroundAltitudeInfo(io_admin_level, io_locked)
 
-    def get_follow_ground_mode_info(self, io_admin_level, io_locked):
+    def get_follow_ground_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetFollowGroundModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2123,13 +2223,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetFollowGroundModeInfo(io_admin_level, io_locked)
 
-    def get_full_scene_anti_aliasing_mode_info(self, io_admin_level, io_locked):
+    def get_full_scene_anti_aliasing_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetFullSceneAntiAliasingModeInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2141,13 +2242,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetFullSceneAntiAliasingModeInfo(io_admin_level, io_locked)
 
-    def get_gravity_axis_info(self, io_admin_level, io_locked):
+    def get_gravity_axis_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetGravityAxisInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2158,13 +2260,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetGravityAxisInfo(io_admin_level, io_locked)
 
-    def get_gravity_info(self, io_admin_level, io_locked):
+    def get_gravity_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetGravityInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2174,13 +2277,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetGravityInfo(io_admin_level, io_locked)
 
-    def get_halo_mode_info(self, io_admin_level, io_locked):
+    def get_halo_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetHaloModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2191,13 +2295,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetHaloModeInfo(io_admin_level, io_locked)
 
-    def get_handles_rgb(self, io_r, io_g, io_b):
+    def get_handles_rgb(self, io_r: int, io_g: int, io_b: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetHandlesRGB(long ioR,
                 | long ioG,
                 | long ioB)
@@ -2208,13 +2313,14 @@ class VisualizationSettingAtt(SettingController):
         :param int io_g:
         :param int io_b:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.GetHandlesRGB(io_r, io_g, io_b)
 
-    def get_handles_rgb_info(self, io_admin_level, io_locked):
+    def get_handles_rgb_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetHandlesRGBInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2225,13 +2331,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetHandlesRGBInfo(io_admin_level, io_locked)
 
-    def get_isopar_generation_mode_info(self, io_admin_level, io_locked):
+    def get_isopar_generation_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetIsoparGenerationModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2242,13 +2349,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetIsoparGenerationModeInfo(io_admin_level, io_locked)
 
-    def get_keyboard_rotation_angle_value_info(self, io_admin_level, io_locked):
+    def get_keyboard_rotation_angle_value_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetKeyboardRotationAngleValueInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2260,13 +2368,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetKeyboardRotationAngleValueInfo(io_admin_level, io_locked)
 
-    def get_light_viewer_mode_info(self, io_admin_level, io_locked):
+    def get_light_viewer_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetLightViewerModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2277,13 +2386,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetLightViewerModeInfo(io_admin_level, io_locked)
 
-    def get_lineic_cgr_mode_info(self, io_admin_level, io_locked):
+    def get_lineic_cgr_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetLineicCgrModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2294,13 +2404,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetLineicCgrModeInfo(io_admin_level, io_locked)
 
-    def get_max_selection_move_info(self, io_admin_level, io_locked):
+    def get_max_selection_move_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMaxSelectionMoveInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2311,13 +2422,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetMaxSelectionMoveInfo(io_admin_level, io_locked)
 
-    def get_minimum_fps_mode_info(self, io_admin_level, io_locked):
+    def get_minimum_fps_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMinimumFPSModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2328,13 +2440,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetMinimumFPSModeInfo(io_admin_level, io_locked)
 
-    def get_minimum_space_fps_mode_info(self, io_admin_level, io_locked):
+    def get_minimum_space_fps_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMinimumSpaceFPSModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2345,13 +2458,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetMinimumSpaceFPSModeInfo(io_admin_level, io_locked)
 
-    def get_mouse_double_clic_delay_info(self, io_admin_level, io_locked):
+    def get_mouse_double_clic_delay_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMouseDoubleClicDelayInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2362,13 +2476,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetMouseDoubleClicDelayInfo(io_admin_level, io_locked)
 
-    def get_mouse_speed_value_info(self, io_admin_level, io_locked):
+    def get_mouse_speed_value_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMouseSpeedValueInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2379,13 +2494,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetMouseSpeedValueInfo(io_admin_level, io_locked)
 
-    def get_nb_isopars_info(self, io_admin_level, io_locked):
+    def get_nb_isopars_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNbIsoparsInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2396,13 +2512,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetNbIsoparsInfo(io_admin_level, io_locked)
 
-    def get_no_show_background_rgb(self, io_r, io_g, io_b):
+    def get_no_show_background_rgb(self, io_r: int, io_g: int, io_b: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetNoShowBackgroundRGB(long ioR,
                 | long ioG,
                 | long ioB)
@@ -2426,13 +2543,14 @@ class VisualizationSettingAtt(SettingController):
         :param int io_g:
         :param int io_b:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.GetNoShowBackgroundRGB(io_r, io_g, io_b)
 
-    def get_no_show_background_rgb_info(self, io_admin_level, io_locked):
+    def get_no_show_background_rgb_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNoShowBackgroundRGBInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2453,13 +2571,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetNoShowBackgroundRGBInfo(io_admin_level, io_locked)
 
-    def get_no_z_buffer_selection_mode_info(self, io_admin_level, io_locked):
+    def get_no_z_buffer_selection_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNoZBufferSelectionModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2470,13 +2589,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetNoZBufferSelectionModeInfo(io_admin_level, io_locked)
 
-    def get_number_of_minimum_fps_info(self, io_admin_level, io_locked):
+    def get_number_of_minimum_fps_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNumberOfMinimumFPSInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2487,13 +2607,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetNumberOfMinimumFPSInfo(io_admin_level, io_locked)
 
-    def get_number_of_minimum_space_fps_info(self, io_admin_level, io_locked):
+    def get_number_of_minimum_space_fps_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNumberOfMinimumSpaceFPSInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2504,13 +2625,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetNumberOfMinimumSpaceFPSInfo(io_admin_level, io_locked)
 
-    def get_occlusion_culling_mode_info(self, io_admin_level, io_locked):
+    def get_occlusion_culling_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetOcclusionCullingModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2521,13 +2643,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetOcclusionCullingModeInfo(io_admin_level, io_locked)
 
-    def get_opaque_faces_info(self, io_admin_level, io_locked):
+    def get_opaque_faces_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetOpaqueFacesInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2538,13 +2661,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetOpaqueFacesInfo(io_admin_level, io_locked)
 
-    def get_other_selection_timeout_activity_info(self, io_admin_level, io_locked):
+    def get_other_selection_timeout_activity_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetOtherSelectionTimeoutActivityInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2556,13 +2680,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetOtherSelectionTimeoutActivityInfo(io_admin_level, io_locked)
 
-    def get_other_selection_timeout_info(self, io_admin_level, io_locked):
+    def get_other_selection_timeout_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetOtherSelectionTimeoutInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2573,13 +2698,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetOtherSelectionTimeoutInfo(io_admin_level, io_locked)
 
-    def get_picking_window_size_info(self, io_admin_level, io_locked):
+    def get_picking_window_size_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPickingWindowSizeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2590,13 +2716,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetPickingWindowSizeInfo(io_admin_level, io_locked)
 
-    def get_pre_selection_mode_info(self, io_admin_level, io_locked):
+    def get_pre_selection_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPreSelectionModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2607,13 +2734,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetPreSelectionModeInfo(io_admin_level, io_locked)
 
-    def get_preselected_element_linetype_info(self, io_admin_level, io_locked):
+    def get_preselected_element_linetype_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPreselectedElementLinetypeInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2625,13 +2753,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetPreselectedElementLinetypeInfo(io_admin_level, io_locked)
 
-    def get_preselected_element_rgb(self, io_r, io_g, io_b):
+    def get_preselected_element_rgb(self, io_r: int, io_g: int, io_b: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetPreselectedElementRGB(long ioR,
                 | long ioG,
                 | long ioB)
@@ -2642,13 +2771,14 @@ class VisualizationSettingAtt(SettingController):
         :param int io_g:
         :param int io_b:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.GetPreselectedElementRGB(io_r, io_g, io_b)
 
-    def get_preselected_element_rgb_info(self, io_admin_level, io_locked):
+    def get_preselected_element_rgb_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPreselectedElementRGBInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2659,13 +2789,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetPreselectedElementRGBInfo(io_admin_level, io_locked)
 
-    def get_rotation_sphere_mode_info(self, io_admin_level, io_locked):
+    def get_rotation_sphere_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetRotationSphereModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2676,13 +2807,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetRotationSphereModeInfo(io_admin_level, io_locked)
 
-    def get_selected_edge_rgb(self, io_r, io_g, io_b):
+    def get_selected_edge_rgb(self, io_r: int, io_g: int, io_b: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetSelectedEdgeRGB(long ioR,
                 | long ioG,
                 | long ioB)
@@ -2693,13 +2825,14 @@ class VisualizationSettingAtt(SettingController):
         :param int io_g:
         :param int io_b:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.GetSelectedEdgeRGB(io_r, io_g, io_b)
 
-    def get_selected_edge_rgb_info(self, io_admin_level, io_locked):
+    def get_selected_edge_rgb_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetSelectedEdgeRGBInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2710,13 +2843,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetSelectedEdgeRGBInfo(io_admin_level, io_locked)
 
-    def get_selected_element_rgb(self, io_r, io_g, io_b):
+    def get_selected_element_rgb(self, io_r: int, io_g: int, io_b: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetSelectedElementRGB(long ioR,
                 | long ioG,
                 | long ioB)
@@ -2727,13 +2861,14 @@ class VisualizationSettingAtt(SettingController):
         :param int io_g:
         :param int io_b:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.GetSelectedElementRGB(io_r, io_g, io_b)
 
-    def get_selected_element_rgb_info(self, io_admin_level, io_locked):
+    def get_selected_element_rgb_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetSelectedElementRGBInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2744,13 +2879,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetSelectedElementRGBInfo(io_admin_level, io_locked)
 
-    def get_shader_mode_info(self, io_admin_level, io_locked):
+    def get_shader_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetShaderModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2761,13 +2897,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetShaderModeInfo(io_admin_level, io_locked)
 
-    def get_static_cull_info(self, io_admin_level, io_locked):
+    def get_static_cull_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetStaticCullInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2778,13 +2915,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetStaticCullInfo(io_admin_level, io_locked)
 
-    def get_static_lod_info(self, io_admin_level, io_locked):
+    def get_static_lod_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetStaticLODInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2795,13 +2933,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetStaticLODInfo(io_admin_level, io_locked)
 
-    def get_stereo_mode_info(self, io_admin_level, io_locked):
+    def get_stereo_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetStereoModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2812,13 +2951,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetStereoModeInfo(io_admin_level, io_locked)
 
-    def get_transparency_mode_info(self, io_admin_level, io_locked):
+    def get_transparency_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetTransparencyModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2829,13 +2969,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetTransparencyModeInfo(io_admin_level, io_locked)
 
-    def get_two_side_lighting_mode_info(self, io_admin_level, io_locked):
+    def get_two_side_lighting_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetTwoSideLightingModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2846,13 +2987,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetTwoSideLightingModeInfo(io_admin_level, io_locked)
 
-    def get_under_intensified_rgb(self, io_r, io_g, io_b):
+    def get_under_intensified_rgb(self, io_r: int, io_g: int, io_b: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetUnderIntensifiedRGB(long ioR,
                 | long ioG,
                 | long ioB)
@@ -2863,13 +3005,14 @@ class VisualizationSettingAtt(SettingController):
         :param int io_g:
         :param int io_b:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.GetUnderIntensifiedRGB(io_r, io_g, io_b)
 
-    def get_under_intensified_rgb_info(self, io_admin_level, io_locked):
+    def get_under_intensified_rgb_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetUnderIntensifiedRGBInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2880,13 +3023,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetUnderIntensifiedRGBInfo(io_admin_level, io_locked)
 
-    def get_update_needed_rgb(self, io_r, io_g, io_b):
+    def get_update_needed_rgb(self, io_r: int, io_g: int, io_b: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetUpdateNeededRGB(long ioR,
                 | long ioG,
                 | long ioB)
@@ -2897,13 +3041,14 @@ class VisualizationSettingAtt(SettingController):
         :param int io_g:
         :param int io_b:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.GetUpdateNeededRGB(io_r, io_g, io_b)
 
-    def get_update_needed_rgb_info(self, io_admin_level, io_locked):
+    def get_update_needed_rgb_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetUpdateNeededRGBInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2914,13 +3059,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetUpdateNeededRGBInfo(io_admin_level, io_locked)
 
-    def get_viewpoint_animation_mode_info(self, io_admin_level, io_locked):
+    def get_viewpoint_animation_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetViewpointAnimationModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2931,13 +3077,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetViewpointAnimationModeInfo(io_admin_level, io_locked)
 
-    def get_viz2_d_accuracy_mode_info(self, io_admin_level, io_locked):
+    def get_viz2_d_accuracy_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetViz2DAccuracyModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2948,13 +3095,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetViz2DAccuracyModeInfo(io_admin_level, io_locked)
 
-    def get_viz2_d_fixed_accuracy_info(self, io_admin_level, io_locked):
+    def get_viz2_d_fixed_accuracy_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetViz2DFixedAccuracyInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -2965,31 +3113,33 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetViz2DFixedAccuracyInfo(io_admin_level, io_locked)
 
-    def get_viz2_d_proportional_accuracy_info(self, io_admin_level, io_locked):
+    def get_viz2_d_proportionnal_accuracy_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func GetViz2DproportionalAccuracyInfo(CATBSTR
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Func GetViz2DProportionnalAccuracyInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
-                |     Retrieves information about the 2DproportionalAccuracy setting
+                |     Retrieves information about the 2DProportionnalAccuracy setting
                 |     parameter.
                 |     Refer to SettingController for a detailed description.
 
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
-        return self.visualization_setting_att.GetViz2DproportionalAccuracyInfo(io_admin_level, io_locked)
+        return self.visualization_setting_att.GetViz2DProportionnalAccuracyInfo(io_admin_level, io_locked)
 
-    def get_viz3_d_accuracy_mode_info(self, io_admin_level, io_locked):
+    def get_viz3_d_accuracy_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetViz3DAccuracyModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -3000,13 +3150,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetViz3DAccuracyModeInfo(io_admin_level, io_locked)
 
-    def get_viz3_d_curve_accuracy_info(self, io_admin_level, io_locked):
+    def get_viz3_d_curve_accuracy_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetViz3DCurveAccuracyInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -3017,13 +3168,14 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetViz3DCurveAccuracyInfo(io_admin_level, io_locked)
 
-    def get_viz3_d_fixed_accuracy_info(self, io_admin_level, io_locked):
+    def get_viz3_d_fixed_accuracy_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetViz3DFixedAccuracyInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -3034,31 +3186,33 @@ class VisualizationSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.visualization_setting_att.GetViz3DFixedAccuracyInfo(io_admin_level, io_locked)
 
-    def get_viz3_d_proportional_accuracy_info(self, io_admin_level, io_locked):
+    def get_viz3_d_proportionnal_accuracy_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func GetViz3DproportionalAccuracyInfo(CATBSTR
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Func GetViz3DProportionnalAccuracyInfo(CATBSTR
                 | ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
-                |     Retrieves information about the Viz3DproportionalAccuracy setting
+                |     Retrieves information about the Viz3DProportionnalAccuracy setting
                 |     parameter.
                 |     Refer to SettingController for a detailed description.
 
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
-        return self.visualization_setting_att.GetViz3DproportionalAccuracyInfo(io_admin_level, io_locked)
+        return self.visualization_setting_att.GetViz3DProportionnalAccuracyInfo(io_admin_level, io_locked)
 
-    def put_back_face_culling_mode(self, i_back_face_culling_mode):
+    def put_back_face_culling_mode(self, i_back_face_culling_mode: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutBackFaceCullingMode(CATBackFaceCullingMode
                 | iBackFaceCullingMode)
                 | 
@@ -3081,30 +3235,16 @@ class VisualizationSettingAtt(SettingController):
                 |         E_FAIL
                 |             if the operation failed.
 
-        :param CATBackFaceCullingMode i_back_face_culling_mode:
+        :param int i_back_face_culling_mode:
         :return: None
+        :rtype: None
         """
-        return self.visualization_setting_att.PutBackFaceCullingMode(i_back_face_culling_mode.com_object)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'put_back_face_culling_mode'
-        # # vba_code = """
-        # # Public Function put_back_face_culling_mode(visualization_setting_att)
-        # #     Dim iBackFaceCullingMode (2)
-        # #     visualization_setting_att.PutBackFaceCullingMode iBackFaceCullingMode
-        # #     put_back_face_culling_mode = iBackFaceCullingMode
-        # # End Function
-        # # """
+        return self.visualization_setting_att.PutBackFaceCullingMode(i_back_face_culling_mode)
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def set_accurate_picking_mode_lock(self, i_locked):
+    def set_accurate_picking_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAccuratePickingModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the AccuratePickingMode setting
@@ -3113,6 +3253,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetAccuratePickingModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3131,10 +3272,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_accurate_picking_window_size_lock(self, i_locked):
+    def set_accurate_picking_window_size_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAccuratePickingWindowSizeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the AccuratePickingWindowSize setting
@@ -3143,6 +3284,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetAccuratePickingWindowSizeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3161,10 +3303,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_all_z_buffer_element_mode_lock(self, i_locked):
+    def set_all_z_buffer_element_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAllZBufferElementModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the AllZBufferElementMode setting
@@ -3173,6 +3315,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetAllZBufferElementModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3191,10 +3334,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_ambient_activation_lock(self, i_locked):
+    def set_ambient_activation_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAmbientActivationLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the AmbientActivation setting parameter.
@@ -3202,6 +3345,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetAmbientActivationLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3220,10 +3364,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_anti_aliasing_mode_lock(self, i_locked):
+    def set_anti_aliasing_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAntiAliasingModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the AntiAliasingMode setting parameter.
@@ -3231,6 +3375,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetAntiAliasingModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3249,10 +3394,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_anti_aliasing_offset_lock(self, i_locked):
+    def set_anti_aliasing_offset_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAntiAliasingOffsetLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the AntiAliasingOffset setting parameter.
@@ -3260,6 +3405,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetAntiAliasingOffsetLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3278,10 +3424,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_auxiliary_drill_viewer_lock(self, i_locked):
+    def set_auxiliary_drill_viewer_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAuxiliaryDrillViewerLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the AuxiliaryDrillViewer setting
@@ -3290,6 +3436,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetAuxiliaryDrillViewerLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3308,10 +3455,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_back_face_culling_mode_lock(self, i_locked):
+    def set_back_face_culling_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetBackFaceCullingModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the BackFaceCullingMode setting
@@ -3320,6 +3467,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetBackFaceCullingModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3338,10 +3486,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_background_rgb(self, i_r, i_g, i_b):
+    def set_background_rgb(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetBackgroundRGB(long iR,
                 | long iG,
                 | long iB)
@@ -3352,13 +3500,14 @@ class VisualizationSettingAtt(SettingController):
         :param int i_g:
         :param int i_b:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetBackgroundRGB(i_r, i_g, i_b)
 
-    def set_background_rgb_lock(self, i_locked):
+    def set_background_rgb_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetBackgroundRGBLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the BackgroundRGB setting parameter.
@@ -3366,6 +3515,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetBackgroundRGBLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3384,10 +3534,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_border_edges_mode_lock(self, i_locked):
+    def set_border_edges_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetBorderEdgesModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the BorderEdgesMode setting parameter.
@@ -3395,6 +3545,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetBorderEdgesModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3413,10 +3564,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_border_edges_rgb(self, i_r, i_g, i_b):
+    def set_border_edges_rgb(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetBorderEdgesRGB(long iR,
                 | long iG,
                 | long iB)
@@ -3427,13 +3578,14 @@ class VisualizationSettingAtt(SettingController):
         :param int i_g:
         :param int i_b:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetBorderEdgesRGB(i_r, i_g, i_b)
 
-    def set_border_edges_rgb_lock(self, i_locked):
+    def set_border_edges_rgb_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetBorderEdgesRGBLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the BorderEdgesRGB setting parameter.
@@ -3441,6 +3593,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetBorderEdgesRGBLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3459,10 +3612,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_border_edges_thickness_lock(self, i_locked):
+    def set_border_edges_thickness_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetBorderEdgesThicknessLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the BorderEdgesThickness setting
@@ -3471,6 +3624,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetBorderEdgesThicknessLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3489,10 +3643,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_bounding_box_selection_mode_lock(self, i_locked):
+    def set_bounding_box_selection_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetBoundingBoxSelectionModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the BoundingBoxSelectionMode setting
@@ -3501,6 +3655,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetBoundingBoxSelectionModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3519,10 +3674,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_color_background_mode_lock(self, i_locked):
+    def set_color_background_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetColorBackgroundModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ColorBackgroundMode setting
@@ -3531,6 +3686,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetColorBackgroundModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3549,10 +3705,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_default_diffuse_ambient_coefficient_lock(self, i_locked):
+    def set_default_diffuse_ambient_coefficient_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDefaultDiffuseAmbientCoefficientLock(boolean
                 | iLocked)
                 | 
@@ -3562,6 +3718,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetDefaultDiffuseAmbientCoefficientLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3580,10 +3737,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_default_shininess_lock(self, i_locked):
+    def set_default_shininess_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDefaultShininessLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the DefaultShininess setting parameter.
@@ -3591,6 +3748,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetDefaultShininessLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3609,10 +3767,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_default_specular_coefficient_lock(self, i_locked):
+    def set_default_specular_coefficient_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDefaultSpecularCoefficientLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the DefaultSpecularCoefficient setting
@@ -3621,6 +3779,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetDefaultSpecularCoefficientLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3639,10 +3798,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_display_current_scale_lock(self, i_locked):
+    def set_display_current_scale_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDisplayCurrentScaleLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SetStereoModeLock setting parameter.
@@ -3650,6 +3809,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetDisplayCurrentScaleLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3668,10 +3828,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_display_drill_list_lock(self, i_locked):
+    def set_display_drill_list_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDisplayDrillListLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the DisplayDrillList setting parameter.
@@ -3679,6 +3839,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetDisplayDrillListLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3697,10 +3858,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_display_immersive_drill_viewer_lock(self, i_locked):
+    def set_display_immersive_drill_viewer_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDisplayImmersiveDrillViewerLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the DisplayImmersiveDrillViewer setting
@@ -3709,6 +3870,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetDisplayImmersiveDrillViewerLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3727,10 +3889,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_dynamic_cull_lock(self, i_locked):
+    def set_dynamic_cull_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDynamicCullLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the DynamicCull setting parameter.
@@ -3738,6 +3900,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetDynamicCullLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3756,10 +3919,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_dynamic_lod_lock(self, i_locked):
+    def set_dynamic_lod_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDynamicLODLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the DynamicLOD setting parameter.
@@ -3767,6 +3930,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetDynamicLODLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3785,10 +3949,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_face_hl_drill_lock(self, i_locked):
+    def set_face_hl_drill_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetFaceHLDrillLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the FaceHLDrill setting parameter.
@@ -3796,6 +3960,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetFaceHLDrillLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3814,10 +3979,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_fly_collision_mode_lock(self, i_locked):
+    def set_fly_collision_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetFlyCollisionModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the FlyCollisionMode setting parameter.
@@ -3825,6 +3990,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetFlyCollisionModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3843,10 +4009,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_fly_collision_sphere_radius_lock(self, i_locked):
+    def set_fly_collision_sphere_radius_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetFlyCollisionSphereRadiusLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the FlyCollisionSphereRadius setting
@@ -3855,6 +4021,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetFlyCollisionSphereRadiusLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3873,10 +4040,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_fly_collision_type_lock(self, i_locked):
+    def set_fly_collision_type_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetFlyCollisionTypeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the FlyCollisionType setting parameter.
@@ -3884,6 +4051,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetFlyCollisionTypeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3902,10 +4070,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_fly_sensitivity_lock(self, i_locked):
+    def set_fly_sensitivity_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetFlySensitivityLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the FlySensitivity setting parameter.
@@ -3913,6 +4081,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetFlySensitivityLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3931,10 +4100,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_fly_speed_lock(self, i_locked):
+    def set_fly_speed_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetFlySpeedLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the FlySpeed setting parameter.
@@ -3942,6 +4111,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetFlySpeedLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3960,10 +4130,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_fly_speed_mode_lock(self, i_locked):
+    def set_fly_speed_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetFlySpeedModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the FlySpeedMode setting parameter.
@@ -3971,6 +4141,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetFlySpeedModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -3989,10 +4160,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_follow_ground_altitude_lock(self, i_locked):
+    def set_follow_ground_altitude_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetFollowGroundAltitudeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the FollowGroundAltitude setting
@@ -4001,6 +4172,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetFollowGroundAltitudeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4019,10 +4191,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_follow_ground_mode_lock(self, i_locked):
+    def set_follow_ground_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetFollowGroundModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the FollowGroundMode setting parameter.
@@ -4030,6 +4202,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetFollowGroundModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4048,10 +4221,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_full_scene_anti_aliasing_mode_lock(self, i_locked):
+    def set_full_scene_anti_aliasing_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetFullSceneAntiAliasingModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the AntiAliasingMode setting parameter.
@@ -4059,6 +4232,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetFullSceneAntiAliasingModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4077,10 +4251,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_gravity_axis_lock(self, i_locked):
+    def set_gravity_axis_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetGravityAxisLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the GravityAxis setting parameter.
@@ -4088,6 +4262,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetGravityAxisLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4106,10 +4281,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_gravity_lock(self, i_locked):
+    def set_gravity_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetGravityLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Gravity setting parameter.
@@ -4117,6 +4292,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetGravityLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4135,10 +4311,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_halo_mode_lock(self, i_locked):
+    def set_halo_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetHaloModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the HaloMode setting parameter.
@@ -4146,6 +4322,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetHaloModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4164,10 +4341,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_handles_rgb(self, i_r, i_g, i_b):
+    def set_handles_rgb(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetHandlesRGB(long iR,
                 | long iG,
                 | long iB)
@@ -4178,13 +4355,14 @@ class VisualizationSettingAtt(SettingController):
         :param int i_g:
         :param int i_b:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetHandlesRGB(i_r, i_g, i_b)
 
-    def set_handles_rgb_lock(self, i_locked):
+    def set_handles_rgb_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetHandlesRGBLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the HandlesRGB setting parameter.
@@ -4192,6 +4370,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetHandlesRGBLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4210,10 +4389,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_isopar_generation_mode_lock(self, i_locked):
+    def set_isopar_generation_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetIsoparGenerationModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the IsoparGenerationMode setting
@@ -4222,6 +4401,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetIsoparGenerationModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4240,10 +4420,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_keyboard_rotation_angle_value_lock(self, i_locked):
+    def set_keyboard_rotation_angle_value_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetKeyboardRotationAngleValueLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the KeyboardRotationAngleValue setting
@@ -4252,6 +4432,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetKeyboardRotationAngleValueLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4270,10 +4451,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_light_viewer_mode_lock(self, i_locked):
+    def set_light_viewer_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLightViewerModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the LightViewerMode setting parameter.
@@ -4281,6 +4462,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetLightViewerModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4299,10 +4481,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_lineic_cgr_mode_lock(self, i_locked):
+    def set_lineic_cgr_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLineicCgrModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the v setting parameter.
@@ -4310,6 +4492,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetLineicCgrModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4328,10 +4511,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_max_selection_move_lock(self, i_locked):
+    def set_max_selection_move_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMaxSelectionMoveLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MaxSelectionMove setting parameter.
@@ -4339,6 +4522,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetMaxSelectionMoveLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4357,10 +4541,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_minimum_fps_mode_lock(self, i_locked):
+    def set_minimum_fps_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMinimumFPSModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MinimumFPSMode setting parameter.
@@ -4368,6 +4552,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetMinimumFPSModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4386,10 +4571,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_minimum_space_fps_mode_lock(self, i_locked):
+    def set_minimum_space_fps_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMinimumSpaceFPSModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MinimumSpaceFPSMode setting
@@ -4398,6 +4583,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetMinimumSpaceFPSModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4416,10 +4602,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_mouse_double_clic_delay_lock(self, i_locked):
+    def set_mouse_double_clic_delay_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMouseDoubleClicDelayLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MouseDoubleClicDelay setting
@@ -4428,6 +4614,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetMouseDoubleClicDelayLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4446,10 +4633,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_mouse_speed_value_lock(self, i_locked):
+    def set_mouse_speed_value_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMouseSpeedValueLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the MouseSpeedValue setting parameter.
@@ -4457,6 +4644,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetMouseSpeedValueLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4475,10 +4663,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_nb_isopars_lock(self, i_locked):
+    def set_nb_isopars_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetNbIsoparsLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the NbIsopars setting parameter.
@@ -4486,6 +4674,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetNbIsoparsLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4504,10 +4693,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_no_show_background_rgb(self, i_r, i_g, i_b):
+    def set_no_show_background_rgb(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetNoShowBackgroundRGB(long iR,
                 | long iG,
                 | long iB)
@@ -4531,13 +4720,14 @@ class VisualizationSettingAtt(SettingController):
         :param int i_g:
         :param int i_b:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetNoShowBackgroundRGB(i_r, i_g, i_b)
 
-    def set_no_show_background_rgb_lock(self, i_locked):
+    def set_no_show_background_rgb_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetNoShowBackgroundRGBLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the No Show Background Color setting
@@ -4562,6 +4752,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetNoShowBackgroundRGBLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4580,10 +4771,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_no_z_buffer_selection_mode_lock(self, i_locked):
+    def set_no_z_buffer_selection_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetNoZBufferSelectionModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the NoZBufferSelectionMode setting
@@ -4592,6 +4783,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetNoZBufferSelectionModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4610,10 +4802,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_number_of_minimum_fps_lock(self, i_locked):
+    def set_number_of_minimum_fps_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetNumberOfMinimumFPSLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the NumberOfMinimumFPS setting parameter.
@@ -4621,6 +4813,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetNumberOfMinimumFPSLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4639,10 +4832,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_number_of_minimum_space_fps_lock(self, i_locked):
+    def set_number_of_minimum_space_fps_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetNumberOfMinimumSpaceFPSLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the NumberOfMinimumSpaceFPS setting
@@ -4651,6 +4844,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetNumberOfMinimumSpaceFPSLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4669,10 +4863,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_occlusion_culling_mode_lock(self, i_locked):
+    def set_occlusion_culling_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetOcclusionCullingModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the OcclusionCullingMode setting
@@ -4681,6 +4875,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetOcclusionCullingModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4699,10 +4894,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_opaque_faces_lock(self, i_locked):
+    def set_opaque_faces_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetOpaqueFacesLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SetStereoModeLock setting parameter.
@@ -4710,6 +4905,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetOpaqueFacesLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4728,10 +4924,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_other_selection_timeout_activity_lock(self, i_locked):
+    def set_other_selection_timeout_activity_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetOtherSelectionTimeoutActivityLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the OtherSelectionTimeoutActivity setting
@@ -4740,6 +4936,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetOtherSelectionTimeoutActivityLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4758,10 +4955,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_other_selection_timeout_lock(self, i_locked):
+    def set_other_selection_timeout_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetOtherSelectionTimeoutLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the OtherSelectionTimeout setting
@@ -4770,6 +4967,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetOtherSelectionTimeoutLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4788,10 +4986,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_picking_window_size_lock(self, i_locked):
+    def set_picking_window_size_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPickingWindowSizeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PickingWindowSize setting parameter.
@@ -4799,6 +4997,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetPickingWindowSizeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4817,10 +5016,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_pre_selection_mode_lock(self, i_locked):
+    def set_pre_selection_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPreSelectionModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PreSelectionMode setting parameter.
@@ -4828,6 +5027,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetPreSelectionModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4846,10 +5046,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_preselected_element_linetype_lock(self, i_locked):
+    def set_preselected_element_linetype_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPreselectedElementLinetypeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PreselectedElementLinetype setting
@@ -4858,6 +5058,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetPreselectedElementLinetypeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4876,10 +5077,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_preselected_element_rgb(self, i_r, i_g, i_b):
+    def set_preselected_element_rgb(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPreselectedElementRGB(long iR,
                 | long iG,
                 | long iB)
@@ -4890,13 +5091,14 @@ class VisualizationSettingAtt(SettingController):
         :param int i_g:
         :param int i_b:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetPreselectedElementRGB(i_r, i_g, i_b)
 
-    def set_preselected_element_rgb_lock(self, i_locked):
+    def set_preselected_element_rgb_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPreselectedElementRGBLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the PreselectedElementRGB setting
@@ -4905,6 +5107,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetPreselectedElementRGBLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4923,10 +5126,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_rotation_sphere_mode_lock(self, i_locked):
+    def set_rotation_sphere_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetRotationSphereModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the RotationSphereMode setting parameter.
@@ -4934,6 +5137,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetRotationSphereModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4952,10 +5156,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_selected_edge_rgb(self, i_r, i_g, i_b):
+    def set_selected_edge_rgb(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSelectedEdgeRGB(long iR,
                 | long iG,
                 | long iB)
@@ -4966,13 +5170,14 @@ class VisualizationSettingAtt(SettingController):
         :param int i_g:
         :param int i_b:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetSelectedEdgeRGB(i_r, i_g, i_b)
 
-    def set_selected_edge_rgb_lock(self, i_locked):
+    def set_selected_edge_rgb_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSelectedEdgeRGBLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SelectedEdgeRGB setting parameter.
@@ -4980,6 +5185,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetSelectedEdgeRGBLock(i_locked)
         # # # # Autogenerated comment: 
@@ -4998,10 +5204,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_selected_element_rgb(self, i_r, i_g, i_b):
+    def set_selected_element_rgb(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSelectedElementRGB(long iR,
                 | long iG,
                 | long iB)
@@ -5012,13 +5218,14 @@ class VisualizationSettingAtt(SettingController):
         :param int i_g:
         :param int i_b:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetSelectedElementRGB(i_r, i_g, i_b)
 
-    def set_selected_element_rgb_lock(self, i_locked):
+    def set_selected_element_rgb_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSelectedElementRGBLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the SelectedElementRGB setting parameter.
@@ -5026,6 +5233,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetSelectedElementRGBLock(i_locked)
         # # # # Autogenerated comment: 
@@ -5044,10 +5252,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_shader_mode_lock(self, i_locked):
+    def set_shader_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetShaderModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ShaderMode setting parameter.
@@ -5055,6 +5263,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetShaderModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -5073,10 +5282,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_static_cull_lock(self, i_locked):
+    def set_static_cull_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetStaticCullLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the StaticCull setting parameter.
@@ -5084,6 +5293,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetStaticCullLock(i_locked)
         # # # # Autogenerated comment: 
@@ -5102,10 +5312,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_static_lod_lock(self, i_locked):
+    def set_static_lod_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetStaticLODLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the StaticLOD setting parameter.
@@ -5113,6 +5323,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetStaticLODLock(i_locked)
         # # # # Autogenerated comment: 
@@ -5131,10 +5342,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_stereo_mode_lock(self, i_locked):
+    def set_stereo_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetStereoModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the StereoMode setting parameter.
@@ -5142,6 +5353,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetStereoModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -5160,10 +5372,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_transparency_mode_lock(self, i_locked):
+    def set_transparency_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetTransparencyModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the TransparencyMode setting parameter.
@@ -5171,6 +5383,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetTransparencyModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -5189,10 +5402,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_two_side_lighting_mode_lock(self, i_locked):
+    def set_two_side_lighting_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetTwoSideLightingModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the TwoSideLightingMode setting
@@ -5201,6 +5414,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetTwoSideLightingModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -5219,10 +5433,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_under_intensified_rgb(self, i_r, i_g, i_b):
+    def set_under_intensified_rgb(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetUnderIntensifiedRGB(long iR,
                 | long iG,
                 | long iB)
@@ -5233,13 +5447,14 @@ class VisualizationSettingAtt(SettingController):
         :param int i_g:
         :param int i_b:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetUnderIntensifiedRGB(i_r, i_g, i_b)
 
-    def set_under_intensified_rgb_lock(self, i_locked):
+    def set_under_intensified_rgb_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetUnderIntensifiedRGBLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the UnderIntensifiedRGB setting
@@ -5248,6 +5463,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetUnderIntensifiedRGBLock(i_locked)
         # # # # Autogenerated comment: 
@@ -5266,10 +5482,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_update_needed_rgb(self, i_r, i_g, i_b):
+    def set_update_needed_rgb(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetUpdateNeededRGB(long iR,
                 | long iG,
                 | long iB)
@@ -5280,13 +5496,14 @@ class VisualizationSettingAtt(SettingController):
         :param int i_g:
         :param int i_b:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetUpdateNeededRGB(i_r, i_g, i_b)
 
-    def set_update_needed_rgb_lock(self, i_locked):
+    def set_update_needed_rgb_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetUpdateNeededRGBLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the UpdateNeededRGB setting parameter.
@@ -5294,6 +5511,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetUpdateNeededRGBLock(i_locked)
         # # # # Autogenerated comment: 
@@ -5312,10 +5530,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_viewpoint_animation_mode_lock(self, i_locked):
+    def set_viewpoint_animation_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetViewpointAnimationModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ViewpointAnimationMode setting
@@ -5324,6 +5542,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetViewpointAnimationModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -5342,10 +5561,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_viz2_d_accuracy_mode_lock(self, i_locked):
+    def set_viz2_d_accuracy_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetViz2DAccuracyModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the 2DAccuracyMode setting parameter.
@@ -5353,6 +5572,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetViz2DAccuracyModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -5371,10 +5591,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_viz2_d_fixed_accuracy_lock(self, i_locked):
+    def set_viz2_d_fixed_accuracy_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetViz2DFixedAccuracyLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the 2DFixedAccuracy setting parameter.
@@ -5382,6 +5602,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetViz2DFixedAccuracyLock(i_locked)
         # # # # Autogenerated comment: 
@@ -5400,40 +5621,41 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_viz2_d_proportional_accuracy_lock(self, i_locked):
+    def set_viz2_d_proportionnal_accuracy_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub SetViz2DproportionalAccuracyLock(boolean iLocked)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub SetViz2DProportionnalAccuracyLock(boolean iLocked)
                 | 
-                |     Locks or unlocks the 2DproportionalAccuracy setting
+                |     Locks or unlocks the 2DProportionnalAccuracy setting
                 |     parameter.
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
-        return self.visualization_setting_att.SetViz2DproportionalAccuracyLock(i_locked)
+        return self.visualization_setting_att.SetViz2DProportionnalAccuracyLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_viz2_d_proportional_accuracy_lock'
+        # # vba_function_name = 'set_viz2_d_proportionnal_accuracy_lock'
         # # vba_code = """
-        # # Public Function set_viz2_d_proportional_accuracy_lock(visualization_setting_att)
+        # # Public Function set_viz2_d_proportionnal_accuracy_lock(visualization_setting_att)
         # #     Dim iLocked (2)
-        # #     visualization_setting_att.SetViz2DproportionalAccuracyLock iLocked
-        # #     set_viz2_d_proportional_accuracy_lock = iLocked
+        # #     visualization_setting_att.SetViz2DProportionnalAccuracyLock iLocked
+        # #     set_viz2_d_proportionnal_accuracy_lock = iLocked
         # # End Function
         # # """
 
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_viz3_d_accuracy_mode_lock(self, i_locked):
+    def set_viz3_d_accuracy_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetViz3DAccuracyModeLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Viz3DAccuracyMode setting parameter.
@@ -5441,6 +5663,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetViz3DAccuracyModeLock(i_locked)
         # # # # Autogenerated comment: 
@@ -5459,10 +5682,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_viz3_d_curve_accuracy_lock(self, i_locked):
+    def set_viz3_d_curve_accuracy_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetViz3DCurveAccuracyLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the 3DCurveAccuracy setting parameter.
@@ -5470,6 +5693,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetViz3DCurveAccuracyLock(i_locked)
         # # # # Autogenerated comment: 
@@ -5488,10 +5712,10 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_viz3_d_fixed_accuracy_lock(self, i_locked):
+    def set_viz3_d_fixed_accuracy_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetViz3DFixedAccuracyLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the 3DFixedAccuracy setting parameter.
@@ -5499,6 +5723,7 @@ class VisualizationSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.visualization_setting_att.SetViz3DFixedAccuracyLock(i_locked)
         # # # # Autogenerated comment: 
@@ -5517,30 +5742,31 @@ class VisualizationSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_viz3_d_proportional_accuracy_lock(self, i_locked):
+    def set_viz3_d_proportionnal_accuracy_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub SetViz3DproportionalAccuracyLock(boolean iLocked)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub SetViz3DProportionnalAccuracyLock(boolean iLocked)
                 | 
-                |     Locks or unlocks the Viz3DproportionalAccuracy setting
+                |     Locks or unlocks the Viz3DProportionnalAccuracy setting
                 |     parameter.
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
-        return self.visualization_setting_att.SetViz3DproportionalAccuracyLock(i_locked)
+        return self.visualization_setting_att.SetViz3DProportionnalAccuracyLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_viz3_d_proportional_accuracy_lock'
+        # # vba_function_name = 'set_viz3_d_proportionnal_accuracy_lock'
         # # vba_code = """
-        # # Public Function set_viz3_d_proportional_accuracy_lock(visualization_setting_att)
+        # # Public Function set_viz3_d_proportionnal_accuracy_lock(visualization_setting_att)
         # #     Dim iLocked (2)
-        # #     visualization_setting_att.SetViz3DproportionalAccuracyLock iLocked
-        # #     set_viz3_d_proportional_accuracy_lock = iLocked
+        # #     visualization_setting_att.SetViz3DProportionnalAccuracyLock iLocked
+        # #     set_viz3_d_proportionnal_accuracy_lock = iLocked
         # # End Function
         # # """
 
@@ -5548,4 +5774,4 @@ class VisualizationSettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'VisualizationSettingAtt(name="{ self.name }")'
+        return f'VisualizationSettingAtt(name="{self.name}")'

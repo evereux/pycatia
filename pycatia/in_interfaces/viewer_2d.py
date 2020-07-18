@@ -33,13 +33,13 @@ class Viewer2D(Viewer):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.viewer2_d = com_object
+        self.viewer_2d = com_object
 
     @property
-    def viewpoint2_d(self):
+    def viewpoint_2d(self) -> Viewpoint2D:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Viewpoint2D() As Viewpoint2D
                 | 
                 |     Returns or sets the 2D viewpoint of a 2D viewer.
@@ -52,17 +52,18 @@ class Viewer2D(Viewer):
                 |          Set Nice2DViewpoint = My2DViewer.Viewpoint2D
 
         :return: Viewpoint2D
+        :rtype: Viewpoint2D
         """
 
-        return Viewpoint2D(self.viewer2_d.Viewpoint2D)
+        return Viewpoint2D(self.viewer_2d.Viewpoint2D)
 
-    @viewpoint2_d.setter
-    def viewpoint2_d(self, value):
+    @viewpoint_2d.setter
+    def viewpoint_2d(self, value: Viewpoint2D):
         """
         :param Viewpoint2D value:
         """
 
-        self.viewer2_d.Viewpoint2D = value
+        self.viewer_2d.Viewpoint2D = value
 
     def __repr__(self):
         return f'Viewer2D(name="{self.name}")'
