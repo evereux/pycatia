@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapeExtract(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -44,10 +44,10 @@ class HybridShapeExtract(HybridShape):
         self.hybrid_shape_extract = com_object
 
     @property
-    def angular_threshold(self):
+    def angular_threshold(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AngularThreshold() As double
                 | 
                 |     Returns or sets the AngularThreshold.
@@ -59,12 +59,13 @@ class HybridShapeExtract(HybridShape):
                 |      AngularThH = hybShpExtract.AngularThreshold
 
         :return: float
+        :rtype: float
         """
 
         return self.hybrid_shape_extract.AngularThreshold
 
     @angular_threshold.setter
-    def angular_threshold(self, value):
+    def angular_threshold(self, value: float):
         """
         :param float value:
         """
@@ -72,10 +73,10 @@ class HybridShapeExtract(HybridShape):
         self.hybrid_shape_extract.AngularThreshold = value
 
     @property
-    def angular_threshold_activity(self):
+    def angular_threshold_activity(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AngularThresholdActivity() As boolean
                 | 
                 |     Returns or sets the AngularThresholdActivity.
@@ -87,12 +88,13 @@ class HybridShapeExtract(HybridShape):
                 |      AngularActivity = hybShpExtract.AngularThresholdActivity
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_extract.AngularThresholdActivity
 
     @angular_threshold_activity.setter
-    def angular_threshold_activity(self, value):
+    def angular_threshold_activity(self, value: bool):
         """
         :param bool value:
         """
@@ -100,21 +102,22 @@ class HybridShapeExtract(HybridShape):
         self.hybrid_shape_extract.AngularThresholdActivity = value
 
     @property
-    def complementary_extract(self):
+    def complementary_extract(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ComplementaryExtract() As boolean
                 | 
                 |     Returns or sets the ComplementaryExtract checked/unchecked for the extract.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_extract.ComplementaryExtract
 
     @complementary_extract.setter
-    def complementary_extract(self, value):
+    def complementary_extract(self, value: bool):
         """
         :param bool value:
         """
@@ -122,10 +125,10 @@ class HybridShapeExtract(HybridShape):
         self.hybrid_shape_extract.ComplementaryExtract = value
 
     @property
-    def curvature_threshold(self):
+    def curvature_threshold(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CurvatureThreshold() As double
                 | 
                 |     Returns or sets the CurvatureThreshold.
@@ -137,12 +140,13 @@ class HybridShapeExtract(HybridShape):
                 |      CurvatureThH = hybShpExtract.CurvatureThreshold
 
         :return: float
+        :rtype: float
         """
 
         return self.hybrid_shape_extract.CurvatureThreshold
 
     @curvature_threshold.setter
-    def curvature_threshold(self, value):
+    def curvature_threshold(self, value: float):
         """
         :param float value:
         """
@@ -150,10 +154,10 @@ class HybridShapeExtract(HybridShape):
         self.hybrid_shape_extract.CurvatureThreshold = value
 
     @property
-    def curvature_threshold_activity(self):
+    def curvature_threshold_activity(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CurvatureThresholdActivity() As boolean
                 | 
                 |     Returns or sets the CurvatureThresholdActivity.
@@ -165,12 +169,13 @@ class HybridShapeExtract(HybridShape):
                 |      CurvatureActivity = hybShpExtract.CurvatureThresholdActivity
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_extract.CurvatureThresholdActivity
 
     @curvature_threshold_activity.setter
-    def curvature_threshold_activity(self, value):
+    def curvature_threshold_activity(self, value: bool):
         """
         :param bool value:
         """
@@ -178,10 +183,10 @@ class HybridShapeExtract(HybridShape):
         self.hybrid_shape_extract.CurvatureThresholdActivity = value
 
     @property
-    def distance_threshold(self):
+    def distance_threshold(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DistanceThreshold() As double
                 | 
                 |     Returns or sets the DistanceThreshold.
@@ -193,12 +198,13 @@ class HybridShapeExtract(HybridShape):
                 |      DistanceThH = hybShpExtract.DistanceThreshold
 
         :return: float
+        :rtype: float
         """
 
         return self.hybrid_shape_extract.DistanceThreshold
 
     @distance_threshold.setter
-    def distance_threshold(self, value):
+    def distance_threshold(self, value: float):
         """
         :param float value:
         """
@@ -206,10 +212,10 @@ class HybridShapeExtract(HybridShape):
         self.hybrid_shape_extract.DistanceThreshold = value
 
     @property
-    def distance_threshold_activity(self):
+    def distance_threshold_activity(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DistanceThresholdActivity() As boolean
                 | 
                 |     Returns or sets the DistanceThresholdActivity.
@@ -221,12 +227,13 @@ class HybridShapeExtract(HybridShape):
                 |      DistanceActivity = hybShpExtract.DistanceThresholdActivity
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_extract.DistanceThresholdActivity
 
     @distance_threshold_activity.setter
-    def distance_threshold_activity(self, value):
+    def distance_threshold_activity(self, value: bool):
         """
         :param bool value:
         """
@@ -234,10 +241,10 @@ class HybridShapeExtract(HybridShape):
         self.hybrid_shape_extract.DistanceThresholdActivity = value
 
     @property
-    def elem(self):
+    def elem(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Elem() As Reference
                 | 
                 |     Returns or sets the sub element used as init for the
@@ -247,12 +254,13 @@ class HybridShapeExtract(HybridShape):
                 |         HybridShapeFactory
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_extract.Elem)
 
     @elem.setter
-    def elem(self, value):
+    def elem(self, value: Reference):
         """
         :param Reference value:
         """
@@ -260,21 +268,22 @@ class HybridShapeExtract(HybridShape):
         self.hybrid_shape_extract.Elem = value
 
     @property
-    def is_federated(self):
+    def is_federated(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property IsFederated() As boolean
                 | 
                 |     Returns or sets the IsFederated flag checked/unchecked for the extract.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_extract.IsFederated
 
     @is_federated.setter
-    def is_federated(self, value):
+    def is_federated(self, value: bool):
         """
         :param bool value:
         """
@@ -282,10 +291,10 @@ class HybridShapeExtract(HybridShape):
         self.hybrid_shape_extract.IsFederated = value
 
     @property
-    def propagation_type(self):
+    def propagation_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PropagationType() As long
                 | 
                 |     Returns or sets the type of propagation for the extract.
@@ -297,12 +306,13 @@ class HybridShapeExtract(HybridShape):
                 |         3 for extraction without propagation
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_extract.PropagationType
 
     @propagation_type.setter
-    def propagation_type(self, value):
+    def propagation_type(self, value: int):
         """
         :param int value:
         """
@@ -310,21 +320,22 @@ class HybridShapeExtract(HybridShape):
         self.hybrid_shape_extract.PropagationType = value
 
     @property
-    def support(self):
+    def support(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets the support for the extract.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_extract.Support)
 
     @support.setter
-    def support(self, value):
+    def support(self, value: Reference):
         """
         :param Reference value:
         """

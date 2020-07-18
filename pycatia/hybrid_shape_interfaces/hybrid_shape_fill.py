@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -16,7 +16,7 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeFill(HybridShape):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -35,10 +35,10 @@ class HybridShapeFill(HybridShape):
         self.hybrid_shape_fill = com_object
 
     @property
-    def advanced_tolerant_mode(self):
+    def advanced_tolerant_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AdvancedTolerantMode() As long
                 | 
                 |     Returns or sets the tolerant mode taken into account during fill
@@ -65,12 +65,13 @@ class HybridShapeFill(HybridShape):
                 |          Set oMode = Fill.AdvancedTolerantMode
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_fill.AdvancedTolerantMode
 
     @advanced_tolerant_mode.setter
-    def advanced_tolerant_mode(self, value):
+    def advanced_tolerant_mode(self, value: int):
         """
         :param int value:
         """
@@ -78,10 +79,10 @@ class HybridShapeFill(HybridShape):
         self.hybrid_shape_fill.AdvancedTolerantMode = value
 
     @property
-    def constraint(self):
+    def constraint(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Constraint() As Reference
                 | 
                 |     Returns or sets the passing point for the Fill.
@@ -94,12 +95,13 @@ class HybridShapeFill(HybridShape):
                 |          Set Element = Fill.Constraint
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_fill.Constraint)
 
     @constraint.setter
-    def constraint(self, value):
+    def constraint(self, value: Reference):
         """
         :param Reference value:
         """
@@ -107,10 +109,10 @@ class HybridShapeFill(HybridShape):
         self.hybrid_shape_fill.Constraint = value
 
     @property
-    def continuity(self):
+    def continuity(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Continuity() As long
                 | 
                 |     Returns or sets the continuity between the support and
@@ -132,12 +134,13 @@ class HybridShapeFill(HybridShape):
                 |          Set oContinuity = Fill.Continuity
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_fill.Continuity
 
     @continuity.setter
-    def continuity(self, value):
+    def continuity(self, value: int):
         """
         :param int value:
         """
@@ -145,10 +148,10 @@ class HybridShapeFill(HybridShape):
         self.hybrid_shape_fill.Continuity = value
 
     @property
-    def detection(self):
+    def detection(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Detection() As short
                 | 
                 |     Returns or sets the Canonical portion detection option.
@@ -159,24 +162,25 @@ class HybridShapeFill(HybridShape):
                 |     2
                 |         Detection of canonical surfaces
 
-        :return: enum
+        :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_fill.Detection
 
     @detection.setter
-    def detection(self, value):
+    def detection(self, value: int):
         """
-        :param enum value:
+        :param int value:
         """
 
         self.hybrid_shape_fill.Detection = value
 
     @property
-    def maximum_deviation_value(self):
+    def maximum_deviation_value(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MaximumDeviationValue() As double
                 | 
                 |     Sets or Gets the maximum deviation allowed for smoothing operation in fill
@@ -189,12 +193,13 @@ class HybridShapeFill(HybridShape):
                 |      Set DeviationValue = Fill.MaximumDeviationValue
 
         :return: float
+        :rtype: float
         """
 
         return self.hybrid_shape_fill.MaximumDeviationValue
 
     @maximum_deviation_value.setter
-    def maximum_deviation_value(self, value):
+    def maximum_deviation_value(self, value: float):
         """
         :param float value:
         """
@@ -202,10 +207,10 @@ class HybridShapeFill(HybridShape):
         self.hybrid_shape_fill.MaximumDeviationValue = value
 
     @property
-    def plane_only_mode(self):
+    def plane_only_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PlaneOnlyMode() As boolean
                 | 
                 |     Returns or sets whether Planar Boundaries only should be considered during
@@ -220,12 +225,13 @@ class HybridShapeFill(HybridShape):
                 |         operation
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_fill.PlaneOnlyMode
 
     @plane_only_mode.setter
-    def plane_only_mode(self, value):
+    def plane_only_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -233,16 +239,16 @@ class HybridShapeFill(HybridShape):
         self.hybrid_shape_fill.PlaneOnlyMode = value
 
     @property
-    def tolerant_mode(self):
+    def tolerant_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TolerantMode() As boolean
                 | 
                 |     Deprecated:
                 |         V5R26 Use HybridShapeFill.AdvancedTolerantMode Returns or sets the Tolerant mode option.
-                |         Role: To activate or not the tolerant mode option TRUE : Tolerant mode is active. Uses
-                |         deviation parameter to do tolerant fill. FALSE : Tolerant mode is not active.
+                |         Role: To activate or not the tolerant mode option TRUE : Tolerant mode is active.
+                |         Uses deviation parameter to do tolerant fill. FALSE : Tolerant mode is not active.
                 | 
                 |         Example: This example retrieves in tolMode the tolerant mode for the
                 |         Fill hybrid shape feature.
@@ -251,22 +257,23 @@ class HybridShapeFill(HybridShape):
                 |          Set tolMode = Fill.TolerantMode
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_fill.TolerantMode
 
     @tolerant_mode.setter
-    def tolerant_mode(self, value):
+    def tolerant_mode(self, value: bool):
         """
         :param bool value:
         """
 
         self.hybrid_shape_fill.TolerantMode = value
 
-    def add_bound(self, i_boundary):
+    def add_bound(self, i_boundary: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddBound(Reference iBoundary)
                 | 
                 |     Adds an boundary to the hybrid shape fill feature object.
@@ -285,6 +292,7 @@ class HybridShapeFill(HybridShape):
 
         :param Reference i_boundary:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_fill.AddBound(i_boundary.com_object)
         # # # # Autogenerated comment: 
@@ -303,10 +311,10 @@ class HybridShapeFill(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def add_support_at_bound(self, i_boundary, i_support):
+    def add_support_at_bound(self, i_boundary: Reference, i_support: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddSupportAtBound(Reference iBoundary,
                 | Reference iSupport)
                 | 
@@ -329,6 +337,7 @@ class HybridShapeFill(HybridShape):
         :param Reference i_boundary:
         :param Reference i_support:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_fill.AddSupportAtBound(i_boundary.com_object, i_support.com_object)
         # # # # Autogenerated comment: 
@@ -347,10 +356,10 @@ class HybridShapeFill(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def append_constraint(self, i_constraint):
+    def append_constraint(self, i_constraint: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AppendConstraint(Reference iConstraint)
                 | 
                 |     Appends an constraint to the hybrid shape fill feature object. ========
@@ -369,6 +378,7 @@ class HybridShapeFill(HybridShape):
 
         :param Reference i_constraint:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_fill.AppendConstraint(i_constraint.com_object)
         # # # # Autogenerated comment: 
@@ -387,10 +397,10 @@ class HybridShapeFill(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_bound_at_position(self, i_pos):
+    def get_bound_at_position(self, i_pos: int) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetBoundAtPosition(long iPos) As Reference
                 | 
                 |     Retrieves the boundary at specified position in the hybrid shape fill
@@ -410,13 +420,14 @@ class HybridShapeFill(HybridShape):
 
         :param int i_pos:
         :return: Reference
+        :rtype: Reference
         """
         return Reference(self.hybrid_shape_fill.GetBoundAtPosition(i_pos))
 
-    def get_bound_position(self, i_boundary):
+    def get_bound_position(self, i_boundary: Reference) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetBoundPosition(Reference iBoundary) As long
                 | 
                 |     Retrieves the position of a boundary used by the hybrid shape fill feature
@@ -436,13 +447,14 @@ class HybridShapeFill(HybridShape):
 
         :param Reference i_boundary:
         :return: int
+        :rtype: int
         """
         return self.hybrid_shape_fill.GetBoundPosition(i_boundary.com_object)
 
-    def get_bound_size(self):
+    def get_bound_size(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetBoundSize() As long
                 | 
                 |     Returns the number of boundaries in the Fill object.
@@ -460,13 +472,14 @@ class HybridShapeFill(HybridShape):
                 |                  oSize = Fill.GetBoundSize
 
         :return: int
+        :rtype: int
         """
         return self.hybrid_shape_fill.GetBoundSize()
 
-    def get_boundary_continuity(self, i_pos):
+    def get_boundary_continuity(self, i_pos: int) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetBoundaryContinuity(long iPos) As long
                 | 
                 |     Returns the continuity mode for a boundary at specified position in the
@@ -497,13 +510,14 @@ class HybridShapeFill(HybridShape):
 
         :param int i_pos:
         :return: int
+        :rtype: int
         """
         return self.hybrid_shape_fill.GetBoundaryContinuity(i_pos)
 
-    def get_constraint_at_position(self, i_pos):
+    def get_constraint_at_position(self, i_pos: int) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetConstraintAtPosition(long iPos) As Reference
                 | 
                 |     Retrieves the constraint at specified position in the hybrid shape fill
@@ -523,13 +537,14 @@ class HybridShapeFill(HybridShape):
 
         :param int i_pos:
         :return: Reference
+        :rtype: Reference
         """
         return Reference(self.hybrid_shape_fill.GetConstraintAtPosition(i_pos))
 
-    def get_constraints_size(self):
+    def get_constraints_size(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetConstraintsSize() As long
                 | 
                 |     Returns the number of constraints in the Fill object.
@@ -547,13 +562,14 @@ class HybridShapeFill(HybridShape):
                 |                  oSize = Fill.GetConstraintsSize
 
         :return: int
+        :rtype: int
         """
         return self.hybrid_shape_fill.GetConstraintsSize()
 
-    def get_support_at_position(self, i_pos):
+    def get_support_at_position(self, i_pos: int) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetSupportAtPosition(long iPos) As Reference
                 | 
                 |     Retrieves the support at specified position in the hybrid shape fill
@@ -573,13 +589,14 @@ class HybridShapeFill(HybridShape):
 
         :param int i_pos:
         :return: Reference
+        :rtype: Reference
         """
         return Reference(self.hybrid_shape_fill.GetSupportAtPosition(i_pos))
 
-    def insert_bound_after_position(self, i_boundary, i_pos):
+    def insert_bound_after_position(self, i_boundary: Reference, i_pos: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InsertBoundAfterPosition(Reference iBoundary,
                 | long iPos)
                 | 
@@ -602,6 +619,7 @@ class HybridShapeFill(HybridShape):
         :param Reference i_boundary:
         :param int i_pos:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_fill.InsertBoundAfterPosition(i_boundary.com_object, i_pos)
         # # # # Autogenerated comment: 
@@ -620,10 +638,10 @@ class HybridShapeFill(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def remove_all_bound(self):
+    def remove_all_bound(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveAllBound()
                 | 
                 |     Removes all boundaries of the hybrid shape fill feature object.
@@ -636,25 +654,27 @@ class HybridShapeFill(HybridShape):
                 |      Fill.RemoveAllBound
 
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_fill.RemoveAllBound()
 
-    def remove_all_constraints(self):
+    def remove_all_constraints(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveAllConstraints()
                 | 
                 |     Removes all constraints.
 
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_fill.RemoveAllConstraints()
 
-    def remove_bound_at_position(self, i_pos):
+    def remove_bound_at_position(self, i_pos: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveBoundAtPosition(long iPos)
                 | 
                 |     Removes boundary at specified position in hybrid shape fill feature
@@ -673,13 +693,14 @@ class HybridShapeFill(HybridShape):
 
         :param int i_pos:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_fill.RemoveBoundAtPosition(i_pos)
 
-    def remove_constraint(self, i_pos):
+    def remove_constraint(self, i_pos: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveConstraint(long iPos)
                 | 
                 |     Removes constraint at specified position in hybrid shape fill feature
@@ -698,13 +719,14 @@ class HybridShapeFill(HybridShape):
 
         :param int i_pos:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_fill.RemoveConstraint(i_pos)
 
-    def remove_support_at_position(self, i_pos):
+    def remove_support_at_position(self, i_pos: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveSupportAtPosition(long iPos)
                 | 
                 |     Removes support at specified position in hybrid shape fill feature
@@ -723,13 +745,14 @@ class HybridShapeFill(HybridShape):
 
         :param int i_pos:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_fill.RemoveSupportAtPosition(i_pos)
 
-    def replace_bound_at_position(self, i_boundary, i_pos):
+    def replace_bound_at_position(self, i_boundary: Reference, i_pos: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ReplaceBoundAtPosition(Reference iBoundary,
                 | long iPos)
                 | 
@@ -751,6 +774,7 @@ class HybridShapeFill(HybridShape):
         :param Reference i_boundary:
         :param int i_pos:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_fill.ReplaceBoundAtPosition(i_boundary.com_object, i_pos)
         # # # # Autogenerated comment: 
@@ -769,10 +793,10 @@ class HybridShapeFill(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def replace_constraint(self, i_pos, i_constraint):
+    def replace_constraint(self, i_pos: int, i_constraint: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ReplaceConstraint(long iPos,
                 | Reference iConstraint)
                 | 
@@ -795,6 +819,7 @@ class HybridShapeFill(HybridShape):
         :param int i_pos:
         :param Reference i_constraint:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_fill.ReplaceConstraint(i_pos, i_constraint.com_object)
         # # # # Autogenerated comment: 
@@ -813,10 +838,10 @@ class HybridShapeFill(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def replace_support_at_position(self, i_support, i_pos):
+    def replace_support_at_position(self, i_support: Reference, i_pos: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ReplaceSupportAtPosition(Reference iSupport,
                 | long iPos)
                 | 
@@ -838,6 +863,7 @@ class HybridShapeFill(HybridShape):
         :param Reference i_support:
         :param int i_pos:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_fill.ReplaceSupportAtPosition(i_support.com_object, i_pos)
         # # # # Autogenerated comment: 
@@ -856,10 +882,10 @@ class HybridShapeFill(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_boundary_continuity(self, i_continuity, i_pos):
+    def set_boundary_continuity(self, i_continuity: int, i_pos: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetBoundaryContinuity(long iContinuity,
                 | long iPos)
                 | 
@@ -891,6 +917,7 @@ class HybridShapeFill(HybridShape):
         :param int i_continuity:
         :param int i_pos:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_fill.SetBoundaryContinuity(i_continuity, i_pos)
 

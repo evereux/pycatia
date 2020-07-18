@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -16,7 +16,7 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeInverse(HybridShape):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -35,10 +35,10 @@ class HybridShapeInverse(HybridShape):
         self.hybrid_shape_inverse = com_object
 
     @property
-    def element(self):
+    def element(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Element() As Reference
                 | 
                 |     Role: To get the element inverted.
@@ -58,12 +58,13 @@ class HybridShapeInverse(HybridShape):
                 |         HybridShapeFactory
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_inverse.Element)
 
     @element.setter
-    def element(self, value):
+    def element(self, value: Reference):
         """
         :param Reference value:
         """
@@ -71,22 +72,24 @@ class HybridShapeInverse(HybridShape):
         self.hybrid_shape_inverse.Element = value
 
     @property
-    def orientation(self):
+    def orientation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation() As long
                 | 
-                |     Gets or sets the element's orientation. Orientation = 1 : the element is not inverted. = -1 : 
-                |     the element is inverted, = 2 : the element can not be inverted. Orientation can not be set to 2.
+                |     Gets or sets the element's orientation.
+                |     Orientation = 1 : the element is not inverted. = -1 : the element is inverted, =
+               |      2 : the element can not be inverted. Orientation can not be set to 2.
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_inverse.Orientation
-    
+
     @orientation.setter
-    def orientation(self, value):
+    def orientation(self, value: int):
         """
         :param int value:
         """

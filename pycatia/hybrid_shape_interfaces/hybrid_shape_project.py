@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeProject(HybridShape):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -51,10 +51,10 @@ class HybridShapeProject(HybridShape):
         self.hybrid_shape_project = com_object
 
     @property
-    def direction(self):
+    def direction(self) -> HybridShapeDirection:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Direction() As HybridShapeDirection
                 | 
                 |     Returns or sets the projection direction.
@@ -66,12 +66,13 @@ class HybridShapeProject(HybridShape):
                 |      Set Dir = Project.Direction
 
         :return: HybridShapeDirection
+        :rtype: HybridShapeDirection
         """
 
         return HybridShapeDirection(self.hybrid_shape_project.Direction)
 
     @direction.setter
-    def direction(self, value):
+    def direction(self, value: HybridShapeDirection):
         """
         :param HybridShapeDirection value:
         """
@@ -79,10 +80,10 @@ class HybridShapeProject(HybridShape):
         self.hybrid_shape_project.Direction = value
 
     @property
-    def elem_to_project(self):
+    def elem_to_project(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ElemToProject() As Reference
                 | 
                 |     Returns or sets the element to project.This element can be a point or a
@@ -97,12 +98,13 @@ class HybridShapeProject(HybridShape):
                 |      Set Elem = Project.ElemToProject
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_project.ElemToProject)
 
     @elem_to_project.setter
-    def elem_to_project(self, value):
+    def elem_to_project(self, value: Reference):
         """
         :param Reference value:
         """
@@ -110,10 +112,10 @@ class HybridShapeProject(HybridShape):
         self.hybrid_shape_project.ElemToProject = value
 
     @property
-    def extrapolation_mode(self):
+    def extrapolation_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExtrapolationMode() As long
                 | 
                 |     Returns or sets the extrapolation mode. The extrapolation mode is overriden
@@ -128,12 +130,13 @@ class HybridShapeProject(HybridShape):
                 |      Set ExtrapolMode = Project.ExtrapolationMode
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_project.ExtrapolationMode
 
     @extrapolation_mode.setter
-    def extrapolation_mode(self, value):
+    def extrapolation_mode(self, value: int):
         """
         :param int value:
         """
@@ -141,10 +144,10 @@ class HybridShapeProject(HybridShape):
         self.hybrid_shape_project.ExtrapolationMode = value
 
     @property
-    def maximum_deviation_value(self):
+    def maximum_deviation_value(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MaximumDeviationValue() As double
                 | 
                 |     Sets or Gets the maximum deviation allowed for smoothing
@@ -160,12 +163,13 @@ class HybridShapeProject(HybridShape):
                 |      Set DeviationValue = Project.MaximumDeviationValue
 
         :return: float
+        :rtype: float
         """
 
         return self.hybrid_shape_project.MaximumDeviationValue
 
     @maximum_deviation_value.setter
-    def maximum_deviation_value(self, value):
+    def maximum_deviation_value(self, value: float):
         """
         :param float value:
         """
@@ -173,10 +177,10 @@ class HybridShapeProject(HybridShape):
         self.hybrid_shape_project.MaximumDeviationValue = value
 
     @property
-    def normal(self):
+    def normal(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Normal() As boolean
                 | 
                 |     Returns or sets the direction option. Role: To define the type of
@@ -191,12 +195,13 @@ class HybridShapeProject(HybridShape):
                 |      Set NormalOption = Project.Normal
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_project.Normal
 
     @normal.setter
-    def normal(self, value):
+    def normal(self, value: bool):
         """
         :param bool value:
         """
@@ -204,10 +209,10 @@ class HybridShapeProject(HybridShape):
         self.hybrid_shape_project.Normal = value
 
     @property
-    def smoothing_type(self):
+    def smoothing_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SmoothingType() As long
                 | 
                 |     Sets or Gets Smoothing Type.
@@ -223,12 +228,13 @@ class HybridShapeProject(HybridShape):
                 |      Set SType = Project.SmoothingType
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_project.SmoothingType
 
     @smoothing_type.setter
-    def smoothing_type(self, value):
+    def smoothing_type(self, value: int):
         """
         :param int value:
         """
@@ -236,10 +242,10 @@ class HybridShapeProject(HybridShape):
         self.hybrid_shape_project.SmoothingType = value
 
     @property
-    def solution_type(self):
+    def solution_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SolutionType() As long
                 | 
                 |     Returns or sets the solution type. When the solution type being set is 'All
@@ -254,12 +260,13 @@ class HybridShapeProject(HybridShape):
                 |      Set SolType = Project.SolutionType
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_project.SolutionType
 
     @solution_type.setter
-    def solution_type(self, value):
+    def solution_type(self, value: int):
         """
         :param int value:
         """
@@ -267,10 +274,10 @@ class HybridShapeProject(HybridShape):
         self.hybrid_shape_project.SolutionType = value
 
     @property
-    def support(self):
+    def support(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets the support element.This element can be a plane or a
@@ -285,12 +292,13 @@ class HybridShapeProject(HybridShape):
                 |      Set SupportElem = Project.Support
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_project.Support)
 
     @support.setter
-    def support(self, value):
+    def support(self, value: Reference):
         """
         :param Reference value:
         """
@@ -298,15 +306,16 @@ class HybridShapeProject(HybridShape):
         self.hybrid_shape_project.Support = value
 
     @property
-    def p3_d_smoothing(self):
+    def p_3d_smoothing(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property p3DSmoothing() As boolean
                 | 
-                |     Returns or sets the '3D Smoothing' option. Role: To activate or not the 3D smoothing option
-                |     Available only for tangent or curvature smoothing type TRUE : Smoothing performed without
-                |     specifying support FALSE : Smoothing performed with specific support
+                |     Returns or sets the '3D Smoothing' option.
+                |     Role: To activate or not the 3D smoothing option Available only for tangent or curvature
+                |     smoothing type TRUE : Smoothing performed without specifying support FALSE : Smoothing performed
+                |     with specific support
                 | 
                 |     Example: This example retrieves in 3DSmoothingOption the support for the
                 |     Project hybrid shape feature.
@@ -315,12 +324,13 @@ class HybridShapeProject(HybridShape):
                 |      Set 3DSmoothingOption = Project.p3DSmoothing
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_project.p3DSmoothing
 
-    @p3_d_smoothing.setter
-    def p3_d_smoothing(self, value):
+    @p_3d_smoothing.setter
+    def p_3d_smoothing(self, value: bool):
         """
         :param bool value:
         """

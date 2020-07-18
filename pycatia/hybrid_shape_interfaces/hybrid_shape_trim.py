@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -16,7 +16,7 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeTrim(HybridShape):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -48,29 +48,30 @@ class HybridShapeTrim(HybridShape):
         self.hybrid_shape_trim = com_object
 
     @property
-    def automatic_extrapolation_mode(self):
+    def automatic_extrapolation_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AutomaticExtrapolationMode() As boolean
                 | 
-                |     Gets or sets the automatic extrapolation mode status.
-                |     AutomaticExtrapolationMode
-                |     = TRUE : Automatic extrapolation mode is on.
-                |     = FALSE : Automatic extrapolation mode is off.
-                |     This example retrieves in AutoExtrapolMode the automatic extrapolation mode status for the Trim
-                |     hybrid shape feature.
+                |     Gets or sets the automatic extrapolation mode status. AutomaticExtrapolationMode
+                |     TRUE : Automatic extrapolation mode is on.
+                |     FALSE : Automatic extrapolation mode is off.
+                |
+                |     This example retrieves in AutoExtrapolMode the automatic extrapolation mode status for the
+                |     Trim hybrid shape feature.
                 | 
                 |      Dim AutoExtrapolMode As boolean
                 |      AutoExtrapolMode = Trim.AutomaticExtrapolationMode
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_trim.AutomaticExtrapolationMode
 
     @automatic_extrapolation_mode.setter
-    def automatic_extrapolation_mode(self, value):
+    def automatic_extrapolation_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -78,27 +79,30 @@ class HybridShapeTrim(HybridShape):
         self.hybrid_shape_trim.AutomaticExtrapolationMode = value
 
     @property
-    def connex(self):
+    def connex(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Connex() As boolean
                 | 
                 |     Gets or sets connected mode.
-                |     Connex = TRUE : the check of connexity is enable.
-                |     Connex = FALSE : the check of connexity is disable. This example retrieves in Connex the
-                |     connected mode for the Trim hybrid shape feature.
+                |     Connex
+                |     TRUE : the check of connexity is enable. Connex
+                |     FALSE : the check of connexity is disable.
+                |
+                |     This example retrieves in Connex the connected mode for the Trim hybrid shape feature.
                 | 
                 |      Dim Connex As boolean
                 |      Connex = Trim.Connex
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_trim.Connex
 
     @connex.setter
-    def connex(self, value):
+    def connex(self, value: bool):
         """
         :param bool value:
         """
@@ -106,10 +110,10 @@ class HybridShapeTrim(HybridShape):
         self.hybrid_shape_trim.Connex = value
 
     @property
-    def first_elem(self):
+    def first_elem(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstElem() As Reference
                 | 
                 |     Deprecated:
@@ -126,12 +130,13 @@ class HybridShapeTrim(HybridShape):
                 |          Set Surface1 = hybTrim.FirstElem
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_trim.FirstElem)
 
     @first_elem.setter
-    def first_elem(self, value):
+    def first_elem(self, value: Reference):
         """
         :param Reference value:
         """
@@ -139,10 +144,10 @@ class HybridShapeTrim(HybridShape):
         self.hybrid_shape_trim.FirstElem = value
 
     @property
-    def first_orientation(self):
+    def first_orientation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstOrientation() As long
                 | 
                 |     Deprecated:
@@ -178,12 +183,13 @@ class HybridShapeTrim(HybridShape):
                 |          Set firstOrient = hybTrim.FirstOrientation
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_trim.FirstOrientation
 
     @first_orientation.setter
-    def first_orientation(self, value):
+    def first_orientation(self, value: int):
         """
         :param int value:
         """
@@ -191,15 +197,17 @@ class HybridShapeTrim(HybridShape):
         self.hybrid_shape_trim.FirstOrientation = value
 
     @property
-    def intersection_computation(self):
+    def intersection_computation(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property IntersectionComputation() As boolean
                 | 
                 |     Gets or sets Intersection computation mode.
-                |         IntersectionComputation = TRUE :
-                |         Intersection is computed. = FALSE : Intersection is not computed.
+                |    IntersectionComputation
+                |    TRUE : Intersection is computed.
+                |    FALSE : Intersection is not computed.
+                |
                 |     This example retrieves in Intersection the Intersection computation mode for the Trim hybrid
                 |     shape feature.
                 | 
@@ -207,12 +215,13 @@ class HybridShapeTrim(HybridShape):
                 |      Intersection = Trim.IntersectionComputation
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_trim.IntersectionComputation
 
     @intersection_computation.setter
-    def intersection_computation(self, value):
+    def intersection_computation(self, value: bool):
         """
         :param bool value:
         """
@@ -220,15 +229,16 @@ class HybridShapeTrim(HybridShape):
         self.hybrid_shape_trim.IntersectionComputation = value
 
     @property
-    def keep_all_pieces(self):
+    def keep_all_pieces(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property KeepAllPieces() As boolean
                 | 
-                |     Gets or Sets keep all pieces mode. Used for the trim pieces of shells only
-                |         KeepAllPieces=TRUE : all the pieces are kept during update,
-                |         KeepAllPieces=FALSE : only chosen pieces are kept during update (default).
+                |     Gets or Sets keep all pieces mode. Used for the trim pieces of shells only KeepAllPieces=
+                |     TRUE : all the pieces are kept during update, KeepAllPieces=
+                |     FALSE : only chosen pieces are kept during update (default).
+                |
                 |     This example retrieves in KeepAllPieces the Keep All Pieces mode for the Trim hybrid shape
                 |     feature.
                 | 
@@ -236,12 +246,13 @@ class HybridShapeTrim(HybridShape):
                 |      bKeepAllPieces = Trim.KeepAllPieces
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_trim.KeepAllPieces
 
     @keep_all_pieces.setter
-    def keep_all_pieces(self, value):
+    def keep_all_pieces(self, value: bool):
         """
         :param bool value:
         """
@@ -249,27 +260,29 @@ class HybridShapeTrim(HybridShape):
         self.hybrid_shape_trim.KeepAllPieces = value
 
     @property
-    def manifold(self):
+    def manifold(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Manifold() As boolean
                 | 
                 |     Gets or sets manifold mode.
-                |         Manifold = TRUE : the check of manifold is enable.
-                |         Manifold = FALSE : the check of manifold is disable.
+                |     Manifold = TRUE : the check of manifold is enable.
+                |     Manifold = FALSE : the check of manifold is disable.
+                |
                 |     This example retrieves in Manifold the manifold mode for the Trim hybrid shape feature.
                 | 
                 |      Dim Manifold As boolean
                 |      Connex = Trim.Manifold
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_trim.Manifold
 
     @manifold.setter
-    def manifold(self, value):
+    def manifold(self, value: bool):
         """
         :param bool value:
         """
@@ -277,25 +290,29 @@ class HybridShapeTrim(HybridShape):
         self.hybrid_shape_trim.Manifold = value
 
     @property
-    def mode(self):
+    def mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Mode() As long
                 | 
-                |     Gets or sets Trim mode. Mode = 1 : Standard. = 2 : Pieces.
-                |     This example retrieves in Mode the mode for the Trim hybrid shape feature.
+                |    Gets or sets Trim mode. Mode =
+                |    1 : Standard. =
+                |    2 : Pieces.
+                |
+                |    This example retrieves in Mode the mode for the Trim hybrid shape feature.
                 | 
-                |      Dim Mode As long
-                |      Mode = Trim.Mode
+                |    Dim Mode As long
+                |    Mode = Trim.Mode
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_trim.Mode
 
     @mode.setter
-    def mode(self, value):
+    def mode(self, value: int):
         """
         :param int value:
         """
@@ -303,10 +320,10 @@ class HybridShapeTrim(HybridShape):
         self.hybrid_shape_trim.Mode = value
 
     @property
-    def second_elem(self):
+    def second_elem(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondElem() As Reference
                 | 
                 |     Deprecated:
@@ -323,12 +340,13 @@ class HybridShapeTrim(HybridShape):
                 |          Set Surface2 = hybTrim.SecondElem
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_trim.SecondElem)
 
     @second_elem.setter
-    def second_elem(self, value):
+    def second_elem(self, value: Reference):
         """
         :param Reference value:
         """
@@ -336,10 +354,10 @@ class HybridShapeTrim(HybridShape):
         self.hybrid_shape_trim.SecondElem = value
 
     @property
-    def second_orientation(self):
+    def second_orientation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondOrientation() As long
                 | 
                 |     Deprecated:
@@ -375,12 +393,13 @@ class HybridShapeTrim(HybridShape):
                 |          Set secondOrient = hybTrim.SecondOrientation
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_trim.SecondOrientation
 
     @second_orientation.setter
-    def second_orientation(self, value):
+    def second_orientation(self, value: int):
         """
         :param int value:
         """
@@ -388,10 +407,10 @@ class HybridShapeTrim(HybridShape):
         self.hybrid_shape_trim.SecondOrientation = value
 
     @property
-    def simplify(self):
+    def simplify(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Simplify() As boolean
                 | 
                 |     Returns or sets whether the simplification of the resulting topology is or
@@ -409,12 +428,13 @@ class HybridShapeTrim(HybridShape):
                 |           hybTrim.Simplify = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_trim.Simplify
 
     @simplify.setter
-    def simplify(self, value):
+    def simplify(self, value: bool):
         """
         :param bool value:
         """
@@ -422,10 +442,10 @@ class HybridShapeTrim(HybridShape):
         self.hybrid_shape_trim.Simplify = value
 
     @property
-    def support(self):
+    def support(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets the support element.
@@ -443,22 +463,23 @@ class HybridShapeTrim(HybridShape):
                 |          Set supportElement = hybTrim.Support
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_trim.Support)
 
     @support.setter
-    def support(self, value):
+    def support(self, value: Reference):
         """
         :param Reference value:
         """
 
         self.hybrid_shape_trim.Support = value
 
-    def add_element_to_keep(self, i_element):
+    def add_element_to_keep(self, i_element: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddElementToKeep(Reference iElement)
                 | 
                 |     Adds an element to specifications. This element will be
@@ -471,6 +492,7 @@ class HybridShapeTrim(HybridShape):
 
         :param Reference i_element:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_trim.AddElementToKeep(i_element.com_object)
         # # # # Autogenerated comment: 
@@ -489,10 +511,10 @@ class HybridShapeTrim(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def add_element_to_remove(self, i_element):
+    def add_element_to_remove(self, i_element: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddElementToRemove(Reference iElement)
                 | 
                 |     Adds an element to specifications. This element will be
@@ -505,6 +527,7 @@ class HybridShapeTrim(HybridShape):
 
         :param Reference i_element:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_trim.AddElementToRemove(i_element.com_object)
         # # # # Autogenerated comment: 
@@ -523,10 +546,10 @@ class HybridShapeTrim(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def add_piece_cutter(self, i_rank, i_cutter_elem, i_orientation):
+    def add_piece_cutter(self, i_rank: int, i_cutter_elem: int, i_orientation: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddPieceCutter(long iRank,
                 | long iCutterElem,
                 | long iOrientation)
@@ -539,9 +562,9 @@ class HybridShapeTrim(HybridShape):
                 |         iRank
                 |             Index of the trimmed element (piece) 
                 |         iCutterElemIdx
-                |             index is the index of input shell except in case of multiple intersection between
-                |             shells where Index=IndexInputShell+NbInputShells*(1-iw) (with iw=1... : wire index in
-                |             case of multiple intersection)
+                |             index is the index of input shell except in case of multiple intersection between shells
+                |             where Index=IndexInputShell+NbInputShells*(1-iw)
+                |             (with iw=1... : wire index in case of multiple intersection)
                 |         iOrientation
                 |             cutter element orientation
 
@@ -549,13 +572,14 @@ class HybridShapeTrim(HybridShape):
         :param int i_cutter_elem:
         :param int i_orientation:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_trim.AddPieceCutter(i_rank, i_cutter_elem, i_orientation)
 
-    def get_elem(self, i_rank):
+    def get_elem(self, i_rank: int) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetElem(long iRank) As Reference
                 | 
                 |     Gets the trimmed feature at a given index.
@@ -569,13 +593,14 @@ class HybridShapeTrim(HybridShape):
 
         :param int i_rank:
         :return: Reference
+        :rtype: Reference
         """
         return Reference(self.hybrid_shape_trim.GetElem(i_rank))
 
-    def get_kept_elem(self, i_rank):
+    def get_kept_elem(self, i_rank: int) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetKeptElem(long iRank) As Reference
                 | 
                 |     Gets the kept feature at a given index.
@@ -589,13 +614,14 @@ class HybridShapeTrim(HybridShape):
 
         :param int i_rank:
         :return: Reference
+        :rtype: Reference
         """
         return Reference(self.hybrid_shape_trim.GetKeptElem(i_rank))
 
-    def get_nb_elem(self):
+    def get_nb_elem(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNbElem() As long
                 | 
                 |     Gets the number of elements: couple(element, index of portion to keep on
@@ -607,13 +633,14 @@ class HybridShapeTrim(HybridShape):
                 |             Number of elements
 
         :return: int
+        :rtype: int
         """
         return self.hybrid_shape_trim.GetNbElem()
 
-    def get_nb_elements_to_keep(self):
+    def get_nb_elements_to_keep(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNbElementsToKeep() As long
                 | 
                 |     Gets the number of elements to keep.
@@ -624,13 +651,14 @@ class HybridShapeTrim(HybridShape):
                 |             Number of elements to keep
 
         :return: int
+        :rtype: int
         """
         return self.hybrid_shape_trim.GetNbElementsToKeep()
 
-    def get_nb_elements_to_remove(self):
+    def get_nb_elements_to_remove(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNbElementsToRemove() As long
                 | 
                 |     Gets the number of elements to remove.
@@ -641,13 +669,14 @@ class HybridShapeTrim(HybridShape):
                 |             Number of elements to remove
 
         :return: int
+        :rtype: int
         """
         return self.hybrid_shape_trim.GetNbElementsToRemove()
 
-    def get_next_orientation(self, i_rank):
+    def get_next_orientation(self, i_rank: int) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNextOrientation(long iRank) As long
                 | 
                 |     Gets Orientation used to compute the feature, referring to the next trimmed
@@ -663,13 +692,14 @@ class HybridShapeTrim(HybridShape):
 
         :param int i_rank:
         :return: int
+        :rtype: int
         """
         return self.hybrid_shape_trim.GetNextOrientation(i_rank)
 
-    def get_piece_cutter(self, i_rank, i_cutter_index, o_cutter_elem_idx, o_orientation):
+    def get_piece_cutter(self, i_rank: int, i_cutter_index: int, o_cutter_elem_idx: int, o_orientation: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetPieceCutter(long iRank,
                 | long iCutterIndex,
                 | long oCutterElemIdx,
@@ -696,13 +726,14 @@ class HybridShapeTrim(HybridShape):
         :param int o_cutter_elem_idx:
         :param int o_orientation:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_trim.GetPieceCutter(i_rank, i_cutter_index, o_cutter_elem_idx, o_orientation)
 
-    def get_piece_discrimination_index(self, i_rank, o_index):
+    def get_piece_discrimination_index(self, i_rank: int, o_index: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetPieceDiscriminationIndex(long iRank,
                 | long oIndex)
                 | 
@@ -720,13 +751,14 @@ class HybridShapeTrim(HybridShape):
         :param int i_rank:
         :param int o_index:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_trim.GetPieceDiscriminationIndex(i_rank, o_index)
 
-    def get_piece_nb_cutters(self, i_rank):
+    def get_piece_nb_cutters(self, i_rank: int) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPieceNbCutters(long iRank) As long
                 | 
                 |     Gets the number of cutters of a piece. Used for trim pieces of shells
@@ -740,13 +772,14 @@ class HybridShapeTrim(HybridShape):
 
         :param int i_rank:
         :return: int
+        :rtype: int
         """
         return self.hybrid_shape_trim.GetPieceNbCutters(i_rank)
 
-    def get_portion_to_keep(self, i_rank):
+    def get_portion_to_keep(self, i_rank: int) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPortionToKeep(long iRank) As long
                 | 
                 |     Gets a portion to keep number, giving the index of the element. Used for
@@ -761,13 +794,14 @@ class HybridShapeTrim(HybridShape):
 
         :param int i_rank:
         :return: int
+        :rtype: int
         """
         return self.hybrid_shape_trim.GetPortionToKeep(i_rank)
 
-    def get_previous_orientation(self, i_rank):
+    def get_previous_orientation(self, i_rank: int) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPreviousOrientation(long iRank) As long
                 | 
                 |     Gets Orientation used to compute the feature, referring to the previous
@@ -783,13 +817,14 @@ class HybridShapeTrim(HybridShape):
 
         :param int i_rank:
         :return: int
+        :rtype: int
         """
         return self.hybrid_shape_trim.GetPreviousOrientation(i_rank)
 
-    def get_removed_elem(self, i_rank):
+    def get_removed_elem(self, i_rank: int) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetRemovedElem(long iRank) As Reference
                 | 
                 |     Gets the removed feature at a given index.
@@ -803,13 +838,14 @@ class HybridShapeTrim(HybridShape):
 
         :param int i_rank:
         :return: Reference
+        :rtype: Reference
         """
         return Reference(self.hybrid_shape_trim.GetRemovedElem(i_rank))
 
-    def invert_first_orientation(self):
+    def invert_first_orientation(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InvertFirstOrientation()
                 | 
                 |     Deprecated:
@@ -824,13 +860,14 @@ class HybridShapeTrim(HybridShape):
                 |          hybTrim.InvertFirstOrientation
 
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_trim.InvertFirstOrientation()
 
-    def invert_second_orientation(self):
+    def invert_second_orientation(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InvertSecondOrientation()
                 | 
                 |     Deprecated:
@@ -842,13 +879,14 @@ class HybridShapeTrim(HybridShape):
                 |          hybTrim.InvertSecondOrientation
 
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_trim.InvertSecondOrientation()
 
-    def remove_element_to_keep(self, i_rank):
+    def remove_element_to_keep(self, i_rank: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveElementToKeep(long iRank)
                 | 
                 |     Removes an element from specifications.
@@ -860,13 +898,14 @@ class HybridShapeTrim(HybridShape):
 
         :param int i_rank:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_trim.RemoveElementToKeep(i_rank)
 
-    def remove_element_to_remove(self, i_rank):
+    def remove_element_to_remove(self, i_rank: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveElementToRemove(long iRank)
                 | 
                 |     Removes an element from specifications.
@@ -878,13 +917,14 @@ class HybridShapeTrim(HybridShape):
 
         :param int i_rank:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_trim.RemoveElementToRemove(i_rank)
 
-    def remove_piece_cutter(self, i_rank, i_cutter_index):
+    def remove_piece_cutter(self, i_rank: int, i_cutter_index: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemovePieceCutter(long iRank,
                 | long iCutterIndex)
                 | 
@@ -901,13 +941,14 @@ class HybridShapeTrim(HybridShape):
         :param int i_rank:
         :param int i_cutter_index:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_trim.RemovePieceCutter(i_rank, i_cutter_index)
 
-    def set_elem(self, i_rank, i_elem):
+    def set_elem(self, i_rank: int, i_elem: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetElem(long iRank,
                 | Reference iElem)
                 | 
@@ -924,6 +965,7 @@ class HybridShapeTrim(HybridShape):
         :param int i_rank:
         :param Reference i_elem:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_trim.SetElem(i_rank, i_elem.com_object)
         # # # # Autogenerated comment: 
@@ -942,10 +984,10 @@ class HybridShapeTrim(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_next_orientation(self, i_rank, i_orientation):
+    def set_next_orientation(self, i_rank: int, i_orientation: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetNextOrientation(long iRank,
                 | long iOrientation)
                 | 
@@ -963,13 +1005,14 @@ class HybridShapeTrim(HybridShape):
         :param int i_rank:
         :param int i_orientation:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_trim.SetNextOrientation(i_rank, i_orientation)
 
-    def set_piece_discrimination_index(self, i_rank, i_index):
+    def set_piece_discrimination_index(self, i_rank: int, i_index: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPieceDiscriminationIndex(long iRank,
                 | long iIndex)
                 | 
@@ -987,13 +1030,14 @@ class HybridShapeTrim(HybridShape):
         :param int i_rank:
         :param int i_index:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_trim.SetPieceDiscriminationIndex(i_rank, i_index)
 
-    def set_portion_to_keep(self, i_rank, i_portion_number):
+    def set_portion_to_keep(self, i_rank: int, i_portion_number: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPortionToKeep(long iRank,
                 | long iPortionNumber)
                 | 
@@ -1010,13 +1054,14 @@ class HybridShapeTrim(HybridShape):
         :param int i_rank:
         :param int i_portion_number:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_trim.SetPortionToKeep(i_rank, i_portion_number)
 
-    def set_previous_orientation(self, i_rank, i_orientation):
+    def set_previous_orientation(self, i_rank: int, i_orientation: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPreviousOrientation(long iRank,
                 | long iOrientation)
                 | 
@@ -1034,6 +1079,7 @@ class HybridShapeTrim(HybridShape):
         :param int i_rank:
         :param int i_orientation:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_trim.SetPreviousOrientation(i_rank, i_orientation)
 

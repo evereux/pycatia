@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -14,9 +14,10 @@ from pycatia.in_interfaces.reference import Reference
 
 
 class HybridShapePlaneOffsetPt(Plane):
+
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -38,10 +39,10 @@ class HybridShapePlaneOffsetPt(Plane):
         self.hybrid_shape_plane_offset_pt = com_object
 
     @property
-    def plane_reference(self):
+    def plane(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Plane() As Reference
                 | 
                 |     Role: Get the reference plane.
@@ -60,12 +61,13 @@ class HybridShapePlaneOffsetPt(Plane):
                 |         HybridShapeFactory
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_plane_offset_pt.Plane)
 
-    @plane_reference.setter
-    def plane_reference(self, value):
+    @plane.setter
+    def plane(self, value: Reference):
         """
         :param Reference value:
         """
@@ -73,10 +75,10 @@ class HybridShapePlaneOffsetPt(Plane):
         self.hybrid_shape_plane_offset_pt.Plane = value
 
     @property
-    def point(self):
+    def point(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Point() As Reference
                 | 
                 |     Role: Get the reference point.
@@ -95,12 +97,13 @@ class HybridShapePlaneOffsetPt(Plane):
                 |         HybridShapeFactory
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_plane_offset_pt.Point)
 
     @point.setter
-    def point(self, value):
+    def point(self, value: Reference):
         """
         :param Reference value:
         """
@@ -108,4 +111,4 @@ class HybridShapePlaneOffsetPt(Plane):
         self.hybrid_shape_plane_offset_pt.Point = value
 
     def __repr__(self):
-        return f'HybridShapePlaneOffsetPt(name="{self.name}")'
+        return f'HybridShapePlaneOffsetPt(name="{ self.name }")'
