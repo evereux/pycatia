@@ -646,7 +646,7 @@ class Part(AnyObject):
         :return: None
         :rtype: None
         """
-        self.inactivate(i_object.com_object)
+        return self.part.Inactivate(i_object.com_object)
 
     def find_object_by_name(self, i_obj_name: str) -> AnyObject:
         """

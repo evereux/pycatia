@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -18,7 +18,7 @@ from pycatia.system_interfaces.any_object import AnyObject
 class Window(AnyObject):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -39,10 +39,10 @@ class Window(AnyObject):
         self.window = com_object
 
     @property
-    def active_viewer(self):
+    def active_viewer(self) -> Viewer:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ActiveViewer() As Viewer (Read Only)
                 | 
                 |     Returns the active viewer in the window.
@@ -55,15 +55,16 @@ class Window(AnyObject):
                 |          Set ViewerToWorkIn = CADWindow.ActiveViewer
 
         :return: Viewer
+        :rtype: Viewer
         """
 
         return Viewer(self.window.ActiveViewer)
 
     @property
-    def caption(self):
+    def caption(self) -> str:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Caption() As CATBSTR
                 | 
                 |     Returns or sets the window caption. The window caption is displayed in the
@@ -76,12 +77,13 @@ class Window(AnyObject):
                 |          CADWindow.Caption = "CAD 3D Window"
 
         :return: str
+        :rtype: str
         """
 
         return self.window.Caption
 
     @caption.setter
-    def caption(self, value):
+    def caption(self, value: str):
         """
         :param str value:
         """
@@ -89,10 +91,10 @@ class Window(AnyObject):
         self.window.Caption = value
 
     @property
-    def height(self):
+    def height(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Height() As long
                 | 
                 |     Returns or sets the window height. The window height is expressed in
@@ -105,12 +107,13 @@ class Window(AnyObject):
                 |          CADWindow.Width = 300
 
         :return: int
+        :rtype: int
         """
 
         return self.window.Height
 
     @height.setter
-    def height(self, value):
+    def height(self, value: int):
         """
         :param int value:
         """
@@ -118,10 +121,10 @@ class Window(AnyObject):
         self.window.Height = value
 
     @property
-    def left(self):
+    def left(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Left() As long
                 | 
                 |     Returns or sets the distance of the window with respect to the inner left
@@ -135,12 +138,13 @@ class Window(AnyObject):
                 |          CADWindow.Left = 150
 
         :return: int
+        :rtype: int
         """
 
         return self.window.Left
 
     @left.setter
-    def left(self, value):
+    def left(self, value: int):
         """
         :param int value:
         """
@@ -148,10 +152,10 @@ class Window(AnyObject):
         self.window.Left = value
 
     @property
-    def page_setup(self):
+    def page_setup(self) -> PageSetup:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PageSetup() As PageSetup
                 | 
                 |     Returns or sets the page setup of the window. The page setup includes all
@@ -164,12 +168,13 @@ class Window(AnyObject):
                 |          CADWindow.PageSetup = A4PageSetup
 
         :return: PageSetup
+        :rtype: PageSetup
         """
 
         return PageSetup(self.window.PageSetup)
 
     @page_setup.setter
-    def page_setup(self, value):
+    def page_setup(self, value: PageSetup):
         """
         :param PageSetup value:
         """
@@ -177,10 +182,10 @@ class Window(AnyObject):
         self.window.PageSetup = value
 
     @property
-    def top(self):
+    def top(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Top() As long
                 | 
                 |     Returns or sets the distance of the window with respect to the inner top
@@ -194,12 +199,13 @@ class Window(AnyObject):
                 |          CADWindow.Top = 50
 
         :return: int
+        :rtype: int
         """
 
         return self.window.Top
 
     @top.setter
-    def top(self, value):
+    def top(self, value: int):
         """
         :param int value:
         """
@@ -207,10 +213,10 @@ class Window(AnyObject):
         self.window.Top = value
 
     @property
-    def viewers(self):
+    def viewers(self) -> Viewers:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Viewers() As Viewers (Read Only)
                 | 
                 |     Returns the collection of viewers attached to the window.
@@ -223,15 +229,16 @@ class Window(AnyObject):
                 |          Set ViewerCollection = CADWindow.Viewers
 
         :return: Viewers
+        :rtype: Viewers
         """
 
         return Viewers(self.window.Viewers)
 
     @property
-    def width(self):
+    def width(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Width() As long
                 | 
                 |     Returns or sets the window width. The window width is expressed in
@@ -244,12 +251,13 @@ class Window(AnyObject):
                 |          CADWindow.Width = 450
 
         :return: int
+        :rtype: int
         """
 
         return self.window.Width
 
     @width.setter
-    def width(self, value):
+    def width(self, value: int):
         """
         :param int value:
         """
@@ -257,10 +265,10 @@ class Window(AnyObject):
         self.window.Width = value
 
     @property
-    def window_state(self):
+    def window_state(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property WindowState() As CatWindowState
                 | 
                 |     Returns or sets the window state.
@@ -271,23 +279,24 @@ class Window(AnyObject):
                 | 
                 |          CADWindow.WindowState = catWindowStateMaximized
 
-        :return: enum cat_window_state
+        :return: int
+        :rtype: int
         """
 
         return self.window.WindowState
 
     @window_state.setter
-    def window_state(self, value):
+    def window_state(self, value: int):
         """
-        :param enum cat_window_state value:
+        :param int value:
         """
 
         self.window.WindowState = value
 
-    def activate(self):
+    def activate(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Activate()
                 | 
                 |     Activates a window. The active window is deactivated and the window to
@@ -299,13 +308,14 @@ class Window(AnyObject):
                 |          CADWindow.Activate()
 
         :return: None
+        :rtype: None
         """
         return self.window.Activate()
 
-    def activate_next(self):
+    def activate_next(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ActivateNext()
                 | 
                 |     Activates the window following the current active one in the window
@@ -318,13 +328,14 @@ class Window(AnyObject):
                 |          CADWindow.ActivateNext()
 
         :return: None
+        :rtype: None
         """
         return self.window.ActivateNext()
 
-    def activate_previous(self):
+    def activate_previous(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ActivatePrevious()
                 | 
                 |     Activates the window preceding the current active one in the window
@@ -337,13 +348,14 @@ class Window(AnyObject):
                 |          CADWindow.ActivatePrevious()
 
         :return: None
+        :rtype: None
         """
         return self.window.ActivatePrevious()
 
-    def close(self):
+    def close(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Close()
                 | 
                 |     Closes the window. This method displays the dialog box requesting whether
@@ -357,13 +369,14 @@ class Window(AnyObject):
                 |          CADWindow.Close()
 
         :return: None
+        :rtype: None
         """
         return self.window.Close()
 
-    def new_window(self):
+    def new_window(self) -> 'Window':
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func NewWindow() As Window
                 | 
                 |     Creates a new window. The new window displays the same document with the
@@ -378,13 +391,14 @@ class Window(AnyObject):
                 |          Set CADNewWindow = CADWindow.NewWindow()
 
         :return: Window
+        :rtype: Window
         """
         return Window(self.window.NewWindow())
 
-    def print_out(self):
+    def print_out(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PrintOut()
                 | 
                 |     Prints the active viewer of the window according to the window's page setup
@@ -397,13 +411,14 @@ class Window(AnyObject):
                 |          CADWindow.PrintOut()
 
         :return: None
+        :rtype: None
         """
         return self.window.PrintOut()
 
-    def print_to_file(self, file_name):
+    def print_to_file(self, file_name: str) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PrintToFile(CATBSTR fileName)
                 | 
                 |     Prints the active viewer of the window according to the window's page setup
@@ -418,10 +433,11 @@ class Window(AnyObject):
                 |         This example prints the CADWindow window's active viewer in a
                 |         file.
                 | 
-                |          CADWindow.PrintToFile("e:/temp/cadwin.prn")
+                |          CADWindow.PrintToFile("e:\\temp\\cadwin.prn")
 
         :param str file_name:
         :return: None
+        :rtype: None
         """
         return self.window.PrintToFile(file_name)
 
