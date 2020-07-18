@@ -9,25 +9,26 @@
         
 """
 
-from pycatia.system_interfaces.setting_controller import SettingController
+from pycatia.in_interfaces.camera import Camera
+from pycatia.system_interfaces.any_object import AnyObject
 
 
-class Viewer(SettingController):
+class Viewer(AnyObject):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
                 |         System.CATBaseUnknown
                 |             System.CATBaseDispatch
                 |                 System.AnyObject
-                |                     System.SettingController
-                |                         TreeVizManipSettingAtt
+                |                     Viewer
                 | 
-                | The Interface to retrieve and set the visual information on the specification
-                | tree.
+                | Represents the viewer.
+                | The viewer is the object that makes your objects display on the
+                | screen.
     
     """
 
@@ -36,801 +37,305 @@ class Viewer(SettingController):
         self.viewer = com_object
 
     @property
-    def arc_selection_activation(self):
+    def full_screen(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property ArcSelectionActivation() As boolean
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+                | o Property FullScreen() As boolean
                 | 
-                |     Retrieves or Sets the arc-selection mode applied to the specification tree.
+                |     Returns or sets the state of a viewer to occupy the whole
+                |     screen.
+                |     True if the viewer occupies the whole screen.
+                | 
+                |     Example:
+                |         This example retrieves in IsFullScreen whether the MyViewer viewer
+                |         occupies the whole screen.
+                | 
+                |          IsFullScreen = MyViewer.FullScreen
 
         :return: bool
+        :rtype: bool
         """
 
-        return self.viewer.ArcSelectionActivation
+        return self.viewer.FullScreen
 
-    @arc_selection_activation.setter
-    def arc_selection_activation(self, value):
+    @full_screen.setter
+    def full_screen(self, value: bool):
         """
         :param bool value:
         """
 
-        self.viewer.ArcSelectionActivation = value
+        self.viewer.FullScreen = value
 
     @property
-    def auto_expand_activation(self):
+    def height(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property AutoExpandActivation() As boolean
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+                | o Property Height() As long (Read Only)
                 | 
-                |     Retrieves or Sets the automatic expand mode applied to the specification
-                |     tree.
-
-        :return: bool
-        """
-
-        return self.viewer.AutoExpandActivation
-
-    @auto_expand_activation.setter
-    def auto_expand_activation(self, value):
-        """
-        :param bool value:
-        """
-
-        self.viewer.AutoExpandActivation = value
-
-    @property
-    def auto_scroll_activation(self):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property AutoScrollActivation() As boolean
+                |     Returns the viewer's height, in pixels.
                 | 
-                |     Retrieves or Sets the automatic scrolling mode applied to the specification
-                |     tree.
-
-        :return: bool
-        """
-
-        return self.viewer.AutoScrollActivation
-
-    @auto_scroll_activation.setter
-    def auto_scroll_activation(self, value):
-        """
-        :param bool value:
-        """
-
-        self.viewer.AutoScrollActivation = value
-
-    @property
-    def display_geom_on_scrolling(self):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property DisplayGeomOnScrolling() As boolean
+                |     Example:
+                |         This example retrieves the height of the MyViewer
+                |         viewer.
                 | 
-                |     Retrieves or Sets the "display geometry on scrolling" mode.
-
-        :return: bool
-        """
-
-        return self.viewer.DisplayGeomOnScrolling
-
-    @display_geom_on_scrolling.setter
-    def display_geom_on_scrolling(self, value):
-        """
-        :param bool value:
-        """
-
-        self.viewer.DisplayGeomOnScrolling = value
-
-    @property
-    def orientation(self):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property Orientation() As CatTreeOrientationEnum
-                | 
-                |     Retrieves or Sets the orientation applied to the specification tree.
-
-        :return: enum cat_tree_orientation_enum
-        """
-
-        return self.viewer.Orientation
-
-    @orientation.setter
-    def orientation(self, value):
-        """
-        :param enum cat_tree_orientation_enum value:
-        """
-
-        self.viewer.Orientation = value
-
-    @property
-    def show_activation(self):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property ShowActivation() As boolean
-                | 
-                |     Retrieves or Sets the visualization Show/NoShow's mode applied to the
-                |     specification tree.
-
-        :return: bool
-        """
-
-        return self.viewer.ShowActivation
-
-    @show_activation.setter
-    def show_activation(self, value):
-        """
-        :param bool value:
-        """
-
-        self.viewer.ShowActivation = value
-
-    @property
-    def size(self):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property Size() As long
-                | 
-                |     Retrieves or Sets the number of characters shown for the text of the
-                |     specification tree.
+                |          h = MyViewer.Height
 
         :return: int
+        :rtype: int
         """
 
-        return self.viewer.Size
-
-    @size.setter
-    def size(self, value):
-        """
-        :param int value:
-        """
-
-        self.viewer.Size = value
+        return self.viewer.Height
 
     @property
-    def size_type(self):
+    def width(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property SizeType() As CatTreeSizeTypeEnum
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+                | o Property Width() As long (Read Only)
                 | 
-                |     Retrieves or Sets the type of size applied to the text of the specification
-                |     tree.
+                |     Returns the viewer's width, in pixels.
+                | 
+                |     Example:
+                |         This example retrieves the width of the MyViewer
+                |         viewer.
+                | 
+                |          w = MyViewer.Width
 
-        :return: enum cat_tree_size_type_enum
+        :return: int
+        :rtype: int
         """
 
-        return self.viewer.SizeType
+        return self.viewer.Width
 
-    @size_type.setter
-    def size_type(self, value):
-        """
-        :param enum cat_tree_size_type_enum value:
-        """
-
-        self.viewer.SizeType = value
-
-    @property
-    def type(self):
+    def activate(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property Type() As CatTreeTypeEnum
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub Activate()
                 | 
-                |     Retrieves or Sets the type applied to the specification tree.
+                |     Activates the viewer in the window.
+                | 
+                |     Example:
+                |         This example activates Viewers(1) in the window
+                |         MyWindow.
+                | 
+                |          MyWindow.Viewers(1).Activate()
 
-        :return: enum cat_tree_type_enum
-        """
-
-        return self.viewer.Type
-
-    @type.setter
-    def type(self, value):
-        """
-        :param enum cat_tree_type_enum value:
-        """
-
-        self.viewer.Type = value
-
-    def get_arc_selection_activation_info(self, io_admin_level, io_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func GetArcSelectionActivationInfo(CATBSTR ioAdminLevel,
-                | CATBSTR ioLocked) As boolean
-                | 
-                |     Retrieves environment informations for arc-selection mode applied to the
-                |     specification tree.
-                |     Role:Retrieves the state of arc-selection mode applied to the specification
-                |     tree in the current environment.
-                | 
-                |     Parameters:
-                | 
-                |         ioAdminLevel
-                | 
-                |             If the parameter is locked, AdminLevel gives the administration
-                |             level that imposes the value of the parameter.
-                |             If the parameter is not locked, AdminLevel gives the administration
-                |             level that will give the value of the parameter after a reset.
-                |             
-                |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
-                |     Returns:
-                |         Indicates if the parameter has been explicitly modified or remain to
-                |         the administrated value.
-
-        :param str io_admin_level:
-        :param str io_locked:
-        :return: bool
-        """
-        return self.viewer.GetArcSelectionActivationInfo(io_admin_level, io_locked)
-
-    def get_auto_expand_activation_info(self, io_admin_level, io_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func GetAutoExpandActivationInfo(CATBSTR ioAdminLevel,
-                | CATBSTR ioLocked) As boolean
-                | 
-                |     Retrieves environment informations for automatic expand mode applied to the
-                |     specification tree.
-                |     Role:Retrieves the state of automatic expand mode applied to the
-                |     specification tree in the current environment.
-                | 
-                |     Parameters:
-                | 
-                |         ioAdminLevel
-                | 
-                |             If the parameter is locked, AdminLevel gives the administration
-                |             level that imposes the value of the parameter.
-                |             If the parameter is not locked, AdminLevel gives the administration
-                |             level that will give the value of the parameter after a reset.
-                |             
-                |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
-                |     Returns:
-                |         Indicates if the parameter has been explicitly modified or remain to
-                |         the administrated value.
-
-        :param str io_admin_level:
-        :param str io_locked:
-        :return: bool
-        """
-        return self.viewer.GetAutoExpandActivationInfo(io_admin_level, io_locked)
-
-    def get_auto_scroll_activation_info(self, io_admin_level, io_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func GetAutoScrollActivationInfo(CATBSTR ioAdminLevel,
-                | CATBSTR ioLocked) As boolean
-                | 
-                |     Retrieves environment informations for automatic scrolling mode applied to
-                |     the specification tree.
-                |     Role:Retrieves the state of the automatic scrolling mode applied to the
-                |     specification tree in the current environment.
-                | 
-                |     Parameters:
-                | 
-                |         ioAdminLevel
-                | 
-                |             If the parameter is locked, AdminLevel gives the administration
-                |             level that imposes the value of the parameter.
-                |             If the parameter is not locked, AdminLevel gives the administration
-                |             level that will give the value of the parameter after a reset.
-                |             
-                |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
-                |     Returns:
-                |         Indicates if the parameter has been explicitly modified or remain to
-                |         the administrated value.
-
-        :param str io_admin_level:
-        :param str io_locked:
-        :return: bool
-        """
-        return self.viewer.GetAutoScrollActivationInfo(io_admin_level, io_locked)
-
-    def get_display_geom_on_scrolling_info(self, io_admin_level, io_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func GetDisplayGeomOnScrollingInfo(CATBSTR ioAdminLevel,
-                | CATBSTR ioLocked) As boolean
-                | 
-                |     Retrieves environment informations for "display geometry on scrolling"
-                |     mode.
-                |     Role:Retrieves the state of "display geometry on scrolling" mode in the
-                |     current environment.
-                | 
-                |     Parameters:
-                | 
-                |         ioAdminLevel
-                | 
-                |             If the parameter is locked, AdminLevel gives the administration
-                |             level that imposes the value of the parameter.
-                |             If the parameter is not locked, AdminLevel gives the administration
-                |             level that will give the value of the parameter after a reset.
-                |             
-                |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
-                |     Returns:
-                |         Indicates if the parameter has been explicitly modified or remain to
-                |         the administrated value.
-
-        :param str io_admin_level:
-        :param str io_locked:
-        :return: bool
-        """
-        return self.viewer.GetDisplayGeomOnScrollingInfo(io_admin_level, io_locked)
-
-    def get_orientation_info(self, io_admin_level, io_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func GetOrientationInfo(CATBSTR ioAdminLevel,
-                | CATBSTR ioLocked) As boolean
-                | 
-                |     Retrieves environment informations for the orientation applied to the
-                |     specification tree.
-                |     Role:Retrieves the state of the orientation applied to the specification
-                |     tree in the current environment.
-                | 
-                |     Parameters:
-                | 
-                |         ioAdminLevel
-                | 
-                |             If the parameter is locked, AdminLevel gives the administration
-                |             level that imposes the value of the parameter.
-                |             If the parameter is not locked, AdminLevel gives the administration
-                |             level that will give the value of the parameter after a reset.
-                |             
-                |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
-                |     Returns:
-                |         Indicates if the parameter has been explicitly modified or remain to
-                |         the administrated value.
-
-        :param str io_admin_level:
-        :param str io_locked:
-        :return: bool
-        """
-        return self.viewer.GetOrientationInfo(io_admin_level, io_locked)
-
-    def get_show_activation_info(self, io_admin_level, io_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func GetShowActivationInfo(CATBSTR ioAdminLevel,
-                | CATBSTR ioLocked) As boolean
-                | 
-                |     Retrieves environment informations for the visualization Show/NoShow's mode
-                |     applied to the specification tree.
-                |     Role:Retrieves the state of the visualization Show/NoShow's mode applied to
-                |     the specification tree in the current environment.
-                | 
-                |     Parameters:
-                | 
-                |         ioAdminLevel
-                | 
-                |             If the parameter is locked, AdminLevel gives the administration
-                |             level that imposes the value of the parameter.
-                |             If the parameter is not locked, AdminLevel gives the administration
-                |             level that will give the value of the parameter after a reset.
-                |             
-                |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
-                |     Returns:
-                |         Indicates if the parameter has been explicitly modified or remain to
-                |         the administrated value.
-
-        :param str io_admin_level:
-        :param str io_locked:
-        :return: bool
-        """
-        return self.viewer.GetShowActivationInfo(io_admin_level, io_locked)
-
-    def get_size_type_info(self, io_admin_level, io_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func GetSizeTypeInfo(CATBSTR ioAdminLevel,
-                | CATBSTR ioLocked) As boolean
-                | 
-                |     Retrieves environment informations for the type of size applied to the text
-                |     of the specification tree.
-                |     Role:Retrieves the state of the type of size applied to the text of the
-                |     specification tree in the current environment. Attributes "size" and "SizeType"
-                |     are linked together by the same lock. So there is no function
-                |     "GetSizeInfo".
-                | 
-                |     Parameters:
-                | 
-                |         ioAdminLevel
-                | 
-                |             If the parameter is locked, AdminLevel gives the administration
-                |             level that imposes the value of the parameter.
-                |             If the parameter is not locked, AdminLevel gives the administration
-                |             level that will give the value of the parameter after a reset.
-                |             
-                |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
-                |     Returns:
-                |         Indicates if the parameter has been explicitly modified or remain to
-                |         the administrated value.
-
-        :param str io_admin_level:
-        :param str io_locked:
-        :return: bool
-        """
-        return self.viewer.GetSizeTypeInfo(io_admin_level, io_locked)
-
-    def get_type_info(self, io_admin_level, io_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func GetTypeInfo(CATBSTR ioAdminLevel,
-                | CATBSTR ioLocked) As boolean
-                | 
-                |     Retrieves environment informations for the type applied to the
-                |     specification tree.
-                |     Role:Retrieves the state of the type applied to the specification tree in
-                |     the current environment.
-                | 
-                |     Parameters:
-                | 
-                |         ioAdminLevel
-                | 
-                |             If the parameter is locked, AdminLevel gives the administration
-                |             level that imposes the value of the parameter.
-                |             If the parameter is not locked, AdminLevel gives the administration
-                |             level that will give the value of the parameter after a reset.
-                |             
-                |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
-                |     Returns:
-                |         Indicates if the parameter has been explicitly modified or remain to
-                |         the administrated value.
-
-        :param str io_admin_level:
-        :param str io_locked:
-        :return: bool
-        """
-        return self.viewer.GetTypeInfo(io_admin_level, io_locked)
-
-    def set_arc_selection_activation_lock(self, i_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub SetArcSelectionActivationLock(boolean iLocked)
-                | 
-                |     Locks or unlocks the arc-selection mode applied to the specification
-                |     tree.
-                |     Role:Locks or unlocks the arc-selection mode applied to the specification
-                |     tree if it is possible in the current administrative context. In user mode this
-                |     method will always return E_FAIL.
-                | 
-                |     Parameters:
-                | 
-                |         iLocked
-                |             the locking operation to be performed Legal
-                |             values:
-                |             TRUE : to lock the parameter.
-                |             FALSE: to unlock the parameter.
-
-        :param bool i_locked:
         :return: None
+        :rtype: None
         """
-        return self.viewer.SetArcSelectionActivationLock(i_locked)
+        return self.viewer.Activate()
+
+    def capture_to_file(self, i_format: int, i_file: str) -> None:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub CaptureToFile(CatCaptureFormat iFormat,
+                | CATBSTR iFile)
+                | 
+                |     Captures the actually displayed scene by the viewer as an image, and stores
+                |     the image in a file. Clipped parts of the scene are also clipped in the
+                |     captured image. Images can be captured as CGM, EMF, TIFF, TIFF Greyscale, BMP,
+                |     and JPEG images.
+                | 
+                |     Parameters:
+                | 
+                |         iFormat
+                |             The format in which the image will be created 
+                |         iFile
+                |             The full pathname of the file into which you want to store the
+                |             captured image 
+                |         Example:
+                |             This example captures the displayed part of the MyViewer viewer as
+                |             a BMP image, and stores it in the e:\MyImage.bmp
+                |             file.
+                | 
+                |              MyViewer.CaptureToFile catCaptureFormatBMP, "e:\MyImage.bmp"
+
+        :param int i_format:
+        :param str i_file:
+        :return: None
+        :rtype: None
+        """
+        return self.viewer.CaptureToFile(i_format, i_file)
+
+    def get_background_color(self, color: tuple) -> None:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub GetBackgroundColor(CATSafeArrayVariant color)
+                | 
+                |     Gets the viewer's background color. The color is expressed in the RGB color
+                |     mode, as a triplet of coordinates ranging from 0 to 1 for the red, green, and
+                |     blue colors respectively.
+                | 
+                |     Example:
+                |         This example gets the background color of the MyViewer
+                |         viewer.
+                | 
+                |          Dim color(2)
+                |          MyViewer.GetBackgroundColor color
+
+        :param tuple color:
+        :return: None
+        :rtype: None
+        """
+        return self.viewer.GetBackgroundColor(color)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_arc_selection_activation_lock'
+        # # vba_function_name = 'get_background_color'
         # # vba_code = """
-        # # Public Function set_arc_selection_activation_lock(viewer)
-        # #     Dim iLocked (2)
-        # #     viewer.SetArcSelectionActivationLock iLocked
-        # #     set_arc_selection_activation_lock = iLocked
+        # # Public Function get_background_color(viewer)
+        # #     Dim color (2)
+        # #     viewer.GetBackgroundColor color
+        # #     get_background_color = color
         # # End Function
         # # """
 
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_auto_expand_activation_lock(self, i_locked):
+    def new_camera(self) -> Camera:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub SetAutoExpandActivationLock(boolean iLocked)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Func NewCamera() As Camera
                 | 
-                |     Locks or unlocks the automatic expand mode applied to the specification
-                |     tree.
-                |     Role:Locks or unlocks the automatic expand mode applied to the
-                |     specification tree if it is possible in the current administrative context. In
-                |     user mode this method will always return E_FAIL.
+                |     Creates a new camera from the viewpoint of the viewer.
                 | 
-                |     Parameters:
+                |     Example:
+                |         This example creates the MyCamera new camera by using the current
+                |         viewpoint of the MyViewer viewer.
                 | 
-                |         iLocked
-                |             the locking operation to be performed Legal
-                |             values:
-                |             TRUE : to lock the parameter.
-                |             FALSE: to unlock the parameter.
+                |          Dim MyCamera As Camera
+                |          Set MyCamera = MyViewer.NewCamera()
 
-        :param bool i_locked:
-        :return: None
+        :return: Camera
+        :rtype: Camera
         """
-        return self.viewer.SetAutoExpandActivationLock(i_locked)
+        return Camera(self.viewer.NewCamera())
+
+    def put_background_color(self, color: tuple) -> None:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub PutBackgroundColor(CATSafeArrayVariant color)
+                | 
+                |     Sets the viewer's background color. The color is expressed in the RGB color
+                |     mode, as a triplet of coordinates ranging from 0 to 1 for the red, green, and
+                |     blue colors respectively.
+                | 
+                |     Example:
+                |         This example sets the background color of the MyViewer viewer to blue,
+                |         that is the color with (0.,0.,1.) coordinates
+                | 
+                |          MyViewer.PutBackgroundColor Array(0, 0, 1)
+
+        :param tuple color:
+        :return: None
+        :rtype: None
+        """
+        return self.viewer.PutBackgroundColor(color)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_auto_expand_activation_lock'
+        # # vba_function_name = 'put_background_color'
         # # vba_code = """
-        # # Public Function set_auto_expand_activation_lock(viewer)
-        # #     Dim iLocked (2)
-        # #     viewer.SetAutoExpandActivationLock iLocked
-        # #     set_auto_expand_activation_lock = iLocked
+        # # Public Function put_background_color(viewer)
+        # #     Dim color (2)
+        # #     viewer.PutBackgroundColor color
+        # #     put_background_color = color
         # # End Function
         # # """
 
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_auto_scroll_activation_lock(self, i_locked):
+    def reframe(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub SetAutoScrollActivationLock(boolean iLocked)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub Reframe()
                 | 
-                |     Locks or unlocks the automatic scrolling mode applied to the specification
-                |     tree.
-                |     Role:Locks or unlocks the automatic scrolling mode applied to the
-                |     specification tree if it is possible in the current administrative context. In
-                |     user mode this method will always return E_FAIL.
+                |     Reframes the viewer's contents (Fits all in). Reframing means that the
+                |     viewer's contents is zoomed in or out to enable every object of the scene to be
+                |     displayed in such a way that most of the space available in the viewer is used,
+                |     just leaving a thin empty strip around the scene.
                 | 
-                |     Parameters:
+                |     Example:
+                |         This example reframes the contents of the MyViewer
+                |         viewer.
                 | 
-                |         iLocked
-                |             the locking operation to be performed Legal
-                |             values:
-                |             TRUE : to lock the parameter.
-                |             FALSE: to unlock the parameter.
+                |          MyViewer.Reframe()
 
-        :param bool i_locked:
         :return: None
+        :rtype: None
         """
-        return self.viewer.SetAutoScrollActivationLock(i_locked)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_auto_scroll_activation_lock'
-        # # vba_code = """
-        # # Public Function set_auto_scroll_activation_lock(viewer)
-        # #     Dim iLocked (2)
-        # #     viewer.SetAutoScrollActivationLock iLocked
-        # #     set_auto_scroll_activation_lock = iLocked
-        # # End Function
-        # # """
+        return self.viewer.Reframe()
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def set_display_geom_on_scrolling_lock(self, i_locked):
+    def update(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub SetDisplayGeomOnScrollingLock(boolean iLocked)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub Update()
                 | 
-                |     Locks or unlocks the "display geometry on scrolling" mode.
-                |     Role:Locks or unlocks "display geometry on scrolling" mode if it is
-                |     possible in the current administrative context. In user mode this method will
-                |     always return E_FAIL.
+                |     Updates the viewer's contents. Since the viewer is not automatically
+                |     updated after a viewpoint modification (for performance reasons), it must be
+                |     explicitely redrawn when needed.
                 | 
-                |     Parameters:
+                |     Example:
+                |         This example updates the contents of the MyViewer
+                |         viewer.
                 | 
-                |         iLocked
-                |             the locking operation to be performed Legal
-                |             values:
-                |             TRUE : to lock the parameter.
-                |             FALSE: to unlock the parameter.
+                |          MyViewer.Update()
 
-        :param bool i_locked:
         :return: None
+        :rtype: None
         """
-        return self.viewer.SetDisplayGeomOnScrollingLock(i_locked)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_display_geom_on_scrolling_lock'
-        # # vba_code = """
-        # # Public Function set_display_geom_on_scrolling_lock(viewer)
-        # #     Dim iLocked (2)
-        # #     viewer.SetDisplayGeomOnScrollingLock iLocked
-        # #     set_display_geom_on_scrolling_lock = iLocked
-        # # End Function
-        # # """
+        return self.viewer.Update()
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def set_orientation_lock(self, i_locked):
+    def zoom_in(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub SetOrientationLock(boolean iLocked)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub ZoomIn()
                 | 
-                |     Locks or unlocks the orientation applied to the specification
-                |     tree.
-                |     Role:Locks or unlocks the orientation applied to the specification tree if
-                |     it is possible in the current administrative context. In user mode this method
-                |     will always return E_FAIL.
+                |     Zooms in the viewer's contents.
                 | 
-                |     Parameters:
+                |     Example:
+                |         This example zooms in the contents of the MyViewer
+                |         viewer.
                 | 
-                |         iLocked
-                |             the locking operation to be performed Legal
-                |             values:
-                |             TRUE : to lock the parameter.
-                |             FALSE: to unlock the parameter.
+                |          MyViewer.ZoomIn()
 
-        :param bool i_locked:
         :return: None
+        :rtype: None
         """
-        return self.viewer.SetOrientationLock(i_locked)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_orientation_lock'
-        # # vba_code = """
-        # # Public Function set_orientation_lock(viewer)
-        # #     Dim iLocked (2)
-        # #     viewer.SetOrientationLock iLocked
-        # #     set_orientation_lock = iLocked
-        # # End Function
-        # # """
+        return self.viewer.ZoomIn()
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def set_show_activation_lock(self, i_locked):
+    def zoom_out(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub SetShowActivationLock(boolean iLocked)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub ZoomOut()
                 | 
-                |     Locks or unlocks the visualization Show/NoShow's mode applied to the
-                |     specification tree.
-                |     Role:Locks or unlocks the visualization Show/NoShow's mode applied to the
-                |     specification tree if it is possible in the current administrative context. In
-                |     user mode this method will always return E_FAIL.
+                |     Zooms out the viewer's contents.
                 | 
-                |     Parameters:
+                |     Example:
+                |         This example zooms out the contents of the MyViewer
+                |         viewer.
                 | 
-                |         iLocked
-                |             the locking operation to be performed Legal
-                |             values:
-                |             TRUE : to lock the parameter.
-                |             FALSE: to unlock the parameter.
+                |          MyViewer.ZoomOut()
 
-        :param bool i_locked:
         :return: None
+        :rtype: None
         """
-        return self.viewer.SetShowActivationLock(i_locked)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_show_activation_lock'
-        # # vba_code = """
-        # # Public Function set_show_activation_lock(viewer)
-        # #     Dim iLocked (2)
-        # #     viewer.SetShowActivationLock iLocked
-        # #     set_show_activation_lock = iLocked
-        # # End Function
-        # # """
-
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def set_size_type_lock(self, i_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub SetSizeTypeLock(boolean iLocked)
-                | 
-                |     Locks or unlocks the type of size applied to the text of the specification
-                |     tree.
-                |     Role:Locks or unlocks the type of size applied to the text of the
-                |     specification tree if it is possible in the current administrative context. In
-                |     user mode this method will always return E_FAIL. Attributs "size" and
-                |     "SizeType" are linked together by the same lock. So there is no function
-                |     "SetSizeTypeLock".
-                | 
-                |     Parameters:
-                | 
-                |         iLocked
-                |             the locking operation to be performed Legal
-                |             values:
-                |             TRUE : to lock the parameter.
-                |             FALSE: to unlock the parameter.
-
-        :param bool i_locked:
-        :return: None
-        """
-        return self.viewer.SetSizeTypeLock(i_locked)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_size_type_lock'
-        # # vba_code = """
-        # # Public Function set_size_type_lock(viewer)
-        # #     Dim iLocked (2)
-        # #     viewer.SetSizeTypeLock iLocked
-        # #     set_size_type_lock = iLocked
-        # # End Function
-        # # """
-
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def set_type_lock(self, i_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub SetTypeLock(boolean iLocked)
-                | 
-                |     Locks or unlocks the type of the specification tree.
-                |     Role:Locks or unlocks the type applied to the specification tree if it is
-                |     possible in the current administrative context. In user mode this method will
-                |     always return E_FAIL.
-                | 
-                |     Parameters:
-                | 
-                |         iLocked
-                |             the locking operation to be performed Legal
-                |             values:
-                |             TRUE : to lock the parameter.
-                |             FALSE: to unlock the parameter.
-
-        :param bool i_locked:
-        :return: None
-        """
-        return self.viewer.SetTypeLock(i_locked)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_type_lock'
-        # # vba_code = """
-        # # Public Function set_type_lock(viewer)
-        # #     Dim iLocked (2)
-        # #     viewer.SetTypeLock iLocked
-        # #     set_type_lock = iLocked
-        # # End Function
-        # # """
-
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return self.viewer.ZoomOut()
 
     def __repr__(self):
         return f'Viewer(name="{ self.name }")'

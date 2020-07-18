@@ -40,10 +40,10 @@ class File(FileComponent):
         self.file = com_object
 
     @property
-    def size(self):
+    def size(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Size() As long (Read Only)
                 | 
                 |     Returns the size of the file.
@@ -56,15 +56,16 @@ class File(FileComponent):
                 |          FileSize = TestFile.Size
 
         :return: int
+        :rtype: int
         """
 
         return self.file.Size
 
     @property
-    def type(self):
+    def type(self) -> str:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Type() As CATBSTR (Read Only)
                 | 
                 |     Returns the type of the file. For instance, if the file has a .txt or .doc
@@ -78,14 +79,15 @@ class File(FileComponent):
                 |          FileSize = TestFile.Size
 
         :return: str
+        :rtype: str
         """
 
         return self.file.Type
 
-    def open_as_text_stream(self, i_mode):
+    def open_as_text_stream(self, i_mode: str) -> TextStream:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func OpenAsTextStream(CATBSTR iMode) As TextStream
                 | 
                 |     Opens the file and retrieves it as a TextSteam object. Paramater iMode can
@@ -101,6 +103,7 @@ class File(FileComponent):
 
         :param str i_mode:
         :return: TextStream
+        :rtype: TextStream
         """
         return TextStream(self.file.OpenAsTextStream(i_mode))
 
