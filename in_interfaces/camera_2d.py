@@ -34,13 +34,13 @@ class Camera2D(Camera):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.camera2_d = com_object
+        self.camera_2d = com_object
 
     @property
-    def viewpoint2_d(self):
+    def viewpoint2_d(self) -> Viewpoint2D:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Viewpoint2D() As Viewpoint2D
                 | 
                 |     Returns or sets the 2D viewpoint of a 2D camera.
@@ -57,17 +57,18 @@ class Camera2D(Camera):
                 |          CATIA.ActiveWindow.SpecsViewer.Viewpoint2D = MyCamera.Viewpoint2D
 
         :return: Viewpoint2D
+        :rtype: Viewpoint2D
         """
 
-        return Viewpoint2D(self.camera2_d.Viewpoint2D)
+        return Viewpoint2D(self.camera_2d.Viewpoint2D)
 
     @viewpoint2_d.setter
-    def viewpoint2_d(self, value):
+    def viewpoint2_d(self, value: Viewpoint2D):
         """
         :param Viewpoint2D value:
         """
 
-        self.camera2_d.Viewpoint2D = value
+        self.camera_2d.Viewpoint2D = value
 
     def __repr__(self):
         return f'Camera2D(name="{self.name}")'

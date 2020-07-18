@@ -14,7 +14,6 @@ from pycatia.in_interfaces.files import Files
 
 
 class Folder(FileComponent):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -38,10 +37,10 @@ class Folder(FileComponent):
         self.folder = com_object
 
     @property
-    def files(self):
+    def files(self) -> Files:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Files() As Files (Read Only)
                 | 
                 |     Returns the file collection of the folder.
@@ -54,15 +53,16 @@ class Folder(FileComponent):
                 |          Set TestFiles = TestFolder.Files
 
         :return: Files
+        :rtype: Files
         """
 
         return Files(self.folder.Files)
 
     @property
-    def sub_folders(self):
+    def sub_folders(self) -> 'Folders':
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SubFolders() As Folders (Read Only)
                 | 
                 |     Returns the folder collection of the folder.
@@ -75,9 +75,10 @@ class Folder(FileComponent):
                 |          Set TestSubFolders = TestFolder.SubFolders
 
         :return: Folders
+        :rtype: Folders
         """
         from pycatia.in_interfaces.folders import Folders
         return Folders(self.folder.SubFolders)
 
     def __repr__(self):
-        return f'Folder(name="{ self.name }")'
+        return f'Folder(name="{self.name}")'
