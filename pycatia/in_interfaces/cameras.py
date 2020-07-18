@@ -11,6 +11,7 @@
 
 from pycatia.in_interfaces.camera import Camera
 from pycatia.system_interfaces.collection import Collection
+from pycatia.types import cat_variant
 
 
 class Cameras(Collection):
@@ -58,7 +59,7 @@ class Cameras(Collection):
         super().__init__(com_object, child_object=Camera)
         self.cameras = com_object
 
-    def item(self, i_index):
+    def item(self, i_index: cat_variant) -> Camera:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -89,15 +90,16 @@ class Cameras(Collection):
                 |          Dim ThatCamera As Camera
                 |          Set ThatCamera = CATIA.ActiveDocument.Cameras.Item("MyCamera")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: Camera
+        :rtype: Camera
         """
         return Camera(self.cameras.Item(i_index))
 
-    def remove(self, i_index):
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Remove(CATVariant iIndex)
                 | 
                 |     Removes a camera from the Cameras collection.
@@ -122,8 +124,9 @@ class Cameras(Collection):
                 |      CATIA.ActiveDocument.Cameras.Remove(10)
                 |      CATIA.ActiveDocument.Cameras.Remove("CameraToBeRemoved")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: None
+        :rtype: None
         """
         return self.cameras.Remove(i_index)
 

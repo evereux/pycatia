@@ -41,10 +41,10 @@ class DraftingPageSetup(PageSetup):
         self.drafting_page_setup = com_object
 
     @property
-    def choose_best_orientation(self):
+    def choose_best_orientation(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ChooseBestOrientation() As boolean
                 | 
                 |     Activates or deactivates the choice of the best
@@ -57,12 +57,13 @@ class DraftingPageSetup(PageSetup):
                 |          MySheet.DrawingPageSetUp.ChooseBestOrientation = TRUE
 
         :return: bool
+        :rtype: bool
         """
 
         return self.drafting_page_setup.ChooseBestOrientation
 
     @choose_best_orientation.setter
-    def choose_best_orientation(self, value):
+    def choose_best_orientation(self, value: bool):
         """
         :param bool value:
         """
@@ -70,10 +71,10 @@ class DraftingPageSetup(PageSetup):
         self.drafting_page_setup.ChooseBestOrientation = value
 
     @property
-    def fit_to_printer_format(self):
+    def fit_to_printer_format(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FitToPrinterFormat() As boolean
                 | 
                 |     Fits the format of the print to the printer format.
@@ -84,12 +85,13 @@ class DraftingPageSetup(PageSetup):
                 |          MySheet.DrawingPageSetUp.FitToPrinterFormat = TRUE
 
         :return: bool
+        :rtype: bool
         """
 
         return self.drafting_page_setup.FitToPrinterFormat
 
     @fit_to_printer_format.setter
-    def fit_to_printer_format(self, value):
+    def fit_to_printer_format(self, value: bool):
         """
         :param bool value:
         """
@@ -97,10 +99,10 @@ class DraftingPageSetup(PageSetup):
         self.drafting_page_setup.FitToPrinterFormat = value
 
     @property
-    def fit_to_sheet_format(self):
+    def fit_to_sheet_format(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FitToSheetFormat() As boolean
                 | 
                 |     Fits the format of the print to the sheet format.
@@ -111,12 +113,13 @@ class DraftingPageSetup(PageSetup):
                 |          MySheet.DrawingPageSetUp.FitToSheetFormat = TRUE
 
         :return: bool
+        :rtype: bool
         """
 
         return self.drafting_page_setup.FitToSheetFormat
 
     @fit_to_sheet_format.setter
-    def fit_to_sheet_format(self, value):
+    def fit_to_sheet_format(self, value: bool):
         """
         :param bool value:
         """

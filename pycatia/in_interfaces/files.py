@@ -35,7 +35,7 @@ class Files(Collection):
         super().__init__(com_object, child_object=File)
         self.files = com_object
 
-    def item(self, i_number):
+    def item(self, i_number: int) -> File:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -67,6 +67,7 @@ class Files(Collection):
 
         :param int i_number:
         :return: File
+        :rtype: File
         """
         return File(self.files.Item(i_number))
 

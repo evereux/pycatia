@@ -36,21 +36,22 @@ class CgrAdhesionSettingAtt(SettingController):
         self.cgr_adhesion_setting_att = com_object
 
     @property
-    def v4_v5_fdt(self):
+    def v4_v5_fdt(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property V4V5_FDT() As boolean
                 | 
                 |     Retrieves the V4V5_FDT container activation state.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.cgr_adhesion_setting_att.V4V5_FDT
 
     @v4_v5_fdt.setter
-    def v4_v5_fdt(self, value):
+    def v4_v5_fdt(self, value: bool):
         """
         :param bool value:
         """
@@ -58,21 +59,22 @@ class CgrAdhesionSettingAtt(SettingController):
         self.cgr_adhesion_setting_att.V4V5_FDT = value
 
     @property
-    def v4_model_comment_page(self):
+    def v4_model_comment_page(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property V4_Model_CommentPage() As boolean
                 | 
                 |     Retrieves the V4_Model_CommentPage container activation state.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.cgr_adhesion_setting_att.V4_Model_CommentPage
 
     @v4_model_comment_page.setter
-    def v4_model_comment_page(self, value):
+    def v4_model_comment_page(self, value: bool):
         """
         :param bool value:
         """
@@ -80,21 +82,22 @@ class CgrAdhesionSettingAtt(SettingController):
         self.cgr_adhesion_setting_att.V4_Model_CommentPage = value
 
     @property
-    def v4_model_ln_f(self):
+    def v4_model_ln_f(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property V4_Model_LnF() As boolean
                 | 
                 |     Retrieves the V4_Model_LnF container activation state.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.cgr_adhesion_setting_att.V4_Model_LnF
 
     @v4_model_ln_f.setter
-    def v4_model_ln_f(self, value):
+    def v4_model_ln_f(self, value: bool):
         """
         :param bool value:
         """
@@ -102,21 +105,22 @@ class CgrAdhesionSettingAtt(SettingController):
         self.cgr_adhesion_setting_att.V4_Model_LnF = value
 
     @property
-    def v5_spa(self):
+    def v5_spa(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property V5_SPA() As boolean
                 | 
                 |     Retrieves the V5_SPA container activation state.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.cgr_adhesion_setting_att.V5_SPA
 
     @v5_spa.setter
-    def v5_spa(self, value):
+    def v5_spa(self, value: bool):
         """
         :param bool value:
         """
@@ -124,31 +128,32 @@ class CgrAdhesionSettingAtt(SettingController):
         self.cgr_adhesion_setting_att.V5_SPA = value
 
     @property
-    def voxels(self):
+    def voxels(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Voxels() As boolean
                 | 
                 |     Retrieves the Voxels container activation state.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.cgr_adhesion_setting_att.Voxels
 
     @voxels.setter
-    def voxels(self, value):
+    def voxels(self, value: bool):
         """
         :param bool value:
         """
 
         self.cgr_adhesion_setting_att.Voxels = value
 
-    def get_v4_v5_fdt_info(self, admin_level, o_locked):
+    def get_v4_v5_fdt_info(self, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetV4V5_FDTInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -159,13 +164,14 @@ class CgrAdhesionSettingAtt(SettingController):
         :param str admin_level:
         :param str o_locked:
         :return: bool
+        :rtype: bool
         """
         return self.cgr_adhesion_setting_att.GetV4V5_FDTInfo(admin_level, o_locked)
 
-    def get_v4_model_comment_page_info(self, admin_level, o_locked):
+    def get_v4_model_comment_page_info(self, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetV4_Model_CommentPageInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -176,13 +182,14 @@ class CgrAdhesionSettingAtt(SettingController):
         :param str admin_level:
         :param str o_locked:
         :return: bool
+        :rtype: bool
         """
         return self.cgr_adhesion_setting_att.GetV4_Model_CommentPageInfo(admin_level, o_locked)
 
-    def get_v4_model_ln_f_info(self, admin_level, o_locked):
+    def get_v4_model_ln_f_info(self, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetV4_Model_LnFInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -193,13 +200,14 @@ class CgrAdhesionSettingAtt(SettingController):
         :param str admin_level:
         :param str o_locked:
         :return: bool
+        :rtype: bool
         """
         return self.cgr_adhesion_setting_att.GetV4_Model_LnFInfo(admin_level, o_locked)
 
-    def get_v5_spa_info(self, admin_level, o_locked):
+    def get_v5_spa_info(self, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetV5_SPAInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -210,13 +218,14 @@ class CgrAdhesionSettingAtt(SettingController):
         :param str admin_level:
         :param str o_locked:
         :return: bool
+        :rtype: bool
         """
         return self.cgr_adhesion_setting_att.GetV5_SPAInfo(admin_level, o_locked)
 
-    def get_voxels_info(self, admin_level, o_locked):
+    def get_voxels_info(self, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetVoxelsInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
                 | 
@@ -227,13 +236,14 @@ class CgrAdhesionSettingAtt(SettingController):
         :param str admin_level:
         :param str o_locked:
         :return: bool
+        :rtype: bool
         """
         return self.cgr_adhesion_setting_att.GetVoxelsInfo(admin_level, o_locked)
 
-    def set_v4_v5_fdt_lock(self, i_locked):
+    def set_v4_v5_fdt_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetV4V5_FDTLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the V4V5_FDT container activation state.
@@ -241,6 +251,7 @@ class CgrAdhesionSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.cgr_adhesion_setting_att.SetV4V5_FDTLock(i_locked)
         # # # # Autogenerated comment: 
@@ -259,10 +270,10 @@ class CgrAdhesionSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_v4_model_comment_page_lock(self, i_locked):
+    def set_v4_model_comment_page_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetV4_Model_CommentPageLock(boolean iLocked)
                 | 
                 |     Retrieves information about the V4_Model_CommentPage container activation
@@ -271,6 +282,7 @@ class CgrAdhesionSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.cgr_adhesion_setting_att.SetV4_Model_CommentPageLock(i_locked)
         # # # # Autogenerated comment: 
@@ -289,10 +301,10 @@ class CgrAdhesionSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_v4_model_ln_f_lock(self, i_locked):
+    def set_v4_model_ln_f_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetV4_Model_LnFLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the V4_Model_LnF container activation
@@ -301,6 +313,7 @@ class CgrAdhesionSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.cgr_adhesion_setting_att.SetV4_Model_LnFLock(i_locked)
         # # # # Autogenerated comment: 
@@ -319,10 +332,10 @@ class CgrAdhesionSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_v5_spa_lock(self, i_locked):
+    def set_v5_spa_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetV5_SPALock(boolean iLocked)
                 | 
                 |     Locks or unlocks the V5_SPA container activation state.
@@ -330,6 +343,7 @@ class CgrAdhesionSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.cgr_adhesion_setting_att.SetV5_SPALock(i_locked)
         # # # # Autogenerated comment: 
@@ -348,10 +362,10 @@ class CgrAdhesionSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_voxels_lock(self, i_locked):
+    def set_voxels_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetVoxelsLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the Voxels container activation state.
@@ -359,6 +373,7 @@ class CgrAdhesionSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.cgr_adhesion_setting_att.SetVoxelsLock(i_locked)
         # # # # Autogenerated comment: 
