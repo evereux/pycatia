@@ -8,5 +8,4 @@ pycatia.base_interfaces
 
    pycatia/base_interfaces/base_application
    pycatia/base_interfaces/context
-   pycatia/base_interfaces/move
    pycatia/base_interfaces/pycatia
