@@ -80,7 +80,7 @@ class HybridShapeInverse(HybridShape):
                 | 
                 |     Gets or sets the element's orientation.
                 |     Orientation = 1 : the element is not inverted. = -1 : the element is inverted, =
-               |      2 : the element can not be inverted. Orientation can not be set to 2.
+                |      2 : the element can not be inverted. Orientation can not be set to 2.
 
         :return: int
         :rtype: int
