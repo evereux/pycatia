@@ -332,8 +332,6 @@ class Document(AnyObject):
                 |          Doc.Close()
 
         """
-        self.logger.info(f'Closing current active document.'
-                         f' CATIA will prompt you to save if you haven\'t already done so.')
         self.document.Close()
 
     def create_filter(self, i_filter_name: str, i_filter_definition: str) -> None:
@@ -769,6 +767,46 @@ class Document(AnyObject):
             if file_name.is_file():
                 self.logger.warning('File already exists. Click YES in CATIA V5.')
         self.document.SaveAs(file_name)
+
+    def search_for_items(self, selection_objects):
+        """
+        # todo: This search is currently restricted to GSD objects only.
+        Selection objects is a list of items to search for.
+        Example: selection_objects = ['Point', 'Line']
+        Example query string to search for all lines and points
+        "('Generative Shape Design'.Point + 'Generative Shape Design'.Line),in"
+        :param document:
+        :param list selection_objects:
+        :return Selected Automation Object:
+        """
+
+        self.logger.warning('This method may be deprecated in future versions.')
+
+        gsd_items = [
+            'Point',
+            'Line'
+        ]
+
+        query_string = str()
+        # build query string
+
+        for counter, item in enumerate(selection_objects):
+            boolean = str()
+            if counter > 0 and not counter == len(selection_objects):
+                boolean = ' + '
+            if item in gsd_items:
+                query_string = f"{query_string}{boolean}'Generative Shape Design'.{item}"
+
+        query_string = f"({query_string}),in"
+
+        selection = self.document.Selection
+        selection.Search(query_string)
+
+        selected = list()
+        for i in range(0, selection.Count):
+            selected.append(AnyObject(selection.Item(i + 1).Value))
+
+        return selected
 
     def spa_workbench(self):
         """
