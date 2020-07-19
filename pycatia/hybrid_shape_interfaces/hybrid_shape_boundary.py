@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -16,7 +16,7 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeBoundary(HybridShape):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -47,43 +47,45 @@ class HybridShapeBoundary(HybridShape):
         self.hybrid_shape_boundary = com_object
 
     @property
-    def from_py(self):
+    def from_(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property From() As Reference
                 | 
                 |     Removes or sets the ending limit(i.e Limit2) of the boundary
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_boundary.From)
 
-    @from_py.setter
-    def from_py(self, value):
+    @from_.setter
+    def from_(self, reference: Reference):
         """
-        :param Reference value:
+        :param Reference reference:
         """
 
-        self.hybrid_shape_boundary.From = value
+        self.hybrid_shape_boundary.From = reference.com_object
 
     @property
-    def from_orientation(self):
+    def from_orientation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FromOrientation() As long
                 | 
                 |     Gets or sets the Ending Limit Orientation (i.e same or inverse)
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_boundary.FromOrientation
 
     @from_orientation.setter
-    def from_orientation(self, value):
+    def from_orientation(self, value: int):
         """
         :param int value:
         """
@@ -91,10 +93,10 @@ class HybridShapeBoundary(HybridShape):
         self.hybrid_shape_boundary.FromOrientation = value
 
     @property
-    def initial_element(self):
+    def initial_element(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property InitialElement() As Reference
                 | 
                 |     Returns or sets the element used to initialize the boundary
@@ -110,12 +112,13 @@ class HybridShapeBoundary(HybridShape):
                 |          InitElem = ShpBoundary.InitialElement
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_boundary.InitialElement)
 
     @initial_element.setter
-    def initial_element(self, value):
+    def initial_element(self, value: Reference):
         """
         :param Reference value:
         """
@@ -123,10 +126,10 @@ class HybridShapeBoundary(HybridShape):
         self.hybrid_shape_boundary.InitialElement = value
 
     @property
-    def propagation(self):
+    def propagation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Propagation() As long
                 | 
                 |     Returns or sets the boundary propagation.
@@ -139,12 +142,13 @@ class HybridShapeBoundary(HybridShape):
                 |          Prop = ShpBoundary.Propagation
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_boundary.Propagation
 
     @propagation.setter
-    def propagation(self, value):
+    def propagation(self, value: int):
         """
         :param int value:
         """
@@ -152,10 +156,10 @@ class HybridShapeBoundary(HybridShape):
         self.hybrid_shape_boundary.Propagation = value
 
     @property
-    def support(self):
+    def support(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets the support surface around which the boundary is
@@ -170,12 +174,13 @@ class HybridShapeBoundary(HybridShape):
                 |          SupSurf = ShpBoundary.Support
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_boundary.Support)
 
     @support.setter
-    def support(self, value):
+    def support(self, value: Reference):
         """
         :param Reference value:
         """
@@ -183,21 +188,22 @@ class HybridShapeBoundary(HybridShape):
         self.hybrid_shape_boundary.Support = value
 
     @property
-    def to(self):
+    def to(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property To() As Reference
                 | 
                 |     Removes or sets the starting limit(i.e Limit1) of the boundary
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_boundary.To)
 
     @to.setter
-    def to(self, value):
+    def to(self, value: Reference):
         """
         :param Reference value:
         """
@@ -205,21 +211,22 @@ class HybridShapeBoundary(HybridShape):
         self.hybrid_shape_boundary.To = value
 
     @property
-    def to_orientation(self):
+    def to_orientation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ToOrientation() As long
                 | 
                 |     Gets or sets the Starting Limit Orientation (i.e same or inverse)
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_boundary.ToOrientation
 
     @to_orientation.setter
-    def to_orientation(self, value):
+    def to_orientation(self, value: int):
         """
         :param int value:
         """

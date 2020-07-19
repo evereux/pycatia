@@ -15,6 +15,7 @@ from pycatia.sketcher_interfaces.axis_2D import Axis2D
 from pycatia.sketcher_interfaces.factory_2D import Factory2D
 from pycatia.sketcher_interfaces.line_2D import Line2D
 from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.system_interfaces.system_service import SystemService
 
 
 class Sketch(AnyObject):
@@ -40,10 +41,10 @@ class Sketch(AnyObject):
         self.sketch = com_object
 
     @property
-    def absolute_axis(self):
+    def absolute_axis(self) -> Axis2D:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AbsoluteAxis() As Axis2D (Read Only)
                 | 
                 |     Returns the 2D absolute axis of the sketch. The absolute axis is used for
@@ -63,15 +64,16 @@ class Sketch(AnyObject):
                 |              Set myAxis = mySketch.AbsoluteAxis
 
         :return: Axis2D
+        :rtype: Axis2D
         """
 
         return Axis2D(self.sketch.AbsoluteAxis)
 
     @property
-    def center_line(self):
+    def center_line(self) -> Line2D:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CenterLine() As Line2D
                 | 
                 |     Returns the geometric 2D line defined as the center line of the sketch.
@@ -89,12 +91,13 @@ class Sketch(AnyObject):
                 |              Set myCenterLine = mySketch.CenterLine
 
         :return: Line2D
+        :rtype: Line2D
         """
 
         return Line2D(self.sketch.CenterLine)
 
     @center_line.setter
-    def center_line(self, value):
+    def center_line(self, value: Line2D):
         """
         :param Line2D value:
         """
@@ -102,10 +105,10 @@ class Sketch(AnyObject):
         self.sketch.CenterLine = value
 
     @property
-    def constraints(self):
+    def constraints(self) -> Constraints:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Constraints() As Constraints (Read Only)
                 | 
                 |     Returns the list of constraints included in the sketch.
@@ -123,15 +126,16 @@ class Sketch(AnyObject):
                 |              Set colConstraint = mySketch.Constraints
 
         :return: Constraints
+        :rtype: Constraints
         """
 
         return Constraints(self.sketch.Constraints)
 
     @property
-    def factory_2D(self):
+    def factory_2d(self) -> Factory2D:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Factory2D() As Factory2D (Read Only)
                 | 
                 |     Returns the 2D factory of the sketch. Take care that you must open
@@ -151,15 +155,16 @@ class Sketch(AnyObject):
                 |              Set my2DFactory = mySketch.Factory2D
 
         :return: Factory2D
+        :rtype: Factory2D
         """
 
         return Factory2D(self.sketch.Factory2D)
 
     @property
-    def geometric_elements(self):
+    def geometric_elements(self) -> GeometricElements:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property GeometricElements() As GeometricElements (Read
                 | Only)
                 | 
@@ -179,14 +184,15 @@ class Sketch(AnyObject):
                 |              Set colGeometry = mySketch.GeometricElements
 
         :return: GeometricElements
+        :rtype: GeometricElements
         """
 
         return GeometricElements(self.sketch.GeometricElements)
 
-    def close_edition(self):
+    def close_edition(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub CloseEdition()
                 | 
                 |     Closes the Sketch Edition. Once you have finished working with the sketch,
@@ -201,26 +207,27 @@ class Sketch(AnyObject):
                 |          mySketch.CloseEdition
 
         :return: None
+        :rtype: None
         """
-        self.logger.info(f'Closing sketch "{self.name}".')
         return self.sketch.CloseEdition()
 
-    def evaluate(self):
+    def evaluate(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Evaluate()
                 | 
                 |     Evaluate the constraint system of the sketch
 
         :return: None
+        :rtype: None
         """
         return self.sketch.Evaluate()
 
-    def get_absolute_axis_data(self, o_axis_data):
+    def get_absolute_axis_data(self) -> tuple:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetAbsoluteAxisData(CATSafeArrayVariant oAxisData)
                 | 
                 |     Returns the sketch axis coordinates in 3D space. The matrix returned
@@ -252,42 +259,39 @@ class Sketch(AnyObject):
                 |              Set VerticalY = myAxisCoordinate(8)
                 |              Set VerticalZ = myAxisCoordinate(9)
 
-        :param tuple o_axis_data:
-        :return: None
+        :return: tuple
+        :rtype: tuple
         """
-        return self.sketch.GetAbsoluteAxisData(o_axis_data)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'get_absolute_axis_data'
-        # # vba_code = """
-        # # Public Function get_absolute_axis_data(sketch)
-        # #     Dim oAxisData (2)
-        # #     sketch.GetAbsoluteAxisData oAxisData
-        # #     get_absolute_axis_data = oAxisData
-        # # End Function
-        # # """
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        vba_function_name = 'get_absolute_axis_data'
+        vba_code = """
+        Public Function get_absolute_axis_data(sketch)
+            Dim oAxisData(8)
+            sketch.GetAbsoluteAxisData oAxisData
+            get_absolute_axis_data = oAxisData
+        End Function
+        """
 
-    def inverse_orientation(self):
+        system_service = SystemService(self.application.SystemService)
+        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+
+    def inverse_orientation(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InverseOrientation()
                 | 
                 |     Inverse Orientation Of Sketch
 
         :return: None
+        :rtype: None
         """
         return self.sketch.InverseOrientation()
 
-    def open_edition(self):
+    def open_edition(self) -> Factory2D:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func OpenEdition() As Factory2D
                 | 
                 |     Opens the Sketch Edition. You must open edition on a sketch before you can
@@ -307,14 +311,14 @@ class Sketch(AnyObject):
                 |              Set my2DFactory = mySketch.OpenEdition
 
         :return: Factory2D
+        :rtype: Factory2D
         """
-        self.logger.info(f'Opening sketch "{self.name}".')
         return Factory2D(self.sketch.OpenEdition())
 
-    def set_absolute_axis_data(self, i_axis_data):
+    def set_absolute_axis_data(self, i_axis_data: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAbsoluteAxisData(CATSafeArrayVariant iAxisData)
                 | 
                 |     Sets the absolute axis of the sketch in 3D space.
@@ -331,23 +335,9 @@ class Sketch(AnyObject):
 
         :param tuple i_axis_data:
         :return: None
+        :rtype: None
         """
         return self.sketch.SetAbsoluteAxisData(i_axis_data)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_absolute_axis_data'
-        # # vba_code = """
-        # # Public Function set_absolute_axis_data(sketch)
-        # #     Dim iAxisData (2)
-        # #     sketch.SetAbsoluteAxisData iAxisData
-        # #     set_absolute_axis_data = iAxisData
-        # # End Function
-        # # """
-
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
         return f'Sketch(name="{self.name}")'

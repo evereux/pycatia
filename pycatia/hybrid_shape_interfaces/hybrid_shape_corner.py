@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -19,7 +19,7 @@ class HybridShapeCorner(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -50,10 +50,10 @@ class HybridShapeCorner(HybridShape):
         self.hybrid_shape_corner = com_object
 
     @property
-    def begin_of_corner(self):
+    def begin_of_corner(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BeginOfCorner() As long
                 | 
                 |     Return or Set the number of the beginning curve of the corner. This
@@ -68,12 +68,13 @@ class HybridShapeCorner(HybridShape):
                 |          hybShpCorner.BeginOfCorner = 1
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_corner.BeginOfCorner
 
     @begin_of_corner.setter
-    def begin_of_corner(self, value):
+    def begin_of_corner(self, value: int):
         """
         :param int value:
         """
@@ -81,10 +82,10 @@ class HybridShapeCorner(HybridShape):
         self.hybrid_shape_corner.BeginOfCorner = value
 
     @property
-    def corner_type(self):
+    def corner_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CornerType() As long
                 | 
                 |     Returns or sets the Corner Type.
@@ -99,12 +100,13 @@ class HybridShapeCorner(HybridShape):
                 |          lCornerType = hybShpCorner.CornerType
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_corner.CornerType
 
     @corner_type.setter
-    def corner_type(self, value):
+    def corner_type(self, value: int):
         """
         :param int value:
         """
@@ -112,10 +114,10 @@ class HybridShapeCorner(HybridShape):
         self.hybrid_shape_corner.CornerType = value
 
     @property
-    def direction(self):
+    def direction(self) -> HybridShapeDirection:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Direction() As HybridShapeDirection
                 | 
                 |     Returns or sets the 3D corner direction.
@@ -133,12 +135,13 @@ class HybridShapeCorner(HybridShape):
                 |          hybShpCorner.Direction = hybShpDirection
 
         :return: HybridShapeDirection
+        :rtype: HybridShapeDirection
         """
 
         return HybridShapeDirection(self.hybrid_shape_corner.Direction)
 
     @direction.setter
-    def direction(self, value):
+    def direction(self, value: HybridShapeDirection):
         """
         :param HybridShapeDirection value:
         """
@@ -146,10 +149,10 @@ class HybridShapeCorner(HybridShape):
         self.hybrid_shape_corner.Direction = value
 
     @property
-    def discrimination_index(self):
+    def discrimination_index(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DiscriminationIndex() As long
                 | 
                 |     Returns or set the discrimination index of the current corner. Several
@@ -167,12 +170,13 @@ class HybridShapeCorner(HybridShape):
                 |          hybShpCorner.DiscriminationIndex = 2
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_corner.DiscriminationIndex
 
     @discrimination_index.setter
-    def discrimination_index(self, value):
+    def discrimination_index(self, value: int):
         """
         :param int value:
         """
@@ -180,10 +184,10 @@ class HybridShapeCorner(HybridShape):
         self.hybrid_shape_corner.DiscriminationIndex = value
 
     @property
-    def first_elem(self):
+    def first_elem(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstElem() As Reference
                 | 
                 |     Returns or sets the corner first reference element.
@@ -202,12 +206,13 @@ class HybridShapeCorner(HybridShape):
                 |          fisrtElt = hybShpCorner.FirstElem
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_corner.FirstElem)
 
     @first_elem.setter
-    def first_elem(self, value):
+    def first_elem(self, value: Reference):
         """
         :param Reference value:
         """
@@ -215,10 +220,10 @@ class HybridShapeCorner(HybridShape):
         self.hybrid_shape_corner.FirstElem = value
 
     @property
-    def first_orientation(self):
+    def first_orientation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstOrientation() As long
                 | 
                 |     Returns or sets the orientation of the corner first reference element. The
@@ -240,12 +245,13 @@ class HybridShapeCorner(HybridShape):
                 |          firstOrient = hybShpCorner.FirstOrientation
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_corner.FirstOrientation
 
     @first_orientation.setter
-    def first_orientation(self, value):
+    def first_orientation(self, value: int):
         """
         :param int value:
         """
@@ -253,10 +259,10 @@ class HybridShapeCorner(HybridShape):
         self.hybrid_shape_corner.FirstOrientation = value
 
     @property
-    def first_tangent_orientation(self):
+    def first_tangent_orientation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstTangentOrientation() As long
                 | 
                 |     Returns or sets the tangent orientation of the corner first reference
@@ -273,12 +279,13 @@ class HybridShapeCorner(HybridShape):
                 |          firstOrient = hybShpCorner.FirstTangentOrientation
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_corner.FirstTangentOrientation
 
     @first_tangent_orientation.setter
-    def first_tangent_orientation(self, value):
+    def first_tangent_orientation(self, value: int):
         """
         :param int value:
         """
@@ -286,10 +293,10 @@ class HybridShapeCorner(HybridShape):
         self.hybrid_shape_corner.FirstTangentOrientation = value
 
     @property
-    def on_vertex(self):
+    def on_vertex(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OnVertex() As boolean
                 | 
                 |     Returns or sets the On Vertex mode off/on.
@@ -304,12 +311,13 @@ class HybridShapeCorner(HybridShape):
                 |          bOnVertex = hybShpCorner.OnVertex
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_corner.OnVertex
 
     @on_vertex.setter
-    def on_vertex(self, value):
+    def on_vertex(self, value: bool):
         """
         :param bool value:
         """
@@ -317,10 +325,10 @@ class HybridShapeCorner(HybridShape):
         self.hybrid_shape_corner.OnVertex = value
 
     @property
-    def radius(self):
+    def radius(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Radius() As Length (Read Only)
                 | 
                 |     Returns the corner radius.
@@ -335,15 +343,16 @@ class HybridShapeCorner(HybridShape):
                 |          radius = hybShpCorner.Radius
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_corner.Radius)
 
     @property
-    def second_elem(self):
+    def second_elem(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondElem() As Reference
                 | 
                 |     Returns or sets the corner second reference element.
@@ -362,12 +371,13 @@ class HybridShapeCorner(HybridShape):
                 |          secondElt = hybShpCorner.SecondElem
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_corner.SecondElem)
 
     @second_elem.setter
-    def second_elem(self, value):
+    def second_elem(self, value: Reference):
         """
         :param Reference value:
         """
@@ -375,10 +385,10 @@ class HybridShapeCorner(HybridShape):
         self.hybrid_shape_corner.SecondElem = value
 
     @property
-    def second_orientation(self):
+    def second_orientation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondOrientation() As long
                 | 
                 |     Returns or sets the orientation of the corner second reference element. The
@@ -401,12 +411,13 @@ class HybridShapeCorner(HybridShape):
                 |          hybShpCorner.SecondOrientation = -1
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_corner.SecondOrientation
 
     @second_orientation.setter
-    def second_orientation(self, value):
+    def second_orientation(self, value: int):
         """
         :param int value:
         """
@@ -414,10 +425,10 @@ class HybridShapeCorner(HybridShape):
         self.hybrid_shape_corner.SecondOrientation = value
 
     @property
-    def second_tangent_orientation(self):
+    def second_tangent_orientation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondTangentOrientation() As long
                 | 
                 |     Returns or sets the tangent orientation of the corner second reference
@@ -434,12 +445,13 @@ class HybridShapeCorner(HybridShape):
                 |          firstOrient = hybShpCorner.SecondTangentOrientation
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_corner.SecondTangentOrientation
 
     @second_tangent_orientation.setter
-    def second_tangent_orientation(self, value):
+    def second_tangent_orientation(self, value: int):
         """
         :param int value:
         """
@@ -447,10 +459,10 @@ class HybridShapeCorner(HybridShape):
         self.hybrid_shape_corner.SecondTangentOrientation = value
 
     @property
-    def support(self):
+    def support(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets the corner support.
@@ -467,12 +479,13 @@ class HybridShapeCorner(HybridShape):
                 |          hybShpCorner.Support = supportSurf
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_corner.Support)
 
     @support.setter
-    def support(self, value):
+    def support(self, value: Reference):
         """
         :param Reference value:
         """
@@ -480,10 +493,10 @@ class HybridShapeCorner(HybridShape):
         self.hybrid_shape_corner.Support = value
 
     @property
-    def trim(self):
+    def trim(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Trim() As boolean
                 | 
                 |     Returns or sets whether the corner reference curves are or should be
@@ -502,12 +515,13 @@ class HybridShapeCorner(HybridShape):
                 |          hybShpCorner.Trim = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_corner.Trim
 
     @trim.setter
-    def trim(self, value):
+    def trim(self, value: bool):
         """
         :param bool value:
         """
@@ -515,10 +529,10 @@ class HybridShapeCorner(HybridShape):
         self.hybrid_shape_corner.Trim = value
 
     @property
-    def trim_mode(self):
+    def trim_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TrimMode() As long
                 | 
                 |     Returns or sets whether the corner reference curves are or should be
@@ -539,22 +553,23 @@ class HybridShapeCorner(HybridShape):
                 |          hybShpCorner.TrimMode = 1
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_corner.TrimMode
 
     @trim_mode.setter
-    def trim_mode(self, value):
+    def trim_mode(self, value: int):
         """
         :param int value:
         """
 
         self.hybrid_shape_corner.TrimMode = value
 
-    def invert_first_orientation(self):
+    def invert_first_orientation(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InvertFirstOrientation()
                 | 
                 |     Inverts the first reference element orientation used to compute the
@@ -570,13 +585,14 @@ class HybridShapeCorner(HybridShape):
                 |          hybShpCorner.InvertFirstOrientation
 
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_corner.InvertFirstOrientation()
 
-    def invert_second_orientation(self):
+    def invert_second_orientation(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InvertSecondOrientation()
                 | 
                 |     Inverts the second reference element orientation used to compute the
@@ -592,6 +608,7 @@ class HybridShapeCorner(HybridShape):
                 |          hybShpCorner.InvertSecondOrientation
 
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_corner.InvertSecondOrientation()
 

@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -19,7 +19,7 @@ class HybridShapePointOnPlane(Point):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -44,10 +44,10 @@ class HybridShapePointOnPlane(Point):
         self.hybrid_shape_point_on_plane = com_object
 
     @property
-    def first_direction(self):
+    def first_direction(self) -> HybridShapeDirection:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstDirection() As HybridShapeDirection
                 | 
                 |     Returns or sets the first direction on the plane to compute the point (for
@@ -62,12 +62,13 @@ class HybridShapePointOnPlane(Point):
                 |          Set oDirection = PointOnPlane.FirstDirection
 
         :return: HybridShapeDirection
+        :rtype: HybridShapeDirection
         """
 
         return HybridShapeDirection(self.hybrid_shape_point_on_plane.FirstDirection)
 
     @first_direction.setter
-    def first_direction(self, value):
+    def first_direction(self, value: HybridShapeDirection):
         """
         :param HybridShapeDirection value:
         """
@@ -75,10 +76,10 @@ class HybridShapePointOnPlane(Point):
         self.hybrid_shape_point_on_plane.FirstDirection = value
 
     @property
-    def plane(self):
+    def plane(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Plane() As Reference
                 | 
                 |     Returns or sets the support plane.
@@ -94,12 +95,13 @@ class HybridShapePointOnPlane(Point):
                 |          Set oPlane  = PointOnPlane.Plane
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_point_on_plane.Plane)
 
     @plane.setter
-    def plane(self, value):
+    def plane(self, value: Reference):
         """
         :param Reference value:
         """
@@ -107,10 +109,10 @@ class HybridShapePointOnPlane(Point):
         self.hybrid_shape_point_on_plane.Plane = value
 
     @property
-    def point(self):
+    def point(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Point() As Reference
                 | 
                 |     Returns or sets the reference point.
@@ -128,12 +130,13 @@ class HybridShapePointOnPlane(Point):
                 |          Set oPoint  = PointOnPlane.Point
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_point_on_plane.Point)
 
     @point.setter
-    def point(self, value):
+    def point(self, value: Reference):
         """
         :param Reference value:
         """
@@ -141,10 +144,10 @@ class HybridShapePointOnPlane(Point):
         self.hybrid_shape_point_on_plane.Point = value
 
     @property
-    def projection_surface(self):
+    def projection_surface(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ProjectionSurface() As Reference
                 | 
                 |     Returns or sets the projection surface to compute the
@@ -159,12 +162,13 @@ class HybridShapePointOnPlane(Point):
                 |          Set oProjSur = PointOnPlane.ProjectionSurface
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_point_on_plane.ProjectionSurface)
 
     @projection_surface.setter
-    def projection_surface(self, value):
+    def projection_surface(self, value: Reference):
         """
         :param Reference value:
         """
@@ -172,10 +176,10 @@ class HybridShapePointOnPlane(Point):
         self.hybrid_shape_point_on_plane.ProjectionSurface = value
 
     @property
-    def x_offset(self):
+    def x_offset(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property XOffset() As Length (Read Only)
                 | 
                 |     Returns the X cartesian coordinate in the plane.
@@ -189,15 +193,16 @@ class HybridShapePointOnPlane(Point):
                 |          Set oX  = PointOnPlane.XOffset
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_point_on_plane.XOffset)
 
     @property
-    def y_offset(self):
+    def y_offset(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property YOffset() As Length (Read Only)
                 | 
                 |     Returns the Y cartesian coordinate in the plane.
@@ -211,14 +216,15 @@ class HybridShapePointOnPlane(Point):
                 |          Set oY  = PointOnPlane.YOffset
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_point_on_plane.YOffset)
 
-    def get_second_direction(self, o_dir_x, o_dir_y, o_dir_z):
+    def get_second_direction(self, o_dir_x: float, o_dir_y: float, o_dir_z: float) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetSecondDirection(double oDirX,
                 | double oDirY,
                 | double oDirZ)
@@ -240,13 +246,14 @@ class HybridShapePointOnPlane(Point):
         :param float o_dir_y:
         :param float o_dir_z:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_point_on_plane.GetSecondDirection(o_dir_x, o_dir_y, o_dir_z)
 
-    def set_second_direction(self, i_dir_x, i_dir_y, i_dir_z):
+    def set_second_direction(self, i_dir_x: float, i_dir_y: float, i_dir_z: float) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSecondDirection(double iDirX,
                 | double iDirY,
                 | double iDirZ)
@@ -268,6 +275,7 @@ class HybridShapePointOnPlane(Point):
         :param float i_dir_y:
         :param float i_dir_z:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_point_on_plane.SetSecondDirection(i_dir_x, i_dir_y, i_dir_z)
 

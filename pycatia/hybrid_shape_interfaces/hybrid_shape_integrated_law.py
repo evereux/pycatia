@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeIntegratedLaw(HybridShape):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -44,10 +44,10 @@ class HybridShapeIntegratedLaw(HybridShape):
         self.hybrid_shape_integrated_law = com_object
 
     @property
-    def advanced_law(self):
+    def advanced_law(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AdvancedLaw() As Reference
                 | 
                 |     Gets or sets the external law.
@@ -63,12 +63,13 @@ class HybridShapeIntegratedLaw(HybridShape):
                 |              Set ALaw = IntegratedLaw.AdvancedLaw
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_integrated_law.AdvancedLaw)
 
     @advanced_law.setter
-    def advanced_law(self, value):
+    def advanced_law(self, value: Reference):
         """
         :param Reference value:
         """
@@ -76,10 +77,10 @@ class HybridShapeIntegratedLaw(HybridShape):
         self.hybrid_shape_integrated_law.AdvancedLaw = value
 
     @property
-    def end_param(self):
+    def end_param(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property EndParam() As Length (Read Only)
                 | 
                 |     Gets end parameter.
@@ -95,15 +96,16 @@ class HybridShapeIntegratedLaw(HybridShape):
                 |              Set EParam = IntegratedLaw.EndParam
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_integrated_law.EndParam)
 
     @property
-    def implicit_law_interpolation_mode(self):
+    def implicit_law_interpolation_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ImplicitLawInterpolationMode() As long
                 | 
                 |     Gets or sets Interpolation mode for implicit law.
@@ -112,21 +114,23 @@ class HybridShapeIntegratedLaw(HybridShape):
                 |     Parameters:
                 | 
                 |         ImplicitLawInterpolationMode
-                |             Implicit law interpolation mode ImplicitLawInterpolationMode = 0 :
-                |             CATGSMImplicitLawInterpo_None = 1 : CATGSMImplicitLawInterpo_Linear = 2 :
-                |             CATGSMImplicitLawInterpo_Cubic This example retrieves in InterpolLawMode the
-                |             Interpolation mode for the IntegratedLaw hybrid shape feature.
+                |             Implicit law interpolation mode ImplicitLawInterpolationMode =
+                |             0 : CATGSMImplicitLawInterpo_None =
+                |             1 : CATGSMImplicitLawInterpo_Linear =
+                |             2 : CATGSMImplicitLawInterpo_Cubic This example retrieves in InterpolLawMode the
+                |                 Interpolation mode for the IntegratedLaw hybrid shape feature.
                 | 
                 |              Dim InterpolLawMode
                 |              Set InterpolLawMode = IntegratedLaw.ImplicitLawInterpolationMode
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_integrated_law.ImplicitLawInterpolationMode
 
     @implicit_law_interpolation_mode.setter
-    def implicit_law_interpolation_mode(self, value):
+    def implicit_law_interpolation_mode(self, value: int):
         """
         :param int value:
         """
@@ -134,10 +138,10 @@ class HybridShapeIntegratedLaw(HybridShape):
         self.hybrid_shape_integrated_law.ImplicitLawInterpolationMode = value
 
     @property
-    def invert_mapping_law(self):
+    def invert_mapping_law(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property InvertMappingLaw() As boolean
                 | 
                 |     Gets or sets the mapping orientation of the law.
@@ -146,21 +150,22 @@ class HybridShapeIntegratedLaw(HybridShape):
                 | 
                 |         InvertMappingLaw
                 |             False : Law is applied from the beginning to the end of the curve
-                |                  (mapping is not inverted).
+                |                     (mapping is not inverted).
                 |             True : Law is applied from the end to the beginning of the curve (mapping is inverted).
-                |             This example retrieves in IMappingLaw the mapping orientation of the law for the
-                |             IntegratedLaw hybrid shape feature.
+                |                    This example retrieves in IMappingLaw the mapping orientation of the law for the
+                |                    IntegratedLaw hybrid shape feature.
                 | 
                 |              Dim IMappingLaw
                 |              Set IMappingLaw = IntegratedLaw.InvertMappingLaw
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_integrated_law.InvertMappingLaw
 
     @invert_mapping_law.setter
-    def invert_mapping_law(self, value):
+    def invert_mapping_law(self, value: bool):
         """
         :param bool value:
         """
@@ -168,10 +173,10 @@ class HybridShapeIntegratedLaw(HybridShape):
         self.hybrid_shape_integrated_law.InvertMappingLaw = value
 
     @property
-    def pitch_law_type(self):
+    def pitch_law_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PitchLawType() As long
                 | 
                 |     Gets or sets pitch law type.
@@ -179,20 +184,22 @@ class HybridShapeIntegratedLaw(HybridShape):
                 |     Parameters:
                 | 
                 |         PitchLawType
-                |             Type of law PitchLawType = 0 : None = 1 : Constant = 2 : Linear = 3 : SType = 4 :
-                |             Advanced = 5 : Implicit This example retrieves in PLawType the pitch law type for the
-                |             IntegratedLaw hybrid shape feature.
+                |             Type of law PitchLawType = 0 : None = 1 : Constant = 2 : Linear = 3 : SType =
+                |             4 : Advanced = 5 : Implicit
+                |
+                |     This example retrieves in PLawType the pitch law type for the IntegratedLaw hybrid shape feature.
                 | 
-                |              Dim PLawType
-                |              Set PLawType = IntegratedLaw.PitchLawType
+                |     Dim PLawType
+                |     Set PLawType = IntegratedLaw.PitchLawType
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_integrated_law.PitchLawType
 
     @pitch_law_type.setter
-    def pitch_law_type(self, value):
+    def pitch_law_type(self, value: int):
         """
         :param int value:
         """
@@ -200,10 +207,10 @@ class HybridShapeIntegratedLaw(HybridShape):
         self.hybrid_shape_integrated_law.PitchLawType = value
 
     @property
-    def spine(self):
+    def spine(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Spine() As Reference
                 | 
                 |     Gets or sets Spine for implicit law.
@@ -220,12 +227,13 @@ class HybridShapeIntegratedLaw(HybridShape):
                 |              Set Spine1 = IntegratedLaw.Spine
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_integrated_law.Spine)
 
     @spine.setter
-    def spine(self, value):
+    def spine(self, value: Reference):
         """
         :param Reference value:
         """
@@ -233,10 +241,10 @@ class HybridShapeIntegratedLaw(HybridShape):
         self.hybrid_shape_integrated_law.Spine = value
 
     @property
-    def start_param(self):
+    def start_param(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property StartParam() As Length (Read Only)
                 | 
                 |     Gets start parameter.
@@ -252,14 +260,15 @@ class HybridShapeIntegratedLaw(HybridShape):
                 |              Set SParam = IntegratedLaw.StartParam
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_integrated_law.StartParam)
 
-    def append_new_point_and_param(self, i_point, i_param):
+    def append_new_point_and_param(self, i_point: Reference, i_param: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AppendNewPointAndParam(Reference iPoint,
                 | long iParam)
                 | 
@@ -276,6 +285,7 @@ class HybridShapeIntegratedLaw(HybridShape):
         :param Reference i_point:
         :param int i_param:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_integrated_law.AppendNewPointAndParam(i_point.com_object, i_param)
         # # # # Autogenerated comment: 
@@ -294,10 +304,10 @@ class HybridShapeIntegratedLaw(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_point_and_param(self, i_pos, o_point, o_param):
+    def get_point_and_param(self, i_pos: int, o_point: Reference, o_param: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetPointAndParam(long iPos,
                 | Reference oPoint,
                 | Reference oParam)
@@ -319,6 +329,7 @@ class HybridShapeIntegratedLaw(HybridShape):
         :param Reference o_point:
         :param Reference o_param:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_integrated_law.GetPointAndParam(i_pos, o_point.com_object, o_param.com_object)
         # # # # Autogenerated comment: 
@@ -337,10 +348,10 @@ class HybridShapeIntegratedLaw(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_size(self):
+    def get_size(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetSize() As long
                 | 
                 |     Gets the size of the list in the law i.e. number of points in the list of
@@ -352,26 +363,28 @@ class HybridShapeIntegratedLaw(HybridShape):
                 |             size of the list.
 
         :return: int
+        :rtype: int
         """
         return self.hybrid_shape_integrated_law.GetSize()
 
-    def remove_all_points_and_params(self):
+    def remove_all_points_and_params(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveAllPointsAndParams()
                 | 
                 |     Removes all the points and associated parameters.
                 |     Note: Used for law type = 5(Implicit)
 
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_integrated_law.RemoveAllPointsAndParams()
 
-    def remove_point_and_param(self, i_point):
+    def remove_point_and_param(self, i_point: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemovePointAndParam(Reference iPoint)
                 | 
                 |     Removes a point and its parameter. for law type = 5(Implicit)
@@ -383,6 +396,7 @@ class HybridShapeIntegratedLaw(HybridShape):
 
         :param Reference i_point:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_integrated_law.RemovePointAndParam(i_point.com_object)
         # # # # Autogenerated comment: 
@@ -401,10 +415,10 @@ class HybridShapeIntegratedLaw(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_end_param(self, i_end_param):
+    def set_end_param(self, i_end_param: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetEndParam(long iEndParam)
                 | 
                 |     Sets end parameter.
@@ -417,13 +431,14 @@ class HybridShapeIntegratedLaw(HybridShape):
 
         :param int i_end_param:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_integrated_law.SetEndParam(i_end_param)
 
-    def set_start_param(self, i_start_param):
+    def set_start_param(self, i_start_param: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetStartParam(long iStartParam)
                 | 
                 |     Sets start parameter.
@@ -436,6 +451,7 @@ class HybridShapeIntegratedLaw(HybridShape):
 
         :param int i_start_param:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_integrated_law.SetStartParam(i_start_param)
 

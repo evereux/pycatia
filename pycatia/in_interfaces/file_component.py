@@ -9,12 +9,10 @@
         
 """
 
-
 from pycatia.system_interfaces.any_object import AnyObject
 
 
 class FileComponent(AnyObject):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -39,10 +37,10 @@ class FileComponent(AnyObject):
         self.file_component = com_object
 
     @property
-    def parent_folder(self):
+    def parent_folder(self) -> 'Folder':
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ParentFolder() As Folder
                 | 
                 |     Returns or sets the parent folder of the file.
@@ -54,12 +52,13 @@ class FileComponent(AnyObject):
                 |          TestFile.ParentFolder
 
         :return: Folder
+        :rtype: Folder
         """
         from pycatia.in_interfaces.folder import Folder
         return Folder(self.file_component.ParentFolder)
 
     @parent_folder.setter
-    def parent_folder(self, value):
+    def parent_folder(self, value: 'Folder'):
         """
         :param Folder value:
         """
@@ -67,10 +66,10 @@ class FileComponent(AnyObject):
         self.file_component.ParentFolder = value
 
     @property
-    def path(self):
+    def path(self) -> str:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Path() As CATBSTR (Read Only)
                 | 
                 |     Returns the full path of the file.
@@ -83,9 +82,10 @@ class FileComponent(AnyObject):
                 |          FilePath = TestFile.Path
 
         :return: str
+        :rtype: str
         """
 
         return self.file_component.Path
 
     def __repr__(self):
-        return f'FileComponent(name="{ self.name }")'
+        return f'FileComponent(name="{self.name}")'

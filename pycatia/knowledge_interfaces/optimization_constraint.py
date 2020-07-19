@@ -41,7 +41,7 @@ class OptimizationConstraint(Check):
         self.optimization_constraint = com_object
 
     @property
-    def distance_to_satisfaction(self):
+    def distance_to_satisfaction(self) -> RealParam:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -50,12 +50,13 @@ class OptimizationConstraint(Check):
                 |     Returns the parameter containing the distance to constraint satisfaction.
 
         :return: RealParam
+        :rtype: RealParam
         """
 
         return RealParam(self.optimization_constraint.DistanceToSatisfaction)
 
     @property
-    def precision(self):
+    def precision(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -67,12 +68,13 @@ class OptimizationConstraint(Check):
                 |     satisfied (when : distance to satisfaction < precision).
 
         :return: float
+        :rtype: float
         """
 
         return self.optimization_constraint.Precision
 
     @precision.setter
-    def precision(self, value):
+    def precision(self, value: float):
         """
         :param float value:
         """
@@ -80,7 +82,7 @@ class OptimizationConstraint(Check):
         self.optimization_constraint.Precision = value
 
     @property
-    def satisfaction(self):
+    def satisfaction(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -89,6 +91,7 @@ class OptimizationConstraint(Check):
                 |     Returns the constraint satisfaction.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.optimization_constraint.Satisfaction

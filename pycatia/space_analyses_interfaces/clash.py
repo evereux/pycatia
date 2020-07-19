@@ -16,10 +16,9 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class Clash(AnyObject):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -39,10 +38,10 @@ class Clash(AnyObject):
         self.clash = com_object
 
     @property
-    def annotated_views(self):
+    def annotated_views(self) -> AnnotatedViews:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AnnotatedViews() As AnnotatedViews (Read Only)
                 | 
                 |     Returns the AnnotatedViews collection of the clash.
@@ -57,15 +56,16 @@ class Clash(AnyObject):
                 |             Set TheAnnotatedViewsList = NewClash.AnnotatedViews
 
         :return: AnnotatedViews
+        :rtype: AnnotatedViews
         """
 
         return AnnotatedViews(self.clash.AnnotatedViews)
 
     @property
-    def clearance(self):
+    def clearance(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Clearance() As double
                 | 
                 |     Returns or sets the clearance value for the computation.
@@ -93,12 +93,13 @@ class Clash(AnyObject):
                 |                 NewClash.Clearance = 10.
 
         :return: float
+        :rtype: float
         """
 
         return self.clash.Clearance
 
     @clearance.setter
-    def clearance(self, value):
+    def clearance(self, value: float):
         """
         :param float value:
         """
@@ -106,10 +107,10 @@ class Clash(AnyObject):
         self.clash.Clearance = value
 
     @property
-    def computation_type(self):
+    def computation_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ComputationType() As CatClashComputationType
                 | 
                 |     Returns or sets the computation type.
@@ -133,24 +134,25 @@ class Clash(AnyObject):
                 | 
                 |                 NewClash.ComputationType = catClashComputationTypeBetweenAll
 
-        :return: enum cat_clash_computation_type
+        :return: int
+        :rtype: int
         """
 
         return self.clash.ComputationType
 
     @computation_type.setter
-    def computation_type(self, value):
+    def computation_type(self, value: int):
         """
-        :param enum cat_clash_computation_type value:
+        :param int value:
         """
 
         self.clash.ComputationType = value
 
     @property
-    def conflicts(self):
+    def conflicts(self) -> Conflicts:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Conflicts() As Conflicts (Read Only)
                 | 
                 |     Returns the collection of computed Conflicts.
@@ -165,15 +167,16 @@ class Clash(AnyObject):
                 |             Set NewConflicts = NewClash.Conflicts
 
         :return: Conflicts
+        :rtype: Conflicts
         """
 
         return Conflicts(self.clash.Conflicts)
 
     @property
-    def first_group(self):
+    def first_group(self) -> Group:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstGroup() As Group
                 | 
                 |     Returns or sets the first group used by the computation.
@@ -199,12 +202,13 @@ class Clash(AnyObject):
                 |                 NewClash.FirstGroup = FirstGroup
 
         :return: Group
+        :rtype: Group
         """
 
         return Group(self.clash.FirstGroup)
 
     @first_group.setter
-    def first_group(self, value):
+    def first_group(self, value: Group):
         """
         :param Group value:
         """
@@ -212,10 +216,10 @@ class Clash(AnyObject):
         self.clash.FirstGroup = value
 
     @property
-    def interference_type(self):
+    def interference_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property InterferenceType() As CatClashInterferenceType
                 | 
                 |     Returns or sets the interference type for the computation.
@@ -239,24 +243,25 @@ class Clash(AnyObject):
                 | 
                 |                 NewClash.InterferenceType = CatClashInterferenceTypeContact
 
-        :return: enum cat_clash_interference_type
+        :return: int
+        :rtype: int
         """
 
         return self.clash.InterferenceType
 
     @interference_type.setter
-    def interference_type(self, value):
+    def interference_type(self, value: int):
         """
-        :param enum cat_clash_interference_type value:
+        :param int value:
         """
 
         self.clash.InterferenceType = value
 
     @property
-    def marker3_ds(self):
+    def marker_3ds(self) -> Marker3Ds:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Marker3Ds() As Marker3Ds (Read Only)
                 | 
                 |     Returns the Marker3Ds collection of the clash.
@@ -271,15 +276,16 @@ class Clash(AnyObject):
                 |             Set TheMarker3DsList = NewClash.Marker3Ds
 
         :return: Marker3Ds
+        :rtype: Marker3Ds
         """
 
         return Marker3Ds(self.clash.Marker3Ds)
 
     @property
-    def second_group(self):
+    def second_group(self) -> Group:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondGroup() As Group
                 | 
                 |     Returns or sets the second group used by the computation.
@@ -305,22 +311,23 @@ class Clash(AnyObject):
                 |                 NewClash.SecondGroup = SecondGroup
 
         :return: Group
+        :rtype: Group
         """
 
         return Group(self.clash.SecondGroup)
 
     @second_group.setter
-    def second_group(self, value):
+    def second_group(self, group: Group):
         """
-        :param Group value:
+        :param Group group:
         """
 
-        self.clash.SecondGroup = value
+        self.clash.SecondGroup = group.com_object
 
-    def compute(self):
+    def compute(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Compute()
                 | 
                 |     Computes the conflicts.
@@ -334,10 +341,11 @@ class Clash(AnyObject):
                 |             NewClash.Compute
 
         :return: None
+        :rtype: None
         """
         return self.clash.Compute()
 
-    def export(self, i_type=None, i_path=None):
+    def export(self, i_type: int, i_path: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -363,26 +371,12 @@ class Clash(AnyObject):
                 |             NewClash.Export CatClashExportTypeXMLResultOnly,
                 |             "c:\\tmp\\sample.xml"
 
-        :param CatClashExportType i_type:
+        :param int i_type:
         :param str i_path:
         :return: None
+        :rtype: None
         """
-        return self.clash.Export(i_type.com_object, i_path)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'export'
-        # # vba_code = """
-        # # Public Function export(clash)
-        # #     Dim iType (2)
-        # #     clash.Export iType
-        # #     export = iType
-        # # End Function
-        # # """
-
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return self.clash.Export(i_type, i_path)
 
     def __repr__(self):
-        return f'Clash(name="{ self.name }")'
+        return f'Clash(name="{self.name}")'

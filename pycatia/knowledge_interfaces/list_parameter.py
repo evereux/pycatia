@@ -36,7 +36,7 @@ class ListParameter(Parameter):
         self.list_parameter = com_object
 
     @property
-    def value_list(self):
+    def value_list(self) -> List:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -45,6 +45,7 @@ class ListParameter(Parameter):
                 |     Returns or sets the value of the List object.
 
         :return: List
+        :rtype: List
         """
 
         return List(self.list_parameter.ValueList)

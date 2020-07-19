@@ -1,24 +1,23 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
         They are there as a guide as to how the visual basic / catscript functions work
         and thus help debugging in pycatia.
-
+        
 """
 
 from pycatia.mec_mod_interfaces.body import Body
 from pycatia.system_interfaces.collection import Collection
-from .body import Body
+from pycatia.types import cat_variant
 
 
 class Bodies(Collection):
-
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -35,50 +34,51 @@ class Bodies(Collection):
         super().__init__(collection_com_object, child_object=Body)
         self.bodies = collection_com_object
 
-    def add(self):
+    def add(self) -> Body:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Add() As Body
                 | 
                 |     Creates a new body and adds it to the Bodies collection. This body becomes
                 |     the current one
-                |
+                | 
                 |     Returns:
-                |         The created body
+                |         The created body 
                 |     Example:
                 |         The following example creates a body names NewBody in the body
                 |         collection of the rootPart part in the partDoc part document. NewBody becomes
                 |         the current body in partDoc.
-                |
+                | 
                 |          Set rootPart = partDoc.Part
                 |          Set NewBody = rootPart.Bodies.Add()
 
         :return: Body
+        :rtype: Body
         """
         return Body(self.bodies.Add())
 
-    def item(self, i_index):
+    def item(self, i_index: cat_variant) -> Body:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(CATVariant iIndex) As Body
                 | 
                 |     Returns a body using its index or its name from the Bodies
                 |     collection.
-                |
+                | 
                 |     Parameters:
-                |
+                | 
                 |         iIndex
                 |             The index or the name of the body to retrieve from the collection
                 |             of bodies. As a numerics, this index is the rank of the body in the collection.
                 |             The index of the first body in the collection is 1, and the index of the last
                 |             body is Count. As a string, it is the name you assigned to the body using the
-                |
+                |             
                 | 
-                |         AnyObject.Name property.
+                |         AnyObject.Name property. 
                 |     Returns:
-                |         The retrieved body
+                |         The retrieved body 
                 |     Example:
                 |         This example retrieves in ThisBody the fifth body in the collection and
                 |         in ThatBody the body named MyBody in the body collection of the partDoc part
@@ -88,8 +88,9 @@ class Bodies(Collection):
                 |          Set ThisBody = BodyColl.Item(5)
                 |          Set ThatBody = BodyColl.Item("MyBody")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: Body
+        :rtype: Body
         """
         return Body(self.bodies.Item(i_index))
 

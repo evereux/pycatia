@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -19,7 +19,7 @@ class HybridShapeDevelop(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -57,10 +57,10 @@ class HybridShapeDevelop(HybridShape):
         self.hybrid_shape_develop = com_object
 
     @property
-    def mode(self):
+    def mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Mode() As long
                 | 
                 |     Returns or sets the developing mode.
@@ -72,12 +72,13 @@ class HybridShapeDevelop(HybridShape):
                 |         Develop / project algorithm
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_develop.Mode
 
     @mode.setter
-    def mode(self, value):
+    def mode(self, value: int):
         """
         :param int value:
         """
@@ -85,10 +86,10 @@ class HybridShapeDevelop(HybridShape):
         self.hybrid_shape_develop.Mode = value
 
     @property
-    def mode_pos(self):
+    def mode_pos(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ModePos() As long
                 | 
                 |     Returns or sets the positioning mode used for the 2D wire.
@@ -101,12 +102,13 @@ class HybridShapeDevelop(HybridShape):
                 |         The 2D wire is to be moved from its initial position
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_develop.ModePos
 
     @mode_pos.setter
-    def mode_pos(self, value):
+    def mode_pos(self, value: int):
         """
         :param int value:
         """
@@ -114,10 +116,10 @@ class HybridShapeDevelop(HybridShape):
         self.hybrid_shape_develop.ModePos = value
 
     @property
-    def plane_axis_direction(self):
+    def plane_axis_direction(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PlaneAxisDirection() As Reference
                 | 
                 |     Returns or sets the direction corresponding to the first axis of the planar
@@ -126,12 +128,13 @@ class HybridShapeDevelop(HybridShape):
                 |     BiDimFeatEdge or RectilinearMonoDimFeatEdge.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_develop.PlaneAxisDirection)
 
     @plane_axis_direction.setter
-    def plane_axis_direction(self, value):
+    def plane_axis_direction(self, value: Reference):
         """
         :param Reference value:
         """
@@ -139,10 +142,10 @@ class HybridShapeDevelop(HybridShape):
         self.hybrid_shape_develop.PlaneAxisDirection = value
 
     @property
-    def plane_axis_origin(self):
+    def plane_axis_origin(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PlaneAxisOrigin() As Reference
                 | 
                 |     Returns or sets the point designated as the origin of the planar 2D
@@ -150,12 +153,13 @@ class HybridShapeDevelop(HybridShape):
                 |     Sub-element(s) supported (see Boundary object): Vertex.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_develop.PlaneAxisOrigin)
 
     @plane_axis_origin.setter
-    def plane_axis_origin(self, value):
+    def plane_axis_origin(self, value: Reference):
         """
         :param Reference value:
         """
@@ -163,10 +167,10 @@ class HybridShapeDevelop(HybridShape):
         self.hybrid_shape_develop.PlaneAxisOrigin = value
 
     @property
-    def point_on_support(self):
+    def point_on_support(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PointOnSupport() As Reference
                 | 
                 |     Returns or sets the development origin on the support
@@ -174,12 +178,13 @@ class HybridShapeDevelop(HybridShape):
                 |     Sub-element(s) supported (see Boundary object): Vertex.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_develop.PointOnSupport)
 
     @point_on_support.setter
-    def point_on_support(self, value):
+    def point_on_support(self, value: Reference):
         """
         :param Reference value:
         """
@@ -187,10 +192,10 @@ class HybridShapeDevelop(HybridShape):
         self.hybrid_shape_develop.PointOnSupport = value
 
     @property
-    def positioned_wire(self):
+    def positioned_wire(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PositionedWire() As Reference
                 | 
                 |     Returns or sets the positioning transformation.
@@ -198,12 +203,13 @@ class HybridShapeDevelop(HybridShape):
                 |     develop feature and which result corresponds to the positioned 2D wire.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_develop.PositionedWire)
 
     @positioned_wire.setter
-    def positioned_wire(self, value):
+    def positioned_wire(self, value: Reference):
         """
         :param Reference value:
         """
@@ -211,10 +217,10 @@ class HybridShapeDevelop(HybridShape):
         self.hybrid_shape_develop.PositionedWire = value
 
     @property
-    def support(self):
+    def support(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets the support revolution surface on which the development is
@@ -222,12 +228,13 @@ class HybridShapeDevelop(HybridShape):
                 |     Sub-element(s) supported (see Boundary object): Face.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_develop.Support)
 
     @support.setter
-    def support(self, value):
+    def support(self, value: Reference):
         """
         :param Reference value:
         """
@@ -235,10 +242,10 @@ class HybridShapeDevelop(HybridShape):
         self.hybrid_shape_develop.Support = value
 
     @property
-    def wire_to_develop(self):
+    def wire_to_develop(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property WireToDevelop() As Reference
                 | 
                 |     Returns or sets the 2D wire to be developed.
@@ -246,22 +253,23 @@ class HybridShapeDevelop(HybridShape):
                 |     BiDimFeatEdge.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_develop.WireToDevelop)
 
     @wire_to_develop.setter
-    def wire_to_develop(self, value):
+    def wire_to_develop(self, value: Reference):
         """
         :param Reference value:
         """
 
         self.hybrid_shape_develop.WireToDevelop = value
 
-    def get_plane_axis_angle(self):
+    def get_plane_axis_angle(self) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPlaneAxisAngle() As Angle
                 | 
                 |     Retrieves the rotation angle.
@@ -272,13 +280,14 @@ class HybridShapeDevelop(HybridShape):
                 |         The rotation value
 
         :return: Angle
+        :rtype: Angle
         """
         return Angle(self.hybrid_shape_develop.GetPlaneAxisAngle())
 
-    def get_plane_axis_coord(self, i_coor_idx):
+    def get_plane_axis_coord(self, i_coor_idx: int) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPlaneAxisCoord(long iCoorIdx) As Length
                 | 
                 |     Retrieves the translation coordinates.
@@ -298,13 +307,14 @@ class HybridShapeDevelop(HybridShape):
 
         :param int i_coor_idx:
         :return: Length
+        :rtype: Length
         """
         return Length(self.hybrid_shape_develop.GetPlaneAxisCoord(i_coor_idx))
 
-    def get_plane_axis_swap_axes(self, ii):
+    def get_plane_axis_swap_axes(self, ii: int) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPlaneAxisSwapAxes(long ii) As long
                 | 
                 |     Retrieves the inversion axes from their previous
@@ -330,13 +340,14 @@ class HybridShapeDevelop(HybridShape):
 
         :param int ii:
         :return: int
+        :rtype: int
         """
         return self.hybrid_shape_develop.GetPlaneAxisSwapAxes(ii)
 
-    def set_plane_axis_angle(self, i_angle):
+    def set_plane_axis_angle(self, i_angle: float) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPlaneAxisAngle(double iAngle)
                 | 
                 |     Sets the rotation angle.
@@ -350,13 +361,14 @@ class HybridShapeDevelop(HybridShape):
 
         :param float i_angle:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_develop.SetPlaneAxisAngle(i_angle)
 
-    def set_plane_axis_coord(self, i_coor_idx, i_coord_value):
+    def set_plane_axis_coord(self, i_coor_idx: int, i_coord_value: float) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPlaneAxisCoord(long iCoorIdx,
                 | double iCoordValue)
                 | 
@@ -377,13 +389,14 @@ class HybridShapeDevelop(HybridShape):
         :param int i_coor_idx:
         :param float i_coord_value:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_develop.SetPlaneAxisCoord(i_coor_idx, i_coord_value)
 
-    def set_plane_axis_swap_axes(self, i_idx, i_inversion_value):
+    def set_plane_axis_swap_axes(self, i_idx: int, i_inversion_value: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPlaneAxisSwapAxes(long iIdx,
                 | long iInversionValue)
                 | 
@@ -409,6 +422,7 @@ class HybridShapeDevelop(HybridShape):
         :param int i_idx:
         :param int i_inversion_value:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_develop.SetPlaneAxisSwapAxes(i_idx, i_inversion_value)
 

@@ -33,49 +33,52 @@ class Axis2D(Geometry2D):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.axis2_d = com_object
+        self.axis_2d = com_object
 
     @property
-    def horizontal_reference(self):
+    def horizontal_reference(self) -> Line2D:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HorizontalReference() As Line2D (Read Only)
                 | 
                 |     Returns the 2D coordinate system horizontal axis.
 
         :return: Line2D
+        :rtype: Line2D
         """
 
-        return Line2D(self.axis2_d.HorizontalReference)
+        return Line2D(self.axis_2d.HorizontalReference)
 
     @property
-    def origin(self):
+    def origin(self) -> Point2D:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Origin() As Point2D (Read Only)
                 | 
                 |     Returns the 2D coordinate system origin.
 
         :return: Point2D
+        :rtype: Point2D
         """
 
-        return Point2D(self.axis2_d.Origin)
+        return Point2D(self.axis_2d.Origin)
 
     @property
-    def vertical_reference(self):
+    def vertical_reference(self) -> Line2D:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property VerticalReference() As Line2D (Read Only)
                 | 
                 |     Returns the 2D coordinate system vertical axis.
 
         :return: Line2D
+        :rtype: Line2D
         """
 
-        return Line2D(self.axis2_d.VerticalReference)
+        return Line2D(self.axis_2d.VerticalReference)
 
     def __repr__(self):
         return f'Axis2D(name="{self.name}")'

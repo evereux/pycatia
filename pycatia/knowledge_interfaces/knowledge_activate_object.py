@@ -35,7 +35,7 @@ class KnowledgeActivateObject(KnowledgeObject):
         self.knowledge_activate_object = com_object
 
     @property
-    def activated(self):
+    def activated(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -55,11 +55,12 @@ class KnowledgeActivateObject(KnowledgeObject):
                 |          End If
 
         :return: bool
+        :rtype: bool
         """
 
         return self.knowledge_activate_object.Activated
 
-    def activate(self):
+    def activate(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -74,10 +75,11 @@ class KnowledgeActivateObject(KnowledgeObject):
                 |          maximummass.Activate()
 
         :return: None
+        :rtype: None
         """
         return self.knowledge_activate_object.Activate()
 
-    def deactivate(self):
+    def deactivate(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -92,6 +94,7 @@ class KnowledgeActivateObject(KnowledgeObject):
                 |          maximummass.Deactivate()
 
         :return: None
+        :rtype: None
         """
         return self.knowledge_activate_object.Deactivate()
 

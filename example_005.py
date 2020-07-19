@@ -32,7 +32,9 @@ part = document.part()
 file = r'tests\Sample_Point_CSV_File1_small.csv'
 
 # create the points.
-create_points(part, file, units='in', geometry_set_name='Points_Construction')
+create_points(part, file, units='mm', geometry_set_name='Points_Construction')
+
+# if you can't see the points hide your origin planes and refram window.
 
 # # re-enable display refresh
 # catia.refresh_display = True

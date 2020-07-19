@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapeIntersection(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -47,10 +47,10 @@ class HybridShapeIntersection(HybridShape):
         self.hybrid_shape_intersection = com_object
 
     @property
-    def element1(self):
+    def element1(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Element1() As Reference
                 | 
                 |     Returns or sets the first element to intersect.
@@ -65,12 +65,13 @@ class HybridShapeIntersection(HybridShape):
                 |          Set FirstElem = Intersection.Element1
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_intersection.Element1)
 
     @element1.setter
-    def element1(self, value):
+    def element1(self, value: Reference):
         """
         :param Reference value:
         """
@@ -78,10 +79,10 @@ class HybridShapeIntersection(HybridShape):
         self.hybrid_shape_intersection.Element1 = value
 
     @property
-    def element2(self):
+    def element2(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Element2() As Reference
                 | 
                 |     Returns or sets the second element to intersect.
@@ -96,12 +97,13 @@ class HybridShapeIntersection(HybridShape):
                 |          Set SecondElem = Intersection.Element2
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_intersection.Element2)
 
     @element2.setter
-    def element2(self, value):
+    def element2(self, value: Reference):
         """
         :param Reference value:
         """
@@ -109,10 +111,10 @@ class HybridShapeIntersection(HybridShape):
         self.hybrid_shape_intersection.Element2 = value
 
     @property
-    def extend_mode(self):
+    def extend_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExtendMode() As long
                 | 
                 |     Returns or sets the ExtendMode flag for intersect.
@@ -135,12 +137,13 @@ class HybridShapeIntersection(HybridShape):
                 |          checked
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_intersection.ExtendMode
 
     @extend_mode.setter
-    def extend_mode(self, value):
+    def extend_mode(self, value: int):
         """
         :param int value:
         """
@@ -148,10 +151,10 @@ class HybridShapeIntersection(HybridShape):
         self.hybrid_shape_intersection.ExtendMode = value
 
     @property
-    def extrapolate_mode(self):
+    def extrapolate_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExtrapolateMode() As boolean
                 | 
                 |     Returns or sets the ExtrapolateMode flag for intersect.
@@ -164,12 +167,13 @@ class HybridShapeIntersection(HybridShape):
                 |          Set ExtrapolateMode = Intersection.ExtrapolateMode
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_intersection.ExtrapolateMode
 
     @extrapolate_mode.setter
-    def extrapolate_mode(self, value):
+    def extrapolate_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -177,10 +181,10 @@ class HybridShapeIntersection(HybridShape):
         self.hybrid_shape_intersection.ExtrapolateMode = value
 
     @property
-    def intersect_mode(self):
+    def intersect_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property IntersectMode() As boolean
                 | 
                 |     Returns or sets the IntersectMode flag for intersect.
@@ -193,12 +197,13 @@ class HybridShapeIntersection(HybridShape):
                 |          Set IntersectMode = Intersection.IntersectMode
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_intersection.IntersectMode
 
     @intersect_mode.setter
-    def intersect_mode(self, value):
+    def intersect_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -206,10 +211,10 @@ class HybridShapeIntersection(HybridShape):
         self.hybrid_shape_intersection.IntersectMode = value
 
     @property
-    def point_type(self):
+    def point_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PointType() As long
                 | 
                 |     Returns or sets the PointType flag for intersect.
@@ -222,12 +227,13 @@ class HybridShapeIntersection(HybridShape):
                 |          Set PointType = Intersection.PointType
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_intersection.PointType
 
     @point_type.setter
-    def point_type(self, value):
+    def point_type(self, value: int):
         """
         :param int value:
         """
@@ -235,10 +241,10 @@ class HybridShapeIntersection(HybridShape):
         self.hybrid_shape_intersection.PointType = value
 
     @property
-    def solid_mode(self):
+    def solid_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SolidMode() As boolean
                 | 
                 |     Returns or sets the SolidMode flag for intersect.
@@ -251,12 +257,13 @@ class HybridShapeIntersection(HybridShape):
                 |          Set SolidMode = Intersection.SolidMode
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_intersection.SolidMode
 
     @solid_mode.setter
-    def solid_mode(self, value):
+    def solid_mode(self, value: bool):
         """
         :param bool value:
         """

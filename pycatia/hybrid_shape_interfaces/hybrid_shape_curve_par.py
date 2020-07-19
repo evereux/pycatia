@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -12,12 +12,13 @@
 from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.length import Length
 from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
+from pycatia.system_interfaces.system_service import SystemService
 
 
 class HybridShapeCurvePar(HybridShape):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -44,10 +45,10 @@ class HybridShapeCurvePar(HybridShape):
         self.hybrid_shape_curve_par = com_object
 
     @property
-    def curve_offseted(self):
+    def curve_offseted(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CurveOffseted() As Reference
                 | 
                 |     Returns or sets the offset curve of the curve parameter
@@ -65,12 +66,13 @@ class HybridShapeCurvePar(HybridShape):
                 |          offsetCrv = hybShpCurvePar.CurveOffseted
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_curve_par.CurveOffseted)
 
     @curve_offseted.setter
-    def curve_offseted(self, value):
+    def curve_offseted(self, value: Reference):
         """
         :param Reference value:
         """
@@ -78,10 +80,10 @@ class HybridShapeCurvePar(HybridShape):
         self.hybrid_shape_curve_par.CurveOffseted = value
 
     @property
-    def curve_par_law(self):
+    def curve_par_law(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CurveParLaw() As Reference
                 | 
                 |     Returns or sets the offset law.
@@ -94,12 +96,13 @@ class HybridShapeCurvePar(HybridShape):
                 |          Set oLaw = hybShpCurvePar.CurveParLaw
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_curve_par.CurveParLaw)
 
     @curve_par_law.setter
-    def curve_par_law(self, value):
+    def curve_par_law(self, value: Reference):
         """
         :param Reference value:
         """
@@ -107,10 +110,10 @@ class HybridShapeCurvePar(HybridShape):
         self.hybrid_shape_curve_par.CurveParLaw = value
 
     @property
-    def curve_par_type(self):
+    def curve_par_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CurveParType() As long
                 | 
                 |     Returns or sets the corner type.
@@ -128,12 +131,13 @@ class HybridShapeCurvePar(HybridShape):
                 |      oCurveParType = hybShpCurvePar.CurveParType
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_curve_par.CurveParType
 
     @curve_par_type.setter
-    def curve_par_type(self, value):
+    def curve_par_type(self, value: int):
         """
         :param int value:
         """
@@ -141,10 +145,10 @@ class HybridShapeCurvePar(HybridShape):
         self.hybrid_shape_curve_par.CurveParType = value
 
     @property
-    def geodesic(self):
+    def geodesic(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Geodesic() As boolean
                 | 
                 |     Returns or sets Geodesic mode.
@@ -161,12 +165,13 @@ class HybridShapeCurvePar(HybridShape):
                 |          hybShpCurvePar.Geodesic = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_curve_par.Geodesic
 
     @geodesic.setter
-    def geodesic(self, value):
+    def geodesic(self, value: bool):
         """
         :param bool value:
         """
@@ -174,10 +179,10 @@ class HybridShapeCurvePar(HybridShape):
         self.hybrid_shape_curve_par.Geodesic = value
 
     @property
-    def invert_direction(self):
+    def invert_direction(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property InvertDirection() As boolean
                 | 
                 |     Returns or sets the orientation.
@@ -196,12 +201,13 @@ class HybridShapeCurvePar(HybridShape):
                 |          hybShpCurvePar.InvertDirection = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_curve_par.InvertDirection
 
     @invert_direction.setter
-    def invert_direction(self, value):
+    def invert_direction(self, value: bool):
         """
         :param bool value:
         """
@@ -209,10 +215,10 @@ class HybridShapeCurvePar(HybridShape):
         self.hybrid_shape_curve_par.InvertDirection = value
 
     @property
-    def invert_mapping_law(self):
+    def invert_mapping_law(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property InvertMappingLaw() As boolean
                 | 
                 |     Returns or sets the mapping orientation of the law (if offset is specified
@@ -231,12 +237,13 @@ class HybridShapeCurvePar(HybridShape):
                 |          hybShpCurvePar.InvertMappingLaw = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_curve_par.InvertMappingLaw
 
     @invert_mapping_law.setter
-    def invert_mapping_law(self, value):
+    def invert_mapping_law(self, value: bool):
         """
         :param bool value:
         """
@@ -244,10 +251,10 @@ class HybridShapeCurvePar(HybridShape):
         self.hybrid_shape_curve_par.InvertMappingLaw = value
 
     @property
-    def keep_both_sides(self):
+    def keep_both_sides(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property KeepBothSides() As boolean
                 | 
                 |     Returns or sets the both sides mode of the curve parameter
@@ -263,12 +270,13 @@ class HybridShapeCurvePar(HybridShape):
                 |          bothSides = hybShpCurvePar.KeepBothSides
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_curve_par.KeepBothSides
 
     @keep_both_sides.setter
-    def keep_both_sides(self, value):
+    def keep_both_sides(self, value: bool):
         """
         :param bool value:
         """
@@ -276,10 +284,10 @@ class HybridShapeCurvePar(HybridShape):
         self.hybrid_shape_curve_par.KeepBothSides = value
 
     @property
-    def law_type(self):
+    def law_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LawType() As long
                 | 
                 |     Returns or sets the law type.
@@ -304,12 +312,13 @@ class HybridShapeCurvePar(HybridShape):
                 |      oLawType = hybShpCurvePar.LawType
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_curve_par.LawType
 
     @law_type.setter
-    def law_type(self, value):
+    def law_type(self, value: int):
         """
         :param int value:
         """
@@ -317,10 +326,10 @@ class HybridShapeCurvePar(HybridShape):
         self.hybrid_shape_curve_par.LawType = value
 
     @property
-    def maximum_deviation_value(self):
+    def maximum_deviation_value(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MaximumDeviationValue() As double
                 | 
                 |     Sets or Gets the maximum deviation allowed for smoothing
@@ -336,12 +345,13 @@ class HybridShapeCurvePar(HybridShape):
                 |      Set DeviationValue = CurvePar.MaximumDeviationValue
 
         :return: float
+        :rtype: float
         """
 
         return self.hybrid_shape_curve_par.MaximumDeviationValue
 
     @maximum_deviation_value.setter
-    def maximum_deviation_value(self, value):
+    def maximum_deviation_value(self, value: float):
         """
         :param float value:
         """
@@ -349,10 +359,10 @@ class HybridShapeCurvePar(HybridShape):
         self.hybrid_shape_curve_par.MaximumDeviationValue = value
 
     @property
-    def offset(self):
+    def offset(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Offset() As Length (Read Only)
                 | 
                 |     Returns the offset parameter of the curve parameter
@@ -368,15 +378,16 @@ class HybridShapeCurvePar(HybridShape):
                 |          offsetParm = hybShpCurvePar.Offset
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_curve_par.Offset)
 
     @property
-    def offset2(self):
+    def offset2(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Offset2() As Length (Read Only)
                 | 
                 |     Returns the second offset parameter of the curve parameter
@@ -393,15 +404,16 @@ class HybridShapeCurvePar(HybridShape):
                 |          offsetParm = hybShpCurvePar.Offset2
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_curve_par.Offset2)
 
     @property
-    def other_side(self):
+    def other_side(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OtherSide() As Reference (Read Only)
                 | 
                 |     Returns the other side of parallel curve if both sides mode is
@@ -417,15 +429,16 @@ class HybridShapeCurvePar(HybridShape):
                 |          Set otherSide = hybShpCurvePar.OtherSide
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_curve_par.OtherSide)
 
     @property
-    def passing_point(self):
+    def passing_point(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PassingPoint() As Reference
                 | 
                 |     Returns or sets the passing point of the curve parameter
@@ -442,12 +455,13 @@ class HybridShapeCurvePar(HybridShape):
                 |          offsetCrv = hybShpCurvePar.PassingPoint
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_curve_par.PassingPoint)
 
     @passing_point.setter
-    def passing_point(self, value):
+    def passing_point(self, value: Reference):
         """
         :param Reference value:
         """
@@ -455,10 +469,10 @@ class HybridShapeCurvePar(HybridShape):
         self.hybrid_shape_curve_par.PassingPoint = value
 
     @property
-    def smoothing_type(self):
+    def smoothing_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SmoothingType() As long
                 | 
                 |     Returns or sets the smoothing Type.
@@ -475,12 +489,13 @@ class HybridShapeCurvePar(HybridShape):
                 |      Set SType = CurvePar.SmoothingType
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_curve_par.SmoothingType
 
     @smoothing_type.setter
-    def smoothing_type(self, value):
+    def smoothing_type(self, value: int):
         """
         :param int value:
         """
@@ -488,10 +503,10 @@ class HybridShapeCurvePar(HybridShape):
         self.hybrid_shape_curve_par.SmoothingType = value
 
     @property
-    def support(self):
+    def support(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets the support of the curve..
@@ -504,12 +519,13 @@ class HybridShapeCurvePar(HybridShape):
                 |          Set oElem = hybShpCurvePar.Support
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_curve_par.Support)
 
     @support.setter
-    def support(self, value):
+    def support(self, value: Reference):
         """
         :param Reference value:
         """
@@ -517,10 +533,10 @@ class HybridShapeCurvePar(HybridShape):
         self.hybrid_shape_curve_par.Support = value
 
     @property
-    def p3_d_smoothing(self):
+    def p_3d_smoothing(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property p3DSmoothing() As boolean
                 | 
                 |     Returns or sets the '3D Smoothing' option. Role: To activate or not the 3D smoothing option
@@ -534,22 +550,23 @@ class HybridShapeCurvePar(HybridShape):
                 |      Set 3DSmoothingOption = Project.p3DSmoothing
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_curve_par.p3DSmoothing
 
-    @p3_d_smoothing.setter
-    def p3_d_smoothing(self, value):
+    @p_3d_smoothing.setter
+    def p_3d_smoothing(self, value: bool):
         """
         :param bool value:
         """
 
         self.hybrid_shape_curve_par.p3DSmoothing = value
 
-    def get_plane_normal(self, o_normal):
+    def get_plane_normal(self) -> tuple:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetPlaneNormal(CATSafeArrayVariant oNormal)
                 | 
                 |     Returns the Normal of the plane created when the Support of the curve is
@@ -575,30 +592,25 @@ class HybridShapeCurvePar(HybridShape):
                 |             y is in oNormal(1)
                 |             z is in oNormal(2)
 
-        :param tuple o_normal:
-        :return: None
+        :return: tuple
+        :rtype: tuple
         """
-        return self.hybrid_shape_curve_par.GetPlaneNormal(o_normal)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'get_plane_normal'
-        # # vba_code = """
-        # # Public Function get_plane_normal(hybrid_shape_curve_par)
-        # #     Dim oNormal (2)
-        # #     hybrid_shape_curve_par.GetPlaneNormal oNormal
-        # #     get_plane_normal = oNormal
-        # # End Function
-        # # """
+        vba_function_name = 'get_plane_normal'
+        vba_code = """
+        Public Function get_plane_normal(hybrid_shape_curve_par)
+            Dim oNormal (2)
+            hybrid_shape_curve_par.GetPlaneNormal oNormal
+            get_plane_normal = oNormal
+        End Function
+        """
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        system_service = SystemService(self.application.SystemService)
+        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def put_plane_normal(self, i_normal):
+    def put_plane_normal(self, i_normal: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutPlaneNormal(CATSafeArrayVariant iNormal)
                 | 
                 |     Sets the Normal of the plane created when the Support of the curve is not
@@ -616,6 +628,7 @@ class HybridShapeCurvePar(HybridShape):
 
         :param tuple i_normal:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_curve_par.PutPlaneNormal(i_normal)
         # # # # Autogenerated comment: 

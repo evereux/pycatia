@@ -14,15 +14,22 @@ def test_analyze():
     with CATIADocHandler(cat_product) as handler:
         product = handler.document.product()
 
-        assert (
-                0.3061919497633215 == product.analyze.mass and
-                306191.9497633215 == product.analyze.volume and
-                39341.17217653142 == product.analyze.wet_area and
-                (65.39210812865413, -25.857059154544192, 0.0) == product.analyze.get_gravity_center() and
-                (246.46031165305178, 137.67448741239653, 0.0,
-                 137.67448741239653, 337.7416949626834, 0.0,
-                 0.0, 0.0, 502.5508200121834) == product.analyze.get_inertia()
-        )
+        # assert (
+        #         1.0 == product.analyze.mass and
+        #         306191.9497633215 == product.analyze.volume and
+        #         39341.17217653142 == product.analyze.wet_area and
+        #         (65.39210812865413, -25.857059154544192, 0.0) == product.analyze.get_gravity_center() and
+        #         (246.46031165305178, 137.67448741239653, 0.0,
+        #          137.67448741239653, 337.7416949626834, 0.0,
+        #          0.0, 0.0, 502.5508200121834) == product.analyze.get_inertia()
+        # )
+        assert 1.5 == product.analyze.mass
+        assert 1500000.0 == product.analyze.volume
+        assert 120000.0 == product.analyze.wet_area
+        assert (50.0, 50.0, 25.0) == product.analyze.get_gravity_center()
+        assert (1562.5000000000005, 0.0, 0.0,
+                0.0, 1562.5000000000005, 0.0,
+                0.0, 0.0, 2499.9999999999986) == product.analyze.get_inertia()
 
 
 def test_attributes():
@@ -30,15 +37,15 @@ def test_attributes():
         product = handler.document.product()
 
         attributes = ('(Product) Attributes... \n'
-                      'File Name:             CF_TopLevelAssy.CATProduct\n'
-                      'Name:                  CF_TopLevelAssy\n'
-                      'Part Number:           CF_TopLevelAssy\n'
-                      'Revision:              A\n'
-                      'Definition:            This is the definition for TopLevelAssy\n'
-                      'Nomenclature:          This is the nomenclature for TopLevelAssy\n'
+                      'File Name:             product_top.CATProduct\n'
+                      'Name:                  cat_product_1\n'
+                      'Part Number:           cat_product_1\n'
+                      'Revision:              A.1\n'
+                      'Definition:            pycatia product for testing\n'
+                      'Nomenclature:          pycatia product for testing\n'
                       'Description Instance:  \n'
-                      'Description Reference: This is the description for TopLevelAssy\n'
-                      'Reference:             Product(name="CF_TopLevelAssy")\n'
+                      'Description Reference: \n'
+                      'Reference:             Product(name="cat_product_1")\n'
                       'Is CATProduct:         True\n'
                       'Is CATPart:            False')
 
@@ -49,14 +56,14 @@ def test_count_children():
     with CATIADocHandler(cat_product) as handler:
         product = handler.document.product()
 
-        assert product.count_children() == 5
+        assert product.count_children() == 4
 
 
 def test_definition():
     with CATIADocHandler(cat_part_measurable) as handler:
         part_product = handler.document.product()
 
-        assert 'No defintion declared.' == part_product.definition
+        assert 'pycatia part for testing' == part_product.definition
 
         part_product.definition = 'new definition'
 
@@ -69,9 +76,9 @@ def test_description_instance():
         children = part_product.get_children()
         child = children[0]
 
-        assert 'Component Description of CF_SubProduct1.1' == child.description_instance
+        assert 'description instance text' == child.description_instance
 
-        new_instance_name = 'Component Description of CF_SubProduct11.1'
+        new_instance_name = 'description instance text.1'
         child.description_instance = new_instance_name
 
         assert new_instance_name == child.description_instance
@@ -83,7 +90,7 @@ def test_description_reference():
         children = part_product.get_children()
         child = children[0]
 
-        assert 'This is the definition for CF_SubProduct1' == child.description_reference
+        assert '' == child.description_reference
 
         new_description_reference = 'This is the definition for CF_SubProduct1 2'
         child.description_reference = new_description_reference
@@ -109,7 +116,7 @@ def test_get_child():
     with CATIADocHandler(cat_product) as handler:
         product = handler.document.product()
         child = product.get_child(0)
-        assert child.part_number == 'CF_SubProduct1'
+        assert child.part_number == 'cat_product_sub_1'
 
 
 def test_get_products():
@@ -117,7 +124,7 @@ def test_get_products():
         product = handler.document.product()
         products = product.get_products()
 
-        assert 'Product(name="CF_SubProduct1.1")' == products[0].__repr__()
+        assert 'Product(name="cat_product_sub_1.1")' == products[0].__repr__()
 
 
 def test_has_children():
@@ -173,23 +180,23 @@ def test_move():
 
         product.move.apply(transformation)
 
-        assert ((65.41613484215364, 0.0, 0.0,
-                 0.0, 68.97147661807078, -13.970786852103165,
-                 0.0, -13.970786852103165, 68.97147661807078) == product.analyze.get_inertia())
+        assert ((520.8333333333333, 0.0, 0.0,
+                 0.0, 677.0833333333264, -156.24999999999818,
+                 0.0, -156.24999999999818, 677.0833333333264) == product.analyze.get_inertia())
 
 
 def test_name():
     with CATIADocHandler(cat_part_measurable) as handler:
         part_product = handler.document.product()
 
-        assert 'CF_catia_measurable_part' == part_product.name
+        assert 'cat_part_measurable' == part_product.name
 
 
 def test_nomenclature():
     with CATIADocHandler(cat_part_measurable) as handler:
         part_product = handler.document.product()
 
-        assert 'Test Part' == part_product.nomenclature
+        assert 'pycatia part for testing' == part_product.nomenclature
 
         new_nomenclature = 'New Test Part'
 
@@ -202,7 +209,7 @@ def test_part_number():
     with CATIADocHandler(cat_part_measurable) as handler:
         part_product = handler.document.product()
 
-        assert 'CF_catia_measurable_part' == part_product.part_number
+        assert 'cat_part_measurable' == part_product.part_number
 
         part_product.part_number = 'new_part_number'
 
@@ -237,7 +244,7 @@ def test_reference_product():
     with CATIADocHandler(cat_product) as handler:
         part_product = handler.document.product()
 
-        assert part_product.reference_product.name == 'CF_TopLevelAssy'
+        assert part_product.reference_product.name == 'cat_product_1'
 
 
 def test_relations():
@@ -249,7 +256,7 @@ def test_revision():
     with CATIADocHandler(cat_part_measurable) as handler:
         part_product = handler.document.product()
 
-        assert 'A' == part_product.revision
+        assert 'A.1' == part_product.revision
 
         part_product.revision = 'B'
 
@@ -375,4 +382,4 @@ def test_repr():
     with CATIADocHandler(cat_part_measurable) as handler:
         part = handler.document.product()
 
-        assert 'Product(name="CF_catia_measurable_part")' == part.__repr__()
+        assert 'Product(name="cat_part_measurable")' == part.__repr__()

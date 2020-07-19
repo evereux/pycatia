@@ -34,7 +34,7 @@ class DrawingLeaders(Collection):
         super().__init__(com_object, child_object=DrawingLeader)
         self.drawing_leaders = com_object
 
-    def add(self, i_head_point_x, i_head_point_y):
+    def add(self, i_head_point_x: float, i_head_point_y: float) -> DrawingLeader:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -68,10 +68,11 @@ class DrawingLeaders(Collection):
         :param float i_head_point_x:
         :param float i_head_point_y:
         :return: DrawingLeader
+        :rtype: DrawingLeader
         """
         return DrawingLeader(self.drawing_leaders.Add(i_head_point_x, i_head_point_y))
 
-    def item(self, i_index):
+    def item(self, i_index: int) -> DrawingLeader:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -103,10 +104,11 @@ class DrawingLeaders(Collection):
 
         :param int i_index:
         :return: DrawingLeader
+        :rtype: DrawingLeader
         """
         return DrawingLeader(self.drawing_leaders.Item(i_index))
 
-    def remove(self, i_index):
+    def remove(self, i_index: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -135,6 +137,7 @@ class DrawingLeaders(Collection):
 
         :param int i_index:
         :return: None
+        :rtype: None
         """
         return self.drawing_leaders.Remove(i_index)
 

@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapeUnfold(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -47,21 +47,22 @@ class HybridShapeUnfold(HybridShape):
         self.hybrid_shape_unfold = com_object
 
     @property
-    def direction_to_unfold(self):
+    def direction_to_unfold(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DirectionToUnfold() As Reference
                 | 
                 |     Returns or sets the direction to unfold.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_unfold.DirectionToUnfold)
 
     @direction_to_unfold.setter
-    def direction_to_unfold(self, value):
+    def direction_to_unfold(self, value: Reference):
         """
         :param Reference value:
         """
@@ -69,10 +70,10 @@ class HybridShapeUnfold(HybridShape):
         self.hybrid_shape_unfold.DirectionToUnfold = value
 
     @property
-    def edge_to_tear_positioning_orientation(self):
+    def edge_to_tear_positioning_orientation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property EdgeToTearPositioningOrientation() As long
                 | 
                 |     Returns or sets the positioning orientation when the reference origin is
@@ -83,12 +84,13 @@ class HybridShapeUnfold(HybridShape):
                 |         2= The orientation is inversed
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_unfold.EdgeToTearPositioningOrientation
 
     @edge_to_tear_positioning_orientation.setter
-    def edge_to_tear_positioning_orientation(self, value):
+    def edge_to_tear_positioning_orientation(self, value: int):
         """
         :param int value:
         """
@@ -96,21 +98,22 @@ class HybridShapeUnfold(HybridShape):
         self.hybrid_shape_unfold.EdgeToTearPositioningOrientation = value
 
     @property
-    def origin_to_unfold(self):
+    def origin_to_unfold(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OriginToUnfold() As Reference
                 | 
                 |     Returns or sets the origin to unfold.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_unfold.OriginToUnfold)
 
     @origin_to_unfold.setter
-    def origin_to_unfold(self, value):
+    def origin_to_unfold(self, value: Reference):
         """
         :param Reference value:
         """
@@ -118,10 +121,10 @@ class HybridShapeUnfold(HybridShape):
         self.hybrid_shape_unfold.OriginToUnfold = value
 
     @property
-    def surface_to_unfold(self):
+    def surface_to_unfold(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SurfaceToUnfold() As Reference
                 | 
                 |     Returns or sets the surface to unfold.
@@ -129,12 +132,13 @@ class HybridShapeUnfold(HybridShape):
                 |     BiDimFeatEdge.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_unfold.SurfaceToUnfold)
 
     @surface_to_unfold.setter
-    def surface_to_unfold(self, value):
+    def surface_to_unfold(self, value: Reference):
         """
         :param Reference value:
         """
@@ -142,10 +146,10 @@ class HybridShapeUnfold(HybridShape):
         self.hybrid_shape_unfold.SurfaceToUnfold = value
 
     @property
-    def surface_type(self):
+    def surface_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SurfaceType() As long
                 | 
                 |     Returns or sets the type of surface to unfold.
@@ -155,12 +159,13 @@ class HybridShapeUnfold(HybridShape):
                 |         2= The type of surface is all
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_unfold.SurfaceType
 
     @surface_type.setter
-    def surface_type(self, value):
+    def surface_type(self, value: int):
         """
         :param int value:
         """
@@ -168,10 +173,10 @@ class HybridShapeUnfold(HybridShape):
         self.hybrid_shape_unfold.SurfaceType = value
 
     @property
-    def target_orientation_mode(self):
+    def target_orientation_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TargetOrientationMode() As long
                 | 
                 |     Returns or sets the mode for target surface orientation.
@@ -187,12 +192,13 @@ class HybridShapeUnfold(HybridShape):
                 |         7= Swap U and V axis
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_unfold.TargetOrientationMode
 
     @target_orientation_mode.setter
-    def target_orientation_mode(self, value):
+    def target_orientation_mode(self, value: int):
         """
         :param int value:
         """
@@ -200,32 +206,33 @@ class HybridShapeUnfold(HybridShape):
         self.hybrid_shape_unfold.TargetOrientationMode = value
 
     @property
-    def target_plane(self):
+    def target_plane(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TargetPlane() As Reference
                 | 
                 |     Returns or sets the target plane.
                 |     Sub-element(s) supported (see Boundary object):
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_unfold.TargetPlane)
 
     @target_plane.setter
-    def target_plane(self, value):
+    def target_plane(self, value: Reference):
         """
         :param Reference value:
         """
 
         self.hybrid_shape_unfold.TargetPlane = value
 
-    def add_edge_to_tear(self, i_element):
+    def add_edge_to_tear(self, i_element: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddEdgeToTear(Reference iElement)
                 | 
                 |     Adds an edge to tear.
@@ -247,6 +254,7 @@ class HybridShapeUnfold(HybridShape):
 
         :param Reference i_element:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_unfold.AddEdgeToTear(i_element.com_object)
         # # # # Autogenerated comment: 
@@ -265,10 +273,10 @@ class HybridShapeUnfold(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def add_element_to_transfer(self, i_element, i_type_of_transfer):
+    def add_element_to_transfer(self, i_element: Reference, i_type_of_transfer: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddElementToTransfer(Reference iElement,
                 | long iTypeOfTransfer)
                 | 
@@ -288,6 +296,7 @@ class HybridShapeUnfold(HybridShape):
         :param Reference i_element:
         :param int i_type_of_transfer:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_unfold.AddElementToTransfer(i_element.com_object, i_type_of_transfer)
         # # # # Autogenerated comment: 
@@ -306,10 +315,10 @@ class HybridShapeUnfold(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_edge_to_tear(self, i_rank):
+    def get_edge_to_tear(self, i_rank: int) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetEdgeToTear(long iRank) As Reference
                 | 
                 |     Retrieves an element used by the hybrid shape unfold feature
@@ -329,13 +338,14 @@ class HybridShapeUnfold(HybridShape):
 
         :param int i_rank:
         :return: Reference
+        :rtype: Reference
         """
         return Reference(self.hybrid_shape_unfold.GetEdgeToTear(i_rank))
 
-    def get_element_to_transfer(self, i_rank, op_element, o_type_of_transfer):
+    def get_element_to_transfer(self, i_rank: int, op_element: Reference, o_type_of_transfer: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetElementToTransfer(long iRank,
                 | Reference opElement,
                 | long oTypeOfTransfer)
@@ -359,6 +369,7 @@ class HybridShapeUnfold(HybridShape):
         :param Reference op_element:
         :param int o_type_of_transfer:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_unfold.GetElementToTransfer(i_rank, op_element.com_object, o_type_of_transfer)
         # # # # Autogenerated comment: 
@@ -377,10 +388,10 @@ class HybridShapeUnfold(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def remove_edge_to_tear(self, i_rank):
+    def remove_edge_to_tear(self, i_rank: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveEdgeToTear(long iRank)
                 | 
                 |     Removes an element used by the hybrid shape unfold feature
@@ -399,13 +410,14 @@ class HybridShapeUnfold(HybridShape):
 
         :param int i_rank:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_unfold.RemoveEdgeToTear(i_rank)
 
-    def remove_element_to_transfer(self, i_rank):
+    def remove_element_to_transfer(self, i_rank: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveElementToTransfer(long iRank)
                 | 
                 |     Remove an elements to transfer.
@@ -417,13 +429,14 @@ class HybridShapeUnfold(HybridShape):
 
         :param int i_rank:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_unfold.RemoveElementToTransfer(i_rank)
 
-    def replace_elements_to_transfer(self, i_rank, i_element):
+    def replace_elements_to_transfer(self, i_rank: int, i_element: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ReplaceElementsToTransfer(long iRank,
                 | Reference iElement)
                 | 
@@ -439,6 +452,7 @@ class HybridShapeUnfold(HybridShape):
         :param int i_rank:
         :param Reference i_element:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_unfold.ReplaceElementsToTransfer(i_rank, i_element.com_object)
         # # # # Autogenerated comment: 

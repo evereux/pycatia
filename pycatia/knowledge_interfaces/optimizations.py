@@ -12,6 +12,7 @@ from pycatia.knowledge_interfaces.optimization import Optimization
 from pycatia.knowledge_interfaces.set_of_equation import SetOfEquation
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
+from pycatia.types import cat_variant
 
 
 class Optimizations(Collection):
@@ -37,7 +38,7 @@ class Optimizations(Collection):
         super().__init__(com_object, child_object=Optimization)
         self.optimizations = com_object
 
-    def create_constraints_satisfaction(self, i_name, i_comment, i_formula_body):
+    def create_constraints_satisfaction(self, i_name: str, i_comment: str, i_formula_body: str) -> SetOfEquation:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -61,10 +62,11 @@ class Optimizations(Collection):
         :param str i_comment:
         :param str i_formula_body:
         :return: SetOfEquation
+        :rtype: SetOfEquation
         """
         return SetOfEquation(self.optimizations.CreateConstraintsSatisfaction(i_name, i_comment, i_formula_body))
 
-    def create_optimization(self):
+    def create_optimization(self) -> Optimization:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -74,10 +76,11 @@ class Optimizations(Collection):
                 |     This optimization cannot be used while its properties have not been set.
 
         :return: Optimization
+        :rtype: Optimization
         """
         return Optimization(self.optimizations.CreateOptimization())
 
-    def item(self, i_index):
+    def item(self, i_index: cat_variant) -> AnyObject:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -108,8 +111,9 @@ class Optimizations(Collection):
                 | 
                 |          Set lastItem = optimizations.Item(optimizations.Count)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: AnyObject
+        :rtype: AnyObject
         """
         return AnyObject(self.optimizations.Item(i_index))
 

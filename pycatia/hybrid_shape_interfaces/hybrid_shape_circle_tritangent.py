@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -51,10 +51,10 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
         self.hybrid_shape_circle_tritangent = com_object
 
     @property
-    def begin_of_circle(self):
+    def begin_of_circle(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BeginOfCircle() As long
                 | 
                 |     Return or Set the number of the beginning curve of the circle. This
@@ -69,12 +69,13 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
                 |          hybShpcircle.BeginOfCircle = 1
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_circle_tritangent.BeginOfCircle
 
     @begin_of_circle.setter
-    def begin_of_circle(self, value):
+    def begin_of_circle(self, value: int):
         """
         :param int value:
         """
@@ -82,10 +83,10 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
         self.hybrid_shape_circle_tritangent.BeginOfCircle = value
 
     @property
-    def curve1(self):
+    def curve1(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Curve1() As Reference
                 | 
                 |     Returns or sets the first curve to which the circle is or will be
@@ -101,12 +102,13 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
                 |          HybShpCircleFirstCurve = HybShpCircle.Curve1
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_circle_tritangent.Curve1)
 
     @curve1.setter
-    def curve1(self, value):
+    def curve1(self, value: Reference):
         """
         :param Reference value:
         """
@@ -114,10 +116,10 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
         self.hybrid_shape_circle_tritangent.Curve1 = value
 
     @property
-    def curve2(self):
+    def curve2(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Curve2() As Reference
                 | 
                 |     Returns or sets the second curve to which the circle is or will be
@@ -132,12 +134,13 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
                 |          HybShpCircle.Curve2 Crv5
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_circle_tritangent.Curve2)
 
     @curve2.setter
-    def curve2(self, value):
+    def curve2(self, value: Reference):
         """
         :param Reference value:
         """
@@ -145,10 +148,10 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
         self.hybrid_shape_circle_tritangent.Curve2 = value
 
     @property
-    def curve3(self):
+    def curve3(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Curve3() As Reference
                 | 
                 |     Returns or sets the third curve to which the circle is or will be
@@ -164,12 +167,13 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
                 |          HybShpCircleThirdCurve = HybShpCircle.Curve3
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_circle_tritangent.Curve3)
 
     @curve3.setter
-    def curve3(self, value):
+    def curve3(self, value: Reference):
         """
         :param Reference value:
         """
@@ -177,10 +181,10 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
         self.hybrid_shape_circle_tritangent.Curve3 = value
 
     @property
-    def discrimination_index(self):
+    def discrimination_index(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DiscriminationIndex() As long
                 | 
                 |     Return or set the discrimination index of the current circle. Several
@@ -198,12 +202,13 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
                 |          hybShpcircle.DiscriminationIndex = 2
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_circle_tritangent.DiscriminationIndex
 
     @discrimination_index.setter
-    def discrimination_index(self, value):
+    def discrimination_index(self, value: int):
         """
         :param int value:
         """
@@ -211,10 +216,10 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
         self.hybrid_shape_circle_tritangent.DiscriminationIndex = value
 
     @property
-    def orientation1(self):
+    def orientation1(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation1() As long
                 | 
                 |     Returns or sets the orientation of the first curve to which the circle is
@@ -235,12 +240,13 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
                 |          HybShpCircle.Orientation1 -1
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_circle_tritangent.Orientation1
 
     @orientation1.setter
-    def orientation1(self, value):
+    def orientation1(self, value: int):
         """
         :param int value:
         """
@@ -248,10 +254,10 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
         self.hybrid_shape_circle_tritangent.Orientation1 = value
 
     @property
-    def orientation2(self):
+    def orientation2(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation2() As long
                 | 
                 |     Returns or sets the orientation of the second curve to which the circle is
@@ -272,12 +278,13 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
                 |          HybShpCircleOrientation = HybShpCircle.Orientation2
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_circle_tritangent.Orientation2
 
     @orientation2.setter
-    def orientation2(self, value):
+    def orientation2(self, value: int):
         """
         :param int value:
         """
@@ -285,10 +292,10 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
         self.hybrid_shape_circle_tritangent.Orientation2 = value
 
     @property
-    def orientation3(self):
+    def orientation3(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation3() As long
                 | 
                 |     Returns or sets the orientation of the third curve to which the circle is
@@ -309,12 +316,13 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
                 |          HybShpCircle.Orientation3 -1
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_circle_tritangent.Orientation3
 
     @orientation3.setter
-    def orientation3(self, value):
+    def orientation3(self, value: int):
         """
         :param int value:
         """
@@ -322,10 +330,10 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
         self.hybrid_shape_circle_tritangent.Orientation3 = value
 
     @property
-    def support(self):
+    def support(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets the circle support surface.
@@ -339,12 +347,13 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
                 |          HybShpCircleSupportSurf = HybShpCircle.Support
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_circle_tritangent.Support)
 
     @support.setter
-    def support(self, value):
+    def support(self, value: Reference):
         """
         :param Reference value:
         """
@@ -352,10 +361,10 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
         self.hybrid_shape_circle_tritangent.Support = value
 
     @property
-    def tangent_orientation1(self):
+    def tangent_orientation1(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TangentOrientation1() As long
                 | 
                 |     Returns or sets the tangent orientation of the circle first reference
@@ -372,12 +381,13 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
                 |          firstOrient = hybShpcircle.FirstTangentOrientation
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_circle_tritangent.TangentOrientation1
 
     @tangent_orientation1.setter
-    def tangent_orientation1(self, value):
+    def tangent_orientation1(self, value: int):
         """
         :param int value:
         """
@@ -385,10 +395,10 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
         self.hybrid_shape_circle_tritangent.TangentOrientation1 = value
 
     @property
-    def tangent_orientation2(self):
+    def tangent_orientation2(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TangentOrientation2() As long
                 | 
                 |     Returns or sets the tangent orientation of the circle second reference
@@ -405,12 +415,13 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
                 |          secondOrient = hybShpcircle.SecondTangentOrientation
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_circle_tritangent.TangentOrientation2
 
     @tangent_orientation2.setter
-    def tangent_orientation2(self, value):
+    def tangent_orientation2(self, value: int):
         """
         :param int value:
         """
@@ -418,10 +429,10 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
         self.hybrid_shape_circle_tritangent.TangentOrientation2 = value
 
     @property
-    def tangent_orientation3(self):
+    def tangent_orientation3(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TangentOrientation3() As long
                 | 
                 |     Returns or sets the tangent orientation of the circle third reference
@@ -438,12 +449,13 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
                 |          thirdOrient = hybShpcircle.ThirdTangentOrientation
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_circle_tritangent.TangentOrientation3
 
     @tangent_orientation3.setter
-    def tangent_orientation3(self, value):
+    def tangent_orientation3(self, value: int):
         """
         :param int value:
         """
@@ -451,10 +463,10 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
         self.hybrid_shape_circle_tritangent.TangentOrientation3 = value
 
     @property
-    def trim_mode(self):
+    def trim_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TrimMode() As long
                 | 
                 |     Returns or sets whether the circle reference curves are or should be
@@ -474,12 +486,13 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
                 |          hybShpCircle.TrimMode = 1
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_circle_tritangent.TrimMode
 
     @trim_mode.setter
-    def trim_mode(self, value):
+    def trim_mode(self, value: int):
         """
         :param int value:
         """

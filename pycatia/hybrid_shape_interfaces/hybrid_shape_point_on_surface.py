@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -19,7 +19,7 @@ class HybridShapePointOnSurface(Point):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -50,10 +50,10 @@ class HybridShapePointOnSurface(Point):
         self.hybrid_shape_point_on_surface = com_object
 
     @property
-    def direction(self):
+    def direction(self) -> HybridShapeDirection:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Direction() As HybridShapeDirection
                 | 
                 |     Returns or Sets the direction from the reference point in which the point
@@ -68,12 +68,13 @@ class HybridShapePointOnSurface(Point):
                 |          Set oDirection  = PointOnSurface.Direction
 
         :return: HybridShapeDirection
+        :rtype: HybridShapeDirection
         """
 
         return HybridShapeDirection(self.hybrid_shape_point_on_surface.Direction)
 
     @direction.setter
-    def direction(self, value):
+    def direction(self, value: HybridShapeDirection):
         """
         :param HybridShapeDirection value:
         """
@@ -81,10 +82,10 @@ class HybridShapePointOnSurface(Point):
         self.hybrid_shape_point_on_surface.Direction = value
 
     @property
-    def offset(self):
+    def offset(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Offset() As Length (Read Only)
                 | 
                 |     Returns the geodesic length.
@@ -98,15 +99,16 @@ class HybridShapePointOnSurface(Point):
                 |          Set oGeodesicOffset  = PointOnSurface.GeodesicOffset
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_point_on_surface.Offset)
 
     @property
-    def point(self):
+    def point(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Point() As Reference
                 | 
                 |     Returns or Sets the reference point.
@@ -124,12 +126,13 @@ class HybridShapePointOnSurface(Point):
                 |          Set oPointRef  = PointOnSurface.PointRef
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_point_on_surface.Point)
 
     @point.setter
-    def point(self, value):
+    def point(self, value: Reference):
         """
         :param Reference value:
         """
@@ -137,10 +140,10 @@ class HybridShapePointOnSurface(Point):
         self.hybrid_shape_point_on_surface.Point = value
 
     @property
-    def surface(self):
+    def surface(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Surface() As Reference
                 | 
                 |     Returns or Sets the surface.
@@ -155,12 +158,13 @@ class HybridShapePointOnSurface(Point):
                 |          Set oSurface  = PointOnSurface.Surface
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_point_on_surface.Surface)
 
     @surface.setter
-    def surface(self, value):
+    def surface(self, value: Reference):
         """
         :param Reference value:
         """

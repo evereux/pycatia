@@ -111,6 +111,8 @@ constraint_mid = constraints.add_bi_elt_cst(
 
 sketch.close_edition()
 
+part.update()
+
 # create the pad from sketch
 main_body = part.main_body
 part.in_work_object = main_body

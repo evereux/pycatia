@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapePlane3Points(Plane):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -50,10 +50,10 @@ class HybridShapePlane3Points(Plane):
         self.hybrid_shape_plane3_points = com_object
 
     @property
-    def first(self):
+    def first(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property First() As Reference
                 | 
                 |     Returns or sets the first point.
@@ -66,12 +66,13 @@ class HybridShapePlane3Points(Plane):
                 |      Set FirstPoint = Plane3Points.First
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_plane3_points.First)
 
     @first.setter
-    def first(self, value):
+    def first(self, value: Reference):
         """
         :param Reference value:
         """
@@ -79,10 +80,10 @@ class HybridShapePlane3Points(Plane):
         self.hybrid_shape_plane3_points.First = value
 
     @property
-    def second(self):
+    def second(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Second() As Reference
                 | 
                 |     Returns or sets the second point.
@@ -95,12 +96,13 @@ class HybridShapePlane3Points(Plane):
                 |      Set SecondPoint = Plane3Points.Second
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_plane3_points.Second)
 
     @second.setter
-    def second(self, value):
+    def second(self, value: Reference):
         """
         :param Reference value:
         """
@@ -108,10 +110,10 @@ class HybridShapePlane3Points(Plane):
         self.hybrid_shape_plane3_points.Second = value
 
     @property
-    def third(self):
+    def third(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Third() As Reference
                 | 
                 |     Returns or sets the third point.
@@ -124,12 +126,13 @@ class HybridShapePlane3Points(Plane):
                 |      Set ThirdPoint = Plane3Points.Third
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_plane3_points.Third)
 
     @third.setter
-    def third(self, value):
+    def third(self, value: Reference):
         """
         :param Reference value:
         """

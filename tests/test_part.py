@@ -5,8 +5,6 @@ from pycatia.mec_mod_interfaces.part import Part
 
 from tests.source_files import cat_part_measurable
 from tests.source_files import cat_product
-from tests.source_files import cat_part_not_updated
-from tests.source_files import cat_part_1
 
 
 def test_activation():
@@ -29,18 +27,19 @@ def test_axis_systems():
 
         axis_systems = part.axis_systems
 
-        assert axis_systems.com_object.Item(1).name == 'Axis System.3'
-        assert axis_systems.com_object.Item(2).name == 'Axis System.4'
+        assert axis_systems.com_object.Item(1).name == 'Axis.1'
 
 
-def test_annotation_sets():
-    with CATIADocHandler(cat_part_measurable) as handler:
-        document = handler.document
-        part = document.part()
-
-        annotation_sets = part.annotation_sets
-
-        assert annotation_sets.com_object.Item(1).name == 'Annotation Set.1'
+# todo: look into automation this.
+# I haven't yet imported the module into pycatia that seems to handle annotation sets.
+# def test_annotation_sets():
+#     with CATIADocHandler(cat_part_measurable) as handler:
+#         document = handler.document
+#         part = document.part()
+#
+#         annotation_sets = part.annotation_sets
+#
+#         assert annotation_sets.com_object.Item(1).name == 'Annotation Set.1'
 
 
 def test_bodies():
@@ -51,7 +50,6 @@ def test_bodies():
         bodies = part.bodies
 
         assert bodies.com_object.Item(1).Name == 'PartBody'
-        assert bodies.com_object.Item(2).Name == 'AnotherPartBody'
 
 
 def test_create_geometrical_set():
@@ -70,7 +68,7 @@ def test_density_of_part():
         document = handler.document
         part = document.part()
 
-        assert part.density == 8216.0
+        assert part.density == 1000.0
 
 
 def test_file_name():
@@ -82,7 +80,7 @@ def test_file_name():
         for product in products:
             if product.is_catpart():
                 part = Part(product.product)
-                assert part.file_name == cat_part_1.name
+                assert part.file_name == cat_part_measurable.name
 
 
 def test_full_name():
@@ -94,7 +92,7 @@ def test_full_name():
         for product in products:
             if product.is_catpart():
                 part = Part(product.product)
-                assert part.full_name == str(cat_part_1)
+                assert part.full_name == str(cat_part_measurable)
 
 
 def test_find_object_by_name():
@@ -102,8 +100,8 @@ def test_find_object_by_name():
         document = handler.document
         part = document.part()
 
-        body = part.find_object_by_name('AnotherPartBody')
-        assert body.name == 'AnotherPartBody'
+        body = part.find_object_by_name('PartBody')
+        assert body.name == 'PartBody'
 
         body = part.find_object_by_name('lala')
         assert body is None
@@ -111,7 +109,7 @@ def test_find_object_by_name():
 
 def test_in_work_object():
     with CATIADocHandler(cat_part_measurable) as handler:
-        part_body_name = 'AnotherPartBody'
+        part_body_name = 'PartBody'
 
         part = handler.document.part()
 
@@ -129,8 +127,13 @@ def test_is_up_to_date():
 
         assert part.is_up_to_date(part)
 
-    with CATIADocHandler(cat_part_not_updated) as handler:
+    with CATIADocHandler(new_document="Part") as handler:
         part = handler.document.part()
+        hsf = part.hybrid_shape_factory
+        hbs = part.hybrid_bodies
+        hb = hbs.add()
+        point = hsf.add_new_point_coord(0, 0, 0)
+        hb.append_hybrid_shape(point)
 
         assert not part.is_up_to_date(part)
 
@@ -144,7 +147,7 @@ def test_path():
         for product in products:
             if product.is_catpart():
                 part = Part(product.product)
-                assert part.path() == cat_part_1
+                assert part.path() == cat_part_measurable
 
 
 def test_repr():
@@ -152,4 +155,4 @@ def test_repr():
         document = handler.document
         part = document.part()
 
-        assert 'Part(name="CF_catia_measurable_part")' == part.__repr__()
+        assert 'Part(name="cat_part_measurable")' == part.__repr__()

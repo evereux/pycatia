@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -18,7 +18,7 @@ class HybridShapeRotate(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -53,24 +53,25 @@ class HybridShapeRotate(HybridShape):
         self.hybrid_shape_rotate = com_object
 
     @property
-    def angle(self):
+    def angle(self) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Angle() As Angle (Read Only)
                 | 
                 |     Returns the rotation angle.
 
         :return: Angle
+        :rtype: Angle
         """
 
         return Angle(self.hybrid_shape_rotate.Angle)
 
     @property
-    def angle_value(self):
+    def angle_value(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AngleValue() As double
                 | 
                 |     Returns or sets the rotation angle value.
@@ -82,12 +83,13 @@ class HybridShapeRotate(HybridShape):
                 |      Set AngleValue = Rotate.AngleValue
 
         :return: float
+        :rtype: float
         """
 
         return self.hybrid_shape_rotate.AngleValue
 
     @angle_value.setter
-    def angle_value(self, value):
+    def angle_value(self, value: float):
         """
         :param float value:
         """
@@ -95,10 +97,10 @@ class HybridShapeRotate(HybridShape):
         self.hybrid_shape_rotate.AngleValue = value
 
     @property
-    def axis(self):
+    def axis(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Axis() As Reference
                 | 
                 |     Returns or sets the rotation axis.
@@ -111,12 +113,13 @@ class HybridShapeRotate(HybridShape):
                 |      Set RotationAxis = Rotate.Axis
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_rotate.Axis)
 
     @axis.setter
-    def axis(self, value):
+    def axis(self, value: Reference):
         """
         :param Reference value:
         """
@@ -124,10 +127,10 @@ class HybridShapeRotate(HybridShape):
         self.hybrid_shape_rotate.Axis = value
 
     @property
-    def elem_to_rotate(self):
+    def elem_to_rotate(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ElemToRotate() As Reference
                 | 
                 |     Returns or sets the element to be rotated.
@@ -139,12 +142,13 @@ class HybridShapeRotate(HybridShape):
                 |      Set Elem = Rotate.ElemToRotate
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_rotate.ElemToRotate)
 
     @elem_to_rotate.setter
-    def elem_to_rotate(self, value):
+    def elem_to_rotate(self, value: Reference):
         """
         :param Reference value:
         """
@@ -152,21 +156,22 @@ class HybridShapeRotate(HybridShape):
         self.hybrid_shape_rotate.ElemToRotate = value
 
     @property
-    def first_element(self):
+    def first_element(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstElement() As Reference
                 | 
                 |     Returns or sets the first element defining the rotation angle.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_rotate.FirstElement)
 
     @first_element.setter
-    def first_element(self, value):
+    def first_element(self, value: Reference):
         """
         :param Reference value:
         """
@@ -174,21 +179,22 @@ class HybridShapeRotate(HybridShape):
         self.hybrid_shape_rotate.FirstElement = value
 
     @property
-    def first_point(self):
+    def first_point(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstPoint() As Reference
                 | 
                 |     Returns or sets the first point defining the rotation.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_rotate.FirstPoint)
 
     @first_point.setter
-    def first_point(self, value):
+    def first_point(self, value: Reference):
         """
         :param Reference value:
         """
@@ -196,10 +202,10 @@ class HybridShapeRotate(HybridShape):
         self.hybrid_shape_rotate.FirstPoint = value
 
     @property
-    def orientation_of_first_element(self):
+    def orientation_of_first_element(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OrientationOfFirstElement() As boolean
                 | 
                 |     Returns or sets the orientation of the first element defining the rotation
@@ -207,12 +213,13 @@ class HybridShapeRotate(HybridShape):
                 |     This applies in case of line or plane element.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_rotate.OrientationOfFirstElement
 
     @orientation_of_first_element.setter
-    def orientation_of_first_element(self, value):
+    def orientation_of_first_element(self, value: bool):
         """
         :param bool value:
         """
@@ -220,10 +227,10 @@ class HybridShapeRotate(HybridShape):
         self.hybrid_shape_rotate.OrientationOfFirstElement = value
 
     @property
-    def orientation_of_second_element(self):
+    def orientation_of_second_element(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OrientationOfSecondElement() As boolean
                 | 
                 |     Returns or sets the orientation of the second element defining the rotation
@@ -231,12 +238,13 @@ class HybridShapeRotate(HybridShape):
                 |     This applies in case of line or plane element.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_rotate.OrientationOfSecondElement
 
     @orientation_of_second_element.setter
-    def orientation_of_second_element(self, value):
+    def orientation_of_second_element(self, value: bool):
         """
         :param bool value:
         """
@@ -244,10 +252,10 @@ class HybridShapeRotate(HybridShape):
         self.hybrid_shape_rotate.OrientationOfSecondElement = value
 
     @property
-    def rotation_type(self):
+    def rotation_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RotationType() As long
                 | 
                 |     Returns or sets the type of the rotation definition.
@@ -258,12 +266,13 @@ class HybridShapeRotate(HybridShape):
                 |         3= Unknown type
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_rotate.RotationType
 
     @rotation_type.setter
-    def rotation_type(self, value):
+    def rotation_type(self, value: int):
         """
         :param int value:
         """
@@ -271,21 +280,22 @@ class HybridShapeRotate(HybridShape):
         self.hybrid_shape_rotate.RotationType = value
 
     @property
-    def second_element(self):
+    def second_element(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondElement() As Reference
                 | 
                 |     Returns or sets the second element defining the rotation angle.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_rotate.SecondElement)
 
     @second_element.setter
-    def second_element(self, value):
+    def second_element(self, value: Reference):
         """
         :param Reference value:
         """
@@ -293,21 +303,22 @@ class HybridShapeRotate(HybridShape):
         self.hybrid_shape_rotate.SecondElement = value
 
     @property
-    def second_point(self):
+    def second_point(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondPoint() As Reference
                 | 
                 |     Returns or sets the second point defining the rotation.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_rotate.SecondPoint)
 
     @second_point.setter
-    def second_point(self, value):
+    def second_point(self, value: Reference):
         """
         :param Reference value:
         """
@@ -315,21 +326,22 @@ class HybridShapeRotate(HybridShape):
         self.hybrid_shape_rotate.SecondPoint = value
 
     @property
-    def third_point(self):
+    def third_point(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ThirdPoint() As Reference
                 | 
                 |     Returns or sets the third point defining the rotation.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_rotate.ThirdPoint)
 
     @third_point.setter
-    def third_point(self, value):
+    def third_point(self, value: Reference):
         """
         :param Reference value:
         """
@@ -337,10 +349,10 @@ class HybridShapeRotate(HybridShape):
         self.hybrid_shape_rotate.ThirdPoint = value
 
     @property
-    def volume_result(self):
+    def volume_result(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property VolumeResult() As boolean
                 | 
                 |     Returns or sets the volume result.
@@ -357,22 +369,23 @@ class HybridShapeRotate(HybridShape):
                 |          hybShpRotate.VolumeResult = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_rotate.VolumeResult
 
     @volume_result.setter
-    def volume_result(self, value):
+    def volume_result(self, value: bool):
         """
         :param bool value:
         """
 
         self.hybrid_shape_rotate.VolumeResult = value
 
-    def get_creation_mode(self):
+    def get_creation_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetCreationMode() As long
                 | 
                 |     Gets the creation mode.
@@ -393,13 +406,14 @@ class HybridShapeRotate(HybridShape):
                 |      oCreation = hybShpRotate.GetCreationMode
 
         :return: int
+        :rtype: int
         """
         return self.hybrid_shape_rotate.GetCreationMode()
 
-    def set_creation_mode(self, i_creation):
+    def set_creation_mode(self, i_creation: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetCreationMode(boolean iCreation)
                 | 
                 |     Sets the creation mode(creation or modification).
@@ -416,6 +430,7 @@ class HybridShapeRotate(HybridShape):
 
         :param bool i_creation:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_rotate.SetCreationMode(i_creation)
         # # # # Autogenerated comment: 

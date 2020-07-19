@@ -39,10 +39,10 @@ class UserPattern(Pattern):
         self.user_pattern = com_object
 
     @property
-    def anchor_point(self):
+    def anchor_point(self) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AnchorPoint() As AnyObject
                 | 
                 |     Returns the anchor point of the user pattern.
@@ -54,12 +54,13 @@ class UserPattern(Pattern):
                 |          Set anchor = firstPattern.AnchorPoint
 
         :return: AnyObject
+        :rtype: AnyObject
         """
 
         return AnyObject(self.user_pattern.AnchorPoint)
 
     @anchor_point.setter
-    def anchor_point(self, value):
+    def anchor_point(self, value: AnyObject):
         """
         :param AnyObject value:
         """
@@ -67,10 +68,10 @@ class UserPattern(Pattern):
         self.user_pattern.AnchorPoint = value
 
     @property
-    def feature_to_locate_positions(self):
+    def feature_to_locate_positions(self) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FeatureToLocatePositions() As AnyObject (Read
                 | Only)
                 | 
@@ -83,14 +84,15 @@ class UserPattern(Pattern):
                 |          Set list = firstPattern.FeatureToLocatePositions
 
         :return: AnyObject
+        :rtype: AnyObject
         """
 
         return AnyObject(self.user_pattern.FeatureToLocatePositions)
 
-    def add_feature_to_locate_positions(self, i_feature_to_locate_positions):
+    def add_feature_to_locate_positions(self, i_feature_to_locate_positions: AnyObject) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddFeatureToLocatePositions(AnyObject
                 | iFeatureToLocatePositions)
                 | 
@@ -109,6 +111,7 @@ class UserPattern(Pattern):
 
         :param AnyObject i_feature_to_locate_positions:
         :return: None
+        :rtype: None
         """
         return self.user_pattern.AddFeatureToLocatePositions(i_feature_to_locate_positions.com_object)
 

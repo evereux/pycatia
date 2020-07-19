@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia.in_interfaces.reference import Reference
 from pycatia.part_interfaces.limit import Limit
 from pycatia.part_interfaces.sketch_based_shape import SketchBasedShape
 
@@ -16,7 +16,7 @@ from pycatia.part_interfaces.sketch_based_shape import SketchBasedShape
 class Prism(SketchBasedShape):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -36,10 +36,10 @@ class Prism(SketchBasedShape):
         self.prism = com_object
 
     @property
-    def direction_orientation(self):
+    def direction_orientation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DirectionOrientation() As CatPrismOrientation
                 | 
                 |     Returns the prism direction orientation.
@@ -56,24 +56,25 @@ class Prism(SketchBasedShape):
                 |              Set dirOrientation = firstPrism.DirectionOrientation
                 |              firstPrism.DirectionOrientation = catInverseOrientation
 
-        :return: enum cat_prism_orientation
+        :return: int
+        :rtype: int
         """
 
         return self.prism.DirectionOrientation
 
     @direction_orientation.setter
-    def direction_orientation(self, value):
+    def direction_orientation(self, value: int):
         """
-        :param enum cat_prism_orientation value:
+        :param int value:
         """
 
         self.prism.DirectionOrientation = value
 
     @property
-    def direction_type(self):
+    def direction_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DirectionType() As CatPrismExtrusionDirection
                 | 
                 |     Returns the prism direction type.
@@ -90,24 +91,25 @@ class Prism(SketchBasedShape):
                 |              Set dirType = firstPrism.DirectionType
                 |              firstPrism.DirectionType = catNormalToSketchDirection
 
-        :return: enum cat_prism_extrusion_direction
+        :return: int
+        :rtype: int
         """
 
         return self.prism.DirectionType
 
     @direction_type.setter
-    def direction_type(self, value):
+    def direction_type(self, value: int):
         """
-        :param enum cat_prism_extrusion_direction value:
+        :param int value:
         """
 
         self.prism.DirectionType = value
 
     @property
-    def first_limit(self):
+    def first_limit(self) -> Limit:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstLimit() As Limit (Read Only)
                 | 
                 |     Returns the first prism limit (one of the two).
@@ -124,15 +126,16 @@ class Prism(SketchBasedShape):
                 |              Set firstLimit = firstPrism.FirstLimit
 
         :return: Limit
+        :rtype: Limit
         """
 
         return Limit(self.prism.FirstLimit)
 
     @property
-    def is_symmetric(self):
+    def is_symmetric(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property IsSymmetric() As boolean
                 | 
                 |     Returns the prism symmetry flag.
@@ -151,12 +154,13 @@ class Prism(SketchBasedShape):
                 |              firstPrism.IsSymmetric = TRUE
 
         :return: bool
+        :rtype: bool
         """
 
         return self.prism.IsSymmetric
 
     @is_symmetric.setter
-    def is_symmetric(self, value):
+    def is_symmetric(self, value: bool):
         """
         :param bool value:
         """
@@ -164,10 +168,10 @@ class Prism(SketchBasedShape):
         self.prism.IsSymmetric = value
 
     @property
-    def is_thin(self):
+    def is_thin(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property IsThin() As boolean
                 | 
                 |     Returns the prism thin flag.
@@ -186,12 +190,13 @@ class Prism(SketchBasedShape):
                 |              firstPrism.IsThin = TRUE
 
         :return: bool
+        :rtype: bool
         """
 
         return self.prism.IsThin
 
     @is_thin.setter
-    def is_thin(self, value):
+    def is_thin(self, value: bool):
         """
         :param bool value:
         """
@@ -199,10 +204,10 @@ class Prism(SketchBasedShape):
         self.prism.IsThin = value
 
     @property
-    def merge_end(self):
+    def merge_end(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MergeEnd() As boolean
                 | 
                 |     Returns the prism merge end flag (for thin prism only).
@@ -220,12 +225,13 @@ class Prism(SketchBasedShape):
                 |              firstPrism.IsMergeEnd = TRUE
 
         :return: bool
+        :rtype: bool
         """
 
         return self.prism.MergeEnd
 
     @merge_end.setter
-    def merge_end(self, value):
+    def merge_end(self, value: bool):
         """
         :param bool value:
         """
@@ -233,10 +239,10 @@ class Prism(SketchBasedShape):
         self.prism.MergeEnd = value
 
     @property
-    def neutral_fiber(self):
+    def neutral_fiber(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NeutralFiber() As boolean
                 | 
                 |     Returns the prism neutral fiber flag (for thin prism
@@ -256,12 +262,13 @@ class Prism(SketchBasedShape):
                 |              firstPrism.IsNeutralFiber = TRUE
 
         :return: bool
+        :rtype: bool
         """
 
         return self.prism.NeutralFiber
 
     @neutral_fiber.setter
-    def neutral_fiber(self, value):
+    def neutral_fiber(self, value: bool):
         """
         :param bool value:
         """
@@ -269,10 +276,10 @@ class Prism(SketchBasedShape):
         self.prism.NeutralFiber = value
 
     @property
-    def second_limit(self):
+    def second_limit(self) -> Limit:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondLimit() As Limit (Read Only)
                 | 
                 |     Returns the second prism limit (one of the two).
@@ -289,19 +296,20 @@ class Prism(SketchBasedShape):
                 |              Set secondLimit = firstPrism.SecondLimit
 
         :return: Limit
+        :rtype: Limit
         """
 
         return Limit(self.prism.SecondLimit)
 
-    def get_direction(self, io_direction):
+    def get_direction(self, io_direction: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetDirection(CATSafeArrayVariant ioDirection)
                 | 
                 |     Returns the prism direction with absolute coordinates.
-                |     It needs a safe array with 3 elements : X, Y, Z direction coordinates The array must be
-                |     previously initialized
+                |     It needs a safe array with 3 elements : X, Y, Z direction coordinates
+                |     The array must be previously initialized
                 | 
                 |     Returns:
                 |         ioDirection The direction coordinates
@@ -318,6 +326,7 @@ class Prism(SketchBasedShape):
 
         :param tuple io_direction:
         :return: None
+        :rtype: None
         """
         return self.prism.GetDirection(io_direction)
         # # # # Autogenerated comment: 
@@ -336,10 +345,10 @@ class Prism(SketchBasedShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def reverse_inner_side(self):
+    def reverse_inner_side(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ReverseInnerSide()
                 | 
                 |     Reverses the prism inner side when the profile is open. This is useful for
@@ -352,13 +361,14 @@ class Prism(SketchBasedShape):
                 |          firstPrism.ReverseInnerSide
 
         :return: None
+        :rtype: None
         """
         return self.prism.ReverseInnerSide()
 
-    def set_direction(self, i_line):
+    def set_direction(self, i_line: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDirection(Reference iLine)
                 | 
                 |     Sets the prism associative direction.
@@ -383,6 +393,7 @@ class Prism(SketchBasedShape):
 
         :param Reference i_line:
         :return: None
+        :rtype: None
         """
         return self.prism.SetDirection(i_line.com_object)
         # # # # Autogenerated comment: 

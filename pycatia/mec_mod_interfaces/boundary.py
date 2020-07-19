@@ -13,7 +13,6 @@ from pycatia.in_interfaces.reference import Reference
 
 
 class Boundary(Reference):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -90,9 +89,6 @@ class Boundary(Reference):
                 |      Set EdgeFillet = ShapeFactory.AddNewEdgeFilletWithConstantRadius(Selection.Item(1).Value,1,5.0)
                 |      EdgeFillet.EdgePropagation = 1
                 |      Document.Part.Update
-                |
-                |
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
 
     """
 
@@ -101,4 +97,4 @@ class Boundary(Reference):
         self.boundary = com_object
 
     def __repr__(self):
-        return f'Boundary(name="{ self.name }")'
+        return f'Boundary(name="{self.name}")'

@@ -9,6 +9,8 @@
         
 """
 
+# todo: investigate how this works.
+
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.cat_base_dispatch import CATBaseDispatch
 
@@ -39,7 +41,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         self.drawing_view_generative_behavior = com_object
 
     @property
-    def color_inheritance_mode(self):
+    def color_inheritance_mode(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -60,21 +62,22 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 | 
                 |          MyView.GenerativeBehavior.ColorInheritanceMode(cat3DColorInheritanceModeOn)
 
-        :return: enum cat3_d_color_inheritance_mode
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_view_generative_behavior.ColorInheritanceMode
 
     @color_inheritance_mode.setter
-    def color_inheritance_mode(self, value):
+    def color_inheritance_mode(self, value: int):
         """
-        :param enum cat3_d_color_inheritance_mode value:
+        :param int value:
         """
 
         self.drawing_view_generative_behavior.ColorInheritanceMode = value
 
     @property
-    def document(self):
+    def document(self) -> AnyObject:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -99,20 +102,21 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 |          MyView.GenerativeBehavior.Document = PartToDraw
 
         :return: AnyObject
+        :rtype: AnyObject
         """
 
         return AnyObject(self.drawing_view_generative_behavior.Document)
 
     @document.setter
-    def document(self, value):
+    def document(self, document: AnyObject):
         """
-        :param AnyObject value:
+        :param AnyObject document:
         """
 
-        self.drawing_view_generative_behavior.Document = value
+        self.drawing_view_generative_behavior.Document = document.com_object
 
     @property
-    def fillet_representation(self):
+    def fillet_representation(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -131,21 +135,22 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 | 
                 |          MyView.GenerativeBehavior.FilletRepresentation = catFilletRepBoundary
 
-        :return: enum cat_fillet_representation
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_view_generative_behavior.FilletRepresentation
 
     @fillet_representation.setter
-    def fillet_representation(self, value):
+    def fillet_representation(self, value: int):
         """
-        :param enum cat_fillet_representation value:
+        :param int value:
         """
 
         self.drawing_view_generative_behavior.FilletRepresentation = value
 
     @property
-    def hidden_line_mode(self):
+    def hidden_line_mode(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -165,21 +170,22 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 | 
                 |          MyView.GenerativeBehavior.HiddenLineMode = catHLRModeOn
 
-        :return: enum cat_hidden_line_mode
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_view_generative_behavior.HiddenLineMode
 
     @hidden_line_mode.setter
-    def hidden_line_mode(self, value):
+    def hidden_line_mode(self, value: int):
         """
-        :param enum cat_hidden_line_mode value:
+        :param int value:
         """
 
         self.drawing_view_generative_behavior.HiddenLineMode = value
 
     @property
-    def image_view_mode(self):
+    def image_view_mode(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -205,21 +211,22 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 | 
                 |     MyView.GenerativeBehavior.CatImageViewMode(catImageModeHRD)
 
-        :return: enum cat_image_view_mode
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_view_generative_behavior.ImageViewMode
 
     @image_view_mode.setter
-    def image_view_mode(self, value):
+    def image_view_mode(self, value: int):
         """
-        :param enum cat_image_view_mode value:
+        :param int value:
         """
 
         self.drawing_view_generative_behavior.ImageViewMode = value
 
     @property
-    def limit_bounding_box(self):
+    def limit_bounding_box(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -236,12 +243,13 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 |         For both methods, if an unspecified failure has occurred
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_view_generative_behavior.LimitBoundingBox
 
     @limit_bounding_box.setter
-    def limit_bounding_box(self, value):
+    def limit_bounding_box(self, value: float):
         """
         :param float value:
         """
@@ -249,7 +257,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         self.drawing_view_generative_behavior.LimitBoundingBox = value
 
     @property
-    def parent_view(self):
+    def parent_view(self) -> 'DrawingView':
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -268,12 +276,13 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 |          Set MyParentView = MyView.GenerativeBehavior.ParentView
 
         :return: DrawingView
+        :rtype: DrawingView
         """
         from pycatia.drafting_interfaces.drawing_view import DrawingView
         return DrawingView(self.drawing_view_generative_behavior.ParentView)
 
     @property
-    def points_projection_mode(self):
+    def points_projection_mode(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -293,21 +302,22 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 | 
                 |          MyView.GenerativeBehavior.PointsProjectionMode = catPointsProjectionModeOn
 
-        :return: enum cat_points_projection_mode
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_view_generative_behavior.PointsProjectionMode
 
     @points_projection_mode.setter
-    def points_projection_mode(self, value):
+    def points_projection_mode(self, value: int):
         """
-        :param enum cat_points_projection_mode value:
+        :param int value:
         """
 
         self.drawing_view_generative_behavior.PointsProjectionMode = value
 
     @property
-    def points_symbol(self):
+    def points_symbol(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -316,21 +326,22 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 |     Returns or sets symbol for projected points. The 0 value means that
                 |     projected points inherit the symbol of 3D points they come from.
 
-        :return: enum
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_view_generative_behavior.PointsSymbol
 
     @points_symbol.setter
-    def points_symbol(self, value):
+    def points_symbol(self, value: int):
         """
-        :param enum value:
+        :param int value:
         """
 
         self.drawing_view_generative_behavior.PointsSymbol = value
 
     @property
-    def representation_mode(self):
+    def representation_mode(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -355,20 +366,21 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 | 
                 |      MyView.GenerativeBehavior.RepresentationMode = catPolyhedricMode
 
-        :return: enum cat_representation_mode
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_view_generative_behavior.RepresentationMode
 
     @representation_mode.setter
-    def representation_mode(self, value):
+    def representation_mode(self, value: int):
         """
-        :param enum cat_representation_mode value:
+        :param int value:
         """
 
         self.drawing_view_generative_behavior.RepresentationMode = value
 
-    def apply_breakout_to(self, i_parent_view):
+    def apply_breakout_to(self, i_parent_view: 'DrawingViewGenerativeBehavior') -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -390,26 +402,13 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
 
         :param DrawingViewGenerativeBehavior i_parent_view:
         :return: None
+        :rtype: None
         """
-        return self.drawing_view_generative_behavior.ApplyBreakoutTo(i_parent_view.com_object)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'apply_breakout_to'
-        # # vba_code = """
-        # # Public Function apply_breakout_to(drawing_view_generative_behavior)
-        # #     Dim iParentView (2)
-        # #     drawing_view_generative_behavior.ApplyBreakoutTo iParentView
-        # #     apply_breakout_to = iParentView
-        # # End Function
-        # # """
+        return self.drawing_view_generative_behavior.ApplyBreakoutTo(i_parent_view.drawing_view_generative_behavior)
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def define_auxiliary_view(self, i_x_start_point, i_y_start_point, i_x_end_point, y_end_point,
-                              i_side_to_draw, i_parent_view_generative_behavior):
+    def define_auxiliary_view(self, i_x_start_point: float, i_y_start_point: float, i_x_end_point: float,
+                              y_end_point: float, i_side_to_draw: int,
+                              i_parent_view_generative_behavior: 'DrawingViewGenerativeBehavior') -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -469,30 +468,16 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param float i_y_start_point:
         :param float i_x_end_point:
         :param float y_end_point:
-        :param enum i_side_to_draw:
+        :param int i_side_to_draw:
         :param DrawingViewGenerativeBehavior i_parent_view_generative_behavior:
         :return: None
+        :rtype: None
         """
         return self.drawing_view_generative_behavior.DefineAuxiliaryView(i_x_start_point, i_y_start_point,
                                                                          i_x_end_point, y_end_point, i_side_to_draw,
-                                                                         i_parent_view_generative_behavior.com_object)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'define_auxiliary_view'
-        # # vba_code = """
-        # # Public Function define_auxiliary_view(drawing_view_generative_behavior)
-        # #     Dim iXStartPoint (2)
-        # #     drawing_view_generative_behavior.DefineAuxiliaryView iXStartPoint
-        # #     define_auxiliary_view = iXStartPoint
-        # # End Function
-        # # """
+                                                                         i_parent_view_generative_behavior.drawing_view_generative_behavior)
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def define_box3_d_view(self, i_boxable_object):
+    def define_box_3d_view(self, i_boxable_object: AnyObject) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -509,10 +494,11 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
 
         :param AnyObject i_boxable_object:
         :return: None
+        :rtype: None
         """
         return self.drawing_view_generative_behavior.DefineBox3DView(i_boxable_object.com_object)
 
-    def define_breakout(self, i_profil, i_plane1, i_plane2):
+    def define_breakout(self, i_profil: tuple, i_plane1: tuple, i_plane2: tuple) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -542,6 +528,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param tuple i_plane1:
         :param tuple i_plane2:
         :return: None
+        :rtype: None
         """
         return self.drawing_view_generative_behavior.DefineBreakout(i_profil, i_plane1, i_plane2)
         # # # # Autogenerated comment: 
@@ -560,7 +547,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def define_broken_view(self, i_broken_lines_extremities, i_x_direction, i_y_direction):
+    def define_broken_view(self, i_broken_lines_extremities: tuple, i_x_direction: float, i_y_direction: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -622,6 +609,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param float i_x_direction:
         :param float i_y_direction:
         :return: None
+        :rtype: None
         """
         return self.drawing_view_generative_behavior.DefineBrokenView(i_broken_lines_extremities, i_x_direction,
                                                                       i_y_direction)
@@ -641,7 +629,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def define_circular_clipping_view(self, x_center, y_center, radius):
+    def define_circular_clipping_view(self, x_center: float, y_center: float, radius: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -664,11 +652,13 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param float y_center:
         :param float radius:
         :return: None
+        :rtype: None
         """
         return self.drawing_view_generative_behavior.DefineCircularClippingView(x_center, y_center, radius)
 
-    def define_circular_detail_view(self, i_x_center, i_y_center, i_radius,
-                                    i_pv_generative_behavior):
+    # todo: investigate how this works.
+    def define_circular_detail_view(self, i_x_center: float, i_y_center: float, i_radius: float,
+                                    i_parent_view_generative_behavior: 'DrawingViewGenerativeBehavior') -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -711,11 +701,15 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param float i_x_center:
         :param float i_y_center:
         :param float i_radius:
-        :param DrawingViewGenerativeBehavior i_pv_generative_behavior:
+        :param DrawingViewGenerativeBehavior i_parent_view_generative_behavior:
         :return: None
+        :rtype: None
         """
-        return self.drawing_view_generative_behavior.DefineCircularDetailView(i_x_center, i_y_center, i_radius,
-                                                                              i_pv_generative_behavior.com_object)
+        return self.drawing_view_generative_behavior.DefineCircularDetailView(
+            i_x_center,
+            i_y_center,
+            i_radius,
+            i_parent_view_generative_behavior.drawing_view_generative_behavior)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -732,7 +726,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def define_circular_exact_clipping_view(self, x_center, y_center, radius):
+    def define_circular_exact_clipping_view(self, x_center: float, y_center: float, radius: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -755,10 +749,11 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param float y_center:
         :param float radius:
         :return: None
+        :rtype: None
         """
         return self.drawing_view_generative_behavior.DefineCircularExactClippingView(x_center, y_center, radius)
 
-    def define_front_view(self, i_x1, i_y1, i_z1, i_x2, i_y2, i_z2):
+    def define_front_view(self, i_x1: float, i_y1: float, i_z1: float, i_x2: float, i_y2: float, i_z2: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -800,10 +795,12 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param float i_y2:
         :param float i_z2:
         :return: None
+        :rtype: None
         """
         return self.drawing_view_generative_behavior.DefineFrontView(i_x1, i_y1, i_z1, i_x2, i_y2, i_z2)
 
-    def define_isometric_view(self, i_x1, i_y1, i_z1, i_x2, i_y2, i_z2):
+    def define_isometric_view(self, i_x1: float, i_y1: float, i_z1: float, i_x2: float, i_y2: float,
+                              i_z2: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -847,10 +844,11 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param float i_y2:
         :param float i_z2:
         :return: None
+        :rtype: None
         """
         return self.drawing_view_generative_behavior.DefineIsometricView(i_x1, i_y1, i_z1, i_x2, i_y2, i_z2)
 
-    def define_polygonal_clipping_view(self, profil):
+    def define_polygonal_clipping_view(self, profile: tuple) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -868,27 +866,17 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 |             Legal values : S_OK if clipping definition succeeded or E_FAIL if the clipping definition
                 |             failed
 
-        :param tuple profil:
+        :param tuple profile:
         :return: None
+        :rtype: None
         """
-        return self.drawing_view_generative_behavior.DefinePolygonalClippingView(profil)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'define_polygonal_clipping_view'
-        # # vba_code = """
-        # # Public Function define_polygonal_clipping_view(drawing_view_generative_behavior)
-        # #     Dim profil (2)
-        # #     drawing_view_generative_behavior.DefinePolygonalClippingView profil
-        # #     define_polygonal_clipping_view = profil
-        # # End Function
-        # # """
+        return self.drawing_view_generative_behavior.DefinePolygonalClippingView(profile)
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def define_polygonal_detail_view(self, i_profile, i_pv_generative_behavior):
+    # todo: investigate how this works.
+    def define_polygonal_detail_view(self,
+                                     i_profile: tuple,
+                                     i_parent_view_generative_behavior: 'DrawingViewGenerativeBehavior'
+                                     ) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -940,31 +928,16 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 |          100., 100., 0., 100., MyParentViewGB
 
         :param tuple i_profile:
-        :param DrawingViewGenerativeBehavior i_pv_generative_behavior:
+        :param DrawingViewGenerativeBehavior i_parent_view_generative_behavior:
         :return: None
-
-        Args:
-            i_pv_generative_behavior:
+        :rtype: None
         """
-        return self.drawing_view_generative_behavior.DefinePolygonalDetailView(i_profile,
-                                                                               i_pv_generative_behavior.com_object)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'define_polygonal_detail_view'
-        # # vba_code = """
-        # # Public Function define_polygonal_detail_view(drawing_view_generative_behavior)
-        # #     Dim iProfile (2)
-        # #     drawing_view_generative_behavior.DefinePolygonalDetailView iProfile
-        # #     define_polygonal_detail_view = iProfile
-        # # End Function
-        # # """
+        return self.drawing_view_generative_behavior.DefinePolygonalDetailView(
+            i_profile,
+            i_parent_view_generative_behavior.drawing_view_generative_behavior
+        )
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def define_polygonal_exact_clipping_view(self, profil):
+    def define_polygonal_exact_clipping_view(self, profile: tuple) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -982,27 +955,14 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 |             Legal values : S_OK if clipping definition succeeded or E_FAIL if the clipping definition
                  |            failed
 
-        :param tuple profil:
+        :param tuple profile:
         :return: None
+        :rtype: None
         """
-        return self.drawing_view_generative_behavior.DefinePolygonalExactClippingView(profil)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'define_polygonal_exact_clipping_view'
-        # # vba_code = """
-        # # Public Function define_polygonal_exact_clipping_view(drawing_view_generative_behavior)
-        # #     Dim profil (2)
-        # #     drawing_view_generative_behavior.DefinePolygonalExactClippingView profil
-        # #     define_polygonal_exact_clipping_view = profil
-        # # End Function
-        # # """
+        return self.drawing_view_generative_behavior.DefinePolygonalExactClippingView(profile)
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def define_projection_view(self, i_parent_view_generative_behavior, i_type):
+    def define_projection_view(self, i_parent_view_generative_behavior: 'DrawingViewGenerativeBehavior',
+                               i_type: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1033,29 +993,16 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 |          catRightView
 
         :param DrawingViewGenerativeBehavior i_parent_view_generative_behavior:
-        :param CatProjViewType i_type:
+        :param int i_type:
         :return: None
+        :rtype: None
         """
-        return self.drawing_view_generative_behavior.DefineProjectionView(i_parent_view_generative_behavior.com_object,
-                                                                          i_type.com_object)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'define_projection_view'
-        # # vba_code = """
-        # # Public Function define_projection_view(drawing_view_generative_behavior)
-        # #     Dim iParentViewGenerativeBehavior (2)
-        # #     drawing_view_generative_behavior.DefineProjectionView iParentViewGenerativeBehavior
-        # #     define_projection_view = iParentViewGenerativeBehavior
-        # # End Function
-        # # """
+        return self.drawing_view_generative_behavior.DefineProjectionView(
+            i_parent_view_generative_behavior.drawing_view_generative_behavior,
+            i_type)
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def define_section_view(self, i_profile, i_section_type, i_profile_type, i_side_to_draw,
-                            i_parent_view_generative_behavior):
+    def define_section_view(self, i_profile: tuple, i_section_type: str, i_profile_type: str, i_side_to_draw: int,
+                            i_parent_view_generative_behavior: 'DrawingViewGenerativeBehavior') -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1140,31 +1087,25 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param tuple i_profile:
         :param str i_section_type:
         :param str i_profile_type:
-        :param enum i_side_to_draw:
+        :param int i_side_to_draw:
         :param DrawingViewGenerativeBehavior i_parent_view_generative_behavior:
         :return: None
+        :rtype: None
         """
-        return self.drawing_view_generative_behavior.DefineSectionView(i_profile, i_section_type, i_profile_type,
-                                                                       i_side_to_draw,
-                                                                       i_parent_view_generative_behavior.com_object)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'define_section_view'
-        # # vba_code = """
-        # # Public Function define_section_view(drawing_view_generative_behavior)
-        # #     Dim iProfile (2)
-        # #     drawing_view_generative_behavior.DefineSectionView iProfile
-        # #     define_section_view = iProfile
-        # # End Function
-        # # """
+        return self.drawing_view_generative_behavior.DefineSectionView(
+            i_profile,
+            i_section_type,
+            i_profile_type,
+            i_side_to_draw,
+            i_parent_view_generative_behavior.drawing_view_generative_behavior
+        )
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def define_stand_alone_section(self, profil, type_of_section, type_of_profile, i_plane,
-                                   i_side):
+    def define_stand_alone_section(self,
+                                   profile: tuple,
+                                   type_of_section: str,
+                                   type_of_profile: str,
+                                   i_plane: tuple,
+                                   i_side: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1228,33 +1169,19 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 |     arrayOfVariantOfDouble1, "SectionView", "Offset", arrayOfVariantOfDouble2,
                 |     1
 
-        :param tuple profil:
+        :param tuple profile:
         :param str type_of_section:
         :param str type_of_profile:
         :param tuple i_plane:
-        :param enum i_side:
+        :param int i_side:
         :return: None
+        :rtype: None
         """
-        return self.drawing_view_generative_behavior.DefineStandAloneSection(profil, type_of_section, type_of_profile,
+        return self.drawing_view_generative_behavior.DefineStandAloneSection(profile, type_of_section, type_of_profile,
                                                                              i_plane, i_side)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'define_stand_alone_section'
-        # # vba_code = """
-        # # Public Function define_stand_alone_section(drawing_view_generative_behavior)
-        # #     Dim profil (2)
-        # #     drawing_view_generative_behavior.DefineStandAloneSection profil
-        # #     define_stand_alone_section = profil
-        # # End Function
-        # # """
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def define_tps_section_view(self, i_profile, i_section_type, i_profile_type, i_side_to_draw,
-                                i_parent_view_generative_behavior):
+    def define_tps_section_view(self, i_profile: tuple, i_section_type: str, i_profile_type: str, i_side_to_draw: int,
+                                i_parent_view_generative_behavior: 'DrawingViewGenerativeBehavior') -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1339,30 +1266,20 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param tuple i_profile:
         :param str i_section_type:
         :param str i_profile_type:
-        :param enum i_side_to_draw:
+        :param int i_side_to_draw:
         :param DrawingViewGenerativeBehavior i_parent_view_generative_behavior:
         :return: None
+        :rtype: None
         """
-        return self.drawing_view_generative_behavior.DefineTPSSectionView(i_profile, i_section_type, i_profile_type,
-                                                                          i_side_to_draw,
-                                                                          i_parent_view_generative_behavior.com_object)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'define_tps_section_view'
-        # # vba_code = """
-        # # Public Function define_tps_section_view(drawing_view_generative_behavior)
-        # #     Dim iProfile (2)
-        # #     drawing_view_generative_behavior.DefineTPSSectionView iProfile
-        # #     define_tps_section_view = iProfile
-        # # End Function
-        # # """
+        return self.drawing_view_generative_behavior.DefineTPSSectionView(
+            i_profile,
+            i_section_type,
+            i_profile_type,
+            i_side_to_draw,
+            i_parent_view_generative_behavior.drawing_view_generative_behavior)
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def define_unfolded_view(self, i_x1, i_y1, i_z1, i_x2, i_y2, i_z2):
+    def define_unfolded_view(self, i_x1: float, i_y1: float, i_z1: float, i_x2: float, i_y2: float,
+                             i_z2: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1404,10 +1321,11 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param float i_y2:
         :param float i_z2:
         :return: None
+        :rtype: None
         """
         return self.drawing_view_generative_behavior.DefineUnfoldedView(i_x1, i_y1, i_z1, i_x2, i_y2, i_z2)
 
-    def force_update(self):
+    def force_update(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1423,10 +1341,11 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 |          MyView.GenerativeBehavior.ForceUpdate()
 
         :return: None
+        :rtype: None
         """
         return self.drawing_view_generative_behavior.ForceUpdate()
 
-    def get_axis_systeme(self, o_product, o_axis_systeme):
+    def get_axis_system(self, o_product: AnyObject, o_axis_system: AnyObject) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1443,12 +1362,13 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 |             The axis system stored as a CATIABase.
 
         :param AnyObject o_product:
-        :param AnyObject o_axis_systeme:
+        :param AnyObject o_axis_system:
         :return: None
+        :rtype: None
         """
-        return self.drawing_view_generative_behavior.GetAxisSysteme(o_product.com_object, o_axis_systeme.com_object)
+        return self.drawing_view_generative_behavior.GetAxisSysteme(o_product.com_object, o_axis_system.com_object)
 
-    def get_gps_name(self):
+    def get_gps_name(self) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1477,10 +1397,12 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 |      MyView.GenerativeBehavior.GetGPSName GPSFile
 
         :return: str
+        :rtype: str
         """
         return self.drawing_view_generative_behavior.GetGPSName()
 
-    def get_projection_plane(self, o_x1, o_y1, o_z1, o_x2, o_y2, o_z2):
+    def get_projection_plane(self, o_x1: float, o_y1: float, o_z1: float, o_x2: float, o_y2: float,
+                             o_z2: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1520,10 +1442,11 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param float o_y2:
         :param float o_z2:
         :return: None
+        :rtype: None
         """
         return self.drawing_view_generative_behavior.GetProjectionPlane(o_x1, o_y1, o_z1, o_x2, o_y2, o_z2)
 
-    def get_projection_plane_normal(self, o_x_normal, o_y_normal, o_z_normal):
+    def get_projection_plane_normal(self, o_x_normal: float, o_y_normal: float, o_z_normal: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1554,10 +1477,11 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param float o_y_normal:
         :param float o_z_normal:
         :return: None
+        :rtype: None
         """
         return self.drawing_view_generative_behavior.GetProjectionPlaneNormal(o_x_normal, o_y_normal, o_z_normal)
 
-    def set_axis_systeme(self, i_product, i_axis_systeme):
+    def set_axis_systeme(self, i_product: AnyObject, i_axis_systeme: AnyObject) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1576,10 +1500,11 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param AnyObject i_product:
         :param AnyObject i_axis_systeme:
         :return: None
+        :rtype: None
         """
         return self.drawing_view_generative_behavior.SetAxisSysteme(i_product.com_object, i_axis_systeme.com_object)
 
-    def set_gps_name(self, i_gps_name):
+    def set_gps_name(self, i_gps_name: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1609,10 +1534,12 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
 
         :param str i_gps_name:
         :return: None
+        :rtype: None
         """
         return self.drawing_view_generative_behavior.SetGPSName(i_gps_name)
 
-    def set_projection_plane(self, i_x1, i_y1, i_z1, i_x2, i_y2, i_z2):
+    def set_projection_plane(self, i_x1: float, i_y1: float, i_z1: float, i_x2: float, i_y2: float,
+                             i_z2: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1660,10 +1587,11 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param float i_y2:
         :param float i_z2:
         :return: None
+        :rtype: None
         """
         return self.drawing_view_generative_behavior.SetProjectionPlane(i_x1, i_y1, i_z1, i_x2, i_y2, i_z2)
 
-    def un_break(self):
+    def un_break(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1682,10 +1610,11 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 |          MyView.GenerativeBehavior.UnBreak()
 
         :return: None
+        :rtype: None
         """
         return self.drawing_view_generative_behavior.UnBreak()
 
-    def un_breakout(self):
+    def un_breakout(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1704,10 +1633,11 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 |          MyView.GenerativeBehavior.UnBreakout()
 
         :return: None
+        :rtype: None
         """
         return self.drawing_view_generative_behavior.UnBreakout()
 
-    def un_breakout_num(self, i_breakout_number):
+    def un_breakout_num(self, i_breakout_number: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1731,7 +1661,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 | 
                 |          MyView.GenerativeBehavior.UnBreakout(1)
 
-        :param enum i_breakout_number:
+        :param int i_breakout_number:
         :return: None
         """
         return self.drawing_view_generative_behavior.UnBreakoutNum(i_breakout_number)
@@ -1751,7 +1681,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def un_clip(self):
+    def un_clip(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1769,10 +1699,11 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 |          MyView.GenerativeBehavior.UnClip()
 
         :return: None
+        :rtype: None
         """
         return self.drawing_view_generative_behavior.UnClip()
 
-    def update(self):
+    def update(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1790,6 +1721,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 |          MyView.GenerativeBehavior.Update()
 
         :return: None
+        :rtype: None
         """
         return self.drawing_view_generative_behavior.Update()
 

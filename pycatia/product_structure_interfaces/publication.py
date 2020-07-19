@@ -34,7 +34,7 @@ class Publication(AnyObject):
         self.publication = com_object
 
     @property
-    def relay(self):
+    def relay(self) -> False:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -55,12 +55,13 @@ class Publication(AnyObject):
                 |              Pub1.Relay(Pub2)
 
         :return: False
+        :rtype: False
         """
 
         return None
 
     @relay.setter
-    def relay(self, value):
+    def relay(self, value: False):
         """
         :param False value:
         """
@@ -68,7 +69,7 @@ class Publication(AnyObject):
         self.publication.Relay = value
 
     @property
-    def valuation(self):
+    def valuation(self) -> AnyObject:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -89,12 +90,13 @@ class Publication(AnyObject):
                 |              Ref = Pub1.Valuation
 
         :return: AnyObject
+        :rtype: AnyObject
         """
 
         return AnyObject(self.publication.Valuation)
 
     @valuation.setter
-    def valuation(self, value):
+    def valuation(self, value: AnyObject):
         """
         :param AnyObject value:
         """

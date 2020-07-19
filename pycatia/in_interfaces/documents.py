@@ -8,6 +8,7 @@ from pywintypes import com_error
 from pycatia.exception_handling import CATIAApplicationException
 from pycatia.in_interfaces.document import Document
 from pycatia.system_interfaces.collection import Collection
+from pycatia.types import cat_variant
 
 
 class Documents(Collection):
@@ -42,8 +43,9 @@ class Documents(Collection):
     def __init__(self, com_object):
         super().__init__(com_object, child_object=Document)
         self.documents = com_object
+        self.child_object = Document
 
-    def add(self, document_type):
+    def add(self, document_type) -> Document:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -76,6 +78,7 @@ class Documents(Collection):
 
         :param str document_type:
         :return: Document
+        :rtype: Document
         """
 
         document_types = ['Part', 'Product', 'Drawing']
@@ -84,9 +87,9 @@ class Documents(Collection):
 
         self.logger.info(f'Creating a new "{document_type}".')
 
-        return self.child_object(self.documents.Add(document_type))
+        return Document(self.child_object(self.documents.Add(document_type)))
 
-    def count_types(self, file_type_list):
+    def count_types(self, file_type_list: list) -> int:
         """
         Returns the number of documents which presents special file extensions like:
             'catpart', 'catdrawing', 'catproduct', 'catmaterial', 'catalog', 'catfct'
@@ -105,7 +108,7 @@ class Documents(Collection):
 
         return len([True for name in items for typ in file_type_list if name.lower().find(typ) > 0])
 
-    def new_from(self, file_name):
+    def new_from(self, file_name: str) -> Document:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -134,6 +137,7 @@ class Documents(Collection):
 
         :param str file_name:
         :return: Document
+        :rtype: Document
         """
 
         if not os.path.isfile(file_name):
@@ -142,9 +146,9 @@ class Documents(Collection):
         # get the full path to the file
         file_name = os.path.abspath(file_name)
 
-        return self.documents.NewFrom(file_name)
+        return Document(self.documents.NewFrom(file_name))
 
-    def item(self, index):
+    def item(self, index: cat_variant) -> Document:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -174,13 +178,16 @@ class Documents(Collection):
                 |          Dim ThatDoc As Document
                 |          Set ThatDoc = Documents.Item("MyDoc")
 
-        :param CATVariant index:
+        :param cat_variant index:
         :return: Document
+        :rtype: Document
         """
+        try:
+            return Document(self.documents.Item(index))
+        except com_error:
+            raise CATIAApplicationException(f'Could not get item "{index}".')
 
-        return self.child_object(self.documents.Item(index))
-
-    def num_open(self):
+    def num_open(self) -> int:
         """
         Returns the number of open documents.
 
@@ -189,7 +196,8 @@ class Documents(Collection):
             The COM object can return the incorrect number of documents open. After a document is closed CATIA can keep
             the linked document `ABQMaterialPropertiesCatalog.CATfct` open.
 
-        :return: int()
+        :return: int
+        :rtype: int
         """
 
         # for i in range(0, self.documents.Count):
@@ -204,7 +212,7 @@ class Documents(Collection):
         warnings.warn(warning_string)
         return self.documents.Count
 
-    def open(self, file_name):
+    def open(self, file_name: str) -> Document:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -232,6 +240,7 @@ class Documents(Collection):
 
         :param str file_name:
         :return: Document
+        :rtype: Document
         """
 
         if not os.path.isfile(file_name):
@@ -242,13 +251,13 @@ class Documents(Collection):
 
         try:
             self.logger.info(f'Opening document "{file_name}".')
-            self.documents.Open(file_name)
+            return Document(self.documents.Open(file_name))
         except com_error:
             raise CATIAApplicationException(
                 f'Could not open document "{file_name}". '
                 'Check file type and ensure the version of CATIA it was created with is compatible.')
 
-    def read(self, file_name):
+    def read(self, file_name: str) -> Document:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -278,8 +287,9 @@ class Documents(Collection):
                 |          Dim Doc As Document
                 |          Set Doc = Documents.Read(FileToOpen)
 
-        :param str i_file_name:
+        :param str file_name:
         :return: Document
+        :rtype: Document
         """
         return self.documents.Read(file_name)
 

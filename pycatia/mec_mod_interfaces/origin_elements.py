@@ -37,10 +37,10 @@ class OriginElements(AnyObject):
         self.origin_elements = com_object
 
     @property
-    def plane_xy(self):
+    def plane_xy(self) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PlaneXY() As AnyObject (Read Only)
                 | 
                 |     Returns the XY plane of the part 3D reference axis system.
@@ -53,15 +53,16 @@ class OriginElements(AnyObject):
                 |          Set plnXY = partRoot.originElements.PlaneXY
 
         :return: AnyObject
+        :rtype: AnyObject
         """
 
         return AnyObject(self.origin_elements.PlaneXY)
 
     @property
-    def plane_yz(self):
+    def plane_yz(self) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PlaneYZ() As AnyObject (Read Only)
                 | 
                 |     Returns the YZ plane of the part 3D reference axis system.
@@ -74,15 +75,16 @@ class OriginElements(AnyObject):
                 |          Set plnYZ = partRoot.originElements.PlaneYZ
 
         :return: AnyObject
+        :rtype: AnyObject
         """
 
         return AnyObject(self.origin_elements.PlaneYZ)
 
     @property
-    def plane_zx(self):
+    def plane_zx(self) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PlaneZX() As AnyObject (Read Only)
                 | 
                 |     Returns the ZX plane of the part 3D reference axis system.
@@ -95,6 +97,7 @@ class OriginElements(AnyObject):
                 |          Set plnZX = partRoot.originElements.PlaneZX
 
         :return: AnyObject
+        :rtype: AnyObject
         """
 
         return AnyObject(self.origin_elements.PlaneZX)

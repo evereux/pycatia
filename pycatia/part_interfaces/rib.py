@@ -13,7 +13,6 @@ from pycatia.part_interfaces.sweep import Sweep
 
 
 class Rib(Sweep):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -32,9 +31,7 @@ class Rib(Sweep):
                 | The rib shape is made up of a profile represented by a sketch swept along a
                 | center curve represented by another sketch. This is a "positive" shape: it adds
                 | material to the body it belongs to.
-                | 
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
-    
+
     """
 
     def __init__(self, com_object):
@@ -42,4 +39,4 @@ class Rib(Sweep):
         self.rib = com_object
 
     def __repr__(self):
-        return f'Rib(name="{ self.name }")'
+        return f'Rib(name="{self.name}")'

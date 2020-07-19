@@ -8,14 +8,13 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.int_param import IntParam
 from pycatia.part_interfaces.linear_repartition import LinearRepartition
 from pycatia.part_interfaces.pattern import Pattern
 
 
 class RectPattern(Pattern):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -44,10 +43,10 @@ class RectPattern(Pattern):
         self.rect_pattern = com_object
 
     @property
-    def first_direction_repartition(self):
+    def first_direction_repartition(self) -> LinearRepartition:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstDirectionRepartition() As LinearRepartition (Read
                 | Only)
                 | 
@@ -60,15 +59,16 @@ class RectPattern(Pattern):
                 |          Set repart1 = firstPattern.FirstDirectionRepartition
 
         :return: LinearRepartition
+        :rtype: LinearRepartition
         """
 
         return LinearRepartition(self.rect_pattern.FirstDirectionRepartition)
 
     @property
-    def first_direction_row(self):
+    def first_direction_row(self) -> IntParam:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstDirectionRow() As IntParam (Read Only)
                 | 
                 |     Returns the position of the shape to be copied along the first linear
@@ -82,15 +82,16 @@ class RectPattern(Pattern):
                 |          Set FirstDirPos = firstPattern.FirstDirectionRow
 
         :return: IntParam
+        :rtype: IntParam
         """
 
         return IntParam(self.rect_pattern.FirstDirectionRow)
 
     @property
-    def first_orientation(self):
+    def first_orientation(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstOrientation() As boolean
                 | 
                 |     Returns or sets whether the pattern is built towards the first direction
@@ -107,12 +108,13 @@ class RectPattern(Pattern):
                 |          firstPattern.FirstOrientation = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.rect_pattern.FirstOrientation
 
     @first_orientation.setter
-    def first_orientation(self, value):
+    def first_orientation(self, value: bool):
         """
         :param bool value:
         """
@@ -120,10 +122,10 @@ class RectPattern(Pattern):
         self.rect_pattern.FirstOrientation = value
 
     @property
-    def first_rectangular_pattern_parameters(self):
+    def first_rectangular_pattern_parameters(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstRectangularPatternParameters() As
                 | CatRectangularPatternParameters
                 | 
@@ -140,24 +142,25 @@ class RectPattern(Pattern):
                 |          Set parameters = firstPattern.FirstCircularPatternParameters
                 |          Set firstPattern.FirstCircularPatternParameters = catUnequalSpacing
 
-        :return: enum cat_rectangular_pattern_parameters
+        :return: int
+        :rtype: int
         """
 
         return self.rect_pattern.FirstRectangularPatternParameters
 
     @first_rectangular_pattern_parameters.setter
-    def first_rectangular_pattern_parameters(self, value):
+    def first_rectangular_pattern_parameters(self, value: int):
         """
-        :param enum cat_rectangular_pattern_parameters value:
+        :param int value:
         """
 
         self.rect_pattern.FirstRectangularPatternParameters = value
 
     @property
-    def second_direction_repartition(self):
+    def second_direction_repartition(self) -> LinearRepartition:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondDirectionRepartition() As LinearRepartition (Read
                 | Only)
                 | 
@@ -170,15 +173,16 @@ class RectPattern(Pattern):
                 |          Set repart2 = firstPattern.SecondDirectionRepartition
 
         :return: LinearRepartition
+        :rtype: LinearRepartition
         """
 
         return LinearRepartition(self.rect_pattern.SecondDirectionRepartition)
 
     @property
-    def second_direction_row(self):
+    def second_direction_row(self) -> IntParam:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondDirectionRow() As IntParam (Read Only)
                 | 
                 |     Returns the position of the shape to be copied along the second linear
@@ -192,15 +196,16 @@ class RectPattern(Pattern):
                 |          Set SecondDirPos = firstPattern.SecondDirectionRow
 
         :return: IntParam
+        :rtype: IntParam
         """
 
         return IntParam(self.rect_pattern.SecondDirectionRow)
 
     @property
-    def second_orientation(self):
+    def second_orientation(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondOrientation() As boolean
                 | 
                 |     Returns or sets whether the pattern is built towards the second direction
@@ -218,12 +223,13 @@ class RectPattern(Pattern):
                 |          firstPattern.SecondOrientation = False
 
         :return: bool
+        :rtype: bool
         """
 
         return self.rect_pattern.SecondOrientation
 
     @second_orientation.setter
-    def second_orientation(self, value):
+    def second_orientation(self, value: bool):
         """
         :param bool value:
         """
@@ -231,10 +237,10 @@ class RectPattern(Pattern):
         self.rect_pattern.SecondOrientation = value
 
     @property
-    def second_rectangular_pattern_parameters(self):
+    def second_rectangular_pattern_parameters(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondRectangularPatternParameters() As
                 | CatRectangularPatternParameters
                 | 
@@ -251,23 +257,24 @@ class RectPattern(Pattern):
                 |          Set parameters = secondPattern.SecondCircularPatternParameters
                 |          Set secondPattern.SecondCircularPatternParameters = catUnequalSpacing
 
-        :return: enum cat_rectangular_pattern_parameters
+        :return: int
+        :rtype: int
         """
 
         return self.rect_pattern.SecondRectangularPatternParameters
 
     @second_rectangular_pattern_parameters.setter
-    def second_rectangular_pattern_parameters(self, value):
+    def second_rectangular_pattern_parameters(self, value: int):
         """
-        :param enum cat_rectangular_pattern_parameters value:
+        :param int value:
         """
 
         self.rect_pattern.SecondRectangularPatternParameters = value
 
-    def get_first_direction(self, io_first_direction):
+    def get_first_direction(self, io_first_direction: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetFirstDirection(CATSafeArrayVariant
                 | ioFirstDirection)
                 | 
@@ -291,6 +298,7 @@ class RectPattern(Pattern):
 
         :param tuple io_first_direction:
         :return: None
+        :rtype: None
         """
         return self.rect_pattern.GetFirstDirection(io_first_direction)
         # # # # Autogenerated comment: 
@@ -309,10 +317,10 @@ class RectPattern(Pattern):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_second_direction(self, io_second_direction):
+    def get_second_direction(self, io_second_direction: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetSecondDirection(CATSafeArrayVariant
                 | ioSecondDirection)
                 | 
@@ -335,6 +343,7 @@ class RectPattern(Pattern):
 
         :param tuple io_second_direction:
         :return: None
+        :rtype: None
         """
         return self.rect_pattern.GetSecondDirection(io_second_direction)
         # # # # Autogenerated comment: 
@@ -353,10 +362,10 @@ class RectPattern(Pattern):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_first_direction(self, i_first_direction):
+    def set_first_direction(self, i_first_direction: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetFirstDirection(Reference iFirstDirection)
                 | 
                 |     Sets the first repartition direction.
@@ -382,6 +391,7 @@ class RectPattern(Pattern):
 
         :param Reference i_first_direction:
         :return: None
+        :rtype: None
         """
         return self.rect_pattern.SetFirstDirection(i_first_direction.com_object)
         # # # # Autogenerated comment: 
@@ -400,10 +410,10 @@ class RectPattern(Pattern):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_instance_spacing(self, i_instance_number, i_spacing, i_direction):
+    def set_instance_spacing(self, i_instance_number: int, i_spacing: float, i_direction: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetInstanceSpacing(long iInstanceNumber,
                 | double iSpacing,
                 | long iDirection)
@@ -427,13 +437,14 @@ class RectPattern(Pattern):
         :param float i_spacing:
         :param int i_direction:
         :return: None
+        :rtype: None
         """
         return self.rect_pattern.SetInstanceSpacing(i_instance_number, i_spacing, i_direction)
 
-    def set_second_direction(self, i_second_direction):
+    def set_second_direction(self, i_second_direction: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSecondDirection(Reference iSecondDirection)
                 | 
                 |     Sets the second repartition direction.
@@ -459,6 +470,7 @@ class RectPattern(Pattern):
 
         :param Reference i_second_direction:
         :return: None
+        :rtype: None
         """
         return self.rect_pattern.SetSecondDirection(i_second_direction.com_object)
         # # # # Autogenerated comment: 
@@ -477,10 +489,10 @@ class RectPattern(Pattern):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_unequal_instance_number(self, i_instance_number, i_direction):
+    def set_unequal_instance_number(self, i_instance_number: int, i_direction: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetUnequalInstanceNumber(long iInstanceNumber,
                 | long iDirection)
                 | 
@@ -499,8 +511,9 @@ class RectPattern(Pattern):
         :param int i_instance_number:
         :param int i_direction:
         :return: None
+        :rtype: None
         """
         return self.rect_pattern.SetUnequalInstanceNumber(i_instance_number, i_direction)
 
     def __repr__(self):
-        return f'RectPattern(name="{ self.name }")'
+        return f'RectPattern(name="{self.name}")'

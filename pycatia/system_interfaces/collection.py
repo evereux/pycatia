@@ -35,12 +35,11 @@ class Collection(PyCATIA):
 
     def __init__(self, com_object, child_object=AnyObject):
         super().__init__()
-        self.collection = com_object
         self.com_object = com_object
         self.child_object = child_object
 
     @property
-    def application(self):
+    def application(self) -> 'Application':
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-10 10:58:07.270911)
@@ -63,12 +62,13 @@ class Collection(PyCATIA):
                 |          Set CurrentApplication = MyDocCollecion.Application
 
         :return: Application
+        :rtype: Application
         """
         from pycatia.in_interfaces.application import Application
-        return Application(self.collection.Application)
+        return Application(self.com_object.Application)
 
     @property
-    def count(self):
+    def count(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-10 10:58:07.270911)
@@ -84,12 +84,13 @@ class Collection(PyCATIA):
                 |          ObjectNumber = MyCollection.Count
 
         :return: int
+        :rtype: int
         """
 
-        return self.collection.Count
+        return self.com_object.Count
 
     @property
-    def name(self):
+    def name(self) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-10 10:58:07.270911)
@@ -109,12 +110,13 @@ class Collection(PyCATIA):
                 |          MyObject.Name("Nice and Handy Object Name")
 
         :return: str
+        :rtype: str
         """
 
-        return self.collection.Name
+        return self.com_object.Name
 
     @property
-    def parent(self):
+    def parent(self) -> AnyObject:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-10 10:58:07.270911)
@@ -136,11 +138,12 @@ class Collection(PyCATIA):
                 |          Set ParentObject = GivenObject.Parent
 
         :return: AnyObject
+        :rtype: AnyObject
         """
 
-        return AnyObject(self.collection.Parent)
+        return AnyObject(self.com_object.Parent)
 
-    def get_item(self, id_name):
+    def get_item(self, id_name: str) -> AnyObject:
         """
 
         .. note::
@@ -161,7 +164,8 @@ class Collection(PyCATIA):
                 |         The searched object
 
         :param str id_name:
-        :return: child_object
+        :return: AnyObject
+        :rtype: AnyObject
         """
 
         return self.child_object(self.com_object.GetItem(id_name))

@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -13,9 +13,10 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class LanguageSheetSettingAtt(SettingController):
+
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -23,11 +24,9 @@ class LanguageSheetSettingAtt(SettingController):
                 |             System.CATBaseDispatch
                 |                 System.AnyObject
                 |                     System.SettingController
-                |                         KnowledgeSheetSettingAtt
+                |                         LanguageSheetSettingAtt
                 | 
-                | The interface to access a CATIAKnowledgeSheetSettingAtt.
-                | This interface may be used to read or modify in the CATIA/Tools/Option the
-                | settings values of Knowledge sheet.
+                | The interface to access a CATIALanguageSheetSettingAtt.
     
     """
 
@@ -36,766 +35,336 @@ class LanguageSheetSettingAtt(SettingController):
         self.language_sheet_setting_att = com_object
 
     @property
-    def design_tables_copy_data(self):
+    def knowledge_build_path_directory(self) -> str:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property DesignTablesCopyData() As short
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+                | o Property KnowledgeBuildPathDirectory() As CATBSTR
                 | 
-                |     Returns or sets the DesignTablesCopyData parameter.
-                |     Role:Return or Set the DesignTablesCopyData parameter if it is possible in
+                |     Returns or sets the CATKnowledgeBuildPath setting
+                |     parameter.
+                |     Role:Return or Set the CATKnowledgeBuildPath parameter if it is possible in
                 |     the current administrative context. In user mode this method will always return
                 |     E_FAIL.
                 | 
                 |     Parameters:
                 | 
-                |         oDesignTablesCopyData
-                |             Legal values:
-                |             0 : default mode for design table : copy data into models
-                |             1 : default mode for design table : do not copy data into models.
+                |         oKnowledgeBuildPathDirectory
+                |             The knowledge build path directory: the path where all the
+                |             resources are located.
 
-        :return: enum
+        :return: str
+        :rtype: str
         """
 
-        return self.language_sheet_setting_att.DesignTablesCopyData
+        return self.language_sheet_setting_att.KnowledgeBuildPathDirectory
 
-    @design_tables_copy_data.setter
-    def design_tables_copy_data(self, value):
+    @knowledge_build_path_directory.setter
+    def knowledge_build_path_directory(self, value: str):
         """
-        :param enum value:
+        :param str value:
         """
 
-        self.language_sheet_setting_att.DesignTablesCopyData = value
+        self.language_sheet_setting_att.KnowledgeBuildPathDirectory = value
 
     @property
-    def design_tables_synchronization(self):
+    def list_of_packages_to_load(self) -> str:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property DesignTablesSynchronization() As short
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+                | o Property ListOfPackagesToLoad() As CATBSTR
                 | 
-                |     Returns or sets the DesignTablesSynchronization parameter.
-                |     Role:Return or Set the DesignTablesSynchronization parameter if it is
-                |     possible in the current administrative context. In user mode this method will
-                |     always return E_FAIL.
+                |     Returns or sets the ListOfPackagesToLoad parameter.
+                |     Role:Return or Set the ListOfPackagesToLoad parameter if it is possible in
+                |     the current administrative context. In user mode this method will always return
+                |     E_FAIL.
                 | 
                 |     Parameters:
                 | 
-                |         oDesignTablesSynchronization
-                |             Legal values:
-                |             0 : automatic synchronization at load for design table
-                |             1 : interactive synchronization at load for design table
-                |             2 : manual synchronization for design table.
+                |         oListOfPackagesToLoad
+                |             The list of packages to load.
 
-        :return: enum
+        :return: str
+        :rtype: str
         """
 
-        return self.language_sheet_setting_att.DesignTablesSynchronization
+        return self.language_sheet_setting_att.ListOfPackagesToLoad
 
-    @design_tables_synchronization.setter
-    def design_tables_synchronization(self, value):
+    @list_of_packages_to_load.setter
+    def list_of_packages_to_load(self, value: str):
         """
-        :param enum value:
+        :param str value:
         """
 
-        self.language_sheet_setting_att.DesignTablesSynchronization = value
+        self.language_sheet_setting_att.ListOfPackagesToLoad = value
 
     @property
-    def parameter_name_surrounded_by_the_symbol(self):
+    def load_all_packages(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property ParameterNameSurroundedByTheSymbol() As short
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+                | o Property LoadAllPackages() As short
                 | 
-                |     Returns or sets the ParameterNameSurroundedByTheSymbol
-                |     parameter.
-                |     Role:Return or Set the ParameterNameSurroundedByTheSymbol parameter if it
-                |     is possible in the current administrative context. In user mode this method
-                |     will always return E_FAIL.
+                |     Returns or sets the LoadAllPackages parameter.
+                |     Role:Return or Set the LoadAllPackages parameter if it is possible in the
+                |     current administrative context. In user mode this method will always return
+                |     E_FAIL.
                 | 
                 |     Parameters:
                 | 
-                |         oParameterNameSurroundedByTheSymbol
+                |         oLoadAllPackages
                 |             Legal values:
-                |             0 : to see parameter name not surrounded by the symbol "'"
-                |             1 : to see parameter name surrounded by the symbol "'".
+                |             0 : to not load all packages
+                |             1 : to load all packages.
 
-        :return: enum
+        :return: int
+        :rtype: int
         """
 
-        return self.language_sheet_setting_att.ParameterNameSurroundedByTheSymbol
+        return self.language_sheet_setting_att.LoadAllPackages
 
-    @parameter_name_surrounded_by_the_symbol.setter
-    def parameter_name_surrounded_by_the_symbol(self, value):
+    @load_all_packages.setter
+    def load_all_packages(self, value: int):
         """
-        :param enum value:
+        :param int value:
         """
 
-        self.language_sheet_setting_att.ParameterNameSurroundedByTheSymbol = value
+        self.language_sheet_setting_att.LoadAllPackages = value
 
     @property
-    def parameter_tree_view_with_formula(self):
+    def load_extended_language_lib(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property ParameterTreeViewWithFormula() As short
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+                | o Property LoadExtendedLanguageLib() As short
                 | 
-                |     Returns or sets the ParameterTreeViewWithFormula
-                |     parameter.
-                |     Role:Return or Set the ParameterTreeViewWithFormula parameter if it is
-                |     possible in the current administrative context. In user mode this method will
-                |     always return E_FAIL.
-                | 
-                |     Parameters:
-                | 
-                |         oParameterTreeViewWithFormula
-                |             Legal values:
-                |             0 : to see parameter tree view without formula
-                |             1 : to see parameter tree view with formula.
-
-        :return: enum
-        """
-
-        return self.language_sheet_setting_att.ParameterTreeViewWithFormula
-
-    @parameter_tree_view_with_formula.setter
-    def parameter_tree_view_with_formula(self, value):
-        """
-        :param enum value:
-        """
-
-        self.language_sheet_setting_att.ParameterTreeViewWithFormula = value
-
-    @property
-    def parameter_tree_view_with_value(self):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property ParameterTreeViewWithValue() As short
-                | 
-                |     Returns or sets the ParameterTreeViewWithValue parameter.
-                |     Role:Return or Set the ParameterTreeViewWithValue parameter if it is
-                |     possible in the current administrative context. In user mode this method will
-                |     always return E_FAIL.
-                | 
-                |     Parameters:
-                | 
-                |         oParameterTreeViewWithValue
-                |             Legal values:
-                |             0 : to see parameter tree view without value
-                |             1 : to see parameter tree view with value.
-
-        :return: enum
-        """
-
-        return self.language_sheet_setting_att.ParameterTreeViewWithValue
-
-    @parameter_tree_view_with_value.setter
-    def parameter_tree_view_with_value(self, value):
-        """
-        :param enum value:
-        """
-
-        self.language_sheet_setting_att.ParameterTreeViewWithValue = value
-
-    @property
-    def relations_update_in_part_context_evaluate_during_update(self):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property RelationsUpdateInPartContextEvaluateDuringUpdate() As
-                | short
-                | 
-                |     Returns or sets the RelationsUpdateInPartContextEvaluateDuringUpdate
-                |     parameter.
-                |     Role:Return or Set the RelationsUpdateInPartContextEvaluateDuringUpdate
-                |     parameter if it is possible in the current administrative context. In user mode
-                |     this method will always return E_FAIL.
-                | 
-                |     Parameters:
-                | 
-                |         oRelationsUpdateInPartContextEvaluateDuringUpdate
-                |             Legal values:
-                |             0 : creation of relations not evaluate during update
-                |             1 : creation of relations evaluate during update.
-
-        :return: enum
-        """
-
-        return self.language_sheet_setting_att.RelationsUpdateInPartContextEvaluateDuringUpdate
-
-    @relations_update_in_part_context_evaluate_during_update.setter
-    def relations_update_in_part_context_evaluate_during_update(self, value):
-        """
-        :param enum value:
-        """
-
-        self.language_sheet_setting_att.RelationsUpdateInPartContextEvaluateDuringUpdate = value
-
-    @property
-    def relations_update_in_part_context_synchronous_relations(self):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property RelationsUpdateInPartContextSynchronousRelations() As
-                | short
-                | 
-                |     Returns or sets the RelationsUpdateInPartContextSynchronousRelations
-                |     parameter.
-                |     Role:Return or Set the RelationsUpdateInPartContextSynchronousRelations
-                |     parameter if it is possible in the current administrative context. In user mode
-                |     this method will always return E_FAIL.
-                | 
-                |     Parameters:
-                | 
-                |         oRelationsUpdateInPartContextSynchronousRelations
-                |             Legal values:
-                |             0 : creation of unsynchronous relations
-                |             1 : creation of synchronous relations.
-
-        :return: enum
-        """
-
-        return self.language_sheet_setting_att.RelationsUpdateInPartContextSynchronousRelations
-
-    @relations_update_in_part_context_synchronous_relations.setter
-    def relations_update_in_part_context_synchronous_relations(self, value):
-        """
-        :param enum value:
-        """
-
-        self.language_sheet_setting_att.RelationsUpdateInPartContextSynchronousRelations = value
-
-    def get_design_tables_copy_data_info(self, io_admin_level, io_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func GetDesignTablesCopyDataInfo(CATBSTR ioAdminLevel,
-                | CATBSTR ioLocked) As boolean
-                | 
-                |     Retrieves environment informations for the DesignTablesCopyData
-                |     parameter.
-                |     Role:Retrieves the state of the DesignTablesCopyData parameter in the
-                |     current environment.
-                | 
-                |     Parameters:
-                | 
-                |         ioAdminLevel
-                | 
-                |             If the parameter is locked, AdminLevel gives the administration
-                |             level that imposes the value of the parameter.
-                |             If the parameter is not locked, AdminLevel gives the administration
-                |             level that will give the value of the parameter after a reset.
-                |             
-                |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
-                |     Returns:
-                |         Indicates if the parameter has been explicitly modified or remain to
-                |         the administrated value.
-
-        :param str io_admin_level:
-        :param str io_locked:
-        :return: bool
-        """
-        return self.language_sheet_setting_att.GetDesignTablesCopyDataInfo(io_admin_level, io_locked)
-
-    def get_design_tables_synchronization_info(self, io_admin_level, io_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func GetDesignTablesSynchronizationInfo(CATBSTR
-                | ioAdminLevel,
-                | CATBSTR ioLocked) As boolean
-                | 
-                |     Retrieves environment informations for the DesignTablesSynchronization
-                |     parameter.
-                |     Role:Retrieves the state of the DesignTablesSynchronization parameter in
-                |     the current environment.
-                | 
-                |     Parameters:
-                | 
-                |         ioAdminLevel
-                | 
-                |             If the parameter is locked, AdminLevel gives the administration
-                |             level that imposes the value of the parameter.
-                |             If the parameter is not locked, AdminLevel gives the administration
-                |             level that will give the value of the parameter after a reset.
-                |             
-                |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
-                |     Returns:
-                |         Indicates if the parameter has been explicitly modified or remain to
-                |         the administrated value.
-
-        :param str io_admin_level:
-        :param str io_locked:
-        :return: bool
-        """
-        return self.language_sheet_setting_att.GetDesignTablesSynchronizationInfo(io_admin_level, io_locked)
-
-    def get_parameter_name_surrounded_by_the_symbol_info(self, io_admin_level, io_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func GetParameterNameSurroundedByTheSymbolInfo(CATBSTR
-                | ioAdminLevel,
-                | CATBSTR ioLocked) As boolean
-                | 
-                |     Retrieves environment informations for the
-                |     ParameterNameSurroundedByTheSymbol parameter.
-                |     Role:Retrieves the state of the ParameterNameSurroundedByTheSymbol
-                |     parameter in the current environment.
-                | 
-                |     Parameters:
-                | 
-                |         ioAdminLevel
-                | 
-                |             If the parameter is locked, AdminLevel gives the administration
-                |             level that imposes the value of the parameter.
-                |             If the parameter is not locked, AdminLevel gives the administration
-                |             level that will give the value of the parameter after a reset.
-                |             
-                |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
-                |     Returns:
-                |         Indicates if the parameter has been explicitly modified or remain to
-                |         the administrated value.
-
-        :param str io_admin_level:
-        :param str io_locked:
-        :return: bool
-        """
-        return self.language_sheet_setting_att.GetParameterNameSurroundedByTheSymbolInfo(io_admin_level, io_locked)
-
-    def get_parameter_tree_view_with_formula_info(self, io_admin_level, io_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func GetParameterTreeViewWithFormulaInfo(CATBSTR
-                | ioAdminLevel,
-                | CATBSTR ioLocked) As boolean
-                | 
-                |     Retrieves environment informations for the ParameterTreeViewWithFormula
-                |     parameter.
-                |     Role:Retrieves the state of the ParameterTreeViewWithFormula parameter in
-                |     the current environment.
-                | 
-                |     Parameters:
-                | 
-                |         ioAdminLevel
-                | 
-                |             If the parameter is locked, AdminLevel gives the administration
-                |             level that imposes the value of the parameter.
-                |             If the parameter is not locked, AdminLevel gives the administration
-                |             level that will give the value of the parameter after a reset.
-                |             
-                |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
-                |     Returns:
-                |         Indicates if the parameter has been explicitly modified or remain to
-                |         the administrated value.
-
-        :param str io_admin_level:
-        :param str io_locked:
-        :return: bool
-        """
-        return self.language_sheet_setting_att.GetParameterTreeViewWithFormulaInfo(io_admin_level, io_locked)
-
-    def get_parameter_tree_view_with_value_info(self, io_admin_level, io_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func GetParameterTreeViewWithValueInfo(CATBSTR
-                | ioAdminLevel,
-                | CATBSTR ioLocked) As boolean
-                | 
-                |     Retrieves environment informations for the ParameterTreeViewWithValue
-                |     parameter.
-                |     Role:Retrieves the state of the ParameterTreeViewWithValue parameter in the
-                |     current environment.
-                | 
-                |     Parameters:
-                | 
-                |         ioAdminLevel
-                | 
-                |             If the parameter is locked, AdminLevel gives the administration
-                |             level that imposes the value of the parameter.
-                |             If the parameter is not locked, AdminLevel gives the administration
-                |             level that will give the value of the parameter after a reset.
-                |             
-                |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
-                |     Returns:
-                |         Indicates if the parameter has been explicitly modified or remain to
-                |         the administrated value.
-
-        :param str io_admin_level:
-        :param str io_locked:
-        :return: bool
-        """
-        return self.language_sheet_setting_att.GetParameterTreeViewWithValueInfo(io_admin_level, io_locked)
-
-    def get_relations_update_in_part_context_evaluate_during_update_info(self, io_admin_level, io_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func GetRelationsUpdateInPartContextEvaluateDuringUpdateInfo(CATBSTR
-                | ioAdminLevel,
-                | CATBSTR ioLocked) As boolean
-                | 
-                |     Retrieves environment informations for the
-                |     RelationsUpdateInPartContextEvaluateDuringUpdate
-                |     parameter.
-                |     Role:Retrieves the state of the
-                |     RelationsUpdateInPartContextEvaluateDuringUpdate parameter in the current
-                |     environment.
-                | 
-                |     Parameters:
-                | 
-                |         ioAdminLevel
-                | 
-                |             If the parameter is locked, AdminLevel gives the administration
-                |             level that imposes the value of the parameter.
-                |             If the parameter is not locked, AdminLevel gives the administration
-                |             level that will give the value of the parameter after a reset.
-                |             
-                |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
-                |     Returns:
-                |         Indicates if the parameter has been explicitly modified or remain to
-                |         the administrated value.
-
-        :param str io_admin_level:
-        :param str io_locked:
-        :return: bool
-        """
-        return self.language_sheet_setting_att.GetRelationsUpdateInPartContextEvaluateDuringUpdateInfo(io_admin_level,
-                                                                                                       io_locked)
-
-    def get_relations_update_in_part_context_synchronous_relations_info(self, io_admin_level, io_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func GetRelationsUpdateInPartContextSynchronousRelationsInfo(CATBSTR
-                | ioAdminLevel,
-                | CATBSTR ioLocked) As boolean
-                | 
-                |     Retrieves environment informations for the
-                |     RelationsUpdateInPartContextSynchronousRelations
-                |     parameter.
-                |     Role:Retrieves the state of the
-                |     RelationsUpdateInPartContextSynchronousRelations parameter in the current
-                |     environment.
-                | 
-                |     Parameters:
-                | 
-                |         ioAdminLevel
-                | 
-                |             If the parameter is locked, AdminLevel gives the administration
-                |             level that imposes the value of the parameter.
-                |             If the parameter is not locked, AdminLevel gives the administration
-                |             level that will give the value of the parameter after a reset.
-                |             
-                |         ioLocked
-                |             Indicates if the parameter has been locked. 
-                | 
-                |     Returns:
-                |         Indicates if the parameter has been explicitly modified or remain to
-                |         the administrated value.
-
-        :param str io_admin_level:
-        :param str io_locked:
-        :return: bool
-        """
-        return self.language_sheet_setting_att.GetRelationsUpdateInPartContextSynchronousRelationsInfo(io_admin_level,
-                                                                                                       io_locked)
-
-    def set_design_tables_copy_data_lock(self, i_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub SetDesignTablesCopyDataLock(boolean iLocked)
-                | 
-                |     Locks or unlocks the DesignTablesCopyData parameter.
-                |     Role:Locks or unlocks the DesignTablesCopyData parameter if it is possible
+                |     Returns or sets the LoadExtendedLanguageLib parameter.
+                |     Role:Return or Set the LoadExtendedLanguageLib parameter if it is possible
                 |     in the current administrative context. In user mode this method will always
                 |     return E_FAIL.
                 | 
                 |     Parameters:
                 | 
-                |         iLocked
-                |             the locking operation to be performed Legal
-                |             values:
-                |             TRUE : to lock the parameter.
-                |             FALSE: to unlock the parameter.
+                |         oLoadExtendedLanguageLib
+                |             Legal values:
+                |             0 : to not use extended libraries
+                |             1 : to use extended libraries.
 
-        :param bool i_locked:
-        :return: None
+        :return: int
+        :rtype: int
         """
-        return self.language_sheet_setting_att.SetDesignTablesCopyDataLock(i_locked)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_design_tables_copy_data_lock'
-        # # vba_code = """
-        # # Public Function set_design_tables_copy_data_lock(language_sheet_setting_att)
-        # #     Dim iLocked (2)
-        # #     language_sheet_setting_att.SetDesignTablesCopyDataLock iLocked
-        # #     set_design_tables_copy_data_lock = iLocked
-        # # End Function
-        # # """
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return self.language_sheet_setting_att.LoadExtendedLanguageLib
 
-    def set_design_tables_synchronization_lock(self, i_locked):
+    @load_extended_language_lib.setter
+    def load_extended_language_lib(self, value: int):
+        """
+        :param int value:
+        """
+
+        self.language_sheet_setting_att.LoadExtendedLanguageLib = value
+
+    @property
+    def reference_directory_for_types(self) -> str:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub SetDesignTablesSynchronizationLock(boolean iLocked)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+                | o Property ReferenceDirectoryForTypes() As CATBSTR
                 | 
-                |     Locks or unlocks the DesignTablesSynchronization
-                |     parameter.
-                |     Role:Locks or unlocks the DesignTablesSynchronization parameter if it is
+                |     Returns or sets the ReferenceDirectoryForTypes parameter.
+                |     Role:Return or Set the ReferenceDirectoryForTypes parameter if it is
                 |     possible in the current administrative context. In user mode this method will
                 |     always return E_FAIL.
                 | 
                 |     Parameters:
                 | 
-                |         iLocked
-                |             the locking operation to be performed Legal
-                |             values:
-                |             TRUE : to lock the parameter.
-                |             FALSE: to unlock the parameter.
+                |         oReferenceDirectoryForTypes
+                |             The reference directory for types.
 
-        :param bool i_locked:
-        :return: None
+        :return: str
+        :rtype: str
         """
-        return self.language_sheet_setting_att.SetDesignTablesSynchronizationLock(i_locked)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_design_tables_synchronization_lock'
-        # # vba_code = """
-        # # Public Function set_design_tables_synchronization_lock(language_sheet_setting_att)
-        # #     Dim iLocked (2)
-        # #     language_sheet_setting_att.SetDesignTablesSynchronizationLock iLocked
-        # #     set_design_tables_synchronization_lock = iLocked
-        # # End Function
-        # # """
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return self.language_sheet_setting_att.ReferenceDirectoryForTypes
 
-    def set_parameter_name_surrounded_by_the_symbol_lock(self, i_locked):
+    @reference_directory_for_types.setter
+    def reference_directory_for_types(self, value: str):
+        """
+        :param str value:
+        """
+
+        self.language_sheet_setting_att.ReferenceDirectoryForTypes = value
+
+    def get_knowledge_build_path_directory_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub SetParameterNameSurroundedByTheSymbolLock(boolean
-                | iLocked)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Func GetKnowledgeBuildPathDirectoryInfo(CATBSTR
+                | ioAdminLevel,
+                | CATBSTR ioLocked) As boolean
                 | 
-                |     Locks or unlocks the ParameterNameSurroundedByTheSymbol
+                |     Retrieves information about the CATKnowledgeBuildPath setting
                 |     parameter.
-                |     Role:Locks or unlocks the ParameterNameSurroundedByTheSymbol parameter if
-                |     it is possible in the current administrative context. In user mode this method
-                |     will always return E_FAIL.
-                | 
-                |     Parameters:
-                | 
-                |         iLocked
-                |             the locking operation to be performed Legal
-                |             values:
-                |             TRUE : to lock the parameter.
-                |             FALSE: to unlock the parameter.
+                |     Refer to SettingController for a detailed description.
 
-        :param bool i_locked:
-        :return: None
+        :param str io_admin_level:
+        :param str io_locked:
+        :return: bool
+        :rtype: bool
         """
-        return self.language_sheet_setting_att.SetParameterNameSurroundedByTheSymbolLock(i_locked)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_parameter_name_surrounded_by_the_symbol_lock'
-        # # vba_code = """
-        # # Public Function set_parameter_name_surrounded_by_the_symbol_lock(language_sheet_setting_att)
-        # #     Dim iLocked (2)
-        # #     language_sheet_setting_att.SetParameterNameSurroundedByTheSymbolLock iLocked
-        # #     set_parameter_name_surrounded_by_the_symbol_lock = iLocked
-        # # End Function
-        # # """
+        return self.language_sheet_setting_att.GetKnowledgeBuildPathDirectoryInfo(io_admin_level, io_locked)
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def set_parameter_tree_view_with_formula_lock(self, i_locked):
+    def get_list_of_packages_to_load_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub SetParameterTreeViewWithFormulaLock(boolean iLocked)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Func GetListOfPackagesToLoadInfo(CATBSTR ioAdminLevel,
+                | CATBSTR ioLocked) As boolean
                 | 
-                |     Locks or unlocks the ParameterTreeViewWithFormula
+                |     Retrieves information about the ListOfPackagesToLoad setting
                 |     parameter.
-                |     Role:Locks or unlocks the ParameterTreeViewWithFormula parameter if it is
-                |     possible in the current administrative context. In user mode this method will
-                |     always return E_FAIL.
-                | 
-                |     Parameters:
-                | 
-                |         iLocked
-                |             the locking operation to be performed Legal
-                |             values:
-                |             TRUE : to lock the parameter.
-                |             FALSE: to unlock the parameter.
+                |     Refer to SettingController for a detailed description.
 
-        :param bool i_locked:
-        :return: None
+        :param str io_admin_level:
+        :param str io_locked:
+        :return: bool
+        :rtype: bool
         """
-        return self.language_sheet_setting_att.SetParameterTreeViewWithFormulaLock(i_locked)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_parameter_tree_view_with_formula_lock'
-        # # vba_code = """
-        # # Public Function set_parameter_tree_view_with_formula_lock(language_sheet_setting_att)
-        # #     Dim iLocked (2)
-        # #     language_sheet_setting_att.SetParameterTreeViewWithFormulaLock iLocked
-        # #     set_parameter_tree_view_with_formula_lock = iLocked
-        # # End Function
-        # # """
+        return self.language_sheet_setting_att.GetListOfPackagesToLoadInfo(io_admin_level, io_locked)
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def set_parameter_tree_view_with_value_lock(self, i_locked):
+    def get_load_all_packages_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub SetParameterTreeViewWithValueLock(boolean iLocked)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Func GetLoadAllPackagesInfo(CATBSTR ioAdminLevel,
+                | CATBSTR ioLocked) As boolean
                 | 
-                |     Locks or unlocks the ParameterTreeViewWithValue parameter.
-                |     Role:Locks or unlocks the ParameterTreeViewWithValue parameter if it is
-                |     possible in the current administrative context. In user mode this method will
-                |     always return E_FAIL.
-                | 
-                |     Parameters:
-                | 
-                |         iLocked
-                |             the locking operation to be performed Legal
-                |             values:
-                |             TRUE : to lock the parameter.
-                |             FALSE: to unlock the parameter.
-
-        :param bool i_locked:
-        :return: None
-        """
-        return self.language_sheet_setting_att.SetParameterTreeViewWithValueLock(i_locked)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_parameter_tree_view_with_value_lock'
-        # # vba_code = """
-        # # Public Function set_parameter_tree_view_with_value_lock(language_sheet_setting_att)
-        # #     Dim iLocked (2)
-        # #     language_sheet_setting_att.SetParameterTreeViewWithValueLock iLocked
-        # #     set_parameter_tree_view_with_value_lock = iLocked
-        # # End Function
-        # # """
-
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def set_relations_update_in_part_context_evaluate_during_update_lock(self, i_locked):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub SetRelationsUpdateInPartContextEvaluateDuringUpdateLock(boolean
-                | iLocked)
-                | 
-                |     Locks or unlocks the RelationsUpdateInPartContextEvaluateDuringUpdate
+                |     Retrieves information about the LoadAllPackages setting
                 |     parameter.
-                |     Role:Locks or unlocks the RelationsUpdateInPartContextEvaluateDuringUpdate
-                |     parameter if it is possible in the current administrative context. In user mode
-                |     this method will always return E_FAIL.
-                | 
-                |     Parameters:
-                | 
-                |         iLocked
-                |             the locking operation to be performed Legal
-                |             values:
-                |             TRUE : to lock the parameter.
-                |             FALSE: to unlock the parameter.
+                |     Refer to SettingController for a detailed description.
 
-        :param bool i_locked:
-        :return: None
+        :param str io_admin_level:
+        :param str io_locked:
+        :return: bool
+        :rtype: bool
         """
-        return self.language_sheet_setting_att.SetRelationsUpdateInPartContextEvaluateDuringUpdateLock(i_locked)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_relations_update_in_part_context_evaluate_during_update_lock'
-        # # vba_code = """
-        # # Public Function set_relations_update_in_part_context_evaluate_during_update_lock(language_sheet_setting_att)
-        # #     Dim iLocked (2)
-        # #     language_sheet_setting_att.SetRelationsUpdateInPartContextEvaluateDuringUpdateLock iLocked
-        # #     set_relations_update_in_part_context_evaluate_during_update_lock = iLocked
-        # # End Function
-        # # """
+        return self.language_sheet_setting_att.GetLoadAllPackagesInfo(io_admin_level, io_locked)
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def set_relations_update_in_part_context_synchronous_relations_lock(self, i_locked):
+    def get_load_extended_language_lib_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub SetRelationsUpdateInPartContextSynchronousRelationsLock(boolean
-                | iLocked)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Func GetLoadExtendedLanguageLibInfo(CATBSTR ioAdminLevel,
+                | CATBSTR ioLocked) As boolean
                 | 
-                |     Locks or unlocks the RelationsUpdateInPartContextSynchronousRelations
+                |     Retrieves information about the LoadExtendedLanguageLib setting
                 |     parameter.
-                |     Role:Locks or unlocks the RelationsUpdateInPartContextSynchronousRelations
-                |     parameter if it is possible in the current administrative context. In user mode
-                |     this method will always return E_FAIL.
+                |     Refer to SettingController for a detailed description.
+
+        :param str io_admin_level:
+        :param str io_locked:
+        :return: bool
+        :rtype: bool
+        """
+        return self.language_sheet_setting_att.GetLoadExtendedLanguageLibInfo(io_admin_level, io_locked)
+
+    def get_reference_directory_for_types_info(self, io_admin_level: str, io_locked: str) -> bool:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Func GetReferenceDirectoryForTypesInfo(CATBSTR
+                | ioAdminLevel,
+                | CATBSTR ioLocked) As boolean
                 | 
-                |     Parameters:
+                |     Retrieves information about the ReferenceDirectoryForTypes setting
+                |     parameter.
+                |     Refer to SettingController for a detailed description.
+
+        :param str io_admin_level:
+        :param str io_locked:
+        :return: bool
+        :rtype: bool
+        """
+        return self.language_sheet_setting_att.GetReferenceDirectoryForTypesInfo(io_admin_level, io_locked)
+
+    def set_knowledge_build_path_directory_lock(self, i_locked: bool) -> None:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub SetKnowledgeBuildPathDirectoryLock(boolean iLocked)
                 | 
-                |         iLocked
-                |             the locking operation to be performed Legal
-                |             values:
-                |             TRUE : to lock the parameter.
-                |             FALSE: to unlock the parameter.
+                |     Locks or unlocks the CATKnowledgeBuildPath setting
+                |     parameter.
+                |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
-        return self.language_sheet_setting_att.SetRelationsUpdateInPartContextSynchronousRelationsLock(i_locked)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_relations_update_in_part_context_synchronous_relations_lock'
-        # # vba_code = """
-        # # Public Function set_relations_update_in_part_context_synchronous_relations_lock(language_sheet_setting_att)
-        # #     Dim iLocked (2)
-        # #     language_sheet_setting_att.SetRelationsUpdateInPartContextSynchronousRelationsLock iLocked
-        # #     set_relations_update_in_part_context_synchronous_relations_lock = iLocked
-        # # End Function
-        # # """
+        return self.language_sheet_setting_att.SetKnowledgeBuildPathDirectoryLock(i_locked)
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+    def set_list_of_packages_to_load_lock(self, i_locked: bool) -> None:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub SetListOfPackagesToLoadLock(boolean iLocked)
+                | 
+                |     Locks or unlocks the ListOfPackagesToLoad setting
+                |     parameter.
+                |     Refer to SettingController for a detailed description.
+
+        :param bool i_locked:
+        :return: None
+        :rtype: None
+        """
+        return self.language_sheet_setting_att.SetListOfPackagesToLoadLock(i_locked)
+
+    def set_load_all_packages_lock(self, i_locked: bool) -> None:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub SetLoadAllPackagesLock(boolean iLocked)
+                | 
+                |     Locks or unlocks the LoadAllPackages setting parameter.
+                |     Refer to SettingController for a detailed description.
+
+        :param bool i_locked:
+        :return: None
+        :rtype: None
+        """
+        return self.language_sheet_setting_att.SetLoadAllPackagesLock(i_locked)
+
+    def set_load_extended_language_lib_lock(self, i_locked: bool) -> None:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub SetLoadExtendedLanguageLibLock(boolean iLocked)
+                | 
+                |     Locks or unlocks the LoadExtendedLanguageLib setting
+                |     parameter.
+                |     Refer to SettingController for a detailed description.
+
+        :param bool i_locked:
+        :return: None
+        :rtype: None
+        """
+        return self.language_sheet_setting_att.SetLoadExtendedLanguageLibLock(i_locked)
+
+    def set_reference_directory_for_types_lock(self, i_locked: bool) -> None:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub SetReferenceDirectoryForTypesLock(boolean iLocked)
+                | 
+                |     Locks or unlocks the ReferenceDirectoryForTypes setting
+                |     parameter.
+                |     Refer to SettingController for a detailed description.
+
+        :param bool i_locked:
+        :return: None
+        :rtype: None
+        """
+        return self.language_sheet_setting_att.SetReferenceDirectoryForTypesLock(i_locked)
 
     def __repr__(self):
         return f'LanguageSheetSettingAtt(name="{self.name}")'

@@ -14,7 +14,6 @@ from pycatia.system_interfaces.collection import Collection
 
 
 class Files(Collection):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -33,10 +32,10 @@ class Files(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=File)
         self.files = com_object
 
-    def item(self, i_number):
+    def item(self, i_number: int) -> File:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -68,8 +67,9 @@ class Files(Collection):
 
         :param int i_number:
         :return: File
+        :rtype: File
         """
         return File(self.files.Item(i_number))
 
     def __repr__(self):
-        return f'Files(name="{ self.name }")'
+        return f'Files(name="{self.name}")'

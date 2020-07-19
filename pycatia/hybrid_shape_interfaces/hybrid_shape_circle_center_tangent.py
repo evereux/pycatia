@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -18,7 +18,7 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -55,10 +55,10 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
         self.hybrid_shape_circle_center_tangent = com_object
 
     @property
-    def begin_of_circle(self):
+    def begin_of_circle(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BeginOfCircle() As long
                 | 
                 |     Return or Set the number of the beginning curve of the circle. This
@@ -73,12 +73,13 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
                 |          hybShpcircle.BeginOfCircle = 1
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_circle_center_tangent.BeginOfCircle
 
     @begin_of_circle.setter
-    def begin_of_circle(self, value):
+    def begin_of_circle(self, value: int):
         """
         :param int value:
         """
@@ -86,10 +87,10 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
         self.hybrid_shape_circle_center_tangent.BeginOfCircle = value
 
     @property
-    def center_elem(self):
+    def center_elem(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CenterElem() As Reference
                 | 
                 |     Returns or sets the Center Element of the circle.
@@ -103,12 +104,13 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
                 |          HybShpCircleFirstCurve = HybShpCircle.CenterElem
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_circle_center_tangent.CenterElem)
 
     @center_elem.setter
-    def center_elem(self, value):
+    def center_elem(self, value: Reference):
         """
         :param Reference value:
         """
@@ -116,10 +118,10 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
         self.hybrid_shape_circle_center_tangent.CenterElem = value
 
     @property
-    def diameter(self):
+    def diameter(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Diameter() As Length (Read Only)
                 | 
                 |     Returns the circle diameter. It is expressed as a Length literal. Succeeds
@@ -133,15 +135,16 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
                 |      HybShpCircleDiameter = HybShpCircle.Diameter
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_circle_center_tangent.Diameter)
 
     @property
-    def diameter_mode(self):
+    def diameter_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DiameterMode() As boolean
                 | 
                 |     Returns or sets the DiameterMode.
@@ -158,12 +161,13 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
                 |           HybShpCircle.DiameterMode = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_circle_center_tangent.DiameterMode
 
     @diameter_mode.setter
-    def diameter_mode(self, value):
+    def diameter_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -171,10 +175,10 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
         self.hybrid_shape_circle_center_tangent.DiameterMode = value
 
     @property
-    def discrimination_index(self):
+    def discrimination_index(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DiscriminationIndex() As long
                 | 
                 |     Return or set the discrimination index of the current circle. Several
@@ -192,12 +196,13 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
                 |          hybShpcircle.DiscriminationIndex = 2
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_circle_center_tangent.DiscriminationIndex
 
     @discrimination_index.setter
-    def discrimination_index(self, value):
+    def discrimination_index(self, value: int):
         """
         :param int value:
         """
@@ -205,10 +210,10 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
         self.hybrid_shape_circle_center_tangent.DiscriminationIndex = value
 
     @property
-    def orientation1(self):
+    def orientation1(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation1() As long
                 | 
                 |     Returns or sets the orientation of the first curve to which the circle is
@@ -226,12 +231,13 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
                 |          Set HybShpCircle.Orientation1 -1
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_circle_center_tangent.Orientation1
 
     @orientation1.setter
-    def orientation1(self, value):
+    def orientation1(self, value: int):
         """
         :param int value:
         """
@@ -239,10 +245,10 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
         self.hybrid_shape_circle_center_tangent.Orientation1 = value
 
     @property
-    def orientation2(self):
+    def orientation2(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation2() As long
                 | 
                 |     Returns or sets the orientation of the second curve to which the circle is
@@ -260,12 +266,13 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
                 |          HybShpCircleOrientation = HybShpCircle.Orientation2
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_circle_center_tangent.Orientation2
 
     @orientation2.setter
-    def orientation2(self, value):
+    def orientation2(self, value: int):
         """
         :param int value:
         """
@@ -273,10 +280,10 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
         self.hybrid_shape_circle_center_tangent.Orientation2 = value
 
     @property
-    def radius(self):
+    def radius(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Radius() As Length (Read Only)
                 | 
                 |     Returns the circle radius. It is expressed as a Length literal. Succeeds
@@ -290,15 +297,16 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
                 |      HybShpCircleRadius = HybShpCircle.Radius
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_circle_center_tangent.Radius)
 
     @property
-    def support(self):
+    def support(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets the circle support surface.
@@ -312,12 +320,13 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
                 |          Set HybShpCircleSupportSurf = HybShpCircle.Support
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_circle_center_tangent.Support)
 
     @support.setter
-    def support(self, value):
+    def support(self, value: Reference):
         """
         :param Reference value:
         """
@@ -325,10 +334,10 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
         self.hybrid_shape_circle_center_tangent.Support = value
 
     @property
-    def tangent_curve(self):
+    def tangent_curve(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TangentCurve() As Reference
                 | 
                 |     Returns or sets the tangent curve to which the circle will be
@@ -341,12 +350,13 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
                 |          Set HybShpCircle.Tangent Curve TgtCrv
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_circle_center_tangent.TangentCurve)
 
     @tangent_curve.setter
-    def tangent_curve(self, value):
+    def tangent_curve(self, value: Reference):
         """
         :param Reference value:
         """
@@ -354,10 +364,10 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
         self.hybrid_shape_circle_center_tangent.TangentCurve = value
 
     @property
-    def tangent_orientation1(self):
+    def tangent_orientation1(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TangentOrientation1() As long
                 | 
                 |     Returns or sets the tangent orientation of the circle first reference
@@ -374,12 +384,13 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
                 |          firstOrient = hybShpcircle.FirstTangentOrientation
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_circle_center_tangent.TangentOrientation1
 
     @tangent_orientation1.setter
-    def tangent_orientation1(self, value):
+    def tangent_orientation1(self, value: int):
         """
         :param int value:
         """
@@ -387,10 +398,10 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
         self.hybrid_shape_circle_center_tangent.TangentOrientation1 = value
 
     @property
-    def tangent_orientation2(self):
+    def tangent_orientation2(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TangentOrientation2() As long
                 | 
                 |     Returns or sets the tangent orientation of the circle second reference
@@ -407,12 +418,13 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
                 |          secondOrient = hybShpcircle.SecondTangentOrientation
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_circle_center_tangent.TangentOrientation2
 
     @tangent_orientation2.setter
-    def tangent_orientation2(self, value):
+    def tangent_orientation2(self, value: int):
         """
         :param int value:
         """

@@ -34,7 +34,8 @@ class DrawingThreads(Collection):
         super().__init__(com_object, child_object=DrawingThread)
         self.drawing_threads = com_object
 
-    def add(self, i_geom_elem):
+    # todo: ascertain the correct type for i_geom_elem
+    def add(self, i_geom_elem) -> DrawingThread:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -62,12 +63,13 @@ class DrawingThreads(Collection):
                 |      Dim MyThread As DrawingThread
                 |      Set MyThread = MyView.Threads.Add(iGeomElem)
 
-        :param AnyObject i_geom_elem:
+        :param i_geom_elem:
         :return: DrawingThread
+        :rtype: DrawingThread
         """
         return DrawingThread(self.drawing_threads.Add(i_geom_elem.com_object))
 
-    def item(self, i_index):
+    def item(self, i_index: int) -> DrawingThread:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -99,10 +101,11 @@ class DrawingThreads(Collection):
 
         :param int i_index:
         :return: DrawingThread
+        :rtype: DrawingThread
         """
         return DrawingThread(self.drawing_threads.Item(i_index))
 
-    def remove(self, i_index):
+    def remove(self, i_index: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -131,6 +134,7 @@ class DrawingThreads(Collection):
 
         :param int i_index:
         :return: None
+        :rtype: None
         """
         return self.drawing_threads.Remove(i_index)
 

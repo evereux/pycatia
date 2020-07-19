@@ -13,7 +13,6 @@ from pycatia.part_interfaces.defeaturing_filter_with_range import DefeaturingFil
 
 
 class DefeaturingHoleFilter(DefeaturingFilterWithRange):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -28,9 +27,7 @@ class DefeaturingHoleFilter(DefeaturingFilterWithRange):
                 |                             DefeaturingHoleFilter
                 | 
                 | Represents the defeaturing hole filter.
-                | 
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
-    
+
     """
 
     def __init__(self, com_object):
@@ -38,4 +35,4 @@ class DefeaturingHoleFilter(DefeaturingFilterWithRange):
         self.defeaturing_hole_filter = com_object
 
     def __repr__(self):
-        return f'DefeaturingHoleFilter(name="{ self.name }")'
+        return f'DefeaturingHoleFilter(name="{self.name}")'

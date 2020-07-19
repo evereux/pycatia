@@ -13,7 +13,6 @@ from pycatia.mec_mod_interfaces.edge import Edge
 
 
 class MonoDimFeatEdge(Edge):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -38,9 +37,7 @@ class MonoDimFeatEdge(Edge):
                 | HybridShapeFactory.AddNewPointTangent ).
                 | The lifetime of a MonoDimFeatEdge object is limited, see
                 | Boundary.
-                | 
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
-    
+
     """
 
     def __init__(self, com_object):
@@ -48,4 +45,4 @@ class MonoDimFeatEdge(Edge):
         self.mono_dim_feat_edge = com_object
 
     def __repr__(self):
-        return f'MonoDimFeatEdge(name="{ self.name }")'
+        return f'MonoDimFeatEdge(name="{self.name}")'

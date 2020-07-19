@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeRevol(HybridShape):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -43,10 +43,10 @@ class HybridShapeRevol(HybridShape):
         self.hybrid_shape_revol = com_object
 
     @property
-    def axis(self):
+    def axis(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Axis() As Reference
                 | 
                 |     Role: To get_Axis on the object.
@@ -66,12 +66,13 @@ class HybridShapeRevol(HybridShape):
                 |         HybridShapeFactory
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_revol.Axis)
 
     @axis.setter
-    def axis(self, value):
+    def axis(self, value: Reference):
         """
         :param Reference value:
         """
@@ -79,10 +80,10 @@ class HybridShapeRevol(HybridShape):
         self.hybrid_shape_revol.Axis = value
 
     @property
-    def begin_angle(self):
+    def begin_angle(self) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BeginAngle() As Angle (Read Only)
                 | 
                 |     Role: To get_BeginAngle on the object.
@@ -102,15 +103,16 @@ class HybridShapeRevol(HybridShape):
                 |         HybridShapeFactory
 
         :return: Angle
+        :rtype: Angle
         """
 
         return Angle(self.hybrid_shape_revol.BeginAngle)
 
     @property
-    def context(self):
+    def context(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Context() As long
                 | 
                 |     Returns or sets the context on Revolve feature.
@@ -130,12 +132,13 @@ class HybridShapeRevol(HybridShape):
                 |          Set oContext = Revol.Context
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_revol.Context
 
     @context.setter
-    def context(self, value):
+    def context(self, value: int):
         """
         :param int value:
         """
@@ -143,10 +146,10 @@ class HybridShapeRevol(HybridShape):
         self.hybrid_shape_revol.Context = value
 
     @property
-    def end_angle(self):
+    def end_angle(self) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property EndAngle() As Angle (Read Only)
                 | 
                 |     Role: To get_EndAngle on the object.
@@ -166,15 +169,16 @@ class HybridShapeRevol(HybridShape):
                 |         HybridShapeFactory
 
         :return: Angle
+        :rtype: Angle
         """
 
         return Angle(self.hybrid_shape_revol.EndAngle)
 
     @property
-    def first_limit_type(self):
+    def first_limit_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstLimitType() As long
                 | 
                 |     Returns or sets the First limit type.
@@ -197,12 +201,13 @@ class HybridShapeRevol(HybridShape):
                 |      Set oLim1Type = Revolve.FirstLimitType
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_revol.FirstLimitType
 
     @first_limit_type.setter
-    def first_limit_type(self, value):
+    def first_limit_type(self, value: int):
         """
         :param int value:
         """
@@ -210,10 +215,10 @@ class HybridShapeRevol(HybridShape):
         self.hybrid_shape_revol.FirstLimitType = value
 
     @property
-    def first_upto_element(self):
+    def first_upto_element(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstUptoElement() As Reference
                 | 
                 |     Returns or sets the First up-to element used to limit
@@ -227,12 +232,13 @@ class HybridShapeRevol(HybridShape):
                 |          Set Lim1Elem = Revolve.FirstUptoElement
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_revol.FirstUptoElement)
 
     @first_upto_element.setter
-    def first_upto_element(self, value):
+    def first_upto_element(self, value: Reference):
         """
         :param Reference value:
         """
@@ -240,26 +246,29 @@ class HybridShapeRevol(HybridShape):
         self.hybrid_shape_revol.FirstUptoElement = value
 
     @property
-    def orientation(self):
+    def orientation(self) -> False:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation(boolean iOrientation)
                 | 
-                |     Gets or sets orientation of the revolution. Orientation = TRUE : The natural orientation of the
-                |     axis is taken. = FALSE : The opposite orientation is taken This example retrieves in IsInverted
-                |     orientation of the revolution for the Revol hybrid shape feature.
+                |     Gets or sets orientation of the revolution.
+                |     Orientation
+                |     TRUE : The natural orientation of the axis is taken.
+                |     FALSE : The opposite orientation is taken This example retrieves in IsInverted orientation of the
+                |     revolution for the Revol hybrid shape feature.
                 | 
                 |      Dim IsInverted As boolean
                 |      IsInverted = Revol.Orientation
 
         :return: False
+        :rtype: False
         """
 
         return None
 
     @orientation.setter
-    def orientation(self, value):
+    def orientation(self, value: False):
         """
         :param False value:
         """
@@ -267,10 +276,10 @@ class HybridShapeRevol(HybridShape):
         self.hybrid_shape_revol.Orientation = value
 
     @property
-    def profil(self):
+    def profil(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Profil() As Reference
                 | 
                 |     Role: To get_Profil on the object.
@@ -290,12 +299,13 @@ class HybridShapeRevol(HybridShape):
                 |         HybridShapeFactory
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_revol.Profil)
 
     @profil.setter
-    def profil(self, value):
+    def profil(self, value: Reference):
         """
         :param Reference value:
         """
@@ -303,10 +313,10 @@ class HybridShapeRevol(HybridShape):
         self.hybrid_shape_revol.Profil = value
 
     @property
-    def second_limit_type(self):
+    def second_limit_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondLimitType() As long
                 | 
                 |     Returns or sets the Second limit type.
@@ -329,12 +339,13 @@ class HybridShapeRevol(HybridShape):
                 |      Set oLim2Type = RevolveSecondLimitType
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_revol.SecondLimitType
 
     @second_limit_type.setter
-    def second_limit_type(self, value):
+    def second_limit_type(self, value: int):
         """
         :param int value:
         """
@@ -342,10 +353,10 @@ class HybridShapeRevol(HybridShape):
         self.hybrid_shape_revol.SecondLimitType = value
 
     @property
-    def second_upto_element(self):
+    def second_upto_element(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondUptoElement() As Reference
                 | 
                 |     Returns or sets the Second up-to element used to limit
@@ -359,12 +370,13 @@ class HybridShapeRevol(HybridShape):
                 |          Set Lim2Elem = Revolve.SecondUptoElement
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_revol.SecondUptoElement)
 
     @second_upto_element.setter
-    def second_upto_element(self, value):
+    def second_upto_element(self, value: Reference):
         """
         :param Reference value:
         """

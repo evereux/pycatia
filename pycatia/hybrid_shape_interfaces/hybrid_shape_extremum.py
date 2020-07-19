@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -18,7 +18,7 @@ class HybridShapeExtremum(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -49,21 +49,22 @@ class HybridShapeExtremum(HybridShape):
         self.hybrid_shape_extremum = com_object
 
     @property
-    def direction(self):
+    def direction(self) -> HybridShapeDirection:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Direction() As HybridShapeDirection
                 | 
                 |     Returns or sets the direction into which the extremum is detected.
 
         :return: HybridShapeDirection
+        :rtype: HybridShapeDirection
         """
 
         return HybridShapeDirection(self.hybrid_shape_extremum.Direction)
 
     @direction.setter
-    def direction(self, value):
+    def direction(self, value: HybridShapeDirection):
         """
         :param HybridShapeDirection value:
         """
@@ -71,21 +72,22 @@ class HybridShapeExtremum(HybridShape):
         self.hybrid_shape_extremum.Direction = value
 
     @property
-    def direction2(self):
+    def direction2(self) -> HybridShapeDirection:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Direction2() As HybridShapeDirection
                 | 
                 |     Returns or sets the second direction into which the extremum is detected.
 
         :return: HybridShapeDirection
+        :rtype: HybridShapeDirection
         """
 
         return HybridShapeDirection(self.hybrid_shape_extremum.Direction2)
 
     @direction2.setter
-    def direction2(self, value):
+    def direction2(self, value: HybridShapeDirection):
         """
         :param HybridShapeDirection value:
         """
@@ -93,21 +95,22 @@ class HybridShapeExtremum(HybridShape):
         self.hybrid_shape_extremum.Direction2 = value
 
     @property
-    def direction3(self):
+    def direction3(self) -> HybridShapeDirection:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Direction3() As HybridShapeDirection
                 | 
                 |     Returns or sets the third direction into which the extremum is detected.
 
         :return: HybridShapeDirection
+        :rtype: HybridShapeDirection
         """
 
         return HybridShapeDirection(self.hybrid_shape_extremum.Direction3)
 
     @direction3.setter
-    def direction3(self, value):
+    def direction3(self, value: HybridShapeDirection):
         """
         :param HybridShapeDirection value:
         """
@@ -115,22 +118,23 @@ class HybridShapeExtremum(HybridShape):
         self.hybrid_shape_extremum.Direction3 = value
 
     @property
-    def extremum_type(self):
+    def extremum_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExtremumType() As long
                 | 
                 |     Returns or sets the extremum type.
                 |     Legal values: 1 to get a maximum element or 0 to get a minimum element.
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_extremum.ExtremumType
 
     @extremum_type.setter
-    def extremum_type(self, value):
+    def extremum_type(self, value: int):
         """
         :param int value:
         """
@@ -138,22 +142,23 @@ class HybridShapeExtremum(HybridShape):
         self.hybrid_shape_extremum.ExtremumType = value
 
     @property
-    def extremum_type2(self):
+    def extremum_type2(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExtremumType2() As long
                 | 
                 |     Returns or sets the extremum type of the second direction.
                 |     Legal values: 1 to get a maximum element or 0 to get a minimum element.
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_extremum.ExtremumType2
 
     @extremum_type2.setter
-    def extremum_type2(self, value):
+    def extremum_type2(self, value: int):
         """
         :param int value:
         """
@@ -161,22 +166,23 @@ class HybridShapeExtremum(HybridShape):
         self.hybrid_shape_extremum.ExtremumType2 = value
 
     @property
-    def extremum_type3(self):
+    def extremum_type3(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExtremumType3() As long
                 | 
                 |     Returns or sets the extremum type of the third direction.
                 |     Legal values: 1 to get a maximum element or 0 to get a minimum element.
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_extremum.ExtremumType3
 
     @extremum_type3.setter
-    def extremum_type3(self, value):
+    def extremum_type3(self, value: int):
         """
         :param int value:
         """
@@ -184,21 +190,22 @@ class HybridShapeExtremum(HybridShape):
         self.hybrid_shape_extremum.ExtremumType3 = value
 
     @property
-    def reference_element(self):
+    def reference_element(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ReferenceElement() As Reference
                 | 
                 |     Returns or sets the object on which the extremum is detected.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_extremum.ReferenceElement)
 
     @reference_element.setter
-    def reference_element(self, value):
+    def reference_element(self, value: Reference):
         """
         :param Reference value:
         """

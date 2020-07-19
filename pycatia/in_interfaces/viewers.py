@@ -14,7 +14,6 @@ from pycatia.system_interfaces.collection import Collection
 
 
 class Viewers(Collection):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -35,10 +34,10 @@ class Viewers(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Viewer)
         self.viewers = com_object
 
-    def item(self, i_index):
+    def item(self, i_index: int) -> Viewer:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -69,8 +68,9 @@ class Viewers(Collection):
 
         :param int i_index:
         :return: Viewer
+        :rtype: Viewer
         """
         return Viewer(self.viewers.Item(i_index))
 
     def __repr__(self):
-        return f'Viewers(name="{ self.name }")'
+        return f'Viewers(name="{self.name}")'

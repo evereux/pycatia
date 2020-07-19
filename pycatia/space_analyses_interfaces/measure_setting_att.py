@@ -9,41 +9,24 @@
         
 """
 
-from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.system_interfaces.setting_controller import SettingController
+from pycatia.system_interfaces.system_service import SystemService
 
 
-class MeasureSettingAtt(AnyObject):
-
+class MeasureSettingAtt(SettingController):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
                 |         System.CATBaseUnknown
                 |             System.CATBaseDispatch
                 |                 System.AnyObject
-                |                     Measurable
+                |                     System.SettingController
+                |                         MeasureSettingAtt
                 | 
-                | The interface to access a CATIAMeasurable Get measurements on the
-                | object.
-                | 
-                | Two types of measurement can be done:
-                | 
-                |     itself : gives dimensions related to the object itself (ex the radius of a circle).
-                |     between : gives dimensions related to another object (ex the distance between two products).
-                |               A restriction occurs for distance between: bodies (CATBody) cannot be measured.
-                | 
-                | Methods on VOLUME : GetVolume GetArea GetCOG
-                | Methods on SURFACE : GetArea GetCOG GetPerimeter
-                | Methods on PLANE : GetArea GetCOG GetPlane
-                | Methods on CYLINDER : GetArea GetCOG GetAxis GetPointsOnAxis GetRadius
-                | Methods on CONE : GetArea GetCOG GetAxis GetPointsOnAxis GetAngle
-                | Methods on SPHERE : GetArea GetCOG GetRadius GetCenter
-                | Methods on CURVE : GetLength GetCOG GetPointsOnCurve
-                | Methods on LINE : GetLength GetCOG GetPointsOnCurve GetDirection
-                | Methods on CIRCLE : GetLength GetCOG GetPointsOnCurve GetRadius GetCenter GetAngle GetAxis
-                | Methods on POINT : GetPoint Methods on AXIS SYST : GetAxisSystem
+                | The interface to access a CATIAMeasureSettingAtt.
     
     """
 
@@ -52,784 +35,669 @@ class MeasureSettingAtt(AnyObject):
         self.measure_setting_att = com_object
 
     @property
-    def angle(self):
+    def box_display(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property Angle() As double (Read Only)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+                | o Property BoxDisplay() As boolean
                 | 
-                |     Returns the Angle of a circle or cone.
+                |     Returns or sets the BoxDisplay parameter .
                 | 
-                |     Example:
+                |     Measure label background is filled if BoxDisplay is True ; there are only
+                |     borders if BoxDisplay is False.
                 | 
-                |              This example retrieves the Angle of NewMeasurable
-                |              measure.
-                |             
-                | 
-                |             Dim AAngle As double
-                |             AAngle = NewMeasurable.Angle
+                |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: float
+        :return: bool
+        :rtype: bool
         """
 
-        return self.measure_setting_att.Angle
+        return self.measure_setting_att.BoxDisplay
+
+    @box_display.setter
+    def box_display(self, value: bool):
+        """
+        :param bool value:
+        """
+
+        self.measure_setting_att.BoxDisplay = value
 
     @property
-    def area(self):
+    def line_width(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property Area() As double (Read Only)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+                | o Property LineWidth() As short
                 | 
-                |     Returns the area of the surface or wet area from volume.
+                |     Returns or sets the LineWidth parameter.
                 | 
-                |     Example:
+                |     The line width index, which ranges from 1 to 63.
                 | 
-                |              This example retrieves the area of NewMeasurable
-                |              measure.
-                |             The area unit given by oArea is m²
-                |             
-                | 
-                |             Dim AArea As double
-                |             AArea = NewMeasurable.Area
+                |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: float
+        :return: int
+        :rtype: int
         """
 
-        return self.measure_setting_att.Area
+        return self.measure_setting_att.LineWidth
+
+    @line_width.setter
+    def line_width(self, value: int):
+        """
+        :param int value:
+        """
+
+        self.measure_setting_att.LineWidth = value
 
     @property
-    def geometry_name(self):
+    def part_update_status(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property GeometryName() As CatMeasurableName (Read Only)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+                | o Property PartUpdateStatus() As boolean
                 | 
-                |     Returns the name of the geometry of the measured object.
+                |     Returns or sets the PartUpdateStatus parameter .
                 | 
-                |     Example:
+                |     Part is automatically updated if PartUpdateStatus is true.
                 | 
-                |              This example retrieves the name of the geometry of the
-                |              NewMeasurable measure.
-                |             
-                | 
-                |             Dim AGeometryName As CatMeasurableName
-                |             AGeometryName = NewMeasurable.GeometryName
+                |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: enum cat_measurable_name
+        :return: bool
+        :rtype: bool
         """
 
-        return self.measure_setting_att.GeometryName
+        return self.measure_setting_att.PartUpdateStatus
+
+    @part_update_status.setter
+    def part_update_status(self, value: bool):
+        """
+        :param bool value:
+        """
+
+        self.measure_setting_att.PartUpdateStatus = value
 
     @property
-    def length(self):
+    def product_update_status(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property Length() As double (Read Only)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+                | o Property ProductUpdateStatus() As boolean
                 | 
-                |     Returns the Length of a curve.
+                |     Returns or sets the ProductUpdateStatus parameter .
                 | 
-                |     Example:
+                |     Product is automatically updated if PartUpdateStatus is
+                |     true.
                 | 
-                |              This example retrieves the Length of NewMeasurable
-                |              measure.
-                |             
-                | 
-                |             Dim ALength As double
-                |             ALength = NewMeasurable.Length
+                |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: float
+        :return: bool
+        :rtype: bool
         """
 
-        return self.measure_setting_att.Length
+        return self.measure_setting_att.ProductUpdateStatus
+
+    @product_update_status.setter
+    def product_update_status(self, value: bool):
+        """
+        :param bool value:
+        """
+
+        self.measure_setting_att.ProductUpdateStatus = value
 
     @property
-    def perimeter(self):
+    def tilde_display(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property Perimeter() As double (Read Only)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+                | o Property TildeDisplay() As boolean
                 | 
-                |     Returns the perimeter of a surface.
+                |     Returns or sets the TildeDisplay parameter.
                 | 
-                |     Example:
+                |     If TildeDisplay is TRUE, a tilde displayed for approximate
+                |     measurement.
                 | 
-                |              This example retrieves the perimeter of NewMeasurable
-                |              measure.
-                |             
-                | 
-                |             Dim APerimeter As double
-                |             APerimeter = NewMeasurable.Perimeter
+                |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: float
+        :return: bool
+        :rtype: bool
         """
 
-        return self.measure_setting_att.Perimeter
+        return self.measure_setting_att.TildeDisplay
 
-    @property
-    def radius(self):
+    @tilde_display.setter
+    def tilde_display(self, value: bool):
         """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property Radius() As double (Read Only)
-                | 
-                |     Returns the radius of an arc, cylinder or sphere.
-                | 
-                |     Example:
-                | 
-                |              This example retrieves the Radius of NewMeasurable
-                |              measure.
-                |             
-                | 
-                |             Dim ARadius As double
-                |             ARadius = NewMeasurable.Radius
-
-        :return: float
+        :param bool value:
         """
 
-        return self.measure_setting_att.Radius
+        self.measure_setting_att.TildeDisplay = value
 
-    @property
-    def volume(self):
+    def get_box_display_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property Volume() As double (Read Only)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Func GetBoxDisplayInfo(CATBSTR ioAdminLevel,
+                | CATBSTR ioLocked) As boolean
                 | 
-                |     Returns the volume.
-                | 
-                |     Example:
-                | 
-                |              This example retrieves the volume of NewMeasurable
-                |              measure.
-                |             The volume unit given by oVolume is m^3
-                |             
-                | 
-                |             Dim AVolume As double
-                |             AVolume = NewMeasurable.Volume
-
-        :return: float
-        """
-
-        return self.measure_setting_att.Volume
-
-    def get_angle_between(self, i_measured_item=None):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func GetAngleBetween(Reference iMeasuredItem) As double
-                | 
-                |     Compute the angle between the CATIAMeasurable and another.
-                | 
-                |     Example:
-                | 
-                |              This example retrieves the angle between the reference1 and
-                |              reference2.
-                |             Dim reference1 As Reference
-                |             Set reference1 = part1.CreateReferenceFromObject(object1)
-                |             Dim reference2 As Reference
-                |             Set reference2 = part1.CreateReferenceFromObject(object1)
-                |             Dim TheSPAWorkbench As Workbench
-                |             Set TheSPAWorkbench = CATIA.ActiveDocument.GetWorkbench ( "SPAWorkbench" )
-                |             Dim TheMeasurable As Measurable
-                |             Set TheMeasurable = TheSPAWorkbench.GetMeasurable(reference1)
-                |             Dim MinimumDistance As double
-                |             MinimumDistance = TheMeasurable.GetAngleBetween(reference2)
-
-        :param Reference i_measured_item:
-        :return: float
-        """
-        return self.measure_setting_att.GetAngleBetween(i_measured_item.com_object)
-
-    def get_axis(self, o_axis_vector=None):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub GetAxis(CATSafeArrayVariant oAxisVector)
-                | 
-                |     Retrieves the axis vector of the cylinder or a cone.
+                |     Retrieves environment informations for the BoxDisplay
+                |     parameter.
+                |     Role:Retrieves the state of the BoxDisplay parameter in the current
+                |     environment.
                 | 
                 |     Parameters:
                 | 
-                |         oVector
-                |             The axis vector of the cylinder or a cone with respect to the
-                |             product coordinate system:
+                |         ioAdminLevel
                 | 
-                |                 oAxisVector(0) is the X direction
-                |                 oAxisVector(1) is the Y direction
-                |                 oAxisVector(2) is the Z direction 
-                | 
-                |     Example:
-                | 
-                |              This example retrieves the axis vector of the cylinder or a cone
-                |              of NewMeasurable measure.
+                |             If the parameter is locked, AdminLevel gives the administration
+                |             level that imposes the value of the parameter.
+                |             If the parameter is not locked, AdminLevel gives the administration
+                |             level that will give the value of the parameter after a reset.
                 |             
+                |         ioLocked
+                |             Indicates if the parameter has been locked. 
                 | 
-                |             Dim AxisVector (2)
-                |             NewMeasurable.GetAxis AxisVector
+                |     Returns:
+                |         Indicates if the parameter has been explicitly modified or remain to
+                |         the administrated value.
 
-        :param tuple o_axis_vector:
-        :return: None
+        :param str io_admin_level:
+        :param str io_locked:
+        :return: bool
+        :rtype: bool
         """
-        return self.measure_setting_att.GetAxis(o_axis_vector)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'get_axis'
-        # # vba_code = """
-        # # Public Function get_axis(measure_setting_att)
-        # #     Dim oAxisVector (2)
-        # #     measure_setting_att.GetAxis oAxisVector
-        # #     get_axis = oAxisVector
-        # # End Function
-        # # """
+        return self.measure_setting_att.GetBoxDisplayInfo(io_admin_level, io_locked)
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def get_axis_system(self, o_components=None):
+    def get_label_color(self) -> tuple:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub GetAxisSystem(CATSafeArrayVariant oComponents)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub GetLabelColor(long oR,
+                | long oG,
+                | long oB)
                 | 
-                |     Retrieves the information of the axis system.
+                |     Returns the LabelColor parameter.
                 | 
                 |     Parameters:
                 | 
-                |         oCoordinates
-                |             The information of the axis system with respect to the product
-                |             coordinate system:
+                |         oR
+                |             the red component of the color. 
+                |         oG
+                |             the green component of the color. 
+                |         oB
+                |             the blue component of the color.
                 | 
-                |                 oComponents(0) is the X coordinate of the origin of the axis
-                |                 system
-                |                 oComponents(1) is the Y coordinate of the origin of the axis
-                |                 system
-                |                 oComponents(2) is the Z coordinate of the origin of the axis
-                |                 system
-                |                 oComponents(3) is the X coordinate of the first direction of
-                |                 the axis system
-                |                 oComponents(4) is the Y coordinate of the first direction of
-                |                 the axis system
-                |                 oComponents(5) is the Z coordinate of the first direction of
-                |                 the axis system
-                |                 oComponents(6) is the X coordinate of the second direction of
-                |                 the axis system
-                |                 oComponents(7) is the Y coordinate of the second direction of
-                |                 the axis system
-                |                 oComponents(8) is the Z coordinate of the second direction of
-                |                 the axis system
-                |                 oComponents(9) is the X coordinate of the third direction of
-                |                 the axis system
-                |                 oComponents(10) is the Y coordinate of the third direction of
-                |                 the axis system
-                |                 oComponents(11) is the Z coordinate of the third direction of
-                |                 the axis system 
-                | 
-                |     Example:
-                | 
-                |              This example retrieves information of the axis system of
-                |              NewMeasurable measure.
-                |             
-                | 
-                |             Dim Components (11)
-                |             NewMeasurable.GetAxisSystem Components
+                |             Ensure consistency with the C++ interface to which the work is
+                |             delegated.
 
-        :param tuple o_components:
-        :return: None
+        :return: tuple
+        :rtype: tuple
         """
-        return self.measure_setting_att.GetAxisSystem(o_components)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'get_axis_system'
-        # # vba_code = """
-        # # Public Function get_axis_system(measure_setting_att)
-        # #     Dim oComponents (2)
-        # #     measure_setting_att.GetAxisSystem oComponents
-        # #     get_axis_system = oComponents
-        # # End Function
-        # # """
+        return self.measure_setting_att.GetLabelColor()
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def get_cog(self, o_coordinates=None):
+    def get_label_color_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub GetCOG(CATSafeArrayVariant oCoordinates)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Func GetLabelColorInfo(CATBSTR ioAdminLevel,
+                | CATBSTR ioLocked) As boolean
                 | 
-                |     Retrieves the position of the center of gravity of a surface and volume
-                |     .
+                |     Retrieves environment informations for the LabelColor
+                |     parameter.
+                |     Role:Retrieves the state of the LabelColor parameter in the current
+                |     environment.
                 | 
                 |     Parameters:
                 | 
-                |         oCoordinates
-                |             The position of the center of gravity with respect to the product
-                |             coordinate system:
+                |         ioAdminLevel
                 | 
-                |                 oCoordinates(0) is the X coordinate
-                |                 oCoordinates(1) is the Y coordinate
-                |                 oCoordinates(2) is the Z coordinate 
-                | 
-                |     Example:
-                | 
-                |              This example retrieves the position of the center of gravity of
-                |              NewMeasurable measure.
+                |             If the parameter is locked, AdminLevel gives the administration
+                |             level that imposes the value of the parameter.
+                |             If the parameter is not locked, AdminLevel gives the administration
+                |             level that will give the value of the parameter after a reset.
                 |             
+                |         ioLocked
+                |             Indicates if the parameter has been locked. 
                 | 
-                |             Dim Coordinates (2)
-                |             NewMeasurable.GetCOG Coordinates
+                |     Returns:
+                |         Indicates if the parameter has been explicitly modified or remain to
+                |         the administrated value.
 
-        :param tuple o_coordinates:
-        :return: None
+        :param str io_admin_level:
+        :param str io_locked:
+        :return: bool
+        :rtype: bool
         """
-        return self.measure_setting_att.GetCOG(o_coordinates)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'get_cog'
-        # # vba_code = """
-        # # Public Function get_cog(measure_setting_att)
-        # #     Dim oCoordinates (2)
-        # #     measure_setting_att.GetCOG oCoordinates
-        # #     get_cog = oCoordinates
-        # # End Function
-        # # """
+        return self.measure_setting_att.GetLabelColorInfo(io_admin_level, io_locked)
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def get_center(self, o_coordinates=None):
+    def get_line_width_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub GetCenter(CATSafeArrayVariant oCoordinates)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Func GetLineWidthInfo(CATBSTR ioAdminLevel,
+                | CATBSTR ioLocked) As boolean
                 | 
-                |     Retrieves the position of the center of a circle or
-                |     sphere.
+                |     Retrieves environment informations for the LineWidth
+                |     parameter.
+                |     Role:Retrieves the state of the LineWidth parameter in the current
+                |     environment.
                 | 
                 |     Parameters:
                 | 
-                |         oCoordinates
-                |             The position of the center with respect to the product coordinate
-                |             system:
+                |         ioAdminLevel
                 | 
-                |                 oCoordinates(0) is the X coordinate
-                |                 oCoordinates(1) is the Y coordinate
-                |                 oCoordinates(2) is the Z coordinate 
-                | 
-                |     Example:
-                | 
-                |              This example retrieves the position of the center of NewMeasurable
-                |              measure.
+                |             If the parameter is locked, AdminLevel gives the administration
+                |             level that imposes the value of the parameter.
+                |             If the parameter is not locked, AdminLevel gives the administration
+                |             level that will give the value of the parameter after a reset.
                 |             
+                |         ioLocked
+                |             Indicates if the parameter has been locked. 
                 | 
-                |             Dim Coordinates (2)
-                |             NewMeasurable.GetCOGPosition Coordinates
+                |     Returns:
+                |         Indicates if the parameter has been explicitly modified or remain to
+                |         the administrated value.
 
-        :param tuple o_coordinates:
-        :return: None
+        :param str io_admin_level:
+        :param str io_locked:
+        :return: bool
+        :rtype: bool
         """
-        return self.measure_setting_att.GetCenter(o_coordinates)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'get_center'
-        # # vba_code = """
-        # # Public Function get_center(measure_setting_att)
-        # #     Dim oCoordinates (2)
-        # #     measure_setting_att.GetCenter oCoordinates
-        # #     get_center = oCoordinates
-        # # End Function
-        # # """
+        return self.measure_setting_att.GetLineWidthInfo(io_admin_level, io_locked)
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def get_direction(self, o_direction=None):
+    def get_part_update_status_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub GetDirection(CATSafeArrayVariant oDirection)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Func GetPartUpdateStatusInfo(CATBSTR ioAdminLevel,
+                | CATBSTR ioLocked) As boolean
                 | 
-                |     Retrieves the direction of the line.
+                |     Retrieves environment informations for the PartUpdateStatus
+                |     parameter.
+                |     Role:Retrieves the state of the PartUpdateStatus parameter in the current
+                |     environment.
                 | 
                 |     Parameters:
                 | 
-                |         oDirection
-                |             The direction of the line with respect to the product coordinate
-                |             system:
+                |         ioAdminLevel
                 | 
-                |                 oDirection(0) is the X direction
-                |                 oDirection(1) is the Y direction
-                |                 oDirection(2) is the Z direction 
-                | 
-                |     Example:
-                | 
-                |              This example retrieves the direction of the line of NewMeasurable
-                |              measure.
+                |             If the parameter is locked, AdminLevel gives the administration
+                |             level that imposes the value of the parameter.
+                |             If the parameter is not locked, AdminLevel gives the administration
+                |             level that will give the value of the parameter after a reset.
                 |             
+                |         ioLocked
+                |             Indicates if the parameter has been locked. 
                 | 
-                |             Dim Direction (2)
-                |             NewMeasurable.GetDirection Direction
+                |     Returns:
+                |         Indicates if the parameter has been explicitly modified or remain to
+                |         the administrated value.
 
-        :param tuple o_direction:
-        :return: None
+        :param str io_admin_level:
+        :param str io_locked:
+        :return: bool
+        :rtype: bool
         """
-        return self.measure_setting_att.GetDirection(o_direction)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'get_direction'
-        # # vba_code = """
-        # # Public Function get_direction(measure_setting_att)
-        # #     Dim oDirection (2)
-        # #     measure_setting_att.GetDirection oDirection
-        # #     get_direction = oDirection
-        # # End Function
-        # # """
+        return self.measure_setting_att.GetPartUpdateStatusInfo(io_admin_level, io_locked)
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def get_minimum_distance(self, i_measured_item=None):
+    def get_product_update_status_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func GetMinimumDistance(Reference iMeasuredItem) As double
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Func GetProductUpdateStatusInfo(CATBSTR ioAdminLevel,
+                | CATBSTR ioLocked) As boolean
                 | 
-                |     Compute the minimum distance between the CATIAMeasurable and another.
-                |     Bodies (openbody, hybridbody..) cannot be measured
-                |     between.
+                |     Retrieves environment informations for the ProductUpdateStatus
+                |     parameter.
+                |     Role:Retrieves the state of the ProductUpdateStatus parameter in the
+                |     current environment.
                 | 
                 |     Parameters:
                 | 
-                |         oCoordinates
-                |             The information of the axis system with respect to the product
-                |             coordinate system:
+                |         ioAdminLevel
                 | 
-                |                 oComponents(0) is the X coordinate of the origin of the axis
-                |                 system
-                |                 oComponents(1) is the Y coordinate of the origin of the axis
-                |                 system
-                |                 oComponents(2) is the Z coordinate of the origin of the axis
-                |                 system
-                |                 oComponents(3) is the X coordinate of the first direction of
-                |                 the axis system
-                |                 oComponents(4) is the Y coordinate of the first direction of
-                |                 the axis system
-                |                 oComponents(5) is the Z coordinate of the first direction of
-                |                 the axis system 
+                |             If the parameter is locked, AdminLevel gives the administration
+                |             level that imposes the value of the parameter.
+                |             If the parameter is not locked, AdminLevel gives the administration
+                |             level that will give the value of the parameter after a reset.
+                |             
+                |         ioLocked
+                |             Indicates if the parameter has been locked. 
                 | 
-                |     Example:
-                | 
-                |              This example retrieves the distance between the reference1 and
-                |              reference2.
-                |             Dim reference1 As Reference
-                |             Set reference1 = part1.CreateReferenceFromObject(object1)
-                |             Dim reference2 As Reference
-                |             Set reference2 = part1.CreateReferenceFromObject(object1)
-                |             Dim TheSPAWorkbench As Workbench
-                |             Set TheSPAWorkbench = CATIA.ActiveDocument.GetWorkbench ( "SPAWorkbench" )
-                |             Dim TheMeasurable As Measurable
-                |             Set TheMeasurable = TheSPAWorkbench.GetMeasurable(reference1)
-                |             Dim MinimumDistance As double
-                |             MinimumDistance = TheMeasurable.GetMinimumDistance(reference2)
+                |     Returns:
+                |         Indicates if the parameter has been explicitly modified or remain to
+                |         the administrated value.
 
-        :param Reference i_measured_item:
-        :return: float
+        :param str io_admin_level:
+        :param str io_locked:
+        :return: bool
+        :rtype: bool
         """
-        return self.measure_setting_att.GetMinimumDistance(i_measured_item.com_object)
+        return self.measure_setting_att.GetProductUpdateStatusInfo(io_admin_level, io_locked)
 
-    def get_minimum_distance_points(self, i_measured_item=None, o_coordinates=None):
+    def get_text_color(self) -> tuple:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub GetMinimumDistancePoints(Reference iMeasuredItem,
-                | CATSafeArrayVariant oCoordinates)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub GetTextColor(long oR,
+                | long oG,
+                | long oB)
                 | 
-                |     Compute the points corresponding to the minimum distance between the two
-                |     references.
+                |     Returns the TextColor parameter .
                 | 
-                |     Example:
-                | 
-                |              This example retrieves the points corresponding to the distance
-                |              between the reference1 and reference2.
-                |             Dim reference1 As Reference
-                |             Set reference1 = part1.CreateReferenceFromObject(object1)
-                |             Dim reference2 As Reference
-                |             Set reference2 = part1.CreateReferenceFromObject(object1)
-                |             Dim TheSPAWorkbench As Workbench
-                |             Set TheSPAWorkbench = CATIA.ActiveDocument.GetWorkbench ( "SPAWorkbench" )
-                |             Dim TheMeasurable As Measurable
-                |             Set TheMeasurable = TheSPAWorkbench.GetMeasurable(reference1)
-                |             Dim Coordinates (8)
-                |             TheMeasurable.GetMinimumDistancePoints reference2,
-                |             Coordinates
+                |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :param Reference i_measured_item:
-        :param tuple o_coordinates:
-        :return: None
+        :return: tuple
+        :rtype: tuple
         """
-        return self.measure_setting_att.GetMinimumDistancePoints(i_measured_item.com_object, o_coordinates)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'get_minimum_distance_points'
-        # # vba_code = """
-        # # Public Function get_minimum_distance_points(measure_setting_att)
-        # #     Dim iMeasuredItem (2)
-        # #     measure_setting_att.GetMinimumDistancePoints iMeasuredItem
-        # #     get_minimum_distance_points = iMeasuredItem
-        # # End Function
-        # # """
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        vba_function_name = 'get_text_color'
+        vba_code = """
+        Public Function get_text_color(measurable)
+            Dim oR long
+            Dim oG long
+            Dim oB long
+            inertia.GetTextColor oR oG oB
+            get_principal_moments = (oR, oG, oB)
+        End Function
+        """
 
-    def get_plane(self, o_components=None):
+        system_service = SystemService(self.application.SystemService)
+        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+
+    def get_text_color_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub GetPlane(CATSafeArrayVariant oComponents)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Func GetTextColorInfo(CATBSTR ioAdminLevel,
+                | CATBSTR ioLocked) As boolean
                 | 
-                |     Retrieves informations of the plane.
+                |     Retrieves environment informations for the TextColor
+                |     parameter.
+                |     Role:Retrieves the state of the TextColor parameter in the current
+                |     environment.
                 | 
                 |     Parameters:
                 | 
-                |         oComponents
-                |             The informations of the plane with respect to the product
-                |             coordinate system:
+                |         ioAdminLevel
                 | 
-                |                 oComponents(0) is the X coordinate of the
-                |                 origin
-                |                 oComponents(1) is the Y coordinate of the
-                |                 origin
-                |                 oComponents(2) is the Z coordinate of the
-                |                 origin
-                |                 oComponents(3) is the X coordinate of the first direction of
-                |                 the plane
-                |                 oComponents(4) is the Y coordinate of the first direction of
-                |                 the plane
-                |                 oComponents(5) is the Z coordinate of the first direction of
-                |                 the plane
-                |                 oComponents(6) is the X coordinate of the second direction of
-                |                 the plane
-                |                 oComponents(7) is the Y coordinate of the second direction of
-                |                 the plane
-                |                 oComponents(8) is the Z coordinate of the second direction of
-                |                 the plane 
-                | 
-                |     Example:
-                | 
-                |              This example retrieves informations of the plane of NewMeasurable
-                |              measure.
+                |             If the parameter is locked, AdminLevel gives the administration
+                |             level that imposes the value of the parameter.
+                |             If the parameter is not locked, AdminLevel gives the administration
+                |             level that will give the value of the parameter after a reset.
                 |             
+                |         ioLocked
+                |             Indicates if the parameter has been locked. 
                 | 
-                |             Dim Components (2)
-                |             NewMeasurable.GetPlane Components
+                |     Returns:
+                |         Indicates if the parameter has been explicitly modified or remain to
+                |         the administrated value.
 
-        :param tuple o_components:
-        :return: None
+        :param str io_admin_level:
+        :param str io_locked:
+        :return: bool
+        :rtype: bool
         """
-        return self.measure_setting_att.GetPlane(o_components)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'get_plane'
-        # # vba_code = """
-        # # Public Function get_plane(measure_setting_att)
-        # #     Dim oComponents (2)
-        # #     measure_setting_att.GetPlane oComponents
-        # #     get_plane = oComponents
-        # # End Function
-        # # """
+        return self.measure_setting_att.GetTextColorInfo(io_admin_level, io_locked)
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def get_point(self, o_coordinates=None):
+    def get_tilde_display_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub GetPoint(CATSafeArrayVariant oCoordinates)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Func GetTildeDisplayInfo(CATBSTR ioAdminLevel,
+                | CATBSTR ioLocked) As boolean
                 | 
-                |     Retrieves the position of the point.
+                |     Retrieves environment informations for the TildeDisplay
+                |     parameter.
+                |     Role:Retrieves the state of the TildeDisplay parameter in the current
+                |     environment.
                 | 
                 |     Parameters:
                 | 
-                |         oCoordinates
-                |             The coordinate of the point with respect to the product coordinate
-                |             system:
+                |         ioAdminLevel
                 | 
-                |                 oCoordinates(0) is the X coordinate
-                |                 oCoordinates(1) is the Y coordinate
-                |                 oCoordinates(2) is the Z coordinate 
-                | 
-                |     Example:
-                | 
-                |              This example retrieves the coordinate of the point of
-                |              NewMeasurable measure.
+                |             If the parameter is locked, AdminLevel gives the administration
+                |             level that imposes the value of the parameter.
+                |             If the parameter is not locked, AdminLevel gives the administration
+                |             level that will give the value of the parameter after a reset.
                 |             
+                |         ioLocked
+                |             Indicates if the parameter has been locked. 
                 | 
-                |             Dim Coordinates (2)
-                |             NewMeasurable.GetPoint Coordinates
+                |     Returns:
+                |         Indicates if the parameter has been explicitly modified or remain to
+                |         the administrated value.
 
-        :param tuple o_coordinates:
-        :return: None
+        :param str io_admin_level:
+        :param str io_locked:
+        :return: bool
+        :rtype: bool
         """
-        return self.measure_setting_att.GetPoint(o_coordinates)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'get_point'
-        # # vba_code = """
-        # # Public Function get_point(measure_setting_att)
-        # #     Dim oCoordinates (2)
-        # #     measure_setting_att.GetPoint oCoordinates
-        # #     get_point = oCoordinates
-        # # End Function
-        # # """
+        return self.measure_setting_att.GetTildeDisplayInfo(io_admin_level, io_locked)
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def get_points_on_axis(self, o_coordinates=None):
+    def set_box_display_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub GetPointsOnAxis(CATSafeArrayVariant oCoordinates)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub SetBoxDisplayLock(boolean iLocked)
                 | 
-                |     Retrieves the the characteristic points of the axis with respect of the
-                |     size of the revolution object.
+                |     Locks or unlocks the BoxDisplay parameter.
+                |     Role:Locks or unlocks the BoxDisplay parameter if it is possible in the
+                |     current administrative context. In user mode this method will always return
+                |     E_FAIL.
                 | 
                 |     Parameters:
                 | 
-                |         oCoordinates
-                |             The information of the characteristic points with respect to the
-                |             product coordinate system:
-                | 
-                |                 oCoordinates(0) is the X coordinate of the centerpoint of the
-                |                 axis
-                |                 oCoordinates(1) is the Y coordinate of the centerpoint of the
-                |                 axis
-                |                 oCoordinates(2) is the Z coordinate of the centerpoint of the
-                |                 axis
-                |                 oCoordinates(3) is the X coordinate of the startpoint of the
-                |                 axis
-                |                 oCoordinates(4) is the Y coordinate of the startpoint of the
-                |                 axis
-                |                 oCoordinates(5) is the Z coordinate of the startpoint of the
-                |                 axis
-                |                 oCoordinates(6) is the X coordinate of the endpoint of the
-                |                 axis
-                |                 oCoordinates(7) is the Y coordinate of the endpoint of the
-                |                 axis
-                |                 oCoordinates(8) is the Z coordinate of the endpoint of the axis
-                |                 
-                | 
-                |     Example:
-                | 
-                |              This example retrieves the characteristic points of the axis of
-                |              NewMeasurable measure.
-                |             
-                | 
-                |             Dim Coordinates (8)
-                |             NewMeasurable.GetPointsOnAxis Coordinates
+                |         iLocked
+                |             the locking operation to be performed Legal
+                |             values:
+                |             TRUE : to lock the parameter.
+                |             FALSE: to unlock the parameter.
 
-        :param tuple o_coordinates:
+        :param bool i_locked:
         :return: None
+        :rtype: None
         """
-        return self.measure_setting_att.GetPointsOnAxis(o_coordinates)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'get_points_on_axis'
-        # # vba_code = """
-        # # Public Function get_points_on_axis(measure_setting_att)
-        # #     Dim oCoordinates (2)
-        # #     measure_setting_att.GetPointsOnAxis oCoordinates
-        # #     get_points_on_axis = oCoordinates
-        # # End Function
-        # # """
+        return self.measure_setting_att.SetBoxDisplayLock(i_locked)
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def get_points_on_curve(self, o_coordinates=None):
+    def set_label_color(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub GetPointsOnCurve(CATSafeArrayVariant oCoordinates)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub SetLabelColor(long iR,
+                | long iG,
+                | long iB)
                 | 
-                |     Retrieves the the characteristic points of the curve : the start point, the middle point and the
-                |     end point.
+                |     Sets the LabelColor parameter.
                 | 
                 |     Parameters:
                 | 
-                |         oCoordinates
-                |             The information of the characteristic points of the curve with
-                |             respect to the product coordinate system:
+                |         oR
+                |             the red component of the color. 
+                |         oG
+                |             the green component of the color. 
+                |         oB
+                |             the blue component of the color.
                 | 
-                |                 oCoordinates(0) is the X coordinate of the startpoint of the
-                |                 curve
-                |                 oCoordinates(1) is the Y coordinate of the startpoint of the
-                |                 curve
-                |                 oCoordinates(2) is the Z coordinate of the startpoint of the
-                |                 curve
-                |                 oCoordinates(3) is the X coordinate of the midpoint of the
-                |                 curve
-                |                 oCoordinates(4) is the Y coordinate of the midpoint of the
-                |                 curve
-                |                 oCoordinates(5) is the Z coordinate of the midpoint of the
-                |                 curve
-                |                 oCoordinates(6) is the X coordinate of the endpoint of the
-                |                 curve
-                |                 oCoordinates(7) is the Y coordinate of the endpoint of the
-                |                 curve
-                |                 oCoordinates(8) is the Z coordinate of the endpoint of the
-                |                 curve 
-                | 
-                |     Example:
-                | 
-                |              This example retrieves the characteristic points of the curve of
-                |              NewMeasurable measure.
-                |             
-                | 
-                |             Dim Coordinates (8)
-                |             NewMeasurable.GetPointsOnCurve Coordinates
+                |             Ensure consistency with the C++ interface to which the work is
+                |             delegated.
 
-        :param tuple o_coordinates:
+        :param int i_r:
+        :param int i_g:
+        :param int i_b:
         :return: None
+        :rtype: None
         """
-        return self.measure_setting_att.GetPointsOnCurve(o_coordinates)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'get_points_on_curve'
-        # # vba_code = """
-        # # Public Function get_points_on_curve(measure_setting_att)
-        # #     Dim oCoordinates (2)
-        # #     measure_setting_att.GetPointsOnCurve oCoordinates
-        # #     get_points_on_curve = oCoordinates
-        # # End Function
-        # # """
+        return self.measure_setting_att.SetLabelColor(i_r, i_g, i_b)
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+    def set_label_color_lock(self, i_locked: bool) -> None:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub SetLabelColorLock(boolean iLocked)
+                | 
+                |     Locks or unlocks the LabelColor parameter.
+                |     Role:Locks or unlocks the LabelColor parameter if it is possible in the
+                |     current administrative context. In user mode this method will always return
+                |     E_FAIL.
+                | 
+                |     Parameters:
+                | 
+                |         iLocked
+                |             the locking operation to be performed Legal
+                |             values:
+                |             TRUE : to lock the parameter.
+                |             FALSE: to unlock the parameter.
+
+        :param bool i_locked:
+        :return: None
+        :rtype: None
+        """
+        return self.measure_setting_att.SetLabelColorLock(i_locked)
+
+    def set_line_width_lock(self, i_locked: bool) -> None:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub SetLineWidthLock(boolean iLocked)
+                | 
+                |     Locks or unlocks the LineWidth parameter.
+                |     Role:Locks or unlocks the LineWidth parameter if it is possible in the
+                |     current administrative context. In user mode this method will always return
+                |     E_FAIL.
+                | 
+                |     Parameters:
+                | 
+                |         iLocked
+                |             the locking operation to be performed Legal
+                |             values:
+                |             TRUE : to lock the parameter.
+                |             FALSE: to unlock the parameter.
+
+        :param bool i_locked:
+        :return: None
+        :rtype: None
+        """
+        return self.measure_setting_att.SetLineWidthLock(i_locked)
+
+    def set_part_update_status_lock(self, i_locked: bool) -> None:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub SetPartUpdateStatusLock(boolean iLocked)
+                | 
+                |     Locks or unlocks the PartUpdateStatus parameter.
+                |     Role:Locks or unlocks the PartUpdateStatus parameter if it is possible in
+                |     the current administrative context. In user mode this method will always return
+                |     E_FAIL.
+                | 
+                |     Parameters:
+                | 
+                |         iLocked
+                |             the locking operation to be performed Legal
+                |             values:
+                |             TRUE : to lock the parameter.
+                |             FALSE: to unlock the parameter.
+
+        :param bool i_locked:
+        :return: None
+        :rtype: None
+        """
+        return self.measure_setting_att.SetPartUpdateStatusLock(i_locked)
+
+    def set_product_update_status_lock(self, i_locked: bool) -> None:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub SetProductUpdateStatusLock(boolean iLocked)
+                | 
+                |     Locks or unlocks the ProductUpdateStatus parameter.
+                |     Role:Locks or unlocks the Xxx parameter if it is possible in the current
+                |     administrative context. In user mode this method will always return
+                |     E_FAIL.
+                | 
+                |     Parameters:
+                | 
+                |         iLocked
+                |             the locking operation to be performed Legal
+                |             values:
+                |             TRUE : to lock the parameter.
+                |             FALSE: to unlock the parameter.
+
+        :param bool i_locked:
+        :return: None
+        :rtype: None
+        """
+        return self.measure_setting_att.SetProductUpdateStatusLock(i_locked)
+
+    def set_text_color(self, i_r: int, i_g: int, i_b: int) -> None:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub SetTextColor(long iR,
+                | long iG,
+                | long iB)
+                | 
+                |     Sets the TextColor parameter .
+                | 
+                |     Ensure consistency with the C++ interface to which the work is delegated.
+
+        :param int i_r:
+        :param int i_g:
+        :param int i_b:
+        :return: None
+        :rtype: None
+        """
+        return self.measure_setting_att.SetTextColor(i_r, i_g, i_b)
+
+    def set_text_color_lock(self, i_locked: bool) -> None:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub SetTextColorLock(boolean iLocked)
+                | 
+                |     Locks or unlocks the TextColor parameter.
+                |     Role:Locks or unlocks the TextColor parameter if it is possible in the
+                |     current administrative context. In user mode this method will always return
+                |     E_FAIL.
+                | 
+                |     Parameters:
+                | 
+                |         iLocked
+                |             the locking operation to be performed Legal
+                |             values:
+                |             TRUE : to lock the parameter.
+                |             FALSE: to unlock the parameter.
+
+        :param bool i_locked:
+        :return: None
+        :rtype: None
+        """
+        return self.measure_setting_att.SetTextColorLock(i_locked)
+
+    def set_tilde_display_lock(self, i_locked: bool) -> None:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub SetTildeDisplayLock(boolean iLocked)
+                | 
+                |     Locks or unlocks the TildeDisplay parameter.
+                |     Role:Locks or unlocks the TildeDisplay parameter if it is possible in the
+                |     current administrative context. In user mode this method will always return
+                |     E_FAIL.
+                | 
+                |     Parameters:
+                | 
+                |         iLocked
+                |             the locking operation to be performed Legal
+                |             values:
+                |             TRUE : to lock the parameter.
+                |             FALSE: to unlock the parameter.
+
+        :param bool i_locked:
+        :return: None
+        :rtype: None
+        """
+        return self.measure_setting_att.SetTildeDisplayLock(i_locked)
 
     def __repr__(self):
-        return f'MeasureSettingAtt(name="{ self.name }")'
+        return f'MeasureSettingAtt(name="{self.name}")'

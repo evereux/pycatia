@@ -13,14 +13,14 @@ import csv
 from pycatia import catia
 
 documents = catia.documents
-documents.open(r'cat_files/CF_catia_measurable_part.CATPart')
+documents.open(r'tests/cat_files/part_measurable.CATPart')
 
 document = catia.active_document
 
 spa_workbench = document.spa_workbench()
 part = document.part()
 
-selected = document.search_for_items(document, ['Point'])
+selected = document.search_for_items(['Point'])
 
 # export the points to a csv file.
 csv_file_name = '__junk__\\exported_points.csv'

@@ -54,7 +54,7 @@ class Product(AnyObject):
         self.product = com_object
 
     @property
-    def analyze(self):
+    def analyze(self) -> Analyze:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -74,12 +74,13 @@ class Product(AnyObject):
                 |          Set EngineAnalysis = Engine.Analyze
 
         :return: Analyze
+        :rtype: Analyze
         """
 
         return Analyze(self.product.Analyze)
 
     @property
-    def definition(self):
+    def definition(self) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -97,12 +98,13 @@ class Product(AnyObject):
                 |          EngineDef = Engine.Definition
 
         :return: str
+        :rtype: str
         """
 
         return self.product.Definition
 
     @definition.setter
-    def definition(self, value):
+    def definition(self, value: str):
         """
         :param str value:
         """
@@ -110,7 +112,7 @@ class Product(AnyObject):
         self.product.Definition = value
 
     @property
-    def description_instance(self):
+    def description_instance(self) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -132,12 +134,13 @@ class Product(AnyObject):
                 |          EngineComp.DescriptionInst(Desc)
 
         :return: str
+        :rtype: str
         """
 
         return self.product.DescriptionInst
 
     @description_instance.setter
-    def description_instance(self, value):
+    def description_instance(self, value: str):
         """
         :param str value:
         """
@@ -145,7 +148,7 @@ class Product(AnyObject):
         self.product.DescriptionInst = value
 
     @property
-    def description_reference(self):
+    def description_reference(self) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -167,12 +170,13 @@ class Product(AnyObject):
                 |          Engine.DescriptionRef(Desc)
 
         :return: str
+        :rtype: str
         """
 
         return self.product.DescriptionRef
 
     @description_reference.setter
-    def description_reference(self, value):
+    def description_reference(self, value: str):
         """
         :param str value:
         """
@@ -222,7 +226,7 @@ class Product(AnyObject):
         return Move(self.product.Move)
 
     @property
-    def nomenclature(self):
+    def nomenclature(self) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -242,12 +246,13 @@ class Product(AnyObject):
                 |          EngineNom = Engine.Nomenclature
 
         :return: str
+        :rtype: str
         """
 
         return self.product.Nomenclature
 
     @nomenclature.setter
-    def nomenclature(self, value):
+    def nomenclature(self, value: str):
         """
         :param str value:
         """
@@ -255,7 +260,7 @@ class Product(AnyObject):
         self.product.Nomenclature = value
 
     @property
-    def parameters(self):
+    def parameters(self) -> Parameters:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -274,12 +279,13 @@ class Product(AnyObject):
                 |          Set params = productRoot.Parameters
 
         :return: Parameters
+        :rtype: Parameters
         """
 
         return Parameters(self.product.Parameters)
 
     @property
-    def part_number(self):
+    def part_number(self) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -297,12 +303,13 @@ class Product(AnyObject):
                 |          Engine.PartNumber("A120-253X-7")
 
         :return: str
+        :rtype: str
         """
 
         return self.product.PartNumber
 
     @part_number.setter
-    def part_number(self, value):
+    def part_number(self, value: str):
         """
         :param str value:
         """
@@ -310,7 +317,7 @@ class Product(AnyObject):
         self.product.PartNumber = value
 
     @property
-    def position(self):
+    def position(self) -> Position:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -330,12 +337,13 @@ class Product(AnyObject):
                 |          Set EnginePositionObject = Engine.Position
 
         :return: Position
+        :rtype: Position
         """
 
         return Position(self.product.Position)
 
     @property
-    def products(self):
+    def products(self) -> 'Products':
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -355,12 +363,13 @@ class Product(AnyObject):
                 |          Set EngineChildren = Engine.Products
 
         :return: Products
+        :rtype: Products
         """
         from pycatia.product_structure_interfaces.products import Products
         return Products(self.product.Products)
 
     @property
-    def publications(self):
+    def publications(self) -> Publications:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -369,12 +378,13 @@ class Product(AnyObject):
                 |     Returns the collection of publications managed by the product.
 
         :return: Publications
+        :rtype: Publications
         """
 
         return Publications(self.product.Publications)
 
     @property
-    def reference_product(self):
+    def reference_product(self) -> 'Product':
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -383,12 +393,13 @@ class Product(AnyObject):
                 |     Returns the Reference Product of this instance.
 
         :return: Product
+        :rtype: Product
         """
 
         return Product(self.product.ReferenceProduct)
 
     @property
-    def relations(self):
+    def relations(self) -> Relations:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -406,12 +417,13 @@ class Product(AnyObject):
                 |          Set rels = productRoot.Relations
 
         :return: Relations
+        :rtype: Relations
         """
 
         return Relations(self.product.Relations)
 
     @property
-    def revision(self):
+    def revision(self) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -429,12 +441,13 @@ class Product(AnyObject):
                 |          Engine.Revision("3A")
 
         :return: str
+        :rtype: str
         """
 
         return self.product.Revision
 
     @revision.setter
-    def revision(self, value):
+    def revision(self, value: str):
         """
         :param str value:
         """
@@ -442,7 +455,7 @@ class Product(AnyObject):
         self.product.Revision = value
 
     @property
-    def source(self):
+    def source(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -464,21 +477,22 @@ class Product(AnyObject):
                 |
                 |          Engine.Source(catProductMade)
 
-        :return: enum cat_product_source
+        :return: int
+        :rtype: int
         """
 
         return self.product.Source
 
     @source.setter
-    def source(self, value):
+    def source(self, value: int):
         """
-        :param enum cat_product_source value:
+        :param int value:
         """
 
         self.product.Source = value
 
     @property
-    def user_ref_properties(self):
+    def user_ref_properties(self) -> Parameters:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -498,11 +512,12 @@ class Product(AnyObject):
                 |          Set UserProps = productRoot.UserRefProperties
 
         :return: Parameters
+        :rtype: Parameters
         """
 
         return Parameters(self.product.UserRefProperties)
 
-    def activate_default_shape(self):
+    def activate_default_shape(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -511,10 +526,11 @@ class Product(AnyObject):
                 |     Activate default shape.
 
         :return: None
+        :rtype: None
         """
         return self.product.ActivateDefaultShape()
 
-    def activate_shape(self, shape_name=None):
+    def activate_shape(self, shape_name: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -529,6 +545,7 @@ class Product(AnyObject):
 
         :param str shape_name:
         :return: None
+        :rtype: None
         """
         return self.product.ActivateShape(shape_name)
 
@@ -540,9 +557,9 @@ class Product(AnyObject):
         :param list(Product) products:
         """
 
-        def loop_d_loop(products):
+        def loop_d_loop(products_):
 
-            for product in products:
+            for product in products_:
                 if product.is_catpart():
                     product.activate_default_shape()
                 elif product.is_catproduct():
@@ -586,7 +603,8 @@ class Product(AnyObject):
         """
         return self.product.AddMasterShapeRepresentation(i_shape_path_name)
 
-    def add_shape_representation(self, i_shape_path_name=None, i_shape_name=None, i_rep_behavior=None, i_context=None):
+    def add_shape_representation(self, i_shape_path_name: str, i_shape_name: str, i_rep_behavior: int,
+                                 i_context: bool) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -633,14 +651,15 @@ class Product(AnyObject):
 
         :param str i_shape_path_name:
         :param str i_shape_name:
-        :param CatRepType i_rep_behavior:
+        :param int i_rep_behavior:
         :param bool i_context:
         :return: None
+        :rtype: None
         """
         return self.product.AddShapeRepresentation(
             i_shape_path_name,
             i_shape_name,
-            i_rep_behavior.com_object,
+            i_rep_behavior,
             i_context
         )
         # # # # Autogenerated comment:
@@ -659,7 +678,7 @@ class Product(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def apply_work_mode(self, new_mode):
+    def apply_work_mode(self, new_mode: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -674,6 +693,7 @@ class Product(AnyObject):
 
         :param int new_mode:
         :return: None
+        :rtype: None
         """
         return self.product.ApplyWorkMode(new_mode)
 
@@ -723,7 +743,7 @@ class Product(AnyObject):
         """
         return Collection(self.product.Connections(i_connections_type))
 
-    def create_reference_from_name(self, i_label=None):
+    def create_reference_from_name(self, i_label: str) -> Reference:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -763,10 +783,11 @@ class Product(AnyObject):
 
         :param str i_label:
         :return: Reference
+        :rtype: Reference
         """
         return Reference(self.product.CreateReferenceFromName(i_label))
 
-    def desactivate_default_shape(self):
+    def desactivate_default_shape(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -775,10 +796,11 @@ class Product(AnyObject):
                 |     Deactivate default shape.
 
         :return: None
+        :rtype: None
         """
         return self.product.DesactivateDefaultShape()
 
-    def desactivate_shape(self, shape_name=None):
+    def desactivate_shape(self, shape_name: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -793,10 +815,11 @@ class Product(AnyObject):
 
         :param str shape_name:
         :return: None
+        :rtype: None
         """
         return self.product.DesactivateShape(shape_name)
 
-    def extract_bom(self, i_file_type=None, i_file=None):
+    def extract_bom(self, i_file_type: int, i_file: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -818,11 +841,12 @@ class Product(AnyObject):
                 |         iFile
                 |             File where the bill of material will be saved
 
-        :param CatFileType i_file_type:
+        :param int i_file_type:
         :param str i_file:
         :return: None
+        :rtype: None
         """
-        return self.product.ExtractBOM(i_file_type.com_object, i_file)
+        return self.product.ExtractBOM(i_file_type, i_file)
         # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -861,7 +885,7 @@ class Product(AnyObject):
         """
         return self.product.GetActiveShapeName()
 
-    def get_all_shapes_names(self, olistshape=None):
+    def get_all_shapes_names(self, olistshape: tuple) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -875,6 +899,7 @@ class Product(AnyObject):
 
         :param tuple olistshape:
         :return: None
+        :rtype: None
         """
         return self.product.GetAllShapesNames(olistshape)
         # # # # Autogenerated comment:
@@ -928,7 +953,7 @@ class Product(AnyObject):
         """
         return self.product.GetDefaultShapeName()
 
-    def get_master_shape_representation(self, i_load_if_necessary=None):
+    def get_master_shape_representation(self, i_load_if_necessary: bool) -> AnyObject:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -955,10 +980,11 @@ class Product(AnyObject):
 
         :param bool i_load_if_necessary:
         :return: AnyObject
+        :rtype: AnyObject
         """
         return self.product.GetMasterShapeRepresentation(i_load_if_necessary)
 
-    def get_master_shape_representation_path_name(self):
+    def get_master_shape_representation_path_name(self) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -976,10 +1002,11 @@ class Product(AnyObject):
                 |          Set MSRepPath = Engine.GetMasterShapeRepresentationPathName
 
         :return: str
+        :rtype: str
         """
         return self.product.GetMasterShapeRepresentationPathName()
 
-    def get_number_of_shapes(self):
+    def get_number_of_shapes(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -990,7 +1017,8 @@ class Product(AnyObject):
                 |     Returns:
                 |         oNbShapes The number of Shapes.
 
-        :return: enum
+        :return: int
+        :rtype: int
         """
         return self.product.GetNumberOfShapes()
 
@@ -1028,7 +1056,8 @@ class Product(AnyObject):
         """
         return self.product.GetShapePathName(i_shape_name)
 
-    def get_shape_representation(self, i_load_if_necessary, i_shape_name, i_rep_behavior, i_context):
+    def get_shape_representation(self, i_load_if_necessary: bool, i_shape_name: str, i_rep_behavior: int,
+                                 i_context: bool) -> AnyObject:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1075,11 +1104,11 @@ class Product(AnyObject):
         return self.product.GetShapeRepresentation(
             i_load_if_necessary,
             i_shape_name,
-            i_rep_behavior.com_object,
+            i_rep_behavior,
             i_context
         )
 
-    def get_technological_object(self, i_application_type=None):
+    def get_technological_object(self, i_application_type: str) -> AnyObject:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1106,10 +1135,11 @@ class Product(AnyObject):
 
         :param str i_application_type:
         :return: AnyObject
+        :rtype: AnyObject
         """
         return self.product.GetTechnologicalObject(i_application_type)
 
-    def has_a_master_shape_representation(self):
+    def has_a_master_shape_representation(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1128,6 +1158,7 @@ class Product(AnyObject):
                 |          HasMSRep = Engine.HasAMasterShapeRepresentation()
 
         :return: bool
+        :rtype: bool
         """
         return self.product.HasAMasterShapeRepresentation()
 
@@ -1141,7 +1172,7 @@ class Product(AnyObject):
 
         return False
 
-    def has_shape_representation(self, i_shape_name=None, i_rep_behavior=None, i_context=None):
+    def has_shape_representation(self, i_shape_name: str, i_rep_behavior: int, i_context: bool) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1175,15 +1206,17 @@ class Product(AnyObject):
                 |          HasRep = Engine.HasRepresentation("PART",catRep3D,TRUE)
 
         :param str i_shape_name:
-        :param CatRepType i_rep_behavior:
+        :param int i_rep_behavior:
         :param bool i_context:
         :return: bool
+        :rtype: bool
         """
         return self.product.HasShapeRepresentation(i_shape_name, i_rep_behavior.com_object, i_context)
 
     def is_catproduct(self):
         """
         :return: bool
+        :rtype: bool
         """
 
         if "catproduct" == self.file_name.rsplit(".")[-1].lower():
@@ -1194,6 +1227,7 @@ class Product(AnyObject):
     def is_catpart(self):
         """
         :return: bool
+        :rtype: bool
         """
 
         if "catpart" == self.file_name.rsplit(".")[-1].lower():
@@ -1212,12 +1246,13 @@ class Product(AnyObject):
         >>> # e://users//psr//Parts//
         >>> Product.path().suffix
         >>> # .CATProduct
-        :return: Path()
+        :return: Path
+        :rtype: Path
         """
 
         return Path(self.full_name)
 
-    def remove_master_shape_representation(self):
+    def remove_master_shape_representation(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1243,10 +1278,11 @@ class Product(AnyObject):
                 |          Engine.RemoveMasterShapeRepresentation()
 
         :return: None
+        :rtype: None
         """
         return self.product.RemoveMasterShapeRepresentation()
 
-    def remove_shape_representation(self, i_shape_name=None, i_rep_behavior=None, i_context=None):
+    def remove_shape_representation(self, i_shape_name: str, i_rep_behavior: int, i_context: bool) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1285,9 +1321,10 @@ class Product(AnyObject):
                 |         ("PART",catRep3D,TRUE)
 
         :param str i_shape_name:
-        :param CatRepType i_rep_behavior:
+        :param int i_rep_behavior:
         :param bool i_context:
         :return: None
+        :rtype: None
         """
         return self.product.RemoveShapeRepresentation(i_shape_name, i_rep_behavior.com_object, i_context)
         # # # # Autogenerated comment:
@@ -1306,7 +1343,7 @@ class Product(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def update(self):
+    def update(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -1326,6 +1363,7 @@ class Product(AnyObject):
                 |          Rootproduct.Update
 
         :return: None
+        :rtype: None
         """
         return self.product.Update()
 
