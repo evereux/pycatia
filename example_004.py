@@ -12,7 +12,7 @@ from pycatia import catia
 from pycatia.enumeration.enumeration_types import cat_work_mode_type
 
 documents = catia.documents
-documents.open(r'cat_files/CF_TopLevelAssy.CATProduct')
+documents.open(r'tests/cat_files/product_top.CATProduct')
 document = catia.active_document
 product = document.product()
 
