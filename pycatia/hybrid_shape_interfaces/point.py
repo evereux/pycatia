@@ -24,13 +24,13 @@ class Point(HybridShape):
                 |             System.CATBaseDispatch
                 |                 System.AnyObject
                 |                     MecModInterfaces.HybridShape
-                |                         point_
+                |                         Point
                 | 
-                | Represents the hybrid shape point_ feature object.
-                | Role: Declare hybrid shape point_ root feature object. All interfaces for
-                | different type of point_ derives HybridShapepoint_.
+                | Represents the hybrid shape Point feature object.
+                | Role: Declare hybrid shape Point root feature object. All interfaces for
+                | different type of Point derives HybridShapepoint.
                 | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapepoint_
+                | Use the CATIAHybridShapeFactory to create a HybridShapepoint
                 | objects.
                 | 
                 | See also:
@@ -48,12 +48,12 @@ class Point(HybridShape):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetCoordinates(CATSafeArrayVariant oCoordinates)
                 | 
-                |     Gets cartesian coordinates of the point_.
+                |     Gets cartesian coordinates of the Point.
                 | 
                 |     Parameters:
                 | 
                 |         oCoordinates
-                |             coordinates of the point_. 
+                |             coordinates of the Point.
                 | 
                 |     See also:
                 |         HybridShapeFactory

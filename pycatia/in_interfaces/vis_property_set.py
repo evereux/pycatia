@@ -720,16 +720,16 @@ class VisPropertySet(AnyObject):
                 | 
                 |           The following sample shows how to retrieve displayed line width of
                 |           current selection.
-                |          
-                | 
+                |
                 |          Dim width
                 |          width = CLng(0) 
                 |          Set visProperties1 = CATIA.ActiveDocument.Selection.VisProperties 
                 |          visProperties1.GetVisibleWidth width
                 |          MsgBox "width = " & width
 
+
         :param int o_line_width:
-        :return:int
+        :return: int
         :rtype: int
         """
         return self.vis_property_set.GetVisibleWidth(o_line_width)

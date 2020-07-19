@@ -6,7 +6,7 @@ pycatia.hybrid_shape_interfaces
    :caption: Contents:
 
 
-   pycatia/hybrid_shape_interfaces/hybrid_shape3_d_curve_offset
+   pycatia/hybrid_shape_interfaces/hybrid_shape_3d_curve_offset
    pycatia/hybrid_shape_interfaces/hybrid_shape_affinity
    pycatia/hybrid_shape_interfaces/hybrid_shape_assemble
    pycatia/hybrid_shape_interfaces/hybrid_shape_axis_line

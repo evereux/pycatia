@@ -20,5 +20,5 @@ pycatia.navigator_interfaces
    pycatia/navigator_interfaces/marker_3D
    pycatia/navigator_interfaces/marker_3Ds
    pycatia/navigator_interfaces/marker_setting_att
-   pycatia/navigator_interfaces/n4_d_navigator_setting_att
+   pycatia/navigator_interfaces/n_4D_navigator_setting_att
    pycatia/navigator_interfaces/navigator_workbench
