@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -15,7 +15,7 @@ from pycatia.system_interfaces.setting_controller import SettingController
 class VrmlSettingAtt(SettingController):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -27,7 +27,7 @@ class VrmlSettingAtt(SettingController):
                 | 
                 | The interface to access a CATIAVrmlSettingAtt.
                 | This interface may be used to read or modify in the
-                | CATIA/Tools/Option/General/Compatibility.... the settings values of the VRML
+                | CATIA\\Tools\\Option\\General\\Compatibility.... the settings values of the VRML
                 | sheet.
     
     """
@@ -37,10 +37,10 @@ class VrmlSettingAtt(SettingController):
         self.vrml_setting_att = com_object
 
     @property
-    def export_edges(self):
+    def export_edges(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExportEdges() As boolean
                 | 
                 |     Returns or sets the ExportEdges parameter (exported Vrml files will or will
@@ -55,12 +55,13 @@ class VrmlSettingAtt(SettingController):
                 |             FALSE : exported Vrml files will not contain edge informations.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.vrml_setting_att.ExportEdges
 
     @export_edges.setter
-    def export_edges(self, value):
+    def export_edges(self, value: bool):
         """
         :param bool value:
         """
@@ -68,10 +69,10 @@ class VrmlSettingAtt(SettingController):
         self.vrml_setting_att.ExportEdges = value
 
     @property
-    def export_normals(self):
+    def export_normals(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExportNormals() As boolean
                 | 
                 |     Returns or sets the ExportNormals parameter (exported Vrml files will or
@@ -86,12 +87,13 @@ class VrmlSettingAtt(SettingController):
                 |             FALSE : exported Vrml files will not contain normal informations.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.vrml_setting_att.ExportNormals
 
     @export_normals.setter
-    def export_normals(self, value):
+    def export_normals(self, value: bool):
         """
         :param bool value:
         """
@@ -99,10 +101,10 @@ class VrmlSettingAtt(SettingController):
         self.vrml_setting_att.ExportNormals = value
 
     @property
-    def export_texture(self):
+    def export_texture(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExportTexture() As boolean
                 | 
                 |     Returns or sets the ExportTexture parameter (exported Vrml files will or
@@ -117,12 +119,13 @@ class VrmlSettingAtt(SettingController):
                 |             FALSE : exported Vrml files will not contain texture informations.
 
         :return: bool
+        :rtype: bool
         """
 
         return self.vrml_setting_att.ExportTexture
 
     @export_texture.setter
-    def export_texture(self, value):
+    def export_texture(self, value: bool):
         """
         :param bool value:
         """
@@ -130,10 +133,10 @@ class VrmlSettingAtt(SettingController):
         self.vrml_setting_att.ExportTexture = value
 
     @property
-    def export_texture_file(self):
+    def export_texture_file(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExportTextureFile() As long
                 | 
                 |     Returns or sets the ExportTextureFile parameter (Textures will be exported
@@ -149,12 +152,13 @@ class VrmlSettingAtt(SettingController):
                 |             1 : Texture are exported in external files.
 
         :return: int
+        :rtype: int
         """
 
         return self.vrml_setting_att.ExportTextureFile
 
     @export_texture_file.setter
-    def export_texture_file(self, value):
+    def export_texture_file(self, value: int):
         """
         :param int value:
         """
@@ -162,10 +166,10 @@ class VrmlSettingAtt(SettingController):
         self.vrml_setting_att.ExportTextureFile = value
 
     @property
-    def export_texture_format(self):
+    def export_texture_format(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExportTextureFormat() As long
                 | 
                 |     Returns or sets the ExportTextureFormat parameter.
@@ -178,12 +182,13 @@ class VrmlSettingAtt(SettingController):
                 |             NOT APPLICABLE
 
         :return: int
+        :rtype: int
         """
 
         return self.vrml_setting_att.ExportTextureFormat
 
     @export_texture_format.setter
-    def export_texture_format(self, value):
+    def export_texture_format(self, value: int):
         """
         :param int value:
         """
@@ -191,10 +196,10 @@ class VrmlSettingAtt(SettingController):
         self.vrml_setting_att.ExportTextureFormat = value
 
     @property
-    def export_version(self):
+    def export_version(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExportVersion() As long
                 | 
                 |     Returns or sets the ExportVersion parameter (version of exported Vrml
@@ -209,12 +214,13 @@ class VrmlSettingAtt(SettingController):
                 |             2 : VRML 97 (VRML 2.0).
 
         :return: int
+        :rtype: int
         """
 
         return self.vrml_setting_att.ExportVersion
 
     @export_version.setter
-    def export_version(self, value):
+    def export_version(self, value: int):
         """
         :param int value:
         """
@@ -222,10 +228,10 @@ class VrmlSettingAtt(SettingController):
         self.vrml_setting_att.ExportVersion = value
 
     @property
-    def import_crease_angle(self):
+    def import_crease_angle(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ImportCreaseAngle() As double
                 | 
                 |     Returns or sets the ImportCreaseAngle parameter. The crease angle affects
@@ -243,12 +249,13 @@ class VrmlSettingAtt(SettingController):
                 |             [0,inf]
 
         :return: float
+        :rtype: float
         """
 
         return self.vrml_setting_att.ImportCreaseAngle
 
     @import_crease_angle.setter
-    def import_crease_angle(self, value):
+    def import_crease_angle(self, value: float):
         """
         :param float value:
         """
@@ -256,10 +263,10 @@ class VrmlSettingAtt(SettingController):
         self.vrml_setting_att.ImportCreaseAngle = value
 
     @property
-    def import_unit(self):
+    def import_unit(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ImportUnit() As long
                 | 
                 |     Returns or sets the ImportUnit parameter (unit of imported Vrml
@@ -275,22 +282,23 @@ class VrmlSettingAtt(SettingController):
                 |             2 : Meter.
 
         :return: int
+        :rtype: int
         """
 
         return self.vrml_setting_att.ImportUnit
 
     @import_unit.setter
-    def import_unit(self, value):
+    def import_unit(self, value: int):
         """
         :param int value:
         """
 
         self.vrml_setting_att.ImportUnit = value
 
-    def get_export_background_color(self, io_r, io_g, io_b):
+    def get_export_background_color(self, io_r: int, io_g: int, io_b: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetExportBackgroundColor(long ioR,
                 | long ioG,
                 | long ioB)
@@ -304,13 +312,14 @@ class VrmlSettingAtt(SettingController):
         :param int io_g:
         :param int io_b:
         :return: None
+        :rtype: None
         """
         return self.vrml_setting_att.GetExportBackgroundColor(io_r, io_g, io_b)
 
-    def get_export_background_color_info(self, io_admin_level, io_locked):
+    def get_export_background_color_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetExportBackgroundColorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -321,13 +330,14 @@ class VrmlSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.vrml_setting_att.GetExportBackgroundColorInfo(io_admin_level, io_locked)
 
-    def get_export_edges_info(self, io_admin_level, io_locked):
+    def get_export_edges_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetExportEdgesInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -338,13 +348,14 @@ class VrmlSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.vrml_setting_att.GetExportEdgesInfo(io_admin_level, io_locked)
 
-    def get_export_normals_info(self, io_admin_level, io_locked):
+    def get_export_normals_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetExportNormalsInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -355,13 +366,14 @@ class VrmlSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.vrml_setting_att.GetExportNormalsInfo(io_admin_level, io_locked)
 
-    def get_export_texture_file_info(self, io_admin_level, io_locked):
+    def get_export_texture_file_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetExportTextureFileInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -372,13 +384,14 @@ class VrmlSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.vrml_setting_att.GetExportTextureFileInfo(io_admin_level, io_locked)
 
-    def get_export_texture_format_info(self, io_admin_level, io_locked):
+    def get_export_texture_format_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetExportTextureFormatInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -389,13 +402,14 @@ class VrmlSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.vrml_setting_att.GetExportTextureFormatInfo(io_admin_level, io_locked)
 
-    def get_export_texture_info(self, io_admin_level, io_locked):
+    def get_export_texture_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetExportTextureInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -406,13 +420,14 @@ class VrmlSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.vrml_setting_att.GetExportTextureInfo(io_admin_level, io_locked)
 
-    def get_export_version_info(self, io_admin_level, io_locked):
+    def get_export_version_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetExportVersionInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -423,13 +438,14 @@ class VrmlSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.vrml_setting_att.GetExportVersionInfo(io_admin_level, io_locked)
 
-    def get_import_crease_angle_info(self, io_admin_level, io_locked):
+    def get_import_crease_angle_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetImportCreaseAngleInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -440,13 +456,14 @@ class VrmlSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.vrml_setting_att.GetImportCreaseAngleInfo(io_admin_level, io_locked)
 
-    def get_import_unit_info(self, io_admin_level, io_locked):
+    def get_import_unit_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetImportUnitInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
                 | 
@@ -457,13 +474,14 @@ class VrmlSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.vrml_setting_att.GetImportUnitInfo(io_admin_level, io_locked)
 
-    def set_export_background_color(self, i_r, i_g, i_b):
+    def set_export_background_color(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetExportBackgroundColor(long iR,
                 | long iG,
                 | long iB)
@@ -477,13 +495,14 @@ class VrmlSettingAtt(SettingController):
         :param int i_g:
         :param int i_b:
         :return: None
+        :rtype: None
         """
         return self.vrml_setting_att.SetExportBackgroundColor(i_r, i_g, i_b)
 
-    def set_export_background_color_lock(self, i_locked):
+    def set_export_background_color_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetExportBackgroundColorLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ExportBackgroundColor setting
@@ -492,6 +511,7 @@ class VrmlSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.vrml_setting_att.SetExportBackgroundColorLock(i_locked)
         # # # # Autogenerated comment: 
@@ -510,10 +530,10 @@ class VrmlSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_export_edges_lock(self, i_locked):
+    def set_export_edges_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetExportEdgesLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ExportEdges setting parameter.
@@ -521,6 +541,7 @@ class VrmlSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.vrml_setting_att.SetExportEdgesLock(i_locked)
         # # # # Autogenerated comment: 
@@ -539,10 +560,10 @@ class VrmlSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_export_normals_lock(self, i_locked):
+    def set_export_normals_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetExportNormalsLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ExportNormals setting parameter.
@@ -550,6 +571,7 @@ class VrmlSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.vrml_setting_att.SetExportNormalsLock(i_locked)
         # # # # Autogenerated comment: 
@@ -568,10 +590,10 @@ class VrmlSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_export_texture_file_lock(self, i_locked):
+    def set_export_texture_file_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetExportTextureFileLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ExportTextureFile setting parameter.
@@ -579,6 +601,7 @@ class VrmlSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.vrml_setting_att.SetExportTextureFileLock(i_locked)
         # # # # Autogenerated comment: 
@@ -597,10 +620,10 @@ class VrmlSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_export_texture_format_lock(self, i_locked):
+    def set_export_texture_format_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetExportTextureFormatLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ExportTextureFormat setting
@@ -609,6 +632,7 @@ class VrmlSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.vrml_setting_att.SetExportTextureFormatLock(i_locked)
         # # # # Autogenerated comment: 
@@ -627,10 +651,10 @@ class VrmlSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_export_texture_lock(self, i_locked):
+    def set_export_texture_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetExportTextureLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ExportTexture setting parameter.
@@ -638,6 +662,7 @@ class VrmlSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.vrml_setting_att.SetExportTextureLock(i_locked)
         # # # # Autogenerated comment: 
@@ -656,10 +681,10 @@ class VrmlSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_export_version_lock(self, i_locked):
+    def set_export_version_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetExportVersionLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ExportVersion setting parameter.
@@ -667,6 +692,7 @@ class VrmlSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.vrml_setting_att.SetExportVersionLock(i_locked)
         # # # # Autogenerated comment: 
@@ -685,10 +711,10 @@ class VrmlSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_import_crease_angle_lock(self, i_locked):
+    def set_import_crease_angle_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetImportCreaseAngleLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ImportCreaseAngle setting parameter.
@@ -696,6 +722,7 @@ class VrmlSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.vrml_setting_att.SetImportCreaseAngleLock(i_locked)
         # # # # Autogenerated comment: 
@@ -714,10 +741,10 @@ class VrmlSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_import_unit_lock(self, i_locked):
+    def set_import_unit_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetImportUnitLock(boolean iLocked)
                 | 
                 |     Locks or unlocks the ImportLock setting parameter.
@@ -725,6 +752,7 @@ class VrmlSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.vrml_setting_att.SetImportUnitLock(i_locked)
         # # # # Autogenerated comment: 

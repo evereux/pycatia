@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -19,7 +19,7 @@ class HybridShapeCylinder(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -52,10 +52,10 @@ class HybridShapeCylinder(HybridShape):
         self.hybrid_shape_cylinder = com_object
 
     @property
-    def center(self):
+    def center(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Center() As Reference
                 | 
                 |     Returns or sets the center of the cylinder object.
@@ -68,12 +68,13 @@ class HybridShapeCylinder(HybridShape):
                 |          Set CylinderCenter = Cylinder.Center
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_cylinder.Center)
 
     @center.setter
-    def center(self, value):
+    def center(self, value: Reference):
         """
         :param Reference value:
         """
@@ -81,10 +82,10 @@ class HybridShapeCylinder(HybridShape):
         self.hybrid_shape_cylinder.Center = value
 
     @property
-    def direction(self):
+    def direction(self) -> HybridShapeDirection:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Direction() As HybridShapeDirection
                 | 
                 |     Returns or sets the direction of the cylinder object.
@@ -98,12 +99,13 @@ class HybridShapeCylinder(HybridShape):
                 |          Set CylinderDirection = Cylinder.Direction
 
         :return: HybridShapeDirection
+        :rtype: HybridShapeDirection
         """
 
         return HybridShapeDirection(self.hybrid_shape_cylinder.Direction)
 
     @direction.setter
-    def direction(self, value):
+    def direction(self, value: HybridShapeDirection):
         """
         :param HybridShapeDirection value:
         """
@@ -111,10 +113,10 @@ class HybridShapeCylinder(HybridShape):
         self.hybrid_shape_cylinder.Direction = value
 
     @property
-    def length1(self):
+    def length1(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Length1() As Length
                 | 
                 |     Returns or sets the length of the cylinder object in the given extrusion
@@ -129,12 +131,13 @@ class HybridShapeCylinder(HybridShape):
                 |          Set CylinderLength1 = Cylinder.Length1
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_cylinder.Length1)
 
     @length1.setter
-    def length1(self, value):
+    def length1(self, value: Length):
         """
         :param Length value:
         """
@@ -142,10 +145,10 @@ class HybridShapeCylinder(HybridShape):
         self.hybrid_shape_cylinder.Length1 = value
 
     @property
-    def length2(self):
+    def length2(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Length2() As Length
                 | 
                 |     Returns or sets the length of the cylinder object in the opposite direction
@@ -160,12 +163,13 @@ class HybridShapeCylinder(HybridShape):
                 |          Set CylinderLength2 = Cylinder.Length2
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_cylinder.Length2)
 
     @length2.setter
-    def length2(self, value):
+    def length2(self, value: Length):
         """
         :param Length value:
         """
@@ -173,10 +177,10 @@ class HybridShapeCylinder(HybridShape):
         self.hybrid_shape_cylinder.Length2 = value
 
     @property
-    def orientation(self):
+    def orientation(self) -> False:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation(boolean iOrientation)
                 | 
                 |     Returns or sets the the inversion of extrusion direction.
@@ -189,12 +193,13 @@ class HybridShapeCylinder(HybridShape):
                 |          Set IsInverted = Cylinder.Orientation
 
         :return: False
+        :rtype: False
         """
 
         return None
 
     @orientation.setter
-    def orientation(self, value):
+    def orientation(self, value: False):
         """
         :param False value:
         """
@@ -202,10 +207,10 @@ class HybridShapeCylinder(HybridShape):
         self.hybrid_shape_cylinder.Orientation = value
 
     @property
-    def radius(self):
+    def radius(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Radius() As Length
                 | 
                 |     Returns or sets the radius of the cylinder object.
@@ -218,12 +223,13 @@ class HybridShapeCylinder(HybridShape):
                 |          Set CylinderRadius = Cylinder.Radius
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_cylinder.Radius)
 
     @radius.setter
-    def radius(self, value):
+    def radius(self, value: Length):
         """
         :param Length value:
         """
@@ -231,10 +237,10 @@ class HybridShapeCylinder(HybridShape):
         self.hybrid_shape_cylinder.Radius = value
 
     @property
-    def symmetrical_extension(self):
+    def symmetrical_extension(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SymmetricalExtension() As boolean
                 | 
                 |     Gets or Sets the symmetrical extension of Cylinder (Length 2 = -Length 1).
@@ -242,25 +248,26 @@ class HybridShapeCylinder(HybridShape):
                 |     Parameters:
                 | 
                 |         iSym
-                |             Symmetry flag
+                |             Symetry flag
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_cylinder.SymmetricalExtension
 
     @symmetrical_extension.setter
-    def symmetrical_extension(self, value):
+    def symmetrical_extension(self, value: bool):
         """
         :param bool value:
         """
 
         self.hybrid_shape_cylinder.SymmetricalExtension = value
 
-    def invert_orientation(self):
+    def invert_orientation(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InvertOrientation()
                 | 
                 |     Inverts the Orientation of Cylinder object.
@@ -272,6 +279,7 @@ class HybridShapeCylinder(HybridShape):
                 |          Cylinder.InvertOrientation
 
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_cylinder.InvertOrientation()
 

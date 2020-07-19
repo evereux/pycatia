@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapeSymmetry(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -53,10 +53,10 @@ class HybridShapeSymmetry(HybridShape):
         self.hybrid_shape_symmetry = com_object
 
     @property
-    def creation_mode(self):
+    def creation_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CreationMode() As boolean
                 | 
                 |     Returns or sets the creation mode(creation or
@@ -73,12 +73,13 @@ class HybridShapeSymmetry(HybridShape):
                 |          hybShpSymmetry.CreationMode = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_symmetry.CreationMode
 
     @creation_mode.setter
-    def creation_mode(self, value):
+    def creation_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -86,10 +87,10 @@ class HybridShapeSymmetry(HybridShape):
         self.hybrid_shape_symmetry.CreationMode = value
 
     @property
-    def elem_to_symmetry(self):
+    def elem_to_symmetry(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ElemToSymmetry() As Reference
                 | 
                 |     Returns or sets the element to transform.
@@ -102,12 +103,13 @@ class HybridShapeSymmetry(HybridShape):
                 |          Set Elem = Symmetry.ElemToSymmetry
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_symmetry.ElemToSymmetry)
 
     @elem_to_symmetry.setter
-    def elem_to_symmetry(self, value):
+    def elem_to_symmetry(self, value: Reference):
         """
         :param Reference value:
         """
@@ -115,10 +117,10 @@ class HybridShapeSymmetry(HybridShape):
         self.hybrid_shape_symmetry.ElemToSymmetry = value
 
     @property
-    def reference(self):
+    def reference(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Reference() As Reference
                 | 
                 |     Returns or sets the reference element.This element can be a point, a line
@@ -134,12 +136,13 @@ class HybridShapeSymmetry(HybridShape):
                 |          Set Ref = Symmetry.Reference
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_symmetry.Reference)
 
     @reference.setter
-    def reference(self, value):
+    def reference(self, value: Reference):
         """
         :param Reference value:
         """
@@ -147,10 +150,10 @@ class HybridShapeSymmetry(HybridShape):
         self.hybrid_shape_symmetry.Reference = value
 
     @property
-    def volume_result(self):
+    def volume_result(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property VolumeResult() As boolean
                 | 
                 |     Returns or sets the volume result.
@@ -167,12 +170,13 @@ class HybridShapeSymmetry(HybridShape):
                 |          hybShpSymmetry.VolumeResult = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_symmetry.VolumeResult
 
     @volume_result.setter
-    def volume_result(self, value):
+    def volume_result(self, value: bool):
         """
         :param bool value:
         """

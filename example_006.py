@@ -18,7 +18,7 @@ import os
 from pycatia import catia
 
 # path to file to open.
-file_name = r'cat_files\CF_Part_1.CATPart'
+file_name = r'tests\cat_files\part_measurable.CATPart'
 
 # open document
 documents = catia.documents
@@ -26,7 +26,7 @@ documents.open(file_name)
 
 document = catia.active_document
 
-# Full path of new file. This uses current working directory.
+# _Full_ path of new file. This uses current working directory.
 new_file_name = Path(os.getcwd(), 'new_part.CATPart')
 # save document as new name.
 document.save_as(new_file_name, overwrite=True)

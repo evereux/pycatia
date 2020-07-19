@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -16,7 +16,7 @@ from pycatia.in_interfaces.reference import Reference
 class HybridShapePlane2Lines(Plane):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -38,10 +38,10 @@ class HybridShapePlane2Lines(Plane):
         self.hybrid_shape_plane2_lines = com_object
 
     @property
-    def first(self):
+    def first(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property First() As Reference
                 | 
                 |     Role: Get the first line.
@@ -60,12 +60,13 @@ class HybridShapePlane2Lines(Plane):
                 |         HybridShapeFactory
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_plane2_lines.First)
 
     @first.setter
-    def first(self, value):
+    def first(self, value: Reference):
         """
         :param Reference value:
         """
@@ -73,22 +74,23 @@ class HybridShapePlane2Lines(Plane):
         self.hybrid_shape_plane2_lines.First = value
 
     @property
-    def forbid_non_coplanar_lines(self):
+    def forbid_non_coplanar_lines(self) -> False:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ForbidNonCoplanarLines(boolean iCoplanarLines)
                 | 
                 |     if ForbidNonCoplanarLines = TRUE, both lines have to be on the same plane.
                 |     if ForbidNonCoplanarLines = FALSE, both lines can be non coplanar.
 
         :return: False
+        :rtype: False
         """
 
         return None
 
     @forbid_non_coplanar_lines.setter
-    def forbid_non_coplanar_lines(self, value):
+    def forbid_non_coplanar_lines(self, value: False):
         """
         :param False value:
         """
@@ -96,10 +98,10 @@ class HybridShapePlane2Lines(Plane):
         self.hybrid_shape_plane2_lines.ForbidNonCoplanarLines = value
 
     @property
-    def second(self):
+    def second(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Second() As Reference
                 | 
                 |     Role: Get the second line.
@@ -118,12 +120,13 @@ class HybridShapePlane2Lines(Plane):
                 |         HybridShapeFactory
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_plane2_lines.Second)
 
     @second.setter
-    def second(self, value):
+    def second(self, value: Reference):
         """
         :param Reference value:
         """

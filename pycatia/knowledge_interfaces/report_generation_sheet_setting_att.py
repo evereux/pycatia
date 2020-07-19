@@ -9,19 +9,10 @@
         
 """
 
-from pycatia.knowledge_interfaces.check import Check
-from pycatia.knowledge_interfaces.design_table import DesignTable
-from pycatia.knowledge_interfaces.formula import Formula
-from pycatia.knowledge_interfaces.law import Law
-from pycatia.knowledge_interfaces.optimizations import Optimizations
-from pycatia.knowledge_interfaces.relation import Relation
-from pycatia.knowledge_interfaces.relations import Relations
-from pycatia.knowledge_interfaces.rule import Rule
-from pycatia.knowledge_interfaces.set_of_equation import SetOfEquation
-from pycatia.system_interfaces.collection import Collection
+from pycatia.system_interfaces.setting_controller import SettingController
 
 
-class ReportGenerationSheetSettingAtt(Collection):
+class ReportGenerationSheetSettingAtt(SettingController):
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -30,55 +21,12 @@ class ReportGenerationSheetSettingAtt(Collection):
                 |     System.IDispatch
                 |         System.CATBaseUnknown
                 |             System.CATBaseDispatch
-                |                 System.Collection
-                |                     Relations
+                |                 System.AnyObject
+                |                     System.SettingController
+                |                         ReportGenerationSheetSettingAtt
                 | 
-                | Represents the collection of relations of the part or the
-                | product.
-                | 
-                | A relation computes values. A relation can belong to one of the following
-                | types:
-                | 
-                | Formula
-                |     It combines parameters to compute the value of one output parameter only.
-                |     For example, the mass of a cuboid can be the output parameter of a formula,
-                |     while the value is computed using the following
-                |     parameters:
-                | 
-                |      
-                |      FormulaBody = (height*width*depth)*density
-                |      
-                | 
-                | Program
-                |     It combines conditions and actions on parameters to compute one or several
-                |     output parameter values. For example, the following is a
-                |     program:
-                | 
-                |      ProgramBody = if (mass>2kg) { depth=2mm length=10mm } else { depth=1mm length=5mm }  
-                |      
-                | 
-                | Check
-                |     It only contains conditions on parameter values. For example, the following
-                |     is a check:
-                | 
-                |      CheckBody = mass<10kg
-                |      
-                | 
-                | The parameters should be defined previously.
-                | 
-                | The following example shows how to retrieve the collection of relations from a
-                | newly created part document:
-                | 
-                |  Dim CATDocs As Documents
-                |  Set CATDocs = CATIA.Documents
-                |  Dim part As Document
-                |  Set part  = CATDocs.Add("CATPart")
-                |  Dim relations As Relations
-                |  Set relations = part.Relations
-                |  
-                | 
-                | See also:
-                |     Formula, Rule, Check, DesignTable
+                | The interface to access a
+                | CATIAReportGenerationSheetSettingAtt.
     
     """
 
@@ -87,513 +35,1083 @@ class ReportGenerationSheetSettingAtt(Collection):
         self.report_generation_sheet_setting_att = com_object
 
     @property
-    def optimizations(self):
+    def all_checks_report(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
-                | o Property Optimizations() As Optimizations (Read Only)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+                | o Property AllChecksReport() As short
                 | 
-                |     Returns the optimization collection.
-                |     It can be empty if no optimization is defined in the
-                |     document.
-                |     This property is available only when the Product Engineering Optimizer
-                |     license is available.
-
-        :return: Optimizations
-        """
-
-        return Optimizations(self.report_generation_sheet_setting_att.Optimizations)
-
-    def create_check(self, i_name, i_comment, i_check_body):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func CreateCheck(CATBSTR iName,
-                | CATBSTR iComment,
-                | CATBSTR iCheckBody) As Check
-                | 
-                |     Creates a check relation and adds it to the part's collection of
-                |     relations.
+                |     Returns or sets the AllChecksReport parameter.
+                |     Role:Return or Set the AllChecksReport parameter if it is possible in the
+                |     current administrative context. In user mode this method will always return
+                |     E_FAIL.
                 | 
                 |     Parameters:
                 | 
-                |         iName
-                |             The check name 
-                |         iComment
-                |             A description of the check 
-                |         iCheckBody
-                |             The check definition 
-                | 
-                |     Returns:
-                |         The created check 
-                |     Example:
-                |         This example creates the maximummass check relation and adds it to the
-                |         newly created part:
-                | 
-                |          Dim CATDocs As Documents
-                |          Set CATDocs = CATIA.Documents
-                |          Dim partdoc As Document
-                |          Set partdoc  = CATDocs.Add("CATPart")
-                |          Dim part As Part
-                |          Set part    = partdoc.Part 
-                |          Dim massCheck As Check 
-                |          Set massCheck    = part.Relations.CreateCheck
-                |                             ("maximummass",
-                |                              "Ensures that the mass is less than 10
-                |                              kg",
-                |                              "mass<10kg")
+                |         oAllChecksReport
+                |             Legal values:
+                |             0 : report of only failed checks
+                |             1 : report of all checks.
 
-        :param str i_name:
-        :param str i_comment:
-        :param str i_check_body:
-        :return: Check
+        :return: int
+        :rtype: int
         """
-        return Check(self.report_generation_sheet_setting_att.CreateCheck(i_name, i_comment, i_check_body))
 
-    def create_design_table(self, i_name, i_comment, i_copy_mode, i_sheet_path):
+        return self.report_generation_sheet_setting_att.AllChecksReport
+
+    @all_checks_report.setter
+    def all_checks_report(self, value: int):
+        """
+        :param int value:
+        """
+
+        self.report_generation_sheet_setting_att.AllChecksReport = value
+
+    @property
+    def check_report_html(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func CreateDesignTable(CATBSTR iName,
-                | CATBSTR iComment,
-                | boolean iCopyMode,
-                | CATBSTR iSheetPath) As DesignTable
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+                | o Property CheckReportHtml() As short
                 | 
-                |     Creates a design table based on a file organized in an vertical way and
-                |     adds it to the part's collection of relations.
+                |     Returns or sets the CheckReportHtml parameter.
+                |     Role:Return or Set the CheckReportHtml parameter if it is possible in the
+                |     current administrative context. In user mode this method will always return
+                |     E_FAIL.
                 | 
                 |     Parameters:
                 | 
-                |         iName
-                |             The design table name 
-                |         iComment
-                |             A description of the design table 
-                |         iCopyMode
-                | 
-                |     Returns:
-                |         The created design table 
-                |     Example:
-                |         This example creates the dt design table and adds it to the newly
-                |         created part:
-                | 
-                |          Dim CATDocs As Documents
-                |          Set CATDocs = CATIA.Documents
-                |          Dim partdoc As Document
-                |          Set partdoc  = CATDocs.Add("CATPart")
-                |          Dim part As Part
-                |          Set part    = partdoc.Part 
-                |          Dim designtable As DesignTable
-                |          Set designtable    = part.Relations.CreateDesignTable
-                |                              ("dt",
-                |                               "Ensures that the mass is less than 10
-                |                               kg",
-                |                               TRUE,
-                |                              
-                |                              "/u/users/client/data/sheet.txt")
+                |         oCheckReportHtml
+                |             Legal values:
+                |             0 : to have check report in Xml
+                |             1 : to have check report in Html.
 
-        :param str i_name:
-        :param str i_comment:
-        :param bool i_copy_mode:
-        :param str i_sheet_path:
-        :return: DesignTable
+        :return: int
+        :rtype: int
         """
-        return DesignTable(self.report_generation_sheet_setting_att.CreateDesignTable(i_name,
-                                                                                      i_comment, i_copy_mode,
-                                                                                      i_sheet_path))
 
-    def create_formula(self, i_name, i_comment, i_output_parameter, i_formula_body):
+        return self.report_generation_sheet_setting_att.CheckReportHtml
+
+    @check_report_html.setter
+    def check_report_html(self, value: int):
+        """
+        :param int value:
+        """
+
+        self.report_generation_sheet_setting_att.CheckReportHtml = value
+
+    @property
+    def directory_for_input_xsl(self) -> str:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func CreateFormula(CATBSTR iName,
-                | CATBSTR iComment,
-                | Parameter iOutputParameter,
-                | CATBSTR iFormulaBody) As Formula
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+                | o Property DirectoryForInputXsl() As CATBSTR
                 | 
-                |     Creates a formula relation and adds it to the part's collection of
-                |     relations.
+                |     Returns or sets the DirectoryForInputXsl parameter.
+                |     Role:Return or Set the DirectoryForInputXsl parameter if it is possible in
+                |     the current administrative context. In user mode this method will always return
+                |     E_FAIL.
                 | 
                 |     Parameters:
                 | 
-                |         iName
-                |             The formula name 
-                |         iComment
-                |             A description of the formula 
-                |         iOutputParameter
-                |             The parameter which stores the result of the formula
+                |         oDirectoryForInputXsl
+                |             Directory for the report file with Xml extension.
+
+        :return: str
+        :rtype: str
+        """
+
+        return self.report_generation_sheet_setting_att.DirectoryForInputXsl
+
+    @directory_for_input_xsl.setter
+    def directory_for_input_xsl(self, value: str):
+        """
+        :param str value:
+        """
+
+        self.report_generation_sheet_setting_att.DirectoryForInputXsl = value
+
+    @property
+    def report_check_advisor(self) -> int:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+                | o Property ReportCheckAdvisor() As short
+                | 
+                |     Returns or sets the ReportCheckAdvisor parameter.
+                |     Role:Return or Set the ReportCheckAdvisor parameter if it is possible in
+                |     the current administrative context. In user mode this method will always return
+                |     E_FAIL.
+                | 
+                |     Parameters:
+                | 
+                |         oReportCheckAdvisor
+                |             Legal values:
+                |             0 : not report of check Advisor
+                |             1 : report of check Advisor.
+
+        :return: int
+        :rtype: int
+        """
+
+        return self.report_generation_sheet_setting_att.ReportCheckAdvisor
+
+    @report_check_advisor.setter
+    def report_check_advisor(self, value: int):
+        """
+        :param int value:
+        """
+
+        self.report_generation_sheet_setting_att.ReportCheckAdvisor = value
+
+    @property
+    def report_check_expert(self) -> int:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+                | o Property ReportCheckExpert() As short
+                | 
+                |     Returns or sets the ReportCheckExpert parameter.
+                |     Role:Return or Set the ReportCheckExpert parameter if it is possible in the
+                |     current administrative context. In user mode this method will always return
+                |     E_FAIL.
+                | 
+                |     Parameters:
+                | 
+                |         oReportCheckExpert
+                |             Legal values:
+                |             0 : not report of check Advisor
+                |             1 : report of check Advisor.
+
+        :return: int
+        :rtype: int
+        """
+
+        return self.report_generation_sheet_setting_att.ReportCheckExpert
+
+    @report_check_expert.setter
+    def report_check_expert(self, value: int):
+        """
+        :param int value:
+        """
+
+        self.report_generation_sheet_setting_att.ReportCheckExpert = value
+
+    @property
+    def report_html_in_catia_session(self) -> int:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+                | o Property ReportHtmlInCatiaSession() As short
+                | 
+                |     Returns or sets the ReportHtmlInCatiaSession parameter.
+                |     Role:Return or Set the ReportHtmlInCatiaSession parameter if it is possible
+                |     in the current administrative context. In user mode this method will always
+                |     return E_FAIL.
+                | 
+                |     Parameters:
+                | 
+                |         oReportHtmlInCatiaSession
+                |             Legal values:
+                |             0 : report Html outside CATIA session
+                |             1 : report Html in CATIA session.
+
+        :return: int
+        :rtype: int
+        """
+
+        return self.report_generation_sheet_setting_att.ReportHtmlInCatiaSession
+
+    @report_html_in_catia_session.setter
+    def report_html_in_catia_session(self, value: int):
+        """
+        :param int value:
+        """
+
+        self.report_generation_sheet_setting_att.ReportHtmlInCatiaSession = value
+
+    @property
+    def report_objects_information(self) -> int:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+                | o Property ReportObjectsInformation() As short
+                | 
+                |     Returns or sets the ReportObjectsInformation parameter.
+                |     Role:Return or Set the ReportObjectsInformation parameter if it is possible
+                |     in the current administrative context. In user mode this method will always
+                |     return E_FAIL.
+                | 
+                |     Parameters:
+                | 
+                |         oReportObjectsInformation
+                |             Legal values:
+                |             0 : not report objects information
+                |             1 : report objects information.
+
+        :return: int
+        :rtype: int
+        """
+
+        return self.report_generation_sheet_setting_att.ReportObjectsInformation
+
+    @report_objects_information.setter
+    def report_objects_information(self, value: int):
+        """
+        :param int value:
+        """
+
+        self.report_generation_sheet_setting_att.ReportObjectsInformation = value
+
+    @property
+    def report_output_directory(self) -> str:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+                | o Property ReportOutputDirectory() As CATBSTR
+                | 
+                |     Returns or sets the ReportOutputDirectory parameter.
+                |     Role:Return or Set the ReportOutputDirectory parameter if it is possible in
+                |     the current administrative context. In user mode this method will always return
+                |     E_FAIL.
+                | 
+                |     Parameters:
+                | 
+                |         oReportOutputDirectory
+                |             The output directory for report of checks expert and checks
+                |             advisor.
+
+        :return: str
+        :rtype: str
+        """
+
+        return self.report_generation_sheet_setting_att.ReportOutputDirectory
+
+    @report_output_directory.setter
+    def report_output_directory(self, value: str):
+        """
+        :param str value:
+        """
+
+        self.report_generation_sheet_setting_att.ReportOutputDirectory = value
+
+    @property
+    def report_parameters_information(self) -> int:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+                | o Property ReportParametersInformation() As short
+                | 
+                |     Returns or sets the ReportParametersInformation parameter.
+                |     Role:Return or Set the ReportParametersInformation parameter if it is
+                |     possible in the current administrative context. In user mode this method will
+                |     always return E_FAIL.
+                | 
+                |     Parameters:
+                | 
+                |         oReportParametersInformation
+                |             Legal values:
+                |             0 : not check Advisor parameter information
+                |             1 : check Advisor parameter information.
+
+        :return: int
+        :rtype: int
+        """
+
+        return self.report_generation_sheet_setting_att.ReportParametersInformation
+
+    @report_parameters_information.setter
+    def report_parameters_information(self, value: int):
+        """
+        :param int value:
+        """
+
+        self.report_generation_sheet_setting_att.ReportParametersInformation = value
+
+    @property
+    def report_passed_objects(self) -> int:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
+                | o Property ReportPassedObjects() As short
+                | 
+                |     Returns or sets the ReportPassedObjects parameter.
+                |     Role:Return or Set the ReportPassedObjects parameter if it is possible in
+                |     the current administrative context. In user mode this method will always return
+                |     E_FAIL.
+                | 
+                |     Parameters:
+                | 
+                |         oReportPassedObjects
+                |             Legal values:
+                |             0 : not report passed objects
+                |             1 : report passed objects.
+
+        :return: int
+        :rtype: int
+        """
+
+        return self.report_generation_sheet_setting_att.ReportPassedObjects
+
+    @report_passed_objects.setter
+    def report_passed_objects(self, value: int):
+        """
+        :param int value:
+        """
+
+        self.report_generation_sheet_setting_att.ReportPassedObjects = value
+
+    def get_all_checks_report_info(self, io_admin_level: str, io_locked: str) -> bool:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Func GetAllChecksReportInfo(CATBSTR ioAdminLevel,
+                | CATBSTR ioLocked) As boolean
+                | 
+                |     Retrieves environment informations for the AllChecksReport
+                |     parameter.
+                |     Role:Retrieves the state of the AllChecksReport parameter in the current
+                |     environment.
+                | 
+                |     Parameters:
+                | 
+                |         ioAdminLevel
+                | 
+                |             If the parameter is locked, AdminLevel gives the administration
+                |             level that imposes the value of the parameter.
+                |             If the parameter is not locked, AdminLevel gives the administration
+                |             level that will give the value of the parameter after a reset.
                 |             
-                |         iFormulaBody
-                |             The formula definition 
+                |         ioLocked
+                |             Indicates if the parameter has been locked. 
                 | 
                 |     Returns:
-                |         The created formula 
-                |     Example:
-                |         This example creates the computemass formula relation and adds it to
-                |         the newly created part:
-                | 
-                |          Dim CATDocs As Documents
-                |          Set CATDocs = CATIA.Documents
-                |          Dim partdoc As Document
-                |          Set partdoc  = CATDocs.Add("CATPart")
-                |          Dim part As Part
-                |          Set part    = partdoc.Part 
-                |          Dim massFormula As Formula
-                |          Set massFormula = part.Relations.CreateFormula
-                |                            ("computemass",
-                |                            "Computes the cuboid mass",
-                |                             mass,
-                |                            "(height*width*depth)*density")
+                |         Indicates if the parameter has been explicitly modified or remain to
+                |         the administrated value.
 
-        :param str i_name:
-        :param str i_comment:
-        :param Parameter i_output_parameter:
-        :param str i_formula_body:
-        :return: Formula
+        :param str io_admin_level:
+        :param str io_locked:
+        :return: bool
+        :rtype: bool
         """
-        return Formula(
-            self.report_generation_sheet_setting_att.CreateFormula(i_name, i_comment, i_output_parameter.com_object,
-                                                                   i_formula_body))
+        return self.report_generation_sheet_setting_att.GetAllChecksReportInfo(io_admin_level, io_locked)
 
-    def create_horizontal_design_table(self, i_name, i_comment, i_copy_mode, i_sheet_path):
+    def get_check_report_html_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func CreateHorizontalDesignTable(CATBSTR iName,
-                | CATBSTR iComment,
-                | boolean iCopyMode,
-                | CATBSTR iSheetPath) As DesignTable
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Func GetCheckReportHtmlInfo(CATBSTR ioAdminLevel,
+                | CATBSTR ioLocked) As boolean
                 | 
-                |     Creates a design table based on a file organized in an horizontal way and
-                |     adds it to the part's collection of relations.
+                |     Retrieves environment informations for the CheckReportHtml
+                |     parameter.
+                |     Role:Retrieves the state of the CheckReportHtml parameter in the current
+                |     environment.
                 | 
                 |     Parameters:
                 | 
-                |         iName
-                |             The design table name 
-                |         iComment
-                |             A description of the design table 
-                |         iCopyMode
+                |         ioAdminLevel
                 | 
-                |     Returns:
-                |         The created design table 
-                |     Example:
-                |         This example creates the dt design table and adds it to the newly
-                |         created part:
-                | 
-                |          Dim CATDocs As Documents
-                |          Set CATDocs = CATIA.Documents
-                |          Dim partdoc As Document
-                |          Set partdoc  = CATDocs.Add("CATPart")
-                |          Dim part As Part
-                |          Set part    = partdoc.Part 
-                |          Dim designtable As DesignTable
-                |          Set designtable    = part.Relations.CreateHorizontalDesignTable
-                |                             ("dt",
-                |                              "Ensures that the mass is less than 10
-                |                              kg",
-                |                              TRUE,
-                |                             "/u/users/client/data/horizontalsheet.txt")
-
-        :param str i_name:
-        :param str i_comment:
-        :param bool i_copy_mode:
-        :param str i_sheet_path:
-        :return: DesignTable
-        """
-        return DesignTable(
-            self.report_generation_sheet_setting_att.CreateHorizontalDesignTable(i_name, i_comment, i_copy_mode,
-                                                                                 i_sheet_path))
-
-    def create_law(self, i_name, i_comment, i_law_body):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func CreateLaw(CATBSTR iName,
-                | CATBSTR iComment,
-                | CATBSTR iLawBody) As Law
-                | 
-                |     Creates a law relation and adds it to the part's collection of
-                |     relations.
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The law name 
-                |         iComment
-                |             A description of the law 
-                |         iLawBody
-                |             The law definition 
-                | 
-                |     Returns:
-                |         The created law
-
-        :param str i_name:
-        :param str i_comment:
-        :param str i_law_body:
-        :return: Law
-        """
-        return Law(self.report_generation_sheet_setting_att.CreateLaw(i_name, i_comment, i_law_body))
-
-    def create_program(self, i_name, i_comment, i_program_body):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func CreateProgram(CATBSTR iName,
-                | CATBSTR iComment,
-                | CATBSTR iProgramBody) As Rule
-                | 
-                |     Creates a program relation and adds it to the part's collection of
-                |     relations.
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The program name 
-                |         iComment
-                |             A description of the program 
-                |         iProgramBody
-                |             The program definition 
-                | 
-                |     Returns:
-                |         The created program 
-                |     Example:
-                |         This example creates the selectdepth program relation and adds it to
-                |         the newly created part:
-                | 
-                |          Dim CATDocs As Documents
-                |          Set CATDocs = CATIA.Documents
-                |          Dim partdoc As Document
-                |          Set partdoc  = CATDocs.Add("CATPart")
-                |          Dim part As Part
-                |          Set part    = partdoc.Part 
-                |          Dim depthProgram As Program
-                |          Set depthProgram = part.Relations.CreateProgram
-                |                             ("selectdepth",
-                |                             "Select depth with respect to
-                |                             mass",
-                |                             "if (mass>2kg) { depth=2mm } else { depth=1 mm
-                |                             }")
-
-        :param str i_name:
-        :param str i_comment:
-        :param str i_program_body:
-        :return: Rule
-        """
-        return Rule(self.report_generation_sheet_setting_att.CreateProgram(i_name, i_comment, i_program_body))
-
-    def create_rule_base(self, i_name):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func CreateRuleBase(CATBSTR iName) As Relation
-                | 
-                |     Creates a rulebase.
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The name of the rulebase. 
-                | 
-                |     Returns:
-                |         The created rulebase. 
-                |     See also:
-                |         ExpertRuleBase
-
-        :param str i_name:
-        :return: Relation
-        """
-        return Relation(self.report_generation_sheet_setting_att.CreateRuleBase(i_name))
-
-    def create_set_of_equations(self, i_name, i_comment, i_formula_body):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func CreateSetOfEquations(CATBSTR iName,
-                | CATBSTR iComment,
-                | CATBSTR iFormulaBody) As SetOfEquation
-                | 
-                |     Creates a set of equations.
-                | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The name of the set of equation. 
-                |         iComment
-                |             The comment of the set of equation. 
-                |         iFormulaBody
-                |             The body of the set of equation " a==b+4; c ≤ 90".
+                |             If the parameter is locked, AdminLevel gives the administration
+                |             level that imposes the value of the parameter.
+                |             If the parameter is not locked, AdminLevel gives the administration
+                |             level that will give the value of the parameter after a reset.
                 |             
+                |         ioLocked
+                |             Indicates if the parameter has been locked. 
                 | 
                 |     Returns:
-                |         The created set of equations
+                |         Indicates if the parameter has been explicitly modified or remain to
+                |         the administrated value.
 
-        :param str i_name:
-        :param str i_comment:
-        :param str i_formula_body:
-        :return: SetOfEquation
+        :param str io_admin_level:
+        :param str io_locked:
+        :return: bool
+        :rtype: bool
         """
-        return SetOfEquation(
-            self.report_generation_sheet_setting_att.CreateSetOfEquations(i_name, i_comment, i_formula_body))
+        return self.report_generation_sheet_setting_att.GetCheckReportHtmlInfo(io_admin_level, io_locked)
 
-    def create_set_of_relations(self, i_parent):
+    def get_directory_for_input_xsl_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub CreateSetOfRelations(AnyObject iParent)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Func GetDirectoryForInputXslInfo(CATBSTR ioAdminLevel,
+                | CATBSTR ioLocked) As boolean
                 | 
-                |     Creates a set of relations and appends it to a parent
-                |     object.
+                |     Retrieves environment informations for the DirectoryForInputXsl
+                |     parameter.
+                |     Role:Retrieves the state of the DirectoryForInputXsl parameter in the
+                |     current environment.
                 | 
                 |     Parameters:
                 | 
-                |         iParent
-                |             The object to which the set is appended
-
-        :param AnyObject i_parent:
-        :return: None
-        """
-        return self.report_generation_sheet_setting_att.CreateSetOfRelations(i_parent.com_object)
-
-    def generate_xml_report_for_checks(self, i_name):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub GenerateXMLReportForChecks(CATBSTR iName)
+                |         ioAdminLevel
                 | 
-                |     Generates an XML Report on all checks in the current
-                |     document.
+                |             If the parameter is locked, AdminLevel gives the administration
+                |             level that imposes the value of the parameter.
+                |             If the parameter is not locked, AdminLevel gives the administration
+                |             level that will give the value of the parameter after a reset.
+                |             
+                |         ioLocked
+                |             Indicates if the parameter has been locked. 
                 | 
-                |     Parameters:
-                | 
-                |         iName
-                |             The name of the XML file
-
-        :param str i_name:
-        :return: None
-        """
-        return self.report_generation_sheet_setting_att.GenerateXMLReportForChecks(i_name)
-
-    def item(self, i_index):
-        """
-        .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func Item(CATVariant iIndex) As Relation
-                | 
-                |     Retrieves a relation using its index or its name from the Relations
-                |     collection.
-                | 
-                |     Parameters:
-                | 
-                |         iIndex
-                |             The index or the name of the relation to retrieve from the
-                |             collection of relations. As a numerics, this index is the rank of the relation
-                |             in the collection. The index of the first relation in the collection is 1, and
-                |             the index of the last relation is Count. As a string, it is the name you
-                |             assigned to the relation using the 
-                | 
-                |         AnyObject.Name property or when creating the relation.
-                |         
                 |     Returns:
-                |         The retrieved relation 
-                |     Example:
-                |         This example retrieves the last relation in the relations
-                |         collection.
-                | 
-                |          Dim lastRelation As Relation
-                |          Set lastRelation = relations.Item(relations.Count)
+                |         Indicates if the parameter has been explicitly modified or remain to
+                |         the administrated value.
 
-        :param CATVariant i_index:
-        :return: Relation
+        :param str io_admin_level:
+        :param str io_locked:
+        :return: bool
+        :rtype: bool
         """
-        return Relation(self.report_generation_sheet_setting_att.Item(i_index))
+        return self.report_generation_sheet_setting_att.GetDirectoryForInputXslInfo(io_admin_level, io_locked)
 
-    def remove(self, i_index):
+    def get_report_check_advisor_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Sub Remove(CATVariant iIndex)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Func GetReportCheckAdvisorInfo(CATBSTR ioAdminLevel,
+                | CATBSTR ioLocked) As boolean
                 | 
-                |     Removes a relation from the Relations collection.
+                |     Retrieves environment informations for the ReportCheckAdvisor
+                |     parameter.
+                |     Role:Retrieves the state of the ReportCheckAdvisor parameter in the current
+                |     environment.
                 | 
                 |     Parameters:
                 | 
-                |         iIndex
-                |             The index or the name of the relation to remove from the collection
-                |             of relations. As a numerics, this index is the rank of the relation in the
-                |             collection. The index of the first relation in the collection is 1, and the
-                |             index of the last relation is Count. As a string, it is the name you assigned
-                |             to the relation using the 
+                |         ioAdminLevel
                 | 
-                |         AnyObject.Name property or when creating the relation.
-                |         
+                |             If the parameter is locked, AdminLevel gives the administration
+                |             level that imposes the value of the parameter.
+                |             If the parameter is not locked, AdminLevel gives the administration
+                |             level that will give the value of the parameter after a reset.
+                |             
+                |         ioLocked
+                |             Indicates if the parameter has been locked. 
                 | 
-                | Example:
-                |     This example removes the relation named density from the relations
-                |     collection.
-                | 
-                |      relations.Remove("density")
+                |     Returns:
+                |         Indicates if the parameter has been explicitly modified or remain to
+                |         the administrated value.
 
-        :param CATVariant i_index:
-        :return: None
+        :param str io_admin_level:
+        :param str io_locked:
+        :return: bool
+        :rtype: bool
         """
-        return self.report_generation_sheet_setting_att.Remove(i_index)
+        return self.report_generation_sheet_setting_att.GetReportCheckAdvisorInfo(io_admin_level, io_locked)
+
+    def get_report_check_expert_info(self, io_admin_level: str, io_locked: str) -> bool:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Func GetReportCheckExpertInfo(CATBSTR ioAdminLevel,
+                | CATBSTR ioLocked) As boolean
+                | 
+                |     Retrieves environment informations for the ReportCheckExpert
+                |     parameter.
+                |     Role:Retrieves the state of the ReportCheckExpert parameter in the current
+                |     environment.
+                | 
+                |     Parameters:
+                | 
+                |         ioAdminLevel
+                | 
+                |             If the parameter is locked, AdminLevel gives the administration
+                |             level that imposes the value of the parameter.
+                |             If the parameter is not locked, AdminLevel gives the administration
+                |             level that will give the value of the parameter after a reset.
+                |             
+                |         ioLocked
+                |             Indicates if the parameter has been locked. 
+                | 
+                |     Returns:
+                |         Indicates if the parameter has been explicitly modified or remain to
+                |         the administrated value.
+
+        :param str io_admin_level:
+        :param str io_locked:
+        :return: bool
+        :rtype: bool
+        """
+        return self.report_generation_sheet_setting_att.GetReportCheckExpertInfo(io_admin_level, io_locked)
+
+    def get_report_html_in_catia_session_info(self, io_admin_level: str, io_locked: str) -> bool:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Func GetReportHtmlInCatiaSessionInfo(CATBSTR ioAdminLevel,
+                | CATBSTR ioLocked) As boolean
+                | 
+                |     Retrieves environment informations for the ReportHtmlInCatiaSession
+                |     parameter.
+                |     Role:Retrieves the state of the ReportHtmlInCatiaSession parameter in the
+                |     current environment.
+                | 
+                |     Parameters:
+                | 
+                |         ioAdminLevel
+                | 
+                |             If the parameter is locked, AdminLevel gives the administration
+                |             level that imposes the value of the parameter.
+                |             If the parameter is not locked, AdminLevel gives the administration
+                |             level that will give the value of the parameter after a reset.
+                |             
+                |         ioLocked
+                |             Indicates if the parameter has been locked. 
+                | 
+                |     Returns:
+                |         Indicates if the parameter has been explicitly modified or remain to
+                |         the administrated value.
+
+        :param str io_admin_level:
+        :param str io_locked:
+        :return: bool
+        :rtype: bool
+        """
+        return self.report_generation_sheet_setting_att.GetReportHtmlInCatiaSessionInfo(io_admin_level, io_locked)
+
+    def get_report_objects_information_info(self, io_admin_level: str, io_locked: str) -> bool:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Func GetReportObjectsInformationInfo(CATBSTR ioAdminLevel,
+                | CATBSTR ioLocked) As boolean
+                | 
+                |     Retrieves environment informations for the ReportObjectsInformation
+                |     parameter.
+                |     Role:Retrieves the state of the ReportObjectsInformation parameter in the
+                |     current environment.
+                | 
+                |     Parameters:
+                | 
+                |         ioAdminLevel
+                | 
+                |             If the parameter is locked, AdminLevel gives the administration
+                |             level that imposes the value of the parameter.
+                |             If the parameter is not locked, AdminLevel gives the administration
+                |             level that will give the value of the parameter after a reset.
+                |             
+                |         ioLocked
+                |             Indicates if the parameter has been locked. 
+                | 
+                |     Returns:
+                |         Indicates if the parameter has been explicitly modified or remain to
+                |         the administrated value.
+
+        :param str io_admin_level:
+        :param str io_locked:
+        :return: bool
+        :rtype: bool
+        """
+        return self.report_generation_sheet_setting_att.GetReportObjectsInformationInfo(io_admin_level, io_locked)
+
+    def get_report_output_directory_info(self, io_admin_level: str, io_locked: str) -> bool:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Func GetReportOutputDirectoryInfo(CATBSTR ioAdminLevel,
+                | CATBSTR ioLocked) As boolean
+                | 
+                |     Retrieves environment informations for the ReportOutputDirectory
+                |     parameter.
+                |     Role:Retrieves the state of the ReportOutputDirectory parameter in the
+                |     current environment.
+                | 
+                |     Parameters:
+                | 
+                |         ioAdminLevel
+                | 
+                |             If the parameter is locked, AdminLevel gives the administration
+                |             level that imposes the value of the parameter.
+                |             If the parameter is not locked, AdminLevel gives the administration
+                |             level that will give the value of the parameter after a reset.
+                |             
+                |         ioLocked
+                |             Indicates if the parameter has been locked. 
+                | 
+                |     Returns:
+                |         Indicates if the parameter has been explicitly modified or remain to
+                |         the administrated value.
+
+        :param str io_admin_level:
+        :param str io_locked:
+        :return: bool
+        :rtype: bool
+        """
+        return self.report_generation_sheet_setting_att.GetReportOutputDirectoryInfo(io_admin_level, io_locked)
+
+    def get_report_parameters_information_info(self, io_admin_level: str, io_locked: str) -> bool:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Func GetReportParametersInformationInfo(CATBSTR
+                | ioAdminLevel,
+                | CATBSTR ioLocked) As boolean
+                | 
+                |     Retrieves environment informations for the ReportParametersInformation
+                |     parameter.
+                |     Role:Retrieves the state of the ReportParametersInformation parameter in
+                |     the current environment.
+                | 
+                |     Parameters:
+                | 
+                |         ioAdminLevel
+                | 
+                |             If the parameter is locked, AdminLevel gives the administration
+                |             level that imposes the value of the parameter.
+                |             If the parameter is not locked, AdminLevel gives the administration
+                |             level that will give the value of the parameter after a reset.
+                |             
+                |         ioLocked
+                |             Indicates if the parameter has been locked. 
+                | 
+                |     Returns:
+                |         Indicates if the parameter has been explicitly modified or remain to
+                |         the administrated value.
+
+        :param str io_admin_level:
+        :param str io_locked:
+        :return: bool
+        :rtype: bool
+        """
+        return self.report_generation_sheet_setting_att.GetReportParametersInformationInfo(io_admin_level, io_locked)
+
+    def get_report_passed_objects_info(self, io_admin_level: str, io_locked: str) -> bool:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Func GetReportPassedObjectsInfo(CATBSTR ioAdminLevel,
+                | CATBSTR ioLocked) As boolean
+                | 
+                |     Retrieves environment informations for the ReportPassedObjects
+                |     parameter.
+                |     Role:Retrieves the state of the ReportPassedObjects parameter in the
+                |     current environment.
+                | 
+                |     Parameters:
+                | 
+                |         ioAdminLevel
+                | 
+                |             If the parameter is locked, AdminLevel gives the administration
+                |             level that imposes the value of the parameter.
+                |             If the parameter is not locked, AdminLevel gives the administration
+                |             level that will give the value of the parameter after a reset.
+                |             
+                |         ioLocked
+                |             Indicates if the parameter has been locked. 
+                | 
+                |     Returns:
+                |         Indicates if the parameter has been explicitly modified or remain to
+                |         the administrated value.
+
+        :param str io_admin_level:
+        :param str io_locked:
+        :return: bool
+        :rtype: bool
+        """
+        return self.report_generation_sheet_setting_att.GetReportPassedObjectsInfo(io_admin_level, io_locked)
+
+    def set_all_checks_report_lock(self, i_locked: bool) -> None:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub SetAllChecksReportLock(boolean iLocked)
+                | 
+                |     Locks or unlocks the AllChecksReport parameter.
+                |     Role:Locks or unlocks the AllChecksReport parameter if it is possible in
+                |     the current administrative context. In user mode this method will always return
+                |     E_FAIL.
+                | 
+                |     Parameters:
+                | 
+                |         iLocked
+                |             the locking operation to be performed Legal
+                |             values:
+                |             TRUE : to lock the parameter.
+                |             FALSE: to unlock the parameter.
+
+        :param bool i_locked:
+        :return: None
+        :rtype: None
+        """
+        return self.report_generation_sheet_setting_att.SetAllChecksReportLock(i_locked)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'remove'
+        # # vba_function_name = 'set_all_checks_report_lock'
         # # vba_code = """
-        # # Public Function remove(report_generation_sheet_setting_att)
-        # #     Dim iIndex (2)
-        # #     report_generation_sheet_setting_att.Remove iIndex
-        # #     remove = iIndex
+        # # Public Function set_all_checks_report_lock(report_generation_sheet_setting_att)
+        # #     Dim iLocked (2)
+        # #     report_generation_sheet_setting_att.SetAllChecksReportLock iLocked
+        # #     set_all_checks_report_lock = iLocked
         # # End Function
         # # """
 
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def sub_list(self, i_feature, i_recursively):
+    def set_check_report_html_lock(self, i_locked: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
-                | o Func SubList(AnyObject iFeature,
-                | boolean iRecursively) As Relations
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub SetCheckReportHtmlLock(boolean iLocked)
                 | 
-                |     Returns a sub-collection of relations aggregated to an
-                |     object.
+                |     Locks or unlocks the CheckReportHtml parameter.
+                |     Role:Locks or unlocks the CheckReportHtml parameter if it is possible in
+                |     the current administrative context. In user mode this method will always return
+                |     E_FAIL.
                 | 
                 |     Parameters:
                 | 
-                |         iFeature
-                |             The object used to filter the the whole relation collection to get
-                |             the resulting sub-collection. 
-                |         iRecursively
-                |             A flag to specify if children parameters are to be searched for in
-                |             the returned collection 
-                | 
-                |     Returns:
-                |         The resulting sub-collection 
-                |     Example:
-                |         This example shows how to get a collection of relations that are under
-                |         a Pad
-                | 
-                |          Dim Relations1 As Relations
-                |          Set Relations1 = CATIA.ActiveDocument.Part.Relations' gets the collection of relations in
-                |              the part
-                |          Dim Body0 As AnyObject
-                |          Set Body0 = CATIA.ActiveDocument.Part.Bodies.Item  ( "MechanicalTool.1" ) 
-                |          Dim Pad1 As AnyObject
-                |          Set Pad1 = Body0.Shapes.Item  ( "Pad.1" ) ' gets the pad Pad.1
-                |          Dim Relations2 As Relations
-                |          Set Relations2 = Relations1.SubList(Pad1, TRUE) ' gets the collection of relations that are
-                |              under the pad Pad.1
+                |         iLocked
+                |             the locking operation to be performed Legal
+                |             values:
+                |             TRUE : to lock the parameter.
+                |             FALSE: to unlock the parameter.
 
-        :param AnyObject i_feature:
-        :param bool i_recursively:
-        :return: Relations
+        :param bool i_locked:
+        :return: None
+        :rtype: None
         """
-        return Relations(self.report_generation_sheet_setting_att.SubList(i_feature.com_object, i_recursively))
+        return self.report_generation_sheet_setting_att.SetCheckReportHtmlLock(i_locked)
+        # # # # Autogenerated comment: 
+        # # some methods require a system service call as the methods expects a vb array object
+        # # passed to it and there is no way to do this directly with python. In those cases the following code
+        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
+        # # vba_function_name = 'set_check_report_html_lock'
+        # # vba_code = """
+        # # Public Function set_check_report_html_lock(report_generation_sheet_setting_att)
+        # #     Dim iLocked (2)
+        # #     report_generation_sheet_setting_att.SetCheckReportHtmlLock iLocked
+        # #     set_check_report_html_lock = iLocked
+        # # End Function
+        # # """
+
+        # # system_service = SystemService(self.application.SystemService)
+        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+
+    def set_directory_for_input_xsl_lock(self, i_locked: bool) -> None:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub SetDirectoryForInputXslLock(boolean iLocked)
+                | 
+                |     Locks or unlocks the DirectoryForInputXsl parameter.
+                |     Role:Locks or unlocks the DirectoryForInputXsl parameter if it is possible
+                |     in the current administrative context. In user mode this method will always
+                |     return E_FAIL.
+                | 
+                |     Parameters:
+                | 
+                |         iLocked
+                |             the locking operation to be performed Legal
+                |             values:
+                |             TRUE : to lock the parameter.
+                |             FALSE: to unlock the parameter.
+
+        :param bool i_locked:
+        :return: None
+        :rtype: None
+        """
+        return self.report_generation_sheet_setting_att.SetDirectoryForInputXslLock(i_locked)
+        # # # # Autogenerated comment: 
+        # # some methods require a system service call as the methods expects a vb array object
+        # # passed to it and there is no way to do this directly with python. In those cases the following code
+        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
+        # # vba_function_name = 'set_directory_for_input_xsl_lock'
+        # # vba_code = """
+        # # Public Function set_directory_for_input_xsl_lock(report_generation_sheet_setting_att)
+        # #     Dim iLocked (2)
+        # #     report_generation_sheet_setting_att.SetDirectoryForInputXslLock iLocked
+        # #     set_directory_for_input_xsl_lock = iLocked
+        # # End Function
+        # # """
+
+        # # system_service = SystemService(self.application.SystemService)
+        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+
+    def set_report_check_advisor_lock(self, i_locked: bool) -> None:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub SetReportCheckAdvisorLock(boolean iLocked)
+                | 
+                |     Locks or unlocks the ReportCheckAdvisor parameter.
+                |     Role:Locks or unlocks the ReportCheckAdvisor parameter if it is possible in
+                |     the current administrative context. In user mode this method will always return
+                |     E_FAIL.
+                | 
+                |     Parameters:
+                | 
+                |         iLocked
+                |             the locking operation to be performed Legal
+                |             values:
+                |             TRUE : to lock the parameter.
+                |             FALSE: to unlock the parameter.
+
+        :param bool i_locked:
+        :return: None
+        :rtype: None
+        """
+        return self.report_generation_sheet_setting_att.SetReportCheckAdvisorLock(i_locked)
+        # # # # Autogenerated comment: 
+        # # some methods require a system service call as the methods expects a vb array object
+        # # passed to it and there is no way to do this directly with python. In those cases the following code
+        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
+        # # vba_function_name = 'set_report_check_advisor_lock'
+        # # vba_code = """
+        # # Public Function set_report_check_advisor_lock(report_generation_sheet_setting_att)
+        # #     Dim iLocked (2)
+        # #     report_generation_sheet_setting_att.SetReportCheckAdvisorLock iLocked
+        # #     set_report_check_advisor_lock = iLocked
+        # # End Function
+        # # """
+
+        # # system_service = SystemService(self.application.SystemService)
+        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+
+    def set_report_check_expert_lock(self, i_locked: bool) -> None:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub SetReportCheckExpertLock(boolean iLocked)
+                | 
+                |     Locks or unlocks the ReportCheckExpert parameter.
+                |     Role:Locks or unlocks the ReportCheckExpert parameter if it is possible in
+                |     the current administrative context. In user mode this method will always return
+                |     E_FAIL.
+                | 
+                |     Parameters:
+                | 
+                |         iLocked
+                |             the locking operation to be performed Legal
+                |             values:
+                |             TRUE : to lock the parameter.
+                |             FALSE: to unlock the parameter.
+
+        :param bool i_locked:
+        :return: None
+        :rtype: None
+        """
+        return self.report_generation_sheet_setting_att.SetReportCheckExpertLock(i_locked)
+        # # # # Autogenerated comment: 
+        # # some methods require a system service call as the methods expects a vb array object
+        # # passed to it and there is no way to do this directly with python. In those cases the following code
+        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
+        # # vba_function_name = 'set_report_check_expert_lock'
+        # # vba_code = """
+        # # Public Function set_report_check_expert_lock(report_generation_sheet_setting_att)
+        # #     Dim iLocked (2)
+        # #     report_generation_sheet_setting_att.SetReportCheckExpertLock iLocked
+        # #     set_report_check_expert_lock = iLocked
+        # # End Function
+        # # """
+
+        # # system_service = SystemService(self.application.SystemService)
+        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+
+    def set_report_html_in_catia_session_lock(self, i_locked: bool) -> None:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub SetReportHtmlInCatiaSessionLock(boolean iLocked)
+                | 
+                |     Locks or unlocks the ReportHtmlInCatiaSession parameter.
+                |     Role:Locks or unlocks the ReportHtmlInCatiaSession parameter if it is
+                |     possible in the current administrative context. In user mode this method will
+                |     always return E_FAIL.
+                | 
+                |     Parameters:
+                | 
+                |         iLocked
+                |             the locking operation to be performed Legal
+                |             values:
+                |             TRUE : to lock the parameter.
+                |             FALSE: to unlock the parameter.
+
+        :param bool i_locked:
+        :return: None
+        :rtype: None
+        """
+        return self.report_generation_sheet_setting_att.SetReportHtmlInCatiaSessionLock(i_locked)
+        # # # # Autogenerated comment: 
+        # # some methods require a system service call as the methods expects a vb array object
+        # # passed to it and there is no way to do this directly with python. In those cases the following code
+        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
+        # # vba_function_name = 'set_report_html_in_catia_session_lock'
+        # # vba_code = """
+        # # Public Function set_report_html_in_catia_session_lock(report_generation_sheet_setting_att)
+        # #     Dim iLocked (2)
+        # #     report_generation_sheet_setting_att.SetReportHtmlInCatiaSessionLock iLocked
+        # #     set_report_html_in_catia_session_lock = iLocked
+        # # End Function
+        # # """
+
+        # # system_service = SystemService(self.application.SystemService)
+        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+
+    def set_report_objects_information_lock(self, i_locked: bool) -> None:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub SetReportObjectsInformationLock(boolean iLocked)
+                | 
+                |     Locks or unlocks the ReportObjectsInformation parameter.
+                |     Role:Locks or unlocks the ReportObjectsInformation parameter if it is
+                |     possible in the current administrative context. In user mode this method will
+                |     always return E_FAIL.
+                | 
+                |     Parameters:
+                | 
+                |         iLocked
+                |             the locking operation to be performed Legal
+                |             values:
+                |             TRUE : to lock the parameter.
+                |             FALSE: to unlock the parameter.
+
+        :param bool i_locked:
+        :return: None
+        :rtype: None
+        """
+        return self.report_generation_sheet_setting_att.SetReportObjectsInformationLock(i_locked)
+        # # # # Autogenerated comment: 
+        # # some methods require a system service call as the methods expects a vb array object
+        # # passed to it and there is no way to do this directly with python. In those cases the following code
+        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
+        # # vba_function_name = 'set_report_objects_information_lock'
+        # # vba_code = """
+        # # Public Function set_report_objects_information_lock(report_generation_sheet_setting_att)
+        # #     Dim iLocked (2)
+        # #     report_generation_sheet_setting_att.SetReportObjectsInformationLock iLocked
+        # #     set_report_objects_information_lock = iLocked
+        # # End Function
+        # # """
+
+        # # system_service = SystemService(self.application.SystemService)
+        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+
+    def set_report_output_directory_lock(self, i_locked: bool) -> None:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub SetReportOutputDirectoryLock(boolean iLocked)
+                | 
+                |     Locks or unlocks the ReportOutputDirectory parameter.
+                |     Role:Locks or unlocks the ReportOutputDirectory parameter if it is possible
+                |     in the current administrative context. In user mode this method will always
+                |     return E_FAIL.
+                | 
+                |     Parameters:
+                | 
+                |         iLocked
+                |             the locking operation to be performed Legal
+                |             values:
+                |             TRUE : to lock the parameter.
+                |             FALSE: to unlock the parameter.
+
+        :param bool i_locked:
+        :return: None
+        :rtype: None
+        """
+        return self.report_generation_sheet_setting_att.SetReportOutputDirectoryLock(i_locked)
+        # # # # Autogenerated comment: 
+        # # some methods require a system service call as the methods expects a vb array object
+        # # passed to it and there is no way to do this directly with python. In those cases the following code
+        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
+        # # vba_function_name = 'set_report_output_directory_lock'
+        # # vba_code = """
+        # # Public Function set_report_output_directory_lock(report_generation_sheet_setting_att)
+        # #     Dim iLocked (2)
+        # #     report_generation_sheet_setting_att.SetReportOutputDirectoryLock iLocked
+        # #     set_report_output_directory_lock = iLocked
+        # # End Function
+        # # """
+
+        # # system_service = SystemService(self.application.SystemService)
+        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+
+    def set_report_parameters_information_lock(self, i_locked: bool) -> None:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub SetReportParametersInformationLock(boolean iLocked)
+                | 
+                |     Locks or unlocks the ReportParametersInformation
+                |     parameter.
+                |     Role:Locks or unlocks the ReportParametersInformation parameter if it is
+                |     possible in the current administrative context. In user mode this method will
+                |     always return E_FAIL.
+                | 
+                |     Parameters:
+                | 
+                |         iLocked
+                |             the locking operation to be performed Legal
+                |             values:
+                |             TRUE : to lock the parameter.
+                |             FALSE: to unlock the parameter.
+
+        :param bool i_locked:
+        :return: None
+        :rtype: None
+        """
+        return self.report_generation_sheet_setting_att.SetReportParametersInformationLock(i_locked)
+        # # # # Autogenerated comment: 
+        # # some methods require a system service call as the methods expects a vb array object
+        # # passed to it and there is no way to do this directly with python. In those cases the following code
+        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
+        # # vba_function_name = 'set_report_parameters_information_lock'
+        # # vba_code = """
+        # # Public Function set_report_parameters_information_lock(report_generation_sheet_setting_att)
+        # #     Dim iLocked (2)
+        # #     report_generation_sheet_setting_att.SetReportParametersInformationLock iLocked
+        # #     set_report_parameters_information_lock = iLocked
+        # # End Function
+        # # """
+
+        # # system_service = SystemService(self.application.SystemService)
+        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+
+    def set_report_passed_objects_lock(self, i_locked: bool) -> None:
+        """
+        .. note::
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Sub SetReportPassedObjectsLock(boolean iLocked)
+                | 
+                |     Locks or unlocks the ReportPassedObjects parameter.
+                |     Role:Locks or unlocks the ReportPassedObjects parameter if it is possible
+                |     in the current administrative context. In user mode this method will always
+                |     return E_FAIL.
+                | 
+                |     Parameters:
+                | 
+                |         iLocked
+                |             the locking operation to be performed Legal
+                |             values:
+                |             TRUE : to lock the parameter.
+                |             FALSE: to unlock the parameter.
+
+        :param bool i_locked:
+        :return: None
+        :rtype: None
+        """
+        return self.report_generation_sheet_setting_att.SetReportPassedObjectsLock(i_locked)
+        # # # # Autogenerated comment: 
+        # # some methods require a system service call as the methods expects a vb array object
+        # # passed to it and there is no way to do this directly with python. In those cases the following code
+        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
+        # # vba_function_name = 'set_report_passed_objects_lock'
+        # # vba_code = """
+        # # Public Function set_report_passed_objects_lock(report_generation_sheet_setting_att)
+        # #     Dim iLocked (2)
+        # #     report_generation_sheet_setting_att.SetReportPassedObjectsLock iLocked
+        # #     set_report_passed_objects_lock = iLocked
+        # # End Function
+        # # """
+
+        # # system_service = SystemService(self.application.SystemService)
+        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
         return f'ReportGenerationSheetSettingAtt(name="{self.name}")'

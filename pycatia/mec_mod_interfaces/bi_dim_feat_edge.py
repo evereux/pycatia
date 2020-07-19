@@ -13,7 +13,6 @@ from pycatia.mec_mod_interfaces.edge import Edge
 
 
 class BiDimFeatEdge(Edge):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -60,10 +59,7 @@ class BiDimFeatEdge(Edge):
                 |      HybridBody.AppendHybridShape HybridShapePointOnCurve
                 |      Document.Part.InWorkObject = HybridShapePointOnCurve
                 |      Document.Part.Update 
-                |      
-                | 
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
-    
+
     """
 
     def __init__(self, com_object):
@@ -71,4 +67,4 @@ class BiDimFeatEdge(Edge):
         self.bi_dim_feat_edge = com_object
 
     def __repr__(self):
-        return f'BiDimFeatEdge(name="{ self.name }")'
+        return f'BiDimFeatEdge(name="{self.name}")'

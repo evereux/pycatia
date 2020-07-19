@@ -13,7 +13,6 @@ from pycatia.part_interfaces.boolean_shape import BooleanShape
 
 
 class Intersect(BooleanShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -42,10 +41,7 @@ class Intersect(BooleanShape):
                 |  ' 
                 |  ' Create the intersection between Pad1 and Body2 
                 |  Set NewShape      = shapeFactory.AddNewIntersect(Body2)
-                |  
-                | 
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
-    
+
     """
 
     def __init__(self, com_object):
@@ -53,4 +49,4 @@ class Intersect(BooleanShape):
         self.intersect = com_object
 
     def __repr__(self):
-        return f'Intersect(name="{ self.name }")'
+        return f'Intersect(name="{self.name}")'

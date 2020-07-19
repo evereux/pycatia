@@ -38,10 +38,10 @@ class Split(SurfaceBasedShape):
         self.split = com_object
 
     @property
-    def splitting_side(self):
+    def splitting_side(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SplittingSide() As CatSplitSide
                 | 
                 |     Returns or sets the splitting side . The splitting side is the side of the
@@ -56,15 +56,16 @@ class Split(SurfaceBasedShape):
                 |          Set sptSide = mySplit.SplittingSide
                 |          mySplit.SplittingSide = catPositiveSide
 
-        :return: enum cat_split_side
+        :return: int
+        :rtype: int
         """
 
         return self.split.SplittingSide
 
     @splitting_side.setter
-    def splitting_side(self, value):
+    def splitting_side(self, value: int):
         """
-        :param enum cat_split_side value:
+        :param int value:
         """
 
         self.split.SplittingSide = value

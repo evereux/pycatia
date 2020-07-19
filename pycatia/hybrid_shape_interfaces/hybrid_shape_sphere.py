@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -19,7 +19,7 @@ class HybridShapeSphere(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -44,10 +44,10 @@ class HybridShapeSphere(HybridShape):
         self.hybrid_shape_sphere = com_object
 
     @property
-    def axis(self):
+    def axis(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Axis() As Reference
                 | 
                 |     Returns or sets axis on the object.
@@ -64,12 +64,13 @@ class HybridShapeSphere(HybridShape):
                 |         HybridShapeFactory
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_sphere.Axis)
 
     @axis.setter
-    def axis(self, value):
+    def axis(self, value: Reference):
         """
         :param Reference value:
         """
@@ -77,10 +78,10 @@ class HybridShapeSphere(HybridShape):
         self.hybrid_shape_sphere.Axis = value
 
     @property
-    def begin_meridian_angle(self):
+    def begin_meridian_angle(self) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BeginMeridianAngle() As Angle (Read Only)
                 | 
                 |     Returns BeginMeridianAngle on the object.
@@ -97,15 +98,16 @@ class HybridShapeSphere(HybridShape):
                 |         HybridShapeFactory
 
         :return: Angle
+        :rtype: Angle
         """
 
         return Angle(self.hybrid_shape_sphere.BeginMeridianAngle)
 
     @property
-    def begin_parallel_angle(self):
+    def begin_parallel_angle(self) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BeginParallelAngle() As Angle (Read Only)
                 | 
                 |     Returns BeginParallelAngle on the object.
@@ -122,15 +124,16 @@ class HybridShapeSphere(HybridShape):
                 |         HybridShapeFactory
 
         :return: Angle
+        :rtype: Angle
         """
 
         return Angle(self.hybrid_shape_sphere.BeginParallelAngle)
 
     @property
-    def center(self):
+    def center(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Center() As Reference
                 | 
                 |     Returns or sets the sphere center.
@@ -144,12 +147,13 @@ class HybridShapeSphere(HybridShape):
                 |          HybShpSphereCenter = HybShpSphere.Center
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_sphere.Center)
 
     @center.setter
-    def center(self, value):
+    def center(self, value: Reference):
         """
         :param Reference value:
         """
@@ -157,10 +161,10 @@ class HybridShapeSphere(HybridShape):
         self.hybrid_shape_sphere.Center = value
 
     @property
-    def end_meridian_angle(self):
+    def end_meridian_angle(self) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property EndMeridianAngle() As Angle (Read Only)
                 | 
                 |     Returns EndMeridianAngle on the object.
@@ -177,15 +181,16 @@ class HybridShapeSphere(HybridShape):
                 |         HybridShapeFactory
 
         :return: Angle
+        :rtype: Angle
         """
 
         return Angle(self.hybrid_shape_sphere.EndMeridianAngle)
 
     @property
-    def end_parallel_angle(self):
+    def end_parallel_angle(self) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property EndParallelAngle() As Angle (Read Only)
                 | 
                 |     Returns EndParallelAngle on the object.
@@ -202,15 +207,16 @@ class HybridShapeSphere(HybridShape):
                 |         HybridShapeFactory
 
         :return: Angle
+        :rtype: Angle
         """
 
         return Angle(self.hybrid_shape_sphere.EndParallelAngle)
 
     @property
-    def limitation(self):
+    def limitation(self) -> False:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Limitation(long iLimitationType)
                 | 
                 |     Returns whether the sphere is created as a whole sphere or
@@ -221,12 +227,13 @@ class HybridShapeSphere(HybridShape):
                 |     Example:
 
         :return: False
+        :rtype: False
         """
 
         return None
 
     @limitation.setter
-    def limitation(self, value):
+    def limitation(self, value: False):
         """
         :param False value:
         """
@@ -234,10 +241,10 @@ class HybridShapeSphere(HybridShape):
         self.hybrid_shape_sphere.Limitation = value
 
     @property
-    def radius(self):
+    def radius(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Radius() As Length (Read Only)
                 | 
                 |     Role: Get sphere radius.
@@ -254,14 +261,15 @@ class HybridShapeSphere(HybridShape):
                 |         HybridShapeFactory
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_sphere.Radius)
 
-    def set_begin_meridian_angle(self, i_angle):
+    def set_begin_meridian_angle(self, i_angle: float) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetBeginMeridianAngle(double iAngle)
                 | 
                 |     Sets BeginMeridianAngle on the object.
@@ -277,13 +285,14 @@ class HybridShapeSphere(HybridShape):
 
         :param float i_angle:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sphere.SetBeginMeridianAngle(i_angle)
 
-    def set_begin_parallel_angle(self, i_angle):
+    def set_begin_parallel_angle(self, i_angle: float) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetBeginParallelAngle(double iAngle)
                 | 
                 |     Sets BeginParallelAngle on the object.
@@ -299,13 +308,14 @@ class HybridShapeSphere(HybridShape):
 
         :param float i_angle:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sphere.SetBeginParallelAngle(i_angle)
 
-    def set_end_meridian_angle(self, i_angle):
+    def set_end_meridian_angle(self, i_angle: float) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetEndMeridianAngle(double iAngle)
                 | 
                 |     Sets EndMeridianAngle on the object.
@@ -321,13 +331,14 @@ class HybridShapeSphere(HybridShape):
 
         :param float i_angle:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sphere.SetEndMeridianAngle(i_angle)
 
-    def set_end_parallel_angle(self, i_angle):
+    def set_end_parallel_angle(self, i_angle: float) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetEndParallelAngle(double iAngle)
                 | 
                 |     Sets EndParallelAngle on the object.
@@ -343,13 +354,14 @@ class HybridShapeSphere(HybridShape):
 
         :param float i_angle:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sphere.SetEndParallelAngle(i_angle)
 
-    def set_radius(self, i_radius):
+    def set_radius(self, i_radius: float) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetRadius(double iRadius)
                 | 
                 |     Sets Radius on the object.
@@ -365,6 +377,7 @@ class HybridShapeSphere(HybridShape):
 
         :param float i_radius:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sphere.SetRadius(i_radius)
 

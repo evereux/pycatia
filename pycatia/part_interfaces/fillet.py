@@ -40,10 +40,10 @@ class Fillet(DressUpShape):
         self.fillet = com_object
 
     @property
-    def fillet_boundary_relimitation(self):
+    def fillet_boundary_relimitation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FilletBoundaryRelimitation() As
                 | CatFilletBoundaryRelimitation
                 | 
@@ -59,24 +59,25 @@ class Fillet(DressUpShape):
                 |          Set mode = firstFillet.FilletBoundaryRelimitation
                 |          Set FirstFillet.FilletBoundaryRelimitation = catMinimumFilletBoundaryRelimitation
 
-        :return: enum cat_fillet_boundary_relimitation
+        :return: int
+        :rtype: int
         """
 
         return self.fillet.FilletBoundaryRelimitation
 
     @fillet_boundary_relimitation.setter
-    def fillet_boundary_relimitation(self, value):
+    def fillet_boundary_relimitation(self, value: int):
         """
-        :param enum cat_fillet_boundary_relimitation value:
+        :param int value:
         """
 
         self.fillet.FilletBoundaryRelimitation = value
 
     @property
-    def fillet_trim_support(self):
+    def fillet_trim_support(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FilletTrimSupport() As CatFilletTrimSupport
                 | 
                 |     Returns or sets the fillet Trim Support mode. This Trim Support mode is
@@ -91,15 +92,16 @@ class Fillet(DressUpShape):
                 |          Set mode = firstFillet.FilletTrimSupport
                 |          Set FirstFillet.FilletTrimSupport = catNoTrimFilletSupport
 
-        :return: enum cat_fillet_trim_support
+        :return: int
+        :rtype: int
         """
 
         return self.fillet.FilletTrimSupport
 
     @fillet_trim_support.setter
-    def fillet_trim_support(self, value):
+    def fillet_trim_support(self, value: int):
         """
-        :param enum cat_fillet_trim_support value:
+        :param int value:
         """
 
         self.fillet.FilletTrimSupport = value

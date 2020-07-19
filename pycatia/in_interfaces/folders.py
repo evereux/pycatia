@@ -14,7 +14,6 @@ from pycatia.system_interfaces.collection import Collection
 
 
 class Folders(Collection):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -33,10 +32,10 @@ class Folders(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Folder)
         self.folders = com_object
 
-    def item(self, i_number):
+    def item(self, i_number: int) -> Folder:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -69,8 +68,9 @@ class Folders(Collection):
 
         :param int i_number:
         :return: Folder
+        :rtype: Folder
         """
         return Folder(self.folders.Item(i_number))
 
     def __repr__(self):
-        return f'Folders(name="{ self.name }")'
+        return f'Folders(name="{self.name}")'

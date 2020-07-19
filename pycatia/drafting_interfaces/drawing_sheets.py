@@ -11,6 +11,7 @@
 
 from pycatia.drafting_interfaces.drawing_sheet import DrawingSheet
 from pycatia.system_interfaces.collection import Collection
+from pycatia.types import cat_variant
 
 
 class DrawingSheets(Collection):
@@ -38,7 +39,7 @@ class DrawingSheets(Collection):
         self.drawing_sheets = com_object
 
     @property
-    def active_sheet(self):
+    def active_sheet(self) -> DrawingSheet:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -58,11 +59,12 @@ class DrawingSheets(Collection):
                 |          Set SheetToWorkIn =  MyDrawingDoc.Sheets.ActiveSheet
 
         :return: DrawingSheet
+        :rtype: DrawingSheet
         """
 
         return DrawingSheet(self.drawing_sheets.ActiveSheet)
 
-    def add(self, i_drawing_sheet_name):
+    def add(self, i_drawing_sheet_name: str) -> DrawingSheet:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -93,10 +95,11 @@ class DrawingSheets(Collection):
 
         :param str i_drawing_sheet_name:
         :return: DrawingSheet
+        :rtype: DrawingSheet
         """
         return DrawingSheet(self.drawing_sheets.Add(i_drawing_sheet_name))
 
-    def add_detail(self, i_drawing_sheet_name):
+    def add_detail(self, i_drawing_sheet_name: str) -> DrawingSheet:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -127,10 +130,11 @@ class DrawingSheets(Collection):
 
         :param str i_drawing_sheet_name:
         :return: DrawingSheet
+        :rtype: DrawingSheet
         """
         return DrawingSheet(self.drawing_sheets.AddDetail(i_drawing_sheet_name))
 
-    def item(self, i_index):
+    def item(self, i_index: cat_variant) -> DrawingSheet:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -166,12 +170,13 @@ class DrawingSheets(Collection):
                 |          Dim ThatDrawingSheet As DrawingSheet
                 |          Set ThatDrawingSheet = CATIA.ActiveDocument.Sheets.Item("MySheet")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: DrawingSheet
+        :rtype: DrawingSheet
         """
         return DrawingSheet(self.drawing_sheets.Item(i_index))
 
-    def remove(self, i_index):
+    def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -201,7 +206,7 @@ class DrawingSheets(Collection):
                 |         CATIA.ActiveDocument.DrawingSheets.Remove(2)
                 |         CATIA.ActiveDocument.DrawingSheets.Remove("SheetToBeRemoved")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: None
         """
         return self.drawing_sheets.Remove(i_index)

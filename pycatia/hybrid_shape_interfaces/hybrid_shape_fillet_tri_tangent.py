@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapeFilletTriTangent(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -43,10 +43,10 @@ class HybridShapeFilletTriTangent(HybridShape):
         self.hybrid_shape_fillet_tri_tangent = com_object
 
     @property
-    def first_elem(self):
+    def first_elem(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstElem() As Reference
                 | 
                 |     Returns or sets the first support surface feature.
@@ -59,12 +59,13 @@ class HybridShapeFilletTriTangent(HybridShape):
                 |          Set FirstElem = HybShpFilletTriTangent.FirstElem
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_fillet_tri_tangent.FirstElem)
 
     @first_elem.setter
-    def first_elem(self, value):
+    def first_elem(self, value: Reference):
         """
         :param Reference value:
         """
@@ -72,10 +73,10 @@ class HybridShapeFilletTriTangent(HybridShape):
         self.hybrid_shape_fillet_tri_tangent.FirstElem = value
 
     @property
-    def first_orientation(self):
+    def first_orientation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstOrientation() As long
                 | 
                 |     Returns or sets the first orientation used to specify fillet center
@@ -84,12 +85,13 @@ class HybridShapeFilletTriTangent(HybridShape):
                 |     support
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_fillet_tri_tangent.FirstOrientation
 
     @first_orientation.setter
-    def first_orientation(self, value):
+    def first_orientation(self, value: int):
         """
         :param int value:
         """
@@ -97,21 +99,22 @@ class HybridShapeFilletTriTangent(HybridShape):
         self.hybrid_shape_fillet_tri_tangent.FirstOrientation = value
 
     @property
-    def remove_elem(self):
+    def remove_elem(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RemoveElem() As Reference
                 | 
                 |     Returns or sets the support surface to remove feature.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_fillet_tri_tangent.RemoveElem)
 
     @remove_elem.setter
-    def remove_elem(self, value):
+    def remove_elem(self, value: Reference):
         """
         :param Reference value:
         """
@@ -119,10 +122,10 @@ class HybridShapeFilletTriTangent(HybridShape):
         self.hybrid_shape_fillet_tri_tangent.RemoveElem = value
 
     @property
-    def remove_orientation(self):
+    def remove_orientation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RemoveOrientation() As long
                 | 
                 |     Returns or sets the third orientation used to specify fillet center
@@ -131,12 +134,13 @@ class HybridShapeFilletTriTangent(HybridShape):
                 |     to remove
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_fillet_tri_tangent.RemoveOrientation
 
     @remove_orientation.setter
-    def remove_orientation(self, value):
+    def remove_orientation(self, value: int):
         """
         :param int value:
         """
@@ -144,10 +148,10 @@ class HybridShapeFilletTriTangent(HybridShape):
         self.hybrid_shape_fillet_tri_tangent.RemoveOrientation = value
 
     @property
-    def ribbon_relimitation_mode(self):
+    def ribbon_relimitation_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RibbonRelimitationMode() As long
                 | 
                 |     Returns or sets fillet ribbon relimitation mode (or fillet extremities
@@ -155,12 +159,13 @@ class HybridShapeFilletTriTangent(HybridShape):
                 |     note: Smooth(0) or Straight(1) or Maximum(2) or Minimum(3)
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_fillet_tri_tangent.RibbonRelimitationMode
 
     @ribbon_relimitation_mode.setter
-    def ribbon_relimitation_mode(self, value):
+    def ribbon_relimitation_mode(self, value: int):
         """
         :param int value:
         """
@@ -168,10 +173,10 @@ class HybridShapeFilletTriTangent(HybridShape):
         self.hybrid_shape_fillet_tri_tangent.RibbonRelimitationMode = value
 
     @property
-    def second_elem(self):
+    def second_elem(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondElem() As Reference
                 | 
                 |     Returns or sets the Second support surface feature.
@@ -190,12 +195,13 @@ class HybridShapeFilletTriTangent(HybridShape):
                 |             Second support surface feature.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_fillet_tri_tangent.SecondElem)
 
     @second_elem.setter
-    def second_elem(self, value):
+    def second_elem(self, value: Reference):
         """
         :param Reference value:
         """
@@ -203,10 +209,10 @@ class HybridShapeFilletTriTangent(HybridShape):
         self.hybrid_shape_fillet_tri_tangent.SecondElem = value
 
     @property
-    def second_orientation(self):
+    def second_orientation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondOrientation() As long
                 | 
                 |     Returns or sets the Second orientation used to specify fillet center
@@ -215,12 +221,13 @@ class HybridShapeFilletTriTangent(HybridShape):
                 |     support
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_fillet_tri_tangent.SecondOrientation
 
     @second_orientation.setter
-    def second_orientation(self, value):
+    def second_orientation(self, value: int):
         """
         :param int value:
         """
@@ -228,10 +235,10 @@ class HybridShapeFilletTriTangent(HybridShape):
         self.hybrid_shape_fillet_tri_tangent.SecondOrientation = value
 
     @property
-    def supports_trim_mode(self):
+    def supports_trim_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SupportsTrimMode() As long
                 | 
                 |     Returns or sets whether support surfaces are trimmed or
@@ -241,51 +248,55 @@ class HybridShapeFilletTriTangent(HybridShape):
                 |     ribbon.
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_fillet_tri_tangent.SupportsTrimMode
 
     @supports_trim_mode.setter
-    def supports_trim_mode(self, value):
+    def supports_trim_mode(self, value: int):
         """
         :param int value:
         """
 
         self.hybrid_shape_fillet_tri_tangent.SupportsTrimMode = value
 
-    def invert_first_orientation(self):
+    def invert_first_orientation(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InvertFirstOrientation()
                 | 
                 |     Inverts first orientation used to specify fillet center position.
 
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_fillet_tri_tangent.InvertFirstOrientation()
 
-    def invert_remove_orientation(self):
+    def invert_remove_orientation(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InvertRemoveOrientation()
                 | 
                 |     Inverts third orientation used to specify fillet center position.
 
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_fillet_tri_tangent.InvertRemoveOrientation()
 
-    def invert_second_orientation(self):
+    def invert_second_orientation(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InvertSecondOrientation()
                 | 
                 |     Inverts second orientation used to specify fillet center position.
 
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_fillet_tri_tangent.InvertSecondOrientation()
 

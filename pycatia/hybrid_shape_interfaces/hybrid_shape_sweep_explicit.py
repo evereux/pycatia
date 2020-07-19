@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -19,7 +19,7 @@ from pycatia.knowledge_interfaces.length import Length
 class HybridShapeSweepExplicit(HybridShapeSweep):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -49,10 +49,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         self.hybrid_shape_sweep_explicit = com_object
 
     @property
-    def angle_law(self):
+    def angle_law(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AngleLaw() As Reference
                 | 
                 |     Returns or sets the angle law feature associated to the reference
@@ -70,12 +70,13 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |         HybridShapeFactory
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_sweep_explicit.AngleLaw)
 
     @angle_law.setter
-    def angle_law(self, value):
+    def angle_law(self, value: Reference):
         """
         :param Reference value:
         """
@@ -83,10 +84,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         self.hybrid_shape_sweep_explicit.AngleLaw = value
 
     @property
-    def angle_law_inversion(self):
+    def angle_law_inversion(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AngleLawInversion() As long
                 | 
                 |     Returns or sets the angle law inversion information.
@@ -100,12 +101,13 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |         HybridShapeFactory
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_sweep_explicit.AngleLawInversion
 
     @angle_law_inversion.setter
-    def angle_law_inversion(self, value):
+    def angle_law_inversion(self, value: int):
         """
         :param int value:
         """
@@ -113,10 +115,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         self.hybrid_shape_sweep_explicit.AngleLawInversion = value
 
     @property
-    def angle_law_type(self):
+    def angle_law_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AngleLawType() As long
                 | 
                 |     Returns or sets the angle law type associated to the reference
@@ -131,12 +133,13 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |         HybridShapeFactory
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_sweep_explicit.AngleLawType
 
     @angle_law_type.setter
-    def angle_law_type(self, value):
+    def angle_law_type(self, value: int):
         """
         :param int value:
         """
@@ -144,10 +147,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         self.hybrid_shape_sweep_explicit.AngleLawType = value
 
     @property
-    def canonical_detection(self):
+    def canonical_detection(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CanonicalDetection() As long
                 | 
                 |     Returns or sets whether canonical surfaces of the swept surface are
@@ -157,12 +160,13 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     2 Detection of canonical surfaces is performed.
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_sweep_explicit.CanonicalDetection
 
     @canonical_detection.setter
-    def canonical_detection(self, value):
+    def canonical_detection(self, value: int):
         """
         :param int value:
         """
@@ -170,10 +174,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         self.hybrid_shape_sweep_explicit.CanonicalDetection = value
 
     @property
-    def context(self):
+    def context(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Context() As long
                 | 
                 |     Returns or sets the context on Sweep feature.
@@ -192,12 +196,13 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |          Set oContext = Sweep.Context
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_sweep_explicit.Context
 
     @context.setter
-    def context(self, value):
+    def context(self, value: int):
         """
         :param int value:
         """
@@ -205,10 +210,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         self.hybrid_shape_sweep_explicit.Context = value
 
     @property
-    def first_guide_crv(self):
+    def first_guide_crv(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstGuideCrv() As Reference
                 | 
                 |     Gets the first guide curve.
@@ -228,12 +233,13 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |         HybridShapeFactory
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_sweep_explicit.FirstGuideCrv)
 
     @first_guide_crv.setter
-    def first_guide_crv(self, value):
+    def first_guide_crv(self, value: Reference):
         """
         :param Reference value:
         """
@@ -241,25 +247,26 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         self.hybrid_shape_sweep_explicit.FirstGuideCrv = value
 
     @property
-    def guide_deviation(self):
+    def guide_deviation(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property GuideDeviation() As Length (Read Only)
                 | 
                 |     Returns deviation value (length) from guide curves allowed during sweeping
                 |     operation in order to smooth it.
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_sweep_explicit.GuideDeviation)
 
     @property
-    def guide_deviation_activity(self):
+    def guide_deviation_activity(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property GuideDeviationActivity() As boolean
                 | 
                 |     Returns or sets information whether a deviation from guide curves is
@@ -269,12 +276,13 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     TRUE or FALSE (FALSE if not specified).
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_sweep_explicit.GuideDeviationActivity
 
     @guide_deviation_activity.setter
-    def guide_deviation_activity(self, value):
+    def guide_deviation_activity(self, value: bool):
         """
         :param bool value:
         """
@@ -282,10 +290,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         self.hybrid_shape_sweep_explicit.GuideDeviationActivity = value
 
     @property
-    def guide_projection(self):
+    def guide_projection(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property GuideProjection() As boolean
                 | 
                 |     Returns or sets the projection of the guide curve onto the reference plane
@@ -303,12 +311,13 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |          Sweep.GuideProjection = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_sweep_explicit.GuideProjection
 
     @guide_projection.setter
-    def guide_projection(self, value):
+    def guide_projection(self, value: bool):
         """
         :param bool value:
         """
@@ -316,10 +325,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         self.hybrid_shape_sweep_explicit.GuideProjection = value
 
     @property
-    def mode(self):
+    def mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Mode() As long
                 | 
                 |     Returns or sets positioning mode used for the profile.
@@ -340,12 +349,13 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |         HybridShapeFactory
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_sweep_explicit.Mode
 
     @mode.setter
-    def mode(self, value):
+    def mode(self, value: int):
         """
         :param int value:
         """
@@ -353,10 +363,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         self.hybrid_shape_sweep_explicit.Mode = value
 
     @property
-    def position_mode(self):
+    def position_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PositionMode() As long
                 | 
                 |     Returns or sets positioning mode.
@@ -375,12 +385,13 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |      oPosMode = Sweep.PositionMode
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_sweep_explicit.PositionMode
 
     @position_mode.setter
-    def position_mode(self, value):
+    def position_mode(self, value: int):
         """
         :param int value:
         """
@@ -388,10 +399,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         self.hybrid_shape_sweep_explicit.PositionMode = value
 
     @property
-    def positioned_profile(self):
+    def positioned_profile(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PositionedProfile() As Reference
                 | 
                 |     Returns or sets the positioning transformation associated to the explicit
@@ -411,12 +422,13 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |         HybridShapeFactory
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_sweep_explicit.PositionedProfile)
 
     @positioned_profile.setter
-    def positioned_profile(self, value):
+    def positioned_profile(self, value: Reference):
         """
         :param Reference value:
         """
@@ -424,10 +436,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         self.hybrid_shape_sweep_explicit.PositionedProfile = value
 
     @property
-    def profile(self):
+    def profile(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Profile() As Reference
                 | 
                 |     Gets the profile to be swept out.
@@ -447,12 +459,13 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |         HybridShapeFactory
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_sweep_explicit.Profile)
 
     @profile.setter
-    def profile(self, value):
+    def profile(self, value: Reference):
         """
         :param Reference value:
         """
@@ -460,10 +473,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         self.hybrid_shape_sweep_explicit.Profile = value
 
     @property
-    def profile_x_axis_computation_mode(self):
+    def profile_x_axis_computation_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ProfileXAxisComputationMode() As long
                 | 
                 |     Returns or sets the computation mode of the X axis (or direction) of the
@@ -490,12 +503,13 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |      oDirCompMode = Sweep.ProfileXAxisComputationMode
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_sweep_explicit.ProfileXAxisComputationMode
 
     @profile_x_axis_computation_mode.setter
-    def profile_x_axis_computation_mode(self, value):
+    def profile_x_axis_computation_mode(self, value: int):
         """
         :param int value:
         """
@@ -503,10 +517,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         self.hybrid_shape_sweep_explicit.ProfileXAxisComputationMode = value
 
     @property
-    def pulling_direction(self):
+    def pulling_direction(self) -> HybridShapeDirection:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PullingDirection() As HybridShapeDirection
                 | 
                 |     Gets or sets the pulling direction
@@ -521,12 +535,13 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |          Set ohDir = Sweep.PullingDirection
 
         :return: HybridShapeDirection
+        :rtype: HybridShapeDirection
         """
 
         return HybridShapeDirection(self.hybrid_shape_sweep_explicit.PullingDirection)
 
     @pulling_direction.setter
-    def pulling_direction(self, value):
+    def pulling_direction(self, value: HybridShapeDirection):
         """
         :param HybridShapeDirection value:
         """
@@ -534,10 +549,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         self.hybrid_shape_sweep_explicit.PullingDirection = value
 
     @property
-    def reference(self):
+    def reference(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Reference() As Reference
                 | 
                 |     Returns or sets the reference surface (optional).
@@ -552,12 +567,13 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |         Reference
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_sweep_explicit.Reference)
 
     @reference.setter
-    def reference(self, value):
+    def reference(self, value: Reference):
         """
         :param Reference value:
         """
@@ -565,10 +581,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         self.hybrid_shape_sweep_explicit.Reference = value
 
     @property
-    def second_guide_crv(self):
+    def second_guide_crv(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondGuideCrv() As Reference
                 | 
                 |     Gets the second guide curve (optional).
@@ -588,12 +604,13 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |         HybridShapeFactory
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_sweep_explicit.SecondGuideCrv)
 
     @second_guide_crv.setter
-    def second_guide_crv(self, value):
+    def second_guide_crv(self, value: Reference):
         """
         :param Reference value:
         """
@@ -601,10 +618,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         self.hybrid_shape_sweep_explicit.SecondGuideCrv = value
 
     @property
-    def smooth_activity(self):
+    def smooth_activity(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SmoothActivity() As boolean
                 | 
                 |     Returns or sets information whether sweeping operation is smoothed or
@@ -612,12 +629,13 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     TRUE or FALSE (FALSE if not specified).
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_sweep_explicit.SmoothActivity
 
     @smooth_activity.setter
-    def smooth_activity(self, value):
+    def smooth_activity(self, value: bool):
         """
         :param bool value:
         """
@@ -625,24 +643,25 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         self.hybrid_shape_sweep_explicit.SmoothActivity = value
 
     @property
-    def smooth_angle_threshold(self):
+    def smooth_angle_threshold(self) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SmoothAngleThreshold() As Angle (Read Only)
                 | 
                 |     Returns angular threshold.
 
         :return: Angle
+        :rtype: Angle
         """
 
         return Angle(self.hybrid_shape_sweep_explicit.SmoothAngleThreshold)
 
     @property
-    def solution_no(self):
+    def solution_no(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SolutionNo() As long
                 | 
                 |     Returns or sets the choice number, which corresponds to each solution of a
@@ -651,12 +670,13 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     solutions.
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_sweep_explicit.SolutionNo
 
     @solution_no.setter
-    def solution_no(self, value):
+    def solution_no(self, value: int):
         """
         :param int value:
         """
@@ -664,10 +684,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         self.hybrid_shape_sweep_explicit.SolutionNo = value
 
     @property
-    def spine(self):
+    def spine(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Spine() As Reference
                 | 
                 |     Returns or sets the spine (optional) for sweep operation.
@@ -684,12 +704,13 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |         HybridShapeFactory
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_sweep_explicit.Spine)
 
     @spine.setter
-    def spine(self, value):
+    def spine(self, value: Reference):
         """
         :param Reference value:
         """
@@ -697,10 +718,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         self.hybrid_shape_sweep_explicit.Spine = value
 
     @property
-    def sub_type(self):
+    def sub_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SubType() As long
                 | 
                 |     Returns or sets the explicit sweep subtype.
@@ -713,22 +734,23 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
                 |     direction
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_sweep_explicit.SubType
 
     @sub_type.setter
-    def sub_type(self, value):
+    def sub_type(self, value: int):
         """
         :param int value:
         """
 
         self.hybrid_shape_sweep_explicit.SubType = value
 
-    def get_angle_ref(self, ii):
+    def get_angle_ref(self, ii: int) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetAngleRef(long ii) As Angle
                 | 
                 |     Gets the angle value associated to the reference surface.
@@ -748,18 +770,19 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
 
         :param int ii:
         :return: Angle
+        :rtype: Angle
         """
         return Angle(self.hybrid_shape_sweep_explicit.GetAngleRef(ii))
 
-    def get_fitting_points(self, op_ia_elem_a, op_ia_elem_b):
+    def get_fitting_points(self, op_ia_elem_a: Reference, op_ia_elem_b: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetFittingPoints(Reference opIAElemA,
                 | Reference opIAElemB)
                 | 
-                |     Gets the fitting points : located in the profile plane, these points are used for two-guide swept
-                |     surfaces to determine guide intersection locations.
+                |     Gets the fitting points : located in the profile plane, these points are used for two-guide
+                |     swept surfaces to determine guide intersection locations.
                 |     param opIAElem1 Fitting point associated to the first
                 |     guide
                 |     param opIAElem2 Fitting point associated to the second guide
@@ -767,6 +790,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         :param Reference op_ia_elem_a:
         :param Reference op_ia_elem_b:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.GetFittingPoints(op_ia_elem_a.com_object, op_ia_elem_b.com_object)
         # # # # Autogenerated comment: 
@@ -785,10 +809,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_longitudinal_relimiters(self, op_ia_elem_a, op_ia_elem_b):
+    def get_longitudinal_relimiters(self, op_ia_elem_a: Reference, op_ia_elem_b: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetLongitudinalRelimiters(Reference opIAElemA,
                 | Reference opIAElemB)
                 | 
@@ -801,6 +825,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         :param Reference op_ia_elem_a:
         :param Reference op_ia_elem_b:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.GetLongitudinalRelimiters(op_ia_elem_a.com_object,
                                                                           op_ia_elem_b.com_object)
@@ -820,10 +845,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_nb_angle(self, o_ang):
+    def get_nb_angle(self, o_ang: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetNbAngle(long oAng)
                 | 
                 |     Returns the number of Angles.
@@ -831,13 +856,14 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
 
         :param int o_ang:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.GetNbAngle(o_ang)
 
-    def get_nb_guide(self, o_num):
+    def get_nb_guide(self, o_num: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetNbGuide(long oNum)
                 | 
                 |     Gets the number of guides curves.
@@ -845,13 +871,14 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
 
         :param int o_num:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.GetNbGuide(o_num)
 
-    def get_nb_pos_angle(self, o_pos_ang):
+    def get_nb_pos_angle(self, o_pos_ang: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetNbPosAngle(long oPosAng)
                 | 
                 |     Gets the number of numerical positioning parameters corresponding to angles
@@ -860,13 +887,14 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
 
         :param int o_pos_ang:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.GetNbPosAngle(o_pos_ang)
 
-    def get_nb_pos_coord(self, o_pos_coord):
+    def get_nb_pos_coord(self, o_pos_coord: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetNbPosCoord(long oPosCoord)
                 | 
                 |     Gets the number of numerical positioning parameters corresponding to
@@ -875,13 +903,14 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
 
         :param int o_pos_coord:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.GetNbPosCoord(o_pos_coord)
 
-    def get_pos_angle(self, ii):
+    def get_pos_angle(self, ii: int) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPosAngle(long ii) As Angle
                 | 
                 |     Gets angles if both profile and first sweep plane axis systems from default
@@ -903,13 +932,14 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
 
         :param int ii:
         :return: Angle
+        :rtype: Angle
         """
         return Angle(self.hybrid_shape_sweep_explicit.GetPosAngle(ii))
 
-    def get_pos_coord(self, ii):
+    def get_pos_coord(self, ii: int) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPosCoord(long ii) As Length
                 | 
                 |     Gets translations coordinates if both profile axis system and first sweep
@@ -932,13 +962,14 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
 
         :param int ii:
         :return: Length
+        :rtype: Length
         """
         return Length(self.hybrid_shape_sweep_explicit.GetPosCoord(ii))
 
-    def get_pos_direction(self, ii):
+    def get_pos_direction(self, ii: int) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPosDirection(long ii) As Reference
                 | 
                 |     Gets the positioning directions : profile plane or first sweep plane X-axis direction.
@@ -958,13 +989,14 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
 
         :param int ii:
         :return: Reference
+        :rtype: Reference
         """
         return Reference(self.hybrid_shape_sweep_explicit.GetPosDirection(ii))
 
-    def get_pos_point(self, ii):
+    def get_pos_point(self, ii: int) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPosPoint(long ii) As Reference
                 | 
                 |     Gets the points designated as the origins of the profile plane and first
@@ -985,13 +1017,14 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
 
         :param int ii:
         :return: Reference
+        :rtype: Reference
         """
         return Reference(self.hybrid_shape_sweep_explicit.GetPosPoint(ii))
 
-    def get_pos_swap_axes(self, ii):
+    def get_pos_swap_axes(self, ii: int) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPosSwapAxes(long ii) As long
                 | 
                 |     Gets axes inversion from previous definition for both profile plane and
@@ -1015,13 +1048,14 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
 
         :param int ii:
         :return: int
+        :rtype: int
         """
         return self.hybrid_shape_sweep_explicit.GetPosSwapAxes(ii)
 
-    def get_relimiters(self, op_ia_elem1, op_orient1, op_ia_elem2, op_orient2):
+    def get_relimiters(self, op_ia_elem1: Reference, op_orient1: int, op_ia_elem2: Reference, op_orient2: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetRelimiters(Reference opIAElem1,
                 | long opOrient1,
                 | Reference opIAElem2,
@@ -1049,6 +1083,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         :param Reference op_ia_elem2:
         :param int op_orient2:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.GetRelimiters(op_ia_elem1.com_object, op_orient1,
                                                               op_ia_elem2.com_object, op_orient2)
@@ -1068,10 +1103,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def is_sketch_axis_used_as_default(self, o_boolean):
+    def is_sketch_axis_used_as_default(self, o_boolean: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub IsSketchAxisUsedAsDefault(boolean oBoolean)
                 | 
                 |     Queries status wherere Sketch axis used as default or not.
@@ -1082,6 +1117,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
 
         :param bool o_boolean:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.IsSketchAxisUsedAsDefault(o_boolean)
         # # # # Autogenerated comment: 
@@ -1100,46 +1136,49 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def remove_angle(self):
+    def remove_angle(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveAngle()
                 | 
                 |     Removes an Angle.
 
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.RemoveAngle()
 
-    def remove_fitting_points(self):
+    def remove_fitting_points(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveFittingPoints()
                 | 
                 |     Removes the fitting points.
 
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.RemoveFittingPoints()
 
-    def remove_guide(self):
+    def remove_guide(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveGuide()
                 | 
                 |     Removes a guide curve.
 
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.RemoveGuide()
 
-    def set_angle_ref(self, ii, elem):
+    def set_angle_ref(self, ii: int, elem: float) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAngleRef(long ii,
                 | double Elem)
                 | 
@@ -1158,13 +1197,14 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         :param int ii:
         :param float elem:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.SetAngleRef(ii, elem)
 
-    def set_fitting_points(self, ip_ia_elem_a, ip_ia_elem_b):
+    def set_fitting_points(self, ip_ia_elem_a: Reference, ip_ia_elem_b: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetFittingPoints(Reference ipIAElemA,
                 | Reference ipIAElemB)
                 | 
@@ -1179,6 +1219,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         :param Reference ip_ia_elem_a:
         :param Reference ip_ia_elem_b:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.SetFittingPoints(ip_ia_elem_a.com_object, ip_ia_elem_b.com_object)
         # # # # Autogenerated comment: 
@@ -1197,10 +1238,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_guide_deviation(self, i_length):
+    def set_guide_deviation(self, i_length: float) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetGuideDeviation(double iLength)
                 | 
                 |     Sets deviation value (length) from guide curves allowed during sweeping.
@@ -1209,13 +1250,14 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
 
         :param float i_length:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.SetGuideDeviation(i_length)
 
-    def set_longitudinal_relimiters(self, ip_ia_elem_a, ip_ia_elem_b):
+    def set_longitudinal_relimiters(self, ip_ia_elem_a: Reference, ip_ia_elem_b: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLongitudinalRelimiters(Reference ipIAElemA,
                 | Reference ipIAElemB)
                 | 
@@ -1228,6 +1270,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         :param Reference ip_ia_elem_a:
         :param Reference ip_ia_elem_b:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.SetLongitudinalRelimiters(ip_ia_elem_a.com_object,
                                                                           ip_ia_elem_b.com_object)
@@ -1247,10 +1290,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_pos_angle(self, ii, elem):
+    def set_pos_angle(self, ii: int, elem: float) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPosAngle(long ii,
                 | double Elem)
                 | 
@@ -1271,13 +1314,14 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         :param int ii:
         :param float elem:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.SetPosAngle(ii, elem)
 
-    def set_pos_coord(self, ii, elem):
+    def set_pos_coord(self, ii: int, elem: float) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPosCoord(long ii,
                 | double Elem)
                 | 
@@ -1299,13 +1343,14 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         :param int ii:
         :param float elem:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.SetPosCoord(ii, elem)
 
-    def set_pos_direction(self, ii, elem):
+    def set_pos_direction(self, ii: int, elem: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPosDirection(long ii,
                 | Reference Elem)
                 | 
@@ -1326,6 +1371,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         :param int ii:
         :param Reference elem:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.SetPosDirection(ii, elem.com_object)
         # # # # Autogenerated comment: 
@@ -1344,10 +1390,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_pos_point(self, ii, elem):
+    def set_pos_point(self, ii: int, elem: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPosPoint(long ii,
                 | Reference Elem)
                 | 
@@ -1369,6 +1415,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         :param int ii:
         :param Reference elem:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.SetPosPoint(ii, elem.com_object)
         # # # # Autogenerated comment: 
@@ -1387,10 +1434,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_pos_swap_axes(self, ii, elem):
+    def set_pos_swap_axes(self, ii: int, elem: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPosSwapAxes(long ii,
                 | long Elem)
                 | 
@@ -1417,13 +1464,14 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         :param int ii:
         :param int elem:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.SetPosSwapAxes(ii, elem)
 
-    def set_relimiters(self, ip_ia_elem1, ip_orient1, ip_ia_elem2, ip_orient2):
+    def set_relimiters(self, ip_ia_elem1: Reference, ip_orient1: int, ip_ia_elem2: Reference, ip_orient2: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetRelimiters(Reference ipIAElem1,
                 | long ipOrient1,
                 | Reference ipIAElem2,
@@ -1451,6 +1499,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         :param Reference ip_ia_elem2:
         :param int ip_orient2:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.SetRelimiters(ip_ia_elem1.com_object, ip_orient1,
                                                               ip_ia_elem2.com_object, ip_orient2)
@@ -1470,10 +1519,10 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_smooth_angle_threshold(self, i_angle):
+    def set_smooth_angle_threshold(self, i_angle: float) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSmoothAngleThreshold(double iAngle)
                 | 
                 |     Sets angular threshold.
@@ -1481,13 +1530,14 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
 
         :param float i_angle:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.SetSmoothAngleThreshold(i_angle)
 
-    def use_sketch_axis_as_default(self, i_boolean):
+    def use_sketch_axis_as_default(self, i_boolean: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub UseSketchAxisAsDefault(boolean iBoolean)
                 | 
                 |     Uses Sketch Axis As Default.
@@ -1498,6 +1548,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
 
         :param bool i_boolean:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_sweep_explicit.UseSketchAxisAsDefault(i_boolean)
         # # # # Autogenerated comment: 

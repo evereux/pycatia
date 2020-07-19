@@ -36,10 +36,10 @@ class HybridShapeInstance(HybridShape):
         self.hybrid_shape_instance = com_object
 
     @property
-    def inputs_count(self):
+    def inputs_count(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property InputsCount() As long (Read Only)
                 | 
                 |     Returns the number of Inputs.
@@ -51,15 +51,16 @@ class HybridShapeInstance(HybridShape):
                 |          inputsCount = hybridShapeInstance.InputsCount
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_instance.InputsCount
 
     @property
-    def outputs_count(self):
+    def outputs_count(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OutputsCount() As long (Read Only)
                 | 
                 |     Returns the number of Outputs.
@@ -71,15 +72,16 @@ class HybridShapeInstance(HybridShape):
                 |          outputsCount = hybridShapeInstance.OutputsCount
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_instance.OutputsCount
 
     @property
-    def parameters_count(self):
+    def parameters_count(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ParametersCount() As long (Read Only)
                 | 
                 |     Returns the number of Parameters.
@@ -91,14 +93,15 @@ class HybridShapeInstance(HybridShape):
                 |          parametersCount = hybridShapeInstance.ParametersCount
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_instance.ParametersCount
 
-    def get_input(self, i_index=None):
+    def get_input(self, i_index: str) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetInput(CATBSTR iIndex) As AnyObject
                 | 
                 |     Gets an input of a hybrid shape instance by its name.
@@ -121,13 +124,14 @@ class HybridShapeInstance(HybridShape):
 
         :param str i_index:
         :return: AnyObject
+        :rtype: AnyObject
         """
         return AnyObject(self.hybrid_shape_instance.GetInput(i_index))
 
-    def get_input_data(self, i_name=None):
+    def get_input_data(self, i_name: str) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetInputData(CATBSTR iName) As CATBaseDispatch
                 | 
                 |     Gets an input of a shape instance by its name. Use this method if you want
@@ -150,13 +154,14 @@ class HybridShapeInstance(HybridShape):
 
         :param str i_name:
         :return: AnyObject
+        :rtype: AnyObject
         """
         return self.hybrid_shape_instance.GetInputData(i_name)
 
-    def get_input_data_from_position(self, i_position=None):
+    def get_input_data_from_position(self, i_position: int) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetInputDataFromPosition(long iPosition) As
                 | CATBaseDispatch
                 | 
@@ -180,13 +185,14 @@ class HybridShapeInstance(HybridShape):
 
         :param int i_position:
         :return: AnyObject
+        :rtype: AnyObject
         """
         return self.hybrid_shape_instance.GetInputDataFromPosition(i_position)
 
-    def get_input_from_position(self, i_position=None):
+    def get_input_from_position(self, i_position: int) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetInputFromPosition(long iPosition) As AnyObject
                 | 
                 |     Gets an input of a hybrid shape instance from its
@@ -209,13 +215,14 @@ class HybridShapeInstance(HybridShape):
 
         :param int i_position:
         :return: AnyObject
+        :rtype: AnyObject
         """
         return AnyObject(self.hybrid_shape_instance.GetInputFromPosition(i_position))
 
-    def get_output(self, i_name=None):
+    def get_output(self, i_name: str) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetOutput(CATBSTR iName) As AnyObject
                 | 
                 |     Gets a Ouput by its name.
@@ -237,13 +244,14 @@ class HybridShapeInstance(HybridShape):
 
         :param str i_name:
         :return: AnyObject
+        :rtype: AnyObject
         """
         return AnyObject(self.hybrid_shape_instance.GetOutput(i_name))
 
-    def get_output_from_position(self, i_position=None):
+    def get_output_from_position(self, i_position: int) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetOutputFromPosition(long iPosition) As AnyObject
                 | 
                 |     Gets a Ouput from its position.
@@ -265,13 +273,14 @@ class HybridShapeInstance(HybridShape):
 
         :param int i_position:
         :return: AnyObject
+        :rtype: AnyObject
         """
         return AnyObject(self.hybrid_shape_instance.GetOutputFromPosition(i_position))
 
-    def get_parameter(self, i_name=None):
+    def get_parameter(self, i_name: str) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetParameter(CATBSTR iName) As AnyObject
                 | 
                 |     Gets a parameter of a hybrid shape instance by its name.
@@ -295,13 +304,14 @@ class HybridShapeInstance(HybridShape):
 
         :param str i_name:
         :return: AnyObject
+        :rtype: AnyObject
         """
         return AnyObject(self.hybrid_shape_instance.GetParameter(i_name))
 
-    def get_parameter_from_position(self, i_position=None):
+    def get_parameter_from_position(self, i_position: int) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetParameterFromPosition(long iPosition) As AnyObject
                 | 
                 |     Gets a parameter of a hybrid shape instance from its
@@ -325,13 +335,14 @@ class HybridShapeInstance(HybridShape):
 
         :param int i_position:
         :return: AnyObject
+        :rtype: AnyObject
         """
         return AnyObject(self.hybrid_shape_instance.GetParameterFromPosition(i_position))
 
-    def put_input(self, i_index=None, i_input=None):
+    def put_input(self, i_index: str, i_input: AnyObject) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutInput(CATBSTR iIndex,
                 | AnyObject iInput)
                 | 
@@ -356,13 +367,14 @@ class HybridShapeInstance(HybridShape):
         :param str i_index:
         :param AnyObject i_input:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_instance.PutInput(i_index, i_input.com_object)
 
-    def put_input_data(self, i_name=None, i_input=None):
+    def put_input_data(self, i_name: str, i_input: AnyObject) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutInputData(CATBSTR iName,
                 | CATBaseDispatch iInput)
                 | 
@@ -388,6 +400,7 @@ class HybridShapeInstance(HybridShape):
         :param str i_name:
         :param AnyObject i_input:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_instance.PutInputData(i_name, i_input.com_object)
 

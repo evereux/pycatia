@@ -15,7 +15,6 @@ from pycatia.part_interfaces.dress_up_shape import DressUpShape
 
 
 class Draft(DressUpShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -40,10 +39,10 @@ class Draft(DressUpShape):
         self.draft = com_object
 
     @property
-    def draft_domains(self):
+    def draft_domains(self) -> DraftDomains:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DraftDomains() As DraftDomains (Read Only)
                 | 
                 |     Returns the collection of draft domains.
@@ -55,15 +54,16 @@ class Draft(DressUpShape):
                 |          Set list = firstDraft.DraftDomains
 
         :return: DraftDomains
+        :rtype: DraftDomains
         """
 
         return DraftDomains(self.draft.DraftDomains)
 
     @property
-    def mode(self):
+    def mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Mode() As CatDraftMode
                 | 
                 |     Returns or sets the draft mode.
@@ -76,24 +76,25 @@ class Draft(DressUpShape):
                 |          Set mode = firstDraft.Mode
                 |          Set firstDraft.Mode = CatReflectKeepFaceDraftMode
 
-        :return: enum cat_draft_mode
+        :return: int
+        :rtype: int
         """
 
         return self.draft.Mode
 
     @mode.setter
-    def mode(self, value):
+    def mode(self, value: int):
         """
-        :param enum cat_draft_mode value:
+        :param int value:
         """
 
         self.draft.Mode = value
 
     @property
-    def parting_element(self):
+    def parting_element(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PartingElement() As Reference
                 | 
                 |     Returns or sets the draft parting element.
@@ -109,12 +110,13 @@ class Draft(DressUpShape):
                 |          Set firstDraft.PartingElement = element2
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.draft.PartingElement)
 
     @parting_element.setter
-    def parting_element(self, value):
+    def parting_element(self, value: Reference):
         """
         :param Reference value:
         """
@@ -122,4 +124,4 @@ class Draft(DressUpShape):
         self.draft.PartingElement = value
 
     def __repr__(self):
-        return f'Draft(name="{ self.name }")'
+        return f'Draft(name="{self.name}")'

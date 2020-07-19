@@ -13,7 +13,7 @@ import os
 from pycatia import CATIADocHandler
 
 # make these directories the full pathname.
-source_directory = 'cat_files'
+source_directory = 'tests/cat_files'
 target_directory = '__junk__'
 
 # if full paths are supplied above you should not do this.

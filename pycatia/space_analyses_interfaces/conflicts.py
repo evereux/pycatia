@@ -10,10 +10,10 @@
 """
 from pycatia.space_analyses_interfaces.conflict import Conflict
 from pycatia.system_interfaces.collection import Collection
+from pycatia.types import cat_variant
 
 
 class Conflicts(Collection):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -34,10 +34,10 @@ class Conflicts(Collection):
         super().__init__(com_object)
         self.conflicts = com_object
 
-    def item(self, i_index=None):
+    def item(self, i_index: cat_variant) -> Conflict:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(CATVariant iIndex) As Conflict
                 | 
                 |     Returns a Conflict object using its index from the Conflicts
@@ -61,10 +61,11 @@ class Conflicts(Collection):
                 |             Dim ThisConflict As Conflict
                 |             Set ThisConflict = TheConflicts.Item(9)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: Conflict
+        :rtype: Conflict
         """
-        return Conflict(self.conflicts.Item(i_index.com_object))
+        return Conflict(self.conflicts.Item(i_index))
 
     def __repr__(self):
-        return f'Conflicts(name="{ self.name }")'
+        return f'Conflicts(name="{self.name}")'

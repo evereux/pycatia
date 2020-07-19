@@ -35,7 +35,7 @@ class DrawingText(AnyObject):
         self.drawing_text = com_object
 
     @property
-    def anchor_position(self):
+    def anchor_position(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -49,21 +49,22 @@ class DrawingText(AnyObject):
                 | 
                 |          MyText.AnchorPosition = TopLeft
 
-        :return: enum cat_text_anchor_position
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_text.AnchorPosition
 
     @anchor_position.setter
-    def anchor_position(self, value):
+    def anchor_position(self, value: int):
         """
-        :param enum cat_text_anchor_position value:
+        :param int value:
         """
 
         self.drawing_text.AnchorPosition = value
 
     @property
-    def angle(self):
+    def angle(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -83,12 +84,13 @@ class DrawingText(AnyObject):
                 |          MyText.Angle = Angle90Clockwise
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_text.Angle
 
     @angle.setter
-    def angle(self, value):
+    def angle(self, value: float):
         """
         :param float value:
         """
@@ -96,7 +98,7 @@ class DrawingText(AnyObject):
         self.drawing_text.Angle = value
 
     @property
-    def associative_element(self):
+    def associative_element(self) -> AnyObject:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -112,12 +114,13 @@ class DrawingText(AnyObject):
                 |          MyText.AssociativeElement = line
 
         :return: AnyObject
+        :rtype: AnyObject
         """
 
         return AnyObject(self.drawing_text.AssociativeElement)
 
     @associative_element.setter
-    def associative_element(self, value):
+    def associative_element(self, value: AnyObject):
         """
         :param AnyObject value:
         """
@@ -125,7 +128,7 @@ class DrawingText(AnyObject):
         self.drawing_text.AssociativeElement = value
 
     @property
-    def frame_type(self):
+    def frame_type(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -139,15 +142,16 @@ class DrawingText(AnyObject):
                 | 
                 |          MyText.FrameType = catEllipse
 
-        :return: enum cat_text_frame_type
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_text.FrameType
 
     @frame_type.setter
-    def frame_type(self, value):
+    def frame_type(self, value: int):
         """
-        :param enum cat_text_frame_type value:
+        :param int value:
         """
 
         self.drawing_text.FrameType = value
@@ -169,12 +173,13 @@ class DrawingText(AnyObject):
                 |          Set LeaderCollection = MyText.Leaders
 
         :return: DrawingLeaders
+        :rtype: DrawingLeaders
         """
 
         return DrawingLeaders(self.drawing_text.Leaders)
 
     @property
-    def text(self):
+    def text(self) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -189,12 +194,13 @@ class DrawingText(AnyObject):
                 |          CharString = MyText.Text
 
         :return: str
+        :rtype: str
         """
 
         return self.drawing_text.Text
 
     @text.setter
-    def text(self, value):
+    def text(self, value: str):
         """
         :param str value:
         """
@@ -202,7 +208,7 @@ class DrawingText(AnyObject):
         self.drawing_text.Text = value
 
     @property
-    def text_properties(self):
+    def text_properties(self) -> DrawingTextProperties:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -221,12 +227,13 @@ class DrawingText(AnyObject):
                 |          Set TextProperties = MyText.TextProperties
 
         :return: DrawingTextProperties
+        :rtype: DrawingTextProperties
         """
 
         return DrawingTextProperties(self.drawing_text.TextProperties)
 
     @property
-    def wrapping_width(self):
+    def wrapping_width(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -241,12 +248,13 @@ class DrawingText(AnyObject):
                 |          MyText.WrappingWidth = 50.
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_text.WrappingWidth
 
     @wrapping_width.setter
-    def wrapping_width(self, value):
+    def wrapping_width(self, value: float):
         """
         :param float value:
         """
@@ -254,7 +262,7 @@ class DrawingText(AnyObject):
         self.drawing_text.WrappingWidth = value
 
     @property
-    def x(self):
+    def x(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -271,12 +279,13 @@ class DrawingText(AnyObject):
                 |          X = MyText.x
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_text.x
 
     @x.setter
-    def x(self, value):
+    def x(self, value: float):
         """
         :param float value:
         """
@@ -284,7 +293,7 @@ class DrawingText(AnyObject):
         self.drawing_text.x = value
 
     @property
-    def y(self):
+    def y(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -303,19 +312,20 @@ class DrawingText(AnyObject):
                 |          MyText.y =  NewYCoordinate
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_text.y
 
     @y.setter
-    def y(self, value):
+    def y(self, value: float):
         """
         :param float value:
         """
 
         self.drawing_text.y = value
 
-    def activate_frame(self, itype):
+    def activate_frame(self, itype: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -336,10 +346,11 @@ class DrawingText(AnyObject):
                 |          CatTextFrameType ityp = catNone
                 |          MyText.ActivateFrame(itype)
 
-        :param CatTextFrameType itype:
+        :param int itype:
         :return: None
+        :rtype: None
         """
-        return self.drawing_text.ActivateFrame(itype.com_object)
+        return self.drawing_text.ActivateFrame(itype)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -384,10 +395,11 @@ class DrawingText(AnyObject):
         :param int i_first:
         :param int inb_character:
         :return: str
+        :rtype: str
         """
         return self.drawing_text.GetFontName(i_first, inb_character)
 
-    def get_font_size(self, i_first, inb_character):
+    def get_font_size(self, i_first: int, inb_character: int) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -415,10 +427,11 @@ class DrawingText(AnyObject):
         :param int i_first:
         :param int inb_character:
         :return: float
+        :rtype: float
         """
         return self.drawing_text.GetFontSize(i_first, inb_character)
 
-    def get_modifiable_in2_d_component_instances(self):
+    def get_modifiable_in_2d_component_instances(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -434,10 +447,11 @@ class DrawingText(AnyObject):
                 |          IsModifiable = MyText.GetModifiableIn2DComponentInstances
 
         :return: bool
+        :rtype: bool
         """
         return self.drawing_text.GetModifiableIn2DComponentInstances()
 
-    def get_parameter_on_sub_string(self, i_param, i_first, inb_character):
+    def get_parameter_on_sub_string(self, i_param: int, i_first: int, inb_character: int) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -469,14 +483,15 @@ class DrawingText(AnyObject):
                 |          inbCharacter = 0
                 |          oval = MyText.GetParameterOnsubString(iParam, iFirst, inbCharacter)
 
-        :param CatTextProperty i_param:
+        :param int i_param:
         :param int i_first:
         :param int inb_character:
         :return: int
+        :rtype: int
         """
-        return self.drawing_text.GetParameterOnSubString(i_param.com_object, i_first, inb_character)
+        return self.drawing_text.GetParameterOnSubString(i_param, i_first, inb_character)
 
-    def insert_variable(self, i_first, inb_character, ibase):
+    def insert_variable(self, i_first: int, inb_character: int, ibase: AnyObject) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -512,10 +527,11 @@ class DrawingText(AnyObject):
         :param int inb_character:
         :param AnyObject ibase:
         :return: None
+        :rtype: None
         """
         return self.drawing_text.InsertVariable(i_first, inb_character, ibase.com_object)
 
-    def set_font_name(self, i_first, inb_character, i_font_name):
+    def set_font_name(self, i_first: int, inb_character: int, i_font_name: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -546,10 +562,11 @@ class DrawingText(AnyObject):
         :param int inb_character:
         :param str i_font_name:
         :return: None
+        :rtype: None
         """
         return self.drawing_text.SetFontName(i_first, inb_character, i_font_name)
 
-    def set_font_size(self, i_first, inb_character, i_font_size):
+    def set_font_size(self, i_first: int, inb_character: int, i_font_size: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -579,10 +596,11 @@ class DrawingText(AnyObject):
         :param int inb_character:
         :param float i_font_size:
         :return: None
+        :rtype: None
         """
         return self.drawing_text.SetFontSize(i_first, inb_character, i_font_size)
 
-    def set_modifiable_in2_d_component_instances(self):
+    def set_modifiable_in_2d_component_instances(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -599,10 +617,11 @@ class DrawingText(AnyObject):
                 |          MyText.SetModifiableIn2DComponentInstances
 
         :return: None
+        :rtype: None
         """
         return self.drawing_text.SetModifiableIn2DComponentInstances()
 
-    def set_parameter_on_sub_string(self, i_param, i_first, inb_character, i_val):
+    def set_parameter_on_sub_string(self, i_param: int, i_first: int, inb_character: int, i_val: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -636,13 +655,14 @@ class DrawingText(AnyObject):
                 |              MyText.SetParameterOnsubString iParam, iFirst, inbCharacter,
                 |              ival
 
-        :param CatTextProperty i_param:
+        :param int i_param:
         :param int i_first:
         :param int inb_character:
         :param int i_val:
         :return: None
+        :rtype: None
         """
-        return self.drawing_text.SetParameterOnSubString(i_param.com_object, i_first, inb_character, i_val)
+        return self.drawing_text.SetParameterOnSubString(i_param, i_first, inb_character, i_val)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code

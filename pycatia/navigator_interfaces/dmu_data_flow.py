@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class DMUDataFlow(AnyObject):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -34,10 +33,10 @@ class DMUDataFlow(AnyObject):
         super().__init__(com_object)
         self.dmu_data_flow = com_object
 
-    def cache_export(self, i_directory=None, i_prefix=None, i_data=None):
+    def cache_export(self, i_directory: str, i_prefix: str, i_data: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub CacheExport(CATBSTR iDirectory,
                 | CATBSTR iPrefix,
                 | long iData)
@@ -61,13 +60,14 @@ class DMUDataFlow(AnyObject):
         :param str i_prefix:
         :param int i_data:
         :return: None
+        :rtype: None
         """
         return self.dmu_data_flow.CacheExport(i_directory, i_prefix, i_data)
 
-    def cache_import(self, i_directory=None):
+    def cache_import(self, i_directory: str) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub CacheImport(CATBSTR iDirectory)
                 | 
                 |     Imports in the cache of marked documents in a directory.
@@ -79,26 +79,28 @@ class DMUDataFlow(AnyObject):
 
         :param str i_directory:
         :return: None
+        :rtype: None
         """
         return self.dmu_data_flow.CacheImport(i_directory)
 
-    def collapse(self):
+    def collapse(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Collapse()
                 | 
                 |     Collapse the product by replacing all sub-product by corresponding
                 |     components.
 
         :return: None
+        :rtype: None
         """
         return self.dmu_data_flow.Collapse()
 
-    def replace_by_cgr(self, i_directory=None, i_prefix=None):
+    def replace_by_cgr(self, i_directory: str, i_prefix: str) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ReplaceByCGR(CATBSTR iDirectory,
                 | CATBSTR iPrefix)
                 | 
@@ -115,13 +117,14 @@ class DMUDataFlow(AnyObject):
         :param str i_directory:
         :param str i_prefix:
         :return: None
+        :rtype: None
         """
         return self.dmu_data_flow.ReplaceByCGR(i_directory, i_prefix)
 
-    def save_as_frozen(self, i_directory=None, i_prefix=None, i_data=None, i_cache=None):
+    def save_as_frozen(self, i_directory: str, i_prefix: str, i_data: int, i_cache: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SaveAsFrozen(CATBSTR iDirectory,
                 | CATBSTR iPrefix,
                 | long iData,
@@ -152,8 +155,9 @@ class DMUDataFlow(AnyObject):
         :param int i_data:
         :param int i_cache:
         :return: None
+        :rtype: None
         """
         return self.dmu_data_flow.SaveAsFrozen(i_directory, i_prefix, i_data, i_cache)
 
     def __repr__(self):
-        return f'DmuDataFlow(name="{ self.name }")'
+        return f'DmuDataFlow(name="{self.name}")'

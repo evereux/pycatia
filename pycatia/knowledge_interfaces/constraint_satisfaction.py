@@ -37,7 +37,7 @@ class ConstraintSatisfaction(SetOfEquation):
         super().__init__(com_object)
         self.constraint_satisfaction = com_object
 
-    def solve(self):
+    def solve(self) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -46,6 +46,7 @@ class ConstraintSatisfaction(SetOfEquation):
                 |     Solves the constraint satisfaction problem.
 
         :return: None
+        :rtype: None
         """
         return self.constraint_satisfaction.Solve()
 

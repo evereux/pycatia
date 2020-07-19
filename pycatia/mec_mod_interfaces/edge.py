@@ -13,7 +13,6 @@ from pycatia.mec_mod_interfaces.boundary import Boundary
 
 
 class Edge(Boundary):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -58,13 +57,11 @@ class Edge(Boundary):
                 |      if (Status = "cancel") then Exit Sub
                 |      Set PlanarCurve = Selection.Item(1).Value
                 |      Set HybridShapeDirection = HybridShapeFactory.AddNewDirectionByCoord(1.0,0.0,0.0)
-                |      Set HybridShapePointTangent = HybridShapeFactory.AddNewPointTangent(PlanarCurve,HybridShapeDirection)
+                |      Set HybridShapePointTangent = HybridShapeFactory.
+                |                                        AddNewPointTangent(PlanarCurve,HybridShapeDirection)
                 |      HybridBody.AppendHybridShape HybridShapePointTangent
                 |      Document.Part.InWorkObject = HybridShapePointTangent
                 |      Document.Part.Update
-                |
-                |
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
 
     """
 
@@ -73,4 +70,4 @@ class Edge(Boundary):
         self.edge = com_object
 
     def __repr__(self):
-        return f'Edge(name="{ self.name }")'
+        return f'Edge(name="{self.name}")'

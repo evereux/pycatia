@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ class HybridShapeWrapSurface(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -49,10 +49,10 @@ class HybridShapeWrapSurface(HybridShape):
         self.hybrid_shape_wrap_surface = com_object
 
     @property
-    def deformation_mode(self):
+    def deformation_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DeformationMode() As long
                 | 
                 |     Returns or sets whether the wrap surface is or should be created as
@@ -70,12 +70,13 @@ class HybridShapeWrapSurface(HybridShape):
                 |          hybWrapSurface.3D deformation mode = 1
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_wrap_surface.DeformationMode
 
     @deformation_mode.setter
-    def deformation_mode(self, value):
+    def deformation_mode(self, value: int):
         """
         :param int value:
         """
@@ -83,10 +84,10 @@ class HybridShapeWrapSurface(HybridShape):
         self.hybrid_shape_wrap_surface.DeformationMode = value
 
     @property
-    def reference_surface(self):
+    def reference_surface(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ReferenceSurface() As Reference
                 | 
                 |     Returns or sets the reference surface of the WrapSurface. 
@@ -98,12 +99,13 @@ class HybridShapeWrapSurface(HybridShape):
                 |      ReferenceSurface = ShpWrapSurface.Surface
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_wrap_surface.ReferenceSurface)
 
     @reference_surface.setter
-    def reference_surface(self, value):
+    def reference_surface(self, value: Reference):
         """
         :param Reference value:
         """
@@ -111,10 +113,10 @@ class HybridShapeWrapSurface(HybridShape):
         self.hybrid_shape_wrap_surface.ReferenceSurface = value
 
     @property
-    def surface(self):
+    def surface(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Surface() As Reference
                 | 
                 |     Returns or sets the reference surface to deform of the WrapSurface.
@@ -127,12 +129,13 @@ class HybridShapeWrapSurface(HybridShape):
                 |      SurfaceToDeform = ShpWrapSurface.Surface
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_wrap_surface.Surface)
 
     @surface.setter
-    def surface(self, value):
+    def surface(self, value: Reference):
         """
         :param Reference value:
         """
@@ -140,10 +143,10 @@ class HybridShapeWrapSurface(HybridShape):
         self.hybrid_shape_wrap_surface.Surface = value
 
     @property
-    def target_surface(self):
+    def target_surface(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TargetSurface() As Reference
                 | 
                 |     Returns or sets the target surface of the WrapSurface. 
@@ -155,12 +158,13 @@ class HybridShapeWrapSurface(HybridShape):
                 |      TargetSurface = ShpWrapSurface.Surface
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_wrap_surface.TargetSurface)
 
     @target_surface.setter
-    def target_surface(self, value):
+    def target_surface(self, value: Reference):
         """
         :param Reference value:
         """

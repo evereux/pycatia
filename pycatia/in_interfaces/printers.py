@@ -11,10 +11,10 @@
 
 from pycatia.in_interfaces.printer import Printer
 from pycatia.system_interfaces.collection import Collection
+from pycatia.types import cat_variant
 
 
 class Printers(Collection):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -32,10 +32,10 @@ class Printers(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Printer)
         self.printers = com_object
 
-    def item(self, i_index):
+    def item(self, i_index: cat_variant) -> Printer:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -65,10 +65,11 @@ class Printers(Collection):
                 |          Dim ThatPrinter As Printer
                 |          Set ThatPrinter = CATIA.Printers.Item("LaserPrinter")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: Printer
+        :rtype: Printer
         """
         return Printer(self.printers.Item(i_index))
 
     def __repr__(self):
-        return f'Printers(name="{ self.name }")'
+        return f'Printers(name="{self.name}")'

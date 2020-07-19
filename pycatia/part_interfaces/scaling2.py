@@ -50,10 +50,10 @@ class Scaling2(Shape):
         self.scaling2 = com_object
 
     @property
-    def center(self):
+    def center(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Center() As Reference
                 | 
                 |     Returns or sets the reference element.This element can be a point or a
@@ -69,12 +69,13 @@ class Scaling2(Shape):
                 |          Set RefElem = Scaling2.Center
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.scaling2.Center)
 
     @center.setter
-    def center(self, value):
+    def center(self, value: Reference):
         """
         :param Reference value:
         """
@@ -82,24 +83,25 @@ class Scaling2(Shape):
         self.scaling2.Center = value
 
     @property
-    def ratio(self):
+    def ratio(self) -> RealParam:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Ratio() As RealParam (Read Only)
                 | 
                 |     Returns the scaling ratio.
 
         :return: RealParam
+        :rtype: RealParam
         """
 
         return RealParam(self.scaling2.Ratio)
 
     @property
-    def ratio_value(self):
+    def ratio_value(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RatioValue() As double
                 | 
                 |     Returns or sets the scaling ratio value.
@@ -112,12 +114,13 @@ class Scaling2(Shape):
                 |          Set Value = Scaling2.RatioValue
 
         :return: float
+        :rtype: float
         """
 
         return self.scaling2.RatioValue
 
     @ratio_value.setter
-    def ratio_value(self, value):
+    def ratio_value(self, value: float):
         """
         :param float value:
         """

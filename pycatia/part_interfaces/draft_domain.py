@@ -40,10 +40,10 @@ class DraftDomain(AnyObject):
         self.draft_domain = com_object
 
     @property
-    def draft_angle(self):
+    def draft_angle(self) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DraftAngle() As Angle (Read Only)
                 | 
                 |     Returns the draft angle.
@@ -55,15 +55,16 @@ class DraftDomain(AnyObject):
                 |          Set angle = firstDraftDomain.DraftAngle
 
         :return: Angle
+        :rtype: Angle
         """
 
         return Angle(self.draft_domain.DraftAngle)
 
     @property
-    def faces_to_draft(self):
+    def faces_to_draft(self) -> References:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FacesToDraft() As References (Read Only)
                 | 
                 |     Returns the faces to be drafted. They are returned as a collection of
@@ -76,15 +77,16 @@ class DraftDomain(AnyObject):
                 |          Set list = firstDraftDomain.FacesToDraft
 
         :return: References
+        :rtype: References
         """
 
         return References(self.draft_domain.FacesToDraft)
 
     @property
-    def multiselection_mode(self):
+    def multiselection_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MultiselectionMode() As CatDraftMultiselectionMode
                 | 
                 |     Changes the multiselection mode.
@@ -104,24 +106,25 @@ class DraftDomain(AnyObject):
                 |                  Set MultiselMode = firstDraftDomain.MultiselectionMode
                 |                  firstDraftDomain.MultiselectionMode = CATMultiselectionByNeutralMode
 
-        :return: enum cat_draft_multiselection_mode
+        :return: int
+        :rtype: int
         """
 
         return self.draft_domain.MultiselectionMode
 
     @multiselection_mode.setter
-    def multiselection_mode(self, value):
+    def multiselection_mode(self, value: int):
         """
-        :param enum cat_draft_multiselection_mode value:
+        :param int value:
         """
 
         self.draft_domain.MultiselectionMode = value
 
     @property
-    def neutral_element(self):
+    def neutral_element(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NeutralElement() As Reference
                 | 
                 |     Returns or sets the draft neutral element.
@@ -137,12 +140,13 @@ class DraftDomain(AnyObject):
                 |          firstDraftDomain.NeutralElement = newNeutral
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.draft_domain.NeutralElement)
 
     @neutral_element.setter
-    def neutral_element(self, value):
+    def neutral_element(self, value: Reference):
         """
         :param Reference value:
         """
@@ -150,10 +154,10 @@ class DraftDomain(AnyObject):
         self.draft_domain.NeutralElement = value
 
     @property
-    def neutral_propagation_mode(self):
+    def neutral_propagation_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NeutralPropagationMode() As
                 | CatDraftNeutralPropagationMode
                 | 
@@ -169,24 +173,25 @@ class DraftDomain(AnyObject):
                 |          Set propMode = firstDraftDomain.NeutralPropagationMode
                 |          firstDraftDomain.NeutralPropagationMode = CATSmoothDraftNeutralPropagationMode
 
-        :return: enum cat_draft_neutral_propagation_mode
+        :return: int
+        :rtype: int
         """
 
         return self.draft_domain.NeutralPropagationMode
 
     @neutral_propagation_mode.setter
-    def neutral_propagation_mode(self, value):
+    def neutral_propagation_mode(self, value: int):
         """
-        :param enum cat_draft_neutral_propagation_mode value:
+        :param int value:
         """
 
         self.draft_domain.NeutralPropagationMode = value
 
     @property
-    def pulling_direction_element(self):
+    def pulling_direction_element(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PullingDirectionElement() As Reference
                 | 
                 |     Returns or sets the draft pulling direction element.
@@ -202,22 +207,23 @@ class DraftDomain(AnyObject):
                 |          firstDraftDomain.PullingDirectionElement = newPullingDirection
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.draft_domain.PullingDirectionElement)
 
     @pulling_direction_element.setter
-    def pulling_direction_element(self, value):
+    def pulling_direction_element(self, value: Reference):
         """
         :param Reference value:
         """
 
         self.draft_domain.PullingDirectionElement = value
 
-    def add_face_to_draft(self, i_face):
+    def add_face_to_draft(self, i_face: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddFaceToDraft(Reference iFace)
                 | 
                 |     Adds a face to those to be drafted.
@@ -238,6 +244,7 @@ class DraftDomain(AnyObject):
 
         :param Reference i_face:
         :return: None
+        :rtype: None
         """
         return self.draft_domain.AddFaceToDraft(i_face.com_object)
         # # # # Autogenerated comment: 
@@ -256,10 +263,10 @@ class DraftDomain(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_pulling_direction(self, io_pulling_direction):
+    def get_pulling_direction(self, io_pulling_direction: tuple) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetPullingDirection(CATSafeArrayVariant
                 | ioPullingDirection)
                 | 
@@ -281,6 +288,7 @@ class DraftDomain(AnyObject):
 
         :param tuple io_pulling_direction:
         :return: None
+        :rtype: None
         """
         return self.draft_domain.GetPullingDirection(io_pulling_direction)
         # # # # Autogenerated comment: 
@@ -299,10 +307,10 @@ class DraftDomain(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def remove_face_to_draft(self, i_face):
+    def remove_face_to_draft(self, i_face: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveFaceToDraft(Reference iFace)
                 | 
                 |     Removes a face from those to be drafted.
@@ -323,6 +331,7 @@ class DraftDomain(AnyObject):
 
         :param Reference i_face:
         :return: None
+        :rtype: None
         """
         return self.draft_domain.RemoveFaceToDraft(i_face.com_object)
         # # # # Autogenerated comment: 
@@ -341,10 +350,10 @@ class DraftDomain(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_pulling_direction(self, i_x, i_y, i_z):
+    def set_pulling_direction(self, i_x: float, i_y: float, i_z: float) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPullingDirection(double iX,
                 | double iY,
                 | double iZ)
@@ -368,13 +377,14 @@ class DraftDomain(AnyObject):
         :param float i_y:
         :param float i_z:
         :return: None
+        :rtype: None
         """
         return self.draft_domain.SetPullingDirection(i_x, i_y, i_z)
 
-    def set_volume_support(self, i_volume_support):
+    def set_volume_support(self, i_volume_support: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetVolumeSupport(Reference iVolumeSupport)
                 | 
                 |     Value the support of draft.
@@ -385,6 +395,7 @@ class DraftDomain(AnyObject):
 
         :param Reference i_volume_support:
         :return: None
+        :rtype: None
         """
         return self.draft_domain.SetVolumeSupport(i_volume_support.com_object)
         # # # # Autogenerated comment: 

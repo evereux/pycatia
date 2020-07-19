@@ -41,21 +41,22 @@ class SurfaceBasedShape(Shape):
         self.surface_based_shape = com_object
 
     @property
-    def surface(self):
+    def surface(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Surface() As Reference
                 | 
                 |     Returns or sets the surface.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.surface_based_shape.Surface)
 
     @surface.setter
-    def surface(self, value):
+    def surface(self, value: Reference):
         """
         :param Reference value:
         """

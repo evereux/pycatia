@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -18,7 +18,7 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeConic(HybridShape):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -48,10 +48,10 @@ class HybridShapeConic(HybridShape):
         self.hybrid_shape_conic = com_object
 
     @property
-    def conic_parameter(self):
+    def conic_parameter(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ConicParameter() As double
                 | 
                 |     Returns or sets the conic parameter.
@@ -64,12 +64,13 @@ class HybridShapeConic(HybridShape):
                 |          Set conicParm = hybConic.ConicParameter
 
         :return: float
+        :rtype: float
         """
 
         return self.hybrid_shape_conic.ConicParameter
 
     @conic_parameter.setter
-    def conic_parameter(self, value):
+    def conic_parameter(self, value: float):
         """
         :param float value:
         """
@@ -77,10 +78,10 @@ class HybridShapeConic(HybridShape):
         self.hybrid_shape_conic.ConicParameter = value
 
     @property
-    def conic_user_tol(self):
+    def conic_user_tol(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ConicUserTol() As Length (Read Only)
                 | 
                 |     Gets or sets the conic User Tolerance.
@@ -97,15 +98,16 @@ class HybridShapeConic(HybridShape):
                 |         Length
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_conic.ConicUserTol)
 
     @property
-    def end_point(self):
+    def end_point(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property EndPoint() As Reference
                 | 
                 |     Returns or sets the conic end point.
@@ -119,12 +121,13 @@ class HybridShapeConic(HybridShape):
                 |          Set endPt = hybConic.EndPoint
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_conic.EndPoint)
 
     @end_point.setter
-    def end_point(self, value):
+    def end_point(self, value: Reference):
         """
         :param Reference value:
         """
@@ -132,10 +135,10 @@ class HybridShapeConic(HybridShape):
         self.hybrid_shape_conic.EndPoint = value
 
     @property
-    def end_tangent(self):
+    def end_tangent(self) -> HybridShapeDirection:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property EndTangent() As HybridShapeDirection
                 | 
                 |     Returns or sets the tangent direction at the conic end
@@ -149,12 +152,13 @@ class HybridShapeConic(HybridShape):
                 |          Set endTgt = hybConic.EndTangent
 
         :return: HybridShapeDirection
+        :rtype: HybridShapeDirection
         """
 
         return HybridShapeDirection(self.hybrid_shape_conic.EndTangent)
 
     @end_tangent.setter
-    def end_tangent(self, value):
+    def end_tangent(self, value: HybridShapeDirection):
         """
         :param HybridShapeDirection value:
         """
@@ -162,10 +166,10 @@ class HybridShapeConic(HybridShape):
         self.hybrid_shape_conic.EndTangent = value
 
     @property
-    def start_point(self):
+    def start_point(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property StartPoint() As Reference
                 | 
                 |     Returns or sets the conic start point.
@@ -180,12 +184,13 @@ class HybridShapeConic(HybridShape):
                 |          hybConic.StartPoint startPt
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_conic.StartPoint)
 
     @start_point.setter
-    def start_point(self, value):
+    def start_point(self, value: Reference):
         """
         :param Reference value:
         """
@@ -193,10 +198,10 @@ class HybridShapeConic(HybridShape):
         self.hybrid_shape_conic.StartPoint = value
 
     @property
-    def start_tangent(self):
+    def start_tangent(self) -> HybridShapeDirection:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property StartTangent() As HybridShapeDirection
                 | 
                 |     Returns or sets the tangent direction at the conic start
@@ -211,12 +216,13 @@ class HybridShapeConic(HybridShape):
                 |          hybConic.StartTangent startTgt
 
         :return: HybridShapeDirection
+        :rtype: HybridShapeDirection
         """
 
         return HybridShapeDirection(self.hybrid_shape_conic.StartTangent)
 
     @start_tangent.setter
-    def start_tangent(self, value):
+    def start_tangent(self, value: HybridShapeDirection):
         """
         :param HybridShapeDirection value:
         """
@@ -224,10 +230,10 @@ class HybridShapeConic(HybridShape):
         self.hybrid_shape_conic.StartTangent = value
 
     @property
-    def support_plane(self):
+    def support_plane(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SupportPlane() As Reference
                 | 
                 |     Returns or sets the conic supporting plane.
@@ -242,12 +248,13 @@ class HybridShapeConic(HybridShape):
                 |          Set supportPln = hybConic.SupportPlane
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_conic.SupportPlane)
 
     @support_plane.setter
-    def support_plane(self, value):
+    def support_plane(self, value: Reference):
         """
         :param Reference value:
         """
@@ -255,10 +262,10 @@ class HybridShapeConic(HybridShape):
         self.hybrid_shape_conic.SupportPlane = value
 
     @property
-    def tangent_int_point(self):
+    def tangent_int_point(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TangentIntPoint() As Reference
                 | 
                 |     Returns or sets the conic tangent intersection point.
@@ -272,22 +279,23 @@ class HybridShapeConic(HybridShape):
                 |          Set tgtIntPt = hybConic.TangentIntPoint
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_conic.TangentIntPoint)
 
     @tangent_int_point.setter
-    def tangent_int_point(self, value):
+    def tangent_int_point(self, value: Reference):
         """
         :param Reference value:
         """
 
         self.hybrid_shape_conic.TangentIntPoint = value
 
-    def get_end_tangent_direction_flag(self, o_orientation):
+    def get_end_tangent_direction_flag(self, o_orientation: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetEndTangentDirectionFlag(long oOrientation)
                 | 
                 |     Retrieves the tangent direction orientation at the conic end
@@ -313,13 +321,14 @@ class HybridShapeConic(HybridShape):
 
         :param int o_orientation:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_conic.GetEndTangentDirectionFlag(o_orientation)
 
-    def get_intermed_tangent(self, i_index_point):
+    def get_intermed_tangent(self, i_index_point: int) -> HybridShapeDirection:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetIntermedTangent(long iIndexPoint) As
                 | HybridShapeDirection
                 | 
@@ -350,13 +359,14 @@ class HybridShapeConic(HybridShape):
 
         :param int i_index_point:
         :return: HybridShapeDirection
+        :rtype: HybridShapeDirection
         """
         return HybridShapeDirection(self.hybrid_shape_conic.GetIntermedTangent(i_index_point))
 
-    def get_intermediate_point(self, i_index_point, o_end_point):
+    def get_intermediate_point(self, i_index_point: int, o_end_point: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetIntermediatePoint(long iIndexPoint,
                 | Reference oEndPoint)
                 | 
@@ -386,6 +396,7 @@ class HybridShapeConic(HybridShape):
         :param int i_index_point:
         :param Reference o_end_point:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_conic.GetIntermediatePoint(i_index_point, o_end_point.com_object)
         # # # # Autogenerated comment: 
@@ -404,10 +415,10 @@ class HybridShapeConic(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_intermediate_tangent_direction_flag(self, i_index_point, o_orientation):
+    def get_intermediate_tangent_direction_flag(self, i_index_point: int, o_orientation: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetIntermediateTangentDirectionFlag(long iIndexPoint,
                 | long oOrientation)
                 | 
@@ -442,13 +453,14 @@ class HybridShapeConic(HybridShape):
         :param int i_index_point:
         :param int o_orientation:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_conic.GetIntermediateTangentDirectionFlag(i_index_point, o_orientation)
 
-    def get_start_tangent_direction_flag(self, o_orientation):
+    def get_start_tangent_direction_flag(self, o_orientation: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetStartTangentDirectionFlag(long oOrientation)
                 | 
                 |     Retrieves the tangent direction orientation at the conic start
@@ -475,13 +487,14 @@ class HybridShapeConic(HybridShape):
 
         :param int o_orientation:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_conic.GetStartTangentDirectionFlag(o_orientation)
 
-    def set_end_tangent_direction_flag(self, i_orientation):
+    def set_end_tangent_direction_flag(self, i_orientation: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetEndTangentDirectionFlag(long iOrientation)
                 | 
                 |     Sets the tangent direction orientation at the conic end
@@ -509,13 +522,14 @@ class HybridShapeConic(HybridShape):
 
         :param int i_orientation:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_conic.SetEndTangentDirectionFlag(i_orientation)
 
-    def set_intermediate_point(self, i_index_point, i_end_point):
+    def set_intermediate_point(self, i_index_point: int, i_end_point: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetIntermediatePoint(long iIndexPoint,
                 | Reference iEndPoint)
                 | 
@@ -548,6 +562,7 @@ class HybridShapeConic(HybridShape):
         :param int i_index_point:
         :param Reference i_end_point:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_conic.SetIntermediatePoint(i_index_point, i_end_point.com_object)
         # # # # Autogenerated comment: 
@@ -566,10 +581,10 @@ class HybridShapeConic(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_intermediate_tangent(self, i_index_point, i_tgt_dir):
+    def set_intermediate_tangent(self, i_index_point: int, i_tgt_dir: HybridShapeDirection) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetIntermediateTangent(long iIndexPoint,
                 | HybridShapeDirection iTgtDir)
                 | 
@@ -602,6 +617,7 @@ class HybridShapeConic(HybridShape):
         :param int i_index_point:
         :param HybridShapeDirection i_tgt_dir:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_conic.SetIntermediateTangent(i_index_point, i_tgt_dir.com_object)
         # # # # Autogenerated comment: 
@@ -620,10 +636,10 @@ class HybridShapeConic(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_intermediate_tangent_direction_flag(self, i_index_point, i_orientation):
+    def set_intermediate_tangent_direction_flag(self, i_index_point: int, i_orientation: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetIntermediateTangentDirectionFlag(long iIndexPoint,
                 | long iOrientation)
                 | 
@@ -660,13 +676,15 @@ class HybridShapeConic(HybridShape):
         :param int i_index_point:
         :param int i_orientation:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_conic.SetIntermediateTangentDirectionFlag(i_index_point, i_orientation)
 
-    def set_start_and_end_tangents_plus_conic_parameter(self, i_start_tgt, i_end_tgt, i_conic_param):
+    def set_start_and_end_tangents_plus_conic_parameter(self, i_start_tgt: HybridShapeDirection,
+                                                        i_end_tgt: HybridShapeDirection, i_conic_param: float) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetStartAndEndTangentsPlusConicParameter(HybridShapeDirection
                 | iStartTgt,
                 | HybridShapeDirection iEndTgt,
@@ -700,12 +718,10 @@ class HybridShapeConic(HybridShape):
         :param HybridShapeDirection i_end_tgt:
         :param float i_conic_param:
         :return: None
+        :rtype: None
         """
-        return self.hybrid_shape_conic.SetStartAndEndTangentsPlusConicParameter(
-            i_start_tgt.com_object,
-            i_end_tgt.com_object,
-            i_conic_param
-        )
+        return self.hybrid_shape_conic.SetStartAndEndTangentsPlusConicParameter(i_start_tgt.com_object,
+                                                                                i_end_tgt.com_object, i_conic_param)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -722,10 +738,11 @@ class HybridShapeConic(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_start_and_end_tangents_plus_passing_point(self, i_start_tgt, i_end_tgt, i_passing_pt):
+    def set_start_and_end_tangents_plus_passing_point(self, i_start_tgt: HybridShapeDirection,
+                                                      i_end_tgt: HybridShapeDirection, i_passing_pt: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetStartAndEndTangentsPlusPassingPoint(HybridShapeDirection
                 | iStartTgt,
                 | HybridShapeDirection iEndTgt,
@@ -763,12 +780,11 @@ class HybridShapeConic(HybridShape):
         :param HybridShapeDirection i_end_tgt:
         :param Reference i_passing_pt:
         :return: None
+        :rtype: None
         """
-        return self.hybrid_shape_conic.SetStartAndEndTangentsPlusPassingPoint(
-            i_start_tgt.com_object,
-            i_end_tgt.com_object,
-            i_passing_pt.com_object
-        )
+        return self.hybrid_shape_conic.SetStartAndEndTangentsPlusPassingPoint(i_start_tgt.com_object,
+                                                                              i_end_tgt.com_object,
+                                                                              i_passing_pt.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -785,10 +801,10 @@ class HybridShapeConic(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_start_tangent_direction_flag(self, i_orientation):
+    def set_start_tangent_direction_flag(self, i_orientation: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetStartTangentDirectionFlag(long iOrientation)
                 | 
                 |     Sets the tangent direction orientation at the conic start
@@ -817,13 +833,14 @@ class HybridShapeConic(HybridShape):
 
         :param int i_orientation:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_conic.SetStartTangentDirectionFlag(i_orientation)
 
-    def set_tangent_intersect_point_plus_conic_parm(self, i_tgt_int, i_conic_param):
+    def set_tangent_intersect_point_plus_conic_parm(self, i_tgt_int: Reference, i_conic_param: float) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetTangentIntersectPointPlusConicParm(Reference
                 | iTgtInt,
                 | double iConicParam)
@@ -856,6 +873,7 @@ class HybridShapeConic(HybridShape):
         :param Reference i_tgt_int:
         :param float i_conic_param:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_conic.SetTangentIntersectPointPlusConicParm(i_tgt_int.com_object, i_conic_param)
         # # # # Autogenerated comment: 
@@ -874,10 +892,10 @@ class HybridShapeConic(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_tangent_intersect_point_plus_passing_point(self, i_tgt_int, i_passing_pt):
+    def set_tangent_intersect_point_plus_passing_point(self, i_tgt_int: Reference, i_passing_pt: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetTangentIntersectPointPlusPassingPoint(Reference
                 | iTgtInt,
                 | Reference iPassingPt)
@@ -914,11 +932,10 @@ class HybridShapeConic(HybridShape):
         :param Reference i_tgt_int:
         :param Reference i_passing_pt:
         :return: None
+        :rtype: None
         """
-        return self.hybrid_shape_conic.SetTangentIntersectPointPlusPassingPoint(
-            i_tgt_int.com_object,
-            i_passing_pt.com_object
-        )
+        return self.hybrid_shape_conic.SetTangentIntersectPointPlusPassingPoint(i_tgt_int.com_object,
+                                                                                i_passing_pt.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -935,10 +952,11 @@ class HybridShapeConic(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_three_intermediate_passing_points(self, i_pass_pt1, i_pass_pt2, i_pass_pt3):
+    def set_three_intermediate_passing_points(self, i_pass_pt1: Reference, i_pass_pt2: Reference,
+                                              i_pass_pt3: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetThreeIntermediatePassingPoints(Reference iPassPt1,
                 | Reference iPassPt2,
                 | Reference iPassPt3)
@@ -975,12 +993,10 @@ class HybridShapeConic(HybridShape):
         :param Reference i_pass_pt2:
         :param Reference i_pass_pt3:
         :return: None
+        :rtype: None
         """
-        return self.hybrid_shape_conic.SetThreeIntermediatePassingPoints(
-            i_pass_pt1.com_object,
-            i_pass_pt2.com_object,
-            i_pass_pt3.com_object
-        )
+        return self.hybrid_shape_conic.SetThreeIntermediatePassingPoints(i_pass_pt1.com_object, i_pass_pt2.com_object,
+                                                                         i_pass_pt3.com_object)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -997,10 +1013,12 @@ class HybridShapeConic(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_two_intermediate_passing_points_plus_one_tangent(self, i_pass_pt1, i_pass_pt2, i_tgt_dir, i_index_point):
+    def set_two_intermediate_passing_points_plus_one_tangent(self, i_pass_pt1: Reference, i_pass_pt2: Reference,
+                                                             i_tgt_dir: HybridShapeDirection,
+                                                             i_index_point: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetTwoIntermediatePassingPointsPlusOneTangent(Reference
                 | iPassPt1,
                 | Reference iPassPt2,
@@ -1047,13 +1065,12 @@ class HybridShapeConic(HybridShape):
         :param HybridShapeDirection i_tgt_dir:
         :param int i_index_point:
         :return: None
+        :rtype: None
         """
-        return self.hybrid_shape_conic.SetTwoIntermediatePassingPointsPlusOneTangent(
-            i_pass_pt1.com_object,
-            i_pass_pt2.com_object,
-            i_tgt_dir.com_object,
-            i_index_point
-        )
+        return self.hybrid_shape_conic.SetTwoIntermediatePassingPointsPlusOneTangent(i_pass_pt1.com_object,
+                                                                                     i_pass_pt2.com_object,
+                                                                                     i_tgt_dir.com_object,
+                                                                                     i_index_point)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1070,10 +1087,10 @@ class HybridShapeConic(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def switch_end_tangent_direction(self):
+    def switch_end_tangent_direction(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SwitchEndTangentDirection()
                 | 
                 |     Inverts the tangent direction orientation at the conic end
@@ -1089,13 +1106,14 @@ class HybridShapeConic(HybridShape):
                 |          hybConic.SwitchEndTangentDirection
 
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_conic.SwitchEndTangentDirection()
 
-    def switch_intermediate_tangent_direction(self, i_index_point):
+    def switch_intermediate_tangent_direction(self, i_index_point: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SwitchIntermediateTangentDirection(long iIndexPoint)
                 | 
                 |     Inverts the tangent direction orientation of one of the conic intermediate
@@ -1122,13 +1140,14 @@ class HybridShapeConic(HybridShape):
 
         :param int i_index_point:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_conic.SwitchIntermediateTangentDirection(i_index_point)
 
-    def switch_start_tangent_direction(self):
+    def switch_start_tangent_direction(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SwitchStartTangentDirection()
                 | 
                 |     Inverts the tangent direction orientation at the conic start
@@ -1144,6 +1163,7 @@ class HybridShapeConic(HybridShape):
                 |          hybConic.SwitchStartTangentDirection
 
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_conic.SwitchStartTangentDirection()
 

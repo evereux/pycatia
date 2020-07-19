@@ -16,7 +16,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class DrawingWelding(AnyObject):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -37,7 +36,7 @@ class DrawingWelding(AnyObject):
         self.drawing_welding = com_object
 
     @property
-    def angle(self):
+    def angle(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -57,12 +56,13 @@ class DrawingWelding(AnyObject):
                 |          MyText.Angle = Angle90Clockwise
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_welding.Angle
 
     @angle.setter
-    def angle(self, value):
+    def angle(self, value: float):
         """
         :param float value:
         """
@@ -70,7 +70,7 @@ class DrawingWelding(AnyObject):
         self.drawing_welding.Angle = value
 
     @property
-    def identification_line_side(self):
+    def identification_line_side(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -87,21 +87,22 @@ class DrawingWelding(AnyObject):
                 | 
                 |          MyWeld.IdentificationLineSide = catWeldingUp
 
-        :return: enum cat_welding_side
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_welding.IdentificationLineSide
 
     @identification_line_side.setter
-    def identification_line_side(self, value):
+    def identification_line_side(self, value: int):
         """
-        :param enum cat_welding_side value:
+        :param int value:
         """
 
         self.drawing_welding.IdentificationLineSide = value
 
     @property
-    def leaders(self):
+    def leaders(self) -> DrawingLeaders:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -118,12 +119,13 @@ class DrawingWelding(AnyObject):
                 |          Set LeaderCollection = MyWelding.Leaders
 
         :return: DrawingLeaders
+        :rtype: DrawingLeaders
         """
 
         return DrawingLeaders(self.drawing_welding.Leaders)
 
     @property
-    def text_properties(self):
+    def text_properties(self) -> DrawingTextProperties:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -140,12 +142,13 @@ class DrawingWelding(AnyObject):
                 |          Set TextProperties = MyWelding.TextProperties
 
         :return: DrawingTextProperties
+        :rtype: DrawingTextProperties
         """
 
         return DrawingTextProperties(self.drawing_welding.TextProperties)
 
     @property
-    def welding_side(self):
+    def welding_side(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -159,21 +162,22 @@ class DrawingWelding(AnyObject):
                 | 
                 |          MyWeld.WeldingSide = catWeldingUp
 
-        :return: enum cat_welding_side
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_welding.WeldingSide
 
     @welding_side.setter
-    def welding_side(self, value):
+    def welding_side(self, value: int):
         """
-        :param enum cat_welding_side value:
+        :param int value:
         """
 
         self.drawing_welding.WeldingSide = value
 
     @property
-    def welding_tail(self):
+    def welding_tail(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -187,21 +191,22 @@ class DrawingWelding(AnyObject):
                 | 
                 |          MyWeld.WeldingTail = catDftWeldingTailYES
 
-        :return: enum cat_dft_welding_tail
+        :return: int
+        :rtype: int
         """
 
         return self.drawing_welding.WeldingTail
 
     @welding_tail.setter
-    def welding_tail(self, value):
+    def welding_tail(self, value: int):
         """
-        :param enum cat_dft_welding_tail value:
+        :param int value:
         """
 
         self.drawing_welding.WeldingTail = value
 
     @property
-    def x(self):
+    def x(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -218,12 +223,13 @@ class DrawingWelding(AnyObject):
                 |          X = MyWelding.x
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_welding.x
 
     @x.setter
-    def x(self, value):
+    def x(self, value: float):
         """
         :param float value:
         """
@@ -231,7 +237,7 @@ class DrawingWelding(AnyObject):
         self.drawing_welding.x = value
 
     @property
-    def y(self):
+    def y(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -250,19 +256,20 @@ class DrawingWelding(AnyObject):
                 |          MyWelding.y = NewYCoordinate
 
         :return: float
+        :rtype: float
         """
 
         return self.drawing_welding.y
 
     @y.setter
-    def y(self, value):
+    def y(self, value: float):
         """
         :param float value:
         """
 
         self.drawing_welding.y = value
 
-    def get_additional_symbol(self, i_weld):
+    def get_additional_symbol(self, i_weld: int) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -282,12 +289,13 @@ class DrawingWelding(AnyObject):
                 | 
                 |                  MyWelding.Symbol = DftConcaveSymbol
 
-        :param CatWelding i_weld:
+        :param int i_weld:
         :return: enum cat_weld_additional_symbol
+        :rtype: int
         """
-        return self.drawing_welding.GetAdditionalSymbol(i_weld.com_object)
+        return self.drawing_welding.GetAdditionalSymbol(i_weld)
 
-    def get_finish_symbol(self, i_weld):
+    def get_finish_symbol(self, i_weld: int) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -307,12 +315,13 @@ class DrawingWelding(AnyObject):
                 | 
                 |                  MyWelding.GetFinishSymbol(catWeldingFieldOne,oFinishSymbol)
 
-        :param CatWelding i_weld:
+        :param int i_weld:
         :return: enum cat_dft_weld_finish_symbol
+        :rtype: int
         """
-        return self.drawing_welding.GetFinishSymbol(i_weld.com_object)
+        return self.drawing_welding.GetFinishSymbol(i_weld)
 
-    def get_symbol(self, i_weld):
+    def get_symbol(self, i_weld: int) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -333,12 +342,13 @@ class DrawingWelding(AnyObject):
                 | 
                 |                  MyWelding.GetSymbol(catWeldingFieldOne,oSymbol)
 
-        :param CatWelding i_weld:
+        :param int i_weld:
         :return: enum cat_welding_symbol
+        :rtype: int
         """
-        return self.drawing_welding.GetSymbol(i_weld.com_object)
+        return self.drawing_welding.GetSymbol(i_weld)
 
-    def get_text_range(self, i_field):
+    def get_text_range(self, i_field: int) -> DrawingTextRange:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -363,12 +373,13 @@ class DrawingWelding(AnyObject):
                 |      Dim textRange As DrawingTextRange
                 |      Set textRange = MyWelding.GetTextRange (catWeldingUp)
 
-        :param CatWeldingField i_field:
+        :param int i_field:
         :return: DrawingTextRange
+        :rtype: DrawingTextRange
         """
-        return DrawingTextRange(self.drawing_welding.GetTextRange(i_field.com_object))
+        return DrawingTextRange(self.drawing_welding.GetTextRange(i_field))
 
-    def set_additional_symbol(self, i_symbol, iweld):
+    def set_additional_symbol(self, i_symbol: int, i_weld: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -390,28 +401,14 @@ class DrawingWelding(AnyObject):
                 | 
                 |                  MyWelding.Symbol = DftConcaveSymbol
 
-        :param CatWeldAdditionalSymbol i_symbol:
-        :param CatWelding iweld:
+        :param int i_symbol:
+        :param int i_weld:
         :return: None
+        :rtype: None
         """
-        return self.drawing_welding.SetAdditionalSymbol(i_symbol.com_object, iweld.com_object)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_additional_symbol'
-        # # vba_code = """
-        # # Public Function set_additional_symbol(drawing_welding)
-        # #     Dim iSymbol (2)
-        # #     drawing_welding.SetAdditionalSymbol iSymbol
-        # #     set_additional_symbol = iSymbol
-        # # End Function
-        # # """
+        return self.drawing_welding.SetAdditionalSymbol(i_symbol, i_weld)
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def set_finish_symbol(self, i_finish_symbol, i_weld):
+    def set_finish_symbol(self, i_finish_symbol: int, i_weld: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -434,28 +431,14 @@ class DrawingWelding(AnyObject):
                 |                 
                 |                 MyWelding.GetFinishSymbol(catWeldingFieldOne,catDftLetterCWelding)
 
-        :param CatDftWeldFinishSymbol i_finish_symbol:
-        :param CatWelding i_weld:
+        :param int i_finish_symbol:
+        :param int i_weld:
         :return: None
+        :rtype: None
         """
-        return self.drawing_welding.SetFinishSymbol(i_finish_symbol.com_object, i_weld.com_object)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_finish_symbol'
-        # # vba_code = """
-        # # Public Function set_finish_symbol(drawing_welding)
-        # #     Dim iFinishSymbol (2)
-        # #     drawing_welding.SetFinishSymbol iFinishSymbol
-        # #     set_finish_symbol = iFinishSymbol
-        # # End Function
-        # # """
+        return self.drawing_welding.SetFinishSymbol(i_finish_symbol, i_weld)
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def set_symbol(self, i_symbol, iweld):
+    def set_symbol(self, i_symbol: int, i_weld: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -477,26 +460,12 @@ class DrawingWelding(AnyObject):
                 | 
                 |                  MyWelding.SetSymbol(catSquareWelding,catWeldingFieldOne)
 
-        :param CatWeldingSymbol i_symbol:
-        :param CatWelding iweld:
+        :param int i_symbol:
+        :param int i_weld:
         :return: None
+        :rtype: None
         """
-        return self.drawing_welding.SetSymbol(i_symbol.com_object, iweld.com_object)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'set_symbol'
-        # # vba_code = """
-        # # Public Function set_symbol(drawing_welding)
-        # #     Dim iSymbol (2)
-        # #     drawing_welding.SetSymbol iSymbol
-        # #     set_symbol = iSymbol
-        # # End Function
-        # # """
-
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return self.drawing_welding.SetSymbol(i_symbol, i_weld)
 
     def __repr__(self):
-        return f'DrawingWelding(name="{ self.name }")'
+        return f'DrawingWelding(name="{self.name}")'

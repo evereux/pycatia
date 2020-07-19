@@ -11,10 +11,10 @@
 
 from pycatia.in_interfaces.reference import Reference
 from pycatia.system_interfaces.collection import Collection
+from pycatia.types import cat_variant
 
 
 class References(Collection):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -34,10 +34,10 @@ class References(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Reference)
         self.references = com_object
 
-    def item(self, i_index):
+    def item(self, i_index: cat_variant) -> Reference:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -65,10 +65,11 @@ class References(Collection):
                 |          Dim LastRef As Reference
                 |          Set LastRef = RefList.Item(RefList.Count)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: Reference
+        :rtype: Reference
         """
         return Reference(self.references.Item(i_index))
 
     def __repr__(self):
-        return f'References(name="{ self.name }")'
+        return f'References(name="{self.name}")'

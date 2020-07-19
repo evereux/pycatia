@@ -11,10 +11,10 @@
 
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.types import cat_variant
 
 
 class Group(AnyObject):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -64,10 +64,10 @@ class Group(AnyObject):
         self.group = com_object
 
     @property
-    def extract_mode(self):
+    def extract_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExtractMode() As long
                 | 
                 |     Returns or sets the mode for the extraction methods.
@@ -91,22 +91,23 @@ class Group(AnyObject):
                 |             NewGroup.ExtractMode = 1
 
         :return: int
+        :rtype: int
         """
 
         return self.group.ExtractMode
 
     @extract_mode.setter
-    def extract_mode(self, value):
+    def extract_mode(self, value: int):
         """
         :param int value:
         """
 
         self.group.ExtractMode = value
 
-    def add_explicit(self, i_product=None):
+    def add_explicit(self, i_product: AnyObject) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddExplicit(CATBaseDispatch iProduct)
                 | 
                 |     Adds a product to the group.
@@ -126,13 +127,14 @@ class Group(AnyObject):
 
         :param AnyObject i_product:
         :return: None
+        :rtype: None
         """
         return self.group.AddExplicit(i_product.com_object)
 
-    def count_explicit(self):
+    def count_explicit(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func CountExplicit() As long
                 | 
                 |     Returns the number of products in the group.
@@ -147,13 +149,14 @@ class Group(AnyObject):
                 |             number = NewGroup.CountExplicit
 
         :return: int
+        :rtype: int
         """
         return self.group.CountExplicit()
 
-    def count_extract(self):
+    def count_extract(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func CountExtract() As long
                 | 
                 |     Returns the number of products which can be extracted from the
@@ -177,13 +180,14 @@ class Group(AnyObject):
                 |             number = NewGroup.CountExtract
 
         :return: int
+        :rtype: int
         """
         return self.group.CountExtract()
 
-    def count_invert(self):
+    def count_invert(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func CountInvert() As long
                 | 
                 |     Returns the number of terminal node products which cannot be extracted from
@@ -199,13 +203,14 @@ class Group(AnyObject):
                 |             number = NewGroup.CountInvert
 
         :return: int
+        :rtype: int
         """
         return self.group.CountInvert()
 
-    def fill_sel_with_extract(self):
+    def fill_sel_with_extract(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub FillSelWithExtract()
                 | 
                 |     Fills the selection with all products which can be extracted from the
@@ -221,13 +226,14 @@ class Group(AnyObject):
                 |             NewGroup.FillSelWithExtract
 
         :return: None
+        :rtype: None
         """
         return self.group.FillSelWithExtract()
 
-    def fill_sel_with_invert(self):
+    def fill_sel_with_invert(self) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub FillSelWithInvert()
                 | 
                 |     Fills the selection with all terminal node products which cannot be
@@ -243,13 +249,14 @@ class Group(AnyObject):
                 |             NewGroup.FillSelWithInvert
 
         :return: None
+        :rtype: None
         """
         return self.group.FillSelWithInvert()
 
-    def item_explicit(self, i_index=None):
+    def item_explicit(self, i_index: cat_variant) -> AnyObject:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func ItemExplicit(CATVariant iIndex) As CATBaseDispatch
                 | 
                 |     Returns a product using its index in the group.
@@ -273,15 +280,16 @@ class Group(AnyObject):
                 |             Dim ThisProduct As Product
                 |             Set ThisProduct = NewGroup.ItemExplicit(9)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: AnyObject
+        :rtype: AnyObject
         """
-        return self.group.ItemExplicit(i_index.com_object)
+        return self.group.ItemExplicit(i_index)
 
-    def item_extract(self, i_index=None):
+    def item_extract(self, i_index: cat_variant) -> Product:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func ItemExtract(CATVariant iIndex) As Product
                 | 
                 |     Returns a product which can be extracted from the group using its
@@ -306,15 +314,16 @@ class Group(AnyObject):
                 |             Dim ThisProduct As Group
                 |             Set ThisProduct = NewGroup.ItemExtract(9)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: Product
+        :rtype: Product
         """
-        return Product(self.group.ItemExtract(i_index.com_object))
+        return Product(self.group.ItemExtract(i_index))
 
-    def item_invert(self, i_index=None):
+    def item_invert(self, i_index: cat_variant) -> Product:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func ItemInvert(CATVariant iIndex) As Product
                 | 
                 |     Returns a terminal node product which cannot be extracted from the group
@@ -339,15 +348,16 @@ class Group(AnyObject):
                 |             Dim ThisProduct As Group
                 |             Set ThisProduct = NewGroup.ItemInvert(9)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: Product
+        :rtype: Product
         """
-        return Product(self.group.ItemInvert(i_index.com_object))
+        return Product(self.group.ItemInvert(i_index))
 
-    def remove_explicit(self, i_index=None):
+    def remove_explicit(self, i_index: cat_variant) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveExplicit(CATVariant iIndex)
                 | 
                 |     Removes a product from the group using its index.
@@ -367,25 +377,11 @@ class Group(AnyObject):
                 | 
                 |             NewGroup.RemoveExplicit 10
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: None
+        :rtype: None
         """
-        return self.group.RemoveExplicit(i_index.com_object)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'remove_explicit'
-        # # vba_code = """
-        # # Public Function remove_explicit(group)
-        # #     Dim iIndex (2)
-        # #     group.RemoveExplicit iIndex
-        # #     remove_explicit = iIndex
-        # # End Function
-        # # """
-
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return self.group.RemoveExplicit(i_index)
 
     def __repr__(self):
-        return f'Group(name="{ self.name }")'
+        return f'Group(name="{self.name}")'

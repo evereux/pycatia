@@ -41,7 +41,7 @@ class Relation(KnowledgeActivateObject):
         self.relation = com_object
 
     @property
-    def comment(self):
+    def comment(self) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -59,12 +59,13 @@ class Relation(KnowledgeActivateObject):
                 |          MsgBox "maximummass comment : " & relcomment
 
         :return: str
+        :rtype: str
         """
 
         return self.relation.Comment
 
     @comment.setter
-    def comment(self, value):
+    def comment(self, value: str):
         """
         :param str value:
         """
@@ -72,7 +73,7 @@ class Relation(KnowledgeActivateObject):
         self.relation.Comment = value
 
     @property
-    def context(self):
+    def context(self) -> AnyObject:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -88,12 +89,13 @@ class Relation(KnowledgeActivateObject):
                 |         Part, Product, CATIADrawing, CATIAProcess
 
         :return: AnyObject
+        :rtype: AnyObject
         """
 
         return AnyObject(self.relation.Context)
 
     @property
-    def nb_in_parameters(self):
+    def nb_in_parameters(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -102,12 +104,13 @@ class Relation(KnowledgeActivateObject):
                 |     Returns the number of input parameters of the relation.
 
         :return: int
+        :rtype: int
         """
 
         return self.relation.NbInParameters
 
     @property
-    def nb_out_parameters(self):
+    def nb_out_parameters(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -118,12 +121,13 @@ class Relation(KnowledgeActivateObject):
                 |     relation.
 
         :return: int
+        :rtype: int
         """
 
         return self.relation.NbOutParameters
 
     @property
-    def value(self):
+    def value(self) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -143,11 +147,12 @@ class Relation(KnowledgeActivateObject):
                 |          MsgBox "maximummass relation is defined as " & reldef
 
         :return: str
+        :rtype: str
         """
 
         return self.relation.Value
 
-    def get_in_parameter(self, i_index):
+    def get_in_parameter(self, i_index: int) -> AnyObject:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -181,10 +186,11 @@ class Relation(KnowledgeActivateObject):
 
         :param int i_index:
         :return: AnyObject
+        :rtype: AnyObject
         """
         return AnyObject(self.relation.GetInParameter(i_index))
 
-    def get_out_parameter(self, i_index):
+    def get_out_parameter(self, i_index: int) -> 'Parameter':
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -204,11 +210,12 @@ class Relation(KnowledgeActivateObject):
 
         :param int i_index:
         :return: Parameter
+        :rtype: Parameter
         """
         from pycatia.knowledge_interfaces.parameter import Parameter
         return Parameter(self.relation.GetOutParameter(i_index))
 
-    def modify(self, i_value):
+    def modify(self, i_value: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -223,10 +230,11 @@ class Relation(KnowledgeActivateObject):
 
         :param str i_value:
         :return: None
+        :rtype: None
         """
         return self.relation.Modify(i_value)
 
-    def rename(self, i_name):
+    def rename(self, i_name: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -241,6 +249,7 @@ class Relation(KnowledgeActivateObject):
 
         :param str i_name:
         :return: None
+        :rtype: None
         """
         return self.relation.Rename(i_name)
 

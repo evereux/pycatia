@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -16,7 +16,7 @@ from pycatia.in_interfaces.reference import Reference
 class HybridShapeLineBiTangent(Line):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -38,10 +38,10 @@ class HybridShapeLineBiTangent(Line):
         self.hybrid_shape_line_bi_tangent = com_object
 
     @property
-    def curve1(self):
+    def curve1(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Curve1() As Reference
                 | 
                 |     Returns or Sets the first tangency curve lying on the support
@@ -57,12 +57,13 @@ class HybridShapeLineBiTangent(Line):
                 |          Set oCurve = LineBiTangent.Curve1
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_line_bi_tangent.Curve1)
 
     @curve1.setter
-    def curve1(self, value):
+    def curve1(self, value: Reference):
         """
         :param Reference value:
         """
@@ -70,10 +71,10 @@ class HybridShapeLineBiTangent(Line):
         self.hybrid_shape_line_bi_tangent.Curve1 = value
 
     @property
-    def element2(self):
+    def element2(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Element2() As Reference
                 | 
                 |     Returns or Sets the second tangency element (point, curve) lying on the
@@ -89,12 +90,13 @@ class HybridShapeLineBiTangent(Line):
                 |          Set oElement = LineBiTangent.Element2
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_line_bi_tangent.Element2)
 
     @element2.setter
-    def element2(self, value):
+    def element2(self, value: Reference):
         """
         :param Reference value:
         """
@@ -102,10 +104,10 @@ class HybridShapeLineBiTangent(Line):
         self.hybrid_shape_line_bi_tangent.Element2 = value
 
     @property
-    def support(self):
+    def support(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
                 |     Returns or Sets the supporting surface.
@@ -119,22 +121,23 @@ class HybridShapeLineBiTangent(Line):
                 |          Set oSurface = LineBiTangent.Surface
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_line_bi_tangent.Support)
 
     @support.setter
-    def support(self, value):
+    def support(self, value: Reference):
         """
         :param Reference value:
         """
 
         self.hybrid_shape_line_bi_tangent.Support = value
 
-    def get_choice_no(self, val1, val2, val3, val4, val5):
+    def get_choice_no(self, val1: int, val2: int, val3: int, val4: int, val5: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetChoiceNo(long val1,
                 | long val2,
                 | long val3,
@@ -163,9 +166,9 @@ class HybridShapeLineBiTangent(Line):
                 |     It can take 3 values:
                 | 
                 |         +1 : curvature direction of curve and cross product of support normal and result direction
-                |         are in the same direction,
+                |              are in the same direction,
                 |         -1 : curvature direction of curve and cross product of support normal and result direction
-                |         are in opposite directions,
+                |              are in opposite directions,
                 |         0 : no orientation is specified.
                 | 
                 |     val4 = oOriTgt2
@@ -187,9 +190,9 @@ class HybridShapeLineBiTangent(Line):
                 |     It can take 3 values:
                 | 
                 |         +1 : curvature direction of curve and cross product of support normal and result direction
-                |         are in the same direction,
+                |              are in the same direction,
                 |         -1 : curvature direction of curve and cross product of support normal and result direction
-                |         are in opposite directions,
+                |              are in opposite directions,
                 |         0 : no orientation is specified.
                 | 
                 |     Example:
@@ -209,13 +212,14 @@ class HybridShapeLineBiTangent(Line):
         :param int val4:
         :param int val5:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_line_bi_tangent.GetChoiceNo(val1, val2, val3, val4, val5)
 
-    def get_length_type(self):
+    def get_length_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetLengthType() As long
                 | 
                 |     Gets the length type Default is 0.
@@ -223,19 +227,20 @@ class HybridShapeLineBiTangent(Line):
                 |     Parameters:
                 | 
                 |         oType
-                |             The length type = 0 : length - the line is limited by its extremities = 1 :
-                |             infinite - the line is infinite = 2 : infinite start point - the line is infinite on
+                |             The length type = 0 : length - the line is limited by its extremities =
+                |             1 : infinite - the line is infinite = 2 : infinite start point - the line is infinite on
                 |             the side of the start point = 3 : infinite end point - the line is infinite on the side
                 |             of the end point
 
         :return: int
+        :rtype: int
         """
         return self.hybrid_shape_line_bi_tangent.GetLengthType()
 
-    def set_choice_no(self, val1, val2, val3, val4, val5):
+    def set_choice_no(self, val1: int, val2: int, val3: int, val4: int, val5: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetChoiceNo(long val1,
                 | long val2,
                 | long val3,
@@ -264,9 +269,9 @@ class HybridShapeLineBiTangent(Line):
                 |     It can take 3 values:
                 | 
                 |         +1 : curvature direction of curve and cross product of support normal and result direction
-                |         are in the same direction,
+                |              are in the same direction,
                 |         -1 : curvature direction of curve and cross product of support normal and result direction
-                |         are in opposite directions,
+                |              are in opposite directions,
                 |         0 : no orientation is specified.
                 | 
                 |     val4 = oOriTgt2
@@ -288,9 +293,9 @@ class HybridShapeLineBiTangent(Line):
                 |     It can take 3 values:
                 | 
                 |         +1 : curvature direction of curve and cross product of support normal and result direction
-                |         are in the same direction,
+                |              are in the same direction,
                 |         -1 : curvature direction of curve and cross product of support normal and result direction
-                |         are in opposite directions,
+                |              are in opposite directions,
                 |         0 : no orientation is specified.
                 | 
                 |     Example:
@@ -315,13 +320,14 @@ class HybridShapeLineBiTangent(Line):
         :param int val4:
         :param int val5:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_line_bi_tangent.SetChoiceNo(val1, val2, val3, val4, val5)
 
-    def set_length_type(self, i_type):
+    def set_length_type(self, i_type: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLengthType(long iType)
                 | 
                 |     Sets the length type Default is 0.
@@ -329,13 +335,14 @@ class HybridShapeLineBiTangent(Line):
                 |     Parameters:
                 | 
                 |         iType
-                |             The length type = 0 : length - the line is limited by its extremities = 1 : infinite -
-                |             the line is infinite = 2 : infinite start point - the line is infinite on the side of
-                |             the start point = 3 : infinite end point - the line is infinite on the side of the end
-                |             point
+                |             The length type = 0 : length - the line is limited by its extremities =
+                |             1 : infinite - the line is infinite = 2 : infinite start point - the line is infinite
+                |             on the side of the start point = 3 : infinite end point - the line is infinite on the
+                |             side of the end point
 
         :param int i_type:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_line_bi_tangent.SetLengthType(i_type)
 

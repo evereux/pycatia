@@ -7,29 +7,29 @@ from pycatia.knowledge_interfaces.bool_param import BoolParam
 from pycatia.knowledge_interfaces.int_param import IntParam
 from pycatia.knowledge_interfaces.str_param import StrParam
 from pycatia.knowledge_interfaces.real_param import RealParam
-from tests.source_files import cat_part_3
+from tests.source_files import cat_part_measurable
 
 
 def test_parameters_name():
-    with CATIADocHandler(cat_part_3) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
         part = document.part()
         parameters = part.parameters
 
         first_parameter = parameters.item(1)
 
-        assert first_parameter.name == r'CF_Part3\PartBody\Pad.1\FirstLimit\Length'
+        assert first_parameter.name == r'cat_part_measurable\PartBody\Pad.1\FirstLimit\Length'
 
 
 def test_all_parameters():
-    with CATIADocHandler(cat_part_3) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
         part = document.part()
         parameters = part.parameters
 
         all_parms = parameters.all_parameters()
 
-        assert all_parms[0].name == r'CF_Part3\PartBody\Pad.1\FirstLimit\Length'
+        assert all_parms[0].name == r'cat_part_measurable\PartBody\Pad.1\FirstLimit\Length'
 
 
 def test_create_boolean():
@@ -161,7 +161,7 @@ def test_item():
 
 
 def test_sub_list():
-    with CATIADocHandler(cat_part_3) as handler:
+    with CATIADocHandler(cat_part_measurable) as handler:
         document = handler.document
         part = document.part()
         bodies = part.bodies
@@ -170,7 +170,7 @@ def test_sub_list():
         parameters = part.parameters
         sub_list = parameters.sub_list(shape, True)
 
-        assert sub_list.item(1).name == r'CF_Part3\PartBody\Pad.1\FirstLimit\Length'
+        assert sub_list.item(1).name == r'cat_part_measurable\PartBody\Pad.1\FirstLimit\Length'
 
 
 def test_remove():

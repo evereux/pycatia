@@ -42,7 +42,7 @@ class ProductDocument(Document):
         self.product_document = com_object
 
     @property
-    def product(self):
+    def product(self) -> Product:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -61,6 +61,7 @@ class ProductDocument(Document):
                 |          Set RootProduct = MyProductDoc.Product
 
         :return: Product
+        :rtype: Product
         """
 
         return Product(self.product_document.Product)

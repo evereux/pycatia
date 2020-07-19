@@ -36,7 +36,7 @@ class ToleranceSheetSettingAtt(SettingController):
         self.tolerance_sheet_setting_att = com_object
 
     @property
-    def angle_max_tolerance(self):
+    def angle_max_tolerance(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -53,12 +53,13 @@ class ToleranceSheetSettingAtt(SettingController):
                 |             The angle maximum tolerance value.
 
         :return: float
+        :rtype: float
         """
 
         return self.tolerance_sheet_setting_att.AngleMaxTolerance
 
     @angle_max_tolerance.setter
-    def angle_max_tolerance(self, value):
+    def angle_max_tolerance(self, value: float):
         """
         :param float value:
         """
@@ -66,7 +67,7 @@ class ToleranceSheetSettingAtt(SettingController):
         self.tolerance_sheet_setting_att.AngleMaxTolerance = value
 
     @property
-    def angle_min_tolerance(self):
+    def angle_min_tolerance(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -83,12 +84,13 @@ class ToleranceSheetSettingAtt(SettingController):
                 |             The angle minimum tolerance value.
 
         :return: float
+        :rtype: float
         """
 
         return self.tolerance_sheet_setting_att.AngleMinTolerance
 
     @angle_min_tolerance.setter
-    def angle_min_tolerance(self, value):
+    def angle_min_tolerance(self, value: float):
         """
         :param float value:
         """
@@ -96,7 +98,7 @@ class ToleranceSheetSettingAtt(SettingController):
         self.tolerance_sheet_setting_att.AngleMinTolerance = value
 
     @property
-    def default_tolerance(self):
+    def default_tolerance(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -114,21 +116,22 @@ class ToleranceSheetSettingAtt(SettingController):
                 |             0 : to not accept a default tolerance
                 |             1 : to accept a default tolerance.
 
-        :return: enum
+        :return: int
+        :rtype: int
         """
 
         return self.tolerance_sheet_setting_att.DefaultTolerance
 
     @default_tolerance.setter
-    def default_tolerance(self, value):
+    def default_tolerance(self, value: int):
         """
-        :param enum value:
+        :param int value:
         """
 
         self.tolerance_sheet_setting_att.DefaultTolerance = value
 
     @property
-    def length_max_tolerance(self):
+    def length_max_tolerance(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -145,12 +148,13 @@ class ToleranceSheetSettingAtt(SettingController):
                 |             The length maximum tolerance value.
 
         :return: float
+        :rtype: float
         """
 
         return self.tolerance_sheet_setting_att.LengthMaxTolerance
 
     @length_max_tolerance.setter
-    def length_max_tolerance(self, value):
+    def length_max_tolerance(self, value: float):
         """
         :param float value:
         """
@@ -158,7 +162,7 @@ class ToleranceSheetSettingAtt(SettingController):
         self.tolerance_sheet_setting_att.LengthMaxTolerance = value
 
     @property
-    def length_min_tolerance(self):
+    def length_min_tolerance(self) -> float:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -175,19 +179,20 @@ class ToleranceSheetSettingAtt(SettingController):
                 |             The length minimum tolerance value.
 
         :return: float
+        :rtype: float
         """
 
         return self.tolerance_sheet_setting_att.LengthMinTolerance
 
     @length_min_tolerance.setter
-    def length_min_tolerance(self, value):
+    def length_min_tolerance(self, value: float):
         """
         :param float value:
         """
 
         self.tolerance_sheet_setting_att.LengthMinTolerance = value
 
-    def get_angle_max_tolerance_info(self, io_admin_level, io_locked):
+    def get_angle_max_tolerance_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -218,10 +223,11 @@ class ToleranceSheetSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.tolerance_sheet_setting_att.GetAngleMaxToleranceInfo(io_admin_level, io_locked)
 
-    def get_angle_min_tolerance_info(self, io_admin_level, io_locked):
+    def get_angle_min_tolerance_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -252,10 +258,11 @@ class ToleranceSheetSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.tolerance_sheet_setting_att.GetAngleMinToleranceInfo(io_admin_level, io_locked)
 
-    def get_default_tolerance_info(self, io_admin_level, io_locked):
+    def get_default_tolerance_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -286,10 +293,11 @@ class ToleranceSheetSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.tolerance_sheet_setting_att.GetDefaultToleranceInfo(io_admin_level, io_locked)
 
-    def get_length_max_tolerance_info(self, io_admin_level, io_locked):
+    def get_length_max_tolerance_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -320,10 +328,11 @@ class ToleranceSheetSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.tolerance_sheet_setting_att.GetLengthMaxToleranceInfo(io_admin_level, io_locked)
 
-    def get_length_min_tolerance_info(self, io_admin_level, io_locked):
+    def get_length_min_tolerance_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -354,10 +363,11 @@ class ToleranceSheetSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :return: bool
+        :rtype: bool
         """
         return self.tolerance_sheet_setting_att.GetLengthMinToleranceInfo(io_admin_level, io_locked)
 
-    def set_angle_max_tolerance_lock(self, i_locked):
+    def set_angle_max_tolerance_lock(self, i_locked: bool) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -378,6 +388,7 @@ class ToleranceSheetSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.tolerance_sheet_setting_att.SetAngleMaxToleranceLock(i_locked)
         # # # # Autogenerated comment: 
@@ -396,7 +407,7 @@ class ToleranceSheetSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_angle_min_tolerance_lock(self, i_locked):
+    def set_angle_min_tolerance_lock(self, i_locked: bool) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -417,6 +428,7 @@ class ToleranceSheetSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.tolerance_sheet_setting_att.SetAngleMinToleranceLock(i_locked)
         # # # # Autogenerated comment: 
@@ -435,7 +447,7 @@ class ToleranceSheetSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_default_tolerance_lock(self, i_locked):
+    def set_default_tolerance_lock(self, i_locked: bool) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -456,6 +468,7 @@ class ToleranceSheetSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.tolerance_sheet_setting_att.SetDefaultToleranceLock(i_locked)
         # # # # Autogenerated comment: 
@@ -474,7 +487,7 @@ class ToleranceSheetSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_length_max_tolerance_lock(self, i_locked):
+    def set_length_max_tolerance_lock(self, i_locked: bool) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -495,6 +508,7 @@ class ToleranceSheetSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.tolerance_sheet_setting_att.SetLengthMaxToleranceLock(i_locked)
         # # # # Autogenerated comment: 
@@ -513,7 +527,7 @@ class ToleranceSheetSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_length_min_tolerance_lock(self, i_locked):
+    def set_length_min_tolerance_lock(self, i_locked: bool) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -534,6 +548,7 @@ class ToleranceSheetSettingAtt(SettingController):
 
         :param bool i_locked:
         :return: None
+        :rtype: None
         """
         return self.tolerance_sheet_setting_att.SetLengthMinToleranceLock(i_locked)
         # # # # Autogenerated comment: 

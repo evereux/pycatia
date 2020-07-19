@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -10,14 +10,16 @@
 """
 
 from pycatia.hybrid_shape_interfaces.hybrid_shape_direction import HybridShapeDirection
+from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.angle import Angle
 from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
+from pycatia.system_interfaces.system_service import SystemService
 
 
 class HybridShapeCircle(HybridShape):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -53,10 +55,10 @@ class HybridShapeCircle(HybridShape):
         self.hybrid_shape_circle = com_object
 
     @property
-    def axis_computation(self):
+    def axis_computation(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AxisComputation() As boolean
                 | 
                 |     Returns or sets the axis computation mode.
@@ -71,12 +73,13 @@ class HybridShapeCircle(HybridShape):
                 |          axisComp = hybShpCircle.AxisComputation
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_circle.AxisComputation
 
     @axis_computation.setter
-    def axis_computation(self, value):
+    def axis_computation(self, value: bool):
         """
         :param bool value:
         """
@@ -84,10 +87,10 @@ class HybridShapeCircle(HybridShape):
         self.hybrid_shape_circle.AxisComputation = value
 
     @property
-    def axis_direction(self):
+    def axis_direction(self) -> HybridShapeDirection:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AxisDirection() As HybridShapeDirection
                 | 
                 |     Role: To get_Direction on the object.
@@ -107,12 +110,13 @@ class HybridShapeCircle(HybridShape):
                 |         HybridShapeFactory
 
         :return: HybridShapeDirection
+        :rtype: HybridShapeDirection
         """
 
         return HybridShapeDirection(self.hybrid_shape_circle.AxisDirection)
 
     @axis_direction.setter
-    def axis_direction(self, value):
+    def axis_direction(self, value: HybridShapeDirection):
         """
         :param HybridShapeDirection value:
         """
@@ -120,10 +124,10 @@ class HybridShapeCircle(HybridShape):
         self.hybrid_shape_circle.AxisDirection = value
 
     @property
-    def end_angle(self):
+    def end_angle(self) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property EndAngle() As Angle (Read Only)
                 | 
                 |     Returns the circle end angle.
@@ -136,15 +140,16 @@ class HybridShapeCircle(HybridShape):
                 |          ShpCircleEndAngle = ShpCircle.EndAngle
 
         :return: Angle
+        :rtype: Angle
         """
 
         return Angle(self.hybrid_shape_circle.EndAngle)
 
     @property
-    def start_angle(self):
+    def start_angle(self) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property StartAngle() As Angle (Read Only)
                 | 
                 |     Returns the circle start angle.
@@ -157,14 +162,15 @@ class HybridShapeCircle(HybridShape):
                 |          ShpCircleStartAngle = ShpCircle.StartAngle
 
         :return: Angle
+        :rtype: Angle
         """
 
         return Angle(self.hybrid_shape_circle.StartAngle)
 
-    def get_axis(self, i_position, o_axis):
+    def get_axis(self, i_position: int, o_axis: Reference) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetAxis(long iPosition,
                 | Reference oAxis)
                 | 
@@ -189,6 +195,7 @@ class HybridShapeCircle(HybridShape):
         :param int i_position:
         :param Reference o_axis:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_circle.GetAxis(i_position, o_axis.com_object)
         # # # # Autogenerated comment: 
@@ -207,10 +214,10 @@ class HybridShapeCircle(HybridShape):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_center(self, o_center_x, o_center_y, o_center_z):
+    def get_center(self, o_center_x: float, o_center_y: float, o_center_z: float) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetCenter(double oCenterX,
                 | double oCenterY,
                 | double oCenterZ)
@@ -227,13 +234,14 @@ class HybridShapeCircle(HybridShape):
         :param float o_center_y:
         :param float o_center_z:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_circle.GetCenter(o_center_x, o_center_y, o_center_z)
 
-    def get_free_center(self, io_center):
+    def get_free_center(self) -> tuple:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetFreeCenter(CATSafeArrayVariant ioCenter)
                 | 
                 |     Returns the circle center.
@@ -259,30 +267,25 @@ class HybridShapeCircle(HybridShape):
                 |             y is in HybShpCircleCenter(1)
                 |             z is in HybShpCircleCenter(2)
 
-        :param tuple io_center:
-        :return: None
+        :return: tuple
+        :rtype: tuple
         """
-        return self.hybrid_shape_circle.GetFreeCenter(io_center)
-        # # # # Autogenerated comment: 
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'get_free_center'
-        # # vba_code = """
-        # # Public Function get_free_center(hybrid_shape_circle)
-        # #     Dim ioCenter (2)
-        # #     hybrid_shape_circle.GetFreeCenter ioCenter
-        # #     get_free_center = ioCenter
-        # # End Function
-        # # """
+        vba_function_name = 'get_free_center'
+        vba_code = """
+        Public Function get_free_center(hybrid_shape_circle)
+            Dim ioCenter (2)
+            hybrid_shape_circle.GetFreeCenter ioCenter
+            get_free_center = ioCenter
+        End Function
+        """
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        system_service = SystemService(self.application.SystemService)
+        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_free_radius(self, o_radius):
+    def get_free_radius(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetFreeRadius(double oRadius)
                 | 
                 |     Returns the circle radius.
@@ -299,15 +302,15 @@ class HybridShapeCircle(HybridShape):
                 |          double HybShpCircleRadius
                 |          ShpCircle.GetFreeRadius(HybShpCircleRadius)
 
-        :param float o_radius:
-        :return: None
+        :return: float
+        :rtype: float
         """
-        return self.hybrid_shape_circle.GetFreeRadius(o_radius)
+        return self.hybrid_shape_circle.GetFreeRadius()
 
-    def get_limitation(self):
+    def get_limitation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetLimitation() As long
                 | 
                 |     Gets the limitation type for the circle.
@@ -318,13 +321,14 @@ class HybridShapeCircle(HybridShape):
                 |             (Angles = 0, Whole = 1, Trimmed = 2, Complementary = 3). circle limitation
 
         :return: int
+        :rtype: int
         """
         return self.hybrid_shape_circle.GetLimitation()
 
-    def set_limitation(self, i_limitation):
+    def set_limitation(self, i_limitation: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLimitation(long iLimitation)
                 | 
                 |     Set the circle limitation type.
@@ -352,6 +356,7 @@ class HybridShapeCircle(HybridShape):
 
         :param int i_limitation:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_circle.SetLimitation(i_limitation)
 

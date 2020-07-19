@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -18,7 +18,7 @@ from pycatia.knowledge_interfaces.length import Length
 class HybridShapeLineAngle(Line):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -41,10 +41,10 @@ class HybridShapeLineAngle(Line):
         self.hybrid_shape_line_angle = com_object
 
     @property
-    def angle(self):
+    def angle(self) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Angle() As Angle (Read Only)
                 | 
                 |     Role: Get the angle to the reference curve of the line.
@@ -55,15 +55,16 @@ class HybridShapeLineAngle(Line):
                 |             angle
 
         :return: Angle
+        :rtype: Angle
         """
 
         return Angle(self.hybrid_shape_line_angle.Angle)
 
     @property
-    def begin_offset(self):
+    def begin_offset(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BeginOffset() As Length (Read Only)
                 | 
                 |     Role: Get the start length of the line.
@@ -74,15 +75,16 @@ class HybridShapeLineAngle(Line):
                 |             start length
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_line_angle.BeginOffset)
 
     @property
-    def curve(self):
+    def curve(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Curve() As Reference
                 | 
                 |     Role: Get the reference curve.
@@ -93,12 +95,13 @@ class HybridShapeLineAngle(Line):
                 |             reference curve.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_line_angle.Curve)
 
     @curve.setter
-    def curve(self, value):
+    def curve(self, value: Reference):
         """
         :param Reference value:
         """
@@ -106,10 +109,10 @@ class HybridShapeLineAngle(Line):
         self.hybrid_shape_line_angle.Curve = value
 
     @property
-    def end_offset(self):
+    def end_offset(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property EndOffset() As Length (Read Only)
                 | 
                 |     Role: Get the end length of the line.
@@ -120,15 +123,16 @@ class HybridShapeLineAngle(Line):
                 |             end length
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_line_angle.EndOffset)
 
     @property
-    def geodesic(self):
+    def geodesic(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Geodesic() As boolean
                 | 
                 |     Role: Get geodesic mode. If geodesic, the line lies on the support surface,
@@ -141,12 +145,13 @@ class HybridShapeLineAngle(Line):
                 |             Geodesic boolean
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_line_angle.Geodesic
 
     @geodesic.setter
-    def geodesic(self, value):
+    def geodesic(self, value: bool):
         """
         :param bool value:
         """
@@ -154,10 +159,10 @@ class HybridShapeLineAngle(Line):
         self.hybrid_shape_line_angle.Geodesic = value
 
     @property
-    def orientation(self):
+    def orientation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation() As long
                 | 
                 |     Role: Get the line orientation. Orientation allows to reverse the line
@@ -170,12 +175,13 @@ class HybridShapeLineAngle(Line):
                 |             orientation : can be 1 or -1
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_line_angle.Orientation
 
     @orientation.setter
-    def orientation(self, value):
+    def orientation(self, value: int):
         """
         :param int value:
         """
@@ -183,10 +189,10 @@ class HybridShapeLineAngle(Line):
         self.hybrid_shape_line_angle.Orientation = value
 
     @property
-    def point(self):
+    def point(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Point() As Reference
                 | 
                 |     Role: Get the starting point of the line.
@@ -197,12 +203,13 @@ class HybridShapeLineAngle(Line):
                 |             starting point.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_line_angle.Point)
 
     @point.setter
-    def point(self, value):
+    def point(self, value: Reference):
         """
         :param Reference value:
         """
@@ -210,10 +217,10 @@ class HybridShapeLineAngle(Line):
         self.hybrid_shape_line_angle.Point = value
 
     @property
-    def surface(self):
+    def surface(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Surface() As Reference
                 | 
                 |     Role: Get the support surface.
@@ -224,22 +231,23 @@ class HybridShapeLineAngle(Line):
                 |             support surface.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_line_angle.Surface)
 
     @surface.setter
-    def surface(self, value):
+    def surface(self, value: Reference):
         """
         :param Reference value:
         """
 
         self.hybrid_shape_line_angle.Surface = value
 
-    def get_length_type(self):
+    def get_length_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetLengthType() As long
                 | 
                 |     Gets the length type Default is 0.
@@ -247,19 +255,20 @@ class HybridShapeLineAngle(Line):
                 |     Parameters:
                 | 
                 |         oType
-                |             The length type = 0 : length - the line is limited by its extremities = 1 :
-                |             infinite - the line is infinite = 2 : infinite start point - the line is infinite on the
-                |             side of the start point = 3 : infinite end point - the line is infinite on the side of
-                |             the end point
+                |             The length type = 0 : length - the line is limited by its extremities =
+                |             1 : infinite - the line is infinite = 2 : infinite start point - the line is infinite
+                |             on the side of the start point = 3 : infinite end point - the line is infinite on the
+                |             side of the end point
 
         :return: int
+        :rtype: int
         """
         return self.hybrid_shape_line_angle.GetLengthType()
 
-    def get_symmetrical_extension(self):
+    def get_symmetrical_extension(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetSymmetricalExtension() As boolean
                 | 
                 |     Gets whether the symmetrical extension of the line is
@@ -268,16 +277,17 @@ class HybridShapeLineAngle(Line):
                 |     Parameters:
                 | 
                 |         oSym
-                |             Symmetry flag
+                |             Symetry flag
 
         :return: bool
+        :rtype: bool
         """
         return self.hybrid_shape_line_angle.GetSymmetricalExtension()
 
-    def set_length_type(self, i_type):
+    def set_length_type(self, i_type: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLengthType(long iType)
                 | 
                 |     Sets the length type Default is 0.
@@ -285,19 +295,21 @@ class HybridShapeLineAngle(Line):
                 |     Parameters:
                 | 
                 |         iType
-                |             The length type = 0 : length - the line is limited by its extremities = 1 : infinite -
-                |             the line is infinite = 2 : infinite start point - the line is infinite on the side of the
-                |             start point = 3 : infinite end point - the line is infinite on the side of the end point
+                |             The length type = 0 : length - the line is limited by its extremities =
+                |             1 : infinite - the line is infinite = 2 : infinite start point - the line is infinite on
+                |             the side of the start point = 3 : infinite end point - the line is infinite on the side
+                |             of the end point
 
         :param int i_type:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_line_angle.SetLengthType(i_type)
 
-    def set_symmetrical_extension(self, i_sym):
+    def set_symmetrical_extension(self, i_sym: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSymmetricalExtension(boolean iSym)
                 | 
                 |     Sets the symmetrical extension of the line (start = -end).
@@ -305,10 +317,11 @@ class HybridShapeLineAngle(Line):
                 |     Parameters:
                 | 
                 |         iSym
-                |             Symmetry flag
+                |             Symetry flag
 
         :param bool i_sym:
         :return: None
+        :rtype: None
         """
         return self.hybrid_shape_line_angle.SetSymmetricalExtension(i_sym)
         # # # # Autogenerated comment: 

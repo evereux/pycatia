@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -18,7 +18,7 @@ class HybridShapeAxisLine(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -49,10 +49,10 @@ class HybridShapeAxisLine(HybridShape):
         self.hybrid_shape_axis_line = com_object
 
     @property
-    def axis_line_type(self):
+    def axis_line_type(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AxisLineType() As long
                 | 
                 |     Returns or sets the axis line type.
@@ -79,12 +79,13 @@ class HybridShapeAxisLine(HybridShape):
                 |      Set oType = AxisLine.AxisLineType
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_axis_line.AxisLineType
 
     @axis_line_type.setter
-    def axis_line_type(self, value):
+    def axis_line_type(self, value: int):
         """
         :param int value:
         """
@@ -92,10 +93,10 @@ class HybridShapeAxisLine(HybridShape):
         self.hybrid_shape_axis_line.AxisLineType = value
 
     @property
-    def direction(self):
+    def direction(self) -> HybridShapeDirection:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Direction() As HybridShapeDirection
                 | 
                 |     Gets the reference direction used in computation of axis.
@@ -111,12 +112,13 @@ class HybridShapeAxisLine(HybridShape):
                 |          Set oDir = AxisLine.Direction
 
         :return: HybridShapeDirection
+        :rtype: HybridShapeDirection
         """
 
         return HybridShapeDirection(self.hybrid_shape_axis_line.Direction)
 
     @direction.setter
-    def direction(self, value):
+    def direction(self, value: HybridShapeDirection):
         """
         :param HybridShapeDirection value:
         """
@@ -124,10 +126,10 @@ class HybridShapeAxisLine(HybridShape):
         self.hybrid_shape_axis_line.Direction = value
 
     @property
-    def element(self):
+    def element(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Element() As Reference
                 | 
                 |     Returns or sets the element from which axis is computed.
@@ -140,12 +142,13 @@ class HybridShapeAxisLine(HybridShape):
                 |          Set Element = AxisLine.Element
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_axis_line.Element)
 
     @element.setter
-    def element(self, value):
+    def element(self, value: Reference):
         """
         :param Reference value:
         """

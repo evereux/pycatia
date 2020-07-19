@@ -43,10 +43,10 @@ class AngularRepartition(Repartition):
         self.angular_repartition = com_object
 
     @property
-    def angular_spacing(self):
+    def angular_spacing(self) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AngularSpacing() As Angle (Read Only)
                 | 
                 |     Returns the angle between two consecutive copies of a shape along the
@@ -59,15 +59,16 @@ class AngularRepartition(Repartition):
                 |          Set AngSpace1 = firstRepartition.AngularSpacing
 
         :return: Angle
+        :rtype: Angle
         """
 
         return Angle(self.angular_repartition.AngularSpacing)
 
     @property
-    def instance_spacing(self):
+    def instance_spacing(self) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property InstanceSpacing() As Angle (Read Only)
                 | 
                 |     Returns the angle at which the pattern spacing is done for unequal angular
@@ -80,6 +81,7 @@ class AngularRepartition(Repartition):
                 |          Set AngSpace1 = firstRepartition.AngularSpacing
 
         :return: Angle
+        :rtype: Angle
         """
 
         return Angle(self.angular_repartition.InstanceSpacing)

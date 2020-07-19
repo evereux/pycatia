@@ -9,11 +9,10 @@
         
 """
 
-from pycatia.in_interfaces.viewer2_d import Viewer2D
+from pycatia.in_interfaces.viewer_2d import Viewer2D
 
 
 class SpecsViewer(Viewer2D):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -42,10 +41,10 @@ class SpecsViewer(Viewer2D):
         self.specs_viewer = com_object
 
     @property
-    def layout(self):
+    def layout(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Layout() As CatSpecsLayout
                 | 
                 |     Returns or sets the specification tree layout.
@@ -57,15 +56,16 @@ class SpecsViewer(Viewer2D):
                 | 
                 |          SpecsTreeViewer.Layout = catSpecsViewerHorizontalCentered
 
-        :return: enum cat_specs_layout
+        :return: int
+        :rtype: int
         """
 
         return self.specs_viewer.Layout
 
     @layout.setter
-    def layout(self, value):
+    def layout(self, value: int):
         """
-        :param enum cat_specs_layout value:
+        :param int value:
         """
 
         self.specs_viewer.Layout = value

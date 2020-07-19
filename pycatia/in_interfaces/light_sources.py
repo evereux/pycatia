@@ -14,7 +14,6 @@ from pycatia.system_interfaces.collection import Collection
 
 
 class LightSources(Collection):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -32,10 +31,10 @@ class LightSources(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=LightSource)
         self.light_sources = com_object
 
-    def add(self):
+    def add(self) -> LightSource:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -53,13 +52,14 @@ class LightSources(Collection):
                 |      Set MyLightSource = MyViewer.LightSources.Add
 
         :return: LightSource
+        :rtype: LightSource
         """
         return LightSource(self.light_sources.Add())
 
-    def item(self, i_index):
+    def item(self, i_index: int) -> LightSource:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(long iIndex) As LightSource
                 | 
                 |     Returns a light source from its index in the LightSources
@@ -84,13 +84,14 @@ class LightSources(Collection):
 
         :param int i_index:
         :return: LightSource
+        :rtype: LightSource
         """
         return LightSource(self.light_sources.Item(i_index))
 
-    def remove(self, i_index):
+    def remove(self, i_index: int) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Remove(long iIndex)
                 | 
                 |     Removes a light source from the LightSources collection.
@@ -114,8 +115,9 @@ class LightSources(Collection):
 
         :param int i_index:
         :return: None
+        :rtype: None
         """
         return self.light_sources.Remove(i_index)
 
     def __repr__(self):
-        return f'LightSources(name="{ self.name }")'
+        return f'LightSources(name="{self.name}")'

@@ -36,10 +36,10 @@ class Printer(AnyObject):
         self.printer = com_object
 
     @property
-    def device_name(self):
+    def device_name(self) -> str:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DeviceName() As CATBSTR (Read Only)
                 | 
                 |     Returns the printer device name.
@@ -51,15 +51,16 @@ class Printer(AnyObject):
                 |          MsgBox myPrinter.DeviceName
 
         :return: str
+        :rtype: str
         """
 
         return self.printer.DeviceName
 
     @property
-    def orientation(self):
+    def orientation(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation() As CatPaperOrientation (Read Only)
                 | 
                 |     Returns or sets the default paper orientation.
@@ -71,16 +72,17 @@ class Printer(AnyObject):
                 |          Dim DefaultPaperOrientation As CatPaperOrientation
                 |          DefaultPaperOrientation = myPrinter.Orientation
 
-        :return: enum cat_paper_orientation
+        :return: int
+        :rtype: int
         """
 
         return self.printer.Orientation
 
     @property
-    def paper_height(self):
+    def paper_height(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PaperHeight() As float (Read Only)
                 | 
                 |     Returns the default paper height.
@@ -93,15 +95,16 @@ class Printer(AnyObject):
                 |          Height = myPrinter.PaperHeight
 
         :return: float
+        :rtype: float
         """
 
         return self.printer.PaperHeight
 
     @property
-    def paper_size(self):
+    def paper_size(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PaperSize() As CatPaperSize (Read Only)
                 | 
                 |     Returns the default paper size.
@@ -113,16 +116,17 @@ class Printer(AnyObject):
                 |          Dim DefaultPaperSize As CatPaperSize
                 |          DefaultPaperSize = myPrinter.PaperSize
 
-        :return: enum cat_paper_size
+        :return: int
+        :rtype: int
         """
 
         return self.printer.PaperSize
 
     @property
-    def paper_width(self):
+    def paper_width(self) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PaperWidth() As float (Read Only)
                 | 
                 |     Returns the default paper width.
@@ -135,6 +139,7 @@ class Printer(AnyObject):
                 |          Width = myPrinter.PaperWidth
 
         :return: float
+        :rtype: float
         """
 
         return self.printer.PaperWidth

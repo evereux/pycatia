@@ -38,7 +38,7 @@ class Reference(AnyObject):
         self.reference = com_object
 
     @property
-    def display_name(self):
+    def display_name(self) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -56,11 +56,12 @@ class Reference(AnyObject):
                 |          StrName = FirstRef.DisplayName
 
         :return: str
+        :rtype: str
         """
 
         return self.reference.DisplayName
 
-    def compose_with(self, i_reference):
+    def compose_with(self, i_reference: 'Reference') -> 'Reference':
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -85,8 +86,9 @@ class Reference(AnyObject):
 
         :param Reference i_reference:
         :return: Reference
+        :rtype: Reference
         """
         return Reference(self.reference.ComposeWith(i_reference.com_object))
 
     def __repr__(self):
-        return f'Reference(name="{ self.name }")'
+        return f'Reference(name="{self.name}")'

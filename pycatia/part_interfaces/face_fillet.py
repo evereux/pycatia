@@ -41,10 +41,10 @@ class FaceFillet(Fillet):
         self.face_fillet = com_object
 
     @property
-    def first_face(self):
+    def first_face(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstFace() As Reference
                 | 
                 |     Returns or sets the first limiting face.
@@ -60,12 +60,13 @@ class FaceFillet(Fillet):
                 |          firstFaceFillet.FirstFace = NewFace1
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.face_fillet.FirstFace)
 
     @first_face.setter
-    def first_face(self, value):
+    def first_face(self, value: Reference):
         """
         :param Reference value:
         """
@@ -73,10 +74,10 @@ class FaceFillet(Fillet):
         self.face_fillet.FirstFace = value
 
     @property
-    def radius(self):
+    def radius(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Radius() As Length (Read Only)
                 | 
                 |     Returns the face fillet radius.
@@ -88,15 +89,16 @@ class FaceFillet(Fillet):
                 |          Set radius = firstFaceFillet.Radius
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.face_fillet.Radius)
 
     @property
-    def second_face(self):
+    def second_face(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondFace() As Reference
                 | 
                 |     Returns or sets the second limiting face.
@@ -112,12 +114,13 @@ class FaceFillet(Fillet):
                 |          firstFaceFillet.SecondFace = NewFace2
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.face_fillet.SecondFace)
 
     @second_face.setter
-    def second_face(self, value):
+    def second_face(self, value: Reference):
         """
         :param Reference value:
         """

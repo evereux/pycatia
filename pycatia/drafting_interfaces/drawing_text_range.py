@@ -38,7 +38,7 @@ class DrawingTextRange(CATBaseDispatch):
         self.drawing_text_range = com_object
 
     @property
-    def length(self):
+    def length(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -54,12 +54,13 @@ class DrawingTextRange(CATBaseDispatch):
                 |          NbChar = MyTextRange.Length
 
         :return: int
+        :rtype: int
         """
 
         return self.drawing_text_range.Length
 
     @property
-    def start(self):
+    def start(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -75,12 +76,13 @@ class DrawingTextRange(CATBaseDispatch):
                 |          StartCharPos = MyTextRange.Start
 
         :return: int
+        :rtype: int
         """
 
         return self.drawing_text_range.Start
 
     @property
-    def text(self):
+    def text(self) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -102,12 +104,13 @@ class DrawingTextRange(CATBaseDispatch):
                 |         DrawingTextProperties.Update
 
         :return: str
+        :rtype: str
         """
 
         return self.drawing_text_range.Text
 
     @text.setter
-    def text(self, value):
+    def text(self, value: str):
         """
         :param str value:
         """
@@ -115,7 +118,7 @@ class DrawingTextRange(CATBaseDispatch):
         self.drawing_text_range.Text = value
 
     @property
-    def text_properties(self):
+    def text_properties(self) -> DrawingTextProperties:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -136,11 +139,12 @@ class DrawingTextRange(CATBaseDispatch):
                 |              Set Prop = MyTextRange.TextProperties(String)
 
         :return: DrawingTextProperties
+        :rtype: DrawingTextProperties
         """
 
         return DrawingTextProperties(self.drawing_text_range.TextProperties)
 
-    def get_text_range(self, i_start, i_end):
+    def get_text_range(self, i_start: int, i_end: int) -> 'DrawingTextRange':
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -173,10 +177,11 @@ class DrawingTextRange(CATBaseDispatch):
         :param int i_start:
         :param int i_end:
         :return: DrawingTextRange
+        :rtype: DrawingTextRange
         """
         return DrawingTextRange(self.drawing_text_range.GetTextRange(i_start, i_end))
 
-    def insert_after(self, i_string):
+    def insert_after(self, i_string: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -205,10 +210,11 @@ class DrawingTextRange(CATBaseDispatch):
 
         :param str i_string:
         :return: None
+        :rtype: None
         """
         return self.drawing_text_range.InsertAfter(i_string)
 
-    def insert_before(self, i_string):
+    def insert_before(self, i_string: str) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))

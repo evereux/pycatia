@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -18,7 +18,7 @@ class HybridShapeAffinity(HybridShape):
 
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -60,10 +60,10 @@ class HybridShapeAffinity(HybridShape):
         self.hybrid_shape_affinity = com_object
 
     @property
-    def axis_first_direction(self):
+    def axis_first_direction(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AxisFirstDirection() As Reference
                 | 
                 |     Returns or sets the first direction of the reference coordinate
@@ -80,12 +80,13 @@ class HybridShapeAffinity(HybridShape):
                 |          Set FirstDir = Affinity.AxisFirstDirection
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_affinity.AxisFirstDirection)
 
     @axis_first_direction.setter
-    def axis_first_direction(self, value):
+    def axis_first_direction(self, value: Reference):
         """
         :param Reference value:
         """
@@ -93,10 +94,10 @@ class HybridShapeAffinity(HybridShape):
         self.hybrid_shape_affinity.AxisFirstDirection = value
 
     @property
-    def axis_origin(self):
+    def axis_origin(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AxisOrigin() As Reference
                 | 
                 |     Returns or sets the origin of the reference coordinate
@@ -111,12 +112,13 @@ class HybridShapeAffinity(HybridShape):
                 |          Set Origin = Affinity.AxisOrigin
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_affinity.AxisOrigin)
 
     @axis_origin.setter
-    def axis_origin(self, value):
+    def axis_origin(self, value: Reference):
         """
         :param Reference value:
         """
@@ -124,10 +126,10 @@ class HybridShapeAffinity(HybridShape):
         self.hybrid_shape_affinity.AxisOrigin = value
 
     @property
-    def axis_plane(self):
+    def axis_plane(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AxisPlane() As Reference
                 | 
                 |     Returns or sets the reference plane of the reference coordinate
@@ -144,12 +146,13 @@ class HybridShapeAffinity(HybridShape):
                 |          Set RefPlane = Affinity.AxisPlane
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_affinity.AxisPlane)
 
     @axis_plane.setter
-    def axis_plane(self, value):
+    def axis_plane(self, value: Reference):
         """
         :param Reference value:
         """
@@ -157,10 +160,10 @@ class HybridShapeAffinity(HybridShape):
         self.hybrid_shape_affinity.AxisPlane = value
 
     @property
-    def creation_mode(self):
+    def creation_mode(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CreationMode() As boolean
                 | 
                 |     Returns or sets the creation mode(creation or
@@ -177,12 +180,13 @@ class HybridShapeAffinity(HybridShape):
                 |          hybShpAffinity.CreationMode = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_affinity.CreationMode
 
     @creation_mode.setter
-    def creation_mode(self, value):
+    def creation_mode(self, value: bool):
         """
         :param bool value:
         """
@@ -190,10 +194,10 @@ class HybridShapeAffinity(HybridShape):
         self.hybrid_shape_affinity.CreationMode = value
 
     @property
-    def elem_to_transform(self):
+    def elem_to_transform(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ElemToTransform() As Reference
                 | 
                 |     Returns or sets the element to transform using the
@@ -207,12 +211,13 @@ class HybridShapeAffinity(HybridShape):
                 |          Set ElementToTransform = Affinity.ElemToTransform
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_affinity.ElemToTransform)
 
     @elem_to_transform.setter
-    def elem_to_transform(self, value):
+    def elem_to_transform(self, value: Reference):
         """
         :param Reference value:
         """
@@ -220,10 +225,10 @@ class HybridShapeAffinity(HybridShape):
         self.hybrid_shape_affinity.ElemToTransform = value
 
     @property
-    def volume_result(self):
+    def volume_result(self) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property VolumeResult() As boolean
                 | 
                 |     Returns or sets the volume result.
@@ -240,12 +245,13 @@ class HybridShapeAffinity(HybridShape):
                 |          hybShpAffinity.VolumeResult = True
 
         :return: bool
+        :rtype: bool
         """
 
         return self.hybrid_shape_affinity.VolumeResult
 
     @volume_result.setter
-    def volume_result(self, value):
+    def volume_result(self, value: bool):
         """
         :param bool value:
         """
@@ -253,10 +259,10 @@ class HybridShapeAffinity(HybridShape):
         self.hybrid_shape_affinity.VolumeResult = value
 
     @property
-    def x_ratios(self):
+    def x_ratios(self) -> RealParam:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property XRatios() As RealParam (Read Only)
                 | 
                 |     Returns the affinity ratio along the X Direction of the reference
@@ -271,15 +277,16 @@ class HybridShapeAffinity(HybridShape):
                 |          Set X = Affinity.XRatios
 
         :return: RealParam
+        :rtype: RealParam
         """
 
         return RealParam(self.hybrid_shape_affinity.XRatios)
 
     @property
-    def y_ratios(self):
+    def y_ratios(self) -> RealParam:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property YRatios() As RealParam (Read Only)
                 | 
                 |     Returns the affinity ratio along the Y Direction of the reference
@@ -294,15 +301,16 @@ class HybridShapeAffinity(HybridShape):
                 |          Set Y = Affinity.YRatios
 
         :return: RealParam
+        :rtype: RealParam
         """
 
         return RealParam(self.hybrid_shape_affinity.YRatios)
 
     @property
-    def z_ratios(self):
+    def z_ratios(self) -> RealParam:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ZRatios() As RealParam (Read Only)
                 | 
                 |     Returns the affinity ratio along the Z Direction of the reference
@@ -317,6 +325,7 @@ class HybridShapeAffinity(HybridShape):
                 |          Set Z = Affinity.ZRatios
 
         :return: RealParam
+        :rtype: RealParam
         """
 
         return RealParam(self.hybrid_shape_affinity.ZRatios)

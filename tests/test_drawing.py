@@ -37,8 +37,8 @@ def test_paper_size():
         sheets = drawing_root.sheets
         sheet_1 = sheets.item(1)
         assert sheet_1.paper_size == cat_paper_size.index('catPaperA0')
-        sheet_1.paper_size = 5
-        assert sheet_1.paper_size == cat_paper_size.index('catPaperA3')
+        sheet_1.paper_size = cat_paper_size.index("catPaperA1")
+        assert sheet_1.paper_size == cat_paper_size.index('catPaperA1')
 
 
 def test_sheets():
@@ -46,7 +46,7 @@ def test_sheets():
         catia = handler.catia
         drawing_root = catia.active_document.drawing_root()
         sheets = drawing_root.sheets
-        assert sheets.item(3).name == 'Sheet.3 (Detail)'
+        assert sheets.item(2).name == 'Sheet.2'
 
 
 def test_standard():
@@ -63,9 +63,8 @@ def test_reorder():
         sheets = root.sheets
         sheet_1 = sheets.item(1)
         sheet_2 = sheets.item(2)
-        sheet_3 = sheets.item(3)
 
-        new_order = (sheet_2, sheet_1, sheet_3)
+        new_order = (sheet_2, sheet_1)
         root.reorder_sheets(new_order)
 
         sheets = root.sheets

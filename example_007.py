@@ -12,10 +12,11 @@ import time
 
 from pycatia import CATIADocHandler
 
-catia_part = r'cat_files\CF_catia_measurable_part.CATPart'
+catia_part = r'tests\cat_files\part_measurable.CATPart'
 
 with CATIADocHandler(catia_part) as handler:
     document = handler.document
     # do some stuff.
+    # save if you need to.
     time.sleep(5)  # don't do this, no need.
     # document is automatically closed. Lovely.

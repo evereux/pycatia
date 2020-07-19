@@ -13,7 +13,6 @@ from pycatia.part_interfaces.revolution import Revolution
 
 
 class Shaft(Revolution):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -33,9 +32,7 @@ class Shaft(Revolution):
                 | axis, used as the revolution axis, and two limiting angles around this axis.
                 | This is a "positive" shape: it adds material to the body it belongs
                 | to.
-                | 
-                | Copyright © 1999-2011, Dassault Systèmes. All rights reserved.
-    
+
     """
 
     def __init__(self, com_object):
@@ -43,4 +40,4 @@ class Shaft(Revolution):
         self.shaft = com_object
 
     def __repr__(self):
-        return f'Shaft(name="{ self.name }")'
+        return f'Shaft(name="{self.name}")'

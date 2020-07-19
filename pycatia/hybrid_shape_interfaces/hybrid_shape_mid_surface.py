@@ -1,6 +1,6 @@
 #! usr/bin/python3.6
 """
-    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
     .. warning::
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
@@ -17,7 +17,7 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeMidSurface(HybridShape):
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -49,22 +49,23 @@ class HybridShapeMidSurface(HybridShape):
         self.hybrid_shape_mid_surface = com_object
 
     @property
-    def auto_thickness_threshold(self):
+    def auto_thickness_threshold(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AutoThicknessThreshold() As long
                 | 
-                |     Returns or sets AutoThicknessThreshold. Automatic Thickmess Threshold Check Button ON :1, OFF :
-                |     0 (Only Automatic Creation Mode Available for Automation)
+                |     Returns or sets AutoThicknessThreshold. Automatic Thickmess Threshold Check Button ON :1,
+                |     OFF : 0 (Only Automatic Creation Mode Available for Automation)
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_mid_surface.AutoThicknessThreshold
 
     @auto_thickness_threshold.setter
-    def auto_thickness_threshold(self, value):
+    def auto_thickness_threshold(self, value: int):
         """
         :param int value:
         """
@@ -72,22 +73,23 @@ class HybridShapeMidSurface(HybridShape):
         self.hybrid_shape_mid_surface.AutoThicknessThreshold = value
 
     @property
-    def creation_mode(self):
+    def creation_mode(self) -> int:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CreationMode() As long
                 | 
                 |     Returns or sets CreationMode. Face Pairs : 0, Faces To Offset : 1, Automatic :
                 |     2 (Only Automatic Creation Mode Available for Automation)
 
         :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_mid_surface.CreationMode
 
     @creation_mode.setter
-    def creation_mode(self, value):
+    def creation_mode(self, value: int):
         """
         :param int value:
         """
@@ -95,21 +97,22 @@ class HybridShapeMidSurface(HybridShape):
         self.hybrid_shape_mid_surface.CreationMode = value
 
     @property
-    def support(self):
+    def support(self) -> Reference:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
                 |     Returns or sets Support Body. Reference.
 
         :return: Reference
+        :rtype: Reference
         """
 
         return Reference(self.hybrid_shape_mid_surface.Support)
 
     @support.setter
-    def support(self, value):
+    def support(self, value: Reference):
         """
         :param Reference value:
         """
@@ -117,21 +120,22 @@ class HybridShapeMidSurface(HybridShape):
         self.hybrid_shape_mid_surface.Support = value
 
     @property
-    def threshold(self):
+    def threshold(self) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Threshold() As Length
                 | 
                 |     Returns or sets Threshold Thickness. Length.
 
         :return: Length
+        :rtype: Length
         """
 
         return Length(self.hybrid_shape_mid_surface.Threshold)
 
     @threshold.setter
-    def threshold(self, value):
+    def threshold(self, value: Length):
         """
         :param Length value:
         """

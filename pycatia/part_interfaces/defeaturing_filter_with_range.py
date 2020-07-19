@@ -15,9 +15,10 @@ from pycatia.part_interfaces.defeaturing_filter import DefeaturingFilter
 
 
 class DefeaturingFilterWithRange(DefeaturingFilter):
+
     """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
                 |     System.IDispatch
@@ -36,54 +37,58 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
         super().__init__(com_object)
         self.defeaturing_filter_with_range = com_object
 
-    def get_maximum_activity(self, i_range_id):
+    def get_maximum_activity(self, i_range_id: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func getMaximumActivity(CATBSTR iRangeId) As boolean
 
         :param str i_range_id:
         :return: bool
+        :rtype: bool
         """
         return self.defeaturing_filter_with_range.getMaximumActivity(i_range_id)
 
-    def get_maximum_angle(self, i_range_id):
+    def get_maximum_angle(self, i_range_id: str) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func getMaximumAngle(CATBSTR iRangeId) As Angle
 
         :param str i_range_id:
         :return: Angle
+        :rtype: Angle
         """
         return Angle(self.defeaturing_filter_with_range.getMaximumAngle(i_range_id))
 
-    def get_maximum_length(self, i_range_id):
+    def get_maximum_length(self, i_range_id: str) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func getMaximumLength(CATBSTR iRangeId) As Length
 
         :param str i_range_id:
         :return: Length
+        :rtype: Length
         """
         return Length(self.defeaturing_filter_with_range.getMaximumLength(i_range_id))
 
-    def get_maximum_value(self, i_range_id):
+    def get_maximum_value(self, i_range_id: str) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func getMaximumValue(CATBSTR iRangeId) As double
 
         :param str i_range_id:
         :return: float
+        :rtype: float
         """
         return self.defeaturing_filter_with_range.getMaximumValue(i_range_id)
 
-    def get_minimum_activity(self, i_range_id):
+    def get_minimum_activity(self, i_range_id: str) -> bool:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func getMinimumActivity(CATBSTR iRangeId) As boolean
                 | 
                 |     Returns the minimum or maximum value activity of the filter for the given
@@ -112,35 +117,38 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
 
         :param str i_range_id:
         :return: bool
+        :rtype: bool
         """
         return self.defeaturing_filter_with_range.getMinimumActivity(i_range_id)
 
-    def get_minimum_angle(self, i_range_id):
+    def get_minimum_angle(self, i_range_id: str) -> Angle:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func getMinimumAngle(CATBSTR iRangeId) As Angle
 
         :param str i_range_id:
         :return: Angle
+        :rtype: Angle
         """
         return Angle(self.defeaturing_filter_with_range.getMinimumAngle(i_range_id))
 
-    def get_minimum_length(self, i_range_id):
+    def get_minimum_length(self, i_range_id: str) -> Length:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func getMinimumLength(CATBSTR iRangeId) As Length
 
         :param str i_range_id:
         :return: Length
+        :rtype: Length
         """
         return Length(self.defeaturing_filter_with_range.getMinimumLength(i_range_id))
 
-    def get_minimum_value(self, i_range_id):
+    def get_minimum_value(self, i_range_id: str) -> float:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func getMinimumValue(CATBSTR iRangeId) As double
                 | 
                 |     Returns the minimum or maximum value of the filter for the given range id,
@@ -184,19 +192,21 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
 
         :param str i_range_id:
         :return: float
+        :rtype: float
         """
         return self.defeaturing_filter_with_range.getMinimumValue(i_range_id)
 
-    def set_maximum_activity(self, i_range_id, i_value):
+    def set_maximum_activity(self, i_range_id: str, i_value: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub setMaximumActivity(CATBSTR iRangeId,
                 | boolean iValue)
 
         :param str i_range_id:
         :param bool i_value:
         :return: None
+        :rtype: None
         """
         return self.defeaturing_filter_with_range.setMaximumActivity(i_range_id, i_value)
         # # # # Autogenerated comment: 
@@ -215,23 +225,24 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_maximum_value(self, i_range_id, i_value):
+    def set_maximum_value(self, i_range_id: str, i_value: float) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub setMaximumValue(CATBSTR iRangeId,
                 | double iValue)
 
         :param str i_range_id:
         :param float i_value:
         :return: None
+        :rtype: None
         """
         return self.defeaturing_filter_with_range.setMaximumValue(i_range_id, i_value)
 
-    def set_minimum_activity(self, i_range_id, i_value):
+    def set_minimum_activity(self, i_range_id: str, i_value: bool) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub setMinimumActivity(CATBSTR iRangeId,
                 | boolean iValue)
                 | 
@@ -264,6 +275,7 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
         :param str i_range_id:
         :param bool i_value:
         :return: None
+        :rtype: None
         """
         return self.defeaturing_filter_with_range.setMinimumActivity(i_range_id, i_value)
         # # # # Autogenerated comment: 
@@ -282,10 +294,10 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_minimum_value(self, i_range_id, i_value):
+    def set_minimum_value(self, i_range_id: str, i_value: float) -> None:
         """
         .. note::
-            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub setMinimumValue(CATBSTR iRangeId,
                 | double iValue)
                 | 
@@ -321,8 +333,9 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
         :param str i_range_id:
         :param float i_value:
         :return: None
+        :rtype: None
         """
         return self.defeaturing_filter_with_range.setMinimumValue(i_range_id, i_value)
 
     def __repr__(self):
-        return f'DefeaturingFilterWithRange(name="{self.name}")'
+        return f'DefeaturingFilterWithRange(name="{ self.name }")'
