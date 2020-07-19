@@ -118,7 +118,7 @@ class VisPropertySet(AnyObject):
         super().__init__(com_object)
         self.vis_property_set = com_object
 
-    def get_layer(self, o_layer_type: int, o_layer_value: int) -> int:
+    def get_layer(self) -> tuple:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
@@ -159,14 +159,12 @@ class VisPropertySet(AnyObject):
                 |          MsgBox "layer =" & layer
                 |          End If
 
-        :param int o_layer_type:
-        :param int o_layer_value:
-        :return: int
-        :rtype: int
+        :return: tuple
+        :rtype: tuple
         """
-        return self.vis_property_set.GetLayer(o_layer_type, o_layer_value)
+        return self.vis_property_set.GetLayer()
 
-    def get_pick(self, o_pick: int) -> int:
+    def get_pick(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
@@ -187,13 +185,12 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetPick pickstate
                 |          MsgBox "pick = " & pickstate
 
-        :param int o_pick:
         :return: int
         :rtype: int
         """
-        return self.vis_property_set.GetPick(o_pick)
+        return self.vis_property_set.GetPick()
 
-    def get_real_color(self, o_red: int, o_green: int, o_blue: int) -> int:
+    def get_real_color(self) -> tuple:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
@@ -233,15 +230,12 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetRealColor r, g, b 
                 |          MsgBox "r = " & r & " g = " & g & " b = " & b
 
-        :param int o_red:
-        :param int o_green:
-        :param int o_blue:
-        :return: int
-        :rtype: int
+        :return: tuple
+        :rtype: tuple
         """
-        return self.vis_property_set.GetRealColor(o_red, o_green, o_blue)
+        return self.vis_property_set.GetRealColor()
 
-    def get_real_inheritance(self, i_property_type: int, o_inheritance: int) -> int:
+    def get_real_inheritance(self) -> tuple:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
@@ -291,14 +285,12 @@ class VisPropertySet(AnyObject):
                 |          MsgBox "Inheritance : linetype = " & inhLineType & "width =" & inhWidth & "Colour ="
                 |                 & inhColor & "Opacity =" & inhOpacity
 
-        :param int i_property_type:
-        :param int o_inheritance:
-        :return: int
-        :rtype: int
+        :return: tuple
+        :rtype: tuple
         """
-        return self.vis_property_set.GetRealInheritance(i_property_type, o_inheritance)
+        return self.vis_property_set.GetRealInheritance()
 
-    def get_real_line_type(self, o_line_type: int) -> int:
+    def get_real_line_type(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
@@ -338,13 +330,12 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetRealLineType linetype
                 |          MsgBox "linetype = " & linetype
 
-        :param int o_line_type:
         :return: int
         :rtype: int
         """
-        return self.vis_property_set.GetRealLineType(o_line_type)
+        return self.vis_property_set.GetRealLineType()
 
-    def get_real_opacity(self, o_opacity: int) -> int:
+    def get_real_opacity(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
@@ -382,13 +373,12 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetRealOpacity op 
                 |          MsgBox "opacity = " & op
 
-        :param int o_opacity:
         :return: int
         :rtype: int
         """
-        return self.vis_property_set.GetRealOpacity(o_opacity)
+        return self.vis_property_set.GetRealOpacity()
 
-    def get_real_width(self, o_line_width: int) -> int:
+    def get_real_width(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
@@ -427,13 +417,12 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetRealWidth width
                 |          MsgBox "width = " & width
 
-        :param int o_line_width:
         :return: int
         :rtype: int
         """
-        return self.vis_property_set.GetRealWidth(o_line_width)
+        return self.vis_property_set.GetRealWidth()
 
-    def get_show(self, o_show: int) -> int:
+    def get_show(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
@@ -454,13 +443,12 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetShow showstate
                 |          MsgBox "show = " & showstate
 
-        :param int o_show:
         :return: int
         :rtype: int
         """
-        return self.vis_property_set.GetShow(o_show)
+        return self.vis_property_set.GetShow()
 
-    def get_symbol_type(self, o_symbol_type: int) -> int:
+    def get_symbol_type(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
@@ -498,13 +486,12 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetSymbolType symbol
                 |          MsgBox "Symbol = " & symbol
 
-        :param int o_symbol_type:
         :return: int
         :rtype: int
         """
-        return self.vis_property_set.GetSymbolType(o_symbol_type)
+        return self.vis_property_set.GetSymbolType()
 
-    def get_visible_color(self, o_red: int, o_green: int, o_blue: int) -> int:
+    def get_visible_color(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
@@ -548,15 +535,12 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetVisibleColor r, g, b 
                 |          MsgBox "r = " & r & " g = " & g & " b = " & b
 
-        :param int o_red:
-        :param int o_green:
-        :param int o_blue:
         :return: int
         :rtype: int
         """
-        return self.vis_property_set.GetVisibleColor(o_red, o_green, o_blue)
+        return self.vis_property_set.GetVisibleColor()
 
-    def get_visible_inheritance(self, i_property_type: int, o_inheritance: int) -> int:
+    def get_visible_inheritance(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
@@ -590,14 +574,12 @@ class VisPropertySet(AnyObject):
                 |                 The inheritance flag for iPropertyType is not the same for all
                 |                 elements of the current selection, so oInheritance is not valid
 
-        :param int i_property_type:
-        :param int o_inheritance:
         :return: int
         :rtype: int
         """
-        return self.vis_property_set.GetVisibleInheritance(i_property_type, o_inheritance)
+        return self.vis_property_set.GetVisibleInheritance()
 
-    def get_visible_line_type(self, o_line_type: int) -> int:
+    def get_visible_line_type(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
@@ -636,13 +618,12 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetVisibleLineType linetype
                 |          MsgBox "linetype = " & linetype
 
-        :param int o_line_type:
         :return: int
         :rtype: int
         """
-        return self.vis_property_set.GetVisibleLineType(o_line_type)
+        return self.vis_property_set.GetVisibleLineType()
 
-    def get_visible_opacity(self, o_opacity: int) -> int:
+    def get_visible_opacity(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
@@ -683,13 +664,12 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetVisibleOpacity op 
                 |          MsgBox "opacity = " & op
 
-        :param int o_opacity:
         :return: int
         :rtype: int
         """
-        return self.vis_property_set.GetVisibleOpacity(o_opacity)
+        return self.vis_property_set.GetVisibleOpacity()
 
-    def get_visible_width(self, o_line_width: int) -> int:
+    def get_visible_width(self) -> int:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
@@ -728,11 +708,10 @@ class VisPropertySet(AnyObject):
                 |          MsgBox "width = " & width
 
 
-        :param int o_line_width:
         :return: int
         :rtype: int
         """
-        return self.vis_property_set.GetVisibleWidth(o_line_width)
+        return self.vis_property_set.GetVisibleWidth()
 
     def set_layer(self, i_layer_type: int, i_layer_value: int) -> None:
         """

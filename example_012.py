@@ -7,6 +7,8 @@
     Access the CATIA COM object with a .CATPart open and and display
     each parameter along with its name, value and its associated parameter set.
 
+    # todo: need to create a source part to support this example.
+
 """
 
 from pycatia import catia
@@ -15,7 +17,7 @@ from pycatia import catia
 
 
 documents = catia.documents
-documents.open(r'cat_files/CF_Part_3.CATPart')
+documents.open(r'tests/cat_files/part_measurable.CATPart')
 
 document = catia.active_document
 
