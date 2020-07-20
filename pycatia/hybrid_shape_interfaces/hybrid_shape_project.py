@@ -72,12 +72,12 @@ class HybridShapeProject(HybridShape):
         return HybridShapeDirection(self.hybrid_shape_project.Direction)
 
     @direction.setter
-    def direction(self, value: HybridShapeDirection):
+    def direction(self, direction: HybridShapeDirection):
         """
-        :param HybridShapeDirection value:
+        :param HybridShapeDirection direction:
         """
 
-        self.hybrid_shape_project.Direction = value
+        self.hybrid_shape_project.Direction = direction.com_object
 
     @property
     def elem_to_project(self) -> Reference:
@@ -104,12 +104,12 @@ class HybridShapeProject(HybridShape):
         return Reference(self.hybrid_shape_project.ElemToProject)
 
     @elem_to_project.setter
-    def elem_to_project(self, value: Reference):
+    def elem_to_project(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_project.ElemToProject = value
+        self.hybrid_shape_project.ElemToProject = reference_element.com_object
 
     @property
     def extrapolation_mode(self) -> int:
@@ -298,12 +298,12 @@ class HybridShapeProject(HybridShape):
         return Reference(self.hybrid_shape_project.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, reference_support: Reference):
         """
-        :param Reference value:
+        :param Reference reference_support:
         """
 
-        self.hybrid_shape_project.Support = value
+        self.hybrid_shape_project.Support = reference_support.com_object
 
     @property
     def p_3d_smoothing(self) -> bool:

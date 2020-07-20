@@ -15,7 +15,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeRollingOffset(HybridShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -95,12 +94,12 @@ class HybridShapeRollingOffset(HybridShape):
         return Reference(self.hybrid_shape_rolling_offset.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, reference_support: Reference):
         """
-        :param Reference value:
+        :param Reference reference_support:
         """
 
-        self.hybrid_shape_rolling_offset.Support = value
+        self.hybrid_shape_rolling_offset.Support = reference_support.com_object
 
     def get_curve(self, i_pos: int) -> Reference:
         """
@@ -255,4 +254,4 @@ class HybridShapeRollingOffset(HybridShape):
         return self.hybrid_shape_rolling_offset.putOffset(i_offset)
 
     def __repr__(self):
-        return f'HybridShapeRollingOffset(name="{ self.name }")'
+        return f'HybridShapeRollingOffset(name="{self.name}")'

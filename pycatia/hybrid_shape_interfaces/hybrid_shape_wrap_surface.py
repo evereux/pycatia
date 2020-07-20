@@ -14,7 +14,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeWrapSurface(HybridShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -105,12 +104,12 @@ class HybridShapeWrapSurface(HybridShape):
         return Reference(self.hybrid_shape_wrap_surface.ReferenceSurface)
 
     @reference_surface.setter
-    def reference_surface(self, value: Reference):
+    def reference_surface(self, reference_surface: Reference):
         """
-        :param Reference value:
+        :param Reference reference_surface:
         """
 
-        self.hybrid_shape_wrap_surface.ReferenceSurface = value
+        self.hybrid_shape_wrap_surface.ReferenceSurface = reference_surface.com_object
 
     @property
     def surface(self) -> Reference:
@@ -135,12 +134,12 @@ class HybridShapeWrapSurface(HybridShape):
         return Reference(self.hybrid_shape_wrap_surface.Surface)
 
     @surface.setter
-    def surface(self, value: Reference):
+    def surface(self, reference_surface: Reference):
         """
-        :param Reference value:
+        :param Reference reference_surface:
         """
 
-        self.hybrid_shape_wrap_surface.Surface = value
+        self.hybrid_shape_wrap_surface.Surface = reference_surface.com_object
 
     @property
     def target_surface(self) -> Reference:
@@ -164,12 +163,12 @@ class HybridShapeWrapSurface(HybridShape):
         return Reference(self.hybrid_shape_wrap_surface.TargetSurface)
 
     @target_surface.setter
-    def target_surface(self, value: Reference):
+    def target_surface(self, reference_surface: Reference):
         """
-        :param Reference value:
+        :param Reference reference_surface:
         """
 
-        self.hybrid_shape_wrap_surface.TargetSurface = value
+        self.hybrid_shape_wrap_surface.TargetSurface = reference_surface.com_object
 
     def __repr__(self):
-        return f'HybridShapeWrapSurface(name="{ self.name }")'
+        return f'HybridShapeWrapSurface(name="{self.name}")'

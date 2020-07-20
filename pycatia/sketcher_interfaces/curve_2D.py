@@ -78,12 +78,12 @@ class Curve2D(Geometry2D):
         return Point2D(self.curve_2d.EndPoint)
 
     @end_point.setter
-    def end_point(self, value: Point2D):
+    def end_point(self, end_point: Point2D):
         """
-        :param Point2D value:
+        :param Point2D end_point:
         """
 
-        self.curve_2d.EndPoint = value
+        self.curve_2d.EndPoint = end_point.com_object
 
     @property
     def period(self) -> float:
@@ -128,12 +128,12 @@ class Curve2D(Geometry2D):
         return Point2D(self.curve_2d.StartPoint)
 
     @start_point.setter
-    def start_point(self, value: Point2D):
+    def start_point(self, start_point: Point2D):
         """
-        :param Point2D value:
+        :param Point2D start_point:
         """
 
-        self.curve_2d.StartPoint = value
+        self.curve_2d.StartPoint = start_point.com_object
 
     def get_curvature(self, i_param: float) -> tuple:
         """

@@ -14,7 +14,6 @@ from pycatia.in_interfaces.reference import Reference
 
 
 class HybridShapePlaneNormal(Plane):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -67,12 +66,12 @@ class HybridShapePlaneNormal(Plane):
         return Reference(self.hybrid_shape_plane_normal.Curve)
 
     @curve.setter
-    def curve(self, value: Reference):
+    def curve(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_plane_normal.Curve = value
+        self.hybrid_shape_plane_normal.Curve = reference_curve
 
     @property
     def point(self) -> Reference:
@@ -103,12 +102,12 @@ class HybridShapePlaneNormal(Plane):
         return Reference(self.hybrid_shape_plane_normal.Point)
 
     @point.setter
-    def point(self, value: Reference):
+    def point(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_plane_normal.Point = value
+        self.hybrid_shape_plane_normal.Point = reference_point.com_object
 
     def __repr__(self):
-        return f'HybridShapePlaneNormal(name="{ self.name }")'
+        return f'HybridShapePlaneNormal(name="{self.name}")'

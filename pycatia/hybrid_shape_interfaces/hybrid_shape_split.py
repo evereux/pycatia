@@ -138,12 +138,12 @@ class HybridShapeSplit(HybridShape):
         return Reference(self.hybrid_shape_split.CuttingElem)
 
     @cutting_elem.setter
-    def cutting_elem(self, value: Reference):
+    def cutting_elem(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_split.CuttingElem = value
+        self.hybrid_shape_split.CuttingElem = reference_element.com_object
 
     @property
     def elem_to_cut(self) -> Reference:
@@ -168,12 +168,12 @@ class HybridShapeSplit(HybridShape):
         return Reference(self.hybrid_shape_split.ElemToCut)
 
     @elem_to_cut.setter
-    def elem_to_cut(self, value: Reference):
+    def elem_to_cut(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_split.ElemToCut = value
+        self.hybrid_shape_split.ElemToCut = reference_element.com_object
 
     @property
     def extrapolation_type(self) -> int:
@@ -331,12 +331,12 @@ class HybridShapeSplit(HybridShape):
         return Reference(self.hybrid_shape_split.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, reference_support: Reference):
         """
-        :param Reference value:
+        :param Reference reference_support:
         """
 
-        self.hybrid_shape_split.Support = value
+        self.hybrid_shape_split.Support = reference_support.com_object
 
     @property
     def volume_result(self) -> int:

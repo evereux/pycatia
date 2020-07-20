@@ -16,7 +16,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeSphere(HybridShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -70,12 +69,12 @@ class HybridShapeSphere(HybridShape):
         return Reference(self.hybrid_shape_sphere.Axis)
 
     @axis.setter
-    def axis(self, value: Reference):
+    def axis(self, reference_axis: Reference):
         """
-        :param Reference value:
+        :param Reference reference_axis:
         """
 
-        self.hybrid_shape_sphere.Axis = value
+        self.hybrid_shape_sphere.Axis = reference_axis.com_object
 
     @property
     def begin_meridian_angle(self) -> Angle:
@@ -153,12 +152,12 @@ class HybridShapeSphere(HybridShape):
         return Reference(self.hybrid_shape_sphere.Center)
 
     @center.setter
-    def center(self, value: Reference):
+    def center(self, reference: Reference):
         """
-        :param Reference value:
+        :param Reference reference:
         """
 
-        self.hybrid_shape_sphere.Center = value
+        self.hybrid_shape_sphere.Center = reference.com_object
 
     @property
     def end_meridian_angle(self) -> Angle:
@@ -382,4 +381,4 @@ class HybridShapeSphere(HybridShape):
         return self.hybrid_shape_sphere.SetRadius(i_radius)
 
     def __repr__(self):
-        return f'HybridShapeSphere(name="{ self.name }")'
+        return f'HybridShapeSphere(name="{self.name}")'

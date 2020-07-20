@@ -136,12 +136,12 @@ class HybridShapeTrim(HybridShape):
         return Reference(self.hybrid_shape_trim.FirstElem)
 
     @first_elem.setter
-    def first_elem(self, value: Reference):
+    def first_elem(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_trim.FirstElem = value
+        self.hybrid_shape_trim.FirstElem = reference_element.com_object
 
     @property
     def first_orientation(self) -> int:
@@ -346,12 +346,12 @@ class HybridShapeTrim(HybridShape):
         return Reference(self.hybrid_shape_trim.SecondElem)
 
     @second_elem.setter
-    def second_elem(self, value: Reference):
+    def second_elem(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_trim.SecondElem = value
+        self.hybrid_shape_trim.SecondElem = reference_element.com_object
 
     @property
     def second_orientation(self) -> int:
@@ -469,12 +469,12 @@ class HybridShapeTrim(HybridShape):
         return Reference(self.hybrid_shape_trim.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, reference_support: Reference):
         """
-        :param Reference value:
+        :param Reference reference_support:
         """
 
-        self.hybrid_shape_trim.Support = value
+        self.hybrid_shape_trim.Support = reference_support.com_object
 
     def add_element_to_keep(self, i_element: Reference) -> None:
         """

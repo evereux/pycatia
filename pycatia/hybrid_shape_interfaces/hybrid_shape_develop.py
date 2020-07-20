@@ -134,12 +134,12 @@ class HybridShapeDevelop(HybridShape):
         return Reference(self.hybrid_shape_develop.PlaneAxisDirection)
 
     @plane_axis_direction.setter
-    def plane_axis_direction(self, value: Reference):
+    def plane_axis_direction(self, reference_plane: Reference):
         """
-        :param Reference value:
+        :param Reference reference_plane:
         """
 
-        self.hybrid_shape_develop.PlaneAxisDirection = value
+        self.hybrid_shape_develop.PlaneAxisDirection = reference_plane.com_object
 
     @property
     def plane_axis_origin(self) -> Reference:
@@ -159,12 +159,12 @@ class HybridShapeDevelop(HybridShape):
         return Reference(self.hybrid_shape_develop.PlaneAxisOrigin)
 
     @plane_axis_origin.setter
-    def plane_axis_origin(self, value: Reference):
+    def plane_axis_origin(self, reference_plane: Reference):
         """
-        :param Reference value:
+        :param reference_plane value:
         """
 
-        self.hybrid_shape_develop.PlaneAxisOrigin = value
+        self.hybrid_shape_develop.PlaneAxisOrigin = reference_plane.com_object
 
     @property
     def point_on_support(self) -> Reference:
@@ -184,12 +184,12 @@ class HybridShapeDevelop(HybridShape):
         return Reference(self.hybrid_shape_develop.PointOnSupport)
 
     @point_on_support.setter
-    def point_on_support(self, value: Reference):
+    def point_on_support(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_develop.PointOnSupport = value
+        self.hybrid_shape_develop.PointOnSupport = reference_point.com_object
 
     @property
     def positioned_wire(self) -> Reference:
@@ -214,7 +214,7 @@ class HybridShapeDevelop(HybridShape):
         :param Reference value:
         """
 
-        self.hybrid_shape_develop.PositionedWire = value
+        self.hybrid_shape_develop.PositionedWire = value.com_object
 
     @property
     def support(self) -> Reference:
@@ -234,12 +234,12 @@ class HybridShapeDevelop(HybridShape):
         return Reference(self.hybrid_shape_develop.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, reference_support: Reference):
         """
-        :param Reference value:
+        :param Reference reference_support:
         """
 
-        self.hybrid_shape_develop.Support = value
+        self.hybrid_shape_develop.Support = reference_support.com_object
 
     @property
     def wire_to_develop(self) -> Reference:
@@ -259,12 +259,12 @@ class HybridShapeDevelop(HybridShape):
         return Reference(self.hybrid_shape_develop.WireToDevelop)
 
     @wire_to_develop.setter
-    def wire_to_develop(self, value: Reference):
+    def wire_to_develop(self, reference: Reference):
         """
-        :param Reference value:
+        :param Reference reference:
         """
 
-        self.hybrid_shape_develop.WireToDevelop = value
+        self.hybrid_shape_develop.WireToDevelop = reference.com_object
 
     def get_plane_axis_angle(self) -> Angle:
         """

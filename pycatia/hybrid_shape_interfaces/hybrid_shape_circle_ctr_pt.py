@@ -74,12 +74,12 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle_ctr_pt.Center)
 
     @center.setter
-    def center(self, value: Reference):
+    def center(self, reference_center: Reference):
         """
-        :param Reference value:
+        :param Reference reference_center:
         """
 
-        self.hybrid_shape_circle_ctr_pt.Center = value
+        self.hybrid_shape_circle_ctr_pt.Center = reference_center.com_object
 
     @property
     def crossing_point(self) -> Reference:
@@ -105,12 +105,12 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle_ctr_pt.CrossingPoint)
 
     @crossing_point.setter
-    def crossing_point(self, value: Reference):
+    def crossing_point(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_circle_ctr_pt.CrossingPoint = value
+        self.hybrid_shape_circle_ctr_pt.CrossingPoint = reference_point.com_object
 
     @property
     def support(self) -> Reference:
@@ -136,12 +136,12 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle_ctr_pt.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, reference_support: Reference):
         """
-        :param Reference value:
+        :param Reference reference_support:
         """
 
-        self.hybrid_shape_circle_ctr_pt.Support = value
+        self.hybrid_shape_circle_ctr_pt.Support = reference_support.com_object
 
     def is_geodesic(self) -> bool:
         """

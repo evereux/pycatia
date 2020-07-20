@@ -142,12 +142,12 @@ class HybridShapeExtrude(HybridShape):
         return HybridShapeDirection(self.hybrid_shape_extrude.Direction)
 
     @direction.setter
-    def direction(self, value: HybridShapeDirection):
+    def direction(self, direction: HybridShapeDirection):
         """
-        :param HybridShapeDirection value:
+        :param HybridShapeDirection direction:
         """
 
-        self.hybrid_shape_extrude.Direction = value
+        self.hybrid_shape_extrude.Direction = direction.com_object
 
     @property
     def end_offset(self) -> Length:
@@ -211,12 +211,12 @@ class HybridShapeExtrude(HybridShape):
         return Reference(self.hybrid_shape_extrude.ExtrudedObject)
 
     @extruded_object.setter
-    def extruded_object(self, value: Reference):
+    def extruded_object(self, reference_object: Reference):
         """
-        :param Reference value:
+        :param Reference reference_object:
         """
 
-        self.hybrid_shape_extrude.ExtrudedObject = value
+        self.hybrid_shape_extrude.ExtrudedObject = reference_object.com_object
 
     @property
     def first_limit_type(self) -> int:
@@ -282,12 +282,12 @@ class HybridShapeExtrude(HybridShape):
         return Reference(self.hybrid_shape_extrude.FirstUptoElement)
     
     @first_upto_element.setter
-    def first_upto_element(self, value: Reference):
+    def first_upto_element(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_extrude.FirstUptoElement = value
+        self.hybrid_shape_extrude.FirstUptoElement = reference_element
 
     @property
     def orientation(self) -> False:
@@ -382,12 +382,12 @@ class HybridShapeExtrude(HybridShape):
         return Reference(self.hybrid_shape_extrude.SecondUptoElement)
 
     @second_upto_element.setter
-    def second_upto_element(self, value: Reference):
+    def second_upto_element(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_extrude.SecondUptoElement = value
+        self.hybrid_shape_extrude.SecondUptoElement = reference_element.com_object
 
     @property
     def symmetrical_extension(self) -> bool:

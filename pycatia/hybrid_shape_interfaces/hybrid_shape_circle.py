@@ -116,12 +116,12 @@ class HybridShapeCircle(HybridShape):
         return HybridShapeDirection(self.hybrid_shape_circle.AxisDirection)
 
     @axis_direction.setter
-    def axis_direction(self, value: HybridShapeDirection):
+    def axis_direction(self, direction: HybridShapeDirection):
         """
-        :param HybridShapeDirection value:
+        :param HybridShapeDirection direction:
         """
 
-        self.hybrid_shape_circle.AxisDirection = value
+        self.hybrid_shape_circle.AxisDirection = direction.com_object
 
     @property
     def end_angle(self) -> Angle:

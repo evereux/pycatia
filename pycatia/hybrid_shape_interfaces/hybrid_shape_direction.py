@@ -76,12 +76,12 @@ class HybridShapeDirection(HybridShape):
         return Reference(self.hybrid_shape_direction.Object)
 
     @object.setter
-    def object(self, value: Reference):
+    def object(self, reference: Reference):
         """
-        :param Reference value:
+        :param Reference v:
         """
 
-        self.hybrid_shape_direction.Object = value
+        self.hybrid_shape_direction.Object = reference.com_object
 
     @property
     def ref_axis_system(self) -> Reference:
@@ -111,12 +111,12 @@ class HybridShapeDirection(HybridShape):
         return Reference(self.hybrid_shape_direction.RefAxisSystem)
 
     @ref_axis_system.setter
-    def ref_axis_system(self, value: Reference):
+    def ref_axis_system(self, reference_axis: Reference):
         """
-        :param Reference value:
+        :param Reference reference_axis:
         """
 
-        self.hybrid_shape_direction.RefAxisSystem = value
+        self.hybrid_shape_direction.RefAxisSystem = reference_axis.com_object
 
     @property
     def type(self) -> int:

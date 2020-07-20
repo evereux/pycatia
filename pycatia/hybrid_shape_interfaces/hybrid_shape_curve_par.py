@@ -72,12 +72,12 @@ class HybridShapeCurvePar(HybridShape):
         return Reference(self.hybrid_shape_curve_par.CurveOffseted)
 
     @curve_offseted.setter
-    def curve_offseted(self, value: Reference):
+    def curve_offseted(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_curve_par.CurveOffseted = value
+        self.hybrid_shape_curve_par.CurveOffseted = reference_curve.com_object
 
     @property
     def curve_par_law(self) -> Reference:
@@ -107,7 +107,7 @@ class HybridShapeCurvePar(HybridShape):
         :param Reference value:
         """
 
-        self.hybrid_shape_curve_par.CurveParLaw = value
+        self.hybrid_shape_curve_par.CurveParLaw = value.com_object
 
     @property
     def curve_par_type(self) -> int:
@@ -461,12 +461,12 @@ class HybridShapeCurvePar(HybridShape):
         return Reference(self.hybrid_shape_curve_par.PassingPoint)
 
     @passing_point.setter
-    def passing_point(self, value: Reference):
+    def passing_point(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_curve_par.PassingPoint = value
+        self.hybrid_shape_curve_par.PassingPoint = reference_point.com_object
 
     @property
     def smoothing_type(self) -> int:
@@ -525,12 +525,12 @@ class HybridShapeCurvePar(HybridShape):
         return Reference(self.hybrid_shape_curve_par.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, reference_support: Reference):
         """
         :param Reference value:
         """
 
-        self.hybrid_shape_curve_par.Support = value
+        self.hybrid_shape_curve_par.Support = reference_support.com_object
 
     @property
     def p_3d_smoothing(self) -> bool:

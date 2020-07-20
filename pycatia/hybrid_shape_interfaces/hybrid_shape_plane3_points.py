@@ -14,7 +14,6 @@ from pycatia.in_interfaces.reference import Reference
 
 
 class HybridShapePlane3Points(Plane):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -72,12 +71,12 @@ class HybridShapePlane3Points(Plane):
         return Reference(self.hybrid_shape_plane3_points.First)
 
     @first.setter
-    def first(self, value: Reference):
+    def first(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_plane3_points.First = value
+        self.hybrid_shape_plane3_points.First = reference_point.com_object
 
     @property
     def second(self) -> Reference:
@@ -102,12 +101,12 @@ class HybridShapePlane3Points(Plane):
         return Reference(self.hybrid_shape_plane3_points.Second)
 
     @second.setter
-    def second(self, value: Reference):
+    def second(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_plane3_points.Second = value
+        self.hybrid_shape_plane3_points.Second = reference_point.com_object
 
     @property
     def third(self) -> Reference:
@@ -132,12 +131,12 @@ class HybridShapePlane3Points(Plane):
         return Reference(self.hybrid_shape_plane3_points.Third)
 
     @third.setter
-    def third(self, value: Reference):
+    def third(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_plane3_points.Third = value
+        self.hybrid_shape_plane3_points.Third = reference_point
 
     def __repr__(self):
-        return f'HybridShapePlane3Points(name="{ self.name }")'
+        return f'HybridShapePlane3Points(name="{self.name}")'

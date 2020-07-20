@@ -57,12 +57,12 @@ class HybridShape3DCurveOffset(HybridShape):
         return Length(self.hybrid_shape_3d_curve_offset.CornerRadiusValue)
 
     @corner_radius_value.setter
-    def corner_radius_value(self, value: Length):
+    def corner_radius_value(self, length: Length):
         """
-        :param Length value:
+        :param Length length:
         """
 
-        self.hybrid_shape_3d_curve_offset.CornerRadiusValue = value
+        self.hybrid_shape_3d_curve_offset.CornerRadiusValue = length.com_object
 
     @property
     def corner_tension_value(self) -> float:
@@ -103,12 +103,12 @@ class HybridShape3DCurveOffset(HybridShape):
         return Reference(self.hybrid_shape_3d_curve_offset.CurveToOffset)
 
     @curve_to_offset.setter
-    def curve_to_offset(self, value: Reference):
+    def curve_to_offset(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_3d_curve_offset.CurveToOffset = value
+        self.hybrid_shape_3d_curve_offset.CurveToOffset = reference_curve.com_object
 
     @property
     def direction(self) -> HybridShapeDirection:
@@ -126,12 +126,12 @@ class HybridShape3DCurveOffset(HybridShape):
         return HybridShapeDirection(self.hybrid_shape_3d_curve_offset.Direction)
 
     @direction.setter
-    def direction(self, value: HybridShapeDirection):
+    def direction(self, direction: HybridShapeDirection):
         """
-        :param HybridShapeDirection value:
+        :param HybridShapeDirection direction:
         """
 
-        self.hybrid_shape_3d_curve_offset.Direction = value
+        self.hybrid_shape_3d_curve_offset.Direction = direction.com_object
 
     @property
     def invert_direction(self) -> bool:
@@ -172,12 +172,12 @@ class HybridShape3DCurveOffset(HybridShape):
         return Length(self.hybrid_shape_3d_curve_offset.OffsetValue)
 
     @offset_value.setter
-    def offset_value(self, value: Length):
+    def offset_value(self, length: Length):
         """
-        :param Length value:
+        :param Length length:
         """
 
-        self.hybrid_shape_3d_curve_offset.OffsetValue = value
+        self.hybrid_shape_3d_curve_offset.OffsetValue = length
 
     def __repr__(self):
         return f'HybridShape3DCurveOffset(name="{self.name}")'

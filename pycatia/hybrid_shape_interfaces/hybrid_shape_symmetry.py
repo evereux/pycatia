@@ -14,7 +14,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeSymmetry(HybridShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -109,12 +108,12 @@ class HybridShapeSymmetry(HybridShape):
         return Reference(self.hybrid_shape_symmetry.ElemToSymmetry)
 
     @elem_to_symmetry.setter
-    def elem_to_symmetry(self, value: Reference):
+    def elem_to_symmetry(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_symmetry.ElemToSymmetry = value
+        self.hybrid_shape_symmetry.ElemToSymmetry = reference_element.com_object
 
     @property
     def reference(self) -> Reference:
@@ -142,12 +141,12 @@ class HybridShapeSymmetry(HybridShape):
         return Reference(self.hybrid_shape_symmetry.Reference)
 
     @reference.setter
-    def reference(self, value: Reference):
+    def reference(self, reference: Reference):
         """
-        :param Reference value:
+        :param Reference reference:
         """
 
-        self.hybrid_shape_symmetry.Reference = value
+        self.hybrid_shape_symmetry.Reference = reference.com_object
 
     @property
     def volume_result(self) -> bool:
@@ -184,4 +183,4 @@ class HybridShapeSymmetry(HybridShape):
         self.hybrid_shape_symmetry.VolumeResult = value
 
     def __repr__(self):
-        return f'HybridShapeSymmetry(name="{ self.name }")'
+        return f'HybridShapeSymmetry(name="{self.name}")'

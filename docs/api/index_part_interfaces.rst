@@ -1,0 +1,76 @@
+pycatia.part_interfaces
+=======================
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Contents:
+
+
+   pycatia/part_interfaces/add
+   pycatia/part_interfaces/affinity
+   pycatia/part_interfaces/angular_repartition
+   pycatia/part_interfaces/assemble
+   pycatia/part_interfaces/auto_draft
+   pycatia/part_interfaces/auto_fillet
+   pycatia/part_interfaces/axis_to_axis
+   pycatia/part_interfaces/boolean_shape
+   pycatia/part_interfaces/chamfer
+   pycatia/part_interfaces/circ_pattern
+   pycatia/part_interfaces/close_surface
+   pycatia/part_interfaces/const_rad_edge_fillet
+   pycatia/part_interfaces/defeaturing
+   pycatia/part_interfaces/defeaturing_fillet_filter
+   pycatia/part_interfaces/defeaturing_filter
+   pycatia/part_interfaces/defeaturing_filter_with_range
+   pycatia/part_interfaces/defeaturing_filters
+   pycatia/part_interfaces/defeaturing_hole_filter
+   pycatia/part_interfaces/draft
+   pycatia/part_interfaces/draft_domain
+   pycatia/part_interfaces/draft_domains
+   pycatia/part_interfaces/dress_up_shape
+   pycatia/part_interfaces/edge_fillet
+   pycatia/part_interfaces/face_fillet
+   pycatia/part_interfaces/fillet
+   pycatia/part_interfaces/groove
+   pycatia/part_interfaces/hole
+   pycatia/part_interfaces/intersect
+   pycatia/part_interfaces/limit
+   pycatia/part_interfaces/linear_repartition
+   pycatia/part_interfaces/loft
+   pycatia/part_interfaces/mirror
+   pycatia/part_interfaces/pad
+   pycatia/part_interfaces/pattern
+   pycatia/part_interfaces/pocket
+   pycatia/part_interfaces/prism
+   pycatia/part_interfaces/rect_pattern
+   pycatia/part_interfaces/remove
+   pycatia/part_interfaces/remove_face
+   pycatia/part_interfaces/repartition
+   pycatia/part_interfaces/replace_face
+   pycatia/part_interfaces/revolution
+   pycatia/part_interfaces/rib
+   pycatia/part_interfaces/rotate
+   pycatia/part_interfaces/scaling
+   pycatia/part_interfaces/scaling2
+   pycatia/part_interfaces/sew_surface
+   pycatia/part_interfaces/shaft
+   pycatia/part_interfaces/shape_factory
+   pycatia/part_interfaces/shell
+   pycatia/part_interfaces/sketch_based_shape
+   pycatia/part_interfaces/slot
+   pycatia/part_interfaces/solid_combine
+   pycatia/part_interfaces/split
+   pycatia/part_interfaces/stiffener
+   pycatia/part_interfaces/surface_based_shape
+   pycatia/part_interfaces/sweep
+   pycatia/part_interfaces/symmetry
+   pycatia/part_interfaces/thick_surface
+   pycatia/part_interfaces/thickness
+   pycatia/part_interfaces/thread
+   pycatia/part_interfaces/transformation_shape
+   pycatia/part_interfaces/translate
+   pycatia/part_interfaces/trim
+   pycatia/part_interfaces/tritangent_fillet
+   pycatia/part_interfaces/user_pattern
+   pycatia/part_interfaces/user_repartition
+   pycatia/part_interfaces/var_rad_edge_fillet

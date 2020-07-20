@@ -141,12 +141,12 @@ class HybridShapeCorner(HybridShape):
         return HybridShapeDirection(self.hybrid_shape_corner.Direction)
 
     @direction.setter
-    def direction(self, value: HybridShapeDirection):
+    def direction(self, direction: HybridShapeDirection):
         """
-        :param HybridShapeDirection value:
+        :param HybridShapeDirection direction:
         """
 
-        self.hybrid_shape_corner.Direction = value
+        self.hybrid_shape_corner.Direction = direction.com_object
 
     @property
     def discrimination_index(self) -> int:
@@ -212,12 +212,12 @@ class HybridShapeCorner(HybridShape):
         return Reference(self.hybrid_shape_corner.FirstElem)
 
     @first_elem.setter
-    def first_elem(self, value: Reference):
+    def first_elem(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_corner.FirstElem = value
+        self.hybrid_shape_corner.FirstElem = reference_element.com_object
 
     @property
     def first_orientation(self) -> int:
@@ -377,12 +377,12 @@ class HybridShapeCorner(HybridShape):
         return Reference(self.hybrid_shape_corner.SecondElem)
 
     @second_elem.setter
-    def second_elem(self, value: Reference):
+    def second_elem(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_corner.SecondElem = value
+        self.hybrid_shape_corner.SecondElem = reference_element.com_object
 
     @property
     def second_orientation(self) -> int:
@@ -485,12 +485,12 @@ class HybridShapeCorner(HybridShape):
         return Reference(self.hybrid_shape_corner.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, reference_support: Reference):
         """
-        :param Reference value:
+        :param Reference reference_support:
         """
 
-        self.hybrid_shape_corner.Support = value
+        self.hybrid_shape_corner.Support = reference_support.com_object
 
     @property
     def trim(self) -> bool:
