@@ -76,12 +76,12 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_explicit.AngleLaw)
 
     @angle_law.setter
-    def angle_law(self, value: Reference):
+    def angle_law(self, reference_law: Reference):
         """
-        :param Reference value:
+        :param Reference reference_law:
         """
 
-        self.hybrid_shape_sweep_explicit.AngleLaw = value
+        self.hybrid_shape_sweep_explicit.AngleLaw = reference_law.com_object
 
     @property
     def angle_law_inversion(self) -> int:
@@ -239,12 +239,12 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_explicit.FirstGuideCrv)
 
     @first_guide_crv.setter
-    def first_guide_crv(self, value: Reference):
+    def first_guide_crv(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_sweep_explicit.FirstGuideCrv = value
+        self.hybrid_shape_sweep_explicit.FirstGuideCrv = reference_curve.com_object
 
     @property
     def guide_deviation(self) -> Length:
@@ -428,12 +428,12 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_explicit.PositionedProfile)
 
     @positioned_profile.setter
-    def positioned_profile(self, value: Reference):
+    def positioned_profile(self, reference_profile: Reference):
         """
-        :param Reference value:
+        :param Reference reference_profile:
         """
 
-        self.hybrid_shape_sweep_explicit.PositionedProfile = value
+        self.hybrid_shape_sweep_explicit.PositionedProfile = reference_profile.com_object
 
     @property
     def profile(self) -> Reference:
@@ -465,12 +465,12 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_explicit.Profile)
 
     @profile.setter
-    def profile(self, value: Reference):
+    def profile(self, reference_profile: Reference):
         """
-        :param Reference value:
+        :param Reference reference_profile:
         """
 
-        self.hybrid_shape_sweep_explicit.Profile = value
+        self.hybrid_shape_sweep_explicit.Profile = reference_profile.com_object
 
     @property
     def profile_x_axis_computation_mode(self) -> int:
@@ -541,12 +541,12 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         return HybridShapeDirection(self.hybrid_shape_sweep_explicit.PullingDirection)
 
     @pulling_direction.setter
-    def pulling_direction(self, value: HybridShapeDirection):
+    def pulling_direction(self, direction: HybridShapeDirection):
         """
-        :param HybridShapeDirection value:
+        :param HybridShapeDirection direction:
         """
 
-        self.hybrid_shape_sweep_explicit.PullingDirection = value
+        self.hybrid_shape_sweep_explicit.PullingDirection = direction.com_object
 
     @property
     def reference(self) -> Reference:
@@ -573,12 +573,12 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_explicit.Reference)
 
     @reference.setter
-    def reference(self, value: Reference):
+    def reference(self, reference: Reference):
         """
-        :param Reference value:
+        :param Reference reference:
         """
 
-        self.hybrid_shape_sweep_explicit.Reference = value
+        self.hybrid_shape_sweep_explicit.Reference = reference.com_object
 
     @property
     def second_guide_crv(self) -> Reference:
@@ -610,12 +610,12 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_explicit.SecondGuideCrv)
 
     @second_guide_crv.setter
-    def second_guide_crv(self, value: Reference):
+    def second_guide_crv(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_sweep_explicit.SecondGuideCrv = value
+        self.hybrid_shape_sweep_explicit.SecondGuideCrv = reference_curve.com_object
 
     @property
     def smooth_activity(self) -> bool:
@@ -710,12 +710,12 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_explicit.Spine)
 
     @spine.setter
-    def spine(self, value: Reference):
+    def spine(self, reference_spine: Reference):
         """
-        :param Reference value:
+        :param Reference reference_spine:
         """
 
-        self.hybrid_shape_sweep_explicit.Spine = value
+        self.hybrid_shape_sweep_explicit.Spine = reference_spine.com_object
 
     @property
     def sub_type(self) -> int:

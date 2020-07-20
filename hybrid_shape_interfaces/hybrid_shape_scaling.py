@@ -15,7 +15,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeScaling(HybridShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -80,12 +79,12 @@ class HybridShapeScaling(HybridShape):
         return Reference(self.hybrid_shape_scaling.Center)
 
     @center.setter
-    def center(self, value: Reference):
+    def center(self, reference_center: Reference):
         """
-        :param Reference value:
+        :param Reference reference_center:
         """
 
-        self.hybrid_shape_scaling.Center = value
+        self.hybrid_shape_scaling.Center = reference_center.com_object
 
     @property
     def creation_mode(self) -> bool:
@@ -144,12 +143,12 @@ class HybridShapeScaling(HybridShape):
         return Reference(self.hybrid_shape_scaling.ElemToScale)
 
     @elem_to_scale.setter
-    def elem_to_scale(self, value: Reference):
+    def elem_to_scale(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_scaling.ElemToScale = value
+        self.hybrid_shape_scaling.ElemToScale = reference_element.com_object
 
     @property
     def ratio(self) -> RealParam:
@@ -231,4 +230,4 @@ class HybridShapeScaling(HybridShape):
         self.hybrid_shape_scaling.VolumeResult = value
 
     def __repr__(self):
-        return f'HybridShapeScaling(name="{ self.name }")'
+        return f'HybridShapeScaling(name="{self.name}")'

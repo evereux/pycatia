@@ -16,7 +16,6 @@ from pycatia.knowledge_interfaces.length import Length
 
 
 class HybridShapePointOnSurface(Point):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -74,12 +73,12 @@ class HybridShapePointOnSurface(Point):
         return HybridShapeDirection(self.hybrid_shape_point_on_surface.Direction)
 
     @direction.setter
-    def direction(self, value: HybridShapeDirection):
+    def direction(self, direction: HybridShapeDirection):
         """
-        :param HybridShapeDirection value:
+        :param HybridShapeDirection direction:
         """
 
-        self.hybrid_shape_point_on_surface.Direction = value
+        self.hybrid_shape_point_on_surface.Direction = direction.com_object
 
     @property
     def offset(self) -> Length:
@@ -132,12 +131,12 @@ class HybridShapePointOnSurface(Point):
         return Reference(self.hybrid_shape_point_on_surface.Point)
 
     @point.setter
-    def point(self, value: Reference):
+    def point(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_point_on_surface.Point = value
+        self.hybrid_shape_point_on_surface.Point = reference_point.com_object
 
     @property
     def surface(self) -> Reference:
@@ -164,12 +163,12 @@ class HybridShapePointOnSurface(Point):
         return Reference(self.hybrid_shape_point_on_surface.Surface)
 
     @surface.setter
-    def surface(self, value: Reference):
+    def surface(self, reference_surface: Reference):
         """
-        :param Reference value:
+        :param Reference reference_surface:
         """
 
-        self.hybrid_shape_point_on_surface.Surface = value
+        self.hybrid_shape_point_on_surface.Surface = reference_surface.com_object
 
     def __repr__(self):
-        return f'HybridShapePointOnSurface(name="{ self.name }")'
+        return f'HybridShapePointOnSurface(name="{self.name}")'

@@ -15,7 +15,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeRotate(HybridShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -119,12 +118,12 @@ class HybridShapeRotate(HybridShape):
         return Reference(self.hybrid_shape_rotate.Axis)
 
     @axis.setter
-    def axis(self, value: Reference):
+    def axis(self, reference_axis: Reference):
         """
-        :param Reference value:
+        :param Reference reference_axis:
         """
 
-        self.hybrid_shape_rotate.Axis = value
+        self.hybrid_shape_rotate.Axis = reference_axis.com_object
 
     @property
     def elem_to_rotate(self) -> Reference:
@@ -148,12 +147,12 @@ class HybridShapeRotate(HybridShape):
         return Reference(self.hybrid_shape_rotate.ElemToRotate)
 
     @elem_to_rotate.setter
-    def elem_to_rotate(self, value: Reference):
+    def elem_to_rotate(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_rotate.ElemToRotate = value
+        self.hybrid_shape_rotate.ElemToRotate = reference_element.com_object
 
     @property
     def first_element(self) -> Reference:
@@ -171,12 +170,12 @@ class HybridShapeRotate(HybridShape):
         return Reference(self.hybrid_shape_rotate.FirstElement)
 
     @first_element.setter
-    def first_element(self, value: Reference):
+    def first_element(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_rotate.FirstElement = value
+        self.hybrid_shape_rotate.FirstElement = reference_element.com_object
 
     @property
     def first_point(self) -> Reference:
@@ -194,12 +193,12 @@ class HybridShapeRotate(HybridShape):
         return Reference(self.hybrid_shape_rotate.FirstPoint)
 
     @first_point.setter
-    def first_point(self, value: Reference):
+    def first_point(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_rotate.FirstPoint = value
+        self.hybrid_shape_rotate.FirstPoint = reference_point.com_object
 
     @property
     def orientation_of_first_element(self) -> bool:
@@ -295,12 +294,12 @@ class HybridShapeRotate(HybridShape):
         return Reference(self.hybrid_shape_rotate.SecondElement)
 
     @second_element.setter
-    def second_element(self, value: Reference):
+    def second_element(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_rotate.SecondElement = value
+        self.hybrid_shape_rotate.SecondElement = reference_element.com_object
 
     @property
     def second_point(self) -> Reference:
@@ -318,12 +317,12 @@ class HybridShapeRotate(HybridShape):
         return Reference(self.hybrid_shape_rotate.SecondPoint)
 
     @second_point.setter
-    def second_point(self, value: Reference):
+    def second_point(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_rotate.SecondPoint = value
+        self.hybrid_shape_rotate.SecondPoint = reference_point.com_object
 
     @property
     def third_point(self) -> Reference:
@@ -341,12 +340,12 @@ class HybridShapeRotate(HybridShape):
         return Reference(self.hybrid_shape_rotate.ThirdPoint)
 
     @third_point.setter
-    def third_point(self, value: Reference):
+    def third_point(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_rotate.ThirdPoint = value
+        self.hybrid_shape_rotate.ThirdPoint = reference_point.com_object
 
     @property
     def volume_result(self) -> bool:
@@ -450,4 +449,4 @@ class HybridShapeRotate(HybridShape):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'HybridShapeRotate(name="{ self.name }")'
+        return f'HybridShapeRotate(name="{self.name}")'

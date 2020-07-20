@@ -15,7 +15,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeAffinity(HybridShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -91,7 +90,7 @@ class HybridShapeAffinity(HybridShape):
         :param Reference value:
         """
 
-        self.hybrid_shape_affinity.AxisFirstDirection = value
+        self.hybrid_shape_affinity.AxisFirstDirection = value.com_object
 
     @property
     def axis_origin(self) -> Reference:
@@ -123,7 +122,7 @@ class HybridShapeAffinity(HybridShape):
         :param Reference value:
         """
 
-        self.hybrid_shape_affinity.AxisOrigin = value
+        self.hybrid_shape_affinity.AxisOrigin = value.com_object
 
     @property
     def axis_plane(self) -> Reference:
@@ -157,7 +156,7 @@ class HybridShapeAffinity(HybridShape):
         :param Reference value:
         """
 
-        self.hybrid_shape_affinity.AxisPlane = value
+        self.hybrid_shape_affinity.AxisPlane = value.com_object
 
     @property
     def creation_mode(self) -> bool:
@@ -222,7 +221,7 @@ class HybridShapeAffinity(HybridShape):
         :param Reference value:
         """
 
-        self.hybrid_shape_affinity.ElemToTransform = value
+        self.hybrid_shape_affinity.ElemToTransform = value.com_object
 
     @property
     def volume_result(self) -> bool:
@@ -331,4 +330,4 @@ class HybridShapeAffinity(HybridShape):
         return RealParam(self.hybrid_shape_affinity.ZRatios)
 
     def __repr__(self):
-        return f'HybridShapeAffinity(name="{ self.name }")'
+        return f'HybridShapeAffinity(name="{self.name}")'

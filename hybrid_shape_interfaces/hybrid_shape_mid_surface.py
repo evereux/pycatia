@@ -112,12 +112,12 @@ class HybridShapeMidSurface(HybridShape):
         return Reference(self.hybrid_shape_mid_surface.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, reference_support: Reference):
         """
-        :param Reference value:
+        :param Reference reference_support:
         """
 
-        self.hybrid_shape_mid_surface.Support = value
+        self.hybrid_shape_mid_surface.Support = reference_support.com_object
 
     @property
     def threshold(self) -> Length:

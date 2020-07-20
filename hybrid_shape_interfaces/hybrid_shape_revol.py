@@ -72,12 +72,12 @@ class HybridShapeRevol(HybridShape):
         return Reference(self.hybrid_shape_revol.Axis)
 
     @axis.setter
-    def axis(self, value: Reference):
+    def axis(self, reference_axis: Reference):
         """
-        :param Reference value:
+        :param Reference reference_axis:
         """
 
-        self.hybrid_shape_revol.Axis = value
+        self.hybrid_shape_revol.Axis = reference_axis.com_object
 
     @property
     def begin_angle(self) -> Angle:
@@ -238,12 +238,12 @@ class HybridShapeRevol(HybridShape):
         return Reference(self.hybrid_shape_revol.FirstUptoElement)
 
     @first_upto_element.setter
-    def first_upto_element(self, value: Reference):
+    def first_upto_element(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_revol.FirstUptoElement = value
+        self.hybrid_shape_revol.FirstUptoElement = reference_element.com_object
 
     @property
     def orientation(self) -> False:
@@ -276,7 +276,7 @@ class HybridShapeRevol(HybridShape):
         self.hybrid_shape_revol.Orientation = value
 
     @property
-    def profil(self) -> Reference:
+    def profile(self) -> Reference:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -304,13 +304,13 @@ class HybridShapeRevol(HybridShape):
 
         return Reference(self.hybrid_shape_revol.Profil)
 
-    @profil.setter
-    def profil(self, value: Reference):
+    @profile.setter
+    def profile(self, reference_profile: Reference):
         """
-        :param Reference value:
+        :param Reference reference_profile:
         """
 
-        self.hybrid_shape_revol.Profil = value
+        self.hybrid_shape_revol.Profil = reference_profile.com_object
 
     @property
     def second_limit_type(self) -> int:
@@ -376,12 +376,12 @@ class HybridShapeRevol(HybridShape):
         return Reference(self.hybrid_shape_revol.SecondUptoElement)
 
     @second_upto_element.setter
-    def second_upto_element(self, value: Reference):
+    def second_upto_element(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_revol.SecondUptoElement = value
+        self.hybrid_shape_revol.SecondUptoElement = reference_element.com_object
 
     def __repr__(self):
         return f'HybridShapeRevol(name="{self.name}")'

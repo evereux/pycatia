@@ -16,7 +16,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeTranslate(HybridShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -146,12 +145,12 @@ class HybridShapeTranslate(HybridShape):
         return HybridShapeDirection(self.hybrid_shape_translate.Direction)
 
     @direction.setter
-    def direction(self, value: HybridShapeDirection):
+    def direction(self, direction: HybridShapeDirection):
         """
-        :param HybridShapeDirection value:
+        :param HybridShapeDirection direction:
         """
 
-        self.hybrid_shape_translate.Direction = value
+        self.hybrid_shape_translate.Direction = direction.com_object
 
     @property
     def distance(self) -> Length:
@@ -221,12 +220,12 @@ class HybridShapeTranslate(HybridShape):
         return Reference(self.hybrid_shape_translate.ElemToTranslate)
 
     @elem_to_translate.setter
-    def elem_to_translate(self, value: Reference):
+    def elem_to_translate(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_translate.ElemToTranslate = value
+        self.hybrid_shape_translate.ElemToTranslate = reference_element.com_object
 
     @property
     def first_point(self) -> Reference:
@@ -244,12 +243,12 @@ class HybridShapeTranslate(HybridShape):
         return Reference(self.hybrid_shape_translate.FirstPoint)
 
     @first_point.setter
-    def first_point(self, value: Reference):
+    def first_point(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_translate.FirstPoint = value
+        self.hybrid_shape_translate.FirstPoint = reference_point.com_object
 
     @property
     def ref_axis_system(self) -> Reference:
@@ -279,12 +278,12 @@ class HybridShapeTranslate(HybridShape):
         return Reference(self.hybrid_shape_translate.RefAxisSystem)
 
     @ref_axis_system.setter
-    def ref_axis_system(self, value: Reference):
+    def ref_axis_system(self, reference_axis: Reference):
         """
-        :param Reference value:
+        :param Reference reference_axis:
         """
 
-        self.hybrid_shape_translate.RefAxisSystem = value
+        self.hybrid_shape_translate.RefAxisSystem = reference_axis.com_object
 
     @property
     def second_point(self) -> Reference:
@@ -302,12 +301,12 @@ class HybridShapeTranslate(HybridShape):
         return Reference(self.hybrid_shape_translate.SecondPoint)
 
     @second_point.setter
-    def second_point(self, value: Reference):
+    def second_point(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_translate.SecondPoint = value
+        self.hybrid_shape_translate.SecondPoint = reference_point.com_object
 
     @property
     def vector_type(self) -> int:
@@ -440,4 +439,4 @@ class HybridShapeTranslate(HybridShape):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'HybridShapeTranslate(name="{ self.name }")'
+        return f'HybridShapeTranslate(name="{self.name}")'

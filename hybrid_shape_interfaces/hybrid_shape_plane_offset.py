@@ -97,12 +97,12 @@ class HybridShapePlaneOffset(Plane):
         return Reference(self.hybrid_shape_plane_offset.Plane)
 
     @ref_plane.setter
-    def ref_plane(self, reference: Reference):
+    def ref_plane(self, reference_plane: Reference):
         """
-        :param Reference value:
+        :param Reference reference_plane:
         """
 
-        self.hybrid_shape_plane_offset.Plane = reference.com_object
+        self.hybrid_shape_plane_offset.Plane = reference_plane.com_object
 
     def __repr__(self):
         return f'HybridShapePlaneOffset(name="{self.name}")'

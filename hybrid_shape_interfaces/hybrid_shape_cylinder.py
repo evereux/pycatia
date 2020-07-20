@@ -74,12 +74,12 @@ class HybridShapeCylinder(HybridShape):
         return Reference(self.hybrid_shape_cylinder.Center)
 
     @center.setter
-    def center(self, value: Reference):
+    def center(self, reference_center: Reference):
         """
         :param Reference value:
         """
 
-        self.hybrid_shape_cylinder.Center = value
+        self.hybrid_shape_cylinder.Center = reference_center.com_object
 
     @property
     def direction(self) -> HybridShapeDirection:
@@ -105,12 +105,12 @@ class HybridShapeCylinder(HybridShape):
         return HybridShapeDirection(self.hybrid_shape_cylinder.Direction)
 
     @direction.setter
-    def direction(self, value: HybridShapeDirection):
+    def direction(self, direction: HybridShapeDirection):
         """
-        :param HybridShapeDirection value:
+        :param HybridShapeDirection direction:
         """
 
-        self.hybrid_shape_cylinder.Direction = value
+        self.hybrid_shape_cylinder.Direction = direction.com_object
 
     @property
     def length1(self) -> Length:
@@ -137,12 +137,12 @@ class HybridShapeCylinder(HybridShape):
         return Length(self.hybrid_shape_cylinder.Length1)
 
     @length1.setter
-    def length1(self, value: Length):
+    def length1(self, length: Length):
         """
-        :param Length value:
+        :param Length length:
         """
 
-        self.hybrid_shape_cylinder.Length1 = value
+        self.hybrid_shape_cylinder.Length1 = length.com_object
 
     @property
     def length2(self) -> Length:
@@ -169,12 +169,12 @@ class HybridShapeCylinder(HybridShape):
         return Length(self.hybrid_shape_cylinder.Length2)
 
     @length2.setter
-    def length2(self, value: Length):
+    def length2(self, length: Length):
         """
-        :param Length value:
+        :param Length length:
         """
 
-        self.hybrid_shape_cylinder.Length2 = value
+        self.hybrid_shape_cylinder.Length2 = length.com_object
 
     @property
     def orientation(self) -> False:
@@ -229,12 +229,12 @@ class HybridShapeCylinder(HybridShape):
         return Length(self.hybrid_shape_cylinder.Radius)
 
     @radius.setter
-    def radius(self, value: Length):
+    def radius(self, length: Length):
         """
-        :param Length value:
+        :param Length length:
         """
 
-        self.hybrid_shape_cylinder.Radius = value
+        self.hybrid_shape_cylinder.Radius = length.com_object
 
     @property
     def symmetrical_extension(self) -> bool:

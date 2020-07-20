@@ -123,7 +123,7 @@ class HybridShapeBoundary(HybridShape):
         :param Reference value:
         """
 
-        self.hybrid_shape_boundary.InitialElement = value
+        self.hybrid_shape_boundary.InitialElement = value.com_object
 
     @property
     def propagation(self) -> int:
@@ -180,12 +180,12 @@ class HybridShapeBoundary(HybridShape):
         return Reference(self.hybrid_shape_boundary.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, support_reference: Reference):
         """
-        :param Reference value:
+        :param Reference support_reference:
         """
 
-        self.hybrid_shape_boundary.Support = value
+        self.hybrid_shape_boundary.Support = support_reference.com_object
 
     @property
     def to(self) -> Reference:
@@ -208,7 +208,7 @@ class HybridShapeBoundary(HybridShape):
         :param Reference value:
         """
 
-        self.hybrid_shape_boundary.To = value
+        self.hybrid_shape_boundary.To = value.com_object
 
     @property
     def to_orientation(self) -> int:

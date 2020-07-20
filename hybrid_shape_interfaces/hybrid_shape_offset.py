@@ -15,7 +15,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeOffset(HybridShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -89,12 +88,12 @@ class HybridShapeOffset(HybridShape):
         return Length(self.hybrid_shape_offset.OffsetValue)
 
     @offset_value.setter
-    def offset_value(self, value: Length):
+    def offset_value(self, length: Length):
         """
-        :param Length value:
+        :param Length length:
         """
 
-        self.hybrid_shape_offset.OffsetValue = value
+        self.hybrid_shape_offset.OffsetValue = length.com_object
 
     @property
     def offseted_object(self) -> Reference:
@@ -113,12 +112,12 @@ class HybridShapeOffset(HybridShape):
         return Reference(self.hybrid_shape_offset.OffsetedObject)
 
     @offseted_object.setter
-    def offseted_object(self, value: Reference):
+    def offseted_object(self, reference_object: Reference):
         """
-        :param Reference value:
+        :param Reference reference_object:
         """
 
-        self.hybrid_shape_offset.OffsetedObject = value
+        self.hybrid_shape_offset.OffsetedObject = reference_object.com_object
 
     @property
     def suppress_mode(self) -> bool:
@@ -219,4 +218,4 @@ class HybridShapeOffset(HybridShape):
         return self.hybrid_shape_offset.SetOffsetValue(i_offset)
 
     def __repr__(self):
-        return f'HybridShapeOffset(name="{ self.name }")'
+        return f'HybridShapeOffset(name="{self.name}")'

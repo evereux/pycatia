@@ -176,12 +176,12 @@ class HybridShapeCurveSmooth(HybridShape):
         return Reference(self.hybrid_shape_curve_smooth.CurveToSmooth)
 
     @curve_to_smooth.setter
-    def curve_to_smooth(self, value: Reference):
+    def curve_to_smooth(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_curve_smooth.CurveToSmooth = value
+        self.hybrid_shape_curve_smooth.CurveToSmooth = reference_curve.com_object
 
     @property
     def end_extremity_continuity(self) -> int:
@@ -338,12 +338,12 @@ class HybridShapeCurveSmooth(HybridShape):
         return Reference(self.hybrid_shape_curve_smooth.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, reference_support: Reference):
         """
-        :param Reference value:
+        :param Reference reference_support:
         """
 
-        self.hybrid_shape_curve_smooth.Support = value
+        self.hybrid_shape_curve_smooth.Support = reference_support.com_object
 
     @property
     def tangency_threshold(self) -> Angle:

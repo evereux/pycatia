@@ -260,12 +260,12 @@ class HybridShapeExtract(HybridShape):
         return Reference(self.hybrid_shape_extract.Elem)
 
     @elem.setter
-    def elem(self, value: Reference):
+    def elem(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_extract.Elem = value
+        self.hybrid_shape_extract.Elem = reference_element.com_object
 
     @property
     def is_federated(self) -> bool:
@@ -335,12 +335,12 @@ class HybridShapeExtract(HybridShape):
         return Reference(self.hybrid_shape_extract.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, reference_support: Reference):
         """
-        :param Reference value:
+        :param Reference reference_support:
         """
 
-        self.hybrid_shape_extract.Support = value
+        self.hybrid_shape_extract.Support = reference_support.com_object
 
     def __repr__(self):
         return f'HybridShapeExtract(name="{ self.name }")'

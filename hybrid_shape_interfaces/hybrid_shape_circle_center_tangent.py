@@ -110,12 +110,12 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle_center_tangent.CenterElem)
 
     @center_elem.setter
-    def center_elem(self, value: Reference):
+    def center_elem(self, reference_elem: Reference):
         """
-        :param Reference value:
+        :param Reference reference_elem:
         """
 
-        self.hybrid_shape_circle_center_tangent.CenterElem = value
+        self.hybrid_shape_circle_center_tangent.CenterElem = reference_elem.com_object
 
     @property
     def diameter(self) -> Length:
@@ -326,12 +326,12 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle_center_tangent.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, reference_support: Reference):
         """
         :param Reference value:
         """
 
-        self.hybrid_shape_circle_center_tangent.Support = value
+        self.hybrid_shape_circle_center_tangent.Support = reference_support.com_object
 
     @property
     def tangent_curve(self) -> Reference:
@@ -356,12 +356,12 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle_center_tangent.TangentCurve)
 
     @tangent_curve.setter
-    def tangent_curve(self, value: Reference):
+    def tangent_curve(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_circle_center_tangent.TangentCurve = value
+        self.hybrid_shape_circle_center_tangent.TangentCurve = reference_curve.com_object
 
     @property
     def tangent_orientation1(self) -> int:

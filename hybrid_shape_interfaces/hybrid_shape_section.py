@@ -14,7 +14,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeSection(HybridShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -68,12 +67,12 @@ class HybridShapeSection(HybridShape):
         return Reference(self.hybrid_shape_section.SectionPlane)
 
     @section_plane.setter
-    def section_plane(self, value: Reference):
+    def section_plane(self, reference_plane: Reference):
         """
-        :param Reference value:
+        :param Reference reference_plane:
         """
 
-        self.hybrid_shape_section.SectionPlane = value
+        self.hybrid_shape_section.SectionPlane = reference_plane.com_object
 
     def __repr__(self):
-        return f'HybridShapeSection(name="{ self.name }")'
+        return f'HybridShapeSection(name="{self.name}")'

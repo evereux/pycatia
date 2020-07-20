@@ -101,12 +101,12 @@ class HybridShapeLineAngle(Line):
         return Reference(self.hybrid_shape_line_angle.Curve)
 
     @curve.setter
-    def curve(self, value: Reference):
+    def curve(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_line_angle.Curve = value
+        self.hybrid_shape_line_angle.Curve = reference_curve.com_object
 
     @property
     def end_offset(self) -> Length:
@@ -209,12 +209,12 @@ class HybridShapeLineAngle(Line):
         return Reference(self.hybrid_shape_line_angle.Point)
 
     @point.setter
-    def point(self, value: Reference):
+    def point(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_line_angle.Point = value
+        self.hybrid_shape_line_angle.Point = reference_point.com_object
 
     @property
     def surface(self) -> Reference:
@@ -237,12 +237,12 @@ class HybridShapeLineAngle(Line):
         return Reference(self.hybrid_shape_line_angle.Surface)
 
     @surface.setter
-    def surface(self, value: Reference):
+    def surface(self, reference_surface: Reference):
         """
-        :param Reference value:
+        :param Reference reference_surface:
         """
 
-        self.hybrid_shape_line_angle.Surface = value
+        self.hybrid_shape_line_angle.Surface = reference_surface.com_object
 
     def get_length_type(self) -> int:
         """

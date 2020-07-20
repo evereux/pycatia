@@ -16,7 +16,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeReflectLine(HybridShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -73,12 +72,12 @@ class HybridShapeReflectLine(HybridShape):
         return Angle(self.hybrid_shape_reflect_line.Angle)
 
     @angle.setter
-    def angle(self, value: Angle):
+    def angle(self, angle: Angle):
         """
-        :param Angle value:
+        :param Angle angle:
         """
 
-        self.hybrid_shape_reflect_line.Angle = value
+        self.hybrid_shape_reflect_line.Angle = angle.com_object
 
     @property
     def direction(self) -> HybridShapeDirection:
@@ -104,12 +103,12 @@ class HybridShapeReflectLine(HybridShape):
         return HybridShapeDirection(self.hybrid_shape_reflect_line.Direction)
 
     @direction.setter
-    def direction(self, value: HybridShapeDirection):
+    def direction(self, direction: HybridShapeDirection):
         """
-        :param HybridShapeDirection value:
+        :param HybridShapeDirection direction:
         """
 
-        self.hybrid_shape_reflect_line.Direction = value
+        self.hybrid_shape_reflect_line.Direction = direction.com_object
 
     @property
     def orientation_direction(self) -> int:
@@ -194,12 +193,12 @@ class HybridShapeReflectLine(HybridShape):
         return Reference(self.hybrid_shape_reflect_line.Origin)
 
     @origin.setter
-    def origin(self, value: Reference):
+    def origin(self, reference_origin: Reference):
         """
-        :param Reference value:
+        :param Reference reference_origin:
         """
 
-        self.hybrid_shape_reflect_line.Origin = value
+        self.hybrid_shape_reflect_line.Origin = reference_origin.com_object
 
     @property
     def source_type(self) -> int:
@@ -255,12 +254,12 @@ class HybridShapeReflectLine(HybridShape):
         return Reference(self.hybrid_shape_reflect_line.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, reference_support: Reference):
         """
-        :param Reference value:
+        :param Reference reference_support:
         """
 
-        self.hybrid_shape_reflect_line.Support = value
+        self.hybrid_shape_reflect_line.Support = reference_support.com_object
 
     @property
     def type_solution(self) -> int:
@@ -327,4 +326,4 @@ class HybridShapeReflectLine(HybridShape):
         return self.hybrid_shape_reflect_line.InvertOrientationSupport()
 
     def __repr__(self):
-        return f'HybridShapeReflectLine(name="{ self.name }")'
+        return f'HybridShapeReflectLine(name="{self.name}")'

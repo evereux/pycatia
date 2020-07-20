@@ -14,7 +14,6 @@ from pycatia.in_interfaces.reference import Reference
 
 
 class HybridShapeCircleBitangentPoint(HybridShapeCircle):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -109,12 +108,12 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle_bitangent_point.Curve1)
 
     @curve1.setter
-    def curve1(self, value: Reference):
+    def curve1(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_circle_bitangent_point.Curve1 = value
+        self.hybrid_shape_circle_bitangent_point.Curve1 = reference_curve.com_object
 
     @property
     def curve2(self) -> Reference:
@@ -141,12 +140,12 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle_bitangent_point.Curve2)
 
     @curve2.setter
-    def curve2(self, value: Reference):
+    def curve2(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_circle_bitangent_point.Curve2 = value
+        self.hybrid_shape_circle_bitangent_point.Curve2 = reference_curve.com_object
 
     @property
     def discrimination_index(self) -> int:
@@ -284,12 +283,12 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle_bitangent_point.Pt)
 
     @pt.setter
-    def pt(self, value: Reference):
+    def pt(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_circle_bitangent_point.Pt = value
+        self.hybrid_shape_circle_bitangent_point.Pt = reference_point.com_object
 
     @property
     def support(self) -> Reference:
@@ -315,12 +314,12 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle_bitangent_point.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, reference_support: Reference):
         """
         :param Reference value:
         """
 
-        self.hybrid_shape_circle_bitangent_point.Support = value
+        self.hybrid_shape_circle_bitangent_point.Support = reference_support.com_object
 
     @property
     def tangent_orientation1(self) -> int:
@@ -428,4 +427,4 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
         self.hybrid_shape_circle_bitangent_point.TrimMode = value
 
     def __repr__(self):
-        return f'HybridShapeCircleBitangentPoint(name="{ self.name }")'
+        return f'HybridShapeCircleBitangentPoint(name="{self.name}")'

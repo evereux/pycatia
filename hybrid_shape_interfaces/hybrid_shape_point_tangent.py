@@ -15,7 +15,6 @@ from pycatia.in_interfaces.reference import Reference
 
 
 class HybridShapePointTangent(Point):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -76,12 +75,12 @@ class HybridShapePointTangent(Point):
         return Reference(self.hybrid_shape_point_tangent.Curve)
 
     @curve.setter
-    def curve(self, value: Reference):
+    def curve(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_point_tangent.Curve = value
+        self.hybrid_shape_point_tangent.Curve = reference_curve.com_object
 
     @property
     def direction(self) -> HybridShapeDirection:
@@ -107,12 +106,12 @@ class HybridShapePointTangent(Point):
         return HybridShapeDirection(self.hybrid_shape_point_tangent.Direction)
 
     @direction.setter
-    def direction(self, value: HybridShapeDirection):
+    def direction(self, direction: HybridShapeDirection):
         """
-        :param HybridShapeDirection value:
+        :param HybridShapeDirection direction:
         """
 
-        self.hybrid_shape_point_tangent.Direction = value
+        self.hybrid_shape_point_tangent.Direction = direction.com_object
 
     def __repr__(self):
-        return f'HybridShapePointTangent(name="{ self.name }")'
+        return f'HybridShapePointTangent(name="{self.name}")'

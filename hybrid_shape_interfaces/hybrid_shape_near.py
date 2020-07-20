@@ -65,12 +65,12 @@ class HybridShapeNear(HybridShape):
         return Reference(self.hybrid_shape_near.MultipleSolution)
 
     @multiple_solution.setter
-    def multiple_solution(self, value: Reference):
+    def multiple_solution(self, reference: Reference):
         """
-        :param Reference value:
+        :param Reference reference:
         """
 
-        self.hybrid_shape_near.MultipleSolution = value
+        self.hybrid_shape_near.MultipleSolution = reference.com_object
 
     @property
     def reference_element(self) -> Reference:
@@ -102,12 +102,12 @@ class HybridShapeNear(HybridShape):
         return Reference(self.hybrid_shape_near.ReferenceElement)
 
     @reference_element.setter
-    def reference_element(self, value: Reference):
+    def reference_element(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_near.ReferenceElement = value
+        self.hybrid_shape_near.ReferenceElement = reference_element.com_object
 
     def __repr__(self):
         return f'HybridShapeNear(name="{ self.name }")'

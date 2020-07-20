@@ -82,12 +82,12 @@ class HybridShapeFilletBiTangent(HybridShape):
         return Reference(self.hybrid_shape_fillet_bi_tangent.FirstElem)
 
     @first_elem.setter
-    def first_elem(self, value: Reference):
+    def first_elem(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_fillet_bi_tangent.FirstElem = value
+        self.hybrid_shape_fillet_bi_tangent.FirstElem = reference_element.com_object
 
     @property
     def first_law_relimiter(self) -> Reference:
@@ -113,12 +113,12 @@ class HybridShapeFilletBiTangent(HybridShape):
         return Reference(self.hybrid_shape_fillet_bi_tangent.FirstLawRelimiter)
 
     @first_law_relimiter.setter
-    def first_law_relimiter(self, value: Reference):
+    def first_law_relimiter(self, reference: Reference):
         """
-        :param Reference value:
+        :param Reference reference:
         """
 
-        self.hybrid_shape_fillet_bi_tangent.FirstLawRelimiter = value
+        self.hybrid_shape_fillet_bi_tangent.FirstLawRelimiter = reference.com_object
 
     @property
     def first_orientation(self) -> int:
@@ -161,12 +161,12 @@ class HybridShapeFilletBiTangent(HybridShape):
         return Reference(self.hybrid_shape_fillet_bi_tangent.HoldCurve)
 
     @hold_curve.setter
-    def hold_curve(self, value: Reference):
+    def hold_curve(self, reference_curve: Reference):
         """
         :param Reference value:
         """
 
-        self.hybrid_shape_fillet_bi_tangent.HoldCurve = value
+        self.hybrid_shape_fillet_bi_tangent.HoldCurve = reference_curve.com_object
 
     @property
     def integrated_law(self) -> HybridShapeIntegratedLaw:
@@ -194,12 +194,12 @@ class HybridShapeFilletBiTangent(HybridShape):
         return HybridShapeIntegratedLaw(self.hybrid_shape_fillet_bi_tangent.IntegratedLaw)
 
     @integrated_law.setter
-    def integrated_law(self, value: HybridShapeIntegratedLaw):
+    def integrated_law(self, law: HybridShapeIntegratedLaw):
         """
-        :param HybridShapeIntegratedLaw value:
+        :param HybridShapeIntegratedLaw law:
         """
 
-        self.hybrid_shape_fillet_bi_tangent.IntegratedLaw = value
+        self.hybrid_shape_fillet_bi_tangent.IntegratedLaw = law.com_object
 
     @property
     def radius(self) -> Length:
@@ -310,12 +310,12 @@ class HybridShapeFilletBiTangent(HybridShape):
         return Reference(self.hybrid_shape_fillet_bi_tangent.SecondElem)
 
     @second_elem.setter
-    def second_elem(self, value: Reference):
+    def second_elem(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_fillet_bi_tangent.SecondElem = value
+        self.hybrid_shape_fillet_bi_tangent.SecondElem = reference_element
 
     @property
     def second_law_relimiter(self) -> Reference:
@@ -341,12 +341,12 @@ class HybridShapeFilletBiTangent(HybridShape):
         return Reference(self.hybrid_shape_fillet_bi_tangent.SecondLawRelimiter)
 
     @second_law_relimiter.setter
-    def second_law_relimiter(self, value: Reference):
+    def second_law_relimiter(self, reference_law: Reference):
         """
-        :param Reference value:
+        :param Reference reference_law:
         """
 
-        self.hybrid_shape_fillet_bi_tangent.SecondLawRelimiter = value
+        self.hybrid_shape_fillet_bi_tangent.SecondLawRelimiter = reference_law.com_object
 
     @property
     def second_orientation(self) -> int:
@@ -416,12 +416,12 @@ class HybridShapeFilletBiTangent(HybridShape):
         return Reference(self.hybrid_shape_fillet_bi_tangent.Spine)
 
     @spine.setter
-    def spine(self, value: Reference):
+    def spine(self, reference_spine: Reference):
         """
-        :param Reference value:
+        :param Reference reference_spine:
         """
 
-        self.hybrid_shape_fillet_bi_tangent.Spine = value
+        self.hybrid_shape_fillet_bi_tangent.Spine = reference_spine.com_object
 
     @property
     def supports_trim_mode(self) -> int:

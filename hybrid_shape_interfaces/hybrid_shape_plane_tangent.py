@@ -14,7 +14,6 @@ from pycatia.in_interfaces.reference import Reference
 
 
 class HybridShapePlaneTangent(Plane):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -67,12 +66,12 @@ class HybridShapePlaneTangent(Plane):
         return Reference(self.hybrid_shape_plane_tangent.Point)
 
     @point.setter
-    def point(self, value: Reference):
+    def point(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_plane_tangent.Point = value
+        self.hybrid_shape_plane_tangent.Point = reference_point.com_object
 
     @property
     def surface(self) -> Reference:
@@ -103,12 +102,12 @@ class HybridShapePlaneTangent(Plane):
         return Reference(self.hybrid_shape_plane_tangent.Surface)
 
     @surface.setter
-    def surface(self, value: Reference):
+    def surface(self, reference_surface: Reference):
         """
-        :param Reference value:
+        :param Reference reference_surface:
         """
 
-        self.hybrid_shape_plane_tangent.Surface = value
+        self.hybrid_shape_plane_tangent.Surface = reference_surface.com_object
 
     def __repr__(self):
-        return f'HybridShapePlaneTangent(name="{ self.name }")'
+        return f'HybridShapePlaneTangent(name="{self.name}")'

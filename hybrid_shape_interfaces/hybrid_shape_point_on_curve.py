@@ -17,7 +17,6 @@ from pycatia.knowledge_interfaces.real_param import RealParam
 
 
 class HybridShapePointOnCurve(Point):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -83,12 +82,12 @@ class HybridShapePointOnCurve(Point):
         return Reference(self.hybrid_shape_point_on_curve.Curve)
 
     @curve.setter
-    def curve(self, value: Reference):
+    def curve(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_point_on_curve.Curve = value
+        self.hybrid_shape_point_on_curve.Curve = reference_curve.com_object
 
     @property
     def direction(self) -> HybridShapeDirection:
@@ -114,12 +113,12 @@ class HybridShapePointOnCurve(Point):
         return HybridShapeDirection(self.hybrid_shape_point_on_curve.Direction)
 
     @direction.setter
-    def direction(self, value: HybridShapeDirection):
+    def direction(self, direction: HybridShapeDirection):
         """
-        :param HybridShapeDirection value:
+        :param HybridShapeDirection direction:
         """
 
-        self.hybrid_shape_point_on_curve.Direction = value
+        self.hybrid_shape_point_on_curve.Direction = direction.com_object
 
     @property
     def distance_type(self) -> int:
@@ -292,12 +291,12 @@ class HybridShapePointOnCurve(Point):
         return Reference(self.hybrid_shape_point_on_curve.Point)
 
     @point.setter
-    def point(self, value: Reference):
+    def point(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_point_on_curve.Point = value
+        self.hybrid_shape_point_on_curve.Point = reference_point.com_object
 
     @property
     def ratio(self) -> RealParam:
@@ -359,4 +358,4 @@ class HybridShapePointOnCurve(Point):
         return self.hybrid_shape_point_on_curve.Type
 
     def __repr__(self):
-        return f'HybridShapePointOnCurve(name="{ self.name }")'
+        return f'HybridShapePointOnCurve(name="{self.name}")'

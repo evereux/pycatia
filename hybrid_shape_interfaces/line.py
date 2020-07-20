@@ -14,7 +14,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class Line(HybridShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -66,12 +65,12 @@ class Line(HybridShape):
         return Reference(self.line.FirstUptoElem)
 
     @first_upto_elem.setter
-    def first_upto_elem(self, value: Reference):
+    def first_upto_elem(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.line.FirstUptoElem = value
+        self.line.FirstUptoElem = reference_element.com_object
 
     @property
     def second_upto_elem(self) -> Reference:
@@ -96,12 +95,12 @@ class Line(HybridShape):
         return Reference(self.line.SecondUptoElem)
 
     @second_upto_elem.setter
-    def second_upto_elem(self, value: Reference):
+    def second_upto_elem(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.line.SecondUptoElem = value
+        self.line.SecondUptoElem = reference_element
 
     def get_direction(self, o_direction: tuple) -> None:
         """
@@ -248,4 +247,4 @@ class Line(HybridShape):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'Line(name="{ self.name }")'
+        return f'Line(name="{self.name}")'
