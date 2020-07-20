@@ -9,6 +9,9 @@
         
 """
 
+from pywintypes import com_error
+
+from pycatia.exception_handling.exceptions import CATIAApplicationException
 from pycatia.mec_mod_interfaces.hybrid_body import HybridBody
 from pycatia.system_interfaces.collection import Collection
 from pycatia.types import cat_variant
@@ -93,7 +96,10 @@ class HybridBodies(Collection):
         :return: HybridBody
         :rtype: HybridBody
         """
-        return HybridBody(self.hybrid_bodies.Item(i_index))
+        try:
+            return HybridBody(self.hybrid_bodies.Item(i_index))
+        except com_error:
+            raise CATIAApplicationException(f'Could not find hybrid_body "i_index"')
 
     def __repr__(self):
         return f'HybridBodies(name="{self.name}")'
