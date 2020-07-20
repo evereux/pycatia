@@ -7,38 +7,44 @@ pycatia
 alpha software
 --------------
 
-This is alpha software. All the test cases and examples work but there will be many
-issues outside of the test framework. The CATIA com interface is huge and I'm
-currently just attacking the items I think will be most useful. The framework is in
-place for others to contribute so if you know CATIA and python please contribute. Bonus
-points for adding tests too.
+This is alpha software. All the test cases and examples work but there will be
+many issues outside of the test framework. The CATIA com interface is huge and
+I'm currently just attacking the items I think will be most useful. The
+framework is in place for others to contribute so if you know CATIA and python
+please do contribute. Bonus points for adding tests too.
+
+I have limited access to CATIA licences / workbenches I so will not be able to
+support those I can't test. If your company would like support for additional
+workbenches adding to pycatia and can provide a license please contact me.
 
 
 Why was it made?
 ----------------
 
-pycatia was primarily created to access the CATIA API Measurable
-object and it's methods without the need of visual basic / CATScripts.
-There is further functionaliy available which can be seen by looking at
-the examples provided and reading the API at pycatia.readthedocs.io_.
+pycatia was initially created to access the CATIA Automation Measurable object
+and it's methods without the need of visual basic / CATScripts.
 
-Some of the methods can be accessed simply using the pywin32 module but further 
-access to methods such as GetCOG do not seem to be accessible using pure python.
-There are several questions on stack overflow and the pywin32 mailing list regarding
-this. But, they fail to provide any working examples with the VB Measurable object 
-in python. 
+Some of the methods can be accessed directly using the pywin32 module but there
+are a number that just simply won't work using python. There are several
+questions on stack overflow and the pywin32 mailing list regarding this. But,
+they fail to provide any working examples with the Measurable object in python.
+
 
 pycatia accesses these methods by running VBA scripts using the 
-`Dispatch('CATIA.Application').SystemService.Evaluate()` function where required
-and passing a small public function to it. Otherwise, pycatia uses the VB method
-directly but exposes it within the same python class.
+`Dispatch('CATIA.Application').SystemService.Evaluate()` function and passing a
+public function to it. Otherwise, pycatia uses the VB method directly but
+exposes it within the same python class.
+
+
+There is now further functionality available which can be seen by looking at
+the examples provided and reading the API at pycatia.readthedocs.io_.
 
 
 Requirements
 ------------
 
 * python >= 3.6 
-* **CATIA V5**
+* **CATIA V5** running on Windows.
 * see requirements.txt
 
 Installation
@@ -59,7 +65,7 @@ available at pycatia.readthedocs.io_.
 Usage
 -----
 
-See the examples provided.
+See the introduction and examples provided via the documentation link.
 
 
 Links
@@ -72,38 +78,15 @@ Releases: pycatia @ pypi.org_
 Examples
 --------
 
-.. _example_1: https://github.com/evereux/pycatia/blob/master/example_1.py
-.. _example_2: https://github.com/evereux/pycatia/blob/master/example_2.py
-.. _example_3: https://github.com/evereux/pycatia/blob/master/example_3.py
-.. _example_4: https://github.com/evereux/pycatia/blob/master/example_4.py
-.. _example_5: https://github.com/evereux/pycatia/blob/master/example_5.py
-.. _example_6: https://github.com/evereux/pycatia/blob/master/example_6.py
-.. _example_7: https://github.com/evereux/pycatia/blob/master/example_7.py
-.. _example_8: https://github.com/evereux/pycatia/blob/master/example_8.py
-.. _example_9: https://github.com/evereux/pycatia/blob/master/example_9.py
-.. _example_10: https://github.com/evereux/pycatia/blob/master/example_10.py
-.. _example_11: https://github.com/evereux/pycatia/blob/master/example_11.py
+See the documentation @ pycatia.readthedocs.io_.
 
 Asking Questions
 ----------------
 
-Please don't raise an issue here until you have read the documentation, understood and met the requirements (YOU NEED
-CATIA INSTALLED) and have run the examples.
+Please read the following with regards to raising questions: https://github.com/evereux/pycatia/issues/28
 
-If you are upgrading from an earlier versions and your scripts break please check the changelog to give you clues on
-what to do to resolve those issues.
-
-Once you have done that please give as much information as you can so I may
-try and reproduce the issue. Please provide the following information:
-
-* Windows OS version
-* CATIA version
-* Python version
-* pycatia version
-* Your code!
-* Full stack trace of error you encounter (properly formatted text please, not picture).
-
-Thanks! :-)
+Please do not email me directly requesting support unless this is business
+related and you would like professional support.
 
 Contributing
 ------------
@@ -126,8 +109,9 @@ If you have written a script using pycatia you would like to share you can:
 Running The Tests
 -----------------
 
-On the first run, during the running of the tests, the test suite will create the CATIA drawing, products and part it
-requires to run in the folder tests/cat_files.
+On the first run, during the running of the tests, the test suite will create
+the CATIA drawing, products and part it requires to run in the folder
+tests/cat_files.
 
 CATIA V5 should already be running and have NO documents already open.
 
@@ -147,7 +131,25 @@ To stop tests running after first failure.
 
     py.text -vx
 
-Checks Prior To Release
------------------------
+Release process
+---------------
 
-1.
+A reminder for @evereux. I don't do this often and forget ...
+
+* Run the tests.
+   * Fix any issues.
+
+* Run the examples.
+   * Fix any issues.
+
+* Build the docs.
+   * Fix any issues.
+
+* Check version is correct.
+
+* Build source. `python3 setup.py sdist bdist_wheel`
+   * Check source contents.
+
+* Merge changes with master branch and upload.
+
+* Upload to pypi. `twine upload dist/*`.
