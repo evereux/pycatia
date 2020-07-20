@@ -5166,12 +5166,15 @@ class HybridShapeFactory(Factory):
                 |         iElem
                 |             Reference element 
                 |         oType
-                |             Type of feature = 0 , Unknown = 1 , Point = 2 , Curve = 3 , Line = 4 , Circle = 5 ,
-                |             Surface = 6 , Plane = 7 , Solid, Volume
+                |             Type of feature
+                |             0 = Unknown, 1 = Point,  2 = Curve, 3 = Line, 4 = Circle,
+                |             5 = Surface, 6 = Plane, 7 = Solid / Volume
                 |             Level of availability = V5R14
 
+
+
         :param Reference i_elem:
-        :return: int
+        :return: 0 = Unknown, 1 = Point, 2 = Curve, 3 = Line, 4 = Circle, 5 = Surface, 6 = Plane, 7 = Solid, Volume
         :rtype: int
         """
         return self.hybrid_shape_factory.GetGeometricalFeatureType(i_elem.com_object)
