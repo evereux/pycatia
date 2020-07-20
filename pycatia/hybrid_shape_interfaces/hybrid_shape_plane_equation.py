@@ -183,12 +183,12 @@ class HybridShapePlaneEquation(Plane):
         return Reference(self.hybrid_shape_plane_equation.RefAxisSystem)
 
     @ref_axis_system.setter
-    def ref_axis_system(self, value: Reference):
+    def ref_axis_system(self, reference_axis: Reference):
         """
-        :param Reference value:
+        :param Reference reference_axis:
         """
 
-        self.hybrid_shape_plane_equation.RefAxisSystem = value
+        self.hybrid_shape_plane_equation.RefAxisSystem = reference_axis
 
     def get_reference_point(self) -> Reference:
         """

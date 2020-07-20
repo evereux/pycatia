@@ -127,12 +127,12 @@ class HybridShapeConic(HybridShape):
         return Reference(self.hybrid_shape_conic.EndPoint)
 
     @end_point.setter
-    def end_point(self, value: Reference):
+    def end_point(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_conic.EndPoint = value
+        self.hybrid_shape_conic.EndPoint = reference_point.com_object
 
     @property
     def end_tangent(self) -> HybridShapeDirection:
@@ -158,12 +158,12 @@ class HybridShapeConic(HybridShape):
         return HybridShapeDirection(self.hybrid_shape_conic.EndTangent)
 
     @end_tangent.setter
-    def end_tangent(self, value: HybridShapeDirection):
+    def end_tangent(self, direction: HybridShapeDirection):
         """
-        :param HybridShapeDirection value:
+        :param HybridShapeDirection direction:
         """
 
-        self.hybrid_shape_conic.EndTangent = value
+        self.hybrid_shape_conic.EndTangent = direction.com_object
 
     @property
     def start_point(self) -> Reference:
@@ -190,12 +190,12 @@ class HybridShapeConic(HybridShape):
         return Reference(self.hybrid_shape_conic.StartPoint)
 
     @start_point.setter
-    def start_point(self, value: Reference):
+    def start_point(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_conic.StartPoint = value
+        self.hybrid_shape_conic.StartPoint = reference_point
 
     @property
     def start_tangent(self) -> HybridShapeDirection:
@@ -222,12 +222,12 @@ class HybridShapeConic(HybridShape):
         return HybridShapeDirection(self.hybrid_shape_conic.StartTangent)
 
     @start_tangent.setter
-    def start_tangent(self, value: HybridShapeDirection):
+    def start_tangent(self, direction: HybridShapeDirection):
         """
-        :param HybridShapeDirection value:
+        :param HybridShapeDirection direction:
         """
 
-        self.hybrid_shape_conic.StartTangent = value
+        self.hybrid_shape_conic.StartTangent = direction
 
     @property
     def support_plane(self) -> Reference:
@@ -254,12 +254,12 @@ class HybridShapeConic(HybridShape):
         return Reference(self.hybrid_shape_conic.SupportPlane)
 
     @support_plane.setter
-    def support_plane(self, value: Reference):
+    def support_plane(self, reference_plane: Reference):
         """
-        :param Reference value:
+        :param Reference reference_plane:
         """
 
-        self.hybrid_shape_conic.SupportPlane = value
+        self.hybrid_shape_conic.SupportPlane = reference_plane.com_object
 
     @property
     def tangent_int_point(self) -> Reference:
@@ -285,12 +285,12 @@ class HybridShapeConic(HybridShape):
         return Reference(self.hybrid_shape_conic.TangentIntPoint)
 
     @tangent_int_point.setter
-    def tangent_int_point(self, value: Reference):
+    def tangent_int_point(self, reference_tangent_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_tangent_point:
         """
 
-        self.hybrid_shape_conic.TangentIntPoint = value
+        self.hybrid_shape_conic.TangentIntPoint = reference_tangent_point
 
     def get_end_tangent_direction_flag(self, o_orientation: int) -> None:
         """

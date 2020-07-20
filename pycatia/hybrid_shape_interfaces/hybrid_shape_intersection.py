@@ -71,12 +71,12 @@ class HybridShapeIntersection(HybridShape):
         return Reference(self.hybrid_shape_intersection.Element1)
 
     @element1.setter
-    def element1(self, value: Reference):
+    def element1(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_intersection.Element1 = value
+        self.hybrid_shape_intersection.Element1 = reference_element.com_object
 
     @property
     def element2(self) -> Reference:
@@ -103,12 +103,12 @@ class HybridShapeIntersection(HybridShape):
         return Reference(self.hybrid_shape_intersection.Element2)
 
     @element2.setter
-    def element2(self, value: Reference):
+    def element2(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_intersection.Element2 = value
+        self.hybrid_shape_intersection.Element2 = reference_element.com_object
 
     @property
     def extend_mode(self) -> int:

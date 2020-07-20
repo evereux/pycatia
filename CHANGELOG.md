@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.8
+* Updated all hybrid_shape_interfaces properties due to regression bug.
+ 
+
 ## 0.3.7
 * Restructured API documentation.
 * Added type hinting.

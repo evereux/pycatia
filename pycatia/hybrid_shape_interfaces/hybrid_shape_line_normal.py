@@ -154,12 +154,12 @@ class HybridShapeLineNormal(Line):
         return Reference(self.hybrid_shape_line_normal.Point)
 
     @point.setter
-    def point(self, value: Reference):
+    def point(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_line_normal.Point = value
+        self.hybrid_shape_line_normal.Point = reference_point.com_object
 
     @property
     def surface(self) -> Reference:
@@ -186,12 +186,12 @@ class HybridShapeLineNormal(Line):
         return Reference(self.hybrid_shape_line_normal.Surface)
 
     @surface.setter
-    def surface(self, value: Reference):
+    def surface(self, surface_reference: Reference):
         """
-        :param Reference value:
+        :param Reference surface_reference:
         """
 
-        self.hybrid_shape_line_normal.Surface = value
+        self.hybrid_shape_line_normal.Surface = surface_reference.com_object
 
     def get_length_type(self) -> int:
         """

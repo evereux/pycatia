@@ -97,12 +97,12 @@ class HybridShapeLineTangency(Line):
         return Reference(self.hybrid_shape_line_tangency.Curve)
 
     @curve.setter
-    def curve(self, value: Reference):
+    def curve(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_line_tangency.Curve = value
+        self.hybrid_shape_line_tangency.Curve = reference_curve.com_object
 
     @property
     def end_offset(self) -> Length:
@@ -185,12 +185,12 @@ class HybridShapeLineTangency(Line):
         return Reference(self.hybrid_shape_line_tangency.Point)
 
     @point.setter
-    def point(self, value: Reference):
+    def point(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_line_tangency.Point = value
+        self.hybrid_shape_line_tangency.Point = reference_point.com_object
 
     @property
     def support(self) -> Reference:
@@ -218,12 +218,12 @@ class HybridShapeLineTangency(Line):
         return Reference(self.hybrid_shape_line_tangency.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, reference_support: Reference):
         """
-        :param Reference value:
+        :param Reference reference_support:
         """
 
-        self.hybrid_shape_line_tangency.Support = value
+        self.hybrid_shape_line_tangency.Support = reference_support.com_object
 
     def get_length_type(self) -> int:
         """

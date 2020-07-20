@@ -1,6 +1,8 @@
 import os
 from pathlib import Path
 
+from pywintypes import com_error
+
 from pycatia import catia as pia
 from tests.create_source_parts import get_cat_part_measurable
 
@@ -18,8 +20,12 @@ def create_cat_products(file_name_top, file_name_sub_1, file_name_sub_2):
     # close all the documents #
     # ####################### #
 
-    for document in documents.items():
-        document.close()
+    try:
+        for document in documents.items():
+            document.close()
+    except com_error:
+        # all documents must be closed.
+        pass
 
     # ############################ #
     # Create the top level product #

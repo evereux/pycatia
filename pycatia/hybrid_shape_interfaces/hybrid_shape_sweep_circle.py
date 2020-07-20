@@ -152,12 +152,12 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_circle.FirstAngleLaw)
 
     @first_angle_law.setter
-    def first_angle_law(self, value: Reference):
+    def first_angle_law(self, reference_law: Reference):
         """
-        :param Reference value:
+        :param Reference reference_law:
         """
 
-        self.hybrid_shape_sweep_circle.FirstAngleLaw = value
+        self.hybrid_shape_sweep_circle.FirstAngleLaw = reference_law.com_object
 
     @property
     def first_angle_law_inversion(self) -> int:
@@ -198,12 +198,12 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_circle.FirstGuideCrv)
 
     @first_guide_crv.setter
-    def first_guide_crv(self, value: Reference):
+    def first_guide_crv(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_sweep_circle.FirstGuideCrv = value
+        self.hybrid_shape_sweep_circle.FirstGuideCrv = reference_curve.com_object
 
     @property
     def guide_deviation(self) -> Length:
@@ -307,12 +307,12 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_circle.RadiusLaw)
 
     @radius_law.setter
-    def radius_law(self, value: Reference):
+    def radius_law(self, reference_law: Reference):
         """
-        :param Reference value:
+        :param Reference reference_law:
         """
 
-        self.hybrid_shape_sweep_circle.RadiusLaw = value
+        self.hybrid_shape_sweep_circle.RadiusLaw = reference_law.com_object
 
     @property
     def radius_law_inversion(self) -> int:
@@ -376,12 +376,12 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_circle.Reference)
 
     @reference.setter
-    def reference(self, value: Reference):
+    def reference(self, reference: Reference):
         """
-        :param Reference value:
+        :param Reference reference:
         """
 
-        self.hybrid_shape_sweep_circle.Reference = value
+        self.hybrid_shape_sweep_circle.Reference = reference.com_object
 
     @property
     def second_angle_law(self) -> Reference:
@@ -399,12 +399,12 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_circle.SecondAngleLaw)
 
     @second_angle_law.setter
-    def second_angle_law(self, value: Reference):
+    def second_angle_law(self, reference_law: Reference):
         """
-        :param Reference value:
+        :param Reference reference_law:
         """
 
-        self.hybrid_shape_sweep_circle.SecondAngleLaw = value
+        self.hybrid_shape_sweep_circle.SecondAngleLaw = reference_law.com_object
 
     @property
     def second_angle_law_inversion(self) -> int:
@@ -445,12 +445,12 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_circle.SecondGuideCrv)
 
     @second_guide_crv.setter
-    def second_guide_crv(self, value: Reference):
+    def second_guide_crv(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_sweep_circle.SecondGuideCrv = value
+        self.hybrid_shape_sweep_circle.SecondGuideCrv = reference_curve.com_object
 
     @property
     def smooth_activity(self) -> bool:
@@ -509,12 +509,12 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_circle.Spine)
 
     @spine.setter
-    def spine(self, value: Reference):
+    def spine(self, reference_spine: Reference):
         """
-        :param Reference value:
+        :param Reference reference_spine:
         """
 
-        self.hybrid_shape_sweep_circle.Spine = value
+        self.hybrid_shape_sweep_circle.Spine = reference_spine.com_object
 
     @property
     def third_guide_crv(self) -> Reference:
@@ -532,12 +532,12 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_circle.ThirdGuideCrv)
 
     @third_guide_crv.setter
-    def third_guide_crv(self, value: Reference):
+    def third_guide_crv(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_sweep_circle.ThirdGuideCrv = value
+        self.hybrid_shape_sweep_circle.ThirdGuideCrv = reference_curve.com_object
 
     @property
     def trim_option(self) -> int:

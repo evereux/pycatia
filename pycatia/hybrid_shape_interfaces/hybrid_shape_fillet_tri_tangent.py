@@ -65,12 +65,12 @@ class HybridShapeFilletTriTangent(HybridShape):
         return Reference(self.hybrid_shape_fillet_tri_tangent.FirstElem)
 
     @first_elem.setter
-    def first_elem(self, value: Reference):
+    def first_elem(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_fillet_tri_tangent.FirstElem = value
+        self.hybrid_shape_fillet_tri_tangent.FirstElem = reference_element.com_object
 
     @property
     def first_orientation(self) -> int:
@@ -114,12 +114,12 @@ class HybridShapeFilletTriTangent(HybridShape):
         return Reference(self.hybrid_shape_fillet_tri_tangent.RemoveElem)
 
     @remove_elem.setter
-    def remove_elem(self, value: Reference):
+    def remove_elem(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_fillet_tri_tangent.RemoveElem = value
+        self.hybrid_shape_fillet_tri_tangent.RemoveElem = reference_element.com_object
 
     @property
     def remove_orientation(self) -> int:
@@ -201,12 +201,12 @@ class HybridShapeFilletTriTangent(HybridShape):
         return Reference(self.hybrid_shape_fillet_tri_tangent.SecondElem)
 
     @second_elem.setter
-    def second_elem(self, value: Reference):
+    def second_elem(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_fillet_tri_tangent.SecondElem = value
+        self.hybrid_shape_fillet_tri_tangent.SecondElem = reference_element.com_object
 
     @property
     def second_orientation(self) -> int:

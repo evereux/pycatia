@@ -72,12 +72,12 @@ class HybridShapeCombine(HybridShape):
         return HybridShapeDirection(self.hybrid_shape_combine.Direction1)
 
     @direction1.setter
-    def direction1(self, value: HybridShapeDirection):
+    def direction1(self, direction: HybridShapeDirection):
         """
-        :param HybridShapeDirection value:
+        :param HybridShapeDirection direction:
         """
 
-        self.hybrid_shape_combine.Direction1 = value
+        self.hybrid_shape_combine.Direction1 = direction.com_object
 
     @property
     def direction2(self) -> HybridShapeDirection:
@@ -106,12 +106,12 @@ class HybridShapeCombine(HybridShape):
         return HybridShapeDirection(self.hybrid_shape_combine.Direction2)
 
     @direction2.setter
-    def direction2(self, value: HybridShapeDirection):
+    def direction2(self, direction: HybridShapeDirection):
         """
-        :param HybridShapeDirection value:
+        :param HybridShapeDirection direction:
         """
 
-        self.hybrid_shape_combine.Direction2 = value
+        self.hybrid_shape_combine.Direction2 = direction.com_object
 
     @property
     def elem1(self) -> Reference:
@@ -141,12 +141,12 @@ class HybridShapeCombine(HybridShape):
         return Reference(self.hybrid_shape_combine.Elem1)
 
     @elem1.setter
-    def elem1(self, value: Reference):
+    def elem1(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_combine.Elem1 = value
+        self.hybrid_shape_combine.Elem1 = reference_element.com_object
 
     @property
     def elem2(self) -> Reference:
@@ -179,10 +179,10 @@ class HybridShapeCombine(HybridShape):
     @elem2.setter
     def elem2(self, value: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_combine.Elem2 = value
+        self.hybrid_shape_combine.Elem2 = reference_element.com_object
 
     @property
     def nearest_solution(self) -> int:

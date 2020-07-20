@@ -79,12 +79,12 @@ class HybridShapeExtremumPolar(HybridShape):
         return Reference(self.hybrid_shape_extremum_polar.Contour)
 
     @contour.setter
-    def contour(self, value: Reference):
+    def contour(self, reference_contour: Reference):
         """
-        :param Reference value:
+        :param Reference reference_contour:
         """
 
-        self.hybrid_shape_extremum_polar.Contour = value
+        self.hybrid_shape_extremum_polar.Contour = reference_contour.com_object
 
     @property
     def dir(self) -> HybridShapeDirection:
@@ -102,12 +102,12 @@ class HybridShapeExtremumPolar(HybridShape):
         return HybridShapeDirection(self.hybrid_shape_extremum_polar.Dir)
 
     @dir.setter
-    def dir(self, value: HybridShapeDirection):
+    def dir(self, direction: HybridShapeDirection):
         """
-        :param HybridShapeDirection value:
+        :param HybridShapeDirection direction:
         """
 
-        self.hybrid_shape_extremum_polar.Dir = value
+        self.hybrid_shape_extremum_polar.Dir = direction.com_object
 
     @property
     def extremum_type(self) -> int:
@@ -148,12 +148,12 @@ class HybridShapeExtremumPolar(HybridShape):
         return Reference(self.hybrid_shape_extremum_polar.Origin)
 
     @origin.setter
-    def origin(self, value: Reference):
+    def origin(self, reference_origin: Reference):
         """
-        :param Reference value:
+        :param Reference reference_origin:
         """
 
-        self.hybrid_shape_extremum_polar.Origin = value
+        self.hybrid_shape_extremum_polar.Origin = reference_origin.com_object
 
     @property
     def radius(self) -> Length:
@@ -186,12 +186,12 @@ class HybridShapeExtremumPolar(HybridShape):
         return Reference(self.hybrid_shape_extremum_polar.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, reference_support: Reference):
         """
-        :param Reference value:
+        :param Reference reference_support:
         """
 
-        self.hybrid_shape_extremum_polar.Support = value
+        self.hybrid_shape_extremum_polar.Support = reference_support.com_object
 
     def __repr__(self):
         return f'HybridShapeExtremumPolar(name="{ self.name }")'

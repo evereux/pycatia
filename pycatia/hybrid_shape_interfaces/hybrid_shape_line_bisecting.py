@@ -86,12 +86,12 @@ class HybridShapeLineBisecting(Line):
         return Reference(self.hybrid_shape_line_bisecting.Elem1)
 
     @elem1.setter
-    def elem1(self, value: Reference):
+    def elem1(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_line_bisecting.Elem1 = value
+        self.hybrid_shape_line_bisecting.Elem1 = reference_element
 
     @property
     def elem2(self) -> Reference:
@@ -112,12 +112,12 @@ class HybridShapeLineBisecting(Line):
         return Reference(self.hybrid_shape_line_bisecting.Elem2)
 
     @elem2.setter
-    def elem2(self, value: Reference):
+    def elem2(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_line_bisecting.Elem2 = value
+        self.hybrid_shape_line_bisecting.Elem2 = reference_element.com_object
 
     @property
     def end_offset(self) -> Length:
@@ -178,12 +178,12 @@ class HybridShapeLineBisecting(Line):
         return Reference(self.hybrid_shape_line_bisecting.RefPoint)
 
     @ref_point.setter
-    def ref_point(self, value: Reference):
+    def ref_point(self, reference_point: Reference):
         """
         :param Reference value:
         """
 
-        self.hybrid_shape_line_bisecting.RefPoint = value
+        self.hybrid_shape_line_bisecting.RefPoint = reference_point.com_object
 
     @property
     def solution_type(self) -> bool:
@@ -234,12 +234,12 @@ class HybridShapeLineBisecting(Line):
         return Reference(self.hybrid_shape_line_bisecting.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, reference_support: Reference):
         """
-        :param Reference value:
+        :param Reference reference_support:
         """
 
-        self.hybrid_shape_line_bisecting.Support = value
+        self.hybrid_shape_line_bisecting.Support = reference_support.com_object
 
     def get_length_type(self) -> int:
         """

@@ -77,12 +77,12 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle_center_axis.Axis)
 
     @axis.setter
-    def axis(self, value: Reference):
+    def axis(self, reference_axis: Reference):
         """
-        :param Reference value:
+        :param Reference reference_axis:
         """
 
-        self.hybrid_shape_circle_center_axis.Axis = value
+        self.hybrid_shape_circle_center_axis.Axis = reference_axis.com_object
 
     @property
     def diameter(self) -> Length:
@@ -166,12 +166,12 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle_center_axis.Point)
 
     @point.setter
-    def point(self, value: Reference):
+    def point(self, reference_point: Reference):
         """
         :param Reference value:
         """
 
-        self.hybrid_shape_circle_center_axis.Point = value
+        self.hybrid_shape_circle_center_axis.Point = reference_point.com_object
 
     @property
     def projection_mode(self) -> bool:

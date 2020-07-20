@@ -16,7 +16,6 @@ from pycatia.knowledge_interfaces.length import Length
 
 
 class HybridShapePointOnPlane(Point):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -68,12 +67,12 @@ class HybridShapePointOnPlane(Point):
         return HybridShapeDirection(self.hybrid_shape_point_on_plane.FirstDirection)
 
     @first_direction.setter
-    def first_direction(self, value: HybridShapeDirection):
+    def first_direction(self, direction: HybridShapeDirection):
         """
-        :param HybridShapeDirection value:
+        :param HybridShapeDirection direction:
         """
 
-        self.hybrid_shape_point_on_plane.FirstDirection = value
+        self.hybrid_shape_point_on_plane.FirstDirection = direction.com_object
 
     @property
     def plane(self) -> Reference:
@@ -101,12 +100,12 @@ class HybridShapePointOnPlane(Point):
         return Reference(self.hybrid_shape_point_on_plane.Plane)
 
     @plane.setter
-    def plane(self, value: Reference):
+    def plane(self, reference_plane: Reference):
         """
-        :param Reference value:
+        :param Reference reference_plane:
         """
 
-        self.hybrid_shape_point_on_plane.Plane = value
+        self.hybrid_shape_point_on_plane.Plane = reference_plane.com_object
 
     @property
     def point(self) -> Reference:
@@ -136,12 +135,12 @@ class HybridShapePointOnPlane(Point):
         return Reference(self.hybrid_shape_point_on_plane.Point)
 
     @point.setter
-    def point(self, value: Reference):
+    def point(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_point_on_plane.Point = value
+        self.hybrid_shape_point_on_plane.Point = reference_point.com_object
 
     @property
     def projection_surface(self) -> Reference:
@@ -168,12 +167,12 @@ class HybridShapePointOnPlane(Point):
         return Reference(self.hybrid_shape_point_on_plane.ProjectionSurface)
 
     @projection_surface.setter
-    def projection_surface(self, value: Reference):
+    def projection_surface(self, reference_surface: Reference):
         """
-        :param Reference value:
+        :param Reference reference_surface:
         """
 
-        self.hybrid_shape_point_on_plane.ProjectionSurface = value
+        self.hybrid_shape_point_on_plane.ProjectionSurface = reference_surface.com_object
 
     @property
     def x_offset(self) -> Length:
@@ -280,4 +279,4 @@ class HybridShapePointOnPlane(Point):
         return self.hybrid_shape_point_on_plane.SetSecondDirection(i_dir_x, i_dir_y, i_dir_z)
 
     def __repr__(self):
-        return f'HybridShapePointOnPlane(name="{ self.name }")'
+        return f'HybridShapePointOnPlane(name="{self.name}")'
