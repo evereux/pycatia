@@ -76,12 +76,12 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle_ctr_rad.Center)
 
     @center.setter
-    def center(self, value: Reference):
+    def center(self, reference_center: Reference):
         """
-        :param Reference value:
+        :param Reference reference_center:
         """
 
-        self.hybrid_shape_circle_ctr_rad.Center = value
+        self.hybrid_shape_circle_ctr_rad.Center = reference_center.com_object
 
     @property
     def diameter(self) -> Length:
@@ -169,12 +169,12 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
         return HybridShapeDirection(self.hybrid_shape_circle_ctr_rad.FirstDirection)
 
     @first_direction.setter
-    def first_direction(self, value: HybridShapeDirection):
+    def first_direction(self, direction: HybridShapeDirection):
         """
-        :param HybridShapeDirection value:
+        :param HybridShapeDirection direction:
         """
 
-        self.hybrid_shape_circle_ctr_rad.FirstDirection = value
+        self.hybrid_shape_circle_ctr_rad.FirstDirection = direction.com_object
 
     @property
     def radius(self) -> Length:
@@ -223,12 +223,12 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle_ctr_rad.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, support_reference: Reference):
         """
-        :param Reference value:
+        :param Reference support_reference:
         """
 
-        self.hybrid_shape_circle_ctr_rad.Support = value
+        self.hybrid_shape_circle_ctr_rad.Support = support_reference.com_object
 
     def get_second_direction(self, o_dir_x: float, o_dir_y: float, o_dir_z: float) -> None:
         """

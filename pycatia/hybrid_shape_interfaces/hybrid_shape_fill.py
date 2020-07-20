@@ -101,12 +101,12 @@ class HybridShapeFill(HybridShape):
         return Reference(self.hybrid_shape_fill.Constraint)
 
     @constraint.setter
-    def constraint(self, value: Reference):
+    def constraint(self, reference: Reference):
         """
-        :param Reference value:
+        :param Reference reference:
         """
 
-        self.hybrid_shape_fill.Constraint = value
+        self.hybrid_shape_fill.Constraint = reference.com_object
 
     @property
     def continuity(self) -> int:

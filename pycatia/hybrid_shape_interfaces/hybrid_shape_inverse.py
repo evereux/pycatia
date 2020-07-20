@@ -64,12 +64,12 @@ class HybridShapeInverse(HybridShape):
         return Reference(self.hybrid_shape_inverse.Element)
 
     @element.setter
-    def element(self, value: Reference):
+    def element(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_inverse.Element = value
+        self.hybrid_shape_inverse.Element = reference_element.com_object
 
     @property
     def orientation(self) -> int:

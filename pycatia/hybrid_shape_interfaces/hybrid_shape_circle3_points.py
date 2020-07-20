@@ -14,7 +14,6 @@ from pycatia.in_interfaces.reference import Reference
 
 
 class HybridShapeCircle3Points(HybridShapeCircle):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -72,12 +71,12 @@ class HybridShapeCircle3Points(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle3_points.Element1)
 
     @element1.setter
-    def element1(self, value: Reference):
+    def element1(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_circle3_points.Element1 = value
+        self.hybrid_shape_circle3_points.Element1 = reference_element.com_object
 
     @property
     def element2(self) -> Reference:
@@ -102,12 +101,12 @@ class HybridShapeCircle3Points(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle3_points.Element2)
 
     @element2.setter
-    def element2(self, value: Reference):
+    def element2(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_circle3_points.Element2 = value
+        self.hybrid_shape_circle3_points.Element2 = reference_element.com_object
 
     @property
     def element3(self) -> Reference:
@@ -135,12 +134,12 @@ class HybridShapeCircle3Points(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle3_points.Element3)
 
     @element3.setter
-    def element3(self, value: Reference):
+    def element3(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_circle3_points.Element3 = value
+        self.hybrid_shape_circle3_points.Element3 = reference_element.com_object
 
     @property
     def support(self) -> Reference:
@@ -166,12 +165,12 @@ class HybridShapeCircle3Points(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle3_points.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, reference_support: Reference):
         """
-        :param Reference value:
+        :param Reference reference_support:
         """
 
-        self.hybrid_shape_circle3_points.Support = value
+        self.hybrid_shape_circle3_points.Support = reference_support.com_object
 
     def remove_support(self) -> None:
         """
@@ -187,4 +186,4 @@ class HybridShapeCircle3Points(HybridShapeCircle):
         return self.hybrid_shape_circle3_points.RemoveSupport()
 
     def __repr__(self):
-        return f'HybridShapeCircle3Points(name="{ self.name }")'
+        return f'HybridShapeCircle3Points(name="{self.name}")'

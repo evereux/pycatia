@@ -14,7 +14,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeAxisToAxis(HybridShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -115,7 +114,7 @@ class HybridShapeAxisToAxis(HybridShape):
         :param Reference value:
         """
 
-        self.hybrid_shape_axis_to_axis.ElemToTransform = value
+        self.hybrid_shape_axis_to_axis.ElemToTransform = value.com_object
 
     @property
     def reference_axis(self) -> Reference:
@@ -145,7 +144,7 @@ class HybridShapeAxisToAxis(HybridShape):
         :param Reference value:
         """
 
-        self.hybrid_shape_axis_to_axis.ReferenceAxis = value
+        self.hybrid_shape_axis_to_axis.ReferenceAxis = value.com_object
 
     @property
     def target_axis(self) -> Reference:
@@ -175,7 +174,7 @@ class HybridShapeAxisToAxis(HybridShape):
         :param Reference value:
         """
 
-        self.hybrid_shape_axis_to_axis.TargetAxis = value
+        self.hybrid_shape_axis_to_axis.TargetAxis = value.com_object
 
     @property
     def volume_result(self) -> bool:
@@ -213,4 +212,4 @@ class HybridShapeAxisToAxis(HybridShape):
         self.hybrid_shape_axis_to_axis.VolumeResult = value
 
     def __repr__(self):
-        return f'HybridShapeAxisToAxis(name="{ self.name }")'
+        return f'HybridShapeAxisToAxis(name="{self.name}")'

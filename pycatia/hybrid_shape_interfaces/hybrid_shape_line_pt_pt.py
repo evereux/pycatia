@@ -120,15 +120,15 @@ class HybridShapeLinePtPt(Line):
         return Reference(self.hybrid_shape_line_pt_pt.PtExtremity)
 
     @pt_extremity.setter
-    def pt_extremity(self, value: Reference):
+    def pt_extremity(self, pt_reference: Reference):
         """
-        :param Reference value:
+        :param Reference pt_reference:
         """
 
-        self.hybrid_shape_line_pt_pt.PtExtremity = value
+        self.hybrid_shape_line_pt_pt.PtExtremity = pt_reference.com_object
 
     @property
-    def pt_origine(self) -> Reference:
+    def pt_origin(self) -> Reference:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -151,13 +151,13 @@ class HybridShapeLinePtPt(Line):
 
         return Reference(self.hybrid_shape_line_pt_pt.PtOrigine)
 
-    @pt_origine.setter
-    def pt_origine(self, value: Reference):
+    @pt_origin.setter
+    def pt_origin(self, pt_reference: Reference):
         """
-        :param Reference value:
+        :param Reference pt_reference:
         """
 
-        self.hybrid_shape_line_pt_pt.PtOrigine = value
+        self.hybrid_shape_line_pt_pt.PtOrigine = pt_reference.com_object
 
     @property
     def support(self) -> Reference:
@@ -185,12 +185,12 @@ class HybridShapeLinePtPt(Line):
         return Reference(self.hybrid_shape_line_pt_pt.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, support_reference: Reference):
         """
-        :param Reference value:
+        :param Reference support_reference:
         """
 
-        self.hybrid_shape_line_pt_pt.Support = value
+        self.hybrid_shape_line_pt_pt.Support = support_reference.com_object
 
     def get_length_type(self) -> int:
         """

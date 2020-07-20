@@ -130,12 +130,12 @@ class HybridShapePositionTransfo(HybridShape):
         return Reference(self.hybrid_shape_position_transfo.Profile)
 
     @profile.setter
-    def profile(self, value: Reference):
+    def profile(self, reference_profile: Reference):
         """
-        :param Reference value:
+        :param Reference reference_profile:
         """
 
-        self.hybrid_shape_position_transfo.Profile = value
+        self.hybrid_shape_position_transfo.Profile = reference_profile.com_object
 
     def get_nb_pos_angle(self) -> int:
         """

@@ -110,12 +110,12 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle_bitangent_radius.Curve1)
 
     @curve1.setter
-    def curve1(self, value: Reference):
+    def curve1(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_circle_bitangent_radius.Curve1 = value
+        self.hybrid_shape_circle_bitangent_radius.Curve1 = reference_curve.com_object
 
     @property
     def curve2(self) -> Reference:
@@ -142,12 +142,12 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle_bitangent_radius.Curve2)
 
     @curve2.setter
-    def curve2(self, value: Reference):
+    def curve2(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_circle_bitangent_radius.Curve2 = value
+        self.hybrid_shape_circle_bitangent_radius.Curve2 = reference_curve.com_object
 
     @property
     def diameter(self) -> Length:
@@ -358,12 +358,12 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle_bitangent_radius.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, reference_support: Reference):
         """
         :param Reference value:
         """
 
-        self.hybrid_shape_circle_bitangent_radius.Support = value
+        self.hybrid_shape_circle_bitangent_radius.Support = reference_support.com_object
 
     @property
     def tangent_orientation1(self) -> int:

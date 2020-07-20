@@ -97,12 +97,12 @@ class HybridShapeLinePtDir(Line):
         return HybridShapeDirection(self.hybrid_shape_line_pt_dir.Dir)
 
     @dir.setter
-    def dir(self, value: HybridShapeDirection):
+    def dir(self, direction: HybridShapeDirection):
         """
         :param HybridShapeDirection value:
         """
 
-        self.hybrid_shape_line_pt_dir.Dir = value
+        self.hybrid_shape_line_pt_dir.Dir = direction.com_object
 
     @property
     def end_offset(self) -> Length:
@@ -185,12 +185,12 @@ class HybridShapeLinePtDir(Line):
         return Reference(self.hybrid_shape_line_pt_dir.Point)
 
     @point.setter
-    def point(self, value: Reference):
+    def point(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_line_pt_dir.Point = value
+        self.hybrid_shape_line_pt_dir.Point = reference_point
 
     @property
     def support(self) -> Reference:
@@ -218,12 +218,12 @@ class HybridShapeLinePtDir(Line):
         return Reference(self.hybrid_shape_line_pt_dir.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, reference_support: Reference):
         """
-        :param Reference value:
+        :param Reference reference_support:
         """
 
-        self.hybrid_shape_line_pt_dir.Support = value
+        self.hybrid_shape_line_pt_dir.Support = reference_support
 
     def get_length_type(self) -> int:
         """

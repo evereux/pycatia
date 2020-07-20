@@ -60,12 +60,12 @@ class HybridShapeConnect(HybridShape):
         return Reference(self.hybrid_shape_connect.BaseCurve)
 
     @base_curve.setter
-    def base_curve(self, value: Reference):
+    def base_curve(self, refernce_curve: Reference):
         """
-        :param Reference value:
+        :param Reference refernce_curve:
         """
 
-        self.hybrid_shape_connect.BaseCurve = value
+        self.hybrid_shape_connect.BaseCurve = refernce_curve.com_object
 
     @property
     def connect_type(self) -> int:
@@ -142,12 +142,12 @@ class HybridShapeConnect(HybridShape):
         return Reference(self.hybrid_shape_connect.FirstCurve)
 
     @first_curve.setter
-    def first_curve(self, value: Reference):
+    def first_curve(self, refernce_curve: Reference):
         """
-        :param Reference value:
+        :param Reference refernce_curve:
         """
 
-        self.hybrid_shape_connect.FirstCurve = value
+        self.hybrid_shape_connect.FirstCurve = refernce_curve.com_object
 
     @property
     def first_orientation(self) -> int:
@@ -189,12 +189,12 @@ class HybridShapeConnect(HybridShape):
         return Reference(self.hybrid_shape_connect.FirstPoint)
 
     @first_point.setter
-    def first_point(self, value: Reference):
+    def first_point(self, refernce_curve: Reference):
         """
-        :param Reference value:
+        :param Reference refernce_curve:
         """
 
-        self.hybrid_shape_connect.FirstPoint = value
+        self.hybrid_shape_connect.FirstPoint = refernce_curve.com_object
 
     @property
     def first_tension(self) -> RealParam:
@@ -262,12 +262,12 @@ class HybridShapeConnect(HybridShape):
         return Reference(self.hybrid_shape_connect.SecondCurve)
 
     @second_curve.setter
-    def second_curve(self, value: Reference):
+    def second_curve(self, refernce_curve: Reference):
         """
-        :param Reference value:
+        :param Reference refernce_curve:
         """
 
-        self.hybrid_shape_connect.SecondCurve = value
+        self.hybrid_shape_connect.SecondCurve = refernce_curve.com_object
 
     @property
     def second_orientation(self) -> int:
@@ -309,12 +309,12 @@ class HybridShapeConnect(HybridShape):
         return Reference(self.hybrid_shape_connect.SecondPoint)
 
     @second_point.setter
-    def second_point(self, value: Reference):
+    def second_point(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_connect.SecondPoint = value
+        self.hybrid_shape_connect.SecondPoint = reference_point.com_object
 
     @property
     def second_tension(self) -> RealParam:

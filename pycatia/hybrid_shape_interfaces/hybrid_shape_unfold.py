@@ -14,7 +14,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeUnfold(HybridShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -62,12 +61,12 @@ class HybridShapeUnfold(HybridShape):
         return Reference(self.hybrid_shape_unfold.DirectionToUnfold)
 
     @direction_to_unfold.setter
-    def direction_to_unfold(self, value: Reference):
+    def direction_to_unfold(self, reference: Reference):
         """
-        :param Reference value:
+        :param Reference reference:
         """
 
-        self.hybrid_shape_unfold.DirectionToUnfold = value
+        self.hybrid_shape_unfold.DirectionToUnfold = reference.com_object
 
     @property
     def edge_to_tear_positioning_orientation(self) -> int:
@@ -113,12 +112,12 @@ class HybridShapeUnfold(HybridShape):
         return Reference(self.hybrid_shape_unfold.OriginToUnfold)
 
     @origin_to_unfold.setter
-    def origin_to_unfold(self, value: Reference):
+    def origin_to_unfold(self, reference_origin: Reference):
         """
-        :param Reference value:
+        :param Reference reference_origin:
         """
 
-        self.hybrid_shape_unfold.OriginToUnfold = value
+        self.hybrid_shape_unfold.OriginToUnfold = reference_origin.com_object
 
     @property
     def surface_to_unfold(self) -> Reference:
@@ -138,12 +137,12 @@ class HybridShapeUnfold(HybridShape):
         return Reference(self.hybrid_shape_unfold.SurfaceToUnfold)
 
     @surface_to_unfold.setter
-    def surface_to_unfold(self, value: Reference):
+    def surface_to_unfold(self, reference_surface: Reference):
         """
-        :param Reference value:
+        :param Reference reference_surface:
         """
 
-        self.hybrid_shape_unfold.SurfaceToUnfold = value
+        self.hybrid_shape_unfold.SurfaceToUnfold = reference_surface.com_object
 
     @property
     def surface_type(self) -> int:
@@ -222,12 +221,12 @@ class HybridShapeUnfold(HybridShape):
         return Reference(self.hybrid_shape_unfold.TargetPlane)
 
     @target_plane.setter
-    def target_plane(self, value: Reference):
+    def target_plane(self, reference_plane: Reference):
         """
-        :param Reference value:
+        :param Reference reference_plane:
         """
 
-        self.hybrid_shape_unfold.TargetPlane = value
+        self.hybrid_shape_unfold.TargetPlane = reference_plane.com_object
 
     def add_edge_to_tear(self, i_element: Reference) -> None:
         """
@@ -472,4 +471,4 @@ class HybridShapeUnfold(HybridShape):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'HybridShapeUnfold(name="{ self.name }")'
+        return f'HybridShapeUnfold(name="{self.name}")'

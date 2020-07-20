@@ -40,7 +40,7 @@ class HybridShapeLawDistProj(HybridShape):
         self.hybrid_shape_law_dist_proj = com_object
 
     @property
-    def applied_unit_symbol(self) -> False:
+    def applied_unit_symbol(self) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -48,16 +48,16 @@ class HybridShapeLawDistProj(HybridShape):
                 | 
                 |     Returns or sets the applied unit symbol for heterogeneous law.
 
-        :return: False
-        :rtype: False
+        :return: str
+        :rtype: str
         """
 
-        return None
+        return str
 
     @applied_unit_symbol.setter
-    def applied_unit_symbol(self, value: False):
+    def applied_unit_symbol(self, value: str):
         """
-        :param False value:
+        :param str value:
         """
 
         self.hybrid_shape_law_dist_proj.AppliedUnitSymbol = value
@@ -80,15 +80,15 @@ class HybridShapeLawDistProj(HybridShape):
         return Reference(self.hybrid_shape_law_dist_proj.Definition)
 
     @definition.setter
-    def definition(self, value: Reference):
+    def definition(self, reference_definition: Reference):
         """
-        :param Reference value:
+        :param Reference reference_definition:
         """
 
-        self.hybrid_shape_law_dist_proj.Definition = value
+        self.hybrid_shape_law_dist_proj.Definition = reference_definition.com_object
 
     @property
-    def measure_unit_symbol(self) -> False:
+    def measure_unit_symbol(self) -> str:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -96,16 +96,16 @@ class HybridShapeLawDistProj(HybridShape):
                 | 
                 |     Returns or sets the measure unit symbol for heterogeneous law.
 
-        :return: False
-        :rtype: False
+        :return: str
+        :rtype: str
         """
 
-        return None
+        return self.hybrid_shape_law_dist_proj.MeasureUnitSymbol()
 
     @measure_unit_symbol.setter
-    def measure_unit_symbol(self, value: False):
+    def measure_unit_symbol(self, value: str):
         """
-        :param False value:
+        :param str value:
         """
 
         self.hybrid_shape_law_dist_proj.MeasureUnitSymbol = value
@@ -184,12 +184,12 @@ class HybridShapeLawDistProj(HybridShape):
         return Reference(self.hybrid_shape_law_dist_proj.Reference)
 
     @reference.setter
-    def reference(self, value: Reference):
+    def reference(self, reference: Reference):
         """
-        :param Reference value:
+        :param Reference reference:
         """
 
-        self.hybrid_shape_law_dist_proj.Reference = value
+        self.hybrid_shape_law_dist_proj.Reference = reference.com_object
 
     @property
     def scaling(self) -> float:

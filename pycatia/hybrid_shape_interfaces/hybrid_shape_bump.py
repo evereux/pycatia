@@ -16,7 +16,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeBump(HybridShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -58,7 +57,7 @@ class HybridShapeBump(HybridShape):
         :param Reference value:
         """
 
-        self.hybrid_shape_bump.BodyToBump = value
+        self.hybrid_shape_bump.BodyToBump = value.com_object
 
     @property
     def center_tension(self) -> RealParam:
@@ -76,12 +75,12 @@ class HybridShapeBump(HybridShape):
         return RealParam(self.hybrid_shape_bump.CenterTension)
 
     @center_tension.setter
-    def center_tension(self, value: RealParam):
+    def center_tension(self, real_param: RealParam):
         """
-        :param RealParam value:
+        :param RealParam real_param:
         """
 
-        self.hybrid_shape_bump.CenterTension = value
+        self.hybrid_shape_bump.CenterTension = real_param.com_object
 
     @property
     def continuity_type(self) -> int:
@@ -127,12 +126,12 @@ class HybridShapeBump(HybridShape):
         return Reference(self.hybrid_shape_bump.DeformationCenter)
 
     @deformation_center.setter
-    def deformation_center(self, value: Reference):
+    def deformation_center(self, reference_center: Reference):
         """
-        :param Reference value:
+        :param Reference reference_center:
         """
 
-        self.hybrid_shape_bump.DeformationCenter = value
+        self.hybrid_shape_bump.DeformationCenter = reference_center.com_object
 
     @property
     def deformation_dir(self) -> Reference:
@@ -150,12 +149,12 @@ class HybridShapeBump(HybridShape):
         return Reference(self.hybrid_shape_bump.DeformationDir)
 
     @deformation_dir.setter
-    def deformation_dir(self, value: Reference):
+    def deformation_dir(self, reference_direction: Reference):
         """
-        :param Reference value:
+        :param Reference reference_direction:
         """
 
-        self.hybrid_shape_bump.DeformationDir = value
+        self.hybrid_shape_bump.DeformationDir = reference_direction.com_object
 
     @property
     def deformation_dist(self) -> Length:
@@ -177,12 +176,12 @@ class HybridShapeBump(HybridShape):
         return Length(self.hybrid_shape_bump.DeformationDist)
 
     @deformation_dist.setter
-    def deformation_dist(self, value: Length):
+    def deformation_dist(self, length: Length):
         """
-        :param Length value:
+        :param Length length:
         """
 
-        self.hybrid_shape_bump.DeformationDist = value
+        self.hybrid_shape_bump.DeformationDist = length.com_object
 
     @property
     def deformation_dist_value(self) -> float:
@@ -225,12 +224,12 @@ class HybridShapeBump(HybridShape):
         return Reference(self.hybrid_shape_bump.LimitCurve)
 
     @limit_curve.setter
-    def limit_curve(self, value: Reference):
+    def limit_curve(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_bump.LimitCurve = value
+        self.hybrid_shape_bump.LimitCurve = reference_curve.com_object
 
     @property
     def projection_dir(self) -> Reference:
@@ -248,12 +247,12 @@ class HybridShapeBump(HybridShape):
         return Reference(self.hybrid_shape_bump.ProjectionDir)
 
     @projection_dir.setter
-    def projection_dir(self, value: Reference):
+    def projection_dir(self, reference_projection_direction: Reference):
         """
-        :param Reference value:
+        :param Reference reference_projection_direction:
         """
 
-        self.hybrid_shape_bump.ProjectionDir = value
+        self.hybrid_shape_bump.ProjectionDir = reference_projection_direction.com_object
 
     def __repr__(self):
-        return f'HybridShapeBump(name="{ self.name }")'
+        return f'HybridShapeBump(name="{self.name}")'
