@@ -108,12 +108,12 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle_tritangent.Curve1)
 
     @curve1.setter
-    def curve1(self, value: Reference):
+    def curve1(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_circle_tritangent.Curve1 = value
+        self.hybrid_shape_circle_tritangent.Curve1 = reference_curve.com_object
 
     @property
     def curve2(self) -> Reference:
@@ -140,12 +140,12 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle_tritangent.Curve2)
 
     @curve2.setter
-    def curve2(self, value: Reference):
+    def curve2(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_circle_tritangent.Curve2 = value
+        self.hybrid_shape_circle_tritangent.Curve2 = reference_curve.com_object
 
     @property
     def curve3(self) -> Reference:
@@ -173,12 +173,12 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle_tritangent.Curve3)
 
     @curve3.setter
-    def curve3(self, value: Reference):
+    def curve3(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_circle_tritangent.Curve3 = value
+        self.hybrid_shape_circle_tritangent.Curve3 = reference_curve.com_object
 
     @property
     def discrimination_index(self) -> int:
@@ -353,12 +353,12 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle_tritangent.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, reference_support: Reference):
         """
-        :param Reference value:
+        :param Reference reference_support:
         """
 
-        self.hybrid_shape_circle_tritangent.Support = value
+        self.hybrid_shape_circle_tritangent.Support = reference_support.com_object
 
     @property
     def tangent_orientation1(self) -> int:

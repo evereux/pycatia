@@ -14,7 +14,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeTransfer(HybridShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -63,12 +62,12 @@ class HybridShapeTransfer(HybridShape):
         return Reference(self.hybrid_shape_transfer.ElementToTransfer)
 
     @element_to_transfer.setter
-    def element_to_transfer(self, value: Reference):
+    def element_to_transfer(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_transfer.ElementToTransfer = value
+        self.hybrid_shape_transfer.ElementToTransfer = reference_element.com_object
 
     @property
     def surface_to_unfold(self) -> Reference:
@@ -86,12 +85,12 @@ class HybridShapeTransfer(HybridShape):
         return Reference(self.hybrid_shape_transfer.SurfaceToUnfold)
 
     @surface_to_unfold.setter
-    def surface_to_unfold(self, value: Reference):
+    def surface_to_unfold(self, reference_surface: Reference):
         """
-        :param Reference value:
+        :param Reference reference_surface:
         """
 
-        self.hybrid_shape_transfer.SurfaceToUnfold = value
+        self.hybrid_shape_transfer.SurfaceToUnfold = reference_surface.com_object
 
     @property
     def type_of_transfer(self) -> int:
@@ -164,12 +163,12 @@ class HybridShapeTransfer(HybridShape):
         return Reference(self.hybrid_shape_transfer.UnfoldedSurface)
 
     @unfolded_surface.setter
-    def unfolded_surface(self, value: Reference):
+    def unfolded_surface(self, reference_surface: Reference):
         """
-        :param Reference value:
+        :param Reference reference_surface:
         """
 
-        self.hybrid_shape_transfer.UnfoldedSurface = value
+        self.hybrid_shape_transfer.UnfoldedSurface = reference_surface.com_object
 
     def __repr__(self):
-        return f'HybridShapeTransfer(name="{ self.name }")'
+        return f'HybridShapeTransfer(name="{self.name}")'

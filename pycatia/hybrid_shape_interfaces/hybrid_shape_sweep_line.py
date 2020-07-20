@@ -54,12 +54,12 @@ class HybridShapeSweepLine(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_line.AngleLaw)
 
     @angle_law.setter
-    def angle_law(self, value: Reference):
+    def angle_law(self, reference_law: Reference):
         """
-        :param Reference value:
+        :param Reference reference_law:
         """
 
-        self.hybrid_shape_sweep_line.AngleLaw = value
+        self.hybrid_shape_sweep_line.AngleLaw = reference_law.com_object
 
     @property
     def angle_law_inversion(self) -> int:
@@ -228,12 +228,12 @@ class HybridShapeSweepLine(HybridShapeSweep):
         return HybridShapeDirection(self.hybrid_shape_sweep_line.DraftDirection)
 
     @draft_direction.setter
-    def draft_direction(self, value: HybridShapeDirection):
+    def draft_direction(self, direction: HybridShapeDirection):
         """
-        :param HybridShapeDirection value:
+        :param HybridShapeDirection direction:
         """
 
-        self.hybrid_shape_sweep_line.DraftDirection = value
+        self.hybrid_shape_sweep_line.DraftDirection = direction.com_object
 
     @property
     def first_guide_crv(self) -> Reference:
@@ -251,12 +251,12 @@ class HybridShapeSweepLine(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_line.FirstGuideCrv)
 
     @first_guide_crv.setter
-    def first_guide_crv(self, value: Reference):
+    def first_guide_crv(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_sweep_line.FirstGuideCrv = value
+        self.hybrid_shape_sweep_line.FirstGuideCrv = reference_curve.com_object
 
     @property
     def first_guide_surf(self) -> Reference:
@@ -274,12 +274,12 @@ class HybridShapeSweepLine(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_line.FirstGuideSurf)
 
     @first_guide_surf.setter
-    def first_guide_surf(self, value: Reference):
+    def first_guide_surf(self, reference_surface: Reference):
         """
-        :param Reference value:
+        :param Reference reference_surface:
         """
 
-        self.hybrid_shape_sweep_line.FirstGuideSurf = value
+        self.hybrid_shape_sweep_line.FirstGuideSurf = reference_surface.com_object
 
     @property
     def first_length_law(self) -> Reference:
@@ -297,12 +297,12 @@ class HybridShapeSweepLine(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_line.FirstLengthLaw)
 
     @first_length_law.setter
-    def first_length_law(self, value: Reference):
+    def first_length_law(self, reference_law: Reference):
         """
-        :param Reference value:
+        :param Reference reference_law:
         """
 
-        self.hybrid_shape_sweep_line.FirstLengthLaw = value
+        self.hybrid_shape_sweep_line.FirstLengthLaw = reference_law.com_object
 
     @property
     def first_length_law_inversion(self) -> int:
@@ -432,12 +432,12 @@ class HybridShapeSweepLine(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_line.SecondGuideCrv)
 
     @second_guide_crv.setter
-    def second_guide_crv(self, value: Reference):
+    def second_guide_crv(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_sweep_line.SecondGuideCrv = value
+        self.hybrid_shape_sweep_line.SecondGuideCrv = reference_curve.com_object
 
     @property
     def second_guide_surf(self) -> Reference:
@@ -455,12 +455,12 @@ class HybridShapeSweepLine(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_line.SecondGuideSurf)
 
     @second_guide_surf.setter
-    def second_guide_surf(self, value: Reference):
+    def second_guide_surf(self, reference_surface: Reference):
         """
-        :param Reference value:
+        :param Reference reference_surface:
         """
 
-        self.hybrid_shape_sweep_line.SecondGuideSurf = value
+        self.hybrid_shape_sweep_line.SecondGuideSurf = reference_surface.com_object
 
     @property
     def second_length_law(self) -> Reference:
@@ -478,12 +478,12 @@ class HybridShapeSweepLine(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_line.SecondLengthLaw)
 
     @second_length_law.setter
-    def second_length_law(self, value: Reference):
+    def second_length_law(self, reference_law: Reference):
         """
-        :param Reference value:
+        :param Reference reference_law:
         """
 
-        self.hybrid_shape_sweep_line.SecondLengthLaw = value
+        self.hybrid_shape_sweep_line.SecondLengthLaw = reference_law.com_object
 
     @property
     def second_length_law_inversion(self) -> int:
@@ -623,12 +623,12 @@ class HybridShapeSweepLine(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_line.Spine)
 
     @spine.setter
-    def spine(self, value: Reference):
+    def spine(self, reference_spine: Reference):
         """
-        :param Reference value:
+        :param Reference reference_spine:
         """
 
-        self.hybrid_shape_sweep_line.Spine = value
+        self.hybrid_shape_sweep_line.Spine = reference_spine.com_object
 
     @property
     def trim_option(self) -> int:

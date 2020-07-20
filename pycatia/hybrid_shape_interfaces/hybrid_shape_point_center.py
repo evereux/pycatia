@@ -14,7 +14,6 @@ from pycatia.in_interfaces.reference import Reference
 
 
 class HybridShapePointCenter(Point):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -69,12 +68,12 @@ class HybridShapePointCenter(Point):
         return Reference(self.hybrid_shape_point_center.Element)
 
     @element.setter
-    def element(self, value: Reference):
+    def element(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_point_center.Element = value
+        self.hybrid_shape_point_center.Element = reference_element.com_object
 
     def __repr__(self):
-        return f'HybridShapePointCenter(name="{ self.name }")'
+        return f'HybridShapePointCenter(name="{self.name}")'

@@ -15,7 +15,6 @@ from pycatia.knowledge_interfaces.length import Length
 
 
 class HybridShapePointCoord(Point):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -76,12 +75,12 @@ class HybridShapePointCoord(Point):
         return Reference(self.hybrid_shape_point_coord.PtRef)
 
     @pt_ref.setter
-    def pt_ref(self, value: Reference):
+    def pt_ref(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_point_coord.PtRef = value
+        self.hybrid_shape_point_coord.PtRef = reference_point.com_object
 
     @property
     def ref_axis_system(self) -> Reference:
@@ -114,12 +113,12 @@ class HybridShapePointCoord(Point):
         return Reference(self.hybrid_shape_point_coord.RefAxisSystem)
 
     @ref_axis_system.setter
-    def ref_axis_system(self, value: Reference):
+    def ref_axis_system(self, reference_axis: Reference):
         """
-        :param Reference value:
+        :param Reference reference_axis:
         """
 
-        self.hybrid_shape_point_coord.RefAxisSystem = value
+        self.hybrid_shape_point_coord.RefAxisSystem = reference_axis.com_object
 
     @property
     def x(self) -> Length:
@@ -191,4 +190,4 @@ class HybridShapePointCoord(Point):
         return Length(self.hybrid_shape_point_coord.Z)
 
     def __repr__(self):
-        return f'HybridShapePointCoord(name="{ self.name }")'
+        return f'HybridShapePointCoord(name="{self.name}")'

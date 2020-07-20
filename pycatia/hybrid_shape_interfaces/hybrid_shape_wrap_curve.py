@@ -142,12 +142,12 @@ class HybridShapeWrapCurve(HybridShape):
         return Reference(self.hybrid_shape_wrap_curve.Surface)
 
     @surface.setter
-    def surface(self, value: Reference):
+    def surface(self, reference_surface: Reference):
         """
-        :param Reference value:
+        :param Reference reference_surface:
         """
 
-        self.hybrid_shape_wrap_curve.Surface = value
+        self.hybrid_shape_wrap_curve.Surface = reference_surface.com_object
 
     def get_curves(self, i_position: int, o_reference_curve: Reference, o_target_curve: Reference) -> None:
         """

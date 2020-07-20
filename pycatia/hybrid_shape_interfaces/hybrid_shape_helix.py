@@ -74,12 +74,12 @@ class HybridShapeHelix(HybridShape):
         return Reference(self.hybrid_shape_helix.Axis)
 
     @axis.setter
-    def axis(self, value: Reference):
+    def axis(self, reference_axis: Reference):
         """
-        :param Reference value:
+        :param Reference reference_axis:
         """
 
-        self.hybrid_shape_helix.Axis = value
+        self.hybrid_shape_helix.Axis = reference_axis.com_object
 
     @property
     def clockwise_revolution(self) -> bool:
@@ -248,12 +248,12 @@ class HybridShapeHelix(HybridShape):
         return Reference(self.hybrid_shape_helix.Profile)
 
     @profile.setter
-    def profile(self, value: Reference):
+    def profile(self, reference_profile: Reference):
         """
-        :param Reference value:
+        :param Reference reference_profile:
         """
 
-        self.hybrid_shape_helix.Profile = value
+        self.hybrid_shape_helix.Profile = reference_profile.com_object
 
     @property
     def revol_number(self) -> RealParam:
@@ -320,12 +320,12 @@ class HybridShapeHelix(HybridShape):
         return Reference(self.hybrid_shape_helix.StartingPoint)
 
     @starting_point.setter
-    def starting_point(self, value: Reference):
+    def starting_point(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_helix.StartingPoint = value
+        self.hybrid_shape_helix.StartingPoint = reference_point.com_object
 
     @property
     def taper_angle(self) -> Angle:

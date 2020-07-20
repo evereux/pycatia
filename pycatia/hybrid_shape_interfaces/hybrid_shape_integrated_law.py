@@ -69,12 +69,12 @@ class HybridShapeIntegratedLaw(HybridShape):
         return Reference(self.hybrid_shape_integrated_law.AdvancedLaw)
 
     @advanced_law.setter
-    def advanced_law(self, value: Reference):
+    def advanced_law(self, reference_law: Reference):
         """
-        :param Reference value:
+        :param Reference reference_law:
         """
 
-        self.hybrid_shape_integrated_law.AdvancedLaw = value
+        self.hybrid_shape_integrated_law.AdvancedLaw = reference_law.com_object
 
     @property
     def end_param(self) -> Length:
@@ -233,12 +233,12 @@ class HybridShapeIntegratedLaw(HybridShape):
         return Reference(self.hybrid_shape_integrated_law.Spine)
 
     @spine.setter
-    def spine(self, value: Reference):
+    def spine(self, reference_spine: Reference):
         """
-        :param Reference value:
+        :param Reference reference_spine:
         """
 
-        self.hybrid_shape_integrated_law.Spine = value
+        self.hybrid_shape_integrated_law.Spine = reference_spine.com_object
 
     @property
     def start_param(self) -> Length:

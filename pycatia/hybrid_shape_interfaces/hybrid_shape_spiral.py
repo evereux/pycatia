@@ -18,7 +18,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeSpiral(HybridShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -71,12 +70,12 @@ class HybridShapeSpiral(HybridShape):
         return HybridShapeDirection(self.hybrid_shape_spiral.Axis)
 
     @axis.setter
-    def axis(self, value: HybridShapeDirection):
+    def axis(self, reference_axis: HybridShapeDirection):
         """
-        :param HybridShapeDirection value:
+        :param HybridShapeDirection reference_axis:
         """
 
-        self.hybrid_shape_spiral.Axis = value
+        self.hybrid_shape_spiral.Axis = reference_axis.com_object
 
     @property
     def center_point(self) -> Reference:
@@ -94,12 +93,12 @@ class HybridShapeSpiral(HybridShape):
         return Reference(self.hybrid_shape_spiral.CenterPoint)
 
     @center_point.setter
-    def center_point(self, value: Reference):
+    def center_point(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_spiral.CenterPoint = value
+        self.hybrid_shape_spiral.CenterPoint = reference_point.com_object
 
     @property
     def clockwise_revolution(self) -> bool:
@@ -142,12 +141,12 @@ class HybridShapeSpiral(HybridShape):
         return Angle(self.hybrid_shape_spiral.EndingAngle)
 
     @ending_angle.setter
-    def ending_angle(self, value: Angle):
+    def ending_angle(self, angle: Angle):
         """
-        :param Angle value:
+        :param Angle angle:
         """
 
-        self.hybrid_shape_spiral.EndingAngle = value
+        self.hybrid_shape_spiral.EndingAngle = angle.com_object
 
     @property
     def ending_radius(self) -> Length:
@@ -165,12 +164,12 @@ class HybridShapeSpiral(HybridShape):
         return Length(self.hybrid_shape_spiral.EndingRadius)
 
     @ending_radius.setter
-    def ending_radius(self, value: Length):
+    def ending_radius(self, length: Length):
         """
-        :param Length value:
+        :param Length length:
         """
 
-        self.hybrid_shape_spiral.EndingRadius = value
+        self.hybrid_shape_spiral.EndingRadius = length.com_object
 
     @property
     def invert_axis(self) -> bool:
@@ -214,12 +213,12 @@ class HybridShapeSpiral(HybridShape):
         return Length(self.hybrid_shape_spiral.Pitch)
 
     @pitch.setter
-    def pitch(self, value: Length):
+    def pitch(self, length: Length):
         """
-        :param Length value:
+        :param Length length:
         """
 
-        self.hybrid_shape_spiral.Pitch = value
+        self.hybrid_shape_spiral.Pitch = length.com_object
 
     @property
     def revol_number(self) -> RealParam:
@@ -237,12 +236,12 @@ class HybridShapeSpiral(HybridShape):
         return RealParam(self.hybrid_shape_spiral.RevolNumber)
 
     @revol_number.setter
-    def revol_number(self, value: RealParam):
+    def revol_number(self, real_param: RealParam):
         """
-        :param RealParam value:
+        :param RealParam real_param:
         """
 
-        self.hybrid_shape_spiral.RevolNumber = value
+        self.hybrid_shape_spiral.RevolNumber = real_param.com_object
 
     @property
     def starting_radius(self) -> Length:
@@ -260,12 +259,12 @@ class HybridShapeSpiral(HybridShape):
         return Length(self.hybrid_shape_spiral.StartingRadius)
 
     @starting_radius.setter
-    def starting_radius(self, value: Length):
+    def starting_radius(self, length: Length):
         """
-        :param Length value:
+        :param Length length:
         """
 
-        self.hybrid_shape_spiral.StartingRadius = value
+        self.hybrid_shape_spiral.StartingRadius = length.com_object
 
     @property
     def support(self) -> Reference:
@@ -283,12 +282,12 @@ class HybridShapeSpiral(HybridShape):
         return Reference(self.hybrid_shape_spiral.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, reference_support: Reference):
         """
-        :param Reference value:
+        :param Reference reference_support:
         """
 
-        self.hybrid_shape_spiral.Support = value
+        self.hybrid_shape_spiral.Support = reference_support.com_object
 
     @property
     def type(self) -> int:
@@ -366,4 +365,4 @@ class HybridShapeSpiral(HybridShape):
         return self.hybrid_shape_spiral.SetRadiusPitchParam(i_end_radius, i_pitch)
 
     def __repr__(self):
-        return f'HybridShapeSpiral(name="{ self.name }")'
+        return f'HybridShapeSpiral(name="{self.name}")'

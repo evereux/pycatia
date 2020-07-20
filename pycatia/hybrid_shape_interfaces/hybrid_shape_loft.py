@@ -73,12 +73,12 @@ class HybridShapeLoft(HybridShape):
         return Reference(self.hybrid_shape_loft.AreaLaw)
 
     @area_law.setter
-    def area_law(self, value: Reference):
+    def area_law(self, reference_law: Reference):
         """
-        :param Reference value:
+        :param Reference reference_law:
         """
 
-        self.hybrid_shape_loft.AreaLaw = value
+        self.hybrid_shape_loft.AreaLaw = reference_law.com_object
 
     @property
     def area_law_tolerance(self) -> float:

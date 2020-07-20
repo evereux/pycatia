@@ -15,7 +15,6 @@ from pycatia.knowledge_interfaces.length import Length
 
 
 class HybridShapeCircle2PointsRad(HybridShapeCircle):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -170,12 +169,12 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle2_points_rad.Pt1)
 
     @pt1.setter
-    def pt1(self, value: Reference):
+    def pt1(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_circle2_points_rad.Pt1 = value
+        self.hybrid_shape_circle2_points_rad.Pt1 = reference_point.com_object
 
     @property
     def pt2(self) -> Reference:
@@ -200,12 +199,12 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle2_points_rad.Pt2)
 
     @pt2.setter
-    def pt2(self, value: Reference):
+    def pt2(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_circle2_points_rad.Pt2 = value
+        self.hybrid_shape_circle2_points_rad.Pt2 = reference_point.com_object
 
     @property
     def radius(self) -> Length:
@@ -261,12 +260,12 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
         return Reference(self.hybrid_shape_circle2_points_rad.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, reference_support: Reference):
         """
-        :param Reference value:
+        :param Reference reference_support:
         """
 
-        self.hybrid_shape_circle2_points_rad.Support = value
+        self.hybrid_shape_circle2_points_rad.Support = reference_support
 
     def is_geodesic(self) -> bool:
         """
@@ -315,4 +314,4 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
         return self.hybrid_shape_circle2_points_rad.UnsetGeometryOnSupport()
 
     def __repr__(self):
-        return f'HybridShapeCircle2PointsRad(name="{ self.name }")'
+        return f'HybridShapeCircle2PointsRad(name="{self.name}")'

@@ -69,12 +69,12 @@ class HybridShapePointBetween(Point):
         return Reference(self.hybrid_shape_point_between.FirstPoint)
 
     @first_point.setter
-    def first_point(self, value: Reference):
+    def first_point(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_point_between.FirstPoint = value
+        self.hybrid_shape_point_between.FirstPoint = reference_point.com_object
 
     @property
     def orientation(self) -> int:
@@ -155,12 +155,12 @@ class HybridShapePointBetween(Point):
         return Reference(self.hybrid_shape_point_between.SecondPoint)
 
     @second_point.setter
-    def second_point(self, value: Reference):
+    def second_point(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_point_between.SecondPoint = value
+        self.hybrid_shape_point_between.SecondPoint = reference_point.com_object
 
     @property
     def support(self) -> Reference:
@@ -190,12 +190,12 @@ class HybridShapePointBetween(Point):
         return Reference(self.hybrid_shape_point_between.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, reference_support: Reference):
         """
-        :param Reference value:
+        :param Reference reference_support:
         """
 
-        self.hybrid_shape_point_between.Support = value
+        self.hybrid_shape_point_between.Support = reference_support.com_object
 
     def __repr__(self):
         return f'HybridShapePointBetween(name="{self.name}")'

@@ -66,15 +66,15 @@ class HybridShapePlane2Lines(Plane):
         return Reference(self.hybrid_shape_plane2_lines.First)
 
     @first.setter
-    def first(self, value: Reference):
+    def first(self, reference_line: Reference):
         """
-        :param Reference value:
+        :param Reference reference_line:
         """
 
-        self.hybrid_shape_plane2_lines.First = value
+        self.hybrid_shape_plane2_lines.First = reference_line.com_object
 
     @property
-    def forbid_non_coplanar_lines(self) -> False:
+    def forbid_non_coplanar_lines(self) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -83,16 +83,16 @@ class HybridShapePlane2Lines(Plane):
                 |     if ForbidNonCoplanarLines = TRUE, both lines have to be on the same plane.
                 |     if ForbidNonCoplanarLines = FALSE, both lines can be non coplanar.
 
-        :return: False
-        :rtype: False
+        :return: bool
+        :rtype: bool
         """
 
-        return None
+        return self.hybrid_shape_plane2_lines.ForbidNonCoplanarLines()
 
     @forbid_non_coplanar_lines.setter
-    def forbid_non_coplanar_lines(self, value: False):
+    def forbid_non_coplanar_lines(self, value: bool):
         """
-        :param False value:
+        :param bool value:
         """
 
         self.hybrid_shape_plane2_lines.ForbidNonCoplanarLines = value
@@ -126,12 +126,12 @@ class HybridShapePlane2Lines(Plane):
         return Reference(self.hybrid_shape_plane2_lines.Second)
 
     @second.setter
-    def second(self, value: Reference):
+    def second(self, reference_line: Reference):
         """
-        :param Reference value:
+        :param Reference reference_line:
         """
 
-        self.hybrid_shape_plane2_lines.Second = value
+        self.hybrid_shape_plane2_lines.Second = reference_line.com_object
 
     def __repr__(self):
         return f'HybridShapePlane2Lines(name="{self.name}")'

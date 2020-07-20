@@ -84,12 +84,12 @@ class HybridShapeSweepConic(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_conic.FifthGuideCrv)
 
     @fifth_guide_crv.setter
-    def fifth_guide_crv(self, value: Reference):
+    def fifth_guide_crv(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_sweep_conic.FifthGuideCrv = value
+        self.hybrid_shape_sweep_conic.FifthGuideCrv = reference_curve.com_object
 
     @property
     def first_guide_crv(self) -> Reference:
@@ -107,12 +107,12 @@ class HybridShapeSweepConic(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_conic.FirstGuideCrv)
 
     @first_guide_crv.setter
-    def first_guide_crv(self, value: Reference):
+    def first_guide_crv(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_sweep_conic.FirstGuideCrv = value
+        self.hybrid_shape_sweep_conic.FirstGuideCrv = reference_curve.com_object
 
     @property
     def fourth_guide_crv(self) -> Reference:
@@ -130,12 +130,12 @@ class HybridShapeSweepConic(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_conic.FourthGuideCrv)
 
     @fourth_guide_crv.setter
-    def fourth_guide_crv(self, value: Reference):
+    def fourth_guide_crv(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_sweep_conic.FourthGuideCrv = value
+        self.hybrid_shape_sweep_conic.FourthGuideCrv = reference_curve.com_object
 
     @property
     def guide_deviation(self) -> Length:
@@ -221,12 +221,12 @@ class HybridShapeSweepConic(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_conic.ParameterLaw)
 
     @parameter_law.setter
-    def parameter_law(self, value: Reference):
+    def parameter_law(self, reference_law: Reference):
         """
-        :param Reference value:
+        :param Reference reference_law:
         """
 
-        self.hybrid_shape_sweep_conic.ParameterLaw = value
+        self.hybrid_shape_sweep_conic.ParameterLaw = reference_law.com_object
 
     @property
     def parameter_law_inversion(self) -> bool:
@@ -293,12 +293,12 @@ class HybridShapeSweepConic(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_conic.SecondGuideCrv)
 
     @second_guide_crv.setter
-    def second_guide_crv(self, value: Reference):
+    def second_guide_crv(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_sweep_conic.SecondGuideCrv = value
+        self.hybrid_shape_sweep_conic.SecondGuideCrv = reference_curve.com_object
 
     @property
     def smooth_activity(self) -> bool:
@@ -362,12 +362,12 @@ class HybridShapeSweepConic(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_conic.Spine)
 
     @spine.setter
-    def spine(self, value: Reference):
+    def spine(self, reference_spine: Reference):
         """
-        :param Reference value:
+        :param Reference reference_spine:
         """
 
-        self.hybrid_shape_sweep_conic.Spine = value
+        self.hybrid_shape_sweep_conic.Spine = reference_spine.com_object
 
     @property
     def third_guide_crv(self) -> Reference:
@@ -385,12 +385,12 @@ class HybridShapeSweepConic(HybridShapeSweep):
         return Reference(self.hybrid_shape_sweep_conic.ThirdGuideCrv)
 
     @third_guide_crv.setter
-    def third_guide_crv(self, value: Reference):
+    def third_guide_crv(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_sweep_conic.ThirdGuideCrv = value
+        self.hybrid_shape_sweep_conic.ThirdGuideCrv = reference_curve.com_object
 
     def get_longitudinal_relimiters(self, op_ia_elem1: Reference, op_ia_elem2: Reference) -> None:
         """

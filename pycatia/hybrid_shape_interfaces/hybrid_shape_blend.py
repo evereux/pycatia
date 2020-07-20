@@ -238,12 +238,12 @@ class HybridShapeBlend(HybridShape):
         return Reference(self.hybrid_shape_blend.Spine)
 
     @spine.setter
-    def spine(self, value: Reference):
+    def spine(self, reference_spine: Reference):
         """
-        :param Reference value:
+        :param Reference reference_spine:
         """
 
-        self.hybrid_shape_blend.Spine = value
+        self.hybrid_shape_blend.Spine = reference_spine.com_object
 
     def get_border_mode(self, i_blend_limit: int) -> int:
         """

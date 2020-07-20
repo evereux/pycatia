@@ -103,12 +103,12 @@ class HybridShapeExtrapol(HybridShape):
         return Reference(self.hybrid_shape_extrapol.Boundary)
 
     @boundary.setter
-    def boundary(self, value: Reference):
+    def boundary(self, reference_boundary: Reference):
         """
-        :param Reference value:
+        :param Reference reference_boundary:
         """
 
-        self.hybrid_shape_extrapol.Boundary = value
+        self.hybrid_shape_extrapol.Boundary = reference_boundary.com_object
 
     @property
     def constant_length_mode(self) -> bool:
@@ -180,12 +180,12 @@ class HybridShapeExtrapol(HybridShape):
         return Reference(self.hybrid_shape_extrapol.ElemToExtrapol)
 
     @elem_to_extrapol.setter
-    def elem_to_extrapol(self, value: Reference):
+    def elem_to_extrapol(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_extrapol.ElemToExtrapol = value
+        self.hybrid_shape_extrapol.ElemToExtrapol = reference_element.com_object
 
     @property
     def elem_until(self) -> Reference:
@@ -207,12 +207,12 @@ class HybridShapeExtrapol(HybridShape):
         return Reference(self.hybrid_shape_extrapol.ElemUntil)
 
     @elem_until.setter
-    def elem_until(self, value: Reference):
+    def elem_until(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_extrapol.ElemUntil = value
+        self.hybrid_shape_extrapol.ElemUntil = reference_element.com_object
 
     @property
     def extend_edges_mode(self) -> bool:

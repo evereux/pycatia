@@ -64,12 +64,12 @@ class HybridShapeExtremum(HybridShape):
         return HybridShapeDirection(self.hybrid_shape_extremum.Direction)
 
     @direction.setter
-    def direction(self, value: HybridShapeDirection):
+    def direction(self, direction: HybridShapeDirection):
         """
-        :param HybridShapeDirection value:
+        :param HybridShapeDirection direction:
         """
 
-        self.hybrid_shape_extremum.Direction = value
+        self.hybrid_shape_extremum.Direction = direction.com_object
 
     @property
     def direction2(self) -> HybridShapeDirection:
@@ -87,12 +87,12 @@ class HybridShapeExtremum(HybridShape):
         return HybridShapeDirection(self.hybrid_shape_extremum.Direction2)
 
     @direction2.setter
-    def direction2(self, value: HybridShapeDirection):
+    def direction2(self, direction: HybridShapeDirection):
         """
-        :param HybridShapeDirection value:
+        :param HybridShapeDirection direction:
         """
 
-        self.hybrid_shape_extremum.Direction2 = value
+        self.hybrid_shape_extremum.Direction2 = direction.com_object
 
     @property
     def direction3(self) -> HybridShapeDirection:
@@ -110,12 +110,12 @@ class HybridShapeExtremum(HybridShape):
         return HybridShapeDirection(self.hybrid_shape_extremum.Direction3)
 
     @direction3.setter
-    def direction3(self, value: HybridShapeDirection):
+    def direction3(self, direction: HybridShapeDirection):
         """
-        :param HybridShapeDirection value:
+        :param HybridShapeDirection direction:
         """
 
-        self.hybrid_shape_extremum.Direction3 = value
+        self.hybrid_shape_extremum.Direction3 = direction.com_object
 
     @property
     def extremum_type(self) -> int:
@@ -205,12 +205,12 @@ class HybridShapeExtremum(HybridShape):
         return Reference(self.hybrid_shape_extremum.ReferenceElement)
 
     @reference_element.setter
-    def reference_element(self, value: Reference):
+    def reference_element(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_extremum.ReferenceElement = value
+        self.hybrid_shape_extremum.ReferenceElement = reference_element
 
     def __repr__(self):
         return f'HybridShapeExtremum(name="{ self.name }")'

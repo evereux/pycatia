@@ -63,12 +63,12 @@ class HybridShapeLineBiTangent(Line):
         return Reference(self.hybrid_shape_line_bi_tangent.Curve1)
 
     @curve1.setter
-    def curve1(self, value: Reference):
+    def curve1(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
-        self.hybrid_shape_line_bi_tangent.Curve1 = value
+        self.hybrid_shape_line_bi_tangent.Curve1 = reference_curve.com_object
 
     @property
     def element2(self) -> Reference:
@@ -96,12 +96,12 @@ class HybridShapeLineBiTangent(Line):
         return Reference(self.hybrid_shape_line_bi_tangent.Element2)
 
     @element2.setter
-    def element2(self, value: Reference):
+    def element2(self, reference_element: Reference):
         """
-        :param Reference value:
+        :param Reference reference_element:
         """
 
-        self.hybrid_shape_line_bi_tangent.Element2 = value
+        self.hybrid_shape_line_bi_tangent.Element2 = reference_element.com_object
 
     @property
     def support(self) -> Reference:
@@ -127,12 +127,12 @@ class HybridShapeLineBiTangent(Line):
         return Reference(self.hybrid_shape_line_bi_tangent.Support)
 
     @support.setter
-    def support(self, value: Reference):
+    def support(self, reference_support: Reference):
         """
-        :param Reference value:
+        :param Reference reference_support:
         """
 
-        self.hybrid_shape_line_bi_tangent.Support = value
+        self.hybrid_shape_line_bi_tangent.Support = reference_support.com_object
 
     def get_choice_no(self, val1: int, val2: int, val3: int, val4: int, val5: int) -> None:
         """

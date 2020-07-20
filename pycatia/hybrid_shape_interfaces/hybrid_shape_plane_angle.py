@@ -107,12 +107,12 @@ class HybridShapePlaneAngle(Plane):
         return Reference(self.hybrid_shape_plane_angle.Plane)
 
     @plane.setter
-    def plane(self, value: Reference):
+    def plane(self, reference_plane: Reference):
         """
-        :param Reference value:
+        :param Reference reference_plane:
         """
 
-        self.hybrid_shape_plane_angle.Plane = value
+        self.hybrid_shape_plane_angle.Plane = reference_plane.com_object
 
     @property
     def projection_mode(self) -> bool:
@@ -161,12 +161,12 @@ class HybridShapePlaneAngle(Plane):
         return Reference(self.hybrid_shape_plane_angle.RevolAxis)
 
     @revol_axis.setter
-    def revol_axis(self, value: Reference):
+    def revol_axis(self, reference_axis: Reference):
         """
-        :param Reference value:
+        :param Reference reference_axis:
         """
 
-        self.hybrid_shape_plane_angle.RevolAxis = value
+        self.hybrid_shape_plane_angle.RevolAxis = reference_axis.com_object
 
     def __repr__(self):
         return f'HybridShapePlaneAngle(name="{self.name}")'

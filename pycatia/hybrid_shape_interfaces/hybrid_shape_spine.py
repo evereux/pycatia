@@ -14,7 +14,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeSpine(HybridShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -80,12 +79,12 @@ class HybridShapeSpine(HybridShape):
         return Reference(self.hybrid_shape_spine.StartPoint)
 
     @start_point.setter
-    def start_point(self, value: Reference):
+    def start_point(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
-        self.hybrid_shape_spine.StartPoint = value
+        self.hybrid_shape_spine.StartPoint = reference_point.com_object
 
     def add_guide(self, i_guide: Reference) -> None:
         """
@@ -459,4 +458,4 @@ class HybridShapeSpine(HybridShape):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'HybridShapeSpine(name="{ self.name }")'
+        return f'HybridShapeSpine(name="{self.name}")'
