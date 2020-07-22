@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.9
+* Added product.generate_ALLCATPart.
+* Added product.constraints.
+* Improved error message for selection.search.
+* Removed product.concession (now constraints and easier to use).
+* Removed application.execute_script and application.evaluate. Should use application.system_service.
+
+
 ## 0.3.8
 * Updated all hybrid_shape_interfaces properties due to regression bug.
  
