@@ -5078,7 +5078,7 @@ class HybridShapeFactory(Factory):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def delete_object_for_datum(self, i_object: Reference) -> None:
@@ -5112,7 +5112,7 @@ class HybridShapeFactory(Factory):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def gsm_visibility(self, i_elem: Reference, show: int) -> None:
@@ -5150,7 +5150,7 @@ class HybridShapeFactory(Factory):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_geometrical_feature_type(self, i_elem: Reference) -> int:

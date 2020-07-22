@@ -112,7 +112,7 @@ class HybridShapeExtractMulti(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_constraint_tolerant(self, i_constraint: Reference, i_type: int, i_complementaire: bool,
@@ -196,7 +196,7 @@ class HybridShapeExtractMulti(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_angular_threshold(self, i_pos: int) -> float:
@@ -459,7 +459,7 @@ class HybridShapeExtractMulti(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_nb_constraints(self, o_nb_constraints: int) -> None:
@@ -619,7 +619,7 @@ class HybridShapeExtractMulti(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_angular_threshold(self, i_pos: int, i_angtre_thsld: float) -> None:
@@ -685,7 +685,7 @@ class HybridShapeExtractMulti(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_complementary_extract_multi(self, i_pos: int, i_complementaire: bool) -> None:
@@ -726,7 +726,7 @@ class HybridShapeExtractMulti(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_curvature_threshold(self, i_pos: int, i_crvtre_thsld: float) -> None:
@@ -793,7 +793,7 @@ class HybridShapeExtractMulti(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_distance_threshold(self, i_pos: int, i_distre_thsld: float) -> None:
@@ -860,7 +860,7 @@ class HybridShapeExtractMulti(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_element(self, i_pos: int, i_elem: Reference) -> None:
@@ -903,7 +903,7 @@ class HybridShapeExtractMulti(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_is_federated(self, i_pos: int, i_is_federated: bool) -> None:
@@ -944,7 +944,7 @@ class HybridShapeExtractMulti(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_propagation_type(self, i_pos: int, i_type_propag: int) -> None:
@@ -1014,7 +1014,7 @@ class HybridShapeExtractMulti(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

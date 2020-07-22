@@ -183,7 +183,7 @@ class DrawingDimExtLine(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_funnel(self, i_index: int, o_mode: int, o_angle: float, o_height: float, o_width: float) -> None:
@@ -293,7 +293,7 @@ class DrawingDimExtLine(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_interrupt(self, i_index: int) -> int:

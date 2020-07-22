@@ -137,7 +137,7 @@ class SendToService(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_list_of_to_be_copied_files(self, o_will_be_copied: tuple) -> None:
@@ -176,7 +176,7 @@ class SendToService(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def keep_directory(self, i_keep: bool) -> None:
@@ -219,7 +219,7 @@ class SendToService(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def remove_file(self, i_file: str) -> None:

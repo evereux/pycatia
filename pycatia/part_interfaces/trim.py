@@ -76,7 +76,7 @@ class Trim(BooleanShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_face_to_keep2(self, i_face_to_keep: Reference, i_face_adjacent_for_keep: Reference) -> None:
@@ -126,7 +126,7 @@ class Trim(BooleanShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_face_to_remove(self, i_face_to_remove: Reference) -> None:
@@ -170,7 +170,7 @@ class Trim(BooleanShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_face_to_remove2(self, i_face_to_remove: Reference, i_face_adjacent_for_remove: Reference) -> None:
@@ -220,7 +220,7 @@ class Trim(BooleanShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def withdraw_face_to_keep(self, i_face_to_withdraw: Reference) -> None:
@@ -264,7 +264,7 @@ class Trim(BooleanShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def withdraw_face_to_keep2(self, i_face_to_withdraw: Reference, i_face_adjacent_for_keep: Reference) -> None:
@@ -314,7 +314,7 @@ class Trim(BooleanShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def withdraw_face_to_remove(self, i_face_to_withdraw: Reference) -> None:
@@ -358,7 +358,7 @@ class Trim(BooleanShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def withdraw_face_to_remove2(self, i_face_to_withdraw: Reference, i_face_adjacent_for_remove: Reference) -> None:
@@ -408,7 +408,7 @@ class Trim(BooleanShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

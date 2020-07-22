@@ -269,7 +269,7 @@ class HybridShapeUnfold(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_element_to_transfer(self, i_element: Reference, i_type_of_transfer: int) -> None:
@@ -311,7 +311,7 @@ class HybridShapeUnfold(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_edge_to_tear(self, i_rank: int) -> Reference:
@@ -384,7 +384,7 @@ class HybridShapeUnfold(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def remove_edge_to_tear(self, i_rank: int) -> None:
@@ -467,7 +467,7 @@ class HybridShapeUnfold(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

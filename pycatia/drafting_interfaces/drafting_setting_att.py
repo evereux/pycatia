@@ -554,7 +554,7 @@ class DraftingSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_prevent_gen_view_style_info(self, io_admin_level: str, io_locked: str) -> bool:
@@ -840,7 +840,7 @@ class DraftingSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_display_reset_button_lock(self, i_locked: bool) -> None:
@@ -880,7 +880,7 @@ class DraftingSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_lock_user_default_lock(self, i_locked: bool) -> None:
@@ -920,7 +920,7 @@ class DraftingSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_prevent_background_access_lock(self, i_locked: bool) -> None:
@@ -960,7 +960,7 @@ class DraftingSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_prevent_dim_driving_3d_cstr_lock(self, i_locked: bool) -> None:
@@ -1000,7 +1000,7 @@ class DraftingSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_prevent_file_new_lock(self, i_locked: bool) -> None:
@@ -1040,7 +1040,7 @@ class DraftingSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_prevent_gen_view_style_lock(self, i_locked: bool) -> None:
@@ -1080,7 +1080,7 @@ class DraftingSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_prevent_set_as_default_lock(self, i_locked: bool) -> None:
@@ -1120,7 +1120,7 @@ class DraftingSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_prevent_switch_standard_lock(self, i_locked: bool) -> None:
@@ -1160,7 +1160,7 @@ class DraftingSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_prevent_true_dimension_creation_lock(self, i_locked: bool) -> None:
@@ -1201,7 +1201,7 @@ class DraftingSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_prevent_update_standard_lock(self, i_locked: bool) -> None:
@@ -1241,7 +1241,7 @@ class DraftingSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_prevent_view_geom_upgrade_lock(self, i_locked: bool) -> None:
@@ -1280,7 +1280,7 @@ class DraftingSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_use_style_create_objects_lock(self, i_locked: bool) -> None:
@@ -1320,7 +1320,7 @@ class DraftingSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

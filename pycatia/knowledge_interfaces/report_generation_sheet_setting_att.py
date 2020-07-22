@@ -749,7 +749,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_check_report_html_lock(self, i_locked: bool) -> None:
@@ -789,7 +789,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_directory_for_input_xsl_lock(self, i_locked: bool) -> None:
@@ -829,7 +829,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_report_check_advisor_lock(self, i_locked: bool) -> None:
@@ -869,7 +869,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_report_check_expert_lock(self, i_locked: bool) -> None:
@@ -909,7 +909,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_report_html_in_catia_session_lock(self, i_locked: bool) -> None:
@@ -949,7 +949,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_report_objects_information_lock(self, i_locked: bool) -> None:
@@ -989,7 +989,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_report_output_directory_lock(self, i_locked: bool) -> None:
@@ -1029,7 +1029,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_report_parameters_information_lock(self, i_locked: bool) -> None:
@@ -1070,7 +1070,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_report_passed_objects_lock(self, i_locked: bool) -> None:
@@ -1110,7 +1110,7 @@ class ReportGenerationSheetSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

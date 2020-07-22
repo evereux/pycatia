@@ -508,7 +508,7 @@ class HybridShapeTrim(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_element_to_remove(self, i_element: Reference) -> None:
@@ -543,7 +543,7 @@ class HybridShapeTrim(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_piece_cutter(self, i_rank: int, i_cutter_elem: int, i_orientation: int) -> None:
@@ -981,7 +981,7 @@ class HybridShapeTrim(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_next_orientation(self, i_rank: int, i_orientation: int) -> None:

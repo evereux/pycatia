@@ -156,7 +156,7 @@ class HybridShapePolyline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def insert_element(self, i_point: Reference, i_position: int) -> None:
@@ -201,7 +201,7 @@ class HybridShapePolyline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def remove_element(self, i_position: int) -> None:
@@ -274,7 +274,7 @@ class HybridShapePolyline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_radius(self, i_position: int, i_radius: float) -> None:

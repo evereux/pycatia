@@ -548,7 +548,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def define_broken_view(self, i_broken_lines_extremities: tuple, i_x_direction: float, i_y_direction: float) -> None:
@@ -630,7 +630,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def define_circular_clipping_view(self, x_center: float, y_center: float, radius: float) -> None:
@@ -727,7 +727,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def define_circular_exact_clipping_view(self, x_center: float, y_center: float, radius: float) -> None:
@@ -1682,7 +1682,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def un_clip(self) -> None:

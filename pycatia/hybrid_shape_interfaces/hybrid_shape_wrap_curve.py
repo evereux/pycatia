@@ -201,7 +201,7 @@ class HybridShapeWrapCurve(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_number_of_curves(self) -> int:
@@ -274,7 +274,7 @@ class HybridShapeWrapCurve(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_reference_spine(self, o_spine_type: int, o_spine: Reference) -> None:
@@ -324,7 +324,7 @@ class HybridShapeWrapCurve(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def insert_curves(self, i_position: int, i_reference_curve: Reference, i_target_curve: Reference) -> None:
@@ -383,7 +383,7 @@ class HybridShapeWrapCurve(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def insert_reference_curve(self, i_position: int, i_reference_curve: Reference) -> None:
@@ -431,7 +431,7 @@ class HybridShapeWrapCurve(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def remove_curves(self, i_position: int) -> None:
@@ -501,7 +501,7 @@ class HybridShapeWrapCurve(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_reference_spine(self, i_spine: Reference) -> None:
@@ -544,7 +544,7 @@ class HybridShapeWrapCurve(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

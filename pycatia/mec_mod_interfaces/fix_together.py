@@ -114,7 +114,7 @@ class FixTogether(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_product(self, i_product: Product) -> None:
@@ -150,7 +150,7 @@ class FixTogether(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_fix_together(self, i_index: cat_variant) -> 'FixTogether':

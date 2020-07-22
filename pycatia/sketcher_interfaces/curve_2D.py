@@ -169,7 +169,7 @@ class Curve2D(Geometry2D):
         End Function
         """
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object, i_param])
 
     def get_derivatives(self, i_param: float) -> tuple:
@@ -207,7 +207,7 @@ class Curve2D(Geometry2D):
         End Function
         """
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object, i_param])
 
     def get_end_points(self) -> tuple:
@@ -244,7 +244,7 @@ class Curve2D(Geometry2D):
         End Function
         """
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_length_at_param(self, i_from_param: float, i_to_param: float) -> float:
@@ -337,7 +337,7 @@ class Curve2D(Geometry2D):
         End Function
         """
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_point_at_param(self, i_param: float) -> tuple:
@@ -372,7 +372,7 @@ class Curve2D(Geometry2D):
         End Function
         """
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object, i_param])
 
     def get_range_box(self) -> tuple:
@@ -409,7 +409,7 @@ class Curve2D(Geometry2D):
         End Function
         """
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_tangent(self, i_param: float) -> tuple:
@@ -444,7 +444,7 @@ class Curve2D(Geometry2D):
         End Function
         """
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object, i_param])
 
     def is_periodic(self) -> bool:
