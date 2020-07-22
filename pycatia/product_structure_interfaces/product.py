@@ -870,6 +870,25 @@ class Product(AnyObject):
 
         return self.product.Products.Count
 
+    @staticmethod
+    def generate_ALLCATPart(product: 'Product') -> 'Document':
+        """
+
+        Generate an ALLCATPart (CATPart) from CATProduct.
+
+        :param Product product:
+        :return: Document
+        :rtype: Document
+        """
+
+        from pycatia.in_interfaces.document import Document
+
+        part = product.com_object.GetItem("DECProductToPart")
+        part.Run()
+        part = part.GetResult()
+
+        return Document(part)
+
     def get_active_shape_name(self):
         """
         .. note::
