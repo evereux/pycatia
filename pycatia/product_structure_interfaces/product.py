@@ -16,10 +16,10 @@ from pycatia.in_interfaces.position import Position
 from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.parameters import Parameters
 from pycatia.knowledge_interfaces.relations import Relations
+from pycatia.mec_mod_interfaces.constraints import Constraints
 from pycatia.product_structure_interfaces.analyze import Analyze
 from pycatia.product_structure_interfaces.publications import Publications
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.system_interfaces.collection import Collection
 
 
 class Product(AnyObject):
@@ -718,7 +718,7 @@ class Product(AnyObject):
             f"Is CATPart:            {self.is_catpart()}"
         )
 
-    def connections(self, i_connections_type=None):
+    def constraints(self) -> Constraints:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -741,7 +741,7 @@ class Product(AnyObject):
         :param str i_connections_type:
         :return: Collection
         """
-        return Collection(self.product.Connections(i_connections_type))
+        return Constraints(self.product.Connections("CATIAConstraints"))
 
     def create_reference_from_name(self, i_label: str) -> Reference:
         """
