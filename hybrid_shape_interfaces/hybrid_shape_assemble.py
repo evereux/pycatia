@@ -123,7 +123,7 @@ class HybridShapeAssemble(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_sub_element(self, i_sub_element: Reference) -> None:
@@ -159,7 +159,7 @@ class HybridShapeAssemble(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def append_federated_element(self, i_element: Reference) -> None:
@@ -196,7 +196,7 @@ class HybridShapeAssemble(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_angular_tolerance(self) -> float:
@@ -606,7 +606,7 @@ class HybridShapeAssemble(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_angular_tolerance(self, i_value: float) -> None:
@@ -659,7 +659,7 @@ class HybridShapeAssemble(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_connex(self, i_connex: bool) -> None:
@@ -692,7 +692,7 @@ class HybridShapeAssemble(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_deviation(self, ideviation: float) -> None:
@@ -764,7 +764,7 @@ class HybridShapeAssemble(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_simplify(self, i_simplify: bool) -> None:
@@ -797,7 +797,7 @@ class HybridShapeAssemble(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_suppress_mode(self, i_suppress_mode: bool) -> None:
@@ -830,7 +830,7 @@ class HybridShapeAssemble(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_tangency_continuity(self, i_tangency_continuity: bool) -> None:
@@ -863,7 +863,7 @@ class HybridShapeAssemble(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

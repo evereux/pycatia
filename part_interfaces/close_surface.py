@@ -270,7 +270,7 @@ class CloseSurface(Pattern):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_rotation_center(self, io_rotation_center):
@@ -315,7 +315,7 @@ class CloseSurface(Pattern):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_instance_angular_spacing(self, i_instance_number, i_angular_spacing):
@@ -387,7 +387,7 @@ class CloseSurface(Pattern):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_rotation_center(self, i_rotation_center):
@@ -426,7 +426,7 @@ class CloseSurface(Pattern):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_unequal_instance_number(self, i_instance_number):

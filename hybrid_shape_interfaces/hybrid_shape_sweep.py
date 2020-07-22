@@ -150,7 +150,7 @@ class HybridShapeSweep(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_fill_points(self, i_element1: Reference, i_element2: Reference) -> None:
@@ -189,7 +189,7 @@ class HybridShapeSweep(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_cut_point(self, i_rank: int) -> Reference:

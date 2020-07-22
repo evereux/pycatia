@@ -806,7 +806,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_longitudinal_relimiters(self, op_ia_elem_a: Reference, op_ia_elem_b: Reference) -> None:
@@ -842,7 +842,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_nb_angle(self, o_ang: int) -> None:
@@ -1100,7 +1100,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def is_sketch_axis_used_as_default(self, o_boolean: bool) -> None:
@@ -1133,7 +1133,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def remove_angle(self) -> None:
@@ -1235,7 +1235,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_guide_deviation(self, i_length: float) -> None:
@@ -1287,7 +1287,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_pos_angle(self, ii: int, elem: float) -> None:
@@ -1387,7 +1387,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_pos_point(self, ii: int, elem: Reference) -> None:
@@ -1431,7 +1431,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_pos_swap_axes(self, ii: int, elem: int) -> None:
@@ -1516,7 +1516,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_smooth_angle_threshold(self, i_angle: float) -> None:
@@ -1564,7 +1564,7 @@ class HybridShapeSweepExplicit(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

@@ -220,7 +220,7 @@ class VarRadEdgeFillet(EdgeFillet):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_imposed_vertex(self, i_vertex: Reference, i_radius: float) -> None:
@@ -266,7 +266,7 @@ class VarRadEdgeFillet(EdgeFillet):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def imposed_vertex_radius(self, i_imposed_vertex: Reference) -> Length:
@@ -338,7 +338,7 @@ class VarRadEdgeFillet(EdgeFillet):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def withdraw_imposed_vertex(self, i_vertex: Reference) -> None:
@@ -379,7 +379,7 @@ class VarRadEdgeFillet(EdgeFillet):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

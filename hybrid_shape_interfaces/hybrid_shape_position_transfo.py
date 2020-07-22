@@ -360,7 +360,7 @@ class HybridShapePositionTransfo(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_pos_coord(self, i_i: int, i_coordinate: Length) -> None:
@@ -400,7 +400,7 @@ class HybridShapePositionTransfo(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_pos_point(self, i_i: int, i_elem: Reference) -> None:
@@ -440,7 +440,7 @@ class HybridShapePositionTransfo(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_pos_swap_axes(self, ii: int, i_inversion: int) -> None:
@@ -515,7 +515,7 @@ class HybridShapePositionTransfo(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

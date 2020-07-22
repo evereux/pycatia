@@ -248,7 +248,7 @@ class Measurable(AnyObject):
         End Function
         '''
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         result = system_service.evaluate(vba_code, 0, vba_function_name,
                                          [self.measurable])
 
@@ -294,7 +294,7 @@ class Measurable(AnyObject):
                 {vba_function_name} = Components
             End Function
             '''
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         result = system_service.evaluate(vba_code, 0, vba_function_name, [self.measurable])
 
         return result
@@ -331,7 +331,7 @@ class Measurable(AnyObject):
         End Function
         '''
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         result = system_service.evaluate(vba_code, 0, vba_function_name, [self.measurable])
 
         return result
@@ -368,7 +368,7 @@ class Measurable(AnyObject):
         End Function
         '''
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         result = system_service.evaluate(vba_code, 0, vba_function_name, [self.measurable])
 
         return result
@@ -406,7 +406,7 @@ class Measurable(AnyObject):
         End Function
         '''
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         result = system_service.evaluate(vba_code, 0, vba_function_name, [self.measurable])
 
         return result
@@ -484,7 +484,7 @@ class Measurable(AnyObject):
         End Function
         '''
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.measurable, i_measured_item.com_object])
 
     def get_plane(self):
@@ -525,7 +525,7 @@ class Measurable(AnyObject):
         End Function
         '''
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.measurable])
 
     def get_point(self):
@@ -559,7 +559,7 @@ class Measurable(AnyObject):
         End Function
         '''
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.measurable])
 
     def get_points_on_axis(self):
@@ -601,7 +601,7 @@ class Measurable(AnyObject):
         End Function
         '''
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.measurable])
 
     def get_points_on_curve(self):
@@ -642,7 +642,7 @@ class Measurable(AnyObject):
         End Function
         '''
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.measurable])
 
     def __repr__(self):

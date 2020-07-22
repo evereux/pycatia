@@ -588,7 +588,7 @@ class HybridShapeExtrapol(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_boundary(self, i_pos: int, i_boundary: Reference) -> None:
@@ -617,7 +617,7 @@ class HybridShapeExtrapol(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_continuity_type(self, i_pos: int, i_lim: int) -> None:
@@ -660,7 +660,7 @@ class HybridShapeExtrapol(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_length(self, i_pos: int, i_length: Length) -> None:
@@ -691,7 +691,7 @@ class HybridShapeExtrapol(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_length_d(self, i_pos: int, i_length: float) -> None:

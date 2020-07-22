@@ -412,7 +412,7 @@ class HybridShapeConic(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_intermediate_tangent_direction_flag(self, i_index_point: int, o_orientation: int) -> None:
@@ -578,7 +578,7 @@ class HybridShapeConic(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_intermediate_tangent(self, i_index_point: int, i_tgt_dir: HybridShapeDirection) -> None:
@@ -633,7 +633,7 @@ class HybridShapeConic(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_intermediate_tangent_direction_flag(self, i_index_point: int, i_orientation: int) -> None:
@@ -735,7 +735,7 @@ class HybridShapeConic(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_start_and_end_tangents_plus_passing_point(self, i_start_tgt: HybridShapeDirection,
@@ -798,7 +798,7 @@ class HybridShapeConic(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_start_tangent_direction_flag(self, i_orientation: int) -> None:
@@ -889,7 +889,7 @@ class HybridShapeConic(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_tangent_intersect_point_plus_passing_point(self, i_tgt_int: Reference, i_passing_pt: Reference) -> None:
@@ -949,7 +949,7 @@ class HybridShapeConic(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_three_intermediate_passing_points(self, i_pass_pt1: Reference, i_pass_pt2: Reference,
@@ -1010,7 +1010,7 @@ class HybridShapeConic(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_two_intermediate_passing_points_plus_one_tangent(self, i_pass_pt1: Reference, i_pass_pt2: Reference,
@@ -1084,7 +1084,7 @@ class HybridShapeConic(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def switch_end_tangent_direction(self) -> None:

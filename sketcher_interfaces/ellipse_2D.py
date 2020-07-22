@@ -134,7 +134,7 @@ class Ellipse2D(Curve2D):
         End Function
         """
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_major_axis(self) -> tuple:
@@ -166,7 +166,7 @@ class Ellipse2D(Curve2D):
         End Function
         """
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_minor_axis(self) -> tuple:
@@ -198,7 +198,7 @@ class Ellipse2D(Curve2D):
         End Function
         """
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_data(self,

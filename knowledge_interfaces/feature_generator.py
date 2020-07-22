@@ -111,7 +111,7 @@ class FeatureGenerator(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def load_script_from_file_path(self, i_file_path: str) -> None:

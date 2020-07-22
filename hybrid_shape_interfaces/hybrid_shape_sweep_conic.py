@@ -424,7 +424,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_nb_guides(self, o_num: int) -> None:
@@ -511,7 +511,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_tangency(self, op_ia_elem: Reference, op_ia_angle_start: Angle, op_ia_angle_end: Angle, o_law_type: int,
@@ -556,7 +556,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_tangency_angle_law_inversion(self, i_index: int, o_inversion: int) -> None:
@@ -612,7 +612,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def remove_guide(self, i_index: int) -> None:
@@ -708,7 +708,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_parameter_law(self, i_param_start: float, i_param_end: float, i_law_type: int) -> None:
@@ -781,7 +781,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_smooth_angle_threshold(self, i_angle: float) -> None:
@@ -843,7 +843,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_tangency_angle_law_inversion(self, i_index: int, i_inversion: int) -> None:
@@ -899,7 +899,7 @@ class HybridShapeSweepConic(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

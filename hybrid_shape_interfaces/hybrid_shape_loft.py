@@ -513,7 +513,7 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_guide_with_tangent(self, i_guide: Reference, i_tangent: Reference) -> None:
@@ -559,7 +559,7 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_section_to_loft(self, i_crv: Reference, i_ori: int, i_point: Reference) -> None:
@@ -601,7 +601,7 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_area_law_tolerance_parameter(self) -> Length:
@@ -654,7 +654,7 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_guide(self, i_pos: int, o_guide: Reference, o_guide_tangent: Reference) -> None:
@@ -698,7 +698,7 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_nb_of_guides(self) -> int:
@@ -769,7 +769,7 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_spine(self, o_spine_type: int, o_spine: Reference) -> None:
@@ -808,7 +808,7 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_start_and_end_section_tangent(self, o_start_section_tangent: Reference,
@@ -850,7 +850,7 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def insert_coupling(self, i_position: int) -> None:
@@ -924,7 +924,7 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def insert_section_to_loft(self, i_type: bool, i_crv: Reference, i_ori: int, i_point: Reference,
@@ -978,7 +978,7 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def modify_guide_curve(self, i_guide: Reference, i_new_guide: Reference) -> None:
@@ -1016,7 +1016,7 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def modify_section_curve(self, i_section: Reference, i_new_section: Reference, o_curve_section: Reference,
@@ -1078,7 +1078,7 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def modify_section_orient(self, i_section: Reference, i_orient: int) -> None:
@@ -1120,7 +1120,7 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def remove_face_for_closing(self, i_section: Reference) -> None:
@@ -1154,7 +1154,7 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def remove_guide(self, i_guide: Reference) -> None:
@@ -1192,7 +1192,7 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def remove_guide_tangent(self, i_guide: Reference) -> None:
@@ -1228,7 +1228,7 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def remove_section(self, i_section: Reference) -> None:
@@ -1266,7 +1266,7 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def remove_section_point(self, i_section: Reference) -> None:
@@ -1302,7 +1302,7 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def remove_section_tangent(self, i_section: Reference) -> None:
@@ -1339,7 +1339,7 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_end_face_for_closing(self, i_face: Reference) -> None:
@@ -1376,7 +1376,7 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_end_section_tangent(self, i_tangent_section: Reference) -> None:
@@ -1415,7 +1415,7 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_spine(self, i_spine: Reference) -> None:
@@ -1452,7 +1452,7 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_start_face_for_closing(self, i_face: Reference) -> None:
@@ -1489,7 +1489,7 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_start_section_tangent(self, i_tangent_section: Reference) -> None:
@@ -1528,7 +1528,7 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

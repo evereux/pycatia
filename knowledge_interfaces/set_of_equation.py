@@ -138,7 +138,7 @@ class SetOfEquation(Relation):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_parameter_as_output(self, i_parameter: 'Parameter') -> None:
@@ -174,7 +174,7 @@ class SetOfEquation(Relation):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_precision(self, i_eps: float) -> None:
@@ -225,7 +225,7 @@ class SetOfEquation(Relation):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def use_symbolc_transformations(self, i_gauss: bool) -> None:
@@ -256,7 +256,7 @@ class SetOfEquation(Relation):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
