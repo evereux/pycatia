@@ -1148,7 +1148,8 @@ class Selection(AnyObject):
         try:
             return self.selection.Search(i_string_bstr)
         except com_error:
-            raise CATIAApplicationException('The method Search failed. Try changing your search string.')
+            raise CATIAApplicationException(
+                f'The method Search failed with search string "{i_string_bstr}". Try changing your search string.')
 
     def select_element2(self, i_filter_type: tuple, i_message: str,
                         i_object_selection_before_command_use_possibility: bool) -> str:
