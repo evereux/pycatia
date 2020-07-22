@@ -35,7 +35,7 @@ class ParameterSet(AnyObject):
         self.parameter_set = com_object
 
     @property
-    def all_parameters(self) -> Parameters:
+    def all_parameters(self) -> list:
         """
         .. note::
             CAA V5 Visual Basic help

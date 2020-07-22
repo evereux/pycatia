@@ -1,7 +1,8 @@
 #! /usr/bin/python3.6
 
+from pycatia.in_interfaces.document import Document
 
-def create_spa_workbench(document):
+def create_spa_workbench(document: Document):
     """
 
     :param document:

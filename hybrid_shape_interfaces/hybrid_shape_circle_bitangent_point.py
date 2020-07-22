@@ -316,7 +316,7 @@ class HybridShapeCircleBitangentPoint(HybridShapeCircle):
     @support.setter
     def support(self, reference_support: Reference):
         """
-        :param Reference value:
+        :param Reference reference_support:
         """
 
         self.hybrid_shape_circle_bitangent_point.Support = reference_support.com_object

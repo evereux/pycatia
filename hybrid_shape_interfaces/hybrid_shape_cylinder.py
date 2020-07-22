@@ -16,7 +16,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeCylinder(HybridShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -76,7 +75,7 @@ class HybridShapeCylinder(HybridShape):
     @center.setter
     def center(self, reference_center: Reference):
         """
-        :param Reference value:
+        :param Reference reference_center:
         """
 
         self.hybrid_shape_cylinder.Center = reference_center.com_object
@@ -284,4 +283,4 @@ class HybridShapeCylinder(HybridShape):
         return self.hybrid_shape_cylinder.InvertOrientation()
 
     def __repr__(self):
-        return f'HybridShapeCylinder(name="{ self.name }")'
+        return f'HybridShapeCylinder(name="{self.name}")'

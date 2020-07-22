@@ -99,7 +99,7 @@ class HybridShapeLinePtDir(Line):
     @dir.setter
     def dir(self, direction: HybridShapeDirection):
         """
-        :param HybridShapeDirection value:
+        :param HybridShapeDirection direction:
         """
 
         self.hybrid_shape_line_pt_dir.Dir = direction.com_object

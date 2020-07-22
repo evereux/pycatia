@@ -15,7 +15,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeCombine(HybridShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -177,7 +176,7 @@ class HybridShapeCombine(HybridShape):
         return Reference(self.hybrid_shape_combine.Elem2)
 
     @elem2.setter
-    def elem2(self, value: Reference):
+    def elem2(self, reference_element: Reference):
         """
         :param Reference reference_element:
         """
@@ -265,4 +264,4 @@ class HybridShapeCombine(HybridShape):
         self.hybrid_shape_combine.SolutionTypeCombine = value
 
     def __repr__(self):
-        return f'HybridShapeCombine(name="{ self.name }")'
+        return f'HybridShapeCombine(name="{self.name}")'

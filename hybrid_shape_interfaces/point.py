@@ -28,9 +28,9 @@ class Point(HybridShape):
                 | 
                 | Represents the hybrid shape Point feature object.
                 | Role: Declare hybrid shape Point root feature object. All interfaces for
-                | different type of Point derives HybridShapepoint.
+                | different type of Point derives HybridShapePoint.
                 | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapepoint
+                | Use the CATIAHybridShapeFactory to create a HybridShapePoint
                 | objects.
                 | 
                 | See also:

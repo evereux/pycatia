@@ -662,7 +662,14 @@ class DrawingDimension(AnyObject):
         """
         return DrawingDimLine(self.drawing_dimension.GetDimLine())
 
-    def get_tolerances(self, o_tol_type: int, o_tol_name: str, o_up_tol: str, o_low_tol: str, od_up_tol: float, od_low_tol: float, o_display_mode: int) -> None:
+    def get_tolerances(self,
+                       o_tol_type: int,
+                       o_tol_name: str,
+                       o_up_tol: str,
+                       o_low_tol: str,
+                       od_up_tol: float,
+                       od_low_tol: float,
+                       o_display_mode: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -846,7 +853,14 @@ class DrawingDimension(AnyObject):
         """
         return self.drawing_dimension.SetClip(x, y, i_kept_side)
 
-    def set_tolerances(self, i_tol_type: int, itol_name: str, i_up_tol: str, i_low_tol: str, id_up_tol: float, id_low_tol: float, display_mode: int) -> None:
+    def set_tolerances(self,
+                       i_tol_type: int,
+                       itol_name: str,
+                       i_up_tol: str,
+                       i_low_tol: str,
+                       id_up_tol: float,
+                       id_low_tol: float,
+                       display_mode: int) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))

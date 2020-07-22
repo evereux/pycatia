@@ -452,7 +452,9 @@ class KnowledgeSheetSettingAtt(SettingController):
         """
         return self.knowledge_sheet_setting_att.GetParameterTreeViewWithValueInfo(io_admin_level, io_locked)
 
-    def get_relations_update_in_part_context_evaluate_during_update_info(self, io_admin_level: str, io_locked: str) -> bool:
+    def get_relations_update_in_part_context_evaluate_during_update_info(self,
+                                                                         io_admin_level: str,
+                                                                         io_locked: str) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -491,7 +493,9 @@ class KnowledgeSheetSettingAtt(SettingController):
         return self.knowledge_sheet_setting_att.GetRelationsUpdateInPartContextEvaluateDuringUpdateInfo(io_admin_level,
                                                                                                         io_locked)
 
-    def get_relations_update_in_part_context_synchronous_relations_info(self, io_admin_level: str, io_locked: str) -> bool:
+    def get_relations_update_in_part_context_synchronous_relations_info(self,
+                                                                        io_admin_level: str,
+                                                                        io_locked: str) -> bool:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
