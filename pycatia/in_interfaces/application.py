@@ -979,112 +979,6 @@ class Application(AnyObject):
         """
         return self.com_object.EnableNewUndoRedoTransaction()
 
-    def execute_script(
-            self, library_name, library_type, program_name, function_name, items
-    ):
-        """
-
-        .. admonition:: Note
-
-            CAA V5 Visual Basic help
-
-            | Func ExecuteScript( CATBSTR  iLibraryName,
-            |   CatScriptLibraryType  iType,
-            |   CATBSTR  iProgramName,
-            |   CATBSTR  iFunctionName,
-            |   CATSafeArrayVariant  iParameters) As CATVariant
-            |
-            | Executes a scripted function.
-            | Parameters:
-            |   iLibraryName
-            |       The library in which the script is contained
-            |   iLibraryType
-            |       The type of the library
-            |   iProgramName
-            |       The name of the program in the library
-            |   iFunctionName
-            |       The name of the function to invoke
-            |   iParameters
-            |       An array of parameters for the function
-            |   Result
-            |       The value returned by the function (if any)
-            |
-            | Example:
-            | This example executes the function CATMain in the program Macro1.catvbs contained by Part1.CATPart
-            |   Dim params()
-            |   CATIA.SystemService.ExecuteScript"Part1.CATPart",
-            |       catScriptLibraryTypeDocument,
-            |       "Macro1.catvbs",
-            |       "CATMain",
-            |       params
-
-        :param str library_name: Full path to location of catia script.
-        :param int library_type:  An integer representing the library type selection from list()
-         CatScriptLibraryType[catScriptLibraryTypeDocument, catScriptLibraryTypeDirectory,
-         catScriptLibraryTypeVBAProject]
-        :param str program_name: file name of script.
-        :param str function_name: Name of function to call within script.
-        :param list items: List of items to pass to script.
-        :return:
-        """
-
-        run = self.com_object.SystemService.ExecuteScript(
-            library_name, library_type, program_name, function_name, items
-        )
-
-        return run
-
-    def evaluate(
-            self, vba_code, function_name, measurable_items, cat_script_language=0
-    ):
-        """
-
-        .. admonition:: Note
-
-            CATIA V5 Visual Basic help
-
-            | Func Evaluate( CATBSTR  iScriptText,
-            |       CATScriptLanguage  iLanguage,
-            |       CATBSTR  iFunctionName,
-            |       CATSafeArrayVariant  iParameters) As CATVariant
-            |
-            | Evaluates a scripted function.
-            | Parameters:
-            |   iScriptText
-            | The program text
-            |   iLanguage
-            | The language the program is written in
-            |   iFunctionName
-            | The name of the function to invoke
-            |   iParameters
-            | An array of parameters for the function
-            |   Result
-            | The value returned by the function (if any)
-            | Example:
-            | This example executes the function CATMain from the CodeToEvaluate string
-            |   Dim params()
-            |   Dim codeToEvaluate
-            |   CodeToEvaluate = "Sub CATMain()" & vbNewLine & _
-            |                   "MsgBox " & chr(34) & "Hello World" & chr(34) & vbNewLine & _
-            |                   "End Sub"
-            |   CATIA.SystemService.Evaluate CodeToEvaluate, CATVBScriptLanguage, "CATMain", params
-
-
-        :param str vba_code: String containing script to run.
-        :param str function_name: Name of function within vba script.
-        :param list measurable_items: list of items to pass to script.
-        :param int cat_script_language: An integer representing the language selection from list()
-         [CATVBScriptLanguage, CATVBALanguage, CATBasicScriptLanguage, CATJavaLanguage,
-         CATJScriptLanguage]
-        :return:
-        """
-
-        run = self.com_object.SystemService.Evaluate(
-            vba_code, cat_script_language, function_name, measurable_items,
-        )
-
-        return run
-
     def file_selection_box(self, i_title: str, i_extension: str, i_mode: int) -> str:
         """
         .. admonition:: Note
@@ -1117,7 +1011,7 @@ class Application(AnyObject):
             |                 path of the selected file.
             |
             |                  filepath = CATIA.FileSelectionBox("Select a text file",
-            |                                                     "\*.txt", CatFileSelectionModeOpen)
+            |                                                     "\\*.txt", CatFileSelectionModeOpen)
             |                  CATIA.SystemServices.Print "The selected file is " &
             |                  filepath
 
