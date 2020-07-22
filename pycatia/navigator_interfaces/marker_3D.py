@@ -390,7 +390,7 @@ class Marker3D(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def item_object(self, i_index: cat_variant) -> AnyObject:
@@ -546,7 +546,7 @@ class Marker3D(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def update(self) -> None:

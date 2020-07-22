@@ -125,7 +125,7 @@ class ConstRadEdgeFillet(EdgeFillet):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def withdraw_object_to_fillet(self, i_object_to_withdraw: Reference) -> None:
@@ -170,7 +170,7 @@ class ConstRadEdgeFillet(EdgeFillet):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

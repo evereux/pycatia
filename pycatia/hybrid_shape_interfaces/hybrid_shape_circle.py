@@ -211,7 +211,7 @@ class HybridShapeCircle(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_center(self, o_center_x: float, o_center_y: float, o_center_z: float) -> None:
@@ -279,7 +279,7 @@ class HybridShapeCircle(HybridShape):
         End Function
         """
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_free_radius(self) -> float:

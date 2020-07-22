@@ -314,7 +314,7 @@ class RectPattern(Pattern):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_second_direction(self, io_second_direction: tuple) -> None:
@@ -359,7 +359,7 @@ class RectPattern(Pattern):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_first_direction(self, i_first_direction: Reference) -> None:
@@ -407,7 +407,7 @@ class RectPattern(Pattern):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_instance_spacing(self, i_instance_number: int, i_spacing: float, i_direction: int) -> None:
@@ -486,7 +486,7 @@ class RectPattern(Pattern):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_unequal_instance_number(self, i_instance_number: int, i_direction: int) -> None:

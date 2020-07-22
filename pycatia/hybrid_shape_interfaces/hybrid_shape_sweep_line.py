@@ -694,7 +694,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_angle(self, i_i: int) -> Angle:
@@ -767,7 +767,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_choice_nb_surfaces(self, o_surf_ori1: int, o_surf_ori2: int, o_surf_coupl_ori1: int, o_surf_coupl_ori2: int,
@@ -899,7 +899,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_draft_angle_definition_locations_nb(self, o_count: int) -> None:
@@ -972,7 +972,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_first_length_law(self, o_length1: Length, o_length2: Length, o_law_type: int) -> None:
@@ -1022,7 +1022,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_length(self, i_i: int) -> Length:
@@ -1113,7 +1113,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_nb_angle(self, o_ang: int) -> None:
@@ -1240,7 +1240,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_second_length_definition_type(self, o_second_type: int, op_ia_elem: Reference) -> None:
@@ -1294,7 +1294,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_second_length_law(self, o_length1: Length, o_length2: Length, o_law_type: int) -> None:
@@ -1344,7 +1344,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def insert_draft_angle_definition_location(self, i_elem: Reference, i_angle: Angle, i_pos: int) -> None:
@@ -1388,7 +1388,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def remove_all_draft_angle_definition_locations(self) -> None:
@@ -1672,7 +1672,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_first_length_law(self, i_length1: float, i_length2: float, i_law_type: int) -> None:
@@ -1818,7 +1818,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_relimiters(self, ip_ia_elem1: Reference, ip_orient1: int, ip_ia_elem2: Reference, ip_orient2: int) -> None:
@@ -1869,7 +1869,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_second_length_definition_type(self, i_second_type: int, ip_ia_elem: Reference) -> None:
@@ -1923,7 +1923,7 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_second_length_law(self, i_length1: float, i_length2: float, i_law_type: int) -> None:

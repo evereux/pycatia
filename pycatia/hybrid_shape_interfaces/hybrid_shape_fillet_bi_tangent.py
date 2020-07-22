@@ -478,7 +478,7 @@ class HybridShapeFilletBiTangent(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_face_to_keep(self, i_pos: int) -> Reference:
@@ -571,7 +571,7 @@ class HybridShapeFilletBiTangent(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

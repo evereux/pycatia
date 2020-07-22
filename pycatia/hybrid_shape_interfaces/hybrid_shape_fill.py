@@ -308,7 +308,7 @@ class HybridShapeFill(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_support_at_bound(self, i_boundary: Reference, i_support: Reference) -> None:
@@ -353,7 +353,7 @@ class HybridShapeFill(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def append_constraint(self, i_constraint: Reference) -> None:
@@ -394,7 +394,7 @@ class HybridShapeFill(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_bound_at_position(self, i_pos: int) -> Reference:
@@ -635,7 +635,7 @@ class HybridShapeFill(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def remove_all_bound(self) -> None:
@@ -790,7 +790,7 @@ class HybridShapeFill(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def replace_constraint(self, i_pos: int, i_constraint: Reference) -> None:
@@ -835,7 +835,7 @@ class HybridShapeFill(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def replace_support_at_position(self, i_support: Reference, i_pos: int) -> None:
@@ -879,7 +879,7 @@ class HybridShapeFill(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_boundary_continuity(self, i_continuity: int, i_pos: int) -> None:

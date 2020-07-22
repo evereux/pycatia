@@ -301,7 +301,7 @@ class HybridShapeIntegratedLaw(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_point_and_param(self, i_pos: int, o_point: Reference, o_param: Reference) -> None:
@@ -345,7 +345,7 @@ class HybridShapeIntegratedLaw(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_size(self) -> int:
@@ -412,7 +412,7 @@ class HybridShapeIntegratedLaw(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_end_param(self, i_end_param: int) -> None:

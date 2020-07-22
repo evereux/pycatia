@@ -506,7 +506,7 @@ class Constraint(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def is_inactive(self) -> bool:
@@ -573,7 +573,7 @@ class Constraint(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_constraint_visu_location(self, i_new_x: float, i_new_y: float, i_new_z: float) -> None:

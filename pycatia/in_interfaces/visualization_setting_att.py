@@ -3269,7 +3269,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_accurate_picking_window_size_lock(self, i_locked: bool) -> None:
@@ -3300,7 +3300,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_all_z_buffer_element_mode_lock(self, i_locked: bool) -> None:
@@ -3331,7 +3331,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_ambient_activation_lock(self, i_locked: bool) -> None:
@@ -3361,7 +3361,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_anti_aliasing_mode_lock(self, i_locked: bool) -> None:
@@ -3391,7 +3391,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_anti_aliasing_offset_lock(self, i_locked: bool) -> None:
@@ -3421,7 +3421,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_auxiliary_drill_viewer_lock(self, i_locked: bool) -> None:
@@ -3452,7 +3452,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_back_face_culling_mode_lock(self, i_locked: bool) -> None:
@@ -3483,7 +3483,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_background_rgb(self, i_r: int, i_g: int, i_b: int) -> None:
@@ -3531,7 +3531,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_border_edges_mode_lock(self, i_locked: bool) -> None:
@@ -3561,7 +3561,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_border_edges_rgb(self, i_r: int, i_g: int, i_b: int) -> None:
@@ -3609,7 +3609,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_border_edges_thickness_lock(self, i_locked: bool) -> None:
@@ -3640,7 +3640,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_bounding_box_selection_mode_lock(self, i_locked: bool) -> None:
@@ -3671,7 +3671,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_color_background_mode_lock(self, i_locked: bool) -> None:
@@ -3702,7 +3702,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_default_diffuse_ambient_coefficient_lock(self, i_locked: bool) -> None:
@@ -3734,7 +3734,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_default_shininess_lock(self, i_locked: bool) -> None:
@@ -3764,7 +3764,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_default_specular_coefficient_lock(self, i_locked: bool) -> None:
@@ -3795,7 +3795,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_display_current_scale_lock(self, i_locked: bool) -> None:
@@ -3825,7 +3825,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_display_drill_list_lock(self, i_locked: bool) -> None:
@@ -3855,7 +3855,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_display_immersive_drill_viewer_lock(self, i_locked: bool) -> None:
@@ -3886,7 +3886,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_dynamic_cull_lock(self, i_locked: bool) -> None:
@@ -3916,7 +3916,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_dynamic_lod_lock(self, i_locked: bool) -> None:
@@ -3946,7 +3946,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_face_hl_drill_lock(self, i_locked: bool) -> None:
@@ -3976,7 +3976,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_fly_collision_mode_lock(self, i_locked: bool) -> None:
@@ -4006,7 +4006,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_fly_collision_sphere_radius_lock(self, i_locked: bool) -> None:
@@ -4037,7 +4037,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_fly_collision_type_lock(self, i_locked: bool) -> None:
@@ -4067,7 +4067,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_fly_sensitivity_lock(self, i_locked: bool) -> None:
@@ -4097,7 +4097,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_fly_speed_lock(self, i_locked: bool) -> None:
@@ -4127,7 +4127,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_fly_speed_mode_lock(self, i_locked: bool) -> None:
@@ -4157,7 +4157,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_follow_ground_altitude_lock(self, i_locked: bool) -> None:
@@ -4188,7 +4188,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_follow_ground_mode_lock(self, i_locked: bool) -> None:
@@ -4218,7 +4218,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_full_scene_anti_aliasing_mode_lock(self, i_locked: bool) -> None:
@@ -4248,7 +4248,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_gravity_axis_lock(self, i_locked: bool) -> None:
@@ -4278,7 +4278,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_gravity_lock(self, i_locked: bool) -> None:
@@ -4308,7 +4308,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_halo_mode_lock(self, i_locked: bool) -> None:
@@ -4338,7 +4338,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_handles_rgb(self, i_r: int, i_g: int, i_b: int) -> None:
@@ -4386,7 +4386,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_isopar_generation_mode_lock(self, i_locked: bool) -> None:
@@ -4417,7 +4417,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_keyboard_rotation_angle_value_lock(self, i_locked: bool) -> None:
@@ -4448,7 +4448,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_light_viewer_mode_lock(self, i_locked: bool) -> None:
@@ -4478,7 +4478,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_lineic_cgr_mode_lock(self, i_locked: bool) -> None:
@@ -4508,7 +4508,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_max_selection_move_lock(self, i_locked: bool) -> None:
@@ -4538,7 +4538,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_minimum_fps_mode_lock(self, i_locked: bool) -> None:
@@ -4568,7 +4568,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_minimum_space_fps_mode_lock(self, i_locked: bool) -> None:
@@ -4599,7 +4599,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_mouse_double_clic_delay_lock(self, i_locked: bool) -> None:
@@ -4630,7 +4630,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_mouse_speed_value_lock(self, i_locked: bool) -> None:
@@ -4660,7 +4660,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_nb_isopars_lock(self, i_locked: bool) -> None:
@@ -4690,7 +4690,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_no_show_background_rgb(self, i_r: int, i_g: int, i_b: int) -> None:
@@ -4768,7 +4768,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_no_z_buffer_selection_mode_lock(self, i_locked: bool) -> None:
@@ -4799,7 +4799,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_number_of_minimum_fps_lock(self, i_locked: bool) -> None:
@@ -4829,7 +4829,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_number_of_minimum_space_fps_lock(self, i_locked: bool) -> None:
@@ -4860,7 +4860,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_occlusion_culling_mode_lock(self, i_locked: bool) -> None:
@@ -4891,7 +4891,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_opaque_faces_lock(self, i_locked: bool) -> None:
@@ -4921,7 +4921,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_other_selection_timeout_activity_lock(self, i_locked: bool) -> None:
@@ -4952,7 +4952,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_other_selection_timeout_lock(self, i_locked: bool) -> None:
@@ -4983,7 +4983,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_picking_window_size_lock(self, i_locked: bool) -> None:
@@ -5013,7 +5013,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_pre_selection_mode_lock(self, i_locked: bool) -> None:
@@ -5043,7 +5043,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_preselected_element_linetype_lock(self, i_locked: bool) -> None:
@@ -5074,7 +5074,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_preselected_element_rgb(self, i_r: int, i_g: int, i_b: int) -> None:
@@ -5123,7 +5123,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_rotation_sphere_mode_lock(self, i_locked: bool) -> None:
@@ -5153,7 +5153,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_selected_edge_rgb(self, i_r: int, i_g: int, i_b: int) -> None:
@@ -5201,7 +5201,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_selected_element_rgb(self, i_r: int, i_g: int, i_b: int) -> None:
@@ -5249,7 +5249,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_shader_mode_lock(self, i_locked: bool) -> None:
@@ -5279,7 +5279,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_static_cull_lock(self, i_locked: bool) -> None:
@@ -5309,7 +5309,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_static_lod_lock(self, i_locked: bool) -> None:
@@ -5339,7 +5339,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_stereo_mode_lock(self, i_locked: bool) -> None:
@@ -5369,7 +5369,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_transparency_mode_lock(self, i_locked: bool) -> None:
@@ -5399,7 +5399,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_two_side_lighting_mode_lock(self, i_locked: bool) -> None:
@@ -5430,7 +5430,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_under_intensified_rgb(self, i_r: int, i_g: int, i_b: int) -> None:
@@ -5479,7 +5479,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_update_needed_rgb(self, i_r: int, i_g: int, i_b: int) -> None:
@@ -5527,7 +5527,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_viewpoint_animation_mode_lock(self, i_locked: bool) -> None:
@@ -5558,7 +5558,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_viz2_d_accuracy_mode_lock(self, i_locked: bool) -> None:
@@ -5588,7 +5588,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_viz2_d_fixed_accuracy_lock(self, i_locked: bool) -> None:
@@ -5618,7 +5618,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_viz2_d_proportionnal_accuracy_lock(self, i_locked: bool) -> None:
@@ -5649,7 +5649,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_viz3_d_accuracy_mode_lock(self, i_locked: bool) -> None:
@@ -5679,7 +5679,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_viz3_d_curve_accuracy_lock(self, i_locked: bool) -> None:
@@ -5709,7 +5709,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_viz3_d_fixed_accuracy_lock(self, i_locked: bool) -> None:
@@ -5739,7 +5739,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_viz3_d_proportionnal_accuracy_lock(self, i_locked: bool) -> None:
@@ -5770,7 +5770,7 @@ class VisualizationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

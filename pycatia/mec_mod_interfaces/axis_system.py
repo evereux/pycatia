@@ -521,7 +521,7 @@ class AxisSystem(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_origin(self, o_origin: tuple) -> None:
@@ -565,7 +565,7 @@ class AxisSystem(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_vectors(self, o_vector_x: tuple, o_vector_y: tuple) -> None:
@@ -617,7 +617,7 @@ class AxisSystem(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_x_axis(self, o_x_axis: tuple) -> None:
@@ -661,7 +661,7 @@ class AxisSystem(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_y_axis(self, o_y_axis: tuple) -> None:
@@ -705,7 +705,7 @@ class AxisSystem(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_z_axis(self, o_z_axis: tuple) -> None:
@@ -749,7 +749,7 @@ class AxisSystem(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def put_origin(self, i_origin: tuple) -> None:
@@ -796,7 +796,7 @@ class AxisSystem(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def put_vectors(self, i_vector_x: tuple, i_vector_y: tuple) -> None:
@@ -854,7 +854,7 @@ class AxisSystem(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def put_x_axis(self, i_x_axis: tuple) -> None:
@@ -901,7 +901,7 @@ class AxisSystem(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def put_y_axis(self, i_y_axis: tuple) -> None:
@@ -948,7 +948,7 @@ class AxisSystem(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def put_z_axis(self, i_z_axis: tuple) -> None:
@@ -995,7 +995,7 @@ class AxisSystem(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

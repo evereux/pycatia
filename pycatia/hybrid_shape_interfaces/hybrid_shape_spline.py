@@ -80,7 +80,7 @@ class HybridShapeSpline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_point_with_constraint_explicit(self, ip_ia_point: Reference, ip_ia_dir_tangency: HybridShapeDirection,
@@ -142,7 +142,7 @@ class HybridShapeSpline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_point_with_constraint_from_curve(self, ip_ia_point: Reference, ip_ia_curve_cst: Reference,
@@ -196,7 +196,7 @@ class HybridShapeSpline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_closure(self) -> int:
@@ -387,7 +387,7 @@ class HybridShapeSpline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_point_constraint_from_curve(self, i_pos: int, op_ia_curve_cst: Reference, o_tangency_norm: float,
@@ -442,7 +442,7 @@ class HybridShapeSpline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_point_position(self, ip_ia_point: Reference) -> int:
@@ -709,7 +709,7 @@ class HybridShapeSpline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_closing(self, i_closing_type: int) -> None:
@@ -766,7 +766,7 @@ class HybridShapeSpline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_point_before(self, i_pos: int, ip_ia_point: Reference) -> None:
@@ -804,7 +804,7 @@ class HybridShapeSpline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_point_constraint_explicit(self, i_pos: int, ip_ia_dir_tangency: HybridShapeDirection,
@@ -865,7 +865,7 @@ class HybridShapeSpline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_point_constraint_from_curve(self, i_pos: int, ip_ia_curve_cst: Reference, i_tangency_norm: float,
@@ -920,7 +920,7 @@ class HybridShapeSpline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_spline_type(self, i_spline_type: int) -> None:
@@ -979,7 +979,7 @@ class HybridShapeSpline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

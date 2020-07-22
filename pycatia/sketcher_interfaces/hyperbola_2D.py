@@ -104,7 +104,7 @@ class Hyperbola2D(Curve2D):
         End Function
         """
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_center(self) -> tuple:
@@ -137,7 +137,7 @@ class Hyperbola2D(Curve2D):
         End Function
         """
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_data(self, i_center_x: float, i_center_y: float, i_axis_x: float, i_axis_y: float, i_major_radius: float,

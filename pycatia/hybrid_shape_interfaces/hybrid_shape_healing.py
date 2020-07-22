@@ -379,7 +379,7 @@ class HybridShapeHealing(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_edge_to_keep_sharp(self, i_edge: Reference) -> None:
@@ -420,7 +420,7 @@ class HybridShapeHealing(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_elements_to_freeze(self, i_element: Reference) -> None:
@@ -460,7 +460,7 @@ class HybridShapeHealing(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_body_to_heal(self, i_position: int) -> Reference:
@@ -669,7 +669,7 @@ class HybridShapeHealing(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_distance_objective(self, i_distance_objective: float) -> None:

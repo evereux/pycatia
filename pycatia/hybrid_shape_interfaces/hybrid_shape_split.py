@@ -414,7 +414,7 @@ class HybridShapeSplit(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_element_to_keep(self, i_element: Reference) -> None:
@@ -449,7 +449,7 @@ class HybridShapeSplit(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_element_to_remove(self, i_element: Reference) -> None:
@@ -484,7 +484,7 @@ class HybridShapeSplit(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_cutting_elem(self, i_rank: int) -> Reference:
@@ -713,7 +713,7 @@ class HybridShapeSplit(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def remove_element_to_keep(self, i_rank: int) -> None:

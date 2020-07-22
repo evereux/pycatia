@@ -66,7 +66,7 @@ class Line2D(Curve2D):
         End Function
         """
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_origin(self) -> tuple:
@@ -97,7 +97,7 @@ class Line2D(Curve2D):
         End Function
         """
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_data(self, i_x: float, i_y: float, i_x_direction: float, i_y_direction: float) -> None:

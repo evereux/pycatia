@@ -661,7 +661,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_longitudinal_relimiters(self, op_ia_elem1: Reference, op_ia_elem2: Reference) -> None:
@@ -700,7 +700,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_nb_angle(self, o_ang: int) -> None:
@@ -832,7 +832,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_second_angle_law(self, o_elem1: Angle, o_elem2: Angle, ol_law_type: int) -> None:
@@ -875,7 +875,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_tangency_choice_no(self, o_no: int, o_shell_ori: int, o_guide_ori: int) -> None:
@@ -1098,7 +1098,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_radius(self, i_i: int, i_radius: float) -> None:
@@ -1173,7 +1173,7 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_second_angle_law(self, i_elem1: float, i_elem2: float, il_law_type: int) -> None:

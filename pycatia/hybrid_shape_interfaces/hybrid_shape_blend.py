@@ -730,7 +730,7 @@ class HybridShapeBlend(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_border_mode(self, i_blend_limit: int, i_border: int) -> None:
@@ -835,7 +835,7 @@ class HybridShapeBlend(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_continuity(self, i_blend_limit: int, i_continuity: int) -> None:
@@ -925,7 +925,7 @@ class HybridShapeBlend(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_orientation(self, i_blend_limit: int, i_orientation: int) -> None:
@@ -1061,7 +1061,7 @@ class HybridShapeBlend(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_tension_in_double(self, i_blend_limit: int, i_tension_type: int, i_first_tension: float,

@@ -571,7 +571,7 @@ class KnowledgeSheetSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_design_tables_synchronization_lock(self, i_locked: bool) -> None:
@@ -612,7 +612,7 @@ class KnowledgeSheetSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_parameter_name_surrounded_by_the_symbol_lock(self, i_locked: bool) -> None:
@@ -654,7 +654,7 @@ class KnowledgeSheetSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_parameter_tree_view_with_formula_lock(self, i_locked: bool) -> None:
@@ -695,7 +695,7 @@ class KnowledgeSheetSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_parameter_tree_view_with_value_lock(self, i_locked: bool) -> None:
@@ -735,7 +735,7 @@ class KnowledgeSheetSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_relations_update_in_part_context_evaluate_during_update_lock(self, i_locked: bool) -> None:
@@ -777,7 +777,7 @@ class KnowledgeSheetSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_relations_update_in_part_context_synchronous_relations_lock(self, i_locked: bool) -> None:
@@ -818,7 +818,7 @@ class KnowledgeSheetSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

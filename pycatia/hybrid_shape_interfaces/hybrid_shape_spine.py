@@ -117,7 +117,7 @@ class HybridShapeSpine(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_section(self, i_section: Reference) -> None:
@@ -155,7 +155,7 @@ class HybridShapeSpine(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_guide(self, i_idx: int, op_ia_guide: Reference) -> None:
@@ -193,7 +193,7 @@ class HybridShapeSpine(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_number_of_guides(self) -> int:
@@ -267,7 +267,7 @@ class HybridShapeSpine(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def modify_guide_curve(self, ip_ia_guide: Reference, ip_ia_new_guide: Reference) -> None:
@@ -306,7 +306,7 @@ class HybridShapeSpine(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def modify_section_curve(self, ip_ia_section: Reference, ip_ia_new_section: Reference) -> None:
@@ -345,7 +345,7 @@ class HybridShapeSpine(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def remove_guide(self, i_guide: Reference) -> None:
@@ -379,7 +379,7 @@ class HybridShapeSpine(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def remove_section(self, i_section: Reference) -> None:
@@ -416,7 +416,7 @@ class HybridShapeSpine(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_start_point(self, i_point: Reference) -> None:
@@ -454,7 +454,7 @@ class HybridShapeSpine(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

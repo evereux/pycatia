@@ -109,7 +109,7 @@ class PrintersSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_driver_configuration_path(self, o_driver_cfg_path: str) -> None:
@@ -413,7 +413,7 @@ class PrintersSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def modify_printer_directory_state(self, i_printer_dir: str, i_printer_dir_state: int) -> None:
@@ -572,7 +572,7 @@ class PrintersSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_new_printer_directory(self, i_new_printer_dir: str) -> None:
@@ -634,7 +634,7 @@ class PrintersSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_printer_directories_lock(self, i_lock: bool) -> None:
@@ -675,7 +675,7 @@ class PrintersSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_printer_groups_lock(self, i_lock: bool) -> None:
@@ -715,7 +715,7 @@ class PrintersSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

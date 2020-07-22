@@ -3246,7 +3246,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_axis_system_size_lock(self, i_locked: bool) -> None:
@@ -3286,7 +3286,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_bodies_under_operations_in_tree_lock(self, i_locked: bool) -> None:
@@ -3327,7 +3327,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_color_synchronization_editability_lock(self, i_locked: bool) -> None:
@@ -3369,7 +3369,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_color_synchronization_mode_lock(self, i_locked: bool) -> None:
@@ -3409,7 +3409,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_color_synchronization_mode_manage_lock(self, i_locked: bool) -> None:
@@ -3450,7 +3450,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_color_synchronization_mode_on_feature_lock(self, i_locked: bool) -> None:
@@ -3492,7 +3492,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_color_synchronization_mode_on_sub_elements_lock(self, i_locked: bool) -> None:
@@ -3534,7 +3534,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_colors3_d_experience_management_lock(self, i_locked: bool) -> None:
@@ -3575,7 +3575,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_constraints_in_geometry_lock(self, i_locked: bool) -> None:
@@ -3615,7 +3615,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_constraints_node_in_tree_lock(self, i_locked: bool) -> None:
@@ -3655,7 +3655,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_contextual_features_selectable_at_creation_lock(self, i_locked: bool) -> None:
@@ -3697,7 +3697,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_default_colors_editability_lock(self, i_locked: bool) -> None:
@@ -3737,7 +3737,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_delete_warning_box_lock(self, i_locked: bool) -> None:
@@ -3777,7 +3777,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_display_geometry_after_current_lock(self, i_locked: bool) -> None:
@@ -3818,7 +3818,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_expand_sketch_based_features_node_at_creation_lock(self, i_locked: bool) -> None:
@@ -3860,7 +3860,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_external_references_as_visible_lock(self, i_locked: bool) -> None:
@@ -3901,7 +3901,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_external_references_assembly_root_context_lock(self, i_locked: bool) -> None:
@@ -3943,7 +3943,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_external_references_node_in_tree_lock(self, i_locked: bool) -> None:
@@ -3984,7 +3984,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_hybrid_design_mode_lock(self, i_locked: bool) -> None:
@@ -4024,7 +4024,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_knowledge_in_hybrid_design_mode_lock(self, i_locked: bool) -> None:
@@ -4065,7 +4065,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_linked_external_references_lock(self, i_locked: bool) -> None:
@@ -4105,7 +4105,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_linked_external_references_only_on_publication_lock(self, i_locked: bool) -> None:
@@ -4147,7 +4147,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_linked_external_references_warning_at_creation_lock(self, i_locked: bool) -> None:
@@ -4189,7 +4189,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_naming_mode_lock(self, i_locked: bool) -> None:
@@ -4229,7 +4229,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_new_with3_d_support_lock(self, i_locked: bool) -> None:
@@ -4269,7 +4269,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_new_with_axis_system_lock(self, i_locked: bool) -> None:
@@ -4309,7 +4309,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_new_with_gs_lock(self, i_locked: bool) -> None:
@@ -4349,7 +4349,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_new_with_ogs_lock(self, i_locked: bool) -> None:
@@ -4389,7 +4389,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_new_with_panel_lock(self, i_locked: bool) -> None:
@@ -4429,7 +4429,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_only_current_operated_solid_set_in_geometry_lock(self, i_locked: bool) -> None:
@@ -4471,7 +4471,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_only_current_solid_set_in_geometry_lock(self, i_locked: bool) -> None:
@@ -4512,7 +4512,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_parameters_node_in_tree_lock(self, i_locked: bool) -> None:
@@ -4552,7 +4552,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_publish_topological_elements_lock(self, i_locked: bool) -> None:
@@ -4593,7 +4593,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_relations_node_in_tree_lock(self, i_locked: bool) -> None:
@@ -4633,7 +4633,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_replace_only_after_current_lock(self, i_locked: bool) -> None:
@@ -4673,7 +4673,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_surface_elements_location_lock(self, i_locked: bool) -> None:
@@ -4713,7 +4713,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_update_elements_refreshed_lock(self, i_locked: bool) -> None:
@@ -4753,7 +4753,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_update_linked_external_references_lock(self, i_locked: bool) -> None:
@@ -4794,7 +4794,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_update_mode_lock(self, i_locked: bool) -> None:
@@ -4834,7 +4834,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_update_stopped_on_error_lock(self, i_locked: bool) -> None:
@@ -4874,7 +4874,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

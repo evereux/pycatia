@@ -2597,7 +2597,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_dmu_clash_preview_lock(self, i_locked: bool) -> None:
@@ -2637,7 +2637,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_dmu_cut_3d_preview_lock(self, i_locked: bool) -> None:
@@ -2677,7 +2677,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_dmu_distance_preview_lock(self, i_locked: bool) -> None:
@@ -2717,7 +2717,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_dmu_free_space_preview_lock(self, i_locked: bool) -> None:
@@ -2757,7 +2757,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_dmu_group_preview_hidden_objects_color(self, i_red: int, i_green: int, i_blue: int) -> None:
@@ -2817,7 +2817,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_dmu_group_preview_hidden_objects_display_mode_lock(self, i_locked: bool) -> None:
@@ -2859,7 +2859,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_dmu_group_preview_hidden_objects_low_int_lock(self, i_locked: bool) -> None:
@@ -2901,7 +2901,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_dmu_group_preview_hidden_objects_opacity_lock(self, i_locked: bool) -> None:
@@ -2943,7 +2943,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_dmu_group_preview_hidden_objects_pick_lock(self, i_locked: bool) -> None:
@@ -2985,7 +2985,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_dmu_group_preview_lock(self, i_locked: bool) -> None:
@@ -3025,7 +3025,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_dmu_merger_preview_lock(self, i_locked: bool) -> None:
@@ -3065,7 +3065,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_dmu_offset_preview_lock(self, i_locked: bool) -> None:
@@ -3105,7 +3105,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_dmu_review_name_lock(self, i_locked: bool) -> None:
@@ -3145,7 +3145,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_dmu_section_preview_lock(self, i_locked: bool) -> None:
@@ -3185,7 +3185,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_dmu_shuttle_preview_lock(self, i_locked: bool) -> None:
@@ -3225,7 +3225,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_dmu_silhouette_preview_lock(self, i_locked: bool) -> None:
@@ -3265,7 +3265,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_dmu_simplif_preview_lock(self, i_locked: bool) -> None:
@@ -3305,7 +3305,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_dmu_swept_vol_preview_lock(self, i_locked: bool) -> None:
@@ -3345,7 +3345,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_dmu_thickness_preview_lock(self, i_locked: bool) -> None:
@@ -3385,7 +3385,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_dmu_vibration_vol_preview_lock(self, i_locked: bool) -> None:
@@ -3425,7 +3425,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_dmu_wrapping_preview_lock(self, i_locked: bool) -> None:
@@ -3465,7 +3465,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_force_clearance_voxel_lock(self, i_locked: bool) -> None:
@@ -3505,7 +3505,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_force_voxel_lock(self, i_locked: bool) -> None:
@@ -3545,7 +3545,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_insert_level_lock(self, i_locked: bool) -> None:
@@ -3585,7 +3585,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_insert_mode_lock(self, i_locked: bool) -> None:
@@ -3625,7 +3625,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_marker_2d_auto_naming_lock(self, i_locked: bool) -> None:
@@ -3667,7 +3667,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_marker_3d_auto_naming_lock(self, i_locked: bool) -> None:
@@ -3709,7 +3709,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_marker_auto_update_lock(self, i_locked: bool) -> None:
@@ -3749,7 +3749,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_marker_defaults_color(self, i_red: int, i_green: int, i_blue: int) -> None:
@@ -3812,7 +3812,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_marker_defaults_dashed_lock(self, i_locked: bool) -> None:
@@ -3854,7 +3854,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_marker_defaults_font_lock(self, i_locked: bool) -> None:
@@ -3896,7 +3896,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_marker_defaults_size_lock(self, i_locked: bool) -> None:
@@ -3938,7 +3938,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_marker_defaults_weight_lock(self, i_locked: bool) -> None:
@@ -3980,7 +3980,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_marker_text_color(self, i_red: int, i_green: int, i_blue: int) -> None:
@@ -4043,7 +4043,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_marker_text_dashed_lock(self, i_locked: bool) -> None:
@@ -4085,7 +4085,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_marker_text_weight_lock(self, i_locked: bool) -> None:
@@ -4127,7 +4127,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_num_url_name_lock(self, i_locked: bool) -> None:
@@ -4167,7 +4167,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_publish_auto_launch_browser_lock(self, i_locked: bool) -> None:
@@ -4207,7 +4207,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_scene_defaults_color(self, i_r: int, i_g: int, i_b: int) -> None:
@@ -4266,7 +4266,7 @@ class N4DNavigatorSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

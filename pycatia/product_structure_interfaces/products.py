@@ -107,7 +107,7 @@ class Products(Collection):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_external_component(self, i_product_document: 'Document') -> Product:
@@ -298,7 +298,7 @@ class Products(Collection):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def replace_component(self, i_old_component: Product, i_file_path: str, i_multi_instances: bool) -> Product:

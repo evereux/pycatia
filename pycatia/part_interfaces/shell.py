@@ -143,7 +143,7 @@ class Shell(DressUpShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_face_with_different_thickness(self, i_face_to_thicken: Reference) -> None:
@@ -189,7 +189,7 @@ class Shell(DressUpShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def remove_face_with_different_thickness(self, i_face_to_remove: Reference) -> None:
@@ -235,7 +235,7 @@ class Shell(DressUpShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_volume_support(self, i_volume_support: Reference) -> None:
@@ -264,7 +264,7 @@ class Shell(DressUpShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def withdraw_face_to_remove(self, i_face_to_withdraw: Reference) -> None:
@@ -308,7 +308,7 @@ class Shell(DressUpShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

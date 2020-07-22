@@ -989,7 +989,7 @@ class MarkerSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_marker_3d_auto_naming_lock(self, i_locked: bool) -> None:
@@ -1029,7 +1029,7 @@ class MarkerSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_marker_defaults_color(self, i_red: int, i_green: int, i_blue: int) -> None:
@@ -1088,7 +1088,7 @@ class MarkerSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_marker_defaults_dashed_lock(self, i_locked: bool) -> None:
@@ -1128,7 +1128,7 @@ class MarkerSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_marker_defaults_weight_lock(self, i_locked: bool) -> None:
@@ -1168,7 +1168,7 @@ class MarkerSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_marker_text_color_2d(self, i_red: int, i_green: int, i_blue: int) -> None:
@@ -1227,7 +1227,7 @@ class MarkerSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_marker_text_color_3d(self, i_red: int, i_green: int, i_blue: int) -> None:
@@ -1286,7 +1286,7 @@ class MarkerSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_marker_text_dashed_2d_lock(self, i_locked: bool) -> None:
@@ -1326,7 +1326,7 @@ class MarkerSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_marker_text_dashed_3d_lock(self, i_locked: bool) -> None:
@@ -1366,7 +1366,7 @@ class MarkerSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_marker_text_defaults_font_2d_lock(self, i_locked: bool) -> None:
@@ -1406,7 +1406,7 @@ class MarkerSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_marker_text_defaults_font_3d_lock(self, i_locked: bool) -> None:
@@ -1446,7 +1446,7 @@ class MarkerSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_marker_text_defaults_size_2d_lock(self, i_locked: bool) -> None:
@@ -1486,7 +1486,7 @@ class MarkerSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_marker_text_defaults_size_3d_lock(self, i_locked: bool) -> None:
@@ -1526,7 +1526,7 @@ class MarkerSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_marker_text_weight_2d_lock(self, i_locked: bool) -> None:
@@ -1566,7 +1566,7 @@ class MarkerSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_marker_text_weight_3d_lock(self, i_locked: bool) -> None:
@@ -1606,7 +1606,7 @@ class MarkerSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
