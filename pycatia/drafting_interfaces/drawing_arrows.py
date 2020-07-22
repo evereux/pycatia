@@ -34,7 +34,11 @@ class DrawingArrows(Collection):
         super().__init__(com_object, child_object=DrawingArrow)
         self.drawing_arrows = com_object
 
-    def add(self, i_head_point_x: float, i_head_point_y: float, i_tail_point_x: float, i_tail_point_y: float) -> DrawingArrow:
+    def add(self,
+            i_head_point_x: float,
+            i_head_point_y: float,
+            i_tail_point_x: float,
+            i_tail_point_y: float) -> DrawingArrow:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))

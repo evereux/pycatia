@@ -527,7 +527,7 @@ class HybridShapeCurvePar(HybridShape):
     @support.setter
     def support(self, reference_support: Reference):
         """
-        :param Reference value:
+        :param Reference reference_support:
         """
 
         self.hybrid_shape_curve_par.Support = reference_support.com_object

@@ -168,7 +168,7 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
     @point.setter
     def point(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
         self.hybrid_shape_circle_center_axis.Point = reference_point.com_object

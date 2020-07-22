@@ -14,7 +14,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class Viewer(AnyObject):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -149,10 +148,10 @@ class Viewer(AnyObject):
                 |             captured image 
                 |         Example:
                 |             This example captures the displayed part of the MyViewer viewer as
-                |             a BMP image, and stores it in the e:\MyImage.bmp
+                |             a BMP image, and stores it in the e:\\MyImage.bmp
                 |             file.
                 | 
-                |              MyViewer.CaptureToFile catCaptureFormatBMP, "e:\MyImage.bmp"
+                |              MyViewer.CaptureToFile catCaptureFormatBMP, "e:\\MyImage.bmp"
 
         :param int i_format:
         :param str i_file:
@@ -338,4 +337,4 @@ class Viewer(AnyObject):
         return self.viewer.ZoomOut()
 
     def __repr__(self):
-        return f'Viewer(name="{ self.name }")'
+        return f'Viewer(name="{self.name}")'

@@ -473,9 +473,13 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :return: None
         :rtype: None
         """
-        return self.drawing_view_generative_behavior.DefineAuxiliaryView(i_x_start_point, i_y_start_point,
-                                                                         i_x_end_point, y_end_point, i_side_to_draw,
-                                                                         i_parent_view_generative_behavior.drawing_view_generative_behavior)
+        return self.drawing_view_generative_behavior. \
+            DefineAuxiliaryView(i_x_start_point,
+                                i_y_start_point,
+                                i_x_end_point,
+                                y_end_point,
+                                i_side_to_draw,
+                                i_parent_view_generative_behavior.drawing_view_generative_behavior)
 
     def define_box_3d_view(self, i_boxable_object: AnyObject) -> None:
         """

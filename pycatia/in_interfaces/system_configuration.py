@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class SystemConfiguration(AnyObject):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
@@ -160,7 +159,8 @@ class SystemConfiguration(AnyObject):
                 |                  Dim SystemConfiguration1 As
                 |                  SystemConfiguration
                 |                  Set SystemConfiguration1 = CATIA.SystemConfiguration
-                |                  ReDim NameArray(SystemConfiguration1.ProductNamesCount)                |                  SystemConfiguration1.GetProductNames
+                |                  ReDim NameArray(SystemConfiguration1.ProductNamesCount)
+                |                  SystemConfiguration1.GetProductNames
                 |                  NameArray
                 |                  MsgBox "IsProductAuthorized for product " & NameArray(0) & " 
                 |                  returns " & SystemConfiguration1.IsProductAuthorized(NameArray(0))
@@ -210,4 +210,4 @@ class SystemConfiguration(AnyObject):
         return self.system_configuration.IsProductAuthorized(i_product_name)
 
     def __repr__(self):
-        return f'SystemConfiguration(name="{ self.name }")'
+        return f'SystemConfiguration(name="{self.name}")'

@@ -52,7 +52,7 @@ class HybridShapeLawDistProj(HybridShape):
         :rtype: str
         """
 
-        return str
+        return self.hybrid_shape_law_dist_proj.AppliedUnitSymbol
 
     @applied_unit_symbol.setter
     def applied_unit_symbol(self, value: str):

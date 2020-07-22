@@ -180,7 +180,7 @@ class HybridShapeLineBisecting(Line):
     @ref_point.setter
     def ref_point(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
         self.hybrid_shape_line_bisecting.RefPoint = reference_point.com_object
