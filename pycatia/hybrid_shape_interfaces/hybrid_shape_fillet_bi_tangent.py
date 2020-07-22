@@ -163,7 +163,7 @@ class HybridShapeFilletBiTangent(HybridShape):
     @hold_curve.setter
     def hold_curve(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
         self.hybrid_shape_fillet_bi_tangent.HoldCurve = reference_curve.com_object

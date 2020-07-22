@@ -15,7 +15,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeDirection(HybridShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -78,7 +77,7 @@ class HybridShapeDirection(HybridShape):
     @object.setter
     def object(self, reference: Reference):
         """
-        :param Reference v:
+        :param Reference reference:
         """
 
         self.hybrid_shape_direction.Object = reference.com_object
@@ -281,4 +280,4 @@ class HybridShapeDirection(HybridShape):
         return self.hybrid_shape_direction.GetZVal()
 
     def __repr__(self):
-        return f'HybridShapeDirection(name="{ self.name }")'
+        return f'HybridShapeDirection(name="{self.name}")'

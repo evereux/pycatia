@@ -16,7 +16,6 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeDevelop(HybridShape):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -161,7 +160,7 @@ class HybridShapeDevelop(HybridShape):
     @plane_axis_origin.setter
     def plane_axis_origin(self, reference_plane: Reference):
         """
-        :param reference_plane value:
+        :param reference_plane reference_plane:
         """
 
         self.hybrid_shape_develop.PlaneAxisOrigin = reference_plane.com_object
@@ -427,4 +426,4 @@ class HybridShapeDevelop(HybridShape):
         return self.hybrid_shape_develop.SetPlaneAxisSwapAxes(i_idx, i_inversion_value)
 
     def __repr__(self):
-        return f'HybridShapeDevelop(name="{ self.name }")'
+        return f'HybridShapeDevelop(name="{self.name}")'

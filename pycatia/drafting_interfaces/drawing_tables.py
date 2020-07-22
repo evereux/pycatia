@@ -34,7 +34,13 @@ class DrawingTables(Collection):
         super().__init__(com_object, child_object=DrawingTable)
         self.drawing_tables = com_object
 
-    def add(self, i_position_x: float, i_position_y: float, i_number_of_row: int, i_number_of_column: int, i_row_height: float, i_column_width: float) -> DrawingTable:
+    def add(self,
+            i_position_x: float,
+            i_position_y: float,
+            i_number_of_row: int,
+            i_number_of_column: int,
+            i_row_height: float,
+            i_column_width: float) -> DrawingTable:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))

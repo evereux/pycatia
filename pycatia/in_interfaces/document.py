@@ -775,7 +775,6 @@ class Document(AnyObject):
         Example: selection_objects = ['Point', 'Line']
         Example query string to search for all lines and points
         "('Generative Shape Design'.Point + 'Generative Shape Design'.Line),in"
-        :param document:
         :param list selection_objects:
         :return Selected Automation Object:
         """

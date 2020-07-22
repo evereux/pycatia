@@ -15,7 +15,6 @@ from pycatia.knowledge_interfaces.length import Length
 
 
 class HybridShapeCircleBitangentRadius(HybridShapeCircle):
-
     """
         .. note::
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
@@ -360,7 +359,7 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     @support.setter
     def support(self, reference_support: Reference):
         """
-        :param Reference value:
+        :param Reference reference_support:
         """
 
         self.hybrid_shape_circle_bitangent_radius.Support = reference_support.com_object
@@ -472,4 +471,4 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
         self.hybrid_shape_circle_bitangent_radius.TrimMode = value
 
     def __repr__(self):
-        return f'HybridShapeCircleBitangentRadius(name="{ self.name }")'
+        return f'HybridShapeCircleBitangentRadius(name="{self.name}")'

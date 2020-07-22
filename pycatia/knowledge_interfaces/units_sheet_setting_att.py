@@ -387,7 +387,11 @@ class UnitsSheetSettingAtt(SettingController):
         """
         return self.units_sheet_setting_att.GetListOfMagnitudesInfo(io_admin_level, io_locked)
 
-    def get_magnitude_values(self, i_magnitude_name: str, o_unit_name: str, o_decimal_place_read_write: float, o_decimal_place_read_only: float) -> None:
+    def get_magnitude_values(self,
+                             i_magnitude_name: str,
+                             o_unit_name: str,
+                             o_decimal_place_read_write: float,
+                             o_decimal_place_read_only: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
@@ -676,7 +680,11 @@ class UnitsSheetSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_magnitude_values(self, i_magnitude_name: str, i_unit_name: str, i_decimal_place_read_write: float, i_decimal_place_read_only: float) -> None:
+    def set_magnitude_values(self,
+                             i_magnitude_name: str,
+                             i_unit_name: str,
+                             i_decimal_place_read_write: float,
+                             i_decimal_place_read_only: float) -> None:
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))

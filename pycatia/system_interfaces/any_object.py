@@ -35,7 +35,7 @@ class AnyObject(PyCATIA):
         self.com_object = com_object
 
     @property
-    def application(self) -> 'com_object':
+    def application(self) -> 'Application':
         """
         .. note::
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
@@ -67,7 +67,8 @@ class AnyObject(PyCATIA):
         :return: com_object
         :rtype: com_object
         """
-        return self.com_object.Application
+        from pycatia.in_interfaces.application import Application
+        return Application(self.com_object.Application)
 
     @property
     def name(self) -> str:
