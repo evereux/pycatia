@@ -2,7 +2,7 @@
 
 """
 
-    Example 21:
+    Example 22:
 
     Loops through the items in hybrid body "Lines" and determine the object type using selection.
 
