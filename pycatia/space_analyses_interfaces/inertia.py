@@ -17,6 +17,8 @@ class Inertia(AnyObject):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -65,6 +67,8 @@ class Inertia(AnyObject):
     def density(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Density() As double
                 | 
@@ -122,6 +126,8 @@ class Inertia(AnyObject):
     def granularity_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property GranularityMode() As long
                 | 
@@ -178,6 +184,8 @@ class Inertia(AnyObject):
     def mass(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Mass() As double (Read Only)
                 | 
@@ -201,6 +209,8 @@ class Inertia(AnyObject):
     def get_cog_position(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetCOGPosition(CATSafeArrayVariant oCoordinates)
                 | 
@@ -244,6 +254,8 @@ class Inertia(AnyObject):
     def get_inertia_matrix(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetInertiaMatrix(CATSafeArrayVariant oMatrix)
                 | 
@@ -292,6 +304,8 @@ class Inertia(AnyObject):
     def get_principal_axes(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetPrincipalAxes(CATSafeArrayVariant oComponents)
                 | 
@@ -340,6 +354,8 @@ class Inertia(AnyObject):
     def get_principal_moments(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetPrincipalMoments(CATSafeArrayVariant oValues)
                 | 

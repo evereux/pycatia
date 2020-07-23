@@ -1,3 +1,5 @@
+.. _Language_sheet_setting_att:
+
 pycatia.knowledge_interfaces.language_sheet_setting_att
 =======================================================
 

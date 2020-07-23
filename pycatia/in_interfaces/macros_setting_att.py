@@ -16,6 +16,8 @@ class MacrosSettingAtt(SettingController):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -37,6 +39,8 @@ class MacrosSettingAtt(SettingController):
     def get_default_macro_libraries(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDefaultMacroLibraries() As CATSafeArrayVariant
                 | 
@@ -50,6 +54,8 @@ class MacrosSettingAtt(SettingController):
     def get_default_macro_libraries_info(self, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDefaultMacroLibrariesInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -84,6 +90,8 @@ class MacrosSettingAtt(SettingController):
     def get_external_references(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetExternalReferences() As CATSafeArrayVariant
                 | 
@@ -97,6 +105,8 @@ class MacrosSettingAtt(SettingController):
     def get_external_references_info(self, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetExternalReferencesInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -131,6 +141,8 @@ class MacrosSettingAtt(SettingController):
     def get_language_editor(self, i_language: int) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetLanguageEditor(CATScriptLanguage iLanguage) As
                 | CATBSTR
@@ -146,6 +158,8 @@ class MacrosSettingAtt(SettingController):
     def get_language_editor_info(self, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetLanguageEditorInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -180,6 +194,8 @@ class MacrosSettingAtt(SettingController):
     def set_default_macro_libraries(self, i_libraries: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDefaultMacroLibraries(CATSafeArrayVariant
                 | iLibraries)
@@ -210,6 +226,8 @@ class MacrosSettingAtt(SettingController):
     def set_default_macro_libraries_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDefaultMacroLibrariesLock(boolean iLocked)
                 | 
@@ -250,6 +268,8 @@ class MacrosSettingAtt(SettingController):
     def set_external_references(self, i_references: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetExternalReferences(CATSafeArrayVariant iReferences)
                 | 
@@ -279,6 +299,8 @@ class MacrosSettingAtt(SettingController):
     def set_external_references_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetExternalReferencesLock(boolean iLocked)
                 | 
@@ -319,6 +341,8 @@ class MacrosSettingAtt(SettingController):
     def set_language_editor(self, i_language: int, i_editor_path: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLanguageEditor(CATScriptLanguage iLanguage,
                 | CATBSTR iEditorPath)
@@ -335,6 +359,8 @@ class MacrosSettingAtt(SettingController):
     def set_language_editor_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLanguageEditorLock(boolean iLocked)
                 | 

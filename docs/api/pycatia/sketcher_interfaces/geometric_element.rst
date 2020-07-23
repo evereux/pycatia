@@ -1,3 +1,5 @@
+.. _Geometric_element:
+
 pycatia.sketcher_interfaces.geometric_element
 =============================================
 

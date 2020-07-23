@@ -17,6 +17,8 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -54,6 +56,8 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
     def center(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Center() As Reference
                 | 
@@ -85,6 +89,8 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
     def crossing_point(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CrossingPoint() As Reference
                 | 
@@ -116,6 +122,8 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
     def support(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
@@ -146,6 +154,8 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
     def is_geodesic(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func IsGeodesic() As boolean
                 | 
@@ -164,6 +174,8 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
     def set_geometry_on_support(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetGeometryOnSupport()
                 | 
@@ -178,6 +190,8 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
     def unset_geometry_on_support(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub UnsetGeometryOnSupport()
                 | 

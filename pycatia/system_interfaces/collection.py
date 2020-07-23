@@ -19,6 +19,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class Collection(PyCATIA):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-10 10:58:07.270911)
 
                 | System.IUnknown
@@ -42,6 +44,8 @@ class Collection(PyCATIA):
     def application(self) -> 'Application':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-10 10:58:07.270911)
                 | o Property Application() As Application (Read Only)
                 |
@@ -71,6 +75,8 @@ class Collection(PyCATIA):
     def count(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-10 10:58:07.270911)
                 | o Property Count() As long (Read Only)
                 |
@@ -93,6 +99,8 @@ class Collection(PyCATIA):
     def name(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-10 10:58:07.270911)
                 | o Property Name() As CATBSTR (Read Only)
                 |
@@ -119,6 +127,8 @@ class Collection(PyCATIA):
     def parent(self) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-10 10:58:07.270911)
                 | o Property Parent() As CATBaseDispatch (Read Only)
                 |
@@ -147,6 +157,8 @@ class Collection(PyCATIA):
         """
 
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-10 10:58:07.270911))
                 | o Func GetItem(CATBSTR IDName) As CATBaseDispatch
                 |

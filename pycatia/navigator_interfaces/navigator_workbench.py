@@ -22,6 +22,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class NavigatorWorkbench(Workbench):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -46,6 +48,8 @@ class NavigatorWorkbench(Workbench):
     def annotated_views(self) -> AnnotatedViews:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AnnotatedViews() As AnnotatedViews (Read Only)
                 | 
@@ -76,6 +80,8 @@ class NavigatorWorkbench(Workbench):
     def dmu_data_flow(self) -> DMUDataFlow:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DMUDataFlow() As DMUDataFlow (Read Only)
                 | 
@@ -91,6 +97,8 @@ class NavigatorWorkbench(Workbench):
     def groups(self) -> Groups:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Groups() As Groups (Read Only)
                 | 
@@ -121,6 +129,8 @@ class NavigatorWorkbench(Workbench):
     def hyperlinks(self) -> Hyperlinks:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Hyperlinks() As Hyperlinks (Read Only)
                 | 
@@ -151,6 +161,8 @@ class NavigatorWorkbench(Workbench):
     def marker3_ds(self) -> Marker3Ds:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Marker3Ds() As Marker3Ds (Read Only)
                 | 
@@ -180,6 +192,8 @@ class NavigatorWorkbench(Workbench):
     def advanced_view(self, i_annotated_view: AnnotatedView, i_view_option: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AdvancedView(AnnotatedView iAnnotatedView,
                 | short iViewOption)
@@ -232,6 +246,8 @@ class NavigatorWorkbench(Workbench):
     def get_order(self, i_object: AnyObject) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetOrder(CATBaseDispatch iObject) As long
                 | 
@@ -269,6 +285,8 @@ class NavigatorWorkbench(Workbench):
     def set_order(self, i_object: AnyObject, i_new_rank: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetOrder(CATBaseDispatch iObject,
                 | long iNewRank)
@@ -306,6 +324,8 @@ class NavigatorWorkbench(Workbench):
     def view(self, i_annotated_view: AnnotatedView) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub View(AnnotatedView iAnnotatedView)
                 | 

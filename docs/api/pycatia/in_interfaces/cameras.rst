@@ -1,3 +1,5 @@
+.. _Cameras:
+
 pycatia.in_interfaces.cameras
 =============================
 

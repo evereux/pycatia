@@ -1,3 +1,5 @@
+.. _Setting_repository:
+
 pycatia.system_interfaces.setting_repository
 ============================================
 

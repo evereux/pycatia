@@ -18,6 +18,8 @@ from pycatia.part_interfaces.dress_up_shape import DressUpShape
 class Chamfer(DressUpShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -44,6 +46,8 @@ class Chamfer(DressUpShape):
     def angle(self) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Angle() As Angle (Read Only)
                 | 
@@ -67,6 +71,8 @@ class Chamfer(DressUpShape):
     def elements_to_chamfer(self) -> References:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ElementsToChamfer() As References (Read Only)
                 | 
@@ -89,6 +95,8 @@ class Chamfer(DressUpShape):
     def length1(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Length1() As Length (Read Only)
                 | 
@@ -112,6 +120,8 @@ class Chamfer(DressUpShape):
     def length2(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Length2() As Length (Read Only)
                 | 
@@ -135,6 +145,8 @@ class Chamfer(DressUpShape):
     def mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Mode() As CatChamferMode
                 | 
@@ -168,6 +180,8 @@ class Chamfer(DressUpShape):
     def orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation() As CatChamferOrientation
                 | 
@@ -199,6 +213,8 @@ class Chamfer(DressUpShape):
     def propagation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Propagation() As CatChamferPropagation
                 | 
@@ -230,6 +246,8 @@ class Chamfer(DressUpShape):
     def add_element_to_chamfer(self, i_element_to_chamfer: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddElementToChamfer(Reference iElementToChamfer)
                 | 
@@ -273,6 +291,8 @@ class Chamfer(DressUpShape):
     def withdraw_element_to_chamfer(self, i_element_to_withdraw: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub WithdrawElementToChamfer(Reference iElementToWithdraw)
                 | 

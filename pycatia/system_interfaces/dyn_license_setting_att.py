@@ -15,6 +15,8 @@ from pycatia.system_interfaces.setting_controller import SettingController
 class DynLicenseSettingAtt(SettingController):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
 
                 | System.IUnknown
@@ -48,6 +50,8 @@ class DynLicenseSettingAtt(SettingController):
     def get_license(self, i_license):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetLicense(CATBSTR iLicense) As CATBSTR
                 | 
@@ -74,6 +78,8 @@ class DynLicenseSettingAtt(SettingController):
     def get_license_info(self, i_license, io_admin_level, io_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetLicenseInfo(CATBSTR iLicense,
                 | CATBSTR ioAdminLevel,
@@ -114,6 +120,8 @@ class DynLicenseSettingAtt(SettingController):
     def get_licenses_list(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetLicensesList() As CATSafeArrayVariant
                 | 
@@ -132,6 +140,8 @@ class DynLicenseSettingAtt(SettingController):
     def get_licenses_list_info(self, io_admin_level, io_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetLicensesListInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -171,6 +181,8 @@ class DynLicenseSettingAtt(SettingController):
     def set_license_lock(self, i_license, i_lock):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetLicenseLock(CATBSTR iLicense,
                 | boolean iLock)
@@ -215,6 +227,8 @@ class DynLicenseSettingAtt(SettingController):
     def set_licenses_list_lock(self, i_lock):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetLicensesListLock(boolean iLock)
                 | 

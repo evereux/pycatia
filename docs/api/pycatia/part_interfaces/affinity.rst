@@ -1,3 +1,5 @@
+.. _Affinity:
+
 pycatia.part_interfaces.affinity
 ================================
 

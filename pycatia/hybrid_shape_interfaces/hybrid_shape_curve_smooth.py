@@ -19,6 +19,8 @@ class HybridShapeCurveSmooth(HybridShape):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -57,6 +59,8 @@ class HybridShapeCurveSmooth(HybridShape):
     def correction_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CorrectionMode() As long
                 | 
@@ -100,6 +104,8 @@ class HybridShapeCurveSmooth(HybridShape):
     def curvature_threshold(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CurvatureThreshold() As double
                 | 
@@ -129,6 +135,8 @@ class HybridShapeCurveSmooth(HybridShape):
     def curvature_threshold_activity(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CurvatureThresholdActivity() As boolean
                 | 
@@ -158,6 +166,8 @@ class HybridShapeCurveSmooth(HybridShape):
     def curve_to_smooth(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CurveToSmooth() As Reference
                 | 
@@ -187,6 +197,8 @@ class HybridShapeCurveSmooth(HybridShape):
     def end_extremity_continuity(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property EndExtremityContinuity() As long
                 | 
@@ -228,6 +240,8 @@ class HybridShapeCurveSmooth(HybridShape):
     def maximum_deviation(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MaximumDeviation() As Length (Read Only)
                 | 
@@ -249,6 +263,8 @@ class HybridShapeCurveSmooth(HybridShape):
     def maximum_deviation_activity(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MaximumDeviationActivity() As boolean
                 | 
@@ -278,6 +294,8 @@ class HybridShapeCurveSmooth(HybridShape):
     def start_extremity_continuity(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property StartExtremityContinuity() As long
                 | 
@@ -319,6 +337,8 @@ class HybridShapeCurveSmooth(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
@@ -349,6 +369,8 @@ class HybridShapeCurveSmooth(HybridShape):
     def tangency_threshold(self) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TangencyThreshold() As Angle (Read Only)
                 | 
@@ -370,6 +392,8 @@ class HybridShapeCurveSmooth(HybridShape):
     def topology_simplification_activity(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TopologySimplificationActivity() As boolean
                 | 

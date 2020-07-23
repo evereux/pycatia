@@ -1,3 +1,5 @@
+.. _Formula:
+
 pycatia.knowledge_interfaces.formula
 ====================================
 

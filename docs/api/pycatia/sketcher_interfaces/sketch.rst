@@ -1,3 +1,5 @@
+.. _Sketch:
+
 pycatia.sketcher_interfaces.sketch
 ==================================
 

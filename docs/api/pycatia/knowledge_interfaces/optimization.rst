@@ -1,3 +1,5 @@
+.. _Optimization:
+
 pycatia.knowledge_interfaces.optimization
 =========================================
 

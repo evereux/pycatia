@@ -16,6 +16,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeTransfer(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -50,6 +52,8 @@ class HybridShapeTransfer(HybridShape):
     def element_to_transfer(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ElementToTransfer() As Reference
                 | 
@@ -73,6 +77,8 @@ class HybridShapeTransfer(HybridShape):
     def surface_to_unfold(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SurfaceToUnfold() As Reference
                 | 
@@ -96,6 +102,8 @@ class HybridShapeTransfer(HybridShape):
     def type_of_transfer(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TypeOfTransfer() As long
                 | 
@@ -123,6 +131,8 @@ class HybridShapeTransfer(HybridShape):
     def unfold_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property UnfoldType() As long
                 | 
@@ -151,6 +161,8 @@ class HybridShapeTransfer(HybridShape):
     def unfolded_surface(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property UnfoldedSurface() As Reference
                 | 

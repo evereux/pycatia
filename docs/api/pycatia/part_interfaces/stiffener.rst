@@ -1,3 +1,5 @@
+.. _Stiffener:
+
 pycatia.part_interfaces.stiffener
 =================================
 

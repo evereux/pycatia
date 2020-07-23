@@ -15,6 +15,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class VisPropertySet(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -121,6 +123,8 @@ class VisPropertySet(AnyObject):
     def get_layer(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetLayer(CatVisLayerType oLayerType,
                 | long oLayerValue) As CatVisPropertyStatus
@@ -167,6 +171,8 @@ class VisPropertySet(AnyObject):
     def get_pick(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPick(CatVisPropertyPick oPick) As
                 | CatVisPropertyStatus
@@ -193,6 +199,8 @@ class VisPropertySet(AnyObject):
     def get_real_color(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetRealColor(long oRed,
                 | long oGreen,
@@ -238,6 +246,8 @@ class VisPropertySet(AnyObject):
     def get_real_inheritance(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetRealInheritance(CatVisPropertyType iPropertyType,
                 | long oInheritance) As CatVisPropertyStatus
@@ -293,6 +303,8 @@ class VisPropertySet(AnyObject):
     def get_real_line_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetRealLineType(long oLineType) As
                 | CatVisPropertyStatus
@@ -338,6 +350,8 @@ class VisPropertySet(AnyObject):
     def get_real_opacity(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetRealOpacity(long oOpacity) As CatVisPropertyStatus
                 | 
@@ -381,6 +395,8 @@ class VisPropertySet(AnyObject):
     def get_real_width(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetRealWidth(long oLineWidth) As CatVisPropertyStatus
                 | 
@@ -425,6 +441,8 @@ class VisPropertySet(AnyObject):
     def get_show(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetShow(CatVisPropertyShow oShow) As
                 | CatVisPropertyStatus
@@ -451,6 +469,8 @@ class VisPropertySet(AnyObject):
     def get_symbol_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetSymbolType(long oSymbolType) As
                 | CatVisPropertyStatus
@@ -494,6 +514,8 @@ class VisPropertySet(AnyObject):
     def get_visible_color(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetVisibleColor(long oRed,
                 | long oGreen,
@@ -543,6 +565,8 @@ class VisPropertySet(AnyObject):
     def get_visible_inheritance(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetVisibleInheritance(CatVisPropertyType
                 | iPropertyType,
@@ -582,6 +606,8 @@ class VisPropertySet(AnyObject):
     def get_visible_line_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetVisibleLineType(long oLineType) As
                 | CatVisPropertyStatus
@@ -626,6 +652,8 @@ class VisPropertySet(AnyObject):
     def get_visible_opacity(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetVisibleOpacity(long oOpacity) As
                 | CatVisPropertyStatus
@@ -672,6 +700,8 @@ class VisPropertySet(AnyObject):
     def get_visible_width(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetVisibleWidth(long oLineWidth) As
                 | CatVisPropertyStatus
@@ -716,6 +746,8 @@ class VisPropertySet(AnyObject):
     def set_layer(self, i_layer_type: int, i_layer_value: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLayer(CatVisLayerType iLayerType,
                 | long iLayerValue)
@@ -751,6 +783,8 @@ class VisPropertySet(AnyObject):
     def set_pick(self, i_pick: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPick(CatVisPropertyPick iPick)
                 | 
@@ -775,6 +809,8 @@ class VisPropertySet(AnyObject):
     def set_real_color(self, i_red: int, i_green: int, i_blue: int, i_inheritance: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetRealColor(long iRed,
                 | long iGreen,
@@ -821,6 +857,8 @@ class VisPropertySet(AnyObject):
     def set_real_line_type(self, i_line_type: int, i_inheritance: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetRealLineType(long iLineType,
                 | long iInheritance)
@@ -859,6 +897,8 @@ class VisPropertySet(AnyObject):
     def set_real_opacity(self, i_opacity: int, i_inheritance: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetRealOpacity(long iOpacity,
                 | long iInheritance)
@@ -896,6 +936,8 @@ class VisPropertySet(AnyObject):
     def set_real_width(self, i_line_width: int, i_inheritance: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetRealWidth(long iLineWidth,
                 | long iInheritance)
@@ -936,6 +978,8 @@ class VisPropertySet(AnyObject):
     def set_show(self, i_show: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetShow(CatVisPropertyShow iShow)
                 | 
@@ -960,6 +1004,8 @@ class VisPropertySet(AnyObject):
     def set_symbol_type(self, i_symbol_type: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSymbolType(long iSymbolType)
                 | 

@@ -16,6 +16,8 @@ class TreeVizManipSettingAtt(SettingController):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class TreeVizManipSettingAtt(SettingController):
     def arc_selection_activation(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ArcSelectionActivation() As boolean
                 | 
@@ -62,6 +66,8 @@ class TreeVizManipSettingAtt(SettingController):
     def auto_expand_activation(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AutoExpandActivation() As boolean
                 | 
@@ -86,6 +92,8 @@ class TreeVizManipSettingAtt(SettingController):
     def auto_scroll_activation(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AutoScrollActivation() As boolean
                 | 
@@ -110,6 +118,8 @@ class TreeVizManipSettingAtt(SettingController):
     def display_geom_on_scrolling(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DisplayGeomOnScrolling() As boolean
                 | 
@@ -133,6 +143,8 @@ class TreeVizManipSettingAtt(SettingController):
     def orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation() As CatTreeOrientationEnum
                 | 
@@ -156,6 +168,8 @@ class TreeVizManipSettingAtt(SettingController):
     def show_activation(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ShowActivation() As boolean
                 | 
@@ -180,6 +194,8 @@ class TreeVizManipSettingAtt(SettingController):
     def size(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Size() As long
                 | 
@@ -204,6 +220,8 @@ class TreeVizManipSettingAtt(SettingController):
     def size_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SizeType() As CatTreeSizeTypeEnum
                 | 
@@ -228,6 +246,8 @@ class TreeVizManipSettingAtt(SettingController):
     def type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Type() As CatTreeTypeEnum
                 | 
@@ -250,6 +270,8 @@ class TreeVizManipSettingAtt(SettingController):
     def get_arc_selection_activation_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetArcSelectionActivationInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -285,6 +307,8 @@ class TreeVizManipSettingAtt(SettingController):
     def get_auto_expand_activation_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetAutoExpandActivationInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -320,6 +344,8 @@ class TreeVizManipSettingAtt(SettingController):
     def get_auto_scroll_activation_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetAutoScrollActivationInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -355,6 +381,8 @@ class TreeVizManipSettingAtt(SettingController):
     def get_display_geom_on_scrolling_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDisplayGeomOnScrollingInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -390,6 +418,8 @@ class TreeVizManipSettingAtt(SettingController):
     def get_orientation_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetOrientationInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -425,6 +455,8 @@ class TreeVizManipSettingAtt(SettingController):
     def get_show_activation_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetShowActivationInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -460,6 +492,8 @@ class TreeVizManipSettingAtt(SettingController):
     def get_size_type_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetSizeTypeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -497,6 +531,8 @@ class TreeVizManipSettingAtt(SettingController):
     def get_type_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetTypeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -532,6 +568,8 @@ class TreeVizManipSettingAtt(SettingController):
     def set_arc_selection_activation_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetArcSelectionActivationLock(boolean iLocked)
                 | 
@@ -573,6 +611,8 @@ class TreeVizManipSettingAtt(SettingController):
     def set_auto_expand_activation_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAutoExpandActivationLock(boolean iLocked)
                 | 
@@ -614,6 +654,8 @@ class TreeVizManipSettingAtt(SettingController):
     def set_auto_scroll_activation_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAutoScrollActivationLock(boolean iLocked)
                 | 
@@ -655,6 +697,8 @@ class TreeVizManipSettingAtt(SettingController):
     def set_display_geom_on_scrolling_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDisplayGeomOnScrollingLock(boolean iLocked)
                 | 
@@ -695,6 +739,8 @@ class TreeVizManipSettingAtt(SettingController):
     def set_orientation_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetOrientationLock(boolean iLocked)
                 | 
@@ -736,6 +782,8 @@ class TreeVizManipSettingAtt(SettingController):
     def set_show_activation_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetShowActivationLock(boolean iLocked)
                 | 
@@ -777,6 +825,8 @@ class TreeVizManipSettingAtt(SettingController):
     def set_size_type_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSizeTypeLock(boolean iLocked)
                 | 
@@ -820,6 +870,8 @@ class TreeVizManipSettingAtt(SettingController):
     def set_type_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetTypeLock(boolean iLocked)
                 | 

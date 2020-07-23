@@ -17,6 +17,8 @@ from pycatia.types import cat_variant
 class Publications(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class Publications(Collection):
     def add(self, i_public_name: str) -> Publication:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add(CATBSTR iPublicName) As Publication
                 | 
@@ -68,6 +72,8 @@ class Publications(Collection):
     def item(self, i_identifier: cat_variant) -> Publication:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(CATVariant iIdentifier) As Publication
                 | 
@@ -96,6 +102,8 @@ class Publications(Collection):
     def remove(self, i_identifier: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(CATBSTR iIdentifier)
                 | 
@@ -121,6 +129,8 @@ class Publications(Collection):
     def set_direct(self, i_identifier: cat_variant, i_pointed: 'Reference') -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetDirect(CATVariant iIdentifier,
                 | Reference iPointed)
@@ -170,6 +180,8 @@ class Publications(Collection):
     def set_relay(self, i_identifier: cat_variant, i_relayer: 'Publications', i_name_in_relay: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetRelay(CATVariant iIdentifier,
                 | Publications iRelayer,

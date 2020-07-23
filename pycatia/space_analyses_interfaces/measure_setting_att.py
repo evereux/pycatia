@@ -16,6 +16,8 @@ from pycatia.system_interfaces.system_service import SystemService
 class MeasureSettingAtt(SettingController):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class MeasureSettingAtt(SettingController):
     def box_display(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BoxDisplay() As boolean
                 | 
@@ -66,6 +70,8 @@ class MeasureSettingAtt(SettingController):
     def line_width(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LineWidth() As short
                 | 
@@ -93,6 +99,8 @@ class MeasureSettingAtt(SettingController):
     def part_update_status(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PartUpdateStatus() As boolean
                 | 
@@ -120,6 +128,8 @@ class MeasureSettingAtt(SettingController):
     def product_update_status(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ProductUpdateStatus() As boolean
                 | 
@@ -148,6 +158,8 @@ class MeasureSettingAtt(SettingController):
     def tilde_display(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TildeDisplay() As boolean
                 | 
@@ -175,6 +187,8 @@ class MeasureSettingAtt(SettingController):
     def get_box_display_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetBoxDisplayInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -210,6 +224,8 @@ class MeasureSettingAtt(SettingController):
     def get_label_color(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetLabelColor(long oR,
                 | long oG,
@@ -237,6 +253,8 @@ class MeasureSettingAtt(SettingController):
     def get_label_color_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetLabelColorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -272,6 +290,8 @@ class MeasureSettingAtt(SettingController):
     def get_line_width_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetLineWidthInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -307,6 +327,8 @@ class MeasureSettingAtt(SettingController):
     def get_part_update_status_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPartUpdateStatusInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -342,6 +364,8 @@ class MeasureSettingAtt(SettingController):
     def get_product_update_status_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetProductUpdateStatusInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -377,6 +401,8 @@ class MeasureSettingAtt(SettingController):
     def get_text_color(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetTextColor(long oR,
                 | long oG,
@@ -407,6 +433,8 @@ class MeasureSettingAtt(SettingController):
     def get_text_color_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetTextColorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -442,6 +470,8 @@ class MeasureSettingAtt(SettingController):
     def get_tilde_display_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetTildeDisplayInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -477,6 +507,8 @@ class MeasureSettingAtt(SettingController):
     def set_box_display_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetBoxDisplayLock(boolean iLocked)
                 | 
@@ -502,6 +534,8 @@ class MeasureSettingAtt(SettingController):
     def set_label_color(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLabelColor(long iR,
                 | long iG,
@@ -532,6 +566,8 @@ class MeasureSettingAtt(SettingController):
     def set_label_color_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLabelColorLock(boolean iLocked)
                 | 
@@ -557,6 +593,8 @@ class MeasureSettingAtt(SettingController):
     def set_line_width_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLineWidthLock(boolean iLocked)
                 | 
@@ -582,6 +620,8 @@ class MeasureSettingAtt(SettingController):
     def set_part_update_status_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPartUpdateStatusLock(boolean iLocked)
                 | 
@@ -607,6 +647,8 @@ class MeasureSettingAtt(SettingController):
     def set_product_update_status_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetProductUpdateStatusLock(boolean iLocked)
                 | 
@@ -632,6 +674,8 @@ class MeasureSettingAtt(SettingController):
     def set_text_color(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetTextColor(long iR,
                 | long iG,
@@ -652,6 +696,8 @@ class MeasureSettingAtt(SettingController):
     def set_text_color_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetTextColorLock(boolean iLocked)
                 | 
@@ -677,6 +723,8 @@ class MeasureSettingAtt(SettingController):
     def set_tilde_display_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetTildeDisplayLock(boolean iLocked)
                 | 

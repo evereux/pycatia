@@ -15,6 +15,8 @@ from pycatia.system_interfaces.setting_controller import SettingController
 class ReportGenerationSheetSettingAtt(SettingController):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def all_checks_report(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AllChecksReport() As short
                 | 
@@ -71,6 +75,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def check_report_html(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CheckReportHtml() As short
                 | 
@@ -104,6 +110,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def directory_for_input_xsl(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DirectoryForInputXsl() As CATBSTR
                 | 
@@ -135,6 +143,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def report_check_advisor(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ReportCheckAdvisor() As short
                 | 
@@ -168,6 +178,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def report_check_expert(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ReportCheckExpert() As short
                 | 
@@ -201,6 +213,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def report_html_in_catia_session(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ReportHtmlInCatiaSession() As short
                 | 
@@ -234,6 +248,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def report_objects_information(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ReportObjectsInformation() As short
                 | 
@@ -267,6 +283,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def report_output_directory(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ReportOutputDirectory() As CATBSTR
                 | 
@@ -299,6 +317,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def report_parameters_information(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ReportParametersInformation() As short
                 | 
@@ -332,6 +352,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def report_passed_objects(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ReportPassedObjects() As short
                 | 
@@ -364,6 +386,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def get_all_checks_report_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetAllChecksReportInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -399,6 +423,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def get_check_report_html_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetCheckReportHtmlInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -434,6 +460,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def get_directory_for_input_xsl_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDirectoryForInputXslInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -469,6 +497,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def get_report_check_advisor_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetReportCheckAdvisorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -504,6 +534,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def get_report_check_expert_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetReportCheckExpertInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -539,6 +571,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def get_report_html_in_catia_session_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetReportHtmlInCatiaSessionInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -574,6 +608,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def get_report_objects_information_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetReportObjectsInformationInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -609,6 +645,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def get_report_output_directory_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetReportOutputDirectoryInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -644,6 +682,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def get_report_parameters_information_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetReportParametersInformationInfo(CATBSTR
                 | ioAdminLevel,
@@ -680,6 +720,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def get_report_passed_objects_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetReportPassedObjectsInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -715,6 +757,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def set_all_checks_report_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAllChecksReportLock(boolean iLocked)
                 | 
@@ -755,6 +799,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def set_check_report_html_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetCheckReportHtmlLock(boolean iLocked)
                 | 
@@ -795,6 +841,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def set_directory_for_input_xsl_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDirectoryForInputXslLock(boolean iLocked)
                 | 
@@ -835,6 +883,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def set_report_check_advisor_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetReportCheckAdvisorLock(boolean iLocked)
                 | 
@@ -875,6 +925,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def set_report_check_expert_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetReportCheckExpertLock(boolean iLocked)
                 | 
@@ -915,6 +967,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def set_report_html_in_catia_session_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetReportHtmlInCatiaSessionLock(boolean iLocked)
                 | 
@@ -955,6 +1009,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def set_report_objects_information_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetReportObjectsInformationLock(boolean iLocked)
                 | 
@@ -995,6 +1051,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def set_report_output_directory_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetReportOutputDirectoryLock(boolean iLocked)
                 | 
@@ -1035,6 +1093,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def set_report_parameters_information_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetReportParametersInformationLock(boolean iLocked)
                 | 
@@ -1076,6 +1136,8 @@ class ReportGenerationSheetSettingAtt(SettingController):
     def set_report_passed_objects_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetReportPassedObjectsLock(boolean iLocked)
                 | 

@@ -16,6 +16,8 @@ from pycatia.system_interfaces.system_service import SystemService
 class Circle2D(Curve2D):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -40,6 +42,8 @@ class Circle2D(Curve2D):
     def center_point(self) -> Point2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CenterPoint() As Point2D
                 | 
@@ -68,6 +72,8 @@ class Circle2D(Curve2D):
     def radius(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Radius() As double (Read Only)
                 | 
@@ -87,6 +93,8 @@ class Circle2D(Curve2D):
     def get_center(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetCenter(CATSafeArrayVariant oData)
                 | 
@@ -123,6 +131,8 @@ class Circle2D(Curve2D):
     def set_data(self, i_center_x: float, i_center_y: float, i_radius: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetData(double iCenterX,
                 | double iCenterY,

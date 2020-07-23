@@ -15,6 +15,8 @@ from pycatia.system_interfaces.system_service import SystemService
 class Hyperbola2D(Curve2D):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class Hyperbola2D(Curve2D):
     def imaginary_radius(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ImaginaryRadius() As double (Read Only)
                 | 
@@ -59,6 +63,8 @@ class Hyperbola2D(Curve2D):
     def radius(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Radius() As double (Read Only)
                 | 
@@ -78,6 +84,8 @@ class Hyperbola2D(Curve2D):
     def get_axis(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetAxis(CATSafeArrayVariant oAxis)
                 | 
@@ -110,6 +118,8 @@ class Hyperbola2D(Curve2D):
     def get_center(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetCenter(CATSafeArrayVariant oCenter)
                 | 
@@ -144,6 +154,8 @@ class Hyperbola2D(Curve2D):
                  i_minor_radius: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetData(double iCenterX,
                 | double iCenterY,

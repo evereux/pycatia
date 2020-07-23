@@ -16,6 +16,8 @@ from pycatia.system_interfaces.system_service import SystemService
 class Spline2D(Curve2D):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -40,6 +42,8 @@ class Spline2D(Curve2D):
     def get_control_points(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetControlPoints(CATSafeArrayVariant oCtrlPoints)
                 | 
@@ -76,6 +80,8 @@ class Spline2D(Curve2D):
     def get_number_of_control_points(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNumberOfControlPoints() As double
                 | 
@@ -94,6 +100,8 @@ class Spline2D(Curve2D):
     def insert_control_point_after(self, i_ctrl_point: Point2D, i_position: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InsertControlPointAfter(Point2D iCtrlPoint,
                 | long iPosition)

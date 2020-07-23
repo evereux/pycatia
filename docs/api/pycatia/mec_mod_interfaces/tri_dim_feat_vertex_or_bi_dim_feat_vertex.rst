@@ -1,3 +1,5 @@
+.. _Tri_dim_feat_vertex_or_bi_dim_feat_vertex:
+
 pycatia.mec_mod_interfaces.tri_dim_feat_vertex_or_bi_dim_feat_vertex
 ====================================================================
 

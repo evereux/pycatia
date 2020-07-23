@@ -1,3 +1,5 @@
+.. _Dmu_reviews:
+
 pycatia.navigator_interfaces.dmu_reviews
 ========================================
 

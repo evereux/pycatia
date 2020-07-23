@@ -16,6 +16,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeWrapCurve(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -53,6 +55,8 @@ class HybridShapeWrapCurve(HybridShape):
     def first_curves_constraint(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstCurvesConstraint() As long
                 | 
@@ -88,6 +92,8 @@ class HybridShapeWrapCurve(HybridShape):
     def last_curves_constraint(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LastCurvesConstraint() As long
                 | 
@@ -123,6 +129,8 @@ class HybridShapeWrapCurve(HybridShape):
     def surface(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Surface() As Reference
                 | 
@@ -152,6 +160,8 @@ class HybridShapeWrapCurve(HybridShape):
     def get_curves(self, i_position: int, o_reference_curve: Reference, o_target_curve: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetCurves(long iPosition,
                 | Reference oReferenceCurve,
@@ -207,6 +217,8 @@ class HybridShapeWrapCurve(HybridShape):
     def get_number_of_curves(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNumberOfCurves() As long
                 | 
@@ -230,6 +242,8 @@ class HybridShapeWrapCurve(HybridShape):
     def get_reference_direction(self, o_direction_type: int, o_direction: HybridShapeDirection) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetReferenceDirection(long oDirectionType,
                 | HybridShapeDirection oDirection)
@@ -280,6 +294,8 @@ class HybridShapeWrapCurve(HybridShape):
     def get_reference_spine(self, o_spine_type: int, o_spine: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetReferenceSpine(long oSpineType,
                 | Reference oSpine)
@@ -330,6 +346,8 @@ class HybridShapeWrapCurve(HybridShape):
     def insert_curves(self, i_position: int, i_reference_curve: Reference, i_target_curve: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InsertCurves(long iPosition,
                 | Reference iReferenceCurve,
@@ -389,6 +407,8 @@ class HybridShapeWrapCurve(HybridShape):
     def insert_reference_curve(self, i_position: int, i_reference_curve: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InsertReferenceCurve(long iPosition,
                 | Reference iReferenceCurve)
@@ -437,6 +457,8 @@ class HybridShapeWrapCurve(HybridShape):
     def remove_curves(self, i_position: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveCurves(long iPosition)
                 | 
@@ -466,6 +488,8 @@ class HybridShapeWrapCurve(HybridShape):
     def set_reference_direction(self, i_direction: HybridShapeDirection) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetReferenceDirection(HybridShapeDirection iDirection)
                 | 
@@ -507,6 +531,8 @@ class HybridShapeWrapCurve(HybridShape):
     def set_reference_spine(self, i_spine: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetReferenceSpine(Reference iSpine)
                 | 

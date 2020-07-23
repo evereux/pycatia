@@ -17,6 +17,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeConnect(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -47,6 +49,8 @@ class HybridShapeConnect(HybridShape):
     def base_curve(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BaseCurve() As Reference
                 | 
@@ -71,6 +75,8 @@ class HybridShapeConnect(HybridShape):
     def connect_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ConnectType() As long
                 | 
@@ -106,6 +112,8 @@ class HybridShapeConnect(HybridShape):
     def first_continuity(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstContinuity() As long
                 | 
@@ -130,6 +138,8 @@ class HybridShapeConnect(HybridShape):
     def first_curve(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstCurve() As Reference
                 | 
@@ -153,6 +163,8 @@ class HybridShapeConnect(HybridShape):
     def first_orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstOrientation() As long
                 | 
@@ -177,6 +189,8 @@ class HybridShapeConnect(HybridShape):
     def first_point(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstPoint() As Reference
                 | 
@@ -200,6 +214,8 @@ class HybridShapeConnect(HybridShape):
     def first_tension(self) -> RealParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstTension() As RealParam (Read Only)
                 | 
@@ -226,6 +242,8 @@ class HybridShapeConnect(HybridShape):
     def second_continuity(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SecondContinuity() As long
                 | 
@@ -250,6 +268,8 @@ class HybridShapeConnect(HybridShape):
     def second_curve(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondCurve() As Reference
                 | 
@@ -273,6 +293,8 @@ class HybridShapeConnect(HybridShape):
     def second_orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SecondOrientation() As long
                 | 
@@ -297,6 +319,8 @@ class HybridShapeConnect(HybridShape):
     def second_point(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondPoint() As Reference
                 | 
@@ -320,6 +344,8 @@ class HybridShapeConnect(HybridShape):
     def second_tension(self) -> RealParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondTension() As RealParam (Read Only)
                 | 
@@ -346,6 +372,8 @@ class HybridShapeConnect(HybridShape):
     def trim(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Trim() As boolean
                 | 

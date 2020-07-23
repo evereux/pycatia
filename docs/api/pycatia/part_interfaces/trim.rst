@@ -1,3 +1,5 @@
+.. _Trim:
+
 pycatia.part_interfaces.trim
 ============================
 

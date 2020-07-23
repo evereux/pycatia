@@ -17,6 +17,8 @@ class HybridShapeIntersection(HybridShape):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -50,6 +52,8 @@ class HybridShapeIntersection(HybridShape):
     def element1(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Element1() As Reference
                 | 
@@ -82,6 +86,8 @@ class HybridShapeIntersection(HybridShape):
     def element2(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Element2() As Reference
                 | 
@@ -114,6 +120,8 @@ class HybridShapeIntersection(HybridShape):
     def extend_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExtendMode() As long
                 | 
@@ -154,6 +162,8 @@ class HybridShapeIntersection(HybridShape):
     def extrapolate_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExtrapolateMode() As boolean
                 | 
@@ -184,6 +194,8 @@ class HybridShapeIntersection(HybridShape):
     def intersect_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property IntersectMode() As boolean
                 | 
@@ -214,6 +226,8 @@ class HybridShapeIntersection(HybridShape):
     def point_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PointType() As long
                 | 
@@ -244,6 +258,8 @@ class HybridShapeIntersection(HybridShape):
     def solid_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SolidMode() As boolean
                 | 

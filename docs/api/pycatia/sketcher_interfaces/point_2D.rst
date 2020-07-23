@@ -1,3 +1,5 @@
+.. _Point_2d:
+
 pycatia.sketcher_interfaces.point_2D
 ====================================
 

@@ -1,3 +1,5 @@
+.. _Dimension:
+
 pycatia.knowledge_interfaces.dimension
 ======================================
 

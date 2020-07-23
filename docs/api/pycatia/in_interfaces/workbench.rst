@@ -1,3 +1,5 @@
+.. _Workbench:
+
 pycatia.in_interfaces.workbench
 ===============================
 

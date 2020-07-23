@@ -17,6 +17,8 @@ from pycatia.part_interfaces.dress_up_shape import DressUpShape
 class Thickness(DressUpShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -42,6 +44,8 @@ class Thickness(DressUpShape):
     def faces_to_thicken(self) -> References:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FacesToThicken() As References (Read Only)
                 | 
@@ -63,6 +67,8 @@ class Thickness(DressUpShape):
     def offset(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Offset() As Length (Read Only)
                 | 
@@ -83,6 +89,8 @@ class Thickness(DressUpShape):
     def add_face_to_thicken(self, i_face_to_thicken: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddFaceToThicken(Reference iFaceToThicken)
                 | 
@@ -126,6 +134,8 @@ class Thickness(DressUpShape):
     def add_face_with_different_thickness(self, i_face_to_thicken: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddFaceWithDifferentThickness(Reference
                 | iFaceToThicken)
@@ -170,6 +180,8 @@ class Thickness(DressUpShape):
     def remove_face_with_different_thickness(self, i_face_to_remove: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveFaceWithDifferentThickness(Reference
                 | iFaceToRemove)
@@ -214,6 +226,8 @@ class Thickness(DressUpShape):
     def set_volume_support(self, i_volume_support: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetVolumeSupport(Reference iVolumeSupport)
                 | 
@@ -243,6 +257,8 @@ class Thickness(DressUpShape):
     def withdraw_face_to_thicken(self, i_face_to_withdraw: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub WithdrawFaceToThicken(Reference iFaceToWithdraw)
                 | 

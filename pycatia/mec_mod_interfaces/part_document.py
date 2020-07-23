@@ -18,6 +18,8 @@ class PartDocument(Document):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -49,6 +51,8 @@ class PartDocument(Document):
     def part(self) -> Part:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Part() As Part (Read Only)
                 | 
@@ -71,6 +75,8 @@ class PartDocument(Document):
     def product(self) -> Product:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Product() As Product (Read Only)
                 | 

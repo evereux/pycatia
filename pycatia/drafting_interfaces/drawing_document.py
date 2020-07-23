@@ -20,6 +20,8 @@ class DrawingDocument(Document):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -42,6 +44,8 @@ class DrawingDocument(Document):
     def drawing_root(self) -> DrawingRoot:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DrawingRoot() As DrawingRoot (Read Only)
                 | 
@@ -63,6 +67,8 @@ class DrawingDocument(Document):
     def parameters(self) -> Parameters:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Parameters() As Parameters (Read Only)
                 | 
@@ -91,6 +97,8 @@ class DrawingDocument(Document):
     def relations(self) -> Relations:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Relations() As Relations (Read Only)
                 | 
@@ -119,6 +127,8 @@ class DrawingDocument(Document):
     def sheets(self) -> DrawingSheets:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Sheets() As DrawingSheets (Read Only)
                 | 
@@ -143,6 +153,8 @@ class DrawingDocument(Document):
     def standard(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Standard() As CatDrawingStandard
                 | 
@@ -172,6 +184,8 @@ class DrawingDocument(Document):
     def isolate(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Isolate()
                 | 
@@ -193,6 +207,8 @@ class DrawingDocument(Document):
     def update(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Update()
                 | 

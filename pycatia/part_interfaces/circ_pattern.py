@@ -18,6 +18,8 @@ from pycatia.part_interfaces.pattern import Pattern
 class CircPattern(Pattern):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -49,6 +51,8 @@ class CircPattern(Pattern):
     def angular_direction_row(self) -> IntParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AngularDirectionRow() As IntParam (Read Only)
                 | 
@@ -71,6 +75,8 @@ class CircPattern(Pattern):
     def angular_repartition(self) -> AngularRepartition:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AngularRepartition() As AngularRepartition (Read
                 | Only)
@@ -94,6 +100,8 @@ class CircPattern(Pattern):
     def circular_pattern_parameters(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CircularPatternParameters() As
                 | CatCircularPatternParameters
@@ -129,6 +137,8 @@ class CircPattern(Pattern):
     def radial_alignment(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RadialAlignment() As boolean
                 | 
@@ -162,6 +172,8 @@ class CircPattern(Pattern):
     def radial_direction_row(self) -> IntParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RadialDirectionRow() As IntParam (Read Only)
                 | 
@@ -184,6 +196,8 @@ class CircPattern(Pattern):
     def radial_repartition(self) -> LinearRepartition:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RadialRepartition() As LinearRepartition (Read
                 | Only)
@@ -207,6 +221,8 @@ class CircPattern(Pattern):
     def rotation_orientation(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RotationOrientation() As boolean
                 | 
@@ -240,6 +256,8 @@ class CircPattern(Pattern):
     def get_rotation_axis(self, io_rotation_axis: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetRotationAxis(CATSafeArrayVariant ioRotationAxis)
                 | 
@@ -283,6 +301,8 @@ class CircPattern(Pattern):
     def get_rotation_center(self, io_rotation_center: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetRotationCenter(CATSafeArrayVariant
                 | ioRotationCenter)
@@ -329,6 +349,8 @@ class CircPattern(Pattern):
     def set_instance_angular_spacing(self, i_instance_number: int, i_angular_spacing: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetInstanceAngularSpacing(long iInstanceNumber,
                 | double iAngularSpacing)
@@ -356,6 +378,8 @@ class CircPattern(Pattern):
     def set_rotation_axis(self, i_rotation_axis: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetRotationAxis(Reference iRotationAxis)
                 | 
@@ -403,6 +427,8 @@ class CircPattern(Pattern):
     def set_rotation_center(self, i_rotation_center: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetRotationCenter(Reference iRotationCenter)
                 | 
@@ -443,6 +469,8 @@ class CircPattern(Pattern):
     def set_unequal_instance_number(self, i_instance_number: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetUnequalInstanceNumber(long iInstanceNumber)
                 | 
@@ -466,6 +494,8 @@ class CircPattern(Pattern):
     def set_unequal_step(self, i_instance_number: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetUnequalStep(long iInstanceNumber)
                 | 

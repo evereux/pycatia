@@ -17,6 +17,8 @@ class Translate(Shape):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -52,6 +54,8 @@ class Translate(Shape):
     def hybrid_shape(self) -> HybridShape:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HybridShape() As HybridShape (Read Only)
                 | 

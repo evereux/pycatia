@@ -1,3 +1,5 @@
+.. _Hyperlink:
+
 pycatia.navigator_interfaces.hyperlink
 ======================================
 

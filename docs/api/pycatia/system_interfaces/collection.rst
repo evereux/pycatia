@@ -1,3 +1,5 @@
+.. _Collection:
+
 pycatia.system_interfaces.collection
 ====================================
 

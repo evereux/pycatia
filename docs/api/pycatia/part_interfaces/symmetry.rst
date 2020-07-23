@@ -1,3 +1,5 @@
+.. _Symmetry:
+
 pycatia.part_interfaces.symmetry
 ================================
 

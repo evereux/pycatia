@@ -18,6 +18,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class DrawingSheet(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -44,6 +46,8 @@ class DrawingSheet(AnyObject):
     def gen_views_pos_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property GenViewsPosMode() As CatSheetGenViewsPosMode
                 | 
@@ -77,6 +81,8 @@ class DrawingSheet(AnyObject):
     def orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Orientation() As CatPaperOrientation
                 | 
@@ -106,6 +112,8 @@ class DrawingSheet(AnyObject):
     def page_setup(self) -> DrawingPageSetup:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property PageSetup() As DrawingPageSetup (Read Only)
                 | 
@@ -128,6 +136,8 @@ class DrawingSheet(AnyObject):
     def paper_size(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property PaperSize() As CatPaperSize
                 | 
@@ -157,6 +167,8 @@ class DrawingSheet(AnyObject):
     def print_area(self) -> PrintArea:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property PrintArea() As PrintArea (Read Only)
                 | 
@@ -179,6 +191,8 @@ class DrawingSheet(AnyObject):
     def projection_method(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ProjectionMethod() As CatSheetProjectionMethod
                 | 
@@ -208,6 +222,8 @@ class DrawingSheet(AnyObject):
     def scale(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Scale() As double
                 | 
@@ -237,6 +253,8 @@ class DrawingSheet(AnyObject):
     def scale2(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Scale2() As double
                 | 
@@ -267,6 +285,8 @@ class DrawingSheet(AnyObject):
     def views(self) -> DrawingViews:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Views() As DrawingViews (Read Only)
                 | 
@@ -290,6 +310,8 @@ class DrawingSheet(AnyObject):
     def activate(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Activate()
                 | 
@@ -311,6 +333,8 @@ class DrawingSheet(AnyObject):
     def force_update(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub ForceUpdate()
                 | 
@@ -336,6 +360,8 @@ class DrawingSheet(AnyObject):
     def generate_dimensions(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GenerateDimensions()
                 | 
@@ -361,6 +387,8 @@ class DrawingSheet(AnyObject):
     def get_paper_height(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetPaperHeight() As double
                 | 
@@ -384,6 +412,8 @@ class DrawingSheet(AnyObject):
     def get_paper_width(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetPaperWidth() As double
                 | 
@@ -407,6 +437,8 @@ class DrawingSheet(AnyObject):
     def is_detail(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func IsDetail() As boolean
                 | 
@@ -428,6 +460,8 @@ class DrawingSheet(AnyObject):
     def isolate(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Isolate()
                 | 
@@ -448,6 +482,8 @@ class DrawingSheet(AnyObject):
     def print_out(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub PrintOut()
                 | 
@@ -470,6 +506,8 @@ class DrawingSheet(AnyObject):
     def print_to_file(self, file_name: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub PrintToFile(CATBSTR fileName)
                 | 
@@ -497,6 +535,8 @@ class DrawingSheet(AnyObject):
     def set_as_detail(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetAsDetail()
                 | 
@@ -519,6 +559,8 @@ class DrawingSheet(AnyObject):
     def set_paper_height(self, o_paper_height: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetPaperHeight(double oPaperHeight)
                 | 
@@ -545,6 +587,8 @@ class DrawingSheet(AnyObject):
     def set_paper_width(self, o_paper_width: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetPaperWidth(double oPaperWidth)
                 | 
@@ -571,6 +615,8 @@ class DrawingSheet(AnyObject):
     def update(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Update()
                 | 
@@ -596,6 +642,8 @@ class DrawingSheet(AnyObject):
     def reorder_views(self, i_ordered_views: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub reorder_Views(CATSafeArrayVariant iOrderedViews)
                 | 

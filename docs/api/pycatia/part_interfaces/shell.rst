@@ -1,3 +1,5 @@
+.. _Shell:
+
 pycatia.part_interfaces.shell
 =============================
 

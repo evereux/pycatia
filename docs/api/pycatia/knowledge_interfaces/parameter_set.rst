@@ -1,3 +1,5 @@
+.. _Parameter_set:
+
 pycatia.knowledge_interfaces.parameter_set
 ==========================================
 

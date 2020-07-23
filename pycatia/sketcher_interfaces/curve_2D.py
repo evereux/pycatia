@@ -16,6 +16,8 @@ from pycatia.system_interfaces.system_service import SystemService
 class Curve2D(Geometry2D):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class Curve2D(Geometry2D):
     def continuity(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Continuity() As short (Read Only)
                 | 
@@ -60,6 +64,8 @@ class Curve2D(Geometry2D):
     def end_point(self) -> Point2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property EndPoint() As Point2D
                 | 
@@ -89,6 +95,8 @@ class Curve2D(Geometry2D):
     def period(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Period() As double (Read Only)
                 | 
@@ -109,6 +117,8 @@ class Curve2D(Geometry2D):
     def start_point(self) -> Point2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property StartPoint() As Point2D
                 | 
@@ -138,6 +148,8 @@ class Curve2D(Geometry2D):
     def get_curvature(self, i_param: float) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetCurvature(double iParam,
                 | CATSafeArrayVariant oCurvature)
@@ -175,6 +187,8 @@ class Curve2D(Geometry2D):
     def get_derivatives(self, i_param: float) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetDerivatives(double iParam,
                 | CATSafeArrayVariant oDerivative)
@@ -213,6 +227,8 @@ class Curve2D(Geometry2D):
     def get_end_points(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetEndPoints(CATSafeArrayVariant oEndPoints)
                 | 
@@ -250,6 +266,8 @@ class Curve2D(Geometry2D):
     def get_length_at_param(self, i_from_param: float, i_to_param: float) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetLengthAtParam(double iFromParam,
                 | double iToParam) As double
@@ -278,6 +296,8 @@ class Curve2D(Geometry2D):
     def get_param_at_length(self, i_from_param: float, i_length: float) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetParamAtLength(double iFromParam,
                 | double iLength) As double
@@ -309,6 +329,8 @@ class Curve2D(Geometry2D):
     def get_param_extents(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetParamExtents(CATSafeArrayVariant oParams)
                 | 
@@ -343,6 +365,8 @@ class Curve2D(Geometry2D):
     def get_point_at_param(self, i_param: float) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetPointAtParam(double iParam,
                 | CATSafeArrayVariant oPoint)
@@ -378,6 +402,8 @@ class Curve2D(Geometry2D):
     def get_range_box(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetRangeBox(CATSafeArrayVariant oBoundPoint)
                 | 
@@ -415,6 +441,8 @@ class Curve2D(Geometry2D):
     def get_tangent(self, i_param: float) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetTangent(double iParam,
                 | CATSafeArrayVariant oTangency)
@@ -450,6 +478,8 @@ class Curve2D(Geometry2D):
     def is_periodic(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func IsPeriodic() As boolean
                 | 

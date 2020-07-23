@@ -19,6 +19,8 @@ class Rotate(Shape):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -53,6 +55,8 @@ class Rotate(Shape):
     def angle(self) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Angle() As Angle (Read Only)
                 | 
@@ -68,6 +72,8 @@ class Rotate(Shape):
     def angle_value(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AngleValue() As double
                 | 
@@ -97,6 +103,8 @@ class Rotate(Shape):
     def axis(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Axis() As Reference
                 | 
@@ -129,6 +137,8 @@ class Rotate(Shape):
     def hybrid_shape(self) -> HybridShape:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HybridShape() As HybridShape (Read Only)
                 | 

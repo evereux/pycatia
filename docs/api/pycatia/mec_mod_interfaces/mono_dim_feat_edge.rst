@@ -1,3 +1,5 @@
+.. _Mono_dim_feat_edge:
+
 pycatia.mec_mod_interfaces.mono_dim_feat_edge
 =============================================
 

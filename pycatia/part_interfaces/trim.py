@@ -15,6 +15,8 @@ from pycatia.part_interfaces.boolean_shape import BooleanShape
 class Trim(BooleanShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class Trim(BooleanShape):
     def add_face_to_keep(self, i_face_to_keep: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddFaceToKeep(Reference iFaceToKeep)
                 | 
@@ -82,6 +86,8 @@ class Trim(BooleanShape):
     def add_face_to_keep2(self, i_face_to_keep: Reference, i_face_adjacent_for_keep: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddFaceToKeep2(Reference iFaceToKeep,
                 | Reference iFaceAdjacentForKeep)
@@ -132,6 +138,8 @@ class Trim(BooleanShape):
     def add_face_to_remove(self, i_face_to_remove: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddFaceToRemove(Reference iFaceToRemove)
                 | 
@@ -176,6 +184,8 @@ class Trim(BooleanShape):
     def add_face_to_remove2(self, i_face_to_remove: Reference, i_face_adjacent_for_remove: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddFaceToRemove2(Reference iFaceToRemove,
                 | Reference iFaceAdjacentForRemove)
@@ -226,6 +236,8 @@ class Trim(BooleanShape):
     def withdraw_face_to_keep(self, i_face_to_withdraw: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub WithdrawFaceToKeep(Reference iFaceToWithdraw)
                 | 
@@ -270,6 +282,8 @@ class Trim(BooleanShape):
     def withdraw_face_to_keep2(self, i_face_to_withdraw: Reference, i_face_adjacent_for_keep: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub WithdrawFaceToKeep2(Reference iFaceToWithdraw,
                 | Reference iFaceAdjacentForKeep)
@@ -320,6 +334,8 @@ class Trim(BooleanShape):
     def withdraw_face_to_remove(self, i_face_to_withdraw: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub WithdrawFaceToRemove(Reference iFaceToWithdraw)
                 | 
@@ -364,6 +380,8 @@ class Trim(BooleanShape):
     def withdraw_face_to_remove2(self, i_face_to_withdraw: Reference, i_face_adjacent_for_remove: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub WithdrawFaceToRemove2(Reference iFaceToWithdraw,
                 | Reference iFaceAdjacentForRemove)

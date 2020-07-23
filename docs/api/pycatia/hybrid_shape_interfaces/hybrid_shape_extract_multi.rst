@@ -1,3 +1,5 @@
+.. _Hybrid_shape_extract_multi:
+
 pycatia.hybrid_shape_interfaces.hybrid_shape_extract_multi
 ==========================================================
 

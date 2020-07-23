@@ -16,6 +16,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class ParameterSet(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class ParameterSet(AnyObject):
     def all_parameters(self) -> list:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic help
                 | AllParameters
                 | o Property AllParameters() As Parameters
@@ -58,6 +62,8 @@ class ParameterSet(AnyObject):
     def direct_parameters(self) -> Parameters:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DirectParameters() As Parameters (Read Only)
                 | 
@@ -73,6 +79,8 @@ class ParameterSet(AnyObject):
     def parameter_sets(self) -> 'ParameterSets':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ParameterSets() As ParameterSets (Read Only)
                 | 

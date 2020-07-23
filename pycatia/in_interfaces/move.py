@@ -15,6 +15,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class Move(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -42,6 +44,8 @@ class Move(AnyObject):
     def movable_object(self) -> 'Move':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic help
 
                 | MovableObject
@@ -62,6 +66,8 @@ class Move(AnyObject):
     def apply(self, i_transformation_array: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic help
 
                 | Apply

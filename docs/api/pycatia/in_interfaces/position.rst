@@ -1,3 +1,5 @@
+.. _Position:
+
 pycatia.in_interfaces.position
 ==============================
 

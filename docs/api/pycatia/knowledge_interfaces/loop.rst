@@ -1,3 +1,5 @@
+.. _Loop:
+
 pycatia.knowledge_interfaces.loop
 =================================
 

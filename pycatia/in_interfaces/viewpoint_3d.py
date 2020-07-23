@@ -15,6 +15,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class Viewpoint3D(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -47,6 +49,8 @@ class Viewpoint3D(AnyObject):
     def field_of_view(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FieldOfView() As double
                 | 
@@ -79,6 +83,8 @@ class Viewpoint3D(AnyObject):
     def focus_distance(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FocusDistance() As double
                 | 
@@ -111,6 +117,8 @@ class Viewpoint3D(AnyObject):
     def projection_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ProjectionMode() As CatProjectionMode
                 | 
@@ -140,6 +148,8 @@ class Viewpoint3D(AnyObject):
     def zoom(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Zoom() As double
                 | 
@@ -175,6 +185,8 @@ class Viewpoint3D(AnyObject):
     def get_origin(self, origin: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetOrigin(CATSafeArrayVariant origin)
                 | 
@@ -212,6 +224,8 @@ class Viewpoint3D(AnyObject):
     def get_sight_direction(self, o_sight: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetSightDirection(CATSafeArrayVariant oSight)
                 | 
@@ -250,6 +264,8 @@ class Viewpoint3D(AnyObject):
     def get_up_direction(self, o_up: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetUpDirection(CATSafeArrayVariant oUp)
                 | 
@@ -286,6 +302,8 @@ class Viewpoint3D(AnyObject):
     def put_origin(self, origin: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutOrigin(CATSafeArrayVariant origin)
                 | 
@@ -322,6 +340,8 @@ class Viewpoint3D(AnyObject):
     def put_sight_direction(self, o_sight: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutSightDirection(CATSafeArrayVariant oSight)
                 | 
@@ -360,6 +380,8 @@ class Viewpoint3D(AnyObject):
     def put_up_direction(self, o_up: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutUpDirection(CATSafeArrayVariant oUp)
                 | 

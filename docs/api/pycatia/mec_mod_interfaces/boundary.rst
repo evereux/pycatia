@@ -1,3 +1,5 @@
+.. _Boundary:
+
 pycatia.mec_mod_interfaces.boundary
 ===================================
 

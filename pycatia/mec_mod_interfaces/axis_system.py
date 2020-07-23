@@ -17,6 +17,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class AxisSystem(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class AxisSystem(AnyObject):
     def axis_rotation_angle(self) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AxisRotationAngle() As Angle (Read Only)
                 | 
@@ -56,6 +60,8 @@ class AxisSystem(AnyObject):
     def axis_rotation_reference(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AxisRotationReference() As Reference
                 | 
@@ -81,6 +87,8 @@ class AxisSystem(AnyObject):
     def is_current(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property IsCurrent() As boolean
                 | 
@@ -121,6 +129,8 @@ class AxisSystem(AnyObject):
     def origin_point(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property OriginPoint() As Reference
                 | 
@@ -160,6 +170,8 @@ class AxisSystem(AnyObject):
     def origin_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property OriginType() As CATAxisSystemOriginType
                 | 
@@ -202,6 +214,8 @@ class AxisSystem(AnyObject):
     def type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Type() As CATAxisSystemMainType
                 | 
@@ -247,6 +261,8 @@ class AxisSystem(AnyObject):
     def x_axis_direction(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property XAxisDirection() As Reference
                 | 
@@ -286,6 +302,8 @@ class AxisSystem(AnyObject):
     def x_axis_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property XAxisType() As CATAxisSystemAxisType
                 | 
@@ -328,6 +346,8 @@ class AxisSystem(AnyObject):
     def y_axis_direction(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property YAxisDirection() As Reference
                 | 
@@ -368,6 +388,8 @@ class AxisSystem(AnyObject):
     def y_axis_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property YAxisType() As CATAxisSystemAxisType
                 | 
@@ -410,6 +432,8 @@ class AxisSystem(AnyObject):
     def z_axis_direction(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ZAxisDirection() As Reference
                 | 
@@ -450,6 +474,8 @@ class AxisSystem(AnyObject):
     def z_axis_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ZAxisType() As CATAxisSystemAxisType
                 | 
@@ -491,6 +517,8 @@ class AxisSystem(AnyObject):
     def get_euler_angles(self, o_first_angle: Angle, o_second_angle: Angle, third_angle: Angle) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetEulerAngles(Angle oFirstAngle,
                 | Angle oSecondAngle,
@@ -527,6 +555,8 @@ class AxisSystem(AnyObject):
     def get_origin(self, o_origin: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetOrigin(CATSafeArrayVariant oOrigin)
                 | 
@@ -571,6 +601,8 @@ class AxisSystem(AnyObject):
     def get_vectors(self, o_vector_x: tuple, o_vector_y: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetVectors(CATSafeArrayVariant oVectorX,
                 | CATSafeArrayVariant oVectorY)
@@ -623,6 +655,8 @@ class AxisSystem(AnyObject):
     def get_x_axis(self, o_x_axis: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetXAxis(CATSafeArrayVariant oXAxis)
                 | 
@@ -667,6 +701,8 @@ class AxisSystem(AnyObject):
     def get_y_axis(self, o_y_axis: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetYAxis(CATSafeArrayVariant oYAxis)
                 | 
@@ -711,6 +747,8 @@ class AxisSystem(AnyObject):
     def get_z_axis(self, o_z_axis: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetZAxis(CATSafeArrayVariant oZAxis)
                 | 
@@ -755,6 +793,8 @@ class AxisSystem(AnyObject):
     def put_origin(self, i_origin: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutOrigin(CATSafeArrayVariant iOrigin)
                 | 
@@ -802,6 +842,8 @@ class AxisSystem(AnyObject):
     def put_vectors(self, i_vector_x: tuple, i_vector_y: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutVectors(CATSafeArrayVariant iVectorX,
                 | CATSafeArrayVariant iVectorY)
@@ -860,6 +902,8 @@ class AxisSystem(AnyObject):
     def put_x_axis(self, i_x_axis: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutXAxis(CATSafeArrayVariant iXAxis)
                 | 
@@ -907,6 +951,8 @@ class AxisSystem(AnyObject):
     def put_y_axis(self, i_y_axis: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutYAxis(CATSafeArrayVariant iYAxis)
                 | 
@@ -954,6 +1000,8 @@ class AxisSystem(AnyObject):
     def put_z_axis(self, i_z_axis: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutZAxis(CATSafeArrayVariant iZAxis)
                 | 

@@ -15,6 +15,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class SendToService(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -41,6 +43,8 @@ class SendToService(AnyObject):
     def add_file(self, i_path: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddFile(CATBSTR iPath)
                 | 
@@ -64,6 +68,8 @@ class SendToService(AnyObject):
     def get_last_send_to_method_error(self, o_error_param: str, o_error_code: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetLastSendToMethodError(CATBSTR oErrorParam,
                 | long oErrorCode)
@@ -104,6 +110,8 @@ class SendToService(AnyObject):
     def get_list_of_dependant_file(self, o_dependant: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetListOfDependantFile(CATSafeArrayVariant oDependant)
                 | 
@@ -143,6 +151,8 @@ class SendToService(AnyObject):
     def get_list_of_to_be_copied_files(self, o_will_be_copied: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetListOfToBeCopiedFiles(CATSafeArrayVariant
                 | oWillBeCopied)
@@ -182,6 +192,8 @@ class SendToService(AnyObject):
     def keep_directory(self, i_keep: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub KeepDirectory(boolean iKeep)
                 | 
@@ -225,6 +237,8 @@ class SendToService(AnyObject):
     def remove_file(self, i_file: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveFile(CATBSTR iFile)
                 | 
@@ -247,6 +261,8 @@ class SendToService(AnyObject):
     def run(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Run()
                 | 
@@ -263,6 +279,8 @@ class SendToService(AnyObject):
     def set_directory_file(self, i_directory: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDirectoryFile(CATBSTR iDirectory)
                 | 
@@ -287,6 +305,8 @@ class SendToService(AnyObject):
     def set_directory_one_file(self, i_file: str, i_directory: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDirectoryOneFile(CATBSTR iFile,
                 | CATBSTR iDirectory)
@@ -315,6 +335,8 @@ class SendToService(AnyObject):
     def set_initial_file(self, i_path: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetInitialFile(CATBSTR iPath)
                 | 
@@ -343,6 +365,8 @@ class SendToService(AnyObject):
     def set_rename_file(self, i_oldname: str, i_new_name: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetRenameFile(CATBSTR iOldname,
                 | CATBSTR iNewName)

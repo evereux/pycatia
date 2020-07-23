@@ -1,3 +1,5 @@
+.. _Thread:
+
 pycatia.part_interfaces.thread
 ==============================
 

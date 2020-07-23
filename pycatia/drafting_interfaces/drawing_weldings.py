@@ -16,6 +16,8 @@ from pycatia.system_interfaces.collection import Collection
 class DrawingWeldings(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -37,6 +39,8 @@ class DrawingWeldings(Collection):
     def add(self, i_symbol: int, i_position_x: float, i_position_y: float) -> DrawingWelding:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add(CatWeldingSymbol iSymbol,
                 | double iPositionX,
@@ -80,6 +84,8 @@ class DrawingWeldings(Collection):
     def item(self, i_index: int) -> DrawingWelding:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(long iIndex) As DrawingWelding
                 | 
@@ -117,6 +123,8 @@ class DrawingWeldings(Collection):
     def remove(self, i_index: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(long iIndex)
                 | 

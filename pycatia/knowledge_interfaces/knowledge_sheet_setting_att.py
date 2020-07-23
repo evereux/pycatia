@@ -15,6 +15,8 @@ from pycatia.system_interfaces.setting_controller import SettingController
 class KnowledgeSheetSettingAtt(SettingController):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class KnowledgeSheetSettingAtt(SettingController):
     def design_tables_copy_data(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DesignTablesCopyData() As short
                 | 
@@ -72,6 +76,8 @@ class KnowledgeSheetSettingAtt(SettingController):
     def design_tables_synchronization(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DesignTablesSynchronization() As short
                 | 
@@ -106,6 +112,8 @@ class KnowledgeSheetSettingAtt(SettingController):
     def parameter_name_surrounded_by_the_symbol(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ParameterNameSurroundedByTheSymbol() As short
                 | 
@@ -140,6 +148,8 @@ class KnowledgeSheetSettingAtt(SettingController):
     def parameter_tree_view_with_formula(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ParameterTreeViewWithFormula() As short
                 | 
@@ -174,6 +184,8 @@ class KnowledgeSheetSettingAtt(SettingController):
     def parameter_tree_view_with_value(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ParameterTreeViewWithValue() As short
                 | 
@@ -207,6 +219,8 @@ class KnowledgeSheetSettingAtt(SettingController):
     def relations_update_in_part_context_evaluate_during_update(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property RelationsUpdateInPartContextEvaluateDuringUpdate() As
                 | short
@@ -242,6 +256,8 @@ class KnowledgeSheetSettingAtt(SettingController):
     def relations_update_in_part_context_synchronous_relations(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property RelationsUpdateInPartContextSynchronousRelations() As
                 | short
@@ -276,6 +292,8 @@ class KnowledgeSheetSettingAtt(SettingController):
     def get_design_tables_copy_data_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetDesignTablesCopyDataInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -311,6 +329,8 @@ class KnowledgeSheetSettingAtt(SettingController):
     def get_design_tables_synchronization_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetDesignTablesSynchronizationInfo(CATBSTR
                 | ioAdminLevel,
@@ -347,6 +367,8 @@ class KnowledgeSheetSettingAtt(SettingController):
     def get_parameter_name_surrounded_by_the_symbol_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetParameterNameSurroundedByTheSymbolInfo(CATBSTR
                 | ioAdminLevel,
@@ -383,6 +405,8 @@ class KnowledgeSheetSettingAtt(SettingController):
     def get_parameter_tree_view_with_formula_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetParameterTreeViewWithFormulaInfo(CATBSTR
                 | ioAdminLevel,
@@ -419,6 +443,8 @@ class KnowledgeSheetSettingAtt(SettingController):
     def get_parameter_tree_view_with_value_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetParameterTreeViewWithValueInfo(CATBSTR
                 | ioAdminLevel,
@@ -457,6 +483,8 @@ class KnowledgeSheetSettingAtt(SettingController):
                                                                          io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetRelationsUpdateInPartContextEvaluateDuringUpdateInfo(CATBSTR
                 | ioAdminLevel,
@@ -498,6 +526,8 @@ class KnowledgeSheetSettingAtt(SettingController):
                                                                         io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetRelationsUpdateInPartContextSynchronousRelationsInfo(CATBSTR
                 | ioAdminLevel,
@@ -537,6 +567,8 @@ class KnowledgeSheetSettingAtt(SettingController):
     def set_design_tables_copy_data_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetDesignTablesCopyDataLock(boolean iLocked)
                 | 
@@ -577,6 +609,8 @@ class KnowledgeSheetSettingAtt(SettingController):
     def set_design_tables_synchronization_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetDesignTablesSynchronizationLock(boolean iLocked)
                 | 
@@ -618,6 +652,8 @@ class KnowledgeSheetSettingAtt(SettingController):
     def set_parameter_name_surrounded_by_the_symbol_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetParameterNameSurroundedByTheSymbolLock(boolean
                 | iLocked)
@@ -660,6 +696,8 @@ class KnowledgeSheetSettingAtt(SettingController):
     def set_parameter_tree_view_with_formula_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetParameterTreeViewWithFormulaLock(boolean iLocked)
                 | 
@@ -701,6 +739,8 @@ class KnowledgeSheetSettingAtt(SettingController):
     def set_parameter_tree_view_with_value_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetParameterTreeViewWithValueLock(boolean iLocked)
                 | 
@@ -741,6 +781,8 @@ class KnowledgeSheetSettingAtt(SettingController):
     def set_relations_update_in_part_context_evaluate_during_update_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetRelationsUpdateInPartContextEvaluateDuringUpdateLock(boolean
                 | iLocked)
@@ -783,6 +825,8 @@ class KnowledgeSheetSettingAtt(SettingController):
     def set_relations_update_in_part_context_synchronous_relations_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetRelationsUpdateInPartContextSynchronousRelationsLock(boolean
                 | iLocked)

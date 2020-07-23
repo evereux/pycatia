@@ -19,6 +19,8 @@ class HybridShapeCorner(HybridShape):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -53,6 +55,8 @@ class HybridShapeCorner(HybridShape):
     def begin_of_corner(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BeginOfCorner() As long
                 | 
@@ -85,6 +89,8 @@ class HybridShapeCorner(HybridShape):
     def corner_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CornerType() As long
                 | 
@@ -117,6 +123,8 @@ class HybridShapeCorner(HybridShape):
     def direction(self) -> HybridShapeDirection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Direction() As HybridShapeDirection
                 | 
@@ -152,6 +160,8 @@ class HybridShapeCorner(HybridShape):
     def discrimination_index(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DiscriminationIndex() As long
                 | 
@@ -187,6 +197,8 @@ class HybridShapeCorner(HybridShape):
     def first_elem(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstElem() As Reference
                 | 
@@ -223,6 +235,8 @@ class HybridShapeCorner(HybridShape):
     def first_orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstOrientation() As long
                 | 
@@ -262,6 +276,8 @@ class HybridShapeCorner(HybridShape):
     def first_tangent_orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstTangentOrientation() As long
                 | 
@@ -296,6 +312,8 @@ class HybridShapeCorner(HybridShape):
     def on_vertex(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OnVertex() As boolean
                 | 
@@ -328,6 +346,8 @@ class HybridShapeCorner(HybridShape):
     def radius(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Radius() As Length (Read Only)
                 | 
@@ -352,6 +372,8 @@ class HybridShapeCorner(HybridShape):
     def second_elem(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondElem() As Reference
                 | 
@@ -388,6 +410,8 @@ class HybridShapeCorner(HybridShape):
     def second_orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondOrientation() As long
                 | 
@@ -428,6 +452,8 @@ class HybridShapeCorner(HybridShape):
     def second_tangent_orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondTangentOrientation() As long
                 | 
@@ -462,6 +488,8 @@ class HybridShapeCorner(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
@@ -496,6 +524,8 @@ class HybridShapeCorner(HybridShape):
     def trim(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Trim() As boolean
                 | 
@@ -532,6 +562,8 @@ class HybridShapeCorner(HybridShape):
     def trim_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TrimMode() As long
                 | 
@@ -569,6 +601,8 @@ class HybridShapeCorner(HybridShape):
     def invert_first_orientation(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InvertFirstOrientation()
                 | 
@@ -592,6 +626,8 @@ class HybridShapeCorner(HybridShape):
     def invert_second_orientation(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InvertSecondOrientation()
                 | 

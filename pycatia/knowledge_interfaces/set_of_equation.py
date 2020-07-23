@@ -15,6 +15,8 @@ from pycatia.knowledge_interfaces.relation import Relation
 class SetOfEquation(Relation):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class SetOfEquation(Relation):
     def get_max_calculation_time(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetMaxCalculationTime() As long
                 | 
@@ -51,6 +55,8 @@ class SetOfEquation(Relation):
     def get_precision(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetPrecision() As double
                 | 
@@ -64,6 +70,8 @@ class SetOfEquation(Relation):
     def get_symbolc_transformations(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetSymbolcTransformations() As boolean
                 | 
@@ -79,6 +87,8 @@ class SetOfEquation(Relation):
     def is_stop_dialog(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func IsStopDialog() As boolean
                 | 
@@ -94,6 +104,8 @@ class SetOfEquation(Relation):
     def set_max_calculation_time(self, i_max_time: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetMaxCalculationTime(long iMaxTime)
                 | 
@@ -108,6 +120,8 @@ class SetOfEquation(Relation):
     def set_parameter_as_input(self, i_parameter: 'Parameter') -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetParameterAsInput(Parameter iParameter)
                 | 
@@ -144,6 +158,8 @@ class SetOfEquation(Relation):
     def set_parameter_as_output(self, i_parameter: 'Parameter') -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetParameterAsOutput(Parameter iParameter)
                 | 
@@ -180,6 +196,8 @@ class SetOfEquation(Relation):
     def set_precision(self, i_eps: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetPrecision(double iEps)
                 | 
@@ -200,6 +218,8 @@ class SetOfEquation(Relation):
     def use_stop_dialog(self, i_used: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub UseStopDialog(boolean iUsed)
                 | 
@@ -231,6 +251,8 @@ class SetOfEquation(Relation):
     def use_symbolc_transformations(self, i_gauss: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub UseSymbolcTransformations(boolean iGauss)
                 | 

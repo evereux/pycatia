@@ -19,6 +19,8 @@ from pycatia.system_interfaces.system_service import SystemService
 class Section(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -42,6 +44,8 @@ class Section(AnyObject):
     def annotated_views(self) -> AnnotatedViews:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AnnotatedViews() As AnnotatedViews (Read Only)
                 | 
@@ -66,6 +70,8 @@ class Section(AnyObject):
     def behavior(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Behavior() As CatSectionBehavior
                 | 
@@ -111,6 +117,8 @@ class Section(AnyObject):
     def cut_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CutMode() As long
                 | 
@@ -156,6 +164,8 @@ class Section(AnyObject):
     def group(self) -> Group:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Group() As Group
                 | 
@@ -195,6 +205,8 @@ class Section(AnyObject):
     def height(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Height() As double
                 | 
@@ -239,6 +251,8 @@ class Section(AnyObject):
     def marker_3ds(self) -> Marker3Ds:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Marker3Ds() As Marker3Ds (Read Only)
                 | 
@@ -263,6 +277,8 @@ class Section(AnyObject):
     def thickness(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Thickness() As double
                 | 
@@ -307,6 +323,8 @@ class Section(AnyObject):
     def type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Type() As CatSectionType
                 | 
@@ -351,6 +369,8 @@ class Section(AnyObject):
     def width(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Width() As double
                 | 
@@ -394,6 +414,8 @@ class Section(AnyObject):
     def export(self) -> 'Document':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Export() As Document
                 | 
@@ -419,6 +441,8 @@ class Section(AnyObject):
     def get_position(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetPosition(CATSafeArrayVariant oComponents)
                 | 
@@ -487,6 +511,8 @@ class Section(AnyObject):
     def is_empty(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func IsEmpty() As long
                 | 
@@ -512,6 +538,8 @@ class Section(AnyObject):
     def set_position(self, i_components: tuple):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPosition(CATSafeArrayVariant iComponents)
                 | 

@@ -1,3 +1,5 @@
+.. _Add:
+
 pycatia.part_interfaces.add
 ===========================
 

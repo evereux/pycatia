@@ -1,3 +1,5 @@
+.. _Relations:
+
 pycatia.knowledge_interfaces.relations
 ======================================
 
