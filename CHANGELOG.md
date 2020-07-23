@@ -6,6 +6,11 @@
 * Improved error message for selection.search.
 * Removed product.concession (now constraints and easier to use).
 * Removed application.execute_script and application.evaluate. Should use application.system_service.
+* Docs 
+   * API CAA reference note now collapsed by default.
+   * Restructured examples.
+   * Added pycatia API tree for overview.
+   * Changed sphinx theme to alabaster.
 
 
 ## 0.3.8
