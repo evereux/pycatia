@@ -17,6 +17,8 @@ class ShapeInstance(Shape):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class ShapeInstance(Shape):
     def inputs_count(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property InputsCount() As long (Read Only)
                 | 
@@ -60,6 +64,8 @@ class ShapeInstance(Shape):
     def outputs_count(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OutputsCount() As long (Read Only)
                 | 
@@ -81,6 +87,8 @@ class ShapeInstance(Shape):
     def parameters_count(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ParametersCount() As long (Read Only)
                 | 
@@ -101,6 +109,8 @@ class ShapeInstance(Shape):
     def get_input(self, i_name: str) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetInput(CATBSTR iName) As AnyObject
                 | 
@@ -130,6 +140,8 @@ class ShapeInstance(Shape):
     def get_input_data(self, i_name: str) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetInputData(CATBSTR iName) As CATBaseDispatch
                 | 
@@ -160,6 +172,8 @@ class ShapeInstance(Shape):
     def get_input_data_from_position(self, i_position: int) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetInputDataFromPosition(long iPosition) As
                 | CATBaseDispatch
@@ -191,6 +205,8 @@ class ShapeInstance(Shape):
     def get_input_from_position(self, i_position: int) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetInputFromPosition(long iPosition) As AnyObject
                 | 
@@ -221,6 +237,8 @@ class ShapeInstance(Shape):
     def get_output(self, i_name: str) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetOutput(CATBSTR iName) As AnyObject
                 | 
@@ -250,6 +268,8 @@ class ShapeInstance(Shape):
     def get_output_from_position(self, i_position: int) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetOutputFromPosition(long iPosition) As AnyObject
                 | 
@@ -279,6 +299,8 @@ class ShapeInstance(Shape):
     def get_parameter(self, i_name: str) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetParameter(CATBSTR iName) As AnyObject
                 | 
@@ -309,6 +331,8 @@ class ShapeInstance(Shape):
     def get_parameter_from_position(self, i_position: int) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetParameterFromPosition(long iPosition) As AnyObject
                 | 
@@ -340,6 +364,8 @@ class ShapeInstance(Shape):
     def put_input(self, i_name: str, i_input: AnyObject) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutInput(CATBSTR iName,
                 | AnyObject iInput)
@@ -372,6 +398,8 @@ class ShapeInstance(Shape):
     def put_input_data(self, i_name: str, i_input: AnyObject) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutInputData(CATBSTR iName,
                 | CATBaseDispatch iInput)

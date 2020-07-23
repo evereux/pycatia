@@ -17,6 +17,8 @@ from pycatia.part_interfaces.sketch_based_shape import SketchBasedShape
 class Revolution(SketchBasedShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -44,6 +46,8 @@ class Revolution(SketchBasedShape):
     def first_angle(self) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstAngle() As Angle (Read Only)
                 | 
@@ -68,6 +72,8 @@ class Revolution(SketchBasedShape):
     def is_thin(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property IsThin() As boolean
                 | 
@@ -104,6 +110,8 @@ class Revolution(SketchBasedShape):
     def merge_end(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MergeEnd() As boolean
                 | 
@@ -139,6 +147,8 @@ class Revolution(SketchBasedShape):
     def neutral_fiber(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NeutralFiber() As boolean
                 | 
@@ -176,6 +186,8 @@ class Revolution(SketchBasedShape):
     def revolute_axis(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RevoluteAxis() As Reference
                 | 
@@ -205,6 +217,8 @@ class Revolution(SketchBasedShape):
     def second_angle(self) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondAngle() As Angle (Read Only)
                 | 

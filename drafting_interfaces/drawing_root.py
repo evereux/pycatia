@@ -19,6 +19,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class DrawingRoot(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -43,6 +45,8 @@ class DrawingRoot(AnyObject):
     def active_sheet(self) -> DrawingSheet:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ActiveSheet() As DrawingSheet
                 | 
@@ -74,6 +78,8 @@ class DrawingRoot(AnyObject):
     def parameters(self) -> Parameters:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Parameters() As Parameters (Read Only)
                 | 
@@ -104,6 +110,8 @@ class DrawingRoot(AnyObject):
     def relations(self) -> Relations:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Relations() As Relations (Read Only)
                 | 
@@ -134,6 +142,8 @@ class DrawingRoot(AnyObject):
     def sheets(self) -> DrawingSheets:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Sheets() As DrawingSheets (Read Only)
                 | 
@@ -160,6 +170,8 @@ class DrawingRoot(AnyObject):
     def standard(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Standard() As CatDrawingStandard
                 | 
@@ -191,6 +203,8 @@ class DrawingRoot(AnyObject):
     def isolate(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Isolate()
                 | 
@@ -214,6 +228,8 @@ class DrawingRoot(AnyObject):
     def update(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Update()
                 | 
@@ -235,6 +251,8 @@ class DrawingRoot(AnyObject):
     def reorder_sheets(self, i_ordered_sheets: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub reorder_Sheets(CATSafeArrayVariant iOrderedSheets)
                 | 

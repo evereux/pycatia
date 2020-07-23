@@ -17,6 +17,8 @@ from pycatia.types import cat_variant
 class FixTogether(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -41,6 +43,8 @@ class FixTogether(AnyObject):
     def fix_togethers_count(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FixTogethersCount() As long (Read Only)
                 | 
@@ -63,6 +67,8 @@ class FixTogether(AnyObject):
     def products_count(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ProductsCount() As long (Read Only)
                 | 
@@ -84,6 +90,8 @@ class FixTogether(AnyObject):
     def add_fix_together(self, i_fix_together: 'FixTogether') -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddFixTogether(FixTogether iFixTogether)
                 | 
@@ -120,6 +128,8 @@ class FixTogether(AnyObject):
     def add_product(self, i_product: Product) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddProduct(Product iProduct)
                 | 
@@ -156,6 +166,8 @@ class FixTogether(AnyObject):
     def get_fix_together(self, i_index: cat_variant) -> 'FixTogether':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetFixTogether(CATVariant iIndex) As FixTogether
                 | 
@@ -193,6 +205,8 @@ class FixTogether(AnyObject):
     def get_product(self, i_index: cat_variant) -> Product:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetProduct(CATVariant iIndex) As Product
                 | 
@@ -230,6 +244,8 @@ class FixTogether(AnyObject):
     def remove_fix_together(self, i_index: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveFixTogether(CATVariant iIndex)
                 | 
@@ -261,6 +277,8 @@ class FixTogether(AnyObject):
     def remove_product(self, i_index: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveProduct(CATVariant iIndex)
                 | 

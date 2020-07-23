@@ -15,6 +15,8 @@ from pycatia.system_interfaces.setting_controller import SettingController
 class PrintersSettingAtt(SettingController):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class PrintersSettingAtt(SettingController):
     def add_printer_directory(self, i_printer_dir: str, i_printer_dir_state: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddPrinterDirectory(CATBSTR iPrinterDir,
                 | CatPrinterDirState iPrinterDirState)
@@ -76,6 +80,8 @@ class PrintersSettingAtt(SettingController):
     def add_printer_group(self, i_printer_group_name: str, i_printer_names: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddPrinterGroup(CATBSTR iPrinterGroupName,
                 | CATSafeArrayVariant iPrinterNames)
@@ -115,6 +121,8 @@ class PrintersSettingAtt(SettingController):
     def get_driver_configuration_path(self, o_driver_cfg_path: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetDriverConfigurationPath(CATBSTR oDriverCfgPath)
                 | 
@@ -134,6 +142,8 @@ class PrintersSettingAtt(SettingController):
     def get_driver_configuration_path_info(self, o_admin_level: str, o_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDriverConfigurationPathInfo(CATBSTR oAdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -168,6 +178,8 @@ class PrintersSettingAtt(SettingController):
     def get_new_printer_directory(self, o_new_printer_dir: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetNewPrinterDirectory(CATBSTR oNewPrinterDir)
                 | 
@@ -189,6 +201,8 @@ class PrintersSettingAtt(SettingController):
     def get_new_printer_directory_info(self, o_admin_level: str, o_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNewPrinterDirectoryInfo(CATBSTR oAdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -223,6 +237,8 @@ class PrintersSettingAtt(SettingController):
     def get_printer_array_for_group(self, i_printer_group_name: str) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPrinterArrayForGroup(CATBSTR iPrinterGroupName) As
                 | CATSafeArrayVariant
@@ -246,6 +262,8 @@ class PrintersSettingAtt(SettingController):
     def get_printer_directories(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPrinterDirectories() As CATSafeArrayVariant
                 | 
@@ -262,6 +280,8 @@ class PrintersSettingAtt(SettingController):
     def get_printer_directories_info(self, o_admin_level: str, o_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPrinterDirectoriesInfo(CATBSTR oAdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -296,6 +316,8 @@ class PrintersSettingAtt(SettingController):
     def get_printer_directory_state(self, i_printer_dir: str) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPrinterDirectoryState(CATBSTR iPrinterDir) As
                 | CatPrinterDirState
@@ -330,6 +352,8 @@ class PrintersSettingAtt(SettingController):
     def get_printer_groups(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPrinterGroups() As CATSafeArrayVariant
                 | 
@@ -346,6 +370,8 @@ class PrintersSettingAtt(SettingController):
     def get_printer_groups_info(self, o_admin_level: str, o_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPrinterGroupsInfo(CATBSTR oAdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -380,6 +406,8 @@ class PrintersSettingAtt(SettingController):
     def modify_printer_array_for_group(self, i_printer_group_name: str, i_printer_names: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ModifyPrinterArrayForGroup(CATBSTR iPrinterGroupName,
                 | CATSafeArrayVariant iPrinterNames)
@@ -419,6 +447,8 @@ class PrintersSettingAtt(SettingController):
     def modify_printer_directory_state(self, i_printer_dir: str, i_printer_dir_state: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ModifyPrinterDirectoryState(CATBSTR iPrinterDir,
                 | CatPrinterDirState iPrinterDirState)
@@ -454,6 +484,8 @@ class PrintersSettingAtt(SettingController):
     def remove_all_printer_directories(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveAllPrinterDirectories()
                 | 
@@ -467,6 +499,8 @@ class PrintersSettingAtt(SettingController):
     def remove_all_printer_groups(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveAllPrinterGroups()
                 | 
@@ -480,6 +514,8 @@ class PrintersSettingAtt(SettingController):
     def remove_printer_directory(self, i_printer_dir: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemovePrinterDirectory(CATBSTR iPrinterDir)
                 | 
@@ -500,6 +536,8 @@ class PrintersSettingAtt(SettingController):
     def remove_printer_group(self, i_printer_group_name: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemovePrinterGroup(CATBSTR iPrinterGroupName)
                 | 
@@ -519,6 +557,8 @@ class PrintersSettingAtt(SettingController):
     def set_driver_configuration_path(self, i_driver_cfg_path: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDriverConfigurationPath(CATBSTR iDriverCfgPath)
                 | 
@@ -538,6 +578,8 @@ class PrintersSettingAtt(SettingController):
     def set_driver_configuration_path_lock(self, i_lock: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDriverConfigurationPathLock(boolean iLock)
                 | 
@@ -578,6 +620,8 @@ class PrintersSettingAtt(SettingController):
     def set_new_printer_directory(self, i_new_printer_dir: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetNewPrinterDirectory(CATBSTR iNewPrinterDir)
                 | 
@@ -599,6 +643,8 @@ class PrintersSettingAtt(SettingController):
     def set_new_printer_directory_lock(self, i_lock: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetNewPrinterDirectoryLock(boolean iLock)
                 | 
@@ -640,6 +686,8 @@ class PrintersSettingAtt(SettingController):
     def set_printer_directories_lock(self, i_lock: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPrinterDirectoriesLock(boolean iLock)
                 | 
@@ -681,6 +729,8 @@ class PrintersSettingAtt(SettingController):
     def set_printer_groups_lock(self, i_lock: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPrinterGroupsLock(boolean iLock)
                 | 

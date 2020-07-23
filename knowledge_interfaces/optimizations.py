@@ -18,6 +18,8 @@ from pycatia.types import cat_variant
 class Optimizations(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -41,6 +43,8 @@ class Optimizations(Collection):
     def create_constraints_satisfaction(self, i_name: str, i_comment: str, i_formula_body: str) -> SetOfEquation:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateConstraintsSatisfaction(CATBSTR iName,
                 | CATBSTR iComment,
@@ -69,6 +73,8 @@ class Optimizations(Collection):
     def create_optimization(self) -> Optimization:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateOptimization() As Optimization
                 | 
@@ -83,6 +89,8 @@ class Optimizations(Collection):
     def item(self, i_index: cat_variant) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(CATVariant iIndex) As AnyObject
                 | 

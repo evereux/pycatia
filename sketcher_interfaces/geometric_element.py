@@ -16,6 +16,8 @@ class GeometricElement(AnyObject):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -37,6 +39,8 @@ class GeometricElement(AnyObject):
     def geometric_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property GeometricType() As CatGeometricType (Read Only)
                 | 

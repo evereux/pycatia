@@ -43,6 +43,8 @@ class Measurable(AnyObject):
     def angle(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic help
 
             Property Angle( ) As double (Read Only)
@@ -65,6 +67,8 @@ class Measurable(AnyObject):
     def area(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic help
 
             Property Area( ) As double (Read Only)
@@ -85,6 +89,8 @@ class Measurable(AnyObject):
     def geometry_name(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic help
 
         :return: int
@@ -126,6 +132,8 @@ class Measurable(AnyObject):
     def perimeter(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic help
 
             Property Perimeter( ) As double (Read Only)
@@ -187,6 +195,8 @@ class Measurable(AnyObject):
     def get_angle_between(self, i_measured_item: Reference) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic help
 
         :param Reference i_measured_item:
@@ -376,6 +386,8 @@ class Measurable(AnyObject):
     def get_direction(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic help
 
             Sub GetDirection( CATSafeArrayVariant  oDirection)
@@ -415,6 +427,8 @@ class Measurable(AnyObject):
         # noinspection SpellCheckingInspection
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic help
 
             Func GetMinimumDistance( Reference  iMeasuredItem) As double
@@ -452,6 +466,8 @@ class Measurable(AnyObject):
     def get_minimum_distance_points(self, i_measured_item):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic help
 
             Sub GetMinimumDistancePoints( Reference  iMeasuredItem, CATSafeArrayVariant  oCoordinates)
@@ -490,6 +506,8 @@ class Measurable(AnyObject):
     def get_plane(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic help
 
             Sub GetPlane( CATSafeArrayVariant  oComponents)
@@ -531,6 +549,8 @@ class Measurable(AnyObject):
     def get_point(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic help
             Sub GetPoint( CATSafeArrayVariant  oCoordinates)
 
@@ -565,6 +585,8 @@ class Measurable(AnyObject):
     def get_points_on_axis(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic help
 
             Sub GetPointsOnAxis( CATSafeArrayVariant  oCoordinates)
@@ -607,6 +629,8 @@ class Measurable(AnyObject):
     def get_points_on_curve(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic help
 
             Sub GetPointsOnCurve( CATSafeArrayVariant  oCoordinates)

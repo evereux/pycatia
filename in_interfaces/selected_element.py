@@ -17,6 +17,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class SelectedElement(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -41,6 +43,8 @@ class SelectedElement(AnyObject):
     def document(self) -> Document:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Document() As Document (Read Only)
                 | 
@@ -56,6 +60,8 @@ class SelectedElement(AnyObject):
     def leaf_product(self) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LeafProduct() As AnyObject (Read Only)
                 | 
@@ -183,6 +189,8 @@ class SelectedElement(AnyObject):
     def reference(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Reference() As Reference (Read Only)
                 | 
@@ -199,6 +207,8 @@ class SelectedElement(AnyObject):
     def type(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Type() As CATBSTR (Read Only)
                 | 
@@ -251,6 +261,8 @@ class SelectedElement(AnyObject):
     def value(self) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Value() As CATBaseDispatch (Read Only)
                 | 
@@ -265,6 +277,8 @@ class SelectedElement(AnyObject):
     def get_coordinates(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetCoordinates(CATSafeArrayVariant ioPoint)
                 | 

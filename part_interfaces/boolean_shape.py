@@ -16,6 +16,8 @@ from pycatia.mec_mod_interfaces.shape import Shape
 class BooleanShape(Shape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -44,6 +46,8 @@ class BooleanShape(Shape):
     def body(self) -> Body:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Body() As Body (Read Only)
                 | 
@@ -58,6 +62,8 @@ class BooleanShape(Shape):
     def set_operated_object(self, i_reference_object: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetOperatedObject(Reference iReferenceObject)
                 | 
@@ -87,6 +93,8 @@ class BooleanShape(Shape):
     def set_operating_volume(self, i_reference_object: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetOperatingVolume(Reference iReferenceObject)
                 | 

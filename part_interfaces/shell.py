@@ -17,6 +17,8 @@ from pycatia.part_interfaces.dress_up_shape import DressUpShape
 class Shell(DressUpShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -42,6 +44,8 @@ class Shell(DressUpShape):
     def external_thickness(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExternalThickness() As Length (Read Only)
                 | 
@@ -63,6 +67,8 @@ class Shell(DressUpShape):
     def faces_to_remove(self) -> References:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FacesToRemove() As References (Read Only)
                 | 
@@ -85,6 +91,8 @@ class Shell(DressUpShape):
     def internal_thickness(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property InternalThickness() As Length (Read Only)
                 | 
@@ -105,6 +113,8 @@ class Shell(DressUpShape):
     def add_face_to_remove(self, i_face_to_remove: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddFaceToRemove(Reference iFaceToRemove)
                 | 
@@ -149,6 +159,8 @@ class Shell(DressUpShape):
     def add_face_with_different_thickness(self, i_face_to_thicken: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddFaceWithDifferentThickness(Reference
                 | iFaceToThicken)
@@ -195,6 +207,8 @@ class Shell(DressUpShape):
     def remove_face_with_different_thickness(self, i_face_to_remove: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveFaceWithDifferentThickness(Reference
                 | iFaceToRemove)
@@ -241,6 +255,8 @@ class Shell(DressUpShape):
     def set_volume_support(self, i_volume_support: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetVolumeSupport(Reference iVolumeSupport)
                 | 
@@ -270,6 +286,8 @@ class Shell(DressUpShape):
     def withdraw_face_to_remove(self, i_face_to_withdraw: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub WithdrawFaceToRemove(Reference iFaceToWithdraw)
                 | 

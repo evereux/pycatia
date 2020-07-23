@@ -18,6 +18,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeBump(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -40,6 +42,8 @@ class HybridShapeBump(HybridShape):
     def body_to_bump(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BodyToBump() As Reference
                 | 
@@ -63,6 +67,8 @@ class HybridShapeBump(HybridShape):
     def center_tension(self) -> RealParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CenterTension() As RealParam
                 | 
@@ -86,6 +92,8 @@ class HybridShapeBump(HybridShape):
     def continuity_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ContinuityType() As long
                 | 
@@ -114,6 +122,8 @@ class HybridShapeBump(HybridShape):
     def deformation_center(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DeformationCenter() As Reference
                 | 
@@ -137,6 +147,8 @@ class HybridShapeBump(HybridShape):
     def deformation_dir(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DeformationDir() As Reference
                 | 
@@ -160,6 +172,8 @@ class HybridShapeBump(HybridShape):
     def deformation_dist(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DeformationDist() As Length
                 | 
@@ -187,6 +201,8 @@ class HybridShapeBump(HybridShape):
     def deformation_dist_value(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DeformationDistValue() As double
                 | 
@@ -212,6 +228,8 @@ class HybridShapeBump(HybridShape):
     def limit_curve(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LimitCurve() As Reference
                 | 
@@ -235,6 +253,8 @@ class HybridShapeBump(HybridShape):
     def projection_dir(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ProjectionDir() As Reference
                 | 

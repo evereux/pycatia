@@ -17,6 +17,8 @@ class AngularRepartition(Repartition):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -46,6 +48,8 @@ class AngularRepartition(Repartition):
     def angular_spacing(self) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AngularSpacing() As Angle (Read Only)
                 | 
@@ -68,6 +72,8 @@ class AngularRepartition(Repartition):
     def instance_spacing(self) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property InstanceSpacing() As Angle (Read Only)
                 | 

@@ -17,6 +17,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeCombine(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -48,6 +50,8 @@ class HybridShapeCombine(HybridShape):
     def direction1(self) -> HybridShapeDirection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Direction1() As HybridShapeDirection
                 | 
@@ -82,6 +86,8 @@ class HybridShapeCombine(HybridShape):
     def direction2(self) -> HybridShapeDirection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Direction2() As HybridShapeDirection
                 | 
@@ -116,6 +122,8 @@ class HybridShapeCombine(HybridShape):
     def elem1(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Elem1() As Reference
                 | 
@@ -151,6 +159,8 @@ class HybridShapeCombine(HybridShape):
     def elem2(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Elem2() As Reference
                 | 
@@ -187,6 +197,8 @@ class HybridShapeCombine(HybridShape):
     def nearest_solution(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NearestSolution() As long
                 | 
@@ -226,6 +238,8 @@ class HybridShapeCombine(HybridShape):
     def solution_type_combine(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SolutionTypeCombine() As long
                 | 

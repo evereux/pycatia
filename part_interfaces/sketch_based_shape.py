@@ -17,6 +17,8 @@ from pycatia.sketcher_interfaces.sketch import Sketch
 class SketchBasedShape(Shape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -44,6 +46,8 @@ class SketchBasedShape(Shape):
     def sketch(self) -> Sketch:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Sketch() As Sketch (Read Only)
                 | 
@@ -64,6 +68,8 @@ class SketchBasedShape(Shape):
     def set_profile_element(self, i_profile_element: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetProfileElement(Reference iProfileElement)
                 | 

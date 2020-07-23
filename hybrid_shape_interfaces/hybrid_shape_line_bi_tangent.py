@@ -16,6 +16,8 @@ from pycatia.in_interfaces.reference import Reference
 class HybridShapeLineBiTangent(Line):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -41,6 +43,8 @@ class HybridShapeLineBiTangent(Line):
     def curve1(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Curve1() As Reference
                 | 
@@ -74,6 +78,8 @@ class HybridShapeLineBiTangent(Line):
     def element2(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Element2() As Reference
                 | 
@@ -107,6 +113,8 @@ class HybridShapeLineBiTangent(Line):
     def support(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
@@ -137,6 +145,8 @@ class HybridShapeLineBiTangent(Line):
     def get_choice_no(self, val1: int, val2: int, val3: int, val4: int, val5: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetChoiceNo(long val1,
                 | long val2,
@@ -219,6 +229,8 @@ class HybridShapeLineBiTangent(Line):
     def get_length_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetLengthType() As long
                 | 
@@ -240,6 +252,8 @@ class HybridShapeLineBiTangent(Line):
     def set_choice_no(self, val1: int, val2: int, val3: int, val4: int, val5: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetChoiceNo(long val1,
                 | long val2,
@@ -327,6 +341,8 @@ class HybridShapeLineBiTangent(Line):
     def set_length_type(self, i_type: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLengthType(long iType)
                 | 

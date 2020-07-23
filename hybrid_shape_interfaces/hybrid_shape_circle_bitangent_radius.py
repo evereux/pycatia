@@ -17,6 +17,8 @@ from pycatia.knowledge_interfaces.length import Length
 class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -55,6 +57,8 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def begin_of_circle(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BeginOfCircle() As long
                 | 
@@ -87,6 +91,8 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def curve1(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Curve1() As Reference
                 | 
@@ -120,6 +126,8 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def curve2(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Curve2() As Reference
                 | 
@@ -152,6 +160,8 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def diameter(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Diameter() As Length (Read Only)
                 | 
@@ -175,6 +185,8 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def diameter_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DiameterMode() As boolean
                 | 
@@ -209,6 +221,8 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def discrimination_index(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DiscriminationIndex() As long
                 | 
@@ -244,6 +258,8 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def orientation1(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation1() As long
                 | 
@@ -279,6 +295,8 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def orientation2(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation2() As long
                 | 
@@ -314,6 +332,8 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def radius(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Radius() As Length (Read Only)
                 | 
@@ -337,6 +357,8 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def support(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
@@ -368,6 +390,8 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def tangent_orientation1(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TangentOrientation1() As long
                 | 
@@ -402,6 +426,8 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def tangent_orientation2(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TangentOrientation2() As long
                 | 
@@ -436,6 +462,8 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
     def trim_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TrimMode() As long
                 | 

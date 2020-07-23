@@ -16,6 +16,8 @@ class TextStream(AnyObject):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class TextStream(AnyObject):
     def at_end_of_line(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AtEndOfLine() As boolean (Read Only)
                 | 
@@ -61,6 +65,8 @@ class TextStream(AnyObject):
     def at_end_of_stream(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AtEndOfStream() As boolean (Read Only)
                 | 
@@ -83,6 +89,8 @@ class TextStream(AnyObject):
     def close(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Close()
                 | 
@@ -101,6 +109,8 @@ class TextStream(AnyObject):
     def read(self, i_num_of_char: int) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Read(long iNumOfChar) As CATBSTR
                 | 
@@ -131,6 +141,8 @@ class TextStream(AnyObject):
     def read_line(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func ReadLine() As CATBSTR
                 | 
@@ -155,6 +167,8 @@ class TextStream(AnyObject):
     def write(self, i_written_string: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Write(CATBSTR iWrittenString)
                 | 

@@ -17,6 +17,8 @@ from pycatia.types import cat_variant
 class Products(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -40,6 +42,8 @@ class Products(Collection):
     def add_component(self, i_reference_product: Product) -> Product:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddComponent(Product iReferenceProduct) As Product
                 | 
@@ -73,6 +77,8 @@ class Products(Collection):
     def add_components_from_files(self, i_files_list: tuple, i_method: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddComponentsFromFiles(CATSafeArrayVariant iFilesList,
                 | CATBSTR iMethod)
@@ -113,6 +119,8 @@ class Products(Collection):
     def add_external_component(self, i_product_document: 'Document') -> Product:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddExternalComponent(Document iProductDocument) As
                 | Product
@@ -147,6 +155,8 @@ class Products(Collection):
     def add_new_component(self, i_documen_type: str, i_part_number: str) -> Product:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewComponent(CATBSTR iDocumenType,
                 | CATBSTR iPartNumber) As Product
@@ -181,6 +191,8 @@ class Products(Collection):
     def add_new_product(self, i_part_number: str) -> Product:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddNewProduct(CATBSTR iPartNumber) As Product
                 | 
@@ -213,6 +225,8 @@ class Products(Collection):
     def item(self, i_index: cat_variant) -> Product:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(CATVariant iIndex) As Product
                 | 
@@ -254,6 +268,8 @@ class Products(Collection):
     def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(CATVariant iIndex)
                 | 
@@ -304,6 +320,8 @@ class Products(Collection):
     def replace_component(self, i_old_component: Product, i_file_path: str, i_multi_instances: bool) -> Product:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func ReplaceComponent(Product iOldComponent,
                 | CATBSTR iFilePath,
@@ -338,6 +356,8 @@ class Products(Collection):
     def replace_product(self, i_old_component: Product, i_new_reference: Product, i_multi_instances: bool) -> Product:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func ReplaceProduct(Product iOldComponent,
                 | Product iNewReference,

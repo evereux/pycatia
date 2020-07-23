@@ -26,6 +26,8 @@ from pycatia.drafting_interfaces.drawing_root import DrawingRoot
 class Document(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -58,6 +60,8 @@ class Document(AnyObject):
     def cameras(self) -> Cameras:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Cameras() As Cameras (Read Only)
                 |
@@ -80,6 +84,8 @@ class Document(AnyObject):
     def current_filter(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CurrentFilter() As CATBSTR
                 |
@@ -112,6 +118,8 @@ class Document(AnyObject):
     def current_layer(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CurrentLayer() As CATBSTR
                 |
@@ -170,6 +178,8 @@ class Document(AnyObject):
         Returns true if document is saved.
 
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic help
 
             Property Saved( ) As boolean (Read Only)
@@ -193,6 +203,8 @@ class Document(AnyObject):
         """
 
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic help
 
             Property FullName( ) As CATBSTR (Read Only)
@@ -215,6 +227,8 @@ class Document(AnyObject):
     def read_only(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ReadOnly() As boolean (Read Only)
                 |
@@ -238,6 +252,8 @@ class Document(AnyObject):
     def see_hidden_elements(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SeeHiddenElements() As boolean
                 |
@@ -268,6 +284,8 @@ class Document(AnyObject):
     def selection(self) -> 'Selection':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Selection() As Selection (Read Only)
                 |
@@ -293,6 +311,8 @@ class Document(AnyObject):
         Activates the document
 
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Activate()
                 |
@@ -319,6 +339,8 @@ class Document(AnyObject):
         Closes the current document.
 
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Close()
                 |
@@ -337,6 +359,8 @@ class Document(AnyObject):
     def create_filter(self, i_filter_name: str, i_filter_definition: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub CreateFilter(CATBSTR iFilterName,
                 | CATBSTR iFilterDefinition)
@@ -367,6 +391,8 @@ class Document(AnyObject):
     def create_reference_from_name(self, i_label: str) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateReferenceFromName(CATBSTR iLabel) As Reference
                 |
@@ -400,6 +426,8 @@ class Document(AnyObject):
     def get_workbench(self, workbench_name: str) -> Workbench:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetWorkbench(CATBSTR workbenchName) As Workbench
                 |
@@ -426,6 +454,8 @@ class Document(AnyObject):
 
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic help
 
             Sub ExportData( CATBSTR  fileName, CATBSTR  format)
@@ -462,6 +492,8 @@ class Document(AnyObject):
     def indicate_2d(self, i_message: str, io_document_window_location: tuple) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Indicate2D(CATBSTR iMessage,
                 | CATSafeArrayVariant ioDocumentWindowLocation) As CATBSTR
@@ -539,6 +571,8 @@ class Document(AnyObject):
                     io_window_location3_d: tuple) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Indicate3D(AnyObject iPlanarGeometricObject,
                 | CATBSTR iMessage,
@@ -634,6 +668,8 @@ class Document(AnyObject):
     def new_window(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func NewWindow() As Window
                 |
@@ -690,6 +726,8 @@ class Document(AnyObject):
     def remove_filter(self, i_filter_name):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveFilter(CATBSTR iFilterName)
                 |
@@ -715,6 +753,8 @@ class Document(AnyObject):
     def save(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Save()
                 |
@@ -736,6 +776,8 @@ class Document(AnyObject):
         Save the document to a new name.
 
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SaveAs(CATBSTR fileName)
                 |

@@ -17,6 +17,8 @@ from pycatia.types import cat_variant
 class DrawingComponents(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class DrawingComponents(Collection):
     def add(self, i_drawing_component_ref: 'DrawingView', i_position_x: float, i_position_y: float) -> DrawingComponent:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add(DrawingView iDrawingComponentRef,
                 | double iPositionX,
@@ -91,6 +95,8 @@ class DrawingComponents(Collection):
     def item(self, i_index: cat_variant) -> DrawingComponent:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(CATVariant iIndex) As DrawingComponent
                 | 
@@ -133,6 +139,8 @@ class DrawingComponents(Collection):
     def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(CATVariant iIndex)
                 | 

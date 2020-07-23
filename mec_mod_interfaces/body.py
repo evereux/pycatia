@@ -21,6 +21,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class Body(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -47,6 +49,8 @@ class Body(AnyObject):
     def hybrid_bodies(self) -> HybridBodies:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HybridBodies() As HybridBodies (Read Only)
                 | 
@@ -71,6 +75,8 @@ class Body(AnyObject):
     def hybrid_shapes(self) -> HybridShapes:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HybridShapes() As HybridShapes (Read Only)
                 | 
@@ -99,6 +105,8 @@ class Body(AnyObject):
     def in_boolean_operation(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property InBooleanOperation() As boolean (Read Only)
                 | 
@@ -121,6 +129,8 @@ class Body(AnyObject):
     def ordered_geometrical_sets(self) -> OrderedGeometricalSets:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OrderedGeometricalSets() As OrderedGeometricalSets (Read
                 | Only)
@@ -144,6 +154,8 @@ class Body(AnyObject):
     def shapes(self) -> Shapes:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Shapes() As Shapes (Read Only)
                 | 
@@ -169,6 +181,8 @@ class Body(AnyObject):
     def sketches(self) -> Sketches:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Sketches() As Sketches (Read Only)
                 | 
@@ -192,6 +206,8 @@ class Body(AnyObject):
     def insert_hybrid_shape(self, i_hybrid_shape: HybridShape) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InsertHybridShape(HybridShape iHybridShape)
                 | 

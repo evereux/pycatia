@@ -15,6 +15,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class DrawingDimLine(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class DrawingDimLine(AnyObject):
     def color(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Color() As long
                 | 
@@ -68,6 +72,8 @@ class DrawingDimLine(AnyObject):
     def dim_line_graph_rep(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DimLineGraphRep() As CatDimLineGraphRep
                 | 
@@ -97,6 +103,8 @@ class DrawingDimLine(AnyObject):
     def dim_line_orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DimLineOrientation() As CatDimOrientation
                 | 
@@ -126,6 +134,8 @@ class DrawingDimLine(AnyObject):
     def dim_line_reference(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DimLineReference() As CatDimReference
                 | 
@@ -155,6 +165,8 @@ class DrawingDimLine(AnyObject):
     def dim_line_rep(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DimLineRep() As CatDimLineRep (Read Only)
                 | 
@@ -176,6 +188,8 @@ class DrawingDimLine(AnyObject):
     def dim_line_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DimLineType() As long (Read Only)
                 | 
@@ -197,6 +211,8 @@ class DrawingDimLine(AnyObject):
     def thickness(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Thickness() As double
                 | 
@@ -225,6 +241,8 @@ class DrawingDimLine(AnyObject):
     def get_dim_line_dir(self, o_dir_x: float, o_dir_y: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetDimLineDir(double oDirX,
                 | double oDirY)
@@ -253,6 +271,8 @@ class DrawingDimLine(AnyObject):
     def get_geom_info(self, o_geom_infos: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetGeomInfo(CATSafeArrayVariant oGeomInfos)
                 | 
@@ -292,6 +312,8 @@ class DrawingDimLine(AnyObject):
     def get_symb_color(self, index: int) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetSymbColor(long Index) As long
                 | 
@@ -317,6 +339,8 @@ class DrawingDimLine(AnyObject):
     def get_symb_thickness(self, index: int) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetSymbThickness(long Index) As double
                 | 
@@ -343,6 +367,8 @@ class DrawingDimLine(AnyObject):
     def get_symb_type(self, index: int) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetSymbType(long Index) As CatDimSymbols
                 | 
@@ -368,6 +394,8 @@ class DrawingDimLine(AnyObject):
     def set_symb_color(self, index: int, i_color_symb: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetSymbColor(long Index,
                 | long iColorSymb)
@@ -395,6 +423,8 @@ class DrawingDimLine(AnyObject):
     def set_symb_thickness(self, index: int, i_thick_symb: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetSymbThickness(long Index,
                 | double iThickSymb)
@@ -423,6 +453,8 @@ class DrawingDimLine(AnyObject):
     def set_symb_type(self, index: int, i_symb_type: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetSymbType(long Index,
                 | CatDimSymbols iSymbType)

@@ -15,6 +15,8 @@ from pycatia.system_interfaces.setting_controller import SettingController
 class N4DNavigatorSettingAtt(SettingController):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -167,6 +169,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def clearance_voxel(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ClearanceVoxel() As float
                 | 
@@ -190,6 +194,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def dmu_clash_preview(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DMUClashPreview() As boolean
                 | 
@@ -215,6 +221,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def dmu_cut_3d_preview(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DMUCut3DPreview() As boolean
                 | 
@@ -239,6 +247,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def dmu_distance_preview(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DMUDistancePreview() As boolean
                 | 
@@ -263,6 +273,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def dmu_free_space_preview(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DMUFreeSpacePreview() As boolean
                 | 
@@ -288,6 +300,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def dmu_group_preview(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DMUGroupPreview() As boolean
                 | 
@@ -312,6 +326,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def dmu_group_preview_hidden_objects_display_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DMUGroupPreviewHiddenObjectsDisplayMode() As
                 | CatDMUGroupPreviewHiddenObjectsDisplayMode
@@ -337,6 +353,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def dmu_group_preview_hidden_objects_low_int(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DMUGroupPreviewHiddenObjectsLowInt() As boolean
                 | 
@@ -361,6 +379,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def dmu_group_preview_hidden_objects_opacity(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DMUGroupPreviewHiddenObjectsOpacity() As long
                 | 
@@ -385,6 +405,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def dmu_group_preview_hidden_objects_pick(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DMUGroupPreviewHiddenObjectsPick() As boolean
                 | 
@@ -409,6 +431,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def dmu_merger_preview(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DMUMergerPreview() As boolean
                 | 
@@ -433,6 +457,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def dmu_offset_preview(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DMUOffsetPreview() As boolean
                 | 
@@ -457,6 +483,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def dmu_review_name(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DMUReviewName() As CATBSTR
                 | 
@@ -481,6 +509,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def dmu_section_preview(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DMUSectionPreview() As boolean
                 | 
@@ -505,6 +535,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def dmu_shuttle_preview(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DMUShuttlePreview() As boolean
                 | 
@@ -529,6 +561,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def dmu_silhouette_preview(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DMUSilhouettePreview() As boolean
                 | 
@@ -554,6 +588,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def dmu_simplif_preview(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DMUSimplifPreview() As boolean
                 | 
@@ -579,6 +615,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def dmu_swept_vol_preview(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DMUSweptVolPreview() As boolean
                 | 
@@ -604,6 +642,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def dmu_thickness_preview(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DMUThicknessPreview() As boolean
                 | 
@@ -629,6 +669,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def dmu_vibration_vol_preview(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DMUVibrationVolPreview() As boolean
                 | 
@@ -654,6 +696,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def dmu_wrapping_preview(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DMUWrappingPreview() As boolean
                 | 
@@ -678,6 +722,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def force_clearance_voxel(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ForceClearanceVoxel() As boolean
                 | 
@@ -702,6 +748,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def force_voxel(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ForceVoxel() As boolean
                 | 
@@ -727,6 +775,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def insert_level(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property InsertLevel() As boolean
                 | 
@@ -751,6 +801,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def insert_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property InsertMode() As CatSacSettingsEnum
                 | 
@@ -778,6 +830,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def marker_2d_auto_naming(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Marker2DAutoNaming() As boolean
                 | 
@@ -806,6 +860,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def marker_3d_auto_naming(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Marker3DAutoNaming() As boolean
                 | 
@@ -834,6 +890,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def marker_auto_update(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MarkerAutoUpdate() As boolean
                 | 
@@ -859,6 +917,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def marker_defaults_dashed(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MarkerDefaultsDashed() As long
                 | 
@@ -886,6 +946,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def marker_defaults_font(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MarkerDefaultsFont() As CATBSTR
                 | 
@@ -913,6 +975,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def marker_defaults_size(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MarkerDefaultsSize() As long
                 | 
@@ -940,6 +1004,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def marker_defaults_weight(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MarkerDefaultsWeight() As long
                 | 
@@ -967,6 +1033,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def marker_text_dashed(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MarkerTextDashed() As long
                 | 
@@ -994,6 +1062,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def marker_text_weight(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MarkerTextWeight() As long
                 | 
@@ -1021,6 +1091,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def num_url_name(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NumUrlName() As boolean
                 | 
@@ -1045,6 +1117,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def publish_auto_launch_browser(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PublishAutoLaunchBrowser() As boolean
                 | 
@@ -1069,6 +1143,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_clearance_voxel_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetClearanceVoxelInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1104,6 +1180,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_dmu_clash_preview_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDMUClashPreviewInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1139,6 +1217,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_dmu_cut_3d_preview_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDMUCut3DPreviewInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1174,6 +1254,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_dmu_distance_preview_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDMUDistancePreviewInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1209,6 +1291,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_dmu_free_space_preview_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDMUFreeSpacePreviewInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1244,6 +1328,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_dmu_group_preview_hidden_objects_color(self, o_red: int, o_green: int, o_blue: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetDMUGroupPreviewHiddenObjectsColor(long oRed,
                 | long oGreen,
@@ -1262,6 +1348,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_dmu_group_preview_hidden_objects_color_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDMUGroupPreviewHiddenObjectsColorInfo(CATBSTR
                 | ioAdminLevel,
@@ -1298,6 +1386,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_dmu_group_preview_hidden_objects_display_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDMUGroupPreviewHiddenObjectsDisplayModeInfo(CATBSTR
                 | ioAdminLevel,
@@ -1334,6 +1424,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_dmu_group_preview_hidden_objects_low_int_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDMUGroupPreviewHiddenObjectsLowIntInfo(CATBSTR
                 | ioAdminLevel,
@@ -1370,6 +1462,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_dmu_group_preview_hidden_objects_opacity_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDMUGroupPreviewHiddenObjectsOpacityInfo(CATBSTR
                 | ioAdminLevel,
@@ -1406,6 +1500,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_dmu_group_preview_hidden_objects_pick_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDMUGroupPreviewHiddenObjectsPickInfo(CATBSTR
                 | ioAdminLevel,
@@ -1442,6 +1538,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_dmu_group_preview_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDMUGroupPreviewInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1477,6 +1575,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_dmu_merger_preview_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDMUMergerPreviewInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1512,6 +1612,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_dmu_offset_preview_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDMUOffsetPreviewInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1547,6 +1649,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_dmu_review_name_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDMUReviewNameInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1582,6 +1686,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_dmu_section_preview_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDMUSectionPreviewInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1617,6 +1723,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_dmu_shuttle_preview_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDMUShuttlePreviewInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1652,6 +1760,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_dmu_silhouette_preview_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDMUSilhouettePreviewInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1687,6 +1797,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_dmu_simplif_preview_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDMUSimplifPreviewInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1722,6 +1834,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_dmu_swept_vol_preview_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDMUSweptVolPreviewInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1757,6 +1871,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_dmu_thickness_preview_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDMUThicknessPreviewInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1792,6 +1908,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_dmu_vibration_vol_preview_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDMUVibrationVolPreviewInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1827,6 +1945,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_dmu_wrapping_preview_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDMUWrappingPreviewInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1862,6 +1982,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_force_clearance_voxel_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetForceClearanceVoxelInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1897,6 +2019,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_force_voxel_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetForceVoxelInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1932,6 +2056,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_insert_level_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetInsertLevelInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1967,6 +2093,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_insert_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetInsertModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2002,6 +2130,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_marker_2d_auto_naming_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMarker2DAutoNamingInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2038,6 +2168,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_marker_3d_auto_naming_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMarker3DAutoNamingInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2074,6 +2206,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_marker_auto_update_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMarkerAutoUpdateInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2109,6 +2243,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_marker_defaults_color(self, o_red: int, o_green: int, o_blue: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetMarkerDefaultsColor(long oRed,
                 | long oGreen,
@@ -2130,6 +2266,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_marker_defaults_color_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMarkerDefaultsColorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2166,6 +2304,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_marker_defaults_dashed_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMarkerDefaultsDashedInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2202,6 +2342,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_marker_defaults_font_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMarkerDefaultsFontInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2238,6 +2380,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_marker_defaults_size_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMarkerDefaultsSizeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2274,6 +2418,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_marker_defaults_weight_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMarkerDefaultsWeightInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2310,6 +2456,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_marker_text_color(self, o_red: int, o_green: int, o_blue: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetMarkerTextColor(long oRed,
                 | long oGreen,
@@ -2331,6 +2479,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_marker_text_color_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMarkerTextColorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2367,6 +2517,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_marker_text_dashed_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMarkerTextDashedInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2403,6 +2555,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_marker_text_weight_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMarkerTextWeightInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2439,6 +2593,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_num_url_name_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNumUrlNameInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2474,6 +2630,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_publish_auto_launch_browser_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPublishAutoLaunchBrowserInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2509,6 +2667,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_scene_defaults_color(self, o_r: int, o_g: int, o_b: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetSceneDefaultsColor(long oR,
                 | long oG,
@@ -2528,6 +2688,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def get_scene_defaults_color_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetSceneDefaultsColorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2563,6 +2725,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_clearance_voxel_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetClearanceVoxelLock(boolean iLocked)
                 | 
@@ -2603,6 +2767,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_dmu_clash_preview_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDMUClashPreviewLock(boolean iLocked)
                 | 
@@ -2643,6 +2809,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_dmu_cut_3d_preview_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDMUCut3DPreviewLock(boolean iLocked)
                 | 
@@ -2683,6 +2851,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_dmu_distance_preview_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDMUDistancePreviewLock(boolean iLocked)
                 | 
@@ -2723,6 +2893,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_dmu_free_space_preview_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDMUFreeSpacePreviewLock(boolean iLocked)
                 | 
@@ -2763,6 +2935,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_dmu_group_preview_hidden_objects_color(self, i_red: int, i_green: int, i_blue: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDMUGroupPreviewHiddenObjectsColor(long iRed,
                 | long iGreen,
@@ -2781,6 +2955,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_dmu_group_preview_hidden_objects_color_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDMUGroupPreviewHiddenObjectsColorLock(boolean
                 | iLocked)
@@ -2823,6 +2999,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_dmu_group_preview_hidden_objects_display_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDMUGroupPreviewHiddenObjectsDisplayModeLock(boolean
                 | iLocked)
@@ -2865,6 +3043,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_dmu_group_preview_hidden_objects_low_int_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDMUGroupPreviewHiddenObjectsLowIntLock(boolean
                 | iLocked)
@@ -2907,6 +3087,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_dmu_group_preview_hidden_objects_opacity_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDMUGroupPreviewHiddenObjectsOpacityLock(boolean
                 | iLocked)
@@ -2949,6 +3131,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_dmu_group_preview_hidden_objects_pick_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDMUGroupPreviewHiddenObjectsPickLock(boolean
                 | iLocked)
@@ -2991,6 +3175,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_dmu_group_preview_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDMUGroupPreviewLock(boolean iLocked)
                 | 
@@ -3031,6 +3217,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_dmu_merger_preview_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDMUMergerPreviewLock(boolean iLocked)
                 | 
@@ -3071,6 +3259,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_dmu_offset_preview_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDMUOffsetPreviewLock(boolean iLocked)
                 | 
@@ -3111,6 +3301,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_dmu_review_name_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDMUReviewNameLock(boolean iLocked)
                 | 
@@ -3151,6 +3343,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_dmu_section_preview_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDMUSectionPreviewLock(boolean iLocked)
                 | 
@@ -3191,6 +3385,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_dmu_shuttle_preview_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDMUShuttlePreviewLock(boolean iLocked)
                 | 
@@ -3231,6 +3427,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_dmu_silhouette_preview_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDMUSilhouettePreviewLock(boolean iLocked)
                 | 
@@ -3271,6 +3469,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_dmu_simplif_preview_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDMUSimplifPreviewLock(boolean iLocked)
                 | 
@@ -3311,6 +3511,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_dmu_swept_vol_preview_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDMUSweptVolPreviewLock(boolean iLocked)
                 | 
@@ -3351,6 +3553,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_dmu_thickness_preview_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDMUThicknessPreviewLock(boolean iLocked)
                 | 
@@ -3391,6 +3595,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_dmu_vibration_vol_preview_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDMUVibrationVolPreviewLock(boolean iLocked)
                 | 
@@ -3431,6 +3637,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_dmu_wrapping_preview_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDMUWrappingPreviewLock(boolean iLocked)
                 | 
@@ -3471,6 +3679,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_force_clearance_voxel_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetForceClearanceVoxelLock(boolean iLocked)
                 | 
@@ -3511,6 +3721,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_force_voxel_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetForceVoxelLock(boolean iLocked)
                 | 
@@ -3551,6 +3763,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_insert_level_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetInsertLevelLock(boolean iLocked)
                 | 
@@ -3591,6 +3805,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_insert_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetInsertModeLock(boolean iLocked)
                 | 
@@ -3631,6 +3847,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_marker_2d_auto_naming_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarker2DAutoNamingLock(boolean iLocked)
                 | 
@@ -3673,6 +3891,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_marker_3d_auto_naming_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarker3DAutoNamingLock(boolean iLocked)
                 | 
@@ -3715,6 +3935,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_marker_auto_update_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarkerAutoUpdateLock(boolean iLocked)
                 | 
@@ -3755,6 +3977,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_marker_defaults_color(self, i_red: int, i_green: int, i_blue: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarkerDefaultsColor(long iRed,
                 | long iGreen,
@@ -3776,6 +4000,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_marker_defaults_color_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarkerDefaultsColorLock(boolean iLocked)
                 | 
@@ -3818,6 +4044,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_marker_defaults_dashed_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarkerDefaultsDashedLock(boolean iLocked)
                 | 
@@ -3860,6 +4088,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_marker_defaults_font_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarkerDefaultsFontLock(boolean iLocked)
                 | 
@@ -3902,6 +4132,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_marker_defaults_size_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarkerDefaultsSizeLock(boolean iLocked)
                 | 
@@ -3944,6 +4176,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_marker_defaults_weight_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarkerDefaultsWeightLock(boolean iLocked)
                 | 
@@ -3986,6 +4220,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_marker_text_color(self, i_red: int, i_green: int, i_blue: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarkerTextColor(long iRed,
                 | long iGreen,
@@ -4007,6 +4243,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_marker_text_color_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarkerTextColorLock(boolean iLocked)
                 | 
@@ -4049,6 +4287,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_marker_text_dashed_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarkerTextDashedLock(boolean iLocked)
                 | 
@@ -4091,6 +4331,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_marker_text_weight_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMarkerTextWeightLock(boolean iLocked)
                 | 
@@ -4133,6 +4375,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_num_url_name_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetNumUrlNameLock(boolean iLocked)
                 | 
@@ -4173,6 +4417,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_publish_auto_launch_browser_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPublishAutoLaunchBrowserLock(boolean iLocked)
                 | 
@@ -4213,6 +4459,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_scene_defaults_color(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSceneDefaultsColor(long iR,
                 | long iG,
@@ -4232,6 +4480,8 @@ class N4DNavigatorSettingAtt(SettingController):
     def set_scene_defaults_color_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSceneDefaultsColorLock(boolean iLocked)
                 | 

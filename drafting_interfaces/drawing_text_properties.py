@@ -14,6 +14,8 @@ from pycatia.system_interfaces.cat_base_dispatch import CATBaseDispatch
 class DrawingTextProperties(CATBaseDispatch):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class DrawingTextProperties(CATBaseDispatch):
     def anchor_point(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AnchorPoint() As CatTextAnchorPosition
                 | 
@@ -67,6 +71,8 @@ class DrawingTextProperties(CATBaseDispatch):
     def blanking(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Blanking() As CatBlankingMode
                 | 
@@ -96,6 +102,8 @@ class DrawingTextProperties(CATBaseDispatch):
     def bold(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Bold() As long
                 | 
@@ -126,6 +134,8 @@ class DrawingTextProperties(CATBaseDispatch):
     def color(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Color() As long
                 | 
@@ -157,6 +167,8 @@ class DrawingTextProperties(CATBaseDispatch):
     def font_name(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FontName() As CATBSTR
                 | 
@@ -186,6 +198,8 @@ class DrawingTextProperties(CATBaseDispatch):
     def font_size(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FontSize() As double
                 | 
@@ -216,6 +230,8 @@ class DrawingTextProperties(CATBaseDispatch):
     def frame_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FrameType() As CatTextFrameType
                 | 
@@ -245,6 +261,8 @@ class DrawingTextProperties(CATBaseDispatch):
     def italic(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Italic() As long
                 | 
@@ -275,6 +293,8 @@ class DrawingTextProperties(CATBaseDispatch):
     def justification(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Justification() As CatJustification
                 | 
@@ -306,6 +326,8 @@ class DrawingTextProperties(CATBaseDispatch):
     def kerning(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Kerning() As long
                 | 
@@ -336,6 +358,8 @@ class DrawingTextProperties(CATBaseDispatch):
     def mirror(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Mirror() As CatTextFlipMode
                 | 
@@ -365,6 +389,8 @@ class DrawingTextProperties(CATBaseDispatch):
     def overline(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Overline() As long
                 | 
@@ -395,6 +421,8 @@ class DrawingTextProperties(CATBaseDispatch):
     def strike_thru(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property StrikeThru() As long
                 | 
@@ -426,6 +454,8 @@ class DrawingTextProperties(CATBaseDispatch):
     def subscript(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Subscript() As long
                 | 
@@ -456,6 +486,8 @@ class DrawingTextProperties(CATBaseDispatch):
     def superscript(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Superscript() As long
                 | 
@@ -487,6 +519,8 @@ class DrawingTextProperties(CATBaseDispatch):
     def underline(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Underline() As long
                 | 
@@ -516,6 +550,8 @@ class DrawingTextProperties(CATBaseDispatch):
     def activate_frame(self, i_type: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub ActivateFrame(CatTextFrameType iType)
                 | 
@@ -566,6 +602,8 @@ class DrawingTextProperties(CATBaseDispatch):
     def update(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Update()
                 | 

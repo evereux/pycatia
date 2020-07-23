@@ -17,6 +17,8 @@ from pycatia.types import cat_variant
 class Constraints(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -45,6 +47,8 @@ class Constraints(Collection):
     def broken_constraints_count(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BrokenConstraintsCount() As long (Read Only)
                 | 
@@ -68,6 +72,8 @@ class Constraints(Collection):
     def un_updated_constraints_count(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property UnUpdatedConstraintsCount() As long (Read Only)
                 | 
@@ -90,6 +96,8 @@ class Constraints(Collection):
     def add_bi_elt_cst(self, i_cst_type: int, i_first_elem: Reference, i_second_elem: Reference) -> Constraint:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddBiEltCst(CatConstraintType iCstType,
                 | Reference iFirstElem,
@@ -129,6 +137,8 @@ class Constraints(Collection):
     def add_mono_elt_cst(self, i_cst_type: int, i_elem: Reference) -> Constraint:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddMonoEltCst(CatConstraintType iCstType,
                 | Reference iElem) As Constraint
@@ -165,6 +175,8 @@ class Constraints(Collection):
                         i_third_elem: Reference) -> Constraint:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddTriEltCst(CatConstraintType iCstType,
                 | Reference iFirstElem,
@@ -210,6 +222,8 @@ class Constraints(Collection):
     def item(self, i_index: cat_variant) -> Constraint:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(CATVariant iIndex) As Constraint
                 | 
@@ -245,6 +259,8 @@ class Constraints(Collection):
     def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(CATVariant iIndex)
                 | 

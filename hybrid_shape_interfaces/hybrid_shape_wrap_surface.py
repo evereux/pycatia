@@ -16,6 +16,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeWrapSurface(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -51,6 +53,8 @@ class HybridShapeWrapSurface(HybridShape):
     def deformation_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DeformationMode() As long
                 | 
@@ -86,6 +90,8 @@ class HybridShapeWrapSurface(HybridShape):
     def reference_surface(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ReferenceSurface() As Reference
                 | 
@@ -115,6 +121,8 @@ class HybridShapeWrapSurface(HybridShape):
     def surface(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Surface() As Reference
                 | 
@@ -145,6 +153,8 @@ class HybridShapeWrapSurface(HybridShape):
     def target_surface(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TargetSurface() As Reference
                 | 

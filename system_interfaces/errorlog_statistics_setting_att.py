@@ -16,6 +16,8 @@ class ErrorlogStatisticsSettingAtt(GeneralStatisticsSettingAtt):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
 
                 | System.IUnknown
@@ -44,6 +46,8 @@ class ErrorlogStatisticsSettingAtt(GeneralStatisticsSettingAtt):
     def abnd(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property ABND() As boolean
                 | 
@@ -76,6 +80,8 @@ class ErrorlogStatisticsSettingAtt(GeneralStatisticsSettingAtt):
     def cerr(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property CERR() As boolean
                 | 
@@ -108,6 +114,8 @@ class ErrorlogStatisticsSettingAtt(GeneralStatisticsSettingAtt):
     def cmnd(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property CMND() As boolean
                 | 
@@ -138,6 +146,8 @@ class ErrorlogStatisticsSettingAtt(GeneralStatisticsSettingAtt):
     def comt(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property COMT() As boolean
                 | 
@@ -170,6 +180,8 @@ class ErrorlogStatisticsSettingAtt(GeneralStatisticsSettingAtt):
     def msge(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property MSGE() As boolean
                 | 
@@ -200,6 +212,8 @@ class ErrorlogStatisticsSettingAtt(GeneralStatisticsSettingAtt):
     def urep(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property UREP() As boolean
                 | 
@@ -232,6 +246,8 @@ class ErrorlogStatisticsSettingAtt(GeneralStatisticsSettingAtt):
     def warn(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property WARN() As boolean
                 | 
@@ -264,6 +280,8 @@ class ErrorlogStatisticsSettingAtt(GeneralStatisticsSettingAtt):
     def wkbn(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property WKBN() As boolean
                 | 

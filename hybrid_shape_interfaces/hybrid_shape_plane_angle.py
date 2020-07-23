@@ -17,6 +17,8 @@ from pycatia.knowledge_interfaces.angle import Angle
 class HybridShapePlaneAngle(Plane):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -52,6 +54,8 @@ class HybridShapePlaneAngle(Plane):
     def angle(self) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Angle() As Angle (Read Only)
                 | 
@@ -67,6 +71,8 @@ class HybridShapePlaneAngle(Plane):
     def orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation() As long
                 | 
@@ -94,6 +100,8 @@ class HybridShapePlaneAngle(Plane):
     def plane(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Plane() As Reference
                 | 
@@ -118,6 +126,8 @@ class HybridShapePlaneAngle(Plane):
     def projection_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ProjectionMode() As boolean
                 | 
@@ -147,6 +157,8 @@ class HybridShapePlaneAngle(Plane):
     def revol_axis(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RevolAxis() As Reference
                 | 

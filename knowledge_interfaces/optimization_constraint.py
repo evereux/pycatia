@@ -16,6 +16,8 @@ from pycatia.knowledge_interfaces.real_param import RealParam
 class OptimizationConstraint(Check):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -44,6 +46,8 @@ class OptimizationConstraint(Check):
     def distance_to_satisfaction(self) -> RealParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DistanceToSatisfaction() As RealParam (Read Only)
                 | 
@@ -59,6 +63,8 @@ class OptimizationConstraint(Check):
     def precision(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Precision() As double
                 | 
@@ -85,6 +91,8 @@ class OptimizationConstraint(Check):
     def satisfaction(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Satisfaction() As boolean (Read Only)
                 | 

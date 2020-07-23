@@ -19,6 +19,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class DrawingDimension(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -43,6 +45,8 @@ class DrawingDimension(AnyObject):
     def cumulate_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CumulateMode() As boolean (Read Only)
                 | 
@@ -64,6 +68,8 @@ class DrawingDimension(AnyObject):
     def dim_status(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DimStatus() As CatDimAnalyse (Read Only)
                 | 
@@ -85,6 +91,8 @@ class DrawingDimension(AnyObject):
     def dim_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DimType() As CatDimType (Read Only)
                 | 
@@ -106,6 +114,8 @@ class DrawingDimension(AnyObject):
     def dual_value(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DualValue() As CatDimDualDisplay
                 | 
@@ -135,6 +145,8 @@ class DrawingDimension(AnyObject):
     def forshortened(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Forshortened() As boolean
                 | 
@@ -164,6 +176,8 @@ class DrawingDimension(AnyObject):
     def half_dim_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property HalfDimMode() As boolean
                 | 
@@ -193,6 +207,8 @@ class DrawingDimension(AnyObject):
     def is_clipped(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property IsClipped() As boolean (Read Only)
                 | 
@@ -213,6 +229,8 @@ class DrawingDimension(AnyObject):
     def nb_ext_line(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property NbExtLine() As long (Read Only)
                 | 
@@ -234,6 +252,8 @@ class DrawingDimension(AnyObject):
     def nb_symb(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property NbSymb() As long (Read Only)
                 | 
@@ -255,6 +275,8 @@ class DrawingDimension(AnyObject):
     def parameters(self) -> Parameters:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Parameters() As Parameters (Read Only)
                 | 
@@ -285,6 +307,8 @@ class DrawingDimension(AnyObject):
     def symbols_side(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SymbolsSide() As long
                 | 
@@ -316,6 +340,8 @@ class DrawingDimension(AnyObject):
     def true_dim_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TrueDimMode() As boolean (Read Only)
                 | 
@@ -336,6 +362,8 @@ class DrawingDimension(AnyObject):
     def value_angle(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ValueAngle() As double
                 | 
@@ -365,6 +393,8 @@ class DrawingDimension(AnyObject):
     def value_auto_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ValueAutoMode() As long
                 | 
@@ -394,6 +424,8 @@ class DrawingDimension(AnyObject):
     def value_display(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ValueDisplay() As long
                 | 
@@ -423,6 +455,8 @@ class DrawingDimension(AnyObject):
     def value_frame(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ValueFrame() As CatDimFrame
                 | 
@@ -452,6 +486,8 @@ class DrawingDimension(AnyObject):
     def value_in_out(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ValueInOut() As long
                 | 
@@ -481,6 +517,8 @@ class DrawingDimension(AnyObject):
     def value_orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ValueOrientation() As CatDimOrientation
                 | 
@@ -510,6 +548,8 @@ class DrawingDimension(AnyObject):
     def value_reference(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ValueReference() As CatDimReference
                 | 
@@ -538,6 +578,8 @@ class DrawingDimension(AnyObject):
     def get_boundary_box(self, o_values: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetBoundaryBox(CATSafeArrayVariant oValues)
                 | 
@@ -578,6 +620,8 @@ class DrawingDimension(AnyObject):
     def get_clip(self, x: float, y: float, o_kept_side: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetClip(double X,
                 | double Y,
@@ -615,6 +659,8 @@ class DrawingDimension(AnyObject):
     def get_dim_ext_line(self) -> DrawingDimExtLine:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetDimExtLine() As DrawingDimExtLine
                 | 
@@ -640,6 +686,8 @@ class DrawingDimension(AnyObject):
     def get_dim_line(self) -> DrawingDimLine:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetDimLine() As DrawingDimLine
                 | 
@@ -672,6 +720,8 @@ class DrawingDimension(AnyObject):
                        o_display_mode: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetTolerances(long oTolType,
                 | CATBSTR oTolName,
@@ -729,6 +779,8 @@ class DrawingDimension(AnyObject):
     def get_value(self) -> DrawingDimValue:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetValue() As DrawingDimValue
                 | 
@@ -753,6 +805,8 @@ class DrawingDimension(AnyObject):
     def move_value(self, x: float, y: float, sub_part: int, dim_angle_behavior: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub MoveValue(double X,
                 | double Y,
@@ -802,6 +856,8 @@ class DrawingDimension(AnyObject):
     def restore_value_position(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RestoreValuePosition()
                 | 
@@ -820,6 +876,8 @@ class DrawingDimension(AnyObject):
     def set_clip(self, x: float, y: float, i_kept_side: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetClip(double X,
                 | double Y,
@@ -863,6 +921,8 @@ class DrawingDimension(AnyObject):
                        display_mode: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetTolerances(long iTolType,
                 | CATBSTR itolName,
@@ -920,6 +980,8 @@ class DrawingDimension(AnyObject):
     def unclip(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Unclip()
                 | 

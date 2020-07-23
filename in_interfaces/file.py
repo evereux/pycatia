@@ -17,6 +17,8 @@ class File(FileComponent):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -43,6 +45,8 @@ class File(FileComponent):
     def size(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Size() As long (Read Only)
                 | 
@@ -65,6 +69,8 @@ class File(FileComponent):
     def type(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Type() As CATBSTR (Read Only)
                 | 
@@ -87,6 +93,8 @@ class File(FileComponent):
     def open_as_text_stream(self, i_mode: str) -> TextStream:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func OpenAsTextStream(CATBSTR iMode) As TextStream
                 | 

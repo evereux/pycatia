@@ -16,6 +16,8 @@ class Law(Relation):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class Law(Relation):
     def add_formal_parameter(self, i_name: str, i_magnitude: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddFormalParameter(CATBSTR iName,
                 | CATBSTR iMagnitude)
@@ -62,6 +66,8 @@ class Law(Relation):
     def remove_formal_parameter(self, i_name: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveFormalParameter(CATBSTR iName)
                 | 

@@ -17,6 +17,8 @@ from pycatia.knowledge_interfaces.length import Length
 class HybridShapeLineTangency(Line):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -52,6 +54,8 @@ class HybridShapeLineTangency(Line):
     def begin_offset(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BeginOffset() As Length (Read Only)
                 | 
@@ -75,6 +79,8 @@ class HybridShapeLineTangency(Line):
     def curve(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Curve() As Reference
                 | 
@@ -108,6 +114,8 @@ class HybridShapeLineTangency(Line):
     def end_offset(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property EndOffset() As Length (Read Only)
                 | 
@@ -131,6 +139,8 @@ class HybridShapeLineTangency(Line):
     def orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation() As long
                 | 
@@ -165,6 +175,8 @@ class HybridShapeLineTangency(Line):
     def point(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Point() As Reference
                 | 
@@ -196,6 +208,8 @@ class HybridShapeLineTangency(Line):
     def support(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
@@ -228,6 +242,8 @@ class HybridShapeLineTangency(Line):
     def get_length_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetLengthType() As long
                 | 
@@ -248,6 +264,8 @@ class HybridShapeLineTangency(Line):
     def get_symmetrical_extension(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetSymmetricalExtension() As boolean
                 | 
@@ -267,6 +285,8 @@ class HybridShapeLineTangency(Line):
     def remove_support(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveSupport()
                 | 
@@ -280,6 +300,8 @@ class HybridShapeLineTangency(Line):
     def set_length_type(self, i_type: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLengthType(long iType)
                 | 
@@ -302,6 +324,8 @@ class HybridShapeLineTangency(Line):
     def set_symmetrical_extension(self, i_sym: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSymmetricalExtension(boolean iSym)
                 | 

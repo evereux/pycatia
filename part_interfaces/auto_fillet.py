@@ -19,6 +19,8 @@ class AutoFillet(DressUpShape):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -43,6 +45,8 @@ class AutoFillet(DressUpShape):
     def curvature_radius(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CurvatureRadius() As Length (Read Only)
                 | 
@@ -64,6 +68,8 @@ class AutoFillet(DressUpShape):
     def faces_to_fillet(self) -> References:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FacesToFillet() As References (Read Only)
                 | 
@@ -87,6 +93,8 @@ class AutoFillet(DressUpShape):
     def faces_to_fillets(self) -> False:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FacesToFillets(Reference iFace) (Write Only)
 
@@ -108,6 +116,8 @@ class AutoFillet(DressUpShape):
     def fillet_radius(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FilletRadius() As Length (Read Only)
                 | 
@@ -129,6 +139,8 @@ class AutoFillet(DressUpShape):
     def functional_face(self) -> False:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FunctionalFace(Reference iFace) (Write Only)
 
@@ -150,6 +162,8 @@ class AutoFillet(DressUpShape):
     def functional_faces(self) -> References:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FunctionalFaces() As References (Read Only)
                 | 
@@ -173,6 +187,8 @@ class AutoFillet(DressUpShape):
     def parting_element(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PartingElement() As Reference
                 | 
@@ -204,6 +220,8 @@ class AutoFillet(DressUpShape):
     def round_radius(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RoundRadius() As Length (Read Only)
                 | 
@@ -225,6 +243,8 @@ class AutoFillet(DressUpShape):
     def round_radius_activation(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RoundRadiusActivation() As boolean
                 | 
@@ -256,6 +276,8 @@ class AutoFillet(DressUpShape):
     def slivers_and_crack(self) -> False:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SliversAndCrack(Reference iSlivers) (Write Only)
 
@@ -277,6 +299,8 @@ class AutoFillet(DressUpShape):
     def slivers_and_cracks(self) -> References:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SliversAndCracks() As References (Read Only)
                 | 
@@ -299,6 +323,8 @@ class AutoFillet(DressUpShape):
     def support_surface(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SupportSurface() As Reference
                 | 

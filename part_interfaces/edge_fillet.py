@@ -16,6 +16,8 @@ from pycatia.part_interfaces.fillet import Fillet
 class EdgeFillet(Fillet):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -45,6 +47,8 @@ class EdgeFillet(Fillet):
     def edge_propagation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property EdgePropagation() As CatFilletEdgePropagation
                 | 
@@ -78,6 +82,8 @@ class EdgeFillet(Fillet):
     def edges_to_keep(self) -> References:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property EdgesToKeep() As References (Read Only)
                 | 
@@ -99,6 +105,8 @@ class EdgeFillet(Fillet):
     def add_edge_to_keep(self, i_edge_to_keep: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddEdgeToKeep(Reference iEdgeToKeep)
                 | 
@@ -143,6 +151,8 @@ class EdgeFillet(Fillet):
     def withdraw_edge_to_keep(self, i_edge_to_withdraw: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub WithdrawEdgeToKeep(Reference iEdgeToWithdraw)
                 | 

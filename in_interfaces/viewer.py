@@ -16,6 +16,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class Viewer(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class Viewer(AnyObject):
     def full_screen(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FullScreen() As boolean
                 | 
@@ -70,6 +74,8 @@ class Viewer(AnyObject):
     def height(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Height() As long (Read Only)
                 | 
@@ -91,6 +97,8 @@ class Viewer(AnyObject):
     def width(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Width() As long (Read Only)
                 | 
@@ -111,6 +119,8 @@ class Viewer(AnyObject):
     def activate(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Activate()
                 | 
@@ -130,6 +140,8 @@ class Viewer(AnyObject):
     def capture_to_file(self, i_format: int, i_file: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub CaptureToFile(CatCaptureFormat iFormat,
                 | CATBSTR iFile)
@@ -163,6 +175,8 @@ class Viewer(AnyObject):
     def get_background_color(self, color: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetBackgroundColor(CATSafeArrayVariant color)
                 | 
@@ -201,6 +215,8 @@ class Viewer(AnyObject):
     def new_camera(self) -> Camera:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func NewCamera() As Camera
                 | 
@@ -221,6 +237,8 @@ class Viewer(AnyObject):
     def put_background_color(self, color: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutBackgroundColor(CATSafeArrayVariant color)
                 | 
@@ -258,6 +276,8 @@ class Viewer(AnyObject):
     def reframe(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Reframe()
                 | 
@@ -280,6 +300,8 @@ class Viewer(AnyObject):
     def update(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Update()
                 | 
@@ -301,6 +323,8 @@ class Viewer(AnyObject):
     def zoom_in(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ZoomIn()
                 | 
@@ -320,6 +344,8 @@ class Viewer(AnyObject):
     def zoom_out(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ZoomOut()
                 | 

@@ -16,6 +16,8 @@ from pycatia.part_interfaces.sketch_based_shape import SketchBasedShape
 class Prism(SketchBasedShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class Prism(SketchBasedShape):
     def direction_orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DirectionOrientation() As CatPrismOrientation
                 | 
@@ -74,6 +78,8 @@ class Prism(SketchBasedShape):
     def direction_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DirectionType() As CatPrismExtrusionDirection
                 | 
@@ -109,6 +115,8 @@ class Prism(SketchBasedShape):
     def first_limit(self) -> Limit:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstLimit() As Limit (Read Only)
                 | 
@@ -135,6 +143,8 @@ class Prism(SketchBasedShape):
     def is_symmetric(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property IsSymmetric() As boolean
                 | 
@@ -171,6 +181,8 @@ class Prism(SketchBasedShape):
     def is_thin(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property IsThin() As boolean
                 | 
@@ -207,6 +219,8 @@ class Prism(SketchBasedShape):
     def merge_end(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MergeEnd() As boolean
                 | 
@@ -242,6 +256,8 @@ class Prism(SketchBasedShape):
     def neutral_fiber(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NeutralFiber() As boolean
                 | 
@@ -279,6 +295,8 @@ class Prism(SketchBasedShape):
     def second_limit(self) -> Limit:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondLimit() As Limit (Read Only)
                 | 
@@ -304,6 +322,8 @@ class Prism(SketchBasedShape):
     def get_direction(self, io_direction: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetDirection(CATSafeArrayVariant ioDirection)
                 | 
@@ -348,6 +368,8 @@ class Prism(SketchBasedShape):
     def reverse_inner_side(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ReverseInnerSide()
                 | 
@@ -368,6 +390,8 @@ class Prism(SketchBasedShape):
     def set_direction(self, i_line: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDirection(Reference iLine)
                 | 

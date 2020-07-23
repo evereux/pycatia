@@ -15,6 +15,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class HybridShape(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -36,6 +38,8 @@ class HybridShape(AnyObject):
     def thickness(self) -> 'HybridShape':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Thickness() As HybridShape (Read Only)
                 | 
@@ -61,6 +65,8 @@ class HybridShape(AnyObject):
     def append_hybrid_shape(self, i_hybrid_shape: 'HybridShape') -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AppendHybridShape(HybridShape iHybridShape)
                 | 
@@ -101,6 +107,8 @@ class HybridShape(AnyObject):
     def compute(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Compute()
                 | 

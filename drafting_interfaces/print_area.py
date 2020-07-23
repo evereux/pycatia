@@ -16,6 +16,8 @@ class PrintArea(AnyObject):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class PrintArea(AnyObject):
     def activation_state(self) -> False:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ActivationState(boolean iActivated)
                 | 
@@ -76,6 +80,8 @@ class PrintArea(AnyObject):
     def area_height(self) -> False:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AreaHeigth(double iHeigth)
                 | 
@@ -111,6 +117,8 @@ class PrintArea(AnyObject):
     def area_low_x(self) -> False:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AreaLowX(double iX)
                 | 
@@ -145,6 +153,8 @@ class PrintArea(AnyObject):
     def area_low_y(self) -> False:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AreaLowY(double iY)
                 | 
@@ -179,6 +189,8 @@ class PrintArea(AnyObject):
     def area_width(self) -> False:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AreaWidth(double iWidth)
                 | 
@@ -213,6 +225,8 @@ class PrintArea(AnyObject):
     def get_area(self, o_x: float, o_y: float, o_width: float, o_height: float, o_activated: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetArea(double oX,
                 | double oY,
@@ -274,6 +288,8 @@ class PrintArea(AnyObject):
     def set_area(self, i_x: float, i_y: float, i_width: float, i_height: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetArea(double iX,
                 | double iY,

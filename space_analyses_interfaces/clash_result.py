@@ -15,6 +15,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class ClashResult(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class ClashResult(AnyObject):
     def conflicts(self) -> Conflicts:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Conflicts() As Conflicts (Read Only)
                 | 
@@ -61,6 +65,8 @@ class ClashResult(AnyObject):
     def export(self, i_type: int, i_path: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Export(CatClashExportType iType,
                 | CATBSTR iPath)

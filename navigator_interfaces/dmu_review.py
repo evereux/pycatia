@@ -15,6 +15,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class DMUReview(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -36,6 +38,8 @@ class DMUReview(AnyObject):
     def activation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Activation() As long
                 | 
@@ -74,6 +78,8 @@ class DMUReview(AnyObject):
     def dmu_reviews(self) -> 'DMUReviews':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DMUReviews() As DMUReviews (Read Only)
                 | 

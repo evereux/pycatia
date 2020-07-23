@@ -17,6 +17,8 @@ from pycatia.part_interfaces.dress_up_shape import DressUpShape
 class Thread(DressUpShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -41,6 +43,8 @@ class Thread(DressUpShape):
     def depth(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Depth() As double
                 | 
@@ -73,6 +77,8 @@ class Thread(DressUpShape):
     def diameter(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Diameter() As double
                 | 
@@ -105,6 +111,8 @@ class Thread(DressUpShape):
     def lateral_face_element(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LateralFaceElement() As Reference
                 | 
@@ -129,6 +137,8 @@ class Thread(DressUpShape):
     def limit_face_element(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LimitFaceElement() As Reference
                 | 
@@ -153,6 +163,8 @@ class Thread(DressUpShape):
     def pitch(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Pitch() As double
                 | 
@@ -185,6 +197,8 @@ class Thread(DressUpShape):
     def side(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Side() As CatThreadSide
                 | 
@@ -218,6 +232,8 @@ class Thread(DressUpShape):
     def thread_description(self) -> StrParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ThreadDescription() As StrParam (Read Only)
                 | 
@@ -243,6 +259,8 @@ class Thread(DressUpShape):
     def create_standard_thread_design_table(self, i_standard_type: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub CreateStandardThreadDesignTable(CatThreadStandard
                 | iStandardType)
@@ -272,6 +290,8 @@ class Thread(DressUpShape):
     def create_user_standard_design_table(self, i_standard_name: str, i_path: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub CreateUserStandardDesignTable(CATBSTR iStandardName,
                 | CATBSTR iPath)
@@ -313,6 +333,8 @@ class Thread(DressUpShape):
     def reverse_direction(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ReverseDirection()
                 | 
@@ -326,6 +348,8 @@ class Thread(DressUpShape):
     def set_explicit_polarity(self, i_thread_polarity: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetExplicitPolarity(CatThreadPolarity iThreadPolarity)
                 | 

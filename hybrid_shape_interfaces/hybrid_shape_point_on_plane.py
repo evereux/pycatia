@@ -18,6 +18,8 @@ from pycatia.knowledge_interfaces.length import Length
 class HybridShapePointOnPlane(Point):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -46,6 +48,8 @@ class HybridShapePointOnPlane(Point):
     def first_direction(self) -> HybridShapeDirection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstDirection() As HybridShapeDirection
                 | 
@@ -78,6 +82,8 @@ class HybridShapePointOnPlane(Point):
     def plane(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Plane() As Reference
                 | 
@@ -111,6 +117,8 @@ class HybridShapePointOnPlane(Point):
     def point(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Point() As Reference
                 | 
@@ -146,6 +154,8 @@ class HybridShapePointOnPlane(Point):
     def projection_surface(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ProjectionSurface() As Reference
                 | 
@@ -178,6 +188,8 @@ class HybridShapePointOnPlane(Point):
     def x_offset(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property XOffset() As Length (Read Only)
                 | 
@@ -201,6 +213,8 @@ class HybridShapePointOnPlane(Point):
     def y_offset(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property YOffset() As Length (Read Only)
                 | 
@@ -223,6 +237,8 @@ class HybridShapePointOnPlane(Point):
     def get_second_direction(self, o_dir_x: float, o_dir_y: float, o_dir_z: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetSecondDirection(double oDirX,
                 | double oDirY,
@@ -252,6 +268,8 @@ class HybridShapePointOnPlane(Point):
     def set_second_direction(self, i_dir_x: float, i_dir_y: float, i_dir_z: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSecondDirection(double iDirX,
                 | double iDirY,

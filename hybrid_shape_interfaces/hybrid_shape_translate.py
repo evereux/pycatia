@@ -18,6 +18,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeTranslate(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -57,6 +59,8 @@ class HybridShapeTranslate(HybridShape):
     def coord_x_value(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CoordXValue() As double
                 | 
@@ -80,6 +84,8 @@ class HybridShapeTranslate(HybridShape):
     def coord_y_value(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CoordYValue() As double
                 | 
@@ -103,6 +109,8 @@ class HybridShapeTranslate(HybridShape):
     def coord_z_value(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CoordZValue() As double
                 | 
@@ -126,6 +134,8 @@ class HybridShapeTranslate(HybridShape):
     def direction(self) -> HybridShapeDirection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Direction() As HybridShapeDirection
                 | 
@@ -156,6 +166,8 @@ class HybridShapeTranslate(HybridShape):
     def distance(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Distance() As Length (Read Only)
                 | 
@@ -171,6 +183,8 @@ class HybridShapeTranslate(HybridShape):
     def distance_value(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DistanceValue() As double
                 | 
@@ -201,6 +215,8 @@ class HybridShapeTranslate(HybridShape):
     def elem_to_translate(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ElemToTranslate() As Reference
                 | 
@@ -231,6 +247,8 @@ class HybridShapeTranslate(HybridShape):
     def first_point(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstPoint() As Reference
                 | 
@@ -254,6 +272,8 @@ class HybridShapeTranslate(HybridShape):
     def ref_axis_system(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RefAxisSystem() As Reference
                 | 
@@ -289,6 +309,8 @@ class HybridShapeTranslate(HybridShape):
     def second_point(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondPoint() As Reference
                 | 
@@ -312,6 +334,8 @@ class HybridShapeTranslate(HybridShape):
     def vector_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property VectorType() As long
                 | 
@@ -340,6 +364,8 @@ class HybridShapeTranslate(HybridShape):
     def volume_result(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property VolumeResult() As boolean
                 | 
@@ -373,6 +399,8 @@ class HybridShapeTranslate(HybridShape):
     def get_creation_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetCreationMode() As long
                 | 
@@ -401,6 +429,8 @@ class HybridShapeTranslate(HybridShape):
     def set_creation_mode(self, i_creation: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetCreationMode(boolean iCreation)
                 | 

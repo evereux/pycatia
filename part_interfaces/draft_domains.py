@@ -17,6 +17,8 @@ from pycatia.types import cat_variant
 class DraftDomains(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -37,6 +39,8 @@ class DraftDomains(Collection):
     def item(self, i_index: cat_variant) -> DraftDomain:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(CATVariant iIndex) As DraftDomain
                 | 

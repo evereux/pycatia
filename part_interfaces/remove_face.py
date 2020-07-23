@@ -16,6 +16,8 @@ from pycatia.part_interfaces.dress_up_shape import DressUpShape
 class RemoveFace(DressUpShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -40,6 +42,8 @@ class RemoveFace(DressUpShape):
     def keep_face(self) -> False:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property KeepFace(Reference iKeepFace) (Write Only)
                 | 
@@ -71,6 +75,8 @@ class RemoveFace(DressUpShape):
     def keep_faces(self) -> References:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property KeepFaces() As References (Read Only)
                 | 
@@ -86,6 +92,8 @@ class RemoveFace(DressUpShape):
     def propagation(self) -> References:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Propagation() As References (Read Only)
                 | 
@@ -101,6 +109,8 @@ class RemoveFace(DressUpShape):
     def remove_face(self) -> False:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RemoveFace(Reference iRemoveFace) (Write Only)
                 | 
@@ -132,6 +142,8 @@ class RemoveFace(DressUpShape):
     def remove_faces(self) -> References:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RemoveFaces() As References (Read Only)
                 | 
@@ -146,6 +158,8 @@ class RemoveFace(DressUpShape):
     def remove_keep_face(self, i_keep_face: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub remove_KeepFace(Reference iKeepFace)
                 | 
@@ -183,6 +197,8 @@ class RemoveFace(DressUpShape):
     def remove_remove_face(self, i_remove_face: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub remove_RemoveFace(Reference iRemoveFace)
                 | 
