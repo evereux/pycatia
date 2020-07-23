@@ -1,3 +1,5 @@
+.. _Draft:
+
 pycatia.part_interfaces.draft
 =============================
 

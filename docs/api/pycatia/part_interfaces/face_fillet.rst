@@ -1,3 +1,5 @@
+.. _Face_fillet:
+
 pycatia.part_interfaces.face_fillet
 ===================================
 

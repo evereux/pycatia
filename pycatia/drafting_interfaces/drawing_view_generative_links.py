@@ -16,6 +16,8 @@ from pycatia.system_interfaces.cat_base_dispatch import CATBaseDispatch
 class DrawingViewGenerativeLinks(CATBaseDispatch):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class DrawingViewGenerativeLinks(CATBaseDispatch):
     def add_link(self, i_link: AnyObject) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddLink(AnyObject iLink)
                 | 
@@ -60,6 +64,8 @@ class DrawingViewGenerativeLinks(CATBaseDispatch):
     def copy_links_to(self, i_links: 'DrawingViewGenerativeLinks') -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub CopyLinksTo(DrawingViewGenerativeLinks iLinks)
                 | 
@@ -98,6 +104,8 @@ class DrawingViewGenerativeLinks(CATBaseDispatch):
     def first_link(self) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func FirstLink() As AnyObject
                 | 
@@ -120,6 +128,8 @@ class DrawingViewGenerativeLinks(CATBaseDispatch):
     def next_link(self) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func NextLink() As AnyObject
                 | 
@@ -142,6 +152,8 @@ class DrawingViewGenerativeLinks(CATBaseDispatch):
     def remove_all_links(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveAllLinks()
                 | 

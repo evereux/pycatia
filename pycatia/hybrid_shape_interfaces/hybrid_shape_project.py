@@ -17,6 +17,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeProject(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -54,6 +56,8 @@ class HybridShapeProject(HybridShape):
     def direction(self) -> HybridShapeDirection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Direction() As HybridShapeDirection
                 | 
@@ -83,6 +87,8 @@ class HybridShapeProject(HybridShape):
     def elem_to_project(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ElemToProject() As Reference
                 | 
@@ -115,6 +121,8 @@ class HybridShapeProject(HybridShape):
     def extrapolation_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExtrapolationMode() As long
                 | 
@@ -147,6 +155,8 @@ class HybridShapeProject(HybridShape):
     def maximum_deviation_value(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MaximumDeviationValue() As double
                 | 
@@ -180,6 +190,8 @@ class HybridShapeProject(HybridShape):
     def normal(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Normal() As boolean
                 | 
@@ -212,6 +224,8 @@ class HybridShapeProject(HybridShape):
     def smoothing_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SmoothingType() As long
                 | 
@@ -245,6 +259,8 @@ class HybridShapeProject(HybridShape):
     def solution_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SolutionType() As long
                 | 
@@ -277,6 +293,8 @@ class HybridShapeProject(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
@@ -309,6 +327,8 @@ class HybridShapeProject(HybridShape):
     def p_3d_smoothing(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property p3DSmoothing() As boolean
                 | 

@@ -1,3 +1,5 @@
+.. _Law:
+
 pycatia.knowledge_interfaces.law
 ================================
 

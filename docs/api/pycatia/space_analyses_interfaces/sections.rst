@@ -1,3 +1,5 @@
+.. _Sections:
+
 pycatia.space_analyses_interfaces.sections
 ==========================================
 

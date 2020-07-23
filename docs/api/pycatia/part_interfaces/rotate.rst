@@ -1,3 +1,5 @@
+.. _Rotate:
+
 pycatia.part_interfaces.rotate
 ==============================
 

@@ -20,6 +20,8 @@ from pycatia.system_interfaces.system_service import SystemService
 class Distance(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -43,6 +45,8 @@ class Distance(AnyObject):
     def accuracy(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Accuracy() As double
                 | 
@@ -87,6 +91,8 @@ class Distance(AnyObject):
     def annotated_views(self) -> AnnotatedViews:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AnnotatedViews() As AnnotatedViews (Read Only)
                 | 
@@ -111,6 +117,8 @@ class Distance(AnyObject):
     def computation_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ComputationType() As CatDistanceComputationType
                 | 
@@ -153,6 +161,8 @@ class Distance(AnyObject):
     def first_group(self) -> Group:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstGroup() As Group
                 | 
@@ -196,6 +206,8 @@ class Distance(AnyObject):
     def first_product(self) -> Product:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstProduct() As Product (Read Only)
                 | 
@@ -221,6 +233,8 @@ class Distance(AnyObject):
     def is_defined(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property IsDefined() As long (Read Only)
                 | 
@@ -249,6 +263,8 @@ class Distance(AnyObject):
     def marker_3ds(self) -> Marker3Ds:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Marker3Ds() As Marker3Ds (Read Only)
                 | 
@@ -273,6 +289,8 @@ class Distance(AnyObject):
     def maximum_distance(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MaximumDistance() As double
                 | 
@@ -318,6 +336,8 @@ class Distance(AnyObject):
     def measure_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MeasureType() As CatDistanceMeasureType
                 | 
@@ -361,6 +381,8 @@ class Distance(AnyObject):
     def minimum_distance(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MinimumDistance() As double
                 | 
@@ -406,6 +428,8 @@ class Distance(AnyObject):
     def second_group(self) -> Group:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondGroup() As Group
                 | 
@@ -449,6 +473,8 @@ class Distance(AnyObject):
     def second_product(self) -> Product:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondProduct() As Product (Read Only)
                 | 
@@ -474,6 +500,8 @@ class Distance(AnyObject):
     def value(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Value() As double (Read Only)
                 | 
@@ -497,6 +525,8 @@ class Distance(AnyObject):
     def compute(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Compute()
                 | 
@@ -518,6 +548,8 @@ class Distance(AnyObject):
     def get_first_point_coordinates(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetFirstPointCoordinates(CATSafeArrayVariant
                 | oCoordinates)
@@ -562,6 +594,8 @@ class Distance(AnyObject):
     def get_second_point_coordinates(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetSecondPointCoordinates(CATSafeArrayVariant
                 | oCoordinates)

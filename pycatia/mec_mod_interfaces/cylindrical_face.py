@@ -15,6 +15,8 @@ from pycatia.mec_mod_interfaces.face import Face
 class CylindricalFace(Face):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -74,6 +76,8 @@ class CylindricalFace(Face):
     def get_direction(self, o_direction=None):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetDirection(CATSafeArrayVariant oDirection)
                 | 
@@ -111,6 +115,8 @@ class CylindricalFace(Face):
     def get_origin(self, o_origin: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetOrigin(CATSafeArrayVariant oOrigin)
                 | 

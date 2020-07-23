@@ -1,3 +1,5 @@
+.. _Product:
+
 pycatia.product_structure_interfaces.product
 ============================================
 

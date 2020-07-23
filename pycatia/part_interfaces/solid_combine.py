@@ -17,6 +17,8 @@ class SolidCombine(SketchBasedShape):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -40,6 +42,8 @@ class SolidCombine(SketchBasedShape):
     def first_component_direction(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstComponentDirection() As Reference
                 | 
@@ -72,6 +76,8 @@ class SolidCombine(SketchBasedShape):
     def first_component_profile(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstComponentProfile() As Reference
                 | 
@@ -104,6 +110,8 @@ class SolidCombine(SketchBasedShape):
     def second_component_direction(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondComponentDirection() As Reference
                 | 
@@ -136,6 +144,8 @@ class SolidCombine(SketchBasedShape):
     def second_component_profile(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondComponentProfile() As Reference
                 | 

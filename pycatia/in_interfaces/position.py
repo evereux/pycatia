@@ -16,6 +16,8 @@ from pycatia.system_interfaces.system_service import SystemService
 class Position(Move):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class Position(Move):
     def get_components(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetComponents(CATSafeArrayVariant
                 | oAxisComponentsArray)
@@ -82,6 +86,8 @@ class Position(Move):
     def set_components(self, i_axis_components_array: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetComponents(CATSafeArrayVariant
                 | iAxisComponentsArray)

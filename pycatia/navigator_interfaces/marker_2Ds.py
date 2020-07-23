@@ -16,6 +16,8 @@ from pycatia.types import cat_variant
 class Marker2Ds(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -36,6 +38,8 @@ class Marker2Ds(Collection):
     def add2_d_arrow(self, i_coordinates: tuple) -> Marker2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Add2DArrow(CATSafeArrayVariant iCoordinates) As
                 | Marker2D
@@ -78,6 +82,8 @@ class Marker2Ds(Collection):
     def add2_d_circle(self, i_coordinates: tuple, i_fill_status: int) -> Marker2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Add2DCircle(CATSafeArrayVariant iCoordinates,
                 | long iFillStatus) As Marker2D
@@ -125,6 +131,8 @@ class Marker2Ds(Collection):
     def add2_d_free_hand(self, i_coordinates: tuple) -> Marker2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Add2DFreeHand(CATSafeArrayVariant iCoordinates) As
                 | Marker2D
@@ -171,6 +179,8 @@ class Marker2Ds(Collection):
     def add2_d_line(self, i_coordinates: tuple) -> Marker2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Add2DLine(CATSafeArrayVariant iCoordinates) As
                 | Marker2D
@@ -213,6 +223,8 @@ class Marker2Ds(Collection):
     def add2_d_picture(self, i_coordinates: tuple, i_path: str) -> Marker2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Add2DPicture(CATSafeArrayVariant iCoordinates,
                 | CATBSTR iPath) As Marker2D
@@ -259,6 +271,8 @@ class Marker2Ds(Collection):
     def add2_d_rectangle(self, i_coordinates: tuple, i_fill_status: int) -> Marker2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Add2DRectangle(CATSafeArrayVariant iCoordinates,
                 | long iFillStatus) As Marker2D
@@ -306,6 +320,8 @@ class Marker2Ds(Collection):
     def add2_d_text(self, i_coordinates: tuple, i_text: str) -> Marker2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Add2DText(CATSafeArrayVariant iCoordinates,
                 | CATBSTR iText) As Marker2D
@@ -348,6 +364,8 @@ class Marker2Ds(Collection):
     def item(self, i_index: cat_variant) -> Marker2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(CATVariant iIndex) As Marker2D
                 | 
@@ -383,6 +401,8 @@ class Marker2Ds(Collection):
     def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Remove(CATVariant iIndex)
                 | 

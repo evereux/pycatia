@@ -18,6 +18,8 @@ class Sweep(SketchBasedShape):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -42,6 +44,8 @@ class Sweep(SketchBasedShape):
     def anchor_dir_reverse(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AnchorDirReverse() As boolean
                 | 
@@ -74,6 +78,8 @@ class Sweep(SketchBasedShape):
     def center_curve(self) -> Sketch:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CenterCurve() As Sketch (Read Only)
                 | 
@@ -96,6 +102,8 @@ class Sweep(SketchBasedShape):
     def center_curve_element(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CenterCurveElement() As Reference
                 | 
@@ -121,6 +129,8 @@ class Sweep(SketchBasedShape):
     def is_thin(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property IsThin() As boolean
                 | 
@@ -157,6 +167,8 @@ class Sweep(SketchBasedShape):
     def merge_end(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MergeEnd() As boolean
                 | 
@@ -192,6 +204,8 @@ class Sweep(SketchBasedShape):
     def merge_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MergeMode() As CatMergeMode
                 | 
@@ -215,6 +229,8 @@ class Sweep(SketchBasedShape):
     def move_profile_to_path(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MoveProfileToPath() As boolean
                 | 
@@ -247,6 +263,8 @@ class Sweep(SketchBasedShape):
     def neutral_fiber(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NeutralFiber() As boolean
                 | 
@@ -284,6 +302,8 @@ class Sweep(SketchBasedShape):
     def normal_axis_dir_reverse(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NormalAxisDirReverse() As boolean
                 | 
@@ -316,6 +336,8 @@ class Sweep(SketchBasedShape):
     def pulling_dir_element(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PullingDirElement() As Reference
                 | 
@@ -342,6 +364,8 @@ class Sweep(SketchBasedShape):
     def reference_surface_element(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ReferenceSurfaceElement() As Reference
                 | 
@@ -365,6 +389,8 @@ class Sweep(SketchBasedShape):
     def set_keep_angle_option(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetKeepAngleOption()
                 | 

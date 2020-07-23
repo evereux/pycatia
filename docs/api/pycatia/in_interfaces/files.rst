@@ -1,3 +1,5 @@
+.. _Files:
+
 pycatia.in_interfaces.files
 ===========================
 

@@ -21,6 +21,8 @@ class Documents(Collection):
         >>> documents = catia.documents
 
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -48,6 +50,8 @@ class Documents(Collection):
     def add(self, document_type) -> Document:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add(CATBSTR docType) As Document
                 |
@@ -111,6 +115,8 @@ class Documents(Collection):
     def new_from(self, file_name: str) -> Document:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func NewFrom(CATBSTR iFileName) As Document
                 |
@@ -151,6 +157,8 @@ class Documents(Collection):
     def item(self, index: cat_variant) -> Document:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(CATVariant iIndex) As Document
                 |
@@ -215,6 +223,8 @@ class Documents(Collection):
     def open(self, file_name: str) -> Document:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Open(CATBSTR iFileName) As Document
                 |
@@ -260,6 +270,8 @@ class Documents(Collection):
     def read(self, file_name: str) -> Document:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Read(CATBSTR iFileName) As Document
                 |

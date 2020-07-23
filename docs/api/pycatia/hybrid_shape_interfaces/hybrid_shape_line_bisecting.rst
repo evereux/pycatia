@@ -1,3 +1,5 @@
+.. _Hybrid_shape_line_bisecting:
+
 pycatia.hybrid_shape_interfaces.hybrid_shape_line_bisecting
 ===========================================================
 

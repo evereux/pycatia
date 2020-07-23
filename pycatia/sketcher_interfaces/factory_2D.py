@@ -26,6 +26,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class Factory2D(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -47,6 +49,8 @@ class Factory2D(AnyObject):
                       i_end_param: float) -> Circle2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func CreateCircle(double iCenterX,
                 | double iCenterY,
@@ -87,6 +91,8 @@ class Factory2D(AnyObject):
     def create_closed_circle(self, i_center_x: float, i_center_y: float, i_radius: float) -> Circle2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func CreateClosedCircle(double iCenterX,
                 | double iCenterY,
@@ -115,6 +121,8 @@ class Factory2D(AnyObject):
                               i_major_radius: float, i_minor_radius: float) -> Ellipse2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func CreateClosedEllipse(double iCenterX,
                 | double iCenterY,
@@ -156,6 +164,8 @@ class Factory2D(AnyObject):
     def create_control_point(self, i_x: float, i_y: float) -> ControlPoint2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func CreateControlPoint(double iX,
                 | double iY) As ControlPoint2D
@@ -181,6 +191,8 @@ class Factory2D(AnyObject):
                        i_end_param: float) -> Ellipse2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func CreateEllipse(double iCenterX,
                 | double iCenterY,
@@ -236,6 +248,8 @@ class Factory2D(AnyObject):
                          i_major_radius: float, i_minor_radius: float) -> Hyperbola2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func CreateHyperbola(double iCenterX,
                 | double iCenterY,
@@ -276,6 +290,8 @@ class Factory2D(AnyObject):
     def create_intersection(self, i_geometry: Reference) -> Geometry2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func CreateIntersection(Reference iGeometry) As Geometry2D
                 | 
@@ -296,6 +312,8 @@ class Factory2D(AnyObject):
     def create_intersections(self, i_geometry: Reference) -> GeometricElements:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func CreateIntersections(Reference iGeometry) As
                 | GeometricElements
@@ -317,6 +335,8 @@ class Factory2D(AnyObject):
     def create_line(self, i_x1: float, i_y1: float, i_x2: float, i_y2: float) -> Line2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func CreateLine(double iX1,
                 | double iY1,
@@ -348,6 +368,8 @@ class Factory2D(AnyObject):
     def create_line_from_vector(self, i_x1: float, i_y1: float, i_ux: float, i_uy: float) -> Line2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func CreateLineFromVector(double iX1,
                 | double iY1,
@@ -380,6 +402,8 @@ class Factory2D(AnyObject):
                         i_focal_distance: float) -> Parabola2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func CreateParabola(double iCenterX,
                 | double iCenterY,
@@ -415,6 +439,8 @@ class Factory2D(AnyObject):
     def create_point(self, i_x: float, i_y: float) -> Point2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func CreatePoint(double iX,
                 | double iY) As Point2D
@@ -438,6 +464,8 @@ class Factory2D(AnyObject):
     def create_projection(self, i_geometry: Reference) -> Geometry2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func CreateProjection(Reference iGeometry) As Geometry2D
                 | 
@@ -458,6 +486,8 @@ class Factory2D(AnyObject):
     def create_projections(self, i_geometry: Reference) -> GeometricElements:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func CreateProjections(Reference iGeometry) As
                 | GeometricElements
@@ -479,6 +509,8 @@ class Factory2D(AnyObject):
     def create_spline(self, i_poles: tuple) -> Spline2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func CreateSpline(CATSafeArrayVariant iPoles) As Spline2D
                 | 

@@ -16,6 +16,8 @@ class DrawingDimValue(AnyObject):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -40,6 +42,8 @@ class DrawingDimValue(AnyObject):
     def fake_dim_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FakeDimType() As CatDimFake
                 | 
@@ -69,6 +73,8 @@ class DrawingDimValue(AnyObject):
     def scoring_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ScoringMode() As CatDimScore
                 | 
@@ -96,6 +102,8 @@ class DrawingDimValue(AnyObject):
     def value(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Value() As double (Read Only)
                 | 
@@ -117,6 +125,8 @@ class DrawingDimValue(AnyObject):
     def value_framed_element(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ValueFramedElement() As CatDimFramedElement
                 | 
@@ -145,6 +155,8 @@ class DrawingDimValue(AnyObject):
     def value_framed_group(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ValueFramedGroup() As CatDimFramedGroup
                 | 
@@ -173,6 +185,8 @@ class DrawingDimValue(AnyObject):
     def get_bault_text(self, i_index: int, o_before: str, o_after: str, o_upper: str, o_lower: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetBaultText(long iIndex,
                 | CATBSTR oBefore,
@@ -213,6 +227,8 @@ class DrawingDimValue(AnyObject):
     def get_display_unit(self, i_index: int) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetDisplayUnit(long iIndex) As long
                 | 
@@ -238,6 +254,8 @@ class DrawingDimValue(AnyObject):
     def get_fake_dim_value(self, i_index: int) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetFakeDimValue(long iIndex) As CATBSTR
                 | 
@@ -263,6 +281,8 @@ class DrawingDimValue(AnyObject):
     def get_format_display_factor(self, i_index: int) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetFormatDisplayFactor(long iIndex) As long
                 | 
@@ -289,6 +309,8 @@ class DrawingDimValue(AnyObject):
     def get_format_name(self, i_index: int) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetFormatName(long iIndex) As CATBSTR
                 | 
@@ -314,6 +336,8 @@ class DrawingDimValue(AnyObject):
     def get_format_precision(self, index: int) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetFormatPrecision(long Index) As double
                 | 
@@ -340,6 +364,8 @@ class DrawingDimValue(AnyObject):
     def get_format_type(self, i_index: int) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetFormatType(long iIndex) As long
                 | 
@@ -365,6 +391,8 @@ class DrawingDimValue(AnyObject):
     def get_format_unit(self, i_index: int) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetFormatUnit(long iIndex) As long
                 | 
@@ -390,6 +418,8 @@ class DrawingDimValue(AnyObject):
     def get_ps_text(self, i_index: int, o_prefix: str, o_suffix: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetPSText(long iIndex,
                 | CATBSTR oPrefix,
@@ -421,6 +451,8 @@ class DrawingDimValue(AnyObject):
     def get_scored_element(self, i_index: int) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetScoredElement(long iIndex) As boolean
                 | 
@@ -448,6 +480,8 @@ class DrawingDimValue(AnyObject):
     def set_bault_text(self, i_index: int, i_before: str, i_after: str, i_upper: str, i_lower: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetBaultText(long iIndex,
                 | CATBSTR iBefore,
@@ -488,6 +522,8 @@ class DrawingDimValue(AnyObject):
     def set_fake_dim_value(self, i_index: int, i_fake_dim_value: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetFakeDimValue(long iIndex,
                 | CATBSTR iFakeDimValue)
@@ -515,6 +551,8 @@ class DrawingDimValue(AnyObject):
     def set_format_display_factor(self, i_index: int, i_frm_dsp_fact: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetFormatDisplayFactor(long iIndex,
                 | long iFrmDspFact)
@@ -544,6 +582,8 @@ class DrawingDimValue(AnyObject):
     def set_format_name(self, i_index: int, i_frm_name: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetFormatName(long iIndex,
                 | CATBSTR iFrmName)
@@ -571,6 +611,8 @@ class DrawingDimValue(AnyObject):
     def set_format_precision(self, i_index: int, i_frm_precision: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetFormatPrecision(long iIndex,
                 | double iFrmPrecision)
@@ -599,6 +641,8 @@ class DrawingDimValue(AnyObject):
     def set_format_type(self, i_index: int, i_frm_type: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetFormatType(long iIndex,
                 | long iFrmType)
@@ -626,6 +670,8 @@ class DrawingDimValue(AnyObject):
     def set_format_unit(self, i_index: int, i_frm_unit: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetFormatUnit(long iIndex,
                 | long iFrmUnit)
@@ -653,6 +699,8 @@ class DrawingDimValue(AnyObject):
     def set_ps_text(self, i_index: int, i_prefix: str, i_suffix: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetPSText(long iIndex,
                 | CATBSTR iPrefix,
@@ -684,6 +732,8 @@ class DrawingDimValue(AnyObject):
     def set_scored_element(self, i_index: int, i_scored_element: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetScoredElement(long iIndex,
                 | boolean iScoredElement)

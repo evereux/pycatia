@@ -15,6 +15,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class Reference(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -41,6 +43,8 @@ class Reference(AnyObject):
     def display_name(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DisplayName() As CATBSTR (Read Only)
                 | 
@@ -64,6 +68,8 @@ class Reference(AnyObject):
     def compose_with(self, i_reference: 'Reference') -> 'Reference':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func ComposeWith(Reference iReference) As Reference
                 | 

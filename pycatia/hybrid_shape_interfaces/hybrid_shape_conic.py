@@ -18,6 +18,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeConic(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -51,6 +53,8 @@ class HybridShapeConic(HybridShape):
     def conic_parameter(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ConicParameter() As double
                 | 
@@ -81,6 +85,8 @@ class HybridShapeConic(HybridShape):
     def conic_user_tol(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ConicUserTol() As Length (Read Only)
                 | 
@@ -107,6 +113,8 @@ class HybridShapeConic(HybridShape):
     def end_point(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property EndPoint() As Reference
                 | 
@@ -138,6 +146,8 @@ class HybridShapeConic(HybridShape):
     def end_tangent(self) -> HybridShapeDirection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property EndTangent() As HybridShapeDirection
                 | 
@@ -169,6 +179,8 @@ class HybridShapeConic(HybridShape):
     def start_point(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property StartPoint() As Reference
                 | 
@@ -201,6 +213,8 @@ class HybridShapeConic(HybridShape):
     def start_tangent(self) -> HybridShapeDirection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property StartTangent() As HybridShapeDirection
                 | 
@@ -233,6 +247,8 @@ class HybridShapeConic(HybridShape):
     def support_plane(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SupportPlane() As Reference
                 | 
@@ -265,6 +281,8 @@ class HybridShapeConic(HybridShape):
     def tangent_int_point(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TangentIntPoint() As Reference
                 | 
@@ -295,6 +313,8 @@ class HybridShapeConic(HybridShape):
     def get_end_tangent_direction_flag(self, o_orientation: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetEndTangentDirectionFlag(long oOrientation)
                 | 
@@ -328,6 +348,8 @@ class HybridShapeConic(HybridShape):
     def get_intermed_tangent(self, i_index_point: int) -> HybridShapeDirection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetIntermedTangent(long iIndexPoint) As
                 | HybridShapeDirection
@@ -366,6 +388,8 @@ class HybridShapeConic(HybridShape):
     def get_intermediate_point(self, i_index_point: int, o_end_point: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetIntermediatePoint(long iIndexPoint,
                 | Reference oEndPoint)
@@ -418,6 +442,8 @@ class HybridShapeConic(HybridShape):
     def get_intermediate_tangent_direction_flag(self, i_index_point: int, o_orientation: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetIntermediateTangentDirectionFlag(long iIndexPoint,
                 | long oOrientation)
@@ -460,6 +486,8 @@ class HybridShapeConic(HybridShape):
     def get_start_tangent_direction_flag(self, o_orientation: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetStartTangentDirectionFlag(long oOrientation)
                 | 
@@ -494,6 +522,8 @@ class HybridShapeConic(HybridShape):
     def set_end_tangent_direction_flag(self, i_orientation: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetEndTangentDirectionFlag(long iOrientation)
                 | 
@@ -529,6 +559,8 @@ class HybridShapeConic(HybridShape):
     def set_intermediate_point(self, i_index_point: int, i_end_point: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetIntermediatePoint(long iIndexPoint,
                 | Reference iEndPoint)
@@ -584,6 +616,8 @@ class HybridShapeConic(HybridShape):
     def set_intermediate_tangent(self, i_index_point: int, i_tgt_dir: HybridShapeDirection) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetIntermediateTangent(long iIndexPoint,
                 | HybridShapeDirection iTgtDir)
@@ -639,6 +673,8 @@ class HybridShapeConic(HybridShape):
     def set_intermediate_tangent_direction_flag(self, i_index_point: int, i_orientation: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetIntermediateTangentDirectionFlag(long iIndexPoint,
                 | long iOrientation)
@@ -684,6 +720,8 @@ class HybridShapeConic(HybridShape):
                                                         i_end_tgt: HybridShapeDirection, i_conic_param: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetStartAndEndTangentsPlusConicParameter(HybridShapeDirection
                 | iStartTgt,
@@ -742,6 +780,8 @@ class HybridShapeConic(HybridShape):
                                                       i_end_tgt: HybridShapeDirection, i_passing_pt: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetStartAndEndTangentsPlusPassingPoint(HybridShapeDirection
                 | iStartTgt,
@@ -804,6 +844,8 @@ class HybridShapeConic(HybridShape):
     def set_start_tangent_direction_flag(self, i_orientation: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetStartTangentDirectionFlag(long iOrientation)
                 | 
@@ -840,6 +882,8 @@ class HybridShapeConic(HybridShape):
     def set_tangent_intersect_point_plus_conic_parm(self, i_tgt_int: Reference, i_conic_param: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetTangentIntersectPointPlusConicParm(Reference
                 | iTgtInt,
@@ -895,6 +939,8 @@ class HybridShapeConic(HybridShape):
     def set_tangent_intersect_point_plus_passing_point(self, i_tgt_int: Reference, i_passing_pt: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetTangentIntersectPointPlusPassingPoint(Reference
                 | iTgtInt,
@@ -956,6 +1002,8 @@ class HybridShapeConic(HybridShape):
                                               i_pass_pt3: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetThreeIntermediatePassingPoints(Reference iPassPt1,
                 | Reference iPassPt2,
@@ -1018,6 +1066,8 @@ class HybridShapeConic(HybridShape):
                                                              i_index_point: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetTwoIntermediatePassingPointsPlusOneTangent(Reference
                 | iPassPt1,
@@ -1090,6 +1140,8 @@ class HybridShapeConic(HybridShape):
     def switch_end_tangent_direction(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SwitchEndTangentDirection()
                 | 
@@ -1113,6 +1165,8 @@ class HybridShapeConic(HybridShape):
     def switch_intermediate_tangent_direction(self, i_index_point: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SwitchIntermediateTangentDirection(long iIndexPoint)
                 | 
@@ -1147,6 +1201,8 @@ class HybridShapeConic(HybridShape):
     def switch_start_tangent_direction(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SwitchStartTangentDirection()
                 | 

@@ -20,6 +20,8 @@ class HybridShapeExtremumPolar(HybridShape):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -52,6 +54,8 @@ class HybridShapeExtremumPolar(HybridShape):
     def angle(self) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Angle() As Angle (Read Only)
                 | 
@@ -67,6 +71,8 @@ class HybridShapeExtremumPolar(HybridShape):
     def contour(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Contour() As Reference
                 | 
@@ -90,6 +96,8 @@ class HybridShapeExtremumPolar(HybridShape):
     def dir(self) -> HybridShapeDirection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Dir() As HybridShapeDirection
                 | 
@@ -113,6 +121,8 @@ class HybridShapeExtremumPolar(HybridShape):
     def extremum_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExtremumType() As short
                 | 
@@ -136,6 +146,8 @@ class HybridShapeExtremumPolar(HybridShape):
     def origin(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Origin() As Reference
                 | 
@@ -159,6 +171,8 @@ class HybridShapeExtremumPolar(HybridShape):
     def radius(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Radius() As Length (Read Only)
                 | 
@@ -174,6 +188,8 @@ class HybridShapeExtremumPolar(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 

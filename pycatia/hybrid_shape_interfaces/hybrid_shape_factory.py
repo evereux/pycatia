@@ -117,6 +117,8 @@ from pycatia.mec_mod_interfaces.factory import Factory
 class HybridShapeFactory(Factory):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -154,6 +156,8 @@ class HybridShapeFactory(Factory):
                           i_radius: float, i_orientation1: int, i_orientation2: int, i_trim: bool) -> HybridShapeCorner:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNew3DCorner(Reference iElement1,
                 | Reference iElement2,
@@ -208,6 +212,8 @@ class HybridShapeFactory(Factory):
                                 i_corner_radius: float, i_corner_tension: float) -> HybridShape3DCurveOffset:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNew3DCurveOffset(Reference iCurveToOffset,
                 | HybridShapeDirection iDirection,
@@ -249,6 +255,8 @@ class HybridShapeFactory(Factory):
                          i_z_ratio: float) -> HybridShapeAffinity:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewAffinity(Reference iElement,
                 | double iXRatio,
@@ -287,6 +295,8 @@ class HybridShapeFactory(Factory):
     def add_new_axis_line(self, i_element: Reference) -> HybridShapeAxisLine:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewAxisLine(Reference iElement) As
                 | HybridShapeAxisLine
@@ -311,6 +321,8 @@ class HybridShapeFactory(Factory):
                              i_target_axis: Reference) -> HybridShapeAxisToAxis:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewAxisToAxis(Reference iObject,
                 | Reference iReferenceAxis,
@@ -343,6 +355,8 @@ class HybridShapeFactory(Factory):
     def add_new_blend(self) -> HybridShapeBlend:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewBlend() As HybridShapeBlend
                 | 
@@ -362,6 +376,8 @@ class HybridShapeFactory(Factory):
                          i_typede_propagation: int) -> HybridShapeBoundary:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewBoundary(Reference iInitialElement,
                 | Reference iSupport,
@@ -404,6 +420,8 @@ class HybridShapeFactory(Factory):
     def add_new_boundary_of_surface(self, surface: Reference) -> HybridShapeBoundary:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewBoundaryOfSurface(Reference Surface) As
                 | HybridShapeBoundary
@@ -428,6 +446,8 @@ class HybridShapeFactory(Factory):
     def add_new_bump(self, i_body_to_bump: Reference) -> HybridShapeBump:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewBump(Reference iBodyToBump) As HybridShapeBump
                 | 
@@ -451,6 +471,8 @@ class HybridShapeFactory(Factory):
                                    i_geodesic: bool, i_radius: float, i_ori: int) -> HybridShapeCircle2PointsRad:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewCircle2PointsRad(Reference iPoint1,
                 | Reference iPoint2,
@@ -506,6 +528,8 @@ class HybridShapeFactory(Factory):
                                i_point3: Reference) -> HybridShapeCircle3Points:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewCircle3Points(Reference iPoint1,
                 | Reference iPoint2,
@@ -547,6 +571,8 @@ class HybridShapeFactory(Factory):
                                        i_ori2: int) -> HybridShapeCircleBitangentPoint:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewCircleBitangentPoint(Reference iCurve1,
                 | Reference iCurve2,
@@ -603,6 +629,8 @@ class HybridShapeFactory(Factory):
                                         i_radius: float, i_ori1: int, i_ori2: int) -> HybridShapeCircleBitangentRadius:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewCircleBitangentRadius(Reference iCurve1,
                 | Reference iCurve2,
@@ -657,6 +685,8 @@ class HybridShapeFactory(Factory):
                                    i_projection: bool) -> HybridShapeCircleCenterAxis:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewCircleCenterAxis(Reference iAxis,
                 | Reference iPoint,
@@ -697,6 +727,8 @@ class HybridShapeFactory(Factory):
                                                i_end_angle: float) -> HybridShapeCircleCenterAxis:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewCircleCenterAxisWithAngles(Reference iAxis,
                 | Reference iPoint,
@@ -748,6 +780,8 @@ class HybridShapeFactory(Factory):
                                       i_radius: float) -> HybridShapeCircleCenterTangent:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewCircleCenterTangent(Reference iCenterElem,
                 | Reference iTangentCurve,
@@ -787,6 +821,8 @@ class HybridShapeFactory(Factory):
                               i_geodesic: bool) -> HybridShapeCircleCtrPt:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewCircleCtrPt(Reference iCenter,
                 | Reference iCrossingPoint,
@@ -832,6 +868,8 @@ class HybridShapeFactory(Factory):
                                           i_end_angle: float) -> HybridShapeCircleCtrPt:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewCircleCtrPtWithAngles(Reference iCenter,
                 | Reference iCrossingPoint,
@@ -885,6 +923,8 @@ class HybridShapeFactory(Factory):
                                i_radius: float) -> HybridShapeCircleCtrRad:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewCircleCtrRad(Reference iCenter,
                 | Reference iSupport,
@@ -929,6 +969,8 @@ class HybridShapeFactory(Factory):
                                            i_end_angle: float) -> HybridShapeCircleCtrRad:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewCircleCtrRadWithAngles(Reference iCenter,
                 | Reference iSupport,
@@ -979,6 +1021,8 @@ class HybridShapeFactory(Factory):
     def add_new_circle_datum(self, i_object: Reference) -> HybridShapeCircleExplicit:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewCircleDatum(Reference iObject) As
                 | HybridShapeCircleExplicit
@@ -1006,6 +1050,8 @@ class HybridShapeFactory(Factory):
                                   i_ori3: int) -> HybridShapeCircleTritangent:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewCircleTritangent(Reference iCurve1,
                 | Reference iCurve2,
@@ -1065,6 +1111,8 @@ class HybridShapeFactory(Factory):
                         i_nearest_solutions: int) -> HybridShapeCombine:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewCombine(Reference iFirstCurve,
                 | Reference iSecondCurve,
@@ -1108,6 +1156,8 @@ class HybridShapeFactory(Factory):
                       i_end_point: Reference) -> HybridShapeConic:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewConic(Reference iSupport,
                 | Reference iStartingPoint,
@@ -1147,6 +1197,8 @@ class HybridShapeFactory(Factory):
                                                i_orientation_support: int, i_type: int) -> HybridShapeReflectLine:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewConicalReflectLineWithType(Reference iSupport,
                 | Reference iOrigin,
@@ -1200,6 +1252,8 @@ class HybridShapeFactory(Factory):
                         i_tension2: float, trim: bool) -> HybridShapeConnect:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewConnect(Reference iCurve1,
                 | Reference iPoint1,
@@ -1277,6 +1331,8 @@ class HybridShapeFactory(Factory):
                        i_orientation1: int, i_orientation2: int, i_trim: bool) -> HybridShapeCorner:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewCorner(Reference iElement1,
                 | Reference iElement2,
@@ -1338,6 +1394,8 @@ class HybridShapeFactory(Factory):
     def add_new_curve_datum(self, i_object: Reference) -> HybridShapeCurveExplicit:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewCurveDatum(Reference iObject) As
                 | HybridShapeCurveExplicit
@@ -1364,6 +1422,8 @@ class HybridShapeFactory(Factory):
                           geodesic: bool) -> HybridShapeCurvePar:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewCurvePar(Reference Curve,
                 | Reference Support,
@@ -1410,6 +1470,8 @@ class HybridShapeFactory(Factory):
     def add_new_curve_smooth(self, ip_ia_curve: Reference) -> HybridShapeCurveSmooth:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewCurveSmooth(Reference ipIACurve) As
                 | HybridShapeCurveSmooth
@@ -1433,6 +1495,8 @@ class HybridShapeFactory(Factory):
                          i_direction: HybridShapeDirection) -> HybridShapeCylinder:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewCylinder(Reference iCenter,
                 | double iRadius,
@@ -1475,6 +1539,8 @@ class HybridShapeFactory(Factory):
     def add_new_datums(self, i_elem: Reference) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewDatums(Reference iElem) As CATSafeArrayVariant
                 | 
@@ -1521,6 +1587,8 @@ class HybridShapeFactory(Factory):
     def add_new_develop(self, i_mode: int, i_to_develop: Reference, i_support: Reference) -> HybridShapeDevelop:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewDevelop(long iMode,
                 | Reference iToDevelop,
@@ -1558,6 +1626,8 @@ class HybridShapeFactory(Factory):
     def add_new_direction(self, i_element: Reference) -> HybridShapeDirection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewDirection(Reference iElement) As
                 | HybridShapeDirection
@@ -1588,6 +1658,8 @@ class HybridShapeFactory(Factory):
     def add_new_direction_by_coord(self, i_x: float, i_y: float, i_z: float) -> HybridShapeDirection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewDirectionByCoord(double iX,
                 | double iY,
@@ -1618,6 +1690,8 @@ class HybridShapeFactory(Factory):
     def add_new_empty_rotate(self) -> HybridShapeRotate:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewEmptyRotate() As HybridShapeRotate
                 | 
@@ -1631,6 +1705,8 @@ class HybridShapeFactory(Factory):
     def add_new_empty_translate(self) -> HybridShapeTranslate:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewEmptyTranslate() As HybridShapeTranslate
                 | 
@@ -1644,6 +1720,8 @@ class HybridShapeFactory(Factory):
     def add_new_extract(self, element: Reference) -> HybridShapeExtract:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewExtract(Reference Element) As
                 | HybridShapeExtract
@@ -1670,6 +1748,8 @@ class HybridShapeFactory(Factory):
     def add_new_extract_multi(self, element: Reference) -> HybridShapeExtractMulti:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewExtractMulti(Reference Element) As
                 | HybridShapeExtractMulti
@@ -1697,6 +1777,8 @@ class HybridShapeFactory(Factory):
                                 i_length: float) -> HybridShapeExtrapol:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewExtrapolLength(Reference iBoundary,
                 | Reference iToExtrapol,
@@ -1736,6 +1818,8 @@ class HybridShapeFactory(Factory):
                                i_until: Reference) -> HybridShapeExtrapol:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewExtrapolUntil(Reference iBoundary,
                 | Reference iToExtrapol,
@@ -1775,6 +1859,8 @@ class HybridShapeFactory(Factory):
     def add_new_extremum(self, i_objet: Reference, i_dir: HybridShapeDirection, i_min_max: int) -> HybridShapeExtremum:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewExtremum(Reference iObjet,
                 | HybridShapeDirection iDir,
@@ -1810,6 +1896,8 @@ class HybridShapeFactory(Factory):
     def add_new_extremum_polar(self, i_type: int, ip_ia_contour: Reference) -> HybridShapeExtremumPolar:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewExtremumPolar(short iType,
                 | Reference ipIAContour) As HybridShapeExtremumPolar
@@ -1837,6 +1925,8 @@ class HybridShapeFactory(Factory):
                         i_direction: HybridShapeDirection) -> HybridShapeExtrude:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewExtrude(Reference iObjectToExtrude,
                 | double iOffsetDebut,
@@ -1877,6 +1967,8 @@ class HybridShapeFactory(Factory):
     def add_new_fill(self) -> HybridShapeFill:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewFill() As HybridShapeFill
                 | 
@@ -1897,6 +1989,8 @@ class HybridShapeFactory(Factory):
                                   i_ribbon_relimitation_mode: int) -> HybridShapeFilletBiTangent:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewFilletBiTangent(Reference iElement1,
                 | Reference iElement2,
@@ -1955,6 +2049,8 @@ class HybridShapeFactory(Factory):
                                    i_ribbon_relimitation_mode: int) -> HybridShapeFilletTriTangent:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewFilletTriTangent(Reference iElement1,
                 | Reference iElement2,
@@ -2017,6 +2113,8 @@ class HybridShapeFactory(Factory):
     def add_new_healing(self, i_body_toheal: Reference) -> HybridShapeHealing:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewHealing(Reference iBodyToheal) As
                 | HybridShapeHealing
@@ -2041,6 +2139,8 @@ class HybridShapeFactory(Factory):
                       i_taper_outward: bool) -> HybridShapeHelix:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewHelix(Reference iAxis,
                 | boolean iInvertAxis,
@@ -2106,6 +2206,8 @@ class HybridShapeFactory(Factory):
                                i_ratio: float) -> HybridShapeScaling:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewHybridScaling(Reference iElemToScale,
                 | Reference iCenter,
@@ -2143,6 +2245,8 @@ class HybridShapeFactory(Factory):
                              i_orientation: int) -> HybridShapeSplit:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewHybridSplit(Reference iElement1,
                 | Reference iElement2,
@@ -2181,6 +2285,8 @@ class HybridShapeFactory(Factory):
                             i_orientation2: int) -> HybridShapeTrim:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewHybridTrim(Reference iElement1,
                 | long iOrientation1,
@@ -2220,6 +2326,8 @@ class HybridShapeFactory(Factory):
     def add_new_integrated_law(self, i_type: int) -> HybridShapeIntegratedLaw:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewIntegratedLaw(long iType) As
                 | HybridShapeIntegratedLaw
@@ -2241,6 +2349,8 @@ class HybridShapeFactory(Factory):
     def add_new_intersection(self, i_object1: Reference, i_object2: Reference) -> HybridShapeIntersection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewIntersection(Reference iObject1,
                 | Reference iObject2) As HybridShapeIntersection
@@ -2274,6 +2384,8 @@ class HybridShapeFactory(Factory):
     def add_new_inverse(self, element: Reference, inverse: int) -> HybridShapeInverse:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewInverse(Reference Element,
                 | long Inverse) As HybridShapeInverse
@@ -2300,6 +2412,8 @@ class HybridShapeFactory(Factory):
     def add_new_join(self, element1: Reference, element2: Reference) -> HybridShapeAssemble:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewJoin(Reference Element1,
                 | Reference Element2) As HybridShapeAssemble
@@ -2334,6 +2448,8 @@ class HybridShapeFactory(Factory):
     def add_new_law_dist_proj(self, i_reference: Reference, i_definition: Reference) -> HybridShapeLawDistProj:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewLawDistProj(Reference iReference,
                 | Reference iDefinition) As HybridShapeLawDistProj
@@ -2368,6 +2484,8 @@ class HybridShapeFactory(Factory):
                            i_orientation: bool) -> HybridShapeLineAngle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewLineAngle(Reference iCurve,
                 | Reference iSurface,
@@ -2430,6 +2548,8 @@ class HybridShapeFactory(Factory):
                                 i_support: Reference) -> HybridShapeLineBiTangent:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewLineBiTangent(Reference iCurve1,
                 | Reference iElement2,
@@ -2471,6 +2591,8 @@ class HybridShapeFactory(Factory):
                                i_orientation: bool, solution_nb: int) -> HybridShapeLineBisecting:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewLineBisecting(Reference iLine1,
                 | Reference iLine2,
@@ -2523,6 +2645,8 @@ class HybridShapeFactory(Factory):
                                           solution_nb: int) -> HybridShapeLineBisecting:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewLineBisectingOnSupport(Reference iLine1,
                 | Reference iLine2,
@@ -2584,6 +2708,8 @@ class HybridShapeFactory(Factory):
                                                      solution_nb: int) -> HybridShapeLineBisecting:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewLineBisectingOnSupportWithPoint(Reference
                 | iLine1,
@@ -2652,6 +2778,8 @@ class HybridShapeFactory(Factory):
                                           solution_nb: int) -> HybridShapeLineBisecting:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewLineBisectingWithPoint(Reference iLine1,
                 | Reference iLine2,
@@ -2710,6 +2838,8 @@ class HybridShapeFactory(Factory):
     def add_new_line_datum(self, i_object: Reference) -> HybridShapeLineExplicit:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewLineDatum(Reference iObject) As
                 | HybridShapeLineExplicit
@@ -2736,6 +2866,8 @@ class HybridShapeFactory(Factory):
                             i_orientation: bool) -> HybridShapeLineNormal:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewLineNormal(Reference iSurface,
                 | Reference iPoint,
@@ -2783,6 +2915,8 @@ class HybridShapeFactory(Factory):
                             i_end_offset: float, i_orientation: bool) -> HybridShapeLinePtDir:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewLinePtDir(Reference iPt,
                 | HybridShapeDirection iDirection,
@@ -2830,6 +2964,8 @@ class HybridShapeFactory(Factory):
                                        i_orientation: bool) -> HybridShapeLinePtDir:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewLinePtDirOnSupport(Reference iPt,
                 | HybridShapeDirection iDirection,
@@ -2883,6 +3019,8 @@ class HybridShapeFactory(Factory):
     def add_new_line_pt_pt(self, i_pt_origine: Reference, i_pt_extremite: Reference) -> HybridShapeLinePtPt:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewLinePtPt(Reference iPtOrigine,
                 | Reference iPtExtremite) As HybridShapeLinePtPt
@@ -2915,6 +3053,8 @@ class HybridShapeFactory(Factory):
                                     i_end_offset: float) -> HybridShapeLinePtPt:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewLinePtPtExtended(Reference iPtOrigine,
                 | Reference iPtExtremite,
@@ -2957,6 +3097,8 @@ class HybridShapeFactory(Factory):
                                       i_support: Reference) -> HybridShapeLinePtPt:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewLinePtPtOnSupport(Reference iPtOrigine,
                 | Reference iPtExtremite,
@@ -2999,6 +3141,8 @@ class HybridShapeFactory(Factory):
                                                i_end_offset: float) -> HybridShapeLinePtPt:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewLinePtPtOnSupportExtended(Reference iPtOrigine,
                 | Reference iPtExtremite,
@@ -3050,6 +3194,8 @@ class HybridShapeFactory(Factory):
                               i_orientation: bool) -> HybridShapeLineTangency:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewLineTangency(Reference iCurve,
                 | Reference iPoint,
@@ -3099,6 +3245,8 @@ class HybridShapeFactory(Factory):
                                          i_orientation: bool) -> HybridShapeLineTangency:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewLineTangencyOnSupport(Reference iCurve,
                 | Reference iPoint,
@@ -3154,6 +3302,8 @@ class HybridShapeFactory(Factory):
     def add_new_loft(self) -> HybridShapeLoft:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewLoft() As HybridShapeLoft
                 | 
@@ -3173,6 +3323,8 @@ class HybridShapeFactory(Factory):
                             i_threshold: float) -> HybridShapeMidSurface:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewMidSurface(Reference iSupport,
                 | long iCreationMode,
@@ -3205,6 +3357,8 @@ class HybridShapeFactory(Factory):
                                                 i_auto_thickness_threshold: int) -> HybridShapeMidSurface:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewMidSurfaceWithAutoThreshold(Reference iSupport,
                 | long iCreationMode,
@@ -3241,6 +3395,8 @@ class HybridShapeFactory(Factory):
     def add_new_near(self, multi_element: Reference, reference_element: Reference) -> HybridShapeNear:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewNear(Reference MultiElement,
                 | Reference ReferenceElement) As HybridShapeNear
@@ -3276,6 +3432,8 @@ class HybridShapeFactory(Factory):
                        i_precision: float) -> HybridShapeOffset:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewOffset(Reference iObjectToOffset,
                 | double iOffset,
@@ -3314,6 +3472,8 @@ class HybridShapeFactory(Factory):
     def add_new_plane1_curve(self, i_planar_curve: Reference) -> HybridShapePlane1Curve:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPlane1Curve(Reference iPlanarCurve) As
                 | HybridShapePlane1Curve
@@ -3341,6 +3501,8 @@ class HybridShapeFactory(Factory):
     def add_new_plane1_line1_pt(self, i_ln: Reference, i_pt: Reference) -> HybridShapePlane1Line1Pt:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPlane1Line1Pt(Reference iLn,
                 | Reference iPt) As HybridShapePlane1Line1Pt
@@ -3374,6 +3536,8 @@ class HybridShapeFactory(Factory):
     def add_new_plane2_lines(self, i_ln1: Reference, i_ln2: Reference) -> HybridShapePlane2Lines:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPlane2Lines(Reference iLn1,
                 | Reference iLn2) As HybridShapePlane2Lines
@@ -3408,6 +3572,8 @@ class HybridShapeFactory(Factory):
     def add_new_plane3_points(self, i_pt1: Reference, i_pt2: Reference, i_pt3: Reference) -> HybridShapePlane3Points:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPlane3Points(Reference iPt1,
                 | Reference iPt2,
@@ -3447,6 +3613,8 @@ class HybridShapeFactory(Factory):
                             i_orientation: bool) -> HybridShapePlaneAngle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPlaneAngle(Reference iPlane,
                 | Reference iRevolAxis,
@@ -3491,6 +3659,8 @@ class HybridShapeFactory(Factory):
     def add_new_plane_datum(self, i_object: Reference) -> HybridShapePlaneExplicit:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPlaneDatum(Reference iObject) As
                 | HybridShapePlaneExplicit
@@ -3517,6 +3687,8 @@ class HybridShapeFactory(Factory):
                                i_d_coeff: float) -> HybridShapePlaneEquation:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPlaneEquation(double iA_Coeff,
                 | double iB_Coeff,
@@ -3551,6 +3723,8 @@ class HybridShapeFactory(Factory):
     def add_new_plane_mean(self, i_list_of_points: tuple, nb_point: int) -> HybridShapePlaneMean:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPlaneMean(CATSafeArrayVariant iListOfPoints,
                 | long NbPoint) As HybridShapePlaneMean
@@ -3578,6 +3752,8 @@ class HybridShapeFactory(Factory):
     def add_new_plane_normal(self, i_curve: Reference, i_pt: Reference) -> HybridShapePlaneNormal:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPlaneNormal(Reference iCurve,
                 | Reference iPt) As HybridShapePlaneNormal
@@ -3609,6 +3785,8 @@ class HybridShapeFactory(Factory):
     def add_new_plane_offset(self, i_plane: Reference, i_offset: float, i_orientation: bool) -> HybridShapePlaneOffset:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPlaneOffset(Reference iPlane,
                 | double iOffset,
@@ -3644,6 +3822,8 @@ class HybridShapeFactory(Factory):
     def add_new_plane_offset_pt(self, i_plane: Reference, i_pt: Reference) -> HybridShapePlaneOffsetPt:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPlaneOffsetPt(Reference iPlane,
                 | Reference iPt) As HybridShapePlaneOffsetPt
@@ -3677,6 +3857,8 @@ class HybridShapeFactory(Factory):
     def add_new_plane_tangent(self, i_surface: Reference, i_pt: Reference) -> HybridShapePlaneTangent:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPlaneTangent(Reference iSurface,
                 | Reference iPt) As HybridShapePlaneTangent
@@ -3709,6 +3891,8 @@ class HybridShapeFactory(Factory):
                               i_orientation: int) -> HybridShapePointBetween:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPointBetween(Reference iPoint1,
                 | Reference iPoint2,
@@ -3749,6 +3933,8 @@ class HybridShapeFactory(Factory):
     def add_new_point_center(self, i_curve: Reference) -> HybridShapePointCenter:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPointCenter(Reference iCurve) As
                 | HybridShapePointCenter
@@ -3775,6 +3961,8 @@ class HybridShapeFactory(Factory):
     def add_new_point_coord(self, i_x: float, i_y: float, i_z: float) -> HybridShapePointCoord:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPointCoord(double iX,
                 | double iY,
@@ -3821,6 +4009,8 @@ class HybridShapeFactory(Factory):
                                            i_pt: Reference) -> HybridShapePointCoord:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPointCoordWithReference(double iX,
                 | double iY,
@@ -3859,6 +4049,8 @@ class HybridShapeFactory(Factory):
     def add_new_point_datum(self, i_object: Reference) -> HybridShapePointExplicit:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPointDatum(Reference iObject) As
                 | HybridShapePointExplicit
@@ -3885,6 +4077,8 @@ class HybridShapeFactory(Factory):
                                                i_direction: HybridShapeDirection) -> HybridShapePointOnCurve:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPointOnCurveAlongDirection(Reference iCrv,
                 | double iLong,
@@ -3927,6 +4121,8 @@ class HybridShapeFactory(Factory):
                                              i_orientation: bool) -> HybridShapePointOnCurve:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPointOnCurveFromDistance(Reference iCrv,
                 | double iLong,
@@ -3964,6 +4160,8 @@ class HybridShapeFactory(Factory):
                                             i_orientation: bool) -> HybridShapePointOnCurve:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPointOnCurveFromPercent(Reference iCrv,
                 | double iLong,
@@ -4004,6 +4202,8 @@ class HybridShapeFactory(Factory):
     ) -> HybridShapePointOnCurve:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPointOnCurveWithReferenceAlongDirection(Reference
                 | iCrv,
@@ -4053,6 +4253,8 @@ class HybridShapeFactory(Factory):
                                                             i_orientation: bool) -> HybridShapePointOnCurve:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPointOnCurveWithReferenceFromDistance(Reference
                 | iCrv,
@@ -4097,6 +4299,8 @@ class HybridShapeFactory(Factory):
                                                            i_orientation: bool) -> HybridShapePointOnCurve:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPointOnCurveWithReferenceFromPercent(Reference
                 | iCrv,
@@ -4140,6 +4344,8 @@ class HybridShapeFactory(Factory):
     def add_new_point_on_plane(self, i_plane: Reference, i_x: float, i_y: float) -> HybridShapePointOnPlane:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPointOnPlane(Reference iPlane,
                 | double iX,
@@ -4174,6 +4380,8 @@ class HybridShapeFactory(Factory):
                                               i_y: float) -> HybridShapePointOnPlane:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPointOnPlaneWithReference(Reference iPlane,
                 | Reference iPt,
@@ -4217,6 +4425,8 @@ class HybridShapeFactory(Factory):
                                  i_x: float) -> HybridShapePointOnSurface:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPointOnSurface(Reference iSurface,
                 | HybridShapeDirection iDirection,
@@ -4253,6 +4463,8 @@ class HybridShapeFactory(Factory):
                                                 i_x: float) -> HybridShapePointOnSurface:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPointOnSurfaceWithReference(Reference iSurface,
                 | Reference iPt,
@@ -4295,6 +4507,8 @@ class HybridShapeFactory(Factory):
     def add_new_point_tangent(self, i_curve: Reference, i_direction: HybridShapeDirection) -> HybridShapePointTangent:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPointTangent(Reference iCurve,
                 | HybridShapeDirection iDirection) As HybridShapePointTangent
@@ -4325,6 +4539,8 @@ class HybridShapeFactory(Factory):
     def add_new_polyline(self) -> HybridShapePolyline:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPolyline() As HybridShapePolyline
                 | 
@@ -4343,6 +4559,8 @@ class HybridShapeFactory(Factory):
     def add_new_position_transfo(self, i_mode: int) -> HybridShapePositionTransfo:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPositionTransfo(long iMode) As
                 | HybridShapePositionTransfo
@@ -4366,6 +4584,8 @@ class HybridShapeFactory(Factory):
     def add_new_project(self, i_element: Reference, i_support: Reference) -> HybridShapeProject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewProject(Reference iElement,
                 | Reference iSupport) As HybridShapeProject
@@ -4398,6 +4618,8 @@ class HybridShapeFactory(Factory):
                              i_orientation_support: int, i_orientation_direction: int) -> HybridShapeReflectLine:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewReflectLine(Reference iSupport,
                 | HybridShapeDirection iDir,
@@ -4445,6 +4667,8 @@ class HybridShapeFactory(Factory):
                                        i_type: int) -> HybridShapeReflectLine:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewReflectLineWithType(Reference iSupport,
                 | HybridShapeDirection iDir,
@@ -4500,6 +4724,8 @@ class HybridShapeFactory(Factory):
                       i_axis: Reference) -> HybridShapeRevol:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewRevol(Reference iObjectToExtrude,
                 | double iOffsetDebut,
@@ -4545,6 +4771,8 @@ class HybridShapeFactory(Factory):
     def add_new_rotate(self, i_to_rotate: Reference, i_axis: Reference, i_angle: float) -> HybridShapeRotate:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewRotate(Reference iToRotate,
                 | Reference iAxis,
@@ -4581,6 +4809,8 @@ class HybridShapeFactory(Factory):
     def add_new_section(self) -> HybridShapeSection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSection() As HybridShapeSection
                 | 
@@ -4601,6 +4831,8 @@ class HybridShapeFactory(Factory):
                        i_end_meridian_angle: float) -> HybridShapeSphere:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSphere(Reference iCenter,
                 | Reference iAxis,
@@ -4652,6 +4884,8 @@ class HybridShapeFactory(Factory):
     def add_new_spine(self) -> HybridShapeSpine:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSpine() As HybridShapeSpine
                 | 
@@ -4671,6 +4905,8 @@ class HybridShapeFactory(Factory):
                        i_starting_radius: float, i_clockwise_revolution: bool) -> HybridShapeSpiral:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSpiral(long iType,
                 | Reference iSupport,
@@ -4717,6 +4953,8 @@ class HybridShapeFactory(Factory):
     def add_new_spline(self) -> HybridShapeSpline:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSpline() As HybridShapeSpline
                 | 
@@ -4735,6 +4973,8 @@ class HybridShapeFactory(Factory):
     def add_new_surface_datum(self, i_object: Reference) -> HybridShapeSurfaceExplicit:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSurfaceDatum(Reference iObject) As
                 | HybridShapeSurfaceExplicit
@@ -4760,6 +5000,8 @@ class HybridShapeFactory(Factory):
     def add_new_sweep_circle(self, i_guide1: Reference) -> HybridShapeSweepCircle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSweepCircle(Reference iGuide1) As
                 | HybridShapeSweepCircle
@@ -4786,6 +5028,8 @@ class HybridShapeFactory(Factory):
     def add_new_sweep_conic(self, ip_ia_guide1: Reference) -> HybridShapeSweepConic:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSweepConic(Reference ipIAGuide1) As
                 | HybridShapeSweepConic
@@ -4808,6 +5052,8 @@ class HybridShapeFactory(Factory):
     def add_new_sweep_explicit(self, i_profile: Reference, i_guide: Reference) -> HybridShapeSweepExplicit:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSweepExplicit(Reference iProfile,
                 | Reference iGuide) As HybridShapeSweepExplicit
@@ -4840,6 +5086,8 @@ class HybridShapeFactory(Factory):
     def add_new_sweep_line(self, i_guide1: Reference) -> HybridShapeSweepLine:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSweepLine(Reference iGuide1) As
                 | HybridShapeSweepLine
@@ -4862,6 +5110,8 @@ class HybridShapeFactory(Factory):
     def add_new_symmetry(self, i_object: Reference, i_reference: Reference) -> HybridShapeSymmetry:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSymmetry(Reference iObject,
                 | Reference iReference) As HybridShapeSymmetry
@@ -4894,6 +5144,8 @@ class HybridShapeFactory(Factory):
     def add_new_transfer(self, i_element_to_transfer: Reference, i_type_of_transfer: int) -> HybridShapeTransfer:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewTransfer(Reference iElementToTransfer,
                 | long iTypeOfTransfer) As HybridShapeTransfer
@@ -4922,6 +5174,8 @@ class HybridShapeFactory(Factory):
                           i_distance: float) -> HybridShapeTranslate:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewTranslate(Reference iElement,
                 | HybridShapeDirection iDirection,
@@ -4959,6 +5213,8 @@ class HybridShapeFactory(Factory):
     def add_new_unfold(self) -> HybridShapeUnfold:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewUnfold() As HybridShapeUnfold
                 | 
@@ -4978,6 +5234,8 @@ class HybridShapeFactory(Factory):
     def add_new_volume_datum(self, i_object: Reference) -> HybridShapeVolumeExplicit:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewVolumeDatum(Reference iObject) As
                 | HybridShapeVolumeExplicit
@@ -5004,6 +5262,8 @@ class HybridShapeFactory(Factory):
     def add_new_wrap_curve(self) -> HybridShapeWrapCurve:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewWrapCurve() As HybridShapeWrapCurve
                 | 
@@ -5023,6 +5283,8 @@ class HybridShapeFactory(Factory):
     def add_new_wrap_surface(self, i_body_to_deform: Reference) -> HybridShapeWrapSurface:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewWrapSurface(Reference iBodyToDeform) As
                 | HybridShapeWrapSurface
@@ -5046,6 +5308,8 @@ class HybridShapeFactory(Factory):
     def change_feature_name(self, i_elem: Reference, name: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ChangeFeatureName(Reference iElem,
                 | CATBSTR Name)
@@ -5084,6 +5348,8 @@ class HybridShapeFactory(Factory):
     def delete_object_for_datum(self, i_object: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub DeleteObjectForDatum(Reference iObject)
                 | 
@@ -5118,6 +5384,8 @@ class HybridShapeFactory(Factory):
     def gsm_visibility(self, i_elem: Reference, show: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GSMVisibility(Reference iElem,
                 | long Show)
@@ -5156,6 +5424,8 @@ class HybridShapeFactory(Factory):
     def get_geometrical_feature_type(self, i_elem: Reference) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetGeometricalFeatureType(Reference iElem) As short
                 | 

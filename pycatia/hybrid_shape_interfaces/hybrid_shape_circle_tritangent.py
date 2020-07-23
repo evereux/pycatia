@@ -17,6 +17,8 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -54,6 +56,8 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def begin_of_circle(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BeginOfCircle() As long
                 | 
@@ -86,6 +90,8 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def curve1(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Curve1() As Reference
                 | 
@@ -119,6 +125,8 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def curve2(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Curve2() As Reference
                 | 
@@ -151,6 +159,8 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def curve3(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Curve3() As Reference
                 | 
@@ -184,6 +194,8 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def discrimination_index(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DiscriminationIndex() As long
                 | 
@@ -219,6 +231,8 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def orientation1(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation1() As long
                 | 
@@ -257,6 +271,8 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def orientation2(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation2() As long
                 | 
@@ -295,6 +311,8 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def orientation3(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation3() As long
                 | 
@@ -333,6 +351,8 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def support(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
@@ -364,6 +384,8 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def tangent_orientation1(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TangentOrientation1() As long
                 | 
@@ -398,6 +420,8 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def tangent_orientation2(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TangentOrientation2() As long
                 | 
@@ -432,6 +456,8 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def tangent_orientation3(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TangentOrientation3() As long
                 | 
@@ -466,6 +492,8 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
     def trim_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TrimMode() As long
                 | 

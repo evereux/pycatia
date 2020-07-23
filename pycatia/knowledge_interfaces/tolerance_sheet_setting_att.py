@@ -15,6 +15,8 @@ from pycatia.system_interfaces.setting_controller import SettingController
 class ToleranceSheetSettingAtt(SettingController):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class ToleranceSheetSettingAtt(SettingController):
     def angle_max_tolerance(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AngleMaxTolerance() As double
                 | 
@@ -70,6 +74,8 @@ class ToleranceSheetSettingAtt(SettingController):
     def angle_min_tolerance(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AngleMinTolerance() As double
                 | 
@@ -101,6 +107,8 @@ class ToleranceSheetSettingAtt(SettingController):
     def default_tolerance(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DefaultTolerance() As short
                 | 
@@ -134,6 +142,8 @@ class ToleranceSheetSettingAtt(SettingController):
     def length_max_tolerance(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property LengthMaxTolerance() As double
                 | 
@@ -165,6 +175,8 @@ class ToleranceSheetSettingAtt(SettingController):
     def length_min_tolerance(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property LengthMinTolerance() As double
                 | 
@@ -195,6 +207,8 @@ class ToleranceSheetSettingAtt(SettingController):
     def get_angle_max_tolerance_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetAngleMaxToleranceInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -230,6 +244,8 @@ class ToleranceSheetSettingAtt(SettingController):
     def get_angle_min_tolerance_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetAngleMinToleranceInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -265,6 +281,8 @@ class ToleranceSheetSettingAtt(SettingController):
     def get_default_tolerance_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetDefaultToleranceInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -300,6 +318,8 @@ class ToleranceSheetSettingAtt(SettingController):
     def get_length_max_tolerance_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetLengthMaxToleranceInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -335,6 +355,8 @@ class ToleranceSheetSettingAtt(SettingController):
     def get_length_min_tolerance_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetLengthMinToleranceInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -370,6 +392,8 @@ class ToleranceSheetSettingAtt(SettingController):
     def set_angle_max_tolerance_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetAngleMaxToleranceLock(boolean iLocked)
                 | 
@@ -410,6 +434,8 @@ class ToleranceSheetSettingAtt(SettingController):
     def set_angle_min_tolerance_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetAngleMinToleranceLock(boolean iLocked)
                 | 
@@ -450,6 +476,8 @@ class ToleranceSheetSettingAtt(SettingController):
     def set_default_tolerance_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetDefaultToleranceLock(boolean iLocked)
                 | 
@@ -490,6 +518,8 @@ class ToleranceSheetSettingAtt(SettingController):
     def set_length_max_tolerance_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetLengthMaxToleranceLock(boolean iLocked)
                 | 
@@ -530,6 +560,8 @@ class ToleranceSheetSettingAtt(SettingController):
     def set_length_min_tolerance_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetLengthMinToleranceLock(boolean iLocked)
                 | 

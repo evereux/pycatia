@@ -15,6 +15,8 @@ from pycatia.system_interfaces.setting_controller import SettingController
 class LicenseSettingAtt(SettingController):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
 
                 | System.IUnknown
@@ -49,6 +51,8 @@ class LicenseSettingAtt(SettingController):
     def demo_mode(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property DemoMode() As boolean
                 | 
@@ -73,6 +77,8 @@ class LicenseSettingAtt(SettingController):
     def frequency(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property Frequency() As float
                 | 
@@ -99,6 +105,8 @@ class LicenseSettingAtt(SettingController):
     def nodelock_alert(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property NodelockAlert() As long
                 | 
@@ -124,6 +132,8 @@ class LicenseSettingAtt(SettingController):
     def server_time_out(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property ServerTimeOut() As float
                 | 
@@ -149,6 +159,8 @@ class LicenseSettingAtt(SettingController):
     def show_license(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property ShowLicense() As boolean
                 | 
@@ -173,6 +185,8 @@ class LicenseSettingAtt(SettingController):
     def get_demo_mode_info(self, io_admin_level, io_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetDemoModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -190,6 +204,8 @@ class LicenseSettingAtt(SettingController):
     def get_frequency_info(self, io_admin_level, io_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetFrequencyInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -207,6 +223,8 @@ class LicenseSettingAtt(SettingController):
     def get_granted_licenses_list(self, i_default_licenses):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetGrantedLicensesList(long iDefaultLicenses) As
                 | CATSafeArrayVariant
@@ -222,6 +240,8 @@ class LicenseSettingAtt(SettingController):
     def get_license(self, i_license):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetLicense(CATBSTR iLicense) As CATBSTR
                 | 
@@ -258,6 +278,8 @@ class LicenseSettingAtt(SettingController):
     def get_license_info(self, i_license, io_admin_level, io_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetLicenseInfo(CATBSTR iLicense,
                 | CATBSTR ioAdminLevel,
@@ -276,6 +298,8 @@ class LicenseSettingAtt(SettingController):
     def get_licenses_list(self, i_default_licenses):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetLicensesList(long iDefaultLicenses) As
                 | CATSafeArrayVariant
@@ -311,6 +335,8 @@ class LicenseSettingAtt(SettingController):
     def get_licenses_list_info(self, io_admin_level, io_lock):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetLicensesListInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLock) As boolean
@@ -350,6 +376,8 @@ class LicenseSettingAtt(SettingController):
     def get_nodelock_alert_info(self, io_admin_level, io_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetNodelockAlertInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -367,6 +395,8 @@ class LicenseSettingAtt(SettingController):
     def get_server_time_out_info(self, io_admin_level, io_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetServerTimeOutInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -383,6 +413,8 @@ class LicenseSettingAtt(SettingController):
     def get_show_license_info(self, io_admin_level, io_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetShowLicenseInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -400,6 +432,8 @@ class LicenseSettingAtt(SettingController):
     def set_demo_mode_lock(self, i_lock):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetDemoModeLock(boolean iLock)
                 | 
@@ -429,6 +463,8 @@ class LicenseSettingAtt(SettingController):
     def set_frequency_lock(self, i_lock):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetFrequencyLock(boolean iLock)
                 | 
@@ -458,6 +494,8 @@ class LicenseSettingAtt(SettingController):
     def set_license(self, i_license, i_value):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetLicense(CATBSTR iLicense,
                 | CATBSTR iValue)
@@ -494,6 +532,8 @@ class LicenseSettingAtt(SettingController):
     def set_license_lock(self, i_license, i_lock):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetLicenseLock(CATBSTR iLicense,
                 | boolean iLock)
@@ -525,6 +565,8 @@ class LicenseSettingAtt(SettingController):
     def set_licenses_list_lock(self, i_lock):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetLicensesListLock(boolean iLock)
                 | 
@@ -568,6 +610,8 @@ class LicenseSettingAtt(SettingController):
     def set_nodelock_alert_lock(self, i_lock):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetNodelockAlertLock(boolean iLock)
                 | 
@@ -598,6 +642,8 @@ class LicenseSettingAtt(SettingController):
     def set_server_time_out_lock(self, i_lock):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetServerTimeOutLock(boolean iLock)
                 | 
@@ -627,6 +673,8 @@ class LicenseSettingAtt(SettingController):
     def set_show_license_lock(self, i_lock):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetShowLicenseLock(boolean iLock)
                 | 

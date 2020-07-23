@@ -17,6 +17,8 @@ from pycatia.knowledge_interfaces.real_param import RealParam
 class HybridShapePointBetween(Point):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -49,6 +51,8 @@ class HybridShapePointBetween(Point):
     def first_point(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstPoint() As Reference
                 | 
@@ -80,6 +84,8 @@ class HybridShapePointBetween(Point):
     def orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation() As long
                 | 
@@ -111,6 +117,8 @@ class HybridShapePointBetween(Point):
     def ratio(self) -> RealParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Ratio() As RealParam (Read Only)
                 | 
@@ -135,6 +143,8 @@ class HybridShapePointBetween(Point):
     def second_point(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondPoint() As Reference
                 | 
@@ -166,6 +176,8 @@ class HybridShapePointBetween(Point):
     def support(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 

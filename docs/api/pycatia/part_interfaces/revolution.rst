@@ -1,3 +1,5 @@
+.. _Revolution:
+
 pycatia.part_interfaces.revolution
 ==================================
 

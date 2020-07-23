@@ -15,6 +15,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class Marker2D(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -36,6 +38,8 @@ class Marker2D(AnyObject):
     def fill(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Fill() As long
                 | 
@@ -69,6 +73,8 @@ class Marker2D(AnyObject):
     def frame(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Frame() As long
                 | 
@@ -102,6 +108,8 @@ class Marker2D(AnyObject):
     def picture(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Picture() As CATBSTR
                 | 
@@ -135,6 +143,8 @@ class Marker2D(AnyObject):
     def text(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Text() As CATBSTR
                 | 
@@ -167,6 +177,8 @@ class Marker2D(AnyObject):
     def text_angle(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TextAngle() As double
                 | 
@@ -199,6 +211,8 @@ class Marker2D(AnyObject):
     def text_font(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TextFont() As CATBSTR
                 | 
@@ -231,6 +245,8 @@ class Marker2D(AnyObject):
     def text_orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TextOrientation() As CatMarkerTextOrientation
                 | 
@@ -263,6 +279,8 @@ class Marker2D(AnyObject):
     def text_size(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TextSize() As double
                 | 
@@ -295,6 +313,8 @@ class Marker2D(AnyObject):
     def type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Type() As CatMarker2DType (Read Only)
                 | 
@@ -318,6 +338,8 @@ class Marker2D(AnyObject):
     def get_positions(self, o_coordinates: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetPositions(CATSafeArrayVariant oCoordinates)
                 | 
@@ -390,6 +412,8 @@ class Marker2D(AnyObject):
     def set_positions(self, i_coordinates: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPositions(CATSafeArrayVariant iCoordinates)
                 | 

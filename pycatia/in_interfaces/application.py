@@ -23,7 +23,8 @@ from pycatia.system_interfaces.system_service import SystemService
 class Application(AnyObject):
     """
 
-    .. admonition:: Note
+    .. note::
+        :class: toggle
 
         CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
@@ -68,7 +69,8 @@ class Application(AnyObject):
     @property
     def active_document(self) -> Document:
         """
-        .. admonition:: Note
+        .. note::
+            :class: toggle
 
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
@@ -95,8 +97,9 @@ class Application(AnyObject):
     @property
     def active_printer(self) -> Printer:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property ActivePrinter() As Printer
@@ -128,8 +131,9 @@ class Application(AnyObject):
     @property
     def active_window(self) -> Window:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property ActiveWindow() As Window (Read Only)
@@ -153,8 +157,9 @@ class Application(AnyObject):
     @property
     def cache_size(self) -> int:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property CacheSize() As long
@@ -186,8 +191,9 @@ class Application(AnyObject):
     @property
     def caption(self) -> str:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Caption() As CATBSTR
@@ -223,8 +229,9 @@ class Application(AnyObject):
     @property
     def display_file_alerts(self) -> bool:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property DisplayFileAlerts() As boolean
@@ -261,8 +268,9 @@ class Application(AnyObject):
     @property
     def documents(self) -> Documents:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Documents() As Documents (Read Only)
@@ -285,8 +293,9 @@ class Application(AnyObject):
     @property
     def file_search_order(self) -> str:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property FileSearchOrder() As CATBSTR
@@ -328,8 +337,9 @@ class Application(AnyObject):
     @property
     def file_system(self) -> FileSystem:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property FileSystem() As FileSystem (Read Only)
@@ -353,8 +363,9 @@ class Application(AnyObject):
     @property
     def full_name(self) -> str:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property FullName() As CATBSTR (Read Only)
@@ -383,8 +394,9 @@ class Application(AnyObject):
     @property
     def hso_synchronized(self) -> bool:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property HSOSynchronized() As boolean
@@ -443,8 +455,9 @@ class Application(AnyObject):
     @property
     def height(self) -> float:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Height() As float
@@ -475,8 +488,9 @@ class Application(AnyObject):
     @property
     def interactive(self) -> bool:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Interactive() As boolean
@@ -508,8 +522,9 @@ class Application(AnyObject):
     @property
     def left(self) -> float:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Left() As float
@@ -542,8 +557,9 @@ class Application(AnyObject):
     @property
     def local_cache(self) -> str:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property LocalCache() As CATBSTR
@@ -575,8 +591,9 @@ class Application(AnyObject):
     @property
     def path(self) -> Path:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Path() As CATBSTR (Read Only)
@@ -603,8 +620,9 @@ class Application(AnyObject):
     @property
     def printers(self) -> Printers:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Printers() As Printers (Read Only)
@@ -628,8 +646,9 @@ class Application(AnyObject):
     @property
     def refresh_display(self) -> bool:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property RefreshDisplay() As boolean
@@ -665,8 +684,9 @@ class Application(AnyObject):
     @property
     def status_bar(self) -> str:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property StatusBar() As CATBSTR
@@ -702,8 +722,9 @@ class Application(AnyObject):
     @property
     def system_configuration(self) -> SystemConfiguration:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property SystemConfiguration() As SystemConfiguration (Read
@@ -726,8 +747,9 @@ class Application(AnyObject):
     @property
     def system_service(self) -> SystemService:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property SystemService() As SystemService (Read Only)
@@ -750,8 +772,9 @@ class Application(AnyObject):
     @property
     def top(self) -> float:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Top() As float
@@ -783,8 +806,9 @@ class Application(AnyObject):
     @property
     def undo_redo_lock(self) -> bool:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property UndoRedoLock() As boolean
@@ -822,8 +846,9 @@ class Application(AnyObject):
     @property
     def visible(self) -> bool:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Visible() As boolean
@@ -855,8 +880,9 @@ class Application(AnyObject):
     @property
     def width(self) -> float:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Width() As float
@@ -887,8 +913,9 @@ class Application(AnyObject):
     @property
     def windows(self) -> Windows:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Windows() As Windows (Read Only)
@@ -911,8 +938,9 @@ class Application(AnyObject):
 
     def create_send_to(self) -> SendToService:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
 
             | o Func CreateSendTo() As SendToService
@@ -931,8 +959,9 @@ class Application(AnyObject):
 
     def disable_new_undo_redo_transaction(self) -> None:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
 
             | o Sub DisableNewUndoRedoTransaction()
@@ -960,7 +989,8 @@ class Application(AnyObject):
 
     def enable_new_undo_redo_transaction(self) -> None:
         """
-        .. admonition:: Note
+        .. note::
+            :class: toggle
 
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
 
@@ -981,7 +1011,8 @@ class Application(AnyObject):
 
     def file_selection_box(self, i_title: str, i_extension: str, i_mode: int) -> str:
         """
-        .. admonition:: Note
+        .. note::
+            :class: toggle
 
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
 
@@ -1025,7 +1056,8 @@ class Application(AnyObject):
 
     def get_workbench_id(self) -> str:
         """
-        .. admonition:: Note
+        .. note::
+            :class: toggle
 
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
 
@@ -1045,7 +1077,8 @@ class Application(AnyObject):
 
     def help(self, i_help_id: str) -> None:
         """
-        .. admonition:: Note
+        .. note::
+            :class: toggle
 
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
 
@@ -1153,7 +1186,8 @@ class Application(AnyObject):
 
     def quit(self) -> None:
         """
-        .. admonition:: Note
+        .. note::
+            :class: toggle
 
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
 
@@ -1174,7 +1208,8 @@ class Application(AnyObject):
 
     def start_command(self, i_command_id: str) -> None:
         """
-        .. admonition:: Note
+        .. note::
+            :class: toggle
 
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
 
@@ -1201,7 +1236,8 @@ class Application(AnyObject):
 
     def start_workbench(self, iworkbench_id: str) -> None:
         """
-        .. admonition:: Note
+        .. note::
+            :class: toggle
 
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
 

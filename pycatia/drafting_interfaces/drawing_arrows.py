@@ -16,6 +16,8 @@ from pycatia.system_interfaces.collection import Collection
 class DrawingArrows(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -41,6 +43,8 @@ class DrawingArrows(Collection):
             i_tail_point_y: float) -> DrawingArrow:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add(double iHeadPointX,
                 | double iHeadPointY,
@@ -84,6 +88,8 @@ class DrawingArrows(Collection):
     def item(self, i_index: int) -> DrawingArrow:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(long iIndex) As DrawingArrow
                 | 
@@ -119,6 +125,8 @@ class DrawingArrows(Collection):
     def remove(self, i_index: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(long iIndex)
                 | 

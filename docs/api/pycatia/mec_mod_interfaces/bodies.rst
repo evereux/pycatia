@@ -1,3 +1,5 @@
+.. _Bodies:
+
 pycatia.mec_mod_interfaces.bodies
 =================================
 

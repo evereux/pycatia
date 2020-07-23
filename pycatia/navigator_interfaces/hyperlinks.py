@@ -17,6 +17,8 @@ from pycatia.types import cat_variant
 class Hyperlinks(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -36,6 +38,8 @@ class Hyperlinks(Collection):
     def add(self, i_object: AnyObject) -> Hyperlink:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Add(AnyObject iObject) As Hyperlink
                 | 
@@ -67,6 +71,8 @@ class Hyperlinks(Collection):
     def get_hyperlink(self, i_object: AnyObject) -> Hyperlink:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetHyperlink(AnyObject iObject) As Hyperlink
                 | 
@@ -98,6 +104,8 @@ class Hyperlinks(Collection):
     def item(self, i_index: cat_variant) -> Hyperlink:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(CATVariant iIndex) As Hyperlink
                 | 
@@ -137,6 +145,8 @@ class Hyperlinks(Collection):
     def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Remove(CATVariant iIndex)
                 | 

@@ -14,6 +14,8 @@ from pycatia.sketcher_interfaces.geometric_element import GeometricElement
 class Geometry2D(GeometricElement):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -36,6 +38,8 @@ class Geometry2D(GeometricElement):
     def construction(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Construction() As boolean
                 | 
@@ -59,6 +63,8 @@ class Geometry2D(GeometricElement):
     def report_name(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ReportName() As long
                 | 

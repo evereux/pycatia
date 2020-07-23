@@ -17,6 +17,8 @@ from pycatia.in_interfaces.viewpoint_3d import Viewpoint3D
 class Viewer3D(Viewer):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -45,6 +47,8 @@ class Viewer3D(Viewer):
     def clipping_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ClippingMode() As CatClippingMode
                 | 
@@ -74,6 +78,8 @@ class Viewer3D(Viewer):
     def far_limit(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FarLimit() As double
                 | 
@@ -107,6 +113,8 @@ class Viewer3D(Viewer):
     def foggy(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Foggy() As boolean
                 | 
@@ -137,6 +145,8 @@ class Viewer3D(Viewer):
     def ground(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Ground() As boolean
                 | 
@@ -166,6 +176,8 @@ class Viewer3D(Viewer):
     def light_sources(self) -> LightSources:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LightSources() As LightSources (Read Only)
                 | 
@@ -187,6 +199,8 @@ class Viewer3D(Viewer):
     def lighting_intensity(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LightingIntensity() As double
                 | 
@@ -217,6 +231,8 @@ class Viewer3D(Viewer):
     def lighting_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LightingMode() As CatLightingMode
                 | 
@@ -246,6 +262,8 @@ class Viewer3D(Viewer):
     def navigation_style(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NavigationStyle() As CatNavigationStyle
                 | 
@@ -275,6 +293,8 @@ class Viewer3D(Viewer):
     def near_limit(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NearLimit() As double
                 | 
@@ -308,6 +328,8 @@ class Viewer3D(Viewer):
     def rendering_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RenderingMode() As CatRenderingMode
                 | 
@@ -337,6 +359,8 @@ class Viewer3D(Viewer):
     def viewpoint_3d(self) -> Viewpoint3D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Viewpoint3D() As Viewpoint3D
                 | 
@@ -366,6 +390,8 @@ class Viewer3D(Viewer):
     def rotate(self, i_axis: tuple, i_angle: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Rotate(CATSafeArrayVariant iAxis,
                 | double iAngle)
@@ -406,6 +432,8 @@ class Viewer3D(Viewer):
     def translate(self, i_vector: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Translate(CATSafeArrayVariant iVector)
                 | 

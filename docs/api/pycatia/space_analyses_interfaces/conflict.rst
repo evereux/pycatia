@@ -1,3 +1,5 @@
+.. _Conflict:
+
 pycatia.space_analyses_interfaces.conflict
 ==========================================
 

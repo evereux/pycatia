@@ -1,3 +1,5 @@
+.. _Bi_dim_feat_edge:
+
 pycatia.mec_mod_interfaces.bi_dim_feat_edge
 ===========================================
 

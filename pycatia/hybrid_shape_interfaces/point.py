@@ -16,6 +16,8 @@ from pycatia.system_interfaces.system_service import SystemService
 class Point(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -45,6 +47,8 @@ class Point(HybridShape):
     def get_coordinates(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetCoordinates(CATSafeArrayVariant oCoordinates)
                 | 
@@ -76,6 +80,8 @@ class Point(HybridShape):
     def set_coordinates(self, o_coordinates: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetCoordinates(CATSafeArrayVariant oCoordinates)
                 | 

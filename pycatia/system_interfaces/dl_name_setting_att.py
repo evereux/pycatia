@@ -15,6 +15,8 @@ from pycatia.system_interfaces.setting_controller import SettingController
 class DlNameSettingAtt(SettingController):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
 
                 | System.IUnknown
@@ -46,6 +48,8 @@ class DlNameSettingAtt(SettingController):
     def dl_name_creation_right(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property DLNameCreationRight() As boolean
                 | 
@@ -69,6 +73,8 @@ class DlNameSettingAtt(SettingController):
     def root_dl_name_creation_right(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property RootDLNameCreationRight() As boolean
                 | 
@@ -91,6 +97,8 @@ class DlNameSettingAtt(SettingController):
     def get_dl_name(self, i_dl_name, o_real_name_unix, o_real_name_nt, o_father):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub GetDLName(CATBSTR iDLName,
                 | CATBSTR oRealNameUnix,
@@ -131,6 +139,8 @@ class DlNameSettingAtt(SettingController):
     def get_dl_name_creation_right_info(self, admin_level, o_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetDLNameCreationRightInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -147,6 +157,8 @@ class DlNameSettingAtt(SettingController):
     def get_dl_name_exp(self, i_dl_name, o_real_name_unix, o_real_name_nt, o_father):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub GetDLNameExp(CATBSTR iDLName,
                 | CATBSTR oRealNameUnix,
@@ -187,6 +199,8 @@ class DlNameSettingAtt(SettingController):
     def get_dl_name_info(self, i_dl_name, admin_level, o_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetDLNameInfo(CATBSTR iDLName,
                 | CATBSTR AdminLevel,
@@ -250,6 +264,8 @@ class DlNameSettingAtt(SettingController):
     def get_dl_name_list(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetDLNameList() As CATSafeArrayVariant
                 | 
@@ -273,6 +289,8 @@ class DlNameSettingAtt(SettingController):
     def get_dl_name_sub_list(self, i_dl_name):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetDLNameSubList(CATBSTR iDLName) As
                 | CATSafeArrayVariant
@@ -305,6 +323,8 @@ class DlNameSettingAtt(SettingController):
     def get_root_dl_name_creation_right_info(self, admin_level, o_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetRootDLNameCreationRightInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -322,6 +342,8 @@ class DlNameSettingAtt(SettingController):
     def remove_dl_name(self, i_dl_name):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub RemoveDLName(CATBSTR iDLName)
                 | 
@@ -347,6 +369,8 @@ class DlNameSettingAtt(SettingController):
     def rename_dl_name(self, i_dl_name, i_new_name):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub RenameDLName(CATBSTR iDLName,
                 | CATBSTR iNewName)
@@ -376,6 +400,8 @@ class DlNameSettingAtt(SettingController):
     def set_dl_name(self, i_dl_name, i_real_name_unix, i_real_name_nt, i_father, i_verif_directory):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetDLName(CATBSTR iDLName,
                 | CATBSTR iRealNameUnix,
@@ -441,6 +467,8 @@ class DlNameSettingAtt(SettingController):
     def set_dl_name_creation_right_lock(self, i_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetDLNameCreationRightLock(boolean iLocked)
                 | 
@@ -470,6 +498,8 @@ class DlNameSettingAtt(SettingController):
     def set_dl_name_lock(self, i_dl_name, i_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetDLNameLock(CATBSTR iDLName,
                 | boolean iLocked)
@@ -518,6 +548,8 @@ class DlNameSettingAtt(SettingController):
     def set_root_dl_name_creation_right_lock(self, i_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetRootDLNameCreationRightLock(boolean iLocked)
                 | 

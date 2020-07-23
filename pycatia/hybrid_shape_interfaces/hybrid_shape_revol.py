@@ -17,6 +17,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeRevol(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -46,6 +48,8 @@ class HybridShapeRevol(HybridShape):
     def axis(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Axis() As Reference
                 | 
@@ -83,6 +87,8 @@ class HybridShapeRevol(HybridShape):
     def begin_angle(self) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BeginAngle() As Angle (Read Only)
                 | 
@@ -112,6 +118,8 @@ class HybridShapeRevol(HybridShape):
     def context(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Context() As long
                 | 
@@ -149,6 +157,8 @@ class HybridShapeRevol(HybridShape):
     def end_angle(self) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property EndAngle() As Angle (Read Only)
                 | 
@@ -178,6 +188,8 @@ class HybridShapeRevol(HybridShape):
     def first_limit_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstLimitType() As long
                 | 
@@ -218,6 +230,8 @@ class HybridShapeRevol(HybridShape):
     def first_upto_element(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstUptoElement() As Reference
                 | 
@@ -249,6 +263,8 @@ class HybridShapeRevol(HybridShape):
     def orientation(self) -> False:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation(boolean iOrientation)
                 | 
@@ -279,6 +295,8 @@ class HybridShapeRevol(HybridShape):
     def profile(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Profil() As Reference
                 | 
@@ -316,6 +334,8 @@ class HybridShapeRevol(HybridShape):
     def second_limit_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondLimitType() As long
                 | 
@@ -356,6 +376,8 @@ class HybridShapeRevol(HybridShape):
     def second_upto_element(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondUptoElement() As Reference
                 | 

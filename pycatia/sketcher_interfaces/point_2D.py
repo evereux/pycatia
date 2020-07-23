@@ -15,6 +15,8 @@ from pycatia.system_interfaces.system_service import SystemService
 class Point2D(Geometry2D):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -37,6 +39,8 @@ class Point2D(Geometry2D):
     def get_coordinates(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetCoordinates(CATSafeArrayVariant oPoint)
                 | 
@@ -68,6 +72,8 @@ class Point2D(Geometry2D):
     def set_data(self, i_x: float, i_y: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetData(double iX,
                 | double iY)

@@ -1,3 +1,5 @@
+.. _Boolean_shape:
+
 pycatia.part_interfaces.boolean_shape
 =====================================
 

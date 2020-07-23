@@ -16,6 +16,8 @@ from pycatia.in_interfaces.reference import Reference
 class HybridShapePlane3Points(Plane):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -52,6 +54,8 @@ class HybridShapePlane3Points(Plane):
     def first(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property First() As Reference
                 | 
@@ -82,6 +86,8 @@ class HybridShapePlane3Points(Plane):
     def second(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Second() As Reference
                 | 
@@ -112,6 +118,8 @@ class HybridShapePlane3Points(Plane):
     def third(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Third() As Reference
                 | 

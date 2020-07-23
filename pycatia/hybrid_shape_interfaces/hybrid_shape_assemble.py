@@ -17,6 +17,8 @@ class HybridShapeAssemble(HybridShape):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -50,6 +52,8 @@ class HybridShapeAssemble(HybridShape):
     def invert(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Invert() As boolean
                 | 
@@ -83,6 +87,8 @@ class HybridShapeAssemble(HybridShape):
     def add_element(self, i_element: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddElement(Reference iElement)
                 | 
@@ -129,6 +135,8 @@ class HybridShapeAssemble(HybridShape):
     def add_sub_element(self, i_sub_element: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddSubElement(Reference iSubElement)
                 | 
@@ -165,6 +173,8 @@ class HybridShapeAssemble(HybridShape):
     def append_federated_element(self, i_element: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AppendFederatedElement(Reference iElement)
                 | 
@@ -202,6 +212,8 @@ class HybridShapeAssemble(HybridShape):
     def get_angular_tolerance(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetAngularTolerance() As double
                 | 
@@ -220,6 +232,8 @@ class HybridShapeAssemble(HybridShape):
     def get_angular_tolerance_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetAngularToleranceMode() As boolean
                 | 
@@ -238,6 +252,8 @@ class HybridShapeAssemble(HybridShape):
     def get_connex(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetConnex() As boolean
                 | 
@@ -255,6 +271,8 @@ class HybridShapeAssemble(HybridShape):
     def get_deviation(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDeviation() As double
                 | 
@@ -273,6 +291,8 @@ class HybridShapeAssemble(HybridShape):
     def get_element(self, i_rank: int) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetElement(long iRank) As Reference
                 | 
@@ -300,6 +320,8 @@ class HybridShapeAssemble(HybridShape):
     def get_elements_size(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetElementsSize() As long
                 | 
@@ -326,6 +348,8 @@ class HybridShapeAssemble(HybridShape):
     def get_federated_element(self, i_rank: int) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetFederatedElement(long iRank) As Reference
                 | 
@@ -351,6 +375,8 @@ class HybridShapeAssemble(HybridShape):
     def get_federated_elements_size(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetFederatedElementsSize() As long
                 | 
@@ -369,6 +395,8 @@ class HybridShapeAssemble(HybridShape):
     def get_federation_propagation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetFederationPropagation() As long
                 | 
@@ -388,6 +416,8 @@ class HybridShapeAssemble(HybridShape):
     def get_manifold(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetManifold() As boolean
                 | 
@@ -405,6 +435,8 @@ class HybridShapeAssemble(HybridShape):
     def get_simplify(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetSimplify() As boolean
                 | 
@@ -422,6 +454,8 @@ class HybridShapeAssemble(HybridShape):
     def get_sub_element(self, i_rank: int) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetSubElement(long iRank) As Reference
                 | 
@@ -442,6 +476,8 @@ class HybridShapeAssemble(HybridShape):
     def get_sub_elements_size(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetSubElementsSize() As long
                 | 
@@ -468,6 +504,8 @@ class HybridShapeAssemble(HybridShape):
     def get_suppress_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetSuppressMode() As boolean
                 | 
@@ -485,6 +523,8 @@ class HybridShapeAssemble(HybridShape):
     def get_tangency_continuity(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetTangencyContinuity() As boolean
                 | 
@@ -502,6 +542,8 @@ class HybridShapeAssemble(HybridShape):
     def remove_element(self, i_rank: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveElement(long iRank)
                 | 
@@ -528,6 +570,8 @@ class HybridShapeAssemble(HybridShape):
     def remove_federated_element(self, i_rank: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveFederatedElement(long iRank)
                 | 
@@ -547,6 +591,8 @@ class HybridShapeAssemble(HybridShape):
     def remove_sub_element(self, i_rank: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveSubElement(long iRank)
                 | 
@@ -567,6 +613,8 @@ class HybridShapeAssemble(HybridShape):
     def replace_element(self, i_pos: int, i_element: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ReplaceElement(long iPos,
                 | Reference iElement)
@@ -612,6 +660,8 @@ class HybridShapeAssemble(HybridShape):
     def set_angular_tolerance(self, i_value: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAngularTolerance(double iValue)
                 | 
@@ -631,6 +681,8 @@ class HybridShapeAssemble(HybridShape):
     def set_angular_tolerance_mode(self, i_value: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAngularToleranceMode(boolean iValue)
                 | 
@@ -665,6 +717,8 @@ class HybridShapeAssemble(HybridShape):
     def set_connex(self, i_connex: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetConnex(boolean iConnex)
                 | 
@@ -698,6 +752,8 @@ class HybridShapeAssemble(HybridShape):
     def set_deviation(self, ideviation: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDeviation(double ideviation)
                 | 
@@ -717,6 +773,8 @@ class HybridShapeAssemble(HybridShape):
     def set_federation_propagation(self, i_mode: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetFederationPropagation(long iMode)
                 | 
@@ -737,6 +795,8 @@ class HybridShapeAssemble(HybridShape):
     def set_manifold(self, i_manifold: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetManifold(boolean iManifold)
                 | 
@@ -770,6 +830,8 @@ class HybridShapeAssemble(HybridShape):
     def set_simplify(self, i_simplify: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSimplify(boolean iSimplify)
                 | 
@@ -803,6 +865,8 @@ class HybridShapeAssemble(HybridShape):
     def set_suppress_mode(self, i_suppress_mode: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSuppressMode(boolean iSuppressMode)
                 | 
@@ -836,6 +900,8 @@ class HybridShapeAssemble(HybridShape):
     def set_tangency_continuity(self, i_tangency_continuity: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetTangencyContinuity(boolean iTangencyContinuity)
                 | 

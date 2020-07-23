@@ -17,6 +17,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeRollingOffset(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class HybridShapeRollingOffset(HybridShape):
     def offset(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Offset() As Length (Read Only)
                 | 
@@ -68,6 +72,8 @@ class HybridShapeRollingOffset(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
@@ -104,6 +110,8 @@ class HybridShapeRollingOffset(HybridShape):
     def get_curve(self, i_pos: int) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func getCurve(long iPos) As Reference
                 | 
@@ -136,6 +144,8 @@ class HybridShapeRollingOffset(HybridShape):
     def get_nb_curve(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func getNbCurve() As long
                 | 
@@ -162,6 +172,8 @@ class HybridShapeRollingOffset(HybridShape):
     def get_offset(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func getOffset() As double
                 | 
@@ -188,6 +200,8 @@ class HybridShapeRollingOffset(HybridShape):
     def put_curve(self, i_curve: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub putCurve(Reference iCurve)
                 | 
@@ -229,6 +243,8 @@ class HybridShapeRollingOffset(HybridShape):
     def put_offset(self, i_offset: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub putOffset(double iOffset)
                 | 

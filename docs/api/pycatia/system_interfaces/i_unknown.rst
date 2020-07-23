@@ -1,3 +1,5 @@
+.. _I_unknown:
+
 pycatia.system_interfaces.i_unknown
 ===================================
 

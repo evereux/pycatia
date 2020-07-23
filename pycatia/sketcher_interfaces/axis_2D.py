@@ -16,6 +16,8 @@ from pycatia.sketcher_interfaces.point_2D import Point2D
 class Axis2D(Geometry2D):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class Axis2D(Geometry2D):
     def horizontal_reference(self) -> Line2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HorizontalReference() As Line2D (Read Only)
                 | 
@@ -54,6 +58,8 @@ class Axis2D(Geometry2D):
     def origin(self) -> Point2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Origin() As Point2D (Read Only)
                 | 
@@ -69,6 +75,8 @@ class Axis2D(Geometry2D):
     def vertical_reference(self) -> Line2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property VerticalReference() As Line2D (Read Only)
                 | 

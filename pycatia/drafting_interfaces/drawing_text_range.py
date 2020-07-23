@@ -16,6 +16,8 @@ from pycatia.system_interfaces.cat_base_dispatch import CATBaseDispatch
 class DrawingTextRange(CATBaseDispatch):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -41,6 +43,8 @@ class DrawingTextRange(CATBaseDispatch):
     def length(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Length() As long (Read Only)
                 | 
@@ -63,6 +67,8 @@ class DrawingTextRange(CATBaseDispatch):
     def start(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Start() As long (Read Only)
                 | 
@@ -85,6 +91,8 @@ class DrawingTextRange(CATBaseDispatch):
     def text(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Text() As CATBSTR
                 | 
@@ -121,6 +129,8 @@ class DrawingTextRange(CATBaseDispatch):
     def text_properties(self) -> DrawingTextProperties:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TextProperties() As DrawingTextProperties (Read
                 | Only)
@@ -147,6 +157,8 @@ class DrawingTextRange(CATBaseDispatch):
     def get_text_range(self, i_start: int, i_end: int) -> 'DrawingTextRange':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetTextRange(long iStart,
                 | long iEnd) As DrawingTextRange
@@ -184,6 +196,8 @@ class DrawingTextRange(CATBaseDispatch):
     def insert_after(self, i_string: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub InsertAfter(CATBSTR iString)
                 | 
@@ -217,6 +231,8 @@ class DrawingTextRange(CATBaseDispatch):
     def insert_before(self, i_string: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub InsertBefore(CATBSTR iString)
                 | 

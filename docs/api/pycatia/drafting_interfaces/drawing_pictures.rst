@@ -1,3 +1,5 @@
+.. _Drawing_pictures:
+
 pycatia.drafting_interfaces.drawing_pictures
 ============================================
 

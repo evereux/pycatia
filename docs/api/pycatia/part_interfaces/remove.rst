@@ -1,3 +1,5 @@
+.. _Remove:
+
 pycatia.part_interfaces.remove
 ==============================
 

@@ -36,7 +36,7 @@ with open('api_index.rst', 'w') as file:
              "This part of the documentation covers all the interfaces of pycatia.\n\n" \
              "The entry point for most pycatia use cases is to do the following.\n\n" \
              ">>> from pycatia import catia\n\n" \
-             "This creates an instance of the :py:class:`pycatia.in_interfaces.application.Application`.\n\n" \
+             "This creates an instance of the :ref:`Application<Application>` object.\n\n" \
              ".. toctree::\n" \
              "   :maxdepth: 1\n" \
              "   :caption: Contents:\n\n"
@@ -86,18 +86,20 @@ for file in files:
     if parent.stem == 'pycatia':
         class_file = Path('api', parent.stem, str(file.stem) + '.rst')
         with open(class_file, 'w') as f:
+            tag = f'.. _{file.stem.capitalize():}\n\n'
             title = file.stem
-            lines = title + f"\n{'=' * len(title)}\n\n" \
-                            f".. automodule:: pycatia.{title}\n" \
-                            f"    :members:"
+            lines = tag + title + f"\n{'=' * len(title)}\n\n" \
+                                  f".. automodule:: pycatia.{title}\n" \
+                                  f"    :members:"
             f.write(lines)
     else:
         class_file = Path('api', 'pycatia', str(parent.stem), str(file.stem) + '.rst')
         if not class_file.parent.exists():
             os.mkdir(class_file.parent)
         with open(class_file, 'w') as f:
+            tag = f'.. _{file.stem.capitalize()}:\n\n'
             title = f"pycatia.{parent.stem}.{file.stem}"
-            lines = title + f"\n{'=' * len(title)}\n\n" \
-                            f".. automodule:: pycatia.{parent.stem}.{file.stem}\n" \
-                            f"    :members:"
+            lines = tag + title + f"\n{'=' * len(title)}\n\n" \
+                                  f".. automodule:: pycatia.{parent.stem}.{file.stem}\n" \
+                                  f"    :members:"
             f.write(lines)

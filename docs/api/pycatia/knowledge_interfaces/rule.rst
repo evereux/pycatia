@@ -1,3 +1,5 @@
+.. _Rule:
+
 pycatia.knowledge_interfaces.rule
 =================================
 

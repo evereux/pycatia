@@ -1,3 +1,5 @@
+.. _Pocket:
+
 pycatia.part_interfaces.pocket
 ==============================
 

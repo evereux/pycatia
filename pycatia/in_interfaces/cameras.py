@@ -17,6 +17,8 @@ from pycatia.types import cat_variant
 class Cameras(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -62,6 +64,8 @@ class Cameras(Collection):
     def item(self, i_index: cat_variant) -> Camera:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(CATVariant iIndex) As Camera
                 | 
@@ -99,6 +103,8 @@ class Cameras(Collection):
     def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Remove(CATVariant iIndex)
                 | 

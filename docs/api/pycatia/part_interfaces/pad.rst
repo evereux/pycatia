@@ -1,3 +1,5 @@
+.. _Pad:
+
 pycatia.part_interfaces.pad
 ===========================
 

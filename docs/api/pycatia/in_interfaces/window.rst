@@ -1,3 +1,5 @@
+.. _Window:
+
 pycatia.in_interfaces.window
 ============================
 

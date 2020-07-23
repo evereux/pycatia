@@ -1,3 +1,5 @@
+.. _Fix_together:
+
 pycatia.mec_mod_interfaces.fix_together
 =======================================
 

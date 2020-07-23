@@ -16,6 +16,8 @@ class LightSource(AnyObject):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -40,6 +42,8 @@ class LightSource(AnyObject):
     def get_direction(self, o_direction: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetDirection(CATSafeArrayVariant oDirection)
                 | 
@@ -77,6 +81,8 @@ class LightSource(AnyObject):
     def put_direction(self, o_direction: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutDirection(CATSafeArrayVariant oDirection)
                 | 

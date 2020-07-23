@@ -15,6 +15,8 @@ from pycatia.mec_mod_interfaces.tri_dim_feat_edge import TriDimFeatEdge
 class RectilinearTriDimFeatEdge(TriDimFeatEdge):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -78,6 +80,8 @@ class RectilinearTriDimFeatEdge(TriDimFeatEdge):
     def get_direction(self, o_direction: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetDirection(CATSafeArrayVariant oDirection)
                 | 
@@ -116,6 +120,8 @@ class RectilinearTriDimFeatEdge(TriDimFeatEdge):
     def get_origin(self, o_origin: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetOrigin(CATSafeArrayVariant oOrigin)
                 | 

@@ -1,3 +1,5 @@
+.. _Edge_fillet:
+
 pycatia.part_interfaces.edge_fillet
 ===================================
 

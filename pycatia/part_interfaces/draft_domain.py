@@ -19,6 +19,8 @@ class DraftDomain(AnyObject):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -43,6 +45,8 @@ class DraftDomain(AnyObject):
     def draft_angle(self) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DraftAngle() As Angle (Read Only)
                 | 
@@ -64,6 +68,8 @@ class DraftDomain(AnyObject):
     def faces_to_draft(self) -> References:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FacesToDraft() As References (Read Only)
                 | 
@@ -86,6 +92,8 @@ class DraftDomain(AnyObject):
     def multiselection_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MultiselectionMode() As CatDraftMultiselectionMode
                 | 
@@ -124,6 +132,8 @@ class DraftDomain(AnyObject):
     def neutral_element(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NeutralElement() As Reference
                 | 
@@ -157,6 +167,8 @@ class DraftDomain(AnyObject):
     def neutral_propagation_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NeutralPropagationMode() As
                 | CatDraftNeutralPropagationMode
@@ -191,6 +203,8 @@ class DraftDomain(AnyObject):
     def pulling_direction_element(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PullingDirectionElement() As Reference
                 | 
@@ -223,6 +237,8 @@ class DraftDomain(AnyObject):
     def add_face_to_draft(self, i_face: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddFaceToDraft(Reference iFace)
                 | 
@@ -266,6 +282,8 @@ class DraftDomain(AnyObject):
     def get_pulling_direction(self, io_pulling_direction: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetPullingDirection(CATSafeArrayVariant
                 | ioPullingDirection)
@@ -310,6 +328,8 @@ class DraftDomain(AnyObject):
     def remove_face_to_draft(self, i_face: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveFaceToDraft(Reference iFace)
                 | 
@@ -353,6 +373,8 @@ class DraftDomain(AnyObject):
     def set_pulling_direction(self, i_x: float, i_y: float, i_z: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPullingDirection(double iX,
                 | double iY,
@@ -384,6 +406,8 @@ class DraftDomain(AnyObject):
     def set_volume_support(self, i_volume_support: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetVolumeSupport(Reference iVolumeSupport)
                 | 

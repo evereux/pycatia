@@ -17,6 +17,8 @@ class Stiffener(SketchBasedShape):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -43,6 +45,8 @@ class Stiffener(SketchBasedShape):
     def is_from_top(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property IsFromTop() As boolean
                 | 
@@ -78,6 +82,8 @@ class Stiffener(SketchBasedShape):
     def is_symmetric(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property IsSymmetric() As boolean
                 | 
@@ -111,6 +117,8 @@ class Stiffener(SketchBasedShape):
     def thickness(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Thickness() As Length (Read Only)
                 | 
@@ -133,6 +141,8 @@ class Stiffener(SketchBasedShape):
     def thickness_from_top(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ThicknessFromTop() As Length (Read Only)
                 | 
@@ -154,6 +164,8 @@ class Stiffener(SketchBasedShape):
     def reverse_depth(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ReverseDepth()
                 | 
@@ -174,6 +186,8 @@ class Stiffener(SketchBasedShape):
     def reverse_thickness(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ReverseThickness()
                 | 

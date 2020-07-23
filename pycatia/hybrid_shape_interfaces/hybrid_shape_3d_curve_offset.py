@@ -18,6 +18,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShape3DCurveOffset(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -45,6 +47,8 @@ class HybridShape3DCurveOffset(HybridShape):
     def corner_radius_value(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CornerRadiusValue() As Length
                 | 
@@ -68,6 +72,8 @@ class HybridShape3DCurveOffset(HybridShape):
     def corner_tension_value(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CornerTensionValue() As double
                 | 
@@ -91,6 +97,8 @@ class HybridShape3DCurveOffset(HybridShape):
     def curve_to_offset(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CurveToOffset() As Reference
                 | 
@@ -114,6 +122,8 @@ class HybridShape3DCurveOffset(HybridShape):
     def direction(self) -> HybridShapeDirection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Direction() As HybridShapeDirection
                 | 
@@ -137,6 +147,8 @@ class HybridShape3DCurveOffset(HybridShape):
     def invert_direction(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property InvertDirection() As boolean
                 | 
@@ -160,6 +172,8 @@ class HybridShape3DCurveOffset(HybridShape):
     def offset_value(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OffsetValue() As Length
                 | 

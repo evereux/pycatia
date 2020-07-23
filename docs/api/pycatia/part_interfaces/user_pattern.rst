@@ -1,3 +1,5 @@
+.. _User_pattern:
+
 pycatia.part_interfaces.user_pattern
 ====================================
 

@@ -15,6 +15,8 @@ from pycatia.mec_mod_interfaces.face import Face
 class PlanarFace(Face):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -81,6 +83,8 @@ class PlanarFace(Face):
     def get_first_axis(self, o_first_axis: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetFirstAxis(CATSafeArrayVariant oFirstAxis)
                 | 
@@ -119,6 +123,8 @@ class PlanarFace(Face):
     def get_origin(self, o_origin: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetOrigin(CATSafeArrayVariant oOrigin)
                 | 
@@ -157,6 +163,8 @@ class PlanarFace(Face):
     def get_second_axis(self, o_second_axis: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetSecondAxis(CATSafeArrayVariant oSecondAxis)
                 | 

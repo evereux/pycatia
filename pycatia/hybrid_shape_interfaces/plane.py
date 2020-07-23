@@ -16,6 +16,8 @@ class Plane(HybridShape):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -45,6 +47,8 @@ class Plane(HybridShape):
     def get_first_axis(self, o_first_axis: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetFirstAxis(CATSafeArrayVariant oFirstAxis)
                 | 
@@ -86,6 +90,8 @@ class Plane(HybridShape):
     def get_origin(self, o_origin: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetOrigin(CATSafeArrayVariant oOrigin)
                 | 
@@ -127,6 +133,8 @@ class Plane(HybridShape):
     def get_position(self, o_x: float, o_y: float, o_z: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetPosition(double oX,
                 | double oY,
@@ -157,6 +165,8 @@ class Plane(HybridShape):
     def get_second_axis(self, o_second_axis: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetSecondAxis(CATSafeArrayVariant oSecondAxis)
                 | 
@@ -198,6 +208,8 @@ class Plane(HybridShape):
     def is_a_ref_plane(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func IsARefPlane() As long
                 | 
@@ -215,6 +227,8 @@ class Plane(HybridShape):
     def put_first_axis(self, i_first_axis: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutFirstAxis(CATSafeArrayVariant iFirstAxis)
                 | 
@@ -259,6 +273,8 @@ class Plane(HybridShape):
     def put_origin(self, i_origin: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutOrigin(CATSafeArrayVariant iOrigin)
                 | 
@@ -302,6 +318,8 @@ class Plane(HybridShape):
     def put_second_axis(self, i_second_axis: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutSecondAxis(CATSafeArrayVariant iSecondAxis)
                 | 
@@ -346,6 +364,8 @@ class Plane(HybridShape):
     def remove_position(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemovePosition()
                 | 
@@ -360,6 +380,8 @@ class Plane(HybridShape):
     def set_position(self, i_x: float, i_y: float, i_z: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPosition(double iX,
                 | double iY,

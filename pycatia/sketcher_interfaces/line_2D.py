@@ -15,6 +15,8 @@ from pycatia.system_interfaces.system_service import SystemService
 class Line2D(Curve2D):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class Line2D(Curve2D):
     def get_direction(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetDirection(CATSafeArrayVariant oDirection)
                 | 
@@ -72,6 +76,8 @@ class Line2D(Curve2D):
     def get_origin(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetOrigin(CATSafeArrayVariant oOrigin)
                 | 
@@ -103,6 +109,8 @@ class Line2D(Curve2D):
     def set_data(self, i_x: float, i_y: float, i_x_direction: float, i_y_direction: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetData(double iX,
                 | double iY,

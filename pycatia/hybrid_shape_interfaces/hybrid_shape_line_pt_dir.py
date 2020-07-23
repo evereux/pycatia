@@ -18,6 +18,8 @@ from pycatia.knowledge_interfaces.length import Length
 class HybridShapeLinePtDir(Line):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -55,6 +57,8 @@ class HybridShapeLinePtDir(Line):
     def begin_offset(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BeginOffset() As Length (Read Only)
                 | 
@@ -78,6 +82,8 @@ class HybridShapeLinePtDir(Line):
     def dir(self) -> HybridShapeDirection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Dir() As HybridShapeDirection
                 | 
@@ -108,6 +114,8 @@ class HybridShapeLinePtDir(Line):
     def end_offset(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property EndOffset() As Length (Read Only)
                 | 
@@ -131,6 +139,8 @@ class HybridShapeLinePtDir(Line):
     def orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation() As long
                 | 
@@ -165,6 +175,8 @@ class HybridShapeLinePtDir(Line):
     def point(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Point() As Reference
                 | 
@@ -196,6 +208,8 @@ class HybridShapeLinePtDir(Line):
     def support(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
@@ -228,6 +242,8 @@ class HybridShapeLinePtDir(Line):
     def get_length_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetLengthType() As long
                 | 
@@ -249,6 +265,8 @@ class HybridShapeLinePtDir(Line):
     def get_symmetrical_extension(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetSymmetricalExtension() As boolean
                 | 
@@ -268,6 +286,8 @@ class HybridShapeLinePtDir(Line):
     def remove_support(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveSupport()
                 | 
@@ -281,6 +301,8 @@ class HybridShapeLinePtDir(Line):
     def set_length_type(self, i_type: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLengthType(long iType)
                 | 
@@ -303,6 +325,8 @@ class HybridShapeLinePtDir(Line):
     def set_symmetrical_extension(self, i_sym: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSymmetricalExtension(boolean iSym)
                 | 

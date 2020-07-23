@@ -1,3 +1,5 @@
+.. _Rib:
+
 pycatia.part_interfaces.rib
 ===========================
 

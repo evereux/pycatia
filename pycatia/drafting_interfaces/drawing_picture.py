@@ -15,6 +15,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class DrawingPicture(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -36,6 +38,8 @@ class DrawingPicture(AnyObject):
     def crop_bottom(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property cropBottom() As double
                 | 
@@ -67,6 +71,8 @@ class DrawingPicture(AnyObject):
     def crop_left(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property cropLeft() As double
                 | 
@@ -98,6 +104,8 @@ class DrawingPicture(AnyObject):
     def crop_right(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property cropRight() As double
                 | 
@@ -129,6 +137,8 @@ class DrawingPicture(AnyObject):
     def crop_top(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property cropTop() As double
                 | 
@@ -160,6 +170,8 @@ class DrawingPicture(AnyObject):
     def format(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property format() As CatPictureFormat
                 | 
@@ -203,6 +215,8 @@ class DrawingPicture(AnyObject):
     def height(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property height() As double
                 | 
@@ -233,6 +247,8 @@ class DrawingPicture(AnyObject):
     def ratio_lock(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ratioLock() As boolean
                 | 
@@ -266,6 +282,8 @@ class DrawingPicture(AnyObject):
     def width(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property width() As double
                 | 
@@ -296,6 +314,8 @@ class DrawingPicture(AnyObject):
     def x(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property x() As double
                 | 
@@ -329,6 +349,8 @@ class DrawingPicture(AnyObject):
     def y(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property y() As double
                 | 
@@ -361,6 +383,8 @@ class DrawingPicture(AnyObject):
     def get_original_height(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetOriginalHeight() As double
                 | 
@@ -381,6 +405,8 @@ class DrawingPicture(AnyObject):
     def get_original_width(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetOriginalWidth() As double
                 | 

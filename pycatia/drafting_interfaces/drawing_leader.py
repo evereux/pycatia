@@ -15,6 +15,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class DrawingLeader(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -36,6 +38,8 @@ class DrawingLeader(AnyObject):
     def all_around(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AllAround() As boolean
                 | 
@@ -65,6 +69,8 @@ class DrawingLeader(AnyObject):
     def anchor_point(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AnchorPoint() As long
                 | 
@@ -94,6 +100,8 @@ class DrawingLeader(AnyObject):
     def head_symbol(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property HeadSymbol() As CatSymbolType
                 | 
@@ -123,6 +131,8 @@ class DrawingLeader(AnyObject):
     def head_target(self) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property HeadTarget() As CATBaseDispatch
                 | 
@@ -152,6 +162,8 @@ class DrawingLeader(AnyObject):
     def leaders(self) -> 'DrawingLeaders':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Leaders() As DrawingLeaders (Read Only)
                 | 
@@ -175,6 +187,8 @@ class DrawingLeader(AnyObject):
     def nb_interruption(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property NbInterruption() As long (Read Only)
                 | 
@@ -196,6 +210,8 @@ class DrawingLeader(AnyObject):
     def nb_point(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property NbPoint() As long (Read Only)
                 | 
@@ -217,6 +233,8 @@ class DrawingLeader(AnyObject):
                          i_second_point_y: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddInterruption(double iFirstPointX,
                 | double iFirstPointY,
@@ -257,6 +275,8 @@ class DrawingLeader(AnyObject):
     def add_point(self, i_num: int, i_x: float, i_y: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddPoint(long iNum,
                 | double iX,
@@ -292,6 +312,8 @@ class DrawingLeader(AnyObject):
     def get_interruptions(self, o_interruptions: tuple) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetInterruptions(CATSafeArrayVariant oInterruptions) As
                 | long
@@ -320,6 +342,8 @@ class DrawingLeader(AnyObject):
     def get_point(self, i_num: int, o_x: float, o_y: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetPoint(long iNum,
                 | double oX,
@@ -352,6 +376,8 @@ class DrawingLeader(AnyObject):
     def get_points(self, o_points: tuple) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetPoints(CATSafeArrayVariant oPoints) As long
                 | 
@@ -379,6 +405,8 @@ class DrawingLeader(AnyObject):
     def modify_point(self, i_num: int, i_x: float, i_y: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub ModifyPoint(long iNum,
                 | double iX,
@@ -413,6 +441,8 @@ class DrawingLeader(AnyObject):
     def remove_interruption(self, i_num: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveInterruption(long iNum)
                 | 
@@ -440,6 +470,8 @@ class DrawingLeader(AnyObject):
     def remove_point(self, i_num: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemovePoint(long iNum)
                 | 

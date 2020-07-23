@@ -18,6 +18,8 @@ from pycatia.knowledge_interfaces.length import Length
 class HybridShapePointOnSurface(Point):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -52,6 +54,8 @@ class HybridShapePointOnSurface(Point):
     def direction(self) -> HybridShapeDirection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Direction() As HybridShapeDirection
                 | 
@@ -84,6 +88,8 @@ class HybridShapePointOnSurface(Point):
     def offset(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Offset() As Length (Read Only)
                 | 
@@ -107,6 +113,8 @@ class HybridShapePointOnSurface(Point):
     def point(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Point() As Reference
                 | 
@@ -142,6 +150,8 @@ class HybridShapePointOnSurface(Point):
     def surface(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Surface() As Reference
                 | 

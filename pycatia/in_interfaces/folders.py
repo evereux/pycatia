@@ -16,6 +16,8 @@ from pycatia.system_interfaces.collection import Collection
 class Folders(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class Folders(Collection):
     def item(self, i_number: int) -> Folder:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(long iNumber) As Folder
                 | 

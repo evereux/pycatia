@@ -17,6 +17,8 @@ from pycatia.knowledge_interfaces.length import Length
 class HybridShapeCircleCenterTangent(HybridShapeCircle):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -57,6 +59,8 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
     def begin_of_circle(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BeginOfCircle() As long
                 | 
@@ -89,6 +93,8 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
     def center_elem(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CenterElem() As Reference
                 | 
@@ -120,6 +126,8 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
     def diameter(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Diameter() As Length (Read Only)
                 | 
@@ -143,6 +151,8 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
     def diameter_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DiameterMode() As boolean
                 | 
@@ -177,6 +187,8 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
     def discrimination_index(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DiscriminationIndex() As long
                 | 
@@ -212,6 +224,8 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
     def orientation1(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation1() As long
                 | 
@@ -247,6 +261,8 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
     def orientation2(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation2() As long
                 | 
@@ -282,6 +298,8 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
     def radius(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Radius() As Length (Read Only)
                 | 
@@ -305,6 +323,8 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
     def support(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
@@ -336,6 +356,8 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
     def tangent_curve(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TangentCurve() As Reference
                 | 
@@ -366,6 +388,8 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
     def tangent_orientation1(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TangentOrientation1() As long
                 | 
@@ -400,6 +424,8 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
     def tangent_orientation2(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TangentOrientation2() As long
                 | 

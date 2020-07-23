@@ -1,3 +1,5 @@
+.. _Viewers:
+
 pycatia.in_interfaces.viewers
 =============================
 

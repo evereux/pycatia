@@ -17,6 +17,8 @@ class Dimension(RealParam):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -45,6 +47,8 @@ class Dimension(RealParam):
     def unit(self) -> Unit:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Unit() As Unit (Read Only)
                 | 
@@ -59,6 +63,8 @@ class Dimension(RealParam):
     def value_as_string2(self, i_nb_decimals: int, i_show_trailing_zeros: bool) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func ValueAsString2(long iNbDecimals,
                 | boolean iShowTrailingZeros) As CATBSTR

@@ -15,6 +15,8 @@ from pycatia.system_interfaces.setting_controller import SettingController
 class VisualizationSettingAtt(SettingController):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -37,6 +39,8 @@ class VisualizationSettingAtt(SettingController):
     def accurate_picking_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AccuratePickingMode() As boolean
                 | 
@@ -60,6 +64,8 @@ class VisualizationSettingAtt(SettingController):
     def accurate_picking_window_size(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AccuratePickingWindowSize() As long
                 | 
@@ -83,6 +89,8 @@ class VisualizationSettingAtt(SettingController):
     def all_z_buffer_element_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AllZBufferElementMode() As boolean
                 | 
@@ -106,6 +114,8 @@ class VisualizationSettingAtt(SettingController):
     def ambient_activation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AmbientActivation() As long
                 | 
@@ -129,6 +139,8 @@ class VisualizationSettingAtt(SettingController):
     def anti_aliasing_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AntiAliasingMode() As boolean
                 | 
@@ -152,6 +164,8 @@ class VisualizationSettingAtt(SettingController):
     def anti_aliasing_offset(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AntiAliasingOffset() As double
                 | 
@@ -175,6 +189,8 @@ class VisualizationSettingAtt(SettingController):
     def auxiliary_drill_viewer(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AuxiliaryDrillViewer() As boolean
                 | 
@@ -198,6 +214,8 @@ class VisualizationSettingAtt(SettingController):
     def back_face_culling_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BackFaceCullingMode() As boolean
                 | 
@@ -222,6 +240,8 @@ class VisualizationSettingAtt(SettingController):
     def border_edges_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BorderEdgesMode() As boolean
                 | 
@@ -245,6 +265,8 @@ class VisualizationSettingAtt(SettingController):
     def border_edges_thickness(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BorderEdgesThickness() As long
                 | 
@@ -268,6 +290,8 @@ class VisualizationSettingAtt(SettingController):
     def bounding_box_selection_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BoundingBoxSelectionMode() As boolean
                 | 
@@ -291,6 +315,8 @@ class VisualizationSettingAtt(SettingController):
     def color_background_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ColorBackgroundMode() As boolean
                 | 
@@ -314,6 +340,8 @@ class VisualizationSettingAtt(SettingController):
     def default_diffuse_ambient_coefficient(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DefaultDiffuseAmbientCoefficient() As double
                 | 
@@ -337,6 +365,8 @@ class VisualizationSettingAtt(SettingController):
     def default_shininess(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DefaultShininess() As double
                 | 
@@ -360,6 +390,8 @@ class VisualizationSettingAtt(SettingController):
     def default_specular_coefficient(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DefaultSpecularCoefficient() As double
                 | 
@@ -383,6 +415,8 @@ class VisualizationSettingAtt(SettingController):
     def display_current_scale(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DisplayCurrentScale() As boolean
                 | 
@@ -406,6 +440,8 @@ class VisualizationSettingAtt(SettingController):
     def display_drill_list(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DisplayDrillList() As boolean
                 | 
@@ -429,6 +465,8 @@ class VisualizationSettingAtt(SettingController):
     def display_immersive_drill_viewer(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DisplayImmersiveDrillViewer() As boolean
                 | 
@@ -452,6 +490,8 @@ class VisualizationSettingAtt(SettingController):
     def dynamic_cull(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DynamicCull() As long
                 | 
@@ -475,6 +515,8 @@ class VisualizationSettingAtt(SettingController):
     def dynamic_lod(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DynamicLOD() As double
                 | 
@@ -498,6 +540,8 @@ class VisualizationSettingAtt(SettingController):
     def face_hl_drill(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FaceHLDrill() As boolean
                 | 
@@ -521,6 +565,8 @@ class VisualizationSettingAtt(SettingController):
     def fly_collision_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FlyCollisionMode() As boolean
                 | 
@@ -544,6 +590,8 @@ class VisualizationSettingAtt(SettingController):
     def fly_collision_sphere_radius(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FlyCollisionSphereRadius() As double
                 | 
@@ -567,6 +615,8 @@ class VisualizationSettingAtt(SettingController):
     def fly_collision_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FlyCollisionType() As long
                 | 
@@ -590,6 +640,8 @@ class VisualizationSettingAtt(SettingController):
     def fly_sensitivity(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FlySensitivity() As long
                 | 
@@ -613,6 +665,8 @@ class VisualizationSettingAtt(SettingController):
     def fly_speed(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FlySpeed() As long
                 | 
@@ -636,6 +690,8 @@ class VisualizationSettingAtt(SettingController):
     def fly_speed_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FlySpeedMode() As long
                 | 
@@ -659,6 +715,8 @@ class VisualizationSettingAtt(SettingController):
     def follow_ground_altitude(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FollowGroundAltitude() As double
                 | 
@@ -682,6 +740,8 @@ class VisualizationSettingAtt(SettingController):
     def follow_ground_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FollowGroundMode() As boolean
                 | 
@@ -705,6 +765,8 @@ class VisualizationSettingAtt(SettingController):
     def full_scene_anti_aliasing_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FullSceneAntiAliasingMode() As
                 | CATFullSceneAntiAliasingMode
@@ -729,6 +791,8 @@ class VisualizationSettingAtt(SettingController):
     def gravity(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Gravity() As boolean
                 | 
@@ -752,6 +816,8 @@ class VisualizationSettingAtt(SettingController):
     def gravity_axis(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property GravityAxis() As long
                 | 
@@ -775,6 +841,8 @@ class VisualizationSettingAtt(SettingController):
     def halo_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HaloMode() As boolean
                 | 
@@ -798,6 +866,8 @@ class VisualizationSettingAtt(SettingController):
     def isopar_generation_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property IsoparGenerationMode() As boolean
                 | 
@@ -821,6 +891,8 @@ class VisualizationSettingAtt(SettingController):
     def keyboard_rotation_angle_value(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property KeyboardRotationAngleValue() As long
                 | 
@@ -844,6 +916,8 @@ class VisualizationSettingAtt(SettingController):
     def light_viewer_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LightViewerMode() As boolean
                 | 
@@ -867,6 +941,8 @@ class VisualizationSettingAtt(SettingController):
     def lineic_cgr_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LineicCgrMode() As boolean
                 | 
@@ -890,6 +966,8 @@ class VisualizationSettingAtt(SettingController):
     def max_selection_move(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MaxSelectionMove() As long
                 | 
@@ -913,6 +991,8 @@ class VisualizationSettingAtt(SettingController):
     def minimum_fps_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MinimumFPSMode() As boolean
                 | 
@@ -936,6 +1016,8 @@ class VisualizationSettingAtt(SettingController):
     def minimum_space_fps_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MinimumSpaceFPSMode() As boolean
                 | 
@@ -959,6 +1041,8 @@ class VisualizationSettingAtt(SettingController):
     def mouse_double_clic_delay(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MouseDoubleClicDelay() As long
                 | 
@@ -982,6 +1066,8 @@ class VisualizationSettingAtt(SettingController):
     def mouse_speed_value(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MouseSpeedValue() As long
                 | 
@@ -1005,6 +1091,8 @@ class VisualizationSettingAtt(SettingController):
     def nb_isopars(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NbIsopars() As long
                 | 
@@ -1028,6 +1116,8 @@ class VisualizationSettingAtt(SettingController):
     def no_z_buffer_selection_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NoZBufferSelectionMode() As boolean
                 | 
@@ -1051,6 +1141,8 @@ class VisualizationSettingAtt(SettingController):
     def number_of_minimum_fps(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NumberOfMinimumFPS() As long
                 | 
@@ -1074,6 +1166,8 @@ class VisualizationSettingAtt(SettingController):
     def number_of_minimum_space_fps(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NumberOfMinimumSpaceFPS() As long
                 | 
@@ -1097,6 +1191,8 @@ class VisualizationSettingAtt(SettingController):
     def occlusion_culling_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OcclusionCullingMode() As boolean
                 | 
@@ -1120,6 +1216,8 @@ class VisualizationSettingAtt(SettingController):
     def opaque_faces(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OpaqueFaces() As boolean
                 | 
@@ -1143,6 +1241,8 @@ class VisualizationSettingAtt(SettingController):
     def other_selection_timeout(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OtherSelectionTimeout() As double
                 | 
@@ -1166,6 +1266,8 @@ class VisualizationSettingAtt(SettingController):
     def other_selection_timeout_activity(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OtherSelectionTimeoutActivity() As boolean
                 | 
@@ -1189,6 +1291,8 @@ class VisualizationSettingAtt(SettingController):
     def picking_window_size(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PickingWindowSize() As long
                 | 
@@ -1212,6 +1316,8 @@ class VisualizationSettingAtt(SettingController):
     def pre_selection_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PreSelectionMode() As boolean
                 | 
@@ -1235,6 +1341,8 @@ class VisualizationSettingAtt(SettingController):
     def preselected_element_linetype(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PreselectedElementLinetype() As long
                 | 
@@ -1258,6 +1366,8 @@ class VisualizationSettingAtt(SettingController):
     def rotation_sphere_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RotationSphereMode() As boolean
                 | 
@@ -1281,6 +1391,8 @@ class VisualizationSettingAtt(SettingController):
     def shader_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ShaderMode() As boolean
                 | 
@@ -1304,6 +1416,8 @@ class VisualizationSettingAtt(SettingController):
     def static_cull(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property StaticCull() As long
                 | 
@@ -1327,6 +1441,8 @@ class VisualizationSettingAtt(SettingController):
     def static_lod(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property StaticLOD() As double
                 | 
@@ -1350,6 +1466,8 @@ class VisualizationSettingAtt(SettingController):
     def stereo_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property StereoMode() As boolean
                 | 
@@ -1373,6 +1491,8 @@ class VisualizationSettingAtt(SettingController):
     def transparency_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TransparencyMode() As boolean
                 | 
@@ -1396,6 +1516,8 @@ class VisualizationSettingAtt(SettingController):
     def two_side_lighting_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TwoSideLightingMode() As boolean
                 | 
@@ -1419,6 +1541,8 @@ class VisualizationSettingAtt(SettingController):
     def viewpoint_animation_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ViewpointAnimationMode() As boolean
                 | 
@@ -1442,6 +1566,8 @@ class VisualizationSettingAtt(SettingController):
     def viz2_d_accuracy_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Viz2DAccuracyMode() As boolean
                 | 
@@ -1465,6 +1591,8 @@ class VisualizationSettingAtt(SettingController):
     def viz2_d_fixed_accuracy(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Viz2DFixedAccuracy() As double
                 | 
@@ -1488,6 +1616,8 @@ class VisualizationSettingAtt(SettingController):
     def viz2_d_proportionnal_accuracy(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Viz2DProportionnalAccuracy() As double
                 | 
@@ -1511,6 +1641,8 @@ class VisualizationSettingAtt(SettingController):
     def viz3_d_accuracy_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Viz3DAccuracyMode() As boolean
                 | 
@@ -1534,6 +1666,8 @@ class VisualizationSettingAtt(SettingController):
     def viz3_d_curve_accuracy(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Viz3DCurveAccuracy() As double
                 | 
@@ -1557,6 +1691,8 @@ class VisualizationSettingAtt(SettingController):
     def viz3_d_fixed_accuracy(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Viz3DFixedAccuracy() As double
                 | 
@@ -1580,6 +1716,8 @@ class VisualizationSettingAtt(SettingController):
     def viz3_d_proportionnal_accuracy(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Viz3DProportionnalAccuracy() As double
                 | 
@@ -1602,6 +1740,8 @@ class VisualizationSettingAtt(SettingController):
     def get_accurate_picking_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetAccuratePickingModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1620,6 +1760,8 @@ class VisualizationSettingAtt(SettingController):
     def get_accurate_picking_window_size_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetAccuratePickingWindowSizeInfo(CATBSTR
                 | ioAdminLevel,
@@ -1639,6 +1781,8 @@ class VisualizationSettingAtt(SettingController):
     def get_all_z_buffer_element_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetAllZBufferElementModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1657,6 +1801,8 @@ class VisualizationSettingAtt(SettingController):
     def get_ambient_activation_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetAmbientActivationInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1675,6 +1821,8 @@ class VisualizationSettingAtt(SettingController):
     def get_anti_aliasing_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetAntiAliasingModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1693,6 +1841,8 @@ class VisualizationSettingAtt(SettingController):
     def get_anti_aliasing_offset_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetAntiAliasingOffsetInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1711,6 +1861,8 @@ class VisualizationSettingAtt(SettingController):
     def get_auxiliary_drill_viewer_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetAuxiliaryDrillViewerInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1729,6 +1881,8 @@ class VisualizationSettingAtt(SettingController):
     def get_back_face_culling_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetBackFaceCullingMode() As CATBackFaceCullingMode
                 | 
@@ -1759,6 +1913,8 @@ class VisualizationSettingAtt(SettingController):
     def get_back_face_culling_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetBackFaceCullingModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1777,6 +1933,8 @@ class VisualizationSettingAtt(SettingController):
     def get_background_rgb(self, io_r: int, io_g: int, io_b: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetBackgroundRGB(long ioR,
                 | long ioG,
@@ -1795,6 +1953,8 @@ class VisualizationSettingAtt(SettingController):
     def get_background_rgb_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetBackgroundRGBInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1813,6 +1973,8 @@ class VisualizationSettingAtt(SettingController):
     def get_border_edges_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetBorderEdgesModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1831,6 +1993,8 @@ class VisualizationSettingAtt(SettingController):
     def get_border_edges_rgb(self, io_r: int, io_g: int, io_b: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetBorderEdgesRGB(long ioR,
                 | long ioG,
@@ -1849,6 +2013,8 @@ class VisualizationSettingAtt(SettingController):
     def get_border_edges_rgb_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetBorderEdgesRGBInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1867,6 +2033,8 @@ class VisualizationSettingAtt(SettingController):
     def get_border_edges_thickness_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetBorderEdgesThicknessInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1885,6 +2053,8 @@ class VisualizationSettingAtt(SettingController):
     def get_bounding_box_selection_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetBoundingBoxSelectionModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1903,6 +2073,8 @@ class VisualizationSettingAtt(SettingController):
     def get_color_background_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetColorBackgroundModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1921,6 +2093,8 @@ class VisualizationSettingAtt(SettingController):
     def get_default_diffuse_ambient_coefficient_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDefaultDiffuseAmbientCoefficientInfo(CATBSTR
                 | ioAdminLevel,
@@ -1940,6 +2114,8 @@ class VisualizationSettingAtt(SettingController):
     def get_default_shininess_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDefaultShininessInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1958,6 +2134,8 @@ class VisualizationSettingAtt(SettingController):
     def get_default_specular_coefficient_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDefaultSpecularCoefficientInfo(CATBSTR
                 | ioAdminLevel,
@@ -1977,6 +2155,8 @@ class VisualizationSettingAtt(SettingController):
     def get_display_current_scale_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDisplayCurrentScaleInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1995,6 +2175,8 @@ class VisualizationSettingAtt(SettingController):
     def get_display_drill_list_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDisplayDrillListInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2013,6 +2195,8 @@ class VisualizationSettingAtt(SettingController):
     def get_display_immersive_drill_viewer_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDisplayImmersiveDrillViewerInfo(CATBSTR
                 | ioAdminLevel,
@@ -2032,6 +2216,8 @@ class VisualizationSettingAtt(SettingController):
     def get_dynamic_cull_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDynamicCullInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2050,6 +2236,8 @@ class VisualizationSettingAtt(SettingController):
     def get_dynamic_lod_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDynamicLODInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2068,6 +2256,8 @@ class VisualizationSettingAtt(SettingController):
     def get_face_hl_drill_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetFaceHLDrillInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2086,6 +2276,8 @@ class VisualizationSettingAtt(SettingController):
     def get_fly_collision_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetFlyCollisionModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2104,6 +2296,8 @@ class VisualizationSettingAtt(SettingController):
     def get_fly_collision_sphere_radius_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetFlyCollisionSphereRadiusInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2122,6 +2316,8 @@ class VisualizationSettingAtt(SettingController):
     def get_fly_collision_type_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetFlyCollisionTypeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2140,6 +2336,8 @@ class VisualizationSettingAtt(SettingController):
     def get_fly_sensitivity_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetFlySensitivityInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2158,6 +2356,8 @@ class VisualizationSettingAtt(SettingController):
     def get_fly_speed_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetFlySpeedInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2176,6 +2376,8 @@ class VisualizationSettingAtt(SettingController):
     def get_fly_speed_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetFlySpeedModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2194,6 +2396,8 @@ class VisualizationSettingAtt(SettingController):
     def get_follow_ground_altitude_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetFollowGroundAltitudeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2212,6 +2416,8 @@ class VisualizationSettingAtt(SettingController):
     def get_follow_ground_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetFollowGroundModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2230,6 +2436,8 @@ class VisualizationSettingAtt(SettingController):
     def get_full_scene_anti_aliasing_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetFullSceneAntiAliasingModeInfo(CATBSTR
                 | ioAdminLevel,
@@ -2249,6 +2457,8 @@ class VisualizationSettingAtt(SettingController):
     def get_gravity_axis_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetGravityAxisInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2267,6 +2477,8 @@ class VisualizationSettingAtt(SettingController):
     def get_gravity_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetGravityInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2284,6 +2496,8 @@ class VisualizationSettingAtt(SettingController):
     def get_halo_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetHaloModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2302,6 +2516,8 @@ class VisualizationSettingAtt(SettingController):
     def get_handles_rgb(self, io_r: int, io_g: int, io_b: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetHandlesRGB(long ioR,
                 | long ioG,
@@ -2320,6 +2536,8 @@ class VisualizationSettingAtt(SettingController):
     def get_handles_rgb_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetHandlesRGBInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2338,6 +2556,8 @@ class VisualizationSettingAtt(SettingController):
     def get_isopar_generation_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetIsoparGenerationModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2356,6 +2576,8 @@ class VisualizationSettingAtt(SettingController):
     def get_keyboard_rotation_angle_value_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetKeyboardRotationAngleValueInfo(CATBSTR
                 | ioAdminLevel,
@@ -2375,6 +2597,8 @@ class VisualizationSettingAtt(SettingController):
     def get_light_viewer_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetLightViewerModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2393,6 +2617,8 @@ class VisualizationSettingAtt(SettingController):
     def get_lineic_cgr_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetLineicCgrModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2411,6 +2637,8 @@ class VisualizationSettingAtt(SettingController):
     def get_max_selection_move_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMaxSelectionMoveInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2429,6 +2657,8 @@ class VisualizationSettingAtt(SettingController):
     def get_minimum_fps_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMinimumFPSModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2447,6 +2677,8 @@ class VisualizationSettingAtt(SettingController):
     def get_minimum_space_fps_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMinimumSpaceFPSModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2465,6 +2697,8 @@ class VisualizationSettingAtt(SettingController):
     def get_mouse_double_clic_delay_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMouseDoubleClicDelayInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2483,6 +2717,8 @@ class VisualizationSettingAtt(SettingController):
     def get_mouse_speed_value_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMouseSpeedValueInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2501,6 +2737,8 @@ class VisualizationSettingAtt(SettingController):
     def get_nb_isopars_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNbIsoparsInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2519,6 +2757,8 @@ class VisualizationSettingAtt(SettingController):
     def get_no_show_background_rgb(self, io_r: int, io_g: int, io_b: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetNoShowBackgroundRGB(long ioR,
                 | long ioG,
@@ -2550,6 +2790,8 @@ class VisualizationSettingAtt(SettingController):
     def get_no_show_background_rgb_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNoShowBackgroundRGBInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2578,6 +2820,8 @@ class VisualizationSettingAtt(SettingController):
     def get_no_z_buffer_selection_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNoZBufferSelectionModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2596,6 +2840,8 @@ class VisualizationSettingAtt(SettingController):
     def get_number_of_minimum_fps_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNumberOfMinimumFPSInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2614,6 +2860,8 @@ class VisualizationSettingAtt(SettingController):
     def get_number_of_minimum_space_fps_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNumberOfMinimumSpaceFPSInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2632,6 +2880,8 @@ class VisualizationSettingAtt(SettingController):
     def get_occlusion_culling_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetOcclusionCullingModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2650,6 +2900,8 @@ class VisualizationSettingAtt(SettingController):
     def get_opaque_faces_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetOpaqueFacesInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2668,6 +2920,8 @@ class VisualizationSettingAtt(SettingController):
     def get_other_selection_timeout_activity_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetOtherSelectionTimeoutActivityInfo(CATBSTR
                 | ioAdminLevel,
@@ -2687,6 +2941,8 @@ class VisualizationSettingAtt(SettingController):
     def get_other_selection_timeout_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetOtherSelectionTimeoutInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2705,6 +2961,8 @@ class VisualizationSettingAtt(SettingController):
     def get_picking_window_size_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPickingWindowSizeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2723,6 +2981,8 @@ class VisualizationSettingAtt(SettingController):
     def get_pre_selection_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPreSelectionModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2741,6 +3001,8 @@ class VisualizationSettingAtt(SettingController):
     def get_preselected_element_linetype_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPreselectedElementLinetypeInfo(CATBSTR
                 | ioAdminLevel,
@@ -2760,6 +3022,8 @@ class VisualizationSettingAtt(SettingController):
     def get_preselected_element_rgb(self, io_r: int, io_g: int, io_b: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetPreselectedElementRGB(long ioR,
                 | long ioG,
@@ -2778,6 +3042,8 @@ class VisualizationSettingAtt(SettingController):
     def get_preselected_element_rgb_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPreselectedElementRGBInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2796,6 +3062,8 @@ class VisualizationSettingAtt(SettingController):
     def get_rotation_sphere_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetRotationSphereModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2814,6 +3082,8 @@ class VisualizationSettingAtt(SettingController):
     def get_selected_edge_rgb(self, io_r: int, io_g: int, io_b: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetSelectedEdgeRGB(long ioR,
                 | long ioG,
@@ -2832,6 +3102,8 @@ class VisualizationSettingAtt(SettingController):
     def get_selected_edge_rgb_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetSelectedEdgeRGBInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2850,6 +3122,8 @@ class VisualizationSettingAtt(SettingController):
     def get_selected_element_rgb(self, io_r: int, io_g: int, io_b: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetSelectedElementRGB(long ioR,
                 | long ioG,
@@ -2868,6 +3142,8 @@ class VisualizationSettingAtt(SettingController):
     def get_selected_element_rgb_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetSelectedElementRGBInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2886,6 +3162,8 @@ class VisualizationSettingAtt(SettingController):
     def get_shader_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetShaderModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2904,6 +3182,8 @@ class VisualizationSettingAtt(SettingController):
     def get_static_cull_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetStaticCullInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2922,6 +3202,8 @@ class VisualizationSettingAtt(SettingController):
     def get_static_lod_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetStaticLODInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2940,6 +3222,8 @@ class VisualizationSettingAtt(SettingController):
     def get_stereo_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetStereoModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2958,6 +3242,8 @@ class VisualizationSettingAtt(SettingController):
     def get_transparency_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetTransparencyModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2976,6 +3262,8 @@ class VisualizationSettingAtt(SettingController):
     def get_two_side_lighting_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetTwoSideLightingModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2994,6 +3282,8 @@ class VisualizationSettingAtt(SettingController):
     def get_under_intensified_rgb(self, io_r: int, io_g: int, io_b: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetUnderIntensifiedRGB(long ioR,
                 | long ioG,
@@ -3012,6 +3302,8 @@ class VisualizationSettingAtt(SettingController):
     def get_under_intensified_rgb_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetUnderIntensifiedRGBInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -3030,6 +3322,8 @@ class VisualizationSettingAtt(SettingController):
     def get_update_needed_rgb(self, io_r: int, io_g: int, io_b: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetUpdateNeededRGB(long ioR,
                 | long ioG,
@@ -3048,6 +3342,8 @@ class VisualizationSettingAtt(SettingController):
     def get_update_needed_rgb_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetUpdateNeededRGBInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -3066,6 +3362,8 @@ class VisualizationSettingAtt(SettingController):
     def get_viewpoint_animation_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetViewpointAnimationModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -3084,6 +3382,8 @@ class VisualizationSettingAtt(SettingController):
     def get_viz2_d_accuracy_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetViz2DAccuracyModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -3102,6 +3402,8 @@ class VisualizationSettingAtt(SettingController):
     def get_viz2_d_fixed_accuracy_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetViz2DFixedAccuracyInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -3120,6 +3422,8 @@ class VisualizationSettingAtt(SettingController):
     def get_viz2_d_proportionnal_accuracy_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetViz2DProportionnalAccuracyInfo(CATBSTR
                 | ioAdminLevel,
@@ -3139,6 +3443,8 @@ class VisualizationSettingAtt(SettingController):
     def get_viz3_d_accuracy_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetViz3DAccuracyModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -3157,6 +3463,8 @@ class VisualizationSettingAtt(SettingController):
     def get_viz3_d_curve_accuracy_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetViz3DCurveAccuracyInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -3175,6 +3483,8 @@ class VisualizationSettingAtt(SettingController):
     def get_viz3_d_fixed_accuracy_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetViz3DFixedAccuracyInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -3193,6 +3503,8 @@ class VisualizationSettingAtt(SettingController):
     def get_viz3_d_proportionnal_accuracy_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetViz3DProportionnalAccuracyInfo(CATBSTR
                 | ioAdminLevel,
@@ -3212,6 +3524,8 @@ class VisualizationSettingAtt(SettingController):
     def put_back_face_culling_mode(self, i_back_face_culling_mode: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutBackFaceCullingMode(CATBackFaceCullingMode
                 | iBackFaceCullingMode)
@@ -3244,6 +3558,8 @@ class VisualizationSettingAtt(SettingController):
     def set_accurate_picking_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAccuratePickingModeLock(boolean iLocked)
                 | 
@@ -3275,6 +3591,8 @@ class VisualizationSettingAtt(SettingController):
     def set_accurate_picking_window_size_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAccuratePickingWindowSizeLock(boolean iLocked)
                 | 
@@ -3306,6 +3624,8 @@ class VisualizationSettingAtt(SettingController):
     def set_all_z_buffer_element_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAllZBufferElementModeLock(boolean iLocked)
                 | 
@@ -3337,6 +3657,8 @@ class VisualizationSettingAtt(SettingController):
     def set_ambient_activation_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAmbientActivationLock(boolean iLocked)
                 | 
@@ -3367,6 +3689,8 @@ class VisualizationSettingAtt(SettingController):
     def set_anti_aliasing_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAntiAliasingModeLock(boolean iLocked)
                 | 
@@ -3397,6 +3721,8 @@ class VisualizationSettingAtt(SettingController):
     def set_anti_aliasing_offset_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAntiAliasingOffsetLock(boolean iLocked)
                 | 
@@ -3427,6 +3753,8 @@ class VisualizationSettingAtt(SettingController):
     def set_auxiliary_drill_viewer_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAuxiliaryDrillViewerLock(boolean iLocked)
                 | 
@@ -3458,6 +3786,8 @@ class VisualizationSettingAtt(SettingController):
     def set_back_face_culling_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetBackFaceCullingModeLock(boolean iLocked)
                 | 
@@ -3489,6 +3819,8 @@ class VisualizationSettingAtt(SettingController):
     def set_background_rgb(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetBackgroundRGB(long iR,
                 | long iG,
@@ -3507,6 +3839,8 @@ class VisualizationSettingAtt(SettingController):
     def set_background_rgb_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetBackgroundRGBLock(boolean iLocked)
                 | 
@@ -3537,6 +3871,8 @@ class VisualizationSettingAtt(SettingController):
     def set_border_edges_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetBorderEdgesModeLock(boolean iLocked)
                 | 
@@ -3567,6 +3903,8 @@ class VisualizationSettingAtt(SettingController):
     def set_border_edges_rgb(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetBorderEdgesRGB(long iR,
                 | long iG,
@@ -3585,6 +3923,8 @@ class VisualizationSettingAtt(SettingController):
     def set_border_edges_rgb_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetBorderEdgesRGBLock(boolean iLocked)
                 | 
@@ -3615,6 +3955,8 @@ class VisualizationSettingAtt(SettingController):
     def set_border_edges_thickness_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetBorderEdgesThicknessLock(boolean iLocked)
                 | 
@@ -3646,6 +3988,8 @@ class VisualizationSettingAtt(SettingController):
     def set_bounding_box_selection_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetBoundingBoxSelectionModeLock(boolean iLocked)
                 | 
@@ -3677,6 +4021,8 @@ class VisualizationSettingAtt(SettingController):
     def set_color_background_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetColorBackgroundModeLock(boolean iLocked)
                 | 
@@ -3708,6 +4054,8 @@ class VisualizationSettingAtt(SettingController):
     def set_default_diffuse_ambient_coefficient_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDefaultDiffuseAmbientCoefficientLock(boolean
                 | iLocked)
@@ -3740,6 +4088,8 @@ class VisualizationSettingAtt(SettingController):
     def set_default_shininess_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDefaultShininessLock(boolean iLocked)
                 | 
@@ -3770,6 +4120,8 @@ class VisualizationSettingAtt(SettingController):
     def set_default_specular_coefficient_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDefaultSpecularCoefficientLock(boolean iLocked)
                 | 
@@ -3801,6 +4153,8 @@ class VisualizationSettingAtt(SettingController):
     def set_display_current_scale_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDisplayCurrentScaleLock(boolean iLocked)
                 | 
@@ -3831,6 +4185,8 @@ class VisualizationSettingAtt(SettingController):
     def set_display_drill_list_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDisplayDrillListLock(boolean iLocked)
                 | 
@@ -3861,6 +4217,8 @@ class VisualizationSettingAtt(SettingController):
     def set_display_immersive_drill_viewer_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDisplayImmersiveDrillViewerLock(boolean iLocked)
                 | 
@@ -3892,6 +4250,8 @@ class VisualizationSettingAtt(SettingController):
     def set_dynamic_cull_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDynamicCullLock(boolean iLocked)
                 | 
@@ -3922,6 +4282,8 @@ class VisualizationSettingAtt(SettingController):
     def set_dynamic_lod_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDynamicLODLock(boolean iLocked)
                 | 
@@ -3952,6 +4314,8 @@ class VisualizationSettingAtt(SettingController):
     def set_face_hl_drill_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetFaceHLDrillLock(boolean iLocked)
                 | 
@@ -3982,6 +4346,8 @@ class VisualizationSettingAtt(SettingController):
     def set_fly_collision_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetFlyCollisionModeLock(boolean iLocked)
                 | 
@@ -4012,6 +4378,8 @@ class VisualizationSettingAtt(SettingController):
     def set_fly_collision_sphere_radius_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetFlyCollisionSphereRadiusLock(boolean iLocked)
                 | 
@@ -4043,6 +4411,8 @@ class VisualizationSettingAtt(SettingController):
     def set_fly_collision_type_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetFlyCollisionTypeLock(boolean iLocked)
                 | 
@@ -4073,6 +4443,8 @@ class VisualizationSettingAtt(SettingController):
     def set_fly_sensitivity_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetFlySensitivityLock(boolean iLocked)
                 | 
@@ -4103,6 +4475,8 @@ class VisualizationSettingAtt(SettingController):
     def set_fly_speed_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetFlySpeedLock(boolean iLocked)
                 | 
@@ -4133,6 +4507,8 @@ class VisualizationSettingAtt(SettingController):
     def set_fly_speed_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetFlySpeedModeLock(boolean iLocked)
                 | 
@@ -4163,6 +4539,8 @@ class VisualizationSettingAtt(SettingController):
     def set_follow_ground_altitude_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetFollowGroundAltitudeLock(boolean iLocked)
                 | 
@@ -4194,6 +4572,8 @@ class VisualizationSettingAtt(SettingController):
     def set_follow_ground_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetFollowGroundModeLock(boolean iLocked)
                 | 
@@ -4224,6 +4604,8 @@ class VisualizationSettingAtt(SettingController):
     def set_full_scene_anti_aliasing_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetFullSceneAntiAliasingModeLock(boolean iLocked)
                 | 
@@ -4254,6 +4636,8 @@ class VisualizationSettingAtt(SettingController):
     def set_gravity_axis_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetGravityAxisLock(boolean iLocked)
                 | 
@@ -4284,6 +4668,8 @@ class VisualizationSettingAtt(SettingController):
     def set_gravity_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetGravityLock(boolean iLocked)
                 | 
@@ -4314,6 +4700,8 @@ class VisualizationSettingAtt(SettingController):
     def set_halo_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetHaloModeLock(boolean iLocked)
                 | 
@@ -4344,6 +4732,8 @@ class VisualizationSettingAtt(SettingController):
     def set_handles_rgb(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetHandlesRGB(long iR,
                 | long iG,
@@ -4362,6 +4752,8 @@ class VisualizationSettingAtt(SettingController):
     def set_handles_rgb_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetHandlesRGBLock(boolean iLocked)
                 | 
@@ -4392,6 +4784,8 @@ class VisualizationSettingAtt(SettingController):
     def set_isopar_generation_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetIsoparGenerationModeLock(boolean iLocked)
                 | 
@@ -4423,6 +4817,8 @@ class VisualizationSettingAtt(SettingController):
     def set_keyboard_rotation_angle_value_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetKeyboardRotationAngleValueLock(boolean iLocked)
                 | 
@@ -4454,6 +4850,8 @@ class VisualizationSettingAtt(SettingController):
     def set_light_viewer_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLightViewerModeLock(boolean iLocked)
                 | 
@@ -4484,6 +4882,8 @@ class VisualizationSettingAtt(SettingController):
     def set_lineic_cgr_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLineicCgrModeLock(boolean iLocked)
                 | 
@@ -4514,6 +4914,8 @@ class VisualizationSettingAtt(SettingController):
     def set_max_selection_move_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMaxSelectionMoveLock(boolean iLocked)
                 | 
@@ -4544,6 +4946,8 @@ class VisualizationSettingAtt(SettingController):
     def set_minimum_fps_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMinimumFPSModeLock(boolean iLocked)
                 | 
@@ -4574,6 +4978,8 @@ class VisualizationSettingAtt(SettingController):
     def set_minimum_space_fps_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMinimumSpaceFPSModeLock(boolean iLocked)
                 | 
@@ -4605,6 +5011,8 @@ class VisualizationSettingAtt(SettingController):
     def set_mouse_double_clic_delay_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMouseDoubleClicDelayLock(boolean iLocked)
                 | 
@@ -4636,6 +5044,8 @@ class VisualizationSettingAtt(SettingController):
     def set_mouse_speed_value_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMouseSpeedValueLock(boolean iLocked)
                 | 
@@ -4666,6 +5076,8 @@ class VisualizationSettingAtt(SettingController):
     def set_nb_isopars_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetNbIsoparsLock(boolean iLocked)
                 | 
@@ -4696,6 +5108,8 @@ class VisualizationSettingAtt(SettingController):
     def set_no_show_background_rgb(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetNoShowBackgroundRGB(long iR,
                 | long iG,
@@ -4727,6 +5141,8 @@ class VisualizationSettingAtt(SettingController):
     def set_no_show_background_rgb_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetNoShowBackgroundRGBLock(boolean iLocked)
                 | 
@@ -4774,6 +5190,8 @@ class VisualizationSettingAtt(SettingController):
     def set_no_z_buffer_selection_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetNoZBufferSelectionModeLock(boolean iLocked)
                 | 
@@ -4805,6 +5223,8 @@ class VisualizationSettingAtt(SettingController):
     def set_number_of_minimum_fps_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetNumberOfMinimumFPSLock(boolean iLocked)
                 | 
@@ -4835,6 +5255,8 @@ class VisualizationSettingAtt(SettingController):
     def set_number_of_minimum_space_fps_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetNumberOfMinimumSpaceFPSLock(boolean iLocked)
                 | 
@@ -4866,6 +5288,8 @@ class VisualizationSettingAtt(SettingController):
     def set_occlusion_culling_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetOcclusionCullingModeLock(boolean iLocked)
                 | 
@@ -4897,6 +5321,8 @@ class VisualizationSettingAtt(SettingController):
     def set_opaque_faces_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetOpaqueFacesLock(boolean iLocked)
                 | 
@@ -4927,6 +5353,8 @@ class VisualizationSettingAtt(SettingController):
     def set_other_selection_timeout_activity_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetOtherSelectionTimeoutActivityLock(boolean iLocked)
                 | 
@@ -4958,6 +5386,8 @@ class VisualizationSettingAtt(SettingController):
     def set_other_selection_timeout_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetOtherSelectionTimeoutLock(boolean iLocked)
                 | 
@@ -4989,6 +5419,8 @@ class VisualizationSettingAtt(SettingController):
     def set_picking_window_size_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPickingWindowSizeLock(boolean iLocked)
                 | 
@@ -5019,6 +5451,8 @@ class VisualizationSettingAtt(SettingController):
     def set_pre_selection_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPreSelectionModeLock(boolean iLocked)
                 | 
@@ -5049,6 +5483,8 @@ class VisualizationSettingAtt(SettingController):
     def set_preselected_element_linetype_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPreselectedElementLinetypeLock(boolean iLocked)
                 | 
@@ -5080,6 +5516,8 @@ class VisualizationSettingAtt(SettingController):
     def set_preselected_element_rgb(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPreselectedElementRGB(long iR,
                 | long iG,
@@ -5098,6 +5536,8 @@ class VisualizationSettingAtt(SettingController):
     def set_preselected_element_rgb_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPreselectedElementRGBLock(boolean iLocked)
                 | 
@@ -5129,6 +5569,8 @@ class VisualizationSettingAtt(SettingController):
     def set_rotation_sphere_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetRotationSphereModeLock(boolean iLocked)
                 | 
@@ -5159,6 +5601,8 @@ class VisualizationSettingAtt(SettingController):
     def set_selected_edge_rgb(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSelectedEdgeRGB(long iR,
                 | long iG,
@@ -5177,6 +5621,8 @@ class VisualizationSettingAtt(SettingController):
     def set_selected_edge_rgb_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSelectedEdgeRGBLock(boolean iLocked)
                 | 
@@ -5207,6 +5653,8 @@ class VisualizationSettingAtt(SettingController):
     def set_selected_element_rgb(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSelectedElementRGB(long iR,
                 | long iG,
@@ -5225,6 +5673,8 @@ class VisualizationSettingAtt(SettingController):
     def set_selected_element_rgb_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSelectedElementRGBLock(boolean iLocked)
                 | 
@@ -5255,6 +5705,8 @@ class VisualizationSettingAtt(SettingController):
     def set_shader_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetShaderModeLock(boolean iLocked)
                 | 
@@ -5285,6 +5737,8 @@ class VisualizationSettingAtt(SettingController):
     def set_static_cull_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetStaticCullLock(boolean iLocked)
                 | 
@@ -5315,6 +5769,8 @@ class VisualizationSettingAtt(SettingController):
     def set_static_lod_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetStaticLODLock(boolean iLocked)
                 | 
@@ -5345,6 +5801,8 @@ class VisualizationSettingAtt(SettingController):
     def set_stereo_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetStereoModeLock(boolean iLocked)
                 | 
@@ -5375,6 +5833,8 @@ class VisualizationSettingAtt(SettingController):
     def set_transparency_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetTransparencyModeLock(boolean iLocked)
                 | 
@@ -5405,6 +5865,8 @@ class VisualizationSettingAtt(SettingController):
     def set_two_side_lighting_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetTwoSideLightingModeLock(boolean iLocked)
                 | 
@@ -5436,6 +5898,8 @@ class VisualizationSettingAtt(SettingController):
     def set_under_intensified_rgb(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetUnderIntensifiedRGB(long iR,
                 | long iG,
@@ -5454,6 +5918,8 @@ class VisualizationSettingAtt(SettingController):
     def set_under_intensified_rgb_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetUnderIntensifiedRGBLock(boolean iLocked)
                 | 
@@ -5485,6 +5951,8 @@ class VisualizationSettingAtt(SettingController):
     def set_update_needed_rgb(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetUpdateNeededRGB(long iR,
                 | long iG,
@@ -5503,6 +5971,8 @@ class VisualizationSettingAtt(SettingController):
     def set_update_needed_rgb_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetUpdateNeededRGBLock(boolean iLocked)
                 | 
@@ -5533,6 +6003,8 @@ class VisualizationSettingAtt(SettingController):
     def set_viewpoint_animation_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetViewpointAnimationModeLock(boolean iLocked)
                 | 
@@ -5564,6 +6036,8 @@ class VisualizationSettingAtt(SettingController):
     def set_viz2_d_accuracy_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetViz2DAccuracyModeLock(boolean iLocked)
                 | 
@@ -5594,6 +6068,8 @@ class VisualizationSettingAtt(SettingController):
     def set_viz2_d_fixed_accuracy_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetViz2DFixedAccuracyLock(boolean iLocked)
                 | 
@@ -5624,6 +6100,8 @@ class VisualizationSettingAtt(SettingController):
     def set_viz2_d_proportionnal_accuracy_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetViz2DProportionnalAccuracyLock(boolean iLocked)
                 | 
@@ -5655,6 +6133,8 @@ class VisualizationSettingAtt(SettingController):
     def set_viz3_d_accuracy_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetViz3DAccuracyModeLock(boolean iLocked)
                 | 
@@ -5685,6 +6165,8 @@ class VisualizationSettingAtt(SettingController):
     def set_viz3_d_curve_accuracy_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetViz3DCurveAccuracyLock(boolean iLocked)
                 | 
@@ -5715,6 +6197,8 @@ class VisualizationSettingAtt(SettingController):
     def set_viz3_d_fixed_accuracy_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetViz3DFixedAccuracyLock(boolean iLocked)
                 | 
@@ -5745,6 +6229,8 @@ class VisualizationSettingAtt(SettingController):
     def set_viz3_d_proportionnal_accuracy_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetViz3DProportionnalAccuracyLock(boolean iLocked)
                 | 

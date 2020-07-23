@@ -1,3 +1,5 @@
+.. _Inertia:
+
 pycatia.space_analyses_interfaces.inertia
 =========================================
 

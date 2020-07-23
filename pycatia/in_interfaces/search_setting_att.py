@@ -16,6 +16,8 @@ class SearchSettingAtt(SettingController):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -41,6 +43,8 @@ class SearchSettingAtt(SettingController):
     def deep_search_activation(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DeepSearchActivation() As boolean
                 | 
@@ -67,6 +71,8 @@ class SearchSettingAtt(SettingController):
     def default_power_input_context_priority(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DefaultPowerInputContextPriority() As boolean
                 | 
@@ -94,6 +100,8 @@ class SearchSettingAtt(SettingController):
     def default_power_input_context_scope(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DefaultPowerInputContextScope() As
                 | CATSearchContextScope
@@ -121,6 +129,8 @@ class SearchSettingAtt(SettingController):
     def default_power_input_prefix(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DefaultPowerInputPrefix() As CATBSTR
                 | 
@@ -146,6 +156,8 @@ class SearchSettingAtt(SettingController):
     def max_displayed_results(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MaxDisplayedResults() As long
                 | 
@@ -173,6 +185,8 @@ class SearchSettingAtt(SettingController):
     def max_pre_highlighted_elements(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MaxPreHighlightedElements() As long
                 | 
@@ -200,6 +214,8 @@ class SearchSettingAtt(SettingController):
     def get_deep_search_activation_info(self, o_admin_level: str, o_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDeepSearchActivationInfo(CATBSTR oAdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -218,6 +234,8 @@ class SearchSettingAtt(SettingController):
     def get_default_power_input_context_priority_info(self, o_admin_level: str, o_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDefaultPowerInputContextPriorityInfo(CATBSTR
                 | oAdminLevel,
@@ -237,6 +255,8 @@ class SearchSettingAtt(SettingController):
     def get_default_power_input_context_scope_info(self, o_admin_level: str, o_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDefaultPowerInputContextScopeInfo(CATBSTR
                 | oAdminLevel,
@@ -256,6 +276,8 @@ class SearchSettingAtt(SettingController):
     def get_default_power_input_prefix_info(self, o_admin_level: str, o_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDefaultPowerInputPrefixInfo(CATBSTR oAdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -274,6 +296,8 @@ class SearchSettingAtt(SettingController):
     def get_max_displayed_results_info(self, o_admin_level: str, o_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMaxDisplayedResultsInfo(CATBSTR oAdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -292,6 +316,8 @@ class SearchSettingAtt(SettingController):
     def get_max_pre_highlighted_elements_info(self, o_admin_level: str, o_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetMaxPreHighlightedElementsInfo(CATBSTR oAdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -310,6 +336,8 @@ class SearchSettingAtt(SettingController):
     def set_deep_search_activation_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDeepSearchActivationLock(boolean iLocked)
                 | 
@@ -341,6 +369,8 @@ class SearchSettingAtt(SettingController):
     def set_default_power_input_context_priority_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDefaultPowerInputContextPriorityLock(boolean
                 | iLocked)
@@ -373,6 +403,8 @@ class SearchSettingAtt(SettingController):
     def set_default_power_input_context_scope_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDefaultPowerInputContextScopeLock(boolean iLocked)
                 | 
@@ -404,6 +436,8 @@ class SearchSettingAtt(SettingController):
     def set_default_power_input_prefix_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDefaultPowerInputPrefixLock(boolean iLocked)
                 | 
@@ -435,6 +469,8 @@ class SearchSettingAtt(SettingController):
     def set_max_displayed_results_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMaxDisplayedResultsLock(boolean iLocked)
                 | 
@@ -466,6 +502,8 @@ class SearchSettingAtt(SettingController):
     def set_max_pre_highlighted_elements_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetMaxPreHighlightedElementsLock(boolean iLocked)
                 | 

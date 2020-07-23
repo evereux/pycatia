@@ -1,3 +1,5 @@
+.. _Parabola_2d:
+
 pycatia.sketcher_interfaces.parabola_2D
 =======================================
 

@@ -16,6 +16,8 @@ from pycatia.system_interfaces.collection import Collection
 class DrawingTables(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -43,6 +45,8 @@ class DrawingTables(Collection):
             i_column_width: float) -> DrawingTable:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add(double iPositionX,
                 | double iPositionY,
@@ -101,6 +105,8 @@ class DrawingTables(Collection):
     def item(self, i_index: int) -> DrawingTable:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(long iIndex) As DrawingTable
                 | 
@@ -136,6 +142,8 @@ class DrawingTables(Collection):
     def remove(self, i_index: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(long iIndex)
                 | 

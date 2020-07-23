@@ -1,3 +1,5 @@
+.. _Setting_controller:
+
 pycatia.system_interfaces.setting_controller
 ============================================
 

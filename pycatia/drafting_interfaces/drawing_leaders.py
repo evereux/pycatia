@@ -16,6 +16,8 @@ from pycatia.system_interfaces.collection import Collection
 class DrawingLeaders(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -37,6 +39,8 @@ class DrawingLeaders(Collection):
     def add(self, i_head_point_x: float, i_head_point_y: float) -> DrawingLeader:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add(double iHeadPointX,
                 | double iHeadPointY) As DrawingLeader
@@ -75,6 +79,8 @@ class DrawingLeaders(Collection):
     def item(self, i_index: int) -> DrawingLeader:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(long iIndex) As DrawingLeader
                 | 
@@ -111,6 +117,8 @@ class DrawingLeaders(Collection):
     def remove(self, i_index: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(long iIndex)
                 | 

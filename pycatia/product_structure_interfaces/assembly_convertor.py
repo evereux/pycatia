@@ -16,6 +16,8 @@ from pycatia.product_structure_interfaces.product import Product
 class AssemblyConvertor(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -42,6 +44,8 @@ class AssemblyConvertor(AnyObject):
     def print(self, i_file_type: str, i_file: str, i_product: Product) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Print(CATBSTR iFileType,
                 | CATBSTR iFile,
@@ -87,6 +91,8 @@ class AssemblyConvertor(AnyObject):
     def set_current_format(self, ilist_props: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetCurrentFormat(CATSafeArrayVariant ilistProps)
                 | 
@@ -122,6 +128,8 @@ class AssemblyConvertor(AnyObject):
     def set_secondary_format(self, ilist_props: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetSecondaryFormat(CATSafeArrayVariant ilistProps)
                 | 
