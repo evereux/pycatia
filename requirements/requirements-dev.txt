@@ -1,4 +1,4 @@
 Sphinx==3.0.3
 pytest==5.4.2
 pytest-cov==2.8.1
-sphinx-toggle-button==0.2.0
+sphinx-togglebutton==0.2.0
