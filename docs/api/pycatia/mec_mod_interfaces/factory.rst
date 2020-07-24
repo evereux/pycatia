@@ -1,3 +1,5 @@
+.. _Factory:
+
 pycatia.mec_mod_interfaces.factory
 ==================================
 

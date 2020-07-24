@@ -17,6 +17,8 @@ class HybridShapeNear(HybridShape):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class HybridShapeNear(HybridShape):
     def multiple_solution(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MultipleSolution() As Reference
                 | 
@@ -76,6 +80,8 @@ class HybridShapeNear(HybridShape):
     def reference_element(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ReferenceElement() As Reference
                 | 

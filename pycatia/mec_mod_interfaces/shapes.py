@@ -18,6 +18,8 @@ from pycatia.types import cat_variant
 class Shapes(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class Shapes(Collection):
     def get_boundary(self, i_label: str) -> Boundary:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetBoundary(CATBSTR iLabel) As Boundary
                 | 
@@ -61,6 +65,8 @@ class Shapes(Collection):
     def item(self, i_index: cat_variant) -> Shape:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(CATVariant iIndex) As Shape
                 | 

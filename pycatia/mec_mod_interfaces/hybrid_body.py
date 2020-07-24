@@ -19,6 +19,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class HybridBody(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -44,6 +46,8 @@ class HybridBody(AnyObject):
     def bodies(self) -> 'Bodies':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Bodies() As Bodies (Read Only)
                 | 
@@ -65,6 +69,8 @@ class HybridBody(AnyObject):
     def geometric_elements(self) -> GeometricElements:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property GeometricElements() As GeometricElements (Read
                 | Only)
@@ -96,6 +102,8 @@ class HybridBody(AnyObject):
     def hybrid_bodies(self) -> 'HybridBodies':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HybridBodies() As HybridBodies (Read Only)
                 | 
@@ -117,6 +125,8 @@ class HybridBody(AnyObject):
     def hybrid_shapes(self) -> HybridShapes:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HybridShapes() As HybridShapes (Read Only)
                 | 
@@ -146,6 +156,8 @@ class HybridBody(AnyObject):
     def hybrid_sketches(self) -> Sketches:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HybridSketches() As Sketches (Read Only)
                 | 
@@ -167,6 +179,8 @@ class HybridBody(AnyObject):
     def append_hybrid_shape(self, i_hybrid_shape: HybridShape) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AppendHybridShape(HybridShape iHybridShape)
                 | 
@@ -201,7 +215,7 @@ class HybridBody(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def append_hybrid_shapes(self, shapes):

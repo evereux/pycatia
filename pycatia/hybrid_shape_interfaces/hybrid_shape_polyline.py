@@ -16,6 +16,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapePolyline(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -47,6 +49,8 @@ class HybridShapePolyline(HybridShape):
     def closure(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Closure() As boolean
                 | 
@@ -84,6 +88,8 @@ class HybridShapePolyline(HybridShape):
     def number_of_elements(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NumberOfElements() As long (Read Only)
                 | 
@@ -110,6 +116,8 @@ class HybridShapePolyline(HybridShape):
     def get_element(self, i_position: int, o_element: Reference, o_radius: Length) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetElement(long iPosition,
                 | Reference oElement,
@@ -156,12 +164,14 @@ class HybridShapePolyline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def insert_element(self, i_point: Reference, i_position: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InsertElement(Reference iPoint,
                 | long iPosition)
@@ -201,12 +211,14 @@ class HybridShapePolyline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def remove_element(self, i_position: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveElement(long iPosition)
                 | 
@@ -234,6 +246,8 @@ class HybridShapePolyline(HybridShape):
     def replace_element(self, i_point: Reference, i_position: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ReplaceElement(Reference iPoint,
                 | long iPosition)
@@ -274,12 +288,14 @@ class HybridShapePolyline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_radius(self, i_position: int, i_radius: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetRadius(long iPosition,
                 | double iRadius)

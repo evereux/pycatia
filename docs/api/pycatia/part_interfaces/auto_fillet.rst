@@ -1,3 +1,5 @@
+.. _Auto_fillet:
+
 pycatia.part_interfaces.auto_fillet
 ===================================
 

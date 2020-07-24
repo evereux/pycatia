@@ -16,6 +16,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class Parameter(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -52,6 +54,8 @@ class Parameter(AnyObject):
     def comment(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Comment() As CATBSTR
                 | 
@@ -75,6 +79,8 @@ class Parameter(AnyObject):
     def context(self) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Context() As AnyObject (Read Only)
                 | 
@@ -91,6 +97,8 @@ class Parameter(AnyObject):
     def hidden(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Hidden() As boolean
                 | 
@@ -114,6 +122,8 @@ class Parameter(AnyObject):
     def is_true_parameter(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property IsTrueParameter() As boolean (Read Only)
                 | 
@@ -130,6 +140,8 @@ class Parameter(AnyObject):
     def optional_relation(self) -> Relation:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property OptionalRelation() As Relation (Read Only)
                 | 
@@ -157,6 +169,8 @@ class Parameter(AnyObject):
     def read_only(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ReadOnly() As boolean (Read Only)
                 | 
@@ -180,6 +194,8 @@ class Parameter(AnyObject):
     def renamed(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Renamed() As boolean (Read Only)
                 | 
@@ -195,6 +211,8 @@ class Parameter(AnyObject):
     def user_access_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property UserAccessMode() As long (Read Only)
                 | 

@@ -18,6 +18,8 @@ from pycatia.knowledge_interfaces.real_param import RealParam
 class HybridShapePlaneEquation(Plane):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -43,6 +45,8 @@ class HybridShapePlaneEquation(Plane):
     def a(self) -> RealParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property A() As RealParam (Read Only)
                 | 
@@ -71,6 +75,8 @@ class HybridShapePlaneEquation(Plane):
     def b(self) -> RealParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property B() As RealParam (Read Only)
                 | 
@@ -99,6 +105,8 @@ class HybridShapePlaneEquation(Plane):
     def c(self) -> RealParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property C() As RealParam (Read Only)
                 | 
@@ -128,6 +136,8 @@ class HybridShapePlaneEquation(Plane):
     def d(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property D() As Length (Read Only)
                 | 
@@ -156,6 +166,8 @@ class HybridShapePlaneEquation(Plane):
     def ref_axis_system(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RefAxisSystem() As Reference
                 | 
@@ -193,6 +205,8 @@ class HybridShapePlaneEquation(Plane):
     def get_reference_point(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetReferencePoint() As Reference
                 | 
@@ -211,6 +225,8 @@ class HybridShapePlaneEquation(Plane):
     def set_reference_point(self, i_reference_point: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetReferencePoint(Reference iReferencePoint)
                 | 
@@ -239,7 +255,7 @@ class HybridShapePlaneEquation(Plane):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

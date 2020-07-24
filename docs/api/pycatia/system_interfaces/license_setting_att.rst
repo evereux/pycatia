@@ -1,3 +1,5 @@
+.. _License_setting_att:
+
 pycatia.system_interfaces.license_setting_att
 =============================================
 

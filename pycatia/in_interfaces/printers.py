@@ -17,6 +17,8 @@ from pycatia.types import cat_variant
 class Printers(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class Printers(Collection):
     def item(self, i_index: cat_variant) -> Printer:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(CATVariant iIndex) As Printer
                 | 

@@ -1,3 +1,5 @@
+.. _Pattern:
+
 pycatia.part_interfaces.pattern
 ===============================
 

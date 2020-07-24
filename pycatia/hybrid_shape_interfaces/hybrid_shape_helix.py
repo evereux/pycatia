@@ -20,6 +20,8 @@ class HybridShapeHelix(HybridShape):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -53,6 +55,8 @@ class HybridShapeHelix(HybridShape):
     def axis(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Axis() As Reference
                 | 
@@ -85,6 +89,8 @@ class HybridShapeHelix(HybridShape):
     def clockwise_revolution(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ClockwiseRevolution() As boolean
                 | 
@@ -114,6 +120,8 @@ class HybridShapeHelix(HybridShape):
     def height(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Height() As Length (Read Only)
                 | 
@@ -134,6 +142,8 @@ class HybridShapeHelix(HybridShape):
     def invert_axis(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property InvertAxis() As boolean
                 | 
@@ -163,6 +173,8 @@ class HybridShapeHelix(HybridShape):
     def pitch(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Pitch() As Length (Read Only)
                 | 
@@ -183,6 +195,8 @@ class HybridShapeHelix(HybridShape):
     def pitch2(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Pitch2() As Length (Read Only)
                 | 
@@ -203,6 +217,8 @@ class HybridShapeHelix(HybridShape):
     def pitch_law_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PitchLawType() As long
                 | 
@@ -231,6 +247,8 @@ class HybridShapeHelix(HybridShape):
     def profile(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Profile() As Reference
                 | 
@@ -259,6 +277,8 @@ class HybridShapeHelix(HybridShape):
     def revol_number(self) -> RealParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RevolNumber() As RealParam (Read Only)
                 | 
@@ -279,6 +299,8 @@ class HybridShapeHelix(HybridShape):
     def starting_angle(self) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property StartingAngle() As Angle (Read Only)
                 | 
@@ -299,6 +321,8 @@ class HybridShapeHelix(HybridShape):
     def starting_point(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property StartingPoint() As Reference
                 | 
@@ -331,6 +355,8 @@ class HybridShapeHelix(HybridShape):
     def taper_angle(self) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TaperAngle() As Angle (Read Only)
                 | 
@@ -351,6 +377,8 @@ class HybridShapeHelix(HybridShape):
     def taper_outward(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TaperOutward() As boolean
                 | 
@@ -379,6 +407,8 @@ class HybridShapeHelix(HybridShape):
     def set_height(self, i_height: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetHeight(double iHeight)
                 | 
@@ -398,6 +428,8 @@ class HybridShapeHelix(HybridShape):
     def set_pitch(self, i_pitch: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPitch(double iPitch)
                 | 
@@ -417,6 +449,8 @@ class HybridShapeHelix(HybridShape):
     def set_pitch2(self, i_pitch2: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPitch2(double iPitch2)
                 | 
@@ -436,6 +470,8 @@ class HybridShapeHelix(HybridShape):
     def set_revolution_number(self, i_nb_revol: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetRevolutionNumber(double iNbRevol)
                 | 
@@ -455,6 +491,8 @@ class HybridShapeHelix(HybridShape):
     def set_starting_angle(self, i_starting_angle: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetStartingAngle(double iStartingAngle)
                 | 
@@ -474,6 +512,8 @@ class HybridShapeHelix(HybridShape):
     def set_taper_angle(self, i_taper_angle: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetTaperAngle(double iTaperAngle)
                 | 

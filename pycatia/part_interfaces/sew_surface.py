@@ -15,6 +15,8 @@ from pycatia.part_interfaces.surface_based_shape import SurfaceBasedShape
 class SewSurface(SurfaceBasedShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -40,6 +42,8 @@ class SewSurface(SurfaceBasedShape):
     def deviation(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Deviation() As double
                 | 
@@ -70,6 +74,8 @@ class SewSurface(SurfaceBasedShape):
     def deviation_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DeviationMode() As long
                 | 
@@ -114,6 +120,8 @@ class SewSurface(SurfaceBasedShape):
     def sewing_intersection_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SewingIntersectionMode() As
                 | CatSewingIntersectionMode
@@ -147,6 +155,8 @@ class SewSurface(SurfaceBasedShape):
     def sewing_side(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SewingSide() As CatSplitSide
                 | 
@@ -178,6 +188,8 @@ class SewSurface(SurfaceBasedShape):
     def set_surface_support(self, i_support_surface: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSurfaceSupport(Reference iSupportSurface)
                 | 
@@ -208,12 +220,14 @@ class SewSurface(SurfaceBasedShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_volume_support(self, i_volume: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetVolumeSupport(Reference iVolume)
                 | 
@@ -251,7 +265,7 @@ class SewSurface(SurfaceBasedShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

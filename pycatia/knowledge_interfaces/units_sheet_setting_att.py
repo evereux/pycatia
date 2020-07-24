@@ -15,6 +15,8 @@ from pycatia.system_interfaces.setting_controller import SettingController
 class UnitsSheetSettingAtt(SettingController):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class UnitsSheetSettingAtt(SettingController):
     def display_trailing_zeros(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DisplayTrailingZeros() As short
                 | 
@@ -72,6 +76,8 @@ class UnitsSheetSettingAtt(SettingController):
     def exp_notation_values_greater(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ExpNotationValuesGreater() As double
                 | 
@@ -103,6 +109,8 @@ class UnitsSheetSettingAtt(SettingController):
     def exp_notation_values_lower(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ExpNotationValuesLower() As double
                 | 
@@ -134,6 +142,8 @@ class UnitsSheetSettingAtt(SettingController):
     def list_of_magnitudes(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ListOfMagnitudes() As CATSafeArrayVariant (Read
                 | Only)
@@ -152,6 +162,8 @@ class UnitsSheetSettingAtt(SettingController):
     def list_of_magnitudes_size(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ListOfMagnitudesSize() As double (Read Only)
                 | 
@@ -169,6 +181,8 @@ class UnitsSheetSettingAtt(SettingController):
     def same_display(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SameDisplay() As short
                 | 
@@ -201,6 +215,8 @@ class UnitsSheetSettingAtt(SettingController):
     def commit_for_units(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub CommitForUnits()
                 | 
@@ -217,6 +233,8 @@ class UnitsSheetSettingAtt(SettingController):
     def get_decimal_read_only(self, i_magnitude_name: str, o_decimal_place_read_only: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetDecimalReadOnly(CATBSTR iMagnitudeName,
                 | double oDecimalPlaceReadOnly)
@@ -233,6 +251,8 @@ class UnitsSheetSettingAtt(SettingController):
     def get_decimal_read_write(self, i_magnitude_name: str, o_decimal_place_read_write: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetDecimalReadWrite(CATBSTR iMagnitudeName,
                 | double oDecimalPlaceReadWrite)
@@ -249,6 +269,8 @@ class UnitsSheetSettingAtt(SettingController):
     def get_dimensions_display_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetDimensionsDisplayInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -267,6 +289,8 @@ class UnitsSheetSettingAtt(SettingController):
     def get_display_trailing_zeros_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetDisplayTrailingZerosInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -302,6 +326,8 @@ class UnitsSheetSettingAtt(SettingController):
     def get_exp_notation_values_greater_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetExpNotationValuesGreaterInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -337,6 +363,8 @@ class UnitsSheetSettingAtt(SettingController):
     def get_exp_notation_values_lower_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetExpNotationValuesLowerInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -372,6 +400,8 @@ class UnitsSheetSettingAtt(SettingController):
     def get_list_of_magnitudes_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetListOfMagnitudesInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -387,9 +417,15 @@ class UnitsSheetSettingAtt(SettingController):
         """
         return self.units_sheet_setting_att.GetListOfMagnitudesInfo(io_admin_level, io_locked)
 
-    def get_magnitude_values(self, i_magnitude_name: str, o_unit_name: str, o_decimal_place_read_write: float, o_decimal_place_read_only: float) -> None:
+    def get_magnitude_values(self,
+                             i_magnitude_name: str,
+                             o_unit_name: str,
+                             o_decimal_place_read_write: float,
+                             o_decimal_place_read_only: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetMagnitudeValues(CATBSTR iMagnitudeName,
                 | CATBSTR oUnitName,
@@ -413,6 +449,8 @@ class UnitsSheetSettingAtt(SettingController):
     def get_same_display_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetSameDisplayInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -448,6 +486,8 @@ class UnitsSheetSettingAtt(SettingController):
     def reset_to_admin_values_for_units(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub ResetToAdminValuesForUnits()
                 | 
@@ -464,6 +504,8 @@ class UnitsSheetSettingAtt(SettingController):
     def rollback_for_units(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RollbackForUnits()
                 | 
@@ -480,6 +522,8 @@ class UnitsSheetSettingAtt(SettingController):
     def save_repository_for_units(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SaveRepositoryForUnits()
                 | 
@@ -496,6 +540,8 @@ class UnitsSheetSettingAtt(SettingController):
     def set_dimensions_display_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetDimensionsDisplayLock(boolean iLocked)
                 | 
@@ -520,12 +566,14 @@ class UnitsSheetSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_display_trailing_zeros_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetDisplayTrailingZerosLock(boolean iLocked)
                 | 
@@ -561,12 +609,14 @@ class UnitsSheetSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_exp_notation_values_greater_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetExpNotationValuesGreaterLock(boolean iLocked)
                 | 
@@ -602,12 +652,14 @@ class UnitsSheetSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_exp_notation_values_lower_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetExpNotationValuesLowerLock(boolean iLocked)
                 | 
@@ -643,12 +695,14 @@ class UnitsSheetSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_list_of_magnitudes_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetListOfMagnitudesLock(boolean iLocked)
                 | 
@@ -673,12 +727,18 @@ class UnitsSheetSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_magnitude_values(self, i_magnitude_name: str, i_unit_name: str, i_decimal_place_read_write: float, i_decimal_place_read_only: float) -> None:
+    def set_magnitude_values(self,
+                             i_magnitude_name: str,
+                             i_unit_name: str,
+                             i_decimal_place_read_write: float,
+                             i_decimal_place_read_only: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetMagnitudeValues(CATBSTR iMagnitudeName,
                 | CATBSTR iUnitName,
@@ -702,6 +762,8 @@ class UnitsSheetSettingAtt(SettingController):
     def set_same_display_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetSameDisplayLock(boolean iLocked)
                 | 
@@ -737,7 +799,7 @@ class UnitsSheetSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

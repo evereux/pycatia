@@ -1,3 +1,5 @@
+.. _Angular_repartition:
+
 pycatia.part_interfaces.angular_repartition
 ===========================================
 

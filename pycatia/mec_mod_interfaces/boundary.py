@@ -15,6 +15,8 @@ from pycatia.in_interfaces.reference import Reference
 class Boundary(Reference):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown

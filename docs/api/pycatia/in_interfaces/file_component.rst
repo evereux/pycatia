@@ -1,3 +1,5 @@
+.. _File_component:
+
 pycatia.in_interfaces.file_component
 ====================================
 

@@ -16,6 +16,8 @@ from pycatia.types import cat_variant
 class DrawingComponent(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class DrawingComponent(AnyObject):
     def angle(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Angle() As double
                 | 
@@ -73,6 +77,8 @@ class DrawingComponent(AnyObject):
     def comp_ref(self) -> 'DrawingView':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CompRef() As DrawingView (Read Only)
                 | 
@@ -96,6 +102,8 @@ class DrawingComponent(AnyObject):
     def scale2(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Scale2() As double
                 | 
@@ -126,6 +134,8 @@ class DrawingComponent(AnyObject):
     def x(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property x() As double
                 | 
@@ -159,6 +169,8 @@ class DrawingComponent(AnyObject):
     def y(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property y() As double
                 | 
@@ -191,6 +203,8 @@ class DrawingComponent(AnyObject):
     def explode(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Explode()
                 | 
@@ -216,6 +230,8 @@ class DrawingComponent(AnyObject):
     def explode_and_select(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub ExplodeAndSelect()
                 | 
@@ -237,6 +253,8 @@ class DrawingComponent(AnyObject):
     def expose_comp_ref(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub ExposeCompRef()
                 | 
@@ -257,6 +275,8 @@ class DrawingComponent(AnyObject):
     def expose_comp_ref_in_sheet(self, i_sheet: 'DrawingSheet') -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub ExposeCompRefInSheet(DrawingSheet iSheet)
                 | 
@@ -296,12 +316,14 @@ class DrawingComponent(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def flip(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Flip()
                 | 
@@ -323,6 +345,8 @@ class DrawingComponent(AnyObject):
     def get_flip(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetFlip() As boolean
                 | 
@@ -343,6 +367,8 @@ class DrawingComponent(AnyObject):
     def get_matrix(self, io_matrix: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetMatrix(CATSafeArrayVariant ioMatrix)
                 | 
@@ -384,12 +410,14 @@ class DrawingComponent(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_modifiable_object(self, i_index: cat_variant) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetModifiableObject(CATVariant iIndex) As AnyObject
                 | 
@@ -411,6 +439,8 @@ class DrawingComponent(AnyObject):
     def get_modifiable_objects_count(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetModifiableObjectsCount() As long
                 | 
@@ -431,6 +461,8 @@ class DrawingComponent(AnyObject):
     def set_matrix(self, i_matrix: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetMatrix(CATSafeArrayVariant iMatrix)
                 | 
@@ -472,7 +504,7 @@ class DrawingComponent(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

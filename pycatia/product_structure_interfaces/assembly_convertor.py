@@ -16,6 +16,8 @@ from pycatia.product_structure_interfaces.product import Product
 class AssemblyConvertor(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -42,6 +44,8 @@ class AssemblyConvertor(AnyObject):
     def print(self, i_file_type: str, i_file: str, i_product: Product) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Print(CATBSTR iFileType,
                 | CATBSTR iFile,
@@ -81,12 +85,14 @@ class AssemblyConvertor(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_current_format(self, ilist_props: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetCurrentFormat(CATSafeArrayVariant ilistProps)
                 | 
@@ -116,12 +122,14 @@ class AssemblyConvertor(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_secondary_format(self, ilist_props: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetSecondaryFormat(CATSafeArrayVariant ilistProps)
                 | 
@@ -151,7 +159,7 @@ class AssemblyConvertor(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

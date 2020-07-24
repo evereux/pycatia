@@ -16,6 +16,8 @@ class StrParam(Parameter):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -46,6 +48,8 @@ class StrParam(Parameter):
     def value(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Value() As CATBSTR
                 | 
@@ -76,6 +80,8 @@ class StrParam(Parameter):
     def get_enumerate_values(self, o_safe_array: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetEnumerateValues(CATSafeArrayVariant oSafeArray)
                 | 
@@ -110,12 +116,14 @@ class StrParam(Parameter):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_enumerate_values_size(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetEnumerateValuesSize() As long
                 | 
@@ -129,6 +137,8 @@ class StrParam(Parameter):
     def set_enumerate_values(self, i_safe_array: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetEnumerateValues(CATSafeArrayVariant iSafeArray)
                 | 
@@ -158,12 +168,14 @@ class StrParam(Parameter):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def suppress_enumerate_values(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SuppressEnumerateValues()
                 | 

@@ -28,6 +28,8 @@ from pycatia.types import cat_variant
 class Relations(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -94,6 +96,8 @@ class Relations(Collection):
     def optimizations(self) -> Optimizations:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Optimizations() As Optimizations (Read Only)
                 | 
@@ -112,6 +116,8 @@ class Relations(Collection):
     def create_check(self, i_name: str, i_comment: str, i_check_body: str) -> Check:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateCheck(CATBSTR iName,
                 | CATBSTR iComment,
@@ -159,6 +165,8 @@ class Relations(Collection):
     def create_design_table(self, i_name: str, i_comment: str, i_copy_mode: bool, i_sheet_path: Path) -> DesignTable:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateDesignTable(CATBSTR iName,
                 | CATBSTR iComment,
@@ -212,6 +220,8 @@ class Relations(Collection):
     def create_formula(self, i_name, i_comment, i_output_parameter, i_formula_body):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateFormula(CATBSTR iName,
                 | CATBSTR iComment,
@@ -268,6 +278,8 @@ class Relations(Collection):
                                        i_sheet_path: str) -> DesignTable:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateHorizontalDesignTable(CATBSTR iName,
                 | CATBSTR iComment,
@@ -317,6 +329,8 @@ class Relations(Collection):
     def create_law(self, i_name: str, i_comment: str, i_law_body: str) -> Law:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateLaw(CATBSTR iName,
                 | CATBSTR iComment,
@@ -348,6 +362,8 @@ class Relations(Collection):
     def create_program(self, i_name: str, i_comment: str, i_program_body: str) -> Rule:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateProgram(CATBSTR iName,
                 | CATBSTR iComment,
@@ -396,6 +412,8 @@ class Relations(Collection):
     def create_rule_base(self, i_name: str) -> Relation:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateRuleBase(CATBSTR iName) As Relation
                 | 
@@ -420,6 +438,8 @@ class Relations(Collection):
     def create_set_of_equations(self, i_name: str, i_comment: str, i_formula_body: str) -> SetOfEquation:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateSetOfEquations(CATBSTR iName,
                 | CATBSTR iComment,
@@ -451,6 +471,8 @@ class Relations(Collection):
     def create_set_of_relations(self, i_parent: AnyObject) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub CreateSetOfRelations(AnyObject iParent)
                 | 
@@ -471,6 +493,8 @@ class Relations(Collection):
     def generate_xml_report_for_checks(self, i_name: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GenerateXMLReportForChecks(CATBSTR iName)
                 | 
@@ -491,6 +515,8 @@ class Relations(Collection):
     def item(self, i_index: cat_variant) -> Relation:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(CATVariant iIndex) As Relation
                 | 
@@ -526,6 +552,8 @@ class Relations(Collection):
     def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(CATVariant iIndex)
                 | 
@@ -558,6 +586,8 @@ class Relations(Collection):
     def sub_list(self, i_feature: AnyObject, i_recursively: bool) -> 'Relations':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func SubList(AnyObject iFeature,
                 | boolean iRecursively) As Relations

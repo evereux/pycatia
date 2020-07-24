@@ -1,3 +1,5 @@
+.. _System_configuration:
+
 pycatia.in_interfaces.system_configuration
 ==========================================
 

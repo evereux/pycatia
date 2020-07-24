@@ -17,6 +17,8 @@ from pycatia.part_interfaces.pattern import Pattern
 class RectPattern(Pattern):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -46,6 +48,8 @@ class RectPattern(Pattern):
     def first_direction_repartition(self) -> LinearRepartition:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstDirectionRepartition() As LinearRepartition (Read
                 | Only)
@@ -68,6 +72,8 @@ class RectPattern(Pattern):
     def first_direction_row(self) -> IntParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstDirectionRow() As IntParam (Read Only)
                 | 
@@ -91,6 +97,8 @@ class RectPattern(Pattern):
     def first_orientation(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstOrientation() As boolean
                 | 
@@ -125,6 +133,8 @@ class RectPattern(Pattern):
     def first_rectangular_pattern_parameters(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstRectangularPatternParameters() As
                 | CatRectangularPatternParameters
@@ -160,6 +170,8 @@ class RectPattern(Pattern):
     def second_direction_repartition(self) -> LinearRepartition:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondDirectionRepartition() As LinearRepartition (Read
                 | Only)
@@ -182,6 +194,8 @@ class RectPattern(Pattern):
     def second_direction_row(self) -> IntParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondDirectionRow() As IntParam (Read Only)
                 | 
@@ -205,6 +219,8 @@ class RectPattern(Pattern):
     def second_orientation(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondOrientation() As boolean
                 | 
@@ -240,6 +256,8 @@ class RectPattern(Pattern):
     def second_rectangular_pattern_parameters(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondRectangularPatternParameters() As
                 | CatRectangularPatternParameters
@@ -274,6 +292,8 @@ class RectPattern(Pattern):
     def get_first_direction(self, io_first_direction: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetFirstDirection(CATSafeArrayVariant
                 | ioFirstDirection)
@@ -314,12 +334,14 @@ class RectPattern(Pattern):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_second_direction(self, io_second_direction: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetSecondDirection(CATSafeArrayVariant
                 | ioSecondDirection)
@@ -359,12 +381,14 @@ class RectPattern(Pattern):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_first_direction(self, i_first_direction: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetFirstDirection(Reference iFirstDirection)
                 | 
@@ -407,12 +431,14 @@ class RectPattern(Pattern):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_instance_spacing(self, i_instance_number: int, i_spacing: float, i_direction: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetInstanceSpacing(long iInstanceNumber,
                 | double iSpacing,
@@ -444,6 +470,8 @@ class RectPattern(Pattern):
     def set_second_direction(self, i_second_direction: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSecondDirection(Reference iSecondDirection)
                 | 
@@ -486,12 +514,14 @@ class RectPattern(Pattern):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_unequal_instance_number(self, i_instance_number: int, i_direction: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetUnequalInstanceNumber(long iInstanceNumber,
                 | long iDirection)

@@ -1,3 +1,5 @@
+.. _Hybrid_shape_integrated_law:
+
 pycatia.hybrid_shape_interfaces.hybrid_shape_integrated_law
 ===========================================================
 

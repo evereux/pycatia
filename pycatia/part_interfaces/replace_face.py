@@ -16,6 +16,8 @@ from pycatia.part_interfaces.surface_based_shape import SurfaceBasedShape
 class ReplaceFace(SurfaceBasedShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -41,6 +43,8 @@ class ReplaceFace(SurfaceBasedShape):
     def remove_face(self) -> References:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RemoveFace() As References (Read Only)
                 | 
@@ -56,6 +60,8 @@ class ReplaceFace(SurfaceBasedShape):
     def splitting_side(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SplittingSide() As CatSplitSide
                 | 
@@ -80,6 +86,8 @@ class ReplaceFace(SurfaceBasedShape):
     def add_remove_face(self, i_remove_face: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddRemoveFace(Reference iRemoveFace)
                 | 
@@ -103,12 +111,14 @@ class ReplaceFace(SurfaceBasedShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_split_plane(self, i_split_plane: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddSplitPlane(Reference iSplitPlane)
                 | 
@@ -132,12 +142,14 @@ class ReplaceFace(SurfaceBasedShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def delete_remove_face(self, i_remove_face: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub DeleteRemoveFace(Reference iRemoveFace)
                 | 
@@ -161,7 +173,7 @@ class ReplaceFace(SurfaceBasedShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

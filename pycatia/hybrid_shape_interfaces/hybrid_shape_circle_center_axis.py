@@ -17,6 +17,8 @@ from pycatia.knowledge_interfaces.length import Length
 class HybridShapeCircleCenterAxis(HybridShapeCircle):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -57,6 +59,8 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
     def axis(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Axis() As Reference
                 | 
@@ -88,6 +92,8 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
     def diameter(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Diameter() As Length (Read Only)
                 | 
@@ -111,6 +117,8 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
     def diameter_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DiameterMode() As boolean
                 | 
@@ -146,6 +154,8 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
     def point(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Point() As Reference
                 | 
@@ -168,7 +178,7 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
     @point.setter
     def point(self, reference_point: Reference):
         """
-        :param Reference value:
+        :param Reference reference_point:
         """
 
         self.hybrid_shape_circle_center_axis.Point = reference_point.com_object
@@ -177,6 +187,8 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
     def projection_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ProjectionMode() As boolean
                 | 
@@ -212,6 +224,8 @@ class HybridShapeCircleCenterAxis(HybridShapeCircle):
     def radius(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Radius() As Length (Read Only)
                 | 

@@ -16,6 +16,8 @@ from pycatia.system_interfaces.collection import Collection
 class LightSources(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -37,6 +39,8 @@ class LightSources(Collection):
     def add(self) -> LightSource:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add() As LightSource
                 | 
@@ -59,6 +63,8 @@ class LightSources(Collection):
     def item(self, i_index: int) -> LightSource:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(long iIndex) As LightSource
                 | 
@@ -91,6 +97,8 @@ class LightSources(Collection):
     def remove(self, i_index: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Remove(long iIndex)
                 | 

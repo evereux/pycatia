@@ -16,6 +16,8 @@ from pycatia.types import cat_variant
 class OptimizationConstraints(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -36,6 +38,8 @@ class OptimizationConstraints(Collection):
     def add_constraint(self, constraint_expression: str) -> OptimizationConstraint:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddConstraint(CATBSTR constraintExpression) As
                 | OptimizationConstraint
@@ -51,6 +55,8 @@ class OptimizationConstraints(Collection):
     def item(self, i_index: cat_variant) -> OptimizationConstraint:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(CATVariant iIndex) As OptimizationConstraint
                 | 
@@ -86,6 +92,8 @@ class OptimizationConstraints(Collection):
     def remove_constraint(self, i_index: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveConstraint(CATVariant iIndex)
                 | 

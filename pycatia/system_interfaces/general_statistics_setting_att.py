@@ -16,6 +16,8 @@ class GeneralStatisticsSettingAtt(SettingController):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
 
                 | System.IUnknown
@@ -41,6 +43,8 @@ class GeneralStatisticsSettingAtt(SettingController):
     def activation(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property Activation() As boolean
                 | 
@@ -65,6 +69,8 @@ class GeneralStatisticsSettingAtt(SettingController):
     def cpus(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property CPUS() As boolean
                 | 
@@ -95,6 +101,8 @@ class GeneralStatisticsSettingAtt(SettingController):
     def cumulation_mode(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property CumulationMode() As boolean
                 | 
@@ -119,6 +127,8 @@ class GeneralStatisticsSettingAtt(SettingController):
     def date_format(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property DateFormat() As CATBSTR
                 | 
@@ -152,6 +162,8 @@ class GeneralStatisticsSettingAtt(SettingController):
     def elps(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property ELPS() As boolean
                 | 
@@ -182,6 +194,8 @@ class GeneralStatisticsSettingAtt(SettingController):
     def host(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property HOST() As boolean
                 | 
@@ -212,6 +226,8 @@ class GeneralStatisticsSettingAtt(SettingController):
     def output(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property Output() As CATBSTR
                 | 
@@ -245,6 +261,8 @@ class GeneralStatisticsSettingAtt(SettingController):
     def output_file(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property OutputFile() As CATBSTR
                 | 
@@ -268,6 +286,8 @@ class GeneralStatisticsSettingAtt(SettingController):
     def output_format(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property OutputFormat() As CATBSTR
                 | 
@@ -299,6 +319,8 @@ class GeneralStatisticsSettingAtt(SettingController):
     def rtim(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property RTIM() As boolean
                 | 
@@ -330,6 +352,8 @@ class GeneralStatisticsSettingAtt(SettingController):
     def them(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property THEM() As boolean
                 | 
@@ -360,6 +384,8 @@ class GeneralStatisticsSettingAtt(SettingController):
     def time(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property TIME() As boolean
                 | 
@@ -391,6 +417,8 @@ class GeneralStatisticsSettingAtt(SettingController):
     def time_unit(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property TimeUnit() As CATBSTR
                 | 
@@ -421,6 +449,8 @@ class GeneralStatisticsSettingAtt(SettingController):
     def upid(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property UPID() As boolean
                 | 
@@ -451,6 +481,8 @@ class GeneralStatisticsSettingAtt(SettingController):
     def user(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property USER() As boolean
                 | 
@@ -480,6 +512,8 @@ class GeneralStatisticsSettingAtt(SettingController):
     def get_format_mode(self, flag):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetFormatMode(long flag) As boolean
                 | 
@@ -503,6 +537,8 @@ class GeneralStatisticsSettingAtt(SettingController):
     def get_thematics_parameter_info(self, admin_level, o_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetThematicsParameterInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -520,6 +556,8 @@ class GeneralStatisticsSettingAtt(SettingController):
     def set_format_mode(self, i_format_mode, flag):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetFormatMode(boolean iFormatMode,
                 | long flag)
@@ -554,12 +592,14 @@ class GeneralStatisticsSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_thematics_parameter_lock(self, i_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetThematicsParameterLock(boolean iLocked)
                 | 
@@ -596,7 +636,7 @@ class GeneralStatisticsSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

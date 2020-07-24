@@ -1,3 +1,5 @@
+.. _Chamfer:
+
 pycatia.part_interfaces.chamfer
 ===============================
 

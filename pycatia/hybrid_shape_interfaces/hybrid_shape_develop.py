@@ -16,9 +16,10 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeDevelop(HybridShape):
-
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -60,6 +61,8 @@ class HybridShapeDevelop(HybridShape):
     def mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Mode() As long
                 | 
@@ -89,6 +92,8 @@ class HybridShapeDevelop(HybridShape):
     def mode_pos(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ModePos() As long
                 | 
@@ -119,6 +124,8 @@ class HybridShapeDevelop(HybridShape):
     def plane_axis_direction(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PlaneAxisDirection() As Reference
                 | 
@@ -145,6 +152,8 @@ class HybridShapeDevelop(HybridShape):
     def plane_axis_origin(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PlaneAxisOrigin() As Reference
                 | 
@@ -161,7 +170,7 @@ class HybridShapeDevelop(HybridShape):
     @plane_axis_origin.setter
     def plane_axis_origin(self, reference_plane: Reference):
         """
-        :param reference_plane value:
+        :param reference_plane reference_plane:
         """
 
         self.hybrid_shape_develop.PlaneAxisOrigin = reference_plane.com_object
@@ -170,6 +179,8 @@ class HybridShapeDevelop(HybridShape):
     def point_on_support(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PointOnSupport() As Reference
                 | 
@@ -195,6 +206,8 @@ class HybridShapeDevelop(HybridShape):
     def positioned_wire(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PositionedWire() As Reference
                 | 
@@ -220,6 +233,8 @@ class HybridShapeDevelop(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
@@ -245,6 +260,8 @@ class HybridShapeDevelop(HybridShape):
     def wire_to_develop(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property WireToDevelop() As Reference
                 | 
@@ -269,6 +286,8 @@ class HybridShapeDevelop(HybridShape):
     def get_plane_axis_angle(self) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPlaneAxisAngle() As Angle
                 | 
@@ -287,6 +306,8 @@ class HybridShapeDevelop(HybridShape):
     def get_plane_axis_coord(self, i_coor_idx: int) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPlaneAxisCoord(long iCoorIdx) As Length
                 | 
@@ -314,6 +335,8 @@ class HybridShapeDevelop(HybridShape):
     def get_plane_axis_swap_axes(self, ii: int) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPlaneAxisSwapAxes(long ii) As long
                 | 
@@ -347,6 +370,8 @@ class HybridShapeDevelop(HybridShape):
     def set_plane_axis_angle(self, i_angle: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPlaneAxisAngle(double iAngle)
                 | 
@@ -368,6 +393,8 @@ class HybridShapeDevelop(HybridShape):
     def set_plane_axis_coord(self, i_coor_idx: int, i_coord_value: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPlaneAxisCoord(long iCoorIdx,
                 | double iCoordValue)
@@ -396,6 +423,8 @@ class HybridShapeDevelop(HybridShape):
     def set_plane_axis_swap_axes(self, i_idx: int, i_inversion_value: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPlaneAxisSwapAxes(long iIdx,
                 | long iInversionValue)
@@ -427,4 +456,4 @@ class HybridShapeDevelop(HybridShape):
         return self.hybrid_shape_develop.SetPlaneAxisSwapAxes(i_idx, i_inversion_value)
 
     def __repr__(self):
-        return f'HybridShapeDevelop(name="{ self.name }")'
+        return f'HybridShapeDevelop(name="{self.name}")'

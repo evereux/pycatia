@@ -18,6 +18,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeSpline(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -52,6 +54,8 @@ class HybridShapeSpline(HybridShape):
     def add_point(self, ip_ia_point: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddPoint(Reference ipIAPoint)
                 | 
@@ -80,7 +84,7 @@ class HybridShapeSpline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_point_with_constraint_explicit(self, ip_ia_point: Reference, ip_ia_dir_tangency: HybridShapeDirection,
@@ -89,6 +93,8 @@ class HybridShapeSpline(HybridShape):
                                            i_curvature_radius: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddPointWithConstraintExplicit(Reference ipIAPoint,
                 | HybridShapeDirection ipIADirTangency,
@@ -142,13 +148,15 @@ class HybridShapeSpline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_point_with_constraint_from_curve(self, ip_ia_point: Reference, ip_ia_curve_cst: Reference,
                                              i_tangency_norm: float, i_invert_value: int, i_crv_cst_type: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddPointWithConstraintFromCurve(Reference ipIAPoint,
                 | Reference ipIACurveCst,
@@ -196,12 +204,14 @@ class HybridShapeSpline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_closure(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetClosure() As long
                 | 
@@ -225,6 +235,8 @@ class HybridShapeSpline(HybridShape):
     def get_constraint_type(self, i_pos: int) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetConstraintType(long iPos) As long
                 | 
@@ -247,6 +259,8 @@ class HybridShapeSpline(HybridShape):
     def get_curvature_radius(self, i_pos: int) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetCurvatureRadius(long iPos) As Length
                 | 
@@ -271,6 +285,8 @@ class HybridShapeSpline(HybridShape):
     def get_direction_inversion(self, i_pos: int) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDirectionInversion(long iPos) As long
                 | 
@@ -293,6 +309,8 @@ class HybridShapeSpline(HybridShape):
     def get_nb_control_point(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNbControlPoint() As long
                 | 
@@ -311,6 +329,8 @@ class HybridShapeSpline(HybridShape):
     def get_point(self, i_pos: int) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPoint(long iPos) As Reference
                 | 
@@ -334,6 +354,8 @@ class HybridShapeSpline(HybridShape):
                                       op_ia_dir_curvature: HybridShapeDirection, o_curvature_radius: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetPointConstraintExplicit(long iPos,
                 | HybridShapeDirection opIADirTangency,
@@ -387,13 +409,15 @@ class HybridShapeSpline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_point_constraint_from_curve(self, i_pos: int, op_ia_curve_cst: Reference, o_tangency_norm: float,
                                         o_invert_value: int, o_crv_cst_type: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetPointConstraintFromCurve(long iPos,
                 | Reference opIACurveCst,
@@ -442,12 +466,14 @@ class HybridShapeSpline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_point_position(self, ip_ia_point: Reference) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPointPosition(Reference ipIAPoint) As long
                 | 
@@ -469,6 +495,8 @@ class HybridShapeSpline(HybridShape):
     def get_spline_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetSplineType() As long
                 | 
@@ -487,6 +515,8 @@ class HybridShapeSpline(HybridShape):
     def get_support(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetSupport() As Reference
                 | 
@@ -505,6 +535,8 @@ class HybridShapeSpline(HybridShape):
     def get_tangent_norm(self, i_pos: int) -> RealParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetTangentNorm(long iPos) As RealParam
                 | 
@@ -529,6 +561,8 @@ class HybridShapeSpline(HybridShape):
     def invert_direction(self, i_pos: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InvertDirection(long iPos)
                 | 
@@ -549,6 +583,8 @@ class HybridShapeSpline(HybridShape):
     def remove_all(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveAll()
                 | 
@@ -562,6 +598,8 @@ class HybridShapeSpline(HybridShape):
     def remove_control_point(self, i_pos: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveControlPoint(long iPos)
                 | 
@@ -581,6 +619,8 @@ class HybridShapeSpline(HybridShape):
     def remove_curvature_radius_direction(self, i_pos: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveCurvatureRadiusDirection(long iPos)
                 | 
@@ -602,6 +642,8 @@ class HybridShapeSpline(HybridShape):
     def remove_curvature_radius_value(self, i_pos: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveCurvatureRadiusValue(long iPos)
                 | 
@@ -623,6 +665,8 @@ class HybridShapeSpline(HybridShape):
     def remove_support(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveSupport()
                 | 
@@ -636,6 +680,8 @@ class HybridShapeSpline(HybridShape):
     def remove_tangent_direction(self, i_pos: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveTangentDirection(long iPos)
                 | 
@@ -657,6 +703,8 @@ class HybridShapeSpline(HybridShape):
     def remove_tension(self, i_pos: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveTension(long iPos)
                 | 
@@ -677,6 +725,8 @@ class HybridShapeSpline(HybridShape):
     def replace_point_at_position(self, i_pos: int, i_point: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ReplacePointAtPosition(long iPos,
                 | Reference iPoint)
@@ -709,12 +759,14 @@ class HybridShapeSpline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_closing(self, i_closing_type: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetClosing(long iClosingType)
                 | 
@@ -734,6 +786,8 @@ class HybridShapeSpline(HybridShape):
     def set_point_after(self, i_pos: int, ip_ia_point: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPointAfter(long iPos,
                 | Reference ipIAPoint)
@@ -766,12 +820,14 @@ class HybridShapeSpline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_point_before(self, i_pos: int, ip_ia_point: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPointBefore(long iPos,
                 | Reference ipIAPoint)
@@ -804,7 +860,7 @@ class HybridShapeSpline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_point_constraint_explicit(self, i_pos: int, ip_ia_dir_tangency: HybridShapeDirection,
@@ -812,6 +868,8 @@ class HybridShapeSpline(HybridShape):
                                       ip_ia_dir_curvature: HybridShapeDirection, i_curvature_radius: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPointConstraintExplicit(long iPos,
                 | HybridShapeDirection ipIADirTangency,
@@ -865,13 +923,15 @@ class HybridShapeSpline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_point_constraint_from_curve(self, i_pos: int, ip_ia_curve_cst: Reference, i_tangency_norm: float,
                                         i_invert_value: int, i_crv_cst_type: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPointConstraintFromCurve(long iPos,
                 | Reference ipIACurveCst,
@@ -920,12 +980,14 @@ class HybridShapeSpline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_spline_type(self, i_spline_type: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSplineType(long iSplineType)
                 | 
@@ -946,6 +1008,8 @@ class HybridShapeSpline(HybridShape):
     def set_support(self, i_support: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSupport(Reference iSupport)
                 | 
@@ -979,7 +1043,7 @@ class HybridShapeSpline(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

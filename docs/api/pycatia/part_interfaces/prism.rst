@@ -1,3 +1,5 @@
+.. _Prism:
+
 pycatia.part_interfaces.prism
 =============================
 

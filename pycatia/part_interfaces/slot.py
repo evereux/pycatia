@@ -15,6 +15,8 @@ from pycatia.part_interfaces.sweep import Sweep
 class Slot(Sweep):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown

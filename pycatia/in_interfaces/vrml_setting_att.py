@@ -15,6 +15,8 @@ from pycatia.system_interfaces.setting_controller import SettingController
 class VrmlSettingAtt(SettingController):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -40,6 +42,8 @@ class VrmlSettingAtt(SettingController):
     def export_edges(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExportEdges() As boolean
                 | 
@@ -72,6 +76,8 @@ class VrmlSettingAtt(SettingController):
     def export_normals(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExportNormals() As boolean
                 | 
@@ -104,6 +110,8 @@ class VrmlSettingAtt(SettingController):
     def export_texture(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExportTexture() As boolean
                 | 
@@ -136,6 +144,8 @@ class VrmlSettingAtt(SettingController):
     def export_texture_file(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExportTextureFile() As long
                 | 
@@ -169,6 +179,8 @@ class VrmlSettingAtt(SettingController):
     def export_texture_format(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExportTextureFormat() As long
                 | 
@@ -199,6 +211,8 @@ class VrmlSettingAtt(SettingController):
     def export_version(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExportVersion() As long
                 | 
@@ -231,6 +245,8 @@ class VrmlSettingAtt(SettingController):
     def import_crease_angle(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ImportCreaseAngle() As double
                 | 
@@ -266,6 +282,8 @@ class VrmlSettingAtt(SettingController):
     def import_unit(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ImportUnit() As long
                 | 
@@ -298,6 +316,8 @@ class VrmlSettingAtt(SettingController):
     def get_export_background_color(self, io_r: int, io_g: int, io_b: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetExportBackgroundColor(long ioR,
                 | long ioG,
@@ -319,6 +339,8 @@ class VrmlSettingAtt(SettingController):
     def get_export_background_color_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetExportBackgroundColorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -337,6 +359,8 @@ class VrmlSettingAtt(SettingController):
     def get_export_edges_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetExportEdgesInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -355,6 +379,8 @@ class VrmlSettingAtt(SettingController):
     def get_export_normals_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetExportNormalsInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -373,6 +399,8 @@ class VrmlSettingAtt(SettingController):
     def get_export_texture_file_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetExportTextureFileInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -391,6 +419,8 @@ class VrmlSettingAtt(SettingController):
     def get_export_texture_format_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetExportTextureFormatInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -409,6 +439,8 @@ class VrmlSettingAtt(SettingController):
     def get_export_texture_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetExportTextureInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -427,6 +459,8 @@ class VrmlSettingAtt(SettingController):
     def get_export_version_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetExportVersionInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -445,6 +479,8 @@ class VrmlSettingAtt(SettingController):
     def get_import_crease_angle_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetImportCreaseAngleInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -463,6 +499,8 @@ class VrmlSettingAtt(SettingController):
     def get_import_unit_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetImportUnitInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -481,6 +519,8 @@ class VrmlSettingAtt(SettingController):
     def set_export_background_color(self, i_r: int, i_g: int, i_b: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetExportBackgroundColor(long iR,
                 | long iG,
@@ -502,6 +542,8 @@ class VrmlSettingAtt(SettingController):
     def set_export_background_color_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetExportBackgroundColorLock(boolean iLocked)
                 | 
@@ -527,12 +569,14 @@ class VrmlSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_export_edges_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetExportEdgesLock(boolean iLocked)
                 | 
@@ -557,12 +601,14 @@ class VrmlSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_export_normals_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetExportNormalsLock(boolean iLocked)
                 | 
@@ -587,12 +633,14 @@ class VrmlSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_export_texture_file_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetExportTextureFileLock(boolean iLocked)
                 | 
@@ -617,12 +665,14 @@ class VrmlSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_export_texture_format_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetExportTextureFormatLock(boolean iLocked)
                 | 
@@ -648,12 +698,14 @@ class VrmlSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_export_texture_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetExportTextureLock(boolean iLocked)
                 | 
@@ -678,12 +730,14 @@ class VrmlSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_export_version_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetExportVersionLock(boolean iLocked)
                 | 
@@ -708,12 +762,14 @@ class VrmlSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_import_crease_angle_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetImportCreaseAngleLock(boolean iLocked)
                 | 
@@ -738,12 +794,14 @@ class VrmlSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_import_unit_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetImportUnitLock(boolean iLocked)
                 | 
@@ -768,7 +826,7 @@ class VrmlSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

@@ -18,6 +18,8 @@ class Solid(Shape):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -44,6 +46,8 @@ class Solid(Shape):
     def move(self) -> Move:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Move() As Move (Read Only)
                 | 
@@ -80,6 +84,8 @@ class Solid(Shape):
     def source_element(self) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SourceElement() As AnyObject (Read Only)
                 | 
@@ -102,6 +108,8 @@ class Solid(Shape):
     def source_product(self) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SourceProduct() As AnyObject (Read Only)
                 | 

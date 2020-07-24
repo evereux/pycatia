@@ -1,3 +1,5 @@
+.. _Hole:
+
 pycatia.part_interfaces.hole
 ============================
 

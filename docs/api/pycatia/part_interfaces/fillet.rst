@@ -1,3 +1,5 @@
+.. _Fillet:
+
 pycatia.part_interfaces.fillet
 ==============================
 

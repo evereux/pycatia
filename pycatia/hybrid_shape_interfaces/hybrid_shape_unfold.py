@@ -16,6 +16,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeUnfold(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -49,6 +51,8 @@ class HybridShapeUnfold(HybridShape):
     def direction_to_unfold(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DirectionToUnfold() As Reference
                 | 
@@ -72,6 +76,8 @@ class HybridShapeUnfold(HybridShape):
     def edge_to_tear_positioning_orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property EdgeToTearPositioningOrientation() As long
                 | 
@@ -100,6 +106,8 @@ class HybridShapeUnfold(HybridShape):
     def origin_to_unfold(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OriginToUnfold() As Reference
                 | 
@@ -123,6 +131,8 @@ class HybridShapeUnfold(HybridShape):
     def surface_to_unfold(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SurfaceToUnfold() As Reference
                 | 
@@ -148,6 +158,8 @@ class HybridShapeUnfold(HybridShape):
     def surface_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SurfaceType() As long
                 | 
@@ -175,6 +187,8 @@ class HybridShapeUnfold(HybridShape):
     def target_orientation_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TargetOrientationMode() As long
                 | 
@@ -208,6 +222,8 @@ class HybridShapeUnfold(HybridShape):
     def target_plane(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TargetPlane() As Reference
                 | 
@@ -231,6 +247,8 @@ class HybridShapeUnfold(HybridShape):
     def add_edge_to_tear(self, i_element: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddEdgeToTear(Reference iElement)
                 | 
@@ -269,12 +287,14 @@ class HybridShapeUnfold(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_element_to_transfer(self, i_element: Reference, i_type_of_transfer: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddElementToTransfer(Reference iElement,
                 | long iTypeOfTransfer)
@@ -311,12 +331,14 @@ class HybridShapeUnfold(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_edge_to_tear(self, i_rank: int) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetEdgeToTear(long iRank) As Reference
                 | 
@@ -344,6 +366,8 @@ class HybridShapeUnfold(HybridShape):
     def get_element_to_transfer(self, i_rank: int, op_element: Reference, o_type_of_transfer: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetElementToTransfer(long iRank,
                 | Reference opElement,
@@ -384,12 +408,14 @@ class HybridShapeUnfold(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def remove_edge_to_tear(self, i_rank: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveEdgeToTear(long iRank)
                 | 
@@ -416,6 +442,8 @@ class HybridShapeUnfold(HybridShape):
     def remove_element_to_transfer(self, i_rank: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveElementToTransfer(long iRank)
                 | 
@@ -435,6 +463,8 @@ class HybridShapeUnfold(HybridShape):
     def replace_elements_to_transfer(self, i_rank: int, i_element: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ReplaceElementsToTransfer(long iRank,
                 | Reference iElement)
@@ -467,7 +497,7 @@ class HybridShapeUnfold(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

@@ -18,6 +18,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class Clash(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -41,6 +43,8 @@ class Clash(AnyObject):
     def annotated_views(self) -> AnnotatedViews:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AnnotatedViews() As AnnotatedViews (Read Only)
                 | 
@@ -65,6 +69,8 @@ class Clash(AnyObject):
     def clearance(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Clearance() As double
                 | 
@@ -110,6 +116,8 @@ class Clash(AnyObject):
     def computation_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ComputationType() As CatClashComputationType
                 | 
@@ -152,6 +160,8 @@ class Clash(AnyObject):
     def conflicts(self) -> Conflicts:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Conflicts() As Conflicts (Read Only)
                 | 
@@ -176,6 +186,8 @@ class Clash(AnyObject):
     def first_group(self) -> Group:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstGroup() As Group
                 | 
@@ -219,6 +231,8 @@ class Clash(AnyObject):
     def interference_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property InterferenceType() As CatClashInterferenceType
                 | 
@@ -261,6 +275,8 @@ class Clash(AnyObject):
     def marker_3ds(self) -> Marker3Ds:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Marker3Ds() As Marker3Ds (Read Only)
                 | 
@@ -285,6 +301,8 @@ class Clash(AnyObject):
     def second_group(self) -> Group:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondGroup() As Group
                 | 
@@ -327,6 +345,8 @@ class Clash(AnyObject):
     def compute(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Compute()
                 | 
@@ -348,6 +368,8 @@ class Clash(AnyObject):
     def export(self, i_type: int, i_path: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Export(CatClashExportType iType,
                 | CATBSTR iPath)

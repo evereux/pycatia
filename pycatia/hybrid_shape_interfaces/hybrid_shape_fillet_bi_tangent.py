@@ -18,6 +18,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeFilletBiTangent(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -47,6 +49,8 @@ class HybridShapeFilletBiTangent(HybridShape):
     def conical_section_parameter(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ConicalSectionParameter() As double
                 | 
@@ -70,6 +74,8 @@ class HybridShapeFilletBiTangent(HybridShape):
     def first_elem(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstElem() As Reference
                 | 
@@ -93,6 +99,8 @@ class HybridShapeFilletBiTangent(HybridShape):
     def first_law_relimiter(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstLawRelimiter() As Reference
                 | 
@@ -124,6 +132,8 @@ class HybridShapeFilletBiTangent(HybridShape):
     def first_orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstOrientation() As long
                 | 
@@ -149,6 +159,8 @@ class HybridShapeFilletBiTangent(HybridShape):
     def hold_curve(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HoldCurve() As Reference
                 | 
@@ -163,7 +175,7 @@ class HybridShapeFilletBiTangent(HybridShape):
     @hold_curve.setter
     def hold_curve(self, reference_curve: Reference):
         """
-        :param Reference value:
+        :param Reference reference_curve:
         """
 
         self.hybrid_shape_fillet_bi_tangent.HoldCurve = reference_curve.com_object
@@ -172,6 +184,8 @@ class HybridShapeFilletBiTangent(HybridShape):
     def integrated_law(self) -> HybridShapeIntegratedLaw:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property IntegratedLaw() As HybridShapeIntegratedLaw
                 | 
@@ -205,6 +219,8 @@ class HybridShapeFilletBiTangent(HybridShape):
     def radius(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Radius() As Length (Read Only)
                 | 
@@ -220,6 +236,8 @@ class HybridShapeFilletBiTangent(HybridShape):
     def radius_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RadiusType() As long
                 | 
@@ -246,6 +264,8 @@ class HybridShapeFilletBiTangent(HybridShape):
     def radius_value(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RadiusValue() As double
                 | 
@@ -269,6 +289,8 @@ class HybridShapeFilletBiTangent(HybridShape):
     def ribbon_relimitation_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RibbonRelimitationMode() As long
                 | 
@@ -298,6 +320,8 @@ class HybridShapeFilletBiTangent(HybridShape):
     def second_elem(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondElem() As Reference
                 | 
@@ -321,6 +345,8 @@ class HybridShapeFilletBiTangent(HybridShape):
     def second_law_relimiter(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondLawRelimiter() As Reference
                 | 
@@ -352,6 +378,8 @@ class HybridShapeFilletBiTangent(HybridShape):
     def second_orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondOrientation() As long
                 | 
@@ -378,6 +406,8 @@ class HybridShapeFilletBiTangent(HybridShape):
     def section_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SectionType() As long
                 | 
@@ -404,6 +434,8 @@ class HybridShapeFilletBiTangent(HybridShape):
     def spine(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Spine() As Reference
                 | 
@@ -427,6 +459,8 @@ class HybridShapeFilletBiTangent(HybridShape):
     def supports_trim_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SupportsTrimMode() As long
                 | 
@@ -451,6 +485,8 @@ class HybridShapeFilletBiTangent(HybridShape):
     def append_new_face_to_keep(self, i_face: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AppendNewFaceToKeep(Reference iFace)
                 | 
@@ -478,12 +514,14 @@ class HybridShapeFilletBiTangent(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_face_to_keep(self, i_pos: int) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetFaceToKeep(long iPos) As Reference
                 | 
@@ -505,6 +543,8 @@ class HybridShapeFilletBiTangent(HybridShape):
     def invert_first_orientation(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InvertFirstOrientation()
                 | 
@@ -518,6 +558,8 @@ class HybridShapeFilletBiTangent(HybridShape):
     def invert_second_orientation(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InvertSecondOrientation()
                 | 
@@ -531,6 +573,8 @@ class HybridShapeFilletBiTangent(HybridShape):
     def remove_all_faces_to_keep(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveAllFacesToKeep()
                 | 
@@ -544,6 +588,8 @@ class HybridShapeFilletBiTangent(HybridShape):
     def remove_face_to_keep(self, i_face: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveFaceToKeep(Reference iFace)
                 | 
@@ -571,7 +617,7 @@ class HybridShapeFilletBiTangent(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

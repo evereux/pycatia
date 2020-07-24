@@ -17,6 +17,8 @@ class HybridShapeInstance(HybridShape):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class HybridShapeInstance(HybridShape):
     def inputs_count(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property InputsCount() As long (Read Only)
                 | 
@@ -60,6 +64,8 @@ class HybridShapeInstance(HybridShape):
     def outputs_count(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OutputsCount() As long (Read Only)
                 | 
@@ -81,6 +87,8 @@ class HybridShapeInstance(HybridShape):
     def parameters_count(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ParametersCount() As long (Read Only)
                 | 
@@ -101,6 +109,8 @@ class HybridShapeInstance(HybridShape):
     def get_input(self, i_index: str) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetInput(CATBSTR iIndex) As AnyObject
                 | 
@@ -131,6 +141,8 @@ class HybridShapeInstance(HybridShape):
     def get_input_data(self, i_name: str) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetInputData(CATBSTR iName) As CATBaseDispatch
                 | 
@@ -161,6 +173,8 @@ class HybridShapeInstance(HybridShape):
     def get_input_data_from_position(self, i_position: int) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetInputDataFromPosition(long iPosition) As
                 | CATBaseDispatch
@@ -192,6 +206,8 @@ class HybridShapeInstance(HybridShape):
     def get_input_from_position(self, i_position: int) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetInputFromPosition(long iPosition) As AnyObject
                 | 
@@ -222,6 +238,8 @@ class HybridShapeInstance(HybridShape):
     def get_output(self, i_name: str) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetOutput(CATBSTR iName) As AnyObject
                 | 
@@ -251,6 +269,8 @@ class HybridShapeInstance(HybridShape):
     def get_output_from_position(self, i_position: int) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetOutputFromPosition(long iPosition) As AnyObject
                 | 
@@ -280,6 +300,8 @@ class HybridShapeInstance(HybridShape):
     def get_parameter(self, i_name: str) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetParameter(CATBSTR iName) As AnyObject
                 | 
@@ -311,6 +333,8 @@ class HybridShapeInstance(HybridShape):
     def get_parameter_from_position(self, i_position: int) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetParameterFromPosition(long iPosition) As AnyObject
                 | 
@@ -342,6 +366,8 @@ class HybridShapeInstance(HybridShape):
     def put_input(self, i_index: str, i_input: AnyObject) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutInput(CATBSTR iIndex,
                 | AnyObject iInput)
@@ -374,6 +400,8 @@ class HybridShapeInstance(HybridShape):
     def put_input_data(self, i_name: str, i_input: AnyObject) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutInputData(CATBSTR iName,
                 | CATBaseDispatch iInput)

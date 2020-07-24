@@ -16,6 +16,8 @@ class PcsStatisticsSettingAtt(GeneralStatisticsSettingAtt):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
 
                 | System.IUnknown
@@ -44,6 +46,8 @@ class PcsStatisticsSettingAtt(GeneralStatisticsSettingAtt):
     def mem_use(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property MemUse() As boolean
                 | 

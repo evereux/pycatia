@@ -16,6 +16,8 @@ from pycatia.types import cat_variant
 class FreeParameters(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -36,6 +38,8 @@ class FreeParameters(Collection):
     def add_free_parameter(self, parameter: 'RealParam') -> FreeParameter:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddFreeParameter(RealParam parameter) As
                 | FreeParameter
@@ -51,6 +55,8 @@ class FreeParameters(Collection):
     def item(self, i_index: cat_variant) -> FreeParameter:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(CATVariant iIndex) As FreeParameter
                 | 
@@ -86,6 +92,8 @@ class FreeParameters(Collection):
     def remove_free_parameter(self, i_index: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveFreeParameter(CATVariant iIndex)
                 | 

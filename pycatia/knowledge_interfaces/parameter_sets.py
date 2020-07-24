@@ -16,6 +16,8 @@ from pycatia.types import cat_variant
 class ParameterSets(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -55,6 +57,8 @@ class ParameterSets(Collection):
     def create_set(self, i_name: str) -> ParameterSet:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateSet(CATBSTR iName) As ParameterSet
                 | 
@@ -70,6 +74,8 @@ class ParameterSets(Collection):
     def item(self, i_index: cat_variant) -> ParameterSet:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(CATVariant iIndex) As ParameterSet
                 | 

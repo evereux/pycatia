@@ -18,6 +18,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeExtrude(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -47,6 +49,8 @@ class HybridShapeExtrude(HybridShape):
     def begin_offset(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BeginOffset() As Length (Read Only)
                 | 
@@ -79,6 +83,8 @@ class HybridShapeExtrude(HybridShape):
     def context(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Context() As long
                 | 
@@ -116,6 +122,8 @@ class HybridShapeExtrude(HybridShape):
     def direction(self) -> HybridShapeDirection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Direction() As HybridShapeDirection
                 | 
@@ -153,6 +161,8 @@ class HybridShapeExtrude(HybridShape):
     def end_offset(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property EndOffset() As Length (Read Only)
                 | 
@@ -185,6 +195,8 @@ class HybridShapeExtrude(HybridShape):
     def extruded_object(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExtrudedObject() As Reference
                 | 
@@ -222,6 +234,8 @@ class HybridShapeExtrude(HybridShape):
     def first_limit_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstLimitType() As long
                 | 
@@ -262,6 +276,8 @@ class HybridShapeExtrude(HybridShape):
     def first_upto_element(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstUptoElement() As Reference
                 | 
@@ -293,6 +309,8 @@ class HybridShapeExtrude(HybridShape):
     def orientation(self) -> False:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation(boolean iOrientation)
                 | 
@@ -322,6 +340,8 @@ class HybridShapeExtrude(HybridShape):
     def second_limit_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondLimitType() As long
                 | 
@@ -362,6 +382,8 @@ class HybridShapeExtrude(HybridShape):
     def second_upto_element(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondUptoElement() As Reference
                 | 
@@ -393,6 +415,8 @@ class HybridShapeExtrude(HybridShape):
     def symmetrical_extension(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SymmetricalExtension() As boolean
                 | 

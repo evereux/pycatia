@@ -1,3 +1,5 @@
+.. _Part:
+
 pycatia.mec_mod_interfaces.part
 ===============================
 

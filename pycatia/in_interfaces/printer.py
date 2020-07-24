@@ -16,6 +16,8 @@ class Printer(AnyObject):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class Printer(AnyObject):
     def device_name(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DeviceName() As CATBSTR (Read Only)
                 | 
@@ -60,6 +64,8 @@ class Printer(AnyObject):
     def orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation() As CatPaperOrientation (Read Only)
                 | 
@@ -82,6 +88,8 @@ class Printer(AnyObject):
     def paper_height(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PaperHeight() As float (Read Only)
                 | 
@@ -104,6 +112,8 @@ class Printer(AnyObject):
     def paper_size(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PaperSize() As CatPaperSize (Read Only)
                 | 
@@ -126,6 +136,8 @@ class Printer(AnyObject):
     def paper_width(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PaperWidth() As float (Read Only)
                 | 

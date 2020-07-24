@@ -17,6 +17,8 @@ from pycatia.types import cat_variant
 class Bodies(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -37,6 +39,8 @@ class Bodies(Collection):
     def add(self) -> Body:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Add() As Body
                 | 
@@ -61,6 +65,8 @@ class Bodies(Collection):
     def item(self, i_index: cat_variant) -> Body:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(CATVariant iIndex) As Body
                 | 

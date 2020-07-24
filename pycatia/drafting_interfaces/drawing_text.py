@@ -17,6 +17,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class DrawingText(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class DrawingText(AnyObject):
     def anchor_position(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AnchorPosition() As CatTextAnchorPosition
                 | 
@@ -67,6 +71,8 @@ class DrawingText(AnyObject):
     def angle(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Angle() As double
                 | 
@@ -101,6 +107,8 @@ class DrawingText(AnyObject):
     def associative_element(self) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AssociativeElement() As CATBaseDispatch
                 | 
@@ -131,6 +139,8 @@ class DrawingText(AnyObject):
     def frame_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FrameType() As CatTextFrameType
                 | 
@@ -160,6 +170,8 @@ class DrawingText(AnyObject):
     def leaders(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Leaders() As DrawingLeaders (Read Only)
                 | 
@@ -182,6 +194,8 @@ class DrawingText(AnyObject):
     def text(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Text() As CATBSTR
                 | 
@@ -211,6 +225,8 @@ class DrawingText(AnyObject):
     def text_properties(self) -> DrawingTextProperties:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TextProperties() As DrawingTextProperties (Read
                 | Only)
@@ -236,6 +252,8 @@ class DrawingText(AnyObject):
     def wrapping_width(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property WrappingWidth() As double
                 | 
@@ -265,6 +283,8 @@ class DrawingText(AnyObject):
     def x(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property x() As double
                 | 
@@ -296,6 +316,8 @@ class DrawingText(AnyObject):
     def y(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property y() As double
                 | 
@@ -328,6 +350,8 @@ class DrawingText(AnyObject):
     def activate_frame(self, itype: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub ActivateFrame(CatTextFrameType itype)
                 | 
@@ -364,12 +388,14 @@ class DrawingText(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_font_name(self, i_first, inb_character):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetFontName(long iFirst,
                 | long inbCharacter) As CATBSTR
@@ -402,6 +428,8 @@ class DrawingText(AnyObject):
     def get_font_size(self, i_first: int, inb_character: int) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetFontSize(long iFirst,
                 | long inbCharacter) As double
@@ -434,6 +462,8 @@ class DrawingText(AnyObject):
     def get_modifiable_in_2d_component_instances(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetModifiableIn2DComponentInstances() As boolean
                 | 
@@ -454,6 +484,8 @@ class DrawingText(AnyObject):
     def get_parameter_on_sub_string(self, i_param: int, i_first: int, inb_character: int) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetParameterOnSubString(CatTextProperty iParam,
                 | long iFirst,
@@ -494,6 +526,8 @@ class DrawingText(AnyObject):
     def insert_variable(self, i_first: int, inb_character: int, ibase: AnyObject) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub InsertVariable(long iFirst,
                 | long inbCharacter,
@@ -534,6 +568,8 @@ class DrawingText(AnyObject):
     def set_font_name(self, i_first: int, inb_character: int, i_font_name: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetFontName(long iFirst,
                 | long inbCharacter,
@@ -569,6 +605,8 @@ class DrawingText(AnyObject):
     def set_font_size(self, i_first: int, inb_character: int, i_font_size: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetFontSize(long iFirst,
                 | long inbCharacter,
@@ -603,6 +641,8 @@ class DrawingText(AnyObject):
     def set_modifiable_in_2d_component_instances(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetModifiableIn2DComponentInstances()
                 | 
@@ -624,6 +664,8 @@ class DrawingText(AnyObject):
     def set_parameter_on_sub_string(self, i_param: int, i_first: int, inb_character: int, i_val: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetParameterOnSubString(CatTextProperty iParam,
                 | long iFirst,
@@ -676,7 +718,7 @@ class DrawingText(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

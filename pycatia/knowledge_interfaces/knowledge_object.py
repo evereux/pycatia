@@ -16,6 +16,8 @@ class KnowledgeObject(AnyObject):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -37,6 +39,8 @@ class KnowledgeObject(AnyObject):
     def hidden(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Hidden() As boolean
                 | 
@@ -60,6 +64,8 @@ class KnowledgeObject(AnyObject):
     def is_const(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property IsConst() As boolean
                 | 

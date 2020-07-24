@@ -18,6 +18,8 @@ from pycatia.system_interfaces.cat_base_dispatch import CATBaseDispatch
 class DrawingViewGenerativeBehavior(CATBaseDispatch):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -44,6 +46,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     def color_inheritance_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ColorInheritanceMode() As
                 | Cat3DColorInheritanceMode
@@ -80,6 +84,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     def document(self) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Document() As AnyObject
                 | 
@@ -119,6 +125,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     def fillet_representation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FilletRepresentation() As CatFilletRepresentation
                 | 
@@ -153,6 +161,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     def hidden_line_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property HiddenLineMode() As CatHiddenLineMode
                 | 
@@ -188,6 +198,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     def image_view_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ImageViewMode() As CatImageViewMode
                 | 
@@ -229,6 +241,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     def limit_bounding_box(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property LimitBoundingBox() As double
                 | 
@@ -260,6 +274,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     def parent_view(self) -> 'DrawingView':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ParentView() As DrawingView (Read Only)
                 | 
@@ -285,6 +301,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     def points_projection_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property PointsProjectionMode() As CatPointsProjectionMode
                 | 
@@ -320,6 +338,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     def points_symbol(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property PointsSymbol() As short
                 | 
@@ -344,6 +364,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     def representation_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property RepresentationMode() As CatRepresentationMode
                 | 
@@ -383,6 +405,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     def apply_breakout_to(self, i_parent_view: 'DrawingViewGenerativeBehavior') -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub ApplyBreakoutTo(DrawingViewGenerativeBehavior
                 | iParentView)
@@ -411,6 +435,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                               i_parent_view_generative_behavior: 'DrawingViewGenerativeBehavior') -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineAuxiliaryView(double iXStartPoint,
                 | double iYStartPoint,
@@ -473,13 +499,19 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :return: None
         :rtype: None
         """
-        return self.drawing_view_generative_behavior.DefineAuxiliaryView(i_x_start_point, i_y_start_point,
-                                                                         i_x_end_point, y_end_point, i_side_to_draw,
-                                                                         i_parent_view_generative_behavior.drawing_view_generative_behavior)
+        return self.drawing_view_generative_behavior. \
+            DefineAuxiliaryView(i_x_start_point,
+                                i_y_start_point,
+                                i_x_end_point,
+                                y_end_point,
+                                i_side_to_draw,
+                                i_parent_view_generative_behavior.drawing_view_generative_behavior)
 
     def define_box_3d_view(self, i_boxable_object: AnyObject) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineBox3DView(AnyObject iBoxableObject)
                 | 
@@ -501,6 +533,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     def define_breakout(self, i_profil: tuple, i_plane1: tuple, i_plane2: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineBreakout(CATSafeArrayVariant iProfil,
                 | CATSafeArrayVariant iPlane1,
@@ -544,12 +578,14 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def define_broken_view(self, i_broken_lines_extremities: tuple, i_x_direction: float, i_y_direction: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineBrokenView(CATSafeArrayVariant
                 | iBrokenLinesExtremities,
@@ -626,12 +662,14 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def define_circular_clipping_view(self, x_center: float, y_center: float, radius: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineCircularClippingView(double XCenter,
                 | double YCenter,
@@ -661,6 +699,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                                     i_parent_view_generative_behavior: 'DrawingViewGenerativeBehavior') -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineCircularDetailView(double iXCenter,
                 | double iYCenter,
@@ -723,12 +763,14 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def define_circular_exact_clipping_view(self, x_center: float, y_center: float, radius: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineCircularExactClippingView(double XCenter,
                 | double YCenter,
@@ -756,6 +798,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     def define_front_view(self, i_x1: float, i_y1: float, i_z1: float, i_x2: float, i_y2: float, i_z2: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineFrontView(double iX1,
                 | double iY1,
@@ -803,6 +847,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                               i_z2: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineIsometricView(double iX1,
                 | double iY1,
@@ -851,6 +897,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     def define_polygonal_clipping_view(self, profile: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefinePolygonalClippingView(CATSafeArrayVariant
                 | profil)
@@ -879,6 +927,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                                      ) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefinePolygonalDetailView(CATSafeArrayVariant
                 | iProfile,
@@ -940,6 +990,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     def define_polygonal_exact_clipping_view(self, profile: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefinePolygonalExactClippingView(CATSafeArrayVariant
                 | profil)
@@ -965,6 +1017,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                                i_type: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineProjectionView(DrawingViewGenerativeBehavior
                 | iParentViewGenerativeBehavior,
@@ -1005,6 +1059,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                             i_parent_view_generative_behavior: 'DrawingViewGenerativeBehavior') -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineSectionView(CATSafeArrayVariant iProfile,
                 | CATBSTR iSectionType,
@@ -1108,6 +1164,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                                    i_side: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineStandAloneSection(CATSafeArrayVariant profil,
                 | CATBSTR type_of_section,
@@ -1184,6 +1242,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                                 i_parent_view_generative_behavior: 'DrawingViewGenerativeBehavior') -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineTPSSectionView(CATSafeArrayVariant iProfile,
                 | CATBSTR iSectionType,
@@ -1282,6 +1342,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                              i_z2: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DefineUnfoldedView(double iX1,
                 | double iY1,
@@ -1328,6 +1390,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     def force_update(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub ForceUpdate()
                 | 
@@ -1348,6 +1412,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     def get_axis_system(self, o_product: AnyObject, o_axis_system: AnyObject) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetAxisSysteme(AnyObject oProduct,
                 | AnyObject oAxisSysteme)
@@ -1371,6 +1437,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     def get_gps_name(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetGPSName() As CATBSTR
                 | 
@@ -1405,6 +1473,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                              o_z2: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetProjectionPlane(double oX1,
                 | double oY1,
@@ -1449,6 +1519,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     def get_projection_plane_normal(self, o_x_normal: float, o_y_normal: float, o_z_normal: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetProjectionPlaneNormal(double oXNormal,
                 | double oYNormal,
@@ -1484,6 +1556,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     def set_axis_systeme(self, i_product: AnyObject, i_axis_systeme: AnyObject) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetAxisSysteme(AnyObject iProduct,
                 | AnyObject iAxisSysteme)
@@ -1507,6 +1581,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     def set_gps_name(self, i_gps_name: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetGPSName(CATBSTR iGPSName)
                 | 
@@ -1542,6 +1618,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                              i_z2: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetProjectionPlane(double iX1,
                 | double iY1,
@@ -1594,6 +1672,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     def un_break(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub UnBreak()
                 | 
@@ -1617,6 +1697,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     def un_breakout(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub UnBreakout()
                 | 
@@ -1640,6 +1722,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     def un_breakout_num(self, i_breakout_number: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub UnBreakoutNum(short iBreakoutNumber)
                 | 
@@ -1678,12 +1762,14 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def un_clip(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub UnClip()
                 | 
@@ -1706,6 +1792,8 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     def update(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Update()
                 | 

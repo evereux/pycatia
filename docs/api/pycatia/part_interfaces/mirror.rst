@@ -1,3 +1,5 @@
+.. _Mirror:
+
 pycatia.part_interfaces.mirror
 ==============================
 

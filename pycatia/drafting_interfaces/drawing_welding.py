@@ -18,6 +18,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class DrawingWelding(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class DrawingWelding(AnyObject):
     def angle(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Angle() As double
                 | 
@@ -73,6 +77,8 @@ class DrawingWelding(AnyObject):
     def identification_line_side(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property IdentificationLineSide() As CatWeldingSide
                 | 
@@ -105,6 +111,8 @@ class DrawingWelding(AnyObject):
     def leaders(self) -> DrawingLeaders:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Leaders() As DrawingLeaders (Read Only)
                 | 
@@ -128,6 +136,8 @@ class DrawingWelding(AnyObject):
     def text_properties(self) -> DrawingTextProperties:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TextProperties() As DrawingTextProperties (Read
                 | Only)
@@ -151,6 +161,8 @@ class DrawingWelding(AnyObject):
     def welding_side(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property WeldingSide() As CatWeldingSide
                 | 
@@ -180,6 +192,8 @@ class DrawingWelding(AnyObject):
     def welding_tail(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property WeldingTail() As CatDftWeldingTail
                 | 
@@ -209,6 +223,8 @@ class DrawingWelding(AnyObject):
     def x(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property x() As double
                 | 
@@ -240,6 +256,8 @@ class DrawingWelding(AnyObject):
     def y(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property y() As double
                 | 
@@ -272,6 +290,8 @@ class DrawingWelding(AnyObject):
     def get_additional_symbol(self, i_weld: int) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetAdditionalSymbol(CatWelding iWeld) As
                 | CatWeldAdditionalSymbol
@@ -298,6 +318,8 @@ class DrawingWelding(AnyObject):
     def get_finish_symbol(self, i_weld: int) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetFinishSymbol(CatWelding iWeld) As
                 | CatDftWeldFinishSymbol
@@ -324,6 +346,8 @@ class DrawingWelding(AnyObject):
     def get_symbol(self, i_weld: int) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetSymbol(CatWelding iWeld) As CatWeldingSymbol
                 | 
@@ -351,6 +375,8 @@ class DrawingWelding(AnyObject):
     def get_text_range(self, i_field: int) -> DrawingTextRange:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetTextRange(CatWeldingField iField) As
                 | DrawingTextRange
@@ -382,6 +408,8 @@ class DrawingWelding(AnyObject):
     def set_additional_symbol(self, i_symbol: int, i_weld: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetAdditionalSymbol(CatWeldAdditionalSymbol iSymbol,
                 | CatWelding iweld)
@@ -411,6 +439,8 @@ class DrawingWelding(AnyObject):
     def set_finish_symbol(self, i_finish_symbol: int, i_weld: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetFinishSymbol(CatDftWeldFinishSymbol iFinishSymbol,
                 | CatWelding iWeld)
@@ -441,6 +471,8 @@ class DrawingWelding(AnyObject):
     def set_symbol(self, i_symbol: int, i_weld: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetSymbol(CatWeldingSymbol iSymbol,
                 | CatWelding iweld)

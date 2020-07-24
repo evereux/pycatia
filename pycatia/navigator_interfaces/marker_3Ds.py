@@ -17,6 +17,8 @@ from pycatia.types import cat_variant
 class Marker3Ds(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -41,6 +43,8 @@ class Marker3Ds(Collection):
                     i_object: AnyObject) -> Marker3D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Add3DText(CATSafeArrayVariant iTextCoordinates,
                 | CATBSTR iText,
@@ -103,6 +107,8 @@ class Marker3Ds(Collection):
     def item(self, i_index: cat_variant) -> Marker3D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(CATVariant iIndex) As Marker3D
                 | 
@@ -142,6 +148,8 @@ class Marker3Ds(Collection):
     def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Remove(CATVariant iIndex)
                 | 
@@ -184,7 +192,7 @@ class Marker3Ds(Collection):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

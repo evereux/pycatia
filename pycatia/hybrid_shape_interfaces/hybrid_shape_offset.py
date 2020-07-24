@@ -17,6 +17,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeOffset(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -51,6 +53,8 @@ class HybridShapeOffset(HybridShape):
     def offset_direction(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OffsetDirection() As boolean
                 | 
@@ -76,6 +80,8 @@ class HybridShapeOffset(HybridShape):
     def offset_value(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OffsetValue() As Length
                 | 
@@ -99,6 +105,8 @@ class HybridShapeOffset(HybridShape):
     def offseted_object(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OffsetedObject() As Reference
                 | 
@@ -123,6 +131,8 @@ class HybridShapeOffset(HybridShape):
     def suppress_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SuppressMode() As boolean
                 | 
@@ -146,6 +156,8 @@ class HybridShapeOffset(HybridShape):
     def add_tricky_face(self, i_tricky_face: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddTrickyFace(Reference iTrickyFace)
                 | 
@@ -169,12 +181,14 @@ class HybridShapeOffset(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_tricky_face(self, i_rank: int) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetTrickyFace(long iRank) As Reference
                 | 
@@ -190,6 +204,8 @@ class HybridShapeOffset(HybridShape):
     def remove_tricky_face(self, i_rank: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveTrickyFace(long iRank)
                 | 
@@ -205,6 +221,8 @@ class HybridShapeOffset(HybridShape):
     def set_offset_value(self, i_offset: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetOffsetValue(double iOffset)
                 | 

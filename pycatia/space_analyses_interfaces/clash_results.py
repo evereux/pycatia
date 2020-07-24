@@ -16,6 +16,8 @@ from pycatia.types import cat_variant
 class ClashResults(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -43,6 +45,8 @@ class ClashResults(Collection):
     def add_from_xml(self, i_path: str, i_type: int) -> ClashResult:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddFromXML(CATBSTR iPath,
                 | CatClashImportType iType) As ClashResult
@@ -79,6 +83,8 @@ class ClashResults(Collection):
     def item(self, i_index: cat_variant) -> ClashResult:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(CATVariant iIndex) As ClashResult
                 | 
@@ -117,6 +123,8 @@ class ClashResults(Collection):
     def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Remove(CATVariant iIndex)
                 | 

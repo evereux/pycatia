@@ -16,6 +16,8 @@ from pycatia.types import cat_variant
 class Sections(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -40,6 +42,8 @@ class Sections(Collection):
     def add(self) -> Section:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add() As Section
                 | 
@@ -65,6 +69,8 @@ class Sections(Collection):
     def add_from_sel(self) -> Section:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddFromSel() As Section
                 | 
@@ -90,6 +96,8 @@ class Sections(Collection):
     def item(self, i_index: cat_variant) -> Section:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(CATVariant iIndex) As Section
                 | 
@@ -128,6 +136,8 @@ class Sections(Collection):
     def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Remove(CATVariant iIndex)
                 | 

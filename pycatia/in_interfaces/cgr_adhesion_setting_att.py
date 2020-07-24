@@ -16,6 +16,8 @@ class CgrAdhesionSettingAtt(SettingController):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class CgrAdhesionSettingAtt(SettingController):
     def v4_v5_fdt(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property V4V5_FDT() As boolean
                 | 
@@ -62,6 +66,8 @@ class CgrAdhesionSettingAtt(SettingController):
     def v4_model_comment_page(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property V4_Model_CommentPage() As boolean
                 | 
@@ -85,6 +91,8 @@ class CgrAdhesionSettingAtt(SettingController):
     def v4_model_ln_f(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property V4_Model_LnF() As boolean
                 | 
@@ -108,6 +116,8 @@ class CgrAdhesionSettingAtt(SettingController):
     def v5_spa(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property V5_SPA() As boolean
                 | 
@@ -131,6 +141,8 @@ class CgrAdhesionSettingAtt(SettingController):
     def voxels(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Voxels() As boolean
                 | 
@@ -153,6 +165,8 @@ class CgrAdhesionSettingAtt(SettingController):
     def get_v4_v5_fdt_info(self, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetV4V5_FDTInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -171,6 +185,8 @@ class CgrAdhesionSettingAtt(SettingController):
     def get_v4_model_comment_page_info(self, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetV4_Model_CommentPageInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -189,6 +205,8 @@ class CgrAdhesionSettingAtt(SettingController):
     def get_v4_model_ln_f_info(self, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetV4_Model_LnFInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -207,6 +225,8 @@ class CgrAdhesionSettingAtt(SettingController):
     def get_v5_spa_info(self, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetV5_SPAInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -225,6 +245,8 @@ class CgrAdhesionSettingAtt(SettingController):
     def get_voxels_info(self, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetVoxelsInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -243,6 +265,8 @@ class CgrAdhesionSettingAtt(SettingController):
     def set_v4_v5_fdt_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetV4V5_FDTLock(boolean iLocked)
                 | 
@@ -267,12 +291,14 @@ class CgrAdhesionSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_v4_model_comment_page_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetV4_Model_CommentPageLock(boolean iLocked)
                 | 
@@ -298,12 +324,14 @@ class CgrAdhesionSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_v4_model_ln_f_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetV4_Model_LnFLock(boolean iLocked)
                 | 
@@ -329,12 +357,14 @@ class CgrAdhesionSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_v5_spa_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetV5_SPALock(boolean iLocked)
                 | 
@@ -359,12 +389,14 @@ class CgrAdhesionSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_voxels_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetVoxelsLock(boolean iLocked)
                 | 
@@ -389,7 +421,7 @@ class CgrAdhesionSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

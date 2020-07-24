@@ -1,3 +1,5 @@
+.. _Hyperbola_2d:
+
 pycatia.sketcher_interfaces.hyperbola_2D
 ========================================
 

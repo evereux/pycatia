@@ -1,3 +1,5 @@
+.. _Move:
+
 pycatia.in_interfaces.move
 ==========================
 

@@ -1,3 +1,5 @@
+.. _Edge:
+
 pycatia.mec_mod_interfaces.edge
 ===============================
 

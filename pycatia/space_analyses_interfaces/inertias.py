@@ -17,6 +17,8 @@ from pycatia.types import cat_variant
 class Inertias(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -42,6 +44,8 @@ class Inertias(Collection):
     def add(self, i_object: AnyObject) -> Inertia:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Add(AnyObject iObject) As Inertia
                 | 
@@ -74,6 +78,8 @@ class Inertias(Collection):
     def item(self, i_index: cat_variant) -> Inertia:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(CATVariant iIndex) As Inertia
                 | 
@@ -112,6 +118,8 @@ class Inertias(Collection):
     def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Remove(CATVariant iIndex)
                 | 

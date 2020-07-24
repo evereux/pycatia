@@ -1,3 +1,5 @@
+.. _Solid_combine:
+
 pycatia.part_interfaces.solid_combine
 =====================================
 

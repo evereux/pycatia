@@ -16,6 +16,8 @@ from pycatia.system_interfaces.system_service import SystemService
 class Analyze(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -37,6 +39,8 @@ class Analyze(AnyObject):
     def mass(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Mass() As double (Read Only)
                 |
@@ -61,6 +65,8 @@ class Analyze(AnyObject):
     def volume(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Volume() As double (Read Only)
                 |
@@ -85,6 +91,8 @@ class Analyze(AnyObject):
     def wet_area(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property WetArea() As double (Read Only)
                 |
@@ -112,6 +120,8 @@ class Analyze(AnyObject):
     def get_gravity_center(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetGravityCenter(CATSafeArrayVariant
                 | oGravityCenterCoordinatesArray)
@@ -153,12 +163,14 @@ class Analyze(AnyObject):
         End Function
         """
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_inertia(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetInertia(CATSafeArrayVariant oInertiaMatrixArray)
                 |
@@ -208,7 +220,7 @@ class Analyze(AnyObject):
         End Function
         """
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

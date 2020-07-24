@@ -1,3 +1,5 @@
+.. _Distance:
+
 pycatia.space_analyses_interfaces.distance
 ==========================================
 

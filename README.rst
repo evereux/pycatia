@@ -1,4 +1,7 @@
 .. _pycatia.readthedocs.io: https://pycatia.readthedocs.io
+.. _installation: https://pycatia.readthedocs.io/en/latest/installation.html
+.. _introduction: https://pycatia.readthedocs.io/en/latest/introduction.html
+.. _examples: https://pycatia.readthedocs.io/en/latest/examples.html
 .. _pypi.org: https://pypi.org/project/pycatia/
 
 pycatia
@@ -50,35 +53,26 @@ Requirements
 Installation
 ------------
 
-with pip
-~~~~~~~~
-
-.. code-block:: python
-
-    pip install pycatia
-
-
-For more detailed instructions please refer to the installation instructions
-available at pycatia.readthedocs.io_.
+see installation_.
 
 
 Usage
 -----
 
-See the introduction and examples provided via the documentation link.
+See the introduction_ and examples_ provided via the documentation link.
 
 
 Links
 -----
 
-Documentation: pycatia.readthedocs.io_.
-
 Releases: pycatia @ pypi.org_
+
 
 Examples
 --------
 
-See the documentation @ pycatia.readthedocs.io_.
+See the documentation @ examples_.
+
 
 Asking Questions
 ----------------
@@ -147,9 +141,12 @@ A reminder for @evereux. I don't do this often and forget ...
 
 * Check version is correct.
 
-* Build source. `python3 setup.py sdist bdist_wheel`
+* Build source. ``python setup.py sdist bdist_wheel``
    * Check source contents.
+
+* Build pycatia exe ``python -m nuitka --standalone pycatia.py``.
+  * copy build to win_32 folder and zip.
 
 * Merge changes with master branch and upload.
 
-* Upload to pypi. `twine upload dist/*`.
+* Upload to pypi. ``twine upload dist/*``.

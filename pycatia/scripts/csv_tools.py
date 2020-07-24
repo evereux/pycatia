@@ -4,6 +4,8 @@ import csv
 import os
 import time
 
+from pycatia.mec_mod_interfaces.part import Part
+
 unit_conversion = {
     'mm': 1,
     'cm': 10,
@@ -14,7 +16,7 @@ unit_conversion = {
 }
 
 
-def convert_units(number, unit):
+def convert_units(number: float, unit: str) -> float:
     """
 
     Convert input 'length' from unit to millimeters.
@@ -35,7 +37,7 @@ def convert_units(number, unit):
         raise KeyError(f'Unit {unit} is not currently supported.')
 
 
-def csv_reader(file_name, units, delimiter=','):
+def csv_reader(file_name: str, units, delimiter: str = ',') -> list:
     """
     | Reads contents of csv file and returns a generator object containing tuples in the format:
     | [
@@ -59,15 +61,14 @@ def csv_reader(file_name, units, delimiter=','):
     with open(file_name) as file:
         csv_file = csv.reader(file, delimiter=delimiter)
         for line in csv_file:
-            point = {}
-            point['name'] = line[0]
-            point['x'] = convert_units(line[1], units)
-            point['y'] = convert_units(line[2], units)
-            point['z'] = convert_units(line[3], units)
+            point = {'name': line[0],
+                     'x': convert_units(line[1], units),
+                     'y': convert_units(line[2], units),
+                     'z': convert_units(line[3], units)}
             yield point
 
 
-def create_points(part, file_name, units='mm', geometry_set_name='New_Points'):
+def create_points(part: Part, file_name: str, units: str = 'mm', geometry_set_name: str = 'New_Points') -> None:
     """
     Parses a csv file in the format defined in :func:`~csv_reader` and populates the geometry_set_name with new
     points. Once complete the part is updated.

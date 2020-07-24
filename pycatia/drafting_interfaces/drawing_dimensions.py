@@ -17,6 +17,8 @@ from pycatia.types import cat_variant
 class DrawingDimensions(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class DrawingDimensions(Collection):
     def add(self, i_type_dim: int, i_geom_elem: tuple, i_pt_coord_elem: tuple, i_line_rep: int) -> DrawingDimension:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add(CatDimType iTypeDim,
                 | CATSafeArrayVariant iGeomElem,
@@ -121,6 +125,8 @@ class DrawingDimensions(Collection):
              i_ldc_ref_angle: int) -> DrawingDimension:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add2(CatDimType iTypeDim,
                 | CATSafeArrayVariant iGeomElem,
@@ -199,6 +205,8 @@ class DrawingDimensions(Collection):
     def item(self, i_index: cat_variant) -> DrawingDimension:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(CATVariant iIndex) As DrawingDimension
                 | 
@@ -245,6 +253,8 @@ class DrawingDimensions(Collection):
     def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(CATVariant iIndex)
                 | 

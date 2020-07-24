@@ -17,6 +17,8 @@ class UserRepartition(Repartition):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -42,6 +44,8 @@ class UserRepartition(Repartition):
     def feature_to_locate_positions(self) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FeatureToLocatePositions() As AnyObject (Read
                 | Only)
@@ -63,6 +67,8 @@ class UserRepartition(Repartition):
     def add_feature_to_locate_positions(self, i_feature_to_locate_positions: AnyObject) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddFeatureToLocatePositions(AnyObject
                 | iFeatureToLocatePositions)

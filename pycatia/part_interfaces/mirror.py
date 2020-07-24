@@ -18,6 +18,8 @@ class Mirror(TransformationShape):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -43,6 +45,8 @@ class Mirror(TransformationShape):
     def mirroring_object(self) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MirroringObject() As AnyObject (Read Only)
                 | 
@@ -58,6 +62,8 @@ class Mirror(TransformationShape):
     def mirroring_plane(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MirroringPlane() As Reference
                 | 

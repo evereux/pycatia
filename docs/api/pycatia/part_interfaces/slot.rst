@@ -1,3 +1,5 @@
+.. _Slot:
+
 pycatia.part_interfaces.slot
 ============================
 

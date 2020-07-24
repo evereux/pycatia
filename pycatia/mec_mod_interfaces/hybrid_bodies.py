@@ -9,6 +9,9 @@
         
 """
 
+from pywintypes import com_error
+
+from pycatia.exception_handling.exceptions import CATIAApplicationException
 from pycatia.mec_mod_interfaces.hybrid_body import HybridBody
 from pycatia.system_interfaces.collection import Collection
 from pycatia.types import cat_variant
@@ -17,6 +20,8 @@ from pycatia.types import cat_variant
 class HybridBodies(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +43,8 @@ class HybridBodies(Collection):
     def add(self) -> HybridBody:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add() As HybridBody
                 | 
@@ -61,6 +68,8 @@ class HybridBodies(Collection):
     def item(self, i_index: cat_variant) -> HybridBody:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(CATVariant iIndex) As HybridBody
                 | 
@@ -93,7 +102,10 @@ class HybridBodies(Collection):
         :return: HybridBody
         :rtype: HybridBody
         """
-        return HybridBody(self.hybrid_bodies.Item(i_index))
+        try:
+            return HybridBody(self.hybrid_bodies.Item(i_index))
+        except com_error:
+            raise CATIAApplicationException(f'Could not find hybrid_body "i_index"')
 
     def __repr__(self):
         return f'HybridBodies(name="{self.name}")'

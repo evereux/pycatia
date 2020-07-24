@@ -16,6 +16,8 @@ from pycatia.system_interfaces.collection import Collection
 class DrawingThreads(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class DrawingThreads(Collection):
     def add(self, i_geom_elem) -> DrawingThread:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add(CATBaseDispatch iGeomElem) As DrawingThread
                 | 
@@ -72,6 +76,8 @@ class DrawingThreads(Collection):
     def item(self, i_index: int) -> DrawingThread:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(long iIndex) As DrawingThread
                 | 
@@ -108,6 +114,8 @@ class DrawingThreads(Collection):
     def remove(self, i_index: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(long iIndex)
                 | 

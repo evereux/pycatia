@@ -17,6 +17,8 @@ class ThickSurface(SurfaceBasedShape):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -44,6 +46,8 @@ class ThickSurface(SurfaceBasedShape):
     def bot_offset(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BotOffset() As Length (Read Only)
                 | 
@@ -65,6 +69,8 @@ class ThickSurface(SurfaceBasedShape):
     def offset_side(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OffsetSide() As long (Read Only)
                 | 
@@ -87,6 +93,8 @@ class ThickSurface(SurfaceBasedShape):
     def top_offset(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TopOffset() As Length (Read Only)
                 | 
@@ -107,6 +115,8 @@ class ThickSurface(SurfaceBasedShape):
     def swap_offset_side(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub swap_OffsetSide()
                 | 

@@ -18,6 +18,8 @@ class Limit(AnyObject):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -42,6 +44,8 @@ class Limit(AnyObject):
     def dimension(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Dimension() As Length (Read Only)
                 | 
@@ -58,6 +62,8 @@ class Limit(AnyObject):
     def limit_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LimitMode() As CatLimitMode
                 | 
@@ -81,6 +87,8 @@ class Limit(AnyObject):
     def limiting_element(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LimitingElement() As Reference
                 | 

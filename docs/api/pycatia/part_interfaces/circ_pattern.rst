@@ -1,3 +1,5 @@
+.. _Circ_pattern:
+
 pycatia.part_interfaces.circ_pattern
 ====================================
 

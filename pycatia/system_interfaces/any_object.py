@@ -15,6 +15,8 @@ from pycatia.base_interfaces.pycatia import PyCATIA
 class AnyObject(PyCATIA):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
 
                 | System.IUnknown
@@ -35,9 +37,11 @@ class AnyObject(PyCATIA):
         self.com_object = com_object
 
     @property
-    def application(self) -> 'com_object':
+    def application(self) -> 'Application':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property Application() As Application (Read Only)
                 |
@@ -67,12 +71,15 @@ class AnyObject(PyCATIA):
         :return: com_object
         :rtype: com_object
         """
-        return self.com_object.Application
+        from pycatia.in_interfaces.application import Application
+        return Application(self.com_object.Application)
 
     @property
     def name(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property Name() As CATBSTR
                 |
@@ -113,6 +120,8 @@ class AnyObject(PyCATIA):
     def parent(self) -> 'AnyObject':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property Parent() As CATBaseDispatch (Read Only)
                 |
@@ -140,6 +149,8 @@ class AnyObject(PyCATIA):
     def get_item(self, id_name: str) -> 'AnyObject':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetItem(CATBSTR IDName) As CATBaseDispatch
                 |

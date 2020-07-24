@@ -1,3 +1,5 @@
+.. _Check:
+
 pycatia.knowledge_interfaces.check
 ==================================
 

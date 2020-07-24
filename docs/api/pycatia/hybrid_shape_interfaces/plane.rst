@@ -1,3 +1,5 @@
+.. _Plane:
+
 pycatia.hybrid_shape_interfaces.plane
 =====================================
 

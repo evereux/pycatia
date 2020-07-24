@@ -16,6 +16,8 @@ class SettingController(AnyObject):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
 
                 | System.IUnknown
@@ -138,6 +140,8 @@ class SettingController(AnyObject):
     def commit(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub Commit()
                 | 
@@ -154,6 +158,8 @@ class SettingController(AnyObject):
     def reset_to_admin_values(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub ResetToAdminValues()
                 | 
@@ -170,6 +176,8 @@ class SettingController(AnyObject):
     def reset_to_admin_values_by_name(self, i_att_list):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub ResetToAdminValuesByName(CATSafeArrayVariant iAttList)
                 | 
@@ -203,12 +211,14 @@ class SettingController(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def rollback(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub Rollback()
                 | 
@@ -226,6 +236,8 @@ class SettingController(AnyObject):
     def save_repository(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SaveRepository()
                 | 

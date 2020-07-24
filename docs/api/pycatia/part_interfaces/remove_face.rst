@@ -1,3 +1,5 @@
+.. _Remove_face:
+
 pycatia.part_interfaces.remove_face
 ===================================
 

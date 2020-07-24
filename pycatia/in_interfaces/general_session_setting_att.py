@@ -16,6 +16,8 @@ class GeneralSessionSettingAtt(SettingController):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -40,6 +42,8 @@ class GeneralSessionSettingAtt(SettingController):
     def auto_save(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AutoSave() As CATGenDataSave
                 | 
@@ -63,6 +67,8 @@ class GeneralSessionSettingAtt(SettingController):
     def conferencing(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Conferencing() As CATGenConferencing
                 | 
@@ -86,6 +92,8 @@ class GeneralSessionSettingAtt(SettingController):
     def drag_drop(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DragDrop() As boolean
                 | 
@@ -109,6 +117,8 @@ class GeneralSessionSettingAtt(SettingController):
     def ref_doc(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RefDoc() As boolean
                 | 
@@ -132,6 +142,8 @@ class GeneralSessionSettingAtt(SettingController):
     def time_roll(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TimeRoll() As long
                 | 
@@ -155,6 +167,8 @@ class GeneralSessionSettingAtt(SettingController):
     def ui_style(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property UIStyle() As CATGenUIStyle
                 | 
@@ -177,6 +191,8 @@ class GeneralSessionSettingAtt(SettingController):
     def get_auto_save_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetAutoSaveInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -212,6 +228,8 @@ class GeneralSessionSettingAtt(SettingController):
     def get_conferencing_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetConferencingInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -247,6 +265,8 @@ class GeneralSessionSettingAtt(SettingController):
     def get_drag_drop_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDragDropInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -282,6 +302,8 @@ class GeneralSessionSettingAtt(SettingController):
     def get_ref_doc_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetRefDocInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -317,6 +339,8 @@ class GeneralSessionSettingAtt(SettingController):
     def get_ui_style_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetUIStyleInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -352,6 +376,8 @@ class GeneralSessionSettingAtt(SettingController):
     def set_auto_save_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAutoSaveLock(boolean iLocked)
                 | 
@@ -386,12 +412,14 @@ class GeneralSessionSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_conferencing_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetConferencingLock(boolean iLocked)
                 | 
@@ -426,12 +454,14 @@ class GeneralSessionSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_drag_drop_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDragDropLock(boolean iLocked)
                 | 
@@ -466,12 +496,14 @@ class GeneralSessionSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_ref_doc_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetRefDocLock(boolean iLocked)
                 | 
@@ -506,12 +538,14 @@ class GeneralSessionSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_ui_style_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetUIStyleLock(boolean iLocked)
                 | 
@@ -546,7 +580,7 @@ class GeneralSessionSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

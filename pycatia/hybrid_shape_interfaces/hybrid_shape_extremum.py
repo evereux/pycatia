@@ -18,6 +18,8 @@ class HybridShapeExtremum(HybridShape):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -52,6 +54,8 @@ class HybridShapeExtremum(HybridShape):
     def direction(self) -> HybridShapeDirection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Direction() As HybridShapeDirection
                 | 
@@ -75,6 +79,8 @@ class HybridShapeExtremum(HybridShape):
     def direction2(self) -> HybridShapeDirection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Direction2() As HybridShapeDirection
                 | 
@@ -98,6 +104,8 @@ class HybridShapeExtremum(HybridShape):
     def direction3(self) -> HybridShapeDirection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Direction3() As HybridShapeDirection
                 | 
@@ -121,6 +129,8 @@ class HybridShapeExtremum(HybridShape):
     def extremum_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExtremumType() As long
                 | 
@@ -145,6 +155,8 @@ class HybridShapeExtremum(HybridShape):
     def extremum_type2(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExtremumType2() As long
                 | 
@@ -169,6 +181,8 @@ class HybridShapeExtremum(HybridShape):
     def extremum_type3(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExtremumType3() As long
                 | 
@@ -193,6 +207,8 @@ class HybridShapeExtremum(HybridShape):
     def reference_element(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ReferenceElement() As Reference
                 | 

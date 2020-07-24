@@ -17,6 +17,8 @@ from pycatia.knowledge_interfaces.length import Length
 class HybridShapePointCoord(Point):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -49,6 +51,8 @@ class HybridShapePointCoord(Point):
     def pt_ref(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PtRef() As Reference
                 | 
@@ -86,6 +90,8 @@ class HybridShapePointCoord(Point):
     def ref_axis_system(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RefAxisSystem() As Reference
                 | 
@@ -124,6 +130,8 @@ class HybridShapePointCoord(Point):
     def x(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property X() As Length (Read Only)
                 | 
@@ -147,6 +155,8 @@ class HybridShapePointCoord(Point):
     def y(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Y() As Length (Read Only)
                 | 
@@ -170,6 +180,8 @@ class HybridShapePointCoord(Point):
     def z(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Z() As Length (Read Only)
                 | 

@@ -1,3 +1,5 @@
+.. _Errorlog_statistics_setting_att:
+
 pycatia.system_interfaces.errorlog_statistics_setting_att
 =========================================================
 
