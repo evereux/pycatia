@@ -17,6 +17,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeLoft(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -60,6 +62,8 @@ class HybridShapeLoft(HybridShape):
     def area_law(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AreaLaw() As Reference
                 | 
@@ -84,6 +88,8 @@ class HybridShapeLoft(HybridShape):
     def area_law_tolerance(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AreaLawTolerance() As double
                 | 
@@ -107,6 +113,8 @@ class HybridShapeLoft(HybridShape):
     def boolean_operation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BooleanOperation() As long
                 | 
@@ -136,6 +144,8 @@ class HybridShapeLoft(HybridShape):
     def canonical_detection(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CanonicalDetection() As long
                 | 
@@ -168,6 +178,8 @@ class HybridShapeLoft(HybridShape):
     def comp_end_section_tangent(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CompEndSectionTangent() As long
                 | 
@@ -198,6 +210,8 @@ class HybridShapeLoft(HybridShape):
     def comp_start_section_tangent(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CompStartSectionTangent() As long
                 | 
@@ -228,6 +242,8 @@ class HybridShapeLoft(HybridShape):
     def context(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Context() As long
                 | 
@@ -265,6 +281,8 @@ class HybridShapeLoft(HybridShape):
     def relimitation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Relimitation() As long
                 | 
@@ -329,6 +347,8 @@ class HybridShapeLoft(HybridShape):
     def section_coupling(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SectionCoupling() As long
                 | 
@@ -370,6 +390,8 @@ class HybridShapeLoft(HybridShape):
     def smooth_angle_threshold(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SmoothAngleThreshold() As double
                 | 
@@ -394,6 +416,8 @@ class HybridShapeLoft(HybridShape):
     def smooth_angle_threshold_activity(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SmoothAngleThresholdActivity() As boolean
                 | 
@@ -426,6 +450,8 @@ class HybridShapeLoft(HybridShape):
     def smooth_deviation(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SmoothDeviation() As double
                 | 
@@ -450,6 +476,8 @@ class HybridShapeLoft(HybridShape):
     def smooth_deviation_activity(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SmoothDeviationActivity() As boolean
                 | 
@@ -481,6 +509,8 @@ class HybridShapeLoft(HybridShape):
     def add_guide(self, i_guide: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddGuide(Reference iGuide)
                 | 
@@ -513,12 +543,14 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_guide_with_tangent(self, i_guide: Reference, i_tangent: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddGuideWithTangent(Reference iGuide,
                 | Reference iTangent)
@@ -559,12 +591,14 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_section_to_loft(self, i_crv: Reference, i_ori: int, i_point: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddSectionToLoft(Reference iCrv,
                 | long iOri,
@@ -601,12 +635,14 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_area_law_tolerance_parameter(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetAreaLawToleranceParameter() As Length
                 | 
@@ -620,6 +656,8 @@ class HybridShapeLoft(HybridShape):
     def get_faces_for_closing(self, o_start_face: Reference, o_end_face: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetFacesForClosing(Reference oStartFace,
                 | Reference oEndFace)
@@ -654,12 +692,14 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_guide(self, i_pos: int, o_guide: Reference, o_guide_tangent: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetGuide(long iPos,
                 | Reference oGuide,
@@ -698,12 +738,14 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_nb_of_guides(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNbOfGuides() As long
                 | 
@@ -729,6 +771,8 @@ class HybridShapeLoft(HybridShape):
     def get_section_from_loft(self, i_rank: int, o_crv: Reference, o_ori: int, o_point: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetSectionFromLoft(long iRank,
                 | Reference oCrv,
@@ -769,12 +813,14 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_spine(self, o_spine_type: int, o_spine: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetSpine(long oSpineType,
                 | Reference oSpine)
@@ -808,13 +854,15 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_start_and_end_section_tangent(self, o_start_section_tangent: Reference,
                                           o_end_section_tangent: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetStartAndEndSectionTangent(Reference
                 | oStartSectionTangent,
@@ -850,12 +898,14 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def insert_coupling(self, i_position: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InsertCoupling(long iPosition)
                 | 
@@ -880,6 +930,8 @@ class HybridShapeLoft(HybridShape):
     def insert_coupling_point(self, i_coupling_index: int, i_position: int, i_point: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InsertCouplingPoint(long iCouplingIndex,
                 | long iPosition,
@@ -924,13 +976,15 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def insert_section_to_loft(self, i_type: bool, i_crv: Reference, i_ori: int, i_point: Reference,
                                i_section_ref: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InsertSectionToLoft(boolean iType,
                 | Reference iCrv,
@@ -978,12 +1032,14 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def modify_guide_curve(self, i_guide: Reference, i_new_guide: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ModifyGuideCurve(Reference iGuide,
                 | Reference iNewGuide)
@@ -1016,13 +1072,15 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def modify_section_curve(self, i_section: Reference, i_new_section: Reference, o_curve_section: Reference,
                              o_closing_point: Reference, o_pt_diag: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ModifySectionCurve(Reference iSection,
                 | Reference iNewSection,
@@ -1078,12 +1136,14 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def modify_section_orient(self, i_section: Reference, i_orient: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ModifySectionOrient(Reference iSection,
                 | long iOrient)
@@ -1120,12 +1180,14 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def remove_face_for_closing(self, i_section: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveFaceForClosing(Reference iSection)
                 | 
@@ -1154,12 +1216,14 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def remove_guide(self, i_guide: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveGuide(Reference iGuide)
                 | 
@@ -1192,12 +1256,14 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def remove_guide_tangent(self, i_guide: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveGuideTangent(Reference iGuide)
                 | 
@@ -1228,12 +1294,14 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def remove_section(self, i_section: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveSection(Reference iSection)
                 | 
@@ -1266,12 +1334,14 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def remove_section_point(self, i_section: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveSectionPoint(Reference iSection)
                 | 
@@ -1302,12 +1372,14 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def remove_section_tangent(self, i_section: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveSectionTangent(Reference iSection)
                 | 
@@ -1339,12 +1411,14 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_end_face_for_closing(self, i_face: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetEndFaceForClosing(Reference iFace)
                 | 
@@ -1376,12 +1450,14 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_end_section_tangent(self, i_tangent_section: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetEndSectionTangent(Reference iTangentSection)
                 | 
@@ -1415,12 +1491,14 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_spine(self, i_spine: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSpine(Reference iSpine)
                 | 
@@ -1452,12 +1530,14 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_start_face_for_closing(self, i_face: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetStartFaceForClosing(Reference iFace)
                 | 
@@ -1489,12 +1569,14 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_start_section_tangent(self, i_tangent_section: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetStartSectionTangent(Reference iTangentSection)
                 | 
@@ -1528,7 +1610,7 @@ class HybridShapeLoft(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

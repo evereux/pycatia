@@ -17,6 +17,8 @@ class HybridShapeFilletTriTangent(HybridShape):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -46,6 +48,8 @@ class HybridShapeFilletTriTangent(HybridShape):
     def first_elem(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstElem() As Reference
                 | 
@@ -76,6 +80,8 @@ class HybridShapeFilletTriTangent(HybridShape):
     def first_orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstOrientation() As long
                 | 
@@ -102,6 +108,8 @@ class HybridShapeFilletTriTangent(HybridShape):
     def remove_elem(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RemoveElem() As Reference
                 | 
@@ -125,6 +133,8 @@ class HybridShapeFilletTriTangent(HybridShape):
     def remove_orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RemoveOrientation() As long
                 | 
@@ -151,6 +161,8 @@ class HybridShapeFilletTriTangent(HybridShape):
     def ribbon_relimitation_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RibbonRelimitationMode() As long
                 | 
@@ -176,6 +188,8 @@ class HybridShapeFilletTriTangent(HybridShape):
     def second_elem(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondElem() As Reference
                 | 
@@ -212,6 +226,8 @@ class HybridShapeFilletTriTangent(HybridShape):
     def second_orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondOrientation() As long
                 | 
@@ -238,6 +254,8 @@ class HybridShapeFilletTriTangent(HybridShape):
     def supports_trim_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SupportsTrimMode() As long
                 | 
@@ -264,6 +282,8 @@ class HybridShapeFilletTriTangent(HybridShape):
     def invert_first_orientation(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InvertFirstOrientation()
                 | 
@@ -277,6 +297,8 @@ class HybridShapeFilletTriTangent(HybridShape):
     def invert_remove_orientation(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InvertRemoveOrientation()
                 | 
@@ -290,6 +312,8 @@ class HybridShapeFilletTriTangent(HybridShape):
     def invert_second_orientation(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InvertSecondOrientation()
                 | 

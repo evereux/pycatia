@@ -27,6 +27,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class DrawingView(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -54,6 +56,8 @@ class DrawingView(AnyObject):
     def angle(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Angle() As double
                 | 
@@ -91,6 +95,8 @@ class DrawingView(AnyObject):
     def arrows(self) -> DrawingArrows:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Arrows() As DrawingArrows (Read Only)
                 | 
@@ -115,6 +121,8 @@ class DrawingView(AnyObject):
     def components(self) -> DrawingComponents:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Components() As DrawingComponents (Read Only)
                 | 
@@ -140,6 +148,8 @@ class DrawingView(AnyObject):
     def dimensions(self) -> DrawingDimensions:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Dimensions() As DrawingDimensions (Read Only)
                 | 
@@ -165,6 +175,8 @@ class DrawingView(AnyObject):
     def factory_2d(self) -> Factory2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Factory2D() As Factory2D (Read Only)
                 | 
@@ -195,6 +207,8 @@ class DrawingView(AnyObject):
     def frame_visualization(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FrameVisualization() As boolean
                 | 
@@ -228,6 +242,8 @@ class DrawingView(AnyObject):
     def generative_behavior(self) -> DrawingViewGenerativeBehavior:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property GenerativeBehavior() As DrawingViewGenerativeBehavior (Read
                 | Only)
@@ -254,6 +270,8 @@ class DrawingView(AnyObject):
     def generative_links(self) -> DrawingViewGenerativeLinks:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property GenerativeLinks() As DrawingViewGenerativeLinks (Read
                 | Only)
@@ -279,6 +297,8 @@ class DrawingView(AnyObject):
     def geometric_elements(self) -> GeometricElements:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property GeometricElements() As GeometricElements (Read
                 | Only)
@@ -305,6 +325,8 @@ class DrawingView(AnyObject):
     def lock_status(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property LockStatus() As boolean
                 | 
@@ -337,6 +359,8 @@ class DrawingView(AnyObject):
     def pictures(self) -> DrawingPictures:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Pictures() As DrawingPictures (Read Only)
                 | 
@@ -362,6 +386,8 @@ class DrawingView(AnyObject):
     def reference_view(self) -> 'DrawingView':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ReferenceView() As DrawingView
                 | 
@@ -407,6 +433,8 @@ class DrawingView(AnyObject):
     def scale(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Scale() As double
                 | 
@@ -438,6 +466,8 @@ class DrawingView(AnyObject):
     def scale2(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Scale2() As double
                 | 
@@ -470,6 +500,8 @@ class DrawingView(AnyObject):
     def tables(self) -> DrawingTables:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Tables() As DrawingTables (Read Only)
                 | 
@@ -494,6 +526,8 @@ class DrawingView(AnyObject):
     def texts(self) -> DrawingTexts:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Texts() As DrawingTexts (Read Only)
                 | 
@@ -518,6 +552,8 @@ class DrawingView(AnyObject):
     def threads(self) -> DrawingThreads:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Threads() As DrawingThreads (Read Only)
                 | 
@@ -542,6 +578,8 @@ class DrawingView(AnyObject):
     def view_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ViewType() As CatDrawingViewType (Read Only)
                 | 
@@ -558,6 +596,8 @@ class DrawingView(AnyObject):
     def weldings(self) -> DrawingWeldings:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Weldings() As DrawingWeldings (Read Only)
                 | 
@@ -583,6 +623,8 @@ class DrawingView(AnyObject):
     def x(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property x() As double
                 | 
@@ -618,6 +660,8 @@ class DrawingView(AnyObject):
     def x_axis_data(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property xAxisData() As double
                 | 
@@ -651,6 +695,8 @@ class DrawingView(AnyObject):
     def y(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property y() As double
                 | 
@@ -688,6 +734,8 @@ class DrawingView(AnyObject):
     def y_axis_data(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property yAxisData() As double
                 | 
@@ -722,6 +770,8 @@ class DrawingView(AnyObject):
     def activate(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Activate()
                 | 
@@ -744,6 +794,8 @@ class DrawingView(AnyObject):
     def aligned_with_reference_view(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AlignedWithReferenceView()
                 | 
@@ -767,6 +819,8 @@ class DrawingView(AnyObject):
     def get_view_name(self, i_view_name_prefix: str, i_view_name_ident: str, i_view_name_suffix: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetViewName(CATBSTR iViewNamePrefix,
                 | CATBSTR iViewNameIdent,
@@ -801,6 +855,8 @@ class DrawingView(AnyObject):
     def insert_view_angle(self, i_first: int, io_text: 'DrawingText') -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub InsertViewAngle(long iFirst,
                 | DrawingText ioText)
@@ -836,6 +892,8 @@ class DrawingView(AnyObject):
     def insert_view_scale(self, i_first: int, io_text: 'DrawingText') -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub InsertViewScale(long iFirst,
                 | DrawingText ioText)
@@ -870,6 +928,8 @@ class DrawingView(AnyObject):
     def is_generative(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func IsGenerative() As boolean
                 | 
@@ -893,6 +953,8 @@ class DrawingView(AnyObject):
     def isolate(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Isolate()
                 | 
@@ -913,6 +975,8 @@ class DrawingView(AnyObject):
     def save_edition(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SaveEdition()
                 | 
@@ -939,6 +1003,8 @@ class DrawingView(AnyObject):
     def set_view_name(self, i_view_name_prefix: str, i_view_name_ident: str, i_view_name_suffix: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetViewName(CATBSTR iViewNamePrefix,
                 | CATBSTR iViewNameIdent,
@@ -975,6 +1041,8 @@ class DrawingView(AnyObject):
     def size(self, o_values: tuple) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Size(CATSafeArrayVariant oValues)
                 | 
@@ -1022,12 +1090,14 @@ class DrawingView(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def un_aligned_with_reference_view(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub UnAlignedWithReferenceView()
                 | 

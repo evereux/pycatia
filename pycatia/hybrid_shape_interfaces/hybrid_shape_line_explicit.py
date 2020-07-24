@@ -15,6 +15,8 @@ from pycatia.hybrid_shape_interfaces.line import Line
 class HybridShapeLineExplicit(Line):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown

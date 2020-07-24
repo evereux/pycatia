@@ -17,6 +17,8 @@ from pycatia.types import cat_variant
 class List(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -37,6 +39,8 @@ class List(Collection):
     def add(self, i_item_value: AnyObject) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Add(AnyObject iItemValue)
                 | 
@@ -53,6 +57,8 @@ class List(Collection):
     def item(self, i_index: cat_variant) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(CATVariant iIndex) As AnyObject
                 | 
@@ -87,6 +93,8 @@ class List(Collection):
     def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(CATVariant iIndex)
                 | 
@@ -118,6 +126,8 @@ class List(Collection):
     def reorder(self, i_index_current: cat_variant, i_index_target: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Reorder(CATVariant iIndexCurrent,
                 | CATVariant iIndexTarget)
@@ -136,6 +146,8 @@ class List(Collection):
     def replace(self, i_index: cat_variant, i_item_value: AnyObject) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Replace(CATVariant iIndex,
                 | AnyObject iItemValue)

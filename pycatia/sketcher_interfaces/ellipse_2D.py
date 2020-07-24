@@ -16,6 +16,8 @@ from pycatia.system_interfaces.system_service import SystemService
 class Ellipse2D(Curve2D):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -40,6 +42,8 @@ class Ellipse2D(Curve2D):
     def center_point(self) -> Point2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CenterPoint() As Point2D
                 | 
@@ -68,6 +72,8 @@ class Ellipse2D(Curve2D):
     def major_radius(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MajorRadius() As double (Read Only)
                 | 
@@ -88,6 +94,8 @@ class Ellipse2D(Curve2D):
     def minor_radius(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MinorRadius() As double (Read Only)
                 | 
@@ -107,6 +115,8 @@ class Ellipse2D(Curve2D):
     def get_center(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetCenter(CATSafeArrayVariant oCenter)
                 | 
@@ -134,12 +144,14 @@ class Ellipse2D(Curve2D):
         End Function
         """
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_major_axis(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetMajorAxis(CATSafeArrayVariant oMajorAxis)
                 | 
@@ -166,12 +178,14 @@ class Ellipse2D(Curve2D):
         End Function
         """
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_minor_axis(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetMinorAxis(CATSafeArrayVariant oMajorAxis)
                 | 
@@ -198,7 +212,7 @@ class Ellipse2D(Curve2D):
         End Function
         """
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_data(self,
@@ -210,6 +224,8 @@ class Ellipse2D(Curve2D):
                  i_minor_radius: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetData(double iCenterX,
                 | double iCenterY,

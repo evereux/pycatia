@@ -1,3 +1,5 @@
+.. _References:
+
 pycatia.in_interfaces.references
 ================================
 

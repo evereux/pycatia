@@ -15,6 +15,8 @@ from pycatia.hybrid_shape_interfaces.plane import Plane
 class HybridShapePlaneExplicit(Plane):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown

@@ -17,6 +17,8 @@ from pycatia.types import cat_variant
 class DefeaturingFilters(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -37,6 +39,8 @@ class DefeaturingFilters(Collection):
     def add(self, i_filter_type_to_add: str) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Add(CATBSTR iFilterTypeToAdd) As long
                 | 
@@ -69,6 +73,8 @@ class DefeaturingFilters(Collection):
     def item(self, i_filter_id: cat_variant) -> DefeaturingFilter:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(CATVariant iFilterId) As DefeaturingFilter
                 | 
@@ -101,6 +107,8 @@ class DefeaturingFilters(Collection):
     def remove(self, i_filter_id: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Remove(CATVariant iFilterId)
                 | 

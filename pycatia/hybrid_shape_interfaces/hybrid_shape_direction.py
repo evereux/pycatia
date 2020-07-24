@@ -15,9 +15,10 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeDirection(HybridShape):
-
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -52,6 +53,8 @@ class HybridShapeDirection(HybridShape):
     def object(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Object() As Reference
                 | 
@@ -78,7 +81,7 @@ class HybridShapeDirection(HybridShape):
     @object.setter
     def object(self, reference: Reference):
         """
-        :param Reference v:
+        :param Reference reference:
         """
 
         self.hybrid_shape_direction.Object = reference.com_object
@@ -87,6 +90,8 @@ class HybridShapeDirection(HybridShape):
     def ref_axis_system(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RefAxisSystem() As Reference
                 | 
@@ -122,6 +127,8 @@ class HybridShapeDirection(HybridShape):
     def type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Type() As long (Read Only)
                 | 
@@ -144,6 +151,8 @@ class HybridShapeDirection(HybridShape):
     def direction_specification(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func DirectionSpecification() As long
                 | 
@@ -163,6 +172,8 @@ class HybridShapeDirection(HybridShape):
     def get_x(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetX() As RealParam
                 | 
@@ -184,6 +195,8 @@ class HybridShapeDirection(HybridShape):
     def get_x_val(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetXVal() As double
                 | 
@@ -203,6 +216,8 @@ class HybridShapeDirection(HybridShape):
     def get_y(self) -> RealParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetY() As RealParam
                 | 
@@ -224,6 +239,8 @@ class HybridShapeDirection(HybridShape):
     def get_y_val(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetYVal() As double
                 | 
@@ -243,6 +260,8 @@ class HybridShapeDirection(HybridShape):
     def get_z(self) -> RealParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetZ() As RealParam
                 | 
@@ -264,6 +283,8 @@ class HybridShapeDirection(HybridShape):
     def get_z_val(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetZVal() As double
                 | 
@@ -281,4 +302,4 @@ class HybridShapeDirection(HybridShape):
         return self.hybrid_shape_direction.GetZVal()
 
     def __repr__(self):
-        return f'HybridShapeDirection(name="{ self.name }")'
+        return f'HybridShapeDirection(name="{self.name}")'

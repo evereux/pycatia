@@ -19,6 +19,8 @@ from pycatia.knowledge_interfaces.length import Length
 class HybridShapeSweepLine(HybridShapeSweep):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -42,6 +44,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def angle_law(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AngleLaw() As Reference
                 | 
@@ -65,6 +69,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def angle_law_inversion(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AngleLawInversion() As long
                 | 
@@ -92,6 +98,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def angle_law_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AngleLawType() As long
                 | 
@@ -122,6 +130,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def canonical_detection(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CanonicalDetection() As long
                 | 
@@ -149,6 +159,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def context(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Context() As long
                 | 
@@ -185,6 +197,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def draft_computation_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DraftComputationMode() As long
                 | 
@@ -208,6 +222,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def draft_direction(self) -> HybridShapeDirection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DraftDirection() As HybridShapeDirection
                 | 
@@ -239,6 +255,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def first_guide_crv(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstGuideCrv() As Reference
                 | 
@@ -262,6 +280,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def first_guide_surf(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstGuideSurf() As Reference
                 | 
@@ -285,6 +305,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def first_length_law(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstLengthLaw() As Reference
                 | 
@@ -308,6 +330,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def first_length_law_inversion(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstLengthLawInversion() As long
                 | 
@@ -335,6 +359,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def guide_deviation(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property GuideDeviation() As Length (Read Only)
                 | 
@@ -351,6 +377,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def guide_deviation_activity(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property GuideDeviationActivity() As boolean
                 | 
@@ -379,6 +407,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Mode() As long
                 | 
@@ -420,6 +450,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def second_guide_crv(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondGuideCrv() As Reference
                 | 
@@ -443,6 +475,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def second_guide_surf(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondGuideSurf() As Reference
                 | 
@@ -466,6 +500,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def second_length_law(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondLengthLaw() As Reference
                 | 
@@ -489,6 +525,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def second_length_law_inversion(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondLengthLawInversion() As long
                 | 
@@ -516,6 +554,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def second_trim_option(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondTrimOption() As long
                 | 
@@ -545,6 +585,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def smooth_activity(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SmoothActivity() As boolean
                 | 
@@ -570,6 +612,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def smooth_angle_threshold(self) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SmoothAngleThreshold() As Angle (Read Only)
                 | 
@@ -585,6 +629,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def solution_no(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SolutionNo() As long
                 | 
@@ -611,6 +657,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def spine(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Spine() As Reference
                 | 
@@ -634,6 +682,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def trim_option(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TrimOption() As long
                 | 
@@ -661,6 +711,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def add_draft_angle_definition_location(self, ip_ia_loc_elem: Reference, i_ang: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddDraftAngleDefinitionLocation(Reference ipIALocElem,
                 | double iAng)
@@ -694,12 +746,14 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_angle(self, i_i: int) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetAngle(long iI) As Angle
                 | 
@@ -723,6 +777,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def get_angular_law(self, op_start_ang: Angle, op_end_ang: Angle, o_law_type: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetAngularLaw(Angle opStartAng,
                 | Angle opEndAng,
@@ -767,13 +823,15 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_choice_nb_surfaces(self, o_surf_ori1: int, o_surf_ori2: int, o_surf_coupl_ori1: int, o_surf_coupl_ori2: int,
                                o_no: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetChoiceNbSurfaces(long oSurfOri1,
                 | long oSurfOri2,
@@ -831,6 +889,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def get_choice_no(self, o_val1: int, o_val2: int, o_val3: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetChoiceNo(long oVal1,
                 | long oVal2,
@@ -861,6 +921,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def get_draft_angle_definition_location(self, i_loc: int, op_ia_element: Reference, o_angle: Angle) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetDraftAngleDefinitionLocation(long iLoc,
                 | Reference opIAElement,
@@ -899,12 +961,14 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_draft_angle_definition_locations_nb(self, o_count: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetDraftAngleDefinitionLocationsNb(long oCount)
                 | 
@@ -924,6 +988,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def get_first_length_definition_type(self, o_first_type: int, op_ia_elem: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetFirstLengthDefinitionType(long oFirstType,
                 | Reference opIAElem)
@@ -972,12 +1038,14 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_first_length_law(self, o_length1: Length, o_length2: Length, o_law_type: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetFirstLengthLaw(Length oLength1,
                 | Length oLength2,
@@ -1022,12 +1090,14 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_length(self, i_i: int) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetLength(long iI) As Length
                 | 
@@ -1051,6 +1121,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def get_length_law_types(self, o_first_type: int, o_second_type: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetLengthLawTypes(long oFirstType,
                 | long oSecondType)
@@ -1080,6 +1152,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def get_longitudinal_relimiters(self, op_ia_elem1: Reference, op_ia_elem2: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetLongitudinalRelimiters(Reference opIAElem1,
                 | Reference opIAElem2)
@@ -1113,12 +1187,14 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_nb_angle(self, o_ang: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetNbAngle(long oAng)
                 | 
@@ -1138,6 +1214,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def get_nb_guide_crv(self, o_num: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetNbGuideCrv(long oNum)
                 | 
@@ -1157,6 +1235,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def get_nb_guide_sur(self, o_num: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetNbGuideSur(long oNum)
                 | 
@@ -1176,6 +1256,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def get_nb_length(self, o_len: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetNbLength(long oLen)
                 | 
@@ -1195,6 +1277,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def get_relimiters(self, op_ia_elem1: Reference, op_orient1: int, op_ia_elem2: Reference, op_orient2: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetRelimiters(Reference opIAElem1,
                 | long opOrient1,
@@ -1240,12 +1324,14 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_second_length_definition_type(self, o_second_type: int, op_ia_elem: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetSecondLengthDefinitionType(long oSecondType,
                 | Reference opIAElem)
@@ -1294,12 +1380,14 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_second_length_law(self, o_length1: Length, o_length2: Length, o_law_type: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetSecondLengthLaw(Length oLength1,
                 | Length oLength2,
@@ -1344,12 +1432,14 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def insert_draft_angle_definition_location(self, i_elem: Reference, i_angle: Angle, i_pos: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InsertDraftAngleDefinitionLocation(Reference iElem,
                 | Angle iAngle,
@@ -1388,12 +1478,14 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def remove_all_draft_angle_definition_locations(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveAllDraftAngleDefinitionLocations()
                 | 
@@ -1408,6 +1500,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def remove_angle(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveAngle()
                 | 
@@ -1421,6 +1515,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def remove_draft_angle_definition_location_position(self, i_pos: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveDraftAngleDefinitionLocationPosition(long iPos)
                 | 
@@ -1441,6 +1537,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def remove_guide_crv(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveGuideCrv()
                 | 
@@ -1454,6 +1552,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def remove_guide_sur(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveGuideSur()
                 | 
@@ -1467,6 +1567,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def remove_length(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveLength()
                 | 
@@ -1480,6 +1582,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def set_angle(self, i_i: int, i_elem: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAngle(long iI,
                 | double iElem)
@@ -1503,6 +1607,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def set_angular_law(self, i_start_ang: float, i_end_ang: float, i_law_type: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAngularLaw(double iStartAng,
                 | double iEndAng,
@@ -1538,6 +1644,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
                                i_no: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetChoiceNbSurfaces(long iSurfOri1,
                 | long iSurfOri2,
@@ -1594,6 +1702,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def set_choice_no(self, i_val1: int, i_val2: int, i_val3: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetChoiceNo(long iVal1,
                 | long iVal2,
@@ -1624,6 +1734,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def set_first_length_definition_type(self, i_first_type: int, ip_ia_elem: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetFirstLengthDefinitionType(long iFirstType,
                 | Reference ipIAElem)
@@ -1672,12 +1784,14 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_first_length_law(self, i_length1: float, i_length2: float, i_law_type: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetFirstLengthLaw(double iLength1,
                 | double iLength2,
@@ -1713,6 +1827,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def set_guide_deviation(self, i_length: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetGuideDeviation(double iLength)
                 | 
@@ -1733,6 +1849,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def set_length(self, i_i: int, i_elem: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLength(long iI,
                 | double iElem)
@@ -1756,6 +1874,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def set_length_law_types(self, i_first_type: int, i_second_type: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLengthLawTypes(long iFirstType,
                 | long iSecondType)
@@ -1785,6 +1905,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def set_longitudinal_relimiters(self, ip_ia_elem1: Reference, ip_ia_elem2: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLongitudinalRelimiters(Reference ipIAElem1,
                 | Reference ipIAElem2)
@@ -1818,12 +1940,14 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_relimiters(self, ip_ia_elem1: Reference, ip_orient1: int, ip_ia_elem2: Reference, ip_orient2: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetRelimiters(Reference ipIAElem1,
                 | long ipOrient1,
@@ -1869,12 +1993,14 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_second_length_definition_type(self, i_second_type: int, ip_ia_elem: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSecondLengthDefinitionType(long iSecondType,
                 | Reference ipIAElem)
@@ -1923,12 +2049,14 @@ class HybridShapeSweepLine(HybridShapeSweep):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_second_length_law(self, i_length1: float, i_length2: float, i_law_type: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSecondLengthLaw(double iLength1,
                 | double iLength2,
@@ -1964,6 +2092,8 @@ class HybridShapeSweepLine(HybridShapeSweep):
     def set_smooth_angle_threshold(self, i_angle: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSmoothAngleThreshold(double iAngle)
                 | 

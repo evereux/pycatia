@@ -14,9 +14,10 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class Viewer(AnyObject):
-
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -40,6 +41,8 @@ class Viewer(AnyObject):
     def full_screen(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FullScreen() As boolean
                 | 
@@ -71,6 +74,8 @@ class Viewer(AnyObject):
     def height(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Height() As long (Read Only)
                 | 
@@ -92,6 +97,8 @@ class Viewer(AnyObject):
     def width(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Width() As long (Read Only)
                 | 
@@ -112,6 +119,8 @@ class Viewer(AnyObject):
     def activate(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Activate()
                 | 
@@ -131,6 +140,8 @@ class Viewer(AnyObject):
     def capture_to_file(self, i_format: int, i_file: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub CaptureToFile(CatCaptureFormat iFormat,
                 | CATBSTR iFile)
@@ -149,10 +160,10 @@ class Viewer(AnyObject):
                 |             captured image 
                 |         Example:
                 |             This example captures the displayed part of the MyViewer viewer as
-                |             a BMP image, and stores it in the e:\MyImage.bmp
+                |             a BMP image, and stores it in the e:\\MyImage.bmp
                 |             file.
                 | 
-                |              MyViewer.CaptureToFile catCaptureFormatBMP, "e:\MyImage.bmp"
+                |              MyViewer.CaptureToFile catCaptureFormatBMP, "e:\\MyImage.bmp"
 
         :param int i_format:
         :param str i_file:
@@ -164,6 +175,8 @@ class Viewer(AnyObject):
     def get_background_color(self, color: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetBackgroundColor(CATSafeArrayVariant color)
                 | 
@@ -196,12 +209,14 @@ class Viewer(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def new_camera(self) -> Camera:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func NewCamera() As Camera
                 | 
@@ -222,6 +237,8 @@ class Viewer(AnyObject):
     def put_background_color(self, color: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutBackgroundColor(CATSafeArrayVariant color)
                 | 
@@ -253,12 +270,14 @@ class Viewer(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def reframe(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Reframe()
                 | 
@@ -281,6 +300,8 @@ class Viewer(AnyObject):
     def update(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Update()
                 | 
@@ -302,6 +323,8 @@ class Viewer(AnyObject):
     def zoom_in(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ZoomIn()
                 | 
@@ -321,6 +344,8 @@ class Viewer(AnyObject):
     def zoom_out(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ZoomOut()
                 | 
@@ -338,4 +363,4 @@ class Viewer(AnyObject):
         return self.viewer.ZoomOut()
 
     def __repr__(self):
-        return f'Viewer(name="{ self.name }")'
+        return f'Viewer(name="{self.name}")'

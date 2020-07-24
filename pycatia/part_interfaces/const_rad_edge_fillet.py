@@ -17,6 +17,8 @@ from pycatia.part_interfaces.edge_fillet import EdgeFillet
 class ConstRadEdgeFillet(EdgeFillet):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -44,6 +46,8 @@ class ConstRadEdgeFillet(EdgeFillet):
     def objects_to_fillet(self) -> References:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ObjectsToFillet() As References (Read Only)
                 | 
@@ -67,6 +71,8 @@ class ConstRadEdgeFillet(EdgeFillet):
     def radius(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Radius() As Length (Read Only)
                 | 
@@ -87,6 +93,8 @@ class ConstRadEdgeFillet(EdgeFillet):
     def add_object_to_fillet(self, i_object_to_fillet: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddObjectToFillet(Reference iObjectToFillet)
                 | 
@@ -125,12 +133,14 @@ class ConstRadEdgeFillet(EdgeFillet):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def withdraw_object_to_fillet(self, i_object_to_withdraw: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub WithdrawObjectToFillet(Reference iObjectToWithdraw)
                 | 
@@ -170,7 +180,7 @@ class ConstRadEdgeFillet(EdgeFillet):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

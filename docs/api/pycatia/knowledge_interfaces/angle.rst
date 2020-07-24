@@ -1,3 +1,5 @@
+.. _Angle:
+
 pycatia.knowledge_interfaces.angle
 ==================================
 

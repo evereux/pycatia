@@ -19,6 +19,8 @@ from pycatia.knowledge_interfaces.real_param import RealParam
 class HybridShapePointOnCurve(Point):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -57,6 +59,8 @@ class HybridShapePointOnCurve(Point):
     def curve(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Curve() As Reference
                 | 
@@ -93,6 +97,8 @@ class HybridShapePointOnCurve(Point):
     def direction(self) -> HybridShapeDirection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Direction() As HybridShapeDirection
                 | 
@@ -124,6 +130,8 @@ class HybridShapePointOnCurve(Point):
     def distance_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DistanceType() As long
                 | 
@@ -165,6 +173,8 @@ class HybridShapePointOnCurve(Point):
     def offset(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Offset() As Length (Read Only)
                 | 
@@ -194,6 +204,8 @@ class HybridShapePointOnCurve(Point):
     def on_curve_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OnCurveType() As long
                 | 
@@ -219,6 +231,8 @@ class HybridShapePointOnCurve(Point):
     def orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation() As long
                 | 
@@ -259,6 +273,8 @@ class HybridShapePointOnCurve(Point):
     def point(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Point() As Reference
                 | 
@@ -302,6 +318,8 @@ class HybridShapePointOnCurve(Point):
     def ratio(self) -> RealParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Ratio() As RealParam (Read Only)
                 | 
@@ -332,6 +350,8 @@ class HybridShapePointOnCurve(Point):
     def type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Type() As long (Read Only)
                 | 

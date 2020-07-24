@@ -16,6 +16,8 @@ class RealParam(Parameter):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -52,6 +54,8 @@ class RealParam(Parameter):
     def maximum_tolerance(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property MaximumTolerance() As double
                 | 
@@ -84,6 +88,8 @@ class RealParam(Parameter):
     def minimum_tolerance(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property MinimumTolerance() As double
                 | 
@@ -116,6 +122,8 @@ class RealParam(Parameter):
     def range_max(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property RangeMax() As double
                 | 
@@ -149,6 +157,8 @@ class RealParam(Parameter):
     def range_max_validity(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property RangeMaxValidity() As long
                 | 
@@ -180,6 +190,8 @@ class RealParam(Parameter):
     def range_min(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property RangeMin() As double
                 | 
@@ -213,6 +225,8 @@ class RealParam(Parameter):
     def range_min_validity(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property RangeMinValidity() As long
                 | 
@@ -244,6 +258,8 @@ class RealParam(Parameter):
     def value(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Value() As double
                 | 
@@ -276,6 +292,8 @@ class RealParam(Parameter):
     def get_enumerate_values(self, o_safe_array: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetEnumerateValues(CATSafeArrayVariant oSafeArray)
                 | 
@@ -310,12 +328,14 @@ class RealParam(Parameter):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_enumerate_values_size(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetEnumerateValuesSize() As long
                 | 
@@ -329,6 +349,8 @@ class RealParam(Parameter):
     def is_equal_to(self, i_value_to_compare: float) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func IsEqualTo(double iValueToCompare) As boolean
                 | 
@@ -361,6 +383,8 @@ class RealParam(Parameter):
     def set_enumerate_values(self, i_safe_array: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetEnumerateValues(CATSafeArrayVariant iSafeArray)
                 | 
@@ -385,12 +409,14 @@ class RealParam(Parameter):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def suppress_enumerate_values(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SuppressEnumerateValues()
                 | 

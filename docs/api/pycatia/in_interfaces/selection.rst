@@ -1,3 +1,5 @@
+.. _Selection:
+
 pycatia.in_interfaces.selection
 ===============================
 

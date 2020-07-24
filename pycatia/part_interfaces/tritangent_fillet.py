@@ -17,6 +17,8 @@ class TritangentFillet(Fillet):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -45,6 +47,8 @@ class TritangentFillet(Fillet):
     def face_to_remove(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FaceToRemove() As Reference
                 | 
@@ -79,6 +83,8 @@ class TritangentFillet(Fillet):
     def first_face(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstFace() As Reference
                 | 
@@ -113,6 +119,8 @@ class TritangentFillet(Fillet):
     def second_face(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondFace() As Reference
                 | 

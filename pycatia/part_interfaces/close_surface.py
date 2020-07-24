@@ -19,6 +19,8 @@ class CloseSurface(Pattern):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -50,6 +52,8 @@ class CloseSurface(Pattern):
     def angular_direction_row(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AngularDirectionRow() As IntParam (Read Only)
                 | 
@@ -71,6 +75,8 @@ class CloseSurface(Pattern):
     def angular_repartition(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AngularRepartition() As AngularRepartition (Read
                 | Only)
@@ -93,6 +99,8 @@ class CloseSurface(Pattern):
     def circular_pattern_parameters(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CircularPatternParameters() As
                 | CatCircularPatternParameters
@@ -127,6 +135,8 @@ class CloseSurface(Pattern):
     def radial_alignment(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property RadialAlignment() As boolean
                 | 
@@ -159,6 +169,8 @@ class CloseSurface(Pattern):
     def radial_direction_row(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property RadialDirectionRow() As IntParam (Read Only)
                 | 
@@ -180,6 +192,8 @@ class CloseSurface(Pattern):
     def radial_repartition(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property RadialRepartition() As LinearRepartition (Read
                 | Only)
@@ -202,6 +216,8 @@ class CloseSurface(Pattern):
     def rotation_orientation(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property RotationOrientation() As boolean
                 | 
@@ -234,6 +250,8 @@ class CloseSurface(Pattern):
     def get_rotation_axis(self, io_rotation_axis):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetRotationAxis(CATSafeArrayVariant ioRotationAxis)
                 | 
@@ -270,12 +288,14 @@ class CloseSurface(Pattern):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_rotation_center(self, io_rotation_center):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetRotationCenter(CATSafeArrayVariant
                 | ioRotationCenter)
@@ -315,12 +335,14 @@ class CloseSurface(Pattern):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_instance_angular_spacing(self, i_instance_number, i_angular_spacing):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetInstanceAngularSpacing(long iInstanceNumber,
                 | double iAngularSpacing)
@@ -347,6 +369,8 @@ class CloseSurface(Pattern):
     def set_rotation_axis(self, i_rotation_axis):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetRotationAxis(Reference iRotationAxis)
                 | 
@@ -387,12 +411,14 @@ class CloseSurface(Pattern):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_rotation_center(self, i_rotation_center):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetRotationCenter(Reference iRotationCenter)
                 | 
@@ -426,12 +452,14 @@ class CloseSurface(Pattern):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_unequal_instance_number(self, i_instance_number):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetUnequalInstanceNumber(long iInstanceNumber)
                 | 
@@ -454,6 +482,8 @@ class CloseSurface(Pattern):
     def set_unequal_step(self, i_instance_number):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetUnequalStep(long iInstanceNumber)
                 | 

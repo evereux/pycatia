@@ -17,6 +17,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeRotate(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -55,6 +57,8 @@ class HybridShapeRotate(HybridShape):
     def angle(self) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Angle() As Angle (Read Only)
                 | 
@@ -70,6 +74,8 @@ class HybridShapeRotate(HybridShape):
     def angle_value(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AngleValue() As double
                 | 
@@ -99,6 +105,8 @@ class HybridShapeRotate(HybridShape):
     def axis(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Axis() As Reference
                 | 
@@ -129,6 +137,8 @@ class HybridShapeRotate(HybridShape):
     def elem_to_rotate(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ElemToRotate() As Reference
                 | 
@@ -158,6 +168,8 @@ class HybridShapeRotate(HybridShape):
     def first_element(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstElement() As Reference
                 | 
@@ -181,6 +193,8 @@ class HybridShapeRotate(HybridShape):
     def first_point(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstPoint() As Reference
                 | 
@@ -204,6 +218,8 @@ class HybridShapeRotate(HybridShape):
     def orientation_of_first_element(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OrientationOfFirstElement() As boolean
                 | 
@@ -229,6 +245,8 @@ class HybridShapeRotate(HybridShape):
     def orientation_of_second_element(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OrientationOfSecondElement() As boolean
                 | 
@@ -254,6 +272,8 @@ class HybridShapeRotate(HybridShape):
     def rotation_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RotationType() As long
                 | 
@@ -282,6 +302,8 @@ class HybridShapeRotate(HybridShape):
     def second_element(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondElement() As Reference
                 | 
@@ -305,6 +327,8 @@ class HybridShapeRotate(HybridShape):
     def second_point(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondPoint() As Reference
                 | 
@@ -328,6 +352,8 @@ class HybridShapeRotate(HybridShape):
     def third_point(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ThirdPoint() As Reference
                 | 
@@ -351,6 +377,8 @@ class HybridShapeRotate(HybridShape):
     def volume_result(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property VolumeResult() As boolean
                 | 
@@ -384,6 +412,8 @@ class HybridShapeRotate(HybridShape):
     def get_creation_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetCreationMode() As long
                 | 
@@ -412,6 +442,8 @@ class HybridShapeRotate(HybridShape):
     def set_creation_mode(self, i_creation: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetCreationMode(boolean iCreation)
                 | 
@@ -445,7 +477,7 @@ class HybridShapeRotate(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

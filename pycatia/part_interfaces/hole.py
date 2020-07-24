@@ -19,6 +19,8 @@ from pycatia.part_interfaces.sketch_based_shape import SketchBasedShape
 class Hole(SketchBasedShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -42,6 +44,8 @@ class Hole(SketchBasedShape):
     def anchor_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AnchorMode() As CatHoleAnchorMode
                 | 
@@ -77,6 +81,8 @@ class Hole(SketchBasedShape):
     def bottom_angle(self) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BottomAngle() As Angle (Read Only)
                 | 
@@ -103,6 +109,8 @@ class Hole(SketchBasedShape):
     def bottom_limit(self) -> Limit:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BottomLimit() As Limit (Read Only)
                 | 
@@ -129,6 +137,8 @@ class Hole(SketchBasedShape):
     def bottom_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BottomType() As CatHoleBottomType
                 | 
@@ -162,6 +172,8 @@ class Hole(SketchBasedShape):
     def counter_sunk_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CounterSunkMode() As CatCSHoleMode
                 | 
@@ -195,6 +207,8 @@ class Hole(SketchBasedShape):
     def diameter(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Diameter() As Length (Read Only)
                 | 
@@ -220,6 +234,8 @@ class Hole(SketchBasedShape):
     def head_angle(self) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HeadAngle() As Angle (Read Only)
                 | 
@@ -246,6 +262,8 @@ class Hole(SketchBasedShape):
     def head_depth(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HeadDepth() As Length (Read Only)
                 | 
@@ -272,6 +290,8 @@ class Hole(SketchBasedShape):
     def head_diameter(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HeadDiameter() As Length (Read Only)
                 | 
@@ -298,6 +318,8 @@ class Hole(SketchBasedShape):
     def hole_thread_description(self) -> StrParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HoleThreadDescription() As StrParam (Read Only)
                 | 
@@ -326,6 +348,8 @@ class Hole(SketchBasedShape):
     def thread_depth(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ThreadDepth() As Length (Read Only)
                 | 
@@ -352,6 +376,8 @@ class Hole(SketchBasedShape):
     def thread_diameter(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ThreadDiameter() As Length (Read Only)
                 | 
@@ -378,6 +404,8 @@ class Hole(SketchBasedShape):
     def thread_pitch(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ThreadPitch() As Length (Read Only)
                 | 
@@ -404,6 +432,8 @@ class Hole(SketchBasedShape):
     def thread_side(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ThreadSide() As CatHoleThreadSide
                 | 
@@ -437,6 +467,8 @@ class Hole(SketchBasedShape):
     def threading_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ThreadingMode() As CatHoleThreadingMode
                 | 
@@ -470,6 +502,8 @@ class Hole(SketchBasedShape):
     def type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Type() As CatHoleType
                 | 
@@ -502,6 +536,8 @@ class Hole(SketchBasedShape):
     def create_standard_thread_design_table(self, i_standard_type: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub CreateStandardThreadDesignTable(CatHoleThreadStandard
                 | iStandardType)
@@ -532,6 +568,8 @@ class Hole(SketchBasedShape):
     def create_user_standard_design_table(self, i_standard_name: str, i_path: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub CreateUserStandardDesignTable(CATBSTR iStandardName,
                 | CATBSTR iPath)
@@ -574,6 +612,8 @@ class Hole(SketchBasedShape):
     def get_direction(self, io_direction: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetDirection(CATSafeArrayVariant ioDirection)
                 | 
@@ -610,12 +650,14 @@ class Hole(SketchBasedShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_origin(self, io_origin: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetOrigin(CATSafeArrayVariant ioOrigin)
                 | 
@@ -652,12 +694,14 @@ class Hole(SketchBasedShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def reverse(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Reverse()
                 | 
@@ -677,6 +721,8 @@ class Hole(SketchBasedShape):
     def set_direction(self, i_direction: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDirection(Reference iDirection)
                 | 
@@ -716,12 +762,14 @@ class Hole(SketchBasedShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_origin(self, i_x: float, i_y: float, i_z: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetOrigin(double iX,
                 | double iY,

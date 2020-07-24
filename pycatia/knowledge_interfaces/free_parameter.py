@@ -17,6 +17,8 @@ class FreeParameter(AnyObject):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class FreeParameter(AnyObject):
     def inf_range(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property InfRange() As double
                 | 
@@ -62,6 +66,8 @@ class FreeParameter(AnyObject):
     def parameter(self) -> RealParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Parameter() As RealParam
                 | 
@@ -86,6 +92,8 @@ class FreeParameter(AnyObject):
     def step(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Step() As double
                 | 
@@ -111,6 +119,8 @@ class FreeParameter(AnyObject):
     def sup_range(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SupRange() As double
                 | 

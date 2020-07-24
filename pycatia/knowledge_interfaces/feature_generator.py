@@ -16,6 +16,8 @@ class FeatureGenerator(AnyObject):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -37,6 +39,8 @@ class FeatureGenerator(AnyObject):
     def nb_generated_features(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property NbGeneratedFeatures() As long (Read Only)
                 | 
@@ -52,6 +56,8 @@ class FeatureGenerator(AnyObject):
     def script(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Script() As CATBSTR
                 | 
@@ -74,6 +80,8 @@ class FeatureGenerator(AnyObject):
     def generate(self, i_context: AnyObject) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Generate(AnyObject iContext)
                 | 
@@ -88,6 +96,8 @@ class FeatureGenerator(AnyObject):
     def generate_in_context(self, i_inputs_array: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GenerateInContext(CATSafeArrayVariant iInputsArray)
                 | 
@@ -111,12 +121,14 @@ class FeatureGenerator(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def load_script_from_file_path(self, i_file_path: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub LoadScriptFromFilePath(CATBSTR iFilePath)
                 | 

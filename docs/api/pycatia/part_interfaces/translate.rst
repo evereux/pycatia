@@ -1,3 +1,5 @@
+.. _Translate:
+
 pycatia.part_interfaces.translate
 =================================
 

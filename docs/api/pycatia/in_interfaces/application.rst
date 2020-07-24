@@ -1,3 +1,5 @@
+.. _Application:
+
 pycatia.in_interfaces.application
 =================================
 

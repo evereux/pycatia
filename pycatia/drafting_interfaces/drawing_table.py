@@ -17,6 +17,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class DrawingTable(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class DrawingTable(AnyObject):
     def anchor_point(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AnchorPoint() As CatTablePosition
                 | 
@@ -72,6 +76,8 @@ class DrawingTable(AnyObject):
     def angle(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Angle() As double
                 | 
@@ -102,6 +108,8 @@ class DrawingTable(AnyObject):
     def compute_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ComputeMode() As CatTableComputeMode
                 | 
@@ -134,6 +142,8 @@ class DrawingTable(AnyObject):
     def leaders(self) -> DrawingLeaders:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Leaders() As DrawingLeaders (Read Only)
                 | 
@@ -157,6 +167,8 @@ class DrawingTable(AnyObject):
     def number_of_columns(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property NumberOfColumns() As long (Read Only)
                 | 
@@ -178,6 +190,8 @@ class DrawingTable(AnyObject):
     def number_of_rows(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property NumberOfRows() As long (Read Only)
                 | 
@@ -199,6 +213,8 @@ class DrawingTable(AnyObject):
     def x(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property x() As double
                 | 
@@ -230,6 +246,8 @@ class DrawingTable(AnyObject):
     def y(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property y() As double
                 | 
@@ -262,6 +280,8 @@ class DrawingTable(AnyObject):
     def add_column(self, i_col: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddColumn(long iCol)
                 | 
@@ -289,6 +309,8 @@ class DrawingTable(AnyObject):
     def add_row(self, i_row: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddRow(long iRow)
                 | 
@@ -315,6 +337,8 @@ class DrawingTable(AnyObject):
     def get_cell_alignment(self, i_row: int, i_col: int) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetCellAlignment(long iRow,
                 | long iCol) As CatTablePosition
@@ -349,6 +373,8 @@ class DrawingTable(AnyObject):
     def get_cell_border_type(self, i_row: int, i_col: int) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetCellBorderType(long iRow,
                 | long iCol) As CatTableBorderType
@@ -388,6 +414,8 @@ class DrawingTable(AnyObject):
     def get_cell_name(self, i_row: int, i_col: int) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetCellName(long iRow,
                 | long iCol) As CATBSTR
@@ -421,6 +449,8 @@ class DrawingTable(AnyObject):
     def get_cell_object(self, i_row: int, i_col: int) -> DrawingText:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetCellObject(long iRow,
                 | long iCol) As DrawingText
@@ -457,6 +487,8 @@ class DrawingTable(AnyObject):
     def get_cell_string(self, i_row: int, i_col: int) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetCellString(long iRow,
                 | long iCol) As CATBSTR
@@ -490,6 +522,8 @@ class DrawingTable(AnyObject):
     def get_cells_merge(self, o_list_of_merge_cells: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetCellsMerge(CATSafeArrayVariant oListOfMergeCells)
                 | 
@@ -528,12 +562,14 @@ class DrawingTable(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_column_size(self, i_col: int) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetColumnSize(long iCol) As double
                 | 
@@ -565,6 +601,8 @@ class DrawingTable(AnyObject):
                         o_nb_col: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetMergeInfos(long iRow,
                 | long iCol,
@@ -609,6 +647,8 @@ class DrawingTable(AnyObject):
     def get_row_size(self, i_row: int) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetRowSize(long iRow) As double
                 | 
@@ -639,6 +679,8 @@ class DrawingTable(AnyObject):
     def invert_mode(self, i_mode: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub InvertMode(CatTableInvertMode iMode)
                 | 
@@ -659,6 +701,8 @@ class DrawingTable(AnyObject):
     def merge_cells(self, i_first_row, i_first_col, i_nb_row_merge, i_nb_col_merge):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub MergeCells(long iFirstRow,
                 | long iFirstCol,
@@ -694,6 +738,8 @@ class DrawingTable(AnyObject):
     def move(self, i_delta_x: float, i_delta_y: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Move(double iDeltaX,
                 | double iDeltaY)
@@ -725,6 +771,8 @@ class DrawingTable(AnyObject):
     def remove_column(self, i_col: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveColumn(long iCol)
                 | 
@@ -751,6 +799,8 @@ class DrawingTable(AnyObject):
     def remove_row(self, i_row):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveRow(long iRow)
                 | 
@@ -777,6 +827,8 @@ class DrawingTable(AnyObject):
     def rotate(self, i_delta_angle: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Rotate(double iDeltaAngle)
                 | 
@@ -803,6 +855,8 @@ class DrawingTable(AnyObject):
     def set_cell_alignment(self, i_row: int, i_col: int, i_align: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetCellAlignment(long iRow,
                 | long iCol,
@@ -839,6 +893,8 @@ class DrawingTable(AnyObject):
     def set_cell_border_type(self, i_row: int, i_col: int, i_type: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetCellBorderType(long iRow,
                 | long iCol,
@@ -883,6 +939,8 @@ class DrawingTable(AnyObject):
     def set_cell_name(self, i_row: int, i_col: int, i_name: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetCellName(long iRow,
                 | long iCol,
@@ -919,6 +977,8 @@ class DrawingTable(AnyObject):
     def set_cell_object(self, i_row: int, i_col: int, i_text: DrawingText) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetCellObject(long iRow,
                 | long iCol,
@@ -963,12 +1023,14 @@ class DrawingTable(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_cell_string(self, i_row: int, i_col: int, i_string: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetCellString(long iRow,
                 | long iCol,
@@ -1005,6 +1067,8 @@ class DrawingTable(AnyObject):
     def set_column_size(self, i_col: int, i_col_size: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetColumnSize(long iCol,
                 | double iColSize)
@@ -1037,6 +1101,8 @@ class DrawingTable(AnyObject):
     def set_row_size(self, i_row: int, i_row_size: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetRowSize(long iRow,
                 | double iRowSize)
@@ -1069,6 +1135,8 @@ class DrawingTable(AnyObject):
     def un_merge_cells(self, i_row: int, i_col: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub UnMergeCells(long iRow,
                 | long iCol)

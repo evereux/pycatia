@@ -1,3 +1,5 @@
+.. _Scaling:
+
 pycatia.part_interfaces.scaling
 ===============================
 

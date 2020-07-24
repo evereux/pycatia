@@ -1,3 +1,5 @@
+.. _Constraint_satisfaction:
+
 pycatia.knowledge_interfaces.constraint_satisfaction
 ====================================================
 

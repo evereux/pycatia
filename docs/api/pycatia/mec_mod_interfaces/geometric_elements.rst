@@ -1,3 +1,5 @@
+.. _Geometric_elements:
+
 pycatia.mec_mod_interfaces.geometric_elements
 =============================================
 

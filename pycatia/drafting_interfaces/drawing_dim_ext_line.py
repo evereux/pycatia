@@ -15,6 +15,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class DrawingDimExtLine(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class DrawingDimExtLine(AnyObject):
     def color(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Color() As long
                 | 
@@ -68,6 +72,8 @@ class DrawingDimExtLine(AnyObject):
     def ext_line_slant(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ExtLineSlant() As double
                 | 
@@ -97,6 +103,8 @@ class DrawingDimExtLine(AnyObject):
     def ext_line_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ExtLineType() As long (Read Only)
                 | 
@@ -118,6 +126,8 @@ class DrawingDimExtLine(AnyObject):
     def thickness(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Thickness() As double
                 | 
@@ -146,6 +156,8 @@ class DrawingDimExtLine(AnyObject):
     def add_interrupt(self, i_index: int, i_two_points: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddInterrupt(long iIndex,
                 | CATSafeArrayVariant iTwoPoints)
@@ -183,12 +195,14 @@ class DrawingDimExtLine(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_funnel(self, i_index: int, o_mode: int, o_angle: float, o_height: float, o_width: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetFunnel(long iIndex,
                 | long oMode,
@@ -230,6 +244,8 @@ class DrawingDimExtLine(AnyObject):
     def get_gap(self, i_index: int) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetGap(long iIndex) As double
                 | 
@@ -255,6 +271,8 @@ class DrawingDimExtLine(AnyObject):
     def get_geom_info(self, i_index: int, o_geom_infos: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetGeomInfo(long iIndex,
                 | CATSafeArrayVariant oGeomInfos)
@@ -293,12 +311,14 @@ class DrawingDimExtLine(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_interrupt(self, i_index: int) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetInterrupt(long iIndex) As long
                 | 
@@ -326,6 +346,8 @@ class DrawingDimExtLine(AnyObject):
     def get_overrun(self, i_index: int) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetOverrun(long iIndex) As double
                 | 
@@ -351,6 +373,8 @@ class DrawingDimExtLine(AnyObject):
     def get_visibility(self, i_index: int) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetVisibility(long iIndex) As long
                 | 
@@ -376,6 +400,8 @@ class DrawingDimExtLine(AnyObject):
     def remove_interrupt(self, i_index: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveInterrupt(long iIndex)
                 | 
@@ -400,6 +426,8 @@ class DrawingDimExtLine(AnyObject):
     def set_funnel(self, i_index: int, i_mode: int, i_angle: float, i_height: float, i_width: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetFunnel(long iIndex,
                 | long iMode,
@@ -441,6 +469,8 @@ class DrawingDimExtLine(AnyObject):
     def set_gap(self, i_index: int, i_gap: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetGap(long iIndex,
                 | double iGap)
@@ -468,6 +498,8 @@ class DrawingDimExtLine(AnyObject):
     def set_overrun(self, i_index: int, i_overrun: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetOverrun(long iIndex,
                 | double iOverrun)
@@ -495,6 +527,8 @@ class DrawingDimExtLine(AnyObject):
     def set_visibility(self, i_index: int, i_extline_visibility: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub SetVisibility(long iIndex,
                 | long iExtlineVisibility)

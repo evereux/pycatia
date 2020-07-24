@@ -15,6 +15,8 @@ from pycatia.hybrid_shape_interfaces.hybrid_shape_circle import HybridShapeCircl
 class HybridShapeCircleExplicit(HybridShapeCircle):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown

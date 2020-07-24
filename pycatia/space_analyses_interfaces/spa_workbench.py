@@ -21,6 +21,8 @@ from pycatia.space_analyses_interfaces.sections import Sections
 class SPAWorkbench(Workbench):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -46,6 +48,8 @@ class SPAWorkbench(Workbench):
     def clashes(self) -> Clashes:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Clashes() As Clashes (Read Only)
                 | 
@@ -76,6 +80,8 @@ class SPAWorkbench(Workbench):
     def distances(self) -> Distances:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Distances() As Distances (Read Only)
                 | 
@@ -106,6 +112,8 @@ class SPAWorkbench(Workbench):
     def inertias(self) -> Inertias:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Inertias() As Inertias (Read Only)
                 | 
@@ -136,6 +144,8 @@ class SPAWorkbench(Workbench):
     def sections(self) -> Sections:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Sections() As Sections (Read Only)
                 | 
@@ -165,6 +175,8 @@ class SPAWorkbench(Workbench):
     def get_measurable(self, i_measured_item: Reference) -> Measurable:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetMeasurable(Reference iMeasuredItem) As Measurable
                 | 

@@ -23,7 +23,8 @@ from pycatia.system_interfaces.system_service import SystemService
 class Application(AnyObject):
     """
 
-    .. admonition:: Note
+    .. note::
+        :class: toggle
 
         CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
@@ -68,7 +69,8 @@ class Application(AnyObject):
     @property
     def active_document(self) -> Document:
         """
-        .. admonition:: Note
+        .. note::
+            :class: toggle
 
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
@@ -95,8 +97,9 @@ class Application(AnyObject):
     @property
     def active_printer(self) -> Printer:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property ActivePrinter() As Printer
@@ -128,8 +131,9 @@ class Application(AnyObject):
     @property
     def active_window(self) -> Window:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property ActiveWindow() As Window (Read Only)
@@ -153,8 +157,9 @@ class Application(AnyObject):
     @property
     def cache_size(self) -> int:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property CacheSize() As long
@@ -186,8 +191,9 @@ class Application(AnyObject):
     @property
     def caption(self) -> str:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Caption() As CATBSTR
@@ -223,8 +229,9 @@ class Application(AnyObject):
     @property
     def display_file_alerts(self) -> bool:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property DisplayFileAlerts() As boolean
@@ -261,8 +268,9 @@ class Application(AnyObject):
     @property
     def documents(self) -> Documents:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Documents() As Documents (Read Only)
@@ -285,8 +293,9 @@ class Application(AnyObject):
     @property
     def file_search_order(self) -> str:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property FileSearchOrder() As CATBSTR
@@ -328,8 +337,9 @@ class Application(AnyObject):
     @property
     def file_system(self) -> FileSystem:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property FileSystem() As FileSystem (Read Only)
@@ -353,8 +363,9 @@ class Application(AnyObject):
     @property
     def full_name(self) -> str:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property FullName() As CATBSTR (Read Only)
@@ -383,8 +394,9 @@ class Application(AnyObject):
     @property
     def hso_synchronized(self) -> bool:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property HSOSynchronized() As boolean
@@ -443,8 +455,9 @@ class Application(AnyObject):
     @property
     def height(self) -> float:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Height() As float
@@ -475,8 +488,9 @@ class Application(AnyObject):
     @property
     def interactive(self) -> bool:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Interactive() As boolean
@@ -508,8 +522,9 @@ class Application(AnyObject):
     @property
     def left(self) -> float:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Left() As float
@@ -542,8 +557,9 @@ class Application(AnyObject):
     @property
     def local_cache(self) -> str:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property LocalCache() As CATBSTR
@@ -575,8 +591,9 @@ class Application(AnyObject):
     @property
     def path(self) -> Path:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Path() As CATBSTR (Read Only)
@@ -603,8 +620,9 @@ class Application(AnyObject):
     @property
     def printers(self) -> Printers:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Printers() As Printers (Read Only)
@@ -628,8 +646,9 @@ class Application(AnyObject):
     @property
     def refresh_display(self) -> bool:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property RefreshDisplay() As boolean
@@ -665,8 +684,9 @@ class Application(AnyObject):
     @property
     def status_bar(self) -> str:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property StatusBar() As CATBSTR
@@ -702,8 +722,9 @@ class Application(AnyObject):
     @property
     def system_configuration(self) -> SystemConfiguration:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property SystemConfiguration() As SystemConfiguration (Read
@@ -726,8 +747,9 @@ class Application(AnyObject):
     @property
     def system_service(self) -> SystemService:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property SystemService() As SystemService (Read Only)
@@ -750,8 +772,9 @@ class Application(AnyObject):
     @property
     def top(self) -> float:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Top() As float
@@ -783,8 +806,9 @@ class Application(AnyObject):
     @property
     def undo_redo_lock(self) -> bool:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property UndoRedoLock() As boolean
@@ -822,8 +846,9 @@ class Application(AnyObject):
     @property
     def visible(self) -> bool:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Visible() As boolean
@@ -855,8 +880,9 @@ class Application(AnyObject):
     @property
     def width(self) -> float:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Width() As float
@@ -887,8 +913,9 @@ class Application(AnyObject):
     @property
     def windows(self) -> Windows:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
             | o Property Windows() As Windows (Read Only)
@@ -911,8 +938,9 @@ class Application(AnyObject):
 
     def create_send_to(self) -> SendToService:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
 
             | o Func CreateSendTo() As SendToService
@@ -931,8 +959,9 @@ class Application(AnyObject):
 
     def disable_new_undo_redo_transaction(self) -> None:
         """
-        .. admonition:: Note
-
+        .. note::
+            :class: toggle
+            
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
 
             | o Sub DisableNewUndoRedoTransaction()
@@ -960,7 +989,8 @@ class Application(AnyObject):
 
     def enable_new_undo_redo_transaction(self) -> None:
         """
-        .. admonition:: Note
+        .. note::
+            :class: toggle
 
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
 
@@ -979,115 +1009,10 @@ class Application(AnyObject):
         """
         return self.com_object.EnableNewUndoRedoTransaction()
 
-    def execute_script(
-            self, library_name, library_type, program_name, function_name, items
-    ):
-        """
-
-        .. admonition:: Note
-
-            CAA V5 Visual Basic help
-
-            | Func ExecuteScript( CATBSTR  iLibraryName,
-            |   CatScriptLibraryType  iType,
-            |   CATBSTR  iProgramName,
-            |   CATBSTR  iFunctionName,
-            |   CATSafeArrayVariant  iParameters) As CATVariant
-            |
-            | Executes a scripted function.
-            | Parameters:
-            |   iLibraryName
-            |       The library in which the script is contained
-            |   iLibraryType
-            |       The type of the library
-            |   iProgramName
-            |       The name of the program in the library
-            |   iFunctionName
-            |       The name of the function to invoke
-            |   iParameters
-            |       An array of parameters for the function
-            |   Result
-            |       The value returned by the function (if any)
-            |
-            | Example:
-            | This example executes the function CATMain in the program Macro1.catvbs contained by Part1.CATPart
-            |   Dim params()
-            |   CATIA.SystemService.ExecuteScript"Part1.CATPart",
-            |       catScriptLibraryTypeDocument,
-            |       "Macro1.catvbs",
-            |       "CATMain",
-            |       params
-
-        :param str library_name: Full path to location of catia script.
-        :param int library_type:  An integer representing the library type selection from list()
-         CatScriptLibraryType[catScriptLibraryTypeDocument, catScriptLibraryTypeDirectory,
-         catScriptLibraryTypeVBAProject]
-        :param str program_name: file name of script.
-        :param str function_name: Name of function to call within script.
-        :param list items: List of items to pass to script.
-        :return:
-        """
-
-        run = self.com_object.SystemService.ExecuteScript(
-            library_name, library_type, program_name, function_name, items
-        )
-
-        return run
-
-    def evaluate(
-            self, vba_code, function_name, measurable_items, cat_script_language=0
-    ):
-        """
-
-        .. admonition:: Note
-
-            CATIA V5 Visual Basic help
-
-            | Func Evaluate( CATBSTR  iScriptText,
-            |       CATScriptLanguage  iLanguage,
-            |       CATBSTR  iFunctionName,
-            |       CATSafeArrayVariant  iParameters) As CATVariant
-            |
-            | Evaluates a scripted function.
-            | Parameters:
-            |   iScriptText
-            | The program text
-            |   iLanguage
-            | The language the program is written in
-            |   iFunctionName
-            | The name of the function to invoke
-            |   iParameters
-            | An array of parameters for the function
-            |   Result
-            | The value returned by the function (if any)
-            | Example:
-            | This example executes the function CATMain from the CodeToEvaluate string
-            |   Dim params()
-            |   Dim codeToEvaluate
-            |   CodeToEvaluate = "Sub CATMain()" & vbNewLine & _
-            |                   "MsgBox " & chr(34) & "Hello World" & chr(34) & vbNewLine & _
-            |                   "End Sub"
-            |   CATIA.SystemService.Evaluate CodeToEvaluate, CATVBScriptLanguage, "CATMain", params
-
-
-        :param str vba_code: String containing script to run.
-        :param str function_name: Name of function within vba script.
-        :param list measurable_items: list of items to pass to script.
-        :param int cat_script_language: An integer representing the language selection from list()
-         [CATVBScriptLanguage, CATVBALanguage, CATBasicScriptLanguage, CATJavaLanguage,
-         CATJScriptLanguage]
-        :return:
-        """
-
-        run = self.com_object.SystemService.Evaluate(
-            vba_code, cat_script_language, function_name, measurable_items,
-        )
-
-        return run
-
     def file_selection_box(self, i_title: str, i_extension: str, i_mode: int) -> str:
         """
-        .. admonition:: Note
+        .. note::
+            :class: toggle
 
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
 
@@ -1117,7 +1042,7 @@ class Application(AnyObject):
             |                 path of the selected file.
             |
             |                  filepath = CATIA.FileSelectionBox("Select a text file",
-            |                                                     "\*.txt", CatFileSelectionModeOpen)
+            |                                                     "\\*.txt", CatFileSelectionModeOpen)
             |                  CATIA.SystemServices.Print "The selected file is " &
             |                  filepath
 
@@ -1131,7 +1056,8 @@ class Application(AnyObject):
 
     def get_workbench_id(self) -> str:
         """
-        .. admonition:: Note
+        .. note::
+            :class: toggle
 
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
 
@@ -1151,7 +1077,8 @@ class Application(AnyObject):
 
     def help(self, i_help_id: str) -> None:
         """
-        .. admonition:: Note
+        .. note::
+            :class: toggle
 
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
 
@@ -1259,7 +1186,8 @@ class Application(AnyObject):
 
     def quit(self) -> None:
         """
-        .. admonition:: Note
+        .. note::
+            :class: toggle
 
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
 
@@ -1280,7 +1208,8 @@ class Application(AnyObject):
 
     def start_command(self, i_command_id: str) -> None:
         """
-        .. admonition:: Note
+        .. note::
+            :class: toggle
 
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
 
@@ -1307,7 +1236,8 @@ class Application(AnyObject):
 
     def start_workbench(self, iworkbench_id: str) -> None:
         """
-        .. admonition:: Note
+        .. note::
+            :class: toggle
 
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
 

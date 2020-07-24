@@ -15,6 +15,8 @@ from pycatia.hybrid_shape_interfaces.point import Point
 class HybridShapePointExplicit(Point):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown

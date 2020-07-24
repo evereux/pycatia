@@ -1,3 +1,5 @@
+.. _Assemble:
+
 pycatia.part_interfaces.assemble
 ================================
 

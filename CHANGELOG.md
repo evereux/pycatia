@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.3.9
+* Added product.generate_ALLCATPart.
+* Added product.constraints.
+* Improved error message for selection.search.
+* Removed product.concession (now constraints and easier to use).
+* Removed application.execute_script and application.evaluate. Should use application.system_service.
+   * All methods dependant on application.SystemService updated.
+* Docs 
+   * API CAA reference note now collapsed by default.
+   * Restructured examples.
+   * Added pycatia API tree for overview.
+   * Changed sphinx theme to alabaster.
+* Added windows executable (see win_32 folder on github). This isn't thoroughly
+   tested and is provided for testing purposes.
+
 ## 0.3.8
 * Updated all hybrid_shape_interfaces properties due to regression bug.
  

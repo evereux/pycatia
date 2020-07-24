@@ -16,6 +16,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeBoundary(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -50,6 +52,8 @@ class HybridShapeBoundary(HybridShape):
     def from_(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property From() As Reference
                 | 
@@ -73,6 +77,8 @@ class HybridShapeBoundary(HybridShape):
     def from_orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FromOrientation() As long
                 | 
@@ -96,6 +102,8 @@ class HybridShapeBoundary(HybridShape):
     def initial_element(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property InitialElement() As Reference
                 | 
@@ -129,6 +137,8 @@ class HybridShapeBoundary(HybridShape):
     def propagation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Propagation() As long
                 | 
@@ -159,6 +169,8 @@ class HybridShapeBoundary(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
@@ -191,6 +203,8 @@ class HybridShapeBoundary(HybridShape):
     def to(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property To() As Reference
                 | 
@@ -214,6 +228,8 @@ class HybridShapeBoundary(HybridShape):
     def to_orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ToOrientation() As long
                 | 

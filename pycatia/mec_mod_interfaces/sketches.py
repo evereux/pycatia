@@ -18,6 +18,8 @@ from pycatia.types import cat_variant
 class Sketches(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class Sketches(Collection):
     def add(self, i_plane: Reference) -> Sketch:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Add(Reference iPlane) As Sketch
                 | 
@@ -71,6 +75,8 @@ class Sketches(Collection):
     def get_boundary(self, i_label: str) -> Boundary:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetBoundary(CATBSTR iLabel) As Boundary
                 | 
@@ -94,6 +100,8 @@ class Sketches(Collection):
     def item(self, i_index: cat_variant) -> Sketch:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(CATVariant iIndex) As Sketch
                 | 

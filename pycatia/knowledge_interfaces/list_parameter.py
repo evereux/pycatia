@@ -17,6 +17,8 @@ class ListParameter(Parameter):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class ListParameter(Parameter):
     def value_list(self) -> List:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ValueList() As List (Read Only)
                 | 

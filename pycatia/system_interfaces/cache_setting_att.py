@@ -16,6 +16,8 @@ class CacheSettingAtt(SettingController):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class CacheSettingAtt(SettingController):
     def activation_mode(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property ActivationMode() As boolean
                 | 
@@ -62,6 +66,8 @@ class CacheSettingAtt(SettingController):
     def cache_max_size_mo(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property CacheMaxSizeMo() As long
                 | 
@@ -85,6 +91,8 @@ class CacheSettingAtt(SettingController):
     def lod_mode(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property LODMode() As boolean
                 | 
@@ -108,6 +116,8 @@ class CacheSettingAtt(SettingController):
     def local_path(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property LocalPath() As CATBSTR
                 | 
@@ -133,6 +143,8 @@ class CacheSettingAtt(SettingController):
     def released_voxel(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property ReleasedVoxel() As float
                 | 
@@ -156,6 +168,8 @@ class CacheSettingAtt(SettingController):
     def size_control(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property SizeControl() As boolean
                 | 
@@ -181,6 +195,8 @@ class CacheSettingAtt(SettingController):
     def timestamp_mode(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property TimestampMode() As boolean
                 | 
@@ -208,6 +224,8 @@ class CacheSettingAtt(SettingController):
     def utc_time_format(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property UTCTimeFormat() As boolean
                 | 
@@ -232,6 +250,8 @@ class CacheSettingAtt(SettingController):
     def get_activation_mode_info(self, admin_level, o_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetActivationModeInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -248,6 +268,8 @@ class CacheSettingAtt(SettingController):
     def get_cache_max_size_mo_info(self, admin_level, o_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetCacheMaxSizeMoInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -265,6 +287,8 @@ class CacheSettingAtt(SettingController):
     def get_lod_mode_info(self, admin_level, o_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetLODModeInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -282,6 +306,8 @@ class CacheSettingAtt(SettingController):
     def get_local_path_info(self, admin_level, o_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetLocalPathInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -299,6 +325,8 @@ class CacheSettingAtt(SettingController):
     def get_release_path(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetReleasePath() As CATSafeArrayVariant
                 | 
@@ -322,6 +350,8 @@ class CacheSettingAtt(SettingController):
     def get_release_path_info(self, admin_level, locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetReleasePathInfo(CATBSTR AdminLevel,
                 | CATBSTR Locked) As boolean
@@ -339,6 +369,8 @@ class CacheSettingAtt(SettingController):
     def get_released_voxel_info(self, admin_level, o_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetReleasedVoxelInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -356,6 +388,8 @@ class CacheSettingAtt(SettingController):
     def get_size_control_info(self, admin_level, o_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetSizeControlInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -373,6 +407,8 @@ class CacheSettingAtt(SettingController):
     def get_timestamp_mode_info(self, admin_level, o_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetTimestampModeInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -390,6 +426,8 @@ class CacheSettingAtt(SettingController):
     def get_utc_time_format_info(self, admin_level, o_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetUTCTimeFormatInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -407,6 +445,8 @@ class CacheSettingAtt(SettingController):
     def put_release_path(self, i_rel_path):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub PutReleasePath(CATSafeArrayVariant iRelPath)
                 | 
@@ -440,12 +480,14 @@ class CacheSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_activation_mode_lock(self, i_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetActivationModeLock(boolean iLocked)
                 | 
@@ -469,12 +511,14 @@ class CacheSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_cache_max_size_mo_lock(self, i_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetCacheMaxSizeMoLock(boolean iLocked)
                 | 
@@ -498,12 +542,14 @@ class CacheSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_lod_mode_lock(self, i_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetLODModeLock(boolean iLocked)
                 | 
@@ -527,12 +573,14 @@ class CacheSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_local_path_lock(self, i_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetLocalPathLock(boolean iLocked)
                 | 
@@ -556,12 +604,14 @@ class CacheSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_release_path_lock(self, i_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetReleasePathLock(boolean iLocked)
                 | 
@@ -585,12 +635,14 @@ class CacheSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_released_voxel_lock(self, i_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetReleasedVoxelLock(boolean iLocked)
                 | 
@@ -614,12 +666,14 @@ class CacheSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_size_control_lock(self, i_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetSizeControlLock(boolean iLocked)
                 | 
@@ -643,12 +697,14 @@ class CacheSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_timestamp_mode_lock(self, i_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetTimestampModeLock(boolean iLocked)
                 | 
@@ -672,12 +728,14 @@ class CacheSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_utc_time_format_lock(self, i_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetUTCTimeFormatLock(boolean iLocked)
                 | 
@@ -701,7 +759,7 @@ class CacheSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

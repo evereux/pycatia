@@ -1,3 +1,5 @@
+.. _Loft:
+
 pycatia.part_interfaces.loft
 ============================
 

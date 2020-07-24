@@ -17,6 +17,8 @@ from pycatia.types import cat_variant
 class DrawingSheets(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -42,6 +44,8 @@ class DrawingSheets(Collection):
     def active_sheet(self) -> DrawingSheet:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ActiveSheet() As DrawingSheet (Read Only)
                 | 
@@ -67,6 +71,8 @@ class DrawingSheets(Collection):
     def add(self, i_drawing_sheet_name: str) -> DrawingSheet:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add(CATBSTR iDrawingSheetName) As DrawingSheet
                 | 
@@ -102,6 +108,8 @@ class DrawingSheets(Collection):
     def add_detail(self, i_drawing_sheet_name: str) -> DrawingSheet:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func AddDetail(CATBSTR iDrawingSheetName) As DrawingSheet
                 | 
@@ -137,6 +145,8 @@ class DrawingSheets(Collection):
     def item(self, i_index: cat_variant) -> DrawingSheet:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(CATVariant iIndex) As DrawingSheet
                 | 
@@ -179,6 +189,8 @@ class DrawingSheets(Collection):
     def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(CATVariant iIndex)
                 | 

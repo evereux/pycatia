@@ -16,6 +16,8 @@ from pycatia.in_interfaces.reference import Reference
 class HybridShapePlaneMean(Plane):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -48,6 +50,8 @@ class HybridShapePlaneMean(Plane):
     def add_point(self, i_passing_point: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddPoint(Reference iPassingPoint)
                 | 
@@ -80,12 +84,14 @@ class HybridShapePlaneMean(Plane):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_point(self, i_rank: int, o_passing_point: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetPoint(long iRank,
                 | Reference oPassingPoint)
@@ -118,12 +124,14 @@ class HybridShapePlaneMean(Plane):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_pos(self, i_point: Reference) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPos(Reference iPoint) As long
                 | 
@@ -145,6 +153,8 @@ class HybridShapePlaneMean(Plane):
     def get_size(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetSize() As long
                 | 
@@ -163,6 +173,8 @@ class HybridShapePlaneMean(Plane):
     def remove_all(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveAll()
                 | 
@@ -176,6 +188,8 @@ class HybridShapePlaneMean(Plane):
     def remove_element(self, i_rank: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveElement(long iRank)
                 | 
@@ -195,6 +209,8 @@ class HybridShapePlaneMean(Plane):
     def replace_point_at_position(self, i_point: Reference, i_pos: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ReplacePointAtPosition(Reference iPoint,
                 | long iPos)
@@ -227,7 +243,7 @@ class HybridShapePlaneMean(Plane):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

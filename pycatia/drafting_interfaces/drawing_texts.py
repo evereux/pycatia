@@ -16,6 +16,8 @@ from pycatia.system_interfaces.collection import Collection
 class DrawingTexts(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class DrawingTexts(Collection):
     def add(self, i_drawing_text: str, i_position_x: float, i_position_y: float) -> DrawingText:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add(CATBSTR iDrawingText,
                 | double iPositionX,
@@ -81,6 +85,8 @@ class DrawingTexts(Collection):
     def item(self, i_index: int) -> DrawingText:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(long iIndex) As DrawingText
                 | 
@@ -116,6 +122,8 @@ class DrawingTexts(Collection):
     def remove(self, i_index: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(long iIndex)
                 | 

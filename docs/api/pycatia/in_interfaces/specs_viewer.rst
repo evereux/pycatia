@@ -1,3 +1,5 @@
+.. _Specs_viewer:
+
 pycatia.in_interfaces.specs_viewer
 ==================================
 

@@ -16,6 +16,8 @@ class LanguageSheetSettingAtt(SettingController):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class LanguageSheetSettingAtt(SettingController):
     def knowledge_build_path_directory(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property KnowledgeBuildPathDirectory() As CATBSTR
                 | 
@@ -71,6 +75,8 @@ class LanguageSheetSettingAtt(SettingController):
     def list_of_packages_to_load(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ListOfPackagesToLoad() As CATBSTR
                 | 
@@ -102,6 +108,8 @@ class LanguageSheetSettingAtt(SettingController):
     def load_all_packages(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LoadAllPackages() As short
                 | 
@@ -135,6 +143,8 @@ class LanguageSheetSettingAtt(SettingController):
     def load_extended_language_lib(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LoadExtendedLanguageLib() As short
                 | 
@@ -168,6 +178,8 @@ class LanguageSheetSettingAtt(SettingController):
     def reference_directory_for_types(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ReferenceDirectoryForTypes() As CATBSTR
                 | 
@@ -198,6 +210,8 @@ class LanguageSheetSettingAtt(SettingController):
     def get_knowledge_build_path_directory_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetKnowledgeBuildPathDirectoryInfo(CATBSTR
                 | ioAdminLevel,
@@ -217,6 +231,8 @@ class LanguageSheetSettingAtt(SettingController):
     def get_list_of_packages_to_load_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetListOfPackagesToLoadInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -235,6 +251,8 @@ class LanguageSheetSettingAtt(SettingController):
     def get_load_all_packages_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetLoadAllPackagesInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -253,6 +271,8 @@ class LanguageSheetSettingAtt(SettingController):
     def get_load_extended_language_lib_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetLoadExtendedLanguageLibInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -271,6 +291,8 @@ class LanguageSheetSettingAtt(SettingController):
     def get_reference_directory_for_types_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetReferenceDirectoryForTypesInfo(CATBSTR
                 | ioAdminLevel,
@@ -290,6 +312,8 @@ class LanguageSheetSettingAtt(SettingController):
     def set_knowledge_build_path_directory_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetKnowledgeBuildPathDirectoryLock(boolean iLocked)
                 | 
@@ -306,6 +330,8 @@ class LanguageSheetSettingAtt(SettingController):
     def set_list_of_packages_to_load_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetListOfPackagesToLoadLock(boolean iLocked)
                 | 
@@ -322,6 +348,8 @@ class LanguageSheetSettingAtt(SettingController):
     def set_load_all_packages_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLoadAllPackagesLock(boolean iLocked)
                 | 
@@ -337,6 +365,8 @@ class LanguageSheetSettingAtt(SettingController):
     def set_load_extended_language_lib_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLoadExtendedLanguageLibLock(boolean iLocked)
                 | 
@@ -353,6 +383,8 @@ class LanguageSheetSettingAtt(SettingController):
     def set_reference_directory_for_types_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetReferenceDirectoryForTypesLock(boolean iLocked)
                 | 

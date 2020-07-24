@@ -19,6 +19,8 @@ class VarRadEdgeFillet(EdgeFillet):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -46,6 +48,8 @@ class VarRadEdgeFillet(EdgeFillet):
     def bitangency_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BitangencyType() As CatFilletBitangencyType
                 | 
@@ -74,6 +78,8 @@ class VarRadEdgeFillet(EdgeFillet):
     def edges_to_fillet(self) -> References:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property EdgesToFillet() As References (Read Only)
                 | 
@@ -95,6 +101,8 @@ class VarRadEdgeFillet(EdgeFillet):
     def fillet_spine(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FilletSpine() As Reference
                 | 
@@ -124,6 +132,8 @@ class VarRadEdgeFillet(EdgeFillet):
     def fillet_variation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FilletVariation() As CatFilletVariation
                 | 
@@ -156,6 +166,8 @@ class VarRadEdgeFillet(EdgeFillet):
     def imposed_vertices(self) -> References:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ImposedVertices() As References (Read Only)
                 | 
@@ -178,6 +190,8 @@ class VarRadEdgeFillet(EdgeFillet):
     def add_edge_to_fillet(self, i_edge: Reference, i_radius: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddEdgeToFillet(Reference iEdge,
                 | double iRadius)
@@ -220,12 +234,14 @@ class VarRadEdgeFillet(EdgeFillet):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_imposed_vertex(self, i_vertex: Reference, i_radius: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddImposedVertex(Reference iVertex,
                 | double iRadius)
@@ -266,12 +282,14 @@ class VarRadEdgeFillet(EdgeFillet):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def imposed_vertex_radius(self, i_imposed_vertex: Reference) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func ImposedVertexRadius(Reference iImposedVertex) As
                 | Length
@@ -301,6 +319,8 @@ class VarRadEdgeFillet(EdgeFillet):
     def withdraw_edge_to_fillet(self, i_edge: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub WithdrawEdgeToFillet(Reference iEdge)
                 | 
@@ -338,12 +358,14 @@ class VarRadEdgeFillet(EdgeFillet):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def withdraw_imposed_vertex(self, i_vertex: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub WithdrawImposedVertex(Reference iVertex)
                 | 
@@ -379,7 +401,7 @@ class VarRadEdgeFillet(EdgeFillet):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

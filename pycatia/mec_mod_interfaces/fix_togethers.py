@@ -17,6 +17,8 @@ from pycatia.types import cat_variant
 class FixTogethers(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class FixTogethers(Collection):
     def add(self) -> FixTogether:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Add() As FixTogether
                 | 
@@ -60,6 +64,8 @@ class FixTogethers(Collection):
     def item(self, i_index: cat_variant) -> FixTogether:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(CATVariant iIndex) As FixTogether
                 | 
@@ -97,6 +103,8 @@ class FixTogethers(Collection):
     def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Remove(CATVariant iIndex)
                 | 

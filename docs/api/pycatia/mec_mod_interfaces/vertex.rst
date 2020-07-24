@@ -1,3 +1,5 @@
+.. _Vertex:
+
 pycatia.mec_mod_interfaces.vertex
 =================================
 

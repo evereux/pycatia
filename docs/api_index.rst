@@ -8,7 +8,7 @@ The entry point for most pycatia use cases is to do the following.
 
 >>> from pycatia import catia
 
-This creates an instance of the :py:class:`pycatia.in_interfaces.application.Application`.
+This creates an instance of the :ref:`Application<Application>` object.
 
 .. toctree::
    :maxdepth: 1

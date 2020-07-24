@@ -1,3 +1,5 @@
+.. _Repartition:
+
 pycatia.part_interfaces.repartition
 ===================================
 

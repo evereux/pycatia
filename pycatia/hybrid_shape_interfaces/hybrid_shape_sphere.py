@@ -18,6 +18,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeSphere(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -46,6 +48,8 @@ class HybridShapeSphere(HybridShape):
     def axis(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Axis() As Reference
                 | 
@@ -80,6 +84,8 @@ class HybridShapeSphere(HybridShape):
     def begin_meridian_angle(self) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BeginMeridianAngle() As Angle (Read Only)
                 | 
@@ -106,6 +112,8 @@ class HybridShapeSphere(HybridShape):
     def begin_parallel_angle(self) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BeginParallelAngle() As Angle (Read Only)
                 | 
@@ -132,6 +140,8 @@ class HybridShapeSphere(HybridShape):
     def center(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Center() As Reference
                 | 
@@ -163,6 +173,8 @@ class HybridShapeSphere(HybridShape):
     def end_meridian_angle(self) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property EndMeridianAngle() As Angle (Read Only)
                 | 
@@ -189,6 +201,8 @@ class HybridShapeSphere(HybridShape):
     def end_parallel_angle(self) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property EndParallelAngle() As Angle (Read Only)
                 | 
@@ -215,6 +229,8 @@ class HybridShapeSphere(HybridShape):
     def limitation(self) -> False:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Limitation(long iLimitationType)
                 | 
@@ -243,6 +259,8 @@ class HybridShapeSphere(HybridShape):
     def radius(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Radius() As Length (Read Only)
                 | 
@@ -268,6 +286,8 @@ class HybridShapeSphere(HybridShape):
     def set_begin_meridian_angle(self, i_angle: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetBeginMeridianAngle(double iAngle)
                 | 
@@ -291,6 +311,8 @@ class HybridShapeSphere(HybridShape):
     def set_begin_parallel_angle(self, i_angle: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetBeginParallelAngle(double iAngle)
                 | 
@@ -314,6 +336,8 @@ class HybridShapeSphere(HybridShape):
     def set_end_meridian_angle(self, i_angle: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetEndMeridianAngle(double iAngle)
                 | 
@@ -337,6 +361,8 @@ class HybridShapeSphere(HybridShape):
     def set_end_parallel_angle(self, i_angle: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetEndParallelAngle(double iAngle)
                 | 
@@ -360,6 +386,8 @@ class HybridShapeSphere(HybridShape):
     def set_radius(self, i_radius: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetRadius(double iRadius)
                 | 

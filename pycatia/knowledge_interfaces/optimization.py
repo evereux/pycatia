@@ -17,6 +17,8 @@ from pycatia.knowledge_interfaces.real_param import RealParam
 class Optimization(KnowledgeObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class Optimization(KnowledgeObject):
     def algorithm_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AlgorithmType() As CatAlgorithmType
                 | 
@@ -66,6 +70,8 @@ class Optimization(KnowledgeObject):
     def constraints(self) -> OptimizationConstraints:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Constraints() As OptimizationConstraints (Read
                 | Only)
@@ -82,6 +88,8 @@ class Optimization(KnowledgeObject):
     def conv_speed(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ConvSpeed() As long
                 | 
@@ -106,6 +114,8 @@ class Optimization(KnowledgeObject):
     def free_parameters(self) -> FreeParameters:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FreeParameters() As FreeParameters (Read Only)
                 | 
@@ -121,6 +131,8 @@ class Optimization(KnowledgeObject):
     def max_evals_nb(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property MaxEvalsNb() As long
                 | 
@@ -145,6 +157,8 @@ class Optimization(KnowledgeObject):
     def max_evals_wo_improvement(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property MaxEvalsWoImprovement() As long
                 | 
@@ -169,6 +183,8 @@ class Optimization(KnowledgeObject):
     def max_time(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property MaxTime() As long
                 | 
@@ -193,6 +209,8 @@ class Optimization(KnowledgeObject):
     def objective_parameter(self) -> RealParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ObjectiveParameter() As RealParam
                 | 
@@ -219,6 +237,8 @@ class Optimization(KnowledgeObject):
     def optimization_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property OptimizationType() As CatOptimizationType
                 | 
@@ -246,6 +266,8 @@ class Optimization(KnowledgeObject):
     def target_value(self) -> RealParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TargetValue() As RealParam (Read Only)
                 | 
@@ -262,6 +284,8 @@ class Optimization(KnowledgeObject):
     def use_max_evals_wo_improvement(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property UseMaxEvalsWoImprovement() As boolean
                 | 
@@ -286,6 +310,8 @@ class Optimization(KnowledgeObject):
     def use_max_time(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property UseMaxTime() As boolean
                 | 
@@ -308,6 +334,8 @@ class Optimization(KnowledgeObject):
     def run(self, i_with_stop_dialog: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Run(boolean iWithStopDialog)
                 | 
@@ -337,7 +365,7 @@ class Optimization(KnowledgeObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

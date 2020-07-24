@@ -16,6 +16,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class Relation(KnowledgeActivateObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -44,6 +46,8 @@ class Relation(KnowledgeActivateObject):
     def comment(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Comment() As CATBSTR
                 | 
@@ -76,6 +80,8 @@ class Relation(KnowledgeActivateObject):
     def context(self) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Context() As AnyObject (Read Only)
                 | 
@@ -98,6 +104,8 @@ class Relation(KnowledgeActivateObject):
     def nb_in_parameters(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property NbInParameters() As long (Read Only)
                 | 
@@ -113,6 +121,8 @@ class Relation(KnowledgeActivateObject):
     def nb_out_parameters(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property NbOutParameters() As long (Read Only)
                 | 
@@ -130,6 +140,8 @@ class Relation(KnowledgeActivateObject):
     def value(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Value() As CATBSTR (Read Only)
                 | 
@@ -155,6 +167,8 @@ class Relation(KnowledgeActivateObject):
     def get_in_parameter(self, i_index: int) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetInParameter(long iIndex) As AnyObject
                 | 
@@ -193,6 +207,8 @@ class Relation(KnowledgeActivateObject):
     def get_out_parameter(self, i_index: int) -> 'Parameter':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetOutParameter(long iIndex) As Parameter
                 | 
@@ -218,6 +234,8 @@ class Relation(KnowledgeActivateObject):
     def modify(self, i_value: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Modify(CATBSTR iValue)
                 | 
@@ -237,6 +255,8 @@ class Relation(KnowledgeActivateObject):
     def rename(self, i_name: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Rename(CATBSTR iName)
                 | 

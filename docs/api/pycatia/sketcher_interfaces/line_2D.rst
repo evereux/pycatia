@@ -1,3 +1,5 @@
+.. _Line_2d:
+
 pycatia.sketcher_interfaces.line_2D
 ===================================
 

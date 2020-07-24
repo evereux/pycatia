@@ -1,3 +1,5 @@
+.. _Split:
+
 pycatia.part_interfaces.split
 =============================
 

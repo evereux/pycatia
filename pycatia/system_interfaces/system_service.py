@@ -15,6 +15,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class SystemService(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
 
                 | System.IUnknown
@@ -35,6 +37,8 @@ class SystemService(AnyObject):
     def environ(self, i_env_string):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func Environ(CATBSTR iEnvString) As CATBSTR
                 | 
@@ -59,6 +63,8 @@ class SystemService(AnyObject):
     def evaluate(self, i_script_text, i_language, i_function_name, i_parameters):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func Evaluate(CATBSTR iScriptText,
                 | CATScriptLanguage iLanguage,
@@ -104,6 +110,8 @@ class SystemService(AnyObject):
     def execute_background_processus(self, i_executable_path):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func ExecuteBackgroundProcessus(CATBSTR iExecutablePath) As
                 | long
@@ -142,6 +150,8 @@ class SystemService(AnyObject):
     def execute_processus(self, i_executable_path):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func ExecuteProcessus(CATBSTR iExecutablePath) As long
                 | 
@@ -192,6 +202,8 @@ class SystemService(AnyObject):
     def execute_script(self, i_library_name, i_type, i_program_name, i_function_name, i_parameters):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func ExecuteScript(CATBSTR iLibraryName,
                 | CatScriptLibraryType iType,
@@ -237,6 +249,8 @@ class SystemService(AnyObject):
     def print(self, i_string):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub Print(CATBSTR iString)
                 | 

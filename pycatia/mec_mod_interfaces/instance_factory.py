@@ -16,6 +16,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class InstanceFactory(Factory):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -97,6 +99,8 @@ class InstanceFactory(Factory):
     def instantiation_mode(self) -> False:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property InstantiationMode(CATBSTR iInstantiationModeBSTR) (Write
                 | Only)
@@ -130,6 +134,8 @@ class InstanceFactory(Factory):
     def add_instance(self, i_reference: AnyObject) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddInstance(AnyObject iReference) As AnyObject
                 | 
@@ -155,6 +161,8 @@ class InstanceFactory(Factory):
     def begin_instance_factory(self, i_name_of_reference: str, i_name_of_document: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub BeginInstanceFactory(CATBSTR iNameOfReference,
                 | CATBSTR iNameOfDocument)
@@ -191,6 +199,8 @@ class InstanceFactory(Factory):
     def begin_instantiate(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub BeginInstantiate()
                 | 
@@ -214,6 +224,8 @@ class InstanceFactory(Factory):
     def end_instance_factory(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub EndInstanceFactory()
                 | 
@@ -236,6 +248,8 @@ class InstanceFactory(Factory):
     def end_instantiate(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub EndInstantiate()
                 | 
@@ -259,6 +273,8 @@ class InstanceFactory(Factory):
     def get_parameter(self, i_name: str) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetParameter(CATBSTR iName) As AnyObject
                 | 
@@ -292,6 +308,8 @@ class InstanceFactory(Factory):
     def instantiate(self) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Instantiate() As AnyObject
                 | 
@@ -319,6 +337,8 @@ class InstanceFactory(Factory):
     def put_input_data(self, i_name: str, i_input: AnyObject) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutInputData(CATBSTR iName,
                 | CATBaseDispatch iInput)

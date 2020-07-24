@@ -16,6 +16,8 @@ from pycatia.types import cat_variant
 class Hyperlink(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -36,6 +38,8 @@ class Hyperlink(AnyObject):
     def add_url(self, i_url: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddUrl(CATBSTR iUrl)
                 | 
@@ -63,6 +67,8 @@ class Hyperlink(AnyObject):
     def count_object(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func CountObject() As long
                 | 
@@ -86,6 +92,8 @@ class Hyperlink(AnyObject):
     def item_object(self, i_index: cat_variant) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func ItemObject(CATVariant iIndex) As CATBSTR
                 | 
@@ -120,6 +128,8 @@ class Hyperlink(AnyObject):
     def remove_object(self, i_index: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveObject(CATVariant iIndex)
                 | 

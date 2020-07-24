@@ -15,6 +15,8 @@ from pycatia.system_interfaces.setting_controller import SettingController
 class SettingRepository(SettingController):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
 
                 | System.IUnknown
@@ -37,6 +39,8 @@ class SettingRepository(SettingController):
     def get_attr(self, i_attr_name):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetAttr(CATBSTR iAttrName) As CATVariant
                 | 
@@ -62,6 +66,8 @@ class SettingRepository(SettingController):
     def get_attr_array(self, i_attr_name):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetAttrArray(CATBSTR iAttrName) As
                 | CATSafeArrayVariant
@@ -88,6 +94,8 @@ class SettingRepository(SettingController):
     def get_attr_info(self, i_attr_name, admin_level, locked, o_modified):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub GetAttrInfo(CATBSTR iAttrName,
                 | CATBSTR AdminLevel,
@@ -171,12 +179,14 @@ class SettingRepository(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def put_attr(self, i_attr_name, i_attr):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub PutAttr(CATBSTR iAttrName,
                 | CATVariant iAttr)
@@ -213,12 +223,14 @@ class SettingRepository(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def put_attr_array(self, i_attr_name, i_array):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub PutAttrArray(CATBSTR iAttrName,
                 | CATSafeArrayVariant iArray)
@@ -255,12 +267,14 @@ class SettingRepository(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_attr_lock(self, i_attr_name, i_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetAttrLock(CATBSTR iAttrName,
                 | boolean iLocked)
@@ -299,7 +313,7 @@ class SettingRepository(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

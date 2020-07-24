@@ -15,6 +15,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class Viewpoint3D(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -47,6 +49,8 @@ class Viewpoint3D(AnyObject):
     def field_of_view(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FieldOfView() As double
                 | 
@@ -79,6 +83,8 @@ class Viewpoint3D(AnyObject):
     def focus_distance(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FocusDistance() As double
                 | 
@@ -111,6 +117,8 @@ class Viewpoint3D(AnyObject):
     def projection_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ProjectionMode() As CatProjectionMode
                 | 
@@ -140,6 +148,8 @@ class Viewpoint3D(AnyObject):
     def zoom(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Zoom() As double
                 | 
@@ -175,6 +185,8 @@ class Viewpoint3D(AnyObject):
     def get_origin(self, origin: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetOrigin(CATSafeArrayVariant origin)
                 | 
@@ -206,12 +218,14 @@ class Viewpoint3D(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_sight_direction(self, o_sight: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetSightDirection(CATSafeArrayVariant oSight)
                 | 
@@ -244,12 +258,14 @@ class Viewpoint3D(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_up_direction(self, o_up: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetUpDirection(CATSafeArrayVariant oUp)
                 | 
@@ -280,12 +296,14 @@ class Viewpoint3D(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def put_origin(self, origin: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutOrigin(CATSafeArrayVariant origin)
                 | 
@@ -316,12 +334,14 @@ class Viewpoint3D(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def put_sight_direction(self, o_sight: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutSightDirection(CATSafeArrayVariant oSight)
                 | 
@@ -354,12 +374,14 @@ class Viewpoint3D(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def put_up_direction(self, o_up: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutUpDirection(CATSafeArrayVariant oUp)
                 | 
@@ -389,7 +411,7 @@ class Viewpoint3D(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

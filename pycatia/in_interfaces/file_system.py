@@ -17,6 +17,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class FileSystem(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -44,6 +46,8 @@ class FileSystem(AnyObject):
     def file_separator(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FileSeparator() As CATBSTR (Read Only)
                 | 
@@ -65,6 +69,8 @@ class FileSystem(AnyObject):
     def path_separator(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PathSeparator() As CATBSTR (Read Only)
                 | 
@@ -85,6 +91,8 @@ class FileSystem(AnyObject):
     def temporary_directory(self) -> Folder:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TemporaryDirectory() As Folder (Read Only)
                 | 
@@ -106,6 +114,8 @@ class FileSystem(AnyObject):
     def concatenate_paths(self, i_path_chunk1: str, i_path_chunk2: str) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func ConcatenatePaths(CATBSTR iPathChunk1,
                 | CATBSTR iPathChunk2) As CATBSTR
@@ -136,6 +146,8 @@ class FileSystem(AnyObject):
     def copy_file(self, i_path_source: str, i_path_destination: str, i_overwrite: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub CopyFile(CATBSTR iPathSource,
                 | CATBSTR iPathDestination,
@@ -183,12 +195,14 @@ class FileSystem(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def copy_folder(self, i_source_path: str, i_destination_path: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub CopyFolder(CATBSTR iSourcePath,
                 | CATBSTR iDestinationPath)
@@ -223,6 +237,8 @@ class FileSystem(AnyObject):
     def create_file(self, i_path: str, i_overwrite: bool) -> File:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func CreateFile(CATBSTR iPath,
                 | boolean iOverwrite) As File
@@ -259,6 +275,8 @@ class FileSystem(AnyObject):
     def create_folder(self, i_path: str) -> Folder:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateFolder(CATBSTR iPath) As Folder
                 | 
@@ -289,6 +307,8 @@ class FileSystem(AnyObject):
     def delete_file(self, i_path: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DeleteFile(CATBSTR iPath)
                 | 
@@ -315,6 +335,8 @@ class FileSystem(AnyObject):
     def delete_folder(self, i_path: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DeleteFolder(CATBSTR iPath)
                 | 
@@ -341,6 +363,8 @@ class FileSystem(AnyObject):
     def file_exists(self, i_path: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func FileExists(CATBSTR iPath) As boolean
                 | 
@@ -369,6 +393,8 @@ class FileSystem(AnyObject):
     def folder_exists(self, i_path: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func FolderExists(CATBSTR iPath) As boolean
                 | 
@@ -397,6 +423,8 @@ class FileSystem(AnyObject):
     def get_file(self, i_path: str) -> File:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetFile(CATBSTR iPath) As File
                 | 
@@ -424,6 +452,8 @@ class FileSystem(AnyObject):
     def get_folder(self, i_path: str) -> Folder:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetFolder(CATBSTR iPath) As Folder
                 | 

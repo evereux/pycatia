@@ -15,6 +15,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class DrawingArrow(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -36,6 +38,8 @@ class DrawingArrow(AnyObject):
     def head_symbol(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property HeadSymbol() As CatSymbolType
                 | 
@@ -65,6 +69,8 @@ class DrawingArrow(AnyObject):
     def head_target(self) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property HeadTarget() As CATBaseDispatch
                 | 
@@ -94,6 +100,8 @@ class DrawingArrow(AnyObject):
     def nb_interruption(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property NbInterruption() As long (Read Only)
                 | 
@@ -115,6 +123,8 @@ class DrawingArrow(AnyObject):
     def nb_point(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property NbPoint() As long (Read Only)
                 | 
@@ -136,6 +146,8 @@ class DrawingArrow(AnyObject):
     def tail_symbol(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TailSymbol() As CatSymbolType
                 | 
@@ -165,6 +177,8 @@ class DrawingArrow(AnyObject):
     def tail_target(self) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property TailTarget() As CATBaseDispatch
                 | 
@@ -197,6 +211,8 @@ class DrawingArrow(AnyObject):
                          i_second_point_y: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddInterruption(double iFirstPointX,
                 | double iFirstPointY,
@@ -237,6 +253,8 @@ class DrawingArrow(AnyObject):
     def add_point(self, i_num: int, i_x: float, i_y: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddPoint(long iNum,
                 | double iX,
@@ -272,6 +290,8 @@ class DrawingArrow(AnyObject):
     def get_interruptions(self, o_interruptions: tuple) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetInterruptions(CATSafeArrayVariant oInterruptions) As
                 | long
@@ -300,6 +320,8 @@ class DrawingArrow(AnyObject):
     def get_point(self, i_num: int, o_x: float, o_y: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetPoint(long iNum,
                 | double oX,
@@ -332,6 +354,8 @@ class DrawingArrow(AnyObject):
     def get_points(self, o_points: tuple) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetPoints(CATSafeArrayVariant oPoints) As long
                 | 
@@ -359,6 +383,8 @@ class DrawingArrow(AnyObject):
     def modify_point(self, i_num: int, i_x: float, i_y: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub ModifyPoint(long iNum,
                 | double iX,
@@ -393,6 +419,8 @@ class DrawingArrow(AnyObject):
     def remove_interruption(self, i_num: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveInterruption(long iNum)
                 | 
@@ -419,6 +447,8 @@ class DrawingArrow(AnyObject):
     def remove_point(self, i_num: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemovePoint(long iNum)
                 | 

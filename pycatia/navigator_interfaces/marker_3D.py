@@ -16,6 +16,8 @@ from pycatia.types import cat_variant
 class Marker3D(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -37,6 +39,8 @@ class Marker3D(AnyObject):
     def fill(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Fill() As long
                 | 
@@ -70,6 +74,8 @@ class Marker3D(AnyObject):
     def frame(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Frame() As long
                 | 
@@ -103,6 +109,8 @@ class Marker3D(AnyObject):
     def text(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Text() As CATBSTR
                 | 
@@ -135,6 +143,8 @@ class Marker3D(AnyObject):
     def text_font(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TextFont() As CATBSTR
                 | 
@@ -167,6 +177,8 @@ class Marker3D(AnyObject):
     def text_orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TextOrientation() As CatMarkerTextOrientation
                 | 
@@ -199,6 +211,8 @@ class Marker3D(AnyObject):
     def text_size(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TextSize() As double
                 | 
@@ -231,6 +245,8 @@ class Marker3D(AnyObject):
     def type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Type() As CatMarker3DType (Read Only)
                 | 
@@ -254,6 +270,8 @@ class Marker3D(AnyObject):
     def add_object(self, i_object: AnyObject) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddObject(AnyObject iObject)
                 | 
@@ -281,6 +299,8 @@ class Marker3D(AnyObject):
     def count_object(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func CountObject() As long
                 | 
@@ -304,6 +324,8 @@ class Marker3D(AnyObject):
     def get_object_positions(self, i_index: cat_variant, o_coordinates: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetObjectPositions(CATVariant iIndex,
                 | CATSafeArrayVariant oCoordinates)
@@ -346,6 +368,8 @@ class Marker3D(AnyObject):
     def get_text_positions(self, o_coordinates: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetTextPositions(CATSafeArrayVariant oCoordinates)
                 | 
@@ -390,12 +414,14 @@ class Marker3D(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def item_object(self, i_index: cat_variant) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func ItemObject(CATVariant iIndex) As CATBaseDispatch
                 | 
@@ -430,6 +456,8 @@ class Marker3D(AnyObject):
     def remove_object(self, i_index: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveObject(CATVariant iIndex)
                 | 
@@ -460,6 +488,8 @@ class Marker3D(AnyObject):
     def set_object_positions(self, i_index: cat_variant, i_coordinates: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetObjectPositions(CATVariant iIndex,
                 | CATSafeArrayVariant iCoordinates)
@@ -502,6 +532,8 @@ class Marker3D(AnyObject):
     def set_text_positions(self, i_coordinates: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetTextPositions(CATSafeArrayVariant iCoordinates)
                 | 
@@ -546,12 +578,14 @@ class Marker3D(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def update(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Update()
                 | 

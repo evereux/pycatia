@@ -16,6 +16,8 @@ class Publication(AnyObject):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -37,6 +39,8 @@ class Publication(AnyObject):
     def relay(self) -> False:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Relay(Publication iPub) (Write Only)
                 | 
@@ -72,6 +76,8 @@ class Publication(AnyObject):
     def valuation(self) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Valuation() As CATBaseDispatch
                 | 

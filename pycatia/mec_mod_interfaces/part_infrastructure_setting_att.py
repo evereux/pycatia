@@ -15,6 +15,8 @@ from pycatia.system_interfaces.setting_controller import SettingController
 class PartInfrastructureSettingAtt(SettingController):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -40,6 +42,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def also_delete_exclusive_parents(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AlsoDeleteExclusiveParents() As boolean
                 | 
@@ -81,6 +85,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def axis_system_size(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AxisSystemSize() As short
                 | 
@@ -113,6 +119,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def bodies_under_operations_in_tree(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property BodiesUnderOperationsInTree() As boolean
                 | 
@@ -155,6 +163,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def color_synchronization_editability(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ColorSynchronizationEditability() As boolean
                 | 
@@ -201,6 +211,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def color_synchronization_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ColorSynchronizationMode() As boolean
                 | 
@@ -245,6 +257,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def color_synchronization_mode_manage(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ColorSynchronizationModeManage() As boolean
                 | 
@@ -288,6 +302,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def color_synchronization_mode_on_feature(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ColorSynchronizationModeOnFeature() As boolean
                 | 
@@ -332,6 +348,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def color_synchronization_mode_on_sub_elements(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ColorSynchronizationModeOnSubElements() As boolean
                 | 
@@ -377,6 +395,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def colors3_d_experience_management(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Colors3DExperienceManagement() As boolean
                 | 
@@ -423,6 +443,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def constraints_in_geometry(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ConstraintsInGeometry() As boolean
                 | 
@@ -460,6 +482,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def constraints_node_in_tree(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ConstraintsNodeInTree() As boolean
                 | 
@@ -499,6 +523,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def contextual_features_selectable_at_creation(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ContextualFeaturesSelectableAtCreation() As
                 | boolean
@@ -539,6 +565,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def default_colors_editability(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DefaultColorsEditability() As boolean
                 | 
@@ -584,6 +612,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def delete_warning_box(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DeleteWarningBox() As boolean
                 | 
@@ -621,6 +651,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def display_geometry_after_current(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DisplayGeometryAfterCurrent() As boolean
                 | 
@@ -659,6 +691,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def expand_sketch_based_features_node_at_creation(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExpandSketchBasedFeaturesNodeAtCreation() As
                 | boolean
@@ -699,6 +733,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def external_references_as_visible(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExternalReferencesAsVisible() As boolean
                 | 
@@ -738,6 +774,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def external_references_assembly_root_context(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExternalReferencesAssemblyRootContext() As boolean
                 | 
@@ -777,6 +815,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def external_references_node_in_tree(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExternalReferencesNodeInTree() As boolean
                 | 
@@ -818,6 +858,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def hybrid_design_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property HybridDesignMode() As boolean
                 | 
@@ -856,6 +898,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def knowledge_in_hybrid_design_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property KnowledgeInHybridDesignMode() As boolean
                 | 
@@ -897,6 +941,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def linked_external_references(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LinkedExternalReferences() As boolean
                 | 
@@ -934,6 +980,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def linked_external_references_only_on_publication(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LinkedExternalReferencesOnlyOnPublication() As
                 | boolean
@@ -976,6 +1024,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def linked_external_references_warning_at_creation(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property LinkedExternalReferencesWarningAtCreation() As
                 | boolean
@@ -1019,6 +1069,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def naming_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NamingMode() As CatPartElementsNamingMode
                 | 
@@ -1061,6 +1113,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def new_with3_d_support(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NewWith3DSupport() As boolean
                 | 
@@ -1097,6 +1151,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def new_with_axis_system(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NewWithAxisSystem() As boolean
                 | 
@@ -1133,6 +1189,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def new_with_gs(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NewWithGS() As boolean
                 | 
@@ -1169,6 +1227,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def new_with_ogs(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NewWithOGS() As boolean
                 | 
@@ -1205,6 +1265,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def new_with_panel(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property NewWithPanel() As boolean
                 | 
@@ -1242,6 +1304,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def only_current_operated_solid_set_in_geometry(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OnlyCurrentOperatedSolidSetInGeometry() As boolean
                 | 
@@ -1282,6 +1346,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def only_current_solid_set_in_geometry(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OnlyCurrentSolidSetInGeometry() As boolean
                 | 
@@ -1322,6 +1388,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def parameters_node_in_tree(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ParametersNodeInTree() As boolean
                 | 
@@ -1361,6 +1429,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def publish_topological_elements(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PublishTopologicalElements() As boolean
                 | 
@@ -1400,6 +1470,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def relations_node_in_tree(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RelationsNodeInTree() As boolean
                 | 
@@ -1440,6 +1512,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def replace_only_after_current(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ReplaceOnlyAfterCurrent() As boolean
                 | 
@@ -1478,6 +1552,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def surface_elements_location(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SurfaceElementsLocation() As
                 | CatPartSurfaceElementsLocation
@@ -1521,6 +1597,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def true_color_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TrueColorMode() As boolean
                 | 
@@ -1564,6 +1642,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def update_elements_refreshed(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property UpdateElementsRefreshed() As boolean
                 | 
@@ -1602,6 +1682,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def update_linked_external_references(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property UpdateLinkedExternalReferences() As boolean
                 | 
@@ -1641,6 +1723,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def update_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property UpdateMode() As CatPartUpdateMode
                 | 
@@ -1679,6 +1763,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def update_stopped_on_error(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property UpdateStoppedOnError() As boolean
                 | 
@@ -1714,6 +1800,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_also_delete_exclusive_parents_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetAlsoDeleteExclusiveParentsInfo(CATBSTR
                 | ioAdminLevel,
@@ -1750,6 +1838,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_axis_system_size_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetAxisSystemSizeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1785,6 +1875,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_bodies_under_operations_in_tree_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetBodiesUnderOperationsInTreeInfo(CATBSTR
                 | ioAdminLevel,
@@ -1821,6 +1913,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_color_synchronization_editability_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetColorSynchronizationEditabilityInfo(CATBSTR
                 | ioAdminLevel,
@@ -1857,6 +1951,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_color_synchronization_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetColorSynchronizationModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -1892,6 +1988,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_color_synchronization_mode_manage_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetColorSynchronizationModeManageInfo(CATBSTR
                 | ioAdminLevel,
@@ -1928,6 +2026,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_color_synchronization_mode_on_feature_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetColorSynchronizationModeOnFeatureInfo(CATBSTR
                 | ioAdminLevel,
@@ -1964,6 +2064,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_color_synchronization_mode_on_sub_elements_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetColorSynchronizationModeOnSubElementsInfo(CATBSTR
                 | ioAdminLevel,
@@ -2001,6 +2103,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_colors3_d_experience_management_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetColors3DExperienceManagementInfo(CATBSTR
                 | ioAdminLevel,
@@ -2037,6 +2141,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_constraints_in_geometry_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetConstraintsInGeometryInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2072,6 +2178,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_constraints_node_in_tree_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetConstraintsNodeInTreeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2107,6 +2215,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_contextual_features_selectable_at_creation_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetContextualFeaturesSelectableAtCreationInfo(CATBSTR
                 | ioAdminLevel,
@@ -2144,6 +2254,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_default_colors_editability_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDefaultColorsEditabilityInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2179,6 +2291,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_delete_warning_box_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDeleteWarningBoxInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2214,6 +2328,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_display_geometry_after_current_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDisplayGeometryAfterCurrentInfo(CATBSTR
                 | ioAdminLevel,
@@ -2250,6 +2366,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_expand_sketch_based_features_node_at_creation_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetExpandSketchBasedFeaturesNodeAtCreationInfo(CATBSTR
                 | ioAdminLevel,
@@ -2287,6 +2405,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_external_references_as_visible_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetExternalReferencesAsVisibleInfo(CATBSTR
                 | ioAdminLevel,
@@ -2323,6 +2443,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_external_references_assembly_root_context_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetExternalReferencesAssemblyRootContextInfo(CATBSTR
                 | ioAdminLevel,
@@ -2360,6 +2482,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_external_references_node_in_tree_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetExternalReferencesNodeInTreeInfo(CATBSTR
                 | ioAdminLevel,
@@ -2396,6 +2520,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_hybrid_design_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetHybridDesignModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2431,6 +2557,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_knowledge_in_hybrid_design_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetKnowledgeInHybridDesignModeInfo(CATBSTR
                 | ioAdminLevel,
@@ -2467,6 +2595,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_linked_external_references_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetLinkedExternalReferencesInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2502,6 +2632,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_linked_external_references_only_on_publication_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetLinkedExternalReferencesOnlyOnPublicationInfo(CATBSTR
                 | ioAdminLevel,
@@ -2539,6 +2671,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_linked_external_references_warning_at_creation_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetLinkedExternalReferencesWarningAtCreationInfo(CATBSTR
                 | ioAdminLevel,
@@ -2576,6 +2710,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_naming_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNamingModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2611,6 +2747,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_new_with3_d_support_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNewWith3DSupportInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2646,6 +2784,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_new_with_axis_system_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNewWithAxisSystemInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2681,6 +2821,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_new_with_gs_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNewWithGSInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2716,6 +2858,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_new_with_ogs_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNewWithOGSInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2751,6 +2895,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_new_with_panel_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNewWithPanelInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2786,6 +2932,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_only_current_operated_solid_set_in_geometry_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetOnlyCurrentOperatedSolidSetInGeometryInfo(CATBSTR
                 | ioAdminLevel,
@@ -2823,6 +2971,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_only_current_solid_set_in_geometry_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetOnlyCurrentSolidSetInGeometryInfo(CATBSTR
                 | ioAdminLevel,
@@ -2859,6 +3009,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_parameters_node_in_tree_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetParametersNodeInTreeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2894,6 +3046,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_publish_topological_elements_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPublishTopologicalElementsInfo(CATBSTR
                 | ioAdminLevel,
@@ -2930,6 +3084,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_relations_node_in_tree_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetRelationsNodeInTreeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -2965,6 +3121,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_replace_only_after_current_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetReplaceOnlyAfterCurrentInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -3000,6 +3158,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_surface_elements_location_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetSurfaceElementsLocationInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -3035,6 +3195,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_true_color_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetTrueColorModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -3070,6 +3232,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_update_elements_refreshed_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetUpdateElementsRefreshedInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -3105,6 +3269,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_update_linked_external_references_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetUpdateLinkedExternalReferencesInfo(CATBSTR
                 | ioAdminLevel,
@@ -3141,6 +3307,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_update_mode_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetUpdateModeInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -3176,6 +3344,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def get_update_stopped_on_error_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetUpdateStoppedOnErrorInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -3211,6 +3381,8 @@ class PartInfrastructureSettingAtt(SettingController):
     def set_also_delete_exclusive_parents_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAlsoDeleteExclusiveParentsLock(boolean iLocked)
                 | 
@@ -3246,12 +3418,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_axis_system_size_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAxisSystemSizeLock(boolean iLocked)
                 | 
@@ -3286,12 +3460,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_bodies_under_operations_in_tree_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetBodiesUnderOperationsInTreeLock(boolean iLocked)
                 | 
@@ -3327,12 +3503,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_color_synchronization_editability_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetColorSynchronizationEditabilityLock(boolean
                 | iLocked)
@@ -3369,12 +3547,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_color_synchronization_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetColorSynchronizationModeLock(boolean iLocked)
                 | 
@@ -3409,12 +3589,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_color_synchronization_mode_manage_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetColorSynchronizationModeManageLock(boolean iLocked)
                 | 
@@ -3450,12 +3632,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_color_synchronization_mode_on_feature_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetColorSynchronizationModeOnFeatureLock(boolean
                 | iLocked)
@@ -3492,12 +3676,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_color_synchronization_mode_on_sub_elements_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetColorSynchronizationModeOnSubElementsLock(boolean
                 | iLocked)
@@ -3534,12 +3720,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_colors3_d_experience_management_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetColors3DExperienceManagementLock(boolean iLocked)
                 | 
@@ -3575,12 +3763,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_constraints_in_geometry_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetConstraintsInGeometryLock(boolean iLocked)
                 | 
@@ -3615,12 +3805,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_constraints_node_in_tree_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetConstraintsNodeInTreeLock(boolean iLocked)
                 | 
@@ -3655,12 +3847,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_contextual_features_selectable_at_creation_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetContextualFeaturesSelectableAtCreationLock(boolean
                 | iLocked)
@@ -3697,12 +3891,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_default_colors_editability_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDefaultColorsEditabilityLock(boolean iLocked)
                 | 
@@ -3737,12 +3933,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_delete_warning_box_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDeleteWarningBoxLock(boolean iLocked)
                 | 
@@ -3777,12 +3975,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_display_geometry_after_current_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDisplayGeometryAfterCurrentLock(boolean iLocked)
                 | 
@@ -3818,12 +4018,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_expand_sketch_based_features_node_at_creation_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetExpandSketchBasedFeaturesNodeAtCreationLock(boolean
                 | iLocked)
@@ -3860,12 +4062,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_external_references_as_visible_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetExternalReferencesAsVisibleLock(boolean iLocked)
                 | 
@@ -3901,12 +4105,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_external_references_assembly_root_context_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetExternalReferencesAssemblyRootContextLock(boolean
                 | iLocked)
@@ -3943,12 +4149,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_external_references_node_in_tree_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetExternalReferencesNodeInTreeLock(boolean iLocked)
                 | 
@@ -3984,12 +4192,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_hybrid_design_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetHybridDesignModeLock(boolean iLocked)
                 | 
@@ -4024,12 +4234,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_knowledge_in_hybrid_design_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetKnowledgeInHybridDesignModeLock(boolean iLocked)
                 | 
@@ -4065,12 +4277,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_linked_external_references_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLinkedExternalReferencesLock(boolean iLocked)
                 | 
@@ -4105,12 +4319,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_linked_external_references_only_on_publication_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLinkedExternalReferencesOnlyOnPublicationLock(boolean
                 | iLocked)
@@ -4147,12 +4363,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_linked_external_references_warning_at_creation_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLinkedExternalReferencesWarningAtCreationLock(boolean
                 | iLocked)
@@ -4189,12 +4407,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_naming_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetNamingModeLock(boolean iLocked)
                 | 
@@ -4229,12 +4449,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_new_with3_d_support_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetNewWith3DSupportLock(boolean iLocked)
                 | 
@@ -4269,12 +4491,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_new_with_axis_system_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetNewWithAxisSystemLock(boolean iLocked)
                 | 
@@ -4309,12 +4533,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_new_with_gs_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetNewWithGSLock(boolean iLocked)
                 | 
@@ -4349,12 +4575,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_new_with_ogs_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetNewWithOGSLock(boolean iLocked)
                 | 
@@ -4389,12 +4617,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_new_with_panel_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetNewWithPanelLock(boolean iLocked)
                 | 
@@ -4429,12 +4659,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_only_current_operated_solid_set_in_geometry_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetOnlyCurrentOperatedSolidSetInGeometryLock(boolean
                 | iLocked)
@@ -4471,12 +4703,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_only_current_solid_set_in_geometry_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetOnlyCurrentSolidSetInGeometryLock(boolean iLocked)
                 | 
@@ -4512,12 +4746,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_parameters_node_in_tree_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetParametersNodeInTreeLock(boolean iLocked)
                 | 
@@ -4552,12 +4788,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_publish_topological_elements_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPublishTopologicalElementsLock(boolean iLocked)
                 | 
@@ -4593,12 +4831,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_relations_node_in_tree_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetRelationsNodeInTreeLock(boolean iLocked)
                 | 
@@ -4633,12 +4873,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_replace_only_after_current_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetReplaceOnlyAfterCurrentLock(boolean iLocked)
                 | 
@@ -4673,12 +4915,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_surface_elements_location_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetSurfaceElementsLocationLock(boolean iLocked)
                 | 
@@ -4713,12 +4957,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_update_elements_refreshed_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetUpdateElementsRefreshedLock(boolean iLocked)
                 | 
@@ -4753,12 +4999,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_update_linked_external_references_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetUpdateLinkedExternalReferencesLock(boolean iLocked)
                 | 
@@ -4794,12 +5042,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_update_mode_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetUpdateModeLock(boolean iLocked)
                 | 
@@ -4834,12 +5084,14 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_update_stopped_on_error_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetUpdateStoppedOnErrorLock(boolean iLocked)
                 | 
@@ -4874,7 +5126,7 @@ class PartInfrastructureSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

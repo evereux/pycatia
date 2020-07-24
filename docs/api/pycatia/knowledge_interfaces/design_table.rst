@@ -1,3 +1,5 @@
+.. _Design_table:
+
 pycatia.knowledge_interfaces.design_table
 =========================================
 

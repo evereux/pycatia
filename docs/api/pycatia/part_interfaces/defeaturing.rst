@@ -1,3 +1,5 @@
+.. _Defeaturing:
+
 pycatia.part_interfaces.defeaturing
 ===================================
 

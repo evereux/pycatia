@@ -16,6 +16,8 @@ from pycatia.in_interfaces.files import Files
 class Folder(FileComponent):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -40,6 +42,8 @@ class Folder(FileComponent):
     def files(self) -> Files:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Files() As Files (Read Only)
                 | 
@@ -62,6 +66,8 @@ class Folder(FileComponent):
     def sub_folders(self) -> 'Folders':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SubFolders() As Folders (Read Only)
                 | 

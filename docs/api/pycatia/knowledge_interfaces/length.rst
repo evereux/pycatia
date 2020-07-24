@@ -1,3 +1,5 @@
+.. _Length:
+
 pycatia.knowledge_interfaces.length
 ===================================
 

@@ -28,6 +28,8 @@ from pycatia.types import cat_variant
 class Parameters(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -58,6 +60,8 @@ class Parameters(Collection):
     def root_parameter_set(self) -> 'ParameterSet':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property RootParameterSet() As ParameterSet (Read Only)
                 | 
@@ -74,6 +78,8 @@ class Parameters(Collection):
     def units(self) -> Units:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Units() As Units (Read Only)
                 | 
@@ -102,6 +108,8 @@ class Parameters(Collection):
     def create_boolean(self, i_name: str, i_value: bool):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateBoolean(CATBSTR iName,
                 | boolean iValue) As BoolParam
@@ -137,6 +145,8 @@ class Parameters(Collection):
     def create_dimension(self, i_name: str, i_magnitude: str, i_value: float) -> Dimension:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateDimension(CATBSTR iName,
                 | CATBSTR iMagnitude,
@@ -183,6 +193,8 @@ class Parameters(Collection):
     def create_integer(self, i_name: str, i_value: int) -> IntParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateInteger(CATBSTR iName,
                 | long iValue) As IntParam
@@ -218,6 +230,8 @@ class Parameters(Collection):
     def create_list(self, i_name: str) -> ListParameter:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateList(CATBSTR iName) As ListParameter
                 | 
@@ -246,6 +260,8 @@ class Parameters(Collection):
     def create_real(self, i_name: str, i_value: float) -> RealParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateReal(CATBSTR iName,
                 | double iValue) As RealParam
@@ -281,6 +297,8 @@ class Parameters(Collection):
     def create_set_of_parameters(self, i_father: AnyObject) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub CreateSetOfParameters(AnyObject iFather)
                 | 
@@ -295,6 +313,8 @@ class Parameters(Collection):
     def create_string(self, i_name: str, i_value: str) -> StrParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateString(CATBSTR iName,
                 | CATBSTR iValue) As StrParam
@@ -327,6 +347,8 @@ class Parameters(Collection):
     def get_name_to_use_in_relation(self, i_object: AnyObject) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetNameToUseInRelation(AnyObject iObject) As CATBSTR
                 | 
@@ -362,6 +384,8 @@ class Parameters(Collection):
     def item(self, index: cat_variant):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic help
                 | Item
                 | o Func Item(    CATVariant    iIndex) As Parameter
@@ -414,6 +438,8 @@ class Parameters(Collection):
     def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(CATVariant iIndex)
                 | 
@@ -445,6 +471,8 @@ class Parameters(Collection):
     def sub_list(self, i_object: AnyObject, i_recursively: bool) -> 'Parameters':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func SubList(AnyObject iObject,
                 | boolean iRecursively) As Parameters

@@ -1,3 +1,5 @@
+.. _Point:
+
 pycatia.hybrid_shape_interfaces.point
 =====================================
 

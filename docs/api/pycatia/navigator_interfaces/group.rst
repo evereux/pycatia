@@ -1,3 +1,5 @@
+.. _Group:
+
 pycatia.navigator_interfaces.group
 ==================================
 
