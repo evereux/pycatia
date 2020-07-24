@@ -8,3 +8,4 @@ pycatia
 
    pycatia/cat_logger
    pycatia/types
+   pycatia/version

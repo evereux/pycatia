@@ -141,10 +141,11 @@ A reminder for @evereux. I don't do this often and forget ...
 
 * Check version is correct.
 
-* Build source. ``python3 setup.py sdist bdist_wheel``
+* Build source. ``python setup.py sdist bdist_wheel``
    * Check source contents.
 
 * Build pycatia exe ``python -m nuitka --standalone pycatia.py``.
+  * copy build to win_32 folder and zip.
 
 * Merge changes with master branch and upload.
 
