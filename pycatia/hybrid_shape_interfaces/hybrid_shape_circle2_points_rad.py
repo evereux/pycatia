@@ -17,6 +17,8 @@ from pycatia.knowledge_interfaces.length import Length
 class HybridShapeCircle2PointsRad(HybridShapeCircle):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -55,6 +57,8 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
     def diameter(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Diameter() As Length (Read Only)
                 | 
@@ -78,6 +82,8 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
     def diameter_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DiameterMode() As boolean
                 | 
@@ -112,6 +118,8 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
     def orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation() As long
                 | 
@@ -148,6 +156,8 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
     def pt1(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Pt1() As Reference
                 | 
@@ -180,6 +190,8 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
     def pt2(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Pt2() As Reference
                 | 
@@ -210,6 +222,8 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
     def radius(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Radius() As Length (Read Only)
                 | 
@@ -240,6 +254,8 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
     def support(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
@@ -270,6 +286,8 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
     def is_geodesic(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func IsGeodesic() As boolean
                 | 
@@ -288,6 +306,8 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
     def set_geometry_on_support(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetGeometryOnSupport()
                 | 
@@ -302,6 +322,8 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
     def unset_geometry_on_support(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub UnsetGeometryOnSupport()
                 | 

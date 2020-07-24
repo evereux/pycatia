@@ -1,3 +1,5 @@
+.. _Analyze:
+
 pycatia.product_structure_interfaces.analyze
 ============================================
 

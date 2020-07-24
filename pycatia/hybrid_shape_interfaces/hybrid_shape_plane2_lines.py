@@ -16,6 +16,8 @@ from pycatia.in_interfaces.reference import Reference
 class HybridShapePlane2Lines(Plane):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -41,6 +43,8 @@ class HybridShapePlane2Lines(Plane):
     def first(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property First() As Reference
                 | 
@@ -77,6 +81,8 @@ class HybridShapePlane2Lines(Plane):
     def forbid_non_coplanar_lines(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ForbidNonCoplanarLines(boolean iCoplanarLines)
                 | 
@@ -101,6 +107,8 @@ class HybridShapePlane2Lines(Plane):
     def second(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Second() As Reference
                 | 

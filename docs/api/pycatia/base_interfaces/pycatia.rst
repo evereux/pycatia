@@ -1,3 +1,5 @@
+.. _Pycatia:
+
 pycatia.base_interfaces.pycatia
 ===============================
 

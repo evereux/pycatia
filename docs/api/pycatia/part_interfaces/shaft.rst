@@ -1,3 +1,5 @@
+.. _Shaft:
+
 pycatia.part_interfaces.shaft
 =============================
 

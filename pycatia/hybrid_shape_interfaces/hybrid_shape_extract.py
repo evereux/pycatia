@@ -17,6 +17,8 @@ class HybridShapeExtract(HybridShape):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -47,6 +49,8 @@ class HybridShapeExtract(HybridShape):
     def angular_threshold(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AngularThreshold() As double
                 | 
@@ -76,6 +80,8 @@ class HybridShapeExtract(HybridShape):
     def angular_threshold_activity(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AngularThresholdActivity() As boolean
                 | 
@@ -105,6 +111,8 @@ class HybridShapeExtract(HybridShape):
     def complementary_extract(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ComplementaryExtract() As boolean
                 | 
@@ -128,6 +136,8 @@ class HybridShapeExtract(HybridShape):
     def curvature_threshold(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CurvatureThreshold() As double
                 | 
@@ -157,6 +167,8 @@ class HybridShapeExtract(HybridShape):
     def curvature_threshold_activity(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CurvatureThresholdActivity() As boolean
                 | 
@@ -186,6 +198,8 @@ class HybridShapeExtract(HybridShape):
     def distance_threshold(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DistanceThreshold() As double
                 | 
@@ -215,6 +229,8 @@ class HybridShapeExtract(HybridShape):
     def distance_threshold_activity(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DistanceThresholdActivity() As boolean
                 | 
@@ -244,6 +260,8 @@ class HybridShapeExtract(HybridShape):
     def elem(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Elem() As Reference
                 | 
@@ -271,6 +289,8 @@ class HybridShapeExtract(HybridShape):
     def is_federated(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property IsFederated() As boolean
                 | 
@@ -294,6 +314,8 @@ class HybridShapeExtract(HybridShape):
     def propagation_type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PropagationType() As long
                 | 
@@ -323,6 +345,8 @@ class HybridShapeExtract(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 

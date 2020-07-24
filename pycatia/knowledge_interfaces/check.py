@@ -16,6 +16,8 @@ class Check(Relation):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -54,6 +56,8 @@ class Check(Relation):
     def diagnosis(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Diagnosis() As boolean (Read Only)
                 | 
@@ -70,6 +74,8 @@ class Check(Relation):
     def severity(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Severity() As long
                 | 

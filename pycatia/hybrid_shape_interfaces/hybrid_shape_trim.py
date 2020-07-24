@@ -16,6 +16,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeTrim(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -51,6 +53,8 @@ class HybridShapeTrim(HybridShape):
     def automatic_extrapolation_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AutomaticExtrapolationMode() As boolean
                 | 
@@ -82,6 +86,8 @@ class HybridShapeTrim(HybridShape):
     def connex(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Connex() As boolean
                 | 
@@ -113,6 +119,8 @@ class HybridShapeTrim(HybridShape):
     def first_elem(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstElem() As Reference
                 | 
@@ -147,6 +155,8 @@ class HybridShapeTrim(HybridShape):
     def first_orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstOrientation() As long
                 | 
@@ -200,6 +210,8 @@ class HybridShapeTrim(HybridShape):
     def intersection_computation(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property IntersectionComputation() As boolean
                 | 
@@ -232,6 +244,8 @@ class HybridShapeTrim(HybridShape):
     def keep_all_pieces(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property KeepAllPieces() As boolean
                 | 
@@ -263,6 +277,8 @@ class HybridShapeTrim(HybridShape):
     def manifold(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Manifold() As boolean
                 | 
@@ -293,6 +309,8 @@ class HybridShapeTrim(HybridShape):
     def mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Mode() As long
                 | 
@@ -323,6 +341,8 @@ class HybridShapeTrim(HybridShape):
     def second_elem(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondElem() As Reference
                 | 
@@ -357,6 +377,8 @@ class HybridShapeTrim(HybridShape):
     def second_orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondOrientation() As long
                 | 
@@ -410,6 +432,8 @@ class HybridShapeTrim(HybridShape):
     def simplify(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Simplify() As boolean
                 | 
@@ -445,6 +469,8 @@ class HybridShapeTrim(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
@@ -479,6 +505,8 @@ class HybridShapeTrim(HybridShape):
     def add_element_to_keep(self, i_element: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddElementToKeep(Reference iElement)
                 | 
@@ -508,12 +536,14 @@ class HybridShapeTrim(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_element_to_remove(self, i_element: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddElementToRemove(Reference iElement)
                 | 
@@ -543,12 +573,14 @@ class HybridShapeTrim(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_piece_cutter(self, i_rank: int, i_cutter_elem: int, i_orientation: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddPieceCutter(long iRank,
                 | long iCutterElem,
@@ -579,6 +611,8 @@ class HybridShapeTrim(HybridShape):
     def get_elem(self, i_rank: int) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetElem(long iRank) As Reference
                 | 
@@ -600,6 +634,8 @@ class HybridShapeTrim(HybridShape):
     def get_kept_elem(self, i_rank: int) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetKeptElem(long iRank) As Reference
                 | 
@@ -621,6 +657,8 @@ class HybridShapeTrim(HybridShape):
     def get_nb_elem(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNbElem() As long
                 | 
@@ -640,6 +678,8 @@ class HybridShapeTrim(HybridShape):
     def get_nb_elements_to_keep(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNbElementsToKeep() As long
                 | 
@@ -658,6 +698,8 @@ class HybridShapeTrim(HybridShape):
     def get_nb_elements_to_remove(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNbElementsToRemove() As long
                 | 
@@ -676,6 +718,8 @@ class HybridShapeTrim(HybridShape):
     def get_next_orientation(self, i_rank: int) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNextOrientation(long iRank) As long
                 | 
@@ -699,6 +743,8 @@ class HybridShapeTrim(HybridShape):
     def get_piece_cutter(self, i_rank: int, i_cutter_index: int, o_cutter_elem_idx: int, o_orientation: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetPieceCutter(long iRank,
                 | long iCutterIndex,
@@ -733,6 +779,8 @@ class HybridShapeTrim(HybridShape):
     def get_piece_discrimination_index(self, i_rank: int, o_index: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetPieceDiscriminationIndex(long iRank,
                 | long oIndex)
@@ -758,6 +806,8 @@ class HybridShapeTrim(HybridShape):
     def get_piece_nb_cutters(self, i_rank: int) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPieceNbCutters(long iRank) As long
                 | 
@@ -779,6 +829,8 @@ class HybridShapeTrim(HybridShape):
     def get_portion_to_keep(self, i_rank: int) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPortionToKeep(long iRank) As long
                 | 
@@ -801,6 +853,8 @@ class HybridShapeTrim(HybridShape):
     def get_previous_orientation(self, i_rank: int) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPreviousOrientation(long iRank) As long
                 | 
@@ -824,6 +878,8 @@ class HybridShapeTrim(HybridShape):
     def get_removed_elem(self, i_rank: int) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetRemovedElem(long iRank) As Reference
                 | 
@@ -845,6 +901,8 @@ class HybridShapeTrim(HybridShape):
     def invert_first_orientation(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InvertFirstOrientation()
                 | 
@@ -867,6 +925,8 @@ class HybridShapeTrim(HybridShape):
     def invert_second_orientation(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InvertSecondOrientation()
                 | 
@@ -886,6 +946,8 @@ class HybridShapeTrim(HybridShape):
     def remove_element_to_keep(self, i_rank: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveElementToKeep(long iRank)
                 | 
@@ -905,6 +967,8 @@ class HybridShapeTrim(HybridShape):
     def remove_element_to_remove(self, i_rank: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveElementToRemove(long iRank)
                 | 
@@ -924,6 +988,8 @@ class HybridShapeTrim(HybridShape):
     def remove_piece_cutter(self, i_rank: int, i_cutter_index: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemovePieceCutter(long iRank,
                 | long iCutterIndex)
@@ -948,6 +1014,8 @@ class HybridShapeTrim(HybridShape):
     def set_elem(self, i_rank: int, i_elem: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetElem(long iRank,
                 | Reference iElem)
@@ -981,12 +1049,14 @@ class HybridShapeTrim(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_next_orientation(self, i_rank: int, i_orientation: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetNextOrientation(long iRank,
                 | long iOrientation)
@@ -1012,6 +1082,8 @@ class HybridShapeTrim(HybridShape):
     def set_piece_discrimination_index(self, i_rank: int, i_index: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPieceDiscriminationIndex(long iRank,
                 | long iIndex)
@@ -1037,6 +1109,8 @@ class HybridShapeTrim(HybridShape):
     def set_portion_to_keep(self, i_rank: int, i_portion_number: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPortionToKeep(long iRank,
                 | long iPortionNumber)
@@ -1061,6 +1135,8 @@ class HybridShapeTrim(HybridShape):
     def set_previous_orientation(self, i_rank: int, i_orientation: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPreviousOrientation(long iRank,
                 | long iOrientation)

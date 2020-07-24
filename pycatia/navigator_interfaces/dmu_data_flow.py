@@ -15,6 +15,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class DMUDataFlow(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -36,6 +38,8 @@ class DMUDataFlow(AnyObject):
     def cache_export(self, i_directory: str, i_prefix: str, i_data: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub CacheExport(CATBSTR iDirectory,
                 | CATBSTR iPrefix,
@@ -67,6 +71,8 @@ class DMUDataFlow(AnyObject):
     def cache_import(self, i_directory: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub CacheImport(CATBSTR iDirectory)
                 | 
@@ -86,6 +92,8 @@ class DMUDataFlow(AnyObject):
     def collapse(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Collapse()
                 | 
@@ -100,6 +108,8 @@ class DMUDataFlow(AnyObject):
     def replace_by_cgr(self, i_directory: str, i_prefix: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ReplaceByCGR(CATBSTR iDirectory,
                 | CATBSTR iPrefix)
@@ -124,6 +134,8 @@ class DMUDataFlow(AnyObject):
     def save_as_frozen(self, i_directory: str, i_prefix: str, i_data: int, i_cache: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SaveAsFrozen(CATBSTR iDirectory,
                 | CATBSTR iPrefix,

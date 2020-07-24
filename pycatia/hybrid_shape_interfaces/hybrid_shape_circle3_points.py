@@ -16,6 +16,8 @@ from pycatia.in_interfaces.reference import Reference
 class HybridShapeCircle3Points(HybridShapeCircle):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -49,6 +51,8 @@ class HybridShapeCircle3Points(HybridShapeCircle):
     def element1(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Element1() As Reference
                 | 
@@ -82,6 +86,8 @@ class HybridShapeCircle3Points(HybridShapeCircle):
     def element2(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Element2() As Reference
                 | 
@@ -112,6 +118,8 @@ class HybridShapeCircle3Points(HybridShapeCircle):
     def element3(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Element3() As Reference
                 | 
@@ -145,6 +153,8 @@ class HybridShapeCircle3Points(HybridShapeCircle):
     def support(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
@@ -175,6 +185,8 @@ class HybridShapeCircle3Points(HybridShapeCircle):
     def remove_support(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveSupport()
                 | 

@@ -15,6 +15,8 @@ from pycatia.in_interfaces.viewer_2d import Viewer2D
 class SpecsViewer(Viewer2D):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -44,6 +46,8 @@ class SpecsViewer(Viewer2D):
     def layout(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Layout() As CatSpecsLayout
                 | 

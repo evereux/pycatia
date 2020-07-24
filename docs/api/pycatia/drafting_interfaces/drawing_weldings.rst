@@ -1,3 +1,5 @@
+.. _Drawing_weldings:
+
 pycatia.drafting_interfaces.drawing_weldings
 ============================================
 

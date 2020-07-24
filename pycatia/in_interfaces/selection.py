@@ -20,6 +20,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class Selection(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737)
 
                 | System.IUnknown
@@ -147,6 +149,8 @@ class Selection(AnyObject):
     def count(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Count() As long (Read Only)
                 | 
@@ -166,6 +170,8 @@ class Selection(AnyObject):
     def count2(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Count2() As long (Read Only)
                 | 
@@ -185,6 +191,8 @@ class Selection(AnyObject):
     def vis_properties(self) -> VisPropertySet:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property VisProperties() As VisPropertySet (Read Only)
                 | 
@@ -215,6 +223,8 @@ class Selection(AnyObject):
     def add(self, i_object: AnyObject) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Add(AnyObject iObject)
                 | 
@@ -271,6 +281,8 @@ class Selection(AnyObject):
     def clear(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Clear()
                 | 
@@ -290,6 +302,8 @@ class Selection(AnyObject):
     def copy(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Copy()
                 | 
@@ -324,6 +338,8 @@ class Selection(AnyObject):
     def cut(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Cut()
                 | 
@@ -359,6 +375,8 @@ class Selection(AnyObject):
     def delete(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Delete()
                 | 
@@ -384,6 +402,8 @@ class Selection(AnyObject):
     def filter_correspondence(self, i_filter_type: tuple) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func FilterCorrespondence(CATSafeArrayVariant iFilterType) As
                 | boolean
@@ -549,6 +569,8 @@ class Selection(AnyObject):
     def find_object(self, i_object_type: str) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func FindObject(CATBSTR iObjectType) As AnyObject
                 | 
@@ -584,6 +606,8 @@ class Selection(AnyObject):
                                       o_document_window_location: tuple) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func IndicateOrSelectElement2D(CATBSTR iMessage,
                 | CATSafeArrayVariant iFilterType,
@@ -729,6 +753,8 @@ class Selection(AnyObject):
                                       o_window_location2_d: tuple, o_window_location3_d: tuple) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func IndicateOrSelectElement3D(AnyObject
                 | iPlanarGeometricObject,
@@ -881,6 +907,8 @@ class Selection(AnyObject):
     def item(self, i_index: int) -> SelectedElement:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(long iIndex) As SelectedElement
                 | 
@@ -899,6 +927,8 @@ class Selection(AnyObject):
     def item2(self, i_index: int) -> SelectedElement:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item2(long iIndex) As SelectedElement
                 | 
@@ -932,6 +962,8 @@ class Selection(AnyObject):
     def paste(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Paste()
                 | 
@@ -964,6 +996,8 @@ class Selection(AnyObject):
     def paste_special(self, i_format: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
                 | o Sub PasteSpecial(CATBSTR iFormat)
                 |
@@ -1074,6 +1108,8 @@ class Selection(AnyObject):
     def remove(self, i_index):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
                 | o Sub Remove(long iIndex)
                 |
@@ -1090,6 +1126,8 @@ class Selection(AnyObject):
     def remove2(self, i_index):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
                 | o Sub Remove2(long iIndex)
                 |
@@ -1120,6 +1158,8 @@ class Selection(AnyObject):
     def search(self, i_string_bstr):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
                 | o Sub Search(CATBSTR iStringBSTR)
                 |
@@ -1148,12 +1188,15 @@ class Selection(AnyObject):
         try:
             return self.selection.Search(i_string_bstr)
         except com_error:
-            raise CATIAApplicationException('The method Search failed. Try changing your search string.')
+            raise CATIAApplicationException(
+                f'The method Search failed with search string "{i_string_bstr}". Try changing your search string.')
 
     def select_element2(self, i_filter_type: tuple, i_message: str,
                         i_object_selection_before_command_use_possibility: bool) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
                 | o Func SelectElement2(CATSafeArrayVariant iFilterType,
                 | CATBSTR iMessage,
@@ -1627,6 +1670,8 @@ class Selection(AnyObject):
                         i_tooltip: bool) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
                 | o Func SelectElement3(CATSafeArrayVariant iFilterType,
                 | CATBSTR iMessage,
@@ -1814,6 +1859,8 @@ class Selection(AnyObject):
                         i_tooltip: bool, o_document: Document) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-03 17:02:05.216737))
                 | o Func SelectElement4(CATSafeArrayVariant iFilterType,
                 | CATBSTR iActiveDocumentMessage,

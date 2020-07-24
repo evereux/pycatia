@@ -16,6 +16,8 @@ class MemoryWarningSettingAtt(SettingController):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
 
                 | System.IUnknown
@@ -43,6 +45,8 @@ class MemoryWarningSettingAtt(SettingController):
     def activation_state(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property ActivationState() As boolean
                 | 
@@ -67,6 +71,8 @@ class MemoryWarningSettingAtt(SettingController):
     def memory_stopper_state(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property MemoryStopperState() As boolean
                 | 
@@ -91,6 +97,8 @@ class MemoryWarningSettingAtt(SettingController):
     def usage_limit(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property UsageLimit() As long
                 | 
@@ -114,6 +122,8 @@ class MemoryWarningSettingAtt(SettingController):
     def get_activation_state_info(self, admin_level, o_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetActivationStateInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -131,6 +141,8 @@ class MemoryWarningSettingAtt(SettingController):
     def get_memory_stopper_state_info(self, admin_level, o_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetMemoryStopperStateInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -148,6 +160,8 @@ class MemoryWarningSettingAtt(SettingController):
     def get_usage_limit_info(self, admin_level, o_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetUsageLimitInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -165,6 +179,8 @@ class MemoryWarningSettingAtt(SettingController):
     def set_activation_state_lock(self, i_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetActivationStateLock(boolean iLocked)
                 | 
@@ -189,12 +205,14 @@ class MemoryWarningSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_memory_stopper_state_lock(self, i_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetMemoryStopperStateLock(boolean iLocked)
                 | 
@@ -219,12 +237,14 @@ class MemoryWarningSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_usage_limit_lock(self, i_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetUsageLimitLock(boolean iLocked)
                 | 
@@ -248,7 +268,7 @@ class MemoryWarningSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

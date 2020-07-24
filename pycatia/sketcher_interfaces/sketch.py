@@ -21,6 +21,8 @@ from pycatia.system_interfaces.system_service import SystemService
 class Sketch(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -44,6 +46,8 @@ class Sketch(AnyObject):
     def absolute_axis(self) -> Axis2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AbsoluteAxis() As Axis2D (Read Only)
                 | 
@@ -73,6 +77,8 @@ class Sketch(AnyObject):
     def center_line(self) -> Line2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CenterLine() As Line2D
                 | 
@@ -108,6 +114,8 @@ class Sketch(AnyObject):
     def constraints(self) -> Constraints:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Constraints() As Constraints (Read Only)
                 | 
@@ -135,6 +143,8 @@ class Sketch(AnyObject):
     def factory_2d(self) -> Factory2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Factory2D() As Factory2D (Read Only)
                 | 
@@ -164,6 +174,8 @@ class Sketch(AnyObject):
     def geometric_elements(self) -> GeometricElements:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property GeometricElements() As GeometricElements (Read
                 | Only)
@@ -192,6 +204,8 @@ class Sketch(AnyObject):
     def close_edition(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub CloseEdition()
                 | 
@@ -214,6 +228,8 @@ class Sketch(AnyObject):
     def evaluate(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Evaluate()
                 | 
@@ -227,6 +243,8 @@ class Sketch(AnyObject):
     def get_absolute_axis_data(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetAbsoluteAxisData(CATSafeArrayVariant oAxisData)
                 | 
@@ -272,12 +290,14 @@ class Sketch(AnyObject):
         End Function
         """
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def inverse_orientation(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InverseOrientation()
                 | 
@@ -291,6 +311,8 @@ class Sketch(AnyObject):
     def open_edition(self) -> Factory2D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func OpenEdition() As Factory2D
                 | 
@@ -318,6 +340,8 @@ class Sketch(AnyObject):
     def set_absolute_axis_data(self, i_axis_data: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetAbsoluteAxisData(CATSafeArrayVariant iAxisData)
                 | 

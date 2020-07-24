@@ -1,3 +1,5 @@
+.. _Limit:
+
 pycatia.part_interfaces.limit
 =============================
 

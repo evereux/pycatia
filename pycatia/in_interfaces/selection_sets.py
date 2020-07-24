@@ -16,6 +16,8 @@ class SelectionSets(AnyObject):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -36,6 +38,8 @@ class SelectionSets(AnyObject):
     def add_cso_into_selection_set(self, i_sel_set_name: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddCSOIntoSelectionSet(CATBSTR iSelSetName)
                 | 
@@ -62,6 +66,8 @@ class SelectionSets(AnyObject):
     def create_selection_set(self, i_sel_set_name: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub CreateSelectionSet(CATBSTR iSelSetName)
                 | 
@@ -88,6 +94,8 @@ class SelectionSets(AnyObject):
     def delete_selection_set(self, i_sel_set_name: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub DeleteSelectionSet(CATBSTR iSelSetName)
                 | 
@@ -115,6 +123,8 @@ class SelectionSets(AnyObject):
     def get_list_of_selection_set(self, o_list_of_selection_set: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetListOfSelectionSet(CATSafeArrayVariant
                 | oListOfSelectionSet)
@@ -150,12 +160,14 @@ class SelectionSets(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def put_selection_set_into_cso(self, i_sel_set_name: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutSelectionSetIntoCSO(CATBSTR iSelSetName)
                 | 
@@ -183,6 +195,8 @@ class SelectionSets(AnyObject):
     def rename_selection_set(self, i_old_sel_set_name: str, i_new_sel_set_name: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RenameSelectionSet(CATBSTR iOldSelSetName,
                 | CATBSTR iNewSelSetName)

@@ -18,6 +18,8 @@ class AutoDraft(DressUpShape):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -41,6 +43,8 @@ class AutoDraft(DressUpShape):
     def functional_face(self) -> False:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FunctionalFace(Reference iFace) (Write Only)
 
@@ -62,6 +66,8 @@ class AutoDraft(DressUpShape):
     def functional_faces(self) -> References:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FunctionalFaces() As References (Read Only)
                 | 
@@ -85,6 +91,8 @@ class AutoDraft(DressUpShape):
     def main_draft_angle(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MainDraftAngle() As Reference
                 | 
@@ -116,6 +124,8 @@ class AutoDraft(DressUpShape):
     def mode(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Mode() As Reference
                 | 
@@ -146,6 +156,8 @@ class AutoDraft(DressUpShape):
     def parting_element(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PartingElement() As Reference
                 | 
@@ -177,6 +189,8 @@ class AutoDraft(DressUpShape):
     def pulling_direction(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PullingDirection() As Reference
                 | 

@@ -13,9 +13,10 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class SystemConfiguration(AnyObject):
-
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +39,8 @@ class SystemConfiguration(AnyObject):
     def operating_system(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OperatingSystem() As CATBSTR (Read Only)
                 | 
@@ -60,6 +63,8 @@ class SystemConfiguration(AnyObject):
     def product_count(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ProductCount() As long (Read Only)
                 | 
@@ -82,6 +87,8 @@ class SystemConfiguration(AnyObject):
     def release(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Release() As long (Read Only)
                 | 
@@ -102,6 +109,8 @@ class SystemConfiguration(AnyObject):
     def service_pack(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ServicePack() As long (Read Only)
                 | 
@@ -122,6 +131,8 @@ class SystemConfiguration(AnyObject):
     def version(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Version() As long (Read Only)
                 | 
@@ -141,6 +152,8 @@ class SystemConfiguration(AnyObject):
     def get_product_names(self, io_product_names: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetProductNames(CATSafeArrayVariant ioProductNames)
                 | 
@@ -160,7 +173,8 @@ class SystemConfiguration(AnyObject):
                 |                  Dim SystemConfiguration1 As
                 |                  SystemConfiguration
                 |                  Set SystemConfiguration1 = CATIA.SystemConfiguration
-                |                  ReDim NameArray(SystemConfiguration1.ProductNamesCount)                |                  SystemConfiguration1.GetProductNames
+                |                  ReDim NameArray(SystemConfiguration1.ProductNamesCount)
+                |                  SystemConfiguration1.GetProductNames
                 |                  NameArray
                 |                  MsgBox "IsProductAuthorized for product " & NameArray(0) & " 
                 |                  returns " & SystemConfiguration1.IsProductAuthorized(NameArray(0))
@@ -183,12 +197,14 @@ class SystemConfiguration(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def is_product_authorized(self, i_product_name: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func IsProductAuthorized(CATBSTR iProductName) As boolean
                 | 
@@ -210,4 +226,4 @@ class SystemConfiguration(AnyObject):
         return self.system_configuration.IsProductAuthorized(i_product_name)
 
     def __repr__(self):
-        return f'SystemConfiguration(name="{ self.name }")'
+        return f'SystemConfiguration(name="{self.name}")'

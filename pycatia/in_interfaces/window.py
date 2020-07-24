@@ -18,6 +18,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class Window(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -42,6 +44,8 @@ class Window(AnyObject):
     def active_viewer(self) -> Viewer:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ActiveViewer() As Viewer (Read Only)
                 | 
@@ -64,6 +68,8 @@ class Window(AnyObject):
     def caption(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Caption() As CATBSTR
                 | 
@@ -94,6 +100,8 @@ class Window(AnyObject):
     def height(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Height() As long
                 | 
@@ -124,6 +132,8 @@ class Window(AnyObject):
     def left(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Left() As long
                 | 
@@ -155,6 +165,8 @@ class Window(AnyObject):
     def page_setup(self) -> PageSetup:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PageSetup() As PageSetup
                 | 
@@ -185,6 +197,8 @@ class Window(AnyObject):
     def top(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Top() As long
                 | 
@@ -216,6 +230,8 @@ class Window(AnyObject):
     def viewers(self) -> Viewers:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Viewers() As Viewers (Read Only)
                 | 
@@ -238,6 +254,8 @@ class Window(AnyObject):
     def width(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Width() As long
                 | 
@@ -268,6 +286,8 @@ class Window(AnyObject):
     def window_state(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property WindowState() As CatWindowState
                 | 
@@ -296,6 +316,8 @@ class Window(AnyObject):
     def activate(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Activate()
                 | 
@@ -315,6 +337,8 @@ class Window(AnyObject):
     def activate_next(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ActivateNext()
                 | 
@@ -335,6 +359,8 @@ class Window(AnyObject):
     def activate_previous(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ActivatePrevious()
                 | 
@@ -355,6 +381,8 @@ class Window(AnyObject):
     def close(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Close()
                 | 
@@ -376,6 +404,8 @@ class Window(AnyObject):
     def new_window(self) -> 'Window':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func NewWindow() As Window
                 | 
@@ -398,6 +428,8 @@ class Window(AnyObject):
     def print_out(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PrintOut()
                 | 
@@ -418,6 +450,8 @@ class Window(AnyObject):
     def print_to_file(self, file_name: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PrintToFile(CATBSTR fileName)
                 | 

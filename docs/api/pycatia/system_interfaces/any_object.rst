@@ -1,3 +1,5 @@
+.. _Any_object:
+
 pycatia.system_interfaces.any_object
 ====================================
 

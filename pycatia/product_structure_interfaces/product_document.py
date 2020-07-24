@@ -17,6 +17,8 @@ class ProductDocument(Document):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -45,6 +47,8 @@ class ProductDocument(Document):
     def product(self) -> Product:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Product() As Product (Read Only)
                 | 

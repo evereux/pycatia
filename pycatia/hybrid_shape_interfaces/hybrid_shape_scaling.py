@@ -17,6 +17,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeScaling(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -57,6 +59,8 @@ class HybridShapeScaling(HybridShape):
     def center(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Center() As Reference
                 | 
@@ -90,6 +94,8 @@ class HybridShapeScaling(HybridShape):
     def creation_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CreationMode() As boolean
                 | 
@@ -124,6 +130,8 @@ class HybridShapeScaling(HybridShape):
     def elem_to_scale(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ElemToScale() As Reference
                 | 
@@ -154,6 +162,8 @@ class HybridShapeScaling(HybridShape):
     def ratio(self) -> RealParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Ratio() As RealParam (Read Only)
                 | 
@@ -169,6 +179,8 @@ class HybridShapeScaling(HybridShape):
     def ratio_value(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RatioValue() As double
                 | 
@@ -199,6 +211,8 @@ class HybridShapeScaling(HybridShape):
     def volume_result(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property VolumeResult() As boolean
                 | 

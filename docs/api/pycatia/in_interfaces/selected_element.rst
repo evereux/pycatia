@@ -1,3 +1,5 @@
+.. _Selected_element:
+
 pycatia.in_interfaces.selected_element
 ======================================
 

@@ -1,3 +1,5 @@
+.. _Hybrid_shape_curve_par:
+
 pycatia.hybrid_shape_interfaces.hybrid_shape_curve_par
 ======================================================
 

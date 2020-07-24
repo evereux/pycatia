@@ -1,3 +1,5 @@
+.. _Measurable:
+
 pycatia.space_analyses_interfaces.measurable
 ============================================
 

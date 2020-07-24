@@ -1,3 +1,5 @@
+.. _Face:
+
 pycatia.mec_mod_interfaces.face
 ===============================
 

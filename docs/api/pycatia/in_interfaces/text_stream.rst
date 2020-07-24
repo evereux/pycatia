@@ -1,3 +1,5 @@
+.. _Text_stream:
+
 pycatia.in_interfaces.text_stream
 =================================
 

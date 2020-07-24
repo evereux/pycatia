@@ -18,6 +18,8 @@ class Pattern(TransformationShape):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -48,6 +50,8 @@ class Pattern(TransformationShape):
     def item_to_copy(self) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ItemToCopy() As AnyObject
                 | 
@@ -78,6 +82,8 @@ class Pattern(TransformationShape):
     def rotation_angle(self) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property RotationAngle() As Angle (Read Only)
                 | 
@@ -100,6 +106,8 @@ class Pattern(TransformationShape):
     def activate_position(self, i_pos_u: int, i_pos_v: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ActivatePosition(long iPosU,
                 | long iPosV)
@@ -123,6 +131,8 @@ class Pattern(TransformationShape):
     def desactivate_position(self, i_pos_u: int, i_pos_v: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub DesactivatePosition(long iPosU,
                 | long iPosV)

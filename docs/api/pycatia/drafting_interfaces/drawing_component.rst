@@ -1,3 +1,5 @@
+.. _Drawing_component:
+
 pycatia.drafting_interfaces.drawing_component
 =============================================
 

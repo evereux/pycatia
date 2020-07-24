@@ -18,6 +18,8 @@ class Conflict(AnyObject):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -42,6 +44,8 @@ class Conflict(AnyObject):
     def comment(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Comment() As CATBSTR
                 | 
@@ -84,6 +88,8 @@ class Conflict(AnyObject):
     def comparison_info(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ComparisonInfo() As CatConflictComparison (Read
                 | Only)
@@ -110,6 +116,8 @@ class Conflict(AnyObject):
     def first_product(self) -> Product:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FirstProduct() As Product (Read Only)
                 | 
@@ -134,6 +142,8 @@ class Conflict(AnyObject):
     def second_product(self) -> Product:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SecondProduct() As Product (Read Only)
                 | 
@@ -158,6 +168,8 @@ class Conflict(AnyObject):
     def status(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Status() As CatConflictStatus
                 | 
@@ -200,6 +212,8 @@ class Conflict(AnyObject):
     def type(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Type() As CatConflictType (Read Only)
                 | 
@@ -224,6 +238,8 @@ class Conflict(AnyObject):
     def value(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Value() As double (Read Only)
                 | 
@@ -250,6 +266,8 @@ class Conflict(AnyObject):
     def get_first_point_coordinates(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetFirstPointCoordinates(CATSafeArrayVariant
                 | oCoordinates)
@@ -288,12 +306,14 @@ class Conflict(AnyObject):
         End Function
         """
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_second_point_coordinates(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetSecondPointCoordinates(CATSafeArrayVariant
                 | oCoordinates)
@@ -332,7 +352,7 @@ class Conflict(AnyObject):
         End Function
         """
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

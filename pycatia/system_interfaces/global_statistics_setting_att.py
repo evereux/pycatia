@@ -16,6 +16,8 @@ class GlobalStatisticsSettingAtt(SettingController):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
 
                 | System.IUnknown
@@ -40,6 +42,8 @@ class GlobalStatisticsSettingAtt(SettingController):
     def buffer_size(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property BufferSize() As long
                 | 
@@ -68,6 +72,8 @@ class GlobalStatisticsSettingAtt(SettingController):
     def copy_directory(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property CopyDirectory() As CATBSTR
                 | 
@@ -97,6 +103,8 @@ class GlobalStatisticsSettingAtt(SettingController):
     def max_copy_file(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property MaxCopyFile() As long
                 | 
@@ -126,6 +134,8 @@ class GlobalStatisticsSettingAtt(SettingController):
     def max_size_per_file(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
                 | o Property MaxSizePerFile() As long
                 | 
@@ -154,6 +164,8 @@ class GlobalStatisticsSettingAtt(SettingController):
     def get_thematics_parameter_info(self, admin_level, o_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Func GetThematicsParameterInfo(CATBSTR AdminLevel,
                 | CATBSTR oLocked) As boolean
@@ -171,6 +183,8 @@ class GlobalStatisticsSettingAtt(SettingController):
     def set_thematics_parameter_lock(self, i_locked):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780))
                 | o Sub SetThematicsParameterLock(boolean iLocked)
                 | 
@@ -207,7 +221,7 @@ class GlobalStatisticsSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

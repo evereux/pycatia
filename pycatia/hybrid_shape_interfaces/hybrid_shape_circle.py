@@ -19,6 +19,8 @@ from pycatia.system_interfaces.system_service import SystemService
 class HybridShapeCircle(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -58,6 +60,8 @@ class HybridShapeCircle(HybridShape):
     def axis_computation(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AxisComputation() As boolean
                 | 
@@ -90,6 +94,8 @@ class HybridShapeCircle(HybridShape):
     def axis_direction(self) -> HybridShapeDirection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AxisDirection() As HybridShapeDirection
                 | 
@@ -127,6 +133,8 @@ class HybridShapeCircle(HybridShape):
     def end_angle(self) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property EndAngle() As Angle (Read Only)
                 | 
@@ -149,6 +157,8 @@ class HybridShapeCircle(HybridShape):
     def start_angle(self) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property StartAngle() As Angle (Read Only)
                 | 
@@ -170,6 +180,8 @@ class HybridShapeCircle(HybridShape):
     def get_axis(self, i_position: int, o_axis: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetAxis(long iPosition,
                 | Reference oAxis)
@@ -211,12 +223,14 @@ class HybridShapeCircle(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_center(self, o_center_x: float, o_center_y: float, o_center_z: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetCenter(double oCenterX,
                 | double oCenterY,
@@ -241,6 +255,8 @@ class HybridShapeCircle(HybridShape):
     def get_free_center(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetFreeCenter(CATSafeArrayVariant ioCenter)
                 | 
@@ -279,12 +295,14 @@ class HybridShapeCircle(HybridShape):
         End Function
         """
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_free_radius(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetFreeRadius(double oRadius)
                 | 
@@ -310,6 +328,8 @@ class HybridShapeCircle(HybridShape):
     def get_limitation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetLimitation() As long
                 | 
@@ -328,6 +348,8 @@ class HybridShapeCircle(HybridShape):
     def set_limitation(self, i_limitation: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetLimitation(long iLimitation)
                 | 

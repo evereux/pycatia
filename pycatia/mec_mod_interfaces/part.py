@@ -32,6 +32,8 @@ from pycatia.system_interfaces.collection import Collection
 class Part(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -62,6 +64,8 @@ class Part(AnyObject):
     def annotation_sets(self) -> Collection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AnnotationSets() As Collection (Read Only)
                 | 
@@ -86,6 +90,8 @@ class Part(AnyObject):
     def axis_systems(self) -> AxisSystems:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property AxisSystems() As AxisSystems (Read Only)
                 |
@@ -110,6 +116,8 @@ class Part(AnyObject):
     def bodies(self) -> Bodies:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Bodies() As Bodies (Read Only)
                 | 
@@ -136,6 +144,8 @@ class Part(AnyObject):
     def constraints(self) -> Constraints:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Constraints() As Constraints (Read Only)
                 | 
@@ -160,6 +170,8 @@ class Part(AnyObject):
     def density(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Density() As double (Read Only)
                 |
@@ -204,6 +216,8 @@ class Part(AnyObject):
     def geometric_elements(self) -> GeometricElements:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property GeometricElements() As GeometricElements (Read
                 | Only)
@@ -229,6 +243,8 @@ class Part(AnyObject):
     def hybrid_bodies(self) -> HybridBodies:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property HybridBodies() As HybridBodies (Read Only)
                 |
@@ -253,6 +269,8 @@ class Part(AnyObject):
     def hybrid_shape_factory(self) -> HybridShapeFactory:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property HybridShapeFactory() As Factory (Read Only)
                 | 
@@ -278,6 +296,8 @@ class Part(AnyObject):
     def in_work_object(self) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property InWorkObject() As AnyObject
                 |
@@ -310,6 +330,8 @@ class Part(AnyObject):
     def main_body(self) -> Body:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property MainBody() As Body
                 |
@@ -340,6 +362,8 @@ class Part(AnyObject):
     def ordered_geometrical_sets(self) -> OrderedGeometricalSets:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property OrderedGeometricalSets() As OrderedGeometricalSets (Read
                 | Only)
@@ -365,6 +389,8 @@ class Part(AnyObject):
     def origin_elements(self) -> OriginElements:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property OriginElements() As OriginElements (Read Only)
                 | 
@@ -388,6 +414,8 @@ class Part(AnyObject):
     def parameters(self) -> Parameters:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Parameters() As Parameters (Read Only)
                 |
@@ -413,6 +441,8 @@ class Part(AnyObject):
     def relations(self) -> Relations:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Relations() As Relations (Read Only)
                 |
@@ -437,6 +467,8 @@ class Part(AnyObject):
     def shape_factory(self) -> ShapeFactory:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ShapeFactory() As Factory (Read Only)
                 |
@@ -461,6 +493,8 @@ class Part(AnyObject):
     def sheet_metal_factory(self) -> Factory:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SheetMetalFactory() As Factory (Read Only)
                 |
@@ -485,6 +519,8 @@ class Part(AnyObject):
     def sheet_metal_parameters(self) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property SheetMetalParameters() As AnyObject (Read Only)
                 |
@@ -509,6 +545,8 @@ class Part(AnyObject):
     def user_surfaces(self) -> Collection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property UserSurfaces() As Collection (Read Only)
                 |
@@ -533,6 +571,8 @@ class Part(AnyObject):
     def activate(self, i_object: AnyObject) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Activate(AnyObject iObject)
                 |
@@ -560,6 +600,8 @@ class Part(AnyObject):
     def create_reference_from_b_rep_name(self, i_label: str, i_object_context: AnyObject):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateReferenceFromBRepName(CATBSTR iLabel,
                 | AnyObject iObjectContext) As Reference
@@ -591,6 +633,8 @@ class Part(AnyObject):
     def create_reference_from_name(self, i_label: str):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateReferenceFromName(CATBSTR iLabel) As Reference
                 |
@@ -616,6 +660,8 @@ class Part(AnyObject):
     def create_reference_from_object(self, i_object: AnyObject):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateReferenceFromObject(AnyObject iObject) As
                 | Reference
@@ -651,6 +697,8 @@ class Part(AnyObject):
     def find_object_by_name(self, i_obj_name: str) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func FindObjectByName(CATBSTR iObjName) As AnyObject
                 |
@@ -687,6 +735,8 @@ class Part(AnyObject):
     def get_customer_factory(self, i_factory_iid: str) -> Factory:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetCustomerFactory(CATBSTR iFactoryIID) As Factory
                 |
@@ -708,6 +758,8 @@ class Part(AnyObject):
     def inactivate(self, i_object: AnyObject) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Inactivate(AnyObject iObject)
                 |
@@ -736,6 +788,8 @@ class Part(AnyObject):
     def is_inactive(self, i_object: AnyObject) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func IsInactive(AnyObject iObject) As boolean
                 |
@@ -764,6 +818,8 @@ class Part(AnyObject):
     def is_up_to_date(self, i_object: AnyObject) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func IsUpToDate(AnyObject iObject) As boolean
                 |
@@ -810,6 +866,8 @@ class Part(AnyObject):
     def update(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Update()
                 | 
@@ -831,6 +889,8 @@ class Part(AnyObject):
     def update_object(self, i_object: AnyObject) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub UpdateObject(AnyObject iObject)
                 | 

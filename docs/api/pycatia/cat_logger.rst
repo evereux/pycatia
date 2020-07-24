@@ -1,3 +1,5 @@
+.. _Cat_logger:
+
 cat_logger
 ==========
 

@@ -16,6 +16,8 @@ class DraftingPageSetup(PageSetup):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -44,6 +46,8 @@ class DraftingPageSetup(PageSetup):
     def choose_best_orientation(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ChooseBestOrientation() As boolean
                 | 
@@ -74,6 +78,8 @@ class DraftingPageSetup(PageSetup):
     def fit_to_printer_format(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FitToPrinterFormat() As boolean
                 | 
@@ -102,6 +108,8 @@ class DraftingPageSetup(PageSetup):
     def fit_to_sheet_format(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FitToSheetFormat() As boolean
                 | 

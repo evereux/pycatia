@@ -16,15 +16,17 @@ from pycatia.in_interfaces.position import Position
 from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.parameters import Parameters
 from pycatia.knowledge_interfaces.relations import Relations
+from pycatia.mec_mod_interfaces.constraints import Constraints
 from pycatia.product_structure_interfaces.analyze import Analyze
 from pycatia.product_structure_interfaces.publications import Publications
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.system_interfaces.collection import Collection
 
 
 class Product(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -57,6 +59,8 @@ class Product(AnyObject):
     def analyze(self) -> Analyze:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Analyze() As Analyze (Read Only)
                 |
@@ -83,6 +87,8 @@ class Product(AnyObject):
     def definition(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Definition() As CATBSTR
                 |
@@ -115,6 +121,8 @@ class Product(AnyObject):
     def description_instance(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DescriptionInst() As CATBSTR
                 |
@@ -151,6 +159,8 @@ class Product(AnyObject):
     def description_reference(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property DescriptionRef() As CATBSTR
                 |
@@ -203,6 +213,8 @@ class Product(AnyObject):
     def move(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Move() As Move (Read Only)
                 |
@@ -229,6 +241,8 @@ class Product(AnyObject):
     def nomenclature(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Nomenclature() As CATBSTR
                 |
@@ -263,6 +277,8 @@ class Product(AnyObject):
     def parameters(self) -> Parameters:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Parameters() As Parameters (Read Only)
                 |
@@ -288,6 +304,8 @@ class Product(AnyObject):
     def part_number(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property PartNumber() As CATBSTR
                 |
@@ -320,6 +338,8 @@ class Product(AnyObject):
     def position(self) -> Position:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Position() As Position (Read Only)
                 |
@@ -346,6 +366,8 @@ class Product(AnyObject):
     def products(self) -> 'Products':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Products() As Products (Read Only)
                 |
@@ -372,6 +394,8 @@ class Product(AnyObject):
     def publications(self) -> Publications:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Publications() As Publications (Read Only)
                 |
@@ -387,6 +411,8 @@ class Product(AnyObject):
     def reference_product(self) -> 'Product':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ReferenceProduct() As Product (Read Only)
                 |
@@ -402,6 +428,8 @@ class Product(AnyObject):
     def relations(self) -> Relations:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Relations() As Relations (Read Only)
                 |
@@ -426,6 +454,8 @@ class Product(AnyObject):
     def revision(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Revision() As CATBSTR
                 |
@@ -458,6 +488,8 @@ class Product(AnyObject):
     def source(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Source() As CatProductSource
                 |
@@ -495,6 +527,8 @@ class Product(AnyObject):
     def user_ref_properties(self) -> Parameters:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property UserRefProperties() As Parameters (Read Only)
                 |
@@ -520,6 +554,8 @@ class Product(AnyObject):
     def activate_default_shape(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub ActivateDefaultShape()
                 |
@@ -533,6 +569,8 @@ class Product(AnyObject):
     def activate_shape(self, shape_name: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub ActivateShape(CATBSTR ShapeName)
                 |
@@ -570,6 +608,8 @@ class Product(AnyObject):
     def add_master_shape_representation(self, i_shape_path_name=None):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddMasterShapeRepresentation(CATBSTR iShapePathName)
                 |
@@ -607,6 +647,8 @@ class Product(AnyObject):
                                  i_context: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddShapeRepresentation(CATBSTR iShapePathName,
                 | CATBSTR iShapeName,
@@ -675,12 +717,14 @@ class Product(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def apply_work_mode(self, new_mode: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub ApplyWorkMode(CatWorkModeType newMode)
                 |
@@ -718,9 +762,11 @@ class Product(AnyObject):
             f"Is CATPart:            {self.is_catpart()}"
         )
 
-    def connections(self, i_connections_type=None):
+    def constraints(self) -> Constraints:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Connections(CATBSTR iConnectionsType) As Collection
                 |
@@ -741,11 +787,13 @@ class Product(AnyObject):
         :param str i_connections_type:
         :return: Collection
         """
-        return Collection(self.product.Connections(i_connections_type))
+        return Constraints(self.product.Connections("CATIAConstraints"))
 
     def create_reference_from_name(self, i_label: str) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CreateReferenceFromName(CATBSTR iLabel) As Reference
                 |
@@ -790,6 +838,8 @@ class Product(AnyObject):
     def desactivate_default_shape(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DesactivateDefaultShape()
                 |
@@ -803,6 +853,8 @@ class Product(AnyObject):
     def desactivate_shape(self, shape_name: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub DesactivateShape(CATBSTR ShapeName)
                 |
@@ -822,6 +874,8 @@ class Product(AnyObject):
     def extract_bom(self, i_file_type: int, i_file: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub ExtractBOM(CatFileType iFileType,
                 | CATBSTR iFile)
@@ -860,7 +914,7 @@ class Product(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def count_children(self):
@@ -870,9 +924,30 @@ class Product(AnyObject):
 
         return self.product.Products.Count
 
+    @staticmethod
+    def generate_ALLCATPart(product: 'Product') -> 'Document':
+        """
+
+        Generate an ALLCATPart (CATPart) from CATProduct.
+
+        :param Product product:
+        :return: Document
+        :rtype: Document
+        """
+
+        from pycatia.in_interfaces.document import Document
+
+        part = product.com_object.GetItem("DECProductToPart")
+        part.Run()
+        part = part.GetResult()
+
+        return Document(part)
+
     def get_active_shape_name(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetActiveShapeName() As CATBSTR
                 |
@@ -888,6 +963,8 @@ class Product(AnyObject):
     def get_all_shapes_names(self, olistshape: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub GetAllShapesNames(CATSafeArrayVariant olistshape)
                 |
@@ -915,7 +992,7 @@ class Product(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_child(self, index):
@@ -941,6 +1018,8 @@ class Product(AnyObject):
     def get_default_shape_name(self):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetDefaultShapeName() As CATBSTR
                 |
@@ -956,6 +1035,8 @@ class Product(AnyObject):
     def get_master_shape_representation(self, i_load_if_necessary: bool) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetMasterShapeRepresentation(boolean iLoadIfNecessary) As
                 | CATBaseDispatch
@@ -987,6 +1068,8 @@ class Product(AnyObject):
     def get_master_shape_representation_path_name(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetMasterShapeRepresentationPathName() As CATBSTR
                 |
@@ -1009,6 +1092,8 @@ class Product(AnyObject):
     def get_number_of_shapes(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetNumberOfShapes() As short
                 |
@@ -1038,6 +1123,8 @@ class Product(AnyObject):
     def get_shape_path_name(self, i_shape_name=None):
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetShapePathName(CATBSTR iShapeName) As CATBSTR
                 |
@@ -1060,6 +1147,8 @@ class Product(AnyObject):
                                  i_context: bool) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetShapeRepresentation(boolean iLoadIfNecessary,
                 | CATBSTR iShapeName,
@@ -1111,6 +1200,8 @@ class Product(AnyObject):
     def get_technological_object(self, i_application_type: str) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func GetTechnologicalObject(CATBSTR iApplicationType) As
                 | CATBaseDispatch
@@ -1142,6 +1233,8 @@ class Product(AnyObject):
     def has_a_master_shape_representation(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func HasAMasterShapeRepresentation() As boolean
                 |
@@ -1175,6 +1268,8 @@ class Product(AnyObject):
     def has_shape_representation(self, i_shape_name: str, i_rep_behavior: int, i_context: bool) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func HasShapeRepresentation(CATBSTR iShapeName,
                 | CatRepType iRepBehavior,
@@ -1211,7 +1306,7 @@ class Product(AnyObject):
         :return: bool
         :rtype: bool
         """
-        return self.product.HasShapeRepresentation(i_shape_name, i_rep_behavior.com_object, i_context)
+        return self.product.HasShapeRepresentation(i_shape_name, i_rep_behavior, i_context)
 
     def is_catproduct(self):
         """
@@ -1255,6 +1350,8 @@ class Product(AnyObject):
     def remove_master_shape_representation(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveMasterShapeRepresentation()
                 |
@@ -1285,6 +1382,8 @@ class Product(AnyObject):
     def remove_shape_representation(self, i_shape_name: str, i_rep_behavior: int, i_context: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveShapeRepresentation(CATBSTR iShapeName,
                 | CatRepType iRepBehavior,
@@ -1326,7 +1425,7 @@ class Product(AnyObject):
         :return: None
         :rtype: None
         """
-        return self.product.RemoveShapeRepresentation(i_shape_name, i_rep_behavior.com_object, i_context)
+        return self.product.RemoveShapeRepresentation(i_shape_name, i_rep_behavior, i_context)
         # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1340,12 +1439,14 @@ class Product(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def update(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Update()
                 |

@@ -16,6 +16,8 @@ class Unit(AnyObject):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class Unit(AnyObject):
     def magnitude(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Magnitude() As CATBSTR (Read Only)
                 | 
@@ -53,6 +57,8 @@ class Unit(AnyObject):
     def symbol(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Symbol() As CATBSTR (Read Only)
                 | 
@@ -67,6 +73,8 @@ class Unit(AnyObject):
     def convert_from_mks(self, i_value_in_mks: float) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func ConvertFromMKS(double iValueInMKS) As double
                 | 
@@ -89,6 +97,8 @@ class Unit(AnyObject):
     def convert_from_storage_unit(self, i_value_in_storage_unit: float) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func ConvertFromStorageUnit(double iValueInStorageUnit) As
                 | double
@@ -112,6 +122,8 @@ class Unit(AnyObject):
     def convert_to_mks(self, i_value_in_this_unit: float) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func ConvertToMKS(double iValueInThisUnit) As double
                 | 
@@ -133,6 +145,8 @@ class Unit(AnyObject):
     def convert_to_storage_unit(self, i_value_in_this_unit: float) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func ConvertToStorageUnit(double iValueInThisUnit) As
                 | double

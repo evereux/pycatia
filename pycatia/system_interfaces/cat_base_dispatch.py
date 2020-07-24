@@ -15,6 +15,8 @@ from pycatia.system_interfaces.cat_base_unknown import CATBaseUnknown
 class CATBaseDispatch(CATBaseUnknown):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-09 09:53:18.676780)
 
                 | System.IUnknown

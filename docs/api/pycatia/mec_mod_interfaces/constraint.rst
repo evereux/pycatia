@@ -1,3 +1,5 @@
+.. _Constraint:
+
 pycatia.mec_mod_interfaces.constraint
 =====================================
 

@@ -1,3 +1,5 @@
+.. _Folders:
+
 pycatia.in_interfaces.folders
 =============================
 

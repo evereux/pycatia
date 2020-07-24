@@ -19,6 +19,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapePositionTransfo(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -54,6 +56,8 @@ class HybridShapePositionTransfo(HybridShape):
     def initial_direction_computation_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property InitialDirectionComputationMode() As long
                 | 
@@ -87,6 +91,8 @@ class HybridShapePositionTransfo(HybridShape):
     def mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Mode() As long
                 | 
@@ -118,6 +124,8 @@ class HybridShapePositionTransfo(HybridShape):
     def profile(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Profile() As Reference
                 | 
@@ -140,6 +148,8 @@ class HybridShapePositionTransfo(HybridShape):
     def get_nb_pos_angle(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNbPosAngle() As long
                 | 
@@ -158,6 +168,8 @@ class HybridShapePositionTransfo(HybridShape):
     def get_nb_pos_coord(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetNbPosCoord() As long
                 | 
@@ -176,6 +188,8 @@ class HybridShapePositionTransfo(HybridShape):
     def get_pos_angle(self, i_i: int) -> Angle:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPosAngle(long iI) As Angle
                 | 
@@ -199,6 +213,8 @@ class HybridShapePositionTransfo(HybridShape):
     def get_pos_coord(self, ii: int) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPosCoord(long ii) As Length
                 | 
@@ -222,6 +238,8 @@ class HybridShapePositionTransfo(HybridShape):
     def get_pos_point(self, ii: int) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPosPoint(long ii) As Reference
                 | 
@@ -245,6 +263,8 @@ class HybridShapePositionTransfo(HybridShape):
     def get_pos_swap_axes(self, ii: int) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPosSwapAxes(long ii) As long
                 | 
@@ -277,6 +297,8 @@ class HybridShapePositionTransfo(HybridShape):
     def get_position_direction(self, i_i: int) -> HybridShapeDirection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPositionDirection(long iI) As HybridShapeDirection
                 | 
@@ -301,6 +323,8 @@ class HybridShapePositionTransfo(HybridShape):
     def remove_all_pos_angle(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveAllPosAngle()
                 | 
@@ -314,6 +338,8 @@ class HybridShapePositionTransfo(HybridShape):
     def remove_all_pos_coord(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveAllPosCoord()
                 | 
@@ -327,6 +353,8 @@ class HybridShapePositionTransfo(HybridShape):
     def set_pos_angle(self, i_i: int, i_angle: Angle) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPosAngle(long iI,
                 | Angle iAngle)
@@ -360,12 +388,14 @@ class HybridShapePositionTransfo(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_pos_coord(self, i_i: int, i_coordinate: Length) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPosCoord(long iI,
                 | Length iCoordinate)
@@ -400,12 +430,14 @@ class HybridShapePositionTransfo(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_pos_point(self, i_i: int, i_elem: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPosPoint(long iI,
                 | Reference iElem)
@@ -440,12 +472,14 @@ class HybridShapePositionTransfo(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_pos_swap_axes(self, ii: int, i_inversion: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPosSwapAxes(long ii,
                 | long iInversion)
@@ -480,6 +514,8 @@ class HybridShapePositionTransfo(HybridShape):
     def set_position_direction(self, i_i: int, i_elem: HybridShapeDirection) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPositionDirection(long iI,
                 | HybridShapeDirection iElem)
@@ -515,7 +551,7 @@ class HybridShapePositionTransfo(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

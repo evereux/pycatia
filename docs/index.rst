@@ -5,11 +5,12 @@ pycatia is a python module for interfacing with the CATIA Automation COM object.
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
 
    installation
    introduction
+   windows_builds
    examples
 
 
@@ -18,5 +19,6 @@ pycatia is a python module for interfacing with the CATIA Automation COM object.
    :maxdepth: 1
    :caption: Programmer Reference:
 
+   api_tree
    api_index
 

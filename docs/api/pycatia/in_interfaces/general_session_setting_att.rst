@@ -1,3 +1,5 @@
+.. _General_session_setting_att:
+
 pycatia.in_interfaces.general_session_setting_att
 =================================================
 

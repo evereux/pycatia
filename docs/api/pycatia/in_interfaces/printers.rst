@@ -1,3 +1,5 @@
+.. _Printers:
+
 pycatia.in_interfaces.printers
 ==============================
 

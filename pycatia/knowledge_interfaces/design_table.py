@@ -15,6 +15,8 @@ from pycatia.knowledge_interfaces.relation import Relation
 class DesignTable(Relation):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class DesignTable(Relation):
     def columns_nb(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ColumnsNb() As short (Read Only)
                 | 
@@ -54,6 +58,8 @@ class DesignTable(Relation):
     def configuration(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Configuration() As short
                 | 
@@ -78,6 +84,8 @@ class DesignTable(Relation):
     def configurations_nb(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ConfigurationsNb() As short (Read Only)
                 | 
@@ -93,6 +101,8 @@ class DesignTable(Relation):
     def copy_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property CopyMode() As boolean
                 | 
@@ -117,6 +127,8 @@ class DesignTable(Relation):
     def file_path(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property FilePath() As CATBSTR
                 | 
@@ -139,6 +151,8 @@ class DesignTable(Relation):
     def add_association(self, i_parameter: 'Parameter', i_sheet_column: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddAssociation(Parameter iParameter,
                 | CATBSTR iSheetColumn)
@@ -175,12 +189,14 @@ class DesignTable(Relation):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_new_row(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub AddNewRow()
                 | 
@@ -203,6 +219,8 @@ class DesignTable(Relation):
     def cell_as_string(self, i_row: int, i_column: int) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func CellAsString(short iRow,
                 | short iColumn) As CATBSTR
@@ -226,6 +244,8 @@ class DesignTable(Relation):
     def remove_association(self, i_sheet_column: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub RemoveAssociation(CATBSTR iSheetColumn)
                 | 
@@ -246,6 +266,8 @@ class DesignTable(Relation):
     def synchronize(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Synchronize()
                 | 

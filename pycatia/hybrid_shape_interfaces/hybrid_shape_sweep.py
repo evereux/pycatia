@@ -17,6 +17,8 @@ class HybridShapeSweep(HybridShape):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -47,6 +49,8 @@ class HybridShapeSweep(HybridShape):
     def c0_vertices_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property C0VerticesMode() As boolean
                 | 
@@ -72,6 +76,8 @@ class HybridShapeSweep(HybridShape):
     def fill_twisted_areas(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FillTwistedAreas() As long
                 | 
@@ -95,6 +101,8 @@ class HybridShapeSweep(HybridShape):
     def setback_value(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SetbackValue() As double
                 | 
@@ -117,6 +125,8 @@ class HybridShapeSweep(HybridShape):
     def add_cut_points(self, i_element1: Reference, i_element2: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddCutPoints(Reference iElement1,
                 | Reference iElement2)
@@ -150,12 +160,14 @@ class HybridShapeSweep(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def add_fill_points(self, i_element1: Reference, i_element2: Reference) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddFillPoints(Reference iElement1,
                 | Reference iElement2)
@@ -189,12 +201,14 @@ class HybridShapeSweep(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def get_cut_point(self, i_rank: int) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetCutPoint(long iRank) As Reference
 
@@ -207,6 +221,8 @@ class HybridShapeSweep(HybridShape):
     def get_fill_point(self, i_rank: int) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetFillPoint(long iRank) As Reference
 
@@ -219,6 +235,8 @@ class HybridShapeSweep(HybridShape):
     def remove_all_cut_points(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveAllCutPoints()
                 | 
@@ -232,6 +250,8 @@ class HybridShapeSweep(HybridShape):
     def remove_all_fill_points(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveAllFillPoints()
                 | 

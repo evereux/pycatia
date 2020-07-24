@@ -1,3 +1,5 @@
+.. _Replace_face:
+
 pycatia.part_interfaces.replace_face
 ====================================
 

@@ -16,6 +16,8 @@ from pycatia.in_interfaces.viewpoint_3d import Viewpoint3D
 class Camera3D(Camera):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -40,6 +42,8 @@ class Camera3D(Camera):
     def viewpoint3_d(self) -> Viewpoint3D:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Viewpoint3D() As Viewpoint3D
                 | 

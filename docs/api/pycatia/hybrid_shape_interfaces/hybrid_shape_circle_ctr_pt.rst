@@ -1,3 +1,5 @@
+.. _Hybrid_shape_circle_ctr_pt:
+
 pycatia.hybrid_shape_interfaces.hybrid_shape_circle_ctr_pt
 ==========================================================
 

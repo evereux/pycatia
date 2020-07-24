@@ -16,6 +16,8 @@ from pycatia.types import cat_variant
 class Groups(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -40,6 +42,8 @@ class Groups(Collection):
     def add(self) -> Group:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Add() As Group
                 | 
@@ -65,6 +69,8 @@ class Groups(Collection):
     def add_from_sel(self) -> Group:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddFromSel() As Group
                 | 
@@ -91,6 +97,8 @@ class Groups(Collection):
     def all_leaves(self) -> Group:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AllLeaves() As Group
                 | 
@@ -114,6 +122,8 @@ class Groups(Collection):
     def item(self, i_index: cat_variant) -> Group:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(CATVariant iIndex) As Group
                 | 
@@ -153,6 +163,8 @@ class Groups(Collection):
     def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Remove(CATVariant iIndex)
                 | 

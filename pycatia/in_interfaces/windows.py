@@ -17,6 +17,8 @@ from pycatia.types import cat_variant
 class Windows(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class Windows(Collection):
     def arrange(self, i_style: int) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Arrange(CatArrangeStyle iStyle)
                 | 
@@ -64,6 +68,8 @@ class Windows(Collection):
     def item(self, i_index: cat_variant) -> Window:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(CATVariant iIndex) As Window
                 | 

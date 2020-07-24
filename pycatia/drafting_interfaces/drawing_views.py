@@ -17,6 +17,8 @@ from pycatia.system_interfaces.collection import Collection
 class DrawingViews(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -42,6 +44,8 @@ class DrawingViews(Collection):
     def active_view(self) -> DrawingView:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property ActiveView() As DrawingView (Read Only)
                 | 
@@ -69,6 +73,8 @@ class DrawingViews(Collection):
     def add(self, i_drawing_view_name: str) -> DrawingView:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Add(CATBSTR iDrawingViewName) As DrawingView
                 | 
@@ -107,6 +113,8 @@ class DrawingViews(Collection):
     def item(self, i_index: cat_variant) -> DrawingView:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Func Item(CATVariant iIndex) As DrawingView
                 | 
@@ -156,6 +164,8 @@ class DrawingViews(Collection):
     def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Remove(CATVariant iIndex)
                 | 

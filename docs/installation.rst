@@ -3,6 +3,11 @@
 Installation
 ============
 
+For the development of python scripts using pycatia it's recommended you follow
+the steps detailed below.
+
+To run pre-existing scripts windows builds are :ref:`available<windows_builds>`
+
 The Short Version
 -----------------
 
@@ -31,6 +36,7 @@ The Long Version
 It's unlikely that the pycatia end user will have administrator access to their
 workstation. If that is the case you'll need to get someone with the appropriate
 permissions to install python and the virtualenv module.
+
 
 Installing Python
 ~~~~~~~~~~~~~~~~~

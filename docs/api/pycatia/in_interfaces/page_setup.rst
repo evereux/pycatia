@@ -1,3 +1,5 @@
+.. _Page_setup:
+
 pycatia.in_interfaces.page_setup
 ================================
 

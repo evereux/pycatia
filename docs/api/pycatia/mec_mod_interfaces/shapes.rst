@@ -1,3 +1,5 @@
+.. _Shapes:
+
 pycatia.mec_mod_interfaces.shapes
 =================================
 

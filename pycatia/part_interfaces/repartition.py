@@ -17,6 +17,8 @@ class Repartition(AnyObject):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -43,6 +45,8 @@ class Repartition(AnyObject):
     def instances_count(self) -> IntParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property InstancesCount() As IntParam (Read Only)
                 | 

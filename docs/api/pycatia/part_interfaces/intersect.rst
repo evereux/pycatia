@@ -1,3 +1,5 @@
+.. _Intersect:
+
 pycatia.part_interfaces.intersect
 =================================
 

@@ -17,6 +17,8 @@ from pycatia.types import cat_variant
 class Group(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -67,6 +69,8 @@ class Group(AnyObject):
     def extract_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ExtractMode() As long
                 | 
@@ -107,6 +111,8 @@ class Group(AnyObject):
     def add_explicit(self, i_product: AnyObject) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub AddExplicit(CATBaseDispatch iProduct)
                 | 
@@ -134,6 +140,8 @@ class Group(AnyObject):
     def count_explicit(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func CountExplicit() As long
                 | 
@@ -156,6 +164,8 @@ class Group(AnyObject):
     def count_extract(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func CountExtract() As long
                 | 
@@ -187,6 +197,8 @@ class Group(AnyObject):
     def count_invert(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func CountInvert() As long
                 | 
@@ -210,6 +222,8 @@ class Group(AnyObject):
     def fill_sel_with_extract(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub FillSelWithExtract()
                 | 
@@ -233,6 +247,8 @@ class Group(AnyObject):
     def fill_sel_with_invert(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub FillSelWithInvert()
                 | 
@@ -256,6 +272,8 @@ class Group(AnyObject):
     def item_explicit(self, i_index: cat_variant) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func ItemExplicit(CATVariant iIndex) As CATBaseDispatch
                 | 
@@ -289,6 +307,8 @@ class Group(AnyObject):
     def item_extract(self, i_index: cat_variant) -> Product:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func ItemExtract(CATVariant iIndex) As Product
                 | 
@@ -323,6 +343,8 @@ class Group(AnyObject):
     def item_invert(self, i_index: cat_variant) -> Product:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func ItemInvert(CATVariant iIndex) As Product
                 | 
@@ -357,6 +379,8 @@ class Group(AnyObject):
     def remove_explicit(self, i_index: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub RemoveExplicit(CATVariant iIndex)
                 | 

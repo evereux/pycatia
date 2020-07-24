@@ -16,6 +16,8 @@ class DocumentationSettingAtt(SettingController):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -40,6 +42,8 @@ class DocumentationSettingAtt(SettingController):
     def companion_path(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CompanionPath() As CATBSTR
                 | 
@@ -63,6 +67,8 @@ class DocumentationSettingAtt(SettingController):
     def doc_language(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property DocLanguage() As long
                 | 
@@ -86,6 +92,8 @@ class DocumentationSettingAtt(SettingController):
     def priority(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Priority() As CATDocContextualPriority
                 | 
@@ -109,6 +117,8 @@ class DocumentationSettingAtt(SettingController):
     def technical_documentation_path(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property TechnicalDocumentationPath() As CATBSTR
                 | 
@@ -131,6 +141,8 @@ class DocumentationSettingAtt(SettingController):
     def get_companion_path_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetCompanionPathInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -166,6 +178,8 @@ class DocumentationSettingAtt(SettingController):
     def get_doc_language_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetDocLanguageInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -201,6 +215,8 @@ class DocumentationSettingAtt(SettingController):
     def get_priority_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetPriorityInfo(CATBSTR ioAdminLevel,
                 | CATBSTR ioLocked) As boolean
@@ -236,6 +252,8 @@ class DocumentationSettingAtt(SettingController):
     def get_technical_documentation_path_info(self, io_admin_level: str, io_locked: str) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetTechnicalDocumentationPathInfo(CATBSTR
                 | ioAdminLevel,
@@ -272,6 +290,8 @@ class DocumentationSettingAtt(SettingController):
     def set_companion_path_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetCompanionPathLock(boolean iLocked)
                 | 
@@ -306,12 +326,14 @@ class DocumentationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_doc_language_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetDocLanguageLock(boolean iLocked)
                 | 
@@ -347,12 +369,14 @@ class DocumentationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_priority_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetPriorityLock(boolean iLocked)
                 | 
@@ -387,12 +411,14 @@ class DocumentationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_technical_documentation_path_lock(self, i_locked: bool) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetTechnicalDocumentationPathLock(boolean iLocked)
                 | 
@@ -428,7 +454,7 @@ class DocumentationSettingAtt(SettingController):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

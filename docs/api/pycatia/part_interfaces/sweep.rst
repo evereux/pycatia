@@ -1,3 +1,5 @@
+.. _Sweep:
+
 pycatia.part_interfaces.sweep
 =============================
 

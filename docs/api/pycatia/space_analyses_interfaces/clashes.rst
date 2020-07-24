@@ -1,3 +1,5 @@
+.. _Clashes:
+
 pycatia.space_analyses_interfaces.clashes
 =========================================
 

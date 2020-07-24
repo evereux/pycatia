@@ -16,6 +16,8 @@ from pycatia.system_interfaces.system_service import SystemService
 class Point(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -28,9 +30,9 @@ class Point(HybridShape):
                 | 
                 | Represents the hybrid shape Point feature object.
                 | Role: Declare hybrid shape Point root feature object. All interfaces for
-                | different type of Point derives HybridShapepoint.
+                | different type of Point derives HybridShapePoint.
                 | 
-                | Use the CATIAHybridShapeFactory to create a HybridShapepoint
+                | Use the CATIAHybridShapeFactory to create a HybridShapePoint
                 | objects.
                 | 
                 | See also:
@@ -45,6 +47,8 @@ class Point(HybridShape):
     def get_coordinates(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetCoordinates(CATSafeArrayVariant oCoordinates)
                 | 
@@ -70,12 +74,14 @@ class Point(HybridShape):
         End Function
         """
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_coordinates(self, o_coordinates: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetCoordinates(CATSafeArrayVariant oCoordinates)
                 | 
@@ -109,7 +115,7 @@ class Point(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

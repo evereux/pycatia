@@ -17,6 +17,8 @@ from pycatia.types import cat_variant
 class AxisSystems(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class AxisSystems(Collection):
     def add(self) -> AxisSystem:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Add() As AxisSystem
                 | 
@@ -62,6 +66,8 @@ class AxisSystems(Collection):
     def item(self, i_index: cat_variant) -> AxisSystem:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(CATVariant iIndex) As AxisSystem
                 | 

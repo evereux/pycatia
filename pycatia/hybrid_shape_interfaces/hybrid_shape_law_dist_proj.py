@@ -16,6 +16,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeLawDistProj(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -43,6 +45,8 @@ class HybridShapeLawDistProj(HybridShape):
     def applied_unit_symbol(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AppliedUnitSymbol(CATBSTR iSymbol) (Write Only)
                 | 
@@ -52,7 +56,7 @@ class HybridShapeLawDistProj(HybridShape):
         :rtype: str
         """
 
-        return str
+        return self.hybrid_shape_law_dist_proj.AppliedUnitSymbol
 
     @applied_unit_symbol.setter
     def applied_unit_symbol(self, value: str):
@@ -66,6 +70,8 @@ class HybridShapeLawDistProj(HybridShape):
     def definition(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Definition() As Reference
                 | 
@@ -91,6 +97,8 @@ class HybridShapeLawDistProj(HybridShape):
     def measure_unit_symbol(self) -> str:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property MeasureUnitSymbol(CATBSTR iSymbol) (Write Only)
                 | 
@@ -114,6 +122,8 @@ class HybridShapeLawDistProj(HybridShape):
     def parameter_on_definition(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ParameterOnDefinition() As boolean
                 | 
@@ -147,6 +157,8 @@ class HybridShapeLawDistProj(HybridShape):
     def positive_direction_orientation(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property PositiveDirectionOrientation() As long
                 | 
@@ -170,6 +182,8 @@ class HybridShapeLawDistProj(HybridShape):
     def reference(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Reference() As Reference
                 | 
@@ -195,6 +209,8 @@ class HybridShapeLawDistProj(HybridShape):
     def scaling(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Scaling() As double
                 | 
@@ -217,6 +233,8 @@ class HybridShapeLawDistProj(HybridShape):
     def get_applied_unit_symbol(self, o_symbol: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetAppliedUnitSymbol(CATBSTR oSymbol)
                 | 
@@ -243,6 +261,8 @@ class HybridShapeLawDistProj(HybridShape):
     def get_measure_unit_symbol(self, o_symbol: str) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetMeasureUnitSymbol(CATBSTR oSymbol)
                 | 
@@ -269,6 +289,8 @@ class HybridShapeLawDistProj(HybridShape):
     def get_plane_normal(self, o_normal: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetPlaneNormal(CATSafeArrayVariant oNormal)
                 | 
@@ -297,12 +319,14 @@ class HybridShapeLawDistProj(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def is_heterogeneous_law(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func IsHeterogeneousLaw() As boolean
                 | 
@@ -322,6 +346,8 @@ class HybridShapeLawDistProj(HybridShape):
     def put_plane_normal(self, i_normal: tuple) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub PutPlaneNormal(CATSafeArrayVariant iNormal)
                 | 
@@ -350,7 +376,7 @@ class HybridShapeLawDistProj(HybridShape):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

@@ -18,6 +18,8 @@ from pycatia.types import cat_variant
 class DMUReviews(Collection):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -43,6 +45,8 @@ class DMUReviews(Collection):
     def current(self) -> AnyObject:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Current() As CATBaseDispatch (Read Only)
                 | 
@@ -69,6 +73,8 @@ class DMUReviews(Collection):
     def add(self) -> DMUReview:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Add() As DMUReview
                 | 
@@ -93,6 +99,8 @@ class DMUReviews(Collection):
     def import_from(self, i_product: Product) -> DMUReview:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func ImportFrom(Product iProduct) As DMUReview
                 | 
@@ -123,6 +131,8 @@ class DMUReviews(Collection):
     def item(self, i_index: cat_variant) -> DMUReview:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func Item(CATVariant iIndex) As DMUReview
                 | 
@@ -160,6 +170,8 @@ class DMUReviews(Collection):
     def remove(self, i_index: cat_variant) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub Remove(CATVariant iIndex)
                 | 

@@ -17,6 +17,8 @@ from pycatia.system_interfaces.any_object import AnyObject
 class OrderedGeometricalSet(AnyObject):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -42,6 +44,8 @@ class OrderedGeometricalSet(AnyObject):
     def bodies(self) -> 'Bodies':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Bodies() As Bodies (Read Only)
                 | 
@@ -63,6 +67,8 @@ class OrderedGeometricalSet(AnyObject):
     def hybrid_shapes(self) -> HybridShapes:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property HybridShapes() As HybridShapes (Read Only)
                 | 
@@ -93,6 +99,8 @@ class OrderedGeometricalSet(AnyObject):
     def ordered_geometrical_sets(self) -> 'OrderedGeometricalSets':
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property OrderedGeometricalSets() As OrderedGeometricalSets (Read
                 | Only)
@@ -117,6 +125,8 @@ class OrderedGeometricalSet(AnyObject):
     def ordered_sketches(self) -> Sketches:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property OrderedSketches() As Sketches (Read Only)
                 | 
@@ -139,6 +149,8 @@ class OrderedGeometricalSet(AnyObject):
     def insert_hybrid_shape(self, i_hybrid_shape: 'HybridShape') -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InsertHybridShape(HybridShape iHybridShape)
                 | 
@@ -174,7 +186,7 @@ class OrderedGeometricalSet(AnyObject):
         # # End Function
         # # """
 
-        # # system_service = SystemService(self.application.SystemService)
+        # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):

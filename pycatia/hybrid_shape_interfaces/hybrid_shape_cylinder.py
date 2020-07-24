@@ -16,9 +16,10 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 
 class HybridShapeCylinder(HybridShape):
-
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -55,6 +56,8 @@ class HybridShapeCylinder(HybridShape):
     def center(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Center() As Reference
                 | 
@@ -76,7 +79,7 @@ class HybridShapeCylinder(HybridShape):
     @center.setter
     def center(self, reference_center: Reference):
         """
-        :param Reference value:
+        :param Reference reference_center:
         """
 
         self.hybrid_shape_cylinder.Center = reference_center.com_object
@@ -85,6 +88,8 @@ class HybridShapeCylinder(HybridShape):
     def direction(self) -> HybridShapeDirection:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Direction() As HybridShapeDirection
                 | 
@@ -116,6 +121,8 @@ class HybridShapeCylinder(HybridShape):
     def length1(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Length1() As Length
                 | 
@@ -148,6 +155,8 @@ class HybridShapeCylinder(HybridShape):
     def length2(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Length2() As Length
                 | 
@@ -180,6 +189,8 @@ class HybridShapeCylinder(HybridShape):
     def orientation(self) -> False:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Orientation(boolean iOrientation)
                 | 
@@ -210,6 +221,8 @@ class HybridShapeCylinder(HybridShape):
     def radius(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Radius() As Length
                 | 
@@ -240,6 +253,8 @@ class HybridShapeCylinder(HybridShape):
     def symmetrical_extension(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SymmetricalExtension() As boolean
                 | 
@@ -267,6 +282,8 @@ class HybridShapeCylinder(HybridShape):
     def invert_orientation(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub InvertOrientation()
                 | 
@@ -284,4 +301,4 @@ class HybridShapeCylinder(HybridShape):
         return self.hybrid_shape_cylinder.InvertOrientation()
 
     def __repr__(self):
-        return f'HybridShapeCylinder(name="{ self.name }")'
+        return f'HybridShapeCylinder(name="{self.name}")'

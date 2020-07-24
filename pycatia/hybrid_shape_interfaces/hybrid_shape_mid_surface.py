@@ -17,6 +17,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeMidSurface(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -52,6 +54,8 @@ class HybridShapeMidSurface(HybridShape):
     def auto_thickness_threshold(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AutoThicknessThreshold() As long
                 | 
@@ -76,6 +80,8 @@ class HybridShapeMidSurface(HybridShape):
     def creation_mode(self) -> int:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CreationMode() As long
                 | 
@@ -100,6 +106,8 @@ class HybridShapeMidSurface(HybridShape):
     def support(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Support() As Reference
                 | 
@@ -123,6 +131,8 @@ class HybridShapeMidSurface(HybridShape):
     def threshold(self) -> Length:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Threshold() As Length
                 | 

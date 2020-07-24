@@ -17,6 +17,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeAffinity(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -62,6 +64,8 @@ class HybridShapeAffinity(HybridShape):
     def axis_first_direction(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AxisFirstDirection() As Reference
                 | 
@@ -96,6 +100,8 @@ class HybridShapeAffinity(HybridShape):
     def axis_origin(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AxisOrigin() As Reference
                 | 
@@ -128,6 +134,8 @@ class HybridShapeAffinity(HybridShape):
     def axis_plane(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property AxisPlane() As Reference
                 | 
@@ -162,6 +170,8 @@ class HybridShapeAffinity(HybridShape):
     def creation_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CreationMode() As boolean
                 | 
@@ -196,6 +206,8 @@ class HybridShapeAffinity(HybridShape):
     def elem_to_transform(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ElemToTransform() As Reference
                 | 
@@ -227,6 +239,8 @@ class HybridShapeAffinity(HybridShape):
     def volume_result(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property VolumeResult() As boolean
                 | 
@@ -261,6 +275,8 @@ class HybridShapeAffinity(HybridShape):
     def x_ratios(self) -> RealParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property XRatios() As RealParam (Read Only)
                 | 
@@ -285,6 +301,8 @@ class HybridShapeAffinity(HybridShape):
     def y_ratios(self) -> RealParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property YRatios() As RealParam (Read Only)
                 | 
@@ -309,6 +327,8 @@ class HybridShapeAffinity(HybridShape):
     def z_ratios(self) -> RealParam:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ZRatios() As RealParam (Read Only)
                 | 

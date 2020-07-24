@@ -1,3 +1,5 @@
+.. _Publications:
+
 pycatia.product_structure_interfaces.publications
 =================================================
 

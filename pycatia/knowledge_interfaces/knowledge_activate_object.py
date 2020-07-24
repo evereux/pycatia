@@ -16,6 +16,8 @@ class KnowledgeActivateObject(KnowledgeObject):
 
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -38,6 +40,8 @@ class KnowledgeActivateObject(KnowledgeObject):
     def activated(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
                 | o Property Activated() As boolean (Read Only)
                 | 
@@ -63,6 +67,8 @@ class KnowledgeActivateObject(KnowledgeObject):
     def activate(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Activate()
                 | 
@@ -82,6 +88,8 @@ class KnowledgeActivateObject(KnowledgeObject):
     def deactivate(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445))
                 | o Sub Deactivate()
                 | 

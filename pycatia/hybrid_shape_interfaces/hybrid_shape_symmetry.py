@@ -16,6 +16,8 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 class HybridShapeSymmetry(HybridShape):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
 
                 | System.IUnknown
@@ -55,6 +57,8 @@ class HybridShapeSymmetry(HybridShape):
     def creation_mode(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property CreationMode() As boolean
                 | 
@@ -89,6 +93,8 @@ class HybridShapeSymmetry(HybridShape):
     def elem_to_symmetry(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property ElemToSymmetry() As Reference
                 | 
@@ -119,6 +125,8 @@ class HybridShapeSymmetry(HybridShape):
     def reference(self) -> Reference:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Reference() As Reference
                 | 
@@ -152,6 +160,8 @@ class HybridShapeSymmetry(HybridShape):
     def volume_result(self) -> bool:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property VolumeResult() As boolean
                 | 

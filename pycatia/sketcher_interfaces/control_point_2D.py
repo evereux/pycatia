@@ -15,6 +15,8 @@ from pycatia.system_interfaces.system_service import SystemService
 class ControlPoint2D(Point2D):
     """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
                 | System.IUnknown
@@ -39,6 +41,8 @@ class ControlPoint2D(Point2D):
     def curvature(self) -> float:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property Curvature() As double
                 | 
@@ -68,6 +72,8 @@ class ControlPoint2D(Point2D):
     def get_tangent(self) -> tuple:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GetTangent(CATSafeArrayVariant oTangent)
                 | 
@@ -95,12 +101,14 @@ class ControlPoint2D(Point2D):
         End Function
         """
 
-        system_service = SystemService(self.application.SystemService)
+        system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def set_tangent(self, i_tangent_x: float, i_tangent_y: float) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub SetTangent(double iTangentX,
                 | double iTangentY)
@@ -126,6 +134,8 @@ class ControlPoint2D(Point2D):
     def unset_curvature(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub UnsetCurvature()
                 | 
@@ -139,6 +149,8 @@ class ControlPoint2D(Point2D):
     def unset_tangent(self) -> None:
         """
         .. note::
+            :class: toggle
+
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub UnsetTangent()
                 | 

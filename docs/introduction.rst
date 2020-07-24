@@ -21,7 +21,7 @@ You will almost always want to import the `catia`
     from pycatia import catia
     documents = catia.documents
 
-documents is an instance of the :py:class:`pycatia.in_interfaces.documents.Documents`
+documents is an instance of the :ref:`Documents<Documents>`
 class.
 
 .. code-block:: python
@@ -29,7 +29,7 @@ class.
     documents.add('Part')
 
 the add method of the documents class expects the string 'Part', 'Product' or
-'Drawing'. `documents.add('Part') adds a new CATPart to the documents
+'Drawing'. ``documents.add('Part')`` adds a new CATPart to the documents
 collection.
 
 We want to work on this new document. Since this has just been added it's the
@@ -39,7 +39,7 @@ active document.
 
     document = catia.active_document
 
-The document object :py:class:`pycatia.in_interfaces.document.Document` has a
+The document object :ref:`Document<Document>` has a
 number of properties that can be accessed.
 
 .. code-block:: python
@@ -53,7 +53,7 @@ number of properties that can be accessed.
 Creating A Geometrical Set
 --------------------------
 
-A geometrical set created using the `Hybrid Bodies` collection. Your CATIA
+A geometrical set created using the :ref:`HybridBodies<Hybrid_bodies>` collection. Your CATIA
 configuration may by default create a geometrical set in a new CATPart but we'll
 create one here anyway.
 
@@ -71,7 +71,7 @@ create one here anyway.
 
 
 For more detailed examples on how to interact with pycatia see the
-:ref:`examples` page. There contain several scripts that can by run in the
+:ref:`examples` page. There contain several scripts that can be run in the
 terminal.
 
 Footnotes
