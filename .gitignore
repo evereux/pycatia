@@ -135,3 +135,9 @@ quick_n_dirty.py
 *.CATDrawing
 *.CATPart
 *.CATProduct
+
+pycatia.build
+pycatia.dist
+zip_win32_dist.py
+win_32/pycatia
+pycatia.py
