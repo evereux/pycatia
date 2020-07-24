@@ -12,7 +12,8 @@
    * Restructured examples.
    * Added pycatia API tree for overview.
    * Changed sphinx theme to alabaster.
-* Added windows executable (see win_32 folder on github).
+* Added windows executable (see win_32 folder on github). This isn't thoroughly
+   tested and is provided for testing purposes.
 
 ## 0.3.8
 * Updated all hybrid_shape_interfaces properties due to regression bug.
