@@ -34,7 +34,7 @@ class AutoFillet(DressUpShape):
                 | 
                 | Represents the AutoFillet shape.
                 | A AutoFillet fillets all the edges of Solid
-    
+
     """
 
     def __init__(self, com_object):
@@ -90,7 +90,7 @@ class AutoFillet(DressUpShape):
         return References(self.auto_fillet.FacesToFillet)
 
     @property
-    def faces_to_fillets(self) -> False:
+    def faces_to_fillets(self) -> None:
         """
         .. note::
             :class: toggle
@@ -98,19 +98,19 @@ class AutoFillet(DressUpShape):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FacesToFillets(Reference iFace) (Write Only)
 
-        :return: False
-        :rtype: False
+        :return: None
+        :rtype: None
         """
 
-        return None
+        return self.auto_fillet.FacesToFillets
 
     @faces_to_fillets.setter
-    def faces_to_fillets(self, value: False):
+    def faces_to_fillets(self, reference: Reference):
         """
-        :param False value:
+        :param Reference reference:
         """
 
-        self.auto_fillet.FacesToFillets = value
+        self.auto_fillet.FacesToFillets = reference.com_object
 
     @property
     def fillet_radius(self) -> Length:
@@ -136,7 +136,7 @@ class AutoFillet(DressUpShape):
         return Length(self.auto_fillet.FilletRadius)
 
     @property
-    def functional_face(self) -> False:
+    def functional_face(self):
         """
         .. note::
             :class: toggle
@@ -144,19 +144,18 @@ class AutoFillet(DressUpShape):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FunctionalFace(Reference iFace) (Write Only)
 
-        :return: False
-        :rtype: False
+
         """
 
-        return None
+        self.functional_face.FunctionFace
 
     @functional_face.setter
-    def functional_face(self, value: False):
+    def functional_face(self, reference: Reference):
         """
-        :param False value:
+        :param Reference reference:
         """
 
-        self.auto_fillet.FunctionalFace = value
+        self.auto_fillet.FunctionalFace = reference.com_object
 
     @property
     def functional_faces(self) -> References:
@@ -209,12 +208,12 @@ class AutoFillet(DressUpShape):
         return Reference(self.auto_fillet.PartingElement)
 
     @parting_element.setter
-    def parting_element(self, value: Reference):
+    def parting_element(self, reference: Reference):
         """
-        :param Reference value:
+        :param Reference reference:
         """
 
-        self.auto_fillet.PartingElement = value
+        self.auto_fillet.PartingElement = reference.com_object
 
     @property
     def round_radius(self) -> Length:
@@ -273,7 +272,7 @@ class AutoFillet(DressUpShape):
         self.auto_fillet.RoundRadiusActivation = value
 
     @property
-    def slivers_and_crack(self) -> False:
+    def slivers_and_crack(self) -> None:
         """
         .. note::
             :class: toggle
@@ -281,19 +280,19 @@ class AutoFillet(DressUpShape):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SliversAndCrack(Reference iSlivers) (Write Only)
 
-        :return: False
-        :rtype: False
+        :return: None
+        :rtype: None
         """
 
-        return None
+        return self.auto_fillet.SliversAndCrack
 
     @slivers_and_crack.setter
-    def slivers_and_crack(self, value: False):
+    def slivers_and_crack(self, reference: Reference):
         """
-        :param False value:
+        :param Reference reference:
         """
 
-        self.auto_fillet.SliversAndCrack = value
+        self.auto_fillet.SliversAndCrack = reference.com_object
 
     @property
     def slivers_and_cracks(self) -> References:
@@ -345,12 +344,12 @@ class AutoFillet(DressUpShape):
         return Reference(self.auto_fillet.SupportSurface)
 
     @support_surface.setter
-    def support_surface(self, value: Reference):
+    def support_surface(self, reference: Reference):
         """
-        :param Reference value:
+        :param Reference reference:
         """
 
-        self.auto_fillet.SupportSurface = value
+        self.auto_fillet.SupportSurface = reference.com_object
 
     def __repr__(self):
         return f'AutoFillet(name="{ self.name }")'

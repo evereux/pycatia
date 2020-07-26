@@ -10,6 +10,7 @@
 """
 
 from pathlib import Path
+from typing import TYPE_CHECKING
 
 from pycatia.in_interfaces.move import Move
 from pycatia.in_interfaces.position import Position
@@ -21,6 +22,9 @@ from pycatia.product_structure_interfaces.analyze import Analyze
 from pycatia.product_structure_interfaces.publications import Publications
 from pycatia.system_interfaces.any_object import AnyObject
 
+if TYPE_CHECKING:
+    from pycatia.product_structure_interfaces.products import Products
+    from pycatia.in_interfaces.document import Document
 
 class Product(AnyObject):
     """

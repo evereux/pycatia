@@ -40,7 +40,7 @@ class AutoDraft(DressUpShape):
         self.auto_draft = com_object
 
     @property
-    def functional_face(self) -> False:
+    def functional_face(self) -> None:
         """
         .. note::
             :class: toggle
@@ -48,19 +48,19 @@ class AutoDraft(DressUpShape):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FunctionalFace(Reference iFace) (Write Only)
 
-        :return: False
-        :rtype: False
+        :return: None
+        :rtype: None
         """
 
         return None
 
     @functional_face.setter
-    def functional_face(self, value: False):
+    def functional_face(self, reference: Reference):
         """
-        :param False value:
+        :param Reference reference:
         """
 
-        self.auto_draft.FunctionalFace = value
+        self.auto_draft.FunctionalFace = reference
 
     @property
     def functional_faces(self) -> References:

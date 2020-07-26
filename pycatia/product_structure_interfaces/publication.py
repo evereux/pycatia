@@ -36,7 +36,7 @@ class Publication(AnyObject):
         self.publication = com_object
 
     @property
-    def relay(self) -> False:
+    def relay(self) -> 'Publication':
         """
         .. note::
             :class: toggle
@@ -58,19 +58,19 @@ class Publication(AnyObject):
                 | 
                 |              Pub1.Relay(Pub2)
 
-        :return: False
-        :rtype: False
+        :return: Publication
+        :rtype: Publication
         """
 
-        return None
+        return self.publication.Relay
 
     @relay.setter
-    def relay(self, value: False):
+    def relay(self, publication: 'Publication'):
         """
-        :param False value:
+        :param Publication publication:
         """
 
-        self.publication.Relay = value
+        self.publication.Relay = publication.com_object
 
     @property
     def valuation(self) -> AnyObject:

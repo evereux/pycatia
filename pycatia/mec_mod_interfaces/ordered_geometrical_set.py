@@ -9,10 +9,16 @@
         
 """
 
+from typing import TYPE_CHECKING
+
 from pycatia.mec_mod_interfaces.hybrid_shapes import HybridShapes
 from pycatia.mec_mod_interfaces.sketches import Sketches
 from pycatia.system_interfaces.any_object import AnyObject
 
+if TYPE_CHECKING:
+    from pycatia.mec_mod_interfaces.bodies import Bodies
+    from pycatia.mec_mod_interfaces.ordered_geometrical_sets import OrderedGeometricalSets
+    from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 class OrderedGeometricalSet(AnyObject):
     """
