@@ -8,6 +8,10 @@
         and thus help debugging in pycatia.
         
 """
+
+from typing import TYPE_CHECKING
+from typing import Optional
+
 from pywintypes import com_error
 
 from pycatia.exception_handling import CATIAApplicationException
@@ -16,14 +20,16 @@ from pycatia.knowledge_interfaces.dimension import Dimension
 from pycatia.knowledge_interfaces.int_param import IntParam
 from pycatia.knowledge_interfaces.list_parameter import ListParameter
 from pycatia.knowledge_interfaces.parameter import Parameter
-
 from pycatia.knowledge_interfaces.real_param import RealParam
 from pycatia.knowledge_interfaces.str_param import StrParam
 from pycatia.knowledge_interfaces.units import Units
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
 from pycatia.types import cat_variant
+from pycatia.types import any_parameter
 
+if TYPE_CHECKING:
+    from pycatia.knowledge_interfaces.parameter_set import ParameterSet
 
 class Parameters(Collection):
     """
@@ -49,7 +55,7 @@ class Parameters(Collection):
                 |  Set part1   = CATDocs.Add("CATPart")
                 |  Dim parameterList As Parameters
                 |   Set parameterList = part1.Part.Parameters
-    
+
     """
 
     def __init__(self, com_object):
@@ -381,7 +387,7 @@ class Parameters(Collection):
         except com_error:
             return False
 
-    def item(self, index: cat_variant):
+    def item(self, index: cat_variant) -> any_parameter:
         """
         .. note::
             :class: toggle
@@ -413,27 +419,32 @@ class Parameters(Collection):
 
 
         :param cat_variant index:
-        :return: Parameter
-        :rtype: Parameter
+        :return: any_parameter
+        :rtype: any_parameter
         """
-        parameter = None
+
+        p: any_parameter
 
         if not self.is_parameter(index):
             raise CATIAApplicationException(f'Could not find parameter name "{index}".')
 
         if isinstance(self.parameters.Item(index).value, bool):
-            parameter = BoolParam(self.parameters.Item(index))
+            p = BoolParam(self.parameters.Item(index))
 
         elif isinstance(self.parameters.Item(index).value, int):
-            parameter = IntParam(self.parameters.Item(index))
+            p = IntParam(self.parameters.Item(index))
 
         elif isinstance(self.parameters.Item(index).value, str):
-            parameter = StrParam(self.parameters.Item(index))
+            p = StrParam(self.parameters.Item(index))
 
         elif isinstance(self.parameters.Item(index).value, float):
-            parameter = RealParam(self.parameters.Item(index))
+            p = RealParam(self.parameters.Item(index))
 
-        return parameter
+        else:
+
+            raise CATIAApplicationException(f'Could not assign parameter name "{index}".')
+
+        return p
 
     def remove(self, i_index: cat_variant) -> None:
         """

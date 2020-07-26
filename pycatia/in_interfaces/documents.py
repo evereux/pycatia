@@ -8,7 +8,7 @@ from pywintypes import com_error
 from pycatia.exception_handling import CATIAApplicationException
 from pycatia.in_interfaces.document import Document
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types import cat_variant
+from pycatia.types import cat_variant, list_str
 
 
 class Documents(Collection):
@@ -93,24 +93,24 @@ class Documents(Collection):
 
         return Document(self.child_object(self.documents.Add(document_type)))
 
-    def count_types(self, file_type_list: list) -> int:
+    def count_types(self, file_type_list: list_str) -> int:
         """
         Returns the number of documents which presents special file extensions like:
             'catpart', 'catdrawing', 'catproduct', 'catmaterial', 'catalog', 'catfct'
 
 
-        :param str (list) file_type_list: filetype(s) to count.
+        :param list_str file_type_list: filetype(s) to count. can be list or string.
         :return: int()
         """
 
         items = self.get_item_names()
 
         if not type(file_type_list) == list:
-            file_type_list = [elem.lower() for elem in [file_type_list]]
+            type_list = [elem.lower() for elem in [file_type_list]]
         else:
-            file_type_list = [elem.lower() for elem in file_type_list]
+            type_list = [elem.lower() for elem in file_type_list]
 
-        return len([True for name in items for typ in file_type_list if name.lower().find(typ) > 0])
+        return len([True for name in items for typ in type_list if name.lower().find(typ) > 0])
 
     def new_from(self, file_name: str) -> Document:
         """

@@ -141,7 +141,7 @@ class List(Collection):
         :return: None
         :rtype: None
         """
-        return self.list.Reorder(i_index_current.com_object, i_index_target.com_object)
+        return self.list.Reorder(i_index_current, i_index_target)
 
     def replace(self, i_index: cat_variant, i_item_value: AnyObject) -> None:
         """

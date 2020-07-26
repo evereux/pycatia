@@ -9,6 +9,8 @@
 
 """
 
+from typing import TYPE_CHECKING
+
 from pathlib import Path
 
 from pycatia.exception_handling import CATIAApplicationException
@@ -22,6 +24,8 @@ from pycatia.space_analyses_interfaces.spa_workbench import SPAWorkbench
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.drafting_interfaces.drawing_root import DrawingRoot
 
+if TYPE_CHECKING:
+    from pycatia.in_interfaces.selection import Selection
 
 class Document(AnyObject):
     """
@@ -451,7 +455,6 @@ class Document(AnyObject):
         return Workbench(self.document.GetWorkbench(workbench_name))
 
     def export_data(self, file_name: str, file_type: str, overwrite=False) -> None:
-
         """
         .. note::
             :class: toggle
@@ -794,21 +797,21 @@ class Document(AnyObject):
                 |
                 |          Doc.SaveAs("NewName")
 
-        :param str file_name: full pathname to new file_name
+        :param file_name: full pathname to new file_name
         :param bool overwrite:
         :return: None.
         :rtype: None
         """
 
-        file_name = Path(file_name)
+        path_file_name = Path(file_name)
         if overwrite is False:
-            if file_name.is_file():
-                raise FileExistsError(f'File: {file_name} already exists. '
+            if path_file_name.is_file():
+                raise FileExistsError(f'File: {path_file_name} already exists. '
                                       f'Set overwrite=True if you want to overwrite.')
         else:
-            if file_name.is_file():
+            if path_file_name.is_file():
                 self.logger.warning('File already exists. Click YES in CATIA V5.')
-        self.document.SaveAs(file_name)
+        self.document.SaveAs(path_file_name)
 
     def search_for_items(self, selection_objects):
         """

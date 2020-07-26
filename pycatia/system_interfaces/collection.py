@@ -9,12 +9,15 @@
 
 """
 
+from typing import TYPE_CHECKING
+
 from pycatia.base_interfaces.pycatia import PyCATIA
 from pycatia.system_interfaces.any_object import AnyObject
 
-
 # from pycatia.system_interfaces.cat_base_dispatch import CATBaseDispatch
 
+if TYPE_CHECKING:
+    from pycatia.in_interfaces.application import Application
 
 class Collection(PyCATIA):
     """
