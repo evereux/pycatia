@@ -88,7 +88,7 @@ class InstanceFactory(Factory):
                 |         and cleaning the InstanceFactory.
                 |         When doing several instantiations in a loop, this step must be called
                 |         just once at the end of all instantiations.
-    
+
     """
 
     def __init__(self, com_object):
@@ -96,7 +96,7 @@ class InstanceFactory(Factory):
         self.instance_factory = com_object
 
     @property
-    def instantiation_mode(self) -> False:
+    def instantiation_mode(self) -> str:
         """
         .. note::
             :class: toggle
@@ -117,16 +117,16 @@ class InstanceFactory(Factory):
                 | 
                 |          InstanceFactory.InstantationMode = Mode
 
-        :return: False
-        :rtype: False
+        :return: str
+        :rtype: str
         """
 
-        return None
+        return self.instance_factory.InstantiationMode
 
     @instantiation_mode.setter
-    def instantiation_mode(self, value: False):
+    def instantiation_mode(self, value: str):
         """
-        :param False value:
+        :param str value:
         """
 
         self.instance_factory.InstantiationMode = value

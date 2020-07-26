@@ -9,6 +9,8 @@
         
 """
 
+from typing import TYPE_CHECKING
+
 from pycatia.drafting_interfaces.drawing_arrows import DrawingArrows
 from pycatia.drafting_interfaces.drawing_components import DrawingComponents
 from pycatia.drafting_interfaces.drawing_dimensions import DrawingDimensions
@@ -23,6 +25,8 @@ from pycatia.mec_mod_interfaces.geometric_elements import GeometricElements
 from pycatia.sketcher_interfaces.factory_2D import Factory2D
 from pycatia.system_interfaces.any_object import AnyObject
 
+if TYPE_CHECKING:
+    from pycatia.drafting_interfaces.drawing_text import DrawingText
 
 class DrawingView(AnyObject):
     """

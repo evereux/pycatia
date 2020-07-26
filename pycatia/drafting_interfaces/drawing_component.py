@@ -9,9 +9,14 @@
         
 """
 
+from typing import TYPE_CHECKING
+
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.types import cat_variant
 
+if TYPE_CHECKING:
+    from pycatia.drafting_interfaces.drawing_view import DrawingView
+    from pycatia.drafting_interfaces.drawing_sheet import DrawingSheet
 
 class DrawingComponent(AnyObject):
     """
@@ -434,7 +439,7 @@ class DrawingComponent(AnyObject):
         :return: AnyObject
         :rtype: AnyObject
         """
-        return AnyObject(self.drawing_component.GetModifiableObject(i_index.com_object))
+        return AnyObject(self.drawing_component.GetModifiableObject(i_index))
 
     def get_modifiable_objects_count(self) -> int:
         """

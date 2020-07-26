@@ -260,7 +260,7 @@ class HybridShapeRevol(HybridShape):
         self.hybrid_shape_revol.FirstUptoElement = reference_element.com_object
 
     @property
-    def orientation(self) -> False:
+    def orientation(self) -> bool:
         """
         .. note::
             :class: toggle
@@ -277,16 +277,16 @@ class HybridShapeRevol(HybridShape):
                 |      Dim IsInverted As boolean
                 |      IsInverted = Revol.Orientation
 
-        :return: False
-        :rtype: False
+        :return: bool
+        :rtype: bool
         """
 
-        return None
+        return self.hybrid_shape_revol.Orientation
 
     @orientation.setter
-    def orientation(self, value: False):
+    def orientation(self, value: bool):
         """
-        :param False value:
+        :param bool value:
         """
 
         self.hybrid_shape_revol.Orientation = value
