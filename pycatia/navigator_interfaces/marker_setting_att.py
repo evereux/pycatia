@@ -334,7 +334,7 @@ class MarkerSettingAtt(SettingController):
         :rtype: int
         """
 
-        return None
+        return self.marker_setting_att.MarkerTextDefaultsSize3D
 
     @marker_text_defaults_size_3d.setter
     def marker_text_defaults_size_3d(self, value: int):
@@ -386,7 +386,7 @@ class MarkerSettingAtt(SettingController):
         :rtype: int
         """
 
-        return None
+        return self.marker_setting_att.MarkerTextWeight3D
 
     @marker_text_weight_3d.setter
     def marker_text_weight_3d(self, value: int):
