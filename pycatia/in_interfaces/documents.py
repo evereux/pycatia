@@ -105,10 +105,12 @@ class Documents(Collection):
 
         items = self.get_item_names()
 
-        if not type(file_type_list) == list:
+        if isinstance(file_type_list, str):
             type_list = [elem.lower() for elem in [file_type_list]]
-        else:
+        elif isinstance(file_type_list, list):
             type_list = [elem.lower() for elem in file_type_list]
+        else:
+            raise CATIAApplicationException(f'File type list {file_type_list} not valid type.')
 
         return len([True for name in items for typ in type_list if name.lower().find(typ) > 0])
 
