@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.0
+* Removed pycatia.workbenches folder. Funtionality is provided for Document object.
+* Lots of bug/type fixes thanks to running mypy on the project.
+
 ## 0.3.9
 * Added product.generate_ALLCATPart.
 * Added product.constraints.
