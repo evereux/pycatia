@@ -8,8 +8,12 @@
         and thus help debugging in pycatia.
 
 """
+from typing import TYPE_CHECKING
 
 from pycatia.base_interfaces.pycatia import PyCATIA
+
+if TYPE_CHECKING:
+    from pycatia.in_interfaces.application import Application
 
 
 class AnyObject(PyCATIA):

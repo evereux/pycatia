@@ -8,11 +8,14 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
 
 from pycatia.drafting_interfaces.drawing_component import DrawingComponent
 from pycatia.system_interfaces.collection import Collection
 from pycatia.types import cat_variant
 
+if TYPE_CHECKING:
+    from pycatia.drafting_interfaces.drawing_view import DrawingView
 
 class DrawingComponents(Collection):
     """

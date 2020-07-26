@@ -9,9 +9,13 @@
         
 """
 
+from typing import TYPE_CHECKING
+
 from pycatia.knowledge_interfaces.parameters import Parameters
 from pycatia.system_interfaces.any_object import AnyObject
 
+if TYPE_CHECKING:
+    from pycatia.knowledge_interfaces.parameter_sets import ParameterSets
 
 class ParameterSet(AnyObject):
     """
