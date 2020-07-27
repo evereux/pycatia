@@ -195,5 +195,11 @@ class Marker3Ds(Collection):
         # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
+    def __getitem__(self, n: int) -> Marker3D:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Marker3D(self.marker_3ds.item(n + 1))
+
     def __repr__(self):
         return f'Marker3Ds(name="{self.name}")'

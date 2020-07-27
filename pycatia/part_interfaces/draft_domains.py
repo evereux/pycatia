@@ -72,5 +72,11 @@ class DraftDomains(Collection):
         """
         return DraftDomain(self.draft_domains.Item(i_index))
 
+    def __getitem__(self, n: int) -> DraftDomain:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return DraftDomain(self.draft_domains.item(n + 1))
+
     def __repr__(self):
         return f'DraftDomains(name="{self.name}")'

@@ -76,5 +76,11 @@ class Folders(Collection):
         """
         return Folder(self.folders.Item(i_number))
 
+    def __getitem__(self, n: int) -> Folder:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Folder(self.folders.item(n + 1))
+
     def __repr__(self):
         return f'Folders(name="{self.name}")'

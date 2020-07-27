@@ -105,5 +105,11 @@ class ParameterSets(Collection):
         """
         return ParameterSet(self.parameter_sets.Item(i_index))
 
+    def __getitem__(self, n: int) -> ParameterSet:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return ParameterSet(self.parameter_sets.item(n + 1))
+
     def __repr__(self):
         return f'ParameterSets(name="{self.name}")'

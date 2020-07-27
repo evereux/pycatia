@@ -307,5 +307,11 @@ class Documents(Collection):
         """
         return self.documents.Read(file_name)
 
+    def __getitem__(self, n: int) -> Document:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Document(self.documents.item(n + 1))
+
     def __repr__(self):
         return f'Documents(name="{self.name}")'

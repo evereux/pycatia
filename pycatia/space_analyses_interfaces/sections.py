@@ -169,5 +169,11 @@ class Sections(Collection):
         """
         return self.sections.Remove(i_index)
 
+    def __getitem__(self, n: int) -> Section:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Section(self.sections.item(n + 1))
+
     def __repr__(self):
         return f'Sections(name="{self.name}")'
