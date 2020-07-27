@@ -9,8 +9,9 @@ Breaking changes.
   >>> from pycatia import catia
   >>> caa = catia()
   >>> document = caa.active_document
-* Removed pycatia.workbenches folder. Funtionality is provided for Document object.
+* Removed pycatia.workbenches folder. Functionality is provided for Document object.
 * Lots of bug/type fixes thanks to running mypy on the project.
+* Collection objects are now directly iterable. Lovely.
 
 ## 0.3.9
 * Added product.generate_ALLCATPart.
