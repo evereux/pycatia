@@ -180,5 +180,11 @@ class AnnotatedViews(Collection):
         """
         return self.annotated_views.Remove(i_index)
 
+    def __getitem__(self, n: int) -> AnnotatedView:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return AnnotatedView(self.annotated_views.item(n + 1))
+
     def __repr__(self):
         return f'AnnotatedViews(name="{self.name}")'

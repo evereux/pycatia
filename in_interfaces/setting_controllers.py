@@ -14,7 +14,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class SettingControllers(Collection):
-
     """
         .. note::
             :class: toggle
@@ -63,5 +62,11 @@ class SettingControllers(Collection):
         """
         return SettingController(self.setting_controllers.Item(i_index))
 
+    def __getitem__(self, n: int) -> SettingController:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return SettingController(self.setting_controllers.item(n + 1))
+
     def __repr__(self):
-        return f'SettingControllers(name="{ self.name }")'
+        return f'SettingControllers(name="{self.name}")'

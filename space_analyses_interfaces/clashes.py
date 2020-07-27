@@ -168,5 +168,11 @@ class Clashes(Collection):
         """
         return self.clashes.Remove(i_index)
 
+    def __getitem__(self, n: int) -> Clash:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Clash(self.clashes.item(n + 1))
+
     def __repr__(self):
         return f'Clashes(name="{self.name}")'

@@ -164,5 +164,11 @@ class List(Collection):
         """
         return self.list.Replace(i_index, i_item_value.com_object)
 
+    def __getitem__(self, n: int) -> AnyObject:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return AnyObject(self.list.item(n + 1))
+
     def __repr__(self):
         return f'List(name="{self.name}")'

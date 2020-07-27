@@ -177,5 +177,11 @@ class Hyperlinks(Collection):
         """
         return self.hyperlinks.Remove(i_index)
 
+    def __getitem__(self, n: int) -> Hyperlink:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Hyperlink(self.hyperlinks.item(n + 1))
+
     def __repr__(self):
         return f'Hyperlinks(name="{self.name}")'

@@ -26,6 +26,7 @@ if TYPE_CHECKING:
     from pycatia.product_structure_interfaces.products import Products
     from pycatia.in_interfaces.document import Document
 
+
 class Product(AnyObject):
     """
         .. note::
@@ -1116,6 +1117,9 @@ class Product(AnyObject):
         Returns a list of Product().
         :return: [Product()]
         """
+
+        raise Warning(
+            'This method will be deprecated in a future release. Use products instead. This returns an iterable.')
         products = []
 
         for i in range(0, self.product.Products.Count):

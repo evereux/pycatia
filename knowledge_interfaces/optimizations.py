@@ -125,5 +125,11 @@ class Optimizations(Collection):
         """
         return AnyObject(self.optimizations.Item(i_index))
 
+    def __getitem__(self, n: int) -> Optimization:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Optimization(self.optimizations.item(n + 1))
+
     def __repr__(self):
         return f'Optimizations(name="{self.name}")'

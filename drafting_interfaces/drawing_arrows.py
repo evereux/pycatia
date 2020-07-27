@@ -155,5 +155,11 @@ class DrawingArrows(Collection):
         """
         return self.drawing_arrows.Remove(i_index)
 
+    def __getitem__(self, n: int) -> DrawingArrow:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return DrawingArrow(self.drawing_arrows.item(n + 1))
+
     def __repr__(self):
         return f'DrawingArrows(name="{self.name}")'

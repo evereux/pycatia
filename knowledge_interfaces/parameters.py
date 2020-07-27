@@ -31,6 +31,7 @@ from pycatia.types import any_parameter
 if TYPE_CHECKING:
     from pycatia.knowledge_interfaces.parameter_set import ParameterSet
 
+
 class Parameters(Collection):
     """
         .. note::
@@ -520,6 +521,12 @@ class Parameters(Collection):
         :rtype: Parameters
         """
         return Parameters(self.parameters.SubList(i_object.com_object, i_recursively))
+
+    def __getitem__(self, n: int) -> Parameter:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Parameter(self.parameters.item(n + 1))
 
     def __repr__(self):
         return f'Parameters(name="{self.name}")'

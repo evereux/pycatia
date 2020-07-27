@@ -17,6 +17,7 @@ from pycatia.types import cat_variant
 if TYPE_CHECKING:
     from pycatia.drafting_interfaces.drawing_view import DrawingView
 
+
 class DrawingComponents(Collection):
     """
         .. note::
@@ -176,6 +177,12 @@ class DrawingComponents(Collection):
         :rtype: None
         """
         return self.drawing_components.Remove(i_index)
+
+    def __getitem__(self, n: int) -> DrawingComponent:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return DrawingComponent(self.drawing_components.item(n + 1))
 
     def __repr__(self):
         return f'DrawingComponents()'
