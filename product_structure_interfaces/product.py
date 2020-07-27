@@ -11,6 +11,7 @@
 
 from pathlib import Path
 from typing import TYPE_CHECKING
+import warnings
 
 from pycatia.in_interfaces.move import Move
 from pycatia.in_interfaces.position import Position
@@ -1118,15 +1119,18 @@ class Product(AnyObject):
         :return: [Product()]
         """
 
-        raise Warning(
-            'This method will be deprecated in a future release. Use products instead. This returns an iterable.')
-        products = []
+        warnings.warn(
+            'This method will be deprecated in a future release. Use Product.products instead.',
+            DeprecationWarning,
+            stacklevel=2)
+
+        products_ = []
 
         for i in range(0, self.product.Products.Count):
             product = Product(self.product.Products.Item(i + 1))
-            products.append(product)
+            products_.append(product)
 
-        return products
+        return products_
 
     def get_shape_path_name(self, i_shape_name=None):
         """
