@@ -1,6 +1,14 @@
 # Changelog
 
 ## 0.4.0
+Breaking changes.
+* The catia application object now needs to be intiliased in your scripts. This was done so scripts can
+  be written in such a way that they first launch CATIA V5 before the application object is initialised.
+  Previously, the object was initialised immediately on import. Not practical for some use cases. 
+  For example:
+  >>> from pycatia import catia
+  >>> caa = catia()
+  >>> document = caa.active_document
 * Removed pycatia.workbenches folder. Funtionality is provided for Document object.
 * Lots of bug/type fixes thanks to running mypy on the project.
 

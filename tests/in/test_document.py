@@ -15,17 +15,18 @@ now_string = datetime.now().strftime('%Y%m%d-%H%M%S')
 
 
 def test_activate_document():
-    documents = catia.documents
+    caa = catia()
+    documents = caa.documents
     documents.open(cat_part_measurable)
-    document_part = catia.active_document
+    document_part = caa.active_document
     documents.open(cat_product)
-    document_product = catia.active_document
+    document_product = caa.active_document
 
     assert document_part.name == os.path.basename(cat_part_measurable)
     assert document_product.name == os.path.basename(cat_product)
 
     document_part.activate()
-    document = catia.active_document
+    document = caa.active_document
 
     assert document.name == os.path.basename(cat_part_measurable)
 
@@ -34,15 +35,15 @@ def test_activate_document():
 
 
 def test_add_documents():
-    with CATIADocHandler(new_document='Part') as handler:
+    with CATIADocHandler(new_document='Part') as caa:
         document = handler.document
         assert 'CATPart' in document.name
 
-    with CATIADocHandler(new_document='Part') as handler:
+    with CATIADocHandler(new_document='Part') as caa:
         document = handler.document
         assert 'CATPart' in document.name
 
-    with CATIADocHandler(new_document='Part') as handler:
+    with CATIADocHandler(new_document='Part') as caa:
         document = handler.document
         assert 'CATPart' in document.name
 
@@ -52,7 +53,7 @@ def test_add_documents():
 
 
 def test_count_types():
-    with CATIADocHandler(cat_product) as handler:
+    with CATIADocHandler(cat_product) as caa:
         documents = handler.documents
 
         num = documents.count_types('.catpart')
@@ -61,7 +62,7 @@ def test_count_types():
 
 
 def test_export_document():
-    with CATIADocHandler(cat_part_measurable) as handler:
+    with CATIADocHandler(cat_part_measurable) as caa:
         document = handler.document
 
         export_type = 'igs'
@@ -81,14 +82,14 @@ def test_full_name():
     """
     :return:
     """
-    with CATIADocHandler(cat_part_measurable) as handler:
+    with CATIADocHandler(cat_part_measurable) as caa:
         document = handler.document
 
         assert str(cat_part_measurable) == document.full_name
 
 
 def test_get_documents_names():
-    with CATIADocHandler(cat_product) as handler:
+    with CATIADocHandler(cat_product) as caa:
         documents = handler.documents
 
         expected_names = [
@@ -102,7 +103,7 @@ def test_get_documents_names():
 
 
 def test_is_saved():
-    with CATIADocHandler(cat_part_measurable) as handler:
+    with CATIADocHandler(cat_part_measurable) as caa:
         document = handler.document
         assert document.is_saved
 
@@ -124,7 +125,7 @@ def test_is_saved():
 
 
 def test_item():
-    with CATIADocHandler(cat_product) as handler:
+    with CATIADocHandler(cat_product) as caa:
         documents = handler.documents
         doc_com1 = documents.item(cat_product.name)
 
@@ -132,7 +133,8 @@ def test_item():
 
 
 def test_new_from():
-    documents = catia.documents
+    caa = catia()
+    documents = caa.documents
     document = documents.new_from(cat_part_measurable)
 
     assert document.name is not os.path.basename(cat_part_measurable)
@@ -145,12 +147,13 @@ def test_new_from():
 
 def test_no_such_file():
     with pytest.raises(FileNotFoundError):
-        documents = catia.documents
+        caa = catia()
+        documents = caa.documents
         documents.open('lala')
 
 
 def test_num_open():
-    with CATIADocHandler(cat_part_measurable) as handler:
+    with CATIADocHandler(cat_part_measurable) as caa:
         documents = handler.documents
         # see warning in documentation for num_open()
 
@@ -162,14 +165,14 @@ def test_open_document():
     # once the document is closed. I don't know if this is a CATIA bug or `feature` to keep the linked item loaded.
     # assert documents.documents.Count == 0
 
-    with CATIADocHandler(cat_part_measurable) as handler:
+    with CATIADocHandler(cat_part_measurable) as caa:
         document = handler.document
         assert document.name == cat_part_measurable.name
         assert f'Document(name="{document.name}")' == document.__repr__()
 
 
 def test_part():
-    with CATIADocHandler(cat_part_measurable) as handler:
+    with CATIADocHandler(cat_part_measurable) as caa:
         document = handler.document
         part = document.part()
         assert part.name == "cat_part_measurable"
@@ -178,7 +181,7 @@ def test_part():
 
 
 def test_product():
-    with CATIADocHandler(cat_product) as handler:
+    with CATIADocHandler(cat_product) as caa:
         document = handler.document
         product = document.product()
         assert 'cat_product_1' in product.name
@@ -188,7 +191,7 @@ def test_product():
 def test_saving():
     new_filename = os.path.join(os.getcwd(), '__junk__/', (now_string + '.CATPart'))
 
-    with CATIADocHandler(cat_part_measurable) as handler:
+    with CATIADocHandler(cat_part_measurable) as caa:
         document = handler.document
 
         document.save_as(new_filename)

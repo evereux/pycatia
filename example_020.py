@@ -12,6 +12,7 @@
 
 from pycatia import catia
 
+caa = catia()
 buttons = 2 + 32
-result = catia.message_box('Hello World!?', buttons=buttons, title='Asking a question.')
+result = caa.message_box('Hello World!?', buttons=buttons, title='Asking a question.')
 # result = 3 if the user presses Abort.

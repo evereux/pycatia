@@ -20,11 +20,12 @@ from pycatia import catia
 # path to file to open.
 file_name = r'tests\cat_files\part_measurable.CATPart'
 
+caa = catia()
 # open document
-documents = catia.documents
+documents = caa.documents
 documents.open(file_name)
 
-document = catia.active_document
+document = caa.active_document
 
 # _Full_ path of new file. This uses current working directory.
 new_file_name = Path(os.getcwd(), 'new_part.CATPart')

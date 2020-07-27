@@ -5,32 +5,35 @@ from tests.source_files import cat_part_measurable
 
 
 def test_application():
-    assert 'Application(name="CNEXT")' in catia.__repr__()
+    caa = catia()
+    assert 'Application(name="CNEXT")' in caa.__repr__()
 
 
 def test_refresh():
-    documents = catia.documents
+    caa = catia()
+    documents = caa.documents
     documents.open(cat_part_measurable)
-    document = catia.active_document
+    document = caa.active_document
 
-    catia.refresh_display = False
-    assert catia.refresh_display is False
+    caa.refresh_display = False
+    assert caa.refresh_display is False
 
-    catia.refresh_display = True
-    assert catia.refresh_display is True
+    caa.refresh_display = True
+    assert caa.refresh_display is True
 
     document.close()
 
 
 def test_visible():
-    documents = catia.documents
+    caa = catia()
+    documents = caa.documents
     documents.open(cat_part_measurable)
-    document = catia.active_document
+    document = caa.active_document
 
-    catia.visible = False
-    assert catia.visible is False
+    caa.visible = False
+    assert caa.visible is False
 
-    catia.visible = True
-    assert catia.visible is True
+    caa.visible = True
+    assert caa.visible is True
 
     document.close()

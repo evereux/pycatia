@@ -15,11 +15,11 @@ from pycatia import catia
 
 # from pycatia.knowledge_interfaces import BoolParam
 
-
-documents = catia.documents
+caa = catia()
+documents = caa.documents
 documents.open(r'tests/cat_files/part_measurable.CATPart')
 
-document = catia.active_document
+document = caa.active_document
 
 part = document.part()
 

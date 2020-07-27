@@ -9,10 +9,11 @@
 """
 from pycatia import catia
 
-documents = catia.documents
+caa = catia()
+documents = caa.documents
 # create a new CATPart.
 documents.add('Part')
-document = catia.active_document
+document = caa.active_document
 
 part = document.part()
 hybrid_bodies = part.hybrid_bodies

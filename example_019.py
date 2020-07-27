@@ -12,12 +12,13 @@
 from pycatia import catia
 from pycatia.enumeration.enumeration_types import cat_vis_property_status
 
-document = catia.active_document
+caa = catia()
+document = caa.active_document
 selection = document.selection
 selection.search("CATGmoSearch.Point.Color='(255,0,0)',in")
 
 # how many items have been found?
-catia.logger.info(f'Found {selection.count2} items.')
+caa.logger.info(f'Found {selection.count2} items.')
 
 # to loop through the items
 for i in range(selection.count2):
