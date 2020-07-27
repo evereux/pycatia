@@ -35,11 +35,11 @@ def print_properties(obj):
 
 
 # I know, this isn't pretty, but my intent is to keep examples simple.
-for sub_product in product.get_products():
+for sub_product in product.products:
 
     if sub_product.is_catproduct():
 
-        for child_product in sub_product.get_products():
+        for child_product in sub_product.products:
 
             if child_product.is_catpart():
                 child_product.activate_default_shape()
