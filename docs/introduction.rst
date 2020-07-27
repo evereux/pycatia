@@ -19,7 +19,9 @@ You will almost always want to import the `catia`
 .. code-block:: python
 
     from pycatia import catia
-    documents = catia.documents
+    # initialise the catia automation appliction. CATIA V5 should already be running.
+    caa = catia()
+    documents = caa.documents
 
 documents is an instance of the :ref:`Documents<Documents>`
 class.
@@ -37,7 +39,7 @@ active document.
 
 .. code-block:: python
 
-    document = catia.active_document
+    document = caa.active_document
 
 The document object :ref:`Document<Document>` has a
 number of properties that can be accessed.

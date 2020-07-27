@@ -12,10 +12,11 @@ import csv
 
 from pycatia import catia
 
-documents = catia.documents
+caa = catia()
+documents = caa.documents
 documents.open(r'tests/cat_files/part_measurable.CATPart')
 
-document = catia.active_document
+document = caa.active_document
 
 spa_workbench = document.spa_workbench()
 part = document.part()

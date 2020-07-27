@@ -10,11 +10,13 @@
 
 from pycatia import catia
 
-documents = catia.documents
+# initialise the catia automation application
+caa = catia()
+documents = caa.documents
 documents.open(r'tests/cat_files/part_measurable.CATPart')
 
 # get the active document
-document = catia.active_document
+document = caa.active_document
 # >>> print(document.path())
 # >>> C:\Users\evereux\python\projects\pycatia\tests\CF_catia_measurable_part.CATPart
 

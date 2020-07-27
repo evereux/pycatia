@@ -12,7 +12,7 @@ from tests.source_files import cat_drawing
 
 
 def test_active_drawing():
-    with CATIADocHandler(cat_drawing) as handler:
+    with CATIADocHandler(cat_drawing) as caa:
         catia = handler.catia
         drawing_root = catia.active_document.drawing_root()
 
@@ -20,7 +20,7 @@ def test_active_drawing():
 
 
 def test_orientation():
-    with CATIADocHandler(cat_drawing) as handler:
+    with CATIADocHandler(cat_drawing) as caa:
         catia = handler.catia
         drawing_root = catia.active_document.drawing_root()
         sheets = drawing_root.sheets
@@ -31,7 +31,7 @@ def test_orientation():
 
 
 def test_paper_size():
-    with CATIADocHandler(cat_drawing) as handler:
+    with CATIADocHandler(cat_drawing) as caa:
         catia = handler.catia
         drawing_root = catia.active_document.drawing_root()
         sheets = drawing_root.sheets
@@ -42,7 +42,7 @@ def test_paper_size():
 
 
 def test_sheets():
-    with CATIADocHandler(cat_drawing) as handler:
+    with CATIADocHandler(cat_drawing) as caa:
         catia = handler.catia
         drawing_root = catia.active_document.drawing_root()
         sheets = drawing_root.sheets
@@ -50,14 +50,14 @@ def test_sheets():
 
 
 def test_standard():
-    with CATIADocHandler(cat_drawing) as handler:
+    with CATIADocHandler(cat_drawing) as caa:
         catia = handler.catia
         root = catia.active_document.drawing_root()
         assert root.standard == cat_drawing_standard.index('catISO')
 
 
 def test_reorder():
-    with CATIADocHandler(cat_drawing) as handler:
+    with CATIADocHandler(cat_drawing) as caa:
         catia = handler.catia
         root = catia.active_document.drawing_root()
         sheets = root.sheets
@@ -74,7 +74,7 @@ def test_reorder():
 
 
 def test_scale():
-    with CATIADocHandler(cat_drawing) as handler:
+    with CATIADocHandler(cat_drawing) as caa:
         catia = handler.catia
         root = catia.active_document.drawing_root()
         sheets = root.sheets
@@ -85,7 +85,7 @@ def test_scale():
 
 
 def test_projection_method():
-    with CATIADocHandler(cat_drawing) as handler:
+    with CATIADocHandler(cat_drawing) as caa:
         sheets = handler.catia.active_document.drawing_root().sheets
         sheet_1 = sheets.item(1)
 

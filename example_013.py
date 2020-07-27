@@ -9,13 +9,14 @@
 """
 from pycatia import catia
 
+caa = catia()
 # create a new part and rename.
-documents = catia.documents
+documents = caa.documents
 documents.add('Part')
-document = catia.active_document
+document = caa.active_document
 
-part = catia.active_document.part()
-product = catia.active_document.product()
+part = caa.active_document.part()
+product = caa.active_document.product()
 hybrid_shape_factory = part.hybrid_shape_factory
 part_shape_factory = part.shape_factory
 body = part.main_body

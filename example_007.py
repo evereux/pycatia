@@ -14,8 +14,8 @@ from pycatia import CATIADocHandler
 
 catia_part = r'tests\cat_files\part_measurable.CATPart'
 
-with CATIADocHandler(catia_part) as handler:
-    document = handler.document
+with CATIADocHandler(catia_part) as caa:
+    document = caa.document
     # do some stuff.
     # save if you need to.
     time.sleep(5)  # don't do this, no need.
