@@ -2,12 +2,13 @@
 
 """
 
-    The base object from which most other functionality derives. See examples for more information.
+    The catia base object is from which most other functionality derives. See examples for more information.
 
     >>> from pycatia import catia
-    >>> documents = catia.documents
+    >>> caa = catia()
+    >>> documents = caa.documents
     >>> # documents represents the collection of currently open documents.
-    >>> document = catia.active_document
+    >>> document = caa.active_document
     >>> # document is the currently active document.
     >>>
     >>> # open a new CATPart document
@@ -17,11 +18,9 @@
 
 import os
 
-from pycatia.base_interfaces.base_application import catia_application
+from pycatia.base_interfaces.base_application import catia_application as catia
 from pycatia.base_interfaces.context import CATIADocHandler
 from .version import version
-
-catia = catia_application()
 
 __author__ = 'Paul Bourne'
 __author_email = 'evereux@gmail.com'
