@@ -16,7 +16,7 @@ documents.open(r'tests\cat_files\product_top.CATProduct')
 document = caa.active_document
 
 product = document.product()
-products = product.get_products()
+products = product.products
 
 for product in products:
     print(product.position.get_components())

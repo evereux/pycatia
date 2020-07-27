@@ -22,7 +22,7 @@ spa_workbench = document.spa_workbench()
 
 hybrid_bodies = part.hybrid_bodies
 hybrid_body = hybrid_bodies.get_item_by_name('construction_points')
-shapes = hybrid_body.hybrid_shapes.items()
+shapes = hybrid_body.hybrid_shapes
 
 for point in shapes:
     reference = part.create_reference_from_object(point)
