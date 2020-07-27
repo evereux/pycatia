@@ -11,7 +11,7 @@ from tests.source_files import cat_part_measurable
 
 
 def test_parameters_name():
-    with CATIADocHandler(cat_part_measurable) as handler:
+    with CATIADocHandler(cat_part_measurable) as caa:
         document = handler.document
         part = document.part()
         parameters = part.parameters
@@ -22,7 +22,7 @@ def test_parameters_name():
 
 
 def test_all_parameters():
-    with CATIADocHandler(cat_part_measurable) as handler:
+    with CATIADocHandler(cat_part_measurable) as caa:
         document = handler.document
         part = document.part()
         parameters = part.parameters
@@ -33,7 +33,7 @@ def test_all_parameters():
 
 
 def test_create_boolean():
-    with CATIADocHandler(new_document='Part') as handler:
+    with CATIADocHandler(new_document='Part') as caa:
         document = handler.document
         part = document.part()
         parameters = part.parameters
@@ -45,7 +45,7 @@ def test_create_boolean():
 
 
 def test_create_dimension():
-    with CATIADocHandler(new_document='Part') as handler:
+    with CATIADocHandler(new_document='Part') as caa:
         document = handler.document
         part = document.part()
         parameters = part.parameters
@@ -57,7 +57,7 @@ def test_create_dimension():
 
 
 def test_create_int():
-    with CATIADocHandler(new_document='Part') as handler:
+    with CATIADocHandler(new_document='Part') as caa:
         document = handler.document
         part = document.part()
         parameters = part.parameters
@@ -69,7 +69,7 @@ def test_create_int():
 
 
 def test_create_list():
-    with CATIADocHandler(new_document='Part') as handler:
+    with CATIADocHandler(new_document='Part') as caa:
         document = handler.document
         part = document.part()
         parameters = part.parameters
@@ -80,7 +80,7 @@ def test_create_list():
 
 
 def test_count_parameters():
-    with CATIADocHandler(new_document='Part') as handler:
+    with CATIADocHandler(new_document='Part') as caa:
         document = handler.document
         part = document.part()
         parameters = part.parameters
@@ -89,7 +89,7 @@ def test_count_parameters():
 
 
 def test_create_real():
-    with CATIADocHandler(new_document='Part') as handler:
+    with CATIADocHandler(new_document='Part') as caa:
         document = handler.document
         part = document.part()
         parameters = part.parameters
@@ -101,7 +101,7 @@ def test_create_real():
 
 
 def test_create_parameters_set():
-    with CATIADocHandler(new_document='Part') as handler:
+    with CATIADocHandler(new_document='Part') as caa:
         document = handler.document
         part = document.part()
         parameters = part.parameters
@@ -112,7 +112,7 @@ def test_create_parameters_set():
 
 
 def test_create_string():
-    with CATIADocHandler(new_document='Part') as handler:
+    with CATIADocHandler(new_document='Part') as caa:
         document = handler.document
         part = document.part()
         parameters = part.parameters
@@ -124,7 +124,7 @@ def test_create_string():
 
 
 def test_get_name_to_use_in_relation():
-    with CATIADocHandler(new_document='Part') as handler:
+    with CATIADocHandler(new_document='Part') as caa:
         document = handler.document
         part = document.part()
         parameters = part.parameters
@@ -136,7 +136,7 @@ def test_get_name_to_use_in_relation():
 
 
 def test_has_parameters():
-    with CATIADocHandler(new_document='Part') as handler:
+    with CATIADocHandler(new_document='Part') as caa:
         document = handler.document
         part = document.part()
         parameters = part.parameters
@@ -145,7 +145,7 @@ def test_has_parameters():
 
 
 def test_item():
-    with CATIADocHandler(new_document='Part') as handler:
+    with CATIADocHandler(new_document='Part') as caa:
         document = handler.document
         part = document.part()
         parameters = part.parameters
@@ -161,7 +161,7 @@ def test_item():
 
 
 def test_sub_list():
-    with CATIADocHandler(cat_part_measurable) as handler:
+    with CATIADocHandler(cat_part_measurable) as caa:
         document = handler.document
         part = document.part()
         bodies = part.bodies
@@ -174,7 +174,7 @@ def test_sub_list():
 
 
 def test_remove():
-    with CATIADocHandler(new_document='Part') as handler:
+    with CATIADocHandler(new_document='Part') as caa:
         document = handler.document
         part = document.part()
         parameters = part.parameters

@@ -46,21 +46,22 @@
 
 """
 
+from pywinauto import Desktop
 from pycatia import catia
 
-document = catia.active_document
+caa = catia()
+document = caa.active_document
 product = document.product()
 # create the selection object.
 selection = document.selection
 # add the product to the selection.
 selection.add(product)
 # open the Graph tree reordering window.
-catia.start_command("Graph tree reordering")
+caa.start_command("Graph tree reordering")
 # that's it for pycatia.
 
 # if the import is placed at the top of the file the pycatia steps above will
 # not work.
-from pywinauto import Desktop
 
 windows = Desktop().windows()
 

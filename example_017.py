@@ -13,10 +13,12 @@ from pycatia.enumeration.enumeration_types import cat_text_anchor_position
 from pycatia.enumeration.enumeration_types import cat_paper_orientation
 from pycatia.enumeration.enumeration_types import cat_paper_size
 
+# A0 sheet size
 a0_x = 1189
 a0_y = 841
 
-document = catia.active_document
+caa = catia()
+document = caa.active_document
 drawing = document.drawing_root()
 sheets = drawing.sheets
 sheet = sheets.active_sheet

@@ -22,7 +22,8 @@ from pycatia import catia
 from pycatia.hybrid_shape_interfaces.hybrid_shape_line_pt_pt import HybridShapeLinePtPt
 from pycatia.hybrid_shape_interfaces.hybrid_shape_point_coord import HybridShapePointCoord
 
-document = catia.active_document
+caa = catia()
+document = caa.active_document
 part = document.part()
 hbs = part.hybrid_bodies
 hb_construction_lines = hbs.item("construction_geometry")

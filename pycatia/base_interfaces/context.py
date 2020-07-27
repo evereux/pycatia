@@ -3,7 +3,7 @@
 import os
 import warnings
 
-from pycatia.base_interfaces.base_application import catia_application
+from pycatia.base_interfaces.base_application import catia_application as catia
 from pycatia.exception_handling.exceptions import CATIAApplicationException
 
 
@@ -48,7 +48,7 @@ class CATIADocHandler:
     """
 
     def __init__(self, file_name=None, new_document=None):
-        self.catia = catia_application()
+        self.catia = catia()
         self.documents = self.catia.documents
         self.file_name = file_name
         self.new_document = new_document

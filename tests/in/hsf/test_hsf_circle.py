@@ -11,8 +11,8 @@ def test_circle3_points():
     cord_2 = (130, 70, 0)
     cord_3 = (210, 50, 0)
 
-    with CATIADocHandler(new_document='Part') as catia:
-        document = catia.document
+    with CATIADocHandler(new_document='Part') as caa:
+        document = caa.document
         part = document.part()
         hsf = part.hybrid_shape_factory
 
