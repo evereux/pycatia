@@ -140,4 +140,4 @@ pycatia.build
 pycatia.dist
 zip_win32_dist.py
 win_32/pycatia
-pycatia.py
+pycatia-exe.py

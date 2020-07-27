@@ -103,5 +103,11 @@ class Windows(Collection):
         """
         return Window(self.windows.Item(i_index))
 
+    def __getitem__(self, n: int) -> Window:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Window(self.windows.item(n + 1))
+
     def __repr__(self):
         return f'Windows(name="{self.name}")'

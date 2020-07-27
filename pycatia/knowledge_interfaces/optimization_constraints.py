@@ -112,5 +112,11 @@ class OptimizationConstraints(Collection):
         """
         return self.optimization_constraints.RemoveConstraint(i_index)
 
+    def __getitem__(self, n: int) -> OptimizationConstraint:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return OptimizationConstraint(self.optimization_constraints.item(n + 1))
+
     def __repr__(self):
         return f'OptimizationConstraints(name="{self.name}")'

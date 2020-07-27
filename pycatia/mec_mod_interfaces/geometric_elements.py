@@ -79,5 +79,11 @@ class GeometricElements(Collection):
         """
         return GeometricElement(self.geometric_elements.Item(i_index))
 
+    def __getitem__(self, n: int) -> GeometricElement:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return GeometricElement(self.geometric_elements.item(n + 1))
+
     def __repr__(self):
         return f'GeometricElements(name="{self.name}")'

@@ -76,5 +76,11 @@ class Viewers(Collection):
         """
         return Viewer(self.viewers.Item(i_index))
 
+    def __getitem__(self, n: int) -> Viewer:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Viewer(self.viewers.item(n + 1))
+
     def __repr__(self):
         return f'Viewers(name="{self.name}")'
