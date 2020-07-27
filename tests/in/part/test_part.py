@@ -9,7 +9,7 @@ from tests.source_files import cat_product
 
 def test_activation():
     with CATIADocHandler(cat_part_measurable) as caa:
-        part = handler.document.part()
+        part = caa.document.part()
 
         item = part.find_object_by_name('Point.1')
 
@@ -22,7 +22,7 @@ def test_activation():
 
 def test_axis_systems():
     with CATIADocHandler(cat_part_measurable) as caa:
-        document = handler.document
+        document = caa.document
         part = document.part()
 
         axis_systems = part.axis_systems
@@ -34,7 +34,7 @@ def test_axis_systems():
 # I haven't yet imported the module into pycatia that seems to handle annotation sets.
 # def test_annotation_sets():
 #     with CATIADocHandler(cat_part_measurable) as caa:
-#         document = handler.document
+#         document = caa.document
 #         part = document.part()
 #
 #         annotation_sets = part.annotation_sets
@@ -44,7 +44,7 @@ def test_axis_systems():
 
 def test_bodies():
     with CATIADocHandler(cat_part_measurable) as caa:
-        document = handler.document
+        document = caa.document
         part = document.part()
 
         bodies = part.bodies
@@ -54,7 +54,7 @@ def test_bodies():
 
 def test_create_geometrical_set():
     with CATIADocHandler(cat_part_measurable) as caa:
-        document = handler.document
+        document = caa.document
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
         geometrical_set = hybrid_bodies.add()
@@ -65,7 +65,7 @@ def test_create_geometrical_set():
 
 def test_density_of_part():
     with CATIADocHandler(cat_part_measurable) as caa:
-        document = handler.document
+        document = caa.document
         part = document.part()
 
         assert part.density == 1000.0
@@ -73,7 +73,7 @@ def test_density_of_part():
 
 def test_file_name():
     with CATIADocHandler(cat_product) as caa:
-        document = handler.document
+        document = caa.document
         product = document.product()
         products = product.get_products()
 
@@ -85,7 +85,7 @@ def test_file_name():
 
 def test_full_name():
     with CATIADocHandler(cat_product) as caa:
-        document = handler.document
+        document = caa.document
         product = document.product()
         products = product.get_products()
 
@@ -97,7 +97,7 @@ def test_full_name():
 
 def test_find_object_by_name():
     with CATIADocHandler(cat_part_measurable) as caa:
-        document = handler.document
+        document = caa.document
         part = document.part()
 
         body = part.find_object_by_name('PartBody')
@@ -111,7 +111,7 @@ def test_in_work_object():
     with CATIADocHandler(cat_part_measurable) as caa:
         part_body_name = 'PartBody'
 
-        part = handler.document.part()
+        part = caa.document.part()
 
         bodies = part.bodies
         body = bodies.get_item_by_name(part_body_name)
@@ -123,12 +123,12 @@ def test_in_work_object():
 
 def test_is_up_to_date():
     with CATIADocHandler(cat_part_measurable) as caa:
-        part = handler.document.part()
+        part = caa.document.part()
 
         assert part.is_up_to_date(part)
 
     with CATIADocHandler(new_document="Part") as caa:
-        part = handler.document.part()
+        part = caa.document.part()
         hsf = part.hybrid_shape_factory
         hbs = part.hybrid_bodies
         hb = hbs.add()
@@ -140,7 +140,7 @@ def test_is_up_to_date():
 
 def test_path():
     with CATIADocHandler(cat_product) as caa:
-        document = handler.document
+        document = caa.document
         product = document.product()
         products = product.get_products()
 
@@ -152,7 +152,7 @@ def test_path():
 
 def test_repr():
     with CATIADocHandler(cat_part_measurable) as caa:
-        document = handler.document
+        document = caa.document
         part = document.part()
 
         assert 'Part(name="cat_part_measurable")' == part.__repr__()
