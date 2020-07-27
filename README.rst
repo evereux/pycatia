@@ -141,6 +141,8 @@ A reminder for @evereux. I don't do this often and forget ...
 
 * Check version is correct.
 
+* Run mypy over module.
+
 * Build source. ``python setup.py sdist bdist_wheel``
    * Check source contents.
 
