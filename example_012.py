@@ -40,7 +40,7 @@ root_parameter_set = part_parameters.root_parameter_set
 parameter_sets = root_parameter_set.parameter_sets
 
 # gets all parameter sets  inside of parameter_sets
-sub_parameter_set = parameter_sets.items()
+sub_parameter_set = parameter_sets.parameter_sets
 # [ParameterSet(name="Parameters_Pad"), ParameterSet(name="Parameters_Pocket")]
 
 for parm_set in sub_parameter_set:
