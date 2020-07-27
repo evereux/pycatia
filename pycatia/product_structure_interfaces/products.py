@@ -18,6 +18,7 @@ from pycatia.types import cat_variant
 if TYPE_CHECKING:
     from pycatia.in_interfaces.document import Document
 
+
 class Products(Collection):
     """
         .. note::
@@ -394,6 +395,15 @@ class Products(Collection):
                 i_multi_instances
             )
         )
+
+    def __len__(self):
+        return self.count
+
+    def __getitem__(self, n: int) -> Product:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Product(self.products.item(n + 1))
 
     def __repr__(self):
         return f'Products(name="{self.name}")'

@@ -19,6 +19,7 @@ from pycatia.system_interfaces.any_object import AnyObject
 if TYPE_CHECKING:
     from pycatia.in_interfaces.application import Application
 
+
 class Collection(PyCATIA):
     """
         .. note::
@@ -219,6 +220,16 @@ class Collection(PyCATIA):
             items_list.append(item)
 
         return items_list
+
+    def __len__(self):
+
+        return self.count
+
+    def __getitem__(self, n: int) -> AnyObject:
+
+        if (n + 1) > self.count:
+            raise StopIteration
+        return self.child_object(self.com_object.item(n + 1))
 
     def __repr__(self):
         return f'Collection(name="{self.name}")'
