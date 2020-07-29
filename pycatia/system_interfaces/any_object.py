@@ -174,7 +174,7 @@ class AnyObject(PyCATIA):
         :return: AnyObject
         :rtype: AnyObject
         """
-        return self.com_object.GetItem(id_name)
+        return AnyObject(self.com_object.GetItem(id_name))
 
     def __repr__(self):
         return f'AnyObject(name="{self.name}")'
