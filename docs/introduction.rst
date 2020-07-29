@@ -14,7 +14,7 @@ Opening A New CATPart
 ---------------------
 
 You will almost always want to import the `catia`
-:ref:`in_interfaces-application` object or the CATIADocHandler [1]_.
+:ref:`Application<Application>` object or the CATIADocHandler [1]_.
 
 .. code-block:: python
 

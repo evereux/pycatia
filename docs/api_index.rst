@@ -30,4 +30,3 @@ This creates an instance of the :ref:`Application<Application>` object.
    api/index_sketcher_interfaces
    api/index_space_analyses_interfaces
    api/index_system_interfaces
-   api/index_workbenches
