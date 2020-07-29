@@ -12,7 +12,7 @@ from tests.source_files import cat_part_measurable
 
 def test_analyze():
     with CATIADocHandler(cat_product) as caa:
-        product = handler.document.product()
+        product = caa.document.product()
 
         # assert (
         #         1.0 == product.analyze.mass and
