@@ -8,7 +8,7 @@ from pywintypes import com_error
 from pycatia.exception_handling import CATIAApplicationException
 from pycatia.in_interfaces.document import Document
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types import cat_variant
+from pycatia.types import cat_variant, list_str
 
 
 class Documents(Collection):
@@ -18,7 +18,8 @@ class Documents(Collection):
     Usage::
 
         >>> from pycatia import catia
-        >>> documents = catia.documents
+        >>> caa = catia()
+        >>> documents = caa.documents
 
         .. note::
             :class: toggle
@@ -93,24 +94,26 @@ class Documents(Collection):
 
         return Document(self.child_object(self.documents.Add(document_type)))
 
-    def count_types(self, file_type_list: list) -> int:
+    def count_types(self, file_type_list: list_str) -> int:
         """
         Returns the number of documents which presents special file extensions like:
             'catpart', 'catdrawing', 'catproduct', 'catmaterial', 'catalog', 'catfct'
 
 
-        :param str (list) file_type_list: filetype(s) to count.
+        :param list_str file_type_list: filetype(s) to count. can be list or string.
         :return: int()
         """
 
         items = self.get_item_names()
 
-        if not type(file_type_list) == list:
-            file_type_list = [elem.lower() for elem in [file_type_list]]
+        if isinstance(file_type_list, str):
+            type_list = [elem.lower() for elem in [file_type_list]]
+        elif isinstance(file_type_list, list):
+            type_list = [elem.lower() for elem in file_type_list]
         else:
-            file_type_list = [elem.lower() for elem in file_type_list]
+            raise CATIAApplicationException(f'File type list {file_type_list} not valid type.')
 
-        return len([True for name in items for typ in file_type_list if name.lower().find(typ) > 0])
+        return len([True for name in items for typ in type_list if name.lower().find(typ) > 0])
 
     def new_from(self, file_name: str) -> Document:
         """
@@ -304,6 +307,12 @@ class Documents(Collection):
         :rtype: Document
         """
         return self.documents.Read(file_name)
+
+    def __getitem__(self, n: int) -> Document:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Document(self.documents.item(n + 1))
 
     def __repr__(self):
         return f'Documents(name="{self.name}")'

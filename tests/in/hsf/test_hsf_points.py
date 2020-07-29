@@ -8,8 +8,8 @@ def test_point_between():
     co_ord_2 = (100, 0, 0)
     r = (50, 0, 0)
 
-    with CATIADocHandler(new_document='Part') as catia:
-        document = catia.document
+    with CATIADocHandler(new_document='Part') as caa:
+        document = caa.document
         part = document.part()
         hsf = part.hybrid_shape_factory
 
@@ -37,8 +37,8 @@ def test_point_center():
     co_ord_2 = (length, 0, 0)
     center = (length / 2, 0, 0)
 
-    with CATIADocHandler(new_document='Part') as catia:
-        document = catia.document
+    with CATIADocHandler(new_document='Part') as caa:
+        document = caa.document
         part = document.part()
         hsf = part.hybrid_shape_factory
 
@@ -66,8 +66,8 @@ def test_point_center():
 def test_point_coord():
     co_ord = (0, 10, 100)
 
-    with CATIADocHandler(new_document='Part') as catia:
-        document = catia.document
+    with CATIADocHandler(new_document='Part') as caa:
+        document = caa.document
         part = document.part()
         hsf = part.hybrid_shape_factory
 
@@ -86,8 +86,8 @@ def test_point_coord_reference():
     co_ord = (0.0, 10.0, 100.0)
     r = tuple([i + i for i in co_ord])
 
-    with CATIADocHandler(new_document='Part') as catia:
-        document = catia.document
+    with CATIADocHandler(new_document='Part') as caa:
+        document = caa.document
         part = document.part()
         hsf = part.hybrid_shape_factory
 
@@ -120,8 +120,8 @@ def test_point_on_curve():
     co_ord_2 = (length, 0, 0)
     center = (length / 2, 0, 0)
 
-    with CATIADocHandler(new_document='Part') as catia:
-        document = catia.document
+    with CATIADocHandler(new_document='Part') as caa:
+        document = caa.document
         part = document.part()
         hsf = part.hybrid_shape_factory
 
@@ -173,8 +173,8 @@ def test_point_curve_from_percent():
 def test_point_on_plane():
     co_ord_1 = (250.0, 100.0)
 
-    with CATIADocHandler(new_document='Part') as catia:
-        document = catia.document
+    with CATIADocHandler(new_document='Part') as caa:
+        document = caa.document
         part = document.part()
         hsf = part.hybrid_shape_factory
 
@@ -199,8 +199,8 @@ def test_point_on_plane_reference():
         co_ord_1[1] + co_ord_2[1],
         co_ord_1[2]
     )
-    with CATIADocHandler(new_document='Part') as catia:
-        document = catia.document
+    with CATIADocHandler(new_document='Part') as caa:
+        document = caa.document
         part = document.part()
         hsf = part.hybrid_shape_factory
 

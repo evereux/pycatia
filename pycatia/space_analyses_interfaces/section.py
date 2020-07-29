@@ -9,12 +9,16 @@
         
 """
 
+from typing import TYPE_CHECKING
+
 from pycatia.navigator_interfaces.annotated_views import AnnotatedViews
 from pycatia.navigator_interfaces.group import Group
 from pycatia.navigator_interfaces.marker_3Ds import Marker3Ds
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.system_service import SystemService
 
+if TYPE_CHECKING:
+    from pycatia.in_interfaces.document import Document
 
 class Section(AnyObject):
     """

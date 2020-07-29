@@ -134,5 +134,11 @@ class FixTogethers(Collection):
         """
         return self.fix_togethers.Remove(i_index)
 
+    def __getitem__(self, n: int) -> FixTogether:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return FixTogether(self.fix_togethers.item(n + 1))
+
     def __repr__(self):
         return f'FixTogethers(name="{self.name}")'

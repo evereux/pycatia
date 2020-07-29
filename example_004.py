@@ -11,9 +11,10 @@
 from pycatia import catia
 from pycatia.enumeration.enumeration_types import cat_work_mode_type
 
-documents = catia.documents
+caa = catia()
+documents = caa.documents
 documents.open(r'tests/cat_files/product_top.CATProduct')
-document = catia.active_document
+document = caa.active_document
 product = document.product()
 
 # Change the work mode to Design Mode.
@@ -21,7 +22,7 @@ product = document.product()
 # methods on children may fail due to the document not being loaded.
 product.apply_work_mode(cat_work_mode_type.index("DESIGN_MODE"))
 
-products = product.get_products()
+products = product.products
 
 if len(products) == 0:
     print("Active document has no children or is not a CATProduct.")

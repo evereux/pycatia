@@ -12,6 +12,8 @@
         You will need to manually install package pywinauto to run this script.
         Also, the placement of `from pywinauto import Desktop` is important.
 
+        This seems to fragile. Sometimes it works for me sometimes it doesn't.
+
 
     Assembly Design: Reorder a Product tree alphabetically. The Product shall
     already be loaded.
@@ -46,26 +48,31 @@
 
 """
 
+# todo: explore why this is so fragile.
+
+from pywinauto import Desktop
 from pycatia import catia
 
-document = catia.active_document
+caa = catia()
+document = caa.active_document
 product = document.product()
 # create the selection object.
 selection = document.selection
 # add the product to the selection.
 selection.add(product)
 # open the Graph tree reordering window.
-catia.start_command("Graph tree reordering")
+caa.start_command("Graph tree reordering")
 # that's it for pycatia.
 
 # if the import is placed at the top of the file the pycatia steps above will
 # not work.
-from pywinauto import Desktop
 
 windows = Desktop().windows()
 
 graph_window = None
 for window in windows:
+    if 'tree' in window.window_text():
+        print(window.window_text())
     if 'Graph tree reordering' in window.window_text():
         graph_window = window
 

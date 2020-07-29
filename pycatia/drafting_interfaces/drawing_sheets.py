@@ -223,5 +223,11 @@ class DrawingSheets(Collection):
         """
         return self.drawing_sheets.Remove(i_index)
 
+    def __getitem__(self, n: int) -> DrawingSheet:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return DrawingSheet(self.drawing_sheets.item(n + 1))
+
     def __repr__(self):
         return f'DrawingSheets(name="{self.name}")'

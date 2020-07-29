@@ -8,9 +8,15 @@
         and thus help debugging in pycatia.
         
 """
+
+from typing import TYPE_CHECKING
+
 from pycatia.knowledge_interfaces.free_parameter import FreeParameter
 from pycatia.system_interfaces.collection import Collection
 from pycatia.types import cat_variant
+
+if TYPE_CHECKING:
+    from pycatia.knowledge_interfaces.real_param import RealParam
 
 
 class FreeParameters(Collection):
@@ -103,6 +109,12 @@ class FreeParameters(Collection):
         :return: None
         """
         return self.free_parameters.RemoveFreeParameter(i_index)
+
+    def __getitem__(self, n: int) -> FreeParameter:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return FreeParameter(self.free_parameters.item(n + 1))
 
     def __repr__(self):
         return f'FreeParameters(name="{self.name}")'

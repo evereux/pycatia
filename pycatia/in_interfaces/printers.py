@@ -75,5 +75,11 @@ class Printers(Collection):
         """
         return Printer(self.printers.Item(i_index))
 
+    def __getitem__(self, n: int) -> Printer:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Printer(self.printers.item(n + 1))
+
     def __repr__(self):
         return f'Printers(name="{self.name}")'

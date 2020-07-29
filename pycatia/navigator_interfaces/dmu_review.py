@@ -9,7 +9,12 @@
         
 """
 
+from typing import TYPE_CHECKING
+
 from pycatia.system_interfaces.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia.navigator_interfaces.dmu_reviews import DMUReviews
 
 
 class DMUReview(AnyObject):
@@ -27,7 +32,7 @@ class DMUReview(AnyObject):
                 |                     DMUReview
                 | 
                 | Represents a DMU Review.
-    
+
     """
 
     def __init__(self, com_object):

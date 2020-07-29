@@ -146,5 +146,11 @@ class DrawingThreads(Collection):
         """
         return self.drawing_threads.Remove(i_index)
 
+    def __getitem__(self, n: int) -> DrawingThread:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return DrawingThread(self.drawing_threads.item(n + 1))
+
     def __repr__(self):
         return f'DrawingThreads(name="{self.name}")'

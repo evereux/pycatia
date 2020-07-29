@@ -9,9 +9,13 @@
         
 """
 
+from typing import TYPE_CHECKING
+
 from pycatia.in_interfaces.file_component import FileComponent
 from pycatia.in_interfaces.files import Files
 
+if TYPE_CHECKING:
+    from pycatia.in_interfaces.folders import Folders
 
 class Folder(FileComponent):
     """

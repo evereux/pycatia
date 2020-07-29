@@ -71,5 +71,11 @@ class Conflicts(Collection):
         """
         return Conflict(self.conflicts.Item(i_index))
 
+    def __getitem__(self, n: int) -> Conflict:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Conflict(self.conflicts.item(n + 1))
+
     def __repr__(self):
         return f'Conflicts(name="{self.name}")'

@@ -45,7 +45,7 @@ class HybridShapeHealing(HybridShape):
         self.hybrid_shape_healing = com_object
 
     @property
-    def canonic_free_mode(self) -> False:
+    def canonic_free_mode(self) -> int:
         """
         .. note::
             :class: toggle
@@ -74,22 +74,22 @@ class HybridShapeHealing(HybridShape):
                 |                  HybShpHealing.CanonicFreeMode = HybShpHealMode
                 |                  HybShpHealCont = HybShpHealing.CanonicFreeMode
 
-        :return: False
-        :rtype: False
+        :return: int
+        :rtype: int
         """
 
-        return None
+        return self.hybrid_shape_healing.CononicFreeMode
 
     @canonic_free_mode.setter
-    def canonic_free_mode(self, value: False):
+    def canonic_free_mode(self, mode: int):
         """
-        :param False value:
+        :param int mode:
         """
 
-        self.hybrid_shape_healing.CanonicFreeMode = value
+        self.hybrid_shape_healing.CanonicFreeMode = mode
 
     @property
-    def continuity(self) -> False:
+    def continuity(self) -> int:
         """
         .. note::
             :class: toggle
@@ -118,12 +118,12 @@ class HybridShapeHealing(HybridShape):
         :rtype: False
         """
 
-        return None
+        return self.hybrid_shape_healing.Continuity
 
     @continuity.setter
-    def continuity(self, value: False):
+    def continuity(self, value: int):
         """
-        :param False value:
+        :param int value:
         """
 
         self.hybrid_shape_healing.Continuity = value

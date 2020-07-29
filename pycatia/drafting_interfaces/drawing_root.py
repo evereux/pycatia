@@ -277,8 +277,8 @@ class DrawingRoot(AnyObject):
         :return: None
         :rtype: None
         """
-        i_ordered_sheets = [x.com_object for x in i_ordered_sheets]
-        return self.drawing_root.reorder_Sheets(i_ordered_sheets)
+        sheets = [x.com_object for x in i_ordered_sheets]
+        return self.drawing_root.reorder_Sheets(sheets)
 
     def __repr__(self):
         return f'DrawingRoot(name="{self.name}")'
