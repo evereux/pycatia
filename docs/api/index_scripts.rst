@@ -6,4 +6,5 @@ pycatia.scripts
    :caption: Contents:
 
 
+   pycatia/scripts/checking
    pycatia/scripts/csv_tools

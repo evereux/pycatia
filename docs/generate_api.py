@@ -107,8 +107,6 @@ for file in files:
                                   f"    :members:"
             f.write(lines)
 
-
-
 files = api_doc_tmp_root.rglob('*.rst')
 for source_file in files:
     with open(source_file, 'rb') as rst_file:
@@ -119,16 +117,18 @@ for source_file in files:
         # get hash of target file
         target_file = Path(str(source_file).replace
             (
-                str(api_doc_tmp_root),
-                str(api_doc_root)
-            )
+            str(api_doc_tmp_root),
+            str(api_doc_root)
+        )
         )
         # print(source_file, api_doc_root, api_doc_tmp_root, target_file)
 
-    with open(target_file, 'rb') as rst_file_target:
-        # print(f'getting hash for file {target_file}')
-        contents = rst_file_target.read()
-        md5_sum_target = hashlib.md5(contents).hexdigest()
+    md5_sum_target = None
+    if target_file.exists():
+        with open(target_file, 'rb') as rst_file_target:
+            # print(f'getting hash for file {target_file}')
+            contents = rst_file_target.read()
+            md5_sum_target = hashlib.md5(contents).hexdigest()
 
     if md5_sum_source != md5_sum_target:
         print('Do not match!')
