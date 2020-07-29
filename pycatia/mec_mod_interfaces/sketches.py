@@ -132,5 +132,11 @@ class Sketches(Collection):
         """
         return Sketch(self.sketches.Item(i_index))
 
+    def __getitem__(self, n: int) -> Sketch:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Sketch(self.sketches.item(n + 1))
+
     def __repr__(self):
         return f'Sketches(name="{self.name}")'

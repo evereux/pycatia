@@ -136,8 +136,8 @@ quick_n_dirty.py
 *.CATPart
 *.CATProduct
 
-pycatia.build
-pycatia.dist
+pycatia-exe.build
+pycatia-exe.dist
 zip_win32_dist.py
 win_32/pycatia
-pycatia.py
+pycatia-exe.py

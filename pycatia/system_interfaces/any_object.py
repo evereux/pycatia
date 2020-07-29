@@ -8,8 +8,12 @@
         and thus help debugging in pycatia.
 
 """
+from typing import TYPE_CHECKING
 
 from pycatia.base_interfaces.pycatia import PyCATIA
+
+if TYPE_CHECKING:
+    from pycatia.in_interfaces.application import Application
 
 
 class AnyObject(PyCATIA):
@@ -170,7 +174,7 @@ class AnyObject(PyCATIA):
         :return: AnyObject
         :rtype: AnyObject
         """
-        return self.com_object.GetItem(id_name)
+        return AnyObject(self.com_object.GetItem(id_name))
 
     def __repr__(self):
         return f'AnyObject(name="{self.name}")'

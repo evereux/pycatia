@@ -11,9 +11,13 @@
 
 # todo: investigate how this works.
 
+from typing import TYPE_CHECKING
+
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.cat_base_dispatch import CATBaseDispatch
 
+if TYPE_CHECKING:
+    from pycatia.drafting_interfaces.drawing_view import DrawingView
 
 class DrawingViewGenerativeBehavior(CATBaseDispatch):
     """

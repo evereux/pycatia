@@ -10,7 +10,8 @@
 from pycatia import catia
 from pycatia.enumeration.enumeration_types import cat_constraint_type, cat_constraint_mode, cat_constraint_angle_sector
 
-document = catia.active_document
+caa = catia()
+document = caa.active_document
 part = document.part()
 
 hsf = part.hybrid_shape_factory

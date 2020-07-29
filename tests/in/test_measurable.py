@@ -30,8 +30,8 @@ def round_tuple(tuple_object, decimal_places=6):
 
 
 def test_area():
-    with CATIADocHandler(cat_part_measurable) as handler:
-        document = handler.document
+    with CATIADocHandler(cat_part_measurable) as caa:
+        document = caa.document
         spa_workbench = document.spa_workbench()
 
         part = document.part()
@@ -48,8 +48,8 @@ def test_area():
 
 
 def test_geometry_name():
-    with CATIADocHandler(cat_part_measurable) as handler:
-        document = handler.document
+    with CATIADocHandler(cat_part_measurable) as caa:
+        document = caa.document
         spa_workbench = document.spa_workbench()
 
         part = document.part()
@@ -63,8 +63,8 @@ def test_geometry_name():
 
 
 def test_length():
-    with CATIADocHandler(cat_part_measurable) as handler:
-        document = handler.document
+    with CATIADocHandler(cat_part_measurable) as caa:
+        document = caa.document
         spa_workbench = document.spa_workbench()
 
         part = document.part()
@@ -81,8 +81,8 @@ def test_length():
 
 
 def test_perimeter():
-    with CATIADocHandler(cat_part_measurable) as handler:
-        document = handler.document
+    with CATIADocHandler(cat_part_measurable) as caa:
+        document = caa.document
         spa_workbench = document.spa_workbench()
         part = document.part()
         hybrid_bodies = part.hybrid_bodies
@@ -98,8 +98,8 @@ def test_perimeter():
 
 
 def test_radius():
-    with CATIADocHandler(cat_part_measurable) as handler:
-        document = handler.document
+    with CATIADocHandler(cat_part_measurable) as caa:
+        document = caa.document
         spa_workbench = document.spa_workbench()
 
         part = document.part()
@@ -115,8 +115,8 @@ def test_radius():
 
 
 def test_angle_between():
-    with CATIADocHandler(cat_part_measurable) as handler:
-        document = handler.document
+    with CATIADocHandler(cat_part_measurable) as caa:
+        document = caa.document
         spa_workbench = document.spa_workbench()
 
         part = document.part()
@@ -140,8 +140,8 @@ def test_get_axis():
     :return:
     """
 
-    with CATIADocHandler(cat_part_measurable) as handler:
-        document = handler.document
+    with CATIADocHandler(cat_part_measurable) as caa:
+        document = caa.document
         spa_workbench = document.spa_workbench()
 
         part = document.part()
@@ -161,8 +161,8 @@ def test_get_axis_system():
     """
     :return:
     """
-    with CATIADocHandler(cat_part_measurable) as handler:
-        document = handler.document
+    with CATIADocHandler(cat_part_measurable) as caa:
+        document = caa.document
 
         part = document.part()
         spa_workbench = document.spa_workbench()
@@ -204,8 +204,8 @@ def test_get_axis_system():
 
 
 def test_get_direction():
-    with CATIADocHandler(cat_part_measurable) as handler:
-        document = handler.document
+    with CATIADocHandler(cat_part_measurable) as caa:
+        document = caa.document
 
         part = document.part()
         spa_workbench = document.spa_workbench()
@@ -226,8 +226,8 @@ def test_get_direction():
 
 
 def test_get_minimum_distance():
-    with CATIADocHandler(cat_part_measurable) as handler:
-        document = handler.document
+    with CATIADocHandler(cat_part_measurable) as caa:
+        document = caa.document
 
         part = document.part()
         spa_workbench = document.spa_workbench()
@@ -249,8 +249,8 @@ def test_get_minimum_distance():
 
 
 def test_get_minimum_distance_points():
-    with CATIADocHandler(cat_part_measurable) as handler:
-        document = handler.document
+    with CATIADocHandler(cat_part_measurable) as caa:
+        document = caa.document
 
         part = document.part()
         spa_workbench = document.spa_workbench()
@@ -280,8 +280,8 @@ def test_get_minimum_distance_points():
 
 
 def test_get_plane():
-    with CATIADocHandler(cat_part_measurable) as handler:
-        document = handler.document
+    with CATIADocHandler(cat_part_measurable) as caa:
+        document = caa.document
 
         spa_workbench = document.spa_workbench()
         part = document.part()
@@ -309,8 +309,8 @@ def test_get_plane():
 
 
 def test_get_point():
-    with CATIADocHandler(cat_part_measurable) as handler:
-        document = handler.document
+    with CATIADocHandler(cat_part_measurable) as caa:
+        document = caa.document
         spa_workbench = document.spa_workbench()
 
         part = document.part()
@@ -332,8 +332,8 @@ def test_get_point():
 
 
 def test_get_points_on_axis():
-    with CATIADocHandler(cat_part_measurable) as handler:
-        document = handler.document
+    with CATIADocHandler(cat_part_measurable) as caa:
+        document = caa.document
         spa_workbench = document.spa_workbench()
 
         part = document.part()
@@ -361,8 +361,8 @@ def test_get_points_on_axis():
 
 
 def test_get_points_on_curve():
-    with CATIADocHandler(cat_part_measurable) as handler:
-        document = handler.document
+    with CATIADocHandler(cat_part_measurable) as caa:
+        document = caa.document
         spa_workbench = document.spa_workbench()
 
         part = document.part()
@@ -390,8 +390,8 @@ def test_get_points_on_curve():
 
 
 def test_volume():
-    with CATIADocHandler(cat_part_measurable) as handler:
-        document = handler.document
+    with CATIADocHandler(cat_part_measurable) as caa:
+        document = caa.document
         spa_workbench = document.spa_workbench()
 
         part = document.part()
@@ -408,8 +408,8 @@ def test_volume():
 
 
 def test_centre_of_gravity():
-    with CATIADocHandler(cat_part_measurable) as handler:
-        document = handler.document
+    with CATIADocHandler(cat_part_measurable) as caa:
+        document = caa.document
         spa_workbench = document.spa_workbench()
 
         part = document.part()
@@ -432,8 +432,8 @@ def test_centre_of_gravity():
 
 
 def test_angle():
-    with CATIADocHandler(cat_part_measurable) as handler:
-        document = handler.document
+    with CATIADocHandler(cat_part_measurable) as caa:
+        document = caa.document
         spa_workbench = document.spa_workbench()
 
         part = document.part()
@@ -450,8 +450,8 @@ def test_angle():
 
 
 def test_center():
-    with CATIADocHandler(cat_part_measurable) as handler:
-        document = handler.document
+    with CATIADocHandler(cat_part_measurable) as caa:
+        document = caa.document
 
         spa_workbench = document.spa_workbench()
         part = document.part()

@@ -12,10 +12,11 @@
 from pycatia import catia
 from pycatia.enumeration.enumeration_types import cat_work_mode_type
 
-documents = catia.documents
+caa = catia()
+documents = caa.documents
 documents.open(r'tests\cat_files\product_top.CATProduct')
 
-document = catia.active_document
+document = caa.active_document
 product = document.product()
 
 # Change the work mode to Design Mode.
@@ -34,11 +35,11 @@ def print_properties(obj):
 
 
 # I know, this isn't pretty, but my intent is to keep examples simple.
-for sub_product in product.get_products():
+for sub_product in product.products:
 
     if sub_product.is_catproduct():
 
-        for child_product in sub_product.get_products():
+        for child_product in sub_product.products:
 
             if child_product.is_catpart():
                 child_product.activate_default_shape()

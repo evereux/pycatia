@@ -135,5 +135,11 @@ class DefeaturingFilters(Collection):
         """
         return self.defeaturing_filters.Remove(i_filter_id)
 
+    def __getitem__(self, n: int) -> DefeaturingFilter:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return DefeaturingFilter(self.defeaturing_filters.item(n + 1))
+
     def __repr__(self):
         return f'DefeaturingFilters(name="{self.name}")'

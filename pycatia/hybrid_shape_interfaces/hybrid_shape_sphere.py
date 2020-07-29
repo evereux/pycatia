@@ -37,7 +37,7 @@ class HybridShapeSphere(HybridShape):
                 | 
                 | See also:
                 |     HybridShapeFactory
-    
+
     """
 
     def __init__(self, com_object):
@@ -226,7 +226,7 @@ class HybridShapeSphere(HybridShape):
         return Angle(self.hybrid_shape_sphere.EndParallelAngle)
 
     @property
-    def limitation(self) -> False:
+    def limitation(self) -> bool:
         """
         .. note::
             :class: toggle
@@ -245,12 +245,12 @@ class HybridShapeSphere(HybridShape):
         :rtype: False
         """
 
-        return None
+        return self.hybrid_shape_sphere.Limitation
 
     @limitation.setter
-    def limitation(self, value: False):
+    def limitation(self, value: bool):
         """
-        :param False value:
+        :param bool value:
         """
 
         self.hybrid_shape_sphere.Limitation = value

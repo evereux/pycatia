@@ -10,12 +10,13 @@
 
 from pycatia import catia
 
-documents = catia.documents
+caa = catia()
+documents = caa.documents
 documents.open(r'tests\cat_files\product_top.CATProduct')
-document = catia.active_document
+document = caa.active_document
 
 product = document.product()
-products = product.get_products()
+products = product.products
 
 for product in products:
     print(product.position.get_components())

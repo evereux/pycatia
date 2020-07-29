@@ -12,10 +12,11 @@ from pycatia import catia
 from pycatia.enumeration.enumeration_types import cat_work_mode_type
 from pycatia.product_structure_interfaces.product import Product
 
-documents = catia.documents
+caa = catia()
+documents = caa.documents
 documents.open(r'tests\cat_files\product_top.CATProduct')
 
-document = catia.active_document
+document = caa.active_document
 product = document.product()
 
 # Change the work mode to Design Mode.

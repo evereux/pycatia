@@ -14,6 +14,7 @@ from pycatia.exception_handling import CATIAApplicationException
 from pycatia.in_interfaces.document import Document
 from pycatia.in_interfaces.selected_element import SelectedElement
 from pycatia.in_interfaces.vis_property_set import VisPropertySet
+from pycatia.scripts.checking import check_type
 from pycatia.system_interfaces.any_object import AnyObject
 
 
@@ -1191,7 +1192,9 @@ class Selection(AnyObject):
             raise CATIAApplicationException(
                 f'The method Search failed with search string "{i_string_bstr}". Try changing your search string.')
 
-    def select_element2(self, i_filter_type: tuple, i_message: str,
+    def select_element2(self,
+                        i_filter_type: tuple,
+                        i_message: str,
                         i_object_selection_before_command_use_possibility: bool) -> str:
         """
         .. note::
@@ -1662,6 +1665,9 @@ class Selection(AnyObject):
         :return: str
         :rtype: str
         """
+
+        check_type(i_filter_type, tuple)
+
         return self.selection.SelectElement2(i_filter_type, i_message,
                                              i_object_selection_before_command_use_possibility)
 
@@ -1851,8 +1857,13 @@ class Selection(AnyObject):
         :return: str
         :rtype: str
         """
-        return self.selection.SelectElement3(i_filter_type, i_message,
-                                             i_object_selection_before_command_use_possibility, i_multi_selection_mode,
+
+        check_type(i_filter_type, tuple)
+
+        return self.selection.SelectElement3(i_filter_type,
+                                             i_message,
+                                             i_object_selection_before_command_use_possibility,
+                                             i_multi_selection_mode,
                                              i_tooltip)
 
     def select_element4(self, i_filter_type: tuple, i_active_document_message: str, i_non_active_document_message: str,
@@ -1985,8 +1996,15 @@ class Selection(AnyObject):
         :return: str
         :rtype: str
         """
-        return self.selection.SelectElement4(i_filter_type, i_active_document_message, i_non_active_document_message,
-                                             i_tooltip, o_document.com_object)
+
+        check_type(i_filter_type, tuple)
+        check_type(o_document, Document)
+
+        return self.selection.SelectElement4(i_filter_type,
+                                             i_active_document_message,
+                                             i_non_active_document_message,
+                                             i_tooltip,
+                                             o_document.com_object)
 
     def __repr__(self):
         return f'Selection(name="{self.name}")'

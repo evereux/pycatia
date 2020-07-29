@@ -9,9 +9,13 @@
         
 """
 
+from typing import TYPE_CHECKING
+
 from pycatia.knowledge_interfaces.knowledge_activate_object import KnowledgeActivateObject
 from pycatia.system_interfaces.any_object import AnyObject
 
+if TYPE_CHECKING:
+    from pycatia.knowledge_interfaces.parameter import Parameter
 
 class Relation(KnowledgeActivateObject):
     """

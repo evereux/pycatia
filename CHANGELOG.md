@@ -1,5 +1,36 @@
 # Changelog
 
+## 0.4.0
+Breaking changes.
+* The catia application object now needs to be initialized in your scripts. 
+  This was done so scripts can be written in such a way that they first launch 
+  CATIA V5 (or check it's actually running) before the application object is 
+  initialised. Previously, the object was initialised immediately on import. Not 
+  practical for some use cases. 
+  For example:
+```
+>>> from pycatia import catia
+>>> # initialise the catia application automation object.
+>>> caa = catia()
+>>> document = caa.active_document
+```
+* Removed pycatia.workbenches folder. Functionality is provided for Document object.
+* Lots of bug/type fixes. Mypy is great!
+
+* Collection objects are now directly iterable (Product.get_products() will be 
+  deprecated in later release).
+```
+>>> from pycatia import catia
+>>> caa = catia()
+>>> document = caa.active_document
+>>> product = document.product()
+>>> products = product.products
+>>> for product in produts:
+>>>     print(product)
+```
+
+* Improved viewing experience of API. I hope.
+
 ## 0.3.9
 * Added product.generate_ALLCATPart.
 * Added product.constraints.

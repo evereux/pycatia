@@ -152,5 +152,11 @@ class DrawingTexts(Collection):
         """
         return self.drawing_texts.Remove(i_index)
 
+    def __getitem__(self, n: int) -> DrawingText:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return DrawingText(self.drawing_texts.item(n + 1))
+
     def __repr__(self):
         return f'DrawingTexts(name="{self.name}")'

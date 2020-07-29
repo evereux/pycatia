@@ -11,6 +11,7 @@
 
 from pathlib import Path
 
+from pycatia.exception_handling.exceptions import CATIAApplicationException
 from pycatia.hybrid_shape_interfaces.hybrid_shape_factory import HybridShapeFactory
 from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.parameters import Parameters
@@ -730,7 +731,7 @@ class Part(AnyObject):
         if self.part.FindObjectByName(i_obj_name):
             return AnyObject(self.part.FindObjectByName(i_obj_name))
         else:
-            self.logger.warning('Could not find object.')
+            raise CATIAApplicationException('Could not find object.')
 
     def get_customer_factory(self, i_factory_iid: str) -> Factory:
         """

@@ -12,16 +12,16 @@ from tests.source_files import cat_drawing
 
 
 def test_active_drawing():
-    with CATIADocHandler(cat_drawing) as handler:
-        catia = handler.catia
+    with CATIADocHandler(cat_drawing) as caa:
+        catia = caa.catia
         drawing_root = catia.active_document.drawing_root()
 
         assert drawing_root.active_sheet.name == 'Sheet.1'
 
 
 def test_orientation():
-    with CATIADocHandler(cat_drawing) as handler:
-        catia = handler.catia
+    with CATIADocHandler(cat_drawing) as caa:
+        catia = caa.catia
         drawing_root = catia.active_document.drawing_root()
         sheets = drawing_root.sheets
         sheet_1 = sheets.item(1)
@@ -31,8 +31,8 @@ def test_orientation():
 
 
 def test_paper_size():
-    with CATIADocHandler(cat_drawing) as handler:
-        catia = handler.catia
+    with CATIADocHandler(cat_drawing) as caa:
+        catia = caa.catia
         drawing_root = catia.active_document.drawing_root()
         sheets = drawing_root.sheets
         sheet_1 = sheets.item(1)
@@ -42,23 +42,23 @@ def test_paper_size():
 
 
 def test_sheets():
-    with CATIADocHandler(cat_drawing) as handler:
-        catia = handler.catia
+    with CATIADocHandler(cat_drawing) as caa:
+        catia = caa.catia
         drawing_root = catia.active_document.drawing_root()
         sheets = drawing_root.sheets
         assert sheets.item(2).name == 'Sheet.2'
 
 
 def test_standard():
-    with CATIADocHandler(cat_drawing) as handler:
-        catia = handler.catia
+    with CATIADocHandler(cat_drawing) as caa:
+        catia = caa.catia
         root = catia.active_document.drawing_root()
         assert root.standard == cat_drawing_standard.index('catISO')
 
 
 def test_reorder():
-    with CATIADocHandler(cat_drawing) as handler:
-        catia = handler.catia
+    with CATIADocHandler(cat_drawing) as caa:
+        catia = caa.catia
         root = catia.active_document.drawing_root()
         sheets = root.sheets
         sheet_1 = sheets.item(1)
@@ -74,8 +74,8 @@ def test_reorder():
 
 
 def test_scale():
-    with CATIADocHandler(cat_drawing) as handler:
-        catia = handler.catia
+    with CATIADocHandler(cat_drawing) as caa:
+        catia = caa.catia
         root = catia.active_document.drawing_root()
         sheets = root.sheets
         sheet_1 = sheets.item(1)
@@ -85,8 +85,8 @@ def test_scale():
 
 
 def test_projection_method():
-    with CATIADocHandler(cat_drawing) as handler:
-        sheets = handler.catia.active_document.drawing_root().sheets
+    with CATIADocHandler(cat_drawing) as caa:
+        sheets = caa.catia.active_document.drawing_root().sheets
         sheet_1 = sheets.item(1)
 
         assert sheet_1.projection_method == cat_sheet_projection_method.index('catFirstAngle')
