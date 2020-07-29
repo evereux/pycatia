@@ -186,7 +186,7 @@ class HybridShapeCylinder(HybridShape):
         self.hybrid_shape_cylinder.Length2 = length.com_object
 
     @property
-    def orientation(self) -> False:
+    def orientation(self) -> bool:
         """
         .. note::
             :class: toggle
@@ -203,16 +203,16 @@ class HybridShapeCylinder(HybridShape):
                 |          Dim IsInverted As boolean
                 |          Set IsInverted = Cylinder.Orientation
 
-        :return: False
-        :rtype: False
+        :return: bool
+        :rtype: bool
         """
 
-        return None
+        return self.hybrid_shape_cylinder.Orientation
 
     @orientation.setter
-    def orientation(self, value: False):
+    def orientation(self, value: bool):
         """
-        :param False value:
+        :param boo value:
         """
 
         self.hybrid_shape_cylinder.Orientation = value

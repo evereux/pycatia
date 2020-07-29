@@ -306,7 +306,7 @@ class HybridShapeExtrude(HybridShape):
         self.hybrid_shape_extrude.FirstUptoElement = reference_element
 
     @property
-    def orientation(self) -> False:
+    def orientation(self) -> bool:
         """
         .. note::
             :class: toggle
@@ -322,16 +322,16 @@ class HybridShapeExtrude(HybridShape):
                 |      Dim IsInverted As boolean
                 |      IsInverted = Extrude.Orientation
 
-        :return: False
-        :rtype: False
+        :return: bool
+        :rtype: bool
         """
 
-        return None
+        return self.hybrid_shape_extrude.Orientation
 
     @orientation.setter
-    def orientation(self, value: False):
+    def orientation(self, value: bool):
         """
-        :param False value:
+        :param bool value:
         """
 
         self.hybrid_shape_extrude.Orientation = value

@@ -169,5 +169,11 @@ class Distances(Collection):
         """
         return self.distances.Remove(i_index)
 
+    def __getitem__(self, n: int) -> Distance:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Distance(self.distances.item(n + 1))
+
     def __repr__(self):
         return f'Distances(name="{self.name}")'

@@ -30,8 +30,8 @@ for root, dirs, files in os.walk(source_directory):
             # create filename with path.
             file_name = os.path.join(source_directory, file)
 
-            with CATIADocHandler(file_name) as handler:
-                document = handler.document
+            with CATIADocHandler(file_name) as caa:
+                document = caa.document
                 # create the full name of the target file, minus extension.
                 target_file = os.path.join(target_directory, os.path.splitext(file)[0])
                 # create the igs file in the __junk__ directory.

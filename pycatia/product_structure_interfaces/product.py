@@ -10,6 +10,8 @@
 """
 
 from pathlib import Path
+from typing import TYPE_CHECKING
+import warnings
 
 from pycatia.in_interfaces.move import Move
 from pycatia.in_interfaces.position import Position
@@ -20,6 +22,10 @@ from pycatia.mec_mod_interfaces.constraints import Constraints
 from pycatia.product_structure_interfaces.analyze import Analyze
 from pycatia.product_structure_interfaces.publications import Publications
 from pycatia.system_interfaces.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia.product_structure_interfaces.products import Products
+    from pycatia.in_interfaces.document import Document
 
 
 class Product(AnyObject):
@@ -1112,13 +1118,19 @@ class Product(AnyObject):
         Returns a list of Product().
         :return: [Product()]
         """
-        products = []
+
+        warnings.warn(
+            'This method will be deprecated in a future release. Use Product.products instead.',
+            DeprecationWarning,
+            stacklevel=2)
+
+        products_ = []
 
         for i in range(0, self.product.Products.Count):
             product = Product(self.product.Products.Item(i + 1))
-            products.append(product)
+            products_.append(product)
 
-        return products
+        return products_
 
     def get_shape_path_name(self, i_shape_name=None):
         """

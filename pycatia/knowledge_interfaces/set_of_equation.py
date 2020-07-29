@@ -9,8 +9,12 @@
         
 """
 
+from typing import TYPE_CHECKING
+
 from pycatia.knowledge_interfaces.relation import Relation
 
+if TYPE_CHECKING:
+    from pycatia.knowledge_interfaces.parameter import Parameter
 
 class SetOfEquation(Relation):
     """

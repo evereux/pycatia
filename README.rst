@@ -141,10 +141,13 @@ A reminder for @evereux. I don't do this often and forget ...
 
 * Check version is correct.
 
+* Run mypy over module.
+
 * Build source. ``python setup.py sdist bdist_wheel``
    * Check source contents.
 
-* Build pycatia exe ``python -m nuitka --standalone pycatia.py``.
+* Build pycatia exe ``python -m nuitka --standalone pycatia-exe.py``.
+  * rename pycatia-exe.exe.
   * copy build to win_32 folder and zip.
 
 * Merge changes with master branch and upload.

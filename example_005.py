@@ -16,16 +16,17 @@
 from pycatia import catia
 from pycatia.scripts.csv_tools import create_points
 
+caa = catia()
 # # disable display refreshing to try tp speed up point generation.
 # catia.refresh_display = False
 # # hide catia window
 # catia.visible = False
 
-documents = catia.documents
+documents = caa.documents
 # create a new part.
 documents.add('Part')
 
-document = catia.active_document
+document = caa.active_document
 part = document.part()
 
 # full path name to csv file.

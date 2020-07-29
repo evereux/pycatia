@@ -4,6 +4,8 @@ import csv
 import os
 import time
 
+from typing import Generator
+
 from pycatia.mec_mod_interfaces.part import Part
 
 unit_conversion = {
@@ -16,7 +18,7 @@ unit_conversion = {
 }
 
 
-def convert_units(number: float, unit: str) -> float:
+def convert_units(number: str, unit: str) -> float:
     """
 
     Convert input 'length' from unit to millimeters.
@@ -27,17 +29,17 @@ def convert_units(number: float, unit: str) -> float:
     """
 
     try:
-        number = float(number)
+        n = float(number)
     except ValueError:
         raise FloatingPointError("Input {number} can not be converted to float(). Check csv data.")
 
     try:
-        return number * unit_conversion[unit]
+        return float(n * unit_conversion[unit])
     except KeyError:
         raise KeyError(f'Unit {unit} is not currently supported.')
 
 
-def csv_reader(file_name: str, units, delimiter: str = ',') -> list:
+def csv_reader(file_name: str, units: str, delimiter: str = ',') -> Generator[dict, None, None]:
     """
     | Reads contents of csv file and returns a generator object containing tuples in the format:
     | [
@@ -50,7 +52,7 @@ def csv_reader(file_name: str, units, delimiter: str = ',') -> list:
     | ]
 
     :param file_name: full path to csv file.
-    :param units:
+    :param str units:
     :param delimiter:
     :return: generator()
     """

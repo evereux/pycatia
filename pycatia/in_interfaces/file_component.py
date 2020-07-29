@@ -8,9 +8,12 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
 
 from pycatia.system_interfaces.any_object import AnyObject
 
+if TYPE_CHECKING:
+    from pycatia.in_interfaces.folder import Folder
 
 class FileComponent(AnyObject):
     """

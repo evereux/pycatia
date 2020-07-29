@@ -100,5 +100,11 @@ class Bodies(Collection):
         """
         return Body(self.bodies.Item(i_index))
 
+    def __getitem__(self, n: int) -> Body:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Body(self.bodies.item(n + 1))
+
     def __repr__(self):
         return f'Bodies(name="{self.name}")'
