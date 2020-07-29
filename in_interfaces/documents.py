@@ -18,7 +18,8 @@ class Documents(Collection):
     Usage::
 
         >>> from pycatia import catia
-        >>> documents = catia.documents
+        >>> caa = catia()
+        >>> documents = caa.documents
 
         .. note::
             :class: toggle

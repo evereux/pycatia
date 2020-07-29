@@ -30,7 +30,7 @@ if TYPE_CHECKING:
 class Document(AnyObject):
     """
         .. note::
-            :class: toggle
+            :class: toggle pytoggle
 
             CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
 
