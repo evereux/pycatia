@@ -1,4 +1,5 @@
 #! /usr/bin/python3.6
+import pytest
 
 from pycatia import CATIADocHandler
 from pycatia.mec_mod_interfaces.part import Part
@@ -103,8 +104,9 @@ def test_find_object_by_name():
         body = part.find_object_by_name('PartBody')
         assert body.name == 'PartBody'
 
-        body = part.find_object_by_name('lala')
-        assert body is None
+        with pytest.raises('CATIAApplicationException'):
+            part.find_object_by_name('lala')
+            pass
 
 
 def test_in_work_object():
