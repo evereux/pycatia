@@ -9,7 +9,7 @@
 """
 from pycatia import catia
 
-caa = catia()
+caa = catia
 # create a new part and rename.
 documents = caa.documents
 documents.add('Part')
