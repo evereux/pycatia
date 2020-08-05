@@ -1,13 +1,11 @@
 #! /usr/bin/python3.6
 
-from setuptools import setup, find_packages, find_namespace_packages
+import setuptools
 
 from pycatia import __author__, __author_email, __description__, __name__, __version__, __url__
 
 exclude_files = [
-    '__archive__',
     '__reference_scripts__',
-    'my_script_tst.py',
     '__pycache__',
 ]
 
@@ -22,14 +20,14 @@ requires = [
 ]
 
 test_requirements = [
-    'pytest == 4.0.0',
-    'pytest-cov == 2.6.0',
+    'pytest == 5.4.2',
+    'pytest-cov == 2.8.1',
 ]
 
 with open("README.rst", "r") as fh:
     long_description = fh.read()
 
-setup(
+setuptools.setup(
     name=__name__,
     version=__version__,
     author=__author__,
@@ -38,16 +36,15 @@ setup(
     long_description=long_description,
     long_description_content_type="text/x-rst",
     url=__url__,
-    packages=find_namespace_packages(include=['pycatia.*']),
+    packages=setuptools.find_packages(),
     python_requires=">=3.6",
     classifiers=[
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
         "License :: OSI Approved :: MIT License",
         "Operating System :: Microsoft :: Windows",
     ],
     tests_require=test_requirements,
     install_requires=requires,
-    package_dir={'pycatia': 'pycatia'},
-    package_data={'pycatia': ['pycatia/macros/*.catvbs']},
 )
