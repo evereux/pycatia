@@ -27,6 +27,7 @@ from pycatia.mec_mod_interfaces.ordered_geometrical_sets import OrderedGeometric
 from pycatia.mec_mod_interfaces.origin_elements import OriginElements
 from pycatia.part_interfaces.shape_factory import ShapeFactory
 from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.product_structure_interfaces.analyze import Analyze
 from pycatia.system_interfaces.collection import Collection
 
 
@@ -61,6 +62,34 @@ class Part(AnyObject):
         self.part = com_part_object
         self.com_object = com_part_object
 
+    @property
+    def analyze(self) -> Analyze:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-06-11 12:40:47.360445)
+                | o Property Analyze() As Analyze (Read Only)
+                |
+                |     Returns the Analyze object associated to the current
+                |     product.
+                |
+                |     Example:
+                |
+                |           This example retrieves in EngineAnalysis the Analyze object
+                |           of
+                |          the Engine product.
+                |
+                |
+                |          Dim EngineAnalysis As Analyze
+                |          Set EngineAnalysis = Engine.Analyze
+
+        :return: Analyze
+        :rtype: Analyze
+        """
+
+        return Analyze(self.part.Analyze)
+        
     @property
     def annotation_sets(self) -> Collection:
         """
