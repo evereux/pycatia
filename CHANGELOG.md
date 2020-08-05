@@ -1,5 +1,103 @@
 # Changelog
 
+## 0.4.0
+Breaking changes.
+* The catia application object now needs to be initialized in your scripts. 
+  This was done so scripts can be written in such a way that they first launch 
+  CATIA V5 (or check it's actually running) before the application object is 
+  initialised. Previously, the object was initialised immediately on import. Not 
+  practical for some use cases. 
+  For example:
+```
+>>> from pycatia import catia
+>>> # initialise the catia application automation object.
+>>> caa = catia()
+>>> document = caa.active_document
+```
+* Removed pycatia.workbenches folder. Functionality is provided for Document object.
+* Lots of bug/type fixes. Mypy is great!
+
+* Collection objects are now directly iterable (Product.get_products() will be 
+  deprecated in later release).
+```
+>>> from pycatia import catia
+>>> caa = catia()
+>>> document = caa.active_document
+>>> product = document.product()
+>>> products = product.products
+>>> for product in produts:
+>>>     print(product)
+```
+
+* Improved viewing experience of API. I hope.
+
+## 0.3.9
+* Added product.generate_ALLCATPart.
+* Added product.constraints.
+* Improved error message for selection.search.
+* Removed product.concession (now constraints and easier to use).
+* Removed application.execute_script and application.evaluate. Should use application.system_service.
+   * All methods dependant on application.SystemService updated.
+* Docs 
+   * API CAA reference note now collapsed by default.
+   * Restructured examples.
+   * Added pycatia API tree for overview.
+   * Changed sphinx theme to alabaster.
+* Added windows executable (see win_32 folder on github). This isn't thoroughly
+   tested and is provided for testing purposes.
+
+## 0.3.8
+* Updated all hybrid_shape_interfaces properties due to regression bug.
+ 
+
+## 0.3.7
+* Restructured API documentation.
+* Added type hinting.
+* Fixed issues with vis_property_set.
+* Added ability to create a message box (MsgBox). See examples.
+
+
+## 0.3.6
+* Fixed Selection class.
+
+## 0.3.5
+* Fixed missing setting of child_object for classes that inherit from Collection
+* Renamed drawing_view.factory_2d.
+
+## 0.3.4
+* Fix pypi packaging issue.
+
+## 0.3.3
+* Many updates to doc strings for methods from earlier versions.
+* Product.apply_work_mode() now expects an integer. See example_010 on new usage.
+* Many new modules and classes added. 
+
+## 0.3.2
+* Renamed sketcher interfaces.
+* Collection object returns child_object on get_item.
+* Added methods to recursively add shapes and bodies. Simple but useful.
+* Remove CATIA files.
+    * All tests / examples will eventually be independent of any source CATIA data.
+
+## 0.3.1
+* Added basic logging.
+* Changed Point.point property name to prevent breakage of child classes.
+* Added spa_workbench method to Document().
+
+## 0.3.0a
+* Major restructuring. This will break everything again. Sorry! But ... 
+  this structure should now be stable. As always, see the examples.
+* This is alpha software. Please note many new interfaces may not work. If that is the case please
+  raise an issue.
+* All .index methods are now back to starting at 1 (dictated by COM interface). This is easier for me to manage.
+* Added hybrid_shape_interfaces module. 
+* Added part_interfaces module.
+* Still much work to do here but at least the templates are in place and are a good starting point!
+
+## 0.2.1
+* Added knowledge_ware parameter features.
+* Object.path() now returns pathlib.Path() objects.
+
 ## 0.1.9
 * Updated setup.py due to pypi builds not scanning pycatia folder recursively.
 

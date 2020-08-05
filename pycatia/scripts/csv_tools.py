@@ -4,7 +4,9 @@ import csv
 import os
 import time
 
-from pycatia.hybrid_shape_interfaces.hybridshapefactory import HybridShapeFactory
+from typing import Generator
+
+from pycatia.mec_mod_interfaces.part import Part
 
 unit_conversion = {
     'mm': 1,
@@ -16,7 +18,7 @@ unit_conversion = {
 }
 
 
-def convert_units(number, unit):
+def convert_units(number: str, unit: str) -> float:
     """
 
     Convert input 'length' from unit to millimeters.
@@ -27,17 +29,17 @@ def convert_units(number, unit):
     """
 
     try:
-        number = float(number)
+        n = float(number)
     except ValueError:
         raise FloatingPointError("Input {number} can not be converted to float(). Check csv data.")
 
     try:
-        return number * unit_conversion[unit]
+        return float(n * unit_conversion[unit])
     except KeyError:
         raise KeyError(f'Unit {unit} is not currently supported.')
 
 
-def csv_reader(file_name, units, delimiter=','):
+def csv_reader(file_name: str, units: str, delimiter: str = ',') -> Generator[dict, None, None]:
     """
     | Reads contents of csv file and returns a generator object containing tuples in the format:
     | [
@@ -50,7 +52,7 @@ def csv_reader(file_name, units, delimiter=','):
     | ]
 
     :param file_name: full path to csv file.
-    :param units:
+    :param str units:
     :param delimiter:
     :return: generator()
     """
@@ -61,20 +63,19 @@ def csv_reader(file_name, units, delimiter=','):
     with open(file_name) as file:
         csv_file = csv.reader(file, delimiter=delimiter)
         for line in csv_file:
-            point_name = line[0]
-            x_coordinate = convert_units(line[1], units)
-            y_coordinate = convert_units(line[2], units)
-            z_coordinate = convert_units(line[3], units)
-            yield point_name, x_coordinate, y_coordinate, z_coordinate
+            point = {'name': line[0],
+                     'x': convert_units(line[1], units),
+                     'y': convert_units(line[2], units),
+                     'z': convert_units(line[3], units)}
+            yield point
 
 
-def create_points(catia, part, file_name, units, geometry_set_name='New_Points'):
+def create_points(part: Part, file_name: str, units: str = 'mm', geometry_set_name: str = 'New_Points') -> None:
     """
     Parses a csv file in the format defined in :func:`~csv_reader` and populates the geometry_set_name with new
     points. Once complete the part is updated.
 
-    :param catia: CATIAApplication()
-    :param part: active CATPart to add the points to
+    :param Part part:
     :param str file_name: full path to csv file.
     :param str units: length units of csv_file eg 'in'
     :param str geometry_set_name: name of new geometrical set in which to add points.
@@ -83,16 +84,17 @@ def create_points(catia, part, file_name, units, geometry_set_name='New_Points')
 
     points = csv_reader(file_name, units)
 
-    geometrical_set = part.part.HybridBodies.Add()
-    geometrical_set.Name = geometry_set_name
+    geometrical_set = part.hybrid_bodies.add()
+    geometrical_set.name = geometry_set_name
 
-    hsf = HybridShapeFactory(part)
+    hsf = part.hybrid_shape_factory
 
-    for num, point in enumerate(points):
+    for point in points:
         start = time.time()
-        hsf.add_new_point_coord(catia, geometrical_set, (point[1], point[2], point[3]), point[0])
+        new_point = hsf.add_new_point_coord(point['x'], point['y'], point['z'])
+        geometrical_set.append_hybrid_shape(new_point)
         end = time.time()
         time_taken = end - start
-        print(f"Added point: {point[0]}. Time taken = {round(time_taken, 3)} seconds", end="\r")
+        print(f"Added point: {point['name']}. Time taken = {round(time_taken, 3)} seconds", end="\r")
 
     part.update()
