@@ -158,9 +158,11 @@ class Document(AnyObject):
 
         :return: bool
         """
-        if self.name.endswith("CATPart"):
-            return True
-        return False
+        try:
+            if self.part().part:
+                return True
+        except AttributeError:
+            return False
 
     @property
     def is_product(self):
@@ -169,19 +171,7 @@ class Document(AnyObject):
 
         :return: bool
         """
-
-        if self.name.endswith("CATProduct"):
-            return True
-        return False
-
-    @property
-    def is_drawing(self):
-        """
-        Determine whether the active document is a CATDrawing.
-
-        :return: bool
-        """
-        if self.name.endswith("CATDrawing"):
+        if self.product().is_catproduct():
             return True
         return False
     
