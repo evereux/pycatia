@@ -171,11 +171,10 @@ class Document(AnyObject):
 
         :return: bool
         """
-
         if self.product().is_catproduct():
             return True
         return False
-
+    
     @property
     def is_saved(self):
         """
