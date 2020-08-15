@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.1
+* Document.save_as() If overwrite is to true DisplayFileAlerts is set to False.
+* Analyze added to Part(). 
+
 ## 0.4.0
 Breaking changes.
 * The catia application object now needs to be initialized in your scripts. 
