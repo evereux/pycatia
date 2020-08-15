@@ -27,6 +27,7 @@ from pycatia.drafting_interfaces.drawing_root import DrawingRoot
 if TYPE_CHECKING:
     from pycatia.in_interfaces.selection import Selection
 
+
 class Document(AnyObject):
     """
         .. note::
@@ -174,7 +175,7 @@ class Document(AnyObject):
         if self.product().is_catproduct():
             return True
         return False
-    
+
     @property
     def is_saved(self):
         """
@@ -777,6 +778,8 @@ class Document(AnyObject):
         """
         Save the document to a new name.
 
+        If overwrite is True CAA.DisplayFileAlerts is set to False.
+
         .. note::
             :class: toggle
 
@@ -803,13 +806,16 @@ class Document(AnyObject):
         """
 
         path_file_name = Path(file_name)
+
         if overwrite is False:
             if path_file_name.is_file():
                 raise FileExistsError(f'File: {path_file_name} already exists. '
                                       f'Set overwrite=True if you want to overwrite.')
         else:
-            if path_file_name.is_file():
-                self.logger.warning('File already exists. Click YES in CATIA V5.')
+            self.document.Application.DisplayFileAlerts = False
+            # if path_file_name.is_file():
+            #     self.logger.warning('File already exists. Click YES in CATIA V5.')
+
         self.document.SaveAs(path_file_name)
 
     def search_for_items(self, selection_objects):
