@@ -51,7 +51,10 @@ def create_logger() -> logging.Logger:
     logger = logging.getLogger('pycatia')
 
     logger.setLevel(logging.INFO)
-
+    
+    # clear existed Handlers
+    logger.handlers.clear()
+    
     logger.addHandler(default_handler)
 
     return logger
