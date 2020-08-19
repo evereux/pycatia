@@ -48,7 +48,7 @@ class Documents(Collection):
         self.documents = com_object
         self.child_object = Document
 
-    def add(self, document_type) -> Document:
+    def add(self, document_type) -> None:
         """
         .. note::
             :class: toggle
@@ -92,7 +92,7 @@ class Documents(Collection):
 
         self.logger.info(f'Creating a new "{document_type}".')
 
-        return Document(self.child_object(self.documents.Add(document_type)))
+        Document(self.child_object(self.documents.Add(document_type)))
 
     def count_types(self, file_type_list: list_str) -> int:
         """
