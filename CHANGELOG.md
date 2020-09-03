@@ -3,6 +3,10 @@
 ## 0.4.1
 * Document.save_as() If overwrite is to true DisplayFileAlerts is set to False.
 * Analyze added to Part(). 
+* Updates / fixes to SettingController(s) and LicenseSettingAtt. More work to 
+  be done here yet though.
+* Document.add() now accepts lowercase document_types.
+* Document.add() now correctly returns a document.
 
 ## 0.4.0
 Breaking changes.
