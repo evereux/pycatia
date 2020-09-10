@@ -43,9 +43,9 @@ class LicenseSettingAtt(SettingController):
     
     """
 
-    def __init__(self, com_object):
-        super().__init__(com_object)
-        self.license_setting_att = com_object
+    def __init__(self, setting_controller):
+        super().__init__(setting_controller.com_object)
+        self.license_setting_att = setting_controller.com_object
 
     @property
     def demo_mode(self):
