@@ -226,3 +226,16 @@ also show further usage of constraints.
 
 `Example 23 <https://github.com/evereux/pycatia/blob/master/example_023.py>`_
 
+Example 24
+----------
+
+Basic license checking.
+
+`Example 23 <https://github.com/evereux/pycatia/blob/master/example_024.py>`_
+
+Example 25
+----------
+
+Write the contents of a product to a html file.
+
+`Example 23 <https://github.com/evereux/pycatia/blob/master/example_025.py>`_
