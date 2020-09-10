@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class SettingController(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -254,4 +253,4 @@ class SettingController(AnyObject):
         return self.setting_controller.SaveRepository()
 
     def __repr__(self):
-        return f'SettingController(name="{ self.name }")'
+        return f'SettingController(name="{self.name}")'

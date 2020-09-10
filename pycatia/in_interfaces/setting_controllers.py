@@ -32,12 +32,14 @@ class SettingControllers(Collection):
     
     """
 
-    def __init__(self, com_object):
-        super().__init__(com_object)
-        self.setting_controllers = com_object
+    def __init__(self, caa):
+        super().__init__(caa.com_object, child_object=SettingController)
+        self.setting_controllers = caa.com_object.SettingControllers
 
     def item(self, i_index: str) -> SettingController:
         """
+
+
         .. note::
             :class: toggle
 
@@ -56,7 +58,7 @@ class SettingControllers(Collection):
                 |     Returns:
                 |         The retrieved setting controller.
 
-        :param str i_index:
+        :param str i_index: See the "Setting Controller Reference" in your CAA Visual Basic Help file for string references.
         :return: SettingController
         :rtype: SettingController
         """
