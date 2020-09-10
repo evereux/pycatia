@@ -3,6 +3,7 @@ import pytest
 
 from pycatia import CATIADocHandler
 from pycatia.mec_mod_interfaces.part import Part
+from pycatia.exception_handling.exceptions import CATIAApplicationException
 
 from tests.source_files import cat_part_measurable
 from tests.source_files import cat_product
@@ -104,7 +105,7 @@ def test_find_object_by_name():
         body = part.find_object_by_name('PartBody')
         assert body.name == 'PartBody'
 
-        with pytest.raises('CATIAApplicationException'):
+        with pytest.raises(CATIAApplicationException):
             part.find_object_by_name('lala')
             pass
 
