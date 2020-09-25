@@ -289,5 +289,30 @@ class Parameter(AnyObject):
 
         return self.parameter.UserAccessMode
 
+    def value_as_string(self) -> str:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help
+                | Func ValueAsString( ) As CATBSTR  
+                | 
+                |     Returns the value of the parameter as a string.
+                | 
+                |     Example:
+                |         This example gets the value of the existing dimension 
+                |         parameter and shows it in a message box
+                | 
+                |          
+                | 
+                |          Dim str
+                |          str = dimension.ValueAsString;
+
+        :return: str
+        :rtype: str
+        """
+
+        return self.parameter.ValueAsString()
+
     def __repr__(self):
         return f'Parameter(name="{self.name}")'
