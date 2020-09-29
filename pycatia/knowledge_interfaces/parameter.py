@@ -289,5 +289,95 @@ class Parameter(AnyObject):
 
         return self.parameter.UserAccessMode
 
+    def rename(self, i_name: str) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+                | o Sub Rename(CATBSTR iName)
+                |
+                |     Renames the parameter.
+                |
+                |     Parameters:
+                |
+                |         iName
+                |             The new name of the parameter. If iName contains "Local:" prefix
+                |             the rename will affect the local name. If not, it will affect the global name.
+                |
+                |
+                |     Example:
+                |         This example renames the param1 parameter to
+                |         PartSeatbodyMinimumThickness:
+                |
+                |          Call param1.Rename("PartSeatbodyMinimumThickness")
+
+        :param str i_name:
+        :return: None
+        :rtype: None
+        """
+        return self.parameter.Rename(i_name)
+
+    def valuate_from_string(self, i_value: str) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+                | o Sub ValuateFromString(CATBSTR iValue)
+                |
+                |     Valuates a parameter using a string as input. The string depends on
+                |     parameter nature :
+                |
+                |     "True" or "False" for Boolean
+                |
+                |     a numerical value for Integer or Real
+                |
+                |     a numerical value with or without a unit for Dimension
+                |
+                |     Parameters:
+                |
+                |         iValue
+                |             The value to assign to the dimension parameter
+                |
+                |     Example:
+                |         This example sets the value of the existing dimension parameter to a
+                |         new value:
+                |
+                |          dimension.ValuateFromString("300mm");
+
+        :param str i_value:
+        :return: None
+        :rtype: None
+        """
+        return self.parameter.ValuateFromString(i_value)
+
+    def value_as_string(self) -> str:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+                | o Func ValueAsString() As CATBSTR
+                |
+                |     Returns the value of the parameter as a string.
+                |
+                | Example:
+                |     This example gets the value of the existing dimension parameter and shows
+                |     it in a message box
+                |
+                |      Dim str
+                |      str = dimension.ValueAsString;
+                |      MessageBox str
+                |
+                |
+                |     Copyright © 1999-2011, Dassault Systèmes. All rights
+                |     reserved.
+
+        :return: str
+        :rtype: str
+        """
+        return self.parameter.ValueAsString()
+
     def __repr__(self):
         return f'Parameter(name="{self.name}")'

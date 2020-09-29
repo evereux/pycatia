@@ -10,10 +10,10 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.types import cat_variant
 
 
 class DrawingThread(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -86,5 +86,32 @@ class DrawingThread(AnyObject):
 
         self.drawing_thread.Type = value
 
-    def __repr__(self):
-        return f'DrawingThread(name="{ self.name }")'
+    def is_linked_to(self) -> cat_variant:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+                | o Func IsLinkedTo() As CatThreadLinkedTo
+                |
+                |     Specifies which kind of objects the thread is linked to.
+                |
+                |     Returns:
+                |         oLinkedType The type of thread link
+                |
+                | Example:
+                |     The following example retrieves the CatThreadLinkedTo in MyThread This view
+                |     belongs to the drawing view collection of the drawing
+                |     sheet
+                |
+                |      ThreadLinkType = MyThread.IsLinkedTo
+
+        :return: enum cat_thread_linked_to
+        :rtype: enum cat_thread_linked_to
+        """
+
+        return self.drawing_thread.IsLinkedTo()
+
+
+def __repr__(self):
+    return f'DrawingThread(name="{self.name}")'
