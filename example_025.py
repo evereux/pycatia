@@ -4,7 +4,7 @@
 
     Example 25:
 
-
+    Create a custom formatted html of the product tree.
 
 """
 
