@@ -147,6 +147,7 @@ A reminder for @evereux. I don't do this often and forget ...
    * Check source contents.
 
 * Build pycatia exe ``python -m nuitka --standalone pycatia-exe.py``.
+  * use 64 env.
   * rename pycatia-exe.exe.
   * copy build to win_32 folder and zip.
 
