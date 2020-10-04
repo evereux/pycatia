@@ -7,6 +7,9 @@
     Loop through all the CATParts in a directory and save PLAN VIEW, SIDE VIEW,
     END VIEW and ISO pngs for each part.
 
+    The tree is turned off and the background turned white for the screen
+    capture and then turned back on.
+
 """
 
 from pathlib import Path
