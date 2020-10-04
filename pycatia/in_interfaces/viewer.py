@@ -207,12 +207,12 @@ class Viewer(AnyObject):
         system_service = self.application.system_service
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def create_viewer_2d(self):
+    def create_viewer_2d(self) -> 'Viewer2D':
         from pycatia.in_interfaces.viewer_2d import Viewer2D
 
         return Viewer2D(self.viewer)
 
-    def create_viewer_3d(self):
+    def create_viewer_3d(self) -> 'Viewer3D':
         from pycatia.in_interfaces.viewer_3d import Viewer3D
 
         return Viewer3D(self.viewer)
