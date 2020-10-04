@@ -61,12 +61,12 @@ for cat_part in source_files:
         specs_and_geom = SpecsAndGeomWindow(active_window.com_object)
         specs_and_geom.layout = cat_specs_and_geom_window_layout.index("catWindowGeomOnly")
 
-        view_point_3D = Viewer3D(active_viewer.com_object).viewpoint_3d
+        view_point_3D = active_viewer.create_viewer_3d().viewpoint_3d
 
         # loop through each view type.
         for view in views:
-            print(view, views[view])
             view_point_3D.put_sight_direction(views[view])
+            active_viewer.update()
             active_viewer.reframe()
             active_viewer.zoom_in()
             file_name = save_file_path(product.part_number, product.revision, view)
