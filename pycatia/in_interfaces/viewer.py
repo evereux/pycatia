@@ -9,8 +9,14 @@
         
 """
 
+from typing import TYPE_CHECKING
+
 from pycatia.in_interfaces.camera import Camera
 from pycatia.system_interfaces.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia.in_interfaces.viewer_2d import Viewer2D
+    from pycatia.in_interfaces.viewer_3d import Viewer3D
 
 
 class Viewer(AnyObject):
