@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.3
+* Updated ViewPoint3D get methods so they now work.
+* Updated Viewer so Viewer2D and Viewer3D can be called.
+
 ## 0.4.2
 * Added missing methods Parameter.rename(), Parameter.valuate_from_string(), 
   and Parameter.value_as_string()

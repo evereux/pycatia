@@ -245,9 +245,23 @@ Example 26
 
 Prompt the user to select a product and get it's bounding box parameters
 
-.. warning:
-Currently there must be NO other existing Measure Inertias saved
-ANYWHERE in your product tree as these may be returned and not
-product you have selected.
+.. warning::
+
+    Currently there must be NO other existing Measure Inertias saved
+    ANYWHERE in your product tree as these may be returned and not
+    product you have selected.
+
 
 `Example 26 <https://github.com/evereux/pycatia/blob/master/example_026.py>`_
+
+
+Example 27
+----------
+
+Loop through all the CATParts in a directory and save PLAN VIEW, SIDE VIEW,
+END VIEW and ISO pngs for each part.
+
+The tree is turned off and the background turned white for the screen
+capture and then turned back on.
+
+`Example 27 <https://github.com/evereux/pycatia/blob/master/example_027.py>`_

@@ -141,12 +141,13 @@ A reminder for @evereux. I don't do this often and forget ...
 
 * Check version is correct.
 
-* Run mypy over module.
+* Run mypy over module. `mypy pycatia`
 
 * Build source. ``python setup.py sdist bdist_wheel``
    * Check source contents.
 
 * Build pycatia exe ``python -m nuitka --standalone pycatia-exe.py``.
+  * use 64 env.
   * rename pycatia-exe.exe.
   * copy build to win_32 folder and zip.
 
