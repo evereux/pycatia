@@ -141,7 +141,7 @@ A reminder for @evereux. I don't do this often and forget ...
 
 * Check version is correct.
 
-* Run mypy over module.
+* Run mypy over module. `mypy pycatia`
 
 * Build source. ``python setup.py sdist bdist_wheel``
    * Check source contents.
