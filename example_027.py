@@ -14,7 +14,6 @@ from pathlib import Path
 from pycatia import CATIADocHandler
 from pycatia.enumeration.enumeration_types import cat_capture_format, cat_specs_and_geom_window_layout
 from pycatia.in_interfaces.specs_and_geom_window import SpecsAndGeomWindow
-from pycatia.in_interfaces.viewer_3d import Viewer3D
 
 source_folder = Path('tests/cat_files')
 source_files = source_folder.glob('*.CATPart')
