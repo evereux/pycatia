@@ -154,3 +154,5 @@ A reminder for @evereux. I don't do this often and forget ...
 * Merge changes with master branch and upload.
 
 * Upload to pypi. ``twine upload dist/*``.
+
+* Update github releases.
