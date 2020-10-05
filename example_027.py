@@ -39,7 +39,7 @@ def save_file_path(prod_part_number, prod_revision, view_type):
     :return: Path
     """
 
-    file_name = Path(Path.home(), 'Pictures', f'{prod_part_number}-{prod_revision}-{view_type}.png')
+    file_name = Path(Path.home(), 'Pictures', f'{prod_part_number}-{prod_revision}-{view_type}.jpg')
 
     return file_name
 
@@ -75,6 +75,6 @@ for cat_part in source_files:
             active_viewer.capture_to_file(cat_capture_format.index("catCaptureFormatJPEG"), file_name)
 
         # reset background colour.
-        active_viewer.put_background_color(white)
+        active_viewer.put_background_color(background_colour)
         # bring back the specification tree.
         specs_and_geom.layout = cat_specs_and_geom_window_layout.index("catWindowSpecsAndGeom")
