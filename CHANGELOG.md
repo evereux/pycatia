@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.4.3
+* Updated ViewPoint3D get methods so they now work.
+* Updated Viewer so Viewer2D and Viewer3D can be called.
+
+## 0.4.2
+* Added missing methods Parameter.rename(), Parameter.valuate_from_string(), 
+  and Parameter.value_as_string()
+* Added missing methods DrawingThread.is_linked().
+* Added the following missing methods from the class HybridShapeCurveSmooth
+  * add_frozen_curve_segment() 
+  * add_frozen_point
+  * get_frozen_curve_segment
+  * get_frozen_curve_segments_size
+  * get_frozen_point
+  * get_frozen_points_size
+  * remove_all_frozen_curve_segments
+  * remove_all_frozen_points
+  * remove_frozen_curve_segment
+  * remove_frozen_point
+  * set_maximum_deviation
+  * set_tangency_threshold
+
 ## 0.4.1
 * Document.save_as() If overwrite is to true DisplayFileAlerts is set to False.
 * Analyze added to Part(). 
