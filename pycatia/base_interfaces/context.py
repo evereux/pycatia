@@ -43,7 +43,7 @@ class CATIADocHandler:
         >>>     # save document!
         >>>     document.save()
 
-    :param str file_name: (optional) path filename to file
+    :param str or Path file_name: (optional) path filename to file
     :param str new_document: (optional) 'Part', 'Product' or 'Drawing'.
     """
 
