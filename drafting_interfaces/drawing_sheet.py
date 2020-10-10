@@ -9,6 +9,10 @@
         
 """
 
+import os
+from pathlib import Path
+
+from pycatia.exception_handling.exceptions import CATIAApplicationException
 from pycatia.drafting_interfaces.drawing_page_setup import DrawingPageSetup
 from pycatia.drafting_interfaces.drawing_views import DrawingViews
 from pycatia.drafting_interfaces.print_area import PrintArea
@@ -503,7 +507,7 @@ class DrawingSheet(AnyObject):
         """
         return self.drawing_sheet.PrintOut()
 
-    def print_to_file(self, file_name: str) -> None:
+    def print_to_file(self, file_name: Path) -> None:
         """
         .. note::
             :class: toggle
@@ -526,10 +530,21 @@ class DrawingSheet(AnyObject):
                 | 
                 |          DrawingSheet1.PrintToFile "e://temp//sheet1.prn"
 
-        :param str file_name:
+        :param Path file_name:
         :return: None
         :rtype: None
         """
+
+        if not isinstance(file_name, Path):
+            file_name = Path(file_name)
+
+        if str(file_name.parent) == '.':
+            self.logger.warning('Full path to print file expected. Assuming current working directory.')
+            file_name = Path(os.getcwd(), file_name)
+
+        if not file_name.parent.is_dir():
+            raise CATIAApplicationException(f'Directory {file_name.parent} does not exist.')
+
         return self.drawing_sheet.PrintToFile(file_name)
 
     def set_as_detail(self) -> None:
