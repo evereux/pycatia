@@ -9,7 +9,6 @@
         
 """
 
-import os
 from pathlib import Path
 
 from pycatia.exception_handling.exceptions import CATIAApplicationException
@@ -538,14 +537,14 @@ class DrawingSheet(AnyObject):
         if not isinstance(file_name, Path):
             file_name = Path(file_name)
 
-        if str(file_name.parent) == '.':
-            self.logger.warning('Full path to print file expected. Assuming current working directory.')
-            file_name = Path(os.getcwd(), file_name)
+        # if str(file_name.parent) == '.':
+        #     self.logger.warning('Full path to print file expected. Assuming current working directory.')
+        #     file_name = Path(os.getcwd(), file_name)
 
         if not file_name.parent.is_dir():
             raise CATIAApplicationException(f'Directory {file_name.parent} does not exist.')
 
-        return self.drawing_sheet.PrintToFile(file_name)
+        return self.drawing_sheet.PrintToFile(file_name.absolute())
 
     def set_as_detail(self) -> None:
         """
