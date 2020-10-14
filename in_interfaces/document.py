@@ -482,15 +482,19 @@ class Document(AnyObject):
         """
 
         real_file_name = Path(f"{file_name}.{file_type}")
+        display_file_alerts_bool = self.document.Application.DisplayFileAlerts
+
         if overwrite is False:
             if real_file_name.is_file():
                 raise FileExistsError(f'File: {real_file_name} already exists. '
                                       f'Set overwrite=True if you want to overwrite.')
         else:
-            if real_file_name.is_file():
-                self.logger.warning('File already exists. Click YES in CATIA V5.')
+            self.document.Application.DisplayFileAlerts = False
+            # if real_file_name.is_file():
+            #     self.logger.warning('File already exists. Click YES in CATIA V5.')
 
         self.document.ExportData(file_name, file_type)
+        self.document.Application.DisplayFileAlerts = display_file_alerts_bool
 
     def indicate_2d(self, i_message: str, io_document_window_location: tuple) -> str:
         """
@@ -778,7 +782,7 @@ class Document(AnyObject):
         """
         Save the document to a new name.
 
-        If overwrite is True CAA.DisplayFileAlerts is set to False.
+        If overwrite is True CAA.DisplayFileAlerts is set to False for temporary.
 
         .. note::
             :class: toggle
@@ -806,6 +810,7 @@ class Document(AnyObject):
         """
 
         path_file_name = Path(file_name)
+        display_file_alerts_bool = self.document.Application.DisplayFileAlerts
 
         if overwrite is False:
             if path_file_name.is_file():
@@ -817,6 +822,7 @@ class Document(AnyObject):
             #     self.logger.warning('File already exists. Click YES in CATIA V5.')
 
         self.document.SaveAs(path_file_name)
+        self.document.Application.DisplayFileAlerts = display_file_alerts_bool
 
     def search_for_items(self, selection_objects):
         """
