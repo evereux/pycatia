@@ -481,7 +481,26 @@ class Document(AnyObject):
         :return:
         """
 
-        real_file_name = Path(f"{file_name}.{file_type}")
+        # to get correct real_file_name
+        path_file_name = Path(file_name)
+        known_file_types = {'.CATPart', '.CATProduct', '.CATDrawing'}
+        if path_file_name.suffix.lower() == "." + file_type.lower():
+            real_file_name = path_file_name
+        elif path_file_name.suffix == "":
+            if path_file_name.is_dir():
+                real_file_name = (path_file_name.joinpath(self.name)).with_suffix('.' + file_type)
+            elif path_file_name.parent.is_dir():
+                real_file_name = path_file_name.with_suffix('.' + file_type)
+            else:
+                raise CATIAApplicationException(f'Directory {path_file_name.parent} does not exist.')
+        elif path_file_name.suffix in known_file_types:
+            # print("case3")
+            real_file_name = path_file_name.with_suffix('.' + file_type)
+        else:
+            # print("case6")
+            real_file_name = Path(f"{file_name}.{file_type}")
+
+        # to treat argument "overwrite"
         display_file_alerts_bool = self.document.Application.DisplayFileAlerts
 
         if overwrite is False:
@@ -492,8 +511,11 @@ class Document(AnyObject):
             self.document.Application.DisplayFileAlerts = False
             # if real_file_name.is_file():
             #     self.logger.warning('File already exists. Click YES in CATIA V5.')
-
-        self.document.ExportData(file_name, file_type)
+        # print("path_file_name", path_file_name)
+        # print("self.name:", self.name)
+        # print("real_file_name: ", real_file_name)
+        # print(file_type)
+        self.document.ExportData(real_file_name, file_type)
         self.document.Application.DisplayFileAlerts = display_file_alerts_bool
 
     def indicate_2d(self, i_message: str, io_document_window_location: tuple) -> str:
