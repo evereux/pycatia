@@ -843,7 +843,7 @@ class Document(AnyObject):
             # if path_file_name.is_file():
             #     self.logger.warning('File already exists. Click YES in CATIA V5.')
 
-        self.document.SaveAs(path_file_name)
+        self.document.SaveAs(path_file_name.absolute())
         self.document.Application.DisplayFileAlerts = display_file_alerts_bool
 
     def search_for_items(self, selection_objects):
