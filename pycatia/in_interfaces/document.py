@@ -515,7 +515,7 @@ class Document(AnyObject):
         # print("self.name:", self.name)
         # print("real_file_name: ", real_file_name)
         # print(file_type)
-        self.document.ExportData(real_file_name, file_type)
+        self.document.ExportData(real_file_name.absolute(), file_type)
         self.document.Application.DisplayFileAlerts = display_file_alerts_bool
 
     def indicate_2d(self, i_message: str, io_document_window_location: tuple) -> str:
