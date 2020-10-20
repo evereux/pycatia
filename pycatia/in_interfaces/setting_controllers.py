@@ -32,9 +32,10 @@ class SettingControllers(Collection):
     
     """
 
-    def __init__(self, caa):
-        super().__init__(caa.com_object, child_object=SettingController)
-        self.setting_controllers = caa.com_object.SettingControllers
+    def __init__(self, com_object):
+        super().__init__(com_object, child_object=SettingController)
+        self.setting_controllers = com_object
+        self.child_object = SettingController
 
     def item(self, i_index: str) -> SettingController:
         """
