@@ -454,7 +454,7 @@ class Document(AnyObject):
         """
         return Workbench(self.document.GetWorkbench(workbench_name))
 
-    def export_data(self, file_name: str, file_type: str, overwrite=False) -> None:
+    def export_data(self, file_name: Path, file_type: str, overwrite=False) -> None:
         """
         .. note::
             :class: toggle
@@ -474,23 +474,36 @@ class Document(AnyObject):
             |       Doc.ExportData("IGESDoc", "igs")
 
 
-        :param str file_name: file_name including full path.
+        :param Path file_name: file_name including full path.
         :param str file_type: file_type is the extension of required file_type.
                               The file_type must be supported by CATIA and the CATIA license.
         :param bool overwrite:
         :return:
         """
 
-        real_file_name = Path(f"{file_name}.{file_type}")
-        if overwrite is False:
-            if real_file_name.is_file():
-                raise FileExistsError(f'File: {real_file_name} already exists. '
-                                      f'Set overwrite=True if you want to overwrite.')
-        else:
-            if real_file_name.is_file():
-                self.logger.warning('File already exists. Click YES in CATIA V5.')
+        path_file_name = Path(file_name)
 
-        self.document.ExportData(file_name, file_type)
+        if path_file_name.stem.lower() != file_type.lower():
+            raise CATIAApplicationException('Filename must have the same suffix as filetype.')
+
+        w_file_name = Path(f"{file_name}.{file_type}")
+
+        if not w_file_name.parent.is_dir():
+            raise NotADirectoryError(f'Dir: {w_file_name.parent} is not a directory.')
+
+        if overwrite is False and w_file_name.is_file():
+            raise FileExistsError(f'File: {path_file_name} already exists. '
+                                  f'Set overwrite=True if you want to overwrite.')
+
+        # pycatia prefers full path names :-)
+        if not w_file_name.is_absolute():
+            self.logger.warning('Please be explicit and use absolute filenames.')
+
+        self.document.Application.DisplayFileAlerts = False
+
+        self.document.ExportData(w_file_name, file_type)
+
+        self.document.Application.DisplayFileAlerts = True
 
     def indicate_2d(self, i_message: str, io_document_window_location: tuple) -> str:
         """
