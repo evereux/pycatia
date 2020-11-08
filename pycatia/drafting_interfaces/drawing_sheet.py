@@ -507,7 +507,7 @@ class DrawingSheet(AnyObject):
         """
         return self.drawing_sheet.PrintOut()
 
-    def print_to_file(self, file_name: Path) -> None:
+    def print_to_file(self, file_name: Path, overwrite=False) -> None:
         """
         .. note::
             :class: toggle
@@ -530,7 +530,8 @@ class DrawingSheet(AnyObject):
                 | 
                 |          DrawingSheet1.PrintToFile "e://temp//sheet1.prn"
 
-        :param Path file_name:
+        :param Path file_name: file_name including full path.
+        :param bool overwrite: Files will not be overwritten unless is True.
         :return: None
         :rtype: None
         """
@@ -543,9 +544,17 @@ class DrawingSheet(AnyObject):
             file_name = Path(os.getcwd(), file_name)
 
         if not file_name.parent.is_dir():
-            raise CATIAApplicationException(f'Directory {file_name.parent} does not exist.')
+            raise NotADirectoryError(f'Directory {file_name.parent} is not a directory.')
 
-        return self.drawing_sheet.PrintToFile(file_name)
+        if overwrite is False and file_name.is_file():
+            raise FileExistsError(f'File: {file_name} already exists. '
+                                  f'Set overwrite=True if you want to overwrite.')
+
+        # pycatia prefers full path names :-)
+        if not file_name.is_absolute():
+            self.logger.warning('To prevent unexpected behaviour, be explicit and use absolute filenames.')
+
+        self.drawing_sheet.PrintToFile(file_name)
 
     def set_as_detail(self) -> None:
         """
