@@ -480,13 +480,14 @@ class Document(AnyObject):
         :param bool overwrite:
         :return:
         """
-
+        user_dfa_setting = self.document.Application.DisplayFileAlerts
         path_file_name = Path(file_name)
 
         if path_file_name.stem.lower() != file_type.lower():
             raise CATIAApplicationException('Filename must have the same suffix as filetype.')
 
-        w_file_name = Path(f"{file_name}.{file_type}")
+        if not str(file_name).endswith(file_type):
+            w_file_name = Path(f"{file_name}.{file_type}")
 
         if not w_file_name.parent.is_dir():
             raise NotADirectoryError(f'Dir: {w_file_name.parent} is not a directory.')
@@ -499,11 +500,9 @@ class Document(AnyObject):
         if not w_file_name.is_absolute():
             self.logger.warning('Please be explicit and use absolute filenames.')
 
-        self.document.Application.DisplayFileAlerts = False
-
         self.document.ExportData(w_file_name, file_type)
 
-        self.document.Application.DisplayFileAlerts = True
+        self.document.Application.DisplayFileAlerts = user_dfa_setting
 
     def indicate_2d(self, i_message: str, io_document_window_location: tuple) -> str:
         """
