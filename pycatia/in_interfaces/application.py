@@ -18,6 +18,7 @@ from pycatia.in_interfaces.window import Window
 from pycatia.in_interfaces.windows import Windows
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.system_service import SystemService
+from pycatia.in_interfaces.setting_controllers import SettingControllers
 
 
 class Application(AnyObject):
@@ -1205,6 +1206,12 @@ class Application(AnyObject):
         :rtype: None
         """
         return self.com_object.Quit()
+
+    def setting_controllers(self):
+        """
+        Application.SettingControllers
+        """
+        return SettingControllers(self.com_object.SettingControllers)
 
     def start_command(self, i_command_id: str) -> None:
         """
