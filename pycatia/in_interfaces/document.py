@@ -477,32 +477,34 @@ class Document(AnyObject):
         :param Path file_name: file_name including full path.
         :param str file_type: file_type is the extension of required file_type.
                               The file_type must be supported by CATIA and the CATIA license.
-        :param bool overwrite:
+        :param bool overwrite: Files will not be overwritten unless is True.
         :return:
         """
-        user_dfa_setting = self.document.Application.DisplayFileAlerts
-        path_file_name = Path(file_name)
+        current_dfa_setting = self.document.Application.DisplayFileAlerts
+        if not isinstance(file_name, Path):
+            file_name = Path(file_name)
 
-        if path_file_name.stem.lower() != file_type.lower():
+        if file_name.stem.lower() != file_type.lower():
             raise CATIAApplicationException('Filename must have the same suffix as filetype.')
 
+        # add filetype to filename if it hasn't been added correctly.
         if not str(file_name).endswith(file_type):
-            w_file_name = Path(f"{file_name}.{file_type}")
+            file_name = Path(f"{file_name}.{file_type}")
 
-        if not w_file_name.parent.is_dir():
-            raise NotADirectoryError(f'Dir: {w_file_name.parent} is not a directory.')
+        if not file_name.parent.is_dir():
+            raise NotADirectoryError(f'Directory: {file_name.parent} is not a directory.')
 
-        if overwrite is False and w_file_name.is_file():
-            raise FileExistsError(f'File: {path_file_name} already exists. '
+        if overwrite is False and file_name.is_file():
+            raise FileExistsError(f'File: {file_name} already exists. '
                                   f'Set overwrite=True if you want to overwrite.')
 
         # pycatia prefers full path names :-)
-        if not w_file_name.is_absolute():
-            self.logger.warning('Please be explicit and use absolute filenames.')
+        if not file_name.is_absolute():
+            self.logger.warning('To prevent unexpected behaviour, be explicit and use absolute filenames.')
 
-        self.document.ExportData(w_file_name, file_type)
+        self.document.ExportData(file_name, file_type)
 
-        self.document.Application.DisplayFileAlerts = user_dfa_setting
+        self.document.Application.DisplayFileAlerts = current_dfa_setting
 
     def indicate_2d(self, i_message: str, io_document_window_location: tuple) -> str:
         """
