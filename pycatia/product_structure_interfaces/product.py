@@ -528,6 +528,18 @@ class Product(AnyObject):
         """
 
         self.product.Source = value
+    
+    @property
+    def type(self) -> str:
+        """
+        Return the type of product, catporduct, catpart or component
+        """
+        root_product_name = self.com_object.ReferenceProduct.Parent.Product.Name
+        self_product_name = self.com_object.ReferenceProduct.Name
+        if root_product_name == self_product_name:
+            return self.com_object.ReferenceProduct.Parent.Name.split('.')[-1].lower()
+        else:
+            return "component"
 
     @property
     def user_ref_properties(self) -> Parameters:
