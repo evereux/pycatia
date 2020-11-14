@@ -528,6 +528,21 @@ class Product(AnyObject):
         """
 
         self.product.Source = value
+    
+    @property
+    def type(self) -> str:
+        """
+        Returns the type of product (CATProduct, CATPart or Component).
+
+        :return: str
+        :rtype: str
+        """
+        root_product_name = self.com_object.ReferenceProduct.Parent.Product.Name
+        self_product_name = self.com_object.ReferenceProduct.Name
+        if root_product_name == self_product_name:
+            return self.com_object.ReferenceProduct.Parent.Name.split('.')[-1]
+        else:
+            return "Component"
 
     @property
     def user_ref_properties(self) -> Parameters:
