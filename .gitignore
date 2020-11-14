@@ -142,3 +142,4 @@ zip_win32_dist.py
 win_32/pycatia
 pycatia-exe.py
 logo*
+*.cgr
