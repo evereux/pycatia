@@ -142,9 +142,10 @@ class Selection(AnyObject):
 
     """
 
-    def __init__(self, com_object):
+    def __init__(self, com_object, child_object=SelectedElement):
         super().__init__(com_object)
         self.selection = com_object
+        self.child_object = child_object
 
     @property
     def count(self) -> int:
@@ -2008,3 +2009,25 @@ class Selection(AnyObject):
 
     def __repr__(self):
         return f'Selection(name="{self.name}")'
+
+    def items(self):
+        """
+        :return: [self.child_object()]
+        """
+        items_list = []
+
+        for i in range(self.com_object.Count):
+            item = self.child_object(self.com_object.Item(i + 1))
+            items_list.append(item)
+
+        return items_list
+
+    def __len__(self):
+
+        return self.count
+
+    def __getitem__(self, n: int) -> AnyObject:
+
+        if (n + 1) > self.count:
+            raise StopIteration
+        return self.child_object(self.com_object.item(n + 1))
