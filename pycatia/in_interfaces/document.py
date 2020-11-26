@@ -814,12 +814,16 @@ class Document(AnyObject):
                 |          Doc.SaveAs("NewName")
 
         :param file_name: full pathname to new file_name
-        :param bool overwrite:
+        :param bool overwrite: Files will not be overwritten unless is True.
         :return: None.
         :rtype: None
         """
-
+        current_dfa_setting = self.document.Application.DisplayFileAlerts
         path_file_name = Path(file_name)
+
+        # pycatia prefers full path names :-)
+        if not path_file_name.is_absolute():
+            self.logger.warning('To prevent unexpected behaviour, be explicit and use absolute filenames.')
 
         if overwrite is False:
             if path_file_name.is_file():
@@ -831,6 +835,8 @@ class Document(AnyObject):
             #     self.logger.warning('File already exists. Click YES in CATIA V5.')
 
         self.document.SaveAs(path_file_name)
+
+        self.document.Application.DisplayFileAlerts = current_dfa_setting
 
     def search_for_items(self, selection_objects):
         """
