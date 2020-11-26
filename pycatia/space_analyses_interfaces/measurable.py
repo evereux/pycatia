@@ -487,7 +487,7 @@ class Measurable(AnyObject):
             |   TheMeasurable.GetMinimumDistancePoints reference2, Coordinates
 
         :param i_measured_item:
-        :return: tuple(float, float, float, float, float, float, float, float)
+        :return: tuple(float, float, float, float, float, float, float, float, float)
         """
 
         vba_function_name = 'get_minimum_distance_points'
