@@ -2026,7 +2026,7 @@ class Selection(AnyObject):
 
         return self.count
 
-    def __getitem__(self, n: int) -> AnyObject:
+    def __getitem__(self, n: int) -> SelectedElement:
 
         if (n + 1) > self.count:
             raise StopIteration
