@@ -202,11 +202,9 @@ class DMUReviews(Collection):
         """
         return self.dmu_reviews.Remove(i_index)
 
-    def __getitem__(self, n: int) -> DMUReview:
-        if (n + 1) > self.count:
-            raise StopIteration
-
-        return DMUReview(self.dmu_reviews.item(n + 1))
+    def __iter__(self) -> DMUReview:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'DmuReviews(name="{self.name}")'

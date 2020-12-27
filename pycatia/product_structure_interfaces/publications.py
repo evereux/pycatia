@@ -235,11 +235,9 @@ class Publications(Collection):
         # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def __getitem__(self, n: int) -> Publication:
-        if (n + 1) > self.count:
-            raise StopIteration
-
-        return Publication(self.publications.item(n + 1))
+    def __iter__(self) -> Publication:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'Publications(name="{self.name}")'

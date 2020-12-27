@@ -157,11 +157,9 @@ class ClashResults(Collection):
         """
         return self.clash_results.Remove(i_index)
 
-    def __getitem__(self, n: int) -> ClashResult:
-        if (n + 1) > self.count:
-            raise StopIteration
-
-        return ClashResult(self.clash_results.item(n + 1))
+    def __iter__(self) -> ClashResult:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'ClashResults(name="{self.name}")'
