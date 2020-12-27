@@ -71,7 +71,7 @@ def test_export_document():
         path = os.path.dirname(os.path.abspath(cat_part_measurable))
         export_name = os.path.join(path, export_name)
 
-        document.export_data(export_name, export_type)
+        document.export_data(f"{export_name}.{export_type}", export_type)
 
         assert os.path.isfile(f'{export_name}.igs')
 
