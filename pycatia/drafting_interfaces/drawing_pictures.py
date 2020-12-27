@@ -163,11 +163,9 @@ class DrawingPictures(Collection):
         """
         return self.drawing_pictures.Remove(i_index)
 
-    def __getitem__(self, n: int) -> DrawingPicture:
-        if (n + 1) > self.count:
-            raise StopIteration
-
-        return DrawingPicture(self.drawing_pictures.item(n + 1))
+    def __iter__(self) -> DrawingPicture:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'DrawingPictures(name="{self.name}")'

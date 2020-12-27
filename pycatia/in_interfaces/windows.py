@@ -103,11 +103,9 @@ class Windows(Collection):
         """
         return Window(self.windows.Item(i_index))
 
-    def __getitem__(self, n: int) -> Window:
-        if (n + 1) > self.count:
-            raise StopIteration
-
-        return Window(self.windows.item(n + 1))
+    def __iter__(self) -> Window:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'Windows(name="{self.name}")'
