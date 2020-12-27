@@ -485,7 +485,8 @@ class Document(AnyObject):
             file_name = Path(file_name)
 
         if file_name.suffix.lower() != '.' + file_type.lower():
-            raise CATIAApplicationException('Filename must have the same suffix as filetype.')
+            raise CATIAApplicationException(
+                f'Filename "{file_name}" must have the same suffix as filetype "{file_type}".')
 
         # add filetype to filename if it hasn't been added correctly.
         if not str(file_name).endswith(file_type):
