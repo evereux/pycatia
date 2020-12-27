@@ -216,7 +216,7 @@ class Product(AnyObject):
         :return: str()
         """
 
-        return self.reference_product.parent.full_name
+        return self.reference_product.parent.com_object.FullName
 
     @property
     def move(self):
