@@ -961,6 +961,18 @@ class Selection(AnyObject):
         """
         return SelectedElement(self.selection.Item2(i_index))
 
+    def items(self):
+        """
+        :return: [self.child_object()]
+        """
+        items_list = []
+
+        for i in range(self.com_object.Count):
+            item = self.child_object(self.com_object.Item(i + 1))
+            items_list.append(item)
+
+        return items_list
+
     def paste(self) -> None:
         """
         .. note::
@@ -2007,27 +2019,13 @@ class Selection(AnyObject):
                                              i_tooltip,
                                              o_document.com_object)
 
-    def __repr__(self):
-        return f'Selection(name="{self.name}")'
-
-    def items(self):
-        """
-        :return: [self.child_object()]
-        """
-        items_list = []
-
-        for i in range(self.com_object.Count):
-            item = self.child_object(self.com_object.Item(i + 1))
-            items_list.append(item)
-
-        return items_list
-
     def __len__(self):
 
         return self.count
 
-    def __getitem__(self, n: int) -> SelectedElement:
+    def __iter__(self):
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
-        if (n + 1) > self.count:
-            raise StopIteration
-        return self.child_object(self.com_object.item(n + 1))
+    def __repr__(self):
+        return f'Selection(name="{self.name}")'
