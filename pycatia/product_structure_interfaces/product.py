@@ -13,6 +13,7 @@ from pathlib import Path
 from typing import TYPE_CHECKING
 import warnings
 
+from pycatia.exception_handling.exceptions import CATIAApplicationException
 from pycatia.in_interfaces.move import Move
 from pycatia.in_interfaces.position import Position
 from pycatia.in_interfaces.reference import Reference
@@ -205,7 +206,7 @@ class Product(AnyObject):
         :return: str()
         """
 
-        return self.product.ReferenceProduct.Parent.Name
+        return self.reference_product.Parent.Name
 
     @property
     def full_name(self):
@@ -213,7 +214,7 @@ class Product(AnyObject):
         :return: str()
         """
 
-        return self.product.ReferenceProduct.Parent.FullName
+        return self.reference_product.Parent.FullName
 
     @property
     def move(self):
@@ -427,8 +428,10 @@ class Product(AnyObject):
         :return: Product
         :rtype: Product
         """
-
-        return Product(self.product.ReferenceProduct)
+        try:
+            return Product(self.product.ReferenceProduct)
+        except AttributeError:
+            raise CATIAApplicationException('Could do get Reference Product. Check Product for broken links.')
 
     @property
     def relations(self) -> Relations:
@@ -528,7 +531,7 @@ class Product(AnyObject):
         """
 
         self.product.Source = value
-    
+
     @property
     def type(self) -> str:
         """
