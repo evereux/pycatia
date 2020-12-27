@@ -123,7 +123,7 @@ To run a specific test:
 
 To stop tests running after first failure.
 
-    py.text -vx
+    py.test -vx
 
 Release process
 ---------------
