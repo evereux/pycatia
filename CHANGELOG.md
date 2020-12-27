@@ -1,5 +1,16 @@
 # Changelog
 
+
+## 0.4.4
+Many thanks to Tian-Jionglu for his contributions.
+* Improved checks for malformed filenames.
+* Add method Application.setting_controllers.
+* Improvements to export_data.
+* Added Product.type.
+* Docstring fix for Measurable.get_minimum_distance.
+* Replaced __get_item__ with __iter__. 
+
+
 ## 0.4.3
 * Updated ViewPoint3D get methods so they now work.
 * Updated Viewer so Viewer2D and Viewer3D can be called.
