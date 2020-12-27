@@ -101,11 +101,9 @@ class HybridShapes(Collection):
         """
         return HybridShape(self.hybrid_shapes.Item(i_index))
 
-    def __getitem__(self, n: int) -> HybridShape:
-        if (n + 1) > self.count:
-            raise StopIteration
-
-        return HybridShape(self.hybrid_shapes.item(n + 1))
+    def __iter__(self) -> HybridShape:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'HybridShapes(name="{self.name}")'

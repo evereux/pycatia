@@ -2023,9 +2023,9 @@ class Selection(AnyObject):
 
         return self.count
 
-    def __iter__(self):
+    def __iter__(self) -> SelectedElement:
         for i in range(self.count):
-            yield self.child_object(self.com_object.item(i + 1))
+            yield SelectedElement(self.child_object(self.com_object.item(i + 1)))
 
     def __repr__(self):
         return f'Selection(name="{self.name}")'

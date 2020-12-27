@@ -99,11 +99,9 @@ class Shapes(Collection):
         """
         return Shape(self.shapes.Item(i_index))
 
-    def __getitem__(self, n: int) -> Shape:
-        if (n + 1) > self.count:
-            raise StopIteration
-
-        return Shape(self.shapes.item(n + 1))
+    def __iter__(self) -> Shape:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'Shapes(name="{self.name}")'

@@ -155,11 +155,9 @@ class DrawingWeldings(Collection):
         """
         return self.drawing_weldings.Remove(i_index)
 
-    def __getitem__(self, n: int) -> DrawingWelding:
-        if (n + 1) > self.count:
-            raise StopIteration
-
-        return DrawingWelding(self.drawing_weldings.item(n + 1))
+    def __iter__(self) -> DrawingWelding:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'DrawingWeldings(name="{self.name}")'

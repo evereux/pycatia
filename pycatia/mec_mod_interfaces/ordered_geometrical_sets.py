@@ -103,11 +103,9 @@ class OrderedGeometricalSets(Collection):
         """
         return OrderedGeometricalSet(self.ordered_geometrical_sets.Item(i_index))
 
-    def __getitem__(self, n: int) -> OrderedGeometricalSet:
-        if (n + 1) > self.count:
-            raise StopIteration
-
-        return OrderedGeometricalSet(self.ordered_geometrical_sets.item(n + 1))
+    def __iter__(self) -> OrderedGeometricalSet:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'OrderedGeometricalSets(name="{self.name}")'

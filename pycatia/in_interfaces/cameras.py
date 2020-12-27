@@ -136,11 +136,9 @@ class Cameras(Collection):
         """
         return self.cameras.Remove(i_index)
 
-    def __getitem__(self, n: int) -> Camera:
-        if (n + 1) > self.count:
-            raise StopIteration
-
-        return Camera(self.cameras.item(n + 1))
+    def __iter__(self) -> Camera:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'Cameras(name="{self.name}")'

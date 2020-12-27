@@ -285,11 +285,9 @@ class DrawingDimensions(Collection):
         """
         return self.drawing_dimensions.Remove(i_index)
 
-    def __getitem__(self, n: int) -> DrawingDimension:
-        if (n + 1) > self.count:
-            raise StopIteration
-
-        return DrawingDimension(self.drawing_dimensions.item(n + 1))
+    def __iter__(self) -> DrawingDimension:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'DrawingDimensions(name="{self.name}")'
