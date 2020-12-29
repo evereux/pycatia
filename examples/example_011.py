@@ -8,6 +8,15 @@
 
 """
 
+##########################################################
+# insert syspath to project folder so examples can be run.
+import os
+import sys
+
+sys.path.insert(0, os.path.abspath('..\\pycatia'))
+
+##########################################################
+
 from pycatia import catia
 from pycatia.enumeration.enumeration_types import cat_work_mode_type
 from pycatia.product_structure_interfaces.product import Product
