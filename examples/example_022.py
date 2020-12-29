@@ -18,6 +18,15 @@
 
 """
 
+##########################################################
+# insert syspath to project folder so examples can be run.
+import os
+import sys
+
+sys.path.insert(0, os.path.abspath('..\\pycatia'))
+
+##########################################################
+
 from pycatia import catia
 from pycatia.hybrid_shape_interfaces.hybrid_shape_line_pt_pt import HybridShapeLinePtPt
 from pycatia.hybrid_shape_interfaces.hybrid_shape_point_coord import HybridShapePointCoord

@@ -8,6 +8,15 @@
 
 """
 
+##########################################################
+# insert syspath to project folder so examples can be run.
+import os
+import sys
+
+sys.path.insert(0, os.path.abspath('..\\pycatia'))
+
+##########################################################
+
 import os
 
 from pycatia import CATIADocHandler

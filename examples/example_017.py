@@ -7,6 +7,16 @@
     Drafting: create a border template in the background view of the currently opened A0 landscape CATDrawing.
 
 """
+
+##########################################################
+# insert syspath to project folder so examples can be run.
+import os
+import sys
+
+sys.path.insert(0, os.path.abspath('..\\pycatia'))
+
+##########################################################
+
 from pycatia import catia
 from pycatia.exception_handling import CATIAApplicationException
 from pycatia.enumeration.enumeration_types import cat_text_anchor_position
