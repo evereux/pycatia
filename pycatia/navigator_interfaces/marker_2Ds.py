@@ -430,6 +430,12 @@ class Marker2Ds(Collection):
         """
         return self.marker_2ds.Remove(i_index)
 
+    def __getitem__(self, n: int) -> Marker2D:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Marker2D(self.marker_2ds.item(n + 1))
+
     def __iter__(self) -> Marker2D:
         for i in range(self.count):
             yield self.child_object(self.com_object.item(i + 1))

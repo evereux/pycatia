@@ -522,6 +522,12 @@ class Parameters(Collection):
         """
         return Parameters(self.parameters.SubList(i_object.com_object, i_recursively))
 
+    def __getitem__(self, n: int) -> Parameter:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Parameter(self.parameters.item(n + 1))
+
     def __iter__(self) -> Parameter:
         for i in range(self.count):
             yield self.child_object(self.com_object.item(i + 1))

@@ -149,6 +149,12 @@ class DrawingLeaders(Collection):
         """
         return self.drawing_leaders.Remove(i_index)
 
+    def __getitem__(self, n: int) -> DrawingLeader:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return DrawingLeader(self.drawing_leaders.item(n + 1))
+
     def __iter__(self) -> DrawingLeader:
         for i in range(self.count):
             yield self.child_object(self.com_object.item(i + 1))

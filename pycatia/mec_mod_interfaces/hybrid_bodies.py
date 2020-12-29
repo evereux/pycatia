@@ -107,6 +107,12 @@ class HybridBodies(Collection):
         except com_error:
             raise CATIAApplicationException(f'Could not find hybrid_body "i_index"')
 
+    def __getitem__(self, n: int) -> HybridBody:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return HybridBody(self.hybrid_bodies.item(n + 1))
+
     def __iter__(self) -> HybridBody:
         for i in range(self.count):
             yield self.child_object(self.com_object.item(i + 1))

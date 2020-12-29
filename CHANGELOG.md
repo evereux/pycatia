@@ -8,7 +8,7 @@ Many thanks to Tian-Jionglu for his contributions.
 * Improvements to export_data.
 * Added Product.type.
 * Docstring fix for Measurable.get_minimum_distance.
-* Replaced __get_item__ with __iter__. 
+* Added __iter__ method to collections. 
 
 
 ## 0.4.3
