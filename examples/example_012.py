@@ -11,6 +11,15 @@
 
 """
 
+##########################################################
+# insert syspath to project folder so examples can be run.
+import os
+import sys
+
+sys.path.insert(0, os.path.abspath('..\\pycatia'))
+
+##########################################################
+
 from pycatia import catia
 
 # from pycatia.knowledge_interfaces import BoolParam
