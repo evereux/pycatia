@@ -102,6 +102,12 @@ class AxisSystems(Collection):
         """
         return AxisSystem(self.axis_systems.Item(i_index))
 
+    def __getitem__(self, n: int) -> AxisSystem:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return AxisSystem(self.axis_systems.item(n + 1))
+
     def __iter__(self) -> AxisSystem:
         for i in range(self.count):
             yield self.child_object(self.com_object.item(i + 1))

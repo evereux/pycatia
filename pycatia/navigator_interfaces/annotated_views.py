@@ -180,6 +180,12 @@ class AnnotatedViews(Collection):
         """
         return self.annotated_views.Remove(i_index)
 
+    def __getitem__(self, n: int) -> AnnotatedView:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return AnnotatedView(self.annotated_views.item(n + 1))
+
     def __iter__(self) -> AnnotatedView:
         for i in range(self.count):
             yield self.child_object(self.com_object.item(i + 1))

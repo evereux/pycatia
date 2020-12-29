@@ -289,6 +289,12 @@ class Constraints(Collection):
         """
         return self.constraints.Remove(i_index)
 
+    def __getitem__(self, n: int) -> Constraint:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Constraint(self.constraints.item(n + 1))
+
     def __iter__(self) -> Constraint:
         for i in range(self.count):
             yield self.child_object(self.com_object.item(i + 1))

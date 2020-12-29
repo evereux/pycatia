@@ -2023,6 +2023,12 @@ class Selection(AnyObject):
 
         return self.count
 
+    def __getitem__(self, n: int) -> SelectedElement:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return SelectedElement(self.selection.item(n + 1))
+
     def __iter__(self) -> SelectedElement:
         for i in range(self.count):
             yield self.child_object(self.com_object.item(i + 1))

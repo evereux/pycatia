@@ -171,6 +171,12 @@ class DrawingTables(Collection):
         """
         return self.drawing_tables.Remove(i_index)
 
+    def __getitem__(self, n: int) -> DrawingTable:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return DrawingTable(self.drawing_tables.item(n + 1))
+
     def __iter__(self) -> DrawingTable:
         for i in range(self.count):
             yield self.child_object(self.com_object.item(i + 1))
