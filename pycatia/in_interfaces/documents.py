@@ -310,6 +310,12 @@ class Documents(Collection):
         """
         return self.documents.Read(file_name)
 
+    def __getitem__(self, n: int) -> Document:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Document(self.documents.item(n + 1))
+
     def __iter__(self) -> Document:
         for i in range(self.count):
             yield self.child_object(self.com_object.item(i + 1))

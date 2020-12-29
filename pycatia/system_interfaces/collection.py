@@ -224,7 +224,13 @@ class Collection(PyCATIA):
     def __len__(self):
 
         return self.count
-    
+
+    def __getitem__(self, n: int) -> AnyObject:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return AnyObject(self.com_object.item(n + 1))
+
     def __iter__(self) -> AnyObject:
         for i in range(self.count):
             yield self.child_object(self.com_object.item(i + 1))

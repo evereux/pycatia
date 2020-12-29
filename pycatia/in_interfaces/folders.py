@@ -76,6 +76,12 @@ class Folders(Collection):
         """
         return Folder(self.folders.Item(i_number))
 
+    def __getitem__(self, n: int) -> Folder:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return Folder(self.folders.item(n + 1))
+
     def __iter__(self) -> Folder:
         for i in range(self.count):
             yield self.child_object(self.com_object.item(i + 1))
