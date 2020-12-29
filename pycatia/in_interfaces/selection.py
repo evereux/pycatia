@@ -2025,7 +2025,7 @@ class Selection(AnyObject):
 
     def __iter__(self) -> SelectedElement:
         for i in range(self.count):
-            yield SelectedElement(self.child_object(self.com_object.item(i + 1)))
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'Selection(name="{self.name}")'
