@@ -8,6 +8,15 @@
 
 """
 
+##########################################################
+# insert syspath to project folder so examples can be run.
+# for development purposes.
+import os
+import sys
+
+sys.path.insert(0, os.path.abspath('..\\pycatia'))
+##########################################################
+
 import os
 
 from pycatia import CATIADocHandler
@@ -31,8 +40,9 @@ for root, dirs, files in os.walk(source_directory):
             file_name = os.path.join(source_directory, file)
 
             with CATIADocHandler(file_name) as caa:
+                file_ext = 'igs'
                 document = caa.document
                 # create the full name of the target file, minus extension.
-                target_file = os.path.join(target_directory, os.path.splitext(file)[0])
+                target_file = os.path.join(target_directory, os.path.splitext(file)[0]) + "." + file_ext
                 # create the igs file in the __junk__ directory.
-                document.export_data(target_file, 'igs')
+                document.export_data(target_file, file_ext)

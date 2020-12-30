@@ -12,6 +12,15 @@
 
 """
 
+##########################################################
+# insert syspath to project folder so examples can be run.
+# for development purposes.
+import os
+import sys
+
+sys.path.insert(0, os.path.abspath('..\\pycatia'))
+##########################################################
+
 from pathlib import Path
 import os
 
@@ -33,7 +42,7 @@ new_file_name = Path(os.getcwd(), 'new_part.CATPart')
 document.save_as(new_file_name, overwrite=True)
 
 # to export to another support file_format (license permitting).
-new_export_file_name = r"c:\temp\new_export_part"
+new_export_file_name = r"c:\temp\new_export_part.stp"
 document.export_data(new_export_file_name, "stp", overwrite=True)
 
 # close document

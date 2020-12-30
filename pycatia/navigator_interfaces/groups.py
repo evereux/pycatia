@@ -8,6 +8,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia.navigator_interfaces.group import Group
 from pycatia.system_interfaces.collection import Collection
 from pycatia.types import cat_variant
@@ -200,6 +202,10 @@ class Groups(Collection):
             raise StopIteration
 
         return Group(self.groups.item(n + 1))
+
+    def __iter__(self) -> Iterator[Group]:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'Groups(name="{self.name}")'

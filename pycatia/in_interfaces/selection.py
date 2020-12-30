@@ -8,6 +8,8 @@
         and thus help debugging in pycatia.
 
 """
+from typing import Iterator
+
 from pywintypes import com_error
 
 from pycatia.exception_handling import CATIAApplicationException
@@ -142,9 +144,10 @@ class Selection(AnyObject):
 
     """
 
-    def __init__(self, com_object):
+    def __init__(self, com_object, child_object=SelectedElement):
         super().__init__(com_object)
         self.selection = com_object
+        self.child_object = child_object
 
     @property
     def count(self) -> int:
@@ -959,6 +962,18 @@ class Selection(AnyObject):
         :rtype: SelectedElement
         """
         return SelectedElement(self.selection.Item2(i_index))
+
+    def items(self):
+        """
+        :return: [self.child_object()]
+        """
+        items_list = []
+
+        for i in range(self.com_object.Count):
+            item = self.child_object(self.com_object.Item(i + 1))
+            items_list.append(item)
+
+        return items_list
 
     def paste(self) -> None:
         """
@@ -2005,6 +2020,20 @@ class Selection(AnyObject):
                                              i_non_active_document_message,
                                              i_tooltip,
                                              o_document.com_object)
+
+    def __len__(self):
+
+        return self.count
+
+    def __getitem__(self, n: int) -> SelectedElement:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return SelectedElement(self.selection.item(n + 1))
+
+    def __iter__(self) -> Iterator[SelectedElement]:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'Selection(name="{self.name}")'

@@ -1,8 +1,23 @@
 # Changelog
 
+
+## 0.4.4
+Many thanks to Tian-Jionglu for his contributions.
+* Improved checks for malformed filenames.
+* Add method Application.setting_controllers.
+* Improvements to export_data.
+* Added Product.type.
+* Docstring fix for Measurable.get_minimum_distance.
+* Added __iter__ method to collections. 
+
+
 ## 0.4.3
 * Updated ViewPoint3D get methods so they now work.
 * Updated Viewer so Viewer2D and Viewer3D can be called.
+* Fix issue #58. 
+  * Change file_name argument so that it now expects Path().
+  * Log warning to console if full path isn't provided.
+  * Raise error if directory doesn't exist.
 
 ## 0.4.2
 * Added missing methods Parameter.rename(), Parameter.valuate_from_string(), 

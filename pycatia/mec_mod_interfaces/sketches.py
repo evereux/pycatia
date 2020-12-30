@@ -8,6 +8,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.boundary import Boundary
 from pycatia.sketcher_interfaces.sketch import Sketch
@@ -137,6 +139,10 @@ class Sketches(Collection):
             raise StopIteration
 
         return Sketch(self.sketches.item(n + 1))
+
+    def __iter__(self) -> Iterator[Sketch]:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'Sketches(name="{self.name}")'

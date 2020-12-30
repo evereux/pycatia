@@ -8,6 +8,8 @@
         and thus help debugging in pycatia.
 
 """
+from typing import Iterator
+
 from pycatia.navigator_interfaces.marker_3D import Marker3D
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
@@ -200,6 +202,10 @@ class Marker3Ds(Collection):
             raise StopIteration
 
         return Marker3D(self.marker_3ds.item(n + 1))
+
+    def __iter__(self) -> Iterator[Marker3D]:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'Marker3Ds(name="{self.name}")'

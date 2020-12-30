@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
 
 """
+from typing import Iterator
 
 from pycatia.mec_mod_interfaces.axis_system import AxisSystem
 from pycatia.system_interfaces.collection import Collection
@@ -107,6 +108,10 @@ class AxisSystems(Collection):
             raise StopIteration
 
         return AxisSystem(self.axis_systems.item(n + 1))
+
+    def __iter__(self) -> Iterator[AxisSystem]:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'AxisSystems(name="{self.name}")'

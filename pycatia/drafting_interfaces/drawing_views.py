@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia.types import cat_variant
 from pycatia.drafting_interfaces.drawing_view import DrawingView
@@ -208,6 +209,10 @@ class DrawingViews(Collection):
             raise StopIteration
 
         return DrawingView(self.drawing_views.item(n + 1))
+
+    def __iter__(self) -> Iterator[DrawingView]:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'DrawingViews(name="{self.name}")'

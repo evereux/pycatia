@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia.part_interfaces.draft_domain import DraftDomain
 from pycatia.system_interfaces.collection import Collection
@@ -77,6 +78,10 @@ class DraftDomains(Collection):
             raise StopIteration
 
         return DraftDomain(self.draft_domains.item(n + 1))
+
+    def __iter__(self) -> Iterator[DraftDomain]:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'DraftDomains(name="{self.name}")'

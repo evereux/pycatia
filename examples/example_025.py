@@ -8,6 +8,15 @@
 
 """
 
+##########################################################
+# insert syspath to project folder so examples can be run.
+# for development purposes.
+import os
+import sys
+
+sys.path.insert(0, os.path.abspath('..\\pycatia'))
+##########################################################
+
 from collections import Counter
 from datetime import datetime
 

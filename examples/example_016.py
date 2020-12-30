@@ -7,6 +7,16 @@
     Creates a square in a sketch and fully constrains it. Sketch then used to pad.
 
 """
+
+##########################################################
+# insert syspath to project folder so examples can be run.
+# for development purposes.
+import os
+import sys
+
+sys.path.insert(0, os.path.abspath('..\\pycatia'))
+##########################################################
+
 from pycatia import catia
 from pycatia.enumeration.enumeration_types import cat_constraint_type, cat_constraint_mode, cat_constraint_angle_sector
 

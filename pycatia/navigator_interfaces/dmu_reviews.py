@@ -8,6 +8,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia.navigator_interfaces.dmu_review import DMUReview
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.system_interfaces.any_object import AnyObject
@@ -207,6 +209,10 @@ class DMUReviews(Collection):
             raise StopIteration
 
         return DMUReview(self.dmu_reviews.item(n + 1))
+
+    def __iter__(self) -> Iterator[DMUReview]:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'DmuReviews(name="{self.name}")'
