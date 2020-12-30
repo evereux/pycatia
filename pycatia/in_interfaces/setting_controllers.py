@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia.system_interfaces.collection import Collection
 from pycatia.system_interfaces.setting_controller import SettingController
@@ -71,7 +72,7 @@ class SettingControllers(Collection):
 
         return SettingController(self.setting_controllers.item(n + 1))
 
-    def __iter__(self) -> SettingController:
+    def __iter__(self) -> Iterator[SettingController]:
         for i in range(self.count):
             yield self.child_object(self.com_object.item(i + 1))
 

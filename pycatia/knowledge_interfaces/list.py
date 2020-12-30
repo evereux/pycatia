@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
@@ -170,7 +171,7 @@ class List(Collection):
 
         return AnyObject(self.list.item(n + 1))
 
-    def __iter__(self) -> AnyObject:
+    def __iter__(self) -> Iterator[AnyObject]:
         for i in range(self.count):
             yield self.child_object(self.com_object.item(i + 1))
 

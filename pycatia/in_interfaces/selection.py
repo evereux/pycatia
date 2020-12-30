@@ -8,6 +8,8 @@
         and thus help debugging in pycatia.
 
 """
+from typing import Iterator
+
 from pywintypes import com_error
 
 from pycatia.exception_handling import CATIAApplicationException
@@ -2029,7 +2031,7 @@ class Selection(AnyObject):
 
         return SelectedElement(self.selection.item(n + 1))
 
-    def __iter__(self) -> SelectedElement:
+    def __iter__(self) -> Iterator[SelectedElement]:
         for i in range(self.count):
             yield self.child_object(self.com_object.item(i + 1))
 

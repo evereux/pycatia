@@ -1,5 +1,5 @@
 #! /usr/bin/python3.6
-
+from typing import Iterator
 import os
 import warnings
 
@@ -316,7 +316,7 @@ class Documents(Collection):
 
         return Document(self.documents.item(n + 1))
 
-    def __iter__(self) -> Document:
+    def __iter__(self) -> Iterator[Document]:
         for i in range(self.count):
             yield self.child_object(self.com_object.item(i + 1))
 
