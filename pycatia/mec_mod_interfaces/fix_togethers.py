@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia.mec_mod_interfaces.fix_together import FixTogether
 from pycatia.system_interfaces.collection import Collection
@@ -140,7 +141,7 @@ class FixTogethers(Collection):
 
         return FixTogether(self.fix_togethers.item(n + 1))
 
-    def __iter__(self) -> FixTogether:
+    def __iter__(self) -> Iterator[FixTogether]:
         for i in range(self.count):
             yield self.child_object(self.com_object.item(i + 1))
 

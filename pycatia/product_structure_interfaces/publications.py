@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from typing import Iterator
 from typing import TYPE_CHECKING
 
 from pycatia.product_structure_interfaces.publication import Publication
@@ -241,7 +241,7 @@ class Publications(Collection):
 
         return Publication(self.publications.item(n + 1))
 
-    def __iter__(self) -> Publication:
+    def __iter__(self) -> Iterator[Publication]:
         for i in range(self.count):
             yield self.child_object(self.com_object.item(i + 1))
 
