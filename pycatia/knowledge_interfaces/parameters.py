@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from typing import Iterator
 from typing import TYPE_CHECKING
 from typing import Optional
 
@@ -527,6 +527,10 @@ class Parameters(Collection):
             raise StopIteration
 
         return Parameter(self.parameters.item(n + 1))
+
+    def __iter__(self) -> Iterator[Parameter]:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'Parameters(name="{self.name}")'

@@ -8,6 +8,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia.space_analyses_interfaces.inertia import Inertia
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
@@ -156,6 +158,10 @@ class Inertias(Collection):
             raise StopIteration
 
         return Inertia(self.inertias.item(n + 1))
+
+    def __iter__(self) -> Iterator[Inertia]:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'Inertias(name="{self.name}")'

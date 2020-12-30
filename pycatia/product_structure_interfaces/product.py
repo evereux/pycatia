@@ -13,6 +13,9 @@ from pathlib import Path
 from typing import TYPE_CHECKING
 import warnings
 
+from pywintypes import com_error
+
+from pycatia.exception_handling.exceptions import CATIAApplicationException
 from pycatia.in_interfaces.move import Move
 from pycatia.in_interfaces.position import Position
 from pycatia.in_interfaces.reference import Reference
@@ -205,7 +208,7 @@ class Product(AnyObject):
         :return: str()
         """
 
-        return self.product.ReferenceProduct.Parent.Name
+        return self.reference_product.parent.name
 
     @property
     def full_name(self):
@@ -213,7 +216,7 @@ class Product(AnyObject):
         :return: str()
         """
 
-        return self.product.ReferenceProduct.Parent.FullName
+        return self.reference_product.parent.com_object.FullName
 
     @property
     def move(self):
@@ -427,8 +430,10 @@ class Product(AnyObject):
         :return: Product
         :rtype: Product
         """
-
-        return Product(self.product.ReferenceProduct)
+        try:
+            return Product(self.product.ReferenceProduct)
+        except com_error:
+            raise CATIAApplicationException('Could do get Reference Product. Check Product for broken links.')
 
     @property
     def relations(self) -> Relations:
@@ -528,6 +533,21 @@ class Product(AnyObject):
         """
 
         self.product.Source = value
+
+    @property
+    def type(self) -> str:
+        """
+        Returns the type of product (CATProduct, CATPart or Component).
+
+        :return: str
+        :rtype: str
+        """
+        root_product_name = self.com_object.ReferenceProduct.Parent.Product.Name
+        self_product_name = self.com_object.ReferenceProduct.Name
+        if root_product_name == self_product_name:
+            return self.com_object.ReferenceProduct.Parent.Name.split('.')[-1]
+        else:
+            return "Component"
 
     @property
     def user_ref_properties(self) -> Parameters:

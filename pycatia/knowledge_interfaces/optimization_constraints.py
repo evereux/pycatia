@@ -8,6 +8,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia.knowledge_interfaces.optimization_constraint import OptimizationConstraint
 from pycatia.system_interfaces.collection import Collection
 from pycatia.types import cat_variant
@@ -117,6 +119,10 @@ class OptimizationConstraints(Collection):
             raise StopIteration
 
         return OptimizationConstraint(self.optimization_constraints.item(n + 1))
+
+    def __iter__(self) -> Iterator[OptimizationConstraint]:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'OptimizationConstraints(name="{self.name}")'

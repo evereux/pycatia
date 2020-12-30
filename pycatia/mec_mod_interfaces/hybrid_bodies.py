@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pywintypes import com_error
 
@@ -112,6 +113,10 @@ class HybridBodies(Collection):
             raise StopIteration
 
         return HybridBody(self.hybrid_bodies.item(n + 1))
+
+    def __iter__(self) -> Iterator[HybridBody]:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'HybridBodies(name="{self.name}")'
