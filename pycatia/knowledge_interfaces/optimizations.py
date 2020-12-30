@@ -8,6 +8,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia.knowledge_interfaces.optimization import Optimization
 from pycatia.knowledge_interfaces.set_of_equation import SetOfEquation
 from pycatia.system_interfaces.any_object import AnyObject
@@ -130,6 +132,10 @@ class Optimizations(Collection):
             raise StopIteration
 
         return Optimization(self.optimizations.item(n + 1))
+
+    def __iter__(self) -> Iterator[Optimization]:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'Optimizations(name="{self.name}")'

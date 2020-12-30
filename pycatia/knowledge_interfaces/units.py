@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia.knowledge_interfaces.unit import Unit
 from pycatia.system_interfaces.collection import Collection
@@ -77,6 +78,10 @@ class Units(Collection):
             raise StopIteration
 
         return Unit(self.units.item(n + 1))
+
+    def __iter__(self) -> Iterator[Unit]:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'Units(name="{self.name}")'

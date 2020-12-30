@@ -454,7 +454,7 @@ class Document(AnyObject):
         """
         return Workbench(self.document.GetWorkbench(workbench_name))
 
-    def export_data(self, file_name: str, file_type: str, overwrite=False) -> None:
+    def export_data(self, file_name: Path, file_type: str, overwrite=False) -> None:
         """
         .. note::
             :class: toggle
@@ -474,23 +474,38 @@ class Document(AnyObject):
             |       Doc.ExportData("IGESDoc", "igs")
 
 
-        :param str file_name: file_name including full path.
+        :param Path file_name: file_name including full path.
         :param str file_type: file_type is the extension of required file_type.
                               The file_type must be supported by CATIA and the CATIA license.
-        :param bool overwrite:
+        :param bool overwrite: Files will not be overwritten unless is True.
         :return:
         """
+        current_dfa_setting = self.document.Application.DisplayFileAlerts
+        if not isinstance(file_name, Path):
+            file_name = Path(file_name)
 
-        real_file_name = Path(f"{file_name}.{file_type}")
-        if overwrite is False:
-            if real_file_name.is_file():
-                raise FileExistsError(f'File: {real_file_name} already exists. '
-                                      f'Set overwrite=True if you want to overwrite.')
-        else:
-            if real_file_name.is_file():
-                self.logger.warning('File already exists. Click YES in CATIA V5.')
+        if file_name.suffix.lower() != '.' + file_type.lower():
+            raise CATIAApplicationException(
+                f'Filename "{file_name}" must have the same suffix as filetype "{file_type}".')
+
+        # add filetype to filename if it hasn't been added correctly.
+        if not str(file_name).endswith(file_type):
+            file_name = Path(f"{file_name}.{file_type}")
+
+        if not file_name.parent.is_dir():
+            raise NotADirectoryError(f'Directory: {file_name.parent} is not a directory.')
+
+        if overwrite is False and file_name.is_file():
+            raise FileExistsError(f'File: {file_name} already exists. '
+                                  f'Set overwrite=True if you want to overwrite.')
+
+        # pycatia prefers full path names :-)
+        if not file_name.is_absolute():
+            self.logger.warning('To prevent unexpected behaviour, be explicit and use absolute filenames.')
 
         self.document.ExportData(file_name, file_type)
+
+        self.document.Application.DisplayFileAlerts = current_dfa_setting
 
     def indicate_2d(self, i_message: str, io_document_window_location: tuple) -> str:
         """
@@ -800,12 +815,16 @@ class Document(AnyObject):
                 |          Doc.SaveAs("NewName")
 
         :param file_name: full pathname to new file_name
-        :param bool overwrite:
+        :param bool overwrite: Files will not be overwritten unless is True.
         :return: None.
         :rtype: None
         """
-
+        current_dfa_setting = self.document.Application.DisplayFileAlerts
         path_file_name = Path(file_name)
+
+        # pycatia prefers full path names :-)
+        if not path_file_name.is_absolute():
+            self.logger.warning('To prevent unexpected behaviour, be explicit and use absolute filenames.')
 
         if overwrite is False:
             if path_file_name.is_file():
@@ -817,6 +836,8 @@ class Document(AnyObject):
             #     self.logger.warning('File already exists. Click YES in CATIA V5.')
 
         self.document.SaveAs(path_file_name)
+
+        self.document.Application.DisplayFileAlerts = current_dfa_setting
 
     def search_for_items(self, selection_objects):
         """

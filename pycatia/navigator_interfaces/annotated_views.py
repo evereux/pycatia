@@ -8,6 +8,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia.in_interfaces.viewpoint_3d import Viewpoint3D
 from pycatia.navigator_interfaces.annotated_view import AnnotatedView
 from pycatia.system_interfaces.collection import Collection
@@ -185,6 +187,10 @@ class AnnotatedViews(Collection):
             raise StopIteration
 
         return AnnotatedView(self.annotated_views.item(n + 1))
+
+    def __iter__(self) -> Iterator[AnnotatedView]:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'AnnotatedViews(name="{self.name}")'

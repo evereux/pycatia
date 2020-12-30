@@ -8,6 +8,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
+
 from pycatia.space_analyses_interfaces.clash_result import ClashResult
 from pycatia.system_interfaces.collection import Collection
 from pycatia.types import cat_variant
@@ -162,6 +164,10 @@ class ClashResults(Collection):
             raise StopIteration
 
         return ClashResult(self.clash_results.item(n + 1))
+
+    def __iter__(self) -> Iterator[ClashResult]:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
         return f'ClashResults(name="{self.name}")'
