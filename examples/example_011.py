@@ -50,8 +50,8 @@ transformation = (
 )
 
 # activates default shape on all children.
-Product.activate_terminal_node(product.get_products())
+Product.activate_terminal_node(product.products)
 
 # move the first child in parent.
-product = product.get_products()[0]
+product = product.products[0]
 move = product.move.apply(transformation)
