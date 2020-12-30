@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia.in_interfaces.reference import Reference
 from pycatia.system_interfaces.collection import Collection
@@ -81,7 +82,7 @@ class References(Collection):
 
         return Reference(self.references.item(n + 1))
 
-    def __iter__(self) -> Reference:
+    def __iter__(self) -> Iterator[Reference]:
         for i in range(self.count):
             yield self.child_object(self.com_object.item(i + 1))
 

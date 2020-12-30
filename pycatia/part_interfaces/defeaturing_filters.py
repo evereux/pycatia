@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia.part_interfaces.defeaturing_filter import DefeaturingFilter
 from pycatia.system_interfaces.collection import Collection
@@ -141,7 +142,7 @@ class DefeaturingFilters(Collection):
 
         return DefeaturingFilter(self.defeaturing_filters.item(n + 1))
 
-    def __iter__(self) -> DefeaturingFilter:
+    def __iter__(self) -> Iterator[DefeaturingFilter]:
         for i in range(self.count):
             yield self.child_object(self.com_object.item(i + 1))
 

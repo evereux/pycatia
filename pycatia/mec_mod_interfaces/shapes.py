@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia.mec_mod_interfaces.boundary import Boundary
 from pycatia.mec_mod_interfaces.shape import Shape
@@ -105,7 +106,7 @@ class Shapes(Collection):
 
         return Shape(self.shapes.item(n + 1))
 
-    def __iter__(self) -> Shape:
+    def __iter__(self) -> Iterator[Shape]:
         for i in range(self.count):
             yield self.child_object(self.com_object.item(i + 1))
 

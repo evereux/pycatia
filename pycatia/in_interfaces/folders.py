@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia.in_interfaces.folder import Folder
 from pycatia.system_interfaces.collection import Collection
@@ -82,7 +83,7 @@ class Folders(Collection):
 
         return Folder(self.folders.item(n + 1))
 
-    def __iter__(self) -> Folder:
+    def __iter__(self) -> Iterator[Folder]:
         for i in range(self.count):
             yield self.child_object(self.com_object.item(i + 1))
 

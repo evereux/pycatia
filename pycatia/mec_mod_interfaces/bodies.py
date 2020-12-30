@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia.mec_mod_interfaces.body import Body
 from pycatia.system_interfaces.collection import Collection
@@ -106,7 +107,7 @@ class Bodies(Collection):
 
         return Body(self.bodies.item(n + 1))
 
-    def __iter__(self) -> Body:
+    def __iter__(self) -> Iterator[Body]:
         for i in range(self.count):
             yield self.child_object(self.com_object.item(i + 1))
 

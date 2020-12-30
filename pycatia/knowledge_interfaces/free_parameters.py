@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from typing import TYPE_CHECKING
 
@@ -116,7 +117,7 @@ class FreeParameters(Collection):
 
         return FreeParameter(self.free_parameters.item(n + 1))
 
-    def __iter__(self) -> FreeParameter:
+    def __iter__(self) -> Iterator[FreeParameter]:
         for i in range(self.count):
             yield self.child_object(self.com_object.item(i + 1))
 

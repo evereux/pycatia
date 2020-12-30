@@ -8,6 +8,8 @@
         and thus help debugging in pycatia.
 
 """
+from typing import Iterator
+
 from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.constraint import Constraint
 from pycatia.system_interfaces.collection import Collection
@@ -295,7 +297,7 @@ class Constraints(Collection):
 
         return Constraint(self.constraints.item(n + 1))
 
-    def __iter__(self) -> Constraint:
+    def __iter__(self) -> Iterator[Constraint]:
         for i in range(self.count):
             yield self.child_object(self.com_object.item(i + 1))
 

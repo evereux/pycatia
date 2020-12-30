@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from typing import Iterator
 
 from pycatia.drafting_interfaces.drawing_table import DrawingTable
 from pycatia.system_interfaces.collection import Collection
@@ -177,7 +178,7 @@ class DrawingTables(Collection):
 
         return DrawingTable(self.drawing_tables.item(n + 1))
 
-    def __iter__(self) -> DrawingTable:
+    def __iter__(self) -> Iterator[DrawingTable]:
         for i in range(self.count):
             yield self.child_object(self.com_object.item(i + 1))
 
