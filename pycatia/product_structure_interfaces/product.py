@@ -433,7 +433,7 @@ class Product(AnyObject):
         try:
             return Product(self.product.ReferenceProduct)
         except com_error:
-            raise CATIAApplicationException('Could do get Reference Product. Check Product for broken links.')
+            raise CATIAApplicationException(f'Prodcut "{self.name}" could not do get Reference Product. Check Product for broken links.')
 
     @property
     def relations(self) -> Relations:
