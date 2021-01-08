@@ -542,10 +542,11 @@ class Product(AnyObject):
         :return: str
         :rtype: str
         """
-        root_product_name = self.com_object.ReferenceProduct.Parent.Product.Name
-        self_product_name = self.com_object.ReferenceProduct.Name
+        
+        root_product_name = self.reference_product.com_object.Parent.Product.Name
+        self_product_name = self.reference_product.name
         if root_product_name == self_product_name:
-            return self.com_object.ReferenceProduct.Parent.Name.split('.')[-1]
+            return self.reference_product.com_object.Parent.Name.split('.')[-1]
         else:
             return "Component"
 
