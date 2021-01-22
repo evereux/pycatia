@@ -85,7 +85,7 @@ class Annotations(Collection):
         :return: Annotation
         :rtype: Annotation
         """
-        return Annotation(self.annotations.Item(i_index.com_object))
+        return Annotation(self.annotations.Item(i_index))
 
     def item2(self, i_index: cat_variant) -> AnyObject:
         """
