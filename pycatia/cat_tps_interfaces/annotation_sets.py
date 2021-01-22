@@ -57,7 +57,7 @@ class AnnotationSets(Collection):
         """
         return AnnotationSet(self.annotation_sets.AddInAProduct(i_product.com_object, i_standard))
 
-    def item(self, i_index: cat_variant) -> AnyObject:
+    def item(self, i_index: cat_variant) -> AnnotationSet:
         """
         .. note::
             :class: toggle
@@ -71,7 +71,7 @@ class AnnotationSets(Collection):
         :return: AnyObject
         :rtype: AnyObject
         """
-        return AnyObject(self.annotation_sets.Item(i_index.com_object))
+        return AnnotationSet(self.annotation_sets.Item(i_index))
 
     def load_annotation_sets_list(self) -> None:
         """
