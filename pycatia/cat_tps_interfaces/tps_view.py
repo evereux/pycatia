@@ -37,4 +37,4 @@ class TPSView(AnyObject):
         self.tps_view = com_object
 
     def __repr__(self):
-        return f'TpsView(name="{ self.name }")'
+        return f'TPSView(name="{ self.name }")'
