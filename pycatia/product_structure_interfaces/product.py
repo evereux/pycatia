@@ -332,8 +332,10 @@ class Product(AnyObject):
         :return: str
         :rtype: str
         """
-
-        return self.product.PartNumber
+        try:
+            return self.product.PartNumber
+        except com_error:
+            raise CATIAApplicationException(f'Prodcut "{self.name}" could not do get Product.PartNumber. Check Product for broken links.')
 
     @part_number.setter
     def part_number(self, value: str):
@@ -341,7 +343,10 @@ class Product(AnyObject):
         :param str value:
         """
 
-        self.product.PartNumber = value
+        try:
+            self.product.PartNumber = value
+        except com_error:
+            raise CATIAApplicationException(f'Prodcut "{self.name}" could not do set Product.PartNumber. Check Product for broken links.')
 
     @property
     def position(self) -> Position:
@@ -433,7 +438,7 @@ class Product(AnyObject):
         try:
             return Product(self.product.ReferenceProduct)
         except com_error:
-            raise CATIAApplicationException('Could do get Reference Product. Check Product for broken links.')
+            raise CATIAApplicationException(f'Prodcut "{self.name}" could not do get Reference Product. Check Product for broken links.')
 
     @property
     def relations(self) -> Relations:
@@ -524,7 +529,10 @@ class Product(AnyObject):
         :rtype: int
         """
 
-        return self.product.Source
+        try:
+            return self.product.Source
+        except com_error:
+            raise CATIAApplicationException(f'Prodcut "{self.name}" could not do get Product.Source. Check Product for broken links.')
 
     @source.setter
     def source(self, value: int):
@@ -532,7 +540,10 @@ class Product(AnyObject):
         :param int value:
         """
 
-        self.product.Source = value
+        try:
+            self.product.Source = value
+        except com_error:
+            raise CATIAApplicationException(f'Prodcut "{self.name}" could not do set Product.Source. Check Product for broken links.')
 
     @property
     def type(self) -> str:
@@ -542,10 +553,11 @@ class Product(AnyObject):
         :return: str
         :rtype: str
         """
-        root_product_name = self.com_object.ReferenceProduct.Parent.Product.Name
-        self_product_name = self.com_object.ReferenceProduct.Name
+        
+        root_product_name = self.reference_product.com_object.Parent.Product.Name
+        self_product_name = self.reference_product.name
         if root_product_name == self_product_name:
-            return self.com_object.ReferenceProduct.Parent.Name.split('.')[-1]
+            return self.reference_product.com_object.Parent.Name.split('.')[-1]
         else:
             return "Component"
 
