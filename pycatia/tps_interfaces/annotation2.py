@@ -165,8 +165,8 @@ class Annotation2(AnyObject):
         :return: DatumSimple
         :rtype: DatumSimple
         """
-        import pycatia.cat_tps_interfaces.datum_simple
-        return pycatia.cat_tps_interfaces.datum_simple.DatumSimple(self.annotation2.DatumSimple())
+        import pycatia.tps_interfaces.datum_simple
+        return pycatia.tps_interfaces.datum_simple.DatumSimple(self.annotation2.DatumSimple())
 
     def datum_target(self) -> 'DatumTarget':
         """
@@ -181,8 +181,8 @@ class Annotation2(AnyObject):
         :return: DatumTarget
         :rtype: DatumTarget
         """
-        import pycatia.cat_tps_interfaces.datum_target
-        return pycatia.cat_tps_interfaces.datum_target.DatumTarget(self.annotation2.DatumTarget())
+        import pycatia.tps_interfaces.datum_target
+        return pycatia.tps_interfaces.datum_target.DatumTarget(self.annotation2.DatumTarget())
 
     def default_annotation(self) -> 'DefaultAnnotation':
         """
@@ -197,8 +197,8 @@ class Annotation2(AnyObject):
         :return: DefaultAnnotation
         :rtype: DefaultAnnotation
         """
-        import pycatia.cat_tps_interfaces.default_annotation
-        return pycatia.cat_tps_interfaces.default_annotation.DefaultAnnotation(self.annotation2.DefaultAnnotation())
+        import pycatia.tps_interfaces.default_annotation
+        return pycatia.tps_interfaces.default_annotation.DefaultAnnotation(self.annotation2.DefaultAnnotation())
 
     def dimension_3d(self) -> 'Dimension3D':
         """
@@ -218,8 +218,8 @@ class Annotation2(AnyObject):
         :return: Dimension3D
         :rtype: Dimension3D
         """
-        import pycatia.cat_tps_interfaces.dimension_3d
-        return pycatia.cat_tps_interfaces.dimension_3d.Dimension3D(self.annotation2.Dimension3D())
+        import pycatia.tps_interfaces.dimension_3d
+        return pycatia.tps_interfaces.dimension_3d.Dimension3D(self.annotation2.Dimension3D())
 
     def flag_note(self) -> 'FlagNote':
         """
@@ -239,8 +239,8 @@ class Annotation2(AnyObject):
         :return: FlagNote
         :rtype: FlagNote
         """
-        import pycatia.cat_tps_interfaces.flag_note
-        return pycatia.cat_tps_interfaces.flag_note.FlagNote(self.annotation2.FlagNote())
+        import pycatia.tps_interfaces.flag_note
+        return pycatia.tps_interfaces.flag_note.FlagNote(self.annotation2.FlagNote())
 
     def get_surfaces(self, o_safe_array: tuple) -> None:
         """
@@ -347,8 +347,8 @@ class Annotation2(AnyObject):
         :return: Noa
         :rtype: Noa
         """
-        import pycatia.cat_tps_interfaces.noa
-        return pycatia.cat_tps_interfaces.noa.Noa(self.annotation2.Noa())
+        import pycatia.tps_interfaces.noa
+        return pycatia.tps_interfaces.noa.Noa(self.annotation2.Noa())
 
     def non_semantic_datum(self) -> 'NonSemanticDatum':
         """
@@ -363,8 +363,8 @@ class Annotation2(AnyObject):
         :return: NonSemanticDatum
         :rtype: NonSemanticDatum
         """
-        import pycatia.cat_tps_interfaces.non_semantic_datum
-        return pycatia.cat_tps_interfaces.non_semantic_datum.NonSemanticDatum(self.annotation2.NonSemanticDatum())
+        import pycatia.tps_interfaces.non_semantic_datum
+        return pycatia.tps_interfaces.non_semantic_datum.NonSemanticDatum(self.annotation2.NonSemanticDatum())
 
     def non_semantic_datum_target(self) -> 'NonSemanticDatumTarget':
         """
@@ -379,8 +379,8 @@ class Annotation2(AnyObject):
         :return: NonSemanticDatumTarget
         :rtype: NonSemanticDatumTarget
         """
-        import pycatia.cat_tps_interfaces.non_semantic_datum_target
-        return pycatia.cat_tps_interfaces.non_semantic_datum_target.NonSemanticDatumTarget(self.annotation2.NonSemanticDatumTarget())
+        import pycatia.tps_interfaces.non_semantic_datum_target
+        return pycatia.tps_interfaces.non_semantic_datum_target.NonSemanticDatumTarget(self.annotation2.NonSemanticDatumTarget())
 
     def non_semantic_dimension(self) -> 'NonSemanticDimension':
         """
@@ -395,8 +395,8 @@ class Annotation2(AnyObject):
         :return: NonSemanticDimension
         :rtype: NonSemanticDimension
         """
-        import pycatia.cat_tps_interfaces.non_semantic_dimension
-        return pycatia.cat_tps_interfaces.non_semantic_dimension.NonSemanticDimension(self.annotation2.NonSemanticDimension())
+        import pycatia.tps_interfaces.non_semantic_dimension
+        return pycatia.tps_interfaces.non_semantic_dimension.NonSemanticDimension(self.annotation2.NonSemanticDimension())
 
     def non_semantic_gdt(self) -> 'NonSemanticGDT':
         """
@@ -411,8 +411,8 @@ class Annotation2(AnyObject):
         :return: NonSemanticGDT
         :rtype: NonSemanticGDT
         """
-        import pycatia.cat_tps_interfaces.non_semantic_gdt
-        return pycatia.cat_tps_interfaces.non_semantic_gdt.NonSemanticGDT(self.annotation2.NonSemanticGDT())
+        import pycatia.tps_interfaces.non_semantic_gdt
+        return pycatia.tps_interfaces.non_semantic_gdt.NonSemanticGDT(self.annotation2.NonSemanticGDT())
 
     def reference_frame(self) -> 'ReferenceFrame':
         """
@@ -427,8 +427,8 @@ class Annotation2(AnyObject):
         :return: ReferenceFrame
         :rtype: ReferenceFrame
         """
-        import pycatia.cat_tps_interfaces.reference_frame
-        return pycatia.cat_tps_interfaces.reference_frame.ReferenceFrame(self.annotation2.ReferenceFrame())
+        import pycatia.tps_interfaces.reference_frame
+        return pycatia.tps_interfaces.reference_frame.ReferenceFrame(self.annotation2.ReferenceFrame())
 
     def roughness(self) -> 'Roughness':
         """
@@ -443,8 +443,8 @@ class Annotation2(AnyObject):
         :return: Roughness
         :rtype: Roughness
         """
-        import pycatia.cat_tps_interfaces.roughness
-        return pycatia.cat_tps_interfaces.roughness.Roughness(self.annotation2.Roughness())
+        import pycatia.tps_interfaces.roughness
+        return pycatia.tps_interfaces.roughness.Roughness(self.annotation2.Roughness())
 
     def semantic_gdt(self) -> 'SemanticGDT':
         """
@@ -459,8 +459,8 @@ class Annotation2(AnyObject):
         :return: SemanticGDT
         :rtype: SemanticGDT
         """
-        import pycatia.cat_tps_interfaces.semantic_gdt
-        return pycatia.cat_tps_interfaces.semantic_gdt.SemanticGDT(self.annotation2.SemanticGDT())
+        import pycatia.tps_interfaces.semantic_gdt
+        return pycatia.tps_interfaces.semantic_gdt.SemanticGDT(self.annotation2.SemanticGDT())
 
     def set_xy(self, i_x: float, i_y: float) -> None:
         """
@@ -506,8 +506,8 @@ class Annotation2(AnyObject):
         :return: Text
         :rtype: Text
         """
-        import pycatia.cat_tps_interfaces.text
-        return pycatia.cat_tps_interfaces.text.Text(self.annotation2.Text())
+        import pycatia.tps_interfaces.text
+        return pycatia.tps_interfaces.text.Text(self.annotation2.Text())
 
     def transfert_to_view(self, i_view: 'TPSView') -> None:
         """
@@ -565,8 +565,8 @@ class Annotation2(AnyObject):
         :return: Dimension3D
         :rtype: Dimension3D
         """
-        import pycatia.cat_tps_interfaces.dimension_3d
-        return pycatia.cat_tps_interfaces.dimension_3d.Dimension3D(self.annotation2.VisualizationDimension())
+        import pycatia.tps_interfaces.dimension_3d
+        return pycatia.tps_interfaces.dimension_3d.Dimension3D(self.annotation2.VisualizationDimension())
 
     def weld(self) -> 'Weld':
         """
@@ -581,8 +581,8 @@ class Annotation2(AnyObject):
         :return: Weld
         :rtype: Weld
         """
-        import pycatia.cat_tps_interfaces.weld
-        return pycatia.cat_tps_interfaces.weld.Weld(self.annotation2.Weld())
+        import pycatia.tps_interfaces.weld
+        return pycatia.tps_interfaces.weld.Weld(self.annotation2.Weld())
 
     def __repr__(self):
         return f'Annotation2(name="{ self.name }")'

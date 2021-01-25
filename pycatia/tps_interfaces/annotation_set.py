@@ -10,8 +10,8 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.cat_tps_interfaces.tps_view import TPSView
-from pycatia.cat_tps_interfaces.annotations import Annotations
+from pycatia.tps_interfaces.tps_view import TPSView
+from pycatia.tps_interfaces.annotations import Annotations
 
 
 class AnnotationSet(AnyObject):
@@ -110,8 +110,8 @@ class AnnotationSet(AnyObject):
         :return: AnnotationFactory
         :rtype: AnnotationFactory
         """
-        import pycatia.cat_tps_interfaces.annotation_factory
-        return pycatia.cat_tps_interfaces.annotation_factory.AnnotationFactory(self.annotation_set.AnnotationFactory)
+        import pycatia.tps_interfaces.annotation_factory
+        return pycatia.tps_interfaces.annotation_factory.AnnotationFactory(self.annotation_set.AnnotationFactory)
 
     @property
     def annotation_factory2(self) -> 'AnnotationFactory2':
@@ -133,8 +133,8 @@ class AnnotationSet(AnyObject):
         :return: AnnotationFactory2
         :rtype: AnnotationFactory2
         """
-        import pycatia.cat_tps_interfaces.annotation_factory2
-        return pycatia.cat_tps_interfaces.annotation_factory2.AnnotationFactory2(self.annotation_set.AnnotationFactory2)
+        import pycatia.tps_interfaces.annotation_factory2
+        return pycatia.tps_interfaces.annotation_factory2.AnnotationFactory2(self.annotation_set.AnnotationFactory2)
 
     @property
     def annotation_set_type(self) -> int:
@@ -200,8 +200,8 @@ class AnnotationSet(AnyObject):
         :return: CaptureFactory
         :rtype: CaptureFactory
         """
-        import pycatia.cat_tps_interfaces.capture_factory
-        return pycatia.cat_tps_interfaces.capture_factory.CaptureFactory(self.annotation_set.CaptureFactory)
+        import pycatia.tps_interfaces.capture_factory
+        return pycatia.tps_interfaces.capture_factory.CaptureFactory(self.annotation_set.CaptureFactory)
 
     @property
     def captures(self) -> 'Captures':
@@ -222,8 +222,8 @@ class AnnotationSet(AnyObject):
         :return: Captures
         :rtype: Captures
         """
-        import pycatia.cat_tps_interfaces.catpure
-        return pycatia.cat_tps_interfaces.catpure.Captures(self.annotation_set.Captures)
+        import pycatia.tps_interfaces.catpure
+        return pycatia.tps_interfaces.catpure.Captures(self.annotation_set.Captures)
 
     @property
     def kind_of_set(self) -> str:
@@ -321,8 +321,8 @@ class AnnotationSet(AnyObject):
         :return: TPSViewFactory
         :rtype: TPSViewFactory
         """
-        import pycatia.cat_tps_interfaces.tps_view_factory
-        return pycatia.cat_tps_interfaces.tps_view_factory.TPSViewFactory(self.annotation_set.TPSViewFactory)
+        import pycatia.tps_interfaces.tps_view_factory
+        return pycatia.tps_interfaces.tps_view_factory.TPSViewFactory(self.annotation_set.TPSViewFactory)
 
     @property
     def tps_views(self) -> 'TPSViews':
@@ -343,8 +343,8 @@ class AnnotationSet(AnyObject):
         :return: TPSViews
         :rtype: TPSViews
         """
-        import pycatia.cat_tps_interfaces.tps_views
-        return pycatia.cat_tps_interfaces.tps_views.TPSViews(self.annotation_set.TPSViews)
+        import pycatia.tps_interfaces.tps_views
+        return pycatia.tps_interfaces.tps_views.TPSViews(self.annotation_set.TPSViews)
 
     def apply_view_re_use_when_copy_set_to(self) -> None:
         """

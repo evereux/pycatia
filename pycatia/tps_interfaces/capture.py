@@ -11,11 +11,11 @@
 
 from pycatia.in_interfaces.camera_3d import Camera3D
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.cat_tps_interfaces.tps_view import TPSView
-from pycatia.cat_tps_interfaces.annotations import Annotations
-from pycatia.cat_tps_interfaces.annotation_set import AnnotationSet
-from pycatia.cat_tps_interfaces.tps_views import TPSViews
-from pycatia.cat_tps_interfaces.tps_parallel_on_screen import TPSParallelOnScreen
+from pycatia.tps_interfaces.tps_view import TPSView
+from pycatia.tps_interfaces.annotations import Annotations
+from pycatia.tps_interfaces.annotation_set import AnnotationSet
+from pycatia.tps_interfaces.tps_views import TPSViews
+from pycatia.tps_interfaces.tps_parallel_on_screen import TPSParallelOnScreen
 
 
 class Capture(AnyObject):
