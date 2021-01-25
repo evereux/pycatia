@@ -11,7 +11,7 @@
 
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
-from pycatia.cat_tps_interfaces.annotation_set import AnnotationSet
+from pycatia.tps_interfaces.annotation_set import AnnotationSet
 from pycatia.types import cat_variant
 
 
