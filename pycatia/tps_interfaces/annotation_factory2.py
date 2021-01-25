@@ -10,7 +10,7 @@
 """
 
 from pycatia.mec_mod_interfaces.factory import Factory
-from pycatia.cat_tps_interfaces.annotation2 import Annotation2
+from pycatia.tps_interfaces.annotation2 import Annotation2
 from pycatia.types import cat_variant
 
 

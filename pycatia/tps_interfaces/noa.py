@@ -320,8 +320,8 @@ class Noa(AnyObject):
         :return: TPSParallelOnScreen
         :rtype: TPSParallelOnScreen
         """
-        import pycatia.cat_tps_interfaces.tps_parallel_on_screen
-        return pycatia.cat_tps_interfaces.tps_parallel_on_screen.TPSParallelOnScreen(self.noa.TPSParallelOnScreen())
+        import pycatia.tps_interfaces.tps_parallel_on_screen
+        return pycatia.tps_interfaces.tps_parallel_on_screen.TPSParallelOnScreen(self.noa.TPSParallelOnScreen())
 
     def url(self, i_index: cat_variant) -> str:
         """
