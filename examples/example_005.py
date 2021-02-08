@@ -11,6 +11,8 @@
     Formatting of csv data should be:
         <point_name>,<x coordinate>,<y coordinate>,<z coordinate>
 
+    There should be no column name headers, just raw point data.
+
 """
 
 ##########################################################
