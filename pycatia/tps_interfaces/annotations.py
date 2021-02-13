@@ -11,6 +11,8 @@
 
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
+from pycatia.tps_interfaces.annotation import Annotation
+from pycatia.types import cat_variant
 
 
 class Annotations(Collection):
@@ -35,6 +37,7 @@ class Annotations(Collection):
     def __init__(self, com_object):
         super().__init__(com_object)
         self.annotations = com_object
+        self.child_object = Annotation
 
     def add(self, i_annot: Annotation) -> None:
         """
@@ -67,24 +70,24 @@ class Annotations(Collection):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def item(self, i_index: CATVariant) -> AnyObject:
+    def item(self, i_index: cat_variant) -> Annotation:
         """
         .. note::
             :class: toggle
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
-                | o Func Item(CATVariant iIndex) As AnyObject
+                | o Func Item(CATVariant iIndex) As Annotation
                 | 
                 |     Retrieves an Annotation managing by CATIAAnnotation. Deprecated method:
                 |     Item method is replaced by Item2 has.
 
         :param CATVariant i_index:
-        :return: AnyObject
-        :rtype: AnyObject
+        :return: Annotation
+        :rtype: Annotation
         """
-        return AnyObject(self.annotations.Item(i_index.com_object))
+        return Annotation(self.annotations.Item(i_index))
 
-    def item2(self, i_index: CATVariant) -> AnyObject:
+    def item2(self, i_index: cat_variant) -> AnyObject:
         """
         .. note::
             :class: toggle

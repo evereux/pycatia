@@ -12,7 +12,7 @@
 from pycatia.system_interfaces.any_object import AnyObject
 
 
-class TpsView(AnyObject):
+class TPSView(AnyObject):
 
     """
         .. note::
@@ -37,4 +37,4 @@ class TpsView(AnyObject):
         self.tps_view = com_object
 
     def __repr__(self):
-        return f'TpsView(name="{ self.name }")'
+        return f'TPSView(name="{ self.name }")'

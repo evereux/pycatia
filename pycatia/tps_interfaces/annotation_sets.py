@@ -11,6 +11,8 @@
 
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
+from pycatia.tps_interfaces.annotation_set import AnnotationSet
+from pycatia.types import cat_variant
 
 
 class AnnotationSets(Collection):
@@ -35,8 +37,9 @@ class AnnotationSets(Collection):
     def __init__(self, com_object):
         super().__init__(com_object)
         self.annotation_sets = com_object
+        self.child_object = AnnotationSet
 
-    def add_in_a_product(self, i_product: Product, i_standard: str) -> AnnotationSet:
+    def add_in_a_product(self, i_product: 'Product', i_standard: str) -> AnnotationSet:
         """
         .. note::
             :class: toggle
@@ -54,7 +57,7 @@ class AnnotationSets(Collection):
         """
         return AnnotationSet(self.annotation_sets.AddInAProduct(i_product.com_object, i_standard))
 
-    def item(self, i_index: CATVariant) -> AnyObject:
+    def item(self, i_index: cat_variant) -> AnnotationSet:
         """
         .. note::
             :class: toggle
@@ -68,7 +71,7 @@ class AnnotationSets(Collection):
         :return: AnyObject
         :rtype: AnyObject
         """
-        return AnyObject(self.annotation_sets.Item(i_index.com_object))
+        return AnnotationSet(self.annotation_sets.Item(i_index))
 
     def load_annotation_sets_list(self) -> None:
         """

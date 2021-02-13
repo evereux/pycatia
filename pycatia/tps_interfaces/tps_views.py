@@ -11,9 +11,11 @@
 
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
+from pycatia.types import cat_variant
+from pycatia.tps_interfaces.tps_view import TPSView
 
 
-class TpsViews(Collection):
+class TPSViews(Collection):
 
     """
         .. note::
@@ -35,8 +37,9 @@ class TpsViews(Collection):
     def __init__(self, com_object):
         super().__init__(com_object)
         self.tps_views = com_object
+        child_object = TPSView
 
-    def item(self, i_index: CATVariant) -> AnyObject:
+    def item(self, i_index: cat_variant) -> TPSView:
         """
         .. note::
             :class: toggle
@@ -50,7 +53,7 @@ class TpsViews(Collection):
         :return: AnyObject
         :rtype: AnyObject
         """
-        return AnyObject(self.tps_views.Item(i_index.com_object))
+        return TPSView(self.tps_views.Item(i_index))
 
     def __repr__(self):
         return f'TpsViews(name="{ self.name }")'
