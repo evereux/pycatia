@@ -10,6 +10,7 @@
 """
 
 from pycatia.mec_mod_interfaces.factory import Factory
+from pycatia.tps_interfaces.capture import Capture
 
 
 class CaptureFactory(Factory):

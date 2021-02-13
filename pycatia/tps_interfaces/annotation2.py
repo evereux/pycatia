@@ -152,7 +152,7 @@ class Annotation2(AnyObject):
         """
         return self.annotation2.AddLeader()
 
-    def datum_simple(self) -> DatumSimple:
+    def datum_simple(self) -> 'DatumSimple':
         """
         .. note::
             :class: toggle
@@ -165,9 +165,10 @@ class Annotation2(AnyObject):
         :return: DatumSimple
         :rtype: DatumSimple
         """
-        return DatumSimple(self.annotation2.DatumSimple())
+        import pycatia.tps_interfaces.datum_simple
+        return pycatia.tps_interfaces.datum_simple.DatumSimple(self.annotation2.DatumSimple())
 
-    def datum_target(self) -> DatumTarget:
+    def datum_target(self) -> 'DatumTarget':
         """
         .. note::
             :class: toggle
@@ -180,9 +181,10 @@ class Annotation2(AnyObject):
         :return: DatumTarget
         :rtype: DatumTarget
         """
-        return DatumTarget(self.annotation2.DatumTarget())
+        import pycatia.tps_interfaces.datum_target
+        return pycatia.tps_interfaces.datum_target.DatumTarget(self.annotation2.DatumTarget())
 
-    def default_annotation(self) -> DefaultAnnotation:
+    def default_annotation(self) -> 'DefaultAnnotation':
         """
         .. note::
             :class: toggle
@@ -195,9 +197,10 @@ class Annotation2(AnyObject):
         :return: DefaultAnnotation
         :rtype: DefaultAnnotation
         """
-        return DefaultAnnotation(self.annotation2.DefaultAnnotation())
+        import pycatia.tps_interfaces.default_annotation
+        return pycatia.tps_interfaces.default_annotation.DefaultAnnotation(self.annotation2.DefaultAnnotation())
 
-    def dimension3_d(self) -> Dimension3D:
+    def dimension_3d(self) -> 'Dimension3D':
         """
         .. note::
             :class: toggle
@@ -215,9 +218,10 @@ class Annotation2(AnyObject):
         :return: Dimension3D
         :rtype: Dimension3D
         """
-        return Dimension3D(self.annotation2.Dimension3D())
+        import pycatia.tps_interfaces.dimension_3d
+        return pycatia.tps_interfaces.dimension_3d.Dimension3D(self.annotation2.Dimension3D())
 
-    def flag_note(self) -> FlagNote:
+    def flag_note(self) -> 'FlagNote':
         """
         .. note::
             :class: toggle
@@ -235,7 +239,8 @@ class Annotation2(AnyObject):
         :return: FlagNote
         :rtype: FlagNote
         """
-        return FlagNote(self.annotation2.FlagNote())
+        import pycatia.tps_interfaces.flag_note
+        return pycatia.tps_interfaces.flag_note.FlagNote(self.annotation2.FlagNote())
 
     def get_surfaces(self, o_safe_array: tuple) -> None:
         """
@@ -329,7 +334,7 @@ class Annotation2(AnyObject):
         """
         return self.annotation2.ModifyVisu()
 
-    def noa(self) -> Noa:
+    def noa(self) -> 'Noa':
         """
         .. note::
             :class: toggle
@@ -342,9 +347,10 @@ class Annotation2(AnyObject):
         :return: Noa
         :rtype: Noa
         """
-        return Noa(self.annotation2.Noa())
+        import pycatia.tps_interfaces.noa
+        return pycatia.tps_interfaces.noa.Noa(self.annotation2.Noa())
 
-    def non_semantic_datum(self) -> NonSemanticDatum:
+    def non_semantic_datum(self) -> 'NonSemanticDatum':
         """
         .. note::
             :class: toggle
@@ -357,9 +363,10 @@ class Annotation2(AnyObject):
         :return: NonSemanticDatum
         :rtype: NonSemanticDatum
         """
-        return NonSemanticDatum(self.annotation2.NonSemanticDatum())
+        import pycatia.tps_interfaces.non_semantic_datum
+        return pycatia.tps_interfaces.non_semantic_datum.NonSemanticDatum(self.annotation2.NonSemanticDatum())
 
-    def non_semantic_datum_target(self) -> NonSemanticDatumTarget:
+    def non_semantic_datum_target(self) -> 'NonSemanticDatumTarget':
         """
         .. note::
             :class: toggle
@@ -372,9 +379,10 @@ class Annotation2(AnyObject):
         :return: NonSemanticDatumTarget
         :rtype: NonSemanticDatumTarget
         """
-        return NonSemanticDatumTarget(self.annotation2.NonSemanticDatumTarget())
+        import pycatia.tps_interfaces.non_semantic_datum_target
+        return pycatia.tps_interfaces.non_semantic_datum_target.NonSemanticDatumTarget(self.annotation2.NonSemanticDatumTarget())
 
-    def non_semantic_dimension(self) -> NonSemanticDimension:
+    def non_semantic_dimension(self) -> 'NonSemanticDimension':
         """
         .. note::
             :class: toggle
@@ -387,9 +395,10 @@ class Annotation2(AnyObject):
         :return: NonSemanticDimension
         :rtype: NonSemanticDimension
         """
-        return NonSemanticDimension(self.annotation2.NonSemanticDimension())
+        import pycatia.tps_interfaces.non_semantic_dimension
+        return pycatia.tps_interfaces.non_semantic_dimension.NonSemanticDimension(self.annotation2.NonSemanticDimension())
 
-    def non_semantic_gdt(self) -> NonSemanticGDT:
+    def non_semantic_gdt(self) -> 'NonSemanticGDT':
         """
         .. note::
             :class: toggle
@@ -402,9 +411,10 @@ class Annotation2(AnyObject):
         :return: NonSemanticGDT
         :rtype: NonSemanticGDT
         """
-        return NonSemanticGDT(self.annotation2.NonSemanticGDT())
+        import pycatia.tps_interfaces.non_semantic_gdt
+        return pycatia.tps_interfaces.non_semantic_gdt.NonSemanticGDT(self.annotation2.NonSemanticGDT())
 
-    def reference_frame(self) -> ReferenceFrame:
+    def reference_frame(self) -> 'ReferenceFrame':
         """
         .. note::
             :class: toggle
@@ -417,9 +427,10 @@ class Annotation2(AnyObject):
         :return: ReferenceFrame
         :rtype: ReferenceFrame
         """
-        return ReferenceFrame(self.annotation2.ReferenceFrame())
+        import pycatia.tps_interfaces.reference_frame
+        return pycatia.tps_interfaces.reference_frame.ReferenceFrame(self.annotation2.ReferenceFrame())
 
-    def roughness(self) -> Roughness:
+    def roughness(self) -> 'Roughness':
         """
         .. note::
             :class: toggle
@@ -432,9 +443,10 @@ class Annotation2(AnyObject):
         :return: Roughness
         :rtype: Roughness
         """
-        return Roughness(self.annotation2.Roughness())
+        import pycatia.tps_interfaces.roughness
+        return pycatia.tps_interfaces.roughness.Roughness(self.annotation2.Roughness())
 
-    def semantic_gdt(self) -> SemanticGDT:
+    def semantic_gdt(self) -> 'SemanticGDT':
         """
         .. note::
             :class: toggle
@@ -447,7 +459,8 @@ class Annotation2(AnyObject):
         :return: SemanticGDT
         :rtype: SemanticGDT
         """
-        return SemanticGDT(self.annotation2.SemanticGDT())
+        import pycatia.tps_interfaces.semantic_gdt
+        return pycatia.tps_interfaces.semantic_gdt.SemanticGDT(self.annotation2.SemanticGDT())
 
     def set_xy(self, i_x: float, i_y: float) -> None:
         """
@@ -475,7 +488,7 @@ class Annotation2(AnyObject):
         """
         return self.annotation2.SetXY(i_x, i_y)
 
-    def text(self) -> Text:
+    def text(self) -> 'Text':
         """
         .. note::
             :class: toggle
@@ -493,9 +506,10 @@ class Annotation2(AnyObject):
         :return: Text
         :rtype: Text
         """
-        return Text(self.annotation2.Text())
+        import pycatia.tps_interfaces.text
+        return pycatia.tps_interfaces.text.Text(self.annotation2.Text())
 
-    def transfert_to_view(self, i_view: TPSView) -> None:
+    def transfert_to_view(self, i_view: 'TPSView') -> None:
         """
         .. note::
             :class: toggle
@@ -531,7 +545,7 @@ class Annotation2(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def visualization_dimension(self) -> Dimension3D:
+    def visualization_dimension(self) -> 'Dimension3D':
         """
         .. note::
             :class: toggle
@@ -551,9 +565,10 @@ class Annotation2(AnyObject):
         :return: Dimension3D
         :rtype: Dimension3D
         """
-        return Dimension3D(self.annotation2.VisualizationDimension())
+        import pycatia.tps_interfaces.dimension_3d
+        return pycatia.tps_interfaces.dimension_3d.Dimension3D(self.annotation2.VisualizationDimension())
 
-    def weld(self) -> Weld:
+    def weld(self) -> 'Weld':
         """
         .. note::
             :class: toggle
@@ -566,7 +581,8 @@ class Annotation2(AnyObject):
         :return: Weld
         :rtype: Weld
         """
-        return Weld(self.annotation2.Weld())
+        import pycatia.tps_interfaces.weld
+        return pycatia.tps_interfaces.weld.Weld(self.annotation2.Weld())
 
     def __repr__(self):
         return f'Annotation2(name="{ self.name }")'
