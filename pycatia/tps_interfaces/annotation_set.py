@@ -10,6 +10,8 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.tps_interfaces.tps_view import TPSView
+from pycatia.tps_interfaces.annotations import Annotations
 
 
 class AnnotationSet(AnyObject):
@@ -89,7 +91,7 @@ class AnnotationSet(AnyObject):
         return Annotations(self.annotation_set.AnEmptyAnnotationsList)
 
     @property
-    def annotation_factory(self) -> AnnotationFactory:
+    def annotation_factory(self) -> 'AnnotationFactory':
         """
         .. note::
             :class: toggle
@@ -108,11 +110,11 @@ class AnnotationSet(AnyObject):
         :return: AnnotationFactory
         :rtype: AnnotationFactory
         """
-
-        return AnnotationFactory(self.annotation_set.AnnotationFactory)
+        import pycatia.tps_interfaces.annotation_factory
+        return pycatia.tps_interfaces.annotation_factory.AnnotationFactory(self.annotation_set.AnnotationFactory)
 
     @property
-    def annotation_factory2(self) -> AnnotationFactory2:
+    def annotation_factory2(self) -> 'AnnotationFactory2':
         """
         .. note::
             :class: toggle
@@ -131,8 +133,8 @@ class AnnotationSet(AnyObject):
         :return: AnnotationFactory2
         :rtype: AnnotationFactory2
         """
-
-        return AnnotationFactory2(self.annotation_set.AnnotationFactory2)
+        import pycatia.tps_interfaces.annotation_factory2
+        return pycatia.tps_interfaces.annotation_factory2.AnnotationFactory2(self.annotation_set.AnnotationFactory2)
 
     @property
     def annotation_set_type(self) -> int:
@@ -180,7 +182,7 @@ class AnnotationSet(AnyObject):
         return Annotations(self.annotation_set.Annotations)
 
     @property
-    def capture_factory(self) -> CaptureFactory:
+    def capture_factory(self) -> 'CaptureFactory':
         """
         .. note::
             :class: toggle
@@ -198,11 +200,11 @@ class AnnotationSet(AnyObject):
         :return: CaptureFactory
         :rtype: CaptureFactory
         """
-
-        return CaptureFactory(self.annotation_set.CaptureFactory)
+        import pycatia.tps_interfaces.capture_factory
+        return pycatia.tps_interfaces.capture_factory.CaptureFactory(self.annotation_set.CaptureFactory)
 
     @property
-    def captures(self) -> Captures:
+    def captures(self) -> 'Captures':
         """
         .. note::
             :class: toggle
@@ -220,8 +222,8 @@ class AnnotationSet(AnyObject):
         :return: Captures
         :rtype: Captures
         """
-
-        return Captures(self.annotation_set.Captures)
+        import pycatia.tps_interfaces.catpure
+        return pycatia.tps_interfaces.catpure.Captures(self.annotation_set.Captures)
 
     @property
     def kind_of_set(self) -> str:
@@ -301,7 +303,7 @@ class AnnotationSet(AnyObject):
         self.annotation_set.SwitchOn = value
 
     @property
-    def tps_view_factory(self) -> TPSViewFactory:
+    def tps_view_factory(self) -> 'TPSViewFactory':
         """
         .. note::
             :class: toggle
@@ -319,11 +321,11 @@ class AnnotationSet(AnyObject):
         :return: TPSViewFactory
         :rtype: TPSViewFactory
         """
-
-        return TPSViewFactory(self.annotation_set.TPSViewFactory)
+        import pycatia.tps_interfaces.tps_view_factory
+        return pycatia.tps_interfaces.tps_view_factory.TPSViewFactory(self.annotation_set.TPSViewFactory)
 
     @property
-    def tps_views(self) -> TPSViews:
+    def tps_views(self) -> 'TPSViews':
         """
         .. note::
             :class: toggle
@@ -341,8 +343,8 @@ class AnnotationSet(AnyObject):
         :return: TPSViews
         :rtype: TPSViews
         """
-
-        return TPSViews(self.annotation_set.TPSViews)
+        import pycatia.tps_interfaces.tps_views
+        return pycatia.tps_interfaces.tps_views.TPSViews(self.annotation_set.TPSViews)
 
     def apply_view_re_use_when_copy_set_to(self) -> None:
         """
@@ -368,7 +370,7 @@ class AnnotationSet(AnyObject):
         """
         return self.annotation_set.ApplyViewReUseWhenCopySetTo()
 
-    def global_copy_set_to(self, i_destination_part: Part) -> str:
+    def global_copy_set_to(self, i_destination_part: 'Part') -> str:
         """
         .. note::
             :class: toggle
@@ -392,7 +394,7 @@ class AnnotationSet(AnyObject):
         """
         return self.annotation_set.GlobalCopySetTo(i_destination_part.com_object)
 
-    def global_copy_set_to_with_transformation(self, i_destination_part: Part, i_transfo: tuple) -> str:
+    def global_copy_set_to_with_transformation(self, i_destination_part: 'Part', i_transfo: tuple) -> str:
         """
         .. note::
             :class: toggle

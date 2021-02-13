@@ -11,6 +11,7 @@
 
 from pycatia.drafting_interfaces.drawing_component import DrawingComponent
 from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.types import cat_variant
 
 
 class Noa(AnyObject):
@@ -132,7 +133,7 @@ class Noa(AnyObject):
         """
         return DrawingComponent(self.noa.GetDitto())
 
-    def get_modifiable_text(self, i_index: CATVariant) -> AnyObject:
+    def get_modifiable_text(self, i_index: cat_variant) -> AnyObject:
         """
         .. note::
             :class: toggle
@@ -178,7 +179,7 @@ class Noa(AnyObject):
         """
         return self.noa.GetModifiableTextsCount()
 
-    def get_nbr_url(self, o_number_of_url: CATVariant) -> None:
+    def get_nbr_url(self, o_number_of_url: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -230,7 +231,7 @@ class Noa(AnyObject):
         """
         return self.noa.GetNbrURL2()
 
-    def modify_url(self, i_url: str, i_index: CATVariant) -> None:
+    def modify_url(self, i_url: str, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -270,7 +271,7 @@ class Noa(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def remove_url(self, i_index: CATVariant) -> None:
+    def remove_url(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -306,7 +307,7 @@ class Noa(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def tps_parallel_on_screen(self) -> TPSParallelOnScreen:
+    def tps_parallel_on_screen(self) -> 'TPSParallelOnScreen':
         """
         .. note::
             :class: toggle
@@ -319,9 +320,10 @@ class Noa(AnyObject):
         :return: TPSParallelOnScreen
         :rtype: TPSParallelOnScreen
         """
-        return TPSParallelOnScreen(self.noa.TPSParallelOnScreen())
+        import pycatia.tps_interfaces.tps_parallel_on_screen
+        return pycatia.tps_interfaces.tps_parallel_on_screen.TPSParallelOnScreen(self.noa.TPSParallelOnScreen())
 
-    def url(self, i_index: CATVariant) -> str:
+    def url(self, i_index: cat_variant) -> str:
         """
         .. note::
             :class: toggle

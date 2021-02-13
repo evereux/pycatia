@@ -9,8 +9,13 @@
         
 """
 
-from pycatia.in_interfaces.camera3_d import Camera3D
+from pycatia.in_interfaces.camera_3d import Camera3D
 from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.tps_interfaces.tps_view import TPSView
+from pycatia.tps_interfaces.annotations import Annotations
+from pycatia.tps_interfaces.annotation_set import AnnotationSet
+from pycatia.tps_interfaces.tps_views import TPSViews
+from pycatia.tps_interfaces.tps_parallel_on_screen import TPSParallelOnScreen
 
 
 class Capture(AnyObject):
