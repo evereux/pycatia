@@ -57,21 +57,11 @@ class ReferenceFrame(AnyObject):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AllDatumsSimple() As Annotations (Read Only)
                 | 
-                | 
-                |   
-                | 
+                |
                 |      Retrieves all datums simple used in Reference Frame.
-                |        
-                | 
-                | 
-                |       
+                |
                 |      Parameters:
                 |       
-                | 
-                |             
-                | 
-                | 
-                |             
                 |          opiListDatumsSimple
                 |            
                 |                  All objects of the collection
@@ -91,30 +81,13 @@ class ReferenceFrame(AnyObject):
                 | o Sub Frame(CATBSTR oFirstBox,
                 | CATBSTR oSecondBox,
                 | CATBSTR oThirdBox)
-                | 
-                | 
-                |   
-                | 
+                |
                 |      Retrieves Frame of the TPS.
-                |        
-                | 
-                | 
-                |       
+                |
                 |      Parameters:
-                |       
-                | 
-                |             
-                | 
-                | 
-                |             
+                |
                 |          oFirstBox
-                |            
-                |                
-                |             
                 |          oSecondBox
-                |            
-                |                
-                |             
                 |          oThirdBox
                 |            
                 |                  Texts in first, second and third boxes.
@@ -134,30 +107,15 @@ class ReferenceFrame(AnyObject):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub GetAxisSystemTTRS(UserSurface opAxisSystemTTRS)
-                | 
-                | 
-                |   
-                | 
+                |
                 |      Gets the AxisSystem TTRS.
-                |       
-                | 
-                | 
-                |       
+                |
                 |      Parameters:
-                |       
-                | 
-                |             
-                | 
-                | 
-                |             
+                |
                 |          opAxisSystemTTRS
                 |            
                 |                AxisSystem TTRS
-                |               
-                | 
-                | 
-                |           
-                |      Returns: 
+                |      Returns:
                 |       
                 |           HRESULT   S_OK:- the Axis System has been correctly
                 |           retrieved.
@@ -192,32 +150,20 @@ class ReferenceFrame(AnyObject):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub GetDegreesOfFreedom(CATVariant inBox,
                 | CATBSTR oValue)
-                | 
-                | 
-                |   
-                | 
+                |
                 |      Retrieves the values of Degrees Of Freedom(DOF)
                 |      [x,y,z,u,v,w].
                 |      Is only defined when "Axis System" attribute is valued.
                 |      Only for ASME 2009 (does not exist in ISO).
                 |       
-                | 
-                | 
-                |       
                 |      Parameters:
                 |       
-                | 
-                |             
-                | 
-                | 
-                |             
                 |          inBox
                 |            
                 |                First, Second or the Third Box of the DRF on
                 |                which
                 |                the Degrees Of Freedom is to be retrieved.
-                |               
-                |             
+                |
                 |          oValue
                 |            
                 |                oValue begins with the symbol :”[“ and ends by the symbol
@@ -232,9 +178,7 @@ class ReferenceFrame(AnyObject):
                 |                v,
                 |                w
                 |               
-                | 
-                | 
-                |           
+                |
                 |      Returns: 
                 |       
                 |           HRESULT    S_OK : the Degrees Of Freedom has been correctly retrieved.
@@ -245,7 +189,7 @@ class ReferenceFrame(AnyObject):
         :return: None
         :rtype: None
         """
-        return self.reference_frame.GetDegreesOfFreedom(in_box.com_object, o_value)
+        return self.reference_frame.GetDegreesOfFreedom(in_box, o_value)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -269,32 +213,17 @@ class ReferenceFrame(AnyObject):
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetAxisSystemTTRS(UserSurface ipAxisSystemTTRS)
-                | 
-                | 
-                |   
-                | 
+                |
                 |      Sets the AxisSystem TTRS.
-                |       
-                | 
-                | 
-                |       
+                |
                 |      Parameters:
-                |       
-                | 
-                |             
-                | 
-                | 
-                |             
+                |
                 |          ipAxisSystemTTRS
                 |            
                 |                AxisSystem TTRS. If it is NULL, the AxisSystem TTRS in the
                 |                model
                 |                will be removed.
-                |               
-                | 
-                | 
-                |           
-                |      Returns: 
+                |      Returns:
                 |       
                 |           HRESULT   S_OK:- the Axis System has been correctly
                 |           set.
@@ -329,31 +258,19 @@ class ReferenceFrame(AnyObject):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub SetDegreesOfFreedom(CATVariant inBox,
                 | CATBSTR iValue)
-                | 
-                | 
-                |   
-                | 
+                |
                 |      Sets the values of Degrees Of Freedom(DOF) [x,y,z,u,v,w].
                 |      Is only defined when "Axis System" attribute is valued.
                 |      Only for ASME 2009 (does not exist in ISO).
-                |       
-                | 
-                | 
-                |       
+                |
                 |      Parameters:
-                |       
-                | 
-                |             
-                | 
-                | 
-                |             
+                |
                 |          inBox
                 |            
                 |                First, Second or the Third Box of the DRF on
                 |                which
                 |                the Degrees Of Freedom is to be set.
-                |               
-                |             
+                |
                 |          iValue
                 |            
                 |                iValue must begin by the symbol :”[“ and must end by the symbol
@@ -371,10 +288,7 @@ class ReferenceFrame(AnyObject):
                 |                               iValue = [x,z];
                 |                E.G.2:- To set [y] as the DOF:-
                 |                               iValue = [y];
-                |               
-                | 
-                | 
-                |           
+                |
                 |      Returns: 
                 |       
                 |           HRESULT    S_OK : the Degrees Of Freedom has been correctly set.
@@ -385,7 +299,7 @@ class ReferenceFrame(AnyObject):
         :return: None
         :rtype: None
         """
-        return self.reference_frame.SetDegreesOfFreedom(in_box.com_object, i_value)
+        return self.reference_frame.SetDegreesOfFreedom(in_box, i_value)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -411,30 +325,13 @@ class ReferenceFrame(AnyObject):
                 | o Sub SetFrame(CATBSTR iFirstBox,
                 | CATBSTR iSecondBox,
                 | CATBSTR iThirdBox)
-                | 
-                | 
-                |   
-                | 
+                |
                 |      Set Frame of the TPS.
-                |        
-                | 
-                | 
-                |       
+                |
                 |      Parameters:
-                |       
-                | 
-                |             
-                | 
-                | 
-                |             
+                |
                 |          oFirstBox
-                |            
-                |                
-                |             
                 |          oSecondBox
-                |            
-                |                
-                |             
                 |          oThirdBox
                 |            
                 |                  Texts in first, second and third boxes.

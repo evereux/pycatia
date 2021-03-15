@@ -11,6 +11,7 @@
 
 from typing import Iterator
 
+from pycatia.product_structure_interfaces.product import Product
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
 from pycatia.tps_interfaces.annotation_set import AnnotationSet
@@ -40,7 +41,7 @@ class AnnotationSets(Collection):
         self.annotation_sets = com_object
         self.child_object = AnnotationSet
 
-    def add_in_a_product(self, i_product: 'Product', i_standard: str) -> AnnotationSet:
+    def add_in_a_product(self, i_product: Product, i_standard: str) -> AnnotationSet:
         """
         .. note::
             :class: toggle

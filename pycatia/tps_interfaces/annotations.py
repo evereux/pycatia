@@ -101,7 +101,7 @@ class Annotations(Collection):
         :return: AnyObject
         :rtype: AnyObject
         """
-        return AnyObject(self.annotations.Item2(i_index.com_object))
+        return AnyObject(self.annotations.Item2(i_index))
 
     def __getitem__(self, n: int) -> Annotation:
         if (n + 1) > self.count:

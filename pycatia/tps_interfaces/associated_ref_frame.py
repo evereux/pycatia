@@ -10,6 +10,8 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.tps_interfaces.annotation import Annotation
+from pycatia.tps_interfaces.annotation_2 import Annotation2
 
 
 class AssociatedRefFrame(AnyObject):
@@ -51,11 +53,10 @@ class AssociatedRefFrame(AnyObject):
         :rtype: Annotation
         """
 
-        import pycatia.tps_interfaces.annotation
-        return pycatia.tps_interfaces.annotation.Annotation(self.associated_ref_frame.ReferenceFrame)
+        return Annotation(self.associated_ref_frame.ReferenceFrame)
 
     @property
-    def reference_frame_2(self) -> 'Annotation2':
+    def reference_frame_2(self) -> Annotation2:
         """
         .. note::
             :class: toggle
@@ -69,8 +70,7 @@ class AssociatedRefFrame(AnyObject):
         :rtype: Annotation2
         """
 
-        import pycatia.tps_interfaces.annotation_2
-        return pycatia.tps_interfaces.annotation_2.Annotation2(self.associated_ref_frame.ReferenceFrame2)
+        return Annotation2(self.associated_ref_frame.ReferenceFrame2)
 
     def __repr__(self):
         return f'AssociatedRefFrame(name="{self.name}")'
