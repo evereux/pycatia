@@ -15,7 +15,7 @@ from pycatia.tps_interfaces.tps_view import TPSView
 from pycatia.types import cat_variant
 
 
-class TpsViewFactory(AnyObject):
+class TPSViewFactory(AnyObject):
     """
         .. note::
             :class: toggle
@@ -68,7 +68,7 @@ class TpsViewFactory(AnyObject):
         :return: TPSView
         :rtype: TPSView
         """
-        return TPSView(self.tps_view_factory.CreateView(i_plane.com_object, i_view_type.com_object))
+        return TPSView(self.tps_view_factory.CreateView(i_plane.com_object, i_view_type))
 
     def __repr__(self):
         return f'TpsViewFactory(name="{self.name}")'

@@ -14,7 +14,7 @@ from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.tps_interfaces.controlled_radius import ControlledRadius
 from pycatia.tps_interfaces.dimension_limit import DimensionLimit
 from pycatia.tps_interfaces.dimension_pattern import DimensionPattern
-from pycatia.tps_interfaces.envelop_condition import EnvelopCondition
+from pycatia.tps_interfaces.envelope_condition import EnvelopeCondition
 
 
 class Dimension3D(AnyObject):
@@ -99,7 +99,7 @@ class Dimension3D(AnyObject):
         """
         return DimensionPattern(self.dimension_3d.DimensionPattern())
 
-    def envelope_condition(self) -> EnvelopCondition:
+    def envelope_condition(self) -> EnvelopeCondition:
         """
         .. note::
             :class: toggle
@@ -117,7 +117,7 @@ class Dimension3D(AnyObject):
         :return: EnvelopCondition
         :rtype: EnvelopCondition
         """
-        return EnvelopCondition(self.dimension_3d.EnvelopeCondition())
+        return EnvelopeCondition(self.dimension_3d.EnvelopeCondition())
 
     def get_2d_annot(self) -> DrawingDimension:
         """

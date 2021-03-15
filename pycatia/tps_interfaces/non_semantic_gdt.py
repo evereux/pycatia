@@ -13,7 +13,7 @@ from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.tps_interfaces.tps_parallel_on_screen import TPSParallelOnScreen
 
 
-class NonSemanticGdt(AnyObject):
+class NonSemanticGDT(AnyObject):
     """
         .. note::
             :class: toggle

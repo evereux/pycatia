@@ -53,7 +53,7 @@ class AssemblyAnnotationSets(Collection):
         :return: AnyObject
         :rtype: AnyObject
         """
-        return AnyObject(self.assembly_annotation_sets.Item(i_index.com_object))
+        return AnyObject(self.assembly_annotation_sets.Item(i_index))
 
     def load_annotation_sets_list(self) -> None:
         """
