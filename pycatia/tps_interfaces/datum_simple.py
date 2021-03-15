@@ -10,10 +10,10 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.tps_interfaces.annotations import Annotations
 
 
 class DatumSimple(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -80,4 +80,4 @@ class DatumSimple(AnyObject):
         return Annotations(self.datum_simple.Targets)
 
     def __repr__(self):
-        return f'DatumSimple(name="{ self.name }")'
+        return f'DatumSimple(name="{self.name}")'

@@ -12,8 +12,7 @@
 from pycatia.system_interfaces.any_object import AnyObject
 
 
-class TpsParallelOnScreen(AnyObject):
-
+class TPSParallelOnScreen(AnyObject):
     """
         .. note::
             :class: toggle
@@ -87,4 +86,4 @@ class TpsParallelOnScreen(AnyObject):
         self.tps_parallel_on_screen.Zoomable = value
 
     def __repr__(self):
-        return f'TpsParallelOnScreen(name="{ self.name }")'
+        return f'TpsParallelOnScreen(name="{self.name}")'

@@ -10,10 +10,10 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.tps_interfaces.tps_parallel_on_screen import TPSParallelOnScreen
 
 
 class Roughness(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -176,4 +176,4 @@ class Roughness(AnyObject):
         return TPSParallelOnScreen(self.roughness.TPSParallelOnScreen())
 
     def __repr__(self):
-        return f'Roughness(name="{ self.name }")'
+        return f'Roughness(name="{self.name}")'

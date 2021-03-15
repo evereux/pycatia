@@ -10,10 +10,11 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.tps_interfaces.tps_parallel_on_screen import TPSParallelOnScreen
+from pycatia.types import cat_variant
 
 
 class FlagNote(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -116,7 +117,7 @@ class FlagNote(AnyObject):
         """
         return self.flag_note.AddURL(i_url)
 
-    def get_nbr_url(self, o_number_of_url: CATVariant) -> None:
+    def get_nbr_url(self, o_number_of_url: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -168,7 +169,7 @@ class FlagNote(AnyObject):
         """
         return self.flag_note.GetNbrURL2()
 
-    def modify_url(self, i_url: str, i_index: CATVariant) -> None:
+    def modify_url(self, i_url: str, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -208,7 +209,7 @@ class FlagNote(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def remove_url(self, i_index: CATVariant) -> None:
+    def remove_url(self, i_index: cat_variant) -> None:
         """
         .. note::
             :class: toggle
@@ -259,7 +260,7 @@ class FlagNote(AnyObject):
         """
         return TPSParallelOnScreen(self.flag_note.TPSParallelOnScreen())
 
-    def url(self, i_index: CATVariant) -> str:
+    def url(self, i_index: cat_variant) -> str:
         """
         .. note::
             :class: toggle
@@ -283,4 +284,4 @@ class FlagNote(AnyObject):
         return self.flag_note.URL(i_index.com_object)
 
     def __repr__(self):
-        return f'FlagNote(name="{ self.name }")'
+        return f'FlagNote(name="{self.name}")'

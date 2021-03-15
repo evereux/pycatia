@@ -9,11 +9,12 @@
         
 """
 
+from pycatia.in_interfaces.reference import Reference
 from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.product_structure_interfaces.product import Product
 
 
 class UserSurface(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -112,7 +113,7 @@ class UserSurface(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def add_user_surface(self, i_user_surf: UserSurface) -> None:
+    def add_user_surface(self, i_user_surf: 'UserSurface') -> None:
         """
         .. note::
             :class: toggle
@@ -150,4 +151,4 @@ class UserSurface(AnyObject):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'UserSurface(name="{ self.name }")'
+        return f'UserSurface(name="{self.name}")'

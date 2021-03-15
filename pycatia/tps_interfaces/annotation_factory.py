@@ -16,7 +16,6 @@ from pycatia.types import cat_variant
 
 
 class AnnotationFactory(Factory):
-
     """
         .. note::
             :class: toggle
@@ -109,7 +108,8 @@ class AnnotationFactory(Factory):
         """
         return Annotation(self.annotation_factory.CreateDatumTarget(i_surf.com_object, i_datum.com_object))
 
-    def create_evoluate_datum(self, i_surf: 'UserSurface', i_x: float, i_y: float, i_z: float, i_with_leader: bool) -> Annotation:
+    def create_evaluate_datum(self, i_surf: 'UserSurface', i_x: float, i_y: float, i_z: float,
+                              i_with_leader: bool) -> Annotation:
         """
         .. note::
             :class: toggle
@@ -154,7 +154,8 @@ class AnnotationFactory(Factory):
         """
         return Annotation(self.annotation_factory.CreateEvoluateDatum(i_surf.com_object, i_x, i_y, i_z, i_with_leader))
 
-    def create_evoluate_text(self, i_surf: 'UserSurface', i_x: float, i_y: float, i_z: float, i_with_leader: bool) -> Annotation:
+    def create_evaluate_text(self, i_surf: 'UserSurface', i_x: float, i_y: float, i_z: float,
+                             i_with_leader: bool) -> Annotation:
         """
         .. note::
             :class: toggle
@@ -221,7 +222,8 @@ class AnnotationFactory(Factory):
         """
         return Annotation(self.annotation_factory.CreateFlagNote(i_surf.com_object))
 
-    def create_non_semantic_dimension(self, i_surf: 'UserSurface', i_dimension_type: cat_variant, i_linear_dim_sub_type: cat_variant) -> Annotation:
+    def create_non_semantic_dimension(self, i_surf: 'UserSurface', i_dimension_type: cat_variant,
+                                      i_linear_dim_sub_type: cat_variant) -> Annotation:
         """
         .. note::
             :class: toggle
@@ -250,7 +252,9 @@ class AnnotationFactory(Factory):
         :return: Annotation
         :rtype: Annotation
         """
-        return Annotation(self.annotation_factory.CreateNonSemanticDimension(i_surf.com_object, i_dimension_type.com_object, i_linear_dim_sub_type.com_object))
+        return Annotation(
+            self.annotation_factory.CreateNonSemanticDimension(i_surf.com_object, i_dimension_type.com_object,
+                                                               i_linear_dim_sub_type.com_object))
 
     def create_roughness(self, i_surf: 'UserSurface') -> Annotation:
         """
@@ -275,7 +279,8 @@ class AnnotationFactory(Factory):
         """
         return Annotation(self.annotation_factory.CreateRoughness(i_surf.com_object))
 
-    def create_semantic_dimension(self, i_surf: 'UserSurface', i_type: cat_variant, i_sub_type: cat_variant) -> Annotation:
+    def create_semantic_dimension(self, i_surf: 'UserSurface', i_type: cat_variant,
+                                  i_sub_type: cat_variant) -> Annotation:
         """
         .. note::
             :class: toggle
@@ -298,7 +303,8 @@ class AnnotationFactory(Factory):
         :return: Annotation
         :rtype: Annotation
         """
-        return Annotation(self.annotation_factory.CreateSemanticDimension(i_surf.com_object, i_type.com_object, i_sub_type.com_object))
+        return Annotation(self.annotation_factory.CreateSemanticDimension(i_surf.com_object, i_type.com_object,
+                                                                          i_sub_type.com_object))
 
     def create_text(self, i_surf: 'UserSurface') -> Annotation:
         """
@@ -421,7 +427,8 @@ class AnnotationFactory(Factory):
         :return: Annotation
         :rtype: Annotation
         """
-        return Annotation(self.annotation_factory.CreateToleranceWithDRF(i_index.com_object, i_surf.com_object, i_drf.com_object))
+        return Annotation(
+            self.annotation_factory.CreateToleranceWithDRF(i_index.com_object, i_surf.com_object, i_drf.com_object))
 
     def create_tolerance_without_drf(self, i_index: cat_variant, i_surf: 'UserSurface') -> Annotation:
         """
@@ -441,7 +448,7 @@ class AnnotationFactory(Factory):
         """
         return Annotation(self.annotation_factory.CreateToleranceWithoutDRF(i_index.com_object, i_surf.com_object))
 
-    def instanciate_noa(self, i_noa: Noa, i_surf: 'UserSurface') -> Annotation:
+    def instantiate_noa(self, i_noa: Noa, i_surf: 'UserSurface') -> Annotation:
         """
         .. note::
             :class: toggle
@@ -469,4 +476,4 @@ class AnnotationFactory(Factory):
         return Annotation(self.annotation_factory.InstanciateNOA(i_noa.com_object, i_surf.com_object))
 
     def __repr__(self):
-        return f'AnnotationFactory(name="{ self.name }")'
+        return f'AnnotationFactory(name="{self.name}")'

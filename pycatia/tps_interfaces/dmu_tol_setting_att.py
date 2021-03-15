@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class DmuTolSettingAtt(SettingController):
-
     """
         .. note::
             :class: toggle
@@ -210,7 +209,7 @@ class DmuTolSettingAtt(SettingController):
         """
         return self.dmu_tol_setting_att.GetPrevAreaInfo(admin_level, o_locked)
 
-    def get_related_colors(self, o_related_r: int, o_related_g: int, o_related_b: int) -> None:
+    def get_related_colours(self, o_related_r: int, o_related_g: int, o_related_b: int) -> None:
         """
         .. note::
             :class: toggle
@@ -244,7 +243,7 @@ class DmuTolSettingAtt(SettingController):
         """
         return self.dmu_tol_setting_att.GetRelatedColors(o_related_r, o_related_g, o_related_b)
 
-    def get_related_colors_info(self, admin_level: str, o_locked: str) -> bool:
+    def get_related_colours_info(self, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
             :class: toggle
@@ -368,7 +367,7 @@ class DmuTolSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_related_colors(self, i_related_r: int, i_related_g: int, i_related_b: int) -> None:
+    def set_related_colours(self, i_related_r: int, i_related_g: int, i_related_b: int) -> None:
         """
         .. note::
             :class: toggle
@@ -401,7 +400,7 @@ class DmuTolSettingAtt(SettingController):
         """
         return self.dmu_tol_setting_att.SetRelatedColors(i_related_r, i_related_g, i_related_b)
 
-    def set_related_colors_lock(self, i_locked: bool) -> None:
+    def set_related_colours_lock(self, i_locked: bool) -> None:
         """
         .. note::
             :class: toggle
@@ -500,4 +499,4 @@ class DmuTolSettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'DmuTolSettingAtt(name="{ self.name }")'
+        return f'DmuTolSettingAtt(name="{self.name}")'

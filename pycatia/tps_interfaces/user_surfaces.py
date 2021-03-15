@@ -9,11 +9,16 @@
         
 """
 
+from typing import Iterator
+
+from pycatia.in_interfaces.reference import Reference
+from pycatia.product_structure_interfaces.product import Product
 from pycatia.system_interfaces.collection import Collection
+from pycatia.tps_interfaces.user_surface import UserSurface
+from pycatia.types import cat_variant
 
 
 class UserSurfaces(Collection):
-
     """
         .. note::
             :class: toggle
@@ -100,9 +105,10 @@ class UserSurfaces(Collection):
         :return: UserSurface
         :rtype: UserSurface
         """
-        return UserSurface(self.user_surfaces.GenerateInAProductCtx(i_product.com_object, i_prod_inst.com_object, i_support.com_object))
+        return UserSurface(self.user_surfaces.GenerateInAProductCtx(i_product.com_object, i_prod_inst.com_object,
+                                                                    i_support.com_object))
 
-    def item(self, i_index: CATVariant) -> UserSurface:
+    def item(self, i_index: cat_variant) -> UserSurface:
         """
         .. note::
             :class: toggle
@@ -154,9 +160,10 @@ class UserSurfaces(Collection):
         :return: UserSurface
         :rtype: UserSurface
         """
-        return UserSurface(self.user_surfaces.MakeUserSurfaceNode(i_first_user_surf.com_object, i_second_user_surf.com_object))
+        return UserSurface(
+            self.user_surfaces.MakeUserSurfaceNode(i_first_user_surf.com_object, i_second_user_surf.com_object))
 
-    def make_user_surface_node2(self, i_list_of_user_surfaces: tuple) -> UserSurface:
+    def make_user_surface_node_2(self, i_list_of_user_surfaces: tuple) -> UserSurface:
         """
         .. note::
             :class: toggle
@@ -182,5 +189,15 @@ class UserSurfaces(Collection):
         """
         return UserSurface(self.user_surfaces.MakeUserSurfaceNode2(i_list_of_user_surfaces))
 
+    def __getitem__(self, n: int) -> UserSurface:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return UserSurface(self.user_surfaces.item(n + 1))
+
+    def __iter__(self) -> Iterator[UserSurface]:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
+
     def __repr__(self):
-        return f'UserSurfaces(name="{ self.name }")'
+        return f'UserSurfaces(name="{self.name}")'

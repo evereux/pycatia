@@ -19,7 +19,6 @@ from pycatia.tps_interfaces.tps_parallel_on_screen import TPSParallelOnScreen
 
 
 class Capture(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -324,7 +323,7 @@ class Capture(AnyObject):
         """
         return self.capture.DisplayCapture()
 
-    def display_capture2(self, ib_apply_mirror: bool) -> None:
+    def display_capture_2(self, ib_apply_mirror: bool) -> None:
         """
         .. note::
             :class: toggle
@@ -379,4 +378,4 @@ class Capture(AnyObject):
         return TPSParallelOnScreen(self.capture.TPSParallelOnScreen())
 
     def __repr__(self):
-        return f'Capture(name="{ self.name }")'
+        return f'Capture(name="{self.name}")'

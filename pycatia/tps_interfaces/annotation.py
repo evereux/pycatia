@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class Annotation(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -152,7 +151,7 @@ class Annotation(AnyObject):
         """
         return self.annotation.AddLeader()
 
-    def apply_referenced_geom_color(self, i_releated_r: int, i_releated_g: int, i_releated_b: int) -> None:
+    def apply_referenced_geom_colour(self, i_releated_r: int, i_releated_g: int, i_releated_b: int) -> None:
         """
         .. note::
             :class: toggle
@@ -172,7 +171,7 @@ class Annotation(AnyObject):
         """
         return self.annotation.ApplyReferencedGeomColor(i_releated_r, i_releated_g, i_releated_b)
 
-    def apply_referenced_init_color(self) -> None:
+    def apply_referenced_init_colour(self) -> None:
         """
         .. note::
             :class: toggle
@@ -219,7 +218,7 @@ class Annotation(AnyObject):
         import pycatia.tps_interfaces.composite_tolerance
         return pycatia.tps_interfaces.composite_tolerance.CompositeTolerance(self.annotation.CompositeTolerance())
 
-    def controled_radius(self) -> 'ControledRadius':
+    def controlled_radius(self) -> 'ControlledRadius':
         """
         .. note::
             :class: toggle
@@ -232,8 +231,8 @@ class Annotation(AnyObject):
         :return: ControledRadius
         :rtype: ControledRadius
         """
-        import pycatia.tps_interfaces.controled_radius
-        return pycatia.tps_interfaces.controled_radius.ControledRadius(self.annotation.ControledRadius())
+        import pycatia.tps_interfaces.controlled_radius
+        return pycatia.tps_interfaces.controled_radius.ControlledRadius(self.annotation.ControlledRadius())
 
     def datum_simple(self) -> 'DatumSimple':
         """
@@ -350,7 +349,7 @@ class Annotation(AnyObject):
         :rtype: EnvelopCondition
         """
         import pycatia.tps_interfaces.envelop_condition
-        return pycatia.tps_interfaces.envelop_condition.EnvelopCondition(self.annotation.EnvelopCondition())
+        return pycatia.tps_interfaces.envelop_condition.EnvelopeCondition(self.annotation.EnvelopeCondition())
 
     def flag_note(self) -> 'FlagNote':
         """
@@ -435,7 +434,7 @@ class Annotation(AnyObject):
         """
         return self.annotation.GetSurfacesCount()
 
-    def has_a_controled_radius(self) -> bool:
+    def has_a_controlled_radius(self) -> bool:
         """
         .. note::
             :class: toggle
@@ -691,7 +690,7 @@ class Annotation(AnyObject):
         import pycatia.tps_interfaces.material_condition
         return pycatia.tps_interfaces.material_condition.MaterialCondition(self.annotation.MaterialCondition())
 
-    def modify_visu(self) -> None:
+    def modify_visualisation(self) -> None:
         """
         .. note::
             :class: toggle
@@ -752,7 +751,8 @@ class Annotation(AnyObject):
         :rtype: ProjectedToleranceZone
         """
         import pycatia.tps_interfaces.projected_tolerance_zone
-        return pycatia.tps_interfaces.projected_tolerance_zone.ProjectedToleranceZone(self.annotation.ProjectedToleranceZone())
+        return pycatia.tps_interfaces.projected_tolerance_zone.ProjectedToleranceZone(
+            self.annotation.ProjectedToleranceZone())
 
     def reference_frame(self) -> 'ReferenceFrame':
         """
@@ -826,7 +826,8 @@ class Annotation(AnyObject):
         :rtype: ShiftedProfileTolerance
         """
         import pycatia.tps_interfaces.shifted_profile_tolerance
-        return pycatia.tps_interfaces.shifted_profile_tolerance.ShiftedProfileTolerance(self.annotation.ShiftedProfileTolerance())
+        return pycatia.tps_interfaces.shifted_profile_tolerance.ShiftedProfileTolerance(
+            self.annotation.ShiftedProfileTolerance())
 
     def tangent_plane(self) -> 'TangentPlane':
         """
@@ -880,7 +881,8 @@ class Annotation(AnyObject):
         :rtype: TolerancePerUnitBasisRestrictiveValue
         """
         import pycatia.tps_interfaces.tolerance_per_unit_basis_restrictive_value
-        return pycatia.tps_interfaces.tolerance_per_unit_basis_restrictive_value.TolerancePerUnitBasisRestrictiveValue(self.annotation.TolerancePerUnitBasisRestrictiveValue())
+        return pycatia.tps_interfaces.tolerance_per_unit_basis_restrictive_value.TolerancePerUnitBasisRestrictiveValue(
+            self.annotation.TolerancePerUnitBasisRestrictiveValue())
 
     def tolerance_unit_basis_value(self) -> 'ToleranceUnitBasisValue':
         """
@@ -896,7 +898,8 @@ class Annotation(AnyObject):
         :rtype: ToleranceUnitBasisValue
         """
         import pycatia.tps_interfaces.tolerance_unit_basis_value
-        return pycatia.tps_interfaces.tolerance_unit_basis_value.ToleranceUnitBasisValue(self.annotation.ToleranceUnitBasisValue())
+        return pycatia.tps_interfaces.tolerance_unit_basis_value.ToleranceUnitBasisValue(
+            self.annotation.ToleranceUnitBasisValue())
 
     def tolerance_zone(self) -> 'ToleranceZone':
         """
@@ -951,4 +954,4 @@ class Annotation(AnyObject):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'Annotation(name="{ self.name }")'
+        return f'Annotation(name="{self.name}")'
