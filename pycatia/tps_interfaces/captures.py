@@ -53,13 +53,13 @@ class Captures(Collection):
         :return: AnyObject
         :rtype: AnyObject
         """
-        return AnyObject(self.captures.Item(i_index.com_object))
+        return AnyObject(self.captures.Item(i_index))
 
     def __getitem__(self, n: int) -> Capture:
         if (n + 1) > self.count:
             raise StopIteration
 
-        return Capture(self.cameras.item(n + 1))
+        return Capture(self.captures.item(n + 1))
 
     def __iter__(self) -> Iterator[Capture]:
         for i in range(self.count):

@@ -11,6 +11,8 @@
 
 from pycatia.mec_mod_interfaces.factory import Factory
 from pycatia.tps_interfaces.annotation_2 import Annotation2
+from pycatia.drafting_interfaces.drawing_component import DrawingComponent
+from pycatia.tps_interfaces.user_surface import UserSurface
 from pycatia.types import cat_variant
 
 
@@ -39,7 +41,7 @@ class AnnotationFactory2(Factory):
         super().__init__(com_object)
         self.annotation_factory_2 = com_object
 
-    def create_datum(self, i_surf: 'UserSurface') -> Annotation2:
+    def create_datum(self, i_surf: UserSurface) -> Annotation2:
         """
         .. note::
             :class: toggle
@@ -78,7 +80,7 @@ class AnnotationFactory2(Factory):
         """
         return Annotation2(self.annotation_factory_2.CreateDatumReferenceFrame())
 
-    def create_datum_target(self, i_surf: 'UserSurface', i_datum: Annotation2) -> Annotation2:
+    def create_datum_target(self, i_surf: UserSurface, i_datum: Annotation2) -> Annotation2:
         """
         .. note::
             :class: toggle
@@ -107,7 +109,7 @@ class AnnotationFactory2(Factory):
         """
         return Annotation2(self.annotation_factory_2.CreateDatumTarget(i_surf.com_object, i_datum.com_object))
 
-    def create_ditto_noa(self, i_surf: 'UserSurface', i_noa_type: str, i_ditto: 'DrawingComponent',
+    def create_ditto_noa(self, i_surf: UserSurface, i_noa_type: str, i_ditto: DrawingComponent,
                          i_stick_to_geometry_option: bool) -> Annotation2:
         """
         .. note::
@@ -298,10 +300,12 @@ class AnnotationFactory2(Factory):
         :return: Annotation2
         :rtype: Annotation2
         """
-        return Annotation2(self.annotation_factory_2.CreateNonSemanticDimension(i_surf.com_object, i_type.com_object,
-                                                                                i_sub_type.com_object))
+        return Annotation2(self.annotation_factory_2.CreateNonSemanticDimension(
+            i_surf.com_object,
+            i_type,
+            i_sub_type))
 
-    def create_roughness(self, i_surf: 'UserSurface') -> Annotation2:
+    def create_roughness(self, i_surf: UserSurface) -> Annotation2:
         """
         .. note::
             :class: toggle
@@ -324,7 +328,7 @@ class AnnotationFactory2(Factory):
         """
         return Annotation2(self.annotation_factory_2.CreateRoughness(i_surf.com_object))
 
-    def create_semantic_dimension(self, i_surf: 'UserSurface', i_type: cat_variant,
+    def create_semantic_dimension(self, i_surf: UserSurface, i_type: cat_variant,
                                   i_sub_type: cat_variant) -> Annotation2:
         """
         .. note::
@@ -348,10 +352,10 @@ class AnnotationFactory2(Factory):
         :return: Annotation2
         :rtype: Annotation2
         """
-        return Annotation2(self.annotation_factory_2.CreateSemanticDimension(i_surf.com_object, i_type.com_object,
-                                                                             i_sub_type.com_object))
+        return Annotation2(self.annotation_factory_2.CreateSemanticDimension(i_surf.com_object, i_type,
+                                                                             i_sub_type))
 
-    def create_text(self, i_surf: 'UserSurface') -> Annotation2:
+    def create_text(self, i_surf: UserSurface) -> Annotation2:
         """
         .. note::
             :class: toggle
@@ -374,7 +378,7 @@ class AnnotationFactory2(Factory):
         """
         return Annotation2(self.annotation_factory_2.CreateText(i_surf.com_object))
 
-    def create_text_noa(self, i_surf: 'UserSurface') -> Annotation2:
+    def create_text_noa(self, i_surf: UserSurface) -> Annotation2:
         """
         .. note::
             :class: toggle
@@ -398,7 +402,7 @@ class AnnotationFactory2(Factory):
         """
         return Annotation2(self.annotation_factory_2.CreateTextNOA(i_surf.com_object))
 
-    def create_text_note_object_attribute(self, i_surf: 'UserSurface', i_noa_type: str) -> Annotation2:
+    def create_text_note_object_attribute(self, i_surf: UserSurface, i_noa_type: str) -> Annotation2:
         """
         .. note::
             :class: toggle
@@ -454,7 +458,7 @@ class AnnotationFactory2(Factory):
         """
         return Annotation2(self.annotation_factory_2.CreateTextOnAnnot(i_text, i_annot.com_object))
 
-    def create_tolerance_with_drf(self, i_index: cat_variant, i_surf: 'UserSurface', i_drf: Annotation2) -> Annotation2:
+    def create_tolerance_with_drf(self, i_index: cat_variant, i_surf: UserSurface, i_drf: Annotation2) -> Annotation2:
         """
         .. note::
             :class: toggle
@@ -473,9 +477,9 @@ class AnnotationFactory2(Factory):
         :rtype: Annotation2
         """
         return Annotation2(
-            self.annotation_factory_2.CreateToleranceWithDRF(i_index.com_object, i_surf.com_object, i_drf.com_object))
+            self.annotation_factory_2.CreateToleranceWithDRF(i_index, i_surf.com_object, i_drf.com_object))
 
-    def create_tolerance_without_drf(self, i_index: cat_variant, i_surf: 'UserSurface') -> Annotation2:
+    def create_tolerance_without_drf(self, i_index: cat_variant, i_surf: UserSurface) -> Annotation2:
         """
         .. note::
             :class: toggle
@@ -491,9 +495,9 @@ class AnnotationFactory2(Factory):
         :return: Annotation2
         :rtype: Annotation2
         """
-        return Annotation2(self.annotation_factory_2.CreateToleranceWithoutDRF(i_index.com_object, i_surf.com_object))
+        return Annotation2(self.annotation_factory_2.CreateToleranceWithoutDRF(i_index, i_surf.com_object))
 
-    def create_weld(self, i_surf: 'UserSurface') -> Annotation2:
+    def create_weld(self, i_surf: UserSurface) -> Annotation2:
         """
         .. note::
             :class: toggle
@@ -516,7 +520,7 @@ class AnnotationFactory2(Factory):
         """
         return Annotation2(self.annotation_factory_2.CreateWeld(i_surf.com_object))
 
-    def instantiate_noa(self, i_noa: Annotation2, i_surf: 'UserSurface') -> Annotation2:
+    def instantiate_noa(self, i_noa: Annotation2, i_surf: UserSurface) -> Annotation2:
         """
         .. note::
             :class: toggle

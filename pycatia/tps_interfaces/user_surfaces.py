@@ -131,7 +131,7 @@ class UserSurfaces(Collection):
         :return: UserSurface
         :rtype: UserSurface
         """
-        return UserSurface(self.user_surfaces.Item(i_index.com_object))
+        return UserSurface(self.user_surfaces.Item(i_index))
 
     def make_user_surface_node(self, i_first_user_surf: UserSurface, i_second_user_surf: UserSurface) -> UserSurface:
         """

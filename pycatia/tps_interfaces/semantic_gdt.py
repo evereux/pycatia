@@ -24,7 +24,7 @@ from pycatia.tps_interfaces.tolerance_unit_basis_value import ToleranceUnitBasis
 from pycatia.tps_interfaces.tolerance_zone import ToleranceZone
 
 
-class SemanticGdt(AnyObject):
+class SemanticGDT(AnyObject):
     """
         .. note::
             :class: toggle
