@@ -9,13 +9,17 @@
         
 """
 
+from typing import TYPE_CHECKING
+
 from pycatia.in_interfaces.camera_3d import Camera3D
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.tps_interfaces.tps_view import TPSView
-from pycatia.tps_interfaces.annotations import Annotations
-from pycatia.tps_interfaces.annotation_set import AnnotationSet
 from pycatia.tps_interfaces.tps_views import TPSViews
 from pycatia.tps_interfaces.tps_parallel_on_screen import TPSParallelOnScreen
+
+if TYPE_CHECKING:
+    from pycatia.tps_interfaces.annotations import Annotations
+    from pycatia.tps_interfaces.annotation_set import AnnotationSet
 
 
 class Capture(AnyObject):
@@ -93,7 +97,7 @@ class Capture(AnyObject):
         self.capture.ActiveViewState = value
 
     @property
-    def annotations(self) -> Annotations:
+    def annotations(self) -> 'Annotations':
         """
         .. note::
             :class: toggle
@@ -106,11 +110,11 @@ class Capture(AnyObject):
         :return: Annotations
         :rtype: Annotations
         """
-
+        from pycatia.tps_interfaces.annotations import Annotations
         return Annotations(self.capture.Annotations)
 
     @annotations.setter
-    def annotations(self, value: Annotations):
+    def annotations(self, value: 'Annotations'):
         """
         :param Annotations value:
         """
@@ -240,7 +244,7 @@ class Capture(AnyObject):
         self.capture.ManageHideShowBody = value
 
     @property
-    def set(self) -> AnnotationSet:
+    def set(self) -> 'AnnotationSet':
         """
         .. note::
             :class: toggle
@@ -253,7 +257,7 @@ class Capture(AnyObject):
         :return: AnnotationSet
         :rtype: AnnotationSet
         """
-
+        from pycatia.tps_interfaces.annotation_set import AnnotationSet
         return AnnotationSet(self.capture.Set)
 
     @property

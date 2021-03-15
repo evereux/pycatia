@@ -9,8 +9,12 @@
         
 """
 
+from typing import TYPE_CHECKING
+
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.tps_interfaces.annotations import Annotations
+
+if TYPE_CHECKING:
+    from pycatia.tps_interfaces.annotations import Annotations
 
 
 class DatumSimple(AnyObject):
@@ -62,7 +66,7 @@ class DatumSimple(AnyObject):
         self.datum_simple.Label = value
 
     @property
-    def targets(self) -> Annotations:
+    def targets(self) -> 'Annotations':
         """
         .. note::
             :class: toggle
@@ -76,7 +80,7 @@ class DatumSimple(AnyObject):
         :return: Annotations
         :rtype: Annotations
         """
-
+        from pycatia.tps_interfaces.annotations import Annotations
         return Annotations(self.datum_simple.Targets)
 
     def __repr__(self):
