@@ -9,12 +9,15 @@
         
 """
 
+from typing import Iterator
+
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
+from pycatia.tps_interfaces.annotation_set import AnnotationSet
+from pycatia.types import cat_variant
 
 
 class AssemblyAnnotationSets(Collection):
-
     """
         .. note::
             :class: toggle
@@ -36,7 +39,7 @@ class AssemblyAnnotationSets(Collection):
         super().__init__(com_object)
         self.assembly_annotation_sets = com_object
 
-    def item(self, i_index: CATVariant) -> AnyObject:
+    def item(self, i_index: cat_variant) -> AnyObject:
         """
         .. note::
             :class: toggle
@@ -70,5 +73,15 @@ class AssemblyAnnotationSets(Collection):
         """
         return self.assembly_annotation_sets.LoadAnnotationSetsList()
 
+    def __getitem__(self, n: int) -> AnnotationSet:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return AnnotationSet(self.assembly_annotation_sets.item(n + 1))
+
+    def __iter__(self) -> Iterator[AnnotationSet]:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
+
     def __repr__(self):
-        return f'AssemblyAnnotationSets(name="{ self.name }")'
+        return f'AssemblyAnnotationSets(name="{self.name}")'

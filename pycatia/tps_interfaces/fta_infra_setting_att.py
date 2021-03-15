@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class FtaInfraSettingAtt(SettingController):
-
     """
         .. note::
             :class: toggle
@@ -844,7 +843,7 @@ class FtaInfraSettingAtt(SettingController):
         """
         return self.fta_infra_setting_att.GetLeaderAssociativityInfo(admin_level, o_locked)
 
-    def get_man_ref_siz_info(self, admin_level: str, o_locked: str) -> bool:
+    def get_man_ref_size_info(self, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
             :class: toggle
@@ -1347,7 +1346,7 @@ class FtaInfraSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_man_ref_siz_lock(self, i_locked: bool) -> None:
+    def set_man_ref_size_lock(self, i_locked: bool) -> None:
         """
         .. note::
             :class: toggle
@@ -1742,4 +1741,4 @@ class FtaInfraSettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'FtaInfraSettingAtt(name="{ self.name }")'
+        return f'FtaInfraSettingAtt(name="{self.name}")'

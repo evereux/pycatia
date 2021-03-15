@@ -12,8 +12,7 @@
 from pycatia.system_interfaces.any_object import AnyObject
 
 
-class EnvelopCondition(AnyObject):
-
+class EnvelopeCondition(AnyObject):
     """
         .. note::
             :class: toggle
@@ -33,7 +32,7 @@ class EnvelopCondition(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.envelop_condition = com_object
+        self.envelope_condition = com_object
 
     @property
     def modifier(self) -> str:
@@ -50,7 +49,7 @@ class EnvelopCondition(AnyObject):
         :rtype: str
         """
 
-        return self.envelop_condition.Modifier
+        return self.envelope_condition.Modifier
 
     def __repr__(self):
-        return f'EnvelopCondition(name="{ self.name }")'
+        return f'EnvelopCondition(name="{self.name}")'

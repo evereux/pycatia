@@ -15,7 +15,6 @@ from pycatia.types import cat_variant
 
 
 class Noa(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -211,7 +210,7 @@ class Noa(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_nbr_url2(self) -> int:
+    def get_nbr_url_2(self) -> int:
         """
         .. note::
             :class: toggle
@@ -347,4 +346,4 @@ class Noa(AnyObject):
         return self.noa.URL(i_index.com_object)
 
     def __repr__(self):
-        return f'Noa(name="{ self.name }")'
+        return f'Noa(name="{self.name}")'

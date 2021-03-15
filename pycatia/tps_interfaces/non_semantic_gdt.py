@@ -10,10 +10,10 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.tps_interfaces.tps_parallel_on_screen import TPSParallelOnScreen
 
 
 class NonSemanticGdt(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -50,4 +50,4 @@ class NonSemanticGdt(AnyObject):
         return TPSParallelOnScreen(self.non_semantic_gdt.TPSParallelOnScreen())
 
     def __repr__(self):
-        return f'NonSemanticGdt(name="{ self.name }")'
+        return f'NonSemanticGdt(name="{self.name}")'

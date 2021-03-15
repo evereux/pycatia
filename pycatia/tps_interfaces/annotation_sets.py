@@ -9,6 +9,8 @@
         
 """
 
+from typing import Iterator
+
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
 from pycatia.tps_interfaces.annotation_set import AnnotationSet
@@ -16,7 +18,6 @@ from pycatia.types import cat_variant
 
 
 class AnnotationSets(Collection):
-
     """
         .. note::
             :class: toggle
@@ -91,5 +92,15 @@ class AnnotationSets(Collection):
         """
         return self.annotation_sets.LoadAnnotationSetsList()
 
+    def __getitem__(self, n: int) -> AnnotationSet:
+        if (n + 1) > self.count:
+            raise StopIteration
+
+        return AnnotationSet(self.annotation_sets.item(n + 1))
+
+    def __iter__(self) -> Iterator[AnnotationSet]:
+        for i in range(self.count):
+            yield self.child_object(self.com_object.item(i + 1))
+
     def __repr__(self):
-        return f'AnnotationSets(name="{ self.name }")'
+        return f'AnnotationSets(name="{self.name}")'

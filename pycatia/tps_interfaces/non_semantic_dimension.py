@@ -11,10 +11,10 @@
 
 from pycatia.drafting_interfaces.drawing_dimension import DrawingDimension
 from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.tps_interfaces.dimension_limit import DimensionLimit
 
 
 class NonSemanticDimension(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -56,7 +56,7 @@ class NonSemanticDimension(AnyObject):
         """
         return DimensionLimit(self.non_semantic_dimension.DimensionLimit())
 
-    def get2d_annot(self) -> DrawingDimension:
+    def get_2d_annot(self) -> DrawingDimension:
         """
         .. note::
             :class: toggle
@@ -99,4 +99,4 @@ class NonSemanticDimension(AnyObject):
         return self.non_semantic_dimension.HasDimensionLimit()
 
     def __repr__(self):
-        return f'NonSemanticDimension(name="{ self.name }")'
+        return f'NonSemanticDimension(name="{self.name}")'

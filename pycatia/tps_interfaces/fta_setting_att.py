@@ -12,8 +12,7 @@
 from pycatia.system_interfaces.setting_controller import SettingController
 
 
-class FtaSettingAtt(SettingController):
-
+class FTASettingAtt(SettingController):
     """
         .. note::
             :class: toggle
@@ -246,7 +245,7 @@ class FtaSettingAtt(SettingController):
         self.fta_setting_att.BodyHideInCapture = value
 
     @property
-    def catfta_chamfer_general_tol_class(self) -> int:
+    def cat_fta_chamfer_general_tol_class(self) -> int:
         """
         .. note::
             :class: toggle
@@ -262,8 +261,8 @@ class FtaSettingAtt(SettingController):
 
         return self.fta_setting_att.CATFTAChamferGeneralTolClass
 
-    @catfta_chamfer_general_tol_class.setter
-    def catfta_chamfer_general_tol_class(self, value: int):
+    @cat_fta_chamfer_general_tol_class.setter
+    def cat_fta_chamfer_general_tol_class(self, value: int):
         """
         :param int value:
         """
@@ -271,7 +270,7 @@ class FtaSettingAtt(SettingController):
         self.fta_setting_att.CATFTAChamferGeneralTolClass = value
 
     @property
-    def catfta_edges_line_type(self) -> int:
+    def cat_fta_edges_line_type(self) -> int:
         """
         .. note::
             :class: toggle
@@ -287,8 +286,8 @@ class FtaSettingAtt(SettingController):
 
         return self.fta_setting_att.CATFTAEdgesLineType
 
-    @catfta_edges_line_type.setter
-    def catfta_edges_line_type(self, value: int):
+    @cat_fta_edges_line_type.setter
+    def cat_fta_edges_line_type(self, value: int):
         """
         :param int value:
         """
@@ -296,7 +295,7 @@ class FtaSettingAtt(SettingController):
         self.fta_setting_att.CATFTAEdgesLineType = value
 
     @property
-    def catfta_edges_thickness(self) -> int:
+    def cat_fta_edges_thickness(self) -> int:
         """
         .. note::
             :class: toggle
@@ -312,8 +311,8 @@ class FtaSettingAtt(SettingController):
 
         return self.fta_setting_att.CATFTAEdgesThickness
 
-    @catfta_edges_thickness.setter
-    def catfta_edges_thickness(self, value: int):
+    @cat_fta_edges_thickness.setter
+    def cat_fta_edges_thickness(self, value: int):
         """
         :param int value:
         """
@@ -321,7 +320,7 @@ class FtaSettingAtt(SettingController):
         self.fta_setting_att.CATFTAEdgesThickness = value
 
     @property
-    def catftauf_auto_tolerancing(self) -> str:
+    def cat_ftauf_auto_tolerancing(self) -> str:
         """
         .. note::
             :class: toggle
@@ -337,8 +336,8 @@ class FtaSettingAtt(SettingController):
 
         return self.fta_setting_att.CATFTAUFAutoTolerancing
 
-    @catftauf_auto_tolerancing.setter
-    def catftauf_auto_tolerancing(self, value: str):
+    @cat_ftauf_auto_tolerancing.setter
+    def cat_ftauf_auto_tolerancing(self, value: str):
         """
         :param str value:
         """
@@ -346,7 +345,7 @@ class FtaSettingAtt(SettingController):
         self.fta_setting_att.CATFTAUFAutoTolerancing = value
 
     @property
-    def catfta_use_last_tolerances(self) -> bool:
+    def cat_fta_use_last_tolerances(self) -> bool:
         """
         .. note::
             :class: toggle
@@ -362,8 +361,8 @@ class FtaSettingAtt(SettingController):
 
         return self.fta_setting_att.CATFTAUseLastTolerances
 
-    @catfta_use_last_tolerances.setter
-    def catfta_use_last_tolerances(self, value: bool):
+    @cat_fta_use_last_tolerances.setter
+    def cat_fta_use_last_tolerances(self, value: bool):
         """
         :param bool value:
         """
@@ -934,7 +933,7 @@ class FtaSettingAtt(SettingController):
         self.fta_setting_att.DimManualPositionning = value
 
     @property
-    def dim_move2d_part_cre(self) -> bool:
+    def dim_move_2d_part_cre(self) -> bool:
         """
         .. note::
             :class: toggle
@@ -952,8 +951,8 @@ class FtaSettingAtt(SettingController):
 
         return self.fta_setting_att.DimMove2dPartCre
 
-    @dim_move2d_part_cre.setter
-    def dim_move2d_part_cre(self, value: bool):
+    @dim_move_2d_part_cre.setter
+    def dim_move_2d_part_cre(self, value: bool):
         """
         :param bool value:
         """
@@ -961,7 +960,7 @@ class FtaSettingAtt(SettingController):
         self.fta_setting_att.DimMove2dPartCre = value
 
     @property
-    def dim_move2d_part_mod(self) -> bool:
+    def dim_move_2d_part_mod(self) -> bool:
         """
         .. note::
             :class: toggle
@@ -980,8 +979,8 @@ class FtaSettingAtt(SettingController):
 
         return self.fta_setting_att.DimMove2dPartMod
 
-    @dim_move2d_part_mod.setter
-    def dim_move2d_part_mod(self, value: bool):
+    @dim_move_2d_part_mod.setter
+    def dim_move_2d_part_mod(self, value: bool):
         """
         :param bool value:
         """
@@ -1383,7 +1382,7 @@ class FtaSettingAtt(SettingController):
         self.fta_setting_att.NoaCreation = value
 
     @property
-    def non_semantic_allways_upgrade(self) -> bool:
+    def non_semantic_always_upgrade(self) -> bool:
         """
         .. note::
             :class: toggle
@@ -1401,8 +1400,8 @@ class FtaSettingAtt(SettingController):
 
         return self.fta_setting_att.NonSemanticAllwaysUpgrade
 
-    @non_semantic_allways_upgrade.setter
-    def non_semantic_allways_upgrade(self, value: bool):
+    @non_semantic_always_upgrade.setter
+    def non_semantic_always_upgrade(self, value: bool):
         """
         :param bool value:
         """
@@ -1410,7 +1409,7 @@ class FtaSettingAtt(SettingController):
         self.fta_setting_att.NonSemanticAllwaysUpgrade = value
 
     @property
-    def non_semantic_allways_upgrade_general_tol(self) -> bool:
+    def non_semantic_always_upgrade_general_tol(self) -> bool:
         """
         .. note::
             :class: toggle
@@ -1429,8 +1428,8 @@ class FtaSettingAtt(SettingController):
 
         return self.fta_setting_att.NonSemanticAllwaysUpgradeGeneralTol
 
-    @non_semantic_allways_upgrade_general_tol.setter
-    def non_semantic_allways_upgrade_general_tol(self, value: bool):
+    @non_semantic_always_upgrade_general_tol.setter
+    def non_semantic_always_upgrade_general_tol(self, value: bool):
         """
         :param bool value:
         """
@@ -1784,7 +1783,7 @@ class FtaSettingAtt(SettingController):
         """
         return self.fta_setting_att.GetAngulaireGeneralTolClassInfo(admin_level, o_locked)
 
-    def get_annot_dim_invalid_color(self, o_value_r: int, o_value_g: int, o_value_b: int) -> None:
+    def get_annot_dim_invalid_colour(self, o_value_r: int, o_value_g: int, o_value_b: int) -> None:
         """
         .. note::
             :class: toggle
@@ -1804,7 +1803,7 @@ class FtaSettingAtt(SettingController):
         """
         return self.fta_setting_att.GetAnnotDimInvalidColor(o_value_r, o_value_g, o_value_b)
 
-    def get_annot_dim_invalid_color_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_annot_dim_invalid_colour_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
         """
         .. note::
             :class: toggle
@@ -1887,7 +1886,7 @@ class FtaSettingAtt(SettingController):
         """
         return self.fta_setting_att.GetAnnotDimInvalidInfo(admin_level, o_locked)
 
-    def get_annot_dim_on_deleted_geom_color(self, o_value_r: int, o_value_g: int, o_value_b: int) -> None:
+    def get_annot_dim_on_deleted_geom_colour(self, o_value_r: int, o_value_g: int, o_value_b: int) -> None:
         """
         .. note::
             :class: toggle
@@ -1907,7 +1906,7 @@ class FtaSettingAtt(SettingController):
         """
         return self.fta_setting_att.GetAnnotDimOnDeletedGeomColor(o_value_r, o_value_g, o_value_b)
 
-    def get_annot_dim_on_deleted_geom_color_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_annot_dim_on_deleted_geom_colour_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
         """
         .. note::
             :class: toggle
@@ -1999,7 +1998,7 @@ class FtaSettingAtt(SettingController):
         """
         return self.fta_setting_att.GetAnnotDimOnDeletedGeomInfo(admin_level, o_locked)
 
-    def get_annot_dim_on_unloaded_geom_color(self, o_value_r: int, o_value_g: int, o_value_b: int) -> None:
+    def get_annot_dim_on_unloaded_geom_colour(self, o_value_r: int, o_value_g: int, o_value_b: int) -> None:
         """
         .. note::
             :class: toggle
@@ -2019,7 +2018,7 @@ class FtaSettingAtt(SettingController):
         """
         return self.fta_setting_att.GetAnnotDimOnUnloadedGeomColor(o_value_r, o_value_g, o_value_b)
 
-    def get_annot_dim_on_unloaded_geom_color_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_annot_dim_on_unloaded_geom_colour_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
         """
         .. note::
             :class: toggle
@@ -2168,7 +2167,7 @@ class FtaSettingAtt(SettingController):
         """
         return self.fta_setting_att.GetBodyHideInCaptureInfo(admin_level, o_locked)
 
-    def get_catfta_chamfer_general_tol_class_info(self, admin_level: str, o_locked: str) -> bool:
+    def get_cat_fta_chamfer_general_tol_class_info(self, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
             :class: toggle
@@ -2206,7 +2205,7 @@ class FtaSettingAtt(SettingController):
         """
         return self.fta_setting_att.GetCATFTAChamferGeneralTolClassInfo(admin_level, o_locked)
 
-    def get_catfta_edges_color(self, o_value_r: int, o_value_g: int, o_value_b: int) -> None:
+    def get_cat_fta_edges_colour(self, o_value_r: int, o_value_g: int, o_value_b: int) -> None:
         """
         .. note::
             :class: toggle
@@ -2226,7 +2225,7 @@ class FtaSettingAtt(SettingController):
         """
         return self.fta_setting_att.GetCATFTAEdgesColor(o_value_r, o_value_g, o_value_b)
 
-    def get_catfta_edges_color_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_cat_fta_edges_colour_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
         """
         .. note::
             :class: toggle
@@ -2280,7 +2279,7 @@ class FtaSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_catfta_edges_line_type_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_cat_fta_edges_line_type_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
         """
         .. note::
             :class: toggle
@@ -2334,7 +2333,7 @@ class FtaSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_catfta_edges_thickness_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_cat_fta_edges_thickness_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
         """
         .. note::
             :class: toggle
@@ -2388,7 +2387,7 @@ class FtaSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_catftauf_auto_tolerancing_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_cat_fta_uf_auto_tolerancing_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
         """
         .. note::
             :class: toggle
@@ -2442,7 +2441,7 @@ class FtaSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_catfta_use_last_tolerances_info(self, admin_level: str, o_locked: str) -> bool:
+    def get_cat_fta_use_last_tolerances_info(self, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
             :class: toggle
@@ -2920,7 +2919,7 @@ class FtaSettingAtt(SettingController):
         """
         return self.fta_setting_att.GetDimLineUpStackInfo(admin_level, o_locked)
 
-    def get_dim_manual_positionning_info(self, admin_level: str, o_locked: str) -> bool:
+    def get_dim_manual_positioning_info(self, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
             :class: toggle
@@ -2940,7 +2939,7 @@ class FtaSettingAtt(SettingController):
         """
         return self.fta_setting_att.GetDimManualPositionningInfo(admin_level, o_locked)
 
-    def get_dim_move2d_part_cre_info(self, admin_level: str, o_locked: str) -> bool:
+    def get_dim_move_2d_part_cre_info(self, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
             :class: toggle
@@ -2960,7 +2959,7 @@ class FtaSettingAtt(SettingController):
         """
         return self.fta_setting_att.GetDimMove2dPartCreInfo(admin_level, o_locked)
 
-    def get_dim_move2d_part_mod_info(self, admin_level: str, o_locked: str) -> bool:
+    def get_dim_move_2d_part_mod_info(self, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
             :class: toggle
@@ -3290,7 +3289,7 @@ class FtaSettingAtt(SettingController):
         """
         return self.fta_setting_att.GetNoaCreationInfo(admin_level, o_locked)
 
-    def get_non_semantic_allways_upgrade_general_tol_info(self, admin_level: str, o_locked: str) -> bool:
+    def get_non_semantic_always_upgrade_general_tol_info(self, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
             :class: toggle
@@ -3311,7 +3310,7 @@ class FtaSettingAtt(SettingController):
         """
         return self.fta_setting_att.GetNonSemanticAllwaysUpgradeGeneralTolInfo(admin_level, o_locked)
 
-    def get_non_semantic_allways_upgrade_info(self, admin_level: str, o_locked: str) -> bool:
+    def get_non_semantic_always_upgrade_info(self, admin_level: str, o_locked: str) -> bool:
         """
         .. note::
             :class: toggle
@@ -3511,7 +3510,7 @@ class FtaSettingAtt(SettingController):
         """
         return self.fta_setting_att.GetShiftedProfileInfo(admin_level, o_locked)
 
-    def get_true_dimension_color(self, o_value_r: int, o_value_g: int, o_value_b: int) -> None:
+    def get_true_dimension_colour(self, o_value_r: int, o_value_g: int, o_value_b: int) -> None:
         """
         .. note::
             :class: toggle
@@ -3531,7 +3530,7 @@ class FtaSettingAtt(SettingController):
         """
         return self.fta_setting_att.GetTrueDimensionColor(o_value_r, o_value_g, o_value_b)
 
-    def get_true_dimension_color_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
+    def get_true_dimension_colour_info(self, io_admin_level: str, io_locked: str, o_modified: bool) -> None:
         """
         .. note::
             :class: toggle
@@ -3728,7 +3727,7 @@ class FtaSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_annot_dim_invalid_color(self, i_value_r: int, i_value_g: int, i_value_b: int) -> None:
+    def set_annot_dim_invalid_colour(self, i_value_r: int, i_value_g: int, i_value_b: int) -> None:
         """
         .. note::
             :class: toggle
@@ -3748,7 +3747,7 @@ class FtaSettingAtt(SettingController):
         """
         return self.fta_setting_att.SetAnnotDimInvalidColor(i_value_r, i_value_g, i_value_b)
 
-    def set_annot_dim_invalid_color_lock(self, i_locked: bool) -> None:
+    def set_annot_dim_invalid_colour_lock(self, i_locked: bool) -> None:
         """
         .. note::
             :class: toggle
@@ -3840,7 +3839,7 @@ class FtaSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_annot_dim_on_deleted_geom_color(self, i_value_r: int, i_value_g: int, i_value_b: int) -> None:
+    def set_annot_dim_on_deleted_geom_colour(self, i_value_r: int, i_value_g: int, i_value_b: int) -> None:
         """
         .. note::
             :class: toggle
@@ -3860,7 +3859,7 @@ class FtaSettingAtt(SettingController):
         """
         return self.fta_setting_att.SetAnnotDimOnDeletedGeomColor(i_value_r, i_value_g, i_value_b)
 
-    def set_annot_dim_on_deleted_geom_color_lock(self, i_locked: bool) -> None:
+    def set_annot_dim_on_deleted_geom_colour_lock(self, i_locked: bool) -> None:
         """
         .. note::
             :class: toggle
@@ -3944,7 +3943,7 @@ class FtaSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_annot_dim_on_unloaded_geom_color(self, i_value_r: int, i_value_g: int, i_value_b: int) -> None:
+    def set_annot_dim_on_unloaded_geom_colour(self, i_value_r: int, i_value_g: int, i_value_b: int) -> None:
         """
         .. note::
             :class: toggle
@@ -3964,7 +3963,7 @@ class FtaSettingAtt(SettingController):
         """
         return self.fta_setting_att.SetAnnotDimOnUnloadedGeomColor(i_value_r, i_value_g, i_value_b)
 
-    def set_annot_dim_on_unloaded_geom_color_lock(self, i_locked: bool) -> None:
+    def set_annot_dim_on_unloaded_geom_colour_lock(self, i_locked: bool) -> None:
         """
         .. note::
             :class: toggle
@@ -4122,7 +4121,7 @@ class FtaSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_catfta_chamfer_general_tol_class_lock(self, i_locked: bool) -> None:
+    def set_cat_fta_chamfer_general_tol_class_lock(self, i_locked: bool) -> None:
         """
         .. note::
             :class: toggle
@@ -4165,7 +4164,7 @@ class FtaSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_catfta_edges_color(self, i_value_r: int, i_value_g: int, i_value_b: int) -> None:
+    def set_cat_fta_edges_colour(self, i_value_r: int, i_value_g: int, i_value_b: int) -> None:
         """
         .. note::
             :class: toggle
@@ -4185,7 +4184,7 @@ class FtaSettingAtt(SettingController):
         """
         return self.fta_setting_att.SetCATFTAEdgesColor(i_value_r, i_value_g, i_value_b)
 
-    def set_catfta_edges_color_lock(self, i_locked: bool) -> None:
+    def set_cat_fta_edges_colour_lock(self, i_locked: bool) -> None:
         """
         .. note::
             :class: toggle
@@ -4227,7 +4226,7 @@ class FtaSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_catfta_edges_line_type_lock(self, i_locked: bool) -> None:
+    def set_cat_fta_edges_line_type_lock(self, i_locked: bool) -> None:
         """
         .. note::
             :class: toggle
@@ -4269,7 +4268,7 @@ class FtaSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_catfta_edges_thickness_lock(self, i_locked: bool) -> None:
+    def set_cat_fta_edges_thickness_lock(self, i_locked: bool) -> None:
         """
         .. note::
             :class: toggle
@@ -4311,7 +4310,7 @@ class FtaSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_catftauf_auto_tolerancing_lock(self, i_locked: bool) -> None:
+    def set_cat_ftauf_auto_tolerancing_lock(self, i_locked: bool) -> None:
         """
         .. note::
             :class: toggle
@@ -4353,7 +4352,7 @@ class FtaSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_catfta_use_last_tolerances_lock(self, i_locked: bool) -> None:
+    def set_cat_fta_use_last_tolerances_lock(self, i_locked: bool) -> None:
         """
         .. note::
             :class: toggle
@@ -5013,7 +5012,7 @@ class FtaSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_dim_manual_positionning_lock(self, i_locked: bool) -> None:
+    def set_dim_manual_positioning_lock(self, i_locked: bool) -> None:
         """
         .. note::
             :class: toggle
@@ -5044,7 +5043,7 @@ class FtaSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_dim_move2d_part_cre_lock(self, i_locked: bool) -> None:
+    def set_dim_move_2d_part_cre_lock(self, i_locked: bool) -> None:
         """
         .. note::
             :class: toggle
@@ -5075,7 +5074,7 @@ class FtaSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_dim_move2d_part_mod_lock(self, i_locked: bool) -> None:
+    def set_dim_move_2d_part_mod_lock(self, i_locked: bool) -> None:
         """
         .. note::
             :class: toggle
@@ -5555,7 +5554,7 @@ class FtaSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_non_semantic_allways_upgrade_general_tol_lock(self, i_locked: bool) -> None:
+    def set_non_semantic_always_upgrade_general_tol_lock(self, i_locked: bool) -> None:
         """
         .. note::
             :class: toggle
@@ -5588,7 +5587,7 @@ class FtaSettingAtt(SettingController):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_non_semantic_allways_upgrade_lock(self, i_locked: bool) -> None:
+    def set_non_semantic_always_upgrade_lock(self, i_locked: bool) -> None:
         """
         .. note::
             :class: toggle
@@ -6005,4 +6004,4 @@ class FtaSettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'FtaSettingAtt(name="{ self.name }")'
+        return f'FtaSettingAtt(name="{self.name}")'
