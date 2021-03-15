@@ -10,10 +10,12 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.tps_interfaces.annotations import Annotations
+from pycatia.tps_interfaces.user_surface import UserSurface
+from pycatia.types import cat_variant
 
 
 class ReferenceFrame(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -182,7 +184,7 @@ class ReferenceFrame(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_degrees_of_freedom(self, in_box: CATVariant, o_value: str) -> None:
+    def get_degrees_of_freedom(self, in_box: cat_variant, o_value: str) -> None:
         """
         .. note::
             :class: toggle
@@ -319,7 +321,7 @@ class ReferenceFrame(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def set_degrees_of_freedom(self, in_box: CATVariant, i_value: str) -> None:
+    def set_degrees_of_freedom(self, in_box: cat_variant, i_value: str) -> None:
         """
         .. note::
             :class: toggle
@@ -446,4 +448,4 @@ class ReferenceFrame(AnyObject):
         return self.reference_frame.SetFrame(i_first_box, i_second_box, i_third_box)
 
     def __repr__(self):
-        return f'ReferenceFrame(name="{ self.name }")'
+        return f'ReferenceFrame(name="{self.name}")'

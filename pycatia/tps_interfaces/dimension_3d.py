@@ -11,10 +11,13 @@
 
 from pycatia.drafting_interfaces.drawing_dimension import DrawingDimension
 from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.tps_interfaces.controlled_radius import ControlledRadius
+from pycatia.tps_interfaces.dimension_limit import DimensionLimit
+from pycatia.tps_interfaces.dimension_pattern import DimensionPattern
+from pycatia.tps_interfaces.envelop_condition import EnvelopCondition
 
 
 class Dimension3D(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -36,7 +39,7 @@ class Dimension3D(AnyObject):
         super().__init__(com_object)
         self.dimension_3d = com_object
 
-    def controled_radius(self) -> ControledRadius:
+    def controled_radius(self) -> ControlledRadius:
         """
         .. note::
             :class: toggle
@@ -54,7 +57,7 @@ class Dimension3D(AnyObject):
         :return: ControledRadius
         :rtype: ControledRadius
         """
-        return ControledRadius(self.dimension_3d.ControledRadius())
+        return ControlledRadius(self.dimension_3d.ControlledRadius())
 
     def dimension_limit(self) -> DimensionLimit:
         """
@@ -96,7 +99,7 @@ class Dimension3D(AnyObject):
         """
         return DimensionPattern(self.dimension_3d.DimensionPattern())
 
-    def envelop_condition(self) -> EnvelopCondition:
+    def envelope_condition(self) -> EnvelopCondition:
         """
         .. note::
             :class: toggle
@@ -114,9 +117,9 @@ class Dimension3D(AnyObject):
         :return: EnvelopCondition
         :rtype: EnvelopCondition
         """
-        return EnvelopCondition(self.dimension_3d.EnvelopCondition())
+        return EnvelopCondition(self.dimension_3d.EnvelopeCondition())
 
-    def get2d_annot(self) -> DrawingDimension:
+    def get_2d_annot(self) -> DrawingDimension:
         """
         .. note::
             :class: toggle
@@ -136,7 +139,7 @@ class Dimension3D(AnyObject):
         """
         return DrawingDimension(self.dimension_3d.Get2dAnnot())
 
-    def has_a_controled_radius(self) -> bool:
+    def has_a_controlled_radius(self) -> bool:
         """
         .. note::
             :class: toggle
@@ -159,7 +162,7 @@ class Dimension3D(AnyObject):
         """
         return self.dimension_3d.HasAControledRadius()
 
-    def has_an_envelop_condition(self) -> bool:
+    def has_an_envelope_condition(self) -> bool:
         """
         .. note::
             :class: toggle
@@ -283,4 +286,4 @@ class Dimension3D(AnyObject):
         return self.dimension_3d.MoveValue(x, y, sub_part, dim_angle_behavior)
 
     def __repr__(self):
-        return f'Dimension3D(name="{ self.name }")'
+        return f'Dimension3D(name="{self.name}")'

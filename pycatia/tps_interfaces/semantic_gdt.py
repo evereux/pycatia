@@ -10,10 +10,21 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.tps_interfaces.associated_ref_frame import AssociatedRefFrame
+from pycatia.tps_interfaces.composite_tolerance import CompositeTolerance
+from pycatia.tps_interfaces.free_state import FreeState
+from pycatia.tps_interfaces.material_condition import MaterialCondition
+from pycatia.tps_interfaces.particular_tol_elem import ParticularTolElem
+from pycatia.tps_interfaces.projected_tolerance_zone import ProjectedToleranceZone
+from pycatia.tps_interfaces.shifted_profile_tolerance import ShiftedProfileTolerance
+from pycatia.tps_interfaces.tps_parallel_on_screen import TPSParallelOnScreen
+from pycatia.tps_interfaces.tangent_plane import TangentPlane
+from pycatia.tps_interfaces.tolerance_per_unit_basis_restrictive_value import TolerancePerUnitBasisRestrictiveValue
+from pycatia.tps_interfaces.tolerance_unit_basis_value import ToleranceUnitBasisValue
+from pycatia.tps_interfaces.tolerance_zone import ToleranceZone
 
 
 class SemanticGdt(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -519,4 +530,4 @@ class SemanticGdt(AnyObject):
         return ToleranceZone(self.semantic_gdt.ToleranceZone())
 
     def __repr__(self):
-        return f'SemanticGdt(name="{ self.name }")'
+        return f'SemanticGdt(name="{self.name}")'

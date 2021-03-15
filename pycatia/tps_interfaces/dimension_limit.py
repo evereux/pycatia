@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class DimensionLimit(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -92,7 +91,7 @@ class DimensionLimit(AnyObject):
         self.dimension_limit.Modifier = value
 
     @property
-    def nominalvalue(self) -> float:
+    def nominal_value(self) -> float:
         """
         .. note::
             :class: toggle
@@ -214,4 +213,4 @@ class DimensionLimit(AnyObject):
         return self.dimension_limit.PutLimits(i_bottom, i_up)
 
     def __repr__(self):
-        return f'DimensionLimit(name="{ self.name }")'
+        return f'DimensionLimit(name="{self.name}")'

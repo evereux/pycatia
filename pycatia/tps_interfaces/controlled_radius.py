@@ -12,8 +12,7 @@
 from pycatia.system_interfaces.any_object import AnyObject
 
 
-class ControledRadius(AnyObject):
-
+class ControlledRadius(AnyObject):
     """
         .. note::
             :class: toggle
@@ -35,7 +34,7 @@ class ControledRadius(AnyObject):
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.controled_radius = com_object
+        self.controlled_radius = com_object
 
     @property
     def modifier(self) -> str:
@@ -52,7 +51,7 @@ class ControledRadius(AnyObject):
         :rtype: str
         """
 
-        return self.controled_radius.Modifier
+        return self.controlled_radius.Modifier
 
     def __repr__(self):
-        return f'ControledRadius(name="{ self.name }")'
+        return f'ControlledRadius(name="{self.name}")'

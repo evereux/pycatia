@@ -11,10 +11,10 @@
 
 from pycatia.drafting_interfaces.drawing_welding import DrawingWelding
 from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.tps_interfaces.tps_parallel_on_screen import TPSParallelOnScreen
 
 
 class Weld(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -35,7 +35,7 @@ class Weld(AnyObject):
         super().__init__(com_object)
         self.weld = com_object
 
-    def get2d_annot(self) -> DrawingWelding:
+    def get_2d_annot(self) -> DrawingWelding:
         """
         .. note::
             :class: toggle
@@ -66,4 +66,4 @@ class Weld(AnyObject):
         return TPSParallelOnScreen(self.weld.TPSParallelOnScreen())
 
     def __repr__(self):
-        return f'Weld(name="{ self.name }")'
+        return f'Weld(name="{self.name}")'

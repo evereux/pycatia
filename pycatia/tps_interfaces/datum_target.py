@@ -10,10 +10,10 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.tps_interfaces.user_surface import UserSurface
 
 
 class DatumTarget(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -312,4 +312,4 @@ class DatumTarget(AnyObject):
         return self.datum_target.SetRectangularAreaSize(i_length, i_width)
 
     def __repr__(self):
-        return f'DatumTarget(name="{ self.name }")'
+        return f'DatumTarget(name="{self.name}")'
