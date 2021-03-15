@@ -9,6 +9,8 @@
         
 """
 
+from typing import TYPE_CHECKING
+
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.tps_interfaces.datum_simple import DatumSimple
 from pycatia.tps_interfaces.datum_target import DatumTarget
@@ -20,12 +22,14 @@ from pycatia.tps_interfaces.non_semantic_datum import NonSemanticDatum
 from pycatia.tps_interfaces.non_semantic_datum_target import NonSemanticDatumTarget
 from pycatia.tps_interfaces.non_semantic_dimension import NonSemanticDimension
 from pycatia.tps_interfaces.non_semantic_gdt import NonSemanticGDT
-from pycatia.tps_interfaces.reference_frame import ReferenceFrame
 from pycatia.tps_interfaces.roughness import Roughness
 from pycatia.tps_interfaces.semantic_gdt import SemanticGDT
 from pycatia.tps_interfaces.text import Text
 from pycatia.tps_interfaces.tps_view import TPSView
 from pycatia.tps_interfaces.weld import Weld
+
+if TYPE_CHECKING:
+    from pycatia.tps_interfaces.reference_frame import ReferenceFrame
 
 
 class Annotation2(AnyObject):
@@ -426,7 +430,7 @@ class Annotation2(AnyObject):
 
         return NonSemanticGDT(self.annotation_2.NonSemanticGDT())
 
-    def reference_frame(self) -> ReferenceFrame:
+    def reference_frame(self) -> 'ReferenceFrame':
         """
         .. note::
             :class: toggle
@@ -439,7 +443,7 @@ class Annotation2(AnyObject):
         :return: ReferenceFrame
         :rtype: ReferenceFrame
         """
-
+        from pycatia.tps_interfaces.reference_frame import ReferenceFrame
         return ReferenceFrame(self.annotation_2.ReferenceFrame())
 
     def roughness(self) -> Roughness:

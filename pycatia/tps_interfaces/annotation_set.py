@@ -9,7 +9,8 @@
         
 """
 
-from pycatia.mec_mod_interfaces.part import Part
+from typing import TYPE_CHECKING
+
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.tps_interfaces.annotation_factory import AnnotationFactory
 from pycatia.tps_interfaces.annotation_factory_2 import AnnotationFactory2
@@ -19,6 +20,9 @@ from pycatia.tps_interfaces.tps_view import TPSView
 from pycatia.tps_interfaces.tps_view_factory import TPSViewFactory
 from pycatia.tps_interfaces.annotations import Annotations
 from pycatia.tps_interfaces.tps_views import TPSViews
+
+if TYPE_CHECKING:
+    from pycatia.mec_mod_interfaces.part import Part
 
 
 class AnnotationSet(AnyObject):
@@ -373,7 +377,7 @@ class AnnotationSet(AnyObject):
         """
         return self.annotation_set.ApplyViewReUseWhenCopySetTo()
 
-    def global_copy_set_to(self, i_destination_part: Part) -> str:
+    def global_copy_set_to(self, i_destination_part: 'Part') -> str:
         """
         .. note::
             :class: toggle
@@ -395,6 +399,7 @@ class AnnotationSet(AnyObject):
         :return: str
         :rtype: str
         """
+        from pycatia.mec_mod_interfaces.part import Part
         return self.annotation_set.GlobalCopySetTo(i_destination_part.com_object)
 
     def global_copy_set_to_with_transformation(self, i_destination_part: 'Part', i_transfo: tuple) -> str:
