@@ -13,7 +13,7 @@ from typing import Iterator
 from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.constraint import Constraint
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types import cat_variant
+from pycatia.types.general import cat_variant
 
 
 class Constraints(Collection):

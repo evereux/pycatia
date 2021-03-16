@@ -15,7 +15,7 @@ from pywintypes import com_error
 from pycatia.exception_handling.exceptions import CATIAApplicationException
 from pycatia.mec_mod_interfaces.hybrid_body import HybridBody
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types import cat_variant
+from pycatia.types.general import cat_variant
 
 
 class HybridBodies(Collection):

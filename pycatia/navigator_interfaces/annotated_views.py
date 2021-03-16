@@ -13,7 +13,7 @@ from typing import Iterator
 from pycatia.in_interfaces.viewpoint_3d import Viewpoint3D
 from pycatia.navigator_interfaces.annotated_view import AnnotatedView
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types import cat_variant
+from pycatia.types.general import cat_variant
 
 
 class AnnotatedViews(Collection):

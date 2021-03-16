@@ -25,7 +25,7 @@ documents = caa.documents
 documents.add('Part')
 document = caa.active_document
 
-part = document.part()
+part = document.part
 hybrid_bodies = part.hybrid_bodies
 hsf = part.hybrid_shape_factory
 

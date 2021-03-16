@@ -8,7 +8,7 @@ from pywintypes import com_error
 from pycatia.exception_handling import CATIAApplicationException
 from pycatia.in_interfaces.document import Document
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types import cat_variant, list_str
+from pycatia.types.general import cat_variant, list_str
 
 
 class Documents(Collection):

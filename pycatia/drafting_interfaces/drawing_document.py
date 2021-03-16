@@ -9,15 +9,18 @@
         
 """
 
-from pycatia.drafting_interfaces.drawing_root import DrawingRoot
+from typing import TYPE_CHECKING
+
 from pycatia.drafting_interfaces.drawing_sheets import DrawingSheets
 from pycatia.in_interfaces.document import Document
 from pycatia.knowledge_interfaces.parameters import Parameters
 from pycatia.knowledge_interfaces.relations import Relations
 
+if TYPE_CHECKING:
+    from pycatia.drafting_interfaces.drawing_root import DrawingRoot
+
 
 class DrawingDocument(Document):
-
     """
         .. note::
             :class: toggle
@@ -41,7 +44,7 @@ class DrawingDocument(Document):
         self.drawing_document = com_object
 
     @property
-    def drawing_root(self) -> DrawingRoot:
+    def drawing_root(self) -> 'DrawingRoot':
         """
         .. note::
             :class: toggle
@@ -60,7 +63,7 @@ class DrawingDocument(Document):
         :return: DrawingRoot
         :rtype: DrawingRoot
         """
-
+        from pycatia.drafting_interfaces.drawing_root import DrawingRoot
         return DrawingRoot(self.drawing_document.DrawingRoot)
 
     @property
@@ -226,4 +229,4 @@ class DrawingDocument(Document):
         return self.drawing_document.Update()
 
     def __repr__(self):
-        return f'DrawingDocument(name="{ self.name }")'
+        return f'DrawingDocument(name="{self.name}")'

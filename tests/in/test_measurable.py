@@ -34,7 +34,7 @@ def test_area():
         document = caa.document
         spa_workbench = document.spa_workbench()
 
-        part = document.part()
+        part = document.part
         bodies = part.bodies
         body = bodies.item(1)
 
@@ -52,7 +52,7 @@ def test_geometry_name():
         document = caa.document
         spa_workbench = document.spa_workbench()
 
-        part = document.part()
+        part = document.part
         bodies = part.bodies
         body = bodies.item(1)
 
@@ -67,7 +67,7 @@ def test_length():
         document = caa.document
         spa_workbench = document.spa_workbench()
 
-        part = document.part()
+        part = document.part
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name(geom_set_lines)
         line1 = hybrid_body.hybrid_shapes.item(1)
@@ -84,7 +84,7 @@ def test_perimeter():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
         spa_workbench = document.spa_workbench()
-        part = document.part()
+        part = document.part
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name(geom_set_surfaces)
         surface = hybrid_body.hybrid_shapes.item(1)
@@ -102,7 +102,7 @@ def test_radius():
         document = caa.document
         spa_workbench = document.spa_workbench()
 
-        part = document.part()
+        part = document.part
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name(geom_set_arcs)
         arc = hybrid_body.hybrid_shapes.item(1)
@@ -119,7 +119,7 @@ def test_angle_between():
         document = caa.document
         spa_workbench = document.spa_workbench()
 
-        part = document.part()
+        part = document.part
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name(geom_set_lines)
         line1 = hybrid_body.hybrid_shapes.item(1)
@@ -144,7 +144,7 @@ def test_get_axis():
         document = caa.document
         spa_workbench = document.spa_workbench()
 
-        part = document.part()
+        part = document.part
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name(geom_set_arcs)
         arc = hybrid_body.hybrid_shapes.item(1)
@@ -164,7 +164,7 @@ def test_get_axis_system():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
 
-        part = document.part()
+        part = document.part
         spa_workbench = document.spa_workbench()
 
         axis_systems = part.axis_systems
@@ -207,7 +207,7 @@ def test_get_direction():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
 
-        part = document.part()
+        part = document.part
         spa_workbench = document.spa_workbench()
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name(geom_set_lines)
@@ -229,7 +229,7 @@ def test_get_minimum_distance():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
 
-        part = document.part()
+        part = document.part
         spa_workbench = document.spa_workbench()
 
         hybrid_bodies = part.hybrid_bodies
@@ -252,7 +252,7 @@ def test_get_minimum_distance_points():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
 
-        part = document.part()
+        part = document.part
         spa_workbench = document.spa_workbench()
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name(geom_set_points)
@@ -284,7 +284,7 @@ def test_get_plane():
         document = caa.document
 
         spa_workbench = document.spa_workbench()
-        part = document.part()
+        part = document.part
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name(geom_set_planes)
         plane = hybrid_body.hybrid_shapes.item(1)
@@ -313,7 +313,7 @@ def test_get_point():
         document = caa.document
         spa_workbench = document.spa_workbench()
 
-        part = document.part()
+        part = document.part
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name(geom_set_points)
         point1 = hybrid_body.hybrid_shapes.item(3)
@@ -336,7 +336,7 @@ def test_get_points_on_axis():
         document = caa.document
         spa_workbench = document.spa_workbench()
 
-        part = document.part()
+        part = document.part
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name(geom_set_cylinders)
         cylinder = hybrid_body.hybrid_shapes.item(1)
@@ -365,7 +365,7 @@ def test_get_points_on_curve():
         document = caa.document
         spa_workbench = document.spa_workbench()
 
-        part = document.part()
+        part = document.part
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name(geom_set_lines)
         line1 = hybrid_body.hybrid_shapes.item(1)
@@ -394,7 +394,7 @@ def test_volume():
         document = caa.document
         spa_workbench = document.spa_workbench()
 
-        part = document.part()
+        part = document.part
         bodies = part.bodies
         body = bodies.item(1)
 
@@ -412,7 +412,7 @@ def test_centre_of_gravity():
         document = caa.document
         spa_workbench = document.spa_workbench()
 
-        part = document.part()
+        part = document.part
         bodies = part.bodies
         body = bodies.item(1)
 
@@ -436,7 +436,7 @@ def test_angle():
         document = caa.document
         spa_workbench = document.spa_workbench()
 
-        part = document.part()
+        part = document.part
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name(geom_set_arcs)
         arc = hybrid_body.hybrid_shapes.item(1)
@@ -454,7 +454,7 @@ def test_center():
         document = caa.document
 
         spa_workbench = document.spa_workbench()
-        part = document.part()
+        part = document.part
         hybrid_bodies = part.hybrid_bodies
         hybrid_body = hybrid_bodies.get_item_by_name(geom_set_arcs)
         arc = hybrid_body.hybrid_shapes.item(1)

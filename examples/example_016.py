@@ -22,7 +22,7 @@ from pycatia.enumeration.enumeration_types import cat_constraint_type, cat_const
 
 caa = catia()
 document = caa.active_document
-part = document.part()
+part = document.part
 
 hsf = part.hybrid_shape_factory
 
