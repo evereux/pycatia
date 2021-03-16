@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.5.1
+## 0.5.0
 * Added tps_interfaces.
 * Document() no longer contains methods specific to Parts, Products and Drawings. 
   This will most likely break your scripts. Please see updated examples. 
