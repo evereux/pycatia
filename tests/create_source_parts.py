@@ -27,7 +27,7 @@ def create_cat_part_measurable(file_name):
 
     document = caa.active_document
     document.save_as(file_name)
-    product = document.product()
+    product = document.product
     product.part_number = "cat_part_measurable"
     product.revision = "A.1"
     product.nomenclature = "pycatia part for testing"

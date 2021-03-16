@@ -27,7 +27,7 @@ documents = caa.documents
 documents.open(r'tests\cat_files\part_measurable.CATPart')
 
 document = caa.active_document
-part = document.part()
+part = document.part
 spa_workbench = document.spa_workbench()
 
 hybrid_bodies = part.hybrid_bodies

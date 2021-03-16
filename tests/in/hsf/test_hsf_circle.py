@@ -13,7 +13,7 @@ def test_circle3_points():
 
     with CATIADocHandler(new_document='Part') as caa:
         document = caa.document
-        part = document.part()
+        part = document.part
         hsf = part.hybrid_shape_factory
 
         hbs = part.hybrid_bodies

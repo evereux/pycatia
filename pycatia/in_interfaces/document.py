@@ -18,11 +18,8 @@ from pycatia.in_interfaces.cameras import Cameras
 from pycatia.in_interfaces.reference import Reference
 from pycatia.in_interfaces.window import Window
 from pycatia.in_interfaces.workbench import Workbench
-from pycatia.mec_mod_interfaces.part import Part
-from pycatia.product_structure_interfaces.product import Product
 from pycatia.space_analyses_interfaces.spa_workbench import SPAWorkbench
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.drafting_interfaces.drawing_root import DrawingRoot
 
 if TYPE_CHECKING:
     from pycatia.in_interfaces.selection import Selection
@@ -160,7 +157,7 @@ class Document(AnyObject):
         :return: bool
         """
         try:
-            if self.part().part:
+            if self.part.part:
                 return True
         except AttributeError:
             return False
@@ -172,7 +169,7 @@ class Document(AnyObject):
 
         :return: bool
         """
-        if self.product().is_catproduct():
+        if self.product.is_catproduct():
             return True
         return False
 
@@ -416,16 +413,6 @@ class Document(AnyObject):
         :rtype: Reference
         """
         return Reference(self.document.CreateReferenceFromName(i_label))
-
-    def drawing_root(self) -> DrawingRoot:
-        """
-        :return: DrawingRoot
-        :rtype: DrawingRoot
-        """
-        try:
-            return DrawingRoot(self.document.DrawingRoot)
-        except AttributeError:
-            raise CATIAApplicationException('Is document a Drawing?')
 
     def get_workbench(self, workbench_name: str) -> Workbench:
         """
@@ -707,15 +694,6 @@ class Document(AnyObject):
         """
         return Window(self.document.NewWindow())
 
-    def part(self):
-        """
-        :return: Part()
-        """
-        try:
-            return Part(self.document.Part)
-        except AttributeError:
-            raise CATIAApplicationException('Is document .CATPart?')
-
     def path(self):
         """
 
@@ -733,13 +711,6 @@ class Document(AnyObject):
         """
 
         return Path(self.document.FullName)
-
-    def product(self):
-        """
-        :return: :class:`Product()`
-        """
-
-        return Product(self.document.Product)
 
     def remove_filter(self, i_filter_name):
         """

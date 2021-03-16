@@ -13,7 +13,7 @@ from typing import Iterator
 from pycatia.mec_mod_interfaces.boundary import Boundary
 from pycatia.mec_mod_interfaces.shape import Shape
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types import cat_variant
+from pycatia.types.general import cat_variant
 
 
 class Shapes(Collection):

@@ -10,7 +10,7 @@ from tests.source_files import design_table_1
 def test_relations_count():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
-        part = document.part()
+        part = document.part
         relations = part.relations
 
         assert relations.count == 4
@@ -19,7 +19,7 @@ def test_relations_count():
 def test_relations_create_check():
     with CATIADocHandler(new_document='Part') as caa:
         document = caa.document
-        part = document.part()
+        part = document.part
         parameters = part.parameters
 
         lower_mass = parameters.create_dimension('lower_mass', 'MASS', 5)
@@ -37,7 +37,7 @@ def test_relations_create_check():
 def test_relations_create_design_table():
     with CATIADocHandler(new_document='Part') as caa:
         document = caa.document
-        part = document.part()
+        part = document.part
         relations = part.relations
 
         design_table = relations.create_design_table(
@@ -56,7 +56,7 @@ def test_relations_create_formula():
         comment = "this is a comment"
 
         document = caa.document
-        part = document.part()
+        part = document.part
 
         parameters = part.parameters
 
@@ -78,7 +78,7 @@ def test_relations_create_formula():
 def test_relations_create_horizontal_design_table():
     with CATIADocHandler(new_document='Part') as caa:
         document = caa.document
-        part = document.part()
+        part = document.part
         relations = part.relations
 
         design_table = relations.create_horizontal_design_table('new-design-table', 'this is a comment', True,
@@ -90,7 +90,7 @@ def test_relations_create_horizontal_design_table():
 def test_relations_create_law():
     with CATIADocHandler(new_document='Part') as caa:
         document = caa.document
-        part = document.part()
+        part = document.part
         relations = part.relations
 
         law = relations.create_law('new-law', 'this is a comment', '/* code comments */')
@@ -101,7 +101,7 @@ def test_relations_create_law():
 def test_relations_create_program():
     with CATIADocHandler(new_document='Part') as caa:
         document = caa.document
-        part = document.part()
+        part = document.part
         relations = part.relations
 
         program = relations.create_program('new-program', 'this is a comment', '/* code comments */')
@@ -112,7 +112,7 @@ def test_relations_create_program():
 def test_relations_create_rule_base():
     with CATIADocHandler(new_document='Part') as caa:
         document = caa.document
-        part = document.part()
+        part = document.part
         relations = part.relations
 
         rule_base = relations.create_rule_base('new-rule-base')
@@ -123,7 +123,7 @@ def test_relations_create_rule_base():
 def test_relations_create_set_of_equations():
     with CATIADocHandler(new_document='Part') as caa:
         document = caa.document
-        part = document.part()
+        part = document.part
         parameters = part.parameters
         relations = part.relations
 
@@ -139,7 +139,7 @@ def test_relations_create_set_of_equations():
 def test_relations_create_set_of_relations():
     with CATIADocHandler(new_document='Part') as caa:
         document = caa.document
-        part = document.part()
+        part = document.part
         relations = part.relations
         relations.create_set_of_relations(part)
 
@@ -153,7 +153,7 @@ def test_relations_generate_xml():
     # xml_name = Path(os.getcwd(), 'testxml.xml')
     # with CATIADocHandler(cat_part_3) as caa:
     #     document = caa.document
-    #     part = document.part()
+    #     part = document.part
     #
     #     parameters = part.parameters
     #
@@ -174,7 +174,7 @@ def test_relations_generate_xml():
 def test_relations_get_items():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
-        part = document.part()
+        part = document.part
 
         relations = part.relations
         items = relations.items()
@@ -185,7 +185,7 @@ def test_relations_get_items():
 def test_relations_get_item_by_index():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
-        part = document.part()
+        part = document.part
 
         relations = part.relations
         item = relations.get_item_by_index(1)
@@ -196,7 +196,7 @@ def test_relations_get_item_by_index():
 def test_relations_get_item_names():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
-        part = document.part()
+        part = document.part
 
         relations = part.relations
         item_names = relations.get_item_names()
@@ -208,7 +208,7 @@ def test_relations_get_item_names():
 def test_relations_item():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
-        part = document.part()
+        part = document.part
 
         relations = part.relations
         relation = relations.item(1)
@@ -223,7 +223,7 @@ def test_relations_sub_list():
 def test_relations_remove():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
-        part = document.part()
+        part = document.part
 
         relations = part.relations
         relation = relations.item(1)

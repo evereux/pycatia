@@ -28,7 +28,7 @@ documents.open(r'tests/cat_files/part_measurable.CATPart')
 document = caa.active_document
 
 spa_workbench = document.spa_workbench()
-part = document.part()
+part = document.part
 
 selected = document.search_for_items(['Point'])
 

@@ -12,7 +12,7 @@
 from pycatia.in_interfaces.reference import Reference
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.tps_interfaces.tps_view import TPSView
-from pycatia.types import cat_variant
+from pycatia.types.general import cat_variant
 
 
 class TPSViewFactory(AnyObject):

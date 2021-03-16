@@ -1,8 +1,22 @@
 # Changelog
 
-## 0.4.5
+## 0.5.1
 * Added tps_interfaces.
+* Document() no longer contains methods specific to Parts, Products and Drawings. 
+  This will most likely break your scripts. Please see updated examples. 
+  These methods / properties are now only available in PartDocument, ProductDocument and 
+  DrawingDocument.
+  Example:
+```python
+  caa = catia()
+  documents = caa.documents
+  documents.open(r'tests/cat_files/part_measurable.CATPart')
 
+  # get the active document
+  document = caa.active_document
+  # get the Part() object. NOTE THIS IS NOW A PROPERTY, NOT A METHOD.
+  part = document.part
+```
 
 ## 0.4.4
 Many thanks to Tian-Jionglu for his contributions.

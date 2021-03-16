@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.in_interfaces.camera import Camera
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types import cat_variant
+from pycatia.types.general import cat_variant
 
 
 class Cameras(Collection):
