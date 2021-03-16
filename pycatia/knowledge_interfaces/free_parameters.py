@@ -14,7 +14,7 @@ from typing import TYPE_CHECKING
 
 from pycatia.knowledge_interfaces.free_parameter import FreeParameter
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types import cat_variant
+from pycatia.types.general import cat_variant
 
 if TYPE_CHECKING:
     from pycatia.knowledge_interfaces.real_param import RealParam

@@ -11,7 +11,7 @@
 
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.tps_interfaces.tps_parallel_on_screen import TPSParallelOnScreen
-from pycatia.types import cat_variant
+from pycatia.types.general import cat_variant
 
 
 class FlagNote(AnyObject):

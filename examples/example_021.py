@@ -25,7 +25,7 @@ from pycatia import catia
 
 caa = catia()
 document = caa.active_document
-part = document.part()
+part = document.part
 
 # initialise the hybrid shape factory. this is used to determine the shape type later.
 hsf = part.hybrid_shape_factory

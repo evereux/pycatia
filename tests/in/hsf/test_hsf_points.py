@@ -10,7 +10,7 @@ def test_point_between():
 
     with CATIADocHandler(new_document='Part') as caa:
         document = caa.document
-        part = document.part()
+        part = document.part
         hsf = part.hybrid_shape_factory
 
         hybrid_bodies = part.hybrid_bodies
@@ -39,7 +39,7 @@ def test_point_center():
 
     with CATIADocHandler(new_document='Part') as caa:
         document = caa.document
-        part = document.part()
+        part = document.part
         hsf = part.hybrid_shape_factory
 
         hybrid_bodies = part.hybrid_bodies
@@ -68,7 +68,7 @@ def test_point_coord():
 
     with CATIADocHandler(new_document='Part') as caa:
         document = caa.document
-        part = document.part()
+        part = document.part
         hsf = part.hybrid_shape_factory
 
         hybrid_bodies = part.hybrid_bodies
@@ -88,7 +88,7 @@ def test_point_coord_reference():
 
     with CATIADocHandler(new_document='Part') as caa:
         document = caa.document
-        part = document.part()
+        part = document.part
         hsf = part.hybrid_shape_factory
 
         hybrid_bodies = part.hybrid_bodies
@@ -122,7 +122,7 @@ def test_point_on_curve():
 
     with CATIADocHandler(new_document='Part') as caa:
         document = caa.document
-        part = document.part()
+        part = document.part
         hsf = part.hybrid_shape_factory
 
         hybrid_bodies = part.hybrid_bodies
@@ -175,7 +175,7 @@ def test_point_on_plane():
 
     with CATIADocHandler(new_document='Part') as caa:
         document = caa.document
-        part = document.part()
+        part = document.part
         hsf = part.hybrid_shape_factory
 
         hybrid_bodies = part.hybrid_bodies
@@ -201,7 +201,7 @@ def test_point_on_plane_reference():
     )
     with CATIADocHandler(new_document='Part') as caa:
         document = caa.document
-        part = document.part()
+        part = document.part
         hsf = part.hybrid_shape_factory
 
         hybrid_bodies = part.hybrid_bodies

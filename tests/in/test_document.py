@@ -107,7 +107,7 @@ def test_is_saved():
         document = caa.document
         assert document.is_saved
 
-        part = document.part()
+        part = document.part
 
         # create a new geometrical set to add point.
         geometrical_set = part.hybrid_bodies.add()
@@ -168,13 +168,13 @@ def test_open_document():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
         assert document.name == cat_part_measurable.name
-        assert f'Document(name="{document.name}")' == document.__repr__()
+        assert f'PartDocument(name="{document.name}")' == document.__repr__()
 
 
 def test_part():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
-        part = document.part()
+        part = document.part
         assert part.name == "cat_part_measurable"
         assert document.is_part
         assert not document.is_product
@@ -183,7 +183,7 @@ def test_part():
 def test_product():
     with CATIADocHandler(cat_product) as caa:
         document = caa.document
-        product = document.product()
+        product = document.product
         assert 'cat_product_1' in product.name
         assert document.is_product
 

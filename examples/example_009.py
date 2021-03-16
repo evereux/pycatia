@@ -24,7 +24,7 @@ documents = caa.documents
 documents.open(r'tests\cat_files\product_top.CATProduct')
 document = caa.active_document
 
-product = document.product()
+product = document.product
 products = product.products
 
 for product in products:

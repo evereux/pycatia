@@ -13,7 +13,7 @@ from pycatia.mec_mod_interfaces.factory import Factory
 from pycatia.tps_interfaces.annotation_2 import Annotation2
 from pycatia.drafting_interfaces.drawing_component import DrawingComponent
 from pycatia.tps_interfaces.user_surface import UserSurface
-from pycatia.types import cat_variant
+from pycatia.types.general import cat_variant
 
 
 class AnnotationFactory2(Factory):

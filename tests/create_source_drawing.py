@@ -17,7 +17,7 @@ def create_cat_drawing():
     documents.add("Drawing")
     drawing_document = caa.active_document
     drawing_document.save_as(source_cat_drawing)
-    drawing = drawing_document.drawing_root()
+    drawing = drawing_document.drawing_root
     sheets = drawing.sheets
 
     # open the cat part from which we'll be creating a front view.

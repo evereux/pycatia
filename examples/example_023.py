@@ -24,7 +24,7 @@ from pycatia.enumeration.enumeration_types import cat_constraint_type
 caa = catia()
 document = caa.active_document
 
-product = document.product()
+product = document.product
 constraints = product.constraints()
 
 products = product.products

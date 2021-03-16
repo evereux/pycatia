@@ -24,7 +24,7 @@ caa = catia()
 documents = caa.documents
 documents.open(r'tests/cat_files/product_top.CATProduct')
 document = caa.active_document
-product = document.product()
+product = document.product
 
 # Change the work mode to Design Mode.
 # This is useful for CATIA configurations that work with a cache otherwise

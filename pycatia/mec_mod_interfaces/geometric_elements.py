@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.sketcher_interfaces.geometric_element import GeometricElement
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types import cat_variant
+from pycatia.types.general import cat_variant
 
 
 class GeometricElements(Collection):
