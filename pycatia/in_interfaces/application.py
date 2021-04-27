@@ -19,6 +19,7 @@ from pycatia.in_interfaces.windows import Windows
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.system_service import SystemService
 from pycatia.in_interfaces.setting_controllers import SettingControllers
+from pycatia.types.document_types import document_type
 
 
 class Application(AnyObject):
@@ -91,7 +92,9 @@ class Application(AnyObject):
         :rtype: Document
         """
         try:
-            return Document(self.com_object.ActiveDocument)
+            active_doc_com = self.com_object.ActiveDocument
+            doc_suffix = active_doc_com.Name.split('.')[-1]
+            return document_type[doc_suffix](active_doc_com)
         except com_error:
             raise CATIAApplicationException('Is there an active document?')
 

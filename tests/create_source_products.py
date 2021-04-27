@@ -3,8 +3,10 @@ from pathlib import Path
 
 from pywintypes import com_error
 
-from pycatia import catia as pia
+from pycatia import catia
 from tests.create_source_parts import get_cat_part_measurable
+
+caa = catia()
 
 test_files = Path("tests/cat_files")
 
@@ -14,7 +16,7 @@ source_cat_sub_2 = Path(os.getcwd(), test_files, "product_sub_2.CATProduct")
 
 
 def create_cat_products(file_name_top, file_name_sub_1, file_name_sub_2):
-    documents = pia.documents
+    documents = caa.documents
 
     # ####################### #
     # close all the documents #
@@ -32,9 +34,9 @@ def create_cat_products(file_name_top, file_name_sub_1, file_name_sub_2):
     # ############################ #
 
     documents.add("Product")
-    doc_root_prod = pia.active_document
+    doc_root_prod = caa.active_document
     doc_root_prod.save_as(file_name_top)
-    product_top = doc_root_prod.product()
+    product_top = doc_root_prod.product
     product_top.part_number = "cat_product_1"
     product_top.revision = "A.1"
     product_top.nomenclature = "pycatia product for testing"
@@ -47,9 +49,9 @@ def create_cat_products(file_name_top, file_name_sub_1, file_name_sub_2):
     # ######################## #
 
     documents.add("Product")
-    doc_sub_1 = pia.active_document
+    doc_sub_1 = caa.active_document
     doc_sub_1.save_as(file_name_sub_1)
-    product_sub_1 = doc_sub_1.product()
+    product_sub_1 = doc_sub_1.product
     product_sub_1.part_number = "cat_product_sub_1"
     product_sub_1.revision = "A.1"
     product_sub_1.nomenclature = "pycatia product for testing"
@@ -57,8 +59,8 @@ def create_cat_products(file_name_top, file_name_sub_1, file_name_sub_2):
     products_sub_1 = product_sub_1.products
     cat_part_measurable = get_cat_part_measurable()
     documents.open(cat_part_measurable)
-    doc_cat_part = pia.active_document
-    products_sub_1.add_component(doc_cat_part.product())
+    doc_cat_part = caa.active_document
+    products_sub_1.add_component(doc_cat_part.product)
 
     doc_sub_1.save()
 
@@ -67,15 +69,15 @@ def create_cat_products(file_name_top, file_name_sub_1, file_name_sub_2):
     # ######################## #
 
     documents.add("Product")
-    doc_sub_2 = pia.active_document
+    doc_sub_2 = caa.active_document
     doc_sub_2.save_as(file_name_sub_2)
-    product_sub_2 = doc_sub_2.product()
+    product_sub_2 = doc_sub_2.product
     product_sub_2.part_number = "cat_product_sub_2"
     product_sub_2.revision = "A.1"
     product_sub_2.nomenclature = "pycatia product for testing"
 
     product_sub_2 = product_sub_2.products
-    product_sub_2.add_component(doc_cat_part.product())
+    product_sub_2.add_component(doc_cat_part.product)
 
     doc_sub_2.save()
 
@@ -113,6 +115,6 @@ def create_cat_products(file_name_top, file_name_sub_1, file_name_sub_2):
 
 def get_cat_product_top():
     if not source_cat_product.exists():
-        pia.logger.info(f"Creating {source_cat_product}")
+        caa.logger.info(f"Creating {source_cat_product}")
         create_cat_products(source_cat_product, source_cat_sub_1, source_cat_sub_2)
     return source_cat_product

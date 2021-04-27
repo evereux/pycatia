@@ -41,7 +41,7 @@ def close_inertia_window():
 
 caa = catia()
 document = caa.active_document
-product = document.product()
+product = document.product
 selection = document.selection
 selection.clear()
 

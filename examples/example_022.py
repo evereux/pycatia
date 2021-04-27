@@ -33,7 +33,7 @@ from pycatia.hybrid_shape_interfaces.hybrid_shape_point_coord import HybridShape
 
 caa = catia()
 document = caa.active_document
-part = document.part()
+part = document.part
 hbs = part.hybrid_bodies
 hb_construction_lines = hbs.item("construction_geometry")
 hss = hb_construction_lines.hybrid_shapes

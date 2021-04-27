@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.mec_mod_interfaces.body import Body
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types import cat_variant
+from pycatia.types.general import cat_variant
 
 
 class Bodies(Collection):

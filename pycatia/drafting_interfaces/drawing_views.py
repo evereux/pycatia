@@ -10,7 +10,7 @@
 """
 from typing import Iterator
 
-from pycatia.types import cat_variant
+from pycatia.types.general import cat_variant
 from pycatia.drafting_interfaces.drawing_view import DrawingView
 from pycatia.system_interfaces.collection import Collection
 

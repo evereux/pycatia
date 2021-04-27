@@ -1,9 +1,11 @@
 import os
 from pathlib import Path
 
-from pycatia import catia as pia
+from pycatia import catia
 from pycatia.enumeration.enumeration_types import cat_constraint_mode
 from pycatia.enumeration.enumeration_types import cat_constraint_type
+
+caa = catia()
 
 test_files = Path("tests/cat_files")
 
@@ -20,17 +22,17 @@ geom_set_surfaces = "construction_surfaces"
 
 
 def create_cat_part_measurable(file_name):
-    documents = pia.documents
+    documents = caa.documents
     documents.add("Part")
 
-    document = pia.active_document
+    document = caa.active_document
     document.save_as(file_name)
-    product = document.product()
+    product = document.product
     product.part_number = "cat_part_measurable"
     product.revision = "A.1"
     product.nomenclature = "pycatia part for testing"
     product.definition = "pycatia part for testing"
-    part = document.part()
+    part = document.part
 
     pad_width = 100
     pad_height = 100
@@ -257,6 +259,6 @@ def create_cat_part_measurable(file_name):
 
 def get_cat_part_measurable():
     if not source_cat_part_measurable.exists():
-        pia.logger.info(f"Creating {source_cat_part_measurable}")
+        caa.logger.info(f"Creating {source_cat_part_measurable}")
         create_cat_part_measurable(source_cat_part_measurable)
     return source_cat_part_measurable

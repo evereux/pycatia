@@ -1,0 +1,315 @@
+#! usr/bin/python3.6
+"""
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-09-25 14:34:21.593357
+
+    .. warning::
+        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+        They are there as a guide as to how the visual basic / catscript functions work
+        and thus help debugging in pycatia.
+        
+"""
+
+from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.tps_interfaces.user_surface import UserSurface
+
+
+class DatumTarget(AnyObject):
+    """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
+
+                | System.IUnknown
+                |     System.IDispatch
+                |         System.CATBaseUnknown
+                |             System.CATBaseDispatch
+                |                 System.AnyObject
+                |                     DatumTarget
+                | 
+                | Interface for Datum Target TPS (datum entity).
+                | TPS for Technological Product Specifications.
+    
+    """
+
+    def __init__(self, com_object):
+        super().__init__(com_object)
+        self.datum_target = com_object
+
+    @property
+    def datum(self) -> AnyObject:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
+                | o Property Datum() As AnyObject (Read Only)
+                | 
+                |     Retrieves simple datum, the target belongs to.
+
+        :return: AnyObject
+        :rtype: AnyObject
+        """
+
+        return AnyObject(self.datum_target.Datum)
+
+    @property
+    def label(self) -> str:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
+                | o Property Label() As CATBSTR
+                | 
+                |     Retrieves Label.
+
+        :return: str
+        :rtype: str
+        """
+
+        return self.datum_target.Label
+
+    @label.setter
+    def label(self, value: str):
+        """
+        :param str value:
+        """
+
+        self.datum_target.Label = value
+
+    def get_area_form(self, o_area_form: str) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+                | o Sub GetAreaForm(CATBSTR oAreaForm)
+                | 
+                |     Gets the form of the target area.
+                | 
+                |     Parameters:
+                | 
+                |         oAreaForm
+                |             Form of the target area. Legal values are:- Point, Circular,
+                |             Rectangular. 
+                | 
+                |     Returns:
+                |         HRESULT S_OK:- the Area Form has been correctly retrieved. E_FAIL or E_NOIMPL : Area Form cannot be retrieved.
+
+        :param str o_area_form:
+        :return: None
+        :rtype: None
+        """
+        return self.datum_target.GetAreaForm(o_area_form)
+
+    def get_circular_area_size(self, o_area_size: float) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+                | o Sub GetCircularAreaSize(double oAreaSize)
+                | 
+                |     Gets the size of the circular area.
+                | 
+                |     Parameters:
+                | 
+                |         oAreaSize
+                |             Size of the Circular target area. 
+                | 
+                |     Returns:
+                |         HRESULT S_OK:- the Area Size has been correctly retrieved. E_FAIL or E_NOIMPL : Area Size cannot be retrieved.
+
+        :param float o_area_size:
+        :return: None
+        :rtype: None
+        """
+        return self.datum_target.GetCircularAreaSize(o_area_size)
+
+    def get_movable_direction_ttrs(self, op_direction_ttrs: UserSurface) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+                | o Sub GetMovableDirectionTTRS(UserSurface opDirectionTTRS)
+                | 
+                |     Gets the movable Direction TTRS.
+                | 
+                |     Parameters:
+                | 
+                |         ospDirectionTTRS
+                |             Movable Direction TTRS 
+                | 
+                |     Returns:
+                |         HRESULT S_OK:- the movable direction has been correctly retrieved. E_FAIL or E_NOIMPL : movable direction cannot be retrieved.
+
+        :param UserSurface op_direction_ttrs:
+        :return: None
+        :rtype: None
+        """
+        return self.datum_target.GetMovableDirectionTTRS(op_direction_ttrs.com_object)
+        # # # # Autogenerated comment: 
+        # # some methods require a system service call as the methods expects a vb array object
+        # # passed to it and there is no way to do this directly with python. In those cases the following code
+        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
+        # # vba_function_name = 'get_movable_direction_ttrs'
+        # # vba_code = """
+        # # Public Function get_movable_direction_ttrs(datum_target)
+        # #     Dim opDirectionTTRS (2)
+        # #     datum_target.GetMovableDirectionTTRS opDirectionTTRS
+        # #     get_movable_direction_ttrs = opDirectionTTRS
+        # # End Function
+        # # """
+
+        # # system_service = SystemService(self.application.SystemService)
+        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+
+    def get_rectangular_area_size(self, o_length: float, o_width: float) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+                | o Sub GetRectangularAreaSize(double oLength,
+                | double oWidth)
+                | 
+                |     Gets the size of the rectangular area.
+                | 
+                |     Parameters:
+                | 
+                |         oLength
+                |             Length of the Rectangular target area. 
+                |         oWidth
+                |             Width of the Rectangular target area. 
+                | 
+                |     Returns:
+                |         HRESULT S_OK:- the Area Size has been correctly retrieved. E_FAIL or E_NOIMPL : Area Size cannot be retrieved.
+
+        :param float o_length:
+        :param float o_width:
+        :return: None
+        :rtype: None
+        """
+        return self.datum_target.GetRectangularAreaSize(o_length, o_width)
+
+    def set_area_form(self, i_area_form: str) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+                | o Sub SetAreaForm(CATBSTR iAreaForm)
+                | 
+                |     Sets the form of the target area.
+                | 
+                |     Parameters:
+                | 
+                |         iAreaForm
+                |             Form of the target area. Legal values are:- Point, Circular,
+                |             Rectangular. 
+                | 
+                |     Returns:
+                |         HRESULT S_OK:- the Area Form has been correctly set. E_FAIL or E_NOIMPL : Area Form cannot be set.
+
+        :param str i_area_form:
+        :return: None
+        :rtype: None
+        """
+        return self.datum_target.SetAreaForm(i_area_form)
+
+    def set_circular_area_size(self, i_area_size: float) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+                | o Sub SetCircularAreaSize(double iAreaSize)
+                | 
+                |     Sets the size of the circular area.
+                | 
+                |     Parameters:
+                | 
+                |         iAreaSize
+                |             Size of the Circular target area. 
+                | 
+                |     Returns:
+                |         HRESULT S_OK:- the Area Size has been correctly set. E_FAIL or E_NOIMPL : Area Size cannot be set.
+
+        :param float i_area_size:
+        :return: None
+        :rtype: None
+        """
+        return self.datum_target.SetCircularAreaSize(i_area_size)
+
+    def set_movable_direction_ttrs(self, ip_direction_ttrs: UserSurface) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+                | o Sub SetMovableDirectionTTRS(UserSurface ipDirectionTTRS)
+                | 
+                |     Sets the movable Direction TTRS.
+                | 
+                |     Parameters:
+                | 
+                |         ispDirectionTTRS
+                |             Movable Direction TTRS If the ipDirectionTTRS is NULL_var, the
+                |             direction TTRS inside the model is removed. 
+                | 
+                |     Returns:
+                |         HRESULT S_OK:- the movable direction has been correctly set. E_FAIL or E_NOIMPL : movable direction cannot be set.
+
+        :param UserSurface ip_direction_ttrs:
+        :return: None
+        :rtype: None
+        """
+        return self.datum_target.SetMovableDirectionTTRS(ip_direction_ttrs.com_object)
+        # # # # Autogenerated comment: 
+        # # some methods require a system service call as the methods expects a vb array object
+        # # passed to it and there is no way to do this directly with python. In those cases the following code
+        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
+        # # vba_function_name = 'set_movable_direction_ttrs'
+        # # vba_code = """
+        # # Public Function set_movable_direction_ttrs(datum_target)
+        # #     Dim ipDirectionTTRS (2)
+        # #     datum_target.SetMovableDirectionTTRS ipDirectionTTRS
+        # #     set_movable_direction_ttrs = ipDirectionTTRS
+        # # End Function
+        # # """
+
+        # # system_service = SystemService(self.application.SystemService)
+        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+
+    def set_rectangular_area_size(self, i_length: float, i_width: float) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+                | o Sub SetRectangularAreaSize(double iLength,
+                | double iWidth)
+                | 
+                |     Sets the size of the rectangular area.
+                | 
+                |     Parameters:
+                | 
+                |         iLength
+                |             Length of the Rectangular target area. 
+                |         iWidth
+                |             Width of the Rectangular target area. 
+                | 
+                |     Returns:
+                |         HRESULT S_OK:- the Area Size has been correctly set. E_FAIL or E_NOIMPL : Area Size cannot be set.
+
+        :param float i_length:
+        :param float i_width:
+        :return: None
+        :rtype: None
+        """
+        return self.datum_target.SetRectangularAreaSize(i_length, i_width)
+
+    def __repr__(self):
+        return f'DatumTarget(name="{self.name}")'

@@ -11,6 +11,8 @@
     Formatting of csv data should be:
         <point_name>,<x coordinate>,<y coordinate>,<z coordinate>
 
+    There should be no column name headers, just raw point data.
+
 """
 
 ##########################################################
@@ -36,7 +38,7 @@ documents = caa.documents
 documents.add('Part')
 
 document = caa.active_document
-part = document.part()
+part = document.part
 
 # full path name to csv file.
 file = r'tests\Sample_Point_CSV_File1_small.csv'

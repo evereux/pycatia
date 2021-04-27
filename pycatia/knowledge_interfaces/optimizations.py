@@ -14,7 +14,7 @@ from pycatia.knowledge_interfaces.optimization import Optimization
 from pycatia.knowledge_interfaces.set_of_equation import SetOfEquation
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types import cat_variant
+from pycatia.types.general import cat_variant
 
 
 class Optimizations(Collection):

@@ -10,18 +10,12 @@ exclude_files = [
 ]
 
 requires = [
-    'atomicwrites==1.2.1',
-    'attrs==18.2.0',
-    'colorama==0.4.0',
-    'more-itertools==4.3.0',
-    'pluggy==0.8.0',
-    'py==1.7.0',
     'pywin32>=224',
 ]
 
 test_requirements = [
-    'pytest == 5.4.2',
-    'pytest-cov == 2.8.1',
+    'pytest>=5.4.2',
+    'pytest-cov>=2.8.1',
 ]
 
 with open("README.rst", "r") as fh:

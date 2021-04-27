@@ -29,7 +29,7 @@ a0_y = 841
 
 caa = catia()
 document = caa.active_document
-drawing = document.drawing_root()
+drawing = document.drawing_root
 sheets = drawing.sheets
 sheet = sheets.active_sheet
 
