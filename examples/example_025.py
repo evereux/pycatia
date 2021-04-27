@@ -24,7 +24,7 @@ from pycatia import catia
 
 caa = catia()
 document = caa.active_document
-product = document.product()
+product = document.product
 products = product.products
 
 part_numbers = []

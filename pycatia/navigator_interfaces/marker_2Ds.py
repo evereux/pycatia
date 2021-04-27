@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.navigator_interfaces.marker_2D import Marker2D
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types import cat_variant
+from pycatia.types.general import cat_variant
 
 
 class Marker2Ds(Collection):

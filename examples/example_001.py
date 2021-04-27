@@ -30,7 +30,7 @@ document = caa.active_document
 # >>> C:\Users\evereux\python\projects\pycatia\tests\CF_catia_measurable_part.CATPart
 
 # get the Part() object.
-part = document.part()
+part = document.part
 
 # get the Bodies() collection
 bodies = part.bodies
