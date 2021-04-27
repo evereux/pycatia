@@ -25,8 +25,8 @@ from pycatia.knowledge_interfaces.str_param import StrParam
 from pycatia.knowledge_interfaces.units import Units
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types import cat_variant
-from pycatia.types import any_parameter
+from pycatia.types.general import cat_variant
+from pycatia.types.general import any_parameter
 
 if TYPE_CHECKING:
     from pycatia.knowledge_interfaces.parameter_set import ParameterSet

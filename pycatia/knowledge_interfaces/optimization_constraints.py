@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.knowledge_interfaces.optimization_constraint import OptimizationConstraint
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types import cat_variant
+from pycatia.types.general import cat_variant
 
 
 class OptimizationConstraints(Collection):

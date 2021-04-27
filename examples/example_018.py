@@ -64,7 +64,7 @@ from pycatia import catia
 
 caa = catia()
 document = caa.active_document
-product = document.product()
+product = document.product
 # create the selection object.
 selection = document.selection
 # add the product to the selection.

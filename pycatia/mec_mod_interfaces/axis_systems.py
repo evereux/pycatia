@@ -12,7 +12,7 @@ from typing import Iterator
 
 from pycatia.mec_mod_interfaces.axis_system import AxisSystem
 from pycatia.system_interfaces.collection import Collection
-from pycatia.types import cat_variant
+from pycatia.types.general import cat_variant
 
 
 class AxisSystems(Collection):
