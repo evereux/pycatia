@@ -32,7 +32,7 @@ def create_cat_part_measurable(file_name):
     product.revision = "A.1"
     product.nomenclature = "pycatia part for testing"
     product.definition = "pycatia part for testing"
-    part = document.part()
+    part = document.part
 
     pad_width = 100
     pad_height = 100
