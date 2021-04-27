@@ -19,7 +19,7 @@ from pycatia.in_interfaces.windows import Windows
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.system_service import SystemService
 from pycatia.in_interfaces.setting_controllers import SettingControllers
-from pycatia.types.document import document_type
+from pycatia.types.document_types import document_type
 
 
 class Application(AnyObject):
