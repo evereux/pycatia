@@ -1582,7 +1582,17 @@ class HybridShapeFactory(Factory):
         :return: tuple
         :rtype: tuple
         """
-        return self.hybrid_shape_factory.AddNewDatums(i_elem.com_object)
+        # return self.hybrid_shape_factory.AddNewDatums(i_elem.com_object)
+        from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
+
+        com_object_shapes = self.hybrid_shape_factory.AddNewDatums(i_elem.com_object)
+
+        hybrid_shapes = []
+
+        for com_object in com_object_shapes:
+            hybrid_shapes.append(HybridShape(com_object))
+
+        return tuple(hybrid_shapes)
 
     def add_new_develop(self, i_mode: int, i_to_develop: Reference, i_support: Reference) -> HybridShapeDevelop:
         """

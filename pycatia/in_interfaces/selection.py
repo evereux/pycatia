@@ -604,7 +604,7 @@ class Selection(AnyObject):
         """
         return AnyObject(self.selection.FindObject(i_object_type))
 
-    def indicate_or_select_element2_d(self, i_message: str, i_filter_type: tuple,
+    def indicate_or_select_element_2d(self, i_message: str, i_filter_type: tuple,
                                       i_object_selection_before_command_use_possibility: bool, i_tooltip: bool,
                                       i_triggering_on_mouse_move: bool, o_object_selected: bool,
                                       o_document_window_location: tuple) -> str:
@@ -751,10 +751,10 @@ class Selection(AnyObject):
                                                         i_triggering_on_mouse_move, o_object_selected,
                                                         o_document_window_location)
 
-    def indicate_or_select_element3_d(self, i_planar_geometric_object: AnyObject, i_message: str, i_filter_type: tuple,
+    def indicate_or_select_element_3d(self, i_planar_geometric_object: AnyObject, i_message: str, i_filter_type: tuple,
                                       i_object_selection_before_command_use_possibility: bool, i_tooltip: bool,
                                       i_triggering_on_mouse_move: bool, o_object_selected: bool,
-                                      o_window_location2_d: tuple, o_window_location3_d: tuple) -> str:
+                                      o_window_location_2d: tuple, o_window_location_3d: tuple) -> str:
         """
         .. note::
             :class: toggle
@@ -898,15 +898,15 @@ class Selection(AnyObject):
         :param bool i_tooltip:
         :param bool i_triggering_on_mouse_move:
         :param bool o_object_selected:
-        :param tuple o_window_location2_d:
-        :param tuple o_window_location3_d:
+        :param tuple o_window_location_2d:
+        :param tuple o_window_location_3d:
         :return: str
         :rtype: str
         """
         return self.selection.IndicateOrSelectElement3D(i_planar_geometric_object.com_object, i_message, i_filter_type,
                                                         i_object_selection_before_command_use_possibility, i_tooltip,
                                                         i_triggering_on_mouse_move, o_object_selected,
-                                                        o_window_location2_d, o_window_location3_d)
+                                                        o_window_location_2d, o_window_location_3d)
 
     def item(self, i_index: int) -> SelectedElement:
         """
