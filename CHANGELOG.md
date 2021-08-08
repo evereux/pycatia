@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.1
+
+* Fix bug with HybridShapeFactory.add_new_datums().
+
 ## 0.5.0
 
 * Added tps_interfaces.
