@@ -265,3 +265,13 @@ The tree is turned off and the background turned white for the screen
 capture and then turned back on.
 
 `Example 27 <https://github.com/evereux/pycatia/blob/master/examples/example_027.py>`_
+
+
+Example 28
+----------
+
+    Add new bodies to part.
+    Create a cylinder in an added body.
+    Do Intersection operations between two bodies..
+
+`Example 28 <https://github.com/evereux/pycatia/blob/master/examples/example_028.py>`_
