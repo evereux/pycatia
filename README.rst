@@ -130,13 +130,13 @@ Release process
 
 A reminder for @evereux. I don't do this often and forget ...
 
-* Run the tests.
+* Run the tests. `pytest -v tests`
    * Fix any issues.
 
 * Run the examples.
    * Fix any issues.
 
-* Build the docs.
+* Build the docs. `cd docs` `make html`
    * Fix any issues.
 
 * Check version is correct.
