@@ -1,5 +1,3 @@
 CONTRIBUTORS
 
-z86961027
-Luanee
-Tian-Jionglu
+z86961027 Luanee Tian-Jionglu bhulele
