@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.2
+
+* Added missing delimeters to vba_functions in sketcher_interfaces/curve_2D.py
+
 ## 0.5.1
 
 * Fix bug with HybridShapeFactory.add_new_datums().
