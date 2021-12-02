@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.5.3
+
+* fixed methods in pycatia/mec_mod_interfaces/axis_system and pycatia/mec_mod_interfaces/cylindrical_face.py
+  that required  mapping to VBA methods.
+
 ## 0.5.2
 
 * Added missing delimeters to vba_functions in sketcher_interfaces/curve_2D.py

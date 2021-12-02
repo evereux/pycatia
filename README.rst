@@ -16,7 +16,7 @@ I'm currently just attacking the items I think will be most useful. The
 framework is in place for others to contribute so if you know CATIA and python
 please do contribute. Bonus points for adding tests too.
 
-I have limited access to CATIA licences / workbenches I so will not be able to
+I have limited access to CATIA licences / workbenches so will not be able to
 support those I can't test. If your company would like support for additional
 workbenches adding to pycatia and can provide a license please contact me.
 
