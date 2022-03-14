@@ -40,7 +40,7 @@ class HybridShapePlaneOffsetPt(Plane):
         self.hybrid_shape_plane_offset_pt = com_object
 
     @property
-    def plane(self) -> Reference:
+    def ref_plane(self) -> Reference:
         """
         .. note::
             :class: toggle
@@ -69,8 +69,8 @@ class HybridShapePlaneOffsetPt(Plane):
 
         return Reference(self.hybrid_shape_plane_offset_pt.Plane)
 
-    @plane.setter
-    def plane(self, reference_plane: Reference):
+    @ref_plane.setter
+    def ref_plane(self, reference_plane: Reference):
         """
         :param Reference reference_plane:
         """
