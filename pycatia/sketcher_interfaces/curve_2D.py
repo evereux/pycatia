@@ -176,7 +176,7 @@ class Curve2D(Geometry2D):
         vba_code = """
         Public Function get_curvature(curve2_d, i_param)
             Dim oCurvature (2)
-            curve2_d.GetCurvature i_param oCurvature
+            curve2_d.GetCurvature i_param, oCurvature
             get_curvature = oCurvature
         End Function
         """
@@ -216,7 +216,7 @@ class Curve2D(Geometry2D):
         vba_code = """
         Public Function get_derivatives(curve2_d, i_param)
             Dim oDerivative(2)
-            curve2_d.GetDerivatives iParam oDerivative
+            curve2_d.GetDerivatives iParam, oDerivative
             get_derivatives = oDerivative
         End Function
         """
@@ -391,7 +391,7 @@ class Curve2D(Geometry2D):
         vba_code = """
         Public Function get_point_at_param(curve2_d, i_param)
             Dim oPoint (1)
-            curve2_d.GetPointAtParam i_param oPoint
+            curve2_d.GetPointAtParam i_param, oPoint
             get_point_at_param = oPoint
         End Function
         """
@@ -467,7 +467,7 @@ class Curve2D(Geometry2D):
         vba_code = """
         Public Function get_tangent(curve2_d, i_param)
             Dim oTangency(1)
-            curve2_d.GetTangent i_param oTangency
+            curve2_d.GetTangent i_param, oTangency
             get_tangent = oTangency
         End Function
         """
