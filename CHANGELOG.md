@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.5.4
+
+* fixed method in pycatia/hybrid_shape_interfaces/hybrid_shape_plane_offset_pt
+* fixed method in pycatia/product_structure_interfaces/assembly_convertor.print
+
 ## 0.5.3
 
 * fixed methods in pycatia/mec_mod_interfaces/axis_system and pycatia/mec_mod_interfaces/cylindrical_face.py
