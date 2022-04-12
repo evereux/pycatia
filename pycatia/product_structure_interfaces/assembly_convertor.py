@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pathlib import Path
 
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.product_structure_interfaces.product import Product
@@ -41,7 +42,7 @@ class AssemblyConvertor(AnyObject):
         super().__init__(com_object)
         self.assembly_convertor = com_object
 
-    def print(self, i_file_type: str, i_file: str, i_product: Product) -> None:
+    def print(self, i_file_type: str, i_file: Path, i_product: Product) -> None:
         """
         .. note::
             :class: toggle
@@ -66,7 +67,7 @@ class AssemblyConvertor(AnyObject):
                 |             Product that will be converted
 
         :param str i_file_type:
-        :param str i_file:
+        :param Path i_file:
         :param Product i_product:
         :return: None
         :rtype: None
@@ -75,13 +76,12 @@ class AssemblyConvertor(AnyObject):
         vba_function_name = 'print'
         vba_code = """
         Public Function print(assembly_convertor, i_file_type, i_file, i_product)
-            
             assembly_convertor.Print i_file_type, i_file, i_product
             print = iFileType
         End Function
         """
         system_service = self.application.system_service
-        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object, i_file_type, i_file, i_product.com_object])
+        return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object, i_file_type, str(i_file), i_product.com_object])
 
     def set_current_format(self, ilist_props: tuple) -> None:
         """
