@@ -6,6 +6,9 @@
 
     Find all points in the CATPart and print to console -> and export to csv.
 
+    This will only work if you have language set to English. Further reading:
+    https://github.com/evereux/pycatia/issues/93
+    
 """
 
 ##########################################################
