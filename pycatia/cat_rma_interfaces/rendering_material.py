@@ -59,11 +59,11 @@ class RenderingMaterial(AnyObject):
         """
         :param int value:
         """
-        min = 1
-        max = 8
+        min_ = 1
+        max_ = 8
 
-        if not min <= value <= max:
-            raise CATIAApplicationException(f'Value must be between {min} and {max}.')
+        if not min_ <= value <= max_:
+            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
 
         self.rendering_material.AdaptiveCoeff = value
 
@@ -90,6 +90,12 @@ class RenderingMaterial(AnyObject):
         :param float value:
         """
 
+        min_ = 0
+        max_ = 1
+
+        if not min_ <= value <= max_:
+            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+
         self.rendering_material.AmbientCoefficient = value
 
     @property
@@ -114,6 +120,13 @@ class RenderingMaterial(AnyObject):
         """
         :param float value:
         """
+
+        min_ = -10
+        max_ = 10
+
+        if not min_ <= value <= max_:
+            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+
         self.rendering_material.Bump = value
 
     @property
@@ -138,6 +151,13 @@ class RenderingMaterial(AnyObject):
         """
         :param float value:
         """
+
+        min_ = 0
+        max_ = 100
+
+        if not min_ <= value <= max_:
+            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+
         self.rendering_material.ChessboardJointHeight = value
 
     @property
@@ -162,6 +182,12 @@ class RenderingMaterial(AnyObject):
         """
         :param float value:
         """
+
+        min_ = 0
+        max_ = 100
+
+        if not min_ <= value <= max_:
+            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
 
         self.rendering_material.ChessboardJointWidth = value
 
@@ -190,6 +216,12 @@ class RenderingMaterial(AnyObject):
         :param float value:
         """
 
+        min_ = 0
+        max_ = 0.5
+
+        if not min_ <= value <= max_:
+            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+
         self.rendering_material.ChessboardOffset = value
 
     @property
@@ -216,6 +248,12 @@ class RenderingMaterial(AnyObject):
         :param float value:
         """
 
+        min_ = 0
+        max_ = 100
+
+        if not min_ <= value <= max_:
+            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+
         self.rendering_material.ChessboardTileHeight = value
 
     @property
@@ -241,6 +279,12 @@ class RenderingMaterial(AnyObject):
         """
         :param float value:
         """
+
+        min_ = 0
+        max_ = 100
+
+        if not min_ <= value <= max_:
+            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
 
         self.rendering_material.ChessboardTileWidth = value
 
@@ -295,6 +339,12 @@ class RenderingMaterial(AnyObject):
         """
         :param float value:
         """
+
+        min_ = 0
+        max_ = 1
+
+        if not min_ <= value <= max_:
+            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
 
         self.rendering_material.DiffuseCoefficient = value
 
@@ -406,6 +456,12 @@ class RenderingMaterial(AnyObject):
         :param int value:
         """
 
+        min_ = 0
+        max_ = 5
+
+        if not min_ <= value <= max_:
+            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+
         self.rendering_material.MappingType = value
 
     @property
@@ -431,6 +487,12 @@ class RenderingMaterial(AnyObject):
         """
         :param float value:
         """
+
+        min_ = -360
+        max_ = 360
+
+        if not min_ <= value <= max_:
+            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
 
         self.rendering_material.Orientation = value
 
@@ -537,6 +599,12 @@ class RenderingMaterial(AnyObject):
         :param float value:
         """
 
+        min_ = 0
+        max_ = 1
+
+        if not min_ <= value <= max_:
+            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+
         self.rendering_material.ReflectionHeight = value
 
     @property
@@ -563,6 +631,12 @@ class RenderingMaterial(AnyObject):
         """
         :param float value:
         """
+
+        min_ = 0
+        max_ = 1
+
+        if not min_ <= value <= max_:
+            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
 
         self.rendering_material.ReflectionLength = value
 
@@ -597,6 +671,12 @@ class RenderingMaterial(AnyObject):
         :param int value:
         """
 
+        min_ = 0
+        max_ = 4
+
+        if not min_ <= value <= max_:
+            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+
         self.rendering_material.ReflectionMode = value
 
     @property
@@ -623,6 +703,12 @@ class RenderingMaterial(AnyObject):
         :param float value:
         """
 
+        min_ = 0
+        max_ = 1
+
+        if not min_ <= value <= max_:
+            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+
         self.rendering_material.ReflectivityCoefficient = value
 
     @property
@@ -648,6 +734,12 @@ class RenderingMaterial(AnyObject):
         """
         :param float value:
         """
+
+        min_ = 1
+        max_ = 2
+
+        if not min_ <= value <= max_:
+            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
 
         self.rendering_material.RefractionCoefficient = value
 
@@ -727,6 +819,12 @@ class RenderingMaterial(AnyObject):
         :param float value:
         """
 
+        min_ = 0
+        max_ = 100
+
+        if not min_ <= value <= max_:
+            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+
         self.rendering_material.ScaleU = value
 
     @property
@@ -752,6 +850,12 @@ class RenderingMaterial(AnyObject):
         """
         :param float value:
         """
+
+        min_ = 0
+        max_ = 100
+
+        if not min_ <= value <= max_:
+            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
 
         self.rendering_material.ScaleV = value
 
@@ -779,6 +883,12 @@ class RenderingMaterial(AnyObject):
         :param float value:
         """
 
+        min_ = 0
+        max_ = 1
+
+        if not min_ <= value <= max_:
+            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+
         self.rendering_material.SpecularCoefficient = value
 
     @property
@@ -804,6 +914,12 @@ class RenderingMaterial(AnyObject):
         """
         :param float value:
         """
+
+        min_ = 0
+        max_ = 1
+
+        if not min_ <= value <= max_:
+            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
 
         self.rendering_material.SpecularExponent = value
 
@@ -831,6 +947,12 @@ class RenderingMaterial(AnyObject):
         :param float value:
         """
 
+        min_ = 0
+        max_ = 1
+
+        if not min_ <= value <= max_:
+            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+
         self.rendering_material.TextureAmplitude = value
 
     @property
@@ -857,6 +979,12 @@ class RenderingMaterial(AnyObject):
         :param int value:
         """
 
+        min_ = 0
+        max_ = 10
+
+        if not min_ <= value <= max_:
+            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+
         self.rendering_material.TextureComplexity = value
 
     @property
@@ -882,6 +1010,12 @@ class RenderingMaterial(AnyObject):
         """
         :param float value:
         """
+
+        min_ = 0
+        max_ = 2
+
+        if not min_ <= value <= max_:
+            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
 
         self.rendering_material.TextureGain = value
 
@@ -935,6 +1069,12 @@ class RenderingMaterial(AnyObject):
         """
         :param float value:
         """
+
+        min_ = 10
+        max_ = 10
+
+        if not min_ <= value <= max_:
+            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
 
         self.rendering_material.TexturePerturbation = value
 
@@ -997,6 +1137,12 @@ class RenderingMaterial(AnyObject):
         :param int value:
         """
 
+        min_ = 0
+        max_ = 6
+
+        if not min_ <= value <= max_:
+            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+
         self.rendering_material.TextureType = value
 
     @property
@@ -1024,6 +1170,12 @@ class RenderingMaterial(AnyObject):
         :param float value:
         """
 
+        min_ = 0
+        max_ = 10
+
+        if not min_ <= value <= max_:
+            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+
         self.rendering_material.TextureVeinAmplitude = value
 
     @property
@@ -1049,6 +1201,12 @@ class RenderingMaterial(AnyObject):
         """
         :param float value:
         """
+
+        min_ = 0
+        max_ = 1
+
+        if not min_ <= value <= max_:
+            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
 
         self.rendering_material.TransparencyCoefficient = value
 
