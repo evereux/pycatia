@@ -10,6 +10,7 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
+from pycatia.exception_handling.exceptions import CATIAApplicationException
 
 
 class RenderingMaterial(AnyObject):
@@ -58,6 +59,12 @@ class RenderingMaterial(AnyObject):
         """
         :param int value:
         """
+        min = 1
+        max = 8
+
+        if not min <= value <= max:
+            raise CATIAApplicationException(f'Value must be between {min} and {max}.')
+
         self.rendering_material.AdaptiveCoeff = value
 
     @property
