@@ -32,11 +32,11 @@ sys.modules.update((mod_name, Mock()) for mod_name in MOCK_MODULES)
 # -- Project information -----------------------------------------------------
 
 project = 'pycatia'
-copyright = '2020, Paul Bourne'
+copyright = '2022, Paul Bourne'
 author = 'Paul Bourne'
 
 # The short X.Y version
-version = '0.5.4'
+version = '0.5.5'
 # The full version, including alpha/beta/rc tags
 release = version
 

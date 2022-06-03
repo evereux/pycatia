@@ -270,9 +270,9 @@ capture and then turned back on.
 Example 28
 ----------
 
-    Add new bodies to part.
-    Create a cylinder in an added body.
-    Do Intersection operations between two bodies..
+Add new bodies to part.
+Create a cylinder in an added body.
+Do Intersection operations between two bodies..
 
 `Example 28 <https://github.com/evereux/pycatia/blob/master/examples/example_028.py>`_
 
@@ -280,16 +280,16 @@ Example 28
 Example 29
 ----------
 
-    Print the BOM of a product to XLS using the inbuilt AssemblyConvertor. You
-    must already have excel installed.
+Print the BOM of a product to XLS using the inbuilt AssemblyConvertor. You
+must already have excel installed.
 
-    This can also be used to create TXT and HTML files.
+This can also be used to create TXT and HTML files.
 
-    See github issue https://github.com/evereux/pycatia/issues/110 with regards
-    to file paths and saying "No" to overwriting existing files and file paths
-    when using excel. These issues are mitigated using the code below by
-    checking for an existing excel file and removing it and also using pythons
-    pathlib.Path module.
+See github issue https://github.com/evereux/pycatia/issues/110 with regards
+to file paths and saying "No" to overwriting existing files and file paths
+when using excel. These issues are mitigated using the code below by
+checking for an existing excel file and removing it and also using pythons
+pathlib.Path module.
 
 `Example 29 <https://github.com/evereux/pycatia/blob/master/examples/example_029.py>`_
 
@@ -298,10 +298,26 @@ Example 29
 Example 30
 ----------
 
-    GSD: Split a surface using a plane.
+GSD: Split a surface using a plane.
 
-    Requirements: Geometrical set named "ConstructionGeometry". A surface
-    within the geometrical set called "Surface.1" that can be split by the
-    origin ZX plane.
+Requirements: Geometrical set named "ConstructionGeometry". A surface
+within the geometrical set called "Surface.1" that can be split by the
+origin ZX plane.
 
 `Example 30 <https://github.com/evereux/pycatia/blob/master/examples/example_030.py>`_
+
+
+Example 31
+----------
+
+CATMatInterfaces
+        
+Opens the material catalog and retrieves the first few materials.
+
+Creates a new part and applies the material to the part, the main body and a
+hybrid body.
+
+Creates a new product and applies the material to it.
+
+
+`Example 31 <https://github.com/evereux/pycatia/blob/master/examples/example_031.py>`_
