@@ -20,7 +20,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class MaterialManager(AnyObject):
-
     """
     .. note::
         :class: toggle
@@ -35,8 +34,8 @@ class MaterialManager(AnyObject):
             |                     MaterialManager
             |
             | Interface to manage material manager object.
-            | Role: A material manager is used to manage materials application on geometrical
-            | objects.
+            | Role: A material manager is used to manage materials application
+            | on geometrical objects.
 
     """
 
@@ -44,9 +43,7 @@ class MaterialManager(AnyObject):
         super().__init__(com_object)
         self.material_manager = com_object
 
-    def apply_material_on_body(
-        self, i_body: Body, i_material: Union[Material, None], i_link_mode: int = 0
-    ) -> None:
+    def apply_material_on_body(self, i_body: Body, i_material: Union[Material, None], i_link_mode: int = 0) -> None:
         """
         .. note::
             :class: toggle
@@ -56,8 +53,8 @@ class MaterialManager(AnyObject):
                 | Material iMaterial,
                 | short iLinkMode)
                 |
-                |     Apply a Material on a Body. If Material is NULL, deletes the material
-                |     already applied on the Body
+                |     Apply a Material on a Body. If Material is NULL, deletes
+                |     the material already applied on the Body.
 
         :param Body i_body:
         :param Material i_material:
@@ -72,10 +69,10 @@ class MaterialManager(AnyObject):
         )
 
     def apply_material_on_hybrid_body(
-        self,
-        i_hybrid_body: HybridBody,
-        i_material: Union[Material, None],
-        i_link_mode: int = 0,
+            self,
+            i_hybrid_body: HybridBody,
+            i_material: Union[Material, None],
+            i_link_mode: int = 0,
     ) -> None:
         """
         .. note::
@@ -86,8 +83,8 @@ class MaterialManager(AnyObject):
                 | Material iMaterial,
                 | short iLinkMode)
                 |
-                |     Apply a Material on a Hybrid Body. If Material is NULL, deletes the
-                |     material already applied on the Hybrid Body
+                |     Apply a Material on a Hybrid Body. If Material is NULL,
+                |     deletes the material already applied on the Hybrid Body
 
         :param HybridBody i_hybrid_body:
         :param Material i_material:
@@ -102,7 +99,7 @@ class MaterialManager(AnyObject):
         )
 
     def apply_material_on_part(
-        self, i_part: Part, i_material: Union[Material, None], i_link_mode: int = 0
+            self, i_part: Part, i_material: Union[Material, None], i_link_mode: int = 0
     ) -> None:
         """
         .. note::
@@ -113,8 +110,8 @@ class MaterialManager(AnyObject):
                 | Material iMaterial,
                 | short iLinkMode)
                 |
-                |     Apply a Material on a Part. If Material is NULL, deletes the material
-                |     already applied on the Part
+                |     Apply a Material on a Part. If Material is NULL, deletes
+                |     the material already applied on the Part
 
         :param Part i_part:
         :param Material i_material:
@@ -129,10 +126,10 @@ class MaterialManager(AnyObject):
         )
 
     def apply_material_on_product(
-        self,
-        i_product: Product,
-        i_material: Union[Material, None],
-        i_link_mode: int = 0,
+            self,
+            i_product: Product,
+            i_material: Union[Material, None],
+            i_link_mode: int = 0,
     ) -> None:
         """
         .. note::
@@ -143,8 +140,8 @@ class MaterialManager(AnyObject):
                 | Material iMaterial,
                 | short iLinkMode)
                 |
-                |     Apply a Material on a Product. If Material is NULL, deletes the material
-                |     already applied on the Product
+                |     Apply a Material on a Product. If Material is NULL,
+                |     deletes the material already applied on the Product
 
         :param Product i_product:
         :param Material i_material:
@@ -159,10 +156,10 @@ class MaterialManager(AnyObject):
         )
 
     def apply_material_on_user_material(
-        self,
-        i_user_material: AnyObject,
-        i_material: Union[Material, None],
-        i_link_mode: int = 0,
+            self,
+            i_user_material: AnyObject,
+            i_material: Union[Material, None],
+            i_link_mode: int = 0,
     ) -> None:
         """
         .. note::
@@ -173,9 +170,11 @@ class MaterialManager(AnyObject):
                 | Material iMaterial,
                 | short iLinkMode)
                 |
-                |     Apply a Material on a User Material (Analysis entity). Warning:
-                |     iUserMaterial should be a CATIAAnalysisEntity object. If Material is NULL,
-                |     deletes the material already applied on the User Material
+                |     Apply a Material on a User Material (Analysis entity).
+                |     Warning:
+                |     iUserMaterial should be a CATIAAnalysisEntity object. If
+                |     Material is NULL, deletes the material already applied on
+                |     the User Material
 
         :param AnyObject i_user_material:
         :param Material i_material:
@@ -198,8 +197,8 @@ class MaterialManager(AnyObject):
                 | o Sub GetMaterialOnBody(Body iBody,
                 | Material oMaterial)
                 |
-                |     Get a Material on a Body. Material returned is NULL if no material is
-                |     applied on the Body
+                |     Get a Material on a Body. Material returned is NULL if no
+                |     material is applied on the Body
 
         :param Body i_body:
         :param Material o_material:
@@ -230,8 +229,8 @@ class MaterialManager(AnyObject):
                 | o Sub GetMaterialOnHybridBody(HybridBody iHybridBody,
                 | Material oMaterial)
                 |
-                |     Get a Material on a Hybrid Body. Material returned is NULL if no material
-                |     is applied on the Hybrid Body
+                |     Get a Material on a Hybrid Body. Material returned is
+                |     NULL if no material is applied on the Hybrid Body
 
         :param HybridBody i_hybrid_body:
         :param Material o_material:
@@ -265,8 +264,8 @@ class MaterialManager(AnyObject):
                 | o Sub GetMaterialOnPart(Part iPart,
                 | Material oMaterial)
                 |
-                |     Get a Material on a Part. Material returned is NULL if no material is
-                |     applied on the Part
+                |     Get a Material on a Part. Material returned is NULL if no
+                |     material is applied on the Part
 
         :param Part i_part:
         :param Material o_material:
@@ -297,8 +296,8 @@ class MaterialManager(AnyObject):
                 | o Sub GetMaterialOnProduct(Product iProduct,
                 | Material oMaterial)
                 |
-                |     Get a Material on a Product. Material returned is NULL if no material is
-                |     applied on the Product
+                |     Get a Material on a Product. Material returned is NULL if
+                |     no material is applied on the Product
 
         :param Product i_product:
         :param Material o_material:
@@ -329,9 +328,10 @@ class MaterialManager(AnyObject):
                 | o Sub GetMaterialOnUserMaterial(AnyObject iUserMaterial,
                 | Material oMaterial)
                 |
-                |     Get a Material on a User Material (Analysis entity). Warning: iUserMaterial
-                |     should be a CATIAAnalysisEntity object. Material returned is NULL if no
-                |     material is applied on the User Material
+                |     Get a Material on a User Material (Analysis entity).
+                |     Warning: iUserMaterial should be a CATIAAnalysisEntity
+                |     object. Material returned is NULL if no material is
+                |     applied on the User Material
 
         :param AnyObject i_user_material:
         :param Material o_material:
@@ -357,7 +357,7 @@ class MaterialManager(AnyObject):
         )
 
     def replace_material_links(
-        self, i_material1: Material, i_material2: Material
+            self, i_material1: Material, i_material2: Material
     ) -> None:
         """
         .. note::
@@ -367,9 +367,9 @@ class MaterialManager(AnyObject):
                 | o Sub ReplaceMaterialLinks(Material iMaterial1,
                 | Material iMaterial2)
                 |
-                |     In current session, replace all links towards a material 1 with a link
-                |     towards an other material 2. N.B. Both materials entered should be in a
-                |     material library.
+                |     In current session, replace all links towards a material 1
+                |     with a link towards an other material 2. N.B. Both
+                |     materials entered should be in a material library.
 
         :param Material i_material1:
         :param Material i_material2:
@@ -379,4 +379,4 @@ class MaterialManager(AnyObject):
         self.material_manager.ReplaceMaterialLinks(i_material1, i_material2)
 
     def __repr__(self):
-        return f'MaterialManager(name="{ self.name }")'
+        return f'MaterialManager(name="{self.name}")'

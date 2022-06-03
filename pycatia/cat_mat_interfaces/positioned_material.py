@@ -14,7 +14,6 @@ from pycatia.cat_mat_interfaces.material import Material
 
 
 class PositionedMaterial(AnyObject):
-
     """
     .. note::
         :class: toggle
@@ -48,10 +47,10 @@ class PositionedMaterial(AnyObject):
                 |     Returns the application mode of the material.
                 |
                 |         Possible mode values are:
-                |         0: Material has been applied as a copy on the geometrical
-                |         object
-                |         1: Material has been applied as a link on the geometrical
-                |         object
+                |         0: Material has been applied as a copy on the
+                |         geometrical object
+                |         1: Material has been applied as a link on the
+                |         geometrical object
 
         :return: int
         :rtype: int
@@ -74,8 +73,8 @@ class PositionedMaterial(AnyObject):
                 |         Possible inheritance mode values are:
                 |         0: The material is propagated towards its children
                 |         1: The material is not propagated towards its children
-                |         2: The material do not accept material propagated by its father (forced
-                |         mode)
+                |         2: The material do not accept material propagated by
+                |            its father (forced mode)
 
         :return: int
         :rtype: int
@@ -100,7 +99,8 @@ class PositionedMaterial(AnyObject):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property Material() As Material (Read Only)
                 |
-                |     Returns the material object from the current positioned material.
+                |     Returns the material object from the current positioned
+                |     material.
 
         :return: Material
         :rtype: Material
@@ -109,4 +109,4 @@ class PositionedMaterial(AnyObject):
         return Material(self.positioned_material.Material)
 
     def __repr__(self):
-        return f'PositionedMaterial(name="{ self.name }")'
+        return f'PositionedMaterial(name="{self.name}")'
