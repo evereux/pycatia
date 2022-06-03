@@ -46,7 +46,7 @@ class RenderingMaterial(AnyObject):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property AdaptiveCoeff() As short
                 |
-                |     Returns or sets the adaptive coeffcient of a material. Adaptive coeffcient
+                |     Returns or sets the adaptive coefficient of a material. Adaptive coefficient
                 |     value is between 1 an 8.
 
         :return: int
