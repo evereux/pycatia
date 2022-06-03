@@ -29,7 +29,8 @@ class MaterialDocument(Document):
             |                         MaterialDocument
             |
             | Represents the Document object for materials.
-            | When a MaterialDocument object is created, a MaterialFamily object is created.
+            | When a MaterialDocument object is created, a MaterialFamily object
+            | is created.
             | A Material object is also created inside this MaterialFamily
             | object.
 
@@ -48,7 +49,8 @@ class MaterialDocument(Document):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property Families() As MaterialFamilies (Read Only)
                 |
-                |     Returns the Family collection object from the current material document.
+                |     Returns the Family collection object from the current
+                |     material document.
 
         :return: MaterialFamilies
         :rtype: MaterialFamilies
@@ -56,4 +58,4 @@ class MaterialDocument(Document):
         return MaterialFamilies(self.material_document.Families)
 
     def __repr__(self):
-        return f'MaterialDocument(name="{ self.name }")'
+        return f'MaterialDocument(name="{self.name}")'

@@ -15,7 +15,6 @@ from pycatia.types.general import cat_variant
 
 
 class Materials(Collection):
-
     """
     .. note::
         :class: toggle
@@ -68,16 +67,17 @@ class Materials(Collection):
                 |     Parameters:
                 |
                 |         iIndex
-                |             The index of the material to retrieve in the collection of
-                |             materials. Compared with other collections, you cannot use the name of the
+                |             The index of the material to retrieve in the
+                |             collection of materials. Compared with other
+                |             collections, you cannot use the name of the
                 |             material as argument.
                 |
                 |     Returns:
                 |         The retrieved material
                 |
                 | Example:
-                |     The following example returns in MyMaterial the sixth material in a
-                |     material collection.
+                |     The following example returns in MyMaterial the sixth
+                |     material in a material collection.
                 |
                 |      Dim MyMaterial As Material
                 |      Set MyMaterial = Materials.Item(6)
@@ -119,8 +119,9 @@ class Materials(Collection):
                 |     Parameters:
                 |
                 |         iIndex
-                |             The index of the material to retrieve in the sorted collection of
-                |             materials. Compared with other collections, you cannot use the name of the
+                |             The index of the material to retrieve in the
+                |             sorted collection of materials. Compared with
+                |             other collections, you cannot use the name of the
                 |             material as argument.
                 |         iMode
                 |             The sorted mode of material collection
@@ -140,4 +141,4 @@ class Materials(Collection):
         return Material(self.materials.SortedItem(i_index, i_mode))
 
     def __repr__(self):
-        return f'Materials(name="{ self.name }")'
+        return f'Materials(name="{self.name}")'

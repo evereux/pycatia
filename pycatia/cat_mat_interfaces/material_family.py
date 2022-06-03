@@ -14,7 +14,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class MaterialFamily(AnyObject):
-
     """
     .. note::
         :class: toggle
@@ -47,7 +46,8 @@ class MaterialFamily(AnyObject):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property Materials() As Materials (Read Only)
                 |
-                |     Returns the material collection object from the current material family.
+                |     Returns the material collection object from the current
+                |     material family.
 
         :return: Materials
         :rtype: Materials
@@ -56,4 +56,4 @@ class MaterialFamily(AnyObject):
         return Materials(self.material_family.Materials)
 
     def __repr__(self):
-        return f'MaterialFamily(name="{ self.name }")'
+        return f'MaterialFamily(name="{self.name}")'
