@@ -143,3 +143,5 @@ win_32/pycatia
 pycatia-exe.py
 logo*
 *.cgr
+
+test.py
