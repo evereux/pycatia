@@ -15,7 +15,6 @@ from pycatia.types.general import cat_variant
 
 
 class MaterialFamilies(Collection):
-
     """
     .. note::
         :class: toggle
@@ -51,8 +50,9 @@ class MaterialFamilies(Collection):
                 |
                 |
                 | Example:
-                |     The following adds a material family to the collection attached to a
-                |     document. This document must be a MaterialDocument object.
+                |     The following adds a material family to the collection
+                |     attached to a document. This document must be a
+                |     MaterialDocument object.
                 |
                 |      FileToOpen = "e:\\users\\ast\\materials\\Catalog.CATMaterial"
                 |      Dim MyDocument As MaterialDocument
@@ -73,22 +73,24 @@ class MaterialFamilies(Collection):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func Item(CATVariant iIndex) As MaterialFamily
                 |
-                |     Returns a material family from its index in the MaterialFamilies
-                |     collection.
+                |     Returns a material family from its index in the
+                |     MaterialFamilies collection.
                 |
                 |     Parameters:
                 |
                 |         iIndex
-                |             The index of the material family to retrieve in the collection of
-                |             material families. Compared with other collections, you cannot use the name of
+                |             The index of the material family to retrieve in
+                |             the collection of material families. Compared with
+                |             other collections, you cannot use the name of
                 |             the material family as argument.
                 |
                 |     Returns:
                 |         The retrieved material family
                 |
                 | Example:
-                |     The following example returns in MyMaterialFamily the sixth material family
-                |     in the collection.
+                |     The following example returns in MyMaterialFamily the
+                |     sixth
+                |     material family in the collection.
                 |
                 |      Dim MyMaterialFamily As MaterialFamily
                 |      Set MyMaterialFamily = MaterialFamilies.Item(6)
@@ -113,16 +115,16 @@ class MaterialFamilies(Collection):
                 |     Parameters:
                 |
                 |         iIndex
-                |             The index of the material family to remove. Compared with other
-                |             collections, you cannot use the name of the material family as argument.
+                |             The index of the material family to remove.
+                |             Compared with other collections, you cannot use
+                |             the name of the material family as argument.
                 |
                 |
                 |     Example:
-                |         The following example removes the second material family in the
-                |         collection attached to the active document. This document must be a
-                |
-                |
-                |     MaterialDocument object.
+                |         The following example removes the second material
+                |         family in the collection attached to the active
+                |         document. This document must be a MaterialDocument
+                |         object.
                 |
                 |      FileToOpen = "e:\\users\\ast\\materials\\Catalog.CATMaterial"
                 |      Dim MyDocument As MaterialDocument
@@ -136,4 +138,4 @@ class MaterialFamilies(Collection):
         self.material_families.Remove(i_index)
 
     def __repr__(self):
-        return f'MaterialFamilies(name="{ self.name }")'
+        return f'MaterialFamilies(name="{self.name}")'

@@ -64,8 +64,8 @@ class AnalysisMaterial(AnyObject):
                 |     needed
 
         :param str i_label:
-        :return: CATVariant
-        :rtype: CATVariant
+        :return: cat_variant
+        :rtype: cat_variant
         """
         return self.analysis_material.GetValue(i_label)
 
@@ -78,14 +78,15 @@ class AnalysisMaterial(AnyObject):
                 | o Sub PutValue(CATBSTR iLabel,
                 | CATVariant iValue)
                 |
-                |     Sets an analysis value of the material. The name of the parameter is needed
+                |     Sets an analysis value of the material. The name of the
+                |     parameter is needed
 
         :param str i_label:
-        :param CATVariant i_value:
+        :param cat_variant i_value:
         :return: None
         :rtype: None
         """
         return self.analysis_material.PutValue(i_label, i_value)
 
     def __repr__(self):
-        return f'AnalysisMaterial(name="{ self.name }")'
+        return f'AnalysisMaterial(name="{self.name}")'
