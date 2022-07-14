@@ -1093,9 +1093,10 @@ class DrawingView(AnyObject):
         """
 
         system_service = self.application.system_service
-        return system_service.evaluate(
+        value = system_service.evaluate(
             vba_code, 0, vba_function_name, [self.com_object]
         )
+        return value[0], value[1], value[2], value[3]
 
     def un_aligned_with_reference_view(self) -> None:
         """
