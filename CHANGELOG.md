@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.5
+
+* added material interfaces (@deloarts). See examples.
+* fixed Documents.read(). It now returns a pycatia document object
+  (@Alexander via email).
+
 ## 0.5.4
 
 * fixed method in pycatia/hybrid_shape_interfaces/hybrid_shape_plane_offset_pt
@@ -8,7 +14,7 @@
 ## 0.5.3
 
 * fixed methods in pycatia/mec_mod_interfaces/axis_system and pycatia/mec_mod_interfaces/cylindrical_face.py
-  that required  mapping to VBA methods.
+  that required mapping to VBA methods.
 
 ## 0.5.2
 
