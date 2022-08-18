@@ -8,6 +8,7 @@ from pywintypes import com_error
 from pycatia.exception_handling import CATIAApplicationException
 from pycatia.in_interfaces.document import Document
 from pycatia.system_interfaces.collection import Collection
+from pycatia.types.document_types import document_type
 from pycatia.types.general import cat_variant, list_str
 
 
@@ -308,7 +309,11 @@ class Documents(Collection):
         :return: Document
         :rtype: Document
         """
-        return self.documents.Read(file_name)
+        # return Document(self.documents.Read(file_name))
+
+        read_doc_com = self.documents.Read(file_name)
+        doc_suffix = file_name.split('.')[-1]
+        return document_type[doc_suffix](read_doc_com)
 
     def __getitem__(self, n: int) -> Document:
         if (n + 1) > self.count:
