@@ -4,10 +4,9 @@ from pathlib import Path
 from pycatia import catia
 from pycatia.enumeration.enumeration_types import cat_constraint_mode
 from pycatia.enumeration.enumeration_types import cat_constraint_type
+from tests.common_vars import test_files
 
 caa = catia()
-
-test_files = Path("tests/cat_files")
 
 source_cat_part_measurable = Path(os.getcwd(), test_files, "part_measurable.CATPart")
 
