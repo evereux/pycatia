@@ -103,6 +103,13 @@ If you have written a script using pycatia you would like to share you can:
 Running The Tests
 -----------------
 
+Prior to running the tests please ensure CATIA V5 has the following
+configuration settings:
+
+* CGR cache system must be disabled.
+* Parameter names must not have back ticks enabled. Tools > Options > General >
+Parameters and Measure > Knowledge > Parameter Names > Surrounded by the ` symbol.
+
 On the first run, during the running of the tests, the test suite will create
 the CATIA drawing, products and part it requires to run in the folder
 tests/cat_files.
