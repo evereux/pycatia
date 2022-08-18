@@ -4,11 +4,10 @@ from pathlib import Path
 from pywintypes import com_error
 
 from pycatia import catia
+from tests.common_vars import test_files
 from tests.create_source_parts import get_cat_part_measurable
 
 caa = catia()
-
-test_files = Path("tests/cat_files")
 
 source_cat_product = Path(os.getcwd(), test_files, "product_top.CATProduct")
 source_cat_sub_1 = Path(os.getcwd(), test_files, "product_sub_1.CATProduct")
