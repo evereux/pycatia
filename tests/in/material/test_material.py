@@ -6,15 +6,14 @@ from pycatia.cat_mat_interfaces.material_document import MaterialDocument
 from pycatia.cat_mat_interfaces.material_manager import MaterialManager
 from pycatia.mec_mod_interfaces.part import Part
 from pycatia.product_structure_interfaces.product import Product
-from tests.source_files import cat_part_measurable, cat_product
+from tests.source_files import cat_part_measurable, cat_product, cat_material
+from tests.common_vars import test_files
 
-test_files = Path("tests/cat_files")
-catalog_file = Path(os.getcwd(), test_files, "Catalog.CATMaterial")
 icon_folder = Path(os.getcwd(), test_files)
 
 
 def test_material_document():
-    with CATIADocHandler(catalog_file) as caa:
+    with CATIADocHandler(cat_material) as caa:
         material_document = MaterialDocument(caa.document.com_object)  # type: ignore
         material_families = material_document.families
         materials = material_families.item(1).materials
@@ -23,7 +22,7 @@ def test_material_document():
 
 
 def test_material_manager_part():
-    with CATIADocHandler(catalog_file) as caam:
+    with CATIADocHandler(cat_material) as caam:
         material_document = MaterialDocument(caam.document.com_object)  # type: ignore
         material_families = material_document.families
         materials = material_families.item(1).materials
@@ -64,7 +63,7 @@ def test_material_manager_part():
 
 
 def test_material_manager_product():
-    with CATIADocHandler(catalog_file) as caam:
+    with CATIADocHandler(cat_material) as caam:
         material_document = MaterialDocument(caam.document.com_object)  # type: ignore
         material_families = material_document.families
         materials = material_families.item(1).materials
@@ -87,7 +86,7 @@ def test_material_manager_product():
 
 
 def test_analysis_material():
-    with CATIADocHandler(catalog_file) as caa:
+    with CATIADocHandler(cat_material) as caa:
         material_document = MaterialDocument(caa.document.com_object)  # type: ignore
         material_families = material_document.families
         materials = material_families.item(1).materials
@@ -97,7 +96,7 @@ def test_analysis_material():
 
 
 def test_material():
-    with CATIADocHandler(catalog_file) as caa:
+    with CATIADocHandler(cat_material) as caa:
         material_document = MaterialDocument(caa.document.com_object)  # type: ignore
         material_families = material_document.families
         materials = material_families.item(1).materials
