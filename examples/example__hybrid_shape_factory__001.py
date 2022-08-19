@@ -2,7 +2,7 @@
 
 """
 
-    Example 21:
+    Example - Hybrid Shape Factory - 001:
 
     Sequentially rename all points in geometric set (hybrid body) Points in the geometric set MasterGeometry.
 

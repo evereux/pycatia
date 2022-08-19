@@ -2,7 +2,7 @@
 
 """
 
-    Example 8:
+    Example - Document - 002:
 
     Open all CATParts in source directory and save to IGS in target directory.
 

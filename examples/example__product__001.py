@@ -2,7 +2,7 @@
 
 """
 
-    Example 18:
+    Example - Product - 001:
 
     .. warning::
 

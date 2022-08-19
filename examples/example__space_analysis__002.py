@@ -2,7 +2,7 @@
 
 """
 
-    Example 2:
+    Example - Space Analysis - 002:
 
     Get all the points in the geometrical set 'Points' and output co-ordinate to console.
 

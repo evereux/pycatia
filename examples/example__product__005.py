@@ -2,7 +2,7 @@
 
 """
 
-    Example 4:
+    Example - Prodcut - 005:
 
     Loop through a CATProduct and find if sub component is a CATPart or CATProduct.
 

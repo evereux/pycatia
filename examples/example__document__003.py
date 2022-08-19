@@ -2,7 +2,7 @@
 
 """
 
-    Example 6:
+    Example - Document - 003:
 
     Open a catia file.
 

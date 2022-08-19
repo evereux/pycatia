@@ -2,7 +2,7 @@
 
 """
 
-    Example 9:
+    Example - Product - 004:
 
     Get the position matrix of products (CATPart or CATProduct) in product.
 

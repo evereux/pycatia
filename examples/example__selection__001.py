@@ -2,7 +2,7 @@
 
 """
 
-    Example 26:
+    Example - Selection - 001:
 
     Prompt the user to select a product and get it's bounding box parameters
 

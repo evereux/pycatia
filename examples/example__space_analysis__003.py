@@ -2,7 +2,7 @@
 
 """
 
-    Example 3:
+    Example - Space Analysis - 003:
 
     Find all points in the CATPart and print to console -> and export to csv.
 

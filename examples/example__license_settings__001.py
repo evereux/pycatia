@@ -2,7 +2,7 @@
 
 """
 
-    Example 24:
+    Example - License Settings - 001:
 
     Determine if a license for DF1 has been requested.
 
