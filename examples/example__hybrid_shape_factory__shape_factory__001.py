@@ -2,7 +2,7 @@
 
 """
 
-    Example 13:
+    Example - Hybrid Shape Factory & Shape Factory - 001:
 
     3D Points, Spline, Extrusion and Generate Thickness.
 

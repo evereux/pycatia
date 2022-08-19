@@ -2,7 +2,7 @@
 
 """
 
-    Example 19:
+    Example - Visual Properties - 001:
 
     Searching and changing visual properties. Find all Red points and make them
     Pink.

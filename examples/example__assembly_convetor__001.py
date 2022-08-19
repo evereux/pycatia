@@ -2,7 +2,7 @@
 
 """
 
-    Example 29
+    Example - Asssembly Convetor - 001
 
     Print the BOM of a product to XLS using the inbuilt AssemblyConvertor. You
     must already have excel installed.

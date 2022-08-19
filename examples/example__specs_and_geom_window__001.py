@@ -2,7 +2,7 @@
 
 """
 
-    Example 27:
+    Example - Specs And Geometry Window - 001:
 
     Loop through all the CATParts in a directory and save PLAN VIEW, SIDE VIEW,
     END VIEW and ISO pngs for each part.
