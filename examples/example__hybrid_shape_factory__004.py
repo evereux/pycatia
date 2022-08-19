@@ -2,7 +2,7 @@
 
 """
 
-    Example 22:
+    Example - Hybrid Shape Factory - 004:
 
     Loops through the items in hybrid body "Lines" and determine the object type using selection.
 

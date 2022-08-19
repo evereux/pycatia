@@ -2,7 +2,7 @@
 
 """
 
-    Example 30:
+    Example - Hybrid Shape Factory - 005:
 
     GSD: Split a surface using a plane.
 

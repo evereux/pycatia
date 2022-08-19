@@ -2,7 +2,7 @@
 
 """
 
-    Example 25:
+    Example - BOM CUSTOM - 001:
 
     Create a custom formatted html of the product tree.
 

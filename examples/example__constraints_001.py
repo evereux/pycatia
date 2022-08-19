@@ -2,7 +2,7 @@
 
 """
 
-    Example 23:
+    Example - Constraints - 001:
 
     Fix the first Sub Product in Product using constraints. The Sketch examples
     also show further usage of constraints.

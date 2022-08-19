@@ -3,57 +3,76 @@
 Examples
 ========
 
-The module pycatia must already be installed.
-
-Example 1
----------
-
-Get the center of gravity for the part body 'PartBody'.
-
-`Example 1 <https://github.com/evereux/pycatia/blob/master/examples/example_001.py>`_
 
 
-Example 2
----------
+ASEMBLY CONVERTOR
+-----------------
 
-Get all the points in the geometrical set 'Points' and output co-ordinate to console.
+Asssembly Convetor - 001
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-Create your own CATPart with a Geometrical Set called construction_points. Add some points to the Geometrical Set.
+Print the BOM of a product to XLS using the inbuilt AssemblyConvertor. You
+must already have excel installed.
 
-`Example 2 <https://github.com/evereux/pycatia/blob/master/examples/example_002.py>`_
+This can also be used to create TXT and HTML files.
 
+See github issue https://github.com/evereux/pycatia/issues/110 with regards
+to file paths and saying "No" to overwriting existing files and file paths
+when using excel. These issues are mitigated using the code below by
+checking for an existing excel file and removing it and also using pythons
+pathlib.Path module.
 
-Example 3
----------
-
-Find all points in the CATPart and print to console and export to csv.
-
-`Example 3 <https://github.com/evereux/pycatia/blob/master/examples/example_003.py>`_
-
-
-Example 4
----------
-
-Loop through a CATProduct and find if sub component is a CATPart or CATProduct.
-
-`Example 4 <https://github.com/evereux/pycatia/blob/master/examples/example_004.py>`_
+`Asssembly Convetor - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__assembly_convetor__001.py>`_
 
 
-Example 5
----------
 
-Reads a csv file containing point data and adds to the new catia part.
+BOM CUSTOM
+----------
+
+BOM Custom - 001
+~~~~~~~~~~~~~~~~
+
+Write the contents of a product to a html file.
+
+`BOM Custom - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__bom_custom_001.py>`_
 
 
-Formatting of csv data should be:
 
-    <point_name>,<x coordinate>,<y coordinate>,<z coordinate>
+CONSTRAINTS
+-----------
 
-`Example 5 <https://github.com/evereux/pycatia/blob/master/examples/example_005.py>`_
+Constraints - 001
+~~~~~~~~~~~~~~~~~
+
+Fix the first Sub Product in Product using constraints. The Sketch examples
+also show further usage of constraints.
+
+`Constraints - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__constraints_001.py>`_
 
 
-Example 6
----------
+
+DOCUMENT
+--------
+
+
+Document - 001
+~~~~~~~~~~~~~~
+
+Use the context manager to open CATIA documents and close.
+
+`Document - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__document__001.py>`_
+
+
+Document - 002
+~~~~~~~~~~~~~~
+
+Open all CATParts in source directory and save to IGS in target directory.
+
+`Document - 002 <https://github.com/evereux/pycatia/blob/master/examples/example__document__002.py>`_
+
+
+Document - 003
+~~~~~~~~~~~~~~
 
 Open a catia file.
 
@@ -61,106 +80,192 @@ Export catia file to igs.
 
 Close a catia file.
 
-`Example 6 <https://github.com/evereux/pycatia/blob/master/examples/example_006.py>`_
+`Document - 003 <https://github.com/evereux/pycatia/blob/master/examples/example__document__003.py.py>`_
 
 
-Example 7
----------
 
-Use the context manager to open CATIA documents and close.
-
-`Example 7 <https://github.com/evereux/pycatia/blob/master/examples/example_007.py>`_
+DRAFTING
+--------
 
 
-Example 8
----------
+Drafting - 001
+~~~~~~~~~~~~~~
 
-Open all CATParts in source directory and save to IGS in target directory.
+Drafting: create a border template in the background view of the currently opened A0 landscape CATDrawing.
 
-`Example 8 <https://github.com/evereux/pycatia/blob/master/examples/example_008.py>`_
-
-
-Example 9
----------
-
-Get the position matrix of products (CATPart or CATProduct) in product.
-
-`Example 9 <https://github.com/evereux/pycatia/blob/master/examples/example_009.py>`_
+`Drafting - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__drafting__001.py>`_
 
 
-Example 10
+
+HYBRID SHAPE FACTORY
+--------------------
+
+
+Hybrid Shape Factory - 001
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Sequentially rename all points in geometric set (hybrid body) Points in the geometric set MasterGeometry.
+
+
+`Hybrid Shape Factory - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__hybrid_shape_factory__001.py>`_
+
+
+Hybrid Shape Factory - 002
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Reads a csv file containing point data and adds to the new catia part.
+
+Formatting of csv data should be:
+
+    <point_name>,<x coordinate>,<y coordinate>,<z coordinate>
+
+`Hybrid Shape Factory - 002 <https://github.com/evereux/pycatia/blob/master/examples/example__hybrid_shape_factory__002.py>`_
+
+
+Hybrid Shape Factory - 003
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Draw a line between two points.
+
+`Hybrid Shape Factory - 003 <https://github.com/evereux/pycatia/blob/master/examples/example__hybrid_shape_factory__003.py>`_
+
+
+Hybrid Shape Factory - 004
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Loops through the items in hybrid body "Lines" and determine the object type using selection.
+
+Once determined create an object from it and find it's parent(s)
+
+Requires an active part document open with a geometrical set called
+"construction_geometry" containing points generated using HybridShapePtCoord
+and line generated using HybridShapeLinePtPt
+
+
+`Hybrid Shape Factory - 004 <https://github.com/evereux/pycatia/blob/master/examples/example__hybrid_shape_factory__004.py>`_
+
+
+Hybrid Shape Factory - 005
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+GSD: Split a surface using a plane.
+
+Requirements: Geometrical set named "ConstructionGeometry". A surface
+within the geometrical set called "Surface.1" that can be split by the
+origin ZX plane.
+
+`Hybrid Shape Factory - 005 <https://github.com/evereux/pycatia/blob/master/examples/example__hybrid_shape_factory__005.py>`_
+
+
+
+HYBRID SHAPE FACTORY & SHAPE FACTORY
+------------------------------------
+
+
+Hybrid Shape Factory & Shape Factory - 001
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+3D Points, Spline, Extrusion and Generate Thickness.
+
+`Hybrid Shape Factory & Shape Factory - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__hybrid_shape_factory__shape_factory__001.py>`_
+
+
+
+HYBRID SKETCH & SHAPE FACTORY
+-----------------------------
+
+
+Hybrid Sketch & Shape Factory - 001
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Creates a square in a sketch and fully constrains it. Sketch then used to pad.
+
+
+`Hybrid Sketch & Shape Factory - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__hybrid_sketch__shape_factory__001.py>`_
+
+
+
+LICENSE SETTINGS
+----------------
+
+
+License Settings - 001
+~~~~~~~~~~~~~~~~~~~~~~
+
+Basic license checking.
+
+`License Settings - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__license_settings__001.py.py>`_
+
+
+
+LOGGING
+-------
+
+
+Logging - 001
+~~~~~~~~~~~~~
+
+Logging.
+
+`Logging - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__logging__001.py>`_
+
+
+
+MATERIAL INTERFACES
+-------------------
+
+
+Material - 001
+--------------
+
+CATMatInterfaces
+        
+Opens the material catalog and retrieves the first few materials.
+
+Creates a new part and applies the material to the part, the main body and a
+hybrid body.
+
+Creates a new product and applies the material to it.
+
+`Material - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__material__001.py>`_
+
+
+
+MESSAGE BOX
+-----------
+
+
+Message Box - 001
+~~~~~~~~~~~~~~~~~
+
+This creates a message box with the buttons abort, retry ignore and displays the Warning Query icon.
+
+`Message Box - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__message_box__001.py>`_
+
+
+
+PARAMETERS
 ----------
 
-Loop through a CATProduct and analyse children if CATPart.
 
-Only goes two levels deep.
-
-`Example 10 <https://github.com/evereux/pycatia/blob/master/examples/example_010.py>`_
-
-
-Example 11
-----------
-
-Move the first child in product.
-
-`Example 11 <https://github.com/evereux/pycatia/blob/master/examples/example_011.py>`_
-
-
-Example 12
-----------
+Parameters - 001
+~~~~~~~~~~~~~~~~
 
 Access the CATIA COM object with a .CATPart open and and display
 each parameter along with its name, value and its associated parameter set.
 
 # todo: need to create a source part to support this example.
 
-`Example 12 <https://github.com/evereux/pycatia/blob/master/examples/example_012.py>`_
+`Parameters - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__parameters__001.py>`_
 
 
-Example 13
-----------
 
-3D Points, Spline, Extrusion and Generate Thickness.
-
-`Example 13 <https://github.com/evereux/pycatia/blob/master/examples/example_013.py>`_
+PRODUCT
+-------
 
 
-Example 14
-----------
-
-Logging.
-
-`Example 14 <https://github.com/evereux/pycatia/blob/master/examples/example_014.py>`_
-
-
-Example 15
-----------
-
-Draw a line between two points.
-
-`Example 15 <https://github.com/evereux/pycatia/blob/master/examples/example_016.py>`_
-
-
-Example 16
-----------
-
-Creates a square in a sketch and fully constrains it. Sketch then used to pad.
-
-
-`Example 16 <https://github.com/evereux/pycatia/blob/master/examples/example_016.py>`_
-
-
-Example 17
-----------
-
-Drafting: create a border template in the background view of the currently opened A0 landscape CATDrawing.
-
-
-`Example 17 <https://github.com/evereux/pycatia/blob/master/examples/example_017.py>`_
-
-
-Example 18
-----------
+Product - 001
+~~~~~~~~~~~~~
 
 .. warning::
 
@@ -174,74 +279,51 @@ Example 18
 Assembly Design: Reorder a Product tree alphabetically. The Product shall
 already be loaded.
 
-`Example 18 <https://github.com/evereux/pycatia/blob/master/examples/example_018.py>`_
+`Product - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__product__001.py>`_
 
 
-Example 19
-----------
+Product - 002
+~~~~~~~~~~~~~
 
-Searching and changing visual properties. Find all Red points and make them
-Pink.
+Move the first child in product.
 
-`Example 19 <https://github.com/evereux/pycatia/blob/master/examples/example_019.py>`_
-
-
-Example 20
-----------
-
-This creates a message box with the buttons abort, retry ignore and displays the Warning Query icon.
-
-`Example 20 <https://github.com/evereux/pycatia/blob/master/examples/example_020.py>`_
+`Product - 002 <https://github.com/evereux/pycatia/blob/master/examples/example__product__002.py>`_
 
 
-Example 21
-----------
+Product - 003
+~~~~~~~~~~~~~
 
-Sequentially rename all points in geometric set (hybrid body) Points in the geometric set MasterGeometry.
+Loop through a CATProduct and analyse children if CATPart.
 
+Only goes two levels deep.
 
-`Example 21 <https://github.com/evereux/pycatia/blob/master/examples/example_021.py>`_
-
-
-Example 22
-----------
-
-Loops through the items in hybrid body "Lines" and determine the object type using selection.
-
-Once determined create an object from it and find it's parent(s)
-
-Requires an active part document open with a geometrical set called
-"construction_geometry" containing points generated using HybridShapePtCoord
-and line generated using HybridShapeLinePtPt
+`Product - 003 <https://github.com/evereux/pycatia/blob/master/examples/example_010.py>`_
 
 
-`Example 22 <https://github.com/evereux/pycatia/blob/master/examples/example_022.py>`_
+
+Product - 004
+~~~~~~~~~~~~~
+
+Get the position matrix of products (CATPart or CATProduct) in product.
+
+`Product - 004 <https://github.com/evereux/pycatia/blob/master/examples/example__product__004.py>`_
 
 
-Example 23
-----------
+Product - 005
+~~~~~~~~~~~~~
 
-Fix the first Sub Product in Product using constraints. The Sketch examples
-also show further usage of constraints.
+Loop through a CATProduct and find if sub component is a CATPart or CATProduct.
 
-`Example 23 <https://github.com/evereux/pycatia/blob/master/examples/example_023.py>`_
+`Prodcut - 005 <https://github.com/evereux/pycatia/blob/master/examples/example__product__005.py>`_
 
-Example 24
-----------
 
-Basic license checking.
 
-`Example 24 <https://github.com/evereux/pycatia/blob/master/examples/example_024.py>`_
+SELECTION
+---------
 
-Example 25
-----------
 
-Write the contents of a product to a html file.
-
-`Example 25 <https://github.com/evereux/pycatia/blob/master/examples/example_025.py>`_
-
-Example 26
-----------
+Selection - 001
+~~~~~~~~~~~~~~~
 
 Prompt the user to select a product and get it's bounding box parameters
 
@@ -252,11 +334,61 @@ Prompt the user to select a product and get it's bounding box parameters
     product you have selected.
 
 
-`Example 26 <https://github.com/evereux/pycatia/blob/master/examples/example_026.py>`_
+`Selection - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__selection__001.py>`_
 
 
-Example 27
-----------
+
+SHAPE FACTORY
+-------------
+
+
+Shape Factory - 001
+~~~~~~~~~~~~~~~~~~~
+
+Add new bodies to part.
+Create a cylinder in an added body.
+Do Intersection operations between two bodies..
+
+`Shape Factory - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__shape_factory__001.py>`_
+
+
+
+SPACE ANALYSIS
+--------------
+
+
+Space Analysis - 001
+~~~~~~~~~~~~~~~~~~~~
+
+Get the center of gravity for the part body 'PartBody'.
+
+`Space Analysis - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__space_analysis__001.py>`_
+
+
+Space Analysis - 002
+~~~~~~~~~~~~~~~~~~~~
+
+Get all the points in the geometrical set 'Points' and output co-ordinate to console.
+
+Create your own CATPart with a Geometrical Set called construction_points. Add some points to the Geometrical Set.
+
+`Space Analysis - 002 <https://github.com/evereux/pycatia/blob/master/examples/example__space_analysis__002.py>`_
+
+
+Space Analysis - 003
+~~~~~~~~~~~~~~~~~~~~
+
+Find all points in the CATPart and print to console and export to csv.
+
+`Example 3 <https://github.com/evereux/pycatia/blob/master/examples/example__space_analysis__003.py>`_
+
+
+SPECS AND GEOMETRY WINDOW
+-------------------------
+
+
+Specs And Geometry Window - 001
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Loop through all the CATParts in a directory and save PLAN VIEW, SIDE VIEW,
 END VIEW and ISO pngs for each part.
@@ -264,60 +396,18 @@ END VIEW and ISO pngs for each part.
 The tree is turned off and the background turned white for the screen
 capture and then turned back on.
 
-`Example 27 <https://github.com/evereux/pycatia/blob/master/examples/example_027.py>`_
-
-
-Example 28
-----------
-
-Add new bodies to part.
-Create a cylinder in an added body.
-Do Intersection operations between two bodies..
-
-`Example 28 <https://github.com/evereux/pycatia/blob/master/examples/example_028.py>`_
-
-
-Example 29
-----------
-
-Print the BOM of a product to XLS using the inbuilt AssemblyConvertor. You
-must already have excel installed.
-
-This can also be used to create TXT and HTML files.
-
-See github issue https://github.com/evereux/pycatia/issues/110 with regards
-to file paths and saying "No" to overwriting existing files and file paths
-when using excel. These issues are mitigated using the code below by
-checking for an existing excel file and removing it and also using pythons
-pathlib.Path module.
-
-`Example 29 <https://github.com/evereux/pycatia/blob/master/examples/example_029.py>`_
+`Specs And Geometry Window - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__specs_and_geom_window__001.py>`_
 
 
 
-Example 30
-----------
-
-GSD: Split a surface using a plane.
-
-Requirements: Geometrical set named "ConstructionGeometry". A surface
-within the geometrical set called "Surface.1" that can be split by the
-origin ZX plane.
-
-`Example 30 <https://github.com/evereux/pycatia/blob/master/examples/example_030.py>`_
+VISUAL PROPERTIES
+-----------------
 
 
-Example 31
-----------
+Visual Properties - 001
+~~~~~~~~~~~~~~~~~~~~~~~
 
-CATMatInterfaces
-        
-Opens the material catalog and retrieves the first few materials.
+Searching and changing visual properties. Find all Red points and make them
+Pink.
 
-Creates a new part and applies the material to the part, the main body and a
-hybrid body.
-
-Creates a new product and applies the material to it.
-
-
-`Example 31 <https://github.com/evereux/pycatia/blob/master/examples/example_031.py>`_
+`Visual Properties - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__visual_properties__001.py>`_

@@ -2,7 +2,7 @@
 
 """
 
-    Example 10:
+    Example - Product - 003:
 
     Loop through a CATProduct and analyse children if CATPart.
     Only goes two levels deep.

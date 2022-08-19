@@ -2,7 +2,7 @@
 
 """
 
-    Example 31:
+    Example - Material - 001:
 
     CATMatInterfaces
         Opens the material catalog and retrieves the first few materials.

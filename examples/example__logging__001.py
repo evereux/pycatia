@@ -2,11 +2,9 @@
 
 """
 
-    Example 20:
+    Example - Logging - 001:
 
-    Creating a message box.
-
-    This creates a message box with the buttons abort, retry ignore and displays the Warning Query icon.
+    Logging.
 
 """
 
@@ -22,6 +20,9 @@ sys.path.insert(0, os.path.abspath('..\\pycatia'))
 from pycatia import catia
 
 caa = catia()
-buttons = 2 + 32
-result = caa.message_box('Hello World!?', buttons=buttons, title='Asking a question.')
-# result = 3 if the user presses Abort.
+
+caa.logger.info('Hello world!')
+caa.logger.warning('Stay alert, stay safe, bee kind!')
+
+# [2020-06-13 11:12:09,096] INFO in example_14: Hello world!
+# [2020-06-13 11:12:09,096] WARNING in example_14: Stay alert, stay safe, bee kind!

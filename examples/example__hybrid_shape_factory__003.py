@@ -2,7 +2,7 @@
 
 """
 
-    Example 15:
+    Example - Hybrid Shape Factory - 003:
 
     Draw a line between two points.
 

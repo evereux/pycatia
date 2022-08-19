@@ -1,7 +1,7 @@
 #! /usr/bin/python3.6
 
 """
-    Example 5:
+    Example - Hybrid Shape Factory - 002:
 
     Creates a new CATIA file.
 

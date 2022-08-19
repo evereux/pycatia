@@ -2,7 +2,7 @@
 
 """
 
-    Example 1:
+    Example - Space Analysis - 001:
 
     Get the center of gravity for the part body 'PartBody'.
 
