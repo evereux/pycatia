@@ -8,8 +8,11 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia.funct_system_interfaces.functional_description import FunctionalDescription
+from typing import TYPE_CHECKING
 from pycatia.funct_system_interfaces.functional_object import FunctionalObject
+
+if TYPE_CHECKING:
+    from pycatia.funct_system_interfaces.functional_description import FunctionalDescription
 
 
 class FunctionalObjectProxy(FunctionalObject):
@@ -38,7 +41,7 @@ class FunctionalObjectProxy(FunctionalObject):
         self.functional_object_proxy = com_object
 
     @property
-    def description(self) -> FunctionalDescription:
+    def description(self) -> 'FunctionalDescription':
         """
         .. note::
             :class: toggle
@@ -54,7 +57,7 @@ class FunctionalObjectProxy(FunctionalObject):
 
         return FunctionalDescription(self.functional_object_proxy.Description)
 
-    def set_description(self, i_desc: FunctionalDescription) -> None:
+    def set_description(self, i_desc: 'FunctionalDescription') -> None:
         """
         .. note::
             :class: toggle
