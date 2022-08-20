@@ -8,9 +8,9 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia.in_interfaces.document import Document
 from pycatia.funct_system_interfaces.funct_facet_managers import FunctFacetManagers
 from pycatia.funct_system_interfaces.functional_description import FunctionalDescription
-from pycatia.in_interfaces.document import Document
 
 
 class FunctionalDocument(Document):
