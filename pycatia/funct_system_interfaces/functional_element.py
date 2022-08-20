@@ -8,9 +8,13 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia.funct_system_interfaces.functional_document import FunctionalDocument
+from typing import TYPE_CHECKING
+
 from pycatia.knowledge_interfaces.parameters import Parameters
 from pycatia.system_interfaces.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia.funct_system_interfaces.functional_document import FunctionalDocument
 
 
 class FunctionalElement(AnyObject):
@@ -36,7 +40,7 @@ class FunctionalElement(AnyObject):
         self.functional_element = com_object
 
     @property
-    def document(self) -> FunctionalDocument:
+    def document(self) -> 'FunctionalDocument':
         """
         .. note::
             :class: toggle

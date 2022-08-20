@@ -8,6 +8,8 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
+
 from pycatia.funct_system_interfaces.funct_actions_groups import FunctActionsGroups
 from pycatia.funct_system_interfaces.functional_actions import FunctionalActions
 from pycatia.funct_system_interfaces.functional_element import FunctionalElement
@@ -15,7 +17,9 @@ from pycatia.funct_system_interfaces.functional_facet import FunctionalFacet
 from pycatia.funct_system_interfaces.functional_facet_mgr import FunctionalFacetMgr
 from pycatia.funct_system_interfaces.functional_objects import FunctionalObjects
 from pycatia.funct_system_interfaces.functional_position import FunctionalPosition
-from pycatia.funct_system_interfaces.functional_variants import FunctionalVariants
+
+if TYPE_CHECKING:
+    from pycatia.funct_system_interfaces.functional_variants import FunctionalVariants
 
 
 class FunctionalDescription(FunctionalElement):
@@ -93,7 +97,7 @@ class FunctionalDescription(FunctionalElement):
         return FunctionalObjects(self.functional_description.Objects)
 
     @property
-    def variants(self) -> FunctionalVariants:
+    def variants(self) -> 'FunctionalVariants':
         """
         .. note::
             :class: toggle

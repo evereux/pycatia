@@ -8,8 +8,8 @@
         and thus help debugging in pycatia.
         
 """
-from __reference_scripts__.v5automation.CATFunctSystemItf.functional_position import FunctionalPosition
 from pycatia.funct_system_interfaces.functional_action import FunctionalAction
+from pycatia.funct_system_interfaces.functional_position import FunctionalPosition
 from pycatia.system_interfaces.collection import Collection
 from pycatia.types.general import cat_variant
 
