@@ -1,10 +1,9 @@
 from pathlib import Path
 
-from pycatia import catia
+from tests.common_vars import caa
 
 
 def get_cat_material():
-    caa = catia()
     cat_startup_path = caa.application.system_service.environ('CATStartupPath')
     cat_material_filename = 'Catalog.CATMaterial'
     catpart_materials = Path(cat_startup_path, 'materials', cat_material_filename)
