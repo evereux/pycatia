@@ -87,15 +87,13 @@ class Documents(Collection):
         :rtype: Document
         """
 
-        document_type_uf = document_type.capitalize()
+        document_types = ['Part', 'Product', 'Drawing', 'FunctionalSystem']
+        if document_type not in document_types:
+            raise ValueError(f'Document type {document_type} must be in {document_types}')
 
-        document_types = ['Part', 'Product', 'Drawing']
-        if document_type_uf not in document_types:
-            raise ValueError(f'Document type must be in [{document_types}]')
+        self.logger.info(f'Creating a new "{document_type}".')
 
-        self.logger.info(f'Creating a new "{document_type_uf}".')
-
-        return Document(self.documents.Add(document_type_uf))
+        return Document(self.documents.Add(document_type))
 
     def count_types(self, file_type_list: list_str) -> int:
         """
