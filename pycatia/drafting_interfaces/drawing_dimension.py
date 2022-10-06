@@ -9,6 +9,8 @@
         
 """
 
+from typing import Tuple
+
 from pycatia.drafting_interfaces.drawing_dim_ext_line import DrawingDimExtLine
 from pycatia.drafting_interfaces.drawing_dim_line import DrawingDimLine
 from pycatia.drafting_interfaces.drawing_dim_value import DrawingDimValue
@@ -710,16 +712,7 @@ class DrawingDimension(AnyObject):
         """
         return DrawingDimLine(self.drawing_dimension.GetDimLine())
 
-    def get_tolerances(
-        self,
-        o_tol_type: int,
-        o_tol_name: str,
-        o_up_tol: str,
-        o_low_tol: str,
-        od_up_tol: float,
-        od_low_tol: float,
-        o_display_mode: int,
-    ) -> None:
+    def get_tolerances(self) -> Tuple[int, str, str, str, float, float, int]:
         """
         .. note::
             :class: toggle
@@ -768,15 +761,27 @@ class DrawingDimension(AnyObject):
         :return: None
         :rtype: None
         """
-        return self.drawing_dimension.GetTolerances(
-            o_tol_type,
-            o_tol_name,
-            o_up_tol,
-            o_low_tol,
-            od_up_tol,
-            od_low_tol,
-            o_display_mode,
+        vba_function_name = "get_tolerances"
+        vba_code = """
+        Public Function get_tolerances(drawing_dimension)
+            Dim oValues(7)
+            drawing_dimension.GetTolerances tol_type, tol_name, tol_up_s, tol_low_s, tol_up_d, tol_low_d, tol_display
+
+            oValues(0) = tol_type
+            oValues(1) = tol_name
+            oValues(2) = tol_up_s
+            oValues(3) = tol_low_s
+            oValues(4) = tol_up_d
+            oValues(5) = tol_low_d
+            oValues(6) = tol_display
+
+            get_tolerances = oValues
+        End Function
+        """
+        value = self.application.system_service.evaluate(
+            vba_code, 0, vba_function_name, [self.com_object]
         )
+        return value[0], value[1], value[2], value[3], value[4], value[5], value[6]
 
     def get_value(self) -> DrawingDimValue:
         """
