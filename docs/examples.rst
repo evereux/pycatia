@@ -3,13 +3,51 @@
 Examples
 ========
 
+Index
+-----
+
+:ref:`ASSEMBLY CONVERTOR<ASSEMBLY CONVERTOR>`
+
+:ref:`BOM CUSTOM<BOM CUSTOM>`
+
+:ref:`CONSTRAINTS<CONSTRAINTS>`
+
+:ref:`DOCUMENT<DOCUMENT>`
+
+:ref:`DRAFTING<DRAFTING>`
+
+:ref:`HYBRID SHAPE FACTORY<HYBRID SHAPE FACTORY>`
+
+:ref:`HYBRID SHAPE FACTORY & SHAPE FACTORY<HYBRID SHAPE FACTORY & SHAPE FACTORY>`
+
+:ref:`HYBRID SKETCH & SHAPE FACTORY<HYBRID SKETCH & SHAPE FACTORY>`
+
+:ref:`LICENSE SETTINGS<LICENSE SETTINGS>`
+
+:ref:`LOGGING<LOGGING>`
+
+:ref:`MESSAGE BOX<MESSAGE BOX>`
+
+:ref:`PRODUCT<PRODUCT>`
+
+:ref:`SELECTION<SELECTION>`
+
+:ref:`SHAPE FACTORY<SHAPE FACTORY>`
+
+:ref:`SPACE ANALYSIS<SPACE ANALYSIS>`
+
+:ref:`SPECS AND GEOMETRY WINDOW<SPECS AND GEOMETRY WINDOW>`
+
+:ref:`VISUAL PROPERTIES<VISUAL PROPERTIES>`
 
 
-ASEMBLY CONVERTOR
------------------
 
-Asssembly Convetor - 001
-~~~~~~~~~~~~~~~~~~~~~~~~
+
+ASSEMBLY CONVERTOR
+------------------
+
+Assembly Convertor - Example 1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Print the BOM of a product to XLS using the inbuilt AssemblyConvertor. You
 must already have excel installed.
@@ -29,8 +67,8 @@ pathlib.Path module.
 BOM CUSTOM
 ----------
 
-BOM Custom - 001
-~~~~~~~~~~~~~~~~
+BOM Custom - Example 1
+~~~~~~~~~~~~~~~~~~~~~~
 
 Write the contents of a product to a html file.
 
@@ -41,8 +79,8 @@ Write the contents of a product to a html file.
 CONSTRAINTS
 -----------
 
-Constraints - 001
-~~~~~~~~~~~~~~~~~
+Constraints - Example 1
+~~~~~~~~~~~~~~~~~~~~~~~
 
 Fix the first Sub Product in Product using constraints. The Sketch examples
 also show further usage of constraints.
@@ -55,24 +93,24 @@ DOCUMENT
 --------
 
 
-Document - 001
-~~~~~~~~~~~~~~
+Document - Example 1
+~~~~~~~~~~~~~~~~~~~~
 
 Use the context manager to open CATIA documents and close.
 
 `Document - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__document__001.py>`_
 
 
-Document - 002
-~~~~~~~~~~~~~~
+Document - Example 2
+~~~~~~~~~~~~~~~~~~~~
 
 Open all CATParts in source directory and save to IGS in target directory.
 
 `Document - 002 <https://github.com/evereux/pycatia/blob/master/examples/example__document__002.py>`_
 
 
-Document - 003
-~~~~~~~~~~~~~~
+Document - Example 3
+~~~~~~~~~~~~~~~~~~~~
 
 Open a catia file.
 
@@ -88,8 +126,8 @@ DRAFTING
 --------
 
 
-Drafting - 001
-~~~~~~~~~~~~~~
+Drafting - Example 1
+~~~~~~~~~~~~~~~~~~~~
 
 Drafting: create a border template in the background view of the currently opened A0 landscape CATDrawing.
 
@@ -101,8 +139,8 @@ HYBRID SHAPE FACTORY
 --------------------
 
 
-Hybrid Shape Factory - 001
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Hybrid Shape Factory - Example 1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sequentially rename all points in geometric set (hybrid body) Points in the geometric set MasterGeometry.
 
@@ -110,8 +148,8 @@ Sequentially rename all points in geometric set (hybrid body) Points in the geom
 `Hybrid Shape Factory - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__hybrid_shape_factory__001.py>`_
 
 
-Hybrid Shape Factory - 002
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Hybrid Shape Factory - Example 2
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Reads a csv file containing point data and adds to the new catia part.
 
@@ -122,16 +160,16 @@ Formatting of csv data should be:
 `Hybrid Shape Factory - 002 <https://github.com/evereux/pycatia/blob/master/examples/example__hybrid_shape_factory__002.py>`_
 
 
-Hybrid Shape Factory - 003
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Hybrid Shape Factory - Example 3
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Draw a line between two points.
 
 `Hybrid Shape Factory - 003 <https://github.com/evereux/pycatia/blob/master/examples/example__hybrid_shape_factory__003.py>`_
 
 
-Hybrid Shape Factory - 004
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Hybrid Shape Factory - Example 4
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Loops through the items in hybrid body "Lines" and determine the object type using selection.
 
@@ -145,8 +183,8 @@ and line generated using HybridShapeLinePtPt
 `Hybrid Shape Factory - 004 <https://github.com/evereux/pycatia/blob/master/examples/example__hybrid_shape_factory__004.py>`_
 
 
-Hybrid Shape Factory - 005
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Hybrid Shape Factory - Example 5
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 GSD: Split a surface using a plane.
 
@@ -162,8 +200,8 @@ HYBRID SHAPE FACTORY & SHAPE FACTORY
 ------------------------------------
 
 
-Hybrid Shape Factory & Shape Factory - 001
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Hybrid Shape Factory & Shape Factory - Example 1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 3D Points, Spline, Extrusion and Generate Thickness.
 
@@ -175,8 +213,8 @@ HYBRID SKETCH & SHAPE FACTORY
 -----------------------------
 
 
-Hybrid Sketch & Shape Factory - 001
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Hybrid Sketch & Shape Factory - Example 1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Creates a square in a sketch and fully constrains it. Sketch then used to pad.
 
@@ -189,8 +227,8 @@ LICENSE SETTINGS
 ----------------
 
 
-License Settings - 001
-~~~~~~~~~~~~~~~~~~~~~~
+License Settings - Example 1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Basic license checking.
 
@@ -202,8 +240,8 @@ LOGGING
 -------
 
 
-Logging - 001
-~~~~~~~~~~~~~
+Logging - Example 1
+~~~~~~~~~~~~~~~~~~~
 
 Logging.
 
@@ -215,8 +253,8 @@ MATERIAL INTERFACES
 -------------------
 
 
-Material - 001
---------------
+Material - Example 1
+~~~~~~~~~~~~~~~~~~~~
 
 CATMatInterfaces
         
@@ -235,8 +273,8 @@ MESSAGE BOX
 -----------
 
 
-Message Box - 001
-~~~~~~~~~~~~~~~~~
+Message Box - Example 1
+~~~~~~~~~~~~~~~~~~~~~~~
 
 This creates a message box with the buttons abort, retry ignore and displays the Warning Query icon.
 
@@ -248,8 +286,8 @@ PARAMETERS
 ----------
 
 
-Parameters - 001
-~~~~~~~~~~~~~~~~
+Parameters - Example 1
+~~~~~~~~~~~~~~~~~~~~~~
 
 Access the CATIA COM object with a .CATPart open and and display
 each parameter along with its name, value and its associated parameter set.
@@ -264,8 +302,8 @@ PRODUCT
 -------
 
 
-Product - 001
-~~~~~~~~~~~~~
+Product - Example 1
+~~~~~~~~~~~~~~~~~~~
 
 .. warning::
 
@@ -282,16 +320,16 @@ already be loaded.
 `Product - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__product__001.py>`_
 
 
-Product - 002
-~~~~~~~~~~~~~
+Product - Example 2
+~~~~~~~~~~~~~~~~~~~
 
 Move the first child in product.
 
 `Product - 002 <https://github.com/evereux/pycatia/blob/master/examples/example__product__002.py>`_
 
 
-Product - 003
-~~~~~~~~~~~~~
+Product - Example 3
+~~~~~~~~~~~~~~~~~~~
 
 Loop through a CATProduct and analyse children if CATPart.
 
@@ -301,16 +339,16 @@ Only goes two levels deep.
 
 
 
-Product - 004
-~~~~~~~~~~~~~
+Product - Example 4
+~~~~~~~~~~~~~~~~~~~
 
 Get the position matrix of products (CATPart or CATProduct) in product.
 
 `Product - 004 <https://github.com/evereux/pycatia/blob/master/examples/example__product__004.py>`_
 
 
-Product - 005
-~~~~~~~~~~~~~
+Product - Example 5
+~~~~~~~~~~~~~~~~~~~
 
 Loop through a CATProduct and find if sub component is a CATPart or CATProduct.
 
@@ -322,8 +360,8 @@ SELECTION
 ---------
 
 
-Selection - 001
-~~~~~~~~~~~~~~~
+Selection - Example 1
+~~~~~~~~~~~~~~~~~~~~~
 
 Prompt the user to select a product and get it's bounding box parameters
 
@@ -342,8 +380,8 @@ SHAPE FACTORY
 -------------
 
 
-Shape Factory - 001
-~~~~~~~~~~~~~~~~~~~
+Shape Factory - Example 1
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Add new bodies to part.
 Create a cylinder in an added body.
@@ -357,16 +395,16 @@ SPACE ANALYSIS
 --------------
 
 
-Space Analysis - 001
-~~~~~~~~~~~~~~~~~~~~
+Space Analysis - Example 1
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Get the center of gravity for the part body 'PartBody'.
 
 `Space Analysis - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__space_analysis__001.py>`_
 
 
-Space Analysis - 002
-~~~~~~~~~~~~~~~~~~~~
+Space Analysis - Example 2
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Get all the points in the geometrical set 'Points' and output co-ordinate to console.
 
@@ -375,8 +413,8 @@ Create your own CATPart with a Geometrical Set called construction_points. Add s
 `Space Analysis - 002 <https://github.com/evereux/pycatia/blob/master/examples/example__space_analysis__002.py>`_
 
 
-Space Analysis - 003
-~~~~~~~~~~~~~~~~~~~~
+Space Analysis - Example 3
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Find all points in the CATPart and print to console and export to csv.
 
@@ -387,8 +425,8 @@ SPECS AND GEOMETRY WINDOW
 -------------------------
 
 
-Specs And Geometry Window - 001
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Specs And Geometry Window - Example 1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Loop through all the CATParts in a directory and save PLAN VIEW, SIDE VIEW,
 END VIEW and ISO pngs for each part.
@@ -404,8 +442,8 @@ VISUAL PROPERTIES
 -----------------
 
 
-Visual Properties - 001
-~~~~~~~~~~~~~~~~~~~~~~~
+Visual Properties - Example 1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Searching and changing visual properties. Find all Red points and make them
 Pink.
