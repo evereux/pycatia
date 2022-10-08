@@ -122,6 +122,18 @@ Close a catia file.
 
 
 
+HYBRID BODIES
+-------------
+
+Hybrid Bodies - Example 1
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Make body in work object and intersect with another body.
+
+`Drafting - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__hybrid_bodies__001.py>`_
+
+
+
 DRAFTING
 --------
 
