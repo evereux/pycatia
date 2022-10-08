@@ -710,14 +710,7 @@ class DrawingDimension(AnyObject):
         """
         return DrawingDimLine(self.drawing_dimension.GetDimLine())
 
-    def get_tolerances(self,
-                       o_tol_type: int,
-                       o_tol_name: str,
-                       o_up_tol: str,
-                       o_low_tol: str,
-                       od_up_tol: float,
-                       od_low_tol: float,
-                       o_display_mode: int) -> None:
+    def get_tolerances(self) -> tuple[int, str, str, str, float, float, int]:
         """
         .. note::
             :class: toggle
@@ -756,25 +749,10 @@ class DrawingDimension(AnyObject):
                 |              MyDimension.GetTolerances(oTolType, oTolName, oUpTol, oLowTol,
                 |              odUpTol, odLowTol, oDisplayMode)
 
-        :param int o_tol_type:
-        :param str o_tol_name:
-        :param str o_up_tol:
-        :param str o_low_tol:
-        :param float od_up_tol:
-        :param float od_low_tol:
-        :param int o_display_mode:
-        :return: None
-        :rtype: None
+        :return: tuple(int, str, str, str, float, float, int)
+        :rtype: tuple
         """
-        return self.drawing_dimension.GetTolerances(
-            o_tol_type,
-            o_tol_name,
-            o_up_tol,
-            o_low_tol,
-            od_up_tol,
-            od_low_tol,
-            o_display_mode
-        )
+        return self.drawing_dimension.GetTolerances()
 
     def get_value(self) -> DrawingDimValue:
         """
