@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.5.6
+
+* fixed method for DrawingDimension.get_tolerances()
+* fixed method for DrawingDimension.get_clip().
+
 ## 0.5.5
 
 * added material interfaces (@deloarts). See examples.
