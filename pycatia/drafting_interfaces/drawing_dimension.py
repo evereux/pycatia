@@ -617,7 +617,7 @@ class DrawingDimension(AnyObject):
         # # system_service = self.application.system_service
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_clip(self, x: float, y: float, o_kept_side: int) -> None:
+    def get_clip(self) -> tuple[float, float, int]:
         """
         .. note::
             :class: toggle
@@ -648,13 +648,10 @@ class DrawingDimension(AnyObject):
                 |                MyDimension.GetClip(X, Y, keptSide)
                 |              end if
 
-        :param float x:
-        :param float y:
-        :param int o_kept_side:
-        :return: None
-        :rtype: None
+        :return: tuple[float, float, int]
+        :rtype: tuple
         """
-        return self.drawing_dimension.GetClip(x, y, o_kept_side)
+        return self.drawing_dimension.GetClip()
 
     def get_dim_ext_line(self) -> DrawingDimExtLine:
         """
