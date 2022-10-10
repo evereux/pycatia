@@ -8,6 +8,9 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia.hybrid_shape_interfaces.hybrid_shape_symmetry import \
+    HybridShapeSymmetry
+from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.body import Body
 from pycatia.mec_mod_interfaces.factory import Factory
 from pycatia.part_interfaces.add import Add
@@ -49,7 +52,6 @@ from pycatia.part_interfaces.user_pattern import UserPattern
 from pycatia.part_interfaces.var_rad_edge_fillet import VarRadEdgeFillet
 from pycatia.sketcher_interfaces.sketch import Sketch
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.in_interfaces.reference import Reference
 
 
 class ShapeFactory(Factory):
@@ -2740,6 +2742,33 @@ class ShapeFactory(Factory):
         :rtype: UserPattern
         """
         return UserPattern(self.shape_factory.AddNewSurfacicUserPattern(i_shape_to_copy.com_object, i_nb_of_copies))
+
+    def add_new_symmetry_2(self, i_reference: Reference) -> HybridShapeSymmetry:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+                | o Func AddNewSymmetry2(Reference iReference) As HybridShapeSymmetry
+                | 
+                |     Creates a new Symmetry within the current body.
+                | 
+                |     Parameters:
+                |         
+                |     iReference
+                |         Point, line or reference plane.
+                |         Sub-element(s) supported (see Boundary object): see PlanarFace, Edge
+                |         and Vertex.
+                |     oSymmetry
+                |         Created symmetry.
+
+        :param Reference i_reference:
+        :return: HybridShapeSymmetry
+        :rtype: HybridShapeSymmetry
+        """
+        return HybridShapeSymmetry(
+            self.shape_factory.AddNewSymmetry2(i_reference.com_object)
+        )
 
     def add_new_thick_surface(self, i_offset_element: Reference, i_isens_offset: int, i_top_offset: float,
                               i_bot_offset: float) -> ThickSurface:
