@@ -414,6 +414,13 @@ Do Intersection operations between two bodies..
 `Shape Factory - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__shape_factory__001.py>`_
 
 
+Shape Factory - Example 2
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Mirror the main body of the part using shape_factory.add_new_symmetry_2.
+`Shape Factory - 002 <https://github.com/evereux/pycatia/blob/master/examples/example__shape_factory__002.py>`_
+
+
 .. _Example Space Analysis:
 
 SPACE ANALYSIS
