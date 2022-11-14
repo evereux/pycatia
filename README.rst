@@ -137,6 +137,7 @@ Release process
 A reminder for @evereux. I don't do this often and forget ...
 
 * Run the tests. `pytest -v tests`
+   * Ensure cache is disabled and
    * Fix any issues.
 
 * Run the examples.
