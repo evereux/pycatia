@@ -8,8 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia.hybrid_shape_interfaces.hybrid_shape_symmetry import \
-    HybridShapeSymmetry
+from pycatia.hybrid_shape_interfaces.hybrid_shape_symmetry import HybridShapeSymmetry
 from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.body import Body
 from pycatia.mec_mod_interfaces.factory import Factory
