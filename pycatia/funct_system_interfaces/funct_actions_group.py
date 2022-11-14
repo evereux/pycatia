@@ -216,7 +216,7 @@ class FunctActionsGroup(AnyObject):
         :return: FunctionalAction
         :rtype: FunctionalAction
         """
-        return FunctionalAction(self.funct_actions_group.Retrieve(i_index.com_object))
+        return FunctionalAction(self.funct_actions_group.Retrieve(i_index))
 
     def set_extremities(self, i_input_x: float, i_input_y: float, i_output_x: float, i_output_y: float) -> None:
         """
