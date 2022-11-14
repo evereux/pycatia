@@ -73,7 +73,7 @@ class FunctFacetManagers(Collection):
         :return: FunctionalFacetMgr
         :rtype: FunctionalFacetMgr
         """
-        return FunctionalFacetMgr(self.funct_facet_managers.Elem(i_index.com_object))
+        return FunctionalFacetMgr(self.funct_facet_managers.Elem(i_index))
 
     def __repr__(self):
         return f'FunctFacetManagers(name="{self.name}")'
