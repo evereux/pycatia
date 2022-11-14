@@ -379,6 +379,14 @@ Loop through a CATProduct and find if sub component is a CATPart or CATProduct.
 `Prodcut - 005 <https://github.com/evereux/pycatia/blob/master/examples/example__product__005.py>`_
 
 
+Product - Example 6
+~~~~~~~~~~~~~~~~~~~
+
+Get the Inertia of a product using product.get_technical object and print it's mass.
+
+`Prodcut - 006 <https://github.com/evereux/pycatia/blob/master/examples/example__product__006.py>`_
+
+
 .. _Example Selection:
 
 SELECTION
