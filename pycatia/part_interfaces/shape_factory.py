@@ -2747,7 +2747,7 @@ class ShapeFactory(Factory):
         .. note::
             :class: toggle
 
-            CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
+            CAA V5 Visual Basic Help - Manually created. (2022-10-10)
                 | o Func AddNewSymmetry2(Reference iReference) As HybridShapeSymmetry
                 | 
                 |     Creates a new Symmetry within the current body.
