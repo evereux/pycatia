@@ -131,7 +131,7 @@ class FunctActionsGroups(Collection):
         :return: FunctActionsGroup
         :rtype: FunctActionsGroup
         """
-        return FunctActionsGroup(self.funct_actions_groups.Elem(i_index.com_object))
+        return FunctActionsGroup(self.funct_actions_groups.Elem(i_index))
 
     def __repr__(self):
         return f'FunctActionsGroups(name="{self.name}")'

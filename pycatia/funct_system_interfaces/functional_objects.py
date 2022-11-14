@@ -143,7 +143,7 @@ class FunctionalObjects(Collection):
         :return: FunctionalObject
         :rtype: FunctionalObject
         """
-        return FunctionalObject(self.functional_objects.Elem(i_index.com_object))
+        return FunctionalObject(self.functional_objects.Elem(i_index))
 
     def __repr__(self):
         return f'FunctionalObjects(name="{self.name}")'

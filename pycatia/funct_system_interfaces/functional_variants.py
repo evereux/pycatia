@@ -119,7 +119,7 @@ class FunctionalVariants(Collection):
         :return: FunctionalVariant
         :rtype: FunctionalVariant
         """
-        return FunctionalVariant(self.functional_variants.Elem(i_index.com_object))
+        return FunctionalVariant(self.functional_variants.Elem(i_index))
 
     def __repr__(self):
         return f'FunctionalVariants(name="{self.name}")'

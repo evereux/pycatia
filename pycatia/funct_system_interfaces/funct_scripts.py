@@ -126,7 +126,7 @@ class FunctScripts(Collection):
         :return: FunctScript
         :rtype: FunctScript
         """
-        return FunctScript(self.funct_scripts.Elem(i_index.com_object))
+        return FunctScript(self.funct_scripts.Elem(i_index))
 
     def __repr__(self):
         return f'FunctScripts(name="{self.name}")'
