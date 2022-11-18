@@ -4,6 +4,9 @@
 
 * fixed method for DrawingDimension.get_tolerances()
 * fixed method for DrawingDimension.get_clip().
+* added new method shape_factory.add_new_symmetry_2 (@deloarts).
+* added example
+* restructured examples into categories.
 
 ## 0.5.5
 
