@@ -1,16 +1,14 @@
 #! /usr/bin/python3.6
 
-from pycatia import catia
 from tests.source_files import cat_part_measurable
+from tests.common_vars import caa
 
 
 def test_application():
-    caa = catia()
     assert 'Application(name="CNEXT")' in caa.__repr__()
 
 
 def test_refresh():
-    caa = catia()
     documents = caa.documents
     documents.open(cat_part_measurable)
     document = caa.active_document
@@ -25,7 +23,6 @@ def test_refresh():
 
 
 def test_visible():
-    caa = catia()
     documents = caa.documents
     documents.open(cat_part_measurable)
     document = caa.active_document
