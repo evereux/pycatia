@@ -4,52 +4,52 @@ Examples
 Index
 -----
 
-:ref:`ASSEMBLY CONVERTOR<Example Assembly Convertor>`
+:ref:`ASSEMBLY CONVERTOR EXAMPLES<Example Assembly Convertor>`
 
-:ref:`BOM CUSTOM<Example Bom Custom>`
+:ref:`BOM CUSTOM EXAMPLES<Example Bom Custom>`
 
-:ref:`CONSTRAINTS<Example Constraints>`
+:ref:`CONSTRAINTS EXAMPLES<Example Constraints>`
 
-:ref:`DOCUMENT<Example Document>`
+:ref:`DOCUMENT EXAMPLES<Example Document>`
 
-:ref:`DRAFTING<Example Drafting>`
+:ref:`DRAFTING EXAMPLES<Example Drafting>`
 
-:ref:`HYBRID BODIES<Example Hybrid Bodies>`
+:ref:`HYBRID BODIES EXAMPLES<Example Hybrid Bodies>`
 
-:ref:`HYBRID SHAPE FACTORY<Example Hybrid Shape Factory>`
+:ref:`HYBRID SHAPE FACTORY EXAMPLES<Example Hybrid Shape Factory>`
 
-:ref:`HYBRID SHAPE FACTORY & SHAPE FACTORY<Example Hybrid Shape Factory & Shape Factory>`
+:ref:`HYBRID SHAPE FACTORY & SHAPE FACTORY EXAMPLES<Example Hybrid Shape Factory & Shape Factory>`
 
-:ref:`HYBRID SKETCH & SHAPE FACTORY<Example Hybrid Sketch Factory & Shape Factory>`
+:ref:`HYBRID SKETCH & SHAPE FACTORY EXAMPLES<Example Hybrid Sketch Factory & Shape Factory>`
 
-:ref:`LICENSE SETTINGS<Example License Settings>`
+:ref:`LICENSE SETTINGS EXAMPLES<Example License Settings>`
 
-:ref:`LOGGING<Example Logging>`
+:ref:`LOGGING EXAMPLES<Example Logging>`
 
-:ref:`MATERIAL INTERFACES<Example Material Interfaces>`
+:ref:`MATERIAL INTERFACES EXAMPLES<Example Material Interfaces>`
 
-:ref:`MESSAGE BOX<Example Message Box>`
+:ref:`MESSAGE BOX EXAMPLES<Example Message Box>`
 
-:ref:`PARAMETERS<Example Parameters>`
+:ref:`PARAMETERS EXAMPLES<Example Parameters>`
 
-:ref:`PRODUCT<Example Product>`
+:ref:`PRODUCT EXAMPLES<Example Product>`
 
-:ref:`SELECTION<Example Selection>`
+:ref:`SELECTION EXAMPLES<Example Selection>`
 
-:ref:`SHAPE FACTORY<Example Shape Factory>`
+:ref:`SHAPE FACTORY EXAMPLES<Example Shape Factory>`
 
-:ref:`SPACE ANALYSIS<Example Space Analysis>`
+:ref:`SPACE ANALYSIS EXAMPLES<Example Space Analysis>`
 
-:ref:`SPECS AND GEOMETRY WINDOW<Example Specs And Geometry Window>`
+:ref:`SPECS AND GEOMETRY WINDOW EXAMPLES<Example Specs And Geometry Window>`
 
-:ref:`VISUAL PROPERTIES<Example Visual Properties>`
+:ref:`VISUAL PROPERTIES EXAMPLES<Example Visual Properties>`
 
 
 
 .. _Example Assembly Convertor:
 
-ASSEMBLY CONVERTOR
-------------------
+ASSEMBLY CONVERTOR EXAMPLES
+---------------------------
 
 Assembly Convertor - Example 1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -70,8 +70,8 @@ pathlib.Path module.
 
 .. _Example Bom Custom:
 
-BOM CUSTOM
-----------
+BOM CUSTOM EXAMPLES
+-------------------
 
 BOM Custom - Example 1
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -83,8 +83,8 @@ Write the contents of a product to a html file.
 
 .. _Example Constraints:
 
-CONSTRAINTS
------------
+CONSTRAINTS EXAMPLES
+--------------------
 
 Constraints - Example 1
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -97,8 +97,8 @@ also show further usage of constraints.
 
 .. _Example Document:
 
-DOCUMENT
---------
+DOCUMENT EXAMPLES
+-----------------
 
 Document - Example 1
 ~~~~~~~~~~~~~~~~~~~~
@@ -107,14 +107,12 @@ Use the context manager to open CATIA documents and close.
 
 `Document - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__document__001.py>`_
 
-
 Document - Example 2
 ~~~~~~~~~~~~~~~~~~~~
 
 Open all CATParts in source directory and save to IGS in target directory.
 
 `Document - 002 <https://github.com/evereux/pycatia/blob/master/examples/example__document__002.py>`_
-
 
 Document - Example 3
 ~~~~~~~~~~~~~~~~~~~~
@@ -130,8 +128,8 @@ Close a catia file.
 
 .. _Example Drafting:
 
-DRAFTING
---------
+DRAFTING EXAMPLES
+-----------------
 
 Drafting - Example 1
 ~~~~~~~~~~~~~~~~~~~~
@@ -143,8 +141,8 @@ Drafting: create a border template in the background view of the currently opene
 
 .. _Example Hybrid Bodies:
 
-HYBRID BODIES
--------------
+HYBRID BODIES EXAMPLES
+----------------------
 
 Hybrid Bodies - Example 1
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -156,8 +154,8 @@ Make body in work object and intersect with another body.
 
 .. _Example Hybrid Shape Factory:
 
-HYBRID SHAPE FACTORY
---------------------
+HYBRID SHAPE FACTORY EXAMPLES
+-----------------------------
 
 Hybrid Shape Factory - Example 1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -202,7 +200,6 @@ and line generated using HybridShapeLinePtPt
 
 `Hybrid Shape Factory - 004 <https://github.com/evereux/pycatia/blob/master/examples/example__hybrid_shape_factory__004.py>`_
 
-
 Hybrid Shape Factory - Example 5
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -217,9 +214,8 @@ origin ZX plane.
 
 .. _Example Hybrid Shape Factory & Shape Factory:
 
-HYBRID SHAPE FACTORY & SHAPE FACTORY
-------------------------------------
-
+HYBRID SHAPE FACTORY & SHAPE FACTORY EXAMPLES
+---------------------------------------------
 
 Hybrid Shape Factory & Shape Factory - Example 1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -231,9 +227,8 @@ Hybrid Shape Factory & Shape Factory - Example 1
 
 .. _Example Hybrid Sketch Factory & Shape Factory:
 
-HYBRID SKETCH & SHAPE FACTORY
------------------------------
-
+HYBRID SKETCH & SHAPE FACTORY EXAMPLES
+--------------------------------------
 
 Hybrid Sketch & Shape Factory - Example 1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -246,8 +241,8 @@ Creates a square in a sketch and fully constrains it. Sketch then used to pad.
 
 .. _Example License Settings:
 
-LICENSE SETTINGS
-----------------
+LICENSE SETTINGS EXAMPLES
+-------------------------
 
 License Settings - Example 1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -259,9 +254,8 @@ Basic license checking.
 
 .. _Example Logging:
 
-LOGGING
--------
-
+LOGGING EXAMPLES
+----------------
 
 Logging - Example 1
 ~~~~~~~~~~~~~~~~~~~
@@ -273,9 +267,8 @@ Logging.
 
 .. _Example Material Interfaces:
 
-MATERIAL INTERFACES
--------------------
-
+MATERIAL INTERFACES EXAMPLES
+----------------------------
 
 Material - Example 1
 ~~~~~~~~~~~~~~~~~~~~
@@ -294,8 +287,8 @@ Creates a new product and applies the material to it.
 
 .. _Example Message Box:
 
-MESSAGE BOX
------------
+MESSAGE BOX EXAMPLES
+--------------------
 
 Message Box - Example 1
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -307,8 +300,8 @@ This creates a message box with the buttons abort, retry ignore and displays the
 
 .. _Example Parameters:
 
-PARAMETERS
-----------
+PARAMETERS EXAMPLES
+-------------------
 
 Parameters - Example 1
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -323,8 +316,8 @@ each parameter along with its name, value and its associated parameter set.
 
 .. _Example Product:
 
-PRODUCT
--------
+PRODUCT EXAMPLES
+----------------
 
 Product - Example 1
 ~~~~~~~~~~~~~~~~~~~
@@ -343,14 +336,12 @@ already be loaded.
 
 `Product - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__product__001.py>`_
 
-
 Product - Example 2
 ~~~~~~~~~~~~~~~~~~~
 
 Move the first child in product.
 
 `Product - 002 <https://github.com/evereux/pycatia/blob/master/examples/example__product__002.py>`_
-
 
 Product - Example 3
 ~~~~~~~~~~~~~~~~~~~
@@ -361,8 +352,6 @@ Only goes two levels deep.
 
 `Product - 003 <https://github.com/evereux/pycatia/blob/master/examples/example_010.py>`_
 
-
-
 Product - Example 4
 ~~~~~~~~~~~~~~~~~~~
 
@@ -370,27 +359,25 @@ Get the position matrix of products (CATPart or CATProduct) in product.
 
 `Product - 004 <https://github.com/evereux/pycatia/blob/master/examples/example__product__004.py>`_
 
-
 Product - Example 5
 ~~~~~~~~~~~~~~~~~~~
 
 Loop through a CATProduct and find if sub component is a CATPart or CATProduct.
 
-`Prodcut - 005 <https://github.com/evereux/pycatia/blob/master/examples/example__product__005.py>`_
-
+`Product - 005 <https://github.com/evereux/pycatia/blob/master/examples/example__product__005.py>`_
 
 Product - Example 6
 ~~~~~~~~~~~~~~~~~~~
 
 Get the Inertia of a product using product.get_technical object and print it's mass.
 
-`Prodcut - 006 <https://github.com/evereux/pycatia/blob/master/examples/example__product__006.py>`_
+`Product - 006 <https://github.com/evereux/pycatia/blob/master/examples/example__product__006.py>`_
 
 
 .. _Example Selection:
 
-SELECTION
----------
+SELECTION EXAMPLES
+------------------
 
 Selection - Example 1
 ~~~~~~~~~~~~~~~~~~~~~
@@ -409,8 +396,8 @@ Prompt the user to select a product and get it's bounding box parameters
 
 .. _Example Shape Factory:
 
-SHAPE FACTORY
--------------
+SHAPE FACTORY EXAMPLES
+----------------------
 
 Shape Factory - Example 1
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -431,9 +418,9 @@ Mirror the main body of the part using shape_factory.add_new_symmetry_2.
 
 .. _Example Space Analysis:
 
-SPACE ANALYSIS
---------------
 
+SPACE ANALYSIS EXAMPLES
+-----------------------
 
 Space Analysis - Example 1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -441,7 +428,6 @@ Space Analysis - Example 1
 Get the center of gravity for the part body 'PartBody'.
 
 `Space Analysis - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__space_analysis__001.py>`_
-
 
 Space Analysis - Example 2
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -452,7 +438,6 @@ Create your own CATPart with a Geometrical Set called construction_points. Add s
 
 `Space Analysis - 002 <https://github.com/evereux/pycatia/blob/master/examples/example__space_analysis__002.py>`_
 
-
 Space Analysis - Example 3
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -461,9 +446,8 @@ Find all points in the CATPart and print to console and export to csv.
 `Example 3 <https://github.com/evereux/pycatia/blob/master/examples/example__space_analysis__003.py>`_
 
 
-SPECS AND GEOMETRY WINDOW
--------------------------
-
+SPECS AND GEOMETRY WINDOW EXAMPLES
+----------------------------------
 
 .. _Example Specs And Geometry Window:
 
@@ -481,8 +465,8 @@ capture and then turned back on.
 
 .. _Example Visual Properties:
 
-VISUAL PROPERTIES
------------------
+VISUAL PROPERTIES EXAMPLES
+--------------------------
 
 Visual Properties - Example 1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
