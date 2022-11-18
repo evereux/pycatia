@@ -136,6 +136,10 @@ Release process
 
 A reminder for @evereux. I don't do this often and forget ...
 
+* Check version is correct.
+
+* Check changelog has been updated.
+
 * Run the tests. `pytest -v tests`
    * Ensure cache is disabled and
    * Fix any issues.
@@ -145,8 +149,6 @@ A reminder for @evereux. I don't do this often and forget ...
 
 * Build the docs. `cd docs` `make html`
    * Fix any issues.
-
-* Check version is correct.
 
 * Run mypy over module. `mypy pycatia`
 
