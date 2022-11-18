@@ -10,6 +10,7 @@ from pycatia.in_interfaces.document import Document
 from pycatia.system_interfaces.collection import Collection
 from pycatia.types.document_types import document_type
 from pycatia.types.general import cat_variant, list_str
+from pycatia.scripts.document_types import get_document_type
 
 
 class Documents(Collection):
@@ -87,15 +88,15 @@ class Documents(Collection):
         :rtype: Document
         """
 
-        document_type_uf = document_type.capitalize()
+        # document_types = ['Part', 'Product', 'Drawing', 'FunctionalSystem']
+        # if document_type not in document_types:
+        #     raise ValueError(f'Document type {document_type} must be in {document_types}')
 
-        document_types = ['Part', 'Product', 'Drawing']
-        if document_type_uf not in document_types:
-            raise ValueError(f'Document type must be in [{document_types}]')
+        dt = get_document_type(document_type)
 
-        self.logger.info(f'Creating a new "{document_type_uf}".')
+        self.logger.info(f'Creating a new "{dt}".')
 
-        return Document(self.documents.Add(document_type_uf))
+        return Document(self.documents.Add(dt))
 
     def count_types(self, file_type_list: list_str) -> int:
         """
