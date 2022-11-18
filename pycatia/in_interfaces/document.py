@@ -760,7 +760,7 @@ class Document(AnyObject):
         self.logger.info(f'Saving the current document.')
         self.document.Save()
 
-    def save_as(self, file_name: str, overwrite: bool = False) -> None:
+    def save_as(self, file_name: Path, overwrite: bool = False) -> None:
         """
         Save the document to a new name.
 
