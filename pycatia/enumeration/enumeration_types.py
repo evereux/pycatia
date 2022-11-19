@@ -950,9 +950,9 @@ cat_insure_view_names_uniqueness_scope = (
 )
 
 cat_justification = (
-    "catLeft",
-    "catCenter",
-    "catRight",
+    "catLeft",  # The text is left justified.
+    "catCenter",  # The text is centered.
+    "catRight",  # The text is right justified.
 )
 
 cat_lighting_mode = (
@@ -1771,22 +1771,24 @@ cat_text_frame_type = (
 )
 
 cat_text_property = (
-    "catBold",
-    "catItalic",
-    "catUnderline",
-    "catOverline",
-    "catStrikethrough",
-    "catSubscript",
-    "catSuperscript",
-    "catFontSize",
-    "catParagraph",
-    "catPlain",
-    "catColor",
-    "catFontName",
-    "catBorder",
-    "catAlignment",
-    "catCharRatio",
-    "catCharSpacing",
+    "catBold",  # The text is formatted as bold.
+    "catItalic",  # The text is formatted as italic.
+    "catUnderline",  # The text is underlined.
+    "catOverline",  # The text is overlined.
+    "catStrikethrough",  # The text is formatted as strike through.
+    "catSubscript",  # The text is formatted as subscript.
+    "catSuperscript",  # The text is formatted as superscript
+    "catFontSize",  # The font size. This value is expressed in mm.
+    "catParagraph",  # To consider a piece of the text as a paragraph
+    "catPlain",  # Internal use only.
+    "catColor",  # Color of the characters
+    "catFontName",  # The name of the font used.
+    "catBorder",  #
+    "catAlignment",  # Alignment of the piece of text.
+    "catCharRatio",  # Ratio between character height and width.
+                     # The value is a percentage of the font size and corresponds to the ratio height by width.
+    "catCharSpacing",  # Space between each character.
+                       # The value is a percentage of the font size (maybe a negative value).
     "catKerning",
 )
 
