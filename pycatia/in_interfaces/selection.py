@@ -753,8 +753,7 @@ class Selection(AnyObject):
 
     def indicate_or_select_element_3d(self, i_planar_geometric_object: AnyObject, i_message: str, i_filter_type: tuple,
                                       i_object_selection_before_command_use_possibility: bool, i_tooltip: bool,
-                                      i_triggering_on_mouse_move: bool, o_object_selected: bool,
-                                      o_window_location_2d: tuple, o_window_location_3d: tuple) -> str:
+                                      i_triggering_on_mouse_move: bool) -> tuple:
         """
         .. note::
             :class: toggle
@@ -903,10 +902,25 @@ class Selection(AnyObject):
         :return: str
         :rtype: str
         """
-        return self.selection.IndicateOrSelectElement3D(i_planar_geometric_object.com_object, i_message, i_filter_type,
-                                                        i_object_selection_before_command_use_possibility, i_tooltip,
-                                                        i_triggering_on_mouse_move, o_object_selected,
-                                                        o_window_location_2d, o_window_location_3d)
+        vba_function_name = 'indicate_or_select_element_3d'
+        vba_code = f'''   
+        Public Function {vba_function_name}(selection, i_planar_geometric_object, i_message, i_filterType, i_object_selection_before_command_use_possibility, i_tooltip, i_triggering_on_mouse_move)
+        Dim o_object_selected
+        Dim o_window_location_2d (1)
+        Dim o_window_location_3d (2)
+        Dim o_output_state (3)
+        o_output_state (0) = selection.IndicateOrSelectElement3D(i_planar_geometric_object, i_message, i_filterType, i_object_selection_before_command_use_possibility, i_tooltip, i_triggering_on_mouse_move, o_object_selected, o_window_location_2d, o_window_location_3d)
+        o_output_state (1) = o_object_selected
+        o_output_state (2) = o_window_location_2d
+        o_output_state (3) = o_window_location_3d
+        {vba_function_name} = o_output_state
+        End Function
+        '''
+
+        system_service = self.application.system_service
+        result = system_service.evaluate(vba_code, 0, vba_function_name,[self.selection, i_planar_geometric_object.com_object, i_message, i_filter_type, i_object_selection_before_command_use_possibility, i_tooltip, i_triggering_on_mouse_move])
+        
+        return result
 
     def item(self, i_index: int) -> SelectedElement:
         """
