@@ -464,7 +464,7 @@ class VisPropertySet(AnyObject):
         :return: int
         :rtype: int
         """
-        return self.vis_property_set.GetShow()
+        return self.vis_property_set.GetShow()[1]
 
     def get_symbol_type(self) -> int:
         """
