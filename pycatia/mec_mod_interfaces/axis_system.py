@@ -627,12 +627,16 @@ class AxisSystem(AnyObject):
         :rtype: None
         """
 
-        vba_function_name = 'get_vectors'
+        vba_function_name = "get_vectors"
         vba_code = """
         Public Function get_vectors(axis_system)
             Dim oVectorX (2)
-            axis_system.GetVectors oVectorX
-            get_vectors = oVectorX
+            Dim oVectorY (2)
+            axis_system.GetVectors oVectorX, oVectorY
+            Dim oVectors (1)
+            oVectors(0) = oVectorX
+            oVectors(1) = oVectorY
+            get_vectors = oVectors
         End Function
         """
 
