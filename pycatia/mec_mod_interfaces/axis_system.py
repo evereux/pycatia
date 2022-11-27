@@ -621,8 +621,6 @@ class AxisSystem(AnyObject):
                 |          Dim vectorYCoord(2)
                 |          axisSystem.GetVectors vectorXCoord, vectorYCoord
 
-        :param tuple o_vector_x:
-        :param tuple o_vector_y:
         :return: None
         :rtype: None
         """
