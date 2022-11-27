@@ -4,6 +4,8 @@
 
 * fixed method for VisPropertySet.get_show(). (@Mithro86)
 * fixed method for AxisSystem.get_vectors(). (@Mithro86)
+* Partial fix to Selection.indicate_or_select_element_3d(). (@Mithro86) 
+  * Partial as I think some further tweaks might be required?
 * added pathlib.Path to DrawingPictures.add().
   * now tries to get the Windows absolute path from input as CATIA may not be 
   able to otherwise find the file. 
