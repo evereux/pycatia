@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 abq_conc_force_load_type = (
     "POINTLOAD",
