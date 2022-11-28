@@ -47,7 +47,7 @@ Installing Python
 
 .. image:: images/2019-03-03_14_35_49-Window.png
 
-* Install virtualenv for python. From the adminsitrator command prompt run the
+* Install virtualenv for python. From the administrator command prompt run the
   following::
 
     python -m pip install virtualenv
