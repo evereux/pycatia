@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 # module initially auto generated using V5Automation.chm from CATIA R25
 
 from pywintypes import com_error
