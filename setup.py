@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 import setuptools
 
@@ -31,11 +31,8 @@ setuptools.setup(
     long_description_content_type="text/x-rst",
     url=__url__,
     packages=setuptools.find_packages(),
-    python_requires=">=3.6",
+    python_requires=">=3.9",
     classifiers=[
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
         "License :: OSI Approved :: MIT License",

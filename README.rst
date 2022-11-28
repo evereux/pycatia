@@ -46,7 +46,7 @@ the examples provided and reading the API at pycatia.readthedocs.io_.
 Requirements
 ------------
 
-* python >= 3.6 
+* python >= 3.9
 * **CATIA V5** running on Windows.
 * see requirements.txt
 

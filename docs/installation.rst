@@ -41,7 +41,7 @@ permissions to install python and the virtualenv module.
 Installing Python
 ~~~~~~~~~~~~~~~~~
 
-* Download python 3 (3.6 or later) from `python.org <https://www.python.org/downloads/>`_.
+* Download python 3 (3.9 or later) from `python.org <https://www.python.org/downloads/>`_.
 
 * Install python. Ensure to check the box to add python to environment variables.
 
