@@ -604,9 +604,13 @@ class Selection(AnyObject):
         """
         return AnyObject(self.selection.FindObject(i_object_type))
 
-    def indicate_or_select_element_2d(self, i_message: str, i_filter_type: tuple,
-                                      i_object_selection_before_command_use_possibility: bool, i_tooltip: bool,
-                                      i_triggering_on_mouse_move: bool, o_object_selected: bool,
+    def indicate_or_select_element_2d(self,
+                                      i_message: str,
+                                      i_filter_type: tuple,
+                                      i_object_selection_before_command_use_possibility: bool,
+                                      i_tooltip: bool,
+                                      i_triggering_on_mouse_move: bool,
+                                      o_object_selected: bool,
                                       o_document_window_location: tuple) -> str:
         """
         .. note::
@@ -746,9 +750,12 @@ class Selection(AnyObject):
         :return: str
         :rtype: str
         """
-        return self.selection.IndicateOrSelectElement2D(i_message, i_filter_type,
-                                                        i_object_selection_before_command_use_possibility, i_tooltip,
-                                                        i_triggering_on_mouse_move, o_object_selected,
+        return self.selection.IndicateOrSelectElement2D(i_message,
+                                                        i_filter_type,
+                                                        i_object_selection_before_command_use_possibility,
+                                                        i_tooltip,
+                                                        i_triggering_on_mouse_move,
+                                                        o_object_selected,
                                                         o_document_window_location)
 
     def indicate_or_select_element_3d(self,
@@ -1710,11 +1717,15 @@ class Selection(AnyObject):
 
         check_type(i_filter_type, tuple)
 
-        return self.selection.SelectElement2(i_filter_type, i_message,
+        return self.selection.SelectElement2(i_filter_type,
+                                             i_message,
                                              i_object_selection_before_command_use_possibility)
 
-    def select_element3(self, i_filter_type: tuple, i_message: str,
-                        i_object_selection_before_command_use_possibility: bool, i_multi_selection_mode: int,
+    def select_element3(self,
+                        i_filter_type: tuple,
+                        i_message: str,
+                        i_object_selection_before_command_use_possibility: bool,
+                        i_multi_selection_mode: int,
                         i_tooltip: bool) -> str:
         """
         .. note::
@@ -1908,8 +1919,12 @@ class Selection(AnyObject):
                                              i_multi_selection_mode,
                                              i_tooltip)
 
-    def select_element4(self, i_filter_type: tuple, i_active_document_message: str, i_non_active_document_message: str,
-                        i_tooltip: bool, o_document: Document) -> str:
+    def select_element4(self,
+                        i_filter_type: tuple,
+                        i_active_document_message: str,
+                        i_non_active_document_message: str,
+                        i_tooltip: bool,
+                        o_document: Document) -> str:
         """
         .. note::
             :class: toggle
