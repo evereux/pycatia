@@ -9,6 +9,7 @@
   * now tries to get the Windows absolute path from input as CATIA may not be 
   able to otherwise find the file. 
 * References to python 3.6 now updated to 3.9 due to type annotation support.
+* fixed method for Line.get_direction(). (@Mithro86)
 
 ## 0.5.6
 
