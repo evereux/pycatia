@@ -145,3 +145,5 @@ logo*
 *.cgr
 
 test.py
+
+hasher.py
