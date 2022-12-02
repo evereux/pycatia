@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 from pycatia.in_interfaces.reference import Reference
 from pycatia.system_interfaces.any_object import AnyObject
