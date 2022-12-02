@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.5.7
+
+* fixed method for VisPropertySet.get_show(). (@Mithro86)
+* fixed method for AxisSystem.get_vectors(). (@Mithro86)
+* Partial fix to Selection.indicate_or_select_element_3d(). (@Mithro86)
+* added pathlib.Path to DrawingPictures.add().
+  * now tries to get the Windows absolute path from input as CATIA may not be 
+  able to otherwise find the file. 
+* References to python 3.6 now updated to 3.9 due to type annotation support.
+* fixed method for Line.get_direction(). (@Mithro86)
+
 ## 0.5.6
 
 * fixed method for DrawingDimension.get_tolerances()
@@ -274,4 +285,4 @@ Breaking changes.
 
 * Added ability to parse csv and create points in a CATIA part.
 * Added methods to open, save, save as and close CATIA files.
-* Test coverage now covers all CATMeasurable methods.
+* Test coverage now covers

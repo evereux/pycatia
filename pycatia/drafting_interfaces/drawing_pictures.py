@@ -8,8 +8,10 @@
         and thus help debugging in pycatia.
         
 """
+from pathlib import Path
 from typing import Iterator
 
+from pycatia.exception_handling.exceptions import CATIAApplicationException
 from pycatia.drafting_interfaces.drawing_picture import DrawingPicture
 from pycatia.system_interfaces.collection import Collection
 from pycatia.types.general import cat_variant
@@ -38,8 +40,12 @@ class DrawingPictures(Collection):
         super().__init__(com_object, child_object=DrawingPicture)
         self.drawing_pictures = com_object
 
-    def add(self, i_drawing_picture_path: str, i_position_x: float, i_position_y: float) -> DrawingPicture:
+    def add(self, i_drawing_picture_path: Path, i_position_x: float, i_position_y: float) -> DrawingPicture:
         """
+
+        When passing a path of the image file to this function it's recommended to use the absolute path or the method
+        may not work. Otherwise, Path library will try and determine the absolute path if it can.
+
         .. note::
             :class: toggle
 
@@ -75,13 +81,17 @@ class DrawingPictures(Collection):
                 |      Dim MyDrawingPicture1 As DrawingPicture
                 |      Set MyDrawingPicture1 = MyView.Pictures.Add("C:/tmp/ball.bmp", 100., 50.)
 
-        :param str i_drawing_picture_path:
+        :param Path i_drawing_picture_path:
         :param float i_position_x:
         :param float i_position_y:
         :return: DrawingPicture
         :rtype: DrawingPicture
         """
-        return DrawingPicture(self.drawing_pictures.Add(i_drawing_picture_path, i_position_x, i_position_y))
+
+        absolute_path = i_drawing_picture_path.absolute()
+        if not absolute_path.is_file():
+            raise CATIAApplicationException(f'Could not find image file: "{absolute_path}".')
+        return DrawingPicture(self.drawing_pictures.Add(absolute_path, i_position_x, i_position_y))
 
     def item(self, i_index: cat_variant) -> DrawingPicture:
         """
