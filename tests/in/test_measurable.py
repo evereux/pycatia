@@ -1,19 +1,23 @@
 #! /usr/bin/python3.6
 
 """
-    This file is named test_measurable.py so these tests are run first. Othwerise the tests would fail for
+    This file is named test_measurable.py so these tests are run first. Otherwise the tests would fail for
     test_document.py. I've no idea why at the moment.
 """
 
 from pycatia import CATIADocHandler
 from pycatia.enumeration.enumeration_types import cat_measurable_name
+from pycatia.mec_mod_interfaces.hybrid_body import HybridBody
+from pycatia.mec_mod_interfaces.part_document import PartDocument
+from tests.create_source_parts import (
+    geom_set_arcs,
+    geom_set_cylinders,
+    geom_set_lines,
+    geom_set_planes,
+    geom_set_points,
+    geom_set_surfaces,
+)
 from tests.source_files import cat_part_measurable
-from tests.create_source_parts import geom_set_lines
-from tests.create_source_parts import geom_set_surfaces
-from tests.create_source_parts import geom_set_arcs
-from tests.create_source_parts import geom_set_points
-from tests.create_source_parts import geom_set_planes
-from tests.create_source_parts import geom_set_cylinders
 
 
 def round_tuple(tuple_object, decimal_places=6):
@@ -32,9 +36,10 @@ def round_tuple(tuple_object, decimal_places=6):
 def test_area():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
+        assert document is not None
         spa_workbench = document.spa_workbench()
 
-        part = document.part
+        part = PartDocument(document.com_object).part
         bodies = part.bodies
         body = bodies.item(1)
 
@@ -50,9 +55,10 @@ def test_area():
 def test_geometry_name():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
+        assert document is not None
         spa_workbench = document.spa_workbench()
 
-        part = document.part
+        part = PartDocument(document.com_object).part
         bodies = part.bodies
         body = bodies.item(1)
 
@@ -65,11 +71,15 @@ def test_geometry_name():
 def test_length():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
+        assert document is not None
         spa_workbench = document.spa_workbench()
 
-        part = document.part
+        part = PartDocument(document.com_object).part
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_lines)
+        hybrid_body_item = hybrid_bodies.get_item_by_name(geom_set_lines)
+        assert hybrid_body_item is not None
+
+        hybrid_body = HybridBody(hybrid_body_item.com_object)
         line1 = hybrid_body.hybrid_shapes.item(1)
         line1_reference = part.create_reference_from_object(line1)
         line1_measurable = spa_workbench.get_measurable(line1_reference)
@@ -83,10 +93,15 @@ def test_length():
 def test_perimeter():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
+        assert document is not None
         spa_workbench = document.spa_workbench()
-        part = document.part
+        part = PartDocument(document.com_object).part
+
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_surfaces)
+        hybrid_body_item = hybrid_bodies.get_item_by_name(geom_set_surfaces)
+        assert hybrid_body_item is not None
+
+        hybrid_body = HybridBody(hybrid_body_item.com_object)
         surface = hybrid_body.hybrid_shapes.item(1)
         surface_reference = part.create_reference_from_object(surface)
         surface_measurable = spa_workbench.get_measurable(surface_reference)
@@ -100,11 +115,15 @@ def test_perimeter():
 def test_radius():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
+        assert document is not None
         spa_workbench = document.spa_workbench()
+        part = PartDocument(document.com_object).part
 
-        part = document.part
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_arcs)
+        hybrid_body_item = hybrid_bodies.get_item_by_name(geom_set_arcs)
+        assert hybrid_body_item is not None
+
+        hybrid_body = HybridBody(hybrid_body_item.com_object)
         arc = hybrid_body.hybrid_shapes.item(1)
         arc_reference = part.create_reference_from_object(arc)
         arc_measurable = spa_workbench.get_measurable(arc_reference)
@@ -117,11 +136,15 @@ def test_radius():
 def test_angle_between():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
+        assert document is not None
         spa_workbench = document.spa_workbench()
+        part = PartDocument(document.com_object).part
 
-        part = document.part
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_lines)
+        hybrid_body_item = hybrid_bodies.get_item_by_name(geom_set_lines)
+        assert hybrid_body_item is not None
+
+        hybrid_body = HybridBody(hybrid_body_item.com_object)
         line1 = hybrid_body.hybrid_shapes.item(1)
         line1_reference = part.create_reference_from_object(line1)
         line1_measurable = spa_workbench.get_measurable(line1_reference)
@@ -142,11 +165,15 @@ def test_get_axis():
 
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
+        assert document is not None
         spa_workbench = document.spa_workbench()
+        part = PartDocument(document.com_object).part
 
-        part = document.part
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_arcs)
+        hybrid_body_item = hybrid_bodies.get_item_by_name(geom_set_arcs)
+        assert hybrid_body_item is not None
+
+        hybrid_body = HybridBody(hybrid_body_item.com_object)
         arc = hybrid_body.hybrid_shapes.item(1)
         arc_reference = part.create_reference_from_object(arc)
         arc_measurable = spa_workbench.get_measurable(arc_reference)
@@ -163,9 +190,9 @@ def test_get_axis_system():
     """
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
-
-        part = document.part
+        assert document is not None
         spa_workbench = document.spa_workbench()
+        part = PartDocument(document.com_object).part
 
         axis_systems = part.axis_systems
         axis = axis_systems.item(1)
@@ -194,11 +221,15 @@ def test_get_axis_system():
 def test_get_direction():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
-
-        part = document.part
+        assert document is not None
         spa_workbench = document.spa_workbench()
+        part = PartDocument(document.com_object).part
+
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_lines)
+        hybrid_body_item = hybrid_bodies.get_item_by_name(geom_set_lines)
+        assert hybrid_body_item is not None
+
+        hybrid_body = HybridBody(hybrid_body_item.com_object)
         line1 = hybrid_body.hybrid_shapes.item(1)
         line1_reference = part.create_reference_from_object(line1)
         line1_measurable = spa_workbench.get_measurable(line1_reference)
@@ -216,17 +247,23 @@ def test_get_direction():
 def test_get_minimum_distance():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
-
-        part = document.part
+        assert document is not None
         spa_workbench = document.spa_workbench()
+        part = PartDocument(document.com_object).part
 
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_lines)
+        hybrid_body_item = hybrid_bodies.get_item_by_name(geom_set_lines)
+        assert hybrid_body_item is not None
+
+        hybrid_body = HybridBody(hybrid_body_item.com_object)
         line1 = hybrid_body.hybrid_shapes.item(1)
         line1_reference = part.create_reference_from_object(line1)
         line1_measurable = spa_workbench.get_measurable(line1_reference)
 
-        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_points)
+        hybrid_body_item = hybrid_bodies.get_item_by_name(geom_set_points)
+        assert hybrid_body_item is not None
+
+        hybrid_body = HybridBody(hybrid_body_item.com_object)
         point = hybrid_body.hybrid_shapes.item(2)
         point_reference = part.create_reference_from_object(point)
 
@@ -239,11 +276,16 @@ def test_get_minimum_distance():
 def test_get_minimum_distance_points():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
-
-        part = document.part
+        assert document is not None
         spa_workbench = document.spa_workbench()
+        part = PartDocument(document.com_object).part
+
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_points)
+        hybrid_body_item = hybrid_bodies.get_item_by_name(geom_set_points)
+        assert hybrid_body_item is not None
+
+        hybrid_body = HybridBody(hybrid_body_item.com_object)
+
         point1 = hybrid_body.hybrid_shapes.item(1)
         point1_reference = part.create_reference_from_object(point1)
         point1_measurable = spa_workbench.get_measurable(point1_reference)
@@ -260,11 +302,15 @@ def test_get_minimum_distance_points():
 def test_get_plane():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
-
+        assert document is not None
         spa_workbench = document.spa_workbench()
-        part = document.part
+        part = PartDocument(document.com_object).part
+
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_planes)
+        hybrid_body_item = hybrid_bodies.get_item_by_name(geom_set_planes)
+        assert hybrid_body_item is not None
+
+        hybrid_body = HybridBody(hybrid_body_item.com_object)
         plane = hybrid_body.hybrid_shapes.item(1)
         plane_reference = part.create_reference_from_object(plane)
         plane_measurable = spa_workbench.get_measurable(plane_reference)
@@ -279,11 +325,15 @@ def test_get_plane():
 def test_get_point():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
+        assert document is not None
         spa_workbench = document.spa_workbench()
+        part = PartDocument(document.com_object).part
 
-        part = document.part
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_points)
+        hybrid_body_item = hybrid_bodies.get_item_by_name(geom_set_points)
+        assert hybrid_body_item is not None
+
+        hybrid_body = HybridBody(hybrid_body_item.com_object)
         point1 = hybrid_body.hybrid_shapes.item(3)
         point1_reference = part.create_reference_from_object(point1)
         point1_measurable = spa_workbench.get_measurable(point1_reference)
@@ -302,11 +352,15 @@ def test_get_point():
 def test_get_points_on_axis():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
+        assert document is not None
         spa_workbench = document.spa_workbench()
+        part = PartDocument(document.com_object).part
 
-        part = document.part
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_cylinders)
+        hybrid_body_item = hybrid_bodies.get_item_by_name(geom_set_cylinders)
+        assert hybrid_body_item is not None
+
+        hybrid_body = HybridBody(hybrid_body_item.com_object)
         cylinder = hybrid_body.hybrid_shapes.item(1)
         cylinder_reference = part.create_reference_from_object(cylinder)
         cylinder_measurable = spa_workbench.get_measurable(cylinder_reference)
@@ -331,11 +385,15 @@ def test_get_points_on_axis():
 def test_get_points_on_curve():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
+        assert document is not None
         spa_workbench = document.spa_workbench()
+        part = PartDocument(document.com_object).part
 
-        part = document.part
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_lines)
+        hybrid_body_item = hybrid_bodies.get_item_by_name(geom_set_lines)
+        assert hybrid_body_item is not None
+
+        hybrid_body = HybridBody(hybrid_body_item.com_object)
         line1 = hybrid_body.hybrid_shapes.item(1)
         line1_reference = part.create_reference_from_object(line1)
         line1_measurable = spa_workbench.get_measurable(line1_reference)
@@ -360,9 +418,10 @@ def test_get_points_on_curve():
 def test_volume():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
+        assert document is not None
         spa_workbench = document.spa_workbench()
+        part = PartDocument(document.com_object).part
 
-        part = document.part
         bodies = part.bodies
         body = bodies.item(1)
 
@@ -378,9 +437,10 @@ def test_volume():
 def test_centre_of_gravity():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
+        assert document is not None
         spa_workbench = document.spa_workbench()
+        part = PartDocument(document.com_object).part
 
-        part = document.part
         bodies = part.bodies
         body = bodies.item(1)
 
@@ -403,11 +463,15 @@ def test_centre_of_gravity():
 def test_angle():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
+        assert document is not None
         spa_workbench = document.spa_workbench()
+        part = PartDocument(document.com_object).part
 
-        part = document.part
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_arcs)
+        hybrid_body_item = hybrid_bodies.get_item_by_name(geom_set_arcs)
+        assert hybrid_body_item is not None
+
+        hybrid_body = HybridBody(hybrid_body_item.com_object)
         arc = hybrid_body.hybrid_shapes.item(1)
         arc_reference = part.create_reference_from_object(arc)
         arc_measurable = spa_workbench.get_measurable(arc_reference)
@@ -421,11 +485,15 @@ def test_angle():
 def test_center():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
-
+        assert document is not None
         spa_workbench = document.spa_workbench()
-        part = document.part
+        part = PartDocument(document.com_object).part
+
         hybrid_bodies = part.hybrid_bodies
-        hybrid_body = hybrid_bodies.get_item_by_name(geom_set_arcs)
+        hybrid_body_item = hybrid_bodies.get_item_by_name(geom_set_arcs)
+        assert hybrid_body_item is not None
+
+        hybrid_body = HybridBody(hybrid_body_item.com_object)
         arc = hybrid_body.hybrid_shapes.item(1)
 
         arc_reference = part.create_reference_from_object(arc)

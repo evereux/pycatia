@@ -1,4 +1,6 @@
 from pycatia import CATIADocHandler
+from pycatia.in_interfaces.reference import Reference
+from pycatia.mec_mod_interfaces.part_document import PartDocument
 
 
 def test_circle2_points_rad():
@@ -13,7 +15,9 @@ def test_circle3_points():
 
     with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
-        part = document.part
+        assert document is not None
+
+        part = PartDocument(document.com_object).part
         hsf = part.hybrid_shape_factory
 
         hbs = part.hybrid_bodies
@@ -28,7 +32,7 @@ def test_circle3_points():
         part.update()
 
         spa = document.spa_workbench()
-        measurable = spa.get_measurable(circle)
+        measurable = spa.get_measurable(Reference(circle.com_object))
 
         assert 158.597 == round(measurable.radius, 3)
 
