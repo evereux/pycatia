@@ -1,10 +1,10 @@
 import os
 from pathlib import Path
 
+from pycatia.drafting_interfaces.drawing_document import DrawingDocument
 from pycatia.enumeration.enumeration_types import cat_paper_size
+from tests.common_vars import caa, test_files
 from tests.create_source_parts import get_cat_part_measurable
-from tests.common_vars import caa
-from tests.common_vars import test_files
 
 source_cat_drawing = Path(os.getcwd(), test_files, "drawing.CATDrawing")
 
@@ -14,11 +14,11 @@ def create_cat_drawing():
     documents.add("Drawing")
     drawing_document = caa.active_document
     drawing_document.save_as(source_cat_drawing)
-    drawing = drawing_document.drawing_root
+    drawing = DrawingDocument(drawing_document.com_object).drawing_root
     sheets = drawing.sheets
 
     # open the cat part from which we'll be creating a front view.
-    documents.open(get_cat_part_measurable())
+    documents.open(str(get_cat_part_measurable()))
     document_product = caa.active_document
 
     # ################## #

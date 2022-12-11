@@ -6,15 +6,18 @@ from pycatia.cat_mat_interfaces.material_document import MaterialDocument
 from pycatia.cat_mat_interfaces.material_manager import MaterialManager
 from pycatia.mec_mod_interfaces.part import Part
 from pycatia.product_structure_interfaces.product import Product
-from tests.source_files import cat_part_measurable, cat_product, cat_material
 from tests.common_vars import test_files
+from tests.source_files import cat_material, cat_part_measurable, cat_product
 
 icon_folder = Path(os.getcwd(), test_files)
 
 
 def test_material_document():
     with CATIADocHandler(cat_material) as caa:
-        material_document = MaterialDocument(caa.document.com_object)  # type: ignore
+        document = caa.document
+        assert document is not None
+
+        material_document = MaterialDocument(document.com_object)
         material_families = material_document.families
         materials = material_families.item(1).materials
         assert material_families.count > 0
@@ -75,7 +78,10 @@ def test_material_manager_product():
 
 def test_analysis_material():
     with CATIADocHandler(cat_material) as caa:
-        material_document = MaterialDocument(caa.document.com_object)  # type: ignore
+        document = caa.document
+        assert document is not None
+
+        material_document = MaterialDocument(document.com_object)
         material_families = material_document.families
         materials = material_families.item(1).materials
         material = materials.item(1)
@@ -85,12 +91,15 @@ def test_analysis_material():
 
 def test_material():
     with CATIADocHandler(cat_material) as caa:
-        material_document = MaterialDocument(caa.document.com_object)  # type: ignore
+        document = caa.document
+        assert document is not None
+
+        material_document = MaterialDocument(document.com_object)
         material_families = material_document.families
         materials = material_families.item(1).materials
         material = materials.item(1)
-        material.get_icon(icon_folder)  # type: ignore
-        material.put_icon(icon_folder)  # type: ignore
+        material.get_icon(str(icon_folder))
+        material.put_icon(str(icon_folder))
         icon_path = f"{icon_folder}\\{material.name}.jpg"
 
         assert material.exist_analysis_data()

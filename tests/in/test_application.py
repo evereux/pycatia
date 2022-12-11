@@ -1,7 +1,7 @@
 #! /usr/bin/python3.6
 
-from tests.source_files import cat_part_measurable
 from tests.common_vars import caa
+from tests.source_files import cat_part_measurable
 
 
 def test_application():
@@ -10,7 +10,7 @@ def test_application():
 
 def test_refresh():
     documents = caa.documents
-    documents.open(cat_part_measurable)
+    documents.open(str(cat_part_measurable))
     document = caa.active_document
 
     caa.refresh_display = False
@@ -24,7 +24,7 @@ def test_refresh():
 
 def test_visible():
     documents = caa.documents
-    documents.open(cat_part_measurable)
+    documents.open(str(cat_part_measurable))
     document = caa.active_document
 
     caa.visible = False
