@@ -59,7 +59,7 @@ def test_geometry_name():
         reference = part.create_reference_from_object(body)
         measurable = spa_workbench.get_measurable(reference)
 
-        assert measurable.geometry_name == cat_measurable_name.index('CatMeasurableVolume')
+        assert measurable.geometry_name == cat_measurable_name.index("CatMeasurableVolume")
 
 
 def test_length():
@@ -172,19 +172,7 @@ def test_get_axis_system():
         axis_reference = part.create_reference_from_object(axis)
         axis_measurable = spa_workbench.get_measurable(axis_reference)
 
-        axis_system = (
-            0.000,
-            0.000,
-            0.000,
-            1.000,
-            0.000,
-            0.000,
-            0.000,
-            1.000,
-            0.000000,
-            0.000000,
-            0.000000,
-            1.000000)
+        axis_system = (0.000, 0.000, 0.000, 1.000, 0.000, 0.000, 0.000, 1.000, 0.000000, 0.000000, 0.000000, 1.000000)
         catia_axis = axis_measurable.get_axis_system()
 
         assert axis_system == (
@@ -263,17 +251,7 @@ def test_get_minimum_distance_points():
         point2 = hybrid_body.hybrid_shapes.item(3)
         point2_reference = part.create_reference_from_object(point2)
 
-        minimum_distance_points = (
-            0.000000,
-            0.000000,
-            0.000000,
-            100.000000,
-            100.000000,
-            0.000000,
-            None,
-            None,
-            None
-        )
+        minimum_distance_points = (0.000000, 0.000000, 0.000000, 100.000000, 100.000000, 0.000000, None, None, None)
         catia_minimum_distance_points = point1_measurable.get_minimum_distance_points(point2_reference)
 
         assert minimum_distance_points == round_tuple(catia_minimum_distance_points, 6)
@@ -291,17 +269,7 @@ def test_get_plane():
         plane_reference = part.create_reference_from_object(plane)
         plane_measurable = spa_workbench.get_measurable(plane_reference)
 
-        plane = (
-            0.0,
-            0.0,
-            -200.0,
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-        )
+        plane = (0.0, 0.0, -200.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0)
         catia_plane = plane_measurable.get_plane()
         catia_plane = round_tuple(catia_plane, 6)
 
@@ -428,7 +396,8 @@ def test_centre_of_gravity():
         assert (gx, gy, gz) == (
             round(centre_of_gravity[0], 6),
             round(centre_of_gravity[1], 6),
-            round(centre_of_gravity[2], 6))
+            round(centre_of_gravity[2], 6),
+        )
 
 
 def test_angle():

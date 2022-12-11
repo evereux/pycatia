@@ -27,27 +27,37 @@ def test_analyze():
         assert 1500000.0 == product.analyze.volume
         assert 120000.0 == product.analyze.wet_area
         assert (50.0, 50.0, 25.0) == product.analyze.get_gravity_center()
-        assert (1562.5000000000005, 0.0, 0.0,
-                0.0, 1562.5000000000005, 0.0,
-                0.0, 0.0, 2499.9999999999986) == product.analyze.get_inertia()
+        assert (
+            1562.5000000000005,
+            0.0,
+            0.0,
+            0.0,
+            1562.5000000000005,
+            0.0,
+            0.0,
+            0.0,
+            2499.9999999999986,
+        ) == product.analyze.get_inertia()
 
 
 def test_attributes():
     with CATIADocHandler(cat_product) as caa:
         product = caa.document.product
 
-        attributes = ('(Product) Attributes... \n'
-                      'File Name:             product_top.CATProduct\n'
-                      'Name:                  cat_product_1\n'
-                      'Part Number:           cat_product_1\n'
-                      'Revision:              A.1\n'
-                      'Definition:            pycatia product for testing\n'
-                      'Nomenclature:          pycatia product for testing\n'
-                      'Description Instance:  \n'
-                      'Description Reference: \n'
-                      'Reference:             Product(name="cat_product_1")\n'
-                      'Is CATProduct:         True\n'
-                      'Is CATPart:            False')
+        attributes = (
+            "(Product) Attributes... \n"
+            "File Name:             product_top.CATProduct\n"
+            "Name:                  cat_product_1\n"
+            "Part Number:           cat_product_1\n"
+            "Revision:              A.1\n"
+            "Definition:            pycatia product for testing\n"
+            "Nomenclature:          pycatia product for testing\n"
+            "Description Instance:  \n"
+            "Description Reference: \n"
+            'Reference:             Product(name="cat_product_1")\n'
+            "Is CATProduct:         True\n"
+            "Is CATPart:            False"
+        )
 
         assert product.attributes() == attributes
 
@@ -63,11 +73,11 @@ def test_definition():
     with CATIADocHandler(cat_part_measurable) as caa:
         part_product = caa.document.product
 
-        assert 'pycatia part for testing' == part_product.definition
+        assert "pycatia part for testing" == part_product.definition
 
-        part_product.definition = 'new definition'
+        part_product.definition = "new definition"
 
-        assert 'new definition' == part_product.definition
+        assert "new definition" == part_product.definition
 
 
 def test_description_instance():
@@ -76,9 +86,9 @@ def test_description_instance():
         children = part_product.get_children()
         child = children[0]
 
-        assert 'description instance text' == child.description_instance
+        assert "description instance text" == child.description_instance
 
-        new_instance_name = 'description instance text.1'
+        new_instance_name = "description instance text.1"
         child.description_instance = new_instance_name
 
         assert new_instance_name == child.description_instance
@@ -90,9 +100,9 @@ def test_description_reference():
         children = part_product.get_children()
         child = children[0]
 
-        assert '' == child.description_reference
+        assert "" == child.description_reference
 
-        new_description_reference = 'This is the definition for CF_SubProduct1 2'
+        new_description_reference = "This is the definition for CF_SubProduct1 2"
         child.description_reference = new_description_reference
 
         assert new_description_reference == child.description_reference
@@ -116,7 +126,7 @@ def test_get_child():
     with CATIADocHandler(cat_product) as caa:
         product = caa.document.product
         child = product.get_child(0)
-        assert child.part_number == 'cat_product_sub_1'
+        assert child.part_number == "cat_product_sub_1"
 
 
 def test_get_products():
@@ -159,20 +169,7 @@ def test_move():
 
         product.apply_work_mode(cat_work_mode_type.index("DESIGN_MODE"))
 
-        transformation = (
-            1.000,
-            0,
-            0,
-            0,
-            0.707,
-            0.707,
-            0,
-            -0.707,
-            0.707,
-            10.000,
-            20.000,
-            30.000
-        )
+        transformation = (1.000, 0, 0, 0, 0.707, 0.707, 0, -0.707, 0.707, 10.000, 20.000, 30.000)
 
         Product.activate_terminal_node(product.get_products())
         # move the first child in parent.
@@ -180,25 +177,33 @@ def test_move():
 
         product.move.apply(transformation)
 
-        assert ((520.8333333333333, 0.0, 0.0,
-                 0.0, 677.0833333333264, -156.24999999999818,
-                 0.0, -156.24999999999818, 677.0833333333264) == product.analyze.get_inertia())
+        assert (
+            520.8333333333333,
+            0.0,
+            0.0,
+            0.0,
+            677.0833333333264,
+            -156.24999999999818,
+            0.0,
+            -156.24999999999818,
+            677.0833333333264,
+        ) == product.analyze.get_inertia()
 
 
 def test_name():
     with CATIADocHandler(cat_part_measurable) as caa:
         part_product = caa.document.product
 
-        assert 'cat_part_measurable' == part_product.name
+        assert "cat_part_measurable" == part_product.name
 
 
 def test_nomenclature():
     with CATIADocHandler(cat_part_measurable) as caa:
         part_product = caa.document.product
 
-        assert 'pycatia part for testing' == part_product.nomenclature
+        assert "pycatia part for testing" == part_product.nomenclature
 
-        new_nomenclature = 'New Test Part'
+        new_nomenclature = "New Test Part"
 
         part_product.nomenclature = new_nomenclature
 
@@ -209,11 +214,11 @@ def test_part_number():
     with CATIADocHandler(cat_part_measurable) as caa:
         part_product = caa.document.product
 
-        assert 'cat_part_measurable' == part_product.part_number
+        assert "cat_part_measurable" == part_product.part_number
 
-        part_product.part_number = 'new_part_number'
+        part_product.part_number = "new_part_number"
 
-        assert 'new_part_number' == part_product.part_number
+        assert "new_part_number" == part_product.part_number
 
 
 def test_path():
@@ -244,7 +249,7 @@ def test_reference_product():
     with CATIADocHandler(cat_product) as caa:
         part_product = caa.document.product
 
-        assert part_product.reference_product.name == 'cat_product_1'
+        assert part_product.reference_product.name == "cat_product_1"
 
 
 def test_relations():
@@ -256,11 +261,11 @@ def test_revision():
     with CATIADocHandler(cat_part_measurable) as caa:
         part_product = caa.document.product
 
-        assert 'A.1' == part_product.revision
+        assert "A.1" == part_product.revision
 
-        part_product.revision = 'B'
+        part_product.revision = "B"
 
-        assert 'B' == part_product.revision
+        assert "B" == part_product.revision
 
 
 def test_activate_default_shape():

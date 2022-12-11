@@ -32,7 +32,7 @@ def test_line_point_point():
     co_ord_1 = (0, 0, 0)
     co_ord_2 = (length, 0, 0)
 
-    with CATIADocHandler(new_document='Part') as caa:
+    with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
         part = document.part
         hsf = part.hybrid_shape_factory
