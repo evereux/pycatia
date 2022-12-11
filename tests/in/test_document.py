@@ -10,7 +10,7 @@ from tests.common_vars import caa
 from tests.source_files import cat_part_measurable
 from tests.source_files import cat_product
 
-now_string = datetime.now().strftime('%Y%m%d-%H%M%S')
+now_string = datetime.now().strftime("%Y%m%d-%H%M%S")
 
 
 def test_activate_document():
@@ -33,17 +33,17 @@ def test_activate_document():
 
 
 def test_add_documents():
-    with CATIADocHandler(new_document='Part') as caa:
+    with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
-        assert 'CATPart' in document.name
+        assert "CATPart" in document.name
 
-    with CATIADocHandler(new_document='Part') as caa:
+    with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
-        assert 'CATPart' in document.name
+        assert "CATPart" in document.name
 
-    with CATIADocHandler(new_document='Part') as caa:
+    with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
-        assert 'CATPart' in document.name
+        assert "CATPart" in document.name
 
     # commented out due to failing tests and I can't remember why this was added
     # in the first place ...
@@ -56,7 +56,7 @@ def test_count_types():
     with CATIADocHandler(cat_product) as caa:
         documents = caa.documents
 
-        num = documents.count_types('.catpart')
+        num = documents.count_types(".catpart")
 
         assert num == 1
 
@@ -65,17 +65,17 @@ def test_export_document():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
 
-        export_type = 'igs'
-        export_name = 'export_file'
+        export_type = "igs"
+        export_name = "export_file"
 
         path = os.path.dirname(os.path.abspath(cat_part_measurable))
         export_name = os.path.join(path, export_name)
 
         document.export_data(f"{export_name}.{export_type}", export_type)
 
-        assert os.path.isfile(f'{export_name}.igs')
+        assert os.path.isfile(f"{export_name}.igs")
 
-        os.remove(f'{export_name}.igs')
+        os.remove(f"{export_name}.igs")
 
 
 def test_full_name():
@@ -93,10 +93,10 @@ def test_get_documents_names():
         documents = caa.documents
 
         expected_names = [
-            'product_top.CATProduct',
-            'product_sub_2.CATProduct',
-            'part_measurable.CATPart',
-            'product_sub_1.CATProduct',
+            "product_top.CATProduct",
+            "product_sub_2.CATProduct",
+            "part_measurable.CATPart",
+            "product_sub_1.CATProduct",
         ]
 
         assert documents.get_item_names() == expected_names
@@ -111,7 +111,7 @@ def test_is_saved():
 
         # create a new geometrical set to add point.
         geometrical_set = part.hybrid_bodies.add()
-        geometrical_set.Name = 'lalalalalala'
+        geometrical_set.Name = "lalalalalala"
 
         # just adding geometrical set isn't enough to trigger is_saved to be False
         # catia r21 bug?
@@ -129,7 +129,7 @@ def test_item():
         documents = caa.documents
         doc_com1 = documents.item(cat_product.name)
 
-        assert (doc_com1.name == cat_product.name)
+        assert doc_com1.name == cat_product.name
 
 
 def test_new_from():
@@ -141,13 +141,13 @@ def test_new_from():
     document.close()
 
     with pytest.raises(FileNotFoundError):
-        documents.new_from('lala')
+        documents.new_from("lala")
 
 
 def test_no_such_file():
     with pytest.raises(FileNotFoundError):
         documents = caa.documents
-        documents.open('lala')
+        documents.open("lala")
 
 
 def test_num_open():
@@ -182,12 +182,12 @@ def test_product():
     with CATIADocHandler(cat_product) as caa:
         document = caa.document
         product = document.product
-        assert 'cat_product_1' in product.name
+        assert "cat_product_1" in product.name
         assert document.is_product
 
 
 def test_saving():
-    new_filename = os.path.join(os.getcwd(), '__junk__/', (now_string + '.CATPart'))
+    new_filename = os.path.join(os.getcwd(), "__junk__/", (now_string + ".CATPart"))
 
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
