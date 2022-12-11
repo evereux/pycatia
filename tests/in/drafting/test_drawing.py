@@ -1,12 +1,13 @@
 #! /usr/bin/python3.6
 
 from pycatia import CATIADocHandler
-from pycatia.enumeration.enumeration_types import cat_drawing_standard
-from pycatia.enumeration.enumeration_types import cat_paper_orientation
-from pycatia.enumeration.enumeration_types import cat_sheet_projection_method
-from pycatia.enumeration.enumeration_types import cat_paper_size
+from pycatia.enumeration.enumeration_types import (
+    cat_drawing_standard,
+    cat_paper_orientation,
+    cat_paper_size,
+    cat_sheet_projection_method,
+)
 from tests.source_files import cat_drawing
-
 
 # todo: tests for parameters and relations
 
@@ -16,7 +17,7 @@ def test_active_drawing():
         catia = caa.catia
         drawing_root = catia.active_document.drawing_root
 
-        assert drawing_root.active_sheet.name == "Sheet.1"
+        assert drawing_root.active_sheet.name in ["Sheet.1", "Blatt .1"]  # TODO: Add more languages
 
 
 def test_orientation():
