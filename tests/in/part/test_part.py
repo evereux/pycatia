@@ -13,7 +13,7 @@ def test_activation():
     with CATIADocHandler(cat_part_measurable) as caa:
         part = caa.document.part
 
-        item = part.find_object_by_name('Point.1')
+        item = part.find_object_by_name("Point.1")
 
         assert not part.is_inactive(item)
 
@@ -29,7 +29,7 @@ def test_axis_systems():
 
         axis_systems = part.axis_systems
 
-        assert axis_systems.com_object.Item(1).name == 'Axis.1'
+        assert axis_systems.com_object.Item(1).name == "Axis.1"
 
 
 # todo: look into automation this.
@@ -51,7 +51,7 @@ def test_bodies():
 
         bodies = part.bodies
 
-        assert bodies.com_object.Item(1).Name == 'PartBody'
+        assert bodies.com_object.Item(1).Name == "PartBody"
 
 
 def test_create_geometrical_set():
@@ -60,9 +60,9 @@ def test_create_geometrical_set():
         part = document.part
         hybrid_bodies = part.hybrid_bodies
         geometrical_set = hybrid_bodies.add()
-        geometrical_set.name = 'lala'
+        geometrical_set.name = "lala"
 
-        assert geometrical_set.name == 'lala'
+        assert geometrical_set.name == "lala"
 
 
 def test_density_of_part():
@@ -102,17 +102,17 @@ def test_find_object_by_name():
         document = caa.document
         part = document.part
 
-        body = part.find_object_by_name('PartBody')
-        assert body.name == 'PartBody'
+        body = part.find_object_by_name("PartBody")
+        assert body.name == "PartBody"
 
         with pytest.raises(CATIAApplicationException):
-            part.find_object_by_name('lala')
+            part.find_object_by_name("lala")
             pass
 
 
 def test_in_work_object():
     with CATIADocHandler(cat_part_measurable) as caa:
-        part_body_name = 'PartBody'
+        part_body_name = "PartBody"
 
         part = caa.document.part
 

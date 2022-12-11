@@ -101,8 +101,8 @@ def create_cat_part_measurable(file_name):
 
     relations = part.relations
     # the dim name here would typically be 'Part1\dim_width'. the com interfaces does not expect the 'Part1' part.
-    p_w_name = '\\'.join(dim_pad_width.name.split('\\')[1:])
-    p_h_name = '\\'.join(dim_pad_height.name.split('\\')[1:])
+    p_w_name = "\\".join(dim_pad_width.name.split("\\")[1:])
+    p_h_name = "\\".join(dim_pad_height.name.split("\\")[1:])
     formula_1 = relations.create_formula("formula_1", "", point_2.x, p_w_name)
     formula_2 = relations.create_formula("formula_2", "", point_3.x, p_w_name)
     formula_3 = relations.create_formula("formula_3", "", point_3.y, p_h_name)
@@ -139,26 +139,30 @@ def create_cat_part_measurable(file_name):
 
     constraints = sketch.constraints
 
-    con_line_1_start = constraints.add_bi_elt_cst(cat_constraint_type.index("catCstTypeOn"), line_1_2d.start_point,
-                                                  point_1)
+    con_line_1_start = constraints.add_bi_elt_cst(
+        cat_constraint_type.index("catCstTypeOn"), line_1_2d.start_point, point_1
+    )
     con_line_1_start.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
     con_line_1_end = constraints.add_bi_elt_cst(cat_constraint_type.index("catCstTypeOn"), line_1_2d.end_point, point_2)
     con_line_1_end.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
 
-    con_line_2_start = constraints.add_bi_elt_cst(cat_constraint_type.index("catCstTypeOn"), line_2_2d.start_point,
-                                                  point_2)
+    con_line_2_start = constraints.add_bi_elt_cst(
+        cat_constraint_type.index("catCstTypeOn"), line_2_2d.start_point, point_2
+    )
     con_line_2_start.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
     con_line_2_end = constraints.add_bi_elt_cst(cat_constraint_type.index("catCstTypeOn"), line_2_2d.end_point, point_3)
     con_line_2_end.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
 
-    con_line_3_start = constraints.add_bi_elt_cst(cat_constraint_type.index("catCstTypeOn"), line_3_2d.start_point,
-                                                  point_3)
+    con_line_3_start = constraints.add_bi_elt_cst(
+        cat_constraint_type.index("catCstTypeOn"), line_3_2d.start_point, point_3
+    )
     con_line_3_start.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
     con_line_3_end = constraints.add_bi_elt_cst(cat_constraint_type.index("catCstTypeOn"), line_3_2d.end_point, point_4)
     con_line_3_end.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
 
-    con_line_4_start = constraints.add_bi_elt_cst(cat_constraint_type.index("catCstTypeOn"), line_4_2d.start_point,
-                                                  point_4)
+    con_line_4_start = constraints.add_bi_elt_cst(
+        cat_constraint_type.index("catCstTypeOn"), line_4_2d.start_point, point_4
+    )
     con_line_4_start.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
     con_line_4_end = constraints.add_bi_elt_cst(cat_constraint_type.index("catCstTypeOn"), line_4_2d.end_point, point_1)
     con_line_4_end.mode = cat_constraint_mode.index("catCstModeDrivingDimension")

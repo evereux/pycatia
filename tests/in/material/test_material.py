@@ -39,23 +39,15 @@ def test_material_manager_part():
 
             material_manager.apply_material_on_body(i_body=main_body, i_material=None)
             material_manager.apply_material_on_part(i_part=part, i_material=None)
-            material_manager.apply_material_on_hybrid_body(
-                i_hybrid_body=hybrid_body, i_material=None
-            )
+            material_manager.apply_material_on_hybrid_body(i_hybrid_body=hybrid_body, i_material=None)
 
-            material_manager.apply_material_on_body(
-                i_body=main_body, i_material=material
-            )
+            material_manager.apply_material_on_body(i_body=main_body, i_material=material)
             material_manager.apply_material_on_part(i_part=part, i_material=material)
-            material_manager.apply_material_on_hybrid_body(
-                i_hybrid_body=hybrid_body, i_material=material
-            )
+            material_manager.apply_material_on_hybrid_body(i_hybrid_body=hybrid_body, i_material=material)
 
             part_mat = material_manager.get_material_on_part(i_part=part)
             body_mat = material_manager.get_material_on_body(i_body=main_body)
-            hybrid_mat = material_manager.get_material_on_hybrid_body(
-                i_hybrid_body=hybrid_body
-            )
+            hybrid_mat = material_manager.get_material_on_hybrid_body(i_hybrid_body=hybrid_body)
 
             assert part_mat.name == material.name
             assert body_mat.name == material.name
@@ -74,12 +66,8 @@ def test_material_manager_product():
             material_item = product.get_item("CATMatManagerVBExt")
             material_manager = MaterialManager(material_item.com_object)
 
-            material_manager.apply_material_on_product(
-                i_product=product, i_material=None
-            )
-            material_manager.apply_material_on_product(
-                i_product=product, i_material=material, i_link_mode=True
-            )
+            material_manager.apply_material_on_product(i_product=product, i_material=None)
+            material_manager.apply_material_on_product(i_product=product, i_material=material, i_link_mode=True)
             product_mat = material_manager.get_material_on_product(i_product=product)
 
             assert product_mat.name == material.name
