@@ -2,10 +2,13 @@
 
 import os
 from datetime import datetime
+from pathlib import Path
 
 import pytest
 
 from pycatia.base_interfaces.context import CATIADocHandler
+from pycatia.mec_mod_interfaces.part_document import PartDocument
+from pycatia.product_structure_interfaces.product_document import ProductDocument
 from tests.common_vars import caa
 from tests.source_files import cat_part_measurable, cat_product
 
@@ -16,9 +19,9 @@ os.makedirs(junk_folder, exist_ok=True)
 
 def test_activate_document():
     documents = caa.documents
-    documents.open(cat_part_measurable)
+    documents.open(str(cat_part_measurable))
     document_part = caa.active_document
-    documents.open(cat_product)
+    documents.open(str(cat_product))
     document_product = caa.active_document
 
     assert document_part.name == os.path.basename(cat_part_measurable)
@@ -36,14 +39,17 @@ def test_activate_document():
 def test_add_documents():
     with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
+        assert document is not None
         assert "CATPart" in document.name
 
     with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
+        assert document is not None
         assert "CATPart" in document.name
 
     with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
+        assert document is not None
         assert "CATPart" in document.name
 
     # commented out due to failing tests and I can't remember why this was added
@@ -65,6 +71,7 @@ def test_count_types():
 def test_export_document():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
+        assert document is not None
 
         export_type = "igs"
         export_name = "export_file"
@@ -72,7 +79,7 @@ def test_export_document():
         path = os.path.dirname(os.path.abspath(cat_part_measurable))
         export_name = os.path.join(path, export_name)
 
-        document.export_data(f"{export_name}.{export_type}", export_type)
+        document.export_data(Path(f"{export_name}.{export_type}"), export_type)
 
         assert os.path.isfile(f"{export_name}.igs")
 
@@ -85,7 +92,7 @@ def test_full_name():
     """
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
-
+        assert document is not None
         assert str(cat_part_measurable) == document.full_name
 
 
@@ -106,13 +113,14 @@ def test_get_documents_names():
 def test_is_saved():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
+        assert document is not None
         assert document.is_saved
 
-        part = document.part
+        part = PartDocument(document.com_object).part
 
         # create a new geometrical set to add point.
         geometrical_set = part.hybrid_bodies.add()
-        geometrical_set.Name = "lalalalalala"
+        geometrical_set.name = "lalalalalala"
 
         # just adding geometrical set isn't enough to trigger is_saved to be False
         # catia r21 bug?
@@ -135,7 +143,7 @@ def test_item():
 
 def test_new_from():
     documents = caa.documents
-    document = documents.new_from(cat_part_measurable)
+    document = documents.new_from(str(cat_part_measurable))
 
     assert document.name is not os.path.basename(cat_part_measurable)
 
@@ -166,6 +174,7 @@ def test_open_document():
 
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
+        assert document is not None
         assert document.name == cat_part_measurable.name
         assert f'PartDocument(name="{document.name}")' == document.__repr__()
 
@@ -173,7 +182,9 @@ def test_open_document():
 def test_part():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
-        part = document.part
+        assert document is not None
+
+        part = PartDocument(document.com_object).part
         assert part.name == "cat_part_measurable"
         assert document.is_part
         assert not document.is_product
@@ -182,16 +193,19 @@ def test_part():
 def test_product():
     with CATIADocHandler(cat_product) as caa:
         document = caa.document
-        product = document.product
+        assert document is not None
+
+        product = ProductDocument(document.com_object).product
         assert "cat_product_1" in product.name
         assert document.is_product
 
 
 def test_saving():
-    new_filename = os.path.join(junk_folder, (now_string + ".CATPart"))
+    new_filename = Path(junk_folder, f"{now_string}.CATPart")
 
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
+        assert document is not None
 
         document.save_as(new_filename)
         document.save()
