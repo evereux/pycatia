@@ -1,12 +1,12 @@
 #! /usr/bin/python3.6
 
 from pycatia import CATIADocHandler
-from pycatia.mec_mod_interfaces.body import Body
-from pycatia.mec_mod_interfaces.shape import Shape
 from pycatia.knowledge_interfaces.bool_param import BoolParam
 from pycatia.knowledge_interfaces.int_param import IntParam
-from pycatia.knowledge_interfaces.str_param import StrParam
 from pycatia.knowledge_interfaces.real_param import RealParam
+from pycatia.knowledge_interfaces.str_param import StrParam
+from pycatia.mec_mod_interfaces.body import Body
+from pycatia.mec_mod_interfaces.shape import Shape
 from tests.source_files import cat_part_measurable
 
 
@@ -18,7 +18,10 @@ def test_parameters_name():
 
         first_parameter = parameters.item(1)
 
-        assert first_parameter.name == r"cat_part_measurable\PartBody\Pad.1\FirstLimit\Length"
+        assert first_parameter.name in [
+            r"cat_part_measurable\PartBody\Pad.1\FirstLimit\Length",
+            r"cat_part_measurable\Hauptkörper\Block.1\Begrenzung1\Länge",
+        ]
 
 
 def test_all_parameters():
@@ -29,7 +32,10 @@ def test_all_parameters():
 
         all_parms = parameters.all_parameters()
 
-        assert all_parms[0].name == r"cat_part_measurable\PartBody\Pad.1\FirstLimit\Length"
+        assert all_parms[0].name in [
+            r"cat_part_measurable\PartBody\Pad.1\FirstLimit\Length",
+            r"cat_part_measurable\Hauptkörper\Block.1\Begrenzung1\Länge",
+        ]
 
 
 def test_create_boolean():
@@ -108,7 +114,7 @@ def test_create_parameters_set():
         root_parameter_set = parameters.root_parameter_set
         parameters.create_set_of_parameters(root_parameter_set)
         parameter_sets = root_parameter_set.parameter_sets.items()
-        assert parameter_sets[0].__repr__() == 'ParameterSet(name="Parameters.1")'
+        assert parameter_sets[0].__repr__() in ['ParameterSet(name="Parameters.1")', 'ParameterSet(name="Parameter.1")']
 
 
 def test_create_string():
@@ -164,13 +170,16 @@ def test_sub_list():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
         part = document.part
-        bodies = part.bodies
-        body = Body(bodies.get_item_by_name("PartBody").com_object)
-        shape = Shape(body.shapes.get_item_by_name("Pad.1").com_object)
+
+        body = part.main_body
+        shape_item = body.shapes.get_item_by_name("Pad.1") or body.shapes.get_item_by_name("Block.1")
+        shape = Shape(shape_item.com_object)
         parameters = part.parameters
         sub_list = parameters.sub_list(shape, True)
-
-        assert sub_list.item(1).name == r"cat_part_measurable\PartBody\Pad.1\FirstLimit\Length"
+        assert sub_list.item(1).name in [
+            r"cat_part_measurable\PartBody\Pad.1\FirstLimit\Length",
+            r"cat_part_measurable\Hauptkörper\Block.1\Begrenzung1\Länge",
+        ]
 
 
 def test_remove():
