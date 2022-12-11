@@ -1,16 +1,17 @@
 #! /usr/bin/python3.6
 
-from datetime import datetime
 import os
+from datetime import datetime
 
 import pytest
 
 from pycatia.base_interfaces.context import CATIADocHandler
 from tests.common_vars import caa
-from tests.source_files import cat_part_measurable
-from tests.source_files import cat_product
+from tests.source_files import cat_part_measurable, cat_product
 
+junk_folder = os.path.join(os.getcwd(), "__junk__/")
 now_string = datetime.now().strftime("%Y%m%d-%H%M%S")
+os.makedirs(junk_folder, exist_ok=True)
 
 
 def test_activate_document():
@@ -187,7 +188,7 @@ def test_product():
 
 
 def test_saving():
-    new_filename = os.path.join(os.getcwd(), "__junk__/", (now_string + ".CATPart"))
+    new_filename = os.path.join(junk_folder, (now_string + ".CATPart"))
 
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
