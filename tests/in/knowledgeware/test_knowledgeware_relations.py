@@ -1,5 +1,4 @@
-#! /usr/bin/python3.6
-
+#! /usr/bin/python3.9
 
 from pycatia import CATIADocHandler
 from pycatia.mec_mod_interfaces.part_document import PartDocument

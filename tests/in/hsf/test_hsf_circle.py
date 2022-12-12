@@ -1,3 +1,5 @@
+#! /usr/bin/python3.9
+
 from pycatia import CATIADocHandler
 from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.part_document import PartDocument

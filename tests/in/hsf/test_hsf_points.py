@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 from pycatia import CATIADocHandler
 from pycatia.in_interfaces.reference import Reference
