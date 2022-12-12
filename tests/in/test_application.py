@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 from tests.common_vars import caa
 from tests.source_files import cat_part_measurable

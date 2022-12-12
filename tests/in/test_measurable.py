@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
     This file is named test_measurable.py so these tests are run first. Otherwise the tests would fail for

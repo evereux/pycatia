@@ -1,4 +1,5 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
+
 import pytest
 
 from pycatia import CATIADocHandler
