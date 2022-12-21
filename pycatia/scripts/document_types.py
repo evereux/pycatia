@@ -5,6 +5,7 @@ allowed_document_types = {
     'product': 'Product',
     'drawing': 'Drawing',
     'functionalsystem': 'FunctionalSystem',
+    'catmaterial': 'CATMaterial',
 }
 
 
