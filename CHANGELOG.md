@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.5.8
+
+* Added new document type CatalogDocument.
+* Added new document type CATMaterial.
+
 ## 0.5.7
 
 * fixed method for VisPropertySet.get_show(). (@Mithro86)
