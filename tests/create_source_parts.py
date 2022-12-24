@@ -94,6 +94,11 @@ def create_cat_part_measurable(file_name):
     point_3 = hybrid_shape_factory.add_new_point_coord(pad_width, pad_height, 0)
     point_4 = hybrid_shape_factory.add_new_point_coord(0, pad_height, 0)
 
+    ref_point_1 = Reference(point_1.com_object)
+    ref_point_2 = Reference(point_2.com_object)
+    ref_point_3 = Reference(point_3.com_object)
+    ref_point_4 = Reference(point_4.com_object)
+
     # add the points to 'construction_points'
     hybrid_body_points.append_hybrid_shape(point_1)
     hybrid_body_points.append_hybrid_shape(point_2)
@@ -115,7 +120,8 @@ def create_cat_part_measurable(file_name):
     # create the sketch for the pad
     # #############################
     xy_plane = part.origin_elements.plane_xy
-    sketch = hybrid_body_sketches.hybrid_sketches.add(Reference(xy_plane.com_object))
+    ref_xy_plane = Reference(xy_plane.com_object)
+    sketch = hybrid_body_sketches.hybrid_sketches.add(ref_xy_plane)
     factory_2d = sketch.open_edition()
 
     # create the points for the lines.
@@ -145,52 +151,52 @@ def create_cat_part_measurable(file_name):
     con_line_1_start = constraints.add_bi_elt_cst(
         cat_constraint_type.index("catCstTypeOn"),
         Reference(line_1_2d.start_point.com_object),
-        Reference(point_1.com_object),
+        ref_point_1,
     )
     con_line_1_start.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
     con_line_1_end = constraints.add_bi_elt_cst(
         cat_constraint_type.index("catCstTypeOn"),
         Reference(line_1_2d.end_point.com_object),
-        Reference(point_2.com_object),
+        ref_point_2,
     )
     con_line_1_end.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
 
     con_line_2_start = constraints.add_bi_elt_cst(
         cat_constraint_type.index("catCstTypeOn"),
         Reference(line_2_2d.start_point.com_object),
-        Reference(point_2.com_object),
+        ref_point_2,
     )
     con_line_2_start.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
     con_line_2_end = constraints.add_bi_elt_cst(
         cat_constraint_type.index("catCstTypeOn"),
         Reference(line_2_2d.end_point.com_object),
-        Reference(point_3.com_object),
+        ref_point_3,
     )
     con_line_2_end.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
 
     con_line_3_start = constraints.add_bi_elt_cst(
         cat_constraint_type.index("catCstTypeOn"),
         Reference(line_3_2d.start_point.com_object),
-        Reference(point_3.com_object),
+        ref_point_3,
     )
     con_line_3_start.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
     con_line_3_end = constraints.add_bi_elt_cst(
         cat_constraint_type.index("catCstTypeOn"),
         Reference(line_3_2d.end_point.com_object),
-        Reference(point_4.com_object),
+        ref_point_4,
     )
     con_line_3_end.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
 
     con_line_4_start = constraints.add_bi_elt_cst(
         cat_constraint_type.index("catCstTypeOn"),
         Reference(line_4_2d.start_point.com_object),
-        Reference(point_4.com_object),
+        ref_point_4,
     )
     con_line_4_start.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
     con_line_4_end = constraints.add_bi_elt_cst(
         cat_constraint_type.index("catCstTypeOn"),
         Reference(line_4_2d.end_point.com_object),
-        Reference(point_1.com_object),
+        ref_point_1,
     )
     con_line_4_end.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
 
@@ -209,10 +215,10 @@ def create_cat_part_measurable(file_name):
     # create lines
     # ##############
 
-    line_1 = hybrid_shape_factory.add_new_line_pt_pt(Reference(point_1.com_object), Reference(point_3.com_object))
+    line_1 = hybrid_shape_factory.add_new_line_pt_pt(ref_point_1, ref_point_3)
     hybrid_body_lines.append_hybrid_shape(line_1)
 
-    line_2 = hybrid_shape_factory.add_new_line_pt_pt(Reference(point_1.com_object), Reference(point_4.com_object))
+    line_2 = hybrid_shape_factory.add_new_line_pt_pt(ref_point_1, ref_point_4)
     hybrid_body_lines.append_hybrid_shape(line_2)
 
     # ###################################### #
@@ -226,9 +232,7 @@ def create_cat_part_measurable(file_name):
     # ################ #
     # create a circle  #
     # ################ #
-    circle = hybrid_shape_factory.add_new_circle_ctr_rad(
-        Reference(point_4.com_object), Reference(xy_plane.com_object), True, 25
-    )
+    circle = hybrid_shape_factory.add_new_circle_ctr_rad(ref_point_4, ref_xy_plane, True, 25)
     hybrid_body_arcs.append_hybrid_shape(circle)
 
     part.update()
@@ -269,7 +273,7 @@ def create_cat_part_measurable(file_name):
     # ############## #
     # create a plane #
     # ############## #
-    plane = hybrid_shape_factory.add_new_plane_offset(Reference(xy_plane.com_object), 200, True)
+    plane = hybrid_shape_factory.add_new_plane_offset(ref_xy_plane, 200, True)
     hybrid_body_planes.append_hybrid_shape(plane)
 
     part.update()
@@ -277,8 +281,8 @@ def create_cat_part_measurable(file_name):
     # ################# #
     # create a cylinder #
     # ################# #
-    direction = hybrid_shape_factory.add_new_direction(Reference(xy_plane.com_object))
-    cylinder = hybrid_shape_factory.add_new_cylinder(Reference(point_3.com_object), 33, 100, 0, direction)
+    direction = hybrid_shape_factory.add_new_direction(ref_xy_plane)
+    cylinder = hybrid_shape_factory.add_new_cylinder(ref_point_3, 33, 100, 0, direction)
     hybrid_body_cylinders.append_hybrid_shape(cylinder)
 
     part.update()
