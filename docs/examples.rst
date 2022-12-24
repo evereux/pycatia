@@ -119,11 +119,11 @@ Document - Example 3
 
 Open a catia file.
 
-Export catia file to igs.
+Export catia file to STP.
 
 Close a catia file.
 
-`Document - 003 <https://github.com/evereux/pycatia/blob/master/examples/example__document__003.py.py>`_
+`Document - 003 <https://github.com/evereux/pycatia/blob/master/examples/example__document__003.py>`_
 
 
 .. _Example Drafting:
@@ -252,7 +252,7 @@ License Settings - Example 1
 
 Basic license checking.
 
-`License Settings - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__license_settings__001.py.py>`_
+`License Settings - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__license_settings__001.py>`_
 
 
 .. _Example Logging:
