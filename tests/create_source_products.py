@@ -5,7 +5,8 @@ from pywintypes import com_error
 
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 from pycatia.product_structure_interfaces.product_document import ProductDocument
-from tests.common_vars import caa, test_files
+from tests.common_vars import caa
+from tests.common_vars import test_files
 from tests.create_source_parts import get_cat_part_measurable
 
 source_cat_product = Path(os.getcwd(), test_files, "product_top.CATProduct")

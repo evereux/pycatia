@@ -9,14 +9,12 @@ from pycatia import CATIADocHandler
 from pycatia.enumeration.enumeration_types import cat_measurable_name
 from pycatia.mec_mod_interfaces.hybrid_body import HybridBody
 from pycatia.mec_mod_interfaces.part_document import PartDocument
-from tests.create_source_parts import (
-    geom_set_arcs,
-    geom_set_cylinders,
-    geom_set_lines,
-    geom_set_planes,
-    geom_set_points,
-    geom_set_surfaces,
-)
+from tests.create_source_parts import geom_set_arcs
+from tests.create_source_parts import geom_set_cylinders
+from tests.create_source_parts import geom_set_lines
+from tests.create_source_parts import geom_set_planes
+from tests.create_source_parts import geom_set_points
+from tests.create_source_parts import geom_set_surfaces
 from tests.source_files import cat_part_measurable
 
 

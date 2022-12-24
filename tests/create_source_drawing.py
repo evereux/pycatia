@@ -3,7 +3,8 @@ from pathlib import Path
 
 from pycatia.drafting_interfaces.drawing_document import DrawingDocument
 from pycatia.enumeration.enumeration_types import cat_paper_size
-from tests.common_vars import caa, test_files
+from tests.common_vars import caa
+from tests.common_vars import test_files
 from tests.create_source_parts import get_cat_part_measurable
 
 source_cat_drawing = Path(os.getcwd(), test_files, "drawing.CATDrawing")

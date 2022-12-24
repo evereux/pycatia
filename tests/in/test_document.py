@@ -10,7 +10,8 @@ from pycatia.base_interfaces.context import CATIADocHandler
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 from pycatia.product_structure_interfaces.product_document import ProductDocument
 from tests.common_vars import caa
-from tests.source_files import cat_part_measurable, cat_product
+from tests.source_files import cat_part_measurable
+from tests.source_files import cat_product
 
 junk_folder = os.path.join(os.getcwd(), "__junk__/")
 now_string = datetime.now().strftime("%Y%m%d-%H%M%S")
