@@ -2,7 +2,8 @@
 
 from pycatia import CATIADocHandler
 from pycatia.mec_mod_interfaces.part_document import PartDocument
-from tests.source_files import cat_part_measurable, design_table_1
+from tests.source_files import cat_part_measurable
+from tests.source_files import design_table_1
 
 
 def test_relations_count():
