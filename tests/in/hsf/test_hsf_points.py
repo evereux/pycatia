@@ -209,7 +209,11 @@ def test_point_on_plane():
 def test_point_on_plane_reference():
     co_ord_1 = (250, 100, 0)
     co_ord_2 = (100, 200)
-    r = (co_ord_1[0] + co_ord_2[0], co_ord_1[1] + co_ord_2[1], co_ord_1[2])
+    r = (
+        co_ord_1[0] + co_ord_2[0],
+        co_ord_1[1] + co_ord_2[1],
+        co_ord_1[2],
+    )
     with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
         assert document is not None
