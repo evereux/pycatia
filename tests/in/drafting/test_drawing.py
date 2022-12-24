@@ -2,12 +2,10 @@
 
 from pycatia import CATIADocHandler
 from pycatia.drafting_interfaces.drawing_document import DrawingDocument
-from pycatia.enumeration.enumeration_types import (
-    cat_drawing_standard,
-    cat_paper_orientation,
-    cat_paper_size,
-    cat_sheet_projection_method,
-)
+from pycatia.enumeration.enumeration_types import cat_drawing_standard
+from pycatia.enumeration.enumeration_types import cat_paper_orientation
+from pycatia.enumeration.enumeration_types import cat_paper_size
+from pycatia.enumeration.enumeration_types import cat_sheet_projection_method
 from tests.source_files import cat_drawing
 
 # todo: tests for parameters and relations

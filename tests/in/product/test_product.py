@@ -8,7 +8,8 @@ from pycatia.enumeration.enumeration_types import cat_work_mode_type
 from pycatia.mec_mod_interfaces.part_document import PartDocument
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.product_structure_interfaces.product_document import ProductDocument
-from tests.source_files import cat_part_measurable, cat_product
+from tests.source_files import cat_part_measurable
+from tests.source_files import cat_product
 
 
 def test_analyze():

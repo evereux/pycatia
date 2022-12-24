@@ -9,7 +9,9 @@ from pycatia.cat_mat_interfaces.material_manager import MaterialManager
 from pycatia.mec_mod_interfaces.part import Part
 from pycatia.product_structure_interfaces.product import Product
 from tests.common_vars import test_files
-from tests.source_files import cat_material, cat_part_measurable, cat_product
+from tests.source_files import cat_material
+from tests.source_files import cat_part_measurable
+from tests.source_files import cat_product
 
 icon_folder = Path(os.getcwd(), test_files)
 
