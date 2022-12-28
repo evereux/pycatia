@@ -1,23 +1,28 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
-from datetime import datetime
 import os
+from datetime import datetime
+from pathlib import Path
 
 import pytest
 
 from pycatia.base_interfaces.context import CATIADocHandler
+from pycatia.mec_mod_interfaces.part_document import PartDocument
+from pycatia.product_structure_interfaces.product_document import ProductDocument
 from tests.common_vars import caa
 from tests.source_files import cat_part_measurable
 from tests.source_files import cat_product
 
-now_string = datetime.now().strftime('%Y%m%d-%H%M%S')
+junk_folder = os.path.join(os.getcwd(), "__junk__/")
+now_string = datetime.now().strftime("%Y%m%d-%H%M%S")
+os.makedirs(junk_folder, exist_ok=True)
 
 
 def test_activate_document():
     documents = caa.documents
-    documents.open(cat_part_measurable)
+    documents.open(str(cat_part_measurable))
     document_part = caa.active_document
-    documents.open(cat_product)
+    documents.open(str(cat_product))
     document_product = caa.active_document
 
     assert document_part.name == os.path.basename(cat_part_measurable)
@@ -33,17 +38,20 @@ def test_activate_document():
 
 
 def test_add_documents():
-    with CATIADocHandler(new_document='Part') as caa:
+    with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
-        assert 'CATPart' in document.name
+        assert document is not None
+        assert "CATPart" in document.name
 
-    with CATIADocHandler(new_document='Part') as caa:
+    with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
-        assert 'CATPart' in document.name
+        assert document is not None
+        assert "CATPart" in document.name
 
-    with CATIADocHandler(new_document='Part') as caa:
+    with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
-        assert 'CATPart' in document.name
+        assert document is not None
+        assert "CATPart" in document.name
 
     # commented out due to failing tests and I can't remember why this was added
     # in the first place ...
@@ -56,7 +64,7 @@ def test_count_types():
     with CATIADocHandler(cat_product) as caa:
         documents = caa.documents
 
-        num = documents.count_types('.catpart')
+        num = documents.count_types(".catpart")
 
         assert num == 1
 
@@ -64,18 +72,19 @@ def test_count_types():
 def test_export_document():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
+        assert document is not None
 
-        export_type = 'igs'
-        export_name = 'export_file'
+        export_type = "igs"
+        export_name = "export_file"
 
         path = os.path.dirname(os.path.abspath(cat_part_measurable))
         export_name = os.path.join(path, export_name)
 
-        document.export_data(f"{export_name}.{export_type}", export_type)
+        document.export_data(Path(f"{export_name}.{export_type}"), export_type)
 
-        assert os.path.isfile(f'{export_name}.igs')
+        assert os.path.isfile(f"{export_name}.igs")
 
-        os.remove(f'{export_name}.igs')
+        os.remove(f"{export_name}.igs")
 
 
 def test_full_name():
@@ -84,7 +93,7 @@ def test_full_name():
     """
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
-
+        assert document is not None
         assert str(cat_part_measurable) == document.full_name
 
 
@@ -93,10 +102,10 @@ def test_get_documents_names():
         documents = caa.documents
 
         expected_names = [
-            'product_top.CATProduct',
-            'product_sub_2.CATProduct',
-            'part_measurable.CATPart',
-            'product_sub_1.CATProduct',
+            "product_top.CATProduct",
+            "product_sub_2.CATProduct",
+            "part_measurable.CATPart",
+            "product_sub_1.CATProduct",
         ]
 
         assert documents.get_item_names() == expected_names
@@ -105,13 +114,14 @@ def test_get_documents_names():
 def test_is_saved():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
+        assert document is not None
         assert document.is_saved
 
-        part = document.part
+        part = PartDocument(document.com_object).part
 
         # create a new geometrical set to add point.
         geometrical_set = part.hybrid_bodies.add()
-        geometrical_set.Name = 'lalalalalala'
+        geometrical_set.name = "lalalalalala"
 
         # just adding geometrical set isn't enough to trigger is_saved to be False
         # catia r21 bug?
@@ -129,25 +139,25 @@ def test_item():
         documents = caa.documents
         doc_com1 = documents.item(cat_product.name)
 
-        assert (doc_com1.name == cat_product.name)
+        assert doc_com1.name == cat_product.name
 
 
 def test_new_from():
     documents = caa.documents
-    document = documents.new_from(cat_part_measurable)
+    document = documents.new_from(str(cat_part_measurable))
 
     assert document.name is not os.path.basename(cat_part_measurable)
 
     document.close()
 
     with pytest.raises(FileNotFoundError):
-        documents.new_from('lala')
+        documents.new_from("lala")
 
 
 def test_no_such_file():
     with pytest.raises(FileNotFoundError):
         documents = caa.documents
-        documents.open('lala')
+        documents.open("lala")
 
 
 def test_num_open():
@@ -165,6 +175,7 @@ def test_open_document():
 
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
+        assert document is not None
         assert document.name == cat_part_measurable.name
         assert f'PartDocument(name="{document.name}")' == document.__repr__()
 
@@ -172,7 +183,9 @@ def test_open_document():
 def test_part():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
-        part = document.part
+        assert document is not None
+
+        part = PartDocument(document.com_object).part
         assert part.name == "cat_part_measurable"
         assert document.is_part
         assert not document.is_product
@@ -181,16 +194,19 @@ def test_part():
 def test_product():
     with CATIADocHandler(cat_product) as caa:
         document = caa.document
-        product = document.product
-        assert 'cat_product_1' in product.name
+        assert document is not None
+
+        product = ProductDocument(document.com_object).product
+        assert "cat_product_1" in product.name
         assert document.is_product
 
 
 def test_saving():
-    new_filename = os.path.join(os.getcwd(), '__junk__/', (now_string + '.CATPart'))
+    new_filename = Path(junk_folder, f"{now_string}.CATPart")
 
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
+        assert document is not None
 
         document.save_as(new_filename)
         document.save()
