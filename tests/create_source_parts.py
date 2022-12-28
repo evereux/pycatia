@@ -3,6 +3,9 @@ from pathlib import Path
 
 from pycatia.enumeration.enumeration_types import cat_constraint_mode
 from pycatia.enumeration.enumeration_types import cat_constraint_type
+from pycatia.in_interfaces.reference import Reference
+from pycatia.mec_mod_interfaces.part_document import PartDocument
+from pycatia.product_structure_interfaces.product_document import ProductDocument
 from tests.common_vars import caa
 from tests.common_vars import test_files
 
@@ -24,12 +27,12 @@ def create_cat_part_measurable(file_name):
 
     document = caa.active_document
     document.save_as(file_name)
-    product = document.product
+    product = ProductDocument(document.com_object).product
     product.part_number = "cat_part_measurable"
     product.revision = "A.1"
     product.nomenclature = "pycatia part for testing"
     product.definition = "pycatia part for testing"
-    part = document.part
+    part = PartDocument(document.com_object).part
 
     pad_width = 100
     pad_height = 100
@@ -91,6 +94,11 @@ def create_cat_part_measurable(file_name):
     point_3 = hybrid_shape_factory.add_new_point_coord(pad_width, pad_height, 0)
     point_4 = hybrid_shape_factory.add_new_point_coord(0, pad_height, 0)
 
+    ref_point_1 = Reference(point_1.com_object)
+    ref_point_2 = Reference(point_2.com_object)
+    ref_point_3 = Reference(point_3.com_object)
+    ref_point_4 = Reference(point_4.com_object)
+
     # add the points to 'construction_points'
     hybrid_body_points.append_hybrid_shape(point_1)
     hybrid_body_points.append_hybrid_shape(point_2)
@@ -101,8 +109,8 @@ def create_cat_part_measurable(file_name):
 
     relations = part.relations
     # the dim name here would typically be 'Part1\dim_width'. the com interfaces does not expect the 'Part1' part.
-    p_w_name = '\\'.join(dim_pad_width.name.split('\\')[1:])
-    p_h_name = '\\'.join(dim_pad_height.name.split('\\')[1:])
+    p_w_name = "\\".join(dim_pad_width.name.split("\\")[1:])
+    p_h_name = "\\".join(dim_pad_height.name.split("\\")[1:])
     formula_1 = relations.create_formula("formula_1", "", point_2.x, p_w_name)
     formula_2 = relations.create_formula("formula_2", "", point_3.x, p_w_name)
     formula_3 = relations.create_formula("formula_3", "", point_3.y, p_h_name)
@@ -112,7 +120,8 @@ def create_cat_part_measurable(file_name):
     # create the sketch for the pad
     # #############################
     xy_plane = part.origin_elements.plane_xy
-    sketch = hybrid_body_sketches.hybrid_sketches.add(xy_plane)
+    ref_xy_plane = Reference(xy_plane.com_object)
+    sketch = hybrid_body_sketches.hybrid_sketches.add(ref_xy_plane)
     factory_2d = sketch.open_edition()
 
     # create the points for the lines.
@@ -139,28 +148,56 @@ def create_cat_part_measurable(file_name):
 
     constraints = sketch.constraints
 
-    con_line_1_start = constraints.add_bi_elt_cst(cat_constraint_type.index("catCstTypeOn"), line_1_2d.start_point,
-                                                  point_1)
+    con_line_1_start = constraints.add_bi_elt_cst(
+        cat_constraint_type.index("catCstTypeOn"),
+        Reference(line_1_2d.start_point.com_object),
+        ref_point_1,
+    )
     con_line_1_start.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
-    con_line_1_end = constraints.add_bi_elt_cst(cat_constraint_type.index("catCstTypeOn"), line_1_2d.end_point, point_2)
+    con_line_1_end = constraints.add_bi_elt_cst(
+        cat_constraint_type.index("catCstTypeOn"),
+        Reference(line_1_2d.end_point.com_object),
+        ref_point_2,
+    )
     con_line_1_end.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
 
-    con_line_2_start = constraints.add_bi_elt_cst(cat_constraint_type.index("catCstTypeOn"), line_2_2d.start_point,
-                                                  point_2)
+    con_line_2_start = constraints.add_bi_elt_cst(
+        cat_constraint_type.index("catCstTypeOn"),
+        Reference(line_2_2d.start_point.com_object),
+        ref_point_2,
+    )
     con_line_2_start.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
-    con_line_2_end = constraints.add_bi_elt_cst(cat_constraint_type.index("catCstTypeOn"), line_2_2d.end_point, point_3)
+    con_line_2_end = constraints.add_bi_elt_cst(
+        cat_constraint_type.index("catCstTypeOn"),
+        Reference(line_2_2d.end_point.com_object),
+        ref_point_3,
+    )
     con_line_2_end.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
 
-    con_line_3_start = constraints.add_bi_elt_cst(cat_constraint_type.index("catCstTypeOn"), line_3_2d.start_point,
-                                                  point_3)
+    con_line_3_start = constraints.add_bi_elt_cst(
+        cat_constraint_type.index("catCstTypeOn"),
+        Reference(line_3_2d.start_point.com_object),
+        ref_point_3,
+    )
     con_line_3_start.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
-    con_line_3_end = constraints.add_bi_elt_cst(cat_constraint_type.index("catCstTypeOn"), line_3_2d.end_point, point_4)
+    con_line_3_end = constraints.add_bi_elt_cst(
+        cat_constraint_type.index("catCstTypeOn"),
+        Reference(line_3_2d.end_point.com_object),
+        ref_point_4,
+    )
     con_line_3_end.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
 
-    con_line_4_start = constraints.add_bi_elt_cst(cat_constraint_type.index("catCstTypeOn"), line_4_2d.start_point,
-                                                  point_4)
+    con_line_4_start = constraints.add_bi_elt_cst(
+        cat_constraint_type.index("catCstTypeOn"),
+        Reference(line_4_2d.start_point.com_object),
+        ref_point_4,
+    )
     con_line_4_start.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
-    con_line_4_end = constraints.add_bi_elt_cst(cat_constraint_type.index("catCstTypeOn"), line_4_2d.end_point, point_1)
+    con_line_4_end = constraints.add_bi_elt_cst(
+        cat_constraint_type.index("catCstTypeOn"),
+        Reference(line_4_2d.end_point.com_object),
+        ref_point_1,
+    )
     con_line_4_end.mode = cat_constraint_mode.index("catCstModeDrivingDimension")
 
     sketch.close_edition()
@@ -178,10 +215,10 @@ def create_cat_part_measurable(file_name):
     # create lines
     # ##############
 
-    line_1 = hybrid_shape_factory.add_new_line_pt_pt(point_1, point_3)
+    line_1 = hybrid_shape_factory.add_new_line_pt_pt(ref_point_1, ref_point_3)
     hybrid_body_lines.append_hybrid_shape(line_1)
 
-    line_2 = hybrid_shape_factory.add_new_line_pt_pt(point_1, point_4)
+    line_2 = hybrid_shape_factory.add_new_line_pt_pt(ref_point_1, ref_point_4)
     hybrid_body_lines.append_hybrid_shape(line_2)
 
     # ###################################### #
@@ -195,7 +232,7 @@ def create_cat_part_measurable(file_name):
     # ################ #
     # create a circle  #
     # ################ #
-    circle = hybrid_shape_factory.add_new_circle_ctr_rad(point_4, xy_plane, True, 25)
+    circle = hybrid_shape_factory.add_new_circle_ctr_rad(ref_point_4, ref_xy_plane, True, 25)
     hybrid_body_arcs.append_hybrid_shape(circle)
 
     part.update()
@@ -224,10 +261,10 @@ def create_cat_part_measurable(file_name):
     hybrid_body_points.append_hybrid_shape(point_8)
 
     spline = hybrid_shape_factory.add_new_spline()
-    spline.add_point(point_5)
-    spline.add_point(point_6)
-    spline.add_point(point_7)
-    spline.add_point(point_8)
+    spline.add_point(Reference(point_5.com_object))
+    spline.add_point(Reference(point_6.com_object))
+    spline.add_point(Reference(point_7.com_object))
+    spline.add_point(Reference(point_8.com_object))
 
     hybrid_body_splines.append_hybrid_shape(spline)
 
@@ -236,7 +273,7 @@ def create_cat_part_measurable(file_name):
     # ############## #
     # create a plane #
     # ############## #
-    plane = hybrid_shape_factory.add_new_plane_offset(xy_plane, 200, True)
+    plane = hybrid_shape_factory.add_new_plane_offset(ref_xy_plane, 200, True)
     hybrid_body_planes.append_hybrid_shape(plane)
 
     part.update()
@@ -244,8 +281,8 @@ def create_cat_part_measurable(file_name):
     # ################# #
     # create a cylinder #
     # ################# #
-    direction = hybrid_shape_factory.add_new_direction(xy_plane)
-    cylinder = hybrid_shape_factory.add_new_cylinder(point_3, 33, 100, 0, direction)
+    direction = hybrid_shape_factory.add_new_direction(ref_xy_plane)
+    cylinder = hybrid_shape_factory.add_new_cylinder(ref_point_3, 33, 100, 0, direction)
     hybrid_body_cylinders.append_hybrid_shape(cylinder)
 
     part.update()

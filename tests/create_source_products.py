@@ -3,6 +3,8 @@ from pathlib import Path
 
 from pywintypes import com_error
 
+from pycatia.mec_mod_interfaces.part_document import PartDocument
+from pycatia.product_structure_interfaces.product_document import ProductDocument
 from tests.common_vars import caa
 from tests.common_vars import test_files
 from tests.create_source_parts import get_cat_part_measurable
@@ -33,7 +35,7 @@ def create_cat_products(file_name_top, file_name_sub_1, file_name_sub_2):
     documents.add("Product")
     doc_root_prod = caa.active_document
     doc_root_prod.save_as(file_name_top)
-    product_top = doc_root_prod.product
+    product_top = ProductDocument(doc_root_prod.com_object).product
     product_top.part_number = "cat_product_1"
     product_top.revision = "A.1"
     product_top.nomenclature = "pycatia product for testing"
@@ -48,15 +50,15 @@ def create_cat_products(file_name_top, file_name_sub_1, file_name_sub_2):
     documents.add("Product")
     doc_sub_1 = caa.active_document
     doc_sub_1.save_as(file_name_sub_1)
-    product_sub_1 = doc_sub_1.product
+    product_sub_1 = ProductDocument(doc_sub_1.com_object).product
     product_sub_1.part_number = "cat_product_sub_1"
     product_sub_1.revision = "A.1"
     product_sub_1.nomenclature = "pycatia product for testing"
 
     products_sub_1 = product_sub_1.products
     cat_part_measurable = get_cat_part_measurable()
-    documents.open(cat_part_measurable)
-    doc_cat_part = caa.active_document
+    documents.open(str(cat_part_measurable))
+    doc_cat_part = PartDocument(caa.active_document.com_object)
     products_sub_1.add_component(doc_cat_part.product)
 
     doc_sub_1.save()
@@ -68,7 +70,7 @@ def create_cat_products(file_name_top, file_name_sub_1, file_name_sub_2):
     documents.add("Product")
     doc_sub_2 = caa.active_document
     doc_sub_2.save_as(file_name_sub_2)
-    product_sub_2 = doc_sub_2.product
+    product_sub_2 = ProductDocument(doc_sub_2.com_object).product
     product_sub_2.part_number = "cat_product_sub_2"
     product_sub_2.revision = "A.1"
     product_sub_2.nomenclature = "pycatia product for testing"
@@ -84,7 +86,7 @@ def create_cat_products(file_name_top, file_name_sub_1, file_name_sub_2):
 
     products.add_component(product_sub_1)
     products.add_component(product_sub_1)
-    products.add_component(product_sub_2)
+    products.add_component(product_sub_2)  # type: ignore
 
     # ################# #
     # Add new component #

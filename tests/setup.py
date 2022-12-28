@@ -11,6 +11,6 @@ def initialise():
     """
     documents = catia.documents
     if documents.count > 0:
-        raise CATIAApplicationException('Please close all documents before running tests.')
+        raise CATIAApplicationException("Please close all documents before running tests.")
 
     return catia, documents
