@@ -78,6 +78,7 @@ for cat_part in source_files:
         for view in views:
             view_point_3D.put_sight_direction(views[view])
             active_viewer.update()
+            # equivalent to "fit all in"
             active_viewer.reframe()
             active_viewer.zoom_in()
             file_name = save_file_path(product.part_number, product.revision, view)

@@ -36,7 +36,7 @@ copyright = '2022, Paul Bourne'
 author = 'Paul Bourne'
 
 # The short X.Y version
-version = '0.5.5'
+version = '0.5.8'
 # The full version, including alpha/beta/rc tags
 release = version
 
@@ -54,8 +54,8 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.todo',
     'sphinx.ext.coverage',
-    'sphinx.ext.todo',
     'sphinx_togglebutton',
+    'sphinx.ext.autosectionlabel',
 ]
 
 # Add any paths that contain templates here, relative to this directory.

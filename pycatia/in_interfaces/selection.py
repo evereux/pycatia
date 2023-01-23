@@ -604,9 +604,13 @@ class Selection(AnyObject):
         """
         return AnyObject(self.selection.FindObject(i_object_type))
 
-    def indicate_or_select_element_2d(self, i_message: str, i_filter_type: tuple,
-                                      i_object_selection_before_command_use_possibility: bool, i_tooltip: bool,
-                                      i_triggering_on_mouse_move: bool, o_object_selected: bool,
+    def indicate_or_select_element_2d(self,
+                                      i_message: str,
+                                      i_filter_type: tuple,
+                                      i_object_selection_before_command_use_possibility: bool,
+                                      i_tooltip: bool,
+                                      i_triggering_on_mouse_move: bool,
+                                      o_object_selected: bool,
                                       o_document_window_location: tuple) -> str:
         """
         .. note::
@@ -746,15 +750,21 @@ class Selection(AnyObject):
         :return: str
         :rtype: str
         """
-        return self.selection.IndicateOrSelectElement2D(i_message, i_filter_type,
-                                                        i_object_selection_before_command_use_possibility, i_tooltip,
-                                                        i_triggering_on_mouse_move, o_object_selected,
+        return self.selection.IndicateOrSelectElement2D(i_message,
+                                                        i_filter_type,
+                                                        i_object_selection_before_command_use_possibility,
+                                                        i_tooltip,
+                                                        i_triggering_on_mouse_move,
+                                                        o_object_selected,
                                                         o_document_window_location)
 
-    def indicate_or_select_element_3d(self, i_planar_geometric_object: AnyObject, i_message: str, i_filter_type: tuple,
-                                      i_object_selection_before_command_use_possibility: bool, i_tooltip: bool,
-                                      i_triggering_on_mouse_move: bool, o_object_selected: bool,
-                                      o_window_location_2d: tuple, o_window_location_3d: tuple) -> str:
+    def indicate_or_select_element_3d(self,
+                                      i_planar_geometric_object: AnyObject,
+                                      i_message: str,
+                                      i_filter_type: tuple,
+                                      i_object_selection_before_command_use_possibility: bool,
+                                      i_tooltip: bool,
+                                      i_triggering_on_mouse_move: bool) -> tuple:
         """
         .. note::
             :class: toggle
@@ -799,10 +809,10 @@ class Selection(AnyObject):
                 |         Displays a tooltip as soon as an object is located under the mouse
                 |         without being selected.
                 |     iTriggeringOnMouseMove
-                |         Triggers as soon as a mouse move event is detected. This option beeing
+                |         Triggers as soon as a mouse move event is detected. This option being
                 |         set, oOutputState may be valued to "MouseMove".
                 |     oObjectSelected
-                |         Flag précising if the user choosed the selection or the indication.
+                |         Flag precising if the user chose the selection or the indication.
                 |
                 |     oWindowLocation2D
                 |         X, Y - coordinates array of the location the user specified into the
@@ -882,7 +892,7 @@ class Selection(AnyObject):
                 |          WindowLocation2D(1) = ExistingPoint.YOffset.Value
                 |          Selection.Clear
                 |      end if
-                |     'We clean-up the temporary point
+                |     'We clean up the temporary point
                 |      if (TempPointHasBeenCreatedAtLeastOnce) then
                 |          Selection.Add Point : Selection.Delete
                 |      end if
@@ -897,16 +907,40 @@ class Selection(AnyObject):
         :param bool i_object_selection_before_command_use_possibility:
         :param bool i_tooltip:
         :param bool i_triggering_on_mouse_move:
-        :param bool o_object_selected:
-        :param tuple o_window_location_2d:
-        :param tuple o_window_location_3d:
         :return: str
         :rtype: str
         """
-        return self.selection.IndicateOrSelectElement3D(i_planar_geometric_object.com_object, i_message, i_filter_type,
-                                                        i_object_selection_before_command_use_possibility, i_tooltip,
-                                                        i_triggering_on_mouse_move, o_object_selected,
-                                                        o_window_location_2d, o_window_location_3d)
+        vba_function_name = 'indicate_or_select_element_3d'
+        vba_code = f'''   
+        Public Function {vba_function_name}(selection, i_planar_geometric_object, i_message, i_filterType, i_object_selection_before_command_use_possibility, i_tooltip, i_triggering_on_mouse_move)
+        Dim o_object_selected
+        Dim o_window_location_2d (1)
+        Dim o_window_location_3d (2)
+        Dim o_output_state (3)
+        o_output_state (0) = selection.IndicateOrSelectElement3D(i_planar_geometric_object, i_message, i_filterType, i_object_selection_before_command_use_possibility, i_tooltip, i_triggering_on_mouse_move, o_object_selected, o_window_location_2d, o_window_location_3d)
+        o_output_state (1) = o_object_selected
+        o_output_state (2) = o_window_location_2d
+        o_output_state (3) = o_window_location_3d
+        {vba_function_name} = o_output_state
+        End Function
+        '''
+
+        system_service = self.application.system_service
+        result = system_service.evaluate(vba_code,
+                                         0,
+                                         vba_function_name,
+                                         [
+                                             self.selection,
+                                             i_planar_geometric_object.com_object,
+                                             i_message, i_filter_type,
+                                             i_object_selection_before_command_use_possibility,
+                                             i_tooltip,
+                                             i_triggering_on_mouse_move
+
+                                         ]
+                                         )
+        
+        return result
 
     def item(self, i_index: int) -> SelectedElement:
         """
@@ -1683,11 +1717,15 @@ class Selection(AnyObject):
 
         check_type(i_filter_type, tuple)
 
-        return self.selection.SelectElement2(i_filter_type, i_message,
+        return self.selection.SelectElement2(i_filter_type,
+                                             i_message,
                                              i_object_selection_before_command_use_possibility)
 
-    def select_element3(self, i_filter_type: tuple, i_message: str,
-                        i_object_selection_before_command_use_possibility: bool, i_multi_selection_mode: int,
+    def select_element3(self,
+                        i_filter_type: tuple,
+                        i_message: str,
+                        i_object_selection_before_command_use_possibility: bool,
+                        i_multi_selection_mode: int,
                         i_tooltip: bool) -> str:
         """
         .. note::
@@ -1881,8 +1919,12 @@ class Selection(AnyObject):
                                              i_multi_selection_mode,
                                              i_tooltip)
 
-    def select_element4(self, i_filter_type: tuple, i_active_document_message: str, i_non_active_document_message: str,
-                        i_tooltip: bool, o_document: Document) -> str:
+    def select_element4(self,
+                        i_filter_type: tuple,
+                        i_active_document_message: str,
+                        i_non_active_document_message: str,
+                        i_tooltip: bool,
+                        o_document: Document) -> str:
         """
         .. note::
             :class: toggle

@@ -103,7 +103,7 @@ class FunctAssociation(AnyObject):
         :return: str
         :rtype: str
         """
-        return self.funct_association.RetrieveKindOfLinked(i_index.com_object)
+        return self.funct_association.RetrieveKindOfLinked(i_index)
 
     def retrieve_linked(self, i_index: cat_variant) -> AnyObject:
         """
@@ -119,7 +119,7 @@ class FunctAssociation(AnyObject):
         :return: AnyObject
         :rtype: AnyObject
         """
-        return AnyObject(self.funct_association.RetrieveLinked(i_index.com_object))
+        return AnyObject(self.funct_association.RetrieveLinked(i_index))
 
     def __repr__(self):
         return f'FunctAssociation(name="{self.name}")'

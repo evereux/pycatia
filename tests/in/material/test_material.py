@@ -1,3 +1,5 @@
+#! /usr/bin/python3.9
+
 import os
 from pathlib import Path
 
@@ -6,15 +8,20 @@ from pycatia.cat_mat_interfaces.material_document import MaterialDocument
 from pycatia.cat_mat_interfaces.material_manager import MaterialManager
 from pycatia.mec_mod_interfaces.part import Part
 from pycatia.product_structure_interfaces.product import Product
-from tests.source_files import cat_part_measurable, cat_product, cat_material
 from tests.common_vars import test_files
+from tests.source_files import cat_material
+from tests.source_files import cat_part_measurable
+from tests.source_files import cat_product
 
 icon_folder = Path(os.getcwd(), test_files)
 
 
 def test_material_document():
     with CATIADocHandler(cat_material) as caa:
-        material_document = MaterialDocument(caa.document.com_object)  # type: ignore
+        document = caa.document
+        assert document is not None
+
+        material_document = MaterialDocument(document.com_object)
         material_families = material_document.families
         materials = material_families.item(1).materials
         assert material_families.count > 0
@@ -39,23 +46,15 @@ def test_material_manager_part():
 
             material_manager.apply_material_on_body(i_body=main_body, i_material=None)
             material_manager.apply_material_on_part(i_part=part, i_material=None)
-            material_manager.apply_material_on_hybrid_body(
-                i_hybrid_body=hybrid_body, i_material=None
-            )
+            material_manager.apply_material_on_hybrid_body(i_hybrid_body=hybrid_body, i_material=None)
 
-            material_manager.apply_material_on_body(
-                i_body=main_body, i_material=material
-            )
+            material_manager.apply_material_on_body(i_body=main_body, i_material=material)
             material_manager.apply_material_on_part(i_part=part, i_material=material)
-            material_manager.apply_material_on_hybrid_body(
-                i_hybrid_body=hybrid_body, i_material=material
-            )
+            material_manager.apply_material_on_hybrid_body(i_hybrid_body=hybrid_body, i_material=material)
 
             part_mat = material_manager.get_material_on_part(i_part=part)
             body_mat = material_manager.get_material_on_body(i_body=main_body)
-            hybrid_mat = material_manager.get_material_on_hybrid_body(
-                i_hybrid_body=hybrid_body
-            )
+            hybrid_mat = material_manager.get_material_on_hybrid_body(i_hybrid_body=hybrid_body)
 
             assert part_mat.name == material.name
             assert body_mat.name == material.name
@@ -74,12 +73,8 @@ def test_material_manager_product():
             material_item = product.get_item("CATMatManagerVBExt")
             material_manager = MaterialManager(material_item.com_object)
 
-            material_manager.apply_material_on_product(
-                i_product=product, i_material=None
-            )
-            material_manager.apply_material_on_product(
-                i_product=product, i_material=material, i_link_mode=True
-            )
+            material_manager.apply_material_on_product(i_product=product, i_material=None)
+            material_manager.apply_material_on_product(i_product=product, i_material=material, i_link_mode=True)
             product_mat = material_manager.get_material_on_product(i_product=product)
 
             assert product_mat.name == material.name
@@ -87,7 +82,10 @@ def test_material_manager_product():
 
 def test_analysis_material():
     with CATIADocHandler(cat_material) as caa:
-        material_document = MaterialDocument(caa.document.com_object)  # type: ignore
+        document = caa.document
+        assert document is not None
+
+        material_document = MaterialDocument(document.com_object)
         material_families = material_document.families
         materials = material_families.item(1).materials
         material = materials.item(1)
@@ -97,12 +95,15 @@ def test_analysis_material():
 
 def test_material():
     with CATIADocHandler(cat_material) as caa:
-        material_document = MaterialDocument(caa.document.com_object)  # type: ignore
+        document = caa.document
+        assert document is not None
+
+        material_document = MaterialDocument(document.com_object)
         material_families = material_document.families
         materials = material_families.item(1).materials
         material = materials.item(1)
-        material.get_icon(icon_folder)  # type: ignore
-        material.put_icon(icon_folder)  # type: ignore
+        material.get_icon(str(icon_folder))
+        material.put_icon(str(icon_folder))
         icon_path = f"{icon_folder}\\{material.name}.jpg"
 
         assert material.exist_analysis_data()

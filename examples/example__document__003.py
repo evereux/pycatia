@@ -6,7 +6,7 @@
 
     Open a catia file.
 
-    Export catia file to igs.
+    Export catia file to STP.
 
     Close a catia file.
 

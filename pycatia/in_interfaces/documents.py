@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 from typing import Iterator
 import os
 import warnings
@@ -88,9 +88,8 @@ class Documents(Collection):
         :rtype: Document
         """
 
-        # document_types = ['Part', 'Product', 'Drawing', 'FunctionalSystem']
-        # if document_type not in document_types:
-        #     raise ValueError(f'Document type {document_type} must be in {document_types}')
+        # document_types string must be one of these types:
+        # 'Part', 'Product', 'Drawing', 'FunctionalSystem', 'CATMaterial', 'CatalogDocument'
 
         dt = get_document_type(document_type)
 
