@@ -1,4 +1,4 @@
-    .. _MacroButton_in_Catia:
+.. _MacroButton_in_Catia:
 
 Installation
 ============
