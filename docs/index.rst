@@ -10,6 +10,7 @@ pycatia is a python module for interfacing with the CATIA Automation COM object.
 
    installation
    introduction
+   MacroButton_in_Catia
    windows_builds
    examples
 
