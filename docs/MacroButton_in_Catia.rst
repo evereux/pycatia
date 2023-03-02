@@ -4,6 +4,7 @@ Installation
 ============
 
 .. note::
+
     Catia is installed and registrated as a com server.
     Python installed.
     Created python enviroment *VENV_PyCatia*
@@ -13,12 +14,14 @@ Write starting script
 -----------------
 
 .. note::
+
     Script placed in root in *VENV_PyCatia*
     Script name is My_test_script.py
 
 Press Alt+F8 and add macros (VBScript or VBA).
 
 .. code::VB
+
     Private Sub Sub CATMain()
         ' Insert the code of your main procedure here
         Set objShell = CreateObject("Wscript.Shell")
@@ -27,6 +30,7 @@ Press Alt+F8 and add macros (VBScript or VBA).
     End Sub
 
 .. note::
+
     replace *VENV_PyCatia* to your PATH and My_test_script.py to your script name
 
 
