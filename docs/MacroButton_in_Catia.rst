@@ -20,7 +20,7 @@ Write starting script
 
 Press Alt+F8 and add macros (VBScript or VBA).
 
-.. code::VB
+.. code ::VisualBasic
 
     Private Sub Sub CATMain()
         ' Insert the code of your main procedure here
