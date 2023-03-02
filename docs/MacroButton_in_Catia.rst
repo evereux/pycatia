@@ -1,11 +1,14 @@
 .. _MacroButton_in_Catia:
+.. contents:: Оглавление
+   :depth: 2
 
 Installation
 ============
+This short tutorial help you add your python script in CATIA Toolbar
 
 .. note::
 
-    Catia is installed and registrated as a com server.
+    CATIA is installed and registrated as a com server.
     Python installed.
     Created python enviroment *VENV_PyCatia*
     pycatia installed in *VENV_PyCatia*.
@@ -34,11 +37,12 @@ Press Alt+F8 and add macros (VBScript or VBA).
     replace *VENV_PyCatia* to your PATH and My_test_script.py to your script name
 
 
-Add your own button to Catia Toolbar
+Add your own button to CATIA Toolbar
 -----------------
 
-Pls see in standart Catia Documentation
+Pls see in standart CATIA Documentation
 
  *Install_Doc_Path*/English/online/CAAScdInfUseCases/CAAInfAddingMacroInToolbar.htm
- * where *Install_Doc_Path* installation PATH Catia Documentation
+ 
+ * where *Install_Doc_Path* installation PATH CATIA Documentation
 
