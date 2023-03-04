@@ -14,6 +14,14 @@ learning git I think.
 With your pull request please also submit a small section of code that 
 demonstrates how to use the class method you have added / fixed.
 
+# Which branch should I work on?
+
+The master branch represents the latest released version of pycatia. Any pull 
+requests against the pycatia application itself shall not be done to this 
+branch but the `developement` branch.
+
+However, changes to the documentation or examples can be done against either.
+
 ## Adding new modules
 
 If you would like to add a module to pycatia please see the contents of 
