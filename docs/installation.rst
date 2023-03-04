@@ -137,6 +137,29 @@ Confirm Successful Install
 
     Sometimes the COM object isn't registered properly when CATIA is installed.
     If the above isn't working you may need to re-install.
+ 
+.. note::
+     for portable Catia,Catia without installation:
+     
+* run command promt
+     
+* go to dir: *CATIA_DIR*/Bxx/win_b64/code/bin/
+    * Bxx-your catia release
+    * win_64 for x64 system
+    * intel_a for x32 system
+    
+run::
+
+    cnext.exe /regserver -env Your_enviroment_file -direnv Directory_with_your_enviroment_file
+
+for example::
+
+Your_enviroment file is ``CATIA_P3.V5-6R2019.B29``
+
+Directory_with_your_enviroment_file is ``h:\catia\CatEnv``
+     
+ 
+    
 
 
 
