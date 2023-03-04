@@ -11,7 +11,7 @@ To run pre-existing scripts windows builds are :ref:`available<windows_builds>`
 The Short Version
 -----------------
 
-This assumes python 3.6 or later is already installed and you know how and
+This assumes python 3.9 or later is already installed and you know how and
 when (all the time really) to use `virtual environments <https://docs.python.org/3/tutorial/venv.html>`_.
 
 To install from `pypi <https://pypi.org/>`_::
