@@ -36,6 +36,10 @@ class AxisSystem(AnyObject):
     def __init__(self, com_object):
         super().__init__(com_object)
         self.axis_system = com_object
+    
+    @property 
+    def name(self)->str:
+        return self.axis_system.name
 
     @property
     def axis_rotation_angle(self) -> Angle:
