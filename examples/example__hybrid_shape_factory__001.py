@@ -1,4 +1,4 @@
-#! /usr/bin/python3.9
+#! /usr/bin/python3.6
 
 """
 
@@ -22,10 +22,14 @@ sys.path.insert(0, os.path.abspath('..\\pycatia'))
 ##########################################################
 
 from pycatia import catia
+from pycatia.mec_mod_interfaces.part import Part
+
 
 caa = catia()
 document = caa.active_document
 part = document.part
+# not neccessary but will provide autocompletion in IDEs.
+part = Part(part.com_object)
 
 # initialise the hybrid shape factory. this is used to determine the shape type later.
 hsf = part.hybrid_shape_factory

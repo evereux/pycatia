@@ -1,4 +1,4 @@
-#! /usr/bin/python3.9
+#! /usr/bin/python3.6
 
 """
 
@@ -23,6 +23,8 @@ sys.path.insert(0, os.path.abspath('..\\pycatia'))
 import csv
 
 from pycatia import catia
+from pycatia.mec_mod_interfaces.part import Part
+
 
 caa = catia()
 documents = caa.documents
@@ -32,6 +34,8 @@ document = caa.active_document
 
 spa_workbench = document.spa_workbench()
 part = document.part
+# not neccessary but will provide autocompletion in IDEs.
+part = Part(part.com_object)
 
 selected = document.search_for_items(['Point'])
 
