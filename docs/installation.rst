@@ -136,28 +136,30 @@ Confirm Successful Install
 .. warning::
 
     Sometimes the COM object isn't registered properly when CATIA is installed.
-    If the above isn't working you may need to re-install.
- 
-.. note::
-     for portable Catia,Catia without installation:
-     
-* run command promt
-     
-* go to dir: *CATIA_DIR*/Bxx/win_b64/code/bin/
-    * Bxx-your catia release
-    * win_64 for x64 system
-    * intel_a for x32 system
-    
-run::
+    If the above isn't working you may need to re-install CATIA or register the 
+    CATIA COM server (see below).
 
-    cnext.exe /regserver -env Your_enviroment_file -direnv Directory_with_your_enviroment_file
 
-for example::
+Registering the CATIA COM server.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Your_enviroment file is ``CATIA_P3.V5-6R2019.B29``
+Typically, installating CATIA V5 will do this automatically as a part of the 
+installation process. However, sometimes that can fail.
 
-Directory_with_your_enviroment_file is ``h:\catia\CatEnv``
-     
+* From the command prompt navigate to the installation folder that contains 
+cnext.exe of the CATIA installation you would like to register.
+
+* For example::
+
+    cd <drive>\<CATIA_DIR>\<CATIA_VERSION>\code\bin
+
+
+* run the following command after replacing <env_file> and <path_to_env_file> 
+with the appropriate values::
+
+    cnext.exe /regserver -env <env_file> -direnv <path_to_env_file>
+
+
  
     
 
