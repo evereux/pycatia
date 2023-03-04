@@ -1,4 +1,4 @@
-#! /usr/bin/python3.9
+#! /usr/bin/python3.6
 
 """
 
@@ -30,10 +30,14 @@ sys.path.insert(0, os.path.abspath('..\\pycatia'))
 from pycatia import catia
 from pycatia.hybrid_shape_interfaces.hybrid_shape_line_pt_pt import HybridShapeLinePtPt
 from pycatia.hybrid_shape_interfaces.hybrid_shape_point_coord import HybridShapePointCoord
+from pycatia.mec_mod_interfaces.part import Part
+
 
 caa = catia()
 document = caa.active_document
 part = document.part
+# not neccessary but will provide autocompletion in IDEs.
+part = Part(part.com_object)
 hbs = part.hybrid_bodies
 hb_construction_lines = hbs.item("construction_geometry")
 hss = hb_construction_lines.hybrid_shapes

@@ -1,4 +1,4 @@
-#! /usr/bin/python3.9
+#! /usr/bin/python3.6
 
 """
 
@@ -18,6 +18,9 @@ sys.path.insert(0, os.path.abspath('..\\pycatia'))
 ##########################################################
 
 from pycatia import catia
+from pycatia.mec_mod_interfaces.part import Part
+from pycatia.product_structure_interfaces.product import Product
+
 
 caa = catia()
 # create a new part and rename.
@@ -26,7 +29,11 @@ documents.add('Part')
 document = caa.active_document
 
 part = caa.active_document.part
+# not neccessary but will provide autocompletion in IDEs.
+part = Part(part.com_object)
 product = caa.active_document.product
+# not neccessary but will provide autocompletion in IDEs.
+product = Product(product.com_object)
 hybrid_shape_factory = part.hybrid_shape_factory
 part_shape_factory = part.shape_factory
 body = part.main_body
