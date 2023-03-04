@@ -57,7 +57,7 @@ for cat_part in source_files:
     with CATIADocHandler(cat_part) as handler:
         caa = handler.catia
         document = caa.active_document
-        product = document.product()
+        product = document.product
         active_window = caa.active_window
         active_viewer = active_window.active_viewer
         cameras = document.cameras
