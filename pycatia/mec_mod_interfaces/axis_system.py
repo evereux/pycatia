@@ -41,6 +41,10 @@ class AxisSystem(AnyObject):
     def name(self)->str:
         return self.axis_system.name
 
+    @name.setter
+    def name(self, value: str):
+        self.axis_system.name = value
+
     @property
     def axis_rotation_angle(self) -> Angle:
         """
