@@ -135,19 +135,19 @@ Confirm Successful Install
 
 .. warning::
 
-    Sometimes the COM object isn't registered properly when CATIA is installed.
-    If the above isn't working you may need to re-install CATIA or register the 
-    CATIA COM server (see below).
+    Sometimes the COM object isn't registered properly when CATIA V5 is 
+    installed. If the above isn't working you may need to re-install CATIA V5 
+    or register the CATIA V5 COM server (see below).
 
 
-Registering the CATIA COM server.
+Registering the CATIA V5 COM server.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Typically, installating CATIA V5 will do this automatically as a part of the 
 installation process. However, sometimes that can fail.
 
 * From the command prompt navigate to the installation folder that contains 
-cnext.exe of the CATIA installation you would like to register.
+cnext.exe of the CATIA V5 installation you would like to register.
 
 * For example::
 
