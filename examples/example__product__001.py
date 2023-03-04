@@ -1,4 +1,4 @@
-#! /usr/bin/python3.9
+#! /usr/bin/python3.6
 
 """
 
@@ -61,10 +61,14 @@ sys.path.insert(0, os.path.abspath('..\\pycatia'))
 
 from pywinauto import Desktop
 from pycatia import catia
+from pycatia.product_structure_interfaces.product import Product
+
 
 caa = catia()
 document = caa.active_document
 product = document.product
+# not neccessary but will provide autocompletion in IDEs.
+product = Product(product.com_object)
 # create the selection object.
 selection = document.selection
 # add the product to the selection.
