@@ -135,10 +135,10 @@ if (document.is_part):
     
     hb=Body(selection.item(1).value.com_object)
     reference1=part_document.create_reference_from_object(hb)
-
+    selection.clear()  
     # create 6 extremum points
     
-    HybridShapeExtremum1 =Point(hsf.add_new_extremum(reference1, Hybrid_Shape_D1, 1))
+    HybridShapeExtremum1 =hsf.add_new_extremum(reference1, Hybrid_Shape_D1, 1)
     HybridShapeExtremum1.direction=Hybrid_Shape_D1
     HybridShapeExtremum1.direction2=Hybrid_Shape_D2
     HybridShapeExtremum1.direction3=Hybrid_Shape_D3
@@ -147,11 +147,6 @@ if (document.is_part):
     HybridShapeExtremum1.extremum_type3=1
     HybridShapeExtremum1.name="max_X"
     
-    selection.clear()
-    selection.add(HybridShapeExtremum1.com_object)
-    vis_property=selection.vis_properties
-    vis_property.set_show("0")
-    vis_property.set_symbol_type(4)
 
     HybridShapeExtremum2 = hsf.add_new_extremum(reference1, Hybrid_Shape_D1, 0)
     HybridShapeExtremum2.direction=Hybrid_Shape_D1
@@ -162,12 +157,7 @@ if (document.is_part):
     HybridShapeExtremum2.extremum_type3=0
     HybridShapeExtremum2.name="min_X"
 
-    selection.clear()
-    selection.add(HybridShapeExtremum2.com_object)
-    vis_property=selection.vis_properties
-    vis_property.set_show("0")
-    vis_property.set_symbol_type(4)
-    
+
     HybridShapeExtremum3 = hsf.add_new_extremum(reference1, Hybrid_Shape_D2, 1)
     HybridShapeExtremum3.direction=Hybrid_Shape_D2
     HybridShapeExtremum3.direction2=Hybrid_Shape_D1
@@ -176,13 +166,7 @@ if (document.is_part):
     HybridShapeExtremum3.extremum_type2=1
     HybridShapeExtremum3.extremum_type3=1
     HybridShapeExtremum3.name="max_Y"
-
-    selection.clear()
-    selection.add(HybridShapeExtremum3.com_object)
-    vis_property=selection.vis_properties
-    vis_property.set_show("0")
-    vis_property.set_symbol_type(4)
-
+   
     HybridShapeExtremum4 = hsf.add_new_extremum(reference1, Hybrid_Shape_D2, 0)
     HybridShapeExtremum4.direction=Hybrid_Shape_D2
     HybridShapeExtremum4.direction2=Hybrid_Shape_D1
@@ -191,12 +175,6 @@ if (document.is_part):
     HybridShapeExtremum4.extremum_type2=0
     HybridShapeExtremum4.extremum_type3=0
     HybridShapeExtremum4.name="min_Y"
-
-    selection.clear()
-    selection.add(HybridShapeExtremum4.com_object)
-    vis_property=selection.vis_properties
-    vis_property.set_show("0")
-    vis_property.set_symbol_type(4)
 
     HybridShapeExtremum5 = hsf.add_new_extremum(reference1, Hybrid_Shape_D3, 1)
     HybridShapeExtremum5.direction=Hybrid_Shape_D3
@@ -207,12 +185,6 @@ if (document.is_part):
     HybridShapeExtremum5.extremum_type3=1
     HybridShapeExtremum5.name="max_Z"
 
-    selection.clear()
-    selection.add(HybridShapeExtremum5.com_object)
-    vis_property=selection.vis_properties
-    vis_property.set_show("0")
-    vis_property.set_symbol_type(4)
-
     HybridShapeExtremum6 = hsf.add_new_extremum(reference1, Hybrid_Shape_D3, 0)
     HybridShapeExtremum6.direction=Hybrid_Shape_D3
     HybridShapeExtremum6.direction2=Hybrid_Shape_D1
@@ -222,11 +194,7 @@ if (document.is_part):
     HybridShapeExtremum6.extremum_type3=0
     HybridShapeExtremum6.name="min_Z"
     
-    selection.clear()
-    selection.add(HybridShapeExtremum6.com_object)
-    vis_property=selection.vis_properties
-    vis_property.set_show("0")
-    vis_property.set_symbol_type(4)
+ 
 
     #go to definition append points
     hybridBody2 = hybridBodies1.item("definition_points")
@@ -236,6 +204,28 @@ if (document.is_part):
     hybridBody2.append_hybrid_shape(HybridShapeExtremum4)
     hybridBody2.append_hybrid_shape(HybridShapeExtremum5)
     hybridBody2.append_hybrid_shape(HybridShapeExtremum6)
+      
+    # TODO need to send it to end for speedup
+    #add vis property to point
+    # part must bu updated
+    part_document.update()
+    # u can search or add
+    #selection.search("CatPrtSearch.Point,All")
+    selection.add(HybridShapeExtremum1)
+    selection.add(HybridShapeExtremum3)
+    selection.add(HybridShapeExtremum5)
+    selection.vis_properties.set_show(0)
+    selection.vis_properties.set_symbol_type(4)
+    selection.vis_properties.set_real_color(0,255,0,0)
+    selection.clear()
+
+    selection.add(HybridShapeExtremum2)
+    selection.add(HybridShapeExtremum4)
+    selection.add(HybridShapeExtremum6)
+    selection.vis_properties.set_show(0)
+    selection.vis_properties.set_symbol_type(4)
+    selection.vis_properties.set_real_color(255,0,0,0)
+    selection.clear()
 
     # create 12 planes
     # 6 max planes
