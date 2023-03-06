@@ -8,6 +8,8 @@
     .. warning:
         Catia must be run and document open and active.
         Part document must content any geometry and one axis system
+    .. note:
+        Need add cylindrical bounding box
 """
 ##########################################################
 # insert syspath to project folder so examples can be run.
@@ -19,14 +21,18 @@ sys.path.insert(0, os.path.abspath('..\\pycatia'))
 ##########################################################
 
 from pycatia import catia
-from pycatia.mec_mod_interfaces.axis_system import AxisSystem
 from pycatia.mec_mod_interfaces.part import Part
-# from pycatia.in_interfaces import reference
+from pycatia.mec_mod_interfaces.body import Body
+from pycatia.mec_mod_interfaces.axis_system import AxisSystem
+from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
+
+from pycatia.hybrid_shape_interfaces.point import Point
 from pycatia.hybrid_shape_interfaces.hybrid_shape_point_coord import HybridShapePointCoord
 from pycatia.hybrid_shape_interfaces.hybrid_shape_extract import HybridShapeExtract
 from pycatia.hybrid_shape_interfaces.hybrid_shape_intersection import HybridShapeIntersection
-from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
-from pycatia.mec_mod_interfaces.body import Body
+#from pycatia.in_interfaces import vis_property_set
+
+
 
 
 caa = catia()
@@ -132,15 +138,20 @@ if (document.is_part):
 
     # create 6 extremum points
     
-    HybridShapeExtremum1 = hsf.add_new_extremum(reference1, Hybrid_Shape_D1, 1)
+    HybridShapeExtremum1 =Point(hsf.add_new_extremum(reference1, Hybrid_Shape_D1, 1))
     HybridShapeExtremum1.direction=Hybrid_Shape_D1
     HybridShapeExtremum1.direction2=Hybrid_Shape_D2
     HybridShapeExtremum1.direction3=Hybrid_Shape_D3
     HybridShapeExtremum1.extremum_type=1
     HybridShapeExtremum1.extremum_type2=1
     HybridShapeExtremum1.extremum_type3=1
-    #HybridShapeExtremum1.compute()
     HybridShapeExtremum1.name="max_X"
+    
+    selection.clear()
+    selection.add(HybridShapeExtremum1.com_object)
+    vis_property=selection.vis_properties
+    vis_property.set_show("0")
+    vis_property.set_symbol_type(4)
 
     HybridShapeExtremum2 = hsf.add_new_extremum(reference1, Hybrid_Shape_D1, 0)
     HybridShapeExtremum2.direction=Hybrid_Shape_D1
@@ -150,6 +161,12 @@ if (document.is_part):
     HybridShapeExtremum2.extremum_type2=0
     HybridShapeExtremum2.extremum_type3=0
     HybridShapeExtremum2.name="min_X"
+
+    selection.clear()
+    selection.add(HybridShapeExtremum2.com_object)
+    vis_property=selection.vis_properties
+    vis_property.set_show("0")
+    vis_property.set_symbol_type(4)
     
     HybridShapeExtremum3 = hsf.add_new_extremum(reference1, Hybrid_Shape_D2, 1)
     HybridShapeExtremum3.direction=Hybrid_Shape_D2
@@ -160,6 +177,12 @@ if (document.is_part):
     HybridShapeExtremum3.extremum_type3=1
     HybridShapeExtremum3.name="max_Y"
 
+    selection.clear()
+    selection.add(HybridShapeExtremum3.com_object)
+    vis_property=selection.vis_properties
+    vis_property.set_show("0")
+    vis_property.set_symbol_type(4)
+
     HybridShapeExtremum4 = hsf.add_new_extremum(reference1, Hybrid_Shape_D2, 0)
     HybridShapeExtremum4.direction=Hybrid_Shape_D2
     HybridShapeExtremum4.direction2=Hybrid_Shape_D1
@@ -168,6 +191,12 @@ if (document.is_part):
     HybridShapeExtremum4.extremum_type2=0
     HybridShapeExtremum4.extremum_type3=0
     HybridShapeExtremum4.name="min_Y"
+
+    selection.clear()
+    selection.add(HybridShapeExtremum4.com_object)
+    vis_property=selection.vis_properties
+    vis_property.set_show("0")
+    vis_property.set_symbol_type(4)
 
     HybridShapeExtremum5 = hsf.add_new_extremum(reference1, Hybrid_Shape_D3, 1)
     HybridShapeExtremum5.direction=Hybrid_Shape_D3
@@ -178,6 +207,12 @@ if (document.is_part):
     HybridShapeExtremum5.extremum_type3=1
     HybridShapeExtremum5.name="max_Z"
 
+    selection.clear()
+    selection.add(HybridShapeExtremum5.com_object)
+    vis_property=selection.vis_properties
+    vis_property.set_show("0")
+    vis_property.set_symbol_type(4)
+
     HybridShapeExtremum6 = hsf.add_new_extremum(reference1, Hybrid_Shape_D3, 0)
     HybridShapeExtremum6.direction=Hybrid_Shape_D3
     HybridShapeExtremum6.direction2=Hybrid_Shape_D1
@@ -186,6 +221,12 @@ if (document.is_part):
     HybridShapeExtremum6.extremum_type2=0
     HybridShapeExtremum6.extremum_type3=0
     HybridShapeExtremum6.name="min_Z"
+    
+    selection.clear()
+    selection.add(HybridShapeExtremum6.com_object)
+    vis_property=selection.vis_properties
+    vis_property.set_show("0")
+    vis_property.set_symbol_type(4)
 
     #go to definition append points
     hybridBody2 = hybridBodies1.item("definition_points")
@@ -255,6 +296,11 @@ if (document.is_part):
     hybridBody2.append_hybrid_shape(Plane_Z_max_offset)
     hybridBody2.append_hybrid_shape(Plane_Z_min_offset)
 
+    # Measure rough stock
+
+
+
+
     #create intersections offset planes
 
     # Zmin->Xmax,Xmin,Ymax,Ymin. its enough for bounding box
@@ -263,6 +309,8 @@ if (document.is_part):
     Line_Xmin_Zmin_offset=hsf.add_new_intersection(Plane_X_min_offset,Plane_Z_min_offset)
     Line_Ymax_Zmin_offset=hsf.add_new_intersection(Plane_Y_max_offset,Plane_Z_min_offset)
     Line_Ymin_Zmin_offset=hsf.add_new_intersection(Plane_Y_min_offset,Plane_Z_min_offset)
+    
+
 
     # Zmax->Xmax,Xmin,Ymax,Ymin. For sufase bounding box
     # u can use intersection
@@ -273,6 +321,7 @@ if (document.is_part):
     #Line_Ymin_Zmax_offset=hsf.add_new_intersection(Plane_Y_min_offset,Plane_Z_max_offset)
     
     # but i use translate
+    
     
     Line_Xmax_Zmax_offset=hsf.add_new_translate(Line_Xmax_Zmin_offset,)
     Line_Xmin_Zmax_offset=hsf.add_new_translate(Line_Xmin_Zmin_offset,)
