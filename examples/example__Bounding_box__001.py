@@ -21,11 +21,13 @@ sys.path.insert(0, os.path.abspath('..\\pycatia'))
 from pycatia import catia
 from pycatia.mec_mod_interfaces.axis_system import AxisSystem
 from pycatia.mec_mod_interfaces.part import Part
-from pycatia.in_interfaces import reference
+# from pycatia.in_interfaces import reference
 from pycatia.hybrid_shape_interfaces.hybrid_shape_point_coord import HybridShapePointCoord
 from pycatia.hybrid_shape_interfaces.hybrid_shape_extract import HybridShapeExtract
 from pycatia.hybrid_shape_interfaces.hybrid_shape_intersection import HybridShapeIntersection
 from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
+from pycatia.mec_mod_interfaces.body import Body
+
 
 caa = catia()
 
@@ -50,7 +52,7 @@ Offset_Z_max=10
 if (document.is_part):
     # need to autocomplete
     part_document=Part(document.part.com_object)
-    
+
     selection=document.selection
     part_document.update()
 
@@ -82,12 +84,13 @@ if (document.is_part):
     Axis_name=Axis_System.name
     Origin_coord=Axis_System.get_origin()
     Origin_Point=HybridShapePointCoord(hsf.add_new_point_coord(Origin_coord[0] ,Origin_coord[1] ,Origin_coord[2] ))
-    #Axis_Ref=part_document.create_reference_from_object(Origin_Point)
+    
+    Axis_Ref=part_document.create_reference_from_object(Origin_Point.com_object)
+    
     Axis_Coord=Axis_System.get_x_axis()
     Hybrid_Shape_D1=hsf.add_new_direction_by_coord(Axis_Coord[0], Axis_Coord[1], Axis_Coord[2])
     
     Axis_Coord=Axis_System.get_y_axis()
-
     Hybrid_Shape_D2=hsf.add_new_direction_by_coord(Axis_Coord[0], Axis_Coord[1], Axis_Coord[2])
     
     Axis_Coord=Axis_System.get_z_axis()
@@ -97,6 +100,10 @@ if (document.is_part):
     #Plane_line_2=hsf.add_new_line_pt_dir(Origin_Point.com_object,Hybrid_Shape_D2,0,0,False)
 
     selection.clear()
+
+
+    # TODO
+    # to end file
 
     oBodies=part_document.bodies
     j=oBodies.count
@@ -112,46 +119,16 @@ if (document.is_part):
     
     # TODO
     # Need filter selection
+    # need test Face
 
-    # "HybridShape","Face",
-    sFilter=("Body",)
+    sFilter=("Body","HybridShape","Face")
     sStatus = selection.select_element2(sFilter, "select a HybridBody", False)
     if (sStatus == "Cancel"):
         caa.message_box('HybridBodies not select', 16 ,title='Warning')
         exit()
     
-    print (selection.item(1).type)
-    exit()
-
-    prt=Part(part_document.com_object)
-    
-    reference1=prt.create_reference_from_name("!"+selection.item(1).value.name)
-    print(selection.item(1).value.name)
-
-
-
-    # print(part_document.create_reference_from_name(selection.item(1).value.name))
-
-    
-    # anyobj->reference
-    #print(selection.item(1).value.parent.name+"\\"+selection.item(1).value.name)
-    #reference1=part.hybrid_bodies.item(selection.item(1).value.parent.name+"\\"+selection.item(1).value.name)
-    
-
-
-    print("===========================================")
-    print("===========================================")
-    print("===========================================")
-    print("===========================================")
-    print()
-    """
-    hs_extract1=HybridShapeExtract(reference1)
-    hybridShapeExtract1 = hsf.add_new_extract(reference1)
-    hybridShapeExtract1.PropagationType = 1
-    hybridShapeExtract1.ComplementaryExtract = False
-    hybridShapeExtract1.IsFederated = False
-    reference1 = hybridShapeExtract1
-    """    
+    hb=Body(selection.item(1).value.com_object)
+    reference1=part_document.create_reference_from_object(hb)
 
     # create 6 extremum points
     
@@ -229,9 +206,9 @@ if (document.is_part):
     selection_XZ_plane=f"RSur:(Face:(Brp:({Axis_System.name};3);None:();Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
     selection_YZ_plane=f"RSur:(Face:(Brp:({Axis_System.name};2);None:();Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
     
-    ref_XY=part.create_reference_from_b_rep_name(selection_XY_plane,Axis_System)
-    ref_XZ=part.create_reference_from_b_rep_name(selection_XZ_plane,Axis_System)
-    ref_YZ=part.create_reference_from_b_rep_name(selection_YZ_plane,Axis_System)
+    ref_XY=part_document.create_reference_from_b_rep_name(selection_XY_plane,Axis_System)
+    ref_XZ=part_document.create_reference_from_b_rep_name(selection_XZ_plane,Axis_System)
+    ref_YZ=part_document.create_reference_from_b_rep_name(selection_YZ_plane,Axis_System)
 
     Plane_X_max=hsf.add_new_plane_offset_pt(ref_YZ,HybridShapeExtremum1)
     Plane_X_max.name="Plane_X_max"
