@@ -367,7 +367,7 @@ if (document.is_part):
     Line_H1V0_H1V0_max=hsf.add_new_line_pt_pt(Point_H1V0,Point_H1V0_max)
     Line_H0V0_H0V0_max=hsf.add_new_line_pt_pt(Point_H0V0,Point_H0V0_max)
     
-    # Wireframe_Bounding_box=hsf.add_new_join()
+    Wireframe_Bounding_box=hsf.add_new_join()
 
 
     
