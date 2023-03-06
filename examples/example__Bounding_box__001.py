@@ -354,8 +354,9 @@ if (document.is_part):
     hybridBody2.append_hybrid_shape(Point_Line_Xmax_Zmax_offset_Line_Ymin_Zmax_offset)
     hybridBody2.append_hybrid_shape(Point_Line_Xmin_Zmax_offset_Line_Ymax_Zmax_offset)
     hybridBody2.append_hybrid_shape(Point_Line_Xmin_Zmax_offset_Line_Ymin_Zmax_offset)
-    hybridBody2.update()
 
+
+    # Create 8 lines for bounding box
 
 
 
