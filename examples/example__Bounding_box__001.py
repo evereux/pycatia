@@ -28,8 +28,7 @@ from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
 from pycatia.hybrid_shape_interfaces.point import Point
 from pycatia.hybrid_shape_interfaces.hybrid_shape_point_coord import HybridShapePointCoord
-from pycatia.hybrid_shape_interfaces.hybrid_shape_extract import HybridShapeExtract
-from pycatia.hybrid_shape_interfaces.hybrid_shape_intersection import HybridShapeIntersection
+from pycatia.hybrid_shape_interfaces.hybrid_shape_project import HybridShapeProject
 #from pycatia.in_interfaces import vis_property_set
 
 
@@ -215,7 +214,7 @@ if (document.is_part):
     selection.add(HybridShapeExtremum3)
     selection.add(HybridShapeExtremum5)
     selection.vis_properties.set_show(0)
-    selection.vis_properties.set_symbol_type(4)
+    selection.vis_properties.set_symbol_type(5)
     selection.vis_properties.set_real_color(0,255,0,0)
     selection.clear()
 
@@ -223,7 +222,7 @@ if (document.is_part):
     selection.add(HybridShapeExtremum4)
     selection.add(HybridShapeExtremum6)
     selection.vis_properties.set_show(0)
-    selection.vis_properties.set_symbol_type(4)
+    selection.vis_properties.set_symbol_type(5)
     selection.vis_properties.set_real_color(255,0,0,0)
     selection.clear()
 
@@ -264,17 +263,17 @@ if (document.is_part):
     hybridBody2.append_hybrid_shape(Plane_Z_min)
 
     # 6 offset planes
-    Plane_X_max_offset=hsf.add_new_plane_offset(Plane_X_max,Offset_X_max,True)
+    Plane_X_max_offset=hsf.add_new_plane_offset(Plane_X_max,Offset_X_max,False)
     Plane_X_max_offset.name="Plane_X_max_offset"
     Plane_X_min_offset=hsf.add_new_plane_offset(Plane_X_min,Offset_X_min,True)
     Plane_X_min_offset.name="Plane_X_min_offset"
 
-    Plane_Y_max_offset=hsf.add_new_plane_offset(Plane_Y_max,Offset_Y_max,True)
+    Plane_Y_max_offset=hsf.add_new_plane_offset(Plane_Y_max,Offset_Y_max,False)
     Plane_Y_max_offset.name="Plane_Y_max_offset"
     Plane_Y_min_offset=hsf.add_new_plane_offset(Plane_Y_min,Offset_Y_min,True)
     Plane_Y_min_offset.name="Plane_Y_min_offset"
 
-    Plane_Z_max_offset=hsf.add_new_plane_offset(Plane_Z_max,Offset_Z_max,True)
+    Plane_Z_max_offset=hsf.add_new_plane_offset(Plane_Z_max,Offset_Z_max,False)
     Plane_Z_max_offset.name="Plane_Z_max_offset"
     Plane_Z_min_offset=hsf.add_new_plane_offset(Plane_Z_min,Offset_Z_min,True)
     Plane_Z_min_offset.name="Plane_Z_min_offset"
@@ -286,6 +285,7 @@ if (document.is_part):
     hybridBody2.append_hybrid_shape(Plane_Z_max_offset)
     hybridBody2.append_hybrid_shape(Plane_Z_min_offset)
 
+    # TODO
     # Measure rough stock
 
 
@@ -294,36 +294,23 @@ if (document.is_part):
     #create intersections offset planes
 
     # Zmin->Xmax,Xmin,Ymax,Ymin. its enough for bounding box
+    # for example
+    # fill= hsf.add_new_fill()
+    # fill.add_bound(line1,line2,line3,line4)
+    # bounding box = pad (fill) up to Zmax plane
 
     Line_Xmax_Zmin_offset=hsf.add_new_intersection(Plane_X_max_offset,Plane_Z_min_offset)
     Line_Xmin_Zmin_offset=hsf.add_new_intersection(Plane_X_min_offset,Plane_Z_min_offset)
     Line_Ymax_Zmin_offset=hsf.add_new_intersection(Plane_Y_max_offset,Plane_Z_min_offset)
     Line_Ymin_Zmin_offset=hsf.add_new_intersection(Plane_Y_min_offset,Plane_Z_min_offset)
     
-
-
-    # Zmax->Xmax,Xmin,Ymax,Ymin. For sufase bounding box
-    # u can use intersection
-    
-    #Line_Xmax_Zmax_offset=hsf.add_new_intersection(Plane_X_max_offset,Plane_Z_max_offset)
-    #Line_Xmin_Zmax_offset=hsf.add_new_intersection(Plane_X_min_offset,Plane_Z_max_offset)
-    #Line_Ymax_Zmax_offset=hsf.add_new_intersection(Plane_Y_max_offset,Plane_Z_max_offset)
-    #Line_Ymin_Zmax_offset=hsf.add_new_intersection(Plane_Y_min_offset,Plane_Z_max_offset)
-    
-    # but i use translate
-    
-    
-    Line_Xmax_Zmax_offset=hsf.add_new_translate(Line_Xmax_Zmin_offset,)
-    Line_Xmin_Zmax_offset=hsf.add_new_translate(Line_Xmin_Zmin_offset,)
-    Line_Ymax_Zmax_offset=hsf.add_new_translate(Line_Ymax_Zmin_offset,)
-    Line_Ymin_Zmax_offset=hsf.add_new_translate(Line_Ymin_Zmin_offset,)
-    
-    # Xmax,Xmin,Ymax,Ymin. For wireframe
-   
-    Line_Xmax_Ymax_offset=hsf.add_new_intersection(Plane_X_max_offset,Plane_Y_max_offset)
-    Line_Xmin_Ymax_offset=hsf.add_new_intersection(Plane_X_min_offset,Plane_Y_max_offset)
-    Line_Xmax_Ymin_offset=hsf.add_new_intersection(Plane_X_max_offset,Plane_Y_min_offset)
-    Line_Xmin_Ymin_offset=hsf.add_new_intersection(Plane_X_min_offset,Plane_Y_min_offset)
+    # but u can use translate and intersect or projection
+    # do not intersection directly
+    # its not working with cylindrycal object
+    # Line_Xmax_Zmax_offset=hsf.add_new_translate(Line_Xmax_Zmin_offset,)
+    # Line_Xmin_Zmax_offset=hsf.add_new_translate(Line_Xmin_Zmin_offset,)
+    # Line_Ymax_Zmax_offset=hsf.add_new_translate(Line_Ymax_Zmin_offset,)
+    # Line_Ymin_Zmax_offset=hsf.add_new_translate(Line_Ymin_Zmin_offset,)
 
     # append all in wireframe
     hybridBody2.append_hybrid_shape(Line_Xmax_Zmin_offset)
@@ -331,27 +318,43 @@ if (document.is_part):
     hybridBody2.append_hybrid_shape(Line_Ymax_Zmin_offset)
     hybridBody2.append_hybrid_shape(Line_Ymin_Zmin_offset)
 
-    hybridBody2.append_hybrid_shape(Line_Xmax_Zmax_offset)
-    hybridBody2.append_hybrid_shape(Line_Xmin_Zmax_offset)
-    hybridBody2.append_hybrid_shape(Line_Ymax_Zmax_offset)
-    hybridBody2.append_hybrid_shape(Line_Ymin_Zmax_offset)
-    
-    hybridBody2.append_hybrid_shape(Line_Xmax_Ymax_offset)
-    hybridBody2.append_hybrid_shape(Line_Xmin_Ymax_offset)
-    hybridBody2.append_hybrid_shape(Line_Xmax_Ymin_offset)
-    hybridBody2.append_hybrid_shape(Line_Xmin_Ymin_offset)
+    Point_Line_Xmax_Zmin_offset_Line_Ymax_Zmin_offset=(
+        hsf.add_new_intersection(Line_Xmax_Zmin_offset,Line_Ymax_Zmin_offset)
+        )
+    Point_Line_Xmax_Zmin_offset_Line_Ymin_Zmin_offset=(
+        hsf.add_new_intersection(Line_Xmax_Zmin_offset,Line_Ymin_Zmin_offset)
+        )
+    Point_Line_Xmin_Zmin_offset_Line_Ymax_Zmin_offset=(
+        hsf.add_new_intersection(Line_Xmin_Zmin_offset,Line_Ymax_Zmin_offset)
+        )
+    Point_Line_Xmin_Zmin_offset_Line_Ymin_Zmin_offset=(
+        hsf.add_new_intersection(Line_Xmin_Zmin_offset,Line_Ymin_Zmin_offset)
+        )
 
-    # add split for wire frame
+    hybridBody2.append_hybrid_shape(Point_Line_Xmax_Zmin_offset_Line_Ymax_Zmin_offset)
+    hybridBody2.append_hybrid_shape(Point_Line_Xmax_Zmin_offset_Line_Ymin_Zmin_offset)
+    hybridBody2.append_hybrid_shape(Point_Line_Xmin_Zmin_offset_Line_Ymax_Zmin_offset)
+    hybridBody2.append_hybrid_shape(Point_Line_Xmin_Zmin_offset_Line_Ymin_Zmin_offset)
 
+    # Oo need to refact
 
+    Point_Line_Xmax_Zmax_offset_Line_Ymax_Zmax_offset=hsf.add_new_project(Point_Line_Xmax_Zmin_offset_Line_Ymax_Zmin_offset,Plane_Z_max_offset)
+    Point_Line_Xmax_Zmax_offset_Line_Ymax_Zmax_offset.direction=Hybrid_Shape_D3
 
+    Point_Line_Xmax_Zmax_offset_Line_Ymin_Zmax_offset=hsf.add_new_project(Point_Line_Xmax_Zmin_offset_Line_Ymin_Zmin_offset,Plane_Z_max_offset)
+    Point_Line_Xmax_Zmax_offset_Line_Ymin_Zmax_offset.direction=Hybrid_Shape_D3
 
-    
-    
-    
+    Point_Line_Xmin_Zmax_offset_Line_Ymax_Zmax_offset=hsf.add_new_project(Point_Line_Xmin_Zmin_offset_Line_Ymax_Zmin_offset,Plane_Z_max_offset)
+    Point_Line_Xmin_Zmax_offset_Line_Ymax_Zmax_offset.direction=Hybrid_Shape_D3
 
-    
+    Point_Line_Xmin_Zmax_offset_Line_Ymin_Zmax_offset=hsf.add_new_project(Point_Line_Xmin_Zmin_offset_Line_Ymin_Zmin_offset,Plane_Z_max_offset)
+    Point_Line_Xmin_Zmax_offset_Line_Ymin_Zmax_offset.direction=Hybrid_Shape_D3
 
+    hybridBody2.append_hybrid_shape(Point_Line_Xmax_Zmax_offset_Line_Ymax_Zmax_offset)
+    hybridBody2.append_hybrid_shape(Point_Line_Xmax_Zmax_offset_Line_Ymin_Zmax_offset)
+    hybridBody2.append_hybrid_shape(Point_Line_Xmin_Zmax_offset_Line_Ymax_Zmax_offset)
+    hybridBody2.append_hybrid_shape(Point_Line_Xmin_Zmax_offset_Line_Ymin_Zmax_offset)
+    hybridBody2.update()
 
 
 
