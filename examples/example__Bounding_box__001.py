@@ -227,50 +227,50 @@ if (document.is_part):
     ref_XZ=part_document.create_reference_from_b_rep_name(selection_XZ_plane,Axis_System)
     ref_YZ=part_document.create_reference_from_b_rep_name(selection_YZ_plane,Axis_System)
 
-    Plane_X_max=hsf.add_new_plane_offset_pt(ref_YZ,HybridShapeExtremum1)
-    Plane_X_max.name="Plane_X_max"
-    Plane_X_min=hsf.add_new_plane_offset_pt(ref_YZ,HybridShapeExtremum2)
-    Plane_X_min.name="Plane_X_min"
+    Plane_Xmax=hsf.add_new_plane_offset_pt(ref_YZ,HybridShapeExtremum1)
+    Plane_Xmax.name="Plane_X_max"
+    Plane_Xmin=hsf.add_new_plane_offset_pt(ref_YZ,HybridShapeExtremum2)
+    Plane_Xmin.name="Plane_X_min"
 
-    Plane_Y_max=hsf.add_new_plane_offset_pt(ref_XZ,HybridShapeExtremum3)
-    Plane_Y_max.name="Plane_Y_max"
-    Plane_Y_min=hsf.add_new_plane_offset_pt(ref_XZ,HybridShapeExtremum4)
-    Plane_Y_min.name="Plane_Y_min"
+    Plane_Ymax=hsf.add_new_plane_offset_pt(ref_XZ,HybridShapeExtremum3)
+    Plane_Ymax.name="Plane_Y_max"
+    Plane_Ymin=hsf.add_new_plane_offset_pt(ref_XZ,HybridShapeExtremum4)
+    Plane_Ymin.name="Plane_Y_min"
 
-    Plane_Z_max=hsf.add_new_plane_offset_pt(ref_XY,HybridShapeExtremum5)
-    Plane_Z_max.name="Plane_Z_max"
-    Plane_Z_min=hsf.add_new_plane_offset_pt(ref_XY,HybridShapeExtremum6)
-    Plane_Z_min.name="Plane_Z_min"
+    Plane_Zmax=hsf.add_new_plane_offset_pt(ref_XY,HybridShapeExtremum5)
+    Plane_Zmax.name="Plane_Z_max"
+    Plane_Zmin=hsf.add_new_plane_offset_pt(ref_XY,HybridShapeExtremum6)
+    Plane_Zmin.name="Plane_Z_min"
 
-    hybridBody2.append_hybrid_shape(Plane_X_max)
-    hybridBody2.append_hybrid_shape(Plane_X_min)
-    hybridBody2.append_hybrid_shape(Plane_Y_max)
-    hybridBody2.append_hybrid_shape(Plane_Y_min)
-    hybridBody2.append_hybrid_shape(Plane_Z_max)
-    hybridBody2.append_hybrid_shape(Plane_Z_min)
+    hybridBody2.append_hybrid_shape(Plane_Xmax)
+    hybridBody2.append_hybrid_shape(Plane_Xmin)
+    hybridBody2.append_hybrid_shape(Plane_Ymax)
+    hybridBody2.append_hybrid_shape(Plane_Ymin)
+    hybridBody2.append_hybrid_shape(Plane_Zmax)
+    hybridBody2.append_hybrid_shape(Plane_Zmin)
 
     # 6 offset planes
-    Plane_X_max_offset=hsf.add_new_plane_offset(Plane_X_max,Offset_X_max,False)
-    Plane_X_max_offset.name="Plane_X_max_offset"
-    Plane_X_min_offset=hsf.add_new_plane_offset(Plane_X_min,Offset_X_min,True)
-    Plane_X_min_offset.name="Plane_X_min_offset"
+    Plane_Xmax_offset=hsf.add_new_plane_offset(Plane_Xmax,Offset_X_max,False)
+    Plane_Xmax_offset.name="Plane_X_max_offset"
+    Plane_Xmin_offset=hsf.add_new_plane_offset(Plane_Xmin,Offset_X_min,True)
+    Plane_Xmin_offset.name="Plane_X_min_offset"
 
-    Plane_Y_max_offset=hsf.add_new_plane_offset(Plane_Y_max,Offset_Y_max,False)
-    Plane_Y_max_offset.name="Plane_Y_max_offset"
-    Plane_Y_min_offset=hsf.add_new_plane_offset(Plane_Y_min,Offset_Y_min,True)
-    Plane_Y_min_offset.name="Plane_Y_min_offset"
+    Plane_Ymax_offset=hsf.add_new_plane_offset(Plane_Ymax,Offset_Y_max,False)
+    Plane_Ymax_offset.name="Plane_Y_max_offset"
+    Plane_Ymin_offset=hsf.add_new_plane_offset(Plane_Ymin,Offset_Y_min,True)
+    Plane_Ymin_offset.name="Plane_Y_min_offset"
 
-    Plane_Z_max_offset=hsf.add_new_plane_offset(Plane_Z_max,Offset_Z_max,False)
-    Plane_Z_max_offset.name="Plane_Z_max_offset"
-    Plane_Z_min_offset=hsf.add_new_plane_offset(Plane_Z_min,Offset_Z_min,True)
-    Plane_Z_min_offset.name="Plane_Z_min_offset"
+    Plane_Zmax_offset=hsf.add_new_plane_offset(Plane_Zmax,Offset_Z_max,False)
+    Plane_Zmax_offset.name="Plane_Z_max_offset"
+    Plane_Zmin_offset=hsf.add_new_plane_offset(Plane_Zmin,Offset_Z_min,True)
+    Plane_Zmin_offset.name="Plane_Z_min_offset"
 
-    hybridBody2.append_hybrid_shape(Plane_X_max_offset)
-    hybridBody2.append_hybrid_shape(Plane_X_min_offset)
-    hybridBody2.append_hybrid_shape(Plane_Y_max_offset)
-    hybridBody2.append_hybrid_shape(Plane_Y_min_offset)
-    hybridBody2.append_hybrid_shape(Plane_Z_max_offset)
-    hybridBody2.append_hybrid_shape(Plane_Z_min_offset)
+    hybridBody2.append_hybrid_shape(Plane_Xmax_offset)
+    hybridBody2.append_hybrid_shape(Plane_Xmin_offset)
+    hybridBody2.append_hybrid_shape(Plane_Ymax_offset)
+    hybridBody2.append_hybrid_shape(Plane_Ymin_offset)
+    hybridBody2.append_hybrid_shape(Plane_Zmax_offset)
+    hybridBody2.append_hybrid_shape(Plane_Zmin_offset)
 
     # TODO
     # Measure rough stock
@@ -285,12 +285,30 @@ if (document.is_part):
     # fill= hsf.add_new_fill()
     # fill.add_bound(line1,line2,line3,line4)
     # bounding box = pad (fill) up to Zmax plane
+    #
+    #  Point_H0V1         Line_H1
+    #    *  -------------------------   * Point_H1V1
+    #   |                               |
+    #   |                               |
+    #   |                               |
+    #   |                               |
+    #   | Line_V0                       |Line_V1
+    #   |                               |
+    #   |                               |
+    #   |               xdirection      |
+    #    *  -------------------------> *     Point_H1V0
+    #  Point_H0V0             Line_H0
 
-    Line_Xmax_Zmin_offset=hsf.add_new_intersection(Plane_X_max_offset,Plane_Z_min_offset)
-    Line_Xmin_Zmin_offset=hsf.add_new_intersection(Plane_X_min_offset,Plane_Z_min_offset)
-    Line_Ymax_Zmin_offset=hsf.add_new_intersection(Plane_Y_max_offset,Plane_Z_min_offset)
-    Line_Ymin_Zmin_offset=hsf.add_new_intersection(Plane_Y_min_offset,Plane_Z_min_offset)
-    
+
+    Line_V1=hsf.add_new_intersection(Plane_Xmax_offset,Plane_Zmin_offset)
+    Line_V0=hsf.add_new_intersection(Plane_Xmin_offset,Plane_Zmin_offset)
+    Line_H1=hsf.add_new_intersection(Plane_Ymax_offset,Plane_Zmin_offset)
+    Line_H0=hsf.add_new_intersection(Plane_Ymin_offset,Plane_Zmin_offset)
+    Line_V1.name="Line_V1"
+    Line_V0.name="Line_V0"
+    Line_H1.name="Line_H1"
+    Line_H0.name="Line_H0"
+
     # but u can use translate and intersect or projection
     # do not intersection directly
     # its not working with cylindrycal object
@@ -300,50 +318,49 @@ if (document.is_part):
     # Line_Ymin_Zmax_offset=hsf.add_new_translate(Line_Ymin_Zmin_offset,)
 
     # append all in wireframe
-    hybridBody2.append_hybrid_shape(Line_Xmax_Zmin_offset)
-    hybridBody2.append_hybrid_shape(Line_Xmin_Zmin_offset)
-    hybridBody2.append_hybrid_shape(Line_Ymax_Zmin_offset)
-    hybridBody2.append_hybrid_shape(Line_Ymin_Zmin_offset)
+    hybridBody2.append_hybrid_shape(Line_V1)
+    hybridBody2.append_hybrid_shape(Line_V0)
+    hybridBody2.append_hybrid_shape(Line_H1)
+    hybridBody2.append_hybrid_shape(Line_H0)
 
-    Point_Line_Xmax_Zmin_offset_Line_Ymax_Zmin_offset=(
-        hsf.add_new_intersection(Line_Xmax_Zmin_offset,Line_Ymax_Zmin_offset)
-        )
-    Point_Line_Xmax_Zmin_offset_Line_Ymin_Zmin_offset=(
-        hsf.add_new_intersection(Line_Xmax_Zmin_offset,Line_Ymin_Zmin_offset)
-        )
-    Point_Line_Xmin_Zmin_offset_Line_Ymax_Zmin_offset=(
-        hsf.add_new_intersection(Line_Xmin_Zmin_offset,Line_Ymax_Zmin_offset)
-        )
-    Point_Line_Xmin_Zmin_offset_Line_Ymin_Zmin_offset=(
-        hsf.add_new_intersection(Line_Xmin_Zmin_offset,Line_Ymin_Zmin_offset)
-        )
+    Point_H1V1=hsf.add_new_intersection(Line_V1,Line_H1)
+    Point_H0V1=hsf.add_new_intersection(Line_V1,Line_H0)
+    Point_H1V0=hsf.add_new_intersection(Line_V0,Line_H1)
+    Point_H0V0=hsf.add_new_intersection(Line_V0,Line_H0)
 
-    hybridBody2.append_hybrid_shape(Point_Line_Xmax_Zmin_offset_Line_Ymax_Zmin_offset)
-    hybridBody2.append_hybrid_shape(Point_Line_Xmax_Zmin_offset_Line_Ymin_Zmin_offset)
-    hybridBody2.append_hybrid_shape(Point_Line_Xmin_Zmin_offset_Line_Ymax_Zmin_offset)
-    hybridBody2.append_hybrid_shape(Point_Line_Xmin_Zmin_offset_Line_Ymin_Zmin_offset)
+    Point_H1V1.name="Point_H1V1"
+    Point_H0V1.name="Point_H0V1"
+    Point_H1V0.name="Point_H1V0"
+    Point_H0V0.name="Point_H0V0"
+
+    hybridBody2.append_hybrid_shape(Point_H1V1)
+    hybridBody2.append_hybrid_shape(Point_H0V1)
+    hybridBody2.append_hybrid_shape(Point_H1V0)
+    hybridBody2.append_hybrid_shape(Point_H0V0)
 
     # Oo need to refact
 
-    Point_Line_Xmax_Zmax_offset_Line_Ymax_Zmax_offset=hsf.add_new_project(Point_Line_Xmax_Zmin_offset_Line_Ymax_Zmin_offset,Plane_Z_max_offset)
-    Point_Line_Xmax_Zmax_offset_Line_Ymax_Zmax_offset.direction=Hybrid_Shape_D3
+    Point_H1V1_max=hsf.add_new_project(Point_H1V1,Plane_Zmax_offset)
+    Point_H1V1_max.direction=Hybrid_Shape_D3
+    Point_H0V1_max=hsf.add_new_project(Point_H0V1,Plane_Zmax_offset)
+    Point_H0V1_max.direction=Hybrid_Shape_D3
+    Point_H1V0_max=hsf.add_new_project(Point_H1V0,Plane_Zmax_offset)
+    Point_H1V0_max.direction=Hybrid_Shape_D3
+    Point_H0V0_max=hsf.add_new_project(Point_H0V0,Plane_Zmax_offset)
+    Point_H0V0_max.direction=Hybrid_Shape_D3
 
-    Point_Line_Xmax_Zmax_offset_Line_Ymin_Zmax_offset=hsf.add_new_project(Point_Line_Xmax_Zmin_offset_Line_Ymin_Zmin_offset,Plane_Z_max_offset)
-    Point_Line_Xmax_Zmax_offset_Line_Ymin_Zmax_offset.direction=Hybrid_Shape_D3
-
-    Point_Line_Xmin_Zmax_offset_Line_Ymax_Zmax_offset=hsf.add_new_project(Point_Line_Xmin_Zmin_offset_Line_Ymax_Zmin_offset,Plane_Z_max_offset)
-    Point_Line_Xmin_Zmax_offset_Line_Ymax_Zmax_offset.direction=Hybrid_Shape_D3
-
-    Point_Line_Xmin_Zmax_offset_Line_Ymin_Zmax_offset=hsf.add_new_project(Point_Line_Xmin_Zmin_offset_Line_Ymin_Zmin_offset,Plane_Z_max_offset)
-    Point_Line_Xmin_Zmax_offset_Line_Ymin_Zmax_offset.direction=Hybrid_Shape_D3
-
-    hybridBody2.append_hybrid_shape(Point_Line_Xmax_Zmax_offset_Line_Ymax_Zmax_offset)
-    hybridBody2.append_hybrid_shape(Point_Line_Xmax_Zmax_offset_Line_Ymin_Zmax_offset)
-    hybridBody2.append_hybrid_shape(Point_Line_Xmin_Zmax_offset_Line_Ymax_Zmax_offset)
-    hybridBody2.append_hybrid_shape(Point_Line_Xmin_Zmax_offset_Line_Ymin_Zmax_offset)
+    Point_H1V1_max.name="Point_H1V1_max"
+    Point_H0V1_max.name="Point_H0V1_max"
+    Point_H1V0_max.name="Point_H1V0_max"
+    Point_H0V0_max.name="Point_H0V0_max"
 
 
-    # Create 8 lines for bounding box
+    hybridBody2.append_hybrid_shape(Point_H1V1_max)
+    hybridBody2.append_hybrid_shape(Point_H0V1_max)
+    hybridBody2.append_hybrid_shape(Point_H1V0_max)
+    hybridBody2.append_hybrid_shape(Point_H0V0_max)
+
+   # Create 8 lines for bounding box
 
 
 
