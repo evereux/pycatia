@@ -62,25 +62,12 @@ if (document.is_part):
     part_document.update()
 
     hsf=part_document.hybrid_shape_factory
-    """
-    sFilter=("PlanarFace",)
-    sStatus = selection.select_element2(sFilter, "XY", False)
-    print(f"XY={selection.item(1).value.name}")
-    selection.clear
-    sFilter=("PlanarFace",)
-    sStatus = selection.select_element2(sFilter, "XZ", False)
-    print(f"XZ={selection.item(1).value.name}")
-    selection.clear
-    sFilter=("PlanarFace",)
-    sStatus = selection.select_element2(sFilter, "YZ", False)
-    print(f"YZ={selection.item(1).value.name}")
-    """
 
-    #caa.message_box('Select Axis System', 0 ,title='Selection promt')
     sFilter=("AxisSystem",)
     sStatus = selection.select_element2(sFilter, "select a  local axis", True)
     Axis_System=AxisSystem(selection.item(1).value.com_object)
-    
+
+    #TODO Need to structurize it    
     Axis_Ref=AxisSystem(selection.item(1).value.com_object)
     Axis_Ref_name=Axis_System.name
     Axis_name=Axis_System.name
@@ -101,9 +88,6 @@ if (document.is_part):
     Axis_Coord=Axis_System.get_z_axis()
     Hybrid_Shape_D3=hsf.add_new_direction_by_coord(Axis_Coord[0], Axis_Coord[1], Axis_Coord[2])
 
-    #Plane_line_1=hsf.add_new_line_pt_dir(Origin_Point.com_object,Hybrid_Shape_D1,0,0,False)
-    #Plane_line_2=hsf.add_new_line_pt_dir(Origin_Point.com_object,Hybrid_Shape_D2,0,0,False)
-
     selection.clear()
 
 
@@ -115,15 +99,20 @@ if (document.is_part):
     body1=oBodies.add()
     body1.name=f"Bounding_Box.{j}"
 
+    # TODO need structurize Geom sets
+
     hybridBodies1 = part_document.hybrid_bodies
-    hybridBody1 = hybridBodies1.add()
-    hybridBody1.name = "definition_points"
+    hybridBody_BB_element = hybridBodies1.add()
+    hybridBody_BB_element.name = "Bounding Box Elements"
+    part_document.in_work_object=hybridBody_BB_element
+    hybridBody_Extreme_Points=hybridBodies1.add()
+    hybridBody_Extreme_Points.name= "Bounding Box Extreme Points"
+
 
     # promt user select face
-    #caa.message_box('Select a HybridBodies', 0 ,title='Selection promt')
+    # caa.message_box('Select a HybridBodies', 0 ,title='Selection promt')
     
     # TODO
-    # Need filter selection
     # need test Face
 
     sFilter=("Body","HybridShape","Face")
@@ -192,11 +181,9 @@ if (document.is_part):
     HybridShapeExtremum6.extremum_type2=0
     HybridShapeExtremum6.extremum_type3=0
     HybridShapeExtremum6.name="min_Z"
-    
- 
 
     #go to definition append points
-    hybridBody2 = hybridBodies1.item("definition_points")
+    hybridBody2 = hybridBodies1.add("Bounding Box Extreme Points")
     hybridBody2.append_hybrid_shape(HybridShapeExtremum1)
     hybridBody2.append_hybrid_shape(HybridShapeExtremum2)
     hybridBody2.append_hybrid_shape(HybridShapeExtremum3)
