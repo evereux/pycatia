@@ -367,14 +367,14 @@ if (document.is_part):
     Line_H1V0_H1V0_max=hsf.add_new_line_pt_pt(Point_H1V0,Point_H1V0_max)
     Line_H0V0_H0V0_max=hsf.add_new_line_pt_pt(Point_H0V0,Point_H0V0_max)
     
-    Wireframe_Bounding_box=hsf.add_new_join()
+    # Wireframe_Bounding_box=hsf.add_new_join()
 
 
     
-    hybridBody2.append_hybrid_shape(Point_H1V1_max)
-    hybridBody2.append_hybrid_shape(Point_H0V1_max)
-    hybridBody2.append_hybrid_shape(Point_H1V0_max)
-    hybridBody2.append_hybrid_shape(Point_H0V0_max)
+    hybridBody2.append_hybrid_shape(Line_H1V1_H1V1_max)
+    hybridBody2.append_hybrid_shape(Line_H0V1_H0V1_max)
+    hybridBody2.append_hybrid_shape(Line_H1V0_H1V0_max)
+    hybridBody2.append_hybrid_shape(Line_H0V0_H0V0_max)
 
 
 
