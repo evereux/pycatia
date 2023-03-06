@@ -183,7 +183,7 @@ if (document.is_part):
     HybridShapeExtremum6.name="min_Z"
 
     #go to definition append points
-    hybridBody2 = hybridBodies1.add("Bounding Box Extreme Points")
+    hybridBody2 = hybridBodies1.item("Bounding Box Extreme Points")
     hybridBody2.append_hybrid_shape(HybridShapeExtremum1)
     hybridBody2.append_hybrid_shape(HybridShapeExtremum2)
     hybridBody2.append_hybrid_shape(HybridShapeExtremum3)
@@ -361,6 +361,21 @@ if (document.is_part):
     hybridBody2.append_hybrid_shape(Point_H0V0_max)
 
    # Create 8 lines for bounding box
+   # TODO need to create geom set
+    Line_H1V1_H1V1_max=hsf.add_new_line_pt_pt(Point_H1V1,Point_H1V1_max)
+    Line_H0V1_H0V1_max=hsf.add_new_line_pt_pt(Point_H0V1,Point_H0V1_max)
+    Line_H1V0_H1V0_max=hsf.add_new_line_pt_pt(Point_H1V0,Point_H1V0_max)
+    Line_H0V0_H0V0_max=hsf.add_new_line_pt_pt(Point_H0V0,Point_H0V0_max)
+    
+    Wireframe_Bounding_box=hsf.add_new_join()
+
+
+    
+    hybridBody2.append_hybrid_shape(Point_H1V1_max)
+    hybridBody2.append_hybrid_shape(Point_H0V1_max)
+    hybridBody2.append_hybrid_shape(Point_H1V0_max)
+    hybridBody2.append_hybrid_shape(Point_H0V0_max)
+
 
 
 
