@@ -303,7 +303,7 @@ class HybridShapeExtrude(HybridShape):
         :param Reference reference_element:
         """
 
-        self.hybrid_shape_extrude.FirstUptoElement = reference_element
+        self.hybrid_shape_extrude.FirstUptoElement = reference_element.com_object
 
     @property
     def orientation(self) -> bool:
