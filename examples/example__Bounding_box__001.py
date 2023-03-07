@@ -19,7 +19,6 @@ import sys
 
 sys.path.insert(0, os.path.abspath('..\\pycatia'))
 ##########################################################
-
 from pycatia import catia
 from pycatia.mec_mod_interfaces.part import Part
 from pycatia.mec_mod_interfaces.body import Body
@@ -468,7 +467,6 @@ if (document.is_part):
 
     """
     This is error code
-    """
     Wall=hsf.add_new_extrude(Profile_Pad,0,10,Hybrid_Shape_D3)
     Wall.context=0
     Wall.first_limit_type=2
@@ -477,16 +475,24 @@ if (document.is_part):
     Wall.second_upto_element(part_document.create_reference_from_object(Plane_Zmax_offset))
     Wall.name="Wall"
     hybridBody2.append_hybrid_shape(Wall)
-    
     """
+
     Wall=hsf.add_new_sweep_line(Profile_Pad)
-    Wall.draft_direction=Hybrid_Shape_D3
+    Wall.mode=6
+    Wall.solution_no=0
+    Wall.smooth_activity=False
+    Wall.guide_deviation_activity=False
     Wall.draft_computation_mode=0
-    Wall.set_first_length_definition_type(3,ref_XY)
-    Wall.set_relimiters(ref_XY,0,ref_XZ,0)
+    Wall.draft_direction=Hybrid_Shape_D3
+    Wall.set_first_length_definition_type(3,part_document.create_reference_from_object(Plane_Zmax_offset))
+    Wall.setback_value=0.02    
+    Wall.fill_twisted_areas = 1
+    Wall.c0_vertices_mode = True
+    Wall.append_hybrid_shape(Profile_Pad)
     Wall.name="Wall_sweep"
     hybridBody2.append_hybrid_shape(Wall)
-    """
+
+
     Surface_Bounding_box=hsf.add_new_join(Fill_Zmin,Wall)
     Surface_Bounding_box.add_element(Fill_Zmax)
     Surface_Bounding_box.set_manifold(True)
@@ -495,7 +501,7 @@ if (document.is_part):
 
     hybridBody2.append_hybrid_shape(Surface_Bounding_box)
     
-
+    part_document.update()
 
     #pad
     #update
@@ -504,13 +510,8 @@ if (document.is_part):
 
 
 
-    """
-    Hybrid_Shape_D1 = hsf.AddNewDirectionByCoord(AxisCoord(0), AxisCoord(1), AxisCoord(2))
-				axissyst.GetYAxis AxisCoord
-				Set hybridShapeD2 = hybridShapeFactory1.AddNewDirectionByCoord(AxisCoord(0), AxisCoord(1), AxisCoord(2))
-				axissyst.GetZAxis AxisCoord
-				Set hybridShapeD3 = hybridShapeFactory1.AddNewDirectionByCoord(AxisCoord(0), AxisCoord(1), AxisCoord(2))
-    """
+
+
 else:
     print("must be a part")
 
