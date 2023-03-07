@@ -24,12 +24,8 @@ from pycatia import catia
 from pycatia.mec_mod_interfaces.part import Part
 from pycatia.mec_mod_interfaces.body import Body
 from pycatia.mec_mod_interfaces.axis_system import AxisSystem
-from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 
-from pycatia.hybrid_shape_interfaces.point import Point
 from pycatia.hybrid_shape_interfaces.hybrid_shape_point_coord import HybridShapePointCoord
-from pycatia.hybrid_shape_interfaces.hybrid_shape_project import HybridShapeProject
-#from pycatia.in_interfaces import vis_property_set
 
 
 
@@ -78,7 +74,8 @@ if (document.is_part):
     Origin_Point=HybridShapePointCoord(hsf.add_new_point_coord(Origin_coord[0] ,Origin_coord[1] ,Origin_coord[2] ))
     
     Axis_Ref=part_document.create_reference_from_object(Origin_Point.com_object)
-    
+
+    # mb to select axis better    
     Axis_Coord=Axis_System.get_x_axis()
     Hybrid_Shape_D1=hsf.add_new_direction_by_coord(Axis_Coord[0], Axis_Coord[1], Axis_Coord[2])
     
@@ -424,6 +421,15 @@ if (document.is_part):
     Profile_Pad.set_connex(True)
     Profile_Pad.name="Profile_Pad"
     hybridBody2.append_hybrid_shape(Profile_Pad)
+
+    Profile_Pad2=hsf.add_new_join(Line_H0V0_H0V1_Zmax,Line_H0V1_H1V1_Zmax)
+    Profile_Pad2.add_element(Line_H1V1_H1V0_Zmax)
+    Profile_Pad2.add_element(Line_H1V0_H0V0_Zmax)
+    Profile_Pad2.set_manifold(True)
+    Profile_Pad2.set_connex(True)
+    Profile_Pad2.name="Profile_Pad2"
+    hybridBody2.append_hybrid_shape(Profile_Pad2)
+
     
     Wireframe_Bounding_Box=hsf.add_new_join(Line_H0V0_H0V1,Line_H0V1_H1V1)
     Wireframe_Bounding_Box.add_element(Line_H1V1_H1V0)
@@ -459,21 +465,28 @@ if (document.is_part):
     Fill_Zmax.add_bound(Line_H1V1_H1V0_Zmax)
     Fill_Zmax.add_bound(Line_H1V0_H0V0_Zmax)
     hybridBody2.append_hybrid_shape(Fill_Zmax)
-    
-    part_document.update()
 
-    Wall=hsf.add_new_extrude(Profile_Pad,0,5,Hybrid_Shape_D3)
-
+    """
+    This is error code
+    """
+    Wall=hsf.add_new_extrude(Profile_Pad,0,10,Hybrid_Shape_D3)
     Wall.context=0
-    #Wall.first_limit_type=2
+    Wall.first_limit_type=2
     Wall.second_limit_type=2
-
-    #Wall.first_upto_element(Plane_Zmin_offset)
-    Wall.second_upto_element(Plane_Zmax_offset)
+    #Wall.first_upto_element(Plane_Zmax)
+    Wall.second_upto_element(part_document.create_reference_from_object(Plane_Zmax_offset))
     Wall.name="Wall"
-
     hybridBody2.append_hybrid_shape(Wall)
     
+    """
+    Wall=hsf.add_new_sweep_line(Profile_Pad)
+    Wall.draft_direction=Hybrid_Shape_D3
+    Wall.draft_computation_mode=0
+    Wall.set_first_length_definition_type(3,ref_XY)
+    Wall.set_relimiters(ref_XY,0,ref_XZ,0)
+    Wall.name="Wall_sweep"
+    hybridBody2.append_hybrid_shape(Wall)
+    """
     Surface_Bounding_box=hsf.add_new_join(Fill_Zmin,Wall)
     Surface_Bounding_box.add_element(Fill_Zmax)
     Surface_Bounding_box.set_manifold(True)
