@@ -287,18 +287,25 @@ if (document.is_part):
     # bounding box = pad (fill) up to Zmax plane
     #
     #  Point_H0V1         Line_H1
-    #    *  -------------------------   * Point_H1V1
-    #   |                               |
-    #   |                               |
-    #   |                               |
-    #   |                               |
-    #   | Line_V0                       |Line_V1
-    #   |                               |
-    #   |                               |
-    #   |               xdirection      |
-    #    *  -------------------------> *     Point_H1V0
-    #  Point_H0V0             Line_H0
-
+    #            *-------------------------------*  Point_H1V1
+    #            |                               |
+    #            |                               |
+    #            |                               |
+    #            |                               |
+    #            | <----- Line_V0                | <---Line_V1
+    #            |                               |
+    #            |                               |
+    #            |                               |
+    #            *-------------------------------*     
+    #  Point_H0V0         Line_H0                   Point_H1V0
+    #
+    #   Y
+    #   ^
+    #   |
+    #   |
+    #   |
+    #   |
+    #   0-------------> X
 
     Line_V1=hsf.add_new_intersection(Plane_Xmax_offset,Plane_Zmin_offset)
     Line_V0=hsf.add_new_intersection(Plane_Xmin_offset,Plane_Zmin_offset)
@@ -361,16 +368,49 @@ if (document.is_part):
     hybridBody2.append_hybrid_shape(Point_H0V0_max)
 
    # Create 8 lines for bounding box
+   # To Line H0V0->H0V1->H1V1->H1V0->H0V0
    # TODO need to create geom set
+
+    Line_H0V0_H0V1=hsf.add_new_line_pt_pt(Point_H0V0,Point_H0V1)
+    Line_H0V1_H1V1=hsf.add_new_line_pt_pt(Point_H0V1,Point_H1V1)
+    Line_H1V1_H1V0=hsf.add_new_line_pt_pt(Point_H1V1,Point_H1V0)
+    Line_H1V0_H0V0=hsf.add_new_line_pt_pt(Point_H1V0,Point_H0V0)
+
+    Line_H0V0_H0V1.name="Line_H0V0_H0V1"
+    Line_H0V1_H1V1.name="Line_H0V1_H1V1"
+    Line_H1V1_H1V0.name="Line_H1V1_H1V0"
+    Line_H1V0_H0V0.name="Line_H1V0_H0V0"
+
+    Line_H0V0_H0V1_Zmax=hsf.add_new_line_pt_pt(Point_H0V0_max,Point_H0V1_max)
+    Line_H0V1_H1V1_Zmax=hsf.add_new_line_pt_pt(Point_H0V1_max,Point_H1V1_max)
+    Line_H1V1_H1V0_Zmax=hsf.add_new_line_pt_pt(Point_H1V1_max,Point_H1V0_max)
+    Line_H1V0_H0V0_Zmax=hsf.add_new_line_pt_pt(Point_H1V0_max,Point_H0V0_max)
+
+    Line_H0V0_H0V1_Zmax.name="Line_H0V0_H0V1_Zmax"
+    Line_H0V1_H1V1_Zmax.name="Line_H0V1_H1V1_Zmax"
+    Line_H1V1_H1V0_Zmax.name="Line_H1V1_H1V0_Zmax"
+    Line_H1V0_H0V0_Zmax.name="Line_H1V0_H0V0_Zmax"
+    
     Line_H1V1_H1V1_max=hsf.add_new_line_pt_pt(Point_H1V1,Point_H1V1_max)
     Line_H0V1_H0V1_max=hsf.add_new_line_pt_pt(Point_H0V1,Point_H0V1_max)
     Line_H1V0_H1V0_max=hsf.add_new_line_pt_pt(Point_H1V0,Point_H1V0_max)
     Line_H0V0_H0V0_max=hsf.add_new_line_pt_pt(Point_H0V0,Point_H0V0_max)
-    
-    Wireframe_Bounding_box=hsf.add_new_join()
 
+    Line_H1V1_H1V1_max.name="Line_H1V1_H1V1_max"
+    Line_H0V1_H0V1_max.name="Line_H0V1_H0V1_max"
+    Line_H1V0_H1V0_max.name="Line_H1V0_H1V0_max"
+    Line_H0V0_H0V0_max.name="Line_H0V0_H0V0_max"
 
-    
+    hybridBody2.append_hybrid_shape(Line_H0V0_H0V1)
+    hybridBody2.append_hybrid_shape(Line_H0V1_H1V1)
+    hybridBody2.append_hybrid_shape(Line_H1V1_H1V0)
+    hybridBody2.append_hybrid_shape(Line_H1V0_H0V0)
+
+    hybridBody2.append_hybrid_shape(Line_H0V0_H0V1_Zmax)
+    hybridBody2.append_hybrid_shape(Line_H0V1_H1V1_Zmax)
+    hybridBody2.append_hybrid_shape(Line_H1V1_H1V0_Zmax)
+    hybridBody2.append_hybrid_shape(Line_H1V0_H0V0_Zmax)
+
     hybridBody2.append_hybrid_shape(Line_H1V1_H1V1_max)
     hybridBody2.append_hybrid_shape(Line_H0V1_H0V1_max)
     hybridBody2.append_hybrid_shape(Line_H1V0_H1V0_max)
