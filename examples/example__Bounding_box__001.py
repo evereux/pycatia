@@ -415,6 +415,15 @@ if (document.is_part):
     hybridBody2.append_hybrid_shape(Line_H0V1_H0V1_max)
     hybridBody2.append_hybrid_shape(Line_H1V0_H1V0_max)
     hybridBody2.append_hybrid_shape(Line_H0V0_H0V0_max)
+
+    # Profile for pad
+    Profile_Pad=hsf.add_new_join(Line_H0V0_H0V1,Line_H0V1_H1V1)
+    Profile_Pad.add_element(Line_H1V1_H1V0)
+    Profile_Pad.add_element(Line_H1V0_H0V0)
+    Profile_Pad.set_manifold(True)
+    Profile_Pad.set_connex(True)
+    Profile_Pad.name="Profile_Pad"
+    hybridBody2.append_hybrid_shape(Profile_Pad)
     
     Wireframe_Bounding_Box=hsf.add_new_join(Line_H0V0_H0V1,Line_H0V1_H1V1)
     Wireframe_Bounding_Box.add_element(Line_H1V1_H1V0)
@@ -432,10 +441,47 @@ if (document.is_part):
 
     #non mainfold
     Wireframe_Bounding_Box.set_manifold(False)
-
+    
     hybridBody2.append_hybrid_shape(Wireframe_Bounding_Box)
 
+    # Surface Bounding box
+    Fill_Zmin=hsf.add_new_fill()
+    Fill_Zmin.add_bound(Line_H0V0_H0V1)
+    Fill_Zmin.add_bound(Line_H0V1_H1V1)
+    Fill_Zmin.add_bound(Line_H1V1_H1V0)
+    Fill_Zmin.add_bound(Line_H1V0_H0V0)
 
+    hybridBody2.append_hybrid_shape(Fill_Zmin)
+
+    Fill_Zmax=hsf.add_new_fill()
+    Fill_Zmax.add_bound(Line_H0V0_H0V1_Zmax)
+    Fill_Zmax.add_bound(Line_H0V1_H1V1_Zmax)
+    Fill_Zmax.add_bound(Line_H1V1_H1V0_Zmax)
+    Fill_Zmax.add_bound(Line_H1V0_H0V0_Zmax)
+    hybridBody2.append_hybrid_shape(Fill_Zmax)
+    
+    part_document.update()
+
+    Wall=hsf.add_new_extrude(Profile_Pad,0,5,Hybrid_Shape_D3)
+
+    Wall.context=0
+    #Wall.first_limit_type=2
+    Wall.second_limit_type=2
+
+    #Wall.first_upto_element(Plane_Zmin_offset)
+    Wall.second_upto_element(Plane_Zmax_offset)
+    Wall.name="Wall"
+
+    hybridBody2.append_hybrid_shape(Wall)
+    
+    Surface_Bounding_box=hsf.add_new_join(Fill_Zmin,Wall)
+    Surface_Bounding_box.add_element(Fill_Zmax)
+    Surface_Bounding_box.set_manifold(True)
+    Surface_Bounding_box.set_connex(True)
+    Surface_Bounding_box.name="Surface_Bounding_box"
+
+    hybridBody2.append_hybrid_shape(Surface_Bounding_box)
+    
 
 
     #pad
