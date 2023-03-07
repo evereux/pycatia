@@ -415,6 +415,25 @@ if (document.is_part):
     hybridBody2.append_hybrid_shape(Line_H0V1_H0V1_max)
     hybridBody2.append_hybrid_shape(Line_H1V0_H1V0_max)
     hybridBody2.append_hybrid_shape(Line_H0V0_H0V0_max)
+    
+    Wireframe_Bounding_Box=hsf.add_new_join(Line_H0V0_H0V1,Line_H0V1_H1V1)
+    Wireframe_Bounding_Box.add_element(Line_H1V1_H1V0)
+    Wireframe_Bounding_Box.add_element(Line_H1V0_H0V0)
+    Wireframe_Bounding_Box.add_element(Line_H0V0_H0V1_Zmax)
+    Wireframe_Bounding_Box.add_element(Line_H0V1_H1V1_Zmax)
+    Wireframe_Bounding_Box.add_element(Line_H1V1_H1V0_Zmax)
+    Wireframe_Bounding_Box.add_element(Line_H1V0_H0V0_Zmax)
+    Wireframe_Bounding_Box.add_element(Line_H1V1_H1V1_max)
+    Wireframe_Bounding_Box.add_element(Line_H0V1_H0V1_max)
+    Wireframe_Bounding_Box.add_element(Line_H1V0_H1V0_max)
+    Wireframe_Bounding_Box.add_element(Line_H0V0_H0V0_max)
+
+    Wireframe_Bounding_Box.name="Wireframe_Bounding_Box"
+
+    #non mainfold
+    Wireframe_Bounding_Box.set_manifold(False)
+
+    hybridBody2.append_hybrid_shape(Wireframe_Bounding_Box)
 
 
 
