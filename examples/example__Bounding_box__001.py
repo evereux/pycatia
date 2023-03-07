@@ -227,7 +227,7 @@ if (document.is_part):
     # mb try affinity but this works well)
 
 
-
+    # Edge:(Face:(Brp:(AxisSystem.1;3);None:();Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14
     selection_XY_plane=f"RSur:(Face:(Brp:({Axis_System.name};1);None:();Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
     selection_XZ_plane=f"RSur:(Face:(Brp:({Axis_System.name};3);None:();Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
     selection_YZ_plane=f"RSur:(Face:(Brp:({Axis_System.name};2);None:();Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
@@ -470,14 +470,14 @@ if (document.is_part):
 
     """
     This is error code
-    Wall=hsf.add_new_extrude(Profile_Pad,0,10,Hybrid_Shape_D3)
-    Wall.context=0
-    Wall.first_limit_type=2
-    Wall.second_limit_type=2
-    #Wall.first_upto_element(Plane_Zmax)
-    Wall.second_upto_element(part_document.create_reference_from_object(Plane_Zmax_offset))
-    Wall.name="Wall"
-    hybridBody2.append_hybrid_shape(Wall)
+
+    Wall_E=hsf.add_new_extrude(part_document.create_reference_from_object(Profile_Pad),20,0,Hybrid_Shape_D3)
+    Wall_E.first_limit_type=2
+    Wall_E.first_upto_element(part_document.create_reference_from_object(Plane_Zmin_offset))
+    Wall_E.second_limit_type=2
+    Wall_E.second_upto_element(part_document.create_reference_from_object(Plane_Zmax_offset))
+    Wall_E.name="Wall"
+    hybridBody_main.append_hybrid_shape(Wall_E)
     """
 
     Wall=hsf.add_new_sweep_line(Profile_Pad)
@@ -505,7 +505,17 @@ if (document.is_part):
     Surface_Bounding_box.name="Surface_Bounding_box"
 
     hybridBody_main.append_hybrid_shape(Surface_Bounding_box)
-    
+
+
+    #solid
+    sf=part_document.shape_factory
+    pad=sf.add_new_pad(Profile_Pad,10)
+    pad.first_limit=Plane_Zmax_offset
+
+
+
+
+
     part_document.update()
 
     #pad
