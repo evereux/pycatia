@@ -29,6 +29,33 @@ from pycatia.mec_mod_interfaces.axis_system import AxisSystem
 
 from pycatia.hybrid_shape_interfaces.hybrid_shape_point_coord import HybridShapePointCoord
 
+def Axis_references(input_part:Part,input_axis:AxisSystem)->tuple:
+    """
+        return tupleof references for planes ans axis
+        (aX,aY,aZ,pXY,pXZ,pYZ)
+            aX:     X-axis
+            aY:     Y-axis
+            aZ:     Z-axis
+            pXY:    XY-plane
+            pXZ:    XZ-plane
+            pYZ:    YZ-Plane
+    """
+    s_X_axis=f"REdge:(Edge:(Face:(Brp:({input_axis};1);None:();Cf11:());Face:(Brp:({input_axis};3);None:();Cf11:());None:(Limits1:();Limits2:());Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
+    s_Y_axis=f"REdge:(Edge:(Face:(Brp:({input_axis};2);None:();Cf11:());Face:(Brp:({input_axis};1);None:();Cf11:());None:(Limits1:();Limits2:());Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
+    s_Z_axis=f"REdge:(Edge:(Face:(Brp:({input_axis};3);None:();Cf11:());Face:(Brp:({input_axis};2);None:();Cf11:());None:(Limits1:();Limits2:());Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
+
+    s_XY_plane=f"RSur:(Face:(Brp:({input_axis.name};1);None:();Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
+    s_XZ_plane=f"RSur:(Face:(Brp:({input_axis.name};3);None:();Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
+    s_YZ_plane=f"RSur:(Face:(Brp:({input_axis.name};2);None:();Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
+
+    res0=input_part.create_reference_from_b_rep_name(s_X_axis,Axis_System)
+    res1=input_part.create_reference_from_b_rep_name(s_Y_axis,Axis_System)
+    res2=input_part.create_reference_from_b_rep_name(s_Z_axis,Axis_System)    
+
+    res3=input_part.create_reference_from_b_rep_name(s_XY_plane,Axis_System)
+    res4=input_part.create_reference_from_b_rep_name(s_XZ_plane,Axis_System)
+    res5=input_part.create_reference_from_b_rep_name(s_YZ_plane,Axis_System)    
+    return (res0,res1,res2,res3,res4,res5)
 
 
 
@@ -37,7 +64,6 @@ caa = catia()
 # import headers
 caa = catia()
 documents = caa.documents
-# active document 
 document = caa.active_document
 
 #Input offset to bounding box
@@ -65,6 +91,9 @@ if (document.is_part):
     sStatus = selection.select_element2(sFilter, "select a  local axis", True)
     Axis_System=AxisSystem(selection.item(1).value.com_object)
 
+
+
+
     #TODO Need to structurize it    
     Axis_Ref=AxisSystem(selection.item(1).value.com_object)
     Axis_Ref_name=Axis_System.name
@@ -72,6 +101,13 @@ if (document.is_part):
     Axis_System.is_current=True
     Axis_System.name ="Create by [PTM].plm-forum.ru"
     Axis_name=Axis_System.name
+
+    print("===========================")
+    print("axis references")
+    print(Axis_references(part_document,Axis_System))
+
+
+
     Origin_coord=Axis_System.get_origin()
     Origin_Point=HybridShapePointCoord(hsf.add_new_point_coord(Origin_coord[0] ,Origin_coord[1] ,Origin_coord[2] ))
     
