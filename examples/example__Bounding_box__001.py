@@ -11,6 +11,11 @@
     .. note:
         Need add cylindrical bounding box
 """
+from pycatia.hybrid_shape_interfaces.hybrid_shape_point_coord import HybridShapePointCoord
+from pycatia.mec_mod_interfaces.axis_system import AxisSystem
+from pycatia.mec_mod_interfaces.body import Body
+from pycatia.mec_mod_interfaces.part import Part
+from pycatia import catia
 __author__ = "[ptm] by plm-forum.ru"
 __status__ = "alpha"
 
@@ -22,14 +27,9 @@ import sys
 
 sys.path.insert(0, os.path.abspath('..\\pycatia'))
 ##########################################################
-from pycatia import catia
-from pycatia.mec_mod_interfaces.part import Part
-from pycatia.mec_mod_interfaces.body import Body
-from pycatia.mec_mod_interfaces.axis_system import AxisSystem
 
-from pycatia.hybrid_shape_interfaces.hybrid_shape_point_coord import HybridShapePointCoord
 
-def Axis_references(input_part:Part,input_axis:AxisSystem)->tuple:
+def Axis_references(input_part: Part, input_axis: AxisSystem) -> tuple:
     """
         return tupleof references for planes ans axis
         (aX,aY,aZ,pXY,pXZ,pYZ)
@@ -40,22 +40,23 @@ def Axis_references(input_part:Part,input_axis:AxisSystem)->tuple:
             pXZ:    XZ-plane
             pYZ:    YZ-Plane
     """
-    s_X_axis=f"REdge:(Edge:(Face:(Brp:({input_axis.name};1);None:();Cf11:());Face:(Brp:({input_axis.name};3);None:();Cf11:());None:(Limits1:();Limits2:());Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
-    s_Y_axis=f"REdge:(Edge:(Face:(Brp:({input_axis.name};2);None:();Cf11:());Face:(Brp:({input_axis.name};1);None:();Cf11:());None:(Limits1:();Limits2:());Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
-    s_Z_axis=f"REdge:(Edge:(Face:(Brp:({input_axis.name};3);None:();Cf11:());Face:(Brp:({input_axis.name};2);None:();Cf11:());None:(Limits1:();Limits2:());Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
+    s_X_axis = f"REdge:(Edge:(Face:(Brp:({input_axis.name};1);None:();Cf11:());Face:(Brp:({input_axis.name};3);None:();Cf11:());None:(Limits1:();Limits2:());Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
+    s_Y_axis = f"REdge:(Edge:(Face:(Brp:({input_axis.name};2);None:();Cf11:());Face:(Brp:({input_axis.name};1);None:();Cf11:());None:(Limits1:();Limits2:());Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
+    s_Z_axis = f"REdge:(Edge:(Face:(Brp:({input_axis.name};3);None:();Cf11:());Face:(Brp:({input_axis.name};2);None:();Cf11:());None:(Limits1:();Limits2:());Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
 
-    s_XY_plane=f"RSur:(Face:(Brp:({input_axis.name};1);None:();Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
-    s_XZ_plane=f"RSur:(Face:(Brp:({input_axis.name};3);None:();Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
-    s_YZ_plane=f"RSur:(Face:(Brp:({input_axis.name};2);None:();Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
+    s_XY_plane = f"RSur:(Face:(Brp:({input_axis.name};1);None:();Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
+    s_XZ_plane = f"RSur:(Face:(Brp:({input_axis.name};3);None:();Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
+    s_YZ_plane = f"RSur:(Face:(Brp:({input_axis.name};2);None:();Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
 
-    res0=input_part.create_reference_from_b_rep_name(s_X_axis,Axis_System)
-    res1=input_part.create_reference_from_b_rep_name(s_Y_axis,Axis_System)
-    res2=input_part.create_reference_from_b_rep_name(s_Z_axis,Axis_System)    
+    res0 = input_part.create_reference_from_b_rep_name(s_X_axis, Axis_System)
+    res1 = input_part.create_reference_from_b_rep_name(s_Y_axis, Axis_System)
+    res2 = input_part.create_reference_from_b_rep_name(s_Z_axis, Axis_System)
 
-    res3=input_part.create_reference_from_b_rep_name(s_XY_plane,Axis_System)
-    res4=input_part.create_reference_from_b_rep_name(s_XZ_plane,Axis_System)
-    res5=input_part.create_reference_from_b_rep_name(s_YZ_plane,Axis_System)    
-    return (res0,res1,res2,res3,res4,res5)
+    res3 = input_part.create_reference_from_b_rep_name(s_XY_plane, Axis_System)
+    res4 = input_part.create_reference_from_b_rep_name(s_XZ_plane, Axis_System)
+    res5 = input_part.create_reference_from_b_rep_name(s_YZ_plane, Axis_System)
+    return (res0, res1, res2, res3, res4, res5)
+
 
 caa = catia()
 
@@ -64,44 +65,46 @@ caa = catia()
 documents = caa.documents
 document = caa.active_document
 
-#Input offset to bounding box
-Offset_X_min=10
-Offset_X_max=10
+# Input offset to bounding box
+Offset_X_min = 10
+Offset_X_max = 10
 
-Offset_Y_min=10
-Offset_Y_max=10
+Offset_Y_min = 10
+Offset_Y_max = 10
 
-Offset_Z_min=10
-Offset_Z_max=10
+Offset_Z_min = 10
+Offset_Z_max = 10
 
 if (document.is_part):
     # need to autocomplete
-    part_document=Part(document.part.com_object)
+    part_document = Part(document.part.com_object)
 
-    selection=document.selection
+    selection = document.selection
     part_document.update()
 
-    hsf=part_document.hybrid_shape_factory
-
-    sFilter=("AxisSystem",)
+    hsf = part_document.hybrid_shape_factory
+    caa.message_box('Select a Axis System', 0, title='Selection promt')
+    sFilter = ("AxisSystem",)
     sStatus = selection.select_element2(sFilter, "select a  local axis", True)
-    Axis_System=AxisSystem(selection.item(1).value.com_object)
+    if sStatus == "Cancel":
+        caa.message_box(
+            "Wrong selection! Application will closed!", 16, title="Warring")
+        exit()
+    Axis_System = AxisSystem(selection.item(1).value.com_object)
+    selection.clear()
+    # Axis_System.is_current=True
+    # Origin_coord=Axis_System.get_origin()
+    # Origin_Point=HybridShapePointCoord(hsf.add_new_point_coord(Origin_coord[0] ,Origin_coord[1] ,Origin_coord[2] ))
 
-    #Axis_System.is_current=True
+    ref_axis = Axis_references(part_document, Axis_System)
 
-    Origin_coord=Axis_System.get_origin()
-    Origin_Point=HybridShapePointCoord(hsf.add_new_point_coord(Origin_coord[0] ,Origin_coord[1] ,Origin_coord[2] ))
+    Hybrid_Shape_D1 = hsf.add_new_direction(ref_axis[0])
+    Hybrid_Shape_D2 = hsf.add_new_direction(ref_axis[1])
+    Hybrid_Shape_D3 = hsf.add_new_direction(ref_axis[2])
 
-    ref_axis=Axis_references(part_document,Axis_System)
-
-    Hybrid_Shape_D1=hsf.add_new_direction(ref_axis[0])
-    Hybrid_Shape_D2=hsf.add_new_direction(ref_axis[1])
-    Hybrid_Shape_D3=hsf.add_new_direction(ref_axis[2])
-
-    ref_XY=ref_axis[3]
-    ref_XZ=ref_axis[4]
-    ref_YZ=ref_axis[5]
-    
+    ref_XY = ref_axis[3]
+    ref_XZ = ref_axis[4]
+    ref_YZ = ref_axis[5]
 
     # Create structure for geometry
     #   |-Bounding_box.X            :solid Body
@@ -115,106 +118,111 @@ if (document.is_part):
     #   |-Profile_Pad.X             :output profile for solid Body
     #   |-Wireframe_Bounding_Box.X  :output edge
     #   |-Surface_Bounding_box.X    :output surfase
-    
-    oBodies=part_document.bodies
-    j=oBodies.count
-    body1=oBodies.add()
-    body1.name=f"Bounding_Box.{j}"
+
+    oBodies = part_document.bodies
+    j = oBodies.count
+    body1 = oBodies.add()
+    body1.name = f"Bounding_Box.{j}"
 
     hybridBodies1 = part_document.hybrid_bodies
-    hybridBody_main= hybridBodies1.add()
+    hybridBody_main = hybridBodies1.add()
     hybridBody_main.name = f"GSD Bounding Box.{j}"
-    part_document.in_work_object=hybridBody_main.hybrid_bodies
-    hybridBody_Extreme_Points=hybridBody_main.hybrid_bodies.add()
-    hybridBody_Extreme_Points.name= f"Extreme Points.{j}"
-    hybridBody_Planes=hybridBody_main.hybrid_bodies.add()
-    hybridBody_Planes.name=f"Planes.{j}"
-    hybridBody_Base_Lines=hybridBody_main.hybrid_bodies.add()
-    hybridBody_Base_Lines.name=f"Base Lines.{j}"
-    hybridBody_Points=hybridBody_main.hybrid_bodies.add()
-    hybridBody_Points.name=f"Points.{j}"
-    hybridBody_Edge=hybridBody_main.hybrid_bodies.add()
-    hybridBody_Edge.name=f"Edge.{j}"
-    hybridBody_Surfaces=hybridBody_main.hybrid_bodies.add()
-    hybridBody_Surfaces.name=f"Surfaces.{j}"
+    part_document.in_work_object = hybridBody_main.hybrid_bodies
+    hybridBody_Extreme_Points = hybridBody_main.hybrid_bodies.add()
+    hybridBody_Extreme_Points.name = f"Extreme Points.{j}"
+    hybridBody_Planes = hybridBody_main.hybrid_bodies.add()
+    hybridBody_Planes.name = f"Planes.{j}"
+    hybridBody_Base_Lines = hybridBody_main.hybrid_bodies.add()
+    hybridBody_Base_Lines.name = f"Base Lines.{j}"
+    hybridBody_Points = hybridBody_main.hybrid_bodies.add()
+    hybridBody_Points.name = f"Points.{j}"
+    hybridBody_Edge = hybridBody_main.hybrid_bodies.add()
+    hybridBody_Edge.name = f"Edge.{j}"
+    hybridBody_Surfaces = hybridBody_main.hybrid_bodies.add()
+    hybridBody_Surfaces.name = f"Surfaces.{j}"
 
-    selection.item()
-
+    part_document.update()
+    selection.add(hybridBody_Extreme_Points)
+    selection.add(hybridBody_Planes)
+    selection.add(hybridBody_Base_Lines)
+    selection.add(hybridBody_Points)
+    selection.add(hybridBody_Edge)
+    selection.add(hybridBody_Surfaces)
+    selection.vis_properties.set_show(1)
+    selection.clear()
 
     # promt user select face
     # caa.message_box('Select a HybridBodies', 0 ,title='Selection promt')
-    
+
     # TODO
     # need test Face
 
-    sFilter=("Body","HybridShape","Face")
+    sFilter = ("Body", "HybridShape", "Face")
     sStatus = selection.select_element2(sFilter, "select a HybridBody", False)
     if (sStatus == "Cancel"):
-        caa.message_box('HybridBodies not select', 16 ,title='Warning')
+        caa.message_box('HybridBodies not select', 16, title='Warning')
         exit()
-    
-    hb=Body(selection.item(1).value.com_object)
-    reference1=part_document.create_reference_from_object(hb)
-    selection.clear()  
+
+    hb = Body(selection.item(1).value.com_object)
+    reference1 = part_document.create_reference_from_object(hb)
+    selection.clear()
     # create 6 extremum points
-    
-    HybridShapeExtremum1 =hsf.add_new_extremum(reference1, Hybrid_Shape_D1, 1)
-    HybridShapeExtremum1.direction=Hybrid_Shape_D1
-    HybridShapeExtremum1.direction2=Hybrid_Shape_D2
-    HybridShapeExtremum1.direction3=Hybrid_Shape_D3
-    HybridShapeExtremum1.extremum_type=1
-    HybridShapeExtremum1.extremum_type2=1
-    HybridShapeExtremum1.extremum_type3=1
-    HybridShapeExtremum1.name="max_X"
-    
+
+    HybridShapeExtremum1 = hsf.add_new_extremum(reference1, Hybrid_Shape_D1, 1)
+    HybridShapeExtremum1.direction = Hybrid_Shape_D1
+    HybridShapeExtremum1.direction2 = Hybrid_Shape_D2
+    HybridShapeExtremum1.direction3 = Hybrid_Shape_D3
+    HybridShapeExtremum1.extremum_type = 1
+    HybridShapeExtremum1.extremum_type2 = 1
+    HybridShapeExtremum1.extremum_type3 = 1
+    HybridShapeExtremum1.name = "max_X"
 
     HybridShapeExtremum2 = hsf.add_new_extremum(reference1, Hybrid_Shape_D1, 0)
-    HybridShapeExtremum2.direction=Hybrid_Shape_D1
-    HybridShapeExtremum2.direction2=Hybrid_Shape_D2
-    HybridShapeExtremum2.direction3=Hybrid_Shape_D3
-    HybridShapeExtremum2.extremum_type=0
-    HybridShapeExtremum2.extremum_type2=0
-    HybridShapeExtremum2.extremum_type3=0
-    HybridShapeExtremum2.name="min_X"
-
+    HybridShapeExtremum2.direction = Hybrid_Shape_D1
+    HybridShapeExtremum2.direction2 = Hybrid_Shape_D2
+    HybridShapeExtremum2.direction3 = Hybrid_Shape_D3
+    HybridShapeExtremum2.extremum_type = 0
+    HybridShapeExtremum2.extremum_type2 = 0
+    HybridShapeExtremum2.extremum_type3 = 0
+    HybridShapeExtremum2.name = "min_X"
 
     HybridShapeExtremum3 = hsf.add_new_extremum(reference1, Hybrid_Shape_D2, 1)
-    HybridShapeExtremum3.direction=Hybrid_Shape_D2
-    HybridShapeExtremum3.direction2=Hybrid_Shape_D1
-    HybridShapeExtremum3.direction3=Hybrid_Shape_D3
-    HybridShapeExtremum3.extremum_type=1
-    HybridShapeExtremum3.extremum_type2=1
-    HybridShapeExtremum3.extremum_type3=1
-    HybridShapeExtremum3.name="max_Y"
-   
+    HybridShapeExtremum3.direction = Hybrid_Shape_D2
+    HybridShapeExtremum3.direction2 = Hybrid_Shape_D1
+    HybridShapeExtremum3.direction3 = Hybrid_Shape_D3
+    HybridShapeExtremum3.extremum_type = 1
+    HybridShapeExtremum3.extremum_type2 = 1
+    HybridShapeExtremum3.extremum_type3 = 1
+    HybridShapeExtremum3.name = "max_Y"
+
     HybridShapeExtremum4 = hsf.add_new_extremum(reference1, Hybrid_Shape_D2, 0)
-    HybridShapeExtremum4.direction=Hybrid_Shape_D2
-    HybridShapeExtremum4.direction2=Hybrid_Shape_D1
-    HybridShapeExtremum4.direction3=Hybrid_Shape_D3
-    HybridShapeExtremum4.extremum_type=0
-    HybridShapeExtremum4.extremum_type2=0
-    HybridShapeExtremum4.extremum_type3=0
-    HybridShapeExtremum4.name="min_Y"
+    HybridShapeExtremum4.direction = Hybrid_Shape_D2
+    HybridShapeExtremum4.direction2 = Hybrid_Shape_D1
+    HybridShapeExtremum4.direction3 = Hybrid_Shape_D3
+    HybridShapeExtremum4.extremum_type = 0
+    HybridShapeExtremum4.extremum_type2 = 0
+    HybridShapeExtremum4.extremum_type3 = 0
+    HybridShapeExtremum4.name = "min_Y"
 
     HybridShapeExtremum5 = hsf.add_new_extremum(reference1, Hybrid_Shape_D3, 1)
-    HybridShapeExtremum5.direction=Hybrid_Shape_D3
-    HybridShapeExtremum5.direction2=Hybrid_Shape_D1
-    HybridShapeExtremum5.direction3=Hybrid_Shape_D2
-    HybridShapeExtremum5.extremum_type=1
-    HybridShapeExtremum5.extremum_type2=1
-    HybridShapeExtremum5.extremum_type3=1
-    HybridShapeExtremum5.name="max_Z"
+    HybridShapeExtremum5.direction = Hybrid_Shape_D3
+    HybridShapeExtremum5.direction2 = Hybrid_Shape_D1
+    HybridShapeExtremum5.direction3 = Hybrid_Shape_D2
+    HybridShapeExtremum5.extremum_type = 1
+    HybridShapeExtremum5.extremum_type2 = 1
+    HybridShapeExtremum5.extremum_type3 = 1
+    HybridShapeExtremum5.name = "max_Z"
 
     HybridShapeExtremum6 = hsf.add_new_extremum(reference1, Hybrid_Shape_D3, 0)
-    HybridShapeExtremum6.direction=Hybrid_Shape_D3
-    HybridShapeExtremum6.direction2=Hybrid_Shape_D1
-    HybridShapeExtremum6.direction3=Hybrid_Shape_D2
-    HybridShapeExtremum6.extremum_type=0
-    HybridShapeExtremum6.extremum_type2=0
-    HybridShapeExtremum6.extremum_type3=0
-    HybridShapeExtremum6.name="min_Z"
+    HybridShapeExtremum6.direction = Hybrid_Shape_D3
+    HybridShapeExtremum6.direction2 = Hybrid_Shape_D1
+    HybridShapeExtremum6.direction3 = Hybrid_Shape_D2
+    HybridShapeExtremum6.extremum_type = 0
+    HybridShapeExtremum6.extremum_type2 = 0
+    HybridShapeExtremum6.extremum_type3 = 0
+    HybridShapeExtremum6.name = "min_Z"
 
-    #go to definition append points
+    # go to definition append points
 
     hybridBody_Extreme_Points.append_hybrid_shape(HybridShapeExtremum1)
     hybridBody_Extreme_Points.append_hybrid_shape(HybridShapeExtremum2)
@@ -222,19 +230,19 @@ if (document.is_part):
     hybridBody_Extreme_Points.append_hybrid_shape(HybridShapeExtremum4)
     hybridBody_Extreme_Points.append_hybrid_shape(HybridShapeExtremum5)
     hybridBody_Extreme_Points.append_hybrid_shape(HybridShapeExtremum6)
-      
+
     # TODO need to send it to end for speedup
-    #add vis property to point
+    # add vis property to point
     # part must bu updated
     part_document.update()
     # u can search or add
-    #selection.search("CatPrtSearch.Point,All")
+    # selection.search("CatPrtSearch.Point,All")
     selection.add(HybridShapeExtremum1)
     selection.add(HybridShapeExtremum3)
     selection.add(HybridShapeExtremum5)
     selection.vis_properties.set_show(0)
     selection.vis_properties.set_symbol_type(5)
-    selection.vis_properties.set_real_color(0,255,0,0)
+    selection.vis_properties.set_real_color(0, 255, 0, 0)
     selection.clear()
 
     selection.add(HybridShapeExtremum2)
@@ -242,26 +250,26 @@ if (document.is_part):
     selection.add(HybridShapeExtremum6)
     selection.vis_properties.set_show(0)
     selection.vis_properties.set_symbol_type(5)
-    selection.vis_properties.set_real_color(255,0,0,0)
+    selection.vis_properties.set_real_color(255, 0, 0, 0)
     selection.clear()
 
     # create 12 planes
     # 6 max planes
 
-    Plane_Xmax=hsf.add_new_plane_offset_pt(ref_YZ,HybridShapeExtremum1)
-    Plane_Xmax.name="Plane_X_max"
-    Plane_Xmin=hsf.add_new_plane_offset_pt(ref_YZ,HybridShapeExtremum2)
-    Plane_Xmin.name="Plane_X_min"
+    Plane_Xmax = hsf.add_new_plane_offset_pt(ref_YZ, HybridShapeExtremum1)
+    Plane_Xmax.name = "Plane_X_max"
+    Plane_Xmin = hsf.add_new_plane_offset_pt(ref_YZ, HybridShapeExtremum2)
+    Plane_Xmin.name = "Plane_X_min"
 
-    Plane_Ymax=hsf.add_new_plane_offset_pt(ref_XZ,HybridShapeExtremum3)
-    Plane_Ymax.name="Plane_Y_max"
-    Plane_Ymin=hsf.add_new_plane_offset_pt(ref_XZ,HybridShapeExtremum4)
-    Plane_Ymin.name="Plane_Y_min"
+    Plane_Ymax = hsf.add_new_plane_offset_pt(ref_XZ, HybridShapeExtremum3)
+    Plane_Ymax.name = "Plane_Y_max"
+    Plane_Ymin = hsf.add_new_plane_offset_pt(ref_XZ, HybridShapeExtremum4)
+    Plane_Ymin.name = "Plane_Y_min"
 
-    Plane_Zmax=hsf.add_new_plane_offset_pt(ref_XY,HybridShapeExtremum5)
-    Plane_Zmax.name="Plane_Z_max"
-    Plane_Zmin=hsf.add_new_plane_offset_pt(ref_XY,HybridShapeExtremum6)
-    Plane_Zmin.name="Plane_Z_min"
+    Plane_Zmax = hsf.add_new_plane_offset_pt(ref_XY, HybridShapeExtremum5)
+    Plane_Zmax.name = "Plane_Z_max"
+    Plane_Zmin = hsf.add_new_plane_offset_pt(ref_XY, HybridShapeExtremum6)
+    Plane_Zmin.name = "Plane_Z_min"
 
     hybridBody_Planes.append_hybrid_shape(Plane_Xmax)
     hybridBody_Planes.append_hybrid_shape(Plane_Xmin)
@@ -271,20 +279,26 @@ if (document.is_part):
     hybridBody_Planes.append_hybrid_shape(Plane_Zmin)
 
     # 6 offset planes
-    Plane_Xmax_offset=hsf.add_new_plane_offset(Plane_Xmax,Offset_X_max,False)
-    Plane_Xmax_offset.name="Plane_X_max_offset"
-    Plane_Xmin_offset=hsf.add_new_plane_offset(Plane_Xmin,Offset_X_min,True)
-    Plane_Xmin_offset.name="Plane_X_min_offset"
+    Plane_Xmax_offset = hsf.add_new_plane_offset(
+        Plane_Xmax, Offset_X_max, False)
+    Plane_Xmax_offset.name = "Plane_X_max_offset"
+    Plane_Xmin_offset = hsf.add_new_plane_offset(
+        Plane_Xmin, Offset_X_min, True)
+    Plane_Xmin_offset.name = "Plane_X_min_offset"
 
-    Plane_Ymax_offset=hsf.add_new_plane_offset(Plane_Ymax,Offset_Y_max,False)
-    Plane_Ymax_offset.name="Plane_Y_max_offset"
-    Plane_Ymin_offset=hsf.add_new_plane_offset(Plane_Ymin,Offset_Y_min,True)
-    Plane_Ymin_offset.name="Plane_Y_min_offset"
+    Plane_Ymax_offset = hsf.add_new_plane_offset(
+        Plane_Ymax, Offset_Y_max, False)
+    Plane_Ymax_offset.name = "Plane_Y_max_offset"
+    Plane_Ymin_offset = hsf.add_new_plane_offset(
+        Plane_Ymin, Offset_Y_min, True)
+    Plane_Ymin_offset.name = "Plane_Y_min_offset"
 
-    Plane_Zmax_offset=hsf.add_new_plane_offset(Plane_Zmax,Offset_Z_max,False)
-    Plane_Zmax_offset.name="Plane_Z_max_offset"
-    Plane_Zmin_offset=hsf.add_new_plane_offset(Plane_Zmin,Offset_Z_min,True)
-    Plane_Zmin_offset.name="Plane_Z_min_offset"
+    Plane_Zmax_offset = hsf.add_new_plane_offset(
+        Plane_Zmax, Offset_Z_max, False)
+    Plane_Zmax_offset.name = "Plane_Z_max_offset"
+    Plane_Zmin_offset = hsf.add_new_plane_offset(
+        Plane_Zmin, Offset_Z_min, True)
+    Plane_Zmin_offset.name = "Plane_Z_min_offset"
 
     hybridBody_Planes.append_hybrid_shape(Plane_Xmax_offset)
     hybridBody_Planes.append_hybrid_shape(Plane_Xmin_offset)
@@ -296,10 +310,7 @@ if (document.is_part):
     # TODO
     # Measure rough stock
 
-
-
-
-    #create intersections offset planes
+    # create intersections offset planes
 
     # Zmin->Xmax,Xmin,Ymax,Ymin. its enough for bounding box
     # for example
@@ -317,7 +328,7 @@ if (document.is_part):
     #            |                               |
     #            |                               |
     #            |                               |
-    #            *-------------------------------*     
+    #            *-------------------------------*
     #  Point_H0V0         Line_H0                   Point_H1V0
     #
     #   Y
@@ -328,14 +339,14 @@ if (document.is_part):
     #   |
     #   0-------------> X
 
-    Line_V1=hsf.add_new_intersection(Plane_Xmax_offset,Plane_Zmin_offset)
-    Line_V0=hsf.add_new_intersection(Plane_Xmin_offset,Plane_Zmin_offset)
-    Line_H1=hsf.add_new_intersection(Plane_Ymax_offset,Plane_Zmin_offset)
-    Line_H0=hsf.add_new_intersection(Plane_Ymin_offset,Plane_Zmin_offset)
-    Line_V1.name="Line_V1"
-    Line_V0.name="Line_V0"
-    Line_H1.name="Line_H1"
-    Line_H0.name="Line_H0"
+    Line_V1 = hsf.add_new_intersection(Plane_Xmax_offset, Plane_Zmin_offset)
+    Line_V0 = hsf.add_new_intersection(Plane_Xmin_offset, Plane_Zmin_offset)
+    Line_H1 = hsf.add_new_intersection(Plane_Ymax_offset, Plane_Zmin_offset)
+    Line_H0 = hsf.add_new_intersection(Plane_Ymin_offset, Plane_Zmin_offset)
+    Line_V1.name = "Line_V1"
+    Line_V0.name = "Line_V0"
+    Line_H1.name = "Line_H1"
+    Line_H0.name = "Line_H0"
 
     # but u can use translate and intersect or projection
     # do not intersection directly
@@ -351,15 +362,15 @@ if (document.is_part):
     hybridBody_Base_Lines.append_hybrid_shape(Line_H1)
     hybridBody_Base_Lines.append_hybrid_shape(Line_H0)
 
-    Point_H1V1=hsf.add_new_intersection(Line_V1,Line_H1)
-    Point_H0V1=hsf.add_new_intersection(Line_V1,Line_H0)
-    Point_H1V0=hsf.add_new_intersection(Line_V0,Line_H1)
-    Point_H0V0=hsf.add_new_intersection(Line_V0,Line_H0)
+    Point_H1V1 = hsf.add_new_intersection(Line_V1, Line_H1)
+    Point_H0V1 = hsf.add_new_intersection(Line_V1, Line_H0)
+    Point_H1V0 = hsf.add_new_intersection(Line_V0, Line_H1)
+    Point_H0V0 = hsf.add_new_intersection(Line_V0, Line_H0)
 
-    Point_H1V1.name="Point_H1V1"
-    Point_H0V1.name="Point_H0V1"
-    Point_H1V0.name="Point_H1V0"
-    Point_H0V0.name="Point_H0V0"
+    Point_H1V1.name = "Point_H1V1"
+    Point_H0V1.name = "Point_H0V1"
+    Point_H1V0.name = "Point_H1V0"
+    Point_H0V0.name = "Point_H0V0"
 
     hybridBody_Points.append_hybrid_shape(Point_H1V1)
     hybridBody_Points.append_hybrid_shape(Point_H0V1)
@@ -368,19 +379,19 @@ if (document.is_part):
 
     # Oo need to refact
 
-    Point_H1V1_max=hsf.add_new_project(Point_H1V1,Plane_Zmax_offset)
-    Point_H1V1_max.direction=Hybrid_Shape_D3
-    Point_H0V1_max=hsf.add_new_project(Point_H0V1,Plane_Zmax_offset)
-    Point_H0V1_max.direction=Hybrid_Shape_D3
-    Point_H1V0_max=hsf.add_new_project(Point_H1V0,Plane_Zmax_offset)
-    Point_H1V0_max.direction=Hybrid_Shape_D3
-    Point_H0V0_max=hsf.add_new_project(Point_H0V0,Plane_Zmax_offset)
-    Point_H0V0_max.direction=Hybrid_Shape_D3
+    Point_H1V1_max = hsf.add_new_project(Point_H1V1, Plane_Zmax_offset)
+    Point_H1V1_max.direction = Hybrid_Shape_D3
+    Point_H0V1_max = hsf.add_new_project(Point_H0V1, Plane_Zmax_offset)
+    Point_H0V1_max.direction = Hybrid_Shape_D3
+    Point_H1V0_max = hsf.add_new_project(Point_H1V0, Plane_Zmax_offset)
+    Point_H1V0_max.direction = Hybrid_Shape_D3
+    Point_H0V0_max = hsf.add_new_project(Point_H0V0, Plane_Zmax_offset)
+    Point_H0V0_max.direction = Hybrid_Shape_D3
 
-    Point_H1V1_max.name="Point_H1V1_max"
-    Point_H0V1_max.name="Point_H0V1_max"
-    Point_H1V0_max.name="Point_H1V0_max"
-    Point_H0V0_max.name="Point_H0V0_max"
+    Point_H1V1_max.name = "Point_H1V1_max"
+    Point_H0V1_max.name = "Point_H0V1_max"
+    Point_H1V0_max.name = "Point_H1V0_max"
+    Point_H0V0_max.name = "Point_H0V0_max"
 
     hybridBody_Points.append_hybrid_shape(Point_H1V1_max)
     hybridBody_Points.append_hybrid_shape(Point_H0V1_max)
@@ -391,35 +402,39 @@ if (document.is_part):
    # To Line H0V0->H0V1->H1V1->H1V0->H0V0
    # TODO need to create geom set
 
-    Line_H0V0_H0V1=hsf.add_new_line_pt_pt(Point_H0V0,Point_H0V1)
-    Line_H0V1_H1V1=hsf.add_new_line_pt_pt(Point_H0V1,Point_H1V1)
-    Line_H1V1_H1V0=hsf.add_new_line_pt_pt(Point_H1V1,Point_H1V0)
-    Line_H1V0_H0V0=hsf.add_new_line_pt_pt(Point_H1V0,Point_H0V0)
+    Line_H0V0_H0V1 = hsf.add_new_line_pt_pt(Point_H0V0, Point_H0V1)
+    Line_H0V1_H1V1 = hsf.add_new_line_pt_pt(Point_H0V1, Point_H1V1)
+    Line_H1V1_H1V0 = hsf.add_new_line_pt_pt(Point_H1V1, Point_H1V0)
+    Line_H1V0_H0V0 = hsf.add_new_line_pt_pt(Point_H1V0, Point_H0V0)
 
-    Line_H0V0_H0V1.name="Line_H0V0_H0V1"
-    Line_H0V1_H1V1.name="Line_H0V1_H1V1"
-    Line_H1V1_H1V0.name="Line_H1V1_H1V0"
-    Line_H1V0_H0V0.name="Line_H1V0_H0V0"
+    Line_H0V0_H0V1.name = "Line_H0V0_H0V1"
+    Line_H0V1_H1V1.name = "Line_H0V1_H1V1"
+    Line_H1V1_H1V0.name = "Line_H1V1_H1V0"
+    Line_H1V0_H0V0.name = "Line_H1V0_H0V0"
 
-    Line_H0V0_H0V1_Zmax=hsf.add_new_line_pt_pt(Point_H0V0_max,Point_H0V1_max)
-    Line_H0V1_H1V1_Zmax=hsf.add_new_line_pt_pt(Point_H0V1_max,Point_H1V1_max)
-    Line_H1V1_H1V0_Zmax=hsf.add_new_line_pt_pt(Point_H1V1_max,Point_H1V0_max)
-    Line_H1V0_H0V0_Zmax=hsf.add_new_line_pt_pt(Point_H1V0_max,Point_H0V0_max)
+    Line_H0V0_H0V1_Zmax = hsf.add_new_line_pt_pt(
+        Point_H0V0_max, Point_H0V1_max)
+    Line_H0V1_H1V1_Zmax = hsf.add_new_line_pt_pt(
+        Point_H0V1_max, Point_H1V1_max)
+    Line_H1V1_H1V0_Zmax = hsf.add_new_line_pt_pt(
+        Point_H1V1_max, Point_H1V0_max)
+    Line_H1V0_H0V0_Zmax = hsf.add_new_line_pt_pt(
+        Point_H1V0_max, Point_H0V0_max)
 
-    Line_H0V0_H0V1_Zmax.name="Line_H0V0_H0V1_Zmax"
-    Line_H0V1_H1V1_Zmax.name="Line_H0V1_H1V1_Zmax"
-    Line_H1V1_H1V0_Zmax.name="Line_H1V1_H1V0_Zmax"
-    Line_H1V0_H0V0_Zmax.name="Line_H1V0_H0V0_Zmax"
-    
-    Line_H1V1_H1V1_max=hsf.add_new_line_pt_pt(Point_H1V1,Point_H1V1_max)
-    Line_H0V1_H0V1_max=hsf.add_new_line_pt_pt(Point_H0V1,Point_H0V1_max)
-    Line_H1V0_H1V0_max=hsf.add_new_line_pt_pt(Point_H1V0,Point_H1V0_max)
-    Line_H0V0_H0V0_max=hsf.add_new_line_pt_pt(Point_H0V0,Point_H0V0_max)
+    Line_H0V0_H0V1_Zmax.name = "Line_H0V0_H0V1_Zmax"
+    Line_H0V1_H1V1_Zmax.name = "Line_H0V1_H1V1_Zmax"
+    Line_H1V1_H1V0_Zmax.name = "Line_H1V1_H1V0_Zmax"
+    Line_H1V0_H0V0_Zmax.name = "Line_H1V0_H0V0_Zmax"
 
-    Line_H1V1_H1V1_max.name="Line_H1V1_H1V1_max"
-    Line_H0V1_H0V1_max.name="Line_H0V1_H0V1_max"
-    Line_H1V0_H1V0_max.name="Line_H1V0_H1V0_max"
-    Line_H0V0_H0V0_max.name="Line_H0V0_H0V0_max"
+    Line_H1V1_H1V1_max = hsf.add_new_line_pt_pt(Point_H1V1, Point_H1V1_max)
+    Line_H0V1_H0V1_max = hsf.add_new_line_pt_pt(Point_H0V1, Point_H0V1_max)
+    Line_H1V0_H1V0_max = hsf.add_new_line_pt_pt(Point_H1V0, Point_H1V0_max)
+    Line_H0V0_H0V0_max = hsf.add_new_line_pt_pt(Point_H0V0, Point_H0V0_max)
+
+    Line_H1V1_H1V1_max.name = "Line_H1V1_H1V1_max"
+    Line_H0V1_H0V1_max.name = "Line_H0V1_H0V1_max"
+    Line_H1V0_H1V0_max.name = "Line_H1V0_H1V0_max"
+    Line_H0V0_H0V0_max.name = "Line_H0V0_H0V0_max"
 
     hybridBody_Edge.append_hybrid_shape(Line_H0V0_H0V1)
     hybridBody_Edge.append_hybrid_shape(Line_H0V1_H1V1)
@@ -437,15 +452,15 @@ if (document.is_part):
     hybridBody_Edge.append_hybrid_shape(Line_H0V0_H0V0_max)
 
     # Profile for pad
-    Profile_Pad=hsf.add_new_join(Line_H0V0_H0V1,Line_H0V1_H1V1)
+    Profile_Pad = hsf.add_new_join(Line_H0V0_H0V1, Line_H0V1_H1V1)
     Profile_Pad.add_element(Line_H1V1_H1V0)
     Profile_Pad.add_element(Line_H1V0_H0V0)
     Profile_Pad.set_manifold(True)
     Profile_Pad.set_connex(True)
-    Profile_Pad.name=f"Profile_Pad.{j}"
+    Profile_Pad.name = f"Profile_Pad.{j}"
     hybridBody_main.append_hybrid_shape(Profile_Pad)
-    
-    Wireframe_Bounding_Box=hsf.add_new_join(Line_H0V0_H0V1,Line_H0V1_H1V1)
+
+    Wireframe_Bounding_Box = hsf.add_new_join(Line_H0V0_H0V1, Line_H0V1_H1V1)
     Wireframe_Bounding_Box.add_element(Line_H1V1_H1V0)
     Wireframe_Bounding_Box.add_element(Line_H1V0_H0V0)
     Wireframe_Bounding_Box.add_element(Line_H0V0_H0V1_Zmax)
@@ -457,15 +472,15 @@ if (document.is_part):
     Wireframe_Bounding_Box.add_element(Line_H1V0_H1V0_max)
     Wireframe_Bounding_Box.add_element(Line_H0V0_H0V0_max)
 
-    Wireframe_Bounding_Box.name=f"Wireframe_Bounding_Box.{j}"
+    Wireframe_Bounding_Box.name = f"Wireframe_Bounding_Box.{j}"
 
-    #non mainfold
+    # non mainfold
     Wireframe_Bounding_Box.set_manifold(False)
-    
+
     hybridBody_main.append_hybrid_shape(Wireframe_Bounding_Box)
 
     # Surface Bounding box
-    Fill_Zmin=hsf.add_new_fill()
+    Fill_Zmin = hsf.add_new_fill()
     Fill_Zmin.add_bound(Line_H0V0_H0V1)
     Fill_Zmin.add_bound(Line_H0V1_H1V1)
     Fill_Zmin.add_bound(Line_H1V1_H1V0)
@@ -473,7 +488,7 @@ if (document.is_part):
 
     hybridBody_Surfaces.append_hybrid_shape(Fill_Zmin)
 
-    Fill_Zmax=hsf.add_new_fill()
+    Fill_Zmax = hsf.add_new_fill()
     Fill_Zmax.add_bound(Line_H0V0_H0V1_Zmax)
     Fill_Zmax.add_bound(Line_H0V1_H1V1_Zmax)
     Fill_Zmax.add_bound(Line_H1V1_H1V0_Zmax)
@@ -492,41 +507,45 @@ if (document.is_part):
     hybridBody_main.append_hybrid_shape(Wall_E)
     """
 
-    Wall=hsf.add_new_sweep_line(Profile_Pad)
-    Wall.mode=6
-    Wall.solution_no=0
-    Wall.smooth_activity=False
-    Wall.guide_deviation_activity=False
-    Wall.draft_computation_mode=0
-    Wall.draft_direction=Hybrid_Shape_D3
-    Wall.set_first_length_definition_type(3,part_document.create_reference_from_object(Plane_Zmax_offset))
-    Wall.set_second_length_definition_type(3,part_document.create_reference_from_object(Plane_Zmin_offset))
-    Wall.setback_value=0.02    
+    Wall = hsf.add_new_sweep_line(Profile_Pad)
+    Wall.mode = 6
+    Wall.solution_no = 0
+    Wall.smooth_activity = False
+    Wall.guide_deviation_activity = False
+    Wall.draft_computation_mode = 0
+    Wall.draft_direction = Hybrid_Shape_D3
+    Wall.set_first_length_definition_type(
+        3, part_document.create_reference_from_object(Plane_Zmax_offset))
+    Wall.set_second_length_definition_type(
+        3, part_document.create_reference_from_object(Plane_Zmin_offset))
+    Wall.setback_value = 0.02
     Wall.fill_twisted_areas = 1
     Wall.c0_vertices_mode = True
     Wall.append_hybrid_shape(Profile_Pad)
-    Wall.canonical_detection=2
-    Wall.name="Wall_sweep"
+    Wall.canonical_detection = 2
+    Wall.name = "Wall_sweep"
     hybridBody_Surfaces.append_hybrid_shape(Wall)
 
-
-    Surface_Bounding_box=hsf.add_new_join(Fill_Zmin,Wall)
+    Surface_Bounding_box = hsf.add_new_join(Fill_Zmin, Wall)
     Surface_Bounding_box.add_element(Fill_Zmax)
     Surface_Bounding_box.set_manifold(True)
     Surface_Bounding_box.set_connex(True)
-    Surface_Bounding_box.name="Surface_Bounding_box"
+    Surface_Bounding_box.name = f"Surface_Bounding_box.{j}"
 
     hybridBody_main.append_hybrid_shape(Surface_Bounding_box)
 
-    #solid
-    sf=part_document.shape_factory
-    pad=sf.add_new_pad(Profile_Pad,10)
-    pad.first_limit=Plane_Zmax_offset
-
+    # solid
+    sf = part_document.shape_factory
+    refEmpty = part_document.create_reference_from_name(f"Pad.{j}")
+    pad = sf.add_new_pad_from_ref(refEmpty, 10)
+    pad.name = "test"
+    pad.first_limit = Plane_Zmax_offset
+    pad.set_profile_element(
+        part_document.create_reference_from_object(Profile_Pad))
     part_document.update()
 
-    #pad
-    #update
+    # pad
+    # update
 
 else:
     print("must be a part")
