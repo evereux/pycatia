@@ -1,4 +1,3 @@
-
 """
     Example - Measure interia in Part:
     Catia must be running and Part documetn is open
@@ -17,10 +16,13 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
+from pycatia.mec_mod_interfaces.part import Part
+__author__ = "[ptm] by plm-forum.ru"
+__status__ = "alpha"
 
 # initialise the catia automation application
 caa = catia()
@@ -28,18 +30,13 @@ documents = caa.documents
 
 # get the active document
 document = caa.active_document
-# >>> print(document.path())
-# >>> C:\Users\evereux\python\projects\pycatia\tests\CF_catia_measurable_part.CATPart
-
-# get the Part() object.
-part = document.part
+part = Part(document.part.com_object)
 part.update()
 
 # get the Bodies() collection
 bodies = part.bodies
 
-# gets first Body()
-body =part.main_body
+body = part.main_body
 # >>> print(body)
 # >>> Body(name="PartBody")
 
@@ -54,10 +51,10 @@ spa_workbench = document.spa_workbench()
 reference = part.create_reference_from_object(part)
 
 measurable = spa_workbench.get_measurable(reference)
-spa_i=spa_workbench.inertias
-interia=spa_i.add(body)
+spa_i = spa_workbench.inertias
+interia = spa_i.add(body)
 
-density=interia.density
+density = interia.density
 print(f"old density={density}")
 # set new density to this interia
 # interia.density=7800
@@ -67,7 +64,7 @@ print(f"old density={density}")
 print(f"Mass={interia.mass}")
 
 
-interia_matrix=interia.get_inertia_matrix()
+interia_matrix = interia.get_inertia_matrix()
 print("Interia matrix")
 print(f"Ixx={interia_matrix[0]}")
 print(f"Ixy={interia_matrix[1]}")
@@ -79,7 +76,7 @@ print(f"Izx={interia_matrix[6]}")
 print(f"Izy={interia_matrix[7]}")
 print(f"Izz={interia_matrix[8]}")
 
-principal_axis=interia.get_principal_axes()
+principal_axis = interia.get_principal_axes()
 print("Principal axis")
 print(f"A1x={principal_axis[0]}")
 print(f"A2x={principal_axis[1]}")
@@ -91,13 +88,13 @@ print(f"A1z={principal_axis[6]}")
 print(f"A2z={principal_axis[7]}")
 print(f"A3z={principal_axis[8]}")
 
-principal_moments=interia.get_principal_moments()
+principal_moments = interia.get_principal_moments()
 print("Principal moments")
 print(f"M1={principal_moments[0]}")
 print(f"M2={principal_moments[1]}")
 print(f"M3={principal_moments[2]}")
 
-GOC=interia.get_cog_position()
+GOC = interia.get_cog_position()
 print("center of gravity")
 print(f"X={GOC[0]}")
 print(f"Y={GOC[1]}")
