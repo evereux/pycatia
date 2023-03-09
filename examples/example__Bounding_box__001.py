@@ -12,7 +12,7 @@
         Need add cylindrical bounding box
 """
 __author__ = "[ptm] by plm-forum.ru"
-__status__ = ""
+__status__ = "alpha"
 
 ##########################################################
 # insert syspath to project folder so examples can be run.
@@ -40,9 +40,9 @@ def Axis_references(input_part:Part,input_axis:AxisSystem)->tuple:
             pXZ:    XZ-plane
             pYZ:    YZ-Plane
     """
-    s_X_axis=f"REdge:(Edge:(Face:(Brp:({input_axis};1);None:();Cf11:());Face:(Brp:({input_axis};3);None:();Cf11:());None:(Limits1:();Limits2:());Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
-    s_Y_axis=f"REdge:(Edge:(Face:(Brp:({input_axis};2);None:();Cf11:());Face:(Brp:({input_axis};1);None:();Cf11:());None:(Limits1:();Limits2:());Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
-    s_Z_axis=f"REdge:(Edge:(Face:(Brp:({input_axis};3);None:();Cf11:());Face:(Brp:({input_axis};2);None:();Cf11:());None:(Limits1:();Limits2:());Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
+    s_X_axis=f"REdge:(Edge:(Face:(Brp:({input_axis.name};1);None:();Cf11:());Face:(Brp:({input_axis.name};3);None:();Cf11:());None:(Limits1:();Limits2:());Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
+    s_Y_axis=f"REdge:(Edge:(Face:(Brp:({input_axis.name};2);None:();Cf11:());Face:(Brp:({input_axis.name};1);None:();Cf11:());None:(Limits1:();Limits2:());Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
+    s_Z_axis=f"REdge:(Edge:(Face:(Brp:({input_axis.name};3);None:();Cf11:());Face:(Brp:({input_axis.name};2);None:();Cf11:());None:(Limits1:();Limits2:());Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
 
     s_XY_plane=f"RSur:(Face:(Brp:({input_axis.name};1);None:();Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
     s_XZ_plane=f"RSur:(Face:(Brp:({input_axis.name};3);None:();Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
@@ -56,8 +56,6 @@ def Axis_references(input_part:Part,input_axis:AxisSystem)->tuple:
     res4=input_part.create_reference_from_b_rep_name(s_XZ_plane,Axis_System)
     res5=input_part.create_reference_from_b_rep_name(s_YZ_plane,Axis_System)    
     return (res0,res1,res2,res3,res4,res5)
-
-
 
 caa = catia()
 
@@ -76,8 +74,6 @@ Offset_Y_max=10
 Offset_Z_min=10
 Offset_Z_max=10
 
-
-
 if (document.is_part):
     # need to autocomplete
     part_document=Part(document.part.com_object)
@@ -91,67 +87,58 @@ if (document.is_part):
     sStatus = selection.select_element2(sFilter, "select a  local axis", True)
     Axis_System=AxisSystem(selection.item(1).value.com_object)
 
-
-
-
-    #TODO Need to structurize it    
-    Axis_Ref=AxisSystem(selection.item(1).value.com_object)
-    Axis_Ref_name=Axis_System.name
-    Axis_name=Axis_System.name
-    Axis_System.is_current=True
-    Axis_System.name ="Create by [PTM].plm-forum.ru"
-    Axis_name=Axis_System.name
-
-    print("===========================")
-    print("axis references")
-    print(Axis_references(part_document,Axis_System))
-
-
+    #Axis_System.is_current=True
 
     Origin_coord=Axis_System.get_origin()
     Origin_Point=HybridShapePointCoord(hsf.add_new_point_coord(Origin_coord[0] ,Origin_coord[1] ,Origin_coord[2] ))
+
+    ref_axis=Axis_references(part_document,Axis_System)
+
+    Hybrid_Shape_D1=hsf.add_new_direction(ref_axis[0])
+    Hybrid_Shape_D2=hsf.add_new_direction(ref_axis[1])
+    Hybrid_Shape_D3=hsf.add_new_direction(ref_axis[2])
+
+    ref_XY=ref_axis[3]
+    ref_XZ=ref_axis[4]
+    ref_YZ=ref_axis[5]
     
-    Axis_Ref=part_document.create_reference_from_object(Origin_Point.com_object)
 
-    # mb to select axis better    
-    Axis_Coord=Axis_System.get_x_axis()
-    Hybrid_Shape_D1=hsf.add_new_direction_by_coord(Axis_Coord[0], Axis_Coord[1], Axis_Coord[2])
+    # Create structure for geometry
+    #   |-Bounding_box.X            :solid Body
+    #   |-GSD Bounding Box.X        :geometrical sets main
+    #   |---|-Extreme Points.X
+    #   |---|-Planes.X
+    #   |---|-Base Lines.X
+    #   |---|-Points.X
+    #   |---|-Edge.X
+    #   |---|-Surfaces.X
+    #   |-Profile_Pad.X             :output profile for solid Body
+    #   |-Wireframe_Bounding_Box.X  :output edge
+    #   |-Surface_Bounding_box.X    :output surfase
     
-    Axis_Coord=Axis_System.get_y_axis()
-    Hybrid_Shape_D2=hsf.add_new_direction_by_coord(Axis_Coord[0], Axis_Coord[1], Axis_Coord[2])
-    
-    Axis_Coord=Axis_System.get_z_axis()
-    Hybrid_Shape_D3=hsf.add_new_direction_by_coord(Axis_Coord[0], Axis_Coord[1], Axis_Coord[2])
-
-    selection.clear()
-
-
-    # TODO
-    # to end file
-
     oBodies=part_document.bodies
     j=oBodies.count
     body1=oBodies.add()
     body1.name=f"Bounding_Box.{j}"
 
-    # TODO need structurize Geom sets
-
     hybridBodies1 = part_document.hybrid_bodies
     hybridBody_main= hybridBodies1.add()
-    hybridBody_main.name = f"GSD Bounding Box{j}"
+    hybridBody_main.name = f"GSD Bounding Box.{j}"
     part_document.in_work_object=hybridBody_main.hybrid_bodies
     hybridBody_Extreme_Points=hybridBody_main.hybrid_bodies.add()
-    hybridBody_Extreme_Points.name= "Extreme Points"
+    hybridBody_Extreme_Points.name= f"Extreme Points.{j}"
     hybridBody_Planes=hybridBody_main.hybrid_bodies.add()
-    hybridBody_Planes.name="Planes"
+    hybridBody_Planes.name=f"Planes.{j}"
     hybridBody_Base_Lines=hybridBody_main.hybrid_bodies.add()
-    hybridBody_Base_Lines.name="Base Lines"
+    hybridBody_Base_Lines.name=f"Base Lines.{j}"
     hybridBody_Points=hybridBody_main.hybrid_bodies.add()
-    hybridBody_Points.name="Points"
+    hybridBody_Points.name=f"Points.{j}"
     hybridBody_Edge=hybridBody_main.hybrid_bodies.add()
-    hybridBody_Edge.name="Edge"
+    hybridBody_Edge.name=f"Edge.{j}"
     hybridBody_Surfaces=hybridBody_main.hybrid_bodies.add()
-    hybridBody_Surfaces.name="Surfaces"
+    hybridBody_Surfaces.name=f"Surfaces.{j}"
+
+    selection.item()
 
 
     # promt user select face
@@ -260,17 +247,6 @@ if (document.is_part):
 
     # create 12 planes
     # 6 max planes
-    # mb try affinity but this works well)
-
-
-    # Edge:(Face:(Brp:(AxisSystem.1;3);None:();Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14
-    selection_XY_plane=f"RSur:(Face:(Brp:({Axis_System.name};1);None:();Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
-    selection_XZ_plane=f"RSur:(Face:(Brp:({Axis_System.name};3);None:();Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
-    selection_YZ_plane=f"RSur:(Face:(Brp:({Axis_System.name};2);None:();Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
-    
-    ref_XY=part_document.create_reference_from_b_rep_name(selection_XY_plane,Axis_System)
-    ref_XZ=part_document.create_reference_from_b_rep_name(selection_XZ_plane,Axis_System)
-    ref_YZ=part_document.create_reference_from_b_rep_name(selection_YZ_plane,Axis_System)
 
     Plane_Xmax=hsf.add_new_plane_offset_pt(ref_YZ,HybridShapeExtremum1)
     Plane_Xmax.name="Plane_X_max"
@@ -466,7 +442,7 @@ if (document.is_part):
     Profile_Pad.add_element(Line_H1V0_H0V0)
     Profile_Pad.set_manifold(True)
     Profile_Pad.set_connex(True)
-    Profile_Pad.name="Profile_Pad"
+    Profile_Pad.name=f"Profile_Pad.{j}"
     hybridBody_main.append_hybrid_shape(Profile_Pad)
     
     Wireframe_Bounding_Box=hsf.add_new_join(Line_H0V0_H0V1,Line_H0V1_H1V1)
@@ -481,7 +457,7 @@ if (document.is_part):
     Wireframe_Bounding_Box.add_element(Line_H1V0_H1V0_max)
     Wireframe_Bounding_Box.add_element(Line_H0V0_H0V0_max)
 
-    Wireframe_Bounding_Box.name="Wireframe_Bounding_Box"
+    Wireframe_Bounding_Box.name=f"Wireframe_Bounding_Box.{j}"
 
     #non mainfold
     Wireframe_Bounding_Box.set_manifold(False)
@@ -542,31 +518,15 @@ if (document.is_part):
 
     hybridBody_main.append_hybrid_shape(Surface_Bounding_box)
 
-
     #solid
     sf=part_document.shape_factory
     pad=sf.add_new_pad(Profile_Pad,10)
     pad.first_limit=Plane_Zmax_offset
-
-
-
-
 
     part_document.update()
 
     #pad
     #update
 
-
-
-
-
-
-
 else:
     print("must be a part")
-
-"""
-# update part.
-part.update()
-"""
