@@ -535,14 +535,8 @@ if (document.is_part):
     hybridBody_main.append_hybrid_shape(Surface_Bounding_box)
 
     # solid
-    sf = part_document.shape_factory
-    refEmpty = part_document.create_reference_from_name(f"Pad.{j}")
-    pad = sf.add_new_pad_from_ref(refEmpty, 10)
-    pad.name = "test"
-    pad.first_limit = Plane_Zmax_offset
-    pad.set_profile_element(
-        part_document.create_reference_from_object(Profile_Pad))
-    part_document.update()
+    part_document.update_object(Profile_Pad)
+    
 
     # pad
     # update
