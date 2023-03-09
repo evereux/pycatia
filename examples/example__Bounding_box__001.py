@@ -536,10 +536,15 @@ if (document.is_part):
 
     # solid
     part_document.update_object(Profile_Pad)
-    
+
+    sf = part_document.shape_factory
+    print(Profile_Pad.__class__)
 
     # pad
     # update
 
 else:
     print("must be a part")
+    caa.message_box("Wrong selection! Application will closed!",
+                    16, title="Warring")
+    exit()
