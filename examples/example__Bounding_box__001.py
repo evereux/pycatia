@@ -15,6 +15,7 @@ from pycatia.hybrid_shape_interfaces.hybrid_shape_point_coord import HybridShape
 from pycatia.mec_mod_interfaces.axis_system import AxisSystem
 from pycatia.mec_mod_interfaces.body import Body
 from pycatia.mec_mod_interfaces.part import Part
+from pycatia.part_interfaces.limit import Limit
 from pycatia import catia
 __author__ = "[ptm] by plm-forum.ru"
 __status__ = "alpha"
@@ -28,6 +29,9 @@ import sys
 sys.path.insert(0, os.path.abspath('..\\pycatia'))
 ##########################################################
 
+"""
+    TODO: add user interface
+"""
 
 def Axis_references(input_part: Part, input_axis: AxisSystem) -> tuple:
     """
@@ -152,7 +156,7 @@ if (document.is_part):
     selection.clear()
 
     # promt user select face
-    # caa.message_box('Select a HybridBodies', 0 ,title='Selection promt')
+    caa.message_box('Select a HybridBodies', 0, title='Selection promt')
 
     # TODO
     # need test Face
@@ -254,7 +258,7 @@ if (document.is_part):
     selection.clear()
 
     # create 12 planes
-    # 6 max planes
+    # 6 extremum planes
 
     Plane_Xmax = hsf.add_new_plane_offset_pt(ref_YZ, HybridShapeExtremum1)
     Plane_Xmax.name = "Plane_X_max"
@@ -278,7 +282,7 @@ if (document.is_part):
     hybridBody_Planes.append_hybrid_shape(Plane_Zmax)
     hybridBody_Planes.append_hybrid_shape(Plane_Zmin)
 
-    # 6 offset planes
+    # and 6 offset planes
     Plane_Xmax_offset = hsf.add_new_plane_offset(
         Plane_Xmax, Offset_X_max, False)
     Plane_Xmax_offset.name = "Plane_X_max_offset"
@@ -514,10 +518,9 @@ if (document.is_part):
     Wall.guide_deviation_activity = False
     Wall.draft_computation_mode = 0
     Wall.draft_direction = Hybrid_Shape_D3
-    Wall.set_first_length_definition_type(
-        3, part_document.create_reference_from_object(Plane_Zmax_offset))
-    Wall.set_second_length_definition_type(
-        3, part_document.create_reference_from_object(Plane_Zmin_offset))
+    Wall.set_first_length_definition_type(3, Plane_Zmax_offset.ref_plane)
+    Wall.set_second_length_definition_type(3, Plane_Zmin_offset.ref_plane)
+
     Wall.setback_value = 0.02
     Wall.fill_twisted_areas = 1
     Wall.c0_vertices_mode = True
@@ -536,10 +539,17 @@ if (document.is_part):
 
     # solid
     part_document.update_object(Profile_Pad)
+    part_document.update_object(Plane_Zmax_offset)
 
     sf = part_document.shape_factory
-    print(Profile_Pad.__class__)
-
+    part_document.in_work_object = body1
+    ref = part_document.create_reference_from_object(Profile_Pad)
+    pad = sf.add_new_pad_from_ref(ref, 50)
+    pad.set_direction(ref_axis[2])
+    pad_1_limit = pad.first_limit
+    pad_1_limit.limit_mode = 3
+    pad_1_limit.limiting_element = Plane_Zmax_offset.ref_plane
+    part_document.update()
     # pad
     # update
 
