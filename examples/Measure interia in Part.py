@@ -3,10 +3,10 @@
     Catia must be running and Part documetn is open
     Part must be consider a some solid geometry in MainBody(default is PartBody)
     example is not measure interia all part,only main body.
-    options for measure main body is not use
-    granularity_mode sets to 1 for all bodies
-    and interia=spa_i.add(body) change to interia=spa_i.add(part)
-    in this case u can granularity_mode sets to 1 for all bodies
+    Options for measure main body is not use:
+    If you Granularity_mode sets to 1 for all bodies
+    and interia=spa_i.add(body) change to interia=spa_i.add(part) then
+    in this case you can granularity_mode sets to 1 for all bodies
     or granularity_mode sets to 0 for main body
 """
 
@@ -21,6 +21,7 @@ sys.path.insert(0, os.path.abspath("..\\pycatia"))
 
 from pycatia import catia
 from pycatia.mec_mod_interfaces.part import Part
+
 __author__ = "[ptm] by plm-forum.ru"
 __status__ = "alpha"
 
@@ -37,19 +38,15 @@ part.update()
 bodies = part.bodies
 
 body = part.main_body
-# >>> print(body)
-# >>> Body(name="PartBody")
 
 # or get the body by name
-# >>> body_by_name = bodies.get_item_by_name('AnotherPartBody')
-# >>> print(body)
-# >>> Body(name="AnotherPartBody")
+# body_by_name = bodies.get_item_by_name('AnotherPartBody')
 
 # initialise the spa workbench
 spa_workbench = document.spa_workbench()
+
 # create a reference to measure.
 reference = part.create_reference_from_object(part)
-
 measurable = spa_workbench.get_measurable(reference)
 spa_i = spa_workbench.inertias
 interia = spa_i.add(body)
@@ -99,7 +96,3 @@ print("center of gravity")
 print(f"X={GOC[0]}")
 print(f"Y={GOC[1]}")
 print(f"Z={GOC[2]}")
-# close current document
-# document.close()
-# catia close
-# caa.quit()
