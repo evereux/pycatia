@@ -13,14 +13,14 @@
 ##########################################################
 # insert syspath to project folder so examples can be run.
 # for development purposes.
+from pycatia.mec_mod_interfaces.part import Part
+from pycatia import catia
 import os
 import sys
 
 sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
-from pycatia import catia
-from pycatia.mec_mod_interfaces.part import Part
 
 __author__ = "[ptm] by plm-forum.ru"
 __status__ = "alpha"
