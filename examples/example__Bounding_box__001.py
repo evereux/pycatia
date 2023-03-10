@@ -15,8 +15,9 @@ from pycatia.hybrid_shape_interfaces.hybrid_shape_point_coord import HybridShape
 from pycatia.mec_mod_interfaces.axis_system import AxisSystem
 from pycatia.mec_mod_interfaces.body import Body
 from pycatia.mec_mod_interfaces.part import Part
-from pycatia.part_interfaces.limit import Limit
+from pycatia.in_interfaces.reference import Reference
 from pycatia import catia
+
 __author__ = "[ptm] by plm-forum.ru"
 __status__ = "alpha"
 
@@ -33,10 +34,18 @@ sys.path.insert(0, os.path.abspath('..\\pycatia'))
     TODO: add user interface
 """
 
-def Axis_references(input_part: Part, input_axis: AxisSystem) -> tuple:
+
+def axis_references(input_part: Part, input_axis: AxisSystem) -> tuple:
     """
-        return tupleof references for planes ans axis
-        (aX,aY,aZ,pXY,pXZ,pYZ)
+        Return tuple of references for planes and axis
+
+    Args:
+        input_part (Part): current Part() document
+        input_axis (AxisSystem): AxisSystem in Part()
+
+    Returns:
+        tuple:  (aX,aY,aZ,pXY,pXZ,pYZ)
+        where:
             aX:     X-axis
             aY:     Y-axis
             aZ:     Z-axis
@@ -61,6 +70,11 @@ def Axis_references(input_part: Part, input_axis: AxisSystem) -> tuple:
     res5 = input_part.create_reference_from_b_rep_name(s_YZ_plane, Axis_System)
     return (res0, res1, res2, res3, res4, res5)
 
+def measure_between_planes(plane_1:Reference,plane_2:Reference)->tuple:
+    
+    
+    print("sample")
+    return 
 
 caa = catia()
 
@@ -70,6 +84,7 @@ documents = caa.documents
 document = caa.active_document
 
 # Input offset to bounding box
+
 Offset_X_min = 10
 Offset_X_max = 10
 
@@ -100,7 +115,7 @@ if (document.is_part):
     # Origin_coord=Axis_System.get_origin()
     # Origin_Point=HybridShapePointCoord(hsf.add_new_point_coord(Origin_coord[0] ,Origin_coord[1] ,Origin_coord[2] ))
 
-    ref_axis = Axis_references(part_document, Axis_System)
+    ref_axis = axis_references(part_document, Axis_System)
 
     Hybrid_Shape_D1 = hsf.add_new_direction(ref_axis[0])
     Hybrid_Shape_D2 = hsf.add_new_direction(ref_axis[1])
