@@ -16,6 +16,7 @@ from pycatia.mec_mod_interfaces.axis_system import AxisSystem
 from pycatia.mec_mod_interfaces.body import Body
 from pycatia.mec_mod_interfaces.part import Part
 from pycatia.in_interfaces.reference import Reference
+from pycatia.space_analyses_interfaces.spa_workbench import SPAWorkbench
 from pycatia import catia
 
 __author__ = "[ptm] by plm-forum.ru"
@@ -70,11 +71,12 @@ def axis_references(input_part: Part, input_axis: AxisSystem) -> tuple:
     res5 = input_part.create_reference_from_b_rep_name(s_YZ_plane, Axis_System)
     return (res0, res1, res2, res3, res4, res5)
 
-def measure_between_planes(plane_1:Reference,plane_2:Reference)->tuple:
+def measure_between_planes(plane_1:Reference,plane_2:Reference,spa:SPAWorkbench)->tuple:
     
-    
-    print("sample")
-    return 
+    mes=spa.get_measurable(plane_1)
+    spa.distances
+    min_distance=mes.get_minimum_distance(plane_2)
+    return min_distance
 
 caa = catia()
 
@@ -296,6 +298,10 @@ if (document.is_part):
     hybridBody_Planes.append_hybrid_shape(Plane_Ymin)
     hybridBody_Planes.append_hybrid_shape(Plane_Zmax)
     hybridBody_Planes.append_hybrid_shape(Plane_Zmin)
+    
+    print(measure_between_planes(Plane_Xmax.ref_plane,
+          Plane_Xmin.ref_plane, document.spa_workbench()))
+           
 
     # and 6 offset planes
     Plane_Xmax_offset = hsf.add_new_plane_offset(
