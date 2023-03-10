@@ -71,11 +71,21 @@ def axis_references(input_part: Part, input_axis: AxisSystem) -> tuple:
     res5 = input_part.create_reference_from_b_rep_name(s_YZ_plane, Axis_System)
     return (res0, res1, res2, res3, res4, res5)
 
-def measure_between_planes(plane_1:Reference,plane_2:Reference,spa:SPAWorkbench)->tuple:
+def measure_between_planes(plane_1:Reference,plane_2:Reference,spa:SPAWorkbench)->float:
+    """
+        Return minimum distance between 2 planes
+        All planes must bu updated!!!
+    Args:
+        plane_1 (Reference): first plane
+        plane_2 (Reference): second plane
+        spa (SPAWorkbench): document SPAWorkbench
+
+    Returns:
+        float: result
+    """
     
-    mes=spa.get_measurable(plane_1)
-    spa.distances
-    min_distance=mes.get_minimum_distance(plane_2)
+    mes_plane1=spa.get_measurable(plane_1)
+    min_distance=mes_plane1.get_minimum_distance(plane_2)
     return min_distance
 
 caa = catia()
@@ -299,9 +309,12 @@ if (document.is_part):
     hybridBody_Planes.append_hybrid_shape(Plane_Zmax)
     hybridBody_Planes.append_hybrid_shape(Plane_Zmin)
     
-    print(measure_between_planes(Plane_Xmax.ref_plane,
-          Plane_Xmin.ref_plane, document.spa_workbench()))
-           
+    part_document.update_object(Plane_Xmax)    
+    part_document.update_object(Plane_Xmin)
+    print(measure_between_planes(part_document.create_reference_from_object(Plane_Xmax),
+          part_document.create_reference_from_object(Plane_Xmin), document.spa_workbench()))
+        
+
 
     # and 6 offset planes
     Plane_Xmax_offset = hsf.add_new_plane_offset(
@@ -519,16 +532,19 @@ if (document.is_part):
     Fill_Zmax.add_bound(Line_H1V1_H1V0_Zmax)
     Fill_Zmax.add_bound(Line_H1V0_H0V0_Zmax)
     hybridBody_Surfaces.append_hybrid_shape(Fill_Zmax)
+    part_document.update()
+           
 
-    """
-    This is error code
 
+    """This is error code
+    
     Wall_E=hsf.add_new_extrude(part_document.create_reference_from_object(Profile_Pad),20,0,Hybrid_Shape_D3)
     Wall_E.first_limit_type=2
-    Wall_E.first_upto_element(part_document.create_reference_from_object(Plane_Zmin_offset))
     Wall_E.second_limit_type=2
+    Wall_E.compute()
+    Wall_E.first_upto_element(part_document.create_reference_from_object(Plane_Zmin_offset))
     Wall_E.second_upto_element(part_document.create_reference_from_object(Plane_Zmax_offset))
-    Wall_E.name="Wall"
+    Wall_E.name="Wall_e"
     hybridBody_main.append_hybrid_shape(Wall_E)
     """
 
@@ -539,8 +555,12 @@ if (document.is_part):
     Wall.guide_deviation_activity = False
     Wall.draft_computation_mode = 0
     Wall.draft_direction = Hybrid_Shape_D3
-    Wall.set_first_length_definition_type(3, Plane_Zmax_offset.ref_plane)
-    Wall.set_second_length_definition_type(3, Plane_Zmin_offset.ref_plane)
+    wall_lim1_ref = part_document.create_reference_from_object(
+        Plane_Zmax_offset)
+    wall_lim2_ref = part_document.create_reference_from_object(
+        Plane_Zmin_offset)
+    Wall.set_first_length_definition_type(3, wall_lim1_ref)
+    Wall.set_second_length_definition_type(3, wall_lim2_ref)
 
     Wall.setback_value = 0.02
     Wall.fill_twisted_areas = 1
@@ -567,9 +587,10 @@ if (document.is_part):
     ref = part_document.create_reference_from_object(Profile_Pad)
     pad = sf.add_new_pad_from_ref(ref, 50)
     pad.set_direction(ref_axis[2])
+    part_document.update()
     pad_1_limit = pad.first_limit
     pad_1_limit.limit_mode = 3
-    pad_1_limit.limiting_element = Plane_Zmax_offset.ref_plane
+    pad_1_limit.limiting_element =part_document.create_reference_from_object(Plane_Zmax_offset).com_object
     part_document.update()
     # pad
     # update
