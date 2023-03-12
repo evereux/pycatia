@@ -115,8 +115,8 @@ Offset_Z_max = 10
 if (document.is_part):
     # need to autocomplete
     part_document = Part(document.part.com_object)
-
     selection = document.selection
+    
     try:
         part_document.update()
     except Exception :
