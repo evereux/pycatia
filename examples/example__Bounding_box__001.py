@@ -120,7 +120,7 @@ if (document.is_part):
     try:
         part_document.update()
     except Exception :
-        print("CATIA not started or document not opened")
+        print("Part document must be without errors!")
         print("Press any key to exit...")
         getch()
         exit()
