@@ -12,6 +12,7 @@
         Need add cylindrical bounding box
 """
 from pycatia.hybrid_shape_interfaces.hybrid_shape_point_coord import HybridShapePointCoord
+from msvcrt import getch
 from pycatia.mec_mod_interfaces.axis_system import AxisSystem
 from pycatia.mec_mod_interfaces.body import Body
 from pycatia.mec_mod_interfaces.part import Part
@@ -47,12 +48,12 @@ def axis_references(input_part: Part, input_axis: AxisSystem) -> tuple:
     Returns:
         tuple:  (aX,aY,aZ,pXY,pXZ,pYZ)
         where:
-            aX:     X-axis
-            aY:     Y-axis
-            aZ:     Z-axis
-            pXY:    XY-plane
-            pXZ:    XZ-plane
-            pYZ:    YZ-Plane
+            aX:     X-axis Reference()
+            aY:     Y-axis Reference()
+            aZ:     Z-axis Reference()
+            pXY:    XY-plane Reference()
+            pXZ:    XZ-plane Reference()
+            pYZ:    YZ-Plane Reference()
     """
     s_X_axis = f"REdge:(Edge:(Face:(Brp:({input_axis.name};1);None:();Cf11:());Face:(Brp:({input_axis.name};3);None:();Cf11:());None:(Limits1:();Limits2:());Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
     s_Y_axis = f"REdge:(Edge:(Face:(Brp:({input_axis.name};2);None:();Cf11:());Face:(Brp:({input_axis.name};1);None:();Cf11:());None:(Limits1:();Limits2:());Cf11:());WithPermanentBody;WithoutBuildError;WithSelectingFeatureSupport;MFBRepVersion_CXR14)"
@@ -88,12 +89,17 @@ def measure_between_planes(plane_1:Reference,plane_2:Reference,spa:SPAWorkbench)
     min_distance=mes_plane1.get_minimum_distance(plane_2)
     return min_distance
 
-caa = catia()
-
 # import headers
-caa = catia()
-documents = caa.documents
-document = caa.active_document
+try:
+    caa = catia()
+    documents = caa.documents
+    document = caa.active_document
+except Exception :
+    print("CATIA not started or document not opened")
+    print("Press any key to exit...")
+    getch()
+    exit()
+
 
 # Input offset to bounding box
 
@@ -111,7 +117,13 @@ if (document.is_part):
     part_document = Part(document.part.com_object)
 
     selection = document.selection
-    part_document.update()
+    try:
+        part_document.update()
+    except Exception :
+        print("CATIA not started or document not opened")
+        print("Press any key to exit...")
+        getch()
+        exit()
 
     hsf = part_document.hybrid_shape_factory
     caa.message_box('Select a Axis System', 0, title='Selection promt')
@@ -562,6 +574,15 @@ if (document.is_part):
     Wall.set_first_length_definition_type(3, wall_lim1_ref)
     Wall.set_second_length_definition_type(3, wall_lim2_ref)
 
+    
+    """
+    for test nothing
+    import pythoncom
+    vba_nothing = pythoncom.Empty
+    ref=part_document.create_reference_from_name("")
+    Wall.set_second_length_definition_type(3,ref)
+    """
+    
     Wall.setback_value = 0.02
     Wall.fill_twisted_areas = 1
     Wall.c0_vertices_mode = True
