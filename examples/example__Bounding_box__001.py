@@ -135,9 +135,6 @@ if (document.is_part):
         exit()
     Axis_System = AxisSystem(selection.item(1).value.com_object)
     selection.clear()
-    # Axis_System.is_current=True
-    # Origin_coord=Axis_System.get_origin()
-    # Origin_Point=HybridShapePointCoord(hsf.add_new_point_coord(Origin_coord[0] ,Origin_coord[1] ,Origin_coord[2] ))
 
     ref_axis = axis_references(part_document, Axis_System)
 
@@ -323,10 +320,6 @@ if (document.is_part):
     
     part_document.update_object(Plane_Xmax)    
     part_document.update_object(Plane_Xmin)
-    print(measure_between_planes(part_document.create_reference_from_object(Plane_Xmax),
-          part_document.create_reference_from_object(Plane_Xmin), document.spa_workbench()))
-        
-
 
     # and 6 offset planes
     Plane_Xmax_offset = hsf.add_new_plane_offset(
@@ -356,9 +349,17 @@ if (document.is_part):
     hybridBody_Planes.append_hybrid_shape(Plane_Ymin_offset)
     hybridBody_Planes.append_hybrid_shape(Plane_Zmax_offset)
     hybridBody_Planes.append_hybrid_shape(Plane_Zmin_offset)
-
-    # TODO
-    # Measure rough stock
+    
+    # get bounding box measure
+    part_document.update()
+    x_length=measure_between_planes(part_document.create_reference_from_object(Plane_Xmax),
+          part_document.create_reference_from_object(Plane_Xmin), document.spa_workbench())
+    y_length=measure_between_planes(part_document.create_reference_from_object(Plane_Ymax),
+          part_document.create_reference_from_object(Plane_Ymin), document.spa_workbench())
+    z_length=measure_between_planes(part_document.create_reference_from_object(Plane_Zmax),
+          part_document.create_reference_from_object(Plane_Zmin), document.spa_workbench())
+    
+    hybridBody_main.name = f"GSD Bounding Box{x_length}x{y_length}[{z_length}].{j}"
 
     # create intersections offset planes
 
@@ -398,7 +399,7 @@ if (document.is_part):
     Line_H1.name = "Line_H1"
     Line_H0.name = "Line_H0"
 
-    # but u can use translate and intersect or projection
+    # but u can use translate
     # do not intersection directly
     # its not working with cylindrycal object
     # Line_Xmax_Zmax_offset=hsf.add_new_translate(Line_Xmax_Zmin_offset,)
@@ -427,8 +428,6 @@ if (document.is_part):
     hybridBody_Points.append_hybrid_shape(Point_H1V0)
     hybridBody_Points.append_hybrid_shape(Point_H0V0)
 
-    # Oo need to refact
-
     Point_H1V1_max = hsf.add_new_project(Point_H1V1, Plane_Zmax_offset)
     Point_H1V1_max.direction = Hybrid_Shape_D3
     Point_H0V1_max = hsf.add_new_project(Point_H0V1, Plane_Zmax_offset)
@@ -450,7 +449,6 @@ if (document.is_part):
 
    # Create 8 lines for bounding box
    # To Line H0V0->H0V1->H1V1->H1V0->H0V0
-   # TODO need to create geom set
 
     Line_H0V0_H0V1 = hsf.add_new_line_pt_pt(Point_H0V0, Point_H0V1)
     Line_H0V1_H1V1 = hsf.add_new_line_pt_pt(Point_H0V1, Point_H1V1)
