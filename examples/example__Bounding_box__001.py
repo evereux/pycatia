@@ -71,7 +71,8 @@ def axis_references(input_part: Part, input_axis: AxisSystem) -> tuple:
     return (res0, res1, res2, res3, res4, res5)
 
 
-def measure_between_planes(plane_1: Reference, plane_2: Reference, spa: SPAWorkbench) -> float:
+def measure_between_planes(
+        plane_1: Reference, plane_2: Reference, spa: SPAWorkbench) -> float:
     """
         Return minimum distance between 2 planes
         All planes must bu updated!!!
@@ -95,7 +96,8 @@ try:
     documents = caa.documents
     document = caa.active_document
 except Exception:
-    print("CATIA not started or document not opened or started several CATIA sessions")
+    print("CATIA not started or document not " +
+          "opened or started several CATIA sessions")
     print("Press any key to exit...")
     getch()
     exit()
@@ -341,14 +343,21 @@ if (document.is_part):
 
     # get bounding box measure
     part_document.update()
-    x_length = measure_between_planes(part_document.create_reference_from_object(Plane_Xmax),
-                                      part_document.create_reference_from_object(Plane_Xmin), document.spa_workbench())
-    y_length = measure_between_planes(part_document.create_reference_from_object(Plane_Ymax),
-                                      part_document.create_reference_from_object(Plane_Ymin), document.spa_workbench())
-    z_length = measure_between_planes(part_document.create_reference_from_object(Plane_Zmax),
-                                      part_document.create_reference_from_object(Plane_Zmin), document.spa_workbench())
+    x_length = measure_between_planes(
+        part_document.create_reference_from_object(Plane_Xmax),
+        part_document.create_reference_from_object(Plane_Xmin),
+        document.spa_workbench())
+    y_length = measure_between_planes(
+        part_document.create_reference_from_object(Plane_Ymax),
+        part_document.create_reference_from_object(Plane_Ymin),
+        document.spa_workbench())
+    z_length = measure_between_planes(
+        part_document.create_reference_from_object(Plane_Zmax),
+        part_document.create_reference_from_object(Plane_Zmin),
+        document.spa_workbench())
 
-    hybridBody_main.name = f"GSD Bounding Box{x_length}x{y_length}[{z_length}].{j}"
+    hybridBody_main.name = (
+        f"GSD Bounding Box{x_length}x{y_length}[{z_length}].{j}")
 
     # create intersections offset planes
 
