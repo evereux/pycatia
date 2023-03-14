@@ -11,7 +11,6 @@
     .. note:
         Need add cylindrical bounding box
 """
-from pycatia.hybrid_shape_interfaces.hybrid_shape_point_coord import HybridShapePointCoord
 from msvcrt import getch
 from pycatia.mec_mod_interfaces.axis_system import AxisSystem
 from pycatia.mec_mod_interfaces.body import Body
@@ -33,9 +32,8 @@ sys.path.insert(0, os.path.abspath('..\\pycatia'))
 ##########################################################
 
 """
-    TODO: add user interface
+    TODO: add user interface with tk
 """
-
 
 def axis_references(input_part: Part, input_axis: AxisSystem) -> tuple:
     """
@@ -218,6 +216,7 @@ if (document.is_part):
     hb = Body(selection.item(1).value.com_object)
     reference1 = part_document.create_reference_from_object(hb)
     selection.clear()
+    
     # create 6 extremum points
 
     HybridShapeExtremum1 = hsf.add_new_extremum(reference1, Hybrid_Shape_D1, 1)
@@ -274,7 +273,7 @@ if (document.is_part):
     HybridShapeExtremum6.extremum_type3 = 0
     HybridShapeExtremum6.name = "min_Z"
 
-    # go to definition append points
+    # append points to Geometrical Set
 
     hybridBody_Extreme_Points.append_hybrid_shape(HybridShapeExtremum1)
     hybridBody_Extreme_Points.append_hybrid_shape(HybridShapeExtremum2)
@@ -642,7 +641,6 @@ if (document.is_part):
     selection.vis_properties.set_real_color(128, 0, 255, 0)
     selection.vis_properties.set_real_opacity(55, 0)
     selection.clear()
-
 
 else:
     print("must be a part")
