@@ -72,7 +72,8 @@ def axis_references(input_part: Part, input_axis: AxisSystem) -> tuple:
     res5 = input_part.create_reference_from_b_rep_name(s_YZ_plane, Axis_System)
     return (res0, res1, res2, res3, res4, res5)
 
-def measure_between_planes(plane_1:Reference,plane_2:Reference,spa:SPAWorkbench)->float:
+
+def measure_between_planes(plane_1: Reference, plane_2: Reference, spa: SPAWorkbench) -> float:
     """
         Return minimum distance between 2 planes
         All planes must bu updated!!!
@@ -84,18 +85,19 @@ def measure_between_planes(plane_1:Reference,plane_2:Reference,spa:SPAWorkbench)
     Returns:
         float: result
     """
-    
-    mes_plane1=spa.get_measurable(plane_1)
-    min_distance=mes_plane1.get_minimum_distance(plane_2)
+
+    mes_plane1 = spa.get_measurable(plane_1)
+    min_distance = mes_plane1.get_minimum_distance(plane_2)
     return min_distance
+
 
 # import headers
 try:
     caa = catia()
     documents = caa.documents
     document = caa.active_document
-except Exception :
-    print("CATIA not started or document not opened")
+except Exception:
+    print("CATIA not started or document not opened or started several CATIA sessions")
     print("Press any key to exit...")
     getch()
     exit()
@@ -112,14 +114,24 @@ Offset_Y_max = 10
 Offset_Z_min = 10
 Offset_Z_max = 10
 
+message_promt = (f"Creating Bounding box with offset:\n" +
+                 f"Xmin={Offset_X_min}\nXmax={Offset_X_max}\n" +
+                 f"Ymin={Offset_Y_min}\nXmax={Offset_Y_max}\n" +
+                 f"Zmin={Offset_Z_min}\nXmax={Offset_Z_max}")
+
+return_value = caa.message_box(message_promt, 4, title="Warring")
+if (return_value == 7):
+    print("Canceled by user")
+    exit()
+
 if (document.is_part):
     # need to autocomplete
     part_document = Part(document.part.com_object)
     selection = document.selection
-    
+
     try:
         part_document.update()
-    except Exception :
+    except Exception:
         print("Part document must be without errors!")
         print("Press any key to exit...")
         getch()
@@ -295,8 +307,8 @@ if (document.is_part):
     hybridBody_Planes.append_hybrid_shape(Plane_Ymin)
     hybridBody_Planes.append_hybrid_shape(Plane_Zmax)
     hybridBody_Planes.append_hybrid_shape(Plane_Zmin)
-    
-    part_document.update_object(Plane_Xmax)    
+
+    part_document.update_object(Plane_Xmax)
     part_document.update_object(Plane_Xmin)
 
     # and 6 offset planes
@@ -327,16 +339,16 @@ if (document.is_part):
     hybridBody_Planes.append_hybrid_shape(Plane_Ymin_offset)
     hybridBody_Planes.append_hybrid_shape(Plane_Zmax_offset)
     hybridBody_Planes.append_hybrid_shape(Plane_Zmin_offset)
-    
+
     # get bounding box measure
     part_document.update()
-    x_length=measure_between_planes(part_document.create_reference_from_object(Plane_Xmax),
-          part_document.create_reference_from_object(Plane_Xmin), document.spa_workbench())
-    y_length=measure_between_planes(part_document.create_reference_from_object(Plane_Ymax),
-          part_document.create_reference_from_object(Plane_Ymin), document.spa_workbench())
-    z_length=measure_between_planes(part_document.create_reference_from_object(Plane_Zmax),
-          part_document.create_reference_from_object(Plane_Zmin), document.spa_workbench())
-    
+    x_length = measure_between_planes(part_document.create_reference_from_object(Plane_Xmax),
+                                      part_document.create_reference_from_object(Plane_Xmin), document.spa_workbench())
+    y_length = measure_between_planes(part_document.create_reference_from_object(Plane_Ymax),
+                                      part_document.create_reference_from_object(Plane_Ymin), document.spa_workbench())
+    z_length = measure_between_planes(part_document.create_reference_from_object(Plane_Zmax),
+                                      part_document.create_reference_from_object(Plane_Zmin), document.spa_workbench())
+
     hybridBody_main.name = f"GSD Bounding Box{x_length}x{y_length}[{z_length}].{j}"
 
     # create intersections offset planes
@@ -419,16 +431,16 @@ if (document.is_part):
     Point_H0V1_max.name = "Point_H0V1_max"
     Point_H1V0_max.name = "Point_H1V0_max"
     Point_H0V0_max.name = "Point_H0V0_max"
-    
+
     # For visual properties
-    Point_tuple=    (Point_H1V1,
-                    Point_H0V1,
-                    Point_H1V0,
-                    Point_H0V0,
-                    Point_H1V1_max,
-                    Point_H0V1_max,
-                    Point_H1V0_max,
-                    Point_H0V0_max)
+    Point_tuple = (Point_H1V1,
+                   Point_H0V1,
+                   Point_H1V0,
+                   Point_H0V0,
+                   Point_H1V1_max,
+                   Point_H0V1_max,
+                   Point_H1V0_max,
+                   Point_H0V0_max)
 
     hybridBody_Points.append_hybrid_shape(Point_H1V1_max)
     hybridBody_Points.append_hybrid_shape(Point_H0V1_max)
@@ -531,8 +543,6 @@ if (document.is_part):
     Fill_Zmax.add_bound(Line_H1V0_H0V0_Zmax)
     hybridBody_Surfaces.append_hybrid_shape(Fill_Zmax)
     part_document.update()
-           
-
 
     """This is error code
     
@@ -560,7 +570,6 @@ if (document.is_part):
     Wall.set_first_length_definition_type(3, wall_lim1_ref)
     Wall.set_second_length_definition_type(3, wall_lim2_ref)
 
-    
     """
     for test nothing
     import pythoncom
@@ -568,7 +577,7 @@ if (document.is_part):
     ref=part_document.create_reference_from_name("")
     Wall.set_second_length_definition_type(3,ref)
     """
-    
+
     Wall.setback_value = 0.02
     Wall.fill_twisted_areas = 1
     Wall.c0_vertices_mode = True
@@ -597,33 +606,42 @@ if (document.is_part):
     part_document.update()
     pad_1_limit = pad.first_limit
     pad_1_limit.limit_mode = 3
-    pad_1_limit.limiting_element =part_document.create_reference_from_object(Plane_Zmax_offset).com_object
+    pad_1_limit.limiting_element = part_document.create_reference_from_object(
+        Plane_Zmax_offset).com_object
     part_document.update()
-    
+
     for pt in Point_tuple:
         selection.add(pt)
     # add vis property to point
     # part must bu updated
     part_document.update()
     selection.vis_properties.set_show(0)
-    selection.vis_properties.set_symbol_type(5)
+    selection.vis_properties.set_symbol_type(12)
     selection.vis_properties.set_real_color(0, 255, 0, 0)
     selection.clear()
-    
+    selection.add(hybridBody_Points)
+    selection.vis_properties.set_show(0)
+    selection.clear()
+
     # add vis property to wireframe bounding box
     selection.add(Wireframe_Bounding_Box)
-    # add code here
-    selection.clear
-    
-    # add vis property to surface bounding box
-    selection.add(Surface_Bounding_box)
-    # add code here
-    selection.clear
+    selection.vis_properties.set_real_width(2, 0)
+    selection.vis_properties.set_real_color(255, 255, 8, 0)
+    selection.vis_properties.set_real_opacity(180, 0)
+    selection.clear()
 
-    # add vis property to pad
-    selection.add(body1)
-    # add code here
-    selection.clear
+    # add vis property to Bounding_box Body
+    selection.add(Surface_Bounding_box)
+    selection.vis_properties.set_real_color(255, 128, 255, 0)
+    selection.vis_properties.set_real_opacity(55, 0)
+    selection.clear()
+
+    # add vis property to surface bounding box
+    part_document.in_work_object = body1
+    selection.add(pad)
+    selection.vis_properties.set_real_color(128, 0, 255, 0)
+    selection.vis_properties.set_real_opacity(55, 0)
+    selection.clear()
 
 
 else:
