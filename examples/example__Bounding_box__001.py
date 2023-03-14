@@ -271,28 +271,6 @@ if (document.is_part):
     hybridBody_Extreme_Points.append_hybrid_shape(HybridShapeExtremum5)
     hybridBody_Extreme_Points.append_hybrid_shape(HybridShapeExtremum6)
 
-    # TODO need to send it to end for speedup
-    # add vis property to point
-    # part must bu updated
-    part_document.update()
-    # u can search or add
-    # selection.search("CatPrtSearch.Point,All")
-    selection.add(HybridShapeExtremum1)
-    selection.add(HybridShapeExtremum3)
-    selection.add(HybridShapeExtremum5)
-    selection.vis_properties.set_show(0)
-    selection.vis_properties.set_symbol_type(5)
-    selection.vis_properties.set_real_color(0, 255, 0, 0)
-    selection.clear()
-
-    selection.add(HybridShapeExtremum2)
-    selection.add(HybridShapeExtremum4)
-    selection.add(HybridShapeExtremum6)
-    selection.vis_properties.set_show(0)
-    selection.vis_properties.set_symbol_type(5)
-    selection.vis_properties.set_real_color(255, 0, 0, 0)
-    selection.clear()
-
     # create 12 planes
     # 6 extremum planes
 
@@ -441,6 +419,16 @@ if (document.is_part):
     Point_H0V1_max.name = "Point_H0V1_max"
     Point_H1V0_max.name = "Point_H1V0_max"
     Point_H0V0_max.name = "Point_H0V0_max"
+    
+    # For visual properties
+    Point_tuple=    (Point_H1V1,
+                    Point_H0V1,
+                    Point_H1V0,
+                    Point_H0V0,
+                    Point_H1V1_max,
+                    Point_H0V1_max,
+                    Point_H1V0_max,
+                    Point_H0V0_max)
 
     hybridBody_Points.append_hybrid_shape(Point_H1V1_max)
     hybridBody_Points.append_hybrid_shape(Point_H0V1_max)
@@ -611,8 +599,32 @@ if (document.is_part):
     pad_1_limit.limit_mode = 3
     pad_1_limit.limiting_element =part_document.create_reference_from_object(Plane_Zmax_offset).com_object
     part_document.update()
-    # pad
-    # update
+    
+    for pt in Point_tuple:
+        selection.add(pt)
+    # add vis property to point
+    # part must bu updated
+    part_document.update()
+    selection.vis_properties.set_show(0)
+    selection.vis_properties.set_symbol_type(5)
+    selection.vis_properties.set_real_color(0, 255, 0, 0)
+    selection.clear()
+    
+    # add vis property to wireframe bounding box
+    selection.add(Wireframe_Bounding_Box)
+    # add code here
+    selection.clear
+    
+    # add vis property to surface bounding box
+    selection.add(Surface_Bounding_box)
+    # add code here
+    selection.clear
+
+    # add vis property to pad
+    selection.add(body1)
+    # add code here
+    selection.clear
+
 
 else:
     print("must be a part")
