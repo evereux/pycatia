@@ -30,6 +30,7 @@ from pathlib import Path
 from pycatia import catia
 from pycatia.product_structure_interfaces.assembly_convertor import AssemblyConvertor
 from pycatia.product_structure_interfaces.product import Product
+from pycatia.product_structure_interfaces.product_document import ProductDocument
 
 # file_type can be "TXT", "HTML" or "XLS".
 file_type = "XLS"
@@ -55,7 +56,7 @@ if excel_file.is_file():
 
 caa = catia()
 document = caa.active_document
-product = document.product
+product = ProductDocument(document.com_object).product
 # not neccessary but will provide autocompletion in IDEs.
 product = Product(product.com_object)
 
