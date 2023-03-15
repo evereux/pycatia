@@ -95,14 +95,20 @@ Button(root, text='Set offset', bg='#FFEFDB', font=('arial', 12, 'normal'),
 
 
 # This is the section of code which creates the a label
-Label(root, text='Xmax', bg='#FFEFDB', font=('arial', 12, 'normal')).place(x=25, y=10)
-Label(root, text='Xmin', bg='#FFEFDB', font=('arial', 12, 'normal')).place(x=25, y=60)
+Label(root, text='Xmax', bg='#FFEFDB', 
+      font=('arial', 12, 'normal')).place(x=25, y=10)
+Label(root, text='Xmin', bg='#FFEFDB', 
+      font=('arial', 12, 'normal')).place(x=25, y=60)
 
-Label(root, text='Ymax', bg='#FFEFDB', font=('arial', 12, 'normal')).place(x=195, y=10)
-Label(root, text='Ymin', bg='#FFEFDB', font=('arial', 12, 'normal')).place(x=195, y=60)
+Label(root, text='Ymax', bg='#FFEFDB', 
+      font=('arial', 12, 'normal')).place(x=195, y=10)
+Label(root, text='Ymin', bg='#FFEFDB', 
+      font=('arial', 12, 'normal')).place(x=195, y=60)
 
-Label(root, text='Zmax', bg='#FFEFDB', font=('arial', 12, 'normal')).place(x=375, y=10)
-Label(root, text='Zmin', bg='#FFEFDB', font=('arial', 12, 'normal')).place(x=375, y=60)
+Label(root, text='Zmax', bg='#FFEFDB', 
+      font=('arial', 12, 'normal')).place(x=375, y=10)
+Label(root, text='Zmin', bg='#FFEFDB', 
+      font=('arial', 12, 'normal')).place(x=375, y=60)
 
 
 root.mainloop()
