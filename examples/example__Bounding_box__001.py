@@ -39,39 +39,20 @@ from tkinter import ttk
 from tkinter import * 
 
 # this is a function to get the user input from the text input box
-def getInputBoxValue():
-	userInput = Xmax.get()
-	return userInput
+def getInputBoxValue()->tuple:
+    """Get uset input value
 
-
-# this is a function to get the user input from the text input box
-def getInputBoxValue():
-	userInput = Xmin.get()
-	return userInput
-
-
-# this is a function to get the user input from the text input box
-def getInputBoxValue():
-	userInput = Ymax.get()
-	return userInput
-
-
-# this is a function to get the user input from the text input box
-def getInputBoxValue():
-	userInput = Ymin.get()
-	return userInput
-
-
-# this is a function to get the user input from the text input box
-def getInputBoxValue():
-	userInput = Zmax.get()
-	return userInput
-
-
-# this is a function to get the user input from the text input box
-def getInputBoxValue():
-	userInput = Zmin.get()
-	return userInput
+    Returns:
+        tuple: return tuple offcet value
+        (Xmax,Xmin,Ymax,Ymin,Zmax,Zmin)
+    """
+    result=(Xmax.get(),
+            Xmin.get(),
+            Ymax.get(),
+            Ymin.get(),
+            Zmax.get(),
+            Zmin.get())
+    return result
 
 
 # this is the function called when the button is clicked
@@ -92,28 +73,18 @@ root.title('Input offset')
 Xmax=Entry(root)
 Xmax.place(x=15, y=40)
 
-
-# This is the section of code which creates a text input box
 Xmin=Entry(root)
 Xmin.place(x=15, y=90)
 
-
-# This is the section of code which creates a text input box
 Ymax=Entry(root)
 Ymax.place(x=195, y=40)
 
-
-# This is the section of code which creates a text input box
 Ymin=Entry(root)
 Ymin.place(x=195, y=90)
 
-
-# This is the section of code which creates a text input box
 Zmax=Entry(root)
 Zmax.place(x=375, y=40)
 
-
-# This is the section of code which creates a text input box
 Zmin=Entry(root)
 Zmin.place(x=375, y=90)
 
