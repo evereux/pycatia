@@ -69,3 +69,13 @@ assembly_convertor.set_current_format(details_top)
 assembly_convertor.set_secondary_format(details_recap)
 
 assembly_convertor.print(file_type, excel_file, product)
+# Important note:
+# The print-method will fail if you try to export the bill-of-material-xls file
+# to a location, where another process will access this file. Such process is
+# for example OneDrive or Dropbox.
+# One solution to avoid this problem is to export the bom to the current users
+# temp folder and then move it to the desired destination using shutil.move(),
+# see https://docs.python.org/3/library/shutil.html#shutil.move
+# To this particular problem:
+# Once the print-method had failed, it will continue to fail until you restart
+# CATIA, even if you've changed the path to a 'save' location.
