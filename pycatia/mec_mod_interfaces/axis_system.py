@@ -164,7 +164,7 @@ class AxisSystem(AnyObject):
         :param Reference value:
         """
 
-        self.axis_system.OriginPoint = value
+        self.axis_system.OriginPoint = value.com_object
 
     @property
     def origin_type(self) -> int:
