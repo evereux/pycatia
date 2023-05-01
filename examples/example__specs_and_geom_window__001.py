@@ -26,6 +26,8 @@ from pathlib import Path
 from pycatia import CATIADocHandler
 from pycatia.enumeration.enumeration_types import cat_capture_format, cat_specs_and_geom_window_layout
 from pycatia.in_interfaces.specs_and_geom_window import SpecsAndGeomWindow
+from pycatia.product_structure_interfaces.product import Product
+
 
 source_folder = Path('tests/cat_files')
 source_files = source_folder.glob('*.CATPart')
@@ -57,7 +59,9 @@ for cat_part in source_files:
     with CATIADocHandler(cat_part) as handler:
         caa = handler.catia
         document = caa.active_document
-        product = document.product
+        product = document.product()
+        # not neccessary but will provide autocompletion in IDEs.
+        product = Product(product.com_object)
         active_window = caa.active_window
         active_viewer = active_window.active_viewer
         cameras = document.cameras

@@ -1,4 +1,4 @@
-#! usr/bin/python3.6
+#! usr/bin/python3.9
 """
     Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
@@ -164,7 +164,7 @@ class AxisSystem(AnyObject):
         :param Reference value:
         """
 
-        self.axis_system.OriginPoint = value
+        self.axis_system.OriginPoint = value.com_object
 
     @property
     def origin_type(self) -> int:
@@ -296,7 +296,7 @@ class AxisSystem(AnyObject):
         :param Reference value:
         """
 
-        self.axis_system.XAxisDirection = value
+        self.axis_system.XAxisDirection = value.com_object
 
     @property
     def x_axis_type(self) -> int:
@@ -382,7 +382,7 @@ class AxisSystem(AnyObject):
         :param Reference value:
         """
 
-        self.axis_system.YAxisDirection = value
+        self.axis_system.YAxisDirection = value.com_object
 
     @property
     def y_axis_type(self) -> int:
@@ -468,7 +468,7 @@ class AxisSystem(AnyObject):
         :param Reference value:
         """
 
-        self.axis_system.ZAxisDirection = value
+        self.axis_system.ZAxisDirection = value.com_object
 
     @property
     def z_axis_type(self) -> int:

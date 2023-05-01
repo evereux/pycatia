@@ -1,6 +1,8 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 from pycatia.base_interfaces.context import CATIADocHandler
+from pycatia.in_interfaces.reference import Reference
+from pycatia.mec_mod_interfaces.part_document import PartDocument
 
 
 def test_line_angle():
@@ -32,9 +34,11 @@ def test_line_point_point():
     co_ord_1 = (0, 0, 0)
     co_ord_2 = (length, 0, 0)
 
-    with CATIADocHandler(new_document='Part') as caa:
+    with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
-        part = document.part
+        assert document is not None
+
+        part = PartDocument(document.com_object).part
         hsf = part.hybrid_shape_factory
 
         hybrid_bodies = part.hybrid_bodies
@@ -46,7 +50,7 @@ def test_line_point_point():
         gs_new.append_hybrid_shape(point_1)
         gs_new.append_hybrid_shape(point_2)
 
-        line = hsf.add_new_line_pt_pt(point_1, point_2)
+        line = hsf.add_new_line_pt_pt(Reference(point_1.com_object), Reference(point_2.com_object))
 
         gs_new.append_hybrid_shape(line)
 

@@ -21,10 +21,14 @@ from collections import Counter
 from datetime import datetime
 
 from pycatia import catia
+from pycatia.product_structure_interfaces.product import Product
+
 
 caa = catia()
 document = caa.active_document
 product = document.product
+# not neccessary but will provide autocompletion in IDEs.
+product = Product(product.com_object)
 products = product.products
 
 part_numbers = []

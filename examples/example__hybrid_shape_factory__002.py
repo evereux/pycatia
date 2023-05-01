@@ -25,7 +25,9 @@ sys.path.insert(0, os.path.abspath('..\\pycatia'))
 ##########################################################
 
 from pycatia import catia
+from pycatia.mec_mod_interfaces.part import Part
 from pycatia.scripts.csv_tools import create_points
+
 
 caa = catia()
 # # disable display refreshing to try tp speed up point generation.
@@ -39,6 +41,8 @@ documents.add('Part')
 
 document = caa.active_document
 part = document.part
+# not neccessary but will provide autocompletion in IDEs.
+part = Part(part.com_object)
 
 # full path name to csv file.
 file = r'tests\Sample_Point_CSV_File1_small.csv'

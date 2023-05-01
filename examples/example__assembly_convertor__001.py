@@ -2,7 +2,7 @@
 
 """
 
-    Example - Asssembly Convetor - 001
+    Example - Assembly Convertor - 001
 
     Print the BOM of a product to XLS using the inbuilt AssemblyConvertor. You
     must already have excel installed.
@@ -23,13 +23,14 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 from pathlib import Path
 
 from pycatia import catia
-from pycatia.product_structure_interfaces.product import Product
 from pycatia.product_structure_interfaces.assembly_convertor import AssemblyConvertor
+from pycatia.product_structure_interfaces.product import Product
+from pycatia.product_structure_interfaces.product_document import ProductDocument
 
 # file_type can be "TXT", "HTML" or "XLS".
 file_type = "XLS"
@@ -55,7 +56,7 @@ if excel_file.is_file():
 
 caa = catia()
 document = caa.active_document
-product = document.product
+product = ProductDocument(document.com_object).product
 # not neccessary but will provide autocompletion in IDEs.
 product = Product(product.com_object)
 
@@ -68,5 +69,13 @@ assembly_convertor.set_current_format(details_top)
 assembly_convertor.set_secondary_format(details_recap)
 
 assembly_convertor.print(file_type, excel_file, product)
-
-
+# Important note:
+# The print-method will fail if you try to export the bill-of-material-xls file
+# to a location, where another process will access this file. Such process is
+# for example OneDrive or Dropbox.
+# One solution to avoid this problem is to export the bom to the current users
+# temp folder and then move it to the desired destination using shutil.move(),
+# see https://docs.python.org/3/library/shutil.html#shutil.move
+# To this particular problem:
+# Once the print-method had failed, it will continue to fail until you restart
+# CATIA, even if you've changed the path to a 'save' location.
