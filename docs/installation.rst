@@ -146,23 +146,14 @@ Registering the CATIA V5 COM server.
 Typically, installating CATIA V5 will do this automatically as a part of the 
 installation process. However, sometimes that can fail.
 
-* From the command prompt navigate to the installation folder that contains 
-cnext.exe of the CATIA V5 installation you would like to register.
-
-* For example::
+1. From the command prompt navigate to the installation folder that contains
+cnext.exe of the CATIA V5 installation you would like to register. For example::
 
     cd <drive>\<CATIA_DIR>\<CATIA_VERSION>\code\bin
 
 
-* run the following command after replacing <env_file> and <path_to_env_file> 
+2. run the following command after replacing <env_file> and <path_to_env_file>
 with the appropriate values::
 
     cnext.exe /regserver -env <env_file> -direnv <path_to_env_file>
-
-
- 
-    
-
-
-
 
