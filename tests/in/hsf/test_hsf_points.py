@@ -1,6 +1,8 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 from pycatia import CATIADocHandler
+from pycatia.in_interfaces.reference import Reference
+from pycatia.mec_mod_interfaces.part_document import PartDocument
 
 
 def test_point_between():
@@ -8,9 +10,11 @@ def test_point_between():
     co_ord_2 = (100, 0, 0)
     r = (50, 0, 0)
 
-    with CATIADocHandler(new_document='Part') as caa:
+    with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
-        part = document.part
+        assert document is not None
+
+        part = PartDocument(document.com_object).part
         hsf = part.hybrid_shape_factory
 
         hybrid_bodies = part.hybrid_bodies
@@ -22,7 +26,7 @@ def test_point_between():
         cg_points.append_hybrid_shape(point_1)
         cg_points.append_hybrid_shape(point_2)
 
-        point_between = hsf.add_new_point_between(point_1, point_2, 0.5, 0)
+        point_between = hsf.add_new_point_between(Reference(point_1.com_object), Reference(point_2.com_object), 0.5, 0)
 
         cg_points.append_hybrid_shape(point_between)
 
@@ -37,9 +41,11 @@ def test_point_center():
     co_ord_2 = (length, 0, 0)
     center = (length / 2, 0, 0)
 
-    with CATIADocHandler(new_document='Part') as caa:
+    with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
-        part = document.part
+        assert document is not None
+
+        part = PartDocument(document.com_object).part
         hsf = part.hybrid_shape_factory
 
         hybrid_bodies = part.hybrid_bodies
@@ -51,11 +57,11 @@ def test_point_center():
 
         xy_plane = part.origin_elements.plane_xy
 
-        circle = hsf.add_new_circle_ctr_rad(point, xy_plane, True, 50)
+        circle = hsf.add_new_circle_ctr_rad(Reference(point.com_object), Reference(xy_plane.com_object), True, 50)
 
         gs_new.append_hybrid_shape(circle)
 
-        point_center = hsf.add_new_point_center(circle)
+        point_center = hsf.add_new_point_center(Reference(circle.com_object))
         gs_new.append_hybrid_shape(point_center)
 
         part.update()
@@ -66,9 +72,11 @@ def test_point_center():
 def test_point_coord():
     co_ord = (0, 10, 100)
 
-    with CATIADocHandler(new_document='Part') as caa:
+    with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
-        part = document.part
+        assert document is not None
+
+        part = PartDocument(document.com_object).part
         hsf = part.hybrid_shape_factory
 
         hybrid_bodies = part.hybrid_bodies
@@ -86,9 +94,11 @@ def test_point_coord_reference():
     co_ord = (0.0, 10.0, 100.0)
     r = tuple([i + i for i in co_ord])
 
-    with CATIADocHandler(new_document='Part') as caa:
+    with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
-        part = document.part
+        assert document is not None
+
+        part = PartDocument(document.com_object).part
         hsf = part.hybrid_shape_factory
 
         hybrid_bodies = part.hybrid_bodies
@@ -96,7 +106,9 @@ def test_point_coord_reference():
 
         org_point = hsf.add_new_point_coord(co_ord[0], co_ord[1], co_ord[2])
         cg_points.append_hybrid_shape(org_point)
-        point_1 = hsf.add_new_point_coord_with_reference(co_ord[0], co_ord[1], co_ord[2], org_point)
+        point_1 = hsf.add_new_point_coord_with_reference(
+            co_ord[0], co_ord[1], co_ord[2], Reference(org_point.com_object)
+        )
         cg_points.append_hybrid_shape(point_1)
 
         part.update()
@@ -120,9 +132,11 @@ def test_point_on_curve():
     co_ord_2 = (length, 0, 0)
     center = (length / 2, 0, 0)
 
-    with CATIADocHandler(new_document='Part') as caa:
+    with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
-        part = document.part
+        assert document is not None
+
+        part = PartDocument(document.com_object).part
         hsf = part.hybrid_shape_factory
 
         hybrid_bodies = part.hybrid_bodies
@@ -134,7 +148,7 @@ def test_point_on_curve():
         gs_new.append_hybrid_shape(point_1)
         gs_new.append_hybrid_shape(point_2)
 
-        line = hsf.add_new_line_pt_pt(point_1, point_2)
+        line = hsf.add_new_line_pt_pt(Reference(point_1.com_object), Reference(point_2.com_object))
 
         gs_new.append_hybrid_shape(line)
 
@@ -143,10 +157,9 @@ def test_point_on_curve():
         line_ref = part.create_reference_from_object(line)
         direction = hsf.add_new_direction(line_ref)
 
-        point_center = hsf.add_new_point_on_curve_along_direction(line,
-                                                                  length / 2,
-                                                                  0,
-                                                                  direction)
+        point_center = hsf.add_new_point_on_curve_along_direction(
+            Reference(line.com_object), length / 2, False, direction
+        )
 
         gs_new.append_hybrid_shape(point_center)
 
@@ -173,16 +186,18 @@ def test_point_curve_from_percent():
 def test_point_on_plane():
     co_ord_1 = (250.0, 100.0)
 
-    with CATIADocHandler(new_document='Part') as caa:
+    with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
-        part = document.part
+        assert document is not None
+
+        part = PartDocument(document.com_object).part
         hsf = part.hybrid_shape_factory
 
         hybrid_bodies = part.hybrid_bodies
         gs_new = hybrid_bodies.add()
 
         xy_plane = part.origin_elements.plane_xy
-        point = hsf.add_new_point_on_plane(xy_plane, co_ord_1[0], co_ord_1[1])
+        point = hsf.add_new_point_on_plane(Reference(xy_plane.com_object), co_ord_1[0], co_ord_1[1])
 
         gs_new.append_hybrid_shape(point)
 
@@ -197,11 +212,13 @@ def test_point_on_plane_reference():
     r = (
         co_ord_1[0] + co_ord_2[0],
         co_ord_1[1] + co_ord_2[1],
-        co_ord_1[2]
+        co_ord_1[2],
     )
-    with CATIADocHandler(new_document='Part') as caa:
+    with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
-        part = document.part
+        assert document is not None
+
+        part = PartDocument(document.com_object).part
         hsf = part.hybrid_shape_factory
 
         hybrid_bodies = part.hybrid_bodies
@@ -212,7 +229,9 @@ def test_point_on_plane_reference():
 
         gs_new.append_hybrid_shape(org_point)
 
-        point = hsf.add_new_point_on_plane_with_reference(xy_plane, org_point, co_ord_2[0], co_ord_2[1])
+        point = hsf.add_new_point_on_plane_with_reference(
+            Reference(xy_plane.com_object), Reference(org_point.com_object), co_ord_2[0], co_ord_2[1]
+        )
 
         gs_new.append_hybrid_shape(point)
 

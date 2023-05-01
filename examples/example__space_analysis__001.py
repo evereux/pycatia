@@ -18,6 +18,8 @@ sys.path.insert(0, os.path.abspath('..\\pycatia'))
 ##########################################################
 
 from pycatia import catia
+from pycatia.mec_mod_interfaces.part import Part
+
 
 # initialise the catia automation application
 caa = catia()
@@ -31,6 +33,8 @@ document = caa.active_document
 
 # get the Part() object.
 part = document.part
+# not neccessary but will provide autocompletion in IDEs.
+part = Part(part.com_object)
 
 # get the Bodies() collection
 bodies = part.bodies

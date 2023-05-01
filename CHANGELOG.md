@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.5.8
+
+* Added new document type CatalogDocument.
+* Added new document type CATMaterial.
+* fixed method for AxisSystem.origin_point, AxisSystem.x_axis_direction, AxisSystem.y_axis_direction and 
+ AxisSystem.z_axis_direction. (@Mithro86)
+* Added warning to example__assembly_convertor__001.py for when writing to files.
+* fixed method for Limit.limiting_element(). (@ptm-tm)
+
 ## 0.5.7
 
 * fixed method for VisPropertySet.get_show(). (@Mithro86)

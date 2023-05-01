@@ -21,12 +21,15 @@ from pycatia import catia
 from pycatia.enumeration.enumeration_types import cat_work_mode_type
 from pycatia.product_structure_interfaces.product import Product
 
+
 caa = catia()
 documents = caa.documents
 documents.open(r'tests\cat_files\product_top.CATProduct')
 
 document = caa.active_document
 product = document.product
+# not neccessary but will provide autocompletion in IDEs.
+product = Product(product.com_object)
 
 # Change the work mode to Design Mode.
 # This is useful for CATIA configurations that work with a cache otherwise methods on children may fail
