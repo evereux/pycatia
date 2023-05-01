@@ -141,7 +141,7 @@ Confirm Successful Install
 
 
 Registering the CATIA V5 COM server.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Typically, installating CATIA V5 will do this automatically as a part of the 
 installation process. However, sometimes that can fail.
