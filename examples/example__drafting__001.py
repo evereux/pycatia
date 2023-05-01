@@ -18,10 +18,12 @@ sys.path.insert(0, os.path.abspath('..\\pycatia'))
 ##########################################################
 
 from pycatia import catia
+from pycatia.drafting_interfaces.drawing_root import DrawingRoot
 from pycatia.exception_handling import CATIAApplicationException
 from pycatia.enumeration.enumeration_types import cat_text_anchor_position
 from pycatia.enumeration.enumeration_types import cat_paper_orientation
 from pycatia.enumeration.enumeration_types import cat_paper_size
+
 
 # A0 sheet size
 a0_x = 1189
@@ -30,6 +32,8 @@ a0_y = 841
 caa = catia()
 document = caa.active_document
 drawing = document.drawing_root
+# not neccessary but will provide autocompletion in IDEs.
+drawing = DrawingRoot(drawing.com_object)
 sheets = drawing.sheets
 sheet = sheets.active_sheet
 

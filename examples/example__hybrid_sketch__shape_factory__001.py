@@ -19,10 +19,14 @@ sys.path.insert(0, os.path.abspath('..\\pycatia'))
 
 from pycatia import catia
 from pycatia.enumeration.enumeration_types import cat_constraint_type, cat_constraint_mode, cat_constraint_angle_sector
+from pycatia.mec_mod_interfaces.part import Part
+
 
 caa = catia()
 document = caa.active_document
 part = document.part
+# not neccessary but will provide autocompletion in IDEs.
+part = Part(part.com_object)
 
 hsf = part.hybrid_shape_factory
 

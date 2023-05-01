@@ -1,8 +1,7 @@
-#! /usr/bin/python3.6
-
+#! /usr/bin/python3.9
 
 from pycatia import CATIADocHandler
-
+from pycatia.mec_mod_interfaces.part_document import PartDocument
 from tests.source_files import cat_part_measurable
 from tests.source_files import design_table_1
 
@@ -10,120 +9,134 @@ from tests.source_files import design_table_1
 def test_relations_count():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
-        part = document.part
+        assert document is not None
+
+        part = PartDocument(document.com_object).part
         relations = part.relations
 
         assert relations.count == 4
 
 
 def test_relations_create_check():
-    with CATIADocHandler(new_document='Part') as caa:
+    with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
-        part = document.part
+        assert document is not None
+
+        part = PartDocument(document.com_object).part
         parameters = part.parameters
 
-        lower_mass = parameters.create_dimension('lower_mass', 'MASS', 5)
+        lower_mass = parameters.create_dimension("lower_mass", "MASS", 5)
         lm_name = parameters.get_name_to_use_in_relation(lower_mass)
 
-        upper_mass = parameters.create_dimension('upper_mass', 'MASS', 10)
+        upper_mass = parameters.create_dimension("upper_mass", "MASS", 10)
         um_name = parameters.get_name_to_use_in_relation(upper_mass)
 
         relations = part.relations
-        new_check = relations.create_check('mass-check', 'this is the comment', f"{lm_name}<{um_name}")
+        new_check = relations.create_check("mass-check", "this is the comment", f"{lm_name}<{um_name}")
 
-        assert new_check.name == 'mass-check'
+        assert new_check.name == "mass-check"
 
 
 def test_relations_create_design_table():
-    with CATIADocHandler(new_document='Part') as caa:
+    with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
-        part = document.part
+        assert document is not None
+
+        part = PartDocument(document.com_object).part
         relations = part.relations
 
-        design_table = relations.create_design_table(
-            'new-design-table',
-            'this is a comment',
-            True,
-            design_table_1
-        )
+        design_table = relations.create_design_table("new-design-table", "this is a comment", True, design_table_1)
 
-        assert design_table.name == 'new-design-table'
+        assert design_table.name == "new-design-table"
 
 
 def test_relations_create_formula():
-    with CATIADocHandler(new_document='Part') as caa:
+    with CATIADocHandler(new_document="Part") as caa:
         name = "new-formula"
         comment = "this is a comment"
 
         document = caa.document
-        part = document.part
+        assert document is not None
+
+        part = PartDocument(document.com_object).part
 
         parameters = part.parameters
 
-        lower_mass = parameters.create_dimension('lower_mass', 'MASS', 5)
+        lower_mass = parameters.create_dimension("lower_mass", "MASS", 5)
         lm_name = parameters.get_name_to_use_in_relation(lower_mass)
 
-        upper_mass = parameters.create_dimension('upper_mass', 'MASS', 10)
+        upper_mass = parameters.create_dimension("upper_mass", "MASS", 10)
         um_name = parameters.get_name_to_use_in_relation(upper_mass)
 
-        target_parm = parameters.create_dimension('target_mass', 'MASS', 0)
+        target_parm = parameters.create_dimension("target_mass", "MASS", 0)
 
         relations = part.relations
 
         formula = relations.create_formula(name, comment, target_parm, f"{lm_name}+{um_name}")
 
-        assert formula.name == 'new-formula'
+        assert formula.name == "new-formula"
 
 
 def test_relations_create_horizontal_design_table():
-    with CATIADocHandler(new_document='Part') as caa:
+    with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
-        part = document.part
+        assert document is not None
+
+        part = PartDocument(document.com_object).part
         relations = part.relations
 
-        design_table = relations.create_horizontal_design_table('new-design-table', 'this is a comment', True,
-                                                                design_table_1)
+        design_table = relations.create_horizontal_design_table(
+            "new-design-table", "this is a comment", True, str(design_table_1)
+        )
 
-        assert design_table.name == 'new-design-table'
+        assert design_table.name == "new-design-table"
 
 
 def test_relations_create_law():
-    with CATIADocHandler(new_document='Part') as caa:
+    with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
-        part = document.part
+        assert document is not None
+
+        part = PartDocument(document.com_object).part
         relations = part.relations
 
-        law = relations.create_law('new-law', 'this is a comment', '/* code comments */')
+        law = relations.create_law("new-law", "this is a comment", "/* code comments */")
 
-        assert law.name == 'new-law'
+        assert law.name == "new-law"
 
 
 def test_relations_create_program():
-    with CATIADocHandler(new_document='Part') as caa:
+    with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
-        part = document.part
+        assert document is not None
+
+        part = PartDocument(document.com_object).part
         relations = part.relations
 
-        program = relations.create_program('new-program', 'this is a comment', '/* code comments */')
+        program = relations.create_program("new-program", "this is a comment", "/* code comments */")
 
-        assert program.name == 'new-program'
+        assert program.name == "new-program"
 
 
 def test_relations_create_rule_base():
-    with CATIADocHandler(new_document='Part') as caa:
+    with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
-        part = document.part
+        assert document is not None
+
+        part = PartDocument(document.com_object).part
         relations = part.relations
 
-        rule_base = relations.create_rule_base('new-rule-base')
+        rule_base = relations.create_rule_base("new-rule-base")
 
-        assert rule_base.name == 'new-rule-base'
+        assert rule_base.name == "new-rule-base"
 
 
 def test_relations_create_set_of_equations():
-    with CATIADocHandler(new_document='Part') as caa:
+    with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
-        part = document.part
+        assert document is not None
+
+        part = PartDocument(document.com_object).part
         parameters = part.parameters
         relations = part.relations
 
@@ -131,19 +144,21 @@ def test_relations_create_set_of_equations():
         dim_b_name = parameters.get_name_to_use_in_relation(dim_b)
         result = parameters.create_real("result", 0)
 
-        eq_set = relations.create_set_of_equations('new-eq-set', 'some comment', f'{result}=={dim_b_name} + 4;')
+        eq_set = relations.create_set_of_equations("new-eq-set", "some comment", f"{result}=={dim_b_name} + 4;")
 
-        assert eq_set.name == 'new-eq-set'
+        assert eq_set.name == "new-eq-set"
 
 
 def test_relations_create_set_of_relations():
-    with CATIADocHandler(new_document='Part') as caa:
+    with CATIADocHandler(new_document="Part") as caa:
         document = caa.document
-        part = document.part
+        assert document is not None
+
+        part = PartDocument(document.com_object).part
         relations = part.relations
         relations.create_set_of_relations(part)
 
-        assert relations.name == 'Relations'
+        assert relations.name == "Relations"
 
 
 def test_relations_generate_xml():
@@ -153,7 +168,7 @@ def test_relations_generate_xml():
     # xml_name = Path(os.getcwd(), 'testxml.xml')
     # with CATIADocHandler(cat_part_3) as caa:
     #     document = caa.document
-    #     part = document.part
+    #     part = PartDocument(document.com_object).part
     #
     #     parameters = part.parameters
     #
@@ -174,7 +189,9 @@ def test_relations_generate_xml():
 def test_relations_get_items():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
-        part = document.part
+        assert document is not None
+
+        part = PartDocument(document.com_object).part
 
         relations = part.relations
         items = relations.items()
@@ -185,34 +202,40 @@ def test_relations_get_items():
 def test_relations_get_item_by_index():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
-        part = document.part
+        assert document is not None
+
+        part = PartDocument(document.com_object).part
 
         relations = part.relations
         item = relations.get_item_by_index(1)
 
-        assert item.name == 'formula_1'
+        assert item.name == "formula_1"
 
 
 def test_relations_get_item_names():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
-        part = document.part
+        assert document is not None
+
+        part = PartDocument(document.com_object).part
 
         relations = part.relations
         item_names = relations.get_item_names()
 
-        ref_names = ['formula_1', 'formula_2', 'formula_3', 'formula_5']
+        ref_names = ["formula_1", "formula_2", "formula_3", "formula_5"]
         assert item_names == ref_names
 
 
 def test_relations_item():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
-        part = document.part
+        assert document is not None
+
+        part = PartDocument(document.com_object).part
 
         relations = part.relations
         relation = relations.item(1)
-        assert relation.name == 'formula_1'
+        assert relation.name == "formula_1"
 
 
 def test_relations_sub_list():
@@ -223,12 +246,14 @@ def test_relations_sub_list():
 def test_relations_remove():
     with CATIADocHandler(cat_part_measurable) as caa:
         document = caa.document
-        part = document.part
+        assert document is not None
+
+        part = PartDocument(document.com_object).part
 
         relations = part.relations
         relation = relations.item(1)
-        assert relation.name == 'formula_1'
+        assert relation.name == "formula_1"
 
         relations.remove(1)
         relation = relations.item(1)
-        assert relation.name != 'formula_1'
+        assert relation.name != "formula_1"

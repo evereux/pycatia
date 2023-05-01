@@ -1,4 +1,4 @@
-#! usr/bin/python3.6
+#! usr/bin/python3.9
 """
     Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
@@ -303,7 +303,7 @@ class HybridShapeExtrude(HybridShape):
         :param Reference reference_element:
         """
 
-        self.hybrid_shape_extrude.FirstUptoElement = reference_element
+        self.hybrid_shape_extrude.FirstUptoElement = reference_element.com_object
 
     @property
     def orientation(self) -> bool:
