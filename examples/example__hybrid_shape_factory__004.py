@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
 
@@ -24,7 +24,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
@@ -43,7 +43,6 @@ hb_construction_lines = hbs.item("construction_geometry")
 hss = hb_construction_lines.hybrid_shapes
 
 for shape_index in range(1, hss.count + 1):
-
     hs = hss.item(shape_index)
 
     # clear the selection on each loop.
@@ -54,7 +53,7 @@ for shape_index in range(1, hss.count + 1):
     selected_elem = document.selection.item(1)
 
     # test part only has HybridShapeLinePtPt
-    if selected_elem.type == 'HybridShapeLinePtPt':
+    if selected_elem.type == "HybridShapeLinePtPt":
         # to create the HybridShapeLinePtPt object we need to use the hybrid_shape com_object.
         hs_line_pt_pt = HybridShapeLinePtPt(hs.com_object)
 

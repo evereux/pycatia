@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
 
@@ -15,7 +15,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
@@ -25,7 +25,7 @@ from pycatia.product_structure_interfaces.product import Product
 
 caa = catia()
 documents = caa.documents
-documents.open(r'tests\cat_files\product_top.CATProduct')
+documents.open(r"tests\cat_files\product_top.CATProduct")
 
 document = caa.active_document
 product = document.product
@@ -39,26 +39,23 @@ product.apply_work_mode(cat_work_mode_type.index("DESIGN_MODE"))
 
 
 def print_properties(obj):
-    print(f"{obj.name}: mass: {obj.analyze.mass}, \n"
-          f"    volume: {obj.analyze.volume}, \n"
-          f"    wet_area: {obj.analyze.wet_area}, \n"
-          f"    gravity_center: {obj.analyze.get_gravity_center()}, \n"
-          f"    inertia: {obj.analyze.get_inertia()}"
-          )
+    print(
+        f"{obj.name}: mass: {obj.analyze.mass}, \n"
+        f"    volume: {obj.analyze.volume}, \n"
+        f"    wet_area: {obj.analyze.wet_area}, \n"
+        f"    gravity_center: {obj.analyze.get_gravity_center()}, \n"
+        f"    inertia: {obj.analyze.get_inertia()}"
+    )
 
 
 # I know, this isn't pretty, but my intent is to keep examples simple.
 for sub_product in product.products:
-
     if sub_product.is_catproduct():
-
         for child_product in sub_product.products:
-
             if child_product.is_catpart():
                 child_product.activate_default_shape()
                 print_properties(child_product)
 
     else:
-
         sub_product.activate_default_shape()
         print_properties(sub_product)

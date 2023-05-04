@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
 
@@ -14,7 +14,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
@@ -24,7 +24,7 @@ from pycatia.mec_mod_interfaces.part import Part
 caa = catia()
 documents = caa.documents
 # create a new CATPart.
-documents.add('Part')
+documents.add("Part")
 document = caa.active_document
 
 part = document.part
@@ -35,7 +35,7 @@ hsf = part.hybrid_shape_factory
 
 # create a new hybrid body.
 geom_set = hybrid_bodies.add()
-geom_set.name = 'Construction_Geometry'
+geom_set.name = "Construction_Geometry"
 
 co_ord_1 = (0, 0, 0)
 co_ord_2 = (100, 0, 0)

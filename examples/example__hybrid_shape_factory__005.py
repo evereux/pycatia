@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
 
@@ -18,7 +18,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
@@ -33,9 +33,9 @@ part = part.com_object
 hsf = part.hybrid_shape_factory
 hbs = part.hybrid_bodies
 
-hb_construction_geometry = hbs.item('ConstructionGeometry')
+hb_construction_geometry = hbs.item("ConstructionGeometry")
 hs_construction_geometry = hb_construction_geometry.hybrid_shapes
-hs_surface = hs_construction_geometry.item('Surface.1')
+hs_surface = hs_construction_geometry.item("Surface.1")
 ref_hs_surface = part.create_reference_from_object(hs_surface)
 
 origin_elements = part.origin_elements

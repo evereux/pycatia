@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
 
@@ -22,7 +22,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
@@ -39,8 +39,8 @@ part = Part(part.com_object)
 bodies = part.bodies
 
 # warning, if you have several bodies with the same name the first will always be chosen.
-body_cube_1 = bodies.get_item_by_name('Body.Cube.1')
-body_cube_2 = bodies.get_item_by_name('Body.Cube.2')
+body_cube_1 = bodies.get_item_by_name("Body.Cube.1")
+body_cube_2 = bodies.get_item_by_name("Body.Cube.2")
 
 part.in_work_object = body_cube_1
 

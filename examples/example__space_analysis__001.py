@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
 
@@ -14,7 +14,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
@@ -24,7 +24,7 @@ from pycatia.mec_mod_interfaces.part import Part
 # initialise the catia automation application
 caa = catia()
 documents = caa.documents
-documents.open(r'tests/cat_files/part_measurable.CATPart')
+documents.open(r"tests/cat_files/part_measurable.CATPart")
 
 # get the active document
 document = caa.active_document

@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
 
@@ -14,7 +14,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from collections import Counter
@@ -86,5 +86,5 @@ html += """
     </body>
 </html>"""
 
-with open((product.part_number + '.html'), 'w') as f:
+with open((product.part_number + ".html"), "w") as f:
     f.write(html)

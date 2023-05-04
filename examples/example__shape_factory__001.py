@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
 
@@ -16,7 +16,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
@@ -35,11 +35,11 @@ shape_factory = part.shape_factory
 # add new bodies
 bodies = part.bodies
 body_1 = bodies.add()
-body_1.name = 'Body.Cylinder.1'
+body_1.name = "Body.Cylinder.1"
 body_2 = bodies.add()
-body_2.name = 'Body.Cylinder.2'
+body_2.name = "Body.Cylinder.2"
 body_3 = bodies.add()
-body_3.name = 'Body.Empty'
+body_3.name = "Body.Empty"
 
 # create a cylinder in body_1
 sketches_body_1 = body_1.sketches
@@ -72,8 +72,8 @@ shape_factory.add_new_pad(sketch_body_2, length)
 part.update()
 
 # warning, if you have several bodies with the same name the first will always be chosen.
-body_cylinder_1 = bodies.get_item_by_name('Body.Cylinder.1')
-body_cylinder_2 = bodies.get_item_by_name('Body.Cylinder.2')
+body_cylinder_1 = bodies.get_item_by_name("Body.Cylinder.1")
+body_cylinder_2 = bodies.get_item_by_name("Body.Cylinder.2")
 
 # Noting, the VBA example uses
 # ‘CATIA.ActiveDocument.Part.CurrentShape = Pad1‘

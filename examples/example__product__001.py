@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
 
@@ -54,7 +54,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 # todo: explore why this is so fragile.
@@ -84,13 +84,13 @@ windows = Desktop().windows()
 
 graph_window = None
 for window in windows:
-    if 'tree' in window.window_text():
+    if "tree" in window.window_text():
         print(window.window_text())
-    if 'Graph tree reordering' in window.window_text():
+    if "Graph tree reordering" in window.window_text():
         graph_window = window
 
 if not graph_window:
-    raise AttributeError('Could not find Graph tree reordering window.')
+    raise AttributeError("Could not find Graph tree reordering window.")
 
 # initialise the btn variables
 btn_move_up = None
@@ -101,15 +101,15 @@ list_box = None
 # loop through Graph tree reordering window and find the buttons we need and
 # the list_box.
 for child in graph_window.children():
-    if child.window_text() == 'OK':
+    if child.window_text() == "OK":
         btn_ok = child
-    if child.window_text() == 'Apply':
+    if child.window_text() == "Apply":
         btn_apply = child
-    if child.window_text() == 'Move Up':
+    if child.window_text() == "Move Up":
         btn_move_up = child
-    if child.window_text() == 'Move Down':
+    if child.window_text() == "Move Down":
         btn_move_down = child
-    if child.window_text() == 'ListProd':
+    if child.window_text() == "ListProd":
         list_box = child
 
 # create a text list of the items in the list box and sort them.
