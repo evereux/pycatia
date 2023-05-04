@@ -1,4 +1,4 @@
-#! /usr/bin/python3.7
+#! /usr/bin/python3.9
 
 """
 
@@ -17,17 +17,18 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
 from pycatia.mec_mod_interfaces.part import Part
+
 # from pycatia.knowledge_interfaces import BoolParam
 
 
 caa = catia()
 documents = caa.documents
-documents.open(r'tests/cat_files/part_measurable.CATPart')
+documents.open(r"tests/cat_files/part_measurable.CATPart")
 
 document = caa.active_document
 
@@ -82,13 +83,19 @@ sketch_pocket_activity = part_parameters.item("Sketches\\Sketch_Pocket\\Activity
 object_pocket_activity = part_parameters.item("PartBody\\Pocket.1\\Activity")
 
 # create the formula to combine the sketch and pocket activity with the parameter <pocket_activity>
-part_relations.create_formula("Activity_Sketch_Pocket",
-                              "Checks weather the Pocket should be activated or not", sketch_pocket_activity,
-                              pocket_activity.name)
+part_relations.create_formula(
+    "Activity_Sketch_Pocket",
+    "Checks weather the Pocket should be activated or not",
+    sketch_pocket_activity,
+    pocket_activity.name,
+)
 
-part_relations.create_formula("Activity_Object_Pocket",
-                              "Checks weather the Pocket should be activated or not", object_pocket_activity,
-                              pocket_activity.name)
+part_relations.create_formula(
+    "Activity_Object_Pocket",
+    "Checks weather the Pocket should be activated or not",
+    object_pocket_activity,
+    pocket_activity.name,
+)
 
 part.update()
 

@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
 
@@ -14,7 +14,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
@@ -25,7 +25,7 @@ from pycatia.product_structure_interfaces.product import Product
 caa = catia()
 # create a new part and rename.
 documents = caa.documents
-documents.add('Part')
+documents.add("Part")
 document = caa.active_document
 
 part = caa.active_document.part

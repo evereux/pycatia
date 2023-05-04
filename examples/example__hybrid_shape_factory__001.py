@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
 
@@ -18,7 +18,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
@@ -47,7 +47,6 @@ hs_shapes = hb_points.hybrid_shapes
 # create a list of only points.
 points = []
 for i in range(1, hs_shapes.count + 1):
-
     hybrid_shape = hs_shapes.item(i)
 
     # make sure the element is indeed a point.

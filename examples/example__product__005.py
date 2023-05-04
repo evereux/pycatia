@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
 
@@ -14,7 +14,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
@@ -24,7 +24,7 @@ from pycatia.product_structure_interfaces.product import Product
 
 caa = catia()
 documents = caa.documents
-documents.open(r'tests/cat_files/product_top.CATProduct')
+documents.open(r"tests/cat_files/product_top.CATProduct")
 document = caa.active_document
 product = document.product
 # not neccessary but will provide autocompletion in IDEs.
@@ -41,17 +41,16 @@ if len(products) == 0:
     print("Active document has no children or is not a CATProduct.")
 
 for item in products:
-
     if item.is_catpart():
         print(f'This is a part: "{item}"')
-        print('')
+        print("")
 
     if item.is_catproduct():
         product = item
         print(f'This is a product: "{item}"')
 
         if item.has_children():
-            print('This product has children.')
+            print("This product has children.")
             children = item.get_children()
             print(children)
-        print('')
+        print("")

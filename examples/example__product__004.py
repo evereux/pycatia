@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
 
@@ -14,7 +14,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
@@ -23,7 +23,7 @@ from pycatia.product_structure_interfaces.product import Product
 
 caa = catia()
 documents = caa.documents
-documents.open(r'tests\cat_files\product_top.CATProduct')
+documents.open(r"tests\cat_files\product_top.CATProduct")
 document = caa.active_document
 
 product = document.product
