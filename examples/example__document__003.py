@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
 
@@ -18,7 +18,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pathlib import Path
@@ -27,7 +27,7 @@ import os
 from pycatia import catia
 
 # path to file to open.
-file_name = r'tests\cat_files\part_measurable.CATPart'
+file_name = r"tests\cat_files\part_measurable.CATPart"
 
 caa = catia()
 # open document
@@ -37,7 +37,7 @@ documents.open(file_name)
 document = caa.active_document
 
 # _Full_ path of new file. This uses current working directory.
-new_file_name = Path(os.getcwd(), 'new_part.CATPart')
+new_file_name = Path(os.getcwd(), "new_part.CATPart")
 # save document as new name.
 document.save_as(new_file_name, overwrite=True)
 

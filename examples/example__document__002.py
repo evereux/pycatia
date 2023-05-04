@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
 
@@ -14,7 +14,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 import os
@@ -22,8 +22,8 @@ import os
 from pycatia import CATIADocHandler
 
 # make these directories the full pathname.
-source_directory = 'tests/cat_files'
-target_directory = '__junk__'
+source_directory = "tests/cat_files"
+target_directory = "__junk__"
 
 # if full paths are supplied above you should not do this.
 source_directory = os.path.join(os.getcwd(), source_directory)
@@ -31,16 +31,14 @@ target_directory = os.path.join(os.getcwd(), target_directory)
 
 # This loop assumes there are NO sub-directories.
 for root, dirs, files in os.walk(source_directory):
-
     for file in files:
-
         # only convert CATParts.
-        if os.path.splitext(file)[1] == '.CATPart':
+        if os.path.splitext(file)[1] == ".CATPart":
             # create filename with path.
             file_name = os.path.join(source_directory, file)
 
             with CATIADocHandler(file_name) as caa:
-                file_ext = 'igs'
+                file_ext = "igs"
                 document = caa.document
                 # create the full name of the target file, minus extension.
                 target_file = os.path.join(target_directory, os.path.splitext(file)[0]) + "." + file_ext

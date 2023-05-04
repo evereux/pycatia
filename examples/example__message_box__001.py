@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
 
@@ -16,12 +16,12 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
 
 caa = catia()
 buttons = 2 + 32
-result = caa.message_box('Hello World!?', buttons=buttons, title='Asking a question.')
+result = caa.message_box("Hello World!?", buttons=buttons, title="Asking a question.")
 # result = 3 if the user presses Abort.

@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
 
@@ -15,7 +15,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
@@ -27,7 +27,7 @@ selection = document.selection
 selection.search("CATGmoSearch.Point.Color='(255,0,0)',in")
 
 # how many items have been found?
-caa.logger.info(f'Found {selection.count2} items.')
+caa.logger.info(f"Found {selection.count2} items.")
 
 # to loop through the items
 for i in range(selection.count2):

@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
 
@@ -19,7 +19,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 import win32con
@@ -63,7 +63,7 @@ while c is True:
 
     prompt = input("Continue? (Y/N):")
 
-    if prompt.lower()[0] == 'n':
+    if prompt.lower()[0] == "n":
         c = False
     else:
         c = True

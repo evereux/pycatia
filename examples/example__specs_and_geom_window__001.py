@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
 
@@ -18,7 +18,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pathlib import Path
@@ -29,8 +29,8 @@ from pycatia.in_interfaces.specs_and_geom_window import SpecsAndGeomWindow
 from pycatia.product_structure_interfaces.product import Product
 
 
-source_folder = Path('tests/cat_files')
-source_files = source_folder.glob('*.CATPart')
+source_folder = Path("tests/cat_files")
+source_files = source_folder.glob("*.CATPart")
 
 # create a dictionary of views to create.
 x_up = (1, 0, 0)
@@ -38,7 +38,7 @@ y_up = (0, 1, 0)
 z_up = (0, 0, 1)
 iso = (0.577, 0.577, 0.577)
 
-views = {'x_up': x_up, 'y_up': y_up, 'z_up': z_up, 'iso': iso}
+views = {"x_up": x_up, "y_up": y_up, "z_up": z_up, "iso": iso}
 
 
 def save_file_path(prod_part_number, prod_revision, view_type):
@@ -50,7 +50,7 @@ def save_file_path(prod_part_number, prod_revision, view_type):
     :return: Path
     """
 
-    file_name = Path(Path.home(), 'Pictures', f'{prod_part_number}-{prod_revision}-{view_type}.jpg')
+    file_name = Path(Path.home(), "Pictures", f"{prod_part_number}-{prod_revision}-{view_type}.jpg")
 
     return file_name
 

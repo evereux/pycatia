@@ -1,4 +1,4 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
     Example - Hybrid Shape Factory - 002:
@@ -21,7 +21,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
@@ -37,7 +37,7 @@ caa = catia()
 
 documents = caa.documents
 # create a new part.
-documents.add('Part')
+documents.add("Part")
 
 document = caa.active_document
 part = document.part
@@ -45,10 +45,10 @@ part = document.part
 part = Part(part.com_object)
 
 # full path name to csv file.
-file = r'tests\Sample_Point_CSV_File1_small.csv'
+file = r"tests\Sample_Point_CSV_File1_small.csv"
 
 # create the points.
-create_points(part, file, units='mm', geometry_set_name='Points_Construction')
+create_points(part, file, units="mm", geometry_set_name="Points_Construction")
 
 # if you can't see the points hide your origin planes and refram window.
 
