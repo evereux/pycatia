@@ -24,10 +24,11 @@ sys.path.insert(0, os.path.abspath("..\\pycatia"))
 from pathlib import Path
 
 from pycatia import CATIADocHandler
-from pycatia.enumeration.enumeration_types import cat_capture_format, cat_specs_and_geom_window_layout
+from pycatia.enumeration.enumeration_types import cat_capture_format
+from pycatia.enumeration.enumeration_types import cat_specs_and_geom_window_layout
 from pycatia.in_interfaces.specs_and_geom_window import SpecsAndGeomWindow
 from pycatia.product_structure_interfaces.product import Product
-
+from pycatia.product_structure_interfaces.product_document import ProductDocument
 
 source_folder = Path("tests/cat_files")
 source_files = source_folder.glob("*.CATPart")
@@ -58,10 +59,15 @@ def save_file_path(prod_part_number, prod_revision, view_type):
 for cat_part in source_files:
     with CATIADocHandler(cat_part) as handler:
         caa = handler.catia
-        document = caa.active_document
-        product = document.product()
-        # not neccessary but will provide autocompletion in IDEs.
-        product = Product(product.com_object)
+        document = ProductDocument(caa.active_document.com_object)
+        product = Product(document.product.com_object)
+        # Note: It's not necessary to explicitly use the ProductDocument or the Product class
+        # with the com_object. It's perfectly fine to write it like this:
+        #   document = caa.active_document
+        #   product = document.product
+        # But declaring 'document' and 'product' this way, your linter can't resolve the
+        # product reference, see https://github.com/evereux/pycatia/issues/107#issuecomment-1336195688
+
         active_window = caa.active_window
         active_viewer = active_window.active_viewer
         cameras = document.cameras
@@ -86,9 +92,9 @@ for cat_part in source_files:
             active_viewer.reframe()
             active_viewer.zoom_in()
             file_name = save_file_path(product.part_number, product.revision, view)
-            active_viewer.capture_to_file(cat_capture_format.index("catCaptureFormatJPEG"), file_name)
+            active_viewer.capture_to_file(cat_capture_format.index("catCaptureFormatJPEG"), str(file_name))
 
         # reset background colour.
-        active_viewer.put_background_color(background_colour)
+        active_viewer.put_background_color(background_colour)  # type: ignore
         # bring back the specification tree.
         specs_and_geom.layout = cat_specs_and_geom_window_layout.index("catWindowSpecsAndGeom")

@@ -19,22 +19,21 @@ sys.path.insert(0, os.path.abspath("..\\pycatia"))
 
 from pycatia import catia
 from pycatia.mec_mod_interfaces.part import Part
-
+from pycatia.mec_mod_interfaces.part_document import PartDocument
 
 # initialise the catia automation application
 caa = catia()
 documents = caa.documents
 documents.open(r"tests/cat_files/part_measurable.CATPart")
 
-# get the active document
-document = caa.active_document
-# >>> print(document.path())
-# >>> C:\Users\evereux\python\projects\pycatia\tests\CF_catia_measurable_part.CATPart
-
-# get the Part() object.
-part = document.part
-# not neccessary but will provide autocompletion in IDEs.
-part = Part(part.com_object)
+document = PartDocument(caa.active_document.com_object)
+part = Part(document.part.com_object)
+# Note: It's not necessary to explicitly use the PartDocument or the Part class
+# with the com_object. It's perfectly fine to write it like this:
+#   document = caa.active_document
+#   part = document.part
+# But declaring 'document' and 'part' this way, your linter can't resolve the
+# product reference, see https://github.com/evereux/pycatia/issues/107#issuecomment-1336195688
 
 # get the Bodies() collection
 bodies = part.bodies
