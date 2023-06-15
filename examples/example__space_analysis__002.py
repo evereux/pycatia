@@ -2,11 +2,15 @@
 
 """
 
-    Example - Space Analysis - 002:
+    Example - Space Analysis - 002
 
-    Get all the points in the geometrical set 'Points' and output co-ordinate to console.
+    Description:
+        Get all the points in the geometrical set 'Points' and output co-ordinate to console.
+        Create your own CATPart with a Geometrical Set called construction_points.
+        Add some points to the Geometrical Set.
 
-    Create your own CATPart with a Geometrical Set called construction_points. Add some points to the Geometrical Set.
+    Requirements:
+        - A part document with the above described setup.
 
 """
 

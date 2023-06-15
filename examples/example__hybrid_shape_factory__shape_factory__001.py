@@ -2,9 +2,13 @@
 
 """
 
-    Example - Hybrid Shape Factory & Shape Factory - 001:
+    Example - Hybrid Shape Factory & Shape Factory - 001
 
-    3D Points, Spline, Extrusion and Generate Thickness.
+    Description:
+        3D Points, Spline, Extrusion and Generate Thickness.
+
+    Requirements:
+        - CATIA running.
 
 """
 

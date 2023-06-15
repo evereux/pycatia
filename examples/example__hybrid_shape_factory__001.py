@@ -2,13 +2,17 @@
 
 """
 
-    Example - Hybrid Shape Factory - 001:
+    Example - Hybrid Shape Factory - 001
 
-    Sequentially rename all points in geometric set (hybrid body) Points in the geometric set MasterGeometry.
+    Description:
+        Sequentially rename all points in geometric set (hybrid body) Points in the geometric set MasterGeometry.
 
-    Part
-       |- MasterGeometry
-         |- Points
+    Requirements:
+        - An open part document with the following geometric sets:
+        
+            Part
+            |- MasterGeometry
+                |- Points
 
 """
 

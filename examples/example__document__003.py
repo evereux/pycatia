@@ -2,13 +2,14 @@
 
 """
 
-    Example - Document - 003:
+    Example - Document - 003
 
-    Open a catia file.
+    Description:
+        Opens a CATIA fila and exports it as STEP. Then closes the file.
 
-    Export catia file to STP.
-
-    Close a catia file.
+    Requirements:
+        - CATIA running.
+        - Tests already setup.
 
 """
 

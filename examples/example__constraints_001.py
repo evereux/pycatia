@@ -2,10 +2,14 @@
 
 """
 
-    Example - Constraints - 001:
+    Example - Constraints - 001
 
-    Fix the first Sub Product in Product using constraints. The Sketch examples
-    also show further usage of constraints.
+    Description:
+        Fix the first Sub Product in Product using constraints.
+        The Sketch examples also show further usage of constraints.
+
+    Requirements:
+        - An open product document with at least two parts inside.
 
 """
 

@@ -2,10 +2,13 @@
 
 """
 
-    Example - Shape Factory - 002:
+    Example - Shape Factory - 002
 
-    Mirror the main body of the part.
-    This requires CATIA running with an open part with an non-empty main body.
+    Description:
+        Mirror the main body of the part.
+
+    Requirements:
+        - CATIA running with an open part with an non-empty main body.
 
 """
 

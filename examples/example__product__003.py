@@ -2,10 +2,15 @@
 
 """
 
-    Example - Product - 003:
+    Example - Product - 003
 
-    Loop through a CATProduct and analyse children if CATPart.
-    Only goes two levels deep.
+    Description:
+        Loop through a CATProduct and analyse children if CATPart.
+        Only goes two levels deep.
+
+    Requirements:
+        - CATIA running.
+        - Tests already setup.
 
 """
 

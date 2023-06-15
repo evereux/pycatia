@@ -2,11 +2,14 @@
 
 """
 
-    Example - Message Box - 001:
+    Example - Message Box - 001
 
-    Creating a message box.
+    Description:
+        Creating a message box.
+        This creates a message box with the buttons abort, retry ignore and displays the Warning Query icon.
 
-    This creates a message box with the buttons abort, retry ignore and displays the Warning Query icon.
+    Requirements:
+        - CATIA running.
 
 """
 
