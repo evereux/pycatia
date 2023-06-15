@@ -26,28 +26,34 @@ sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
+from pycatia.mec_mod_interfaces.body import Body
 from pycatia.mec_mod_interfaces.part import Part
-
+from pycatia.mec_mod_interfaces.part_document import PartDocument
 
 caa = catia()
-documents = caa.documents
-
-document = caa.active_document
-part = document.part
-# not neccessary but will provide autocompletion in IDEs.
-part = Part(part.com_object)
+document = PartDocument(caa.active_document.com_object)
+part = Part(document.part.com_object)
 bodies = part.bodies
+# Note: It's not necessary to explicitly use the PartDocument or the Part class
+# with the com_object. It's perfectly fine to write it like this:
+#   document = caa.active_document
+#   part = document.part
+# But declaring 'document' and 'part' this way, your linter can't resolve the
+# product reference, see https://github.com/evereux/pycatia/issues/107#issuecomment-1336195688
 
-# warning, if you have several bodies with the same name the first will always be chosen.
-body_cube_1 = bodies.get_item_by_name("Body.Cube.1")
-body_cube_2 = bodies.get_item_by_name("Body.Cube.2")
+# Warning: if you have several bodies with the same name the first will always be chosen.
+body_cube_1_item = bodies.get_item_by_name("Body.Cube.1")
+assert isinstance(body_cube_1_item, Body)
+body_cube_1 = Body(body_cube_1_item.com_object)
+
+body_cube_2_item = bodies.get_item_by_name("Body.Cube.2")
+assert isinstance(body_cube_2_item, Body)
+body_cube_2 = Body(body_cube_2_item.com_object)
 
 part.in_work_object = body_cube_1
-
 shapes_body_cube_1 = body_cube_1.shapes
 hybrid_bodies_cube_1 = body_cube_1.hybrid_bodies
 hybrid_shapes_cube_1 = body_cube_1.hybrid_shapes
 
 shape_factory = part.shape_factory
-
 shape_factory.add_new_add(body_cube_2)
