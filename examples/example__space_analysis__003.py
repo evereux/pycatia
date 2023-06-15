@@ -2,12 +2,18 @@
 
 """
 
-    Example - Space Analysis - 003:
+    Example - Space Analysis - 003
 
-    Find all points in the CATPart and print to console -> and export to csv.
+    Description:
+        Find all points in the CATPart and print to console -> and export to csv.
 
-    This will only work if you have language set to English. Further reading:
-    https://github.com/evereux/pycatia/issues/93
+    Requirements:
+        - CATIA running.
+        - Tests already setup.
+    
+    Warnings:
+        - This will only work if you have language set to English. Further reading:
+          https://github.com/evereux/pycatia/issues/93
 
 """
 

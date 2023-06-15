@@ -2,9 +2,13 @@
 
 """
 
-    Example - Hybrid Shape Factory - 003:
+    Example - Hybrid Shape Factory - 003
 
-    Draw a line between two points.
+    Description:
+        Draws a line between two points.
+
+    Requirements:
+        - CATIA running.
 
 """
 

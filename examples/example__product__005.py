@@ -2,9 +2,14 @@
 
 """
 
-    Example - Prodcut - 005:
+    Example - Product - 005
 
-    Loop through a CATProduct and find if sub component is a CATPart or CATProduct.
+    Description:
+        Loop through a CATProduct and find if sub component is a CATPart or CATProduct.
+
+    Requirements:
+        - CATIA running.
+        - Tests already setup.
 
 """
 

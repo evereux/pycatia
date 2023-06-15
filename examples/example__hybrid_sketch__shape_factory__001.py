@@ -2,9 +2,13 @@
 
 """
 
-    Example - Hybrid Sketch & Shape Factory - 001:
+    Example - Hybrid Sketch & Shape Factory - 001
 
-    Creates a square in a sketch and fully constrains it. Sketch then used to pad.
+    Description:
+        Creates a square in a sketch and fully constrains it. Sketch then used to pad.
+
+    Requirements:
+        - CATIA running.        
 
 """
 

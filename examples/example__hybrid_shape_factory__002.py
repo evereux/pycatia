@@ -1,17 +1,16 @@
 #! /usr/bin/python3.9
 
 """
-    Example - Hybrid Shape Factory - 002:
+    Example - Hybrid Shape Factory - 002
 
-    Creates a new CATIA file.
+    Description:
+        Creates a new CATIA file and reads a csv file containing point data and adds to the new catia part.
+        Formatting of csv data should be:
+            <point_name>,<x coordinate>,<y coordinate>,<z coordinate>
+        There should be no column name headers, just raw point data.
 
-    Reads a csv file containing point data and adds to the new catia part.
-
-
-    Formatting of csv data should be:
-        <point_name>,<x coordinate>,<y coordinate>,<z coordinate>
-
-    There should be no column name headers, just raw point data.
+    Requirements:
+        - CATIA running.
 
 """
 

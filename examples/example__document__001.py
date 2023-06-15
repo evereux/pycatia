@@ -2,9 +2,14 @@
 
 """
 
-    Example - Document - 001:
+    Example - Document - 001
 
-    Use the context manager to open CATIA documents and close
+    Description:
+        Use the context manager to open CATIA documents and close
+
+    Requirements:
+        - CATIA running.
+        - Tests already setup.
 
 """
 

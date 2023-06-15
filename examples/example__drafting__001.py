@@ -1,10 +1,14 @@
 #! /usr/bin/python3.9
 
 """
+    
+    Example - Drafting - 001
 
-    Example 17:
+    Description:
+        Drafting: Create a border template in the background view of the currently opened A0 landscape CATDrawing.
 
-    Drafting: create a border template in the background view of the currently opened A0 landscape CATDrawing.
+    Requirements:
+        - An open empty drafting document (landscape, A0).
 
 """
 

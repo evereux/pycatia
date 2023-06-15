@@ -2,9 +2,13 @@
 
 """
 
-    Example - Logging - 001:
+    Example - Logging - 001
 
-    Logging.
+    Description:
+        Logging.
+
+    Requirements:
+        - CATIA running.
 
 """
 
