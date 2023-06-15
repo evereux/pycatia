@@ -18,8 +18,10 @@ sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 import os
+from pathlib import Path
 
 from pycatia import CATIADocHandler
+from pycatia.in_interfaces.document import Document
 
 # make these directories the full pathname.
 source_directory = "tests/cat_files"
@@ -40,7 +42,10 @@ for root, dirs, files in os.walk(source_directory):
             with CATIADocHandler(file_name) as caa:
                 file_ext = "igs"
                 document = caa.document
+                assert isinstance(document, Document)
+
                 # create the full name of the target file, minus extension.
-                target_file = os.path.join(target_directory, os.path.splitext(file)[0]) + "." + file_ext
+                target_file = Path(target_directory, os.path.splitext(file)[0] + "." + file_ext)
+
                 # create the igs file in the __junk__ directory.
                 document.export_data(target_file, file_ext)

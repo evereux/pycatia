@@ -19,16 +19,20 @@ sys.path.insert(0, os.path.abspath("..\\pycatia"))
 
 from pycatia import catia
 from pycatia.product_structure_interfaces.product import Product
-
+from pycatia.product_structure_interfaces.product_document import ProductDocument
 
 caa = catia()
 documents = caa.documents
 documents.open(r"tests\cat_files\product_top.CATProduct")
-document = caa.active_document
+document = ProductDocument(caa.active_document.com_object)
+product = Product(document.product.com_object)
+# Note: It's not necessary to explicitly use the ProductDocument or the Product class
+# with the com_object. It's perfectly fine to write it like this:
+#   document = caa.active_document
+#   product = document.product
+# But declaring 'document' and 'product' this way, your linter can't resolve the
+# product reference, see https://github.com/evereux/pycatia/issues/107#issuecomment-1336195688
 
-product = document.product
-# not neccessary but will provide autocompletion in IDEs.
-product = Product(product.com_oject)
 products = product.products
 
 for product in products:
