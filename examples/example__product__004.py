@@ -2,10 +2,15 @@
 
 """
 
-    Example - Product - 004:
+    Example - Product - 004
 
-    Get the position matrix of products (CATPart or CATProduct) in product.
+    Description:
+        Get the position matrix of products (CATPart or CATProduct) in product.
 
+    Requirements:
+        - CATIA running.
+        - Tests already setup.
+    
 """
 
 ##########################################################

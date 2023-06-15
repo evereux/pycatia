@@ -2,12 +2,14 @@
 
 """
 
-    Example - Parameters - 001:
+    Example - Parameters - 001
 
-    Access the CATIA COM object with a .CATPart open and and display
-    each parameter along with its name, value and its associated parameter set.
+    Description:
+        Access the CATIA COM object with a .CATPart open and and display
+        each parameter along with its name, value and its associated parameter set.
 
-    # todo: need to create a source part to support this example.
+    Requirements:
+        - CATIA running.
 
 """
 

@@ -2,13 +2,14 @@
 
 """
 
-    Example - Hybrid Shape Factory - 005:
+    Example - Hybrid Shape Factory - 005
 
-    GSD: Split a surface using a plane.
+    Description:
+        GSD: Split a surface using a plane.
 
-    Requirements: Geometrical set named "ConstructionGeometry". A surface
-    within the geometrical set called "Surface.1" that can be split by the
-    origin ZX plane.
+    Requirements:
+        - A geometrical set named "ConstructionGeometry".
+        - A surface within the geometrical set called "Surface.1" that can be split by the origin ZX plane.
 
 """
 

@@ -2,13 +2,17 @@
 
 """
 
-    Example - Specs And Geometry Window - 001:
+    Example - Specs And Geometry Window - 001
 
-    Loop through all the CATParts in a directory and save PLAN VIEW, SIDE VIEW,
-    END VIEW and ISO pngs for each part.
+    Description:
+        Loop through all the CATParts in a directory and save PLAN VIEW, SIDE VIEW,
+        END VIEW and ISO PNGs for each part.
+        The tree is turned off and the background turned white for the screen
+        capture and then turned back on.
 
-    The tree is turned off and the background turned white for the screen
-    capture and then turned back on.
+    Requirements:
+        - CATIA running.
+        - Tests already setup.
 
 """
 

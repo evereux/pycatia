@@ -2,9 +2,14 @@
 
 """
 
-    Example 11:
+    Example - Product - 002
 
-    Move the first child in product.
+    Description:
+        Move the first child in product.
+
+    Requirements:
+        - CATIA running.
+        - Tests already setup.
 
 """
 

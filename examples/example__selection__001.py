@@ -2,11 +2,15 @@
 
 """
 
-    Example - Selection - 001:
+    Example - Selection - 001
 
-    Prompt the user to select a product and get it's bounding box parameters
+    Description:
+        Prompt the user to select a product and get it's bounding box parameters
 
-    .. warning:
+    Requirements:
+        - An open product document with selectable children.        
+
+    Warnings:
         Currently there must be NO other existing Measure Inertias saved
         ANYWHERE in your product tree as these may be returned and not
         product you have selected.

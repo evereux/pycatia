@@ -2,9 +2,14 @@
 
 """
 
-    Example - Space Analysis - 001:
+    Example - Space Analysis - 001
 
-    Get the center of gravity for the part body 'PartBody'.
+    Description:
+        Get the center of gravity for the part body 'PartBody'.
+
+    Requirements:
+        - CATIA running.
+        - Tests already setup.
 
 """
 

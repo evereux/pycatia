@@ -2,19 +2,19 @@
 
 """
 
-    Example - Hybrid Shape Factory - 004:
+    Example - Hybrid Shape Factory - 004
 
-    Loops through the items in hybrid body "Lines" and determine the object type using selection.
+    Description:
+        Loops through the items in hybrid body "Lines" and determine the object type using selection.
+        Once determined create an object from it and find it's parent(s).
 
-    Once determined create an object from it and find it's parent(s)
+    Requirements:
+        - An active part document open with a geometrical set called "construction_geometry" containing points
+          generated using HybridShapePtCoord and line generated using HybridShapeLinePtPt:
 
-    Requires an active part document open with a geometrical set called
-    "construction_geometry" containing points generated using HybridShapePtCoord
-    and line generated using HybridShapeLinePtPt
-
-    Part
-       |- MasterGeometry
-         |- Points
+            Part
+            |- MasterGeometry
+                |- Points
 
 """
 

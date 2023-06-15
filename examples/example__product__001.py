@@ -2,10 +2,43 @@
 
 """
 
-    Example - Product - 001:
+    Example - Product - 001
 
-    .. warning::
+    Description:
+        Assembly Design: Reorder a Product tree alphabetically. The Product shall already be loaded.
+        Sort a product tree like this:
 
+            Product1
+                |- Product2 (Product2.1)
+                |- Product3 (Product3.1)
+                |- Product4 (Product4.1)
+                |- Part1 (Part1.1)
+                |- Part3 (Part3.1)
+                |- Part2 (Part2.1)
+                |- Product2 (Product2.2)
+                |- Product2 (Product2.3)
+                |- Part3 (Part3.2)
+                |- Part3 (Part3.3)
+
+        To this:
+
+            Product1
+                |- Part1 (Part1.1)
+                |- Part2 (Part2.1)
+                |- Part3 (Part3.1)
+                |- Part3 (Part3.2)
+                |- Part3 (Part3.3)
+                |- Product2 (Product2.1)
+                |- Product2 (Product2.2)
+                |- Product2 (Product2.3)
+                |- Product3 (Product3.1)
+                |- Product4 (Product4.1)
+
+    Requirements:
+        - pywinauto installed (pip install pywinauto).
+        - An open product document with children that need sorting.
+        
+    Warnings:
         With regards to pycatia this example only shows how to select the root
         product. The rest is handled by pywinauto. _https://pywinauto.github.io/
 
@@ -13,38 +46,6 @@
         Also, the placement of `from pywinauto import Desktop` is important.
 
         This seems to fragile. Sometimes it works for me sometimes it doesn't.
-
-
-    Assembly Design: Reorder a Product tree alphabetically. The Product shall
-    already be loaded.
-
-    Sort a product tree like this:
-
-    Product1
-        |- Product2 (Product2.1)
-        |- Product3 (Product3.1)
-        |- Product4 (Product4.1)
-        |- Part1 (Part1.1)
-        |- Part3 (Part3.1)
-        |- Part2 (Part2.1)
-        |- Product2 (Product2.2)
-        |- Product2 (Product2.3)
-        |- Part3 (Part3.2)
-        |- Part3 (Part3.3)
-
-    To this:
-
-    Product1
-        |- Part1 (Part1.1)
-        |- Part2 (Part2.1)
-        |- Part3 (Part3.1)
-        |- Part3 (Part3.2)
-        |- Part3 (Part3.3)
-        |- Product2 (Product2.1)
-        |- Product2 (Product2.2)
-        |- Product2 (Product2.3)
-        |- Product3 (Product3.1)
-        |- Product4 (Product4.1)
 
 """
 
