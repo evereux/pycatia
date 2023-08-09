@@ -397,6 +397,15 @@ Prompt the user to select a product and get it's bounding box parameters
 `Selection - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__selection__001.py>`_
 
 
+Selection - Example 2
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Usage of the Selection.select_element2 class method which accepts two selection inputs.
+
+`Selection - 002 <https://github.com/evereux/pycatia/blob/master/examples/example__selection__002.py>`_
+
+
+
 .. _Example Shape Factory:
 
 SHAPE FACTORY EXAMPLES
