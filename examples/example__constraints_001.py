@@ -1,11 +1,15 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
 
-    Example - Constraints - 001:
+    Example - Constraints - 001
 
-    Fix the first Sub Product in Product using constraints. The Sketch examples
-    also show further usage of constraints.
+    Description:
+        Fix the first Sub Product in Product using constraints.
+        The Sketch examples also show further usage of constraints.
+
+    Requirements:
+        - An open product document with at least two parts inside.
 
 """
 
@@ -15,21 +19,26 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
-from pycatia.product_structure_interfaces.product import Product
 from pycatia.enumeration.enumeration_types import cat_constraint_type
+from pycatia.product_structure_interfaces.product import Product
+from pycatia.product_structure_interfaces.product_document import ProductDocument
 
 caa = catia()
-document = caa.active_document
-product = document.product
-# not neccessary but will provide autocompletion in IDEs.
-product = Product(product.com_object)
-constraints = product.constraints()
+document = ProductDocument(caa.active_document.com_object).product
+product = Product(document.com_object)
+# Note: It's not necessary to explicitly use the ProductDocument or the Product class
+# with the com_object. It's perfectly fine to write it like this:
+#   document = caa.active_document
+#   product = document.product
+# But declaring 'document' and 'product' this way, your linter can't resolve the
+# product reference, see https://github.com/evereux/pycatia/issues/107#issuecomment-1336195688
 
 products = product.products
+constraints = product.constraints()
 sub_prod_1 = products.item(1)
 ref_sub_prod_1 = sub_prod_1.reference_product
 

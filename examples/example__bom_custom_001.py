@@ -1,10 +1,14 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
 
-    Example - BOM CUSTOM - 001:
+    Example - BOM CUSTOM - 001
 
-    Create a custom formatted html of the product tree.
+    Description:
+        Create a custom formatted html of the product tree.
+
+    Requirements:
+        - An open product document with parts inside.
 
 """
 
@@ -14,7 +18,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from collections import Counter
@@ -22,14 +26,18 @@ from datetime import datetime
 
 from pycatia import catia
 from pycatia.product_structure_interfaces.product import Product
-
+from pycatia.product_structure_interfaces.product_document import ProductDocument
 
 caa = catia()
-document = caa.active_document
-product = document.product
-# not neccessary but will provide autocompletion in IDEs.
-product = Product(product.com_object)
+document = ProductDocument(caa.active_document.com_object).product
+product = Product(document.com_object)
 products = product.products
+# Note: It's not necessary to explicitly use the ProductDocument or the Product class
+# with the com_object. It's perfectly fine to write it like this:
+#   document = caa.active_document
+#   product = document.product
+# But declaring 'document' and 'product' this way, your linter can't resolve the
+# product reference, see https://github.com/evereux/pycatia/issues/107#issuecomment-1336195688
 
 part_numbers = []
 prd_dict = {}
@@ -86,5 +94,5 @@ html += """
     </body>
 </html>"""
 
-with open((product.part_number + '.html'), 'w') as f:
+with open((product.part_number + ".html"), "w") as f:
     f.write(html)
