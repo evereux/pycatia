@@ -1,11 +1,14 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
 
-    Example - Shape Factory - 002:
+    Example - Shape Factory - 002
 
-    Mirror the main body of the part.
-    This requires CATIA running with an open part with an non-empty main body.
+    Description:
+        Mirror the main body of the part.
+
+    Requirements:
+        - CATIA running with an open part with an non-empty main body.
 
 """
 
@@ -15,7 +18,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
