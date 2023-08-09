@@ -1,10 +1,15 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
 
-    Example - Document - 001:
+    Example - Document - 001
 
-    Use the context manager to open CATIA documents and close
+    Description:
+        Use the context manager to open CATIA documents and close
+
+    Requirements:
+        - CATIA running.
+        - Tests already setup.
 
 """
 
@@ -14,14 +19,14 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 import time
 
 from pycatia import CATIADocHandler
 
-catia_part = r'tests\cat_files\part_measurable.CATPart'
+catia_part = r"tests\cat_files\part_measurable.CATPart"
 
 with CATIADocHandler(catia_part) as caa:
     document = caa.document

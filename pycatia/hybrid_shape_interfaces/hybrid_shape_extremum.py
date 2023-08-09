@@ -226,7 +226,7 @@ class HybridShapeExtremum(HybridShape):
         :param Reference reference_element:
         """
 
-        self.hybrid_shape_extremum.ReferenceElement = reference_element
+        self.hybrid_shape_extremum.ReferenceElement = reference_element.com_object
 
     def __repr__(self):
         return f'HybridShapeExtremum(name="{ self.name }")'
