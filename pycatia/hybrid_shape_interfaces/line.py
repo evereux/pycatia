@@ -106,7 +106,7 @@ class Line(HybridShape):
         :param Reference reference_element:
         """
 
-        self.line.SecondUptoElem = reference_element
+        self.line.SecondUptoElem = reference_element.com_object
 
     def get_direction(self) -> tuple:
         """
