@@ -1,17 +1,17 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
 
-    Example - Material - 001:
+    Example - Material - 001
 
-    CATMatInterfaces
+    Description:
         Opens the material catalog and retrieves the first few materials.
         Creates a new part and applies the material to the part, the main
         body and a hybrid body.
         Creates a new product and applies the material to it.
 
-
-    Requirements: CATIA running. 
+    Requirements:
+        - CATIA running.
 
 """
 
@@ -51,14 +51,8 @@ for i in range(1, materials.count):
     material = materials.item(i)
     material_list.append(material)
 
-print(
-    f"Found {material_families.count} material families: "
-    f"{', '.join([n.name for n in material_families_list])}."
-)
-print(
-    f"Found {materials.count} materials in the first family: "
-    f"{', '.join([n.name for n in material_list])}."
-)
+print(f"Found {material_families.count} material families: " f"{', '.join([n.name for n in material_families_list])}.")
+print(f"Found {materials.count} materials in the first family: " f"{', '.join([n.name for n in material_list])}.")
 
 
 ##########################################################
@@ -77,20 +71,12 @@ material_manager = MaterialManager(material_item.com_object)
 print("Removing all materials ...")
 material_manager.apply_material_on_body(i_body=main_body, i_material=None)
 material_manager.apply_material_on_part(i_part=part, i_material=None)
-material_manager.apply_material_on_hybrid_body(
-    i_hybrid_body=hybrid_body, i_material=None
-)
+material_manager.apply_material_on_hybrid_body(i_hybrid_body=hybrid_body, i_material=None)
 
 print("Adding materials with link ...")
-material_manager.apply_material_on_part(
-    i_part=part, i_material=material_list[0], i_link_mode=True
-)
-material_manager.apply_material_on_body(
-    i_body=main_body, i_material=material_list[1], i_link_mode=True
-)
-material_manager.apply_material_on_hybrid_body(
-    i_hybrid_body=hybrid_body, i_material=material_list[2], i_link_mode=True
-)
+material_manager.apply_material_on_part(i_part=part, i_material=material_list[0], i_link_mode=True)
+material_manager.apply_material_on_body(i_body=main_body, i_material=material_list[1], i_link_mode=True)
+material_manager.apply_material_on_hybrid_body(i_hybrid_body=hybrid_body, i_material=material_list[2], i_link_mode=True)
 
 material_1 = material_manager.get_material_on_part(i_part=part)
 print(
@@ -125,9 +111,7 @@ print("Removing material ...")
 material_manager.apply_material_on_product(i_product=product, i_material=None)
 
 print("Adding material with link ...")
-material_manager.apply_material_on_product(
-    i_product=product, i_material=material_list[3], i_link_mode=True
-)
+material_manager.apply_material_on_product(i_product=product, i_material=material_list[3], i_link_mode=True)
 
 material_4 = material_manager.get_material_on_product(i_product=product)
 print(

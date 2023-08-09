@@ -1,20 +1,20 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
 
-    Example - Hybrid Shape Factory - 004:
+    Example - Hybrid Shape Factory - 004
 
-    Loops through the items in hybrid body "Lines" and determine the object type using selection.
+    Description:
+        Loops through the items in hybrid body "Lines" and determine the object type using selection.
+        Once determined create an object from it and find it's parent(s).
 
-    Once determined create an object from it and find it's parent(s)
+    Requirements:
+        - An active part document open with a geometrical set called "construction_geometry" containing points
+          generated using HybridShapePtCoord and line generated using HybridShapeLinePtPt:
 
-    Requires an active part document open with a geometrical set called
-    "construction_geometry" containing points generated using HybridShapePtCoord
-    and line generated using HybridShapeLinePtPt
-
-    Part
-       |- MasterGeometry
-         |- Points
+            Part
+            |- MasterGeometry
+                |- Points
 
 """
 
@@ -24,26 +24,32 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
 from pycatia.hybrid_shape_interfaces.hybrid_shape_line_pt_pt import HybridShapeLinePtPt
-from pycatia.hybrid_shape_interfaces.hybrid_shape_point_coord import HybridShapePointCoord
+from pycatia.hybrid_shape_interfaces.hybrid_shape_point_coord import (
+    HybridShapePointCoord,
+)
 from pycatia.mec_mod_interfaces.part import Part
-
+from pycatia.mec_mod_interfaces.part_document import PartDocument
 
 caa = catia()
-document = caa.active_document
-part = document.part
-# not neccessary but will provide autocompletion in IDEs.
-part = Part(part.com_object)
+document = PartDocument(caa.active_document.com_object)
+part = Part(document.part.com_object)
+# Note: It's not necessary to explicitly use the PartDocument or the Part class
+# with the com_object. It's perfectly fine to write it like this:
+#   document = caa.active_document
+#   part = document.part
+# But declaring 'document' and 'part' this way, your linter can't resolve the
+# product reference, see https://github.com/evereux/pycatia/issues/107#issuecomment-1336195688
+
 hbs = part.hybrid_bodies
 hb_construction_lines = hbs.item("construction_geometry")
 hss = hb_construction_lines.hybrid_shapes
 
 for shape_index in range(1, hss.count + 1):
-
     hs = hss.item(shape_index)
 
     # clear the selection on each loop.
@@ -54,7 +60,7 @@ for shape_index in range(1, hss.count + 1):
     selected_elem = document.selection.item(1)
 
     # test part only has HybridShapeLinePtPt
-    if selected_elem.type == 'HybridShapeLinePtPt':
+    if selected_elem.type == "HybridShapeLinePtPt":
         # to create the HybridShapeLinePtPt object we need to use the hybrid_shape com_object.
         hs_line_pt_pt = HybridShapeLinePtPt(hs.com_object)
 
