@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.5.9
+
+* Added missing com_oject to references in navigator_interfaces. (@evereux & @marciolrc)
+* Fixed reference plane method in HybridShapePlaneAngle. (@Mithro86)
+* Updates to examples to include latest supported python version. Also fix IDE autocompletion & syntax highlighting 
+ issues. (@deloarts)
+*  
+
 ## 0.5.8
 
 * Added new document type CatalogDocument.
