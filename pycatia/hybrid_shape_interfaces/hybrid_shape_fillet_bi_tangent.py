@@ -339,7 +339,7 @@ class HybridShapeFilletBiTangent(HybridShape):
         :param Reference reference_element:
         """
 
-        self.hybrid_shape_fillet_bi_tangent.SecondElem = reference_element
+        self.hybrid_shape_fillet_bi_tangent.SecondElem = reference_element.com_object
 
     @property
     def second_law_relimiter(self) -> Reference:
