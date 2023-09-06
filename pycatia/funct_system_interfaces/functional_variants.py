@@ -115,7 +115,7 @@ class FunctionalVariants(Collection):
                 |          Dim Act2 As FunctionalVariant
                 |          Set Act2 = Desc.Variant("Adding new substance")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: FunctionalVariant
         :rtype: FunctionalVariant
         """
