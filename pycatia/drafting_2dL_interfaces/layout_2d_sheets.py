@@ -173,7 +173,7 @@ class Layout2DSheets(Collection):
                 |          Dim ThatLayoutSheet As Layout2DSheet
                 |          Set ThatLayoutSheet = ThisLayoutRoot.Sheets.Item("MySheet")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: Layout2DSheet
         :rtype: Layout2DSheet
         """
@@ -212,7 +212,7 @@ class Layout2DSheets(Collection):
                 |         
 ThisLayoutRoot.Layout2DSheets.Remove("SheetToBeRemoved")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: None
         :rtype: None
         """

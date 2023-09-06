@@ -127,7 +127,7 @@ class UserSurfaces(Collection):
                 |     Returns:
                 |         The user surface that is in the iIndex position in the collection
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: UserSurface
         :rtype: UserSurface
         """

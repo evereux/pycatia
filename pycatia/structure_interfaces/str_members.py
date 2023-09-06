@@ -151,7 +151,7 @@ class StrMembers(Collection):
                 |          Dim ThatMember As Member
                 |          Set ThatMember = Assembly.Item("Column_1")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: StrMember
         :rtype: StrMember
         """
@@ -188,7 +188,7 @@ class StrMembers(Collection):
                 |          Assembly_1.Remove(6)
                 |          Assembly_1.Remove("Column_1")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: None
         :rtype: None
         """

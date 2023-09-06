@@ -139,7 +139,7 @@ class FunctionalObjects(Collection):
                 |          Dim Obj2 As FunctionalObject
                 |          Set Obj2 = Desc.Object("Valve")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: FunctionalObject
         :rtype: FunctionalObject
         """

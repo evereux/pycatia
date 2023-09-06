@@ -81,7 +81,7 @@ class Annotations(Collection):
                 |     Retrieves an Annotation managing by CATIAAnnotation. Deprecated method:
                 |     Item method is replaced by Item2 has.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: Annotation
         :rtype: Annotation
         """
@@ -97,7 +97,7 @@ class Annotations(Collection):
                 | 
                 |     Retrieve an Annotation using interface CATIAAnnotation2
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: AnyObject
         :rtype: AnyObject
         """

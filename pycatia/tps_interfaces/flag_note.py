@@ -128,7 +128,7 @@ class FlagNote(AnyObject):
                 |     Deprecated:
                 |         V5-6R2017 This method is replaced by FlagNote.GetNbrURL2
 
-        :param CATVariant o_number_of_url:
+        :param cat_variant o_number_of_url:
         :return: None
         :rtype: None
         """
@@ -188,7 +188,7 @@ class FlagNote(AnyObject):
                 |             index of the URL to modify.
 
         :param str i_url:
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: None
         :rtype: None
         """
@@ -224,7 +224,7 @@ class FlagNote(AnyObject):
                 |         iIndex
                 |             position of the URL to remove.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: None
         :rtype: None
         """
@@ -277,7 +277,7 @@ class FlagNote(AnyObject):
                 |         oUrl
                 |             URL
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: str
         :rtype: str
         """

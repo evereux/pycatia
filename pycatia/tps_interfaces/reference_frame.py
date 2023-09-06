@@ -188,7 +188,7 @@ class ReferenceFrame(AnyObject):
                 |           HRESULT    S_OK : the Degrees Of Freedom has been correctly retrieved.
                 |             E_FAIL or E_NOIMPL : the Degrees Of Freedom cannot be retrieved.
 
-        :param CATVariant in_box:
+        :param cat_variant in_box:
         :param str o_value:
         :return: None
         :rtype: None
@@ -298,7 +298,7 @@ class ReferenceFrame(AnyObject):
                 |           HRESULT    S_OK : the Degrees Of Freedom has been correctly set.
                 |             E_FAIL or E_NOIMPL : the Degrees Of Freedom cannot be set.
 
-        :param CATVariant in_box:
+        :param cat_variant in_box:
         :param str i_value:
         :return: None
         :rtype: None

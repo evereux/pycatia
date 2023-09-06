@@ -50,7 +50,7 @@ class TPSViews(Collection):
                 | 
                 |     Retrieve a TPS View.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: AnyObject
         :rtype: AnyObject
         """

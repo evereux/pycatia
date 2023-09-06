@@ -420,7 +420,7 @@ class Layout2DViews(Collection):
                 |          Dim ThatLayout2DView As Layout2DView
                 |          Set ThatLayout2DView = MySheet.Views.ActiveView.Item("MyView")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: Layout2DView
         :rtype: Layout2DView
         """
@@ -460,7 +460,7 @@ class Layout2DViews(Collection):
                 |      MySheet.ActiveViews.Remove(3)
                 |      MySheet.ActiveViews.Remove("TopView")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: None
         :rtype: None
         """
