@@ -1061,9 +1061,9 @@ class ABQJob(AnyObject):
                 | 
                 |         Example:
                 |             This example sets the user subroutine path for the myJob job to
-                |             "D:\UserSub".
+                |             "D:/UserSub".
                 | 
-                |              myJob.UserSubroutine = "D:\UserSub"
+                |              myJob.UserSubroutine = "D:/UserSub"
 
         :return: str
         :rtype: str

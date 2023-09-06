@@ -67,7 +67,7 @@ class BasicComponents(Collection):
         :return: BasicComponent
         :rtype: BasicComponent
         """
-        return BasicComponent(self.basic_components.Item(i_variant.com_object))
+        return BasicComponent(self.basic_components.Item(i_variant))
 
     def __repr__(self):
         return f'BasicComponents(name="{self.name}")'

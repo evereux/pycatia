@@ -311,7 +311,7 @@ class AnalysisManager(AnyObject):
                 |         mandatory for this object.
                 | 
                 |          Dim arrayOfVariant(0)
-                |          FileToOpen = "e:\users\Parts\ThisIsANicePart.CATPart"
+                |          FileToOpen = "e:/users/Parts/ThisIsANicePart.CATPart"
                 |          ObjectForImport = "CATAnalysisImport"
                 |          Dim AnalysisDocument As Document
                 |          Set AnalysisDocument = CATIA.ActiveDocument
@@ -360,7 +360,7 @@ class AnalysisManager(AnyObject):
                 |             The following example imports an CATPart document stored as
                 |             FileToOpen file.
                 | 
-                |              FileToOpen = "e:\users\Parts\ThisIsANicePart.CATPart"
+                |              FileToOpen = "e:/users/Parts/ThisIsANicePart.CATPart"
                 |              Dim AnalysisDocument As Document
                 |              Set AnalysisDocument = CATIA.ActiveDocument
                 |              Dim RootAnalysis As AnalysisManager
