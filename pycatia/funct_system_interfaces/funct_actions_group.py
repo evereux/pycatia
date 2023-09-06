@@ -212,7 +212,7 @@ class FunctActionsGroup(AnyObject):
                 |          Dim Act2 As FunctionalAction
                 |          Set Act2 = ActionsGrp.Retrieve("Reduces noise")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: FunctionalAction
         :rtype: FunctionalAction
         """

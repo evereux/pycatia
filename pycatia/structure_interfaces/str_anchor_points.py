@@ -61,7 +61,7 @@ class StrAnchorPoints(Collection):
                 |     Returns:
                 |         The retrieved anchor point
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: StrAnchorPoint
         :rtype: StrAnchorPoint
         """

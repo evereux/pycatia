@@ -369,7 +369,7 @@ class AssemblyFeatures(Collection):
                 |          Dim lastAssemblyFeat As AssemblyFeature
                 |          Set lastAssemblyFeat = assemblyFeats.Item(assemblyFeats.Count)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: AssemblyFeature
         :rtype: AssemblyFeature
         """
@@ -403,7 +403,7 @@ class AssemblyFeatures(Collection):
                 | 
                 |          assemblyFeats.Remove(assemblyFeats.Count)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: None
         :rtype: None
         """
