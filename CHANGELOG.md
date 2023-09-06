@@ -5,9 +5,10 @@
 * Added the following new modules:
     * abq_automation_interfaces
     * analysis_interfaces
-    * drafting_2dl_interfaces
+    * arrangement_interfaces
     * assembly_interfaces
     * composites_interfaces
+    * drafting_2dl_interfaces
     * reporter_interfaces
     * structure_interfaces
     * threeDxml_interfaces
