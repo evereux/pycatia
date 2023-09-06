@@ -95,7 +95,7 @@ class MaterialFamilies(Collection):
                 |      Dim MyMaterialFamily As MaterialFamily
                 |      Set MyMaterialFamily = MaterialFamilies.Item(6)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: MaterialFamily
         :rtype: MaterialFamily
         """
@@ -131,7 +131,7 @@ class MaterialFamilies(Collection):
                 |      Set MyDocument = Documents.Open(FileToOpen)
                 |      MyDocument.MaterialFamilies.Remove(2)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: None
         :rtype: None
         """

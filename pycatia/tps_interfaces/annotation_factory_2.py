@@ -295,8 +295,8 @@ class AnnotationFactory2(Factory):
                 |             The new created Dimension.
 
         :param UserSurface i_surf:
-        :param CATVariant i_type:
-        :param CATVariant i_sub_type:
+        :param cat_variant i_type:
+        :param cat_variant i_sub_type:
         :return: Annotation2
         :rtype: Annotation2
         """
@@ -347,8 +347,8 @@ class AnnotationFactory2(Factory):
                 |             The new created Dimension.
 
         :param UserSurface i_surf:
-        :param CATVariant i_type:
-        :param CATVariant i_sub_type:
+        :param cat_variant i_type:
+        :param cat_variant i_sub_type:
         :return: Annotation2
         :rtype: Annotation2
         """
@@ -470,7 +470,7 @@ class AnnotationFactory2(Factory):
                 | 
                 |     Create a Tolerance With a Reference Frame DRF. iType = 1 : Angularity
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :param UserSurface i_surf:
         :param Annotation2 i_drf:
         :return: Annotation2
@@ -490,7 +490,7 @@ class AnnotationFactory2(Factory):
                 | 
                 |     Create a Tolerance Without a Reference Frame (DRF). iType = 1 : Straightness 2 : AxisStraightness 3 : Flatness 4 : Circularity 5 : Cylindricity 6 : ProfileOfALine 7 : ProfileOfASurface 8 : Position
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :param UserSurface i_surf:
         :return: Annotation2
         :rtype: Annotation2
