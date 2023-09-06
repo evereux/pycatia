@@ -10,6 +10,7 @@
     * composites_interfaces
     * reporter_interfaces
     * structure_interfaces
+    * threeDxml_interfaces
 
 ## 0.5.9
 
