@@ -1,19 +1,29 @@
 # Changelog
 
+## 0.6.0
+
+* Added the following new modules:
+    * abq_automation_interfaces
+    * analysis_interfaces
+    * reporter_interfaces
+    * assembly_interfaces
+    * structure_interfaces
+    * drafting_2dl_interfaces
+
 ## 0.5.9
 
 * Added missing com_oject to references in navigator_interfaces. (@evereux & @marciolrc)
 * Fixed reference plane method in HybridShapePlaneAngle. (@Mithro86)
-* Updates to examples to include latest supported python version. Also fix IDE autocompletion & syntax highlighting 
- issues. (@deloarts)
-*  
+* Updates to examples to include latest supported python version. Also fix IDE autocompletion & syntax highlighting
+  issues. (@deloarts)
+*
 
 ## 0.5.8
 
 * Added new document type CatalogDocument.
 * Added new document type CATMaterial.
-* fixed method for AxisSystem.origin_point, AxisSystem.x_axis_direction, AxisSystem.y_axis_direction and 
- AxisSystem.z_axis_direction. (@Mithro86)
+* fixed method for AxisSystem.origin_point, AxisSystem.x_axis_direction, AxisSystem.y_axis_direction and
+  AxisSystem.z_axis_direction. (@Mithro86)
 * Added warning to example__assembly_convertor__001.py for when writing to files. (@deloarts)
 * fixed method for Limit.limiting_element(). (@ptm-tm)
 
@@ -23,8 +33,7 @@
 * fixed method for AxisSystem.get_vectors(). (@Mithro86)
 * Partial fix to Selection.indicate_or_select_element_3d(). (@Mithro86)
 * added pathlib.Path to DrawingPictures.add().
-  * now tries to get the Windows absolute path from input as CATIA may not be 
-  able to otherwise find the file. 
+    * now tries to get the Windows absolute path from input as CATIA may not be able to otherwise find the file.
 * References to python 3.6 now updated to 3.9 due to type annotation support.
 * fixed method for Line.get_direction(). (@Mithro86)
 
@@ -49,8 +58,8 @@
 
 ## 0.5.3
 
-* fixed methods in pycatia/mec_mod_interfaces/axis_system and pycatia/mec_mod_interfaces/cylindrical_face.py
-  that required mapping to VBA methods.
+* fixed methods in pycatia/mec_mod_interfaces/axis_system and pycatia/mec_mod_interfaces/cylindrical_face.py that
+  required mapping to VBA methods.
 
 ## 0.5.2
 
