@@ -123,7 +123,7 @@ class FunctAssociations(Collection):
                 |          Dim Assoc2 As FunctAssociation
                 |          Set Assoc2 = FacetMRM.Associations.Elem("Skeleton 2D")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: FunctAssociation
         :rtype: FunctAssociation
         """

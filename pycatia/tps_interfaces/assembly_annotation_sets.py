@@ -49,7 +49,7 @@ class AssemblyAnnotationSets(Collection):
                 | 
                 |     Retrieve a set.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: AnyObject
         :rtype: AnyObject
         """

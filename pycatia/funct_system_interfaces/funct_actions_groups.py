@@ -127,7 +127,7 @@ class FunctActionsGroups(Collection):
                 |          Dim AG2 As FunctActionsGroup
                 |          Set AG2 = ActionsGroups.Elem("Transmission")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: FunctActionsGroup
         :rtype: FunctActionsGroup
         """

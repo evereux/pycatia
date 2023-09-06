@@ -120,7 +120,7 @@ class FunctionalActions(Collection):
                 |          Dim Act2 As FunctionalAction
                 |          Set Act2 = Desc.Action("Moves")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: FunctionalAction
         :rtype: FunctionalAction
         """
