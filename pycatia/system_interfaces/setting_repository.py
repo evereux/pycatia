@@ -206,7 +206,7 @@ class SettingRepository(SettingController):
                 |         E_FAIL: on failure
 
         :param str i_attr_name:
-        :param CATVariant i_attr:
+        :param cat_variant i_attr:
         :return: None
         """
         return self.setting_repository.PutAttr(i_attr_name, i_attr)

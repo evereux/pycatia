@@ -24,7 +24,7 @@ from .version import version
 
 __author__ = 'Paul Bourne'
 __author_email = 'evereux@gmail.com'
-__description__ = 'A python module to access the CATIA Measurable object.'
+__description__ = 'A python module to interface with the CATIA V5 COM object.'
 __name__ = "pycatia"
 __version__ = version
 __url__ = "https://github.com/evereux/pycatia"

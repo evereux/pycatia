@@ -64,7 +64,7 @@ class TPSViewFactory(AnyObject):
                 |                 3: Cut View
 
         :param Reference i_plane:
-        :param CATVariant i_view_type:
+        :param cat_variant i_view_type:
         :return: TPSView
         :rtype: TPSView
         """
