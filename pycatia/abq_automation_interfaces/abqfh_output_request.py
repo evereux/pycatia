@@ -38,7 +38,7 @@ class ABQFHOutputRequest(ABQOutputRequest):
         self.abqfh_output_request = com_object
 
     @property
-    def equally_spaced_incr(self) -> False:
+    def equally_spaced_incr(self) -> int:
         """
         .. note::
             :class: toggle
@@ -56,22 +56,22 @@ class ABQFHOutputRequest(ABQOutputRequest):
                 |             The increment number which allows the user to set output results at
                 |             this interval
 
-        :return: False
-        :rtype: False
+        :return: int
+        :rtype: int
         """
 
-        return None
+        return self.abqfh_output_request.EquallySpacedIncr
 
     @equally_spaced_incr.setter
-    def equally_spaced_incr(self, value: False):
+    def equally_spaced_incr(self, value: int):
         """
-        :param False value:
+        :param int value:
         """
 
         self.abqfh_output_request.EquallySpacedIncr = value
 
     @property
-    def every_x_incr_of_time(self) -> False:
+    def every_x_incr_of_time(self) -> int:
         """
         .. note::
             :class: toggle
@@ -89,22 +89,22 @@ class ABQFHOutputRequest(ABQOutputRequest):
                 |             The time interval which allows the user to set output results at
                 |             this interval
 
-        :return: False
-        :rtype: False
+        :return: int
+        :rtype: int
         """
 
-        return None
+        return self.abqfh_output_request.EveryXIncrOfTime
 
     @every_x_incr_of_time.setter
-    def every_x_incr_of_time(self, value: False):
+    def every_x_incr_of_time(self, value: int):
         """
-        :param False value:
+        :param int value:
         """
 
         self.abqfh_output_request.EveryXIncrOfTime = value
 
     @property
-    def output_at_def_or_all_sec_pts(self) -> False:
+    def output_at_def_or_all_sec_pts(self) -> int:
         """
         .. note::
             :class: toggle
@@ -126,22 +126,22 @@ class ABQFHOutputRequest(ABQOutputRequest):
                 |             "ABQDEFAULTSECPTS"
                 |             "ABQALLSECPTS"
 
-        :return: False
-        :rtype: False
+        :return: int
+        :rtype: int
         """
 
-        return None
+        return self.abqfh_output_request.OutputAtDefOrAllSecPts
 
     @output_at_def_or_all_sec_pts.setter
-    def output_at_def_or_all_sec_pts(self, value: False):
+    def output_at_def_or_all_sec_pts(self, value: int):
         """
-        :param False value:
+        :param int value:
         """
 
-        self.abqfh_output_request.OutputAtDefOrAllSecPts = value
+        self.abqfh_output_request.OutputAtDefOrAllSecPts = int
 
     @property
-    def pre_select_default_or_all(self) -> False:
+    def pre_select_default_or_all(self) -> int:
         """
         .. note::
             :class: toggle
@@ -164,22 +164,22 @@ class ABQFHOutputRequest(ABQOutputRequest):
                 |             "ABQPRESELECTDEFVAR"
                 |             "ABQALLVAR"
 
-        :return: False
-        :rtype: False
+        :return: None
+        :rtype: None
         """
 
-        return None
+        return self.abqfh_output_request.PreSelectDefaultOrAll
 
     @pre_select_default_or_all.setter
-    def pre_select_default_or_all(self, value: False):
+    def pre_select_default_or_all(self, value: int):
         """
-        :param False value:
+        :param int value:
         """
 
         self.abqfh_output_request.PreSelectDefaultOrAll = value
 
     @property
-    def specified_modes(self) -> False:
+    def specified_modes(self) -> int:
         """
         .. note::
             :class: toggle
@@ -196,22 +196,22 @@ class ABQFHOutputRequest(ABQOutputRequest):
                 |         iSpecifiedModes
                 |             The list of modes for which output is requested
 
-        :return: False
-        :rtype: False
+        :return: int
+        :rtype: int
         """
 
-        return None
+        return self.abqfh_output_request.SpecifiedModes
 
     @specified_modes.setter
-    def specified_modes(self, value: False):
+    def specified_modes(self, value: int):
         """
-        :param False value:
+        :param int value:
         """
 
         self.abqfh_output_request.SpecifiedModes = value
 
     @property
-    def specified_output_variables(self) -> False:
+    def specified_output_variables(self) -> int:
         """
         .. note::
             :class: toggle
@@ -230,22 +230,22 @@ class ABQFHOutputRequest(ABQOutputRequest):
                 |             user wants to request output for variables 'U' and 'S', then iVariableNameBSTR
                 |             will be "U, S"
 
-        :return: False
-        :rtype: False
+        :return: int
+        :rtype: int
         """
 
-        return None
+        return self.abqfh_output_request.SpecifiedOutputVariables
 
     @specified_output_variables.setter
-    def specified_output_variables(self, value: False):
+    def specified_output_variables(self, value: int):
         """
-        :param False value:
+        :param int value:
         """
 
         self.abqfh_output_request.SpecifiedOutputVariables = value
 
     @property
-    def specified_sec_pts(self) -> False:
+    def specified_sec_pts(self) -> int:
         """
         .. note::
             :class: toggle
@@ -263,16 +263,16 @@ class ABQFHOutputRequest(ABQOutputRequest):
                 |             The list of section points at which output is
                 |             requested
 
-        :return: False
-        :rtype: False
+        :return: int
+        :rtype: int
         """
 
-        return None
+        return self.abqfh_output_request.SpecifiedSecPts
 
     @specified_sec_pts.setter
-    def specified_sec_pts(self, value: False):
+    def specified_sec_pts(self, value: int):
         """
-        :param False value:
+        :param int value:
         """
 
         self.abqfh_output_request.SpecifiedSecPts = value

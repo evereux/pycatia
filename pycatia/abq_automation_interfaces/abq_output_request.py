@@ -68,7 +68,7 @@ class ABQOutputRequest(AnyObject):
         self.abq_output_request.ActivationStatus = value
 
     @property
-    def num_increment_frequency(self) -> False:
+    def num_increment_frequency(self) -> int:
         """
         .. note::
             :class: toggle
@@ -79,16 +79,16 @@ class ABQOutputRequest(AnyObject):
                 | 
                 |     Sets request for output results at specified increment.
 
-        :return: False
-        :rtype: False
+        :return: int
+        :rtype: int
         """
 
-        return None
+        return self.abq_output_request.NumIncrementFrequency
 
     @num_increment_frequency.setter
-    def num_increment_frequency(self, value: False):
+    def num_increment_frequency(self, value: int):
         """
-        :param False value:
+        :param int value:
         """
 
         self.abq_output_request.NumIncrementFrequency = value

@@ -182,7 +182,7 @@ class ABQIAABQBaseMotionVB(ABQBoundaryCondition):
         self.abqiaabq_base_motion_vb.DispBCSupport = value
 
     @property
-    def frequency_data_values(self) -> False:
+    def frequency_data_values(self) -> int:
         """
         .. note::
             :class: toggle
@@ -191,22 +191,22 @@ class ABQIAABQBaseMotionVB(ABQBoundaryCondition):
                 | o Property FrequencyDataValues(CATSafeArrayVariant iFreqDataVal) (Write
                 | Only)
 
-        :return: False
-        :rtype: False
+        :return: int
+        :rtype: int
         """
 
-        return None
+        return self.abqiaabq_base_motion_vb.FrequencyDataValues
 
     @frequency_data_values.setter
-    def frequency_data_values(self, value: False):
+    def frequency_data_values(self, value: int):
         """
-        :param False value:
+        :param int value:
         """
 
         self.abqiaabq_base_motion_vb.FrequencyDataValues = value
 
     @property
-    def imaginary_data_values(self) -> False:
+    def imaginary_data_values(self) -> int:
         """
         .. note::
             :class: toggle
@@ -219,18 +219,18 @@ class ABQIAABQBaseMotionVB(ABQBoundaryCondition):
         :rtype: False
         """
 
-        return None
+        return self.abqiaabq_base_motion_vb.ImaginaryDataValues
 
     @imaginary_data_values.setter
-    def imaginary_data_values(self, value: False):
+    def imaginary_data_values(self, value: int):
         """
-        :param False value:
+        :param int value:
         """
 
         self.abqiaabq_base_motion_vb.ImaginaryDataValues = value
 
     @property
-    def real_data_values(self) -> False:
+    def real_data_values(self) -> int:
         """
         .. note::
             :class: toggle
@@ -243,12 +243,12 @@ class ABQIAABQBaseMotionVB(ABQBoundaryCondition):
         :rtype: False
         """
 
-        return None
+        return self.abqiaabq_base_motion_vb.RealDataValues
 
     @real_data_values.setter
-    def real_data_values(self, value: False):
+    def real_data_values(self, value: int):
         """
-        :param False value:
+        :param int value:
         """
 
         self.abqiaabq_base_motion_vb.RealDataValues = value

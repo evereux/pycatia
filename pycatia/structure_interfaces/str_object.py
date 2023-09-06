@@ -37,7 +37,7 @@ class StrObject(Product):
         self.str_object = com_object
 
     @property
-    def type(self) -> Parameter:
+    def type_(self) -> Parameter:
         """
         .. note::
             :class: toggle
