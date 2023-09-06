@@ -5,10 +5,11 @@
 * Added the following new modules:
     * abq_automation_interfaces
     * analysis_interfaces
-    * reporter_interfaces
-    * assembly_interfaces
-    * structure_interfaces
     * drafting_2dl_interfaces
+    * assembly_interfaces
+    * composites_interfaces
+    * reporter_interfaces
+    * structure_interfaces
 
 ## 0.5.9
 
