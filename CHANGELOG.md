@@ -7,8 +7,16 @@
     * analysis_interfaces
     * arrangement_interfaces
     * assembly_interfaces
+    * behaviour_interfaces
+    * bkt_interfaces
+    * catia_v4_interfaces
     * composites_interfaces
+    * dmaps_interfaces
     * drafting_2dl_interfaces
+    * general_knowledge_interfaces
+    * kinematics_interfaces
+    * manufacturing_interfaces
+    * multi_cad_interfaces
     * reporter_interfaces
     * structure_interfaces
     * threeDxml_interfaces
