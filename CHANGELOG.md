@@ -7,6 +7,7 @@
     * analysis_interfaces
     * arrangement_interfaces
     * assembly_interfaces
+    * behaviour_interfaces
     * composites_interfaces
     * drafting_2dl_interfaces
     * reporter_interfaces
