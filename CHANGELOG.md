@@ -11,6 +11,7 @@
     * catia_v4_interfaces
     * composites_interfaces
     * drafting_2dl_interfaces
+    * multi_cad_interfaces
     * reporter_interfaces
     * structure_interfaces
     * threeDxml_interfaces
