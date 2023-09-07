@@ -8,6 +8,7 @@
     * arrangement_interfaces
     * assembly_interfaces
     * behaviour_interfaces
+    * bkt_interfaces
     * catia_v4_interfaces
     * composites_interfaces
     * drafting_2dl_interfaces
