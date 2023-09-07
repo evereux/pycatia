@@ -14,6 +14,7 @@
     * dmaps_interfaces
     * drafting_2dl_interfaces
     * general_knowledge_interfaces
+    * kinematics_interfaces
     * manufacturing_interfaces
     * multi_cad_interfaces
     * reporter_interfaces
