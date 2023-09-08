@@ -19,6 +19,7 @@
     * multi_cad_interfaces
     * reporter_interfaces
     * structure_interfaces
+    * surface_machining_interfaces
     * threeDxml_interfaces
 
 ## 0.5.9
