@@ -19,6 +19,7 @@
     * manufacturing_interfaces
     * multi_cad_interfaces
     * reporter_interfaces
+    * simulation_interfaces
     * structure_interfaces
     * surface_machining_interfaces
     * threeDxml_interfaces
