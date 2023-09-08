@@ -10,6 +10,7 @@
 """
 from pycatia.fitting_interfaces.shuttle import Shuttle
 from pycatia.system_interfaces.collection import Collection
+from pycatia.types.general import cat_variant
 
 
 class Shuttles(Collection):
