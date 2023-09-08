@@ -20,6 +20,7 @@
     * multi_cad_interfaces
     * reporter_interfaces
     * simulation_interfaces
+    * smt_interfaces
     * structure_interfaces
     * surface_machining_interfaces
     * threeDxml_interfaces
