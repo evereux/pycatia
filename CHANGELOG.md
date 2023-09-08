@@ -13,6 +13,7 @@
     * composites_interfaces
     * dmaps_interfaces
     * drafting_2dl_interfaces
+    * fitting_interfaces
     * general_knowledge_interfaces
     * kinematics_interfaces
     * manufacturing_interfaces
