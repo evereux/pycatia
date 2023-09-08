@@ -117,7 +117,7 @@ class Sampleds(Collection):
         :return: Sampled
         :rtype: Sampled
         """
-        return Sampled(self.sampleds.Item(i_index.com_object))
+        return Sampled(self.sampleds.Item(i_index))
 
     def remove(self, i_index: cat_variant) -> None:
         """
