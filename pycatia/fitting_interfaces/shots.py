@@ -184,7 +184,7 @@ class Shots(Collection):
         :return: AnyObject
         :rtype: AnyObject
         """
-        return self.shots.Item(i_index.com_object)
+        return self.shots.Item(i_index)
 
     def remove(self, i_index: cat_variant) -> None:
         """
