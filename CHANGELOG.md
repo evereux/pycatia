@@ -20,6 +20,7 @@
     * kinematics_interfaces
     * manufacturing_interfaces
     * multi_cad_interfaces
+    * prismatic_machining_interfaces
     * reporter_interfaces
     * simulation_interfaces
     * smt_interfaces
