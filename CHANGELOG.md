@@ -9,10 +9,12 @@
     * assembly_interfaces
     * behaviour_interfaces
     * bkt_interfaces
+    * cat_sch_platform_interfaces
     * catia_v4_interfaces
     * composites_interfaces
     * dmaps_interfaces
     * drafting_2dl_interfaces
+    * electrical_schematic_interfaces
     * fitting_interfaces
     * general_knowledge_interfaces
     * kinematics_interfaces
