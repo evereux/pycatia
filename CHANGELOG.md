@@ -10,6 +10,7 @@
     * behaviour_interfaces
     * bkt_interfaces
     * cat_dde_settings_interfaces
+    * cat_ipd_adapter_interfaces
     * cat_sch_platform_interfaces
     * catia_v4_interfaces
     * catia_de_settings_interfaces
