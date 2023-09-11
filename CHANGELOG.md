@@ -13,6 +13,7 @@
     * cat_ipd_adapter_interfaces
     * cat_plant_ship_interfaces (PSP)
     * cat_rdg_interfaces
+    * cat_rsc_interfces
     * cat_sch_platform_interfaces
     * catia_v4_interfaces
     * catia_de_settings_interfaces
