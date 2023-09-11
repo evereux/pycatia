@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class IgesSettingAtt(SettingController):
-
     """
         .. note::
             :class: toggle
@@ -208,7 +207,10 @@ class IgesSettingAtt(SettingController):
                 | 
                 |         oCrvMod
                 |             [out] The Export BSpline mode parameter value
-                |             Legal values: 0 for standard mode; 1 for BSpline mode : all curves and surfaces will be exported as B-Spline curves and surfaces.
+                |             Legal values:
+                |                 0 for standard mode;
+                |                 1 for BSpline mode : all curves and surfaces will be exported
+                |                                      as B-Spline curves and surfaces.
 
         :return: int
         :rtype: int
@@ -276,7 +278,18 @@ class IgesSettingAtt(SettingController):
                 | 
                 |         oExportUnit
                 |             [out] The Export Units parameter value
-                |             Legal values: 0-10 : 0 : user unit; 1 : Inches; 2 : Millimeters; 3 : Feet; 4 : Miles; 5 : Meters; 6 : Kilometers; 7 : Mils; 8 : Microns; 9 : Centimeters; 10 : Microinches.
+                |             Legal values: 0-10 :
+                |                 0 : user unit;
+                |                 1 : Inches;
+                |                 2 : Millimeters;
+                |                 3 : Feet;
+                |                 4 : Miles;
+                |                 5 : Meters;
+                |                 6 : Kilometers;
+                |                 7 : Mils;
+                |                 8 : Microns;
+                |                 9 : Centimeters;
+                |                10 : Microinches.
 
         :return: int
         :rtype: int
@@ -311,8 +324,9 @@ class IgesSettingAtt(SettingController):
                 |         oImportGroupAsSelSet
                 |             [out] The Import Selection Set mode parameter
                 |             value
-                |             Legal values: 1 To map IGES Groups as Selection Sets, 0
-                |             otherwise.
+                |             Legal values:
+                |                 1 To map IGES Groups as Selection Sets,
+                |                 0 otherwise.
 
         :return: int
         :rtype: int
@@ -1792,4 +1806,4 @@ class IgesSettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'IgesSettingAtt(name="{ self.name }")'
+        return f'IgesSettingAtt(name="{self.name}")'
