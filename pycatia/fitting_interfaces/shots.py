@@ -209,7 +209,7 @@ class Shots(Collection):
                 | 
                 |              Shots.Remove (3)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: None
         :rtype: None
         """
