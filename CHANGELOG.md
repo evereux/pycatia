@@ -9,16 +9,26 @@
     * assembly_interfaces
     * behaviour_interfaces
     * bkt_interfaces
+    * cat_dde_settings_interfaces
+    * cat_sch_platform_interfaces
     * catia_v4_interfaces
+    * catia_de_settings_interfaces
     * composites_interfaces
     * dmaps_interfaces
     * drafting_2dl_interfaces
+    * electrical_schematic_interfaces
+    * fitting_interfaces
     * general_knowledge_interfaces
     * kinematics_interfaces
     * manufacturing_interfaces
     * multi_cad_interfaces
+    * ppr_interfaces
+    * prismatic_machining_interfaces
     * reporter_interfaces
+    * simulation_interfaces
+    * smt_interfaces
     * structure_interfaces
+    * surface_machining_interfaces
     * threeDxml_interfaces
 
 ## 0.5.9
