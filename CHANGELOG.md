@@ -15,6 +15,7 @@
     * cat_rdg_interfaces
     * cat_rsc_interfces
     * cat_sch_platform_interfaces
+    * cat_sde_interfaces
     * catia_v4_interfaces
     * catia_de_settings_interfaces
     * composites_interfaces
