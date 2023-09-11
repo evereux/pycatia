@@ -35,7 +35,7 @@ class FastenerGroup(AnyObject):
         self.fastener_group = com_object
 
     @property
-    def colour(self) -> False:
+    def colour(self) -> int:
         """
         .. note::
             :class: toggle
@@ -53,16 +53,16 @@ class FastenerGroup(AnyObject):
                 |          B=0)
                 |          MyFastenerGroup.Color = redCol
 
-        :return: False
-        :rtype: False
+        :return: int
+        :rtype: int
         """
 
-        return None
+        return self.fastener_group.Color
 
     @colour.setter
-    def colour(self, value: False):
+    def colour(self, value: int):
         """
-        :param False value:
+        :param int value:
         """
 
         self.fastener_group.Color = value
