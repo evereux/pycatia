@@ -669,7 +669,7 @@ class EhmInsertionActPlugMapViewData(Activity):
         return self.ehm_insertion_act_plug_map_view_data.WireDiameter
 
     @property
-    def wire_id(self) -> False:
+    def wire_id(self) -> int:
         """
         .. note::
             :class: toggle
@@ -693,16 +693,16 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: False
-        :rtype: False
+        :return: int
+        :rtype: int
         """
 
-        return None
+        return self.ehm_insertion_act_plug_map_view_data.WireID
 
     @wire_id.setter
-    def wire_id(self, value: False):
+    def wire_id(self, value: int):
         """
-        :param False value:
+        :param int value:
         """
 
         self.ehm_insertion_act_plug_map_view_data.WireID = value
