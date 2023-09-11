@@ -8,7 +8,7 @@
         and thus help debugging in pycatia.
         
 """
-
+from pycatia.in_interfaces.reference import Reference
 from pycatia.system_interfaces.any_object import AnyObject
 
 
@@ -36,7 +36,7 @@ class SFMOpening(AnyObject):
         self.sfm_opening = com_object
 
     @property
-    def creation_mode(self) -> False:
+    def creation_mode(self) -> int:
         """
         .. note::
             :class: toggle
@@ -62,22 +62,22 @@ class SFMOpening(AnyObject):
                 |          Dim CreationMode As Long
                 |          CreationMode = OpenFact.CreationMode
 
-        :return: False
-        :rtype: False
+        :return: int
+        :rtype: int
         """
 
-        return None
+        return self.sfm_opening.CreationMode
 
     @creation_mode.setter
-    def creation_mode(self, value: False):
+    def creation_mode(self, value: int):
         """
-        :param False value:
+        :param int value:
         """
 
         self.sfm_opening.CreationMode = value
 
     @property
-    def direction(self) -> False:
+    def direction(self) -> Reference:
         """
         .. note::
             :class: toggle
@@ -96,22 +96,22 @@ class SFMOpening(AnyObject):
                 |          Set DirRef = part1.CreateReferenceFromObject(Dir)
                 |          Opening1.Direction = DirRef
 
-        :return: False
-        :rtype: False
+        :return: Reference
+        :rtype: Reference
         """
 
-        return None
+        return self.sfm_opening.Direction
 
     @direction.setter
-    def direction(self, value: False):
+    def direction(self, value: Reference):
         """
-        :param False value:
+        :param Reference value:
         """
 
-        self.sfm_opening.Direction = value
+        self.sfm_opening.Direction = value.com_object
 
     @property
-    def intersecting_element(self) -> False:
+    def intersecting_element(self) -> Reference:
         """
         .. note::
             :class: toggle
@@ -138,22 +138,22 @@ class SFMOpening(AnyObject):
                 |          Set sketchref = part1.CreateReferenceFromObject(Sketch)
                 |          Opening1.IntersectingElement = sketchref
 
-        :return: False
-        :rtype: False
+        :return: Reference
+        :rtype: Reference
         """
 
-        return None
+        return self.sfm_opening.IntersectingElement
 
     @intersecting_element.setter
-    def intersecting_element(self, value: False):
+    def intersecting_element(self, value: Reference):
         """
-        :param False value:
+        :param Reference value:
         """
 
-        self.sfm_opening.IntersectingElement = value
+        self.sfm_opening.IntersectingElement = value.com_object
 
     @property
-    def molded_surface(self) -> False:
+    def molded_surface(self) -> Reference:
         """
         .. note::
             :class: toggle
@@ -174,19 +174,19 @@ class SFMOpening(AnyObject):
                 |          Set GSDSurfref = part1.CreateReferenceFromObject(GSDSurf)
                 |          Opening1.MoldedSurface = GSDSurfref
 
-        :return: False
-        :rtype: False
+        :return: Reference
+        :rtype: Reference
         """
 
-        return None
+        return self.sfm_opening.MoldedSurface
 
     @molded_surface.setter
-    def molded_surface(self, value: False):
+    def molded_surface(self, value: Reference):
         """
-        :param False value:
+        :param Reference value:
         """
 
-        self.sfm_opening.MoldedSurface = value
+        self.sfm_opening.MoldedSurface = value.com_object
 
     def get_direction(self) -> tuple:
         """
