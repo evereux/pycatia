@@ -10,10 +10,28 @@
     * behaviour_interfaces
     * bkt_interfaces
     * cat_dde_settings_interfaces
+    * cat_ipd_adapter_interfaces
+    * cat_plant_ship_interfaces (PSP)
+    * cat_rdg_interfaces
+    * cat_rsc_interfces
     * cat_sch_platform_interfaces
+    * cat_sde_interfaces
+    * cat_sm_interfaces
+    * cat_smarteam_integ_interfaces
+    * cat_str_functional_interfaces
+    * cat_tps_interfaces
     * catia_v4_interfaces
     * catia_de_settings_interfaces
     * composites_interfaces
+    * dnb_asy_activity_interfaces
+    * dnb_d5_interfaces
+    * dnb_device_activity_interfaces
+    * dnb_device_interfaces
+    * dnb_dpm_interfaces
+    * dnb_ehm_interfaces
+    * dnb_ehs_interfaces
+    * dnb_ekp_interfaces
+    * dnb_fastener_interfaces
     * dmaps_interfaces
     * drafting_2dl_interfaces
     * electrical_schematic_interfaces
@@ -37,7 +55,6 @@
 * Fixed reference plane method in HybridShapePlaneAngle. (@Mithro86)
 * Updates to examples to include latest supported python version. Also fix IDE autocompletion & syntax highlighting
   issues. (@deloarts)
-*
 
 ## 0.5.8
 
