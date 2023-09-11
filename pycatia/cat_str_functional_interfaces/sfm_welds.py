@@ -10,6 +10,7 @@
 """
 from pycatia.cat_str_functional_interfaces.sfm_weld import SFMWeld
 from pycatia.system_interfaces.collection import Collection
+from pycatia.types.general import cat_variant
 
 
 class SFMWelds(Collection):

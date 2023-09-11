@@ -72,7 +72,7 @@ class SFMMemberPlane2Curves(SFMMember):
         self.sfm_member_plane2_curves.FirstCurve = value
 
     @property
-    def first_member(self) -> False:
+    def first_member(self) -> Reference:
         """
         .. note::
             :class: toggle
@@ -93,15 +93,15 @@ class SFMMemberPlane2Curves(SFMMember):
         :rtype: False
         """
 
-        return None
+        return self.sfm_member_plane2_curves.FirstMember
 
     @first_member.setter
-    def first_member(self, value: False):
+    def first_member(self, value: Reference):
         """
-        :param False value:
+        :param Reference value:
         """
 
-        self.sfm_member_plane2_curves.FirstMember = value
+        self.sfm_member_plane2_curves.FirstMember = value.com_object
 
     @property
     def plane(self) -> Reference:
@@ -159,7 +159,7 @@ class SFMMemberPlane2Curves(SFMMember):
         self.sfm_member_plane2_curves.SecondCurve = value
 
     @property
-    def second_member(self) -> False:
+    def second_member(self) -> Reference:
         """
         .. note::
             :class: toggle
@@ -180,15 +180,15 @@ class SFMMemberPlane2Curves(SFMMember):
         :rtype: False
         """
 
-        return None
+        return self.sfm_member_plane2_curves.SecondMember
 
     @second_member.setter
-    def second_member(self, value: False):
+    def second_member(self, value: Reference):
         """
-        :param False value:
+        :param Reference value:
         """
 
-        self.sfm_member_plane2_curves.SecondMember = value
+        self.sfm_member_plane2_curves.SecondMember = value.com_object
 
     def __repr__(self):
         return f'SFMMemberPlane2Curves(name="{self.name}")'

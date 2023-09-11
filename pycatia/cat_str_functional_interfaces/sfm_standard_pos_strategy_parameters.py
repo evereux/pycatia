@@ -72,7 +72,7 @@ class SFMStandardPosStrategyParameters(AnyObject):
         :return: CATBaseUnknown
         :rtype: CATBaseUnknown
         """
-        return CATBaseUnknown(self.sfm_standard_pos_strategy_parameters.Item(i_index.com_object))
+        return self.sfm_standard_pos_strategy_parameters.Item(i_index)
 
     def set_pos_param_data(
             self,
