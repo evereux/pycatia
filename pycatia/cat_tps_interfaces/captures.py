@@ -13,11 +13,11 @@ from typing import Iterator
 
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
+from pycatia.cat_tps_interfaces.capture import Capture
 from pycatia.types.general import cat_variant
-from pycatia.tps_interfaces.tps_view import TPSView
 
 
-class TPSViews(Collection):
+class Captures(Collection):
     """
         .. note::
             :class: toggle
@@ -29,18 +29,17 @@ class TPSViews(Collection):
                 |         System.CATBaseUnknown
                 |             System.CATBaseDispatch
                 |                 System.Collection
-                |                     TPSViews
+                |                     Captures
                 | 
-                | Interface for collection of TPS Views CATIATPSView.
+                | The interface to access a CATIACaptures
     
     """
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.tps_views = com_object
-        child_object = TPSView
+        self.captures = com_object
 
-    def item(self, i_index: cat_variant) -> TPSView:
+    def item(self, i_index: cat_variant) -> AnyObject:
         """
         .. note::
             :class: toggle
@@ -48,23 +47,23 @@ class TPSViews(Collection):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func Item(CATVariant iIndex) As AnyObject
                 | 
-                |     Retrieve a TPS View.
+                |     Retrieve a Capture.
 
         :param cat_variant i_index:
         :return: AnyObject
         :rtype: AnyObject
         """
-        return TPSView(self.tps_views.Item(i_index))
+        return AnyObject(self.captures.Item(i_index))
 
-    def __getitem__(self, n: int) -> TPSView:
+    def __getitem__(self, n: int) -> Capture:
         if (n + 1) > self.count:
             raise StopIteration
 
-        return TPSView(self.tps_views.item(n + 1))
+        return Capture(self.captures.item(n + 1))
 
-    def __iter__(self) -> Iterator[TPSView]:
+    def __iter__(self) -> Iterator[Capture]:
         for i in range(self.count):
             yield self.child_object(self.com_object.item(i + 1))
 
     def __repr__(self):
-        return f'TpsViews(name="{self.name}")'
+        return f'Captures(name="{self.name}")'

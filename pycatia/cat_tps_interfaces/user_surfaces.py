@@ -14,7 +14,7 @@ from typing import Iterator
 from pycatia.in_interfaces.reference import Reference
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.system_interfaces.collection import Collection
-from pycatia.tps_interfaces.user_surface import UserSurface
+from pycatia.cat_tps_interfaces.user_surface import UserSurface
 from pycatia.types.general import cat_variant
 
 

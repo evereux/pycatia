@@ -1,4 +1,4 @@
-#! usr/bin/python3.9
+#! usr/bin/python3.6
 """
     Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-09-25 14:34:21.593357
 
@@ -10,10 +10,10 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.tps_interfaces.tps_parallel_on_screen import TPSParallelOnScreen
 
 
-class NonSemanticGDT(AnyObject):
+class AsySimActivity(AnyObject):
+
     """
         .. note::
             :class: toggle
@@ -25,29 +25,35 @@ class NonSemanticGDT(AnyObject):
                 |         System.CATBaseUnknown
                 |             System.CATBaseDispatch
                 |                 System.AnyObject
-                |                     NonSemanticGDT
-
+                |                     AsySimActivity
+                | 
+                | Interface for a Delmia Simulation Activity.
+                | Currently the main focus is to synchronize an activity with the simulation
+                | world.
     
     """
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.non_semantic_gdt = com_object
+        self.asy_sim_activity = com_object
 
-    def tps_parallel_on_screen(self) -> TPSParallelOnScreen:
+    def synchronize(self) -> None:
         """
         .. note::
             :class: toggle
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
-                | o Func TPSParallelOnScreen() As TPSParallelOnScreen
+                | o Sub Synchronize()
                 | 
-                |     Gets the annotation on TPSParallelOnScreen interface.
+                |     Updates the simulation world up to this activity.
+                |     Role: Updates the simulation world (and its contents) to the end of the
+                |     specified activity. Please note that no animation will occur, and the execution
+                |     will wait for the simulation to finish before this method is complete.
 
-        :return: TPSParallelOnScreen
-        :rtype: TPSParallelOnScreen
+        :return: None
+        :rtype: None
         """
-        return TPSParallelOnScreen(self.non_semantic_gdt.TPSParallelOnScreen())
+        return self.asy_sim_activity.Synchronize()
 
     def __repr__(self):
-        return f'NonSemanticGdt(name="{self.name}")'
+        return f'AsySimActivity(name="{ self.name }")'

@@ -10,7 +10,7 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.tps_interfaces.user_surface import UserSurface
+from pycatia.cat_tps_interfaces.user_surface import UserSurface
 
 
 class DatumTarget(AnyObject):
