@@ -12,11 +12,11 @@
 from typing import TYPE_CHECKING
 
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.tps_interfaces.user_surface import UserSurface
+from pycatia.cat_tps_interfaces.user_surface import UserSurface
 from pycatia.types.general import cat_variant
 
 if TYPE_CHECKING:
-    from pycatia.tps_interfaces.annotations import Annotations
+    from pycatia.cat_tps_interfaces.annotations import Annotations
 
 
 class ReferenceFrame(AnyObject):
@@ -73,7 +73,7 @@ class ReferenceFrame(AnyObject):
         :return: Annotations
         :rtype: Annotations
         """
-        from pycatia.tps_interfaces.annotations import Annotations
+        from pycatia.cat_tps_interfaces.annotations import Annotations
         return Annotations(self.reference_frame.AllDatumsSimple)
 
     def frame(self, o_first_box: str, o_second_box: str, o_third_box: str) -> None:

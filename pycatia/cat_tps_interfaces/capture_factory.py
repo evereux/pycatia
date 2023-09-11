@@ -10,11 +10,10 @@
 """
 
 from pycatia.mec_mod_interfaces.factory import Factory
-from pycatia.tps_interfaces.capture import Capture
+from pycatia.cat_tps_interfaces.capture import Capture
 
 
 class CaptureFactory(Factory):
-
     """
         .. note::
             :class: toggle
@@ -60,4 +59,4 @@ class CaptureFactory(Factory):
         return Capture(self.capture_factory.CreateCapture())
 
     def __repr__(self):
-        return f'CaptureFactory(name="{ self.name }")'
+        return f'CaptureFactory(name="{self.name}")'

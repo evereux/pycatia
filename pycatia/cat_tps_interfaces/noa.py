@@ -9,12 +9,13 @@
         
 """
 
+from pycatia.drafting_interfaces.drawing_component import DrawingComponent
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.tps_interfaces.tps_parallel_on_screen import TPSParallelOnScreen
+from pycatia.cat_tps_interfaces.tps_parallel_on_screen import TPSParallelOnScreen
 from pycatia.types.general import cat_variant
 
 
-class FlagNote(AnyObject):
+class Noa(AnyObject):
     """
         .. note::
             :class: toggle
@@ -26,45 +27,45 @@ class FlagNote(AnyObject):
                 |         System.CATBaseUnknown
                 |             System.CATBaseDispatch
                 |                 System.AnyObject
-                |                     FlagNote
+                |                     Noa
                 | 
-                | Interface for the TPS Flag Note object.
+                | Interface for the TPS Noa object.
     
     """
 
     def __init__(self, com_object):
         super().__init__(com_object)
-        self.flag_note = com_object
+        self.noa = com_object
 
     @property
-    def flag_note_text(self) -> str:
+    def flag_text(self) -> str:
         """
         .. note::
             :class: toggle
 
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
-                | o Property FlagNoteText() As CATBSTR
+                | o Property FlagText() As CATBSTR
                 | 
                 |     Retrieves or sets Flag Text.
                 | 
                 |     Parameters:
                 | 
                 |         oText
-                |             Returned Flag text.
+                |             Returned text for NOA hidden text.
 
         :return: str
         :rtype: str
         """
 
-        return self.flag_note.FlagNoteText
+        return self.noa.FlagText
 
-    @flag_note_text.setter
-    def flag_note_text(self, value: str):
+    @flag_text.setter
+    def flag_text(self, value: str):
         """
         :param str value:
         """
 
-        self.flag_note.FlagNoteText = value
+        self.noa.FlagText = value
 
     @property
     def text(self) -> str:
@@ -75,7 +76,7 @@ class FlagNote(AnyObject):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property Text() As CATBSTR
                 | 
-                |     Retrieves or sets Flag Text Representation.
+                |     Retrieves or sets Text Representation.
                 | 
                 |     Parameters:
                 | 
@@ -86,7 +87,7 @@ class FlagNote(AnyObject):
         :rtype: str
         """
 
-        return self.flag_note.Text
+        return self.noa.Text
 
     @text.setter
     def text(self, value: str):
@@ -94,7 +95,7 @@ class FlagNote(AnyObject):
         :param str value:
         """
 
-        self.flag_note.Text = value
+        self.noa.Text = value
 
     def add_url(self, i_url: str) -> None:
         """
@@ -115,7 +116,68 @@ class FlagNote(AnyObject):
         :return: None
         :rtype: None
         """
-        return self.flag_note.AddURL(i_url)
+        return self.noa.AddURL(i_url)
+
+    def get_ditto(self) -> DrawingComponent:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+                | o Func GetDitto() As DrawingComponent
+                | 
+                |     Gets the ditto as a DrawingComponent of the Noa entity.
+
+        :return: DrawingComponent
+        :rtype: DrawingComponent
+        """
+        return DrawingComponent(self.noa.GetDitto())
+
+    def get_modifiable_text(self, i_index: cat_variant) -> AnyObject:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+                | o Func GetModifiableText(CATVariant iIndex) As AnyObject
+                | 
+                |     Gets by index a modifiable Text included in the ditto which represents this
+                |     NOA.
+                | 
+                |     Parameters:
+                | 
+                |         iIndex
+                |             Index of the modifiable text. 
+                |         oText
+                |             returns a CATIADrawingText
+
+        :param cat_variant i_index:
+        :return: AnyObject
+        :rtype: AnyObject
+        """
+        return AnyObject(self.noa.GetModifiableText(i_index))
+
+    def get_modifiable_texts_count(self) -> int:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+                | o Func GetModifiableTextsCount() As long
+                | 
+                |     Gets the number of modifiable texts included in the ditto which represents
+                |     this NOA.
+                | 
+                |     Parameters:
+                | 
+                |         oCount
+                |             returns the number of modifiable text included into the ditto which
+                |             represents this NOA.
+
+        :return: int
+        :rtype: int
+        """
+        return self.noa.GetModifiableTextsCount()
 
     def get_nbr_url(self, o_number_of_url: cat_variant) -> None:
         """
@@ -126,22 +188,22 @@ class FlagNote(AnyObject):
                 | o Sub GetNbrURL(CATVariant oNumberOfURL)
                 | 
                 |     Deprecated:
-                |         V5-6R2017 This method is replaced by FlagNote.GetNbrURL2
+                |         V5-6R2017 This method is replaced by Noa.GetNbrURL2
 
         :param cat_variant o_number_of_url:
         :return: None
         :rtype: None
         """
-        return self.flag_note.GetNbrURL(o_number_of_url)
+        return self.noa.GetNbrURL(o_number_of_url)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
         # # vba_function_name = 'get_nbr_url'
         # # vba_code = """
-        # # Public Function get_nbr_url(flag_note)
+        # # Public Function get_nbr_url(noa)
         # #     Dim oNumberOfURL (2)
-        # #     flag_note.GetNbrURL oNumberOfURL
+        # #     noa.GetNbrURL oNumberOfURL
         # #     get_nbr_url = oNumberOfURL
         # # End Function
         # # """
@@ -149,7 +211,7 @@ class FlagNote(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_nbr_url2(self) -> int:
+    def get_nbr_url_2(self) -> int:
         """
         .. note::
             :class: toggle
@@ -167,7 +229,7 @@ class FlagNote(AnyObject):
         :return: int
         :rtype: int
         """
-        return self.flag_note.GetNbrURL2()
+        return self.noa.GetNbrURL2()
 
     def modify_url(self, i_url: str, i_index: cat_variant) -> None:
         """
@@ -192,16 +254,16 @@ class FlagNote(AnyObject):
         :return: None
         :rtype: None
         """
-        return self.flag_note.ModifyURL(i_url, i_index)
+        return self.noa.ModifyURL(i_url, i_index)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
         # # vba_function_name = 'modify_url'
         # # vba_code = """
-        # # Public Function modify_url(flag_note)
+        # # Public Function modify_url(noa)
         # #     Dim iUrl (2)
-        # #     flag_note.ModifyURL iUrl
+        # #     noa.ModifyURL iUrl
         # #     modify_url = iUrl
         # # End Function
         # # """
@@ -217,7 +279,7 @@ class FlagNote(AnyObject):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub RemoveURL(CATVariant iIndex)
                 | 
-                |     Remove an URL.
+                |     Removes an URL.
                 | 
                 |     Parameters:
                 | 
@@ -228,16 +290,16 @@ class FlagNote(AnyObject):
         :return: None
         :rtype: None
         """
-        return self.flag_note.RemoveURL(i_index)
+        return self.noa.RemoveURL(i_index)
         # # # # Autogenerated comment: 
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
         # # vba_function_name = 'remove_url'
         # # vba_code = """
-        # # Public Function remove_url(flag_note)
+        # # Public Function remove_url(noa)
         # #     Dim iIndex (2)
-        # #     flag_note.RemoveURL iIndex
+        # #     noa.RemoveURL iIndex
         # #     remove_url = iIndex
         # # End Function
         # # """
@@ -258,7 +320,8 @@ class FlagNote(AnyObject):
         :return: TPSParallelOnScreen
         :rtype: TPSParallelOnScreen
         """
-        return TPSParallelOnScreen(self.flag_note.TPSParallelOnScreen())
+
+        return TPSParallelOnScreen(self.noa.TPSParallelOnScreen())
 
     def url(self, i_index: cat_variant) -> str:
         """
@@ -281,7 +344,7 @@ class FlagNote(AnyObject):
         :return: str
         :rtype: str
         """
-        return self.flag_note.URL(i_index)
+        return self.noa.URL(i_index)
 
     def __repr__(self):
-        return f'FlagNote(name="{self.name}")'
+        return f'Noa(name="{self.name}")'

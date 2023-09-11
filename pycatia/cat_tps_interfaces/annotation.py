@@ -10,31 +10,31 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.tps_interfaces.associated_ref_frame import AssociatedRefFrame
-from pycatia.tps_interfaces.composite_tolerance import CompositeTolerance
-from pycatia.tps_interfaces.controlled_radius import ControlledRadius
-from pycatia.tps_interfaces.datum_simple import DatumSimple
-from pycatia.tps_interfaces.datum_target import DatumTarget
-from pycatia.tps_interfaces.default_annotation import DefaultAnnotation
-from pycatia.tps_interfaces.dimension_3d import Dimension3D
-from pycatia.tps_interfaces.dimension_limit import DimensionLimit
-from pycatia.tps_interfaces.dimension_pattern import DimensionPattern
-from pycatia.tps_interfaces.envelope_condition import EnvelopeCondition
-from pycatia.tps_interfaces.flag_note import FlagNote
-from pycatia.tps_interfaces.free_state import FreeState
-from pycatia.tps_interfaces.material_condition import MaterialCondition
-from pycatia.tps_interfaces.noa import Noa
-from pycatia.tps_interfaces.particular_tol_elem import ParticularTolElem
-from pycatia.tps_interfaces.projected_tolerance_zone import ProjectedToleranceZone
-from pycatia.tps_interfaces.reference_frame import ReferenceFrame
-from pycatia.tps_interfaces.roughness import Roughness
-from pycatia.tps_interfaces.shifted_profile_tolerance import ShiftedProfileTolerance
-from pycatia.tps_interfaces.tangent_plane import TangentPlane
-from pycatia.tps_interfaces.text import Text
-from pycatia.tps_interfaces.tolerance_per_unit_basis_restrictive_value import TolerancePerUnitBasisRestrictiveValue
-from pycatia.tps_interfaces.tolerance_unit_basis_value import ToleranceUnitBasisValue
-from pycatia.tps_interfaces.tolerance_zone import ToleranceZone
-from pycatia.tps_interfaces.tps_view import TPSView
+from pycatia.cat_tps_interfaces.associated_ref_frame import AssociatedRefFrame
+from pycatia.cat_tps_interfaces.composite_tolerance import CompositeTolerance
+from pycatia.cat_tps_interfaces.controlled_radius import ControlledRadius
+from pycatia.cat_tps_interfaces.datum_simple import DatumSimple
+from pycatia.cat_tps_interfaces.datum_target import DatumTarget
+from pycatia.cat_tps_interfaces.default_annotation import DefaultAnnotation
+from pycatia.cat_tps_interfaces.dimension_3d import Dimension3D
+from pycatia.cat_tps_interfaces.dimension_limit import DimensionLimit
+from pycatia.cat_tps_interfaces.dimension_pattern import DimensionPattern
+from pycatia.cat_tps_interfaces.envelope_condition import EnvelopeCondition
+from pycatia.cat_tps_interfaces.flag_note import FlagNote
+from pycatia.cat_tps_interfaces.free_state import FreeState
+from pycatia.cat_tps_interfaces.material_condition import MaterialCondition
+from pycatia.cat_tps_interfaces.noa import Noa
+from pycatia.cat_tps_interfaces.particular_tol_elem import ParticularTolElem
+from pycatia.cat_tps_interfaces.projected_tolerance_zone import ProjectedToleranceZone
+from pycatia.cat_tps_interfaces.reference_frame import ReferenceFrame
+from pycatia.cat_tps_interfaces.roughness import Roughness
+from pycatia.cat_tps_interfaces.shifted_profile_tolerance import ShiftedProfileTolerance
+from pycatia.cat_tps_interfaces.tangent_plane import TangentPlane
+from pycatia.cat_tps_interfaces.text import Text
+from pycatia.cat_tps_interfaces.tolerance_per_unit_basis_restrictive_value import TolerancePerUnitBasisRestrictiveValue
+from pycatia.cat_tps_interfaces.tolerance_unit_basis_value import ToleranceUnitBasisValue
+from pycatia.cat_tps_interfaces.tolerance_zone import ToleranceZone
+from pycatia.cat_tps_interfaces.tps_view import TPSView
 
 
 class Annotation(AnyObject):
