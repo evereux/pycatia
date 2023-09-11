@@ -14,8 +14,8 @@ from typing import TYPE_CHECKING
 from pycatia.system_interfaces.any_object import AnyObject
 
 if TYPE_CHECKING:
-    from pycatia.tps_interfaces.annotation import Annotation
-    from pycatia.tps_interfaces.annotation_2 import Annotation2
+    from pycatia.cat_tps_interfaces.annotation import Annotation
+    from pycatia.cat_tps_interfaces.annotation_2 import Annotation2
 
 
 class AssociatedRefFrame(AnyObject):
@@ -57,7 +57,7 @@ class AssociatedRefFrame(AnyObject):
         :rtype: Annotation
         """
 
-        from pycatia.tps_interfaces.annotation import Annotation
+        from pycatia.cat_tps_interfaces.annotation import Annotation
         return Annotation(self.associated_ref_frame.ReferenceFrame)
 
     @property
@@ -75,7 +75,7 @@ class AssociatedRefFrame(AnyObject):
         :rtype: Annotation2
         """
 
-        from pycatia.tps_interfaces.annotation_2 import Annotation2
+        from pycatia.cat_tps_interfaces.annotation_2 import Annotation2
         return Annotation2(self.associated_ref_frame.ReferenceFrame2)
 
     def __repr__(self):

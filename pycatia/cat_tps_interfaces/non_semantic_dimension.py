@@ -11,7 +11,7 @@
 
 from pycatia.drafting_interfaces.drawing_dimension import DrawingDimension
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.tps_interfaces.dimension_limit import DimensionLimit
+from pycatia.cat_tps_interfaces.dimension_limit import DimensionLimit
 
 
 class NonSemanticDimension(AnyObject):
