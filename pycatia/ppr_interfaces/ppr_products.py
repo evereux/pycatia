@@ -81,7 +81,7 @@ class PPRProducts(Collection):
                 |     Returns:
                 |         The retrieved Product corresponding to the specified index.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: Product
         :rtype: Product
         """
