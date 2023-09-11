@@ -315,7 +315,7 @@ class MfgAssemblyFactory(AnyObject):
         :return: Item
         :rtype: Item
         """
-        return Item(self.mfg_assembly_factory.RetrieveMfgAssemblyAtIndex(i_index.com_object))
+        return Item(self.mfg_assembly_factory.RetrieveMfgAssemblyAtIndex(i_index))
 
     def retrive_all_mfg_assy(self, i_type: int, o_all_m_as: tuple, o_num_of_mfg_assemblies: int) -> AnyObject:
         """
