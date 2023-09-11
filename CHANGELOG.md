@@ -18,6 +18,7 @@
     * cat_sde_interfaces
     * cat_sm_interfaces
     * cat_smarteam_integ_interfaces
+    * cat_str_functional_interfaces
     * catia_v4_interfaces
     * catia_de_settings_interfaces
     * composites_interfaces
