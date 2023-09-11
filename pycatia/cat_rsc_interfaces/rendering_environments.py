@@ -89,7 +89,7 @@ class RenderingEnvironments(Collection):
                 |      Dim MyEnvironment As RenderingEnvironment
                 |      Set MyEnvironment = RenderingEnvironments.Item(6)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: RenderingEnvironment
         :rtype: RenderingEnvironment
         """
@@ -105,7 +105,7 @@ class RenderingEnvironments(Collection):
                 | 
                 |     Removes a environment from the environments collection.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: None
         :rtype: None
         """
