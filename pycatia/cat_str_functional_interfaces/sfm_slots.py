@@ -148,7 +148,7 @@ class SFMSlots(Collection):
         :return: SFMSlot
         :rtype: SFMSlot
         """
-        return SFMSlot(self.sfm_slots.Item(i_index.com_object))
+        return SFMSlot(self.sfm_slots.Item(i_index))
 
     def remove_slot(self, i_sfm_slot: SFMSlot) -> None:
         """

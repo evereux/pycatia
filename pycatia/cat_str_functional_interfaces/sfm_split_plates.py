@@ -72,7 +72,7 @@ class SFMSplitPlates(Collection):
         :return: SFMSplitPlate
         :rtype: SFMSplitPlate
         """
-        return SFMSplitPlate(self.sfm_split_plates.Item(i_index.com_object))
+        return SFMSplitPlate(self.sfm_split_plates.Item(i_index))
 
     def __repr__(self):
         return f'SFMSplitPlates(name="{self.name}")'

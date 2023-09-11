@@ -11,6 +11,7 @@
 
 from pycatia.knowledge_interfaces.parameter import Parameter
 from pycatia.system_interfaces.collection import Collection
+from pycatia.types.general import cat_variant
 
 
 class SFMConnectionParameters(Collection):
