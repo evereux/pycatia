@@ -25,6 +25,7 @@
     * composites_interfaces
     * dnb_asy_activity_interfaces
     * dnb_d5_interfaces
+    * dnb_device_activity_interfaces
     * dmaps_interfaces
     * drafting_2dl_interfaces
     * electrical_schematic_interfaces
@@ -48,7 +49,6 @@
 * Fixed reference plane method in HybridShapePlaneAngle. (@Mithro86)
 * Updates to examples to include latest supported python version. Also fix IDE autocompletion & syntax highlighting
   issues. (@deloarts)
-*
 
 ## 0.5.8
 
