@@ -1,4 +1,4 @@
-#! usr/bin/python3.6
+#! usr/bin/python3.9
 """
     Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-09-25 14:34:21.593357
 
@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class AsySimActivity(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -56,4 +55,4 @@ class AsySimActivity(AnyObject):
         return self.asy_sim_activity.Synchronize()
 
     def __repr__(self):
-        return f'AsySimActivity(name="{ self.name }")'
+        return f'AsySimActivity(name="{self.name}")'

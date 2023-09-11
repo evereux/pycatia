@@ -23,6 +23,7 @@
     * catia_v4_interfaces
     * catia_de_settings_interfaces
     * composites_interfaces
+    * dnb_asy_activity_interfaces
     * dmaps_interfaces
     * drafting_2dl_interfaces
     * electrical_schematic_interfaces
