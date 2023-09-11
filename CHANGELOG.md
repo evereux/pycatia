@@ -27,6 +27,7 @@
     * dnb_d5_interfaces
     * dnb_device_activity_interfaces
     * dnb_device_interfaces
+    * dnb_dpm_interfaces
     * dmaps_interfaces
     * drafting_2dl_interfaces
     * electrical_schematic_interfaces
