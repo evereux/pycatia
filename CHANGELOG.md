@@ -32,6 +32,22 @@
     * dnb_ehs_interfaces
     * dnb_ekp_interfaces
     * dnb_fastener_interfaces
+    * dnb_graph_editor
+    * dnb_human_modelling_interfaces
+    * dnb_human_sim_interfaces
+    * dnb_igp_arc_commands
+    * dnb_lgp_olp_ui
+    * dnb_igp_setup_interfaces
+    * dnb_manufacturing_layout_interfaces
+    * dnb_mhi_interfaces
+    * dnb_reporting_interfaces
+    * dnb_resource_program_interfaces
+    * dnb_robot_interfaces
+    * dnb_sim_activity_interfaces
+    * dnb_simulation_interfaces
+    * dnb_sor_interfaces
+    * dnb_state_interfaces
+    * dnb_work_interfaces
     * dmaps_interfaces
     * drafting_2dl_interfaces
     * electrical_schematic_interfaces
