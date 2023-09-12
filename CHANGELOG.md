@@ -41,6 +41,7 @@
     * dnb_manufacturing_layout_interfaces
     * dnb_mhi_interfaces
     * dnb_reporting_interfaces
+    * dnb_resource_program_interfaces
     * dnb_robot_interfaces
     * dmaps_interfaces
     * drafting_2dl_interfaces
