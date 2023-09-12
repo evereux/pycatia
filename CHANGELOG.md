@@ -44,6 +44,7 @@
     * dnb_resource_program_interfaces
     * dnb_robot_interfaces
     * dnb_sim_activity_interfaces
+    * dnb_simulation_interfaces
     * dmaps_interfaces
     * drafting_2dl_interfaces
     * electrical_schematic_interfaces
