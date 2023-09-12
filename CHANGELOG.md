@@ -46,6 +46,7 @@
     * dnb_sim_activity_interfaces
     * dnb_simulation_interfaces
     * dnb_sor_interfaces
+    * dnb_state_interfaces
     * dmaps_interfaces
     * drafting_2dl_interfaces
     * electrical_schematic_interfaces
