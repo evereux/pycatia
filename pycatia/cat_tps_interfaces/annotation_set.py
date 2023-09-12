@@ -121,7 +121,7 @@ class AnnotationSet(AnyObject):
         :rtype: AnnotationFactory
         """
         import pycatia.cat_tps_interfaces.annotation_factory
-        return pycatia.tps_interfaces.annotation_factory.AnnotationFactory(self.annotation_set.AnnotationFactory)
+        return pycatia.cat_tps_interfaces.annotation_factory.AnnotationFactory(self.annotation_set.AnnotationFactory)
 
     @property
     def annotation_factory_2(self) -> AnnotationFactory2:
