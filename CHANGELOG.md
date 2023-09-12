@@ -38,6 +38,7 @@
     * dnb_igp_arc_commands
     * dnb_lgp_olp_ui
     * dnb_igp_setup_interfaces
+    * dnb_manufacturing_layout_interfaces
     * dnb_robot_interfaces
     * dmaps_interfaces
     * drafting_2dl_interfaces
