@@ -33,6 +33,7 @@
     * dnb_ekp_interfaces
     * dnb_fastener_interfaces
     * dnb_graph_editor
+    * dnb_human_modelling_interfaces
     * dmaps_interfaces
     * drafting_2dl_interfaces
     * electrical_schematic_interfaces
