@@ -35,6 +35,7 @@
     * dnb_graph_editor
     * dnb_human_modelling_interfaces
     * dnb_human_sim_interfaces
+    * dnb_igp_arc_commands
     * dmaps_interfaces
     * drafting_2dl_interfaces
     * electrical_schematic_interfaces
