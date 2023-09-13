@@ -51,6 +51,7 @@
     * dmaps_interfaces
     * drafting_2dl_interfaces
     * electrical_schematic_interfaces
+    * eno_cd5_interfaces
     * fitting_interfaces
     * general_knowledge_interfaces
     * kinematics_interfaces
