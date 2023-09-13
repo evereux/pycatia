@@ -51,11 +51,14 @@
     * dmaps_interfaces
     * drafting_2dl_interfaces
     * electrical_schematic_interfaces
+    * eno_cd5_interfaces
     * fitting_interfaces
     * general_knowledge_interfaces
     * kinematics_interfaces
     * manufacturing_interfaces
     * multi_cad_interfaces
+    * osm_interfaces
+    * pcb_board_base
     * ppr_interfaces
     * prismatic_machining_interfaces
     * reporter_interfaces
