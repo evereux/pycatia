@@ -58,6 +58,7 @@
     * manufacturing_interfaces
     * multi_cad_interfaces
     * osm_interfaces
+    * pcb_board_base
     * ppr_interfaces
     * prismatic_machining_interfaces
     * reporter_interfaces
