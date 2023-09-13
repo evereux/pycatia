@@ -32,7 +32,7 @@ class AnalysisLocalEntities(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=AnalysisLocalEntity)
         self.analysis_local_entities = com_object
 
     def add(self, i_type: str) -> AnalysisLocalEntity:
