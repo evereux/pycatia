@@ -10,15 +10,23 @@ pycatia
 alpha software
 --------------
 
-This is alpha software. All the test cases and examples work but there will be
-many issues outside of the test framework. The CATIA com interface is huge and
-I'm currently just attacking the items I think will be most useful. The
-framework is in place for others to contribute so if you know CATIA and python
-please do contribute. Bonus points for adding tests too.
+This is alpha software.
 
-I have limited access to CATIA licences / workbenches so will not be able to
-support those I can't test. If your company would like support for additional
-workbenches adding to pycatia and can provide a license please contact me.
+All the test cases and examples work but there will be many issues outside of
+the test framework. The CATIA com interface is huge and I've predominantly
+only worked / tested on those I can figure out how to use.
+
+The entire framework is now in place for others to contribute so if you know
+CATIA and python (being already familiar with automation using the more
+traditional methods will help) please do contribute. Bonus points for adding
+tests too.
+
+I have limited access to CATIA licences / workbenches. Also, there's are many
+modules that I simply don't know what they do. Thus my ability to test things
+is extremely limited.
+
+All this said many bugs that exist should be for the most part be quite easy to
+fix using those methods that do work as a reference.
 
 
 Why was it made?
@@ -30,14 +38,12 @@ and it's methods without the need of visual basic / CATScripts.
 Some of the methods can be accessed directly using the pywin32 module but there
 are a number that just simply won't work using python. There are several
 questions on stack overflow and the pywin32 mailing list regarding this. But,
-they fail to provide any working examples with the Measurable object in python.
-
+they failed to provide any working examples with the Measurable object in python.
 
 pycatia accesses these methods by running VBA scripts using the 
 `Dispatch('CATIA.Application').SystemService.Evaluate()` function and passing a
 public function to it. Otherwise, pycatia uses the VB method directly but
 exposes it within the same python class.
-
 
 There is now further functionality available which can be seen by looking at
 the examples provided and reading the API at pycatia.readthedocs.io_.
