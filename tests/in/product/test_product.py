@@ -163,7 +163,7 @@ def test_get_products():
         assert document is not None
 
         product = ProductDocument(document.com_object).product
-        products = product.get_products()
+        products = product.products
 
         assert 'Product(name="cat_product_sub_1.1")' == products[0].__repr__()
 
@@ -217,9 +217,9 @@ def test_move():
 
         transformation = (1.000, 0, 0, 0, 0.707, 0.707, 0, -0.707, 0.707, 10.000, 20.000, 30.000)
 
-        Product.activate_terminal_node(product.get_products())
+        Product.activate_terminal_node(product.products)
         # move the first child in parent.
-        product = product.get_products()[0]
+        product = product.products
 
         product.move.apply(transformation)
 
