@@ -2,6 +2,7 @@
 
 ## 0.6.0
 
+* Removed deprecated method Product.get_products() use Product.products instead.
 * Added the following new modules:
     * abq_automation_interfaces
     * analysis_interfaces
@@ -13,7 +14,7 @@
     * cat_ipd_adapter_interfaces
     * cat_plant_ship_interfaces (PSP)
     * cat_rdg_interfaces
-    * cat_rsc_interfces
+    * cat_rsc_interfaces
     * cat_sch_platform_interfaces
     * cat_sde_interfaces
     * cat_sm_interfaces
