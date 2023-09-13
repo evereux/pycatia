@@ -8,14 +8,18 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
+
 from pycatia.analysis_interfaces.analysis_color_map import AnalysisColorMap
-from pycatia.analysis_interfaces.analysis_images import AnalysisImages
 from pycatia.in_interfaces.folder import Folder
 from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.axis_system import AxisSystem
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.types.general import cat_variant
+
+if TYPE_CHECKING:
+    from pycatia.analysis_interfaces.analysis_images import AnalysisImages
 
 
 class AnalysisImage(AnyObject):
@@ -58,7 +62,7 @@ class AnalysisImage(AnyObject):
         return AnalysisColorMap(self.analysis_image.AnalysisColorMap)
 
     @property
-    def analysis_images(self) -> AnalysisImages:
+    def analysis_images(self) -> 'AnalysisImages':
         """
         .. note::
             :class: toggle
@@ -72,6 +76,7 @@ class AnalysisImage(AnyObject):
         :rtype: AnalysisImages
         """
 
+        from pycatia.analysis_interfaces.analysis_images import AnalysisImages
         return AnalysisImages(self.analysis_image.AnalysisImages)
 
     def export_data(self, i_folder: Folder, i_file_name: str, i_extension_type: str) -> None:
