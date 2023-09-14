@@ -8,9 +8,13 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia.cat_smarteam_integ_interfaces.sti_db_children import StiDBChildren
+from typing import TYPE_CHECKING
+
 from pycatia.in_interfaces.document import Document
 from pycatia.system_interfaces.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia.cat_smarteam_integ_interfaces.sti_db_children import StiDBChildren
 
 
 class StiDBItem(AnyObject):
@@ -41,7 +45,7 @@ class StiDBItem(AnyObject):
         super().__init__(com_object)
         self.sti_db_item = com_object
 
-    def get_children(self) -> StiDBChildren:
+    def get_children(self) -> 'StiDBChildren':
         """
         .. note::
             :class: toggle
@@ -80,6 +84,8 @@ class StiDBItem(AnyObject):
         :return: StiDBChildren
         :rtype: StiDBChildren
         """
+
+        from pycatia.cat_smarteam_integ_interfaces.sti_db_children import StiDBChildren
         return StiDBChildren(self.sti_db_item.GetChildren())
 
     def get_document(self) -> Document:

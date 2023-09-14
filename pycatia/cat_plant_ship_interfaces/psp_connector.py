@@ -8,9 +8,13 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia.cat_plant_ship_interfaces.psp_connectable import PSPConnectable
+from typing import TYPE_CHECKING
+
 from pycatia.cat_plant_ship_interfaces.psp_list_of_bstrs import PSPListOfBSTRs
 from pycatia.system_interfaces.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia.cat_plant_ship_interfaces.psp_connectable import PSPConnectable
 
 
 class PSPConnector(AnyObject):
@@ -190,7 +194,7 @@ class PSPConnector(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_associated_connectable(self) -> PSPConnectable:
+    def get_associated_connectable(self) -> 'PSPConnectable':
         """
         .. note::
             :class: toggle
@@ -215,6 +219,8 @@ class PSPConnector(AnyObject):
         :return: PSPConnectable
         :rtype: PSPConnectable
         """
+        
+        from pycatia.cat_plant_ship_interfaces.psp_connectable import PSPConnectable
         return PSPConnectable(self.psp_connector.GetAssociatedConnectable())
 
     def is_cntr_connected(self) -> bool:

@@ -8,14 +8,18 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia.dmaps_interfaces.activities import Activities
+from typing import TYPE_CHECKING
+
 from pycatia.dmaps_interfaces.items import Items
 from pycatia.dmaps_interfaces.outputs import Outputs
-from pycatia.dmaps_interfaces.resources import Resources
 from pycatia.knowledge_interfaces.parameters import Parameters
 from pycatia.knowledge_interfaces.relations import Relations
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.types.general import cat_variant
+
+if TYPE_CHECKING:
+    from pycatia.dmaps_interfaces.activities import Activities
+    from pycatia.dmaps_interfaces.resources import Resources
 
 
 class Activity(AnyObject):
@@ -137,7 +141,7 @@ class Activity(AnyObject):
         return self.activity.CalculatedCycleTime
 
     @property
-    def children_activities(self) -> Activities:
+    def children_activities(self) -> 'Activities':
         """
         .. note::
             :class: toggle
@@ -153,6 +157,7 @@ class Activity(AnyObject):
         :rtype: Activities
         """
 
+        from pycatia.dmaps_interfaces.activities import Activities
         return Activities(self.activity.ChildrenActivities)
 
     @property
@@ -265,7 +270,7 @@ class Activity(AnyObject):
         return Items(self.activity.Items)
 
     @property
-    def next_cf_activities(self) -> Activities:
+    def next_cf_activities(self) -> 'Activities':
         """
         .. note::
             :class: toggle
@@ -280,10 +285,11 @@ class Activity(AnyObject):
         :rtype: Activities
         """
 
+        from pycatia.dmaps_interfaces.activities import Activities
         return Activities(self.activity.NextCFActivities)
 
     @property
-    def next_prf_activities(self) -> Activities:
+    def next_prf_activities(self) -> 'Activities':
         """
         .. note::
             :class: toggle
@@ -298,6 +304,7 @@ class Activity(AnyObject):
         :rtype: Activities
         """
 
+        from pycatia.dmaps_interfaces.activities import Activities
         return Activities(self.activity.NextPRFActivities)
 
     @property
@@ -337,7 +344,7 @@ class Activity(AnyObject):
         return Parameters(self.activity.Parameters)
 
     @property
-    def possible_precedence_activities(self) -> Activities:
+    def possible_precedence_activities(self) -> 'Activities':
         """
         .. note::
             :class: toggle
@@ -359,10 +366,11 @@ class Activity(AnyObject):
         :rtype: Activities
         """
 
+        from pycatia.dmaps_interfaces.activities import Activities
         return Activities(self.activity.PossiblePrecedenceActivities)
 
     @property
-    def precedence_activities(self) -> Activities:
+    def precedence_activities(self) -> 'Activities':
         """
         .. note::
             :class: toggle
@@ -383,10 +391,11 @@ class Activity(AnyObject):
         :rtype: Activities
         """
 
+        from pycatia.dmaps_interfaces.activities import Activities
         return Activities(self.activity.PrecedenceActivities)
 
     @property
-    def previous_cf_activities(self) -> Activities:
+    def previous_cf_activities(self) -> 'Activities':
         """
         .. note::
             :class: toggle
@@ -401,10 +410,11 @@ class Activity(AnyObject):
         :rtype: Activities
         """
 
+        from pycatia.dmaps_interfaces.activities import Activities
         return Activities(self.activity.PreviousCFActivities)
 
     @property
-    def previous_prf_activities(self) -> Activities:
+    def previous_prf_activities(self) -> 'Activities':
         """
         .. note::
             :class: toggle
@@ -419,6 +429,7 @@ class Activity(AnyObject):
         :rtype: Activities
         """
 
+        from pycatia.dmaps_interfaces.activities import Activities
         return Activities(self.activity.PreviousPRFActivities)
 
     @property
@@ -463,7 +474,7 @@ class Activity(AnyObject):
         return Relations(self.activity.Relations)
 
     @property
-    def resources(self) -> Resources:
+    def resources(self) -> 'Resources':
         """
         .. note::
             :class: toggle
@@ -478,6 +489,7 @@ class Activity(AnyObject):
         :rtype: Resources
         """
 
+        from pycatia.dmaps_interfaces.resources import Resources
         return Resources(self.activity.Resources)
 
     @property
@@ -709,7 +721,7 @@ class Activity(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_activity_constraints(self, i_constraint_type: str, o_constrt_list: Activities) -> None:
+    def get_activity_constraints(self, i_constraint_type: str, o_constrt_list: 'Activities') -> None:
         """
         .. note::
             :class: toggle

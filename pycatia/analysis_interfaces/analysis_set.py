@@ -8,12 +8,16 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
+
 from pycatia.analysis_interfaces.analysis_entities import AnalysisEntities
 from pycatia.analysis_interfaces.analysis_images import AnalysisImages
 from pycatia.analysis_interfaces.analysis_output_entities import AnalysisOutputEntities
-from pycatia.analysis_interfaces.analysis_sets import AnalysisSets
 from pycatia.analysis_interfaces.basic_components import BasicComponents
 from pycatia.system_interfaces.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia.analysis_interfaces.analysis_sets import AnalysisSets
 
 
 class AnalysisSet(AnyObject):
@@ -119,7 +123,7 @@ class AnalysisSet(AnyObject):
         return AnalysisOutputEntities(self.analysis_set.AnalysisOutputEntities)
 
     @property
-    def analysis_sets(self) -> AnalysisSets:
+    def analysis_sets(self) -> 'AnalysisSets':
         """
         .. note::
             :class: toggle
@@ -142,6 +146,7 @@ class AnalysisSet(AnyObject):
         :rtype: AnalysisSets
         """
 
+        from pycatia.analysis_interfaces.analysis_sets import AnalysisSets
         return AnalysisSets(self.analysis_set.AnalysisSets)
 
     @property

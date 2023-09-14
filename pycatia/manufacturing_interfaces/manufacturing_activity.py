@@ -8,12 +8,16 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
+
 from pycatia.dmaps_interfaces.activity import Activity
 from pycatia.knowledge_interfaces.parameter import Parameter
 from pycatia.manufacturing_interfaces.manufacturing_machinable_area import ManufacturingMachinableArea
-from pycatia.manufacturing_interfaces.manufacturing_precedences import ManufacturingPrecedences
 from pycatia.manufacturing_interfaces.manufacturing_tool import ManufacturingTool
 from pycatia.manufacturing_interfaces.manufacturing_tool_assembly import ManufacturingToolAssembly
+
+if TYPE_CHECKING:
+    from pycatia.manufacturing_interfaces.manufacturing_precedences import ManufacturingPrecedences
 
 
 class ManufacturingActivity(Activity):
@@ -192,7 +196,7 @@ class ManufacturingActivity(Activity):
         return self.manufacturing_activity.NumberOfStrategyAttributes
 
     @property
-    def precedences(self) -> ManufacturingPrecedences:
+    def precedences(self) -> 'ManufacturingPrecedences':
         """
         .. note::
             :class: toggle
@@ -216,7 +220,8 @@ class ManufacturingActivity(Activity):
         :return: ManufacturingPrecedences
         :rtype: ManufacturingPrecedences
         """
-
+        
+        from pycatia.manufacturing_interfaces.manufacturing_precedences import ManufacturingPrecedences
         return ManufacturingPrecedences(self.manufacturing_activity.Precedences)
 
     @property

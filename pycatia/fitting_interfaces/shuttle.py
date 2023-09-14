@@ -8,11 +8,15 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia.fitting_interfaces.shuttles import Shuttles
+from typing import TYPE_CHECKING
+
 from pycatia.in_interfaces.move import Move
 from pycatia.in_interfaces.position import Position
 from pycatia.navigator_interfaces.group import Group
 from pycatia.system_interfaces.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia.fitting_interfaces.shuttles import Shuttles
 
 
 class Shuttle(AnyObject):
@@ -230,7 +234,7 @@ class Shuttle(AnyObject):
         self.shuttle.Reference = value
 
     @property
-    def sub_shuttles(self) -> Shuttles:
+    def sub_shuttles(self) -> 'Shuttles':
         """
         .. note::
             :class: toggle
@@ -244,7 +248,8 @@ class Shuttle(AnyObject):
         :return: Shuttles
         :rtype: Shuttles
         """
-
+        
+        from pycatia.fitting_interfaces.shuttles import Shuttles
         return Shuttles(self.shuttle.SubShuttles)
 
     @property
