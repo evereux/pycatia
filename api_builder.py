@@ -1,6 +1,11 @@
+"""
+    A simple script to generate API documentation for new modules.
+"""
+
 import os
 from pathlib import Path
 
+# module folder(s) within pycatia
 modules = ['threed_xml_interfaces']
 
 cwd = Path(os.getcwd())
