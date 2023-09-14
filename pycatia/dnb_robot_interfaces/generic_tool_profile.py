@@ -8,8 +8,12 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia.dnb_robot_interfaces.rob_generic_controller import RobGenericController
+from typing import TYPE_CHECKING
+
 from pycatia.system_interfaces.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia.dnb_robot_interfaces.rob_generic_controller import RobGenericController
 
 
 class GenericToolProfile(AnyObject):
@@ -76,7 +80,7 @@ class GenericToolProfile(AnyObject):
         """
         return self.generic_tool_profile.GetCentroid(cx, cy, cz)
 
-    def get_controller(self, o_controller: RobGenericController) -> None:
+    def get_controller(self, o_controller: 'RobGenericController') -> None:
         """
         .. note::
             :class: toggle

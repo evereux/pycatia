@@ -8,8 +8,12 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia.general_knowledge_interfaces.expert_rule import ExpertRule
+from typing import TYPE_CHECKING
+
 from pycatia.general_knowledge_interfaces.expert_rule_base_component_runtime import ExpertRuleBaseComponentRuntime
+
+if TYPE_CHECKING:
+    from pycatia.general_knowledge_interfaces.expert_rule import ExpertRule
 
 
 class ExpertRuleRuntime(ExpertRuleBaseComponentRuntime):
@@ -63,7 +67,7 @@ class ExpertRuleRuntime(ExpertRuleBaseComponentRuntime):
         self.expert_rule_runtime.Priority = value
 
     @property
-    def rule_edition(self) -> ExpertRule:
+    def rule_edition(self) -> 'ExpertRule':
         """
         .. note::
             :class: toggle
@@ -76,7 +80,8 @@ class ExpertRuleRuntime(ExpertRuleBaseComponentRuntime):
         :return: ExpertRule
         :rtype: ExpertRule
         """
-
+        
+        from pycatia.general_knowledge_interfaces.expert_rule import ExpertRule
         return ExpertRule(self.expert_rule_runtime.RuleEdition)
 
     def __repr__(self):

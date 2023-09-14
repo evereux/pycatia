@@ -8,11 +8,15 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
+
 from pycatia.dmaps_interfaces.activities import Activities
 from pycatia.dmaps_interfaces.items import Items
 from pycatia.dmaps_interfaces.outputs import Outputs
-from pycatia.dmaps_interfaces.resource_collection import ResourceCollection
 from pycatia.system_interfaces.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia.dmaps_interfaces.resource_collection import ResourceCollection
 
 
 class Resource(AnyObject):
@@ -76,7 +80,7 @@ class Resource(AnyObject):
         return Items(self.resource.InputProducts)
 
     @property
-    def next_resources(self) -> ResourceCollection:
+    def next_resources(self) -> 'ResourceCollection':
         """
         .. note::
             :class: toggle
@@ -92,6 +96,7 @@ class Resource(AnyObject):
         :rtype: ResourceCollection
         """
 
+        from pycatia.dmaps_interfaces.resource_collection import ResourceCollection
         return ResourceCollection(self.resource.NextResources)
 
     @property
@@ -113,7 +118,7 @@ class Resource(AnyObject):
         return Outputs(self.resource.OutputProducts)
 
     @property
-    def previous_resources(self) -> ResourceCollection:
+    def previous_resources(self) -> 'ResourceCollection':
         """
         .. note::
             :class: toggle
@@ -129,7 +134,8 @@ class Resource(AnyObject):
         :return: ResourceCollection
         :rtype: ResourceCollection
         """
-
+        
+        from pycatia.dmaps_interfaces.resource_collection import ResourceCollection
         return ResourceCollection(self.resource.PreviousResources)
 
     def get_object(self, i_interface_name: str) -> AnyObject:

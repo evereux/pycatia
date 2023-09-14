@@ -8,10 +8,11 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
+
 from pycatia.analysis_interfaces.analysis_images import AnalysisImages
 from pycatia.analysis_interfaces.analysis_local_entities import AnalysisLocalEntities
 from pycatia.analysis_interfaces.analysis_supports import AnalysisSupports
-from pycatia.analysis_interfaces.basic_components import BasicComponents
 from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.constraint import Constraint
 from pycatia.mec_mod_interfaces.part import Part
@@ -19,6 +20,9 @@ from pycatia.product_structure_interfaces.product import Product
 from pycatia.product_structure_interfaces.publication import Publication
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.types.general import cat_variant
+
+if TYPE_CHECKING:
+    from pycatia.analysis_interfaces.basic_components import BasicComponents
 
 
 class AnalysisEntity(AnyObject):
@@ -120,7 +124,7 @@ class AnalysisEntity(AnyObject):
         return AnalysisSupports(self.analysis_entity.AnalysisSupports)
 
     @property
-    def basic_components(self) -> BasicComponents:
+    def basic_components(self) -> 'BasicComponents':
         """
         .. note::
             :class: toggle
@@ -142,6 +146,7 @@ class AnalysisEntity(AnyObject):
         :rtype: BasicComponents
         """
 
+        from pycatia.analysis_interfaces.basic_components import BasicComponents
         return BasicComponents(self.analysis_entity.BasicComponents)
 
     @property

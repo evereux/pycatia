@@ -8,8 +8,12 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia.dnb_robot_interfaces.rob_generic_controller import RobGenericController
+from typing import TYPE_CHECKING
+
 from pycatia.system_interfaces.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia.dnb_robot_interfaces.rob_generic_controller import RobGenericController
 
 
 class GenericObjFrameProfile(AnyObject):
@@ -38,7 +42,7 @@ class GenericObjFrameProfile(AnyObject):
         super().__init__(com_object)
         self.generic_obj_frame_profile = com_object
 
-    def get_controller(self, o_controller: RobGenericController) -> None:
+    def get_controller(self, o_controller: 'RobGenericController') -> None:
         """
         .. note::
             :class: toggle
