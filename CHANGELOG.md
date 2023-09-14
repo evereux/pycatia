@@ -67,7 +67,7 @@
     * smt_interfaces
     * structure_interfaces
     * surface_machining_interfaces
-    * threeDxml_interfaces
+    * threed_xml_interfaces
 
 ## 0.5.9
 

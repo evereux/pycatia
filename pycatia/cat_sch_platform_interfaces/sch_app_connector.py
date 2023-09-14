@@ -8,11 +8,15 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia.cat_sch_platform_interfaces.sch_app_connectable import SchAppConnectable
-from pycatia.cat_sch_platform_interfaces.sch_app_connection import SchAppConnection
+from typing import TYPE_CHECKING
+
 from pycatia.cat_sch_platform_interfaces.sch_list_of_bst_rs import SchListOfBSTRs
 from pycatia.cat_sch_platform_interfaces.sch_list_of_objects import SchListOfObjects
 from pycatia.system_interfaces.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia.cat_sch_platform_interfaces.sch_app_connectable import SchAppConnectable
+    from pycatia.cat_sch_platform_interfaces.sch_app_connection import SchAppConnection
 
 
 class SchAppConnector(AnyObject):
@@ -37,7 +41,7 @@ class SchAppConnector(AnyObject):
         super().__init__(com_object)
         self.sch_app_connector = com_object
 
-    def app_connect(self, i_cntr_to_connect: 'SchAppConnector') -> SchAppConnection:
+    def app_connect(self, i_cntr_to_connect: 'SchAppConnector') -> 'SchAppConnection':
         """
         .. note::
             :class: toggle
@@ -69,9 +73,11 @@ class SchAppConnector(AnyObject):
         :return: SchAppConnection
         :rtype: SchAppConnection
         """
+
+        from pycatia.cat_sch_platform_interfaces.sch_app_connection import SchAppConnection
         return SchAppConnection(self.sch_app_connector.AppConnect(i_cntr_to_connect.com_object))
 
-    def app_connect_branch(self, i_cntr_to_connect: 'SchAppConnector') -> SchAppConnection:
+    def app_connect_branch(self, i_cntr_to_connect: 'SchAppConnector') -> 'SchAppConnection':
         """
         .. note::
             :class: toggle
@@ -90,9 +96,7 @@ class SchAppConnector(AnyObject):
                 |             Connection created 
                 | 
                 |     Example:
-                | 
-                |           
-                | 
+                |
                 |          Dim objThisIntf As SchAppConnector
                 |          Dim objArg1 As SchAppConnector
                 |          Dim objArg2 As SchAppConnection
@@ -103,6 +107,8 @@ class SchAppConnector(AnyObject):
         :return: SchAppConnection
         :rtype: SchAppConnection
         """
+
+        from pycatia.cat_sch_platform_interfaces.sch_app_connection import SchAppConnection
         return SchAppConnection(self.sch_app_connector.AppConnectBranch(i_cntr_to_connect.com_object))
 
     def app_disconnect(self, i_cntr_to_dis_connect: 'SchAppConnector') -> None:
@@ -150,7 +156,7 @@ class SchAppConnector(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def app_get_associated_connectable(self) -> SchAppConnectable:
+    def app_get_associated_connectable(self) -> 'SchAppConnectable':
         """
         .. note::
             :class: toggle
@@ -178,6 +184,8 @@ class SchAppConnector(AnyObject):
         :return: SchAppConnectable
         :rtype: SchAppConnectable
         """
+
+        from pycatia.cat_sch_platform_interfaces.sch_app_connectable import SchAppConnectable
         return SchAppConnectable(self.sch_app_connector.AppGetAssociatedConnectable())
 
     def app_is_cntr_connected(self, o_b_yes: bool) -> None:

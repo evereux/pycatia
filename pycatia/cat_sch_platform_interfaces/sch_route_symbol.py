@@ -8,8 +8,12 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia.cat_sch_platform_interfaces.sch_grr_route import SchGRRRoute
+from typing import TYPE_CHECKING
+
 from pycatia.system_interfaces.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia.cat_sch_platform_interfaces.sch_grr_route import SchGRRRoute
 
 
 class SchRouteSymbol(AnyObject):
@@ -79,7 +83,7 @@ class SchRouteSymbol(AnyObject):
         """
         return self.sch_route_symbol.FlipOverOrthogonalLine()
 
-    def get_grr_route(self) -> SchGRRRoute:
+    def get_grr_route(self) -> 'SchGRRRoute':
         """
         .. note::
             :class: toggle
@@ -105,6 +109,8 @@ class SchRouteSymbol(AnyObject):
         :return: SchGRRRoute
         :rtype: SchGRRRoute
         """
+
+        from pycatia.cat_sch_platform_interfaces.sch_grr_route import SchGRRRoute
         return SchGRRRoute(self.sch_route_symbol.GetGRRRoute())
 
     def get_position(self, o_seg_num: int, o_seg_parm: float) -> None:

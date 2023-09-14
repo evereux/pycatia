@@ -8,8 +8,12 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia.dnb_human_modeling_interfaces.swk_manikin import SWKManikin
+from typing import TYPE_CHECKING
+
 from pycatia.system_interfaces.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia.dnb_human_modeling_interfaces.swk_manikin import SWKManikin
 
 
 class SWKBodyElement(AnyObject):
@@ -64,7 +68,7 @@ class SWKBodyElement(AnyObject):
         return self.swk_body_element.FullName
 
     @property
-    def manikin(self) -> SWKManikin:
+    def manikin(self) -> 'SWKManikin':
         """
         .. note::
             :class: toggle
@@ -77,7 +81,8 @@ class SWKBodyElement(AnyObject):
         :return: SWKManikin
         :rtype: SWKManikin
         """
-
+        
+        from pycatia.dnb_human_modeling_interfaces.swk_manikin import SWKManikin
         return SWKManikin(self.swk_body_element.Manikin)
 
     @property

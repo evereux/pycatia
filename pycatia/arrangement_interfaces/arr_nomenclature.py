@@ -8,8 +8,12 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia.arrangement_interfaces.arr_nomenclatures import ArrNomenclatures
+from typing import TYPE_CHECKING
+
 from pycatia.system_interfaces.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia.arrangement_interfaces.arr_nomenclatures import ArrNomenclatures
 
 
 class ArrNomenclature(AnyObject):
@@ -139,7 +143,7 @@ class ArrNomenclature(AnyObject):
         self.arr_nomenclature.NLSInstanceName = value
 
     @property
-    def sub_types(self) -> ArrNomenclatures:
+    def sub_types(self) -> 'ArrNomenclatures':
         """
         .. note::
             :class: toggle
@@ -153,7 +157,7 @@ class ArrNomenclature(AnyObject):
         :return: ArrNomenclatures
         :rtype: ArrNomenclatures
         """
-
+        from pycatia.arrangement_interfaces.arr_nomenclatures import ArrNomenclatures
         return ArrNomenclatures(self.arr_nomenclature.SubTypes)
 
     @property

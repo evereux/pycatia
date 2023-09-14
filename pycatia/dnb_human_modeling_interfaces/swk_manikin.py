@@ -8,16 +8,20 @@
         and thus help debugging in pycatia.
         
 """
+from typing import TYPE_CHECKING
+
 from pycatia.dnb_human_modeling_interfaces.swk_anthro import SWKAnthro
-from pycatia.dnb_human_modeling_interfaces.swk_body import SWKBody
 from pycatia.dnb_human_modeling_interfaces.swk_ergo import SWKErgo
 from pycatia.dnb_human_modeling_interfaces.swk_line_of_sight_node import SWKLineOfSightNode
 from pycatia.dnb_human_modeling_interfaces.swk_manikin_part import SWKManikinPart
 from pycatia.dnb_human_modeling_interfaces.swk_node import SWKNode
 from pycatia.dnb_human_modeling_interfaces.swk_segment_node import SWKSegmentNode
 from pycatia.dnb_human_modeling_interfaces.swk_vision import SWKVision
-from pycatia.dnb_human_modeling_interfaces.swkik_manager import SWKIKManager
 from pycatia.in_interfaces.move import Move
+
+if TYPE_CHECKING:
+    from pycatia.dnb_human_modeling_interfaces.swk_body import SWKBody
+    from pycatia.dnb_human_modeling_interfaces.swkik_manager import SWKIKManager
 
 
 class SWKManikin(SWKManikinPart):
@@ -69,7 +73,7 @@ class SWKManikin(SWKManikinPart):
         return SWKAnthro(self.swk_manikin.Anthro)
 
     @property
-    def body(self) -> SWKBody:
+    def body(self) -> 'SWKBody':
         """
         .. note::
             :class: toggle
@@ -85,6 +89,7 @@ class SWKManikin(SWKManikinPart):
         :rtype: SWKBody
         """
 
+        from pycatia.dnb_human_modeling_interfaces.swk_body import SWKBody
         return SWKBody(self.swk_manikin.Body)
 
     @property
@@ -127,7 +132,7 @@ class SWKManikin(SWKManikinPart):
         return SWKErgo(self.swk_manikin.Ergo)
 
     @property
-    def ik_manager(self) -> SWKIKManager:
+    def ik_manager(self) -> 'SWKIKManager':
         """
         .. note::
             :class: toggle
@@ -142,7 +147,8 @@ class SWKManikin(SWKManikinPart):
         :return: SWKIKManager
         :rtype: SWKIKManager
         """
-
+        
+        from pycatia.dnb_human_modeling_interfaces.swkik_manager import SWKIKManager
         return SWKIKManager(self.swk_manikin.IKManager)
 
     @property

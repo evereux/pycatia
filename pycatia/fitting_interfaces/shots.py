@@ -8,6 +8,7 @@
         and thus help debugging in pycatia.
         
 """
+from pycatia.fitting_interfaces.shot import Shot
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.system_interfaces.collection import Collection
 from pycatia.types.general import cat_variant
@@ -33,7 +34,7 @@ class Shots(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=Shot)
         self.shots = com_object
 
     def append(self, i_shot: AnyObject) -> None:

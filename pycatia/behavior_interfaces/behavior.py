@@ -8,8 +8,12 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia.behavior_interfaces.behaviors import Behaviors
+from typing import TYPE_CHECKING
+
 from pycatia.system_interfaces.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia.behavior_interfaces.behaviors import Behaviors
 
 
 class Behavior(AnyObject):
@@ -41,7 +45,7 @@ class Behavior(AnyObject):
         self.behavior = com_object
 
     @property
-    def behaviors(self) -> Behaviors:
+    def behaviors(self) -> 'Behaviors':
         """
         .. note::
             :class: toggle
@@ -62,6 +66,7 @@ class Behavior(AnyObject):
         :rtype: Behaviors
         """
 
+        from pycatia.behavior_interfaces.behaviors import Behaviors
         return Behaviors(self.behavior.Behaviors)
 
     def activate(self) -> None:

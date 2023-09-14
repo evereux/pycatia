@@ -8,10 +8,14 @@
         and thus help debugging in pycatia.
         
 """
-from pycatia.general_knowledge_interfaces.expert_rule_base import ExpertRuleBase
+from typing import TYPE_CHECKING
+
 from pycatia.general_knowledge_interfaces.expert_rule_set import ExpertRuleSet
 from pycatia.knowledge_interfaces.relation import Relation
 from pycatia.system_interfaces.any_object import AnyObject
+
+if TYPE_CHECKING:
+    from pycatia.general_knowledge_interfaces.expert_rule_base import ExpertRuleBase
 
 
 class ExpertRuleBaseRuntime(Relation):
@@ -179,7 +183,7 @@ class ExpertRuleBaseRuntime(Relation):
         self.expert_rule_base_runtime.ReportShowResult = value
 
     @property
-    def rule_base_edition(self) -> ExpertRuleBase:
+    def rule_base_edition(self) -> 'ExpertRuleBase':
         """
         .. note::
             :class: toggle
@@ -202,7 +206,8 @@ class ExpertRuleBaseRuntime(Relation):
         :return: ExpertRuleBase
         :rtype: ExpertRuleBase
         """
-
+        
+        from pycatia.general_knowledge_interfaces.expert_rule_base import ExpertRuleBase
         return ExpertRuleBase(self.expert_rule_base_runtime.RuleBaseEdition)
 
     @property
