@@ -219,7 +219,7 @@ def test_move():
 
         Product.activate_terminal_node(product.products)
         # move the first child in parent.
-        product = product.products
+        product = product.products[0]
 
         product.move.apply(transformation)
 
@@ -234,7 +234,6 @@ def test_move():
             -156.24999999999818,
             677.0833333333264,
         ) == product.analyze.get_inertia()
-
 
 def test_name():
     with CATIADocHandler(cat_part_measurable) as caa:
