@@ -82,7 +82,7 @@ class Materials(Collection):
                 |      Dim MyMaterial As Material
                 |      Set MyMaterial = Materials.Item(6)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: Material
         :rtype: Material
         """
@@ -98,7 +98,7 @@ class Materials(Collection):
                 |
                 |     Removes a material from the materials collection.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: None
         :rtype: None
         """
@@ -133,7 +133,7 @@ class Materials(Collection):
                 |     Returns:
                 |         The retrieved material
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :param int i_mode:
         :return: Material
         :rtype: Material

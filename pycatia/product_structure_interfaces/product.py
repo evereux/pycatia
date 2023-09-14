@@ -639,7 +639,7 @@ class Product(AnyObject):
                 if product.is_catpart():
                     product.activate_default_shape()
                 elif product.is_catproduct():
-                    loop_d_loop(product.get_products())
+                    loop_d_loop(product.products)
 
         loop_d_loop(products)
 
@@ -1144,25 +1144,6 @@ class Product(AnyObject):
         :rtype: int
         """
         return self.product.GetNumberOfShapes()
-
-    def get_products(self):
-        """
-        Returns a list of Product().
-        :return: [Product()]
-        """
-
-        warnings.warn(
-            'This method will be deprecated in a future release. Use Product.products instead.',
-            DeprecationWarning,
-            stacklevel=2)
-
-        products_ = []
-
-        for i in range(0, self.product.Products.Count):
-            product = Product(self.product.Products.Item(i + 1))
-            products_.append(product)
-
-        return products_
 
     def get_shape_path_name(self, i_shape_name=None):
         """

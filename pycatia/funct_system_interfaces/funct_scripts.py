@@ -122,7 +122,7 @@ class FunctScripts(Collection):
                 |          Dim Assoc2 As FunctScript
                 |          Set Assoc2 = FacetGKW.Scripts.Elem("Producing the Skeleton 2D")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: FunctScript
         :rtype: FunctScript
         """

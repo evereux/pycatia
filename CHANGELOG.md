@@ -1,19 +1,87 @@
 # Changelog
 
+## 0.6.0
+
+* Removed deprecated method Product.get_products() use Product.products instead.
+* Added the following new modules:
+    * abq_automation_interfaces
+    * analysis_interfaces
+    * arrangement_interfaces
+    * assembly_interfaces
+    * behaviour_interfaces
+    * bkt_interfaces
+    * cat_dde_settings_interfaces
+    * cat_ipd_adapter_interfaces
+    * cat_plant_ship_interfaces (PSP)
+    * cat_rdg_interfaces
+    * cat_rsc_interfaces
+    * cat_sch_platform_interfaces
+    * cat_sde_interfaces
+    * cat_sm_interfaces
+    * cat_smarteam_integ_interfaces
+    * cat_str_functional_interfaces
+    * cat_tps_interfaces
+    * catia_v4_interfaces
+    * catia_de_settings_interfaces
+    * composites_interfaces
+    * dnb_asy_activity_interfaces
+    * dnb_d5_interfaces
+    * dnb_device_activity_interfaces
+    * dnb_device_interfaces
+    * dnb_dpm_interfaces
+    * dnb_ehm_interfaces
+    * dnb_ehs_interfaces
+    * dnb_ekp_interfaces
+    * dnb_fastener_interfaces
+    * dnb_graph_editor
+    * dnb_human_modelling_interfaces
+    * dnb_human_sim_interfaces
+    * dnb_igp_arc_commands
+    * dnb_lgp_olp_ui
+    * dnb_igp_setup_interfaces
+    * dnb_manufacturing_layout_interfaces
+    * dnb_mhi_interfaces
+    * dnb_reporting_interfaces
+    * dnb_resource_program_interfaces
+    * dnb_robot_interfaces
+    * dnb_sim_activity_interfaces
+    * dnb_simulation_interfaces
+    * dnb_sor_interfaces
+    * dnb_state_interfaces
+    * dnb_work_interfaces
+    * dmaps_interfaces
+    * drafting_2dl_interfaces
+    * electrical_schematic_interfaces
+    * eno_cd5_interfaces
+    * fitting_interfaces
+    * general_knowledge_interfaces
+    * kinematics_interfaces
+    * manufacturing_interfaces
+    * multi_cad_interfaces
+    * osm_interfaces
+    * pcb_board_base
+    * ppr_interfaces
+    * prismatic_machining_interfaces
+    * reporter_interfaces
+    * simulation_interfaces
+    * smt_interfaces
+    * structure_interfaces
+    * surface_machining_interfaces
+    * threed_xml_interfaces
+
 ## 0.5.9
 
 * Added missing com_oject to references in navigator_interfaces. (@evereux & @marciolrc)
 * Fixed reference plane method in HybridShapePlaneAngle. (@Mithro86)
-* Updates to examples to include latest supported python version. Also fix IDE autocompletion & syntax highlighting 
- issues. (@deloarts)
-*  
+* Updates to examples to include latest supported python version. Also fix IDE autocompletion & syntax highlighting
+  issues. (@deloarts)
 
 ## 0.5.8
 
 * Added new document type CatalogDocument.
 * Added new document type CATMaterial.
-* fixed method for AxisSystem.origin_point, AxisSystem.x_axis_direction, AxisSystem.y_axis_direction and 
- AxisSystem.z_axis_direction. (@Mithro86)
+* fixed method for AxisSystem.origin_point, AxisSystem.x_axis_direction, AxisSystem.y_axis_direction and
+  AxisSystem.z_axis_direction. (@Mithro86)
 * Added warning to example__assembly_convertor__001.py for when writing to files. (@deloarts)
 * fixed method for Limit.limiting_element(). (@ptm-tm)
 
@@ -23,8 +91,7 @@
 * fixed method for AxisSystem.get_vectors(). (@Mithro86)
 * Partial fix to Selection.indicate_or_select_element_3d(). (@Mithro86)
 * added pathlib.Path to DrawingPictures.add().
-  * now tries to get the Windows absolute path from input as CATIA may not be 
-  able to otherwise find the file. 
+    * now tries to get the Windows absolute path from input as CATIA may not be able to otherwise find the file.
 * References to python 3.6 now updated to 3.9 due to type annotation support.
 * fixed method for Line.get_direction(). (@Mithro86)
 
@@ -49,8 +116,8 @@
 
 ## 0.5.3
 
-* fixed methods in pycatia/mec_mod_interfaces/axis_system and pycatia/mec_mod_interfaces/cylindrical_face.py
-  that required mapping to VBA methods.
+* fixed methods in pycatia/mec_mod_interfaces/axis_system and pycatia/mec_mod_interfaces/cylindrical_face.py that
+  required mapping to VBA methods.
 
 ## 0.5.2
 

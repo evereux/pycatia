@@ -118,7 +118,7 @@ class List(Collection):
                 | 
                 |      Features.Remove("density")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: None
         :rtype: None
         """
