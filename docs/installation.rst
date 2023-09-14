@@ -19,10 +19,10 @@ To install from `pypi <https://pypi.org/>`_::
     pip install pycatia
 
 
-To get the latest development version from github::
+To get the latest master version from github::
 
     git clone https://github.com/evereux/pycatia.git
-    # install pycatia requirement
+    # install the pycatia requirements
     pip install -r requirements\requirements.txt
 
  To upgrade your current installed version::

@@ -189,7 +189,7 @@ class DrawingDimensions(Collection):
         :param int i_type_dim:
         :param tuple i_geom_elem:
         :param tuple i_pt_coord_elem:
-        :param CATVariant i_ldc_ref_elem:
+        :param cat_variant i_ldc_ref_elem:
         :param int i_ldc_ref_angle:
         :return: DrawingDimension
         :rtype: DrawingDimension
