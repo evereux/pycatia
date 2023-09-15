@@ -4836,9 +4836,16 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapeSection(self.hybrid_shape_factory.AddNewSection())
 
-    def add_new_sphere(self, i_center: Reference, i_axis: Reference, i_radius: float, i_begin_parallel_angle: float,
-                       i_end_parallel_angle: float, i_begin_meridian_angle: float,
-                       i_end_meridian_angle: float) -> HybridShapeSphere:
+    def add_new_sphere(
+            self,
+            i_center: Reference,
+            i_axis: Reference,
+            i_radius: float,
+            i_begin_parallel_angle: float,
+            i_end_parallel_angle: float,
+            i_begin_meridian_angle: float,
+            i_end_meridian_angle: float
+    ) -> HybridShapeSphere:
         """
         .. note::
             :class: toggle
@@ -4885,11 +4892,23 @@ class HybridShapeFactory(Factory):
         :param float i_end_meridian_angle:
         :return: HybridShapeSphere
         :rtype: HybridShapeSphere
+
+        It's possible within VBA / CATScript to provide a Nothing argument for the axis system if you ant to use the
+        absolute AxisSystem of the part. I haven't been able to figure out a workaround for this issue so an AxisSystem
+        will need to be provided.
+        See https://github.com/evereux/pycatia/issues/130 for more details.
         """
         return HybridShapeSphere(
-            self.hybrid_shape_factory.AddNewSphere(i_center.com_object, i_axis.com_object, i_radius,
-                                                   i_begin_parallel_angle, i_end_parallel_angle, i_begin_meridian_angle,
-                                                   i_end_meridian_angle))
+            self.hybrid_shape_factory.AddNewSphere(
+                i_center.com_object,
+                i_axis.com_object,
+                i_radius,
+                i_begin_parallel_angle,
+                i_end_parallel_angle,
+                i_begin_meridian_angle,
+                i_end_meridian_angle
+            )
+        )
 
     def add_new_spine(self) -> HybridShapeSpine:
         """
