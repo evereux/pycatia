@@ -90,7 +90,7 @@ class Part(AnyObject):
         """
 
         return Analyze(self.part.Analyze)
-        
+
     @property
     def annotation_sets(self) -> Collection:
         """
@@ -139,6 +139,9 @@ class Part(AnyObject):
                 |          Set axisSystems = partRoot.AxisSystems
 
         :return: AxisSystems
+
+        This will only return axis systems under the Axis Systems node. Axis systems within a Geometrical Set will not
+        be returned.
         """
 
         return AxisSystems(self.part.AxisSystems)
