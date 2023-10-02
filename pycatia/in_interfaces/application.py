@@ -1188,37 +1188,46 @@ class Application(AnyObject):
             [message_text, buttons, title]
         )
     
-    def input_box(self, promt: str,
-                  title='', default=''):
-        """ Display InputBox in catia.
-            Default position in the center screen.
+    def input_box(self, prompt: str,
+                  title: str = '', default: str = '') -> str:
+        """
+        Display InputBox in catia.
+        Default position in the center screen.
 
-        Args:
-            promt (str):
-                Required.String expression displayed as the message 
-                in the dialog box.
-            title (str, optional): Optional. Defaults to ''.
+        Parameters
+        ----------
+        prompt : str
+            Required.String expression displayed as the message 
+            in the dialog box..
+        title : str, optional
+                The default is ''.
                 String expression displayed in the title bar of 
                 the dialog box. If you omit title,the application name is
-                placed in the title bar.
-            default (str, optional): Optional. Defaults to ''.
-                String expression displayed in the text box as the default
-                response if no other input is provided. If you omit default,
-                the text box is displayed empty.
+                placed in the title bar.. 
+        default : str, optional
+            The default is ''.
+            String expression displayed in the text box as the default
+            response if no other input is provided. If you omit default,
+            the text box is displayed empty.
+
+        Returns
+        -------
+        str
+            User input result.
+            
         More information on
         https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/inputbox-function
-        """
-        
 
+        """
         f_name = "input_box"
-        i_box = f"Public Function {f_name}(promt,title,default)\n" \
-            f"    {f_name} = InputBox(promt,title,default)\n" \
+        i_box = f"Public Function {f_name}(prompt,title,default)\n" \
+            f"    {f_name} = InputBox(prompt,title,default)\n" \
             "End Function"
         return self.system_service.evaluate(
             i_box,
             cat_script_language.index('CATVBScriptLanguage'),
             f_name,
-            [promt, title, default]
+            [prompt, title, default]
         )
 
 
