@@ -1189,7 +1189,7 @@ class Application(AnyObject):
         )
     
     def input_box(self, promt: str,
-                  title='', default='',*x_pos):
+                  title='', default=''):
         """ Display InputBox in catia.
             Default position in the center screen.
 
