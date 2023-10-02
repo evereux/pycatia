@@ -1,4 +1,4 @@
-#! usr/bin/python3.6
+#! usr/bin/python3.9
 """
     Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
@@ -29,7 +29,7 @@ from pycatia.part_interfaces.shape_factory import ShapeFactory
 from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.product_structure_interfaces.analyze import Analyze
 from pycatia.system_interfaces.collection import Collection
-from pycatia.tps_interfaces.annotation_sets import AnnotationSets
+from pycatia.cat_tps_interfaces.annotation_sets import AnnotationSets
 
 
 class Part(AnyObject):

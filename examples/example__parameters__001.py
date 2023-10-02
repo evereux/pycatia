@@ -1,13 +1,15 @@
-#! /usr/bin/python3.7
+#! /usr/bin/python3.9
 
 """
 
-    Example - Parameters - 001:
+    Example - Parameters - 001
 
-    Access the CATIA COM object with a .CATPart open and and display
-    each parameter along with its name, value and its associated parameter set.
+    Description:
+        Access the CATIA COM object with a .CATPart open and and display
+        each parameter along with its name, value and its associated parameter set.
 
-    # todo: need to create a source part to support this example.
+    Requirements:
+        - CATIA running.
 
 """
 
@@ -17,20 +19,28 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
+from pycatia.mec_mod_interfaces.part import Part
+from pycatia.mec_mod_interfaces.part_document import PartDocument
 
 # from pycatia.knowledge_interfaces import BoolParam
 
 caa = catia()
 documents = caa.documents
-documents.open(r'tests/cat_files/part_measurable.CATPart')
+documents.open(r"tests/cat_files/part_measurable.CATPart")
 
-document = caa.active_document
-
-part = document.part
+document = PartDocument(caa.active_document.com_object)
+part = Part(document.part.com_object)
+bodies = part.bodies
+# Note: It's not necessary to explicitly use the PartDocument or the Part class
+# with the com_object. It's perfectly fine to write it like this:
+#   document = caa.active_document
+#   part = document.part
+# But declaring 'document' and 'part' this way, your linter can't resolve the
+# product reference, see https://github.com/evereux/pycatia/issues/107#issuecomment-1336195688
 
 # gets part parameters
 part_parameters = part.parameters
@@ -79,13 +89,19 @@ sketch_pocket_activity = part_parameters.item("Sketches\\Sketch_Pocket\\Activity
 object_pocket_activity = part_parameters.item("PartBody\\Pocket.1\\Activity")
 
 # create the formula to combine the sketch and pocket activity with the parameter <pocket_activity>
-part_relations.create_formula("Activity_Sketch_Pocket",
-                              "Checks weather the Pocket should be activated or not", sketch_pocket_activity,
-                              pocket_activity.name)
+part_relations.create_formula(
+    "Activity_Sketch_Pocket",
+    "Checks weather the Pocket should be activated or not",
+    sketch_pocket_activity,
+    pocket_activity.name,
+)
 
-part_relations.create_formula("Activity_Object_Pocket",
-                              "Checks weather the Pocket should be activated or not", object_pocket_activity,
-                              pocket_activity.name)
+part_relations.create_formula(
+    "Activity_Object_Pocket",
+    "Checks weather the Pocket should be activated or not",
+    object_pocket_activity,
+    pocket_activity.name,
+)
 
 part.update()
 

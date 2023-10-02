@@ -1,4 +1,4 @@
-#! usr/bin/python3.6
+#! usr/bin/python3.9
 """
     Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
@@ -109,7 +109,7 @@ class Limit(AnyObject):
         :param Reference value:
         """
 
-        self.limit.LimitingElement = value
+        self.limit.LimitingElement = value.com_object
 
     def __repr__(self):
         return f'Limit(name="{ self.name }")'

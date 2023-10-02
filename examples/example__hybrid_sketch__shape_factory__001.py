@@ -1,10 +1,14 @@
-#! /usr/bin/python3.6
+#! /usr/bin/python3.9
 
 """
 
-    Example - Hybrid Sketch & Shape Factory - 001:
+    Example - Hybrid Sketch & Shape Factory - 001
 
-    Creates a square in a sketch and fully constrains it. Sketch then used to pad.
+    Description:
+        Creates a square in a sketch and fully constrains it. Sketch then used to pad.
+
+    Requirements:
+        - CATIA running.        
 
 """
 
@@ -14,15 +18,27 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('..\\pycatia'))
+sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pycatia import catia
-from pycatia.enumeration.enumeration_types import cat_constraint_type, cat_constraint_mode, cat_constraint_angle_sector
+from pycatia.enumeration.enumeration_types import cat_constraint_type
+from pycatia.in_interfaces.reference import Reference
+from pycatia.mec_mod_interfaces.part import Part
+from pycatia.mec_mod_interfaces.part_document import PartDocument
+from pycatia.sketcher_interfaces.geometry_2D import Geometry2D
 
 caa = catia()
-document = caa.active_document
-part = document.part
+documents = caa.documents
+documents.add("Part")
+document = PartDocument(caa.active_document.com_object)
+part = Part(document.part.com_object)
+# Note: It's not necessary to explicitly use the PartDocument or the Part class
+# with the com_object. It's perfectly fine to write it like this:
+#   document = caa.active_document
+#   part = document.part
+# But declaring 'document' and 'part' this way, your linter can't resolve the
+# product reference, see https://github.com/evereux/pycatia/issues/107#issuecomment-1336195688
 
 hsf = part.hybrid_shape_factory
 
@@ -39,17 +55,20 @@ part.update()
 
 # plane for sketch positioning
 xy_plane = part.origin_elements.plane_xy
+xy_plane_reference = Reference(xy_plane.com_object)
 # add the sketch.
-sketch = geom_set.hybrid_sketches.add(xy_plane)
+sketch = geom_set.hybrid_sketches.add(xy_plane_reference)
 # open the sketch for editing.
 factory_2D = sketch.open_edition()
 
 # get the h_direction used for constraining the line.
 geom_elements = sketch.geometric_elements
 abs_axis = geom_elements.item("AbsoluteAxis")
-h_direction = abs_axis.get_item("HDirection")
-v_direction = abs_axis.get_item("VDirection")
+
+h_direction = Geometry2D(abs_axis.get_item("HDirection").com_object)
 h_direction.report_name = 1
+
+v_direction = Geometry2D(abs_axis.get_item("VDirection").com_object)
 v_direction.report_name = 2
 
 # create the points for the line.
@@ -82,9 +101,9 @@ constraints = sketch.constraints
 
 # create the length constraint.
 # left vertical line.
-constraint_length_1 = constraints.add_mono_elt_cst(cat_constraint_type.index("catCstTypeLength"), line_1)
+constraint_length_1 = constraints.add_mono_elt_cst(cat_constraint_type.index("catCstTypeLength"), Reference(line_1))
 # horizontal line.
-constraint_length_4 = constraints.add_mono_elt_cst(cat_constraint_type.index("catCstTypeLength"), line_4)
+constraint_length_4 = constraints.add_mono_elt_cst(cat_constraint_type.index("catCstTypeLength"), Reference(line_4))
 
 # make the constraint reference.
 # constraint_length_1.mode = cat_constraint_mode.index("catCstModeDrivenDimension")
@@ -95,30 +114,30 @@ constraint_length_4 = constraints.add_mono_elt_cst(cat_constraint_type.index("ca
 
 # constrain the bottom line to h_direction
 constraint_horizontal = constraints.add_bi_elt_cst(
-    cat_constraint_type.index("catCstTypeOn"),
-    line_4,
-    h_direction
+    cat_constraint_type.index("catCstTypeOn"), Reference(line_4.com_object), Reference(h_direction.com_object)
 )
 
 # constrain left vertical as angle to bottom line.
-constraint_angle = constraints.add_bi_elt_cst(cat_constraint_type.index("catCstTypeAngle"), line_1, line_4)
+constraint_angle = constraints.add_bi_elt_cst(
+    cat_constraint_type.index("catCstTypeAngle"), Reference(line_1.com_object), Reference(line_4.com_object)
+)
 
 # make the two horizontal lines parallel.
-constraint_p_h = constraints.add_bi_elt_cst(cat_constraint_type.index("catCstTypeParallelism"), line_1, line_3)
+constraint_p_h = constraints.add_bi_elt_cst(
+    cat_constraint_type.index("catCstTypeParallelism"), Reference(line_1), Reference(line_3)
+)
 # make the two vertical lines parallel.
-constraint_p_v = constraints.add_bi_elt_cst(cat_constraint_type.index("catCstTypeParallelism"), line_2, line_4)
+constraint_p_v = constraints.add_bi_elt_cst(
+    cat_constraint_type.index("catCstTypeParallelism"), Reference(line_2), Reference(line_4)
+)
 
 # create projection of 3D point used and constrain to 2d point.
-geometric_elements1 = factory_2D.create_projections(point_1_3D)
-projected_point = geometric_elements1.item(1)
+geometric_elements1 = factory_2D.create_projections(Reference(point_1_3D))
+projected_point = Geometry2D(geometric_elements1.item(1).com_object)
 projected_point.construction = True
 point_ref = part.create_reference_from_object(projected_point)
 
-constraint_mid = constraints.add_bi_elt_cst(
-    cat_constraint_type.index("catCstTypeOn"),
-    point_1,
-    point_ref
-)
+constraint_mid = constraints.add_bi_elt_cst(cat_constraint_type.index("catCstTypeOn"), Reference(point_1), point_ref)
 
 sketch.close_edition()
 
