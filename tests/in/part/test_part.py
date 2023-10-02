@@ -92,7 +92,7 @@ def test_file_name():
         assert document is not None
 
         product = ProductDocument(document.com_object).product
-        products = product.get_products()
+        products = product.products
 
         for product in products:
             if product.is_catpart():
@@ -106,7 +106,7 @@ def test_full_name():
         assert document is not None
 
         product = ProductDocument(document.com_object).product
-        products = product.get_products()
+        products = product.products
 
         for product in products:
             if product.is_catpart():
@@ -175,7 +175,7 @@ def test_path():
         assert document is not None
 
         product = ProductDocument(document.com_object).product
-        products = product.get_products()
+        products = product.products
 
         for product in products:
             if product.is_catpart():

@@ -1,4 +1,4 @@
-#! usr/bin/python3.6
+#! usr/bin/python3.9
 """
     Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
@@ -6,7 +6,7 @@
         The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
         They are there as a guide as to how the visual basic / catscript functions work
         and thus help debugging in pycatia.
-        
+
 """
 
 from pycatia.hybrid_shape_interfaces.hybrid_shape_3d_curve_offset import HybridShape3DCurveOffset
@@ -128,10 +128,10 @@ class HybridShapeFactory(Factory):
                 |                 System.AnyObject
                 |                     MecModInterfaces.Factory
                 |                         HybridShapeFactory
-                | 
+                |
                 | Interface to create all kinds of HybridShape objects that may be needed in
                 | wireframe and surface design.
-                | 
+                |
                 | Note:
                 | This interface concern GSD/GSO/DL1 feature creation via VB
                 | Use of the creation methods requires to have granted license configuration for
@@ -145,7 +145,7 @@ class HybridShapeFactory(Factory):
                 | the object passed as parameter to create the datum has to be in the current
                 | container.
                 | Otherwise, an error occurs.
-    
+
     """
 
     def __init__(self, com_object):
@@ -166,31 +166,31 @@ class HybridShapeFactory(Factory):
                 | long iOrientation1,
                 | long iOrientation2,
                 | boolean iTrim) As HybridShapeCorner
-                | 
+                |
                 |     Creates a new 3D Corner within the current body.
                 |     Create a 3D corner curve between a point and a curve or 2 curves along a
                 |     direction.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iElement1
-                |             First reference curve. 
+                |             First reference curve.
                 |         iElement2
-                |             Second reference curve. 
+                |             Second reference curve.
                 |         iDirection
-                |             Direction. 
+                |             Direction.
                 |         iRadius
-                |             Radius of the corner. 
+                |             Radius of the corner.
                 |         iOrientation1
                 |             Manage the corner center position. Value can be 1 or -1
-                |             
+                |
                 |         iOrientation2
                 |             Manage the corner center position. Value can be 1 or -1
-                |             
+                |
                 |         iTrim
                 |             Value can be FALSE or TRUE
                 |             if TRUE the 2 curves are trimed and asembled with the corner.
-                |             
+                |
                 |         oCorner
                 |             Created corner.
 
@@ -220,22 +220,22 @@ class HybridShapeFactory(Factory):
                 | double iOffset,
                 | double iCornerRadius,
                 | double iCornerTension) As HybridShape3DCurveOffset
-                | 
+                |
                 |     Creates a 3D Curve Offset.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCurve
-                |             The curve to offset 
+                |             The curve to offset
                 |         iDirection
-                |             Offset pulling direction. 
+                |             Offset pulling direction.
                 |         iOffsetValue
-                |             Offset Value. 
+                |             Offset Value.
                 |         iCornerRadius
-                |             Radius of the 3D corners. 
+                |             Radius of the 3D corners.
                 |         iCornerTension
-                |             Tension of the 3D corners. 
-                | 
+                |             Tension of the 3D corners.
+                |
                 |     Returns:
                 |         CATIGSM3DCurveOffset_var created 3DCurveOffset.
 
@@ -262,23 +262,23 @@ class HybridShapeFactory(Factory):
                 | double iXRatio,
                 | double iYRatio,
                 | double iZRatio) As HybridShapeAffinity
-                | 
+                |
                 |     Creates a new Affinity within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iElement
                 |             point, curve, surface or solid.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see Face, TriDimFeatEdge, BiDimFeatEdge and Vertex.
-                |         
+                |
                 |     iXRatio
-                |         Ratio of affinity in iX direction. 
+                |         Ratio of affinity in iX direction.
                 |     iYRatio
-                |         Ratio of affinity in iY direction. 
+                |         Ratio of affinity in iY direction.
                 |     iZRatio
-                |         Ratio of affinity in iZ direction. 
+                |         Ratio of affinity in iZ direction.
                 |     oAffinity
                 |         Created affinity
 
@@ -300,14 +300,14 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewAxisLine(Reference iElement) As
                 | HybridShapeAxisLine
-                | 
+                |
                 |     Creates a new AxisLine within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iElement
                 |             Circle, Ellipse, Oblong, Sphere, Revolution surface. Axis is
-                |             computed for this element 
+                |             computed for this element
                 |         oAxisLine
                 |             Created axis line
 
@@ -327,18 +327,18 @@ class HybridShapeFactory(Factory):
                 | o Func AddNewAxisToAxis(Reference iObject,
                 | Reference iReferenceAxis,
                 | Reference iTargetAxis) As HybridShapeAxisToAxis
-                | 
+                |
                 |     Creates a new axis to axis transformation within the current
                 |     body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iObject
-                |             Point, curve, surface or solid to transform. 
+                |             Point, curve, surface or solid to transform.
                 |         iReferenceAxis
-                |             reference axis system 
+                |             reference axis system
                 |         iTargetAxis
-                |             target axis system 
+                |             target axis system
                 |         oAxisToAxis
                 |             Created axis to axis transformation.
 
@@ -359,11 +359,11 @@ class HybridShapeFactory(Factory):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewBlend() As HybridShapeBlend
-                | 
+                |
                 |     Creates a new blend surface within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         oBlend
                 |             The Blend object if succeded
 
@@ -382,28 +382,28 @@ class HybridShapeFactory(Factory):
                 | o Func AddNewBoundary(Reference iInitialElement,
                 | Reference iSupport,
                 | long iTypedePropagation) As HybridShapeBoundary
-                | 
+                |
                 |     Creates a new Boundary within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iInitialElement
                 |             the element used to initialise the propagation around the
                 |             surface
-                | 
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see BiDimFeatEdge. 
+                |
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see BiDimFeatEdge.
                 |     iSupport
                 |         the surface used to compute the boundary around it
-                | 
+                |
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Face.
                 |     iTypedePropagation
                 |         Propagation type the values are: 0 for Boundary for all edges 1 for
                 |         Boundary propagation for edges on connexe point 2 for Boundary propagation for
                 |         edges tangent at point breaks 3 for Boundary not propagation from the current
-                |         edge 
+                |         edge
                 |     oBoundary
                 |         The computed element
 
@@ -425,14 +425,14 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewBoundaryOfSurface(Reference Surface) As
                 | HybridShapeBoundary
-                | 
+                |
                 |     Creates a Boundary within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iSurface
                 |             the feature on which all the boundaries will be computed
-                |             
+                |
                 |         oBoundary
                 |             the whole boundary of the Surface given in first
                 |             parameter
@@ -450,14 +450,14 @@ class HybridShapeFactory(Factory):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewBump(Reference iBodyToBump) As HybridShapeBump
-                | 
+                |
                 |     Creates a new Bump within the current body.
                 |     Note: require GSO license.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         :
-                |             iBodyToBump Body to deform witn a Bump 
+                |             iBodyToBump Body to deform witn a Bump
                 |         :
                 |             oBump Bump result
 
@@ -480,17 +480,17 @@ class HybridShapeFactory(Factory):
                 | boolean iGeodesic,
                 | double iRadius,
                 | long iOri) As HybridShapeCircle2PointsRad
-                | 
+                |
                 |     Creates a new Circle passing through 2 points with a radius within the
                 |     current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iPoint1
                 |             first passing point.
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Vertex. 
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Vertex.
                 |     iPoint2
                 |         second passing point.
                 |         Sub-element(s) supported (see Boundary object): see
@@ -500,14 +500,14 @@ class HybridShapeFactory(Factory):
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Face.
                 |     iGeodesic
-                |         Puts the circle on the surface. 
+                |         Puts the circle on the surface.
                 |     iRadius
                 |         Value specified is considered as radius. To use this value as diameter,
-                |         set DiameterMode using SetDiameterMode method 
+                |         set DiameterMode using SetDiameterMode method
                 |     iOri
                 |         circle orientation. Defines the side where circle is computed using the
                 |         normal direction of line between the 2 passing points.
-                |         
+                |
                 |     oCircle
                 |         The Circle object if succeeded
 
@@ -534,17 +534,17 @@ class HybridShapeFactory(Factory):
                 | o Func AddNewCircle3Points(Reference iPoint1,
                 | Reference iPoint2,
                 | Reference iPoint3) As HybridShapeCircle3Points
-                | 
+                |
                 |     Creates a new circle passing through 3 points within the current
                 |     body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iPoint1
                 |             first passing point.
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Vertex. 
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Vertex.
                 |     iPoint2
                 |         second passing point.
                 |         Sub-element(s) supported (see Boundary object): see
@@ -580,18 +580,18 @@ class HybridShapeFactory(Factory):
                 | Reference iSupport,
                 | long iOri1,
                 | long iOri2) As HybridShapeCircleBitangentPoint
-                | 
+                |
                 |     Creates a new circle tangent to 2 curves and passing through one point
                 |     within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCurve1
                 |             first curve to which the circle will be tangent.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see TriDimFeatEdge and BiDimFeatEdge.
-                |         
+                |
                 |     iCurve2
                 |         second curve to which the circle will be tangent.
                 |         Sub-element(s) supported (see Boundary object): see TriDimFeatEdge and
@@ -605,9 +605,9 @@ class HybridShapeFactory(Factory):
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Face.
                 |     iOri1
-                |         first curve orientation for circle computation. 
+                |         first curve orientation for circle computation.
                 |     iOri2
-                |         second curve orientation for circle computation. 
+                |         second curve orientation for circle computation.
                 |     oCircle
                 |         Created circle
 
@@ -638,18 +638,18 @@ class HybridShapeFactory(Factory):
                 | double iRadius,
                 | long iOri1,
                 | long iOri2) As HybridShapeCircleBitangentRadius
-                | 
+                |
                 |     Creates a new circle tangent to 2 curves and with a radius within the
                 |     current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCurve1
                 |             first curve to which the circle will be tangent.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see TriDimFeatEdge and BiDimFeatEdge.
-                |         
+                |
                 |     iCurve2
                 |         second curve to which the circle will be tangent.
                 |         Sub-element(s) supported (see Boundary object): see TriDimFeatEdge and
@@ -660,11 +660,11 @@ class HybridShapeFactory(Factory):
                 |         Face.
                 |     iRadius
                 |         Value specified is considered as radius. To use this value as diameter,
-                |         set DiameterMode using SetDiameterMode method 
+                |         set DiameterMode using SetDiameterMode method
                 |     iOri1
-                |         first curve orientation for circle computation. 
+                |         first curve orientation for circle computation.
                 |     iOri2
-                |         second curve orientation for circle computation. 
+                |         second curve orientation for circle computation.
                 |     oCircle
                 |         Created circle
 
@@ -692,19 +692,19 @@ class HybridShapeFactory(Factory):
                 | Reference iPoint,
                 | double iValue,
                 | boolean iProjection) As HybridShapeCircleCenterAxis
-                | 
+                |
                 |     Creates a circle from point and axis.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iAxis
-                |             Axis of plane in which circle is lying 
+                |             Axis of plane in which circle is lying
                 |         iPoint
                 |             Point used for center computation. It will be the center if ProjectionMode is False.
                 |             If ProjectionMode = True, this point will be projected on to axis/line
                 |         iValue
                 |             Value specified is considered as radius. To use this value as
-                |             diameter, set DiameterMode property 
+                |             diameter, set DiameterMode property
                 |         iProjection
                 |             Sets Projection Mode. ProjectionMode = TRUE implies point will be projected on to
                 |             axis/line, ProjectionMode = FALSE implies that point will be center of the circle.
@@ -736,30 +736,30 @@ class HybridShapeFactory(Factory):
                 | boolean iProjection,
                 | double iStartAngle,
                 | double iEndAngle) As HybridShapeCircleCenterAxis
-                | 
+                |
                 |     Creates a circle from point and axis.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iAxis
                 |             Axis of plane in which circle is lying
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): 
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object):
                 |     iPoint
                 |         Point used for center computation. It will be the center if ProjectionMode is False.
                 |         If ProjectionMode = True, this point will be projected on to axis/line
                 |         Sub-element(s) supported (see Boundary object):
                 |     iValue
                 |         Value specified is considered as radius. To use this value as diameter,
-                |         set DiameterMode property 
+                |         set DiameterMode property
                 |     iProjection
                 |         Sets Projection Mode. ProjectionMode = TRUE implies point will be projected on to axis/line,
                 |         ProjectionMode = FALSE implies that point will be center of the circle.
                 |     iStartAngle
-                |         start angle 
+                |         start angle
                 |     iEndAngle
-                |         end angle 
+                |         end angle
                 |     oCircle
                 |         Created circle
 
@@ -787,22 +787,22 @@ class HybridShapeFactory(Factory):
                 | Reference iTangentCurve,
                 | Reference iSupport,
                 | double iRadius) As HybridShapeCircleCenterTangent
-                | 
+                |
                 |     Creates a new circle with given center element and tangent
                 |     curve.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCenterElem
-                |             Can be either curve or point. 
+                |             Can be either curve or point.
                 |         iTangentCurve
-                |             Curve to which the circle will be tangent. 
+                |             Curve to which the circle will be tangent.
                 |         iSupport
-                |             support surface or plane. 
+                |             support surface or plane.
                 |         iRadius
                 |             circle radius, valid only if center element is curve. Value
                 |             specified is considered as radius. To use this value as diameter, set
-                |             DiameterMode using SetDiameterMode method 
+                |             DiameterMode using SetDiameterMode method
                 |         oCircle
                 |             Created circle
 
@@ -828,17 +828,17 @@ class HybridShapeFactory(Factory):
                 | Reference iCrossingPoint,
                 | Reference iSupport,
                 | boolean iGeodesic) As HybridShapeCircleCtrPt
-                | 
+                |
                 |     Creates a new whole circle defined by its center, a passing point within
                 |     the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCenter
                 |             circle center.
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Vertex. 
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Vertex.
                 |     iCrossingPoint
                 |         passing point.
                 |         Sub-element(s) supported (see Boundary object): see
@@ -848,7 +848,7 @@ class HybridShapeFactory(Factory):
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Face.
                 |     iGeodesic
-                |         Puts the circle on the surface. 
+                |         Puts the circle on the surface.
                 |     oCircle
                 |         CreatedCircle
 
@@ -877,17 +877,17 @@ class HybridShapeFactory(Factory):
                 | boolean iGeodesic,
                 | double iStartAngle,
                 | double iEndAngle) As HybridShapeCircleCtrPt
-                | 
+                |
                 |     Creates a new circle defined by its center, a passing point and angles
                 |     within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCenter
                 |             circle center.
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Vertex. 
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Vertex.
                 |     iCrossingPoint
                 |         passing point.
                 |         Sub-element(s) supported (see Boundary object): see
@@ -897,11 +897,11 @@ class HybridShapeFactory(Factory):
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Face.
                 |     iGeodesic
-                |         Puts the circle on the surface. 
+                |         Puts the circle on the surface.
                 |     iStartAngle
-                |         start angle 
+                |         start angle
                 |     iEndAngle
-                |         end angle 
+                |         end angle
                 |     oCircle
                 |         Created circle
 
@@ -930,26 +930,26 @@ class HybridShapeFactory(Factory):
                 | Reference iSupport,
                 | boolean iGeodesic,
                 | double iRadius) As HybridShapeCircleCtrRad
-                | 
+                |
                 |     Creates a new whole circle defined by its center and a radius within the
                 |     current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCenter
                 |             circle center.
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Vertex. 
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Vertex.
                 |     iSupport
                 |         support surface.
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Face.
                 |     iGeodesic
-                |         Puts the circle on the surface. 
+                |         Puts the circle on the surface.
                 |     iRadius
                 |         Value specified is considered as radius. To use this value as diameter,
-                |         set DiameterMode using SetDiameterMode method 
+                |         set DiameterMode using SetDiameterMode method
                 |     oCircle
                 |         Created circle
 
@@ -978,30 +978,30 @@ class HybridShapeFactory(Factory):
                 | double iRadius,
                 | double iStartAngle,
                 | double iEndAngle) As HybridShapeCircleCtrRad
-                | 
+                |
                 |     Creates a new circle defined by its center, a radius and angles within the
                 |     current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCenter
                 |             circle center.
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Vertex. 
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Vertex.
                 |     iSupport
                 |         support surface.
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Face.
                 |     iGeodesic
-                |         Puts the circle on the surface. 
+                |         Puts the circle on the surface.
                 |     iRadius
                 |         Value specified is considered as radius. To use this value as diameter,
-                |         set DiameterMode using SetDiameterMode method 
+                |         set DiameterMode using SetDiameterMode method
                 |     iStartAngle
-                |         start angle 
+                |         start angle
                 |     iEndAngle
-                |         end angle 
+                |         end angle
                 |     oCircle
                 |         Created circle
 
@@ -1026,14 +1026,14 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewCircleDatum(Reference iObject) As
                 | HybridShapeCircleExplicit
-                | 
+                |
                 |     Creates a new datum of circle within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iObject
                 |             The object whose topological body will be duplicated and put into
-                |             created datum 
+                |             created datum
                 |         oCircle
                 |             Created datum Note2: the object passed as parameter to create the
                 |             datum has to be in the current container. Otherwise, an error
@@ -1060,17 +1060,17 @@ class HybridShapeFactory(Factory):
                 | long iOri1,
                 | long iOri2,
                 | long iOri3) As HybridShapeCircleTritangent
-                | 
+                |
                 |     Creates a new tritangent circle within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCurve1
                 |             first curve to which the circle will be tangent.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see TriDimFeatEdge and BiDimFeatEdge.
-                |         
+                |
                 |     iCurve2
                 |         second curve to which the circle will be tangent.
                 |         Sub-element(s) supported (see Boundary object): see TriDimFeatEdge and
@@ -1084,11 +1084,11 @@ class HybridShapeFactory(Factory):
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Face.
                 |     iOri1
-                |         first curve orientation for circle computation. 
+                |         first curve orientation for circle computation.
                 |     iOri2
-                |         second curve orientation for circle computation. 
+                |         second curve orientation for circle computation.
                 |     iOri3
-                |         third curve orientation for circle computation. 
+                |         third curve orientation for circle computation.
                 |     oCircle
                 |         Created circle
 
@@ -1117,28 +1117,28 @@ class HybridShapeFactory(Factory):
                 | o Func AddNewCombine(Reference iFirstCurve,
                 | Reference iSecondCurve,
                 | long iNearestSolutions) As HybridShapeCombine
-                | 
+                |
                 |     Creates a new Combine within the current body. By default, the combine
                 |     direction is the normal of each curve. If you want to change see
                 |     CATIAHybridShapeCombine interfaces.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iFirstCurve
                 |             First curve to combine
-                | 
-                |             Sub-element(s) supported (see 
-                | 
+                |
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see TriDimFeatEdge and BiDimFeatEdge.
-                |         
+                |
                 |     iSecondCurve
                 |         Second curve to combine
-                | 
+                |
                 |         Sub-element(s) supported (see Boundary object): see TriDimFeatEdge and
                 |         BiDimFeatEdge.
                 |     iNearestSolution
                 |         If more than one solution, to choose the nearest solution of the first
-                |         curve 
+                |         curve
                 |     oCombine
                 |         The combine object if succeded
 
@@ -1162,23 +1162,23 @@ class HybridShapeFactory(Factory):
                 | o Func AddNewConic(Reference iSupport,
                 | Reference iStartingPoint,
                 | Reference iEndPoint) As HybridShapeConic
-                | 
+                |
                 |     Creates a new conic within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iSupport
                 |             The conic support (always a plane).
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see PlanarFace. 
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see PlanarFace.
                 |     iStartingPoint
                 |         Starting Point.
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Vertex.
                 |     iEndPoint
                 |         End Point
-                | 
+                |
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Vertex.
                 |     oConic
@@ -1205,22 +1205,22 @@ class HybridShapeFactory(Factory):
                 | double iAngle,
                 | long iOrientationSupport,
                 | long iType) As HybridShapeReflectLine
-                | 
+                |
                 |     Creates a new conical ReflectLine within the current body.
                 |     Create a conical reflectline curve on a support surface from an origin
                 |     point with an angle.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iSupport
-                |             Support surface. 
+                |             Support surface.
                 |         iOrigin
-                |             Origin point. 
+                |             Origin point.
                 |         iAngle
-                |             Angle of the reflectline. 
+                |             Angle of the reflectline.
                 |         iOrientationSupport
                 |             Manage the angle used to compute the reflectline. Value can be 1 or
-                |             -1 
+                |             -1
                 |         iType
                 |             Manage the type used to compute the reflectline. Value can be 0 or
                 |             1 Returns or sets whether the reflectline curve is or should be created with
@@ -1231,7 +1231,7 @@ class HybridShapeFactory(Factory):
                 |             direction or with the angle between the tangent plane to the support and the
                 |             direction..
                 |             Legal values: 0 for the normal and 1 for the tangent plane.
-                |             
+                |
                 |         oReflectLine
                 |             Created conical reflectline.
 
@@ -1266,45 +1266,45 @@ class HybridShapeFactory(Factory):
                 | long iContinuity2,
                 | double iTension2,
                 | boolean Trim) As HybridShapeConnect
-                | 
+                |
                 |     Creates a new Connect within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCurve1
                 |             First curve.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see TriDimFeatEdge and BiDimFeatEdge.
-                |         
+                |
                 |     iPoint1
                 |         First point (lying on the first curve)
-                | 
+                |
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Vertex.
                 |     iOrient1
-                |         Orientation on the first curve 
+                |         Orientation on the first curve
                 |     iContinuity1
-                |         Continuity on first curve 
+                |         Continuity on first curve
                 |     iTension1
-                |         Tension on first curve 
+                |         Tension on first curve
                 |     iCurve2
                 |         Second curve.
                 |         Sub-element(s) supported (see Boundary object): see TriDimFeatEdge and
                 |         BiDimFeatEdge.
                 |     iPoint2
                 |         Second point (lying on the second curve)
-                | 
+                |
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Vertex.
                 |     iOrient2
-                |         Orientation on the second curve 
+                |         Orientation on the second curve
                 |     iContinuity2
-                |         Continuity on second curve 
+                |         Continuity on second curve
                 |     iTension2
-                |         Tension on second curve 
+                |         Tension on second curve
                 |     iTrim
-                |         Trim the two curves with the connect 
+                |         Trim the two curves with the connect
                 |     oConnect
                 |         The connect object
 
@@ -1341,19 +1341,19 @@ class HybridShapeFactory(Factory):
                 | long iOrientation1,
                 | long iOrientation2,
                 | boolean iTrim) As HybridShapeCorner
-                | 
+                |
                 |     Creates a new Corner within the current body.
                 |     Create a corner curve between a point and a curve or 2 curves on a support
                 |     surface.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iElement1
                 |             First reference curve.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see TriDimFeatEdge, BiDimFeatEdge and Vertex.
-                |         
+                |
                 |     iElement2
                 |         Second reference curve.
                 |         Sub-element(s) supported (see Boundary object): see TriDimFeatEdge,
@@ -1363,17 +1363,17 @@ class HybridShapeFactory(Factory):
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Face.
                 |     iRadius
-                |         Radius of the corner. 
+                |         Radius of the corner.
                 |     iOrientation1
                 |         Manage the corner center position. Value can be 1 or -1
-                |         
+                |
                 |     iOrientation2
                 |         Manage the corner center position. Value can be 1 or -1
-                |         
+                |
                 |     iTrim
                 |         Value can be FALSE or TRUE
                 |         if TRUE the 2 curves are trimed and asembled with the corner.
-                |         
+                |
                 |     oCorner
                 |         Created corner.
 
@@ -1399,14 +1399,14 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewCurveDatum(Reference iObject) As
                 | HybridShapeCurveExplicit
-                | 
+                |
                 |     Creates a new datum of curve within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iObject
                 |             The object whose topological body will be duplicated and put into
-                |             created datum 
+                |             created datum
                 |         oCurve
                 |             Created curve Note2: the object passed as parameter to create the
                 |             datum has to be in the current container. Otherwise, an error
@@ -1430,28 +1430,28 @@ class HybridShapeFactory(Factory):
                 | double Distance,
                 | boolean InvertDirection,
                 | boolean Geodesic) As HybridShapeCurvePar
-                | 
+                |
                 |     Creates a new CurvePar within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCurve
                 |             Reference curve.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see TriDimFeatEdge and BiDimFeatEdge.
-                |         
+                |
                 |     iSupport
                 |         Support on which the curve is lying on
-                | 
+                |
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Face.
                 |     iDistance
-                |         Distance value 
+                |         Distance value
                 |     iInvertDirection
-                |         Orientation 
+                |         Orientation
                 |     iGeodesic
-                |         Geodesic mode 
+                |         Geodesic mode
                 |     oCurvePar
                 |         Parallel curve
 
@@ -1475,13 +1475,13 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewCurveSmooth(Reference ipIACurve) As
                 | HybridShapeCurveSmooth
-                | 
+                |
                 |     Creates a new CurveSmooth within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCurve
-                |             Reference curve to be smoothened 
+                |             Reference curve to be smoothened
                 |         oCurveSmooth
                 |             Smoothened curve
 
@@ -1503,24 +1503,24 @@ class HybridShapeFactory(Factory):
                 | double iFirstLength,
                 | double iSecondLength,
                 | HybridShapeDirection iDirection) As HybridShapeCylinder
-                | 
+                |
                 |     Creates a new Cylinder within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCenter
                 |             Center of the Cylinder - Can be Point or Vertex.
-                |             Sub-element(s) supported (see 
-                | 
-                |         Vertex object): 
+                |             Sub-element(s) supported (see
+                |
+                |         Vertex object):
                 |     iRadius
-                |         Radius of Cylinder. 
+                |         Radius of Cylinder.
                 |     iFirstLength
-                |         Length of Cylinder in the given direction. 
+                |         Length of Cylinder in the given direction.
                 |     iSecondLength
-                |         Length of Cylinder in the opposite direction. 
+                |         Length of Cylinder in the opposite direction.
                 |     iDirection
-                |         Direction of extrusion for Cylinder. 
+                |         Direction of extrusion for Cylinder.
                 |     oCylinderObject
                 |         Created CylinderObjct.
 
@@ -1543,38 +1543,38 @@ class HybridShapeFactory(Factory):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewDatums(Reference iElem) As CATSafeArrayVariant
-                | 
+                |
                 |     Creates datums from a multi-domain result feature, one datum is created by
                 |     object domain.
                 |     Note; Available only for a shape design feature as input ( not for datum
                 |     feature ).
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iElem
-                |             Reference element 
+                |             Reference element
                 |         oArrayOfDatum
                 |             List of datum objects , one datum is created per
                 |             omain
                 |             Level of availability = V5R14
-                | 
+                |
                 |             Example:
                 |                 This example converts a hybrid shape object in as much as
                 |                 datums that the original hybrid shape features contains of
                 |                 domain
-                | 
-                |                   Dim HShape 
+                |
+                |                   Dim HShape
                 |                   Set reference   = part.CreateReferenceFromObject(hybridShapeObject)
-                |                   ' Convert to Datums 
-                |                   HShape = hybridShapeFactory.AddNewDatums reference  
+                |                   ' Convert to Datums
+                |                   HShape = hybridShapeFactory.AddNewDatums reference
                 |                   Num =UBound(HShape)
-                |                   For i = 0 to Num  
+                |                   For i = 0 to Num
                 |                         hybridBody1.AppendHybridShape HShape (i)
-                |                         
-                |                   Next 
-                |                   part.InWorkObject = HShape(num) 
-                |                   part.Update 
-                |                   ' Delete original feature 
+                |
+                |                   Next
+                |                   part.InWorkObject = HShape(num)
+                |                   part.Update
+                |                   ' Delete original feature
                 |                   hybridShapeFactory.DeleteObjectForDatum
                 |                   reference
 
@@ -1603,20 +1603,20 @@ class HybridShapeFactory(Factory):
                 | o Func AddNewDevelop(long iMode,
                 | Reference iToDevelop,
                 | Reference iSupport) As HybridShapeDevelop
-                | 
+                |
                 |     Creates a new Develop within the current body.
                 |     Note: require either DL1 or GSO license.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iMode
-                |             Develop method. 
+                |             Develop method.
                 |         iToDevelop
                 |             Wire to be developed.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see TriDimFeatEdge and BiDimFeatEdge.
-                |         
+                |
                 |     iSupport
                 |         Revolution support surface.
                 |         Sub-element(s) supported (see Boundary object): see
@@ -1641,21 +1641,21 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewDirection(Reference iElement) As
                 | HybridShapeDirection
-                | 
+                |
                 |     Creates a new direction specified by an element within the current
                 |     body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iElement
                 |             Line or plane specifying the direction. In case of plane, the plane
                 |             normal vector is the direction
-                | 
-                |             Sub-element(s) supported (see 
-                | 
+                |
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see RectilinearTriDimFeatEdge,
                 |         RectilinearBiDimFeatEdge and RectilinearMonoDimFeatEdge.
-                |         
+                |
                 |     oDirection
                 |         Created direction.
 
@@ -1674,18 +1674,18 @@ class HybridShapeFactory(Factory):
                 | o Func AddNewDirectionByCoord(double iX,
                 | double iY,
                 | double iZ) As HybridShapeDirection
-                | 
+                |
                 |     Creates a new Direction specifed by coordinates within the current
                 |     body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iX
-                |             X component 
+                |             X component
                 |         iY
-                |             Y component 
+                |             Y component
                 |         iZ
-                |             Z component 
+                |             Z component
                 |         oDirection
                 |             Created direction
 
@@ -1704,7 +1704,7 @@ class HybridShapeFactory(Factory):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewEmptyRotate() As HybridShapeRotate
-                | 
+                |
                 |     Creates a new empty Rotate within the current body.
 
         :return: HybridShapeRotate
@@ -1719,7 +1719,7 @@ class HybridShapeFactory(Factory):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewEmptyTranslate() As HybridShapeTranslate
-                | 
+                |
                 |     Creates a new empty Translate within the current body.
 
         :return: HybridShapeTranslate
@@ -1735,17 +1735,17 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewExtract(Reference Element) As
                 | HybridShapeExtract
-                | 
+                |
                 |     Creates a new Extract within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iElement
                 |             Initial element used to start the extraction
-                | 
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Boundary. 
+                |
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Boundary.
                 |     oExt
                 |         The extracted object
 
@@ -1763,17 +1763,17 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewExtractMulti(Reference Element) As
                 | HybridShapeExtractMulti
-                | 
+                |
                 |     Creates a new Multiple Extract within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iElement
                 |             Initial element used to start the extraction
-                | 
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Boundary. 
+                |
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Boundary.
                 |     oExt
                 |         The extracted object
 
@@ -1793,25 +1793,25 @@ class HybridShapeFactory(Factory):
                 | o Func AddNewExtrapolLength(Reference iBoundary,
                 | Reference iToExtrapol,
                 | double iLength) As HybridShapeExtrapol
-                | 
+                |
                 |     Creates a new Extrapol (specified by length) within the current
                 |     body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iBoundary
                 |             Boundary point of curve to extrapolate or boundary curve of surface
                 |             to extrapolate.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see TriDimFeatEdge and BiDimFeatEdge.
-                |         
+                |
                 |     iToExtrapol
                 |         Curve or surface to extrapolate.
                 |         Sub-element(s) supported (see Boundary object): see Face,
                 |         TriDimFeatEdge and BiDimFeatEdge.
                 |     iLength
-                |         Extrapolation length. 
+                |         Extrapolation length.
                 |     oExtrapol
                 |         Created Extrapolation.
 
@@ -1834,25 +1834,25 @@ class HybridShapeFactory(Factory):
                 | o Func AddNewExtrapolUntil(Reference iBoundary,
                 | Reference iToExtrapol,
                 | Reference iUntil) As HybridShapeExtrapol
-                | 
+                |
                 |     Creates a new Extrapol (until an element) within the current
                 |     body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iBoundary
                 |             Boundary point of curve to extrapolate or boundary curve of surface
                 |             to extrapolate.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see TriDimFeatEdge and BiDimFeatEdge.
-                |         
+                |
                 |     iToExtrapol
                 |         Curve or surface to extrapolate.
                 |         Sub-element(s) supported (see Boundary object): see Face,
                 |         TriDimFeatEdge and BiDimFeatEdge.
                 |     iUntil
-                |         Extrapolation limit surface. 
+                |         Extrapolation limit surface.
                 |     oExtrapol
                 |         Created Extrapolation.
 
@@ -1875,22 +1875,22 @@ class HybridShapeFactory(Factory):
                 | o Func AddNewExtremum(Reference iObjet,
                 | HybridShapeDirection iDir,
                 | long iMinMax) As HybridShapeExtremum
-                | 
+                |
                 |     Creates a new Extremum within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iObjet
                 |             Element onto extremum is computed
-                | 
-                |             Sub-element(s) supported (see 
-                | 
+                |
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see TriDimFeatEdge, BiDimFeatEdge and Face.
-                |         
+                |
                 |     iDir
-                |         Extremum direction 
+                |         Extremum direction
                 |     iMinMax
-                |         Maximum (GSMMax) or Minimum (GSMMin) 
+                |         Maximum (GSMMax) or Minimum (GSMMin)
                 |     oExt
                 |         The extremum object if succeded
 
@@ -1911,16 +1911,16 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewExtremumPolar(short iType,
                 | Reference ipIAContour) As HybridShapeExtremumPolar
-                | 
+                |
                 |     Creates a new Extremum Polar within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iType
                 |             Type of extremum polar 0-Min Radius 1-Max Radius 2- Min Angle 3-
-                |             Maximum Angle 
+                |             Maximum Angle
                 |         ipIAContour
-                |             Extremum Polar Contour. It should be non convex 
+                |             Extremum Polar Contour. It should be non convex
                 |         opIAExtPolar
                 |             The extremum polar object if succeded
 
@@ -1942,24 +1942,24 @@ class HybridShapeFactory(Factory):
                 | double iOffsetDebut,
                 | double iOffsetFin,
                 | HybridShapeDirection iDirection) As HybridShapeExtrude
-                | 
+                |
                 |     Creates a new extrude within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iObjectToExtrude
                 |             Object to be extruded (point, line ,curve,or face)
-                | 
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Boundary. 
+                |
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Boundary.
                 |     iOffsetDebut
-                |         Length value 
+                |         Length value
                 |     iOffsetFin
                 |         Length value ( iOffsetFin has to be larger than iOffsetDebut)
-                |         
+                |
                 |     iDirection
-                |         Extrusion direction 
+                |         Extrusion direction
                 |     oExtrudeObject
                 |         Extruded result
 
@@ -1981,11 +1981,11 @@ class HybridShapeFactory(Factory):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewFill() As HybridShapeFill
-                | 
+                |
                 |     Creates a new Fill within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         oFill
                 |             Fill object
 
@@ -2009,29 +2009,29 @@ class HybridShapeFactory(Factory):
                 | long iOrientation2,
                 | long iSupportsTrimMode,
                 | long iRibbonRelimitationMode) As HybridShapeFilletBiTangent
-                | 
+                |
                 |     Creates a new a sphere bitangent fillet between two skins.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iElement1
                 |             First support of fillet.
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Face. 
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Face.
                 |     iElement2
                 |         Second support of fillet.
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Face.
                 |     iRadius
-                |         Radius of the fillet. 
+                |         Radius of the fillet.
                 |     iOrientation1
-                |         Manage the fillet center position. 
+                |         Manage the fillet center position.
                 |     iOrientation2
-                |         Manage the fillet center position. 
+                |         Manage the fillet center position.
                 |     iSupportsTrimMode
                 |         The 2 supports can be trimmed and assembled with the fillet. Value can
-                |         be 0 (No trim ) or 1 (Trim) 
+                |         be 0 (No trim ) or 1 (Trim)
                 |     iRibbonRelimitationMode
                 |         Manage the relimition of fillet extremities.
                 |         Value can be : 0 (Smooth), 1 (Straight), 2 (Maximum) or 3 (Minimum)
@@ -2070,16 +2070,16 @@ class HybridShapeFactory(Factory):
                 | long iRemoveOrientation,
                 | long iSupportsTrimMode,
                 | long iRibbonRelimitationMode) As HybridShapeFilletTriTangent
-                | 
+                |
                 |     Creates a new a tritangent fillet between three skins.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iElement1
                 |             First support of fillet.
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Face. 
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Face.
                 |     iElement2
                 |         Second support of fillet.
                 |         Sub-element(s) supported (see Boundary object): see
@@ -2089,14 +2089,14 @@ class HybridShapeFactory(Factory):
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Face.
                 |     iOrientation1
-                |         Manage the fillet center position. 
+                |         Manage the fillet center position.
                 |     iOrientation2
-                |         Manage the fillet center position. 
+                |         Manage the fillet center position.
                 |     iRemoveOrientation
-                |         Manage the fillet center position. 
+                |         Manage the fillet center position.
                 |     iSupportsTrimMode
                 |         The 2 supports can be trimmed and assembled with the fillet. Value can
-                |         be 0 (No trim ) or 1 (Trim) 
+                |         be 0 (No trim ) or 1 (Trim)
                 |     iRibbonRelimitationMode
                 |         Manage the relimition of fillet extremities.
                 |         Value can be : 0 (Smooth), 1 (Straight), 2 (Maximum) or 3 (Minimum)
@@ -2128,13 +2128,13 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewHealing(Reference iBodyToheal) As
                 | HybridShapeHealing
-                | 
+                |
                 |     Creates a new healing within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iBodyToHeal
-                |             The body to heal 
+                |             The body to heal
                 |         oHealing
                 |             The created healing
 
@@ -2161,37 +2161,37 @@ class HybridShapeFactory(Factory):
                 | double iStartingAngle,
                 | double iTaperAngle,
                 | boolean iTaperOutward) As HybridShapeHelix
-                | 
+                |
                 |     Creates a new Helix within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iAxis
                 |             The helix axis (always a line).
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see RectilinearTriDimFeatEdge and
-                |         RectilinearBiDimFeatEdge. 
+                |         RectilinearBiDimFeatEdge.
                 |     iInvertAxis
                 |     iStartingPoint
                 |         Starting Point.
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Vertex.
                 |     iPitch
-                |         Pitch. 
+                |         Pitch.
                 |     iHeight
-                |         Helix height. 
+                |         Helix height.
                 |     iClockwiseRevolution
                 |         Revolutions are clockwise if TRUE, counterclockwise if FALSE.
-                |         
+                |
                 |     iStartingAngle
                 |         Starting angle from starting point measured on the helix itself. If no
-                |         starting angle is wanted, set it to 0.0. 
+                |         starting angle is wanted, set it to 0.0.
                 |     iTaperAngle
                 |         0 <= Taper Angle < Pi/2 If no taper angle is wanted, set it to 0.0
-                |         (constant helix radius). 
+                |         (constant helix radius).
                 |     iTaperOutward
-                |         Helix radius increases if TRUE, decreases if FALSE. 
+                |         Helix radius increases if TRUE, decreases if FALSE.
                 |     oHelix
                 |         The Helix object if succeded
 
@@ -2222,23 +2222,23 @@ class HybridShapeFactory(Factory):
                 | o Func AddNewHybridScaling(Reference iElemToScale,
                 | Reference iCenter,
                 | double iRatio) As HybridShapeScaling
-                | 
+                |
                 |     Creates a new scaling within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iElemToScale
                 |             Point, curve, surface or solid to transform.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see Face, TriDimFeatEdge, BiDimFeatEdge and Vertex.
-                |         
+                |
                 |     iCenter
                 |         Reference point or reference plane.
                 |         Sub-element(s) supported (see Boundary object): see PlanarFace and
                 |         Vertex.
                 |     iRatio
-                |         Scaling ratio. 
+                |         Scaling ratio.
                 |     oScaling
                 |         Created scaling.
 
@@ -2261,24 +2261,24 @@ class HybridShapeFactory(Factory):
                 | o Func AddNewHybridSplit(Reference iElement1,
                 | Reference iElement2,
                 | long iOrientation) As HybridShapeSplit
-                | 
+                |
                 |     Creates a new Split within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iElement1
                 |             The feature to cut (curve or surface).
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see Face, TriDimFeatEdge and BiDimFeatEdge.
-                |         
+                |
                 |     iElement2
                 |         The cutting feature (point, curve, surface).
                 |         Sub-element(s) supported (see Boundary object): see Face,
                 |         TriDimFeatEdge, BiDimFeatEdge and Vertex.
                 |     iOrientation
                 |         Manage the kept side of the feature to cut (value can be 1 or -1)
-                |         
+                |
                 |     oSplit
                 |         Created split
 
@@ -2302,23 +2302,23 @@ class HybridShapeFactory(Factory):
                 | long iOrientation1,
                 | Reference iElement2,
                 | long iOrientation2) As HybridShapeTrim
-                | 
+                |
                 |     Creates a new Trim within the current body by cutting and joining two
                 |     elements.
                 |     You can trim a surface by a surface or a curve by a curve.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iElement1
-                |             The feature to trim (curve or surface). 
+                |             The feature to trim (curve or surface).
                 |         iOrientation1
                 |             Manage the kept side of iElement1 (value can be 1 or -1).
-                |             
+                |
                 |         iElement2
-                |             The second feature to trim (curve or surface). 
+                |             The second feature to trim (curve or surface).
                 |         iOrientation2
                 |             Manage the kept side of iElement2 (value can be 1 or -1).
-                |             
+                |
                 |         oTrim
                 |             Created trim.
 
@@ -2341,11 +2341,11 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewIntegratedLaw(long iType) As
                 | HybridShapeIntegratedLaw
-                | 
+                |
                 |     Creates Integrated Law.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iType
                 |             Type of law =
                 |             0 : None | 1 : Constant | 2 : Linear | 3 : SType | 4 : Advanced | 5 : Implicit
@@ -2364,17 +2364,17 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewIntersection(Reference iObject1,
                 | Reference iObject2) As HybridShapeIntersection
-                | 
+                |
                 |     Creates a new Intersection within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iObject1
                 |             First element ( line, curve, plane, surface.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see Face, RectilinearTriDimFeatEdge and
-                |         RectilinearBiDimFeatEdge. 
+                |         RectilinearBiDimFeatEdge.
                 |     iObject2
                 |         Second element ( line , curve, plane, surface.
                 |         Sub-element(s) supported (see Boundary object): see Face,
@@ -2399,16 +2399,16 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewInverse(Reference Element,
                 | long Inverse) As HybridShapeInverse
-                | 
+                |
                 |     Creates a new Inverse within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iElement
-                |             The objet to inverse 
+                |             The objet to inverse
                 |         iInverse
                 |             the type of inversion (see CATGSMOrientation.h) 1 for no inversion
-                |             -1 for inversion 
+                |             -1 for inversion
                 |         oInv
                 |             The inverted object
 
@@ -2427,21 +2427,21 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewJoin(Reference Element1,
                 | Reference Element2) As HybridShapeAssemble
-                | 
+                |
                 |     Creates a new Join within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iElement1
                 |             First element to join ( curve or surface.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see Face, TriDimFeatEdge and BiDimFeatEdge.
-                |         
+                |
                 |     iElement2
                 |         Second element to join ( same type of the first
                 |         element)
-                | 
+                |
                 |         Sub-element(s) supported (see Boundary object): see Face,
                 |         TriDimFeatEdge and BiDimFeatEdge.
                 |     oExt
@@ -2463,17 +2463,17 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewLawDistProj(Reference iReference,
                 | Reference iDefinition) As HybridShapeLawDistProj
-                | 
+                |
                 |     Creates a new law within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iReference
                 |             Reference line of the law.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see RectilinearTriDimFeatEdge and
-                |         RectilinearBiDimFeatEdge. 
+                |         RectilinearBiDimFeatEdge.
                 |     iDefinition
                 |         Definition curve of the law.
                 |         Sub-element(s) supported (see Boundary object): see TriDimFeatEdge and
@@ -2505,17 +2505,17 @@ class HybridShapeFactory(Factory):
                 | double iEndOffset,
                 | double iAngle,
                 | boolean iOrientation) As HybridShapeLineAngle
-                | 
+                |
                 |     Creates a new angle line within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCurve
                 |             Reference curve.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see TriDimFeatEdge and BiDimFeatEdge.
-                |         
+                |
                 |     iSurface
                 |         Reference surface.
                 |         Sub-element(s) supported (see Boundary object): see
@@ -2525,17 +2525,17 @@ class HybridShapeFactory(Factory):
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Vertex.
                 |     iGeodesic
-                |         Puts the line on the surface 
+                |         Puts the line on the surface
                 |     iBeginOffset
-                |         start offset 
+                |         start offset
                 |     iEndOffset
-                |         end offset 
+                |         end offset
                 |     iAngle
-                |         angle to reference curve 
+                |         angle to reference curve
                 |     iOrientation
                 |         Orientation allows to reverse the line direction from the reference
                 |         point. For a line of L length, it is the same as creating this line with -L
-                |         length. 
+                |         length.
                 |     oLine
                 |         Created line
 
@@ -2564,17 +2564,17 @@ class HybridShapeFactory(Factory):
                 | o Func AddNewLineBiTangent(Reference iCurve1,
                 | Reference iElement2,
                 | Reference iSupport) As HybridShapeLineBiTangent
-                | 
+                |
                 |     Creates a new bitangent line within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCurve1
                 |             First tangency curve lying on the support surface.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see TriDimFeatEdge and BiDimFeatEdge.
-                |         
+                |
                 |     iCurve2
                 |         Second tangency element (point, curve) lying on the support
                 |         surface.
@@ -2610,30 +2610,30 @@ class HybridShapeFactory(Factory):
                 | double iEndOffset,
                 | boolean iOrientation,
                 | long SolutionNb) As HybridShapeLineBisecting
-                | 
+                |
                 |     Creates a new bisecting line within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLine1
                 |             First line.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see RectilinearTriDimFeatEdge and
-                |         RectilinearBiDimFeatEdge. 
+                |         RectilinearBiDimFeatEdge.
                 |     iLine2
                 |         Second line.
                 |         Sub-element(s) supported (see Boundary object): see
                 |         RectilinearTriDimFeatEdge and
                 |         RectilinearBiDimFeatEdge.
                 |     iBeginOffset
-                |         start offset 
+                |         start offset
                 |     iEndOffset
-                |         end offset 
+                |         end offset
                 |     iOrientation
                 |         Orientation allows to reverse the line direction from the reference
                 |         point. For a line of L length, it is the same as creating this line with -L
-                |         length. 
+                |         length.
                 |     oLine
                 |         Created line
 
@@ -2665,18 +2665,18 @@ class HybridShapeFactory(Factory):
                 | double iEndOffset,
                 | boolean iOrientation,
                 | long SolutionNb) As HybridShapeLineBisecting
-                | 
+                |
                 |     Creates a new bisecting line on a support within the current
                 |     body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLine1
                 |             First line.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see RectilinearTriDimFeatEdge and
-                |         RectilinearBiDimFeatEdge. 
+                |         RectilinearBiDimFeatEdge.
                 |     iLine2
                 |         Second line.
                 |         Sub-element(s) supported (see Boundary object): see
@@ -2687,13 +2687,13 @@ class HybridShapeFactory(Factory):
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Face.
                 |     iBeginOffset
-                |         start offset 
+                |         start offset
                 |     iEndOffset
-                |         end offset 
+                |         end offset
                 |     iOrientation
                 |         Orientation allows to reverse the line direction from the reference
                 |         point. For a line of L length, it is the same as creating this line with -L
-                |         length. 
+                |         length.
                 |     oLine
                 |         Created line
 
@@ -2730,18 +2730,18 @@ class HybridShapeFactory(Factory):
                 | double iEndOffset,
                 | boolean iOrientation,
                 | long SolutionNb) As HybridShapeLineBisecting
-                | 
+                |
                 |     Creates a new bisecting line on a support with a atarting point within the
                 |     current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLine1
                 |             First line.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see RectilinearTriDimFeatEdge and
-                |         RectilinearBiDimFeatEdge. 
+                |         RectilinearBiDimFeatEdge.
                 |     iLine2
                 |         Second line.
                 |         Sub-element(s) supported (see Boundary object): see
@@ -2756,13 +2756,13 @@ class HybridShapeFactory(Factory):
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Face.
                 |     iBeginOffset
-                |         start offset 
+                |         start offset
                 |     iEndOffset
-                |         end offset 
+                |         end offset
                 |     iOrientation
                 |         Orientation allows to reverse the line direction from the reference
                 |         point. For a line of L length, it is the same as creating this line with -L
-                |         length. 
+                |         length.
                 |     oLine
                 |         Created line
 
@@ -2798,18 +2798,18 @@ class HybridShapeFactory(Factory):
                 | double iEndOffset,
                 | boolean iOrientation,
                 | long SolutionNb) As HybridShapeLineBisecting
-                | 
+                |
                 |     Creates a new bisecting line with a starting point within the current
                 |     body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLine1
                 |             First line.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see RectilinearTriDimFeatEdge and
-                |         RectilinearBiDimFeatEdge. 
+                |         RectilinearBiDimFeatEdge.
                 |     iLine2
                 |         Second line.
                 |         Sub-element(s) supported (see Boundary object): see
@@ -2820,13 +2820,13 @@ class HybridShapeFactory(Factory):
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Vertex.
                 |     iBeginOffset
-                |         start offset 
+                |         start offset
                 |     iEndOffset
-                |         end offset 
+                |         end offset
                 |     iOrientation
                 |         Orientation allows to reverse the line direction from the reference
                 |         point. For a line of L length, it is the same as creating this line with -L
-                |         length. 
+                |         length.
                 |     oLine
                 |         Created line
 
@@ -2853,14 +2853,14 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewLineDatum(Reference iObject) As
                 | HybridShapeLineExplicit
-                | 
+                |
                 |     Creates a new datum of line within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iObject
                 |             The object whose topological body will be duplicated and put into
-                |             created datum 
+                |             created datum
                 |         oLine
                 |             Created datum Note2: the object passed as parameter to create the
                 |             datum has to be in the current container. Otherwise, an error
@@ -2884,28 +2884,28 @@ class HybridShapeFactory(Factory):
                 | double iBeginOffset,
                 | double iEndOffset,
                 | boolean iOrientation) As HybridShapeLineNormal
-                | 
+                |
                 |     Creates a new normal line within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iSurface
                 |             Reference surface.
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Face. 
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Face.
                 |     iPoint
                 |         Reference point.
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Vertex.
                 |     iBeginOffset
-                |         start offset 
+                |         start offset
                 |     iEndOffset
-                |         end offset 
+                |         end offset
                 |     iOrientation
                 |         Orientation allows to reverse the line direction from the reference
                 |         point. For a line of L length, it is the same as creating this line with -L
-                |         length. 
+                |         length.
                 |     oLine
                 |         Created line
 
@@ -2933,27 +2933,27 @@ class HybridShapeFactory(Factory):
                 | double iBeginOffset,
                 | double iEndOffset,
                 | boolean iOrientation) As HybridShapeLinePtDir
-                | 
+                |
                 |     Creates a new point-direction line within the current
                 |     body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iPt
                 |             reference point.
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Vertex. 
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Vertex.
                 |     iDirection
-                |         Direction 
+                |         Direction
                 |     iBeginOffset
-                |         start offset 
+                |         start offset
                 |     iEndOffset
-                |         end offset 
+                |         end offset
                 |     iOrientation
                 |         Orientation allows to reverse the line direction from the reference
                 |         point. For a line of L length, it is the same as creating this line with -L
-                |         length. 
+                |         length.
                 |     oLine
                 |         Created line
 
@@ -2983,32 +2983,32 @@ class HybridShapeFactory(Factory):
                 | double iBeginOffset,
                 | double iEndOffset,
                 | boolean iOrientation) As HybridShapeLinePtDir
-                | 
+                |
                 |     Creates a new point-direction line within the current
                 |     body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iPt
                 |             reference point.
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Vertex. 
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Vertex.
                 |     iDirection
-                |         Direction 
+                |         Direction
                 |     iSupport
                 |         Support element (surface or plane)
-                | 
+                |
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Face.
                 |     iBeginOffset
-                |         start offset 
+                |         start offset
                 |     iEndOffset
-                |         end offset 
+                |         end offset
                 |     iOrientation
                 |         Orientation allows to reverse the line direction from the reference
                 |         point. For a line of L length, it is the same as creating this line with -L
-                |         length. 
+                |         length.
                 |     oLine
                 |         Created line
 
@@ -3034,16 +3034,16 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewLinePtPt(Reference iPtOrigine,
                 | Reference iPtExtremite) As HybridShapeLinePtPt
-                | 
+                |
                 |     Creates a new point-point line within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iPtOrigine
                 |             Origin point.
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Vertex. 
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Vertex.
                 |     iPtExtremite
                 |         Extremity point.
                 |         Sub-element(s) supported (see Boundary object): see
@@ -3070,25 +3070,25 @@ class HybridShapeFactory(Factory):
                 | Reference iPtExtremite,
                 | double iBeginOffset,
                 | double iEndOffset) As HybridShapeLinePtPt
-                | 
+                |
                 |     Creates a new point-point line with extensions within the current
                 |     body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iPtOrigine
                 |             Origin point.
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Vertex. 
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Vertex.
                 |     iPtExtremite
                 |         Extremity point.
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Vertex.
                 |     iBeginOffset
-                |         start offset 
+                |         start offset
                 |     iEndOffset
-                |         end offset 
+                |         end offset
                 |     oLine
                 |         Created line
 
@@ -3113,24 +3113,24 @@ class HybridShapeFactory(Factory):
                 | o Func AddNewLinePtPtOnSupport(Reference iPtOrigine,
                 | Reference iPtExtremite,
                 | Reference iSupport) As HybridShapeLinePtPt
-                | 
+                |
                 |     Creates a new point-point line with support within the current
                 |     body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iPtOrigine
                 |             Origin point.
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Vertex. 
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Vertex.
                 |     iPtExtremite
                 |         Extremity point.
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Vertex.
                 |     iSupport
                 |         Support element (surface or plane)
-                | 
+                |
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Face.
                 |     oLine
@@ -3159,30 +3159,30 @@ class HybridShapeFactory(Factory):
                 | Reference iSupport,
                 | double iBeginOffset,
                 | double iEndOffset) As HybridShapeLinePtPt
-                | 
+                |
                 |     Creates a new point-point line with extensions and with support within the
                 |     current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iPtOrigine
                 |             Origin point.
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Vertex. 
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Vertex.
                 |     iPtExtremite
                 |         Extremity point.
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Vertex.
                 |     iSupport
                 |         Support element (surface or plane)
-                | 
+                |
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Face.
                 |     iBeginOffset
-                |         start offset 
+                |         start offset
                 |     iEndOffset
-                |         end offset 
+                |         end offset
                 |     oLine
                 |         Created line
 
@@ -3212,29 +3212,29 @@ class HybridShapeFactory(Factory):
                 | double iBeginOffset,
                 | double iEndOffset,
                 | boolean iOrientation) As HybridShapeLineTangency
-                | 
+                |
                 |     Creates a new tangent line within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCurve
                 |             Reference curve.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see TriDimFeatEdge and BiDimFeatEdge.
-                |         
+                |
                 |     iPoint
                 |         Reference point.
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Vertex.
                 |     iBeginOffset
-                |         start offset 
+                |         start offset
                 |     iEndOffset
-                |         end offset 
+                |         end offset
                 |     iOrientation
                 |         Orientation allows to reverse the line direction from the reference
                 |         point. For a line of L length, it is the same as creating this line with -L
-                |         length. 
+                |         length.
                 |     oLine
                 |         Created line
 
@@ -3264,34 +3264,34 @@ class HybridShapeFactory(Factory):
                 | double iBeginOffset,
                 | double iEndOffset,
                 | boolean iOrientation) As HybridShapeLineTangency
-                | 
+                |
                 |     Creates a new tangent line within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCurve
                 |             Reference curve.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see TriDimFeatEdge and BiDimFeatEdge.
-                |         
+                |
                 |     iPoint
                 |         Reference point.
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Vertex.
                 |     iSupport
                 |         Support element (surface or plane)
-                | 
+                |
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Face.
                 |     iBeginOffset
-                |         start offset 
+                |         start offset
                 |     iEndOffset
-                |         end offset 
+                |         end offset
                 |     iOrientation
                 |         Orientation allows to reverse the line direction from the reference
                 |         point. For a line of L length, it is the same as creating this line with -L
-                |         length. 
+                |         length.
                 |     oLine
                 |         Created line
 
@@ -3316,11 +3316,11 @@ class HybridShapeFactory(Factory):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewLoft() As HybridShapeLoft
-                | 
+                |
                 |     Creates a new Loft within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         oExt
                 |             CATIAHybridShapeLoft created
 
@@ -3339,18 +3339,18 @@ class HybridShapeFactory(Factory):
                 | o Func AddNewMidSurface(Reference iSupport,
                 | long iCreationMode,
                 | double iThreshold) As HybridShapeMidSurface
-                | 
+                |
                 |     Creates a new MidSurface in Automatic Creation Mode Only.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iSupport
-                |             support Body 
+                |             support Body
                 |         iCreationMode
-                |             Creation Mode (Only Automatic Accepted) 
+                |             Creation Mode (Only Automatic Accepted)
                 |         iThreshold
-                |             Threshold Thickness 
-                | 
+                |             Threshold Thickness
+                |
                 |     Returns:
                 |         oMidSurface Created MidSurface
 
@@ -3374,20 +3374,20 @@ class HybridShapeFactory(Factory):
                 | long iCreationMode,
                 | double iThreshold,
                 | long iAutoThicknessThreshold) As HybridShapeMidSurface
-                | 
+                |
                 |     Creates a new MidSurface in Automatic Creation Mode Only.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iSupport
-                |             support Body 
+                |             support Body
                 |         iCreationMode
-                |             Creation Mode (Only Automatic Accepted) 
+                |             Creation Mode (Only Automatic Accepted)
                 |         iThreshold
-                |             Threshold Thickness 
+                |             Threshold Thickness
                 |         iAutoThicknessThreshold
-                |             Automatic Thickness Threshold 
-                | 
+                |             Automatic Thickness Threshold
+                |
                 |     Returns:
                 |         oMidSurface Created MidSurface
 
@@ -3410,20 +3410,20 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewNear(Reference MultiElement,
                 | Reference ReferenceElement) As HybridShapeNear
-                | 
+                |
                 |     Creates a new Near within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iMultiElement
                 |             Non connex element (point,curve,surface.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see Face, TriDimFeatEdge, BiDimFeatEdge and Vertex.
-                |         
+                |
                 |     iReferenceElement
                 |         Reference element
-                | 
+                |
                 |         Sub-element(s) supported (see Boundary object): see Face,
                 |         TriDimFeatEdge, BiDimFeatEdge and Vertex.
                 |     oNear
@@ -3449,23 +3449,23 @@ class HybridShapeFactory(Factory):
                 | double iOffset,
                 | boolean iOrientation,
                 | double iPrecision) As HybridShapeOffset
-                | 
+                |
                 |     Creates a new offset within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iObjectToOffset
                 |             Surface to offset.
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Face. 
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Face.
                 |     iOffset
-                |         Offset value 
+                |         Offset value
                 |     iOrientation
-                |         Offset orientation 
+                |         Offset orientation
                 |     iPrecision
                 |         This variable is no longer in use and any change in it's value does not
-                |         impact the output. 
+                |         impact the output.
                 |     oOffsetObject
                 |         Offset Surface
 
@@ -3487,18 +3487,18 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPlane1Curve(Reference iPlanarCurve) As
                 | HybridShapePlane1Curve
-                | 
+                |
                 |     Creates a new plane passing through one planar curve within the current
                 |     body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iPlanarCurve
                 |             passing curve.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see TriDimFeatEdge and BiDimFeatEdge.
-                |         
+                |
                 |     oPlane
                 |         Created plane
 
@@ -3516,19 +3516,19 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPlane1Line1Pt(Reference iLn,
                 | Reference iPt) As HybridShapePlane1Line1Pt
-                | 
+                |
                 |     Creates a new plane passing through 1 line and 1 point within the current
                 |     body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLn
                 |             passing line.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see RectilinearTriDimFeatEdge,
                 |         RectilinearBiDimFeatEdge and RectilinearMonoDimFeatEdge.
-                |         
+                |
                 |     iPt
                 |         passing point.
                 |         Sub-element(s) supported (see Boundary object): see
@@ -3551,19 +3551,19 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPlane2Lines(Reference iLn1,
                 | Reference iLn2) As HybridShapePlane2Lines
-                | 
+                |
                 |     Creates a new plane passing through 2 lines within the current
                 |     body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iLn1
                 |             first passing line.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see RectilinearTriDimFeatEdge,
                 |         RectilinearBiDimFeatEdge and RectilinearMonoDimFeatEdge.
-                |         
+                |
                 |     iLn2
                 |         second passing line.
                 |         Sub-element(s) supported (see Boundary object): see
@@ -3588,17 +3588,17 @@ class HybridShapeFactory(Factory):
                 | o Func AddNewPlane3Points(Reference iPt1,
                 | Reference iPt2,
                 | Reference iPt3) As HybridShapePlane3Points
-                | 
+                |
                 |     Creates a new plane passing through 3 points within the current
                 |     body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iPt1
                 |             first passing point.
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Vertex. 
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Vertex.
                 |     iPt2
                 |         second passing point.
                 |         Sub-element(s) supported (see Boundary object): see
@@ -3630,28 +3630,28 @@ class HybridShapeFactory(Factory):
                 | Reference iRevolAxis,
                 | double iAngle,
                 | boolean iOrientation) As HybridShapePlaneAngle
-                | 
+                |
                 |     Creates a new angle plane within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iPlane
                 |             reference plane
-                | 
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see PlanarFace. 
+                |
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see PlanarFace.
                 |     iRevolAxis
                 |         rotation axis
-                | 
+                |
                 |         Sub-element(s) supported (see Boundary object): see
                 |         RectilinearTriDimFeatEdge, RectilinearBiDimFeatEdge and
                 |         RectilinearMonoDimFeatEdge.
                 |     iAngle
-                |         angle 
+                |         angle
                 |     iOrientation
                 |         Orientation to reverse the plane from the reference plane.
-                |         
+                |
                 |     oPlane
                 |         Created plane
 
@@ -3674,14 +3674,14 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPlaneDatum(Reference iObject) As
                 | HybridShapePlaneExplicit
-                | 
+                |
                 |     Creates a new datum of plane within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iObject
                 |             The object whose topological body will be duplicated and put into
-                |             created datum 
+                |             created datum
                 |         oPlane
                 |             Created datum Note2: the object passed as parameter to create the
                 |             datum has to be in the current container. Otherwise, an error
@@ -3704,19 +3704,19 @@ class HybridShapeFactory(Factory):
                 | double iB_Coeff,
                 | double iC_Coeff,
                 | double iD_Coeff) As HybridShapePlaneEquation
-                | 
+                |
                 |     Creates a new equation plane within the current body. Plane equation is Ax+By+Cz = D.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iA_Coeff
-                |             A coefficient 
+                |             A coefficient
                 |         iB_Coeff
-                |             B coefficient 
+                |             B coefficient
                 |         iC_Coeff
-                |             C coefficient 
+                |             C coefficient
                 |         iD_Coeff
-                |             D coefficient 
+                |             D coefficient
                 |         oPlane
                 |             Created plane
 
@@ -3738,17 +3738,17 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPlaneMean(CATSafeArrayVariant iListOfPoints,
                 | long NbPoint) As HybridShapePlaneMean
-                | 
+                |
                 |     Creates a new mean through points plane within the current
                 |     body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         oIListOfPoints
                 |             list of passing points Warning : Input and Output parameter for CATScript applications,
                 |             procedural type
                 |         iNbPoint
-                |             Number of points 
+                |             Number of points
                 |         oPlane
                 |             Created plane
 
@@ -3767,17 +3767,17 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPlaneNormal(Reference iCurve,
                 | Reference iPt) As HybridShapePlaneNormal
-                | 
+                |
                 |     Creates a new normal plane within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCurve
                 |             Reference curve.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see TriDimFeatEdge and BiDimFeatEdge.
-                |         
+                |
                 |     iPt
                 |         Reference point.
                 |         Sub-element(s) supported (see Boundary object): see
@@ -3801,22 +3801,22 @@ class HybridShapeFactory(Factory):
                 | o Func AddNewPlaneOffset(Reference iPlane,
                 | double iOffset,
                 | boolean iOrientation) As HybridShapePlaneOffset
-                | 
+                |
                 |     Creates a new offset plane within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iPlane
                 |             reference plane
-                | 
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see PlanarFace. 
+                |
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see PlanarFace.
                 |     iOffset
-                |         offset value 
+                |         offset value
                 |     iOrientation
                 |         Orientation to reverse the plane from the reference plane.
-                |         
+                |
                 |     oPlane
                 |         Created plane
 
@@ -3837,18 +3837,18 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPlaneOffsetPt(Reference iPlane,
                 | Reference iPt) As HybridShapePlaneOffsetPt
-                | 
+                |
                 |     Creates a new offset trough point plane within the current
                 |     body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iPlane
                 |             reference plane
-                | 
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see PlanarFace. 
+                |
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see PlanarFace.
                 |     iPt
                 |         Reference point.
                 |         Sub-element(s) supported (see Boundary object): see
@@ -3872,16 +3872,16 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPlaneTangent(Reference iSurface,
                 | Reference iPt) As HybridShapePlaneTangent
-                | 
+                |
                 |     Creates a new tangent plane within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iSurface
                 |             reference surface.
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Face. 
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Face.
                 |     iPt
                 |         reference point.
                 |         Sub-element(s) supported (see Boundary object): see
@@ -3908,24 +3908,24 @@ class HybridShapeFactory(Factory):
                 | Reference iPoint2,
                 | double iRatio,
                 | long iOrientation) As HybridShapePointBetween
-                | 
+                |
                 |     Creates a new PointBetween within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iPoint1
                 |             Reference point to compute the barycenter.
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Vertex. 
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Vertex.
                 |     iPoint2
                 |         Second point.
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Vertex.
                 |     iRatio
-                |         barycenter parameter 
+                |         barycenter parameter
                 |     iOrientation
-                |         To compute the barycenter of the segment [Pt1 - Pt2] 
+                |         To compute the barycenter of the segment [Pt1 - Pt2]
                 |     oPoint
                 |         PointBetween if succeded
 
@@ -3948,17 +3948,17 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPointCenter(Reference iCurve) As
                 | HybridShapePointCenter
-                | 
+                |
                 |     Creates a new circle center point within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCurve
                 |             Reference circle
-                | 
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Edge. 
+                |
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Edge.
                 |     oPoint
                 |         Created point
 
@@ -3977,18 +3977,18 @@ class HybridShapeFactory(Factory):
                 | o Func AddNewPointCoord(double iX,
                 | double iY,
                 | double iZ) As HybridShapePointCoord
-                | 
+                |
                 |     Creates a new point defined by its cartesian coordinates within the current
                 |     body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iX
-                |             X coordinate for the point 
+                |             X coordinate for the point
                 |         iY
-                |             Y coordinate for the point 
+                |             Y coordinate for the point
                 |         iZ
-                |             Z coordinate for the point 
+                |             Z coordinate for the point
                 |         oPoint
                 |             Created point
 
@@ -4026,23 +4026,23 @@ class HybridShapeFactory(Factory):
                 | double iY,
                 | double iZ,
                 | Reference iPt) As HybridShapePointCoord
-                | 
+                |
                 |     Creates a new point defined its the cartesian coordinates regarding a
                 |     reference point.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iX
-                |             X coordinate for the point 
+                |             X coordinate for the point
                 |         iY
-                |             Y coordinate for the point 
+                |             Y coordinate for the point
                 |         iZ
-                |             Z coordinate for the point 
+                |             Z coordinate for the point
                 |         iPt
                 |             Reference point.
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Vertex. 
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Vertex.
                 |     oPoint
                 |         Created point
 
@@ -4064,14 +4064,14 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPointDatum(Reference iObject) As
                 | HybridShapePointExplicit
-                | 
+                |
                 |     Creates a new datum of point within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iObject
                 |             The object whose topological body will be duplicated and put into
-                |             created datum 
+                |             created datum
                 |         oPoint
                 |             Created datum Note2: the object passed as parameter to create the
                 |             datum has to be in the current container. Otherwise, an error
@@ -4094,25 +4094,25 @@ class HybridShapeFactory(Factory):
                 | double iLong,
                 | boolean iOrientation,
                 | HybridShapeDirection iDirection) As HybridShapePointOnCurve
-                | 
+                |
                 |     Creates a new point on a curve with a deafult origin point and from a
                 |     distance along direction.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCrv
                 |             support curve.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see TriDimFeatEdge and BiDimFeatEdge.
-                |         
+                |
                 |     iLong
                 |         distance to default origin point.(origin of acurrent axis system)
-                |         
+                |
                 |     iOrientation
-                |         Orientation = TRUE means that distance is measured in the other orientation of the curve. 
+                |         Orientation = TRUE means that distance is measured in the other orientation of the curve.
                 |     iDirection
-                |         Direction = The distance at which point is created is measured in this direction. 
+                |         Direction = The distance at which point is created is measured in this direction.
                 |     oPoint
                 |         Created point
 
@@ -4137,20 +4137,20 @@ class HybridShapeFactory(Factory):
                 | o Func AddNewPointOnCurveFromDistance(Reference iCrv,
                 | double iLong,
                 | boolean iOrientation) As HybridShapePointOnCurve
-                | 
+                |
                 |     Creates a new point on a curve from a distance to an extremity within the
                 |     current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCrv
                 |             support curve.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see TriDimFeatEdge and BiDimFeatEdge.
-                |         
+                |
                 |     iLong
-                |         distance to extremity 
+                |         distance to extremity
                 |     iOrientation
                 |         Orientation = TRUE means that distance is measured in the other orientation of the curve and
                 |         from the other extremity.
@@ -4176,20 +4176,20 @@ class HybridShapeFactory(Factory):
                 | o Func AddNewPointOnCurveFromPercent(Reference iCrv,
                 | double iLong,
                 | boolean iOrientation) As HybridShapePointOnCurve
-                | 
+                |
                 |     Creates a new point on a curve from a ratio of distance to an extremity
                 |     within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCrv
                 |             support curve.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see TriDimFeatEdge and BiDimFeatEdge.
-                |         
+                |
                 |     iLong
-                |         Ratio of curve length 
+                |         Ratio of curve length
                 |     iOrientation
                 |         Orientation = TRUE means that ratio is measured in the other orientation of the curve and
                 |         from the other extremity.
@@ -4221,28 +4221,28 @@ class HybridShapeFactory(Factory):
                 | double iLong,
                 | boolean iOrientation,
                 | HybridShapeDirection iDirection) As HybridShapePointOnCurve
-                | 
+                |
                 |     Creates a new point on a curve with a reference point and from a distance
                 |     along direction.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCrv
                 |             support curve.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see TriDimFeatEdge and BiDimFeatEdge.
-                |         
+                |
                 |     iPt
                 |         reference point.
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Vertex.
                 |     iLong
-                |         distance (length) to reference point 
+                |         distance (length) to reference point
                 |     iOrientation
-                |         Orientation = TRUE means that distance is measured in the other orientation of the curve 
+                |         Orientation = TRUE means that distance is measured in the other orientation of the curve
                 |     iDirection
-                |         Direction = The distance at which point is created is measured in this direction. 
+                |         Direction = The distance at which point is created is measured in this direction.
                 |     oPoint
                 |         Created point
 
@@ -4271,26 +4271,26 @@ class HybridShapeFactory(Factory):
                 | Reference iPt,
                 | double iLong,
                 | boolean iOrientation) As HybridShapePointOnCurve
-                | 
+                |
                 |     Creates a new point on a curve with a reference point and from a distance
                 |     within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCrv
                 |             support curve.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see TriDimFeatEdge and BiDimFeatEdge.
-                |         
+                |
                 |     iPt
                 |         reference point.
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Vertex.
                 |     iLong
-                |         distance (length) to reference point 
+                |         distance (length) to reference point
                 |     iOrientation
-                |         Orientation = TRUE means that distance is measured in the other orientation of the curve 
+                |         Orientation = TRUE means that distance is measured in the other orientation of the curve
                 |     oPoint
                 |         Created point
 
@@ -4317,26 +4317,26 @@ class HybridShapeFactory(Factory):
                 | Reference iPt,
                 | double iLong,
                 | boolean iOrientation) As HybridShapePointOnCurve
-                | 
+                |
                 |     Creates a new point on a curve with a reference point and from a ratio of
                 |     distance within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCrv
                 |             Support curve.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see TriDimFeatEdge and BiDimFeatEdge.
-                |         
+                |
                 |     iPt
                 |         reference point.
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Vertex.
                 |     iLong
-                |         Ratio of curve length 
+                |         Ratio of curve length
                 |     iOrientation
-                |         Orientation = TRUE means that ratio is measured in the other orientation of the curve 
+                |         Orientation = TRUE means that ratio is measured in the other orientation of the curve
                 |     oPoint
                 |         Created point
 
@@ -4360,21 +4360,21 @@ class HybridShapeFactory(Factory):
                 | o Func AddNewPointOnPlane(Reference iPlane,
                 | double iX,
                 | double iY) As HybridShapePointOnPlane
-                | 
+                |
                 |     Creates a new point on a plane within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iPlane
                 |             Support plane
-                | 
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see PlanarFace. 
+                |
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see PlanarFace.
                 |     iX
-                |         X cartesian coordinates in the plane. 
+                |         X cartesian coordinates in the plane.
                 |     iY
-                |         Y cartesian coordinates in the plane. 
+                |         Y cartesian coordinates in the plane.
                 |     oPoint
                 |         Created point
 
@@ -4397,27 +4397,27 @@ class HybridShapeFactory(Factory):
                 | Reference iPt,
                 | double iX,
                 | double iY) As HybridShapePointOnPlane
-                | 
+                |
                 |     Creates a new point on a plane with a reference point within the current
                 |     body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iPlane
                 |             Support plane
-                | 
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see PlanarFace. 
+                |
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see PlanarFace.
                 |     iPt
                 |         Reference plane
-                | 
+                |
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Vertex.
                 |     iX
-                |         X cartesian coordinates in the plane. 
+                |         X cartesian coordinates in the plane.
                 |     iY
-                |         Y cartesian coordinates in the plane. 
+                |         Y cartesian coordinates in the plane.
                 |     oPoint
                 |         Created point
 
@@ -4441,21 +4441,21 @@ class HybridShapeFactory(Factory):
                 | o Func AddNewPointOnSurface(Reference iSurface,
                 | HybridShapeDirection iDirection,
                 | double iX) As HybridShapePointOnSurface
-                | 
+                |
                 |     Creates a new point on a surface within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iSurface
                 |             Support surface.
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Face. 
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Face.
                 |     iDirection
                 |         Direction from the reference point in which the point is computed.
-                |         
+                |
                 |     iX
-                |         geodesic length to reference point 
+                |         geodesic length to reference point
                 |     oPoint
                 |         Created point
 
@@ -4480,26 +4480,26 @@ class HybridShapeFactory(Factory):
                 | Reference iPt,
                 | HybridShapeDirection iDirection,
                 | double iX) As HybridShapePointOnSurface
-                | 
+                |
                 |     Creates a new point on a surface with a reference point within the current
                 |     body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iSurface
                 |             Support surface.
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Face. 
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Face.
                 |     iPt
                 |         reference point.
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Vertex.
                 |     iDirection
                 |         Direction from the reference point in which the point is computed.
-                |         
+                |
                 |     iX
-                |         geodesic length to reference point 
+                |         geodesic length to reference point
                 |     oPoint
                 |         Created point
 
@@ -4522,19 +4522,19 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPointTangent(Reference iCurve,
                 | HybridShapeDirection iDirection) As HybridShapePointTangent
-                | 
+                |
                 |     Creates a new tangent to curve point within the current
                 |     body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCurve
                 |             Reference curve.
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Edge. 
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Edge.
                 |     iDirection
-                |         Direction in which tangent points are computed 
+                |         Direction in which tangent points are computed
                 |     oPoint
                 |         Created point
 
@@ -4553,11 +4553,11 @@ class HybridShapeFactory(Factory):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPolyline() As HybridShapePolyline
-                | 
+                |
                 |     Creates a new Polyline within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         oPolyline
                 |             The Polyline object if succeded
 
@@ -4574,13 +4574,13 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewPositionTransfo(long iMode) As
                 | HybridShapePositionTransfo
-                | 
+                |
                 |     Creates a new PositionTransfo within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iMode
-                |             Positioning mode. 
+                |             Positioning mode.
                 |         oExt
                 |             Created positioning transformation (i.e. positioned wire /
                 |             profile).
@@ -4599,17 +4599,17 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewProject(Reference iElement,
                 | Reference iSupport) As HybridShapeProject
-                | 
+                |
                 |     Creates a new Project within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iElement
                 |             Element to project (point, curve).
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see TriDimFeatEdge, BiDimFeatEdge and Vertex.
-                |         
+                |
                 |     iSupport
                 |         Curve or surface support for projection.
                 |         Sub-element(s) supported (see Boundary object): see Face,
@@ -4636,27 +4636,27 @@ class HybridShapeFactory(Factory):
                 | double iAngle,
                 | long iOrientationSupport,
                 | long iOrientationDirection) As HybridShapeReflectLine
-                | 
+                |
                 |     Deprecated:
                 |         V5R17 CATIAHybridShapeFactory#AddNewReflectLineWithType Creates a new
                 |         ReflectLine within the current body.
                 |         Create a reflectline curve on a support surface along a direction with
-                |         an angle. 
+                |         an angle.
                 |     Parameters:
-                | 
+                |
                 |         iSupport
                 |             Support surface.
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Face. 
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Face.
                 |     iAngle
-                |         Angle of the reflectline. 
+                |         Angle of the reflectline.
                 |     iOrientationSupport
                 |         Manage the angle used to compute the reflectline. Value can be 1 or -1
-                |         
+                |
                 |     iOrientationDirection
                 |         Manage the angle used to compute the reflectline. Value can be 1 or -1
-                |         
+                |
                 |     oReflectLine
                 |         Created reflectline.
 
@@ -4686,23 +4686,23 @@ class HybridShapeFactory(Factory):
                 | long iOrientationSupport,
                 | long iOrientationDirection,
                 | long iType) As HybridShapeReflectLine
-                | 
+                |
                 |     Creates a new ReflectLine within the current body.
                 |     Create a reflectline curve on a support surface along a direction with an
                 |     angle.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iSupport
-                |             Support surface. 
+                |             Support surface.
                 |         iAngle
-                |             Angle of the reflectline. 
+                |             Angle of the reflectline.
                 |         iOrientationSupport
                 |             Manage the angle used to compute the reflectline. Value can be 1 or
-                |             -1 
+                |             -1
                 |         iOrientationDirection
                 |             Manage the angle used to compute the reflectline. Value can be 1 or
-                |             -1 
+                |             -1
                 |         iType
                 |             Manage the type used to compute the reflectline. Value can be 0 or
                 |             1 Returns or sets whether the reflectline curve is or should be created with
@@ -4713,7 +4713,7 @@ class HybridShapeFactory(Factory):
                 |             direction or with the angle between the tangent plane to the support and the
                 |             direction..
                 |             Legal values: 0 for the normal and 1 for the tangent plane.
-                |             
+                |
                 |         oReflectLine
                 |             Created reflectline.
 
@@ -4741,26 +4741,26 @@ class HybridShapeFactory(Factory):
                 | double iOffsetDebut,
                 | double iOffsetFin,
                 | Reference iAxis) As HybridShapeRevol
-                | 
+                |
                 |     Creates a new revolution within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iObjectToExtrude
                 |             Profile to be revolved
-                | 
-                |             Sub-element(s) supported (see 
-                | 
+                |
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see Face, TriDimFeatEdge, BiDimFeatEdge and Vertex.
-                |         
+                |
                 |     iOffsetDebut
-                |         Angle value 
+                |         Angle value
                 |     iOffsetFin
-                |         Angle value 
+                |         Angle value
                 |     iAxis
                 |         Revolution axis ( line that has to be in the profil
                 |         plane
-                | 
+                |
                 |         Sub-element(s) supported (see Boundary object): see
                 |         RectilinearTriDimFeatEdge, RectilinearBiDimFeatEdge and
                 |         RectilinearMonoDimFeatEdge.
@@ -4787,23 +4787,23 @@ class HybridShapeFactory(Factory):
                 | o Func AddNewRotate(Reference iToRotate,
                 | Reference iAxis,
                 | double iAngle) As HybridShapeRotate
-                | 
+                |
                 |     Creates a new Rotate within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iToRotate
                 |             point, curve, surface or solid to transform.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see Face, TriDimFeatEdge, BiDimFeatEdge and Vertex.
-                |         
+                |
                 |     iAxis
                 |         Rotation axis.
                 |         Sub-element(s) supported (see Boundary object): see
                 |         Edge.
                 |     iAngle
-                |         Rotation angle. 
+                |         Rotation angle.
                 |     oRotate
                 |         Created rotation.
 
@@ -4823,11 +4823,11 @@ class HybridShapeFactory(Factory):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSection() As HybridShapeSection
-                | 
+                |
                 |     Creates a new section.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         oSection
                 |             Created Section
 
@@ -4851,28 +4851,28 @@ class HybridShapeFactory(Factory):
                 | double iEndParallelAngle,
                 | double iBeginMeridianAngle,
                 | double iEndMeridianAngle) As HybridShapeSphere
-                | 
+                |
                 |     Creates a new Sphere within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iCenter
                 |             Sphere center.
-                |             Sub-element(s) supported (see 
-                | 
-                |         Boundary object): see Vertex. 
+                |             Sub-element(s) supported (see
+                |
+                |         Boundary object): see Vertex.
                 |     iAxis
-                |         Sphere axis 
+                |         Sphere axis
                 |     iRadius
-                |         Radius 
+                |         Radius
                 |     iBeginParallelAngle
-                |         Angle value 
+                |         Angle value
                 |     iEndParallelAngle
-                |         Angle value 
+                |         Angle value
                 |     iBeginMeridianAngle
-                |         Angle value 
+                |         Angle value
                 |     iEndMeridianAngle
-                |         Angle value 
+                |         Angle value
                 |     oSphereObject
                 |         Sphere result
 
@@ -4898,11 +4898,11 @@ class HybridShapeFactory(Factory):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSpine() As HybridShapeSpine
-                | 
+                |
                 |     Creates a new spine within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         oExt
                 |             CATIAHybridShapeSpine created
 
@@ -4924,26 +4924,26 @@ class HybridShapeFactory(Factory):
                 | HybridShapeDirection iAxis,
                 | double iStartingRadius,
                 | boolean iClockwiseRevolution) As HybridShapeSpiral
-                | 
+                |
                 |     Creates a new Spiral within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iType
                 |             Spiral is defined by AngleRadius, AnglePitch or PitchRadius.
-                |             
+                |
                 |         iSupport
-                |             Spiral planar support. 
+                |             Spiral planar support.
                 |         iCenterPoint
-                |             Center point. 
+                |             Center point.
                 |         iAxis
-                |             Axis. 
+                |             Axis.
                 |         iStartingRadius
                 |             Defines the starting point: distance from the center point on the
-                |             axis. 
+                |             axis.
                 |         iClockwiseRevolution
                 |             Revolutions are clockwise if TRUE, counterclockwise if FALSE.
-                |             
+                |
                 |         oSpiral
                 |             The Spiral object if succeded
 
@@ -4967,11 +4967,11 @@ class HybridShapeFactory(Factory):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSpline() As HybridShapeSpline
-                | 
+                |
                 |     Creates a new Spline within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         oSpline
                 |             Created spline.
 
@@ -4988,14 +4988,14 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSurfaceDatum(Reference iObject) As
                 | HybridShapeSurfaceExplicit
-                | 
+                |
                 |     Creates a new datum of surface within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iObject
                 |             The object whose topological body will be duplicated and put into
-                |             created datum 
+                |             created datum
                 |         oSurface
                 |             Created surface Note2: the object passed as parameter to create the
                 |             datum has to be in the current container. Otherwise, an error
@@ -5015,17 +5015,17 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSweepCircle(Reference iGuide1) As
                 | HybridShapeSweepCircle
-                | 
+                |
                 |     Creates a new SweepCircle within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iGuide1
                 |             First guide or center curve.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see TriDimFeatEdge and BiDimFeatEdge.
-                |         
+                |
                 |     oExt
                 |         Created swept surface.
 
@@ -5043,13 +5043,13 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSweepConic(Reference ipIAGuide1) As
                 | HybridShapeSweepConic
-                | 
+                |
                 |     Creates a new SweepConic within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iGuide1
-                |             First guide curve. 
+                |             First guide curve.
                 |         opIASweepConic
                 |             Created swept surface.
 
@@ -5067,17 +5067,17 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSweepExplicit(Reference iProfile,
                 | Reference iGuide) As HybridShapeSweepExplicit
-                | 
+                |
                 |     Creates a new SweepExplicit within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iProfile
                 |             Profile.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see TriDimFeatEdge and BiDimFeatEdge.
-                |         
+                |
                 |     iGuide
                 |         First guide curve.
                 |         Sub-element(s) supported (see Boundary object): see TriDimFeatEdge and
@@ -5101,13 +5101,13 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSweepLine(Reference iGuide1) As
                 | HybridShapeSweepLine
-                | 
+                |
                 |     Creates a new SweepLine within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iGuide1
-                |             First guide curve. 
+                |             First guide curve.
                 |         oExt
                 |             Created swept surface.
 
@@ -5125,17 +5125,17 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewSymmetry(Reference iObject,
                 | Reference iReference) As HybridShapeSymmetry
-                | 
+                |
                 |     Creates a new Symmetry within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iObject
                 |             Point, curve, surface or solid to transform.
-                |             Sub-element(s) supported (see 
-                | 
+                |             Sub-element(s) supported (see
+                |
                 |         Boundary object): see Face, TriDimFeatEdge, BiDimFeatEdge and Vertex.
-                |         
+                |
                 |     iReference
                 |         Point, line or reference plane.
                 |         Sub-element(s) supported (see Boundary object): see PlanarFace, Edge
@@ -5159,16 +5159,16 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewTransfer(Reference iElementToTransfer,
                 | long iTypeOfTransfer) As HybridShapeTransfer
-                | 
+                |
                 |     Creates a new Transfer within the current body.
                 |     Note: require DL1 license.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iElementToTransfer
-                |             The element to transfer 
+                |             The element to transfer
                 |         iTypeOfTransfer
-                |             The type of transfer 
+                |             The type of transfer
                 |         oExt
                 |             Created Transfer operation.
 
@@ -5190,24 +5190,24 @@ class HybridShapeFactory(Factory):
                 | o Func AddNewTranslate(Reference iElement,
                 | HybridShapeDirection iDirection,
                 | double iDistance) As HybridShapeTranslate
-                | 
+                |
                 |     Creates a new Translate within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iElement
-                |             Point, curve, surface or solid to translate. 
+                |             Point, curve, surface or solid to translate.
                 |         iDirection
-                |             Translation direction. 
+                |             Translation direction.
                 |         iDistance
-                |             Translation Distance. 
+                |             Translation Distance.
                 |         oTranslate
-                |             Created translation 
+                |             Created translation
                 |         oTranslate
                 |             Created Translate (Empty feature)
                 |             Note: Then translate mode and inputs has to be initialized
-                |             
-                | 
+                |
+                |
                 |     See also:
                 |         HybridShapeTranslate
 
@@ -5227,12 +5227,12 @@ class HybridShapeFactory(Factory):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewUnfold() As HybridShapeUnfold
-                | 
+                |
                 |     Creates a new Unfold within the current body.
                 |     Note: require DL1 license.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         oExt
                 |             Created unfold operation.
 
@@ -5249,15 +5249,15 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewVolumeDatum(Reference iObject) As
                 | HybridShapeVolumeExplicit
-                | 
+                |
                 |     Creates a new datum of volume within the current body.
                 |     Note: requires GSO License
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iObject
                 |             The object whose topological body will be duplicated and put into
-                |             created datum 
+                |             created datum
                 |         oVolume
                 |             Created Volume Note2: the object passed as parameter to create the
                 |             datum has to be in the current container. Otherwise, an error
@@ -5276,12 +5276,12 @@ class HybridShapeFactory(Factory):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewWrapCurve() As HybridShapeWrapCurve
-                | 
+                |
                 |     Creates a new Wrap Curve Surface within the current body.
                 |     Note: require GSO license.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         oWrapCurve
                 |             The Wrap Curve object if succeded
 
@@ -5298,14 +5298,14 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func AddNewWrapSurface(Reference iBodyToDeform) As
                 | HybridShapeWrapSurface
-                | 
+                |
                 |     Creates a new Wrap Surface within the current body.
                 |     Note: require GSO license.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         :
-                |             iBodyToDeform Body to deform with a Wrap Surface 
+                |             iBodyToDeform Body to deform with a Wrap Surface
                 |         oWrapSurface
                 |             The Wrap Surface object if succeded
 
@@ -5323,13 +5323,13 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub ChangeFeatureName(Reference iElem,
                 | CATBSTR Name)
-                | 
+                |
                 |     Set display name for Shape Design Features.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iElem
-                |             Element to rename 
+                |             Element to rename
                 |         Name
                 |             User name
 
@@ -5339,7 +5339,7 @@ class HybridShapeFactory(Factory):
         :rtype: None
         """
         return self.hybrid_shape_factory.ChangeFeatureName(i_elem.com_object, name)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -5362,11 +5362,11 @@ class HybridShapeFactory(Factory):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub DeleteObjectForDatum(Reference iObject)
-                | 
+                |
                 |     Deletes an object within the current body.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iObject
                 |             Object to delete
 
@@ -5375,7 +5375,7 @@ class HybridShapeFactory(Factory):
         :rtype: None
         """
         return self.hybrid_shape_factory.DeleteObjectForDatum(i_object.com_object)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -5399,13 +5399,13 @@ class HybridShapeFactory(Factory):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Sub GSMVisibility(Reference iElem,
                 | long Show)
-                | 
+                |
                 |     Set Visibility attribut for Shape Design Features.
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iElem
-                |             Element to show/NoShow 
+                |             Element to show/NoShow
                 |         Show
                 |             = 0 NoShow , 1= Show
 
@@ -5415,7 +5415,7 @@ class HybridShapeFactory(Factory):
         :rtype: None
         """
         return self.hybrid_shape_factory.GSMVisibility(i_elem.com_object, show)
-        # # # # Autogenerated comment: 
+        # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
         # # should be uncommented and edited accordingly. Otherwise completely remove all this.
@@ -5438,13 +5438,13 @@ class HybridShapeFactory(Factory):
 
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384))
                 | o Func GetGeometricalFeatureType(Reference iElem) As short
-                | 
+                |
                 |     Returns type of "geometrical" shape Design feature .
-                | 
+                |
                 |     Parameters:
-                | 
+                |
                 |         iElem
-                |             Reference element 
+                |             Reference element
                 |         oType
                 |             Type of feature
                 |             0 = Unknown, 1 = Point,  2 = Curve, 3 = Line, 4 = Circle,

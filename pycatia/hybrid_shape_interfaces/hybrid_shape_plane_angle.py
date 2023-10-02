@@ -1,4 +1,4 @@
-#! usr/bin/python3.6
+#! usr/bin/python3.9
 """
     Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-07-06 14:02:20.222384
 
@@ -97,7 +97,7 @@ class HybridShapePlaneAngle(Plane):
         self.hybrid_shape_plane_angle.Orientation = value
 
     @property
-    def plane(self) -> Reference:
+    def ref_plane(self) -> Reference:
         """
         .. note::
             :class: toggle
@@ -114,8 +114,8 @@ class HybridShapePlaneAngle(Plane):
 
         return Reference(self.hybrid_shape_plane_angle.Plane)
 
-    @plane.setter
-    def plane(self, reference_plane: Reference):
+    @ref_plane.setter
+    def ref_plane(self, reference_plane: Reference):
         """
         :param Reference reference_plane:
         """

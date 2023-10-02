@@ -1,0 +1,234 @@
+#! usr/bin/python3.9
+"""
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-09-25 14:34:21.593357
+
+    .. warning::
+        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+        They are there as a guide as to how the visual basic / catscript functions work
+        and thus help debugging in pycatia.
+        
+"""
+from pycatia.dnb_human_modeling_interfaces.swk_body_element import SWKBodyElement
+from pycatia.dnb_human_modeling_interfaces.swkdof import SWKDOF
+
+
+class SWKLineOfSight(SWKBodyElement):
+    """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
+
+                | System.IUnknown
+                |     System.IDispatch
+                |         System.CATBaseUnknown
+                |             System.CATBaseDispatch
+                |                 System.AnyObject
+                |                     DNBHumanModelingInterfaces.SWKBodyElement
+                |                         SWKLineOfSight
+                | 
+                | This interface deals with a line of sight of a manikin.
+    
+    """
+
+    def __init__(self, com_object):
+        super().__init__(com_object)
+        self.swk_line_of_sight = com_object
+
+    @property
+    def length(self) -> float:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
+                | o Property Length() As double (Read Only)
+                | 
+                |     Returns the length of the line of sight, in centimeters.
+                |     If the the value returned is -1.0, then it means that this line of sight
+                |     has infinite length.
+
+        :return: float
+        :rtype: float
+        """
+
+        return self.swk_line_of_sight.Length
+
+    @property
+    def nb_do_fs(self) -> int:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
+                | o Property NbDOFs() As long (Read Only)
+                | 
+                |     Returns the number of degrees of freedom on the current line of sight. This
+                |     property will always be equal to 2. The two degrees of freedom on a line of
+                |     sight are the up/down movement and the lateral right/lateral left movement.
+
+        :return: int
+        :rtype: int
+        """
+
+        return self.swk_line_of_sight.NbDOFs
+
+    def apply_position(self, pi_position_increment: tuple) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+                | o Sub ApplyPosition(CATSafeArrayVariant piPositionIncrement)
+                | 
+                |     Applies a new relative position for the line of sight.
+                | 
+                |     Parameters:
+                | 
+                |         piPositionIncrement
+                |             The new position to combine with the line of sight's current
+                |             position.
+                |             This array must contain 12 numbers, and msut be initialized using
+                |             the four columns of a transformation matrix. The first nine components
+                |             represent the rotation matrix.
+                |             The last three components represent the translation
+                |             vector.
+                | 
+                |     Example:
+                | 
+                |           This example sets the segment to a 45-degree rotation
+                |           around
+                |          the x axis and at a (10, 20, 30) translation from the
+                |          origin.
+                |
+                |          Dim myPosition(11)
+                |          'Rotation (45 degrees around the x axis)
+                |          myPosition(0)  = 1.000
+                |          myPosition(1)  = 0
+                |          myPosition(2)  = 0
+                |          myPosition(3)  = 0
+                |          myPosition(4)  = 0.707
+                |          myPosition(5)  = 0.707
+                |          myPosition(6)  = 0
+                |          myPosition(7)  = -0.707
+                |          myPosition(8)  = 0.707
+                |          'Translation vector (10,20,30)
+                |          myPosition(9)  = 10.000
+                |          myPosition(10) = 20.000
+                |          myPosition(11) = 30.000
+                |          myManikin.Body.GetItem("LLHeEye").ApplyPosition
+                |          myPosition
+
+        :param tuple pi_position_increment:
+        :return: None
+        :rtype: None
+        """
+        return self.swk_line_of_sight.ApplyPosition(pi_position_increment)
+        # # # # Autogenerated comment: 
+        # # some methods require a system service call as the methods expects a vb array object
+        # # passed to it and there is no way to do this directly with python. In those cases the following code
+        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
+        # # vba_function_name = 'apply_position'
+        # # vba_code = """
+        # # Public Function apply_position(swk_line_of_sight)
+        # #     Dim piPositionIncrement (2)
+        # #     swk_line_of_sight.ApplyPosition piPositionIncrement
+        # #     apply_position = piPositionIncrement
+        # # End Function
+        # # """
+
+        # # system_service = SystemService(self.application.SystemService)
+        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+
+    def get_dof(self, pi_dof_number: int) -> SWKDOF:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+                | o Func GetDOF(long piDOFNumber) As SWKDOF
+                | 
+                |     Returns a specific degree of freedom of the line of sight. A line of sight
+                |     always has exactly two degrees of freedom. and these are numbered 0 and
+                |     1.
+                | 
+                |     Parameters:
+                | 
+                |         piDOFNumber
+                |             The index of the DOF to retrieve. This parameter must be either 0
+                |             or 1.
+
+        :param int pi_dof_number:
+        :return: SWKDOF
+        :rtype: SWKDOF
+        """
+        return SWKDOF(self.swk_line_of_sight.GetDOF(pi_dof_number))
+
+    def set_position(self, pi_new_position: tuple) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+                | o Sub SetPosition(CATSafeArrayVariant piNewPosition)
+                | 
+                |     Sets a new absolute position for the line of sight.
+                | 
+                |     Parameters:
+                | 
+                |         piNewPosition
+                |             The new position to place the line of sight.
+                |             This array must contain 12 numbers, and msut be initialized using
+                |             the four columns of a transformation matrix. The first nine components
+                |             represent the rotation matrix.
+                |             The last three components represent the translation
+                |             vector.
+                | 
+                |     Example:
+                | 
+                |           This example sets the line of sight to a 45-degree rotation
+                |           around
+                |          the x axis and at a (10, 20, 30) translation from the
+                |          origin.
+                |
+                |          Dim myPosition(11)
+                |          'Rotation (45 degrees around the x axis)
+                |          myPosition(0)  = 1.000
+                |          myPosition(1)  = 0
+                |          myPosition(2)  = 0
+                |          myPosition(3)  = 0
+                |          myPosition(4)  = 0.707
+                |          myPosition(5)  = 0.707
+                |          myPosition(6)  = 0
+                |          myPosition(7)  = -0.707
+                |          myPosition(8)  = 0.707
+                |          'Translation vector (10,20,30)
+                |          myPosition(9)  = 10.000
+                |          myPosition(10) = 20.000
+                |          myPosition(11) = 30.000
+                |          myManikin.Body.GetItem("LLHeEye").SetPosition
+                |          myPosition
+
+        :param tuple pi_new_position:
+        :return: None
+        :rtype: None
+        """
+        return self.swk_line_of_sight.SetPosition(pi_new_position)
+        # # # # Autogenerated comment: 
+        # # some methods require a system service call as the methods expects a vb array object
+        # # passed to it and there is no way to do this directly with python. In those cases the following code
+        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
+        # # vba_function_name = 'set_position'
+        # # vba_code = """
+        # # Public Function set_position(swk_line_of_sight)
+        # #     Dim piNewPosition (2)
+        # #     swk_line_of_sight.SetPosition piNewPosition
+        # #     set_position = piNewPosition
+        # # End Function
+        # # """
+
+        # # system_service = SystemService(self.application.SystemService)
+        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+
+    def __repr__(self):
+        return f'SWKLineOfSight(name="{self.name}")'
