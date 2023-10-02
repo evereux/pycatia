@@ -1,4 +1,4 @@
-#! usr/bin/python3.6
+#! usr/bin/python3.9
 """
     Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
@@ -38,7 +38,7 @@ class AnnotatedViews(Collection):
     """
 
     def __init__(self, com_object):
-        super().__init__(com_object)
+        super().__init__(com_object, child_object=AnnotatedView)
         self.annotated_views = com_object
 
     def add(self) -> AnnotatedView:

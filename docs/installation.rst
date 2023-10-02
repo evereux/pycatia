@@ -11,7 +11,7 @@ To run pre-existing scripts windows builds are :ref:`available<windows_builds>`
 The Short Version
 -----------------
 
-This assumes python 3.6 or later is already installed and you know how and
+This assumes python 3.9 or later is already installed and you know how and
 when (all the time really) to use `virtual environments <https://docs.python.org/3/tutorial/venv.html>`_.
 
 To install from `pypi <https://pypi.org/>`_::
@@ -19,10 +19,10 @@ To install from `pypi <https://pypi.org/>`_::
     pip install pycatia
 
 
-To get the latest development version from github::
+To get the latest master version from github::
 
     git clone https://github.com/evereux/pycatia.git
-    # install pycatia requirement
+    # install the pycatia requirements
     pip install -r requirements\requirements.txt
 
  To upgrade your current installed version::
@@ -135,9 +135,25 @@ Confirm Successful Install
 
 .. warning::
 
-    Sometimes the COM object isn't registered properly when CATIA is installed.
-    If the above isn't working you may need to re-install.
+    Sometimes the COM object isn't registered properly when CATIA V5 is 
+    installed. If the above isn't working you may need to re-install CATIA V5 
+    or register the CATIA V5 COM server (see below).
 
 
+Registering the CATIA V5 COM server.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Typically, installating CATIA V5 will do this automatically as a part of the 
+installation process. However, sometimes that can fail.
+
+1. From the command prompt navigate to the installation folder that contains
+cnext.exe of the CATIA V5 installation you would like to register. For example::
+
+    cd <drive>\<CATIA_DIR>\<CATIA_VERSION>\code\bin
+
+
+2. run the following command after replacing <env_file> and <path_to_env_file>
+with the appropriate values::
+
+    cnext.exe /regserver -env <env_file> -direnv <path_to_env_file>
 

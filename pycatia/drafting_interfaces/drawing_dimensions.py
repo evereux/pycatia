@@ -1,4 +1,4 @@
-#! usr/bin/python3.6
+#! usr/bin/python3.9
 """
     Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-06-11 12:40:47.360445
 
@@ -189,7 +189,7 @@ class DrawingDimensions(Collection):
         :param int i_type_dim:
         :param tuple i_geom_elem:
         :param tuple i_pt_coord_elem:
-        :param CATVariant i_ldc_ref_elem:
+        :param cat_variant i_ldc_ref_elem:
         :param int i_ldc_ref_angle:
         :return: DrawingDimension
         :rtype: DrawingDimension

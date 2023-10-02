@@ -1,4 +1,4 @@
-#! usr/bin/python3.6
+#! usr/bin/python3.9
 """
     Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-09-25 14:34:21.593357
 
@@ -139,7 +139,7 @@ class FunctionalObjects(Collection):
                 |          Dim Obj2 As FunctionalObject
                 |          Set Obj2 = Desc.Object("Valve")
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: FunctionalObject
         :rtype: FunctionalObject
         """

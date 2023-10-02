@@ -1,4 +1,4 @@
-#! usr/bin/python3.6
+#! usr/bin/python3.9
 """
     Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-09-25 14:34:21.593357
 
@@ -99,7 +99,7 @@ class FunctAssociation(AnyObject):
                 | 
                 |     Retrieve the kind of linked object.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: str
         :rtype: str
         """
@@ -115,7 +115,7 @@ class FunctAssociation(AnyObject):
                 | 
                 |     Retrieve a linked object.
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: AnyObject
         :rtype: AnyObject
         """

@@ -1,4 +1,4 @@
-#! usr/bin/python3.6
+#! usr/bin/python3.9
 """
     Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-09-25 14:34:21.593357
 
@@ -95,7 +95,7 @@ class MaterialFamilies(Collection):
                 |      Dim MyMaterialFamily As MaterialFamily
                 |      Set MyMaterialFamily = MaterialFamilies.Item(6)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: MaterialFamily
         :rtype: MaterialFamily
         """
@@ -131,7 +131,7 @@ class MaterialFamilies(Collection):
                 |      Set MyDocument = Documents.Open(FileToOpen)
                 |      MyDocument.MaterialFamilies.Remove(2)
 
-        :param CATVariant i_index:
+        :param cat_variant i_index:
         :return: None
         :rtype: None
         """
