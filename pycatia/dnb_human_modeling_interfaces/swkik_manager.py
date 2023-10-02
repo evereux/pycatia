@@ -1,0 +1,252 @@
+#! usr/bin/python3.9
+"""
+    Module initially auto generated using V5Automation files from CATIA V5 R28 on 2020-09-25 14:34:21.593357
+
+    .. warning::
+        The notes denoted "CAA V5 Visual Basic Help" are to be used as reference only.
+        They are there as a guide as to how the visual basic / catscript functions work
+        and thus help debugging in pycatia.
+        
+"""
+from pycatia.dnb_human_modeling_interfaces.swk_manikin import SWKManikin
+from pycatia.dnb_human_modeling_interfaces.swkik_constraint import SWKIKConstraint
+from pycatia.system_interfaces.any_object import AnyObject
+
+
+class SWKIKManager(AnyObject):
+    """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
+
+                | System.IUnknown
+                |     System.IDispatch
+                |         System.CATBaseUnknown
+                |             System.CATBaseDispatch
+                |                 System.AnyObject
+                |                     SWKIKManager
+                | 
+                | This interface represents the IK manager of the manikin.
+                | The methods on this interface allow to move the manikin in inverse
+                | kinematics.
+    
+    """
+
+    def __init__(self, com_object):
+        super().__init__(com_object)
+        self.swkik_manager = com_object
+
+    @property
+    def behavior(self) -> str:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
+                | o Property Behavior() As CATBSTR
+                | 
+                |     Returns or sets the IK behaviors for this manikin. The string in this
+                |     property is the concatenation of the current IK behaviors, like
+                |     "Thoracic/Lumbar/Balance".
+
+        :return: str
+        :rtype: str
+        """
+
+        return self.swkik_manager.Behavior
+
+    @behavior.setter
+    def behavior(self, value: str):
+        """
+        :param str value:
+        """
+
+        self.swkik_manager.Behavior = value
+
+    @property
+    def manikin(self) -> SWKManikin:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
+                | o Property Manikin() As SWKManikin (Read Only)
+                | 
+                |     Returns the manikin which owns this IK manager.
+
+        :return: SWKManikin
+        :rtype: SWKManikin
+        """
+
+        return SWKManikin(self.swkik_manager.Manikin)
+
+    @property
+    def number_of_constraints(self) -> int:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
+                | o Property NumberOfConstraints() As long (Read Only)
+                | 
+                |     Returns the total number of constraints on the manikin.
+
+        :return: int
+        :rtype: int
+        """
+
+        return self.swkik_manager.NumberOfConstraints
+
+    def add_constraint(self, pi_end_effector: str) -> SWKIKConstraint:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+                | o Func AddConstraint(CATBSTR piEndEffector) As
+                | SWKIKConstraint
+                | 
+                |     Add a constraint with the given end effector.
+                | 
+                |     Parameters:
+                | 
+                |         piEndEffector
+                |             The short name of the last segment (the end of the chain, i.e. the
+                |             end effector). 
+                |         poConstraint
+                |             The constraint created.
+
+        :param str pi_end_effector:
+        :return: SWKIKConstraint
+        :rtype: SWKIKConstraint
+        """
+        return SWKIKConstraint(self.swkik_manager.AddConstraint(pi_end_effector))
+
+    def add_constraint_from(self, pi_constraint_from: SWKIKConstraint, po_created_constraint: SWKIKConstraint) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+                | o Sub AddConstraintFrom(SWKIKConstraint piConstraintFrom,
+                | SWKIKConstraint poCreatedConstraint)
+                | 
+                |     Add a new constraint identical to the one given.
+                | 
+                |     Parameters:
+                | 
+                |         piConstraintFrom
+                |             The constraint to copy. 
+                |         poCreatedConstraint
+                |             The new constraint
+
+        :param SWKIKConstraint pi_constraint_from:
+        :param SWKIKConstraint po_created_constraint:
+        :return: None
+        :rtype: None
+        """
+        return self.swkik_manager.AddConstraintFrom(pi_constraint_from.com_object, po_created_constraint.com_object)
+        # # # # Autogenerated comment: 
+        # # some methods require a system service call as the methods expects a vb array object
+        # # passed to it and there is no way to do this directly with python. In those cases the following code
+        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
+        # # vba_function_name = 'add_constraint_from'
+        # # vba_code = """
+        # # Public Function add_constraint_from(swkik_manager)
+        # #     Dim piConstraintFrom (2)
+        # #     swkik_manager.AddConstraintFrom piConstraintFrom
+        # #     add_constraint_from = piConstraintFrom
+        # # End Function
+        # # """
+
+        # # system_service = SystemService(self.application.SystemService)
+        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+
+    def get_constraint(self, pi_index: int) -> SWKIKConstraint:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+                | o Func GetConstraint(long piIndex) As SWKIKConstraint
+                | 
+                |     Returns the constraint at index piIndex. First element is at index 0.
+
+        :param int pi_index:
+        :return: SWKIKConstraint
+        :rtype: SWKIKConstraint
+        """
+        return SWKIKConstraint(self.swkik_manager.GetConstraint(pi_index))
+
+    def remove_all_constraints(self) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+                | o Sub RemoveAllConstraints()
+                | 
+                |     Remove all existing constraints on the manikin.
+
+        :return: None
+        :rtype: None
+        """
+        return self.swkik_manager.RemoveAllConstraints()
+
+    def remove_constraint(self, pi_constraint_to_remove: SWKIKConstraint) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+                | o Sub RemoveConstraint(SWKIKConstraint piConstraintToRemove)
+                | 
+                |     Remove the given constraint.
+                | 
+                |     Parameters:
+                | 
+                |         piConstraintToRemove
+                |             The constraint to remove.
+
+        :param SWKIKConstraint pi_constraint_to_remove:
+        :return: None
+        :rtype: None
+        """
+        return self.swkik_manager.RemoveConstraint(pi_constraint_to_remove.com_object)
+        # # # # Autogenerated comment: 
+        # # some methods require a system service call as the methods expects a vb array object
+        # # passed to it and there is no way to do this directly with python. In those cases the following code
+        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
+        # # vba_function_name = 'remove_constraint'
+        # # vba_code = """
+        # # Public Function remove_constraint(swkik_manager)
+        # #     Dim piConstraintToRemove (2)
+        # #     swkik_manager.RemoveConstraint piConstraintToRemove
+        # #     remove_constraint = piConstraintToRemove
+        # # End Function
+        # # """
+
+        # # system_service = SystemService(self.application.SystemService)
+        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+
+    def resolve(self) -> None:
+        """
+        .. note::
+            :class: toggle
+
+            CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
+                | o Sub Resolve()
+                | 
+                |     Launch the IK solver to minimize the potential functions
+                |     of
+                |     the constraints (i.e. reach all defined targets).
+                |     Will resolve the constraints for this manikin only.
+
+        :return: None
+        :rtype: None
+        """
+        return self.swkik_manager.Resolve()
+
+    def __repr__(self):
+        return f'SWKikManager(name="{self.name}")'

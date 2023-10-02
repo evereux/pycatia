@@ -97,7 +97,7 @@ class HybridShapeLineBisecting(Line):
         :param Reference reference_element:
         """
 
-        self.hybrid_shape_line_bisecting.Elem1 = reference_element
+        self.hybrid_shape_line_bisecting.Elem1 = reference_element.com_object
 
     @property
     def elem2(self) -> Reference:
