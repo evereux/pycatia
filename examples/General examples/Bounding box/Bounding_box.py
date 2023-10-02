@@ -39,7 +39,7 @@ sys.path.insert(0, os.path.abspath('..\\pycatia'))
 
 def offset_bounding_box() -> tuple():
     """
-
+    
 
     Returns
     -------
@@ -47,7 +47,16 @@ def offset_bounding_box() -> tuple():
         DESCRIPTION.
 
     """
-    return (0, 0)
+    #TODO
+    # добавить проверку на ввод данных и данные по умолчанию
+    res_x_max=caa.input_box('Input offset Xmax','Input offsets',20)
+    res_x_min=caa.input_box('Input offset Xmin','Input offsets',20)
+    res_y_max=caa.input_box('Input offset Ymax','Input offsets',20)
+    res_y_min=caa.input_box('Input offset Ymin','Input offsets',20)
+    res_z_max=caa.input_box('Input offset Zmax','Input offsets',20)
+    res_z_min=caa.input_box('Input offset Zmin','Input offsets',20)
+        
+    return (res_x_max,res_x_min,res_y_max,res_y_min,res_z_max,res_z_min)
 
 
 def axis_references(input_part: Part, input_axis: AxisSystem) -> tuple:
@@ -139,17 +148,16 @@ except CATIAApplicationException as e:
 
 # Input offset to bounding box
 
-caa.input_box('1', '2', '3')
+offsets=offset_bounding_box()
 
+Offset_X_min = offsets[0]
+Offset_X_max = offsets[1]
 
-Offset_X_min = 10
-Offset_X_max = 10
+Offset_Y_min = offsets[2]
+Offset_Y_max = offsets[3]
 
-Offset_Y_min = 10
-Offset_Y_max = 10
-
-Offset_Z_min = 10
-Offset_Z_max = 10
+Offset_Z_min = offsets[4]
+Offset_Z_max = offsets[5]
 
 message_promt = ('Creating Bounding box with offset:\n' +
                  f'Xmin={Offset_X_min}\nXmax={Offset_X_max}\n' +
