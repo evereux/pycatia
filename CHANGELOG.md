@@ -5,6 +5,7 @@
 * Added human modelling classes SWKHmiWorkbench and SWKHumanCatalog. Please note these are not documented in the
   CATIA V5 Basic Help file. Example of usage also added.
 * Added new class method Application.input_box(). @ptm-tm
+* fixed test issue with cat materials where catia env has multiple start-up paths.
 
 ## 0.6.0
 
