@@ -14,6 +14,8 @@ Index
 
 :ref:`DRAFTING EXAMPLES<Example Drafting>`
 
+:ref:`HUMAN MODELLING EXAMPLES<Example Human Modelling>`
+
 :ref:`HYBRID BODIES EXAMPLES<Example Hybrid Bodies>`
 
 :ref:`HYBRID SHAPE FACTORY EXAMPLES<Example Hybrid Shape Factory>`
@@ -68,6 +70,7 @@ pathlib.Path module.
 `Asssembly Convetor - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__assembly_convetor__001.py>`_
 
 
+
 .. _Example Bom Custom:
 
 BOM CUSTOM EXAMPLES
@@ -79,6 +82,7 @@ BOM Custom - Example 1
 Write the contents of a product to a html file.
 
 `BOM Custom - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__bom_custom_001.py>`_
+
 
 
 .. _Example Constraints:
@@ -93,6 +97,7 @@ Fix the first Sub Product in Product using constraints. The Sketch examples
 also show further usage of constraints.
 
 `Constraints - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__constraints_001.py>`_
+
 
 
 .. _Example Document:
@@ -126,6 +131,7 @@ Close a catia file.
 `Document - 003 <https://github.com/evereux/pycatia/blob/master/examples/example__document__003.py>`_
 
 
+
 .. _Example Drafting:
 
 DRAFTING EXAMPLES
@@ -142,6 +148,21 @@ Drafting: create a border template in the background view of the currently opene
 `Drafting - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__drafting__001.py>`_
 
 
+
+.. _Example Human Modelling:
+
+HUMAN MODELLING EXAMPLES
+------------------------
+
+Human Modelling - Example 1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Add a female manikin to the product in the sitting position.
+
+`Human Modelling - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__human_modelling__001.py>`_
+
+
+
 .. _Example Hybrid Bodies:
 
 HYBRID BODIES EXAMPLES
@@ -153,6 +174,7 @@ Hybrid Bodies - Example 1
 Make body in work object and intersect with another body.
 
 `Hybrid Bodies - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__hybrid_bodies__001.py>`_
+
 
 
 .. _Example Hybrid Shape Factory:
@@ -215,6 +237,7 @@ origin ZX plane.
 `Hybrid Shape Factory - 005 <https://github.com/evereux/pycatia/blob/master/examples/example__hybrid_shape_factory__005.py>`_
 
 
+
 .. _Example Hybrid Shape Factory & Shape Factory:
 
 HYBRID SHAPE FACTORY & SHAPE FACTORY EXAMPLES
@@ -226,6 +249,7 @@ Hybrid Shape Factory & Shape Factory - Example 1
 3D Points, Spline, Extrusion and Generate Thickness.
 
 `Hybrid Shape Factory & Shape Factory - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__hybrid_shape_factory__shape_factory__001.py>`_
+
 
 
 .. _Example Hybrid Sketch Factory & Shape Factory:
@@ -242,6 +266,7 @@ Creates a square in a sketch and fully constrains it. Sketch then used to pad.
 `Hybrid Sketch & Shape Factory - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__hybrid_sketch__shape_factory__001.py>`_
 
 
+
 .. _Example License Settings:
 
 LICENSE SETTINGS EXAMPLES
@@ -255,6 +280,7 @@ Basic license checking.
 `License Settings - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__license_settings__001.py>`_
 
 
+
 .. _Example Logging:
 
 LOGGING EXAMPLES
@@ -266,6 +292,7 @@ Logging - Example 1
 Logging.
 
 `Logging - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__logging__001.py>`_
+
 
 
 .. _Example Material Interfaces:
@@ -288,6 +315,7 @@ Creates a new product and applies the material to it.
 `Material - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__material__001.py>`_
 
 
+
 .. _Example Message Box:
 
 MESSAGE BOX EXAMPLES
@@ -299,6 +327,7 @@ Message Box - Example 1
 This creates a message box with the buttons abort, retry ignore and displays the Warning Query icon.
 
 `Message Box - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__message_box__001.py>`_
+
 
 
 .. _Example Parameters:
@@ -315,6 +344,7 @@ each parameter along with its name, value and its associated parameter set.
 # todo: need to create a source part to support this example.
 
 `Parameters - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__parameters__001.py>`_
+
 
 
 .. _Example Product:
@@ -377,6 +407,7 @@ Get the Inertia of a product using product.get_technical object and print it's m
 `Product - 006 <https://github.com/evereux/pycatia/blob/master/examples/example__product__006.py>`_
 
 
+
 .. _Example Selection:
 
 SELECTION EXAMPLES
@@ -428,6 +459,7 @@ Mirror the main body of the part using shape_factory.add_new_symmetry_2.
 `Shape Factory - 002 <https://github.com/evereux/pycatia/blob/master/examples/example__shape_factory__002.py>`_
 
 
+
 .. _Example Space Analysis:
 
 
@@ -458,10 +490,11 @@ Find all points in the CATPart and print to console and export to csv.
 `Example 3 <https://github.com/evereux/pycatia/blob/master/examples/example__space_analysis__003.py>`_
 
 
-SPECS AND GEOMETRY WINDOW EXAMPLES
-----------------------------------
 
 .. _Example Specs And Geometry Window:
+
+SPECS AND GEOMETRY WINDOW EXAMPLES
+----------------------------------
 
 Specs And Geometry Window - Example 1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -473,6 +506,7 @@ The tree is turned off and the background turned white for the screen
 capture and then turned back on.
 
 `Specs And Geometry Window - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__specs_and_geom_window__001.py>`_
+
 
 
 .. _Example Visual Properties:
