@@ -1786,9 +1786,9 @@ cat_text_property = (
     "catBorder",  #
     "catAlignment",  # Alignment of the piece of text.
     "catCharRatio",  # Ratio between character height and width.
-                     # The value is a percentage of the font size and corresponds to the ratio height by width.
+    # The value is a percentage of the font size and corresponds to the ratio height by width.
     "catCharSpacing",  # Space between each character.
-                       # The value is a percentage of the font size (maybe a negative value).
+    # The value is a percentage of the font size (maybe a negative value).
     "catKerning",
 )
 
@@ -2408,6 +2408,11 @@ stabilization_type = (
     "NONE",
     "DISSIPATION",
     "FACTOR",
+)
+
+swk_anthro_sex = (
+    "Male",
+    "Female"
 )
 
 swk_posture_spec = (
