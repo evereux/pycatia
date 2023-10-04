@@ -1188,6 +1188,37 @@ class Application(AnyObject):
             [message_text, buttons, title]
         )
 
+    def input_box(
+            self,
+            prompt: str,
+            title: str = '',
+            default: str = ''
+    ) -> str:
+        """
+        Display InputBox in catia.
+        Default position is in the center screen.
+
+        More information on
+        https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/inputbox-function
+
+        :param str prompt: Required. String expression displayed as the message in the dialog box.
+        :param str title: Optional. The default is ''. String expression displayed in the title bar of the dialog box.
+        :param str default: Optional. The default is ''. String expression displayed in the text box as the default
+                                      response if no other input is provided. If you omit default, the text box is
+                                      displayed empty.
+        :returns: str
+        """
+        f_name = "input_box"
+        i_box = f"Public Function {f_name}(prompt,title,default)\n" \
+                f"    {f_name} = InputBox(prompt,title,default)\n" \
+                "End Function"
+        return self.system_service.evaluate(
+            i_box,
+            cat_script_language.index('CATVBScriptLanguage'),
+            f_name,
+            [prompt, title, default]
+        )
+
     def quit(self) -> None:
         """
         .. note::
