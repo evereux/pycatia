@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.1
+
+* Added human modelling classes SWKHmiWorkbench and SWKHumanCatalog. Please note these are not documented in the
+  CATIA V5 Basic Help file. Example of usage also added.
+
 ## 0.6.0
 
 * Removed deprecated method Product.get_products() use Product.products instead.
