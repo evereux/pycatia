@@ -19,7 +19,7 @@ class SWKHumanCatalog(AnyObject):
     @property
     def active_family(self) -> str:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -35,7 +35,7 @@ class SWKHumanCatalog(AnyObject):
     @property
     def is_dirty(self) -> bool:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -52,7 +52,7 @@ class SWKHumanCatalog(AnyObject):
     @property
     def nb_items(self) -> int:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -69,7 +69,7 @@ class SWKHumanCatalog(AnyObject):
     @property
     def number_of_families(self) -> int:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -85,7 +85,7 @@ class SWKHumanCatalog(AnyObject):
 
     def add_item_from_hso(self, pi_description: str) -> None:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -101,7 +101,7 @@ class SWKHumanCatalog(AnyObject):
 
     def add_items_from_swl_file(self, pi_file_path: Path) -> None:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -117,7 +117,7 @@ class SWKHumanCatalog(AnyObject):
 
     def apply_item(self, pi_index: int) -> None:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -133,7 +133,7 @@ class SWKHumanCatalog(AnyObject):
 
     def empty(self) -> None:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -148,7 +148,7 @@ class SWKHumanCatalog(AnyObject):
 
     def get_attach_and_cst_infos(self) -> cat_variant:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -163,7 +163,7 @@ class SWKHumanCatalog(AnyObject):
 
     def get_family_name(self, pi_index: int) -> str:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -179,7 +179,7 @@ class SWKHumanCatalog(AnyObject):
 
     def get_item_date(self, pi_index: int) -> str:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -195,7 +195,7 @@ class SWKHumanCatalog(AnyObject):
 
     def get_item_description(self, pi_index: int) -> str:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -211,7 +211,7 @@ class SWKHumanCatalog(AnyObject):
 
     def get_item_type(self, pi_index: int) -> str:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -227,7 +227,7 @@ class SWKHumanCatalog(AnyObject):
 
     def get_nb_attach_and_cst(self, pi_index: int) -> int:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -243,7 +243,7 @@ class SWKHumanCatalog(AnyObject):
 
     def reload(self) -> None:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -258,7 +258,7 @@ class SWKHumanCatalog(AnyObject):
 
     def remove_item(self, pi_index: int) -> None:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -274,7 +274,7 @@ class SWKHumanCatalog(AnyObject):
 
     def save(self) -> None:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -289,7 +289,7 @@ class SWKHumanCatalog(AnyObject):
 
     def set_attach_or_cst_object(self, pi_description_index: int, pi_item_index: int, pi_reference: Reference) -> None:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
