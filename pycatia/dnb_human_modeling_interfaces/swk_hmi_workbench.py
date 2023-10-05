@@ -19,7 +19,7 @@ class SWKHmiWorkbench(AnyObject):
 
     def add_manikin_for_clash(self) -> SWKManikin:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -34,7 +34,7 @@ class SWKHmiWorkbench(AnyObject):
 
     def clean_clash_results(self) -> None:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -46,7 +46,7 @@ class SWKHmiWorkbench(AnyObject):
 
     def compute_clash(self) -> int:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -58,7 +58,7 @@ class SWKHmiWorkbench(AnyObject):
 
     def create_color_from_rgb(self, pi_red: int, pi_green: int, pi_blue: int) -> int:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -82,7 +82,7 @@ class SWKHmiWorkbench(AnyObject):
             pi_population: int
     ) -> SWKManikin:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -110,7 +110,7 @@ class SWKHmiWorkbench(AnyObject):
             pi_population: int
     ) -> SWKManikin:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -137,7 +137,7 @@ class SWKHmiWorkbench(AnyObject):
             pi_percentile: float,
             pi_population: int) -> SWKManikin:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -159,7 +159,7 @@ class SWKHmiWorkbench(AnyObject):
 
     def new_human_catalog(self) -> SWKHumanCatalog:
         """
-            .. note:::
+            .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -174,7 +174,7 @@ class SWKHmiWorkbench(AnyObject):
 
     def open_human_catalog(self, pi_path_file: Path, pi_doc_env: str) -> SWKHumanCatalog:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -191,7 +191,7 @@ class SWKHmiWorkbench(AnyObject):
 
     def open_writable_human_catalog(self, pi_path_file: Path, pi_doc_env: str) -> SWKHumanCatalog:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -208,7 +208,7 @@ class SWKHmiWorkbench(AnyObject):
 
     def reset_clash_list(self) -> None:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -223,7 +223,7 @@ class SWKHmiWorkbench(AnyObject):
 
     def set_clash_mode(self, pi_clash_mode) -> int:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -239,7 +239,7 @@ class SWKHmiWorkbench(AnyObject):
 
     def start_command(self, pi_command_header_name: str) -> int:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -255,7 +255,7 @@ class SWKHmiWorkbench(AnyObject):
 
     def stop_command(self, pi_command_header_name: str) -> None:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -271,7 +271,7 @@ class SWKHmiWorkbench(AnyObject):
 
     def update(self) -> None:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
@@ -286,7 +286,7 @@ class SWKHmiWorkbench(AnyObject):
 
     def update_ppr_tree(self) -> None:
         """
-        .. note:::
+        .. note::
             :class: toggle
 
             Microsoft Visual Basic Object Browser
