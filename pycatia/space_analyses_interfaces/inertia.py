@@ -10,7 +10,6 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.system_interfaces.system_service import SystemService
 
 
 class Inertia(AnyObject):
