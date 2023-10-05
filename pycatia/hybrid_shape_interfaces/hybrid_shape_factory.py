@@ -112,6 +112,7 @@ from pycatia.hybrid_shape_interfaces.hybrid_shape_wrap_curve import HybridShapeW
 from pycatia.hybrid_shape_interfaces.hybrid_shape_wrap_surface import HybridShapeWrapSurface
 from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.factory import Factory
+from pycatia.scripts.vba import vba_nothing
 
 
 class HybridShapeFactory(Factory):
@@ -4892,16 +4893,17 @@ class HybridShapeFactory(Factory):
         :param float i_end_meridian_angle:
         :return: HybridShapeSphere
         :rtype: HybridShapeSphere
-
-        It's possible within VBA / CATScript to provide a Nothing argument for the axis system if you ant to use the
-        absolute AxisSystem of the part. I haven't been able to figure out a workaround for this issue so an AxisSystem
-        will need to be provided.
-        See https://github.com/evereux/pycatia/issues/130 for more details.
         """
+
+        if type(i_axis) is str:
+            i_axis = self.application.system_service.evaluate(vba_nothing, 0, 'N', [])
+        else:
+            i_axis = i_axis.com_object
+
         return HybridShapeSphere(
             self.hybrid_shape_factory.AddNewSphere(
                 i_center.com_object,
-                i_axis.com_object,
+                i_axis,
                 i_radius,
                 i_begin_parallel_angle,
                 i_end_parallel_angle,
