@@ -6,6 +6,7 @@
   CATIA V5 Basic Help file. Example of usage also added.
 * Added new class method Application.input_box(). @ptm-tm
 * fixed test issue with cat materials where catia env has multiple start-up paths.
+* fixed issue with HybridShapeFactory.add_new_sphere for cases where an axis isn't defined.
 
 ## 0.6.0
 
