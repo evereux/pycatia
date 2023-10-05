@@ -21,14 +21,15 @@
 ##########################################################
 # insert syspath to project folder so examples can be run.
 # for development purposes.
-from pycatia import catia
-from pycatia.mec_mod_interfaces.part import Part
 import os
 import sys
 
 sys.path.insert(0, os.path.abspath('..\\pycatia'))
 ##########################################################
 
+from pycatia import catia
+from pycatia.mec_mod_interfaces.part import Part
+from pycatia.space_analyses_interfaces.inertia import Inertia
 
 __author__ = '[ptm] by plm-forum.ru'
 __status__ = 'alpha'
@@ -36,9 +37,9 @@ __status__ = 'alpha'
 # initialise the catia automation application
 caa = catia()
 documents = caa.documents
-
 # get the active document
 document = caa.active_document
+# for IDE autocompletition
 part = Part(document.part.com_object)
 part.update()
 
@@ -57,14 +58,17 @@ spa_workbench = document.spa_workbench()
 reference = part.create_reference_from_object(part)
 measurable = spa_workbench.get_measurable(reference)
 spa_i = spa_workbench.inertias
-interia = spa_i.add(body)
+
+#interia = spa_i.add(body)
+# for IDE autocompletition
+interia=Inertia(spa_i.add(body).com_object)
 
 density = interia.density
 print(f'old density={density}')
 # set new density to this interia
 # interia.density=7800
-# print(f'New density=7800')
-# print(f'Density={interia.density}')
+# print(f'New density=7800\n'
+#       f'Density={interia.density}')
 
 print(f'Mass={interia.mass}')
 
