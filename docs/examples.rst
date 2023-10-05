@@ -237,6 +237,17 @@ origin ZX plane.
 `Hybrid Shape Factory - 005 <https://github.com/evereux/pycatia/blob/master/examples/example__hybrid_shape_factory__005.py>`_
 
 
+Hybrid Shape Factory - Example 6
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+How to add a new sphere when a reference axis system isn't required.
+
+Requirements: A geometrical set named "ConstructionGeometry". A point within the ConstructionGeometry named "Point.1".
+
+`Hybrid Shape Factory - 006 <https://github.com/evereux/pycatia/blob/master/examples/example__hybrid_shape_factory__006.py>`_
+
+
+
 
 .. _Example Hybrid Shape Factory & Shape Factory:
 
