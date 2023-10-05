@@ -226,7 +226,7 @@ class HybridShapeSphere(HybridShape):
         return Angle(self.hybrid_shape_sphere.EndParallelAngle)
 
     @property
-    def limitation(self) -> bool:
+    def limitation(self) -> int:
         """
         .. note::
             :class: toggle
@@ -241,16 +241,16 @@ class HybridShapeSphere(HybridShape):
                 | 
                 |     Example:
 
-        :return: False
-        :rtype: False
+        :return: int
+        :rtype: int
         """
 
         return self.hybrid_shape_sphere.Limitation
 
     @limitation.setter
-    def limitation(self, value: bool):
+    def limitation(self, value: int):
         """
-        :param bool value:
+        :param int value:
         """
 
         self.hybrid_shape_sphere.Limitation = value
