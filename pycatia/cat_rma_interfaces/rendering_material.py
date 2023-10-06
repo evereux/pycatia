@@ -9,8 +9,8 @@
         
 """
 
-from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.exception_handling.exceptions import CATIAApplicationException
+from pycatia.system_interfaces.any_object import AnyObject
 
 
 class RenderingMaterial(AnyObject):
@@ -63,7 +63,7 @@ class RenderingMaterial(AnyObject):
         max_ = 8
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.AdaptiveCoeff = value
 
@@ -94,7 +94,7 @@ class RenderingMaterial(AnyObject):
         max_ = 1
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.AmbientCoefficient = value
 
@@ -125,7 +125,7 @@ class RenderingMaterial(AnyObject):
         max_ = 10
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.Bump = value
 
@@ -156,7 +156,7 @@ class RenderingMaterial(AnyObject):
         max_ = 100
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.ChessboardJointHeight = value
 
@@ -187,7 +187,7 @@ class RenderingMaterial(AnyObject):
         max_ = 100
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.ChessboardJointWidth = value
 
@@ -220,7 +220,7 @@ class RenderingMaterial(AnyObject):
         max_ = 0.5
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.ChessboardOffset = value
 
@@ -252,7 +252,7 @@ class RenderingMaterial(AnyObject):
         max_ = 100
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.ChessboardTileHeight = value
 
@@ -284,7 +284,7 @@ class RenderingMaterial(AnyObject):
         max_ = 100
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.ChessboardTileWidth = value
 
@@ -344,7 +344,7 @@ class RenderingMaterial(AnyObject):
         max_ = 1
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.DiffuseCoefficient = value
 
@@ -460,7 +460,7 @@ class RenderingMaterial(AnyObject):
         max_ = 5
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.MappingType = value
 
@@ -492,7 +492,7 @@ class RenderingMaterial(AnyObject):
         max_ = 360
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.Orientation = value
 
@@ -603,7 +603,7 @@ class RenderingMaterial(AnyObject):
         max_ = 1
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.ReflectionHeight = value
 
@@ -636,7 +636,7 @@ class RenderingMaterial(AnyObject):
         max_ = 1
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.ReflectionLength = value
 
@@ -675,7 +675,7 @@ class RenderingMaterial(AnyObject):
         max_ = 4
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.ReflectionMode = value
 
@@ -707,7 +707,7 @@ class RenderingMaterial(AnyObject):
         max_ = 1
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.ReflectivityCoefficient = value
 
@@ -739,7 +739,7 @@ class RenderingMaterial(AnyObject):
         max_ = 2
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.RefractionCoefficient = value
 
@@ -823,7 +823,7 @@ class RenderingMaterial(AnyObject):
         max_ = 100
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.ScaleU = value
 
@@ -855,7 +855,7 @@ class RenderingMaterial(AnyObject):
         max_ = 100
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.ScaleV = value
 
@@ -887,7 +887,7 @@ class RenderingMaterial(AnyObject):
         max_ = 1
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.SpecularCoefficient = value
 
@@ -919,7 +919,7 @@ class RenderingMaterial(AnyObject):
         max_ = 1
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.SpecularExponent = value
 
@@ -951,7 +951,7 @@ class RenderingMaterial(AnyObject):
         max_ = 1
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.TextureAmplitude = value
 
@@ -983,7 +983,7 @@ class RenderingMaterial(AnyObject):
         max_ = 10
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.TextureComplexity = value
 
@@ -1015,7 +1015,7 @@ class RenderingMaterial(AnyObject):
         max_ = 2
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.TextureGain = value
 
@@ -1074,7 +1074,7 @@ class RenderingMaterial(AnyObject):
         max_ = 10
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.TexturePerturbation = value
 
@@ -1141,7 +1141,7 @@ class RenderingMaterial(AnyObject):
         max_ = 6
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.TextureType = value
 
@@ -1174,7 +1174,7 @@ class RenderingMaterial(AnyObject):
         max_ = 10
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.TextureVeinAmplitude = value
 
@@ -1206,11 +1206,13 @@ class RenderingMaterial(AnyObject):
         max_ = 1
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.TransparencyCoefficient = value
 
-    def get_3d_texture_color(self, i_color_index: int, o_3d_texture_color: tuple) -> None:
+    def get_3d_texture_color(
+        self, i_color_index: int, o_3d_texture_color: tuple
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -1240,7 +1242,9 @@ class RenderingMaterial(AnyObject):
         :return: None
         :rtype: None
         """
-        return self.rendering_material.Get3DTextureColor(i_color_index, o_3d_texture_color)
+        return self.rendering_material.Get3DTextureColor(
+            i_color_index, o_3d_texture_color
+        )
         # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1257,7 +1261,9 @@ class RenderingMaterial(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def get_3d_texture_color_coefficient(self, i_color_index: int, o_3d_texture_color_coefficient: float) -> None:
+    def get_3d_texture_color_coefficient(
+        self, i_color_index: int, o_3d_texture_color_coefficient: float
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -1565,7 +1571,9 @@ class RenderingMaterial(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def put3_d_texture_color(self, i_color_index: int, i3_d_texture_color: tuple) -> None:
+    def put3_d_texture_color(
+        self, i_color_index: int, i3_d_texture_color: tuple
+    ) -> None:
         """
         .. note::
             :class: toggle
@@ -1594,7 +1602,9 @@ class RenderingMaterial(AnyObject):
         :return: None
         :rtype: None
         """
-        return self.rendering_material.Put3DTextureColor(i_color_index, i3_d_texture_color)
+        return self.rendering_material.Put3DTextureColor(
+            i_color_index, i3_d_texture_color
+        )
         # # # # Autogenerated comment:
         # # some methods require a system service call as the methods expects a vb array object
         # # passed to it and there is no way to do this directly with python. In those cases the following code
@@ -1611,7 +1621,9 @@ class RenderingMaterial(AnyObject):
         # # system_service = SystemService(self.application.SystemService)
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
-    def put_3d_texture_color_coefficient(self, i_color_index: int, i_3d_texture_color_coefficient: float) -> None:
+    def put_3d_texture_color_coefficient(
+        self, i_color_index: int, i_3d_texture_color_coefficient: float
+    ) -> None:
         """
         .. note::
             :class: toggle
