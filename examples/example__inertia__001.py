@@ -21,14 +21,15 @@
 ##########################################################
 # insert syspath to project folder so examples can be run.
 # for development purposes.
-from pycatia import catia
-from pycatia.mec_mod_interfaces.part import Part
 import os
 import sys
 
 sys.path.insert(0, os.path.abspath('..\\pycatia'))
 ##########################################################
 
+from pycatia import catia
+from pycatia.mec_mod_interfaces.part import Part
+from pycatia.space_analyses_interfaces.inertia import Inertia
 
 __author__ = '[ptm] by plm-forum.ru'
 __status__ = 'alpha'
@@ -57,32 +58,34 @@ spa_workbench = document.spa_workbench()
 reference = part.create_reference_from_object(part)
 measurable = spa_workbench.get_measurable(reference)
 spa_i = spa_workbench.inertias
-interia = spa_i.add(body)
+inertia = Inertia(spa_i.add(body).com_object)
 
-density = interia.density
-print(f'old density={density}')
-# set new density to this interia
-# interia.density=7800
+print(f'Density={inertia.density}\n\n')
+# set new density to this inertia
+# inertia.density=7800
 # print(f'New density=7800')
-# print(f'Density={interia.density}')
+# print(f'Density={inertia.density}')
 
-print(f'Mass={interia.mass}')
+print(f'Mass={inertia.mass}\n\n')
 
+inertia_matrix = inertia.get_inertia_matrix()
+print('--------------\n'
+      'Interia Matrix\n'
+      '--------------\n'
+      f'Ixx={inertia_matrix[0]}\n'
+      f'Ixy={inertia_matrix[1]}\n'
+      f'Ixz={inertia_matrix[2]}\n'
+      f'Iyx={inertia_matrix[3]}\n'
+      f'Iyy={inertia_matrix[4]}\n'
+      f'Iyz={inertia_matrix[5]}\n'
+      f'Izx={inertia_matrix[6]}\n'
+      f'Izy={inertia_matrix[7]}\n'
+      f'Izz={inertia_matrix[8]}\n')
 
-interia_matrix = interia.get_inertia_matrix()
-print('Interia matrix\n'
-      f'Ixx={interia_matrix[0]}\n'
-      f'Ixy={interia_matrix[1]}\n'
-      f'Ixz={interia_matrix[2]}\n'
-      f'Iyx={interia_matrix[3]}\n'
-      f'Iyy={interia_matrix[4]}\n'
-      f'Iyz={interia_matrix[5]}\n'
-      f'Izx={interia_matrix[6]}\n'
-      f'Izy={interia_matrix[7]}\n'
-      f'Izz={interia_matrix[8]}')
-
-principal_axis = interia.get_principal_axes()
-print('Principal axis\n'
+principal_axis = inertia.get_principal_axes()
+print('--------------\n'
+      'Principal Axis\n'
+      '--------------\n'
       f'A1x={principal_axis[0]}\n'
       f'A2x={principal_axis[1]}\n'
       f'A3x={principal_axis[2]}\n'
@@ -91,16 +94,20 @@ print('Principal axis\n'
       f'A3y={principal_axis[5]}\n'
       f'A1z={principal_axis[6]}\n'
       f'A2z={principal_axis[7]}\n'
-      f'A3z={principal_axis[8]}')
+      f'A3z={principal_axis[8]}\n')
 
-principal_moments = interia.get_principal_moments()
-print('Principal moments\n'
+principal_moments = inertia.get_principal_moments()
+print('-----------------\n'
+      'Principal Moments\n'
+      '-----------------\n'
       f'M1={principal_moments[0]}\n'
       f'M2={principal_moments[1]}\n'
-      f'M3={principal_moments[2]}')
+      f'M3={principal_moments[2]}\n')
 
-GOC = interia.get_cog_position()
-print('center of gravity\n'
-      f'X={GOC[0]}\n'
-      f'Y={GOC[1]}\n'
-      f'Z={GOC[2]}')
+cog = inertia.get_cog_position()
+print('-----------------\n'
+      'Center Of Gravity\n'
+      '-----------------\n'
+      f'X={cog[0]}\n'
+      f'Y={cog[1]}\n'
+      f'Z={cog[2]}')
