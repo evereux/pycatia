@@ -1210,9 +1210,7 @@ class RenderingMaterial(AnyObject):
 
         self.rendering_material.TransparencyCoefficient = value
 
-    def get_3d_texture_color(
-        self, i_color_index: int, o_3d_texture_color: tuple
-    ) -> None:
+    def get_3d_texture_color(self, i_color_index: int) -> tuple[int, int, int]:
         """
         .. note::
             :class: toggle
@@ -1242,13 +1240,22 @@ class RenderingMaterial(AnyObject):
         :return: None
         :rtype: None
         """
-        return self.rendering_material.Get3DTextureColor(
-            i_color_index, o_3d_texture_color
+        vba_function_name = "get_3d_texture_color"
+        vba_code = f"""
+        Public Function {vba_function_name}(comObject, iColorIndex)
+            Dim o3DTextureColor(3) As CATSafeArrayVariant
+            comObject.Get3DTextureColor iColorIndex, o3DTextureColor
+            {vba_function_name} = o3DTextureColor
+        End Function
+        """
+        value = self.application.system_service.evaluate(
+            vba_code, 0, vba_function_name, [self.com_object, i_color_index]
         )
+        return int(value[0]), int(value[1]), int(value[2])
 
     def get_3d_texture_color_coefficient(
-        self, i_color_index: int, o_3d_texture_color_coefficient: float
-    ) -> None:
+        self, i_color_index: int
+    ) -> tuple[int, int, int]:
         """
         .. note::
             :class: toggle
@@ -1278,11 +1285,20 @@ class RenderingMaterial(AnyObject):
         :return: None
         :rtype: None
         """
-        return self.rendering_material.Get3DTextureColorCoefficient(
-            i_color_index, o_3d_texture_color_coefficient
+        vba_function_name = "get_3d_texture_color_coefficient"
+        vba_code = f"""
+        Public Function {vba_function_name}(comObject, iColorIndex)
+            Dim o3DTextureColorCoefficient(3) As CATSafeArrayVariant
+            comObject.Get3DTextureColorCoefficient iColorIndex, o3DTextureColorCoefficient
+            {vba_function_name} = o3DTextureColorCoefficient
+        End Function
+        """
+        value = self.application.system_service.evaluate(
+            vba_code, 0, vba_function_name, [self.com_object, i_color_index]
         )
+        return int(value[0]), int(value[1]), int(value[2])
 
-    def get_3d_texture_orientation(self, o_3d_texture_orientation: tuple) -> None:
+    def get_3d_texture_orientation(self) -> tuple[float, float, float]:
         """
         .. note::
             :class: toggle
@@ -1305,9 +1321,20 @@ class RenderingMaterial(AnyObject):
         :return: None
         :rtype: None
         """
-        return self.rendering_material.Get3DTextureOrientation(o_3d_texture_orientation)
+        vba_function_name = "get_3d_texture_orientation"
+        vba_code = f"""
+        Public Function {vba_function_name}(comObject)
+            Dim o3DTextureOrientation(3) As CATSafeArrayVariant
+            comObject.Get3DTextureOrientation o3DTextureOrientation
+            {vba_function_name} = o3DTextureOrientation
+        End Function
+        """
+        value = self.application.system_service.evaluate(
+            vba_code, 0, vba_function_name, [self.com_object]
+        )
+        return value[0], value[1], value[2]
 
-    def get_3d_texture_position(self, o_3d_texture_position: tuple) -> None:
+    def get_3d_texture_position(self) -> tuple[float, float, float]:
         """
         .. note::
             :class: toggle
@@ -1330,9 +1357,20 @@ class RenderingMaterial(AnyObject):
         :return: None
         :rtype: None
         """
-        return self.rendering_material.Get3DTexturePosition(o_3d_texture_position)
+        vba_function_name = "get_3d_texture_position"
+        vba_code = f"""
+        Public Function {vba_function_name}(comObject)
+            Dim o3DTexturePosition(3) As CATSafeArrayVariant
+            comObject.Get3DTexturePosition o3DTexturePosition
+            {vba_function_name} = o3DTexturePosition
+        End Function
+        """
+        value = self.application.system_service.evaluate(
+            vba_code, 0, vba_function_name, [self.com_object]
+        )
+        return value[0], value[1], value[2]
 
-    def get_3d_texture_scale(self, o_3d_texture_scale: tuple) -> None:
+    def get_3d_texture_scale(self) -> tuple[int, int, int]:
         """
         .. note::
             :class: toggle
@@ -1354,9 +1392,20 @@ class RenderingMaterial(AnyObject):
         :return: None
         :rtype: None
         """
-        return self.rendering_material.Get3DTextureScale(o_3d_texture_scale)
+        vba_function_name = "get_3d_texture_scale"
+        vba_code = f"""
+        Public Function {vba_function_name}(comObject)
+            Dim o3DTextureScale(3) As CATSafeArrayVariant
+            comObject.Get3DTextureScale o3DTextureScale
+            {vba_function_name} = o3DTextureScale
+        End Function
+        """
+        value = self.application.system_service.evaluate(
+            vba_code, 0, vba_function_name, [self.com_object]
+        )
+        return int(value[0]), int(value[1]), int(value[2])
 
-    def get_ambient_color(self, o_ambient_color: tuple) -> None:
+    def get_ambient_color(self) -> tuple[int, int, int]:
         """
         .. note::
             :class: toggle
@@ -1377,9 +1426,20 @@ class RenderingMaterial(AnyObject):
         :return: None
         :rtype: None
         """
-        return self.rendering_material.GetAmbientColor(o_ambient_color)
+        vba_function_name = "get_ambient_color"
+        vba_code = f"""
+        Public Function {vba_function_name}(comObject)
+            Dim oAmbientColor(3) As CATSafeArrayVariant
+            comObject.GetAmbientColor oAmbientColor
+            {vba_function_name} = oAmbientColor
+        End Function
+        """
+        value = self.application.system_service.evaluate(
+            vba_code, 0, vba_function_name, [self.com_object]
+        )
+        return int(value[0]), int(value[1]), int(value[2])
 
-    def get_diffuse_color(self, o_diffuse_color: tuple) -> None:
+    def get_diffuse_color(self) -> tuple[int, int, int]:
         """
         .. note::
             :class: toggle
@@ -1400,9 +1460,20 @@ class RenderingMaterial(AnyObject):
         :return: None
         :rtype: None
         """
-        return self.rendering_material.GetDiffuseColor(o_diffuse_color)
+        vba_function_name = "get_diffuse_color"
+        vba_code = f"""
+        Public Function {vba_function_name}(comObject)
+            Dim oDiffuseColor(3) As CATSafeArrayVariant
+            comObject.GetDiffuseColor oDiffuseColor
+            {vba_function_name} = oDiffuseColor
+        End Function
+        """
+        value = self.application.system_service.evaluate(
+            vba_code, 0, vba_function_name, [self.com_object]
+        )
+        return int(value[0]), int(value[1]), int(value[2])
 
-    def get_specular_color(self, o_specular_color: tuple) -> None:
+    def get_specular_color(self) -> tuple[int, int, int]:
         """
         .. note::
             :class: toggle
@@ -1423,9 +1494,20 @@ class RenderingMaterial(AnyObject):
         :return: None
         :rtype: None
         """
-        return self.rendering_material.GetSpecularColor(o_specular_color)
+        vba_function_name = "get_specular_color"
+        vba_code = f"""
+        Public Function {vba_function_name}(comObject)
+            Dim oSpecularColor(3) As CATSafeArrayVariant
+            comObject.GetSpecularColor oSpecularColor
+            {vba_function_name} = oSpecularColor
+        End Function
+        """
+        value = self.application.system_service.evaluate(
+            vba_code, 0, vba_function_name, [self.com_object]
+        )
+        return int(value[0]), int(value[1]), int(value[2])
 
-    def get_transparency_color(self, o_transparency_color: tuple) -> None:
+    def get_transparency_color(self) -> tuple[int, int, int]:
         """
         .. note::
             :class: toggle
@@ -1449,10 +1531,21 @@ class RenderingMaterial(AnyObject):
         :return: None
         :rtype: None
         """
-        return self.rendering_material.GetTransparencyColor(o_transparency_color)
+        vba_function_name = "get_transparency_color"
+        vba_code = f"""
+        Public Function {vba_function_name}(comObject)
+            Dim oTransparencyColor(3) As CATSafeArrayVariant
+            comObject.GetTransparencyColor oTransparencyColor
+            {vba_function_name} = oTransparencyColor
+        End Function
+        """
+        value = self.application.system_service.evaluate(
+            vba_code, 0, vba_function_name, [self.com_object]
+        )
+        return int(value[0]), int(value[1]), int(value[2])
 
-    def put3_d_texture_color(
-        self, i_color_index: int, i3_d_texture_color: tuple
+    def put_3d_texture_color(
+        self, i_color_index: int, i_3d_texture_color: tuple
     ) -> None:
         """
         .. note::
@@ -1478,12 +1571,12 @@ class RenderingMaterial(AnyObject):
                 |             for image textures.
 
         :param int i_color_index:
-        :param tuple i3_d_texture_color:
+        :param tuple i_3d_texture_color:
         :return: None
         :rtype: None
         """
         return self.rendering_material.Put3DTextureColor(
-            i_color_index, i3_d_texture_color
+            i_color_index, i_3d_texture_color
         )
 
     def put_3d_texture_color_coefficient(
@@ -1549,7 +1642,7 @@ class RenderingMaterial(AnyObject):
         """
         return self.rendering_material.Put3DTextureOrientation(i_3d_texture_orientation)
 
-    def put3_d_texture_position(self, i_3d_texture_position: tuple) -> None:
+    def put_3d_texture_position(self, i_3d_texture_position: tuple) -> None:
         """
         .. note::
             :class: toggle
