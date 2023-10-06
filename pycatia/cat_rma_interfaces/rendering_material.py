@@ -1236,9 +1236,8 @@ class RenderingMaterial(AnyObject):
                 |         image textures.
 
         :param int i_color_index:
-        :param tuple o_3d_texture_color:
-        :return: None
-        :rtype: None
+        :return: tuple
+        :rtype: tuple
         """
         vba_function_name = "get_3d_texture_color"
         vba_code = f"""
@@ -1281,9 +1280,8 @@ class RenderingMaterial(AnyObject):
                 |         N.B. Parameter useless for rock, chessboard and image textures.
 
         :param int i_color_index:
-        :param float o_3d_texture_color_coefficient:
-        :return: None
-        :rtype: None
+        :return: tuple
+        :rtype: tuple
         """
         vba_function_name = "get_3d_texture_color_coefficient"
         vba_code = f"""
@@ -1317,9 +1315,8 @@ class RenderingMaterial(AnyObject):
                 |         rotationY, rotationZ.
                 |         The array must be previously initialized.
 
-        :param tuple o_3d_texture_orientation:
-        :return: None
-        :rtype: None
+        :return: tuple
+        :rtype: tuple
         """
         vba_function_name = "get_3d_texture_orientation"
         vba_code = f"""
@@ -1353,9 +1350,8 @@ class RenderingMaterial(AnyObject):
                 |         positionY, positionZ.
                 |         The array must be previously initialized.
 
-        :param tuple o_3d_texture_position:
-        :return: None
-        :rtype: None
+        :return: tuple
+        :rtype: tuple
         """
         vba_function_name = "get_3d_texture_position"
         vba_code = f"""
@@ -1388,9 +1384,8 @@ class RenderingMaterial(AnyObject):
                 |         scaleZ.
                 |         The array must be previously initialized.
 
-        :param tuple o_3d_texture_scale:
-        :return: None
-        :rtype: None
+        :return: tuple
+        :rtype: tuple
         """
         vba_function_name = "get_3d_texture_scale"
         vba_code = f"""
@@ -1422,9 +1417,8 @@ class RenderingMaterial(AnyObject):
                 |         The r, g, b values ranges from 0 to 255.
                 |         The array must be previously initialized.
 
-        :param tuple o_ambient_color:
-        :return: None
-        :rtype: None
+        :return: tuple
+        :rtype: tuple
         """
         vba_function_name = "get_ambient_color"
         vba_code = f"""
@@ -1456,9 +1450,8 @@ class RenderingMaterial(AnyObject):
                 |         The r, g, b values ranges from 0 to 255.
                 |         The array must be previously initialized.
 
-        :param tuple o_diffuse_color:
-        :return: None
-        :rtype: None
+        :return: tuple
+        :rtype: tuple
         """
         vba_function_name = "get_diffuse_color"
         vba_code = f"""
@@ -1490,9 +1483,8 @@ class RenderingMaterial(AnyObject):
                 |         The r, g, b values ranges from 0 to 255.
                 |         The array must be previously initialized.
 
-        :param tuple o_specular_color:
-        :return: None
-        :rtype: None
+        :return: tuple
+        :rtype: tuple
         """
         vba_function_name = "get_specular_color"
         vba_code = f"""
@@ -1527,9 +1519,8 @@ class RenderingMaterial(AnyObject):
                 |             The r, g, b values ranges from 0 to 255.
                 |             The array must be previously initialized.
 
-        :param tuple o_transparency_color:
-        :return: None
-        :rtype: None
+        :return: tuple
+        :rtype: tuple
         """
         vba_function_name = "get_transparency_color"
         vba_code = f"""
