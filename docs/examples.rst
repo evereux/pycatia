@@ -24,6 +24,8 @@ Index
 
 :ref:`HYBRID SKETCH & SHAPE FACTORY EXAMPLES<Example Hybrid Sketch Factory & Shape Factory>`
 
+:ref:`INERTIA EXAMPLES<Example Inertia>`
+
 :ref:`LICENSE SETTINGS EXAMPLES<Example License Settings>`
 
 :ref:`LOGGING EXAMPLES<Example Logging>`
@@ -275,6 +277,20 @@ Creates a square in a sketch and fully constrains it. Sketch then used to pad.
 
 
 `Hybrid Sketch & Shape Factory - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__hybrid_sketch__shape_factory__001.py>`_
+
+
+
+.. _Example Inertia:
+
+INERTIA EXAMPLES
+----------------
+
+Inertia - Example 1
+~~~~~~~~~~~~~~~~~~~
+
+Measure Inertia of MainBody in CATPArt.
+
+`Inertia - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__inertia__001.py>`_
 
 
 
