@@ -9,8 +9,8 @@
         
 """
 
-from pycatia.system_interfaces.any_object import AnyObject
 from pycatia.exception_handling.exceptions import CATIAApplicationException
+from pycatia.system_interfaces.any_object import AnyObject
 
 
 class RenderingMaterial(AnyObject):
@@ -63,7 +63,7 @@ class RenderingMaterial(AnyObject):
         max_ = 8
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.AdaptiveCoeff = value
 
@@ -94,7 +94,7 @@ class RenderingMaterial(AnyObject):
         max_ = 1
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.AmbientCoefficient = value
 
@@ -125,7 +125,7 @@ class RenderingMaterial(AnyObject):
         max_ = 10
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.Bump = value
 
@@ -156,7 +156,7 @@ class RenderingMaterial(AnyObject):
         max_ = 100
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.ChessboardJointHeight = value
 
@@ -187,7 +187,7 @@ class RenderingMaterial(AnyObject):
         max_ = 100
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.ChessboardJointWidth = value
 
@@ -220,7 +220,7 @@ class RenderingMaterial(AnyObject):
         max_ = 0.5
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.ChessboardOffset = value
 
@@ -252,7 +252,7 @@ class RenderingMaterial(AnyObject):
         max_ = 100
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.ChessboardTileHeight = value
 
@@ -284,7 +284,7 @@ class RenderingMaterial(AnyObject):
         max_ = 100
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.ChessboardTileWidth = value
 
@@ -344,7 +344,7 @@ class RenderingMaterial(AnyObject):
         max_ = 1
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.DiffuseCoefficient = value
 
@@ -460,7 +460,7 @@ class RenderingMaterial(AnyObject):
         max_ = 5
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.MappingType = value
 
@@ -492,7 +492,7 @@ class RenderingMaterial(AnyObject):
         max_ = 360
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.Orientation = value
 
@@ -603,7 +603,7 @@ class RenderingMaterial(AnyObject):
         max_ = 1
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.ReflectionHeight = value
 
@@ -636,7 +636,7 @@ class RenderingMaterial(AnyObject):
         max_ = 1
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.ReflectionLength = value
 
@@ -675,7 +675,7 @@ class RenderingMaterial(AnyObject):
         max_ = 4
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.ReflectionMode = value
 
@@ -707,7 +707,7 @@ class RenderingMaterial(AnyObject):
         max_ = 1
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.ReflectivityCoefficient = value
 
@@ -739,7 +739,7 @@ class RenderingMaterial(AnyObject):
         max_ = 2
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.RefractionCoefficient = value
 
@@ -823,7 +823,7 @@ class RenderingMaterial(AnyObject):
         max_ = 100
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.ScaleU = value
 
@@ -855,7 +855,7 @@ class RenderingMaterial(AnyObject):
         max_ = 100
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.ScaleV = value
 
@@ -887,7 +887,7 @@ class RenderingMaterial(AnyObject):
         max_ = 1
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.SpecularCoefficient = value
 
@@ -919,7 +919,7 @@ class RenderingMaterial(AnyObject):
         max_ = 1
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.SpecularExponent = value
 
@@ -951,7 +951,7 @@ class RenderingMaterial(AnyObject):
         max_ = 1
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.TextureAmplitude = value
 
@@ -983,7 +983,7 @@ class RenderingMaterial(AnyObject):
         max_ = 10
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.TextureComplexity = value
 
@@ -1015,7 +1015,7 @@ class RenderingMaterial(AnyObject):
         max_ = 2
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.TextureGain = value
 
@@ -1074,7 +1074,7 @@ class RenderingMaterial(AnyObject):
         max_ = 10
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.TexturePerturbation = value
 
@@ -1141,7 +1141,7 @@ class RenderingMaterial(AnyObject):
         max_ = 6
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.TextureType = value
 
@@ -1174,7 +1174,7 @@ class RenderingMaterial(AnyObject):
         max_ = 10
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.TextureVeinAmplitude = value
 
@@ -1206,11 +1206,11 @@ class RenderingMaterial(AnyObject):
         max_ = 1
 
         if not min_ <= value <= max_:
-            raise CATIAApplicationException(f'Value must be between {min_} and {max_}.')
+            raise CATIAApplicationException(f"Value must be between {min_} and {max_}.")
 
         self.rendering_material.TransparencyCoefficient = value
 
-    def get_3d_texture_color(self, i_color_index: int, o_3d_texture_color: tuple) -> None:
+    def get_3d_texture_color(self, i_color_index: int) -> tuple[int, int, int]:
         """
         .. note::
             :class: toggle
@@ -1236,28 +1236,23 @@ class RenderingMaterial(AnyObject):
                 |         image textures.
 
         :param int i_color_index:
-        :param tuple o_3d_texture_color:
-        :return: None
-        :rtype: None
+        :return: tuple
+        :rtype: tuple
         """
-        return self.rendering_material.Get3DTextureColor(i_color_index, o_3d_texture_color)
-        # # # # Autogenerated comment:
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'get3_d_texture_color'
-        # # vba_code = """
-        # # Public Function get3_d_texture_color(rendering_material)
-        # #     Dim iColorIndex (2)
-        # #     rendering_material.Get3DTextureColor iColorIndex
-        # #     get3_d_texture_color = iColorIndex
-        # # End Function
-        # # """
+        vba_function_name = "get_3d_texture_color"
+        vba_code = f"""
+        Public Function {vba_function_name}(comObject, iColorIndex)
+            Dim o3DTextureColor(3) As CATSafeArrayVariant
+            comObject.Get3DTextureColor iColorIndex, o3DTextureColor
+            {vba_function_name} = o3DTextureColor
+        End Function
+        """
+        value = self.application.system_service.evaluate(
+            vba_code, 0, vba_function_name, [self.com_object, i_color_index]
+        )
+        return int(value[0]), int(value[1]), int(value[2])
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def get_3d_texture_color_coefficient(self, i_color_index: int, o_3d_texture_color_coefficient: float) -> None:
+    def get_3d_texture_color_coefficient(self, i_color_index: int) -> tuple[int, int, int]:
         """
         .. note::
             :class: toggle
@@ -1283,15 +1278,23 @@ class RenderingMaterial(AnyObject):
                 |         N.B. Parameter useless for rock, chessboard and image textures.
 
         :param int i_color_index:
-        :param float o_3d_texture_color_coefficient:
-        :return: None
-        :rtype: None
+        :return: tuple
+        :rtype: tuple
         """
-        return self.rendering_material.Get3DTextureColorCoefficient(
-            i_color_index, o_3d_texture_color_coefficient
+        vba_function_name = "get_3d_texture_color_coefficient"
+        vba_code = f"""
+        Public Function {vba_function_name}(comObject, iColorIndex)
+            Dim o3DTextureColorCoefficient(3) As CATSafeArrayVariant
+            comObject.Get3DTextureColorCoefficient iColorIndex, o3DTextureColorCoefficient
+            {vba_function_name} = o3DTextureColorCoefficient
+        End Function
+        """
+        value = self.application.system_service.evaluate(
+            vba_code, 0, vba_function_name, [self.com_object, i_color_index]
         )
+        return int(value[0]), int(value[1]), int(value[2])
 
-    def get_3d_texture_orientation(self, o_3d_texture_orientation: tuple) -> None:
+    def get_3d_texture_orientation(self) -> tuple[float, float, float]:
         """
         .. note::
             :class: toggle
@@ -1310,28 +1313,21 @@ class RenderingMaterial(AnyObject):
                 |         rotationY, rotationZ.
                 |         The array must be previously initialized.
 
-        :param tuple o_3d_texture_orientation:
-        :return: None
-        :rtype: None
+        :return: tuple
+        :rtype: tuple
         """
-        return self.rendering_material.Get3DTextureOrientation(o_3d_texture_orientation)
-        # # # # Autogenerated comment:
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'get3_d_texture_orientation'
-        # # vba_code = """
-        # # Public Function get3_d_texture_orientation(rendering_material)
-        # #     Dim o3DTextureOrientation (2)
-        # #     rendering_material.Get3DTextureOrientation o3DTextureOrientation
-        # #     get3_d_texture_orientation = o3DTextureOrientation
-        # # End Function
-        # # """
+        vba_function_name = "get_3d_texture_orientation"
+        vba_code = f"""
+        Public Function {vba_function_name}(comObject)
+            Dim o3DTextureOrientation(3) As CATSafeArrayVariant
+            comObject.Get3DTextureOrientation o3DTextureOrientation
+            {vba_function_name} = o3DTextureOrientation
+        End Function
+        """
+        value = self.application.system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return value[0], value[1], value[2]
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def get_3d_texture_position(self, o_3d_texture_position: tuple) -> None:
+    def get_3d_texture_position(self) -> tuple[float, float, float]:
         """
         .. note::
             :class: toggle
@@ -1350,28 +1346,21 @@ class RenderingMaterial(AnyObject):
                 |         positionY, positionZ.
                 |         The array must be previously initialized.
 
-        :param tuple o_3d_texture_position:
-        :return: None
-        :rtype: None
+        :return: tuple
+        :rtype: tuple
         """
-        return self.rendering_material.Get3DTexturePosition(o_3d_texture_position)
-        # # # # Autogenerated comment:
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'get3_d_texture_position'
-        # # vba_code = """
-        # # Public Function get3_d_texture_position(rendering_material)
-        # #     Dim o3DTexturePosition (2)
-        # #     rendering_material.Get3DTexturePosition o3DTexturePosition
-        # #     get3_d_texture_position = o3DTexturePosition
-        # # End Function
-        # # """
+        vba_function_name = "get_3d_texture_position"
+        vba_code = f"""
+        Public Function {vba_function_name}(comObject)
+            Dim o3DTexturePosition(3) As CATSafeArrayVariant
+            comObject.Get3DTexturePosition o3DTexturePosition
+            {vba_function_name} = o3DTexturePosition
+        End Function
+        """
+        value = self.application.system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return value[0], value[1], value[2]
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def get_3d_texture_scale(self, o_3d_texture_scale: tuple) -> None:
+    def get_3d_texture_scale(self) -> tuple[int, int, int]:
         """
         .. note::
             :class: toggle
@@ -1389,28 +1378,21 @@ class RenderingMaterial(AnyObject):
                 |         scaleZ.
                 |         The array must be previously initialized.
 
-        :param tuple o_3d_texture_scale:
-        :return: None
-        :rtype: None
+        :return: tuple
+        :rtype: tuple
         """
-        return self.rendering_material.Get3DTextureScale(o_3d_texture_scale)
-        # # # # Autogenerated comment:
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'get3_d_texture_scale'
-        # # vba_code = """
-        # # Public Function get3_d_texture_scale(rendering_material)
-        # #     Dim o3DTextureScale (2)
-        # #     rendering_material.Get3DTextureScale o3DTextureScale
-        # #     get3_d_texture_scale = o3DTextureScale
-        # # End Function
-        # # """
+        vba_function_name = "get_3d_texture_scale"
+        vba_code = f"""
+        Public Function {vba_function_name}(comObject)
+            Dim o3DTextureScale(3) As CATSafeArrayVariant
+            comObject.Get3DTextureScale o3DTextureScale
+            {vba_function_name} = o3DTextureScale
+        End Function
+        """
+        value = self.application.system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return int(value[0]), int(value[1]), int(value[2])
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def get_ambient_color(self, o_ambient_color: tuple) -> None:
+    def get_ambient_color(self) -> tuple[int, int, int]:
         """
         .. note::
             :class: toggle
@@ -1427,28 +1409,21 @@ class RenderingMaterial(AnyObject):
                 |         The r, g, b values ranges from 0 to 255.
                 |         The array must be previously initialized.
 
-        :param tuple o_ambient_color:
-        :return: None
-        :rtype: None
+        :return: tuple
+        :rtype: tuple
         """
-        return self.rendering_material.GetAmbientColor(o_ambient_color)
-        # # # # Autogenerated comment:
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'get_ambient_color'
-        # # vba_code = """
-        # # Public Function get_ambient_color(rendering_material)
-        # #     Dim oAmbientColor (2)
-        # #     rendering_material.GetAmbientColor oAmbientColor
-        # #     get_ambient_color = oAmbientColor
-        # # End Function
-        # # """
+        vba_function_name = "get_ambient_color"
+        vba_code = f"""
+        Public Function {vba_function_name}(comObject)
+            Dim oAmbientColor(3) As CATSafeArrayVariant
+            comObject.GetAmbientColor oAmbientColor
+            {vba_function_name} = oAmbientColor
+        End Function
+        """
+        value = self.application.system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return int(value[0]), int(value[1]), int(value[2])
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def get_diffuse_color(self, o_diffuse_color: tuple) -> None:
+    def get_diffuse_color(self) -> tuple[int, int, int]:
         """
         .. note::
             :class: toggle
@@ -1465,28 +1440,21 @@ class RenderingMaterial(AnyObject):
                 |         The r, g, b values ranges from 0 to 255.
                 |         The array must be previously initialized.
 
-        :param tuple o_diffuse_color:
-        :return: None
-        :rtype: None
+        :return: tuple
+        :rtype: tuple
         """
-        return self.rendering_material.GetDiffuseColor(o_diffuse_color)
-        # # # # Autogenerated comment:
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'get_diffuse_color'
-        # # vba_code = """
-        # # Public Function get_diffuse_color(rendering_material)
-        # #     Dim oDiffuseColor (2)
-        # #     rendering_material.GetDiffuseColor oDiffuseColor
-        # #     get_diffuse_color = oDiffuseColor
-        # # End Function
-        # # """
+        vba_function_name = "get_diffuse_color"
+        vba_code = f"""
+        Public Function {vba_function_name}(comObject)
+            Dim oDiffuseColor(3) As CATSafeArrayVariant
+            comObject.GetDiffuseColor oDiffuseColor
+            {vba_function_name} = oDiffuseColor
+        End Function
+        """
+        value = self.application.system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return int(value[0]), int(value[1]), int(value[2])
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def get_specular_color(self, o_specular_color: tuple) -> None:
+    def get_specular_color(self) -> tuple[int, int, int]:
         """
         .. note::
             :class: toggle
@@ -1503,28 +1471,21 @@ class RenderingMaterial(AnyObject):
                 |         The r, g, b values ranges from 0 to 255.
                 |         The array must be previously initialized.
 
-        :param tuple o_specular_color:
-        :return: None
-        :rtype: None
+        :return: tuple
+        :rtype: tuple
         """
-        return self.rendering_material.GetSpecularColor(o_specular_color)
-        # # # # Autogenerated comment:
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'get_specular_color'
-        # # vba_code = """
-        # # Public Function get_specular_color(rendering_material)
-        # #     Dim oSpecularColor (2)
-        # #     rendering_material.GetSpecularColor oSpecularColor
-        # #     get_specular_color = oSpecularColor
-        # # End Function
-        # # """
+        vba_function_name = "get_specular_color"
+        vba_code = f"""
+        Public Function {vba_function_name}(comObject)
+            Dim oSpecularColor(3) As CATSafeArrayVariant
+            comObject.GetSpecularColor oSpecularColor
+            {vba_function_name} = oSpecularColor
+        End Function
+        """
+        value = self.application.system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return int(value[0]), int(value[1]), int(value[2])
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def get_transparency_color(self, o_transparency_color: tuple) -> None:
+    def get_transparency_color(self) -> tuple[int, int, int]:
         """
         .. note::
             :class: toggle
@@ -1544,28 +1505,21 @@ class RenderingMaterial(AnyObject):
                 |             The r, g, b values ranges from 0 to 255.
                 |             The array must be previously initialized.
 
-        :param tuple o_transparency_color:
-        :return: None
-        :rtype: None
+        :return: tuple
+        :rtype: tuple
         """
-        return self.rendering_material.GetTransparencyColor(o_transparency_color)
-        # # # # Autogenerated comment:
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'get_transparency_color'
-        # # vba_code = """
-        # # Public Function get_transparency_color(rendering_material)
-        # #     Dim oTransparencyColor (2)
-        # #     rendering_material.GetTransparencyColor oTransparencyColor
-        # #     get_transparency_color = oTransparencyColor
-        # # End Function
-        # # """
+        vba_function_name = "get_transparency_color"
+        vba_code = f"""
+        Public Function {vba_function_name}(comObject)
+            Dim oTransparencyColor(3) As CATSafeArrayVariant
+            comObject.GetTransparencyColor oTransparencyColor
+            {vba_function_name} = oTransparencyColor
+        End Function
+        """
+        value = self.application.system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return int(value[0]), int(value[1]), int(value[2])
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def put3_d_texture_color(self, i_color_index: int, i3_d_texture_color: tuple) -> None:
+    def put_3d_texture_color(self, i_color_index: int, i_3d_texture_color: tuple) -> None:
         """
         .. note::
             :class: toggle
@@ -1590,26 +1544,11 @@ class RenderingMaterial(AnyObject):
                 |             for image textures.
 
         :param int i_color_index:
-        :param tuple i3_d_texture_color:
+        :param tuple i_3d_texture_color:
         :return: None
         :rtype: None
         """
-        return self.rendering_material.Put3DTextureColor(i_color_index, i3_d_texture_color)
-        # # # # Autogenerated comment:
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'put3_d_texture_color'
-        # # vba_code = """
-        # # Public Function put3_d_texture_color(rendering_material)
-        # #     Dim iColorIndex (2)
-        # #     rendering_material.Put3DTextureColor iColorIndex
-        # #     put3_d_texture_color = iColorIndex
-        # # End Function
-        # # """
-
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
+        return self.rendering_material.Put3DTextureColor(i_color_index, i_3d_texture_color)
 
     def put_3d_texture_color_coefficient(self, i_color_index: int, i_3d_texture_color_coefficient: float) -> None:
         """
@@ -1641,9 +1580,7 @@ class RenderingMaterial(AnyObject):
         :return: None
         :rtype: None
         """
-        return self.rendering_material.Put3DTextureColorCoefficient(
-            i_color_index, i_3d_texture_color_coefficient
-        )
+        return self.rendering_material.Put3DTextureColorCoefficient(i_color_index, i_3d_texture_color_coefficient)
 
     def put_3d_texture_orientation(self, i_3d_texture_orientation: tuple) -> None:
         """
@@ -1671,23 +1608,8 @@ class RenderingMaterial(AnyObject):
         :rtype: None
         """
         return self.rendering_material.Put3DTextureOrientation(i_3d_texture_orientation)
-        # # # # Autogenerated comment:
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'put3_d_texture_orientation'
-        # # vba_code = """
-        # # Public Function put3_d_texture_orientation(rendering_material)
-        # #     Dim i3DTextureOrientation (2)
-        # #     rendering_material.Put3DTextureOrientation i3DTextureOrientation
-        # #     put3_d_texture_orientation = i3DTextureOrientation
-        # # End Function
-        # # """
 
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
-
-    def put3_d_texture_position(self, i_3d_texture_position: tuple) -> None:
+    def put_3d_texture_position(self, i_3d_texture_position: tuple) -> None:
         """
         .. note::
             :class: toggle
@@ -1713,21 +1635,6 @@ class RenderingMaterial(AnyObject):
         :rtype: None
         """
         return self.rendering_material.Put3DTexturePosition(i_3d_texture_position)
-        # # # # Autogenerated comment:
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'put3_d_texture_position'
-        # # vba_code = """
-        # # Public Function put3_d_texture_position(rendering_material)
-        # #     Dim i3DTexturePosition (2)
-        # #     rendering_material.Put3DTexturePosition i3DTexturePosition
-        # #     put3_d_texture_position = i3DTexturePosition
-        # # End Function
-        # # """
-
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def put_3d_texture_scale(self, i_3d_texture_scale: tuple) -> None:
         """
@@ -1754,21 +1661,6 @@ class RenderingMaterial(AnyObject):
         :rtype: None
         """
         return self.rendering_material.Put3DTextureScale(i_3d_texture_scale)
-        # # # # Autogenerated comment:
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'put3_d_texture_scale'
-        # # vba_code = """
-        # # Public Function put3_d_texture_scale(rendering_material)
-        # #     Dim i3DTextureScale (2)
-        # #     rendering_material.Put3DTextureScale i3DTextureScale
-        # #     put3_d_texture_scale = i3DTextureScale
-        # # End Function
-        # # """
-
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def put_ambient_color(self, i_ambient_color: tuple) -> None:
         """
@@ -1794,21 +1686,6 @@ class RenderingMaterial(AnyObject):
         :rtype: None
         """
         return self.rendering_material.PutAmbientColor(i_ambient_color)
-        # # # # Autogenerated comment:
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'put_ambient_color'
-        # # vba_code = """
-        # # Public Function put_ambient_color(rendering_material)
-        # #     Dim iAmbientColor (2)
-        # #     rendering_material.PutAmbientColor iAmbientColor
-        # #     put_ambient_color = iAmbientColor
-        # # End Function
-        # # """
-
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def put_diffuse_color(self, i_diffuse_color: tuple) -> None:
         """
@@ -1834,21 +1711,6 @@ class RenderingMaterial(AnyObject):
         :rtype: None
         """
         return self.rendering_material.PutDiffuseColor(i_diffuse_color)
-        # # # # Autogenerated comment:
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'put_diffuse_color'
-        # # vba_code = """
-        # # Public Function put_diffuse_color(rendering_material)
-        # #     Dim iDiffuseColor (2)
-        # #     rendering_material.PutDiffuseColor iDiffuseColor
-        # #     put_diffuse_color = iDiffuseColor
-        # # End Function
-        # # """
-
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def put_specular_color(self, i_specular_color: tuple) -> None:
         """
@@ -1874,21 +1736,6 @@ class RenderingMaterial(AnyObject):
         :rtype: None
         """
         return self.rendering_material.PutSpecularColor(i_specular_color)
-        # # # # Autogenerated comment:
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'put_specular_color'
-        # # vba_code = """
-        # # Public Function put_specular_color(rendering_material)
-        # #     Dim iSpecularColor (2)
-        # #     rendering_material.PutSpecularColor iSpecularColor
-        # #     put_specular_color = iSpecularColor
-        # # End Function
-        # # """
-
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def put_transparency_color(self, i_transparency_color: tuple) -> None:
         """
@@ -1915,21 +1762,6 @@ class RenderingMaterial(AnyObject):
         :rtype: None
         """
         return self.rendering_material.PutTransparencyColor(i_transparency_color)
-        # # # # Autogenerated comment:
-        # # some methods require a system service call as the methods expects a vb array object
-        # # passed to it and there is no way to do this directly with python. In those cases the following code
-        # # should be uncommented and edited accordingly. Otherwise completely remove all this.
-        # # vba_function_name = 'put_transparency_color'
-        # # vba_code = """
-        # # Public Function put_transparency_color(rendering_material)
-        # #     Dim iTransparencyColor (2)
-        # #     rendering_material.PutTransparencyColor iTransparencyColor
-        # #     put_transparency_color = iTransparencyColor
-        # # End Function
-        # # """
-
-        # # system_service = SystemService(self.application.SystemService)
-        # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
         return f'RenderingMaterial(name="{self.name}")'
