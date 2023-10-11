@@ -7,15 +7,6 @@ Example - example__selection__003
     returns type of geometry using SPAworkbench get_measurable
     and hybrid shape factory get_geometrical_feature_type
 """
-
-
-from pycatia.mec_mod_interfaces.part import Part
-from pycatia import catia
-from pycatia.exception_handling.exceptions import CATIAApplicationException
-
-__author__ = '[ptm] by plm-forum.ru'
-__status__ = 'alpha'
-
 ##########################################################
 # insert syspath to project folder so examples can be run.
 # for development purposes.
@@ -24,6 +15,13 @@ import sys
 
 sys.path.insert(0, os.path.abspath('..\\pycatia'))
 ##########################################################
+
+from pycatia.mec_mod_interfaces.part import Part
+from pycatia import catia
+from pycatia.exception_handling.exceptions import CATIAApplicationException
+
+__author__ = '[ptm] by plm-forum.ru'
+__status__ = 'alpha'
 
 # import headers
 try:
@@ -34,7 +32,6 @@ except CATIAApplicationException as e:
     print(e.message)
     print('CATIA not started or document not ' +
           'opened or started several CATIA sessions')
-    print('Press any key to exit...')
     sys.exit(e.message)
 if document.is_part:
     # need to autocomplete
@@ -46,8 +43,10 @@ if document.is_part:
     except CATIAApplicationException as e:
         print(e.message)
         print('Part document must be without errors!')
-        print('Press any key to exit...')
         sys.exit('Part document must be without errors!')
+else:
+    print('This script worked in Part only!')
+    sys.exit('Not a part!')
 
 hsf = part_document.hybrid_shape_factory
 
