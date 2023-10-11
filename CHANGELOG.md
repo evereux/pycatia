@@ -2,11 +2,12 @@
 
 ## 0.6.1
 
-* Added human modelling classes SWKHmiWorkbench and SWKHumanCatalog. Please note these are not documented in the
-  CATIA V5 Basic Help file. Example of usage also added.
+* Added human modelling classes SWKHmiWorkbench and SWKHumanCatalog. Please note these are not documented in the CATIA
+  V5 Basic Help file. Example of usage also added.
 * Added new class method Application.input_box(). @ptm-tm
 * fixed test issue with cat materials where catia env has multiple start-up paths.
 * fixed issue with HybridShapeFactory.add_new_sphere for cases where an axis isn't defined.
+* fixes to RenderingMaterials class methods. @deloarts
 
 ## 0.6.0
 
