@@ -40,7 +40,7 @@ To get the latest master version from github::
     # install the python virtual env
     python -m virtualenv env
     # activate the virtual env
-    env\scripts\activate
+    env\Scripts\activate
     # install the pycatia requirements
     pip install -r requirements\requirements.txt
 
@@ -89,7 +89,7 @@ environment away from the python installation itself.
 
 * Activate the virtual environment::
 
-    env\Scripts\Activate
+    env\Scripts\activate
 
 
 You should see the command prompt change to something like this::
