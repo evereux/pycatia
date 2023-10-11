@@ -14,7 +14,9 @@ The Short Version
 This assumes python 3.9 or later is already installed and you know how and
 when (all the time really) to use `virtual environments <https://docs.python.org/3/tutorial/venv.html>`_.
 
-You can either install pycatia from pypi.org using `pip install` or clone the repository from github. Do not do both.
+You can either install pycatia from pypi.org using `pip install` or clone the repository from github.
+
+Do not do both within the same folder structure.
 
 pypi
 ~~~~
@@ -33,6 +35,12 @@ github
 To get the latest master version from github::
 
     git clone https://github.com/evereux/pycatia.git
+    # change directory into cloned project
+    cd pycatia
+    # install the python virtual env
+    python -m virtualenv env
+    # activate the virtual env
+    env\scripts\activate
     # install the pycatia requirements
     pip install -r requirements\requirements.txt
 
