@@ -2430,3 +2430,14 @@ time_span_type = (
     "STEP_TIME",
     "TOTAL_TIME",
 )
+
+geometrical_feature_type = (
+    'Unknown',
+    'Point',
+    'Curve',
+    'Line',
+    'Circle',
+    'Surface',
+    'Plane',
+    'Solid / Volume'
+)
