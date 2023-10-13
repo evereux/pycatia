@@ -5473,6 +5473,7 @@ class HybridShapeFactory(Factory):
                 |             Level of availability = V5R14
 
 
+        See enumeration.enumeration_types.geometrical_feature_type() for enums.
 
         :param Reference i_elem:
         :return: 0 = Unknown, 1 = Point, 2 = Curve, 3 = Line, 4 = Circle, 5 = Surface, 6 = Plane, 7 = Solid, Volume
