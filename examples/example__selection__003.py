@@ -24,7 +24,6 @@ sys.path.insert(0, os.path.abspath('..\\pycatia'))
 
 from pycatia.mec_mod_interfaces.part import Part
 from pycatia import catia
-from pycatia.exception_handling.exceptions import CATIAApplicationException
 from pycatia.enumeration.enumeration_types import cat_measurable_name
 from pycatia.enumeration.enumeration_types import cat_selection_filter
 from pycatia.enumeration.enumeration_types import geometrical_feature_type
