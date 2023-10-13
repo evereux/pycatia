@@ -456,11 +456,19 @@ Prompt the user to select a product and get it's bounding box parameters
 
 
 Selection - Example 2
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
 
 Usage of the Selection.select_element2 class method which accepts two selection inputs.
 
 `Selection - 002 <https://github.com/evereux/pycatia/blob/master/examples/example__selection__002.py>`_
+
+
+Selection - Example 3
+~~~~~~~~~~~~~~~~~~~~~
+
+Usage of the Selection.select_element2 to select a geometrical feature and report it's properties in a message window.
+
+`Selection - 003 <https://github.com/evereux/pycatia/blob/master/examples/example__selection__003.py>`_
 
 
 
