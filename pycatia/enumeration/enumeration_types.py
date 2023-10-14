@@ -1786,9 +1786,9 @@ cat_text_property = (
     "catBorder",  #
     "catAlignment",  # Alignment of the piece of text.
     "catCharRatio",  # Ratio between character height and width.
-                     # The value is a percentage of the font size and corresponds to the ratio height by width.
+    # The value is a percentage of the font size and corresponds to the ratio height by width.
     "catCharSpacing",  # Space between each character.
-                       # The value is a percentage of the font size (maybe a negative value).
+    # The value is a percentage of the font size (maybe a negative value).
     "catKerning",
 )
 
@@ -2410,6 +2410,11 @@ stabilization_type = (
     "FACTOR",
 )
 
+swk_anthro_sex = (
+    "Male",
+    "Female"
+)
+
 swk_posture_spec = (
     "SWKPostureSpecDefault",
     "SWKPostureSpecStand",
@@ -2424,4 +2429,15 @@ swk_posture_spec = (
 time_span_type = (
     "STEP_TIME",
     "TOTAL_TIME",
+)
+
+geometrical_feature_type = (
+    'Unknown',
+    'Point',
+    'Curve',
+    'Line',
+    'Circle',
+    'Surface',
+    'Plane',
+    'Solid / Volume'
 )

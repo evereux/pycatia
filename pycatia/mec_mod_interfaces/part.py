@@ -90,7 +90,7 @@ class Part(AnyObject):
         """
 
         return Analyze(self.part.Analyze)
-        
+
     @property
     def annotation_sets(self) -> Collection:
         """
@@ -139,6 +139,9 @@ class Part(AnyObject):
                 |          Set axisSystems = partRoot.AxisSystems
 
         :return: AxisSystems
+
+        This will only return axis systems under the Axis Systems node. Axis systems within a Geometrical Set will not
+        be returned.
         """
 
         return AxisSystems(self.part.AxisSystems)
@@ -660,6 +663,22 @@ class Part(AnyObject):
         :rtype: Reference
         """
         return Reference(self.part.CreateReferenceFromBRepName(i_label, i_object_context.com_object))
+
+    def create_reference_from_geometry(self, i_object: AnyObject) -> Reference:
+        """
+        .. note::
+            :class: toggle
+
+            Microsoft Visual Basic Object Browser
+                | Function CreateReferenceFromGeometry(iObject As AnyObject) As Reference
+                |     Member of MECMOD.Part
+
+        :param AnyObject i_object:
+        :return: Reference
+        :rtype: Reference
+        """
+
+        return Reference(self.part.CreateReferenceFromGeometry(i_object.com_object))
 
     def create_reference_from_name(self, i_label: str):
         """
