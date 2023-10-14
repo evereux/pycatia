@@ -112,6 +112,7 @@ from pycatia.hybrid_shape_interfaces.hybrid_shape_wrap_curve import HybridShapeW
 from pycatia.hybrid_shape_interfaces.hybrid_shape_wrap_surface import HybridShapeWrapSurface
 from pycatia.in_interfaces.reference import Reference
 from pycatia.mec_mod_interfaces.factory import Factory
+from pycatia.scripts.vba import vba_nothing
 
 
 class HybridShapeFactory(Factory):
@@ -4836,9 +4837,16 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapeSection(self.hybrid_shape_factory.AddNewSection())
 
-    def add_new_sphere(self, i_center: Reference, i_axis: Reference, i_radius: float, i_begin_parallel_angle: float,
-                       i_end_parallel_angle: float, i_begin_meridian_angle: float,
-                       i_end_meridian_angle: float) -> HybridShapeSphere:
+    def add_new_sphere(
+            self,
+            i_center: Reference,
+            i_axis: Reference,
+            i_radius: float,
+            i_begin_parallel_angle: float,
+            i_end_parallel_angle: float,
+            i_begin_meridian_angle: float,
+            i_end_meridian_angle: float
+    ) -> HybridShapeSphere:
         """
         .. note::
             :class: toggle
@@ -4886,10 +4894,23 @@ class HybridShapeFactory(Factory):
         :return: HybridShapeSphere
         :rtype: HybridShapeSphere
         """
+
+        if type(i_axis) is str:
+            i_axis = self.application.system_service.evaluate(vba_nothing, 0, 'N', [])
+        else:
+            i_axis = i_axis.com_object
+
         return HybridShapeSphere(
-            self.hybrid_shape_factory.AddNewSphere(i_center.com_object, i_axis.com_object, i_radius,
-                                                   i_begin_parallel_angle, i_end_parallel_angle, i_begin_meridian_angle,
-                                                   i_end_meridian_angle))
+            self.hybrid_shape_factory.AddNewSphere(
+                i_center.com_object,
+                i_axis,
+                i_radius,
+                i_begin_parallel_angle,
+                i_end_parallel_angle,
+                i_begin_meridian_angle,
+                i_end_meridian_angle
+            )
+        )
 
     def add_new_spine(self) -> HybridShapeSpine:
         """
@@ -5452,6 +5473,7 @@ class HybridShapeFactory(Factory):
                 |             Level of availability = V5R14
 
 
+        See enumeration.enumeration_types.geometrical_feature_type() for enums.
 
         :param Reference i_elem:
         :return: 0 = Unknown, 1 = Point, 2 = Curve, 3 = Line, 4 = Circle, 5 = Surface, 6 = Plane, 7 = Solid, Volume
