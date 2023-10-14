@@ -8,6 +8,7 @@
 * fixed test issue with cat materials where catia env has multiple start-up paths.
 * fixed issue with HybridShapeFactory.add_new_sphere for cases where an axis isn't defined.
 * fixes to RenderingMaterials class methods. @deloarts
+* added new enum type geometrical_feature_type to support HybridShapeFactory.get_geometrical_feature_type().
 
 ## 0.6.0
 
