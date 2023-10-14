@@ -10,11 +10,9 @@
 """
 
 from pycatia.system_interfaces.any_object import AnyObject
-from pycatia.system_interfaces.system_service import SystemService
 
 
 class Inertia(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -93,15 +91,10 @@ class Inertia(AnyObject):
                 | 
                 |              The first example gets the density of NewInertia
                 |              inertia.
-                |             
-                | 
+                |
                 |             Dim ADensity As double
                 |             ADensity = NewInertia.Density
-                |             
-                | 
-                | 
-                |             
-                | 
+                |
                 |                 The second example sets the density of NewInertia
                 |                 inertia.
                 |                 
@@ -399,4 +392,4 @@ class Inertia(AnyObject):
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'Inertia(name="{ self.name }")'
+        return f'Inertia(name="{self.name}")'
