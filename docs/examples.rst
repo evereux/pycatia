@@ -373,6 +373,14 @@ each parameter along with its name, value and its associated parameter set.
 `Parameters - 001 <https://github.com/evereux/pycatia/blob/master/examples/example__parameters__001.py>`_
 
 
+Parameters - Example 2
+~~~~~~~~~~~~~~~~~~~~~~
+
+Change the Length value of parameter named Thickness.
+
+`Parameters - 002 <https://github.com/evereux/pycatia/blob/master/examples/example__parameters__002.py>`_
+
+
 
 .. _Example Product:
 
