@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.6.2
+
+* reformatted HybridShapeFactory class to better readability.
 ## 0.6.1
 
 * Added human modelling classes SWKHmiWorkbench and SWKHumanCatalog. Please note these are not documented in the CATIA
