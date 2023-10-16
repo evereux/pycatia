@@ -3,6 +3,7 @@
 ## 0.6.2
 
 * reformatted HybridShapeFactory class to better readability.
+* added vba_nothing to HybridShapeLoft.add_section_to_loft.
 ## 0.6.1
 
 * Added human modelling classes SWKHmiWorkbench and SWKHumanCatalog. Please note these are not documented in the CATIA
