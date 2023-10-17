@@ -38,30 +38,32 @@ sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
 from pathlib import Path
+
+from wing_surface_from_naca_profile_support import constants
+from wing_surface_from_naca_profile_support.colour import set_colour
+from wing_surface_from_naca_profile_support.geometrical_sets import (
+    create_geometrical_set,
+)
+from wing_surface_from_naca_profile_support.hide_show import hide_the_shapes
+from wing_surface_from_naca_profile_support.origin_elements import (
+    get_ref_origin_elements,
+)
+from wing_surface_from_naca_profile_support.parameters import create_parameters
+from wing_surface_from_naca_profile_support.points import add_points
+from wing_surface_from_naca_profile_support.read_dat_file import read_dat_file
+
 from pycatia import catia
 from pycatia.mec_mod_interfaces.part import Part
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.scripts.vba import vba_nothing
 
-from wing_surface_from_naca_profile_support.colour import set_colour
-from wing_surface_from_naca_profile_support.geometrical_sets import create_geometrical_set
-from wing_surface_from_naca_profile_support.origin_elements import get_ref_origin_elements
-from wing_surface_from_naca_profile_support.points import add_points
-from wing_surface_from_naca_profile_support.parameters import create_parameters
-from wing_surface_from_naca_profile_support.read_dat_file import read_dat_file
-from wing_surface_from_naca_profile_support.hide_show import hide_the_shapes
-from wing_surface_from_naca_profile_support import constants
-
 # read the contents of the file wing_surface_from_naca_profile_support/sc20610.dat and import the
 # coordinates
 
 part_number = "Wing_Geometry"
-naca_dat_file = Path(os.getcwd(), 'user_scripts', 'wing_surface_from_naca_profile_support/sc20610.dat')
+naca_dat_file = Path(os.getcwd(), "user_scripts", "wing_surface_from_naca_profile_support/sc20610.dat")
 
-upper_coordinates, lower_coordinates = read_dat_file(
-    naca_dat_file,
-    constants.CHORD_LENGTH_ROOT
-)
+upper_coordinates, lower_coordinates = read_dat_file(naca_dat_file, constants.CHORD_LENGTH_ROOT)
 
 caa = catia()
 application = caa.application
@@ -71,11 +73,10 @@ documents = application.documents
 # not hugely important but could mess up the view reframing at the end of the
 # script.
 if documents.count > 0:
-    print('There are already documents open.'
-          'Please close all documents and re-run the script.')
+    print("There are already documents open." "Please close all documents and re-run the script.")
     exit()
 
-new_part = documents.add('Part')
+new_part = documents.add("Part")
 document = application.active_document
 
 selection = document.selection
@@ -93,9 +94,11 @@ hybrid_bodies = part.hybrid_bodies
 
 # delete the default created geometrical set if it exists.
 gs_delete = hybrid_bodies.get_item_by_name("Geometrical Set.1")
-selection.clear()
-selection.add(gs_delete)
-selection.delete()
+if gs_delete is not None:
+    # Check if gs_delete is valid, otherwise an error is thrown, if a part isn't created with a geometrical set
+    selection.clear()
+    selection.add(gs_delete)
+    selection.delete()
 
 gs_master_geometry = create_geometrical_set(hybrid_bodies, "MasterGeometry")
 gs_construction_geometry = create_geometrical_set(hybrid_bodies, "ConstructionGeometry")
@@ -143,7 +146,7 @@ gs_splines.append_hybrid_shape(hs_spline)
 
 # add new plane to define wing surface limit
 hs_plane_offset = hybrid_shape_factory.add_new_plane_offset(ref_plane_xy, constants.OFFSET_WING_TIP, False)
-hs_plane_offset.name = 'Plane.WingTip'
+hs_plane_offset.name = "Plane.WingTip"
 # link to OFFSET_WING_TIP parameter
 length_offset = hs_plane_offset.offset
 relations.create_formula("Formula.OFFSET_WING_TIP", "", length_offset, "`OFFSET_WING_TIP`")
@@ -169,9 +172,7 @@ gs_splines.append_hybrid_shape(hs_spline_scale_final)
 
 # create the translation geometry at the wing tip
 point_wingtip_origin = hybrid_shape_factory.add_new_point_on_plane(
-    ref_hs_plane_offset,
-    constants.WING_TIP_TRANSLATION_X,
-    constants.WING_TIP_TRANSLATION_Y
+    ref_hs_plane_offset, constants.WING_TIP_TRANSLATION_X, constants.WING_TIP_TRANSLATION_Y
 )
 gs_point_other.append_hybrid_shape(point_wingtip_origin)
 ref_point_wingtip_origin = part.create_reference_from_object(point_wingtip_origin)
@@ -183,11 +184,7 @@ relations.create_formula("Formula.WING_TIP_TRANSLATION_Y", "", point_y, "`WING_T
 # create CHORD line of length CHORD_LENGTH_WING_TIP
 hs_direction = hybrid_shape_factory.add_new_direction(ref_plane_yz)
 line_wingtip_chord = hybrid_shape_factory.add_new_line_pt_dir(
-    ref_point_wingtip_origin,
-    hs_direction,
-    0,
-    constants.CHORD_LENGTH_WING_TIP,
-    False
+    ref_point_wingtip_origin, hs_direction, 0, constants.CHORD_LENGTH_WING_TIP, False
 )
 length_line = line_wingtip_chord.end_offset
 relations.create_formula("Formula.CHORD_LENGTH_WING_TIP", "", length_line, "`CHORD_LENGTH_WING_TIP`")
@@ -203,7 +200,7 @@ line_wingtip_chord_angle = hybrid_shape_factory.add_new_line_angle(
     0,
     constants.CHORD_LENGTH_WING_TIP,
     constants.WING_TIP_RELATIVE_ANGLE,
-    False
+    False,
 )
 length_line = line_wingtip_chord_angle.end_offset
 relations.create_formula("Formula.CHORD_LENGTH_WING_TIP", "", length_line, "`CHORD_LENGTH_WING_TIP`")
@@ -213,11 +210,7 @@ relations.create_formula("Formula.WING_TIP_RELATIVE_ANGLE", "", angle_line, "`WI
 gs_lines.append_hybrid_shape(line_wingtip_chord_angle)
 # create line normal to the wing tip plane to be used for rotation.
 line_wingtip_normal = hybrid_shape_factory.add_new_line_normal(
-    ref_hs_plane_offset,
-    ref_point_wingtip_origin,
-    -500,
-    500,
-    False
+    ref_hs_plane_offset, ref_point_wingtip_origin, -500, 500, False
 )
 gs_lines.append_hybrid_shape(line_wingtip_normal)
 ref_line_wingtip_normal = part.create_reference_from_object(line_wingtip_normal)
@@ -227,10 +220,7 @@ point_0_0 = gs_point_other.hybrid_shapes.item(1)
 ref_point_0_0 = part.create_reference_from_object(point_0_0)
 
 # create line from point at wing root and point at wing tip
-line_root_tip = hybrid_shape_factory.add_new_line_pt_pt(
-    ref_point_0_0,
-    ref_point_wingtip_origin
-)
+line_root_tip = hybrid_shape_factory.add_new_line_pt_pt(ref_point_0_0, ref_point_wingtip_origin)
 gs_lines.append_hybrid_shape(line_root_tip)
 ref_line_root_tip = part.create_reference_from_object(line_root_tip)
 
@@ -270,13 +260,6 @@ hs_loft.add_section_to_loft(ref_spline_final, 1, vba_nothing)
 gs_master_geometry.append_hybrid_shape(hs_loft)
 hs_loft.name = surface_name
 
-# set the colour of the surface
-# todo: this doesn't currently work and I can't figure out why.
-#  It works as a standalone script.
-gs_master_geometry_hbs = gs_master_geometry.hybrid_shapes
-surface_wing = gs_master_geometry_hbs.get_item_by_name(surface_name)
-colour = (0, 255, 0, 0)
-set_colour(selection, surface_wing, colour)
 
 # publish the surface.
 ref_hs_loft = product.create_reference_from_name(f"{product.part_number}/!{hs_loft.name}")
@@ -291,6 +274,13 @@ hide_the_shapes(selection, gs_construction_geometry)
 part.update_object(gs_construction_geometry)
 part.update_object(gs_master_geometry)
 part.update()
+
+# set the colour of the surface
+# note: part must be updated first, otherwise the Surface.WingSurface element isn
+gs_master_geometry_hbs = gs_master_geometry.hybrid_shapes
+surface_wing = gs_master_geometry_hbs.get_item_by_name(surface_name)
+colour = (0, 255, 0, 0)
+set_colour(selection, surface_wing, colour)
 
 # make the main PartBody the in work object.
 bodies = part.bodies
