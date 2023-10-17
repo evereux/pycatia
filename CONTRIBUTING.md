@@ -22,15 +22,23 @@ However, changes to the documentation or examples can be done against either.
 I have now added all the modules I was able to extract from the documentation so there shouldn't be a need to add new
 modules as of 0.6.0.
 
-## Scripts / Examples
+## Examples / User Scripts
 
-New scripts / examples are always welcome as they great for new users to discover how to use pycatia.
+New scripts / examples are always welcome as they great for new users to learn how to use pycatia.
 
-If you have written a script using pycatia you would like to share you can:
+Please refer to the existing examples and user_scripts for how to format your code.
 
-* email me your script: evereux@gmail.com
-* submit a pull request - add the example to the existing examples.
-* raise an issue
+If you would like to submit a script / example you can raise an issue or pull request on github. Alternatively you can
+email them to me at evereux@gmail.com.
+
+### Examples
+
+Examples should be kept simple and if possible focus on showing how to use a single method.
+
+### User Scripts
+
+These are more advanced scripts that don't fall under the category of examples. Hopefully we can build up a repository
+of scripts users will find helpful in their day to day usage of CATIA V5.
 
 ## Tests
 
