@@ -24,6 +24,7 @@
     Splines
     Translations (point to point, scaling and rotate)
     Parameters and Relations: These are linked to geometry
+    Changes the colour of the final surface.
     Publications
 """
 
@@ -42,6 +43,7 @@ from pycatia.mec_mod_interfaces.part import Part
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.scripts.vba import vba_nothing
 
+from wing_surface_from_naca_profile_support.colour import set_colour
 from wing_surface_from_naca_profile_support.geometrical_sets import create_geometrical_set
 from wing_surface_from_naca_profile_support.origin_elements import get_ref_origin_elements
 from wing_surface_from_naca_profile_support.points import add_points
@@ -76,6 +78,8 @@ if documents.count > 0:
 new_part = documents.add('Part')
 document = application.active_document
 
+selection = document.selection
+
 product = Product(document.product.com_object)
 product.part_number = part_number
 
@@ -86,6 +90,12 @@ relations = part.relations
 
 hybrid_shape_factory = part.hybrid_shape_factory
 hybrid_bodies = part.hybrid_bodies
+
+# delete the default created geometrical set if it exists.
+gs_delete = hybrid_bodies.get_item_by_name("Geometrical Set.1")
+selection.clear()
+selection.add(gs_delete)
+selection.delete()
 
 gs_master_geometry = create_geometrical_set(hybrid_bodies, "MasterGeometry")
 gs_construction_geometry = create_geometrical_set(hybrid_bodies, "ConstructionGeometry")
@@ -260,6 +270,14 @@ hs_loft.add_section_to_loft(ref_spline_final, 1, vba_nothing)
 gs_master_geometry.append_hybrid_shape(hs_loft)
 hs_loft.name = surface_name
 
+# set the colour of the surface
+# todo: this doesn't currently work and I can't figure out why.
+#  It works as a standalone script.
+gs_master_geometry_hbs = gs_master_geometry.hybrid_shapes
+surface_wing = gs_master_geometry_hbs.get_item_by_name(surface_name)
+colour = (0, 255, 0, 0)
+set_colour(selection, surface_wing, colour)
+
 # publish the surface.
 ref_hs_loft = product.create_reference_from_name(f"{product.part_number}/!{hs_loft.name}")
 # ref_hs_loft = part.create_reference_from_object(hs_loft)
@@ -268,11 +286,16 @@ publication = publications.add(hs_loft.name)
 publications.set_direct(hs_loft.name, ref_hs_loft)
 
 # hide all the ConstructionGeometry elements.
-hide_the_shapes(document, gs_construction_geometry)
+hide_the_shapes(selection, gs_construction_geometry)
 
 part.update_object(gs_construction_geometry)
 part.update_object(gs_master_geometry)
 part.update()
+
+# make the main PartBody the in work object.
+bodies = part.bodies
+body = bodies.get_item_by_name("PartBody")
+part.in_work_object = body
 
 windows = application.windows
 window = windows.get_item_by_name(f"{product.part_number}.CATPart")
