@@ -17,6 +17,10 @@ def read_dat_file(naca_dat_file: Path, chord_length: float) -> tuple[list, list]
     :param float chord_length: chord length in mm
     :return: tuple[list, list]
     """
+
+    if not naca_dat_file.is_file():
+        raise FileNotFoundError(f'Could find load {naca_dat_file}.')
+
     upper_coordinates: list = []
     lower_coordinates: list = []
 
