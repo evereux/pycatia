@@ -1,0 +1,44 @@
+{
+    "border_offset": 10,
+    "company_details": {
+        "name": "pycatia",
+        "address": [
+            "github",
+            "url: https://github.com/evereux/pycatia",
+            "email: evereux@gmail.com"
+        ]
+    },
+    "parameters": {
+        "APPROVED-BY": "[ approved ]",
+        "DATE": "[ mm / yyyy ]",
+        "DRAWING-NUMBER": "[ drawing number ]",
+        "DRAWN-BY": "[ drawn by ]",
+        "REVISION": "XX",
+        "SCALE": "[ scale ]",
+        "SIZE": "aa",
+        "TICKET": "[ #00000 ]",
+        "TITLE": "[ title ]",
+        "TOTAL-SHEETS": "00",
+        "YEAR": "[ year ]"
+    },
+    "sheet_names": [
+        "Sheet.1",
+        "Sheet.2"
+    ],
+    "sheet_sizes": {
+        "A0": [[1189, 841], [5, 4]],
+        "A1": [[841, 594], [4, 3]],
+        "A2": [[594, 420], [3, 2]],
+        "A3": [[420, 297],  [3, 2]],
+        "A4-portrait": [[210, 297], [0, 0]],
+        "A4-landscape": [[297, 210], [0, 0]]
+    },
+    "logo": "logo\\pycatia-logo.jpg",
+    "template_name": "DT-001 A",
+    "tolerances": {
+        ",X": "±1,5",
+        ",XX": "±,75",
+        ",XXX": "±,25"
+    },
+    "units":["METRIC", "MILLIMETRES"]
+}
