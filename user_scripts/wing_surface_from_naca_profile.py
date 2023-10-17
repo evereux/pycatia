@@ -258,13 +258,6 @@ hs_loft.add_section_to_loft(ref_spline_final, 1, vba_nothing)
 gs_master_geometry.append_hybrid_shape(hs_loft)
 hs_loft.name = surface_name
 
-# set the colour of the surface
-# todo: this doesn't currently work and I can't figure out why.
-#  It works as a standalone script.
-gs_master_geometry_hbs = gs_master_geometry.hybrid_shapes
-surface_wing = gs_master_geometry_hbs.get_item_by_name(surface_name)
-colour = (0, 255, 0, 0)
-set_colour(selection, surface_wing, colour)
 
 # publish the surface.
 ref_hs_loft = product.create_reference_from_name(f"{product.part_number}/!{hs_loft.name}")
@@ -279,6 +272,13 @@ hide_the_shapes(selection, gs_construction_geometry)
 part.update_object(gs_construction_geometry)
 part.update_object(gs_master_geometry)
 part.update()
+
+# set the colour of the surface
+# note: part must be updated first, otherwise the Surface.WingSurface element isn
+gs_master_geometry_hbs = gs_master_geometry.hybrid_shapes
+surface_wing = gs_master_geometry_hbs.get_item_by_name(surface_name)
+colour = (0, 255, 0, 0)
+set_colour(selection, surface_wing, colour)
 
 # make the main PartBody the in work object.
 bodies = part.bodies
