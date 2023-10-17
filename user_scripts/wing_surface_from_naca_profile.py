@@ -94,9 +94,11 @@ hybrid_bodies = part.hybrid_bodies
 
 # delete the default created geometrical set if it exists.
 gs_delete = hybrid_bodies.get_item_by_name("Geometrical Set.1")
-selection.clear()
-selection.add(gs_delete)
-selection.delete()
+if gs_delete is not None:
+    # Check if gs_delete is valid, otherwise an error is thrown, if a part isn't created with a geometrical set
+    selection.clear()
+    selection.add(gs_delete)
+    selection.delete()
 
 gs_master_geometry = create_geometrical_set(hybrid_bodies, "MasterGeometry")
 gs_construction_geometry = create_geometrical_set(hybrid_bodies, "ConstructionGeometry")
