@@ -13,7 +13,6 @@ from pycatia.hybrid_shape_interfaces.hybrid_shape_direction import HybridShapeDi
 from pycatia.in_interfaces.reference import Reference
 from pycatia.knowledge_interfaces.angle import Angle
 from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
-from pycatia.system_interfaces.system_service import SystemService
 
 
 class HybridShapeCircle(HybridShape):
