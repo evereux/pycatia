@@ -276,11 +276,10 @@ part.update_object(gs_master_geometry)
 part.update()
 
 # set the colour of the surface
-# note: part must be updated first, otherwise the Surface.WingSurface element isn
-gs_master_geometry_hbs = gs_master_geometry.hybrid_shapes
-surface_wing = gs_master_geometry_hbs.get_item_by_name(surface_name)
+# note: part must be updated first, otherwise the Surface.WingSurface element
+# isn't available to update it' colour.
 colour = (0, 255, 0, 0)
-set_colour(selection, surface_wing, colour)
+set_colour(selection, hs_loft, colour)
 
 # make the main PartBody the in work object.
 bodies = part.bodies
