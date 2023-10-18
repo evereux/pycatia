@@ -1,6 +1,8 @@
 User Scripts
 ============
 
+User created scripts that are more advanced than the :ref:`examples`.
+
 Index
 -----
 

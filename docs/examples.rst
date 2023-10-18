@@ -1,6 +1,10 @@
 Examples
 ========
 
+Simple examples that help you get started using pycatia.
+
+For more complex scripts see the section on :ref:`User Scripts`.
+
 Index
 -----
 
