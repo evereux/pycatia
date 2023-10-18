@@ -26,6 +26,7 @@
     Parameters and Relations: These are linked to geometry
     Changes the colour of the final surface.
     Publications
+
 """
 
 ##########################################################
@@ -259,7 +260,6 @@ hs_loft.add_section_to_loft(ref_hs_spline, 1, vba_nothing)
 hs_loft.add_section_to_loft(ref_spline_final, 1, vba_nothing)
 gs_master_geometry.append_hybrid_shape(hs_loft)
 hs_loft.name = surface_name
-
 
 # publish the surface.
 ref_hs_loft = product.create_reference_from_name(f"{product.part_number}/!{hs_loft.name}")
