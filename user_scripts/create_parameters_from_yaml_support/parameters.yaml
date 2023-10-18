@@ -1,0 +1,39 @@
+parameters:
+  MaxDepth:
+    type: Length
+    value: 5
+  MinDepth:
+    type: Length
+    value: 3
+  Revision:
+    type: String
+    value: 'A'
+  Mass:
+    type: Mass
+    value: 3
+sets:
+  HorizontalStiffeners:
+    sets:
+      Other:
+        parameters:
+          Temp:
+            type: Real
+            value: 55
+          IsValid:
+            type: Bool
+            value: True
+    parameters:
+      UpperThickness:
+        type: Length
+        value: 5
+      UpperHeight:
+        type: Length
+        value: 5
+  Cutters:
+    parameters:
+      Cutter_1:
+        type: Length
+        value: 5
+      Cutter_2:
+        type: Length
+        value: 5
