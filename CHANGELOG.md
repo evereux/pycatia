@@ -7,7 +7,6 @@
 * added vba_nothing to HybridShapeLoft.add_section_to_loft.
 * added vba_nothing to HybridShapeSpline.add_point_with_constraint_explicit.
 * added missing type hint to HybridBody.append_hybrid_shapes
-*
 
 ## 0.6.1
 
