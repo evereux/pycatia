@@ -10,6 +10,8 @@ Index
 
 :ref:`DRAWING TEMPLATE<Drawing Template>`
 
+:ref:`RENAME INSTANCES IN PRODUCT<Rename Instances In Product>`
+
 :ref:`WING SURFACE FROM NACA PROFILE<Wing Surface From Naca Profile>`
 
 
@@ -38,6 +40,18 @@ See script header for more information.
 .. image:: images/parameters.png
 
 `Create parameters from YAML <https://github.com/evereux/pycatia/blob/master/user_scripts/create_parameters_from_yaml.py>`_
+
+
+
+RENAME INSTANCES IN PRODUCT
+---------------------------
+
+Sequentially renames the instances of products within a selected product.
+
+See script header for more information.
+
+`Rename Instance In Product <https://github.com/evereux/pycatia/blob/master/user_scripts/rename_instances_in_product.py>`_
+
 
 
 WING SURFACE FROM NACA PROFILE
