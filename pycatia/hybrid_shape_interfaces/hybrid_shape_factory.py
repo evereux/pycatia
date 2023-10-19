@@ -153,8 +153,16 @@ class HybridShapeFactory(Factory):
         super().__init__(com_object)
         self.hybrid_shape_factory = com_object
 
-    def add_new3_d_corner(self, i_element1: Reference, i_element2: Reference, i_direction: HybridShapeDirection,
-                          i_radius: float, i_orientation1: int, i_orientation2: int, i_trim: bool) -> HybridShapeCorner:
+    def add_new_3d_corner(
+            self,
+            i_element1: Reference,
+            i_element2: Reference,
+            i_direction: HybridShapeDirection,
+            i_radius: float,
+            i_orientation1: int,
+            i_orientation2: int,
+            i_trim: bool
+    ) -> HybridShapeCorner:
         """
         .. note::
             :class: toggle
@@ -205,12 +213,26 @@ class HybridShapeFactory(Factory):
         :return: HybridShapeCorner
         :rtype: HybridShapeCorner
         """
-        return HybridShapeCorner(self.hybrid_shape_factory.AddNew3DCorner(i_element1.com_object, i_element2.com_object,
-                                                                          i_direction.com_object, i_radius,
-                                                                          i_orientation1, i_orientation2, i_trim))
+        return HybridShapeCorner(
+            self.hybrid_shape_factory.AddNew3DCorner(
+                i_element1.com_object,
+                i_element2.com_object,
+                i_direction.com_object,
+                i_radius,
+                i_orientation1,
+                i_orientation2,
+                i_trim
+            )
+        )
 
-    def add_new_3d_curve_offset(self, i_curve_to_offset: Reference, i_direction: HybridShapeDirection, i_offset: float,
-                                i_corner_radius: float, i_corner_tension: float) -> HybridShape3DCurveOffset:
+    def add_new_3d_curve_offset(
+            self,
+            i_curve_to_offset: Reference,
+            i_direction: HybridShapeDirection,
+            i_offset: float,
+            i_corner_radius: float,
+            i_corner_tension: float
+    ) -> HybridShape3DCurveOffset:
         """
         .. note::
             :class: toggle
@@ -249,11 +271,21 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShape3DCurveOffset
         """
         return HybridShape3DCurveOffset(
-            self.hybrid_shape_factory.AddNew3DCurveOffset(i_curve_to_offset.com_object, i_direction.com_object,
-                                                          i_offset, i_corner_radius, i_corner_tension))
+            self.hybrid_shape_factory.AddNew3DCurveOffset(
+                i_curve_to_offset.com_object,
+                i_direction.com_object,
+                i_offset,
+                i_corner_radius, i_corner_tension
+            )
+        )
 
-    def add_new_affinity(self, i_element: Reference, i_x_ratio: float, i_y_ratio: float,
-                         i_z_ratio: float) -> HybridShapeAffinity:
+    def add_new_affinity(
+            self,
+            i_element: Reference,
+            i_x_ratio: float,
+            i_y_ratio: float,
+            i_z_ratio: float
+    ) -> HybridShapeAffinity:
         """
         .. note::
             :class: toggle
@@ -291,7 +323,13 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeAffinity
         """
         return HybridShapeAffinity(
-            self.hybrid_shape_factory.AddNewAffinity(i_element.com_object, i_x_ratio, i_y_ratio, i_z_ratio))
+            self.hybrid_shape_factory.AddNewAffinity(
+                i_element.com_object,
+                i_x_ratio,
+                i_y_ratio,
+                i_z_ratio
+            )
+        )
 
     def add_new_axis_line(self, i_element: Reference) -> HybridShapeAxisLine:
         """
@@ -318,8 +356,12 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapeAxisLine(self.hybrid_shape_factory.AddNewAxisLine(i_element.com_object))
 
-    def add_new_axis_to_axis(self, i_object: Reference, i_reference_axis: Reference,
-                             i_target_axis: Reference) -> HybridShapeAxisToAxis:
+    def add_new_axis_to_axis(
+            self,
+            i_object: Reference,
+            i_reference_axis: Reference,
+            i_target_axis: Reference
+    ) -> HybridShapeAxisToAxis:
         """
         .. note::
             :class: toggle
@@ -350,8 +392,12 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeAxisToAxis
         """
         return HybridShapeAxisToAxis(
-            self.hybrid_shape_factory.AddNewAxisToAxis(i_object.com_object, i_reference_axis.com_object,
-                                                       i_target_axis.com_object))
+            self.hybrid_shape_factory.AddNewAxisToAxis(
+                i_object.com_object,
+                i_reference_axis.com_object,
+                i_target_axis.com_object
+            )
+        )
 
     def add_new_blend(self) -> HybridShapeBlend:
         """
@@ -373,8 +419,12 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapeBlend(self.hybrid_shape_factory.AddNewBlend())
 
-    def add_new_boundary(self, i_initial_element: Reference, i_support: Reference,
-                         i_typede_propagation: int) -> HybridShapeBoundary:
+    def add_new_boundary(
+            self,
+            i_initial_element: Reference,
+            i_support: Reference,
+            i_typede_propagation: int
+    ) -> HybridShapeBoundary:
         """
         .. note::
             :class: toggle
@@ -415,8 +465,12 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeBoundary
         """
         return HybridShapeBoundary(
-            self.hybrid_shape_factory.AddNewBoundary(i_initial_element.com_object, i_support.com_object,
-                                                     i_typede_propagation))
+            self.hybrid_shape_factory.AddNewBoundary(
+                i_initial_element.com_object,
+                i_support.com_object,
+                i_typede_propagation
+            )
+        )
 
     def add_new_boundary_of_surface(self, surface: Reference) -> HybridShapeBoundary:
         """
@@ -468,8 +522,15 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapeBump(self.hybrid_shape_factory.AddNewBump(i_body_to_bump.com_object))
 
-    def add_new_circle2_points_rad(self, i_point1: Reference, i_point2: Reference, i_support: Reference,
-                                   i_geodesic: bool, i_radius: float, i_ori: int) -> HybridShapeCircle2PointsRad:
+    def add_new_circle2_points_rad(
+            self,
+            i_point1: Reference,
+            i_point2: Reference,
+            i_support: Reference,
+            i_geodesic: bool,
+            i_radius: float,
+            i_ori: int
+    ) -> HybridShapeCircle2PointsRad:
         """
         .. note::
             :class: toggle
@@ -522,11 +583,22 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeCircle2PointsRad
         """
         return HybridShapeCircle2PointsRad(
-            self.hybrid_shape_factory.AddNewCircle2PointsRad(i_point1.com_object, i_point2.com_object,
-                                                             i_support.com_object, i_geodesic, i_radius, i_ori))
+            self.hybrid_shape_factory.AddNewCircle2PointsRad(
+                i_point1.com_object, i_point2.com_object,
+                i_support.com_object,
+                i_geodesic,
+                i_radius,
+                i_ori
 
-    def add_new_circle3_points(self, i_point1: Reference, i_point2: Reference,
-                               i_point3: Reference) -> HybridShapeCircle3Points:
+            )
+        )
+
+    def add_new_circle3_points(
+            self,
+            i_point1: Reference,
+            i_point2: Reference,
+            i_point3: Reference
+    ) -> HybridShapeCircle3Points:
         """
         .. note::
             :class: toggle
@@ -564,12 +636,22 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeCircle3Points
         """
         return HybridShapeCircle3Points(
-            self.hybrid_shape_factory.AddNewCircle3Points(i_point1.com_object, i_point2.com_object,
-                                                          i_point3.com_object))
+            self.hybrid_shape_factory.AddNewCircle3Points(
+                i_point1.com_object,
+                i_point2.com_object,
+                i_point3.com_object
+            )
+        )
 
-    def add_new_circle_bitangent_point(self, i_curve1: Reference, i_curve2: Reference, i_point: Reference,
-                                       i_support: Reference, i_ori1: int,
-                                       i_ori2: int) -> HybridShapeCircleBitangentPoint:
+    def add_new_circle_bitangent_point(
+            self,
+            i_curve1: Reference,
+            i_curve2: Reference,
+            i_point: Reference,
+            i_support: Reference,
+            i_ori1: int,
+            i_ori2: int
+    ) -> HybridShapeCircleBitangentPoint:
         """
         .. note::
             :class: toggle
@@ -622,12 +704,25 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeCircleBitangentPoint
         """
         return HybridShapeCircleBitangentPoint(
-            self.hybrid_shape_factory.AddNewCircleBitangentPoint(i_curve1.com_object, i_curve2.com_object,
-                                                                 i_point.com_object, i_support.com_object, i_ori1,
-                                                                 i_ori2))
+            self.hybrid_shape_factory.AddNewCircleBitangentPoint(
+                i_curve1.com_object,
+                i_curve2.com_object,
+                i_point.com_object,
+                i_support.com_object,
+                i_ori1,
+                i_ori2
+            )
+        )
 
-    def add_new_circle_bitangent_radius(self, i_curve1: Reference, i_curve2: Reference, i_support: Reference,
-                                        i_radius: float, i_ori1: int, i_ori2: int) -> HybridShapeCircleBitangentRadius:
+    def add_new_circle_bitangent_radius(
+            self,
+            i_curve1: Reference,
+            i_curve2: Reference,
+            i_support: Reference,
+            i_radius: float,
+            i_ori1: int,
+            i_ori2: int
+    ) -> HybridShapeCircleBitangentRadius:
         """
         .. note::
             :class: toggle
@@ -679,11 +774,23 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeCircleBitangentRadius
         """
         return HybridShapeCircleBitangentRadius(
-            self.hybrid_shape_factory.AddNewCircleBitangentRadius(i_curve1.com_object, i_curve2.com_object,
-                                                                  i_support.com_object, i_radius, i_ori1, i_ori2))
+            self.hybrid_shape_factory.AddNewCircleBitangentRadius(
+                i_curve1.com_object,
+                i_curve2.com_object,
+                i_support.com_object,
+                i_radius,
+                i_ori1,
+                i_ori2
+            )
+        )
 
-    def add_new_circle_center_axis(self, i_axis: Reference, i_point: Reference, i_value: float,
-                                   i_projection: bool) -> HybridShapeCircleCenterAxis:
+    def add_new_circle_center_axis(
+            self,
+            i_axis: Reference,
+            i_point: Reference,
+            i_value: float,
+            i_projection: bool
+    ) -> HybridShapeCircleCenterAxis:
         """
         .. note::
             :class: toggle
@@ -720,12 +827,23 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeCircleCenterAxis
         """
         return HybridShapeCircleCenterAxis(
-            self.hybrid_shape_factory.AddNewCircleCenterAxis(i_axis.com_object, i_point.com_object, i_value,
-                                                             i_projection))
+            self.hybrid_shape_factory.AddNewCircleCenterAxis(
+                i_axis.com_object,
+                i_point.com_object,
+                i_value,
+                i_projection
+            )
+        )
 
-    def add_new_circle_center_axis_with_angles(self, i_axis: Reference, i_point: Reference, i_value: float,
-                                               i_projection: bool, i_start_angle: float,
-                                               i_end_angle: float) -> HybridShapeCircleCenterAxis:
+    def add_new_circle_center_axis_with_angles(
+            self,
+            i_axis: Reference,
+            i_point: Reference,
+            i_value: float,
+            i_projection: bool,
+            i_start_angle: float,
+            i_end_angle: float
+    ) -> HybridShapeCircleCenterAxis:
         """
         .. note::
             :class: toggle
@@ -774,11 +892,23 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeCircleCenterAxis
         """
         return HybridShapeCircleCenterAxis(
-            self.hybrid_shape_factory.AddNewCircleCenterAxisWithAngles(i_axis.com_object, i_point.com_object, i_value,
-                                                                       i_projection, i_start_angle, i_end_angle))
+            self.hybrid_shape_factory.AddNewCircleCenterAxisWithAngles(
+                i_axis.com_object,
+                i_point.com_object,
+                i_value,
+                i_projection,
+                i_start_angle,
+                i_end_angle
+            )
+        )
 
-    def add_new_circle_center_tangent(self, i_center_elem: Reference, i_tangent_curve: Reference, i_support: Reference,
-                                      i_radius: float) -> HybridShapeCircleCenterTangent:
+    def add_new_circle_center_tangent(
+            self,
+            i_center_elem: Reference,
+            i_tangent_curve: Reference,
+            i_support: Reference,
+            i_radius: float
+    ) -> HybridShapeCircleCenterTangent:
         """
         .. note::
             :class: toggle
@@ -815,11 +945,21 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeCircleCenterTangent
         """
         return HybridShapeCircleCenterTangent(
-            self.hybrid_shape_factory.AddNewCircleCenterTangent(i_center_elem.com_object, i_tangent_curve.com_object,
-                                                                i_support.com_object, i_radius))
+            self.hybrid_shape_factory.AddNewCircleCenterTangent(
+                i_center_elem.com_object,
+                i_tangent_curve.com_object,
+                i_support.com_object,
+                i_radius
+            )
+        )
 
-    def add_new_circle_ctr_pt(self, i_center: Reference, i_crossing_point: Reference, i_support: Reference,
-                              i_geodesic: bool) -> HybridShapeCircleCtrPt:
+    def add_new_circle_ctr_pt(
+            self,
+            i_center: Reference,
+            i_crossing_point: Reference,
+            i_support: Reference,
+            i_geodesic: bool
+    ) -> HybridShapeCircleCtrPt:
         """
         .. note::
             :class: toggle
@@ -861,12 +1001,23 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeCircleCtrPt
         """
         return HybridShapeCircleCtrPt(
-            self.hybrid_shape_factory.AddNewCircleCtrPt(i_center.com_object, i_crossing_point.com_object,
-                                                        i_support.com_object, i_geodesic))
+            self.hybrid_shape_factory.AddNewCircleCtrPt(
+                i_center.com_object,
+                i_crossing_point.com_object,
+                i_support.com_object,
+                i_geodesic
+            )
+        )
 
-    def add_new_circle_ctr_pt_with_angles(self, i_center: Reference, i_crossing_point: Reference, i_support: Reference,
-                                          i_geodesic: bool, i_start_angle: float,
-                                          i_end_angle: float) -> HybridShapeCircleCtrPt:
+    def add_new_circle_ctr_pt_with_angles(
+            self,
+            i_center: Reference,
+            i_crossing_point: Reference,
+            i_support: Reference,
+            i_geodesic: bool,
+            i_start_angle: float,
+            i_end_angle: float
+    ) -> HybridShapeCircleCtrPt:
         """
         .. note::
             :class: toggle
@@ -916,12 +1067,23 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeCircleCtrPt
         """
         return HybridShapeCircleCtrPt(
-            self.hybrid_shape_factory.AddNewCircleCtrPtWithAngles(i_center.com_object, i_crossing_point.com_object,
-                                                                  i_support.com_object, i_geodesic, i_start_angle,
-                                                                  i_end_angle))
+            self.hybrid_shape_factory.AddNewCircleCtrPtWithAngles(
+                i_center.com_object,
+                i_crossing_point.com_object,
+                i_support.com_object,
+                i_geodesic,
+                i_start_angle,
+                i_end_angle
+            )
+        )
 
-    def add_new_circle_ctr_rad(self, i_center: Reference, i_support: Reference, i_geodesic: bool,
-                               i_radius: float) -> HybridShapeCircleCtrRad:
+    def add_new_circle_ctr_rad(
+            self,
+            i_center: Reference,
+            i_support: Reference,
+            i_geodesic: bool,
+            i_radius: float
+    ) -> HybridShapeCircleCtrRad:
         """
         .. note::
             :class: toggle
@@ -962,12 +1124,23 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeCircleCtrRad
         """
         return HybridShapeCircleCtrRad(
-            self.hybrid_shape_factory.AddNewCircleCtrRad(i_center.com_object, i_support.com_object, i_geodesic,
-                                                         i_radius))
+            self.hybrid_shape_factory.AddNewCircleCtrRad(
+                i_center.com_object,
+                i_support.com_object,
+                i_geodesic,
+                i_radius
+            )
+        )
 
-    def add_new_circle_ctr_rad_with_angles(self, i_center: Reference, i_support: Reference, i_geodesic: bool,
-                                           i_radius: float, i_start_angle: float,
-                                           i_end_angle: float) -> HybridShapeCircleCtrRad:
+    def add_new_circle_ctr_rad_with_angles(
+            self,
+            i_center: Reference,
+            i_support: Reference,
+            i_geodesic: bool,
+            i_radius: float,
+            i_start_angle: float,
+            i_end_angle: float
+    ) -> HybridShapeCircleCtrRad:
         """
         .. note::
             :class: toggle
@@ -1016,8 +1189,15 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeCircleCtrRad
         """
         return HybridShapeCircleCtrRad(
-            self.hybrid_shape_factory.AddNewCircleCtrRadWithAngles(i_center.com_object, i_support.com_object,
-                                                                   i_geodesic, i_radius, i_start_angle, i_end_angle))
+            self.hybrid_shape_factory.AddNewCircleCtrRadWithAngles(
+                i_center.com_object,
+                i_support.com_object,
+                i_geodesic,
+                i_radius,
+                i_start_angle,
+                i_end_angle
+            )
+        )
 
     def add_new_circle_datum(self, i_object: Reference) -> HybridShapeCircleExplicit:
         """
@@ -1046,9 +1226,16 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapeCircleExplicit(self.hybrid_shape_factory.AddNewCircleDatum(i_object.com_object))
 
-    def add_new_circle_tritangent(self, i_curve1: Reference, i_curve2: Reference, i_curve3: Reference,
-                                  i_support: Reference, i_ori1: int, i_ori2: int,
-                                  i_ori3: int) -> HybridShapeCircleTritangent:
+    def add_new_circle_tritangent(
+            self,
+            i_curve1: Reference,
+            i_curve2: Reference,
+            i_curve3: Reference,
+            i_support: Reference,
+            i_ori1: int,
+            i_ori2: int,
+            i_ori3: int
+    ) -> HybridShapeCircleTritangent:
         """
         .. note::
             :class: toggle
@@ -1104,12 +1291,23 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeCircleTritangent
         """
         return HybridShapeCircleTritangent(
-            self.hybrid_shape_factory.AddNewCircleTritangent(i_curve1.com_object, i_curve2.com_object,
-                                                             i_curve3.com_object, i_support.com_object, i_ori1, i_ori2,
-                                                             i_ori3))
+            self.hybrid_shape_factory.AddNewCircleTritangent(
+                i_curve1.com_object,
+                i_curve2.com_object,
+                i_curve3.com_object,
+                i_support.com_object,
+                i_ori1,
+                i_ori2,
+                i_ori3
+            )
+        )
 
-    def add_new_combine(self, i_first_curve: Reference, i_second_curve: Reference,
-                        i_nearest_solutions: int) -> HybridShapeCombine:
+    def add_new_combine(
+            self,
+            i_first_curve: Reference,
+            i_second_curve: Reference,
+            i_nearest_solutions: int
+    ) -> HybridShapeCombine:
         """
         .. note::
             :class: toggle
@@ -1150,11 +1348,19 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeCombine
         """
         return HybridShapeCombine(
-            self.hybrid_shape_factory.AddNewCombine(i_first_curve.com_object, i_second_curve.com_object,
-                                                    i_nearest_solutions))
+            self.hybrid_shape_factory.AddNewCombine(
+                i_first_curve.com_object,
+                i_second_curve.com_object,
+                i_nearest_solutions
+            )
+        )
 
-    def add_new_conic(self, i_support: Reference, i_starting_point: Reference,
-                      i_end_point: Reference) -> HybridShapeConic:
+    def add_new_conic(
+            self,
+            i_support: Reference,
+            i_starting_point: Reference,
+            i_end_point: Reference
+    ) -> HybridShapeConic:
         """
         .. note::
             :class: toggle
@@ -1191,11 +1397,21 @@ class HybridShapeFactory(Factory):
         :return: HybridShapeConic
         :rtype: HybridShapeConic
         """
-        return HybridShapeConic(self.hybrid_shape_factory.AddNewConic(i_support.com_object, i_starting_point.com_object,
-                                                                      i_end_point.com_object))
+        return HybridShapeConic(self.hybrid_shape_factory.AddNewConic(
+            i_support.com_object,
+            i_starting_point.com_object,
+            i_end_point.com_object
+        )
+        )
 
-    def add_new_conical_reflect_line_with_type(self, i_support: Reference, i_origin: Reference, i_angle: float,
-                                               i_orientation_support: int, i_type: int) -> HybridShapeReflectLine:
+    def add_new_conical_reflect_line_with_type(
+            self,
+            i_support: Reference,
+            i_origin: Reference,
+            i_angle: float,
+            i_orientation_support: int,
+            i_type: int
+    ) -> HybridShapeReflectLine:
         """
         .. note::
             :class: toggle
@@ -1245,12 +1461,29 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeReflectLine
         """
         return HybridShapeReflectLine(
-            self.hybrid_shape_factory.AddNewConicalReflectLineWithType(i_support.com_object, i_origin.com_object,
-                                                                       i_angle, i_orientation_support, i_type))
+            self.hybrid_shape_factory.AddNewConicalReflectLineWithType(
+                i_support.com_object,
+                i_origin.com_object,
+                i_angle,
+                i_orientation_support,
+                i_type
+            )
+        )
 
-    def add_new_connect(self, i_curve1: Reference, i_point1: Reference, i_orient1: int, i_continuity1: int,
-                        i_tension1: float, i_curve2: Reference, i_point2: Reference, i_orient2: int, i_continuity2: int,
-                        i_tension2: float, trim: bool) -> HybridShapeConnect:
+    def add_new_connect(
+            self,
+            i_curve1: Reference,
+            i_point1: Reference,
+            i_orient1: int,
+            i_continuity1: int,
+            i_tension1: float,
+            i_curve2: Reference,
+            i_point2: Reference,
+            i_orient2: int,
+            i_continuity2: int,
+            i_tension2: float,
+            trim: bool
+    ) -> HybridShapeConnect:
         """
         .. note::
             :class: toggle
@@ -1324,12 +1557,31 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeConnect
         """
         return HybridShapeConnect(
-            self.hybrid_shape_factory.AddNewConnect(i_curve1.com_object, i_point1.com_object, i_orient1, i_continuity1,
-                                                    i_tension1, i_curve2.com_object, i_point2.com_object, i_orient2,
-                                                    i_continuity2, i_tension2, trim))
+            self.hybrid_shape_factory.AddNewConnect(
+                i_curve1.com_object,
+                i_point1.com_object,
+                i_orient1,
+                i_continuity1,
+                i_tension1,
+                i_curve2.com_object,
+                i_point2.com_object,
+                i_orient2,
+                i_continuity2,
+                i_tension2,
+                trim
+            )
+        )
 
-    def add_new_corner(self, i_element1: Reference, i_element2: Reference, i_support: Reference, i_radius: float,
-                       i_orientation1: int, i_orientation2: int, i_trim: bool) -> HybridShapeCorner:
+    def add_new_corner(
+            self,
+            i_element1: Reference,
+            i_element2: Reference,
+            i_support: Reference,
+            i_radius: float,
+            i_orientation1: int,
+            i_orientation2: int,
+            i_trim: bool
+    ) -> HybridShapeCorner:
         """
         .. note::
             :class: toggle
@@ -1389,8 +1641,16 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeCorner
         """
         return HybridShapeCorner(
-            self.hybrid_shape_factory.AddNewCorner(i_element1.com_object, i_element2.com_object, i_support.com_object,
-                                                   i_radius, i_orientation1, i_orientation2, i_trim))
+            self.hybrid_shape_factory.AddNewCorner(
+                i_element1.com_object,
+                i_element2.com_object,
+                i_support.com_object,
+                i_radius,
+                i_orientation1,
+                i_orientation2,
+                i_trim
+            )
+        )
 
     def add_new_curve_datum(self, i_object: Reference) -> HybridShapeCurveExplicit:
         """
@@ -1419,8 +1679,14 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapeCurveExplicit(self.hybrid_shape_factory.AddNewCurveDatum(i_object.com_object))
 
-    def add_new_curve_par(self, curve: Reference, support: Reference, distance: float, invert_direction: bool,
-                          geodesic: bool) -> HybridShapeCurvePar:
+    def add_new_curve_par(
+            self,
+            curve: Reference,
+            support: Reference,
+            distance: float,
+            invert_direction: bool,
+            geodesic: bool
+    ) -> HybridShapeCurvePar:
         """
         .. note::
             :class: toggle
@@ -1465,8 +1731,14 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeCurvePar
         """
         return HybridShapeCurvePar(
-            self.hybrid_shape_factory.AddNewCurvePar(curve.com_object, support.com_object, distance, invert_direction,
-                                                     geodesic))
+            self.hybrid_shape_factory.AddNewCurvePar(
+                curve.com_object,
+                support.com_object,
+                distance,
+                invert_direction,
+                geodesic
+            )
+        )
 
     def add_new_curve_smooth(self, ip_ia_curve: Reference) -> HybridShapeCurveSmooth:
         """
@@ -1492,8 +1764,14 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapeCurveSmooth(self.hybrid_shape_factory.AddNewCurveSmooth(ip_ia_curve.com_object))
 
-    def add_new_cylinder(self, i_center: Reference, i_radius: float, i_first_length: float, i_second_length: float,
-                         i_direction: HybridShapeDirection) -> HybridShapeCylinder:
+    def add_new_cylinder(
+            self,
+            i_center: Reference,
+            i_radius: float,
+            i_first_length: float,
+            i_second_length: float,
+            i_direction: HybridShapeDirection
+    ) -> HybridShapeCylinder:
         """
         .. note::
             :class: toggle
@@ -1534,8 +1812,14 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeCylinder
         """
         return HybridShapeCylinder(
-            self.hybrid_shape_factory.AddNewCylinder(i_center.com_object, i_radius, i_first_length, i_second_length,
-                                                     i_direction.com_object))
+            self.hybrid_shape_factory.AddNewCylinder(
+                i_center.com_object,
+                i_radius,
+                i_first_length,
+                i_second_length,
+                i_direction.com_object
+            )
+        )
 
     def add_new_datums(self, i_elem: Reference) -> tuple:
         """
@@ -1632,7 +1916,12 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeDevelop
         """
         return HybridShapeDevelop(
-            self.hybrid_shape_factory.AddNewDevelop(i_mode, i_to_develop.com_object, i_support.com_object))
+            self.hybrid_shape_factory.AddNewDevelop(
+                i_mode,
+                i_to_develop.com_object,
+                i_support.com_object
+            )
+        )
 
     def add_new_direction(self, i_element: Reference) -> HybridShapeDirection:
         """
@@ -1784,8 +2073,12 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapeExtractMulti(self.hybrid_shape_factory.AddNewExtractMulti(element.com_object))
 
-    def add_new_extrapol_length(self, i_boundary: Reference, i_to_extrapol: Reference,
-                                i_length: float) -> HybridShapeExtrapol:
+    def add_new_extrapol_length(
+            self,
+            i_boundary: Reference,
+            i_to_extrapol: Reference,
+            i_length: float
+    ) -> HybridShapeExtrapol:
         """
         .. note::
             :class: toggle
@@ -1823,10 +2116,19 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeExtrapol
         """
         return HybridShapeExtrapol(
-            self.hybrid_shape_factory.AddNewExtrapolLength(i_boundary.com_object, i_to_extrapol.com_object, i_length))
+            self.hybrid_shape_factory.AddNewExtrapolLength(
+                i_boundary.com_object,
+                i_to_extrapol.com_object,
+                i_length
+            )
+        )
 
-    def add_new_extrapol_until(self, i_boundary: Reference, i_to_extrapol: Reference,
-                               i_until: Reference) -> HybridShapeExtrapol:
+    def add_new_extrapol_until(
+            self,
+            i_boundary: Reference,
+            i_to_extrapol: Reference,
+            i_until: Reference
+    ) -> HybridShapeExtrapol:
         """
         .. note::
             :class: toggle
@@ -1864,8 +2166,12 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeExtrapol
         """
         return HybridShapeExtrapol(
-            self.hybrid_shape_factory.AddNewExtrapolUntil(i_boundary.com_object, i_to_extrapol.com_object,
-                                                          i_until.com_object))
+            self.hybrid_shape_factory.AddNewExtrapolUntil(
+                i_boundary.com_object,
+                i_to_extrapol.com_object,
+                i_until.com_object
+            )
+        )
 
     def add_new_extremum(self, i_objet: Reference, i_dir: HybridShapeDirection, i_min_max: int) -> HybridShapeExtremum:
         """
@@ -1902,7 +2208,12 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeExtremum
         """
         return HybridShapeExtremum(
-            self.hybrid_shape_factory.AddNewExtremum(i_objet.com_object, i_dir.com_object, i_min_max))
+            self.hybrid_shape_factory.AddNewExtremum(
+                i_objet.com_object,
+                i_dir.com_object,
+                i_min_max
+            )
+        )
 
     def add_new_extremum_polar(self, i_type: int, ip_ia_contour: Reference) -> HybridShapeExtremumPolar:
         """
@@ -1932,8 +2243,13 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapeExtremumPolar(self.hybrid_shape_factory.AddNewExtremumPolar(i_type, ip_ia_contour.com_object))
 
-    def add_new_extrude(self, i_object_to_extrude: Reference, i_offset_debut: float, i_offset_fin: float,
-                        i_direction: HybridShapeDirection) -> HybridShapeExtrude:
+    def add_new_extrude(
+            self,
+            i_object_to_extrude: Reference,
+            i_offset_debut: float,
+            i_offset_fin: float,
+            i_direction: HybridShapeDirection
+    ) -> HybridShapeExtrude:
         """
         .. note::
             :class: toggle
@@ -1972,8 +2288,13 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeExtrude
         """
         return HybridShapeExtrude(
-            self.hybrid_shape_factory.AddNewExtrude(i_object_to_extrude.com_object, i_offset_debut, i_offset_fin,
-                                                    i_direction.com_object))
+            self.hybrid_shape_factory.AddNewExtrude(
+                i_object_to_extrude.com_object,
+                i_offset_debut,
+                i_offset_fin,
+                i_direction.com_object
+            )
+        )
 
     def add_new_fill(self) -> HybridShapeFill:
         """
@@ -1995,9 +2316,16 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapeFill(self.hybrid_shape_factory.AddNewFill())
 
-    def add_new_fillet_bi_tangent(self, i_element1: Reference, i_element2: Reference, i_radius: float,
-                                  i_orientation1: int, i_orientation2: int, i_supports_trim_mode: int,
-                                  i_ribbon_relimitation_mode: int) -> HybridShapeFilletBiTangent:
+    def add_new_fillet_bi_tangent(
+            self,
+            i_element1: Reference,
+            i_element2: Reference,
+            i_radius: float,
+            i_orientation1: int,
+            i_orientation2: int,
+            i_supports_trim_mode: int,
+            i_ribbon_relimitation_mode: int
+    ) -> HybridShapeFilletBiTangent:
         """
         .. note::
             :class: toggle
@@ -2050,14 +2378,28 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeFilletBiTangent
         """
         return HybridShapeFilletBiTangent(
-            self.hybrid_shape_factory.AddNewFilletBiTangent(i_element1.com_object, i_element2.com_object, i_radius,
-                                                            i_orientation1, i_orientation2, i_supports_trim_mode,
-                                                            i_ribbon_relimitation_mode))
+            self.hybrid_shape_factory.AddNewFilletBiTangent(
+                i_element1.com_object,
+                i_element2.com_object,
+                i_radius,
+                i_orientation1,
+                i_orientation2,
+                i_supports_trim_mode,
+                i_ribbon_relimitation_mode
+            )
+        )
 
-    def add_new_fillet_tri_tangent(self, i_element1: Reference, i_element2: Reference, i_remove_elem: Reference,
-                                   i_orientation1: int, i_orientation2: int, i_remove_orientation: int,
-                                   i_supports_trim_mode: int,
-                                   i_ribbon_relimitation_mode: int) -> HybridShapeFilletTriTangent:
+    def add_new_fillet_tri_tangent(
+            self,
+            i_element1: Reference,
+            i_element2: Reference,
+            i_remove_elem: Reference,
+            i_orientation1: int,
+            i_orientation2: int,
+            i_remove_orientation: int,
+            i_supports_trim_mode: int,
+            i_ribbon_relimitation_mode: int
+    ) -> HybridShapeFilletTriTangent:
         """
         .. note::
             :class: toggle
@@ -2116,10 +2458,17 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeFilletTriTangent
         """
         return HybridShapeFilletTriTangent(
-            self.hybrid_shape_factory.AddNewFilletTriTangent(i_element1.com_object, i_element2.com_object,
-                                                             i_remove_elem.com_object, i_orientation1, i_orientation2,
-                                                             i_remove_orientation, i_supports_trim_mode,
-                                                             i_ribbon_relimitation_mode))
+            self.hybrid_shape_factory.AddNewFilletTriTangent(
+                i_element1.com_object,
+                i_element2.com_object,
+                i_remove_elem.com_object,
+                i_orientation1,
+                i_orientation2,
+                i_remove_orientation,
+                i_supports_trim_mode,
+                i_ribbon_relimitation_mode
+            )
+        )
 
     def add_new_healing(self, i_body_toheal: Reference) -> HybridShapeHealing:
         """
@@ -2145,9 +2494,18 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapeHealing(self.hybrid_shape_factory.AddNewHealing(i_body_toheal.com_object))
 
-    def add_new_helix(self, i_axis: Reference, i_invert_axis: bool, i_starting_point: Reference, i_pitch: float,
-                      i_height: float, i_clockwise_revolution: bool, i_starting_angle: float, i_taper_angle: float,
-                      i_taper_outward: bool) -> HybridShapeHelix:
+    def add_new_helix(
+            self,
+            i_axis: Reference,
+            i_invert_axis: bool,
+            i_starting_point: Reference,
+            i_pitch: float,
+            i_height: float,
+            i_clockwise_revolution: bool,
+            i_starting_angle: float,
+            i_taper_angle: float,
+            i_taper_outward: bool
+    ) -> HybridShapeHelix:
         """
         .. note::
             :class: toggle
@@ -2209,12 +2567,22 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeHelix
         """
         return HybridShapeHelix(
-            self.hybrid_shape_factory.AddNewHelix(i_axis.com_object, i_invert_axis, i_starting_point.com_object,
-                                                  i_pitch, i_height, i_clockwise_revolution, i_starting_angle,
-                                                  i_taper_angle, i_taper_outward))
+            self.hybrid_shape_factory.AddNewHelix(
+                i_axis.com_object,
+                i_invert_axis,
+                i_starting_point.com_object,
+                i_pitch,
+                i_height, i_clockwise_revolution,
+                i_starting_angle,
+                i_taper_angle,
+                i_taper_outward))
 
-    def add_new_hybrid_scaling(self, i_elem_to_scale: Reference, i_center: Reference,
-                               i_ratio: float) -> HybridShapeScaling:
+    def add_new_hybrid_scaling(
+            self,
+            i_elem_to_scale: Reference,
+            i_center: Reference,
+            i_ratio: float
+    ) -> HybridShapeScaling:
         """
         .. note::
             :class: toggle
@@ -2250,10 +2618,17 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeScaling
         """
         return HybridShapeScaling(
-            self.hybrid_shape_factory.AddNewHybridScaling(i_elem_to_scale.com_object, i_center.com_object, i_ratio))
+            self.hybrid_shape_factory.AddNewHybridScaling(
+                i_elem_to_scale.com_object,
+                i_center.com_object,
+                i_ratio))
 
-    def add_new_hybrid_split(self, i_element1: Reference, i_element2: Reference,
-                             i_orientation: int) -> HybridShapeSplit:
+    def add_new_hybrid_split(
+            self,
+            i_element1: Reference,
+            i_element2: Reference,
+            i_orientation: int
+    ) -> HybridShapeSplit:
         """
         .. note::
             :class: toggle
@@ -2290,10 +2665,20 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeSplit
         """
         return HybridShapeSplit(
-            self.hybrid_shape_factory.AddNewHybridSplit(i_element1.com_object, i_element2.com_object, i_orientation))
+            self.hybrid_shape_factory.AddNewHybridSplit(
+                i_element1.com_object,
+                i_element2.com_object,
+                i_orientation
+            )
+        )
 
-    def add_new_hybrid_trim(self, i_element1: Reference, i_orientation1: int, i_element2: Reference,
-                            i_orientation2: int) -> HybridShapeTrim:
+    def add_new_hybrid_trim(
+            self, i_element1:
+            Reference,
+            i_orientation1: int,
+            i_element2: Reference,
+            i_orientation2: int
+    ) -> HybridShapeTrim:
         """
         .. note::
             :class: toggle
@@ -2331,8 +2716,13 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeTrim
         """
         return HybridShapeTrim(
-            self.hybrid_shape_factory.AddNewHybridTrim(i_element1.com_object, i_orientation1, i_element2.com_object,
-                                                       i_orientation2))
+            self.hybrid_shape_factory.AddNewHybridTrim(
+                i_element1.com_object,
+                i_orientation1,
+                i_element2.com_object,
+                i_orientation2
+            )
+        )
 
     def add_new_integrated_law(self, i_type: int) -> HybridShapeIntegratedLaw:
         """
@@ -2390,7 +2780,11 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeIntersection
         """
         return HybridShapeIntersection(
-            self.hybrid_shape_factory.AddNewIntersection(i_object1.com_object, i_object2.com_object))
+            self.hybrid_shape_factory.AddNewIntersection(
+                i_object1.com_object,
+                i_object2.com_object
+            )
+        )
 
     def add_new_inverse(self, element: Reference, inverse: int) -> HybridShapeInverse:
         """
@@ -2490,9 +2884,17 @@ class HybridShapeFactory(Factory):
         return HybridShapeLawDistProj(
             self.hybrid_shape_factory.AddNewLawDistProj(i_reference.com_object, i_definition.com_object))
 
-    def add_new_line_angle(self, i_curve: Reference, i_surface: Reference, i_point: Reference, i_geodesic: bool,
-                           i_begin_offset: float, i_end_offset: float, i_angle: float,
-                           i_orientation: bool) -> HybridShapeLineAngle:
+    def add_new_line_angle(
+            self,
+            i_curve: Reference,
+            i_surface: Reference,
+            i_point: Reference,
+            i_geodesic: bool,
+            i_begin_offset: float,
+            i_end_offset: float,
+            i_angle: float,
+            i_orientation: bool
+    ) -> HybridShapeLineAngle:
         """
         .. note::
             :class: toggle
@@ -2552,11 +2954,24 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeLineAngle
         """
         return HybridShapeLineAngle(
-            self.hybrid_shape_factory.AddNewLineAngle(i_curve.com_object, i_surface.com_object, i_point.com_object,
-                                                      i_geodesic, i_begin_offset, i_end_offset, i_angle, i_orientation))
+            self.hybrid_shape_factory.AddNewLineAngle(
+                i_curve.com_object,
+                i_surface.com_object,
+                i_point.com_object,
+                i_geodesic,
+                i_begin_offset,
+                i_end_offset,
+                i_angle,
+                i_orientation
+            )
+        )
 
-    def add_new_line_bi_tangent(self, i_curve1: Reference, i_element2: Reference,
-                                i_support: Reference) -> HybridShapeLineBiTangent:
+    def add_new_line_bi_tangent(
+            self,
+            i_curve1: Reference,
+            i_element2: Reference,
+            i_support: Reference
+    ) -> HybridShapeLineBiTangent:
         """
         .. note::
             :class: toggle
@@ -2595,11 +3010,22 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeLineBiTangent
         """
         return HybridShapeLineBiTangent(
-            self.hybrid_shape_factory.AddNewLineBiTangent(i_curve1.com_object, i_element2.com_object,
-                                                          i_support.com_object))
+            self.hybrid_shape_factory.AddNewLineBiTangent(
+                i_curve1.com_object,
+                i_element2.com_object,
+                i_support.com_object
+            )
+        )
 
-    def add_new_line_bisecting(self, i_line1: Reference, i_line2: Reference, i_begin_offset: float, i_end_offset: float,
-                               i_orientation: bool, solution_nb: int) -> HybridShapeLineBisecting:
+    def add_new_line_bisecting(
+            self,
+            i_line1: Reference,
+            i_line2: Reference,
+            i_begin_offset: float,
+            i_end_offset: float,
+            i_orientation: bool,
+            solution_nb: int
+    ) -> HybridShapeLineBisecting:
         """
         .. note::
             :class: toggle
@@ -2648,12 +3074,26 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeLineBisecting
         """
         return HybridShapeLineBisecting(
-            self.hybrid_shape_factory.AddNewLineBisecting(i_line1.com_object, i_line2.com_object, i_begin_offset,
-                                                          i_end_offset, i_orientation, solution_nb))
+            self.hybrid_shape_factory.AddNewLineBisecting(
+                i_line1.com_object,
+                i_line2.com_object,
+                i_begin_offset,
+                i_end_offset,
+                i_orientation,
+                solution_nb
+            )
+        )
 
-    def add_new_line_bisecting_on_support(self, i_line1: Reference, i_line2: Reference, i_surface: Reference,
-                                          i_begin_offset: float, i_end_offset: float, i_orientation: bool,
-                                          solution_nb: int) -> HybridShapeLineBisecting:
+    def add_new_line_bisecting_on_support(
+            self,
+            i_line1: Reference,
+            i_line2: Reference,
+            i_surface: Reference,
+            i_begin_offset: float,
+            i_end_offset: float,
+            i_orientation: bool,
+            solution_nb: int
+    ) -> HybridShapeLineBisecting:
         """
         .. note::
             :class: toggle
@@ -2709,14 +3149,26 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeLineBisecting
         """
         return HybridShapeLineBisecting(
-            self.hybrid_shape_factory.AddNewLineBisectingOnSupport(i_line1.com_object, i_line2.com_object,
-                                                                   i_surface.com_object, i_begin_offset, i_end_offset,
-                                                                   i_orientation, solution_nb))
+            self.hybrid_shape_factory.AddNewLineBisectingOnSupport(
+                i_line1.com_object,
+                i_line2.com_object,
+                i_surface.com_object,
+                i_begin_offset, i_end_offset,
+                i_orientation,
+                solution_nb
+            )
+        )
 
-    def add_new_line_bisecting_on_support_with_point(self, i_line1: Reference, i_line2: Reference,
-                                                     i_ref_point: Reference, i_surface: Reference,
-                                                     i_begin_offset: float, i_end_offset: float, i_orientation: bool,
-                                                     solution_nb: int) -> HybridShapeLineBisecting:
+    def add_new_line_bisecting_on_support_with_point(
+            self,
+            i_line1: Reference,
+            i_line2: Reference,
+            i_ref_point: Reference,
+            i_surface: Reference,
+            i_begin_offset: float,
+            i_end_offset: float, i_orientation: bool,
+            solution_nb: int
+    ) -> HybridShapeLineBisecting:
         """
         .. note::
             :class: toggle
@@ -2779,14 +3231,28 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeLineBisecting
         """
         return HybridShapeLineBisecting(
-            self.hybrid_shape_factory.AddNewLineBisectingOnSupportWithPoint(i_line1.com_object, i_line2.com_object,
-                                                                            i_ref_point.com_object,
-                                                                            i_surface.com_object, i_begin_offset,
-                                                                            i_end_offset, i_orientation, solution_nb))
+            self.hybrid_shape_factory.AddNewLineBisectingOnSupportWithPoint(
+                i_line1.com_object,
+                i_line2.com_object,
+                i_ref_point.com_object,
+                i_surface.com_object,
+                i_begin_offset,
+                i_end_offset,
+                i_orientation,
+                solution_nb
+            )
+        )
 
-    def add_new_line_bisecting_with_point(self, i_line1: Reference, i_line2: Reference, i_ref_point: Reference,
-                                          i_begin_offset: float, i_end_offset: float, i_orientation: bool,
-                                          solution_nb: int) -> HybridShapeLineBisecting:
+    def add_new_line_bisecting_with_point(
+            self,
+            i_line1: Reference,
+            i_line2: Reference,
+            i_ref_point: Reference,
+            i_begin_offset: float,
+            i_end_offset: float,
+            i_orientation: bool,
+            solution_nb: int
+    ) -> HybridShapeLineBisecting:
         """
         .. note::
             :class: toggle
@@ -2842,9 +3308,16 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeLineBisecting
         """
         return HybridShapeLineBisecting(
-            self.hybrid_shape_factory.AddNewLineBisectingWithPoint(i_line1.com_object, i_line2.com_object,
-                                                                   i_ref_point.com_object, i_begin_offset, i_end_offset,
-                                                                   i_orientation, solution_nb))
+            self.hybrid_shape_factory.AddNewLineBisectingWithPoint(
+                i_line1.com_object,
+                i_line2.com_object,
+                i_ref_point.com_object,
+                i_begin_offset,
+                i_end_offset,
+                i_orientation,
+                solution_nb
+            )
+        )
 
     def add_new_line_datum(self, i_object: Reference) -> HybridShapeLineExplicit:
         """
@@ -2873,8 +3346,14 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapeLineExplicit(self.hybrid_shape_factory.AddNewLineDatum(i_object.com_object))
 
-    def add_new_line_normal(self, i_surface: Reference, i_point: Reference, i_begin_offset: float, i_end_offset: float,
-                            i_orientation: bool) -> HybridShapeLineNormal:
+    def add_new_line_normal(
+            self,
+            i_surface: Reference,
+            i_point: Reference,
+            i_begin_offset: float,
+            i_end_offset: float,
+            i_orientation: bool
+    ) -> HybridShapeLineNormal:
         """
         .. note::
             :class: toggle
@@ -2919,11 +3398,23 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeLineNormal
         """
         return HybridShapeLineNormal(
-            self.hybrid_shape_factory.AddNewLineNormal(i_surface.com_object, i_point.com_object, i_begin_offset,
-                                                       i_end_offset, i_orientation))
+            self.hybrid_shape_factory.AddNewLineNormal(
+                i_surface.com_object,
+                i_point.com_object,
+                i_begin_offset,
+                i_end_offset,
+                i_orientation
+            )
+        )
 
-    def add_new_line_pt_dir(self, i_pt: Reference, i_direction: HybridShapeDirection, i_begin_offset: float,
-                            i_end_offset: float, i_orientation: bool) -> HybridShapeLinePtDir:
+    def add_new_line_pt_dir(
+            self,
+            i_pt: Reference,
+            i_direction: HybridShapeDirection,
+            i_begin_offset: float,
+            i_end_offset: float,
+            i_orientation: bool
+    ) -> HybridShapeLinePtDir:
         """
         .. note::
             :class: toggle
@@ -2967,12 +3458,24 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeLinePtDir
         """
         return HybridShapeLinePtDir(
-            self.hybrid_shape_factory.AddNewLinePtDir(i_pt.com_object, i_direction.com_object, i_begin_offset,
-                                                      i_end_offset, i_orientation))
+            self.hybrid_shape_factory.AddNewLinePtDir(
+                i_pt.com_object,
+                i_direction.com_object,
+                i_begin_offset,
+                i_end_offset,
+                i_orientation
+            )
+        )
 
-    def add_new_line_pt_dir_on_support(self, i_pt: Reference, i_direction: HybridShapeDirection, i_support: Reference,
-                                       i_begin_offset: float, i_end_offset: float,
-                                       i_orientation: bool) -> HybridShapeLinePtDir:
+    def add_new_line_pt_dir_on_support(
+            self,
+            i_pt: Reference,
+            i_direction: HybridShapeDirection,
+            i_support: Reference,
+            i_begin_offset: float,
+            i_end_offset: float,
+            i_orientation: bool
+    ) -> HybridShapeLinePtDir:
         """
         .. note::
             :class: toggle
@@ -3023,11 +3526,21 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeLinePtDir
         """
         return HybridShapeLinePtDir(
-            self.hybrid_shape_factory.AddNewLinePtDirOnSupport(i_pt.com_object, i_direction.com_object,
-                                                               i_support.com_object, i_begin_offset, i_end_offset,
-                                                               i_orientation))
+            self.hybrid_shape_factory.AddNewLinePtDirOnSupport(
+                i_pt.com_object,
+                i_direction.com_object,
+                i_support.com_object,
+                i_begin_offset,
+                i_end_offset,
+                i_orientation
+            )
+        )
 
-    def add_new_line_pt_pt(self, i_pt_origine: Reference, i_pt_extremite: Reference) -> HybridShapeLinePtPt:
+    def add_new_line_pt_pt(
+            self,
+            i_pt_origine: Reference,
+            i_pt_extremite: Reference
+    ) -> HybridShapeLinePtPt:
         """
         .. note::
             :class: toggle
@@ -3058,10 +3571,19 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeLinePtPt
         """
         return HybridShapeLinePtPt(
-            self.hybrid_shape_factory.AddNewLinePtPt(i_pt_origine.com_object, i_pt_extremite.com_object))
+            self.hybrid_shape_factory.AddNewLinePtPt(
+                i_pt_origine.com_object,
+                i_pt_extremite.com_object
+            )
+        )
 
-    def add_new_line_pt_pt_extended(self, i_pt_origine: Reference, i_pt_extremite: Reference, i_begin_offset: float,
-                                    i_end_offset: float) -> HybridShapeLinePtPt:
+    def add_new_line_pt_pt_extended(
+            self,
+            i_pt_origine: Reference,
+            i_pt_extremite: Reference,
+            i_begin_offset: float,
+            i_end_offset: float
+    ) -> HybridShapeLinePtPt:
         """
         .. note::
             :class: toggle
@@ -3101,11 +3623,20 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeLinePtPt
         """
         return HybridShapeLinePtPt(
-            self.hybrid_shape_factory.AddNewLinePtPtExtended(i_pt_origine.com_object, i_pt_extremite.com_object,
-                                                             i_begin_offset, i_end_offset))
+            self.hybrid_shape_factory.AddNewLinePtPtExtended(
+                i_pt_origine.com_object,
+                i_pt_extremite.com_object,
+                i_begin_offset,
+                i_end_offset
+            )
+        )
 
-    def add_new_line_pt_pt_on_support(self, i_pt_origine: Reference, i_pt_extremite: Reference,
-                                      i_support: Reference) -> HybridShapeLinePtPt:
+    def add_new_line_pt_pt_on_support(
+            self,
+            i_pt_origine: Reference,
+            i_pt_extremite: Reference,
+            i_support: Reference
+    ) -> HybridShapeLinePtPt:
         """
         .. note::
             :class: toggle
@@ -3144,12 +3675,21 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeLinePtPt
         """
         return HybridShapeLinePtPt(
-            self.hybrid_shape_factory.AddNewLinePtPtOnSupport(i_pt_origine.com_object, i_pt_extremite.com_object,
-                                                              i_support.com_object))
+            self.hybrid_shape_factory.AddNewLinePtPtOnSupport(
+                i_pt_origine.com_object,
+                i_pt_extremite.com_object,
+                i_support.com_object
+            )
+        )
 
-    def add_new_line_pt_pt_on_support_extended(self, i_pt_origine: Reference, i_pt_extremite: Reference,
-                                               i_support: Reference, i_begin_offset: float,
-                                               i_end_offset: float) -> HybridShapeLinePtPt:
+    def add_new_line_pt_pt_on_support_extended(
+            self,
+            i_pt_origine: Reference,
+            i_pt_extremite: Reference,
+            i_support: Reference,
+            i_begin_offset: float,
+            i_end_offset: float
+    ) -> HybridShapeLinePtPt:
         """
         .. note::
             :class: toggle
@@ -3195,14 +3735,24 @@ class HybridShapeFactory(Factory):
         :return: HybridShapeLinePtPt
         :rtype: HybridShapeLinePtPt
         """
-        return HybridShapeLinePtPt(self.hybrid_shape_factory.AddNewLinePtPtOnSupportExtended(i_pt_origine.com_object,
-                                                                                             i_pt_extremite.com_object,
-                                                                                             i_support.com_object,
-                                                                                             i_begin_offset,
-                                                                                             i_end_offset))
+        return HybridShapeLinePtPt(
+            self.hybrid_shape_factory.AddNewLinePtPtOnSupportExtended(
+                i_pt_origine.com_object,
+                i_pt_extremite.com_object,
+                i_support.com_object,
+                i_begin_offset,
+                i_end_offset
+            )
+        )
 
-    def add_new_line_tangency(self, i_curve: Reference, i_point: Reference, i_begin_offset: float, i_end_offset: float,
-                              i_orientation: bool) -> HybridShapeLineTangency:
+    def add_new_line_tangency(
+            self,
+            i_curve: Reference,
+            i_point: Reference,
+            i_begin_offset: float,
+            i_end_offset: float,
+            i_orientation: bool
+    ) -> HybridShapeLineTangency:
         """
         .. note::
             :class: toggle
@@ -3248,12 +3798,24 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeLineTangency
         """
         return HybridShapeLineTangency(
-            self.hybrid_shape_factory.AddNewLineTangency(i_curve.com_object, i_point.com_object, i_begin_offset,
-                                                         i_end_offset, i_orientation))
+            self.hybrid_shape_factory.AddNewLineTangency(
+                i_curve.com_object,
+                i_point.com_object,
+                i_begin_offset,
+                i_end_offset,
+                i_orientation
+            )
+        )
 
-    def add_new_line_tangency_on_support(self, i_curve: Reference, i_point: Reference, i_support: Reference,
-                                         i_begin_offset: float, i_end_offset: float,
-                                         i_orientation: bool) -> HybridShapeLineTangency:
+    def add_new_line_tangency_on_support(
+            self,
+            i_curve: Reference,
+            i_point: Reference,
+            i_support: Reference,
+            i_begin_offset: float,
+            i_end_offset: float,
+            i_orientation: bool
+    ) -> HybridShapeLineTangency:
         """
         .. note::
             :class: toggle
@@ -3306,9 +3868,15 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeLineTangency
         """
         return HybridShapeLineTangency(
-            self.hybrid_shape_factory.AddNewLineTangencyOnSupport(i_curve.com_object, i_point.com_object,
-                                                                  i_support.com_object, i_begin_offset, i_end_offset,
-                                                                  i_orientation))
+            self.hybrid_shape_factory.AddNewLineTangencyOnSupport(
+                i_curve.com_object,
+                i_point.com_object,
+                i_support.com_object,
+                i_begin_offset,
+                i_end_offset,
+                i_orientation
+            )
+        )
 
     def add_new_loft(self) -> HybridShapeLoft:
         """
@@ -3330,8 +3898,12 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapeLoft(self.hybrid_shape_factory.AddNewLoft())
 
-    def add_new_mid_surface(self, i_support: Reference, i_creation_mode: int,
-                            i_threshold: float) -> HybridShapeMidSurface:
+    def add_new_mid_surface(
+            self,
+            i_support: Reference,
+            i_creation_mode: int,
+            i_threshold: float
+    ) -> HybridShapeMidSurface:
         """
         .. note::
             :class: toggle
@@ -3362,10 +3934,20 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeMidSurface
         """
         return HybridShapeMidSurface(
-            self.hybrid_shape_factory.AddNewMidSurface(i_support.com_object, i_creation_mode, i_threshold))
+            self.hybrid_shape_factory.AddNewMidSurface(
+                i_support.com_object,
+                i_creation_mode,
+                i_threshold
+            )
+        )
 
-    def add_new_mid_surface_with_auto_threshold(self, i_support: Reference, i_creation_mode: int, i_threshold: float,
-                                                i_auto_thickness_threshold: int) -> HybridShapeMidSurface:
+    def add_new_mid_surface_with_auto_threshold(
+            self,
+            i_support: Reference,
+            i_creation_mode: int,
+            i_threshold: float,
+            i_auto_thickness_threshold: int
+    ) -> HybridShapeMidSurface:
         """
         .. note::
             :class: toggle
@@ -3400,8 +3982,13 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeMidSurface
         """
         return HybridShapeMidSurface(
-            self.hybrid_shape_factory.AddNewMidSurfaceWithAutoThreshold(i_support.com_object, i_creation_mode,
-                                                                        i_threshold, i_auto_thickness_threshold))
+            self.hybrid_shape_factory.AddNewMidSurfaceWithAutoThreshold(
+                i_support.com_object,
+                i_creation_mode,
+                i_threshold,
+                i_auto_thickness_threshold
+            )
+        )
 
     def add_new_near(self, multi_element: Reference, reference_element: Reference) -> HybridShapeNear:
         """
@@ -3437,10 +4024,19 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeNear
         """
         return HybridShapeNear(
-            self.hybrid_shape_factory.AddNewNear(multi_element.com_object, reference_element.com_object))
+            self.hybrid_shape_factory.AddNewNear(
+                multi_element.com_object,
+                reference_element.com_object
+            )
+        )
 
-    def add_new_offset(self, i_object_to_offset: Reference, i_offset: float, i_orientation: bool,
-                       i_precision: float) -> HybridShapeOffset:
+    def add_new_offset(
+            self,
+            i_object_to_offset: Reference,
+            i_offset: float,
+            i_orientation: bool,
+            i_precision: float
+    ) -> HybridShapeOffset:
         """
         .. note::
             :class: toggle
@@ -3478,7 +4074,13 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeOffset
         """
         return HybridShapeOffset(
-            self.hybrid_shape_factory.AddNewOffset(i_object_to_offset.com_object, i_offset, i_orientation, i_precision))
+            self.hybrid_shape_factory.AddNewOffset(
+                i_object_to_offset.com_object,
+                i_offset,
+                i_orientation,
+                i_precision
+            )
+        )
 
     def add_new_plane1_curve(self, i_planar_curve: Reference) -> HybridShapePlane1Curve:
         """
@@ -3620,8 +4222,13 @@ class HybridShapeFactory(Factory):
         return HybridShapePlane3Points(
             self.hybrid_shape_factory.AddNewPlane3Points(i_pt1.com_object, i_pt2.com_object, i_pt3.com_object))
 
-    def add_new_plane_angle(self, i_plane: Reference, i_revol_axis: Reference, i_angle: float,
-                            i_orientation: bool) -> HybridShapePlaneAngle:
+    def add_new_plane_angle(
+            self,
+            i_plane: Reference,
+            i_revol_axis: Reference,
+            i_angle: float,
+            i_orientation: bool
+    ) -> HybridShapePlaneAngle:
         """
         .. note::
             :class: toggle
@@ -3664,8 +4271,13 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapePlaneAngle
         """
         return HybridShapePlaneAngle(
-            self.hybrid_shape_factory.AddNewPlaneAngle(i_plane.com_object, i_revol_axis.com_object, i_angle,
-                                                       i_orientation))
+            self.hybrid_shape_factory.AddNewPlaneAngle(
+                i_plane.com_object,
+                i_revol_axis.com_object,
+                i_angle,
+                i_orientation
+            )
+        )
 
     def add_new_plane_datum(self, i_object: Reference) -> HybridShapePlaneExplicit:
         """
@@ -3694,8 +4306,13 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapePlaneExplicit(self.hybrid_shape_factory.AddNewPlaneDatum(i_object.com_object))
 
-    def add_new_plane_equation(self, i_a_coeff: float, i_b_coeff: float, i_c_coeff: float,
-                               i_d_coeff: float) -> HybridShapePlaneEquation:
+    def add_new_plane_equation(
+            self,
+            i_a_coeff: float,
+            i_b_coeff: float,
+            i_c_coeff: float,
+            i_d_coeff: float
+    ) -> HybridShapePlaneEquation:
         """
         .. note::
             :class: toggle
@@ -3729,7 +4346,13 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapePlaneEquation
         """
         return HybridShapePlaneEquation(
-            self.hybrid_shape_factory.AddNewPlaneEquation(i_a_coeff, i_b_coeff, i_c_coeff, i_d_coeff))
+            self.hybrid_shape_factory.AddNewPlaneEquation(
+                i_a_coeff,
+                i_b_coeff,
+                i_c_coeff,
+                i_d_coeff
+            )
+        )
 
     def add_new_plane_mean(self, i_list_of_points: tuple, nb_point: int) -> HybridShapePlaneMean:
         """
@@ -3828,7 +4451,12 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapePlaneOffset
         """
         return HybridShapePlaneOffset(
-            self.hybrid_shape_factory.AddNewPlaneOffset(i_plane.com_object, i_offset, i_orientation))
+            self.hybrid_shape_factory.AddNewPlaneOffset(
+                i_plane.com_object,
+                i_offset,
+                i_orientation
+            )
+        )
 
     def add_new_plane_offset_pt(self, i_plane: Reference, i_pt: Reference) -> HybridShapePlaneOffsetPt:
         """
@@ -3863,7 +4491,11 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapePlaneOffsetPt
         """
         return HybridShapePlaneOffsetPt(
-            self.hybrid_shape_factory.AddNewPlaneOffsetPt(i_plane.com_object, i_pt.com_object))
+            self.hybrid_shape_factory.AddNewPlaneOffsetPt(
+                i_plane.com_object,
+                i_pt.com_object
+            )
+        )
 
     def add_new_plane_tangent(self, i_surface: Reference, i_pt: Reference) -> HybridShapePlaneTangent:
         """
@@ -3898,8 +4530,13 @@ class HybridShapeFactory(Factory):
         return HybridShapePlaneTangent(
             self.hybrid_shape_factory.AddNewPlaneTangent(i_surface.com_object, i_pt.com_object))
 
-    def add_new_point_between(self, i_point1: Reference, i_point2: Reference, i_ratio: float,
-                              i_orientation: int) -> HybridShapePointBetween:
+    def add_new_point_between(
+            self,
+            i_point1: Reference,
+            i_point2: Reference,
+            i_ratio: float,
+            i_orientation: int
+    ) -> HybridShapePointBetween:
         """
         .. note::
             :class: toggle
@@ -3938,8 +4575,13 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapePointBetween
         """
         return HybridShapePointBetween(
-            self.hybrid_shape_factory.AddNewPointBetween(i_point1.com_object, i_point2.com_object, i_ratio,
-                                                         i_orientation))
+            self.hybrid_shape_factory.AddNewPointBetween(
+                i_point1.com_object,
+                i_point2.com_object,
+                i_ratio,
+                i_orientation
+            )
+        )
 
     def add_new_point_center(self, i_curve: Reference) -> HybridShapePointCenter:
         """
@@ -4016,8 +4658,13 @@ class HybridShapeFactory(Factory):
 
         return r
 
-    def add_new_point_coord_with_reference(self, i_x: float, i_y: float, i_z: float,
-                                           i_pt: Reference) -> HybridShapePointCoord:
+    def add_new_point_coord_with_reference(
+            self,
+            i_x: float,
+            i_y: float,
+            i_z: float,
+            i_pt: Reference
+    ) -> HybridShapePointCoord:
         """
         .. note::
             :class: toggle
@@ -4055,7 +4702,13 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapePointCoord
         """
         return HybridShapePointCoord(
-            self.hybrid_shape_factory.AddNewPointCoordWithReference(i_x, i_y, i_z, i_pt.com_object))
+            self.hybrid_shape_factory.AddNewPointCoordWithReference(
+                i_x,
+                i_y,
+                i_z,
+                i_pt.com_object
+            )
+        )
 
     def add_new_point_datum(self, i_object: Reference) -> HybridShapePointExplicit:
         """
@@ -4084,8 +4737,13 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapePointExplicit(self.hybrid_shape_factory.AddNewPointDatum(i_object.com_object))
 
-    def add_new_point_on_curve_along_direction(self, i_crv: Reference, i_long: float, i_orientation: bool,
-                                               i_direction: HybridShapeDirection) -> HybridShapePointOnCurve:
+    def add_new_point_on_curve_along_direction(
+            self,
+            i_crv: Reference,
+            i_long: float,
+            i_orientation: bool,
+            i_direction: HybridShapeDirection
+    ) -> HybridShapePointOnCurve:
         """
         .. note::
             :class: toggle
@@ -4125,11 +4783,19 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapePointOnCurve
         """
         return HybridShapePointOnCurve(
-            self.hybrid_shape_factory.AddNewPointOnCurveAlongDirection(i_crv.com_object, i_long, i_orientation,
-                                                                       i_direction.com_object))
+            self.hybrid_shape_factory.AddNewPointOnCurveAlongDirection(
+                i_crv.com_object,
+                i_long,
+                i_orientation,
+                i_direction.com_object
+            )
+        )
 
-    def add_new_point_on_curve_from_distance(self, i_crv: Reference, i_long: float,
-                                             i_orientation: bool) -> HybridShapePointOnCurve:
+    def add_new_point_on_curve_from_distance(
+            self, i_crv: Reference,
+            i_long: float,
+            i_orientation: bool
+    ) -> HybridShapePointOnCurve:
         """
         .. note::
             :class: toggle
@@ -4165,10 +4831,19 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapePointOnCurve
         """
         return HybridShapePointOnCurve(
-            self.hybrid_shape_factory.AddNewPointOnCurveFromDistance(i_crv.com_object, i_long, i_orientation))
+            self.hybrid_shape_factory.AddNewPointOnCurveFromDistance(
+                i_crv.com_object,
+                i_long,
+                i_orientation
+            )
+        )
 
-    def add_new_point_on_curve_from_percent(self, i_crv: Reference, i_long: float,
-                                            i_orientation: bool) -> HybridShapePointOnCurve:
+    def add_new_point_on_curve_from_percent(
+            self,
+            i_crv: Reference,
+            i_long: float,
+            i_orientation: bool
+    ) -> HybridShapePointOnCurve:
         """
         .. note::
             :class: toggle
@@ -4204,10 +4879,17 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapePointOnCurve
         """
         return HybridShapePointOnCurve(
-            self.hybrid_shape_factory.AddNewPointOnCurveFromPercent(i_crv.com_object, i_long, i_orientation))
+            self.hybrid_shape_factory.AddNewPointOnCurveFromPercent(
+                i_crv.com_object,
+                i_long,
+                i_orientation
+            )
+        )
 
     def add_new_point_on_curve_with_reference_along_direction(
-            self, i_crv: Reference, i_pt: Reference, i_long: float,
+            self, i_crv: Reference,
+            i_pt: Reference,
+            i_long: float,
             i_orientation: bool,
             i_direction: HybridShapeDirection
     ) -> HybridShapePointOnCurve:
@@ -4256,12 +4938,22 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapePointOnCurve
         """
         return HybridShapePointOnCurve(
-            self.hybrid_shape_factory.AddNewPointOnCurveWithReferenceAlongDirection(i_crv.com_object, i_pt.com_object,
-                                                                                    i_long, i_orientation,
-                                                                                    i_direction.com_object))
+            self.hybrid_shape_factory.AddNewPointOnCurveWithReferenceAlongDirection(
+                i_crv.com_object,
+                i_pt.com_object,
+                i_long,
+                i_orientation,
+                i_direction.com_object
+            )
+        )
 
-    def add_new_point_on_curve_with_reference_from_distance(self, i_crv: Reference, i_pt: Reference, i_long: float,
-                                                            i_orientation: bool) -> HybridShapePointOnCurve:
+    def add_new_point_on_curve_with_reference_from_distance(
+            self,
+            i_crv: Reference,
+            i_pt: Reference,
+            i_long: float,
+            i_orientation: bool
+    ) -> HybridShapePointOnCurve:
         """
         .. note::
             :class: toggle
@@ -4303,11 +4995,21 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapePointOnCurve
         """
         return HybridShapePointOnCurve(
-            self.hybrid_shape_factory.AddNewPointOnCurveWithReferenceFromDistance(i_crv.com_object, i_pt.com_object,
-                                                                                  i_long, i_orientation))
+            self.hybrid_shape_factory.AddNewPointOnCurveWithReferenceFromDistance(
+                i_crv.com_object,
+                i_pt.com_object,
+                i_long,
+                i_orientation
+            )
+        )
 
-    def add_new_point_on_curve_with_reference_from_percent(self, i_crv: Reference, i_pt: Reference, i_long: float,
-                                                           i_orientation: bool) -> HybridShapePointOnCurve:
+    def add_new_point_on_curve_with_reference_from_percent(
+            self,
+            i_crv: Reference,
+            i_pt: Reference,
+            i_long: float,
+            i_orientation: bool
+    ) -> HybridShapePointOnCurve:
         """
         .. note::
             :class: toggle
@@ -4349,8 +5051,13 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapePointOnCurve
         """
         return HybridShapePointOnCurve(
-            self.hybrid_shape_factory.AddNewPointOnCurveWithReferenceFromPercent(i_crv.com_object, i_pt.com_object,
-                                                                                 i_long, i_orientation))
+            self.hybrid_shape_factory.AddNewPointOnCurveWithReferenceFromPercent(
+                i_crv.com_object,
+                i_pt.com_object,
+                i_long,
+                i_orientation
+            )
+        )
 
     def add_new_point_on_plane(self, i_plane: Reference, i_x: float, i_y: float) -> HybridShapePointOnPlane:
         """
@@ -4387,8 +5094,13 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapePointOnPlane(self.hybrid_shape_factory.AddNewPointOnPlane(i_plane.com_object, i_x, i_y))
 
-    def add_new_point_on_plane_with_reference(self, i_plane: Reference, i_pt: Reference, i_x: float,
-                                              i_y: float) -> HybridShapePointOnPlane:
+    def add_new_point_on_plane_with_reference(
+            self,
+            i_plane: Reference,
+            i_pt: Reference,
+            i_x: float,
+            i_y: float
+    ) -> HybridShapePointOnPlane:
         """
         .. note::
             :class: toggle
@@ -4430,10 +5142,20 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapePointOnPlane
         """
         return HybridShapePointOnPlane(
-            self.hybrid_shape_factory.AddNewPointOnPlaneWithReference(i_plane.com_object, i_pt.com_object, i_x, i_y))
+            self.hybrid_shape_factory.AddNewPointOnPlaneWithReference(
+                i_plane.com_object,
+                i_pt.com_object,
+                i_x,
+                i_y
+            )
+        )
 
-    def add_new_point_on_surface(self, i_surface: Reference, i_direction: HybridShapeDirection,
-                                 i_x: float) -> HybridShapePointOnSurface:
+    def add_new_point_on_surface(
+            self,
+            i_surface: Reference,
+            i_direction: HybridShapeDirection,
+            i_x: float
+    ) -> HybridShapePointOnSurface:
         """
         .. note::
             :class: toggle
@@ -4467,11 +5189,20 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapePointOnSurface
         """
         return HybridShapePointOnSurface(
-            self.hybrid_shape_factory.AddNewPointOnSurface(i_surface.com_object, i_direction.com_object, i_x))
+            self.hybrid_shape_factory.AddNewPointOnSurface(
+                i_surface.com_object,
+                i_direction.com_object,
+                i_x
+            )
+        )
 
-    def add_new_point_on_surface_with_reference(self, i_surface: Reference, i_pt: Reference,
-                                                i_direction: HybridShapeDirection,
-                                                i_x: float) -> HybridShapePointOnSurface:
+    def add_new_point_on_surface_with_reference(
+            self,
+            i_surface: Reference,
+            i_pt: Reference,
+            i_direction: HybridShapeDirection,
+            i_x: float
+    ) -> HybridShapePointOnSurface:
         """
         .. note::
             :class: toggle
@@ -4512,8 +5243,13 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapePointOnSurface
         """
         return HybridShapePointOnSurface(
-            self.hybrid_shape_factory.AddNewPointOnSurfaceWithReference(i_surface.com_object, i_pt.com_object,
-                                                                        i_direction.com_object, i_x))
+            self.hybrid_shape_factory.AddNewPointOnSurfaceWithReference(
+                i_surface.com_object,
+                i_pt.com_object,
+                i_direction.com_object,
+                i_x
+            )
+        )
 
     def add_new_point_tangent(self, i_curve: Reference, i_direction: HybridShapeDirection) -> HybridShapePointTangent:
         """
@@ -4545,7 +5281,11 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapePointTangent
         """
         return HybridShapePointTangent(
-            self.hybrid_shape_factory.AddNewPointTangent(i_curve.com_object, i_direction.com_object))
+            self.hybrid_shape_factory.AddNewPointTangent(
+                i_curve.com_object,
+                i_direction.com_object
+            )
+        )
 
     def add_new_polyline(self) -> HybridShapePolyline:
         """
@@ -4625,8 +5365,14 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapeProject(self.hybrid_shape_factory.AddNewProject(i_element.com_object, i_support.com_object))
 
-    def add_new_reflect_line(self, i_support: Reference, i_dir: HybridShapeDirection, i_angle: float,
-                             i_orientation_support: int, i_orientation_direction: int) -> HybridShapeReflectLine:
+    def add_new_reflect_line(
+            self,
+            i_support: Reference,
+            i_dir: HybridShapeDirection,
+            i_angle: float,
+            i_orientation_support: int,
+            i_orientation_direction: int
+    ) -> HybridShapeReflectLine:
         """
         .. note::
             :class: toggle
@@ -4670,12 +5416,24 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeReflectLine
         """
         return HybridShapeReflectLine(
-            self.hybrid_shape_factory.AddNewReflectLine(i_support.com_object, i_dir.com_object, i_angle,
-                                                        i_orientation_support, i_orientation_direction))
+            self.hybrid_shape_factory.AddNewReflectLine(
+                i_support.com_object,
+                i_dir.com_object,
+                i_angle,
+                i_orientation_support,
+                i_orientation_direction
+            )
+        )
 
-    def add_new_reflect_line_with_type(self, i_support: Reference, i_dir: HybridShapeDirection, i_angle: float,
-                                       i_orientation_support: int, i_orientation_direction: int,
-                                       i_type: int) -> HybridShapeReflectLine:
+    def add_new_reflect_line_with_type(
+            self,
+            i_support: Reference,
+            i_dir: HybridShapeDirection,
+            i_angle: float,
+            i_orientation_support: int,
+            i_orientation_direction: int,
+            i_type: int
+    ) -> HybridShapeReflectLine:
         """
         .. note::
             :class: toggle
@@ -4728,11 +5486,23 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeReflectLine
         """
         return HybridShapeReflectLine(
-            self.hybrid_shape_factory.AddNewReflectLineWithType(i_support.com_object, i_dir.com_object, i_angle,
-                                                                i_orientation_support, i_orientation_direction, i_type))
+            self.hybrid_shape_factory.AddNewReflectLineWithType(
+                i_support.com_object,
+                i_dir.com_object,
+                i_angle,
+                i_orientation_support,
+                i_orientation_direction,
+                i_type
+            )
+        )
 
-    def add_new_revol(self, i_object_to_extrude: Reference, i_offset_debut: float, i_offset_fin: float,
-                      i_axis: Reference) -> HybridShapeRevol:
+    def add_new_revol(
+            self,
+            i_object_to_extrude: Reference,
+            i_offset_debut: float,
+            i_offset_fin: float,
+            i_axis: Reference
+    ) -> HybridShapeRevol:
         """
         .. note::
             :class: toggle
@@ -4776,10 +5546,20 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeRevol
         """
         return HybridShapeRevol(
-            self.hybrid_shape_factory.AddNewRevol(i_object_to_extrude.com_object, i_offset_debut, i_offset_fin,
-                                                  i_axis.com_object))
+            self.hybrid_shape_factory.AddNewRevol(
+                i_object_to_extrude.com_object,
+                i_offset_debut,
+                i_offset_fin,
+                i_axis.com_object
+            )
+        )
 
-    def add_new_rotate(self, i_to_rotate: Reference, i_axis: Reference, i_angle: float) -> HybridShapeRotate:
+    def add_new_rotate(
+            self,
+            i_to_rotate: Reference,
+            i_axis: Reference,
+            i_angle: float
+    ) -> HybridShapeRotate:
         """
         .. note::
             :class: toggle
@@ -4815,7 +5595,12 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeRotate
         """
         return HybridShapeRotate(
-            self.hybrid_shape_factory.AddNewRotate(i_to_rotate.com_object, i_axis.com_object, i_angle))
+            self.hybrid_shape_factory.AddNewRotate(
+                i_to_rotate.com_object,
+                i_axis.com_object,
+                i_angle
+            )
+        )
 
     def add_new_section(self) -> HybridShapeSection:
         """
@@ -4840,7 +5625,7 @@ class HybridShapeFactory(Factory):
     def add_new_sphere(
             self,
             i_center: Reference,
-            i_axis: Reference,
+            i_axis: Reference or vba_nothing,
             i_radius: float,
             i_begin_parallel_angle: float,
             i_end_parallel_angle: float,
@@ -4885,7 +5670,7 @@ class HybridShapeFactory(Factory):
                 |         Sphere result
 
         :param Reference i_center:
-        :param Reference i_axis:
+        :param Reference or vba_nothing i_axis:
         :param float i_radius:
         :param float i_begin_parallel_angle:
         :param float i_end_parallel_angle:
@@ -4895,7 +5680,7 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeSphere
         """
 
-        if type(i_axis) is str:
+        if i_axis == vba_nothing:
             i_axis = self.application.system_service.evaluate(vba_nothing, 0, 'N', [])
         else:
             i_axis = i_axis.com_object
@@ -4932,8 +5717,15 @@ class HybridShapeFactory(Factory):
         """
         return HybridShapeSpine(self.hybrid_shape_factory.AddNewSpine())
 
-    def add_new_spiral(self, i_type: int, i_support: Reference, i_center_point: Reference, i_axis: HybridShapeDirection,
-                       i_starting_radius: float, i_clockwise_revolution: bool) -> HybridShapeSpiral:
+    def add_new_spiral(
+            self,
+            i_type: int,
+            i_support: Reference,
+            i_center_point: Reference,
+            i_axis: HybridShapeDirection,
+            i_starting_radius: float,
+            i_clockwise_revolution: bool
+    ) -> HybridShapeSpiral:
         """
         .. note::
             :class: toggle
@@ -4978,8 +5770,15 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeSpiral
         """
         return HybridShapeSpiral(
-            self.hybrid_shape_factory.AddNewSpiral(i_type, i_support.com_object, i_center_point.com_object,
-                                                   i_axis.com_object, i_starting_radius, i_clockwise_revolution))
+            self.hybrid_shape_factory.AddNewSpiral(
+                i_type,
+                i_support.com_object,
+                i_center_point.com_object,
+                i_axis.com_object,
+                i_starting_radius,
+                i_clockwise_revolution
+            )
+        )
 
     def add_new_spline(self) -> HybridShapeSpline:
         """
@@ -5112,7 +5911,11 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeSweepExplicit
         """
         return HybridShapeSweepExplicit(
-            self.hybrid_shape_factory.AddNewSweepExplicit(i_profile.com_object, i_guide.com_object))
+            self.hybrid_shape_factory.AddNewSweepExplicit(
+                i_profile.com_object,
+                i_guide.com_object
+            )
+        )
 
     def add_new_sweep_line(self, i_guide1: Reference) -> HybridShapeSweepLine:
         """
@@ -5201,8 +6004,12 @@ class HybridShapeFactory(Factory):
         return HybridShapeTransfer(
             self.hybrid_shape_factory.AddNewTransfer(i_element_to_transfer.com_object, i_type_of_transfer))
 
-    def add_new_translate(self, i_element: Reference, i_direction: HybridShapeDirection,
-                          i_distance: float) -> HybridShapeTranslate:
+    def add_new_translate(
+            self,
+            i_element: Reference,
+            i_direction: HybridShapeDirection,
+            i_distance: float
+    ) -> HybridShapeTranslate:
         """
         .. note::
             :class: toggle
@@ -5239,7 +6046,12 @@ class HybridShapeFactory(Factory):
         :rtype: HybridShapeTranslate
         """
         return HybridShapeTranslate(
-            self.hybrid_shape_factory.AddNewTranslate(i_element.com_object, i_direction.com_object, i_distance))
+            self.hybrid_shape_factory.AddNewTranslate(
+                i_element.com_object,
+                i_direction.com_object,
+                i_distance
+            )
+        )
 
     def add_new_unfold(self) -> HybridShapeUnfold:
         """

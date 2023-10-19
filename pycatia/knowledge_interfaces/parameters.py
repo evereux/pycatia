@@ -112,7 +112,7 @@ class Parameters(Collection):
 
         return parameters
 
-    def create_boolean(self, i_name: str, i_value: bool):
+    def create_boolean(self, i_name: str, i_value: bool) -> BoolParam:
         """
         .. note::
             :class: toggle
