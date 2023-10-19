@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.6.2
+
+* reformatted HybridShapeFactory class to better readability.
+* improved HybridShapeFactory.add_new_sphere vba_nothing detection.
+* added vba_nothing to HybridShapeLoft.add_section_to_loft.
+* added vba_nothing to HybridShapeSpline.add_point_with_constraint_explicit.
+* added missing type hint to HybridBody.append_hybrid_shapes
+
 ## 0.6.1
 
 * Added human modelling classes SWKHmiWorkbench and SWKHumanCatalog. Please note these are not documented in the CATIA
