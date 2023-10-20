@@ -97,8 +97,11 @@ html_theme = 'alabaster'
 # documentation.
 
 html_theme_options = {
+    'logo': 'pycatia-logo.png',
     'github_user': 'evereux',
     'github_repo': 'pycatia',
+    'github_button': True,
+    'analytics_id': 'G-0946VBE534'
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
