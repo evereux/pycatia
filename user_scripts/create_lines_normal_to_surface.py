@@ -40,6 +40,8 @@ from pycatia.mec_mod_interfaces.hybrid_body import HybridBody
 from pycatia.mec_mod_interfaces.hybrid_shape import HybridShape
 from pycatia.mec_mod_interfaces.part import Part
 
+LINE_LENGTH = 20
+
 logger = create_logger()
 
 caa = catia()
@@ -85,7 +87,7 @@ for shape in hybrid_shapes:
     type_: int = hsf.get_geometrical_feature_type(ref_shape)
     type_: str = geometrical_feature_type[type_]
     if type_ == 'Point':
-        new_line = hsf.add_new_line_normal(ref_surface, ref_shape, -20, 20, False)
+        new_line = hsf.add_new_line_normal(ref_surface, ref_shape, -LINE_LENGTH, LINE_LENGTH, False)
         gs_lines.append_hybrid_shape(new_line)
 
 part.update()
