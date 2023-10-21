@@ -50,10 +50,10 @@ hsf = part_document.hybrid_shape_factory
 spa = document.spa_workbench()
 
 # promt user select any object
-caa.message_box('Select any HybridShape, or PartBody.\n'
-                'You can select in tree or graphical area.\n'
-                'If you select in graphical area script has some error',
-                0, title='Selection prompt')
+                     'You can select in tree or graphical area.\n'
+mb = caa.message_box('Select any HybridShape, or PartBody.\n'
+                     'If you select in graphical area script has some error',
+                     buttons=1, title='Selection prompt')
 
 selected = selection.select_element2(cat_selection_filter, 'Select a HybridShape or PartBody.', True)
 if selected == 'Cancel':
