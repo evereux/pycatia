@@ -1513,16 +1513,35 @@ cat_section_type = (
 )
 
 cat_selection_filter = (
+    # Topological 0-D entity (such as a Point2D )
     "ZeroDim",
+    # Topological 1-D entity which cannot be infinite (such as a
+    # HybridShapeSpline )
     "MonoDim",
+    # Topological 1-D entity which may be infinite, such as a HybridShapeSpline
+    # (not infinite) or a HybridShapeLinePtDir for which a call to
+    # HybridShapeLinePtDir.GetLengthType would give 1, 2 or 3 (infinite)
     "MonoDimInfinite",
+    # 1-D entity which cannot be infinite, the entity having a rectilinear
+    # geometry
     "RectilinearMonoDim",
+    # 1-D entity which may be infinite, the entity having a rectilinear geometry
     "RectilinearMonoDimInfinite",
+    # Topological 2-D entity which cannot be infinite (such as a
+    # HybridShapeCylinder )
     "BiDim",
+    # Topological 2-D entity which may be infinite, such as a
+    # HybridShapeCylinder (non infinite) or a HybridShapePlaneOffsetPt
+    # (infinite)
     "BiDimInfinite",
+    # 2-D entity which cannot be infinite, the entity having a planar geometry
     "PlanarBiDim",
+    # 2-D entity having a planar geometry
     "PlanarBiDimInfinite",
+    # 2-D entity which cannot be infinite, the entity having a cylindrical
+    # geometry
     "CylindricalBiDim",
+    # Topological 3-D entity (such as a Pad )
     "TriDim",
 )
 
