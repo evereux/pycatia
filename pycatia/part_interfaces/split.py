@@ -60,7 +60,6 @@ class Split(SurfaceBasedShape):
                 |          Set sptSide = mySplit.SplittingSide
                 |          mySplit.SplittingSide = catPositiveSide
 
-        :return: int
         :rtype: int
         """
 

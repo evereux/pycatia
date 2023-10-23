@@ -87,7 +87,6 @@ class Wrappings(Collection):
         :param str i_shape_name:
         :param int i_activated_shape:
         :param int i_default_shape:
-        :return: Wrapping
         :rtype: Wrapping
         """
         return Wrapping(
@@ -111,7 +110,6 @@ class Wrappings(Collection):
                 | 
                 |     Cleans up.
 
-        :return: None
         :rtype: None
         """
         return self.wrappings.CleanUp()
@@ -155,7 +153,6 @@ class Wrappings(Collection):
         :param float i_accuracy:
         :param float i_ration:
         :param float i_accuracy_for_simplification:
-        :return: Document
         :rtype: Document
         """
         return Document(
@@ -213,7 +210,6 @@ class Wrappings(Collection):
         :param float i_accuracy:
         :param float i_ration:
         :param float i_accuracy_for_simplification:
-        :return: Document
         :rtype: Document
         """
         return Document(
@@ -236,7 +232,6 @@ class Wrappings(Collection):
                 | 
                 |     Returns the name of the associated shape.
 
-        :return: str
         :rtype: str
         """
         return self.wrappings.WrappingShapeName()

@@ -58,7 +58,6 @@ class DraftDomain(AnyObject):
                 | 
                 |          Set angle = firstDraftDomain.DraftAngle
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -82,7 +81,6 @@ class DraftDomain(AnyObject):
                 | 
                 |          Set list = firstDraftDomain.FacesToDraft
 
-        :return: References
         :rtype: References
         """
 
@@ -114,7 +112,6 @@ class DraftDomain(AnyObject):
                 |                  Set MultiselMode = firstDraftDomain.MultiselectionMode
                 |                  firstDraftDomain.MultiselectionMode = CATMultiselectionByNeutralMode
 
-        :return: int
         :rtype: int
         """
 
@@ -149,7 +146,6 @@ class DraftDomain(AnyObject):
                 |          Set neutral = firstDraftDomain.NeutralElement
                 |          firstDraftDomain.NeutralElement = newNeutral
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -185,7 +181,6 @@ class DraftDomain(AnyObject):
                 |          Set propMode = firstDraftDomain.NeutralPropagationMode
                 |          firstDraftDomain.NeutralPropagationMode = CATSmoothDraftNeutralPropagationMode
 
-        :return: int
         :rtype: int
         """
 
@@ -220,7 +215,6 @@ class DraftDomain(AnyObject):
                 |          Set pullingdirection = firstDraftDomain.NeutralElement
                 |          firstDraftDomain.PullingDirectionElement = newPullingDirection
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -259,7 +253,6 @@ class DraftDomain(AnyObject):
                 |      CurrentDraftDomain.AddFaceToDraft(NewFaceToDraft)
 
         :param Reference i_face:
-        :return: None
         :rtype: None
         """
         return self.draft_domain.AddFaceToDraft(i_face.com_object)
@@ -305,7 +298,6 @@ class DraftDomain(AnyObject):
                 |          Set z = PullDir[2]
 
         :param tuple io_pulling_direction:
-        :return: None
         :rtype: None
         """
         return self.draft_domain.GetPullingDirection(io_pulling_direction)
@@ -350,7 +342,6 @@ class DraftDomain(AnyObject):
                 |      CurrentDraftDomain.RemoveFaceToDraft(FaceToRemove)
 
         :param Reference i_face:
-        :return: None
         :rtype: None
         """
         return self.draft_domain.RemoveFaceToDraft(i_face.com_object)
@@ -398,7 +389,6 @@ class DraftDomain(AnyObject):
         :param float i_x:
         :param float i_y:
         :param float i_z:
-        :return: None
         :rtype: None
         """
         return self.draft_domain.SetPullingDirection(i_x, i_y, i_z)
@@ -418,7 +408,6 @@ class DraftDomain(AnyObject):
                 |         iVolumeSupport
 
         :param Reference i_volume_support:
-        :return: None
         :rtype: None
         """
         return self.draft_domain.SetVolumeSupport(i_volume_support.com_object)

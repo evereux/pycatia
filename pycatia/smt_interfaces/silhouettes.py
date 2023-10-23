@@ -76,7 +76,6 @@ class Silhouettes(Collection):
         :param str i_shape_name:
         :param int i_activated_shape:
         :param int i_default_shape:
-        :return: Silhouette
         :rtype: Silhouette
         """
         return Silhouette(
@@ -100,7 +99,6 @@ class Silhouettes(Collection):
                 | 
                 |     Performs some clean-up.
 
-        :return: None
         :rtype: None
         """
         return self.silhouettes.CleanUp()
@@ -145,7 +143,6 @@ class Silhouettes(Collection):
         :param tuple i_view_points:
         :param float i_accuracy:
         :param float i_accuracy_for_simplification:
-        :return: Document
         :rtype: Document
         """
         return Document(
@@ -204,7 +201,6 @@ class Silhouettes(Collection):
         :param tuple i_view_points:
         :param float i_accuracy:
         :param float i_accuracy_for_simplification:
-        :return: Document
         :rtype: Document
         """
         return Document(
@@ -227,7 +223,6 @@ class Silhouettes(Collection):
                 | 
                 |     Returns the name of the associated shape.
 
-        :return: str
         :rtype: str
         """
         return self.silhouettes.SilhouetteShapeName()

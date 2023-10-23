@@ -54,7 +54,6 @@ class AnalysisPostProANRSettingAtt(SettingController):
                 |             1 : Deformation is real
                 |             2 : Deformation is amplified Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -86,7 +85,6 @@ class AnalysisPostProANRSettingAtt(SettingController):
                 |             1 : Mode is One Occurrence
                 |             2 : Mode is All Occurrences Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -112,7 +110,6 @@ class AnalysisPostProANRSettingAtt(SettingController):
                 |     Returns or sets the DMUPlayerStepsNumber parameter. Ensure consistency with
                 |     the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -158,7 +155,6 @@ class AnalysisPostProANRSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_post_pro_anr_setting_att.GetDMUPlayerDeformationInfo(io_admin_level, io_locked)
@@ -195,7 +191,6 @@ class AnalysisPostProANRSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_post_pro_anr_setting_att.GetDMUPlayerModeInfo(io_admin_level, io_locked)
@@ -222,7 +217,6 @@ class AnalysisPostProANRSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_post_pro_anr_setting_att.SetDMUPlayerDeformationLock(i_locked)
@@ -264,7 +258,6 @@ class AnalysisPostProANRSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_post_pro_anr_setting_att.SetDMUPlayerModeLock(i_locked)

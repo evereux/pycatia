@@ -72,7 +72,6 @@ class HybridShapeLinePtDir(Line):
                 |          Dim oStart As  CATIALength 
                 |          Set oStart = LinePtDir.BeginOffset
 
-        :return: Length
         :rtype: Length
         """
 
@@ -96,7 +95,6 @@ class HybridShapeLinePtDir(Line):
                 |          Dim oDir As CATIAHybridShapeDirection
                 |          Set oDir = LinePtDir.Dir
 
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
 
@@ -129,7 +127,6 @@ class HybridShapeLinePtDir(Line):
                 |          Dim oEnd As  CATIALength 
                 |          Set oEnd = LinePtDir.EndOffset
 
-        :return: Length
         :rtype: Length
         """
 
@@ -157,7 +154,6 @@ class HybridShapeLinePtDir(Line):
                 |          Dim oOrientation As long
                 |          Set oOrientation = LinePtDir.Orientation
 
-        :return: int
         :rtype: int
         """
 
@@ -190,7 +186,6 @@ class HybridShapeLinePtDir(Line):
                 |          Dim oPoint As Reference
                 |          Set oPoint = LinePtDir.Point
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -225,7 +220,6 @@ class HybridShapeLinePtDir(Line):
                 |          Dim oSurface As Reference 
                 |          Set oSurface = LinePtDir.Surface
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -257,7 +251,6 @@ class HybridShapeLinePtDir(Line):
                 |             the side of the start point = 3 : infinite end point - the line is infinite on the side
                 |             of the end point
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_line_pt_dir.GetLengthType()
@@ -278,7 +271,6 @@ class HybridShapeLinePtDir(Line):
                 |         oSym
                 |             Symetry flag
 
-        :return: bool
         :rtype: bool
         """
         return self.hybrid_shape_line_pt_dir.GetSymmetricalExtension()
@@ -293,7 +285,6 @@ class HybridShapeLinePtDir(Line):
                 | 
                 |     Removes the support surface.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_line_pt_dir.RemoveSupport()
@@ -317,7 +308,6 @@ class HybridShapeLinePtDir(Line):
                 |             of the end point
 
         :param int i_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_line_pt_dir.SetLengthType(i_type)
@@ -338,7 +328,6 @@ class HybridShapeLinePtDir(Line):
                 |             Symetry flag
 
         :param bool i_sym:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_line_pt_dir.SetSymmetricalExtension(i_sym)

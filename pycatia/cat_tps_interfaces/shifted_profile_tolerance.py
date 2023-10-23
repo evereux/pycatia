@@ -50,7 +50,6 @@ class ShiftedProfileTolerance(AnyObject):
                 |     tolerance zone. The value is always positive because shift side is given by
                 |     GetShiftSide method.
 
-        :return: float
         :rtype: float
         """
 
@@ -92,7 +91,6 @@ class ShiftedProfileTolerance(AnyObject):
                 |          oStream.Write "      Shifted Direction End Point : "& oTab(3) & " " & oTab(4) & " " & oTab(5) & sLF
 
         :param tuple op_direction:
-        :return: tuple
         :rtype: tuple
         """
         return self.shifted_profile_tolerance.GetShiftDirection(op_direction)
@@ -139,7 +137,6 @@ class ShiftedProfileTolerance(AnyObject):
                 |          oStream.Write "      Shifted Side Point : "& oShiftTab(0) & " " & oShiftTab(1) & " " & oShiftTab(2) & sLF
 
         :param tuple op_point:
-        :return: tuple
         :rtype: tuple
         """
         return self.shifted_profile_tolerance.GetShiftSide(op_point)

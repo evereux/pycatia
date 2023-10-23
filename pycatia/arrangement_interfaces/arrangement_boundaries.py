@@ -71,7 +71,6 @@ class ArrangementBoundaries(Collection):
         :param Move i_rel_axis:
         :param tuple i_listof_math_points:
         :param tuple i_math_direction:
-        :return: ArrangementBoundary
         :rtype: ArrangementBoundary
         """
         return ArrangementBoundary(
@@ -108,7 +107,6 @@ class ArrangementBoundaries(Collection):
                 |         The retrieved ArrangementBoundary object.
 
         :param cat_variant i_index:
-        :return: ArrangementBoundary
         :rtype: ArrangementBoundary
         """
         return ArrangementBoundary(self.arrangement_boundaries.Item(i_index))
@@ -140,7 +138,6 @@ class ArrangementBoundaries(Collection):
                 |         AnyObject.Name property.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.arrangement_boundaries.Remove(i_index)

@@ -62,7 +62,6 @@ class AngularRepartition(Repartition):
                 | 
                 |          Set AngSpace1 = firstRepartition.AngularSpacing
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -86,7 +85,6 @@ class AngularRepartition(Repartition):
                 | 
                 |          Set AngSpace1 = firstRepartition.AngularSpacing
 
-        :return: Angle
         :rtype: Angle
         """
 

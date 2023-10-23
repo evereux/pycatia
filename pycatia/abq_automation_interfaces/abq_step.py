@@ -60,7 +60,6 @@ class ABQStep(AnyObject):
                 |          Dim abqDataOutputRequests As ABQDataOutputRequests
                 |          Set abqDataOutputRequests = abqStep.OutputRequests
 
-        :return: ABQDataOutputRequests
         :rtype: ABQDataOutputRequests
         """
 
@@ -87,7 +86,6 @@ class ABQStep(AnyObject):
                 |          Dim abqFieldOutputRequests As ABQFieldOutputRequests
                 |          Set abqFieldOutputRequests = abqStep.OutputRequests
 
-        :return: ABQFieldOutputRequests
         :rtype: ABQFieldOutputRequests
         """
 
@@ -115,7 +113,6 @@ class ABQStep(AnyObject):
                 |          ABQHistoryOutputRequests
                 |          Set abqHistoryOutputRequests = abqStep.OutputRequests
 
-        :return: ABQHistoryOutputRequests
         :rtype: ABQHistoryOutputRequests
         """
 
@@ -141,7 +138,6 @@ class ABQStep(AnyObject):
                 |          Dim abqInteractions As ABQInteractions
                 |          Set abqInteractions = abqStep.Interactions
 
-        :return: ABQInteractions
         :rtype: ABQInteractions
         """
 
@@ -161,7 +157,6 @@ class ABQStep(AnyObject):
                 |     Returns:
                 |         The string representing the type of the step.
 
-        :return: str
         :rtype: str
         """
 

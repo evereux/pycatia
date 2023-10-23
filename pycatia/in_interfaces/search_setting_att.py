@@ -53,7 +53,6 @@ class SearchSettingAtt(SettingController):
                 |     available in the Search dialog box used to determine whether documents in
                 |     visualization mode must be transiently loaded during a search query
 
-        :return: bool
         :rtype: bool
         """
 
@@ -82,7 +81,6 @@ class SearchSettingAtt(SettingController):
                 |     the default context scope must override the context scope stored in a favorite
                 |     query
 
-        :return: bool
         :rtype: bool
         """
 
@@ -111,7 +109,6 @@ class SearchSettingAtt(SettingController):
                 |     Role: The Default Power Input Context Scope attribute manages the default
                 |     context scope to be used when none is typed in the Power Input field
 
-        :return: int
         :rtype: int
         """
 
@@ -138,7 +135,6 @@ class SearchSettingAtt(SettingController):
                 |     Role: The Default Power Input Prefix attribute manages the default prefix
                 |     to be used when none is typed in the Power Input field
 
-        :return: str
         :rtype: str
         """
 
@@ -167,7 +163,6 @@ class SearchSettingAtt(SettingController):
                 |     lines can stick more or less the results list so it is recommended to limit
                 |     this number.
 
-        :return: int
         :rtype: int
         """
 
@@ -197,7 +192,6 @@ class SearchSettingAtt(SettingController):
                 |     too many elements can stick the session so it is strongly recommended to limit
                 |     this number.
 
-        :return: int
         :rtype: int
         """
 
@@ -226,7 +220,6 @@ class SearchSettingAtt(SettingController):
 
         :param str o_admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.search_setting_att.GetDeepSearchActivationInfo(o_admin_level, o_locked)
@@ -247,7 +240,6 @@ class SearchSettingAtt(SettingController):
 
         :param str o_admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.search_setting_att.GetDefaultPowerInputContextPriorityInfo(o_admin_level, o_locked)
@@ -268,7 +260,6 @@ class SearchSettingAtt(SettingController):
 
         :param str o_admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.search_setting_att.GetDefaultPowerInputContextScopeInfo(o_admin_level, o_locked)
@@ -288,7 +279,6 @@ class SearchSettingAtt(SettingController):
 
         :param str o_admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.search_setting_att.GetDefaultPowerInputPrefixInfo(o_admin_level, o_locked)
@@ -308,7 +298,6 @@ class SearchSettingAtt(SettingController):
 
         :param str o_admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.search_setting_att.GetMaxDisplayedResultsInfo(o_admin_level, o_locked)
@@ -328,7 +317,6 @@ class SearchSettingAtt(SettingController):
 
         :param str o_admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.search_setting_att.GetMaxPreHighlightedElementsInfo(o_admin_level, o_locked)
@@ -346,7 +334,6 @@ class SearchSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.search_setting_att.SetDeepSearchActivationLock(i_locked)
@@ -380,7 +367,6 @@ class SearchSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.search_setting_att.SetDefaultPowerInputContextPriorityLock(i_locked)
@@ -413,7 +399,6 @@ class SearchSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.search_setting_att.SetDefaultPowerInputContextScopeLock(i_locked)
@@ -446,7 +431,6 @@ class SearchSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.search_setting_att.SetDefaultPowerInputPrefixLock(i_locked)
@@ -479,7 +463,6 @@ class SearchSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.search_setting_att.SetMaxDisplayedResultsLock(i_locked)
@@ -512,7 +495,6 @@ class SearchSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.search_setting_att.SetMaxPreHighlightedElementsLock(i_locked)

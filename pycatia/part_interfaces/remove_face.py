@@ -80,7 +80,6 @@ class RemoveFace(DressUpShape):
                 | 
                 |     Get the specified faces to be kept.
 
-        :return: References
         :rtype: References
         """
 
@@ -97,7 +96,6 @@ class RemoveFace(DressUpShape):
                 | 
                 |     Get the faces that will be removed.
 
-        :return: References
         :rtype: References
         """
 
@@ -145,7 +143,6 @@ class RemoveFace(DressUpShape):
                 | 
                 |     Get the specified faces to be removed.
 
-        :return: References
         :rtype: References
         """
 
@@ -170,7 +167,6 @@ class RemoveFace(DressUpShape):
                 |         Boundary object is supported: Face.
 
         :param Reference i_keep_face:
-        :return: None
         :rtype: None
         """
         return self.remove_face.remove_KeepFace(i_keep_face.com_object)
@@ -209,7 +205,6 @@ class RemoveFace(DressUpShape):
                 |         Boundary object is supported: Face.
 
         :param Reference i_remove_face:
-        :return: None
         :rtype: None
         """
         return self.remove_face.remove_RemoveFace(i_remove_face.com_object)

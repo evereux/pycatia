@@ -58,7 +58,6 @@ class Repartition(AnyObject):
                 | 
                 |          Set Nb = firstRepartition.InstancesCount
 
-        :return: IntParam
         :rtype: IntParam
         """
 

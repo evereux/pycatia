@@ -68,7 +68,6 @@ class Symmetry(Shape):
                 |           Set oHybridShape=oSymmetry.HybridShape
                 |           oHybridShape.SectionCoupling = 2
 
-        :return: HybridShape
         :rtype: HybridShape
         """
 

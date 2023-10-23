@@ -70,7 +70,6 @@ class ManufacturingActivity(Activity):
                 |          Dim bActive As boolean
                 |          Set bActive = firstActivity.Active
 
-        :return: bool
         :rtype: bool
         """
 
@@ -104,7 +103,6 @@ class ManufacturingActivity(Activity):
                 |          Dim theMAF As ManufacturingMachinableArea
                 |          Set theMAF = firstActivity.MachinableArea
 
-        :return: ManufacturingMachinableArea
         :rtype: ManufacturingMachinableArea
         """
 
@@ -135,7 +133,6 @@ class ManufacturingActivity(Activity):
                 | 
                 |          theMachiningTime = firstActivity.MachiningTime
 
-        :return: float
         :rtype: float
         """
 
@@ -153,7 +150,6 @@ class ManufacturingActivity(Activity):
                 |     This property returns the number of Feedrate attributes of a Manufacturing
                 |     Activity.
 
-        :return: int
         :rtype: int
         """
 
@@ -171,7 +167,6 @@ class ManufacturingActivity(Activity):
                 |     This property returns the number of Geometry attributes of a Manufacturing
                 |     Activity.
 
-        :return: int
         :rtype: int
         """
 
@@ -189,7 +184,6 @@ class ManufacturingActivity(Activity):
                 |     This property returns the number of Strategy attributes of a Manufacturing
                 |     Activity.
 
-        :return: int
         :rtype: int
         """
 
@@ -217,7 +211,6 @@ class ManufacturingActivity(Activity):
                 |          Set myActivity  = ... 
                 |          Set precedences = myActivity.Precedences
 
-        :return: ManufacturingPrecedences
         :rtype: ManufacturingPrecedences
         """
         
@@ -236,7 +229,6 @@ class ManufacturingActivity(Activity):
                 |     This property returns the path of the representation file for a
                 |     manufacturing Activity.
 
-        :return: str
         :rtype: str
         """
 
@@ -267,7 +259,6 @@ class ManufacturingActivity(Activity):
                 | 
                 |          Set CurTool = firstActivity.GetTool
 
-        :return: ManufacturingTool
         :rtype: ManufacturingTool
         """
 
@@ -291,7 +282,6 @@ class ManufacturingActivity(Activity):
                 | 
                 |          Set CurrAssembly = CurrActivity.ToolAssembly
 
-        :return: ManufacturingToolAssembly
         :rtype: ManufacturingToolAssembly
         """
 
@@ -314,7 +304,6 @@ class ManufacturingActivity(Activity):
                 | 
                 |          theTotalTime = firstActivity.TotalTime
 
-        :return: float
         :rtype: float
         """
 
@@ -338,7 +327,6 @@ class ManufacturingActivity(Activity):
                 | 
                 |          theVideoResult = firstActivity.VideoResult
 
-        :return: str
         :rtype: str
         """
 
@@ -361,7 +349,6 @@ class ManufacturingActivity(Activity):
                 |          Set RapidFeed = firstActivity.GetAttribute(MfgRapidFeed)
 
         :param str i_attribut:
-        :return: Parameter
         :rtype: Parameter
         """
         return Parameter(self.manufacturing_activity.GetAttribute(i_attribut))
@@ -378,7 +365,6 @@ class ManufacturingActivity(Activity):
                 |     Activity.
 
         :param str i_attribut_name:
-        :return: str
         :rtype: str
         """
         return self.manufacturing_activity.GetAttributeNLSName(i_attribut_name)
@@ -404,7 +390,6 @@ class ManufacturingActivity(Activity):
                 |          call myActivity.GetListOfFeedrateAttributes(oListOfAttributes)
 
         :param tuple o_list_of_attributes:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_activity.GetListOfFeedrateAttributes(o_list_of_attributes)
@@ -446,7 +431,6 @@ class ManufacturingActivity(Activity):
                 |          myActivity.GetListOfGeomAttributes(oListOfAttributes)
 
         :param tuple o_list_of_attributes:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_activity.GetListOfGeomAttributes(o_list_of_attributes)
@@ -487,7 +471,6 @@ class ManufacturingActivity(Activity):
                 |          call myActivity.GetListOfStrategyAttributes(oListOfAttributes)
 
         :param tuple o_list_of_attributes:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_activity.GetListOfStrategyAttributes(o_list_of_attributes)
@@ -523,7 +506,6 @@ class ManufacturingActivity(Activity):
         :param float o_x_axis:
         :param float o_y_axis:
         :param float o_z_axis:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_activity.GetMachiningDirection(o_x_axis, o_y_axis, o_z_axis)
@@ -544,7 +526,6 @@ class ManufacturingActivity(Activity):
         :param float o_x_axis:
         :param float o_y_axis:
         :param float o_z_axis:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_activity.GetToolAxis(o_x_axis, o_y_axis, o_z_axis)
@@ -565,7 +546,6 @@ class ManufacturingActivity(Activity):
         :param float i_x_axis:
         :param float i_y_axis:
         :param float i_z_axis:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_activity.SetMachiningDirection(i_x_axis, i_y_axis, i_z_axis)
@@ -586,7 +566,6 @@ class ManufacturingActivity(Activity):
         :param float i_x_axis:
         :param float i_y_axis:
         :param float i_z_axis:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_activity.SetToolAxis(i_x_axis, i_y_axis, i_z_axis)

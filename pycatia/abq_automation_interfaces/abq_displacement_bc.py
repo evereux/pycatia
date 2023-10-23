@@ -55,7 +55,6 @@ class ABQDisplacementBC(ABQBoundaryCondition):
                 |     Returns:
                 |         boolean specifying whether local csys is active.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -84,7 +83,6 @@ class ABQDisplacementBC(ABQBoundaryCondition):
                 |     Returns:
                 |         The local coordinate system.
 
-        :return: AxisSystem
         :rtype: AxisSystem
         """
 
@@ -112,7 +110,6 @@ class ABQDisplacementBC(ABQBoundaryCondition):
                 |     Returns:
                 |         The first translational component.
 
-        :return: float
         :rtype: float
         """
 
@@ -140,7 +137,6 @@ class ABQDisplacementBC(ABQBoundaryCondition):
                 |     Returns:
                 |         The second translational component.
 
-        :return: float
         :rtype: float
         """
 
@@ -168,7 +164,6 @@ class ABQDisplacementBC(ABQBoundaryCondition):
                 |     Returns:
                 |         The third translational component.
 
-        :return: float
         :rtype: float
         """
 
@@ -196,7 +191,6 @@ class ABQDisplacementBC(ABQBoundaryCondition):
                 |     Returns:
                 |         The second rotational component.
 
-        :return: float
         :rtype: float
         """
 
@@ -224,7 +218,6 @@ class ABQDisplacementBC(ABQBoundaryCondition):
                 |     Returns:
                 |         The second rotational component.
 
-        :return: float
         :rtype: float
         """
 
@@ -252,7 +245,6 @@ class ABQDisplacementBC(ABQBoundaryCondition):
                 |     Returns:
                 |         The third rotational component.
 
-        :return: float
         :rtype: float
         """
 
@@ -286,7 +278,6 @@ class ABQDisplacementBC(ABQBoundaryCondition):
 
         :param int i_dof:
         :param bool o_flag:
-        :return: None
         :rtype: None
         """
         return self.abq_displacement_bc.GetDOFActivation(i_dof, o_flag)
@@ -330,7 +321,6 @@ class ABQDisplacementBC(ABQBoundaryCondition):
 
         :param Product o_product:
         :param AxisSystem o_pub_axis_system:
-        :return: None
         :rtype: None
         """
         return self.abq_displacement_bc.GetLocalCsysFromPublication(o_product.com_object, o_pub_axis_system.com_object)
@@ -367,8 +357,8 @@ class ABQDisplacementBC(ABQBoundaryCondition):
                 |             ABQ_CYLINDRICAL (for Cylindrical coordinate system), ABQ_SPHERICAL (for
                 |             Spherical coordinate system),
     
-        :return: enum abq_local_csys_type
         :rtype: enum abq_local_csys_type
+        :rtype: int
         """
         return self.abq_displacement_bc.GetUseCoordinateSystemType()
 
@@ -392,7 +382,6 @@ class ABQDisplacementBC(ABQBoundaryCondition):
     
         :param int i_dof:
         :param bool i_flag:
-        :return: None
         :rtype: None
         """
         return self.abq_displacement_bc.SetDOFActivation(i_dof, i_flag)
@@ -438,7 +427,6 @@ class ABQDisplacementBC(ABQBoundaryCondition):
     
         :param Product i_product:
         :param Publication i_pub_axis_system:
-        :return: None
         :rtype: None
         """
         return self.abq_displacement_bc.SetLocalCsysFromPublication(i_product.com_object, i_pub_axis_system.com_object)
@@ -477,7 +465,6 @@ class ABQDisplacementBC(ABQBoundaryCondition):
                 |             Spherical coordinate system),
     
         :param int i_csystem_type:
-        :return: None
         :rtype: None
         """
         return self.abq_displacement_bc.SetUseCoordinateSystemType(i_csystem_type)

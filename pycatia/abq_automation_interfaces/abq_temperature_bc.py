@@ -52,7 +52,6 @@ class ABQTemperatureBC(ABQBoundaryCondition):
                 |     Returns:
                 |         The magnitude of the temperature boundary condition.
 
-        :return: float
         :rtype: float
         """
 
@@ -81,7 +80,6 @@ class ABQTemperatureBC(ABQBoundaryCondition):
                 |         A boolean specifying whether an amplitude will be
                 |         used.
 
-        :return: bool
         :rtype: bool
         """
 

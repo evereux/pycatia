@@ -59,7 +59,6 @@ class SchArrowDisplay(AnyObject):
                 |          objThisIntf.IsArrowShownbVar1
 
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_arrow_display.IsArrowShown(o_b_yes)
@@ -109,7 +108,6 @@ class SchArrowDisplay(AnyObject):
 
         :param SchGRRRoute i_grr:
         :param int i_seg_num:
-        :return: None
         :rtype: None
         """
         return self.sch_arrow_display.SetArrow(i_grr.com_object, i_seg_num)
@@ -159,7 +157,6 @@ class SchArrowDisplay(AnyObject):
 
         :param SchGRRRoute i_grr:
         :param int i_seg_num:
-        :return: None
         :rtype: None
         """
         return self.sch_arrow_display.UnsetArrow(i_grr.com_object, i_seg_num)

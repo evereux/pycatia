@@ -46,7 +46,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the AccuratePickingMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -71,7 +70,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the AccuratePickingWindowSize parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -96,7 +94,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the AllZBufferElementMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -121,7 +118,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the AmbientActivation parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -146,7 +142,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the AntiAliasingMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -171,7 +166,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the AntiAliasingOffset parameter.
 
-        :return: float
         :rtype: float
         """
 
@@ -196,7 +190,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the AuxiliaryDrillViewer parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -222,7 +215,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Deprecated:
                 |         V5R16. Returns the BackFaceCullingMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -247,7 +239,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the BorderEdgesMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -272,7 +263,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the BorderEdgesThickness parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -297,7 +287,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the BoundingBoxSelectionMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -322,7 +311,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the ColorBackgroundMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -347,7 +335,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the AmbientActivation parameter.
 
-        :return: float
         :rtype: float
         """
 
@@ -372,7 +359,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the AmbientActivation parameter.
 
-        :return: float
         :rtype: float
         """
 
@@ -397,7 +383,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the AmbientActivation parameter.
 
-        :return: float
         :rtype: float
         """
 
@@ -422,7 +407,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the SetStereoModeLock parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -447,7 +431,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the DisplayDrillList parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -472,7 +455,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the DisplayImmersiveDrillViewer parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -497,7 +479,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the DynamicCull parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -522,7 +503,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the DynamicLOD parameter.
 
-        :return: float
         :rtype: float
         """
 
@@ -547,7 +527,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the FaceHLDrill parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -572,7 +551,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the FlyCollisionMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -597,7 +575,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the FlyCollisionSphereRadius parameter.
 
-        :return: float
         :rtype: float
         """
 
@@ -622,7 +599,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the FlyCollisionType parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -647,7 +623,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the FlySensitivity parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -672,7 +647,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the FlySpeed parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -697,7 +671,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the FlySpeedMode parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -722,7 +695,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the FollowGroundAltitude parameter.
 
-        :return: float
         :rtype: float
         """
 
@@ -747,7 +719,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the FollowGroundMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -773,7 +744,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the AntiAliasingMode parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -798,7 +768,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the Gravity parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -823,7 +792,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the GravityAxis parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -848,7 +816,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the HaloMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -873,7 +840,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the IsoparGenerationMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -898,7 +864,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Retrieves the angle value for rotations operated through key combinations.
 
-        :return: int
         :rtype: int
         """
 
@@ -923,7 +888,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the LightViewerMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -948,7 +912,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the LineicCgrMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -973,7 +936,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the MaxSelectionMove parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -998,7 +960,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the MinimumFPSMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1023,7 +984,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the MinimumSpaceFPSMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1048,7 +1008,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the MouseDoubleClicDelay parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -1073,7 +1032,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the MouseSpeedValue parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -1098,7 +1056,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the NbIsopars parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -1123,7 +1080,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the NoZBufferSelectionMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1148,7 +1104,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the NumberOfMinimumFPS parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -1173,7 +1128,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the NumberOfMinimumSpaceFPS parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -1198,7 +1152,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the OcclusionCullingMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1223,7 +1176,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the SetStereoModeLock parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1248,7 +1200,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the OtherSelectionTimeout parameter.
 
-        :return: float
         :rtype: float
         """
 
@@ -1273,7 +1224,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the OtherSelectionTimeoutActivity parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1298,7 +1248,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the PickingWindowSize parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -1323,7 +1272,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the PreSelectionMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1348,7 +1296,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the PreselectedElementLinetype parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -1373,7 +1320,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the RotationSphereMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1398,7 +1344,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the ShaderMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1423,7 +1368,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the StaticCull parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -1448,7 +1392,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the StaticLOD parameter.
 
-        :return: float
         :rtype: float
         """
 
@@ -1473,7 +1416,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the StereoMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1498,7 +1440,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the TransparencyMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1523,7 +1464,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the TwoSideLightingMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1548,7 +1488,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the ViewpointAnimationMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1573,7 +1512,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the 2DAccuracyMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1598,7 +1536,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the 2DFixedAccuracy parameter.
 
-        :return: float
         :rtype: float
         """
 
@@ -1623,7 +1560,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the 2DProportionnalAccuracy parameter.
 
-        :return: float
         :rtype: float
         """
 
@@ -1648,7 +1584,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the Viz3DAccuracyMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1673,7 +1608,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the 3DCurveAccuracy parameter.
 
-        :return: float
         :rtype: float
         """
 
@@ -1698,7 +1632,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the 3DFixedAccuracy parameter.
 
-        :return: float
         :rtype: float
         """
 
@@ -1723,7 +1656,6 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the Viz3DProportionnalAccuracy parameter.
 
-        :return: float
         :rtype: float
         """
 
@@ -1752,7 +1684,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetAccuratePickingModeInfo(io_admin_level, io_locked)
@@ -1773,7 +1704,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetAccuratePickingWindowSizeInfo(io_admin_level, io_locked)
@@ -1793,7 +1723,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetAllZBufferElementModeInfo(io_admin_level, io_locked)
@@ -1813,7 +1742,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetAmbientActivationInfo(io_admin_level, io_locked)
@@ -1833,7 +1761,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetAntiAliasingModeInfo(io_admin_level, io_locked)
@@ -1853,7 +1780,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetAntiAliasingOffsetInfo(io_admin_level, io_locked)
@@ -1873,7 +1799,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetAuxiliaryDrillViewerInfo(io_admin_level, io_locked)
@@ -1905,7 +1830,6 @@ class VisualizationSettingAtt(SettingController):
                 |         E_FAIL
                 |             if the operation failed.
 
-        :return: int
         :rtype: int
         """
         return self.visualization_setting_att.GetBackFaceCullingMode()
@@ -1925,7 +1849,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetBackFaceCullingModeInfo(io_admin_level, io_locked)
@@ -1945,7 +1868,6 @@ class VisualizationSettingAtt(SettingController):
         :param int io_r:
         :param int io_g:
         :param int io_b:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.GetBackgroundRGB(io_r, io_g, io_b)
@@ -1965,7 +1887,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetBackgroundRGBInfo(io_admin_level, io_locked)
@@ -1985,7 +1906,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetBorderEdgesModeInfo(io_admin_level, io_locked)
@@ -2005,7 +1925,6 @@ class VisualizationSettingAtt(SettingController):
         :param int io_r:
         :param int io_g:
         :param int io_b:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.GetBorderEdgesRGB(io_r, io_g, io_b)
@@ -2025,7 +1944,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetBorderEdgesRGBInfo(io_admin_level, io_locked)
@@ -2045,7 +1963,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetBorderEdgesThicknessInfo(io_admin_level, io_locked)
@@ -2065,7 +1982,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetBoundingBoxSelectionModeInfo(io_admin_level, io_locked)
@@ -2085,7 +2001,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetColorBackgroundModeInfo(io_admin_level, io_locked)
@@ -2106,7 +2021,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetDefaultDiffuseAmbientCoefficientInfo(io_admin_level, io_locked)
@@ -2126,7 +2040,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetDefaultShininessInfo(io_admin_level, io_locked)
@@ -2147,7 +2060,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetDefaultSpecularCoefficientInfo(io_admin_level, io_locked)
@@ -2167,7 +2079,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetDisplayCurrentScaleInfo(io_admin_level, io_locked)
@@ -2187,7 +2098,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetDisplayDrillListInfo(io_admin_level, io_locked)
@@ -2208,7 +2118,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetDisplayImmersiveDrillViewerInfo(io_admin_level, io_locked)
@@ -2228,7 +2137,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetDynamicCullInfo(io_admin_level, io_locked)
@@ -2248,7 +2156,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetDynamicLODInfo(io_admin_level, io_locked)
@@ -2268,7 +2175,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetFaceHLDrillInfo(io_admin_level, io_locked)
@@ -2288,7 +2194,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetFlyCollisionModeInfo(io_admin_level, io_locked)
@@ -2308,7 +2213,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetFlyCollisionSphereRadiusInfo(io_admin_level, io_locked)
@@ -2328,7 +2232,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetFlyCollisionTypeInfo(io_admin_level, io_locked)
@@ -2348,7 +2251,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetFlySensitivityInfo(io_admin_level, io_locked)
@@ -2368,7 +2270,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetFlySpeedInfo(io_admin_level, io_locked)
@@ -2388,7 +2289,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetFlySpeedModeInfo(io_admin_level, io_locked)
@@ -2408,7 +2308,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetFollowGroundAltitudeInfo(io_admin_level, io_locked)
@@ -2428,7 +2327,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetFollowGroundModeInfo(io_admin_level, io_locked)
@@ -2449,7 +2347,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetFullSceneAntiAliasingModeInfo(io_admin_level, io_locked)
@@ -2469,7 +2366,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetGravityAxisInfo(io_admin_level, io_locked)
@@ -2488,7 +2384,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetGravityInfo(io_admin_level, io_locked)
@@ -2508,7 +2403,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetHaloModeInfo(io_admin_level, io_locked)
@@ -2528,7 +2422,6 @@ class VisualizationSettingAtt(SettingController):
         :param int io_r:
         :param int io_g:
         :param int io_b:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.GetHandlesRGB(io_r, io_g, io_b)
@@ -2548,7 +2441,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetHandlesRGBInfo(io_admin_level, io_locked)
@@ -2568,7 +2460,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetIsoparGenerationModeInfo(io_admin_level, io_locked)
@@ -2589,7 +2480,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetKeyboardRotationAngleValueInfo(io_admin_level, io_locked)
@@ -2609,7 +2499,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetLightViewerModeInfo(io_admin_level, io_locked)
@@ -2629,7 +2518,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetLineicCgrModeInfo(io_admin_level, io_locked)
@@ -2649,7 +2537,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetMaxSelectionMoveInfo(io_admin_level, io_locked)
@@ -2669,7 +2556,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetMinimumFPSModeInfo(io_admin_level, io_locked)
@@ -2689,7 +2575,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetMinimumSpaceFPSModeInfo(io_admin_level, io_locked)
@@ -2709,7 +2594,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetMouseDoubleClicDelayInfo(io_admin_level, io_locked)
@@ -2729,7 +2613,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetMouseSpeedValueInfo(io_admin_level, io_locked)
@@ -2749,7 +2632,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetNbIsoparsInfo(io_admin_level, io_locked)
@@ -2782,7 +2664,6 @@ class VisualizationSettingAtt(SettingController):
         :param int io_r:
         :param int io_g:
         :param int io_b:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.GetNoShowBackgroundRGB(io_r, io_g, io_b)
@@ -2812,7 +2693,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetNoShowBackgroundRGBInfo(io_admin_level, io_locked)
@@ -2832,7 +2712,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetNoZBufferSelectionModeInfo(io_admin_level, io_locked)
@@ -2852,7 +2731,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetNumberOfMinimumFPSInfo(io_admin_level, io_locked)
@@ -2872,7 +2750,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetNumberOfMinimumSpaceFPSInfo(io_admin_level, io_locked)
@@ -2892,7 +2769,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetOcclusionCullingModeInfo(io_admin_level, io_locked)
@@ -2912,7 +2788,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetOpaqueFacesInfo(io_admin_level, io_locked)
@@ -2933,7 +2808,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetOtherSelectionTimeoutActivityInfo(io_admin_level, io_locked)
@@ -2953,7 +2827,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetOtherSelectionTimeoutInfo(io_admin_level, io_locked)
@@ -2973,7 +2846,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetPickingWindowSizeInfo(io_admin_level, io_locked)
@@ -2993,7 +2865,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetPreSelectionModeInfo(io_admin_level, io_locked)
@@ -3014,7 +2885,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetPreselectedElementLinetypeInfo(io_admin_level, io_locked)
@@ -3034,7 +2904,6 @@ class VisualizationSettingAtt(SettingController):
         :param int io_r:
         :param int io_g:
         :param int io_b:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.GetPreselectedElementRGB(io_r, io_g, io_b)
@@ -3054,7 +2923,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetPreselectedElementRGBInfo(io_admin_level, io_locked)
@@ -3074,7 +2942,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetRotationSphereModeInfo(io_admin_level, io_locked)
@@ -3094,7 +2961,6 @@ class VisualizationSettingAtt(SettingController):
         :param int io_r:
         :param int io_g:
         :param int io_b:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.GetSelectedEdgeRGB(io_r, io_g, io_b)
@@ -3114,7 +2980,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetSelectedEdgeRGBInfo(io_admin_level, io_locked)
@@ -3134,7 +2999,6 @@ class VisualizationSettingAtt(SettingController):
         :param int io_r:
         :param int io_g:
         :param int io_b:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.GetSelectedElementRGB(io_r, io_g, io_b)
@@ -3154,7 +3018,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetSelectedElementRGBInfo(io_admin_level, io_locked)
@@ -3174,7 +3037,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetShaderModeInfo(io_admin_level, io_locked)
@@ -3194,7 +3056,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetStaticCullInfo(io_admin_level, io_locked)
@@ -3214,7 +3075,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetStaticLODInfo(io_admin_level, io_locked)
@@ -3234,7 +3094,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetStereoModeInfo(io_admin_level, io_locked)
@@ -3254,7 +3113,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetTransparencyModeInfo(io_admin_level, io_locked)
@@ -3274,7 +3132,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetTwoSideLightingModeInfo(io_admin_level, io_locked)
@@ -3294,7 +3151,6 @@ class VisualizationSettingAtt(SettingController):
         :param int io_r:
         :param int io_g:
         :param int io_b:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.GetUnderIntensifiedRGB(io_r, io_g, io_b)
@@ -3314,7 +3170,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetUnderIntensifiedRGBInfo(io_admin_level, io_locked)
@@ -3334,7 +3189,6 @@ class VisualizationSettingAtt(SettingController):
         :param int io_r:
         :param int io_g:
         :param int io_b:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.GetUpdateNeededRGB(io_r, io_g, io_b)
@@ -3354,7 +3208,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetUpdateNeededRGBInfo(io_admin_level, io_locked)
@@ -3374,7 +3227,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetViewpointAnimationModeInfo(io_admin_level, io_locked)
@@ -3394,7 +3246,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetViz2DAccuracyModeInfo(io_admin_level, io_locked)
@@ -3414,7 +3265,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetViz2DFixedAccuracyInfo(io_admin_level, io_locked)
@@ -3435,7 +3285,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetViz2DProportionnalAccuracyInfo(io_admin_level, io_locked)
@@ -3455,7 +3304,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetViz3DAccuracyModeInfo(io_admin_level, io_locked)
@@ -3475,7 +3323,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetViz3DCurveAccuracyInfo(io_admin_level, io_locked)
@@ -3495,7 +3342,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetViz3DFixedAccuracyInfo(io_admin_level, io_locked)
@@ -3516,7 +3362,6 @@ class VisualizationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.visualization_setting_att.GetViz3DProportionnalAccuracyInfo(io_admin_level, io_locked)
@@ -3550,7 +3395,6 @@ class VisualizationSettingAtt(SettingController):
                 |             if the operation failed.
 
         :param int i_back_face_culling_mode:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.PutBackFaceCullingMode(i_back_face_culling_mode)
@@ -3568,7 +3412,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetAccuratePickingModeLock(i_locked)
@@ -3601,7 +3444,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetAccuratePickingWindowSizeLock(i_locked)
@@ -3634,7 +3476,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetAllZBufferElementModeLock(i_locked)
@@ -3666,7 +3507,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetAmbientActivationLock(i_locked)
@@ -3698,7 +3538,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetAntiAliasingModeLock(i_locked)
@@ -3730,7 +3569,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetAntiAliasingOffsetLock(i_locked)
@@ -3763,7 +3601,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetAuxiliaryDrillViewerLock(i_locked)
@@ -3796,7 +3633,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetBackFaceCullingModeLock(i_locked)
@@ -3831,7 +3667,6 @@ class VisualizationSettingAtt(SettingController):
         :param int i_r:
         :param int i_g:
         :param int i_b:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetBackgroundRGB(i_r, i_g, i_b)
@@ -3848,7 +3683,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetBackgroundRGBLock(i_locked)
@@ -3880,7 +3714,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetBorderEdgesModeLock(i_locked)
@@ -3915,7 +3748,6 @@ class VisualizationSettingAtt(SettingController):
         :param int i_r:
         :param int i_g:
         :param int i_b:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetBorderEdgesRGB(i_r, i_g, i_b)
@@ -3932,7 +3764,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetBorderEdgesRGBLock(i_locked)
@@ -3965,7 +3796,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetBorderEdgesThicknessLock(i_locked)
@@ -3998,7 +3828,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetBoundingBoxSelectionModeLock(i_locked)
@@ -4031,7 +3860,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetColorBackgroundModeLock(i_locked)
@@ -4065,7 +3893,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetDefaultDiffuseAmbientCoefficientLock(i_locked)
@@ -4097,7 +3924,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetDefaultShininessLock(i_locked)
@@ -4130,7 +3956,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetDefaultSpecularCoefficientLock(i_locked)
@@ -4162,7 +3987,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetDisplayCurrentScaleLock(i_locked)
@@ -4194,7 +4018,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetDisplayDrillListLock(i_locked)
@@ -4227,7 +4050,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetDisplayImmersiveDrillViewerLock(i_locked)
@@ -4259,7 +4081,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetDynamicCullLock(i_locked)
@@ -4291,7 +4112,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetDynamicLODLock(i_locked)
@@ -4323,7 +4143,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetFaceHLDrillLock(i_locked)
@@ -4355,7 +4174,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetFlyCollisionModeLock(i_locked)
@@ -4388,7 +4206,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetFlyCollisionSphereRadiusLock(i_locked)
@@ -4420,7 +4237,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetFlyCollisionTypeLock(i_locked)
@@ -4452,7 +4268,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetFlySensitivityLock(i_locked)
@@ -4484,7 +4299,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetFlySpeedLock(i_locked)
@@ -4516,7 +4330,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetFlySpeedModeLock(i_locked)
@@ -4549,7 +4362,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetFollowGroundAltitudeLock(i_locked)
@@ -4581,7 +4393,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetFollowGroundModeLock(i_locked)
@@ -4613,7 +4424,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetFullSceneAntiAliasingModeLock(i_locked)
@@ -4645,7 +4455,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetGravityAxisLock(i_locked)
@@ -4677,7 +4486,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetGravityLock(i_locked)
@@ -4709,7 +4517,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetHaloModeLock(i_locked)
@@ -4744,7 +4551,6 @@ class VisualizationSettingAtt(SettingController):
         :param int i_r:
         :param int i_g:
         :param int i_b:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetHandlesRGB(i_r, i_g, i_b)
@@ -4761,7 +4567,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetHandlesRGBLock(i_locked)
@@ -4794,7 +4599,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetIsoparGenerationModeLock(i_locked)
@@ -4827,7 +4631,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetKeyboardRotationAngleValueLock(i_locked)
@@ -4859,7 +4662,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetLightViewerModeLock(i_locked)
@@ -4891,7 +4693,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetLineicCgrModeLock(i_locked)
@@ -4923,7 +4724,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetMaxSelectionMoveLock(i_locked)
@@ -4955,7 +4755,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetMinimumFPSModeLock(i_locked)
@@ -4988,7 +4787,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetMinimumSpaceFPSModeLock(i_locked)
@@ -5021,7 +4819,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetMouseDoubleClicDelayLock(i_locked)
@@ -5053,7 +4850,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetMouseSpeedValueLock(i_locked)
@@ -5085,7 +4881,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetNbIsoparsLock(i_locked)
@@ -5133,7 +4928,6 @@ class VisualizationSettingAtt(SettingController):
         :param int i_r:
         :param int i_g:
         :param int i_b:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetNoShowBackgroundRGB(i_r, i_g, i_b)
@@ -5167,7 +4961,6 @@ class VisualizationSettingAtt(SettingController):
                 |         Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetNoShowBackgroundRGBLock(i_locked)
@@ -5200,7 +4993,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetNoZBufferSelectionModeLock(i_locked)
@@ -5232,7 +5024,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetNumberOfMinimumFPSLock(i_locked)
@@ -5265,7 +5056,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetNumberOfMinimumSpaceFPSLock(i_locked)
@@ -5298,7 +5088,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetOcclusionCullingModeLock(i_locked)
@@ -5330,7 +5119,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetOpaqueFacesLock(i_locked)
@@ -5363,7 +5151,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetOtherSelectionTimeoutActivityLock(i_locked)
@@ -5396,7 +5183,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetOtherSelectionTimeoutLock(i_locked)
@@ -5428,7 +5214,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetPickingWindowSizeLock(i_locked)
@@ -5460,7 +5245,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetPreSelectionModeLock(i_locked)
@@ -5493,7 +5277,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetPreselectedElementLinetypeLock(i_locked)
@@ -5528,7 +5311,6 @@ class VisualizationSettingAtt(SettingController):
         :param int i_r:
         :param int i_g:
         :param int i_b:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetPreselectedElementRGB(i_r, i_g, i_b)
@@ -5546,7 +5328,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetPreselectedElementRGBLock(i_locked)
@@ -5578,7 +5359,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetRotationSphereModeLock(i_locked)
@@ -5613,7 +5393,6 @@ class VisualizationSettingAtt(SettingController):
         :param int i_r:
         :param int i_g:
         :param int i_b:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetSelectedEdgeRGB(i_r, i_g, i_b)
@@ -5630,7 +5409,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetSelectedEdgeRGBLock(i_locked)
@@ -5665,7 +5443,6 @@ class VisualizationSettingAtt(SettingController):
         :param int i_r:
         :param int i_g:
         :param int i_b:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetSelectedElementRGB(i_r, i_g, i_b)
@@ -5682,7 +5459,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetSelectedElementRGBLock(i_locked)
@@ -5714,7 +5490,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetShaderModeLock(i_locked)
@@ -5746,7 +5521,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetStaticCullLock(i_locked)
@@ -5778,7 +5552,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetStaticLODLock(i_locked)
@@ -5810,7 +5583,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetStereoModeLock(i_locked)
@@ -5842,7 +5614,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetTransparencyModeLock(i_locked)
@@ -5875,7 +5646,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetTwoSideLightingModeLock(i_locked)
@@ -5910,7 +5680,6 @@ class VisualizationSettingAtt(SettingController):
         :param int i_r:
         :param int i_g:
         :param int i_b:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetUnderIntensifiedRGB(i_r, i_g, i_b)
@@ -5928,7 +5697,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetUnderIntensifiedRGBLock(i_locked)
@@ -5963,7 +5731,6 @@ class VisualizationSettingAtt(SettingController):
         :param int i_r:
         :param int i_g:
         :param int i_b:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetUpdateNeededRGB(i_r, i_g, i_b)
@@ -5980,7 +5747,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetUpdateNeededRGBLock(i_locked)
@@ -6013,7 +5779,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetViewpointAnimationModeLock(i_locked)
@@ -6045,7 +5810,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetViz2DAccuracyModeLock(i_locked)
@@ -6077,7 +5841,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetViz2DFixedAccuracyLock(i_locked)
@@ -6110,7 +5873,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetViz2DProportionnalAccuracyLock(i_locked)
@@ -6142,7 +5904,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetViz3DAccuracyModeLock(i_locked)
@@ -6174,7 +5935,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetViz3DCurveAccuracyLock(i_locked)
@@ -6206,7 +5966,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetViz3DFixedAccuracyLock(i_locked)
@@ -6239,7 +5998,6 @@ class VisualizationSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.visualization_setting_att.SetViz3DProportionnalAccuracyLock(i_locked)

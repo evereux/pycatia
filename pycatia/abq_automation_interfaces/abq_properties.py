@@ -74,7 +74,6 @@ class ABQProperties(Collection):
                 |          Set abqtabularAmpl =  abaqusproperties.Add("ABQTabularAmplitude")
 
         :param str i_property_type:
-        :return: ABQProperty
         :rtype: ABQProperty
         """
         return ABQProperty(self.abq_properties.Add(i_property_type))
@@ -104,7 +103,6 @@ class ABQProperties(Collection):
                 |         The specified ABQProperty.
 
         :param cat_variant i_index:
-        :return: ABQProperty
         :rtype: ABQProperty
         """
         return ABQProperty(self.abq_properties.Item(i_index))
@@ -131,7 +129,6 @@ class ABQProperties(Collection):
                 |             using the CATIABase::Name property.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.abq_properties.Remove(i_index)

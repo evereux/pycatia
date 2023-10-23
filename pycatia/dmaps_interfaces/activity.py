@@ -63,7 +63,6 @@ class Activity(AnyObject):
                 |     Returns:
                 |         oNbAttr The number of attributes
 
-        :return: int
         :rtype: int
         """
 
@@ -84,7 +83,6 @@ class Activity(AnyObject):
                 |     Returns:
                 |         oBegin The beginning date of the current activity
 
-        :return: float
         :rtype: float
         """
 
@@ -113,7 +111,6 @@ class Activity(AnyObject):
                 |     Returns:
                 |         oCBT The calculated begin time of the current activity
 
-        :return: float
         :rtype: float
         """
 
@@ -134,7 +131,6 @@ class Activity(AnyObject):
                 |     Returns:
                 |         oCCT The calculated time cycle of the current activity
 
-        :return: float
         :rtype: float
         """
 
@@ -153,7 +149,6 @@ class Activity(AnyObject):
                 |     the activity. Please note that it used to return all children, but from R20SP4
                 |     it returns only exposed children, which could be different from all children.
 
-        :return: Activities
         :rtype: Activities
         """
 
@@ -179,7 +174,6 @@ class Activity(AnyObject):
                 |         iCT
                 |             The specified time cycle of the current activity
 
-        :return: float
         :rtype: float
         """
 
@@ -213,7 +207,6 @@ class Activity(AnyObject):
                 |         iDescriptionBSTR
                 |             The specified description of the current activity
 
-        :return: str
         :rtype: str
         """
 
@@ -245,7 +238,6 @@ class Activity(AnyObject):
                 |         this method will return E_NOIMPL. Hence all the scripts that use this method
                 |         would have to be updated to accomodate this change.
 
-        :return: float
         :rtype: float
         """
 
@@ -263,7 +255,6 @@ class Activity(AnyObject):
                 |     This property returns the interface which manages the items or input
                 |     products/components assigned to the current activity
 
-        :return: Items
         :rtype: Items
         """
 
@@ -281,7 +272,6 @@ class Activity(AnyObject):
                 |     This property returns the interface which manages the downstream control
                 |     flow hierarchy on the activity.
 
-        :return: Activities
         :rtype: Activities
         """
 
@@ -300,7 +290,6 @@ class Activity(AnyObject):
                 |     This property returns the interface which manages the downstream product
                 |     flow hierarchy on the activity.
 
-        :return: Activities
         :rtype: Activities
         """
 
@@ -319,7 +308,6 @@ class Activity(AnyObject):
                 |     This property returns the interface which manages the output
                 |     products/components of the current activity
 
-        :return: Outputs
         :rtype: Outputs
         """
 
@@ -337,7 +325,6 @@ class Activity(AnyObject):
                 |     This property returns the interface which manages the knowlegde parameters
                 |     of the activity.
 
-        :return: Parameters
         :rtype: Parameters
         """
 
@@ -362,7 +349,6 @@ class Activity(AnyObject):
                 |             List of Activities that must precede the Current
                 |             Activity
 
-        :return: Activities
         :rtype: Activities
         """
 
@@ -387,7 +373,6 @@ class Activity(AnyObject):
                 |             List of Activities that must precede the Current
                 |             Activity
 
-        :return: Activities
         :rtype: Activities
         """
 
@@ -406,7 +391,6 @@ class Activity(AnyObject):
                 |     This property returns the interface which manages the upstream control flow
                 |     hierarchy on the activity.
 
-        :return: Activities
         :rtype: Activities
         """
 
@@ -425,7 +409,6 @@ class Activity(AnyObject):
                 |     This property returns the interface which manages the upstream product flow
                 |     hierarchy on the activity.
 
-        :return: Activities
         :rtype: Activities
         """
 
@@ -449,7 +432,6 @@ class Activity(AnyObject):
                 |         oProcessID
                 |             The process ID of the current activity
 
-        :return: str
         :rtype: str
         """
 
@@ -467,7 +449,6 @@ class Activity(AnyObject):
                 |     This property returns the interface which manages the knowlegde relations
                 |     of the activity.
 
-        :return: Relations
         :rtype: Relations
         """
 
@@ -485,7 +466,6 @@ class Activity(AnyObject):
                 |     This property returns the interface which manages the resources hierarchy
                 |     on the activity.
 
-        :return: Resources
         :rtype: Resources
         """
 
@@ -508,7 +488,6 @@ class Activity(AnyObject):
                 |         oType
                 |             The type of the current activity
 
-        :return: str
         :rtype: str
         """
 
@@ -546,7 +525,6 @@ class Activity(AnyObject):
 
         :param Activity i_activity:
         :param str i_constraint_type:
-        :return: None
         :rtype: None
         """
         return self.activity.AddActivityConstraint(i_activity.com_object, i_constraint_type)
@@ -592,7 +570,6 @@ class Activity(AnyObject):
         :param str i_attribute_name:
         :param str attr_type:
         :param str i_attribute_prompt_name:
-        :return: None
         :rtype: None
         """
         return self.activity.AddAttr(i_attribute_name, attr_type, i_attribute_prompt_name)
@@ -630,7 +607,6 @@ class Activity(AnyObject):
                 |             The attribute name
 
         :param int i_index:
-        :return: str
         :rtype: str
         """
         return self.activity.AttrName(i_index)
@@ -654,7 +630,6 @@ class Activity(AnyObject):
                 |         oAttVal The attribute value
 
         :param cat_variant i_index:
-        :return: cat_variant
         :rtype: cat_variant
         """
         return self.activity.AttrValue(i_index)
@@ -678,7 +653,6 @@ class Activity(AnyObject):
                 |             The new created child activity.
 
         :param str i_type_of_child:
-        :return: Activity
         :rtype: Activity
         """
         return Activity(self.activity.CreateChild(i_type_of_child))
@@ -701,7 +675,6 @@ class Activity(AnyObject):
                 |             activity.
 
         :param Activity i_second_activity:
-        :return: None
         :rtype: None
         """
         return self.activity.CreateLink(i_second_activity.com_object)
@@ -758,7 +731,6 @@ class Activity(AnyObject):
 
         :param str i_constraint_type:
         :param Activities o_constrt_list:
-        :return: None
         :rtype: None
         """
         return self.activity.GetActivityConstraints(i_constraint_type, o_constrt_list.com_object)
@@ -807,7 +779,6 @@ class Activity(AnyObject):
                 |          Set GEPosition = Loading1.GetTechnologicalObject("GEPosition")
 
         :param str i_application_type:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.activity.GetTechnologicalObject(i_application_type)
@@ -832,7 +803,6 @@ class Activity(AnyObject):
                 |         oVal The logical value returned by the test
 
         :param str i_name:
-        :return: bool
         :rtype: bool
         """
         return self.activity.IsSubTypeOf(i_name)
@@ -866,7 +836,6 @@ class Activity(AnyObject):
 
         :param Activity i_activity:
         :param str i_constraint_type:
-        :return: None
         :rtype: None
         """
         return self.activity.RemoveActivityConstraint(i_activity.com_object, i_constraint_type)
@@ -902,7 +871,6 @@ class Activity(AnyObject):
                 |             Name of the attribute to remove
 
         :param str i_attribute_name:
-        :return: None
         :rtype: None
         """
         return self.activity.RemoveAttr(i_attribute_name)
@@ -924,7 +892,6 @@ class Activity(AnyObject):
                 |             The activity on which the link will be removed.
 
         :param Activity i_second_activity:
-        :return: None
         :rtype: None
         """
         return self.activity.RemoveLink(i_second_activity.com_object)
@@ -964,7 +931,6 @@ class Activity(AnyObject):
 
         :param str i_process_id:
         :param bool i_check_unique:
-        :return: None
         :rtype: None
         """
         return self.activity.SetProcessID(i_process_id, i_check_unique)

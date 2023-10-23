@@ -70,7 +70,6 @@ class AnalysisEntities(Collection):
                 |          Set ThisAnalysisEntity = analysisEntities.Add("SAMPressure")
 
         :param str i_type:
-        :return: AnalysisEntity
         :rtype: AnalysisEntity
         """
         return AnalysisEntity(self.analysis_entities.Add(i_type))
@@ -102,7 +101,6 @@ class AnalysisEntities(Collection):
                 |         The retrieved analysis entity
 
         :param cat_variant i_index:
-        :return: AnalysisEntity
         :rtype: AnalysisEntity
         """
         return AnalysisEntity(self.analysis_entities.Item(i_index))
@@ -130,7 +128,6 @@ class AnalysisEntities(Collection):
                 |         AnyObject.Name property.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.analysis_entities.Remove(i_index)

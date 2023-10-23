@@ -63,7 +63,6 @@ class DMUDataFlow(AnyObject):
         :param str i_directory:
         :param str i_prefix:
         :param int i_data:
-        :return: None
         :rtype: None
         """
         return self.dmu_data_flow.CacheExport(i_directory, i_prefix, i_data)
@@ -84,7 +83,6 @@ class DMUDataFlow(AnyObject):
                 |             The directory that contains marked documents.
 
         :param str i_directory:
-        :return: None
         :rtype: None
         """
         return self.dmu_data_flow.CacheImport(i_directory)
@@ -100,7 +98,6 @@ class DMUDataFlow(AnyObject):
                 |     Collapse the product by replacing all sub-product by corresponding
                 |     components.
 
-        :return: None
         :rtype: None
         """
         return self.dmu_data_flow.Collapse()
@@ -126,7 +123,6 @@ class DMUDataFlow(AnyObject):
 
         :param str i_directory:
         :param str i_prefix:
-        :return: None
         :rtype: None
         """
         return self.dmu_data_flow.ReplaceByCGR(i_directory, i_prefix)
@@ -166,7 +162,6 @@ class DMUDataFlow(AnyObject):
         :param str i_prefix:
         :param int i_data:
         :param int i_cache:
-        :return: None
         :rtype: None
         """
         return self.dmu_data_flow.SaveAsFrozen(i_directory, i_prefix, i_data, i_cache)

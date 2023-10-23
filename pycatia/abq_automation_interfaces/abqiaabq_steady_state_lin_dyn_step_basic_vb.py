@@ -63,7 +63,6 @@ class ABQIAABQSteadyStateLinDynStepBasicVB(ABQStep):
                 |          Dim abqBCs As ABQBoundaryConditions
                 |          Set abqBCs = abqSSDStep.BoundaryConditions
 
-        :return: ABQBoundaryConditions
         :rtype: ABQBoundaryConditions
         """
 
@@ -85,7 +84,6 @@ class ABQIAABQSteadyStateLinDynStepBasicVB(ABQStep):
                 |         The description of the Abaqus steady state dynamic
                 |         step.
 
-        :return: str
         :rtype: str
         """
 
@@ -122,7 +120,6 @@ class ABQIAABQSteadyStateLinDynStepBasicVB(ABQStep):
                 |             abqSSDStep
                 |             abqSSDStep.IntervalType = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -155,7 +152,6 @@ class ABQIAABQSteadyStateLinDynStepBasicVB(ABQStep):
                 |          Dim abqLoads As ABQLoads
                 |          Set abqLoads = abqSSDStep.Loads
 
-        :return: ABQLoads
         :rtype: ABQLoads
         """
 
@@ -184,7 +180,6 @@ class ABQIAABQSteadyStateLinDynStepBasicVB(ABQStep):
                 |             abqSSDStep
                 |             abqSSDStep.ScaleType = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -234,7 +229,6 @@ class ABQIAABQSteadyStateLinDynStepBasicVB(ABQStep):
         :param tuple i_upr_frequency:
         :param tuple i_nb_points:
         :param tuple i_bias:
-        :return: None
         :rtype: None
         """
         return self.abqiaabq_steady_state_lin_dyn_step_basic_vb.AddFrequencyDataTable(
@@ -277,7 +271,6 @@ class ABQIAABQSteadyStateLinDynStepBasicVB(ABQStep):
         :param float i_alpha:
         :param float i_beta:
         :param float i_structural:
-        :return: None
         :rtype: None
         """
         return self.abqiaabq_steady_state_lin_dyn_step_basic_vb.AddGlobalDamping(i_alpha, i_beta, i_structural)

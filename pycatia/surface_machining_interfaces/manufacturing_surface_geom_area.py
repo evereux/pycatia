@@ -55,7 +55,6 @@ class ManufacturingSurfaceGeomArea(ManufacturingMachinableArea):
                 | 
                 |      Call CurrentNCGeomArea.RemoveAllGeometry()
 
-        :return: None
         :rtype: None
         """
         return self.manufacturing_surface_geom_area.RemoveAllGeometry()
@@ -88,7 +87,6 @@ class ManufacturingSurfaceGeomArea(ManufacturingMachinableArea):
 
         :param AnyObject i_reference:
         :param AnyObject i_product:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_surface_geom_area.SetGeometry(i_reference.com_object, i_product.com_object)

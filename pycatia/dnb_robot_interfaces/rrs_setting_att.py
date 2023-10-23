@@ -68,7 +68,6 @@ class RRSSettingAtt(SettingController):
                 |         E_FAIL: on Failure
 
         :param str i_controller_identifier:
-        :return: None
         :rtype: None
         """
         return self.rrs_setting_att.AddNewRRS2ControllerIdentifier(i_controller_identifier)
@@ -105,7 +104,6 @@ class RRSSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rrs_setting_att.GetRCSDataLibDirInfo(io_admin_level, io_locked)
@@ -142,7 +140,6 @@ class RRSSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rrs_setting_att.GetRRS2ConnectDownloadersInfo(io_admin_level, io_locked)
@@ -180,7 +177,6 @@ class RRSSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rrs_setting_att.GetRRS2ConsistencyCmdDownloadersInfo(io_admin_level, io_locked)
@@ -237,7 +233,6 @@ class RRSSettingAtt(SettingController):
         :param bool o_rrs2_download_during_sim_run:
         :param bool o_rrs2_update_program_on_download:
         :param bool o_rrs2_download_in_part_coordinates:
-        :return: None
         :rtype: None
         """
         return self.rrs_setting_att.GetRRS2ControllerIdentifierAttributes(
@@ -299,7 +294,6 @@ class RRSSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rrs_setting_att.GetRRS2ControllerIdentifiersInfo(io_admin_level, io_locked)
@@ -337,7 +331,6 @@ class RRSSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rrs_setting_att.GetRRS2DeleteAutoDownloadFilesAfterXferInfo(io_admin_level, io_locked)
@@ -375,7 +368,6 @@ class RRSSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rrs_setting_att.GetRRS2DfltControllerIdentifierInfo(io_admin_level, io_locked)
@@ -413,7 +405,6 @@ class RRSSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rrs_setting_att.GetRRS2DownloadDuringConnectInfo(io_admin_level, io_locked)
@@ -450,7 +441,6 @@ class RRSSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rrs_setting_att.GetRRS2DownloadDuringSimRunInfo(io_admin_level, io_locked)
@@ -488,7 +478,6 @@ class RRSSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rrs_setting_att.GetRRS2DownloadInPartCoordinatesInfo(io_admin_level, io_locked)
@@ -525,7 +514,6 @@ class RRSSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rrs_setting_att.GetRRS2DownloadLogFileNameInfo(io_admin_level, io_locked)
@@ -562,7 +550,6 @@ class RRSSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rrs_setting_att.GetRRS2FreePlaySimStepSizeInfo(io_admin_level, io_locked)
@@ -599,7 +586,6 @@ class RRSSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rrs_setting_att.GetRRS2MainTaskProcessingInfo(io_admin_level, io_locked)
@@ -637,7 +623,6 @@ class RRSSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rrs_setting_att.GetRRS2MotionPlannerActiveDuringTeachOLPInfo(io_admin_level, io_locked)
@@ -674,7 +659,6 @@ class RRSSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rrs_setting_att.GetRRS2SimRunDownloadersInfo(io_admin_level, io_locked)
@@ -711,7 +695,6 @@ class RRSSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rrs_setting_att.GetRRS2StopVRCWhenSimStopsInfo(io_admin_level, io_locked)
@@ -749,7 +732,6 @@ class RRSSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rrs_setting_att.GetRRS2UpdateProgramOnDownloadInfo(io_admin_level, io_locked)
@@ -787,7 +769,6 @@ class RRSSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rrs_setting_att.GetRRS2UseVRCInverseKinematicsInfo(io_admin_level, io_locked)
@@ -824,7 +805,6 @@ class RRSSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rrs_setting_att.GetRRS2UseVRCTurnLimitsInfo(io_admin_level, io_locked)
@@ -861,7 +841,6 @@ class RRSSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rrs_setting_att.GetRRSLibDirInfo(io_admin_level, io_locked)
@@ -898,7 +877,6 @@ class RRSSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rrs_setting_att.GetRRSServerFileInfo(io_admin_level, io_locked)
@@ -930,7 +908,6 @@ class RRSSettingAtt(SettingController):
                 |         E_FAIL: on Failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rrs_setting_att.SetRCSDataLibDirLock(i_locked)
@@ -977,7 +954,6 @@ class RRSSettingAtt(SettingController):
                 |         E_FAIL: on Failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rrs_setting_att.SetRRS2ConnectDownloadersLock(i_locked)
@@ -1025,7 +1001,6 @@ class RRSSettingAtt(SettingController):
                 |         E_FAIL: on Failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rrs_setting_att.SetRRS2ConsistencyCmdDownloadersLock(i_locked)
@@ -1073,7 +1048,6 @@ class RRSSettingAtt(SettingController):
                 |         E_FAIL: on Failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rrs_setting_att.SetRRS2ControllerIdentifiersLock(i_locked)
@@ -1122,7 +1096,6 @@ class RRSSettingAtt(SettingController):
                 |         E_FAIL: on Failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rrs_setting_att.SetRRS2DeleteAutoDownloadFilesAfterXferLock(i_locked)
@@ -1170,7 +1143,6 @@ class RRSSettingAtt(SettingController):
                 |         E_FAIL: on Failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rrs_setting_att.SetRRS2DfltControllerIdentifierLock(i_locked)
@@ -1218,7 +1190,6 @@ class RRSSettingAtt(SettingController):
                 |         E_FAIL: on Failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rrs_setting_att.SetRRS2DownloadDuringConnectLock(i_locked)
@@ -1265,7 +1236,6 @@ class RRSSettingAtt(SettingController):
                 |         E_FAIL: on Failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rrs_setting_att.SetRRS2DownloadDuringSimRunLock(i_locked)
@@ -1313,7 +1283,6 @@ class RRSSettingAtt(SettingController):
                 |         E_FAIL: on Failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rrs_setting_att.SetRRS2DownloadInPartCoordinatesLock(i_locked)
@@ -1360,7 +1329,6 @@ class RRSSettingAtt(SettingController):
                 |         E_FAIL: on Failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rrs_setting_att.SetRRS2DownloadLogFileNameLock(i_locked)
@@ -1407,7 +1375,6 @@ class RRSSettingAtt(SettingController):
                 |         E_FAIL: on Failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rrs_setting_att.SetRRS2FreePlaySimStepSizeLock(i_locked)
@@ -1454,7 +1421,6 @@ class RRSSettingAtt(SettingController):
                 |         E_FAIL: on Failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rrs_setting_att.SetRRS2MainTaskProcessingLock(i_locked)
@@ -1503,7 +1469,6 @@ class RRSSettingAtt(SettingController):
                 |         E_FAIL: on Failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rrs_setting_att.SetRRS2MotionPlannerActiveDuringTeachOLPLock(i_locked)
@@ -1550,7 +1515,6 @@ class RRSSettingAtt(SettingController):
                 |         E_FAIL: on Failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rrs_setting_att.SetRRS2SimRunDownloadersLock(i_locked)
@@ -1597,7 +1561,6 @@ class RRSSettingAtt(SettingController):
                 |         E_FAIL: on Failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rrs_setting_att.SetRRS2StopVRCWhenSimStopsLock(i_locked)
@@ -1645,7 +1608,6 @@ class RRSSettingAtt(SettingController):
                 |         E_FAIL: on Failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rrs_setting_att.SetRRS2UpdateProgramOnDownloadLock(i_locked)
@@ -1693,7 +1655,6 @@ class RRSSettingAtt(SettingController):
                 |         E_FAIL: on Failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rrs_setting_att.SetRRS2UseVRCInverseKinematicsLock(i_locked)
@@ -1740,7 +1701,6 @@ class RRSSettingAtt(SettingController):
                 |         E_FAIL: on Failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rrs_setting_att.SetRRS2UseVRCTurnLimitsLock(i_locked)
@@ -1782,7 +1742,6 @@ class RRSSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rrs_setting_att.SetRRSLibDirLock(i_locked)
@@ -1824,7 +1783,6 @@ class RRSSettingAtt(SettingController):
                 |         E_FAIL: on Failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rrs_setting_att.SetRRSServerFileLock(i_locked)

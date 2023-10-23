@@ -72,7 +72,6 @@ class Scaling2(Shape):
                 |          Dim RefElem As Reference
                 |          Set RefElem = Scaling2.Center
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -97,7 +96,6 @@ class Scaling2(Shape):
                 | 
                 |     Returns the scaling ratio.
 
-        :return: RealParam
         :rtype: RealParam
         """
 
@@ -121,7 +119,6 @@ class Scaling2(Shape):
                 |          Dim Value As double
                 |          Set Value = Scaling2.RatioValue
 
-        :return: float
         :rtype: float
         """
 

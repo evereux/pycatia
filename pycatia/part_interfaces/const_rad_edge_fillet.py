@@ -61,7 +61,6 @@ class ConstRadEdgeFillet(EdgeFillet):
                 | 
                 |          Set elements = firstCstEdgeFillet.ObjectsToFillet
 
-        :return: References
         :rtype: References
         """
 
@@ -84,7 +83,6 @@ class ConstRadEdgeFillet(EdgeFillet):
                 | 
                 |          Set radius = firstCstEdgeFillet.Radius
 
-        :return: Length
         :rtype: Length
         """
 
@@ -116,7 +114,6 @@ class ConstRadEdgeFillet(EdgeFillet):
                 |      firstCstEdgeFillet.AddObjectToFillet(element)
 
         :param Reference i_object_to_fillet:
-        :return: None
         :rtype: None
         """
         return self.const_rad_edge_fillet.AddObjectToFillet(i_object_to_fillet.com_object)
@@ -163,7 +160,6 @@ class ConstRadEdgeFillet(EdgeFillet):
                 |      firstCstEdgeFillet.WithdrawObjectToFillet(element)
 
         :param Reference i_object_to_withdraw:
-        :return: None
         :rtype: None
         """
         return self.const_rad_edge_fillet.WithdrawObjectToFillet(i_object_to_withdraw.com_object)

@@ -71,7 +71,6 @@ class StrSection(AnyObject):
                 |          Dim name As Parameter
                 |          Set name = Section_1.CatalogName
 
-        :return: Parameter
         :rtype: Parameter
         """
 
@@ -95,7 +94,6 @@ class StrSection(AnyObject):
                 |          Dim name As Parameter
                 |          Set name = Section_1.FamilyName
 
-        :return: Parameter
         :rtype: Parameter
         """
 
@@ -120,7 +118,6 @@ class StrSection(AnyObject):
                 |          Dim type As Parameter
                 |          Set type = Section_1.ProfileType
 
-        :return: Parameter
         :rtype: Parameter
         """
 
@@ -144,7 +141,6 @@ class StrSection(AnyObject):
                 |          Dim name As Parameter
                 |          Set name = Section_1.SectionName
 
-        :return: Parameter
         :rtype: Parameter
         """
 
@@ -173,7 +169,6 @@ class StrSection(AnyObject):
                 |           Dim anchorPts As StrAnchorPoints
                 |          Set anchorPts = Section_1.StrAnchorPoints
 
-        :return: StrAnchorPoints
         :rtype: StrAnchorPoints
         """
 
@@ -199,7 +194,6 @@ class StrSection(AnyObject):
 
         :param int i_property:
         :param float o_value:
-        :return: None
         :rtype: None
         """
         return self.str_section.GetProperty(i_property, o_value)

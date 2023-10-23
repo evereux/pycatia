@@ -69,7 +69,6 @@ class BasicComponent(AnyObject):
                 |     Returns the list of Analysis Supports. The support defines the area on
                 |     which the analysis is applied on.
 
-        :return: AnalysisSupports
         :rtype: AnalysisSupports
         """
 
@@ -98,7 +97,6 @@ class BasicComponent(AnyObject):
                 |          Dim myBasicComponents As BasicComponents
                 |          Set myBasicComponents = MyBasicComp.BasicComponents
 
-        :return: BasicComponents
         :rtype: BasicComponents
         """
         from pycatia.analysis_interfaces.basic_components import BasicComponents
@@ -127,7 +125,6 @@ class BasicComponent(AnyObject):
                 |          Dim myEntities AnalysisEntities
                 |          Set myEntities = MyBasicComp.AnalysisEntities
 
-        :return: AnalysisEntities
         :rtype: AnalysisEntities
         """
 
@@ -147,7 +144,6 @@ class BasicComponent(AnyObject):
                 |     Returns:
                 |         The string that represent the Basic Component type.
 
-        :return: str
         :rtype: str
         """
 
@@ -179,7 +175,6 @@ class BasicComponent(AnyObject):
 
         :param Product i_product:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.basic_component.AddSupportFromProduct(i_product.com_object, i_support.com_object)
@@ -225,7 +220,6 @@ class BasicComponent(AnyObject):
 
         :param Product i_product:
         :param Publication i_publication:
-        :return: None
         :rtype: None
         """
         return self.basic_component.AddSupportFromPublication(i_product.com_object, i_publication.com_object)
@@ -271,7 +265,6 @@ class BasicComponent(AnyObject):
 
         :param Reference i_reference:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.basic_component.AddSupportFromReference(i_reference.com_object, i_support.com_object)
@@ -308,7 +301,6 @@ class BasicComponent(AnyObject):
                 |             = Number of Columns.
 
         :param str i_label:
-        :return: int
         :rtype: int
         """
         return self.basic_component.GetColumnsNumber(i_label)
@@ -330,7 +322,6 @@ class BasicComponent(AnyObject):
                 |             = Number of Layers.
 
         :param str i_label:
-        :return: int
         :rtype: int
         """
         return self.basic_component.GetLayersNumber(i_label)
@@ -352,7 +343,6 @@ class BasicComponent(AnyObject):
                 |             = Number of lines.
 
         :param str i_label:
-        :return: int
         :rtype: int
         """
         return self.basic_component.GetLinesNumber(i_label)
@@ -387,8 +377,7 @@ class BasicComponent(AnyObject):
         :param int i_line_index:
         :param int i_column_index:
         :param int i_layer_index:
-        :return: CATVariant
-        :rtype: CATVariant
+        :rtype: cat_variant
         """
         return self.basic_component.GetValue(i_label, i_line_index, i_column_index, i_layer_index)
 
@@ -416,7 +405,6 @@ class BasicComponent(AnyObject):
         :param int i_line_count:
         :param int i_column_count:
         :param int i_layer_count:
-        :return: None
         :rtype: None
         """
         return self.basic_component.SetDimensions(i_line_count, i_column_count, i_layer_count)
@@ -459,7 +447,6 @@ class BasicComponent(AnyObject):
         :param int i_column_index:
         :param int i_layer_index:
         :param Reference i_value:
-        :return: None
         :rtype: None
         """
         return self.basic_component.SetReference(
@@ -522,7 +509,6 @@ class BasicComponent(AnyObject):
         :param int i_column_index:
         :param int i_layer_index:
         :param cat_variant i_value:
-        :return: None
         :rtype: None
         """
         return self.basic_component.SetValue(

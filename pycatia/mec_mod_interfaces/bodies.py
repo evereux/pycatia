@@ -58,7 +58,6 @@ class Bodies(Collection):
                 |          Set rootPart = partDoc.Part
                 |          Set NewBody = rootPart.Bodies.Add()
 
-        :return: Body
         :rtype: Body
         """
         return Body(self.bodies.Add())
@@ -96,7 +95,6 @@ class Bodies(Collection):
                 |          Set ThatBody = BodyColl.Item("MyBody")
 
         :param cat_variant i_index:
-        :return: Body
         :rtype: Body
         """
         return Body(self.bodies.Item(i_index))

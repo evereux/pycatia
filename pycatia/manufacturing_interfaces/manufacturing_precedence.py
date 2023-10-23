@@ -46,7 +46,6 @@ class ManufacturingPrecedence(AnyObject):
                 | 
                 |     Returns the type of the precedence.
 
-        :return: int
         :rtype: int
         """
 
@@ -65,7 +64,6 @@ class ManufacturingPrecedence(AnyObject):
                 |     Returns the target object of the precedence, but with the Operation
                 |     interface if it is.
 
-        :return: ManufacturingActivity
         :rtype: ManufacturingActivity
         """
 

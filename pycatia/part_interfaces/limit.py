@@ -52,7 +52,6 @@ class Limit(AnyObject):
                 |     Returns or sets the limit dimension. This property is valid for the offset
                 |     limit mode only, that is when CatLimitMode is set to catOffsetLimit .
 
-        :return: Length
         :rtype: Length
         """
 
@@ -69,7 +68,6 @@ class Limit(AnyObject):
                 | 
                 |     Returns or sets the limit mode.
 
-        :return: int
         :rtype: int
         """
 
@@ -97,7 +95,6 @@ class Limit(AnyObject):
                 |     catUpToSurfaceLimit and catUpToPlaneLimit.
                 |     To set the property, you can use the following Boundary object: Face.
 
-        :return: Reference
         :rtype: Reference
         """
 

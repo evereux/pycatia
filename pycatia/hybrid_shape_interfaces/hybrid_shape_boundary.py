@@ -59,7 +59,6 @@ class HybridShapeBoundary(HybridShape):
                 | 
                 |     Removes or sets the ending limit(i.e Limit2) of the boundary
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -84,7 +83,6 @@ class HybridShapeBoundary(HybridShape):
                 | 
                 |     Gets or sets the Ending Limit Orientation (i.e same or inverse)
 
-        :return: int
         :rtype: int
         """
 
@@ -119,7 +117,6 @@ class HybridShapeBoundary(HybridShape):
                 |          Dim InitElem As Reference
                 |          InitElem = ShpBoundary.InitialElement
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -151,7 +148,6 @@ class HybridShapeBoundary(HybridShape):
                 | 
                 |          Prop = ShpBoundary.Propagation
 
-        :return: int
         :rtype: int
         """
 
@@ -185,7 +181,6 @@ class HybridShapeBoundary(HybridShape):
                 |          Dim SupSurf As Reference
                 |          SupSurf = ShpBoundary.Support
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -210,7 +205,6 @@ class HybridShapeBoundary(HybridShape):
                 | 
                 |     Removes or sets the starting limit(i.e Limit1) of the boundary
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -235,7 +229,6 @@ class HybridShapeBoundary(HybridShape):
                 | 
                 |     Gets or sets the Starting Limit Orientation (i.e same or inverse)
 
-        :return: int
         :rtype: int
         """
 

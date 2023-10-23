@@ -62,7 +62,6 @@ class LinearRepartition(Repartition):
                 | 
                 |          Set space1 = firstRepartition.Spacing
 
-        :return: Length
         :rtype: Length
         """
 

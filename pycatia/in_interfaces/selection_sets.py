@@ -58,7 +58,6 @@ class SelectionSets(AnyObject):
                 |             E_FAIL if the content of the CSO is not added
 
         :param str i_sel_set_name:
-        :return: None
         :rtype: None
         """
         return self.selection_sets.AddCSOIntoSelectionSet(i_sel_set_name)
@@ -86,7 +85,6 @@ class SelectionSets(AnyObject):
                 |             E_FAIL if a problem occurred
 
         :param str i_sel_set_name:
-        :return: None
         :rtype: None
         """
         return self.selection_sets.CreateSelectionSet(i_sel_set_name)
@@ -115,7 +113,6 @@ class SelectionSets(AnyObject):
                 |             E_FAIL if a problem occurred
 
         :param str i_sel_set_name:
-        :return: None
         :rtype: None
         """
         return self.selection_sets.DeleteSelectionSet(i_sel_set_name)
@@ -143,7 +140,6 @@ class SelectionSets(AnyObject):
                 |             E_FAIL if an error occurred
 
         :param tuple o_list_of_selection_set:
-        :return: None
         :rtype: None
         """
         return self.selection_sets.GetListOfSelectionSet(o_list_of_selection_set)
@@ -187,7 +183,6 @@ class SelectionSets(AnyObject):
                 |             CSO
 
         :param str i_sel_set_name:
-        :return: None
         :rtype: None
         """
         return self.selection_sets.PutSelectionSetIntoCSO(i_sel_set_name)
@@ -218,7 +213,6 @@ class SelectionSets(AnyObject):
 
         :param str i_old_sel_set_name:
         :param str i_new_sel_set_name:
-        :return: None
         :rtype: None
         """
         return self.selection_sets.RenameSelectionSet(i_old_sel_set_name, i_new_sel_set_name)

@@ -55,7 +55,6 @@ class Viewer2D(Viewer):
                 |          Dim Nice2DViewpoint As Viewpoint2D
                 |          Set Nice2DViewpoint = My2DViewer.Viewpoint2D
 
-        :return: Viewpoint2D
         :rtype: Viewpoint2D
         """
 

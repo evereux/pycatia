@@ -59,7 +59,6 @@ class AxisSystems(Collection):
                 |          Set rootPart = partDoc.Part
                 |          Set NewAxisSystem = rootPart.AxisSystems.Add()
 
-        :return: AxisSystem
         :rtype: AxisSystem
         """
         return AxisSystem(self.axis_systems.Add())
@@ -98,7 +97,6 @@ class AxisSystems(Collection):
                 |          Set ThatAxisSystem = AxisSystemColl.Item("MyAxisSystem")
 
         :param cat_variant i_index:
-        :return: AxisSystem
         :rtype: AxisSystem
         """
         return AxisSystem(self.axis_systems.Item(i_index))

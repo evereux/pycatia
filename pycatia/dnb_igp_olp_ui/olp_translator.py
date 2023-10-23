@@ -76,7 +76,6 @@ class OLPTranslator(AnyObject):
         :param str i_nrl_file_name:
         :param str i_parser_name:
         :param str o_xml_file_name:
-        :return: None
         :rtype: None
         """
         return self.olp_translator.ConvertNRLToXML(i_nrl_file_name, i_parser_name, o_xml_file_name)
@@ -106,7 +105,6 @@ class OLPTranslator(AnyObject):
         :param str i_xml_file_name:
         :param str i_xslt_file_name:
         :param str o_nrl_target_folder:
-        :return: None
         :rtype: None
         """
         return self.olp_translator.ConvertXMLToNRL(i_xml_file_name, i_xslt_file_name, o_nrl_target_folder)
@@ -154,7 +152,6 @@ class OLPTranslator(AnyObject):
         :param bool i_is_part_coordinates:
         :param bool i_is_simulated:
         :param bool i_is_sub_routines:
-        :return: None
         :rtype: None
         """
         return self.olp_translator.DownloadAsXML(
@@ -287,7 +284,6 @@ class OLPTranslator(AnyObject):
         :param bool b_is_part_coordinates:
         :param bool b_is_subroutine:
         :param str s_log_file_name:
-        :return: None
         :rtype: None
         """
         return self.olp_translator.DownloadTasks(
@@ -330,7 +326,6 @@ class OLPTranslator(AnyObject):
                 |     Returns:
                 |         The OLP Directory setting parameter value
 
-        :return: str
         :rtype: str
         """
         return self.olp_translator.GetRobotProgramDirectory()
@@ -351,7 +346,6 @@ class OLPTranslator(AnyObject):
                 |     Returns:
                 |         The XML Directory setting parameter value
 
-        :return: str
         :rtype: str
         """
         return self.olp_translator.GetXMLFileDirectory()
@@ -393,7 +387,6 @@ class OLPTranslator(AnyObject):
         :param str i_xml_file_name:
         :param bool i_is_part_coordinates:
         :param Product i_part:
-        :return: None
         :rtype: None
         """
         return self.olp_translator.UploadFromXML(
@@ -462,7 +455,6 @@ class OLPTranslator(AnyObject):
         :param str s_path_to_robot_program_file:
         :param str s_path_to_uploader_file:
         :param bool b_is_upload_in_part_coords:
-        :return: None
         :rtype: None
         """
         return self.olp_translator.UploadRobotProgram(

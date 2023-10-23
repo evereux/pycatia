@@ -49,7 +49,6 @@ class PpgExecLogSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: str
         :rtype: str
         """
 
@@ -72,7 +71,6 @@ class PpgExecLogSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property GenExecLog() As boolean
 
-        :return: bool
         :rtype: bool
         """
 
@@ -117,7 +115,6 @@ class PpgExecLogSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.ppg_exec_log_setting_att.GetExecLogPathInfo(io_admin_level, io_locked)
@@ -133,7 +130,6 @@ class PpgExecLogSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.ppg_exec_log_setting_att.GetGenExecLogInfo(io_admin_level, io_locked)
@@ -160,7 +156,6 @@ class PpgExecLogSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.ppg_exec_log_setting_att.SetExecLogPathLock(i_locked)
@@ -189,7 +184,6 @@ class PpgExecLogSettingAtt(SettingController):
                 | o Sub SetGenExecLogLock(boolean iLocked)
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.ppg_exec_log_setting_att.SetGenExecLogLock(i_locked)

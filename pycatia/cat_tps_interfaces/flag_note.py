@@ -52,7 +52,6 @@ class FlagNote(AnyObject):
                 |         oText
                 |             Returned Flag text.
 
-        :return: str
         :rtype: str
         """
 
@@ -82,7 +81,6 @@ class FlagNote(AnyObject):
                 |         oText
                 |             Returned text for graphical representation.
 
-        :return: str
         :rtype: str
         """
 
@@ -112,7 +110,6 @@ class FlagNote(AnyObject):
                 |             URL to Set
 
         :param str i_url:
-        :return: None
         :rtype: None
         """
         return self.flag_note.AddURL(i_url)
@@ -129,7 +126,6 @@ class FlagNote(AnyObject):
                 |         V5-6R2017 This method is replaced by FlagNote.GetNbrURL2
 
         :param cat_variant o_number_of_url:
-        :return: None
         :rtype: None
         """
         return self.flag_note.GetNbrURL(o_number_of_url)
@@ -164,7 +160,6 @@ class FlagNote(AnyObject):
                 |         oNumberOfURL
                 |             returns param oNumberOfURL.
 
-        :return: int
         :rtype: int
         """
         return self.flag_note.GetNbrURL2()
@@ -189,7 +184,6 @@ class FlagNote(AnyObject):
 
         :param str i_url:
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.flag_note.ModifyURL(i_url, i_index)
@@ -225,7 +219,6 @@ class FlagNote(AnyObject):
                 |             position of the URL to remove.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.flag_note.RemoveURL(i_index)
@@ -255,7 +248,6 @@ class FlagNote(AnyObject):
                 | 
                 |     Gets the annotation on TPSParallelOnScreen interface.
 
-        :return: TPSParallelOnScreen
         :rtype: TPSParallelOnScreen
         """
         return TPSParallelOnScreen(self.flag_note.TPSParallelOnScreen())
@@ -278,7 +270,6 @@ class FlagNote(AnyObject):
                 |             URL
 
         :param cat_variant i_index:
-        :return: str
         :rtype: str
         """
         return self.flag_note.URL(i_index)

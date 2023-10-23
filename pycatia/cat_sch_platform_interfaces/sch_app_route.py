@@ -57,7 +57,6 @@ class SchAppRoute(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.AppBreak
 
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.sch_app_route.AppBreak())
@@ -92,7 +91,6 @@ class SchAppRoute(AnyObject):
                 |          Set objArg2 = objThisIntf.AppCreateLocalReference(objArg1)
 
         :param Document i_document_to_put_copy_in:
-        :return: SchAppRoute
         :rtype: SchAppRoute
         """
         return SchAppRoute(self.sch_app_route.AppCreateLocalReference(i_document_to_put_copy_in.com_object))
@@ -125,7 +123,6 @@ class SchAppRoute(AnyObject):
 
         :param str i_branch_class_type:
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_app_route.AppOKToBranch(i_branch_class_type, o_b_yes)
@@ -171,7 +168,6 @@ class SchAppRoute(AnyObject):
                 |          objThisIntf.AppOKToBreakbVar1
 
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_app_route.AppOKToBreak(o_b_yes)
@@ -215,7 +211,6 @@ class SchAppRoute(AnyObject):
                 |          objThisIntf.AppOKToConcatenatebVar1
 
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_app_route.AppOKToConcatenate(o_b_yes)
@@ -260,7 +255,6 @@ class SchAppRoute(AnyObject):
                 |          objThisIntf.AppOKToModifyPointsbVar1
 
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_app_route.AppOKToModifyPoints(o_b_yes)
@@ -309,7 +303,6 @@ class SchAppRoute(AnyObject):
 
         :param SchRoute i_old_app_route:
         :param SchRoute i_new_app_route:
-        :return: None
         :rtype: None
         """
         return self.sch_app_route.AppPostBreakProcess(i_old_app_route.com_object, i_new_app_route.com_object)
@@ -353,7 +346,6 @@ class SchAppRoute(AnyObject):
                 |          objThisIntf.AppPostConcatenateProcessobjArg1
 
         :param SchRoute i_sch_route2:
-        :return: None
         :rtype: None
         """
         return self.sch_app_route.AppPostConcatenateProcess(i_sch_route2.com_object)

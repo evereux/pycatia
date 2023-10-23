@@ -71,7 +71,6 @@ class Printers(Collection):
                 |          Set ThatPrinter = CATIA.Printers.Item("LaserPrinter")
 
         :param cat_variant i_index:
-        :return: Printer
         :rtype: Printer
         """
         return Printer(self.printers.Item(i_index))

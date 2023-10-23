@@ -50,7 +50,6 @@ class FunctAssociations(Collection):
                 |     Create a FunctAssociation.
 
         :param str i_name:
-        :return: FunctAssociation
         :rtype: FunctAssociation
         """
         return FunctAssociation(self.funct_associations.Create(i_name))
@@ -66,7 +65,6 @@ class FunctAssociations(Collection):
                 |     Delete a FunctAssociation.
 
         :param FunctAssociation i_association:
-        :return: None
         :rtype: None
         """
         return self.funct_associations.Delete(i_association.com_object)
@@ -124,7 +122,6 @@ class FunctAssociations(Collection):
                 |          Set Assoc2 = FacetMRM.Associations.Elem("Skeleton 2D")
 
         :param cat_variant i_index:
-        :return: FunctAssociation
         :rtype: FunctAssociation
         """
         return FunctAssociation(self.funct_associations.Elem(i_index))

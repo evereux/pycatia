@@ -52,7 +52,6 @@ class ManufacturingToolAssembly2(AnyObject):
                 |         iMfgInsert
                 |             The insert to set to tool assembly
 
-        :return: None
         :rtype: None
         """
 
@@ -82,7 +81,6 @@ class ManufacturingToolAssembly2(AnyObject):
                 |         iMfgTool
                 |             The tool to set to tool assembly
 
-        :return: None
         :rtype: None
         """
 

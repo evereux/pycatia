@@ -67,7 +67,6 @@ class SchAppConnectable(AnyObject):
 
         :param str i_class_type:
         :param SchAppConnector o_new_app_cntr:
-        :return: None
         :rtype: None
         """
         return self.sch_app_connectable.AppAddConnector(i_class_type, o_new_app_cntr.com_object)
@@ -113,7 +112,6 @@ class SchAppConnectable(AnyObject):
                 |          objThisIntf.AppGetReferenceNamestrVar1
 
         :param str o_reference_name:
-        :return: None
         :rtype: None
         """
         return self.sch_app_connectable.AppGetReferenceName(o_reference_name)
@@ -173,7 +171,6 @@ class SchAppConnectable(AnyObject):
         :param SchListOfObjects o_l_cntbles:
         :param SchListOfObjects o_l_cntrs_on_this_obj:
         :param SchListOfObjects o_l_cntrs_on_connected:
-        :return: None
         :rtype: None
         """
         return self.sch_app_connectable.AppListConnectables(
@@ -229,7 +226,6 @@ class SchAppConnectable(AnyObject):
                 |          Set objArg2 = objThisIntf.AppListConnectors(objArg1)
 
         :param SchListOfBSTRs i_l_cntr_class_filter:
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.sch_app_connectable.AppListConnectors(i_l_cntr_class_filter.com_object))
@@ -259,7 +255,6 @@ class SchAppConnectable(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.AppListValidCntrTypes
 
-        :return: SchListOfBSTRs
         :rtype: SchListOfBSTRs
         """
         return SchListOfBSTRs(self.sch_app_connectable.AppListValidCntrTypes())
@@ -289,7 +284,6 @@ class SchAppConnectable(AnyObject):
                 |          objThisIntf.AppRemoveConnectorobjArg1
 
         :param SchAppConnector i_cntr_to_remove:
-        :return: None
         :rtype: None
         """
         return self.sch_app_connectable.AppRemoveConnector(i_cntr_to_remove.com_object)
@@ -335,7 +329,6 @@ class SchAppConnectable(AnyObject):
                 |          objThisIntf.AppSetReferenceNamestrVar1
 
         :param str i_reference_name:
-        :return: None
         :rtype: None
         """
         return self.sch_app_connectable.AppSetReferenceName(i_reference_name)

@@ -60,7 +60,6 @@ class ArrangementContours(Collection):
                 |         collection.
 
         :param ArrangementRectangle i_rectangle:
-        :return: ArrangementContour
         :rtype: ArrangementContour
         """
         return ArrangementContour(self.arrangement_contours.AddRectangularContour(i_rectangle.com_object))
@@ -94,7 +93,6 @@ class ArrangementContours(Collection):
                 |         The retrieved ArrangementContour object.
 
         :param cat_variant i_index:
-        :return: ArrangementContour
         :rtype: ArrangementContour
         """
         return ArrangementContour(self.arrangement_contours.Item(i_index))
@@ -126,7 +124,6 @@ class ArrangementContours(Collection):
                 |         AnyObject.Name property.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.arrangement_contours.Remove(i_index)

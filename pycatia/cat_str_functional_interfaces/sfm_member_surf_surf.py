@@ -59,7 +59,6 @@ class SFMMemberSurfSurf(SFMMember):
                 |          Dim Surface As Reference
                 |          Set Surface = SuperMember.FirstSurface
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -91,7 +90,6 @@ class SFMMemberSurfSurf(SFMMember):
                 |          Dim Offset As Double
                 |          Set Offset = SuperMember.FirstSurfaceOffset
 
-        :return: float
         :rtype: float
         """
 
@@ -114,7 +112,6 @@ class SFMMemberSurfSurf(SFMMember):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property FirstSurfaceOffsetParam() As Length (Read Only)
 
-        :return: Length
         :rtype: Length
         """
 
@@ -139,7 +136,6 @@ class SFMMemberSurfSurf(SFMMember):
                 |          Dim Orient As Integer
                 |          Set Orient = SuperMember.FirstSurfaceOrientation
 
-        :return: int
         :rtype: int
         """
 
@@ -171,7 +167,6 @@ class SFMMemberSurfSurf(SFMMember):
                 |          Dim Surface As Reference
                 |          Set Surface = SuperMember.SecondSurface
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -203,7 +198,6 @@ class SFMMemberSurfSurf(SFMMember):
                 |          Dim Offset As Double
                 |          Set Offset = SuperMember.SecondSurfaceOffset
 
-        :return: float
         :rtype: float
         """
 
@@ -226,7 +220,6 @@ class SFMMemberSurfSurf(SFMMember):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property SecondSurfaceOffsetParam() As Length (Read Only)
 
-        :return: Length
         :rtype: Length
         """
 
@@ -251,7 +244,6 @@ class SFMMemberSurfSurf(SFMMember):
                 |          Dim Orient As Integer
                 |          Set Orient = SuperMember.SecondSurfaceOrientation
 
-        :return: int
         :rtype: int
         """
 

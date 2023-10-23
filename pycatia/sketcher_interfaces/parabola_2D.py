@@ -53,7 +53,6 @@ class Parabola2D(Curve2D):
                 |         oFocal
                 |             The focal distance of the parabola
 
-        :return: float
         :rtype: float
         """
 
@@ -77,7 +76,6 @@ class Parabola2D(Curve2D):
                 |         oAxis[1]
                 |             The Y coordinate of the axis vector direction
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -112,7 +110,6 @@ class Parabola2D(Curve2D):
                 |             The Y Coordinate of the center point of the
                 |             parabola
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -161,7 +158,6 @@ class Parabola2D(Curve2D):
         :param float i_axis_x:
         :param float i_axis_y:
         :param float i_focal_distance:
-        :return: None
         :rtype: None
         """
         return self.parabola_2d.SetData(i_center_x, i_center_y, i_axis_x, i_axis_y, i_focal_distance)

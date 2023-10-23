@@ -56,7 +56,6 @@ class DNB3DStates(Collection):
                 |          Set list3DStates = stateMgt.ListAll3DStates  
                 |          stateCount = list3DStates.StatesCount
 
-        :return: int
         :rtype: int
         """
 
@@ -90,7 +89,6 @@ class DNB3DStates(Collection):
                 |              Set my3DState = list3DStates.Item(1)
 
         :param cat_variant i_index:
-        :return: DNB3DState
         :rtype: DNB3DState
         """
         return DNB3DState(self.dnb3_d_states.Item(i_index))

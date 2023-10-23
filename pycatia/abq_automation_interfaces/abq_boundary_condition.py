@@ -57,7 +57,6 @@ class ABQBoundaryCondition(AnyObject):
                 |     Returns:
                 |         The activation status.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -86,7 +85,6 @@ class ABQBoundaryCondition(AnyObject):
                 |         A boolean specifying whether a user subroutine will be
                 |         applied.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -115,7 +113,6 @@ class ABQBoundaryCondition(AnyObject):
                 |     Returns:
                 |         The region
 
-        :return: AnalysisSupports
         :rtype: AnalysisSupports
         """
 
@@ -136,7 +133,6 @@ class ABQBoundaryCondition(AnyObject):
                 |     Returns:
                 |         The amplitude object.
 
-        :return: ABQSmoothStepAmplitude
         :rtype: ABQSmoothStepAmplitude
         """
 
@@ -166,7 +162,6 @@ class ABQBoundaryCondition(AnyObject):
                 |         is created, it will return "CREATED" if the boundary condition feature is
                 |         propagated from previous step, it will return "PROPAGATED"
 
-        :return: str
         :rtype: str
         """
 
@@ -187,7 +182,6 @@ class ABQBoundaryCondition(AnyObject):
                 |     Returns:
                 |         The amplitude object.
 
-        :return: ABQTabularAmplitude
         :rtype: ABQTabularAmplitude
         """
 
@@ -215,7 +209,6 @@ class ABQBoundaryCondition(AnyObject):
                 |     Returns:
                 |         The type of the boundary condition
 
-        :return: str
         :rtype: str
         """
 
@@ -246,7 +239,6 @@ class ABQBoundaryCondition(AnyObject):
 
         :param Product i_product:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.abq_boundary_condition.AddSupportFromProduct(i_product.com_object, i_support.com_object)
@@ -291,7 +283,6 @@ class ABQBoundaryCondition(AnyObject):
 
         :param Product i_product:
         :param Publication i_publication:
-        :return: None
         :rtype: None
         """
         return self.abq_boundary_condition.AddSupportFromPublication(i_product.com_object, i_publication.com_object)
@@ -336,7 +327,6 @@ class ABQBoundaryCondition(AnyObject):
 
         :param Reference i_reference:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.abq_boundary_condition.AddSupportFromReference(i_reference.com_object, i_support.com_object)

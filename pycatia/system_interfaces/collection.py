@@ -69,7 +69,6 @@ class Collection(PyCATIA):
                 |          Dim CurrentApplication As Application
                 |          Set CurrentApplication = MyDocCollecion.Application
 
-        :return: Application
         :rtype: Application
         """
         from pycatia.in_interfaces.application import Application
@@ -93,7 +92,6 @@ class Collection(PyCATIA):
                 |
                 |          ObjectNumber = MyCollection.Count
 
-        :return: int
         :rtype: int
         """
 
@@ -121,7 +119,6 @@ class Collection(PyCATIA):
                 |
                 |          MyObject.Name("Nice and Handy Object Name")
 
-        :return: str
         :rtype: str
         """
 
@@ -151,7 +148,6 @@ class Collection(PyCATIA):
                 |          Dim ParentObject As AnyObject
                 |          Set ParentObject = GivenObject.Parent
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -180,7 +176,6 @@ class Collection(PyCATIA):
                 |         The searched object
 
         :param str id_name:
-        :return: AnyObject
         :rtype: AnyObject
         """
 

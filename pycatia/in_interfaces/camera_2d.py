@@ -60,7 +60,6 @@ class Camera2D(Camera):
                 |          MyCamera.Viewpoint2D.Zoom = 2
                 |          CATIA.ActiveWindow.SpecsViewer.Viewpoint2D = MyCamera.Viewpoint2D
 
-        :return: Viewpoint2D
         :rtype: Viewpoint2D
         """
 

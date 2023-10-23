@@ -64,7 +64,6 @@ class SchGRRCntr(AnyObject):
 
         :param SchGRR o_grr:
         :param int o_e_symbol_type:
-        :return: None
         :rtype: None
         """
         return self.sch_grr_cntr.GetSymbol(o_grr.com_object, o_e_symbol_type)
@@ -103,7 +102,6 @@ class SchGRRCntr(AnyObject):
                 |           ...
                 |          objThisIntf.RemoveSymbol
 
-        :return: None
         :rtype: None
         """
         return self.sch_grr_cntr.RemoveSymbol()
@@ -138,7 +136,6 @@ class SchGRRCntr(AnyObject):
 
         :param SchGRR i_grr_symbol:
         :param int i_e_symbol_type:
-        :return: None
         :rtype: None
         """
         return self.sch_grr_cntr.SetSymbol(i_grr_symbol.com_object, i_e_symbol_type)

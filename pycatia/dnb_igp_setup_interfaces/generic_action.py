@@ -78,7 +78,6 @@ class GenericAction(Activity):
                 |            ..
 
         :param tuple o_atomic_activities:
-        :return: None
         :rtype: None
         """
         return self.generic_action.GetAtomicActivities(o_atomic_activities)

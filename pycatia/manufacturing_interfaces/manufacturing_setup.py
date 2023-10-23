@@ -59,7 +59,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 | 
                 |          Set CurrentSetup.Comment
 
-        :return: str
         :rtype: str
         """
 
@@ -90,7 +89,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 | 
                 |          Set Machine = CurrentSetup.Machine
 
-        :return: ManufacturingMachine
         :rtype: ManufacturingMachine
         """
 
@@ -124,7 +122,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 | 
                 |          Set oMachiningAxis = CurrentSetup.MachiningAxisSystem
 
-        :return: ManufacturingMachiningAxis
         :rtype: ManufacturingMachiningAxis
         """
 
@@ -155,7 +152,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 | 
                 |          CurrentSetup.Product = iProduct
 
-        :return: None
         :rtype: None
         """
 
@@ -186,7 +182,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 | 
                 |          Set ProgramsList = CurrentSetup.Programs
 
-        :return: ManufacturingActivities
         :rtype: ManufacturingActivities
         """
 
@@ -212,7 +207,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 |          call CurrentSetup.CreateMachine(Mfg3AxisWithTableRotationMachine)
 
         :param str i_type_machine:
-        :return: ManufacturingMachine
         :rtype: ManufacturingMachine
         """
         return ManufacturingMachine(self.manufacturing_setup.CreateMachine(i_type_machine))
@@ -242,7 +236,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 |          Dim DesignGeometriesListSize As Long
                 |          DesignGeometriesListSize = CurrentSetup.DesignGeometriesCount
 
-        :return: int
         :rtype: int
         """
         return self.manufacturing_setup.DesignGeometriesCount()
@@ -260,7 +253,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 |     eg, "D:/dir/" Call on Current Manufacturngsetup
 
         :param str dir_path:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_setup.ExportCATSetting(dir_path)
@@ -290,7 +282,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 |          Dim FixtureGeometriesListSize As Long
                 |          FixtureGeometriesListSize = CurrentSetup.FixtureGeometriesCount
 
-        :return: int
         :rtype: int
         """
         return self.manufacturing_setup.FixtureGeometriesCount()
@@ -313,7 +304,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 | 
                 |          Set oMachiningAxisSystemName = CurrentSetup.GetMachiningAxisSystemName
 
-        :return: str
         :rtype: str
         """
         return self.manufacturing_setup.GetMachiningAxisSystemName()
@@ -335,7 +325,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 | 
                 |          Set MfgView = CurrentSetup.GetManufacturingView
 
-        :return: ManufacturingView
         :rtype: ManufacturingView
         """
         return ManufacturingView(self.manufacturing_setup.GetManufacturingView())
@@ -357,7 +346,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 | 
                 |          Set oPartName = CurrentSetup.GetPartName
 
-        :return: str
         :rtype: str
         """
         return self.manufacturing_setup.GetPartName()
@@ -379,7 +367,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 | 
                 |          Set Product = CurrentSetup.GetProductInstance
 
-        :return: Product
         :rtype: Product
         """
         return Product(self.manufacturing_setup.GetProductInstance())
@@ -401,7 +388,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 | 
                 |          Set oMathPlane= CurrentSetup.GetSafetyPlane
 
-        :return: tuple
         :rtype: tuple
         """
         return self.manufacturing_setup.GetSafetyPlane()
@@ -424,7 +410,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 | 
                 |          call CurrentSetup.GetStockFromSetup(oStockPath)
 
-        :return: str
         :rtype: str
         """
         return self.manufacturing_setup.GetStockFromSetup()
@@ -449,7 +434,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 | 
                 |          call CurrentSetup.GetToolChangePoint(X,Y,Z)
 
-        :return: tuple
         :rtype: tuple
         """
         return self.manufacturing_setup.GetToolChangePoint()
@@ -467,7 +451,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 |     eg, "D:/dirs/settings.xml" Call on Current Manufacturngsetup
 
         :param str xml_file_path:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_setup.ImportCATSetting(xml_file_path)
@@ -498,7 +481,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 |          Dim IPMBodiesListSize As Long
                 |          IPMBodiesListSize = CurrentSetup.InProcessModelBodiesCount
 
-        :return: int
         :rtype: int
         """
         return self.manufacturing_setup.InProcessModelBodiesCount()
@@ -541,7 +523,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 |      End If
 
         :param tuple o_list_of_design_geometries:
-        :return: cat_variant
         :rtype: cat_variant
         """
         return self.manufacturing_setup.ListDesignGeometries(o_list_of_design_geometries)
@@ -599,7 +580,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 |      End If
 
         :param tuple o_list_of_design_geometries_products:
-        :return: cat_variant
         :rtype: cat_variant
         """
         return self.manufacturing_setup.ListDesignGeometriesProducts(o_list_of_design_geometries_products)
@@ -657,7 +637,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 |      End If
 
         :param tuple o_list_of_fixture_geometries:
-        :return: cat_variant
         :rtype: cat_variant
         """
         return self.manufacturing_setup.ListFixtureGeometries(o_list_of_fixture_geometries)
@@ -715,7 +694,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 |      End If
 
         :param tuple o_list_of_fixture_geometries_products:
-        :return: cat_variant
         :rtype: cat_variant
         """
         return self.manufacturing_setup.ListFixtureGeometriesProducts(o_list_of_fixture_geometries_products)
@@ -770,7 +748,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 |      End If
 
         :param tuple o_list_of_ipm_bodies:
-        :return: cat_variant
         :rtype: cat_variant
         """
         return self.manufacturing_setup.ListInProcessModelBodies(o_list_of_ipm_bodies)
@@ -826,7 +803,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 |      End If
 
         :param tuple o_list_of_stock_geometries:
-        :return: cat_variant
         :rtype: cat_variant
         """
         return self.manufacturing_setup.ListStockGeometries(o_list_of_stock_geometries)
@@ -883,7 +859,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 |      End If
 
         :param tuple o_list_of_stock_geometries_products:
-        :return: cat_variant
         :rtype: cat_variant
         """
         return self.manufacturing_setup.ListStockGeometriesProducts(o_list_of_stock_geometries_products)
@@ -920,7 +895,6 @@ class ManufacturingSetup(ManufacturingActivity):
 
         :param str i_file_name:
         :param tuple i_ncmillset:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_setup.ReadMfgData(i_file_name, i_ncmillset)
@@ -962,7 +936,6 @@ class ManufacturingSetup(ManufacturingActivity):
 
         :param AnyObject i_part:
         :param Product i_product:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_setup.SetDesignPart(i_part.com_object, i_product.com_object)
@@ -1000,7 +973,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 |          call CurrentSetup.SetProductAndReconciliate(iProduct)
 
         :param Product i_product:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_setup.SetProductAndReconciliate(i_product.com_object)
@@ -1041,7 +1013,6 @@ class ManufacturingSetup(ManufacturingActivity):
 
         :param AnyObject i_safety_plane:
         :param Product i_product:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_setup.SetSafetyPlane(i_safety_plane.com_object, i_product.com_object)
@@ -1083,7 +1054,6 @@ class ManufacturingSetup(ManufacturingActivity):
 
         :param AnyObject i_stock:
         :param Product i_product:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_setup.SetStock(i_stock.com_object, i_product.com_object)
@@ -1126,7 +1096,6 @@ class ManufacturingSetup(ManufacturingActivity):
         :param float i_x:
         :param float i_y:
         :param float i_z:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_setup.SetToolChangePoint(i_x, i_y, i_z)
@@ -1149,7 +1118,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 |          call CurrentSetup.SetToolChangePointByName(PT23)
 
         :param str i_point_name:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_setup.SetToolChangePointByName(i_point_name)
@@ -1179,7 +1147,6 @@ class ManufacturingSetup(ManufacturingActivity):
                 |          Dim StockGeometriesListSize As Long
                 |          StockGeometriesListSize = CurrentSetup.StockGeometriesCount
 
-        :return: int
         :rtype: int
         """
         return self.manufacturing_setup.StockGeometriesCount()

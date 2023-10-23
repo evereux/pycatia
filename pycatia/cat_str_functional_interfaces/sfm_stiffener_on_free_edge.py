@@ -68,7 +68,6 @@ class SFMStiffenerOnFreeEdge(SFMProfile):
                 |              Dim Offset As Double
                 |              Set Offset = SfmStiffenerOnFreeEdge.FreeEdgeOffset
 
-        :return: float
         :rtype: float
         """
 
@@ -110,7 +109,6 @@ class SFMStiffenerOnFreeEdge(SFMProfile):
                 |              Dim Angle As Double
                 |              Set Angle = SfmStiffenerOnFreeEdge.SectionAngle
 
-        :return: float
         :rtype: float
         """
 
@@ -152,7 +150,6 @@ class SFMStiffenerOnFreeEdge(SFMProfile):
                 |              Dim Orient As Long
                 |              Orient = SfmStiffenerOnFreeEdge.SideOrientation
 
-        :return: int
         :rtype: int
         """
 
@@ -191,7 +188,6 @@ class SFMStiffenerOnFreeEdge(SFMProfile):
                 |              Dim FreeEdge As Reference
                 |              Set FreeEdge = SfmStiffenerOnFreeEdge.GetFreeEdge
 
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.sfm_stiffener_on_free_edge.GetFreeEdge())
@@ -221,7 +217,6 @@ class SFMStiffenerOnFreeEdge(SFMProfile):
                 |              Dim MoldedSurface As Reference
                 |              Set MoldedSurface = SfmStiffenerOnFreeEdge.GetMoldedSurface
 
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.sfm_stiffener_on_free_edge.GetMoldedSurface())
@@ -253,7 +248,6 @@ class SFMStiffenerOnFreeEdge(SFMProfile):
                 |              Set Welds = SplitSFE.GetWelds(Nothing)
 
         :param Reference i_operating_ele:
-        :return: SFMWelds
         :rtype: SFMWelds
         """
         return SFMWelds(self.sfm_stiffener_on_free_edge.GetWelds(i_operating_ele.com_object))
@@ -284,7 +278,6 @@ class SFMStiffenerOnFreeEdge(SFMProfile):
                 |              Set FreeEdge = SfmStiffenerOnFreeEdge.SetFreeEdge
 
         :param Reference i_free_edge:
-        :return: None
         :rtype: None
         """
         return self.sfm_stiffener_on_free_edge.SetFreeEdge(i_free_edge.com_object)

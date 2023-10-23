@@ -48,7 +48,6 @@ class SWKLineOfSightNode(AnyObject):
                 |     Lock the posture of the line of sight for the dof piDOFId.
 
         :param int pi_dof_id:
-        :return: None
         :rtype: None
         """
         return self.swk_line_of_sight_node.LockPosture(pi_dof_id)
@@ -64,7 +63,6 @@ class SWKLineOfSightNode(AnyObject):
                 |     Sets the limits to match the best PrefAngle for the DOF piDOFId
 
         :param int pi_dof_id:
-        :return: None
         :rtype: None
         """
         return self.swk_line_of_sight_node.Optimize(pi_dof_id)
@@ -85,7 +83,6 @@ class SWKLineOfSightNode(AnyObject):
 
         :param int pi_dof_id:
         :param int pi_reset:
-        :return: None
         :rtype: None
         """
         return self.swk_line_of_sight_node.ResetAngularLimitations(pi_dof_id, pi_reset)
@@ -101,7 +98,6 @@ class SWKLineOfSightNode(AnyObject):
                 |     Reset the posture of the line of sight for the dof piDOFId.
 
         :param int pi_dof_id:
-        :return: None
         :rtype: None
         """
         return self.swk_line_of_sight_node.ResetPosture(pi_dof_id)
@@ -117,7 +113,6 @@ class SWKLineOfSightNode(AnyObject):
                 |     Reset the preferred angles of the line of sight for the dof piDOFId.
 
         :param int pi_dof_id:
-        :return: None
         :rtype: None
         """
         return self.swk_line_of_sight_node.ResetPrefAngles(pi_dof_id)
@@ -135,7 +130,6 @@ class SWKLineOfSightNode(AnyObject):
 
         :param float pi_percentage:
         :param int pi_dof_id:
-        :return: None
         :rtype: None
         """
         return self.swk_line_of_sight_node.SetPercentage(pi_percentage, pi_dof_id)

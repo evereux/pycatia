@@ -54,7 +54,6 @@ class Resources(Collection):
                 |         oitem The item
 
         :param Resource i_resource:
-        :return: Resource
         :rtype: Resource
         """
         return Resource(self.resources.Add(i_resource.com_object))
@@ -86,7 +85,6 @@ class Resources(Collection):
 
         :param Resource i_resource:
         :param str i_assignment_type:
-        :return: Resource
         :rtype: Resource
         """
         return Resource(self.resources.AddByAssignmentType(i_resource.com_object, i_assignment_type))
@@ -111,7 +109,6 @@ class Resources(Collection):
                 |         oResource The idl resource
 
         :param cat_variant i_index:
-        :return: Resource
         :rtype: Resource
         """
         return Resource(self.resources.Item(i_index))
@@ -141,7 +138,6 @@ class Resources(Collection):
 
         :param Resource i_resource:
         :param str i_assignment_type:
-        :return: Resource
         :rtype: Resource
         """
         return Resource(self.resources.RemoveByAssignmentType(i_resource.com_object, i_assignment_type))

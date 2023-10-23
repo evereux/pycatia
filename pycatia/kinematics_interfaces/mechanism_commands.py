@@ -56,7 +56,6 @@ class MechanismCommands(Collection):
                 |             Dim NewCommand As MechanismCommand
                 |             Set NewCommand = TheCommands.Add()
 
-        :return: MechanismCommand
         :rtype: MechanismCommand
         """
         return MechanismCommand(self.mechanism_commands.Add())
@@ -96,7 +95,6 @@ class MechanismCommands(Collection):
                 |          Set ThatCommand = CATIA.MechanismCommands.Item("MyCommand")
 
         :param cat_variant i_index:
-        :return: MechanismCommand
         :rtype: MechanismCommand
         """
         return MechanismCommand(self.mechanism_commands.Item(i_index))
@@ -133,7 +131,6 @@ class MechanismCommands(Collection):
                 |             TheCommands.Remove("CommandTwo")
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.mechanism_commands.Remove(i_index)

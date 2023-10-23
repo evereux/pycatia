@@ -72,7 +72,6 @@ class UnmountActivity(Activity):
                 |            ..
                 |            objUnmountAct.Tool=objTool
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -115,7 +114,6 @@ class UnmountActivity(Activity):
                 |            ToolPrName  = "Tool.1"
                 |            objUnmountAct.ToolProfile=ToolPrName
 
-        :return: str
         :rtype: str
         """
 

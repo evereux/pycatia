@@ -61,7 +61,6 @@ class SchApp2DZoneFrom3DZone(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.Create2DAppZone
 
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.sch_app_2d_zone_from_3d_zone.Create2DAppZone())

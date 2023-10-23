@@ -67,7 +67,6 @@ class AnalysisDocument(Document):
                 |          Dim RootAnalysis As AnalysisManager
                 |          Set RootAnalysis = AnalysisDocument.Analysis
 
-        :return: AnalysisManager
         :rtype: AnalysisManager
         """
 

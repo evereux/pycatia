@@ -49,7 +49,6 @@ class GeneralSessionSettingAtt(SettingController):
                 | 
                 |     Returns the data save parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -74,7 +73,6 @@ class GeneralSessionSettingAtt(SettingController):
                 | 
                 |     Returns the conference driver parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -99,7 +97,6 @@ class GeneralSessionSettingAtt(SettingController):
                 | 
                 |     Returns the drag & drop parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -124,7 +121,6 @@ class GeneralSessionSettingAtt(SettingController):
                 | 
                 |     Returns the referenced documents parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -149,7 +145,6 @@ class GeneralSessionSettingAtt(SettingController):
                 | 
                 |     Returns the data save parameter (in milliseconds).
 
-        :return: int
         :rtype: int
         """
 
@@ -174,7 +169,6 @@ class GeneralSessionSettingAtt(SettingController):
                 | 
                 |     Returns the user interface style parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -220,7 +214,6 @@ class GeneralSessionSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.general_session_setting_att.GetAutoSaveInfo(io_admin_level, io_locked)
@@ -257,7 +250,6 @@ class GeneralSessionSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.general_session_setting_att.GetConferencingInfo(io_admin_level, io_locked)
@@ -294,7 +286,6 @@ class GeneralSessionSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.general_session_setting_att.GetDragDropInfo(io_admin_level, io_locked)
@@ -331,7 +322,6 @@ class GeneralSessionSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.general_session_setting_att.GetRefDocInfo(io_admin_level, io_locked)
@@ -368,7 +358,6 @@ class GeneralSessionSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.general_session_setting_att.GetUIStyleInfo(io_admin_level, io_locked)
@@ -395,7 +384,6 @@ class GeneralSessionSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.general_session_setting_att.SetAutoSaveLock(i_locked)
@@ -437,7 +425,6 @@ class GeneralSessionSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.general_session_setting_att.SetConferencingLock(i_locked)
@@ -479,7 +466,6 @@ class GeneralSessionSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.general_session_setting_att.SetDragDropLock(i_locked)
@@ -521,7 +507,6 @@ class GeneralSessionSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.general_session_setting_att.SetRefDocLock(i_locked)
@@ -563,7 +548,6 @@ class GeneralSessionSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.general_session_setting_att.SetUIStyleLock(i_locked)

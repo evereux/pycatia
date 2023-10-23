@@ -63,7 +63,6 @@ class AnnotatedViews(Collection):
                 |             Dim NewAnnotatedView As AnnotatedView
                 |             Set NewAnnotatedView = TheAnnotatedViews.Add
 
-        :return: AnnotatedView
         :rtype: AnnotatedView
         """
         return AnnotatedView(self.annotated_views.Add())
@@ -98,7 +97,6 @@ class AnnotatedViews(Collection):
                 |             Set NewAnnotatedView = TheAnnotatedViews.AddFromViewpoint(AViewpoint)
 
         :param Viewpoint3D i_viewpoint:
-        :return: AnnotatedView
         :rtype: AnnotatedView
         """
         return AnnotatedView(self.annotated_views.AddFromViewpoint(i_viewpoint.com_object))
@@ -140,7 +138,6 @@ class AnnotatedViews(Collection):
                 |             Set ThatAnnotatedView = TheAnnotatedViews.Item("AnnotatedView3")
 
         :param cat_variant i_index:
-        :return: AnnotatedView
         :rtype: AnnotatedView
         """
         return AnnotatedView(self.annotated_views.Item(i_index))
@@ -177,7 +174,6 @@ class AnnotatedViews(Collection):
                 |             TheAnnotatedViews.Remove("AnnotatedView2")
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.annotated_views.Remove(i_index)

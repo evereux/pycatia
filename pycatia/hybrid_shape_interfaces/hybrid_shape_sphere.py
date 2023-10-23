@@ -66,7 +66,6 @@ class HybridShapeSphere(HybridShape):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -102,7 +101,6 @@ class HybridShapeSphere(HybridShape):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -130,7 +128,6 @@ class HybridShapeSphere(HybridShape):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -155,7 +152,6 @@ class HybridShapeSphere(HybridShape):
                 |          Dim HybShpSphereCenter As Reference
                 |          HybShpSphereCenter = HybShpSphere.Center
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -191,7 +187,6 @@ class HybridShapeSphere(HybridShape):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -219,7 +214,6 @@ class HybridShapeSphere(HybridShape):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -241,7 +235,6 @@ class HybridShapeSphere(HybridShape):
                 | 
                 |     Example:
 
-        :return: int
         :rtype: int
         """
 
@@ -277,7 +270,6 @@ class HybridShapeSphere(HybridShape):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Length
         :rtype: Length
         """
 
@@ -303,7 +295,6 @@ class HybridShapeSphere(HybridShape):
                 |         HybridShapeFactory
 
         :param float i_angle:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sphere.SetBeginMeridianAngle(i_angle)
@@ -328,7 +319,6 @@ class HybridShapeSphere(HybridShape):
                 |         HybridShapeFactory
 
         :param float i_angle:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sphere.SetBeginParallelAngle(i_angle)
@@ -353,7 +343,6 @@ class HybridShapeSphere(HybridShape):
                 |         HybridShapeFactory
 
         :param float i_angle:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sphere.SetEndMeridianAngle(i_angle)
@@ -378,7 +367,6 @@ class HybridShapeSphere(HybridShape):
                 |         HybridShapeFactory
 
         :param float i_angle:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sphere.SetEndParallelAngle(i_angle)
@@ -403,7 +391,6 @@ class HybridShapeSphere(HybridShape):
                 |         HybridShapeFactory
 
         :param float i_radius:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sphere.SetRadius(i_radius)

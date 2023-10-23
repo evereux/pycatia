@@ -57,7 +57,6 @@ class AnalysisMeshLocalSpecifications(Collection):
                 |         The created local specification
 
         :param str i_type:
-        :return: AnalysisMeshLocalSpecification
         :rtype: AnalysisMeshLocalSpecification
         """
         return AnalysisMeshLocalSpecification(self.analysis_mesh_local_specifications.Add(i_type))
@@ -86,7 +85,6 @@ class AnalysisMeshLocalSpecifications(Collection):
                 |         AnyObject.Name property.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.analysis_mesh_local_specifications.Remove(i_index)

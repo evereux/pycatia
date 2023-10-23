@@ -62,7 +62,6 @@ class AutoWalkActivity(WalkActivity):
 
         :param float d_length:
         :param bool b_curr_manikin_pose:
-        :return: None
         :rtype: None
         """
         return self.auto_walk_activity.GetLengthInMetre(d_length, b_curr_manikin_pose)

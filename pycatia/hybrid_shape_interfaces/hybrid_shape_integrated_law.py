@@ -66,7 +66,6 @@ class HybridShapeIntegratedLaw(HybridShape):
                 |              Dim ALaw
                 |              Set ALaw = IntegratedLaw.AdvancedLaw
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -101,7 +100,6 @@ class HybridShapeIntegratedLaw(HybridShape):
                 |              Dim EParam
                 |              Set EParam = IntegratedLaw.EndParam
 
-        :return: Length
         :rtype: Length
         """
 
@@ -131,7 +129,6 @@ class HybridShapeIntegratedLaw(HybridShape):
                 |              Dim InterpolLawMode
                 |              Set InterpolLawMode = IntegratedLaw.ImplicitLawInterpolationMode
 
-        :return: int
         :rtype: int
         """
 
@@ -168,7 +165,6 @@ class HybridShapeIntegratedLaw(HybridShape):
                 |              Dim IMappingLaw
                 |              Set IMappingLaw = IntegratedLaw.InvertMappingLaw
 
-        :return: bool
         :rtype: bool
         """
 
@@ -204,7 +200,6 @@ class HybridShapeIntegratedLaw(HybridShape):
                 |     Dim PLawType
                 |     Set PLawType = IntegratedLaw.PitchLawType
 
-        :return: int
         :rtype: int
         """
 
@@ -240,7 +235,6 @@ class HybridShapeIntegratedLaw(HybridShape):
                 |              Dim Spine1
                 |              Set Spine1 = IntegratedLaw.Spine
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -275,7 +269,6 @@ class HybridShapeIntegratedLaw(HybridShape):
                 |              Dim SParam
                 |              Set SParam = IntegratedLaw.StartParam
 
-        :return: Length
         :rtype: Length
         """
 
@@ -302,7 +295,6 @@ class HybridShapeIntegratedLaw(HybridShape):
 
         :param Reference i_point:
         :param int i_param:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_integrated_law.AppendNewPointAndParam(i_point.com_object, i_param)
@@ -348,7 +340,6 @@ class HybridShapeIntegratedLaw(HybridShape):
         :param int i_pos:
         :param Reference o_point:
         :param Reference o_param:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_integrated_law.GetPointAndParam(i_pos, o_point.com_object, o_param.com_object)
@@ -384,7 +375,6 @@ class HybridShapeIntegratedLaw(HybridShape):
                 |         oSize
                 |             size of the list.
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_integrated_law.GetSize()
@@ -400,7 +390,6 @@ class HybridShapeIntegratedLaw(HybridShape):
                 |     Removes all the points and associated parameters.
                 |     Note: Used for law type = 5(Implicit)
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_integrated_law.RemoveAllPointsAndParams()
@@ -421,7 +410,6 @@ class HybridShapeIntegratedLaw(HybridShape):
                 |             Point to remove
 
         :param Reference i_point:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_integrated_law.RemovePointAndParam(i_point.com_object)
@@ -458,7 +446,6 @@ class HybridShapeIntegratedLaw(HybridShape):
                 |             Parameter
 
         :param int i_end_param:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_integrated_law.SetEndParam(i_end_param)
@@ -480,7 +467,6 @@ class HybridShapeIntegratedLaw(HybridShape):
                 |             Parameter
 
         :param int i_start_param:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_integrated_law.SetStartParam(i_start_param)

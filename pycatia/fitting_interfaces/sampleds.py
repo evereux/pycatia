@@ -56,7 +56,6 @@ class Sampleds(Collection):
                 | 
                 |          Set newSampled = Sampleds.Add
 
-        :return: Sampled
         :rtype: Sampled
         """
         return Sampled(self.sampleds.Add())
@@ -80,7 +79,6 @@ class Sampleds(Collection):
                 | 
                 |          Set newSampled = Sampleds.Add
 
-        :return: Sampled
         :rtype: Sampled
         """
         return Sampled(self.sampleds.AddFromSel())
@@ -114,7 +112,6 @@ class Sampleds(Collection):
                 |          Set newSampled = Sampleds.Item (2)
 
         :param cat_variant i_index:
-        :return: Sampled
         :rtype: Sampled
         """
         return Sampled(self.sampleds.Item(i_index))
@@ -144,7 +141,6 @@ class Sampleds(Collection):
                 |              Sampleds.Remove (3)
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.sampleds.Remove(i_index)

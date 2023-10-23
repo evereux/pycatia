@@ -63,7 +63,6 @@ class SchFrameInfo(AnyObject):
 
         :param str o_label:
         :param bool i_b_horiz:
-        :return: None
         :rtype: None
         """
         return self.sch_frame_info.GetLabelCode(o_label, i_b_horiz)
@@ -106,7 +105,6 @@ class SchFrameInfo(AnyObject):
                 |          objThisIntf.GetOriginCornerCodestrVar1
 
         :param str o_origin_corner:
-        :return: None
         :rtype: None
         """
         return self.sch_frame_info.GetOriginCornerCode(o_origin_corner)
@@ -140,7 +138,6 @@ class SchFrameInfo(AnyObject):
 
         :param str o_spacing:
         :param bool i_b_horiz:
-        :return: None
         :rtype: None
         """
         return self.sch_frame_info.GetSpacingCode(o_spacing, i_b_horiz)
@@ -189,7 +186,6 @@ class SchFrameInfo(AnyObject):
 
         :param str i_label:
         :param bool i_b_horiz:
-        :return: None
         :rtype: None
         """
         return self.sch_frame_info.SetLabelCode(i_label, i_b_horiz)
@@ -232,7 +228,6 @@ class SchFrameInfo(AnyObject):
                 |          objThisIntf.SetOriginCornerCodestrVar1
 
         :param str i_origin_corner:
-        :return: None
         :rtype: None
         """
         return self.sch_frame_info.SetOriginCornerCode(i_origin_corner)
@@ -266,7 +261,6 @@ class SchFrameInfo(AnyObject):
 
         :param str i_spacing:
         :param bool i_b_horiz:
-        :return: None
         :rtype: None
         """
         return self.sch_frame_info.SetSpacingCode(i_spacing, i_b_horiz)

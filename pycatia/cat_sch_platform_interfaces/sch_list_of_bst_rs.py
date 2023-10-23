@@ -52,7 +52,6 @@ class SchListOfBSTRs(AnyObject):
                 | 
                 |          NumberOfStrings = MyList.Count
 
-        :return: int
         :rtype: int
         """
 
@@ -81,7 +80,6 @@ class SchListOfBSTRs(AnyObject):
                 |          MyList.Append("MyString")
 
         :param str i_bstr:
-        :return: None
         :rtype: None
         """
         return self.sch_list_of_bst_rs.Append(i_bstr)
@@ -115,7 +113,6 @@ class SchListOfBSTRs(AnyObject):
                 |          Set MyStr = SchListOfBSTRs.Item(2)
 
         :param int i_index:
-        :return: str
         :rtype: str
         """
         return self.sch_list_of_bst_rs.Item(i_index)
@@ -147,7 +144,6 @@ class SchListOfBSTRs(AnyObject):
                 |          MyList.Remove(1)
 
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.sch_list_of_bst_rs.RemoveByIndex(i_index)

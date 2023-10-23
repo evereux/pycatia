@@ -55,7 +55,6 @@ class Resource(AnyObject):
                 |     This property returns the interface which manages the children TSA of the
                 |     given resource/system.
 
-        :return: Activities
         :rtype: Activities
         """
 
@@ -73,7 +72,6 @@ class Resource(AnyObject):
                 |     This property returns the interface which manages the items or input
                 |     products/components assigned to the given resource/system
 
-        :return: Items
         :rtype: Items
         """
 
@@ -92,7 +90,6 @@ class Resource(AnyObject):
                 |     flow hierarchy on the given resource. This returns the collection of resources
                 |     which are "Next" to the given resource in the resource product flow links
 
-        :return: ResourceCollection
         :rtype: ResourceCollection
         """
 
@@ -111,7 +108,6 @@ class Resource(AnyObject):
                 |     This property returns the interface which manages the output
                 |     products/components of the given resource/system
 
-        :return: Outputs
         :rtype: Outputs
         """
 
@@ -131,7 +127,6 @@ class Resource(AnyObject):
                 |     hierarchy on the given resource. This returns the collection of resources which
                 |     are "Previous" to the given resource in the resource product flow links
 
-        :return: ResourceCollection
         :rtype: ResourceCollection
         """
         
@@ -157,7 +152,6 @@ class Resource(AnyObject):
                 |             The pointer to the queried interface.
 
         :param str i_interface_name:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.resource.GetObject(i_interface_name))

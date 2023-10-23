@@ -86,7 +86,6 @@ class ActiveTask(AnyObject):
 
         :param AnyObject i_resource:
         :param Task o_task:
-        :return: None
         :rtype: None
         """
         return self.active_task.GetActiveTask(i_resource.com_object, o_task.com_object)
@@ -146,7 +145,6 @@ class ActiveTask(AnyObject):
 
         :param AnyObject i_resource:
         :param Task i_task:
-        :return: None
         :rtype: None
         """
         return self.active_task.SetActiveTask(i_resource.com_object, i_task.com_object)

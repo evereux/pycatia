@@ -72,7 +72,6 @@ class AnalysisEntity(AnyObject):
                 |          Dim analysisimages As AnalysisImages
                 |          Set analysisimages = MyEntity.AnalysisImages
 
-        :return: AnalysisImages
         :rtype: AnalysisImages
         """
 
@@ -99,7 +98,6 @@ class AnalysisEntity(AnyObject):
                 |          Dim analysislocalEntity As AnalysisLocalEntities
                 |          Set analysislocalEntity = MyEntity.AnalysisLocalEntities
 
-        :return: AnalysisLocalEntities
         :rtype: AnalysisLocalEntities
         """
 
@@ -117,7 +115,6 @@ class AnalysisEntity(AnyObject):
                 |     Returns the list of Analysis Supports. The support defines the area on
                 |     which the analysis is applied on.
 
-        :return: AnalysisSupports
         :rtype: AnalysisSupports
         """
 
@@ -142,7 +139,6 @@ class AnalysisEntity(AnyObject):
                 |          Dim basiccomponents As BasicComponents 
                 |          Set basiccomponents = MyEntity.BasicComponents
 
-        :return: BasicComponents
         :rtype: BasicComponents
         """
 
@@ -168,7 +164,6 @@ class AnalysisEntity(AnyObject):
                 |          Dim TypeofEntity As CATBSTR
                 |          Set TypeofEntity = MyEntity.Type
 
-        :return: str
         :rtype: str
         """
 
@@ -199,7 +194,6 @@ class AnalysisEntity(AnyObject):
 
         :param Product i_constraint_product:
         :param Constraint i_constraint:
-        :return: None
         :rtype: None
         """
         return self.analysis_entity.AddSupportFromConstraint(i_constraint_product.com_object, i_constraint.com_object)
@@ -244,7 +238,6 @@ class AnalysisEntity(AnyObject):
 
         :param Product i_part_product:
         :param Part i_part:
-        :return: None
         :rtype: None
         """
         return self.analysis_entity.AddSupportFromPart(i_part_product.com_object, i_part.com_object)
@@ -290,7 +283,6 @@ class AnalysisEntity(AnyObject):
 
         :param Product i_product:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.analysis_entity.AddSupportFromProduct(i_product.com_object, i_support.com_object)
@@ -336,7 +328,6 @@ class AnalysisEntity(AnyObject):
 
         :param Product i_product:
         :param Publication i_publication:
-        :return: None
         :rtype: None
         """
         return self.analysis_entity.AddSupportFromPublication(i_product.com_object, i_publication.com_object)
@@ -383,7 +374,6 @@ class AnalysisEntity(AnyObject):
 
         :param Reference i_reference:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.analysis_entity.AddSupportFromReference(i_reference.com_object, i_support.com_object)
@@ -437,7 +427,6 @@ class AnalysisEntity(AnyObject):
         :param int i_line_index:
         :param int i_column_index:
         :param int i_layer_index:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(
@@ -476,7 +465,6 @@ class AnalysisEntity(AnyObject):
         :param int i_line_index:
         :param int i_column_index:
         :param int i_layer_index:
-        :return: cat_variant
         :rtype: cat_variant
         """
         return self.analysis_entity.GetValue(i_component, i_label, i_line_index, i_column_index, i_layer_index)
@@ -524,7 +512,6 @@ class AnalysisEntity(AnyObject):
         :param int i_column_index:
         :param int i_layer_index:
         :param Reference i_value:
-        :return: None
         :rtype: None
         """
         return self.analysis_entity.SetReference(
@@ -604,7 +591,6 @@ class AnalysisEntity(AnyObject):
         :param int i_column_index:
         :param int i_layer_index:
         :param cat_variant i_value:
-        :return: None
         :rtype: None
         """
         return self.analysis_entity.SetValue(

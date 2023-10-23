@@ -57,7 +57,6 @@ class ManufacturingSetup2(ManufacturingActivity):
         :param str i_tool_resource_name:
         :param str i_resource_type:
         :param str i_catalog_path:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(

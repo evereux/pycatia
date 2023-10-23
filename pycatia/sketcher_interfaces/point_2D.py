@@ -53,7 +53,6 @@ class Point2D(Geometry2D):
                 |         oPoint[1]
                 |             The Y Coordinate of the point
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -89,7 +88,6 @@ class Point2D(Geometry2D):
 
         :param float i_x:
         :param float i_y:
-        :return: None
         :rtype: None
         """
         return self.point_2d.SetData(i_x, i_y)

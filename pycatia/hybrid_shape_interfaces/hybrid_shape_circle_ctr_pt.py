@@ -71,7 +71,6 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
                 |          Dim HybShpCircleCenter As Reference
                 |          HybShpCircleCenter = HybShpCircle.Center
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -104,7 +103,6 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
                 |          Dim HybShpCirclePassingPoint As Reference
                 |          Set HybShpCirclePassingPoint = HybShpCircle.CrossingPoint
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -137,7 +135,6 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
                 |          Dim HybShpCircleSupportSurf As Reference 
                 |          HybShpCircleSupportSurf = HybShpCircle.Support
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -166,7 +163,6 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
                 |         oGeod
                 |             geodesic type : when TRUE, the circle is geodesic.
 
-        :return: bool
         :rtype: bool
         """
         return self.hybrid_shape_circle_ctr_pt.IsGeodesic()
@@ -182,7 +178,6 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
                 |     Sets GeometryOnSupport of circle.
                 |     It puts the circle on the surface.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_circle_ctr_pt.SetGeometryOnSupport()
@@ -198,7 +193,6 @@ class HybridShapeCircleCtrPt(HybridShapeCircle):
                 |     Inactivates GeometryOnSupport of circle.
                 |     Note: The circle becomes euclidean.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_circle_ctr_pt.UnsetGeometryOnSupport()

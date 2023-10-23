@@ -56,7 +56,6 @@ class AnnotationSetTransformIntoAssemblySet(AnyObject):
                 |             assembly annotation set. otherwise returns E_FAIL.
 
         :param str i_assemblyannotation_set_name:
-        :return: None
         :rtype: None
         """
         return self.annotation_set_transform_into_assembly_set.Transform(i_assemblyannotation_set_name)

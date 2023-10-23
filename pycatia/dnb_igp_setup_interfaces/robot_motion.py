@@ -90,7 +90,6 @@ class RobotMotion(Activity):
                 |                AccuracyProfile
 
         :param AnyObject o_accuracy_profile:
-        :return: None
         :rtype: None
         """
         return self.robot_motion.GetAccuracyProfile(o_accuracy_profile.com_object)
@@ -142,7 +141,6 @@ class RobotMotion(Activity):
         :param AnyObject i_device:
         :param str i_auxillary_axis:
         :param str o_home_name:
-        :return: None
         :rtype: None
         """
         return self.robot_motion.GetAuxillaryAxisHome(i_device.com_object, i_auxillary_axis, o_home_name)
@@ -200,7 +198,6 @@ class RobotMotion(Activity):
         :param AnyObject i_device:
         :param str i_auxillary_axis:
         :param tuple o_auxillary_axis_values:
-        :return: None
         :rtype: None
         """
         return self.robot_motion.GetAuxillaryAxisValues(i_device.com_object, i_auxillary_axis, o_auxillary_axis_values)
@@ -256,7 +253,6 @@ class RobotMotion(Activity):
                 |                CartesianTarget
 
         :param tuple o_cartesian_target:
-        :return: None
         :rtype: None
         """
         return self.robot_motion.GetCartesianTarget(o_cartesian_target)
@@ -309,7 +305,6 @@ class RobotMotion(Activity):
                 |                objRobotmotion.GetConfig Config
 
         :param int o_config_number:
-        :return: None
         :rtype: None
         """
         return self.robot_motion.GetConfig(o_config_number)
@@ -347,7 +342,6 @@ class RobotMotion(Activity):
                 |                objRobotmotion.GetJointTarget JointTarget
 
         :param tuple o_joint_target:
-        :return: None
         :rtype: None
         """
         return self.robot_motion.GetJointTarget(o_joint_target)
@@ -400,7 +394,6 @@ class RobotMotion(Activity):
                 |                objRobotmotion.GetMotionProfile MotionProfile
 
         :param AnyObject o_motion_profile:
-        :return: None
         :rtype: None
         """
         return self.robot_motion.GetMotionProfile(o_motion_profile.com_object)
@@ -445,7 +438,6 @@ class RobotMotion(Activity):
                 |                objRobotmotion.GetMotionType MotionType
 
         :param int index:
-        :return: None
         :rtype: None
         """
         return self.robot_motion.GetMotionType(index)
@@ -483,7 +475,6 @@ class RobotMotion(Activity):
                 |                objrobotmotion.GetobjectProfile objectProfile
 
         :param AnyObject o_obj_profile:
-        :return: None
         :rtype: None
         """
         return self.robot_motion.GetObjectProfile(o_obj_profile.com_object)
@@ -522,7 +513,6 @@ class RobotMotion(Activity):
                 |                OrientationMode
 
         :param int index:
-        :return: None
         :rtype: None
         """
         return self.robot_motion.GetOrientationMode(index)
@@ -560,7 +550,6 @@ class RobotMotion(Activity):
                 |                objRobotmotion.GetTagTarget objTag
 
         :param Tag o_tag:
-        :return: None
         :rtype: None
         """
         return self.robot_motion.GetTagTarget(o_tag.com_object)
@@ -614,7 +603,6 @@ class RobotMotion(Activity):
                 |                objRobotmotion.GetTargetType TargetType
 
         :param int index:
-        :return: None
         :rtype: None
         """
         return self.robot_motion.GetTargetType(index)
@@ -652,7 +640,6 @@ class RobotMotion(Activity):
                 |                objRobotmotion.GetToolProfile ToolProfile
 
         :param AnyObject o_tool_profile:
-        :return: None
         :rtype: None
         """
         return self.robot_motion.GetToolProfile(o_tool_profile.com_object)
@@ -692,7 +679,6 @@ class RobotMotion(Activity):
                 |                objRobotmotion.GetTurnNumbers TurnNumbers
 
         :param tuple o_turn_numbers:
-        :return: None
         :rtype: None
         """
         return self.robot_motion.GetTurnNumbers(o_turn_numbers)
@@ -744,7 +730,6 @@ class RobotMotion(Activity):
                 |                objRobotMotion.SetAccuracyProfile "Default"
 
         :param AnyObject i_accuracy_profile:
-        :return: None
         :rtype: None
         """
         return self.robot_motion.SetAccuracyProfile(i_accuracy_profile.com_object)
@@ -795,7 +780,6 @@ class RobotMotion(Activity):
         :param AnyObject i_device:
         :param str i_auxillary_axis:
         :param str i_home_name:
-        :return: None
         :rtype: None
         """
         return self.robot_motion.SetAuxillaryAxisHome(i_device.com_object, i_auxillary_axis, i_home_name)
@@ -853,7 +837,6 @@ class RobotMotion(Activity):
         :param AnyObject i_device:
         :param str i_auxillary_axis:
         :param tuple i_auxillary_axis_values:
-        :return: None
         :rtype: None
         """
         return self.robot_motion.SetAuxillaryAxisValues(i_device.com_object, i_auxillary_axis, i_auxillary_axis_values)
@@ -915,7 +898,6 @@ class RobotMotion(Activity):
                 |                CartesianTarget
 
         :param tuple i_cartesian_target:
-        :return: None
         :rtype: None
         """
         return self.robot_motion.SetCartesianTarget(i_cartesian_target)
@@ -967,7 +949,6 @@ class RobotMotion(Activity):
                 |                objRobotmotion.SetConfig 1
 
         :param int i_config_number:
-        :return: None
         :rtype: None
         """
         return self.robot_motion.SetConfig(i_config_number)
@@ -1011,7 +992,6 @@ class RobotMotion(Activity):
                 |                objRobotmotion.SetJointTarget JointTarget
 
         :param tuple i_joint_target:
-        :return: None
         :rtype: None
         """
         return self.robot_motion.SetJointTarget(i_joint_target)
@@ -1063,7 +1043,6 @@ class RobotMotion(Activity):
                 |                objRobotmotion.SetMotionProfile "Default"
 
         :param AnyObject i_motion_profile:
-        :return: None
         :rtype: None
         """
         return self.robot_motion.SetMotionProfile(i_motion_profile.com_object)
@@ -1106,7 +1085,6 @@ class RobotMotion(Activity):
                 |                objRobotmotion.SetMotionType 1
 
         :param int index:
-        :return: None
         :rtype: None
         """
         return self.robot_motion.SetMotionType(index)
@@ -1144,7 +1122,6 @@ class RobotMotion(Activity):
                 |                objRobotMotion.SetObjectProfile "Default"
 
         :param AnyObject i_obj_profile:
-        :return: None
         :rtype: None
         """
         return self.robot_motion.SetObjectProfile(i_obj_profile.com_object)
@@ -1181,7 +1158,6 @@ class RobotMotion(Activity):
                 |                objRobotmotion.SetOrientationMode 1
 
         :param int index:
-        :return: None
         :rtype: None
         """
         return self.robot_motion.SetOrientationMode(index)
@@ -1220,7 +1196,6 @@ class RobotMotion(Activity):
                 |                objRobotmotion.SetTagTarget objTag
 
         :param Tag i_tag:
-        :return: None
         :rtype: None
         """
         return self.robot_motion.SetTagTarget(i_tag.com_object)
@@ -1272,7 +1247,6 @@ class RobotMotion(Activity):
                 |                objRobotmotion.SetToolProfile "Default"
 
         :param AnyObject i_tool_profile:
-        :return: None
         :rtype: None
         """
         return self.robot_motion.SetToolProfile(i_tool_profile.com_object)
@@ -1315,7 +1289,6 @@ class RobotMotion(Activity):
                 |                objRobotmotion.SetTurnNumbers TurnNumbers
 
         :param tuple i_turn_numbers:
-        :return: None
         :rtype: None
         """
         return self.robot_motion.SetTurnNumbers(i_turn_numbers)

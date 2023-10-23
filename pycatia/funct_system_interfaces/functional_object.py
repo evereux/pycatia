@@ -48,7 +48,6 @@ class FunctionalObject(FunctionalPosition):
                 |     Returns the Facet.
 
         :param FunctionalFacetMgr i_fm:
-        :return: FunctionalFacet
         :rtype: FunctionalFacet
         """
         return FunctionalFacet(self.functional_object.GetFacet(i_fm.com_object))
@@ -64,7 +63,6 @@ class FunctionalObject(FunctionalPosition):
                 |     Returns the Facet.
 
         :param str i_fm:
-        :return: FunctionalFacet
         :rtype: FunctionalFacet
         """
         return FunctionalFacet(self.functional_object.GetFacetByName(i_fm))
@@ -82,7 +80,6 @@ class FunctionalObject(FunctionalPosition):
 
         :param FunctionalFacetMgr i_fm:
         :param bool i_create_if_necessary:
-        :return: FunctionalFacet
         :rtype: FunctionalFacet
         """
         return FunctionalFacet(self.functional_object.SearchFacet(i_fm.com_object, i_create_if_necessary))
@@ -100,7 +97,6 @@ class FunctionalObject(FunctionalPosition):
 
         :param str i_fm:
         :param bool i_create_if_necessary:
-        :return: FunctionalFacet
         :rtype: FunctionalFacet
         """
         return FunctionalFacet(self.functional_object.SearchFacetByName(i_fm, i_create_if_necessary))

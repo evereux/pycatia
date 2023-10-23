@@ -48,7 +48,6 @@ class VibrationVolumes(Collection):
                 | 
                 |     Cleans up.
 
-        :return: None
         :rtype: None
         """
         return self.vibration_volumes.CleanUp()
@@ -91,7 +90,6 @@ class VibrationVolumes(Collection):
         :param str positions_file_path:
         :param float i_accuracy:
         :param float i_simplif_accuracy:
-        :return: Document
         :rtype: Document
         """
         return Document(
@@ -142,7 +140,6 @@ class VibrationVolumes(Collection):
         :param AnyObject i_swept_able:
         :param float i_accuracy:
         :param float i_simplify_accuracy:
-        :return: Document
         :rtype: Document
         """
         return Document(
@@ -199,7 +196,6 @@ class VibrationVolumes(Collection):
         :param AnyObject i_swept_able:
         :param float i_accuracy:
         :param float i_simplify_accuracy:
-        :return: Document
         :rtype: Document
         """
         return Document(
@@ -257,7 +253,6 @@ class VibrationVolumes(Collection):
         :param str positions_file_path:
         :param float i_accuracy:
         :param float i_simplify_accuracy:
-        :return: Document
         :rtype: Document
         """
         return Document(
@@ -280,7 +275,6 @@ class VibrationVolumes(Collection):
                 | 
                 |     Returns the name of the associated shape.
 
-        :return: str
         :rtype: str
         """
         return self.vibration_volumes.VibrationVolumeShapeName()

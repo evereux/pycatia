@@ -71,7 +71,6 @@ class HybridShapeLineNormal(Line):
                 |          Dim oStart As  CATIALength 
                 |          Set oStart = LineNormal.BeginOffset
 
-        :return: Length
         :rtype: Length
         """
 
@@ -96,7 +95,6 @@ class HybridShapeLineNormal(Line):
                 |          Dim oEnd As  CATIALength 
                 |          Set oEnd = LineNormal.EndOffset
 
-        :return: Length
         :rtype: Length
         """
 
@@ -124,7 +122,6 @@ class HybridShapeLineNormal(Line):
                 |          Dim oOrientation As long
                 |          Set oOrientation = LineNormal.Orientation
 
-        :return: int
         :rtype: int
         """
 
@@ -157,7 +154,6 @@ class HybridShapeLineNormal(Line):
                 |          Dim oPoint As Reference
                 |          Set oPoint = LineNormal.Point
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -191,7 +187,6 @@ class HybridShapeLineNormal(Line):
                 |          Dim oSurface As Reference 
                 |          Set oSurface = LineNormal.Surface
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -223,7 +218,6 @@ class HybridShapeLineNormal(Line):
                 |             the side of the start point = 3 : infinite end point - the line is infinite on the side
                 |             of the end point
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_line_normal.GetLengthType()
@@ -244,7 +238,6 @@ class HybridShapeLineNormal(Line):
                 |         oSym
                 |             Symetry flag
 
-        :return: bool
         :rtype: bool
         """
         return self.hybrid_shape_line_normal.GetSymmetricalExtension()
@@ -268,7 +261,6 @@ class HybridShapeLineNormal(Line):
                 |             3 : infinite end point - the line is infinite on the side of the end point
 
         :param int i_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_line_normal.SetLengthType(i_type)
@@ -289,7 +281,6 @@ class HybridShapeLineNormal(Line):
                 |             Symetry flag
 
         :param bool i_sym:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_line_normal.SetSymmetricalExtension(i_sym)

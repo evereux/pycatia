@@ -58,7 +58,6 @@ class VrmlSettingAtt(SettingController):
                 |             TRUE : exported Vrml files will contain edge informations.
                 |             FALSE : exported Vrml files will not contain edge informations.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -92,7 +91,6 @@ class VrmlSettingAtt(SettingController):
                 |             TRUE : exported Vrml files will contain normal informations.
                 |             FALSE : exported Vrml files will not contain normal informations.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -126,7 +124,6 @@ class VrmlSettingAtt(SettingController):
                 |             TRUE : exported Vrml files will contain texture informations.
                 |             FALSE : exported Vrml files will not contain texture informations.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -161,7 +158,6 @@ class VrmlSettingAtt(SettingController):
                 |             0 : Textures are exported in the Vrml file containing the geometry.
                 |             1 : Texture are exported in external files.
 
-        :return: int
         :rtype: int
         """
 
@@ -193,7 +189,6 @@ class VrmlSettingAtt(SettingController):
                 |             Legal values:
                 |             NOT APPLICABLE
 
-        :return: int
         :rtype: int
         """
 
@@ -227,7 +222,6 @@ class VrmlSettingAtt(SettingController):
                 |             1 : VRML 1.0.
                 |             2 : VRML 97 (VRML 2.0).
 
-        :return: int
         :rtype: int
         """
 
@@ -264,7 +258,6 @@ class VrmlSettingAtt(SettingController):
                 |             values:
                 |             [0,inf]
 
-        :return: float
         :rtype: float
         """
 
@@ -299,7 +292,6 @@ class VrmlSettingAtt(SettingController):
                 |             1 : Centimeter.
                 |             2 : Meter.
 
-        :return: int
         :rtype: int
         """
 
@@ -331,7 +323,6 @@ class VrmlSettingAtt(SettingController):
         :param int io_r:
         :param int io_g:
         :param int io_b:
-        :return: None
         :rtype: None
         """
         return self.vrml_setting_att.GetExportBackgroundColor(io_r, io_g, io_b)
@@ -351,7 +342,6 @@ class VrmlSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.vrml_setting_att.GetExportBackgroundColorInfo(io_admin_level, io_locked)
@@ -371,7 +361,6 @@ class VrmlSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.vrml_setting_att.GetExportEdgesInfo(io_admin_level, io_locked)
@@ -391,7 +380,6 @@ class VrmlSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.vrml_setting_att.GetExportNormalsInfo(io_admin_level, io_locked)
@@ -411,7 +399,6 @@ class VrmlSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.vrml_setting_att.GetExportTextureFileInfo(io_admin_level, io_locked)
@@ -431,7 +418,6 @@ class VrmlSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.vrml_setting_att.GetExportTextureFormatInfo(io_admin_level, io_locked)
@@ -451,7 +437,6 @@ class VrmlSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.vrml_setting_att.GetExportTextureInfo(io_admin_level, io_locked)
@@ -471,7 +456,6 @@ class VrmlSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.vrml_setting_att.GetExportVersionInfo(io_admin_level, io_locked)
@@ -491,7 +475,6 @@ class VrmlSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.vrml_setting_att.GetImportCreaseAngleInfo(io_admin_level, io_locked)
@@ -511,7 +494,6 @@ class VrmlSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.vrml_setting_att.GetImportUnitInfo(io_admin_level, io_locked)
@@ -534,7 +516,6 @@ class VrmlSettingAtt(SettingController):
         :param int i_r:
         :param int i_g:
         :param int i_b:
-        :return: None
         :rtype: None
         """
         return self.vrml_setting_att.SetExportBackgroundColor(i_r, i_g, i_b)
@@ -552,7 +533,6 @@ class VrmlSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.vrml_setting_att.SetExportBackgroundColorLock(i_locked)
@@ -584,7 +564,6 @@ class VrmlSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.vrml_setting_att.SetExportEdgesLock(i_locked)
@@ -616,7 +595,6 @@ class VrmlSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.vrml_setting_att.SetExportNormalsLock(i_locked)
@@ -648,7 +626,6 @@ class VrmlSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.vrml_setting_att.SetExportTextureFileLock(i_locked)
@@ -681,7 +658,6 @@ class VrmlSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.vrml_setting_att.SetExportTextureFormatLock(i_locked)
@@ -713,7 +689,6 @@ class VrmlSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.vrml_setting_att.SetExportTextureLock(i_locked)
@@ -745,7 +720,6 @@ class VrmlSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.vrml_setting_att.SetExportVersionLock(i_locked)
@@ -777,7 +751,6 @@ class VrmlSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.vrml_setting_att.SetImportCreaseAngleLock(i_locked)
@@ -809,7 +782,6 @@ class VrmlSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.vrml_setting_att.SetImportUnitLock(i_locked)

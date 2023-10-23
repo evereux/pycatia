@@ -53,7 +53,6 @@ class PSPListOfBSTRs(AnyObject):
                 |          Dim NumberOfStrings As long
                 |          NumberOfStrings = MyList.Count
 
-        :return: int
         :rtype: int
         """
 
@@ -82,7 +81,6 @@ class PSPListOfBSTRs(AnyObject):
                 |          MyList.Append("MyString")
 
         :param str i_bstr:
-        :return: None
         :rtype: None
         """
         return self.psp_list_of_bst_rs.Append(i_bstr)
@@ -115,7 +113,6 @@ class PSPListOfBSTRs(AnyObject):
                 |          MyStr = PspListOfBSTRs.Item(3)
 
         :param int i_index:
-        :return: str
         :rtype: str
         """
         return self.psp_list_of_bst_rs.Item(i_index)
@@ -146,7 +143,6 @@ class PSPListOfBSTRs(AnyObject):
                 |          MyList.Remove(2)
 
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.psp_list_of_bst_rs.RemoveByIndex(i_index)

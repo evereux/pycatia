@@ -54,7 +54,6 @@ class ShapeInstance(Shape):
                 | 
                 |          inputsCount = hybridShapeInstance.InputsCount
 
-        :return: int
         :rtype: int
         """
 
@@ -77,7 +76,6 @@ class ShapeInstance(Shape):
                 | 
                 |          outputsCount = hybridShapeInstance.OutputsCount
 
-        :return: int
         :rtype: int
         """
 
@@ -100,7 +98,6 @@ class ShapeInstance(Shape):
                 | 
                 |          parametersCount = hybridShapeInstance.ParametersCount
 
-        :return: int
         :rtype: int
         """
 
@@ -132,7 +129,6 @@ class ShapeInstance(Shape):
                 |          End If
 
         :param str i_name:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.shape_instance.GetInput(i_name))
@@ -164,7 +160,6 @@ class ShapeInstance(Shape):
                 |          End If
 
         :param str i_name:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.shape_instance.GetInputData(i_name)
@@ -197,7 +192,6 @@ class ShapeInstance(Shape):
                 |          End If
 
         :param int i_position:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.shape_instance.GetInputDataFromPosition(i_position)
@@ -229,7 +223,6 @@ class ShapeInstance(Shape):
                 |          End If
 
         :param int i_position:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.shape_instance.GetInputFromPosition(i_position))
@@ -260,7 +253,6 @@ class ShapeInstance(Shape):
                 |          End If
 
         :param str i_name:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.shape_instance.GetOutput(i_name))
@@ -291,7 +283,6 @@ class ShapeInstance(Shape):
                 |          End If
 
         :param int i_position:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.shape_instance.GetOutputFromPosition(i_position))
@@ -323,7 +314,6 @@ class ShapeInstance(Shape):
                 |          End If
 
         :param str i_name:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.shape_instance.GetParameter(i_name))
@@ -356,7 +346,6 @@ class ShapeInstance(Shape):
                 |          End If
 
         :param int i_position:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.shape_instance.GetParameterFromPosition(i_position))
@@ -390,7 +379,6 @@ class ShapeInstance(Shape):
 
         :param str i_name:
         :param AnyObject i_input:
-        :return: None
         :rtype: None
         """
         return self.shape_instance.PutInput(i_name, i_input.com_object)
@@ -425,7 +413,6 @@ class ShapeInstance(Shape):
 
         :param str i_name:
         :param AnyObject i_input:
-        :return: None
         :rtype: None
         """
         return self.shape_instance.PutInputData(i_name, i_input.com_object)

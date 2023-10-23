@@ -74,7 +74,6 @@ class SFMEndcutManager(AnyObject):
 
         :param str i_section_family:
         :param str i_endcut_type:
-        :return: tuple
         :rtype: tuple
         """
         return self.sfm_endcut_manager.GetAvailableEndcuts(i_section_family, i_endcut_type)
@@ -146,7 +145,6 @@ class SFMEndcutManager(AnyObject):
         :param tuple o_list_of_context_names:
         :param SFMConnectionParameters o_list_end_cut_parameters:
         :param tuple o_list_of_end_cut_param_names:
-        :return: None
         :rtype: None
         """
         return self.sfm_endcut_manager.GetEndcutSpecifications(

@@ -51,7 +51,6 @@ class SchListOfObjects(AnyObject):
                 | 
                 |          NumberOfObjects = MyList.Count
 
-        :return: int
         :rtype: int
         """
 
@@ -81,7 +80,6 @@ class SchListOfObjects(AnyObject):
                 |          MyList.Append(MyObject)
 
         :param AnyObject i_object:
-        :return: None
         :rtype: None
         """
         return self.sch_list_of_objects.Append(i_object.com_object)
@@ -118,7 +116,6 @@ class SchListOfObjects(AnyObject):
 
         :param int i_index:
         :param str i_interface_name:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.sch_list_of_objects.Item(i_index, i_interface_name))
@@ -149,7 +146,6 @@ class SchListOfObjects(AnyObject):
                 |          MyList.Remove(1)
 
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.sch_list_of_objects.RemoveByIndex(i_index)

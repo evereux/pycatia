@@ -55,7 +55,6 @@ class AnalysisPostManager(AnyObject):
                 |             The Existing Analysis Case.
 
         :param AnalysisCase i_case:
-        :return: None
         :rtype: None
         """
         return self.analysis_post_manager.AddExistingCaseForReport(i_case.com_object)
@@ -102,7 +101,6 @@ class AnalysisPostManager(AnyObject):
         :param Folder i_folder:
         :param str i_title:
         :param cat_variant i_add_created_images:
-        :return: None
         :rtype: None
         """
         return self.analysis_post_manager.BuildReport(i_folder.com_object, i_title, i_add_created_images)
@@ -144,7 +142,6 @@ class AnalysisPostManager(AnyObject):
 
         :param Folder i_folder:
         :param str i_title:
-        :return: None
         :rtype: None
         """
         return self.analysis_post_manager.ExtractHTMLReport(i_folder.com_object, i_title)

@@ -61,7 +61,6 @@ class Parameter(AnyObject):
                 | 
                 |     Returns or sets the parameter object comment.
 
-        :return: str
         :rtype: str
         """
 
@@ -87,7 +86,6 @@ class Parameter(AnyObject):
                 |     Returns the context of the parameter : a part, a product, a drafting, a process, depending where
                 |     the parameter is.
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -104,7 +102,6 @@ class Parameter(AnyObject):
                 | 
                 |     Returns or sets whether the parameter is hidden or should be hidden or not.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -130,7 +127,6 @@ class Parameter(AnyObject):
                 |     Returns a boolean saying if the parameter is a true one (real, dimension,
                 |     string, etc.) or a geometrical one (isolated points, curves, surfaces).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -159,7 +155,6 @@ class Parameter(AnyObject):
                 |               MsgBox "No relation to compute param1"
                 |          End If
 
-        :return: Relation
         :rtype: Relation
         """
 
@@ -184,7 +179,6 @@ class Parameter(AnyObject):
                 |               MsgBox "No way to change param1"
                 |          End If
 
-        :return: bool
         :rtype: bool
         """
 
@@ -201,7 +195,6 @@ class Parameter(AnyObject):
                 | 
                 |     Returns a boolean saying if the parameter is a renamed parameter or not.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -283,7 +276,6 @@ class Parameter(AnyObject):
                 |     Copyright © 1999-2011, Dassault Systèmes. All rights
                 |     reserved.
 
-        :return: int
         :rtype: int
         """
 
@@ -313,7 +305,6 @@ class Parameter(AnyObject):
                 |          Call param1.Rename("PartSeatbodyMinimumThickness")
 
         :param str i_name:
-        :return: None
         :rtype: None
         """
         return self.parameter.Rename(i_name)
@@ -347,7 +338,6 @@ class Parameter(AnyObject):
                 |          dimension.ValuateFromString("300mm");
 
         :param str i_value:
-        :return: None
         :rtype: None
         """
         return self.parameter.ValuateFromString(i_value)
@@ -374,7 +364,6 @@ class Parameter(AnyObject):
                 |     Copyright © 1999-2011, Dassault Systèmes. All rights
                 |     reserved.
 
-        :return: str
         :rtype: str
         """
         return self.parameter.ValueAsString()

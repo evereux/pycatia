@@ -78,7 +78,6 @@ class ArrangementRectangles(Collection):
         :param tuple i_position:
         :param float i_width:
         :param float i_length:
-        :return: ArrangementRectangle
         :rtype: ArrangementRectangle
         """
         return ArrangementRectangle(
@@ -113,7 +112,6 @@ class ArrangementRectangles(Collection):
                 |         The retrieved ArrangementRectangle object.
 
         :param cat_variant i_index:
-        :return: ArrangementRectangle
         :rtype: ArrangementRectangle
         """
         return ArrangementRectangle(self.arrangement_rectangles.Item(i_index))
@@ -145,7 +143,6 @@ class ArrangementRectangles(Collection):
                 |         AnyObject.Name property.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.arrangement_rectangles.Remove(i_index)

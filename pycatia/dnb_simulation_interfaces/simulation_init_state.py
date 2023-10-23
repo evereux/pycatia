@@ -73,7 +73,6 @@ class SimulationInitState(AnyObject):
                 |             The restore operation failed
 
         :param int i_attr_mask:
-        :return: None
         :rtype: None
         """
         return self.simulation_init_state.RestoreInitialState(i_attr_mask)
@@ -110,7 +109,6 @@ class SimulationInitState(AnyObject):
 
         :param tuple i_product_lists:
         :param int i_attr_mask:
-        :return: None
         :rtype: None
         """
         return self.simulation_init_state.RestoreInitialStateList(i_product_lists, i_attr_mask)
@@ -156,7 +154,6 @@ class SimulationInitState(AnyObject):
                 |             The save operation failed
 
         :param int i_attr_mask:
-        :return: None
         :rtype: None
         """
         return self.simulation_init_state.SaveInitialState(i_attr_mask)
@@ -193,7 +190,6 @@ class SimulationInitState(AnyObject):
 
         :param tuple i_product_lists:
         :param int i_attr_mask:
-        :return: None
         :rtype: None
         """
         return self.simulation_init_state.SaveInitialStateList(i_product_lists, i_attr_mask)

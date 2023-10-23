@@ -54,7 +54,6 @@ class Dimension(RealParam):
                 | 
                 |     Returns the unit used for this dimension object.
 
-        :return: Unit
         :rtype: Unit
         """
 
@@ -91,7 +90,6 @@ class Dimension(RealParam):
 
         :param int i_nb_decimals:
         :param bool i_show_trailing_zeros:
-        :return: str
         :rtype: str
         """
         return self.dimension.ValueAsString2(i_nb_decimals, i_show_trailing_zeros)

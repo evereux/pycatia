@@ -64,7 +64,6 @@ class HybridShapeSection(HybridShape):
                 |                  Dim RefPlane As Reference 
                 |                  Set RefPlane = HybridShapeSection.SectionPlane
 
-        :return: Reference
         :rtype: Reference
         """
 

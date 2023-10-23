@@ -60,7 +60,6 @@ class SchAppScalingRule(AnyObject):
                 |          objThisIntf.AppGetScalingPriorityintVar1
 
         :param int o_priority:
-        :return: None
         :rtype: None
         """
         return self.sch_app_scaling_rule.AppGetScalingPriority(o_priority)

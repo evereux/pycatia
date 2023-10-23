@@ -66,7 +66,6 @@ class ArrangementNodes(Collection):
                 |         The retrieved ArrangementNode object.
 
         :param cat_variant i_index:
-        :return: ArrangementNode
         :rtype: ArrangementNode
         """
         return ArrangementNode(self.arrangement_nodes.Item(i_index))

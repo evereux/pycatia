@@ -75,7 +75,6 @@ class Annotation2(AnyObject):
                 |             "FTA_Form" "FTA_Dimension" "FTA_Position" "FTA_Datum" "FTA_Orientation"
                 |             "FTA_RunOut"
 
-        :return: str
         :rtype: str
         """
 
@@ -97,7 +96,6 @@ class Annotation2(AnyObject):
                 |         oStatus
                 |             The Status.
 
-        :return: str
         :rtype: str
         """
 
@@ -119,7 +117,6 @@ class Annotation2(AnyObject):
                 |         oType
                 |             The Type. List of types available ordered by SuperType: SuperType = "FTA_NonSemantic" Type = "FTA_Text" Type = "FTA_FlagNote" Type = "FTA_Roughness" Type = "FTA_Weld" Type = "FTA_Noa" Type = "FTA_NonSemanticDatum" Type = "FTA_NonSemanticTarget" Type = "FTA_NonSemanticGDT" Type = "FTA_NonSemanticDimension" SuperType = "FTA_Form" Type = "FTA_Flatness" Type = "FTA_Straightness" Type = "FTA_Circularity" Type = "FTA_Cylindricity" Type = "FTA_ProfileOfAnyLine" Type = "FTA_ProfileOfASurface" Type = "FTA_PatternTruePos" SuperType = "FTA_Dimension" Type = "FTA_LinearDimension" Type = "FTA_AngularDimension" Type = "FTA_SecondLinearDimension" Type = "FTA_ChamferDimension" Type = "FTA_BasicDimension" SuperType = "FTA_Position" Type = "FTA_TruePosition" Type = "FTA_Concentricity" Type = "FTA_Symmetry" Type = "FTA_PositionOfAnyLine" Type = "FTA_PositionOfASurface" SuperType = "FTA_Datum" Type = "FTA_DatumSimple" Type = "FTA_DatumTarget" Type = "FTA_DatumSystem" Type = "FTA_ReferenceFrame" SuperType = "FTA_Orientation" Type = "FTA_Parallelism" Type = "FTA_Perpendicularity" Type = "FTA_Angularity" SuperType = "FTA_RunOut" Type = "FTA_TotalRunOut" Type = "FTA_CircularRunOut"
 
-        :return: str
         :rtype: str
         """
 
@@ -142,7 +139,6 @@ class Annotation2(AnyObject):
                 |         iZ
                 |             The offset.
 
-        :return: float
         :rtype: float
         """
 
@@ -166,7 +162,6 @@ class Annotation2(AnyObject):
                 | 
                 |     Add a leader.
 
-        :return: None
         :rtype: None
         """
         return self.annotation_2.AddLeader()
@@ -181,7 +176,6 @@ class Annotation2(AnyObject):
                 | 
                 |     Gets the annotation on the DatumSimple interface.
 
-        :return: DatumSimple
         :rtype: DatumSimple
         """
 
@@ -197,7 +191,6 @@ class Annotation2(AnyObject):
                 | 
                 |     Gets the annotation on the DatumTarget interface.
 
-        :return: DatumTarget
         :rtype: DatumTarget
         """
 
@@ -213,7 +206,6 @@ class Annotation2(AnyObject):
                 | 
                 |     Gets the annotation on the DefaultAnnotation interface.
 
-        :return: DefaultAnnotation
         :rtype: DefaultAnnotation
         """
 
@@ -234,7 +226,6 @@ class Annotation2(AnyObject):
                 |         oDim
                 |             The 3D Dimension.
 
-        :return: Dimension3D
         :rtype: Dimension3D
         """
 
@@ -255,7 +246,6 @@ class Annotation2(AnyObject):
                 |         oFlagNote
                 |             The annotation Flag Note.
 
-        :return: FlagNote
         :rtype: FlagNote
         """
         return FlagNote(self.annotation_2.FlagNote())
@@ -271,7 +261,6 @@ class Annotation2(AnyObject):
                 |     Gets the geometry on which the Annotation is applied to.
 
         :param tuple o_safe_array:
-        :return: None
         :rtype: None
         """
         return self.annotation_2.GetSurfaces(o_safe_array)
@@ -301,7 +290,6 @@ class Annotation2(AnyObject):
                 | 
                 |     Counts the geometry on which the Annotation is applied to.
 
-        :return: int
         :rtype: int
         """
         return self.annotation_2.GetSurfacesCount()
@@ -317,7 +305,6 @@ class Annotation2(AnyObject):
                 |     Checks if the Annotation uses a visualization dimension for its attachment
                 |     to the geometry.
 
-        :return: bool
         :rtype: bool
         """
         return self.annotation_2.HasAVisualizationDimension()
@@ -332,7 +319,6 @@ class Annotation2(AnyObject):
                 | 
                 |     To know if the Annotation is a Default Annotation.
 
-        :return: bool
         :rtype: bool
         """
         return self.annotation_2.IsADefaultAnnotation()
@@ -347,7 +333,6 @@ class Annotation2(AnyObject):
                 | 
                 |     To refresh the 3D visualization.
 
-        :return: None
         :rtype: None
         """
         return self.annotation_2.ModifyVisu()
@@ -362,7 +347,6 @@ class Annotation2(AnyObject):
                 | 
                 |     Gets the annotation on the Noa interface.
 
-        :return: Noa
         :rtype: Noa
         """
 
@@ -378,7 +362,6 @@ class Annotation2(AnyObject):
                 | 
                 |     Gets the annotation on the DatumSimple interface.
 
-        :return: NonSemanticDatum
         :rtype: NonSemanticDatum
         """
         return NonSemanticDatum(self.annotation_2.NonSemanticDatum())
@@ -393,7 +376,6 @@ class Annotation2(AnyObject):
                 | 
                 |     Gets the annotation on the DatumSimple interface.
 
-        :return: NonSemanticDatumTarget
         :rtype: NonSemanticDatumTarget
         """
 
@@ -409,7 +391,6 @@ class Annotation2(AnyObject):
                 | 
                 |     Gets the annotation on the DatumSimple interface.
 
-        :return: NonSemanticDimension
         :rtype: NonSemanticDimension
         """
         return NonSemanticDimension(self.annotation_2.NonSemanticDimension())
@@ -424,7 +405,6 @@ class Annotation2(AnyObject):
                 | 
                 |     Gets the annotation on the DatumSimple interface.
 
-        :return: NonSemanticGDT
         :rtype: NonSemanticGDT
         """
 
@@ -440,7 +420,6 @@ class Annotation2(AnyObject):
                 | 
                 |     Gets the annotation on the ReferenceFrame interface.
 
-        :return: ReferenceFrame
         :rtype: ReferenceFrame
         """
         from pycatia.cat_tps_interfaces.reference_frame import ReferenceFrame
@@ -456,7 +435,6 @@ class Annotation2(AnyObject):
                 | 
                 |     Gets the annotation on the Roughness interface.
 
-        :return: Roughness
         :rtype: Roughness
         """
 
@@ -472,7 +450,6 @@ class Annotation2(AnyObject):
                 | 
                 |     Gets the annotation on the DatumSimple interface.
 
-        :return: SemanticGDT
         :rtype: SemanticGDT
         """
         return SemanticGDT(self.annotation_2.SemanticGDT())
@@ -498,7 +475,6 @@ class Annotation2(AnyObject):
 
         :param float i_x:
         :param float i_y:
-        :return: None
         :rtype: None
         """
         return self.annotation_2.SetXY(i_x, i_y)
@@ -518,7 +494,6 @@ class Annotation2(AnyObject):
                 |         oText
                 |             The annotation Text.
 
-        :return: Text
         :rtype: Text
         """
         return Text(self.annotation_2.Text())
@@ -539,7 +514,6 @@ class Annotation2(AnyObject):
                 |             The destination view.
 
         :param TPSView i_view:
-        :return: None
         :rtype: None
         """
         return self.annotation_2.TransfertToView(i_view.com_object)
@@ -576,7 +550,6 @@ class Annotation2(AnyObject):
                 |             The visualization Dimension oDim employed by the annotation to
                 |             display its link to the geometry.
 
-        :return: Dimension3D
         :rtype: Dimension3D
         """
         return Dimension3D(self.annotation_2.VisualizationDimension())
@@ -591,7 +564,6 @@ class Annotation2(AnyObject):
                 | 
                 |     Gets the annotation on the Weld interface.
 
-        :return: Weld
         :rtype: Weld
         """
 

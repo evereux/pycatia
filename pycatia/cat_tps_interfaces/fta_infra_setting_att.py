@@ -104,7 +104,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     and graduations are the same horizontally and vertically (no distorsion) or not
                 |     (distorsions enabled).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -133,7 +132,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     Role: The Grid Display setting parameter displays a grid on the active
                 |     view.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -161,7 +159,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     Role: The Grid Primary Spacing setting parameter defines the horizontal
                 |     spacing on the grid, expressed in millimiters. The default value is 100mm.
 
-        :return: float
         :rtype: float
         """
 
@@ -189,7 +186,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     Role: The Grid Secondary Step setting parameter defines the grid's
                 |     horizontal graduations. The default value is 10.
 
-        :return: int
         :rtype: int
         """
 
@@ -218,7 +214,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     the annotation to be snapped to the nearest grid point. Otherwise, the gris is
                 |     not used to anchor the annotation.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -250,7 +245,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     parameter thanks to the GridPrimarySpacing for horizontal spacing is taken into
                 |     account.
 
-        :return: float
         :rtype: float
         """
 
@@ -282,7 +276,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     GridSecondaryStep for the number of horizontal graduations is taken into
                 |     account.
 
-        :return: int
         :rtype: int
         """
 
@@ -310,7 +303,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     Role: The Leader Associativity setting parameter defines the associativity
                 |     of a leader with the pointed geometrical element.
 
-        :return: int
         :rtype: int
         """
 
@@ -339,7 +331,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     the manipulator attached to the end of an annotation leader. The default value
                 |     is 2mm.
 
-        :return: float
         :rtype: float
         """
 
@@ -368,7 +359,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     thus enables the annotation leader end manipulator to be zoomable. Otherwise,
                 |     it is not zoomable.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -399,7 +389,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     geometry and the annotation's plane. Otherwise, the annotation leader end
                 |     manipulator cannot be moved.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -427,7 +416,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     Role: When set to True, the FT&A 3D Annotation representations are saved in
                 |     CGR. Otherwise, they are not saved.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -462,7 +450,6 @@ class FtaInfraSettingAtt(SettingController):
                 |         JIS: Japanese Industrial Standard
                 |         ISO: International Organization for Standardization
 
-        :return: str
         :rtype: str
         """
 
@@ -492,7 +479,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     lets you view 3D annotations under the Part Design or Generative Shape Design
                 |     feature nodes to which they are applied.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -523,7 +509,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     View/Annotation Plane Nodes setting parameter managed by UnderView is set to
                 |     True.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -553,7 +538,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     nodes in the specification tree. This lets you view 3D annotations under the
                 |     view node to which they are linked.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -586,7 +570,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     geometry, any modification applied to the geometry or to the axis system is
                 |     reflected in the view definition.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -613,7 +596,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     True if the View Profile setting parameter is checked and thus enables the
                 |     view/annotation plane profile on the part/product to be displayed.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -641,7 +623,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     True if the View Referential setting parameter is checked and thus enables
                 |     the display of the active annotation plane axis system.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -669,7 +650,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     True if the View Referential Zoomable setting parameter is checked and thus
                 |     enables the annotation plane axis to be zoomable.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -698,7 +678,6 @@ class FtaInfraSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_infra_setting_att.GetAllowDistortionsInfo(admin_level, o_locked)
@@ -718,7 +697,6 @@ class FtaInfraSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_infra_setting_att.GetGridDisplayInfo(admin_level, o_locked)
@@ -738,7 +716,6 @@ class FtaInfraSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_infra_setting_att.GetGridPrimarySpacingInfo(admin_level, o_locked)
@@ -758,7 +735,6 @@ class FtaInfraSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_infra_setting_att.GetGridSecondaryStepInfo(admin_level, o_locked)
@@ -778,7 +754,6 @@ class FtaInfraSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_infra_setting_att.GetGridSnapPointInfo(admin_level, o_locked)
@@ -798,7 +773,6 @@ class FtaInfraSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_infra_setting_att.GetGridVPrimarySpacingInfo(admin_level, o_locked)
@@ -818,7 +792,6 @@ class FtaInfraSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_infra_setting_att.GetGridVSecondaryStepInfo(admin_level, o_locked)
@@ -838,7 +811,6 @@ class FtaInfraSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_infra_setting_att.GetLeaderAssociativityInfo(admin_level, o_locked)
@@ -858,7 +830,6 @@ class FtaInfraSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_infra_setting_att.GetManRefSizInfo(admin_level, o_locked)
@@ -878,7 +849,6 @@ class FtaInfraSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_infra_setting_att.GetManZooCapInfo(admin_level, o_locked)
@@ -898,7 +868,6 @@ class FtaInfraSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_infra_setting_att.GetMoveAfterCreationInfo(admin_level, o_locked)
@@ -918,7 +887,6 @@ class FtaInfraSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_infra_setting_att.GetSaveInCGRInfo(admin_level, o_locked)
@@ -938,7 +906,6 @@ class FtaInfraSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_infra_setting_att.GetStandardInfo(admin_level, o_locked)
@@ -958,7 +925,6 @@ class FtaInfraSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_infra_setting_att.GetUnderFeatureInfo(admin_level, o_locked)
@@ -978,7 +944,6 @@ class FtaInfraSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_infra_setting_att.GetUnderSetInfo(admin_level, o_locked)
@@ -998,7 +963,6 @@ class FtaInfraSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_infra_setting_att.GetUnderViewInfo(admin_level, o_locked)
@@ -1018,7 +982,6 @@ class FtaInfraSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_infra_setting_att.GetViewAssociativityInfo(admin_level, o_locked)
@@ -1038,7 +1001,6 @@ class FtaInfraSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_infra_setting_att.GetViewProfileInfo(admin_level, o_locked)
@@ -1058,7 +1020,6 @@ class FtaInfraSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_infra_setting_att.GetViewReferentialInfo(admin_level, o_locked)
@@ -1078,7 +1039,6 @@ class FtaInfraSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fta_infra_setting_att.GetViewReferentialZoomableInfo(admin_level, o_locked)
@@ -1096,7 +1056,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_infra_setting_att.SetAllowDistortionsLock(i_locked)
@@ -1128,7 +1087,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_infra_setting_att.SetGridDisplayLock(i_locked)
@@ -1161,7 +1119,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_infra_setting_att.SetGridPrimarySpacingLock(i_locked)
@@ -1194,7 +1151,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_infra_setting_att.SetGridSecondaryStepLock(i_locked)
@@ -1227,7 +1183,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_infra_setting_att.SetGridSnapPointLock(i_locked)
@@ -1260,7 +1215,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_infra_setting_att.SetGridVPrimarySpacingLock(i_locked)
@@ -1293,7 +1247,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_infra_setting_att.SetGridVSecondaryStepLock(i_locked)
@@ -1326,7 +1279,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_infra_setting_att.SetLeaderAssociativityLock(i_locked)
@@ -1359,7 +1311,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_infra_setting_att.SetManRefSizLock(i_locked)
@@ -1392,7 +1343,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_infra_setting_att.SetManZooCapLock(i_locked)
@@ -1425,7 +1375,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_infra_setting_att.SetMoveAfterCreationLock(i_locked)
@@ -1457,7 +1406,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_infra_setting_att.SetSaveInCGRLock(i_locked)
@@ -1490,7 +1438,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_infra_setting_att.SetStandardLock(i_locked)
@@ -1523,7 +1470,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_infra_setting_att.SetUnderFeatureLock(i_locked)
@@ -1556,7 +1502,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_infra_setting_att.SetUnderSetLock(i_locked)
@@ -1589,7 +1534,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_infra_setting_att.SetUnderViewLock(i_locked)
@@ -1622,7 +1566,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_infra_setting_att.SetViewAssociativityLock(i_locked)
@@ -1654,7 +1597,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_infra_setting_att.SetViewProfileLock(i_locked)
@@ -1687,7 +1629,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_infra_setting_att.SetViewReferentialLock(i_locked)
@@ -1720,7 +1661,6 @@ class FtaInfraSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fta_infra_setting_att.SetViewReferentialZoomableLock(i_locked)

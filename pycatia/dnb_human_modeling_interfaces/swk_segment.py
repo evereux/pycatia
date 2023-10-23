@@ -48,7 +48,6 @@ class SWKSegment(SWKBodyElement):
                 |     Returns the number of objects currently attached to the
                 |     segment.
 
-        :return: int
         :rtype: int
         """
 
@@ -66,7 +65,6 @@ class SWKSegment(SWKBodyElement):
                 |     Returns the global x coordinate of the endpoint of the
                 |     segment.
 
-        :return: float
         :rtype: float
         """
 
@@ -84,7 +82,6 @@ class SWKSegment(SWKBodyElement):
                 |     Returns the global y coordinate of the endpoint of the
                 |     segment.
 
-        :return: float
         :rtype: float
         """
 
@@ -102,7 +99,6 @@ class SWKSegment(SWKBodyElement):
                 |     Returns the global z coordinate of the endpoint of the
                 |     segment.
 
-        :return: float
         :rtype: float
         """
 
@@ -119,7 +115,6 @@ class SWKSegment(SWKBodyElement):
                 | 
                 |     Returns True if there is a DOF at index 0, False otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -136,7 +131,6 @@ class SWKSegment(SWKBodyElement):
                 | 
                 |     Returns True if there is a DOF at index 1, False otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -153,7 +147,6 @@ class SWKSegment(SWKBodyElement):
                 | 
                 |     Returns True if there is a DOF at index 2, False otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -170,7 +163,6 @@ class SWKSegment(SWKBodyElement):
                 | 
                 |     This property is True if this segment belongs to the manikin's hand.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -187,7 +179,6 @@ class SWKSegment(SWKBodyElement):
                 | 
                 |     This property is True if this segment is on the left side of the manikin.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -204,7 +195,6 @@ class SWKSegment(SWKBodyElement):
                 | 
                 |     This property is True if this segment is on the right side of the manikin.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -221,7 +211,6 @@ class SWKSegment(SWKBodyElement):
                 | 
                 |     This property is True if this segment belongs to the manikin's spine.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -238,7 +227,6 @@ class SWKSegment(SWKBodyElement):
                 | 
                 |     Returns the length of the segment, in centimeters.
 
-        :return: float
         :rtype: float
         """
 
@@ -256,7 +244,6 @@ class SWKSegment(SWKBodyElement):
                 |     This property returns the equivalent segment, but on the opposite side
                 |     (ex.: right leg <-> left leg).
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -275,7 +262,6 @@ class SWKSegment(SWKBodyElement):
                 |     Each segment can have up to three degrees of freedom.
                 |     Therefore the value of this property will never be higher than 3.
 
-        :return: int
         :rtype: int
         """
 
@@ -337,7 +323,6 @@ class SWKSegment(SWKBodyElement):
 
         :param tuple pi_position_increment:
         :param str pi_start_segment:
-        :return: None
         :rtype: None
         """
         return self.swk_segment.ApplyPosition(pi_position_increment, pi_start_segment)
@@ -375,7 +360,6 @@ class SWKSegment(SWKBodyElement):
                 |             time the segment moves.
 
         :param AnyObject pi_object_to_attach:
-        :return: None
         :rtype: None
         """
         return self.swk_segment.Attach(pi_object_to_attach.com_object)
@@ -394,7 +378,6 @@ class SWKSegment(SWKBodyElement):
                 |     Property IsOnHand can be used to check whether the segment is located on
                 |     the hand.
 
-        :return: None
         :rtype: None
         """
         return self.swk_segment.CreateReachEnvelope()
@@ -410,7 +393,6 @@ class SWKSegment(SWKBodyElement):
                 |     This method destroys the reach envelope previously created for this
                 |     segment.
 
-        :return: None
         :rtype: None
         """
         return self.swk_segment.DestroyReachEnvelope()
@@ -432,7 +414,6 @@ class SWKSegment(SWKBodyElement):
                 |             segment's position.
 
         :param AnyObject pi_object_to_detach:
-        :return: None
         :rtype: None
         """
         return self.swk_segment.Detach(pi_object_to_detach.com_object)
@@ -447,7 +428,6 @@ class SWKSegment(SWKBodyElement):
                 | 
                 |     Detach all objects attached so far to the segment.
 
-        :return: None
         :rtype: None
         """
         return self.swk_segment.DetachAll()
@@ -469,7 +449,6 @@ class SWKSegment(SWKBodyElement):
                 |             index 0.
 
         :param int pi_index:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.swk_segment.GetAttachedObject(pi_index))
@@ -504,7 +483,6 @@ class SWKSegment(SWKBodyElement):
                 |             This parameter must be either 0, 1 or 2.
 
         :param int pi_dof_number:
-        :return: SWKDOF
         :rtype: SWKDOF
         """
         return SWKDOF(self.swk_segment.GetDOF(pi_dof_number))
@@ -521,7 +499,6 @@ class SWKSegment(SWKBodyElement):
                 |         The IK offset for this segment.
 
         :param tuple po_offset:
-        :return: None
         :rtype: None
         """
         return self.swk_segment.GetIKOffset(po_offset)
@@ -553,7 +530,6 @@ class SWKSegment(SWKBodyElement):
                 |         The position used for IK on this segment.
 
         :param tuple po_ik_position:
-        :return: None
         :rtype: None
         """
         return self.swk_segment.GetIKPosition(po_ik_position)
@@ -586,7 +562,6 @@ class SWKSegment(SWKBodyElement):
                 |         false otherwise.
 
         :param AnyObject pi_object:
-        :return: bool
         :rtype: bool
         """
         return self.swk_segment.IsAttached(pi_object.com_object)
@@ -606,7 +581,6 @@ class SWKSegment(SWKBodyElement):
                 |         The position taken is that of the center of the object.
 
         :param AnyObject pi_object:
-        :return: bool
         :rtype: bool
         """
         return self.swk_segment.IsObjectReachable(pi_object.com_object)
@@ -630,7 +604,6 @@ class SWKSegment(SWKBodyElement):
         :param float pi_x:
         :param float pi_y:
         :param float pi_z:
-        :return: bool
         :rtype: bool
         """
         return self.swk_segment.IsReachable(pi_x, pi_y, pi_z)
@@ -646,7 +619,6 @@ class SWKSegment(SWKBodyElement):
                 |     Lock the posture of the segment.
 
         :param int pi_dof_id:
-        :return: None
         :rtype: None
         """
         return self.swk_segment.LockPosture(pi_dof_id)
@@ -662,7 +634,6 @@ class SWKSegment(SWKBodyElement):
                 |     Mirror copy the angular limitations of the segment.
 
         :param int pi_dof_id:
-        :return: None
         :rtype: None
         """
         return self.swk_segment.MirrorCopyAngularLimitations(pi_dof_id)
@@ -679,7 +650,6 @@ class SWKSegment(SWKBodyElement):
                 |     manikin. For instance, it copies the posture from the right leg to the left
                 |     leg.
 
-        :return: None
         :rtype: None
         """
         return self.swk_segment.MirrorCopyPosture()
@@ -695,7 +665,6 @@ class SWKSegment(SWKBodyElement):
                 |     Mirror copy the preferred angles of the segment.
 
         :param int pi_dof_id:
-        :return: None
         :rtype: None
         """
         return self.swk_segment.MirrorCopyPrefAngles(pi_dof_id)
@@ -711,7 +680,6 @@ class SWKSegment(SWKBodyElement):
                 |     Sets the limits to match the best PrefAngle for the DOF piDOFId
 
         :param int pi_dof_id:
-        :return: None
         :rtype: None
         """
         return self.swk_segment.Optimize(pi_dof_id)
@@ -727,7 +695,6 @@ class SWKSegment(SWKBodyElement):
                 |     Removes the angular limitations of the segment.
 
         :param int pi_dof_id:
-        :return: None
         :rtype: None
         """
         return self.swk_segment.RemoveLimits(pi_dof_id)
@@ -748,7 +715,6 @@ class SWKSegment(SWKBodyElement):
 
         :param int pi_dof_id:
         :param int pi_reset:
-        :return: None
         :rtype: None
         """
         return self.swk_segment.ResetAngularLimitations(pi_dof_id, pi_reset)
@@ -763,7 +729,6 @@ class SWKSegment(SWKBodyElement):
                 | 
                 |     Set the segment's posture back to its default position.
 
-        :return: None
         :rtype: None
         """
         return self.swk_segment.ResetPosture()
@@ -779,7 +744,6 @@ class SWKSegment(SWKBodyElement):
                 |     Reset the preferred angles of the segment.
 
         :param int pi_dof_id:
-        :return: None
         :rtype: None
         """
         return self.swk_segment.ResetPrefAngles(pi_dof_id)
@@ -797,7 +761,6 @@ class SWKSegment(SWKBodyElement):
 
         :param float pi_percentage:
         :param int pi_dof_id:
-        :return: None
         :rtype: None
         """
         return self.swk_segment.SetPercentage(pi_percentage, pi_dof_id)
@@ -856,7 +819,6 @@ class SWKSegment(SWKBodyElement):
 
         :param tuple pi_new_position:
         :param str pi_start_segment:
-        :return: None
         :rtype: None
         """
         return self.swk_segment.SetPosition(pi_new_position, pi_start_segment)
@@ -887,7 +849,6 @@ class SWKSegment(SWKBodyElement):
                 |     Swap the angular limitations of the segment.
 
         :param int pi_dof_id:
-        :return: None
         :rtype: None
         """
         return self.swk_segment.SwapAngularLimitations(pi_dof_id)
@@ -904,7 +865,6 @@ class SWKSegment(SWKBodyElement):
                 |     manikin. For instance, the right leg takes the posture of the left leg, and
                 |     vice versa.
 
-        :return: None
         :rtype: None
         """
         return self.swk_segment.SwapPosture()
@@ -920,7 +880,6 @@ class SWKSegment(SWKBodyElement):
                 |     Swap the preferred angles of the segment.
 
         :param int pi_dof_id:
-        :return: None
         :rtype: None
         """
         return self.swk_segment.SwapPrefAngles(pi_dof_id)

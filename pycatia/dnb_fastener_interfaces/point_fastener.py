@@ -55,7 +55,6 @@ class PointFastener(Fastener):
                 |     Dim DesignPos() ReDim DesignPos(5) MyFastener.GetDesignXYZYPR(DesignPos)
 
         :param tuple io_xyzypr:
-        :return: None
         :rtype: None
         """
         return self.point_fastener.GetDesignXYZYPR(io_xyzypr)
@@ -88,7 +87,6 @@ class PointFastener(Fastener):
                 | Example:
                 |     MyTag = MyFastener.GetTag()
 
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.point_fastener.GetTag()
@@ -112,7 +110,6 @@ class PointFastener(Fastener):
                 |     reserved.
 
         :param bool i_val:
-        :return: None
         :rtype: None
         """
         return self.point_fastener.ResetPosition(i_val)

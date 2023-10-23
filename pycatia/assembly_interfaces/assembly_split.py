@@ -55,7 +55,6 @@ class AssemblySplit(AssemblyFeature):
                 |          Dim sptComponent As Product
                 |          Set sptComponent = assemblySplit.SplittingComponent
 
-        :return: Product
         :rtype: Product
         """
 
@@ -79,7 +78,6 @@ class AssemblySplit(AssemblyFeature):
                 |          Dim sptElement As Reference
                 |          Set sptElement = assemblySplit.SplittingElement
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -107,7 +105,6 @@ class AssemblySplit(AssemblyFeature):
                 |          Set sptSide = assemblySplit.SplittingSide
                 |          assemblySplit.SplittingSide = catPositiveSide
 
-        :return: int
         :rtype: int
         """
 
@@ -151,7 +148,6 @@ class AssemblySplit(AssemblyFeature):
 
         :param Reference i_splitting_element:
         :param Product i_splitting_elem_comp:
-        :return: None
         :rtype: None
         """
         return self.assembly_split.ModifySplittingElement(

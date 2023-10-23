@@ -63,7 +63,6 @@ class GrabAct(Activity):
                 |         iGrabbingObject
                 |             The specified grabbing object
 
-        :return: Product
         :rtype: Product
         """
 
@@ -95,7 +94,6 @@ class GrabAct(Activity):
                 |             The specified grabbed objects
 
         :param tuple o_grabbed_objects:
-        :return: None
         :rtype: None
         """
         return self.grab_act.GetGrabbedObjects(o_grabbed_objects)
@@ -124,7 +122,6 @@ class GrabAct(Activity):
                 | o Sub PutGrabbedObjects(CATSafeArrayVariant iGrabbedObjects)
 
         :param tuple i_grabbed_objects:
-        :return: None
         :rtype: None
         """
         return self.grab_act.PutGrabbedObjects(i_grabbed_objects)

@@ -69,7 +69,6 @@ class SFMWelds(Collection):
                 |              Next
 
         :param cat_variant i_index:
-        :return: SFMWeld
         :rtype: SFMWeld
         """
         return SFMWeld(self.sfm_welds.Item(i_index))

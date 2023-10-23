@@ -47,7 +47,6 @@ class ControlledRadius(AnyObject):
                 | 
                 |     Retrieves Controled Radius modifier.
 
-        :return: str
         :rtype: str
         """
 

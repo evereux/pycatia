@@ -68,7 +68,6 @@ class HybridShapeIntersection(HybridShape):
                 |          Dim FirstElem As Reference
                 |          Set FirstElem = Intersection.Element1
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -102,7 +101,6 @@ class HybridShapeIntersection(HybridShape):
                 |          Dim SecondElem As Reference
                 |          Set SecondElem = Intersection.Element2
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -144,7 +142,6 @@ class HybridShapeIntersection(HybridShape):
                 |          ExtendMode is 3 when both "Extend Linear Supposr for intersection" are
                 |          checked
 
-        :return: int
         :rtype: int
         """
 
@@ -176,7 +173,6 @@ class HybridShapeIntersection(HybridShape):
                 |          Dim ExtrapolateMode As Reference
                 |          Set ExtrapolateMode = Intersection.ExtrapolateMode
 
-        :return: bool
         :rtype: bool
         """
 
@@ -208,7 +204,6 @@ class HybridShapeIntersection(HybridShape):
                 |          Dim IntersectMode As Reference
                 |          Set IntersectMode = Intersection.IntersectMode
 
-        :return: bool
         :rtype: bool
         """
 
@@ -240,7 +235,6 @@ class HybridShapeIntersection(HybridShape):
                 |          Dim PointType As Reference
                 |          Set PointType = Intersection.PointType
 
-        :return: int
         :rtype: int
         """
 
@@ -272,7 +266,6 @@ class HybridShapeIntersection(HybridShape):
                 |          Dim SolidMode As Reference
                 |          Set SolidMode = Intersection.SolidMode
 
-        :return: bool
         :rtype: bool
         """
 

@@ -57,7 +57,6 @@ class PPRProducts(Collection):
                 |         The added Product.
 
         :param Product i_product:
-        :return: Product
         :rtype: Product
         """
         return Product(self.ppr_products.Add(i_product.com_object))
@@ -82,7 +81,6 @@ class PPRProducts(Collection):
                 |         The retrieved Product corresponding to the specified index.
 
         :param cat_variant i_index:
-        :return: Product
         :rtype: Product
         """
         return Product(self.ppr_products.Item(i_index))

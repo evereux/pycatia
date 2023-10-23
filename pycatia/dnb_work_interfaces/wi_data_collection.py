@@ -54,7 +54,6 @@ class WIDataCollection(WIText):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: tuple
         :rtype: tuple
         """
         return self.wi_data_collection.GetParametersList()
@@ -82,7 +81,6 @@ class WIDataCollection(WIText):
                 |         E_FAIL: on failure
 
         :param tuple i_list_of_parameters:
-        :return: None
         :rtype: None
         """
         return self.wi_data_collection.SetParametersList(i_list_of_parameters)

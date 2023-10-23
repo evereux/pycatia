@@ -64,7 +64,6 @@ class EhsUpdateSmoothnessFactor(AnyObject):
                 |             .
 
         :param int i_smoothness_factor:
-        :return: None
         :rtype: None
         """
         return self.ehs_update_smoothness_factor.UpdateBundleSmoothness(i_smoothness_factor)

@@ -57,7 +57,6 @@ class SceneProductData(AnyObject):
                 |
                 |             IsActivated = scenePrd.Hidden
 
-        :return: bool
         :rtype: bool
         """
 
@@ -89,7 +88,6 @@ class SceneProductData(AnyObject):
                 |
                 |             IsHidden = scenePrd.Hidden
 
-        :return: bool
         :rtype: bool
         """
 
@@ -125,7 +123,6 @@ class SceneProductData(AnyObject):
                 |             Dim EngineMove As Move
                 |             Set EngineMove = scenePrd.GetMove
 
-        :return: Move
         :rtype: Move
         """
 
@@ -153,7 +150,6 @@ class SceneProductData(AnyObject):
                 |             Dim EnginePosition As Position
                 |             Set EnginePosition = scenePrd.GetPosition
 
-        :return: Position
         :rtype: Position
         """
 
@@ -200,7 +196,6 @@ class SceneProductData(AnyObject):
         :param int o_green:
         :param int o_blue:
         :param int o_inheritance:
-        :return: None
         :rtype: None
         """
         return self.scene_product_data.GetRealColor(o_red, o_green, o_blue, o_inheritance)
@@ -238,7 +233,6 @@ class SceneProductData(AnyObject):
 
         :param int o_transparency:
         :param int o_inheritance:
-        :return: None
         :rtype: None
         """
         return self.scene_product_data.GetRealTransparency(o_transparency, o_inheritance)
@@ -283,7 +277,6 @@ class SceneProductData(AnyObject):
         :param int i_green:
         :param int i_blue:
         :param int i_inheritance:
-        :return: None
         :rtype: None
         """
         return self.scene_product_data.SetRealColor(i_red, i_green, i_blue, i_inheritance)
@@ -320,7 +313,6 @@ class SceneProductData(AnyObject):
 
         :param int i_transparency:
         :param int i_inheritance:
-        :return: None
         :rtype: None
         """
         return self.scene_product_data.SetRealTransparency(i_transparency, i_inheritance)

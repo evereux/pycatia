@@ -16,7 +16,6 @@ from pycatia.part_interfaces.pattern import Pattern
 
 
 class CloseSurface(Pattern):
-
     """
         .. note::
             :class: toggle
@@ -96,7 +95,7 @@ class CloseSurface(Pattern):
         return AngularRepartition(self.close_surface.AngularRepartition)
 
     @property
-    def circular_pattern_parameters(self):
+    def circular_pattern_parameters(self) -> int:
         """
         .. note::
             :class: toggle
@@ -119,6 +118,7 @@ class CloseSurface(Pattern):
                 |          Set firstPattern.CircularPatternParameters = catCompleteCrown
 
         :return: enum cat_circular_pattern_parameters
+        :return: int
         """
 
         return self.close_surface.CircularPatternParameters
@@ -504,4 +504,4 @@ class CloseSurface(Pattern):
         return self.close_surface.SetUnequalStep(i_instance_number)
 
     def __repr__(self):
-        return f'CloseSurface(name="{ self.name }")'
+        return f'CloseSurface(name="{self.name}")'

@@ -49,7 +49,6 @@ class ABQAnalyticalRigidSurface(ABQInteraction):
                 | 
                 |     Sets or returns the flip state for the ARS.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -88,7 +87,6 @@ class ABQAnalyticalRigidSurface(ABQInteraction):
 
         :param Product i_product:
         :param Publication i_publication:
-        :return: None
         :rtype: None
         """
         return self.abq_analytical_rigid_surface.AddSupportFromPublication(i_product.com_object,
@@ -134,7 +132,6 @@ class ABQAnalyticalRigidSurface(ABQInteraction):
 
         :param Product i_product:
         :param Reference i_ref:
-        :return: None
         :rtype: None
         """
         return self.abq_analytical_rigid_surface.AddSupportFromReference(i_product.com_object, i_ref.com_object)
@@ -176,7 +173,6 @@ class ABQAnalyticalRigidSurface(ABQInteraction):
 
         :param Product i_product:
         :param Reference i_ref:
-        :return: None
         :rtype: None
         """
         return self.abq_analytical_rigid_surface.SetHandler(i_product.com_object, i_ref.com_object)
@@ -219,7 +215,6 @@ class ABQAnalyticalRigidSurface(ABQInteraction):
 
         :param Product i_product:
         :param Publication i_publication:
-        :return: None
         :rtype: None
         """
         return self.abq_analytical_rigid_surface.SetHandlerFromPublication(i_product.com_object,

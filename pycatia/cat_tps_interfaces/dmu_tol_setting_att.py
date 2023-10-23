@@ -72,7 +72,6 @@ class DmuTolSettingAtt(SettingController):
                 |     technological data. Otherwise, when set to False, models are loaded in
                 |     Visualization Mode, and only visualization data is loaded.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -98,7 +97,6 @@ class DmuTolSettingAtt(SettingController):
                 |     Returns or sets the Preview Area setting parameter value.
                 |     True if the Preview Area setting parameter is checked.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -126,7 +124,6 @@ class DmuTolSettingAtt(SettingController):
                 |     Role: When set to True, the FTA 3D Annotation representations are saved in
                 |     CGR. Otherwise, they are not saved.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -155,7 +152,6 @@ class DmuTolSettingAtt(SettingController):
                 |     Role: When set to True, the FTA 3D Annotation representations are saved in
                 |     CGR. Otherwise, they are not saved.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -184,7 +180,6 @@ class DmuTolSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dmu_tol_setting_att.GetDesignModeInfo(admin_level, o_locked)
@@ -204,7 +199,6 @@ class DmuTolSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dmu_tol_setting_att.GetPrevAreaInfo(admin_level, o_locked)
@@ -238,7 +232,6 @@ class DmuTolSettingAtt(SettingController):
         :param int o_related_r:
         :param int o_related_g:
         :param int o_related_b:
-        :return: None
         :rtype: None
         """
         return self.dmu_tol_setting_att.GetRelatedColors(o_related_r, o_related_g, o_related_b)
@@ -258,7 +251,6 @@ class DmuTolSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dmu_tol_setting_att.GetRelatedColorsInfo(admin_level, o_locked)
@@ -278,7 +270,6 @@ class DmuTolSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dmu_tol_setting_att.GetSaveCGRInfo(admin_level, o_locked)
@@ -298,7 +289,6 @@ class DmuTolSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.dmu_tol_setting_att.GetSectPatternInfo(admin_level, o_locked)
@@ -315,7 +305,6 @@ class DmuTolSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dmu_tol_setting_att.SetDesignModeLock(i_locked)
@@ -347,7 +336,6 @@ class DmuTolSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dmu_tol_setting_att.SetPrevAreaLock(i_locked)
@@ -395,7 +383,6 @@ class DmuTolSettingAtt(SettingController):
         :param int i_related_r:
         :param int i_related_g:
         :param int i_related_b:
-        :return: None
         :rtype: None
         """
         return self.dmu_tol_setting_att.SetRelatedColors(i_related_r, i_related_g, i_related_b)
@@ -413,7 +400,6 @@ class DmuTolSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dmu_tol_setting_att.SetRelatedColorsLock(i_locked)
@@ -445,7 +431,6 @@ class DmuTolSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dmu_tol_setting_att.SetSaveCGRLock(i_locked)
@@ -478,7 +463,6 @@ class DmuTolSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.dmu_tol_setting_att.SetSectPatternLock(i_locked)

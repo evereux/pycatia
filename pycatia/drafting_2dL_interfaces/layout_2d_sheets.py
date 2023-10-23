@@ -58,7 +58,6 @@ class Layout2DSheets(Collection):
                 |          Dim MySheet As Layout2DSheet
                 |          Set MySheet =  MyLayoutRoot.Sheets.ActiveSheet
 
-        :return: Layout2DSheet
         :rtype: Layout2DSheet
         """
 
@@ -94,7 +93,6 @@ class Layout2DSheets(Collection):
                 |          Set MySheet = MyLayoutRoot.Sheets.Add("FirstSheet").
 
         :param str i_layout_sheet_name:
-        :return: Layout2DSheet
         :rtype: Layout2DSheet
         """
         return Layout2DSheet(self.layout_2d_sheets.Add(i_layout_sheet_name))
@@ -130,7 +128,6 @@ class Layout2DSheets(Collection):
                 |          Set MySheet = MyLayoutRoot.Sheets.Add("FirstSheet")
 
         :param str i_layout_sheet_name:
-        :return: Layout2DSheet
         :rtype: Layout2DSheet
         """
         return Layout2DSheet(self.layout_2d_sheets.AddDetail(i_layout_sheet_name))
@@ -174,7 +171,6 @@ class Layout2DSheets(Collection):
                 |          Set ThatLayoutSheet = ThisLayoutRoot.Sheets.Item("MySheet")
 
         :param cat_variant i_index:
-        :return: Layout2DSheet
         :rtype: Layout2DSheet
         """
         return Layout2DSheet(self.layout_2d_sheets.Item(i_index))
@@ -213,7 +209,6 @@ class Layout2DSheets(Collection):
 ThisLayoutRoot.Layout2DSheets.Remove("SheetToBeRemoved")
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_sheets.Remove(i_index)

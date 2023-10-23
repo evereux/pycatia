@@ -58,7 +58,6 @@ class HybridShapes(Collection):
                 |         The retrieved boundary
 
         :param str i_label:
-        :return: Boundary
         :rtype: Boundary
         """
         return Boundary(self.hybrid_shapes.GetBoundary(i_label))
@@ -97,7 +96,6 @@ class HybridShapes(Collection):
                 |          Set ThatHybridShape = CATIA.ActiveDocument.HybridShapes.Item("MyHybridShape")
 
         :param cat_variant i_index:
-        :return: HybridShape
         :rtype: HybridShape
         """
         return HybridShape(self.hybrid_shapes.Item(i_index))

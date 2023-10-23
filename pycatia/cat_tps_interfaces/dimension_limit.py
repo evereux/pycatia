@@ -51,7 +51,6 @@ class DimensionLimit(AnyObject):
                 |         CATTPSDLTabulated
                 |         CATTPSDLSingleLimit
 
-        :return: str
         :rtype: str
         """
 
@@ -76,7 +75,6 @@ class DimensionLimit(AnyObject):
                 | 
                 |     Returns or sets the dimension single limit modifier.
 
-        :return: str
         :rtype: str
         """
 
@@ -102,7 +100,6 @@ class DimensionLimit(AnyObject):
                 |     Returns the dimension limit nominal value.
                 |     This value is expressed in millimeters.
 
-        :return: float
         :rtype: float
         """
 
@@ -120,7 +117,6 @@ class DimensionLimit(AnyObject):
                 |     Returns or sets whether the dimension limit is symmetric.
                 |     TRUE if it is symmetric.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -146,7 +142,6 @@ class DimensionLimit(AnyObject):
                 |     Returns or sets the dimension tabulated limit.
                 |     This tabulated limit is expressed as a string.
 
-        :return: str
         :rtype: str
         """
 
@@ -181,7 +176,6 @@ class DimensionLimit(AnyObject):
 
         :param float o_bottom:
         :param float o_up:
-        :return: None
         :rtype: None
         """
         return self.dimension_limit.Limits(o_bottom, o_up)
@@ -207,7 +201,6 @@ class DimensionLimit(AnyObject):
 
         :param float i_bottom:
         :param float i_up:
-        :return: None
         :rtype: None
         """
         return self.dimension_limit.PutLimits(i_bottom, i_up)

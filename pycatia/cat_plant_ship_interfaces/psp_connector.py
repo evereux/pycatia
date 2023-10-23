@@ -59,7 +59,6 @@ class PSPConnector(AnyObject):
                 |           ...
                 |          Set ojArg1 = objThisIntf.AttrNames
 
-        :return: PSPListOfBSTRs
         :rtype: PSPListOfBSTRs
         """
 
@@ -94,7 +93,6 @@ class PSPConnector(AnyObject):
                 |           ...
                 |          objThisIntf.ConnectorName = strVar2
 
-        :return: str
         :rtype: str
         """
 
@@ -131,7 +129,6 @@ class PSPConnector(AnyObject):
                 |          objThisIntf.Connect objArg1
 
         :param PSPConnector i_cntr_to_connect:
-        :return: None
         :rtype: None
         """
         return self.psp_connector.Connect(i_cntr_to_connect.com_object)
@@ -174,7 +171,6 @@ class PSPConnector(AnyObject):
                 |          objThisIntf.Disconnect objArg1
 
         :param PSPConnector i_cntr_to_disconnect:
-        :return: None
         :rtype: None
         """
         return self.psp_connector.Disconnect(i_cntr_to_disconnect.com_object)
@@ -216,7 +212,6 @@ class PSPConnector(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.GetAssociatedConnectable
 
-        :return: PSPConnectable
         :rtype: PSPConnectable
         """
         
@@ -243,7 +238,6 @@ class PSPConnector(AnyObject):
                 |           ...
                 |          bArg1 = objThisIntf.IsCntrConnected
 
-        :return: bool
         :rtype: bool
         """
         return self.psp_connector.IsCntrConnected()

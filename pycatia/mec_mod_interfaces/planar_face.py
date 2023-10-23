@@ -100,7 +100,6 @@ class PlanarFace(Face):
                 |             The Z Coordinate of the planar face first axis
 
         :param tuple o_first_axis:
-        :return: None
         :rtype: None
         """
         return self.planar_face.GetFirstAxis(o_first_axis)
@@ -140,7 +139,6 @@ class PlanarFace(Face):
                 |             The Z Coordinate of the planar face origin
 
         :param tuple o_origin:
-        :return: None
         :rtype: None
         """
         return self.planar_face.GetOrigin(o_origin)
@@ -180,7 +178,6 @@ class PlanarFace(Face):
                 |             The Z Coordinate of the planar face second axis
 
         :param tuple o_second_axis:
-        :return: None
         :rtype: None
         """
         return self.planar_face.GetSecondAxis(o_second_axis)

@@ -66,7 +66,6 @@ class Relation(KnowledgeActivateObject):
                 |          relcomment = maximummass.Comment
                 |          MsgBox "maximummass comment : " & relcomment
 
-        :return: str
         :rtype: str
         """
 
@@ -98,7 +97,6 @@ class Relation(KnowledgeActivateObject):
                 |     See also:
                 |         Part, Product, CATIADrawing, CATIAProcess
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -115,7 +113,6 @@ class Relation(KnowledgeActivateObject):
                 | 
                 |     Returns the number of input parameters of the relation.
 
-        :return: int
         :rtype: int
         """
 
@@ -134,7 +131,6 @@ class Relation(KnowledgeActivateObject):
                 |     The output parameters of the relation are those constrained by the
                 |     relation.
 
-        :return: int
         :rtype: int
         """
 
@@ -162,7 +158,6 @@ class Relation(KnowledgeActivateObject):
                 |          reldef = maximummass.Value
                 |          MsgBox "maximummass relation is defined as " & reldef
 
-        :return: str
         :rtype: str
         """
 
@@ -203,7 +198,6 @@ class Relation(KnowledgeActivateObject):
                 |         NbInParameters
 
         :param int i_index:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.relation.GetInParameter(i_index))
@@ -229,7 +223,6 @@ class Relation(KnowledgeActivateObject):
                 |         NbOutParameters
 
         :param int i_index:
-        :return: Parameter
         :rtype: Parameter
         """
         from pycatia.knowledge_interfaces.parameter import Parameter
@@ -251,7 +244,6 @@ class Relation(KnowledgeActivateObject):
                 |             The new relation value
 
         :param str i_value:
-        :return: None
         :rtype: None
         """
         return self.relation.Modify(i_value)
@@ -272,7 +264,6 @@ class Relation(KnowledgeActivateObject):
                 |             The new relation name
 
         :param str i_name:
-        :return: None
         :rtype: None
         """
         return self.relation.Rename(i_name)

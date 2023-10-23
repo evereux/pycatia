@@ -83,7 +83,6 @@ class Factory2D(AnyObject):
         :param float i_radius:
         :param float i_start_param:
         :param float i_end_param:
-        :return: Circle2D
         :rtype: Circle2D
         """
         return Circle2D(self.factory_2d.CreateCircle(i_center_x, i_center_y, i_radius, i_start_param, i_end_param))
@@ -112,7 +111,6 @@ class Factory2D(AnyObject):
         :param float i_center_x:
         :param float i_center_y:
         :param float i_radius:
-        :return: Circle2D
         :rtype: Circle2D
         """
         return Circle2D(self.factory_2d.CreateClosedCircle(i_center_x, i_center_y, i_radius))
@@ -154,7 +152,6 @@ class Factory2D(AnyObject):
         :param float i_major_y:
         :param float i_major_radius:
         :param float i_minor_radius:
-        :return: Ellipse2D
         :rtype: Ellipse2D
         """
         return Ellipse2D(
@@ -181,7 +178,6 @@ class Factory2D(AnyObject):
 
         :param float i_x:
         :param float i_y:
-        :return: ControlPoint2D
         :rtype: ControlPoint2D
         """
         return ControlPoint2D(self.factory_2d.CreateControlPoint(i_x, i_y))
@@ -237,7 +233,6 @@ class Factory2D(AnyObject):
         :param float i_minor_radius:
         :param float i_start_param:
         :param float i_end_param:
-        :return: Ellipse2D
         :rtype: Ellipse2D
         """
         return Ellipse2D(
@@ -281,7 +276,6 @@ class Factory2D(AnyObject):
         :param float i_axis_y:
         :param float i_major_radius:
         :param float i_minor_radius:
-        :return: Hyperbola2D
         :rtype: Hyperbola2D
         """
         return Hyperbola2D(
@@ -304,7 +298,6 @@ class Factory2D(AnyObject):
                 |             The object to intersect with the sketch
 
         :param Reference i_geometry:
-        :return: Geometry2D
         :rtype: Geometry2D
         """
         return Geometry2D(self.factory_2d.CreateIntersection(i_geometry.com_object))
@@ -327,7 +320,6 @@ class Factory2D(AnyObject):
                 |             The object to intersect with the sketch
 
         :param Reference i_geometry:
-        :return: GeometricElements
         :rtype: GeometricElements
         """
         return GeometricElements(self.factory_2d.CreateIntersections(i_geometry.com_object))
@@ -360,7 +352,6 @@ class Factory2D(AnyObject):
         :param float i_y1:
         :param float i_x2:
         :param float i_y2:
-        :return: Line2D
         :rtype: Line2D
         """
         return Line2D(self.factory_2d.CreateLine(i_x1, i_y1, i_x2, i_y2))
@@ -393,7 +384,6 @@ class Factory2D(AnyObject):
         :param float i_y1:
         :param float i_ux:
         :param float i_uy:
-        :return: Line2D
         :rtype: Line2D
         """
         return Line2D(self.factory_2d.CreateLineFromVector(i_x1, i_y1, i_ux, i_uy))
@@ -431,7 +421,6 @@ class Factory2D(AnyObject):
         :param float i_axis_x:
         :param float i_axis_y:
         :param float i_focal_distance:
-        :return: Parabola2D
         :rtype: Parabola2D
         """
         return Parabola2D(self.factory_2d.CreateParabola(i_center_x, i_center_y, i_axis_x, i_axis_y, i_focal_distance))
@@ -456,7 +445,6 @@ class Factory2D(AnyObject):
 
         :param float i_x:
         :param float i_y:
-        :return: Point2D
         :rtype: Point2D
         """
         return Point2D(self.factory_2d.CreatePoint(i_x, i_y))
@@ -478,7 +466,6 @@ class Factory2D(AnyObject):
                 |             The object to project on the sketch
 
         :param Reference i_geometry:
-        :return: Geometry2D
         :rtype: Geometry2D
         """
         return Geometry2D(self.factory_2d.CreateProjection(i_geometry.com_object))
@@ -501,7 +488,6 @@ class Factory2D(AnyObject):
                 |             The object to project on the sketch
 
         :param Reference i_geometry:
-        :return: GeometricElements
         :rtype: GeometricElements
         """
         return GeometricElements(self.factory_2d.CreateProjections(i_geometry.com_object))
@@ -523,7 +509,6 @@ class Factory2D(AnyObject):
                 |             b-spline.
 
         :param tuple i_poles:
-        :return: Spline2D
         :rtype: Spline2D
         """
         return Spline2D(self.factory_2d.CreateSpline(i_poles))

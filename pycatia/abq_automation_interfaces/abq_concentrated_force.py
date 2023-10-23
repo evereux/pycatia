@@ -56,7 +56,6 @@ class ABQConcentratedForce(ABQLoad):
                 |         A boolean specifying whether a user subroutine will be
                 |         applied.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -81,7 +80,6 @@ class ABQConcentratedForce(ABQLoad):
                 | 
                 |     Sets or returns the follow nodal rotation flag.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -116,7 +114,6 @@ class ABQConcentratedForce(ABQLoad):
                 |         DISTRIBUTEDLOAD
                 |         LOADDENSITY
 
-        :return: int
         :rtype: int
         """
 
@@ -145,7 +142,6 @@ class ABQConcentratedForce(ABQLoad):
                 |     Returns:
                 |         boolean specifying whether local csys is active.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -174,7 +170,6 @@ class ABQConcentratedForce(ABQLoad):
                 |     Returns:
                 |         The concentrated force component in the 1-direction.
 
-        :return: float
         :rtype: float
         """
 
@@ -203,7 +198,6 @@ class ABQConcentratedForce(ABQLoad):
                 |     Returns:
                 |         The concentrated force component in the 2-direction.
 
-        :return: float
         :rtype: float
         """
 
@@ -232,7 +226,6 @@ class ABQConcentratedForce(ABQLoad):
                 |     Returns:
                 |         The concentrated force component in the 3-direction.
 
-        :return: float
         :rtype: float
         """
 
@@ -261,7 +254,6 @@ class ABQConcentratedForce(ABQLoad):
                 |     Returns:
                 |         The concentrated moment component in the 1-direction.
 
-        :return: float
         :rtype: float
         """
 
@@ -290,7 +282,6 @@ class ABQConcentratedForce(ABQLoad):
                 |     Returns:
                 |         The concentrated moment component in the 2-direction.
 
-        :return: float
         :rtype: float
         """
 
@@ -319,7 +310,6 @@ class ABQConcentratedForce(ABQLoad):
                 |     Returns:
                 |         The concentrated moment component in the 3-direction.
 
-        :return: float
         :rtype: float
         """
 
@@ -348,7 +338,6 @@ class ABQConcentratedForce(ABQLoad):
                 |     Returns:
                 |         The local coordinate system.
 
-        :return: AxisSystem
         :rtype: AxisSystem
         """
 
@@ -382,7 +371,6 @@ class ABQConcentratedForce(ABQLoad):
 
         :param Reference o_product:
         :param Reference o_ref:
-        :return: None
         :rtype: None
         """
         return self.abq_concentrated_force.GetHandler(o_product.com_object, o_ref.com_object)
@@ -426,7 +414,6 @@ class ABQConcentratedForce(ABQLoad):
 
         :param Product o_product:
         :param AxisSystem o_pub_axis_system:
-        :return: None
         :rtype: None
         """
         return self.abq_concentrated_force.GetLocalCsysFromPublication(o_product.com_object,
@@ -463,7 +450,6 @@ class ABQConcentratedForce(ABQLoad):
                 |             e.g. ABQ_CARTESIAN, ABQ_CYLINDRICAL, ABQ_SPHERICAL,
                 |             ABQ_DEFAULTAXIS
 
-        :return: enum abq_local_csys_type
         :rtype: enum abq_local_csys_type
         """
         return self.abq_concentrated_force.GetUseCoordinateSystemType()
@@ -489,7 +475,6 @@ class ABQConcentratedForce(ABQLoad):
 
         :param Reference i_product:
         :param Reference i_ref:
-        :return: None
         :rtype: None
         """
         return self.abq_concentrated_force.SetHandler(i_product.com_object, i_ref.com_object)
@@ -535,7 +520,6 @@ class ABQConcentratedForce(ABQLoad):
 
         :param Product i_product:
         :param Publication i_pub_axis_system:
-        :return: None
         :rtype: None
         """
         return self.abq_concentrated_force.SetLocalCsysFromPublication(i_product.com_object,
@@ -574,7 +558,6 @@ class ABQConcentratedForce(ABQLoad):
                 |             ABQ_DEFAULTAXIS
 
         :param int i_csystem_type:
-        :return: None
         :rtype: None
         """
         return self.abq_concentrated_force.SetUseCoordinateSystemType(i_csystem_type)

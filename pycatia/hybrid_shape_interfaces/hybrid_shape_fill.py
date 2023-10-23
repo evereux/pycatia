@@ -68,7 +68,6 @@ class HybridShapeFill(HybridShape):
                 |          Dim oMode
                 |          Set oMode = Fill.AdvancedTolerantMode
 
-        :return: int
         :rtype: int
         """
 
@@ -100,7 +99,6 @@ class HybridShapeFill(HybridShape):
                 |          Dim Element As Reference 
                 |          Set Element = Fill.Constraint
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -141,7 +139,6 @@ class HybridShapeFill(HybridShape):
                 |          Dim oContinuity
                 |          Set oContinuity = Fill.Continuity
 
-        :return: int
         :rtype: int
         """
 
@@ -172,7 +169,6 @@ class HybridShapeFill(HybridShape):
                 |     2
                 |         Detection of canonical surfaces
 
-        :return: int
         :rtype: int
         """
 
@@ -204,7 +200,6 @@ class HybridShapeFill(HybridShape):
                 |      Dim DeviationValue As double
                 |      Set DeviationValue = Fill.MaximumDeviationValue
 
-        :return: float
         :rtype: float
         """
 
@@ -238,7 +233,6 @@ class HybridShapeFill(HybridShape):
                 |         Non-Planar boundaries are also considered during Fill
                 |         operation
 
-        :return: bool
         :rtype: bool
         """
 
@@ -272,7 +266,6 @@ class HybridShapeFill(HybridShape):
                 |          Dim tolMode As boolean
                 |          Set tolMode = Fill.TolerantMode
 
-        :return: bool
         :rtype: bool
         """
 
@@ -309,7 +302,6 @@ class HybridShapeFill(HybridShape):
                 |          Fill.AddBound iBoundary
 
         :param Reference i_boundary:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_fill.AddBound(i_boundary.com_object)
@@ -356,7 +348,6 @@ class HybridShapeFill(HybridShape):
 
         :param Reference i_boundary:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_fill.AddSupportAtBound(i_boundary.com_object, i_support.com_object)
@@ -399,7 +390,6 @@ class HybridShapeFill(HybridShape):
                 |          Fill.AppendConstraint iConstraint
 
         :param Reference i_constraint:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_fill.AppendConstraint(i_constraint.com_object)
@@ -443,7 +433,6 @@ class HybridShapeFill(HybridShape):
                 |          Set oBoundary = Fill.GetBoundAtPosition (iPos).
 
         :param int i_pos:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_fill.GetBoundAtPosition(i_pos))
@@ -472,7 +461,6 @@ class HybridShapeFill(HybridShape):
                 |          oPos = Fill.GetBoundPosition (iBoundary).
 
         :param Reference i_boundary:
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_fill.GetBoundPosition(i_boundary.com_object)
@@ -499,7 +487,6 @@ class HybridShapeFill(HybridShape):
                 |                  Dim oSize As  long
                 |                  oSize = Fill.GetBoundSize
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_fill.GetBoundSize()
@@ -539,7 +526,6 @@ class HybridShapeFill(HybridShape):
                 |          oContinuity = Fill.GetBoundaryContinuity iPos
 
         :param int i_pos:
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_fill.GetBoundaryContinuity(i_pos)
@@ -568,7 +554,6 @@ class HybridShapeFill(HybridShape):
                 |          Set oConstraint = Fill.GetConstraintAtPosition (iPos).
 
         :param int i_pos:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_fill.GetConstraintAtPosition(i_pos))
@@ -595,7 +580,6 @@ class HybridShapeFill(HybridShape):
                 |                  Dim oSize As  long
                 |                  oSize = Fill.GetConstraintsSize
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_fill.GetConstraintsSize()
@@ -624,7 +608,6 @@ class HybridShapeFill(HybridShape):
                 |          Set oSupport = Fill.GetSupportAtPosition (iPos).
 
         :param int i_pos:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_fill.GetSupportAtPosition(i_pos))
@@ -656,7 +639,6 @@ class HybridShapeFill(HybridShape):
 
         :param Reference i_boundary:
         :param int i_pos:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_fill.InsertBoundAfterPosition(i_boundary.com_object, i_pos)
@@ -693,7 +675,6 @@ class HybridShapeFill(HybridShape):
                 | 
                 |      Fill.RemoveAllBound
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_fill.RemoveAllBound()
@@ -708,7 +689,6 @@ class HybridShapeFill(HybridShape):
                 | 
                 |     Removes all constraints.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_fill.RemoveAllConstraints()
@@ -736,7 +716,6 @@ class HybridShapeFill(HybridShape):
                 |          Fill.RemoveBoundAtPosition iPos.
 
         :param int i_pos:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_fill.RemoveBoundAtPosition(i_pos)
@@ -764,7 +743,6 @@ class HybridShapeFill(HybridShape):
                 |          Fill.RemoveConstraint iPos.
 
         :param int i_pos:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_fill.RemoveConstraint(i_pos)
@@ -792,7 +770,6 @@ class HybridShapeFill(HybridShape):
                 |          Fill.RemoveSupportAtPosition iPos.
 
         :param int i_pos:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_fill.RemoveSupportAtPosition(i_pos)
@@ -823,7 +800,6 @@ class HybridShapeFill(HybridShape):
 
         :param Reference i_boundary:
         :param int i_pos:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_fill.ReplaceBoundAtPosition(i_boundary.com_object, i_pos)
@@ -870,7 +846,6 @@ class HybridShapeFill(HybridShape):
 
         :param int i_pos:
         :param Reference i_constraint:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_fill.ReplaceConstraint(i_pos, i_constraint.com_object)
@@ -916,7 +891,6 @@ class HybridShapeFill(HybridShape):
 
         :param Reference i_support:
         :param int i_pos:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_fill.ReplaceSupportAtPosition(i_support.com_object, i_pos)
@@ -972,7 +946,6 @@ class HybridShapeFill(HybridShape):
 
         :param int i_continuity:
         :param int i_pos:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_fill.SetBoundaryContinuity(i_continuity, i_pos)

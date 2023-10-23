@@ -50,7 +50,6 @@ class ABQPressure(ABQLoad):
                 |     Returns:
                 |         A boolean specifying whether a user subroutine will be applied.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -78,7 +77,6 @@ class ABQPressure(ABQLoad):
                 |     Returns:
                 |         The magnitude of the pressure load.
 
-        :return: float
         :rtype: float
         """
 

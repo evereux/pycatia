@@ -61,7 +61,6 @@ class AnalysisSupports(Collection):
         :param int i_index:
         :param AnyObject o_positionning:
         :param AnyObject o_pointed:
-        :return: None
         :rtype: None
         """
         return self.analysis_supports.Item(i_index, o_positionning.com_object, o_pointed.com_object)

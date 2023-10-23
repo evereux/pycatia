@@ -52,7 +52,6 @@ class Optimization(KnowledgeObject):
                 |     See also:
                 |         CatAlgorithmType
 
-        :return: int
         :rtype: int
         """
 
@@ -78,7 +77,6 @@ class Optimization(KnowledgeObject):
                 | 
                 |     Returns the collection of optimization constraints.
 
-        :return: OptimizationConstraints
         :rtype: OptimizationConstraints
         """
 
@@ -96,7 +94,6 @@ class Optimization(KnowledgeObject):
                 |     Returns or sets the convergence speed for some gradients and the simulated
                 |     annealing.
 
-        :return: int
         :rtype: int
         """
 
@@ -121,7 +118,6 @@ class Optimization(KnowledgeObject):
                 | 
                 |     Returns the collection of the free parameters.
 
-        :return: FreeParameters
         :rtype: FreeParameters
         """
 
@@ -139,7 +135,6 @@ class Optimization(KnowledgeObject):
                 |     Returns or sets the maximum number of model updates allowed during one run
                 |     of the optimization.
 
-        :return: int
         :rtype: int
         """
 
@@ -165,7 +160,6 @@ class Optimization(KnowledgeObject):
                 |     Returns or sets the maximum number of model updates without improvement of
                 |     the problem solution during one run of the optimization.
 
-        :return: int
         :rtype: int
         """
 
@@ -191,7 +185,6 @@ class Optimization(KnowledgeObject):
                 |     Returns or sets the maximum time allowed for one run of the optimization
                 |     (in minutes).
 
-        :return: int
         :rtype: int
         """
 
@@ -219,7 +212,6 @@ class Optimization(KnowledgeObject):
                 |     optimization contains only constraints and uses Simulated Annealing, or if the
                 |     optimization feature doesn't contain all information necessary to be run.
 
-        :return: RealParam
         :rtype: RealParam
         """
 
@@ -248,7 +240,6 @@ class Optimization(KnowledgeObject):
                 |     See also:
                 |         CatOptimizationType
 
-        :return: int
         :rtype: int
         """
 
@@ -274,7 +265,6 @@ class Optimization(KnowledgeObject):
                 |     Returns the objective parameter target value. (used only if the
                 |     optimization type is a target value search)
 
-        :return: RealParam
         :rtype: RealParam
         """
 
@@ -292,7 +282,6 @@ class Optimization(KnowledgeObject):
                 |     Returns or sets if the number of updates without improvement of the
                 |     solution has to be used as a termination criterion.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -317,7 +306,6 @@ class Optimization(KnowledgeObject):
                 | 
                 |     Returns or sets if max time has to be used as a termination criterion.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -348,7 +336,6 @@ class Optimization(KnowledgeObject):
                 |               several optimizations in this mode.
 
         :param bool i_with_stop_dialog:
-        :return: None
         :rtype: None
         """
         return self.optimization.Run(i_with_stop_dialog)

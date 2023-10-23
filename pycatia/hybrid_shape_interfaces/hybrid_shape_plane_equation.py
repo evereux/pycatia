@@ -65,7 +65,6 @@ class HybridShapePlaneEquation(Plane):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: RealParam
         :rtype: RealParam
         """
 
@@ -95,7 +94,6 @@ class HybridShapePlaneEquation(Plane):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: RealParam
         :rtype: RealParam
         """
 
@@ -126,7 +124,6 @@ class HybridShapePlaneEquation(Plane):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: RealParam
         :rtype: RealParam
         """
 
@@ -156,7 +153,6 @@ class HybridShapePlaneEquation(Plane):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Length
         :rtype: Length
         """
 
@@ -188,7 +184,6 @@ class HybridShapePlaneEquation(Plane):
                 |          Dim oRefAxis As CATIAReference
                 |          Set oRefAxis  = PlaneEquation.RefAxisSystem
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -217,7 +212,6 @@ class HybridShapePlaneEquation(Plane):
                 |         oReferencePoint
                 |             reference point
 
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_plane_equation.GetReferencePoint())
@@ -238,7 +232,6 @@ class HybridShapePlaneEquation(Plane):
                 |             reference point
 
         :param Reference i_reference_point:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_plane_equation.SetReferencePoint(i_reference_point.com_object)

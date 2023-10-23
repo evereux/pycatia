@@ -52,7 +52,6 @@ class DesignTable(Relation):
                 | 
                 |     Returns the nb of columns in the design table file.
 
-        :return: int
         :rtype: int
         """
 
@@ -70,7 +69,6 @@ class DesignTable(Relation):
                 |     Returns or sets the current configuration. Legal values: 1 to
                 |     ConfigurationsNb.
 
-        :return: int
         :rtype: int
         """
 
@@ -95,7 +93,6 @@ class DesignTable(Relation):
                 | 
                 |     Returns the number of design table configurations.
 
-        :return: int
         :rtype: int
         """
 
@@ -113,7 +110,6 @@ class DesignTable(Relation):
                 |     Returns or sets whether the data contained in the file must be included
                 |     inside the CATIA model.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -138,7 +134,6 @@ class DesignTable(Relation):
                 | 
                 |     Returns or sets the path of the design table (read/write property).
 
-        :return: str
         :rtype: str
         """
 
@@ -176,7 +171,6 @@ class DesignTable(Relation):
 
         :param Parameter i_parameter:
         :param str i_sheet_column:
-        :return: None
         :rtype: None
         """
         return self.design_table.AddAssociation(i_parameter.com_object, i_sheet_column)
@@ -215,7 +209,6 @@ class DesignTable(Relation):
                 |     Returns:
                 |         S_OK if succeeded, E_FAIL else.
 
-        :return: None
         :rtype: None
         """
         return self.design_table.AddNewRow()
@@ -240,7 +233,6 @@ class DesignTable(Relation):
 
         :param int i_row:
         :param int i_column:
-        :return: str
         :rtype: str
         """
         return self.design_table.CellAsString(i_row, i_column)
@@ -262,7 +254,6 @@ class DesignTable(Relation):
                 |             The name of an associated column.
 
         :param str i_sheet_column:
-        :return: None
         :rtype: None
         """
         return self.design_table.RemoveAssociation(i_sheet_column)
@@ -279,7 +270,6 @@ class DesignTable(Relation):
                 |     in Enovia LCA, copies this file on local disk, and synchronizes design table
                 |     content
 
-        :return: None
         :rtype: None
         """
         return self.design_table.Synchronize()

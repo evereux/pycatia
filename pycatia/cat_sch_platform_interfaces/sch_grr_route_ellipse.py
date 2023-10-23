@@ -58,7 +58,6 @@ class SchGRRRouteEllipse(AnyObject):
                 |          objThisIntf.GetSeedPointobjArg1
 
         :param SchListOfDoubles o_db2_xy:
-        :return: None
         :rtype: None
         """
         return self.sch_grr_route_ellipse.GetSeedPoint(o_db2_xy.com_object)
@@ -101,7 +100,6 @@ class SchGRRRouteEllipse(AnyObject):
                 |          objThisIntf.HasSeedPointbVar1
 
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_grr_route_ellipse.HasSeedPoint(o_b_yes)
@@ -144,7 +142,6 @@ class SchGRRRouteEllipse(AnyObject):
                 |          objThisIntf.SetSeedPointdbVar1
 
         :param tuple i_db2_xy:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_grr_route_ellipse.SetSeedPoint(i_db2_xy)

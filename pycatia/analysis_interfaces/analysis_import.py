@@ -64,7 +64,6 @@ class AnalysisImport(AnyObject):
         :param AnalysisManager i_manager:
         :param Product i_product_support:
         :param AnyObject i_support:
-        :return: None
         :rtype: None
         """
         return self.analysis_import.AddSupport(i_manager.com_object, i_product_support.com_object, i_support.com_object)
@@ -118,7 +117,6 @@ class AnalysisImport(AnyObject):
         :param str i_full_path:
         :param AnalysisManager i_manager:
         :param AnyObject i_axis:
-        :return: None
         :rtype: None
         """
         return self.analysis_import.ImportDisp(i_father_case.com_object, i_full_path, i_manager.com_object,
@@ -173,7 +171,6 @@ class AnalysisImport(AnyObject):
         :param str i_full_path:
         :param AnalysisManager i_manager:
         :param AnyObject i_axis:
-        :return: None
         :rtype: None
         """
         return self.analysis_import.ImportForce(i_father_case.com_object, i_full_path, i_manager.com_object,

@@ -53,7 +53,6 @@ class ABQMechConnBehavior(ABQProperty):
                 |         A boolean specifying whether seperation status is on or
                 |         off.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -81,7 +80,6 @@ class ABQMechConnBehavior(ABQProperty):
                 |     Returns:
                 |         A boolean specifying whether a user subroutine will be applied.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -111,7 +109,6 @@ class ABQMechConnBehavior(ABQProperty):
                 |         A boolean specifying whether augmented lagrange formulation is
                 |         applied.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -140,7 +137,6 @@ class ABQMechConnBehavior(ABQProperty):
                 |     Returns:
                 |         clearance at which contact pressure is zero.
 
-        :return: float
         :rtype: float
         """
 
@@ -174,7 +170,6 @@ class ABQMechConnBehavior(ABQProperty):
                 |         DEFAULT
                 |         STIFF_VALUE
 
-        :return: int
         :rtype: int
         """
 
@@ -203,7 +198,6 @@ class ABQMechConnBehavior(ABQProperty):
                 |     Returns:
                 |         contact stiffness scale factor value.
 
-        :return: float
         :rtype: float
         """
 
@@ -232,7 +226,6 @@ class ABQMechConnBehavior(ABQProperty):
                 |     Returns:
                 |         The stiffness value.
 
-        :return: float
         :rtype: float
         """
 
@@ -260,7 +253,6 @@ class ABQMechConnBehavior(ABQProperty):
                 |     Returns:
                 |         The description of the step.
 
-        :return: str
         :rtype: str
         """
 
@@ -294,7 +286,6 @@ class ABQMechConnBehavior(ABQProperty):
                 |         FRICTIONLESS
                 |         PENALTY
 
-        :return: int
         :rtype: int
         """
 
@@ -323,7 +314,6 @@ class ABQMechConnBehavior(ABQProperty):
                 |     Returns:
                 |         The friction coefficient.
 
-        :return: float
         :rtype: float
         """
 
@@ -357,7 +347,6 @@ class ABQMechConnBehavior(ABQProperty):
                 |         DEFAULT
                 |         STIFF_VALUE
 
-        :return: int
         :rtype: int
         """
 
@@ -386,7 +375,6 @@ class ABQMechConnBehavior(ABQProperty):
                 |     Returns:
                 |         The stiffness value.
 
-        :return: float
         :rtype: float
         """
 
@@ -415,7 +403,6 @@ class ABQMechConnBehavior(ABQProperty):
                 |     Returns:
                 |         A boolean specifying whether penalty method formulation is applied.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -451,7 +438,6 @@ class ABQMechConnBehavior(ABQProperty):
                 |         LINEAR
                 |         TABULAR
 
-        :return: int
         :rtype: int
         """
 
@@ -488,7 +474,6 @@ class ABQMechConnBehavior(ABQProperty):
 
         :param tuple i_pressure:
         :param tuple i_overclosure:
-        :return: None
         :rtype: None
         """
         return self.abq_mech_conn_behavior.AddPressureOverclosureTable(i_pressure, i_overclosure)
@@ -530,7 +515,6 @@ class ABQMechConnBehavior(ABQProperty):
 
         :param tuple o_pressure:
         :param tuple o_overclosure:
-        :return: None
         :rtype: None
         """
         return self.abq_mech_conn_behavior.GetPressureOverclosureTable(o_pressure, o_overclosure)

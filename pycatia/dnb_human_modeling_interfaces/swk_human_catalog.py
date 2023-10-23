@@ -26,7 +26,6 @@ class SWKHumanCatalog(AnyObject):
                 | Property ActiveFamily As String
                 |     Member of SWKHumanModelingItf.SWKHumanCatalog
 
-        :return: str
         :rtype: str
         """
 
@@ -43,7 +42,6 @@ class SWKHumanCatalog(AnyObject):
                 |     read-only
                 |     Member of SWKHumanModelingItf.SWKHumanCatalog
 
-        :return: bool
         :rtype: bool
         """
 
@@ -60,7 +58,6 @@ class SWKHumanCatalog(AnyObject):
                 |     read-only
                 |     Member of SWKHumanModelingItf.SWKHumanCatalog
 
-        :return: int
         :rtype: int
         """
 
@@ -77,7 +74,6 @@ class SWKHumanCatalog(AnyObject):
                 |     read-only
                 |     Member of SWKHumanModelingItf.SWKHumanCatalog
 
-        :return: int
         :rtype: int
         """
 
@@ -93,7 +89,6 @@ class SWKHumanCatalog(AnyObject):
                 |     Member of SWKHumanModelingItf.SWKHumanCatalog
 
         :param str pi_description:
-        :return: None
         :rtype: None
         """
 
@@ -109,7 +104,6 @@ class SWKHumanCatalog(AnyObject):
                 |     Member of SWKHumanModelingItf.SWKHumanCatalog
 
         :param Path pi_file_path:
-        :return: None
         :rtype: None
         """
 
@@ -125,7 +119,6 @@ class SWKHumanCatalog(AnyObject):
                 |     Member of SWKHumanModelingItf.SWKHumanCatalog
 
         :param int pi_index:
-        :return: None
         :rtype: None
         """
 
@@ -140,7 +133,6 @@ class SWKHumanCatalog(AnyObject):
                 | Sub Empty()
                 |     Member of SWKHumanModelingItf.SWKHumanCatalog
 
-        :return: None
         :rtype: None
         """
 
@@ -155,7 +147,6 @@ class SWKHumanCatalog(AnyObject):
                 | Sub GetAttachAndCstInfos(piIndex As Long, piNbInfos As Long, poInfos() As Variant)
                 |     Member of SWKHumanModelingItf.SWKHumanCatalog
 
-        :return: cat_variant
         :rtype: cat_variant
         """
 
@@ -171,7 +162,6 @@ class SWKHumanCatalog(AnyObject):
                 |     Member of SWKHumanModelingItf.SWKHumanCatalog
 
         :param int pi_index:
-        :return: cat_variant
         :rtype: cat_variant
         """
 
@@ -187,7 +177,6 @@ class SWKHumanCatalog(AnyObject):
                 |     Member of SWKHumanModelingItf.SWKHumanCatalog
 
         :param int pi_index:
-        :return: str
         :rtype: str
         """
 
@@ -203,7 +192,6 @@ class SWKHumanCatalog(AnyObject):
                 |     Member of SWKHumanModelingItf.SWKHumanCatalog
 
         :param int pi_index:
-        :return: str
         :rtype: str
         """
 
@@ -219,7 +207,6 @@ class SWKHumanCatalog(AnyObject):
                 |     Member of SWKHumanModelingItf.SWKHumanCatalog
 
         :param int pi_index:
-        :return: str
         :rtype: str
         """
 
@@ -235,7 +222,6 @@ class SWKHumanCatalog(AnyObject):
                 |     Member of SWKHumanModelingItf.SWKHumanCatalog
 
         :param int pi_index:
-        :return: int
         :rtype: int
         """
 
@@ -250,7 +236,6 @@ class SWKHumanCatalog(AnyObject):
                 | Sub Reload()
                 |     Member of SWKHumanModelingItf.SWKHumanCatalog
 
-        :return: None
         :rtype: None
         """
 
@@ -266,7 +251,6 @@ class SWKHumanCatalog(AnyObject):
                 |     Member of SWKHumanModelingItf.SWKHumanCatalog
 
         :param int pi_index:
-        :return: None
         :rtype: None
         """
 
@@ -281,7 +265,6 @@ class SWKHumanCatalog(AnyObject):
                 | Sub Save()
                 |     Member of SWKHumanModelingItf.SWKHumanCatalog
 
-        :return: None
         :rtype: None
         """
 
@@ -299,7 +282,6 @@ class SWKHumanCatalog(AnyObject):
         :param int pi_description_index:
         :param int pi_item_index:
         :param int pi_reference:
-        :return: None
         :rtype: None
         """
 

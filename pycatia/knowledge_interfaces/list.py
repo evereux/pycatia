@@ -50,7 +50,6 @@ class List(Collection):
                 |     an already existing element while IsDuplicateElementsAllowed is false.
 
         :param AnyObject i_item_value:
-        :return: None
         :rtype: None
         """
         return self.list.Add(i_item_value.com_object)
@@ -86,7 +85,6 @@ class List(Collection):
                 |          Set lastFeature = Features.Item(Features.Count)
 
         :param cat_variant i_index:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.list.Item(i_index))
@@ -119,7 +117,6 @@ class List(Collection):
                 |      Features.Remove("density")
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.list.Remove(i_index)
@@ -139,7 +136,6 @@ class List(Collection):
 
         :param cat_variant i_index_current:
         :param cat_variant i_index_target:
-        :return: None
         :rtype: None
         """
         return self.list.Reorder(i_index_current, i_index_target)
@@ -160,7 +156,6 @@ class List(Collection):
 
         :param cat_variant i_index:
         :param AnyObject i_item_value:
-        :return: None
         :rtype: None
         """
         return self.list.Replace(i_index, i_item_value.com_object)

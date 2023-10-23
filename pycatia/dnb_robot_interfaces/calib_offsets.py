@@ -54,7 +54,6 @@ class CalibOffsets(AnyObject):
                 |             S_OK if the operation succeeds
                 |             E_FAIL otherwise
 
-        :return: None
         :rtype: None
         """
         return self.calib_offsets.ApplyCorrectedBaseOffset()
@@ -76,7 +75,6 @@ class CalibOffsets(AnyObject):
                 |             S_OK if the operation succeeds
                 |             E_FAIL otherwise
 
-        :return: None
         :rtype: None
         """
         return self.calib_offsets.ApplyCorrectedToolOffset()
@@ -98,7 +96,6 @@ class CalibOffsets(AnyObject):
                 |             S_OK if the operation succeeds
                 |             E_FAIL otherwise
 
-        :return: None
         :rtype: None
         """
         return self.calib_offsets.ApplyNominalBaseOffset()
@@ -120,7 +117,6 @@ class CalibOffsets(AnyObject):
                 |             S_OK if the operation succeeds
                 |             E_FAIL otherwise
 
-        :return: None
         :rtype: None
         """
         return self.calib_offsets.ApplyNominalToolOffset()
@@ -148,7 +144,6 @@ class CalibOffsets(AnyObject):
                 |             E_FAIL otherwise
 
         :param str o_calib_reference_file:
-        :return: None
         :rtype: None
         """
         return self.calib_offsets.GetCalibReferenceFile(o_calib_reference_file)
@@ -211,7 +206,6 @@ class CalibOffsets(AnyObject):
         :param float roll:
         :param float pitch:
         :param float yaw:
-        :return: None
         :rtype: None
         """
         return self.calib_offsets.GetCorrectedBaseOffset(x, y, z, roll, pitch, yaw)
@@ -260,7 +254,6 @@ class CalibOffsets(AnyObject):
         :param float roll:
         :param float pitch:
         :param float yaw:
-        :return: None
         :rtype: None
         """
         return self.calib_offsets.GetCorrectedToolOffset(x, y, z, roll, pitch, yaw)
@@ -315,7 +308,6 @@ class CalibOffsets(AnyObject):
         :param float roll:
         :param float pitch:
         :param float yaw:
-        :return: None
         :rtype: None
         """
         return self.calib_offsets.GetNominalBaseOffset(x, y, z, roll, pitch, yaw)
@@ -364,7 +356,6 @@ class CalibOffsets(AnyObject):
         :param float roll:
         :param float pitch:
         :param float yaw:
-        :return: None
         :rtype: None
         """
         return self.calib_offsets.GetNominalToolOffset(x, y, z, roll, pitch, yaw)
@@ -417,7 +408,6 @@ class CalibOffsets(AnyObject):
         :param float roll:
         :param float pitch:
         :param float yaw:
-        :return: None
         :rtype: None
         """
         return self.calib_offsets.GetReferenceBasePosition(x, y, z, roll, pitch, yaw)
@@ -445,7 +435,6 @@ class CalibOffsets(AnyObject):
                 |             E_FAIL otherwise
 
         :param str i_calib_reference_file:
-        :return: None
         :rtype: None
         """
         return self.calib_offsets.SetCalibReferenceFile(i_calib_reference_file)
@@ -500,7 +489,6 @@ class CalibOffsets(AnyObject):
         :param float roll:
         :param float pitch:
         :param float yaw:
-        :return: None
         :rtype: None
         """
         return self.calib_offsets.SetCorrectedBaseOffset(x, y, z, roll, pitch, yaw)
@@ -549,7 +537,6 @@ class CalibOffsets(AnyObject):
         :param float roll:
         :param float pitch:
         :param float yaw:
-        :return: None
         :rtype: None
         """
         return self.calib_offsets.SetCorrectedToolOffset(x, y, z, roll, pitch, yaw)
@@ -604,7 +591,6 @@ class CalibOffsets(AnyObject):
         :param float roll:
         :param float pitch:
         :param float yaw:
-        :return: None
         :rtype: None
         """
         return self.calib_offsets.SetNominalBaseOffset(x, y, z, roll, pitch, yaw)
@@ -653,7 +639,6 @@ class CalibOffsets(AnyObject):
         :param float roll:
         :param float pitch:
         :param float yaw:
-        :return: None
         :rtype: None
         """
         return self.calib_offsets.SetNominalToolOffset(x, y, z, roll, pitch, yaw)
@@ -701,7 +686,6 @@ class CalibOffsets(AnyObject):
         :param float roll:
         :param float pitch:
         :param float yaw:
-        :return: None
         :rtype: None
         """
         return self.calib_offsets.SetReferenceBasePosition(x, y, z, roll, pitch, yaw)

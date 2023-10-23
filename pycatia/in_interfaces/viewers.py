@@ -72,7 +72,6 @@ class Viewers(Collection):
                 |      Set MyViewer = Viewer.Item(2)
 
         :param int i_index:
-        :return: Viewer
         :rtype: Viewer
         """
         return Viewer(self.viewers.Item(i_index))

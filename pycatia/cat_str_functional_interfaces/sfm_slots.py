@@ -100,7 +100,6 @@ class SFMSlots(Collection):
         :param Reference i_penetrating_object:
         :param str i_slot_name:
         :param SFMConnectionParameters i_list_parameters:
-        :return: SFMSlot
         :rtype: SFMSlot
         """
         return SFMSlot(
@@ -145,7 +144,6 @@ class SFMSlots(Collection):
                 |              Next
 
         :param cat_variant i_index:
-        :return: SFMSlot
         :rtype: SFMSlot
         """
         return SFMSlot(self.sfm_slots.Item(i_index))
@@ -178,7 +176,6 @@ class SFMSlots(Collection):
                 |              SlotsonPlate.RemoveSlot(SlotObj)
 
         :param SFMSlot i_sfm_slot:
-        :return: None
         :rtype: None
         """
         return self.sfm_slots.RemoveSlot(i_sfm_slot.com_object)

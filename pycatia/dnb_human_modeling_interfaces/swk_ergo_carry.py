@@ -47,7 +47,6 @@ class SWKErgoCarry(AnyObject):
                 |     This distance must specified at least once.
                 |     Failure to do so will result in invalid output values.
 
-        :return: str
         :rtype: str
         """
 
@@ -75,7 +74,6 @@ class SWKErgoCarry(AnyObject):
                 |     be specified before attempting to retrieve any output value from the
                 |     study. Failure to do so will result in invalid output values.
 
-        :return: float
         :rtype: float
         """
 
@@ -101,7 +99,6 @@ class SWKErgoCarry(AnyObject):
                 |     This field is the maximum weight that can be carried force, given the
                 |     current input guidelines.
 
-        :return: str
         :rtype: str
         """
 
@@ -122,7 +119,6 @@ class SWKErgoCarry(AnyObject):
                 |     specified at least once.
                 |     Failure to do so will result in invalid output values.
 
-        :return: float
         :rtype: float
         """
 

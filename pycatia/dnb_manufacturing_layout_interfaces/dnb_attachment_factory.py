@@ -68,7 +68,6 @@ class DnbAttachmentFactory(AnyObject):
         :param AnyObject i_parent:
         :param AnyObject i_child:
         :param AnyObject o_attachment:
-        :return: None
         :rtype: None
         """
         return self.dnb_attachment_factory.Attach(i_parent.com_object, i_child.com_object, o_attachment.com_object)
@@ -92,7 +91,6 @@ class DnbAttachmentFactory(AnyObject):
                 |         An HRESULT
 
         :param AnyObject i_attachment:
-        :return: None
         :rtype: None
         """
         return self.dnb_attachment_factory.Remove(i_attachment.com_object)

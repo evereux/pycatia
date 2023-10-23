@@ -57,7 +57,6 @@ class Shuttles(Collection):
                 | 
                 |          Set newShuttles = Shuttles.Add
 
-        :return: Shuttle
         :rtype: Shuttle
         """
         return Shuttle(self.shuttles.Add())
@@ -81,7 +80,6 @@ class Shuttles(Collection):
                 | 
                 |          Set newShuttles = Shuttles.Add
 
-        :return: Shuttle
         :rtype: Shuttle
         """
         return Shuttle(self.shuttles.AddFromSel())
@@ -95,7 +93,6 @@ class Shuttles(Collection):
                 | o Func Item(CATVariant iIndex) As Shuttle
 
         :param cat_variant i_index:
-        :return: Shuttle
         :rtype: Shuttle
         """
         return Shuttle(self.shuttles.Item(i_index))
@@ -109,7 +106,6 @@ class Shuttles(Collection):
                 | o Sub Remove(Shuttle iShuttle)
 
         :param Shuttle i_shuttle:
-        :return: None
         :rtype: None
         """
         return self.shuttles.Remove(i_shuttle.com_object)

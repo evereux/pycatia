@@ -71,7 +71,6 @@ class ExpertCheck(ExpertCheckRuntime):
                 | 
                 |          Check1.Body = "H.Diameter > 20mm AND GetSubString(P.Name, 1, 6) == "myPad."
 
-        :return: str
         :rtype: str
         """
 
@@ -101,7 +100,6 @@ class ExpertCheck(ExpertCheckRuntime):
                 |     2
                 |         VB Script
 
-        :return: int
         :rtype: int
         """
 
@@ -130,7 +128,6 @@ class ExpertCheck(ExpertCheckRuntime):
                 | 
                 |          Check1.Variables = "H:Hole; P: Pad"
 
-        :return: str
         :rtype: str
         """
 

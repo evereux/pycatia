@@ -63,7 +63,6 @@ class Distances(Collection):
                 |             Dim NewDistance As Distance
                 |             Set NewDistance = TheDistances.Add
 
-        :return: Distance
         :rtype: Distance
         """
         return Distance(self.distances.Add())
@@ -90,7 +89,6 @@ class Distances(Collection):
                 |             Dim NewDistance As Distance
                 |             Set NewDistance = TheDistances.AddFromSel
 
-        :return: Distance
         :rtype: Distance
         """
         return Distance(self.distances.AddFromSel())
@@ -130,7 +128,6 @@ class Distances(Collection):
                 |             Set ThatDistance = TheDistances.Item("Distance Of MyProduct")
 
         :param cat_variant i_index:
-        :return: Distance
         :rtype: Distance
         """
         return Distance(self.distances.Item(i_index))
@@ -166,7 +163,6 @@ class Distances(Collection):
                 |             TheDistances.Remove("Distance Of MyProduct")
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.distances.Remove(i_index)

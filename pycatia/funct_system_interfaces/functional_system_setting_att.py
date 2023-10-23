@@ -60,7 +60,6 @@ class FunctionalSystemSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: int
         :rtype: int
         """
 
@@ -100,7 +99,6 @@ class FunctionalSystemSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: int
         :rtype: int
         """
 
@@ -137,7 +135,6 @@ class FunctionalSystemSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: int
         :rtype: int
         """
 
@@ -169,7 +166,6 @@ class FunctionalSystemSettingAtt(SettingController):
                 |             False :
                 |             True:
 
-        :return: int
         :rtype: int
         """
 
@@ -203,7 +199,6 @@ class FunctionalSystemSettingAtt(SettingController):
                 |             False :
                 |             True :
 
-        :return: int
         :rtype: int
         """
 
@@ -240,7 +235,6 @@ class FunctionalSystemSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: int
         :rtype: int
         """
 
@@ -276,7 +270,6 @@ class FunctionalSystemSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: str
         :rtype: str
         """
 
@@ -310,7 +303,6 @@ class FunctionalSystemSettingAtt(SettingController):
                 |             0 : indicate a current association with PPR links.
                 |             1: indicate a current generative script.
 
-        :return: int
         :rtype: int
         """
 
@@ -357,7 +349,6 @@ class FunctionalSystemSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.functional_system_setting_att.GetDocumentContentAtCreationInfo(io_admin_level, io_locked)
@@ -395,7 +386,6 @@ class FunctionalSystemSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.functional_system_setting_att.GetFunctionalActionPresentationInfo(io_admin_level, io_locked)
@@ -432,7 +422,6 @@ class FunctionalSystemSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.functional_system_setting_att.GetShowParametersInfo(io_admin_level, io_locked)
@@ -469,7 +458,6 @@ class FunctionalSystemSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.functional_system_setting_att.GetShowRelationsInfo(io_admin_level, io_locked)
@@ -507,7 +495,6 @@ class FunctionalSystemSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.functional_system_setting_att.GetShowSynchroStatusOfLocalParamCacheInfo(io_admin_level, io_locked)
@@ -545,7 +532,6 @@ class FunctionalSystemSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.functional_system_setting_att.GetSplitFunctionalObjectNameInfo(io_admin_level, io_locked)
@@ -583,7 +569,6 @@ class FunctionalSystemSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.functional_system_setting_att.GetStringUsedAsCarriageReturnInfo(io_admin_level, io_locked)
@@ -621,7 +606,6 @@ class FunctionalSystemSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.functional_system_setting_att.GetTypeOfIconOnFunctionalElementInfo(io_admin_level, io_locked)
@@ -653,7 +637,6 @@ class FunctionalSystemSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.functional_system_setting_att.SetDocumentContentAtCreationLock(i_locked)
@@ -701,7 +684,6 @@ class FunctionalSystemSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.functional_system_setting_att.SetFunctionalActionPresentationLock(i_locked)
@@ -748,7 +730,6 @@ class FunctionalSystemSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.functional_system_setting_att.SetShowParametersLock(i_locked)
@@ -795,7 +776,6 @@ class FunctionalSystemSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.functional_system_setting_att.SetShowRelationsLock(i_locked)
@@ -844,7 +824,6 @@ class FunctionalSystemSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.functional_system_setting_att.SetShowSynchroStatusOfLocalParamCacheLock(i_locked)
@@ -891,7 +870,6 @@ class FunctionalSystemSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.functional_system_setting_att.SetSplitFunctionalObjectNameLock(i_locked)
@@ -933,7 +911,6 @@ class FunctionalSystemSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.functional_system_setting_att.SetStringUsedAsCarriageReturnLock(i_locked)
@@ -981,7 +958,6 @@ class FunctionalSystemSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.functional_system_setting_att.SetTypeOfIconOnFunctionalElementLock(i_locked)

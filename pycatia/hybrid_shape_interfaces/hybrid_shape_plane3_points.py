@@ -68,7 +68,6 @@ class HybridShapePlane3Points(Plane):
                 |      Dim FirstPoint As Reference
                 |      Set FirstPoint = Plane3Points.First
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -100,7 +99,6 @@ class HybridShapePlane3Points(Plane):
                 |      Dim SecondPoint As Reference
                 |      Set SecondPoint = Plane3Points.Second
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -132,7 +130,6 @@ class HybridShapePlane3Points(Plane):
                 |      Dim ThridPoint As Reference
                 |      Set ThirdPoint = Plane3Points.Third
 
-        :return: Reference
         :rtype: Reference
         """
 

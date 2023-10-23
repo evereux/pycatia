@@ -85,7 +85,6 @@ class Constraint(AnyObject):
                 |                  angleSector = angleCst.AngleSector
                 |                  angleCst.AngleSector = 2
 
-        :return: int
         :rtype: int
         """
 
@@ -119,7 +118,6 @@ class Constraint(AnyObject):
                 |
                 |          Set cstDimension = firstCst.Dimension
 
-        :return: Dimension
         :rtype: Dimension
         """
 
@@ -146,7 +144,6 @@ class Constraint(AnyObject):
                 |
                 |          distCstConfig = distCst.DistanceConfig
 
-        :return: int
         :rtype: int
         """
 
@@ -177,7 +174,6 @@ class Constraint(AnyObject):
                 | 
                 |          distCstConfig = distCst.DistanceDirection
 
-        :return: int
         :rtype: int
         """
 
@@ -211,7 +207,6 @@ class Constraint(AnyObject):
                 |
                 |          currentMode = distCst.Mode
 
-        :return: int
         :rtype: int
         """
 
@@ -245,7 +240,6 @@ class Constraint(AnyObject):
                 |
                 |          distCstOrient = distCst.Orientation
 
-        :return: int
         :rtype: int
         """
 
@@ -279,7 +273,6 @@ class Constraint(AnyObject):
                 |
                 |          refAxis = axisPerpCst.ReferenceAxis
 
-        :return: int
         :rtype: int
         """
 
@@ -311,7 +304,6 @@ class Constraint(AnyObject):
                 |
                 |          refCst2.ReferenceType = refCst1.ReferenceType
 
-        :return: int
         :rtype: int
         """
 
@@ -344,7 +336,6 @@ class Constraint(AnyObject):
                 |
                 |          distCstSide = distCst.Side
 
-        :return: int
         :rtype: int
         """
 
@@ -376,7 +367,6 @@ class Constraint(AnyObject):
                 |
                 |          distCstSts = distCst.Status
 
-        :return: int
         :rtype: int
         """
 
@@ -399,7 +389,6 @@ class Constraint(AnyObject):
                 |
                 |          cstType = firstCst.Type
 
-        :return: int
         :rtype: int
         """
 
@@ -424,7 +413,6 @@ class Constraint(AnyObject):
                 |
                 |      tangencyCst.Activate
 
-        :return: None
         :rtype: None
         """
         return self.constraint.Activate()
@@ -447,7 +435,6 @@ class Constraint(AnyObject):
                 |
                 |      tangencyCst.Deactivate
 
-        :return: None
         :rtype: None
         """
         return self.constraint.Deactivate()
@@ -480,7 +467,6 @@ class Constraint(AnyObject):
                 |          reference1=tangencyCst.GetConstraintElement( 1 )
 
         :param int i_element_number:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.constraint.GetConstraintElement(i_element_number))
@@ -521,7 +507,6 @@ class Constraint(AnyObject):
 
         :param tuple o_anchor_point:
         :param tuple o_anchor_vector:
-        :return: None
         :rtype: None
         """
         return self.constraint.GetConstraintVisuLocation(o_anchor_point, o_anchor_vector)
@@ -559,7 +544,6 @@ class Constraint(AnyObject):
                 |
                 |      Set isInactive = tangencyCst.IsInactive
 
-        :return: bool
         :rtype: bool
         """
         return self.constraint.IsInactive()
@@ -592,7 +576,6 @@ class Constraint(AnyObject):
 
         :param int i_element_number:
         :param Reference i_new_element:
-        :return: None
         :rtype: None
         """
         return self.constraint.SetConstraintElement(i_element_number, i_new_element.com_object)
@@ -645,7 +628,6 @@ class Constraint(AnyObject):
         :param float i_new_x:
         :param float i_new_y:
         :param float i_new_z:
-        :return: None
         :rtype: None
         """
         return self.constraint.SetConstraintVisuLocation(i_new_x, i_new_y, i_new_z)

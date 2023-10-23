@@ -48,7 +48,6 @@ class StrCutback(AssemblyFeature):
                 | 
                 |     Returns the parameter defining the offset.
 
-        :return: Parameter
         :rtype: Parameter
         """
 
@@ -71,7 +70,6 @@ class StrCutback(AssemblyFeature):
                 | 
                 |          Type = Member.Type
 
-        :return: int
         :rtype: int
         """
 

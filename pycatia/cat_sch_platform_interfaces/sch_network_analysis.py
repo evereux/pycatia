@@ -69,7 +69,6 @@ class SchNetworkAnalysis(AnyObject):
 
         :param SchAppConnectable i_from_object:
         :param SchAppConnectable i_to_object:
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.sch_network_analysis.FindPaths(i_from_object.com_object, i_to_object.com_object))
@@ -97,7 +96,6 @@ class SchNetworkAnalysis(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.ListExtremityObjects
 
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.sch_network_analysis.ListExtremityObjects())
@@ -125,7 +123,6 @@ class SchNetworkAnalysis(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.ListNetworkObjects
 
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.sch_network_analysis.ListNetworkObjects())

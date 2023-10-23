@@ -62,7 +62,6 @@ class Viewer(AnyObject):
                 | 
                 |          IsFullScreen = MyViewer.FullScreen
 
-        :return: bool
         :rtype: bool
         """
 
@@ -93,7 +92,6 @@ class Viewer(AnyObject):
                 | 
                 |          h = MyViewer.Height
 
-        :return: int
         :rtype: int
         """
 
@@ -116,7 +114,6 @@ class Viewer(AnyObject):
                 | 
                 |          w = MyViewer.Width
 
-        :return: int
         :rtype: int
         """
 
@@ -138,7 +135,6 @@ class Viewer(AnyObject):
                 | 
                 |          MyWindow.Viewers(1).Activate()
 
-        :return: None
         :rtype: None
         """
         return self.viewer.Activate()
@@ -173,7 +169,6 @@ class Viewer(AnyObject):
 
         :param int i_format:
         :param str i_file:
-        :return: None
         :rtype: None
         """
         return self.viewer.CaptureToFile(i_format, i_file)
@@ -198,7 +193,6 @@ class Viewer(AnyObject):
                 |          MyViewer.GetBackgroundColor color
 
         :param tuple color:
-        :return: None
         :rtype: None
         """
         vba_function_name = 'get_background_color'
@@ -240,7 +234,6 @@ class Viewer(AnyObject):
                 |          Dim MyCamera As Camera
                 |          Set MyCamera = MyViewer.NewCamera()
 
-        :return: Camera
         :rtype: Camera
         """
         return Camera(self.viewer.NewCamera())
@@ -264,7 +257,6 @@ class Viewer(AnyObject):
                 |          MyViewer.PutBackgroundColor Array(0, 0, 1)
 
         :param tuple color:
-        :return: None
         :rtype: None
         """
         return self.viewer.PutBackgroundColor(color)
@@ -303,7 +295,6 @@ class Viewer(AnyObject):
                 | 
                 |          MyViewer.Reframe()
 
-        :return: None
         :rtype: None
         """
         return self.viewer.Reframe()
@@ -326,7 +317,6 @@ class Viewer(AnyObject):
                 | 
                 |          MyViewer.Update()
 
-        :return: None
         :rtype: None
         """
         return self.viewer.Update()
@@ -347,7 +337,6 @@ class Viewer(AnyObject):
                 | 
                 |          MyViewer.ZoomIn()
 
-        :return: None
         :rtype: None
         """
         return self.viewer.ZoomIn()
@@ -368,7 +357,6 @@ class Viewer(AnyObject):
                 | 
                 |          MyViewer.ZoomOut()
 
-        :return: None
         :rtype: None
         """
         return self.viewer.ZoomOut()

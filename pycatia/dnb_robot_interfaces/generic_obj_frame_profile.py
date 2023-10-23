@@ -65,7 +65,6 @@ class GenericObjFrameProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param RobGenericController o_controller:
-        :return: None
         :rtype: None
         """
         return self.generic_obj_frame_profile.GetController(o_controller.com_object)
@@ -108,7 +107,6 @@ class GenericObjFrameProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param str o_name:
-        :return: None
         :rtype: None
         """
         return self.generic_obj_frame_profile.GetName(o_name)
@@ -157,7 +155,6 @@ class GenericObjFrameProfile(AnyObject):
         :param float roll:
         :param float pitch:
         :param float yaw:
-        :return: None
         :rtype: None
         """
         return self.generic_obj_frame_profile.GetObjectFrame(x, y, z, roll, pitch, yaw)
@@ -185,7 +182,6 @@ class GenericObjFrameProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param str i_name:
-        :return: None
         :rtype: None
         """
         return self.generic_obj_frame_profile.SetName(i_name)
@@ -234,7 +230,6 @@ class GenericObjFrameProfile(AnyObject):
         :param float roll:
         :param float pitch:
         :param float yaw:
-        :return: None
         :rtype: None
         """
         return self.generic_obj_frame_profile.SetObjectFrame(x, y, z, roll, pitch, yaw)

@@ -45,7 +45,6 @@ class Weld(AnyObject):
                 | 
                 |     Retrieves Drafting Weld annotation.
 
-        :return: DrawingWelding
         :rtype: DrawingWelding
         """
         return DrawingWelding(self.weld.Get2dAnnot())
@@ -60,7 +59,6 @@ class Weld(AnyObject):
                 | 
                 |     Gets the annotation on TPSParallelOnScreen interface.
 
-        :return: TPSParallelOnScreen
         :rtype: TPSParallelOnScreen
         """
         return TPSParallelOnScreen(self.weld.TPSParallelOnScreen())

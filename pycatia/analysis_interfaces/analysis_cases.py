@@ -58,7 +58,6 @@ class AnalysisCases(Collection):
                 |          Dim NewCase As AnalysisCase
                 |          Set NewCase = ModelAnalysis.AnalysisCases.Add()
 
-        :return: AnalysisCase
         :rtype: AnalysisCase
         """
         return AnalysisCase(self.analysis_cases.Add())
@@ -88,7 +87,6 @@ class AnalysisCases(Collection):
                 |              analysisCases.AddExistingCase(ThisAnalysisCase)
 
         :param AnalysisCase i_case:
-        :return: None
         :rtype: None
         """
         return self.analysis_cases.AddExistingCase(i_case.com_object)
@@ -141,7 +139,6 @@ class AnalysisCases(Collection):
                 |          Set ThatCase = CaseColl.Item("MyCase")
 
         :param cat_variant i_index:
-        :return: AnalysisCase
         :rtype: AnalysisCase
         """
         return AnalysisCase(self.analysis_cases.Item(i_index))
@@ -170,7 +167,6 @@ class AnalysisCases(Collection):
                 |          Set NewCase = ModelAnalysis.AnalysisCases.NewCase("AnalysisPreproCase")()
 
         :param str i_type:
-        :return: AnalysisCase
         :rtype: AnalysisCase
         """
         return AnalysisCase(self.analysis_cases.NewCase(i_type))
@@ -202,7 +198,6 @@ class AnalysisCases(Collection):
                 |          AnalysisModel.AnalysisCases.Remove (5)
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.analysis_cases.Remove(i_index)

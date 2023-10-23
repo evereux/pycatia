@@ -50,7 +50,6 @@ class AnalysisReportingSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -77,7 +76,6 @@ class AnalysisReportingSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: str
         :rtype: str
         """
 
@@ -104,7 +102,6 @@ class AnalysisReportingSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: str
         :rtype: str
         """
 
@@ -131,7 +128,6 @@ class AnalysisReportingSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -158,7 +154,6 @@ class AnalysisReportingSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -185,7 +180,6 @@ class AnalysisReportingSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -212,7 +206,6 @@ class AnalysisReportingSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: str
         :rtype: str
         """
 
@@ -258,7 +251,6 @@ class AnalysisReportingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_reporting_setting_att.GetBackgroundImageModeInfo(io_admin_level, io_locked)
@@ -295,7 +287,6 @@ class AnalysisReportingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_reporting_setting_att.GetCustomBackgroundImageInfo(io_admin_level, io_locked)
@@ -332,7 +323,6 @@ class AnalysisReportingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_reporting_setting_att.GetCustomImageFormatInfo(io_admin_level, io_locked)
@@ -369,7 +359,6 @@ class AnalysisReportingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_reporting_setting_att.GetCustomImageHeightInfo(io_admin_level, io_locked)
@@ -406,7 +395,6 @@ class AnalysisReportingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_reporting_setting_att.GetCustomImageWidthInfo(io_admin_level, io_locked)
@@ -443,7 +431,6 @@ class AnalysisReportingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_reporting_setting_att.GetImageQualityModeInfo(io_admin_level, io_locked)
@@ -480,7 +467,6 @@ class AnalysisReportingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.analysis_reporting_setting_att.GetTempOutputDirectoryInfo(io_admin_level, io_locked)
@@ -507,7 +493,6 @@ class AnalysisReportingSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_reporting_setting_att.SetBackgroundImageModeLock(i_locked)
@@ -549,7 +534,6 @@ class AnalysisReportingSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_reporting_setting_att.SetCustomBackgroundImageLock(i_locked)
@@ -591,7 +575,6 @@ class AnalysisReportingSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_reporting_setting_att.SetCustomImageFormatLock(i_locked)
@@ -633,7 +616,6 @@ class AnalysisReportingSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_reporting_setting_att.SetCustomImageHeightLock(i_locked)
@@ -675,7 +657,6 @@ class AnalysisReportingSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_reporting_setting_att.SetCustomImageWidthLock(i_locked)
@@ -717,7 +698,6 @@ class AnalysisReportingSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_reporting_setting_att.SetImageQualityModeLock(i_locked)
@@ -759,7 +739,6 @@ class AnalysisReportingSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.analysis_reporting_setting_att.SetTempOutputDirectoryLock(i_locked)

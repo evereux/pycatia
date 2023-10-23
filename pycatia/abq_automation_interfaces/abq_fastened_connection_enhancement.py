@@ -47,7 +47,6 @@ class ABQFastenedConnectionEnhancement(ABQInteraction):
                 | 
                 |     Sets or returns the adjust slave node flag.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -72,7 +71,6 @@ class ABQFastenedConnectionEnhancement(ABQInteraction):
                 | 
                 |     Sets or returns the connection property.
 
-        :return: AnalysisEntity
         :rtype: AnalysisEntity
         """
 
@@ -106,7 +104,6 @@ class ABQFastenedConnectionEnhancement(ABQInteraction):
                 |         SURFACETOSURFACE
                 |         NODETOSURFACE
 
-        :return: int
         :rtype: int
         """
 
@@ -131,7 +128,6 @@ class ABQFastenedConnectionEnhancement(ABQInteraction):
                 | 
                 |     Sets or returns the include shell element thickness flag.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -156,7 +152,6 @@ class ABQFastenedConnectionEnhancement(ABQInteraction):
                 | 
                 |     Sets or returns the invert master surface flag.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -181,7 +176,6 @@ class ABQFastenedConnectionEnhancement(ABQInteraction):
                 | 
                 |     Sets or returns the invert slave surface flag.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -214,7 +208,6 @@ class ABQFastenedConnectionEnhancement(ABQInteraction):
                 |         COMPUTED
                 |         SPECIFIED
 
-        :return: int
         :rtype: int
         """
 
@@ -239,7 +232,6 @@ class ABQFastenedConnectionEnhancement(ABQInteraction):
                 | 
                 |     Sets or returns the position tolerance value
 
-        :return: float
         :rtype: float
         """
 
@@ -264,7 +256,6 @@ class ABQFastenedConnectionEnhancement(ABQInteraction):
                 | 
                 |     Sets or returns the swap master/slave surface flag.
 
-        :return: bool
         :rtype: bool
         """
 

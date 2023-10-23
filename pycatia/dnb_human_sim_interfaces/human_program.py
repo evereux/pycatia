@@ -49,7 +49,6 @@ class HumanProgram(AnyObject):
                 |     Returns:
                 |         oTaskList
 
-        :return: HumanTaskList
         :rtype: HumanTaskList
         """
 
@@ -68,7 +67,6 @@ class HumanProgram(AnyObject):
                 |     Returns:
                 |         oManikin
 
-        :return: HumanTask
         :rtype: HumanTask
         """
         return HumanTask(self.human_program.CreateHumanTask())

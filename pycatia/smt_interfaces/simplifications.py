@@ -61,7 +61,6 @@ class Simplifications(Collection):
 
         :param Group group_of_selected_products:
         :param float i_accuracy:
-        :return: Document
         :rtype: Document
         """
         return Document(self.simplifications.ComputeSimplification(group_of_selected_products.com_object, i_accuracy))
@@ -101,7 +100,6 @@ class Simplifications(Collection):
         :param Group i_group_of_selected_products:
         :param Product i_reference_product:
         :param float i_accuracy:
-        :return: Document
         :rtype: Document
         """
         return Document(
@@ -122,7 +120,6 @@ class Simplifications(Collection):
                 | 
                 |     Returns the name of the associated shape.
 
-        :return: str
         :rtype: str
         """
         return self.simplifications.SimplificationShapeName()

@@ -52,7 +52,6 @@ class ABQIAABQBaseMotionVB(ABQBoundaryCondition):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property BaseMotionType() As CATBSTR
 
-        :return: str
         :rtype: str
         """
 
@@ -75,7 +74,6 @@ class ABQIAABQBaseMotionVB(ABQBoundaryCondition):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property BaseType() As short
 
-        :return: int
         :rtype: int
         """
 
@@ -98,7 +96,6 @@ class ABQIAABQBaseMotionVB(ABQBoundaryCondition):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property ClampSupport() As ABQClampBC
 
-        :return: ABQClampBC
         :rtype: ABQClampBC
         """
 
@@ -121,7 +118,6 @@ class ABQIAABQBaseMotionVB(ABQBoundaryCondition):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property DOF() As double
 
-        :return: float
         :rtype: float
         """
 
@@ -144,7 +140,6 @@ class ABQIAABQBaseMotionVB(ABQBoundaryCondition):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property DataType() As boolean
 
-        :return: bool
         :rtype: bool
         """
 
@@ -167,7 +162,6 @@ class ABQIAABQBaseMotionVB(ABQBoundaryCondition):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property DispBCSupport() As ABQDisplacementBC
 
-        :return: ABQDisplacementBC
         :rtype: ABQDisplacementBC
         """
 
@@ -191,7 +185,6 @@ class ABQIAABQBaseMotionVB(ABQBoundaryCondition):
                 | o Property FrequencyDataValues(CATSafeArrayVariant iFreqDataVal) (Write
                 | Only)
 
-        :return: int
         :rtype: int
         """
 
@@ -215,7 +208,6 @@ class ABQIAABQBaseMotionVB(ABQBoundaryCondition):
                 | o Property ImaginaryDataValues(CATSafeArrayVariant iImaginaryDataValues)
                 | (Write Only)
 
-        :return: False
         :rtype: False
         """
 
@@ -239,7 +231,6 @@ class ABQIAABQBaseMotionVB(ABQBoundaryCondition):
                 | o Property RealDataValues(CATSafeArrayVariant iRealDataVal) (Write
                 | Only)
 
-        :return: False
         :rtype: False
         """
 
@@ -262,7 +253,6 @@ class ABQIAABQBaseMotionVB(ABQBoundaryCondition):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property Scale() As double
 
-        :return: float
         :rtype: float
         """
 
@@ -287,7 +277,6 @@ class ABQIAABQBaseMotionVB(ABQBoundaryCondition):
 
         :param Product i_product:
         :param Reference i_ref:
-        :return: None
         :rtype: None
         """
         return self.abqiaabq_base_motion_vb.AddCentreOfRotation(i_product.com_object, i_ref.com_object)

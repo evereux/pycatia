@@ -80,7 +80,6 @@ class MHILoadParameters(AnyObject):
                 |     Returns:
                 |         S_OK in one/more IDs returned S_FALSE if empty output list
 
-        :return: tuple
         :rtype: tuple
         """
         return self.mhi_load_parameters.GetBranchIDs()
@@ -103,7 +102,6 @@ class MHILoadParameters(AnyObject):
                 |     Returns:
                 |         S_OK if non-empty string returned S_FALSE if empty string
 
-        :return: str
         :rtype: str
         """
         return self.mhi_load_parameters.GetDetailingID()
@@ -128,7 +126,6 @@ class MHILoadParameters(AnyObject):
                 |     Returns:
                 |         S_OK if non-empty string returned S_FALSE if empty string
 
-        :return: str
         :rtype: str
         """
         return self.mhi_load_parameters.GetProcessTreeID()
@@ -153,7 +150,6 @@ class MHILoadParameters(AnyObject):
                 |     Returns:
                 |         S_OK if non-empty string returned S_FALSE if empty string
 
-        :return: str
         :rtype: str
         """
         return self.mhi_load_parameters.GetProductBOMID()
@@ -178,7 +174,6 @@ class MHILoadParameters(AnyObject):
                 |     Returns:
                 |         S_OK if non-empty string returned S_FALSE if empty string
 
-        :return: str
         :rtype: str
         """
         return self.mhi_load_parameters.GetResourceTreeID()
@@ -202,7 +197,6 @@ class MHILoadParameters(AnyObject):
                 |     Returns:
                 |         S_OK if non-empty string returned S_FALSE if empty string
 
-        :return: str
         :rtype: str
         """
         return self.mhi_load_parameters.GetSelectedObjectID()
@@ -245,7 +239,6 @@ class MHILoadParameters(AnyObject):
                 |         S_OK in all cases
 
         :param tuple i_list_branch_i_ds:
-        :return: None
         :rtype: None
         """
         return self.mhi_load_parameters.SetBranchIDs(i_list_branch_i_ds)
@@ -284,7 +277,6 @@ class MHILoadParameters(AnyObject):
                 |         S_OK in all cases
 
         :param str i_detailing_id:
-        :return: None
         :rtype: None
         """
         return self.mhi_load_parameters.SetDetailingID(i_detailing_id)
@@ -509,7 +501,6 @@ class MHILoadParameters(AnyObject):
                 |         S_OK if all OK E_INVALIDARG if incorrect input format
 
         :param str i_filters:
-        :return: None
         :rtype: None
         """
         return self.mhi_load_parameters.SetFilters(i_filters)
@@ -535,7 +526,6 @@ class MHILoadParameters(AnyObject):
                 |         S_OK in all cases
 
         :param str i_process_tree_id:
-        :return: None
         :rtype: None
         """
         return self.mhi_load_parameters.SetProcessTreeID(i_process_tree_id)
@@ -561,7 +551,6 @@ class MHILoadParameters(AnyObject):
                 |         S_OK in all cases
 
         :param str i_product_bomid:
-        :return: None
         :rtype: None
         """
         return self.mhi_load_parameters.SetProductBOMID(i_product_bomid)
@@ -587,7 +576,6 @@ class MHILoadParameters(AnyObject):
                 |         S_OK in all cases
 
         :param str i_resource_tree_id:
-        :return: None
         :rtype: None
         """
         return self.mhi_load_parameters.SetResourceTreeID(i_resource_tree_id)
@@ -612,7 +600,6 @@ class MHILoadParameters(AnyObject):
                 |         S_OK in all cases
 
         :param str i_selected_object_id:
-        :return: None
         :rtype: None
         """
         return self.mhi_load_parameters.SetSelectedObjectID(i_selected_object_id)

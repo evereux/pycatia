@@ -61,7 +61,6 @@ class Viewpoint2D(AnyObject):
                 |           NiceViewpoint.Zoom(ZoomFactor)
                 |          End If
 
-        :return: float
         :rtype: float
         """
 
@@ -93,7 +92,6 @@ class Viewpoint2D(AnyObject):
                 |          NiceViewpoint.GetOrigin origin
 
         :param tuple o_origin:
-        :return: None
         :rtype: None
         """
         return self.viewpoint_2d.GetOrigin(o_origin)
@@ -130,7 +128,6 @@ class Viewpoint2D(AnyObject):
                 |          NiceViewpoint.PutOrigin Array(5, 8)
 
         :param tuple o_origin:
-        :return: None
         :rtype: None
         """
         return self.viewpoint_2d.PutOrigin(o_origin)

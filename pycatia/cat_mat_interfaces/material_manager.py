@@ -59,7 +59,6 @@ class MaterialManager(AnyObject):
         :param Body i_body:
         :param Material i_material:
         :param int i_link_mode:
-        :return: None
         :rtype: None
         """
         self.material_manager.ApplyMaterialOnBody(
@@ -89,7 +88,6 @@ class MaterialManager(AnyObject):
         :param HybridBody i_hybrid_body:
         :param Material i_material:
         :param int i_link_mode:
-        :return: None
         :rtype: None
         """
         self.material_manager.ApplyMaterialOnHybridBody(
@@ -116,7 +114,6 @@ class MaterialManager(AnyObject):
         :param Part i_part:
         :param Material i_material:
         :param int i_link_mode:
-        :return: None
         :rtype: None
         """
         self.material_manager.ApplyMaterialOnPart(
@@ -146,7 +143,6 @@ class MaterialManager(AnyObject):
         :param Product i_product:
         :param Material i_material:
         :param int i_link_mode:
-        :return: None
         :rtype: None
         """
         self.material_manager.ApplyMaterialOnProduct(
@@ -179,7 +175,6 @@ class MaterialManager(AnyObject):
         :param AnyObject i_user_material:
         :param Material i_material:
         :param int i_link_mode:
-        :return: None
         :rtype: None
         """
         self.material_manager.ApplyMaterialOnUserMaterial(
@@ -202,7 +197,6 @@ class MaterialManager(AnyObject):
 
         :param Body i_body:
         :param Material o_material:
-        :return: None
         :rtype: None
         """
         vba_function_name = "get_material_on_body"
@@ -234,7 +228,6 @@ class MaterialManager(AnyObject):
 
         :param HybridBody i_hybrid_body:
         :param Material o_material:
-        :return: None
         :rtype: None
         """
         vba_function_name = "get_material_on_hybrid_body"
@@ -269,7 +262,6 @@ class MaterialManager(AnyObject):
 
         :param Part i_part:
         :param Material o_material:
-        :return: None
         :rtype: None
         """
         vba_function_name = "get_material_on_part"
@@ -301,7 +293,6 @@ class MaterialManager(AnyObject):
 
         :param Product i_product:
         :param Material o_material:
-        :return: None
         :rtype: None
         """
         vba_function_name = "get_material_on_product"
@@ -335,7 +326,6 @@ class MaterialManager(AnyObject):
 
         :param AnyObject i_user_material:
         :param Material o_material:
-        :return: None
         :rtype: None
         """
         vba_function_name = "get_material_on_user_material"
@@ -373,7 +363,6 @@ class MaterialManager(AnyObject):
 
         :param Material i_material1:
         :param Material i_material2:
-        :return: None
         :rtype: None
         """
         self.material_manager.ReplaceMaterialLinks(i_material1, i_material2)

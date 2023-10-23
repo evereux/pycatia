@@ -53,7 +53,6 @@ class PSPCntrFlow(AnyObject):
                 |           ...
                 |          Set ojArg1 = objThisIntf.FlowCapability
 
-        :return: int
         :rtype: int
         """
 
@@ -85,7 +84,6 @@ class PSPCntrFlow(AnyObject):
                 |           ...
                 |          Set ojArg1 = objThisIntf.FlowReality
 
-        :return: int
         :rtype: int
         """
 

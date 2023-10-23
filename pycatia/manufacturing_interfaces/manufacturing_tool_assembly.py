@@ -58,7 +58,6 @@ class ManufacturingToolAssembly(AnyObject):
                 | 
                 |          Set Type=CurrentAssembly.AssemblyType
 
-        :return: str
         :rtype: str
         """
 
@@ -83,7 +82,6 @@ class ManufacturingToolAssembly(AnyObject):
                 | 
                 |          Comment=CurrentAssembly.Comment
 
-        :return: str
         :rtype: str
         """
 
@@ -109,7 +107,6 @@ class ManufacturingToolAssembly(AnyObject):
                 | 
                 |          Set Insert = CurrentAssembly.Insert
 
-        :return: ManufacturingInsert
         :rtype: ManufacturingInsert
         """
 
@@ -134,7 +131,6 @@ class ManufacturingToolAssembly(AnyObject):
                 | 
                 |          Number = CurrentAssembly.NumberOfAttributes
 
-        :return: int
         :rtype: int
         """
 
@@ -160,7 +156,6 @@ class ManufacturingToolAssembly(AnyObject):
                 | 
                 |          Set Tool = CurrentAssembly.Tool
 
-        :return: ManufacturingTool
         :rtype: ManufacturingTool
         """
 
@@ -185,7 +180,6 @@ class ManufacturingToolAssembly(AnyObject):
                 | 
                 |          Number = CurrentAssembly.ToolNumber
 
-        :return: int
         :rtype: int
         """
 
@@ -220,7 +214,6 @@ class ManufacturingToolAssembly(AnyObject):
                 |          Set Diameter = CurrentAssembly.GetAttribute(MfgDiameter)
 
         :param str i_attribute:
-        :return: Parameter
         :rtype: Parameter
         """
         return Parameter(self.manufacturing_tool_assembly.GetAttribute(i_attribute))
@@ -253,7 +246,6 @@ class ManufacturingToolAssembly(AnyObject):
                 |          NLSresult = CurrentAssembly.GetAttributeNLSName("MFG_COMMENT")
 
         :param str i_attribute_name:
-        :return: str
         :rtype: str
         """
         return self.manufacturing_tool_assembly.GetAttributeNLSName(i_attribute_name)
@@ -288,7 +280,6 @@ class ManufacturingToolAssembly(AnyObject):
                 |          call CurrentAssembly.GetListOfAttributeUnits(TabAttributeUnits)
 
         :param tuple io_list_of_attribute_units:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_tool_assembly.GetListOfAttributeUnits(io_list_of_attribute_units)
@@ -336,7 +327,6 @@ class ManufacturingToolAssembly(AnyObject):
                 |          CurrentAssembly.GetListOfAttributes(TabAttributes)
 
         :param tuple io_list_of_attributes:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_tool_assembly.GetListOfAttributes(io_list_of_attributes)

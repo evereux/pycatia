@@ -71,7 +71,6 @@ class HybridShapeCorner(HybridShape):
                 | 
                 |          hybShpCorner.BeginOfCorner = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -105,7 +104,6 @@ class HybridShapeCorner(HybridShape):
                 |          Dim lCornerType As long
                 |          lCornerType = hybShpCorner.CornerType
 
-        :return: int
         :rtype: int
         """
 
@@ -142,7 +140,6 @@ class HybridShapeCorner(HybridShape):
                 | 
                 |          hybShpCorner.Direction = hybShpDirection
 
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
 
@@ -179,7 +176,6 @@ class HybridShapeCorner(HybridShape):
                 | 
                 |          hybShpCorner.DiscriminationIndex = 2
 
-        :return: int
         :rtype: int
         """
 
@@ -217,7 +213,6 @@ class HybridShapeCorner(HybridShape):
                 |          Dim fisrtElt As CATIAReference
                 |          fisrtElt = hybShpCorner.FirstElem
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -258,7 +253,6 @@ class HybridShapeCorner(HybridShape):
                 |          Dim firstOrient As long
                 |          firstOrient = hybShpCorner.FirstOrientation
 
-        :return: int
         :rtype: int
         """
 
@@ -294,7 +288,6 @@ class HybridShapeCorner(HybridShape):
                 |          Dim firstOrient As long
                 |          firstOrient = hybShpCorner.FirstTangentOrientation
 
-        :return: int
         :rtype: int
         """
 
@@ -328,7 +321,6 @@ class HybridShapeCorner(HybridShape):
                 |          Dim bOnVertex As boolean
                 |          bOnVertex = hybShpCorner.OnVertex
 
-        :return: bool
         :rtype: bool
         """
 
@@ -362,7 +354,6 @@ class HybridShapeCorner(HybridShape):
                 |          Dim radius As CATIALength
                 |          radius = hybShpCorner.Radius
 
-        :return: Length
         :rtype: Length
         """
 
@@ -392,7 +383,6 @@ class HybridShapeCorner(HybridShape):
                 |          Dim secondElt As CATIAReference
                 |          secondElt = hybShpCorner.SecondElem
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -434,7 +424,6 @@ class HybridShapeCorner(HybridShape):
                 | 
                 |          hybShpCorner.SecondOrientation = -1
 
-        :return: int
         :rtype: int
         """
 
@@ -470,7 +459,6 @@ class HybridShapeCorner(HybridShape):
                 |          Dim secondOrient As long
                 |          firstOrient = hybShpCorner.SecondTangentOrientation
 
-        :return: int
         :rtype: int
         """
 
@@ -506,7 +494,6 @@ class HybridShapeCorner(HybridShape):
                 | 
                 |          hybShpCorner.Support = supportSurf
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -544,7 +531,6 @@ class HybridShapeCorner(HybridShape):
                 | 
                 |          hybShpCorner.Trim = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -584,7 +570,6 @@ class HybridShapeCorner(HybridShape):
                 | 
                 |          hybShpCorner.TrimMode = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -618,7 +603,6 @@ class HybridShapeCorner(HybridShape):
                 | 
                 |          hybShpCorner.InvertFirstOrientation
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_corner.InvertFirstOrientation()
@@ -643,7 +627,6 @@ class HybridShapeCorner(HybridShape):
                 | 
                 |          hybShpCorner.InvertSecondOrientation
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_corner.InvertSecondOrientation()

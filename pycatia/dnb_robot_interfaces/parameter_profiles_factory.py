@@ -134,7 +134,6 @@ class ParameterProfilesFactory(AnyObject):
         :param str i_profile_type:
         :param str i_instance_name:
         :param ParameterProfiles o_app_parameter_profile:
-        :return: None
         :rtype: None
         """
         return self.parameter_profiles_factory.CreateProfileInstance(
@@ -188,7 +187,6 @@ class ParameterProfilesFactory(AnyObject):
                 |            MyProfileFactory.DeleteProfileInstance(MyProfileToDelete);
 
         :param ParameterProfiles io_parameter_profile:
-        :return: None
         :rtype: None
         """
         return self.parameter_profiles_factory.DeleteProfileInstance(io_parameter_profile.com_object)
@@ -243,7 +241,6 @@ class ParameterProfilesFactory(AnyObject):
                 |            Next
 
         :param tuple o_all_instances_on_product:
-        :return: ParameterProfiles
         :rtype: ParameterProfiles
         """
         return ParameterProfiles(self.parameter_profiles_factory.GetAllProfileInstances(o_all_instances_on_product))
@@ -300,7 +297,6 @@ class ParameterProfilesFactory(AnyObject):
 
         :param str i_instance_name:
         :param ParameterProfiles o_profile_instance:
-        :return: None
         :rtype: None
         """
         return self.parameter_profiles_factory.GetProfileInstance(i_instance_name, o_profile_instance.com_object)
@@ -364,7 +360,6 @@ class ParameterProfilesFactory(AnyObject):
 
         :param str i_profile_type:
         :param tuple o_profiles:
-        :return: ParameterProfiles
         :rtype: ParameterProfiles
         """
         return ParameterProfiles(self.parameter_profiles_factory.GetProfileInstances(i_profile_type, o_profiles))

@@ -67,7 +67,6 @@ class RpmReport(AnyObject):
         :param str i_report_file_name:
         :param str i_report_type:
         :param str i_out_dtd_file_name:
-        :return: None
         :rtype: None
         """
         return self.rpm_report.GenerateReport(i_xml_file_name, i_report_file_name, i_report_type, i_out_dtd_file_name)

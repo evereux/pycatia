@@ -56,7 +56,6 @@ class ToleranceSheetSettingAtt(SettingController):
                 |         oAngleMaxTolerance
                 |             The angle maximum tolerance value.
 
-        :return: float
         :rtype: float
         """
 
@@ -89,7 +88,6 @@ class ToleranceSheetSettingAtt(SettingController):
                 |         oAngleMinTolerance
                 |             The angle minimum tolerance value.
 
-        :return: float
         :rtype: float
         """
 
@@ -124,7 +122,6 @@ class ToleranceSheetSettingAtt(SettingController):
                 |             0 : to not accept a default tolerance
                 |             1 : to accept a default tolerance.
 
-        :return: int
         :rtype: int
         """
 
@@ -157,7 +154,6 @@ class ToleranceSheetSettingAtt(SettingController):
                 |         oLengthMaxTolerance
                 |             The length maximum tolerance value.
 
-        :return: float
         :rtype: float
         """
 
@@ -190,7 +186,6 @@ class ToleranceSheetSettingAtt(SettingController):
                 |         oLengthMinTolerance
                 |             The length minimum tolerance value.
 
-        :return: float
         :rtype: float
         """
 
@@ -236,7 +231,6 @@ class ToleranceSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.tolerance_sheet_setting_att.GetAngleMaxToleranceInfo(io_admin_level, io_locked)
@@ -273,7 +267,6 @@ class ToleranceSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.tolerance_sheet_setting_att.GetAngleMinToleranceInfo(io_admin_level, io_locked)
@@ -310,7 +303,6 @@ class ToleranceSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.tolerance_sheet_setting_att.GetDefaultToleranceInfo(io_admin_level, io_locked)
@@ -347,7 +339,6 @@ class ToleranceSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.tolerance_sheet_setting_att.GetLengthMaxToleranceInfo(io_admin_level, io_locked)
@@ -384,7 +375,6 @@ class ToleranceSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.tolerance_sheet_setting_att.GetLengthMinToleranceInfo(io_admin_level, io_locked)
@@ -411,7 +401,6 @@ class ToleranceSheetSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.tolerance_sheet_setting_att.SetAngleMaxToleranceLock(i_locked)
@@ -453,7 +442,6 @@ class ToleranceSheetSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.tolerance_sheet_setting_att.SetAngleMinToleranceLock(i_locked)
@@ -495,7 +483,6 @@ class ToleranceSheetSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.tolerance_sheet_setting_att.SetDefaultToleranceLock(i_locked)
@@ -537,7 +524,6 @@ class ToleranceSheetSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.tolerance_sheet_setting_att.SetLengthMaxToleranceLock(i_locked)
@@ -579,7 +565,6 @@ class ToleranceSheetSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.tolerance_sheet_setting_att.SetLengthMinToleranceLock(i_locked)

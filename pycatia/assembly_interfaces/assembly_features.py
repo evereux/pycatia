@@ -81,7 +81,6 @@ class AssemblyFeatures(Collection):
         :param Body i_body:
         :param Product i_body_comp:
         :param Product i_component:
-        :return: AssemblyFeature
         :rtype: AssemblyFeature
         """
         return AssemblyFeature(
@@ -147,7 +146,6 @@ class AssemblyFeatures(Collection):
         :param Product i_sketch_comp:
         :param float i_depth:
         :param Product i_component:
-        :return: AssemblyFeature
         :rtype: AssemblyFeature
         """
         return AssemblyFeature(
@@ -209,7 +207,6 @@ class AssemblyFeatures(Collection):
         :param Product i_sketch_comp:
         :param float i_depth:
         :param Product i_component:
-        :return: AssemblyFeature
         :rtype: AssemblyFeature
         """
         return AssemblyFeature(
@@ -261,7 +258,6 @@ class AssemblyFeatures(Collection):
         :param Body i_body:
         :param Product i_body_comp:
         :param Product i_component:
-        :return: AssemblyFeature
         :rtype: AssemblyFeature
         """
         return AssemblyFeature(
@@ -326,7 +322,6 @@ class AssemblyFeatures(Collection):
         :param Product i_splitting_elem_comp:
         :param int i_split_side:
         :param Product i_component:
-        :return: AssemblyFeature
         :rtype: AssemblyFeature
         """
         return AssemblyFeature(
@@ -370,7 +365,6 @@ class AssemblyFeatures(Collection):
                 |          Set lastAssemblyFeat = assemblyFeats.Item(assemblyFeats.Count)
 
         :param cat_variant i_index:
-        :return: AssemblyFeature
         :rtype: AssemblyFeature
         """
         return AssemblyFeature(self.assembly_features.Item(i_index))
@@ -404,7 +398,6 @@ class AssemblyFeatures(Collection):
                 |          assemblyFeats.Remove(assemblyFeats.Count)
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.assembly_features.Remove(i_index)

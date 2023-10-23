@@ -70,7 +70,6 @@ class SchSession(AnyObject):
         :param str i_doc_type:
         :param bool i_b_interactive:
         :param Document o_new_doc:
-        :return: None
         :rtype: None
         """
         return self.sch_session.CreateDocument(i_doc_type, i_b_interactive, o_new_doc.com_object)
@@ -113,7 +112,6 @@ class SchSession(AnyObject):
                 |          objThisIntf.GetCurrentApplicationIDstrVar1
 
         :param str o_application_id:
-        :return: None
         :rtype: None
         """
         return self.sch_session.GetCurrentApplicationID(o_application_id)
@@ -140,7 +138,6 @@ class SchSession(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.GetCurrentDocument
 
-        :return: Document
         :rtype: Document
         """
         return Document(self.sch_session.GetCurrentDocument())
@@ -173,7 +170,6 @@ class SchSession(AnyObject):
                 |          Set objArg2 = objThisIntf.GetSchExtContainer(objArg1)
 
         :param Document i_doc:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.sch_session.GetSchExtContainer(i_doc.com_object))
@@ -201,7 +197,6 @@ class SchSession(AnyObject):
                 |          objThisIntf.SetCurrentApplicationIDstrVar1
 
         :param str i_application_id:
-        :return: None
         :rtype: None
         """
         return self.sch_session.SetCurrentApplicationID(i_application_id)
@@ -229,7 +224,6 @@ class SchSession(AnyObject):
                 |          objThisIntf.SetCurrentDocumentobjArg1
 
         :param Document i_cur_doc:
-        :return: None
         :rtype: None
         """
         return self.sch_session.SetCurrentDocument(i_cur_doc.com_object)

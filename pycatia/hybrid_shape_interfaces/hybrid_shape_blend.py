@@ -96,7 +96,6 @@ class HybridShapeBlend(HybridShape):
                 | 
                 |          CouplingVal = ShpBlend.Coupling
 
-        :return: int
         :rtype: int
         """
 
@@ -122,7 +121,6 @@ class HybridShapeBlend(HybridShape):
                 |     Returns or sets the ruled developable surface mode.
                 |     TRUE means that the mode is enabled and FALSE means that it is disabled.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -147,7 +145,6 @@ class HybridShapeBlend(HybridShape):
                 | 
                 |     Returns the angular threshold.
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -167,7 +164,6 @@ class HybridShapeBlend(HybridShape):
                 |     TRUE if the blending operation is smoothed, or FALSE otherwise (FALSE if
                 |     not specified).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -193,7 +189,6 @@ class HybridShapeBlend(HybridShape):
                 |     Returns the deviation value (length) from guide curves allowed during a
                 |     sweeping operation in order to smooth it.
 
-        :return: Length
         :rtype: Length
         """
 
@@ -215,7 +210,6 @@ class HybridShapeBlend(HybridShape):
                 |     TRUE if a deviation from guide curves is allowed, or FALSE otherwise (FALSE
                 |     if not specified).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -247,7 +241,6 @@ class HybridShapeBlend(HybridShape):
                 |         iSpine
                 |             spine curve
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -298,7 +291,6 @@ class HybridShapeBlend(HybridShape):
                 |      BorderType = ShpBlend.GetBorderMode(1)
 
         :param int i_blend_limit:
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_blend.GetBorderMode(i_blend_limit)
@@ -333,7 +325,6 @@ class HybridShapeBlend(HybridShape):
                 |      ClosingPoint = ShpBlend.GetClosingPoint(2)
 
         :param int i_blend_limit:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_blend.GetClosingPoint(i_blend_limit))
@@ -374,7 +365,6 @@ class HybridShapeBlend(HybridShape):
                 |      Continuity = ShpBlend.GetContinuity(2)
 
         :param int i_blend_limit:
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_blend.GetContinuity(i_blend_limit)
@@ -408,7 +398,6 @@ class HybridShapeBlend(HybridShape):
                 |      BlendCurve = ShpBlend.GetCurve(2)
 
         :param int i_blend_limit:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_blend.GetCurve(i_blend_limit))
@@ -442,7 +431,6 @@ class HybridShapeBlend(HybridShape):
                 |      Orientation = ShpBlend.GetOrientation(2)
 
         :param int i_blend_limit:
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_blend.GetOrientation(i_blend_limit)
@@ -478,7 +466,6 @@ class HybridShapeBlend(HybridShape):
                 |                 Free second curve
 
         :param int i_blend_limit:
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_blend.GetRuledDevelopableSurfaceConnection(i_blend_limit)
@@ -512,7 +499,6 @@ class HybridShapeBlend(HybridShape):
                 |      SupportSurf = ShpBlend.GetSupport(2)
 
         :param int i_blend_limit:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_blend.GetSupport(i_blend_limit))
@@ -560,7 +546,6 @@ class HybridShapeBlend(HybridShape):
 
         :param int i_blend_limit:
         :param int i_rank:
-        :return: RealParam
         :rtype: RealParam
         """
         return RealParam(self.hybrid_shape_blend.GetTensionInDouble(i_blend_limit, i_rank))
@@ -601,7 +586,6 @@ class HybridShapeBlend(HybridShape):
                 |      TensionType.GetTensionType(1)
 
         :param int i_blend_limit:
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_blend.GetTensionType(i_blend_limit)
@@ -641,7 +625,6 @@ class HybridShapeBlend(HybridShape):
                 |      TransOrientation = ShpBlend.GetTransition(2)
 
         :param int i_blend_limit:
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_blend.GetTransition(i_blend_limit)
@@ -683,7 +666,6 @@ class HybridShapeBlend(HybridShape):
                 |      IsTrimmed = ShpBlend.GetTrimSupport(2)
 
         :param int i_blend_limit:
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_blend.GetTrimSupport(i_blend_limit)
@@ -712,7 +694,6 @@ class HybridShapeBlend(HybridShape):
                 |          ShpBlend.InsertCouplingt 0
 
         :param int i_position:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_blend.InsertCoupling(i_position)
@@ -755,7 +736,6 @@ class HybridShapeBlend(HybridShape):
         :param int i_coupling_index:
         :param int i_position:
         :param Reference i_point:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_blend.InsertCouplingPoint(i_coupling_index, i_position, i_point.com_object)
@@ -826,7 +806,6 @@ class HybridShapeBlend(HybridShape):
 
         :param int i_blend_limit:
         :param int i_border:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_blend.SetBorderMode(i_blend_limit, i_border)
@@ -864,7 +843,6 @@ class HybridShapeBlend(HybridShape):
 
         :param int i_blend_limit:
         :param Reference i_closing_point:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_blend.SetClosingPoint(i_blend_limit, i_closing_point.com_object)
@@ -921,7 +899,6 @@ class HybridShapeBlend(HybridShape):
 
         :param int i_blend_limit:
         :param int i_continuity:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_blend.SetContinuity(i_blend_limit, i_continuity)
@@ -958,7 +935,6 @@ class HybridShapeBlend(HybridShape):
 
         :param int i_blend_limit:
         :param Reference i_curve:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_blend.SetCurve(i_blend_limit, i_curve.com_object)
@@ -1008,7 +984,6 @@ class HybridShapeBlend(HybridShape):
 
         :param int i_blend_limit:
         :param int i_orientation:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_blend.SetOrientation(i_blend_limit, i_orientation)
@@ -1024,7 +999,6 @@ class HybridShapeBlend(HybridShape):
 
         :param int i_blend_limit:
         :param int i_blend_connection:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_blend.SetRuledDevelopableSurfaceConnection(i_blend_limit, i_blend_connection)
@@ -1045,7 +1019,6 @@ class HybridShapeBlend(HybridShape):
                 |             The angular threshold
 
         :param float i_angle:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_blend.SetSmoothAngleThreshold(i_angle)
@@ -1067,7 +1040,6 @@ class HybridShapeBlend(HybridShape):
                 |             The deviation value
 
         :param float i_length:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_blend.SetSmoothDeviation(i_length)
@@ -1104,7 +1076,6 @@ class HybridShapeBlend(HybridShape):
 
         :param int i_blend_limit:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_blend.SetSupport(i_blend_limit, i_support.com_object)
@@ -1177,7 +1148,6 @@ class HybridShapeBlend(HybridShape):
         :param int i_tension_type:
         :param float i_first_tension:
         :param float i_second_tension:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_blend.SetTensionInDouble(i_blend_limit, i_tension_type, i_first_tension,
@@ -1222,7 +1192,6 @@ class HybridShapeBlend(HybridShape):
 
         :param int i_blend_limit:
         :param int i_tension_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_blend.SetTensionType(i_blend_limit, i_tension_type)
@@ -1261,7 +1230,6 @@ class HybridShapeBlend(HybridShape):
 
         :param int i_blend_limit:
         :param int i_transition:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_blend.SetTransition(i_blend_limit, i_transition)
@@ -1303,7 +1271,6 @@ class HybridShapeBlend(HybridShape):
 
         :param int i_blend_limit:
         :param int i_trim_support:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_blend.SetTrimSupport(i_blend_limit, i_trim_support)
@@ -1333,7 +1300,6 @@ class HybridShapeBlend(HybridShape):
                 |          ShpBlend.UnsetClosingPoint 2
 
         :param int i_blend_limit:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_blend.UnsetClosingPoint(i_blend_limit)
@@ -1363,7 +1329,6 @@ class HybridShapeBlend(HybridShape):
                 |          ShpBlend.UnsetSupport 2
 
         :param int i_blend_limit:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_blend.UnsetSupport(i_blend_limit)

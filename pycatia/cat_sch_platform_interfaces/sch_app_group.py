@@ -66,7 +66,6 @@ class SchAppGroup(AnyObject):
 
         :param str i_class_type:
         :param SchListOfObjects o_l_zones:
-        :return: None
         :rtype: None
         """
         return self.sch_app_group.ListZones(i_class_type, o_l_zones.com_object)

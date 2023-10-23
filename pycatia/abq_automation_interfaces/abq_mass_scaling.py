@@ -51,7 +51,6 @@ class ABQMassScaling(AnyObject):
                 |     Sets or returns the scaling frequency increment. Applies only when
                 |     FrequencyType is ABQ_INCREMENT.
 
-        :return: int
         :rtype: int
         """
 
@@ -77,7 +76,6 @@ class ABQMassScaling(AnyObject):
                 |     Sets or returns the scaling frequency interval. Applies only when
                 |     FrequencyType is ABQ_INTERVAL.
 
-        :return: int
         :rtype: int
         """
 
@@ -102,7 +100,6 @@ class ABQMassScaling(AnyObject):
                 | 
                 |     Sets or returns the scaling frequency type.
 
-        :return: int
         :rtype: int
         """
 
@@ -127,7 +124,6 @@ class ABQMassScaling(AnyObject):
                 | 
                 |     Sets or returns whether the mass scaling is global.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -152,7 +148,6 @@ class ABQMassScaling(AnyObject):
                 | 
                 |     Retrieves the number of supports.
 
-        :return: int
         :rtype: int
         """
 
@@ -169,7 +164,6 @@ class ABQMassScaling(AnyObject):
                 | 
                 |     Sets or returns the scale factor.
 
-        :return: float
         :rtype: float
         """
 
@@ -194,7 +188,6 @@ class ABQMassScaling(AnyObject):
                 | 
                 |     Sets or returns whether the scale factor is active.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -220,7 +213,6 @@ class ABQMassScaling(AnyObject):
                 |     Sets or returns the target time scaling method. Applies only when target
                 |     time is active.
 
-        :return: int
         :rtype: int
         """
 
@@ -245,7 +237,6 @@ class ABQMassScaling(AnyObject):
                 | 
                 |     Sets or returns the scaling target time.
 
-        :return: float
         :rtype: float
         """
 
@@ -270,7 +261,6 @@ class ABQMassScaling(AnyObject):
                 | 
                 |     Sets or returns whether the target time scaling is active.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -295,7 +285,6 @@ class ABQMassScaling(AnyObject):
                 | 
                 |     Sets or returns whether the mass scaling is variable.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -331,7 +320,6 @@ class ABQMassScaling(AnyObject):
 
         :param Product i_product:
         :param Body i_body:
-        :return: None
         :rtype: None
         """
         return self.abq_mass_scaling.AddSupportForBody(i_product.com_object, i_body.com_object)
@@ -373,7 +361,6 @@ class ABQMassScaling(AnyObject):
 
         :param Product i_product:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.abq_mass_scaling.AddSupportFromProduct(i_product.com_object, i_support.com_object)
@@ -418,7 +405,6 @@ class ABQMassScaling(AnyObject):
 
         :param Product i_product:
         :param Publication i_publication:
-        :return: None
         :rtype: None
         """
         return self.abq_mass_scaling.AddSupportFromPublication(i_product.com_object, i_publication.com_object)
@@ -448,7 +434,6 @@ class ABQMassScaling(AnyObject):
                 | 
                 |     Clear the list of supports.
 
-        :return: None
         :rtype: None
         """
         return self.abq_mass_scaling.ClearSupports()
@@ -476,7 +461,6 @@ class ABQMassScaling(AnyObject):
 
         :param tuple o_products:
         :param tuple o_supports:
-        :return: None
         :rtype: None
         """
         return self.abq_mass_scaling.GetSupports(o_products, o_supports)
@@ -521,7 +505,6 @@ class ABQMassScaling(AnyObject):
 
         :param tuple i_products:
         :param tuple i_supports:
-        :return: None
         :rtype: None
         """
         return self.abq_mass_scaling.SetSupports(i_products, i_supports)

@@ -58,7 +58,6 @@ class Shots(Collection):
                 |              Shots.Append (myShot)
 
         :param AnyObject i_shot:
-        :return: None
         :rtype: None
         """
         return self.shots.Append(i_shot.com_object)
@@ -82,7 +81,6 @@ class Shots(Collection):
                 |          Dim newShot
                 |          Set newShot = Shots.CreateShot
 
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.shots.CreateShot()
@@ -115,7 +113,6 @@ class Shots(Collection):
                 |          Set newShots = Shots.CreateShot (FITSHOTDouble)
 
         :param str i_type:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.shots.CreateSpecificShot(i_type)
@@ -149,7 +146,6 @@ class Shots(Collection):
 
         :param int i_index:
         :param AnyObject i_shot:
-        :return: None
         :rtype: None
         """
         return self.shots.InsertAfter(i_index, i_shot.com_object)
@@ -182,7 +178,6 @@ class Shots(Collection):
                 |          Set myShot = myShots.Item (2)
 
         :param cat_variant i_index:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.shots.Item(i_index)
@@ -211,7 +206,6 @@ class Shots(Collection):
                 |              Shots.Remove (3)
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.shots.Remove(i_index)

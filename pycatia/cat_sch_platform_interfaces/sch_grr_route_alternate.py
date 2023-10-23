@@ -60,7 +60,6 @@ class SchGRRRouteAlternate(AnyObject):
                 |          objThisIntf.GetAlternateStyleCatSchIDLRouteAlternateGraphicStyle_Enum
 
         :param int o_e_graphic_style:
-        :return: None
         :rtype: None
         """
         return self.sch_grr_route_alternate.GetAlternateStyle(o_e_graphic_style)

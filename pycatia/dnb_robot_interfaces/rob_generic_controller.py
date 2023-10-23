@@ -66,7 +66,6 @@ class RobGenericController(AnyObject):
                 |             E_FAIL otherwise
 
         :param GenericAccuracyProfile profile:
-        :return: None
         :rtype: None
         """
 
@@ -110,7 +109,6 @@ class RobGenericController(AnyObject):
                 |             E_FAIL otherwise
 
         :param GenericMotionProfile profile:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.AddMotionProfile(profile.com_object)
@@ -153,7 +151,6 @@ class RobGenericController(AnyObject):
                 |             E_FAIL otherwise
 
         :param GenericObjFrameProfile profile:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.AddObjFrameProfile(profile.com_object)
@@ -196,7 +193,6 @@ class RobGenericController(AnyObject):
                 |             E_FAIL otherwise
 
         :param GenericToolProfile i_profile:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.AddToolProfile(i_profile.com_object)
@@ -245,7 +241,6 @@ class RobGenericController(AnyObject):
 
         :param str name:
         :param GenericAccuracyProfile profile:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.GetAccuracyProfile(name, profile.com_object)
@@ -289,7 +284,6 @@ class RobGenericController(AnyObject):
                 |             E_FAIL otherwise
 
         :param int count:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.GetAccuracyProfileCount(count)
@@ -319,7 +313,6 @@ class RobGenericController(AnyObject):
                 |             .
 
         :param tuple profiles:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.GetAccuracyProfiles(profiles)
@@ -363,7 +356,6 @@ class RobGenericController(AnyObject):
                 |             E_FAIL otherwise
 
         :param str profile:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.GetCurrentAccuracyProfile(profile)
@@ -392,7 +384,6 @@ class RobGenericController(AnyObject):
                 |             E_FAIL otherwise
 
         :param str profile:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.GetCurrentMotionProfile(profile)
@@ -421,7 +412,6 @@ class RobGenericController(AnyObject):
                 |             E_FAIL otherwise
 
         :param str profile:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.GetCurrentObjFrameProfile(profile)
@@ -449,7 +439,6 @@ class RobGenericController(AnyObject):
                 |             E_FAIL otherwise
 
         :param str profile:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.GetCurrentToolProfile(profile)
@@ -483,7 +472,6 @@ class RobGenericController(AnyObject):
 
         :param str name:
         :param GenericMotionProfile profile:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.GetMotionProfile(name, profile.com_object)
@@ -526,7 +514,6 @@ class RobGenericController(AnyObject):
                 |             E_FAIL otherwise
 
         :param int count:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.GetMotionProfileCount(count)
@@ -554,7 +541,6 @@ class RobGenericController(AnyObject):
                 |             E_FAIL otherwise
 
         :param tuple profiles:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.GetMotionProfiles(profiles)
@@ -597,7 +583,6 @@ class RobGenericController(AnyObject):
                 |             E_FAIL otherwise
 
         :param str o_name:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.GetName(o_name)
@@ -631,7 +616,6 @@ class RobGenericController(AnyObject):
 
         :param str name:
         :param GenericObjFrameProfile profile:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.GetObjFrameProfile(name, profile.com_object)
@@ -674,7 +658,6 @@ class RobGenericController(AnyObject):
                 |             E_FAIL otherwise
 
         :param int count:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.GetObjFrameProfileCount(count)
@@ -702,7 +685,6 @@ class RobGenericController(AnyObject):
                 |             E_FAIL otherwise
 
         :param tuple profiles:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.GetObjFrameProfiles(profiles)
@@ -749,7 +731,6 @@ class RobGenericController(AnyObject):
 
         :param str name:
         :param GenericToolProfile profile:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.GetToolProfile(name, profile.com_object)
@@ -792,7 +773,6 @@ class RobGenericController(AnyObject):
                 |             E_FAIL otherwise
 
         :param int count:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.GetToolProfileCount(count)
@@ -820,7 +800,6 @@ class RobGenericController(AnyObject):
                 |             E_FAIL otherwise
 
         :param tuple profiles:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.GetToolProfiles(profiles)
@@ -868,7 +847,6 @@ class RobGenericController(AnyObject):
 
         :param str name:
         :param bool flag:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.HasAccuracyProfile(name, flag)
@@ -916,7 +894,6 @@ class RobGenericController(AnyObject):
 
         :param str name:
         :param bool flag:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.HasMotionProfile(name, flag)
@@ -964,7 +941,6 @@ class RobGenericController(AnyObject):
 
         :param str name:
         :param bool flag:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.HasObjFrameProfile(name, flag)
@@ -1011,7 +987,6 @@ class RobGenericController(AnyObject):
 
         :param str name:
         :param bool flag:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.HasToolProfile(name, flag)
@@ -1054,7 +1029,6 @@ class RobGenericController(AnyObject):
                 |             E_FAIL otherwise
 
         :param str name:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.RemoveAccuracyProfile(name)
@@ -1082,7 +1056,6 @@ class RobGenericController(AnyObject):
                 |             E_FAIL otherwise
 
         :param str name:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.RemoveMotionProfile(name)
@@ -1110,7 +1083,6 @@ class RobGenericController(AnyObject):
                 |             E_FAIL otherwise
 
         :param str name:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.RemoveObjFrameProfile(name)
@@ -1138,7 +1110,6 @@ class RobGenericController(AnyObject):
                 |             E_FAIL otherwise
 
         :param str name:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.RemoveToolProfile(name)
@@ -1167,7 +1138,6 @@ class RobGenericController(AnyObject):
                 |             E_FAIL otherwise
 
         :param str profile:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.SetCurrentAccuracyProfile(profile)
@@ -1196,7 +1166,6 @@ class RobGenericController(AnyObject):
                 |             E_FAIL otherwise
 
         :param str profile:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.SetCurrentMotionProfile(profile)
@@ -1225,7 +1194,6 @@ class RobGenericController(AnyObject):
                 |             E_FAIL otherwise
 
         :param str profile:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.SetCurrentObjFrameProfile(profile)
@@ -1254,7 +1222,6 @@ class RobGenericController(AnyObject):
                 |             E_FAIL otherwise
 
         :param str profile:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.SetCurrentToolProfile(profile)
@@ -1282,7 +1249,6 @@ class RobGenericController(AnyObject):
                 |             E_FAIL otherwise
 
         :param str name:
-        :return: None
         :rtype: None
         """
         return self.rob_generic_controller.SetName(name)

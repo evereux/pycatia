@@ -51,7 +51,6 @@ class FunctionalObjectProxy(FunctionalObject):
                 | 
                 |     Get the description attached to the proxi.
 
-        :return: FunctionalDescription
         :rtype: FunctionalDescription
         """
 
@@ -68,7 +67,6 @@ class FunctionalObjectProxy(FunctionalObject):
                 |     set the description attached to the proxi.
 
         :param FunctionalDescription i_desc:
-        :return: None
         :rtype: None
         """
         return self.functional_object_proxy.set_Description(i_desc.com_object)

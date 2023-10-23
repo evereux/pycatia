@@ -48,7 +48,6 @@ class VerifyTabSettingAtt(SettingController):
                 |     Role: Returns or sets the value to signify Whether all the resources will
                 |     appear during Process Navigation
 
-        :return: int
         :rtype: int
         """
 
@@ -76,7 +75,6 @@ class VerifyTabSettingAtt(SettingController):
                 |     Role: Returns or sets the value to signify Whether all the items/resources
                 |     will be reframed during Process Navigation
 
-        :return: int
         :rtype: int
         """
 
@@ -104,7 +102,6 @@ class VerifyTabSettingAtt(SettingController):
                 |     Role: Returns or sets the value to signify Whether all the Assigned
                 |     resource will appear during Process Navigation
 
-        :return: int
         :rtype: int
         """
 
@@ -150,7 +147,6 @@ class VerifyTabSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.verify_tab_setting_att.GetAllResourceFilterInfo(io_admin_level, io_locked)
@@ -187,7 +183,6 @@ class VerifyTabSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.verify_tab_setting_att.GetAutoReframeFilterInfo(io_admin_level, io_locked)
@@ -224,7 +219,6 @@ class VerifyTabSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.verify_tab_setting_att.GetImpliedResourceFilterInfo(io_admin_level, io_locked)
@@ -251,7 +245,6 @@ class VerifyTabSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.verify_tab_setting_att.SetAllResourceFilterLock(i_locked)
@@ -293,7 +286,6 @@ class VerifyTabSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.verify_tab_setting_att.SetAutoReframeFilterLock(i_locked)
@@ -335,7 +327,6 @@ class VerifyTabSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.verify_tab_setting_att.SetImpliedResourceFilterLock(i_locked)

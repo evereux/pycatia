@@ -46,7 +46,6 @@ class SWKErgoRULA(AnyObject):
                 |     This property is True if the arm of the manikin is abducted, given the
                 |     manikin's current posture.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -64,7 +63,6 @@ class SWKErgoRULA(AnyObject):
                 |     This property is True if the arm of the manikin is out to the side, given
                 |     the manikin's current posture.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -82,7 +80,6 @@ class SWKErgoRULA(AnyObject):
                 |     This property is True if the neck of the manikin is bent, given the
                 |     manikin's current posture.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -100,7 +97,6 @@ class SWKErgoRULA(AnyObject):
                 |     This property is True if the neck of the manikin is twisted, given the
                 |     manikin's current posture.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -117,7 +113,6 @@ class SWKErgoRULA(AnyObject):
                 | 
                 |     Returns or sets the weight of the object being carried.
 
-        :return: str
         :rtype: str
         """
 
@@ -142,7 +137,6 @@ class SWKErgoRULA(AnyObject):
                 | 
                 |     This field is the overall RULA score, given the manikin's current posture.
 
-        :return: int
         :rtype: int
         """
 
@@ -160,7 +154,6 @@ class SWKErgoRULA(AnyObject):
                 |     This property is True if the shoulder of the manikin is raised, given the
                 |     manikin's current posture.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -178,7 +171,6 @@ class SWKErgoRULA(AnyObject):
                 |     This property is True if the trunk of the manikin is bent, given the
                 |     manikin's current posture.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -196,7 +188,6 @@ class SWKErgoRULA(AnyObject):
                 |     This property is True if the trunk of the manikin is twisted, given the
                 |     manikin's current posture.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -214,7 +205,6 @@ class SWKErgoRULA(AnyObject):
                 |     This field gives a text string which represents the interpretaton of the
                 |     overall RULA score.
 
-        :return: str
         :rtype: str
         """
 
@@ -232,7 +222,6 @@ class SWKErgoRULA(AnyObject):
                 |     This property is True if the wrist of the manikin is bent, given the
                 |     manikin's current posture.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -250,7 +239,6 @@ class SWKErgoRULA(AnyObject):
                 |     This property is True if the wrist of the manikin is twisted, given the
                 |     manikin's current posture.
 
-        :return: bool
         :rtype: bool
         """
 

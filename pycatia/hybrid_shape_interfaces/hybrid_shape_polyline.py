@@ -70,7 +70,6 @@ class HybridShapePolyline(HybridShape):
                 |                  Dim HybShpPolClosure As  boolean
                 |                  HybShpPolClosure = HybShpPolyline.Closure
 
-        :return: bool
         :rtype: bool
         """
 
@@ -107,7 +106,6 @@ class HybridShapePolyline(HybridShape):
                 |                  Dim HybShpPolNoOfEle As  long
                 |                  HybShpPolNoOfEle = HybShpPolyline.NumberOfElements
 
-        :return: int
         :rtype: int
         """
 
@@ -147,7 +145,6 @@ class HybridShapePolyline(HybridShape):
         :param int i_position:
         :param Reference o_element:
         :param Length o_radius:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_polyline.GetElement(i_position, o_element.com_object, o_radius.com_object)
@@ -194,7 +191,6 @@ class HybridShapePolyline(HybridShape):
 
         :param Reference i_point:
         :param int i_position:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_polyline.InsertElement(i_point.com_object, i_position)
@@ -238,7 +234,6 @@ class HybridShapePolyline(HybridShape):
                 |                  HybShpPolyline.RemoveElement 1
 
         :param int i_position:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_polyline.RemoveElement(i_position)
@@ -271,7 +266,6 @@ class HybridShapePolyline(HybridShape):
 
         :param Reference i_point:
         :param int i_position:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_polyline.ReplaceElement(i_point.com_object, i_position)
@@ -318,7 +312,6 @@ class HybridShapePolyline(HybridShape):
 
         :param int i_position:
         :param float i_radius:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_polyline.SetRadius(i_position, i_radius)

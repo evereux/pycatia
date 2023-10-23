@@ -82,7 +82,6 @@ class DrawingView(AnyObject):
                 |          Angle90Clockwise = -PI/2
                 |          MyView.Angle = Angle90Clockwise
 
-        :return: float
         :rtype: float
         """
 
@@ -116,7 +115,6 @@ class DrawingView(AnyObject):
                 |          Dim ArrowCollection As DrawingArrows
                 |          Set ArrowCollection = MyView.Arrows
 
-        :return: DrawingArrows
         :rtype: DrawingArrows
         """
 
@@ -143,7 +141,6 @@ class DrawingView(AnyObject):
                 |          Dim ComponentCollection As DrawingComponents
                 |          Set ComponentCollection = MyView.Components
 
-        :return: DrawingComponents
         :rtype: DrawingComponents
         """
 
@@ -170,7 +167,6 @@ class DrawingView(AnyObject):
                 |          Dim DimensionCollection As DrawingDimensions
                 |          Set DimensionCollection = MyView.Dimensions
 
-        :return: DrawingDimensions
         :rtype: DrawingDimensions
         """
 
@@ -202,7 +198,6 @@ class DrawingView(AnyObject):
                 | 
                 |          Set my2DFactory = myView.Factory2D
 
-        :return: Factory2D
         :rtype: Factory2D
         """
 
@@ -229,7 +224,6 @@ class DrawingView(AnyObject):
                 | 
                 |          MyView.FrameVisualization = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -265,7 +259,6 @@ class DrawingView(AnyObject):
                 |          DrawingViewGenerativeBehavior
                 |          Set MyViewGenBehavior = MyView.GenerativeBehavior
 
-        :return: DrawingViewGenerativeBehavior
         :rtype: DrawingViewGenerativeBehavior
         """
 
@@ -292,7 +285,6 @@ class DrawingView(AnyObject):
                 |          Dim MyViewGenLinks As DrawingViewGenerativeLinks
                 |          Set MyViewGenLinks = MyView.GenerativeLinks
 
-        :return: DrawingViewGenerativeLinks
         :rtype: DrawingViewGenerativeLinks
         """
 
@@ -320,7 +312,6 @@ class DrawingView(AnyObject):
                 |          Dim colGeometry As GeometricElements
                 |          Set colGeometry = myView.GeometricElements
 
-        :return: GeometricElements
         :rtype: GeometricElements
         """
 
@@ -346,7 +337,6 @@ class DrawingView(AnyObject):
                 | 
                 |          ViewToWorkOn.LockStatus = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -381,7 +371,6 @@ class DrawingView(AnyObject):
                 |          Dim PictureCollection As DrawingPictures
                 |          Set PictureCollection = MyView.Pictures
 
-        :return: DrawingPictures
         :rtype: DrawingPictures
         """
 
@@ -420,7 +409,6 @@ class DrawingView(AnyObject):
                 |          Dim ReferenceView As DrawingView
                 |          Set ReferenceView = MyView.RefView
 
-        :return: DrawingView
         :rtype: DrawingView
         """
 
@@ -453,7 +441,6 @@ class DrawingView(AnyObject):
                 | 
                 |          MyView.Scale = 0.5
 
-        :return: float
         :rtype: float
         """
 
@@ -487,7 +474,6 @@ class DrawingView(AnyObject):
                 | 
                 |          MyView.Scale2 = 0.5
 
-        :return: float
         :rtype: float
         """
 
@@ -521,7 +507,6 @@ class DrawingView(AnyObject):
                 |          Dim TableCollection As DrawingTables
                 |          Set TableCollection = MyView.Tables
 
-        :return: DrawingTables
         :rtype: DrawingTables
         """
 
@@ -547,7 +532,6 @@ class DrawingView(AnyObject):
                 |          Dim TextCollection As DrawingTexts
                 |          Set TextCollection = MyView.Texts
 
-        :return: DrawingTexts
         :rtype: DrawingTexts
         """
 
@@ -573,7 +557,6 @@ class DrawingView(AnyObject):
                 |          Dim ThreadCollection As DrawingThreads
                 |          Set ThreadCollection = MyView.Threads
 
-        :return: DrawingThreads
         :rtype: DrawingThreads
         """
 
@@ -591,7 +574,6 @@ class DrawingView(AnyObject):
                 |     Returns the drawing view type.
                 |     Warning: This method is not available with 2D Layout for 3D Design.
 
-        :return: int
         :rtype: int
         """
 
@@ -618,7 +600,6 @@ class DrawingView(AnyObject):
                 |          Dim weldingCollection As DrawingWeldings
                 |          Set weldingCollection = MyView.Weldings
 
-        :return: DrawingWeldings
         :rtype: DrawingWeldings
         """
 
@@ -647,7 +628,6 @@ class DrawingView(AnyObject):
                 | 
                 |          X = MyView.x
 
-        :return: float
         :rtype: float
         """
 
@@ -682,7 +662,6 @@ class DrawingView(AnyObject):
                 | 
                 |          X = MyView.xAxisData
 
-        :return: float
         :rtype: float
         """
 
@@ -721,7 +700,6 @@ class DrawingView(AnyObject):
                 |          NewYCoordinate = 5*25.4
                 |          MyView.y = NewYCoordinate
 
-        :return: float
         :rtype: float
         """
 
@@ -758,7 +736,6 @@ class DrawingView(AnyObject):
                 |          NewYCoordinate = 5*25.4
                 |          MyView.yAxisData = NewYCoordinate
 
-        :return: float
         :rtype: float
         """
 
@@ -791,7 +768,6 @@ class DrawingView(AnyObject):
                 | 
                 |          ViewToWorkOn.Activate()
 
-        :return: None
         :rtype: None
         """
         return self.drawing_view.Activate()
@@ -816,7 +792,6 @@ class DrawingView(AnyObject):
                 | 
                 |          MyView.AlignedWithReferenceView()
 
-        :return: None
         :rtype: None
         """
         return self.drawing_view.AlignedWithReferenceView()
@@ -852,7 +827,6 @@ class DrawingView(AnyObject):
         :param str i_view_name_prefix:
         :param str i_view_name_ident:
         :param str i_view_name_suffix:
-        :return: None
         :rtype: None
         """
         return self.drawing_view.GetViewName(i_view_name_prefix, i_view_name_ident, i_view_name_suffix)
@@ -889,7 +863,6 @@ class DrawingView(AnyObject):
 
         :param int i_first:
         :param DrawingText io_text:
-        :return: None
         :rtype: None
         """
         return self.drawing_view.InsertViewAngle(i_first, io_text.com_object)
@@ -925,7 +898,6 @@ class DrawingView(AnyObject):
 
         :param int i_first:
         :param DrawingText io_text:
-        :return: None
         :rtype: None
         """
         return self.drawing_view.InsertViewScale(i_first, io_text.com_object)
@@ -950,7 +922,6 @@ class DrawingView(AnyObject):
                 | 
                 |          GenView = MyView.IsGenerative()
 
-        :return: bool
         :rtype: bool
         """
         return self.drawing_view.IsGenerative()
@@ -972,7 +943,6 @@ class DrawingView(AnyObject):
                 | 
                 |          MyView.Isolate
 
-        :return: None
         :rtype: None
         """
         return self.drawing_view.Isolate()
@@ -1000,7 +970,6 @@ class DrawingView(AnyObject):
                 | 
                 |          MyView.SaveEdition
 
-        :return: None
         :rtype: None
         """
         return self.drawing_view.SaveEdition()
@@ -1038,7 +1007,6 @@ class DrawingView(AnyObject):
         :param str i_view_name_prefix:
         :param str i_view_name_ident:
         :param str i_view_name_suffix:
-        :return: None
         :rtype: None
         """
         return self.drawing_view.SetViewName(i_view_name_prefix, i_view_name_ident, i_view_name_suffix)
@@ -1077,7 +1045,6 @@ class DrawingView(AnyObject):
                 |              Ymax = oXY(3)
 
         :param tuple o_values:
-        :return: Double
         :rtype: Double
         """
         vba_function_name = "size"
@@ -1120,7 +1087,6 @@ class DrawingView(AnyObject):
                 | 
                 |          MyView.UnAlignedWithReferenceView()
 
-        :return: None
         :rtype: None
         """
         return self.drawing_view.UnAlignedWithReferenceView()

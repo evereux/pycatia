@@ -74,7 +74,6 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
                 |     to TRUE, the check automatically calls the user function defined by
                 |     put_CorrectFunction when it fails.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -110,7 +109,6 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
                 |            CATIA.SystemService.Print aCheckEdition.Body
                 |          End if
 
-        :return: ExpertCheck
         :rtype: ExpertCheck
         """
         
@@ -128,7 +126,6 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
                 | 
                 |     Returns or sets the body to be called in order to correct the check.
 
-        :return: str
         :rtype: str
         """
 
@@ -153,7 +150,6 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
                 | 
                 |     Returns or sets the comment of the correct function of the check.
 
-        :return: str
         :rtype: str
         """
 
@@ -188,7 +184,6 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
                 |     4
                 |         User Function
 
-        :return: int
         :rtype: int
         """
 
@@ -213,7 +208,6 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
                 | 
                 |     Returns the list of the tuples that don't satisfy this check.
 
-        :return: ExpertReportObjects
         :rtype: ExpertReportObjects
         """
 
@@ -230,7 +224,6 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
                 | 
                 |     Returns or sets the contextual help of the check object.
 
-        :return: str
         :rtype: str
         """
 
@@ -255,7 +248,6 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
                 | 
                 |     Returns or sets the reason why the check was overridden.
 
-        :return: str
         :rtype: str
         """
 
@@ -282,7 +274,6 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
                 |     indicates the order in which the checks are evaluated. Checks with the same
                 |     priority are evaluated in the order of their creation.
 
-        :return: float
         :rtype: float
         """
 
@@ -307,7 +298,6 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
                 | 
                 |     Returns the list of the tuples that satisfy this check.
 
-        :return: ExpertReportObjects
         :rtype: ExpertReportObjects
         """
 
@@ -323,7 +313,6 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
                 | 
                 |     Applies the "correction" function on failed elements.
 
-        :return: None
         :rtype: None
         """
         return self.expert_check_runtime.Correct()
@@ -338,7 +327,6 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
                 | 
                 |     Highlights the Failures on the check.
 
-        :return: None
         :rtype: None
         """
         return self.expert_check_runtime.Highlight()
@@ -363,7 +351,6 @@ class ExpertCheckRuntime(ExpertRuleBaseComponentRuntime):
                 |     Returns:
                 |         1=OK, 0=KO.
 
-        :return: int
         :rtype: int
         """
         return self.expert_check_runtime.Status()

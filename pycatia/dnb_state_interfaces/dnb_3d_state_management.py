@@ -74,12 +74,11 @@ class DNB3DStateManagement(AnyObject):
                 |              Dim MySelectedState as DNB3DState
                 |              Dim MyNewState1 as DNB3DState
                 |              defnArray[0] = MySelectedState
-                |              Set MyNewState1 = stateManagement.Create3DState(“My NewState”,MySelectedProduct,defnArray)
+                |              Set MyNewState1 = stateManagement.Create3DState("My NewState",MySelectedProduct,defnArray)
 
         :param str i_state_name:
         :param AnyObject i_object:
         :param tuple i_list_defn:
-        :return: DNB3DState
         :rtype: DNB3DState
         """
         return DNB3DState(self.dnb_3d_state_management.Create3DState(i_state_name, i_object.com_object, i_list_defn))
@@ -107,7 +106,6 @@ class DNB3DStateManagement(AnyObject):
                 |                 stateManagement.Delete3DState(MySelectedState)
 
         :param DNB3DState i_state:
-        :return: None
         :rtype: None
         """
         return self.dnb_3d_state_management.Delete3DState(i_state.com_object)
@@ -155,11 +153,10 @@ class DNB3DStateManagement(AnyObject):
                 | 
                 |              Dim MySelectedProduct
                 |              Dim state as DNB3DState
-                |              Set state = stateManagement.GetState(MySelectedProduct, “My State1”)
+                |              Set state = stateManagement.GetState(MySelectedProduct, "My State1")
 
         :param AnyObject i_object:
         :param str i_state_name:
-        :return: DNB3DState
         :rtype: DNB3DState
         """
         return DNB3DState(self.dnb_3d_state_management.Get3DState(i_object.com_object, i_state_name))
@@ -183,7 +180,6 @@ class DNB3DStateManagement(AnyObject):
                 | 
                 |              stateCount = stateManagement.GetNumberOf3DStates
 
-        :return: int
         :rtype: int
         """
         return self.dnb_3d_state_management.GetNumberOf3DStates()
@@ -214,7 +210,6 @@ class DNB3DStateManagement(AnyObject):
                 |              stateCount = stateManagement.GetNumberOf3DStatesOnObject(MySelectedProduct)
 
         :param AnyObject i_obj:
-        :return: int
         :rtype: int
         """
         return self.dnb_3d_state_management.GetNumberOf3DStatesOnObject(i_obj.com_object)
@@ -248,11 +243,10 @@ class DNB3DStateManagement(AnyObject):
                 |         Example:
                 | 
                 |              Dim MySelectedActivity
-                |              NumStates = stateManagement.GetNumberof3DStatesInActivity(MySelectedActivity, “Begin Condition”)
+                |              NumStates = stateManagement.GetNumberof3DStatesInActivity(MySelectedActivity, "Begin Condition")
 
         :param Activity i_process:
         :param str i_condition_type:
-        :return: int
         :rtype: int
         """
         return self.dnb_3d_state_management.GetNumberof3DStatesInActivity(i_process.com_object, i_condition_type)
@@ -290,13 +284,12 @@ class DNB3DStateManagement(AnyObject):
                 |              Dim numActs
                 |              numActs = stateManagement.GetNumberof3DStatesInActivity(MySelectedActivity)
                 |              ReDim activitiesArray(numActs)
-                |              stateManagement.List3DStatesInActivity MySelectedActivity, “Begin
-                |              Condition”,activitiesArray
+                |              stateManagement.List3DStatesInActivity MySelectedActivity, "Begin
+                |              Condition",activitiesArray
 
         :param Activity i_process:
         :param str i_condition_type:
         :param tuple o_states:
-        :return: None
         :rtype: None
         """
         return self.dnb_3d_state_management.List3DStatesInActivity(i_process.com_object, i_condition_type, o_states)
@@ -337,7 +330,6 @@ class DNB3DStateManagement(AnyObject):
                 |              set My3DStates = stateManagement.ListAll3DStates
                 |              statesCount = My3DStates.Count
 
-        :return: DNB3DStates
         :rtype: DNB3DStates
         """
         return DNB3DStates(self.dnb_3d_state_management.ListAll3DStates())
@@ -374,7 +366,6 @@ class DNB3DStateManagement(AnyObject):
 
         :param AnyObject i_obj:
         :param tuple o_list_states:
-        :return: None
         :rtype: None
         """
         return self.dnb_3d_state_management.ListAll3DStatesOnObject(i_obj.com_object, o_list_states)

@@ -60,7 +60,6 @@ class SFMStiffener(SFMProfile):
                 |          Dim AngleMode As Integer
                 |          Set AngleMode = SfmStiffener.AngleMode
 
-        :return: int
         :rtype: int
         """
 
@@ -92,7 +91,6 @@ class SFMStiffener(SFMProfile):
                 |          Dim Orient As Long
                 |          Orient = SfmStiffener.SectionOrientation
 
-        :return: int
         :rtype: int
         """
 
@@ -124,7 +122,6 @@ class SFMStiffener(SFMProfile):
                 |          Dim Orient As Long
                 |          Orient = SfmStiffener.SideOrientation
 
-        :return: int
         :rtype: int
         """
 
@@ -156,7 +153,6 @@ class SFMStiffener(SFMProfile):
                 |          Dim WebSupport As Reference
                 |          Set WebSupport = SfmStiffener.WebSupport
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -188,7 +184,6 @@ class SFMStiffener(SFMProfile):
                 |          Dim Offset As Double
                 |          Set Offset = SfmStiffener.WebSupportOffset
 
-        :return: float
         :rtype: float
         """
 
@@ -211,7 +206,6 @@ class SFMStiffener(SFMProfile):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property WebSupportOffsetParam() As Length (Read Only)
 
-        :return: Length
         :rtype: Length
         """
 
@@ -234,7 +228,6 @@ class SFMStiffener(SFMProfile):
                 |          Dim MoldedSurface As Reference
                 |          Set MoldedSurface = SfmStiffener.GetMoldedSurface
 
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.sfm_stiffener.GetMoldedSurface())
@@ -258,7 +251,6 @@ class SFMStiffener(SFMProfile):
                 |          Set Welds = OperatedStiffenerObject.GetWelds(Nothing)
 
         :param Reference i_operating_ele:
-        :return: SFMWelds
         :rtype: SFMWelds
         """
         return SFMWelds(self.sfm_stiffener.GetWelds(i_operating_ele.com_object))
@@ -282,7 +274,6 @@ class SFMStiffener(SFMProfile):
                 |          Set IsAngleModeValid = SfmStiffener.IsAngleModeValid
 
         :param int i_angle_mode:
-        :return: bool
         :rtype: bool
         """
         return self.sfm_stiffener.IsAngleModeValid(i_angle_mode)

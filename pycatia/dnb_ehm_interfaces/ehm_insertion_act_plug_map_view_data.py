@@ -92,7 +92,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: str
         :rtype: str
         """
 
@@ -122,7 +121,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: str
         :rtype: str
         """
 
@@ -152,7 +150,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: str
         :rtype: str
         """
 
@@ -182,7 +179,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: str
         :rtype: str
         """
 
@@ -212,7 +208,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: str
         :rtype: str
         """
 
@@ -242,7 +237,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: float
         :rtype: float
         """
 
@@ -272,7 +266,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: str
         :rtype: str
         """
 
@@ -302,7 +295,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: str
         :rtype: str
         """
 
@@ -332,7 +324,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: str
         :rtype: str
         """
 
@@ -362,7 +353,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: str
         :rtype: str
         """
 
@@ -392,7 +382,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: str
         :rtype: str
         """
 
@@ -422,7 +411,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: int
         :rtype: int
         """
 
@@ -452,7 +440,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: str
         :rtype: str
         """
 
@@ -482,7 +469,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: str
         :rtype: str
         """
 
@@ -512,7 +498,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: str
         :rtype: str
         """
 
@@ -542,7 +527,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: str
         :rtype: str
         """
 
@@ -572,7 +556,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: str
         :rtype: str
         """
 
@@ -602,7 +585,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: str
         :rtype: str
         """
 
@@ -632,7 +614,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: str
         :rtype: str
         """
 
@@ -662,7 +643,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: float
         :rtype: float
         """
 
@@ -693,7 +673,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: int
         :rtype: int
         """
 
@@ -731,7 +710,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: float
         :rtype: float
         """
 
@@ -761,7 +739,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: str
         :rtype: str
         """
 
@@ -791,7 +768,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: str
         :rtype: str
         """
 
@@ -821,7 +797,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: str
         :rtype: str
         """
 
@@ -851,7 +826,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: str
         :rtype: str
         """
 
@@ -881,7 +855,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: str
         :rtype: str
         """
 
@@ -911,7 +884,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: str
         :rtype: str
         """
 
@@ -941,7 +913,6 @@ class EhmInsertionActPlugMapViewData(Activity):
                 |             E_FAIL otherwise
                 |             .
 
-        :return: str
         :rtype: str
         """
 

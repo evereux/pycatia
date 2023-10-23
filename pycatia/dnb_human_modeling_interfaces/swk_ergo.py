@@ -54,7 +54,6 @@ class SWKErgo(AnyObject):
                 |     invoking method GetItem (from AnyObject) with the character string "Carry" as
                 |     an argument.
 
-        :return: SWKErgoCarry
         :rtype: SWKErgoCarry
         """
 
@@ -73,7 +72,6 @@ class SWKErgo(AnyObject):
                 |     obtained by invoking method GetItem (from AnyObject) with the character string
                 |     "LiftLower" as an argument.
 
-        :return: SWKErgoLiftLower
         :rtype: SWKErgoLiftLower
         """
 
@@ -92,7 +90,6 @@ class SWKErgo(AnyObject):
                 |     obtained by invoking method GetItem (from AnyObject) with the character string
                 |     "PushPull" as an argument.
 
-        :return: SWKErgoPushPull
         :rtype: SWKErgoPushPull
         """
 
@@ -111,7 +108,6 @@ class SWKErgo(AnyObject):
                 |     obtained by invoking method GetItem (from AnyObject) with the character string
                 |     "RULA" as an argument.
 
-        :return: SWKErgoRULA
         :rtype: SWKErgoRULA
         """
 

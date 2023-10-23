@@ -66,7 +66,6 @@ class PSPLightPart(AnyObject):
                 |          Set objArg2 = objThisIntf.GetDefinition (objArg1)
 
         :param Product i_rel_axis:
-        :return: PSPListOfDoubles
         :rtype: PSPListOfDoubles
         """
         return PSPListOfDoubles(self.psp_light_part.GetDefinition(i_rel_axis.com_object))
@@ -101,7 +100,6 @@ class PSPLightPart(AnyObject):
 
         :param Product i_rel_axis:
         :param tuple i_list_points:
-        :return: tuple
         :rtype: tuple
         """
         return self.psp_light_part.SetDefinition(i_rel_axis.com_object, i_list_points)

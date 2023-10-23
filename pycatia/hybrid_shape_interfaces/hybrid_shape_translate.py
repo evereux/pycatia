@@ -66,7 +66,6 @@ class HybridShapeTranslate(HybridShape):
                 | 
                 |     Returns or sets the translate X coordinate value.
 
-        :return: float
         :rtype: float
         """
 
@@ -91,7 +90,6 @@ class HybridShapeTranslate(HybridShape):
                 | 
                 |     Returns or sets the translate Y coordinate value.
 
-        :return: float
         :rtype: float
         """
 
@@ -116,7 +114,6 @@ class HybridShapeTranslate(HybridShape):
                 | 
                 |     Returns or sets the translate Z coordinate value.
 
-        :return: float
         :rtype: float
         """
 
@@ -148,7 +145,6 @@ class HybridShapeTranslate(HybridShape):
                 |          Dim Dir As CATIAHybridShapeDirection
                 |          Set Dir=Translate.Direction
 
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
 
@@ -173,7 +169,6 @@ class HybridShapeTranslate(HybridShape):
                 | 
                 |     Returns the translate distance.
 
-        :return: Length
         :rtype: Length
         """
 
@@ -197,7 +192,6 @@ class HybridShapeTranslate(HybridShape):
                 |          Dim DistVal As double
                 |          Set DistVal =Translate.DistanceValue
 
-        :return: float
         :rtype: float
         """
 
@@ -229,7 +223,6 @@ class HybridShapeTranslate(HybridShape):
                 |          Dim Element As Reference
                 |          Set Element=Translate.ElemToTranslate
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -254,7 +247,6 @@ class HybridShapeTranslate(HybridShape):
                 | 
                 |     Returns or sets the first point defining the translation.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -291,7 +283,6 @@ class HybridShapeTranslate(HybridShape):
                 |      Dim oRefAxis As CATIAReference
                 |      Set oRefAxis  = Translate.RefAxisSystem
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -316,7 +307,6 @@ class HybridShapeTranslate(HybridShape):
                 | 
                 |     Returns or sets the second point defining the translation.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -346,7 +336,6 @@ class HybridShapeTranslate(HybridShape):
                 |         2= coordinates
                 |         3= Unknown type
 
-        :return: int
         :rtype: int
         """
 
@@ -382,7 +371,6 @@ class HybridShapeTranslate(HybridShape):
                 | 
                 |          hybShpTranslate.VolumeResult = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -421,7 +409,6 @@ class HybridShapeTranslate(HybridShape):
                 | 
                 |      oCreation = hybShpTranslate.GetCreationMode
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_translate.GetCreationMode()
@@ -448,7 +435,6 @@ class HybridShapeTranslate(HybridShape):
                 |          hybShpTranslate.SetCreationMode True
 
         :param bool i_creation:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_translate.SetCreationMode(i_creation)

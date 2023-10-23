@@ -63,7 +63,6 @@ class AnnotationSet(AnyObject):
                 |         oView
                 |             Value of CATIATPSView.
 
-        :return: TPSView
         :rtype: TPSView
         """
 
@@ -94,7 +93,6 @@ class AnnotationSet(AnyObject):
                 |         oAnnots
                 |             Empty Annotations' Collection.
 
-        :return: Annotations
         :rtype: Annotations
         """
 
@@ -117,7 +115,6 @@ class AnnotationSet(AnyObject):
                 |         oAFact
                 |             Annotations' factory.
 
-        :return: AnnotationFactory
         :rtype: AnnotationFactory
         """
         import pycatia.cat_tps_interfaces.annotation_factory
@@ -140,7 +137,6 @@ class AnnotationSet(AnyObject):
                 |         oAFact
                 |             Annotations' factory.
 
-        :return: AnnotationFactory2
         :rtype: AnnotationFactory2
         """
         return AnnotationFactory2(self.annotation_set.AnnotationFactory2)
@@ -162,7 +158,6 @@ class AnnotationSet(AnyObject):
                 |         oAnnotationSetType
                 |             Value of Set Type.
 
-        :return: int
         :rtype: int
         """
 
@@ -184,7 +179,6 @@ class AnnotationSet(AnyObject):
                 |         oAnnots
                 |             Collection of returned component.
 
-        :return: Annotations
         :rtype: Annotations
         """
 
@@ -206,7 +200,6 @@ class AnnotationSet(AnyObject):
                 |         opiCapFact
                 |             Capture factory.
 
-        :return: CaptureFactory
         :rtype: CaptureFactory
         """
 
@@ -228,7 +221,6 @@ class AnnotationSet(AnyObject):
                 |         oCaptures
                 |             Collection of returned Captures.
 
-        :return: Captures
         :rtype: Captures
         """
         return Captures(self.annotation_set.Captures)
@@ -249,7 +241,6 @@ class AnnotationSet(AnyObject):
                 |         oKindOfSet
                 |             It could be : Part Product Product_TP Process_BB Cgr Cgr_TP.
 
-        :return: str
         :rtype: str
         """
 
@@ -274,7 +265,6 @@ class AnnotationSet(AnyObject):
                 |             on. It can only be ISO, ANSI and JIS. (ANSI stands for
                 |             ASME).
 
-        :return: str
         :rtype: str
         """
 
@@ -296,7 +286,6 @@ class AnnotationSet(AnyObject):
                 |         oDisplay
                 |             Value of visualisation mode.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -326,7 +315,6 @@ class AnnotationSet(AnyObject):
                 |         oTPSViewFact
                 |             TPS Views' factory.
 
-        :return: TPSViewFactory
         :rtype: TPSViewFactory
         """
         return TPSViewFactory(self.annotation_set.TPSViewFactory)
@@ -347,7 +335,6 @@ class AnnotationSet(AnyObject):
                 |         oViews
                 |             Collection of returned views.
 
-        :return: TPSViews
         :rtype: TPSViews
         """
 
@@ -372,7 +359,6 @@ class AnnotationSet(AnyObject):
                 |         target set can receive a candidate FTA entity resulting from the import,
                 |         regular handling is carried on
 
-        :return: None
         :rtype: None
         """
         return self.annotation_set.ApplyViewReUseWhenCopySetTo()
@@ -396,7 +382,6 @@ class AnnotationSet(AnyObject):
                 |             result of datums merge.
 
         :param Part i_destination_part:
-        :return: str
         :rtype: str
         """
         from pycatia.mec_mod_interfaces.part import Part
@@ -434,7 +419,6 @@ class AnnotationSet(AnyObject):
 
         :param Part i_destination_part:
         :param tuple i_transfo:
-        :return: str
         :rtype: str
         """
         return self.annotation_set.GlobalCopySetToWithTransformation(i_destination_part.com_object, i_transfo)

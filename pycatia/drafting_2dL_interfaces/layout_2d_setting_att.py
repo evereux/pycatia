@@ -46,7 +46,6 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the Activate2DMode parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -71,7 +70,6 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the BackClippingPlane parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -96,7 +94,6 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the Boundaries2DLDisplay parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -121,7 +118,6 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the Boundaries2DLLineType parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -146,7 +142,6 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the Boundaries2DLThickness parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -171,7 +166,6 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the CalloutCreationDialogBox parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -196,7 +190,6 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the CalloutCreationInActiveView parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -221,7 +214,6 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the ClippingFrame parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -250,7 +242,6 @@ class Layout2DSettingAtt(SettingController):
                 |     Deprecated:
                 |         V5R18
 
-        :return: int
         :rtype: int
         """
 
@@ -275,7 +266,6 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the ClippingViewOutlineLinetype parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -300,7 +290,6 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the ClippingViewOutlineThickness parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -325,7 +314,6 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the CreateAssociativeUseEdges parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -350,7 +338,6 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the DedicatedFilterType parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -375,7 +362,6 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the DisplayBackAndCuttingPlane parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -400,7 +386,6 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the DisplayClippingOutline parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -425,7 +410,6 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the EditDedicatedFilterDialogBox parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -450,7 +434,6 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the FitAllInSheetFormat parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -475,7 +458,6 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the HideIn3D parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -501,7 +483,6 @@ class Layout2DSettingAtt(SettingController):
                 |     Returns the InsureFilterNamesUniqueness attribute value to apply to a
                 |     Layout at its creation parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -527,7 +508,6 @@ class Layout2DSettingAtt(SettingController):
                 |     Returns the InsureSheetNamesUniqueness attribute value to apply to a Layout
                 |     at its creation parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -553,7 +533,6 @@ class Layout2DSettingAtt(SettingController):
                 |     Returns the InsureViewNamesUniqueness attribute value to apply to a Layout
                 |     at its creation parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -579,7 +558,6 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the InsureViewNamesUniquenessScope parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -605,7 +583,6 @@ class Layout2DSettingAtt(SettingController):
                 |     Returns the default render style attribute value to apply to a Layout at
                 |     its creation parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -630,7 +607,6 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the PropagateHighlight parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -655,7 +631,6 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the tile of Layout window parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -680,7 +655,6 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the ViewBackgroundMode parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -706,7 +680,6 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the ViewFilterCreationMode parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -754,7 +727,6 @@ class Layout2DSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetActivate2DModeInfo(io_admin_level, io_locked, o_modified)
@@ -808,7 +780,6 @@ class Layout2DSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetBackClippingPlaneInfo(io_admin_level, io_locked, o_modified)
@@ -843,7 +814,6 @@ class Layout2DSettingAtt(SettingController):
         :param int o_value_r:
         :param int o_value_g:
         :param int o_value_b:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetBoundaries2DLColor(o_value_r, o_value_g, o_value_b)
@@ -882,7 +852,6 @@ class Layout2DSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetBoundaries2DLColorInfo(io_admin_level, io_locked, o_modified)
@@ -936,7 +905,6 @@ class Layout2DSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetBoundaries2DLDisplayInfo(io_admin_level, io_locked, o_modified)
@@ -990,7 +958,6 @@ class Layout2DSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetBoundaries2DLLineTypeInfo(io_admin_level, io_locked, o_modified)
@@ -1044,7 +1011,6 @@ class Layout2DSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetBoundaries2DLThicknessInfo(io_admin_level, io_locked, o_modified)
@@ -1098,7 +1064,6 @@ class Layout2DSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetCalloutCreationDialogBoxInfo(io_admin_level, io_locked, o_modified)
@@ -1153,7 +1118,6 @@ class Layout2DSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetCalloutCreationInActiveViewInfo(io_admin_level, io_locked, o_modified)
@@ -1207,7 +1171,6 @@ class Layout2DSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetClippingFrameInfo(io_admin_level, io_locked, o_modified)
@@ -1260,7 +1223,6 @@ class Layout2DSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.layout_2d_setting_att.GetClippingFrameReframeOnModeInfo(io_admin_level, io_locked)
@@ -1280,7 +1242,6 @@ class Layout2DSettingAtt(SettingController):
         :param int o_value_r:
         :param int o_value_g:
         :param int o_value_b:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetClippingViewOutlineColor(o_value_r, o_value_g, o_value_b)
@@ -1319,7 +1280,6 @@ class Layout2DSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetClippingViewOutlineColorInfo(io_admin_level, io_locked, o_modified)
@@ -1374,7 +1334,6 @@ class Layout2DSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetClippingViewOutlineLinetypeInfo(io_admin_level, io_locked, o_modified)
@@ -1429,7 +1388,6 @@ class Layout2DSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetClippingViewOutlineThicknessInfo(io_admin_level, io_locked, o_modified)
@@ -1483,7 +1441,6 @@ class Layout2DSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetCreateAssociativeUseEdgesInfo(io_admin_level, io_locked, o_modified)
@@ -1535,7 +1492,6 @@ class Layout2DSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.layout_2d_setting_att.GetDedicatedFilterTypeInfo(io_admin_level, io_locked)
@@ -1575,7 +1531,6 @@ class Layout2DSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetDisplayBackAndCuttingPlaneInfo(io_admin_level, io_locked, o_modified)
@@ -1629,7 +1584,6 @@ class Layout2DSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetDisplayClippingOutlineInfo(io_admin_level, io_locked, o_modified)
@@ -1684,7 +1638,6 @@ class Layout2DSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetEditDedicatedFilterDialogBoxInfo(io_admin_level, io_locked, o_modified)
@@ -1738,7 +1691,6 @@ class Layout2DSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetFitAllInSheetFormatInfo(io_admin_level, io_locked, o_modified)
@@ -1792,7 +1744,6 @@ class Layout2DSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetHideIn3DInfo(io_admin_level, io_locked, o_modified)
@@ -1847,7 +1798,6 @@ class Layout2DSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetInsureFilterNamesUniquenessInfo(io_admin_level, io_locked, o_modified)
@@ -1902,7 +1852,6 @@ class Layout2DSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetInsureSheetNamesUniquenessInfo(io_admin_level, io_locked, o_modified)
@@ -1956,7 +1905,6 @@ class Layout2DSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetInsureViewNamesUniquenessInfo(io_admin_level, io_locked, o_modified)
@@ -2009,7 +1957,6 @@ class Layout2DSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.layout_2d_setting_att.GetInsureViewNamesUniquenessScopeInfo(io_admin_level, io_locked)
@@ -2048,7 +1995,6 @@ class Layout2DSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetLayoutDefaultRenderStyleInfo(io_admin_level, io_locked, o_modified)
@@ -2102,7 +2048,6 @@ class Layout2DSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetPropagateHighlightInfo(io_admin_level, io_locked, o_modified)
@@ -2137,7 +2082,6 @@ class Layout2DSettingAtt(SettingController):
         :param int o_value_r:
         :param int o_value_g:
         :param int o_value_b:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetProtectedElementsColor(o_value_r, o_value_g, o_value_b)
@@ -2176,7 +2120,6 @@ class Layout2DSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetProtectedElementsColorInfo(io_admin_level, io_locked, o_modified)
@@ -2230,7 +2173,6 @@ class Layout2DSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.GetTileLayoutWindowInfo(io_admin_level, io_locked, o_modified)
@@ -2282,7 +2224,6 @@ class Layout2DSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.layout_2d_setting_att.GetViewBackgroundModeInfo(io_admin_level, io_locked)
@@ -2319,7 +2260,6 @@ class Layout2DSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.layout_2d_setting_att.GetViewFilterCreationModeInfo(io_admin_level, io_locked)
@@ -2346,7 +2286,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetActivate2DModeLock(i_locked)
@@ -2388,7 +2327,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetBackClippingPlaneLock(i_locked)
@@ -2423,7 +2361,6 @@ class Layout2DSettingAtt(SettingController):
         :param int i_value_r:
         :param int i_value_g:
         :param int i_value_b:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetBoundaries2DLColor(i_value_r, i_value_g, i_value_b)
@@ -2450,7 +2387,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetBoundaries2DLColorLock(i_locked)
@@ -2492,7 +2428,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetBoundaries2DLDisplayLock(i_locked)
@@ -2534,7 +2469,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetBoundaries2DLLineTypeLock(i_locked)
@@ -2576,7 +2510,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetBoundaries2DLThicknessLock(i_locked)
@@ -2618,7 +2551,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetCalloutCreationDialogBoxLock(i_locked)
@@ -2661,7 +2593,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetCalloutCreationInActiveViewLock(i_locked)
@@ -2703,7 +2634,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetClippingFrameLock(i_locked)
@@ -2746,7 +2676,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetClippingFrameReframeOnModeLock(i_locked)
@@ -2781,7 +2710,6 @@ class Layout2DSettingAtt(SettingController):
         :param int i_value_r:
         :param int i_value_g:
         :param int i_value_b:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetClippingViewOutlineColor(i_value_r, i_value_g, i_value_b)
@@ -2808,7 +2736,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetClippingViewOutlineColorLock(i_locked)
@@ -2851,7 +2778,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetClippingViewOutlineLinetypeLock(i_locked)
@@ -2894,7 +2820,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetClippingViewOutlineThicknessLock(i_locked)
@@ -2936,7 +2861,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetCreateAssociativeUseEdgesLock(i_locked)
@@ -2978,7 +2902,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetDedicatedFilterTypeLock(i_locked)
@@ -3020,7 +2943,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetDisplayBackAndCuttingPlaneLock(i_locked)
@@ -3062,7 +2984,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetDisplayClippingOutlineLock(i_locked)
@@ -3105,7 +3026,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetEditDedicatedFilterDialogBoxLock(i_locked)
@@ -3147,7 +3067,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetFitAllInSheetFormatLock(i_locked)
@@ -3189,7 +3108,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetHideIn3DLock(i_locked)
@@ -3232,7 +3150,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetInsureFilterNamesUniquenessLock(i_locked)
@@ -3274,7 +3191,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetInsureSheetNamesUniquenessLock(i_locked)
@@ -3316,7 +3232,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetInsureViewNamesUniquenessLock(i_locked)
@@ -3359,7 +3274,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetInsureViewNamesUniquenessScopeLock(i_locked)
@@ -3401,7 +3315,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetLayoutDefaultRenderStyleLock(i_locked)
@@ -3443,7 +3356,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetPropagateHighlightLock(i_locked)
@@ -3478,7 +3390,6 @@ class Layout2DSettingAtt(SettingController):
         :param int i_value_r:
         :param int i_value_g:
         :param int i_value_b:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetProtectedElementsColor(i_value_r, i_value_g, i_value_b)
@@ -3505,7 +3416,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetProtectedElementsColorLock(i_locked)
@@ -3547,7 +3457,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetTileLayoutWindowLock(i_locked)
@@ -3589,7 +3498,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetViewBackgroundModeLock(i_locked)
@@ -3631,7 +3539,6 @@ class Layout2DSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_setting_att.SetViewFilterCreationModeLock(i_locked)

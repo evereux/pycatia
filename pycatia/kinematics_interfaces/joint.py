@@ -70,7 +70,6 @@ class Joint(AnyObject):
                 |             joint type has no such parameter, or if the limit is
                 |             unset.
 
-        :return: None
         :rtype: None
         """
         return self.joint.UnsetLowerLimit1()
@@ -91,7 +90,6 @@ class Joint(AnyObject):
                 |         iLimitValue
                 |             The value for the limit
 
-        :return: None
         :rtype: None
         """
         return self.joint.UnsetLowerLimit2()
@@ -112,7 +110,6 @@ class Joint(AnyObject):
                 |         iLimitValue
                 |             The value for the limit
 
-        :return: None
         :rtype: None
         """
         return self.joint.UnsetUpperLimit1()
@@ -133,7 +130,6 @@ class Joint(AnyObject):
                 |         iLimitValue
                 |             The value for the limit
 
-        :return: None
         :rtype: None
         """
         return self.joint.UnsetUpperLimit2()

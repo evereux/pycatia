@@ -53,7 +53,6 @@ class ArrWorkbench(Workbench):
                 | 
                 |     Returns the ArrNomenclatureTree.
 
-        :return: ArrNomenclatureTree
         :rtype: ArrNomenclatureTree
         """
 
@@ -72,7 +71,6 @@ class ArrWorkbench(Workbench):
                 |     workbench could not locate the startup instance to generate the necessary
                 |     NomenclatureTree information.
 
-        :return: ArrNomenclatureTree
         :rtype: ArrNomenclatureTree
         """
         return ArrNomenclatureTree(self.arr_workbench.AddNomenclatureTree())
@@ -100,7 +98,6 @@ class ArrWorkbench(Workbench):
                 |         Product
 
         :param ArrangementProduct i_arr_product:
-        :return: Product
         :rtype: Product
         """
         return Product(self.arr_workbench.ConvertArrangementProductToProduct(i_arr_product.com_object))
@@ -127,7 +124,6 @@ class ArrWorkbench(Workbench):
                 |         Product
 
         :param Product i_product:
-        :return: ArrangementProduct
         :rtype: ArrangementProduct
         """
         return ArrangementProduct(self.arr_workbench.ConvertProductToArrangementProduct(i_product.com_object))
@@ -160,7 +156,6 @@ class ArrWorkbench(Workbench):
 
         :param str i_interface_name:
         :param AnyObject i_object:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.arr_workbench.FindInterface(i_interface_name, i_object.com_object)

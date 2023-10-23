@@ -56,7 +56,6 @@ class HybridShapeFilletBiTangent(HybridShape):
                 | 
                 |     Returns or Sets parameter for conical section.
 
-        :return: float
         :rtype: float
         """
 
@@ -81,7 +80,6 @@ class HybridShapeFilletBiTangent(HybridShape):
                 | 
                 |     Returns or Sets the first support surface feature.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -114,7 +112,6 @@ class HybridShapeFilletBiTangent(HybridShape):
                 |      Dim HybLaw As Reference
                 |      HybLaw = Fillet.FirstLawRelimiter
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -141,7 +138,6 @@ class HybridShapeFilletBiTangent(HybridShape):
                 |     position.
                 |     Orientation is same or inverse than the normal to the first surface support
 
-        :return: int
         :rtype: int
         """
 
@@ -166,7 +162,6 @@ class HybridShapeFilletBiTangent(HybridShape):
                 | 
                 |     Returns or Sets the Hold Curve feature.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -201,7 +196,6 @@ class HybridShapeFilletBiTangent(HybridShape):
                 |              Dim HybridIntegratedLaw
                 |              Set HybridIntegratedLaw = Fillet.IntegratedLaw
 
-        :return: HybridShapeIntegratedLaw
         :rtype: HybridShapeIntegratedLaw
         """
 
@@ -226,7 +220,6 @@ class HybridShapeFilletBiTangent(HybridShape):
                 | 
                 |     Returns fillet radius in a CATIALength.
 
-        :return: Length
         :rtype: Length
         """
 
@@ -246,7 +239,6 @@ class HybridShapeFilletBiTangent(HybridShape):
                 |     - CATGSMRadiusDefault (0)
                 |     - CATGSMRadiusChordLength(1)
 
-        :return: int
         :rtype: int
         """
 
@@ -271,7 +263,6 @@ class HybridShapeFilletBiTangent(HybridShape):
                 | 
                 |     Returns or Sets fillet radius value.
 
-        :return: float
         :rtype: float
         """
 
@@ -302,7 +293,6 @@ class HybridShapeFilletBiTangent(HybridShape):
                 |     - CATGSMMaximum (2)
                 |     - CATGSMMinimum (3)
 
-        :return: int
         :rtype: int
         """
 
@@ -327,7 +317,6 @@ class HybridShapeFilletBiTangent(HybridShape):
                 | 
                 |     Returns or sets the Second support surface feature.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -360,7 +349,6 @@ class HybridShapeFilletBiTangent(HybridShape):
                 |      Dim HybLaw As Reference
                 |      HybLaw = Fillet.SecondLawRelimiter
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -388,7 +376,6 @@ class HybridShapeFilletBiTangent(HybridShape):
                 |     Orientation is same or inverse than the normal to the Second surface
                 |     support
 
-        :return: int
         :rtype: int
         """
 
@@ -416,7 +403,6 @@ class HybridShapeFilletBiTangent(HybridShape):
                 |     - CATGSMCircularSection(0)
                 |     - CATGSMConicalSection (1)
 
-        :return: int
         :rtype: int
         """
 
@@ -441,7 +427,6 @@ class HybridShapeFilletBiTangent(HybridShape):
                 | 
                 |     Returns or Sets the spine feature.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -468,7 +453,6 @@ class HybridShapeFilletBiTangent(HybridShape):
                 |     0 : No trim of fillet supports. = 1 : Trim of both fillet supports. =
                 |     2 : Trim of fillet support 1. = 3 : Trim of fillet support 2.
 
-        :return: int
         :rtype: int
         """
 
@@ -497,7 +481,6 @@ class HybridShapeFilletBiTangent(HybridShape):
                 |         iFace
 
         :param Reference i_face:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_fillet_bi_tangent.AppendNewFaceToKeep(i_face.com_object)
@@ -535,7 +518,6 @@ class HybridShapeFilletBiTangent(HybridShape):
                 |             Position of the face to be retrieved.
 
         :param int i_pos:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_fillet_bi_tangent.GetFaceToKeep(i_pos))
@@ -550,7 +532,6 @@ class HybridShapeFilletBiTangent(HybridShape):
                 | 
                 |     Inverts first orientation used to specify fillet center position.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_fillet_bi_tangent.InvertFirstOrientation()
@@ -565,7 +546,6 @@ class HybridShapeFilletBiTangent(HybridShape):
                 | 
                 |     Inverts second orientation used to specify fillet center position.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_fillet_bi_tangent.InvertSecondOrientation()
@@ -580,7 +560,6 @@ class HybridShapeFilletBiTangent(HybridShape):
                 | 
                 |     Remove all the faces to keep.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_fillet_bi_tangent.RemoveAllFacesToKeep()
@@ -600,7 +579,6 @@ class HybridShapeFilletBiTangent(HybridShape):
                 |         iFace
 
         :param Reference i_face:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_fillet_bi_tangent.RemoveFaceToKeep(i_face.com_object)

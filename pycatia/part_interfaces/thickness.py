@@ -57,7 +57,6 @@ class Thickness(DressUpShape):
                 | 
                 |          Set list = firstThickness.FacesToThicken
 
-        :return: References
         :rtype: References
         """
 
@@ -80,7 +79,6 @@ class Thickness(DressUpShape):
                 | 
                 |          Set offset = firstThickness.Offset
 
-        :return: Length
         :rtype: Length
         """
 
@@ -111,7 +109,6 @@ class Thickness(DressUpShape):
                 |      call firstThickness.AddFaceToThicken(face)
 
         :param Reference i_face_to_thicken:
-        :return: None
         :rtype: None
         """
         return self.thickness.AddFaceToThicken(i_face_to_thicken.com_object)
@@ -157,7 +154,6 @@ class Thickness(DressUpShape):
                 |      call firstThickness.AddFaceWithDifferentThickness(face)
 
         :param Reference i_face_to_thicken:
-        :return: None
         :rtype: None
         """
         return self.thickness.AddFaceWithDifferentThickness(i_face_to_thicken.com_object)
@@ -203,7 +199,6 @@ class Thickness(DressUpShape):
                 |      call
 
         :param Reference i_face_to_remove:
-        :return: None
         :rtype: None
         """
         return self.thickness.RemoveFaceWithDifferentThickness(i_face_to_remove.com_object)
@@ -234,7 +229,6 @@ class Thickness(DressUpShape):
                 |     Set support of Thickness feature.
 
         :param Reference i_volume_support:
-        :return: None
         :rtype: None
         """
         return self.thickness.SetVolumeSupport(i_volume_support.com_object)
@@ -279,7 +273,6 @@ class Thickness(DressUpShape):
                 |      call firstThickness.WithdrawFaceToThicken(face)
 
         :param Reference i_face_to_withdraw:
-        :return: None
         :rtype: None
         """
         return self.thickness.WithdrawFaceToThicken(i_face_to_withdraw.com_object)
