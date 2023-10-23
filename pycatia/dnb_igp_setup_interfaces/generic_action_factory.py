@@ -105,7 +105,6 @@ class GenericActionFactory(AnyObject):
         :param str i_action_type:
         :param bool i_before:
         :param Activity i_reference_activity:
-        :return: GenericAction
         :rtype: GenericAction
         """
         return GenericAction(

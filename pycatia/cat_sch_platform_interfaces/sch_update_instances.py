@@ -81,7 +81,6 @@ class SchUpdateInstances(AnyObject):
                 |          objCompRef
 
         :param SchComponent i_comp_local_ref:
-        :return: None
         :rtype: None
         """
         return self.sch_update_instances.UpdateAllInstancesFromReference(i_comp_local_ref.com_object)

@@ -51,7 +51,6 @@ class ABQSmoothStepAmplitude(ABQProperty):
                 |     Returns:
                 |         The size of the time/amplitude table.
 
-        :return: int
         :rtype: int
         """
 
@@ -76,7 +75,6 @@ class ABQSmoothStepAmplitude(ABQProperty):
                 |         STEP_TIME
                 |         TOTAL_TIME
 
-        :return: int
         :rtype: int
         """
 
@@ -113,7 +111,6 @@ class ABQSmoothStepAmplitude(ABQProperty):
 
         :param tuple i_time:
         :param tuple i_amplitude:
-        :return: None
         :rtype: None
         """
         return self.abq_smooth_step_amplitude.AddTimeAmplitudeTable(i_time, i_amplitude)
@@ -154,7 +151,6 @@ class ABQSmoothStepAmplitude(ABQProperty):
 
         :param tuple o_time:
         :param tuple o_amplitude:
-        :return: None
         :rtype: None
         """
         return self.abq_smooth_step_amplitude.GetTimeAmplitudeTable(o_time, o_amplitude)

@@ -61,7 +61,6 @@ class HybridShapeExtremum(HybridShape):
                 | 
                 |     Returns or sets the direction into which the extremum is detected.
 
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
 
@@ -86,7 +85,6 @@ class HybridShapeExtremum(HybridShape):
                 | 
                 |     Returns or sets the second direction into which the extremum is detected.
 
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
 
@@ -111,7 +109,6 @@ class HybridShapeExtremum(HybridShape):
                 | 
                 |     Returns or sets the third direction into which the extremum is detected.
 
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
 
@@ -137,7 +134,6 @@ class HybridShapeExtremum(HybridShape):
                 |     Returns or sets the extremum type.
                 |     Legal values: 1 to get a maximum element or 0 to get a minimum element.
 
-        :return: int
         :rtype: int
         """
 
@@ -163,7 +159,6 @@ class HybridShapeExtremum(HybridShape):
                 |     Returns or sets the extremum type of the second direction.
                 |     Legal values: 1 to get a maximum element or 0 to get a minimum element.
 
-        :return: int
         :rtype: int
         """
 
@@ -189,7 +184,6 @@ class HybridShapeExtremum(HybridShape):
                 |     Returns or sets the extremum type of the third direction.
                 |     Legal values: 1 to get a maximum element or 0 to get a minimum element.
 
-        :return: int
         :rtype: int
         """
 
@@ -214,7 +208,6 @@ class HybridShapeExtremum(HybridShape):
                 | 
                 |     Returns or sets the object on which the extremum is detected.
 
-        :return: Reference
         :rtype: Reference
         """
 

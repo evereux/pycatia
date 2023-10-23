@@ -74,7 +74,6 @@ class ABQInteractions(Collection):
                 |          Set abqFPair =  abaqusInteractions..Add("ABQFastenedPair")
 
         :param str i_interaction_type:
-        :return: ABQInteraction
         :rtype: ABQInteraction
         """
         return ABQInteraction(self.abq_interactions.Add(i_interaction_type))
@@ -105,7 +104,6 @@ class ABQInteractions(Collection):
                 |         The specified ABQInteraction.
 
         :param cat_variant i_index:
-        :return: ABQInteraction
         :rtype: ABQInteraction
         """
         return ABQInteraction(self.abq_interactions.Item(i_index))
@@ -133,7 +131,6 @@ class ABQInteractions(Collection):
                 |             property.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.abq_interactions.Remove(i_index)

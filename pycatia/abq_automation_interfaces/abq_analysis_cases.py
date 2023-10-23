@@ -69,7 +69,6 @@ class ABQAnalysisCases(Collection):
                 |          Set abqCase1 =  abqCases.Add("STRUCTURAL")
 
         :param str i_analysis_type:
-        :return: ABQAnalysisCase
         :rtype: ABQAnalysisCase
         """
         return ABQAnalysisCase(self.abq_analysis_cases.Add(i_analysis_type))
@@ -108,7 +107,6 @@ class ABQAnalysisCases(Collection):
                 |          Set ThatCase = CaseColl.Item("MyCase")
 
         :param cat_variant i_index:
-        :return: ABQAnalysisCase
         :rtype: ABQAnalysisCase
         """
         return ABQAnalysisCase(self.abq_analysis_cases.Item(i_index))
@@ -137,7 +135,6 @@ class ABQAnalysisCases(Collection):
                 |             property.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.abq_analysis_cases.Remove(i_index)

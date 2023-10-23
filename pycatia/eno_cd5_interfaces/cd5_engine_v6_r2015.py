@@ -75,7 +75,6 @@ class CD5EngineV6R2015(CD5EngineV6R2014x):
                 |          Dim oTemplateTypes As ENOIACD5TemplateTypes
                 |          Set oTemplateTypes = oCD5Engine.TemplateTypes
 
-        :return: CD5TemplateTypes
         :rtype: CD5TemplateTypes
         """
 
@@ -113,7 +112,6 @@ class CD5EngineV6R2015(CD5EngineV6R2014x):
                 |          Set ID = oCD5Engine.GetIDFromPhysicalID("6EFB8D2E00008A445257E36100000DF7")
 
         :param str i_physical_id:
-        :return: CD5ID
         :rtype: CD5ID
         """
         return CD5ID(self.cd5_engine_v6_r2015.GetIDFromPhysicalID(i_physical_id))
@@ -151,7 +149,6 @@ class CD5EngineV6R2015(CD5EngineV6R2014x):
                 |          Set IDs = oCD5Engine.GetIDsFromPhysicalIDs(iPhysicalIDs)
 
         :param tuple i_physical_i_ds:
-        :return: CD5IDs
         :rtype: CD5IDs
         """
         return CD5IDs(self.cd5_engine_v6_r2015.GetIDsFromPhysicalIDs(i_physical_i_ds))
@@ -193,7 +190,6 @@ class CD5EngineV6R2015(CD5EngineV6R2014x):
                 |          Set oCD5Properties = oCD5Engine.GetProperties(ObjID)
 
         :param CD5ID i_enoiacd5_id:
-        :return: CD5Properties
         :rtype: CD5Properties
         """
         return CD5Properties(self.cd5_engine_v6_r2015.GetProperties(i_enoiacd5_id.com_object))
@@ -235,7 +231,6 @@ class CD5EngineV6R2015(CD5EngineV6R2014x):
                 |          Set oCD5Properties = oCD5Engine.GetPropertiesOfDocument(objDocument)
 
         :param Document i_catia_document:
-        :return: CD5Properties
         :rtype: CD5Properties
         """
         return CD5Properties(self.cd5_engine_v6_r2015.GetPropertiesOfDocument(i_catia_document.com_object))
@@ -287,7 +282,6 @@ class CD5EngineV6R2015(CD5EngineV6R2014x):
 
         :param Document i_catia_document:
         :param str i_embedded_component_name:
-        :return: CD5Properties
         :rtype: CD5Properties
         """
         return CD5Properties(
@@ -348,7 +342,6 @@ class CD5EngineV6R2015(CD5EngineV6R2014x):
         :param CD5Template i_cd5_template:
         :param str i_name:
         :param str i_type:
-        :return: Document
         :rtype: Document
         """
         return Document(self.cd5_engine_v6_r2015.NewFrom(i_cd5_template.com_object, i_name, i_type))

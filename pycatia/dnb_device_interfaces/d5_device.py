@@ -61,7 +61,6 @@ class D5Device(BasicDevice):
                 |             This will contain the full path to the file (file name and path) to
                 |             the D5 device file.
 
-        :return: str
         :rtype: str
         """
         return self.d5_device.GetLinkedDeviceFile()

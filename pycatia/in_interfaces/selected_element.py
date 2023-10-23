@@ -50,7 +50,6 @@ class SelectedElement(AnyObject):
                 | 
                 |     Returns the document to which the selected element belongs.
 
-        :return: Document
         :rtype: Document
         """
 
@@ -179,7 +178,6 @@ class SelectedElement(AnyObject):
                 |          10
                 |          Product3
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -197,7 +195,6 @@ class SelectedElement(AnyObject):
                 |     Returns a Reference version of the Value property.
                 |     Role: Returns a Reference version of Value .
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -251,7 +248,6 @@ class SelectedElement(AnyObject):
                 |         Consequently, in most cases, use the VBScript TypeName function instead
                 |         of this property.
 
-        :return: str
         :rtype: str
         """
 
@@ -268,7 +264,6 @@ class SelectedElement(AnyObject):
                 | 
                 |     Returns the actual selected automation object.
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -303,7 +298,6 @@ class SelectedElement(AnyObject):
                 |          oSelElem.GetCoordinates myArray
 
         :param tuple io_point:
-        :return: None
         :rtype: None
         """
         vba_function_name = 'get_coordinates'

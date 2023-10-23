@@ -49,7 +49,6 @@ class DocumentationSettingAtt(SettingController):
                 | 
                 |     Returns the User Companion location (path) parameter.
 
-        :return: str
         :rtype: str
         """
 
@@ -74,7 +73,6 @@ class DocumentationSettingAtt(SettingController):
                 | 
                 |     Returns the technical documentation language parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -99,7 +97,6 @@ class DocumentationSettingAtt(SettingController):
                 | 
                 |     Returns the contextual priority parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -124,7 +121,6 @@ class DocumentationSettingAtt(SettingController):
                 | 
                 |     Returns the technical documentation location (path) parameter.
 
-        :return: str
         :rtype: str
         """
 
@@ -170,7 +166,6 @@ class DocumentationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.documentation_setting_att.GetCompanionPathInfo(io_admin_level, io_locked)
@@ -207,7 +202,6 @@ class DocumentationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.documentation_setting_att.GetDocLanguageInfo(io_admin_level, io_locked)
@@ -244,7 +238,6 @@ class DocumentationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.documentation_setting_att.GetPriorityInfo(io_admin_level, io_locked)
@@ -282,7 +275,6 @@ class DocumentationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.documentation_setting_att.GetTechnicalDocumentationPathInfo(io_admin_level, io_locked)
@@ -309,7 +301,6 @@ class DocumentationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.documentation_setting_att.SetCompanionPathLock(i_locked)
@@ -352,7 +343,6 @@ class DocumentationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.documentation_setting_att.SetDocLanguageLock(i_locked)
@@ -394,7 +384,6 @@ class DocumentationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.documentation_setting_att.SetPriorityLock(i_locked)
@@ -437,7 +426,6 @@ class DocumentationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.documentation_setting_att.SetTechnicalDocumentationPathLock(i_locked)

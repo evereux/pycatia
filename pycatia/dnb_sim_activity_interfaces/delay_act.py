@@ -65,7 +65,6 @@ class DelayAct(Activity):
                 |            delay  = 30
                 |            objDelayAct.Delay=delay
 
-        :return: float
         :rtype: float
         """
 

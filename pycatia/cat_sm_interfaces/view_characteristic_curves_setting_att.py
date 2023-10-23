@@ -88,7 +88,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -120,7 +119,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -152,7 +150,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -183,7 +180,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -214,7 +210,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -245,7 +240,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -276,7 +270,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -307,7 +300,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -338,7 +330,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -370,7 +361,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -402,7 +392,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -434,7 +423,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -466,7 +454,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -498,7 +485,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -530,7 +516,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -561,7 +546,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -593,7 +577,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -624,7 +607,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -656,7 +638,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -687,7 +668,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -718,7 +698,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -749,7 +728,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -781,7 +759,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -813,7 +790,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -844,7 +820,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -875,7 +850,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -906,7 +880,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -938,7 +911,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -969,7 +941,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -1000,7 +971,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -1032,7 +1002,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -1064,7 +1033,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -1096,7 +1064,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -1128,7 +1095,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -1160,7 +1126,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -1192,7 +1157,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -1223,7 +1187,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -1255,7 +1218,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -1287,7 +1249,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -1319,7 +1280,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -1351,7 +1311,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -1383,7 +1342,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -1415,7 +1373,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -1447,7 +1404,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -1479,7 +1435,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -1510,7 +1465,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     1 The characteristic curve is shown
                 |     0 The characteristic curve is hidden
 
-        :return: int
         :rtype: int
         """
 
@@ -1539,7 +1493,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFDBeadBTLFeatInfo(io_admin_level, io_locked)
@@ -1560,7 +1513,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFDCircStampBTLFeatInfo(io_admin_level, io_locked)
@@ -1581,7 +1533,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFDCurveStampBTLFeatInfo(io_admin_level, io_locked)
@@ -1601,7 +1552,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFDFlgCutBTLFeatInfo(io_admin_level, io_locked)
@@ -1621,7 +1571,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFDFlgCutIMLInfo(io_admin_level, io_locked)
@@ -1641,7 +1590,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFDFlgCutOMLInfo(io_admin_level, io_locked)
@@ -1661,7 +1609,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFDFlgHoleBTLFeatInfo(io_admin_level, io_locked)
@@ -1681,7 +1628,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFDFlgHoleIMLInfo(io_admin_level, io_locked)
@@ -1701,7 +1647,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFDFlgHoleOMLInfo(io_admin_level, io_locked)
@@ -1722,7 +1667,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFDOtherStampBTLFeatInfo(io_admin_level, io_locked)
@@ -1743,7 +1687,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFDStiffStampBTLFeatInfo(io_admin_level, io_locked)
@@ -1764,7 +1707,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFDSurfFlgBTLFeatBFInfo(io_admin_level, io_locked)
@@ -1785,7 +1727,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFDSurfFlgBTLFeatHFInfo(io_admin_level, io_locked)
@@ -1806,7 +1747,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFDSurfFlgBTLSuppBFInfo(io_admin_level, io_locked)
@@ -1827,7 +1767,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFDSurfFlgBTLSuppHFInfo(io_admin_level, io_locked)
@@ -1847,7 +1786,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFDSurfFlgIMLBFInfo(io_admin_level, io_locked)
@@ -1867,7 +1805,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFDSurfFlgIMLHFInfo(io_admin_level, io_locked)
@@ -1887,7 +1824,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFDSurfFlgOMLBFInfo(io_admin_level, io_locked)
@@ -1907,7 +1843,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFDSurfFlgOMLHFInfo(io_admin_level, io_locked)
@@ -1928,7 +1863,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFDSurfStampBTLFeatInfo(io_admin_level, io_locked)
@@ -1949,7 +1883,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFDUserStampBTLFeatInfo(io_admin_level, io_locked)
@@ -1969,7 +1902,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFPBeadBTLFeatInfo(io_admin_level, io_locked)
@@ -1990,7 +1922,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFPCircStampBTLFeatInfo(io_admin_level, io_locked)
@@ -2011,7 +1942,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFPCurveStampBTLFeatInfo(io_admin_level, io_locked)
@@ -2031,7 +1961,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFPFlgCutBTLFeatInfo(io_admin_level, io_locked)
@@ -2051,7 +1980,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFPFlgCutIMLInfo(io_admin_level, io_locked)
@@ -2071,7 +1999,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFPFlgCutOMLInfo(io_admin_level, io_locked)
@@ -2091,7 +2018,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFPFlgHoleBTLFeatInfo(io_admin_level, io_locked)
@@ -2111,7 +2037,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFPFlgHoleIMLInfo(io_admin_level, io_locked)
@@ -2131,7 +2056,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFPFlgHoleOMLInfo(io_admin_level, io_locked)
@@ -2152,7 +2076,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFPOtherStampBTLFeatInfo(io_admin_level, io_locked)
@@ -2173,7 +2096,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFPStiffStampBTLFeatInfo(io_admin_level, io_locked)
@@ -2194,7 +2116,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFPSurfFlgBTLFeatBFInfo(io_admin_level, io_locked)
@@ -2215,7 +2136,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFPSurfFlgBTLFeatHFInfo(io_admin_level, io_locked)
@@ -2236,7 +2156,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFPSurfFlgBTLSuppBFInfo(io_admin_level, io_locked)
@@ -2257,7 +2176,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFPSurfFlgBTLSuppHFInfo(io_admin_level, io_locked)
@@ -2277,7 +2195,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFPSurfFlgCLBBFInfo(io_admin_level, io_locked)
@@ -2297,7 +2214,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFPSurfFlgCLBHFInfo(io_admin_level, io_locked)
@@ -2317,7 +2233,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFPSurfFlgIMLBFInfo(io_admin_level, io_locked)
@@ -2337,7 +2252,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFPSurfFlgIMLHFInfo(io_admin_level, io_locked)
@@ -2357,7 +2271,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFPSurfFlgOML2BFInfo(io_admin_level, io_locked)
@@ -2377,7 +2290,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFPSurfFlgOML2HFInfo(io_admin_level, io_locked)
@@ -2397,7 +2309,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFPSurfFlgOMLBFInfo(io_admin_level, io_locked)
@@ -2417,7 +2328,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFPSurfFlgOMLHFInfo(io_admin_level, io_locked)
@@ -2438,7 +2348,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFPSurfStampBTLFeatInfo(io_admin_level, io_locked)
@@ -2459,7 +2368,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.view_characteristic_curves_setting_att.GetSHMViewFPUserStampBTLFeatInfo(io_admin_level, io_locked)
@@ -2477,7 +2385,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFDBeadBTLFeatLock(i_locked)
@@ -2510,7 +2417,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFDCircStampBTLFeatLock(i_locked)
@@ -2543,7 +2449,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFDCurveStampBTLFeatLock(i_locked)
@@ -2576,7 +2481,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFDFlgCutBTLFeatLock(i_locked)
@@ -2608,7 +2512,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFDFlgCutIMLLock(i_locked)
@@ -2640,7 +2543,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFDFlgCutOMLLock(i_locked)
@@ -2673,7 +2575,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFDFlgHoleBTLFeatLock(i_locked)
@@ -2706,7 +2607,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFDFlgHoleIMLLock(i_locked)
@@ -2739,7 +2639,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFDFlgHoleOMLLock(i_locked)
@@ -2772,7 +2671,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFDOtherStampBTLFeatLock(i_locked)
@@ -2805,7 +2703,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFDStiffStampBTLFeatLock(i_locked)
@@ -2838,7 +2735,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFDSurfFlgBTLFeatBFLock(i_locked)
@@ -2871,7 +2767,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFDSurfFlgBTLFeatHFLock(i_locked)
@@ -2904,7 +2799,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFDSurfFlgBTLSuppBFLock(i_locked)
@@ -2937,7 +2831,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFDSurfFlgBTLSuppHFLock(i_locked)
@@ -2970,7 +2863,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFDSurfFlgIMLBFLock(i_locked)
@@ -3003,7 +2895,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFDSurfFlgIMLHFLock(i_locked)
@@ -3036,7 +2927,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFDSurfFlgOMLBFLock(i_locked)
@@ -3069,7 +2959,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFDSurfFlgOMLHFLock(i_locked)
@@ -3102,7 +2991,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFDSurfStampBTLFeatLock(i_locked)
@@ -3135,7 +3023,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFDUserStampBTLFeatLock(i_locked)
@@ -3168,7 +3055,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFPBeadBTLFeatLock(i_locked)
@@ -3201,7 +3087,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFPCircStampBTLFeatLock(i_locked)
@@ -3234,7 +3119,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFPCurveStampBTLFeatLock(i_locked)
@@ -3267,7 +3151,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFPFlgCutBTLFeatLock(i_locked)
@@ -3299,7 +3182,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFPFlgCutIMLLock(i_locked)
@@ -3331,7 +3213,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFPFlgCutOMLLock(i_locked)
@@ -3364,7 +3245,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFPFlgHoleBTLFeatLock(i_locked)
@@ -3397,7 +3277,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFPFlgHoleIMLLock(i_locked)
@@ -3430,7 +3309,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFPFlgHoleOMLLock(i_locked)
@@ -3463,7 +3341,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFPOtherStampBTLFeatLock(i_locked)
@@ -3496,7 +3373,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFPStiffStampBTLFeatLock(i_locked)
@@ -3529,7 +3405,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFPSurfFlgBTLFeatBFLock(i_locked)
@@ -3562,7 +3437,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFPSurfFlgBTLFeatHFLock(i_locked)
@@ -3595,7 +3469,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFPSurfFlgBTLSuppBFLock(i_locked)
@@ -3628,7 +3501,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFPSurfFlgBTLSuppHFLock(i_locked)
@@ -3661,7 +3533,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFPSurfFlgCLBBFLock(i_locked)
@@ -3694,7 +3565,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFPSurfFlgCLBHFLock(i_locked)
@@ -3727,7 +3597,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFPSurfFlgIMLBFLock(i_locked)
@@ -3760,7 +3629,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFPSurfFlgIMLHFLock(i_locked)
@@ -3793,7 +3661,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFPSurfFlgOML2BFLock(i_locked)
@@ -3826,7 +3693,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFPSurfFlgOML2HFLock(i_locked)
@@ -3859,7 +3725,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFPSurfFlgOMLBFLock(i_locked)
@@ -3892,7 +3757,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFPSurfFlgOMLHFLock(i_locked)
@@ -3925,7 +3789,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFPSurfStampBTLFeatLock(i_locked)
@@ -3958,7 +3821,6 @@ class ViewCharacteristicCurvesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.view_characteristic_curves_setting_att.SetSHMViewFPUserStampBTLFeatLock(i_locked)

@@ -56,7 +56,6 @@ class HybridShape(AnyObject):
                 |          Dim Thickness1 As HybridShapeThickness
                 |          Set Thickness1 = Extrude1.Thickness
 
-        :return: HybridShape
         :rtype: HybridShape
         """
 
@@ -84,7 +83,6 @@ class HybridShape(AnyObject):
                 |          oldHybridShape.AppendHybridShape (newHybridShape)
 
         :param HybridShape i_hybrid_shape:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape.AppendHybridShape(i_hybrid_shape.com_object)
@@ -114,7 +112,6 @@ class HybridShape(AnyObject):
                 | 
                 |     Computes the result of the hybrid shape.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape.Compute()

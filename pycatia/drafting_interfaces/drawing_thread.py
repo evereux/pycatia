@@ -72,7 +72,6 @@ class DrawingThread(AnyObject):
                 | 
                 |      ThreadLinkType = MyThread.IsLinkedTo
 
-        :return: int
         :rtype: int
         """
 
@@ -86,7 +85,7 @@ class DrawingThread(AnyObject):
 
         self.drawing_thread.Type = value
 
-    def is_linked_to(self) -> cat_variant:
+    def is_linked_to(self) -> int:
         """
         .. note::
             :class: toggle
@@ -107,7 +106,7 @@ class DrawingThread(AnyObject):
                 |      ThreadLinkType = MyThread.IsLinkedTo
 
         :return: enum cat_thread_linked_to
-        :rtype: enum cat_thread_linked_to
+        :rtype: int
         """
 
         return self.drawing_thread.IsLinkedTo()

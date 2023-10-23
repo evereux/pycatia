@@ -117,7 +117,6 @@ class InstanceFactory(Factory):
                 | 
                 |          InstanceFactory.InstantationMode = Mode
 
-        :return: str
         :rtype: str
         """
 
@@ -153,7 +152,6 @@ class InstanceFactory(Factory):
                 |          Set NewInstance = instanceFactory.AddInstance(reference)
 
         :param AnyObject i_reference:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.instance_factory.AddInstance(i_reference.com_object))
@@ -191,7 +189,6 @@ class InstanceFactory(Factory):
 
         :param str i_name_of_reference:
         :param str i_name_of_document:
-        :return: None
         :rtype: None
         """
         return self.instance_factory.BeginInstanceFactory(i_name_of_reference, i_name_of_document)
@@ -216,7 +213,6 @@ class InstanceFactory(Factory):
                 | 
                 |          InstanceFactory.BeginInstantiate
 
-        :return: None
         :rtype: None
         """
         return self.instance_factory.BeginInstantiate()
@@ -240,7 +236,6 @@ class InstanceFactory(Factory):
                 | 
                 |          InstanceFactory.EndInstanceFactory
 
-        :return: None
         :rtype: None
         """
         return self.instance_factory.EndInstanceFactory()
@@ -265,7 +260,6 @@ class InstanceFactory(Factory):
                 | 
                 |          InstanceFactory.EndInstantiate
 
-        :return: None
         :rtype: None
         """
         return self.instance_factory.EndInstantiate()
@@ -300,7 +294,6 @@ class InstanceFactory(Factory):
                 |          Set parameter = InstanceFactory.GetParameter("Parameter1")
 
         :param str i_name:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.instance_factory.GetParameter(i_name))
@@ -329,7 +322,6 @@ class InstanceFactory(Factory):
                 | 
                 |          Set Instance = InstanceFactory.Instantiate
 
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.instance_factory.Instantiate())
@@ -367,7 +359,6 @@ class InstanceFactory(Factory):
 
         :param str i_name:
         :param AnyObject i_input:
-        :return: None
         :rtype: None
         """
         return self.instance_factory.PutInputData(i_name, i_input.com_object)

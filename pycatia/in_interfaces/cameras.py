@@ -96,7 +96,6 @@ class Cameras(Collection):
                 |          Set ThatCamera = CATIA.ActiveDocument.Cameras.Item("MyCamera")
 
         :param cat_variant i_index:
-        :return: Camera
         :rtype: Camera
         """
         return Camera(self.cameras.Item(i_index))
@@ -132,7 +131,6 @@ class Cameras(Collection):
                 |      CATIA.ActiveDocument.Cameras.Remove("CameraToBeRemoved")
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.cameras.Remove(i_index)

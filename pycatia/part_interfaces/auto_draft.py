@@ -48,7 +48,6 @@ class AutoDraft(DressUpShape):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FunctionalFace(Reference iFace) (Write Only)
 
-        :return: None
         :rtype: None
         """
 
@@ -81,7 +80,6 @@ class AutoDraft(DressUpShape):
                 |          Set FunctionalFaces = AutoDraft.FunctionalFace
                 |          AutoDraft.FunctionalFace = NewFunctionalFace
 
-        :return: References
         :rtype: References
         """
 
@@ -106,7 +104,6 @@ class AutoDraft(DressUpShape):
                 |          Set MainDraftAngle = AutoDraft.MainDraftAngle
                 |          AutoDraft.MainDraftAngle = NewMainDraftAngle
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -138,7 +135,6 @@ class AutoDraft(DressUpShape):
                 |          Set Mode = AutoDraft.Mode
                 |          AutoDraft.Mode = NewMode
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -171,7 +167,6 @@ class AutoDraft(DressUpShape):
                 |          Set PartingElement = AutoDraft.PartingElement
                 |          AutoDraft.PartingElement = NewPartingElement
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -204,7 +199,6 @@ class AutoDraft(DressUpShape):
                 |          Set PullingDirection = AutoDraft.PullingDirection
                 |          AutoDraft.PullingDirection = NewPullingDirection
 
-        :return: Reference
         :rtype: Reference
         """
 

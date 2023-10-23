@@ -164,7 +164,6 @@ class Selection(AnyObject):
                 |         are not exposed to automation (such as a ResourcesList feature of a .CATProcess
                 |         document).
 
-        :return: int
         :rtype: int
         """
 
@@ -185,7 +184,6 @@ class Selection(AnyObject):
                 |     by the Selection. The Value property of a given SelectedElement object is an
                 |     automation object associated to a selected feature.
 
-        :return: int
         :rtype: int
         """
 
@@ -218,7 +216,6 @@ class Selection(AnyObject):
                 |          Set VisPropertySet = Selection.VisProperties
                 |          VisPropertySet.SetShow catVisPropertiesNoShowAttr
 
-        :return: VisPropertySet
         :rtype: VisPropertySet
         """
 
@@ -277,7 +274,6 @@ class Selection(AnyObject):
                 |          CATIA.ActiveDocument.Selection.Add(ObjectToAdd)
 
         :param AnyObject i_object:
-        :return: None
         :rtype: None
         """
         return self.selection.Add(i_object.com_object)
@@ -298,7 +294,6 @@ class Selection(AnyObject):
                 | 
                 |          CATIA.ActiveDocument.Selection.Clear()
 
-        :return: None
         :rtype: None
         """
         return self.selection.Clear()
@@ -334,7 +329,6 @@ class Selection(AnyObject):
                 | 
                 |          CATIA.ActiveDocument.Selection.Copy()
 
-        :return: None
         :rtype: None
         """
         return self.selection.Copy()
@@ -371,7 +365,6 @@ class Selection(AnyObject):
                 | 
                 |          CATIA.ActiveDocument.Selection.Cut()
 
-        :return: None
         :rtype: None
         """
         return self.selection.Cut()
@@ -398,7 +391,6 @@ class Selection(AnyObject):
                 | 
                 |          CATIA.ActiveDocument.Selection.Delete()
 
-        :return: None
         :rtype: None
         """
         return self.selection.Delete()
@@ -565,7 +557,6 @@ class Selection(AnyObject):
                 |      end if
 
         :param tuple i_filter_type:
-        :return: bool
         :rtype: bool
         """
         return self.selection.FilterCorrespondence(i_filter_type)
@@ -599,7 +590,6 @@ class Selection(AnyObject):
                 |          Set FoundObject = CATIA.ActiveDocument.Selection.FindObject("CATIAPad")
 
         :param str i_object_type:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.selection.FindObject(i_object_type))
@@ -747,7 +737,6 @@ class Selection(AnyObject):
         :param bool i_triggering_on_mouse_move:
         :param bool o_object_selected:
         :param tuple o_document_window_location:
-        :return: str
         :rtype: str
         """
         return self.selection.IndicateOrSelectElement2D(i_message,
@@ -907,7 +896,6 @@ class Selection(AnyObject):
         :param bool i_object_selection_before_command_use_possibility:
         :param bool i_tooltip:
         :param bool i_triggering_on_mouse_move:
-        :return: str
         :rtype: str
         """
         vba_function_name = 'indicate_or_select_element_3d'
@@ -957,7 +945,6 @@ class Selection(AnyObject):
                 |         document).
 
         :param int i_index:
-        :return: SelectedElement
         :rtype: SelectedElement
         """
         return SelectedElement(self.selection.Item(i_index))
@@ -992,7 +979,6 @@ class Selection(AnyObject):
                 |     SelectElement3 method first example.
 
         :param int i_index:
-        :return: SelectedElement
         :rtype: SelectedElement
         """
         return SelectedElement(self.selection.Item2(i_index))
@@ -1038,7 +1024,6 @@ class Selection(AnyObject):
                 |
                 |          CATIA.ActiveDocument.Selection.Paste()
 
-        :return: None
         :rtype: None
         """
         return self.selection.Paste()
@@ -1232,7 +1217,6 @@ class Selection(AnyObject):
                 |         CATIA.ActiveDocument.Selection.Search("Part.Sketcher.Color='White',all")
 
         :param str i_string_bstr:
-        :return: None
         :rtype: None
         """
         try:
@@ -1711,7 +1695,6 @@ class Selection(AnyObject):
         :param tuple i_filter_type:
         :param str i_message:
         :param bool i_object_selection_before_command_use_possibility:
-        :return: str
         :rtype: str
         """
 
@@ -1907,7 +1890,6 @@ class Selection(AnyObject):
         :param bool i_object_selection_before_command_use_possibility:
         :param int i_multi_selection_mode:
         :param bool i_tooltip:
-        :return: str
         :rtype: str
         """
 
@@ -2050,7 +2032,6 @@ class Selection(AnyObject):
         :param str i_non_active_document_message:
         :param bool i_tooltip:
         :param Document o_document:
-        :return: str
         :rtype: str
         """
 

@@ -61,7 +61,6 @@ class Spline2D(Curve2D):
                 | 
                 |                  mySpline.GetControlPoints ControlPoints
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -92,7 +91,6 @@ class Spline2D(Curve2D):
                 |         oNumber
                 |             The number of control points*
 
-        :return: float
         :rtype: float
         """
         return self.spline_2d.GetNumberOfControlPoints()
@@ -132,7 +130,6 @@ class Spline2D(Curve2D):
 
         :param Point2D i_ctrl_point:
         :param int i_position:
-        :return: None
         :rtype: None
         """
         return self.spline_2d.InsertControlPointAfter(i_ctrl_point.com_object, i_position)

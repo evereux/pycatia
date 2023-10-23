@@ -72,7 +72,6 @@ class CD5SaveItem(AnyObject):
                 |          Dim myID As CD5ID
                 |          Set myID = oSaveItem.CD5ID
 
-        :return: CD5ID
         :rtype: CD5ID
         """
 
@@ -100,7 +99,6 @@ class CD5SaveItem(AnyObject):
                 |          iDerivedOutputs(0) = "cgrOutput"
                 |          oSaveItem.DerivedOutputs = iDerivedOutputs
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -134,7 +132,6 @@ class CD5SaveItem(AnyObject):
                 |
                 |          oSaveItem.Included = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -169,7 +166,6 @@ class CD5SaveItem(AnyObject):
                 |
                 |          CD5SaveItem.Revision = CD5SaveItem.NextRevision
 
-        :return: str
         :rtype: str
         """
 
@@ -193,7 +189,6 @@ class CD5SaveItem(AnyObject):
                 |
                 |          oSaveItem.ObjectName = "MyPart"
 
-        :return: str
         :rtype: str
         """
 
@@ -228,7 +223,6 @@ class CD5SaveItem(AnyObject):
                 |          Dim oPossibleDerivedOutputs As CATSafeArrayVariant
                 |          oPossibleDerivedOutputs = oSaveItem.PossibleDerivedOutputs
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -253,7 +247,6 @@ class CD5SaveItem(AnyObject):
                 |          Dim oPossibleTypes As CATSafeArrayVariant
                 |          oPossibleTypes = oSaveItem.PossibleTypes
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -272,7 +265,7 @@ class CD5SaveItem(AnyObject):
                 |     Operation. Default value is current CD5SaveItem target
                 |     revision.
                 |     Get: will return string combining revision and version (ex:
-                |     “B.3”).
+                |     "B.3").
                 |     Set: will keep the revision string only (e.g. "A", "BB"), even if combining
                 |     revision and version is passed.
                 | 
@@ -280,7 +273,7 @@ class CD5SaveItem(AnyObject):
                 |         As revision part of the string cannot contain ‘.’ character, given
                 |         string may be truncated up to the first ‘.’ character’ before being appended
                 |         with appropriate version number.
-                |         (ex: MyItem.Revision = “AA.BB” => property is set to “AA.0”) 
+                |         (ex: MyItem.Revision = "AA.BB" => property is set to "AA.0")
                 |         It is advised to read the Revision property after it has been set as
                 |         the current value may not match what has been set. 
                 |         Changing the CD5SaveOperation.CreateVersion value may affect the
@@ -294,7 +287,6 @@ class CD5SaveItem(AnyObject):
                 |              Dim oRevision As CATBSTR
                 |              oRevision = CD5SaveItem.Revision
 
-        :return: str
         :rtype: str
         """
 
@@ -326,7 +318,6 @@ class CD5SaveItem(AnyObject):
                 |          Dim itemStatus As CD5SaveItem_Status
                 |          itemStatus = oSaveItem.Status
 
-        :return: int
         :rtype: int
         """
 
@@ -352,7 +343,6 @@ class CD5SaveItem(AnyObject):
                 |          Dim oType As CATBSTR
                 |          oType = oSaveItem.Type
 
-        :return: str
         :rtype: str
         """
 

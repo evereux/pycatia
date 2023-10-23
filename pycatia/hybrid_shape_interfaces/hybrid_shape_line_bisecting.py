@@ -64,7 +64,6 @@ class HybridShapeLineBisecting(Line):
                 | 
                 |     Returns the start offset of the line.
 
-        :return: Length
         :rtype: Length
         """
 
@@ -85,7 +84,6 @@ class HybridShapeLineBisecting(Line):
                 |     Sub-element(s) supported (see Boundary object): see
                 |     RectilinearTriDimFeatEdge or RectilinearBiDimFeatEdge.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -113,7 +111,6 @@ class HybridShapeLineBisecting(Line):
                 |     Sub-element(s) supported (see Boundary object): see
                 |     RectilinearTriDimFeatEdge or RectilinearBiDimFeatEdge.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -138,7 +135,6 @@ class HybridShapeLineBisecting(Line):
                 | 
                 |     Returns the end offset of the line.
 
-        :return: Length
         :rtype: Length
         """
 
@@ -158,7 +154,6 @@ class HybridShapeLineBisecting(Line):
                 |     Role: the orientation specifies bisecting line position
                 |     Legal values: The orientation can be the same(1) or the inverse(-1)
 
-        :return: int
         :rtype: int
         """
 
@@ -185,7 +180,6 @@ class HybridShapeLineBisecting(Line):
                 |     line.
                 |     Sub-element(s) supported (see Boundary object): see Vertex.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -211,7 +205,6 @@ class HybridShapeLineBisecting(Line):
                 |     Returns or sets the solution type.
                 |     Role: The solution type allows you to know where is the bisecting line.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -245,7 +238,6 @@ class HybridShapeLineBisecting(Line):
                 | 
                 |         Boundary object): see Face.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -277,7 +269,6 @@ class HybridShapeLineBisecting(Line):
                 |             the side of the start point = 3 : infinite end point - the line is infinite on the side
                 |              of the end point
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_line_bisecting.GetLengthType()
@@ -298,7 +289,6 @@ class HybridShapeLineBisecting(Line):
                 |         oSym
                 |             Symetry flag
 
-        :return: bool
         :rtype: bool
         """
         return self.hybrid_shape_line_bisecting.GetSymmetricalExtension()
@@ -322,7 +312,6 @@ class HybridShapeLineBisecting(Line):
                 |             of the end point
 
         :param int i_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_line_bisecting.SetLengthType(i_type)
@@ -343,7 +332,6 @@ class HybridShapeLineBisecting(Line):
                 |             Symetry flag
 
         :param bool i_sym:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_line_bisecting.SetSymmetricalExtension(i_sym)

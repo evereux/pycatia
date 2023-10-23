@@ -64,7 +64,6 @@ class SchAppReplace(AnyObject):
 
         :param AnyObject i_sch_object_to_be_replaced_by_this:
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_app_replace.AppOKToReplace(i_sch_object_to_be_replaced_by_this.com_object, o_b_yes)
@@ -110,7 +109,6 @@ class SchAppReplace(AnyObject):
                 |          objThisIntf.AppPostReplaceProcessobjArg1
 
         :param AnyObject i_sch_object_to_be_replaced_by_this:
-        :return: None
         :rtype: None
         """
         return self.sch_app_replace.AppPostReplaceProcess(i_sch_object_to_be_replaced_by_this.com_object)

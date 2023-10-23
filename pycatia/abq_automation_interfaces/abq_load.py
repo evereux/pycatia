@@ -55,7 +55,6 @@ class ABQLoad(AnyObject):
                 |     Returns:
                 |         A boolean specifying whether the pressure is activated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -84,7 +83,6 @@ class ABQLoad(AnyObject):
                 |     Returns:
                 |         The amplitude object selected.
 
-        :return: str
         :rtype: str
         """
 
@@ -112,7 +110,6 @@ class ABQLoad(AnyObject):
                 |     Returns:
                 |         The region.
 
-        :return: AnalysisSupports
         :rtype: AnalysisSupports
         """
 
@@ -133,7 +130,6 @@ class ABQLoad(AnyObject):
                 |     Returns:
                 |         The amplitude object selected.
 
-        :return: ABQSmoothStepAmplitude
         :rtype: ABQSmoothStepAmplitude
         """
 
@@ -163,7 +159,6 @@ class ABQLoad(AnyObject):
                 |         will return "CREATED" if the load feature is propagated from previous step, it
                 |         will return "PROPAGATED"
 
-        :return: str
         :rtype: str
         """
 
@@ -184,7 +179,6 @@ class ABQLoad(AnyObject):
                 |     Returns:
                 |         The amplitude object selected.
 
-        :return: ABQTabularAmplitude
         :rtype: ABQTabularAmplitude
         """
 
@@ -212,7 +206,6 @@ class ABQLoad(AnyObject):
                 |     Returns:
                 |         The type of the load.
 
-        :return: str
         :rtype: str
         """
 
@@ -233,7 +226,6 @@ class ABQLoad(AnyObject):
                 |     Returns:
                 |         boolean specifying whether user defined amplitude is active.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -272,7 +264,6 @@ class ABQLoad(AnyObject):
 
         :param Product i_product:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.abq_load.AddSupportFromProduct(i_product.com_object, i_support.com_object)
@@ -317,7 +308,6 @@ class ABQLoad(AnyObject):
 
         :param Product i_product:
         :param Publication i_publication:
-        :return: None
         :rtype: None
         """
         return self.abq_load.AddSupportFromPublication(i_product.com_object, i_publication.com_object)
@@ -362,7 +352,6 @@ class ABQLoad(AnyObject):
 
         :param Reference i_reference:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.abq_load.AddSupportFromReference(i_reference.com_object, i_support.com_object)

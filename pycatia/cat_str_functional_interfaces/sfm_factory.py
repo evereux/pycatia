@@ -81,7 +81,6 @@ class SFMFactory(Factory):
         :param str i_category:
         :param Reference i_support:
         :param Reference i_destination:
-        :return: SFMSuperPlate
         :rtype: SFMSuperPlate
         """
         return SFMSuperPlate(
@@ -142,7 +141,6 @@ class SFMFactory(Factory):
         :param SFMMember i_member2:
         :param Reference i_ref_plane:
         :param Reference i_destination:
-        :return: SFMMemberPlane2Curves
         :rtype: SFMMemberPlane2Curves
         """
         return SFMMemberPlane2Curves(
@@ -200,7 +198,6 @@ class SFMFactory(Factory):
         :param str i_section_name:
         :param Reference i_curve:
         :param Reference i_destination:
-        :return: SFMMemberCurve
         :rtype: SFMMemberCurve
         """
         return SFMMemberCurve(
@@ -263,7 +260,6 @@ class SFMFactory(Factory):
         :param Reference i_curve:
         :param Reference i_reference:
         :param Reference i_destination:
-        :return: SFMMemberCurve
         :rtype: SFMMemberCurve
         """
         return SFMMemberCurve(
@@ -331,7 +327,6 @@ class SFMFactory(Factory):
         :param Reference i_direction:
         :param float i_length:
         :param Reference i_destination:
-        :return: SFMMemberPointLength
         :rtype: SFMMemberPointLength
         """
         return SFMMemberPointLength(
@@ -405,7 +400,6 @@ class SFMFactory(Factory):
         :param float i_offset1:
         :param Reference i_point2:
         :param Reference i_destination:
-        :return: SFMMember2Points
         :rtype: SFMMember2Points
         """
         return SFMMember2Points(
@@ -490,7 +484,6 @@ class SFMFactory(Factory):
         :param bool i_ratio_mode2:
         :param float i_offset2:
         :param Reference i_destination:
-        :return: SFMMember2Points
         :rtype: SFMMember2Points
         """
         return SFMMember2Points(
@@ -554,7 +547,6 @@ class SFMFactory(Factory):
         :param Reference i_point1:
         :param Reference i_point2:
         :param Reference i_destination:
-        :return: SFMMember2Points
         :rtype: SFMMember2Points
         """
         return SFMMember2Points(
@@ -627,7 +619,6 @@ class SFMFactory(Factory):
         :param bool i_ratio_mode2:
         :param float i_offset2:
         :param Reference i_destination:
-        :return: SFMMember2Points
         :rtype: SFMMember2Points
         """
         return SFMMember2Points(
@@ -698,7 +689,6 @@ class SFMFactory(Factory):
         :param Reference i_direction:
         :param Reference i_limit:
         :param Reference i_destination:
-        :return: SFMMemberPointUpToLimit
         :rtype: SFMMemberPointUpToLimit
         """
         return SFMMemberPointUpToLimit(
@@ -760,7 +750,6 @@ class SFMFactory(Factory):
         :param Reference i_surface1:
         :param Reference i_surface2:
         :param Reference i_destination:
-        :return: SFMMemberSurfSurf
         :rtype: SFMMemberSurfSurf
         """
         return SFMMemberSurfSurf(
@@ -806,7 +795,6 @@ class SFMFactory(Factory):
         :param str i_category:
         :param Reference i_support:
         :param Reference i_destination:
-        :return: SFMSuperPlate
         :rtype: SFMSuperPlate
         """
         return SFMSuperPlate(self.sfm_factory.AddSuperPlate(i_category, i_support.com_object, i_destination.com_object))
@@ -847,7 +835,6 @@ class SFMFactory(Factory):
         :param str i_section_name:
         :param SFMSuperPlate i_super_plate:
         :param Reference i_web_support:
-        :return: SFMStiffener
         :rtype: SFMStiffener
         """
         return SFMStiffener(
@@ -902,7 +889,6 @@ class SFMFactory(Factory):
         :param str i_section_name:
         :param SFMSuperPlate i_super_plate:
         :param Reference i_free_edge:
-        :return: SFMStiffenerOnFreeEdge
         :rtype: SFMStiffenerOnFreeEdge
         """
         return SFMStiffenerOnFreeEdge(
@@ -930,7 +916,6 @@ class SFMFactory(Factory):
                 |     See also:
                 |         SfmManager
 
-        :return: SFMManager
         :rtype: SFMManager
         """
         return SFMManager(self.sfm_factory.GetManager())

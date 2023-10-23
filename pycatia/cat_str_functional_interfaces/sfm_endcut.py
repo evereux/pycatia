@@ -73,7 +73,6 @@ class SFMEndcut(AnyObject):
                 |              y = Coord(1)
                 |              z = Coord(2)
 
-        :return: tuple
         :rtype: tuple
         """
         return self.sfm_endcut.GetConnectionCoordinate()
@@ -137,7 +136,6 @@ class SFMEndcut(AnyObject):
         :param SFMReferences o_list_of_endcut_contexts:
         :param SFMConnectionParameters o_list_of_endcut_params:
         :param tuple o_list_of_end_cut_param_names:
-        :return: cat_variant
         :rtype: cat_variant
         """
         return self.sfm_endcut.GetEndcutinfo(
@@ -184,7 +182,6 @@ class SFMEndcut(AnyObject):
                 |              Set EndcutObj = StiffObj.GetEndcut(1)
                 |              EndcutObj.UpdateConnectionsSet
 
-        :return: None
         :rtype: None
         """
         return self.sfm_endcut.UpdateConnectionsSet()

@@ -66,7 +66,6 @@ class DMUReviews(Collection):
                 | 
                 |             Set oDMUReview = cDMUReviews.Current
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -93,7 +92,6 @@ class DMUReviews(Collection):
                 | 
                 |             Set oDMUReview = cDMUReviews.Add
 
-        :return: DMUReview
         :rtype: DMUReview
         """
         return DMUReview(self.dmu_reviews.Add())
@@ -125,7 +123,6 @@ class DMUReviews(Collection):
                 |             Set oDMUReview = cDMUReviews.ImportFrom(iExistingProduct)
 
         :param Product i_product:
-        :return: DMUReview
         :rtype: DMUReview
         """
         return DMUReview(self.dmu_reviews.ImportFrom(i_product.com_object))
@@ -164,7 +161,6 @@ class DMUReviews(Collection):
                 |             Set oThatDMUReview = cDMUReviews.Item("DMUReview3")
 
         :param cat_variant i_index:
-        :return: DMUReview
         :rtype: DMUReview
         """
         return DMUReview(self.dmu_reviews.Item(i_index))
@@ -199,7 +195,6 @@ class DMUReviews(Collection):
                 |             cDMUReviews.Remove("DMUReview2")
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.dmu_reviews.Remove(i_index)

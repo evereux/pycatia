@@ -57,7 +57,6 @@ class SchPostReplace(AnyObject):
                 |          objThisIntf.PostReplaceTextobjArg1
 
         :param AnyObject i_new_sch_object:
-        :return: None
         :rtype: None
         """
         return self.sch_post_replace.PostReplaceText(i_new_sch_object.com_object)

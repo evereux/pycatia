@@ -65,7 +65,6 @@ class TPSViewFactory(AnyObject):
 
         :param Reference i_plane:
         :param cat_variant i_view_type:
-        :return: TPSView
         :rtype: TPSView
         """
         return TPSView(self.tps_view_factory.CreateView(i_plane.com_object, i_view_type))

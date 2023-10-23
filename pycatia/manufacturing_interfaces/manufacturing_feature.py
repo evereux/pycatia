@@ -60,7 +60,6 @@ class ManufacturingFeature(AnyObject):
                 |              ,ExtentParm)
 
         :param str i_attribute:
-        :return: Parameter
         :rtype: Parameter
         """
         return Parameter(self.manufacturing_feature.GetAGeometricAttribute(i_attribute))

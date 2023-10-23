@@ -62,7 +62,6 @@ class ManufacturingMachinableFeature(ManufacturingFeature):
                 |          Dim tFeatRemark As CATBSTR
                 |          Set tFeatRemark = firstMachFeat.FeatRemark
 
-        :return: str
         :rtype: str
         """
 
@@ -98,7 +97,6 @@ class ManufacturingMachinableFeature(ManufacturingFeature):
                 |          Dim tFeatType As CATBSTR
                 |          Set tFeatType = firstMachFeat.FeatType
 
-        :return: str
         :rtype: str
         """
 

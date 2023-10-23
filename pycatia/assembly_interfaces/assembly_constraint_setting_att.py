@@ -72,7 +72,6 @@ class AssemblyConstraintSettingAtt(SettingController):
                 |          Set CreationMode = AsmConstraintSettingAtt1.ConstraintCreationMode
                 |          AsmConstraintSettingAtt1.ConstraintCreationMode = catUsePublishedGeometryAnyLevel
 
-        :return: int
         :rtype: int
         """
 
@@ -117,7 +116,6 @@ class AssemblyConstraintSettingAtt(SettingController):
                 |          Set PasteMode = AsmConstraintSettingAtt1.PasteComponentMode
                 |          AsmConstraintSettingAtt1.PasteComponentMode = catPasteWithCstOnCut
 
-        :return: int
         :rtype: int
         """
 
@@ -156,7 +154,6 @@ class AssemblyConstraintSettingAtt(SettingController):
                 |          Set QuickMode = AsmConstraintSettingAtt1.QuickConstraintMode
                 |          AsmConstraintSettingAtt1.QuickConstraintMode = catSpecifiedOrder
 
-        :return: int
         :rtype: int
         """
 
@@ -189,7 +186,6 @@ class AssemblyConstraintSettingAtt(SettingController):
                 |     catChecked Redundancy of constraint will not be checked while constraint
                 |     creation.
 
-        :return: False
         :rtype: False
         """
 
@@ -218,7 +214,6 @@ class AssemblyConstraintSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.assembly_constraint_setting_att.GetConstraintCreationModeInfo(io_admin_level, io_locked)
@@ -238,7 +233,6 @@ class AssemblyConstraintSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.assembly_constraint_setting_att.GetPasteComponentModeInfo(io_admin_level, io_locked)
@@ -258,7 +252,6 @@ class AssemblyConstraintSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.assembly_constraint_setting_att.GetQuickConstraintModeInfo(io_admin_level, io_locked)
@@ -289,7 +282,6 @@ class AssemblyConstraintSettingAtt(SettingController):
                 |          Dim QuickList
                 |          QuickList = AsmConstraintSettingAtt1.GetQuickConstraintOrderedList()
 
-        :return: tuple
         :rtype: tuple
         """
         return self.assembly_constraint_setting_att.GetQuickConstraintOrderedList()
@@ -307,7 +299,6 @@ class AssemblyConstraintSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.assembly_constraint_setting_att.SetConstraintCreationModeLock(i_locked)
@@ -339,7 +330,6 @@ class AssemblyConstraintSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.assembly_constraint_setting_att.SetPasteComponentModeLock(i_locked)
@@ -371,7 +361,6 @@ class AssemblyConstraintSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.assembly_constraint_setting_att.SetQuickConstraintModeLock(i_locked)
@@ -424,7 +413,6 @@ class AssemblyConstraintSettingAtt(SettingController):
                 |          AsmConstraintSettingAtt1.SetQuickConstraintOrderedListQuickList
 
         :param tuple i_list:
-        :return: None
         :rtype: None
         """
         return self.assembly_constraint_setting_att.SetQuickConstraintOrderedList(i_list)

@@ -56,7 +56,6 @@ class Mechanisms(Collection):
                 |             Dim NewMechanism As Mechanism
                 |             Set NewMechanism = TheMechanisms.Add()
 
-        :return: Mechanism
         :rtype: Mechanism
         """
         return Mechanism(self.mechanisms.Add())
@@ -95,7 +94,6 @@ class Mechanisms(Collection):
                 |          Set ThatMechanism = CATIA.Mechanisms.Item("MyMechanism")
 
         :param cat_variant i_index:
-        :return: Mechanism
         :rtype: Mechanism
         """
         return Mechanism(self.mechanisms.Item(i_index))
@@ -129,7 +127,6 @@ class Mechanisms(Collection):
                 |             TheMechanisms.Remove("MechanismTwo")
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.mechanisms.Remove(i_index)

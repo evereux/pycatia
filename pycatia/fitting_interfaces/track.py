@@ -53,7 +53,6 @@ class Track(Sampled):
                 |     calculated so that the end of the track is reached by the end of the total
                 |     time. Uses enum DMUTrackMoveMode, which defined is in this interface.
 
-        :return: int
         :rtype: int
         """
 
@@ -84,7 +83,6 @@ class Track(Sampled):
                 | 
                 |          myTrack.Speed =  17.54
 
-        :return: float
         :rtype: float
         """
 
@@ -119,7 +117,6 @@ class Track(Sampled):
                 |         S_OK if everything was succcessfull
 
         :param tuple o_matrix_all:
-        :return: None
         :rtype: None
         """
         return self.track.GetMatrixAll(o_matrix_all)
@@ -166,7 +163,6 @@ class Track(Sampled):
 
         :param tuple i_point:
         :param tuple i_normal:
-        :return: None
         :rtype: None
         """
         return self.track.Mirror(i_point, i_normal)
@@ -202,7 +198,6 @@ class Track(Sampled):
                 |             Specifies a relative amount to move the track.
 
         :param tuple i_transform:
-        :return: None
         :rtype: None
         """
         return self.track.Move(i_transform)

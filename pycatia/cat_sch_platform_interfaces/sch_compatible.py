@@ -96,7 +96,6 @@ class SchCompatible(AnyObject):
         :param SchListOfObjects i_lok_cntrs:
         :param SchListOfDoubles o_db2_cntr_pt:
         :param SchAppConnector o_best_cntr:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_compatible.GetBestCntrForRoute(
@@ -196,7 +195,6 @@ class SchCompatible(AnyObject):
         :param AnyObject i_insert_compat_info:
         :param AnyObject io_insert_info:
         :param bool i_b_yes_cycle_all_solns:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_compatible.GetBestFitInsertInfo(
@@ -286,7 +284,6 @@ class SchCompatible(AnyObject):
         :param AnyObject i_place_compat_info:
         :param AnyObject io_place_info:
         :param bool i_b_yes_cycle_all_solns:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_compatible.GetBestFitPlaceInfo(
@@ -354,7 +351,6 @@ class SchCompatible(AnyObject):
         :param AnyObject i_comp_info:
         :param AnyObject o_insert_compat_info:
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_compatible.IsTargetOKForInsert(i_comp_info.com_object, o_insert_compat_info.com_object, o_b_yes)
@@ -424,7 +420,6 @@ class SchCompatible(AnyObject):
         :param AnyObject i_comp_info:
         :param AnyObject o_place_compat_info:
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_compatible.IsTargetOKForPlace(
@@ -496,7 +491,6 @@ class SchCompatible(AnyObject):
         :param SchGRR i_grr_target:
         :param SchListOfObjects o_lok_cntrs:
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_compatible.IsTargetOKForRoute(

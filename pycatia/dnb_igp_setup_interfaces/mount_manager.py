@@ -82,7 +82,6 @@ class MountManager(AnyObject):
                 |                objMountManager.GetMountedDevices DeviceList
 
         :param tuple o_device_list:
-        :return: Product
         :rtype: Product
         """
         return Product(self.mount_manager.GetMountedDevices(o_device_list))
@@ -143,7 +142,6 @@ class MountManager(AnyObject):
 
         :param Product i_device:
         :param bool i_is_mounted:
-        :return: None
         :rtype: None
         """
         return self.mount_manager.IsDeviceMounted(i_device.com_object, i_is_mounted)
@@ -242,7 +240,6 @@ class MountManager(AnyObject):
         :param bool i_tool_mobility:
         :param Tag i_tool_tag:
         :param Tag i_base_tag:
-        :return: List
         :rtype: List
         """
         return List(
@@ -305,7 +302,6 @@ class MountManager(AnyObject):
                 |                objMountManager.ReMountDevice Device
 
         :param Product i_device:
-        :return: None
         :rtype: None
         """
         return self.mount_manager.ReMountDevice(i_device.com_object)
@@ -360,7 +356,6 @@ class MountManager(AnyObject):
                 |                objMountManager.UnMountDevice Device
 
         :param Product i_device:
-        :return: None
         :rtype: None
         """
         return self.mount_manager.UnMountDevice(i_device.com_object)
@@ -414,7 +409,6 @@ class MountManager(AnyObject):
                 |                objMountManager.UnSetDevice Device
 
         :param Product i_device:
-        :return: None
         :rtype: None
         """
         return self.mount_manager.UnSetDevice(i_device.com_object)

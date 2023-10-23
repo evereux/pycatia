@@ -73,7 +73,6 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
                 |          Dim HybShpCircleCenter As Reference
                 |          HybShpCircleCenter = HybShpCircle.Center
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -107,7 +106,6 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
                 |      Dim HybShpCircleDiameter As Length
                 |      HybShpCircleDiameter = HybShpCircle.Diameter
 
-        :return: Length
         :rtype: Length
         """
 
@@ -135,7 +133,6 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
                 | 
                 |           HybShpCircle.DiameterMode = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -172,7 +169,6 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
                 |     See also:
                 |         HybridShapeDirection
 
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
 
@@ -205,7 +201,6 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
                 |      Dim HybShpCircleRadius As Length
                 |      HybShpCircleRadius = HybShpCircle.Radius
 
-        :return: Length
         :rtype: Length
         """
 
@@ -230,7 +225,6 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
                 |          Dim HybShpCircleSupportSurf As Reference 
                 |          HybShpCircleSupportSurf = HybShpCircle.Support
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -270,7 +264,6 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
         :param float o_dir_x:
         :param float o_dir_y:
         :param float o_dir_z:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_circle_ctr_rad.GetSecondDirection(o_dir_x, o_dir_y, o_dir_z)
@@ -290,7 +283,6 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
                 |         oGeod
                 |             geodesic type : when TRUE, the circle is geodesic.
 
-        :return: bool
         :rtype: bool
         """
         return self.hybrid_shape_circle_ctr_rad.IsGeodesic()
@@ -306,7 +298,6 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
                 |     Sets GeometryOnSupport of circle.
                 |     It puts the circle on the surface.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_circle_ctr_rad.SetGeometryOnSupport()
@@ -337,7 +328,6 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
         :param float i_dir_x:
         :param float i_dir_y:
         :param float i_dir_z:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_circle_ctr_rad.SetSecondDirection(i_dir_x, i_dir_y, i_dir_z)
@@ -353,7 +343,6 @@ class HybridShapeCircleCtrRad(HybridShapeCircle):
                 |     Inactivates GeometryOnSupport of circle.
                 |     Note: The circle becomes euclidean.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_circle_ctr_rad.UnsetGeometryOnSupport()

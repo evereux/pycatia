@@ -74,7 +74,6 @@ class MoveJointsAct(Activity):
                 |            Accl  = 30
                 |            objMoveAct.Acceleration=Accl
 
-        :return: float
         :rtype: float
         """
 
@@ -117,7 +116,6 @@ class MoveJointsAct(Activity):
                 |            Rounding = 30
                 |            objMoveAct.CornerRounding=Rounding
 
-        :return: float
         :rtype: float
         """
 
@@ -162,7 +160,6 @@ class MoveJointsAct(Activity):
                 |            Next
                 |            objMoveAct.JointValues=ListOfJointValues
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -204,7 +201,6 @@ class MoveJointsAct(Activity):
                 |            MechIndex = 1
                 |            objMoveAct.MechanismIndex=MechIndex
 
-        :return: int
         :rtype: int
         """
 
@@ -246,7 +242,6 @@ class MoveJointsAct(Activity):
                 |            MotionBas  = "SPEED"
                 |            objMoveAct.MotionBasis=MotionBas
 
-        :return: str
         :rtype: str
         """
 
@@ -290,7 +285,6 @@ class MoveJointsAct(Activity):
                 |            SpeedValPr = 80
                 |            objMoveAct.SpeedPercent=SpeedValPr
 
-        :return: float
         :rtype: float
         """
 

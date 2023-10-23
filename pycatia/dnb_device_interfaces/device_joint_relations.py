@@ -65,7 +65,6 @@ class DeviceJointRelations(AnyObject):
 
         :param Joint joint:
         :param str expr:
-        :return: None
         :rtype: None
         """
         return self.device_joint_relations.GetJointRelationExpression(joint.com_object, expr)
@@ -115,7 +114,6 @@ class DeviceJointRelations(AnyObject):
 
         :param Joint joint:
         :param str expr:
-        :return: None
         :rtype: None
         """
         return self.device_joint_relations.SetJointRelationExpression(joint.com_object, expr)
@@ -159,7 +157,6 @@ class DeviceJointRelations(AnyObject):
                 |             .
 
         :param str user_expr:
-        :return: None
         :rtype: None
         """
         return self.device_joint_relations.SetUserVariableExpr(user_expr)

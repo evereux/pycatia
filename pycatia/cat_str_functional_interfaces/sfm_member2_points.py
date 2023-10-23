@@ -50,7 +50,6 @@ class SFMMember2Points(SFMMember):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property EndPointOnCrvCurve() As Reference
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -73,7 +72,6 @@ class SFMMember2Points(SFMMember):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property EndPointOnCrvMode() As boolean
 
-        :return: bool
         :rtype: bool
         """
 
@@ -96,7 +94,6 @@ class SFMMember2Points(SFMMember):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property EndPointOnCrvOffset() As double
 
-        :return: float
         :rtype: float
         """
 
@@ -119,7 +116,6 @@ class SFMMember2Points(SFMMember):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property EndPointOnCrvOffsetParam() As Length (Read Only)
 
-        :return: Length
         :rtype: Length
         """
 
@@ -134,7 +130,6 @@ class SFMMember2Points(SFMMember):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property EndPointOnCrvOrientation() As long
 
-        :return: int
         :rtype: int
         """
 
@@ -157,7 +152,6 @@ class SFMMember2Points(SFMMember):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property EndPointSpec() As Reference
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -190,7 +184,6 @@ class SFMMember2Points(SFMMember):
                 |          Dim Curve As Reference
                 |          Set Curve = SfmMember2Points.StartPointOnCrvCurve
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -213,7 +206,6 @@ class SFMMember2Points(SFMMember):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property StartPointOnCrvMode() As boolean
 
-        :return: bool
         :rtype: bool
         """
 
@@ -236,7 +228,6 @@ class SFMMember2Points(SFMMember):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property StartPointOnCrvOffset() As double
 
-        :return: float
         :rtype: float
         """
 
@@ -259,7 +250,6 @@ class SFMMember2Points(SFMMember):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property StartPointOnCrvOffsetParam() As Length (Read Only)
 
-        :return: Length
         :rtype: Length
         """
 
@@ -274,7 +264,6 @@ class SFMMember2Points(SFMMember):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property StartPointOnCrvOrientation() As long
 
-        :return: int
         :rtype: int
         """
 
@@ -307,7 +296,6 @@ class SFMMember2Points(SFMMember):
                 |          Dim Point As Reference
                 |          Set Point = SfmMember2Points.StartPointSpec
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -329,7 +317,6 @@ class SFMMember2Points(SFMMember):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub InvertEndPointOnCrvOrientation()
 
-        :return: None
         :rtype: None
         """
         return self.sfm_member2_points.InvertEndPointOnCrvOrientation()
@@ -351,7 +338,6 @@ class SFMMember2Points(SFMMember):
                 | 
                 |          SfmMember2Points.InvertStartPointOnCrvOrientation
 
-        :return: None
         :rtype: None
         """
         return self.sfm_member2_points.InvertStartPointOnCrvOrientation()

@@ -79,7 +79,6 @@ class DMOOffsets(Collection):
         :param str i_shape_name:
         :param int i_activated_shape:
         :param int i_default_shape:
-        :return: DMOOffset
         :rtype: DMOOffset
         """
         return DMOOffset(
@@ -132,7 +131,6 @@ class DMOOffsets(Collection):
         :param str i_shape_name:
         :param int i_activated_shape:
         :param int i_default_shape:
-        :return: DMOOffset
         :rtype: DMOOffset
         """
         return DMOOffset(
@@ -156,7 +154,6 @@ class DMOOffsets(Collection):
                 | 
                 |     Cleans up.
 
-        :return: None
         :rtype: None
         """
         return self.dmo_offsets.CleanUp()
@@ -199,7 +196,6 @@ class DMOOffsets(Collection):
         :param float i_offset:
         :param int i_use_constraints:
         :param tuple i_constraints:
-        :return: Document
         :rtype: Document
         """
         return Document(
@@ -246,7 +242,6 @@ class DMOOffsets(Collection):
         :param Group group_of_selected_products:
         :param tuple i_offset_vectors:
         :param tuple i_offset_values:
-        :return: Document
         :rtype: Document
         """
         return Document(
@@ -297,7 +292,6 @@ class DMOOffsets(Collection):
         :param Product i_reference_product:
         :param tuple i_offset_vectors:
         :param tuple i_offset_values:
-        :return: Document
         :rtype: Document
         """
         return Document(
@@ -354,7 +348,6 @@ class DMOOffsets(Collection):
         :param float i_offset:
         :param int i_use_constraints:
         :param tuple i_constraints:
-        :return: Document
         :rtype: Document
         """
         return Document(
@@ -377,7 +370,6 @@ class DMOOffsets(Collection):
                 | 
                 |     Returns the name of the associated shape.
 
-        :return: str
         :rtype: str
         """
         return self.dmo_offsets.OffsetShapeName()

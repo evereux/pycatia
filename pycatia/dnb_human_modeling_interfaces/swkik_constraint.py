@@ -56,7 +56,6 @@ class SWKIKConstraint(SWKManikinPart):
                 | 
                 |     If the constraint is not active,then it is ignored during the resolution.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -84,7 +83,6 @@ class SWKIKConstraint(SWKManikinPart):
                 |     the constraint and the target is lower than the criteria, then the constraint
                 |     will be considered resolved. This criteria must be specified in radians.
 
-        :return: float
         :rtype: float
         """
 
@@ -110,7 +108,6 @@ class SWKIKConstraint(SWKManikinPart):
                 |     Returns the angle (in radians) from the constraint end effector to the
                 |     target.
 
-        :return: float
         :rtype: float
         """
 
@@ -131,7 +128,6 @@ class SWKIKConstraint(SWKManikinPart):
                 |     constraint will be considered resolved. This criteria must be specified in
                 |     millimeters.
 
-        :return: float
         :rtype: float
         """
 
@@ -157,7 +153,6 @@ class SWKIKConstraint(SWKManikinPart):
                 |     Returns the distance (in mm) from the constraint end effector to the
                 |     target.
 
-        :return: float
         :rtype: float
         """
 
@@ -176,7 +171,6 @@ class SWKIKConstraint(SWKManikinPart):
                 |     string in this property is the short name of the last segment (or line of
                 |     sight) to be driven by this constraint
 
-        :return: str
         :rtype: str
         """
 
@@ -201,7 +195,6 @@ class SWKIKConstraint(SWKManikinPart):
                 | 
                 |     Returns the identifier(ID) of the constraint.
 
-        :return: str
         :rtype: str
         """
 
@@ -219,7 +212,6 @@ class SWKIKConstraint(SWKManikinPart):
                 |     Returns whether the resolution of this constraint is a success or a
                 |     failure, given the current criteria.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -236,7 +228,6 @@ class SWKIKConstraint(SWKManikinPart):
                 | 
                 |     Returns the manikin which owns this IK constraint.
 
-        :return: SWKManikin
         :rtype: SWKManikin
         """
 
@@ -256,7 +247,6 @@ class SWKIKConstraint(SWKManikinPart):
                 |     is an integer and must be between 1 and 4 inclusive.
                 |     The lower the priority, the more prioritary the constraint becomes.
 
-        :return: int
         :rtype: int
         """
 
@@ -286,7 +276,6 @@ class SWKIKConstraint(SWKManikinPart):
                 |     When using that property, the number returned or set
                 |     must be between -PI and PI inclusive.
 
-        :return: float
         :rtype: float
         """
 
@@ -312,7 +301,6 @@ class SWKIKConstraint(SWKManikinPart):
                 |     Returns or sets the first segment of the body to be driven
                 |     by this constraint.
 
-        :return: str
         :rtype: str
         """
 
@@ -337,7 +325,6 @@ class SWKIKConstraint(SWKManikinPart):
                 | 
                 |     Returns or sets the Transfer With Target property.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -363,7 +350,6 @@ class SWKIKConstraint(SWKManikinPart):
                 |     Returns the user type of the constraint. The user type returned will be one
                 |     of the following: ("Contact", "Coincidence", "Fix", or "FixOn"),
 
-        :return: str
         :rtype: str
         """
 
@@ -379,7 +365,6 @@ class SWKIKConstraint(SWKManikinPart):
                 | 
                 |     Returns a reference to the target object of the constraint (if any).
 
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.swkik_constraint.GetConstraintElement()
@@ -394,7 +379,6 @@ class SWKIKConstraint(SWKManikinPart):
                 | 
                 |     Returns the end effector of the IK chain of the constraint.
 
-        :return: SWKBodyElement
         :rtype: SWKBodyElement
         """
         return SWKBodyElement(self.swkik_constraint.GetEndEffector())
@@ -409,7 +393,6 @@ class SWKIKConstraint(SWKManikinPart):
                 | 
                 |     Returns the start segment of the IK chain of the constraint.
 
-        :return: SWKSegment
         :rtype: SWKSegment
         """
         return SWKSegment(self.swkik_constraint.GetStartSegment())
@@ -433,7 +416,6 @@ class SWKIKConstraint(SWKManikinPart):
                 |             respectively and the x, y, z direction values for the target line.
 
         :param tuple po_target_line_coord:
-        :return: None
         :rtype: None
         """
         return self.swkik_constraint.GetTargetLine(po_target_line_coord)
@@ -473,7 +455,6 @@ class SWKIKConstraint(SWKManikinPart):
                 |             ortho-normalized direction values for the target plane.
 
         :param tuple po_target_plane_coord:
-        :return: None
         :rtype: None
         """
         return self.swkik_constraint.GetTargetPlane(po_target_plane_coord)
@@ -511,7 +492,6 @@ class SWKIKConstraint(SWKManikinPart):
                 |             respectively, the x coordinate being the first data in the array.
 
         :param tuple po_target_pt_coord:
-        :return: None
         :rtype: None
         """
         return self.swkik_constraint.GetTargetPoint(po_target_pt_coord)
@@ -542,7 +522,6 @@ class SWKIKConstraint(SWKManikinPart):
                 |     Reset the offset of the target object (i.e. set the offset
                 |     to the end effector's current position).
 
-        :return: None
         :rtype: None
         """
         return self.swkik_constraint.ResetTarget()
@@ -579,7 +558,6 @@ class SWKIKConstraint(SWKManikinPart):
 
         :param AnyObject pi_constraint_element:
         :param str pi_constraint_type:
-        :return: None
         :rtype: None
         """
         return self.swkik_constraint.SetConstraintElement(pi_constraint_element.com_object, pi_constraint_type)
@@ -651,7 +629,6 @@ class SWKIKConstraint(SWKManikinPart):
         :param float pi_end_point_y:
         :param float pi_end_point_z:
         :param str pi_constraint_type:
-        :return: None
         :rtype: None
         """
         return self.swkik_constraint.SetTargetLine(
@@ -746,7 +723,6 @@ class SWKIKConstraint(SWKManikinPart):
         :param float pi_normal_y:
         :param float pi_normal_z:
         :param str pi_constraint_type:
-        :return: None
         :rtype: None
         """
         return self.swkik_constraint.SetTargetPlane(
@@ -809,7 +785,6 @@ class SWKIKConstraint(SWKManikinPart):
         :param float pi_coord_x:
         :param float pi_coord_y:
         :param float pi_coord_z:
-        :return: None
         :rtype: None
         """
         return self.swkik_constraint.SetTargetPoint(pi_object.com_object, pi_coord_x, pi_coord_y, pi_coord_z)

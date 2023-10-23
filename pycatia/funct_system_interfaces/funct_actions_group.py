@@ -47,7 +47,6 @@ class FunctActionsGroup(AnyObject):
                 | 
                 |     Get the count of actions referenced by the actions' group.
 
-        :return: int
         :rtype: int
         """
 
@@ -79,7 +78,6 @@ class FunctActionsGroup(AnyObject):
                 |             The action to be added to the group of actions.
 
         :param FunctionalAction i_action:
-        :return: None
         :rtype: None
         """
         return self.funct_actions_group.Add(i_action.com_object)
@@ -116,7 +114,6 @@ class FunctActionsGroup(AnyObject):
         :param float o_input_y:
         :param float o_output_x:
         :param float o_output_y:
-        :return: None
         :rtype: None
         """
         return self.funct_actions_group.GetExtremities(o_input_x, o_input_y, o_output_x, o_output_y)
@@ -138,7 +135,6 @@ class FunctActionsGroup(AnyObject):
                 |             actions.
 
         :param FunctionalAction i_action:
-        :return: None
         :rtype: None
         """
         return self.funct_actions_group.Remove(i_action.com_object)
@@ -175,7 +171,6 @@ class FunctActionsGroup(AnyObject):
                 |             actions.
 
         :param int i_position:
-        :return: None
         :rtype: None
         """
         return self.funct_actions_group.RemovePosition(i_position)
@@ -213,7 +208,6 @@ class FunctActionsGroup(AnyObject):
                 |          Set Act2 = ActionsGrp.Retrieve("Reduces noise")
 
         :param cat_variant i_index:
-        :return: FunctionalAction
         :rtype: FunctionalAction
         """
         return FunctionalAction(self.funct_actions_group.Retrieve(i_index))
@@ -235,7 +229,6 @@ class FunctActionsGroup(AnyObject):
         :param float i_input_y:
         :param float i_output_x:
         :param float i_output_y:
-        :return: None
         :rtype: None
         """
         return self.funct_actions_group.SetExtremities(i_input_x, i_input_y, i_output_x, i_output_y)

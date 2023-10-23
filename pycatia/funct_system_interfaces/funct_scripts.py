@@ -50,7 +50,6 @@ class FunctScripts(Collection):
                 |     Create a FunctScript.
 
         :param str i_name:
-        :return: FunctScript
         :rtype: FunctScript
         """
         return FunctScript(self.funct_scripts.Create(i_name))
@@ -66,7 +65,6 @@ class FunctScripts(Collection):
                 |     Delete a FunctScript.
 
         :param FunctScript i_script:
-        :return: None
         :rtype: None
         """
         return self.funct_scripts.Delete(i_script.com_object)
@@ -123,7 +121,6 @@ class FunctScripts(Collection):
                 |          Set Assoc2 = FacetGKW.Scripts.Elem("Producing the Skeleton 2D")
 
         :param cat_variant i_index:
-        :return: FunctScript
         :rtype: FunctScript
         """
         return FunctScript(self.funct_scripts.Elem(i_index))

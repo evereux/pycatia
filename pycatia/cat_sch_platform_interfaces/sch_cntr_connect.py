@@ -67,7 +67,6 @@ class SchCntrConnect(AnyObject):
 
         :param SchGRRCntr i_grr_cntr:
         :param SchListOfDoubles o_db6_matrix:
-        :return: None
         :rtype: None
         """
         return self.sch_cntr_connect.GetTransformMatrix(i_grr_cntr.com_object, o_db6_matrix.com_object)
@@ -117,7 +116,6 @@ class SchCntrConnect(AnyObject):
 
         :param SchGRRCntr i_grr_cntr:
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_cntr_connect.OKToConnect(i_grr_cntr.com_object, o_b_yes)

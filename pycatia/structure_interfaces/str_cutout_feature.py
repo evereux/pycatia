@@ -57,7 +57,6 @@ class StrCutoutFeature(AnyObject):
                 |          Set NewContour = rootProduct.CreateReferenceFromName("Product1/New/!Sketch.2")
                 |          ExistingCutout.Contour =NewContour
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -89,7 +88,6 @@ class StrCutoutFeature(AnyObject):
                 |          Dim Type As String
                 |          Type = Cutout1.CutoutType
 
-        :return: str
         :rtype: str
         """
 
@@ -132,7 +130,6 @@ class StrCutoutFeature(AnyObject):
                 |          Setdir(2) = 0.5
                 |          Cutout1.Direction =Setdir
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -165,7 +162,6 @@ class StrCutoutFeature(AnyObject):
                 |          Dim DirOfCutOut As Reference
                 |          Set DirOfCutOut = Cutout2.DirectionElement
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -198,7 +194,6 @@ class StrCutoutFeature(AnyObject):
                 |          Dim SurForCutout As Reference
                 |          Set SurForCutout = Cutout2.ReferenceSurface
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -243,7 +238,6 @@ class StrCutoutFeature(AnyObject):
                 |     Copyright © 1999-2011, Dassault Systèmes. All rights
                 |     reserved.
 
-        :return: Product
         :rtype: Product
         """
         return Product(self.str_cutout_feature.GetObject())

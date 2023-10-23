@@ -65,7 +65,6 @@ class DrawingComponent(AnyObject):
                 |          Angle90Clockwise = -PI/2
                 |          MyComponent.Angle = Angle90Clockwise
 
-        :return: float
         :rtype: float
         """
 
@@ -98,7 +97,6 @@ class DrawingComponent(AnyObject):
                 |          Dim ComponentRef As DrawingView
                 |          Set ComponentRef = MyComponent.CompRef
 
-        :return: DrawingView
         :rtype: DrawingView
         """
         from pycatia.drafting_interfaces.drawing_view import DrawingView
@@ -122,7 +120,6 @@ class DrawingComponent(AnyObject):
                 | 
                 |          MyComponent.Scale2 = 0.5
 
-        :return: float
         :rtype: float
         """
 
@@ -157,7 +154,6 @@ class DrawingComponent(AnyObject):
                 |          NewXCoordinate = 5*25.4
                 |          MyComponent.x =  NewXCoordinate
 
-        :return: float
         :rtype: float
         """
 
@@ -192,7 +188,6 @@ class DrawingComponent(AnyObject):
                 |          NewYCoordinate = 5*25.4
                 |          MyComponent.y =  NewYCoordinate
 
-        :return: float
         :rtype: float
         """
 
@@ -228,7 +223,6 @@ class DrawingComponent(AnyObject):
                 |          MySelection.add MyComponent
                 |          MySelection.delete
 
-        :return: None
         :rtype: None
         """
         return self.drawing_component.Explode()
@@ -251,7 +245,6 @@ class DrawingComponent(AnyObject):
                 | 
                 |          MyComponent.ExplodeAndSelect
 
-        :return: None
         :rtype: None
         """
         return self.drawing_component.ExplodeAndSelect()
@@ -273,7 +266,6 @@ class DrawingComponent(AnyObject):
                 | 
                 |          MyComponent.ExposeCompRef
 
-        :return: None
         :rtype: None
         """
         return self.drawing_component.ExposeCompRef()
@@ -305,7 +297,6 @@ class DrawingComponent(AnyObject):
                 |                  MyDetailSheet
 
         :param DrawingSheet i_sheet:
-        :return: None
         :rtype: None
         """
         return self.drawing_component.ExposeCompRefInSheet(i_sheet.com_object)
@@ -343,7 +334,6 @@ class DrawingComponent(AnyObject):
                 | 
                 |          MyComponent.Flip
 
-        :return: None
         :rtype: None
         """
         return self.drawing_component.Flip()
@@ -365,7 +355,6 @@ class DrawingComponent(AnyObject):
                 | 
                 |          IsFlipped = MyComponent.GetFlip
 
-        :return: bool
         :rtype: bool
         """
         return self.drawing_component.GetFlip()
@@ -399,7 +388,6 @@ class DrawingComponent(AnyObject):
                 |             The y value of the translation vector
 
         :param tuple io_matrix:
-        :return: None
         :rtype: None
         """
         return self.drawing_component.GetMatrix(io_matrix)
@@ -437,7 +425,6 @@ class DrawingComponent(AnyObject):
                 |          Object = MyComponent.GetModifiableObject(1)
 
         :param cat_variant i_index:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.drawing_component.GetModifiableObject(i_index))
@@ -459,7 +446,6 @@ class DrawingComponent(AnyObject):
                 | 
                 |          Count = MyComponent.GetModifiableObjectsCount
 
-        :return: int
         :rtype: int
         """
         return self.drawing_component.GetModifiableObjectsCount()
@@ -493,7 +479,6 @@ class DrawingComponent(AnyObject):
                 |             The y value of the translation vector
 
         :param tuple i_matrix:
-        :return: None
         :rtype: None
         """
         return self.drawing_component.SetMatrix(i_matrix)

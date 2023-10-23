@@ -100,7 +100,6 @@ class Marker3Ds(Collection):
         :param str i_text:
         :param tuple i_object_coordinates:
         :param AnyObject i_object:
-        :return: Marker3D
         :rtype: Marker3D
         """
         return Marker3D(
@@ -142,7 +141,6 @@ class Marker3Ds(Collection):
                 |             Set ThatMarker3D = TheMarker3Ds.Item("Marker3D3")
 
         :param cat_variant i_index:
-        :return: Marker3D
         :rtype: Marker3D
         """
         return Marker3D(self.marker_3ds.Item(i_index))
@@ -177,7 +175,6 @@ class Marker3Ds(Collection):
                 |             TheMarker3Ds.Remove("Marker3D2")
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.marker_3ds.Remove(i_index)

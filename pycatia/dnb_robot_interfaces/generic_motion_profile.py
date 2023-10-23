@@ -62,7 +62,6 @@ class GenericMotionProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param float value:
-        :return: None
         :rtype: None
         """
         return self.generic_motion_profile.GetAccelerationValue(value)
@@ -91,7 +90,6 @@ class GenericMotionProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param float value:
-        :return: None
         :rtype: None
         """
         return self.generic_motion_profile.GetAngularAccelerationValue(value)
@@ -120,7 +118,6 @@ class GenericMotionProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param float value:
-        :return: None
         :rtype: None
         """
         return self.generic_motion_profile.GetAngularSpeedValue(value)
@@ -148,7 +145,6 @@ class GenericMotionProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param RobGenericController o_controller:
-        :return: None
         :rtype: None
         """
         return self.generic_motion_profile.GetController(o_controller.com_object)
@@ -192,7 +188,6 @@ class GenericMotionProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param int basis:
-        :return: None
         :rtype: None
         """
         return self.generic_motion_profile.GetMotionBasis(basis)
@@ -220,7 +215,6 @@ class GenericMotionProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param str o_name:
-        :return: None
         :rtype: None
         """
         return self.generic_motion_profile.GetName(o_name)
@@ -248,7 +242,6 @@ class GenericMotionProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param float value:
-        :return: None
         :rtype: None
         """
         return self.generic_motion_profile.GetSpeedValue(value)
@@ -279,7 +272,6 @@ class GenericMotionProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param float value:
-        :return: None
         :rtype: None
         """
         return self.generic_motion_profile.SetAccelerationValue(value)
@@ -308,7 +300,6 @@ class GenericMotionProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param float value:
-        :return: None
         :rtype: None
         """
         return self.generic_motion_profile.SetAngularAccelerationValue(value)
@@ -337,7 +328,6 @@ class GenericMotionProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param float value:
-        :return: None
         :rtype: None
         """
         return self.generic_motion_profile.SetAngularSpeedValue(value)
@@ -366,7 +356,6 @@ class GenericMotionProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param int basis:
-        :return: None
         :rtype: None
         """
         return self.generic_motion_profile.SetMotionBasis(basis)
@@ -394,7 +383,6 @@ class GenericMotionProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param str i_name:
-        :return: None
         :rtype: None
         """
         return self.generic_motion_profile.SetName(i_name)
@@ -424,7 +412,6 @@ class GenericMotionProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param float value:
-        :return: None
         :rtype: None
         """
         return self.generic_motion_profile.SetSpeedValue(value)

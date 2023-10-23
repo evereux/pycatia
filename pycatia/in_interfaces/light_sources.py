@@ -56,7 +56,6 @@ class LightSources(Collection):
                 |      Dim MyLightSource As LightSource
                 |      Set MyLightSource = MyViewer.LightSources.Add
 
-        :return: LightSource
         :rtype: LightSource
         """
         return LightSource(self.light_sources.Add())
@@ -90,7 +89,6 @@ class LightSources(Collection):
                 |      Set MyLightSource = LightSources.Item(6)
 
         :param int i_index:
-        :return: LightSource
         :rtype: LightSource
         """
         return LightSource(self.light_sources.Item(i_index))
@@ -123,7 +121,6 @@ class LightSources(Collection):
                 |      MyViewer.LightSources.Remove(2)
 
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.light_sources.Remove(i_index)

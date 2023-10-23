@@ -64,7 +64,6 @@ class SchAppComponent(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.AppCreateComponentInst
 
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.sch_app_component.AppCreateComponentInst())
@@ -100,7 +99,6 @@ class SchAppComponent(AnyObject):
                 |          Set objArg2 = objThisIntf.AppCreateLocalReference(objArg1)
 
         :param Document i_doc_to_copy_to:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.sch_app_component.AppCreateLocalReference(i_doc_to_copy_to.com_object))
@@ -132,7 +130,6 @@ class SchAppComponent(AnyObject):
                 |          objThisIntf.AppGetDefaultGRRNamestrVar1
 
         :param str o_grr_default_name:
-        :return: None
         :rtype: None
         """
         return self.sch_app_component.AppGetDefaultGRRName(o_grr_default_name)
@@ -163,7 +160,6 @@ class SchAppComponent(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.AppListGRRNames
 
-        :return: SchListOfBSTRs
         :rtype: SchListOfBSTRs
         """
         return SchListOfBSTRs(self.sch_app_component.AppListGRRNames())
@@ -192,7 +188,6 @@ class SchAppComponent(AnyObject):
                 |          objThisIntf.AppOKToFlipConnectedbVar1
 
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_app_component.AppOKToFlipConnected(o_b_yes)
@@ -238,7 +233,6 @@ class SchAppComponent(AnyObject):
                 |          objThisIntf.AppOKToFlipHorizontalbVar1
 
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_app_component.AppOKToFlipHorizontal(o_b_yes)
@@ -284,7 +278,6 @@ class SchAppComponent(AnyObject):
                 |          objThisIntf.AppOKToFlipOnLinebVar1
 
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_app_component.AppOKToFlipOnLine(o_b_yes)
@@ -330,7 +323,6 @@ class SchAppComponent(AnyObject):
                 |          objThisIntf.AppOKToFlipVerticalbVar1
 
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_app_component.AppOKToFlipVertical(o_b_yes)
@@ -376,7 +368,6 @@ class SchAppComponent(AnyObject):
                 |          objThisIntf.AppOKToPlaceInSpacebVar1
 
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_app_component.AppOKToPlaceInSpace(o_b_yes)
@@ -421,7 +412,6 @@ class SchAppComponent(AnyObject):
                 |          objThisIntf.AppOKToScalebVar1
 
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_app_component.AppOKToScale(o_b_yes)
@@ -466,7 +456,6 @@ class SchAppComponent(AnyObject):
                 |          objThisIntf.AppOKToSlidebVar1
 
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_app_component.AppOKToSlide(o_b_yes)
@@ -512,7 +501,6 @@ class SchAppComponent(AnyObject):
                 |          objThisIntf.AppOKToUninsertbVar1
 
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_app_component.AppOKToUninsert(o_b_yes)
@@ -551,7 +539,6 @@ class SchAppComponent(AnyObject):
                 |           ...
                 |          objThisIntf.AppPostFlipConnectedProcess
 
-        :return: None
         :rtype: None
         """
         return self.sch_app_component.AppPostFlipConnectedProcess()
@@ -574,7 +561,6 @@ class SchAppComponent(AnyObject):
                 |           ...
                 |          objThisIntf.AppPostFlipHorizontalProcess
 
-        :return: None
         :rtype: None
         """
         return self.sch_app_component.AppPostFlipHorizontalProcess()
@@ -598,7 +584,6 @@ class SchAppComponent(AnyObject):
                 |           ...
                 |          objThisIntf.AppPostFlipOnLineProcess
 
-        :return: None
         :rtype: None
         """
         return self.sch_app_component.AppPostFlipOnLineProcess()
@@ -621,7 +606,6 @@ class SchAppComponent(AnyObject):
                 |           ...
                 |          objThisIntf.AppPostFlipVerticalProcess
 
-        :return: None
         :rtype: None
         """
         return self.sch_app_component.AppPostFlipVerticalProcess()
@@ -663,7 +647,6 @@ class SchAppComponent(AnyObject):
 
         :param SchComponent i_new_comp_inst:
         :param SchAppConnectable i_cntbl_connected_to:
-        :return: None
         :rtype: None
         """
         return self.sch_app_component.AppPostPlaceProcess(i_new_comp_inst.com_object, i_cntbl_connected_to.com_object)
@@ -701,7 +684,6 @@ class SchAppComponent(AnyObject):
                 |           ...
                 |          objThisIntf.AppPostSlideProcess
 
-        :return: None
         :rtype: None
         """
         return self.sch_app_component.AppPostSlideProcess()
@@ -727,7 +709,6 @@ class SchAppComponent(AnyObject):
                 |          objThisIntf.AppPostSwitchGraphicProcessobjArg1
 
         :param SchGRR i_grr:
-        :return: None
         :rtype: None
         """
         return self.sch_app_component.AppPostSwitchGraphicProcess(i_grr.com_object)
@@ -792,7 +773,6 @@ class SchAppComponent(AnyObject):
         :param SchRoute i_old_app_route1:
         :param SchRoute i_old_app_route2:
         :param SchRoute i_new_app_route:
-        :return: None
         :rtype: None
         """
         return self.sch_app_component.AppPostUninsertProcess(

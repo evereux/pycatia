@@ -51,7 +51,6 @@ class ABQThermalConnBehavior(ABQProperty):
                 |     Returns:
                 |         The size of the conductance table.
 
-        :return: int
         :rtype: int
         """
 
@@ -71,7 +70,6 @@ class ABQThermalConnBehavior(ABQProperty):
                 |     Returns:
                 |         The description of the step.
 
-        :return: str
         :rtype: str
         """
 
@@ -99,7 +97,6 @@ class ABQThermalConnBehavior(ABQProperty):
                 |     Returns:
                 |         A boolean specifying whether the values are dependent on temperature.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -142,7 +139,6 @@ class ABQThermalConnBehavior(ABQProperty):
         :param tuple i_conductance:
         :param tuple i_clearance:
         :param tuple i_temperature:
-        :return: None
         :rtype: None
         """
         return self.abq_thermal_conn_behavior.AddGapConductionTable(i_conductance, i_clearance, i_temperature)
@@ -192,7 +188,6 @@ class ABQThermalConnBehavior(ABQProperty):
         :param tuple o_conductance:
         :param tuple o_clearance:
         :param tuple o_temperature:
-        :return: None
         :rtype: None
         """
         return self.abq_thermal_conn_behavior.GetGapConductionTable(o_conductance, o_clearance, o_temperature)

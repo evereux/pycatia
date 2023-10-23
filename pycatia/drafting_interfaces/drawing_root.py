@@ -57,7 +57,6 @@ class DrawingRoot(DrawingDocument):
                 | 
                 |          CATIA.ActiveDocument.DrawingRoot.GetActiveSheet
 
-        :return: DrawingSheet
         :rtype: DrawingSheet
         """
 
@@ -97,7 +96,6 @@ class DrawingRoot(DrawingDocument):
                 |          drwsheetsorder.reorder_Sheets(newsheetorder)
 
         :param tuple i_ordered_sheets:
-        :return: None
         :rtype: None
         """
         sheets = [x.com_object for x in i_ordered_sheets]

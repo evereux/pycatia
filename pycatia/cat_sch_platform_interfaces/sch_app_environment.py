@@ -52,7 +52,6 @@ class SchAppEnvironment(AnyObject):
                 |           ...
                 |          objThisIntf.AppCleanUpWhenApplicationEnds
 
-        :return: None
         :rtype: None
         """
         return self.sch_app_environment.AppCleanUpWhenApplicationEnds()
@@ -75,7 +74,6 @@ class SchAppEnvironment(AnyObject):
                 |           ...
                 |          objThisIntf.AppInitWhenApplicationStarts
 
-        :return: None
         :rtype: None
         """
         return self.sch_app_environment.AppInitWhenApplicationStarts()
@@ -98,7 +96,6 @@ class SchAppEnvironment(AnyObject):
                 |           ...
                 |          objThisIntf.AppLoadFeatFiles
 
-        :return: None
         :rtype: None
         """
         return self.sch_app_environment.AppLoadFeatFiles()

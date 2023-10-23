@@ -59,7 +59,6 @@ class BehaviorSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: int
         :rtype: int
         """
 
@@ -96,7 +95,6 @@ class BehaviorSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: int
         :rtype: int
         """
 
@@ -133,7 +131,6 @@ class BehaviorSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: int
         :rtype: int
         """
 
@@ -179,7 +176,6 @@ class BehaviorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.behavior_setting_att.GetBKTAccessRightsInfo(io_admin_level, io_locked)
@@ -217,7 +213,6 @@ class BehaviorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.behavior_setting_att.GetBKTBehaviorOperationMessageInfo(io_admin_level, io_locked)
@@ -254,7 +249,6 @@ class BehaviorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.behavior_setting_att.GetBKTSpecificationTreeInfo(io_admin_level, io_locked)
@@ -281,7 +275,6 @@ class BehaviorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.behavior_setting_att.SetBKTAccessRightsLock(i_locked)
@@ -324,7 +317,6 @@ class BehaviorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.behavior_setting_att.SetBKTBehaviorOperationMessageLock(i_locked)
@@ -366,7 +358,6 @@ class BehaviorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.behavior_setting_att.SetBKTSpecificationTreeLock(i_locked)

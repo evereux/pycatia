@@ -47,7 +47,6 @@ class ManufacturingActivitySyntax2(AnyObject):
                 |     Returns:
                 |         the PPWORDS
 
-        :return: str
         :rtype: str
         """
         return self.manufacturing_activity_syntax2.GetPPWORDSyntax()

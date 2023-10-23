@@ -70,7 +70,6 @@ class RealParam(Parameter):
                 |              Length.MaximumTolerance = 0.0
                 |          End If
 
-        :return: float
         :rtype: float
         """
 
@@ -104,7 +103,6 @@ class RealParam(Parameter):
                 |              Length.MinimumTolerance = 0.0
                 |          End If
 
-        :return: float
         :rtype: float
         """
 
@@ -139,7 +137,6 @@ class RealParam(Parameter):
                 |              Length.RangeMax = 0.0
                 |          End If
 
-        :return: float
         :rtype: float
         """
 
@@ -172,7 +169,6 @@ class RealParam(Parameter):
                 |     2
                 |         the upper bound cannot be reached
 
-        :return: int
         :rtype: int
         """
 
@@ -207,7 +203,6 @@ class RealParam(Parameter):
                 |              Length.RangeMin = 0.0
                 |          End If
 
-        :return: float
         :rtype: float
         """
 
@@ -240,7 +235,6 @@ class RealParam(Parameter):
                 |     2
                 |         the lower bound cannot be reached
 
-        :return: int
         :rtype: int
         """
 
@@ -275,7 +269,6 @@ class RealParam(Parameter):
                 |              density.Value = 1
                 |          End If
 
-        :return: float
         :rtype: float
         """
 
@@ -311,7 +304,6 @@ class RealParam(Parameter):
                 |          Next
 
         :param tuple o_safe_array:
-        :return: None
         :rtype: None
         """
         return self.real_param.GetEnumerateValues(o_safe_array)
@@ -341,7 +333,6 @@ class RealParam(Parameter):
                 | 
                 |     Returns the number of enumerate values.
 
-        :return: int
         :rtype: int
         """
         return self.real_param.GetEnumerateValuesSize()
@@ -375,7 +366,6 @@ class RealParam(Parameter):
                 |             If the two values are different.
 
         :param float i_value_to_compare:
-        :return: bool
         :rtype: bool
         """
         return self.real_param.IsEqualTo(i_value_to_compare)
@@ -392,7 +382,6 @@ class RealParam(Parameter):
                 |     in the case of multiple values.
 
         :param tuple i_safe_array:
-        :return: None
         :rtype: None
         """
         return self.real_param.SetEnumerateValues(i_safe_array)
@@ -422,7 +411,6 @@ class RealParam(Parameter):
                 | 
                 |     Resets the status of the object to a single value object.
 
-        :return: None
         :rtype: None
         """
         return self.real_param.SuppressEnumerateValues()

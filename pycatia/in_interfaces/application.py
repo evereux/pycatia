@@ -88,7 +88,6 @@ class Application(AnyObject):
             |          Dim ActiveDoc As Document
             |          Set ActiveDoc = CATIA.ActiveDocument
 
-        :return: Document
         :rtype: Document
         """
         try:
@@ -118,7 +117,6 @@ class Application(AnyObject):
             |          Dim ActivePrinter As Printer
             |          Set ActivePrinter = CATIA.ActivePrinter
 
-        :return: Printer
         :rtype: Printer
         """
 
@@ -152,7 +150,6 @@ class Application(AnyObject):
             |          Dim ActiveWin As Window
             |          Set ActiveWin = CATIA.ActiveWindow
 
-        :return: Window
         :rtype: Window
         """
 
@@ -178,7 +175,6 @@ class Application(AnyObject):
             |          LocalCacheSize= 10
             |          CATIA.CacheSize = LocalCacheSize
 
-        :return: int
         :rtype: int
         """
 
@@ -216,7 +212,6 @@ class Application(AnyObject):
             |
             |          CNext
 
-        :return: str
         :rtype: str
         """
 
@@ -255,7 +250,6 @@ class Application(AnyObject):
             |
             |          CATIA.DisplayFileAlerts = False
 
-        :return: bool
         :rtype: bool
         """
 
@@ -289,7 +283,6 @@ class Application(AnyObject):
             |          Dim DocCollection As Documents
             |          Set DocCollection = CATIA.Documents
 
-        :return: Documents
         :rtype: Documents
         """
         return Documents(self.com_object.Documents)
@@ -324,7 +317,6 @@ class Application(AnyObject):
             |     Product (PX1) In case this product is not granted, the first invocation to one
             |     of the methods will fail.
 
-        :return: str
         :rtype: str
         """
 
@@ -358,7 +350,6 @@ class Application(AnyObject):
             |          Dim AppliFileSys As FileSystem
             |          Set AppliFileSys = CATIA.FileSystem
 
-        :return: FileSystem
         :rtype: FileSystem
         """
 
@@ -389,7 +380,6 @@ class Application(AnyObject):
             |
             |          \\\\lisa\\cxr1arel\\bsf\\alpha_a\\code\\bin\\CNEXT.exe
 
-        :return: str
         :rtype: str
         """
 
@@ -442,7 +432,6 @@ class Application(AnyObject):
             |     interactive parts of your script: MsgBox, InputBox calls, VBA forms updates and
             |     so on.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -475,7 +464,6 @@ class Application(AnyObject):
             |
             |          CATIA.Height = 300
 
-        :return: float
         :rtype: float
         """
 
@@ -509,7 +497,6 @@ class Application(AnyObject):
             |
             |          CATIA.Interactive = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -544,7 +531,6 @@ class Application(AnyObject):
             |
             |          CATIA.Left = 150
 
-        :return: float
         :rtype: float
         """
 
@@ -578,7 +564,6 @@ class Application(AnyObject):
             |          LocalCachePath= "/tmp/cache"
             |          CATIA.LocalCache = LocalCachePath
 
-        :return: str
         :rtype: str
         """
 
@@ -615,7 +600,6 @@ class Application(AnyObject):
             |
             |          \\\\lisa\\cxr1arel\\bsf\\alpha_a\\code\\bin
 
-        :return: Path
         :rtype: Path
         """
 
@@ -641,7 +625,6 @@ class Application(AnyObject):
             |          Dim PrintersCollection As Windows
             |          Set PrintersCollection = CATIA.Printers
 
-        :return: Printers
         :rtype: Printers
         """
 
@@ -671,7 +654,6 @@ class Application(AnyObject):
             |
             |          CATIA.RefreshDisplay = False
 
-        :return: bool
         :rtype: bool
         """
 
@@ -709,7 +691,6 @@ class Application(AnyObject):
             |
             |          Welcome to CATIA CxR1
 
-        :return: str
         :rtype: str
         """
 
@@ -742,7 +723,6 @@ class Application(AnyObject):
             |         oConfiguration
             |             The system configuration object.
 
-        :return: SystemConfiguration
         :rtype: SystemConfiguration
         """
 
@@ -767,7 +747,6 @@ class Application(AnyObject):
             |          Dim AppliSysSer As SystemService
             |          Set AppliSysSer = CATIA.SystemService
 
-        :return: SystemService
         :rtype: SystemService
         """
 
@@ -793,7 +772,6 @@ class Application(AnyObject):
             |
             |          CATIA.Top = 50
 
-        :return: float
         :rtype: float
         """
 
@@ -833,7 +811,6 @@ class Application(AnyObject):
             |
             |          CATIA.UndoRedoLock = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -867,7 +844,6 @@ class Application(AnyObject):
             |
             |          CATIA.Visibility = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -900,7 +876,6 @@ class Application(AnyObject):
             |
             |          CATIA.Width = 350
 
-        :return: float
         :rtype: float
         """
 
@@ -934,7 +909,6 @@ class Application(AnyObject):
             |          Dim WinCollection As Windows
             |          Set WinCollection = CATIA.Windows
 
-        :return: Windows
         :rtype: Windows
         """
 
@@ -956,7 +930,6 @@ class Application(AnyObject):
             |     In case this product is not granted, the first invocation
             |     to one of CATIASendToService methods will fail.
 
-        :return: SendToService
         :rtype: SendToService
         """
         return SendToService(self.com_object.CreateSendTo())
@@ -986,7 +959,6 @@ class Application(AnyObject):
             |
             |          CATIA.DisableNewUndoRedoTransaction()
 
-        :return: None
         :rtype: None
         """
         return self.com_object.DisableNewUndoRedoTransaction()
@@ -1008,7 +980,6 @@ class Application(AnyObject):
             |
             |          CATIA.EnableNewUndoRedoTransaction()
 
-        :return: None
         :rtype: None
         """
         return self.com_object.EnableNewUndoRedoTransaction()
@@ -1053,7 +1024,6 @@ class Application(AnyObject):
         :param str i_title:
         :param str i_extension:
         :param CatFileSelectionMode i_mode:
-        :return: str
         :rtype: str
         """
         return self.com_object.FileSelectionBox(i_title, i_extension, i_mode)
@@ -1074,7 +1044,6 @@ class Application(AnyObject):
             |         oworkbenchId
             |             The id of the current workbench.
 
-        :return: str
         :rtype: str
         """
         return self.com_object.GetWorkbenchId()
@@ -1102,7 +1071,6 @@ class Application(AnyObject):
             |          CATIA.Help("HelpKey")
 
         :param str i_help_id:
-        :return: None
         :rtype: None
         """
         return self.com_object.Help(i_help_id)
@@ -1236,7 +1204,6 @@ class Application(AnyObject):
             |
             |          CATIA.Quit()
 
-        :return: None
         :rtype: None
         """
         return self.com_object.Quit()
@@ -1270,7 +1237,6 @@ class Application(AnyObject):
             |             command or its alias.
 
         :param str i_command_id:
-        :return: None
         :rtype: None
         """
         return self.com_object.StartCommand(i_command_id)
@@ -1292,7 +1258,6 @@ class Application(AnyObject):
             |             The id of the workbench to be started.
 
         :param str iworkbench_id:
-        :return: None
         :rtype: None
         """
         return self.com_object.StartWorkbench(iworkbench_id)

@@ -47,10 +47,9 @@ class PickActivity(WorkerActivity):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property PickType() As HTSPickType
                 | 
-                |     Returns or Sets“Pick Type” (see HTSPickType for list of possible values)
+                |     Returns or Sets "Pick Type" (see HTSPickType for list of possible values)
                 |     SINGLE_HAND for Single-Handed Pick, BOTH_HANDS for Double-Handed Pick
 
-        :return: int
         :rtype: int
         """
 
@@ -75,7 +74,6 @@ class PickActivity(WorkerActivity):
                 | 
                 |     Returns or Sets "Picking Hand" (see HTSHand for list of possible values )
 
-        :return: int
         :rtype: int
         """
 
@@ -101,7 +99,6 @@ class PickActivity(WorkerActivity):
                 |     for list of possible values)
 
         :param MfgAssembly p_picked_item:
-        :return: None
         :rtype: None
         """
         return self.pick_activity.AddPickedMfgAssembly(p_picked_item.com_object)
@@ -132,7 +129,6 @@ class PickActivity(WorkerActivity):
                 |     Adds a product to the List of Picked Items
 
         :param Product p_picked_item:
-        :return: None
         :rtype: None
         """
         return self.pick_activity.AddPickedProduct(p_picked_item.com_object)
@@ -163,7 +159,6 @@ class PickActivity(WorkerActivity):
                 |     Returns or Sets Picked Products
 
         :param tuple p_picked_prods:
-        :return: None
         :rtype: None
         """
         return self.pick_activity.GetPickedProducts(p_picked_prods)
@@ -195,7 +190,6 @@ class PickActivity(WorkerActivity):
                 |     MfgAssembly for list of possible values)
 
         :param MfgAssembly p_picked_item:
-        :return: None
         :rtype: None
         """
         return self.pick_activity.RemovePickedMfgAssembly(p_picked_item.com_object)
@@ -227,7 +221,6 @@ class PickActivity(WorkerActivity):
                 |     possible values)
 
         :param Product p_picked_item:
-        :return: None
         :rtype: None
         """
         return self.pick_activity.RemovePickedProduct(p_picked_item.com_object)
@@ -256,7 +249,6 @@ class PickActivity(WorkerActivity):
                 | o Sub SetPickedProducts(CATSafeArrayVariant pPickedProds)
 
         :param tuple p_picked_prods:
-        :return: None
         :rtype: None
         """
         return self.pick_activity.SetPickedProducts(p_picked_prods)
@@ -288,7 +280,6 @@ class PickActivity(WorkerActivity):
                 |     possible values)
 
         :param Activity place_act:
-        :return: None
         :rtype: None
         """
         return self.pick_activity.SetPlaceAct(place_act.com_object)

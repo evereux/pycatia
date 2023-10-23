@@ -94,7 +94,6 @@ class Group(AnyObject):
                 |             Mode = NewGroup.ExtractMode
                 |             NewGroup.ExtractMode = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -132,7 +131,6 @@ class Group(AnyObject):
                 |             NewGroup.AddExplicit MyProduct
 
         :param AnyObject i_product:
-        :return: None
         :rtype: None
         """
         return self.group.AddExplicit(i_product.com_object)
@@ -156,7 +154,6 @@ class Group(AnyObject):
                 |             Dim number As Integer
                 |             number = NewGroup.CountExplicit
 
-        :return: int
         :rtype: int
         """
         return self.group.CountExplicit()
@@ -189,7 +186,6 @@ class Group(AnyObject):
                 |             Dim number As Integer
                 |             number = NewGroup.CountExtract
 
-        :return: int
         :rtype: int
         """
         return self.group.CountExtract()
@@ -214,7 +210,6 @@ class Group(AnyObject):
                 |             Dim number As Integer
                 |             number = NewGroup.CountInvert
 
-        :return: int
         :rtype: int
         """
         return self.group.CountInvert()
@@ -239,7 +234,6 @@ class Group(AnyObject):
                 | 
                 |             NewGroup.FillSelWithExtract
 
-        :return: None
         :rtype: None
         """
         return self.group.FillSelWithExtract()
@@ -264,7 +258,6 @@ class Group(AnyObject):
                 | 
                 |             NewGroup.FillSelWithInvert
 
-        :return: None
         :rtype: None
         """
         return self.group.FillSelWithInvert()
@@ -299,7 +292,6 @@ class Group(AnyObject):
                 |             Set ThisProduct = NewGroup.ItemExplicit(9)
 
         :param cat_variant i_index:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.group.ItemExplicit(i_index)
@@ -335,7 +327,6 @@ class Group(AnyObject):
                 |             Set ThisProduct = NewGroup.ItemExtract(9)
 
         :param cat_variant i_index:
-        :return: Product
         :rtype: Product
         """
         return Product(self.group.ItemExtract(i_index))
@@ -371,7 +362,6 @@ class Group(AnyObject):
                 |             Set ThisProduct = NewGroup.ItemInvert(9)
 
         :param cat_variant i_index:
-        :return: Product
         :rtype: Product
         """
         return Product(self.group.ItemInvert(i_index))
@@ -402,7 +392,6 @@ class Group(AnyObject):
                 |             NewGroup.RemoveExplicit 10
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.group.RemoveExplicit(i_index)

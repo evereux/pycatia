@@ -58,7 +58,6 @@ class DrawingTable(AnyObject):
                 | 
                 |                  MyTable.AnchorPoint = CatTableBottomLeft
 
-        :return: int
         :rtype: int
         """
 
@@ -90,7 +89,6 @@ class DrawingTable(AnyObject):
                 |          PI = 3.1415926535
                 |          X = MyTable.Angle = PI/2
 
-        :return: float
         :rtype: float
         """
 
@@ -124,7 +122,6 @@ class DrawingTable(AnyObject):
                 | 
                 |          MyTable.ComputeMode = CatTableOFF
 
-        :return: int
         :rtype: int
         """
 
@@ -157,7 +154,6 @@ class DrawingTable(AnyObject):
                 |          Dim LeaderCollection As DrawingLeaders
                 |          Set LeaderCollection = MyTable.Leaders
 
-        :return: DrawingLeaders
         :rtype: DrawingLeaders
         """
 
@@ -180,7 +176,6 @@ class DrawingTable(AnyObject):
                 | 
                 |          oNbCol = MyTable.NumberOfColumns
 
-        :return: int
         :rtype: int
         """
 
@@ -203,7 +198,6 @@ class DrawingTable(AnyObject):
                 | 
                 |          oNbRow = MyTable.NumberOfRows
 
-        :return: int
         :rtype: int
         """
 
@@ -228,7 +222,6 @@ class DrawingTable(AnyObject):
                 | 
                 |          X = MyTable.x
 
-        :return: float
         :rtype: float
         """
 
@@ -263,7 +256,6 @@ class DrawingTable(AnyObject):
                 |          NewYCoordinate = 100
                 |          MyTable.y =  NewYCoordinate
 
-        :return: float
         :rtype: float
         """
 
@@ -301,7 +293,6 @@ class DrawingTable(AnyObject):
                 |                  MyTable.AddColumn iCol
 
         :param int i_col:
-        :return: None
         :rtype: None
         """
         return self.drawing_table.AddColumn(i_col)
@@ -329,7 +320,6 @@ class DrawingTable(AnyObject):
                 |                  MyTable.AddRow iRow
 
         :param int i_row:
-        :return: None
         :rtype: None
         """
         return self.drawing_table.AddRow(i_row)
@@ -441,7 +431,6 @@ class DrawingTable(AnyObject):
 
         :param int i_row:
         :param int i_col:
-        :return: str
         :rtype: str
         """
         return self.drawing_table.GetCellName(i_row, i_col)
@@ -479,7 +468,6 @@ class DrawingTable(AnyObject):
 
         :param int i_row:
         :param int i_col:
-        :return: DrawingText
         :rtype: DrawingText
         """
         return DrawingText(self.drawing_table.GetCellObject(i_row, i_col))
@@ -545,7 +533,6 @@ class DrawingTable(AnyObject):
                 |                  MyTable.GetCellsMerge(oListOfmergeCells)
 
         :param tuple o_list_of_merge_cells:
-        :return: None
         :rtype: None
         """
         return self.drawing_table.GetCellsMerge(o_list_of_merge_cells)
@@ -592,7 +579,6 @@ class DrawingTable(AnyObject):
                 |                  oColSize = MyTable.GetColumnSize(iCol)
 
         :param int i_col:
-        :return: float
         :rtype: float
         """
         return self.drawing_table.GetColumnSize(i_col)
@@ -639,7 +625,6 @@ class DrawingTable(AnyObject):
         :param int o_first_col:
         :param int o_nb_row:
         :param int o_nb_col:
-        :return: None
         :rtype: None
         """
         return self.drawing_table.GetMergeInfos(i_row, i_col, o_first_row, o_first_col, o_nb_row, o_nb_col)
@@ -671,7 +656,6 @@ class DrawingTable(AnyObject):
                 |                  oRowSize = MyTable.GetRowSize(iRow)
 
         :param int i_row:
-        :return: float
         :rtype: float
         """
         return self.drawing_table.GetRowSize(i_row)
@@ -693,7 +677,6 @@ class DrawingTable(AnyObject):
                 |          MyTable.InvertMode CatInvertColumn
 
         :param int i_mode:
-        :return: None
         :rtype: None
         """
         return self.drawing_table.InvertMode(i_mode)
@@ -730,7 +713,6 @@ class DrawingTable(AnyObject):
         :param int i_first_col:
         :param int i_nb_row_merge:
         :param int i_nb_col_merge:
-        :return: None
         :rtype: None
         """
         return self.drawing_table.MergeCells(i_first_row, i_first_col, i_nb_row_merge, i_nb_col_merge)
@@ -763,7 +745,6 @@ class DrawingTable(AnyObject):
 
         :param float i_delta_x:
         :param float i_delta_y:
-        :return: None
         :rtype: None
         """
         return self.drawing_table.Move(i_delta_x, i_delta_y)
@@ -791,7 +772,6 @@ class DrawingTable(AnyObject):
                 |                  MyTable.RemoveColumn iCol
 
         :param int i_col:
-        :return: None
         :rtype: None
         """
         return self.drawing_table.RemoveColumn(i_col)
@@ -819,7 +799,6 @@ class DrawingTable(AnyObject):
                 |                  MyTable.RemoveRow iRow
 
         :param int i_row:
-        :return: None
         :rtype: None
         """
         return self.drawing_table.RemoveRow(i_row)
@@ -847,7 +826,6 @@ class DrawingTable(AnyObject):
                 |                  MyTable.Rotate PI/4
 
         :param float i_delta_angle:
-        :return: None
         :rtype: None
         """
         return self.drawing_table.Rotate(i_delta_angle)
@@ -885,7 +863,6 @@ class DrawingTable(AnyObject):
         :param int i_row:
         :param int i_col:
         :param int i_align:
-        :return: None
         :rtype: None
         """
         return self.drawing_table.SetCellAlignment(i_row, i_col, i_align)
@@ -931,7 +908,6 @@ class DrawingTable(AnyObject):
         :param int i_row:
         :param int i_col:
         :param int i_type:
-        :return: None
         :rtype: None
         """
         return self.drawing_table.SetCellBorderType(i_row, i_col, i_type)
@@ -969,7 +945,6 @@ class DrawingTable(AnyObject):
         :param int i_row:
         :param int i_col:
         :param str i_name:
-        :return: None
         :rtype: None
         """
         return self.drawing_table.SetCellName(i_row, i_col, i_name)
@@ -1006,7 +981,6 @@ class DrawingTable(AnyObject):
         :param int i_row:
         :param int i_col:
         :param DrawingText i_text:
-        :return: None
         :rtype: None
         """
         return self.drawing_table.SetCellObject(i_row, i_col, i_text.com_object)
@@ -1059,7 +1033,6 @@ class DrawingTable(AnyObject):
         :param int i_row:
         :param int i_col:
         :param str i_string:
-        :return: None
         :rtype: None
         """
         return self.drawing_table.SetCellString(i_row, i_col, i_string)
@@ -1093,7 +1066,6 @@ class DrawingTable(AnyObject):
 
         :param int i_col:
         :param float i_col_size:
-        :return: None
         :rtype: None
         """
         return self.drawing_table.SetColumnSize(i_col, i_col_size)
@@ -1127,7 +1099,6 @@ class DrawingTable(AnyObject):
 
         :param int i_row:
         :param float i_row_size:
-        :return: None
         :rtype: None
         """
         return self.drawing_table.SetRowSize(i_row, i_row_size)
@@ -1156,7 +1127,6 @@ class DrawingTable(AnyObject):
 
         :param int i_row:
         :param int i_col:
-        :return: None
         :rtype: None
         """
         return self.drawing_table.UnMergeCells(i_row, i_col)

@@ -52,7 +52,6 @@ class PSPPlacePart(AnyObject):
                 |     Returns:
                 |         The error message associated with the last error. Null if no error.
 
-        :return: str
         :rtype: str
         """
 
@@ -138,7 +137,6 @@ class PSPPlacePart(AnyObject):
         :param PSPListOfDoubles i_up_direction:
         :param PSPListOfDoubles i_horizontal_orientation:
         :param PSPListOfDoubles i_position:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(
@@ -236,7 +234,6 @@ class PSPPlacePart(AnyObject):
         :param PSPListOfDoubles i_first_point_up_direction:
         :param PSPListOfObjects ipi_list_points:
         :param PSPListOfDoubles i_list_bend_radii:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(

@@ -49,7 +49,6 @@ class AsySimActivity(AnyObject):
                 |     specified activity. Please note that no animation will occur, and the execution
                 |     will wait for the simulation to finish before this method is complete.
 
-        :return: None
         :rtype: None
         """
         return self.asy_sim_activity.Synchronize()

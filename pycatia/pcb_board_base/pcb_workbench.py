@@ -60,7 +60,6 @@ class PCBWorkbench(Workbench):
                 |             E_FAIL if failed
 
         :param AnyObject i_root:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.pcb_workbench.CreateBoard(i_root.com_object)
@@ -109,7 +108,6 @@ class PCBWorkbench(Workbench):
         :param str i_elec_package_number:
         :param str i_elec_part_number:
         :param str i_elec_type:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.pcb_workbench.CreateComponent(
@@ -143,7 +141,6 @@ class PCBWorkbench(Workbench):
                 |             E_FAIL if failed
 
         :param AnyObject i_root:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.pcb_workbench.CreatePanel(i_root.com_object)
@@ -172,7 +169,6 @@ class PCBWorkbench(Workbench):
                 |             E_FAIL if failed
 
         :param Document doc:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.pcb_workbench.GetRootProduct(doc.com_object)

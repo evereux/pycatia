@@ -70,7 +70,6 @@ class BasicDevice(AnyObject):
                 |            Next
 
         :param tuple o_values:
-        :return: None
         :rtype: None
         """
         return self.basic_device.GetDOFValues(o_values)
@@ -109,7 +108,6 @@ class BasicDevice(AnyObject):
                 |         An HRESULT
 
         :param tuple o_home_pos_list:
-        :return: None
         :rtype: None
         """
         return self.basic_device.GetHomePositions(o_home_pos_list)
@@ -153,7 +151,6 @@ class BasicDevice(AnyObject):
 
         :param str i_name:
         :param tuple idb_trans:
-        :return: None
         :rtype: None
         """
         return self.basic_device.SetHomePosition(i_name, idb_trans)

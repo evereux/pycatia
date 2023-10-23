@@ -71,7 +71,6 @@ class ArrangementRuns(Collection):
         :param Move i_rel_axis:
         :param tuple i_listof_math_points:
         :param tuple i_math_direction:
-        :return: ArrangementRun
         :rtype: ArrangementRun
         """
         return ArrangementRun(
@@ -111,7 +110,6 @@ class ArrangementRuns(Collection):
                 |         The retrieved ArrangementRun object.
 
         :param cat_variant i_index:
-        :return: ArrangementRun
         :rtype: ArrangementRun
         """
         return ArrangementRun(self.arrangement_runs.Item(i_index))
@@ -143,7 +141,6 @@ class ArrangementRuns(Collection):
                 |         AnyObject.Name property.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.arrangement_runs.Remove(i_index)

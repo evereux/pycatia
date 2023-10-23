@@ -48,7 +48,6 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -75,7 +74,6 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -102,7 +100,6 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -129,7 +126,6 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -156,7 +152,6 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: float
         :rtype: float
         """
 
@@ -183,7 +178,6 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -210,7 +204,6 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -237,7 +230,6 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: float
         :rtype: float
         """
 
@@ -264,7 +256,6 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -291,7 +282,6 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -318,7 +308,6 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -345,7 +334,6 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -372,7 +360,6 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -399,7 +386,6 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -426,7 +412,6 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -453,7 +438,6 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -480,7 +464,6 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -507,7 +490,6 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -542,7 +524,6 @@ class SectioningSettingAtt(SettingController):
                 |         S_OK Successfully retieved the window open mode E_FAIL Failed to
                 |         retrieved the window open mode
 
-        :return: int
         :rtype: int
         """
 
@@ -577,7 +558,6 @@ class SectioningSettingAtt(SettingController):
                 |         S_OK Successfully retieved the window open mode E_FAIL Failed to
                 |         retrieved the window open mode
 
-        :return: int
         :rtype: int
         """
 
@@ -616,7 +596,6 @@ class SectioningSettingAtt(SettingController):
                 |         S_OK Successfully retieved the window open mode E_FAIL Failed to
                 |         retrieved the window open mode
 
-        :return: int
         :rtype: int
         """
 
@@ -662,7 +641,6 @@ class SectioningSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sectioning_setting_att.GetClippingModeInfo(io_admin_level, io_locked)
@@ -699,7 +677,6 @@ class SectioningSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sectioning_setting_att.GetDisplayCutInWireframeInfo(io_admin_level, io_locked)
@@ -736,7 +713,6 @@ class SectioningSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sectioning_setting_att.GetGridAutoFilteringInfo(io_admin_level, io_locked)
@@ -773,7 +749,6 @@ class SectioningSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sectioning_setting_att.GetGridAutoResizeInfo(io_admin_level, io_locked)
@@ -810,7 +785,6 @@ class SectioningSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sectioning_setting_att.GetGridHeightStepInfo(io_admin_level, io_locked)
@@ -847,7 +821,6 @@ class SectioningSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sectioning_setting_att.GetGridPositionModeInfo(io_admin_level, io_locked)
@@ -884,7 +857,6 @@ class SectioningSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sectioning_setting_att.GetGridStyleInfo(io_admin_level, io_locked)
@@ -921,7 +893,6 @@ class SectioningSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sectioning_setting_att.GetGridWidthStepInfo(io_admin_level, io_locked)
@@ -958,7 +929,6 @@ class SectioningSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sectioning_setting_att.GetHidePlaneInfo(io_admin_level, io_locked)
@@ -995,7 +965,6 @@ class SectioningSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sectioning_setting_att.GetHideResultInfo(io_admin_level, io_locked)
@@ -1027,7 +996,6 @@ class SectioningSettingAtt(SettingController):
         :param int o_r:
         :param int o_g:
         :param int o_b:
-        :return: None
         :rtype: None
         """
         return self.sectioning_setting_att.GetPlaneColor(o_r, o_g, o_b)
@@ -1064,7 +1032,6 @@ class SectioningSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sectioning_setting_att.GetPlaneColorInfo(io_admin_level, io_locked)
@@ -1101,7 +1068,6 @@ class SectioningSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sectioning_setting_att.GetPlaneNormalInfo(io_admin_level, io_locked)
@@ -1138,7 +1104,6 @@ class SectioningSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sectioning_setting_att.GetPlaneOriginInfo(io_admin_level, io_locked)
@@ -1175,7 +1140,6 @@ class SectioningSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sectioning_setting_att.GetSectionExportTypeInfo(io_admin_level, io_locked)
@@ -1212,7 +1176,6 @@ class SectioningSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sectioning_setting_att.GetSectionFillInfo(io_admin_level, io_locked)
@@ -1249,7 +1212,6 @@ class SectioningSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sectioning_setting_att.GetUpdateResultInfo(io_admin_level, io_locked)
@@ -1286,7 +1248,6 @@ class SectioningSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sectioning_setting_att.GetViewerAutoOpenInfo(io_admin_level, io_locked)
@@ -1323,7 +1284,6 @@ class SectioningSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sectioning_setting_att.GetViewerAutoReframeInfo(io_admin_level, io_locked)
@@ -1360,7 +1320,6 @@ class SectioningSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sectioning_setting_att.GetViewerLock2DInfo(io_admin_level, io_locked)
@@ -1397,7 +1356,6 @@ class SectioningSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sectioning_setting_att.GetWindowDefaultHeightInfo(io_admin_level, io_locked)
@@ -1434,7 +1392,6 @@ class SectioningSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sectioning_setting_att.GetWindowDefaultWidthInfo(io_admin_level, io_locked)
@@ -1471,7 +1428,6 @@ class SectioningSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sectioning_setting_att.GetWindowOpenModeInfo(io_admin_level, io_locked)
@@ -1498,7 +1454,6 @@ class SectioningSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sectioning_setting_att.SetClippingModeLock(i_locked)
@@ -1525,7 +1480,6 @@ class SectioningSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sectioning_setting_att.SetDisplayCutInWireframeLock(i_locked)
@@ -1552,7 +1506,6 @@ class SectioningSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sectioning_setting_att.SetGridAutoFilteringLock(i_locked)
@@ -1579,7 +1532,6 @@ class SectioningSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sectioning_setting_att.SetGridAutoResizeLock(i_locked)
@@ -1606,7 +1558,6 @@ class SectioningSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sectioning_setting_att.SetGridHeightStepLock(i_locked)
@@ -1633,7 +1584,6 @@ class SectioningSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sectioning_setting_att.SetGridPositionModeLock(i_locked)
@@ -1660,7 +1610,6 @@ class SectioningSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sectioning_setting_att.SetGridStyleLock(i_locked)
@@ -1687,7 +1636,6 @@ class SectioningSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sectioning_setting_att.SetGridWidthStepLock(i_locked)
@@ -1714,7 +1662,6 @@ class SectioningSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sectioning_setting_att.SetHidePlaneLock(i_locked)
@@ -1741,7 +1688,6 @@ class SectioningSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sectioning_setting_att.SetHideResultLock(i_locked)
@@ -1773,7 +1719,6 @@ class SectioningSettingAtt(SettingController):
         :param int i_r:
         :param int i_g:
         :param int i_b:
-        :return: None
         :rtype: None
         """
         return self.sectioning_setting_att.SetPlaneColor(i_r, i_g, i_b)
@@ -1800,7 +1745,6 @@ class SectioningSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sectioning_setting_att.SetPlaneColorLock(i_locked)
@@ -1827,7 +1771,6 @@ class SectioningSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sectioning_setting_att.SetPlaneNormalLock(i_locked)
@@ -1854,7 +1797,6 @@ class SectioningSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sectioning_setting_att.SetPlaneOriginLock(i_locked)
@@ -1881,7 +1823,6 @@ class SectioningSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sectioning_setting_att.SetSectionExportTypeLock(i_locked)
@@ -1908,7 +1849,6 @@ class SectioningSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sectioning_setting_att.SetSectionFillLock(i_locked)
@@ -1935,7 +1875,6 @@ class SectioningSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sectioning_setting_att.SetUpdateResultLock(i_locked)
@@ -1962,7 +1901,6 @@ class SectioningSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sectioning_setting_att.SetViewerAutoOpenLock(i_locked)
@@ -1989,7 +1927,6 @@ class SectioningSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sectioning_setting_att.SetViewerAutoReframeLock(i_locked)
@@ -2016,7 +1953,6 @@ class SectioningSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sectioning_setting_att.SetViewerLock2DLock(i_locked)
@@ -2043,7 +1979,6 @@ class SectioningSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sectioning_setting_att.SetWindowDefaultHeightLock(i_locked)
@@ -2070,7 +2005,6 @@ class SectioningSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sectioning_setting_att.SetWindowDefaultWidthLock(i_locked)
@@ -2097,7 +2031,6 @@ class SectioningSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sectioning_setting_att.SetWindowOpenModeLock(i_locked)

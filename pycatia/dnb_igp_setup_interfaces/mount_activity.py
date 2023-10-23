@@ -72,7 +72,6 @@ class MountActivity(Activity):
                 |            ..
                 |            objMountAct.Tool=objTool
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -115,7 +114,6 @@ class MountActivity(Activity):
                 |            ToolPrName  = "Tool.1"
                 |            objMountAct.ToolProfile=ToolPrName
 
-        :return: str
         :rtype: str
         """
 

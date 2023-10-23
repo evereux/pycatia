@@ -45,7 +45,6 @@ class WIText(AnyObject):
                 |     Returns or sets the value for 'Fixed Text'
                 |     Role: Returns or sets the value of 'Fixed Text' to the Activity
 
-        :return: str
         :rtype: str
         """
 
@@ -71,7 +70,6 @@ class WIText(AnyObject):
                 |     Returns or sets the value for 'ResolvedText Text'
                 |     Role: Returns or sets the value of 'ResolvedText Text' to the Activity
 
-        :return: str
         :rtype: str
         """
 
@@ -97,7 +95,6 @@ class WIText(AnyObject):
                 |     Returns or sets the value for 'UnresolvedText Text'
                 |     Role: Returns or sets the value of 'UnresolvedText Text' to the Activity
 
-        :return: str
         :rtype: str
         """
 
@@ -129,7 +126,6 @@ class WIText(AnyObject):
                 |             CATUnicodeString value of the Attribute
 
         :param str i_attr_name:
-        :return: str
         :rtype: str
         """
         return self.wi_text.GetAttribute(i_attr_name)
@@ -163,7 +159,6 @@ class WIText(AnyObject):
 
         :param int i_assignment_type:
         :param AnyObject io_point_geom:
-        :return: None
         :rtype: None
         """
         return self.wi_text.GetGeomAssociatedToAnnotation(i_assignment_type, io_point_geom.com_object)
@@ -191,7 +186,6 @@ class WIText(AnyObject):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: tuple
         :rtype: tuple
         """
         return self.wi_text.GetHyperLinks()
@@ -216,7 +210,6 @@ class WIText(AnyObject):
 
         :param str i_attr_name:
         :param str i_attr_value:
-        :return: None
         :rtype: None
         """
         return self.wi_text.SetAttribute(i_attr_name, i_attr_value)
@@ -243,7 +236,6 @@ class WIText(AnyObject):
                 |         E_FAIL: on failure
 
         :param tuple i_hyperlinks:
-        :return: None
         :rtype: None
         """
         return self.wi_text.SetHyperLinks(i_hyperlinks)

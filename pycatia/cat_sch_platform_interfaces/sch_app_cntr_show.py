@@ -60,7 +60,6 @@ class SchAppCntrShow(AnyObject):
                 |          objThisIntf.AppShowCntrbVar1
 
         :param bool o_b_show:
-        :return: None
         :rtype: None
         """
         return self.sch_app_cntr_show.AppShowCntr(o_b_show)

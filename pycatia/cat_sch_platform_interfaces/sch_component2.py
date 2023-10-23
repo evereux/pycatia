@@ -90,7 +90,6 @@ class SchComponent2(AnyObject):
         :param tuple i_db6_axis:
         :param Document i_doc:
         :param SchComponent o_new_component:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_component2.PlaceInSpace(
@@ -173,7 +172,6 @@ class SchComponent2(AnyObject):
         :param SchAppConnectable i_object_to_connect:
         :param Document i_doc:
         :param SchComponent o_new_component:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_component2.PlaceOnObject(

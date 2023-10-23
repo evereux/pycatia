@@ -71,7 +71,6 @@ class HybridShapeLoft(HybridShape):
                 |     Gets or sets the optional area law for multi-sections element definition.
                 |     The law is a length law.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -96,7 +95,6 @@ class HybridShapeLoft(HybridShape):
                 | 
                 |     Gets or sets the tolerance applied to area law. The value is in mm.
 
-        :return: float
         :rtype: float
         """
 
@@ -127,7 +125,6 @@ class HybridShapeLoft(HybridShape):
                 |      Dim BoolOp
                 |      BoolOp = Loft.BooleanOperation
 
-        :return: int
         :rtype: int
         """
 
@@ -161,7 +158,6 @@ class HybridShapeLoft(HybridShape):
                 |     2
                 |         Detection of canonical surfaces is performed
 
-        :return: int
         :rtype: int
         """
 
@@ -193,7 +189,6 @@ class HybridShapeLoft(HybridShape):
                 |     2
                 |         The tangent to the end section is not computed
 
-        :return: int
         :rtype: int
         """
 
@@ -225,7 +220,6 @@ class HybridShapeLoft(HybridShape):
                 |     2
                 |         The tangent to the start section is not computed
 
-        :return: int
         :rtype: int
         """
 
@@ -264,7 +258,6 @@ class HybridShapeLoft(HybridShape):
                 |          Dim oContext
                 |          Set oContext = Loft.Context
 
-        :return: int
         :rtype: int
         """
 
@@ -330,7 +323,6 @@ class HybridShapeLoft(HybridShape):
                 |                 By the guides extremities opposite to the last section, if
                 |                 there are guides
 
-        :return: int
         :rtype: int
         """
 
@@ -373,7 +365,6 @@ class HybridShapeLoft(HybridShape):
                 |         if each curve has the same number of vertices, then these points will
                 |         be coupled, otherwise an error message is displayed
 
-        :return: int
         :rtype: int
         """
 
@@ -399,7 +390,6 @@ class HybridShapeLoft(HybridShape):
                 |     Returns or sets the angular threshold under which discontinuities (moving
                 |     frame, tangency net on reference surface) will be smoothed.
 
-        :return: float
         :rtype: float
         """
 
@@ -433,7 +423,6 @@ class HybridShapeLoft(HybridShape):
                 |         The angular threshold value is not used during the lofting
                 |         operation
 
-        :return: bool
         :rtype: bool
         """
 
@@ -459,7 +448,6 @@ class HybridShapeLoft(HybridShape):
                 |     Returns or sets the deviation value (length) allowed during lofting
                 |     operation in order to smooth it.
 
-        :return: float
         :rtype: float
         """
 
@@ -493,7 +481,6 @@ class HybridShapeLoft(HybridShape):
                 |         The deviation value is not used during the lofting
                 |         operation
 
-        :return: bool
         :rtype: bool
         """
 
@@ -527,7 +514,6 @@ class HybridShapeLoft(HybridShape):
                 |         Boundary object): TriDimFeatEdge and BiDimFeatEdge.
 
         :param Reference i_guide:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_loft.AddGuide(i_guide.com_object)
@@ -575,7 +561,6 @@ class HybridShapeLoft(HybridShape):
 
         :param Reference i_guide:
         :param Reference i_tangent:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_loft.AddGuideWithTangent(i_guide.com_object, i_tangent.com_object)
@@ -624,7 +609,6 @@ class HybridShapeLoft(HybridShape):
         :param Reference i_crv:
         :param int i_ori:
         :param Reference or vba_nothing i_point:
-        :return: None
         :rtype: None
         """
 
@@ -660,7 +644,6 @@ class HybridShapeLoft(HybridShape):
                 | 
                 |     Gets the tolerance parameter applied to area law.
 
-        :return: Length
         :rtype: Length
         """
         return Length(self.hybrid_shape_loft.GetAreaLawToleranceParameter())
@@ -687,7 +670,6 @@ class HybridShapeLoft(HybridShape):
 
         :param Reference o_start_face:
         :param Reference o_end_face:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_loft.GetFacesForClosing(o_start_face.com_object, o_end_face.com_object)
@@ -733,7 +715,6 @@ class HybridShapeLoft(HybridShape):
         :param int i_pos:
         :param Reference o_guide:
         :param Reference o_guide_tangent:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_loft.GetGuide(i_pos, o_guide.com_object, o_guide_tangent.com_object)
@@ -775,7 +756,6 @@ class HybridShapeLoft(HybridShape):
                 |                  Dim oSize As  long
                 |                  oSize = hybShpLoft.GetNbOfGuides
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_loft.GetNbOfGuides()
@@ -808,7 +788,6 @@ class HybridShapeLoft(HybridShape):
         :param Reference o_crv:
         :param int o_ori:
         :param Reference o_point:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_loft.GetSectionFromLoft(i_rank, o_crv.com_object, o_ori, o_point.com_object)
@@ -849,7 +828,6 @@ class HybridShapeLoft(HybridShape):
 
         :param int o_spine_type:
         :param Reference o_spine:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_loft.GetSpine(o_spine_type, o_spine.com_object)
@@ -892,7 +870,6 @@ class HybridShapeLoft(HybridShape):
 
         :param Reference o_start_section_tangent:
         :param Reference o_end_section_tangent:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_loft.GetStartAndEndSectionTangent(o_start_section_tangent.com_object,
@@ -934,7 +911,6 @@ class HybridShapeLoft(HybridShape):
                 |         Boundary object): Vertex.
 
         :param int i_position:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_loft.InsertCoupling(i_position)
@@ -971,7 +947,6 @@ class HybridShapeLoft(HybridShape):
         :param int i_coupling_index:
         :param int i_position:
         :param Reference i_point:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_loft.InsertCouplingPoint(i_coupling_index, i_position, i_point.com_object)
@@ -1026,7 +1001,6 @@ class HybridShapeLoft(HybridShape):
         :param int i_ori:
         :param Reference i_point:
         :param Reference i_section_ref:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_loft.InsertSectionToLoft(i_type, i_crv.com_object, i_ori, i_point.com_object,
@@ -1067,7 +1041,6 @@ class HybridShapeLoft(HybridShape):
 
         :param Reference i_guide:
         :param Reference i_new_guide:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_loft.ModifyGuideCurve(i_guide.com_object, i_new_guide.com_object)
@@ -1129,7 +1102,6 @@ class HybridShapeLoft(HybridShape):
         :param Reference o_curve_section:
         :param Reference o_closing_point:
         :param int o_pt_diag:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_loft.ModifySectionCurve(i_section.com_object, i_new_section.com_object,
@@ -1175,7 +1147,6 @@ class HybridShapeLoft(HybridShape):
 
         :param Reference i_section:
         :param int i_orient:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_loft.ModifySectionOrient(i_section.com_object, i_orient)
@@ -1211,7 +1182,6 @@ class HybridShapeLoft(HybridShape):
                 |             section curve.
 
         :param Reference i_section:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_loft.RemoveFaceForClosing(i_section.com_object)
@@ -1251,7 +1221,6 @@ class HybridShapeLoft(HybridShape):
                 |         Boundary object): TriDimFeatEdge and BiDimFeatEdge.
 
         :param Reference i_guide:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_loft.RemoveGuide(i_guide.com_object)
@@ -1289,7 +1258,6 @@ class HybridShapeLoft(HybridShape):
                 |             removed.
 
         :param Reference i_guide:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_loft.RemoveGuideTangent(i_guide.com_object)
@@ -1329,7 +1297,6 @@ class HybridShapeLoft(HybridShape):
                 |         Boundary object): TriDimFeatEdge and BiDimFeatEdge.
 
         :param Reference i_section:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_loft.RemoveSection(i_section.com_object)
@@ -1367,7 +1334,6 @@ class HybridShapeLoft(HybridShape):
                 |             removed.
 
         :param Reference i_section:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_loft.RemoveSectionPoint(i_section.com_object)
@@ -1406,7 +1372,6 @@ class HybridShapeLoft(HybridShape):
                 |             removed.
 
         :param Reference i_section:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_loft.RemoveSectionTangent(i_section.com_object)
@@ -1445,7 +1410,6 @@ class HybridShapeLoft(HybridShape):
                 |         Boundary object): Face.
 
         :param Reference i_face:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_loft.SetEndFaceForClosing(i_face.com_object)
@@ -1486,7 +1450,6 @@ class HybridShapeLoft(HybridShape):
                 |         Boundary object): Face.
 
         :param Reference i_tangent_section:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_loft.SetEndSectionTangent(i_tangent_section.com_object)
@@ -1525,7 +1488,6 @@ class HybridShapeLoft(HybridShape):
                 |         Boundary object): TriDimFeatEdge and BiDimFeatEdge.
 
         :param Reference i_spine:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_loft.SetSpine(i_spine.com_object)
@@ -1564,7 +1526,6 @@ class HybridShapeLoft(HybridShape):
                 |         Boundary object): Face.
 
         :param Reference i_face:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_loft.SetStartFaceForClosing(i_face.com_object)
@@ -1605,7 +1566,6 @@ class HybridShapeLoft(HybridShape):
                 |         Boundary object): Face.
 
         :param Reference i_tangent_section:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_loft.SetStartSectionTangent(i_tangent_section.com_object)

@@ -72,7 +72,6 @@ class SchematicRoot(AnyObject):
                 |          Set objSchObjFact = objSchPlatformRoot.GetApplObjFactFromVirtualType("UserDefined")(
 
         :param str i_application_id:
-        :return: SchAppObjectFactory
         :rtype: SchAppObjectFactory
         """
         return SchAppObjectFactory(self.schematic_root.GetApplObjFactFromVirtualType(i_application_id))
@@ -102,7 +101,6 @@ class SchematicRoot(AnyObject):
                 |          Set objSchObjFact = objSchPlatformRoot.GetApplicationObjectFactory("CatSchIDLCATPID")(
 
         :param int i_application_id:
-        :return: SchAppObjectFactory
         :rtype: SchAppObjectFactory
         """
         return SchAppObjectFactory(self.schematic_root.GetApplicationObjectFactory(i_application_id))
@@ -135,7 +133,6 @@ class SchematicRoot(AnyObject):
 
         :param str i_catalog_entry_name:
         :param Document i_ctlg_doc:
-        :return: SchComponent
         :rtype: SchComponent
         """
         return SchComponent(self.schematic_root.GetCompGroupFromCatalog(i_catalog_entry_name, i_ctlg_doc.com_object))
@@ -168,7 +165,6 @@ class SchematicRoot(AnyObject):
 
         :param str i_catalog_entry_name:
         :param Document i_ctlg_doc:
-        :return: SchGRR
         :rtype: SchGRR
         """
         return SchGRR(self.schematic_root.GetCompSymbolFromCatalog(i_catalog_entry_name, i_ctlg_doc.com_object))
@@ -193,7 +189,6 @@ class SchematicRoot(AnyObject):
                 |          Dim objSchListComps As SchListOfObjects
                 |          Set objoSchListComps = objSchPlatformRoot.GetComponents
 
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.schematic_root.GetComponents())
@@ -220,7 +215,6 @@ class SchematicRoot(AnyObject):
                 |          Dim objDrawRoot As DrawingRoot
                 |          Set objDrawRoot = objSchPlatformRoot.GetDrawing
 
-        :return: DrawingRoot
         :rtype: DrawingRoot
         """
         return DrawingRoot(self.schematic_root.GetDrawing())
@@ -248,7 +242,7 @@ class SchematicRoot(AnyObject):
                 |          oDrwStd = objSchPlatformRoot.GetDrawingStandard
 
         :return: enum cat_drawing_standard
-        :rtype: enum cat_drawing_standard
+        :rtype: int
         """
         return self.schematic_root.GetDrawingStandard()
 
@@ -278,7 +272,6 @@ class SchematicRoot(AnyObject):
 
         :param str i_interface_name:
         :param AnyObject i_object:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.schematic_root.GetInterface(i_interface_name, i_object.com_object))
@@ -304,7 +297,6 @@ class SchematicRoot(AnyObject):
                 |          Dim objSchListComps As SchListOfObjects
                 |          Set objSchListComps = objSchPlatformRoot.GetRefComponents
 
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.schematic_root.GetRefComponents())
@@ -328,7 +320,6 @@ class SchematicRoot(AnyObject):
                 |          Dim objSchListRoutes As SchListOfObjects
                 |          Set objSchListRoutes = objSchPlatformRoot.GetRoutes
 
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.schematic_root.GetRoutes())
@@ -355,7 +346,6 @@ class SchematicRoot(AnyObject):
                 |          Set objSchPlatformRoot = objProductRoot.GetTechnologicalObject ("SchematicRoot")
                 |          Set objSchBaseFact = objSchPlatformRoot.GetBaseFactory
 
-        :return: SchBaseFactory
         :rtype: SchBaseFactory
         """
         return SchBaseFactory(self.schematic_root.GetSchBaseFactory())
@@ -383,7 +373,6 @@ class SchematicRoot(AnyObject):
                 |          Set objSchPlatformRoot = objProductRoot.GetTechnologicalObject ("SchematicRoot")
                 |          Set objSchSession = objSchPlatformRoot.GetSession
 
-        :return: SchSession
         :rtype: SchSession
         """
         return SchSession(self.schematic_root.GetSchematicSession())
@@ -411,7 +400,6 @@ class SchematicRoot(AnyObject):
                 |          Set objSchPlatformRoot = objProductRoot.GetTechnologicalObject ("SchematicRoot")
                 |          Set objSchList = objSchPlatformRoot.GetTemporaryListFactory
 
-        :return: SchTempListFactory
         :rtype: SchTempListFactory
         """
         return SchTempListFactory(self.schematic_root.GetTemporaryListFactory())
@@ -438,7 +426,6 @@ class SchematicRoot(AnyObject):
                 |          Set objSchPlatformRoot = objProductRoot.GetTechnologicalObject ("SchematicRoot")
                 |          Set objSchLSymbols = objSchPlatformRoot.GetUnassociatedSymbols
 
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.schematic_root.GetUnassociatedSymbols())
@@ -466,7 +453,6 @@ class SchematicRoot(AnyObject):
                 |          objSchPlatformRoot.SetDrawingStandard catISO
 
         :param int i_drw_std:
-        :return: None
         :rtype: None
         """
         return self.schematic_root.SetDrawingStandard(i_drw_std)

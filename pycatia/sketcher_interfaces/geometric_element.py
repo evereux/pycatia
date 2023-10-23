@@ -51,7 +51,6 @@ class GeometricElement(AnyObject):
                 |         oType
                 |             Specific type of the geometric interface
 
-        :return: int
         :rtype: int
         """
 

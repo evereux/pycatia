@@ -66,7 +66,6 @@ class DrawingSheet(AnyObject):
                 | 
                 |          MySheet.GenViewsPosMode = catFixedAxis
 
-        :return: int
         :rtype: int
         """
 
@@ -97,7 +96,6 @@ class DrawingSheet(AnyObject):
                 | 
                 |          MySheet.Orientation = catPaperLandscape
 
-        :return: int
         :rtype: int
         """
 
@@ -129,7 +127,6 @@ class DrawingSheet(AnyObject):
                 |          Dim MySheetPageSetup As DrawingPageSetup
                 |          Set MySheetPageSetup = MySheet.PageSetup
 
-        :return: DrawingPageSetup
         :rtype: DrawingPageSetup
         """
 
@@ -152,7 +149,6 @@ class DrawingSheet(AnyObject):
                 | 
                 |          MySheet.PaperSize = catPaperA4
 
-        :return: int
         :rtype: int
         """
 
@@ -184,7 +180,6 @@ class DrawingSheet(AnyObject):
                 |          Dim MyPrintArea As PrintArea
                 |          Set MyPrintArea = MySheet.PrintArea
 
-        :return: PrintArea
         :rtype: PrintArea
         """
 
@@ -207,7 +202,6 @@ class DrawingSheet(AnyObject):
                 | 
                 |          MySheet.ProjectionMethod = catFirstAngle
 
-        :return: int
         :rtype: int
         """
 
@@ -238,7 +232,6 @@ class DrawingSheet(AnyObject):
                 | 
                 |          MySheet.Scale = 0.5
 
-        :return: float
         :rtype: float
         """
 
@@ -270,7 +263,6 @@ class DrawingSheet(AnyObject):
                 | 
                 |          MySheet.Scale2 = 0.5
 
-        :return: float
         :rtype: float
         """
 
@@ -304,7 +296,6 @@ class DrawingSheet(AnyObject):
                 |          Dim ViewCollection As DrawingViews
                 |          Set ViewCollection = MySheet.Views
 
-        :return: DrawingViews
         :rtype: DrawingViews
         """
 
@@ -328,7 +319,6 @@ class DrawingSheet(AnyObject):
                 | 
                 |          MySheet.Activate
 
-        :return: None
         :rtype: None
         """
         return self.drawing_sheet.Activate()
@@ -355,7 +345,6 @@ class DrawingSheet(AnyObject):
                 | 
                 |          MySheet.ForceUpdate
 
-        :return: None
         :rtype: None
         """
         return self.drawing_sheet.ForceUpdate()
@@ -382,7 +371,6 @@ class DrawingSheet(AnyObject):
                 | 
                 |          MySheet.GenerateDimensions
 
-        :return: None
         :rtype: None
         """
         return self.drawing_sheet.GenerateDimensions()
@@ -407,7 +395,6 @@ class DrawingSheet(AnyObject):
                 | 
                 |                  DrawingSheet1.GetPaperHeight oPaperHeight
 
-        :return: float
         :rtype: float
         """
         return self.drawing_sheet.GetPaperHeight()
@@ -432,7 +419,6 @@ class DrawingSheet(AnyObject):
                 | 
                 |                  DrawingSheet1.GetPaperWidth oPaperWidth
 
-        :return: float
         :rtype: float
         """
         return self.drawing_sheet.GetPaperWidth()
@@ -455,7 +441,6 @@ class DrawingSheet(AnyObject):
                 | 
                 |          IsDetail = MySheet.IsDetail
 
-        :return: bool
         :rtype: bool
         """
         return self.drawing_sheet.IsDetail()
@@ -477,7 +462,6 @@ class DrawingSheet(AnyObject):
                 | 
                 |          MySheet.Isolate
 
-        :return: None
         :rtype: None
         """
         return self.drawing_sheet.Isolate()
@@ -501,7 +485,6 @@ class DrawingSheet(AnyObject):
                 | 
                 |          DrawingSheet1.PrintOut
 
-        :return: None
         :rtype: None
         """
         return self.drawing_sheet.PrintOut()
@@ -531,7 +514,6 @@ class DrawingSheet(AnyObject):
 
         :param Path file_name: file_name including full path.
         :param bool overwrite: Files will not be overwritten unless is True.
-        :return: None
         :rtype: None
         """
 
@@ -574,7 +556,6 @@ class DrawingSheet(AnyObject):
                 | 
                 |          MySheet.SetAsDetail
 
-        :return: None
         :rtype: None
         """
         return self.drawing_sheet.SetAsDetail()
@@ -602,7 +583,6 @@ class DrawingSheet(AnyObject):
                 |                  DrawingSheet1.SetPaperHeight iPaperHeight
 
         :param float o_paper_height:
-        :return: None
         :rtype: None
         """
         return self.drawing_sheet.SetPaperHeight(o_paper_height)
@@ -630,7 +610,6 @@ class DrawingSheet(AnyObject):
                 |                  DrawingSheet1.SetPaperWidth iPaperWidth
 
         :param float o_paper_width:
-        :return: None
         :rtype: None
         """
         return self.drawing_sheet.SetPaperWidth(o_paper_width)
@@ -657,7 +636,6 @@ class DrawingSheet(AnyObject):
                 | 
                 |          MySheet.Update
 
-        :return: None
         :rtype: None
         """
         return self.drawing_sheet.Update()
@@ -691,7 +669,6 @@ class DrawingSheet(AnyObject):
                 |          drwviewsorder.reorder_Views(newvieworder)
 
         :param tuple i_ordered_views:
-        :return: None
         :rtype: None
         """
         return self.drawing_sheet.reorder_Views(i_ordered_views)

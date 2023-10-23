@@ -54,7 +54,6 @@ class FreeParameters(Collection):
                 |     Adds a free parameter. This parameter must not be read only.
 
         :param RealParam parameter:
-        :return: FreeParameter
         :rtype: FreeParameter
         """
         return FreeParameter(self.free_parameters.AddFreeParameter(parameter.com_object))
@@ -91,7 +90,6 @@ class FreeParameters(Collection):
                 |          Set lastFreeParameter = freeParameters.Item(freeParameters.Count)
 
         :param cat_variant i_index:
-        :return: FreeParameter
         :rtype: FreeParameter
         """
         return FreeParameter(self.free_parameters.Item(i_index))

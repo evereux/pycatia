@@ -86,7 +86,6 @@ class AnalysisImages(Collection):
         :param cat_variant i_hide_existing_images:
         :param cat_variant i_show_mesh:
         :param cat_variant i_duplicate:
-        :return: AnalysisImage
         :rtype: AnalysisImage
         """
         return AnalysisImage(
@@ -130,7 +129,6 @@ class AnalysisImages(Collection):
                 |          Set ThisAnalysisImage = analysisImages.Item(3)
 
         :param cat_variant i_index:
-        :return: AnalysisImage
         :rtype: AnalysisImage
         """
         return AnalysisImage(self.analysis_images.Item(i_index))
@@ -170,7 +168,6 @@ class AnalysisImages(Collection):
                 |          Set: analysisImages1
 
         :param cat_variant i_image_identifier:
-        :return: None
         :rtype: None
         """
         return self.analysis_images.RemoveImage(i_image_identifier)

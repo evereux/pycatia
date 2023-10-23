@@ -67,7 +67,6 @@ class SchAppDeleteCheck(AnyObject):
 
         :param str o_caption:
         :param str o_message:
-        :return: None
         :rtype: None
         """
         return self.sch_app_delete_check.AppGetDeleteWarning(o_caption, o_message)
@@ -101,7 +100,6 @@ class SchAppDeleteCheck(AnyObject):
                 |          objThisIntf.AppOkToDeleteWithoutWarningbVar1
 
         :param bool o_ok:
-        :return: None
         :rtype: None
         """
         return self.sch_app_delete_check.AppOkToDeleteWithoutWarning(o_ok)

@@ -45,7 +45,6 @@ class FunctionalPosition(FunctionalElement):
                 | 
                 |     Returns the X coordinate.
 
-        :return: float
         :rtype: float
         """
 
@@ -62,7 +61,6 @@ class FunctionalPosition(FunctionalElement):
                 | 
                 |     Returns the Y coordinate.
 
-        :return: float
         :rtype: float
         """
 
@@ -88,7 +86,6 @@ class FunctionalPosition(FunctionalElement):
 
         :param float i_x:
         :param float i_y:
-        :return: None
         :rtype: None
         """
         return self.functional_position.SetCoords(i_x, i_y)

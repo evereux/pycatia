@@ -70,10 +70,9 @@ class CD5SaveItems(Collection):
                 |          Set oSaveItem = oSaveItems.Item(1)
 
         :param cat_variant i_index:
-        :return: enum cd5_save_item
-        :rtype: enum cd5_save_item
+        :rtype: CD5SaveItem
         """
-        return self.cd5_save_items.Item(i_index)
+        return CD5SaveItem(self.cd5_save_items.Item(i_index).com_object)
 
     def __repr__(self):
         return f'CD5SaveItems(name="{self.name}")'

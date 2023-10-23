@@ -64,7 +64,6 @@ class SchAppGapPriority(AnyObject):
 
         :param SchRoute i_the_other_route:
         :param int o_priority:
-        :return: None
         :rtype: None
         """
         return self.sch_app_gap_priority.AppChooseGapPriority(i_the_other_route.com_object, o_priority)

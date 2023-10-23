@@ -60,7 +60,6 @@ class StrAnchorPoint(AnyObject):
                 |          anchor_1.GetCoordinates(coord)
 
         :param tuple o_coord:
-        :return: None
         :rtype: None
         """
         return self.str_anchor_point.GetCoordinates()

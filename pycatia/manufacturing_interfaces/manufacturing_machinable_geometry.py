@@ -65,7 +65,6 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
                 |      bState = TRUE
                 |      firstMachGeom.Shared = bState
 
-        :return: bool
         :rtype: bool
         """
 
@@ -120,7 +119,6 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
         :param AnyObject i_geometry:
         :param Product i_product:
         :param tuple i_shapes:
-        :return: cat_variant
         :rtype: cat_variant
         """
         return self.manufacturing_machinable_geometry.AddPointedGeometry(
@@ -200,7 +198,6 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
         :param Product i_product:
         :param tuple i_shapes:
         :param int i_notify:
-        :return: cat_variant
         :rtype: cat_variant
         """
         return self.manufacturing_machinable_geometry.AddPointedGeometryNotify(
@@ -273,7 +270,6 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
         :param AnyObject i_geometry:
         :param Product i_product:
         :param tuple i_shapes:
-        :return: cat_variant
         :rtype: cat_variant
         """
         return self.manufacturing_machinable_geometry.AddPointedGeometryWithNoDuplicatedCheck(i_geometry.com_object,
@@ -353,7 +349,6 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
         :param Product i_product:
         :param tuple i_shapes:
         :param int i_notify:
-        :return: cat_variant
         :rtype: cat_variant
         """
         return self.manufacturing_machinable_geometry.AddPointedGeometryWithNoDuplicatedCheckNotify(
@@ -422,7 +417,6 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
 
         :param int index_of_pointed_geom:
         :param tuple o_annotations_list:
-        :return: Variant
         :rtype: Variant
         """
         return self.manufacturing_machinable_geometry.GetAssociatedTPS(
@@ -479,7 +473,6 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
                 |      AssociatedTPSCount = PointedGeometryListSize = firstMachGeom.GetAssociatedTPSCount( 3 )
 
         :param int index_of_pointed_geom:
-        :return: int
         :rtype: int
         """
         return self.manufacturing_machinable_geometry.GetAssociatedTPSCount(index_of_pointed_geom)
@@ -527,7 +520,6 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
         :param float o_y:
         :param float o_z:
         :param int index_of_pointed_geom:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_machinable_geometry.GetDirection(o_x, o_y, o_z, index_of_pointed_geom)
@@ -571,7 +563,6 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
                 |      Dim oZ As Double
                 |      Call firstMachGeom.GetOrigin( oX, oY, oZ, 3)
 
-        :return: tuple
         :rtype: tuple
         """
         return self.manufacturing_machinable_geometry.GetOrigin()
@@ -635,7 +626,6 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
         :param AnyObject o_geometry:
         :param Product o_product:
         :param int o_nb_shapes:
-        :return: cat_variant
         :rtype: cat_variant
         """
         return self.manufacturing_machinable_geometry.ListPointedGeometry(
@@ -711,7 +701,6 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
 
         :param int i_index:
         :param tuple o_shapes:
-        :return: Variant
         :rtype: Variant
         """
         return self.manufacturing_machinable_geometry.ListShapesOfPointedGeometry(i_index, o_shapes)
@@ -751,7 +740,6 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
                 |      Dim PointedGeometryListSize As Long
                 |      Set PointedGeometryListSize = firstMachGeom.PointedGeometryCount
 
-        :return: int
         :rtype: int
         """
         return self.manufacturing_machinable_geometry.PointedGeometryCount()
@@ -781,7 +769,6 @@ class ManufacturingMachinableGeometry(ManufacturingMachinableFeature):
                 |          Call firstMachGeom.RemovePointedGeometry( 3 )
 
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_machinable_geometry.RemovePointedGeometry(i_index)

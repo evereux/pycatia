@@ -74,7 +74,6 @@ class HybridShapeDevelop(HybridShape):
                 |     CATGSMDevelopMethod_DevProj
                 |         Develop / project algorithm
 
-        :return: int
         :rtype: int
         """
 
@@ -106,7 +105,6 @@ class HybridShapeDevelop(HybridShape):
                 |     CATGSMPositionMode_Develop
                 |         The 2D wire is to be moved from its initial position
 
-        :return: int
         :rtype: int
         """
 
@@ -134,7 +132,6 @@ class HybridShapeDevelop(HybridShape):
                 |     Sub-element(s) supported (see Boundary object): RectilinearTriDimFeatEdge,
                 |     BiDimFeatEdge or RectilinearMonoDimFeatEdge.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -161,7 +158,6 @@ class HybridShapeDevelop(HybridShape):
                 |     wire.
                 |     Sub-element(s) supported (see Boundary object): Vertex.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -188,7 +184,6 @@ class HybridShapeDevelop(HybridShape):
                 |     surface.
                 |     Sub-element(s) supported (see Boundary object): Vertex.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -215,7 +210,6 @@ class HybridShapeDevelop(HybridShape):
                 |     Role: To retrieve or set the positioning transformation associated to the
                 |     develop feature and which result corresponds to the positioned 2D wire.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -242,7 +236,6 @@ class HybridShapeDevelop(HybridShape):
                 |     operated.
                 |     Sub-element(s) supported (see Boundary object): Face.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -269,7 +262,6 @@ class HybridShapeDevelop(HybridShape):
                 |     Sub-element(s) supported (see Boundary object): TriDimFeatEdge or
                 |     BiDimFeatEdge.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -298,7 +290,6 @@ class HybridShapeDevelop(HybridShape):
                 |     Returns:
                 |         The rotation value
 
-        :return: Angle
         :rtype: Angle
         """
         return Angle(self.hybrid_shape_develop.GetPlaneAxisAngle())
@@ -327,7 +318,6 @@ class HybridShapeDevelop(HybridShape):
                 |         The coordinate value
 
         :param int i_coor_idx:
-        :return: Length
         :rtype: Length
         """
         return Length(self.hybrid_shape_develop.GetPlaneAxisCoord(i_coor_idx))
@@ -362,7 +352,6 @@ class HybridShapeDevelop(HybridShape):
                 |             Both axes are inverted
 
         :param int ii:
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_develop.GetPlaneAxisSwapAxes(ii)
@@ -385,7 +374,6 @@ class HybridShapeDevelop(HybridShape):
                 |             The rotation angle value.
 
         :param float i_angle:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_develop.SetPlaneAxisAngle(i_angle)
@@ -415,7 +403,6 @@ class HybridShapeDevelop(HybridShape):
 
         :param int i_coor_idx:
         :param float i_coord_value:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_develop.SetPlaneAxisCoord(i_coor_idx, i_coord_value)
@@ -450,7 +437,6 @@ class HybridShapeDevelop(HybridShape):
 
         :param int i_idx:
         :param int i_inversion_value:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_develop.SetPlaneAxisSwapAxes(i_idx, i_inversion_value)

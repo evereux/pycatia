@@ -63,7 +63,6 @@ class RobControllerFactory(AnyObject):
                 |             E_FAIL otherwise
 
         :param GenericAccuracyProfile o_accuracy_profile:
-        :return: None
         :rtype: None
         """
         return self.rob_controller_factory.CreateGenericAccuracyProfile(o_accuracy_profile.com_object)
@@ -107,7 +106,6 @@ class RobControllerFactory(AnyObject):
                 |             E_FAIL otherwise
 
         :param GenericMotionProfile o_motion_profile:
-        :return: None
         :rtype: None
         """
         return self.rob_controller_factory.CreateGenericMotionProfile(o_motion_profile.com_object)
@@ -151,7 +149,6 @@ class RobControllerFactory(AnyObject):
                 |             E_FAIL otherwise
 
         :param GenericObjFrameProfile o_obj_frame_profile:
-        :return: None
         :rtype: None
         """
         return self.rob_controller_factory.CreateGenericObjFrameProfile(o_obj_frame_profile.com_object)
@@ -195,7 +192,6 @@ class RobControllerFactory(AnyObject):
                 |             E_FAIL otherwise
 
         :param GenericToolProfile o_tool_profile:
-        :return: None
         :rtype: None
         """
         return self.rob_controller_factory.CreateGenericToolProfile(o_tool_profile.com_object)

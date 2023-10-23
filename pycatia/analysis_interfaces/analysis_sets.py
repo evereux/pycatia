@@ -71,7 +71,6 @@ class AnalysisSets(Collection):
 
         :param str i_type:
         :param int i_set_type:
-        :return: AnalysisSet
         :rtype: AnalysisSet
         """
         return AnalysisSet(self.analysis_sets.Add(i_type, i_set_type))
@@ -108,7 +107,6 @@ class AnalysisSets(Collection):
 
         :param AnalysisSet i_set:
         :param int i_set_type:
-        :return: None
         :rtype: None
         """
         return self.analysis_sets.AddExistingSet(i_set.com_object, i_set_type)
@@ -172,7 +170,6 @@ class AnalysisSets(Collection):
 
         :param cat_variant i_index:
         :param int i_serach_type:
-        :return: AnalysisSet
         :rtype: AnalysisSet
         """
         return AnalysisSet(self.analysis_sets.Item(i_index, i_serach_type))
@@ -204,7 +201,6 @@ class AnalysisSets(Collection):
                 |          Set ThisAnalysisSet = analysisCase.AnalysisSets.ItemByType("LoadSet")
 
         :param str i_type:
-        :return: AnalysisSet
         :rtype: AnalysisSet
         """
         return AnalysisSet(self.analysis_sets.ItemByType(i_type))
@@ -232,7 +228,6 @@ class AnalysisSets(Collection):
                 |         AnyObject.Name property.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.analysis_sets.Remove(i_index)

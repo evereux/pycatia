@@ -70,7 +70,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 | 
                 |          MyView.GenerativeBehavior.ColorInheritanceMode(cat3DColorInheritanceModeOn)
 
-        :return: int
         :rtype: int
         """
 
@@ -111,7 +110,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 |          Set PartToDraw = CATIA.Documents.Item("CATPart1")
                 |          MyView.GenerativeBehavior.Document = PartToDraw
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -147,7 +145,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 | 
                 |          MyView.GenerativeBehavior.FilletRepresentation = catFilletRepBoundary
 
-        :return: int
         :rtype: int
         """
 
@@ -184,7 +181,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 | 
                 |          MyView.GenerativeBehavior.HiddenLineMode = catHLRModeOn
 
-        :return: int
         :rtype: int
         """
 
@@ -227,7 +223,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 | 
                 |     MyView.GenerativeBehavior.CatImageViewMode(catImageModeHRD)
 
-        :return: int
         :rtype: int
         """
 
@@ -260,7 +255,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 |     E_FAIL
                 |         For both methods, if an unspecified failure has occurred
 
-        :return: float
         :rtype: float
         """
 
@@ -295,7 +289,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 |          Dim MyParentView As DrawingView
                 |          Set MyParentView = MyView.GenerativeBehavior.ParentView
 
-        :return: DrawingView
         :rtype: DrawingView
         """
         from pycatia.drafting_interfaces.drawing_view import DrawingView
@@ -324,7 +317,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 | 
                 |          MyView.GenerativeBehavior.PointsProjectionMode = catPointsProjectionModeOn
 
-        :return: int
         :rtype: int
         """
 
@@ -350,7 +342,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 |     Returns or sets symbol for projected points. The 0 value means that
                 |     projected points inherit the symbol of 3D points they come from.
 
-        :return: int
         :rtype: int
         """
 
@@ -392,7 +383,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 | 
                 |      MyView.GenerativeBehavior.RepresentationMode = catPolyhedricMode
 
-        :return: int
         :rtype: int
         """
 
@@ -429,7 +419,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 |         MyView.GenerativeBehavior.ApplyBreakoutTo(MyDestinationView)
 
         :param DrawingViewGenerativeBehavior i_parent_view:
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.ApplyBreakoutTo(i_parent_view.drawing_view_generative_behavior)
@@ -500,7 +489,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param float y_end_point:
         :param int i_side_to_draw:
         :param DrawingViewGenerativeBehavior i_parent_view_generative_behavior:
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior. \
@@ -529,7 +517,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 |             interface
 
         :param AnyObject i_boxable_object:
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.DefineBox3DView(i_boxable_object.com_object)
@@ -565,7 +552,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param tuple i_profil:
         :param tuple i_plane1:
         :param tuple i_plane2:
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.DefineBreakout(i_profil, i_plane1, i_plane2)
@@ -648,7 +634,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param tuple i_broken_lines_extremities:
         :param float i_x_direction:
         :param float i_y_direction:
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.DefineBrokenView(i_broken_lines_extremities, i_x_direction,
@@ -693,7 +678,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param float x_center:
         :param float y_center:
         :param float radius:
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.DefineCircularClippingView(x_center, y_center, radius)
@@ -746,7 +730,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param float i_y_center:
         :param float i_radius:
         :param DrawingViewGenerativeBehavior i_parent_view_generative_behavior:
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.DefineCircularDetailView(
@@ -794,7 +777,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param float x_center:
         :param float y_center:
         :param float radius:
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.DefineCircularExactClippingView(x_center, y_center, radius)
@@ -842,7 +824,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param float i_x2:
         :param float i_y2:
         :param float i_z2:
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.DefineFrontView(i_x1, i_y1, i_z1, i_x2, i_y2, i_z2)
@@ -893,7 +874,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param float i_x2:
         :param float i_y2:
         :param float i_z2:
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.DefineIsometricView(i_x1, i_y1, i_z1, i_x2, i_y2, i_z2)
@@ -919,7 +899,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 |             failed
 
         :param tuple profile:
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.DefinePolygonalClippingView(profile)
@@ -983,7 +962,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
 
         :param tuple i_profile:
         :param DrawingViewGenerativeBehavior i_parent_view_generative_behavior:
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.DefinePolygonalDetailView(
@@ -1012,7 +990,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                  |            failed
 
         :param tuple profile:
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.DefinePolygonalExactClippingView(profile)
@@ -1052,7 +1029,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
 
         :param DrawingViewGenerativeBehavior i_parent_view_generative_behavior:
         :param int i_type:
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.DefineProjectionView(
@@ -1149,7 +1125,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param str i_profile_type:
         :param int i_side_to_draw:
         :param DrawingViewGenerativeBehavior i_parent_view_generative_behavior:
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.DefineSectionView(
@@ -1236,7 +1211,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param str type_of_profile:
         :param tuple i_plane:
         :param int i_side:
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.DefineStandAloneSection(profile, type_of_section, type_of_profile,
@@ -1332,7 +1306,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param str i_profile_type:
         :param int i_side_to_draw:
         :param DrawingViewGenerativeBehavior i_parent_view_generative_behavior:
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.DefineTPSSectionView(
@@ -1386,7 +1359,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param float i_x2:
         :param float i_y2:
         :param float i_z2:
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.DefineUnfoldedView(i_x1, i_y1, i_z1, i_x2, i_y2, i_z2)
@@ -1408,7 +1380,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 | 
                 |          MyView.GenerativeBehavior.ForceUpdate()
 
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.ForceUpdate()
@@ -1433,7 +1404,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
 
         :param AnyObject o_product:
         :param AnyObject o_axis_system:
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.GetAxisSysteme(o_product.com_object, o_axis_system.com_object)
@@ -1468,7 +1438,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 | 
                 |      MyView.GenerativeBehavior.GetGPSName GPSFile
 
-        :return: str
         :rtype: str
         """
         return self.drawing_view_generative_behavior.GetGPSName()
@@ -1515,7 +1484,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param float o_x2:
         :param float o_y2:
         :param float o_z2:
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.GetProjectionPlane(o_x1, o_y1, o_z1, o_x2, o_y2, o_z2)
@@ -1552,7 +1520,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param float o_x_normal:
         :param float o_y_normal:
         :param float o_z_normal:
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.GetProjectionPlaneNormal(o_x_normal, o_y_normal, o_z_normal)
@@ -1577,7 +1544,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
 
         :param AnyObject i_product:
         :param AnyObject i_axis_systeme:
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.SetAxisSysteme(i_product.com_object, i_axis_systeme.com_object)
@@ -1613,7 +1579,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 |      MyView.GenerativeBehavior.SetGPSName "GPSFile1.xml"
 
         :param str i_gps_name:
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.SetGPSName(i_gps_name)
@@ -1668,7 +1633,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
         :param float i_x2:
         :param float i_y2:
         :param float i_z2:
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.SetProjectionPlane(i_x1, i_y1, i_z1, i_x2, i_y2, i_z2)
@@ -1693,7 +1657,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 | 
                 |          MyView.GenerativeBehavior.UnBreak()
 
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.UnBreak()
@@ -1718,7 +1681,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 | 
                 |          MyView.GenerativeBehavior.UnBreakout()
 
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.UnBreakout()
@@ -1788,7 +1750,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 | 
                 |          MyView.GenerativeBehavior.UnClip()
 
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.UnClip()
@@ -1812,7 +1773,6 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 | 
                 |          MyView.GenerativeBehavior.Update()
 
-        :return: None
         :rtype: None
         """
         return self.drawing_view_generative_behavior.Update()

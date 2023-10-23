@@ -59,7 +59,6 @@ class SchComponentGroup(AnyObject):
                 |          objThisIntf.AddMemberobjArg1
 
         :param SchAppConnectable i_cntbl_to_add:
-        :return: None
         :rtype: None
         """
         return self.sch_component_group.AddMember(i_cntbl_to_add.com_object)
@@ -101,7 +100,6 @@ class SchComponentGroup(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.ListMembers
 
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.sch_component_group.ListMembers())
@@ -129,7 +127,6 @@ class SchComponentGroup(AnyObject):
                 |          objThisIntf.RemoveMemberobjArg1
 
         :param SchAppConnectable i_cntbl_to_remove:
-        :return: None
         :rtype: None
         """
         return self.sch_component_group.RemoveMember(i_cntbl_to_remove.com_object)

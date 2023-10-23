@@ -49,7 +49,6 @@ class OptimizationConstraints(Collection):
                 |     Adds a optimization constraint. This parameter must not be read only.
 
         :param str constraint_expression:
-        :return: OptimizationConstraint
         :rtype: OptimizationConstraint
         """
         return OptimizationConstraint(self.optimization_constraints.AddConstraint(constraint_expression))
@@ -86,7 +85,6 @@ class OptimizationConstraints(Collection):
                 |          Set lastConstraint = constraints.Item(constraints.Count)
 
         :param cat_variant i_index:
-        :return: OptimizationConstraint
         :rtype: OptimizationConstraint
         """
         return OptimizationConstraint(self.optimization_constraints.Item(i_index))
@@ -109,7 +107,6 @@ class OptimizationConstraints(Collection):
                 |             the constraint if argument is an integer.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.optimization_constraints.RemoveConstraint(i_index)

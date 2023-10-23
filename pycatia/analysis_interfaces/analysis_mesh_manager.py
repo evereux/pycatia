@@ -47,7 +47,6 @@ class AnalysisMeshManager(AnalysisSet):
                 | 
                 |     Returns the meshpart collection from the current analysis mesh manager.
 
-        :return: AnalysisMeshParts
         :rtype: AnalysisMeshParts
         """
 

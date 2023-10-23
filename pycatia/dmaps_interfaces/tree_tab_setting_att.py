@@ -49,7 +49,6 @@ class TreeTabSettingAtt(SettingController):
                 |     Role: Returns or sets the value of "Applicative Data" option to signify
                 |     whether the applicative containers are visualized in the PPR tree
 
-        :return: int
         :rtype: int
         """
 
@@ -77,7 +76,6 @@ class TreeTabSettingAtt(SettingController):
                 |     Role: Returns or sets the value to signify whether 3D Assigned Viewer is
                 |     default viewer or not
 
-        :return: int
         :rtype: int
         """
 
@@ -104,7 +102,6 @@ class TreeTabSettingAtt(SettingController):
                 |     Role: Returns or sets the value of "Attributes" option to signify whether
                 |     the 'User Attributes' of an Activity is visualized in the PPR tree
 
-        :return: int
         :rtype: int
         """
 
@@ -133,7 +130,6 @@ class TreeTabSettingAtt(SettingController):
                 |     Role: Returns or sets the value to signify Whether the double clicking on
                 |     an activity expands/collapses a given activity in the PPR tree
 
-        :return: int
         :rtype: int
         """
 
@@ -161,7 +157,6 @@ class TreeTabSettingAtt(SettingController):
                 |     Role: Returns or sets the value to signify whether the E5 Configured Name
                 |     is to be displayed
 
-        :return: int
         :rtype: int
         """
 
@@ -188,7 +183,6 @@ class TreeTabSettingAtt(SettingController):
                 |     Role: Returns or sets the value of 'Display Order' to signify which order
                 |     the product/resource list are in the PPR tree
 
-        :return: int
         :rtype: int
         """
 
@@ -219,7 +213,6 @@ class TreeTabSettingAtt(SettingController):
                 |     1 : manufacturing hub order
                 |     0 : loaded order
 
-        :return: int
         :rtype: int
         """
 
@@ -246,7 +239,6 @@ class TreeTabSettingAtt(SettingController):
                 |     Role: Returns or sets the value of 'Items Folder' to signify whether the
                 |     'Assigned Items' are visualized in the PPR tree
 
-        :return: int
         :rtype: int
         """
 
@@ -275,7 +267,6 @@ class TreeTabSettingAtt(SettingController):
                 |     signify whether the 'Assigned Items'with proper relations ( like First
                 |     Processes Product) are visualized in the PPR tree
 
-        :return: int
         :rtype: int
         """
 
@@ -303,7 +294,6 @@ class TreeTabSettingAtt(SettingController):
                 |     Role: Returns or sets the value of "Logical Activities" option to signify
                 |     whether the logical activites are visible in the PPR tree
 
-        :return: int
         :rtype: int
         """
 
@@ -332,7 +322,6 @@ class TreeTabSettingAtt(SettingController):
                 |     signify whether the output products associated with an activity are visualized
                 |     in the PPR tree
 
-        :return: int
         :rtype: int
         """
 
@@ -362,7 +351,6 @@ class TreeTabSettingAtt(SettingController):
                 |     1 : Always paste an instance and do not reuse existing one
                 |     0 : Reuse existing instance wherever possible
 
-        :return: int
         :rtype: int
         """
 
@@ -390,7 +378,6 @@ class TreeTabSettingAtt(SettingController):
                 |     Role: Returns or sets the value to signify whether the 3D Render Style is
                 |     Parallel or Perspective
 
-        :return: int
         :rtype: int
         """
 
@@ -417,7 +404,6 @@ class TreeTabSettingAtt(SettingController):
                 |     Role: Returns or sets the value of 'Resources Folder' to signify whether
                 |     the 'Assigned Resources' are visualized in the PPR tree
 
-        :return: int
         :rtype: int
         """
 
@@ -463,7 +449,6 @@ class TreeTabSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.tree_tab_setting_att.GetApplicativeDataFilterInfo(io_admin_level, io_locked)
@@ -500,7 +485,6 @@ class TreeTabSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.tree_tab_setting_att.GetAssignedViewerInfo(io_admin_level, io_locked)
@@ -537,7 +521,6 @@ class TreeTabSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.tree_tab_setting_att.GetAttributesFilterInfo(io_admin_level, io_locked)
@@ -574,7 +557,6 @@ class TreeTabSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.tree_tab_setting_att.GetCollapseExpandFilterInfo(io_admin_level, io_locked)
@@ -611,7 +593,6 @@ class TreeTabSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.tree_tab_setting_att.GetDisplayNameModeInfo(io_admin_level, io_locked)
@@ -648,7 +629,6 @@ class TreeTabSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.tree_tab_setting_att.GetDisplayOrderInfo(io_admin_level, io_locked)
@@ -685,7 +665,6 @@ class TreeTabSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.tree_tab_setting_att.GetDisplayProcessOrderInfo(io_admin_level, io_locked)
@@ -722,7 +701,6 @@ class TreeTabSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.tree_tab_setting_att.GetItemsFilterInfo(io_admin_level, io_locked)
@@ -759,7 +737,6 @@ class TreeTabSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.tree_tab_setting_att.GetItemsPerRelationFilterInfo(io_admin_level, io_locked)
@@ -796,7 +773,6 @@ class TreeTabSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.tree_tab_setting_att.GetLogicalActFilterInfo(io_admin_level, io_locked)
@@ -833,7 +809,6 @@ class TreeTabSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.tree_tab_setting_att.GetOutputProductFilterInfo(io_admin_level, io_locked)
@@ -870,7 +845,6 @@ class TreeTabSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.tree_tab_setting_att.GetPasteSameInstanceInfo(io_admin_level, io_locked)
@@ -907,7 +881,6 @@ class TreeTabSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.tree_tab_setting_att.GetRenderStyleInfo(io_admin_level, io_locked)
@@ -944,7 +917,6 @@ class TreeTabSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.tree_tab_setting_att.GetResourceFilterInfo(io_admin_level, io_locked)
@@ -971,7 +943,6 @@ class TreeTabSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.tree_tab_setting_att.SetApplicativeDataFilterLock(i_locked)
@@ -1013,7 +984,6 @@ class TreeTabSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.tree_tab_setting_att.SetAssignedViewerLock(i_locked)
@@ -1055,7 +1025,6 @@ class TreeTabSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.tree_tab_setting_att.SetAttributesFilterLock(i_locked)
@@ -1097,7 +1066,6 @@ class TreeTabSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.tree_tab_setting_att.SetCollapseExpandFilterLock(i_locked)
@@ -1139,7 +1107,6 @@ class TreeTabSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.tree_tab_setting_att.SetDisplayNameModeLock(i_locked)
@@ -1181,7 +1148,6 @@ class TreeTabSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.tree_tab_setting_att.SetDisplayOrderLock(i_locked)
@@ -1224,7 +1190,6 @@ class TreeTabSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.tree_tab_setting_att.SetDisplayProcessOrderLock(i_locked)
@@ -1266,7 +1231,6 @@ class TreeTabSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.tree_tab_setting_att.SetItemsFilterLock(i_locked)
@@ -1309,7 +1273,6 @@ class TreeTabSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.tree_tab_setting_att.SetItemsPerRelationFilterLock(i_locked)
@@ -1351,7 +1314,6 @@ class TreeTabSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.tree_tab_setting_att.SetLogicalActFilterLock(i_locked)
@@ -1393,7 +1355,6 @@ class TreeTabSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.tree_tab_setting_att.SetOutputProductFilterLock(i_locked)
@@ -1435,7 +1396,6 @@ class TreeTabSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.tree_tab_setting_att.SetPasteSameInstanceLock(i_locked)
@@ -1477,7 +1437,6 @@ class TreeTabSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.tree_tab_setting_att.SetRenderStyleLock(i_locked)
@@ -1519,7 +1478,6 @@ class TreeTabSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.tree_tab_setting_att.SetResourceFilterLock(i_locked)

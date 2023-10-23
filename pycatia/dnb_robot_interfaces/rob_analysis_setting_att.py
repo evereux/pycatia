@@ -98,7 +98,6 @@ class RobAnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rob_analysis_setting_att.GetLinAccelColorInfo(io_admin_level, io_locked)
@@ -135,7 +134,6 @@ class RobAnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rob_analysis_setting_att.GetLinAccelLimitInfo(io_admin_level, io_locked)
@@ -172,7 +170,6 @@ class RobAnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rob_analysis_setting_att.GetLinSpeedColorInfo(io_admin_level, io_locked)
@@ -209,7 +206,6 @@ class RobAnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rob_analysis_setting_att.GetLinSpeedLimitInfo(io_admin_level, io_locked)
@@ -246,7 +242,6 @@ class RobAnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rob_analysis_setting_att.GetReachColorInfo(io_admin_level, io_locked)
@@ -283,7 +278,6 @@ class RobAnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rob_analysis_setting_att.GetRotAccelColorInfo(io_admin_level, io_locked)
@@ -320,7 +314,6 @@ class RobAnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rob_analysis_setting_att.GetRotAccelLimitInfo(io_admin_level, io_locked)
@@ -357,7 +350,6 @@ class RobAnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rob_analysis_setting_att.GetRotSpeedColorInfo(io_admin_level, io_locked)
@@ -394,7 +386,6 @@ class RobAnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rob_analysis_setting_att.GetRotSpeedLimitInfo(io_admin_level, io_locked)
@@ -431,7 +422,6 @@ class RobAnalysisSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rob_analysis_setting_att.GetSingularColorInfo(io_admin_level, io_locked)
@@ -458,7 +448,6 @@ class RobAnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rob_analysis_setting_att.SetLinAccelColorLock(i_locked)
@@ -500,7 +489,6 @@ class RobAnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rob_analysis_setting_att.SetLinAccelLimitLock(i_locked)
@@ -542,7 +530,6 @@ class RobAnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rob_analysis_setting_att.SetLinSpeedColorLock(i_locked)
@@ -584,7 +571,6 @@ class RobAnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rob_analysis_setting_att.SetLinSpeedLimitLock(i_locked)
@@ -626,7 +612,6 @@ class RobAnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rob_analysis_setting_att.SetReachColorLock(i_locked)
@@ -668,7 +653,6 @@ class RobAnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rob_analysis_setting_att.SetRotAccelColorLock(i_locked)
@@ -710,7 +694,6 @@ class RobAnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rob_analysis_setting_att.SetRotAccelLimitLock(i_locked)
@@ -752,7 +735,6 @@ class RobAnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rob_analysis_setting_att.SetRotSpeedColorLock(i_locked)
@@ -794,7 +776,6 @@ class RobAnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rob_analysis_setting_att.SetRotSpeedLimitLock(i_locked)
@@ -836,7 +817,6 @@ class RobAnalysisSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rob_analysis_setting_att.SetSingularColorLock(i_locked)

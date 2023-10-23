@@ -67,7 +67,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -101,7 +100,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: int
         :rtype: int
         """
 
@@ -145,7 +143,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -193,7 +190,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -239,7 +235,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -284,7 +279,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -330,7 +324,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -377,7 +370,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -425,7 +417,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -464,7 +455,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -505,7 +495,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -547,7 +536,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -594,7 +582,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -633,7 +620,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -673,7 +659,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -715,7 +700,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -756,7 +740,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -797,7 +780,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -840,7 +822,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -880,7 +861,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -923,7 +903,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -962,7 +941,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1006,7 +984,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1051,7 +1028,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1095,7 +1071,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: int
         :rtype: int
         """
 
@@ -1133,7 +1108,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1171,7 +1145,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1209,7 +1182,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1247,7 +1219,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1286,7 +1257,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1328,7 +1298,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1370,7 +1339,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1411,7 +1379,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1452,7 +1419,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1494,7 +1460,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1534,7 +1499,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1579,7 +1543,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: int
         :rtype: int
         """
 
@@ -1624,7 +1587,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1664,7 +1626,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1705,7 +1666,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1745,7 +1705,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: int
         :rtype: int
         """
 
@@ -1783,7 +1742,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1830,7 +1788,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetAlsoDeleteExclusiveParentsInfo(io_admin_level, io_locked)
@@ -1867,7 +1824,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetAxisSystemSizeInfo(io_admin_level, io_locked)
@@ -1905,7 +1861,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetBodiesUnderOperationsInTreeInfo(io_admin_level, io_locked)
@@ -1943,7 +1898,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetColorSynchronizationEditabilityInfo(io_admin_level, io_locked)
@@ -1980,7 +1934,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetColorSynchronizationModeInfo(io_admin_level, io_locked)
@@ -2018,7 +1971,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetColorSynchronizationModeManageInfo(io_admin_level, io_locked)
@@ -2056,7 +2008,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetColorSynchronizationModeOnFeatureInfo(io_admin_level, io_locked)
@@ -2094,7 +2045,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetColorSynchronizationModeOnSubElementsInfo(io_admin_level,
@@ -2133,7 +2083,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetColors3DExperienceManagementInfo(io_admin_level, io_locked)
@@ -2170,7 +2119,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetConstraintsInGeometryInfo(io_admin_level, io_locked)
@@ -2207,7 +2155,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetConstraintsNodeInTreeInfo(io_admin_level, io_locked)
@@ -2245,7 +2192,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetContextualFeaturesSelectableAtCreationInfo(io_admin_level,
@@ -2283,7 +2229,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetDefaultColorsEditabilityInfo(io_admin_level, io_locked)
@@ -2320,7 +2265,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetDeleteWarningBoxInfo(io_admin_level, io_locked)
@@ -2358,7 +2302,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetDisplayGeometryAfterCurrentInfo(io_admin_level, io_locked)
@@ -2396,7 +2339,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetExpandSketchBasedFeaturesNodeAtCreationInfo(io_admin_level,
@@ -2435,7 +2377,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetExternalReferencesAsVisibleInfo(io_admin_level, io_locked)
@@ -2473,7 +2414,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetExternalReferencesAssemblyRootContextInfo(io_admin_level,
@@ -2512,7 +2452,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetExternalReferencesNodeInTreeInfo(io_admin_level, io_locked)
@@ -2549,7 +2488,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetHybridDesignModeInfo(io_admin_level, io_locked)
@@ -2587,7 +2525,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetKnowledgeInHybridDesignModeInfo(io_admin_level, io_locked)
@@ -2624,7 +2561,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetLinkedExternalReferencesInfo(io_admin_level, io_locked)
@@ -2662,7 +2598,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetLinkedExternalReferencesOnlyOnPublicationInfo(io_admin_level,
@@ -2701,7 +2636,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetLinkedExternalReferencesWarningAtCreationInfo(io_admin_level,
@@ -2739,7 +2673,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetNamingModeInfo(io_admin_level, io_locked)
@@ -2776,7 +2709,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetNewWith3DSupportInfo(io_admin_level, io_locked)
@@ -2813,7 +2745,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetNewWithAxisSystemInfo(io_admin_level, io_locked)
@@ -2850,7 +2781,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetNewWithGSInfo(io_admin_level, io_locked)
@@ -2887,7 +2817,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetNewWithOGSInfo(io_admin_level, io_locked)
@@ -2924,7 +2853,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetNewWithPanelInfo(io_admin_level, io_locked)
@@ -2962,7 +2890,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetOnlyCurrentOperatedSolidSetInGeometryInfo(io_admin_level,
@@ -3001,7 +2928,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetOnlyCurrentSolidSetInGeometryInfo(io_admin_level, io_locked)
@@ -3038,7 +2964,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetParametersNodeInTreeInfo(io_admin_level, io_locked)
@@ -3076,7 +3001,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetPublishTopologicalElementsInfo(io_admin_level, io_locked)
@@ -3113,7 +3037,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetRelationsNodeInTreeInfo(io_admin_level, io_locked)
@@ -3150,7 +3073,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetReplaceOnlyAfterCurrentInfo(io_admin_level, io_locked)
@@ -3187,7 +3109,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetSurfaceElementsLocationInfo(io_admin_level, io_locked)
@@ -3224,7 +3145,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetTrueColorModeInfo(io_admin_level, io_locked)
@@ -3261,7 +3181,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetUpdateElementsRefreshedInfo(io_admin_level, io_locked)
@@ -3299,7 +3218,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetUpdateLinkedExternalReferencesInfo(io_admin_level, io_locked)
@@ -3336,7 +3254,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetUpdateModeInfo(io_admin_level, io_locked)
@@ -3373,7 +3290,6 @@ class PartInfrastructureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.part_infrastructure_setting_att.GetUpdateStoppedOnErrorInfo(io_admin_level, io_locked)
@@ -3401,7 +3317,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetAlsoDeleteExclusiveParentsLock(i_locked)
@@ -3443,7 +3358,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetAxisSystemSizeLock(i_locked)
@@ -3486,7 +3400,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetBodiesUnderOperationsInTreeLock(i_locked)
@@ -3530,7 +3443,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetColorSynchronizationEditabilityLock(i_locked)
@@ -3572,7 +3484,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetColorSynchronizationModeLock(i_locked)
@@ -3615,7 +3526,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetColorSynchronizationModeManageLock(i_locked)
@@ -3659,7 +3569,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetColorSynchronizationModeOnFeatureLock(i_locked)
@@ -3703,7 +3612,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetColorSynchronizationModeOnSubElementsLock(i_locked)
@@ -3746,7 +3654,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetColors3DExperienceManagementLock(i_locked)
@@ -3788,7 +3695,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetConstraintsInGeometryLock(i_locked)
@@ -3830,7 +3736,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetConstraintsNodeInTreeLock(i_locked)
@@ -3874,7 +3779,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetContextualFeaturesSelectableAtCreationLock(i_locked)
@@ -3916,7 +3820,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetDefaultColorsEditabilityLock(i_locked)
@@ -3958,7 +3861,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetDeleteWarningBoxLock(i_locked)
@@ -4001,7 +3903,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetDisplayGeometryAfterCurrentLock(i_locked)
@@ -4045,7 +3946,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetExpandSketchBasedFeaturesNodeAtCreationLock(i_locked)
@@ -4088,7 +3988,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetExternalReferencesAsVisibleLock(i_locked)
@@ -4132,7 +4031,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetExternalReferencesAssemblyRootContextLock(i_locked)
@@ -4175,7 +4073,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetExternalReferencesNodeInTreeLock(i_locked)
@@ -4217,7 +4114,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetHybridDesignModeLock(i_locked)
@@ -4260,7 +4156,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetKnowledgeInHybridDesignModeLock(i_locked)
@@ -4302,7 +4197,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetLinkedExternalReferencesLock(i_locked)
@@ -4346,7 +4240,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetLinkedExternalReferencesOnlyOnPublicationLock(i_locked)
@@ -4390,7 +4283,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetLinkedExternalReferencesWarningAtCreationLock(i_locked)
@@ -4432,7 +4324,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetNamingModeLock(i_locked)
@@ -4474,7 +4365,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetNewWith3DSupportLock(i_locked)
@@ -4516,7 +4406,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetNewWithAxisSystemLock(i_locked)
@@ -4558,7 +4447,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetNewWithGSLock(i_locked)
@@ -4600,7 +4488,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetNewWithOGSLock(i_locked)
@@ -4642,7 +4529,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetNewWithPanelLock(i_locked)
@@ -4686,7 +4572,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetOnlyCurrentOperatedSolidSetInGeometryLock(i_locked)
@@ -4729,7 +4614,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetOnlyCurrentSolidSetInGeometryLock(i_locked)
@@ -4771,7 +4655,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetParametersNodeInTreeLock(i_locked)
@@ -4814,7 +4697,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetPublishTopologicalElementsLock(i_locked)
@@ -4856,7 +4738,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetRelationsNodeInTreeLock(i_locked)
@@ -4898,7 +4779,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetReplaceOnlyAfterCurrentLock(i_locked)
@@ -4940,7 +4820,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetSurfaceElementsLocationLock(i_locked)
@@ -4982,7 +4861,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetUpdateElementsRefreshedLock(i_locked)
@@ -5025,7 +4903,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetUpdateLinkedExternalReferencesLock(i_locked)
@@ -5067,7 +4944,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetUpdateModeLock(i_locked)
@@ -5109,7 +4985,6 @@ class PartInfrastructureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.part_infrastructure_setting_att.SetUpdateStoppedOnErrorLock(i_locked)

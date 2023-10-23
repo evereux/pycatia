@@ -48,7 +48,6 @@ class SWKLineOfSight(SWKBodyElement):
                 |     If the the value returned is -1.0, then it means that this line of sight
                 |     has infinite length.
 
-        :return: float
         :rtype: float
         """
 
@@ -67,7 +66,6 @@ class SWKLineOfSight(SWKBodyElement):
                 |     property will always be equal to 2. The two degrees of freedom on a line of
                 |     sight are the up/down movement and the lateral right/lateral left movement.
 
-        :return: int
         :rtype: int
         """
 
@@ -120,7 +118,6 @@ class SWKLineOfSight(SWKBodyElement):
                 |          myPosition
 
         :param tuple pi_position_increment:
-        :return: None
         :rtype: None
         """
         return self.swk_line_of_sight.ApplyPosition(pi_position_increment)
@@ -159,7 +156,6 @@ class SWKLineOfSight(SWKBodyElement):
                 |             or 1.
 
         :param int pi_dof_number:
-        :return: SWKDOF
         :rtype: SWKDOF
         """
         return SWKDOF(self.swk_line_of_sight.GetDOF(pi_dof_number))
@@ -210,7 +206,6 @@ class SWKLineOfSight(SWKBodyElement):
                 |          myPosition
 
         :param tuple pi_new_position:
-        :return: None
         :rtype: None
         """
         return self.swk_line_of_sight.SetPosition(pi_new_position)

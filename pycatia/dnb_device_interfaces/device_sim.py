@@ -66,7 +66,6 @@ class DeviceSim(AnyObject):
                 |            ...
                 |            objDevice.Finalize
 
-        :return: None
         :rtype: None
         """
         return self.device_sim.Finalize()
@@ -118,7 +117,6 @@ class DeviceSim(AnyObject):
                 |            ...
 
         :param AnyObject i_mechanism:
-        :return: tuple
         :rtype: tuple
         """
         return self.device_sim.GetDOFValues(i_mechanism.com_object)
@@ -143,7 +141,6 @@ class DeviceSim(AnyObject):
                 |            Set objDeviceSim = CATIA.ActiveDocument.Product.GetTechnologicalObject("DeviceSim")
                 |            objDeviceSim.Initialize
 
-        :return: None
         :rtype: None
         """
         return self.device_sim.Initialize()
@@ -205,7 +202,6 @@ class DeviceSim(AnyObject):
         :param AnyObject i_mechanism:
         :param tuple i_values:
         :param bool i_is_relative:
-        :return: None
         :rtype: None
         """
         return self.device_sim.SetDOFValues(i_mechanism.com_object, i_values, i_is_relative)

@@ -47,7 +47,6 @@ class HtsTaskDisplaySettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -74,7 +73,6 @@ class HtsTaskDisplaySettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -101,7 +99,6 @@ class HtsTaskDisplaySettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -128,7 +125,6 @@ class HtsTaskDisplaySettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -155,7 +151,6 @@ class HtsTaskDisplaySettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -182,7 +177,6 @@ class HtsTaskDisplaySettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -209,7 +203,6 @@ class HtsTaskDisplaySettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -236,7 +229,6 @@ class HtsTaskDisplaySettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -282,7 +274,6 @@ class HtsTaskDisplaySettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.hts_task_display_setting_att.GetAutoWalkActColorInfo(io_admin_level, io_locked)
@@ -319,7 +310,6 @@ class HtsTaskDisplaySettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.hts_task_display_setting_att.GetAutoWalkActLineTypeInfo(io_admin_level, io_locked)
@@ -356,7 +346,6 @@ class HtsTaskDisplaySettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.hts_task_display_setting_att.GetAutoWalkActLineWeightInfo(io_admin_level, io_locked)
@@ -393,7 +382,6 @@ class HtsTaskDisplaySettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.hts_task_display_setting_att.GetMTPActColorInfo(io_admin_level, io_locked)
@@ -430,7 +418,6 @@ class HtsTaskDisplaySettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.hts_task_display_setting_att.GetMTPActSymbolInfo(io_admin_level, io_locked)
@@ -467,7 +454,6 @@ class HtsTaskDisplaySettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.hts_task_display_setting_att.GetWalkActColorInfo(io_admin_level, io_locked)
@@ -504,7 +490,6 @@ class HtsTaskDisplaySettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.hts_task_display_setting_att.GetWalkActLineTypeInfo(io_admin_level, io_locked)
@@ -541,7 +526,6 @@ class HtsTaskDisplaySettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.hts_task_display_setting_att.GetWalkActLineWeightInfo(io_admin_level, io_locked)
@@ -568,7 +552,6 @@ class HtsTaskDisplaySettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.hts_task_display_setting_att.SetAutoWalkActColorLock(i_locked)
@@ -610,7 +593,6 @@ class HtsTaskDisplaySettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.hts_task_display_setting_att.SetAutoWalkActLineTypeLock(i_locked)
@@ -652,7 +634,6 @@ class HtsTaskDisplaySettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.hts_task_display_setting_att.SetAutoWalkActLineWeightLock(i_locked)
@@ -694,7 +675,6 @@ class HtsTaskDisplaySettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.hts_task_display_setting_att.SetMTPActColorLock(i_locked)
@@ -736,7 +716,6 @@ class HtsTaskDisplaySettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.hts_task_display_setting_att.SetMTPActSymbolLock(i_locked)
@@ -778,7 +757,6 @@ class HtsTaskDisplaySettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.hts_task_display_setting_att.SetWalkActColorLock(i_locked)
@@ -820,7 +798,6 @@ class HtsTaskDisplaySettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.hts_task_display_setting_att.SetWalkActLineTypeLock(i_locked)
@@ -862,7 +839,6 @@ class HtsTaskDisplaySettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.hts_task_display_setting_att.SetWalkActLineWeightLock(i_locked)

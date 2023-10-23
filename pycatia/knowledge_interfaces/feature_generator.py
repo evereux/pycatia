@@ -46,7 +46,6 @@ class FeatureGenerator(AnyObject):
                 | 
                 |     Number of generated features in last generation.
 
-        :return: int
         :rtype: int
         """
 
@@ -63,7 +62,6 @@ class FeatureGenerator(AnyObject):
                 | 
                 |     Returns or sets the script that describes what is to be generated.
 
-        :return: str
         :rtype: str
         """
 
@@ -88,7 +86,6 @@ class FeatureGenerator(AnyObject):
                 |     Generates the features.
 
         :param AnyObject i_context:
-        :return: None
         :rtype: None
         """
         return self.feature_generator.Generate(i_context.com_object)
@@ -104,7 +101,6 @@ class FeatureGenerator(AnyObject):
                 |     Generates the features.
 
         :param tuple i_inputs_array:
-        :return: None
         :rtype: None
         """
         return self.feature_generator.GenerateInContext(i_inputs_array)
@@ -135,7 +131,6 @@ class FeatureGenerator(AnyObject):
                 |     Sets a script from a document file.
 
         :param str i_file_path:
-        :return: None
         :rtype: None
         """
         return self.feature_generator.LoadScriptFromFilePath(i_file_path)

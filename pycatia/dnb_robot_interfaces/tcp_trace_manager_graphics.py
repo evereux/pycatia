@@ -94,7 +94,6 @@ class TCPTraceManagerGraphics(AnyObject):
 
         :param int i_rep:
         :param int i_thickness:
-        :return: None
         :rtype: None
         """
         return self.tcp_trace_manager_graphics.SetNextThickness(i_rep, i_thickness)
@@ -142,7 +141,6 @@ class TCPTraceManagerGraphics(AnyObject):
 
         :param int i_rep:
         :param int i_type:
-        :return: None
         :rtype: None
         """
         return self.tcp_trace_manager_graphics.SetNextType(i_rep, i_type)
@@ -187,7 +185,6 @@ class TCPTraceManagerGraphics(AnyObject):
         :param int i_g:
         :param int i_b:
         :param int i_a:
-        :return: None
         :rtype: None
         """
         return self.tcp_trace_manager_graphics.SetTraceNextColor(i_rep, i_r, i_g, i_b, i_a)

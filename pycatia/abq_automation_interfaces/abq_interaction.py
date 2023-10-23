@@ -50,7 +50,6 @@ class ABQInteraction(AnyObject):
                 |     Returns:
                 |         The type of the Interaction.
 
-        :return: str
         :rtype: str
         """
 

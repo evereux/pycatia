@@ -57,7 +57,6 @@ class LanguageSheetSettingAtt(SettingController):
                 |             The knowledge build path directory: the path where all the
                 |             resources are located.
 
-        :return: str
         :rtype: str
         """
 
@@ -90,7 +89,6 @@ class LanguageSheetSettingAtt(SettingController):
                 |         oListOfPackagesToLoad
                 |             The list of packages to load.
 
-        :return: str
         :rtype: str
         """
 
@@ -125,7 +123,6 @@ class LanguageSheetSettingAtt(SettingController):
                 |             0 : to not load all packages
                 |             1 : to load all packages.
 
-        :return: int
         :rtype: int
         """
 
@@ -160,7 +157,6 @@ class LanguageSheetSettingAtt(SettingController):
                 |             0 : to not use extended libraries
                 |             1 : to use extended libraries.
 
-        :return: int
         :rtype: int
         """
 
@@ -193,7 +189,6 @@ class LanguageSheetSettingAtt(SettingController):
                 |         oReferenceDirectoryForTypes
                 |             The reference directory for types.
 
-        :return: str
         :rtype: str
         """
 
@@ -223,7 +218,6 @@ class LanguageSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.language_sheet_setting_att.GetKnowledgeBuildPathDirectoryInfo(io_admin_level, io_locked)
@@ -243,7 +237,6 @@ class LanguageSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.language_sheet_setting_att.GetListOfPackagesToLoadInfo(io_admin_level, io_locked)
@@ -263,7 +256,6 @@ class LanguageSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.language_sheet_setting_att.GetLoadAllPackagesInfo(io_admin_level, io_locked)
@@ -283,7 +275,6 @@ class LanguageSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.language_sheet_setting_att.GetLoadExtendedLanguageLibInfo(io_admin_level, io_locked)
@@ -304,7 +295,6 @@ class LanguageSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.language_sheet_setting_att.GetReferenceDirectoryForTypesInfo(io_admin_level, io_locked)
@@ -322,7 +312,6 @@ class LanguageSheetSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.language_sheet_setting_att.SetKnowledgeBuildPathDirectoryLock(i_locked)
@@ -340,7 +329,6 @@ class LanguageSheetSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.language_sheet_setting_att.SetListOfPackagesToLoadLock(i_locked)
@@ -357,7 +345,6 @@ class LanguageSheetSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.language_sheet_setting_att.SetLoadAllPackagesLock(i_locked)
@@ -375,7 +362,6 @@ class LanguageSheetSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.language_sheet_setting_att.SetLoadExtendedLanguageLibLock(i_locked)
@@ -393,7 +379,6 @@ class LanguageSheetSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.language_sheet_setting_att.SetReferenceDirectoryForTypesLock(i_locked)

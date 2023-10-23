@@ -72,7 +72,6 @@ class ManufacturingPrismaticMachiningArea(ManufacturingMachinableArea):
                 |     MfgHard
                 |     MfgSoft
 
-        :return: str
         :rtype: str
         """
 
@@ -105,7 +104,6 @@ class ManufacturingPrismaticMachiningArea(ManufacturingMachinableArea):
                 |          Dim NumberOfContour As Long
                 |          NumberOfContour = CurrentPMA.ContoursCount
 
-        :return: int
         :rtype: int
         """
 
@@ -130,7 +128,6 @@ class ManufacturingPrismaticMachiningArea(ManufacturingMachinableArea):
                 |          Dim NumberOfIsland As Long
                 |          NumberOfIsland = CurrentPMA.IslandsCount
 
-        :return: int
         :rtype: int
         """
 
@@ -165,7 +162,6 @@ class ManufacturingPrismaticMachiningArea(ManufacturingMachinableArea):
                 |     MfgHard
                 |     MfgSoft
 
-        :return: str
         :rtype: str
         """
 
@@ -212,7 +208,6 @@ class ManufacturingPrismaticMachiningArea(ManufacturingMachinableArea):
                 |     MfgPocketType
                 |     MfgContouringType
 
-        :return: str
         :rtype: str
         """
 
@@ -255,7 +250,6 @@ class ManufacturingPrismaticMachiningArea(ManufacturingMachinableArea):
                 |          oContourSide = CurrentPMA.GetContourSide(iContourNumber)
 
         :param int i_contour_number:
-        :return: int
         :rtype: int
         """
         return self.manufacturing_prismatic_machining_area.GetContourSide(i_contour_number)
@@ -316,7 +310,6 @@ class ManufacturingPrismaticMachiningArea(ManufacturingMachinableArea):
 
         :param str i_geometry_type:
         :param int i_geometry_number:
-        :return: int
         :rtype: int
         """
         return self.manufacturing_prismatic_machining_area.GetGeometriesAquisitionMode(
@@ -357,7 +350,6 @@ class ManufacturingPrismaticMachiningArea(ManufacturingMachinableArea):
                 |         1 (means closed contour)
 
         :param int i_contour_number:
-        :return: int
         :rtype: int
         """
         return self.manufacturing_prismatic_machining_area.IsContourClosed(i_contour_number)
@@ -395,7 +387,6 @@ class ManufacturingPrismaticMachiningArea(ManufacturingMachinableArea):
                 |          Call CurrentPMA.RemoveAllGeometry("Parts")
 
         :param str i_geometry_type:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_prismatic_machining_area.RemoveAllGeometry(i_geometry_type)
@@ -438,7 +429,6 @@ class ManufacturingPrismaticMachiningArea(ManufacturingMachinableArea):
 
         :param int i_contour_number:
         :param str i_side:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_prismatic_machining_area.SetClosedContourSide(i_contour_number, i_side)
@@ -481,7 +471,6 @@ class ManufacturingPrismaticMachiningArea(ManufacturingMachinableArea):
 
         :param int i_contour_number:
         :param int i_side:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_prismatic_machining_area.SetContourSide(i_contour_number, i_side)
@@ -577,7 +566,6 @@ class ManufacturingPrismaticMachiningArea(ManufacturingMachinableArea):
         :param AnyObject i_reference:
         :param AnyObject i_product:
         :param int i_position:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_prismatic_machining_area.SetGeometries(
@@ -632,7 +620,6 @@ class ManufacturingPrismaticMachiningArea(ManufacturingMachinableArea):
         :param AnyObject i_reference:
         :param AnyObject i_product:
         :param int i_position:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_prismatic_machining_area.SetGeometry(
@@ -685,7 +672,6 @@ class ManufacturingPrismaticMachiningArea(ManufacturingMachinableArea):
 
         :param int i_contour_number:
         :param AnyObject i_point:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_prismatic_machining_area.SetOpenContourSide(i_contour_number, i_point.com_object)

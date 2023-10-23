@@ -54,7 +54,6 @@ class Layout2DSheet(AnyObject):
                 | 
                 |          MySheet.Orientation = catPaperLandscape
 
-        :return: int
         :rtype: int
         """
 
@@ -86,7 +85,6 @@ class Layout2DSheet(AnyObject):
                 |          Dim MySheetPageSetup As DrawingPageSetup
                 |          Set MySheetPageSetup = MySheet.PageSetup
 
-        :return: DrawingPageSetup
         :rtype: DrawingPageSetup
         """
 
@@ -113,7 +111,6 @@ class Layout2DSheet(AnyObject):
                 | 
                 |                  Layout2DSheet1.GetPaperHeight oPaperHeight
 
-        :return: float
         :rtype: float
         """
 
@@ -144,7 +141,6 @@ class Layout2DSheet(AnyObject):
                 | 
                 |          MySheet.PaperName = DSFormat1
 
-        :return: str
         :rtype: str
         """
 
@@ -175,7 +171,6 @@ class Layout2DSheet(AnyObject):
                 | 
                 |          MySheet.PaperSize = catPaperA4
 
-        :return: int
         :rtype: int
         """
 
@@ -209,7 +204,6 @@ class Layout2DSheet(AnyObject):
                 | 
                 |                  Sheet1.GetPaperWidth oPaperWidth
 
-        :return: float
         :rtype: float
         """
 
@@ -241,7 +235,6 @@ class Layout2DSheet(AnyObject):
                 |          Dim MyPrintArea As PrintArea
                 |          Set MyPrintArea = MySheet.PrintArea
 
-        :return: PrintArea
         :rtype: PrintArea
         """
 
@@ -264,7 +257,6 @@ class Layout2DSheet(AnyObject):
                 | 
                 |          MySheet.ProjectionMethod = catFirstAngle
 
-        :return: int
         :rtype: int
         """
 
@@ -295,7 +287,6 @@ class Layout2DSheet(AnyObject):
                 | 
                 |          MySheet.SheetScale = 0.5
 
-        :return: float
         :rtype: float
         """
 
@@ -328,7 +319,6 @@ class Layout2DSheet(AnyObject):
                 |          Dim ViewCollection As Layout2DViews
                 |          Set ViewCollection = MySheet.Views.
 
-        :return: Layout2DViews
         :rtype: Layout2DViews
         """
 
@@ -350,7 +340,6 @@ class Layout2DSheet(AnyObject):
                 |     See also:
                 |         CatVisuIn3DMode
 
-        :return: int
         :rtype: int
         """
 
@@ -382,7 +371,6 @@ class Layout2DSheet(AnyObject):
                 | 
                 |          MySheet.Activate
 
-        :return: None
         :rtype: None
         """
         return self.layout_2d_sheet.Activate()
@@ -403,7 +391,6 @@ class Layout2DSheet(AnyObject):
                 | 
                 |          IsDetail = MySheet.IsDetail
 
-        :return: bool
         :rtype: bool
         """
         return self.layout_2d_sheet.IsDetail()
@@ -433,7 +420,6 @@ class Layout2DSheet(AnyObject):
                 |                  catRenderShadingWithEdges
 
         :param int i_rendering_mode:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_sheet.PrintOut(i_rendering_mode)
@@ -457,7 +443,6 @@ class Layout2DSheet(AnyObject):
                 | 
                 |          Layout2DSheet1.PrintOut2
 
-        :return: None
         :rtype: None
         """
         return self.layout_2d_sheet.PrintOut2()
@@ -490,7 +475,6 @@ class Layout2DSheet(AnyObject):
 
         :param str file_name:
         :param int i_rendering_mode:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_sheet.PrintToFile(file_name, i_rendering_mode)
@@ -519,7 +503,6 @@ class Layout2DSheet(AnyObject):
                 |          Layout2DSheet1.PrintToFile2 "e:\temp\sheet1.prn"
 
         :param str file_name:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_sheet.PrintToFile2(file_name)
@@ -554,7 +537,6 @@ class Layout2DSheet(AnyObject):
                 |          drwviewsorder.reorder_Views(newvieworder)
 
         :param tuple i_ordered_views:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_sheet.reorder_Views(i_ordered_views)

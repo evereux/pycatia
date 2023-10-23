@@ -70,7 +70,6 @@ class HybridShapeAssemble(HybridShape):
                 | 
                 |          HybShpAssemble.Invert = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -112,7 +111,6 @@ class HybridShapeAssemble(HybridShape):
                 |      HybridShapeAssemble.AddElement iElement
 
         :param Reference i_element:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_assemble.AddElement(i_element.com_object)
@@ -150,7 +148,6 @@ class HybridShapeAssemble(HybridShape):
                 |             object.
 
         :param Reference i_sub_element:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_assemble.AddSubElement(i_sub_element.com_object)
@@ -189,7 +186,6 @@ class HybridShapeAssemble(HybridShape):
                 |         Reference
 
         :param Reference i_element:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_assemble.AppendFederatedElement(i_element.com_object)
@@ -224,7 +220,6 @@ class HybridShapeAssemble(HybridShape):
                 |         oValue
                 |             The angular tolerance.
 
-        :return: float
         :rtype: float
         """
         return self.hybrid_shape_assemble.GetAngularTolerance()
@@ -244,7 +239,6 @@ class HybridShapeAssemble(HybridShape):
                 |         oValue
                 |             The angular tolerance mode.
 
-        :return: bool
         :rtype: bool
         """
         return self.hybrid_shape_assemble.GetAngularToleranceMode()
@@ -263,7 +257,6 @@ class HybridShapeAssemble(HybridShape):
                 | 
                 |         oConnex
 
-        :return: bool
         :rtype: bool
         """
         return self.hybrid_shape_assemble.GetConnex()
@@ -283,7 +276,6 @@ class HybridShapeAssemble(HybridShape):
                 |         odeviation
                 |             The deviation.
 
-        :return: float
         :rtype: float
         """
         return self.hybrid_shape_assemble.GetDeviation()
@@ -312,7 +304,6 @@ class HybridShapeAssemble(HybridShape):
                 |          Set oElement = HybridShapeAssemble.GetElement (iRank).
 
         :param int i_rank:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_assemble.GetElement(i_rank))
@@ -340,7 +331,6 @@ class HybridShapeAssemble(HybridShape):
                 |                  Dim oSize As  long
                 |                  oSize = HybShpAssemble.GetElementsSize
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_assemble.GetElementsSize()
@@ -367,7 +357,6 @@ class HybridShapeAssemble(HybridShape):
                 |         Reference
 
         :param int i_rank:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_assemble.GetFederatedElement(i_rank))
@@ -387,7 +376,6 @@ class HybridShapeAssemble(HybridShape):
                 |         Size
                 |             Number of elements.
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_assemble.GetFederatedElementsSize()
@@ -408,7 +396,6 @@ class HybridShapeAssemble(HybridShape):
                 |             type of propagation (0: No, 1: All, 2: Continuity,
                 |             3:Tangency).
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_assemble.GetFederationPropagation()
@@ -427,7 +414,6 @@ class HybridShapeAssemble(HybridShape):
                 | 
                 |         oManifold
 
-        :return: bool
         :rtype: bool
         """
         return self.hybrid_shape_assemble.GetManifold()
@@ -446,7 +432,6 @@ class HybridShapeAssemble(HybridShape):
                 | 
                 |         oSimplify
 
-        :return: bool
         :rtype: bool
         """
         return self.hybrid_shape_assemble.GetSimplify()
@@ -468,7 +453,6 @@ class HybridShapeAssemble(HybridShape):
                 |             The rank of the subelement to read.
 
         :param int i_rank:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_assemble.GetSubElement(i_rank))
@@ -496,7 +480,6 @@ class HybridShapeAssemble(HybridShape):
                 |                  Dim oSize As  long
                 |                  oSize = HybShpAssemble.GetSubElementsSize
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_assemble.GetSubElementsSize()
@@ -515,7 +498,6 @@ class HybridShapeAssemble(HybridShape):
                 | 
                 |         oSuppressMode
 
-        :return: bool
         :rtype: bool
         """
         return self.hybrid_shape_assemble.GetSuppressMode()
@@ -534,7 +516,6 @@ class HybridShapeAssemble(HybridShape):
                 | 
                 |         oTangencyContinuity
 
-        :return: bool
         :rtype: bool
         """
         return self.hybrid_shape_assemble.GetTangencyContinuity()
@@ -562,7 +543,6 @@ class HybridShapeAssemble(HybridShape):
                 |          HybridShapeAssemble.RemoveElement iRank.
 
         :param int i_rank:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_assemble.RemoveElement(i_rank)
@@ -583,7 +563,6 @@ class HybridShapeAssemble(HybridShape):
                 |             Position of the element to remove.
 
         :param int i_rank:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_assemble.RemoveFederatedElement(i_rank)
@@ -605,7 +584,6 @@ class HybridShapeAssemble(HybridShape):
                 |             The rank of the element to remove.
 
         :param int i_rank:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_assemble.RemoveSubElement(i_rank)
@@ -637,7 +615,6 @@ class HybridShapeAssemble(HybridShape):
 
         :param int i_pos:
         :param Reference i_element:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_assemble.ReplaceElement(i_pos, i_element.com_object)
@@ -673,7 +650,6 @@ class HybridShapeAssemble(HybridShape):
                 |             The angular tolerance.
 
         :param float i_value:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_assemble.SetAngularTolerance(i_value)
@@ -694,7 +670,6 @@ class HybridShapeAssemble(HybridShape):
                 |             The angular tolerance mode.
 
         :param bool i_value:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_assemble.SetAngularToleranceMode(i_value)
@@ -729,7 +704,6 @@ class HybridShapeAssemble(HybridShape):
                 |         iConnex
 
         :param bool i_connex:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_assemble.SetConnex(i_connex)
@@ -765,7 +739,6 @@ class HybridShapeAssemble(HybridShape):
                 |             The deviation.
 
         :param float ideviation:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_assemble.SetDeviation(ideviation)
@@ -787,7 +760,6 @@ class HybridShapeAssemble(HybridShape):
                 |             3:Tangency).
 
         :param int i_mode:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_assemble.SetFederationPropagation(i_mode)
@@ -807,7 +779,6 @@ class HybridShapeAssemble(HybridShape):
                 |         iManifold
 
         :param bool i_manifold:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_assemble.SetManifold(i_manifold)
@@ -842,7 +813,6 @@ class HybridShapeAssemble(HybridShape):
                 |         iSimplify
 
         :param bool i_simplify:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_assemble.SetSimplify(i_simplify)
@@ -877,7 +847,6 @@ class HybridShapeAssemble(HybridShape):
                 |         iSuppressMode
 
         :param bool i_suppress_mode:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_assemble.SetSuppressMode(i_suppress_mode)
@@ -912,7 +881,6 @@ class HybridShapeAssemble(HybridShape):
                 |         iTangencyContinuity
 
         :param bool i_tangency_continuity:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_assemble.SetTangencyContinuity(i_tangency_continuity)

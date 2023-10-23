@@ -74,7 +74,6 @@ class SchRoute(AnyObject):
         :param SchGRRRoute i_grr:
         :param tuple i_l_db2_pt_path_to_add:
         :param int i_after_which_pt_num:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_route.AddPoints(i_grr.com_object, i_l_db2_pt_path_to_add, i_after_which_pt_num)
@@ -146,7 +145,6 @@ class SchRoute(AnyObject):
         :param SchAppConnector i_sch_branch_route_cntr:
         :param SchAppConnection o_branch_cntn:
         :param SchAppConnector o_new_branch_cntr:
-        :return: None
         :rtype: None
         """
         return self.sch_route.Branch(
@@ -223,7 +221,6 @@ class SchRoute(AnyObject):
         :param tuple i_db2_pt1:
         :param tuple i_db2_pt2:
         :param SchRoute o_new_sch_route:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_route.Break(i_grr.com_object, i_db2_pt1, i_db2_pt2, o_new_sch_route.com_object)
@@ -260,7 +257,6 @@ class SchRoute(AnyObject):
                 |           ...
                 |          objThisIntf.Compress
 
-        :return: None
         :rtype: None
         """
         return self.sch_route.Compress()
@@ -307,7 +303,6 @@ class SchRoute(AnyObject):
         :param SchAppConnector i_sch_route1_cntr:
         :param SchRoute i_sch_route2:
         :param SchAppConnector i_sch_route2_cntr:
-        :return: None
         :rtype: None
         """
         return self.sch_route.Concatenate(
@@ -373,7 +368,6 @@ class SchRoute(AnyObject):
         :param SchAppConnector i_sch_route1_cntr:
         :param SchRoute i_sch_route2:
         :param SchAppConnector i_sch_route2_cntr:
-        :return: None
         :rtype: None
         """
         return self.sch_route.ConcatenateKeepRoute2(
@@ -436,7 +430,6 @@ class SchRoute(AnyObject):
         :param SchGRRRoute i_grr:
         :param SchAppConnector o_route_cntr1:
         :param SchAppConnector o_route_cntr2:
-        :return: None
         :rtype: None
         """
         return self.sch_route.GetExtremityCntrs(i_grr.com_object, o_route_cntr1.com_object, o_route_cntr2.com_object)
@@ -485,7 +478,6 @@ class SchRoute(AnyObject):
 
         :param SchGRRRoute i_grr:
         :param SchListOfDoubles o_l_db2_pt_path:
-        :return: None
         :rtype: None
         """
         return self.sch_route.GetPath(i_grr.com_object, o_l_db2_pt_path.com_object)
@@ -539,7 +531,6 @@ class SchRoute(AnyObject):
         :param SchGRRRoute i_grr:
         :param str i_branch_class_type:
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_route.OKToBranch(i_grr.com_object, i_branch_class_type, o_b_yes)
@@ -588,7 +579,6 @@ class SchRoute(AnyObject):
 
         :param SchGRRRoute i_grr:
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_route.OKToBreak(i_grr.com_object, o_b_yes)
@@ -637,7 +627,6 @@ class SchRoute(AnyObject):
 
         :param SchGRRRoute i_grr:
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_route.OKToConcatenate(i_grr.com_object, o_b_yes)
@@ -687,7 +676,6 @@ class SchRoute(AnyObject):
 
         :param SchGRRRoute i_grr:
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_route.OKToModifyPoints(i_grr.com_object, o_b_yes)
@@ -743,7 +731,6 @@ class SchRoute(AnyObject):
         :param SchGRRRoute i_grr:
         :param int i_num_of_pts_to_remove:
         :param int i_after_which_pt_num:
-        :return: None
         :rtype: None
         """
         return self.sch_route.RemovePoints(i_grr.com_object, i_num_of_pts_to_remove, i_after_which_pt_num)
@@ -798,7 +785,6 @@ class SchRoute(AnyObject):
         :param SchGRRRoute i_grr:
         :param SchAppConnector i_route_cntr:
         :param tuple i_db2_delta_xy:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_route.ReshapeExtremity(i_grr.com_object, i_route_cntr.com_object, i_db2_delta_xy)
@@ -865,7 +851,6 @@ class SchRoute(AnyObject):
         :param SchGRRRoute i_grr:
         :param SchAppConnector i_route_cntr:
         :param tuple i_db2_pt_to_move_cntr_to:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_route.ReshapeExtremity2(
@@ -919,7 +904,6 @@ class SchRoute(AnyObject):
 
         :param SchGRRRoute i_grr:
         :param tuple i_l_db2_pt_path:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_route.SetPath(i_grr.com_object, i_l_db2_pt_path)

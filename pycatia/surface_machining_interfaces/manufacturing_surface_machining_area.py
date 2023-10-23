@@ -69,7 +69,6 @@ class ManufacturingSurfaceMachiningArea(ManufacturingMachinableArea):
                 |          Call CurrentSMA.RemoveNCGeometry("Parts")
 
         :param str i_geometry_type:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_surface_machining_area.RemoveNCGeometry(i_geometry_type)
@@ -109,7 +108,6 @@ class ManufacturingSurfaceMachiningArea(ManufacturingMachinableArea):
 
         :param str i_geometry_type:
         :param AnyObject i_nc_geometry:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_surface_machining_area.SetNCGeometry(i_geometry_type, i_nc_geometry.com_object)

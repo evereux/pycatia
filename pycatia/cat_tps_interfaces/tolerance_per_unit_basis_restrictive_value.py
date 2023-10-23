@@ -53,7 +53,6 @@ class TolerancePerUnitBasisRestrictiveValue(AnyObject):
                 |         oValue
                 |             Positive or equal to -1 which means not valuated.
 
-        :return: float
         :rtype: float
         """
 

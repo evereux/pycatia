@@ -56,7 +56,6 @@ class SewSurface(SurfaceBasedShape):
                 |      Dim DeviationValue As double
                 |      Set DeviationValue = Sew.MaximumDeviationValue
 
-        :return: float
         :rtype: float
         """
 
@@ -102,7 +101,6 @@ class SewSurface(SurfaceBasedShape):
                 |          Dim oMode
                 |          Set oMode = Sew.DeviationMode
 
-        :return: int
         :rtype: int
         """
 
@@ -137,7 +135,6 @@ class SewSurface(SurfaceBasedShape):
                 |          Set sptSide = mySew.SewingSide
                 |          mySew.SewingSide = catPositiveSide
 
-        :return: int
         :rtype: int
         """
 
@@ -171,7 +168,6 @@ class SewSurface(SurfaceBasedShape):
                 |          Set sptSide = mySew.SewingSide
                 |          mySew.SewingSide = catPositiveSide
 
-        :return: int
         :rtype: int
         """
 
@@ -203,7 +199,6 @@ class SewSurface(SurfaceBasedShape):
                 |         Reference for more information)
 
         :param Reference i_support_surface:
-        :return: None
         :rtype: None
         """
         return self.sew_surface.SetSurfaceSupport(i_support_surface.com_object)
@@ -248,7 +243,6 @@ class SewSurface(SurfaceBasedShape):
                 |              firstSewSurface.SetVolumeSupport volumeExtrudeRef
 
         :param Reference i_volume:
-        :return: None
         :rtype: None
         """
         return self.sew_surface.SetVolumeSupport(i_volume.com_object)

@@ -46,7 +46,6 @@ class DimensionPattern(AnyObject):
                 | 
                 |     Get count of instances.
 
-        :return: float
         :rtype: float
         """
 

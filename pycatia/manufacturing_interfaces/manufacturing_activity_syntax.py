@@ -47,7 +47,6 @@ class ManufacturingActivitySyntax(AnyObject):
                 |     Returns:
                 |         S_OK when the method succeeds, and E_FAIL otherwise
 
-        :return: None
         :rtype: None
         """
         return self.manufacturing_activity_syntax.ResetPPWORDSyntax()
@@ -70,7 +69,6 @@ class ManufacturingActivitySyntax(AnyObject):
                 |             The user PP words syntax to set
 
         :param str i_ppwords:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_activity_syntax.SetPPWORDSyntax(i_ppwords)

@@ -65,7 +65,6 @@ class CircPattern(Pattern):
                 | 
                 |          Set AngularDirPos = firstPattern.AngularDirectionRow
 
-        :return: IntParam
         :rtype: IntParam
         """
 
@@ -90,7 +89,6 @@ class CircPattern(Pattern):
                 | 
                 |          Set repartA = firstPattern.AngularRepartition
 
-        :return: AngularRepartition
         :rtype: AngularRepartition
         """
 
@@ -119,7 +117,6 @@ class CircPattern(Pattern):
                 |          Set parameters = firstPattern.CircularPatternParameters
                 |          Set firstPattern.CircularPatternParameters = catCompleteCrown
 
-        :return: int
         :rtype: int
         """
 
@@ -154,7 +151,6 @@ class CircPattern(Pattern):
                 |          Set alignedR = firstPattern.RadialAlignment
                 |          firstPattern.RadialAlignment = False
 
-        :return: bool
         :rtype: bool
         """
 
@@ -186,7 +182,6 @@ class CircPattern(Pattern):
                 | 
                 |          Set RadialDirPos = firstPattern.RadialDirectionRow
 
-        :return: IntParam
         :rtype: IntParam
         """
 
@@ -211,7 +206,6 @@ class CircPattern(Pattern):
                 | 
                 |          Set repartR = firstPattern.RadialRepartition
 
-        :return: LinearRepartition
         :rtype: LinearRepartition
         """
 
@@ -239,7 +233,6 @@ class CircPattern(Pattern):
                 |          alignedAxis = firstPattern.RotationOrientation
                 |          firstPattern.RotationOrientation = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -278,7 +271,6 @@ class CircPattern(Pattern):
                 |          Set z = axisArray[2]
 
         :param tuple io_rotation_axis:
-        :return: None
         :rtype: None
         """
         return self.circ_pattern.GetRotationAxis(io_rotation_axis)
@@ -326,7 +318,6 @@ class CircPattern(Pattern):
                 |          z = centerArray[2]
 
         :param tuple io_rotation_center:
-        :return: None
         :rtype: None
         """
         return self.circ_pattern.GetRotationCenter(io_rotation_center)
@@ -370,7 +361,6 @@ class CircPattern(Pattern):
 
         :param int i_instance_number:
         :param float i_angular_spacing:
-        :return: None
         :rtype: None
         """
         return self.circ_pattern.SetInstanceAngularSpacing(i_instance_number, i_angular_spacing)
@@ -404,7 +394,6 @@ class CircPattern(Pattern):
                 |      firstPattern.SetRotationAxis refLine1
 
         :param Reference i_rotation_axis:
-        :return: None
         :rtype: None
         """
         return self.circ_pattern.SetRotationAxis(i_rotation_axis.com_object)
@@ -446,7 +435,6 @@ class CircPattern(Pattern):
                 |          firstPattern.SetRotationCenter point1Ref
 
         :param Reference i_rotation_center:
-        :return: None
         :rtype: None
         """
         return self.circ_pattern.SetRotationCenter(i_rotation_center.com_object)
@@ -486,7 +474,6 @@ class CircPattern(Pattern):
                 |         spacing
 
         :param int i_instance_number:
-        :return: None
         :rtype: None
         """
         return self.circ_pattern.SetUnequalInstanceNumber(i_instance_number)
@@ -511,7 +498,6 @@ class CircPattern(Pattern):
                 |         pattern object
 
         :param int i_instance_number:
-        :return: None
         :rtype: None
         """
         return self.circ_pattern.SetUnequalStep(i_instance_number)

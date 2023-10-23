@@ -54,7 +54,6 @@ class HybridShape3DCurveOffset(HybridShape):
                 | 
                 |     Returns or sets the Corner Radius Value.
 
-        :return: Length
         :rtype: Length
         """
 
@@ -79,7 +78,6 @@ class HybridShape3DCurveOffset(HybridShape):
                 | 
                 |     Returns or sets the Corner Tension Value.
 
-        :return: float
         :rtype: float
         """
 
@@ -104,7 +102,6 @@ class HybridShape3DCurveOffset(HybridShape):
                 | 
                 |     Returns or sets the curve to offset.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -129,7 +126,6 @@ class HybridShape3DCurveOffset(HybridShape):
                 | 
                 |     Returns or sets the direction.
 
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
 
@@ -154,7 +150,6 @@ class HybridShape3DCurveOffset(HybridShape):
                 | 
                 |     Returns or sets the direction orientation.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -179,7 +174,6 @@ class HybridShape3DCurveOffset(HybridShape):
                 | 
                 |     Returns or sets the OffsetValue.
 
-        :return: Length
         :rtype: Length
         """
 

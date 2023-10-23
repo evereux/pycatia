@@ -52,7 +52,6 @@ class ManufacturingMachine(AnyObject):
                 | 
                 |          MachineComment = CurrentMachine.Comment
 
-        :return: str
         :rtype: str
         """
 
@@ -75,7 +74,6 @@ class ManufacturingMachine(AnyObject):
                 | 
                 |          MachineType = CurrentMachine.Type
 
-        :return: str
         :rtype: str
         """
 
@@ -98,7 +96,6 @@ class ManufacturingMachine(AnyObject):
                 | 
                 |          Number = CurrentMachine.NumberOfAttributes
 
-        :return: int
         :rtype: int
         """
 
@@ -117,7 +114,6 @@ class ManufacturingMachine(AnyObject):
                 |     This property returns the number of Numerical Control attributes of a
                 |     Manufacturing Machine.
 
-        :return: int
         :rtype: int
         """
 
@@ -137,7 +133,6 @@ class ManufacturingMachine(AnyObject):
                 |     Manufacturing Machine. The machine is upposed to accept Rotary table (type is
                 |     Mfg3AxisWithTableRotationMachine).
 
-        :return: int
         :rtype: int
         """
 
@@ -155,7 +150,6 @@ class ManufacturingMachine(AnyObject):
                 |     This property returns the number of Spindle attributes of a Manufacturing
                 |     Machine.
 
-        :return: int
         :rtype: int
         """
 
@@ -174,7 +168,6 @@ class ManufacturingMachine(AnyObject):
                 |     This property returns the number of Tool change attributes of a
                 |     Manufacturing Machine.
 
-        :return: int
         :rtype: int
         """
 
@@ -197,7 +190,6 @@ class ManufacturingMachine(AnyObject):
                 | 
                 |          Set ThisPPTable = CurrentMachine.PPTableName
 
-        :return: str
         :rtype: str
         """
 
@@ -223,7 +215,6 @@ class ManufacturingMachine(AnyObject):
                 |     This property returns the post processor file of a Manufacturing Machine
                 |     Machine.PostProcessorFile
 
-        :return: str
         :rtype: str
         """
 
@@ -255,7 +246,6 @@ class ManufacturingMachine(AnyObject):
                 | 
                 |          Set ThisCatalog = CurrentMachine.PreferedToolCatalogName
 
-        :return: str
         :rtype: str
         """
 
@@ -286,7 +276,6 @@ class ManufacturingMachine(AnyObject):
                 | 
                 |          Set ThisAxis = CurrentMachine.RotaryAxis
 
-        :return: str
         :rtype: str
         """
 
@@ -316,7 +305,6 @@ class ManufacturingMachine(AnyObject):
                 | 
                 |          MachineType = CurrentMachine.Type
 
-        :return: str
         :rtype: str
         """
         return self.manufacturing_machine.DefaultName()
@@ -338,7 +326,6 @@ class ManufacturingMachine(AnyObject):
                 |           Set HomePosX = MyMachine.GetAttribute(MFG_HOME_POS_X)
 
         :param str i_attribute:
-        :return: Parameter
         :rtype: Parameter
         """
         return Parameter(self.manufacturing_machine.GetAttribute(i_attribute))
@@ -355,7 +342,6 @@ class ManufacturingMachine(AnyObject):
                 |     Machine.
 
         :param str i_attribute_name:
-        :return: str
         :rtype: str
         """
         return self.manufacturing_machine.GetAttributeNLSName(i_attribute_name)
@@ -384,7 +370,6 @@ class ManufacturingMachine(AnyObject):
                 |          call CurrentMachine.GetListOfAttributeUnits(TabAttributeUnits)
 
         :param tuple o_list_of_attribute_units:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_machine.GetListOfAttributeUnits(o_list_of_attribute_units)
@@ -425,7 +410,6 @@ class ManufacturingMachine(AnyObject):
                 |          CurrentMachine.GetListOfAttributes(TabAttributes)
 
         :param tuple o_list_of_attributes:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_machine.GetListOfAttributes(o_list_of_attributes)
@@ -466,7 +450,6 @@ class ManufacturingMachine(AnyObject):
                 |          call myMachine.GetListOfNumericalControlAttributes(oListOfAttributes)
 
         :param tuple o_list_of_attributes:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_machine.GetListOfNumericalControlAttributes(o_list_of_attributes)
@@ -507,7 +490,6 @@ class ManufacturingMachine(AnyObject):
                 |          call myMachine.GetListOfRotaryTableAttributes(oListOfAttributes)
 
         :param tuple o_list_of_attributes:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_machine.GetListOfRotaryTableAttributes(o_list_of_attributes)
@@ -548,7 +530,6 @@ class ManufacturingMachine(AnyObject):
                 |          call myMachine.GetListOfSpindleAttributes(oListOfAttributes)
 
         :param tuple o_list_of_attributes:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_machine.GetListOfSpindleAttributes(o_list_of_attributes)
@@ -589,7 +570,6 @@ class ManufacturingMachine(AnyObject):
                 |          call myMachine.GetListOfToolChangeAttributes(oListOfAttributes)
 
         :param tuple o_list_of_attributes:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_machine.GetListOfToolChangeAttributes(o_list_of_attributes)
@@ -625,7 +605,6 @@ class ManufacturingMachine(AnyObject):
                 | 
                 |          call ThisMachine.set_DefaultValues
 
-        :return: None
         :rtype: None
         """
         return self.manufacturing_machine.set_DefaultValues()

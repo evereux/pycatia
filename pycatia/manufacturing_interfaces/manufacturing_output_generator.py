@@ -45,7 +45,6 @@ class ManufacturingOutputGenerator(AnyObject):
                 |     Management of specific buffer for aligned points elimination.
 
         :param int o_add_me:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_output_generator.AddMeToBuffer(o_add_me)
@@ -61,7 +60,6 @@ class ManufacturingOutputGenerator(AnyObject):
                 |     Return the Output Code for an object in the right CNC Machine.
 
         :param ManufacturingGeneratorData i_data:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_output_generator.GenerateOutputCode(i_data.com_object)
@@ -94,7 +92,6 @@ class ManufacturingOutputGenerator(AnyObject):
 
         :param ManufacturingGeneratorData i_data:
         :param str o_code:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_output_generator.GetAPTCode(i_data.com_object, o_code)
@@ -125,7 +122,6 @@ class ManufacturingOutputGenerator(AnyObject):
                 |     Get current object from buffer.
 
         :param int o_current_object:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_output_generator.GetCurrentObject(o_current_object)
@@ -141,7 +137,6 @@ class ManufacturingOutputGenerator(AnyObject):
                 |     Return the characteristic of an object : Reset or not Modal Values.
 
         :param int o_is_modal:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_output_generator.HasToResetModalValues(o_is_modal)
@@ -173,7 +168,6 @@ class ManufacturingOutputGenerator(AnyObject):
         :param str i_format:
         :param str i_file_name:
         :param ManufacturingGeneratorData o_data:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_output_generator.InitFileGenerator(i_format, i_file_name, o_data.com_object)
@@ -204,7 +198,6 @@ class ManufacturingOutputGenerator(AnyObject):
                 |     Return the characteristic of an object : Modal or Not Modal.
 
         :param int o_is_modal:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_output_generator.IsModal(o_is_modal)
@@ -222,7 +215,6 @@ class ManufacturingOutputGenerator(AnyObject):
                 |     The result depends on the tolerance on the values (to points)
 
         :param ManufacturingOutputGenerator i_object:
-        :return: int
         :rtype: int
         """
         return self.manufacturing_output_generator.IsSimilarTo(i_object.com_object)
@@ -246,7 +238,6 @@ class ManufacturingOutputGenerator(AnyObject):
                 |             code
 
         :param ManufacturingGeneratorData i_data:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_output_generator.RunFileGenerator(i_data.com_object)
@@ -277,7 +268,6 @@ class ManufacturingOutputGenerator(AnyObject):
                 |     Set current object to buffer.
 
         :param int i_current_object:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_output_generator.SetCurrentObject(i_current_object)

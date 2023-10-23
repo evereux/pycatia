@@ -65,7 +65,6 @@ class IntParam(Parameter):
                 |              Length.RangeMax = 0.0
                 |          End If
 
-        :return: int
         :rtype: int
         """
 
@@ -98,7 +97,6 @@ class IntParam(Parameter):
                 |     2
                 |         the upper bound cannot be reached
 
-        :return: int
         :rtype: int
         """
 
@@ -133,7 +131,6 @@ class IntParam(Parameter):
                 |              Length.RangeMin = 0.0
                 |          End If
 
-        :return: int
         :rtype: int
         """
 
@@ -166,7 +163,6 @@ class IntParam(Parameter):
                 |     2
                 |         the lower bound cannot be reached
 
-        :return: int
         :rtype: int
         """
 
@@ -200,7 +196,6 @@ class IntParam(Parameter):
                 |              year.Value = 0
                 |          End If
 
-        :return: int
         :rtype: int
         """
 
@@ -236,7 +231,6 @@ class IntParam(Parameter):
                 |          Next
 
         :param tuple o_safe_array:
-        :return: None
         :rtype: None
         """
         return self.int_param.GetEnumerateValues(o_safe_array)
@@ -266,7 +260,6 @@ class IntParam(Parameter):
                 | 
                 |     Returns the number of enumerate values.
 
-        :return: int
         :rtype: int
         """
         return self.int_param.GetEnumerateValuesSize()
@@ -283,7 +276,6 @@ class IntParam(Parameter):
                 |     in the case of multiple values.
 
         :param tuple i_safe_array:
-        :return: None
         :rtype: None
         """
         return self.int_param.SetEnumerateValues(i_safe_array)
@@ -313,7 +305,6 @@ class IntParam(Parameter):
                 | 
                 |     Resets the status of the object to a single value object.
 
-        :return: None
         :rtype: None
         """
         return self.int_param.SuppressEnumerateValues()

@@ -77,7 +77,6 @@ class SchComponent(AnyObject):
         :param SchGRRComp i_grr:
         :param tuple i_db6_axis:
         :param SchComponent o_new_component:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_component.CreateComponentInst(i_grr.com_object, i_db6_axis, o_new_component.com_object)
@@ -127,7 +126,6 @@ class SchComponent(AnyObject):
                 |          Set objArg2 = objThisIntf.CreateLocalReference(objArg1)
 
         :param Document i_document_to_put_copy_in:
-        :return: SchComponent
         :rtype: SchComponent
         """
         return SchComponent(self.sch_component.CreateLocalReference(i_document_to_put_copy_in.com_object))
@@ -161,7 +159,6 @@ class SchComponent(AnyObject):
                 |          objThisIntf.FlipConnectedobjArg1
 
         :param SchGRRComp i_grr:
-        :return: None
         :rtype: None
         """
         return self.sch_component.FlipConnected(i_grr.com_object)
@@ -207,7 +204,6 @@ class SchComponent(AnyObject):
                 |          objThisIntf.FlipHorizontalobjArg1
 
         :param SchGRRComp i_grr:
-        :return: None
         :rtype: None
         """
         return self.sch_component.FlipHorizontal(i_grr.com_object)
@@ -255,7 +251,6 @@ class SchComponent(AnyObject):
                 |          objThisIntf.FlipOnLineobjArg1
 
         :param SchGRRComp i_grr:
-        :return: None
         :rtype: None
         """
         return self.sch_component.FlipOnLine(i_grr.com_object)
@@ -301,7 +296,6 @@ class SchComponent(AnyObject):
                 |          objThisIntf.FlipVerticalobjArg1
 
         :param SchGRRComp i_grr:
-        :return: None
         :rtype: None
         """
         return self.sch_component.FlipVertical(i_grr.com_object)
@@ -365,7 +359,6 @@ class SchComponent(AnyObject):
         :param AnyObject i_insert_info:
         :param SchComponent o_new_component:
         :param SchRoute o_new_route:
-        :return: None
         :rtype: None
         """
         return self.sch_component.InsertIntoRouteWithInfo(
@@ -413,7 +406,6 @@ class SchComponent(AnyObject):
                 |          objThisIntf.IsAReferencebVar1
 
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_component.IsAReference(o_b_yes)
@@ -462,7 +454,6 @@ class SchComponent(AnyObject):
 
         :param SchGRRComp i_grr:
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_component.IsInserted(i_grr.com_object, o_b_yes)
@@ -512,7 +503,6 @@ class SchComponent(AnyObject):
 
         :param SchGRRComp i_grr:
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_component.OKToFlipConnected(i_grr.com_object, o_b_yes)
@@ -562,7 +552,6 @@ class SchComponent(AnyObject):
 
         :param SchGRRComp i_grr:
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_component.OKToFlipHorizontal(i_grr.com_object, o_b_yes)
@@ -629,7 +618,6 @@ class SchComponent(AnyObject):
         :param bool o_b_yes:
         :param SchListOfDoubles o_db2_line_pt:
         :param SchListOfDoubles o_db2_line_vec:
-        :return: None
         :rtype: None
         """
         return self.sch_component.OKToFlipOnLine(
@@ -684,7 +672,6 @@ class SchComponent(AnyObject):
 
         :param SchGRRComp i_grr:
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_component.OKToFlipVertical(i_grr.com_object, o_b_yes)
@@ -733,7 +720,6 @@ class SchComponent(AnyObject):
 
         :param SchGRRComp i_grr:
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_component.OKToPlaceInSpace(i_grr.com_object, o_b_yes)
@@ -782,7 +768,6 @@ class SchComponent(AnyObject):
 
         :param SchGRRComp i_grr:
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_component.OKToScale(i_grr.com_object, o_b_yes)
@@ -831,7 +816,6 @@ class SchComponent(AnyObject):
 
         :param SchGRRComp i_grr:
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_component.OKToSlide(i_grr.com_object, o_b_yes)
@@ -880,7 +864,6 @@ class SchComponent(AnyObject):
 
         :param SchGRRComp i_grr:
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_component.OKToUninsert(i_grr.com_object, o_b_yes)
@@ -940,7 +923,6 @@ class SchComponent(AnyObject):
         :param SchGRRComp i_grr:
         :param tuple i_db6_axis:
         :param SchComponent o_new_component:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_component.PlaceInSpace(i_grr.com_object, i_db6_axis, o_new_component.com_object)
@@ -991,7 +973,6 @@ class SchComponent(AnyObject):
                 |          Set objArg2 = objThisIntf.PlaceOnComponentWithInfo(objArg1)
 
         :param AnyObject i_place_info:
-        :return: SchComponent
         :rtype: SchComponent
         """
         return SchComponent(self.sch_component.PlaceOnComponentWithInfo(i_place_info.com_object))
@@ -1046,7 +1027,6 @@ class SchComponent(AnyObject):
         :param tuple i_db6_axis:
         :param SchAppConnectable i_object_to_connect:
         :param SchComponent o_new_component:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_component.PlaceOnObject(
@@ -1100,7 +1080,6 @@ class SchComponent(AnyObject):
                 |          Set objArg2 = objThisIntf.QueryConnectAbility(objArg1)
 
         :param SchGRRComp i_grr:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.sch_component.QueryConnectAbility(i_grr.com_object))
@@ -1135,7 +1114,6 @@ class SchComponent(AnyObject):
 
         :param SchGRRComp i_grr:
         :param tuple i_db2_pt_to_slide_to:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_component.Slide(i_grr.com_object, i_db2_pt_to_slide_to)
@@ -1180,7 +1158,6 @@ class SchComponent(AnyObject):
                 |          objThisIntf.UninsertobjArg1
 
         :param SchGRRComp i_grr:
-        :return: None
         :rtype: None
         """
         return self.sch_component.Uninsert(i_grr.com_object)

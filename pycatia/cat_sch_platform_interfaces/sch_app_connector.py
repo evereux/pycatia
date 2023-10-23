@@ -70,7 +70,6 @@ class SchAppConnector(AnyObject):
                 |          Set objArg2 = objThisIntf.AppConnect(objArg1)
 
         :param SchAppConnector i_cntr_to_connect:
-        :return: SchAppConnection
         :rtype: SchAppConnection
         """
 
@@ -104,7 +103,6 @@ class SchAppConnector(AnyObject):
                 |          Set objArg2 = objThisIntf.AppConnectBranch(objArg1)
 
         :param SchAppConnector i_cntr_to_connect:
-        :return: SchAppConnection
         :rtype: SchAppConnection
         """
 
@@ -136,7 +134,6 @@ class SchAppConnector(AnyObject):
                 |          objThisIntf.AppDisconnectobjArg1
 
         :param SchAppConnector i_cntr_to_dis_connect:
-        :return: None
         :rtype: None
         """
         return self.sch_app_connector.AppDisconnect(i_cntr_to_dis_connect.com_object)
@@ -181,7 +178,6 @@ class SchAppConnector(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.AppGetAssociatedConnectable
 
-        :return: SchAppConnectable
         :rtype: SchAppConnectable
         """
 
@@ -213,7 +209,6 @@ class SchAppConnector(AnyObject):
                 |          objThisIntf.AppIsCntrConnectedbVar1
 
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_app_connector.AppIsCntrConnected(o_b_yes)
@@ -259,7 +254,6 @@ class SchAppConnector(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.AppListCompatibleTypes
 
-        :return: SchListOfBSTRs
         :rtype: SchListOfBSTRs
         """
         return SchListOfBSTRs(self.sch_app_connector.AppListCompatibleTypes())
@@ -295,7 +289,6 @@ class SchAppConnector(AnyObject):
                 |          Set objArg2 = objThisIntf.AppListConnections(objArg1)
 
         :param SchListOfBSTRs i_l_cntn_class_filter:
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.sch_app_connector.AppListConnections(i_l_cntn_class_filter.com_object))
@@ -326,7 +319,6 @@ class SchAppConnector(AnyObject):
                 |          objThisIntf.AppOKToNoShowConnectedCntrbVar1
 
         :param bool o_b_yes:
-        :return: None
         :rtype: None
         """
         return self.sch_app_connector.AppOKToNoShowConnectedCntr(o_b_yes)

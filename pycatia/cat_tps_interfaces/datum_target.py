@@ -47,7 +47,6 @@ class DatumTarget(AnyObject):
                 | 
                 |     Retrieves simple datum, the target belongs to.
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -64,7 +63,6 @@ class DatumTarget(AnyObject):
                 | 
                 |     Retrieves Label.
 
-        :return: str
         :rtype: str
         """
 
@@ -98,7 +96,6 @@ class DatumTarget(AnyObject):
                 |         HRESULT S_OK:- the Area Form has been correctly retrieved. E_FAIL or E_NOIMPL : Area Form cannot be retrieved.
 
         :param str o_area_form:
-        :return: None
         :rtype: None
         """
         return self.datum_target.GetAreaForm(o_area_form)
@@ -122,7 +119,6 @@ class DatumTarget(AnyObject):
                 |         HRESULT S_OK:- the Area Size has been correctly retrieved. E_FAIL or E_NOIMPL : Area Size cannot be retrieved.
 
         :param float o_area_size:
-        :return: None
         :rtype: None
         """
         return self.datum_target.GetCircularAreaSize(o_area_size)
@@ -146,7 +142,6 @@ class DatumTarget(AnyObject):
                 |         HRESULT S_OK:- the movable direction has been correctly retrieved. E_FAIL or E_NOIMPL : movable direction cannot be retrieved.
 
         :param UserSurface op_direction_ttrs:
-        :return: None
         :rtype: None
         """
         return self.datum_target.GetMovableDirectionTTRS(op_direction_ttrs.com_object)
@@ -189,7 +184,6 @@ class DatumTarget(AnyObject):
 
         :param float o_length:
         :param float o_width:
-        :return: None
         :rtype: None
         """
         return self.datum_target.GetRectangularAreaSize(o_length, o_width)
@@ -214,7 +208,6 @@ class DatumTarget(AnyObject):
                 |         HRESULT S_OK:- the Area Form has been correctly set. E_FAIL or E_NOIMPL : Area Form cannot be set.
 
         :param str i_area_form:
-        :return: None
         :rtype: None
         """
         return self.datum_target.SetAreaForm(i_area_form)
@@ -238,7 +231,6 @@ class DatumTarget(AnyObject):
                 |         HRESULT S_OK:- the Area Size has been correctly set. E_FAIL or E_NOIMPL : Area Size cannot be set.
 
         :param float i_area_size:
-        :return: None
         :rtype: None
         """
         return self.datum_target.SetCircularAreaSize(i_area_size)
@@ -263,7 +255,6 @@ class DatumTarget(AnyObject):
                 |         HRESULT S_OK:- the movable direction has been correctly set. E_FAIL or E_NOIMPL : movable direction cannot be set.
 
         :param UserSurface ip_direction_ttrs:
-        :return: None
         :rtype: None
         """
         return self.datum_target.SetMovableDirectionTTRS(ip_direction_ttrs.com_object)
@@ -306,7 +297,6 @@ class DatumTarget(AnyObject):
 
         :param float i_length:
         :param float i_width:
-        :return: None
         :rtype: None
         """
         return self.datum_target.SetRectangularAreaSize(i_length, i_width)

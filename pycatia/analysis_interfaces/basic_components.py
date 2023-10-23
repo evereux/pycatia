@@ -64,7 +64,6 @@ class BasicComponents(Collection):
                 |         The retrieved Basic Component
 
         :param cat_variant i_variant:
-        :return: BasicComponent
         :rtype: BasicComponent
         """
         return BasicComponent(self.basic_components.Item(i_variant))

@@ -48,7 +48,6 @@ class ArrBomReport(AnyObject):
 
         :param Document i_document_to_extract_data:
         :param str i_output_file_name:
-        :return: None
         :rtype: None
         """
         return self.arr_bom_report.GenerateBOMReport(i_document_to_extract_data.com_object, i_output_file_name)

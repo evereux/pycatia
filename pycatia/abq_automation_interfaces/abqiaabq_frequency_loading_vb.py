@@ -49,7 +49,6 @@ class ABQIAABQFrequencyLoadingVB(ABQLoad):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property DOF() As double
 
-        :return: float
         :rtype: float
         """
 
@@ -72,7 +71,6 @@ class ABQIAABQFrequencyLoadingVB(ABQLoad):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property DataType() As boolean
 
-        :return: bool
         :rtype: bool
         """
 
@@ -96,7 +94,6 @@ class ABQIAABQFrequencyLoadingVB(ABQLoad):
                 | o Property FrequencyDataValues(CATSafeArrayVariant iFreqDataVal) (Write
                 | Only)
 
-        :return: int
         :rtype: int
         """
 
@@ -120,7 +117,6 @@ class ABQIAABQFrequencyLoadingVB(ABQLoad):
                 | o Property ImaginaryDataValues(CATSafeArrayVariant iImaginaryDataValues)
                 | (Write Only)
 
-        :return: int
         :rtype: int
         """
 
@@ -144,7 +140,6 @@ class ABQIAABQFrequencyLoadingVB(ABQLoad):
                 | o Property RealDataValues(CATSafeArrayVariant iRealDataVal) (Write
                 | Only)
 
-        :return: int
         :rtype: int
         """
 
@@ -167,7 +162,6 @@ class ABQIAABQFrequencyLoadingVB(ABQLoad):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property Scale() As double
 
-        :return: float
         :rtype: float
         """
 

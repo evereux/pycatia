@@ -52,7 +52,6 @@ class ProjectedToleranceZone(AnyObject):
                 |     length defines the ending point of the tolerance zone. This point can be
                 |     computed by using Origin and Direction of the axis.
 
-        :return: float
         :rtype: float
         """
 
@@ -71,7 +70,6 @@ class ProjectedToleranceZone(AnyObject):
                 |     position defines the starting point of the tolerance zone. This point can be
                 |     computed by using Origin and Direction of the axis.
 
-        :return: float
         :rtype: float
         """
 
@@ -108,7 +106,6 @@ class ProjectedToleranceZone(AnyObject):
                 |           oStream.Write "Projected Tol Zone Reference Vector : " & oTab(3) & " " & oTab(4) & " " & oTab(5) & sLF
 
         :param tuple op_reference:
-        :return: tuple
         :rtype: tuple
         """
         return self.projected_tolerance_zone.GetProjectedTolZoneReference(op_reference)

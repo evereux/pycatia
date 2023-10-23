@@ -74,7 +74,6 @@ class IgesSettingAtt(SettingController):
                 |             Legal values: value of angle in degree, between 0.0 and 10.0
                 |             deg.
 
-        :return: float
         :rtype: float
         """
 
@@ -108,7 +107,6 @@ class IgesSettingAtt(SettingController):
                 |             Legal values: 1 To Apply Join on faces, 0
                 |             otherwise.
 
-        :return: int
         :rtype: int
         """
 
@@ -141,7 +139,6 @@ class IgesSettingAtt(SettingController):
                 |             [out] The Author Name parameter value
                 |             Legal values: (any text).
 
-        :return: str
         :rtype: str
         """
 
@@ -175,7 +172,6 @@ class IgesSettingAtt(SettingController):
                 |             [out] The Author Organization parameter value
                 |             Legal values: (any text).
 
-        :return: str
         :rtype: str
         """
 
@@ -212,7 +208,6 @@ class IgesSettingAtt(SettingController):
                 |                 1 for BSpline mode : all curves and surfaces will be exported
                 |                                      as B-Spline curves and surfaces.
 
-        :return: int
         :rtype: int
         """
 
@@ -247,7 +242,6 @@ class IgesSettingAtt(SettingController):
                 |             Legal values: 1 to export solids and shells as 186/514 IGES
                 |             entities, 0 to export them as trimmed surfaces.
 
-        :return: int
         :rtype: int
         """
 
@@ -291,7 +285,6 @@ class IgesSettingAtt(SettingController):
                 |                 9 : Centimeters;
                 |                10 : Microinches.
 
-        :return: int
         :rtype: int
         """
 
@@ -328,7 +321,6 @@ class IgesSettingAtt(SettingController):
                 |                 1 To map IGES Groups as Selection Sets,
                 |                 0 otherwise.
 
-        :return: int
         :rtype: int
         """
 
@@ -363,7 +355,6 @@ class IgesSettingAtt(SettingController):
                 |             Legal values: 1 to export only visible elements, 0 to export
                 |             visible and invisible elements.
 
-        :return: int
         :rtype: int
         """
 
@@ -400,7 +391,6 @@ class IgesSettingAtt(SettingController):
                 |             default Optimize Continuity 2 to Enable Advanced Optimize
                 |             Continuity.
 
-        :return: int
         :rtype: int
         """
 
@@ -435,7 +425,6 @@ class IgesSettingAtt(SettingController):
                 |             Legal values: 0 to Disable the clean topo Mode, 1 to Enable the
                 |             clean topo Mode.
 
-        :return: int
         :rtype: int
         """
 
@@ -469,7 +458,6 @@ class IgesSettingAtt(SettingController):
                 |             Fitting Mode values: 0 to Disable the Fitting Mode, 1 to Enable the
                 |             Fitting Mode.
 
-        :return: int
         :rtype: int
         """
 
@@ -504,7 +492,6 @@ class IgesSettingAtt(SettingController):
                 |             Legal values: 0 to disable Invalid Geometry Checks, 1 to enable
                 |             it.
 
-        :return: int
         :rtype: int
         """
 
@@ -538,7 +525,6 @@ class IgesSettingAtt(SettingController):
                 |             Legal values: 0 to keep file preference, 1 to Force the use of 3D
                 |             representation.
 
-        :return: int
         :rtype: int
         """
 
@@ -573,7 +559,6 @@ class IgesSettingAtt(SettingController):
                 |             Legal values: 0 to import 308/408 in a CATPart, 1 to create a
                 |             Product Structure.
 
-        :return: int
         :rtype: int
         """
 
@@ -609,7 +594,6 @@ class IgesSettingAtt(SettingController):
                 |             Legal values: 1 to export surfaces as wireframes, 0
                 |             otherwise.
 
-        :return: int
         :rtype: int
         """
 
@@ -638,7 +622,6 @@ class IgesSettingAtt(SettingController):
                 |     of the Completion dialog box.
                 |     Legal values: 1 to show, and 0 to hide the Show/No Show dialog box.
 
-        :return: int
         :rtype: int
         """
 
@@ -673,7 +656,6 @@ class IgesSettingAtt(SettingController):
                 |             Legal values: Value of tolerance in mm, between 0.0 and 0.1
                 |             mm.
 
-        :return: float
         :rtype: float
         """
 
@@ -708,7 +690,6 @@ class IgesSettingAtt(SettingController):
                 |             Legal values: value of tolerance, in mm, between 0.5 and 20
                 |             mm.
 
-        :return: float
         :rtype: float
         """
 
@@ -744,7 +725,6 @@ class IgesSettingAtt(SettingController):
                 |             Legal values: value of tolerance in mm, between 0.0005 and 0.10
                 |             mm.
 
-        :return: float
         :rtype: float
         """
 
@@ -772,7 +752,6 @@ class IgesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.iges_setting_att.GetAngleInfo(io_admin_level, io_locked)
@@ -792,7 +771,6 @@ class IgesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.iges_setting_att.GetApplyJoinInfo(io_admin_level, io_locked)
@@ -812,7 +790,6 @@ class IgesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.iges_setting_att.GetAuthorNameInfo(io_admin_level, io_locked)
@@ -832,7 +809,6 @@ class IgesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.iges_setting_att.GetAuthorOrganizationInfo(io_admin_level, io_locked)
@@ -852,7 +828,6 @@ class IgesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.iges_setting_att.GetCrvModInfo(io_admin_level, io_locked)
@@ -872,7 +847,6 @@ class IgesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.iges_setting_att.GetExportMSBOInfo(io_admin_level, io_locked)
@@ -892,7 +866,6 @@ class IgesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.iges_setting_att.GetExportUnitInfo(io_admin_level, io_locked)
@@ -912,7 +885,6 @@ class IgesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.iges_setting_att.GetImportGroupAsSelSetInfo(io_admin_level, io_locked)
@@ -932,7 +904,6 @@ class IgesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.iges_setting_att.GetOnlyShowInfo(io_admin_level, io_locked)
@@ -952,7 +923,6 @@ class IgesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.iges_setting_att.GetOptC2ModeInfo(io_admin_level, io_locked)
@@ -972,7 +942,6 @@ class IgesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.iges_setting_att.GetOptCleanTopoModeInfo(io_admin_level, io_locked)
@@ -992,7 +961,6 @@ class IgesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.iges_setting_att.GetOptFittingModeInfo(io_admin_level, io_locked)
@@ -1012,7 +980,6 @@ class IgesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.iges_setting_att.GetOptInvalidGeomModeInfo(io_admin_level, io_locked)
@@ -1032,7 +999,6 @@ class IgesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.iges_setting_att.GetOptLoop3DModeInfo(io_admin_level, io_locked)
@@ -1052,7 +1018,6 @@ class IgesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.iges_setting_att.GetPartProdModeInfo(io_admin_level, io_locked)
@@ -1072,7 +1037,6 @@ class IgesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.iges_setting_att.GetRepModInfo(io_admin_level, io_locked)
@@ -1092,7 +1056,6 @@ class IgesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.iges_setting_att.GetShowCompletionDialogBoxInfo(io_admin_level, io_locked)
@@ -1112,7 +1075,6 @@ class IgesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.iges_setting_att.GetTolJoinInfo(io_admin_level, io_locked)
@@ -1132,7 +1094,6 @@ class IgesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.iges_setting_att.GetTolOptInvalidGeomInfo(io_admin_level, io_locked)
@@ -1152,7 +1113,6 @@ class IgesSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.iges_setting_att.GetToleranceInfo(io_admin_level, io_locked)
@@ -1169,7 +1129,6 @@ class IgesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.iges_setting_att.SetAngleLock(i_locked)
@@ -1201,7 +1160,6 @@ class IgesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.iges_setting_att.SetApplyJoinLock(i_locked)
@@ -1233,7 +1191,6 @@ class IgesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.iges_setting_att.SetAuthorNameLock(i_locked)
@@ -1265,7 +1222,6 @@ class IgesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.iges_setting_att.SetAuthorOrganizationLock(i_locked)
@@ -1298,7 +1254,6 @@ class IgesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.iges_setting_att.SetCrvModLock(i_locked)
@@ -1330,7 +1285,6 @@ class IgesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.iges_setting_att.SetExportMSBOLock(i_locked)
@@ -1362,7 +1316,6 @@ class IgesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.iges_setting_att.SetExportUnitLock(i_locked)
@@ -1395,7 +1348,6 @@ class IgesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.iges_setting_att.SetImportGroupAsSelSetLock(i_locked)
@@ -1427,7 +1379,6 @@ class IgesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.iges_setting_att.SetOnlyShowLock(i_locked)
@@ -1460,7 +1411,6 @@ class IgesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.iges_setting_att.SetOptC2ModeLock(i_locked)
@@ -1492,7 +1442,6 @@ class IgesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.iges_setting_att.SetOptCleanTopoModeLock(i_locked)
@@ -1524,7 +1473,6 @@ class IgesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.iges_setting_att.SetOptFittingModeLock(i_locked)
@@ -1556,7 +1504,6 @@ class IgesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.iges_setting_att.SetOptInvalidGeomModeLock(i_locked)
@@ -1588,7 +1535,6 @@ class IgesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.iges_setting_att.SetOptLoop3DModeLock(i_locked)
@@ -1621,7 +1567,6 @@ class IgesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.iges_setting_att.SetPartProdModeLock(i_locked)
@@ -1654,7 +1599,6 @@ class IgesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.iges_setting_att.SetRepModLock(i_locked)
@@ -1687,7 +1631,6 @@ class IgesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.iges_setting_att.SetShowCompletionDialogBoxLock(i_locked)
@@ -1719,7 +1662,6 @@ class IgesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.iges_setting_att.SetTolJoinLock(i_locked)
@@ -1752,7 +1694,6 @@ class IgesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.iges_setting_att.SetTolOptInvalidGeomLock(i_locked)
@@ -1785,7 +1726,6 @@ class IgesSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.iges_setting_att.SetToleranceLock(i_locked)

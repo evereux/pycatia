@@ -54,7 +54,6 @@ class ABQSpringConnectionProperty(ABQProperty):
                 |     Returns:
                 |         The object of axis system.
 
-        :return: AxisSystem
         :rtype: AxisSystem
         """
 
@@ -86,7 +85,6 @@ class ABQSpringConnectionProperty(ABQProperty):
                 |         ABQ_LINE
                 |         ABQ_NON_LINEAR
 
-        :return: int
         :rtype: int
         """
 
@@ -118,7 +116,6 @@ class ABQSpringConnectionProperty(ABQProperty):
                 |         AXIAL
                 |         GENERAL
 
-        :return: int
         :rtype: int
         """
 
@@ -156,7 +153,6 @@ class ABQSpringConnectionProperty(ABQProperty):
 
         :param Reference i_reference:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.abq_spring_connection_property.AddSupportFromReference(i_reference.com_object, i_support.com_object)
@@ -207,7 +203,6 @@ class ABQSpringConnectionProperty(ABQProperty):
                 |             The stiffnessvalue.
 
         :param int i_dof:
-        :return: float
         :rtype: float
         """
         return self.abq_spring_connection_property.GetLinearStiffness(i_dof)
@@ -251,7 +246,6 @@ class ABQSpringConnectionProperty(ABQProperty):
         :param int i_dof:
         :param tuple o_force_array:
         :param tuple o_disp_array:
-        :return: None
         :rtype: None
         """
         return self.abq_spring_connection_property.GetNonLinearStiffness(i_dof, o_force_array, o_disp_array)
@@ -303,7 +297,6 @@ class ABQSpringConnectionProperty(ABQProperty):
 
         :param int i_dof:
         :param str i_file_name:
-        :return: None
         :rtype: None
         """
         return self.abq_spring_connection_property.ReadStiffnessDataFromFile(i_dof, i_file_name)
@@ -316,7 +309,6 @@ class ABQSpringConnectionProperty(ABQProperty):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub RemoveAxisSystem()
 
-        :return: None
         :rtype: None
         """
         return self.abq_spring_connection_property.RemoveAxisSystem()
@@ -346,7 +338,6 @@ class ABQSpringConnectionProperty(ABQProperty):
                 |             UR3_DOF
 
         :param int i_dof:
-        :return: None
         :rtype: None
         """
         return self.abq_spring_connection_property.RemoveDof(i_dof)
@@ -381,7 +372,6 @@ class ABQSpringConnectionProperty(ABQProperty):
 
         :param int i_dof:
         :param float i_stiffness_value:
-        :return: None
         :rtype: None
         """
         return self.abq_spring_connection_property.SetLinearStiffness(i_dof, i_stiffness_value)
@@ -424,7 +414,6 @@ class ABQSpringConnectionProperty(ABQProperty):
         :param int i_dof:
         :param tuple i_force_array:
         :param tuple i_disp_array:
-        :return: None
         :rtype: None
         """
         return self.abq_spring_connection_property.SetNonLinearStiffness(i_dof, i_force_array, i_disp_array)

@@ -70,7 +70,6 @@ class HybridShapePointOnSurface(Point):
                 |          Dim oDirection As CATIAHybridShapeDirection
                 |          Set oDirection  = PointOnSurface.Direction
 
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
 
@@ -103,7 +102,6 @@ class HybridShapePointOnSurface(Point):
                 |          Dim oGeodesicOffset As CATIAReference
                 |          Set oGeodesicOffset  = PointOnSurface.GeodesicOffset
 
-        :return: Length
         :rtype: Length
         """
 
@@ -132,7 +130,6 @@ class HybridShapePointOnSurface(Point):
                 |          Dim oPointRef As CATIAReference
                 |          Set oPointRef  = PointOnSurface.PointRef
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -166,7 +163,6 @@ class HybridShapePointOnSurface(Point):
                 |          Dim oSurface As CATIAReference
                 |          Set oSurface  = PointOnSurface.Surface
 
-        :return: Reference
         :rtype: Reference
         """
 

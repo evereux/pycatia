@@ -72,7 +72,6 @@ class DrawingLeaders(Collection):
 
         :param float i_head_point_x:
         :param float i_head_point_y:
-        :return: DrawingLeader
         :rtype: DrawingLeader
         """
         return DrawingLeader(self.drawing_leaders.Add(i_head_point_x, i_head_point_y))
@@ -110,7 +109,6 @@ class DrawingLeaders(Collection):
                 |          Set ThisDrawingLeader = MyView.Leaders.Item(2)
 
         :param int i_index:
-        :return: DrawingLeader
         :rtype: DrawingLeader
         """
         return DrawingLeader(self.drawing_leaders.Item(i_index))
@@ -145,7 +143,6 @@ class DrawingLeaders(Collection):
                 |          MyView.DrawingLeaders.Remove(3)
 
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.drawing_leaders.Remove(i_index)

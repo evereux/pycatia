@@ -62,7 +62,6 @@ class HybridShapeOffset(HybridShape):
                 |     inverted.
                 |     True to invert the offset direction.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -87,7 +86,6 @@ class HybridShapeOffset(HybridShape):
                 | 
                 |     Returns or sets the offset value.
 
-        :return: Length
         :rtype: Length
         """
 
@@ -113,7 +111,6 @@ class HybridShapeOffset(HybridShape):
                 |     Returns or sets the face to offset.
                 |     Sub-element(s) supported (see Boundary object): Face.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -139,7 +136,6 @@ class HybridShapeOffset(HybridShape):
                 |     Returns or sets suppress mode.
                 |     True to activate suppress mode
 
-        :return: bool
         :rtype: bool
         """
 
@@ -164,7 +160,6 @@ class HybridShapeOffset(HybridShape):
                 |     Adds a tricky face object on the object.
 
         :param Reference i_tricky_face:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_offset.AddTrickyFace(i_tricky_face.com_object)
@@ -196,7 +191,6 @@ class HybridShapeOffset(HybridShape):
                 |     param : iRank =position of faces ionvalid for offset
 
         :param int i_rank:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_offset.GetTrickyFace(i_rank))
@@ -213,7 +207,6 @@ class HybridShapeOffset(HybridShape):
                 |     param : iRank =position of the face in the list of TrickyFaces
 
         :param int i_rank:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_offset.RemoveTrickyFace(i_rank)
@@ -230,7 +223,6 @@ class HybridShapeOffset(HybridShape):
                 |     To be replace in further release by integration in the pragma put_xxx
 
         :param float i_offset:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_offset.SetOffsetValue(i_offset)

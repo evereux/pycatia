@@ -75,7 +75,6 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
                 | 
                 |          hybShpcircle.BeginOfCircle = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -108,7 +107,6 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
                 |          Dim HybShpCircleFirstCurve As Reference 
                 |          HybShpCircleFirstCurve = HybShpCircle.CenterElem
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -141,7 +139,6 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
                 |      Dim HybShpCircleDiameter As Length
                 |      HybShpCircleDiameter = HybShpCircle.Diameter
 
-        :return: Length
         :rtype: Length
         """
 
@@ -169,7 +166,6 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
                 | 
                 |           HybShpCircle.DiameterMode = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -206,7 +202,6 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
                 | 
                 |          hybShpcircle.DiscriminationIndex = 2
 
-        :return: int
         :rtype: int
         """
 
@@ -243,7 +238,6 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
                 | 
                 |          Set HybShpCircle.Orientation1 -1
 
-        :return: int
         :rtype: int
         """
 
@@ -280,7 +274,6 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
                 | 
                 |          HybShpCircleOrientation = HybShpCircle.Orientation2
 
-        :return: int
         :rtype: int
         """
 
@@ -313,7 +306,6 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
                 |      Dim HybShpCircleRadius As Length
                 |      HybShpCircleRadius = HybShpCircle.Radius
 
-        :return: Length
         :rtype: Length
         """
 
@@ -338,7 +330,6 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
                 |          Dim HybShpCircleSupportSurf As Reference 
                 |          Set HybShpCircleSupportSurf = HybShpCircle.Support
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -370,7 +361,6 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
                 | 
                 |          Set HybShpCircle.Tangent Curve TgtCrv
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -406,7 +396,6 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
                 |          Dim firstOrient As long
                 |          firstOrient = hybShpcircle.FirstTangentOrientation
 
-        :return: int
         :rtype: int
         """
 
@@ -442,7 +431,6 @@ class HybridShapeCircleCenterTangent(HybridShapeCircle):
                 |          Dim secondOrient As long
                 |          secondOrient = hybShpcircle.SecondTangentOrientation
 
-        :return: int
         :rtype: int
         """
 

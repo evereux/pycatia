@@ -61,7 +61,6 @@ class Chamfer(DressUpShape):
                 | 
                 |          Set angle = firstChamfer.Angle
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -85,7 +84,6 @@ class Chamfer(DressUpShape):
                 | 
                 |          Set list = firstChamfer.ElementsToChamfer
 
-        :return: References
         :rtype: References
         """
 
@@ -110,7 +108,6 @@ class Chamfer(DressUpShape):
                 | 
                 |          Set length1 = firstChamfer.Length1
 
-        :return: Length
         :rtype: Length
         """
 
@@ -135,7 +132,6 @@ class Chamfer(DressUpShape):
                 | 
                 |          Set length2 = firstChamfer.Length2
 
-        :return: Length
         :rtype: Length
         """
 
@@ -162,7 +158,6 @@ class Chamfer(DressUpShape):
                 |          Set mode = firstChamfer.Mode
                 |          firstChamfer.Mode = catTwoLengthChamfer
 
-        :return: int
         :rtype: int
         """
 
@@ -195,7 +190,6 @@ class Chamfer(DressUpShape):
                 |          Set orient = firstChamfer.Orientation
                 |          firstChamfer.Orientation = catReverseChamfer
 
-        :return: int
         :rtype: int
         """
 
@@ -229,7 +223,6 @@ class Chamfer(DressUpShape):
                 |          Set prop = firstChamfer.Propagation
                 |          firstChamfer.Propagation = catMinimalChamfer
 
-        :return: int
         :rtype: int
         """
 
@@ -268,7 +261,6 @@ class Chamfer(DressUpShape):
                 |      firstChamfer.AddElementToChamfer(element)
 
         :param Reference i_element_to_chamfer:
-        :return: None
         :rtype: None
         """
         return self.chamfer.AddElementToChamfer(i_element_to_chamfer.com_object)
@@ -314,7 +306,6 @@ class Chamfer(DressUpShape):
                 |      firstChamfer.WithdrawElementToChamfer(element)
 
         :param Reference i_element_to_withdraw:
-        :return: None
         :rtype: None
         """
         return self.chamfer.WithdrawElementToChamfer(i_element_to_withdraw.com_object)

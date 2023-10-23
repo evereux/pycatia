@@ -74,7 +74,6 @@ class HybridShapeHealing(HybridShape):
                 |                  HybShpHealing.CanonicFreeMode = HybShpHealMode
                 |                  HybShpHealCont = HybShpHealing.CanonicFreeMode
 
-        :return: int
         :rtype: int
         """
 
@@ -114,7 +113,6 @@ class HybridShapeHealing(HybridShape):
                 |                  HybShpHealing.Continuity = HybShpHealCont
                 |                  HybShpHealCont = HybShpHealing.Continuity
 
-        :return: False
         :rtype: False
         """
 
@@ -152,7 +150,6 @@ class HybridShapeHealing(HybridShape):
                 |                  Dim HybShpHealDistObjective As Length
                 |                  Set HybShpHealDistObjective = HybShpHealing.DistanceObjective
 
-        :return: Length
         :rtype: Length
         """
 
@@ -182,7 +179,6 @@ class HybridShapeHealing(HybridShape):
                 |                  Dim HybShpHealMergeDist As Length
                 |                  Set HybShpHealMergeDist = HybShpHealing.MergingDistance
 
-        :return: Length
         :rtype: Length
         """
 
@@ -211,7 +207,6 @@ class HybridShapeHealing(HybridShape):
                 |                  Dim NoOfBodiesToHeal As  long
                 |                  NoOfBodiesToHeal = HybShpHealing.NoOfBodiesToHeal
 
-        :return: int
         :rtype: int
         """
 
@@ -240,7 +235,6 @@ class HybridShapeHealing(HybridShape):
                 |                  Dim NoOfEdges As  long
                 |                  NoOfEdges = HybShpHealing.NoOfEdgesToKeepSharp
 
-        :return: int
         :rtype: int
         """
 
@@ -269,7 +263,6 @@ class HybridShapeHealing(HybridShape):
                 |                  Dim NoOfElementsToFreeze As  long
                 |                  NoOfElementsToFreeze = HybShpHealing.NoOfElementsToFreeze
 
-        :return: int
         :rtype: int
         """
 
@@ -299,7 +292,6 @@ class HybridShapeHealing(HybridShape):
                 |                  Dim HybShpHealSharpnessAngle As Angle
                 |                  Set HybShpHealSharpnessAngle = HybShpHealing.SharpnessAngle
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -328,7 +320,6 @@ class HybridShapeHealing(HybridShape):
                 |                  Dim HybShpHealTangencyAngle As Angle
                 |                  Set HybShpHealTangencyAngle = HybShpHealing.TangencyAngle
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -358,7 +349,6 @@ class HybridShapeHealing(HybridShape):
                 |                  Dim HybShpHealTangencyObjective As Length
                 |                  Set HybShpHealTangencyObjective = HybShpHealing.TangencyObjective
 
-        :return: Length
         :rtype: Length
         """
 
@@ -386,7 +376,6 @@ class HybridShapeHealing(HybridShape):
                 |                  HybShpHealing.AddBodyToHeal refBody
 
         :param Reference i_body:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_healing.AddBodyToHeal(i_body.com_object)
@@ -429,7 +418,6 @@ class HybridShapeHealing(HybridShape):
                 |                  HybShpHealing.AddEdgeToKeepSharp refEdge
 
         :param Reference i_edge:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_healing.AddEdgeToKeepSharp(i_edge.com_object)
@@ -471,7 +459,6 @@ class HybridShapeHealing(HybridShape):
                 |                  HybShpHealing.AddElementsToFreeze refElement
 
         :param Reference i_element:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_healing.AddElementsToFreeze(i_element.com_object)
@@ -518,7 +505,6 @@ class HybridShapeHealing(HybridShape):
                 |                  set refBody = HybShpHealing.GetBodyToHeal  1
 
         :param int i_position:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_healing.GetBodyToHeal(i_position))
@@ -550,7 +536,6 @@ class HybridShapeHealing(HybridShape):
                 |                  set refEdge = HybShpHealing.GetEdgeToKeepSharp  1
 
         :param int i_position:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_healing.GetEdgeToKeepSharp(i_position))
@@ -582,7 +567,6 @@ class HybridShapeHealing(HybridShape):
                 |                  set refElement = HybShpHealing.GetElementToFreeze  1
 
         :param int i_position:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_healing.GetElementToFreeze(i_position))
@@ -611,7 +595,6 @@ class HybridShapeHealing(HybridShape):
                 |                  HybShpHealing.RemoveBodyToHeal  1
 
         :param int i_position:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_healing.RemoveBodyToHeal(i_position)
@@ -640,7 +623,6 @@ class HybridShapeHealing(HybridShape):
                 |                  HybShpHealing.RemoveEdgeToKeepSharp  1
 
         :param int i_position:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_healing.RemoveEdgeToKeepSharp(i_position)
@@ -669,7 +651,6 @@ class HybridShapeHealing(HybridShape):
                 |                  HybShpHealing.RemoveElementToFreeze  1
 
         :param int i_position:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_healing.RemoveElementToFreeze(i_position)
@@ -694,7 +675,6 @@ class HybridShapeHealing(HybridShape):
 
         :param int i_index:
         :param Reference i_new_heal:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_healing.ReplaceToHealElement(i_index, i_new_heal.com_object)
@@ -737,7 +717,6 @@ class HybridShapeHealing(HybridShape):
                 |                  HybShpHealing.SetDistanceObjective 2.5
 
         :param float i_distance_objective:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_healing.SetDistanceObjective(i_distance_objective)
@@ -765,7 +744,6 @@ class HybridShapeHealing(HybridShape):
                 |                  HybShpHealing.SetMergingDistance 2.5
 
         :param float i_merging_distance:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_healing.SetMergingDistance(i_merging_distance)
@@ -793,7 +771,6 @@ class HybridShapeHealing(HybridShape):
                 |                  HybShpHealing.SetSharpnessAngle 2.5
 
         :param float i_sharpness_angle:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_healing.SetSharpnessAngle(i_sharpness_angle)
@@ -821,7 +798,6 @@ class HybridShapeHealing(HybridShape):
                 |                  HybShpHealing.SetTangencyAngle 2.5
 
         :param float i_tangency_angle:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_healing.SetTangencyAngle(i_tangency_angle)
@@ -849,7 +825,6 @@ class HybridShapeHealing(HybridShape):
                 |                  HybShpHealing.SetTangencyObjective 2.5
 
         :param float i_tangency_objective:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_healing.SetTangencyObjective(i_tangency_objective)

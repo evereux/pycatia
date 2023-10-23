@@ -81,7 +81,6 @@ class StiDBItem(AnyObject):
                 |             sChildLinkType = ochildrenList.LinkType(i)
                 |          Next
 
-        :return: StiDBChildren
         :rtype: StiDBChildren
         """
 
@@ -115,7 +114,6 @@ class StiDBItem(AnyObject):
                 |          Dim oDocument As Document
                 |          Set oDocument = oStiDBItem.GetDocument
 
-        :return: Document
         :rtype: Document
         """
         return Document(self.sti_db_item.GetDocument())
@@ -144,7 +142,6 @@ class StiDBItem(AnyObject):
                 |          Dim oFullPath As string
                 |          oFullPath = oStiDBItem.GetDocumentFullPath
 
-        :return: str
         :rtype: str
         """
         return self.sti_db_item.GetDocumentFullPath()
@@ -175,7 +172,6 @@ class StiDBItem(AnyObject):
                 |          Dim oIsCFOType As boolean
                 |          oIsCFOType = oStiEngine.IsCFOType
 
-        :return: bool
         :rtype: bool
         """
         return self.sti_db_item.IsCFOType()
@@ -205,7 +201,6 @@ class StiDBItem(AnyObject):
                 |          Dim oIsRootCFO As boolean
                 |          oIsRootCFO = oStiEngine.IsRoot
 
-        :return: bool
         :rtype: bool
         """
         return self.sti_db_item.IsRoot()

@@ -57,7 +57,6 @@ class SFMMember(SFMProfile):
                 | 
                 |          SfmMember.Flip
 
-        :return: None
         :rtype: None
         """
         return self.sfm_member.Flip()
@@ -79,7 +78,6 @@ class SFMMember(SFMProfile):
                 |          Dim Name As String
                 |          Name = SfmMemberObj.GetMemberType
 
-        :return: str
         :rtype: str
         """
         return self.sfm_member.GetMemberType()
@@ -106,7 +104,6 @@ class SFMMember(SFMProfile):
                 |          Set Welds = OperatedMemberObject.GetWelds(Nothing)
 
         :param Reference i_operating_ele:
-        :return: SFMWelds
         :rtype: SFMWelds
         """
         return SFMWelds(self.sfm_member.GetWelds(i_operating_ele.com_object))
@@ -128,7 +125,6 @@ class SFMMember(SFMProfile):
                 |          Dim FlipStatus As Boolean
                 |          Set FlipStatus = SfmMember.IsFlip
 
-        :return: bool
         :rtype: bool
         """
         return self.sfm_member.IsFlip()

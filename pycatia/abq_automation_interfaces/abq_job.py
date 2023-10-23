@@ -55,7 +55,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.ComputationDir = "D:\CompDir"
 
-        :return: str
         :rtype: str
         """
 
@@ -91,7 +90,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.ContactPrint = False
 
-        :return: bool
         :rtype: bool
         """
 
@@ -122,7 +120,6 @@ class ABQJob(AnyObject):
                 | 
                 |          myJob.Description = "AutomatedJob"
 
-        :return: str
         :rtype: str
         """
 
@@ -158,7 +155,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.EchoPrint = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -193,7 +189,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.HistoryPrint = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -234,7 +229,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.InputFileFormat = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -269,7 +263,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.MaxMemory = 60
 
-        :return: float
         :rtype: float
         """
 
@@ -308,7 +301,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.MemoryUnit = PERCENT
 
-        :return: int
         :rtype: int
         """
 
@@ -344,7 +336,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.ModelConsistencyCheck = False
 
-        :return: bool
         :rtype: bool
         """
 
@@ -380,7 +371,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.ModelPrint = False
 
-        :return: bool
         :rtype: bool
         """
 
@@ -415,7 +405,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.NumCpus = 3
 
-        :return: int
         :rtype: int
         """
 
@@ -457,7 +446,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.ParallelizationMethodStandard = TREE
 
-        :return: int
         :rtype: int
         """
 
@@ -493,7 +481,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.RestartReadInterval = 10
 
-        :return: int
         :rtype: int
         """
 
@@ -528,7 +515,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.RestartReadJob = "D:\myoriginaljob.odb"
 
-        :return: str
         :rtype: str
         """
 
@@ -574,7 +560,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.RestartReadOption = ABQ_RESTART_END_OF_STEP
 
-        :return: int
         :rtype: int
         """
 
@@ -607,7 +592,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.RestartReadStep = 2
 
-        :return: ABQStep
         :rtype: ABQStep
         """
 
@@ -643,7 +627,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.RestartReadStepNumber = 2
 
-        :return: int
         :rtype: int
         """
 
@@ -684,7 +667,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.RestartReadStepSelectionOption = ABQ_STEP_OBJECT
 
-        :return: int
         :rtype: int
         """
 
@@ -727,7 +709,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.RestartRequestFrequency = 999
 
-        :return: int
         :rtype: int
         """
 
@@ -763,7 +744,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.RestartRequestFrequencyValue = 10
 
-        :return: int
         :rtype: int
         """
 
@@ -799,7 +779,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.RestartRequestIntervalValue = 10
 
-        :return: int
         :rtype: int
         """
 
@@ -849,7 +828,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.RestartRequestOption = RESTART_EVERYINC
 
-        :return: int
         :rtype: int
         """
 
@@ -885,7 +863,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.RestartRequestOverlay = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -920,7 +897,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.RestartRequestTimeMarks = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -954,7 +930,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.Scratch = "D:\Scratch"
 
-        :return: str
         :rtype: str
         """
 
@@ -988,7 +963,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.Source = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1031,7 +1005,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.Type = ANALYSIS
 
-        :return: int
         :rtype: int
         """
 
@@ -1065,7 +1038,6 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.UserSubroutine = "D:/UserSub"
 
-        :return: str
         :rtype: str
         """
 
@@ -1089,7 +1061,6 @@ class ABQJob(AnyObject):
                 | 
                 |     Submits the job.
 
-        :return: None
         :rtype: None
         """
         return self.abq_job.SubmitJob()
@@ -1104,7 +1075,6 @@ class ABQJob(AnyObject):
                 | 
                 |     Writes the input file for the job.
 
-        :return: None
         :rtype: None
         """
         return self.abq_job.WriteInputFile()

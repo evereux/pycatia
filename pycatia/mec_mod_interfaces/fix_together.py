@@ -57,7 +57,6 @@ class FixTogether(AnyObject):
                 | 
                 |          fixTogethersCount = myFixTogether.FixTogethersCount
 
-        :return: int
         :rtype: int
         """
 
@@ -81,7 +80,6 @@ class FixTogether(AnyObject):
                 | 
                 |          productsCount = myFixTogether.ProductsCount
 
-        :return: int
         :rtype: int
         """
 
@@ -105,7 +103,6 @@ class FixTogether(AnyObject):
                 |      myFixTogether.AddFixTogether(fixTogether)
 
         :param FixTogether i_fix_together:
-        :return: None
         :rtype: None
         """
         return self.fix_together.AddFixTogether(i_fix_together.com_object)
@@ -143,7 +140,6 @@ class FixTogether(AnyObject):
                 |      myFixTogether.AddProduct(myProduct)
 
         :param Product i_product:
-        :return: None
         :rtype: None
         """
         return self.fix_together.AddProduct(i_product.com_object)
@@ -197,7 +193,6 @@ class FixTogether(AnyObject):
                 |          Set thatFixTogether = myFixTogether.GetFixTogether("myFixTogether")
 
         :param cat_variant i_index:
-        :return: FixTogether
         :rtype: FixTogether
         """
         return FixTogether(self.fix_together.GetFixTogether(i_index))
@@ -236,7 +231,6 @@ class FixTogether(AnyObject):
                 |          Set thatProduct = myFixTogether.GetProduct("myProduct")
 
         :param cat_variant i_index:
-        :return: Product
         :rtype: Product
         """
         return Product(self.fix_together.GetProduct(i_index))
@@ -269,7 +263,6 @@ class FixTogether(AnyObject):
                 |     fixTogether.RemoveFixTogether(fixTogether.FixTogethersCount)
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.fix_together.RemoveFixTogether(i_index)
@@ -301,7 +294,6 @@ class FixTogether(AnyObject):
                 |      fixTogether.RemoveProduct(fixTogether.ProductsCount)
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.fix_together.RemoveProduct(i_index)

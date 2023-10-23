@@ -78,7 +78,6 @@ class Behaviors(Collection):
                 |          Set ThatBeh = listBehaviors.Item("MyBeh")
 
         :param cat_variant i_index:
-        :return: Behavior
         :rtype: Behavior
         """
         return Behavior(self.behaviors.Item(i_index))

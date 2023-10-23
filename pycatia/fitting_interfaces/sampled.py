@@ -51,7 +51,6 @@ class Sampled(AnyObject):
                 |     interpolator used by the sampled during simulation. Note that the name of the
                 |     interpolater is used (which is a string).
 
-        :return: str
         :rtype: str
         """
 
@@ -78,7 +77,6 @@ class Sampled(AnyObject):
                 |     that will be used in the sampled based simulation. Please note that the object
                 |     will move to the shots defined in the sampled.
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -103,7 +101,6 @@ class Sampled(AnyObject):
                 | 
                 |     Returns or sets the Sampled object.
 
-        :return: float
         :rtype: float
         """
 
@@ -128,7 +125,6 @@ class Sampled(AnyObject):
                 | 
                 |     Returns or sets the Sampled object.
 
-        :return: Shots
         :rtype: Shots
         """
 
@@ -147,7 +143,6 @@ class Sampled(AnyObject):
                 |     associated to the current sampled object. Note that the time is handled as a
                 |     double.
 
-        :return: float
         :rtype: float
         """
 
@@ -172,7 +167,6 @@ class Sampled(AnyObject):
                 |     Returns or sets the Sampled object.
 
         :param tuple i_tracks:
-        :return: Sampled
         :rtype: Sampled
         """
         return Sampled(self.sampled.Append(i_tracks))
@@ -204,7 +198,6 @@ class Sampled(AnyObject):
         :param AnyObject i_object:
         :param int i_analysis_mode:
         :param bool i_monitor_mode:
-        :return: None
         :rtype: None
         """
         return self.sampled.BindAnalysis(i_object.com_object, i_analysis_mode, i_monitor_mode)
@@ -234,7 +227,6 @@ class Sampled(AnyObject):
                 | 
                 |     Returns or sets the Sampled object.
 
-        :return: None
         :rtype: None
         """
         return self.sampled.BreakInheritance()
@@ -251,7 +243,6 @@ class Sampled(AnyObject):
                 |     Returns or sets the Sampled object.
 
         :param tuple o_interpolaters:
-        :return: None
         :rtype: None
         """
         return self.sampled.GetKnownInterpolaters(o_interpolaters)
@@ -281,7 +272,6 @@ class Sampled(AnyObject):
                 | 
                 |     Returns the total duration
 
-        :return: float
         :rtype: float
         """
         return self.sampled.GetTotalDuration()
@@ -296,7 +286,6 @@ class Sampled(AnyObject):
                 | 
                 |     Returns or sets the Sampled object.
 
-        :return: None
         :rtype: None
         """
         return self.sampled.RemoveAnalyses()
@@ -311,7 +300,6 @@ class Sampled(AnyObject):
                 | 
                 |     Returns or sets the Sampled object.
 
-        :return: None
         :rtype: None
         """
         return self.sampled.ReverseTime()
@@ -329,7 +317,6 @@ class Sampled(AnyObject):
                 |     shots will be repositioned relative to the object position.
 
         :param AnyObject i_object:
-        :return: None
         :rtype: None
         """
         return self.sampled.SetObjectKeepingPosition(i_object.com_object)
@@ -347,7 +334,6 @@ class Sampled(AnyObject):
 
         :param int i_type:
         :param int i_indice:
-        :return: None
         :rtype: None
         """
         return self.sampled.Split(i_type, i_indice)

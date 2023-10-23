@@ -45,7 +45,6 @@ class HumanTask(Activity):
                 | 
                 |     returns the time set by the user by set_SpecifiedCycleTime
 
-        :return: float
         :rtype: float
         """
 
@@ -62,7 +61,6 @@ class HumanTask(Activity):
                 | 
                 |     returns the speed set by the user by set_SpecifiedJointSpeed
 
-        :return: float
         :rtype: float
         """
 
@@ -83,7 +81,6 @@ class HumanTask(Activity):
                 |     Returns:
                 |         oManikin
 
-        :return: SWKManikin
         :rtype: SWKManikin
         """
 
@@ -103,7 +100,6 @@ class HumanTask(Activity):
 
         :param float time:
         :param int i_override_child_act_simulation_time:
-        :return: None
         :rtype: None
         """
         return self.human_task.set_SpecifiedCycleTime(time, i_override_child_act_simulation_time)
@@ -123,7 +119,6 @@ class HumanTask(Activity):
 
         :param float speed:
         :param int i_override_child_joint_speed:
-        :return: None
         :rtype: None
         """
         return self.human_task.set_SpecifiedJointSpeed(speed, i_override_child_joint_speed)

@@ -57,7 +57,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
                 |             0 : report of only failed checks
                 |             1 : report of all checks.
 
-        :return: int
         :rtype: int
         """
 
@@ -92,7 +91,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
                 |             0 : to have check report in Xml
                 |             1 : to have check report in Html.
 
-        :return: int
         :rtype: int
         """
 
@@ -125,7 +123,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
                 |         oDirectoryForInputXsl
                 |             Directory for the report file with Xml extension.
 
-        :return: str
         :rtype: str
         """
 
@@ -160,7 +157,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
                 |             0 : not report of check Advisor
                 |             1 : report of check Advisor.
 
-        :return: int
         :rtype: int
         """
 
@@ -195,7 +191,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
                 |             0 : not report of check Advisor
                 |             1 : report of check Advisor.
 
-        :return: int
         :rtype: int
         """
 
@@ -230,7 +225,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
                 |             0 : report Html outside CATIA session
                 |             1 : report Html in CATIA session.
 
-        :return: int
         :rtype: int
         """
 
@@ -265,7 +259,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
                 |             0 : not report objects information
                 |             1 : report objects information.
 
-        :return: int
         :rtype: int
         """
 
@@ -299,7 +292,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
                 |             The output directory for report of checks expert and checks
                 |             advisor.
 
-        :return: str
         :rtype: str
         """
 
@@ -334,7 +326,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
                 |             0 : not check Advisor parameter information
                 |             1 : check Advisor parameter information.
 
-        :return: int
         :rtype: int
         """
 
@@ -369,7 +360,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
                 |             0 : not report passed objects
                 |             1 : report passed objects.
 
-        :return: int
         :rtype: int
         """
 
@@ -415,7 +405,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.report_generation_sheet_setting_att.GetAllChecksReportInfo(io_admin_level, io_locked)
@@ -452,7 +441,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.report_generation_sheet_setting_att.GetCheckReportHtmlInfo(io_admin_level, io_locked)
@@ -489,7 +477,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.report_generation_sheet_setting_att.GetDirectoryForInputXslInfo(io_admin_level, io_locked)
@@ -526,7 +513,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.report_generation_sheet_setting_att.GetReportCheckAdvisorInfo(io_admin_level, io_locked)
@@ -563,7 +549,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.report_generation_sheet_setting_att.GetReportCheckExpertInfo(io_admin_level, io_locked)
@@ -600,7 +585,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.report_generation_sheet_setting_att.GetReportHtmlInCatiaSessionInfo(io_admin_level, io_locked)
@@ -637,7 +621,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.report_generation_sheet_setting_att.GetReportObjectsInformationInfo(io_admin_level, io_locked)
@@ -674,7 +657,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.report_generation_sheet_setting_att.GetReportOutputDirectoryInfo(io_admin_level, io_locked)
@@ -712,7 +694,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.report_generation_sheet_setting_att.GetReportParametersInformationInfo(io_admin_level, io_locked)
@@ -749,7 +730,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.report_generation_sheet_setting_att.GetReportPassedObjectsInfo(io_admin_level, io_locked)
@@ -776,7 +756,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.report_generation_sheet_setting_att.SetAllChecksReportLock(i_locked)
@@ -818,7 +797,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.report_generation_sheet_setting_att.SetCheckReportHtmlLock(i_locked)
@@ -860,7 +838,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.report_generation_sheet_setting_att.SetDirectoryForInputXslLock(i_locked)
@@ -902,7 +879,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.report_generation_sheet_setting_att.SetReportCheckAdvisorLock(i_locked)
@@ -944,7 +920,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.report_generation_sheet_setting_att.SetReportCheckExpertLock(i_locked)
@@ -986,7 +961,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.report_generation_sheet_setting_att.SetReportHtmlInCatiaSessionLock(i_locked)
@@ -1028,7 +1002,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.report_generation_sheet_setting_att.SetReportObjectsInformationLock(i_locked)
@@ -1070,7 +1043,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.report_generation_sheet_setting_att.SetReportOutputDirectoryLock(i_locked)
@@ -1113,7 +1085,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.report_generation_sheet_setting_att.SetReportParametersInformationLock(i_locked)
@@ -1155,7 +1126,6 @@ class ReportGenerationSheetSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.report_generation_sheet_setting_att.SetReportPassedObjectsLock(i_locked)

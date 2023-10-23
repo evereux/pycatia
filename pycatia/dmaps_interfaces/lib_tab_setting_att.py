@@ -59,7 +59,6 @@ class LibTabSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param int o_is_unique:
-        :return: None
         :rtype: None
         """
         return self.lib_tab_setting_att.GetIDUniqueSetting(o_is_unique)
@@ -96,7 +95,6 @@ class LibTabSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.lib_tab_setting_att.GetIDUniqueSettingInfo(io_admin_level, io_locked)
@@ -125,7 +123,6 @@ class LibTabSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: tuple
         :rtype: tuple
         """
         return self.lib_tab_setting_att.GetListOfLibraryFilePath()
@@ -162,7 +159,6 @@ class LibTabSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.lib_tab_setting_att.GetListOfLibraryFilePathInfo(io_admin_level, io_locked)
@@ -191,7 +187,6 @@ class LibTabSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param str o_path:
-        :return: None
         :rtype: None
         """
         return self.lib_tab_setting_att.GetProcessIDScript(o_path)
@@ -228,7 +223,6 @@ class LibTabSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.lib_tab_setting_att.GetProcessIDScriptInfo(io_admin_level, io_locked)
@@ -257,7 +251,6 @@ class LibTabSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param tuple i_path:
-        :return: None
         :rtype: None
         """
         return self.lib_tab_setting_att.PutListOfLibraryFilePath(i_path)
@@ -301,7 +294,6 @@ class LibTabSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param int is_unique:
-        :return: None
         :rtype: None
         """
         return self.lib_tab_setting_att.SetIDUniqueSetting(is_unique)
@@ -333,7 +325,6 @@ class LibTabSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.lib_tab_setting_att.SetIDUniqueSettingLock(i_locked)
@@ -375,7 +366,6 @@ class LibTabSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.lib_tab_setting_att.SetListOfLibraryFilePathLock(i_locked)
@@ -418,7 +408,6 @@ class LibTabSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param str i_path:
-        :return: None
         :rtype: None
         """
         return self.lib_tab_setting_att.SetProcessIDScript(i_path)
@@ -450,7 +439,6 @@ class LibTabSettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.lib_tab_setting_att.SetProcessIDScriptLock(i_locked)

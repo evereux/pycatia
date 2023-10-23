@@ -52,7 +52,6 @@ class FunctionalActions(Collection):
         :param str i_name:
         :param FunctionalPosition i_from:
         :param FunctionalPosition i_to:
-        :return: FunctionalAction
         :rtype: FunctionalAction
         """
         return FunctionalAction(self.functional_actions.Create(i_name, i_from.com_object, i_to.com_object))
@@ -68,7 +67,6 @@ class FunctionalActions(Collection):
                 |     Delete a FunctionalAction.
 
         :param FunctionalAction i_action:
-        :return: None
         :rtype: None
         """
         return self.functional_actions.Delete(i_action.com_object)
@@ -121,7 +119,6 @@ class FunctionalActions(Collection):
                 |          Set Act2 = Desc.Action("Moves")
 
         :param cat_variant i_index:
-        :return: FunctionalAction
         :rtype: FunctionalAction
         """
         return FunctionalAction(self.functional_actions.Elem(i_index))

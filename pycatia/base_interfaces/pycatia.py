@@ -16,7 +16,6 @@ class PyCATIA:
     @property
     def logger(self) -> logging.Logger:
         """
-        :return: logging.Logger
         :rtype: logging.Logger
         """
         return create_logger()

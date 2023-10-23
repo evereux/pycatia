@@ -74,7 +74,6 @@ class SchAppObjectFactory2(AnyObject):
         :param str i_app_comp_class_type:
         :param Document i_doc:
         :param AnyObject o_app_comp:
-        :return: None
         :rtype: None
         """
         return self.sch_app_object_factory2.AppCreateCompRef(
@@ -137,7 +136,6 @@ class SchAppObjectFactory2(AnyObject):
         :param str i_app_cntn_class_type:
         :param Document i_doc:
         :param AnyObject o_app_connection:
-        :return: None
         :rtype: None
         """
         return self.sch_app_object_factory2.AppCreateConnection(
@@ -199,7 +197,6 @@ class SchAppObjectFactory2(AnyObject):
         :param str i_app_group_class_type:
         :param Document i_doc:
         :param AnyObject o_app_group:
-        :return: None
         :rtype: None
         """
         return self.sch_app_object_factory2.AppCreateGroup(
@@ -273,7 +270,6 @@ class SchAppObjectFactory2(AnyObject):
         :param Document i_doc:
         :param str i_log_line_id:
         :param AnyObject o_app_route:
-        :return: None
         :rtype: None
         """
         return self.sch_app_object_factory2.AppCreateRoute(
@@ -347,7 +343,6 @@ class SchAppObjectFactory2(AnyObject):
         :param Document i_doc:
         :param str i_log_line_id:
         :param AnyObject o_app_route:
-        :return: None
         :rtype: None
         """
         return self.sch_app_object_factory2.AppCreateRouteFromRef(
@@ -414,7 +409,6 @@ class SchAppObjectFactory2(AnyObject):
         :param str i_app_route_class_type:
         :param AnyObject i_app_info:
         :param AnyObject o_app_route:
-        :return: None
         :rtype: None
         """
         return self.sch_app_object_factory2.AppCreateRouteWithInfo(
@@ -464,7 +458,6 @@ class SchAppObjectFactory2(AnyObject):
         :param str i_app_zone_class_type:
         :param Document i_doc:
         :param AnyObject o_app_zone:
-        :return: None
         :rtype: None
         """
         return self.sch_app_object_factory2.AppCreateZone(

@@ -61,7 +61,6 @@ class HybridShapeExtremumPolar(HybridShape):
                 | 
                 |     returns the resulting angle of extremum.
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -78,7 +77,6 @@ class HybridShapeExtremumPolar(HybridShape):
                 | 
                 |     returns or sets the input contour.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -103,7 +101,6 @@ class HybridShapeExtremumPolar(HybridShape):
                 | 
                 |     returns or sets the direction of computation.
 
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
 
@@ -128,7 +125,6 @@ class HybridShapeExtremumPolar(HybridShape):
                 | 
                 |     returns or sets the type of extremum.
 
-        :return: int
         :rtype: int
         """
 
@@ -153,7 +149,6 @@ class HybridShapeExtremumPolar(HybridShape):
                 | 
                 |     returns or sets the origin of the polar axis.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -178,7 +173,6 @@ class HybridShapeExtremumPolar(HybridShape):
                 | 
                 |     returns the resulting radius of extremum.
 
-        :return: Length
         :rtype: Length
         """
 
@@ -195,7 +189,6 @@ class HybridShapeExtremumPolar(HybridShape):
                 | 
                 |     returns or sets the support (if exist).
 
-        :return: Reference
         :rtype: Reference
         """
 

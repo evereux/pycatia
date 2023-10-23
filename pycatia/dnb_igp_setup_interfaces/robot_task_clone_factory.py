@@ -102,7 +102,6 @@ class RobotTaskCloneFactory(AnyObject):
         :param str i_target_task_name:
         :param tuple i_trans_on_target:
         :param RobotTask o_cloned_robot_task:
-        :return: None
         :rtype: None
         """
         return self.robot_task_clone_factory.CloneTaskInAnotherRobot(
@@ -183,7 +182,6 @@ class RobotTaskCloneFactory(AnyObject):
         :param str i_target_task_name:
         :param tuple i_trans_on_target:
         :param RobotTask o_cloned_robot_task:
-        :return: None
         :rtype: None
         """
         return self.robot_task_clone_factory.CloneTaskInSameRobot(

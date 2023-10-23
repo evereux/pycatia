@@ -48,7 +48,6 @@ class Axis2D(Geometry2D):
                 | 
                 |     Returns the 2D coordinate system horizontal axis.
 
-        :return: Line2D
         :rtype: Line2D
         """
 
@@ -65,7 +64,6 @@ class Axis2D(Geometry2D):
                 | 
                 |     Returns the 2D coordinate system origin.
 
-        :return: Point2D
         :rtype: Point2D
         """
 
@@ -82,7 +80,6 @@ class Axis2D(Geometry2D):
                 | 
                 |     Returns the 2D coordinate system vertical axis.
 
-        :return: Line2D
         :rtype: Line2D
         """
 

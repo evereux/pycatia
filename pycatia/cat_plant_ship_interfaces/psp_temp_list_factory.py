@@ -61,7 +61,6 @@ class PSPTempListFactory(AnyObject):
                 |          Dim NewList As PspListOfBSTRs
                 |          Set NewList = PspListFact.CreateListOfBSTRs
 
-        :return: PSPListOfBSTRs
         :rtype: PSPListOfBSTRs
         """
         return PSPListOfBSTRs(self.psp_temp_list_factory.CreateListOfBSTRs())
@@ -88,7 +87,6 @@ class PSPTempListFactory(AnyObject):
                 |          Dim NewList As PspListOfDoubles
                 |          Set NewList = PspListFact.CreateListOfDoubles
 
-        :return: PSPListOfDoubles
         :rtype: PSPListOfDoubles
         """
         return PSPListOfDoubles(self.psp_temp_list_factory.CreateListOfDoubles())
@@ -115,7 +113,6 @@ class PSPTempListFactory(AnyObject):
                 |          Dim NewList As PspListOfLongs
                 |          Set NewList = PspListFact.CreateListOfLongs
 
-        :return: PSPListOfLongs
         :rtype: PSPListOfLongs
         """
         return PSPListOfLongs(self.psp_temp_list_factory.CreateListOfLongs())
@@ -142,7 +139,6 @@ class PSPTempListFactory(AnyObject):
                 |          Dim NewList As PspListOfObjects
                 |          Set NewList = PspListFact.CreateListOfObjects
 
-        :return: PSPListOfObjects
         :rtype: PSPListOfObjects
         """
         return PSPListOfObjects(self.psp_temp_list_factory.CreateListOfObjects())

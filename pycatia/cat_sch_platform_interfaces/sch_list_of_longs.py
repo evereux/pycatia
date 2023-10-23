@@ -52,7 +52,6 @@ class SchListOfLongs(AnyObject):
                 | 
                 |          NumberOfLongs = MyList.Count
 
-        :return: int
         :rtype: int
         """
 
@@ -85,7 +84,6 @@ class SchListOfLongs(AnyObject):
                 |          MyList.Append(MInteger)
 
         :param int i_long:
-        :return: None
         :rtype: None
         """
         return self.sch_list_of_longs.Append(i_long)
@@ -119,7 +117,6 @@ class SchListOfLongs(AnyObject):
                 |          Set MyLong = SchListOfLongs.Item(2)
 
         :param int i_index:
-        :return: int
         :rtype: int
         """
         return self.sch_list_of_longs.Item(i_index)
@@ -151,7 +148,6 @@ class SchListOfLongs(AnyObject):
                 |          MyList.Remove(1)
 
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.sch_list_of_longs.RemoveByIndex(i_index)

@@ -53,7 +53,7 @@ class AnalysisExport(AnyObject):
                 |         iFullPath
                 |             The full path of the file.
                 |             (Example:
-                |             “E:\tmp\ExportedLoads/CATAnalysisExport”).
+                |             "E:\tmp\ExportedLoads/CATAnalysisExport").
                 |         iType
                 |             The type of data to be exported: "ComputedLoads" or
                 |             "Displacements".
@@ -69,7 +69,6 @@ class AnalysisExport(AnyObject):
         :param str i_type:
         :param tuple i_occurrences:
         :param AnalysisManager i_manager:
-        :return: None
         :rtype: None
         """
         return self.analysis_export.Export(i_full_path, i_type, i_occurrences, i_manager.com_object)

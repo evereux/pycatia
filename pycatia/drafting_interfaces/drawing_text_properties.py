@@ -53,7 +53,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.AnchorPoint = catRight
 
-        :return: int
         :rtype: int
         """
 
@@ -84,7 +83,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.Blanking = catBlankingOnGeom
 
-        :return: int
         :rtype: int
         """
 
@@ -116,7 +114,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          oVal = MyText.Bold
 
-        :return: int
         :rtype: int
         """
 
@@ -149,7 +146,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 |          B=0   A=255)
                 |          MyText.Color = redCol
 
-        :return: int
         :rtype: int
         """
 
@@ -180,7 +176,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.SetFontName("Courrier 10 BT")
 
-        :return: str
         :rtype: str
         """
 
@@ -212,7 +207,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 |          iFontSize = 3.5
                 |          MyText.SetFontSize 0, 0, iFontSize
 
-        :return: float
         :rtype: float
         """
 
@@ -243,7 +237,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.FrameType = catEllipse
 
-        :return: int
         :rtype: int
         """
 
@@ -275,7 +268,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.Italic = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -308,7 +300,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.Justification = catRight
 
-        :return: int
         :rtype: int
         """
 
@@ -340,7 +331,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.Kerning = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -371,7 +361,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.Mirror = catTextNoFlip
 
-        :return: int
         :rtype: int
         """
 
@@ -403,7 +392,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          oval = MyText.Overline()
 
-        :return: int
         :rtype: int
         """
 
@@ -436,7 +424,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.StrikeThru = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -468,7 +455,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.Subscript = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -501,7 +487,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          MyText.Superscript = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -533,7 +518,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 | 
                 |          oval = MyText.Underline
 
-        :return: int
         :rtype: int
         """
 
@@ -579,7 +563,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 |      MyText.ActivateFrame itype
 
         :param int i_type:
-        :return: None
         :rtype: None
         """
         return self.drawing_text_properties.ActivateFrame(i_type)
@@ -618,7 +601,6 @@ class DrawingTextProperties(CATBaseDispatch):
                 |     Copyright © 1999-2011, Dassault Systèmes. All rights
                 |     reserved.
 
-        :return: None
         :rtype: None
         """
         return self.drawing_text_properties.Update()

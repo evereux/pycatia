@@ -79,7 +79,6 @@ class CD5Engine(AnyObject):
                 |          oCD5Engine.ExpandMode = "LatestVersion"
                 |          MsgBox oCD5Engine.ExpandMode
 
-        :return: str
         :rtype: str
         """
 
@@ -112,7 +111,6 @@ class CD5Engine(AnyObject):
                 |
                 |          oCD5Engine.IncludeAllChildren = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -150,7 +148,6 @@ class CD5Engine(AnyObject):
                 |          oCD5Engine.RelatedDesigns = "Associated Drawings"
                 |          MsgBox oCD5Engine.RelatedDesigns
 
-        :return: str
         :rtype: str
         """
 
@@ -212,7 +209,6 @@ class CD5Engine(AnyObject):
         :param str i_user_name:
         :param str i_user_password:
         :param str i_security_context:
-        :return: None
         :rtype: None
         """
         return self.cd5_engine.Connect(i_user_name, i_user_password, i_security_context)
@@ -235,7 +231,6 @@ class CD5Engine(AnyObject):
                 |
                 |          oCD5Engine.Disconnect
 
-        :return: None
         :rtype: None
         """
         return self.cd5_engine.Disconnect()
@@ -276,7 +271,6 @@ class CD5Engine(AnyObject):
         :param str i_type:
         :param str i_name:
         :param str i_revision:
-        :return: CD5ID
         :rtype: CD5ID
         """
         return CD5ID(self.cd5_engine.GetIDFromTNR(i_type, i_name, i_revision))
@@ -321,7 +315,6 @@ class CD5Engine(AnyObject):
         :param str i_name:
         :param str i_revision:
         :param str i_version:
-        :return: CD5ID
         :rtype: CD5ID
         """
         return CD5ID(self.cd5_engine.GetIDFromTNRV(i_type, i_name, i_revision, i_version))
@@ -355,7 +348,6 @@ class CD5Engine(AnyObject):
                 |          Set oCD5Structure = oCD5Engine.GetStructure(iCD5ID)
 
         :param CD5ID i_cd5_id:
-        :return: CD5Structure
         :rtype: CD5Structure
         """
         return CD5Structure(self.cd5_engine.GetStructure(i_cd5_id.com_object))
@@ -395,7 +387,6 @@ class CD5Engine(AnyObject):
                 |          oCD5Engine.InteractiveOpen(myCD5ID)
 
         :param CD5ID i_cd5_id:
-        :return: None
         :rtype: None
         """
         return self.cd5_engine.InteractiveOpen(i_cd5_id.com_object)
@@ -441,7 +432,6 @@ class CD5Engine(AnyObject):
                 |            MsgBox "Not Connected"
                 |          End If
 
-        :return: bool
         :rtype: bool
         """
         return self.cd5_engine.IsConnected()
@@ -480,7 +470,6 @@ class CD5Engine(AnyObject):
                 |          Set oDocument = oCD5Engine.Open(myCD5ID)
 
         :param CD5ID i_cd5_id:
-        :return: Document
         :rtype: Document
         """
         return Document(self.cd5_engine.Open(i_cd5_id.com_object))
@@ -525,7 +514,6 @@ class CD5Engine(AnyObject):
                 |          Set oDocument = oCD5Engine.PartialOpen(iCD5Structure)
 
         :param CD5Structure i_cd5_structure:
-        :return: Document
         :rtype: Document
         """
         return Document(self.cd5_engine.PartialOpen(i_cd5_structure.com_object))

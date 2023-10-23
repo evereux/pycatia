@@ -52,7 +52,6 @@ class PSPListOfObjects(AnyObject):
                 | 
                 |          NumberOfObjects = MyList.Count
 
-        :return: int
         :rtype: int
         """
 
@@ -82,7 +81,6 @@ class PSPListOfObjects(AnyObject):
                 |          MyList.Append(MyObject)
 
         :param AnyObject i_object:
-        :return: None
         :rtype: None
         """
         return self.psp_list_of_objects.Append(i_object.com_object)
@@ -119,7 +117,6 @@ class PSPListOfObjects(AnyObject):
 
         :param int i_index:
         :param str i_interface_name:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.psp_list_of_objects.Item(i_index, i_interface_name))
@@ -149,7 +146,6 @@ class PSPListOfObjects(AnyObject):
                 |          MyList.RemoveByIndex (2)
 
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.psp_list_of_objects.RemoveByIndex(i_index)

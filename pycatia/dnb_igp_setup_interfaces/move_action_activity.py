@@ -73,7 +73,6 @@ class MoveActionActivity(Activity):
                 |            HomeName  = "Home.2"
                 |            objMoveAct.HomeName=HomeName
 
-        :return: str
         :rtype: str
         """
 
@@ -118,7 +117,6 @@ class MoveActionActivity(Activity):
                 |            Next
                 |            objMoveAct.JointValues=ListOfJointValues
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -153,7 +151,6 @@ class MoveActionActivity(Activity):
                 |            Dim  TgtType As String
                 |            TgtType=objMoveAct.TargetType
 
-        :return: str
         :rtype: str
         """
 
