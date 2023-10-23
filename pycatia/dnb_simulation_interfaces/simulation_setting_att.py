@@ -75,7 +75,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetASNavigationModeInfo(io_admin_level, io_locked)
@@ -112,7 +111,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetASStepSizeInfo(io_admin_level, io_locked)
@@ -149,7 +147,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetAthAnnotationInfo(io_admin_level, io_locked)
@@ -186,7 +183,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetAthDisableSimInfo(io_admin_level, io_locked)
@@ -223,7 +219,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetAthEndConditionInfo(io_admin_level, io_locked)
@@ -260,7 +255,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetAthHyperlinkInfo(io_admin_level, io_locked)
@@ -297,7 +291,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetAthSelAgentDlgInfo(io_admin_level, io_locked)
@@ -334,7 +327,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetAthStateMgtInfo(io_admin_level, io_locked)
@@ -371,7 +363,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetAthTextMsgInfo(io_admin_level, io_locked)
@@ -408,7 +399,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetAthViewpointInfo(io_admin_level, io_locked)
@@ -445,7 +435,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetPSCycleTimeInfo(io_admin_level, io_locked)
@@ -482,7 +471,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetPSDynClashModeInfo(io_admin_level, io_locked)
@@ -519,7 +507,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetPSGraphicSimStepInfo(io_admin_level, io_locked)
@@ -556,7 +543,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetPSGraphicUpdateInfo(io_admin_level, io_locked)
@@ -593,7 +579,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetPVEndConditionInfo(io_admin_level, io_locked)
@@ -630,7 +615,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetPVStateMgtInfo(io_admin_level, io_locked)
@@ -667,7 +651,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetRunAnnotBehaviorInfo(io_admin_level, io_locked)
@@ -704,7 +687,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetRunAnnotationInfo(io_admin_level, io_locked)
@@ -741,7 +723,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetRunEndConditionInfo(io_admin_level, io_locked)
@@ -778,7 +759,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetRunHlnkBehaviorInfo(io_admin_level, io_locked)
@@ -815,7 +795,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetRunHyperlinkInfo(io_admin_level, io_locked)
@@ -852,7 +831,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetRunPauseInfo(io_admin_level, io_locked)
@@ -889,7 +867,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetRunStateMgtInfo(io_admin_level, io_locked)
@@ -926,7 +903,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetRunStepSizeInfo(io_admin_level, io_locked)
@@ -963,7 +939,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetRunTextBehaviorInfo(io_admin_level, io_locked)
@@ -1000,7 +975,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetRunTextMsgInfo(io_admin_level, io_locked)
@@ -1037,7 +1011,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetRunViewpointInfo(io_admin_level, io_locked)
@@ -1074,7 +1047,6 @@ class SimulationSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.simulation_setting_att.GetRunVisBehaviorInfo(io_admin_level, io_locked)
@@ -1101,7 +1073,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetASNavigationModeLock(i_locked)
@@ -1143,7 +1114,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetASStepSizeLock(i_locked)
@@ -1185,7 +1155,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetAthAnnotationLock(i_locked)
@@ -1227,7 +1196,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetAthDisableSimLock(i_locked)
@@ -1269,7 +1237,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetAthEndConditionLock(i_locked)
@@ -1311,7 +1278,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetAthHyperlinkLock(i_locked)
@@ -1353,7 +1319,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetAthSelAgentDlgLock(i_locked)
@@ -1395,7 +1360,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetAthStateMgtLock(i_locked)
@@ -1437,7 +1401,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetAthTextMsgLock(i_locked)
@@ -1479,7 +1442,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetAthViewpointLock(i_locked)
@@ -1521,7 +1483,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetPSCycleTimeLock(i_locked)
@@ -1563,7 +1524,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetPSDynClashModeLock(i_locked)
@@ -1605,7 +1565,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetPSGraphicSimStepLock(i_locked)
@@ -1647,7 +1606,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetPSGraphicUpdateLock(i_locked)
@@ -1689,7 +1647,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetPVEndConditionLock(i_locked)
@@ -1731,7 +1688,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetPVStateMgtLock(i_locked)
@@ -1773,7 +1729,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetRunAnnotBehaviorLock(i_locked)
@@ -1815,7 +1770,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetRunAnnotationLock(i_locked)
@@ -1857,7 +1811,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetRunEndConditionLock(i_locked)
@@ -1899,7 +1852,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetRunHlnkBehaviorLock(i_locked)
@@ -1941,7 +1893,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetRunHyperlinkLock(i_locked)
@@ -1983,7 +1934,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetRunPauseLock(i_locked)
@@ -2025,7 +1975,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetRunStateMgtLock(i_locked)
@@ -2067,7 +2016,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetRunStepSizeLock(i_locked)
@@ -2109,7 +2057,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetRunTextBehaviorLock(i_locked)
@@ -2151,7 +2098,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetRunTextMsgLock(i_locked)
@@ -2193,7 +2139,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetRunViewpointLock(i_locked)
@@ -2235,7 +2180,6 @@ class SimulationSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.simulation_setting_att.SetRunVisBehaviorLock(i_locked)

@@ -59,7 +59,6 @@ class SketchBasedShape(Shape):
                 | 
                 |          Set sketchPad = firstPad.Sketch
 
-        :return: Sketch
         :rtype: Sketch
         """
 
@@ -76,7 +75,6 @@ class SketchBasedShape(Shape):
                 |     Returns or sets a profile element.
 
         :param Reference i_profile_element:
-        :return: None
         :rtype: None
         """
         return self.sketch_based_shape.SetProfileElement(i_profile_element.com_object)

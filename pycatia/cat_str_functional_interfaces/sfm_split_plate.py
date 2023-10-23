@@ -64,7 +64,6 @@ class SFMSplitPlate(AnyObject):
                 |              Set Welds = Split_Plate.GetWelds(Nothing)
 
         :param Reference i_operating_ele:
-        :return: SFMWelds
         :rtype: SFMWelds
         """
         return SFMWelds(self.sfm_split_plate.GetWelds(i_operating_ele.com_object))

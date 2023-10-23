@@ -64,7 +64,6 @@ class HybridShapeThickness(HybridShape):
                 |          Dim Orient As long
                 |          Set Orient = Thickness1.Orientation
 
-        :return: int
         :rtype: int
         """
 
@@ -95,7 +94,6 @@ class HybridShapeThickness(HybridShape):
                 |      Dim ThickVal1 As double
                 |      Set ThickVal1 = Thick.Thickness1
 
-        :return: float
         :rtype: float
         """
 
@@ -127,7 +125,6 @@ class HybridShapeThickness(HybridShape):
                 |          Dim ThickVal1 As Length
                 |          Set ThickVal1 = Thick.Thickness1Value
 
-        :return: Length
         :rtype: Length
         """
 
@@ -150,7 +147,6 @@ class HybridShapeThickness(HybridShape):
                 |      Dim ThickVal2 As double
                 |      Set ThickVal2 = Thick.Thickness2
 
-        :return: float
         :rtype: float
         """
 
@@ -182,7 +178,6 @@ class HybridShapeThickness(HybridShape):
                 |          Dim ThickVal2 As Length
                 |          Set ThickVal2 = Thick.Thickness2Value
 
-        :return: Length
         :rtype: Length
         """
 

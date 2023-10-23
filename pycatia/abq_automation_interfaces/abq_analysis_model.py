@@ -60,7 +60,6 @@ class ABQAnalysisModel(AnyObject):
                 |          Dim abqModel As ABQAnalysisModel
                 |          Set analysisCases = abqModel.Cases
 
-        :return: ABQAnalysisCases
         :rtype: ABQAnalysisCases
         """
 
@@ -88,7 +87,6 @@ class ABQAnalysisModel(AnyObject):
                 |          Dim abqModel As ABQAnalysisModel
                 |          Set properties = abqModel.Properties
 
-        :return: ABQProperties
         :rtype: ABQProperties
         """
 

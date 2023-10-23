@@ -56,7 +56,6 @@ class FunctionalDescription(FunctionalElement):
                 | 
                 |     Get the Actions collection.
 
-        :return: FunctionalActions
         :rtype: FunctionalActions
         """
 
@@ -73,7 +72,6 @@ class FunctionalDescription(FunctionalElement):
                 | 
                 |     Get the ActionsGroups collection.
 
-        :return: FunctActionsGroups
         :rtype: FunctActionsGroups
         """
 
@@ -90,7 +88,6 @@ class FunctionalDescription(FunctionalElement):
                 | 
                 |     Get the Objects collection.
 
-        :return: FunctionalObjects
         :rtype: FunctionalObjects
         """
 
@@ -109,7 +106,6 @@ class FunctionalDescription(FunctionalElement):
                 | 
                 |     (gives a NULL pointer if the description is a itself variant)
 
-        :return: FunctionalVariants
         :rtype: FunctionalVariants
         """
 
@@ -130,7 +126,6 @@ class FunctionalDescription(FunctionalElement):
 
         :param float i_x:
         :param float i_y:
-        :return: FunctionalPosition
         :rtype: FunctionalPosition
         """
         return FunctionalPosition(self.functional_description.CreatePosition(i_x, i_y))
@@ -146,7 +141,6 @@ class FunctionalDescription(FunctionalElement):
                 |     Returns the Facet.
 
         :param FunctionalFacetMgr i_fm:
-        :return: FunctionalFacet
         :rtype: FunctionalFacet
         """
         return FunctionalFacet(self.functional_description.GetFacet(i_fm.com_object))
@@ -162,7 +156,6 @@ class FunctionalDescription(FunctionalElement):
                 |     Returns the Facet.
 
         :param str i_fm:
-        :return: FunctionalFacet
         :rtype: FunctionalFacet
         """
         return FunctionalFacet(self.functional_description.GetFacetByName(i_fm))
@@ -180,7 +173,6 @@ class FunctionalDescription(FunctionalElement):
 
         :param FunctionalFacetMgr i_fm:
         :param bool i_create_if_necessary:
-        :return: FunctionalFacet
         :rtype: FunctionalFacet
         """
         return FunctionalFacet(self.functional_description.SearchFacet(i_fm.com_object, i_create_if_necessary))
@@ -198,7 +190,6 @@ class FunctionalDescription(FunctionalElement):
 
         :param str i_fm:
         :param bool i_create_if_necessary:
-        :return: FunctionalFacet
         :rtype: FunctionalFacet
         """
         return FunctionalFacet(self.functional_description.SearchFacetByName(i_fm, i_create_if_necessary))
@@ -215,7 +206,6 @@ class FunctionalDescription(FunctionalElement):
                 | 
                 |     To remove the protection against modifications.
 
-        :return: None
         :rtype: None
         """
         return self.functional_description.Unlock()

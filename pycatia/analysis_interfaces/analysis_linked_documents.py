@@ -62,7 +62,6 @@ class AnalysisLinkedDocuments(Collection):
                 |         The retrieved linked Document
 
         :param cat_variant i_index:
-        :return: Document
         :rtype: Document
         """
         return Document(self.analysis_linked_documents.Item(i_index))

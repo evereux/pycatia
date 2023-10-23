@@ -72,7 +72,6 @@ class AnyObject(PyCATIA):
                 |          Dim CurrentApplication As Application
                 |          Set CurrentApplication = MyDoc.Application
 
-        :return: com_object
         :rtype: com_object
         """
         from pycatia.in_interfaces.application import Application
@@ -106,7 +105,6 @@ class AnyObject(PyCATIA):
                 |
                 |          MyObjectName = MyObject.Name
 
-        :return: str
         :rtype: str
         """
 
@@ -144,7 +142,6 @@ class AnyObject(PyCATIA):
                 |          Dim ParentObject As AnyObject
                 |          Set ParentObject = GivenObject.Parent
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -171,7 +168,6 @@ class AnyObject(PyCATIA):
                 |         The searched object
 
         :param str id_name:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.com_object.GetItem(id_name))

@@ -72,7 +72,6 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
                 |      Dim HybShpCircleDiameter As Length
                 |      HybShpCircleDiameter = HybShpCircle.Diameter
 
-        :return: Length
         :rtype: Length
         """
 
@@ -100,7 +99,6 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
                 | 
                 |           HybShpCircle.DiameterMode = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -138,7 +136,6 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
                 | 
                 |          HybShpCircleOrientation = HybShpCircle.Orientation
 
-        :return: int
         :rtype: int
         """
 
@@ -172,7 +169,6 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
                 |          Dim HybShpCircleFirstPassingPoint As Reference
                 |          Set HybShpCircleFirstPassingPoint = HybShpCircle.Pt1
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -204,7 +200,6 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
                 | 
                 |          HybShpCircle.Pt2 Point12
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -244,7 +239,6 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
                 |      Dim HybShpCircleRadius As Length
                 |      HybShpCircleRadius = HybShpCircle.Radius
 
-        :return: Length
         :rtype: Length
         """
 
@@ -269,7 +263,6 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
                 |          Dim HybShpCircleSupportSurf As Reference 
                 |          HybShpCircleSupportSurf = HybShpCircle.Support
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -298,7 +291,6 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
                 |         oGeod
                 |             geodesic type : when TRUE, the circle is geodesic.
 
-        :return: bool
         :rtype: bool
         """
         return self.hybrid_shape_circle2_points_rad.IsGeodesic()
@@ -314,7 +306,6 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
                 |     Sets GeometryOnSupport of circle.
                 |     It puts the circle on the surface. S_OK if OK, E_FAIL if fail
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_circle2_points_rad.SetGeometryOnSupport()
@@ -330,7 +321,6 @@ class HybridShapeCircle2PointsRad(HybridShapeCircle):
                 |     Inactivates GeometryOnSupport of circle.
                 |     Note: The circle becomes euclidean.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_circle2_points_rad.UnsetGeometryOnSupport()

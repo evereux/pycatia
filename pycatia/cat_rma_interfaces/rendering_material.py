@@ -49,7 +49,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the adaptive coefficient of a material. Adaptive coefficient
                 |     value is between 1 an 8.
 
-        :return: int
         :rtype: int
         """
         return self.rendering_material.AdaptiveCoeff
@@ -79,7 +78,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the ambient coefficient of a material. Ambient coefficient
                 |     value is between 0 to 1.
 
-        :return: float
         :rtype: float
         """
         return self.rendering_material.AmbientCoefficient
@@ -110,7 +108,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the texture bump. Image texture bump value is between -10
                 |     to 10.
 
-        :return: float
         :rtype: float
         """
         return self.rendering_material.Bump
@@ -141,7 +138,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the height of the join of a chessboard texture. Height
                 |     value is between 0 to 100. N.B. Parameter use for CHESSBOARD texture type only.
 
-        :return: float
         :rtype: float
         """
         return self.rendering_material.ChessboardJointHeight
@@ -172,7 +168,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the width of the join of a chessboard texture. Width value
                 |     is between 0 to 100. N.B. Parameter use for CHESSBOARD texture type only.
 
-        :return: float
         :rtype: float
         """
         return self.rendering_material.ChessboardJointWidth
@@ -204,7 +199,6 @@ class RenderingMaterial(AnyObject):
                 |     indicates the offset between each line of the chessboard texture. Offset value
                 |     is between 0 to 0.5. N.B. Parameter use for CHESSBOARD texture type only.
 
-        :return: float
         :rtype: float
         """
 
@@ -236,7 +230,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the height of the tile of a chessboard texture. Height
                 |     value is between 0 to 100. N.B. Parameter use for CHESSBOARD texture type only.
 
-        :return: float
         :rtype: float
         """
 
@@ -268,7 +261,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the width of the tile of a chessboard texture. Width value
                 |     is between 0 to 100. N.B. Parameter use for CHESSBOARD texture type only.
 
-        :return: float
         :rtype: float
         """
 
@@ -302,7 +294,6 @@ class RenderingMaterial(AnyObject):
                 |     alternate vein texture types N.B. Parameter useless for ROCK textures (color
                 |     number is fixed) and IMAGE texture
 
-        :return: int
         :rtype: int
         """
 
@@ -328,7 +319,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the diffuse coefficient of a material. Diffuse coefficient
                 |     value is between 0 to 1.
 
-        :return: float
         :rtype: float
         """
 
@@ -359,7 +349,6 @@ class RenderingMaterial(AnyObject):
                 |
                 |     Returns or sets the environment image pathname of a material.
 
-        :return: str
         :rtype: str
         """
 
@@ -385,7 +374,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the texture flip status along U axis. N.B. Parameter use
                 |     for IMAGE texture type only
 
-        :return: bool
         :rtype: bool
         """
 
@@ -411,7 +399,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the texture flip status along V axis. N.B. Parameter use
                 |     for IMAGE texture type only
 
-        :return: bool
         :rtype: bool
         """
 
@@ -444,7 +431,6 @@ class RenderingMaterial(AnyObject):
                 |         4: Auto mapping
                 |         5: Manual mapping
 
-        :return: int
         :rtype: int
         """
 
@@ -476,7 +462,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the texture orientation. Orientation value should be
                 |     between -360 to +360 degrees N.B. Parameter use for IMAGE texture type only
 
-        :return: float
         :rtype: float
         """
 
@@ -508,7 +493,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the texture position along U axis. N.B. Parameter use for
                 |     IMAGE texture type only
 
-        :return: float
         :rtype: float
         """
 
@@ -534,7 +518,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the texture position along V axis. N.B. Parameter use for
                 |     IMAGE texture type only
 
-        :return: float
         :rtype: float
         """
 
@@ -560,7 +543,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the preview size of a material. Preview size value is 0.1mm
                 |     minimum.
 
-        :return: float
         :rtype: float
         """
 
@@ -587,7 +569,6 @@ class RenderingMaterial(AnyObject):
                 |     reflection height value is between 0 to 1. N.B. Parameter use for CUSTOM
                 |     reflection mode only.
 
-        :return: float
         :rtype: float
         """
 
@@ -620,7 +601,6 @@ class RenderingMaterial(AnyObject):
                 |     reflection length value is between 0 to 1. N.B. Parameter use for CUSTOM
                 |     reflection mode only.
 
-        :return: float
         :rtype: float
         """
 
@@ -659,7 +639,6 @@ class RenderingMaterial(AnyObject):
                 |         3: BRIGHT_PLASTIC reflection mode
                 |         4: CUSTOM reflection mode
 
-        :return: int
         :rtype: int
         """
 
@@ -691,7 +670,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the reflectivity coefficient of a material. Reflectivity
                 |     coefficient value is between 0 to 1.
 
-        :return: float
         :rtype: float
         """
 
@@ -723,7 +701,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the refraction coefficient of a material. Refraction
                 |     coefficient value is between 1 to 2.
 
-        :return: float
         :rtype: float
         """
 
@@ -755,7 +732,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the texture repeat status along U axis. N.B. Parameter use
                 |     for IMAGE texture type only
 
-        :return: bool
         :rtype: bool
         """
 
@@ -781,7 +757,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the texture repeat status along V axis. N.B. Parameter use
                 |     for IMAGE texture type only
 
-        :return: bool
         :rtype: bool
         """
 
@@ -807,7 +782,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the texture scale along U axis. U scale value is between 0
                 |     to 100. N.B. Parameter use for IMAGE texture type only
 
-        :return: float
         :rtype: float
         """
 
@@ -839,7 +813,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the texture scale along V axis. V scale value is between 0
                 |     to 100. N.B. Parameter use for IMAGE texture type only
 
-        :return: float
         :rtype: float
         """
 
@@ -871,7 +844,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the specular coefficient of a material. Specular
                 |     coefficient value is between 0 to 1.
 
-        :return: float
         :rtype: float
         """
 
@@ -903,7 +875,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the specular exponent of a material. Specular exponent
                 |     value is between 0 to 1.
 
-        :return: float
         :rtype: float
         """
 
@@ -935,7 +906,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the 3d texture amplitude coefficient. Amplitude value is
                 |     between 0 to 1. N.B. Parameter use for MARBLE and ROCK texture type only.
 
-        :return: float
         :rtype: float
         """
 
@@ -967,7 +937,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the 3d texture complexity. Complexity value is between 0 to
                 |     10. N.B. Parameter use for MARBLE and ROCK texture types only.
 
-        :return: int
         :rtype: int
         """
 
@@ -999,7 +968,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the 3d texture gain coefficient. Gain value is between 0 to
                 |     2. N.B. Parameter use for ROCK texture type only.
 
-        :return: float
         :rtype: float
         """
 
@@ -1031,7 +999,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the texture image pathname of a material. N.B. Parameter
                 |     use for IMAGE texture type only
 
-        :return: str
         :rtype: str
         """
 
@@ -1058,7 +1025,6 @@ class RenderingMaterial(AnyObject):
                 |     is between 1 to 10. N.B. Parameter use for VEIN, ALTERNATE VEIN and ROCK
                 |     texture types only.
 
-        :return: float
         :rtype: float
         """
 
@@ -1090,7 +1056,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the 3d texture turbulence status. N.B. Parameter use for
                 |     ROCK texture type only.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1125,7 +1090,6 @@ class RenderingMaterial(AnyObject):
                 |         5: ROCK texture
                 |         6: CHESSBOARD texture
 
-        :return: int
         :rtype: int
         """
 
@@ -1158,7 +1122,6 @@ class RenderingMaterial(AnyObject):
                 |     is between 0 to 10. N.B. Parameter use for VEIN and ALTERNATE VEIN texture
                 |     types only.
 
-        :return: float
         :rtype: float
         """
 
@@ -1190,7 +1153,6 @@ class RenderingMaterial(AnyObject):
                 |     Returns or sets the transparency coefficient of a material. Transparency
                 |     coefficient value is between 0 to 1.
 
-        :return: float
         :rtype: float
         """
 
@@ -1236,7 +1198,6 @@ class RenderingMaterial(AnyObject):
                 |         image textures.
 
         :param int i_color_index:
-        :return: tuple
         :rtype: tuple
         """
         vba_function_name = "get_3d_texture_color"
@@ -1278,7 +1239,6 @@ class RenderingMaterial(AnyObject):
                 |         N.B. Parameter useless for rock, chessboard and image textures.
 
         :param int i_color_index:
-        :return: tuple
         :rtype: tuple
         """
         vba_function_name = "get_3d_texture_color_coefficient"
@@ -1313,7 +1273,6 @@ class RenderingMaterial(AnyObject):
                 |         rotationY, rotationZ.
                 |         The array must be previously initialized.
 
-        :return: tuple
         :rtype: tuple
         """
         vba_function_name = "get_3d_texture_orientation"
@@ -1346,7 +1305,6 @@ class RenderingMaterial(AnyObject):
                 |         positionY, positionZ.
                 |         The array must be previously initialized.
 
-        :return: tuple
         :rtype: tuple
         """
         vba_function_name = "get_3d_texture_position"
@@ -1378,7 +1336,6 @@ class RenderingMaterial(AnyObject):
                 |         scaleZ.
                 |         The array must be previously initialized.
 
-        :return: tuple
         :rtype: tuple
         """
         vba_function_name = "get_3d_texture_scale"
@@ -1409,7 +1366,6 @@ class RenderingMaterial(AnyObject):
                 |         The r, g, b values ranges from 0 to 255.
                 |         The array must be previously initialized.
 
-        :return: tuple
         :rtype: tuple
         """
         vba_function_name = "get_ambient_color"
@@ -1440,7 +1396,6 @@ class RenderingMaterial(AnyObject):
                 |         The r, g, b values ranges from 0 to 255.
                 |         The array must be previously initialized.
 
-        :return: tuple
         :rtype: tuple
         """
         vba_function_name = "get_diffuse_color"
@@ -1471,7 +1426,6 @@ class RenderingMaterial(AnyObject):
                 |         The r, g, b values ranges from 0 to 255.
                 |         The array must be previously initialized.
 
-        :return: tuple
         :rtype: tuple
         """
         vba_function_name = "get_specular_color"
@@ -1505,7 +1459,6 @@ class RenderingMaterial(AnyObject):
                 |             The r, g, b values ranges from 0 to 255.
                 |             The array must be previously initialized.
 
-        :return: tuple
         :rtype: tuple
         """
         vba_function_name = "get_transparency_color"
@@ -1545,7 +1498,6 @@ class RenderingMaterial(AnyObject):
 
         :param int i_color_index:
         :param tuple i_3d_texture_color:
-        :return: None
         :rtype: None
         """
         return self.rendering_material.Put3DTextureColor(i_color_index, i_3d_texture_color)
@@ -1577,7 +1529,6 @@ class RenderingMaterial(AnyObject):
 
         :param int i_color_index:
         :param float i_3d_texture_color_coefficient:
-        :return: None
         :rtype: None
         """
         return self.rendering_material.Put3DTextureColorCoefficient(i_color_index, i_3d_texture_color_coefficient)
@@ -1604,7 +1555,6 @@ class RenderingMaterial(AnyObject):
                 |             The array must be previously initialized.
 
         :param tuple i_3d_texture_orientation:
-        :return: None
         :rtype: None
         """
         return self.rendering_material.Put3DTextureOrientation(i_3d_texture_orientation)
@@ -1631,7 +1581,6 @@ class RenderingMaterial(AnyObject):
                 |             The array must be previously initialized.
 
         :param tuple i_3d_texture_position:
-        :return: None
         :rtype: None
         """
         return self.rendering_material.Put3DTexturePosition(i_3d_texture_position)
@@ -1657,7 +1606,6 @@ class RenderingMaterial(AnyObject):
                 |             The array must be previously initialized.
 
         :param tuple i_3d_texture_scale:
-        :return: None
         :rtype: None
         """
         return self.rendering_material.Put3DTextureScale(i_3d_texture_scale)
@@ -1682,7 +1630,6 @@ class RenderingMaterial(AnyObject):
                 |             The array must be previously initialized.
 
         :param tuple i_ambient_color:
-        :return: None
         :rtype: None
         """
         return self.rendering_material.PutAmbientColor(i_ambient_color)
@@ -1707,7 +1654,6 @@ class RenderingMaterial(AnyObject):
                 |             The array must be previously initialized.
 
         :param tuple i_diffuse_color:
-        :return: None
         :rtype: None
         """
         return self.rendering_material.PutDiffuseColor(i_diffuse_color)
@@ -1732,7 +1678,6 @@ class RenderingMaterial(AnyObject):
                 |             The array must be previously initialized.
 
         :param tuple i_specular_color:
-        :return: None
         :rtype: None
         """
         return self.rendering_material.PutSpecularColor(i_specular_color)
@@ -1758,7 +1703,6 @@ class RenderingMaterial(AnyObject):
                 |             The array must be previously initialized.
 
         :param tuple i_transparency_color:
-        :return: None
         :rtype: None
         """
         return self.rendering_material.PutTransparencyColor(i_transparency_color)

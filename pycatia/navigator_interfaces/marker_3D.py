@@ -56,7 +56,6 @@ class Marker3D(AnyObject):
                 |             Dim status As Integer
                 |             status = NewMarker3D.Fill
 
-        :return: int
         :rtype: int
         """
 
@@ -91,7 +90,6 @@ class Marker3D(AnyObject):
                 |             Dim status As Integer
                 |             status = NewMarker3D.Frame
 
-        :return: int
         :rtype: int
         """
 
@@ -125,7 +123,6 @@ class Marker3D(AnyObject):
                 |             Dim text As String
                 |             text = NewMarker3D.Text
 
-        :return: str
         :rtype: str
         """
 
@@ -159,7 +156,6 @@ class Marker3D(AnyObject):
                 |             Dim font As String
                 |             font = NewMarker3D.TextFont
 
-        :return: str
         :rtype: str
         """
 
@@ -193,7 +189,6 @@ class Marker3D(AnyObject):
                 |             Dim orientation As CatMarkerTextOrientation
                 |             orientation = NewMarker3D.TextOrientation
 
-        :return: int
         :rtype: int
         """
 
@@ -227,7 +222,6 @@ class Marker3D(AnyObject):
                 |             Dim size As Double
                 |             size = NewMarker3D.TextSize
 
-        :return: float
         :rtype: float
         """
 
@@ -261,7 +255,6 @@ class Marker3D(AnyObject):
                 |             Dim type As CatMarker3DType
                 |             type = NewMarker3D.Type
 
-        :return: int
         :rtype: int
         """
 
@@ -291,7 +284,6 @@ class Marker3D(AnyObject):
                 |             NewMarker3D.AddObject(ThisProduct)
 
         :param AnyObject i_object:
-        :return: None
         :rtype: None
         """
         return self.marker_3d.AddObject(i_object.com_object)
@@ -316,7 +308,6 @@ class Marker3D(AnyObject):
                 |             Dim number As Integer
                 |             number = NewMarker3D.CountObject
 
-        :return: int
         :rtype: int
         """
         return self.marker_3d.CountObject()
@@ -360,7 +351,6 @@ class Marker3D(AnyObject):
 
         :param cat_variant i_index:
         :param tuple o_coordinates:
-        :return: None
         :rtype: None
         """
         return self.marker_3d.GetObjectPositions(i_index, o_coordinates)
@@ -397,7 +387,6 @@ class Marker3D(AnyObject):
                 |             NewMarker3D.GetTextPositions Coordinates
 
         :param tuple o_coordinates:
-        :return: None
         :rtype: None
         """
         return self.marker_3d.GetTextPositions(o_coordinates)
@@ -448,7 +437,6 @@ class Marker3D(AnyObject):
                 |             Set ThisObject = NewMarker3D.ItemObject(9)
 
         :param cat_variant i_index:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.marker_3d.ItemObject(i_index)
@@ -480,7 +468,6 @@ class Marker3D(AnyObject):
                 |             NewMarker3D.RemoveObject(9)
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.marker_3d.RemoveObject(i_index)
@@ -524,7 +511,6 @@ class Marker3D(AnyObject):
 
         :param cat_variant i_index:
         :param tuple i_coordinates:
-        :return: None
         :rtype: None
         """
         return self.marker_3d.SetObjectPositions(i_index, i_coordinates)
@@ -561,7 +547,6 @@ class Marker3D(AnyObject):
                 |             NewMarker3D.SetTextPositions Coordinates
 
         :param tuple i_coordinates:
-        :return: None
         :rtype: None
         """
         return self.marker_3d.SetTextPositions(i_coordinates)
@@ -599,7 +584,6 @@ class Marker3D(AnyObject):
                 | 
                 |             NewMarker3D.Update
 
-        :return: None
         :rtype: None
         """
         return self.marker_3d.Update()

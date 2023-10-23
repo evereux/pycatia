@@ -63,7 +63,6 @@ class Clashes(Collection):
                 |             Dim NewClash As Clash
                 |             Set NewClash = TheClashes.Add
 
-        :return: Clash
         :rtype: Clash
         """
         return Clash(self.clashes.Add())
@@ -90,7 +89,6 @@ class Clashes(Collection):
                 |             Dim NewClash As Clash
                 |             Set NewClash = TheClashes.AddFromSel
 
-        :return: Clash
         :rtype: Clash
         """
         return Clash(self.clashes.AddFromSel())
@@ -130,7 +128,6 @@ class Clashes(Collection):
                 |             Set ThatClash = TheClashes.Item("Clash Of MyProduct")
 
         :param cat_variant i_index:
-        :return: Clash
         :rtype: Clash
         """
         return Clash(self.clashes.Item(i_index))
@@ -165,7 +162,6 @@ class Clashes(Collection):
                 |             TheClashes.Remove("Clash Of MyProduct")
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.clashes.Remove(i_index)

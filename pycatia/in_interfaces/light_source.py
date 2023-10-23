@@ -58,7 +58,6 @@ class LightSource(AnyObject):
                 |          LightSource.GetDirection direction
 
         :param tuple o_direction:
-        :return: None
         :rtype: None
         """
         return self.light_source.GetDirection(o_direction)
@@ -96,7 +95,6 @@ class LightSource(AnyObject):
                 |          LightSource.PutDirection Array(5,8,-2)
 
         :param tuple o_direction:
-        :return: None
         :rtype: None
         """
         return self.light_source.PutDirection(o_direction)

@@ -60,7 +60,6 @@ class AnnotationFactory2(Factory):
                 |             The new created Datum Feature.
 
         :param UserSurface i_surf:
-        :return: Annotation2
         :rtype: Annotation2
         """
         return Annotation2(self.annotation_factory_2.CreateDatum(i_surf.com_object))
@@ -75,7 +74,6 @@ class AnnotationFactory2(Factory):
                 | 
                 |     Create a Reference Frame (DRF). iType = 1 : Straightness 2 : AxisStraightness 3 : Flatness 4 : Circularity 5 : Cylindricity 6 : ProfileOfALine 7 : ProfileOfASurface 8 : Position
 
-        :return: Annotation2
         :rtype: Annotation2
         """
         return Annotation2(self.annotation_factory_2.CreateDatumReferenceFrame())
@@ -104,7 +102,6 @@ class AnnotationFactory2(Factory):
 
         :param UserSurface i_surf:
         :param Annotation2 i_datum:
-        :return: Annotation2
         :rtype: Annotation2
         """
         return Annotation2(self.annotation_factory_2.CreateDatumTarget(i_surf.com_object, i_datum.com_object))
@@ -148,7 +145,6 @@ class AnnotationFactory2(Factory):
         :param str i_noa_type:
         :param DrawingComponent i_ditto:
         :param bool i_stick_to_geometry_option:
-        :return: Annotation2
         :rtype: Annotation2
         """
         return Annotation2(self.annotation_factory_2.CreateDittoNOA(i_surf.com_object, i_noa_type, i_ditto.com_object,
@@ -195,7 +191,6 @@ class AnnotationFactory2(Factory):
         :param float i_y:
         :param float i_z:
         :param bool i_with_leader:
-        :return: Annotation2
         :rtype: Annotation2
         """
         return Annotation2(
@@ -241,7 +236,6 @@ class AnnotationFactory2(Factory):
         :param float i_y:
         :param float i_z:
         :param bool i_with_leader:
-        :return: Annotation2
         :rtype: Annotation2
         """
         return Annotation2(
@@ -265,7 +259,6 @@ class AnnotationFactory2(Factory):
                 |             The new created Flag Note.
 
         :param UserSurface i_surf:
-        :return: Annotation2
         :rtype: Annotation2
         """
         return Annotation2(self.annotation_factory_2.CreateFlagNote(i_surf.com_object))
@@ -297,7 +290,6 @@ class AnnotationFactory2(Factory):
         :param UserSurface i_surf:
         :param cat_variant i_type:
         :param cat_variant i_sub_type:
-        :return: Annotation2
         :rtype: Annotation2
         """
         return Annotation2(self.annotation_factory_2.CreateNonSemanticDimension(
@@ -323,7 +315,6 @@ class AnnotationFactory2(Factory):
                 |             The new created Roughness.
 
         :param UserSurface i_surf:
-        :return: Annotation2
         :rtype: Annotation2
         """
         return Annotation2(self.annotation_factory_2.CreateRoughness(i_surf.com_object))
@@ -349,7 +340,6 @@ class AnnotationFactory2(Factory):
         :param UserSurface i_surf:
         :param cat_variant i_type:
         :param cat_variant i_sub_type:
-        :return: Annotation2
         :rtype: Annotation2
         """
         return Annotation2(self.annotation_factory_2.CreateSemanticDimension(i_surf.com_object, i_type,
@@ -373,7 +363,6 @@ class AnnotationFactory2(Factory):
                 |             The new created Text.
 
         :param UserSurface i_surf:
-        :return: Annotation2
         :rtype: Annotation2
         """
         return Annotation2(self.annotation_factory_2.CreateText(i_surf.com_object))
@@ -397,7 +386,6 @@ class AnnotationFactory2(Factory):
                 |             The new created NOA.
 
         :param UserSurface i_surf:
-        :return: Annotation2
         :rtype: Annotation2
         """
         return Annotation2(self.annotation_factory_2.CreateTextNOA(i_surf.com_object))
@@ -426,7 +414,6 @@ class AnnotationFactory2(Factory):
 
         :param UserSurface i_surf:
         :param str i_noa_type:
-        :return: Annotation2
         :rtype: Annotation2
         """
         return Annotation2(self.annotation_factory_2.CreateTextNoteObjectAttribute(i_surf.com_object, i_noa_type))
@@ -453,7 +440,6 @@ class AnnotationFactory2(Factory):
 
         :param str i_text:
         :param Annotation2 i_annot:
-        :return: Annotation2
         :rtype: Annotation2
         """
         return Annotation2(self.annotation_factory_2.CreateTextOnAnnot(i_text, i_annot.com_object))
@@ -473,7 +459,6 @@ class AnnotationFactory2(Factory):
         :param cat_variant i_index:
         :param UserSurface i_surf:
         :param Annotation2 i_drf:
-        :return: Annotation2
         :rtype: Annotation2
         """
         return Annotation2(
@@ -492,7 +477,6 @@ class AnnotationFactory2(Factory):
 
         :param cat_variant i_index:
         :param UserSurface i_surf:
-        :return: Annotation2
         :rtype: Annotation2
         """
         return Annotation2(self.annotation_factory_2.CreateToleranceWithoutDRF(i_index, i_surf.com_object))
@@ -515,7 +499,6 @@ class AnnotationFactory2(Factory):
                 |             The new created Weld Feature.
 
         :param UserSurface i_surf:
-        :return: Annotation2
         :rtype: Annotation2
         """
         return Annotation2(self.annotation_factory_2.CreateWeld(i_surf.com_object))
@@ -542,7 +525,6 @@ class AnnotationFactory2(Factory):
 
         :param Annotation2 i_noa:
         :param UserSurface i_surf:
-        :return: Annotation2
         :rtype: Annotation2
         """
         return Annotation2(self.annotation_factory_2.InstanciateNOA(i_noa.com_object, i_surf.com_object))

@@ -72,7 +72,6 @@ class SDDProduct(AnyObject):
                 |              Dim FactoryObj As SfmFactory
                 |              Set FactoryObj = SddDesignUnit.GetCustomerFactory("SfmFactory")
 
-        :return: Part
         :rtype: Part
         """
         return Part(self.sdd_product.CreateDesignUnit())

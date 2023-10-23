@@ -83,7 +83,6 @@ class SweptVolumes(Collection):
         :param str i_shape_name:
         :param int i_activated_shape:
         :param int i_default_shape:
-        :return: SweptVolume
         :rtype: SweptVolume
         """
         return SweptVolume(
@@ -138,7 +137,6 @@ class SweptVolumes(Collection):
         :param str i_shape_name:
         :param int i_activated_shape:
         :param int i_default_shape:
-        :return: SweptVolume
         :rtype: SweptVolume
         """
         return SweptVolume(
@@ -164,7 +162,6 @@ class SweptVolumes(Collection):
                 | 
                 |     Cleans up.
 
-        :return: None
         :rtype: None
         """
         return self.swept_volumes.CleanUp()
@@ -210,7 +207,6 @@ class SweptVolumes(Collection):
         :param float i_wrapping_grain:
         :param float i_wrapping_ratio:
         :param float i_simplify_accuracy:
-        :return: Document
         :rtype: Document
         """
         return Document(
@@ -265,7 +261,6 @@ class SweptVolumes(Collection):
         :param float i_wrapping_grain:
         :param float i_wrapping_ratio:
         :param float i_simplif_accuracy:
-        :return: Document
         :rtype: Document
         """
         return Document(
@@ -320,7 +315,6 @@ class SweptVolumes(Collection):
         :param float i_wrapping_grain:
         :param float i_wrapping_ratio:
         :param float i_simplify_accuracy:
-        :return: Document
         :rtype: Document
         """
         return Document(
@@ -413,7 +407,6 @@ class SweptVolumes(Collection):
         :param float i_wrapping_ratio:
         :param float i_simplif_accuracy:
         :param tuple o_swept_volume_documents:
-        :return: None
         :rtype: None
         """
         return self.swept_volumes.ComputeSweptVolumes(
@@ -516,7 +509,6 @@ class SweptVolumes(Collection):
         :param float i_wrapping_ratio:
         :param float i_simplif_accuracy:
         :param tuple o_swept_volume_documents:
-        :return: None
         :rtype: None
         """
         return self.swept_volumes.ComputeSweptVolumesFromReplay(
@@ -620,7 +612,6 @@ class SweptVolumes(Collection):
         :param float i_wrapping_ratio:
         :param float i_simplify_accuracy:
         :param tuple o_swept_volume_documents:
-        :return: None
         :rtype: None
         """
         return self.swept_volumes.ComputeSweptVolumesFromSweptable(
@@ -663,7 +654,6 @@ class SweptVolumes(Collection):
                 |     Adds the possibility to make a silhouette before the swept volume
 
         :param int on_off:
-        :return: None
         :rtype: None
         """
         return self.swept_volumes.SetSilhouette(on_off)
@@ -680,7 +670,6 @@ class SweptVolumes(Collection):
                 |     This gains in memory but not in CPU usage (takes longer.)
 
         :param int on_off:
-        :return: None
         :rtype: None
         """
         return self.swept_volumes.SetSpatialSplit(on_off)

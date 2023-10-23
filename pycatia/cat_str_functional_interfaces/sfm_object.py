@@ -52,7 +52,6 @@ class SFMObject(AnyObject):
                 | 
                 |          Category = SfmObject.Category
 
-        :return: str
         :rtype: str
         """
 
@@ -83,7 +82,6 @@ class SFMObject(AnyObject):
                 | 
                 |          SfmMaterialProperties.Grade Grade
 
-        :return: str
         :rtype: str
         """
 
@@ -114,7 +112,6 @@ class SFMObject(AnyObject):
                 | 
                 |          SfmMaterialProperties.Material Material
 
-        :return: str
         :rtype: str
         """
 

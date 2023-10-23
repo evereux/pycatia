@@ -60,7 +60,6 @@ class ABQSolutionStepImages(Collection):
                 |         The specified AnalysisImage.
 
         :param cat_variant i_index:
-        :return: AnalysisImage
         :rtype: AnalysisImage
         """
         return AnalysisImage(self.abq_solution_step_images.Item(i_index))
@@ -87,7 +86,6 @@ class ABQSolutionStepImages(Collection):
                 |             CATIABase::Name property.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.abq_solution_step_images.Remove(i_index)

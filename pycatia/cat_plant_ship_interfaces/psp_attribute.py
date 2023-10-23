@@ -67,7 +67,6 @@ class PSPAttribute(AnyObject):
                 |          Set objArg2 = objThisIntf.GetMultiStringAttributeValues (strVar1)
 
         :param str i_attribute_name:
-        :return: PSPListOfBSTRs
         :rtype: PSPListOfBSTRs
         """
         return PSPListOfBSTRs(self.psp_attribute.GetMultiStringAttributeValues(i_attribute_name))
@@ -98,7 +97,6 @@ class PSPAttribute(AnyObject):
                 |          Set objArg2 = objThisIntf.GetParameter (strVar1 )
 
         :param str i_attribute_name:
-        :return: Parameter
         :rtype: Parameter
         """
         return Parameter(self.psp_attribute.GetParameter(i_attribute_name))
@@ -133,8 +131,8 @@ class PSPAttribute(AnyObject):
                 |          eType = objThisIntf.GetType (strVar1)
         
             :param str i_attribute_name:
-            :return: enum cat_psp_idl_attr_data_type
             :rtype: enum cat_psp_idl_attr_data_type
+            :return: int
             """
         return self.psp_attribute.GetType(i_attribute_name)
 
@@ -165,7 +163,6 @@ class PSPAttribute(AnyObject):
                 |          bIsDerived = objThisIntf.IsDerived (strVar1)
     
         :param str i_attribute_name:
-        :return: bool
         :rtype: bool
         """
         return self.psp_attribute.IsDerived(i_attribute_name)
@@ -202,7 +199,6 @@ class PSPAttribute(AnyObject):
     
         :param str i_attribute_name:
         :param bool ob_status:
-        :return: int
         :rtype: int
         """
         return self.psp_attribute.IsDiscrete(i_attribute_name, ob_status)
@@ -237,7 +233,6 @@ class PSPAttribute(AnyObject):
                 |          Set objArg2 = objThisIntf.ListAttributes (objArg1)
     
         :param int i_domain_id:
-        :return: PSPListOfBSTRs
         :rtype: PSPListOfBSTRs
         """
         return PSPListOfBSTRs(self.psp_attribute.ListAttributes(i_domain_id))
@@ -270,7 +265,6 @@ class PSPAttribute(AnyObject):
                 |          Set objArg2 = objThisIntf.ListDoubleDiscreteValues (strVar1 )
     
         :param str i_attribute_name:
-        :return: PSPListOfDoubles
         :rtype: PSPListOfDoubles
         """
         return PSPListOfDoubles(self.psp_attribute.ListDoubleDiscreteValues(i_attribute_name))
@@ -316,7 +310,6 @@ class PSPAttribute(AnyObject):
         :param str i_attribute_name:
         :param PSPListOfBSTRs o_l_discrete_encoded_values:
         :param PSPListOfBSTRs o_l_discrete_decoded_value:
-        :return: None
         :rtype: None
         """
         return self.psp_attribute.ListEncodedDecodedDiscreteValues(
@@ -369,7 +362,6 @@ class PSPAttribute(AnyObject):
                 |          Set objArg2 = objThisIntf.ListIntegerDiscreteValues (strVar1)
     
         :param str i_attribute_name:
-        :return: PSPListOfLongs
         :rtype: PSPListOfLongs
         """
         return PSPListOfLongs(self.psp_attribute.ListIntegerDiscreteValues(i_attribute_name))
@@ -402,7 +394,6 @@ class PSPAttribute(AnyObject):
                 |          Set objArg2 = objThisIntf.ListStringDiscreteValues (strVar1)
     
         :param str i_attribute_name:
-        :return: PSPListOfBSTRs
         :rtype: PSPListOfBSTRs
         """
         return PSPListOfBSTRs(self.psp_attribute.ListStringDiscreteValues(i_attribute_name))
@@ -430,7 +421,6 @@ class PSPAttribute(AnyObject):
                 |          objThisIntf.ResetDerivedAttr strVar1
     
         :param str i_attribute_name:
-        :return: None
         :rtype: None
         """
         return self.psp_attribute.ResetDerivedAttr(i_attribute_name)

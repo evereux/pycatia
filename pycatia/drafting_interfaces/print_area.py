@@ -62,7 +62,6 @@ class PrintArea(AnyObject):
                 |         E_FAIL
                 |             No activation or deactivation possible.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -99,7 +98,6 @@ class PrintArea(AnyObject):
                 |         S_OK
                 |         E_FAIL
 
-        :return: float
         :rtype: float
         """
 
@@ -135,7 +133,6 @@ class PrintArea(AnyObject):
                 |         S_OK
                 |         E_FAIL
 
-        :return: float
         :rtype: float
         """
 
@@ -171,7 +168,6 @@ class PrintArea(AnyObject):
                 |         S_OK
                 |         E_FAIL
 
-        :return: float
         :rtype: float
         """
 
@@ -208,7 +204,6 @@ class PrintArea(AnyObject):
                 |         S_OK
                 |         E_FAIL
 
-        :return: float
         :rtype: float
         """
 
@@ -261,7 +256,6 @@ class PrintArea(AnyObject):
                 |         No print area could be retrived.
 
 
-        :return: None
         :rtype: None
         """
 
@@ -317,7 +311,6 @@ class PrintArea(AnyObject):
         :param float i_y:
         :param float i_width:
         :param float i_height:
-        :return: None
         :rtype: None
         """
         return self.print_area.SetArea(i_x, i_y, i_width, i_height)

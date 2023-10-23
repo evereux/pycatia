@@ -83,7 +83,6 @@ class SchCompConnector(AnyObject):
         :param SchGRRComp i_grr:
         :param tuple i_db2_cntr_position:
         :param SchAppConnector o_new_sch_cntr:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_comp_connector.AddConnector(
@@ -155,7 +154,6 @@ class SchCompConnector(AnyObject):
         :param SchGRRComp i_grr:
         :param tuple i_db2_cntr_position:
         :param SchAppConnector o_new_sch_cntr:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_comp_connector.AddDynamicConnector(
@@ -209,7 +207,6 @@ class SchCompConnector(AnyObject):
 
         :param SchGRRComp i_grr:
         :param SchAppConnector i_cntr_to_remove:
-        :return: None
         :rtype: None
         """
         return self.sch_comp_connector.RemoveConnector(i_grr.com_object, i_cntr_to_remove.com_object)

@@ -46,7 +46,6 @@ class MacrosSettingAtt(SettingController):
                 | 
                 |     Returns the list of default macro libraries.
 
-        :return: tuple
         :rtype: tuple
         """
         return self.macros_setting_att.GetDefaultMacroLibraries()
@@ -82,7 +81,6 @@ class MacrosSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.macros_setting_att.GetDefaultMacroLibrariesInfo(admin_level, o_locked)
@@ -97,7 +95,6 @@ class MacrosSettingAtt(SettingController):
                 | 
                 |     Returns the list of external references.
 
-        :return: tuple
         :rtype: tuple
         """
         return self.macros_setting_att.GetExternalReferences()
@@ -133,7 +130,6 @@ class MacrosSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.macros_setting_att.GetExternalReferencesInfo(admin_level, o_locked)
@@ -150,7 +146,6 @@ class MacrosSettingAtt(SettingController):
                 |     Returns the editor path for the specified language.
 
         :param int i_language:
-        :return: str
         :rtype: str
         """
         return self.macros_setting_att.GetLanguageEditor(i_language)
@@ -186,7 +181,6 @@ class MacrosSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.macros_setting_att.GetLanguageEditorInfo(admin_level, o_locked)
@@ -203,7 +197,6 @@ class MacrosSettingAtt(SettingController):
                 |     Sets the list of default macro libraries.
 
         :param tuple i_libraries:
-        :return: None
         :rtype: None
         """
         return self.macros_setting_att.SetDefaultMacroLibraries(i_libraries)
@@ -245,7 +238,6 @@ class MacrosSettingAtt(SettingController):
                 |             False: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.macros_setting_att.SetDefaultMacroLibrariesLock(i_locked)
@@ -276,7 +268,6 @@ class MacrosSettingAtt(SettingController):
                 |     Sets the list of external references.
 
         :param tuple i_references:
-        :return: None
         :rtype: None
         """
         return self.macros_setting_att.SetExternalReferences(i_references)
@@ -318,7 +309,6 @@ class MacrosSettingAtt(SettingController):
                 |             False: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.macros_setting_att.SetExternalReferencesLock(i_locked)
@@ -351,7 +341,6 @@ class MacrosSettingAtt(SettingController):
 
         :param int i_language:
         :param str i_editor_path:
-        :return: None
         :rtype: None
         """
         return self.macros_setting_att.SetLanguageEditor(i_language, i_editor_path)
@@ -378,7 +367,6 @@ class MacrosSettingAtt(SettingController):
                 |             False: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.macros_setting_att.SetLanguageEditorLock(i_locked)

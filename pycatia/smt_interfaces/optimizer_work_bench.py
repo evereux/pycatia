@@ -53,7 +53,6 @@ class OptimizerWorkBench(Workbench):
                 | 
                 |     Returns FreeSpaces.
 
-        :return: FreeSpaces
         :rtype: FreeSpaces
         """
 
@@ -70,7 +69,6 @@ class OptimizerWorkBench(Workbench):
                 | 
                 |     Returns Offsets.
 
-        :return: DMOOffsets
         :rtype: DMOOffsets
         """
 
@@ -87,7 +85,6 @@ class OptimizerWorkBench(Workbench):
                 | 
                 |     Returns PartComps.
 
-        :return: PartComps
         :rtype: PartComps
         """
 
@@ -113,7 +110,6 @@ class OptimizerWorkBench(Workbench):
                 | 
                 |          currentSilhouettes = distCst.Silhouettes
 
-        :return: Silhouettes
         :rtype: Silhouettes
         """
 
@@ -130,7 +126,6 @@ class OptimizerWorkBench(Workbench):
                 | 
                 |     Returns SweptVolumes.
 
-        :return: SweptVolumes
         :rtype: SweptVolumes
         """
 
@@ -147,7 +142,6 @@ class OptimizerWorkBench(Workbench):
                 | 
                 |     Returns Thicknesses.
 
-        :return: DMOThicknesses
         :rtype: DMOThicknesses
         """
 
@@ -164,7 +158,6 @@ class OptimizerWorkBench(Workbench):
                 | 
                 |     Returns Wrappings.
 
-        :return: Wrappings
         :rtype: Wrappings
         """
 
@@ -185,7 +178,6 @@ class OptimizerWorkBench(Workbench):
         :param str i_context:
         :param str i_instance_id:
         :param str i_latest_shape:
-        :return: int
         :rtype: int
         """
         return self.optimizer_work_bench.Check(i_context, i_instance_id, i_latest_shape)
@@ -213,7 +205,6 @@ class OptimizerWorkBench(Workbench):
         :param float i_clearance:
         :param tuple i_reference_selection:
         :param int i_type_query:
-        :return: int
         :rtype: int
         """
         return self.optimizer_work_bench.QueryNeighbours(i_accuracy, i_clearance, i_reference_selection, i_type_query)

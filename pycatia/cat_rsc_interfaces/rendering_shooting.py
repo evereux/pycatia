@@ -48,7 +48,6 @@ class RenderingShooting(AnyObject):
                 |     Returns or sets the active camera for shooting. A shooting can only have
                 |     one active camera at a time.
 
-        :return: Camera3D
         :rtype: Camera3D
         """
 
@@ -74,7 +73,6 @@ class RenderingShooting(AnyObject):
                 |     Returns or sets the active environment for shooting.
                 |     A shooting can have one or zero active environment at a time.
 
-        :return: RenderingEnvironment
         :rtype: RenderingEnvironment
         """
 
@@ -103,7 +101,6 @@ class RenderingShooting(AnyObject):
                 |     1: Ambient is taken into account
                 |     0: No ambient used
 
-        :return: int
         :rtype: int
         """
 
@@ -134,7 +131,6 @@ class RenderingShooting(AnyObject):
                 |     and heighboring pixels weighted by their sum is greater than this threshold,
                 |     the pixel is oversampled.
 
-        :return: int
         :rtype: int
         """
 
@@ -171,7 +167,6 @@ class RenderingShooting(AnyObject):
                 |         4 : 16 rays casted per pixel
                 |         5 : 64 rays casted per pixel
 
-        :return: int
         :rtype: int
         """
 
@@ -208,7 +203,6 @@ class RenderingShooting(AnyObject):
                 |         4 : 16 rays casted per pixel
                 |         5 : 64 rays casted per pixel
 
-        :return: int
         :rtype: int
         """
 
@@ -235,7 +229,6 @@ class RenderingShooting(AnyObject):
                 |     The line thickness is given as image size percentage.
                 |     The line thickness ranges from 0.0 (none) to 100.0.
 
-        :return: float
         :rtype: float
         """
 
@@ -266,7 +259,6 @@ class RenderingShooting(AnyObject):
                 |     1: Shading status is active
                 |     0: Shading status is deactivated
 
-        :return: int
         :rtype: int
         """
 
@@ -296,7 +288,6 @@ class RenderingShooting(AnyObject):
                 |     1: Cartoon status is active
                 |     0: Cartoon status is deactivated
 
-        :return: int
         :rtype: int
         """
 
@@ -326,7 +317,6 @@ class RenderingShooting(AnyObject):
                 |     1: Stroke status is active
                 |     0: Stroke status is deactivated
 
-        :return: int
         :rtype: int
         """
 
@@ -352,7 +342,6 @@ class RenderingShooting(AnyObject):
                 |     Returns or sets the number of photons to use when estimating radiance for
                 |     caustics.
 
-        :return: int
         :rtype: int
         """
 
@@ -379,7 +368,6 @@ class RenderingShooting(AnyObject):
                 |     located.
                 |     If the value is 0.0 an estimate based on the scene extent will be used.
 
-        :return: float
         :rtype: float
         """
 
@@ -408,7 +396,6 @@ class RenderingShooting(AnyObject):
                 |     1: Caustics are enabled
                 |     0: Caustics are disabled
 
-        :return: int
         :rtype: int
         """
 
@@ -434,7 +421,6 @@ class RenderingShooting(AnyObject):
                 |     Returns or sets the depth of field radius of confusion.
                 |     The radius of confusion ranges from 1.0 to 10.0%.
 
-        :return: float
         :rtype: float
         """
 
@@ -463,7 +449,6 @@ class RenderingShooting(AnyObject):
                 |     1: Depth of field is active
                 |     0: Depth of field is deactivated
 
-        :return: int
         :rtype: int
         """
 
@@ -488,7 +473,6 @@ class RenderingShooting(AnyObject):
                 | 
                 |     Returns or sets the number of rays shot in each final gather.
 
-        :return: int
         :rtype: int
         """
 
@@ -515,7 +499,6 @@ class RenderingShooting(AnyObject):
                 |     used.
                 |     If the value is 0.0 an estimate based on the scene extent will be used.
 
-        :return: float
         :rtype: float
         """
 
@@ -542,7 +525,6 @@ class RenderingShooting(AnyObject):
                 |     used.
                 |     If the value is 0.0 it will be set to 10% of maximum distance.
 
-        :return: float
         :rtype: float
         """
 
@@ -572,7 +554,6 @@ class RenderingShooting(AnyObject):
                 |     1: Final gathering is enabled
                 |     0: Final gathering is disabled
 
-        :return: int
         :rtype: int
         """
 
@@ -598,7 +579,6 @@ class RenderingShooting(AnyObject):
                 |     Returns or sets the number of photons to use when estimating radiance for
                 |     global illumination.
 
-        :return: int
         :rtype: int
         """
 
@@ -625,7 +605,6 @@ class RenderingShooting(AnyObject):
                 |     illumination are located.
                 |     If the value is 0.0 an estimate based on the scene extent will be used.
 
-        :return: float
         :rtype: float
         """
 
@@ -655,7 +634,6 @@ class RenderingShooting(AnyObject):
                 |     1: Global illumination is enabled
                 |     0: Global illumination is disabled
 
-        :return: int
         :rtype: int
         """
 
@@ -681,7 +659,6 @@ class RenderingShooting(AnyObject):
                 |     Returns or sets the glow flare diffusion.
                 |     The flare diffusion value ranges from 0.0 to 1.0%.
 
-        :return: float
         :rtype: float
         """
 
@@ -707,7 +684,6 @@ class RenderingShooting(AnyObject):
                 |     Returns or sets the glow flare factor.
                 |     The flare factor ranges from 0.0 to 1.0%.
 
-        :return: float
         :rtype: float
         """
 
@@ -733,7 +709,6 @@ class RenderingShooting(AnyObject):
                 |     Returns or sets the glow intensity factor.
                 |     The glow intensity factor ranges from 1.0 to 10.0%.
 
-        :return: float
         :rtype: float
         """
 
@@ -759,7 +734,6 @@ class RenderingShooting(AnyObject):
                 |     Returns or sets the glow radial lines size.
                 |     The lines size ranges from 0.0 (none) to 1.0 (max length).
 
-        :return: float
         :rtype: float
         """
 
@@ -786,7 +760,6 @@ class RenderingShooting(AnyObject):
                 |     size.
                 |     The filter size ranges from 0.1 to 1.0%.
 
-        :return: float
         :rtype: float
         """
 
@@ -812,7 +785,6 @@ class RenderingShooting(AnyObject):
                 |     Returns or sets the glow star effect.
                 |     The effect coefficient ranges from 0.0 (random star) to 1.0 (cross).
 
-        :return: float
         :rtype: float
         """
 
@@ -841,7 +813,6 @@ class RenderingShooting(AnyObject):
                 |     1: Glow is active
                 |     0: Glow is deactivated
 
-        :return: int
         :rtype: int
         """
 
@@ -867,7 +838,6 @@ class RenderingShooting(AnyObject):
                 |     Returns or sets the glow color threshold.
                 |     The color threshold ranges from 0.5 to 1.5%.
 
-        :return: float
         :rtype: float
         """
 
@@ -893,7 +863,6 @@ class RenderingShooting(AnyObject):
                 |     Returns or sets the image height for shooting.
                 |     The image height ranges from 10 to 8000 pixels.
 
-        :return: int
         :rtype: int
         """
 
@@ -919,7 +888,6 @@ class RenderingShooting(AnyObject):
                 |     Returns or sets the output directory for image.
                 |     This is the place where rendered images are saved.
 
-        :return: str
         :rtype: str
         """
 
@@ -957,7 +925,6 @@ class RenderingShooting(AnyObject):
                 |         10 Portable Network Graphics (*.png)
                 |         11 Truevision Targa (*.tga)
 
-        :return: int
         :rtype: int
         """
 
@@ -984,7 +951,6 @@ class RenderingShooting(AnyObject):
                 |     excluded).
                 |     This is the name of saved files (with no extension).
 
-        :return: str
         :rtype: str
         """
 
@@ -1013,7 +979,6 @@ class RenderingShooting(AnyObject):
                 |         1 On screen
                 |         2 On disk
 
-        :return: int
         :rtype: int
         """
 
@@ -1054,7 +1019,6 @@ class RenderingShooting(AnyObject):
                 |         11 1.32 (CCD 1/2")
                 |         12 1.333333 (CCD 1/4")
 
-        :return: int
         :rtype: int
         """
 
@@ -1080,7 +1044,6 @@ class RenderingShooting(AnyObject):
                 |     Returns or sets the image width for shooting.
                 |     The image width ranges from 10 to 8000 pixels.
 
-        :return: int
         :rtype: int
         """
 
@@ -1108,7 +1071,6 @@ class RenderingShooting(AnyObject):
                 |     1: Raytracing is active
                 |     0: Raytracing is deactivated
 
-        :return: int
         :rtype: int
         """
 
@@ -1135,7 +1097,6 @@ class RenderingShooting(AnyObject):
                 |     for image computation.
                 |     This number ranges from 0 to 18 levels.
 
-        :return: int
         :rtype: int
         """
 
@@ -1162,7 +1123,6 @@ class RenderingShooting(AnyObject):
                 |     account for image computation.
                 |     This number ranges from 0 to 9 levels.
 
-        :return: int
         :rtype: int
         """
 
@@ -1189,7 +1149,6 @@ class RenderingShooting(AnyObject):
                 |     account for image computation.
                 |     This number ranges from 0 to 9 levels.
 
-        :return: int
         :rtype: int
         """
 
@@ -1218,7 +1177,6 @@ class RenderingShooting(AnyObject):
                 |     1: Shadows on
                 |     0: Shadows off
 
-        :return: int
         :rtype: int
         """
 
@@ -1247,7 +1205,6 @@ class RenderingShooting(AnyObject):
                 |     1: Textures are taking into account
                 |     0: Textures are ignored
 
-        :return: int
         :rtype: int
         """
 
@@ -1272,7 +1229,6 @@ class RenderingShooting(AnyObject):
                 |     Adds a new active light to the shooting active lights list.
 
         :param RenderingLight i_active_light:
-        :return: None
         :rtype: None
         """
         return self.rendering_shooting.AddActiveLight(i_active_light.com_object)
@@ -1302,7 +1258,6 @@ class RenderingShooting(AnyObject):
                 | 
                 |     Returns the number of active light for the shooting.
 
-        :return: int
         :rtype: int
         """
         return self.rendering_shooting.CountActiveLights()
@@ -1318,7 +1273,6 @@ class RenderingShooting(AnyObject):
                 |     Returns the active light of the shooting using its index.
 
         :param int i_index:
-        :return: RenderingLight
         :rtype: RenderingLight
         """
         return RenderingLight(self.rendering_shooting.GetActiveLight(i_index))
@@ -1334,7 +1288,6 @@ class RenderingShooting(AnyObject):
                 |     Removes a light from the shootings active lights list.
 
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.rendering_shooting.RemoveActiveLight(i_index)
@@ -1352,7 +1305,6 @@ class RenderingShooting(AnyObject):
                 |     before the end of computation. If product is closed, calculation is
                 |     interrupted.
 
-        :return: None
         :rtype: None
         """
         return self.rendering_shooting.Render()

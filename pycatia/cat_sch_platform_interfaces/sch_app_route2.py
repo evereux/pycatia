@@ -59,7 +59,6 @@ class SchAppRoute2(AnyObject):
                 |          objThisIntf.AppPostRouteProcessobjArg1
 
         :param SchAppConnectable i_cntbl_connected_to:
-        :return: None
         :rtype: None
         """
         return self.sch_app_route2.AppPostRouteProcess(i_cntbl_connected_to.com_object)

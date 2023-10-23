@@ -61,7 +61,6 @@ class ABQDataOutputRequests(Collection):
                 |          Dim abqDataOutputRequest As ABQDataOutputRequest
                 |          Set abqDataOutputRequest =  abqDataOutputRequests.Add()
 
-        :return: ABQDataOutputRequest
         :rtype: ABQDataOutputRequest
         """
         return ABQDataOutputRequest(self.abq_data_output_requests.Add())
@@ -92,7 +91,6 @@ class ABQDataOutputRequests(Collection):
                 |         The specified ABQDataOutputRequest.
 
         :param cat_variant i_index:
-        :return: ABQDataOutputRequest
         :rtype: ABQDataOutputRequest
         """
         return ABQDataOutputRequest(self.abq_data_output_requests.Item(i_index))
@@ -119,7 +117,6 @@ class ABQDataOutputRequests(Collection):
                 |             using the CATIABase::Name property.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.abq_data_output_requests.Remove(i_index)

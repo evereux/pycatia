@@ -66,7 +66,6 @@ class RobAnalysisHeartBeatUsageSettingAtt(SettingController):
                 |             TRUE : to lock the parameter.
                 |             FALSE: to unlock the parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -112,7 +111,6 @@ class RobAnalysisHeartBeatUsageSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.rob_analysis_heart_beat_usage_setting_att.GetEnableHeartBeatInfo(io_admin_level, io_locked)
@@ -139,7 +137,6 @@ class RobAnalysisHeartBeatUsageSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.rob_analysis_heart_beat_usage_setting_att.SetEnableHeartBeatLock(i_locked)

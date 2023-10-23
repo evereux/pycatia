@@ -58,7 +58,6 @@ class PSPConnectable(AnyObject):
                 |           ...
                 |          Set objArg2 = objThisIntf.Connectors
 
-        :return: PSPListOfObjects
         :rtype: PSPListOfObjects
         """
 
@@ -83,7 +82,6 @@ class PSPConnectable(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.ValidConnectorTypes
 
-        :return: PSPListOfBSTRs
         :rtype: PSPListOfBSTRs
         """
 
@@ -117,7 +115,6 @@ class PSPConnectable(AnyObject):
                 |          Set objArg2 = objThisIntf.GetConnectorByName (strVar1)
 
         :param str iu_connector_name:
-        :return: PSPConnector
         :rtype: PSPConnector
         """
         return PSPConnector(self.psp_connectable.GetConnectorByName(iu_connector_name))
@@ -173,7 +170,6 @@ class PSPConnectable(AnyObject):
         :param PSPListOfObjects o_l_cntbles:
         :param PSPListOfObjects o_l_cntrs_on_this_obj:
         :param PSPListOfObjects o_l_cntrs_on_connected:
-        :return: None
         :rtype: None
         """
         return self.psp_connectable.ListConnectables(

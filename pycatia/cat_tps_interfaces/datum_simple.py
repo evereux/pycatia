@@ -51,7 +51,6 @@ class DatumSimple(AnyObject):
                 | 
                 |     Retrieves or sets Label.
 
-        :return: str
         :rtype: str
         """
 
@@ -77,7 +76,6 @@ class DatumSimple(AnyObject):
                 |     Retrieves a CATITPSList to read the list of datum target. All objects of
                 |     the list adhere to CATITPSDatumTarget.
 
-        :return: Annotations
         :rtype: Annotations
         """
         from pycatia.cat_tps_interfaces.annotations import Annotations

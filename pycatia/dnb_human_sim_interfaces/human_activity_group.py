@@ -53,7 +53,6 @@ class HumanActivityGroup(WorkerActivity):
                 |     Returns or Sets Motion-Basis (see HTSActivityGroupMotionBasis for list of
                 |     possible values)
 
-        :return: int
         :rtype: int
         """
 
@@ -78,7 +77,6 @@ class HumanActivityGroup(WorkerActivity):
                 | 
                 |     Returns or Sets ReferenceTime for HumanActivityGroup Activity
 
-        :return: float
         :rtype: float
         """
 
@@ -103,7 +101,6 @@ class HumanActivityGroup(WorkerActivity):
                 | 
                 |     Returns or Sets Speed for HumanActivityGroup Activity
 
-        :return: float
         :rtype: float
         """
 
@@ -128,7 +125,6 @@ class HumanActivityGroup(WorkerActivity):
                 | 
                 |     Returns or Sets Time for HumanActivityGroup Activity
 
-        :return: float
         :rtype: float
         """
 

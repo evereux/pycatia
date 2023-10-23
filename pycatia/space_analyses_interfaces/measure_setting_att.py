@@ -52,7 +52,6 @@ class MeasureSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -81,7 +80,6 @@ class MeasureSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -110,7 +108,6 @@ class MeasureSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -140,7 +137,6 @@ class MeasureSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -170,7 +166,6 @@ class MeasureSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -216,7 +211,6 @@ class MeasureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.measure_setting_att.GetBoxDisplayInfo(io_admin_level, io_locked)
@@ -245,7 +239,6 @@ class MeasureSettingAtt(SettingController):
                 |             Ensure consistency with the C++ interface to which the work is
                 |             delegated.
 
-        :return: tuple
         :rtype: tuple
         """
         return self.measure_setting_att.GetLabelColor()
@@ -282,7 +275,6 @@ class MeasureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.measure_setting_att.GetLabelColorInfo(io_admin_level, io_locked)
@@ -319,7 +311,6 @@ class MeasureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.measure_setting_att.GetLineWidthInfo(io_admin_level, io_locked)
@@ -356,7 +347,6 @@ class MeasureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.measure_setting_att.GetPartUpdateStatusInfo(io_admin_level, io_locked)
@@ -393,7 +383,6 @@ class MeasureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.measure_setting_att.GetProductUpdateStatusInfo(io_admin_level, io_locked)
@@ -412,7 +401,6 @@ class MeasureSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -462,7 +450,6 @@ class MeasureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.measure_setting_att.GetTextColorInfo(io_admin_level, io_locked)
@@ -499,7 +486,6 @@ class MeasureSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.measure_setting_att.GetTildeDisplayInfo(io_admin_level, io_locked)
@@ -526,7 +512,6 @@ class MeasureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.measure_setting_att.SetBoxDisplayLock(i_locked)
@@ -558,7 +543,6 @@ class MeasureSettingAtt(SettingController):
         :param int i_r:
         :param int i_g:
         :param int i_b:
-        :return: None
         :rtype: None
         """
         return self.measure_setting_att.SetLabelColor(i_r, i_g, i_b)
@@ -585,7 +569,6 @@ class MeasureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.measure_setting_att.SetLabelColorLock(i_locked)
@@ -612,7 +595,6 @@ class MeasureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.measure_setting_att.SetLineWidthLock(i_locked)
@@ -639,7 +621,6 @@ class MeasureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.measure_setting_att.SetPartUpdateStatusLock(i_locked)
@@ -666,7 +647,6 @@ class MeasureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.measure_setting_att.SetProductUpdateStatusLock(i_locked)
@@ -688,7 +668,6 @@ class MeasureSettingAtt(SettingController):
         :param int i_r:
         :param int i_g:
         :param int i_b:
-        :return: None
         :rtype: None
         """
         return self.measure_setting_att.SetTextColor(i_r, i_g, i_b)
@@ -715,7 +694,6 @@ class MeasureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.measure_setting_att.SetTextColorLock(i_locked)
@@ -742,7 +720,6 @@ class MeasureSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.measure_setting_att.SetTildeDisplayLock(i_locked)

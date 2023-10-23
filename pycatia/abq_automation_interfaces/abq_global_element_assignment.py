@@ -134,7 +134,6 @@ class ABQGlobalElementAssignment(AnyObject):
         :param bool o_ri_flag:
         :param bool o_im_flag:
         :param bool o_in_flag:
-        :return: None
         :rtype: None
         """
         return self.abq_global_element_assignment.GetElementProperties(
@@ -264,7 +263,6 @@ class ABQGlobalElementAssignment(AnyObject):
         :param bool i_ri_flag:
         :param bool i_im_flag:
         :param bool i_in_flag:
-        :return: None
         :rtype: None
         """
         return self.abq_global_element_assignment.SetElementProperties(

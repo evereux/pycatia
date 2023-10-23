@@ -50,7 +50,6 @@ class ABQProperty(AnyObject):
                 |     Returns:
                 |         The type of the property.
 
-        :return: str
         :rtype: str
         """
 

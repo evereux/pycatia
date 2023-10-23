@@ -57,7 +57,6 @@ class Draft(DressUpShape):
                 | 
                 |          Set list = firstDraft.DraftDomains
 
-        :return: DraftDomains
         :rtype: DraftDomains
         """
 
@@ -82,7 +81,6 @@ class Draft(DressUpShape):
                 |          Set mode = firstDraft.Mode
                 |          Set firstDraft.Mode = CatReflectKeepFaceDraftMode
 
-        :return: int
         :rtype: int
         """
 
@@ -117,7 +115,6 @@ class Draft(DressUpShape):
                 |          Set element = firstDraft.PartingElement
                 |          Set firstDraft.PartingElement = element2
 
-        :return: Reference
         :rtype: Reference
         """
 

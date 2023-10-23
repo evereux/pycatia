@@ -65,7 +65,6 @@ class HybridBody(AnyObject):
                 | 
                 |          Set bodyColl = hybridBody.Bodies
 
-        :return: Bodies
         :rtype: Bodies
         """
         from pycatia.mec_mod_interfaces.bodies import Bodies
@@ -98,7 +97,6 @@ class HybridBody(AnyObject):
                 |              Dim geometricElements As GeometricElements
                 |              Set geometricElements = hybridBody.GeometricElements
 
-        :return: GeometricElements
         :rtype: GeometricElements
         """
 
@@ -121,7 +119,6 @@ class HybridBody(AnyObject):
                 | 
                 |          Set hybridBodyColl = hybridBody.HybridBodies
 
-        :return: HybridBodies
         :rtype: HybridBodies
         """
         from pycatia.mec_mod_interfaces.hybrid_bodies import HybridBodies
@@ -152,7 +149,6 @@ class HybridBody(AnyObject):
                 |              Dim hybridShapes As HybridShapes
                 |              Set hybridShapes = hybridBody.HybridShapes
 
-        :return: HybridShapes
         :rtype: HybridShapes
         """
 
@@ -176,7 +172,6 @@ class HybridBody(AnyObject):
                 | 
                 |          Set skColl = hybridBody.HybridSketches
 
-        :return: Sketches
         :rtype: Sketches
         """
 
@@ -204,7 +199,6 @@ class HybridBody(AnyObject):
                 |          hybridBody.AppendHybridShape (hybridShape)
 
         :param HybridShape i_hybrid_shape:
-        :return: None
         :rtype: None
         """
         return self.hybrid_body.AppendHybridShape(i_hybrid_shape.com_object)

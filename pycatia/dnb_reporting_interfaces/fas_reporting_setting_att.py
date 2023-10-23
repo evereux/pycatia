@@ -59,7 +59,6 @@ class FasReportingSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on Failure
 
-        :return: str
         :rtype: str
         """
 
@@ -95,7 +94,6 @@ class FasReportingSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on Failure
 
-        :return: str
         :rtype: str
         """
 
@@ -131,7 +129,6 @@ class FasReportingSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on Failure
 
-        :return: str
         :rtype: str
         """
 
@@ -168,7 +165,6 @@ class FasReportingSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on Failure
 
-        :return: str
         :rtype: str
         """
 
@@ -205,7 +201,6 @@ class FasReportingSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on Failure
 
-        :return: int
         :rtype: int
         """
 
@@ -242,7 +237,6 @@ class FasReportingSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on Failure
 
-        :return: str
         :rtype: str
         """
 
@@ -290,7 +284,6 @@ class FasReportingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fas_reporting_setting_att.GetDefaultStyleSheetInfo(io_admin_level, io_locked)
@@ -327,7 +320,6 @@ class FasReportingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fas_reporting_setting_att.GetJavaClassPathInfo(io_admin_level, io_locked)
@@ -364,7 +356,6 @@ class FasReportingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fas_reporting_setting_att.GetJavaExeInfo(io_admin_level, io_locked)
@@ -403,7 +394,6 @@ class FasReportingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fas_reporting_setting_att.GetResultOutputDirInfo(io_admin_level, io_locked)
@@ -442,7 +432,6 @@ class FasReportingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fas_reporting_setting_att.GetSVGViewerInfo(io_admin_level, io_locked)
@@ -481,7 +470,6 @@ class FasReportingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.fas_reporting_setting_att.GetStyleSheetDirInfo(io_admin_level, io_locked)
@@ -514,7 +502,6 @@ class FasReportingSettingAtt(SettingController):
                 |         E_FAIL: on Failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fas_reporting_setting_att.SetDefaultStyleSheetLock(i_locked)
@@ -561,7 +548,6 @@ class FasReportingSettingAtt(SettingController):
                 |         E_FAIL: on Failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fas_reporting_setting_att.SetJavaClassPathLock(i_locked)
@@ -608,7 +594,6 @@ class FasReportingSettingAtt(SettingController):
                 |         E_FAIL: on Failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fas_reporting_setting_att.SetJavaExeLock(i_locked)
@@ -656,7 +641,6 @@ class FasReportingSettingAtt(SettingController):
                 |         E_FAIL: on Failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fas_reporting_setting_att.SetResultOutputDirLock(i_locked)
@@ -704,7 +688,6 @@ class FasReportingSettingAtt(SettingController):
                 |         E_FAIL: on Failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fas_reporting_setting_att.SetSVGViewerLock(i_locked)
@@ -752,7 +735,6 @@ class FasReportingSettingAtt(SettingController):
                 |         E_FAIL: on Failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.fas_reporting_setting_att.SetStyleSheetDirLock(i_locked)

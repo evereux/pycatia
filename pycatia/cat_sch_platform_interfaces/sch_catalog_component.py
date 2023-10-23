@@ -63,7 +63,6 @@ class SchCatalogComponent(AnyObject):
                 |          Set objArg2 = objThisIntf.QueryDropAbility
 
         :param bool o_b_yes:
-        :return: SchGRRComp
         :rtype: SchGRRComp
         """
         return SchGRRComp(self.sch_catalog_component.QueryDropAbility(o_b_yes))
@@ -96,7 +95,6 @@ class SchCatalogComponent(AnyObject):
                 |          Set objArg2 = objThisIntf.QueryDropCompGroupAbility
 
         :param bool o_b_yes:
-        :return: SchCompGroupExt
         :rtype: SchCompGroupExt
         """
         return SchCompGroupExt(self.sch_catalog_component.QueryDropCompGroupAbility(o_b_yes))

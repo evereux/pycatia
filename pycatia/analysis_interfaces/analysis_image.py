@@ -55,7 +55,6 @@ class AnalysisImage(AnyObject):
                 | 
                 |     Returns the color map object associated with an analysis image.
 
-        :return: AnalysisColorMap
         :rtype: AnalysisColorMap
         """
 
@@ -72,7 +71,6 @@ class AnalysisImage(AnyObject):
                 | 
                 |     Returns the analysis images collection associated with an analysis image.
 
-        :return: AnalysisImages
         :rtype: AnalysisImages
         """
 
@@ -119,7 +117,6 @@ class AnalysisImage(AnyObject):
         :param Folder i_folder:
         :param str i_file_name:
         :param str i_extension_type:
-        :return: None
         :rtype: None
         """
         return self.analysis_image.ExportData(i_folder.com_object, i_file_name, i_extension_type)
@@ -208,7 +205,6 @@ class AnalysisImage(AnyObject):
         :param Product i_product:
         :param int i_axis_orientation_type:
         :param bool i_export_mesh_part_id:
-        :return: None
         :rtype: None
         """
         return self.analysis_image.ExportDataInAnyUserAxis(
@@ -288,7 +284,6 @@ class AnalysisImage(AnyObject):
         :param str i_extension_type:
         :param int i_axis_orientation_type:
         :param bool i_export_mesh_part_id:
-        :return: None
         :rtype: None
         """
         return self.analysis_image.ExportDataInGlobalAxis(
@@ -389,7 +384,6 @@ class AnalysisImage(AnyObject):
         :param tuple i_z_direction:
         :param int i_axis_orientation_type:
         :param bool i_export_mesh_part_id:
-        :return: None
         :rtype: None
         """
         return self.analysis_image.ExportDataInManualAxis(
@@ -486,7 +480,6 @@ class AnalysisImage(AnyObject):
         :param Product i_product:
         :param int i_axis_orientation_type:
         :param bool i_export_mesh_part_id:
-        :return: None
         :rtype: None
         """
         return self.analysis_image.ExportDataInUserAxis(
@@ -554,7 +547,6 @@ class AnalysisImage(AnyObject):
         :param Folder i_folder:
         :param str i_file_name:
         :param str i_extension_type:
-        :return: None
         :rtype: None
         """
         return self.analysis_image.ExportDataWithMeshPartId(i_folder.com_object, i_file_name, i_extension_type)
@@ -585,7 +577,6 @@ class AnalysisImage(AnyObject):
                 |     Resets all selections in an image.
                 |     This is done related to an existing image
 
-        :return: None
         :rtype: None
         """
         return self.analysis_image.ResetSelection()
@@ -607,7 +598,6 @@ class AnalysisImage(AnyObject):
                 |             To activate or not the current image.
 
         :param cat_variant i_activation_status:
-        :return: None
         :rtype: None
         """
         return self.analysis_image.SetActivationStatus(i_activation_status)
@@ -645,7 +635,6 @@ class AnalysisImage(AnyObject):
                 |             Legal value: 1 ≤ iOccurrenceNumber ≤ nbOccurrence
 
         :param cat_variant i_occurrence_number:
-        :return: None
         :rtype: None
         """
         return self.analysis_image.SetCurrentOccurrence(i_occurrence_number)
@@ -686,7 +675,6 @@ class AnalysisImage(AnyObject):
 
         :param Reference i_reference:
         :param cat_variant i_replace_mode:
-        :return: None
         :rtype: None
         """
         return self.analysis_image.SetSelection(i_reference.com_object, i_replace_mode)
@@ -717,7 +705,6 @@ class AnalysisImage(AnyObject):
                 |     Updates an image.
                 |     This is done related to an existing image
 
-        :return: None
         :rtype: None
         """
         return self.analysis_image.Update()

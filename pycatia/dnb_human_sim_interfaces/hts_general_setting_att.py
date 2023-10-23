@@ -44,7 +44,6 @@ class HtsGeneralSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property CollWalkClearance() As double
 
-        :return: float
         :rtype: float
         """
 
@@ -67,7 +66,6 @@ class HtsGeneralSettingAtt(SettingController):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property CollisionSearchIntensity() As short
 
-        :return: int
         :rtype: int
         """
 
@@ -94,7 +92,6 @@ class HtsGeneralSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -121,7 +118,6 @@ class HtsGeneralSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: float
         :rtype: float
         """
 
@@ -148,7 +144,6 @@ class HtsGeneralSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: float
         :rtype: float
         """
 
@@ -175,7 +170,6 @@ class HtsGeneralSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -202,7 +196,6 @@ class HtsGeneralSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -229,7 +222,6 @@ class HtsGeneralSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -256,7 +248,6 @@ class HtsGeneralSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: float
         :rtype: float
         """
 
@@ -283,7 +274,6 @@ class HtsGeneralSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: float
         :rtype: float
         """
 
@@ -308,7 +298,6 @@ class HtsGeneralSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.hts_general_setting_att.GetCollWalkClearanceInfo(io_admin_level, io_locked)
@@ -324,7 +313,6 @@ class HtsGeneralSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.hts_general_setting_att.GetCollisionSearchIntensityInfo(io_admin_level, io_locked)
@@ -361,7 +349,6 @@ class HtsGeneralSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.hts_general_setting_att.GetConstraintsSimulInfo(io_admin_level, io_locked)
@@ -398,7 +385,6 @@ class HtsGeneralSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.hts_general_setting_att.GetDefaultWalkSpeedInfo(io_admin_level, io_locked)
@@ -435,7 +421,6 @@ class HtsGeneralSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.hts_general_setting_att.GetSideStepAngleInfo(io_admin_level, io_locked)
@@ -473,7 +458,6 @@ class HtsGeneralSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.hts_general_setting_att.GetSyncTimeAndSpeedInSimulationInfo(io_admin_level, io_locked)
@@ -511,7 +495,6 @@ class HtsGeneralSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.hts_general_setting_att.GetUpdateAnalysisInSimulationInfo(io_admin_level, io_locked)
@@ -548,7 +531,6 @@ class HtsGeneralSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.hts_general_setting_att.GetUserWalkSpeedStatusInfo(io_admin_level, io_locked)
@@ -585,7 +567,6 @@ class HtsGeneralSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.hts_general_setting_att.GetWalkForwardAngleInfo(io_admin_level, io_locked)
@@ -622,7 +603,6 @@ class HtsGeneralSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.hts_general_setting_att.GetWalkForwardDistanceInfo(io_admin_level, io_locked)
@@ -636,7 +616,6 @@ class HtsGeneralSettingAtt(SettingController):
                 | o Sub SetCollWalkClearanceLock(boolean iLocked)
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.hts_general_setting_att.SetCollWalkClearanceLock(i_locked)
@@ -665,7 +644,6 @@ class HtsGeneralSettingAtt(SettingController):
                 | o Sub SetCollisionSearchIntensityLock(boolean iLocked)
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.hts_general_setting_att.SetCollisionSearchIntensityLock(i_locked)
@@ -707,7 +685,6 @@ class HtsGeneralSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.hts_general_setting_att.SetConstraintsSimulLock(i_locked)
@@ -749,7 +726,6 @@ class HtsGeneralSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.hts_general_setting_att.SetDefaultWalkSpeedLock(i_locked)
@@ -791,7 +767,6 @@ class HtsGeneralSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.hts_general_setting_att.SetSideStepAngleLock(i_locked)
@@ -833,7 +808,6 @@ class HtsGeneralSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.hts_general_setting_att.SetSyncTimeAndSpeedInSimulationLock(i_locked)
@@ -875,7 +849,6 @@ class HtsGeneralSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.hts_general_setting_att.SetUpdateAnalysisInSimulationLock(i_locked)
@@ -917,7 +890,6 @@ class HtsGeneralSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.hts_general_setting_att.SetUserWalkSpeedStatusLock(i_locked)
@@ -959,7 +931,6 @@ class HtsGeneralSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.hts_general_setting_att.SetWalkForwardAngleLock(i_locked)
@@ -1001,7 +972,6 @@ class HtsGeneralSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.hts_general_setting_att.SetWalkForwardDistanceLock(i_locked)

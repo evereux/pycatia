@@ -57,7 +57,6 @@ class SchGRRComp(AnyObject):
                 |          objThisIntf.GetPositionobjArg1
 
         :param SchListOfDoubles o_db2_position:
-        :return: None
         :rtype: None
         """
         return self.sch_grr_comp.GetPosition(o_db2_position.com_object)
@@ -101,7 +100,6 @@ class SchGRRComp(AnyObject):
                 |          objThisIntf.GetRotationAngledbVar
 
         :param float o_db1_rotation_angle_in_rad:
-        :return: None
         :rtype: None
         """
         return self.sch_grr_comp.GetRotationAngle(o_db1_rotation_angle_in_rad)
@@ -129,7 +127,6 @@ class SchGRRComp(AnyObject):
                 |          objThisIntf.GetScaledbVar
 
         :param float o_db1_scale_factor:
-        :return: None
         :rtype: None
         """
         return self.sch_grr_comp.GetScale(o_db1_scale_factor)
@@ -166,7 +163,6 @@ class SchGRRComp(AnyObject):
                 |          objThisIntf.GetTransformation2DobjArg1
 
         :param SchListOfDoubles o_db6_trans_matrix:
-        :return: None
         :rtype: None
         """
         return self.sch_grr_comp.GetTransformation2D(o_db6_trans_matrix.com_object)
@@ -209,7 +205,6 @@ class SchGRRComp(AnyObject):
                 |          objThisIntf.SetPositiondbVar1
 
         :param tuple o_db2_position:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_grr_comp.SetPosition(o_db2_position)
@@ -254,7 +249,6 @@ class SchGRRComp(AnyObject):
                 |          objThisIntf.SetRotationAngledbVar
 
         :param float i_db1_rotation_angle_in_rad:
-        :return: None
         :rtype: None
         """
         return self.sch_grr_comp.SetRotationAngle(i_db1_rotation_angle_in_rad)
@@ -283,7 +277,6 @@ class SchGRRComp(AnyObject):
                 |          objThisIntf.SetScaledbVar
 
         :param float i_db1_scale_factor:
-        :return: None
         :rtype: None
         """
         return self.sch_grr_comp.SetScale(i_db1_scale_factor)
@@ -314,7 +307,6 @@ class SchGRRComp(AnyObject):
                 |          objThisIntf.SetTransformation2DdbVar1
 
         :param tuple i_db6_trans_matrix:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_grr_comp.SetTransformation2D(i_db6_trans_matrix)

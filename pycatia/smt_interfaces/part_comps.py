@@ -46,7 +46,6 @@ class PartComps(Collection):
                 | 
                 |     Returns the added material percentage.
 
-        :return: float
         :rtype: float
         """
 
@@ -63,7 +62,6 @@ class PartComps(Collection):
                 | 
                 |     Returns the added material volume.
 
-        :return: float
         :rtype: float
         """
 
@@ -80,7 +78,6 @@ class PartComps(Collection):
                 | 
                 |     Returns the removed material percentage.
 
-        :return: float
         :rtype: float
         """
 
@@ -97,7 +94,6 @@ class PartComps(Collection):
                 | 
                 |     Returns the removed material volume.
 
-        :return: float
         :rtype: float
         """
 
@@ -164,7 +160,6 @@ class PartComps(Collection):
         :param float i_comp_accuracy:
         :param float i_disp_accuracy:
         :param int i_computation_type:
-        :return: PartComp
         :rtype: PartComp
         """
         return PartComp(

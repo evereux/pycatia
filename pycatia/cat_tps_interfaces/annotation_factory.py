@@ -64,7 +64,6 @@ class AnnotationFactory(Factory):
                 |             The new created Datum Feature.
 
         :param UserSurface i_surf:
-        :return: Annotation
         :rtype: Annotation
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
@@ -80,7 +79,6 @@ class AnnotationFactory(Factory):
                 | 
                 |     Create a Reference Frame (DRF). iType = 1 : Straightness 2 : AxisStraightness 3 : Flatness 4 : Circularity 5 : Cylindricity 6 : ProfileOfALine 7 : ProfileOfASurface 8 : Position
 
-        :return: Annotation
         :rtype: Annotation
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
@@ -110,7 +108,6 @@ class AnnotationFactory(Factory):
 
         :param UserSurface i_surf:
         :param Annotation i_datum:
-        :return: Annotation
         :rtype: Annotation
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
@@ -157,7 +154,6 @@ class AnnotationFactory(Factory):
         :param float i_y:
         :param float i_z:
         :param bool i_with_leader:
-        :return: Annotation
         :rtype: Annotation
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
@@ -203,7 +199,6 @@ class AnnotationFactory(Factory):
         :param float i_y:
         :param float i_z:
         :param bool i_with_leader:
-        :return: Annotation
         :rtype: Annotation
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
@@ -227,7 +222,6 @@ class AnnotationFactory(Factory):
                 |             The new created Flag Note.
 
         :param UserSurface i_surf:
-        :return: Annotation
         :rtype: Annotation
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
@@ -260,7 +254,6 @@ class AnnotationFactory(Factory):
         :param UserSurface i_surf:
         :param cat_variant i_dimension_type:
         :param cat_variant i_linear_dim_sub_type:
-        :return: Annotation
         :rtype: Annotation
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
@@ -286,7 +279,6 @@ class AnnotationFactory(Factory):
                 |             The new created Roughness.
 
         :param UserSurface i_surf:
-        :return: Annotation
         :rtype: Annotation
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
@@ -313,7 +305,6 @@ class AnnotationFactory(Factory):
         :param UserSurface i_surf:
         :param cat_variant i_type:
         :param cat_variant i_sub_type:
-        :return: Annotation
         :rtype: Annotation
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
@@ -338,7 +329,6 @@ class AnnotationFactory(Factory):
                 |             The new created Text.
 
         :param UserSurface i_surf:
-        :return: Annotation
         :rtype: Annotation
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
@@ -364,7 +354,6 @@ class AnnotationFactory(Factory):
                 |             The new created NOA.
 
         :param UserSurface i_surf:
-        :return: Noa
         :rtype: Noa
         """
         return Noa(self.annotation_factory.CreateTextNOA(i_surf.com_object))
@@ -393,7 +382,6 @@ class AnnotationFactory(Factory):
 
         :param UserSurface i_surf:
         :param str i_noa_type:
-        :return: Noa
         :rtype: Noa
         """
         return Noa(self.annotation_factory.CreateTextNoteObjectAttribute(i_surf.com_object, i_noa_type))
@@ -420,7 +408,6 @@ class AnnotationFactory(Factory):
 
         :param str i_text:
         :param Annotation i_annot:
-        :return: Annotation
         :rtype: Annotation
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
@@ -441,7 +428,6 @@ class AnnotationFactory(Factory):
         :param cat_variant i_index:
         :param UserSurface i_surf:
         :param Annotation i_drf:
-        :return: Annotation
         :rtype: Annotation
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
@@ -461,7 +447,6 @@ class AnnotationFactory(Factory):
 
         :param cat_variant i_index:
         :param UserSurface i_surf:
-        :return: Annotation
         :rtype: Annotation
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation
@@ -489,7 +474,6 @@ class AnnotationFactory(Factory):
 
         :param Noa i_noa:
         :param UserSurface i_surf:
-        :return: Annotation
         :rtype: Annotation
         """
         from pycatia.cat_tps_interfaces.annotation import Annotation

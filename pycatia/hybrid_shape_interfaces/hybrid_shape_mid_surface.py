@@ -62,7 +62,6 @@ class HybridShapeMidSurface(HybridShape):
                 |     Returns or sets AutoThicknessThreshold. Automatic Thickmess Threshold Check Button ON :1,
                 |     OFF : 0 (Only Automatic Creation Mode Available for Automation)
 
-        :return: int
         :rtype: int
         """
 
@@ -88,7 +87,6 @@ class HybridShapeMidSurface(HybridShape):
                 |     Returns or sets CreationMode. Face Pairs : 0, Faces To Offset : 1, Automatic :
                 |     2 (Only Automatic Creation Mode Available for Automation)
 
-        :return: int
         :rtype: int
         """
 
@@ -113,7 +111,6 @@ class HybridShapeMidSurface(HybridShape):
                 | 
                 |     Returns or sets Support Body. Reference.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -138,7 +135,6 @@ class HybridShapeMidSurface(HybridShape):
                 | 
                 |     Returns or sets Threshold Thickness. Length.
 
-        :return: Length
         :rtype: Length
         """
 

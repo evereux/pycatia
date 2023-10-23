@@ -46,7 +46,6 @@ class DraftingSettingAtt(SettingController):
                 | 
                 |     Returns the CreateNewSheetFrom parameter.
 
-        :return: int
         :rtype: int
         """
 
@@ -71,7 +70,6 @@ class DraftingSettingAtt(SettingController):
                 | 
                 |     Returns the DisplayResetButton parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -96,7 +94,6 @@ class DraftingSettingAtt(SettingController):
                 | 
                 |     Returns the LockUserDefault parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -121,7 +118,6 @@ class DraftingSettingAtt(SettingController):
                 | 
                 |     Returns the PreventBackgroundAccess parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -146,7 +142,6 @@ class DraftingSettingAtt(SettingController):
                 | 
                 |     Returns the PreventDimDriving3DCstr parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -195,7 +190,6 @@ class DraftingSettingAtt(SettingController):
                 | 
                 |     Returns the PreventGenViewStyle parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -220,7 +214,6 @@ class DraftingSettingAtt(SettingController):
                 | 
                 |     Returns the PreventSetAsDefault parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -245,7 +238,6 @@ class DraftingSettingAtt(SettingController):
                 | 
                 |     Returns the PreventSwitchStandard parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -270,7 +262,6 @@ class DraftingSettingAtt(SettingController):
                 | 
                 |     Returns the PreventTrueDimensionCreation parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -295,7 +286,6 @@ class DraftingSettingAtt(SettingController):
                 | 
                 |     Returns the PreventUpdateStandard parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -344,7 +334,6 @@ class DraftingSettingAtt(SettingController):
                 | 
                 |     Returns the UseStyleCreateObjects parameter.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -390,7 +379,6 @@ class DraftingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.drafting_setting_att.GetCreateNewSheetFromInfo(io_admin_level, io_locked)
@@ -427,7 +415,6 @@ class DraftingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.drafting_setting_att.GetDisplayResetButtonInfo(io_admin_level, io_locked)
@@ -464,7 +451,6 @@ class DraftingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.drafting_setting_att.GetLockUserDefaultInfo(io_admin_level, io_locked)
@@ -501,7 +487,6 @@ class DraftingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.drafting_setting_att.GetPreventBackgroundAccessInfo(io_admin_level, io_locked)
@@ -538,7 +523,6 @@ class DraftingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.drafting_setting_att.GetPreventDimDriving3DCstrInfo(io_admin_level, io_locked)
@@ -577,7 +561,6 @@ class DraftingSettingAtt(SettingController):
         :param str io_admin_level:
         :param str io_locked:
         :param bool o_modified:
-        :return: None
         :rtype: None
         """
         return self.drafting_setting_att.GetPreventFileNewInfo(io_admin_level, io_locked, o_modified)
@@ -629,7 +612,6 @@ class DraftingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.drafting_setting_att.GetPreventGenViewStyleInfo(io_admin_level, io_locked)
@@ -666,7 +648,6 @@ class DraftingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.drafting_setting_att.GetPreventSetAsDefaultInfo(io_admin_level, io_locked)
@@ -703,7 +684,6 @@ class DraftingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.drafting_setting_att.GetPreventSwitchStandardInfo(io_admin_level, io_locked)
@@ -741,7 +721,6 @@ class DraftingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.drafting_setting_att.GetPreventTrueDimensionCreationInfo(io_admin_level, io_locked)
@@ -778,7 +757,6 @@ class DraftingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.drafting_setting_att.GetPreventUpdateStandardInfo(io_admin_level, io_locked)
@@ -815,7 +793,6 @@ class DraftingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.drafting_setting_att.GetPreventViewGeomUpgradeInfo(io_admin_level, io_locked)
@@ -852,7 +829,6 @@ class DraftingSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.drafting_setting_att.GetUseStyleCreateObjectsInfo(io_admin_level, io_locked)
@@ -879,7 +855,6 @@ class DraftingSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.drafting_setting_att.SetCreateNewSheetFromLock(i_locked)
@@ -921,7 +896,6 @@ class DraftingSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.drafting_setting_att.SetDisplayResetButtonLock(i_locked)
@@ -963,7 +937,6 @@ class DraftingSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.drafting_setting_att.SetLockUserDefaultLock(i_locked)
@@ -1005,7 +978,6 @@ class DraftingSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.drafting_setting_att.SetPreventBackgroundAccessLock(i_locked)
@@ -1047,7 +1019,6 @@ class DraftingSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.drafting_setting_att.SetPreventDimDriving3DCstrLock(i_locked)
@@ -1089,7 +1060,6 @@ class DraftingSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.drafting_setting_att.SetPreventFileNewLock(i_locked)
@@ -1131,7 +1101,6 @@ class DraftingSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.drafting_setting_att.SetPreventGenViewStyleLock(i_locked)
@@ -1173,7 +1142,6 @@ class DraftingSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.drafting_setting_att.SetPreventSetAsDefaultLock(i_locked)
@@ -1215,7 +1183,6 @@ class DraftingSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.drafting_setting_att.SetPreventSwitchStandardLock(i_locked)
@@ -1258,7 +1225,6 @@ class DraftingSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.drafting_setting_att.SetPreventTrueDimensionCreationLock(i_locked)
@@ -1300,7 +1266,6 @@ class DraftingSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.drafting_setting_att.SetPreventUpdateStandardLock(i_locked)
@@ -1383,7 +1348,6 @@ class DraftingSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.drafting_setting_att.SetUseStyleCreateObjectsLock(i_locked)

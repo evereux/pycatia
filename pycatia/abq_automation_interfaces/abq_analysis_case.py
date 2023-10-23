@@ -65,7 +65,6 @@ class ABQAnalysisCase(AnyObject):
                 |          Dim ListDisplayGroups As ABQDisplayGroups
                 |          Set ListDisplayGroups = MyCase.DisplayGroups
 
-        :return: ABQDisplayGroups
         :rtype: ABQDisplayGroups
         """
 
@@ -96,7 +95,6 @@ class ABQAnalysisCase(AnyObject):
                 |          ABQGlobalElementAssignment
                 |          Set GlobalElementAssignment = MyCase.GlobalElemAssignment
 
-        :return: ABQGlobalElementAssignment
         :rtype: ABQGlobalElementAssignment
         """
 
@@ -124,7 +122,6 @@ class ABQAnalysisCase(AnyObject):
                 |          Dim ListJobs As ABQJobs
                 |          Set ListJobs = MyCase.Jobs
 
-        :return: ABQJobs
         :rtype: ABQJobs
         """
 
@@ -152,7 +149,6 @@ class ABQAnalysisCase(AnyObject):
                 |          Dim SolutionCase As ABQSolutionCase
                 |          Set SolutionCase = MyCase.SolutionCase
 
-        :return: ABQSolutionCase
         :rtype: ABQSolutionCase
         """
 
@@ -180,7 +176,6 @@ class ABQAnalysisCase(AnyObject):
                 |          Dim ListSteps As ABQSteps
                 |          Set ListSteps = MyCase.Steps
 
-        :return: ABQSteps
         :rtype: ABQSteps
         """
 

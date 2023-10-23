@@ -58,7 +58,6 @@ class ArrangementRectangle(AnyObject):
                 |          Dim dblXLength  As Double
                 |          dblXLength = objRectangle1.XLength
 
-        :return: float
         :rtype: float
         """
 
@@ -90,7 +89,6 @@ class ArrangementRectangle(AnyObject):
                 |          Dim dblYLength  As Double
                 |          dblYLength = objRectangle1.YLength
 
-        :return: float
         :rtype: float
         """
 
@@ -131,7 +129,6 @@ class ArrangementRectangle(AnyObject):
                 |                  objProd  = objRectangle1.GetTechnologicalObject("Product")
 
         :param str i_application_type:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.arrangement_rectangle.GetTechnologicalObject(i_application_type)

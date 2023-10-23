@@ -65,7 +65,6 @@ class SchCntrGraphic(AnyObject):
 
         :param SchGRR i_grr_to_add:
         :param SchGRR i_grr:
-        :return: None
         :rtype: None
         """
         return self.sch_cntr_graphic.AddGraphicalPrimitive(i_grr_to_add.com_object, i_grr.com_object)
@@ -108,7 +107,6 @@ class SchCntrGraphic(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.ListGraphicalPrimitives
 
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.sch_cntr_graphic.ListGraphicalPrimitives())
@@ -139,7 +137,6 @@ class SchCntrGraphic(AnyObject):
                 |          objThisIntf.RemoveGraphicalPrimitiveobjArg1
 
         :param SchGRR i_grr_to_remove:
-        :return: None
         :rtype: None
         """
         return self.sch_cntr_graphic.RemoveGraphicalPrimitive(i_grr_to_remove.com_object)

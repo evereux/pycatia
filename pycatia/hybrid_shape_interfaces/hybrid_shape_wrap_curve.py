@@ -74,7 +74,6 @@ class HybridShapeWrapCurve(HybridShape):
                 |      Dim FirstCurvesConstraint As long
                 |      Set FirstCurvesConstraint = ShpWrapCurve.FirstCurvesConstraint
 
-        :return: int
         :rtype: int
         """
 
@@ -111,7 +110,6 @@ class HybridShapeWrapCurve(HybridShape):
                 |      Dim LastCurvesConstraint As long
                 |      Set LastCurvesConstraint = ShpWrapCurve.LastCurvesConstraint
 
-        :return: int
         :rtype: int
         """
 
@@ -143,7 +141,6 @@ class HybridShapeWrapCurve(HybridShape):
                 | 
                 |      SurfaceToDeform = ShpWrapCurve.Surface
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -193,7 +190,6 @@ class HybridShapeWrapCurve(HybridShape):
         :param int i_position:
         :param Reference o_reference_curve:
         :param Reference o_target_curve:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_wrap_curve.GetCurves(i_position, o_reference_curve.com_object,
@@ -234,7 +230,6 @@ class HybridShapeWrapCurve(HybridShape):
                 | 
                 |      NumberOfCurves = ShpWrapCurve.GetNumberOfCurves(2)
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_wrap_curve.GetNumberOfCurves()
@@ -271,7 +266,6 @@ class HybridShapeWrapCurve(HybridShape):
 
         :param int o_direction_type:
         :param HybridShapeDirection o_direction:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_wrap_curve.GetReferenceDirection(o_direction_type, o_direction.com_object)
@@ -323,7 +317,6 @@ class HybridShapeWrapCurve(HybridShape):
 
         :param int o_spine_type:
         :param Reference o_spine:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_wrap_curve.GetReferenceSpine(o_spine_type, o_spine.com_object)
@@ -383,7 +376,6 @@ class HybridShapeWrapCurve(HybridShape):
         :param int i_position:
         :param Reference i_reference_curve:
         :param Reference i_target_curve:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_wrap_curve.InsertCurves(i_position, i_reference_curve.com_object,
@@ -434,7 +426,6 @@ class HybridShapeWrapCurve(HybridShape):
 
         :param int i_position:
         :param Reference i_reference_curve:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_wrap_curve.InsertReferenceCurve(i_position, i_reference_curve.com_object)
@@ -480,7 +471,6 @@ class HybridShapeWrapCurve(HybridShape):
                 |          ShpWrapCurve.RemoveCurves (1)
 
         :param int i_position:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_wrap_curve.RemoveCurves(i_position)
@@ -508,7 +498,6 @@ class HybridShapeWrapCurve(HybridShape):
                 |              ShpWrapCurve.SetReferenceDirection RefDirection
 
         :param HybridShapeDirection i_direction:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_wrap_curve.SetReferenceDirection(i_direction.com_object)
@@ -553,7 +542,6 @@ class HybridShapeWrapCurve(HybridShape):
                 |      ShpWrapCurve.SetReferenceSpine Curve10
 
         :param Reference i_spine:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_wrap_curve.SetReferenceSpine(i_spine.com_object)

@@ -74,7 +74,6 @@ class ABQOutputRequests(Collection):
                 |          Set abqFieldOutputRequest =  abaqusOutputRequests.Add("ABQFIELD")
 
         :param int i_output_request_type:
-        :return: ABQOutputRequest
         :rtype: ABQOutputRequest
         """
         return ABQOutputRequest(self.abq_output_requests.Add(i_output_request_type))
@@ -117,7 +116,6 @@ class ABQOutputRequests(Collection):
 
         :param cat_variant i_index:
         :param int i_output_request_type:
-        :return: ABQOutputRequest
         :rtype: ABQOutputRequest
         """
         return ABQOutputRequest(self.abq_output_requests.Item(i_index, i_output_request_type))
@@ -157,7 +155,6 @@ class ABQOutputRequests(Collection):
 
         :param cat_variant i_index:
         :param int i_output_request_type:
-        :return: None
         :rtype: None
         """
         return self.abq_output_requests.Remove(i_index, i_output_request_type)

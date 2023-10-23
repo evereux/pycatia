@@ -72,7 +72,6 @@ class HybridShapeWrapSurface(HybridShape):
                 | 
                 |          hybWrapSurface.3D deformation mode = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -103,7 +102,6 @@ class HybridShapeWrapSurface(HybridShape):
                 | 
                 |      ReferenceSurface = ShpWrapSurface.Surface
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -135,7 +133,6 @@ class HybridShapeWrapSurface(HybridShape):
                 | 
                 |      SurfaceToDeform = ShpWrapSurface.Surface
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -166,7 +163,6 @@ class HybridShapeWrapSurface(HybridShape):
                 | 
                 |      TargetSurface = ShpWrapSurface.Surface
 
-        :return: Reference
         :rtype: Reference
         """
 

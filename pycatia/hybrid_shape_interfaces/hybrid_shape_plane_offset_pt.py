@@ -63,7 +63,6 @@ class HybridShapePlaneOffsetPt(Plane):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -101,7 +100,6 @@ class HybridShapePlaneOffsetPt(Plane):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Reference
         :rtype: Reference
         """
 

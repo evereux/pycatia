@@ -53,7 +53,6 @@ class ParameterSet(AnyObject):
                 | Returns all parameters under this set of parameter.
                 | Parameters:
 
-        :return: Parameters
         :rtype: Parameters
         """
         from .parameter import Parameter
@@ -73,7 +72,6 @@ class ParameterSet(AnyObject):
                 | 
                 |     Returns directly aggregated parameters.
 
-        :return: Parameters
         :rtype: Parameters
         """
 
@@ -90,7 +88,6 @@ class ParameterSet(AnyObject):
                 | 
                 |     Returns the children parameter sets.
 
-        :return: ParameterSets
         :rtype: ParameterSets
         """
         from pycatia.knowledge_interfaces.parameter_sets import ParameterSets

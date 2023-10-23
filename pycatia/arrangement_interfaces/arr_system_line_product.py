@@ -49,7 +49,6 @@ class ArrSystemLineProduct(AnyObject):
                 |     Allows the user to get the item at a specific index location.
 
         :param int i_index:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.arr_system_line_product.GetSubItem(i_index))
@@ -67,7 +66,6 @@ class ArrSystemLineProduct(AnyObject):
                 |     is NULL, then it searches for CATIAProduct objects by default.
 
         :param str i_intf_id:
-        :return: int
         :rtype: int
         """
         return self.arr_system_line_product.GetSubProductsCount(i_intf_id)

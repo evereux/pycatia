@@ -49,7 +49,6 @@ class FunctAssociation(AnyObject):
                 | 
                 |     Get count of linked objects.
 
-        :return: int
         :rtype: int
         """
 
@@ -66,7 +65,6 @@ class FunctAssociation(AnyObject):
                 |     Delete a link to a linked object.
 
         :param AnyObject i_linked:
-        :return: None
         :rtype: None
         """
         return self.funct_association.DetachFrom(i_linked.com_object)
@@ -84,7 +82,6 @@ class FunctAssociation(AnyObject):
 
         :param AnyObject i_linked:
         :param str i_kind:
-        :return: None
         :rtype: None
         """
         return self.funct_association.LinkTo(i_linked.com_object, i_kind)
@@ -100,7 +97,6 @@ class FunctAssociation(AnyObject):
                 |     Retrieve the kind of linked object.
 
         :param cat_variant i_index:
-        :return: str
         :rtype: str
         """
         return self.funct_association.RetrieveKindOfLinked(i_index)
@@ -116,7 +112,6 @@ class FunctAssociation(AnyObject):
                 |     Retrieve a linked object.
 
         :param cat_variant i_index:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.funct_association.RetrieveLinked(i_index))

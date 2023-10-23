@@ -70,7 +70,6 @@ class FunctFacetManagers(Collection):
                 |          Set Obj2 = Desc.FacetManagers.Elem("IMC")
 
         :param cat_variant i_index:
-        :return: FunctionalFacetMgr
         :rtype: FunctionalFacetMgr
         """
         return FunctionalFacetMgr(self.funct_facet_managers.Elem(i_index))

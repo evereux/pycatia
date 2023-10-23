@@ -58,7 +58,6 @@ class KnowledgeSheetSettingAtt(SettingController):
                 |             0 : default mode for design table : copy data into models
                 |             1 : default mode for design table : do not copy data into models.
 
-        :return: int
         :rtype: int
         """
 
@@ -94,7 +93,6 @@ class KnowledgeSheetSettingAtt(SettingController):
                 |             1 : interactive synchronization at load for design table
                 |             2 : manual synchronization for design table.
 
-        :return: int
         :rtype: int
         """
 
@@ -130,7 +128,6 @@ class KnowledgeSheetSettingAtt(SettingController):
                 |             0 : to see parameter name not surrounded by the symbol "'"
                 |             1 : to see parameter name surrounded by the symbol "'".
 
-        :return: int
         :rtype: int
         """
 
@@ -166,7 +163,6 @@ class KnowledgeSheetSettingAtt(SettingController):
                 |             0 : to see parameter tree view without formula
                 |             1 : to see parameter tree view with formula.
 
-        :return: int
         :rtype: int
         """
 
@@ -201,7 +197,6 @@ class KnowledgeSheetSettingAtt(SettingController):
                 |             0 : to see parameter tree view without value
                 |             1 : to see parameter tree view with value.
 
-        :return: int
         :rtype: int
         """
 
@@ -238,7 +233,6 @@ class KnowledgeSheetSettingAtt(SettingController):
                 |             0 : creation of relations not evaluate during update
                 |             1 : creation of relations evaluate during update.
 
-        :return: int
         :rtype: int
         """
 
@@ -275,7 +269,6 @@ class KnowledgeSheetSettingAtt(SettingController):
                 |             0 : creation of unsynchronous relations
                 |             1 : creation of synchronous relations.
 
-        :return: int
         :rtype: int
         """
 
@@ -321,7 +314,6 @@ class KnowledgeSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.knowledge_sheet_setting_att.GetDesignTablesCopyDataInfo(io_admin_level, io_locked)
@@ -359,7 +351,6 @@ class KnowledgeSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.knowledge_sheet_setting_att.GetDesignTablesSynchronizationInfo(io_admin_level, io_locked)
@@ -397,7 +388,6 @@ class KnowledgeSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.knowledge_sheet_setting_att.GetParameterNameSurroundedByTheSymbolInfo(io_admin_level, io_locked)
@@ -435,7 +425,6 @@ class KnowledgeSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.knowledge_sheet_setting_att.GetParameterTreeViewWithFormulaInfo(io_admin_level, io_locked)
@@ -473,7 +462,6 @@ class KnowledgeSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.knowledge_sheet_setting_att.GetParameterTreeViewWithValueInfo(io_admin_level, io_locked)
@@ -515,7 +503,6 @@ class KnowledgeSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.knowledge_sheet_setting_att.GetRelationsUpdateInPartContextEvaluateDuringUpdateInfo(io_admin_level,
@@ -558,7 +545,6 @@ class KnowledgeSheetSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.knowledge_sheet_setting_att.GetRelationsUpdateInPartContextSynchronousRelationsInfo(io_admin_level,
@@ -586,7 +572,6 @@ class KnowledgeSheetSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.knowledge_sheet_setting_att.SetDesignTablesCopyDataLock(i_locked)
@@ -629,7 +614,6 @@ class KnowledgeSheetSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.knowledge_sheet_setting_att.SetDesignTablesSynchronizationLock(i_locked)
@@ -673,7 +657,6 @@ class KnowledgeSheetSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.knowledge_sheet_setting_att.SetParameterNameSurroundedByTheSymbolLock(i_locked)
@@ -716,7 +699,6 @@ class KnowledgeSheetSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.knowledge_sheet_setting_att.SetParameterTreeViewWithFormulaLock(i_locked)
@@ -758,7 +740,6 @@ class KnowledgeSheetSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.knowledge_sheet_setting_att.SetParameterTreeViewWithValueLock(i_locked)
@@ -802,7 +783,6 @@ class KnowledgeSheetSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.knowledge_sheet_setting_att.SetRelationsUpdateInPartContextEvaluateDuringUpdateLock(i_locked)

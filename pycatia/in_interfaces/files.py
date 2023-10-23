@@ -71,7 +71,6 @@ class Files(Collection):
                 |          Set ThatFile = TestFiles.Item("MyFile")
 
         :param int i_number:
-        :return: File
         :rtype: File
         """
         return File(self.files.Item(i_number))

@@ -77,7 +77,6 @@ class ClashResults(Collection):
 
         :param str i_path:
         :param int i_type:
-        :return: ClashResult
         :rtype: ClashResult
         """
         return ClashResult(self.clash_results.AddFromXML(i_path, i_type))
@@ -117,7 +116,6 @@ class ClashResults(Collection):
                 |             Set ThatClashResult = TheClashResults.Item("ClashResult Of MyProduct")
 
         :param cat_variant i_index:
-        :return: ClashResult
         :rtype: ClashResult
         """
         return ClashResult(self.clash_results.Item(i_index))
@@ -154,7 +152,6 @@ class ClashResults(Collection):
                 |             TheClashResults.Remove("ClashResult Of MyProduct")
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.clash_results.Remove(i_index)

@@ -59,7 +59,6 @@ class Thread(DressUpShape):
                 | 
                 |              Set Depth = firstthread.Depth
 
-        :return: float
         :rtype: float
         """
 
@@ -93,7 +92,6 @@ class Thread(DressUpShape):
                 | 
                 |              Set ThreadDiameter = firstthread.Diameter
 
-        :return: float
         :rtype: float
         """
 
@@ -119,7 +117,6 @@ class Thread(DressUpShape):
                 |     Returns or sets the lateral face (must be cylindrical) .
                 |     To set the property, you can use the following Boundary object: Face.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -145,7 +142,6 @@ class Thread(DressUpShape):
                 |     Returns or sets the limit face (must be planar ) .
                 |     To set the property, you can use the following Boundary object: PlanarFace.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -179,7 +175,6 @@ class Thread(DressUpShape):
                 | 
                 |              Set ThreadPitch = firstthread.ThreadPitch
 
-        :return: float
         :rtype: float
         """
 
@@ -214,7 +209,6 @@ class Thread(DressUpShape):
                 | 
                 |              Set ThreadSide = firstthreadoThreadSide
 
-        :return: int
         :rtype: int
         """
 
@@ -250,7 +244,6 @@ class Thread(DressUpShape):
                 | 
                 |              Set threadDescription = firstthread.ThreadDescription
 
-        :return: StrParam
         :rtype: StrParam
         """
 
@@ -282,7 +275,6 @@ class Thread(DressUpShape):
                 |              catMetricThinPitch
 
         :param int i_standard_type:
-        :return: None
         :rtype: None
         """
         return self.thread.CreateStandardThreadDesignTable(i_standard_type)
@@ -325,7 +317,6 @@ class Thread(DressUpShape):
 
         :param str i_standard_name:
         :param str i_path:
-        :return: None
         :rtype: None
         """
         return self.thread.CreateUserStandardDesignTable(i_standard_name, i_path)
@@ -340,7 +331,6 @@ class Thread(DressUpShape):
                 | 
                 |     Swap the direction of the thread or the tap.
 
-        :return: None
         :rtype: None
         """
         return self.thread.ReverseDirection()
@@ -370,7 +360,6 @@ class Thread(DressUpShape):
                 |              firstthread.SetExplicitPolarity catTap
 
         :param int i_thread_polarity:
-        :return: None
         :rtype: None
         """
         return self.thread.SetExplicitPolarity(i_thread_polarity)

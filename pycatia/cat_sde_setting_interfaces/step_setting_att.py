@@ -48,7 +48,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -75,7 +74,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -102,7 +100,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -129,7 +126,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: float
         :rtype: float
         """
 
@@ -156,7 +152,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -183,7 +178,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -210,7 +204,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -237,7 +230,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -264,7 +256,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -291,7 +282,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -318,7 +308,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: float
         :rtype: float
         """
 
@@ -345,7 +334,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: float
         :rtype: float
         """
 
@@ -372,7 +360,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: float
         :rtype: float
         """
 
@@ -399,7 +386,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: float
         :rtype: float
         """
 
@@ -426,7 +412,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -453,7 +438,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: str
         :rtype: str
         """
 
@@ -480,7 +464,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: str
         :rtype: str
         """
 
@@ -507,7 +490,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: str
         :rtype: str
         """
 
@@ -534,7 +516,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: str
         :rtype: str
         """
 
@@ -561,7 +542,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -588,7 +568,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -615,7 +594,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -642,7 +620,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -669,7 +646,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -696,7 +672,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -723,7 +698,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -750,7 +724,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: float
         :rtype: float
         """
 
@@ -777,7 +750,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -804,7 +776,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -831,7 +802,6 @@ class StepSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: int
         :rtype: int
         """
 
@@ -877,7 +847,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttAPInfo(io_admin_level, io_locked)
@@ -914,7 +883,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttASMGVPInfo(io_admin_level, io_locked)
@@ -951,7 +919,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttASMInfo(io_admin_level, io_locked)
@@ -988,7 +955,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttAngleDefFitingInfo(io_admin_level, io_locked)
@@ -1025,7 +991,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttAnnotationInfo(io_admin_level, io_locked)
@@ -1062,7 +1027,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttCompositesInfo(io_admin_level, io_locked)
@@ -1099,7 +1063,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttExportRepModeInfo(io_admin_level, io_locked)
@@ -1136,7 +1099,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttFittingInfo(io_admin_level, io_locked)
@@ -1173,7 +1135,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttGVPCOPSInfo(io_admin_level, io_locked)
@@ -1210,7 +1171,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttGVPCOPSSAGInfo(io_admin_level, io_locked)
@@ -1247,7 +1207,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttGVPCOPSTolInfo(io_admin_level, io_locked)
@@ -1284,7 +1243,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttGVPCdGInfo(io_admin_level, io_locked)
@@ -1321,7 +1279,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttGVPInfo(io_admin_level, io_locked)
@@ -1358,7 +1315,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttGVPVAInfo(io_admin_level, io_locked)
@@ -1395,7 +1351,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttGroupModeInfo(io_admin_level, io_locked)
@@ -1432,7 +1387,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttHeaderAuthorInfo(io_admin_level, io_locked)
@@ -1469,7 +1423,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttHeaderAuthorisationInfo(io_admin_level, io_locked)
@@ -1506,7 +1459,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttHeaderDescriptionInfo(io_admin_level, io_locked)
@@ -1543,7 +1495,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttHeaderOrganisationInfo(io_admin_level, io_locked)
@@ -1580,7 +1531,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttIASMInfo(io_admin_level, io_locked)
@@ -1617,7 +1567,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttLayersFiltersInfo(io_admin_level, io_locked)
@@ -1654,7 +1603,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttMultiCADInfo(io_admin_level, io_locked)
@@ -1691,7 +1639,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttOptimizeC2Info(io_admin_level, io_locked)
@@ -1728,7 +1675,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttReportInfo(io_admin_level, io_locked)
@@ -1765,7 +1711,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttShowInfo(io_admin_level, io_locked)
@@ -1802,7 +1747,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttTessPreferedInfo(io_admin_level, io_locked)
@@ -1839,7 +1783,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttTolDefOptFitInfo(io_admin_level, io_locked)
@@ -1876,7 +1819,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttUDAInfo(io_admin_level, io_locked)
@@ -1913,7 +1855,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetAttUnitsInfo(io_admin_level, io_locked)
@@ -1950,7 +1891,6 @@ class StepSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.step_setting_att.GetEdgeInTessInfo(io_admin_level, io_locked)
@@ -1977,7 +1917,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttAPLock(i_locked)
@@ -2019,7 +1958,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttASMGVPLock(i_locked)
@@ -2061,7 +1999,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttASMLock(i_locked)
@@ -2103,7 +2040,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttAngleDefFitingLock(i_locked)
@@ -2145,7 +2081,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttAnnotationLock(i_locked)
@@ -2187,7 +2122,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttCompositesLock(i_locked)
@@ -2229,7 +2163,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttExportRepModeLock(i_locked)
@@ -2271,7 +2204,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttFittingLock(i_locked)
@@ -2313,7 +2245,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttGVPCOPSLock(i_locked)
@@ -2355,7 +2286,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttGVPCOPSSAGLock(i_locked)
@@ -2397,7 +2327,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttGVPCOPSTolLock(i_locked)
@@ -2439,7 +2368,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttGVPCdGLock(i_locked)
@@ -2481,7 +2409,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttGVPLock(i_locked)
@@ -2523,7 +2450,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttGVPVALock(i_locked)
@@ -2565,7 +2491,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttGroupModeLock(i_locked)
@@ -2607,7 +2532,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttHeaderAuthorLock(i_locked)
@@ -2649,7 +2573,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttHeaderAuthorisationLock(i_locked)
@@ -2691,7 +2614,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttHeaderDescriptionLock(i_locked)
@@ -2733,7 +2655,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttHeaderOrganisationLock(i_locked)
@@ -2775,7 +2696,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttIASMLock(i_locked)
@@ -2817,7 +2737,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttLayersFiltersLock(i_locked)
@@ -2859,7 +2778,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttMultiCADLock(i_locked)
@@ -2901,7 +2819,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttOptimizeC2Lock(i_locked)
@@ -2943,7 +2860,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttReportLock(i_locked)
@@ -2985,7 +2901,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttShowLock(i_locked)
@@ -3027,7 +2942,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttTessPreferedLock(i_locked)
@@ -3069,7 +2983,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttTolDefOptFitLock(i_locked)
@@ -3111,7 +3024,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttUDALock(i_locked)
@@ -3153,7 +3065,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetAttUnitsLock(i_locked)
@@ -3195,7 +3106,6 @@ class StepSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.step_setting_att.SetEdgeInTessLock(i_locked)

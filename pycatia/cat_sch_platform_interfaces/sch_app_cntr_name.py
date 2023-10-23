@@ -61,7 +61,6 @@ class SchAppCntrName(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.AppListNames
 
-        :return: SchListOfBSTRs
         :rtype: SchListOfBSTRs
         """
         return SchListOfBSTRs(self.sch_app_cntr_name.AppListNames())
@@ -93,7 +92,6 @@ class SchAppCntrName(AnyObject):
                 |          objThisIntf.GetNamestrVar1
 
         :param str o_name:
-        :return: None
         :rtype: None
         """
         return self.sch_app_cntr_name.GetName(o_name)
@@ -123,7 +121,6 @@ class SchAppCntrName(AnyObject):
                 |          objThisIntf.SetNamestrVar1
 
         :param str i_name:
-        :return: None
         :rtype: None
         """
         return self.sch_app_cntr_name.SetName(i_name)

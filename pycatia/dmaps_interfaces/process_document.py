@@ -54,7 +54,6 @@ class ProcessDocument(Document):
                 |         The DNBIA3DStatePositionManagement corresponding to the current Process
                 |         document.
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -74,7 +73,6 @@ class ProcessDocument(Document):
                 |     Returns:
                 |         The PPRDocument corresponding to the current Process document.
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -96,7 +94,6 @@ class ProcessDocument(Document):
                 |             The name of the library to be added.
 
         :param str i_file_name:
-        :return: None
         :rtype: None
         """
         return self.process_document.AddLibrary(i_file_name)

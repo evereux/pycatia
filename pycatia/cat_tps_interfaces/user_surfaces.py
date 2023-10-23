@@ -67,7 +67,6 @@ class UserSurfaces(Collection):
                 |          Set NewUserSurf = rootPart.UserSurfaces.Add(Ref)
 
         :param Reference i_support:
-        :return: UserSurface
         :rtype: UserSurface
         """
         return UserSurface(self.user_surfaces.Generate(i_support.com_object))
@@ -102,7 +101,6 @@ class UserSurfaces(Collection):
         :param Product i_product:
         :param Product i_prod_inst:
         :param Reference i_support:
-        :return: UserSurface
         :rtype: UserSurface
         """
         return UserSurface(self.user_surfaces.GenerateInAProductCtx(i_product.com_object, i_prod_inst.com_object,
@@ -128,7 +126,6 @@ class UserSurfaces(Collection):
                 |         The user surface that is in the iIndex position in the collection
 
         :param cat_variant i_index:
-        :return: UserSurface
         :rtype: UserSurface
         """
         return UserSurface(self.user_surfaces.Item(i_index))
@@ -157,7 +154,6 @@ class UserSurfaces(Collection):
 
         :param UserSurface i_first_user_surf:
         :param UserSurface i_second_user_surf:
-        :return: UserSurface
         :rtype: UserSurface
         """
         return UserSurface(
@@ -184,7 +180,6 @@ class UserSurfaces(Collection):
                 |         The created user surface
 
         :param tuple i_list_of_user_surfaces:
-        :return: UserSurface
         :rtype: UserSurface
         """
         return UserSurface(self.user_surfaces.MakeUserSurfaceNode2(i_list_of_user_surfaces))

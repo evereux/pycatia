@@ -56,7 +56,6 @@ class ArrangementRun(AnyObject):
                 |          Dim objArrNodes   As ArrangementNodes
                 |          Set objArrNodes = objRun1.ArrangementNodes
 
-        :return: ArrangementNodes
         :rtype: ArrangementNodes
         """
 
@@ -80,7 +79,6 @@ class ArrangementRun(AnyObject):
                 |          Dim dblLength   As Double
                 |          dblLength  = objRun1.Length
 
-        :return: float
         :rtype: float
         """
 
@@ -105,7 +103,6 @@ class ArrangementRun(AnyObject):
                 |          Dim dblSectionDia   As Double
                 |          dblSectionDia = objRun1.SectionDiameter
 
-        :return: float
         :rtype: float
         """
 
@@ -138,7 +135,6 @@ class ArrangementRun(AnyObject):
                 |          Dim dblSectionHeight   As Double
                 |          dblSectionHeight = objRun1.SectionHeight
 
-        :return: float
         :rtype: float
         """
 
@@ -170,7 +166,6 @@ class ArrangementRun(AnyObject):
                 | 
                 |          objRun1.SectionType = CatArrangementRouteSectionRectangular
 
-        :return: int
         :rtype: int
         """
 
@@ -203,7 +198,6 @@ class ArrangementRun(AnyObject):
                 |          Dim dblSectionWidth   As Double
                 |          dblSectionWidth = objRun1.SectionWidth
 
-        :return: float
         :rtype: float
         """
 
@@ -235,7 +229,6 @@ class ArrangementRun(AnyObject):
                 | 
                 |          objRun1.VisuMode = CatArrangementRouteVisuModeSolid
 
-        :return: int
         :rtype: int
         """
 
@@ -276,7 +269,6 @@ class ArrangementRun(AnyObject):
                 |                  objProd  = objRun1.GetTechnologicalObject("Product")
 
         :param str i_application_type:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.arrangement_run.GetTechnologicalObject(i_application_type)

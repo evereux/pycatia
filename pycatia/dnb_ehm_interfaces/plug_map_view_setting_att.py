@@ -55,7 +55,6 @@ class PlugMapViewSettingAtt(SettingController):
                 |     Ensure consistency with the C++ interface to which the work is
                 |     delegated.
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -83,7 +82,6 @@ class PlugMapViewSettingAtt(SettingController):
                 |     Ensure consistency with the C++ interface to which the work is
                 |     delegated.
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -110,7 +108,6 @@ class PlugMapViewSettingAtt(SettingController):
 
         :param str iparameter_name:
         :param str i_refparam_name:
-        :return: None
         :rtype: None
         """
         return self.plug_map_view_setting_att.AddtoLogicalDataAttrList(iparameter_name, i_refparam_name)
@@ -128,7 +125,6 @@ class PlugMapViewSettingAtt(SettingController):
 
         :param str iparameter_name:
         :param str i_refparam_name:
-        :return: None
         :rtype: None
         """
         return self.plug_map_view_setting_att.AddtoTerminationAttrList(iparameter_name, i_refparam_name)
@@ -165,7 +161,6 @@ class PlugMapViewSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.plug_map_view_setting_att.GetLogicalDataAttrListInfo(io_admin_level, io_locked)
@@ -202,7 +197,6 @@ class PlugMapViewSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.plug_map_view_setting_att.GetTerminationAttrListInfo(io_admin_level, io_locked)
@@ -218,7 +212,6 @@ class PlugMapViewSettingAtt(SettingController):
                 |     Method to Remove a parameter fron the LogicalDataAttrList.
 
         :param str iparameter_name:
-        :return: None
         :rtype: None
         """
         return self.plug_map_view_setting_att.RemovefromLogicalDataAttrList(iparameter_name)
@@ -234,7 +227,6 @@ class PlugMapViewSettingAtt(SettingController):
                 |     Method to Remove a parameter fron the TerminationAttrList.
 
         :param str iparameter_name:
-        :return: None
         :rtype: None
         """
         return self.plug_map_view_setting_att.RemovefromTerminationAttrList(iparameter_name)
@@ -261,7 +253,6 @@ class PlugMapViewSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.plug_map_view_setting_att.SetLogicalDataAttrListLock(i_locked)
@@ -303,7 +294,6 @@ class PlugMapViewSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.plug_map_view_setting_att.SetTerminationAttrListLock(i_locked)

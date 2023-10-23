@@ -61,7 +61,6 @@ class ABQGeneralStaticStep(ABQStep):
                 |          Dim abqBCs As ABQBoundaryConditions
                 |          Set abqBCs = abqGenStep.BoundaryConditions
 
-        :return: ABQBoundaryConditions
         :rtype: ABQBoundaryConditions
         """
 
@@ -82,7 +81,6 @@ class ABQGeneralStaticStep(ABQStep):
                 |     Returns:
                 |         The description of the Abaqus general static step.
 
-        :return: str
         :rtype: str
         """
 
@@ -111,7 +109,6 @@ class ABQGeneralStaticStep(ABQStep):
                 |     Returns:
                 |         The energy fraction.
 
-        :return: float
         :rtype: float
         """
 
@@ -144,7 +141,6 @@ class ABQGeneralStaticStep(ABQStep):
                 |          Dim abqFields As ABQFields
                 |          Set abqFields = abqGenStep.Fields
 
-        :return: ABQFields
         :rtype: ABQFields
         """
 
@@ -164,7 +160,6 @@ class ABQGeneralStaticStep(ABQStep):
                 |     Returns:
                 |         The initial increment size.
 
-        :return: float
         :rtype: float
         """
 
@@ -197,7 +192,6 @@ class ABQGeneralStaticStep(ABQStep):
                 |          Dim abqLoads As ABQLoads
                 |          Set abqLoads = abqGenStep.Loads
 
-        :return: ABQLoads
         :rtype: ABQLoads
         """
 
@@ -218,7 +212,6 @@ class ABQGeneralStaticStep(ABQStep):
                 |     Returns:
                 |         The maximum increment.
 
-        :return: float
         :rtype: float
         """
 
@@ -247,7 +240,6 @@ class ABQGeneralStaticStep(ABQStep):
                 |     Returns:
                 |         The maximum number of increments.
 
-        :return: int
         :rtype: int
         """
 
@@ -276,7 +268,6 @@ class ABQGeneralStaticStep(ABQStep):
                 |     Returns:
                 |         The minimum increment.
 
-        :return: float
         :rtype: float
         """
 
@@ -306,7 +297,6 @@ class ABQGeneralStaticStep(ABQStep):
                 |         A boolean specifying whether the geometry remains linear during the
                 |         analysis.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -342,7 +332,6 @@ class ABQGeneralStaticStep(ABQStep):
                 |          Dim bFlag As boolean
                 |          Set bFlag =  generalstaticstep.Stabilization
 
-        :return: bool
         :rtype: bool
         """
 
@@ -363,7 +352,6 @@ class ABQGeneralStaticStep(ABQStep):
                 |     Returns:
                 |         The damping factor.
 
-        :return: float
         :rtype: float
         """
 
@@ -397,7 +385,6 @@ class ABQGeneralStaticStep(ABQStep):
                 |           DISSIPATION
                 |           FACTOR
 
-        :return: int
         :rtype: int
         """
 
@@ -431,7 +418,6 @@ class ABQGeneralStaticStep(ABQStep):
                 |           AUTO_INCREMENT
                 |           FIXED_INCREMENT
 
-        :return: int
         :rtype: int
         """
 
@@ -460,7 +446,6 @@ class ABQGeneralStaticStep(ABQStep):
                 |     Returns:
                 |         The total time period of the Abaqus general static step.
 
-        :return: float
         :rtype: float
         """
 

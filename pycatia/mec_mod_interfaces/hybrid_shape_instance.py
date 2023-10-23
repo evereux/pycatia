@@ -54,7 +54,6 @@ class HybridShapeInstance(HybridShape):
                 | 
                 |          inputsCount = hybridShapeInstance.InputsCount
 
-        :return: int
         :rtype: int
         """
 
@@ -77,7 +76,6 @@ class HybridShapeInstance(HybridShape):
                 | 
                 |          outputsCount = hybridShapeInstance.OutputsCount
 
-        :return: int
         :rtype: int
         """
 
@@ -100,7 +98,6 @@ class HybridShapeInstance(HybridShape):
                 | 
                 |          parametersCount = hybridShapeInstance.ParametersCount
 
-        :return: int
         :rtype: int
         """
 
@@ -133,7 +130,6 @@ class HybridShapeInstance(HybridShape):
                 |          End If
 
         :param str i_index:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.hybrid_shape_instance.GetInput(i_index))
@@ -165,7 +161,6 @@ class HybridShapeInstance(HybridShape):
                 |          End If
 
         :param str i_name:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.hybrid_shape_instance.GetInputData(i_name)
@@ -198,7 +193,6 @@ class HybridShapeInstance(HybridShape):
                 |          End If
 
         :param int i_position:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.hybrid_shape_instance.GetInputDataFromPosition(i_position)
@@ -230,7 +224,6 @@ class HybridShapeInstance(HybridShape):
                 |          End If
 
         :param int i_position:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.hybrid_shape_instance.GetInputFromPosition(i_position))
@@ -261,7 +254,6 @@ class HybridShapeInstance(HybridShape):
                 |          End If
 
         :param str i_name:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.hybrid_shape_instance.GetOutput(i_name))
@@ -292,7 +284,6 @@ class HybridShapeInstance(HybridShape):
                 |          End If
 
         :param int i_position:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.hybrid_shape_instance.GetOutputFromPosition(i_position))
@@ -325,7 +316,6 @@ class HybridShapeInstance(HybridShape):
                 |          End If
 
         :param str i_name:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.hybrid_shape_instance.GetParameter(i_name))
@@ -358,7 +348,6 @@ class HybridShapeInstance(HybridShape):
                 |          End If
 
         :param int i_position:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.hybrid_shape_instance.GetParameterFromPosition(i_position))
@@ -392,7 +381,6 @@ class HybridShapeInstance(HybridShape):
 
         :param str i_index:
         :param AnyObject i_input:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_instance.PutInput(i_index, i_input.com_object)
@@ -427,7 +415,6 @@ class HybridShapeInstance(HybridShape):
 
         :param str i_name:
         :param AnyObject i_input:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_instance.PutInputData(i_name, i_input.com_object)

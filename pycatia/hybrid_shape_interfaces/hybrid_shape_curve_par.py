@@ -68,7 +68,6 @@ class HybridShapeCurvePar(HybridShape):
                 |          Dim offsetCrv As CATIAReference
                 |          offsetCrv = hybShpCurvePar.CurveOffseted
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -100,7 +99,6 @@ class HybridShapeCurvePar(HybridShape):
                 |          Dim oLaw As Reference 
                 |          Set oLaw = hybShpCurvePar.CurveParLaw
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -137,7 +135,6 @@ class HybridShapeCurvePar(HybridShape):
                 | 
                 |      oCurveParType = hybShpCurvePar.CurveParType
 
-        :return: int
         :rtype: int
         """
 
@@ -173,7 +170,6 @@ class HybridShapeCurvePar(HybridShape):
                 | 
                 |          hybShpCurvePar.Geodesic = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -211,7 +207,6 @@ class HybridShapeCurvePar(HybridShape):
                 | 
                 |          hybShpCurvePar.InvertDirection = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -249,7 +244,6 @@ class HybridShapeCurvePar(HybridShape):
                 | 
                 |          hybShpCurvePar.InvertMappingLaw = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -284,7 +278,6 @@ class HybridShapeCurvePar(HybridShape):
                 |          Dim bothSides As Boolean
                 |          bothSides = hybShpCurvePar.KeepBothSides
 
-        :return: bool
         :rtype: bool
         """
 
@@ -328,7 +321,6 @@ class HybridShapeCurvePar(HybridShape):
                 | 
                 |      oLawType = hybShpCurvePar.LawType
 
-        :return: int
         :rtype: int
         """
 
@@ -363,7 +355,6 @@ class HybridShapeCurvePar(HybridShape):
                 |      Dim DeviationValue As CATIALength
                 |      Set DeviationValue = CurvePar.MaximumDeviationValue
 
-        :return: float
         :rtype: float
         """
 
@@ -398,7 +389,6 @@ class HybridShapeCurvePar(HybridShape):
                 |          Dim offsetParm As CATIALength
                 |          offsetParm = hybShpCurvePar.Offset
 
-        :return: Length
         :rtype: Length
         """
 
@@ -426,7 +416,6 @@ class HybridShapeCurvePar(HybridShape):
                 |          Dim offsetParm As CATIALength
                 |          offsetParm = hybShpCurvePar.Offset2
 
-        :return: Length
         :rtype: Length
         """
 
@@ -453,7 +442,6 @@ class HybridShapeCurvePar(HybridShape):
                 |          Dim otherSide As CATIAReference
                 |          Set otherSide = hybShpCurvePar.OtherSide
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -481,7 +469,6 @@ class HybridShapeCurvePar(HybridShape):
                 |          Dim PassingPoint As CATIAReference
                 |          offsetCrv = hybShpCurvePar.PassingPoint
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -517,7 +504,6 @@ class HybridShapeCurvePar(HybridShape):
                 |      Dim SType As long
                 |      Set SType = CurvePar.SmoothingType
 
-        :return: int
         :rtype: int
         """
 
@@ -549,7 +535,6 @@ class HybridShapeCurvePar(HybridShape):
                 |          Dim oElem As Reference 
                 |          Set oElem = hybShpCurvePar.Support
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -582,7 +567,6 @@ class HybridShapeCurvePar(HybridShape):
                 |      Dim 3DSmoothingOption As boolean
                 |      Set 3DSmoothingOption = Project.p3DSmoothing
 
-        :return: bool
         :rtype: bool
         """
 
@@ -627,7 +611,6 @@ class HybridShapeCurvePar(HybridShape):
                 |             y is in oNormal(1)
                 |             z is in oNormal(2)
 
-        :return: tuple
         :rtype: tuple
         """
         vba_function_name = 'get_plane_normal'
@@ -664,7 +647,6 @@ class HybridShapeCurvePar(HybridShape):
                 |             The Z Coordinate of the normal vector
 
         :param tuple i_normal:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_curve_par.PutPlaneNormal(i_normal)

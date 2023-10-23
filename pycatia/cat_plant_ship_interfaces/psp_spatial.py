@@ -54,7 +54,6 @@ class PSPSpatial(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.Physicals
 
-        :return: PSPListOfObjects
         :rtype: PSPListOfObjects
         """
 
@@ -92,7 +91,6 @@ class PSPSpatial(AnyObject):
         :param AnyObject isp_node:
         :param PSPListOfObjects o_l_psp_connectors:
         :param PSPListOfObjects o_l_psp_physicals:
-        :return: None
         :rtype: None
         """
         return self.psp_spatial.GetConnectedPhysicals(

@@ -63,7 +63,6 @@ class Fillet(DressUpShape):
                 |          Set mode = firstFillet.FilletBoundaryRelimitation
                 |          Set FirstFillet.FilletBoundaryRelimitation = catMinimumFilletBoundaryRelimitation
 
-        :return: int
         :rtype: int
         """
 
@@ -98,7 +97,6 @@ class Fillet(DressUpShape):
                 |          Set mode = firstFillet.FilletTrimSupport
                 |          Set FirstFillet.FilletTrimSupport = catNoTrimFilletSupport
 
-        :return: int
         :rtype: int
         """
 

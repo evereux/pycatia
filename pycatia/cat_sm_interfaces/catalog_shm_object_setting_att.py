@@ -69,7 +69,6 @@ class CatalogShmObjectSettingAtt(SettingController):
                 |     Sheet Metal commands, such as cutout or corner relief.
                 |     Legal values: a valid path to a CATIA Catalog file.
 
-        :return: str
         :rtype: str
         """
 
@@ -98,7 +97,6 @@ class CatalogShmObjectSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.catalog_shm_object_setting_att.GetSHMStdProfPathInfo(io_admin_level, io_locked)
@@ -115,7 +113,6 @@ class CatalogShmObjectSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.catalog_shm_object_setting_att.SetSHMStdProfPathLock(i_locked)

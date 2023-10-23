@@ -66,7 +66,6 @@ class HybridShapePointBetween(Point):
                 |          Dim RefPoint1 As Reference
                 |          Set RefPoint1 = PointBetween.FirstPoint
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -99,7 +98,6 @@ class HybridShapePointBetween(Point):
                 |          Dim Orient As long
                 |          Set Orient = PointBetween.Orientation
 
-        :return: int
         :rtype: int
         """
 
@@ -133,7 +131,6 @@ class HybridShapePointBetween(Point):
                 |          Dim ratio  As CATIARealParam
                 |          Get ratio = PointBetween.Ratio
 
-        :return: RealParam
         :rtype: RealParam
         """
 
@@ -158,7 +155,6 @@ class HybridShapePointBetween(Point):
                 |          Dim RefPoint2 As Reference
                 |          Set RefPoint2 = PointBetween.SecondPoint
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -195,7 +191,6 @@ class HybridShapePointBetween(Point):
                 |          Dim oSupport As Reference 
                 |          Set oSupport = PointBetween.Support
 
-        :return: Reference
         :rtype: Reference
         """
 

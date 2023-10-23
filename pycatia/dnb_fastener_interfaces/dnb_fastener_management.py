@@ -149,7 +149,6 @@ class DnbFastenerManagement(AnyObject):
         :param tuple i_design_points_positions:
         :param str i_feature_cgr_path:
         :param CurveFastener o_curve_fastener:
-        :return: None
         :rtype: None
         """
         return self.dnb_fastener_management.CreateCurveFastener(
@@ -224,7 +223,6 @@ class DnbFastenerManagement(AnyObject):
         :param FastenerGroup i_parent_group_body:
         :param tuple i_list_of_joining_parts:
         :param FastenerGroup o_fastener_group:
-        :return: None
         :rtype: None
         """
         return self.dnb_fastener_management.CreateFastenerGroup(
@@ -315,7 +313,6 @@ class DnbFastenerManagement(AnyObject):
         :param int i_fastening_context:
         :param tuple i_design_position:
         :param PointFastener o_point_fastener:
-        :return: None
         :rtype: None
         """
         return self.dnb_fastener_management.CreatePointFastener(

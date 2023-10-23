@@ -73,7 +73,6 @@ class SchAppMultiImage(AnyObject):
         :param Document o_document:
         :param str o_document_name:
         :param str o_symbolic_link_name:
-        :return: None
         :rtype: None
         """
         return self.sch_app_multi_image.AppGetMasterDocument(
@@ -121,7 +120,6 @@ class SchAppMultiImage(AnyObject):
                 |           ...
                 |          Set objMaster = objThisIntf.AppGetMasterObject
 
-        :return: SchAppMultiImageMaster
         :rtype: SchAppMultiImageMaster
         """
         return SchAppMultiImageMaster(self.sch_app_multi_image.AppGetMasterObject())
@@ -151,7 +149,6 @@ class SchAppMultiImage(AnyObject):
                 |          CatSchIDLMultiImageStatus_Enum
 
         :param int o_status:
-        :return: None
         :rtype: None
         """
         return self.sch_app_multi_image.AppIsUpToDate(o_status)
@@ -191,7 +188,6 @@ class SchAppMultiImage(AnyObject):
 
         :param SchAppMultiImageMaster i_master_image:
         :param SchAppMultiImage o_image:
-        :return: None
         :rtype: None
         """
         return self.sch_app_multi_image.AppUpdate(i_master_image.com_object, o_image.com_object)

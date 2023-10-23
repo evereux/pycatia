@@ -67,7 +67,6 @@ class Layout2DView(AnyObject):
                 |          Angle90Clockwise = -PI/2
                 |          MyView.Angle = Angle90Clockwise
 
-        :return: float
         :rtype: float
         """
 
@@ -99,7 +98,6 @@ class Layout2DView(AnyObject):
                 |          Dim ArrowCollection As DrawingArrows
                 |          Set ArrowCollection = MyView.Arrows
 
-        :return: DrawingArrows
         :rtype: DrawingArrows
         """
 
@@ -124,7 +122,6 @@ class Layout2DView(AnyObject):
                 |          Dim ComponentCollection As DrawingComponents
                 |          Set ComponentCollection = MyView.Components
 
-        :return: DrawingComponents
         :rtype: DrawingComponents
         """
 
@@ -149,7 +146,6 @@ class Layout2DView(AnyObject):
                 |          Dim DimensionCollection As DrawingDimensions
                 |          Set DimensionCollection = MyView.Dimensions
 
-        :return: DrawingDimensions
         :rtype: DrawingDimensions
         """
 
@@ -179,7 +175,6 @@ class Layout2DView(AnyObject):
                 | 
                 |          Set my2DFactory = myView.Factory2D
 
-        :return: Factory2D
         :rtype: Factory2D
         """
 
@@ -204,7 +199,6 @@ class Layout2DView(AnyObject):
                 | 
                 |          MyView.FrameVisualization = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -238,7 +232,6 @@ class Layout2DView(AnyObject):
                 |          Dim colGeometry As GeometricElements
                 |          Set colGeometry = MyView.GeometricElements
 
-        :return: GeometricElements
         :rtype: GeometricElements
         """
 
@@ -262,7 +255,6 @@ class Layout2DView(AnyObject):
                 | 
                 |          ViewToWorkOn.LockStatus = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -295,7 +287,6 @@ class Layout2DView(AnyObject):
                 |          Dim PictureCollection As DrawingPictures
                 |          Set PictureCollection = MyView.Pictures
 
-        :return: DrawingPictures
         :rtype: DrawingPictures
         """
 
@@ -330,7 +321,6 @@ class Layout2DView(AnyObject):
                 |          Dim ReferenceView As Layout2DView
                 |          Set ReferenceView = MyView.RefView
 
-        :return: Layout2DView
         :rtype: Layout2DView
         """
 
@@ -362,7 +352,6 @@ class Layout2DView(AnyObject):
                 |          Dim TableCollection As DrawingTables
                 |          Set TableCollection = MyView.Tables
 
-        :return: DrawingTables
         :rtype: DrawingTables
         """
 
@@ -386,7 +375,6 @@ class Layout2DView(AnyObject):
                 |          Dim TextCollection As DrawingTexts
                 |          Set TextCollection = MyView.Texts
 
-        :return: DrawingTexts
         :rtype: DrawingTexts
         """
 
@@ -411,7 +399,6 @@ class Layout2DView(AnyObject):
                 |          Dim ThreadCollection As DrawingThreads
                 |          Set ThreadCollection = MyView.Threads
 
-        :return: DrawingThreads
         :rtype: DrawingThreads
         """
 
@@ -434,7 +421,6 @@ class Layout2DView(AnyObject):
                 | 
                 |          MyView.Scale = 0.5
 
-        :return: float
         :rtype: float
         """
 
@@ -472,7 +458,6 @@ class Layout2DView(AnyObject):
                 | 
                 |              View1.Visu2DMode = catView2DModeNoShow
 
-        :return: int
         :rtype: int
         """
 
@@ -510,7 +495,6 @@ class Layout2DView(AnyObject):
                 | 
                 |              View1.VisuBackground = catLowIntPick
 
-        :return: int
         :rtype: int
         """
 
@@ -549,7 +533,6 @@ class Layout2DView(AnyObject):
                 | 
                 |              View1.HideIn3DSize = catShowAll
 
-        :return: int
         :rtype: int
         """
 
@@ -582,7 +565,6 @@ class Layout2DView(AnyObject):
                 |          Dim weldingCollection As DrawingWeldings
                 |          Set weldingCollection = MyView.Weldings
 
-        :return: DrawingWeldings
         :rtype: DrawingWeldings
         """
 
@@ -607,7 +589,6 @@ class Layout2DView(AnyObject):
                 | 
                 |          X = MyView.x
 
-        :return: float
         :rtype: float
         """
 
@@ -642,7 +623,6 @@ class Layout2DView(AnyObject):
                 |          NewYCoordinate = 5*25.4
                 |          MyView.y = NewYCoordinate
 
-        :return: float
         :rtype: float
         """
 
@@ -673,7 +653,6 @@ class Layout2DView(AnyObject):
                 | 
                 |          ViewToWorkOn.Activate()
 
-        :return: None
         :rtype: None
         """
         return self.layout_2d_view.Activate()
@@ -696,7 +675,6 @@ class Layout2DView(AnyObject):
                 | 
                 |          MyView.AlignedWithReferenceView()
 
-        :return: None
         :rtype: None
         """
         return self.layout_2d_view.AlignedWithReferenceView()
@@ -728,7 +706,6 @@ class Layout2DView(AnyObject):
         :param str i_view_name_prefix:
         :param str i_view_name_ident:
         :param str i_view_name_suffix:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_view.GetViewName(i_view_name_prefix, i_view_name_ident, i_view_name_suffix)
@@ -754,7 +731,6 @@ class Layout2DView(AnyObject):
                 | 
                 |          MyView.SaveEdition
 
-        :return: None
         :rtype: None
         """
         return self.layout_2d_view.SaveEdition()
@@ -788,7 +764,6 @@ class Layout2DView(AnyObject):
         :param str i_view_name_prefix:
         :param str i_view_name_ident:
         :param str i_view_name_suffix:
-        :return: None
         :rtype: None
         """
         return self.layout_2d_view.SetViewName(i_view_name_prefix, i_view_name_ident, i_view_name_suffix)
@@ -826,7 +801,6 @@ class Layout2DView(AnyObject):
                 |              Ymax = oXY(3)
 
         :param tuple o_values:
-        :return: Double
         :rtype: Double
         """
         return self.layout_2d_view.Size(o_values)
@@ -865,7 +839,6 @@ class Layout2DView(AnyObject):
                 | 
                 |          MyView.UnAlignedWithReferenceView()
 
-        :return: None
         :rtype: None
         """
         return self.layout_2d_view.UnAlignedWithReferenceView()

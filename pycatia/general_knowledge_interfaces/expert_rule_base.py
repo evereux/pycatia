@@ -51,7 +51,6 @@ class ExpertRuleBase(ExpertRuleBaseRuntime):
                 |     Returns:
                 |         A volatile copy of the rulebase
 
-        :return: ExpertRuleBaseRuntime
         :rtype: ExpertRuleBaseRuntime
         """
         return ExpertRuleBaseRuntime(self.expert_rule_base.VolatileCopy())

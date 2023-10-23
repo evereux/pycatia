@@ -67,7 +67,6 @@ class SchGRRRoute(AnyObject):
 
         :param tuple i_l_db2_pt_path_to_add:
         :param int i_after_which_pt_num:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_grr_route.AddPoints(i_l_db2_pt_path_to_add, i_after_which_pt_num)
@@ -129,7 +128,6 @@ class SchGRRRoute(AnyObject):
         :param tuple i_db2_pt1:
         :param tuple i_db2_pt2:
         :param SchGRRRoute o_new_grr_route:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_grr_route.Break(i_db2_pt1, i_db2_pt2, o_new_grr_route.com_object)
@@ -168,7 +166,6 @@ class SchGRRRoute(AnyObject):
                 |           ...
                 |          objThisIntf.Compress
 
-        :return: None
         :rtype: None
         """
         return self.sch_grr_route.Compress()
@@ -199,7 +196,6 @@ class SchGRRRoute(AnyObject):
                 |          objThisIntf.Compress2CatSchIDLRouteUnsetGapsMode_Enum
 
         :param int i_unset_gaps:
-        :return: None
         :rtype: None
         """
         return self.sch_grr_route.Compress2(i_unset_gaps)
@@ -240,7 +236,6 @@ class SchGRRRoute(AnyObject):
         :param int i_which_end1:
         :param SchGRRRoute i_grr_route2:
         :param int i_which_end2:
-        :return: None
         :rtype: None
         """
         return self.sch_grr_route.Concatenate(i_which_end1, i_grr_route2.com_object, i_which_end2)
@@ -297,7 +292,6 @@ class SchGRRRoute(AnyObject):
         :param int i_which_end1:
         :param SchGRRRoute i_grr_route2:
         :param int i_which_end2:
-        :return: None
         :rtype: None
         """
         return self.sch_grr_route.ConcatenateKeepGRR2(i_which_end1, i_grr_route2.com_object, i_which_end2)
@@ -363,7 +357,6 @@ class SchGRRRoute(AnyObject):
         :param float i_seg_parm:
         :param SchGRR i_grr_symbol:
         :param SchRouteSymbol o_route_symbol:
-        :return: None
         :rtype: None
         """
         return self.sch_grr_route.CreateRouteSymbol(
@@ -411,7 +404,6 @@ class SchGRRRoute(AnyObject):
                 |          objThisIntf.GetEndPointobjArg1
 
         :param SchListOfDoubles o_db2_end_pt:
-        :return: None
         :rtype: None
         """
         return self.sch_grr_route.GetEndPoint(o_db2_end_pt.com_object)
@@ -455,7 +447,6 @@ class SchGRRRoute(AnyObject):
                 |          objThisIntf.GetPathobjArg1
 
         :param SchListOfDoubles o_l_db2_pt_path:
-        :return: None
         :rtype: None
         """
         return self.sch_grr_route.GetPath(o_l_db2_pt_path.com_object)
@@ -498,7 +489,6 @@ class SchGRRRoute(AnyObject):
                 |          objThisIntf.GetStartPointobjArg1
 
         :param SchListOfDoubles o_db2_start_pt:
-        :return: None
         :rtype: None
         """
         return self.sch_grr_route.GetStartPoint(o_db2_start_pt.com_object)
@@ -540,7 +530,6 @@ class SchGRRRoute(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.ListRouteSymbols
 
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.sch_grr_route.ListRouteSymbols())
@@ -573,7 +562,6 @@ class SchGRRRoute(AnyObject):
 
         :param int i_num_of_pts_to_remove:
         :param int i_after_which_pt_num:
-        :return: None
         :rtype: None
         """
         return self.sch_grr_route.RemovePoints(i_num_of_pts_to_remove, i_after_which_pt_num)
@@ -602,7 +590,6 @@ class SchGRRRoute(AnyObject):
                 |          objThisIntf.SetEndPointdbVar1
 
         :param tuple i_db2_end_pt:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_grr_route.SetEndPoint(i_db2_end_pt)
@@ -652,7 +639,6 @@ class SchGRRRoute(AnyObject):
 
         :param tuple i_l_db2_pt_path:
         :param int i_compress:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_grr_route.SetPath(i_l_db2_pt_path, i_compress)
@@ -707,7 +693,6 @@ class SchGRRRoute(AnyObject):
         :param tuple i_l_db2_pt_path:
         :param int i_compress:
         :param int i_unset_gaps:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_grr_route.SetPath2(i_l_db2_pt_path, i_compress, i_unset_gaps)
@@ -769,7 +754,6 @@ class SchGRRRoute(AnyObject):
         :param int i_compress:
         :param int i_unset_gaps:
         :param int i_route_update_symbols:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_grr_route.SetPath3(i_l_db2_pt_path, i_compress, i_unset_gaps, i_route_update_symbols)
@@ -815,7 +799,6 @@ class SchGRRRoute(AnyObject):
                 |          objThisIntf.SetStartPointdbVar1
 
         :param tuple i_db2_start_pt:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_grr_route.SetStartPoint(i_db2_start_pt)

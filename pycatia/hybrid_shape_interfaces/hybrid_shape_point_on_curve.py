@@ -79,7 +79,6 @@ class HybridShapePointOnCurve(Point):
                 |          Dim oCurve As CATIAReference
                 |          Set oCurve = pointOnCurve.Curve
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -112,7 +111,6 @@ class HybridShapePointOnCurve(Point):
                 |          Dim Dir As CATIAHybridShapeDirection
                 |          Set Dir=pointOnCurve.Direction
 
-        :return: HybridShapeDirection
         :rtype: HybridShapeDirection
         """
 
@@ -155,7 +153,6 @@ class HybridShapePointOnCurve(Point):
                 |          Dim oDistanceType As  long
                 |          Set oDistanceType = pointOnCurve.DistanceType
 
-        :return: int
         :rtype: int
         """
 
@@ -194,7 +191,6 @@ class HybridShapePointOnCurve(Point):
                 |          Dim oOffset As  CATIALength  
                 |          Set oOffset = pointOnCurve.Offset
 
-        :return: Length
         :rtype: Length
         """
 
@@ -213,7 +209,6 @@ class HybridShapePointOnCurve(Point):
                 |     curve.
                 |     Legal values: 0 = Distance on curve 1 = Distance along direction 2 = Ratio of Curve length
 
-        :return: int
         :rtype: int
         """
 
@@ -255,7 +250,6 @@ class HybridShapePointOnCurve(Point):
                 |          Dim oOrientation As  long
                 |          Set oOrientation = pointOnCurve.Orientation
 
-        :return: int
         :rtype: int
         """
 
@@ -300,7 +294,6 @@ class HybridShapePointOnCurve(Point):
                 |          Dim oRefPoint As  CATIAReference
                 |          Set oRefPoint = pointOnCurve.Point
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -340,7 +333,6 @@ class HybridShapePointOnCurve(Point):
                 |          Dim oRatio As  CATIALength  
                 |          Set oRatio = PointOnCurve.Ratio
 
-        :return: RealParam
         :rtype: RealParam
         """
 
@@ -371,7 +363,6 @@ class HybridShapePointOnCurve(Point):
                 |          Dim oType As long
                 |          Set oType = pointOnCurve.Type
 
-        :return: int
         :rtype: int
         """
 

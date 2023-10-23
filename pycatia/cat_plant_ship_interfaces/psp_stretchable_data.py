@@ -56,7 +56,6 @@ class PSPStretchableData(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.ListBendData
 
-        :return: PSPListOfDoubles
         :rtype: PSPListOfDoubles
         """
         return PSPListOfDoubles(self.psp_stretchable_data.ListBendData())
@@ -91,7 +90,6 @@ class PSPStretchableData(AnyObject):
                 |          Set objArg2 = objThisIntf.ListDefinitionPoints (objArg1)
 
         :param Product i_rel_axis:
-        :return: PSPListOfDoubles
         :rtype: PSPListOfDoubles
         """
         return PSPListOfDoubles(self.psp_stretchable_data.ListDefinitionPoints(i_rel_axis.com_object))

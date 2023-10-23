@@ -54,7 +54,6 @@ class PSPObject(AnyObject):
                 |           ...
                 |          eApplID = objThisIntf.ApplicationID
 
-        :return: int
         :rtype: int
         """
 
@@ -78,7 +77,6 @@ class PSPObject(AnyObject):
                 |           ...
                 |          eDomanID = objThisIntf.DomainID
 
-        :return: int
         :rtype: int
         """
 
@@ -102,7 +100,6 @@ class PSPObject(AnyObject):
                 |          ...
                 |          strStartUp = objThisIntf.StartupType
 
-        :return: str
         :rtype: str
         """
 

@@ -51,7 +51,6 @@ class RenderingEnvironmentWall(AnyObject):
                 |         1: wall is visible
                 |         0: wall is invisible
 
-        :return: int
         :rtype: int
         """
 
@@ -82,7 +81,6 @@ class RenderingEnvironmentWall(AnyObject):
                 |         1: automatic scaling is on
                 |         0: automatic scaling is off
 
-        :return: int
         :rtype: int
         """
 
@@ -112,7 +110,6 @@ class RenderingEnvironmentWall(AnyObject):
                 |         1: texture is flipped along the U axis
                 |         0: texture is not flipped along the U axis
 
-        :return: int
         :rtype: int
         """
 
@@ -142,7 +139,6 @@ class RenderingEnvironmentWall(AnyObject):
                 |         1: texture is flipped along the V axis
                 |         0: texture is not flipped along the V axis
 
-        :return: int
         :rtype: int
         """
 
@@ -173,7 +169,6 @@ class RenderingEnvironmentWall(AnyObject):
                 |         1: U and V scales are linked
                 |         0: U and V scales are not linked
 
-        :return: int
         :rtype: int
         """
 
@@ -199,7 +194,6 @@ class RenderingEnvironmentWall(AnyObject):
                 |     Returns or sets the texture rotation angle (in degrees). The rotation
                 |     values must be between -360 and 360 degrees.
 
-        :return: float
         :rtype: float
         """
 
@@ -226,7 +220,6 @@ class RenderingEnvironmentWall(AnyObject):
                 |     be > 0. Note that the modification of this parameter is useless if automatic
                 |     scaling is enabled.
 
-        :return: float
         :rtype: float
         """
 
@@ -253,7 +246,6 @@ class RenderingEnvironmentWall(AnyObject):
                 |     be > 0. Note that the modification of this parameter is useless if automatic
                 |     scaling is enabled.
 
-        :return: float
         :rtype: float
         """
 
@@ -285,7 +277,6 @@ class RenderingEnvironmentWall(AnyObject):
                 |         0: wall is not affected by active lights and is always
                 |         seen
 
-        :return: int
         :rtype: int
         """
 
@@ -311,7 +302,6 @@ class RenderingEnvironmentWall(AnyObject):
                 |     Returns or sets the wall texture name. To remove the texture, use an empty
                 |     string.
 
-        :return: str
         :rtype: str
         """
 
@@ -337,7 +327,6 @@ class RenderingEnvironmentWall(AnyObject):
                 |     Returns or sets the texture offset along the U axis. Note that this
                 |     parameter is useless if automatic scaling is enabled.
 
-        :return: float
         :rtype: float
         """
 
@@ -363,7 +352,6 @@ class RenderingEnvironmentWall(AnyObject):
                 |     Returns or sets the texture offset along the V axis. Note that this
                 |     parameter is useless if automatic scaling is enabled.
 
-        :return: float
         :rtype: float
         """
 
@@ -388,7 +376,6 @@ class RenderingEnvironmentWall(AnyObject):
                 |     If a texture is mapped on the wall, scale automatically the texture to fit
                 |     inside the wall.
 
-        :return: None
         :rtype: None
         """
         return self.rendering_environment_wall.FitAllInWall()

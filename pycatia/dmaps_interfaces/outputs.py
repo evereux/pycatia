@@ -55,7 +55,6 @@ class Outputs(Collection):
                 |         oProduct The assigned product
 
         :param Item i_output:
-        :return: Item
         :rtype: Item
         """
         return Item(self.outputs.Add(i_output.com_object))
@@ -74,7 +73,6 @@ class Outputs(Collection):
                 |     Returns:
                 |         oNbOutputs No. of Outputss that are assigned to the activity.
 
-        :return: int
         :rtype: int
         """
         return self.outputs.Count()
@@ -100,7 +98,6 @@ class Outputs(Collection):
                 |         oProduct The indexed product/MA that is assigned to the process.
 
         :param cat_variant i_index:
-        :return: Item
         :rtype: Item
         """
         return Item(self.outputs.Item(i_index))
@@ -125,7 +122,6 @@ class Outputs(Collection):
                 |         oProduct The item
 
         :param Item i_output:
-        :return: Item
         :rtype: Item
         """
         return Item(self.outputs.Remove(i_output.com_object))

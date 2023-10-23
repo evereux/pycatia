@@ -68,7 +68,6 @@ class Dressups(Collection):
 
         :param Mechanism i_mechanism:
         :param Product i_context:
-        :return: Dressup
         :rtype: Dressup
         """
         return Dressup(self.dressups.Add(i_mechanism.com_object, i_context.com_object))
@@ -107,7 +106,6 @@ class Dressups(Collection):
                 |          Set ThatDressup = CATIA.Dressups.Item("MyDressup")
 
         :param cat_variant i_index:
-        :return: Dressup
         :rtype: Dressup
         """
         return Dressup(self.dressups.Item(i_index))
@@ -142,7 +140,6 @@ class Dressups(Collection):
                 |             Dim LastContext As Product
                 |             Set LastContext = ContextList(ubound(ContextList))
 
-        :return: tuple
         :rtype: tuple
         """
         return self.dressups.ListMechanismsContext()
@@ -177,7 +174,6 @@ class Dressups(Collection):
                 |             Dim LastMeca As Mechanism
                 |             Set Meca  = PossibleMecList(ubound(PossibleMecList))
 
-        :return: tuple
         :rtype: tuple
         """
         return self.dressups.ListPossibleMechanisms()
@@ -211,7 +207,6 @@ class Dressups(Collection):
                 |             TheDressups.Remove("DressupTwo")
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.dressups.Remove(i_index)

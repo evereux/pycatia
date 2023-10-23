@@ -114,7 +114,6 @@ class DeviceTask(Activity):
         :param int position:
         :param float delay_time:
         :param Activity o_delay_acty:
-        :return: None
         :rtype: None
         """
         return self.device_task.CreateDelayActivity(
@@ -184,7 +183,6 @@ class DeviceTask(Activity):
         :param AnyObject isp_father:
         :param int position:
         :param Activity o_move_home_acty:
-        :return: None
         :rtype: None
         """
         return self.device_task.CreateMoveHomeActivity(isp_father.com_object, position, o_move_home_acty.com_object)
@@ -249,7 +247,6 @@ class DeviceTask(Activity):
         :param AnyObject isp_father:
         :param int position:
         :param Activity o_move_joints_acty:
-        :return: None
         :rtype: None
         """
         return self.device_task.CreateMoveJointsActivity(isp_father.com_object, position, o_move_joints_acty.com_object)

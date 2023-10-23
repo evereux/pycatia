@@ -61,7 +61,6 @@ class HybridShapeInverse(HybridShape):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -88,7 +87,6 @@ class HybridShapeInverse(HybridShape):
                 |     Orientation = 1 : the element is not inverted. = -1 : the element is inverted, =
                 |      2 : the element can not be inverted. Orientation can not be set to 2.
 
-        :return: int
         :rtype: int
         """
 

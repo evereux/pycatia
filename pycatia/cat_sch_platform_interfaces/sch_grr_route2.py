@@ -61,7 +61,6 @@ class SchGRRRoute2(AnyObject):
                 |          objThisIntf.GetReshapeModeCatSchIDLGRRRouteReshapeMode_Enum
 
         :param int o_reshape_mode:
-        :return: None
         :rtype: None
         """
         return self.sch_grr_route2.GetReshapeMode(o_reshape_mode)
@@ -93,7 +92,6 @@ class SchGRRRoute2(AnyObject):
                 |          objThisIntf.SetReshapeModeCatSchIDLGRRRouteReshapeMode_Enum
 
         :param int i_reshape_mode:
-        :return: None
         :rtype: None
         """
         return self.sch_grr_route2.SetReshapeMode(i_reshape_mode)

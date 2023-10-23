@@ -45,7 +45,6 @@ class Geometry2D(GeometricElement):
                 | 
                 |     Returns the construction mode of the 2D geometry
 
-        :return: bool
         :rtype: bool
         """
 
@@ -75,7 +74,6 @@ class Geometry2D(GeometricElement):
                 |         oReportName
                 |             The integer value of the report name
 
-        :return: int
         :rtype: int
         """
 

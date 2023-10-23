@@ -58,7 +58,6 @@ class DnbAttachment(AnyObject):
                 |         HRESULT indicate whether function succeed.
 
         :param Product o_child:
-        :return: None
         :rtype: None
         """
         return self.dnb_attachment.GetChild(o_child.com_object)
@@ -99,7 +98,6 @@ class DnbAttachment(AnyObject):
                 |         not a Manufacturing Assembly
 
         :param AnyObject o_child_ma:
-        :return: None
         :rtype: None
         """
         return self.dnb_attachment.GetChildMA(o_child_ma.com_object)
@@ -124,7 +122,6 @@ class DnbAttachment(AnyObject):
                 |         An HRESULT
 
         :param Product o_parent:
-        :return: None
         :rtype: None
         """
         return self.dnb_attachment.GetParent(o_parent.com_object)
@@ -168,7 +165,6 @@ class DnbAttachment(AnyObject):
                 |         not a Manufacturing Assembly
 
         :param AnyObject o_parent_ma:
-        :return: None
         :rtype: None
         """
         return self.dnb_attachment.GetParentMA(o_parent_ma.com_object)
@@ -193,7 +189,6 @@ class DnbAttachment(AnyObject):
                 |         not a Manufacturing Assembly
 
         :param bool i_child_ma:
-        :return: None
         :rtype: None
         """
         return self.dnb_attachment.IsChildMA(i_child_ma)
@@ -233,7 +228,6 @@ class DnbAttachment(AnyObject):
                 |         not a Manufacturing Assembly
 
         :param bool i_parent_ma:
-        :return: None
         :rtype: None
         """
         return self.dnb_attachment.IsParentMA(i_parent_ma)

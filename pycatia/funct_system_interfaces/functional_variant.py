@@ -49,7 +49,6 @@ class FunctionalVariant(FunctionalDescription):
                 | 
                 |     Returns the Original Description the Variant comes from.
 
-        :return: FunctionalDescription
         :rtype: FunctionalDescription
         """
 

@@ -44,7 +44,6 @@ class AnalysisAdaptivityManager(AnalysisSet):
                 | 
                 |     Run the adaptivity process.
 
-        :return: None
         :rtype: None
         """
         return self.analysis_adaptivity_manager.Run()

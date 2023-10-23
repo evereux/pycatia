@@ -58,7 +58,6 @@ class SchInternalFlow(AnyObject):
                 |          objThisIntf.GetInsertionTypeCatSchIDLInternalFlowType_Enum
 
         :param int o_e_internal_flow_type:
-        :return: None
         :rtype: None
         """
         return self.sch_internal_flow.GetInsertionType(o_e_internal_flow_type)
@@ -87,7 +86,6 @@ class SchInternalFlow(AnyObject):
                 |          objThisIntf.GetStatusCatSchIDLInternalFlowStatus_Enum
 
         :param int o_e_internal_flow_status:
-        :return: None
         :rtype: None
         """
         return self.sch_internal_flow.GetStatus(o_e_internal_flow_status)
@@ -116,7 +114,6 @@ class SchInternalFlow(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.ListSchConnectors
 
-        :return: SchListOfObjects
         :rtype: SchListOfObjects
         """
         return SchListOfObjects(self.sch_internal_flow.ListSchConnectors())
@@ -145,7 +142,6 @@ class SchInternalFlow(AnyObject):
                 |          objThisIntf.SetStatusCatSchIDLInternalFlowStatus_Enum
 
         :param int i_e_internal_flow_status:
-        :return: None
         :rtype: None
         """
         return self.sch_internal_flow.SetStatus(i_e_internal_flow_status)

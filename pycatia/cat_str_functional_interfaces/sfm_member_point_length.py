@@ -59,7 +59,6 @@ class SFMMemberPointLength(SFMMember):
                 |          Dim Direction As Reference
                 |          Set Direction = SfmMemberPointLength.Direction
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -91,7 +90,6 @@ class SFMMemberPointLength(SFMMember):
                 |          Dim DirectionOrientation As Integer
                 |          Set DirectionOrientation = SfmMemberPointLength.DirectionOrientation
 
-        :return: int
         :rtype: int
         """
 
@@ -123,7 +121,6 @@ class SFMMemberPointLength(SFMMember):
                 |          Dim Length As Double
                 |          Set Length = SfmMember.Length
 
-        :return: float
         :rtype: float
         """
 
@@ -146,7 +143,6 @@ class SFMMemberPointLength(SFMMember):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357)
                 | o Property LengthParam() As Length (Read Only)
 
-        :return: Length
         :rtype: Length
         """
 
@@ -171,7 +167,6 @@ class SFMMemberPointLength(SFMMember):
                 |          Dim Point As Reference
                 |          Set Point = SfmMemberPointLength.Point
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -201,7 +196,6 @@ class SFMMemberPointLength(SFMMember):
                 | 
                 |          SfmMemberPointLength.InvertDirection
 
-        :return: None
         :rtype: None
         """
         return self.sfm_member_point_length.InvertDirection()

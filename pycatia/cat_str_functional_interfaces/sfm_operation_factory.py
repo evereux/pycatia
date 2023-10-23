@@ -77,7 +77,6 @@ class SFMOperationFactory(Factory):
                 |              ListOfAvailableSlots = SlotFactoryObj.GetAvailableSlotsFromCatalog(SfmProfileObj)
 
         :param SFMProfile i_sfm_profile:
-        :return: tuple
         :rtype: tuple
         """
         return self.sfm_operation_factory.GetAvailableSlotsFromCatalog(i_sfm_profile.com_object)
@@ -109,7 +108,6 @@ class SFMOperationFactory(Factory):
                 |              Dim EndCutManagerObj As SfmEndcutManager
                 |              Set EndCutManagerObj = FactoryObj.GetEndcutManager
 
-        :return: SFMEndcutManager
         :rtype: SFMEndcutManager
         """
         return SFMEndcutManager(self.sfm_operation_factory.GetEndcutManager())
@@ -173,7 +171,6 @@ class SFMOperationFactory(Factory):
         :param str i_slot_name:
         :param SFMConnectionParameters o_list_slot_parameters:
         :param tuple o_list_slot_param_names:
-        :return: cat_variant
         :rtype: cat_variant
         """
         return self.sfm_operation_factory.GetSlotParameters(

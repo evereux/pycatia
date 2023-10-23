@@ -96,7 +96,6 @@ class CatalogDocument(Document):
         :param str i_table_path:
         :param int i_conv_format:
         :param int i_batch_mode:
-        :return: None
         :rtype: None
         """
         return CatalogDocument(
@@ -181,7 +180,6 @@ class CatalogDocument(Document):
 
         :param str i_chapter_name:
         :param str i_document_containing_dt:
-        :return: None
         :rtype: None
         """
         return self.catalog_document.CreateChapterFromDesignTable(i_chapter_name, i_document_containing_dt)

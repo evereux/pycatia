@@ -62,7 +62,6 @@ class HybridShapeRollingOffset(HybridShape):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Length
         :rtype: Length
         """
 
@@ -93,7 +92,6 @@ class HybridShapeRollingOffset(HybridShape):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -136,7 +134,6 @@ class HybridShapeRollingOffset(HybridShape):
                 |         HybridShapeFactory
 
         :param int i_pos:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_rolling_offset.getCurve(i_pos))
@@ -164,7 +161,6 @@ class HybridShapeRollingOffset(HybridShape):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_rolling_offset.getNbCurve()
@@ -192,7 +188,6 @@ class HybridShapeRollingOffset(HybridShape):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: float
         :rtype: float
         """
         return self.hybrid_shape_rolling_offset.getOffset()
@@ -220,7 +215,6 @@ class HybridShapeRollingOffset(HybridShape):
                 |         HybridShapeFactory
 
         :param Reference i_curve:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_rolling_offset.putCurve(i_curve.com_object)
@@ -264,7 +258,6 @@ class HybridShapeRollingOffset(HybridShape):
                 |         HybridShapeFactory
 
         :param float i_offset:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_rolling_offset.putOffset(i_offset)

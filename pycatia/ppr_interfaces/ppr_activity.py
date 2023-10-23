@@ -51,7 +51,6 @@ class PPRActivity(Activity):
                 |     Returns:
                 |         The list of items of the current Activity.
 
-        :return: PPRProducts
         :rtype: PPRProducts
         """
 
@@ -73,7 +72,6 @@ class PPRActivity(Activity):
                 |         The list of items of the current Activity, including ASMPRODUCT and
                 |         possibly FTA objects
 
-        :return: list
         :rtype: list
         """
 
@@ -94,7 +92,6 @@ class PPRActivity(Activity):
                 |     Returns:
                 |         The list of resources of the current Activity.
 
-        :return: PPRProducts
         :rtype: PPRProducts
         """
 

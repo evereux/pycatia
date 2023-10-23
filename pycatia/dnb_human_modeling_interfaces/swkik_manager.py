@@ -50,7 +50,6 @@ class SWKIKManager(AnyObject):
                 |     property is the concatenation of the current IK behaviors, like
                 |     "Thoracic/Lumbar/Balance".
 
-        :return: str
         :rtype: str
         """
 
@@ -75,7 +74,6 @@ class SWKIKManager(AnyObject):
                 | 
                 |     Returns the manikin which owns this IK manager.
 
-        :return: SWKManikin
         :rtype: SWKManikin
         """
 
@@ -92,7 +90,6 @@ class SWKIKManager(AnyObject):
                 | 
                 |     Returns the total number of constraints on the manikin.
 
-        :return: int
         :rtype: int
         """
 
@@ -118,7 +115,6 @@ class SWKIKManager(AnyObject):
                 |             The constraint created.
 
         :param str pi_end_effector:
-        :return: SWKIKConstraint
         :rtype: SWKIKConstraint
         """
         return SWKIKConstraint(self.swkik_manager.AddConstraint(pi_end_effector))
@@ -143,7 +139,6 @@ class SWKIKManager(AnyObject):
 
         :param SWKIKConstraint pi_constraint_from:
         :param SWKIKConstraint po_created_constraint:
-        :return: None
         :rtype: None
         """
         return self.swkik_manager.AddConstraintFrom(pi_constraint_from.com_object, po_created_constraint.com_object)
@@ -174,7 +169,6 @@ class SWKIKManager(AnyObject):
                 |     Returns the constraint at index piIndex. First element is at index 0.
 
         :param int pi_index:
-        :return: SWKIKConstraint
         :rtype: SWKIKConstraint
         """
         return SWKIKConstraint(self.swkik_manager.GetConstraint(pi_index))
@@ -189,7 +183,6 @@ class SWKIKManager(AnyObject):
                 | 
                 |     Remove all existing constraints on the manikin.
 
-        :return: None
         :rtype: None
         """
         return self.swkik_manager.RemoveAllConstraints()
@@ -210,7 +203,6 @@ class SWKIKManager(AnyObject):
                 |             The constraint to remove.
 
         :param SWKIKConstraint pi_constraint_to_remove:
-        :return: None
         :rtype: None
         """
         return self.swkik_manager.RemoveConstraint(pi_constraint_to_remove.com_object)
@@ -243,7 +235,6 @@ class SWKIKManager(AnyObject):
                 |     the constraints (i.e. reach all defined targets).
                 |     Will resolve the constraints for this manikin only.
 
-        :return: None
         :rtype: None
         """
         return self.swkik_manager.Resolve()

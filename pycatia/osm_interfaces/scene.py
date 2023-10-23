@@ -71,7 +71,6 @@ class Scene(AnyObject):
                 |             Definition = Configuration1.GetDefinition(Engine)
 
         :param Product i_product:
-        :return: str
         :rtype: str
         """
         return self.scene.GetDefinition(i_product.com_object)
@@ -103,7 +102,6 @@ class Scene(AnyObject):
                 |             Description = Configuration1.GetDescription(Engine)
 
         :param Product i_product:
-        :return: str
         :rtype: str
         """
         return self.scene.GetDescription(i_product.com_object)
@@ -140,7 +138,6 @@ class Scene(AnyObject):
 
         :param Product i_product:
         :param bool i_load_if_necessary:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.scene.GetMasterShapeRepresentation(i_product.com_object, i_load_if_necessary)
@@ -175,7 +172,6 @@ class Scene(AnyObject):
                 |             Set EngineMove = Configuration1.GetMove(Engine)
 
         :param Product i_product:
-        :return: Move
         :rtype: Move
         """
         return Move(self.scene.GetMove(i_product.com_object))
@@ -207,7 +203,6 @@ class Scene(AnyObject):
                 |             Nomenclature = Configuration1.GetNomenclature(Engine)
 
         :param Product i_product:
-        :return: str
         :rtype: str
         """
         return self.scene.GetNomenclature(i_product.com_object)
@@ -239,7 +234,6 @@ class Scene(AnyObject):
                 |             PartNumber = Configuration1.GetPartNumber(Engine)
 
         :param Product i_product:
-        :return: str
         :rtype: str
         """
         return self.scene.GetPartNumber(i_product.com_object)
@@ -273,7 +267,6 @@ class Scene(AnyObject):
                 |             Set EnginePosition = Configuration1.GetPosition(Engine)
 
         :param Product i_product:
-        :return: Position
         :rtype: Position
         """
         return Position(self.scene.GetPosition(i_product.com_object))
@@ -305,7 +298,6 @@ class Scene(AnyObject):
                 |             Revision = Configuration1.GetRevision(Engine)
 
         :param Product i_product:
-        :return: str
         :rtype: str
         """
         return self.scene.GetRevision(i_product.com_object)
@@ -337,8 +329,8 @@ class Scene(AnyObject):
                 |             Source = Configuration1.GetSource(Engine)
 
         :param Product i_product:
-        :return: enum cat_product_source
         :rtype: enum cat_product_source
+        :rtype: int
         """
         return self.scene.GetSource(i_product.com_object)
 
@@ -371,7 +363,6 @@ class Scene(AnyObject):
                 |             HasMSRep = Configuration1.HasAMasterShapeRepresentation(Engine)
 
         :param Product i_product:
-        :return: bool
         :rtype: bool
         """
         return self.scene.HasAMasterShapeRepresentation(i_product.com_object)
@@ -396,7 +387,6 @@ class Scene(AnyObject):
                 |             Dim FullScene As ProductScene
                 |             Set FullScene = Configuration1.UpgradeToFull
 
-        :return: ProductScene
         :rtype: ProductScene
         """
         return ProductScene(self.scene.UpgradeToFull())
@@ -422,7 +412,6 @@ class Scene(AnyObject):
                 |             Dim PartialScene As ProductScene
                 |             Set PartialScene = Configuration1.UpgradeToPartial
 
-        :return: ProductScene
         :rtype: ProductScene
         """
         return ProductScene(self.scene.UpgradeToPartial())

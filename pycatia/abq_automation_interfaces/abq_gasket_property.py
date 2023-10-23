@@ -45,7 +45,6 @@ class ABQGasketProperty(ABQProperty):
                 | 
                 |     Sets or returns the Initial gap value
 
-        :return: float
         :rtype: float
         """
 
@@ -70,7 +69,6 @@ class ABQGasketProperty(ABQProperty):
                 | 
                 |     Sets or returns the Initial thickness value
 
-        :return: float
         :rtype: float
         """
 
@@ -95,7 +93,6 @@ class ABQGasketProperty(ABQProperty):
                 | 
                 |     Sets or returns the Initial thickness type
 
-        :return: int
         :rtype: int
         """
 
@@ -120,7 +117,6 @@ class ABQGasketProperty(ABQProperty):
                 | 
                 |     Sets or returns the Initial void value
 
-        :return: float
         :rtype: float
         """
 
@@ -145,7 +141,6 @@ class ABQGasketProperty(ABQProperty):
                 | 
                 |     Sets or returns the Stabilization stiffness value
 
-        :return: float
         :rtype: float
         """
 
@@ -171,7 +166,6 @@ class ABQGasketProperty(ABQProperty):
                 | 
                 |     Sets or returns the Stabilization stiffness type
 
-        :return: int
         :rtype: int
         """
 
@@ -196,7 +190,6 @@ class ABQGasketProperty(ABQProperty):
                 | 
                 |     Sets or returns the 3D structrel property.
 
-        :return: AnalysisEntity
         :rtype: AnalysisEntity
         """
 

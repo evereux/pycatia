@@ -93,7 +93,6 @@ class PSPAttributeReport(AnyObject):
 
         :param str i_input_format_file:
         :param str i_outputfile:
-        :return: int
         :rtype: int
         """
         return self.psp_attribute_report.GenerateReport(i_input_format_file, i_outputfile)

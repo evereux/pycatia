@@ -73,7 +73,6 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
                 | 
                 |          hybShpcircle.BeginOfCircle = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -108,7 +107,6 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
                 |          Dim HybShpCircleFirstCurve As Reference 
                 |          HybShpCircleFirstCurve = HybShpCircle.Curve1
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -142,7 +140,6 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
                 | 
                 |          HybShpCircle.Curve2 Crv5
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -175,7 +172,6 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
                 |      Dim HybShpCircleDiameter As Length
                 |      HybShpCircleDiameter = HybShpCircle.Diameter
 
-        :return: Length
         :rtype: Length
         """
 
@@ -203,7 +199,6 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
                 | 
                 |           HybShpCircle.DiameterMode = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -240,7 +235,6 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
                 | 
                 |          hybShpcircle.DiscriminationIndex = 2
 
-        :return: int
         :rtype: int
         """
 
@@ -277,7 +271,6 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
                 | 
                 |          HybShpCircle.Orientation1 -1
 
-        :return: int
         :rtype: int
         """
 
@@ -314,7 +307,6 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
                 | 
                 |          HybShpCircleOrientation = HybShpCircle.Orientation2
 
-        :return: int
         :rtype: int
         """
 
@@ -347,7 +339,6 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
                 |      Dim HybShpCircleRadius As Length
                 |      HybShpCircleRadius = HybShpCircle.Radius
 
-        :return: Length
         :rtype: Length
         """
 
@@ -372,7 +363,6 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
                 |          Dim HybShpCircleSupportSurf As Reference 
                 |          HybShpCircleSupportSurf = HybShpCircle.Support
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -408,7 +398,6 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
                 |          Dim firstOrient As long
                 |          firstOrient = hybShpcircle.FirstTangentOrientation
 
-        :return: int
         :rtype: int
         """
 
@@ -444,7 +433,6 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
                 |          Dim secondOrient As long
                 |          secondOrient = hybShpcircle.SecondTangentOrientation
 
-        :return: int
         :rtype: int
         """
 
@@ -484,7 +472,6 @@ class HybridShapeCircleBitangentRadius(HybridShapeCircle):
                 | 
                 |          hybShpCircle.TrimMode = 1
 
-        :return: int
         :rtype: int
         """
 

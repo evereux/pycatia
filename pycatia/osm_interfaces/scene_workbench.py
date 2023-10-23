@@ -57,7 +57,6 @@ class SceneWorkbench(Workbench):
                 |             Dim TheScenesList As WorkScenes
                 |             Set TheScenesList = TheWorkSceneWorkbench.WorkScenes
 
-        :return: Scenes
         :rtype: Scenes
         """
 

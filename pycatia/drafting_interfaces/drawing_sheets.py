@@ -63,7 +63,6 @@ class DrawingSheets(Collection):
                 |          Dim SheetToWorkIn As DrawingSheet
                 |          Set SheetToWorkIn =  MyDrawingDoc.Sheets.ActiveSheet
 
-        :return: DrawingSheet
         :rtype: DrawingSheet
         """
 
@@ -101,7 +100,6 @@ class DrawingSheets(Collection):
                 |          Set MySheet = MyDrawingDoc.Sheets.Add("FirstSheet")
 
         :param str i_drawing_sheet_name:
-        :return: DrawingSheet
         :rtype: DrawingSheet
         """
         return DrawingSheet(self.drawing_sheets.Add(i_drawing_sheet_name))
@@ -138,7 +136,6 @@ class DrawingSheets(Collection):
                 |          Set MySheet = MyDrawingDoc.Sheets.Add("FirstSheet")
 
         :param str i_drawing_sheet_name:
-        :return: DrawingSheet
         :rtype: DrawingSheet
         """
         return DrawingSheet(self.drawing_sheets.AddDetail(i_drawing_sheet_name))
@@ -182,7 +179,6 @@ class DrawingSheets(Collection):
                 |          Set ThatDrawingSheet = CATIA.ActiveDocument.Sheets.Item("MySheet")
 
         :param cat_variant i_index:
-        :return: DrawingSheet
         :rtype: DrawingSheet
         """
         return DrawingSheet(self.drawing_sheets.Item(i_index))

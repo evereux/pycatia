@@ -83,7 +83,6 @@ class TCPTrace(AnyObject):
                 |         oNbPoints
                 |             Long. Contains the number of points.
 
-        :return: int
         :rtype: int
         """
 
@@ -106,7 +105,6 @@ class TCPTrace(AnyObject):
                 |         oName
                 |             CATBSTR. String containing the retrieved name.
 
-        :return: str
         :rtype: str
         """
 
@@ -140,7 +138,6 @@ class TCPTrace(AnyObject):
                 |         oVisibility
                 |             Boolean. Contains the return value.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -180,7 +177,6 @@ class TCPTrace(AnyObject):
                 |             Long. Output parameter. Indicates if any error happened.
 
         :param str i_name:
-        :return: int
         :rtype: int
         """
         return self.tcp_trace.Export(i_name)
@@ -205,7 +201,6 @@ class TCPTrace(AnyObject):
                 |             CATIABase. Attached owner of the trace. Output parameter. Returns
                 |             nothing if the trace is defined related to the world
 
-        :return: AnyObject
         :rtype: AnyObject
         """
         return AnyObject(self.tcp_trace.GetAttachedOwner())
@@ -246,7 +241,6 @@ class TCPTrace(AnyObject):
         :param int o_g:
         :param int o_b:
         :param int o_a:
-        :return: None
         :rtype: None
         """
         return self.tcp_trace.GetColor(i_rep, o_r, o_g, o_b, o_a)
@@ -274,7 +268,6 @@ class TCPTrace(AnyObject):
                 |             parameter.
 
         :param int i_type:
-        :return: bool
         :rtype: bool
         """
         return self.tcp_trace.GetLegendsVisibility(i_type)
@@ -301,7 +294,6 @@ class TCPTrace(AnyObject):
                 |             there is one in the document) or in the setting. Input parameter.
 
         :param int i_rep:
-        :return: int
         :rtype: int
         """
         return self.tcp_trace.GetThickness(i_rep)
@@ -339,7 +331,6 @@ class TCPTrace(AnyObject):
                 |             parameter.
 
         :param int i_rep:
-        :return: int
         :rtype: int
         """
         return self.tcp_trace.GetType(i_rep)
@@ -364,7 +355,6 @@ class TCPTrace(AnyObject):
                 |             Boolean. True for visible and False for hidden. Output parameter.
 
         :param int i_rep:
-        :return: bool
         :rtype: bool
         """
         return self.tcp_trace.GetVisibility(i_rep)
@@ -382,7 +372,6 @@ class TCPTrace(AnyObject):
                 |     not applied for performance reasons. Caller of the API must call RefreshDisplay
                 |     to view the changes in the main viewer.
 
-        :return: None
         :rtype: None
         """
         return self.tcp_trace.RefreshDisplay()
@@ -399,7 +388,6 @@ class TCPTrace(AnyObject):
                 |     be created, it will defined with respect to the world.
                 |     Remark: this will not change the exported values.
 
-        :return: None
         :rtype: None
         """
         return self.tcp_trace.ResetAttachedOwner()
@@ -423,7 +411,6 @@ class TCPTrace(AnyObject):
                 |             parameter.
 
         :param bool b_setting:
-        :return: None
         :rtype: None
         """
         return self.tcp_trace.ResetGraphics(b_setting)
@@ -463,7 +450,6 @@ class TCPTrace(AnyObject):
                 |             CATIABase. Attached owner of the trace. Input parameter.
 
         :param AnyObject i_owner:
-        :return: None
         :rtype: None
         """
         return self.tcp_trace.SetAttachedOwner(i_owner.com_object)
@@ -505,7 +491,6 @@ class TCPTrace(AnyObject):
         :param int i_g:
         :param int i_b:
         :param int i_a:
-        :return: None
         :rtype: None
         """
         return self.tcp_trace.SetColor(i_rep, i_r, i_g, i_b, i_a)
@@ -534,7 +519,6 @@ class TCPTrace(AnyObject):
 
         :param int i_type:
         :param bool ib_visible:
-        :return: None
         :rtype: None
         """
         return self.tcp_trace.SetLegendsVisibility(i_type, ib_visible)
@@ -578,7 +562,6 @@ class TCPTrace(AnyObject):
 
         :param int i_rep:
         :param int i_thickness:
-        :return: None
         :rtype: None
         """
         return self.tcp_trace.SetThickness(i_rep, i_thickness)
@@ -623,7 +606,6 @@ class TCPTrace(AnyObject):
 
         :param int i_rep:
         :param int i_type:
-        :return: None
         :rtype: None
         """
         return self.tcp_trace.SetType(i_rep, i_type)
@@ -650,7 +632,6 @@ class TCPTrace(AnyObject):
 
         :param int i_rep:
         :param bool ib_visible:
-        :return: None
         :rtype: None
         """
         return self.tcp_trace.SetVisibility(i_rep, ib_visible)

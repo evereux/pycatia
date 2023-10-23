@@ -48,7 +48,6 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
                 | o Func getMaximumActivity(CATBSTR iRangeId) As boolean
 
         :param str i_range_id:
-        :return: bool
         :rtype: bool
         """
         return self.defeaturing_filter_with_range.getMaximumActivity(i_range_id)
@@ -62,7 +61,6 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
                 | o Func getMaximumAngle(CATBSTR iRangeId) As Angle
 
         :param str i_range_id:
-        :return: Angle
         :rtype: Angle
         """
         return Angle(self.defeaturing_filter_with_range.getMaximumAngle(i_range_id))
@@ -76,7 +74,6 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
                 | o Func getMaximumLength(CATBSTR iRangeId) As Length
 
         :param str i_range_id:
-        :return: Length
         :rtype: Length
         """
         return Length(self.defeaturing_filter_with_range.getMaximumLength(i_range_id))
@@ -90,7 +87,6 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
                 | o Func getMaximumValue(CATBSTR iRangeId) As double
 
         :param str i_range_id:
-        :return: float
         :rtype: float
         """
         return self.defeaturing_filter_with_range.getMaximumValue(i_range_id)
@@ -128,7 +124,6 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
                 |              Set theMinActivity = myFilter.getMinimumActivity(myRange)
 
         :param str i_range_id:
-        :return: bool
         :rtype: bool
         """
         return self.defeaturing_filter_with_range.getMinimumActivity(i_range_id)
@@ -142,7 +137,6 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
                 | o Func getMinimumAngle(CATBSTR iRangeId) As Angle
 
         :param str i_range_id:
-        :return: Angle
         :rtype: Angle
         """
         return Angle(self.defeaturing_filter_with_range.getMinimumAngle(i_range_id))
@@ -156,7 +150,6 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
                 | o Func getMinimumLength(CATBSTR iRangeId) As Length
 
         :param str i_range_id:
-        :return: Length
         :rtype: Length
         """
         return Length(self.defeaturing_filter_with_range.getMinimumLength(i_range_id))
@@ -209,7 +202,6 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
                 |              Set theMaxLength = myFilter.getMaximumLength(myRange)
 
         :param str i_range_id:
-        :return: float
         :rtype: float
         """
         return self.defeaturing_filter_with_range.getMinimumValue(i_range_id)
@@ -225,7 +217,6 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
 
         :param str i_range_id:
         :param bool i_value:
-        :return: None
         :rtype: None
         """
         return self.defeaturing_filter_with_range.setMaximumActivity(i_range_id, i_value)
@@ -256,7 +247,6 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
 
         :param str i_range_id:
         :param float i_value:
-        :return: None
         :rtype: None
         """
         return self.defeaturing_filter_with_range.setMaximumValue(i_range_id, i_value)
@@ -298,7 +288,6 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
 
         :param str i_range_id:
         :param bool i_value:
-        :return: None
         :rtype: None
         """
         return self.defeaturing_filter_with_range.setMinimumActivity(i_range_id, i_value)
@@ -358,7 +347,6 @@ class DefeaturingFilterWithRange(DefeaturingFilter):
 
         :param str i_range_id:
         :param float i_value:
-        :return: None
         :rtype: None
         """
         return self.defeaturing_filter_with_range.setMinimumValue(i_range_id, i_value)

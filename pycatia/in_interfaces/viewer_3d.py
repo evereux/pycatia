@@ -60,7 +60,6 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.ClippingMode = catClippingModeNearAndFar
 
-        :return: int
         :rtype: int
         """
 
@@ -95,7 +94,6 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.FarLimit = 150
 
-        :return: float
         :rtype: float
         """
 
@@ -127,7 +125,6 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.Foggy = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -158,7 +155,6 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.Ground = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -189,7 +185,6 @@ class Viewer3D(Viewer):
                 | 
                 |          Set VPLightSources = My3DViewer.LightSources
 
-        :return: LightSources
         :rtype: LightSources
         """
 
@@ -213,7 +208,6 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.LightingIntensity = 0.35
 
-        :return: float
         :rtype: float
         """
 
@@ -244,7 +238,6 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.LightingMode = catInfiniteLightSource
 
-        :return: int
         :rtype: int
         """
 
@@ -275,7 +268,6 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.NavigationStyle = catNavigationWalk
 
-        :return: int
         :rtype: int
         """
 
@@ -310,7 +302,6 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.NearLimit = 75
 
-        :return: float
         :rtype: float
         """
 
@@ -341,7 +332,6 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.RenderingMode = catRenderShadingWithEdges
 
-        :return: int
         :rtype: int
         """
 
@@ -373,7 +363,6 @@ class Viewer3D(Viewer):
                 |          Dim Nice3DViewpoint As Viewpoint3D
                 |          Set Nice3DViewpoint = My3DViewer.Viewpoint3D
 
-        :return: Viewpoint3D
         :rtype: Viewpoint3D
         """
 
@@ -409,7 +398,6 @@ class Viewer3D(Viewer):
 
         :param tuple i_axis:
         :param float i_angle:
-        :return: None
         :rtype: None
         """
         return self.viewer_3d.Rotate(i_axis, i_angle)
@@ -447,7 +435,6 @@ class Viewer3D(Viewer):
                 |          MyViewer3D.Translate Array(1, 1, 1)
 
         :param tuple i_vector:
-        :return: None
         :rtype: None
         """
         return self.viewer_3d.Translate(i_vector)

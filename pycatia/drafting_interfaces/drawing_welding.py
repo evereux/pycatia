@@ -59,7 +59,6 @@ class DrawingWelding(AnyObject):
                 |          Angle90Clockwise = -90
                 |          MyText.Angle = Angle90Clockwise
 
-        :return: float
         :rtype: float
         """
 
@@ -93,7 +92,6 @@ class DrawingWelding(AnyObject):
                 | 
                 |          MyWeld.IdentificationLineSide = catWeldingUp
 
-        :return: int
         :rtype: int
         """
 
@@ -126,7 +124,6 @@ class DrawingWelding(AnyObject):
                 |          Dim LeaderCollection As DrawingLeaders
                 |          Set LeaderCollection = MyWelding.Leaders
 
-        :return: DrawingLeaders
         :rtype: DrawingLeaders
         """
 
@@ -151,7 +148,6 @@ class DrawingWelding(AnyObject):
                 |          Dim TextProperties As DrawingTextProperties
                 |          Set TextProperties = MyWelding.TextProperties
 
-        :return: DrawingTextProperties
         :rtype: DrawingTextProperties
         """
 
@@ -174,7 +170,6 @@ class DrawingWelding(AnyObject):
                 | 
                 |          MyWeld.WeldingSide = catWeldingUp
 
-        :return: int
         :rtype: int
         """
 
@@ -205,7 +200,6 @@ class DrawingWelding(AnyObject):
                 | 
                 |          MyWeld.WeldingTail = catDftWeldingTailYES
 
-        :return: int
         :rtype: int
         """
 
@@ -238,7 +232,6 @@ class DrawingWelding(AnyObject):
                 | 
                 |          X = MyWelding.x
 
-        :return: float
         :rtype: float
         """
 
@@ -273,7 +266,6 @@ class DrawingWelding(AnyObject):
                 |          NewYCoordinate = 5*25.4/1000
                 |          MyWelding.y = NewYCoordinate
 
-        :return: float
         :rtype: float
         """
 
@@ -400,7 +392,6 @@ class DrawingWelding(AnyObject):
                 |      Set textRange = MyWelding.GetTextRange (catWeldingUp)
 
         :param int i_field:
-        :return: DrawingTextRange
         :rtype: DrawingTextRange
         """
         return DrawingTextRange(self.drawing_welding.GetTextRange(i_field))
@@ -431,7 +422,6 @@ class DrawingWelding(AnyObject):
 
         :param int i_symbol:
         :param int i_weld:
-        :return: None
         :rtype: None
         """
         return self.drawing_welding.SetAdditionalSymbol(i_symbol, i_weld)
@@ -463,7 +453,6 @@ class DrawingWelding(AnyObject):
 
         :param int i_finish_symbol:
         :param int i_weld:
-        :return: None
         :rtype: None
         """
         return self.drawing_welding.SetFinishSymbol(i_finish_symbol, i_weld)
@@ -494,7 +483,6 @@ class DrawingWelding(AnyObject):
 
         :param int i_symbol:
         :param int i_weld:
-        :return: None
         :rtype: None
         """
         return self.drawing_welding.SetSymbol(i_symbol, i_weld)

@@ -59,7 +59,6 @@ class SFMMemberCurve(SFMMember):
                 |          Dim Curve As Reference
                 |          Set Curve = SfmMemberCurve.Curve
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -91,7 +90,6 @@ class SFMMemberCurve(SFMMember):
                 |          Dim ReferenceSurface As Reference
                 |          Set ReferenceSurface = SfmMemberCurve.ReferenceSurface
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -123,7 +121,6 @@ class SFMMemberCurve(SFMMember):
                 |          Dim ReferenceSurfaceOrient As Integer
                 |          Set ReferenceSurfaceOrient = SfmMemberCurve.ReferenceSurfaceOrientation
 
-        :return: int
         :rtype: int
         """
 
@@ -153,7 +150,6 @@ class SFMMemberCurve(SFMMember):
                 | 
                 |          SfmMemberCurve.InvertReferenceSurface
 
-        :return: None
         :rtype: None
         """
         return self.sfm_member_curve.InvertReferenceSurface()

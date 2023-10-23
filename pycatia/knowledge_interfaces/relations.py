@@ -107,7 +107,6 @@ class Relations(Collection):
                 |     This property is available only when the Product Engineering Optimizer
                 |     license is available.
 
-        :return: Optimizations
         :rtype: Optimizations
         """
 
@@ -157,7 +156,6 @@ class Relations(Collection):
         :param str i_name:
         :param str i_comment:
         :param str i_check_body:
-        :return: Check
         :rtype: Check
         """
         return Check(self.relations.CreateCheck(i_name, i_comment, i_check_body))
@@ -209,7 +207,6 @@ class Relations(Collection):
         :param str i_comment:
         :param bool i_copy_mode:
         :param Path i_sheet_path:
-        :return: DesignTable
         :rtype: DesignTable
         """
         if not i_sheet_path.exists():
@@ -266,7 +263,6 @@ class Relations(Collection):
         :param str i_comment:
         :param Parameter i_output_parameter:
         :param str i_formula_body:
-        :return: Formula
         :rtype: Formula
         """
         return Formula(self.relations.CreateFormula(i_name, i_comment, i_output_parameter.com_object, i_formula_body))
@@ -321,7 +317,6 @@ class Relations(Collection):
         :param str i_comment:
         :param bool i_copy_mode:
         :param str i_sheet_path:
-        :return: DesignTable
         :rtype: DesignTable
         """
         return DesignTable(self.relations.CreateHorizontalDesignTable(i_name, i_comment, i_copy_mode, i_sheet_path))
@@ -354,7 +349,6 @@ class Relations(Collection):
         :param str i_name:
         :param str i_comment:
         :param str i_law_body:
-        :return: Law
         :rtype: Law
         """
         return Law(self.relations.CreateLaw(i_name, i_comment, i_law_body))
@@ -404,7 +398,6 @@ class Relations(Collection):
         :param str i_name:
         :param str i_comment:
         :param str i_program_body:
-        :return: Rule
         :rtype: Rule
         """
         return Rule(self.relations.CreateProgram(i_name, i_comment, i_program_body))
@@ -430,7 +423,6 @@ class Relations(Collection):
                 |         ExpertRuleBase
 
         :param str i_name:
-        :return: Relation
         :rtype: Relation
         """
         return Relation(self.relations.CreateRuleBase(i_name))
@@ -463,7 +455,6 @@ class Relations(Collection):
         :param str i_name:
         :param str i_comment:
         :param str i_formula_body:
-        :return: SetOfEquation
         :rtype: SetOfEquation
         """
         return SetOfEquation(self.relations.CreateSetOfEquations(i_name, i_comment, i_formula_body))
@@ -485,7 +476,6 @@ class Relations(Collection):
                 |             The object to which the set is appended
 
         :param AnyObject i_parent:
-        :return: None
         :rtype: None
         """
         return self.relations.CreateSetOfRelations(i_parent.com_object)
@@ -507,7 +497,6 @@ class Relations(Collection):
                 |             The name of the XML file
 
         :param str i_name:
-        :return: None
         :rtype: None
         """
         return self.relations.GenerateXMLReportForChecks(i_name)
@@ -544,7 +533,6 @@ class Relations(Collection):
                 |          Set lastRelation = relations.Item(relations.Count)
 
         :param cat_variant i_index:
-        :return: Relation
         :rtype: Relation
         """
         return Relation(self.relations.Item(i_index))
@@ -578,7 +566,6 @@ class Relations(Collection):
                 |      relations.Remove("density")
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.relations.Remove(i_index)
@@ -623,7 +610,6 @@ class Relations(Collection):
 
         :param AnyObject i_feature:
         :param bool i_recursively:
-        :return: Relations
         :rtype: Relations
         """
         return Relations(self.relations.SubList(i_feature.com_object, i_recursively))

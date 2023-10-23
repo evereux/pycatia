@@ -76,7 +76,6 @@ class AnalysisModels(Collection):
                 |          Set AnalysisModel = analysisModel.Item(1)
 
         :param cat_variant i_index:
-        :return: AnalysisModel
         :rtype: AnalysisModel
         """
         return AnalysisModel(self.analysis_models.Item(i_index))

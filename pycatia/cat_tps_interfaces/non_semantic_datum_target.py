@@ -46,7 +46,6 @@ class NonSemanticDatumTarget(AnyObject):
                 | 
                 |     Retrieves or sets Lower Label.
 
-        :return: str
         :rtype: str
         """
 
@@ -76,7 +75,6 @@ class NonSemanticDatumTarget(AnyObject):
                 |         Square
                 |         Diameter
 
-        :return: str
         :rtype: str
         """
 
@@ -101,7 +99,6 @@ class NonSemanticDatumTarget(AnyObject):
                 | 
                 |     Retrieves or sets Upper Label.
 
-        :return: str
         :rtype: str
         """
 

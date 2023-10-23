@@ -60,7 +60,6 @@ class SchAppClass(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.AppGetComponentBaseClass
 
-        :return: SchListOfBSTRs
         :rtype: SchListOfBSTRs
         """
         return SchListOfBSTRs(self.sch_app_class.AppGetComponentBaseClass())
@@ -91,7 +90,6 @@ class SchAppClass(AnyObject):
                 |          objThisIntf.AppGetGroupBaseClassstrVar1
 
         :param str o_group_class_name:
-        :return: None
         :rtype: None
         """
         return self.sch_app_class.AppGetGroupBaseClass(o_group_class_name)
@@ -122,7 +120,6 @@ class SchAppClass(AnyObject):
                 |          objThisIntf.AppGetRouteBaseClassstrVar1
 
         :param str o_route_class_name:
-        :return: None
         :rtype: None
         """
         return self.sch_app_class.AppGetRouteBaseClass(o_route_class_name)
@@ -153,7 +150,6 @@ class SchAppClass(AnyObject):
                 |          objThisIntf.AppGetZoneBaseClassstrVar1
 
         :param str o_zone_class_name:
-        :return: None
         :rtype: None
         """
         return self.sch_app_class.AppGetZoneBaseClass(o_zone_class_name)
@@ -183,7 +179,6 @@ class SchAppClass(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.AppListValidRouteTypes
 
-        :return: SchListOfBSTRs
         :rtype: SchListOfBSTRs
         """
         return SchListOfBSTRs(self.sch_app_class.AppListValidRouteTypes())

@@ -69,7 +69,6 @@ class HybridShapeRevol(HybridShape):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -108,7 +107,6 @@ class HybridShapeRevol(HybridShape):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -139,7 +137,6 @@ class HybridShapeRevol(HybridShape):
                 |          Dim oContext
                 |          Set oContext = Revol.Context
 
-        :return: int
         :rtype: int
         """
 
@@ -178,7 +175,6 @@ class HybridShapeRevol(HybridShape):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -212,7 +208,6 @@ class HybridShapeRevol(HybridShape):
                 |      Dim oLim1Type
                 |      Set oLim1Type = Revolve.FirstLimitType
 
-        :return: int
         :rtype: int
         """
 
@@ -245,7 +240,6 @@ class HybridShapeRevol(HybridShape):
                 |          Dim Lim1Elem As Reference 
                 |          Set Lim1Elem = Revolve.FirstUptoElement
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -277,7 +271,6 @@ class HybridShapeRevol(HybridShape):
                 |      Dim IsInverted As boolean
                 |      IsInverted = Revol.Orientation
 
-        :return: bool
         :rtype: bool
         """
 
@@ -316,7 +309,6 @@ class HybridShapeRevol(HybridShape):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -358,7 +350,6 @@ class HybridShapeRevol(HybridShape):
                 |      Dim oLim2Type
                 |      Set oLim2Type = RevolveSecondLimitType
 
-        :return: int
         :rtype: int
         """
 
@@ -391,7 +382,6 @@ class HybridShapeRevol(HybridShape):
                 |          Dim Lim2Elem As Reference 
                 |          Set Lim2Elem = Revolve.SecondUptoElement
 
-        :return: Reference
         :rtype: Reference
         """
 

@@ -54,7 +54,6 @@ class PSPGroup(AnyObject):
                 |           ...
                 |          Set ObjArg1 = objThisIntf.Members
 
-        :return: PSPListOfObjects
         :rtype: PSPListOfObjects
         """
 
@@ -83,7 +82,6 @@ class PSPGroup(AnyObject):
                 |           objThisIntf.AddMember objArg1
 
         :param PSPGroupable i_groupable:
-        :return: None
         :rtype: None
         """
         return self.psp_group.AddMember(i_groupable.com_object)
@@ -126,7 +124,6 @@ class PSPGroup(AnyObject):
                 |           objThisIntf.RemoveMember objArg1
 
         :param PSPGroupable i_groupable:
-        :return: None
         :rtype: None
         """
         return self.psp_group.RemoveMember(i_groupable.com_object)

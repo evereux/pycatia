@@ -72,7 +72,6 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
                 | 
                 |          hybShpcircle.BeginOfCircle = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -107,7 +106,6 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
                 |          Dim HybShpCircleFirstCurve As Reference 
                 |          HybShpCircleFirstCurve = HybShpCircle.Curve1
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -141,7 +139,6 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
                 | 
                 |          HybShpCircle.Curve2 Crv5
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -176,7 +173,6 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
                 |          Dim HybShpCircleThirdCurve As Reference 
                 |          HybShpCircleThirdCurve = HybShpCircle.Curve3
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -213,7 +209,6 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
                 | 
                 |          hybShpcircle.DiscriminationIndex = 2
 
-        :return: int
         :rtype: int
         """
 
@@ -253,7 +248,6 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
                 | 
                 |          HybShpCircle.Orientation1 -1
 
-        :return: int
         :rtype: int
         """
 
@@ -293,7 +287,6 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
                 | 
                 |          HybShpCircleOrientation = HybShpCircle.Orientation2
 
-        :return: int
         :rtype: int
         """
 
@@ -333,7 +326,6 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
                 | 
                 |          HybShpCircle.Orientation3 -1
 
-        :return: int
         :rtype: int
         """
 
@@ -366,7 +358,6 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
                 |          Dim HybShpCircleSupportSurf As Reference 
                 |          HybShpCircleSupportSurf = HybShpCircle.Support
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -402,7 +393,6 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
                 |          Dim firstOrient As long
                 |          firstOrient = hybShpcircle.FirstTangentOrientation
 
-        :return: int
         :rtype: int
         """
 
@@ -438,7 +428,6 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
                 |          Dim secondOrient As long
                 |          secondOrient = hybShpcircle.SecondTangentOrientation
 
-        :return: int
         :rtype: int
         """
 
@@ -474,7 +463,6 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
                 |          Dim thirdOrient As long
                 |          thirdOrient = hybShpcircle.ThirdTangentOrientation
 
-        :return: int
         :rtype: int
         """
 
@@ -513,7 +501,6 @@ class HybridShapeCircleTritangent(HybridShapeCircle):
                 | 
                 |          hybShpCircle.TrimMode = 1
 
-        :return: int
         :rtype: int
         """
 

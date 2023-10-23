@@ -44,7 +44,6 @@ class NonSemanticGDT(AnyObject):
                 | 
                 |     Gets the annotation on TPSParallelOnScreen interface.
 
-        :return: TPSParallelOnScreen
         :rtype: TPSParallelOnScreen
         """
         return TPSParallelOnScreen(self.non_semantic_gdt.TPSParallelOnScreen())

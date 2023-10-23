@@ -64,7 +64,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 |     0 No detection of canonical surface is performed.
                 |     2 Detection of canonical surfaces is performed.
 
-        :return: int
         :rtype: int
         """
 
@@ -92,7 +91,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 |     For example: a circular sweep with two guide curves and a radius leads to
                 |     four possible solutions.
 
-        :return: int
         :rtype: int
         """
 
@@ -130,7 +128,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 |          Dim oContext
                 |          Set oContext = Sweep.Context
 
-        :return: int
         :rtype: int
         """
 
@@ -155,7 +152,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 | 
                 |     Returns or sets the first angle law useful in some circular sweep types.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -180,7 +176,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 | 
                 |     Returns or sets the first angle law inversion information.
 
-        :return: int
         :rtype: int
         """
 
@@ -205,7 +200,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 | 
                 |     Returns or sets the sweep operation first guide curve.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -231,7 +225,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 |     Returns the deviation value (length) from guide curves allowed during a
                 |     sweeping operation in order to smooth it.
 
-        :return: Length
         :rtype: Length
         """
 
@@ -253,7 +246,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 |     TRUE if a deviation from guide curves is allowed, or FALSE otherwise (FALSE
                 |     if not specified).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -297,7 +289,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 |     tangency surface
                 |     (CATGSMCircularSweep_GuideAndTangencyAndRadius)
 
-        :return: int
         :rtype: int
         """
 
@@ -322,7 +313,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 | 
                 |     Returns or sets the radius law feature.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -347,7 +337,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 | 
                 |     Returns or sets the radius law inversion information.
 
-        :return: int
         :rtype: int
         """
 
@@ -372,7 +361,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 | 
                 |     Returns or sets the radius law type.
 
-        :return: int
         :rtype: int
         """
 
@@ -397,7 +385,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 | 
                 |     Returns or sets the reference (functional curve or guide surface).
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -422,7 +409,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 | 
                 |     Returns or sets the second angle law useful in some circular sweep types.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -447,7 +433,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 | 
                 |     Returns or sets the second angle law inversion information.
 
-        :return: int
         :rtype: int
         """
 
@@ -472,7 +457,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 | 
                 |     Returns or sets the sweep operation second guide curve.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -500,7 +484,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 |     TRUE if the sweeping operation is smoothed, or FALSE otherwise (FALSE if
                 |     not specified).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -525,7 +508,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 | 
                 |     Returns the angular threshold.
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -542,7 +524,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 | 
                 |     Returns or sets the sweep operation spine (optional).
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -567,7 +548,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 | 
                 |     Returns or sets the sweep operation third guide curve.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -596,7 +576,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 |     (CATGSMSweepTrimMode_None)
                 |     1 Trim computed (CATGSMSweepTrimMode_On)
 
-        :return: int
         :rtype: int
         """
 
@@ -630,7 +609,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 |         The angle value
 
         :param int i_i:
-        :return: Angle
         :rtype: Angle
         """
         return Angle(self.hybrid_shape_sweep_circle.GetAngle(i_i))
@@ -664,7 +642,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
 
         :param int o_first_type:
         :param int o_second_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_circle.GetAngleLawTypes(o_first_type, o_second_type)
@@ -694,7 +671,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         :param Angle o_elem1:
         :param Angle o_elem2:
         :param int ol_law_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_circle.GetFirstAngleLaw(o_elem1.com_object, o_elem2.com_object, ol_law_type)
@@ -735,7 +711,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
 
         :param Reference op_ia_elem1:
         :param Reference op_ia_elem2:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_circle.GetLongitudinalRelimiters(op_ia_elem1.com_object, op_ia_elem2.com_object)
@@ -771,7 +746,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 |             The number of angles
 
         :param int o_ang:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_circle.GetNbAngle(o_ang)
@@ -792,7 +766,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 |             The number of guide curves
 
         :param int o_num:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_circle.GetNbGuide(o_num)
@@ -813,7 +786,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 |             The number of radii
 
         :param int o_rad:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_circle.GetNbRadius(o_rad)
@@ -839,7 +811,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 |         The radius value
 
         :param int i_i:
-        :return: Length
         :rtype: Length
         """
         return Length(self.hybrid_shape_sweep_circle.GetRadius(i_i))
@@ -876,7 +847,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         :param int op_orient1:
         :param Reference op_ia_elem2:
         :param int op_orient2:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_circle.GetRelimiters(op_ia_elem1.com_object, op_orient1, op_ia_elem2.com_object,
@@ -922,7 +892,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         :param Angle o_elem1:
         :param Angle o_elem2:
         :param int ol_law_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_circle.GetSecondAngleLaw(o_elem1.com_object, o_elem2.com_object, ol_law_type)
@@ -980,7 +949,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         :param int o_no:
         :param int o_shell_ori:
         :param int o_guide_ori:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_circle.GetTangencyChoiceNo(o_no, o_shell_ori, o_guide_ori)
@@ -995,7 +963,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 | 
                 |     Removes an angle.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_circle.RemoveAngle()
@@ -1010,7 +977,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 | 
                 |     Removes a guide curve.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_circle.RemoveGuide()
@@ -1025,7 +991,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 | 
                 |     Removes a radius.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_circle.RemoveRadius()
@@ -1050,7 +1015,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
 
         :param int i_i:
         :param float i_elem:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_circle.SetAngle(i_i, i_elem)
@@ -1085,7 +1049,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
 
         :param int i_first_type:
         :param int i_second_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_circle.SetAngleLawTypes(i_first_type, i_second_type)
@@ -1115,7 +1078,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         :param float i_elem1:
         :param float i_elem2:
         :param int il_law_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_circle.SetFirstAngleLaw(i_elem1, i_elem2, il_law_type)
@@ -1137,7 +1099,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 |             The deviation value
 
         :param float i_length:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_circle.SetGuideDeviation(i_length)
@@ -1163,7 +1124,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
 
         :param Reference ip_ia_elem1:
         :param Reference ip_ia_elem2:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_circle.SetLongitudinalRelimiters(ip_ia_elem1.com_object, ip_ia_elem2.com_object)
@@ -1204,7 +1164,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
 
         :param int i_i:
         :param float i_radius:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_circle.SetRadius(i_i, i_radius)
@@ -1241,7 +1200,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         :param int ip_orient1:
         :param Reference ip_ia_elem2:
         :param int ip_orient2:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_circle.SetRelimiters(ip_ia_elem1.com_object, ip_orient1, ip_ia_elem2.com_object,
@@ -1287,7 +1245,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         :param float i_elem1:
         :param float i_elem2:
         :param int il_law_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_circle.SetSecondAngleLaw(i_elem1, i_elem2, il_law_type)
@@ -1308,7 +1265,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
                 |             The angular threshold
 
         :param float i_angle:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_circle.SetSmoothAngleThreshold(i_angle)
@@ -1350,7 +1306,6 @@ class HybridShapeSweepCircle(HybridShapeSweep):
         :param int i_shell_ori:
         :param int i_guide_ori:
         :param int i_no:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_circle.SetTangencyChoiceNo(i_shell_ori, i_guide_ori, i_no)

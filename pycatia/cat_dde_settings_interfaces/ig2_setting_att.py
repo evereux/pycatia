@@ -62,7 +62,6 @@ class Ig2SettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: int
         :rtype: int
         """
 
@@ -91,7 +90,6 @@ class Ig2SettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: int
         :rtype: int
         """
 
@@ -120,7 +118,6 @@ class Ig2SettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: int
         :rtype: int
         """
 
@@ -149,7 +146,6 @@ class Ig2SettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: str
         :rtype: str
         """
 
@@ -178,7 +174,6 @@ class Ig2SettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: int
         :rtype: int
         """
 
@@ -207,7 +202,6 @@ class Ig2SettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: int
         :rtype: int
         """
 
@@ -235,7 +229,6 @@ class Ig2SettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: int
         :rtype: int
         """
 
@@ -275,7 +268,6 @@ class Ig2SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.ig2_setting_att.GetExportModeInfo(io_admin_level, io_locked)
@@ -314,7 +306,6 @@ class Ig2SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.ig2_setting_att.GetExportSheetsInfo(io_admin_level, io_locked)
@@ -353,7 +344,6 @@ class Ig2SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.ig2_setting_att.GetImportDestinationViewInfo(io_admin_level, io_locked)
@@ -392,7 +382,6 @@ class Ig2SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.ig2_setting_att.GetImportDftStandardInfo(io_admin_level, io_locked)
@@ -431,7 +420,6 @@ class Ig2SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.ig2_setting_att.GetImportDimensionsInfo(io_admin_level, io_locked)
@@ -470,7 +458,6 @@ class Ig2SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.ig2_setting_att.GetImportEndPointsInfo(io_admin_level, io_locked)
@@ -509,7 +496,6 @@ class Ig2SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.ig2_setting_att.GetImportUnitInfo(io_admin_level, io_locked)
@@ -540,7 +526,6 @@ class Ig2SettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.ig2_setting_att.SetExportModeLock(i_locked)
@@ -586,7 +571,6 @@ class Ig2SettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.ig2_setting_att.SetExportSheetsLock(i_locked)
@@ -632,7 +616,6 @@ class Ig2SettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.ig2_setting_att.SetImportDestinationViewLock(i_locked)
@@ -678,7 +661,6 @@ class Ig2SettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.ig2_setting_att.SetImportDftStandardLock(i_locked)
@@ -724,7 +706,6 @@ class Ig2SettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.ig2_setting_att.SetImportDimensionsLock(i_locked)
@@ -770,7 +751,6 @@ class Ig2SettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.ig2_setting_att.SetImportEndPointsLock(i_locked)
@@ -816,7 +796,6 @@ class Ig2SettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.ig2_setting_att.SetImportUnitLock(i_locked)
@@ -858,7 +837,6 @@ class Ig2SettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param int i_mode:
-        :return: None
         :rtype: None
         """
         return self.ig2_setting_att.set_ExportMode(i_mode)
@@ -885,7 +863,6 @@ class Ig2SettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param int i_sheets:
-        :return: None
         :rtype: None
         """
         return self.ig2_setting_att.set_ExportSheets(i_sheets)
@@ -913,7 +890,6 @@ class Ig2SettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param int i_destination_view:
-        :return: None
         :rtype: None
         """
         return self.ig2_setting_att.set_ImportDestinationView(i_destination_view)
@@ -941,7 +917,6 @@ class Ig2SettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param str i_dft_standard:
-        :return: None
         :rtype: None
         """
         return self.ig2_setting_att.set_ImportDftStandard(i_dft_standard)
@@ -969,7 +944,6 @@ class Ig2SettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param int i_dimensions:
-        :return: None
         :rtype: None
         """
         return self.ig2_setting_att.set_ImportDimensions(i_dimensions)
@@ -997,7 +971,6 @@ class Ig2SettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param int i_end_points:
-        :return: None
         :rtype: None
         """
         return self.ig2_setting_att.set_ImportEndPoints(i_end_points)
@@ -1024,7 +997,6 @@ class Ig2SettingAtt(SettingController):
                 |         E_FAIL: on failure
 
         :param int i_unit:
-        :return: None
         :rtype: None
         """
         return self.ig2_setting_att.set_ImportUnit(i_unit)

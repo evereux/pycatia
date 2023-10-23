@@ -48,7 +48,6 @@ class ManufacturingInsert(AnyObject):
                 |     example return the insert type theType of to the insert CurrentInsert
                 |     theType=CurrentInsert.InsertType.
 
-        :return: str
         :rtype: str
         """
 
@@ -70,7 +69,6 @@ class ManufacturingInsert(AnyObject):
                 |
                 |     Number = CurrentInsert.NumberOfAttributes.
 
-        :return: int
         :rtype: int
         """
 
@@ -91,7 +89,6 @@ class ManufacturingInsert(AnyObject):
                 |      Set MachiningQuality = CurrentInsert.GetAttribute(MfgMachiningQuality).
 
         :param str i_attribute:
-        :return: Parameter
         :rtype: Parameter
         """
         return Parameter(self.manufacturing_insert.GetAttribute(i_attribute))
@@ -112,7 +109,6 @@ class ManufacturingInsert(AnyObject):
                 |     NLSresult = CurrentInsert.GetAttributeNLSName("MFG_COMMENT").
 
         :param str i_attribut_name:
-        :return: str
         :rtype: str
         """
         return self.manufacturing_insert.GetAttributeNLSName(i_attribut_name)
@@ -134,7 +130,6 @@ class ManufacturingInsert(AnyObject):
                 |     CurrentInsert call CurrentInsert.GetListOfAttributeUnits(TabAttributeUnits).
 
         :param tuple o_list_of_attribute_units:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_insert.GetListOfAttributeUnits(o_list_of_attribute_units)
@@ -169,7 +164,6 @@ class ManufacturingInsert(AnyObject):
                 |     CurrentInsert.GetListOfAttributes(TabAttributes).
 
         :param tuple o_list_of_attributes:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_insert.GetListOfAttributes(o_list_of_attributes)

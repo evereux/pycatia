@@ -66,7 +66,6 @@ class SchAppObjectFactory(AnyObject):
 
         :param str i_app_comp_class_type:
         :param AnyObject o_app_comp:
-        :return: None
         :rtype: None
         """
         return self.sch_app_object_factory.AppCreateCompRef(i_app_comp_class_type, o_app_comp.com_object)
@@ -102,7 +101,6 @@ class SchAppObjectFactory(AnyObject):
 
         :param str i_app_cntn_class_type:
         :param AnyObject o_app_connection:
-        :return: None
         :rtype: None
         """
         return self.sch_app_object_factory.AppCreateConnection(i_app_cntn_class_type, o_app_connection.com_object)
@@ -138,7 +136,6 @@ class SchAppObjectFactory(AnyObject):
 
         :param str i_app_group_class_type:
         :param AnyObject o_app_group:
-        :return: None
         :rtype: None
         """
         return self.sch_app_object_factory.AppCreateGroup(i_app_group_class_type, o_app_group.com_object)
@@ -180,7 +177,6 @@ class SchAppObjectFactory(AnyObject):
         :param str i_app_route_class_type:
         :param AnyObject o_app_route:
         :param str i_log_line_id:
-        :return: None
         :rtype: None
         """
         return self.sch_app_object_factory.AppCreateRoute(i_app_route_class_type, o_app_route.com_object, i_log_line_id)
@@ -228,7 +224,6 @@ class SchAppObjectFactory(AnyObject):
         :param SchAppRoute i_route_reference:
         :param AnyObject o_app_route:
         :param str i_log_line_id:
-        :return: None
         :rtype: None
         """
         return self.sch_app_object_factory.AppCreateRouteFromRef(
@@ -283,7 +278,6 @@ class SchAppObjectFactory(AnyObject):
 
         :param str i_app_zone_class_type:
         :param AnyObject o_app_zone:
-        :return: None
         :rtype: None
         """
         return self.sch_app_object_factory.AppCreateZone(i_app_zone_class_type, o_app_zone.com_object)

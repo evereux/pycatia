@@ -61,7 +61,6 @@ class SettingControllers(Collection):
                 |         The retrieved setting controller.
 
         :param str i_index: See the "Setting Controller Reference" in your CAA Visual Basic Help file for string references.
-        :return: SettingController
         :rtype: SettingController
         """
         return SettingController(self.setting_controllers.Item(i_index))

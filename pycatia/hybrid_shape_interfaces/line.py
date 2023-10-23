@@ -62,7 +62,6 @@ class Line(HybridShape):
                 |     Returns:
                 |         HRESULT S_OK if Ok E_FAIL else
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -94,7 +93,6 @@ class Line(HybridShape):
                 |     Returns:
                 |         HRESULT S_OK if Ok E_FAIL else
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -138,7 +136,6 @@ class Line(HybridShape):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: None
         :rtype: None
         """
         vba_function_name = "get_direction"
@@ -181,7 +178,6 @@ class Line(HybridShape):
                 |         HybridShapeFactory
 
         :param tuple o_origin:
-        :return: None
         :rtype: None
         """
         return self.line.GetOrigin(o_origin)
@@ -232,7 +228,6 @@ class Line(HybridShape):
                 |         HybridShapeFactory
 
         :param tuple i_direction:
-        :return: None
         :rtype: None
         """
         return self.line.PutDirection(i_direction)

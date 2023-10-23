@@ -45,7 +45,6 @@ class CompositesMaterial(AnyObject):
                 | 
                 |     returns or set the cured thicknes defined in Composites tab in mm.
 
-        :return: float
         :rtype: float
         """
 
@@ -70,7 +69,6 @@ class CompositesMaterial(AnyObject):
                 | 
                 |     returns or set the fabric width defined in Composites tab in mm.
 
-        :return: float
         :rtype: float
         """
 
@@ -95,7 +93,6 @@ class CompositesMaterial(AnyObject):
                 | 
                 |     returns or set the limit deformation defined in Composites tab in radian.
 
-        :return: float
         :rtype: float
         """
 
@@ -120,7 +117,6 @@ class CompositesMaterial(AnyObject):
                 | 
                 |     returns or set the cost per mess defined in Composites tab in $ per kg.
 
-        :return: float
         :rtype: float
         """
 
@@ -147,7 +143,6 @@ class CompositesMaterial(AnyObject):
                 |     output value is the following: 1 for Undefiened 2 for Unidirectional 3 for Bi
                 |     Directional 4 for NCF (Non Crimp Fabric) 5 for Non Structural
 
-        :return: int
         :rtype: int
         """
 
@@ -172,7 +167,6 @@ class CompositesMaterial(AnyObject):
                 | 
                 |     returns or set the maximum deformation defined in Composites tab in radian.
 
-        :return: float
         :rtype: float
         """
 
@@ -197,7 +191,6 @@ class CompositesMaterial(AnyObject):
                 | 
                 |     returns or set the surfacic weigth defined in Composites tab in kg per m2.
 
-        :return: float
         :rtype: float
         """
 
@@ -222,7 +215,6 @@ class CompositesMaterial(AnyObject):
                 | 
                 |     returns or set the uncured thicknes defined in Composites tab in mm.
 
-        :return: float
         :rtype: float
         """
 
@@ -246,7 +238,6 @@ class CompositesMaterial(AnyObject):
                 | 
                 |     Create a default composites properties on the current material.
 
-        :return: None
         :rtype: None
         """
         return self.composites_material.CreateCompositesData()
@@ -261,7 +252,6 @@ class CompositesMaterial(AnyObject):
                 | 
                 |     Returns true if a composites properties exists on the current material.
 
-        :return: int
         :rtype: int
         """
         return self.composites_material.ExistCompositesData()

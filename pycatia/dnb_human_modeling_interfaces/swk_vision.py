@@ -48,7 +48,6 @@ class SWKVision(SWKManikinPart):
                 | 
                 |     Returns the active line of sight, according to the vision type.
 
-        :return: SWKLineOfSight
         :rtype: SWKLineOfSight
         """
 
@@ -73,7 +72,6 @@ class SWKVision(SWKManikinPart):
                 |     the right line of sight.
                 |     If other values are given, an error will occur.
 
-        :return: int
         :rtype: int
         """
 
@@ -91,7 +89,6 @@ class SWKVision(SWKManikinPart):
                 |     Returns or sets the vision Ambinocular angle.
                 |     This angle is always in degrees.
 
-        :return: float
         :rtype: float
         """
 
@@ -117,7 +114,6 @@ class SWKVision(SWKManikinPart):
                 |     Returns or sets the vision Binocular angle.
                 |     This angle is always in degrees.
 
-        :return: float
         :rtype: float
         """
 
@@ -143,7 +139,6 @@ class SWKVision(SWKManikinPart):
                 |     Returns or sets the vision Central cone angle.
                 |     This angle is always in degrees.
 
-        :return: float
         :rtype: float
         """
 
@@ -170,7 +165,6 @@ class SWKVision(SWKManikinPart):
                 |     N.B.: if the value is -1.0,
                 |     then the focal distance is set to infinite.
 
-        :return: float
         :rtype: float
         """
 
@@ -195,7 +189,6 @@ class SWKVision(SWKManikinPart):
                 | 
                 |     Returns the x coordinate (in millimeters) of the focal point.
 
-        :return: float
         :rtype: float
         """
 
@@ -212,7 +205,6 @@ class SWKVision(SWKManikinPart):
                 | 
                 |     Returns the y coordinate (in millimeters) of the focal point.
 
-        :return: float
         :rtype: float
         """
 
@@ -229,7 +221,6 @@ class SWKVision(SWKManikinPart):
                 | 
                 |     Returns the z coordinate (in millimeters) of the focal point.
 
-        :return: float
         :rtype: float
         """
 
@@ -247,7 +238,6 @@ class SWKVision(SWKManikinPart):
                 |     Returns or sets the vision Monocular angle.
                 |     This angle is always in degrees.
 
-        :return: float
         :rtype: float
         """
 
@@ -273,7 +263,6 @@ class SWKVision(SWKManikinPart):
                 |     Returns or sets the ponctum proximum, in centimeters. The ponctum proximum
                 |     is the minimum value the focal distance can take.
 
-        :return: float
         :rtype: float
         """
 
@@ -300,7 +289,6 @@ class SWKVision(SWKManikinPart):
                 |     the largest value that the focal distance can take. N.B.: if the value is -1.0,
                 |     then the ponctum remotum is set to infinite.
 
-        :return: float
         :rtype: float
         """
 
@@ -330,7 +318,6 @@ class SWKVision(SWKManikinPart):
                 |     MonocularRight, 3 is MonocularLeft, and 4 is Stereo. If other values are given,
                 |     an error will occur.
 
-        :return: int
         :rtype: int
         """
 
@@ -356,7 +343,6 @@ class SWKVision(SWKManikinPart):
                 |     Returns or sets the vision Vertical Bottom angle.
                 |     This angle is always in degrees.
 
-        :return: float
         :rtype: float
         """
 
@@ -382,7 +368,6 @@ class SWKVision(SWKManikinPart):
                 |     Returns or sets the vision Vertical Top angle.
                 |     This angle is always in degrees.
 
-        :return: float
         :rtype: float
         """
 
@@ -407,7 +392,6 @@ class SWKVision(SWKManikinPart):
                 |     Closes all open vision windows relating to the manikin on which the
                 |     function is called.
 
-        :return: None
         :rtype: None
         """
         return self.swk_vision.CloseVisionWindows()
@@ -448,7 +432,6 @@ class SWKVision(SWKManikinPart):
         :param float pi_focal_distance:
         :param float pi_v_angle:
         :param float pi_h_angle:
-        :return: None
         :rtype: None
         """
         return self.swk_vision.LookAt(pi_focal_distance, pi_v_angle, pi_h_angle)
@@ -474,7 +457,6 @@ class SWKVision(SWKManikinPart):
         :param float pi_x:
         :param float pi_y:
         :param float pi_z:
-        :return: None
         :rtype: None
         """
         return self.swk_vision.LookAtPoint(pi_x, pi_y, pi_z)
@@ -492,7 +474,6 @@ class SWKVision(SWKManikinPart):
                 |     ponctum remotum, the field of view angles, the convergence mode, and restores
                 |     the default DOF values on the three lines of sight.
 
-        :return: None
         :rtype: None
         """
         return self.swk_vision.Reset()

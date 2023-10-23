@@ -63,7 +63,6 @@ class SpecV4SettingAtt(SettingController):
                 |     Role: This setting parameter manages the activation of the mode of
                 |     migration for draft feature during a Copy/Paste As Spec.
 
-        :return: int
         :rtype: int
         """
 
@@ -92,7 +91,6 @@ class SpecV4SettingAtt(SettingController):
                 |     activation of the step by step update and reroute during a Copy/Paste As Spec
                 |     when solids are involved.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -121,7 +119,6 @@ class SpecV4SettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.spec_v4_setting_att.GetDraftFeatureMigrationModeInfo(admin_level, o_locked)
@@ -141,7 +138,6 @@ class SpecV4SettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.spec_v4_setting_att.GetStepByStepUpdateAndRerouteInfo(admin_level, o_locked)
@@ -159,7 +155,6 @@ class SpecV4SettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.spec_v4_setting_att.SetDraftFeatureMigrationModeLock(i_lock)
@@ -192,7 +187,6 @@ class SpecV4SettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.spec_v4_setting_att.SetStepByStepUpdateAndRerouteLock(i_lock)

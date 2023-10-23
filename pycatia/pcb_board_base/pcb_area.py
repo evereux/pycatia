@@ -50,7 +50,6 @@ class PCBArea(AnyObject):
                 |             S_OK if succeeded
                 |             E_FAIL if failed
 
-        :return: str
         :rtype: str
         """
 
@@ -75,7 +74,6 @@ class PCBArea(AnyObject):
                 |             S_OK if succeeded
                 |             E_FAIL if failed
 
-        :return: float
         :rtype: float
         """
 
@@ -107,7 +105,6 @@ class PCBArea(AnyObject):
                 |             S_OK if succeeded
                 |             E_FAIL if failed
 
-        :return: float
         :rtype: float
         """
 
@@ -140,7 +137,6 @@ class PCBArea(AnyObject):
                 |             S_OK if succeeded
                 |             E_FAIL if failed
 
-        :return: str
         :rtype: str
         """
 
@@ -180,7 +176,6 @@ class PCBArea(AnyObject):
                 |             S_OK if succeeded
                 |             E_FAIL if failed
 
-        :return: str
         :rtype: str
         """
 
@@ -204,7 +199,6 @@ class PCBArea(AnyObject):
                 |             S_OK if succeeded
                 |             E_FAIL if failed
 
-        :return: str
         :rtype: str
         """
 

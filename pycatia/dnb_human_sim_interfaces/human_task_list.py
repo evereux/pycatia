@@ -50,7 +50,6 @@ class HumanTaskList(Collection):
                 |             The task index
 
         :param int i_index:
-        :return: HumanTask
         :rtype: HumanTask
         """
         return HumanTask(self.human_task_list.Item(i_index))
@@ -72,7 +71,6 @@ class HumanTaskList(Collection):
                 |             The task index
 
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.human_task_list.Remove(i_index)

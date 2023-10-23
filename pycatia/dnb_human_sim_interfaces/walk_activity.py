@@ -46,7 +46,6 @@ class WalkActivity(WorkerActivity):
                 |     Returns or Sets Body Posture option (see HTSBodyPoseOptions for list of
                 |     possible values)
 
-        :return: int
         :rtype: int
         """
 
@@ -72,7 +71,6 @@ class WalkActivity(WorkerActivity):
                 |     Returns or Sets Motion-Basis (see HTSWalkMotionBasis for list of possible
                 |     values)
 
-        :return: int
         :rtype: int
         """
 
@@ -98,7 +96,6 @@ class WalkActivity(WorkerActivity):
                 |     Returns or Sets Stride option (see HTSStrideOptions for list of possible
                 |     values)
 
-        :return: int
         :rtype: int
         """
 
@@ -124,7 +121,6 @@ class WalkActivity(WorkerActivity):
                 |     Returns or Sets Swing option (see HTSSwingOptions for list of possible
                 |     values)
 
-        :return: int
         :rtype: int
         """
 
@@ -149,7 +145,6 @@ class WalkActivity(WorkerActivity):
                 | 
                 |     Returns or Sets Speed for Walk Activity
 
-        :return: float
         :rtype: float
         """
 
@@ -174,7 +169,6 @@ class WalkActivity(WorkerActivity):
                 | 
                 |     Returns or Sets Time for Walk Activity
 
-        :return: float
         :rtype: float
         """
 
@@ -199,7 +193,6 @@ class WalkActivity(WorkerActivity):
                 | 
                 |     Returns WalkLength for Walk Activity
 
-        :return: float
         :rtype: float
         """
 
@@ -228,7 +221,6 @@ class WalkActivity(WorkerActivity):
 
         :param int i_num_points:
         :param tuple ad_points:
-        :return: None
         :rtype: None
         """
         return self.walk_activity.GetWalkCurveDefPoints(i_num_points, ad_points)
@@ -261,7 +253,6 @@ class WalkActivity(WorkerActivity):
                 |     Returns:
                 |         bFlag TRUE, if there exist any Part-Relation
 
-        :return: bool
         :rtype: bool
         """
         return self.walk_activity.HasPartRelation()
@@ -288,7 +279,6 @@ class WalkActivity(WorkerActivity):
 
         :param int i_num_points:
         :param tuple ad_points:
-        :return: None
         :rtype: None
         """
         return self.walk_activity.SetWalkCurveDefPoints(i_num_points, ad_points)
@@ -320,7 +310,6 @@ class WalkActivity(WorkerActivity):
                 |     created Walk.
                 |     This is must be called after setting appropriate values for Walk Activity.
 
-        :return: None
         :rtype: None
         """
         return self.walk_activity.Update()

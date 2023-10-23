@@ -116,7 +116,6 @@ class ImportD5SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.import_d5_setting_att.GetImportAnnotationInfo(io_admin_level, io_locked)
@@ -153,7 +152,6 @@ class ImportD5SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.import_d5_setting_att.GetImportBaseFrmInfo(io_admin_level, io_locked)
@@ -190,7 +188,6 @@ class ImportD5SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.import_d5_setting_att.GetImportCollisionInfo(io_admin_level, io_locked)
@@ -208,7 +205,6 @@ class ImportD5SettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: str
         :rtype: str
         """
         return self.import_d5_setting_att.GetImportConfigFileExpanded()
@@ -245,7 +241,6 @@ class ImportD5SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.import_d5_setting_att.GetImportConfigFileInfo(io_admin_level, io_locked)
@@ -282,7 +277,6 @@ class ImportD5SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.import_d5_setting_att.GetImportCoorsysInfo(io_admin_level, io_locked)
@@ -319,7 +313,6 @@ class ImportD5SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.import_d5_setting_att.GetImportEdgeInfo(io_admin_level, io_locked)
@@ -356,7 +349,6 @@ class ImportD5SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.import_d5_setting_att.GetImportFloorInfo(io_admin_level, io_locked)
@@ -374,7 +366,6 @@ class ImportD5SettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: str
         :rtype: str
         """
         return self.import_d5_setting_att.GetImportLibraryExpanded()
@@ -411,7 +402,6 @@ class ImportD5SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.import_d5_setting_att.GetImportLibraryInfo(io_admin_level, io_locked)
@@ -429,7 +419,6 @@ class ImportD5SettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
-        :return: str
         :rtype: str
         """
         return self.import_d5_setting_att.GetImportPDBCacheExpanded()
@@ -466,7 +455,6 @@ class ImportD5SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.import_d5_setting_att.GetImportPDBCacheInfo(io_admin_level, io_locked)
@@ -503,7 +491,6 @@ class ImportD5SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.import_d5_setting_att.GetImportRecordingInfo(io_admin_level, io_locked)
@@ -540,7 +527,6 @@ class ImportD5SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.import_d5_setting_att.GetImportToolFrmInfo(io_admin_level, io_locked)
@@ -577,7 +563,6 @@ class ImportD5SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.import_d5_setting_att.GetImportUserAttrInfo(io_admin_level, io_locked)
@@ -614,7 +599,6 @@ class ImportD5SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.import_d5_setting_att.GetImportUserViewsInfo(io_admin_level, io_locked)
@@ -651,7 +635,6 @@ class ImportD5SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.import_d5_setting_att.GetImportWclMessageInfo(io_admin_level, io_locked)
@@ -688,7 +671,6 @@ class ImportD5SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.import_d5_setting_att.GetImportWclPathInfo(io_admin_level, io_locked)
@@ -725,7 +707,6 @@ class ImportD5SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.import_d5_setting_att.GetTypeBaseFrmInfo(io_admin_level, io_locked)
@@ -762,7 +743,6 @@ class ImportD5SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.import_d5_setting_att.GetTypeCoorsysInfo(io_admin_level, io_locked)
@@ -799,7 +779,6 @@ class ImportD5SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.import_d5_setting_att.GetTypeToolFrmInfo(io_admin_level, io_locked)
@@ -836,7 +815,6 @@ class ImportD5SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.import_d5_setting_att.GetTypeWclPathInfo(io_admin_level, io_locked)
@@ -873,7 +851,6 @@ class ImportD5SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.import_d5_setting_att.GetVisBaseFrmInfo(io_admin_level, io_locked)
@@ -910,7 +887,6 @@ class ImportD5SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.import_d5_setting_att.GetVisCoorsysInfo(io_admin_level, io_locked)
@@ -947,7 +923,6 @@ class ImportD5SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.import_d5_setting_att.GetVisToolFrmInfo(io_admin_level, io_locked)
@@ -984,7 +959,6 @@ class ImportD5SettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.import_d5_setting_att.GetVisWclPathInfo(io_admin_level, io_locked)
@@ -1011,7 +985,6 @@ class ImportD5SettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.import_d5_setting_att.SetImportAnnotationLock(i_locked)
@@ -1053,7 +1026,6 @@ class ImportD5SettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.import_d5_setting_att.SetImportBaseFrmLock(i_locked)
@@ -1095,7 +1067,6 @@ class ImportD5SettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.import_d5_setting_att.SetImportCollisionLock(i_locked)
@@ -1137,7 +1108,6 @@ class ImportD5SettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.import_d5_setting_att.SetImportConfigFileLock(i_locked)
@@ -1179,7 +1149,6 @@ class ImportD5SettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.import_d5_setting_att.SetImportCoorsysLock(i_locked)
@@ -1221,7 +1190,6 @@ class ImportD5SettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.import_d5_setting_att.SetImportEdgeLock(i_locked)
@@ -1263,7 +1231,6 @@ class ImportD5SettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.import_d5_setting_att.SetImportFloorLock(i_locked)
@@ -1305,7 +1272,6 @@ class ImportD5SettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.import_d5_setting_att.SetImportLibraryLock(i_locked)
@@ -1347,7 +1313,6 @@ class ImportD5SettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.import_d5_setting_att.SetImportPDBCacheLock(i_locked)
@@ -1389,7 +1354,6 @@ class ImportD5SettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.import_d5_setting_att.SetImportRecordingLock(i_locked)
@@ -1431,7 +1395,6 @@ class ImportD5SettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.import_d5_setting_att.SetImportToolFrmLock(i_locked)
@@ -1473,7 +1436,6 @@ class ImportD5SettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.import_d5_setting_att.SetImportUserAttrLock(i_locked)
@@ -1515,7 +1477,6 @@ class ImportD5SettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.import_d5_setting_att.SetImportUserViewsLock(i_locked)
@@ -1557,7 +1518,6 @@ class ImportD5SettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.import_d5_setting_att.SetImportWclMessageLock(i_locked)
@@ -1599,7 +1559,6 @@ class ImportD5SettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.import_d5_setting_att.SetImportWclPathLock(i_locked)
@@ -1641,7 +1600,6 @@ class ImportD5SettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.import_d5_setting_att.SetTypeBaseFrmLock(i_locked)
@@ -1683,7 +1641,6 @@ class ImportD5SettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.import_d5_setting_att.SetTypeCoorsysLock(i_locked)
@@ -1725,7 +1682,6 @@ class ImportD5SettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.import_d5_setting_att.SetTypeToolFrmLock(i_locked)
@@ -1767,7 +1723,6 @@ class ImportD5SettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.import_d5_setting_att.SetTypeWclPathLock(i_locked)
@@ -1809,7 +1764,6 @@ class ImportD5SettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.import_d5_setting_att.SetVisBaseFrmLock(i_locked)
@@ -1851,7 +1805,6 @@ class ImportD5SettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.import_d5_setting_att.SetVisCoorsysLock(i_locked)
@@ -1893,7 +1846,6 @@ class ImportD5SettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.import_d5_setting_att.SetVisToolFrmLock(i_locked)
@@ -1935,7 +1887,6 @@ class ImportD5SettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.import_d5_setting_att.SetVisWclPathLock(i_locked)

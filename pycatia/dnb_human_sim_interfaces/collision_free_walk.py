@@ -55,7 +55,6 @@ class CollisionFreeWalk(WalkActivity):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: float
         :rtype: float
         """
 
@@ -88,7 +87,6 @@ class CollisionFreeWalk(WalkActivity):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :return: int
         :rtype: int
         """
 

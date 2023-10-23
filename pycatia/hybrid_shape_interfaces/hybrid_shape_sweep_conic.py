@@ -58,7 +58,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
                 |     0 No detection of canonical surface is performed.
                 |     2 Detection of canonical surfaces is performed.
 
-        :return: int
         :rtype: int
         """
 
@@ -83,7 +82,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
                 | 
                 |     Returns or sets the fifth guide curve.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -108,7 +106,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
                 | 
                 |     Returns or sets the first guide curve.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -133,7 +130,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
                 | 
                 |     Returns or sets the fourth guide curve.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -159,7 +155,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
                 |     Returns deviation value (length) from guide curves allowed during sweeping
                 |     operation in order to smooth it.
 
-        :return: Length
         :rtype: Length
         """
 
@@ -180,7 +175,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
                 |     operation.
                 |     TRUE or FALSE (FALSE if not specified).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -207,7 +201,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
                 |     if the parameter is a law, the method returns FALSE see
                 |     HybridShapeLawDistProj
 
-        :return: float
         :rtype: float
         """
 
@@ -232,7 +225,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
                 | 
                 |     Returns or sets the parameter law useful in conic sweep operation.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -260,7 +252,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
                 |     TRUE if parameter law is inverted. Else it is FALSE. see
                 |     HybridShapeLawDistProj
 
-        :return: bool
         :rtype: bool
         """
 
@@ -285,7 +276,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
                 | 
                 |     Returns or sets the parameter law type in conic sweep operation.
 
-        :return: int
         :rtype: int
         """
 
@@ -310,7 +300,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
                 | 
                 |     Returns or sets the second guide curve.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -337,7 +326,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
                 |     not.
                 |     TRUE or FALSE (FALSE if not specified).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -364,7 +352,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
                 |     moving frame,tangency net on reference surface will be smoothed when
                 |     sweeping.
 
-        :return: Angle
         :rtype: Angle
         """
 
@@ -385,7 +372,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
                 |     See also:
                 |         Reference
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -410,7 +396,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
                 | 
                 |     Returns or sets the third guide curve.
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -441,7 +426,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
 
         :param Reference op_ia_elem1:
         :param Reference op_ia_elem2:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_conic.GetLongitudinalRelimiters(op_ia_elem1.com_object, op_ia_elem2.com_object)
@@ -473,7 +457,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
                 |     param : oNum Number of guides curve.
 
         :param int o_num:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_conic.GetNbGuides(o_num)
@@ -496,7 +479,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
         :param float o_param_start:
         :param float o_param_end:
         :param int o_law_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_conic.GetParameterLaw(o_param_start, o_param_end, o_law_type)
@@ -533,7 +515,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
         :param int op_orient1:
         :param Reference op_ia_elem2:
         :param int op_orient2:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_conic.GetRelimiters(op_ia_elem1.com_object, op_orient1, op_ia_elem2.com_object,
@@ -580,7 +561,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
         :param Angle op_ia_angle_end:
         :param int o_law_type:
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_conic.GetTangency(op_ia_elem.com_object, op_ia_angle_start.com_object,
@@ -617,7 +597,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
 
         :param int i_index:
         :param int o_inversion:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_conic.GetTangencyAngleLawInversion(i_index, o_inversion)
@@ -641,7 +620,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
         :param Reference op_ia_elem:
         :param Reference op_ia_law:
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_conic.GetTangencyLaw(op_ia_elem.com_object, op_ia_law.com_object, i_index)
@@ -674,7 +652,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
                 |     param : iIndex Guide curve index : 1 to 5. If 0, all guides are removed.
 
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_conic.RemoveGuide(i_index)
@@ -689,7 +666,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
                 | 
                 |     Removes conical sweep parameter, whether it is a single value or a law.
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_conic.RemoveParameter()
@@ -707,7 +683,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
                 |     param : iIndex Guide curve index : 1 to 5.
 
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_conic.RemoveTangency(i_index)
@@ -725,7 +700,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
                 |     param : iLength Numerical value.
 
         :param float i_length:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_conic.SetGuideDeviation(i_length)
@@ -747,7 +721,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
 
         :param Reference ip_ia_elem1:
         :param Reference ip_ia_elem2:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_conic.SetLongitudinalRelimiters(ip_ia_elem1.com_object, ip_ia_elem2.com_object)
@@ -786,7 +759,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
         :param float i_param_start:
         :param float i_param_end:
         :param int i_law_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_conic.SetParameterLaw(i_param_start, i_param_end, i_law_type)
@@ -823,7 +795,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
         :param int ip_orient1:
         :param Reference ip_ia_elem2:
         :param int ip_orient2:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_conic.SetRelimiters(ip_ia_elem1.com_object, ip_orient1, ip_ia_elem2.com_object,
@@ -858,7 +829,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
                 |     param : iAngle Numerical value.
 
         :param float i_angle:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_conic.SetSmoothAngleThreshold(i_angle)
@@ -889,7 +859,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
         :param float i_angle_end:
         :param int ilaw_type:
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_conic.SetTangency(ip_ia_elem.com_object, i_angle_start, i_angle_end, ilaw_type,
@@ -926,7 +895,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
 
         :param int i_index:
         :param int i_inversion:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_conic.SetTangencyAngleLawInversion(i_index, i_inversion)
@@ -950,7 +918,6 @@ class HybridShapeSweepConic(HybridShapeSweep):
         :param Reference ip_ia_elem:
         :param Reference ip_ia_law:
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_sweep_conic.SetTangencyLaw(ip_ia_elem.com_object, ip_ia_law.com_object, i_index)

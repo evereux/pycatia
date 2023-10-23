@@ -80,7 +80,6 @@ class ABQFields(Collection):
                 |          Set abqInitalTemp =  abqFields.Add("ABQInitialTemperature")
 
         :param str i_field_type:
-        :return: ABQTemperature
         :rtype: ABQTemperature
         """
         return ABQTemperature(self.abq_fields.Add(i_field_type))
@@ -110,7 +109,6 @@ class ABQFields(Collection):
                 |         The specified ABQTemperature.
 
         :param cat_variant i_index:
-        :return: ABQTemperature
         :rtype: ABQTemperature
         """
         return ABQTemperature(self.abq_fields.Item(i_index))
@@ -137,7 +135,6 @@ class ABQFields(Collection):
                 |             CATIABase::Name property.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.abq_fields.Remove(i_index)

@@ -58,7 +58,6 @@ class SolidCombine(SketchBasedShape):
                 |          Set firstDirection = firstSolidCombine.FirstComponentDirection
                 |          Set firstSolidCombine.FirstComponentDirection = firstDirection2
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -92,7 +91,6 @@ class SolidCombine(SketchBasedShape):
                 |          Set firstProfile = firstSolidCombine.FirstComponentProfile
                 |          Set firstSolidCombine.FirstComponentProfile = firstProfile2
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -126,7 +124,6 @@ class SolidCombine(SketchBasedShape):
                 |          Set secondDirection = firstSolidCombine.SecondComponentDirection
                 |          Set firstSolidCombine.SecondComponentDirection = secondDirection2
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -160,7 +157,6 @@ class SolidCombine(SketchBasedShape):
                 |          Set secondProfile = firstSolidCombine.SecondComponentProfile
                 |          Set firstSolidCombine.SecondComponentProfile = secondProfile2
 
-        :return: Reference
         :rtype: Reference
         """
 

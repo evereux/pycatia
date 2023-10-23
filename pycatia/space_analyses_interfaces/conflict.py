@@ -70,7 +70,6 @@ class Conflict(AnyObject):
                 | 
                 |                 NewConflict.Comment = "OK : plastic part"
 
-        :return: str
         :rtype: str
         """
 
@@ -106,7 +105,6 @@ class Conflict(AnyObject):
                 |             Dim anInfo As CatConflictComparison
                 |             anInfo = NewConflict.ComparisonInfo
 
-        :return: int
         :rtype: int
         """
 
@@ -132,7 +130,6 @@ class Conflict(AnyObject):
                 |             Dim aProduct As Product
                 |             Set aProduct = NewConflict.FirstProduct
 
-        :return: Product
         :rtype: Product
         """
 
@@ -158,7 +155,6 @@ class Conflict(AnyObject):
                 |             Dim aProduct As Product
                 |             Set aProduct = NewConflict.SecondProduct
 
-        :return: Product
         :rtype: Product
         """
 
@@ -194,7 +190,6 @@ class Conflict(AnyObject):
                 | 
                 |                 NewConflict.Status = CatConflictStatusIrrelevant
 
-        :return: int
         :rtype: int
         """
 
@@ -228,7 +223,6 @@ class Conflict(AnyObject):
                 |             Dim conflictType As CatConflictType
                 |             conflictType = NewConflict.Type
 
-        :return: int
         :rtype: int
         """
 
@@ -257,7 +251,6 @@ class Conflict(AnyObject):
                 |             Dim conflictValue As double
                 |             conflictValue = NewConflict.Value
 
-        :return: float
         :rtype: float
         """
 
@@ -293,7 +286,6 @@ class Conflict(AnyObject):
                 |             Dim Coordinates (2)
                 |             NewConflict.GetFirstPointCoordinates Coordinates
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -339,7 +331,6 @@ class Conflict(AnyObject):
                 |             Dim Coordinates (2)
                 |             NewConflict.GetSecondPointCoordinates Coordinates
 
-        :return: tuple
         :rtype: tuple
         """
 

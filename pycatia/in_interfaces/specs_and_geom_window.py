@@ -65,7 +65,6 @@ class SpecsAndGeomWindow(Window):
                 | 
                 |          MyCADWindow.Layout = catWindowGeomOnly
 
-        :return: int
         :rtype: int
         """
 
@@ -97,7 +96,6 @@ class SpecsAndGeomWindow(Window):
                 |          Dim MyViewer As Viewer
                 |          Set MyViewer = MyCADWindow.SpecsViewer
 
-        :return: SpecsViewer
         :rtype: SpecsViewer
         """
 

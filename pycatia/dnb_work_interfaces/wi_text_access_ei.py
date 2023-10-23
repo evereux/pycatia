@@ -76,7 +76,6 @@ class WITextAccessEi(AnyObject):
         :param int i_assigned_ei_index:
         :param int i_assignment_type:
         :param AnyObject io_point_geom:
-        :return: None
         :rtype: None
         """
         return self.wi_text_access_ei.GetGeomReferedByAnnotation(

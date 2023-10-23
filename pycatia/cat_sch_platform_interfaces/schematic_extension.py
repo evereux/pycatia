@@ -73,7 +73,6 @@ class SchematicExtension(AnyObject):
         :param AnyObject i_app_obj_to_be_extended:
         :param int i_extension_type:
         :param SchListOfObjects i_lgrr:
-        :return: None
         :rtype: None
         """
         return self.schematic_extension.AddExtension(
@@ -125,7 +124,6 @@ class SchematicExtension(AnyObject):
 
         :param AnyObject i_app_extended_obj:
         :param int i_extension_type:
-        :return: None
         :rtype: None
         """
         return self.schematic_extension.RemoveExtension(i_app_extended_obj.com_object, i_extension_type)

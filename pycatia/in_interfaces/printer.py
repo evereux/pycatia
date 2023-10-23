@@ -54,7 +54,6 @@ class Printer(AnyObject):
                 | 
                 |          MsgBox myPrinter.DeviceName
 
-        :return: str
         :rtype: str
         """
 
@@ -78,7 +77,6 @@ class Printer(AnyObject):
                 |          Dim DefaultPaperOrientation As CatPaperOrientation
                 |          DefaultPaperOrientation = myPrinter.Orientation
 
-        :return: int
         :rtype: int
         """
 
@@ -102,7 +100,6 @@ class Printer(AnyObject):
                 |          Dim Height
                 |          Height = myPrinter.PaperHeight
 
-        :return: float
         :rtype: float
         """
 
@@ -126,7 +123,6 @@ class Printer(AnyObject):
                 |          Dim DefaultPaperSize As CatPaperSize
                 |          DefaultPaperSize = myPrinter.PaperSize
 
-        :return: int
         :rtype: int
         """
 
@@ -150,7 +146,6 @@ class Printer(AnyObject):
                 |          Dim Width As float
                 |          Width = myPrinter.PaperWidth
 
-        :return: float
         :rtype: float
         """
 

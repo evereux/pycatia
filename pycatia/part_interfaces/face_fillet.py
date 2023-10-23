@@ -63,7 +63,6 @@ class FaceFillet(Fillet):
                 |          Set face1 = firstFaceFillet.FirstFace
                 |          firstFaceFillet.FirstFace = NewFace1
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -94,7 +93,6 @@ class FaceFillet(Fillet):
                 | 
                 |          Set radius = firstFaceFillet.Radius
 
-        :return: Length
         :rtype: Length
         """
 
@@ -121,7 +119,6 @@ class FaceFillet(Fillet):
                 |          Set face2 = firstFaceFillet.SecondFace
                 |          firstFaceFillet.SecondFace = NewFace2
 
-        :return: Reference
         :rtype: Reference
         """
 

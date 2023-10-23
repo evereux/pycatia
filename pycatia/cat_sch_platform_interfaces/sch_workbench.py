@@ -74,7 +74,6 @@ class SchWorkbench(Workbench):
 
         :param str i_interface_name:
         :param AnyObject i_object:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.sch_workbench.FindInterface(i_interface_name, i_object.com_object)

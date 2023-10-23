@@ -60,7 +60,6 @@ class SpecsViewer(Viewer2D):
                 | 
                 |          SpecsTreeViewer.Layout = catSpecsViewerHorizontalCentered
 
-        :return: int
         :rtype: int
         """
 

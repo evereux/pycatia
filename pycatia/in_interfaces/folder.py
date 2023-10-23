@@ -60,7 +60,6 @@ class Folder(FileComponent):
                 |          Dim TestFiles As Files
                 |          Set TestFiles = TestFolder.Files
 
-        :return: Files
         :rtype: Files
         """
 
@@ -84,7 +83,6 @@ class Folder(FileComponent):
                 |          Dim TestSubFolders As CATIAFolders
                 |          Set TestSubFolders = TestFolder.SubFolders
 
-        :return: Folders
         :rtype: Folders
         """
         from pycatia.in_interfaces.folders import Folders

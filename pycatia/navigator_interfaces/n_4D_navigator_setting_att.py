@@ -176,7 +176,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 | 
                 |     Returns or sets the clearance value (oValue the clearance value in mm).
 
-        :return: float
         :rtype: float
         """
 
@@ -203,7 +202,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     preview window is automatically displayed, FALSE the preview window is not
                 |     displayed).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -229,7 +227,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     Returns or sets the preview activation state for 3D Cut (TRUE the preview
                 |     window is automatically displayed, FALSE the preview window is not displayed).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -255,7 +252,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     Returns or sets the preview activation state for Distance (TRUE the preview
                 |     window is automatically displayed, FALSE the preview window is not displayed).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -282,7 +278,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     preview window is automatically displayed, FALSE the preview window is not
                 |     displayed).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -308,7 +303,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     Returns or sets the preview activation state for Group (TRUE the preview
                 |     window is automatically displayed, FALSE the preview window is not displayed).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -335,7 +329,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     Returns or sets the mode for the display of hidden objects in DMU Group
                 |     Preview.
 
-        :return: int
         :rtype: int
         """
 
@@ -361,7 +354,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     Returns or sets the Low Intensity mode for the display of hidden objects in
                 |     DMU Group Preview.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -387,7 +379,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     Returns or sets the opacity for the display of hidden objects in DMU Group
                 |     Preview.
 
-        :return: int
         :rtype: int
         """
 
@@ -413,7 +404,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     Returns or sets the pick mode for the display of hidden objects in DMU
                 |     Group Preview.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -439,7 +429,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     Returns or sets the preview activation state for Merger (TRUE the preview
                 |     window is automatically displayed, FALSE the preview window is not displayed).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -465,7 +454,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     Returns or sets the preview activation state for Offset (TRUE the preview
                 |     window is automatically displayed, FALSE the preview window is not displayed).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -491,7 +479,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     Returns or sets the default name for the DMU Reviews (oValue, the DMU
                 |     Review name).
 
-        :return: str
         :rtype: str
         """
 
@@ -517,7 +504,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     Returns or sets the preview activation state for Section (TRUE the preview
                 |     window is automatically displayed, FALSE the preview window is not displayed).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -543,7 +529,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     Returns or sets the preview activation state for Shuttle (TRUE the preview
                 |     window is automatically displayed, FALSE the preview window is not displayed).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -570,7 +555,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     preview window is automatically displayed, FALSE the preview window is not
                 |     displayed).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -597,7 +581,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     preview window is automatically displayed, FALSE the preview window is not
                 |     displayed).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -624,7 +607,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     preview window is automatically displayed, FALSE the preview window is not
                 |     displayed).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -651,7 +633,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     preview window is automatically displayed, FALSE the preview window is not
                 |     displayed).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -678,7 +659,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     preview window is automatically displayed, FALSE the preview window is not
                 |     displayed).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -704,7 +684,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     Returns or sets the preview activation state for Wrapping (TRUE the preview
                 |     window is automatically displayed, FALSE the preview window is not displayed).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -730,7 +709,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     Returns or sets the activation state for the use of the clearance value
                 |     (TRUE the clearance value is used, FALSE the clearance value is not used);
 
-        :return: bool
         :rtype: bool
         """
 
@@ -757,7 +735,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     value (TRUE the released accuracy value is used, FALSE the released accuracy
                 |     value is not used);
 
-        :return: bool
         :rtype: bool
         """
 
@@ -783,7 +760,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     Returns or sets the level for the Import Applicative Data command
                 |     (True : at highest review level, False : in current review).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -812,7 +788,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     CatSacSettingsEnumUserPrompt the user can select the applicative data to
                 |     import).
 
-        :return: int
         :rtype: int
         """
 
@@ -842,7 +817,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |         for 2D annotations automatic naming (TRUE naming is automatic, FALSE the naming
                 |         is not automatic).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -872,7 +846,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |         for 3D annotations automatic naming (TRUE naming is automatic, FALSE the naming
                 |         is not automatic).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -899,7 +872,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     modification (TRUE update is done automatically, FALSE update is done
                 |     manually).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -928,7 +900,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |         MarkerSettingAtt.put_MarkerDefaultsDashed Returns or sets the default dashed
                 |         value of an annotation (oValue the dashed value).
 
-        :return: int
         :rtype: int
         """
 
@@ -957,7 +928,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |         MarkerSettingAtt.put_MarkerTextDefaultsFont2D Returns or sets the default font
                 |         of an annotation (oValue the font name).
 
-        :return: str
         :rtype: str
         """
 
@@ -986,7 +956,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |         MarkerSettingAtt.put_MarkerTextDefaultsSize2D Returns or sets the default size
                 |         value of an annotation (oValue the size value)..
 
-        :return: int
         :rtype: int
         """
 
@@ -1015,7 +984,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |         MarkerSettingAtt.put_MarkerDefaultsWeight Returns or sets the default weight
                 |         value of an annotation (oValue the weight value).
 
-        :return: int
         :rtype: int
         """
 
@@ -1044,7 +1012,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |         MarkerSettingAtt.put_MarkerTextDashed2D Returns or sets the default dashed
                 |         value of a text annotation (oValue the dashed value).
 
-        :return: int
         :rtype: int
         """
 
@@ -1073,7 +1040,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |         MarkerSettingAtt.put_MarkerTextWeight2D Returns or sets the default weight
                 |         value of a text annotation (oValue the weight value).
 
-        :return: int
         :rtype: int
         """
 
@@ -1099,7 +1065,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     Returns or sets the name activation state for Hyperlink (TRUE the hyperlink
                 |     name is displayed, FALSE the hyperlink name is not displayed).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1126,7 +1091,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     publish browser (TRUE the publish browser is automatically opened, FALSE the
                 |     publish browser is not automatically opened).
 
-        :return: bool
         :rtype: bool
         """
 
@@ -1172,7 +1136,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetClearanceVoxelInfo(io_admin_level, io_locked)
@@ -1209,7 +1172,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetDMUClashPreviewInfo(io_admin_level, io_locked)
@@ -1246,7 +1208,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetDMUCut3DPreviewInfo(io_admin_level, io_locked)
@@ -1283,7 +1244,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetDMUDistancePreviewInfo(io_admin_level, io_locked)
@@ -1320,7 +1280,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetDMUFreeSpacePreviewInfo(io_admin_level, io_locked)
@@ -1340,7 +1299,6 @@ class N4DNavigatorSettingAtt(SettingController):
         :param int o_red:
         :param int o_green:
         :param int o_blue:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.GetDMUGroupPreviewHiddenObjectsColor(o_red, o_green, o_blue)
@@ -1378,7 +1336,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetDMUGroupPreviewHiddenObjectsColorInfo(io_admin_level, io_locked)
@@ -1416,7 +1373,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetDMUGroupPreviewHiddenObjectsDisplayModeInfo(io_admin_level, io_locked)
@@ -1454,7 +1410,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetDMUGroupPreviewHiddenObjectsLowIntInfo(io_admin_level, io_locked)
@@ -1492,7 +1447,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetDMUGroupPreviewHiddenObjectsOpacityInfo(io_admin_level, io_locked)
@@ -1530,7 +1484,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetDMUGroupPreviewHiddenObjectsPickInfo(io_admin_level, io_locked)
@@ -1567,7 +1520,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetDMUGroupPreviewInfo(io_admin_level, io_locked)
@@ -1604,7 +1556,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetDMUMergerPreviewInfo(io_admin_level, io_locked)
@@ -1641,7 +1592,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetDMUOffsetPreviewInfo(io_admin_level, io_locked)
@@ -1678,7 +1628,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetDMUReviewNameInfo(io_admin_level, io_locked)
@@ -1715,7 +1664,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetDMUSectionPreviewInfo(io_admin_level, io_locked)
@@ -1752,7 +1700,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetDMUShuttlePreviewInfo(io_admin_level, io_locked)
@@ -1789,7 +1736,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetDMUSilhouettePreviewInfo(io_admin_level, io_locked)
@@ -1826,7 +1772,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetDMUSimplifPreviewInfo(io_admin_level, io_locked)
@@ -1863,7 +1808,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetDMUSweptVolPreviewInfo(io_admin_level, io_locked)
@@ -1900,7 +1844,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetDMUThicknessPreviewInfo(io_admin_level, io_locked)
@@ -1937,7 +1880,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetDMUVibrationVolPreviewInfo(io_admin_level, io_locked)
@@ -1974,7 +1916,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetDMUWrappingPreviewInfo(io_admin_level, io_locked)
@@ -2011,7 +1952,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetForceClearanceVoxelInfo(io_admin_level, io_locked)
@@ -2048,7 +1988,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetForceVoxelInfo(io_admin_level, io_locked)
@@ -2085,7 +2024,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetInsertLevelInfo(io_admin_level, io_locked)
@@ -2122,7 +2060,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetInsertModeInfo(io_admin_level, io_locked)
@@ -2160,7 +2097,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetMarker2DAutoNamingInfo(io_admin_level, io_locked)
@@ -2198,7 +2134,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetMarker3DAutoNamingInfo(io_admin_level, io_locked)
@@ -2235,7 +2170,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetMarkerAutoUpdateInfo(io_admin_level, io_locked)
@@ -2258,7 +2192,6 @@ class N4DNavigatorSettingAtt(SettingController):
         :param int o_red:
         :param int o_green:
         :param int o_blue:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.GetMarkerDefaultsColor(o_red, o_green, o_blue)
@@ -2296,7 +2229,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetMarkerDefaultsColorInfo(io_admin_level, io_locked)
@@ -2334,7 +2266,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetMarkerDefaultsDashedInfo(io_admin_level, io_locked)
@@ -2372,7 +2303,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetMarkerDefaultsFontInfo(io_admin_level, io_locked)
@@ -2410,7 +2340,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetMarkerDefaultsSizeInfo(io_admin_level, io_locked)
@@ -2448,7 +2377,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetMarkerDefaultsWeightInfo(io_admin_level, io_locked)
@@ -2471,7 +2399,6 @@ class N4DNavigatorSettingAtt(SettingController):
         :param int o_red:
         :param int o_green:
         :param int o_blue:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.GetMarkerTextColor(o_red, o_green, o_blue)
@@ -2509,7 +2436,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetMarkerTextColorInfo(io_admin_level, io_locked)
@@ -2547,7 +2473,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetMarkerTextDashedInfo(io_admin_level, io_locked)
@@ -2585,7 +2510,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetMarkerTextWeightInfo(io_admin_level, io_locked)
@@ -2622,7 +2546,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetNumUrlNameInfo(io_admin_level, io_locked)
@@ -2659,7 +2582,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetPublishAutoLaunchBrowserInfo(io_admin_level, io_locked)
@@ -2680,7 +2602,6 @@ class N4DNavigatorSettingAtt(SettingController):
         :param int o_r:
         :param int o_g:
         :param int o_b:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.GetSceneDefaultsColor(o_r, o_g, o_b)
@@ -2717,7 +2638,6 @@ class N4DNavigatorSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.n_4d_navigator_setting_att.GetSceneDefaultsColorInfo(io_admin_level, io_locked)
@@ -2744,7 +2664,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetClearanceVoxelLock(i_locked)
@@ -2786,7 +2705,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetDMUClashPreviewLock(i_locked)
@@ -2828,7 +2746,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetDMUCut3DPreviewLock(i_locked)
@@ -2870,7 +2787,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetDMUDistancePreviewLock(i_locked)
@@ -2912,7 +2828,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetDMUFreeSpacePreviewLock(i_locked)
@@ -2947,7 +2862,6 @@ class N4DNavigatorSettingAtt(SettingController):
         :param int i_red:
         :param int i_green:
         :param int i_blue:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetDMUGroupPreviewHiddenObjectsColor(i_red, i_green, i_blue)
@@ -2976,7 +2890,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetDMUGroupPreviewHiddenObjectsColorLock(i_locked)
@@ -3020,7 +2933,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetDMUGroupPreviewHiddenObjectsDisplayModeLock(i_locked)
@@ -3064,7 +2976,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetDMUGroupPreviewHiddenObjectsLowIntLock(i_locked)
@@ -3108,7 +3019,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetDMUGroupPreviewHiddenObjectsOpacityLock(i_locked)
@@ -3152,7 +3062,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetDMUGroupPreviewHiddenObjectsPickLock(i_locked)
@@ -3194,7 +3103,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetDMUGroupPreviewLock(i_locked)
@@ -3236,7 +3144,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetDMUMergerPreviewLock(i_locked)
@@ -3278,7 +3185,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetDMUOffsetPreviewLock(i_locked)
@@ -3320,7 +3226,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetDMUReviewNameLock(i_locked)
@@ -3362,7 +3267,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetDMUSectionPreviewLock(i_locked)
@@ -3404,7 +3308,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetDMUShuttlePreviewLock(i_locked)
@@ -3446,7 +3349,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetDMUSilhouettePreviewLock(i_locked)
@@ -3488,7 +3390,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetDMUSimplifPreviewLock(i_locked)
@@ -3530,7 +3431,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetDMUSweptVolPreviewLock(i_locked)
@@ -3572,7 +3472,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetDMUThicknessPreviewLock(i_locked)
@@ -3614,7 +3513,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetDMUVibrationVolPreviewLock(i_locked)
@@ -3656,7 +3554,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetDMUWrappingPreviewLock(i_locked)
@@ -3698,7 +3595,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetForceClearanceVoxelLock(i_locked)
@@ -3740,7 +3636,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetForceVoxelLock(i_locked)
@@ -3782,7 +3677,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetInsertLevelLock(i_locked)
@@ -3824,7 +3718,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetInsertModeLock(i_locked)
@@ -3868,7 +3761,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetMarker2DAutoNamingLock(i_locked)
@@ -3912,7 +3804,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetMarker3DAutoNamingLock(i_locked)
@@ -3954,7 +3845,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetMarkerAutoUpdateLock(i_locked)
@@ -3992,7 +3882,6 @@ class N4DNavigatorSettingAtt(SettingController):
         :param int i_red:
         :param int i_green:
         :param int i_blue:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetMarkerDefaultsColor(i_red, i_green, i_blue)
@@ -4021,7 +3910,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetMarkerDefaultsColorLock(i_locked)
@@ -4065,7 +3953,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetMarkerDefaultsDashedLock(i_locked)
@@ -4109,7 +3996,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetMarkerDefaultsFontLock(i_locked)
@@ -4153,7 +4039,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetMarkerDefaultsSizeLock(i_locked)
@@ -4197,7 +4082,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetMarkerDefaultsWeightLock(i_locked)
@@ -4235,7 +4119,6 @@ class N4DNavigatorSettingAtt(SettingController):
         :param int i_red:
         :param int i_green:
         :param int i_blue:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetMarkerTextColor(i_red, i_green, i_blue)
@@ -4264,7 +4147,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetMarkerTextColorLock(i_locked)
@@ -4308,7 +4190,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetMarkerTextDashedLock(i_locked)
@@ -4352,7 +4233,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetMarkerTextWeightLock(i_locked)
@@ -4394,7 +4274,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetNumUrlNameLock(i_locked)
@@ -4436,7 +4315,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetPublishAutoLaunchBrowserLock(i_locked)
@@ -4472,7 +4350,6 @@ class N4DNavigatorSettingAtt(SettingController):
         :param int i_r:
         :param int i_g:
         :param int i_b:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetSceneDefaultsColor(i_r, i_g, i_b)
@@ -4499,7 +4376,6 @@ class N4DNavigatorSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.n_4d_navigator_setting_att.SetSceneDefaultsColorLock(i_locked)

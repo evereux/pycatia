@@ -65,7 +65,6 @@ class SchCntrLocation(AnyObject):
 
         :param SchGRR i_grr:
         :param SchListOfDoubles o_db2_align_vector:
-        :return: None
         :rtype: None
         """
         return self.sch_cntr_location.GetAlignVector(i_grr.com_object, o_db2_align_vector.com_object)
@@ -116,7 +115,6 @@ class SchCntrLocation(AnyObject):
 
         :param SchGRR i_grr:
         :param SchListOfDoubles o_db2_position:
-        :return: None
         :rtype: None
         """
         return self.sch_cntr_location.GetPosition(i_grr.com_object, o_db2_position.com_object)
@@ -164,7 +162,6 @@ class SchCntrLocation(AnyObject):
                 |          objThisIntf.GetRelativePositionobjArg1
 
         :param SchListOfDoubles o_db2_relative_position:
-        :return: None
         :rtype: None
         """
         return self.sch_cntr_location.GetRelativePosition(o_db2_relative_position.com_object)
@@ -215,7 +212,6 @@ class SchCntrLocation(AnyObject):
 
         :param SchGRR i_grr:
         :param tuple i_db2_align_vector:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_cntr_location.SetAlignVector(i_grr.com_object, i_db2_align_vector)
@@ -268,7 +264,6 @@ class SchCntrLocation(AnyObject):
 
         :param SchGRR i_grr:
         :param tuple i_db2_position:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_cntr_location.SetPosition(i_grr.com_object, i_db2_position)
@@ -314,7 +309,6 @@ class SchCntrLocation(AnyObject):
                 |          objThisIntf.SetRelativePositiondbVar1
 
         :param tuple i_db2_relative_position:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_cntr_location.SetRelativePosition(i_db2_relative_position)

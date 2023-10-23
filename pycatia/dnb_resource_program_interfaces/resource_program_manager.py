@@ -79,7 +79,6 @@ class ResourceProgramManager(AnyObject):
                 |                objResourceProgramManager.GetAllTasks TaskList
 
         :param tuple o_task_list:
-        :return: Task
         :rtype: Task
         """
         return Task(self.resource_program_manager.GetAllTasks(o_task_list))
@@ -139,7 +138,6 @@ class ResourceProgramManager(AnyObject):
 
         :param str i_task_name:
         :param Task o_task:
-        :return: None
         :rtype: None
         """
         return self.resource_program_manager.GetTask(i_task_name, o_task.com_object)

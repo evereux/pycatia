@@ -63,7 +63,6 @@ class SchAppMultiImageMaster(AnyObject):
                 |          objThisIntf.AppAddImage objImage
 
         :param SchAppConnectable i_image:
-        :return: None
         :rtype: None
         """
         return self.sch_app_multi_image_master.AppAddImage(i_image.com_object)
@@ -132,7 +131,6 @@ class SchAppMultiImageMaster(AnyObject):
         :param bool o_b_yes:
         :param str o_nls_file_name:
         :param str o_nls_file_key_to_message:
-        :return: None
         :rtype: None
         """
         return self.sch_app_multi_image_master.AppIsOKToCreateImage(
@@ -189,7 +187,6 @@ class SchAppMultiImageMaster(AnyObject):
 
         :param SchListOfBSTRs i_l_filter:
         :param SchListOfObjects o_l_images:
-        :return: None
         :rtype: None
         """
         return self.sch_app_multi_image_master.AppListImages(i_l_filter.com_object, o_l_images.com_object)

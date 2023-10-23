@@ -68,7 +68,6 @@ class HybridShapeTrim(HybridShape):
                 |      Dim AutoExtrapolMode As boolean
                 |      AutoExtrapolMode = Trim.AutomaticExtrapolationMode
 
-        :return: bool
         :rtype: bool
         """
 
@@ -101,7 +100,6 @@ class HybridShapeTrim(HybridShape):
                 |      Dim Connex As boolean
                 |      Connex = Trim.Connex
 
-        :return: bool
         :rtype: bool
         """
 
@@ -137,7 +135,6 @@ class HybridShapeTrim(HybridShape):
                 |          Dim Surface1 As Reference
                 |          Set Surface1 = hybTrim.FirstElem
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -192,7 +189,6 @@ class HybridShapeTrim(HybridShape):
                 |          Dim firstOrient As long
                 |          Set firstOrient = hybTrim.FirstOrientation
 
-        :return: int
         :rtype: int
         """
 
@@ -226,7 +222,6 @@ class HybridShapeTrim(HybridShape):
                 |      Dim Intersection As boolean
                 |      Intersection = Trim.IntersectionComputation
 
-        :return: bool
         :rtype: bool
         """
 
@@ -259,7 +254,6 @@ class HybridShapeTrim(HybridShape):
                 |      Dim bKeepAllPieces As boolean
                 |      bKeepAllPieces = Trim.KeepAllPieces
 
-        :return: bool
         :rtype: bool
         """
 
@@ -291,7 +285,6 @@ class HybridShapeTrim(HybridShape):
                 |      Dim Manifold As boolean
                 |      Connex = Trim.Manifold
 
-        :return: bool
         :rtype: bool
         """
 
@@ -323,7 +316,6 @@ class HybridShapeTrim(HybridShape):
                 |    Dim Mode As long
                 |    Mode = Trim.Mode
 
-        :return: int
         :rtype: int
         """
 
@@ -359,7 +351,6 @@ class HybridShapeTrim(HybridShape):
                 |          Dim Surface2 As Reference
                 |          Set Surface2 = hybTrim.SecondElem
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -414,7 +405,6 @@ class HybridShapeTrim(HybridShape):
                 |          Dim secondOrient As long
                 |          Set secondOrient = hybTrim.SecondOrientation
 
-        :return: int
         :rtype: int
         """
 
@@ -451,7 +441,6 @@ class HybridShapeTrim(HybridShape):
                 | 
                 |           hybTrim.Simplify = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -488,7 +477,6 @@ class HybridShapeTrim(HybridShape):
                 |          Dim supportElement As Reference
                 |          Set supportElement = hybTrim.Support
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -519,7 +507,6 @@ class HybridShapeTrim(HybridShape):
                 |             Element to keep.
 
         :param Reference i_element:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_trim.AddElementToKeep(i_element.com_object)
@@ -556,7 +543,6 @@ class HybridShapeTrim(HybridShape):
                 |             Element to remove.
 
         :param Reference i_element:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_trim.AddElementToRemove(i_element.com_object)
@@ -603,7 +589,6 @@ class HybridShapeTrim(HybridShape):
         :param int i_rank:
         :param int i_cutter_elem:
         :param int i_orientation:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_trim.AddPieceCutter(i_rank, i_cutter_elem, i_orientation)
@@ -626,7 +611,6 @@ class HybridShapeTrim(HybridShape):
                 |             trimmed feature
 
         :param int i_rank:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_trim.GetElem(i_rank))
@@ -649,7 +633,6 @@ class HybridShapeTrim(HybridShape):
                 |             Index of one of the kept features
 
         :param int i_rank:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_trim.GetKeptElem(i_rank))
@@ -670,7 +653,6 @@ class HybridShapeTrim(HybridShape):
                 |         oNbElem
                 |             Number of elements
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_trim.GetNbElem()
@@ -690,7 +672,6 @@ class HybridShapeTrim(HybridShape):
                 |         oNbElementsToKeep
                 |             Number of elements to keep
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_trim.GetNbElementsToKeep()
@@ -710,7 +691,6 @@ class HybridShapeTrim(HybridShape):
                 |         oNbElementsToRemove
                 |             Number of elements to remove
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_trim.GetNbElementsToRemove()
@@ -735,7 +715,6 @@ class HybridShapeTrim(HybridShape):
                 |             Orientation
 
         :param int i_rank:
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_trim.GetNextOrientation(i_rank)
@@ -771,7 +750,6 @@ class HybridShapeTrim(HybridShape):
         :param int i_cutter_index:
         :param int o_cutter_elem_idx:
         :param int o_orientation:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_trim.GetPieceCutter(i_rank, i_cutter_index, o_cutter_elem_idx, o_orientation)
@@ -798,7 +776,6 @@ class HybridShapeTrim(HybridShape):
 
         :param int i_rank:
         :param int o_index:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_trim.GetPieceDiscriminationIndex(i_rank, o_index)
@@ -821,7 +798,6 @@ class HybridShapeTrim(HybridShape):
                 |             shells)
 
         :param int i_rank:
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_trim.GetPieceNbCutters(i_rank)
@@ -845,7 +821,6 @@ class HybridShapeTrim(HybridShape):
                 |             Index of the trimmed element
 
         :param int i_rank:
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_trim.GetPortionToKeep(i_rank)
@@ -870,7 +845,6 @@ class HybridShapeTrim(HybridShape):
                 |             Orientation
 
         :param int i_rank:
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_trim.GetPreviousOrientation(i_rank)
@@ -893,7 +867,6 @@ class HybridShapeTrim(HybridShape):
                 |             Index of one of the removed features
 
         :param int i_rank:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.hybrid_shape_trim.GetRemovedElem(i_rank))
@@ -917,7 +890,6 @@ class HybridShapeTrim(HybridShape):
                 | 
                 |          hybTrim.InvertFirstOrientation
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_trim.InvertFirstOrientation()
@@ -938,7 +910,6 @@ class HybridShapeTrim(HybridShape):
                 | 
                 |          hybTrim.InvertSecondOrientation
 
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_trim.InvertSecondOrientation()
@@ -959,7 +930,6 @@ class HybridShapeTrim(HybridShape):
                 |             Index of the kept element.
 
         :param int i_rank:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_trim.RemoveElementToKeep(i_rank)
@@ -980,7 +950,6 @@ class HybridShapeTrim(HybridShape):
                 |             Index of the removed element.
 
         :param int i_rank:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_trim.RemoveElementToRemove(i_rank)
@@ -1006,7 +975,6 @@ class HybridShapeTrim(HybridShape):
 
         :param int i_rank:
         :param int i_cutter_index:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_trim.RemovePieceCutter(i_rank, i_cutter_index)
@@ -1032,7 +1000,6 @@ class HybridShapeTrim(HybridShape):
 
         :param int i_rank:
         :param Reference i_elem:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_trim.SetElem(i_rank, i_elem.com_object)
@@ -1074,7 +1041,6 @@ class HybridShapeTrim(HybridShape):
 
         :param int i_rank:
         :param int i_orientation:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_trim.SetNextOrientation(i_rank, i_orientation)
@@ -1101,7 +1067,6 @@ class HybridShapeTrim(HybridShape):
 
         :param int i_rank:
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_trim.SetPieceDiscriminationIndex(i_rank, i_index)
@@ -1127,7 +1092,6 @@ class HybridShapeTrim(HybridShape):
 
         :param int i_rank:
         :param int i_portion_number:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_trim.SetPortionToKeep(i_rank, i_portion_number)
@@ -1154,7 +1118,6 @@ class HybridShapeTrim(HybridShape):
 
         :param int i_rank:
         :param int i_orientation:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_trim.SetPreviousOrientation(i_rank, i_orientation)

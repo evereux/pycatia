@@ -53,7 +53,6 @@ class FunctionalObjects(Collection):
                 |     Creates a FunctionalObject.
 
         :param str i_name:
-        :return: FunctionalObject
         :rtype: FunctionalObject
         """
         return FunctionalObject(self.functional_objects.Create(i_name))
@@ -71,7 +70,6 @@ class FunctionalObjects(Collection):
 
         :param str i_name:
         :param FunctionalDescription i_desc:
-        :return: FunctionalObjectProxy
         :rtype: FunctionalObjectProxy
         """
         return FunctionalObjectProxy(self.functional_objects.CreateProxy(i_name, i_desc.com_object))
@@ -87,7 +85,6 @@ class FunctionalObjects(Collection):
                 |     Deletes a FunctionalObject.
 
         :param FunctionalObject i_object:
-        :return: None
         :rtype: None
         """
         return self.functional_objects.Delete(i_object.com_object)
@@ -140,7 +137,6 @@ class FunctionalObjects(Collection):
                 |          Set Obj2 = Desc.Object("Valve")
 
         :param cat_variant i_index:
-        :return: FunctionalObject
         :rtype: FunctionalObject
         """
         return FunctionalObject(self.functional_objects.Elem(i_index))

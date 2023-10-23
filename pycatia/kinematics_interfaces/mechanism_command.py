@@ -53,7 +53,6 @@ class MechanismCommand(AnyObject):
                 |             The current value This property is read only because current value
                 |             modification is done by solver
 
-        :return: float
         :rtype: float
         """
 
@@ -77,7 +76,6 @@ class MechanismCommand(AnyObject):
                 |             The orientation of the command; only the sign is important (+: same
                 |             as relying joint/-: opposite)
 
-        :return: int
         :rtype: int
         """
 
@@ -110,7 +108,6 @@ class MechanismCommand(AnyObject):
                 |     See also:
                 |         Mechanism
 
-        :return: str
         :rtype: str
         """
 

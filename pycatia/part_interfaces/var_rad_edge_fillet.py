@@ -60,7 +60,6 @@ class VarRadEdgeFillet(EdgeFillet):
                 |         iType
                 |             The type used to perform the fillet : catSphereBitangencyType or catCircleBitangencyType
 
-        :return: int
         :rtype: int
         """
 
@@ -91,7 +90,6 @@ class VarRadEdgeFillet(EdgeFillet):
                 | 
                 |          Set edges = firstVarEdgeFillet.EdgesToFillet
 
-        :return: References
         :rtype: References
         """
 
@@ -114,7 +112,6 @@ class VarRadEdgeFillet(EdgeFillet):
                 |             The spine to be used for a circle bitangency
                 |             fillet
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -148,7 +145,6 @@ class VarRadEdgeFillet(EdgeFillet):
                 |          mode = firstVarEdgeFillet.FilletVariation
                 |          firstVarEdgeFillet.FilletVariation = CATLinearFilletVariation
 
-        :return: int
         :rtype: int
         """
 
@@ -181,7 +177,6 @@ class VarRadEdgeFillet(EdgeFillet):
                 | 
                 |          Set vertices = firstVarEdgeFillet.ImposedVertices
 
-        :return: References
         :rtype: References
         """
 
@@ -217,7 +212,6 @@ class VarRadEdgeFillet(EdgeFillet):
 
         :param Reference i_edge:
         :param float i_radius:
-        :return: None
         :rtype: None
         """
         return self.var_rad_edge_fillet.AddEdgeToFillet(i_edge.com_object, i_radius)
@@ -265,7 +259,6 @@ class VarRadEdgeFillet(EdgeFillet):
 
         :param Reference i_vertex:
         :param float i_radius:
-        :return: None
         :rtype: None
         """
         return self.var_rad_edge_fillet.AddImposedVertex(i_vertex.com_object, i_radius)
@@ -311,7 +304,6 @@ class VarRadEdgeFillet(EdgeFillet):
                 |          Set radius = firstVarEdgeFillet.ImposedVertexRadius(vertex)
 
         :param Reference i_imposed_vertex:
-        :return: Length
         :rtype: Length
         """
         return Length(self.var_rad_edge_fillet.ImposedVertexRadius(i_imposed_vertex.com_object))
@@ -341,7 +333,6 @@ class VarRadEdgeFillet(EdgeFillet):
                 |      call firstVarEdgeFillet.WithdrawEdgeToFillet(edge)
 
         :param Reference i_edge:
-        :return: None
         :rtype: None
         """
         return self.var_rad_edge_fillet.WithdrawEdgeToFillet(i_edge.com_object)
@@ -384,7 +375,6 @@ class VarRadEdgeFillet(EdgeFillet):
                 |          call firstVarEdgeFillet.WithdrawImposedVertex(vertex)
 
         :param Reference i_vertex:
-        :return: None
         :rtype: None
         """
         return self.var_rad_edge_fillet.WithdrawImposedVertex(i_vertex.com_object)

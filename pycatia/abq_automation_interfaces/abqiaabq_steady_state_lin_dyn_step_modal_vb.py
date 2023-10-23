@@ -56,7 +56,6 @@ class ABQIAABQSteadyStateLinDynStepModalVB(ABQIAABQSteadyStateLinDynStepBasicVB)
                 |     Returns:
                 |         A boolean specifying whether the composite damping data is ued.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -84,7 +83,6 @@ class ABQIAABQSteadyStateLinDynStepModalVB(ABQIAABQSteadyStateLinDynStepBasicVB)
                 |     Returns:
                 |         A boolean specifying whether the direct damping data is ued.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -112,7 +110,6 @@ class ABQIAABQSteadyStateLinDynStepModalVB(ABQIAABQSteadyStateLinDynStepBasicVB)
                 |     Returns:
                 |         A boolean specifying whether the rayleigh damping data is ued.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -140,7 +137,6 @@ class ABQIAABQSteadyStateLinDynStepModalVB(ABQIAABQSteadyStateLinDynStepBasicVB)
                 |     Returns:
                 |         A boolean specifying whether the structural damping data is ued.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -178,7 +174,6 @@ class ABQIAABQSteadyStateLinDynStepModalVB(ABQIAABQSteadyStateLinDynStepBasicVB)
 
         :param tuple i_column1:
         :param tuple i_column2:
-        :return: None
         :rtype: None
         """
         return self.abqiaabq_steady_state_lin_dyn_step_modal_vb.AddCompositeDampingDataTable(i_column1, i_column2)
@@ -243,7 +238,6 @@ class ABQIAABQSteadyStateLinDynStepModalVB(ABQIAABQSteadyStateLinDynStepBasicVB)
         :param tuple i_column1:
         :param tuple i_column2:
         :param tuple i_column3:
-        :return: None
         :rtype: None
         """
         return self.abqiaabq_steady_state_lin_dyn_step_modal_vb.AddDirectDampingDataTable(
@@ -320,7 +314,6 @@ class ABQIAABQSteadyStateLinDynStepModalVB(ABQIAABQSteadyStateLinDynStepBasicVB)
         :param tuple i_column2:
         :param tuple i_column3:
         :param tuple i_column4:
-        :return: None
         :rtype: None
         """
         return self.abqiaabq_steady_state_lin_dyn_step_modal_vb.AddRayleighDampingDataTable(
@@ -388,7 +381,6 @@ class ABQIAABQSteadyStateLinDynStepModalVB(ABQIAABQSteadyStateLinDynStepBasicVB)
         :param tuple i_column1:
         :param tuple i_column2:
         :param tuple i_column3:
-        :return: None
         :rtype: None
         """
         return self.abqiaabq_steady_state_lin_dyn_step_modal_vb.AddStructuralDampingDataTable(

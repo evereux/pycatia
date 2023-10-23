@@ -44,7 +44,6 @@ class SFMStandardContourParameters(Collection):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Func GetRole() As CATBSTR
 
-        :return: str
         :rtype: str
         """
         return self.sfm_standard_contour_parameters.GetRole()
@@ -96,7 +95,6 @@ class SFMStandardContourParameters(Collection):
                 |               Next
 
         :param cat_variant i_index:
-        :return: Parameter
         :rtype: Parameter
         """
         return Parameter(self.sfm_standard_contour_parameters.Item(i_index))

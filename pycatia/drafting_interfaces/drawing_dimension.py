@@ -58,7 +58,6 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oCumulateMode = MyDimension.CumulateMode
 
-        :return: bool
         :rtype: bool
         """
 
@@ -81,7 +80,6 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oIsStatus = MyDimension.DimStatus
 
-        :return: int
         :rtype: int
         """
 
@@ -104,7 +102,6 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oTypeDim = MyDimension.DimType
 
-        :return: int
         :rtype: int
         """
 
@@ -127,7 +124,6 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oDualValue = MyDimension.DualValue
 
-        :return: int
         :rtype: int
         """
 
@@ -158,7 +154,6 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oForsh = MyDimension.Forshortened
 
-        :return: bool
         :rtype: bool
         """
 
@@ -189,7 +184,6 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oHalfDimMode = MyDimension.HalfDimMode
 
-        :return: bool
         :rtype: bool
         """
 
@@ -219,7 +213,6 @@ class DrawingDimension(AnyObject):
                 | 
                 |      myDimensionClippingStatus=MyDimension.IsClipped
 
-        :return: bool
         :rtype: bool
         """
 
@@ -242,7 +235,6 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oNbExtline = MyDimension.NbExtLine
 
-        :return: int
         :rtype: int
         """
 
@@ -265,7 +257,6 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oNbSymb = MyDimension.NbSymb
 
-        :return: int
         :rtype: int
         """
 
@@ -297,7 +288,6 @@ class DrawingDimension(AnyObject):
                 |          Dim DimValueParameter As Parameter
                 |          Set DimValueParameter = DimensionParameters.Item("Measured length")
 
-        :return: Parameters
         :rtype: Parameters
         """
 
@@ -322,7 +312,6 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oSymbSide = MyDimension.SymbolsSide
 
-        :return: int
         :rtype: int
         """
 
@@ -375,7 +364,6 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oValueAng = MyDimension.ValueAngle
 
-        :return: float
         :rtype: float
         """
 
@@ -406,7 +394,6 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oValueAutoMode = MyDimension.ValueAutoMode
 
-        :return: int
         :rtype: int
         """
 
@@ -437,7 +424,6 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oValueDisplay = MyDimension.ValueDisplay
 
-        :return: int
         :rtype: int
         """
 
@@ -468,7 +454,6 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oValueFrame = MyDimension.ValueFrame
 
-        :return: int
         :rtype: int
         """
 
@@ -499,7 +484,6 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oInOut = MyDimension.ValueInOut
 
-        :return: int
         :rtype: int
         """
 
@@ -530,7 +514,6 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oValueOrient = MyDimension.ValueOrientation
 
-        :return: int
         :rtype: int
         """
 
@@ -561,7 +544,6 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oValueRef = MyDimension.ValueReference
 
-        :return: int
         :rtype: int
         """
 
@@ -596,7 +578,6 @@ class DrawingDimension(AnyObject):
                 | 
                 |              MyDimension.GetBoundaryBox(oValues)
 
-        :return: tuple
         :rtype: tuple
         """
         return self.drawing_dimension.GetBoundaryBox()
@@ -674,7 +655,6 @@ class DrawingDimension(AnyObject):
                 |     See also:
                 |         DrawingDimLine
 
-        :return: DrawingDimExtLine
         :rtype: DrawingDimExtLine
         """
         return DrawingDimExtLine(self.drawing_dimension.GetDimExtLine())
@@ -701,7 +681,6 @@ class DrawingDimension(AnyObject):
                 |     See also:
                 |         DrawingDimLine
 
-        :return: DrawingDimLine
         :rtype: DrawingDimLine
         """
         return DrawingDimLine(self.drawing_dimension.GetDimLine())
@@ -771,7 +750,6 @@ class DrawingDimension(AnyObject):
                 |     See also:
                 |         DrawingDimValue
 
-        :return: DrawingDimValue
         :rtype: DrawingDimValue
         """
         return DrawingDimValue(self.drawing_dimension.GetValue())
@@ -822,7 +800,6 @@ class DrawingDimension(AnyObject):
         :param float y:
         :param int sub_part:
         :param int dim_angle_behavior:
-        :return: None
         :rtype: None
         """
         return self.drawing_dimension.MoveValue(x, y, sub_part, dim_angle_behavior)
@@ -842,7 +819,6 @@ class DrawingDimension(AnyObject):
                 | 
                 |      MyDimension.RestoreValuePosition()
 
-        :return: None
         :rtype: None
         """
         return self.drawing_dimension.RestoreValuePosition()
@@ -880,7 +856,6 @@ class DrawingDimension(AnyObject):
         :param float x:
         :param float y:
         :param int i_kept_side:
-        :return: None
         :rtype: None
         """
         return self.drawing_dimension.SetClip(x, y, i_kept_side)
@@ -938,7 +913,6 @@ class DrawingDimension(AnyObject):
         :param float id_up_tol:
         :param float id_low_tol:
         :param int display_mode:
-        :return: None
         :rtype: None
         """
         return self.drawing_dimension.SetTolerances(
@@ -966,7 +940,6 @@ class DrawingDimension(AnyObject):
                 |      if MyDimension.IsClipped then
                 |        MyDimension.Unclip
 
-        :return: None
         :rtype: None
         """
         return self.drawing_dimension.Unclip()

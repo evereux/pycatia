@@ -64,7 +64,6 @@ class IpdTemplateProperty(AnyObject):
                 |         S_OK
 
         :param str i_attr_name:
-        :return: bool
         :rtype: bool
         """
         return self.ipd_template_property.GetTemplateBooleanAttribute(i_attr_name)
@@ -91,7 +90,6 @@ class IpdTemplateProperty(AnyObject):
                 |         S_OK
 
         :param str i_attr_name:
-        :return: float
         :rtype: float
         """
         return self.ipd_template_property.GetTemplateDoubleAttribute(i_attr_name)
@@ -117,7 +115,6 @@ class IpdTemplateProperty(AnyObject):
                 |         S_OK
 
         :param str i_attr_name:
-        :return: int
         :rtype: int
         """
         return self.ipd_template_property.GetTemplateLongAttribute(i_attr_name)
@@ -144,7 +141,6 @@ class IpdTemplateProperty(AnyObject):
                 |         S_OK
 
         :param str i_attr_name:
-        :return: str
         :rtype: str
         """
         return self.ipd_template_property.GetTemplateStringAttribute(i_attr_name)

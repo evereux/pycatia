@@ -50,7 +50,6 @@ class ABQSmoothCoupling(ABQInteraction):
                 | 
                 |     Retrieves the number of currently active exclusion regions.
 
-        :return: int
         :rtype: int
         """
 
@@ -67,7 +66,6 @@ class ABQSmoothCoupling(ABQInteraction):
                 | 
                 |     Retrieves the number of supports.
 
-        :return: int
         :rtype: int
         """
 
@@ -84,7 +82,6 @@ class ABQSmoothCoupling(ABQInteraction):
                 | 
                 |     Returns or sets the UR1 degree of freedom.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -109,7 +106,6 @@ class ABQSmoothCoupling(ABQInteraction):
                 | 
                 |     Returns or sets the UR2 degree of freedom.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -134,7 +130,6 @@ class ABQSmoothCoupling(ABQInteraction):
                 | 
                 |     Returns or sets the UR3 degree of freedom.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -160,7 +155,6 @@ class ABQSmoothCoupling(ABQInteraction):
                 |     Returns or sets the local coordinate system. If nothing is passed in then
                 |     it defaults to the global coordinate system.
 
-        :return: AxisSystem
         :rtype: AxisSystem
         """
 
@@ -200,7 +194,6 @@ class ABQSmoothCoupling(ABQInteraction):
 
         :param Product i_product:
         :param Publication i_publication:
-        :return: None
         :rtype: None
         """
         return self.abq_smooth_coupling.AddSupportFromPublication(i_product.com_object, i_publication.com_object)
@@ -243,7 +236,6 @@ class ABQSmoothCoupling(ABQInteraction):
 
         :param Reference i_reference:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.abq_smooth_coupling.AddSupportFromReference(i_reference.com_object, i_support.com_object)
@@ -273,7 +265,6 @@ class ABQSmoothCoupling(ABQInteraction):
                 | 
                 |     Clears the exclusion regions list.
 
-        :return: None
         :rtype: None
         """
         return self.abq_smooth_coupling.ClearExclusionRegions()
@@ -288,7 +279,6 @@ class ABQSmoothCoupling(ABQInteraction):
                 | 
                 |     Clears the handler.
 
-        :return: None
         :rtype: None
         """
         return self.abq_smooth_coupling.ClearHandler()
@@ -315,7 +305,6 @@ class ABQSmoothCoupling(ABQInteraction):
 
         :param tuple o_products:
         :param tuple o_regions:
-        :return: None
         :rtype: None
         """
         return self.abq_smooth_coupling.GetExclusionRegions(o_products, o_regions)
@@ -355,7 +344,6 @@ class ABQSmoothCoupling(ABQInteraction):
 
         :param Reference o_product:
         :param Reference o_ref:
-        :return: None
         :rtype: None
         """
         return self.abq_smooth_coupling.GetHandler(o_product.com_object, o_ref.com_object)
@@ -399,7 +387,6 @@ class ABQSmoothCoupling(ABQInteraction):
 
         :param Product o_product:
         :param AxisSystem o_pub_axis_system:
-        :return: None
         :rtype: None
         """
         return self.abq_smooth_coupling.GetLocalCsysFromPublication(o_product.com_object, o_pub_axis_system.com_object)
@@ -442,7 +429,6 @@ class ABQSmoothCoupling(ABQInteraction):
 
         :param tuple o_products:
         :param tuple o_supports:
-        :return: None
         :rtype: None
         """
         return self.abq_smooth_coupling.GetSupports(o_products, o_supports)
@@ -489,7 +475,6 @@ class ABQSmoothCoupling(ABQInteraction):
 
         :param tuple i_products:
         :param tuple i_regions:
-        :return: None
         :rtype: None
         """
         return self.abq_smooth_coupling.SetExclusionRegions(i_products, i_regions)
@@ -530,7 +515,6 @@ class ABQSmoothCoupling(ABQInteraction):
 
         :param Reference i_product:
         :param Reference i_ref:
-        :return: None
         :rtype: None
         """
         return self.abq_smooth_coupling.SetHandler(i_product.com_object, i_ref.com_object)
@@ -573,7 +557,6 @@ class ABQSmoothCoupling(ABQInteraction):
 
         :param Product i_product:
         :param Publication i_publication:
-        :return: None
         :rtype: None
         """
         return self.abq_smooth_coupling.SetHandlerFromPublication(i_product.com_object, i_publication.com_object)
@@ -617,7 +600,6 @@ class ABQSmoothCoupling(ABQInteraction):
 
         :param Product i_product:
         :param Publication i_pub_axis_system:
-        :return: None
         :rtype: None
         """
         return self.abq_smooth_coupling.SetLocalCsysFromPublication(i_product.com_object, i_pub_axis_system.com_object)
@@ -662,7 +644,6 @@ class ABQSmoothCoupling(ABQInteraction):
 
         :param tuple i_products:
         :param tuple i_regions:
-        :return: None
         :rtype: None
         """
         return self.abq_smooth_coupling.SetSupports(i_products, i_regions)

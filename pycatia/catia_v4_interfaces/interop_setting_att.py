@@ -77,7 +77,6 @@ class InteropSettingAtt(SettingController):
                 |     read if this data is not labeled. It is stored in the CATIA data to be written
                 |     when saving Version 5 CATPart documents as CATIA Version 4 models.
 
-        :return: str
         :rtype: str
         """
 
@@ -107,7 +106,6 @@ class InteropSettingAtt(SettingController):
                 |     names from V4 names by replacing special characters (", *, /, etc...) by
                 |     standard characters.
 
-        :return: str
         :rtype: str
         """
 
@@ -136,7 +134,6 @@ class InteropSettingAtt(SettingController):
                 |     to decide whether to display or not the elements which were sensitive to the
                 |     shading mode in CATIA Version 4.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -164,7 +161,6 @@ class InteropSettingAtt(SettingController):
                 |     Role: The "Display 3D elements labels" mode is activated in order to enable
                 |     the reading of the 3D text associated to the V4 elements.
 
-        :return: bool
         :rtype: bool
         """
 
@@ -190,7 +186,6 @@ class InteropSettingAtt(SettingController):
                 |     Retrieves or sets the "DLNAME" setting parameter.
                 |     Role: Retrieves the DLNAME referenced by the Model.
 
-        :return: str
         :rtype: str
         """
 
@@ -218,7 +213,6 @@ class InteropSettingAtt(SettingController):
                 |     Role: This mode is activated in order to disable the reading of DRAW data
                 |     in a V4 Model.
 
-        :return: str
         :rtype: str
         """
 
@@ -246,7 +240,6 @@ class InteropSettingAtt(SettingController):
                 |     Role: The "PROJECT File Path" field contains the location of the external
                 |     project file referenced by the V4 model.
 
-        :return: str
         :rtype: str
         """
 
@@ -275,7 +268,6 @@ class InteropSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.interop_setting_att.GetCode_pageInfo(admin_level, o_locked)
@@ -295,7 +287,6 @@ class InteropSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.interop_setting_att.GetConversion_TableInfo(admin_level, o_locked)
@@ -315,7 +306,6 @@ class InteropSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.interop_setting_att.GetDisplayModeInfo(admin_level, o_locked)
@@ -335,7 +325,6 @@ class InteropSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.interop_setting_att.GetDisplayV4Text3DInfo(admin_level, o_locked)
@@ -355,7 +344,6 @@ class InteropSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.interop_setting_att.GetDlnameInfo(admin_level, o_locked)
@@ -375,7 +363,6 @@ class InteropSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.interop_setting_att.GetDrawInfo(admin_level, o_locked)
@@ -395,7 +382,6 @@ class InteropSettingAtt(SettingController):
 
         :param str admin_level:
         :param str o_locked:
-        :return: bool
         :rtype: bool
         """
         return self.interop_setting_att.GetPROJECT_File_PathInfo(admin_level, o_locked)
@@ -413,7 +399,6 @@ class InteropSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.interop_setting_att.SetCode_pageLock(i_lock)
@@ -446,7 +431,6 @@ class InteropSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.interop_setting_att.SetConversion_TableLock(i_lock)
@@ -479,7 +463,6 @@ class InteropSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.interop_setting_att.SetDisplayModeLock(i_lock)
@@ -512,7 +495,6 @@ class InteropSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.interop_setting_att.SetDisplayV4Text3DLock(i_lock)
@@ -544,7 +526,6 @@ class InteropSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.interop_setting_att.SetDlnameLock(i_lock)
@@ -577,7 +558,6 @@ class InteropSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.interop_setting_att.SetDrawLock(i_lock)
@@ -610,7 +590,6 @@ class InteropSettingAtt(SettingController):
                 |     Refer to SettingController for a detailed description.
 
         :param bool i_lock:
-        :return: None
         :rtype: None
         """
         return self.interop_setting_att.SetPROJECT_File_PathLock(i_lock)

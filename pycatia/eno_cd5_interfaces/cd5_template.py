@@ -66,7 +66,6 @@ class CD5Template(AnyObject):
                 |          Dim oName As CATBSTR
                 |          oName = oTemplate.TemplateName
 
-        :return: str
         :rtype: str
         """
 
@@ -90,7 +89,6 @@ class CD5Template(AnyObject):
                 |          Dim oType As CATBSTR
                 |          oType = oTemplate.TemplateType
 
-        :return: str
         :rtype: str
         """
 
@@ -132,7 +130,6 @@ class CD5Template(AnyObject):
                 |          DownloadedFilePath = oTemplate.DownloadFile("E:/New folder")
 
         :param str i_target_folder:
-        :return: str
         :rtype: str
         """
         return self.cd5_template.DownloadFile(i_target_folder)

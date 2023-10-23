@@ -63,7 +63,6 @@ class SchMovable2(AnyObject):
 
         :param float i_db1_rotation_angle_in_radian:
         :param tuple i_db2_center_point:
-        :return: tuple
         :rtype: tuple
         """
         return self.sch_movable2.RotateAtPoint(i_db1_rotation_angle_in_radian, i_db2_center_point)

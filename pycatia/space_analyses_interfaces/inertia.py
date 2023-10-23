@@ -101,7 +101,6 @@ class Inertia(AnyObject):
                 | 
                 |                 NewInertia.Density = 10.
 
-        :return: float
         :rtype: float
         """
 
@@ -159,7 +158,6 @@ class Inertia(AnyObject):
                 | 
                 |                 NewInertia.GranularityMode = 1
 
-        :return: int
         :rtype: int
         """
 
@@ -193,7 +191,6 @@ class Inertia(AnyObject):
                 |             Dim AMass As double
                 |             AMass = NewInertia.Mass
 
-        :return: float
         :rtype: float
         """
 
@@ -228,7 +225,6 @@ class Inertia(AnyObject):
                 |             Dim Coordinates (2)
                 |             NewInertia.GetCOGPosition Coordinates
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -278,7 +274,6 @@ class Inertia(AnyObject):
                 |             Dim Matrix (8)
                 |             NewInertia.GetInertiaMatrix Matrix
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -329,7 +324,6 @@ class Inertia(AnyObject):
                 |             Dim Components (8)
                 |             NewInertia.GetPrincipalAxes Components
 
-        :return: tuple
         :rtype: tuple
         """
         vba_function_name = 'get_principal_axes'
@@ -375,7 +369,6 @@ class Inertia(AnyObject):
                 |             Dim Values (2)
                 |             NewInertia.GetPrincipalMoments Values
 
-        :return: tuple
         :rtype: tuple
         """
 

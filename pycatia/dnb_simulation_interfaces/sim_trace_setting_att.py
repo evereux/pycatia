@@ -117,7 +117,6 @@ class SimTraceSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sim_trace_setting_att.GetTraceAxisColorInfo(io_admin_level, io_locked)
@@ -154,7 +153,6 @@ class SimTraceSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sim_trace_setting_att.GetTraceAxisThickInfo(io_admin_level, io_locked)
@@ -191,7 +189,6 @@ class SimTraceSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sim_trace_setting_att.GetTraceAxisTypeInfo(io_admin_level, io_locked)
@@ -228,7 +225,6 @@ class SimTraceSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sim_trace_setting_att.GetTraceAxisVisuInfo(io_admin_level, io_locked)
@@ -265,7 +261,6 @@ class SimTraceSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sim_trace_setting_att.GetTraceDeletePathInfo(io_admin_level, io_locked)
@@ -302,7 +297,6 @@ class SimTraceSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sim_trace_setting_att.GetTraceLegendInfo(io_admin_level, io_locked)
@@ -339,7 +333,6 @@ class SimTraceSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sim_trace_setting_att.GetTraceLineColorInfo(io_admin_level, io_locked)
@@ -376,7 +369,6 @@ class SimTraceSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sim_trace_setting_att.GetTraceLineThickInfo(io_admin_level, io_locked)
@@ -413,7 +405,6 @@ class SimTraceSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sim_trace_setting_att.GetTraceLineTypeInfo(io_admin_level, io_locked)
@@ -450,7 +441,6 @@ class SimTraceSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sim_trace_setting_att.GetTraceLineVisuInfo(io_admin_level, io_locked)
@@ -487,7 +477,6 @@ class SimTraceSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sim_trace_setting_att.GetTracePointColorInfo(io_admin_level, io_locked)
@@ -524,7 +513,6 @@ class SimTraceSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sim_trace_setting_att.GetTracePointSymbolInfo(io_admin_level, io_locked)
@@ -561,7 +549,6 @@ class SimTraceSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.sim_trace_setting_att.GetTracePointVisuInfo(io_admin_level, io_locked)
@@ -588,7 +575,6 @@ class SimTraceSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sim_trace_setting_att.SetTraceAxisColorLock(i_locked)
@@ -630,7 +616,6 @@ class SimTraceSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sim_trace_setting_att.SetTraceAxisThickLock(i_locked)
@@ -672,7 +657,6 @@ class SimTraceSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sim_trace_setting_att.SetTraceAxisTypeLock(i_locked)
@@ -714,7 +698,6 @@ class SimTraceSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sim_trace_setting_att.SetTraceAxisVisuLock(i_locked)
@@ -756,7 +739,6 @@ class SimTraceSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sim_trace_setting_att.SetTraceDeletePathLock(i_locked)
@@ -798,7 +780,6 @@ class SimTraceSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sim_trace_setting_att.SetTraceLegendLock(i_locked)
@@ -840,7 +821,6 @@ class SimTraceSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sim_trace_setting_att.SetTraceLineColorLock(i_locked)
@@ -882,7 +862,6 @@ class SimTraceSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sim_trace_setting_att.SetTraceLineThickLock(i_locked)
@@ -924,7 +903,6 @@ class SimTraceSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sim_trace_setting_att.SetTraceLineTypeLock(i_locked)
@@ -966,7 +944,6 @@ class SimTraceSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sim_trace_setting_att.SetTraceLineVisuLock(i_locked)
@@ -1008,7 +985,6 @@ class SimTraceSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sim_trace_setting_att.SetTracePointColorLock(i_locked)
@@ -1050,7 +1026,6 @@ class SimTraceSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sim_trace_setting_att.SetTracePointSymbolLock(i_locked)
@@ -1092,7 +1067,6 @@ class SimTraceSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.sim_trace_setting_att.SetTracePointVisuLock(i_locked)

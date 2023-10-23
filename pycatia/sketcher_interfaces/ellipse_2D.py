@@ -54,7 +54,6 @@ class Ellipse2D(Curve2D):
                 |         iCenterPoint
                 |             The center point of the ellipse
 
-        :return: Point2D
         :rtype: Point2D
         """
 
@@ -84,7 +83,6 @@ class Ellipse2D(Curve2D):
                 |         oMajorRadius
                 |             The radius of the major axis
 
-        :return: float
         :rtype: float
         """
 
@@ -106,7 +104,6 @@ class Ellipse2D(Curve2D):
                 |         oMinorRadius
                 |             The radius of the minor axis
 
-        :return: float
         :rtype: float
         """
 
@@ -131,7 +128,6 @@ class Ellipse2D(Curve2D):
                 |             The Y Coordinate of the center point of the
                 |             ellipse
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -165,7 +161,6 @@ class Ellipse2D(Curve2D):
                 |         oMajorAxis[1]
                 |             The length of the major axis
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -199,7 +194,6 @@ class Ellipse2D(Curve2D):
                 |         oMinorAxis[1]
                 |             The length of the major axis
 
-        :return: tuple
         :rtype: tuple
         """
 
@@ -257,7 +251,6 @@ class Ellipse2D(Curve2D):
         :param float i_major_y:
         :param float i_major_radius:
         :param float i_minor_radius:
-        :return: None
         :rtype: None
         """
         return self.ellipse_2d.SetData(i_center_x, i_center_y, i_major_x, i_major_y, i_major_radius, i_minor_radius)

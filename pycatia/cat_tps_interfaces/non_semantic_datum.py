@@ -46,7 +46,6 @@ class NonSemanticDatum(AnyObject):
                 | 
                 |     Retrieves or sets Label.
 
-        :return: str
         :rtype: str
         """
 

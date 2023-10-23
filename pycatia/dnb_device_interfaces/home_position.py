@@ -98,7 +98,6 @@ class HomePosition(AnyObject):
                 |            Next
 
         :param tuple o_tip_list:
-        :return: Product
         :rtype: Product
         """
         return Product(self.home_position.GetAssociatedToolTip(o_tip_list))
@@ -156,7 +155,6 @@ class HomePosition(AnyObject):
                 |            Next
 
         :param tuple o_values:
-        :return: None
         :rtype: None
         """
         return self.home_position.GetDOFValues(o_values)
@@ -211,7 +209,6 @@ class HomePosition(AnyObject):
                 |            MyHomePosition.SetAssociatedToolTip( MyToolTips )
 
         :param tuple i_tip_list:
-        :return: Product
         :rtype: Product
         """
         return Product(self.home_position.SetAssociatedToolTip(i_tip_list))
@@ -262,7 +259,6 @@ class HomePosition(AnyObject):
                 |            homePos.SetDOFValues DOFValues
 
         :param tuple i_values:
-        :return: None
         :rtype: None
         """
         return self.home_position.SetDOFValues(i_values)

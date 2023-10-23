@@ -62,7 +62,6 @@ class SFMProfile(SFMObject):
                 |          Dim AnchorPointName As String
                 |          Set AnchorPointName = SfmProfile.AnchorPoint
 
-        :return: str
         :rtype: str
         """
 
@@ -94,7 +93,6 @@ class SFMProfile(SFMObject):
                 |          Dim Name As String
                 |          Set Name = SfmProfile.SectionName
 
-        :return: str
         :rtype: str
         """
 
@@ -132,7 +130,6 @@ class SFMProfile(SFMObject):
                 |          Dim SplitStiff1 As SfmStiffener
                 |          Set SplitStiff1 = SelctionObj.FindObject("CATIASfmStiffener")
 
-        :return: References
         :rtype: References
         """
 
@@ -156,7 +153,6 @@ class SFMProfile(SFMObject):
                 |          Dim Support As Reference
                 |          Set Support = SfmProfile.Support
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -262,7 +258,6 @@ class SFMProfile(SFMObject):
         :param str i_endcut_name:
         :param SFMReferences i_list_context:
         :param SFMConnectionParameters i_list_parameters:
-        :return: SFMEndcut
         :rtype: SFMEndcut
         """
         return SFMEndcut(
@@ -293,7 +288,6 @@ class SFMProfile(SFMObject):
                 |          SfmProfile.GetEndCoord EndExtr
 
         :param tuple o_coord:
-        :return: None
         :rtype: None
         """
         return self.sfm_profile.GetEndCoord(o_coord)
@@ -340,7 +334,6 @@ class SFMProfile(SFMObject):
                 |              Set EndCutObj = ProfileObj.GetEndcut(1)
 
         :param int i_extremity_index:
-        :return: SFMEndcut
         :rtype: SFMEndcut
         """
         return SFMEndcut(self.sfm_profile.GetEndcut(i_extremity_index))
@@ -373,7 +366,6 @@ class SFMProfile(SFMObject):
                 |              Set ProfileLimit = SuperStiffenerObj.GetProfileLimit(1)
 
         :param int i_extremity_index:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.sfm_profile.GetProfileLimit(i_extremity_index))
@@ -413,7 +405,6 @@ class SFMProfile(SFMObject):
         :param tuple io_vector1:
         :param tuple io_vector2:
         :param tuple io_vector3:
-        :return: None
         :rtype: None
         """
         return self.sfm_profile.GetSectionAxis(
@@ -463,7 +454,6 @@ class SFMProfile(SFMObject):
                 |              Dim SlotsonProfile As SfmSlots
                 |              Set SlotsonProfile = ProfileObj.GetSlotsOnProfile
 
-        :return: SFMSlots
         :rtype: SFMSlots
         """
         return SFMSlots(self.sfm_profile.GetSlotsOnProfile())
@@ -486,7 +476,6 @@ class SFMProfile(SFMObject):
                 |          SfmProfile.GetStartCoord StartExtr
 
         :param tuple o_coord:
-        :return: None
         :rtype: None
         """
         return self.sfm_profile.GetStartCoord(o_coord)
@@ -531,7 +520,6 @@ class SFMProfile(SFMObject):
                 |              Set EndCutObj = ProfileObj.RemoveEndcut(1)
 
         :param int i_extremity_index:
-        :return: None
         :rtype: None
         """
         return self.sfm_profile.RemoveEndcut(i_extremity_index)
@@ -552,7 +540,6 @@ class SFMProfile(SFMObject):
                 | 
                 |          SfmProfile.Run
 
-        :return: None
         :rtype: None
         """
         return self.sfm_profile.Run()
@@ -588,7 +575,6 @@ class SFMProfile(SFMObject):
 
         :param int i_extremity_index:
         :param Reference i_limit:
-        :return: None
         :rtype: None
         """
         return self.sfm_profile.SetProfileLimit(i_extremity_index, i_limit.com_object)

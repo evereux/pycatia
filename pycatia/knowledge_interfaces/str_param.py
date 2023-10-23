@@ -63,7 +63,6 @@ class StrParam(Parameter):
                 | 
                 |          myValue = material.Value
 
-        :return: str
         :rtype: str
         """
 
@@ -99,7 +98,6 @@ class StrParam(Parameter):
                 |          Next
 
         :param tuple o_safe_array:
-        :return: None
         :rtype: None
         """
         return self.str_param.GetEnumerateValues(o_safe_array)
@@ -129,7 +127,6 @@ class StrParam(Parameter):
                 | 
                 |     Returns the number of enumerate values.
 
-        :return: int
         :rtype: int
         """
         return self.str_param.GetEnumerateValuesSize()
@@ -151,7 +148,6 @@ class StrParam(Parameter):
                 |             array of enumerated values.
 
         :param tuple i_safe_array:
-        :return: None
         :rtype: None
         """
         return self.str_param.SetEnumerateValues(i_safe_array)
@@ -181,7 +177,6 @@ class StrParam(Parameter):
                 | 
                 |     Resets the status of the object to a single value object.
 
-        :return: None
         :rtype: None
         """
         return self.str_param.SuppressEnumerateValues()

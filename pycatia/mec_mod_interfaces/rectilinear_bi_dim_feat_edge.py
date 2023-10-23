@@ -70,7 +70,6 @@ class RectilinearBiDimFeatEdge(BiDimFeatEdge):
                 |             The Z Coordinate of the direction
 
         :param tuple o_direction:
-        :return: None
         :rtype: None
         """
         return self.rectilinear_bi_dim_feat_edge.GetDirection(o_direction)
@@ -110,7 +109,6 @@ class RectilinearBiDimFeatEdge(BiDimFeatEdge):
                 |             The Z Coordinate of the rectilinear edge origin
 
         :param tuple o_origin:
-        :return: None
         :rtype: None
         """
         return self.rectilinear_bi_dim_feat_edge.GetOrigin(o_origin)

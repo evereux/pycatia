@@ -66,7 +66,6 @@ class CD5Structure(AnyObject):
                 |          Set oCD5Structure = oCD5Engine.GetStructure(iRootCD5ID)
                 |          Set oDummyCD5ID = oCD5Structure.GetRoot()
 
-        :return: CD5ID
         :rtype: CD5ID
         """
         return CD5ID(self.cd5_structure.GetRoot())
@@ -102,7 +101,6 @@ class CD5Structure(AnyObject):
                 |          oCD5Structure.Include(iIncludedCD5ID)
 
         :param CD5ID i_id:
-        :return: None
         :rtype: None
         """
         return self.cd5_structure.Include(i_id.com_object)

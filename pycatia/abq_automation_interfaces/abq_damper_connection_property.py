@@ -54,7 +54,6 @@ class ABQDamperConnectionProperty(ABQProperty):
                 |     Returns:
                 |         The object of axis system.
 
-        :return: AxisSystem
         :rtype: AxisSystem
         """
 
@@ -87,7 +86,6 @@ class ABQDamperConnectionProperty(ABQProperty):
                 |         ABQ_LINE
                 |         ABQ_NON_LINEAR
 
-        :return: int
         :rtype: int
         """
 
@@ -120,7 +118,6 @@ class ABQDamperConnectionProperty(ABQProperty):
                 |         AXIAL
                 |         GENERAL
 
-        :return: int
         :rtype: int
         """
 
@@ -158,7 +155,6 @@ class ABQDamperConnectionProperty(ABQProperty):
 
         :param Reference i_reference:
         :param Reference i_support:
-        :return: None
         :rtype: None
         """
         return self.abq_damper_connection_property.AddSupportFromReference(i_reference.com_object, i_support.com_object)
@@ -208,7 +204,6 @@ class ABQDamperConnectionProperty(ABQProperty):
                 |             The Dampingvalue.
 
         :param int i_dof:
-        :return: float
         :rtype: float
         """
         return self.abq_damper_connection_property.GetLinearDamping(i_dof)
@@ -251,7 +246,6 @@ class ABQDamperConnectionProperty(ABQProperty):
         :param int i_dof:
         :param tuple o_force_array:
         :param tuple o_velocity_array:
-        :return: None
         :rtype: None
         """
         return self.abq_damper_connection_property.GetNonLinearDamping(i_dof, o_force_array, o_velocity_array)
@@ -305,7 +299,6 @@ class ABQDamperConnectionProperty(ABQProperty):
 
         :param int i_dof:
         :param str i_file_name:
-        :return: None
         :rtype: None
         """
         return self.abq_damper_connection_property.ReadDampingDataFromFile(i_dof, i_file_name)
@@ -318,7 +311,6 @@ class ABQDamperConnectionProperty(ABQProperty):
             CAA V5 Visual Basic Help (2020-09-25 14:34:21.593357))
                 | o Sub RemoveAxisSystem()
 
-        :return: None
         :rtype: None
         """
         return self.abq_damper_connection_property.RemoveAxisSystem()
@@ -350,7 +342,6 @@ class ABQDamperConnectionProperty(ABQProperty):
                 |             UR3_DOF
 
         :param int i_dof:
-        :return: None
         :rtype: None
         """
         return self.abq_damper_connection_property.RemoveDof(i_dof)
@@ -387,7 +378,6 @@ class ABQDamperConnectionProperty(ABQProperty):
 
         :param int i_dof:
         :param float i_damping_value:
-        :return: None
         :rtype: None
         """
         return self.abq_damper_connection_property.SetLinearDamping(i_dof, i_damping_value)
@@ -432,7 +422,6 @@ class ABQDamperConnectionProperty(ABQProperty):
         :param int i_dof:
         :param tuple i_force_array:
         :param tuple i_velocity_array:
-        :return: None
         :rtype: None
         """
         return self.abq_damper_connection_property.SetNonLinearDamping(i_dof, i_force_array, i_velocity_array)

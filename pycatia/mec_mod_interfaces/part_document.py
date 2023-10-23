@@ -65,7 +65,6 @@ class PartDocument(Document):
                 | 
                 |          Set RootPart = CATIA.ActiveDocument.Part
 
-        :return: Part
         :rtype: Part
         """
 
@@ -89,7 +88,6 @@ class PartDocument(Document):
                 | 
                 |          Set RootProd = CATIA.ActiveDocument.Part
 
-        :return: Product
         :rtype: Product
         """
 

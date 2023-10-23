@@ -62,7 +62,6 @@ class GenericAccuracyProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param int accuracy:
-        :return: None
         :rtype: None
         """
         return self.generic_accuracy_profile.GetAccuracyType(accuracy)
@@ -90,7 +89,6 @@ class GenericAccuracyProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param float value:
-        :return: None
         :rtype: None
         """
         return self.generic_accuracy_profile.GetAccuracyValue(value)
@@ -118,7 +116,6 @@ class GenericAccuracyProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param RobGenericController o_controller:
-        :return: None
         :rtype: None
         """
         return self.generic_accuracy_profile.GetController(o_controller.com_object)
@@ -161,7 +158,6 @@ class GenericAccuracyProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param bool o_mode:
-        :return: None
         :rtype: None
         """
         return self.generic_accuracy_profile.GetFlyByMode(o_mode)
@@ -204,7 +200,6 @@ class GenericAccuracyProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param str o_name:
-        :return: None
         :rtype: None
         """
         return self.generic_accuracy_profile.GetName(o_name)
@@ -233,7 +228,6 @@ class GenericAccuracyProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param int accuracy:
-        :return: None
         :rtype: None
         """
         return self.generic_accuracy_profile.SetAccuracyType(accuracy)
@@ -262,7 +256,6 @@ class GenericAccuracyProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param float value:
-        :return: None
         :rtype: None
         """
         return self.generic_accuracy_profile.SetAccuracyValue(value)
@@ -290,7 +283,6 @@ class GenericAccuracyProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param bool i_mode:
-        :return: None
         :rtype: None
         """
         return self.generic_accuracy_profile.SetFlyByMode(i_mode)
@@ -333,7 +325,6 @@ class GenericAccuracyProfile(AnyObject):
                 |             E_FAIL otherwise
 
         :param str i_name:
-        :return: None
         :rtype: None
         """
         return self.generic_accuracy_profile.SetName(i_name)

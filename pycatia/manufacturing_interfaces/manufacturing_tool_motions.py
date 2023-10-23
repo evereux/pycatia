@@ -53,7 +53,6 @@ class MFGToolMotions(Collection):
                 |          ListToolMotions.Add(ThisToolMotion)
 
         :param ManufacturingToolMotion i_real_obj:
-        :return: None
         :rtype: None
         """
         return self.mfg_tool_motions.Add(i_real_obj.com_object)
@@ -92,7 +91,6 @@ class MFGToolMotions(Collection):
                 |          Set ThisToolMotion = ListToolMotions.GetElement(Numpos)
 
         :param int i_index:
-        :return: ManufacturingToolMotion
         :rtype: ManufacturingToolMotion
         """
         return ManufacturingToolMotion(self.mfg_tool_motions.GetElement(i_index))

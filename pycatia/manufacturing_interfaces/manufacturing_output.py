@@ -51,7 +51,6 @@ class ManufacturingOutput(AnyObject):
                 |         oBytes
                 |             The integer value of the number of bytes
 
-        :return: int
         :rtype: int
         """
 
@@ -67,7 +66,6 @@ class ManufacturingOutput(AnyObject):
                 | 
                 |     Close the Stream.
 
-        :return: None
         :rtype: None
         """
         return self.manufacturing_output.CloseStream()
@@ -84,7 +82,6 @@ class ManufacturingOutput(AnyObject):
                 |     number of characters.
 
         :param int i_tab:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_output.DecrementTabulation(i_tab)
@@ -99,7 +96,6 @@ class ManufacturingOutput(AnyObject):
                 | 
                 |     Specify that the Block is ended.
 
-        :return: None
         :rtype: None
         """
         return self.manufacturing_output.EndBlock()
@@ -114,7 +110,6 @@ class ManufacturingOutput(AnyObject):
                 | 
                 |     Specify that the line is ended.
 
-        :return: None
         :rtype: None
         """
         return self.manufacturing_output.EndLine()
@@ -129,7 +124,6 @@ class ManufacturingOutput(AnyObject):
                 | 
                 |     Flush all Data in the Stream.
 
-        :return: None
         :rtype: None
         """
         return self.manufacturing_output.Flush()
@@ -146,7 +140,6 @@ class ManufacturingOutput(AnyObject):
                 |     number of characters.
 
         :param int i_tab:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_output.IncrementTabulation(i_tab)
@@ -161,7 +154,6 @@ class ManufacturingOutput(AnyObject):
                 | 
                 |     Create a New Block in the underlying output stream.
 
-        :return: None
         :rtype: None
         """
         return self.manufacturing_output.NewBlock()
@@ -176,7 +168,6 @@ class ManufacturingOutput(AnyObject):
                 | 
                 |     Create a New Line in the underlying output stream.
 
-        :return: None
         :rtype: None
         """
         return self.manufacturing_output.NewLine()
@@ -198,7 +189,6 @@ class ManufacturingOutput(AnyObject):
                 |             The integer value of the number of lines
 
         :param int i_lines:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_output.SetBufferLength(i_lines)
@@ -214,7 +204,6 @@ class ManufacturingOutput(AnyObject):
                 |     Write the specified string to the underlying output stream.
 
         :param str i_text:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_output.write_Chars(i_text)
@@ -230,7 +219,6 @@ class ManufacturingOutput(AnyObject):
                 |     Write the specified double to the underlying output stream.
 
         :param float i_val:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_output.write_Double(i_val)
@@ -246,7 +234,6 @@ class ManufacturingOutput(AnyObject):
                 |     Write the specified long to the underlying output stream.
 
         :param int i_val:
-        :return: None
         :rtype: None
         """
         return self.manufacturing_output.write_Long(i_val)

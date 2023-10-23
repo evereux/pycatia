@@ -65,7 +65,6 @@ class PSPLightConnector(AnyObject):
                 |          Set objArg2 = objThisIntf.GetAlignmentVector (objArg1)
 
         :param Product i_rel_axis:
-        :return: PSPListOfDoubles
         :rtype: PSPListOfDoubles
         """
         return PSPListOfDoubles(self.psp_light_connector.GetAlignmentVector(i_rel_axis.com_object))
@@ -99,7 +98,6 @@ class PSPLightConnector(AnyObject):
                 |          Set objArg2 = objThisIntf.GetOrientationVector (objArg1)
 
         :param Product i_rel_axis:
-        :return: PSPListOfDoubles
         :rtype: PSPListOfDoubles
         """
         return PSPListOfDoubles(self.psp_light_connector.GetOrientationVector(i_rel_axis.com_object))
@@ -131,7 +129,6 @@ class PSPLightConnector(AnyObject):
                 |          Set objArg2 = objThisIntf.GetOrigin (objArg1)
 
         :param Product i_rel_axis:
-        :return: PSPListOfDoubles
         :rtype: PSPListOfDoubles
         """
         return PSPListOfDoubles(self.psp_light_connector.GetOrigin(i_rel_axis.com_object))
@@ -166,7 +163,6 @@ class PSPLightConnector(AnyObject):
 
         :param Product i_rel_axis:
         :param tuple i_alignment_direction:
-        :return: tuple
         :rtype: tuple
         """
         return self.psp_light_connector.SetAlignmentVector(i_rel_axis.com_object, i_alignment_direction)
@@ -216,7 +212,6 @@ class PSPLightConnector(AnyObject):
 
         :param Product i_rel_axis:
         :param tuple i_orientation_direction:
-        :return: tuple
         :rtype: tuple
         """
         return self.psp_light_connector.SetOrientationVector(i_rel_axis.com_object, i_orientation_direction)
@@ -266,7 +261,6 @@ class PSPLightConnector(AnyObject):
 
         :param Product i_rel_axis:
         :param tuple i_db3_position:
-        :return: tuple
         :rtype: tuple
         """
         return self.psp_light_connector.SetOrigin(i_rel_axis.com_object, i_db3_position)

@@ -45,7 +45,6 @@ class MultiCADSettingAtt(SettingController):
                 | 
                 |     Returns or sets the Annotation 3D mode R18sp3 on env. variable
 
-        :return: bool
         :rtype: bool
         """
 
@@ -70,7 +69,6 @@ class MultiCADSettingAtt(SettingController):
                 | 
                 |     Returns or sets the Conversion Technology
 
-        :return: int
         :rtype: int
         """
 
@@ -95,7 +93,6 @@ class MultiCADSettingAtt(SettingController):
                 | 
                 |     Returns or sets the Link Mode
 
-        :return: int
         :rtype: int
         """
 
@@ -120,7 +117,6 @@ class MultiCADSettingAtt(SettingController):
                 | 
                 |     Returns or sets the Output Path
 
-        :return: str
         :rtype: str
         """
 
@@ -145,7 +141,6 @@ class MultiCADSettingAtt(SettingController):
                 | 
                 |     Returns or sets the parts parameterization mode
 
-        :return: int
         :rtype: int
         """
 
@@ -170,7 +165,6 @@ class MultiCADSettingAtt(SettingController):
                 | 
                 |     Returns or sets the ProEInstanceMode
 
-        :return: bool
         :rtype: bool
         """
 
@@ -195,7 +189,6 @@ class MultiCADSettingAtt(SettingController):
                 | 
                 |     Returns or sets the ProEInstanceName
 
-        :return: str
         :rtype: str
         """
 
@@ -220,7 +213,6 @@ class MultiCADSettingAtt(SettingController):
                 | 
                 |     Returns or sets the ProEQuiltsRead
 
-        :return: bool
         :rtype: bool
         """
 
@@ -245,7 +237,6 @@ class MultiCADSettingAtt(SettingController):
                 | 
                 |     Returns or sets the ProESimpRepMode
 
-        :return: bool
         :rtype: bool
         """
 
@@ -270,7 +261,6 @@ class MultiCADSettingAtt(SettingController):
                 | 
                 |     Returns or sets the ProESimpRepName
 
-        :return: str
         :rtype: str
         """
 
@@ -295,7 +285,6 @@ class MultiCADSettingAtt(SettingController):
                 | 
                 |     Returns or sets the Save Coordinate Systems in CGR
 
-        :return: bool
         :rtype: bool
         """
 
@@ -320,7 +309,6 @@ class MultiCADSettingAtt(SettingController):
                 | 
                 |     Returns or sets the Translator mode
 
-        :return: int
         :rtype: int
         """
 
@@ -345,7 +333,6 @@ class MultiCADSettingAtt(SettingController):
                 | 
                 |     Returns or sets the UGActiveLayersOnly
 
-        :return: bool
         :rtype: bool
         """
 
@@ -370,7 +357,6 @@ class MultiCADSettingAtt(SettingController):
                 | 
                 |     Returns or sets the UGDrawingName
 
-        :return: str
         :rtype: str
         """
 
@@ -395,7 +381,6 @@ class MultiCADSettingAtt(SettingController):
                 | 
                 |     Returns or sets the UGLayerNumbers
 
-        :return: str
         :rtype: str
         """
 
@@ -420,7 +405,6 @@ class MultiCADSettingAtt(SettingController):
                 | 
                 |     Returns or sets the UGOpenSurfaces
 
-        :return: bool
         :rtype: bool
         """
 
@@ -445,7 +429,6 @@ class MultiCADSettingAtt(SettingController):
                 | 
                 |     Returns or sets the UgReferenceSet
 
-        :return: str
         :rtype: str
         """
 
@@ -471,7 +454,6 @@ class MultiCADSettingAtt(SettingController):
                 |     Returns or sets the Unit for Visu Format (number of milimeters per unit of
                 |     the file)
 
-        :return: float
         :rtype: float
         """
 
@@ -517,7 +499,6 @@ class MultiCADSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.multi_cad_setting_att.GetAnnotation3DModeInfo(io_admin_level, io_locked)
@@ -554,7 +535,6 @@ class MultiCADSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.multi_cad_setting_att.GetConversionTechnologyInfo(io_admin_level, io_locked)
@@ -591,7 +571,6 @@ class MultiCADSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.multi_cad_setting_att.GetLinkModeInfo(io_admin_level, io_locked)
@@ -628,7 +607,6 @@ class MultiCADSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.multi_cad_setting_att.GetOutputPathInfo(io_admin_level, io_locked)
@@ -665,7 +643,6 @@ class MultiCADSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.multi_cad_setting_att.GetPartsParameterModeInfo(io_admin_level, io_locked)
@@ -702,7 +679,6 @@ class MultiCADSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.multi_cad_setting_att.GetProEInstanceModeInfo(io_admin_level, io_locked)
@@ -739,7 +715,6 @@ class MultiCADSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.multi_cad_setting_att.GetProEInstanceNameInfo(io_admin_level, io_locked)
@@ -776,7 +751,6 @@ class MultiCADSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.multi_cad_setting_att.GetProEQuiltsReadInfo(io_admin_level, io_locked)
@@ -813,7 +787,6 @@ class MultiCADSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.multi_cad_setting_att.GetProESimpRepModeInfo(io_admin_level, io_locked)
@@ -850,7 +823,6 @@ class MultiCADSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.multi_cad_setting_att.GetProESimpRepNameInfo(io_admin_level, io_locked)
@@ -887,7 +859,6 @@ class MultiCADSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.multi_cad_setting_att.GetSaveCoorsysInCgrInfo(io_admin_level, io_locked)
@@ -924,7 +895,6 @@ class MultiCADSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.multi_cad_setting_att.GetTranslatorModeInfo(io_admin_level, io_locked)
@@ -961,7 +931,6 @@ class MultiCADSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.multi_cad_setting_att.GetUGActiveLayersOnlyInfo(io_admin_level, io_locked)
@@ -998,7 +967,6 @@ class MultiCADSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.multi_cad_setting_att.GetUGDrawingNameInfo(io_admin_level, io_locked)
@@ -1035,7 +1003,6 @@ class MultiCADSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.multi_cad_setting_att.GetUGLayerNumbersInfo(io_admin_level, io_locked)
@@ -1072,7 +1039,6 @@ class MultiCADSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.multi_cad_setting_att.GetUGOpenSurfacesInfo(io_admin_level, io_locked)
@@ -1109,7 +1075,6 @@ class MultiCADSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.multi_cad_setting_att.GetUgReferenceSetInfo(io_admin_level, io_locked)
@@ -1146,7 +1111,6 @@ class MultiCADSettingAtt(SettingController):
 
         :param str io_admin_level:
         :param str io_locked:
-        :return: bool
         :rtype: bool
         """
         return self.multi_cad_setting_att.GetVisuFormatUnitInfo(io_admin_level, io_locked)
@@ -1173,7 +1137,6 @@ class MultiCADSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.multi_cad_setting_att.SetAnnotation3DModeLock(i_locked)
@@ -1215,7 +1178,6 @@ class MultiCADSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.multi_cad_setting_att.SetConversionTechnologyLock(i_locked)
@@ -1257,7 +1219,6 @@ class MultiCADSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.multi_cad_setting_att.SetLinkModeLock(i_locked)
@@ -1299,7 +1260,6 @@ class MultiCADSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.multi_cad_setting_att.SetOutputPathLock(i_locked)
@@ -1341,7 +1301,6 @@ class MultiCADSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.multi_cad_setting_att.SetPartsParameterModeLock(i_locked)
@@ -1383,7 +1342,6 @@ class MultiCADSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.multi_cad_setting_att.SetProEInstanceModeLock(i_locked)
@@ -1425,7 +1383,6 @@ class MultiCADSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.multi_cad_setting_att.SetProEInstanceNameLock(i_locked)
@@ -1467,7 +1424,6 @@ class MultiCADSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.multi_cad_setting_att.SetProEQuiltsReadLock(i_locked)
@@ -1509,7 +1465,6 @@ class MultiCADSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.multi_cad_setting_att.SetProESimpRepModeLock(i_locked)
@@ -1551,7 +1506,6 @@ class MultiCADSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.multi_cad_setting_att.SetProESimpRepNameLock(i_locked)
@@ -1593,7 +1547,6 @@ class MultiCADSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.multi_cad_setting_att.SetSaveCoorsysInCgrLock(i_locked)
@@ -1635,7 +1588,6 @@ class MultiCADSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.multi_cad_setting_att.SetTranslatorModeLock(i_locked)
@@ -1677,7 +1629,6 @@ class MultiCADSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.multi_cad_setting_att.SetUGActiveLayersOnlyLock(i_locked)
@@ -1719,7 +1670,6 @@ class MultiCADSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.multi_cad_setting_att.SetUGDrawingNameLock(i_locked)
@@ -1761,7 +1711,6 @@ class MultiCADSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.multi_cad_setting_att.SetUGLayerNumbersLock(i_locked)
@@ -1803,7 +1752,6 @@ class MultiCADSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.multi_cad_setting_att.SetUGOpenSurfacesLock(i_locked)
@@ -1845,7 +1793,6 @@ class MultiCADSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.multi_cad_setting_att.SetUgReferenceSetLock(i_locked)
@@ -1887,7 +1834,6 @@ class MultiCADSettingAtt(SettingController):
                 |             FALSE: to unlock the parameter.
 
         :param bool i_locked:
-        :return: None
         :rtype: None
         """
         return self.multi_cad_setting_att.SetVisuFormatUnitLock(i_locked)

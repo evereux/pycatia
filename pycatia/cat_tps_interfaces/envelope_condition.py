@@ -45,7 +45,6 @@ class EnvelopeCondition(AnyObject):
                 | 
                 |     Retrieves Envelop Condition modifier.
 
-        :return: str
         :rtype: str
         """
 

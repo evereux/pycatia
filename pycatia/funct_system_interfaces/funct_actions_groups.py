@@ -57,7 +57,6 @@ class FunctActionsGroups(Collection):
         :param float i_input_y:
         :param float i_output_x:
         :param float i_output_y:
-        :return: FunctActionsGroup
         :rtype: FunctActionsGroup
         """
         return FunctActionsGroup(self.funct_actions_groups.Create(i_name, i_input_x, i_input_y, i_output_x, i_output_y))
@@ -73,7 +72,6 @@ class FunctActionsGroups(Collection):
                 |     Delete a Group of Actions.
 
         :param FunctActionsGroup i_act_grp:
-        :return: None
         :rtype: None
         """
         return self.funct_actions_groups.Delete(i_act_grp.com_object)
@@ -128,7 +126,6 @@ class FunctActionsGroups(Collection):
                 |          Set AG2 = ActionsGroups.Elem("Transmission")
 
         :param cat_variant i_index:
-        :return: FunctActionsGroup
         :rtype: FunctActionsGroup
         """
         return FunctActionsGroup(self.funct_actions_groups.Elem(i_index))

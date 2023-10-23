@@ -51,7 +51,6 @@ class MoveToPostureActivity(WorkerActivity):
                 | 
                 |     Returns or Sets Acceleration Percentage
 
-        :return: float
         :rtype: float
         """
 
@@ -76,7 +75,6 @@ class MoveToPostureActivity(WorkerActivity):
                 | 
                 |     Returns or Sets Corner Rounding
 
-        :return: float
         :rtype: float
         """
 
@@ -102,7 +100,6 @@ class MoveToPostureActivity(WorkerActivity):
                 |     Returns or Sets Motion-Basis (see HTSMotionBasis for list of possible
                 |     values)
 
-        :return: int
         :rtype: int
         """
 
@@ -128,7 +125,6 @@ class MoveToPostureActivity(WorkerActivity):
                 |     Returns or Sets Manikin Referential (see HTSManikinReferential for list of
                 |     possible values)
 
-        :return: int
         :rtype: int
         """
 
@@ -153,7 +149,6 @@ class MoveToPostureActivity(WorkerActivity):
                 | 
                 |     Returns or Sets Speed Percentage
 
-        :return: float
         :rtype: float
         """
 
@@ -185,7 +180,6 @@ class MoveToPostureActivity(WorkerActivity):
                 |         SWKIKConstraint for list of possible values)
 
         :param SWKIKConstraint pi_constraint:
-        :return: None
         :rtype: None
         """
         return self.move_to_posture_activity.AddConstraint(pi_constraint.com_object)
@@ -216,7 +210,6 @@ class MoveToPostureActivity(WorkerActivity):
                 |     Set the MoveToPosture(MTP) Activity's DegreeOfFreedom(DOF) values onto
                 |     Manikin (which owns this MTP activity).
 
-        :return: None
         :rtype: None
         """
         return self.move_to_posture_activity.ApplyPostureToManikin()
@@ -241,7 +234,6 @@ class MoveToPostureActivity(WorkerActivity):
                 |         of possible values)
 
         :param int i_index:
-        :return: SWKIKConstraint
         :rtype: SWKIKConstraint
         """
         return SWKIKConstraint(self.move_to_posture_activity.GetConstraint(i_index))
@@ -264,7 +256,6 @@ class MoveToPostureActivity(WorkerActivity):
                 |             Joint Values
 
         :param tuple o_joint_vals:
-        :return: None
         :rtype: None
         """
         return self.move_to_posture_activity.GetJointValues(o_joint_vals)
@@ -298,7 +289,6 @@ class MoveToPostureActivity(WorkerActivity):
                 |     Returns:
                 |         iNumber Number of Constraints
 
-        :return: int
         :rtype: int
         """
         return self.move_to_posture_activity.GetNumberOfConstraints()
@@ -318,7 +308,6 @@ class MoveToPostureActivity(WorkerActivity):
         :param int e_ee:
         :param Product o_product:
         :param tuple o_offset_trans:
-        :return: bool
         :rtype: bool
         """
         return self.move_to_posture_activity.GetPartRelation(e_ee, o_product.com_object, o_offset_trans)
@@ -341,7 +330,6 @@ class MoveToPostureActivity(WorkerActivity):
                 |             origin point.
 
         :param tuple o_trans_matrix:
-        :return: None
         :rtype: None
         """
         return self.move_to_posture_activity.GetPosition(o_trans_matrix)
@@ -378,7 +366,6 @@ class MoveToPostureActivity(WorkerActivity):
                 |             Posture values
 
         :param tuple o_pos_vals:
-        :return: None
         :rtype: None
         """
         return self.move_to_posture_activity.GetPostureValues(o_pos_vals)
@@ -419,7 +406,6 @@ class MoveToPostureActivity(WorkerActivity):
 
         :param str in_seg_name:
         :param tuple o_dof_vals:
-        :return: None
         :rtype: None
         """
         return self.move_to_posture_activity.GetSegmentValues(in_seg_name, o_dof_vals)
@@ -449,7 +435,6 @@ class MoveToPostureActivity(WorkerActivity):
                 | 
                 |     DEPRECATED. DO NOT USE
 
-        :return: bool
         :rtype: bool
         """
         return self.move_to_posture_activity.HasPartRelation()
@@ -472,7 +457,6 @@ class MoveToPostureActivity(WorkerActivity):
                 |         SWKIKConstraint for list of possible values)
 
         :param SWKIKConstraint pi_constraint:
-        :return: None
         :rtype: None
         """
         return self.move_to_posture_activity.RemoveConstraint(pi_constraint.com_object)
@@ -502,7 +486,6 @@ class MoveToPostureActivity(WorkerActivity):
                 | 
                 |     Set the current Constraints existing on Manikin onto MoveToPosture activity
 
-        :return: None
         :rtype: None
         """
         return self.move_to_posture_activity.SetCurrentConstraintSet()
@@ -525,7 +508,6 @@ class MoveToPostureActivity(WorkerActivity):
                 |             Joint Values
 
         :param tuple o_joint_vals:
-        :return: None
         :rtype: None
         """
         return self.move_to_posture_activity.SetJointValues(o_joint_vals)
@@ -558,7 +540,6 @@ class MoveToPostureActivity(WorkerActivity):
 
         :param int e_ee:
         :param Product o_product:
-        :return: None
         :rtype: None
         """
         return self.move_to_posture_activity.SetPartRelation(e_ee, o_product.com_object)
@@ -593,7 +574,6 @@ class MoveToPostureActivity(WorkerActivity):
         :param int e_ee:
         :param Product o_product:
         :param tuple o_offset_trans:
-        :return: None
         :rtype: None
         """
         return self.move_to_posture_activity.SetPartRelationWithOffset(e_ee, o_product.com_object, o_offset_trans)
@@ -659,7 +639,6 @@ class MoveToPostureActivity(WorkerActivity):
                 |          oMTP.SetPosition(oTransMatrix)
 
         :param tuple o_trans_matrix:
-        :return: None
         :rtype: None
         """
         return self.move_to_posture_activity.SetPosition(o_trans_matrix)
@@ -695,7 +674,6 @@ class MoveToPostureActivity(WorkerActivity):
                 |             Posture values
 
         :param tuple o_pos_vals:
-        :return: None
         :rtype: None
         """
         return self.move_to_posture_activity.SetPostureValues(o_pos_vals)
@@ -736,7 +714,6 @@ class MoveToPostureActivity(WorkerActivity):
 
         :param str in_seg_name:
         :param tuple o_dof_vals:
-        :return: None
         :rtype: None
         """
         return self.move_to_posture_activity.SetSegmentValues(in_seg_name, o_dof_vals)

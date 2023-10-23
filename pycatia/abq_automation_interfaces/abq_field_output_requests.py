@@ -61,7 +61,6 @@ class ABQFieldOutputRequests(Collection):
                 |          Dim abqFieldOutputRequest As ABQFieldOutputRequest
                 |          Set abqFieldOutputRequest =  abqFieldOutputRequests.Add()
 
-        :return: ABQFieldOutputRequest
         :rtype: ABQFieldOutputRequest
         """
         return ABQFieldOutputRequest(self.abq_field_output_requests.Add())
@@ -92,7 +91,6 @@ class ABQFieldOutputRequests(Collection):
                 |         The specified ABQFieldOutputRequest.
 
         :param cat_variant i_index:
-        :return: ABQFieldOutputRequest
         :rtype: ABQFieldOutputRequest
         """
         return ABQFieldOutputRequest(self.abq_field_output_requests.Item(i_index))
@@ -119,7 +117,6 @@ class ABQFieldOutputRequests(Collection):
                 |             request using the CATIABase::Name property.
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.abq_field_output_requests.Remove(i_index)

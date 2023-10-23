@@ -49,7 +49,6 @@ class RenderingLight(AnyObject):
                 |     1: light is on
                 |     0: light is off
 
-        :return: int
         :rtype: int
         """
 
@@ -74,7 +73,6 @@ class RenderingLight(AnyObject):
                 | 
                 |     Returns or sets the light ambient intensity of a light.
 
-        :return: float
         :rtype: float
         """
 
@@ -100,7 +98,6 @@ class RenderingLight(AnyObject):
                 |     Returns or sets the light angle of a spot light.
                 |     The angle ranges from 0. (directional light) to 360. (point light).
 
-        :return: float
         :rtype: float
         """
 
@@ -125,7 +122,6 @@ class RenderingLight(AnyObject):
                 | 
                 |     Changes the number of samples taken in U direction of the area source.
 
-        :return: int
         :rtype: int
         """
 
@@ -150,7 +146,6 @@ class RenderingLight(AnyObject):
                 | 
                 |     Changes the number of samples taken in V direction of the area source.
 
-        :return: int
         :rtype: int
         """
 
@@ -178,7 +173,6 @@ class RenderingLight(AnyObject):
                 |     1: light area is rendered
                 |     0: light area is not rendered
 
-        :return: int
         :rtype: int
         """
 
@@ -207,7 +201,6 @@ class RenderingLight(AnyObject):
                 |     The ratio ranges from 0. (attenuation starts when angle is null) to 1.
                 |     (attenuation starts when angle is maximum = no angle attenuation).
 
-        :return: float
         :rtype: float
         """
 
@@ -236,7 +229,6 @@ class RenderingLight(AnyObject):
                 |     The ratio ranges from 0. (attenuation starts at the origin) to 1.
                 |     (attenuation starts at the end distance = no attenuation).
 
-        :return: float
         :rtype: float
         """
 
@@ -262,7 +254,6 @@ class RenderingLight(AnyObject):
                 |     Changes the maximum number of caustic photons to emit from the light
                 |     source.
 
-        :return: int
         :rtype: int
         """
 
@@ -287,7 +278,6 @@ class RenderingLight(AnyObject):
                 | 
                 |     Returns or sets the cylinder light area radius.
 
-        :return: float
         :rtype: float
         """
 
@@ -312,7 +302,6 @@ class RenderingLight(AnyObject):
                 | 
                 |     Returns or sets the cylinder light area radius.
 
-        :return: float
         :rtype: float
         """
 
@@ -337,7 +326,6 @@ class RenderingLight(AnyObject):
                 | 
                 |     Returns or sets the light diffuse intensity of a light.
 
-        :return: float
         :rtype: float
         """
 
@@ -362,7 +350,6 @@ class RenderingLight(AnyObject):
                 | 
                 |     Returns or sets the disk light area radius.
 
-        :return: float
         :rtype: float
         """
 
@@ -390,7 +377,6 @@ class RenderingLight(AnyObject):
                 |     The light illuminates from its origin to its end distance. Objects farther
                 |     than this distance are not affected by the light.
 
-        :return: float
         :rtype: float
         """
 
@@ -415,7 +401,6 @@ class RenderingLight(AnyObject):
                 | 
                 |     Changes the factor for indirect illumination energy.
 
-        :return: float
         :rtype: float
         """
 
@@ -444,7 +429,6 @@ class RenderingLight(AnyObject):
                 |     An exponent of 1 means that the light energy fall off is linear.
                 |     An exponent of 2 is physically correct.
 
-        :return: int
         :rtype: int
         """
 
@@ -470,7 +454,6 @@ class RenderingLight(AnyObject):
                 |     Changes the maximum number of global illumination photons to emit from the
                 |     light source.
 
-        :return: int
         :rtype: int
         """
 
@@ -497,7 +480,6 @@ class RenderingLight(AnyObject):
                 |     It is an integer in the scale 0 to 10 It represents the cleanliness of the
                 |     shadow limits
 
-        :return: int
         :rtype: int
         """
 
@@ -528,7 +510,6 @@ class RenderingLight(AnyObject):
                 |     The shadow status on environmemt can be activate only with a directional
                 |     light
 
-        :return: int
         :rtype: int
         """
 
@@ -554,7 +535,6 @@ class RenderingLight(AnyObject):
                 |     Returns or sets the light shadow transparency.
                 |     It is a float in the scale 0.0(no transparency) to 1.0 (full transparency)
 
-        :return: float
         :rtype: float
         """
 
@@ -582,7 +562,6 @@ class RenderingLight(AnyObject):
                 |     1: indirect illumination is enabled
                 |     0: indirect illumination is disabled
 
-        :return: int
         :rtype: int
         """
 
@@ -607,7 +586,6 @@ class RenderingLight(AnyObject):
                 | 
                 |     Returns or sets the light intensity of a light.
 
-        :return: float
         :rtype: float
         """
 
@@ -639,7 +617,6 @@ class RenderingLight(AnyObject):
                 |         4: CATSphere
                 |         5: CATCylinder
 
-        :return: int
         :rtype: int
         """
 
@@ -668,7 +645,6 @@ class RenderingLight(AnyObject):
                 |         1: Light is linked to the viewpoint
                 |         2: Light is linked to the model
 
-        :return: int
         :rtype: int
         """
 
@@ -693,7 +669,6 @@ class RenderingLight(AnyObject):
                 | 
                 |     Returns or sets the light area length.
 
-        :return: float
         :rtype: float
         """
 
@@ -718,7 +693,6 @@ class RenderingLight(AnyObject):
                 | 
                 |     Returns or sets the light area width.
 
-        :return: float
         :rtype: float
         """
 
@@ -746,7 +720,6 @@ class RenderingLight(AnyObject):
                 |     0: Standard
                 |     1: Good
 
-        :return: int
         :rtype: int
         """
 
@@ -775,7 +748,6 @@ class RenderingLight(AnyObject):
                 |     1: Medium (1024)
                 |     2: Large (2048)
 
-        :return: int
         :rtype: int
         """
 
@@ -805,7 +777,6 @@ class RenderingLight(AnyObject):
                 | 
                 |     The shadow status on object can be activate only with a spot light
 
-        :return: int
         :rtype: int
         """
 
@@ -833,7 +804,6 @@ class RenderingLight(AnyObject):
                 |     1: light casts shadows
                 |     0: light does not cast shadows
 
-        :return: int
         :rtype: int
         """
 
@@ -858,7 +828,6 @@ class RenderingLight(AnyObject):
                 | 
                 |     Returns or sets the light specular intensity of a light.
 
-        :return: float
         :rtype: float
         """
 
@@ -883,7 +852,6 @@ class RenderingLight(AnyObject):
                 | 
                 |     Returns or sets the sphere light area radius.
 
-        :return: float
         :rtype: float
         """
 
@@ -913,7 +881,6 @@ class RenderingLight(AnyObject):
                 |         2: Point light
                 |         3: Directional light
 
-        :return: int
         :rtype: int
         """
 
@@ -947,7 +914,6 @@ class RenderingLight(AnyObject):
                 |             The array must be previously initialized.
 
         :param tuple o_colour:
-        :return: None
         :rtype: None
         """
         return self.rendering_light.GetColor(o_colour)
@@ -979,7 +945,6 @@ class RenderingLight(AnyObject):
                 |     These coordinates are set as an array of 3 Variants (double type).
 
         :param tuple o_origin:
-        :return: None
         :rtype: None
         """
         return self.rendering_light.GetOrigin(o_origin)
@@ -1019,7 +984,6 @@ class RenderingLight(AnyObject):
                 |             The array must be previously initialized.
 
         :param tuple o_shadow_color:
-        :return: None
         :rtype: None
         """
         return self.rendering_light.GetShadowColor(o_shadow_colour)
@@ -1051,7 +1015,6 @@ class RenderingLight(AnyObject):
                 |     These coordinates are set as an array of 3 Variants (double type).
 
         :param tuple o_target:
-        :return: None
         :rtype: None
         """
         return self.rendering_light.GetTarget(o_target)
@@ -1084,7 +1047,6 @@ class RenderingLight(AnyObject):
                 |     255)
 
         :param tuple i_colour:
-        :return: None
         :rtype: None
         """
         return self.rendering_light.PutColor(i_colour)
@@ -1123,7 +1085,6 @@ class RenderingLight(AnyObject):
                 |          MyLight.PutOrigin Array(10, 25, 15)
 
         :param tuple i_origin:
-        :return: None
         :rtype: None
         """
         return self.rendering_light.PutOrigin(i_origin)
@@ -1156,7 +1117,6 @@ class RenderingLight(AnyObject):
                 |     255)
 
         :param tuple i_shadow_color:
-        :return: None
         :rtype: None
         """
         return self.rendering_light.PutShadowColor(i_shadow_colour)
@@ -1188,7 +1148,6 @@ class RenderingLight(AnyObject):
                 |     These coordinates are set as an array of 3 Variants (double type).
 
         :param tuple i_target:
-        :return: None
         :rtype: None
         """
         return self.rendering_light.PutTarget(i_target)

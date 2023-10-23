@@ -55,7 +55,6 @@ class SchRouteSymbol(AnyObject):
                 |           ...
                 |          objThisIntf.FlipOverLine
 
-        :return: None
         :rtype: None
         """
         return self.sch_route_symbol.FlipOverLine()
@@ -78,7 +77,6 @@ class SchRouteSymbol(AnyObject):
                 |           ...
                 |          objThisIntf.FlipOverOrthogonalLine
 
-        :return: None
         :rtype: None
         """
         return self.sch_route_symbol.FlipOverOrthogonalLine()
@@ -106,7 +104,6 @@ class SchRouteSymbol(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.GetGRRRoute
 
-        :return: SchGRRRoute
         :rtype: SchGRRRoute
         """
 
@@ -141,7 +138,6 @@ class SchRouteSymbol(AnyObject):
 
         :param int o_seg_num:
         :param float o_seg_parm:
-        :return: None
         :rtype: None
         """
         return self.sch_route_symbol.GetPosition(o_seg_num, o_seg_parm)
@@ -169,7 +165,6 @@ class SchRouteSymbol(AnyObject):
                 |          objThisIntf.ScaledbVar1
 
         :param float i_db_scale_factor:
-        :return: None
         :rtype: None
         """
         return self.sch_route_symbol.Scale(i_db_scale_factor)
@@ -203,7 +198,6 @@ class SchRouteSymbol(AnyObject):
 
         :param int i_seg_num:
         :param float i_seg_parm:
-        :return: None
         :rtype: None
         """
         return self.sch_route_symbol.SetPosition(i_seg_num, i_seg_parm)

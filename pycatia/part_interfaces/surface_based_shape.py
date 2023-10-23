@@ -53,7 +53,6 @@ class SurfaceBasedShape(Shape):
                 | 
                 |     Returns or sets the surface.
 
-        :return: Reference
         :rtype: Reference
         """
 

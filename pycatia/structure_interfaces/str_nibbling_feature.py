@@ -59,7 +59,6 @@ class StrNibblingFeature(AnyObject):
                 |          'Set the SubType
                 |           NibblingFeature1.SubType ="ButtButt"
 
-        :return: str
         :rtype: str
         """
 
@@ -95,7 +94,6 @@ class StrNibblingFeature(AnyObject):
                 |           'Set the Type
                 |           NibblingFeature1.Type ="LongPoint"
 
-        :return: str
         :rtype: str
         """
 
@@ -141,7 +139,6 @@ class StrNibblingFeature(AnyObject):
                 |     reserved.
 
         :param str i_offset_for_extrapolate:
-        :return: None
         :rtype: None
         """
         return self.str_nibbling_feature.GetOffsetForExtrapolate(i_offset_for_extrapolate)

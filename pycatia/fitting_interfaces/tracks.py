@@ -57,7 +57,6 @@ class Tracks(Sampleds):
                 |              myTracks.AddFromFile ("example.xml")
 
         :param str i_file_name:
-        :return: None
         :rtype: None
         """
         return self.tracks.AddFromFile(i_file_name)

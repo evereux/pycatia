@@ -58,7 +58,6 @@ class UserRepartition(Repartition):
                 | 
                 |          Set list = firstPattern.FeatureToLocatePositions
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -87,7 +86,6 @@ class UserRepartition(Repartition):
                 |          call firstPattern.AddFeatureToLocatePositions(face)
 
         :param AnyObject i_feature_to_locate_positions:
-        :return: None
         :rtype: None
         """
         return self.user_repartition.AddFeatureToLocatePositions(i_feature_to_locate_positions.com_object)

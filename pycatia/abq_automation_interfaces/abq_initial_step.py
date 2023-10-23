@@ -57,7 +57,6 @@ class ABQInitialStep(ABQStep):
                 |          Dim abqFields As ABQFields
                 |          Set abqFields = abqInitialStep.Fields
 
-        :return: ABQFields
         :rtype: ABQFields
         """
 
@@ -83,7 +82,6 @@ class ABQInitialStep(ABQStep):
                 |          Dim abqScalings As ABQMassScalings
                 |          Set abqScalings = abqInitialStep.MassScalings
 
-        :return: ABQMassScalings
         :rtype: ABQMassScalings
         """
 

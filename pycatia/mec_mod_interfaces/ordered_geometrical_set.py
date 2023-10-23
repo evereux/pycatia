@@ -63,7 +63,6 @@ class OrderedGeometricalSet(AnyObject):
                 | 
                 |          Set bodyColl = OrderedGeometricalSet1.Bodies
 
-        :return: Bodies
         :rtype: Bodies
         """
         from pycatia.mec_mod_interfaces.bodies import Bodies
@@ -95,7 +94,6 @@ class OrderedGeometricalSet(AnyObject):
                 |              Dim HybridShapes1 As HybridShapes
                 |              Set HybridShapes1 = OrderedGeometricalSet1.HybridShapes
 
-        :return: HybridShapes
         :rtype: HybridShapes
         """
 
@@ -121,7 +119,6 @@ class OrderedGeometricalSet(AnyObject):
                 | 
                 |          Set OrderedGeometricalSetColl = OrderedGeometricalSet1.OrderedGeometricalSets
 
-        :return: OrderedGeometricalSets
         :rtype: OrderedGeometricalSets
         """
         from pycatia.mec_mod_interfaces.ordered_geometrical_sets import OrderedGeometricalSets
@@ -146,7 +143,6 @@ class OrderedGeometricalSet(AnyObject):
                 | 
                 |          Set sketchesCollection = OrderedGeometricalSet1.OrderedSketches
 
-        :return: Sketches
         :rtype: Sketches
         """
 
@@ -175,7 +171,6 @@ class OrderedGeometricalSet(AnyObject):
                 |          (HybridShape1)
 
         :param HybridShape i_hybrid_shape:
-        :return: None
         :rtype: None
         """
         return self.ordered_geometrical_set.InsertHybridShape(i_hybrid_shape.com_object)

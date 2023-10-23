@@ -55,7 +55,6 @@ class Joints(Collection):
                 |             Dim NewJoint As Joint
                 |             Set NewJoint = TheJoints.Add()
 
-        :return: Joint
         :rtype: Joint
         """
         return Joint(self.joints.Add())
@@ -93,7 +92,6 @@ class Joints(Collection):
                 |          Set ThatJoint = CATIA.Joints.Item("MyJoint")
 
         :param cat_variant i_index:
-        :return: Joint
         :rtype: Joint
         """
         return Joint(self.joints.Item(i_index))
@@ -127,7 +125,6 @@ class Joints(Collection):
                 |             TheJoints.Remove("JointTwo")
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         return self.joints.Remove(i_index)

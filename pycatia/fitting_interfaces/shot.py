@@ -59,7 +59,6 @@ class Shot(AnyObject):
                 |             where the object started from.
 
         :param tuple i_position:
-        :return: None
         :rtype: None
         """
         return self.shot.AppendAbsDatas(i_position)
@@ -100,7 +99,6 @@ class Shot(AnyObject):
                 |             started from.
 
         :param tuple i_position:
-        :return: None
         :rtype: None
         """
         return self.shot.AppendDatas(i_position)
@@ -148,7 +146,6 @@ class Shot(AnyObject):
 
         :param int i_index:
         :param tuple o_position:
-        :return: None
         :rtype: None
         """
         return self.shot.GetAbsDatas(i_index, o_position)
@@ -196,7 +193,6 @@ class Shot(AnyObject):
 
         :param int i_index:
         :param tuple o_position:
-        :return: None
         :rtype: None
         """
         return self.shot.GetDatas(i_index, o_position)
@@ -240,7 +236,6 @@ class Shot(AnyObject):
                 |         oTime
                 |             The duration (distance) of a shot.
 
-        :return: float
         :rtype: float
         """
         return self.shot.GetDuration()
@@ -256,7 +251,6 @@ class Shot(AnyObject):
                 |     Retrieves all the data associated to the part.
 
         :param tuple o_datas:
-        :return: None
         :rtype: None
         """
         return self.shot.GetTechnologicalDatas(o_datas)
@@ -297,7 +291,6 @@ class Shot(AnyObject):
                 |             where the object started from.
 
         :param tuple i_position:
-        :return: None
         :rtype: None
         """
         return self.shot.SetAbsDatas(i_position)
@@ -338,7 +331,6 @@ class Shot(AnyObject):
                 |             started from.
 
         :param tuple i_position:
-        :return: None
         :rtype: None
         """
         return self.shot.SetDatas(i_position)
@@ -383,7 +375,6 @@ class Shot(AnyObject):
                 |             The duration (distance) of a shot.
 
         :param float i_duration:
-        :return: None
         :rtype: None
         """
         return self.shot.SetDuration(i_duration)
@@ -399,7 +390,6 @@ class Shot(AnyObject):
                 |     Sets all the data associated to the part.
 
         :param tuple i_datas:
-        :return: None
         :rtype: None
         """
         return self.shot.SetTechnologicalDatas(i_datas)

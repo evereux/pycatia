@@ -54,7 +54,6 @@ class DefaultAnnotation(AnyObject):
                 |         oLinkWiGeom
                 |             Type of link.
 
-        :return: str
         :rtype: str
         """
 
@@ -77,7 +76,6 @@ class DefaultAnnotation(AnyObject):
                 |         oAlgo
                 |             Type of algo.
 
-        :return: str
         :rtype: str
         """
 
@@ -99,7 +97,6 @@ class DefaultAnnotation(AnyObject):
                 |         oIsAutoMode
                 |             oIsAutoMode = TRUE if Automatic mode
 
-        :return: bool
         :rtype: bool
         """
         return self.default_annotation.IsInAutomaticSearchMode()

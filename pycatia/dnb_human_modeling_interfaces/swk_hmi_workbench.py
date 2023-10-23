@@ -26,7 +26,6 @@ class SWKHmiWorkbench(AnyObject):
                 | Sub AddManikinForClash(piManikin As SWKManikin)
                 |    Member of SWKHumanModelingItf.SWKHmiWorkbench
 
-        :return: SWKManikin
         :rtype: SWKManikin
         """
 
@@ -68,7 +67,6 @@ class SWKHmiWorkbench(AnyObject):
         :param int pi_red:
         :param int pi_green:
         :param int pi_blue:
-        :return: int
         :rtype: int
         """
 
@@ -96,7 +94,6 @@ class SWKHmiWorkbench(AnyObject):
         :param int pi_sex:
         :param float pi_percentile:
         :param int pi_population:
-        :return: SWKHumanCatalog
         :rtype: SWKHumanCatalog
         """
 
@@ -124,7 +121,6 @@ class SWKHmiWorkbench(AnyObject):
         :param int pi_sex:
         :param float pi_percentile:
         :param int pi_population:
-        :return: SWKHumanCatalog
         :rtype: SWKHumanCatalog
         """
 
@@ -151,7 +147,6 @@ class SWKHmiWorkbench(AnyObject):
         :param int pi_sex:
         :param float pi_percentile:
         :param int pi_population:
-        :return: SWKHumanCatalog
         :rtype: SWKHumanCatalog
         """
 
@@ -166,7 +161,6 @@ class SWKHmiWorkbench(AnyObject):
                 | Function NewHumanCatalog(piPathFile As String) As SWKHumanCatalog
                 |     Member of SWKHumanModelingItf.SWKHmiWorkbench
 
-        :return: SWKHumanCatalog
         :rtype: SWKHumanCatalog
         """
 
@@ -183,7 +177,6 @@ class SWKHmiWorkbench(AnyObject):
 
         :param Path pi_path_file:
         :param Path pi_doc_env:
-        :return: SWKHumanCatalog
         :rtype: SWKHumanCatalog
         """
 
@@ -200,7 +193,6 @@ class SWKHmiWorkbench(AnyObject):
 
         :param Path pi_path_file:
         :param Path pi_doc_env:
-        :return: SWKHumanCatalog
         :rtype: SWKHumanCatalog
         """
 
@@ -215,7 +207,6 @@ class SWKHmiWorkbench(AnyObject):
                 | Sub ResetClashList()
                 |     Member of SWKHumanModelingItf.SWKHmiWorkbench
 
-        :return: None
         :rtype: None
         """
 
@@ -231,7 +222,6 @@ class SWKHmiWorkbench(AnyObject):
                 |     Member of SWKHumanModelingItf.SWKHmiWorkbench
 
         :param str pi_clash_mode:
-        :return: None
         :rtype: None
         """
 
@@ -247,7 +237,6 @@ class SWKHmiWorkbench(AnyObject):
                 |     Member of SWKHumanModelingItf.SWKHmiWorkbench
 
         :param str pi_command_header_name:
-        :return: None
         :rtype: None
         """
 
@@ -263,7 +252,6 @@ class SWKHmiWorkbench(AnyObject):
                 |     Member of SWKHumanModelingItf.SWKHmiWorkbench
 
         :param str pi_command_header_name:
-        :return: None
         :rtype: None
         """
 
@@ -278,7 +266,6 @@ class SWKHmiWorkbench(AnyObject):
                 | Sub Update()
                 |     Member of SWKHumanModelingItf.SWKHmiWorkbench
 
-        :return: None
         :rtype: None
         """
 
@@ -293,7 +280,6 @@ class SWKHmiWorkbench(AnyObject):
                 | Sub UpdatePPRTree()
                 |     Member of SWKHumanModelingItf.SWKHmiWorkbench
 
-        :return: None
         :rtype: None
         """
 

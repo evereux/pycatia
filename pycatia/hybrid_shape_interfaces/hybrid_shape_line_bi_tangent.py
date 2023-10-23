@@ -60,7 +60,6 @@ class HybridShapeLineBiTangent(Line):
                 |          Dim oCurve As Reference
                 |          Set oCurve = LineBiTangent.Curve1
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -95,7 +94,6 @@ class HybridShapeLineBiTangent(Line):
                 |          Dim oElement As Reference
                 |          Set oElement = LineBiTangent.Element2
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -128,7 +126,6 @@ class HybridShapeLineBiTangent(Line):
                 |          Dim oSurface As Reference 
                 |          Set oSurface = LineBiTangent.Surface
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -221,7 +218,6 @@ class HybridShapeLineBiTangent(Line):
         :param int val3:
         :param int val4:
         :param int val5:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_line_bi_tangent.GetChoiceNo(val1, val2, val3, val4, val5)
@@ -244,7 +240,6 @@ class HybridShapeLineBiTangent(Line):
                 |             the side of the start point = 3 : infinite end point - the line is infinite on the side
                 |             of the end point
 
-        :return: int
         :rtype: int
         """
         return self.hybrid_shape_line_bi_tangent.GetLengthType()
@@ -333,7 +328,6 @@ class HybridShapeLineBiTangent(Line):
         :param int val3:
         :param int val4:
         :param int val5:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_line_bi_tangent.SetChoiceNo(val1, val2, val3, val4, val5)
@@ -357,7 +351,6 @@ class HybridShapeLineBiTangent(Line):
                 |             side of the end point
 
         :param int i_type:
-        :return: None
         :rtype: None
         """
         return self.hybrid_shape_line_bi_tangent.SetLengthType(i_type)

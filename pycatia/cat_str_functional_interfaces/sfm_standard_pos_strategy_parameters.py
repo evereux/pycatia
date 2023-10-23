@@ -54,7 +54,6 @@ class SFMStandardPosStrategyParameters(AnyObject):
                 | 
                 |          Cnt = VrefList.Count
 
-        :return: int
         :rtype: int
         """
 
@@ -69,7 +68,6 @@ class SFMStandardPosStrategyParameters(AnyObject):
                 | o Func Item(CATVariant iIndex) As CATBaseUnknown
 
         :param cat_variant i_index:
-        :return: CATBaseUnknown
         :rtype: CATBaseUnknown
         """
         return self.sfm_standard_pos_strategy_parameters.Item(i_index)
@@ -270,7 +268,6 @@ class SFMStandardPosStrategyParameters(AnyObject):
         :param float i_u_offset:
         :param SFMReferences i_v_ref_elem:
         :param float i_v_offset:
-        :return: None
         :rtype: None
         """
         return self.sfm_standard_pos_strategy_parameters.SetPosParamData(

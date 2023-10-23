@@ -76,7 +76,6 @@ class HybridShapeAxisToAxis(HybridShape):
                 | 
                 |          hybShpAxisToAxis.CreationMode = True
 
-        :return: bool
         :rtype: bool
         """
 
@@ -108,7 +107,6 @@ class HybridShapeAxisToAxis(HybridShape):
                 |          Dim Elem As Reference
                 |          Set Elem = AxisToAxis.ElemToTransform
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -140,7 +138,6 @@ class HybridShapeAxisToAxis(HybridShape):
                 |          Dim Ref As Reference
                 |          Set Ref = AxisToAxis.ReferenceAxis
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -172,7 +169,6 @@ class HybridShapeAxisToAxis(HybridShape):
                 |          Dim Ref As Reference
                 |          Set Ref = AxisToAxis.ReferenceAxis
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -209,7 +205,6 @@ class HybridShapeAxisToAxis(HybridShape):
                 | 
                 |          hybShpAxisToAxis.VolumeResult = True
 
-        :return: bool
         :rtype: bool
         """
 

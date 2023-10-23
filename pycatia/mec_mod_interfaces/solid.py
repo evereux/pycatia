@@ -74,7 +74,6 @@ class Solid(Shape):
                 |     See also:
                 |         Move
 
-        :return: Move
         :rtype: Move
         """
 
@@ -98,7 +97,6 @@ class Solid(Shape):
                 | 
                 |          Set element = importedSolid.SourceElement
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 
@@ -123,7 +121,6 @@ class Solid(Shape):
                 | 
                 |          Set prod1 = importedSolid.SourceProduct
 
-        :return: AnyObject
         :rtype: AnyObject
         """
 

@@ -64,7 +64,6 @@ class SFMReferences(Collection):
                 |           UrefList.Add Uref1
 
         :param Reference i_reference:
-        :return: None
         :rtype: None
         """
         return self.sfm_references.Add(i_reference.com_object)
@@ -105,7 +104,6 @@ class SFMReferences(Collection):
                 |               ListofRef.Add Uref1
                 |               ListofRef.ClearList
 
-        :return: None
         :rtype: None
         """
         return self.sfm_references.ClearList()
@@ -140,7 +138,6 @@ class SFMReferences(Collection):
                 |               Set Ref1 = ListofRef.Item(i)
 
         :param cat_variant i_index:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.sfm_references.Item(i_index))

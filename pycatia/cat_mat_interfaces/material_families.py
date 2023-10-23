@@ -60,7 +60,6 @@ class MaterialFamilies(Collection):
                 |      Dim MyMaterialFamily As MaterialFamily
                 |      Set MyMaterialFamily = MyDocument.MaterialFamilies.Add
 
-        :return: MaterialFamily
         :rtype: MaterialFamily
         """
         return MaterialFamily(self.material_families.Add())
@@ -96,7 +95,6 @@ class MaterialFamilies(Collection):
                 |      Set MyMaterialFamily = MaterialFamilies.Item(6)
 
         :param cat_variant i_index:
-        :return: MaterialFamily
         :rtype: MaterialFamily
         """
         return MaterialFamily(self.material_families.Item(i_index))
@@ -132,7 +130,6 @@ class MaterialFamilies(Collection):
                 |      MyDocument.MaterialFamilies.Remove(2)
 
         :param cat_variant i_index:
-        :return: None
         :rtype: None
         """
         self.material_families.Remove(i_index)

@@ -52,7 +52,6 @@ class ParticularTolElem(AnyObject):
                 |         oPartGeom
                 |             : Not Defined CenterElement Surface Unsupported
 
-        :return: str
         :rtype: str
         """
 

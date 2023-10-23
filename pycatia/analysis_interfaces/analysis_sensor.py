@@ -55,7 +55,6 @@ class AnalysisSensor(AnalysisEntity):
                 |          Dim params As CATIAParameters
                 |          Set params = AnalysisSensor1.OutPutParameters
 
-        :return: Parameters
         :rtype: Parameters
         """
 
@@ -78,7 +77,6 @@ class AnalysisSensor(AnalysisEntity):
                 |          Dim AnalysisSensor1 As AnalysisSensor
                 |          AnalysisSensor1.Update
 
-        :return: None
         :rtype: None
         """
         return self.analysis_sensor.Update()

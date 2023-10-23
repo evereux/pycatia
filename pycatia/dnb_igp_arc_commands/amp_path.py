@@ -80,7 +80,6 @@ class AMPPath(AnyObject):
 
         :param tuple i_location:
         :param AMPTag o_tag:
-        :return: None
         :rtype: None
         """
         return self.amp_path.CreateTag(i_location, o_tag.com_object)
@@ -134,7 +133,6 @@ class AMPPath(AnyObject):
         :param AMPTag i_ref_tag:
         :param tuple i_location:
         :param AMPTag o_tag:
-        :return: None
         :rtype: None
         """
         return self.amp_path.CreateTagWithReference(i_ref_tag.com_object, i_location, o_tag.com_object)
@@ -178,7 +176,6 @@ class AMPPath(AnyObject):
                 |             .
 
         :param tuple io_tag_list:
-        :return: None
         :rtype: None
         """
         return self.amp_path.GetAllTags(io_tag_list)
@@ -233,7 +230,6 @@ class AMPPath(AnyObject):
                 |             .
 
         :param int otag_list_size:
-        :return: AMPTag
         :rtype: AMPTag
         """
         return AMPTag(self.amp_path.GetNumTags(otag_list_size))
@@ -264,7 +260,6 @@ class AMPPath(AnyObject):
                 |             E_FAIL otherwise.
 
         :param str o_value:
-        :return: None
         :rtype: None
         """
         return self.amp_path.GetScriptVarValue(o_value)
@@ -293,7 +288,6 @@ class AMPPath(AnyObject):
                 |             .
 
         :param AnyObject o_device:
-        :return: None
         :rtype: None
         """
         return self.amp_path.GetTargetDevice(o_device.com_object)
@@ -327,7 +321,6 @@ class AMPPath(AnyObject):
 
         :param int i_index:
         :param AMPTag i_tag:
-        :return: None
         :rtype: None
         """
         return self.amp_path.InsertAt(i_index, i_tag.com_object)
@@ -372,7 +365,6 @@ class AMPPath(AnyObject):
                 |             .
 
         :param int i_index:
-        :return: None
         :rtype: None
         """
         return self.amp_path.RemoveFrom(i_index)

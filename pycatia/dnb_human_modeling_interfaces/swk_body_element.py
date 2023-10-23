@@ -61,7 +61,6 @@ class SWKBodyElement(AnyObject):
                 |     property FullName yields the character
                 |     string "Left Leg".
 
-        :return: str
         :rtype: str
         """
 
@@ -78,7 +77,6 @@ class SWKBodyElement(AnyObject):
                 | 
                 |     Returns the manikin which owns this body element.
 
-        :return: SWKManikin
         :rtype: SWKManikin
         """
         
@@ -103,7 +101,6 @@ class SWKBodyElement(AnyObject):
                 |     or line of sight. If the body element is an ellipse, the
                 |     x-coordinate of the center of that ellipse is returned.
 
-        :return: float
         :rtype: float
         """
 
@@ -127,7 +124,6 @@ class SWKBodyElement(AnyObject):
                 |     or line of sight. If the body element is an ellipse, the
                 |     y-coordinate of the center is returned.
 
-        :return: float
         :rtype: float
         """
 
@@ -151,7 +147,6 @@ class SWKBodyElement(AnyObject):
                 |     or line of sight. If the body element is an ellipse, the
                 |     z-coordinate of the center is returned.
 
-        :return: float
         :rtype: float
         """
 
@@ -180,7 +175,6 @@ class SWKBodyElement(AnyObject):
                 | 
                 |          myManikin.Body.RefreshDisplay = False
 
-        :return: bool
         :rtype: bool
         """
 
@@ -212,7 +206,6 @@ class SWKBodyElement(AnyObject):
                 |     position of the center of that ellipse is returned.
 
         :param tuple po_global_position:
-        :return: None
         :rtype: None
         """
         return self.swk_body_element.GetGlobalPosition(po_global_position)
@@ -242,7 +235,6 @@ class SWKBodyElement(AnyObject):
                 | 
                 |     Refreshes the 3D representation of the current element.
 
-        :return: None
         :rtype: None
         """
         return self.swk_body_element.Refresh3D()

@@ -86,7 +86,6 @@ class Product(AnyObject):
                 |          Dim EngineAnalysis As Analyze
                 |          Set EngineAnalysis = Engine.Analyze
 
-        :return: Analyze
         :rtype: Analyze
         """
 
@@ -112,7 +111,6 @@ class Product(AnyObject):
                 |
                 |          EngineDef = Engine.Definition
 
-        :return: str
         :rtype: str
         """
 
@@ -150,7 +148,6 @@ class Product(AnyObject):
                 |          Desc = "This is the Engine component product description"
                 |          EngineComp.DescriptionInst(Desc)
 
-        :return: str
         :rtype: str
         """
 
@@ -188,7 +185,6 @@ class Product(AnyObject):
                 |          Desc = "This is the Engine reference product description"
                 |          Engine.DescriptionRef(Desc)
 
-        :return: str
         :rtype: str
         """
 
@@ -268,7 +264,6 @@ class Product(AnyObject):
                 |
                 |          EngineNom = Engine.Nomenclature
 
-        :return: str
         :rtype: str
         """
 
@@ -303,7 +298,6 @@ class Product(AnyObject):
                 |          Set productRoot = productDoc.Product
                 |          Set params = productRoot.Parameters
 
-        :return: Parameters
         :rtype: Parameters
         """
 
@@ -329,7 +323,6 @@ class Product(AnyObject):
                 |
                 |          Engine.PartNumber("A120-253X-7")
 
-        :return: str
         :rtype: str
         """
         try:
@@ -370,7 +363,6 @@ class Product(AnyObject):
                 |          Dim EnginePositionObject As Position
                 |          Set EnginePositionObject = Engine.Position
 
-        :return: Position
         :rtype: Position
         """
 
@@ -398,7 +390,6 @@ class Product(AnyObject):
                 |          Dim EngineChildren As Products
                 |          Set EngineChildren = Engine.Products
 
-        :return: Products
         :rtype: Products
         """
         from pycatia.product_structure_interfaces.products import Products
@@ -415,7 +406,6 @@ class Product(AnyObject):
                 |
                 |     Returns the collection of publications managed by the product.
 
-        :return: Publications
         :rtype: Publications
         """
 
@@ -432,7 +422,6 @@ class Product(AnyObject):
                 |
                 |     Returns the Reference Product of this instance.
 
-        :return: Product
         :rtype: Product
         """
         try:
@@ -460,7 +449,6 @@ class Product(AnyObject):
                 |          Set productRoot = productDoc.Product
                 |          Set rels = productRoot.Relations
 
-        :return: Relations
         :rtype: Relations
         """
 
@@ -486,7 +474,6 @@ class Product(AnyObject):
                 |
                 |          Engine.Revision("3A")
 
-        :return: str
         :rtype: str
         """
 
@@ -525,7 +512,6 @@ class Product(AnyObject):
                 |
                 |          Engine.Source(catProductMade)
 
-        :return: int
         :rtype: int
         """
 
@@ -550,7 +536,6 @@ class Product(AnyObject):
         """
         Returns the type of product (CATProduct, CATPart or Component).
 
-        :return: str
         :rtype: str
         """
         
@@ -583,7 +568,6 @@ class Product(AnyObject):
                 |          Set productRoot = productDoc.Product
                 |          Set UserProps = productRoot.UserRefProperties
 
-        :return: Parameters
         :rtype: Parameters
         """
 
@@ -599,7 +583,6 @@ class Product(AnyObject):
                 |
                 |     Activate default shape.
 
-        :return: None
         :rtype: None
         """
         return self.product.ActivateDefaultShape()
@@ -620,7 +603,6 @@ class Product(AnyObject):
                 |             The name of the shape.
 
         :param str shape_name:
-        :return: None
         :rtype: None
         """
         return self.product.ActivateShape(shape_name)
@@ -733,7 +715,6 @@ class Product(AnyObject):
         :param str i_shape_name:
         :param int i_rep_behavior:
         :param bool i_context:
-        :return: None
         :rtype: None
         """
         return self.product.AddShapeRepresentation(
@@ -774,7 +755,6 @@ class Product(AnyObject):
                 |             The new working mode.
 
         :param int new_mode:
-        :return: None
         :rtype: None
         """
         return self.product.ApplyWorkMode(new_mode)
@@ -868,7 +848,6 @@ class Product(AnyObject):
                 |          )
 
         :param str i_label:
-        :return: Reference
         :rtype: Reference
         """
         return Reference(self.product.CreateReferenceFromName(i_label))
@@ -883,7 +862,6 @@ class Product(AnyObject):
                 |
                 |     Deactivate default shape.
 
-        :return: None
         :rtype: None
         """
         return self.product.DesactivateDefaultShape()
@@ -904,7 +882,6 @@ class Product(AnyObject):
                 |             The name of the shape.
 
         :param str shape_name:
-        :return: None
         :rtype: None
         """
         return self.product.DesactivateShape(shape_name)
@@ -935,7 +912,6 @@ class Product(AnyObject):
 
         :param int i_file_type:
         :param str i_file:
-        :return: None
         :rtype: None
         """
         return self.product.ExtractBOM(i_file_type, i_file)
@@ -969,7 +945,6 @@ class Product(AnyObject):
         Generate an ALLCATPart (CATPart) from CATProduct.
 
         :param Product product:
-        :return: Document
         :rtype: Document
         """
 
@@ -1013,7 +988,6 @@ class Product(AnyObject):
                 |         with a size given by GetNumberOfShapes.
 
         :param tuple olistshape:
-        :return: None
         :rtype: None
         """
         return self.product.GetAllShapesNames(olistshape)
@@ -1098,7 +1072,6 @@ class Product(AnyObject):
                 |          Set MSRep = Engine.GetMasterShapeRepresentation(True)
 
         :param bool i_load_if_necessary:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.product.GetMasterShapeRepresentation(i_load_if_necessary)
@@ -1122,7 +1095,6 @@ class Product(AnyObject):
                 |
                 |          Set MSRepPath = Engine.GetMasterShapeRepresentationPathName
 
-        :return: str
         :rtype: str
         """
         return self.product.GetMasterShapeRepresentationPathName()
@@ -1140,7 +1112,6 @@ class Product(AnyObject):
                 |     Returns:
                 |         oNbShapes The number of Shapes.
 
-        :return: int
         :rtype: int
         """
         return self.product.GetNumberOfShapes()
@@ -1250,7 +1221,6 @@ class Product(AnyObject):
                 |          Set EngineConstraints = Engine.GetTechnologicalObject("Constraints")
 
         :param str i_application_type:
-        :return: AnyObject
         :rtype: AnyObject
         """
         return self.product.GetTechnologicalObject(i_application_type)
@@ -1275,7 +1245,6 @@ class Product(AnyObject):
                 |
                 |          HasMSRep = Engine.HasAMasterShapeRepresentation()
 
-        :return: bool
         :rtype: bool
         """
         return self.product.HasAMasterShapeRepresentation()
@@ -1328,14 +1297,12 @@ class Product(AnyObject):
         :param str i_shape_name:
         :param int i_rep_behavior:
         :param bool i_context:
-        :return: bool
         :rtype: bool
         """
         return self.product.HasShapeRepresentation(i_shape_name, i_rep_behavior, i_context)
 
     def is_catproduct(self):
         """
-        :return: bool
         :rtype: bool
         """
 
@@ -1346,7 +1313,6 @@ class Product(AnyObject):
 
     def is_catpart(self):
         """
-        :return: bool
         :rtype: bool
         """
 
@@ -1366,7 +1332,6 @@ class Product(AnyObject):
         >>> # e://users//psr//Parts//
         >>> Product.path().suffix
         >>> # .CATProduct
-        :return: Path
         :rtype: Path
         """
 
@@ -1399,7 +1364,6 @@ class Product(AnyObject):
                 |
                 |          Engine.RemoveMasterShapeRepresentation()
 
-        :return: None
         :rtype: None
         """
         return self.product.RemoveMasterShapeRepresentation()
@@ -1447,7 +1411,6 @@ class Product(AnyObject):
         :param str i_shape_name:
         :param int i_rep_behavior:
         :param bool i_context:
-        :return: None
         :rtype: None
         """
         return self.product.RemoveShapeRepresentation(i_shape_name, i_rep_behavior, i_context)
@@ -1488,7 +1451,6 @@ class Product(AnyObject):
                 |          Set Rootproduct = productDoc.Product
                 |          Rootproduct.Update
 
-        :return: None
         :rtype: None
         """
         return self.product.Update()

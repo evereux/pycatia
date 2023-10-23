@@ -60,7 +60,6 @@ class HybridShapePlane1Line1Pt(Plane):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Reference
         :rtype: Reference
         """
 
@@ -95,7 +94,6 @@ class HybridShapePlane1Line1Pt(Plane):
                 |     See also:
                 |         HybridShapeFactory
 
-        :return: Reference
         :rtype: Reference
         """
 

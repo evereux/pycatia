@@ -59,7 +59,6 @@ class Clash(AnyObject):
                 |             Dim TheAnnotatedViewsList As AnnotatedViews
                 |             Set TheAnnotatedViewsList = NewClash.AnnotatedViews
 
-        :return: AnnotatedViews
         :rtype: AnnotatedViews
         """
 
@@ -98,7 +97,6 @@ class Clash(AnyObject):
                 | 
                 |                 NewClash.Clearance = 10.
 
-        :return: float
         :rtype: float
         """
 
@@ -142,7 +140,6 @@ class Clash(AnyObject):
                 | 
                 |                 NewClash.ComputationType = catClashComputationTypeBetweenAll
 
-        :return: int
         :rtype: int
         """
 
@@ -176,7 +173,6 @@ class Clash(AnyObject):
                 |             Dim NewConflicts As Conflicts
                 |             Set NewConflicts = NewClash.Conflicts
 
-        :return: Conflicts
         :rtype: Conflicts
         """
 
@@ -213,7 +209,6 @@ class Clash(AnyObject):
                 |                 Dim FirstGroup As Group
                 |                 NewClash.FirstGroup = FirstGroup
 
-        :return: Group
         :rtype: Group
         """
 
@@ -257,7 +252,6 @@ class Clash(AnyObject):
                 | 
                 |                 NewClash.InterferenceType = CatClashInterferenceTypeContact
 
-        :return: int
         :rtype: int
         """
 
@@ -291,7 +285,6 @@ class Clash(AnyObject):
                 |             Dim TheMarker3DsList As Marker3Ds
                 |             Set TheMarker3DsList = NewClash.Marker3Ds
 
-        :return: Marker3Ds
         :rtype: Marker3Ds
         """
 
@@ -328,7 +321,6 @@ class Clash(AnyObject):
                 |                 Dim SecondGroup As Group
                 |                 NewClash.SecondGroup = SecondGroup
 
-        :return: Group
         :rtype: Group
         """
 
@@ -360,7 +352,6 @@ class Clash(AnyObject):
                 | 
                 |             NewClash.Compute
 
-        :return: None
         :rtype: None
         """
         return self.clash.Compute()
@@ -395,7 +386,6 @@ class Clash(AnyObject):
 
         :param int i_type:
         :param str i_path:
-        :return: None
         :rtype: None
         """
         return self.clash.Export(i_type, i_path)
