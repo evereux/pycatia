@@ -60,6 +60,7 @@ class Prism(SketchBasedShape):
                 |              Set dirOrientation = firstPrism.DirectionOrientation
                 |              firstPrism.DirectionOrientation = catInverseOrientation
 
+        :return: enum cat_prism_orientation
         :rtype: int
         """
 
@@ -96,6 +97,7 @@ class Prism(SketchBasedShape):
                 |              Set dirType = firstPrism.DirectionType
                 |              firstPrism.DirectionType = catNormalToSketchDirection
 
+        :return: enum cat_prism_extrusion_direction
         :rtype: int
         """
 

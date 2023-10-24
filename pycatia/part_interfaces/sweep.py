@@ -15,7 +15,6 @@ from pycatia.sketcher_interfaces.sketch import Sketch
 
 
 class Sweep(SketchBasedShape):
-
     """
         .. note::
             :class: toggle
@@ -206,6 +205,7 @@ class Sweep(SketchBasedShape):
                 | 
                 |     Returns or sets the end mode .
 
+        :return: enum cat_merge_mode
         :rtype: int
         """
 
@@ -390,4 +390,4 @@ class Sweep(SketchBasedShape):
         return self.sweep.SetKeepAngleOption()
 
     def __repr__(self):
-        return f'Sweep(name="{ self.name }")'
+        return f'Sweep(name="{self.name}")'

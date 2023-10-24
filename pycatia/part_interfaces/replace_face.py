@@ -68,6 +68,7 @@ class ReplaceFace(SurfaceBasedShape):
                 |     body kept after the splitting. A positive side refers to the same orientation
                 |     than the splitting element normal vector.
 
+        :return: enum cat_split_side
         :rtype: int
         """
 

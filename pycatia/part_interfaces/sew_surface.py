@@ -135,6 +135,7 @@ class SewSurface(SurfaceBasedShape):
                 |          Set sptSide = mySew.SewingSide
                 |          mySew.SewingSide = catPositiveSide
 
+        :return: enum cat_sewing_intersection_mode
         :rtype: int
         """
 
@@ -168,6 +169,7 @@ class SewSurface(SurfaceBasedShape):
                 |          Set sptSide = mySew.SewingSide
                 |          mySew.SewingSide = catPositiveSide
 
+        :return: enum cat_split_side
         :rtype: int
         """
 
