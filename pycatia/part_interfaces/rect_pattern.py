@@ -149,6 +149,7 @@ class RectPattern(Pattern):
                 |          Set parameters = firstPattern.FirstCircularPatternParameters
                 |          Set firstPattern.FirstCircularPatternParameters = catUnequalSpacing
 
+        :return: enum cat_rectangular_pattern_parameters
         :rtype: int
         """
 
@@ -268,6 +269,7 @@ class RectPattern(Pattern):
                 |          Set parameters = secondPattern.SecondCircularPatternParameters
                 |          Set secondPattern.SecondCircularPatternParameters = catUnequalSpacing
 
+        :return: enum cat_rectangular_pattern_parameters
         :rtype: int
         """
 

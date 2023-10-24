@@ -16,7 +16,6 @@ from pycatia.part_interfaces.edge_fillet import EdgeFillet
 
 
 class VarRadEdgeFillet(EdgeFillet):
-
     """
         .. note::
             :class: toggle
@@ -60,6 +59,7 @@ class VarRadEdgeFillet(EdgeFillet):
                 |         iType
                 |             The type used to perform the fillet : catSphereBitangencyType or catCircleBitangencyType
 
+        :return: enum cat_fillet_bitangency_type
         :rtype: int
         """
 
@@ -395,4 +395,4 @@ class VarRadEdgeFillet(EdgeFillet):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'VarRadEdgeFillet(name="{ self.name }")'
+        return f'VarRadEdgeFillet(name="{self.name}")'

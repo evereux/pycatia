@@ -15,7 +15,6 @@ from pycatia.part_interfaces.dress_up_shape import DressUpShape
 
 
 class AutoDraft(DressUpShape):
-
     """
         .. note::
             :class: toggle
@@ -40,7 +39,7 @@ class AutoDraft(DressUpShape):
         self.auto_draft = com_object
 
     @property
-    def functional_face(self) -> None:
+    def functional_face(self) -> Reference:
         """
         .. note::
             :class: toggle
@@ -48,10 +47,10 @@ class AutoDraft(DressUpShape):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FunctionalFace(Reference iFace) (Write Only)
 
-        :rtype: None
+        :rtype: Reference
         """
 
-        return None
+        return Reference
 
     @functional_face.setter
     def functional_face(self, reference: Reference):

@@ -63,6 +63,7 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set holeAnchorMode = firstHole.AnchorMode
 
+        :return: enum cat_hole_anchor_mode
         :rtype: int
         """
 
@@ -151,6 +152,7 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set holeBottomType = firstHole.BottomType
 
+        :return: enum cat_hole_bottom_type
         :rtype: int
         """
 
@@ -185,6 +187,7 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set CSMode = firsthole.CounterSunkMode
 
+        :return: enum cat_cs_hole_mode
         :rtype: int
         """
 
@@ -436,6 +439,7 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set holeThreadSide = firstHole.ThreadSide
 
+        :return: enum cat_hole_thread_side
         :rtype: int
         """
 
@@ -470,6 +474,7 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set holeThreadingMode = firstHole.ThreadingMode
 
+        :return: enum cat_hole_threading_mode
         :rtype: int
         """
 
@@ -504,6 +509,7 @@ class Hole(SketchBasedShape):
                 | 
                 |              Set holeType = firstHole.Type
 
+        :return: enum cat_hole_type
         :rtype: int
         """
 

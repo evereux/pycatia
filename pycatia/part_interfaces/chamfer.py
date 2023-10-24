@@ -158,6 +158,7 @@ class Chamfer(DressUpShape):
                 |          Set mode = firstChamfer.Mode
                 |          firstChamfer.Mode = catTwoLengthChamfer
 
+        :return: enum cat_chamfer_mode
         :rtype: int
         """
 
@@ -190,6 +191,7 @@ class Chamfer(DressUpShape):
                 |          Set orient = firstChamfer.Orientation
                 |          firstChamfer.Orientation = catReverseChamfer
 
+        :return: enum cat_chamfer_orientation
         :rtype: int
         """
 
@@ -223,6 +225,7 @@ class Chamfer(DressUpShape):
                 |          Set prop = firstChamfer.Propagation
                 |          firstChamfer.Propagation = catMinimalChamfer
 
+        :return: enum cat_chamfer_orientation
         :rtype: int
         """
 

@@ -117,6 +117,7 @@ class CircPattern(Pattern):
                 |          Set parameters = firstPattern.CircularPatternParameters
                 |          Set firstPattern.CircularPatternParameters = catCompleteCrown
 
+        :return: enum cat_circular_pattern_parameters
         :rtype: int
         """
 
