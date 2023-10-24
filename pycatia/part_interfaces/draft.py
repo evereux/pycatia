@@ -81,6 +81,7 @@ class Draft(DressUpShape):
                 |          Set mode = firstDraft.Mode
                 |          Set firstDraft.Mode = CatReflectKeepFaceDraftMode
 
+        :rtype: enum cat_draft_mode
         :rtype: int
         """
 

@@ -64,6 +64,7 @@ class EdgeFillet(Fillet):
                 |          Set mode = firstEdgeFillet.EdgePropagation
                 |          Set firstEdgeFillet.EdgePropagation = CATMinimalFilletEdgePropagation
 
+        :return: enum cat_fillet_edge_propagation
         :rtype: int
         """
 

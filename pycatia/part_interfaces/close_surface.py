@@ -48,7 +48,7 @@ class CloseSurface(Pattern):
         self.close_surface = com_object
 
     @property
-    def angular_direction_row(self):
+    def angular_direction_row(self) -> IntParam:
         """
         .. note::
             :class: toggle
@@ -71,7 +71,7 @@ class CloseSurface(Pattern):
         return IntParam(self.close_surface.AngularDirectionRow)
 
     @property
-    def angular_repartition(self):
+    def angular_repartition(self) -> AngularRepartition:
         """
         .. note::
             :class: toggle
@@ -132,7 +132,7 @@ class CloseSurface(Pattern):
         self.close_surface.CircularPatternParameters = value
 
     @property
-    def radial_alignment(self):
+    def radial_alignment(self) -> bool:
         """
         .. note::
             :class: toggle
@@ -166,7 +166,7 @@ class CloseSurface(Pattern):
         self.close_surface.RadialAlignment = value
 
     @property
-    def radial_direction_row(self):
+    def radial_direction_row(self) -> IntParam:
         """
         .. note::
             :class: toggle
@@ -189,7 +189,7 @@ class CloseSurface(Pattern):
         return IntParam(self.close_surface.RadialDirectionRow)
 
     @property
-    def radial_repartition(self):
+    def radial_repartition(self) -> LinearRepartition:
         """
         .. note::
             :class: toggle
@@ -213,7 +213,7 @@ class CloseSurface(Pattern):
         return LinearRepartition(self.close_surface.RadialRepartition)
 
     @property
-    def rotation_orientation(self):
+    def rotation_orientation(self) -> bool:
         """
         .. note::
             :class: toggle

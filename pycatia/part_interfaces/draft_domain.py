@@ -16,7 +16,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class DraftDomain(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -112,6 +111,7 @@ class DraftDomain(AnyObject):
                 |                  Set MultiselMode = firstDraftDomain.MultiselectionMode
                 |                  firstDraftDomain.MultiselectionMode = CATMultiselectionByNeutralMode
 
+        :return: enum cat_draft_multiselection_mode
         :rtype: int
         """
 
@@ -181,6 +181,7 @@ class DraftDomain(AnyObject):
                 |          Set propMode = firstDraftDomain.NeutralPropagationMode
                 |          firstDraftDomain.NeutralPropagationMode = CATSmoothDraftNeutralPropagationMode
 
+        :return: enum cat_draft_neutral_propagation_mode
         :rtype: int
         """
 
@@ -428,4 +429,4 @@ class DraftDomain(AnyObject):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'DraftDomain(name="{ self.name }")'
+        return f'DraftDomain(name="{self.name}")'

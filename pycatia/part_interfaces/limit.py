@@ -15,7 +15,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class Limit(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -68,6 +67,7 @@ class Limit(AnyObject):
                 | 
                 |     Returns or sets the limit mode.
 
+        :return: enum cat_limit_mode
         :rtype: int
         """
 
@@ -109,4 +109,4 @@ class Limit(AnyObject):
         self.limit.LimitingElement = value.com_object
 
     def __repr__(self):
-        return f'Limit(name="{ self.name }")'
+        return f'Limit(name="{self.name}")'

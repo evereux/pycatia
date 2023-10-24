@@ -102,7 +102,7 @@ class RemoveFace(DressUpShape):
         return References(self.remove_face.Propagation)
 
     @property
-    def remove_face(self):
+    def remove_face(self) -> Reference:
         """
         .. note::
             :class: toggle
@@ -122,7 +122,7 @@ class RemoveFace(DressUpShape):
 
         """
 
-        return self.remove_face.RemoveFace
+        return Reference(self.remove_face.RemoveFace.com_object)
 
     @remove_face.setter
     def remove_face(self, reference_face: Reference):

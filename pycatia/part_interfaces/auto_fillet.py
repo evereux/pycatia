@@ -16,7 +16,6 @@ from pycatia.part_interfaces.dress_up_shape import DressUpShape
 
 
 class AutoFillet(DressUpShape):
-
     """
         .. note::
             :class: toggle
@@ -88,7 +87,7 @@ class AutoFillet(DressUpShape):
         return References(self.auto_fillet.FacesToFillet)
 
     @property
-    def faces_to_fillets(self) -> None:
+    def faces_to_fillets(self) -> Reference:
         """
         .. note::
             :class: toggle
@@ -96,7 +95,7 @@ class AutoFillet(DressUpShape):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FacesToFillets(Reference iFace) (Write Only)
 
-        :rtype: None
+        :rtype: Reference
         """
 
         return self.auto_fillet.FacesToFillets
@@ -132,7 +131,7 @@ class AutoFillet(DressUpShape):
         return Length(self.auto_fillet.FilletRadius)
 
     @property
-    def functional_face(self):
+    def functional_face(self) -> Reference:
         """
         .. note::
             :class: toggle
@@ -140,7 +139,7 @@ class AutoFillet(DressUpShape):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property FunctionalFace(Reference iFace) (Write Only)
 
-
+        :rtype: Reference
         """
 
         self.functional_face.FunctionFace
@@ -264,7 +263,7 @@ class AutoFillet(DressUpShape):
         self.auto_fillet.RoundRadiusActivation = value
 
     @property
-    def slivers_and_crack(self) -> None:
+    def slivers_and_crack(self) -> Reference:
         """
         .. note::
             :class: toggle
@@ -272,7 +271,7 @@ class AutoFillet(DressUpShape):
             CAA V5 Visual Basic Help (2020-07-06 14:02:20.222384)
                 | o Property SliversAndCrack(Reference iSlivers) (Write Only)
 
-        :rtype: None
+        :rtype: Reference
         """
 
         return self.auto_fillet.SliversAndCrack
@@ -341,4 +340,4 @@ class AutoFillet(DressUpShape):
         self.auto_fillet.SupportSurface = reference.com_object
 
     def __repr__(self):
-        return f'AutoFillet(name="{ self.name }")'
+        return f'AutoFillet(name="{self.name}")'
