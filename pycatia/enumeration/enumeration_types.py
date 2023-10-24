@@ -92,12 +92,12 @@ auto_time_increment_method = (
     "ABQ_ATI_ELEMENT_BY_ELEMENT",
 )
 
-cat3_d_color_inheritance_mode = (
+cat_3d_color_inheritance_mode = (
     "cat3DColorInheritanceModeOff",
     "cat3DColorInheritanceModeOn",
 )
 
-cat3_d_xml_geom_representation_type = (
+cat_3d_xml_geom_representation_type = (
     "cat3DXmlExact",
     "cat3DXmlTessellation",
     "cat3DXmlCompressedTessellation",
@@ -106,7 +106,7 @@ cat3_d_xml_geom_representation_type = (
     "cat3DXmlXmlTessellation",
 )
 
-cat3_d_xml_ppr_save_config = (
+cat_3d_xml_ppr_save_config = (
     "cat3DXmlProductAndResourceList",
     "cat3DXmlProductList",
     "cat3DXmlResourceList",
