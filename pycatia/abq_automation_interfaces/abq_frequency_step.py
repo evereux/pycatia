@@ -321,6 +321,7 @@ class ABQFrequencyStep(ABQStep):
                 | 
                 |              abqFreqStep.RequestedModesOption = ABQ_ALL
 
+        :return: enum abq_requested_modes_option
         :rtype: int
         """
 
@@ -329,7 +330,7 @@ class ABQFrequencyStep(ABQStep):
     @requested_modes_option.setter
     def requested_modes_option(self, value: int):
         """
-        :param int value:
+        :param int value: enum abq_requested_modes_option
         """
 
         self.abq_frequency_step.RequestedModesOption = value
