@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class DxfSettingAtt(SettingController):
-
     """
         .. note::
             :class: toggle
@@ -64,6 +63,7 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
+        :return: enum cat_dxf_export_blocks_enum
         :rtype: int
         """
 
@@ -151,6 +151,7 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
+        :return: enum cat_dxf_export_mode_enum
         :rtype: int
         """
 
@@ -179,6 +180,7 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
+        :return: enum cat_dxf_export_sheets_enum
         :rtype: int
         """
 
@@ -207,6 +209,7 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
+        :return: enum cat_dxf_export_version_enum
         :rtype: int
         """
 
@@ -293,6 +296,7 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
+        :return: enum cat_dxf_import_dimensions_enum
         :rtype: int
         """
 
@@ -348,6 +352,7 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
+        :return: enum cat_dxf_import_create_end_points_enum
         :rtype: int
         """
 
@@ -514,6 +519,7 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
+        :return: enum cat_dxf_import_unit_enum
         :rtype: int
         """
 
@@ -1954,7 +1960,7 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :param int i_export_blocks:
+        :param int i_export_blocks: enum cat_dxf_export_blocks_enum
         :rtype: None
         """
         return self.dxf_setting_att.set_ExportBlocks(i_export_blocks)
@@ -2068,7 +2074,7 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :param int i_mode:
+        :param int i_mode: enum cat_dxf_export_mode_enum
         :rtype: None
         """
         return self.dxf_setting_att.set_ExportMode(i_mode)
@@ -2094,7 +2100,7 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :param int i_sheets:
+        :param int i_sheets: enum cat_dxf_export_sheets_enum
         :rtype: None
         """
         return self.dxf_setting_att.set_ExportSheets(i_sheets)
@@ -2120,7 +2126,7 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :param int i_version:
+        :param int i_version:enum cat_dxf_export_version_enum
         :rtype: None
         """
         return self.dxf_setting_att.set_ExportVersion(i_version)
@@ -2218,7 +2224,7 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :param int i_dimensions:
+        :param int i_dimensions: enum cat_dxf_import_dimensions_enum
         :rtype: None
         """
         return self.dxf_setting_att.set_ImportDimensions(i_dimensions)
@@ -2271,7 +2277,7 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :param int i_end_points:
+        :param int i_end_points: enum cat_dxf_import_create_end_points_enum
         :rtype: None
         """
         return self.dxf_setting_att.set_ImportEndPoints(i_end_points)
@@ -2477,10 +2483,10 @@ class DxfSettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :param int i_unit:
+        :param int i_unit: enum cat_dxf_import_unit_enum
         :rtype: None
         """
         return self.dxf_setting_att.set_ImportUnit(i_unit)
 
     def __repr__(self):
-        return f'DxfSettingAtt(name="{ self.name }")'
+        return f'DxfSettingAtt(name="{self.name}")'

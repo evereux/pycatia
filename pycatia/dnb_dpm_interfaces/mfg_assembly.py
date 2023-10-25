@@ -179,6 +179,7 @@ class MfgAssembly(AnyObject):
                 |            MAtype = "Manufacturing Kit"
                 |          End If
 
+        :return: enum dnbia_mfg_assembly_type
         :rtype: int
         """
 

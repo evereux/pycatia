@@ -74,6 +74,7 @@ class ABQTabularAmplitude(ABQProperty):
                 |         STEP_TIME
                 |         TOTAL_TIME
 
+        :return: enum time_span_type
         :rtype: int
         """
 
@@ -82,7 +83,7 @@ class ABQTabularAmplitude(ABQProperty):
     @time_span.setter
     def time_span(self, value: int):
         """
-        :param int value:
+        :param int value: enum time_span_type
         """
 
         self.abq_tabular_amplitude.TimeSpan = value

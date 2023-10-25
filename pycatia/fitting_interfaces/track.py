@@ -53,6 +53,7 @@ class Track(Sampled):
                 |     calculated so that the end of the track is reached by the end of the total
                 |     time. Uses enum DMUTrackMoveMode, which defined is in this interface.
 
+        :return: enum dmu_track_move_mode
         :rtype: int
         """
 
@@ -61,7 +62,7 @@ class Track(Sampled):
     @move_mode.setter
     def move_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum dmu_track_move_mode
         """
 
         self.track.MoveMode = value

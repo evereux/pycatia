@@ -34,7 +34,7 @@ class SchInternalFlow(AnyObject):
         super().__init__(com_object)
         self.sch_internal_flow = com_object
 
-    def get_insertion_type(self, o_e_internal_flow_type: int) -> None:
+    def get_insertion_type(self) -> int:
         """
         .. note::
             :class: toggle
@@ -57,12 +57,12 @@ class SchInternalFlow(AnyObject):
                 |           ...
                 |          objThisIntf.GetInsertionTypeCatSchIDLInternalFlowType_Enum
 
-        :param int o_e_internal_flow_type:
+        :return: enum cat_sch_idl_internal_flow_type
         :rtype: None
         """
-        return self.sch_internal_flow.GetInsertionType(o_e_internal_flow_type)
+        return self.sch_internal_flow.GetInsertionType()
 
-    def get_status(self, o_e_internal_flow_status: int) -> None:
+    def get_status(self) -> int:
         """
         .. note::
             :class: toggle
@@ -85,10 +85,10 @@ class SchInternalFlow(AnyObject):
                 |           ...
                 |          objThisIntf.GetStatusCatSchIDLInternalFlowStatus_Enum
 
-        :param int o_e_internal_flow_status:
-        :rtype: None
+        :return: enum cat_sch_idl_internal_flow_status
+        :rtype: int
         """
-        return self.sch_internal_flow.GetStatus(o_e_internal_flow_status)
+        return self.sch_internal_flow.GetStatus()
 
     def list_sch_connectors(self) -> SchListOfObjects:
         """
@@ -141,7 +141,7 @@ class SchInternalFlow(AnyObject):
                 |           ...
                 |          objThisIntf.SetStatusCatSchIDLInternalFlowStatus_Enum
 
-        :param int i_e_internal_flow_status:
+        :param int i_e_internal_flow_status: enum cat_sch_idl_internal_flow_status
         :rtype: None
         """
         return self.sch_internal_flow.SetStatus(i_e_internal_flow_status)

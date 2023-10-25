@@ -162,7 +162,7 @@ class SchRouteAlternateGraphic(AnyObject):
                 |           ...
                 |          objThisIntf.RemoveAllAlternateGraphicsOfStyleCatSchIDLRouteAlternateGraphicStyle_Enum
 
-        :param int i_style:
+        :param int i_style: enum cat_sch_idl_route_alternate_graphic_style
         :rtype: None
         """
         return self.sch_route_alternate_graphic.RemoveAllAlternateGraphicsOfStyle(i_style)

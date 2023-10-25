@@ -92,7 +92,7 @@ class TCPTraceManagerGraphics(AnyObject):
                 |             index is pointing on the true width in pixel, recorded in the standard (if
                 |             there is one in the document) or in the setting. Input parameter.
 
-        :param int i_rep:
+        :param int i_rep: enum dnbtcp_trace_reps
         :param int i_thickness:
         :rtype: None
         """
@@ -139,7 +139,7 @@ class TCPTraceManagerGraphics(AnyObject):
                 |     Returns:
                 |         HRESULT Returns S_OK if it succeeds, otherwise E_FAIL.
 
-        :param int i_rep:
+        :param int i_rep: enum dnbtcp_trace_reps
         :param int i_type:
         :rtype: None
         """
@@ -180,7 +180,7 @@ class TCPTraceManagerGraphics(AnyObject):
                 |         iA
                 |             Long. Alpha color component from 0 to 255. Input parameter.
 
-        :param int i_rep:
+        :param int i_rep: enum dnbtcp_trace_reps
         :param int i_r:
         :param int i_g:
         :param int i_b:

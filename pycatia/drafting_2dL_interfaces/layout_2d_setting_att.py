@@ -242,6 +242,7 @@ class Layout2DSettingAtt(SettingController):
                 |     Deprecated:
                 |         V5R18
 
+        :return: enum cat_clipping_frame_reframe_on_mode
         :rtype: int
         """
 
@@ -338,6 +339,7 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the DedicatedFilterType parameter.
 
+        :return: enum cat_dedicated_filter_type
         :rtype: int
         """
 
@@ -558,6 +560,7 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the InsureViewNamesUniquenessScope parameter.
 
+        :return: enum cat_insure_view_names_uniqueness_scope
         :rtype: int
         """
 
@@ -566,7 +569,7 @@ class Layout2DSettingAtt(SettingController):
     @insure_view_names_uniqueness_scope.setter
     def insure_view_names_uniqueness_scope(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_insure_view_names_uniqueness_scope
         """
 
         self.layout_2d_setting_att.InsureViewNamesUniquenessScope = value
@@ -655,6 +658,7 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the ViewBackgroundMode parameter.
 
+        :return: enum cat_view_background_mode
         :rtype: int
         """
 
@@ -663,7 +667,7 @@ class Layout2DSettingAtt(SettingController):
     @view_background_mode.setter
     def view_background_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_view_background_mode
         """
 
         self.layout_2d_setting_att.ViewBackgroundMode = value
@@ -680,6 +684,7 @@ class Layout2DSettingAtt(SettingController):
                 | 
                 |     Returns the ViewFilterCreationMode parameter.
 
+        :return: enum cat_view_filter_creation_mode
         :rtype: int
         """
 
@@ -688,7 +693,7 @@ class Layout2DSettingAtt(SettingController):
     @view_filter_creation_mode.setter
     def view_filter_creation_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_view_filter_creation_mode
         """
 
         self.layout_2d_setting_att.ViewFilterCreationMode = value

@@ -73,6 +73,7 @@ class AssemblyGeneralSettingAtt(SettingController):
                 |          Set SwitchMode = AsmGeneralSettingAtt1.AutoSwitchToDesignMode
                 |          AsmGeneralSettingAtt1.AutoSwitchToDesignMode = catAutoSwitchAvailable
 
+        :return: enum cat_asm_auto_switch_to_design_mode
         :rtype: int
         """
 
@@ -81,7 +82,7 @@ class AssemblyGeneralSettingAtt(SettingController):
     @auto_switch_to_design_mode.setter
     def auto_switch_to_design_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_asm_auto_switch_to_design_mode
         """
 
         self.assembly_general_setting_att.AutoSwitchToDesignMode = value
@@ -110,6 +111,7 @@ class AssemblyGeneralSettingAtt(SettingController):
                 |          Set UpdateMode = AsmGeneralSettingAtt1.AutoUpdateMode
                 |          AsmGeneralSettingAtt1.AutoUpdateMode = catManualUpdate
 
+        :return: enum cat_asm_update_mode
         :rtype: int
         """
 
@@ -118,7 +120,7 @@ class AssemblyGeneralSettingAtt(SettingController):
     @auto_update_mode.setter
     def auto_update_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_asm_update_mode
         """
 
         self.assembly_general_setting_att.AutoUpdateMode = value
@@ -152,6 +154,7 @@ class AssemblyGeneralSettingAtt(SettingController):
                 |          Set MoveMode = AsmGeneralSettingAtt1.MoveWithFixTExtendMode
                 |          AsmGeneralSettingAtt1.MoveWithFixTExtendMode = catAlwaysExtendMoveToFixT
 
+        :return: enum cat_asm_extend_move_to_fix_t
         :rtype: int
         """
 
@@ -194,6 +197,7 @@ class AssemblyGeneralSettingAtt(SettingController):
                 |          Set StatusMode = AsmGeneralSettingAtt1.UpdateStatusMode
                 |          AsmGeneralSettingAtt1.UpdateStatusMode = catAutomaticCompute
 
+        :return: enum cat_asm_update_status_compute_mode
         :rtype: int
         """
 
@@ -202,7 +206,7 @@ class AssemblyGeneralSettingAtt(SettingController):
     @update_status_mode.setter
     def update_status_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_asm_update_status_compute_mode
         """
 
         self.assembly_general_setting_att.UpdateStatusMode = value

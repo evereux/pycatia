@@ -385,6 +385,7 @@ class ABQGeneralStaticStep(ABQStep):
                 |           DISSIPATION
                 |           FACTOR
 
+        :rtype: enum stabilization_type
         :rtype: int
         """
 
@@ -393,7 +394,7 @@ class ABQGeneralStaticStep(ABQStep):
     @stabilization_method.setter
     def stabilization_method(self, value: int):
         """
-        :param int value:
+        :param int value: enum stabilization_type
         """
 
         self.abq_general_static_step.StabilizationMethod = value
@@ -418,6 +419,7 @@ class ABQGeneralStaticStep(ABQStep):
                 |           AUTO_INCREMENT
                 |           FIXED_INCREMENT
 
+        :return: enum incrementation_type
         :rtype: int
         """
 
@@ -426,7 +428,7 @@ class ABQGeneralStaticStep(ABQStep):
     @time_incrementation_method.setter
     def time_incrementation_method(self, value: int):
         """
-        :param int value:
+        :param int value: enum incrementation_type
         """
 
         self.abq_general_static_step.TimeIncrementationMethod = value

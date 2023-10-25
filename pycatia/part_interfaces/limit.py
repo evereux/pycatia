@@ -76,7 +76,7 @@ class Limit(AnyObject):
     @limit_mode.setter
     def limit_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_limit_mode
         """
 
         self.limit.LimitMode = value

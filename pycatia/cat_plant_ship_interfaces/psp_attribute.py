@@ -232,7 +232,7 @@ class PSPAttribute(AnyObject):
                 |           ...
                 |          Set objArg2 = objThisIntf.ListAttributes (objArg1)
     
-        :param int i_domain_id:
+        :param int i_domain_id: enum cat_psp_idl_domain_id
         :rtype: PSPListOfBSTRs
         """
         return PSPListOfBSTRs(self.psp_attribute.ListAttributes(i_domain_id))

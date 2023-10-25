@@ -54,6 +54,7 @@ class Layout2DSheet(AnyObject):
                 | 
                 |          MySheet.Orientation = catPaperLandscape
 
+        :return: enum cat_paper_orientation
         :rtype: int
         """
 
@@ -62,7 +63,7 @@ class Layout2DSheet(AnyObject):
     @orientation.setter
     def orientation(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_paper_orientation
         """
 
         self.layout_2d_sheet.Orientation = value
@@ -171,6 +172,7 @@ class Layout2DSheet(AnyObject):
                 | 
                 |          MySheet.PaperSize = catPaperA4
 
+        :return: enum cat_paper_size
         :rtype: int
         """
 
@@ -179,7 +181,7 @@ class Layout2DSheet(AnyObject):
     @paper_size.setter
     def paper_size(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_paper_size
         """
 
         self.layout_2d_sheet.PaperSize = value
@@ -257,6 +259,7 @@ class Layout2DSheet(AnyObject):
                 | 
                 |          MySheet.ProjectionMethod = catFirstAngle
 
+        :return: enum cat_sheet_projection_method
         :rtype: int
         """
 
@@ -265,7 +268,7 @@ class Layout2DSheet(AnyObject):
     @projection_method.setter
     def projection_method(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_sheet_projection_method
         """
 
         self.layout_2d_sheet.ProjectionMethod = value
@@ -340,6 +343,7 @@ class Layout2DSheet(AnyObject):
                 |     See also:
                 |         CatVisuIn3DMode
 
+        :return: enum cat_visu_in_3d_mode
         :rtype: int
         """
 
@@ -348,7 +352,7 @@ class Layout2DSheet(AnyObject):
     @visu_in_3d.setter
     def visu_in_3d(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_visu_in_3d_mode
         """
 
         self.layout_2d_sheet.VisuIn3D = value
@@ -419,7 +423,7 @@ class Layout2DSheet(AnyObject):
                 |                  Layout2DSheet1.PrintOut
                 |                  catRenderShadingWithEdges
 
-        :param int i_rendering_mode:
+        :param int i_rendering_mode: enum cat_rendering_mode
         :rtype: None
         """
         return self.layout_2d_sheet.PrintOut(i_rendering_mode)
@@ -474,7 +478,7 @@ class Layout2DSheet(AnyObject):
                 |          "e:\temp\sheet1.prn",catRenderShadingWithEdges
 
         :param str file_name:
-        :param int i_rendering_mode:
+        :param int i_rendering_mode: enum cat_rendering_mode
         :rtype: None
         """
         return self.layout_2d_sheet.PrintToFile(file_name, i_rendering_mode)

@@ -100,6 +100,7 @@ class MoveToPostureActivity(WorkerActivity):
                 |     Returns or Sets Motion-Basis (see HTSMotionBasis for list of possible
                 |     values)
 
+        :return: enum hts_motion_basis
         :rtype: int
         """
 
@@ -108,7 +109,7 @@ class MoveToPostureActivity(WorkerActivity):
     @motion_basis.setter
     def motion_basis(self, value: int):
         """
-        :param int value:
+        :param int value: enum hts_motion_basis
         """
 
         self.move_to_posture_activity.MotionBasis = value
@@ -125,6 +126,7 @@ class MoveToPostureActivity(WorkerActivity):
                 |     Returns or Sets Manikin Referential (see HTSManikinReferential for list of
                 |     possible values)
 
+        :return: enum hts_manikin_referential
         :rtype: int
         """
 
@@ -133,7 +135,7 @@ class MoveToPostureActivity(WorkerActivity):
     @referential.setter
     def referential(self, value: int):
         """
-        :param int value:
+        :param int value: enum hts_manikin_referential
         """
 
         self.move_to_posture_activity.Referential = value
@@ -305,7 +307,7 @@ class MoveToPostureActivity(WorkerActivity):
                 | 
                 |     DEPRECATED. DO NOT USE
 
-        :param int e_ee:
+        :param int e_ee: enum hts_end_effector
         :param Product o_product:
         :param tuple o_offset_trans:
         :rtype: bool
@@ -538,7 +540,7 @@ class MoveToPostureActivity(WorkerActivity):
                 | 
                 |     DEPRECATED. DO NOT USE
 
-        :param int e_ee:
+        :param int e_ee: enum hts_end_effector
         :param Product o_product:
         :rtype: None
         """
@@ -571,7 +573,7 @@ class MoveToPostureActivity(WorkerActivity):
                 | 
                 |     DEPRECATED. DO NOT USE
 
-        :param int e_ee:
+        :param int e_ee: enum hts_end_effector
         :param Product o_product:
         :param tuple o_offset_trans:
         :rtype: None

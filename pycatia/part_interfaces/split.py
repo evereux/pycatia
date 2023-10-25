@@ -68,7 +68,7 @@ class Split(SurfaceBasedShape):
     @splitting_side.setter
     def splitting_side(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_split_side
         """
 
         self.split.SplittingSide = value

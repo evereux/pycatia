@@ -126,7 +126,7 @@ class CloseSurface(Pattern):
     @circular_pattern_parameters.setter
     def circular_pattern_parameters(self, value):
         """
-        :param enum cat_circular_pattern_parameters value:
+        :param int value: enum cat_circular_pattern_parameters
         """
 
         self.close_surface.CircularPatternParameters = value

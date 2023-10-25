@@ -103,7 +103,7 @@ class DrawingDimensions(Collection):
                 |      Dim MyDimension2 As DrawingDimension
                 |      Set MyDimension2 = MyView.Dimensions.Add(iType, myElements2(1), selpoints(3),catDimOffset)
 
-        :param int i_type_dim:
+        :param int i_type_dim: enum cat_dim_type
         :param tuple i_geom_elem:
         :param tuple i_pt_coord_elem:
         :param int i_line_rep:
@@ -185,7 +185,7 @@ class DrawingDimensions(Collection):
                 |      Dim MyDimension As DrawingDimension
                 |      Set MyDimension = MyView.Dimensions.Add2(iType, myElements(1), selpoints(3), Line1, 0)
 
-        :param int i_type_dim:
+        :param int i_type_dim: enum cat_dim_type
         :param tuple i_geom_elem:
         :param tuple i_pt_coord_elem:
         :param cat_variant i_ldc_ref_elem:

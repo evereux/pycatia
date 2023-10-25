@@ -163,6 +163,7 @@ class VisPropertySet(AnyObject):
                 |          MsgBox "layer =" & layer
                 |          End If
 
+        :return:
         :rtype: tuple
         """
         return self.vis_property_set.GetLayer()
@@ -190,6 +191,7 @@ class VisPropertySet(AnyObject):
                 |          visProperties1.GetPick pickstate
                 |          MsgBox "pick = " & pickstate
 
+        :return: enum cat_vis_property_status
         :rtype: int
         """
         return self.vis_property_set.GetPick()
@@ -759,7 +761,7 @@ class VisPropertySet(AnyObject):
                 |          Set visProperties1 = CATIA.ActiveDocument.Selection.VisProperties 
                 |          visProperties1.SetLayer catVisLayerBasic, 100
 
-        :param int i_layer_type:
+        :param int i_layer_type: enum cat_vis_layer_type
         :param int i_layer_value:
         :rtype: None
         """
@@ -785,7 +787,7 @@ class VisPropertySet(AnyObject):
                 |          Set visProperties1 = CATIA.ActiveDocument.Selection.VisProperties 
                 |          visProperties1.SetPick catVisPropertyNoPickAttr
 
-        :param int i_pick:
+        :param int i_pick: enum cat_vis_property_pick
         :rtype: None
         """
         return self.vis_property_set.SetPick(i_pick)
@@ -975,7 +977,7 @@ class VisPropertySet(AnyObject):
                 |          Set visProperties1 = CATIA.ActiveDocument.Selection.VisProperties 
                 |          visProperties1.SetShow catVisPropertyNoShowAttr
 
-        :param int i_show:
+        :param int i_show: enum cat_vis_property_show
         :rtype: None
         """
         return self.vis_property_set.SetShow(i_show)

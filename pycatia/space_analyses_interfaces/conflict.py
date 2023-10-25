@@ -15,7 +15,6 @@ from pycatia.system_interfaces.system_service import SystemService
 
 
 class Conflict(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -105,6 +104,7 @@ class Conflict(AnyObject):
                 |             Dim anInfo As CatConflictComparison
                 |             anInfo = NewConflict.ComparisonInfo
 
+        :return: enum cat_conflict_comparison
         :rtype: int
         """
 
@@ -190,6 +190,7 @@ class Conflict(AnyObject):
                 | 
                 |                 NewConflict.Status = CatConflictStatusIrrelevant
 
+        :return: enum cat_conflict_status
         :rtype: int
         """
 
@@ -198,7 +199,7 @@ class Conflict(AnyObject):
     @status.setter
     def status(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_conflict_status
         """
 
         self.conflict.Status = value
@@ -223,6 +224,7 @@ class Conflict(AnyObject):
                 |             Dim conflictType As CatConflictType
                 |             conflictType = NewConflict.Type
 
+        :return: enum cat_conflict_type
         :rtype: int
         """
 
@@ -347,4 +349,4 @@ class Conflict(AnyObject):
         return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'Conflict(name="{ self.name }")'
+        return f'Conflict(name="{self.name}")'

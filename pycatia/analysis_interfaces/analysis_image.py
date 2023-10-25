@@ -203,7 +203,7 @@ class AnalysisImage(AnyObject):
         :param str i_extension_type:
         :param AnyObject i_axis_system:
         :param Product i_product:
-        :param int i_axis_orientation_type:
+        :param int i_axis_orientation_type: enum cat_axis_orientation_type
         :param bool i_export_mesh_part_id:
         :rtype: None
         """
@@ -282,7 +282,7 @@ class AnalysisImage(AnyObject):
         :param Folder i_folder:
         :param str i_file_name:
         :param str i_extension_type:
-        :param int i_axis_orientation_type:
+        :param int i_axis_orientation_type: enum cat_axis_orientation_type
         :param bool i_export_mesh_part_id:
         :rtype: None
         """
@@ -382,7 +382,7 @@ class AnalysisImage(AnyObject):
         :param tuple i_x_direction:
         :param tuple i_y_direction:
         :param tuple i_z_direction:
-        :param int i_axis_orientation_type:
+        :param int i_axis_orientation_type: enum cat_axis_orientation_type
         :param bool i_export_mesh_part_id:
         :rtype: None
         """
@@ -478,7 +478,7 @@ class AnalysisImage(AnyObject):
         :param str i_extension_type:
         :param AxisSystem i_axis_system:
         :param Product i_product:
-        :param int i_axis_orientation_type:
+        :param int i_axis_orientation_type: enum cat_axis_orientation_type
         :param bool i_export_mesh_part_id:
         :rtype: None
         """

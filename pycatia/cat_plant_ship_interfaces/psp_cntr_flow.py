@@ -53,6 +53,7 @@ class PSPCntrFlow(AnyObject):
                 |           ...
                 |          Set ojArg1 = objThisIntf.FlowCapability
 
+        :return: enum cat_psp_idl_flow_capability
         :rtype: int
         """
 
@@ -84,6 +85,7 @@ class PSPCntrFlow(AnyObject):
                 |           ...
                 |          Set ojArg1 = objThisIntf.FlowReality
 
+        :return: enum cat_psp_idl_flow_reality
         :rtype: int
         """
 
@@ -92,7 +94,7 @@ class PSPCntrFlow(AnyObject):
     @flow_reality.setter
     def flow_reality(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_psp_idl_flow_reality
         """
 
         self.psp_cntr_flow.FlowReality = value

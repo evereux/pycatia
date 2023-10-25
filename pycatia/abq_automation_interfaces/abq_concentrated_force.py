@@ -114,6 +114,7 @@ class ABQConcentratedForce(ABQLoad):
                 |         DISTRIBUTEDLOAD
                 |         LOADDENSITY
 
+        :return: enum abq_conc_force_load_type
         :rtype: int
         """
 
@@ -122,7 +123,7 @@ class ABQConcentratedForce(ABQLoad):
     @load_type.setter
     def load_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum abq_conc_force_load_type
         """
 
         self.abq_concentrated_force.LoadType = value
@@ -451,6 +452,7 @@ class ABQConcentratedForce(ABQLoad):
                 |             ABQ_DEFAULTAXIS
 
         :rtype: enum abq_local_csys_type
+        :rtype: int
         """
         return self.abq_concentrated_force.GetUseCoordinateSystemType()
 
@@ -557,7 +559,7 @@ class ABQConcentratedForce(ABQLoad):
                 |             e.g. ABQ_CARTESIAN, ABQ_CYLINDRICAL, ABQ_SPHERICAL,
                 |             ABQ_DEFAULTAXIS
 
-        :param int i_csystem_type:
+        :param int i_csystem_type: enum abq_local_csys_type
         :rtype: None
         """
         return self.abq_concentrated_force.SetUseCoordinateSystemType(i_csystem_type)

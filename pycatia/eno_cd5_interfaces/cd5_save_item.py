@@ -318,6 +318,7 @@ class CD5SaveItem(AnyObject):
                 |          Dim itemStatus As CD5SaveItem_Status
                 |          itemStatus = oSaveItem.Status
 
+        :return: enum cd5_save_item_status
         :rtype: int
         """
 

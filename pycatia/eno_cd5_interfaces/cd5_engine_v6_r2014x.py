@@ -81,7 +81,7 @@ class CD5EngineV6R2014x(CD5Engine):
                 |          Dim SaveOperation As CD5SaveOperation
                 |          Set SaveOperation = oCD5Engine.CreateSaveOperation(CD5SaveOperation_Session)
 
-        :param int i_scope:
+        :param int i_scope: enum cd5_save_operation_scope
         :rtype: CD5SaveOperation
         """
         return CD5SaveOperation(self.cd5_engine_v6_r2014x.CreateSaveOperation(i_scope).com_object)

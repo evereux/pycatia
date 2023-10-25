@@ -60,6 +60,7 @@ class SpecsViewer(Viewer2D):
                 | 
                 |          SpecsTreeViewer.Layout = catSpecsViewerHorizontalCentered
 
+        :return: enum cat_specs_layout
         :rtype: int
         """
 
@@ -68,10 +69,10 @@ class SpecsViewer(Viewer2D):
     @layout.setter
     def layout(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_specs_layout
         """
 
         self.specs_viewer.Layout = value
 
     def __repr__(self):
-        return f'SpecsViewer(name="{ self.name }")'
+        return f'SpecsViewer(name="{self.name}")'

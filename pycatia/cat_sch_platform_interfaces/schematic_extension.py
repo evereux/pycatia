@@ -71,7 +71,7 @@ class SchematicExtension(AnyObject):
                 |          objThisIntf.AddExtensionobjArg1,CatSchIDLExtensionType_Enum,objArg3
 
         :param AnyObject i_app_obj_to_be_extended:
-        :param int i_extension_type:
+        :param int i_extension_type: enum cat_sch_idl_extension_type
         :param SchListOfObjects i_lgrr:
         :rtype: None
         """
@@ -123,7 +123,7 @@ class SchematicExtension(AnyObject):
                 |          objThisIntf.RemoveExtensionobjArg1,CatSchIDLExtensionType_Enum
 
         :param AnyObject i_app_extended_obj:
-        :param int i_extension_type:
+        :param int i_extension_type: enum cat_sch_idl_extension_type
         :rtype: None
         """
         return self.schematic_extension.RemoveExtension(i_app_extended_obj.com_object, i_extension_type)

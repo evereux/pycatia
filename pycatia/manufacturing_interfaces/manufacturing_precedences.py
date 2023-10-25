@@ -52,7 +52,7 @@ class ManufacturingPrecedences(Collection):
                 |     object is a CATIAManufacturingActivity.
 
         :param ManufacturingActivity i_object:
-        :param int i_type:
+        :param int i_type: enum cat_manufacturing_precedence_type
         :rtype: None
         """
         return self.manufacturing_precedences.AddOperation(i_object.com_object, i_type)

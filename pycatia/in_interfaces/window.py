@@ -291,6 +291,7 @@ class Window(AnyObject):
                 | 
                 |          CADWindow.WindowState = catWindowStateMaximized
 
+        :return: enum cat_window_state
         :rtype: int
         """
 
@@ -299,7 +300,7 @@ class Window(AnyObject):
     @window_state.setter
     def window_state(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_window_state
         """
 
         self.window.WindowState = value

@@ -51,6 +51,7 @@ class DrawingArrow(AnyObject):
                 | 
                 |          oSymbol = MyArrow.HeadSymbol
 
+        :return: enum cat_symbol_type
         :rtype: int
         """
 
@@ -59,7 +60,7 @@ class DrawingArrow(AnyObject):
     @head_symbol.setter
     def head_symbol(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_symbol_type
         """
 
         self.drawing_arrow.HeadSymbol = value

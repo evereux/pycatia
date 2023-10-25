@@ -297,7 +297,7 @@ class Fastener(AnyObject):
                 |         RemoveStatus MsgBox RemoveStatus
 
         :param bool i_force_remove_if_assigned:
-        :param int e_status:
+        :param int e_status: enum dnbppr_remove_status
         :rtype: None
         """
         return self.fastener.RemoveFromPPR(i_force_remove_if_assigned, e_status)

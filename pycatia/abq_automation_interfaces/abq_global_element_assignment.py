@@ -127,8 +127,8 @@ class ABQGlobalElementAssignment(AnyObject):
                 |             true
                 |             false
 
-        :param int i_elem_id:
-        :param int o_elem_behav:
+        :param int i_elem_id: enum elem_id_enum
+        :param int o_elem_behav: enum elem_behav_enum
         :param bool o_mff_lag:
         :param bool o_hf_flag:
         :param bool o_ri_flag:
@@ -256,8 +256,8 @@ class ABQGlobalElementAssignment(AnyObject):
                 |             SetElementValues TET_PARABOLI SOLID3D true true false false false
                 |             false.
 
-        :param int i_elem_id:
-        :param int i_elem_behav:
+        :param int i_elem_id: enum elem_id_enum
+        :param int i_elem_behav: enum elem_behav_enum
         :param bool i_mff_lag:
         :param bool i_hf_flag:
         :param bool i_ri_flag:

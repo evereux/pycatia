@@ -48,6 +48,7 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
+        :return: enum cat_section_clipping_mode
         :rtype: int
         """
 
@@ -56,7 +57,7 @@ class SectioningSettingAtt(SettingController):
     @clipping_mode.setter
     def clipping_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_section_clipping_mode
         """
 
         self.sectioning_setting_att.ClippingMode = value
@@ -178,6 +179,7 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
+        :return: enum cat_grid_position_mode
         :rtype: int
         """
 
@@ -186,7 +188,7 @@ class SectioningSettingAtt(SettingController):
     @grid_position_mode.setter
     def grid_position_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_grid_position_mode
         """
 
         self.sectioning_setting_att.GridPositionMode = value
@@ -204,6 +206,7 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
+        :return: enum cat_section_grid_style
         :rtype: int
         """
 
@@ -212,7 +215,7 @@ class SectioningSettingAtt(SettingController):
     @grid_style.setter
     def grid_style(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_section_grid_style
         """
 
         self.sectioning_setting_att.GridStyle = value
@@ -308,6 +311,7 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
+        :return: enum cat_section_plane_normal
         :rtype: int
         """
 
@@ -316,7 +320,7 @@ class SectioningSettingAtt(SettingController):
     @plane_normal.setter
     def plane_normal(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_section_plane_normal
         """
 
         self.sectioning_setting_att.PlaneNormal = value
@@ -334,6 +338,7 @@ class SectioningSettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
+        :return: enum cat_section_plane_origin
         :rtype: int
         """
 
@@ -342,7 +347,7 @@ class SectioningSettingAtt(SettingController):
     @plane_origin.setter
     def plane_origin(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_section_plane_origin
         """
 
         self.sectioning_setting_att.PlaneOrigin = value
@@ -596,6 +601,7 @@ class SectioningSettingAtt(SettingController):
                 |         S_OK Successfully retieved the window open mode E_FAIL Failed to
                 |         retrieved the window open mode
 
+        :return: enum cat_sec_window_open_mode
         :rtype: int
         """
 
@@ -604,7 +610,7 @@ class SectioningSettingAtt(SettingController):
     @window_open_mode.setter
     def window_open_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_sec_window_open_mode
         """
 
         self.sectioning_setting_att.WindowOpenMode = value

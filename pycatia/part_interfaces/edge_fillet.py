@@ -73,7 +73,7 @@ class EdgeFillet(Fillet):
     @edge_propagation.setter
     def edge_propagation(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_fillet_edge_propagation
         """
 
         self.edge_fillet.EdgePropagation = value

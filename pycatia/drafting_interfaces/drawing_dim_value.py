@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class DrawingDimValue(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -55,6 +54,7 @@ class DrawingDimValue(AnyObject):
                 | 
                 |          oFakeType = MyDimValue.FakeDimType
 
+        :return: enum cat_dim_fake
         :rtype: int
         """
 
@@ -63,7 +63,7 @@ class DrawingDimValue(AnyObject):
     @fake_dim_type.setter
     def fake_dim_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_dim_fake
         """
 
         self.drawing_dim_value.FakeDimType = value
@@ -83,6 +83,7 @@ class DrawingDimValue(AnyObject):
                 | 
                 |      ValueScoreType = MyValue.ScoringMode
 
+        :return: enum cat_dim_score
         :rtype: int
         """
 
@@ -91,7 +92,7 @@ class DrawingDimValue(AnyObject):
     @scoring_mode.setter
     def scoring_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_dim_score
         """
 
         self.drawing_dim_value.ScoringMode = value
@@ -134,6 +135,7 @@ class DrawingDimValue(AnyObject):
                 | 
                 |      ValueFramedElement = MyValue.ValueFramedElement
 
+        :return: enum cat_dim_frame_element
         :rtype: int
         """
 
@@ -142,7 +144,7 @@ class DrawingDimValue(AnyObject):
     @value_framed_element.setter
     def value_framed_element(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_dim_frame_element
         """
 
         self.drawing_dim_value.ValueFramedElement = value
@@ -164,6 +166,7 @@ class DrawingDimValue(AnyObject):
                 | 
                 |          oValueFramedGroup = MyDimValue.FakeDimType
 
+        :return: enum cat_dim_framed_group
         :rtype: int
         """
 
@@ -172,7 +175,7 @@ class DrawingDimValue(AnyObject):
     @value_framed_group.setter
     def value_framed_group(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_dim_framed_group
         """
 
         self.drawing_dim_value.ValueFramedGroup = value
@@ -752,4 +755,4 @@ class DrawingDimValue(AnyObject):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'DrawingDimValue(name="{ self.name }")'
+        return f'DrawingDimValue(name="{self.name}")'

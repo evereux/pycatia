@@ -63,7 +63,7 @@ class AuxDevicesMgt(AnyObject):
                 |             E_FAIL otherwise
 
         :param AnyObject i_aux_device_obj:
-        :param int i_aux_device_type:
+        :param int i_aux_device_type: enum dnb_auxilliary_device_type
         :rtype: None
         """
         return self.aux_devices_mgt.DefineAuxDevices(i_aux_device_obj.com_object, i_aux_device_type)
@@ -169,6 +169,7 @@ class AuxDevicesMgt(AnyObject):
                 |             E_FAIL otherwise
 
         :param int i_aux_device_num:
+        :return: enum dnb_auxilliary_device_type
         :rtype: int
         """
         return self.aux_devices_mgt.GetAuxDevicesType(i_aux_device_num)

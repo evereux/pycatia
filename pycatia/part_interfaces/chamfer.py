@@ -167,7 +167,7 @@ class Chamfer(DressUpShape):
     @mode.setter
     def mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_chamfer_mode
         """
 
         self.chamfer.Mode = value
@@ -200,7 +200,7 @@ class Chamfer(DressUpShape):
     @orientation.setter
     def orientation(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_chamfer_orientation
         """
 
         self.chamfer.Orientation = value

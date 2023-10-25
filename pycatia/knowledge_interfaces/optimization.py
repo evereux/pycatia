@@ -52,6 +52,7 @@ class Optimization(KnowledgeObject):
                 |     See also:
                 |         CatAlgorithmType
 
+        :return: enum cat_algorithm_type
         :rtype: int
         """
 
@@ -60,7 +61,7 @@ class Optimization(KnowledgeObject):
     @algorithm_type.setter
     def algorithm_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_algorithm_type
         """
 
         self.optimization.AlgorithmType = value
@@ -240,6 +241,7 @@ class Optimization(KnowledgeObject):
                 |     See also:
                 |         CatOptimizationType
 
+        :return: enum cat_optimization_type
         :rtype: int
         """
 
@@ -248,7 +250,7 @@ class Optimization(KnowledgeObject):
     @optimization_type.setter
     def optimization_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_optimization_type
         """
 
         self.optimization.OptimizationType = value

@@ -93,6 +93,7 @@ class AnalysisColorMap(AnyObject):
                 |          In this example, oDistMode is the output distribution mode for
                 |          analysisColorMap.
 
+        :return: enum spm_distribution_mode
         :rtype: int
         """
 
@@ -101,7 +102,7 @@ class AnalysisColorMap(AnyObject):
     @distribution_mode.setter
     def distribution_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum spm_distribution_mode
         """
 
         self.analysis_color_map.DistributionMode = value

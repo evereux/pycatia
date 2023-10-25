@@ -80,6 +80,7 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oIsStatus = MyDimension.DimStatus
 
+        :return: enum cat_dim_analyse
         :rtype: int
         """
 
@@ -102,6 +103,7 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oTypeDim = MyDimension.DimType
 
+        :return: enum cat_dim_type
         :rtype: int
         """
 
@@ -124,6 +126,7 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oDualValue = MyDimension.DualValue
 
+        :return: enum cat_dim_dual_display
         :rtype: int
         """
 
@@ -132,7 +135,7 @@ class DrawingDimension(AnyObject):
     @dual_value.setter
     def dual_value(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_dim_dual_display
         """
 
         self.drawing_dimension.DualValue = value
@@ -454,6 +457,7 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oValueFrame = MyDimension.ValueFrame
 
+        :return: enum cat_dim_frame
         :rtype: int
         """
 
@@ -462,7 +466,7 @@ class DrawingDimension(AnyObject):
     @value_frame.setter
     def value_frame(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_dim_frame
         """
 
         self.drawing_dimension.ValueFrame = value
@@ -514,6 +518,7 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oValueOrient = MyDimension.ValueOrientation
 
+        :return: enum cat_dim_orientation
         :rtype: int
         """
 
@@ -522,7 +527,7 @@ class DrawingDimension(AnyObject):
     @value_orientation.setter
     def value_orientation(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_dim_orientation
         """
 
         self.drawing_dimension.ValueOrientation = value
@@ -544,6 +549,7 @@ class DrawingDimension(AnyObject):
                 | 
                 |          oValueRef = MyDimension.ValueReference
 
+        :return: enum cat_dim_reference
         :rtype: int
         """
 
@@ -552,7 +558,7 @@ class DrawingDimension(AnyObject):
     @value_reference.setter
     def value_reference(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_dim_reference
         """
 
         self.drawing_dimension.ValueReference = value

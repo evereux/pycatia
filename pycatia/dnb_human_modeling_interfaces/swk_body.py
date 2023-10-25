@@ -741,7 +741,7 @@ class SWKBody(SWKBodyElement):
                 |             keeps the referential after the change of the
                 |             posture
 
-        :param int pi_posture_spec:
+        :param int pi_posture_spec: enum swk_posture_spec
         :param bool pi_keep_referential:
         :rtype: None
         """

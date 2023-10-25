@@ -529,6 +529,7 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
+        :return: enum catfta_dim_configure_snapping
         :rtype: int
         """
 
@@ -537,7 +538,7 @@ class FTASettingAtt(SettingController):
     @dim_configure_snapping.setter
     def dim_configure_snapping(self, value: int):
         """
-        :param int value:
+        :param int value: enum catfta_dim_configure_snapping
         """
 
         self.fta_setting_att.DimConfigureSnapping = value
@@ -581,6 +582,7 @@ class FTASettingAtt(SettingController):
                 | 
                 |     Ensure consistency with the C++ interface to which the work is delegated.
 
+        :return: enum catfta_dim_create_on
         :rtype: int
         """
 

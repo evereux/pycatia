@@ -72,7 +72,7 @@ class Hole(SketchBasedShape):
     @anchor_mode.setter
     def anchor_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_hole_anchor_mode
         """
 
         self.hole.AnchorMode = value
@@ -161,7 +161,7 @@ class Hole(SketchBasedShape):
     @bottom_type.setter
     def bottom_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_hole_bottom_type
         """
 
         self.hole.BottomType = value
@@ -196,7 +196,7 @@ class Hole(SketchBasedShape):
     @counter_sunk_mode.setter
     def counter_sunk_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_cs_hole_mode
         """
 
         self.hole.CounterSunkMode = value
@@ -448,7 +448,7 @@ class Hole(SketchBasedShape):
     @thread_side.setter
     def thread_side(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_hole_thread_side
         """
 
         self.hole.ThreadSide = value
@@ -483,7 +483,7 @@ class Hole(SketchBasedShape):
     @threading_mode.setter
     def threading_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_hole_threading_mode
         """
 
         self.hole.ThreadingMode = value
@@ -518,7 +518,7 @@ class Hole(SketchBasedShape):
     @type.setter
     def type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_hole_type
         """
 
         self.hole.Type = value
@@ -549,7 +549,7 @@ class Hole(SketchBasedShape):
                 |              firstHole.CreateStandardThreadDesignTable
                 |              catHoleMetricThinPitch
 
-        :param int i_standard_type:
+        :param int i_standard_type: enum cat_hole_thread_standard
         :rtype: None
         """
         return self.hole.CreateStandardThreadDesignTable(i_standard_type)

@@ -123,11 +123,11 @@ class PSPPhsyicalProduct(AnyObject):
 
         :param str i_class_filter:
         :param Reference i_face_cntr:
-        :param int ie_face_type:
+        :param int ie_face_type: enum cat_psp_idl_part_connector_type
         :param Reference i_alignment_cntr:
-        :param int ie_align_type:
+        :param int ie_align_type: enum cat_psp_idl_part_connector_type
         :param Reference i_clock_cntr:
-        :param int ie_clock_type:
+        :param int ie_clock_type: enum cat_psp_idl_part_connector_type
         :rtype: PSPPartConnector
         """
         return PSPPartConnector(

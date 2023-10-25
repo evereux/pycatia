@@ -574,6 +574,7 @@ class DrawingView(AnyObject):
                 |     Returns the drawing view type.
                 |     Warning: This method is not available with 2D Layout for 3D Design.
 
+        :return: enum cat_drawing_view_type
         :rtype: int
         """
 

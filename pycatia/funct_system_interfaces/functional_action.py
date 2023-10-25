@@ -99,6 +99,7 @@ class FunctionalAction(FunctionalElement):
                 |     See also:
                 |         CATFunctOrientationDirection
 
+        :return: enum cat_funct_orientation_direction
         :rtype: int
         """
 
@@ -107,7 +108,7 @@ class FunctionalAction(FunctionalElement):
     @orientation_direction.setter
     def orientation_direction(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_funct_orientation_direction
         """
 
         self.functional_action.OrientationDirection = value

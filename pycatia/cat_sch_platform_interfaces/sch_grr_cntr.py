@@ -63,7 +63,7 @@ class SchGRRCntr(AnyObject):
                 |          objThisIntf.GetSymbolobjArg1,CatSchIDLCntrSymbolType_Enum
 
         :param SchGRR o_grr:
-        :param int o_e_symbol_type:
+        :param int o_e_symbol_type: enum cat_sch_idl_cntr_symbol_type
         :rtype: None
         """
         return self.sch_grr_cntr.GetSymbol(o_grr.com_object, o_e_symbol_type)
@@ -135,7 +135,7 @@ class SchGRRCntr(AnyObject):
                 |          objThisIntf.SetSymbolobjArg1,CatSchIDLCntrSymbolType_Enum
 
         :param SchGRR i_grr_symbol:
-        :param int i_e_symbol_type:
+        :param int i_e_symbol_type: enum cat_sch_idl_cntr_symbol_type
         :rtype: None
         """
         return self.sch_grr_cntr.SetSymbol(i_grr_symbol.com_object, i_e_symbol_type)

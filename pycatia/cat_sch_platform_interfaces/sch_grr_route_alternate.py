@@ -34,7 +34,7 @@ class SchGRRRouteAlternate(AnyObject):
         super().__init__(com_object)
         self.sch_grr_route_alternate = com_object
 
-    def get_alternate_style(self, o_e_graphic_style: int) -> None:
+    def get_alternate_style(self) -> int:
         """
         .. note::
             :class: toggle
@@ -59,10 +59,10 @@ class SchGRRRouteAlternate(AnyObject):
                 |           ...
                 |          objThisIntf.GetAlternateStyleCatSchIDLRouteAlternateGraphicStyle_Enum
 
-        :param int o_e_graphic_style:
-        :rtype: None
+        :return: enum cat_sch_idl_route_alternate_graphic_style
+        :rtype: int
         """
-        return self.sch_grr_route_alternate.GetAlternateStyle(o_e_graphic_style)
+        return self.sch_grr_route_alternate.GetAlternateStyle()
 
     def __repr__(self):
         return f'SchGRRRouteAlternate(name="{self.name}")'

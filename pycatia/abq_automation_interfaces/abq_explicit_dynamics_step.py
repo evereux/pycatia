@@ -58,6 +58,7 @@ class ABQExplicitDynamicsStep(ABQStep):
                 |         ABQ_ATI_GLOBAL
                 |         ABQ_ATI_ELEMENT_BY_ELEMENT
 
+        :return: enum auto_time_increment_method
         :rtype: int
         """
 
@@ -66,7 +67,7 @@ class ABQExplicitDynamicsStep(ABQStep):
     @auto_time_increment_method.setter
     def auto_time_increment_method(self, value: int):
         """
-        :param int value:
+        :param int value: enum auto_time_increment_method
         """
 
         self.abq_explicit_dynamics_step.AutoTimeIncrementMethod = value
@@ -164,6 +165,7 @@ class ABQExplicitDynamicsStep(ABQStep):
                 |     ABQ_FTI_USER_DEFINED, the UserDefinedTimeIncrementValue property must be set to
                 |     specifiy the time increment value.
 
+        :return: enum fixed_time_increment_method
         :rtype: int
         """
 
@@ -172,7 +174,7 @@ class ABQExplicitDynamicsStep(ABQStep):
     @fixed_time_increment_method.setter
     def fixed_time_increment_method(self, value: int):
         """
-        :param int value:
+        :param int value: enum fixed_time_increment_method
         """
 
         self.abq_explicit_dynamics_step.FixedTimeIncrementMethod = value
@@ -279,6 +281,7 @@ class ABQExplicitDynamicsStep(ABQStep):
                 |           AUTO_INCREMENT
                 |           FIXED_INCREMENT
 
+        :return: enum incrementation_type
         :rtype: int
         """
 
@@ -287,7 +290,7 @@ class ABQExplicitDynamicsStep(ABQStep):
     @time_incrementation_method.setter
     def time_incrementation_method(self, value: int):
         """
-        :param int value:
+        :param int value: enum incrementation_type
         """
 
         self.abq_explicit_dynamics_step.TimeIncrementationMethod = value

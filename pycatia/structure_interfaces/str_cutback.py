@@ -70,6 +70,7 @@ class StrCutback(AssemblyFeature):
                 | 
                 |          Type = Member.Type
 
+        :return: enum cat_str_cutback_type
         :rtype: int
         """
 

@@ -46,6 +46,7 @@ class WalkActivity(WorkerActivity):
                 |     Returns or Sets Body Posture option (see HTSBodyPoseOptions for list of
                 |     possible values)
 
+        :return: enum hts_body_pose_options
         :rtype: int
         """
 
@@ -54,7 +55,7 @@ class WalkActivity(WorkerActivity):
     @body_pose.setter
     def body_pose(self, value: int):
         """
-        :param int value:
+        :param int value: enum hts_body_pose_options
         """
 
         self.walk_activity.BodyPose = value
@@ -71,6 +72,7 @@ class WalkActivity(WorkerActivity):
                 |     Returns or Sets Motion-Basis (see HTSWalkMotionBasis for list of possible
                 |     values)
 
+        :return: enum hts_walk_motion_basis
         :rtype: int
         """
 
@@ -79,7 +81,7 @@ class WalkActivity(WorkerActivity):
     @motion_basis.setter
     def motion_basis(self, value: int):
         """
-        :param int value:
+        :param int value: enum hts_walk_motion_basis
         """
 
         self.walk_activity.MotionBasis = value
@@ -96,6 +98,7 @@ class WalkActivity(WorkerActivity):
                 |     Returns or Sets Stride option (see HTSStrideOptions for list of possible
                 |     values)
 
+        :return: enum hts_stride_options
         :rtype: int
         """
 
@@ -104,7 +107,7 @@ class WalkActivity(WorkerActivity):
     @stride.setter
     def stride(self, value: int):
         """
-        :param int value:
+        :param int value: enum hts_stride_options
         """
 
         self.walk_activity.Stride = value
@@ -121,6 +124,7 @@ class WalkActivity(WorkerActivity):
                 |     Returns or Sets Swing option (see HTSSwingOptions for list of possible
                 |     values)
 
+        :return: enum hts_swing_options
         :rtype: int
         """
 
@@ -129,7 +133,7 @@ class WalkActivity(WorkerActivity):
     @swing.setter
     def swing(self, value: int):
         """
-        :param int value:
+        :param int value: enum hts_swing_options
         """
 
         self.walk_activity.Swing = value

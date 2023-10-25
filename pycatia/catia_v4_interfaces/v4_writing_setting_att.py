@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class V4WritingSettingAtt(SettingController):
-
     """
         .. note::
             :class: toggle
@@ -69,6 +68,7 @@ class V4WritingSettingAtt(SettingController):
                 |     Role: Returns or sets the associativity mode of migration.If non
                 |     associative mode is chosen, it is possible to create or not the solid.
 
+        :return: enum catv4_iv5_v4_associativity_mode_enum
         :rtype: int
         """
 
@@ -77,7 +77,7 @@ class V4WritingSettingAtt(SettingController):
     @asso_mode.setter
     def asso_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum catv4_iv5_v4_associativity_mode_enum
         """
 
         self.v4_writing_setting_att.Asso_mode = value
@@ -227,6 +227,7 @@ class V4WritingSettingAtt(SettingController):
                 |     Role: Returns or sets the curves associated to faces'boundaries creation
                 |     option.
 
+        :return: enum catv4_iv5_v4_internal_curve_creation_enum
         :rtype: int
         """
 
@@ -235,7 +236,7 @@ class V4WritingSettingAtt(SettingController):
     @mode_create_display.setter
     def mode_create_display(self, value: int):
         """
-        :param int value:
+        :param int value: enum catv4_iv5_v4_internal_curve_creation_enum
         """
 
         self.v4_writing_setting_att.ModeCreateDisplay = value
@@ -253,6 +254,7 @@ class V4WritingSettingAtt(SettingController):
                 |     Returns or sets the error feature creation option.
                 |     Role: Returns or sets the error feature creation option.
 
+        :return: enum catv4_iv5_v4_error_feature_creation_enum
         :rtype: int
         """
 
@@ -261,7 +263,7 @@ class V4WritingSettingAtt(SettingController):
     @mode_error_display.setter
     def mode_error_display(self, value: int):
         """
-        :param int value:
+        :param int value: enum catv4_iv5_v4_error_feature_creation_enum
         """
 
         self.v4_writing_setting_att.ModeErrorDisplay = value
@@ -970,4 +972,4 @@ class V4WritingSettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'V4WritingSettingAtt(name="{ self.name }")'
+        return f'V4WritingSettingAtt(name="{self.name}")'

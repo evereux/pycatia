@@ -19,6 +19,7 @@ from pycatia.system_interfaces.cat_base_dispatch import CATBaseDispatch
 if TYPE_CHECKING:
     from pycatia.drafting_interfaces.drawing_view import DrawingView
 
+
 class DrawingViewGenerativeBehavior(CATBaseDispatch):
     """
         .. note::
@@ -70,6 +71,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 | 
                 |          MyView.GenerativeBehavior.ColorInheritanceMode(cat3DColorInheritanceModeOn)
 
+        :return: enum cat_3d_color_inheritance_mode
         :rtype: int
         """
 
@@ -78,7 +80,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     @color_inheritance_mode.setter
     def color_inheritance_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_3d_color_inheritance_mode
         """
 
         self.drawing_view_generative_behavior.ColorInheritanceMode = value
@@ -145,6 +147,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 | 
                 |          MyView.GenerativeBehavior.FilletRepresentation = catFilletRepBoundary
 
+        :return: enum cat_fillet_representation
         :rtype: int
         """
 
@@ -153,7 +156,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     @fillet_representation.setter
     def fillet_representation(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_fillet_representation
         """
 
         self.drawing_view_generative_behavior.FilletRepresentation = value
@@ -181,6 +184,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 | 
                 |          MyView.GenerativeBehavior.HiddenLineMode = catHLRModeOn
 
+        :return: enum cat_hidden_line_mode
         :rtype: int
         """
 
@@ -189,7 +193,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     @hidden_line_mode.setter
     def hidden_line_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_hidden_line_mode
         """
 
         self.drawing_view_generative_behavior.HiddenLineMode = value
@@ -223,6 +227,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 | 
                 |     MyView.GenerativeBehavior.CatImageViewMode(catImageModeHRD)
 
+        :return: enum cat_image_view_mode
         :rtype: int
         """
 
@@ -231,7 +236,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     @image_view_mode.setter
     def image_view_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_image_view_mode
         """
 
         self.drawing_view_generative_behavior.ImageViewMode = value
@@ -317,6 +322,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 | 
                 |          MyView.GenerativeBehavior.PointsProjectionMode = catPointsProjectionModeOn
 
+        :return: enum cat_points_projection_mode
         :rtype: int
         """
 
@@ -325,7 +331,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     @points_projection_mode.setter
     def points_projection_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_points_projection_mode
         """
 
         self.drawing_view_generative_behavior.PointsProjectionMode = value
@@ -383,6 +389,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 | 
                 |      MyView.GenerativeBehavior.RepresentationMode = catPolyhedricMode
 
+        :return: enum cat_representation_mode
         :rtype: int
         """
 
@@ -391,7 +398,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
     @representation_mode.setter
     def representation_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_representation_mode
         """
 
         self.drawing_view_generative_behavior.RepresentationMode = value
@@ -1028,7 +1035,7 @@ class DrawingViewGenerativeBehavior(CATBaseDispatch):
                 |          catRightView
 
         :param DrawingViewGenerativeBehavior i_parent_view_generative_behavior:
-        :param int i_type:
+        :param int i_type: enum cat_proj_view_type
         :rtype: None
         """
         return self.drawing_view_generative_behavior.DefineProjectionView(

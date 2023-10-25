@@ -927,7 +927,7 @@ class Selection(AnyObject):
 
                                          ]
                                          )
-        
+
         return result
 
     def item(self, i_index: int) -> SelectedElement:
@@ -1804,20 +1804,11 @@ class Selection(AnyObject):
                 |          It creates a drawing containing a line and three points, and guides
                 |          the user in:
                 |
-                |
-                |
-                |
                 |             the selection of points
-                |
-                |
                 |             the selection of the symmetry axis
-                |
-                |
-                |
                 |
                 |          the selected points being moved by symmetry according to the selected
                 |          axis.
-                |
                 |
                 |         'We create a drawing
                 |          Set Documents = CATIA.Documents : Set Document = Documents.Add("Drawing")
@@ -1888,7 +1879,7 @@ class Selection(AnyObject):
         :param tuple i_filter_type:
         :param str i_message:
         :param bool i_object_selection_before_command_use_possibility:
-        :param int i_multi_selection_mode:
+        :param int i_multi_selection_mode: enum cat_multi_selection_mode
         :param bool i_tooltip:
         :rtype: str
         """

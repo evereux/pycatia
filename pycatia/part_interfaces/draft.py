@@ -90,7 +90,7 @@ class Draft(DressUpShape):
     @mode.setter
     def mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_draft_mode
         """
 
         self.draft.Mode = value

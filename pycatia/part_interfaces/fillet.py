@@ -71,7 +71,7 @@ class Fillet(DressUpShape):
     @fillet_boundary_relimitation.setter
     def fillet_boundary_relimitation(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_fillet_boundary_relimitation
         """
 
         self.fillet.FilletBoundaryRelimitation = value
@@ -106,7 +106,7 @@ class Fillet(DressUpShape):
     @fillet_trim_support.setter
     def fillet_trim_support(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_fillet_trim_support
         """
 
         self.fillet.FilletTrimSupport = value

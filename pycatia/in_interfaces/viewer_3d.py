@@ -60,6 +60,7 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.ClippingMode = catClippingModeNearAndFar
 
+        :return: enum cat_clipping_mode
         :rtype: int
         """
 
@@ -68,7 +69,7 @@ class Viewer3D(Viewer):
     @clipping_mode.setter
     def clipping_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_clipping_mode
         """
 
         self.viewer_3d.ClippingMode = value
@@ -238,6 +239,7 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.LightingMode = catInfiniteLightSource
 
+        :return: enum cat_lighting_mode
         :rtype: int
         """
 
@@ -246,7 +248,7 @@ class Viewer3D(Viewer):
     @lighting_mode.setter
     def lighting_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_lighting_mode
         """
 
         self.viewer_3d.LightingMode = value
@@ -268,6 +270,7 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.NavigationStyle = catNavigationWalk
 
+        :return: enum cat_navigation_style
         :rtype: int
         """
 
@@ -276,7 +279,7 @@ class Viewer3D(Viewer):
     @navigation_style.setter
     def navigation_style(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_navigation_style
         """
 
         self.viewer_3d.NavigationStyle = value
@@ -332,6 +335,7 @@ class Viewer3D(Viewer):
                 | 
                 |          My3DViewer.RenderingMode = catRenderShadingWithEdges
 
+        :return: enum cat_rendering_mode
         :rtype: int
         """
 
@@ -340,7 +344,7 @@ class Viewer3D(Viewer):
     @rendering_mode.setter
     def rendering_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_rendering_mode
         """
 
         self.viewer_3d.RenderingMode = value

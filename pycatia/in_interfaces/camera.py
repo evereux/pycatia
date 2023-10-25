@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class Camera(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -40,7 +39,7 @@ class Camera(AnyObject):
         self.camera = com_object
 
     @property
-    def type(self):
+    def type(self) -> int:
         """
         .. note::
             :class: toggle
@@ -62,9 +61,10 @@ class Camera(AnyObject):
                 |         The value returned by the Type property in MyCameraType is catCamera3D
 
         :return: enum cat_camera_type
+        :rtype: int
         """
 
         return self.camera.Type
 
     def __repr__(self):
-        return f'Camera(name="{ self.name }")'
+        return f'Camera(name="{self.name}")'

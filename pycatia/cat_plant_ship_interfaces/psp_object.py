@@ -54,6 +54,7 @@ class PSPObject(AnyObject):
                 |           ...
                 |          eApplID = objThisIntf.ApplicationID
 
+        :return: enum cat_psp_idl_application_id
         :rtype: int
         """
 
@@ -77,6 +78,7 @@ class PSPObject(AnyObject):
                 |           ...
                 |          eDomanID = objThisIntf.DomainID
 
+        :return: enum cat_psp_idl_domain_id
         :rtype: int
         """
 

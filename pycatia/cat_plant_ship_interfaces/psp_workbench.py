@@ -119,7 +119,7 @@ class PSPWorkbench(AnyObject):
                 |          objArg1 = catPspIDLCATPiping
                 |          Set objArg2 = objPspWorkbench.GetApplication (objArg1)
 
-        :param int i_application_id:
+        :param int i_application_id: enum cat_psp_idl_application_id
         :rtype: PSPApplication
         """
         return PSPApplication(self.psp_workbench.GetApplication(i_application_id))

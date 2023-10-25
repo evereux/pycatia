@@ -60,7 +60,7 @@ class SchAppCntrFlow(AnyObject):
                 |           ...
                 |         objThisIntf.AppGetFlowCapabilityCatSchIDLCntrFlowCapability_Enum
 
-        :param int o_e_flow_capability:
+        :param int o_e_flow_capability: enum cat_sch_idl_cntr_flow_capability
         :rtype: None
         """
         return self.sch_app_cntr_flow.AppGetFlowCapability(o_e_flow_capability)
@@ -89,7 +89,7 @@ class SchAppCntrFlow(AnyObject):
                 |           ...
                 |         objThisIntf.AppGetFlowRealityCatSchIDLCntrFlowReality_Enum
 
-        :param int o_e_flow_reality:
+        :param int o_e_flow_reality: enum cat_sch_idl_cntr_flow_reality
         :rtype: None
         """
         return self.sch_app_cntr_flow.AppGetFlowReality(o_e_flow_reality)
@@ -120,7 +120,7 @@ class SchAppCntrFlow(AnyObject):
                 |           ...
                 |         objThisIntf.AppSetFlowCapabilityCatSchIDLCntrFlowCapability_Enum
 
-        :param int i_e_flow_capability:
+        :param int i_e_flow_capability: enum cat_sch_idl_cntr_flow_capability
         :rtype: None
         """
         return self.sch_app_cntr_flow.AppSetFlowCapability(i_e_flow_capability)
@@ -151,7 +151,7 @@ class SchAppCntrFlow(AnyObject):
                 |           ...
                 |         objThisIntf.AppSetFlowRealityCatSchIDLCntrFlowReality_Enum
 
-        :param int i_e_flow_reality:
+        :param int i_e_flow_reality: enum cat_sch_idl_cntr_flow_reality
         :rtype: None
         """
         return self.sch_app_cntr_flow.AppSetFlowReality(i_e_flow_reality)

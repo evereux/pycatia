@@ -205,7 +205,7 @@ class TCPTrace(AnyObject):
         """
         return AnyObject(self.tcp_trace.GetAttachedOwner())
 
-    def get_color(self, i_rep: int, o_r: int, o_g: int, o_b: int, o_a: int) -> None:
+    def get_colour(self) -> int:
         """
         .. note::
             :class: toggle
@@ -236,14 +236,11 @@ class TCPTrace(AnyObject):
                 |         oA
                 |             Long. Alpha color component from 0 to 255. Input parameter.
 
-        :param int i_rep:
-        :param int o_r:
-        :param int o_g:
-        :param int o_b:
-        :param int o_a:
-        :rtype: None
+
+        :return: enum dnbtcp_trace_reps
+        :rtype: int
         """
-        return self.tcp_trace.GetColor(i_rep, o_r, o_g, o_b, o_a)
+        return self.tcp_trace.GetColor()
 
     def get_legends_visibility(self, i_type: int) -> bool:
         """
@@ -267,7 +264,7 @@ class TCPTrace(AnyObject):
                 |             Boolean. Indicates if it is visible(True) or hidden(False). Output
                 |             parameter.
 
-        :param int i_type:
+        :param int i_type: enum dnbtcp_trace_legends
         :rtype: bool
         """
         return self.tcp_trace.GetLegendsVisibility(i_type)
@@ -293,7 +290,7 @@ class TCPTrace(AnyObject):
                 |             index is pointing on the true width in pixel, recorded in the standard (if
                 |             there is one in the document) or in the setting. Input parameter.
 
-        :param int i_rep:
+        :param int i_rep: enum dnbtcp_trace_reps
         :rtype: int
         """
         return self.tcp_trace.GetThickness(i_rep)
@@ -330,7 +327,7 @@ class TCPTrace(AnyObject):
                 |             Long. Depends on the DNBTCPTraceReps. Output parameter. Output
                 |             parameter.
 
-        :param int i_rep:
+        :param int i_rep: enum dnbtcp_trace_reps
         :rtype: int
         """
         return self.tcp_trace.GetType(i_rep)
@@ -354,7 +351,7 @@ class TCPTrace(AnyObject):
                 |         obVisible
                 |             Boolean. True for visible and False for hidden. Output parameter.
 
-        :param int i_rep:
+        :param int i_rep: enum dnbtcp_trace_reps
         :rtype: bool
         """
         return self.tcp_trace.GetVisibility(i_rep)
@@ -486,7 +483,7 @@ class TCPTrace(AnyObject):
                 |         iA
                 |             Long. Alpha color component from 0 to 255. Input parameter.
 
-        :param int i_rep:
+        :param int i_rep: enum dnbtcp_trace_reps
         :param int i_r:
         :param int i_g:
         :param int i_b:
@@ -517,7 +514,7 @@ class TCPTrace(AnyObject):
                 |             Boolean. Indicates if it is visible(True) or hidden(False). Input
                 |             parameter.
 
-        :param int i_type:
+        :param int i_type: enum dnbtcp_trace_legends
         :param bool ib_visible:
         :rtype: None
         """
@@ -560,7 +557,7 @@ class TCPTrace(AnyObject):
                 |             index is pointing on the true width in pixel, recorded in the standard (if
                 |             there is one in the document) or in the setting. Input parameter.
 
-        :param int i_rep:
+        :param int i_rep: enum dnbtcp_trace_reps
         :param int i_thickness:
         :rtype: None
         """
@@ -604,7 +601,7 @@ class TCPTrace(AnyObject):
                 |     Returns:
                 |         HRESULT Returns S_OK if it succeeds, otherwise E_FAIL.
 
-        :param int i_rep:
+        :param int i_rep: enum dnbtcp_trace_reps
         :param int i_type:
         :rtype: None
         """
@@ -630,7 +627,7 @@ class TCPTrace(AnyObject):
                 |         ibActiv
                 |             Boolean. True for visible and False for hidden. Input parameter.
 
-        :param int i_rep:
+        :param int i_rep: enum dnbtcp_trace_reps
         :param bool ib_visible:
         :rtype: None
         """

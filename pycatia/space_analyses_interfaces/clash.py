@@ -123,23 +123,18 @@ class Clash(AnyObject):
                 | 
                 |     Example:
                 | 
-                |              The first example retrieves the computation type of NewClash
-                |              Clash.
+                |             The first example retrieves the computation type of NewClash
+                |             Clash.
                 |             
-                | 
                 |             Dim ComputationType As CatClashComputationType
                 |             ComputationType = NewClash.ComputationType
-                |             
-                | 
-                | 
-                |             
-                | 
-                |                 The second example sets the computation type of NewClash
-                |                 Clash.
-                |                 
-                | 
-                |                 NewClash.ComputationType = catClashComputationTypeBetweenAll
+                |
+                |            The second example sets the computation type of NewClash
+                |            Clash.
+                |
+                |            NewClash.ComputationType = catClashComputationTypeBetweenAll
 
+        :return: enum cat_clash_computation_type
         :rtype: int
         """
 
@@ -148,7 +143,7 @@ class Clash(AnyObject):
     @computation_type.setter
     def computation_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_clash_computation_type
         """
 
         self.clash.ComputationType = value
@@ -252,6 +247,7 @@ class Clash(AnyObject):
                 | 
                 |                 NewClash.InterferenceType = CatClashInterferenceTypeContact
 
+        :return: enum cat_clash_interference_type
         :rtype: int
         """
 
@@ -384,7 +380,7 @@ class Clash(AnyObject):
                 |             NewClash.Export CatClashExportTypeXMLResultOnly,
                 |             "c:\\tmp\\sample.xml"
 
-        :param int i_type:
+        :param int i_type: enum cat_clash_export_type
         :param str i_path:
         :rtype: None
         """
