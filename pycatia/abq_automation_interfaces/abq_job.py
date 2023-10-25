@@ -562,6 +562,7 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.RestartReadOption = ABQ_RESTART_END_OF_STEP
 
+        :return: enum abq_restart_read_option
         :rtype: int
         """
 
@@ -570,7 +571,7 @@ class ABQJob(AnyObject):
     @restart_read_option.setter
     def restart_read_option(self, value: int):
         """
-        :param int value:
+        :param int value: enum abq_restart_read_option
         """
 
         self.abq_job.RestartReadOption = value
@@ -669,6 +670,7 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.RestartReadStepSelectionOption = ABQ_STEP_OBJECT
 
+        :return: enum abq_restart_read_step_sel_option
         :rtype: int
         """
 
@@ -677,7 +679,7 @@ class ABQJob(AnyObject):
     @restart_read_step_selection_option.setter
     def restart_read_step_selection_option(self, value: int):
         """
-        :param int value:
+        :param int value: enum abq_restart_read_step_sel_option
         """
 
         self.abq_job.RestartReadStepSelectionOption = value
@@ -830,6 +832,7 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.RestartRequestOption = RESTART_EVERYINC
 
+        :return: enum ABQ_RESTART_NONE
         :rtype: int
         """
 
@@ -838,7 +841,7 @@ class ABQJob(AnyObject):
     @restart_request_option.setter
     def restart_request_option(self, value: int):
         """
-        :param int value:
+        :param int value: enum ABQ_RESTART_NONE
         """
 
         self.abq_job.RestartRequestOption = value
