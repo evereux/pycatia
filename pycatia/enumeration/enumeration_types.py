@@ -53,13 +53,11 @@ abq_output_variable_type = (
     "ABQALLVAR",
 )
 
-# todo: find where this should be referenced
 abq_requested_modes_option = (
     "ABQ_ALL",
     "ABQ_VALUE",
 )
 
-# todo: find where this should be referenced
 abq_restart_option = (
     "ABQ_RESTART_NONE",
     "ABQ_RESTART_EVERYINC",
@@ -68,13 +66,11 @@ abq_restart_option = (
     "ABQ_RESTART_LASTINC",
 )
 
-# todo: find where this should be referenced
 abq_restart_read_option = (
     "ABQ_RESTART_END_OF_STEP",
     "ABQ_RESTART_INTERVAL",
 )
 
-# todo: find where this should be referenced
 abq_restart_read_step_sel_option = (
     "ABQ_STEP_OBJECT",
     "ABQ_STEP_NUMBER",
