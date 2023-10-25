@@ -71,7 +71,7 @@ class PrintersSettingAtt(SettingController):
                 |             CatPrinterDirFree : the printers included in the directory are free.
 
         :param str i_printer_dir:
-        :param int i_printer_dir_state:
+        :param int i_printer_dir_state: enum cat_printer_dir_state
         :rtype: None
         """
         return self.printers_setting_att.AddPrinterDirectory(i_printer_dir, i_printer_dir_state)
@@ -335,6 +335,7 @@ class PrintersSettingAtt(SettingController):
                 |         CatPrinterDirFree : the printers included in the directory are free.
 
         :param str i_printer_dir:
+        :return: enum cat_printer_dir_state
         :rtype: int
         """
         return self.printers_setting_att.GetPrinterDirectoryState(i_printer_dir)
@@ -462,7 +463,7 @@ class PrintersSettingAtt(SettingController):
                 |             CatPrinterDirFree : the printers included in the directory are free.
 
         :param str i_printer_dir:
-        :param int i_printer_dir_state:
+        :param int i_printer_dir_state: enum cat_printer_dir_state
         :rtype: None
         """
         return self.printers_setting_att.ModifyPrinterDirectoryState(i_printer_dir, i_printer_dir_state)

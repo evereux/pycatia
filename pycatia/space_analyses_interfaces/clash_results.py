@@ -76,7 +76,7 @@ class ClashResults(Collection):
                 |                                                              CatClashImportTypeClashOnly)
 
         :param str i_path:
-        :param int i_type:
+        :param int i_type: enum cat_clash_import_type
         :rtype: ClashResult
         """
         return ClashResult(self.clash_results.AddFromXML(i_path, i_type))

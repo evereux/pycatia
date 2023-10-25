@@ -95,6 +95,7 @@ class ABQTemperature(AnyObject):
                 |          Dim abqTemperature As ABQTemperature
                 |          abqTemperature.Distribution = USERDEFINED
 
+        :return: enum distribution_type
         :rtype: int
         """
 

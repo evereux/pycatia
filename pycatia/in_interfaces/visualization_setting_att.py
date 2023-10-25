@@ -744,6 +744,7 @@ class VisualizationSettingAtt(SettingController):
                 | 
                 |     Returns the AntiAliasingMode parameter.
 
+        :return: enum cat_full_scene_anti_aliasing_mode
         :rtype: int
         """
 
@@ -752,7 +753,7 @@ class VisualizationSettingAtt(SettingController):
     @full_scene_anti_aliasing_mode.setter
     def full_scene_anti_aliasing_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_full_scene_anti_aliasing_mode
         """
 
         self.visualization_setting_att.FullSceneAntiAliasingMode = value
@@ -1830,6 +1831,7 @@ class VisualizationSettingAtt(SettingController):
                 |         E_FAIL
                 |             if the operation failed.
 
+        :return: enum cat_back_face_culling_mode
         :rtype: int
         """
         return self.visualization_setting_att.GetBackFaceCullingMode()
@@ -3394,7 +3396,7 @@ class VisualizationSettingAtt(SettingController):
                 |         E_FAIL
                 |             if the operation failed.
 
-        :param int i_back_face_culling_mode:
+        :param int i_back_face_culling_mode: enum cat_back_face_culling_mode
         :rtype: None
         """
         return self.visualization_setting_att.PutBackFaceCullingMode(i_back_face_culling_mode)

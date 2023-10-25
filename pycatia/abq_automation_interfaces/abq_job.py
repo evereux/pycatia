@@ -301,6 +301,7 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.MemoryUnit = PERCENT
 
+        :return: enum memory_unit_type
         :rtype: int
         """
 
@@ -309,7 +310,7 @@ class ABQJob(AnyObject):
     @memory_unit.setter
     def memory_unit(self, value: int):
         """
-        :param int value:
+        :param int value: enum memory_unit_type
         """
 
         self.abq_job.MemoryUnit = value
@@ -446,6 +447,7 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.ParallelizationMethodStandard = TREE
 
+        :return: enum parallel_method_std_type
         :rtype: int
         """
 
@@ -454,7 +456,7 @@ class ABQJob(AnyObject):
     @parallelization_method_standard.setter
     def parallelization_method_standard(self, value: int):
         """
-        :param int value:
+        :param int value: enum parallel_method_std_type
         """
 
         self.abq_job.ParallelizationMethodStandard = value
@@ -1005,6 +1007,7 @@ class ABQJob(AnyObject):
                 | 
                 |              myJob.Type = ANALYSIS
 
+        :return: enum job_type
         :rtype: int
         """
 
@@ -1013,7 +1016,7 @@ class ABQJob(AnyObject):
     @type.setter
     def type(self, value: int):
         """
-        :param int value:
+        :param int value: enum job_type
         """
 
         self.abq_job.Type = value

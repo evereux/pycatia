@@ -320,7 +320,7 @@ class AssemblyFeatures(Collection):
 
         :param Reference i_splitting_element:
         :param Product i_splitting_elem_comp:
-        :param int i_split_side:
+        :param int i_split_side: enum cat_split_side
         :param Product i_component:
         :rtype: AssemblyFeature
         """

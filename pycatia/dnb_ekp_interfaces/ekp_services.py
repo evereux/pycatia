@@ -69,7 +69,7 @@ class EkpServices(AnyObject):
         :param AnyObject i_geometric_feature:
         :param AnyObject i_fta:
         :param Activity i_operation:
-        :param int i_type:
+        :param int i_type: enum item_assignment_type
         :rtype: None
         """
         return self.ekp_services.AssignER(
@@ -118,7 +118,7 @@ class EkpServices(AnyObject):
 
         :param AnyObject i_fta:
         :param Activity i_operation:
-        :param int i_type:
+        :param int i_type: enum item_assignment_type
         :rtype: None
         """
         return self.ekp_services.AssignERWithFTA(i_fta.com_object, i_operation.com_object, i_type)
@@ -164,7 +164,7 @@ class EkpServices(AnyObject):
                 |             activity
 
         :param Activity i_operation:
-        :param int i_type:
+        :param int i_type: enum item_assignment_type
         :param tuple o_item_list:
         :rtype: None
         """
@@ -222,7 +222,7 @@ class EkpServices(AnyObject):
         :param AnyObject i_geometric_feature:
         :param AnyObject i_fta:
         :param Activity i_operation:
-        :param int i_type:
+        :param int i_type: enum item_assignment_type
         :rtype: None
         """
         return self.ekp_services.RemoveERAssignment(
@@ -271,7 +271,7 @@ class EkpServices(AnyObject):
 
         :param AnyObject i_fta:
         :param Activity i_operation:
-        :param int i_type:
+        :param int i_type: enum item_assignment_type
         :rtype: None
         """
         return self.ekp_services.RemoveERWithFTA(i_fta.com_object, i_operation.com_object, i_type)

@@ -58,6 +58,7 @@ class AssemblyPocket(AssemblyFeature):
                 |          Set dirOrientation = assemblyPocket.DirectionOrientation
                 |          assemblyPocket.DirectionOrientation = catInverseOrientation
 
+        :return: enum cat_prism_orientation
         :rtype: int
         """
 
@@ -66,7 +67,7 @@ class AssemblyPocket(AssemblyFeature):
     @direction_orientation.setter
     def direction_orientation(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_prism_orientation
         """
 
         self.assembly_pocket.DirectionOrientation = value
@@ -91,6 +92,7 @@ class AssemblyPocket(AssemblyFeature):
                 |          Set dirType = assemblyPocket.DirectionType
                 |          assemblyPocket.DirectionType = catNormalToSketchDirection
 
+        :return: enum cat_prism_extrusion_direction
         :rtype: int
         """
 
@@ -99,7 +101,7 @@ class AssemblyPocket(AssemblyFeature):
     @direction_type.setter
     def direction_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_prism_extrusion_direction
         """
 
         self.assembly_pocket.DirectionType = value

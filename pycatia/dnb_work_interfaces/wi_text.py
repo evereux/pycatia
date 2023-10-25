@@ -157,7 +157,7 @@ class WIText(AnyObject):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :param int i_assignment_type:
+        :param int i_assignment_type: enum item_assignment_type
         :param AnyObject io_point_geom:
         :rtype: None
         """

@@ -54,8 +54,7 @@ class DrawingThread(AnyObject):
                 |       If MyThread.IsLinkedTo()=cat2DCircle Then
                 |          MyThread.Type = catTaped
                 |        End If
-                |      
-                | 
+                |
                 |     Methods
                 | 
                 | o Func IsLinkedTo() As CatThreadLinkedTo
@@ -72,6 +71,7 @@ class DrawingThread(AnyObject):
                 | 
                 |      ThreadLinkType = MyThread.IsLinkedTo
 
+        :return: enum cat_thread_type
         :rtype: int
         """
 
@@ -80,7 +80,7 @@ class DrawingThread(AnyObject):
     @type.setter
     def type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_thread_type
         """
 
         self.drawing_thread.Type = value

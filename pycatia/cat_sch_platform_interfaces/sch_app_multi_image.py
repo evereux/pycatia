@@ -124,7 +124,7 @@ class SchAppMultiImage(AnyObject):
         """
         return SchAppMultiImageMaster(self.sch_app_multi_image.AppGetMasterObject())
 
-    def app_is_up_to_date(self, o_status: int) -> None:
+    def app_is_up_to_date(self) -> int:
         """
         .. note::
             :class: toggle
@@ -148,10 +148,10 @@ class SchAppMultiImage(AnyObject):
                 |          objThisIntf.AppIsUpToDate
                 |          CatSchIDLMultiImageStatus_Enum
 
-        :param int o_status:
-        :rtype: None
+        :return: enum cat_sch_idl_multi_image_status
+        :rtype: int
         """
-        return self.sch_app_multi_image.AppIsUpToDate(o_status)
+        return self.sch_app_multi_image.AppIsUpToDate()
 
     def app_update(self, i_master_image: SchAppMultiImageMaster, o_image: 'SchAppMultiImage') -> None:
         """

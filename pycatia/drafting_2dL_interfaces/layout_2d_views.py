@@ -150,7 +150,7 @@ class Layout2DViews(Collection):
         :param tuple i_bc_segment:
         :param float i_xorient:
         :param float i_yorient:
-        :param int i_section_type:
+        :param int i_section_type: enum cat_view_type
         :param float i_x:
         :param float i_y:
         :rtype: Layout2DView
@@ -263,7 +263,7 @@ class Layout2DViews(Collection):
                 |         The created Layout2D view
 
         :param tuple i_plane:
-        :param int i_view_type:
+        :param int i_view_type: enum cat_view_type
         :param float i_x:
         :param float i_y:
         :rtype: Layout2DView
@@ -364,7 +364,7 @@ class Layout2DViews(Collection):
                 |                   AddRelated(MyFirstView,catLeftSide, x, y)
 
         :param Layout2DView i_reference_view:
-        :param int i_side:
+        :param int i_side: enum cat_view_side
         :param float i_x:
         :param float i_y:
         :rtype: Layout2DView

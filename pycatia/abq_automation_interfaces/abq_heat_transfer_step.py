@@ -333,6 +333,7 @@ class ABQHeatTransferStep(ABQStep):
                 |           STEADY_STATE  
                 |           TRANSIENT
 
+        :return: enum response_type
         :rtype: int
         """
 
@@ -341,7 +342,7 @@ class ABQHeatTransferStep(ABQStep):
     @response.setter
     def response(self, value: int):
         """
-        :param int value:
+        :param int value: enum response_type
         """
 
         self.abq_heat_transfer_step.Response = value
@@ -366,6 +367,7 @@ class ABQHeatTransferStep(ABQStep):
                 |           AUTO_INCREMENT
                 |           FIXED_INCREMENT
 
+        :return: enum incrementation_type
         :rtype: int
         """
 
@@ -374,7 +376,7 @@ class ABQHeatTransferStep(ABQStep):
     @time_incrementation_method.setter
     def time_incrementation_method(self, value: int):
         """
-        :param int value:
+        :param int value: enum incrementation_type
         """
 
         self.abq_heat_transfer_step.TimeIncrementationMethod = value

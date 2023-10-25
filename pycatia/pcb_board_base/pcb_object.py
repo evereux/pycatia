@@ -56,6 +56,7 @@ class PCBObject(AnyObject):
                 |             S_OK if succeeded
                 |             E_FAIL if failed
 
+        :return: enum cat_electronic_type
         :rtype: int
         """
 

@@ -138,6 +138,7 @@ class ArrangementBoundary(AnyObject):
                 | 
                 |          objBoundary1.SectionType = CatArrangementRouteSectionRectangular
 
+        :return: enum cat_arrangement_route_section
         :rtype: int
         """
 
@@ -146,7 +147,7 @@ class ArrangementBoundary(AnyObject):
     @section_type.setter
     def section_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_arrangement_route_section
         """
 
         self.arrangement_boundary.SectionType = value
@@ -201,6 +202,7 @@ class ArrangementBoundary(AnyObject):
                 | 
                 |          objBoundary1.VisuMode = CatArrangementRouteVisuModeSolid
 
+        :return: enum cat_arrangement_route_visu_mode
         :rtype: int
         """
 
@@ -209,7 +211,7 @@ class ArrangementBoundary(AnyObject):
     @visu_mode.setter
     def visu_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_arrangement_route_visu_mode
         """
 
         self.arrangement_boundary.VisuMode = value

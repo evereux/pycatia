@@ -303,6 +303,7 @@ class FtaInfraSettingAtt(SettingController):
                 |     Role: The Leader Associativity setting parameter defines the associativity
                 |     of a leader with the pointed geometrical element.
 
+        :return: enum catfta_leader_associativity
         :rtype: int
         """
 
@@ -311,7 +312,7 @@ class FtaInfraSettingAtt(SettingController):
     @leader_associativity.setter
     def leader_associativity(self, value: int):
         """
-        :param int value:
+        :param int value: enum catfta_leader_associativity
         """
 
         self.fta_infra_setting_att.LeaderAssociativity = value

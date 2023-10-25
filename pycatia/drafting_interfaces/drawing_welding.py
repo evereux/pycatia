@@ -92,6 +92,7 @@ class DrawingWelding(AnyObject):
                 | 
                 |          MyWeld.IdentificationLineSide = catWeldingUp
 
+        :return: enum cat_welding_side
         :rtype: int
         """
 
@@ -100,7 +101,7 @@ class DrawingWelding(AnyObject):
     @identification_line_side.setter
     def identification_line_side(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_welding_side
         """
 
         self.drawing_welding.IdentificationLineSide = value
@@ -170,6 +171,7 @@ class DrawingWelding(AnyObject):
                 | 
                 |          MyWeld.WeldingSide = catWeldingUp
 
+        :return: enum cat_welding_side
         :rtype: int
         """
 
@@ -178,7 +180,7 @@ class DrawingWelding(AnyObject):
     @welding_side.setter
     def welding_side(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_welding_side
         """
 
         self.drawing_welding.WeldingSide = value
@@ -200,6 +202,7 @@ class DrawingWelding(AnyObject):
                 | 
                 |          MyWeld.WeldingTail = catDftWeldingTailYES
 
+        :return: enum cat_dft_welding_tail
         :rtype: int
         """
 
@@ -208,7 +211,7 @@ class DrawingWelding(AnyObject):
     @welding_tail.setter
     def welding_tail(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_dft_welding_tail
         """
 
         self.drawing_welding.WeldingTail = value
@@ -302,7 +305,7 @@ class DrawingWelding(AnyObject):
                 |                  MyWelding.Symbol = DftConcaveSymbol
 
         :param int i_weld:
-        :return: enum cat_weld_additional_symbol
+        :return: enum cat_welding
         :rtype: int
         """
         return self.drawing_welding.GetAdditionalSymbol(i_weld)
@@ -329,7 +332,7 @@ class DrawingWelding(AnyObject):
                 | 
                 |                  MyWelding.GetFinishSymbol(catWeldingFieldOne,oFinishSymbol)
 
-        :param int i_weld:
+        :param int i_weld: enum cat_welding
         :return: enum cat_dft_weld_finish_symbol
         :rtype: int
         """
@@ -358,7 +361,7 @@ class DrawingWelding(AnyObject):
                 | 
                 |                  MyWelding.GetSymbol(catWeldingFieldOne,oSymbol)
 
-        :param int i_weld:
+        :param int i_weld: enum cat_welding
         :return: enum cat_welding_symbol
         :rtype: int
         """
@@ -391,7 +394,7 @@ class DrawingWelding(AnyObject):
                 |      Dim textRange As DrawingTextRange
                 |      Set textRange = MyWelding.GetTextRange (catWeldingUp)
 
-        :param int i_field:
+        :param int i_field: enum cat_welding_field
         :rtype: DrawingTextRange
         """
         return DrawingTextRange(self.drawing_welding.GetTextRange(i_field))
@@ -420,8 +423,8 @@ class DrawingWelding(AnyObject):
                 | 
                 |                  MyWelding.Symbol = DftConcaveSymbol
 
-        :param int i_symbol:
-        :param int i_weld:
+        :param int i_symbol: enum cat_weld_additional_symbol
+        :param int i_weld: enum cat_welding
         :rtype: None
         """
         return self.drawing_welding.SetAdditionalSymbol(i_symbol, i_weld)
@@ -451,8 +454,8 @@ class DrawingWelding(AnyObject):
                 |                 
                 |                 MyWelding.GetFinishSymbol(catWeldingFieldOne,catDftLetterCWelding)
 
-        :param int i_finish_symbol:
-        :param int i_weld:
+        :param int i_finish_symbol: enum cat_dft_weld_finish_symbol
+        :param int i_weld: enum cat_welding
         :rtype: None
         """
         return self.drawing_welding.SetFinishSymbol(i_finish_symbol, i_weld)
@@ -481,8 +484,8 @@ class DrawingWelding(AnyObject):
                 | 
                 |                  MyWelding.SetSymbol(catSquareWelding,catWeldingFieldOne)
 
-        :param int i_symbol:
-        :param int i_weld:
+        :param int i_symbol: enum cat_welding_symbol
+        :param int i_weld: enum cat_welding
         :rtype: None
         """
         return self.drawing_welding.SetSymbol(i_symbol, i_weld)

@@ -58,6 +58,7 @@ class DrawingTable(AnyObject):
                 | 
                 |                  MyTable.AnchorPoint = CatTableBottomLeft
 
+        :return: enum cat_table_position
         :rtype: int
         """
 
@@ -122,6 +123,7 @@ class DrawingTable(AnyObject):
                 | 
                 |          MyTable.ComputeMode = CatTableOFF
 
+        :return: enum cat_table_compute_mode
         :rtype: int
         """
 
@@ -130,7 +132,7 @@ class DrawingTable(AnyObject):
     @compute_mode.setter
     def compute_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_table_compute_mode
         """
 
         self.drawing_table.ComputeMode = value
@@ -676,7 +678,7 @@ class DrawingTable(AnyObject):
                 | 
                 |          MyTable.InvertMode CatInvertColumn
 
-        :param int i_mode:
+        :param int i_mode: enum cat_table_invert_mode
         :rtype: None
         """
         return self.drawing_table.InvertMode(i_mode)
@@ -862,7 +864,7 @@ class DrawingTable(AnyObject):
 
         :param int i_row:
         :param int i_col:
-        :param int i_align:
+        :param int i_align: enum cat_table_position
         :rtype: None
         """
         return self.drawing_table.SetCellAlignment(i_row, i_col, i_align)

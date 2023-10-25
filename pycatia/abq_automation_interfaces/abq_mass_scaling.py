@@ -100,6 +100,7 @@ class ABQMassScaling(AnyObject):
                 | 
                 |     Sets or returns the scaling frequency type.
 
+        :return: enum abq_ms_frequency_type
         :rtype: int
         """
 
@@ -213,6 +214,7 @@ class ABQMassScaling(AnyObject):
                 |     Sets or returns the target time scaling method. Applies only when target
                 |     time is active.
 
+        :return: enum abq_ms_target_method
         :rtype: int
         """
 

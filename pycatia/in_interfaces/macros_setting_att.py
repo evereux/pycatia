@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class MacrosSettingAtt(SettingController):
-
     """
         .. note::
             :class: toggle
@@ -145,7 +144,7 @@ class MacrosSettingAtt(SettingController):
                 | 
                 |     Returns the editor path for the specified language.
 
-        :param int i_language:
+        :param int i_language: enum cat_script_language
         :rtype: str
         """
         return self.macros_setting_att.GetLanguageEditor(i_language)
@@ -339,7 +338,7 @@ class MacrosSettingAtt(SettingController):
                 | 
                 |     Sets the editor path for the specified language.
 
-        :param int i_language:
+        :param int i_language: enum cat_script_language
         :param str i_editor_path:
         :rtype: None
         """
@@ -387,4 +386,4 @@ class MacrosSettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'MacrosSettingAtt(name="{ self.name }")'
+        return f'MacrosSettingAtt(name="{self.name}")'

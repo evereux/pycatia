@@ -53,6 +53,7 @@ class DrawingText(AnyObject):
                 | 
                 |          MyText.AnchorPosition = TopLeft
 
+        :return: enum cat_text_anchor_position
         :rtype: int
         """
 
@@ -61,7 +62,7 @@ class DrawingText(AnyObject):
     @anchor_position.setter
     def anchor_position(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_text_anchor_position
         """
 
         self.drawing_text.AnchorPosition = value
@@ -149,6 +150,7 @@ class DrawingText(AnyObject):
                 | 
                 |          MyText.FrameType = catEllipse
 
+        :return: enum cat_text_frame_type
         :rtype: int
         """
 
@@ -157,7 +159,7 @@ class DrawingText(AnyObject):
     @frame_type.setter
     def frame_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_text_frame_type
         """
 
         self.drawing_text.FrameType = value
@@ -360,7 +362,7 @@ class DrawingText(AnyObject):
                 |          CatTextFrameType ityp = catNone
                 |          MyText.ActivateFrame(itype)
 
-        :param int itype:
+        :param int itype: enum cat_text_frame_type
         :rtype: None
         """
         return self.drawing_text.ActivateFrame(itype)
@@ -501,7 +503,7 @@ class DrawingText(AnyObject):
                 |          inbCharacter = 0
                 |          oval = MyText.GetParameterOnsubString(iParam, iFirst, inbCharacter)
 
-        :param int i_param:
+        :param int i_param: enum cat_text_property
         :param int i_first:
         :param int inb_character:
         :rtype: int
@@ -678,7 +680,7 @@ class DrawingText(AnyObject):
                 |              MyText.SetParameterOnsubString iParam, iFirst, inbCharacter,
                 |              ival
 
-        :param int i_param:
+        :param int i_param: enum cat_text_property
         :param int i_first:
         :param int inb_character:
         :param int i_val:

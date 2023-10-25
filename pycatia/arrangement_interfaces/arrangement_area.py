@@ -134,6 +134,7 @@ class ArrangementArea(AnyObject):
                 | 
                 |          objArea1.VisuMode = CatArrangementAreaVisuModeVolume
 
+        :return: enum cat_arrangement_area_visu_mode
         :rtype: int
         """
 
@@ -142,7 +143,7 @@ class ArrangementArea(AnyObject):
     @visu_mode.setter
     def visu_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_arrangement_area_visu_mode
         """
 
         self.arrangement_area.VisuMode = value

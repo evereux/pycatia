@@ -357,7 +357,7 @@ class ABQDisplacementBC(ABQBoundaryCondition):
                 |             ABQ_CYLINDRICAL (for Cylindrical coordinate system), ABQ_SPHERICAL (for
                 |             Spherical coordinate system),
     
-        :rtype: enum abq_local_csys_type
+        :return: enum abq_local_csys_type
         :rtype: int
         """
         return self.abq_displacement_bc.GetUseCoordinateSystemType()
@@ -464,7 +464,7 @@ class ABQDisplacementBC(ABQBoundaryCondition):
                 |             ABQ_CYLINDRICAL (for Cylindrical coordinate system), ABQ_SPHERICAL (for
                 |             Spherical coordinate system),
     
-        :param int i_csystem_type:
+        :param int i_csystem_type: enum abq_local_csys_type
         :rtype: None
         """
         return self.abq_displacement_bc.SetUseCoordinateSystemType(i_csystem_type)

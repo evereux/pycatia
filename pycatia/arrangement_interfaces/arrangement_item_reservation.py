@@ -13,7 +13,6 @@ from pycatia.system_interfaces.any_object import AnyObject
 
 
 class ArrangementItemReservation(AnyObject):
-
     """
         .. note::
             :class: toggle
@@ -88,6 +87,7 @@ class ArrangementItemReservation(AnyObject):
                 | 
                 |          objItemRes1.VisuMode = CatArrangementItemReservationVisuModeBox
 
+        :return: enum cat_arrangement_item_res_visu_mode
         :rtype: int
         """
 
@@ -96,7 +96,7 @@ class ArrangementItemReservation(AnyObject):
     @visu_mode.setter
     def visu_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_arrangement_item_res_visu_mode
         """
 
         self.arrangement_item_reservation.VisuMode = value
@@ -293,4 +293,4 @@ class ArrangementItemReservation(AnyObject):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'ArrangementItemReservation(name="{ self.name }")'
+        return f'ArrangementItemReservation(name="{self.name}")'

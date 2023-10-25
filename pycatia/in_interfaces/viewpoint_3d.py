@@ -128,6 +128,7 @@ class Viewpoint3D(AnyObject):
                 | 
                 |          My3DViewer.Viewpoint3D.NavigationStyle = catProjectionConic
 
+        :return: enum cat_projection_mode
         :rtype: int
         """
 
@@ -136,7 +137,7 @@ class Viewpoint3D(AnyObject):
     @projection_mode.setter
     def projection_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_projection_mode
         """
 
         self.viewpoint_3d.ProjectionMode = value

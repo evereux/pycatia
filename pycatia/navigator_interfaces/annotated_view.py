@@ -56,6 +56,7 @@ class AnnotatedView(AnyObject):
                 |             Dim Mode
                 |             Mode = NewAnnotatedView.BehaviorMode
 
+        :return: enum cat_annotated_view_behavior
         :rtype: int
         """
 
@@ -64,7 +65,7 @@ class AnnotatedView(AnyObject):
     @behavior_mode.setter
     def behavior_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_annotated_view_behavior
         """
 
         self.annotated_view.BehaviorMode = value
@@ -179,6 +180,7 @@ class AnnotatedView(AnyObject):
                 |             Dim Mode
                 |             Mode = NewAnnotatedView.ProjectionMode
 
+        :return: enum cat_projection_mode
         :rtype: int
         """
 

@@ -449,15 +449,13 @@ class Layout2DView(AnyObject):
                 |     See also:
                 |         CatView2DModeVisu 
                 |     Example:
-                | 
-                |           
-                | 
+                |
                 |              This example shows how to switch on the background 2D
                 |              mode
-                |              
-                | 
+                |
                 |              View1.Visu2DMode = catView2DModeNoShow
 
+        :return: enum cat_view_2d_mode_visu
         :rtype: int
         """
 
@@ -466,7 +464,7 @@ class Layout2DView(AnyObject):
     @visu_2d_mode.setter
     def visu_2d_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_view_2d_mode_visu
         """
 
         self.layout_2d_view.Visu2DMode = value
@@ -495,6 +493,7 @@ class Layout2DView(AnyObject):
                 | 
                 |              View1.VisuBackground = catLowIntPick
 
+        :return: enum cat_visu_background_mode
         :rtype: int
         """
 
@@ -503,7 +502,7 @@ class Layout2DView(AnyObject):
     @visu_background.setter
     def visu_background(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_visu_background_mode
         """
 
         self.layout_2d_view.VisuBackground = value
@@ -525,14 +524,12 @@ class Layout2DView(AnyObject):
                 |         CatVisuIn3DMode 
                 |     Example:
                 | 
-                |           
-                | 
                 |              This example shows how to make the View1 Layout2D view visible in
                 |              3D
-                |              
-                | 
+                |
                 |              View1.HideIn3DSize = catShowAll
 
+        :return: enum cat_visu_in_3d_mode
         :rtype: int
         """
 
@@ -541,7 +538,7 @@ class Layout2DView(AnyObject):
     @visu_in_3d.setter
     def visu_in_3d(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_visu_in_3d_mode
         """
 
         self.layout_2d_view.VisuIn3D = value

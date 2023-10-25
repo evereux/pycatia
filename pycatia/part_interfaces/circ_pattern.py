@@ -126,7 +126,7 @@ class CircPattern(Pattern):
     @circular_pattern_parameters.setter
     def circular_pattern_parameters(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_circular_pattern_parameters
         """
 
         self.circ_pattern.CircularPatternParameters = value

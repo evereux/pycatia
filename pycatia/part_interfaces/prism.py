@@ -69,7 +69,7 @@ class Prism(SketchBasedShape):
     @direction_orientation.setter
     def direction_orientation(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_prism_orientation
         """
 
         self.prism.DirectionOrientation = value
@@ -106,7 +106,7 @@ class Prism(SketchBasedShape):
     @direction_type.setter
     def direction_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_prism_extrusion_direction
         """
 
         self.prism.DirectionType = value

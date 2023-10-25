@@ -50,6 +50,7 @@ class PickActivity(WorkerActivity):
                 |     Returns or Sets "Pick Type" (see HTSPickType for list of possible values)
                 |     SINGLE_HAND for Single-Handed Pick, BOTH_HANDS for Double-Handed Pick
 
+        :return: enum hts_pick_type
         :rtype: int
         """
 
@@ -58,7 +59,7 @@ class PickActivity(WorkerActivity):
     @pick_type.setter
     def pick_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum hts_pick_type
         """
 
         self.pick_activity.PickType = value
@@ -74,6 +75,7 @@ class PickActivity(WorkerActivity):
                 | 
                 |     Returns or Sets "Picking Hand" (see HTSHand for list of possible values )
 
+        :return: enum hts_hand
         :rtype: int
         """
 
@@ -82,7 +84,7 @@ class PickActivity(WorkerActivity):
     @picking_hand.setter
     def picking_hand(self, value: int):
         """
-        :param int value:
+        :param int value: enum hts_hand
         """
 
         self.pick_activity.PickingHand = value

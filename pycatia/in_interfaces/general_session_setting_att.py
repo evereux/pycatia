@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class GeneralSessionSettingAtt(SettingController):
-
     """
         .. note::
             :class: toggle
@@ -49,6 +48,7 @@ class GeneralSessionSettingAtt(SettingController):
                 | 
                 |     Returns the data save parameter.
 
+        :return: enum cat_gen_data_save
         :rtype: int
         """
 
@@ -57,7 +57,7 @@ class GeneralSessionSettingAtt(SettingController):
     @auto_save.setter
     def auto_save(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_gen_data_save
         """
 
         self.general_session_setting_att.AutoSave = value
@@ -73,6 +73,7 @@ class GeneralSessionSettingAtt(SettingController):
                 | 
                 |     Returns the conference driver parameter.
 
+        :return: enum cat_gen_conferencing
         :rtype: int
         """
 
@@ -81,7 +82,7 @@ class GeneralSessionSettingAtt(SettingController):
     @conferencing.setter
     def conferencing(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_gen_conferencing
         """
 
         self.general_session_setting_att.Conferencing = value
@@ -169,6 +170,7 @@ class GeneralSessionSettingAtt(SettingController):
                 | 
                 |     Returns the user interface style parameter.
 
+        :return: enum cat_gen_ui_style
         :rtype: int
         """
 
@@ -177,7 +179,7 @@ class GeneralSessionSettingAtt(SettingController):
     @ui_style.setter
     def ui_style(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_gen_ui_style
         """
 
         self.general_session_setting_att.UIStyle = value
@@ -568,4 +570,4 @@ class GeneralSessionSettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'GeneralSessionSettingAtt(name="{ self.name }")'
+        return f'GeneralSessionSettingAtt(name="{self.name}")'

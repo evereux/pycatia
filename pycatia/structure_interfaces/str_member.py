@@ -296,7 +296,7 @@ class StrMember(StrObject):
                 |          Set cutback = Member_1.CreateCutback(Member_2, catStrWeldedType, 0.05)
 
         :param StrMember i_member:
-        :param int i_cutback:
+        :param int i_cutback: enum cat_str_cutback_type
         :param float i_offset:
         :rtype: StrCutback
         """

@@ -20,6 +20,7 @@ from pycatia.system_interfaces.system_service import SystemService
 if TYPE_CHECKING:
     from pycatia.in_interfaces.document import Document
 
+
 class Section(AnyObject):
     """
         .. note::
@@ -87,21 +88,16 @@ class Section(AnyObject):
                 | 
                 |              The first example retrieves the behavior of NewSection
                 |              Section.
-                |             
-                | 
+                |
                 |             Dim SectionBehavior As CatSectionBehavior
                 |             Behavior = NewSection.Behavior
-                |             
-                | 
-                | 
-                |             
-                | 
+                |
                 |                 The second example sets the behavior of NewSection
                 |                 Section.
-                |                 
-                | 
+                |
                 |                 NewSection.Behavior = catSectionBehaviorAutomatic
 
+        :return: enum cat_section_behavior
         :rtype: int
         """
 
@@ -110,7 +106,7 @@ class Section(AnyObject):
     @behavior.setter
     def behavior(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_section_behavior
         """
 
         self.section.Behavior = value
@@ -333,21 +329,16 @@ class Section(AnyObject):
                 | 
                 |              The first example retrieves the type of NewSection
                 |              Section.
-                |             
-                | 
+                |
                 |             Dim SectionType As CatSectionType
                 |             SectionType = NewSection.Type
-                |             
-                | 
-                | 
-                |             
-                | 
+                |
                 |                 The second example sets the type of NewSection
                 |                 Section.
-                |                 
-                | 
+                |
                 |                 NewSection.Type = catSectionTypeSlice
 
+        :return: enum cat_section_type
         :rtype: int
         """
 
@@ -356,7 +347,7 @@ class Section(AnyObject):
     @type.setter
     def type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_section_type
         """
 
         self.section.Type = value

@@ -100,7 +100,7 @@ class SchematicRoot(AnyObject):
                 |          Set objSchPlatformRoot = objProductRoot.GetTechnologicalObject ("SchematicRoot")
                 |          Set objSchObjFact = objSchPlatformRoot.GetApplicationObjectFactory("CatSchIDLCATPID")(
 
-        :param int i_application_id:
+        :param int i_application_id: enum cat_sch_idl_application_id
         :rtype: SchAppObjectFactory
         """
         return SchAppObjectFactory(self.schematic_root.GetApplicationObjectFactory(i_application_id))
@@ -452,7 +452,7 @@ class SchematicRoot(AnyObject):
                 |          Set objSchPlatformRoot = objProductRoot.GetTechnologicalObject ("SchematicRoot")
                 |          objSchPlatformRoot.SetDrawingStandard catISO
 
-        :param int i_drw_std:
+        :param int i_drw_std: enum cat_drawing_standard
         :rtype: None
         """
         return self.schematic_root.SetDrawingStandard(i_drw_std)

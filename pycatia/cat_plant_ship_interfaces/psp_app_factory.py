@@ -453,7 +453,7 @@ class PSPAppFactory(AnyObject):
                 |          Set ObjArg3 = objThisIntf.ListPhysicals (iobj1, iobjArg2 )
 
         :param Product i_current_product:
-        :param int i_domain_id:
+        :param int i_domain_id: enum cat_psp_idl_domain_id
         :rtype: PSPListOfObjects
         """
         return PSPListOfObjects(self.psp_app_factory.ListPhysicals(i_current_product.com_object, i_domain_id))

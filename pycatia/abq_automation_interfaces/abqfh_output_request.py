@@ -124,6 +124,7 @@ class ABQFHOutputRequest(ABQOutputRequest):
                 |             "ABQDEFAULTSECPTS"
                 |             "ABQALLSECPTS"
 
+        :return: enum abq_output_at_sec_pts
         :rtype: int
         """
 
@@ -161,7 +162,8 @@ class ABQFHOutputRequest(ABQOutputRequest):
                 |             "ABQPRESELECTDEFVAR"
                 |             "ABQALLVAR"
 
-        :rtype: None
+        :return: enum abq_output_variable_type
+        :rtype: int
         """
 
         return self.abqfh_output_request.PreSelectDefaultOrAll

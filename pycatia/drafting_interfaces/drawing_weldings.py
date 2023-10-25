@@ -74,7 +74,7 @@ class DrawingWeldings(Collection):
                 |      Set MyWelding = 
                 |         MyView.Weldings.Add(catSquareWelding, 0., 0.)
 
-        :param int i_symbol:
+        :param int i_symbol: enum cat_welding_symbol
         :param float i_position_x:
         :param float i_position_y:
         :rtype: DrawingWelding

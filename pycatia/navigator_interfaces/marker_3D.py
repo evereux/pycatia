@@ -189,6 +189,7 @@ class Marker3D(AnyObject):
                 |             Dim orientation As CatMarkerTextOrientation
                 |             orientation = NewMarker3D.TextOrientation
 
+        :return:  enum cat_marker_text_orientation
         :rtype: int
         """
 
@@ -197,7 +198,7 @@ class Marker3D(AnyObject):
     @text_orientation.setter
     def text_orientation(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_marker_text_orientation
         """
 
         self.marker_3d.TextOrientation = value
@@ -250,11 +251,11 @@ class Marker3D(AnyObject):
                 | 
                 |              This example reads the type of NewMarker3D marker
                 |              3D.
-                |             
-                | 
+                |
                 |             Dim type As CatMarker3DType
                 |             type = NewMarker3D.Type
 
+        :return: eum cat_marker_3d_type
         :rtype: int
         """
 

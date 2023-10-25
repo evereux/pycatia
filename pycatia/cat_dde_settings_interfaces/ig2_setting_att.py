@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class Ig2SettingAtt(SettingController):
-
     """
         .. note::
             :class: toggle
@@ -62,6 +61,7 @@ class Ig2SettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
+        :return: enum cat_ig2_export_mode_enum
         :rtype: int
         """
 
@@ -118,6 +118,7 @@ class Ig2SettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
+        :return: enum cat_ig2_import_destination_view_enum
         :rtype: int
         """
 
@@ -174,6 +175,7 @@ class Ig2SettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
+        :return: enum cat_ig2_import_dimensions_enum
         :rtype: int
         """
 
@@ -202,6 +204,7 @@ class Ig2SettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
+        :return: enum cat_ig2_import_create_end_points_enum
         :rtype: int
         """
 
@@ -229,6 +232,7 @@ class Ig2SettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
+        :return: enum cat_ig2_import_unit_enum
         :rtype: int
         """
 
@@ -836,7 +840,7 @@ class Ig2SettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :param int i_mode:
+        :param int i_mode: enum cat_ig2_export_mode_enum
         :rtype: None
         """
         return self.ig2_setting_att.set_ExportMode(i_mode)
@@ -889,7 +893,7 @@ class Ig2SettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :param int i_destination_view:
+        :param int i_destination_view: enum cat_ig2_import_destination_view_enum
         :rtype: None
         """
         return self.ig2_setting_att.set_ImportDestinationView(i_destination_view)
@@ -943,7 +947,7 @@ class Ig2SettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :param int i_dimensions:
+        :param int i_dimensions: enum cat_ig2_import_dimensions_enum
         :rtype: None
         """
         return self.ig2_setting_att.set_ImportDimensions(i_dimensions)
@@ -970,7 +974,7 @@ class Ig2SettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :param int i_end_points:
+        :param int i_end_points: enum cat_ig2_import_create_end_points_enum
         :rtype: None
         """
         return self.ig2_setting_att.set_ImportEndPoints(i_end_points)
@@ -996,10 +1000,10 @@ class Ig2SettingAtt(SettingController):
                 |         S_OK : on Success
                 |         E_FAIL: on failure
 
-        :param int i_unit:
+        :param int i_unit: enum cat_ig2_import_unit_enum
         :rtype: None
         """
         return self.ig2_setting_att.set_ImportUnit(i_unit)
 
     def __repr__(self):
-        return f'Ig2SettingAtt(name="{ self.name }")'
+        return f'Ig2SettingAtt(name="{self.name}")'

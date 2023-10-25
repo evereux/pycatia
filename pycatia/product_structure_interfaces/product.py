@@ -328,7 +328,8 @@ class Product(AnyObject):
         try:
             return self.product.PartNumber
         except com_error:
-            raise CATIAApplicationException(f'Prodcut "{self.name}" could not do get Product.PartNumber. Check Product for broken links.')
+            raise CATIAApplicationException(
+                f'Prodcut "{self.name}" could not do get Product.PartNumber. Check Product for broken links.')
 
     @part_number.setter
     def part_number(self, value: str):
@@ -339,7 +340,8 @@ class Product(AnyObject):
         try:
             self.product.PartNumber = value
         except com_error:
-            raise CATIAApplicationException(f'Prodcut "{self.name}" could not do set Product.PartNumber. Check Product for broken links.')
+            raise CATIAApplicationException(
+                f'Prodcut "{self.name}" could not do set Product.PartNumber. Check Product for broken links.')
 
     @property
     def position(self) -> Position:
@@ -427,7 +429,8 @@ class Product(AnyObject):
         try:
             return Product(self.product.ReferenceProduct)
         except com_error:
-            raise CATIAApplicationException(f'Prodcut "{self.name}" could not do get Reference Product. Check Product for broken links.')
+            raise CATIAApplicationException(
+                f'Prodcut "{self.name}" could not do get Reference Product. Check Product for broken links.')
 
     @property
     def relations(self) -> Relations:
@@ -512,24 +515,27 @@ class Product(AnyObject):
                 |
                 |          Engine.Source(catProductMade)
 
+        :return: enum cat_product_source
         :rtype: int
         """
 
         try:
             return self.product.Source
         except com_error:
-            raise CATIAApplicationException(f'Prodcut "{self.name}" could not do get Product.Source. Check Product for broken links.')
+            raise CATIAApplicationException(
+                f'Prodcut "{self.name}" could not do get Product.Source. Check Product for broken links.')
 
     @source.setter
     def source(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_product_source
         """
 
         try:
             self.product.Source = value
         except com_error:
-            raise CATIAApplicationException(f'Prodcut "{self.name}" could not do set Product.Source. Check Product for broken links.')
+            raise CATIAApplicationException(
+                f'Prodcut "{self.name}" could not do set Product.Source. Check Product for broken links.')
 
     @property
     def type(self) -> str:
@@ -538,7 +544,7 @@ class Product(AnyObject):
 
         :rtype: str
         """
-        
+
         root_product_name = self.reference_product.com_object.Parent.Product.Name
         self_product_name = self.reference_product.name
         if root_product_name == self_product_name:
@@ -713,7 +719,7 @@ class Product(AnyObject):
 
         :param str i_shape_path_name:
         :param str i_shape_name:
-        :param int i_rep_behavior:
+        :param int i_rep_behavior: enum cat_rep_type
         :param bool i_context:
         :rtype: None
         """
@@ -754,7 +760,7 @@ class Product(AnyObject):
                 |         newMode
                 |             The new working mode.
 
-        :param int new_mode:
+        :param int new_mode: enum cat_work_mode_type
         :rtype: None
         """
         return self.product.ApplyWorkMode(new_mode)
@@ -910,7 +916,7 @@ class Product(AnyObject):
                 |         iFile
                 |             File where the bill of material will be saved
 
-        :param int i_file_type:
+        :param int i_file_type: enum cat_file_type
         :param str i_file:
         :rtype: None
         """
@@ -1182,7 +1188,7 @@ class Product(AnyObject):
 
         :param bool i_load_if_necessary:
         :param str i_shape_name:
-        :param CatRepType i_rep_behavior:
+        :param int i_rep_behavior: enum cat_rep_type
         :param bool i_context:
         :return: AnyObject
         """
@@ -1295,7 +1301,7 @@ class Product(AnyObject):
                 |          HasRep = Engine.HasRepresentation("PART",catRep3D,TRUE)
 
         :param str i_shape_name:
-        :param int i_rep_behavior:
+        :param int i_rep_behavior: enum cat_rep_type
         :param bool i_context:
         :rtype: bool
         """
@@ -1409,7 +1415,7 @@ class Product(AnyObject):
                 |         ("PART",catRep3D,TRUE)
 
         :param str i_shape_name:
-        :param int i_rep_behavior:
+        :param int i_rep_behavior: enum cat_rep_type
         :param bool i_context:
         :rtype: None
         """

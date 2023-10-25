@@ -46,6 +46,7 @@ class ManufacturingPrecedence(AnyObject):
                 | 
                 |     Returns the type of the precedence.
 
+        :return: enum cat_manufacturing_precedence_type
         :rtype: int
         """
 

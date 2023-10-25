@@ -192,6 +192,7 @@ class AxisSystem(AnyObject):
                 | 
                 |          axisSystem.OriginType = 1
 
+        :return: enum cat_axis_system_origin_type
         :rtype: int
         """
 
@@ -200,7 +201,7 @@ class AxisSystem(AnyObject):
     @origin_type.setter
     def origin_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_axis_system_origin_type
         """
 
         self.axis_system.OriginType = value
@@ -238,6 +239,7 @@ class AxisSystem(AnyObject):
                 | 
                 |      axisSystem1.Type = 3
 
+        :return: enum cat_axis_system_main_type
         :rtype: int
         """
 
@@ -246,7 +248,7 @@ class AxisSystem(AnyObject):
     @type.setter
     def type(self, value: int):
         """
-        :param int value:
+        :param int value:  enum cat_axis_system_main_type
         """
 
         self.axis_system.Type = value
@@ -321,6 +323,7 @@ class AxisSystem(AnyObject):
                 | 
                 |          axisSystem.XAxisType = 1
 
+        :return: enum cat_axis_system_axis_type
         :rtype: int
         """
 
@@ -329,7 +332,7 @@ class AxisSystem(AnyObject):
     @x_axis_type.setter
     def x_axis_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_axis_system_axis_type
         """
 
         self.axis_system.XAxisType = value
@@ -405,6 +408,7 @@ class AxisSystem(AnyObject):
                 | 
                 |          axisSystem.YAxisType = 1
 
+        :return: enum cat_axis_system_axis_type
         :rtype: int
         """
 
@@ -413,7 +417,7 @@ class AxisSystem(AnyObject):
     @y_axis_type.setter
     def y_axis_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_axis_system_axis_type
         """
 
         self.axis_system.YAxisType = value
@@ -489,6 +493,7 @@ class AxisSystem(AnyObject):
                 | 
                 |          axisSystem.ZAxisType = 1
 
+        :return: enum cat_axis_system_axis_type
         :rtype: int
         """
 
@@ -497,7 +502,7 @@ class AxisSystem(AnyObject):
     @z_axis_type.setter
     def z_axis_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_axis_system_axis_type
         """
 
         self.axis_system.ZAxisType = value

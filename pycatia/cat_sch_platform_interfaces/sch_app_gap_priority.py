@@ -63,7 +63,7 @@ class SchAppGapPriority(AnyObject):
                 |          objThisIntf.AppChooseGapPriorityobjArg1,CatSchIDLGapPriority_Enum
 
         :param SchRoute i_the_other_route:
-        :param int o_priority:
+        :param int o_priority: enum cat_sch_idl_gap_priority
         :rtype: None
         """
         return self.sch_app_gap_priority.AppChooseGapPriority(i_the_other_route.com_object, o_priority)

@@ -120,7 +120,7 @@ class DraftDomain(AnyObject):
     @multiselection_mode.setter
     def multiselection_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_draft_multiselection_mode
         """
 
         self.draft_domain.MultiselectionMode = value
@@ -190,7 +190,7 @@ class DraftDomain(AnyObject):
     @neutral_propagation_mode.setter
     def neutral_propagation_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_draft_neutral_propagation_mode
         """
 
         self.draft_domain.NeutralPropagationMode = value

@@ -157,7 +157,7 @@ class SchBaseFactory(AnyObject):
         :param SchGRRComp i_grr_comp_from:
         :param SchGRRComp i_grr_comp_to:
         :param tuple i_l_db2_pt_path:
-        :param int i_e_route_mode:
+        :param int i_e_route_mode: enum cat_sch_idl_route_mode
         :param SchRoute o_sch_route:
         :rtype: tuple
         """

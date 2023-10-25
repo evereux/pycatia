@@ -116,6 +116,7 @@ class ABQSpringConnectionProperty(ABQProperty):
                 |         AXIAL
                 |         GENERAL
 
+        :return: enum spring_type_type
         :rtype: int
         """
 
@@ -124,7 +125,7 @@ class ABQSpringConnectionProperty(ABQProperty):
     @spring_type.setter
     def spring_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum spring_type_type
         """
 
         self.abq_spring_connection_property.SpringType = value
@@ -202,7 +203,7 @@ class ABQSpringConnectionProperty(ABQProperty):
                 |         oStiffnessValue
                 |             The stiffnessvalue.
 
-        :param int i_dof:
+        :param int i_dof: enum spring_dof_type
         :rtype: float
         """
         return self.abq_spring_connection_property.GetLinearStiffness(i_dof)
@@ -243,7 +244,7 @@ class ABQSpringConnectionProperty(ABQProperty):
                 | 
                 |             Refer: CATSafeArrayVariant
 
-        :param int i_dof:
+        :param int i_dof: enum spring_dof_type
         :param tuple o_force_array:
         :param tuple o_disp_array:
         :rtype: None
@@ -295,7 +296,7 @@ class ABQSpringConnectionProperty(ABQProperty):
                 |             The complete path of the text file which contains the stiffness
                 |             data.
 
-        :param int i_dof:
+        :param int i_dof: enum spring_dof_type
         :param str i_file_name:
         :rtype: None
         """
@@ -337,7 +338,7 @@ class ABQSpringConnectionProperty(ABQProperty):
                 |             UR2_DOF
                 |             UR3_DOF
 
-        :param int i_dof:
+        :param int i_dof: enum spring_dof_type
         :rtype: None
         """
         return self.abq_spring_connection_property.RemoveDof(i_dof)
@@ -370,7 +371,7 @@ class ABQSpringConnectionProperty(ABQProperty):
                 |         iStiffnessValue
                 |             The stiffnessvalue.
 
-        :param int i_dof:
+        :param int i_dof: enum spring_dof_type
         :param float i_stiffness_value:
         :rtype: None
         """
@@ -411,7 +412,7 @@ class ABQSpringConnectionProperty(ABQProperty):
                 | 
                 |             Refer: CATSafeArrayVariant
 
-        :param int i_dof:
+        :param int i_dof: enum spring_dof_type
         :param tuple i_force_array:
         :param tuple i_disp_array:
         :rtype: None

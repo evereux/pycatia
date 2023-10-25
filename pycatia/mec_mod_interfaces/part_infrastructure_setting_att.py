@@ -1071,6 +1071,7 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
+        :return: enum cat_part_elements_naming_mode
         :rtype: int
         """
 
@@ -1079,7 +1080,7 @@ class PartInfrastructureSettingAtt(SettingController):
     @naming_mode.setter
     def naming_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_part_elements_naming_mode
         """
 
         self.part_infrastructure_setting_att.NamingMode = value
@@ -1543,6 +1544,7 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
+        :return: enum cat_part_surface_elements_location
         :rtype: int
         """
 
@@ -1551,7 +1553,7 @@ class PartInfrastructureSettingAtt(SettingController):
     @surface_elements_location.setter
     def surface_elements_location(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_part_surface_elements_location
         """
 
         self.part_infrastructure_setting_att.SurfaceElementsLocation = value
@@ -1705,6 +1707,7 @@ class PartInfrastructureSettingAtt(SettingController):
                 |     Returns:
                 |         S_OK if the parameter is correctly retrieved, E_FAIL otherwise.
 
+        :return: enum cat_part_update_mode
         :rtype: int
         """
 
@@ -1713,7 +1716,7 @@ class PartInfrastructureSettingAtt(SettingController):
     @update_mode.setter
     def update_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_part_update_mode
         """
 
         self.part_infrastructure_setting_att.UpdateMode = value
