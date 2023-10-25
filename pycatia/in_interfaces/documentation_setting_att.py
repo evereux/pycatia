@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class DocumentationSettingAtt(SettingController):
-
     """
         .. note::
             :class: toggle
@@ -97,6 +96,7 @@ class DocumentationSettingAtt(SettingController):
                 | 
                 |     Returns the contextual priority parameter.
 
+        :return: enum cat_doc_contextual_priority
         :rtype: int
         """
 
@@ -105,7 +105,7 @@ class DocumentationSettingAtt(SettingController):
     @priority.setter
     def priority(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_doc_contextual_priority
         """
 
         self.documentation_setting_att.Priority = value
@@ -446,4 +446,4 @@ class DocumentationSettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'DocumentationSettingAtt(name="{ self.name }")'
+        return f'DocumentationSettingAtt(name="{self.name}")'

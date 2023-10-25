@@ -206,7 +206,7 @@ class HumanActsFactory(AnyObject):
         :param Activity i_prev_act:
         :param Product i_arr_area:
         :param int i_num_points:
-        :param int i_search_int:
+        :param int i_search_int: enum hts_search_intensity
         :param float i_clearence:
         :param tuple i_points:
         :rtype: CollisionFreeWalk
@@ -341,7 +341,7 @@ class HumanActsFactory(AnyObject):
         :param Product i_plane_prod:
         :param tuple i_plane_def:
         :param int i_num_points:
-        :param int i_search_int:
+        :param int i_search_int: enum hts_search_intensity
         :param float i_clearence:
         :param tuple i_points:
         :rtype: CollisionFreeWalk
@@ -467,7 +467,7 @@ class HumanActsFactory(AnyObject):
         :param Activity i_prev_act:
         :param Product i_arr_area:
         :param int i_num_points:
-        :param int i_search_int:
+        :param int i_search_int: enum hts_search_intensity
         :param float i_clearence:
         :param tuple i_points:
         :rtype: CollisionFreeWalk
@@ -595,7 +595,7 @@ class HumanActsFactory(AnyObject):
         :param Product i_plane_prod:
         :param tuple i_plane_def:
         :param int i_num_points:
-        :param int i_search_int:
+        :param int i_search_int: enum hts_search_intensity
         :param float i_clearence:
         :param tuple i_points:
         :rtype: CollisionFreeWalk
@@ -817,9 +817,9 @@ class HumanActsFactory(AnyObject):
                 |            Set oCreatePick = oHumActsFactory.CreatePick(iPrevAct,SINGLE_HAND, TRUE, HAND_RIGHT, iPickedProducts)
 
         :param Activity i_prev_act:
-        :param int i_pick_type:
+        :param int i_pick_type: enum hts_pick_type
         :param bool b_create_cst_with_picking_hand:
-        :param int i_picking_hand:
+        :param int i_picking_hand: enum hts_hand
         :param tuple i_picked_products:
         :rtype: PickActivity
         """

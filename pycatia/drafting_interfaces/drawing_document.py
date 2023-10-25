@@ -166,6 +166,7 @@ class DrawingDocument(Document):
                 | 
                 |          CATIA.ActiveDocument.Standard = catISO
 
+        :return: enum cat_drawing_standard
         :rtype: int
         """
 
@@ -174,7 +175,7 @@ class DrawingDocument(Document):
     @standard.setter
     def standard(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_drawing_standard
         """
 
         self.drawing_document.Standard = value

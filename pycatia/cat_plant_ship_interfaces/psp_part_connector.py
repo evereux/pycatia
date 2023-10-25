@@ -61,6 +61,7 @@ class PSPPartConnector(AnyObject):
                 |           ...
                 |          objArg1 = objThisIntf.AlignType
 
+        :return: enum cat_psp_idl_part_connector_type
         :rtype: int
         """
 
@@ -121,6 +122,7 @@ class PSPPartConnector(AnyObject):
                 |           ...
                 |          objArg1 = objThisIntf.ClockType
 
+        :return: enum cat_psp_idl_part_connector_type
         :rtype: int
         """
 
@@ -154,6 +156,7 @@ class PSPPartConnector(AnyObject):
                 |           ...
                 |          Set objArg1 = objThisIntf.FaceType
 
+        :return: enum cat_psp_idl_part_connector_type
         :rtype: int
         """
 
@@ -419,7 +422,7 @@ class PSPPartConnector(AnyObject):
                 |          objThisIntf.SetFaceConnector objArg1, objArg2
 
         :param Reference i_align_cntr:
-        :param int ie_align_type:
+        :param int ie_align_type: enum cat_psp_idl_part_connector_type
         :rtype: None
         """
         return self.psp_part_connector.SetAlignmentConnector(i_align_cntr.com_object, ie_align_type)
@@ -508,7 +511,7 @@ class PSPPartConnector(AnyObject):
                 |          objThisIntf.SetFaceConnector objArg1, objArg2
 
         :param Reference i_face_cntr:
-        :param int ie_face_type:
+        :param int ie_face_type: enum cat_psp_idl_part_connector_type
         :rtype: None
         """
         return self.psp_part_connector.SetFaceConnector(i_face_cntr.com_object, ie_face_type)
@@ -555,7 +558,7 @@ class PSPPartConnector(AnyObject):
                 |          objThisIntf.SetOrientationConnector objArg1, objArg2
 
         :param Reference i_orient_cntr:
-        :param int ie_orientation:
+        :param int ie_orientation: enum cat_psp_idl_part_connector_type
         :rtype: None
         """
         return self.psp_part_connector.SetOrientationConnector(i_orient_cntr.com_object, ie_orientation)

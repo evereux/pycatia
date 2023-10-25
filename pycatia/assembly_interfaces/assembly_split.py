@@ -105,6 +105,7 @@ class AssemblySplit(AssemblyFeature):
                 |          Set sptSide = assemblySplit.SplittingSide
                 |          assemblySplit.SplittingSide = catPositiveSide
 
+        :return: enum cat_split_side
         :rtype: int
         """
 
@@ -113,7 +114,7 @@ class AssemblySplit(AssemblyFeature):
     @splitting_side.setter
     def splitting_side(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_split_side
         """
 
         self.assembly_split.SplittingSide = value

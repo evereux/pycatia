@@ -89,7 +89,7 @@ class ClashResult(AnyObject):
                 |             NewClashResult.Export CatClashExportTypeXMLResultOnly,
                 |             "c:\\tmp\\sample.xml"
 
-        :param int i_type:
+        :param int i_type: enum cat_clash_export_type
         :param str i_path:
         :rtype: None
         """

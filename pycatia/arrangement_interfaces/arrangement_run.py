@@ -229,6 +229,7 @@ class ArrangementRun(AnyObject):
                 | 
                 |          objRun1.VisuMode = CatArrangementRouteVisuModeSolid
 
+        :return: enum cat_arrangement_route_visu_mode
         :rtype: int
         """
 
@@ -237,7 +238,7 @@ class ArrangementRun(AnyObject):
     @visu_mode.setter
     def visu_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_arrangement_route_visu_mode
         """
 
         self.arrangement_run.VisuMode = value

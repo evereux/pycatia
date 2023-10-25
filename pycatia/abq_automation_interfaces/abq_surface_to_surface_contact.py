@@ -61,6 +61,7 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
                 |         OVERCLOSED
                 |         TOLERANCE
 
+        :return: enum adjust_method_type
         :rtype: int
         """
 
@@ -69,7 +70,7 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
     @adjust_method.setter
     def adjust_method(self, value: int):
         """
-        :param int value:
+        :param int value: enum adjust_method_type
         """
 
         self.abq_surface_to_surface_contact.AdjustMethod = value
@@ -147,6 +148,7 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
                 |         SURFACETOSURFACE
                 |         NODETOSURFACE
 
+        :return: enum formulation_option_type
         :rtype: int
         """
 
@@ -155,7 +157,7 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
     @formulation_option.setter
     def formulation_option(self, value: int):
         """
-        :param int value:
+        :param int value: enum formulation_option_type
         """
 
         self.abq_surface_to_surface_contact.FormulationOption = value
@@ -269,6 +271,7 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
                 |         FINITE
                 |         SMALL
 
+        :return: enum sliding_type
         :rtype: int
         """
 
@@ -277,7 +280,7 @@ class ABQSurfaceToSurfaceContact(ABQInteraction):
     @sliding.setter
     def sliding(self, value: int):
         """
-        :param int value:
+        :param int value: enum sliding_type
         """
 
         self.abq_surface_to_surface_contact.Sliding = value

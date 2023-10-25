@@ -255,6 +255,7 @@ class Marker2D(AnyObject):
                 |             Dim orientation As CatMarkerTextOrientation
                 |             orientation = NewMarker2D.TextOrientation
 
+        :return: enum cat_marker_text_orientation
         :rtype: int
         """
 
@@ -263,7 +264,7 @@ class Marker2D(AnyObject):
     @text_orientation.setter
     def text_orientation(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_marker_text_orientation
         """
 
         self.marker_2d.TextOrientation = value
@@ -321,6 +322,7 @@ class Marker2D(AnyObject):
                 |             Dim type As CatMarker2DType
                 |             type = NewMarker2D.Type
 
+        :return: enum cat_marker_2d_type
         :rtype: int
         """
 

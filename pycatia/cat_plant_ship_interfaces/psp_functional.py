@@ -79,6 +79,7 @@ class PSPFunctional(AnyObject):
                 |           ...
                 |          objArg1 = objThisIntf.FunctionStatus
 
+        :return: enum cat_psp_idl_function_status
         :rtype: int
         """
 

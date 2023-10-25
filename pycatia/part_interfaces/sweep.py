@@ -214,7 +214,7 @@ class Sweep(SketchBasedShape):
     @merge_mode.setter
     def merge_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_merge_mode
         """
 
         self.sweep.MergeMode = value

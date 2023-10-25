@@ -126,7 +126,7 @@ class Constraints(Collection):
                 |
                 |      Set newCst = skCstList.AddBiEltCst(4, c1, c2)
 
-        :param int i_cst_type:
+        :param int i_cst_type: enum cat_constraint_type
         :param Reference i_first_elem:
         :param Reference i_second_elem:
         :rtype: Constraint
@@ -163,7 +163,7 @@ class Constraints(Collection):
                 |
                 |      Set NewCst = cstList.AddMonoEltCst(0, P1)
 
-        :param int i_cst_type:
+        :param int i_cst_type: enum cat_constraint_type
         :param Reference i_elem:
         :rtype: Constraint
         """
@@ -207,7 +207,7 @@ class Constraints(Collection):
                 |
                 |      Set symCst = prtCstList.AddTriEltCst(15, cyl1, cyl2, symPlane)
 
-        :param int i_cst_type:
+        :param int i_cst_type: enum cat_constraint_type
         :param Reference i_first_elem:
         :param Reference i_second_elem:
         :param Reference i_third_elem:

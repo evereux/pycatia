@@ -68,7 +68,7 @@ class VarRadEdgeFillet(EdgeFillet):
     @bitangency_type.setter
     def bitangency_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_fillet_bitangency_type
         """
 
         self.var_rad_edge_fillet.BitangencyType = value
@@ -145,6 +145,7 @@ class VarRadEdgeFillet(EdgeFillet):
                 |          mode = firstVarEdgeFillet.FilletVariation
                 |          firstVarEdgeFillet.FilletVariation = CATLinearFilletVariation
 
+        :return: enum cat_fillet_variation
         :rtype: int
         """
 
@@ -153,7 +154,7 @@ class VarRadEdgeFillet(EdgeFillet):
     @fillet_variation.setter
     def fillet_variation(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_fillet_variation
         """
 
         self.var_rad_edge_fillet.FilletVariation = value

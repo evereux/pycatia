@@ -329,6 +329,7 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     Returns or sets the mode for the display of hidden objects in DMU Group
                 |     Preview.
 
+        :rtype: enum cat_dmu_group_preview_hidden_objects_display_mode
         :rtype: int
         """
 
@@ -337,7 +338,7 @@ class N4DNavigatorSettingAtt(SettingController):
     @dmu_group_preview_hidden_objects_display_mode.setter
     def dmu_group_preview_hidden_objects_display_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_dmu_group_preview_hidden_objects_display_mode
         """
 
         self.n_4d_navigator_setting_att.DMUGroupPreviewHiddenObjectsDisplayMode = value
@@ -788,6 +789,7 @@ class N4DNavigatorSettingAtt(SettingController):
                 |     CatSacSettingsEnumUserPrompt the user can select the applicative data to
                 |     import).
 
+        :return: enum cat_sac_settings_enum
         :rtype: int
         """
 
@@ -796,7 +798,7 @@ class N4DNavigatorSettingAtt(SettingController):
     @insert_mode.setter
     def insert_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_sac_settings_enum
         """
 
         self.n_4d_navigator_setting_att.InsertMode = value

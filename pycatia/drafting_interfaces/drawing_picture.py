@@ -193,6 +193,7 @@ class DrawingPicture(AnyObject):
                 |     See also:
                 |         CatPictureFormat
 
+        :return: enum cat_picture_format
         :rtype: int
         """
 
@@ -201,7 +202,7 @@ class DrawingPicture(AnyObject):
     @format.setter
     def format(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_picture_format
         """
 
         self.drawing_picture.format = value

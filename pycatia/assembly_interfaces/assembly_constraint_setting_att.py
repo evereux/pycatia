@@ -72,6 +72,7 @@ class AssemblyConstraintSettingAtt(SettingController):
                 |          Set CreationMode = AsmConstraintSettingAtt1.ConstraintCreationMode
                 |          AsmConstraintSettingAtt1.ConstraintCreationMode = catUsePublishedGeometryAnyLevel
 
+        :return: enum cat_asm_constraint_creation_mode
         :rtype: int
         """
 
@@ -80,7 +81,7 @@ class AssemblyConstraintSettingAtt(SettingController):
     @constraint_creation_mode.setter
     def constraint_creation_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_asm_constraint_creation_mode
         """
 
         self.assembly_constraint_setting_att.ConstraintCreationMode = value
@@ -116,6 +117,7 @@ class AssemblyConstraintSettingAtt(SettingController):
                 |          Set PasteMode = AsmConstraintSettingAtt1.PasteComponentMode
                 |          AsmConstraintSettingAtt1.PasteComponentMode = catPasteWithCstOnCut
 
+        :return: enum cat_asm_paste_component_mode
         :rtype: int
         """
 
@@ -124,7 +126,7 @@ class AssemblyConstraintSettingAtt(SettingController):
     @paste_component_mode.setter
     def paste_component_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_asm_paste_component_mode
         """
 
         self.assembly_constraint_setting_att.PasteComponentMode = value
@@ -154,6 +156,7 @@ class AssemblyConstraintSettingAtt(SettingController):
                 |          Set QuickMode = AsmConstraintSettingAtt1.QuickConstraintMode
                 |          AsmConstraintSettingAtt1.QuickConstraintMode = catSpecifiedOrder
 
+        :return: enum cat_asm_quick_constraint_mode
         :rtype: int
         """
 
@@ -162,7 +165,7 @@ class AssemblyConstraintSettingAtt(SettingController):
     @quick_constraint_mode.setter
     def quick_constraint_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_asm_quick_constraint_mode
         """
 
         self.assembly_constraint_setting_att.QuickConstraintMode = value
@@ -186,7 +189,8 @@ class AssemblyConstraintSettingAtt(SettingController):
                 |     catChecked Redundancy of constraint will not be checked while constraint
                 |     creation.
 
-        :rtype: False
+        :return: enum cat_asm_redundancy_mode
+        :rtype: int
         """
 
         return self.assembly_constraint_setting_att.RedundancyMode
@@ -194,7 +198,7 @@ class AssemblyConstraintSettingAtt(SettingController):
     @redundancy_mode.setter
     def redundancy_mode(self, value: int):
         """
-        :param False value:
+        :param int value: enum cat_asm_redundancy_mode
         """
 
         self.assembly_constraint_setting_att.RedundancyMode = value

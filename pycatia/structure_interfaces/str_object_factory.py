@@ -697,7 +697,7 @@ class StrObjectFactory(AnyObject):
                 |             The offset on the extremity
 
         :param StrMember i_member:
-        :param int i_side:
+        :param int i_side: enum cat_str_member_extremity
         :param float i_distance:
         :param float i_offset:
         :rtype: AnyObject
@@ -829,7 +829,7 @@ class StrObjectFactory(AnyObject):
         :param AnyObject i_def_extr1:
         :param AnyObject i_def_extr2:
         :param tuple i_direction:
-        :param int i_mode:
+        :param int i_mode: enum cat_str_plane_mode
         :param float i_length:
         :param str i_type:
         :rtype: StrMember
@@ -977,8 +977,8 @@ class StrObjectFactory(AnyObject):
         :param AnyObject i_def_extr1:
         :param AnyObject i_def_extr2:
         :param Reference i_direction:
-        :param int i_mode:
-        :param int i_orientation:
+        :param int i_mode: enum cat_str_plane_mode
+        :param int i_orientation: enum cat_str_material_orientation
         :param float i_length:
         :param str i_type:
         :rtype: StrMember
@@ -1114,7 +1114,7 @@ class StrObjectFactory(AnyObject):
         :param AnyObject i_def_extr1:
         :param AnyObject i_def_extr2:
         :param Reference i_direction:
-        :param int i_mode:
+        :param int i_mode: enum cat_str_plane_mode
         :param str i_type:
         :rtype: StrMember
         """
@@ -1252,7 +1252,7 @@ class StrObjectFactory(AnyObject):
         :param AnyObject i_def_extr1:
         :param AnyObject i_def_extr2:
         :param tuple i_plane:
-        :param int i_plane_mode:
+        :param int i_plane_mode: enum cat_str_plane_mode
         :param str i_type:
         :rtype: StrMember
         """
@@ -1453,7 +1453,7 @@ class StrObjectFactory(AnyObject):
 
         :param Reference i_support:
         :param float i_thickness:
-        :param int i_orientation:
+        :param int i_orientation: enum cat_str_material_orientation
         :param tuple i_contour:
         :param float i_offset:
         :param str i_type:
@@ -1507,7 +1507,7 @@ class StrObjectFactory(AnyObject):
                 |             added as an attribute on the plate.
 
         :param float i_thickness:
-        :param int i_orientation:
+        :param int i_orientation: enum cat_str_material_orientation
         :param Reference i_surface:
         :param float i_offset:
         :param str i_type:
@@ -1568,11 +1568,11 @@ class StrObjectFactory(AnyObject):
                 |             added as an attribute on the plate.
 
         :param StrMember i_member:
-        :param int i_side:
+        :param int i_side: enum cat_str_member_extremity
         :param float i_thickness:
         :param float i_height:
         :param float i_width:
-        :param int i_orientation:
+        :param int i_orientation: enum cat_str_material_orientation
         :param str i_type:
         :rtype: StrPlate
         """

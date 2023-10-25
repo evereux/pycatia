@@ -161,6 +161,7 @@ class Shuttle(AnyObject):
                 |     move mode. This can be either shuttle mode (to move the shuttle) or axis mode
                 |     (to simply move the shuttle axis).
 
+        :return: enum cat_shuttle_move_mode
         :rtype: int
         """
 
@@ -169,7 +170,7 @@ class Shuttle(AnyObject):
     @move_mode.setter
     def move_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_shuttle_move_mode
         """
 
         self.shuttle.MoveMode = value
@@ -240,7 +241,7 @@ class Shuttle(AnyObject):
 
         :rtype: Shuttles
         """
-        
+
         from pycatia.fitting_interfaces.shuttles import Shuttles
         return Shuttles(self.shuttle.SubShuttles)
 
@@ -256,6 +257,7 @@ class Shuttle(AnyObject):
                 |     Returns/Stores the validation vector attribute. Role:/b> Retrieves/stores
                 |     the validation vector attribute.
 
+        :return: enum cat_shuttle_vector
         :rtype: int
         """
 
@@ -264,7 +266,7 @@ class Shuttle(AnyObject):
     @vector.setter
     def vector(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_shuttle_vector
         """
 
         self.shuttle.Vector = value

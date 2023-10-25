@@ -187,7 +187,7 @@ class GenericMotionProfile(AnyObject):
                 |             S_OK if the operation succeeds
                 |             E_FAIL otherwise
 
-        :param int basis:
+        :param int basis: enum motion_basis
         :rtype: None
         """
         return self.generic_motion_profile.GetMotionBasis(basis)
@@ -355,7 +355,7 @@ class GenericMotionProfile(AnyObject):
                 |             S_OK if the operation succeeds
                 |             E_FAIL otherwise
 
-        :param int basis:
+        :param int basis: enum motion_basis
         :rtype: None
         """
         return self.generic_motion_profile.SetMotionBasis(basis)

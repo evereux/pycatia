@@ -77,6 +77,7 @@ class ExpertRuleBaseRuntime(Relation):
                 |     1
                 |         LongText
 
+        :return: enum cat_description_length_type
         :rtype: int
         """
 
@@ -85,7 +86,7 @@ class ExpertRuleBaseRuntime(Relation):
     @report_description_length.setter
     def report_description_length(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_description_length_type
         """
 
         self.expert_rule_base_runtime.ReportDescriptionLength = value
@@ -110,6 +111,7 @@ class ExpertRuleBaseRuntime(Relation):
                 |     3
                 |         Email
 
+        :return: enum cat_out_put_format_type
         :rtype: int
         """
 
@@ -118,7 +120,7 @@ class ExpertRuleBaseRuntime(Relation):
     @report_output_format.setter
     def report_output_format(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_out_put_format_type
         """
 
         self.expert_rule_base_runtime.ReportOutPutFormat = value
@@ -165,6 +167,7 @@ class ExpertRuleBaseRuntime(Relation):
                 |     2
                 |         ByState
 
+        :return: enum cat_show_result_type
         :rtype: int
         """
 
@@ -173,7 +176,7 @@ class ExpertRuleBaseRuntime(Relation):
     @report_show_result.setter
     def report_show_result(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_show_result_type
         """
 
         self.expert_rule_base_runtime.ReportShowResult = value
@@ -201,7 +204,7 @@ class ExpertRuleBaseRuntime(Relation):
 
         :rtype: ExpertRuleBase
         """
-        
+
         from pycatia.general_knowledge_interfaces.expert_rule_base import ExpertRuleBase
         return ExpertRuleBase(self.expert_rule_base_runtime.RuleBaseEdition)
 
@@ -233,6 +236,7 @@ class ExpertRuleBaseRuntime(Relation):
                 | 
                 |     Returns or sets the solve option.
 
+        :return: enum cat_solve_type
         :rtype: int
         """
 
@@ -241,7 +245,7 @@ class ExpertRuleBaseRuntime(Relation):
     @solve_type.setter
     def solve_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_solve_type
         """
 
         self.expert_rule_base_runtime.SolveType = value
@@ -264,6 +268,7 @@ class ExpertRuleBaseRuntime(Relation):
                 |     2
                 |         Both
 
+        :return: enum cat_visualization_type
         :rtype: int
         """
 
@@ -272,7 +277,7 @@ class ExpertRuleBaseRuntime(Relation):
     @text_visualization.setter
     def text_visualization(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_visualization_type
         """
 
         self.expert_rule_base_runtime.TextVisualization = value

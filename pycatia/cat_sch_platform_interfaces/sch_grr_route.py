@@ -195,7 +195,7 @@ class SchGRRRoute(AnyObject):
                 |           ...
                 |          objThisIntf.Compress2CatSchIDLRouteUnsetGapsMode_Enum
 
-        :param int i_unset_gaps:
+        :param int i_unset_gaps: enum cat_sch_idl_route_unset_gaps_mode
         :rtype: None
         """
         return self.sch_grr_route.Compress2(i_unset_gaps)
@@ -638,7 +638,7 @@ class SchGRRRoute(AnyObject):
                 |          objThisIntf.SetPathdbVar1,CatSchIDLRouteCompressMode_Enum
 
         :param tuple i_l_db2_pt_path:
-        :param int i_compress:
+        :param int i_compress: enum cat_sch_idl_route_compress_mode
         :rtype: tuple
         """
         return self.sch_grr_route.SetPath(i_l_db2_pt_path, i_compress)
@@ -691,8 +691,8 @@ class SchGRRRoute(AnyObject):
                 |          objThisIntf.SetPath2dbVar1,CatSchIDLRouteCompressMode_Enum,CatSchIDLRouteUnsetGapsMode_Enum
 
         :param tuple i_l_db2_pt_path:
-        :param int i_compress:
-        :param int i_unset_gaps:
+        :param int i_compress: enum cat_sch_idl_route_compress_mode
+        :param int i_unset_gaps: enum cat_sch_idl_route_unset_gaps_mode
         :rtype: tuple
         """
         return self.sch_grr_route.SetPath2(i_l_db2_pt_path, i_compress, i_unset_gaps)
@@ -751,9 +751,9 @@ class SchGRRRoute(AnyObject):
                 |          objThisIntf.SetPath3dbVar1,CatSchIDLRouteCompressMode_Enum,CatSchIDLRouteUnsetGapsMode_Enum,CatSchIDLRouteSymbolUpdateMode_Enum
 
         :param tuple i_l_db2_pt_path:
-        :param int i_compress:
-        :param int i_unset_gaps:
-        :param int i_route_update_symbols:
+        :param int i_compress: enum cat_sch_idl_route_compress_mode
+        :param int i_unset_gaps: enum cat_sch_idl_route_unset_gaps_mode
+        :param int i_route_update_symbols: enum cat_sch_idl_route_symbol_update_mode
         :rtype: tuple
         """
         return self.sch_grr_route.SetPath3(i_l_db2_pt_path, i_compress, i_unset_gaps, i_route_update_symbols)

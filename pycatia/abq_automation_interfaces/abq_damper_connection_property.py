@@ -86,6 +86,7 @@ class ABQDamperConnectionProperty(ABQProperty):
                 |         ABQ_LINE
                 |         ABQ_NON_LINEAR
 
+        :return: enum spring_def_type
         :rtype: int
         """
 
@@ -94,7 +95,7 @@ class ABQDamperConnectionProperty(ABQProperty):
     @damper_def.setter
     def damper_def(self, value: int):
         """
-        :param int value:
+        :param int value: enum spring_def_type
         """
 
         self.abq_damper_connection_property.DamperDef = value
@@ -118,6 +119,7 @@ class ABQDamperConnectionProperty(ABQProperty):
                 |         AXIAL
                 |         GENERAL
 
+        :return: enum spring_type_type
         :rtype: int
         """
 
@@ -126,7 +128,7 @@ class ABQDamperConnectionProperty(ABQProperty):
     @damper_type.setter
     def damper_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum spring_type_type
         """
 
         self.abq_damper_connection_property.DamperType = value
@@ -203,7 +205,7 @@ class ABQDamperConnectionProperty(ABQProperty):
                 |         oDampingValue
                 |             The Dampingvalue.
 
-        :param int i_dof:
+        :param int i_dof: enum spring_dof_type
         :rtype: float
         """
         return self.abq_damper_connection_property.GetLinearDamping(i_dof)
@@ -243,7 +245,7 @@ class ABQDamperConnectionProperty(ABQProperty):
                 | 
                 |             Refer: CATSafeArrayVariant
 
-        :param int i_dof:
+        :param int i_dof: enum spring_dof_type
         :param tuple o_force_array:
         :param tuple o_velocity_array:
         :rtype: None
@@ -297,7 +299,7 @@ class ABQDamperConnectionProperty(ABQProperty):
                 |             The complete path of the text file which contains the damping
                 |             data.
 
-        :param int i_dof:
+        :param int i_dof: enum spring_dof_type
         :param str i_file_name:
         :rtype: None
         """
@@ -341,7 +343,7 @@ class ABQDamperConnectionProperty(ABQProperty):
                 |             UR2_DOF
                 |             UR3_DOF
 
-        :param int i_dof:
+        :param int i_dof: enum spring_dof_type
         :rtype: None
         """
         return self.abq_damper_connection_property.RemoveDof(i_dof)
@@ -376,7 +378,7 @@ class ABQDamperConnectionProperty(ABQProperty):
                 |         iDampingValue
                 |             The Dampingvalue.
 
-        :param int i_dof:
+        :param int i_dof: enum spring_dof_type
         :param float i_damping_value:
         :rtype: None
         """
@@ -419,7 +421,7 @@ class ABQDamperConnectionProperty(ABQProperty):
                 | 
                 |             Refer: CATSafeArrayVariant
 
-        :param int i_dof:
+        :param int i_dof: enum spring_dof_type
         :param tuple i_force_array:
         :param tuple i_velocity_array:
         :rtype: None

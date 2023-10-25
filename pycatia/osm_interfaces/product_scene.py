@@ -59,6 +59,7 @@ class ProductScene(AnyObject):
                 |             Dim type As CatSceneType
                 |             type = NewSceneDelta.Type
 
+        :return: enum cat_scene_type
         :rtype: int
         """
 
@@ -94,7 +95,7 @@ class ProductScene(AnyObject):
                 |             Dim CopyScene As ProductScene
                 |             CopyScene = Configuration1.Copy(type)
 
-        :param int i_type:
+        :param int i_type: enum cat_scene_type
         :rtype: ProductScene
         """
         return ProductScene(self.product_scene.Copy(i_type))

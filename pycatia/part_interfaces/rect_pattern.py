@@ -158,7 +158,7 @@ class RectPattern(Pattern):
     @first_rectangular_pattern_parameters.setter
     def first_rectangular_pattern_parameters(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_rectangular_pattern_parameters
         """
 
         self.rect_pattern.FirstRectangularPatternParameters = value
@@ -278,7 +278,7 @@ class RectPattern(Pattern):
     @second_rectangular_pattern_parameters.setter
     def second_rectangular_pattern_parameters(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_rectangular_pattern_parameters
         """
 
         self.rect_pattern.SecondRectangularPatternParameters = value

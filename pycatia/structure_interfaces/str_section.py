@@ -192,7 +192,7 @@ class StrSection(AnyObject):
                 |          Dim type As Parameter
                 |          Set type = Section_1.GetProperty(CatStrArea)
 
-        :param int i_property:
+        :param int i_property: enum cat_str_section_properties
         :param float o_value:
         :rtype: None
         """

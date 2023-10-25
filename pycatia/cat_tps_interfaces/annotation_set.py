@@ -158,6 +158,7 @@ class AnnotationSet(AnyObject):
                 |         oAnnotationSetType
                 |             Value of Set Type.
 
+        :return: enum cat_annotation_set_type
         :rtype: int
         """
 

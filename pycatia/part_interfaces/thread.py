@@ -209,6 +209,7 @@ class Thread(DressUpShape):
                 | 
                 |              Set ThreadSide = firstthreadoThreadSide
 
+        :return: enum cat_thread_side
         :rtype: int
         """
 
@@ -217,7 +218,7 @@ class Thread(DressUpShape):
     @side.setter
     def side(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_thread_side
         """
 
         self.thread.Side = value
@@ -274,7 +275,7 @@ class Thread(DressUpShape):
                 |              firstthread.CreateStandardThreadDesignTable
                 |              catMetricThinPitch
 
-        :param int i_standard_type:
+        :param int i_standard_type: enum cat_thread_standard
         :rtype: None
         """
         return self.thread.CreateStandardThreadDesignTable(i_standard_type)
@@ -359,7 +360,7 @@ class Thread(DressUpShape):
                 | 
                 |              firstthread.SetExplicitPolarity catTap
 
-        :param int i_thread_polarity:
+        :param int i_thread_polarity: enum cat_thread_polarity
         :rtype: None
         """
         return self.thread.SetExplicitPolarity(i_thread_polarity)

@@ -13,7 +13,6 @@ from pycatia.system_interfaces.setting_controller import SettingController
 
 
 class SearchSettingAtt(SettingController):
-
     """
         .. note::
             :class: toggle
@@ -109,6 +108,7 @@ class SearchSettingAtt(SettingController):
                 |     Role: The Default Power Input Context Scope attribute manages the default
                 |     context scope to be used when none is typed in the Power Input field
 
+        :return: enum cat_search_context_scope
         :rtype: int
         """
 
@@ -117,7 +117,7 @@ class SearchSettingAtt(SettingController):
     @default_power_input_context_scope.setter
     def default_power_input_context_scope(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_search_context_scope
         """
 
         self.search_setting_att.DefaultPowerInputContextScope = value
@@ -515,4 +515,4 @@ class SearchSettingAtt(SettingController):
         # # return system_service.evaluate(vba_code, 0, vba_function_name, [self.com_object])
 
     def __repr__(self):
-        return f'SearchSettingAtt(name="{ self.name }")'
+        return f'SearchSettingAtt(name="{self.name}")'

@@ -14,7 +14,6 @@ from pycatia.in_interfaces.window import Window
 
 
 class SpecsAndGeomWindow(Window):
-
     """
         .. note::
             :class: toggle
@@ -65,6 +64,7 @@ class SpecsAndGeomWindow(Window):
                 | 
                 |          MyCADWindow.Layout = catWindowGeomOnly
 
+        :return: enum cat_specs_and_geom_window_layout
         :rtype: int
         """
 
@@ -73,7 +73,7 @@ class SpecsAndGeomWindow(Window):
     @layout.setter
     def layout(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_specs_and_geom_window_layout
         """
 
         self.specs_and_geom_window.Layout = value
@@ -102,4 +102,4 @@ class SpecsAndGeomWindow(Window):
         return SpecsViewer(self.specs_and_geom_window.SpecsViewer)
 
     def __repr__(self):
-        return f'SpecsAndGeomWindow(name="{ self.name }")'
+        return f'SpecsAndGeomWindow(name="{self.name}")'

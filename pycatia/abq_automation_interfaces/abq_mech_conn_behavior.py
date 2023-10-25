@@ -286,6 +286,7 @@ class ABQMechConnBehavior(ABQProperty):
                 |         FRICTIONLESS
                 |         PENALTY
 
+        :return: enum formulation_type
         :rtype: int
         """
 
@@ -294,7 +295,7 @@ class ABQMechConnBehavior(ABQProperty):
     @formulation.setter
     def formulation(self, value: int):
         """
-        :param int value:
+        :param int value: enum formulation_type
         """
 
         self.abq_mech_conn_behavior.Formulation = value
@@ -347,6 +348,7 @@ class ABQMechConnBehavior(ABQProperty):
                 |         DEFAULT
                 |         STIFF_VALUE
 
+        :return: enum max_stiffness_type
         :rtype: int
         """
 
@@ -355,7 +357,7 @@ class ABQMechConnBehavior(ABQProperty):
     @max_stiffness.setter
     def max_stiffness(self, value: int):
         """
-        :param int value:
+        :param int value: enum max_stiffness_type
         """
 
         self.abq_mech_conn_behavior.MaxStiffness = value
@@ -438,6 +440,7 @@ class ABQMechConnBehavior(ABQProperty):
                 |         LINEAR
                 |         TABULAR
 
+        :return: enum pressure_overclosure_type
         :rtype: int
         """
 
@@ -446,7 +449,7 @@ class ABQMechConnBehavior(ABQProperty):
     @pressure_overclosure.setter
     def pressure_overclosure(self, value: int):
         """
-        :param int value:
+        :param int value: enum pressure_overclosure_type
         """
 
         self.abq_mech_conn_behavior.PressureOverclosure = value

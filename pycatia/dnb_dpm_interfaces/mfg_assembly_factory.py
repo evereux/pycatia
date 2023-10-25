@@ -89,7 +89,7 @@ class MfgAssemblyFactory(AnyObject):
 
         :param str i_name_bstr:
         :param str i_part_number_bstr:
-        :param int i_type:
+        :param int i_type: enum dnbia_mfg_assembly_type
         :rtype: Item
         """
         return Item(self.mfg_assembly_factory.CreateMfgAssembly(i_name_bstr, i_part_number_bstr, i_type))
@@ -154,7 +154,7 @@ class MfgAssemblyFactory(AnyObject):
                 |                  matype,nbMfgAssemblies
                 |                  MsgBox  nbMfgAssemblies
 
-        :param int i_type:
+        :param int i_type: enum dnbia_mfg_assembly_type
         :param int o_num_of_mfg_assemblies:
         :rtype: None
         """
@@ -356,7 +356,7 @@ class MfgAssemblyFactory(AnyObject):
                 |                  objMAfact.RetriveALLMfgAssy
                 |                  matype,MAList,NbMA
 
-        :param int i_type:
+        :param int i_type: enum dnbia_mfg_assembly_type
         :param tuple o_all_m_as:
         :param int o_num_of_mfg_assemblies:
         :rtype: AnyObject

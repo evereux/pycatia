@@ -167,7 +167,7 @@ class Viewer(AnyObject):
                 | 
                 |              MyViewer.CaptureToFile catCaptureFormatBMP, "e:\\MyImage.bmp"
 
-        :param int i_format:
+        :param int i_format: enum cat_capture_format
         :param str i_file:
         :rtype: None
         """

@@ -91,7 +91,7 @@ class SWKHmiWorkbench(AnyObject):
                 |     Member of SWKHumanModelingItf.SWKHmiWorkbench
 
         :param str pi_manikin_name:
-        :param int pi_sex:
+        :param int pi_sex: enum swk_anthro_sex
         :param float pi_percentile:
         :param int pi_population:
         :rtype: SWKHumanCatalog
@@ -118,7 +118,7 @@ class SWKHmiWorkbench(AnyObject):
                 |     Member of SWKHumanModelingItf.SWKHmiWorkbench
 
         :param str pi_manikin_name:
-        :param int pi_sex:
+        :param int pi_sex: enum swk_anthro_sex
         :param float pi_percentile:
         :param int pi_population:
         :rtype: SWKHumanCatalog
@@ -144,7 +144,7 @@ class SWKHmiWorkbench(AnyObject):
                 |     Member of SWKHumanModelingItf.SWKHmiWorkbench
 
         :param str pi_manikin_name:
-        :param int pi_sex:
+        :param int pi_sex: enum swk_anthro_sex
         :param float pi_percentile:
         :param int pi_population:
         :rtype: SWKHumanCatalog

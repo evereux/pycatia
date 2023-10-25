@@ -106,6 +106,7 @@ class ABQFastenedPair(ABQInteraction):
                 |         SURFACETOSURFACE
                 |         NODETOSURFACE
 
+        :return: enum formulation_option_type
         :rtype: int
         """
 
@@ -114,7 +115,7 @@ class ABQFastenedPair(ABQInteraction):
     @formulation_option.setter
     def formulation_option(self, value: int):
         """
-        :param int value:
+        :param int value: enum formulation_option_type
         """
 
         self.abq_fastened_pair.FormulationOption = value
@@ -210,6 +211,7 @@ class ABQFastenedPair(ABQInteraction):
                 |         COMPUTED
                 |         SPECIFIED
 
+        :return: enum position_tolerance_type
         :rtype: int
         """
 
@@ -218,7 +220,7 @@ class ABQFastenedPair(ABQInteraction):
     @position_tolerance.setter
     def position_tolerance(self, value: int):
         """
-        :param int value:
+        :param int value: enum position_tolerance_type
         """
 
         self.abq_fastened_pair.PositionTolerance = value

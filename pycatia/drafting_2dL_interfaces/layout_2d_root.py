@@ -152,6 +152,7 @@ class Layout2DRoot(AnyObject):
                 |          Set MyRoot = CATIA.ActiveDocument.Part.GetItem("CATLayout2DRoot)"
                 |          MyRoot. RenderingMode  = catRenderShadingWithEdges
 
+        :return: enum cat_rendering_mode
         :rtype: int
         """
 
@@ -160,7 +161,7 @@ class Layout2DRoot(AnyObject):
     @rendering_mode.setter
     def rendering_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_rendering_mode
         """
 
         self.layout_2d_root.RenderingMode = value
@@ -212,6 +213,7 @@ class Layout2DRoot(AnyObject):
                 |          Set MyRoot = CATIA.ActiveDocument.Part.GetItem("CATLayout2DRoot)"
                 |          MyRoot.Standard = catISO
 
+        :return: enum cat_drawing_standard
         :rtype: int
         """
 
@@ -220,7 +222,7 @@ class Layout2DRoot(AnyObject):
     @standard.setter
     def standard(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_drawing_standard
         """
 
         self.layout_2d_root.Standard = value
@@ -241,6 +243,7 @@ class Layout2DRoot(AnyObject):
                 |     See also:
                 |         CatVisuIn3DMode
 
+        :return: enum cat_visu_in_3d_mode
         :rtype: int
         """
 
@@ -249,7 +252,7 @@ class Layout2DRoot(AnyObject):
     @visu_in_3d.setter
     def visu_in_3d(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_visu_in_3d_mode
         """
 
         self.layout_2d_root.VisuIn3D = value

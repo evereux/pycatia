@@ -46,6 +46,7 @@ class DraftingSettingAtt(SettingController):
                 | 
                 |     Returns the CreateNewSheetFrom parameter.
 
+        :return: enum cat_drw_new_sheet_from
         :rtype: int
         """
 
@@ -54,7 +55,7 @@ class DraftingSettingAtt(SettingController):
     @create_new_sheet_from.setter
     def create_new_sheet_from(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_drw_new_sheet_from
         """
 
         self.drafting_setting_att.CreateNewSheetFrom = value

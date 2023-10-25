@@ -66,6 +66,7 @@ class DrawingSheet(AnyObject):
                 | 
                 |          MySheet.GenViewsPosMode = catFixedAxis
 
+        :return: enum cat_sheet_gen_views_pos_mode
         :rtype: int
         """
 
@@ -74,7 +75,7 @@ class DrawingSheet(AnyObject):
     @gen_views_pos_mode.setter
     def gen_views_pos_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_sheet_gen_views_pos_mode
         """
 
         self.drawing_sheet.GenViewsPosMode = value
@@ -96,6 +97,7 @@ class DrawingSheet(AnyObject):
                 | 
                 |          MySheet.Orientation = catPaperLandscape
 
+        :return: enum cat_paper_orientation
         :rtype: int
         """
 
@@ -104,7 +106,7 @@ class DrawingSheet(AnyObject):
     @orientation.setter
     def orientation(self, value: int):
         """
-        :param enum cat_paper_orientation value:
+        :param int value: enum cat_paper_orientation
         """
 
         self.drawing_sheet.Orientation = value
@@ -149,6 +151,7 @@ class DrawingSheet(AnyObject):
                 | 
                 |          MySheet.PaperSize = catPaperA4
 
+        :return: enum cat_paper_size
         :rtype: int
         """
 
@@ -157,7 +160,7 @@ class DrawingSheet(AnyObject):
     @paper_size.setter
     def paper_size(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_paper_size
         """
 
         self.drawing_sheet.PaperSize = value
@@ -202,6 +205,7 @@ class DrawingSheet(AnyObject):
                 | 
                 |          MySheet.ProjectionMethod = catFirstAngle
 
+        :return: enum cat_sheet_projection_method
         :rtype: int
         """
 
@@ -210,7 +214,7 @@ class DrawingSheet(AnyObject):
     @projection_method.setter
     def projection_method(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_sheet_projection_method
         """
 
         self.drawing_sheet.ProjectionMethod = value

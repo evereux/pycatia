@@ -91,7 +91,7 @@ class ABQImageQuery(AnyObject):
 
         :param AnalysisImages i_images_list:
         :param AnalysisEntity i_group:
-        :param int i_type:
+        :param int i_type: enum abq_entity_type
         :param str i_file:
         :rtype: None
         """
@@ -161,7 +161,7 @@ class ABQImageQuery(AnyObject):
 
         :param AnalysisImages i_images_list:
         :param tuple i_list_numbers:
-        :param int i_type:
+        :param int i_type: enum abq_entity_type
         :param str i_file:
         :rtype: None
         """

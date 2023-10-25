@@ -1023,7 +1023,7 @@ class Application(AnyObject):
 
         :param str i_title:
         :param str i_extension:
-        :param CatFileSelectionMode i_mode:
+        :param int i_mode: enum cat_file_selection_mode
         :rtype: str
         """
         return self.com_object.FileSelectionBox(i_title, i_extension, i_mode)

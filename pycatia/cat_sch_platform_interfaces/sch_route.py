@@ -847,7 +847,7 @@ class SchRoute(AnyObject):
                 |           ...
                 |          objThisIntf.ReshapeExtremity2CatSchIDLRouteMode_Enum,objArg2,objArg3,dbVar4
 
-        :param int i_e_route_mode:
+        :param int i_e_route_mode: enum cat_sch_idl_route_mode
         :param SchGRRRoute i_grr:
         :param SchAppConnector i_route_cntr:
         :param tuple i_db2_pt_to_move_cntr_to:

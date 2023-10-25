@@ -196,7 +196,7 @@ class Sampled(AnyObject):
                 |             (1)
 
         :param AnyObject i_object:
-        :param int i_analysis_mode:
+        :param int i_analysis_mode: enum cat_sampled_analysis_mode
         :param bool i_monitor_mode:
         :rtype: None
         """
@@ -332,7 +332,7 @@ class Sampled(AnyObject):
                 | 
                 |     Returns or sets the Sampled object.
 
-        :param int i_type:
+        :param int i_type: enum cat_sampled_split_type
         :param int i_indice:
         :rtype: None
         """

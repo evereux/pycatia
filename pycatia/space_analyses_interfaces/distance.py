@@ -338,23 +338,18 @@ class Distance(AnyObject):
                 | 
                 |     Example:
                 | 
-                |              The first example retrieves the type of NewDistance
-                |              Distance.
-                |             
-                | 
+                |             The first example retrieves the type of NewDistance
+                |             Distance.
+                |
                 |             Dim MeasureType As CatDistanceMeasureType
                 |             MeasureType = NewDistance.MeasureType
-                |             
-                | 
-                | 
-                |             
-                | 
-                |                 The second example sets the Type of NewDistance
-                |                 Distance.
-                |                 
-                | 
-                |                 NewDistance.MeasureType = CatDistanceMeasureTypeMinimum
+                |
+                |             The second example sets the Type of NewDistance
+                |             Distance.
+                |
+                |             NewDistance.MeasureType = CatDistanceMeasureTypeMinimum
 
+        :return: enum cat_distance_measure_type
         :rtype: int
         """
 
@@ -363,7 +358,7 @@ class Distance(AnyObject):
     @measure_type.setter
     def measure_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_distance_measure_type
         """
 
         self.distance.MeasureType = value

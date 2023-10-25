@@ -144,7 +144,7 @@ class SewSurface(SurfaceBasedShape):
     @sewing_intersection_mode.setter
     def sewing_intersection_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_sewing_intersection_mode
         """
 
         self.sew_surface.SewingIntersectionMode = value
@@ -178,7 +178,7 @@ class SewSurface(SurfaceBasedShape):
     @sewing_side.setter
     def sewing_side(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_split_side
         """
 
         self.sew_surface.SewingSide = value

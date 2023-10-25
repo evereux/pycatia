@@ -99,7 +99,7 @@ class Measurable(AnyObject):
             |   AGeometryName = NewMeasurable.GeometryName
 
 
-        :return: enum measurable_name
+        :return: enum cat_measurable_name
         :return: int
         """
 

@@ -62,6 +62,7 @@ class AssemblyHole(AssemblyFeature):
                 |          Set holeAnchorMode = assemblyHole.AnchorMode
                 |          assemblyHole.AnchorMode = catMiddlePointHoleAnchor
 
+        :return: enum cat_hole_anchor_mode
         :rtype: int
         """
 
@@ -70,7 +71,7 @@ class AssemblyHole(AssemblyFeature):
     @anchor_mode.setter
     def anchor_mode(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_hole_anchor_mode
         """
 
         self.assembly_hole.AnchorMode = value
@@ -145,6 +146,7 @@ class AssemblyHole(AssemblyFeature):
                 |          Set holeBottomType = assemblyHole.BottomType
                 |          assemblyHole.BottomType = catVHoleBottom
 
+        :return: enum cat_hole_bottom_type
         :rtype: int
         """
 
@@ -153,7 +155,7 @@ class AssemblyHole(AssemblyFeature):
     @bottom_type.setter
     def bottom_type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_hole_bottom_type
         """
 
         self.assembly_hole.BottomType = value
@@ -326,6 +328,7 @@ class AssemblyHole(AssemblyFeature):
                 |          Set holeType = assemblyHole.Type
                 |          assemblyHole.Type = catTaperedHole
 
+        :return: enum cat_hole_type
         :rtype: int
         """
 
@@ -334,7 +337,7 @@ class AssemblyHole(AssemblyFeature):
     @type.setter
     def type(self, value: int):
         """
-        :param int value:
+        :param int value: enum cat_hole_type
         """
 
         self.assembly_hole.Type = value
