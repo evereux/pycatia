@@ -985,7 +985,7 @@ cat_manufacturing_precedence_type = (
     "catPrecedenceTypeBefore",
 )
 
-cat_marker2_d_type = (
+cat_marker_2d_type = (
     "catMarker2DTypeLine",
     "catMarker2DTypeArrow",
     "catMarker2DTypeRectangle",
@@ -995,7 +995,7 @@ cat_marker2_d_type = (
     "catMarker2DTypePicture",
 )
 
-cat_marker3_d_type = (
+cat_marker_3d_type = (
     "catMarker3DTypeText",
 )
 
@@ -1858,7 +1858,7 @@ cat_tree_type_enum = (
     "catTreeTypeRelational",
 )
 
-cat_view2_d_mode_visu = (
+cat_view_2d_mode_visu = (
     "catView2DModeNotActivated",
     "catView2DModeNoShow",
 )
@@ -1929,7 +1929,7 @@ cat_visu_background_mode = (
     "catLowIntNoPick",
 )
 
-cat_visu_in3_d_mode = (
+cat_visu_in_3d_mode = (
     "catShowAll",
     "catHideAll",
 )
