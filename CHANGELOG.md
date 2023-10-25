@@ -6,7 +6,7 @@
 * added references for all enumeration_types throughout pycatia where I could
   find them. These are labelled for example `:param int value: enum cat_circular_pattern_parameters`.
 * various typing hinting additions where they were missing.
-*
+* Extended `parameters.item()` for parameter type lists. @Mithro86
 
 ## 0.6.2
 
