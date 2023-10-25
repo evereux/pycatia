@@ -417,21 +417,25 @@ class Parameters(Collection):
         if not self.is_parameter(index):
             raise CATIAApplicationException(f'Could not find parameter name "{index}".')
 
-        if isinstance(self.parameters.Item(index).value, bool):
-            p = BoolParam(self.parameters.Item(index))
+        if not self.is_list_parameter(index):
 
-        elif isinstance(self.parameters.Item(index).value, int):
-            p = IntParam(self.parameters.Item(index))
+            if isinstance(self.parameters.Item(index).value, bool):
+                p = BoolParam(self.parameters.Item(index))
 
-        elif isinstance(self.parameters.Item(index).value, str):
-            p = StrParam(self.parameters.Item(index))
+            elif isinstance(self.parameters.Item(index).value, int):
+                p = IntParam(self.parameters.Item(index))
 
-        elif isinstance(self.parameters.Item(index).value, float):
-            p = RealParam(self.parameters.Item(index))
+            elif isinstance(self.parameters.Item(index).value, str):
+                p = StrParam(self.parameters.Item(index))
+
+            elif isinstance(self.parameters.Item(index).value, float):
+                p = RealParam(self.parameters.Item(index))
+
+            else:
+                raise CATIAApplicationException(f'Could not assign parameter name "{index}".')
 
         else:
-
-            raise CATIAApplicationException(f'Could not assign parameter name "{index}".')
+            p = ListParameter(self.parameters.Item(index))
 
         return p
 
