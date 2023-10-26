@@ -5,7 +5,9 @@
     Example - Product - 001
 
     Description:
-        Assembly Design: Reorder a Product tree alphabetically. The Product shall already be loaded.
+        Assembly Design: Reorder a Product tree alphabetically. The Product
+        shall already be loaded.
+
         Sort a product tree like this:
 
             Product1
@@ -34,6 +36,11 @@
                 |- Product3 (Product3.1)
                 |- Product4 (Product4.1)
 
+        Please note the use of sleep = 0.25. This is because the
+        caa.start_command('Graph tree reordering') isn't thread locking so the
+        script continues to run while the "Graph Tree" is launching. This can
+        cause issues for pywinauto finding the windows it needs.
+
     Requirements:
         - pywinauto installed (pip install pywinauto).
         - An open product document with children that need sorting.
@@ -44,8 +51,6 @@
 
         You will need to manually install package pywinauto to run this script.
         Also, the placement of `from pywinauto import Desktop` is important.
-
-        This seems to fragile. Sometimes it works for me sometimes it doesn't.
 
 """
 
@@ -58,32 +63,69 @@ import sys
 sys.path.insert(0, os.path.abspath("..\\pycatia"))
 ##########################################################
 
-# todo: explore why this is so fragile.
+import time
+from typing import Optional
 
 from pywinauto import Desktop
+from pywinauto.controls.win32_controls import ButtonWrapper
+from pywinauto.controls.win32_controls import ListBoxWrapper
 
 from pycatia import catia
 from pycatia.product_structure_interfaces.product import Product
 from pycatia.product_structure_interfaces.product_document import ProductDocument
 
-# Keep in mind, that almost all CATIA commands and windows are dependent on the UI language.
-# In order for this example to work you need to set your CATIA to english, or use the correct
-# translation of the command or window text.
-reorder_cmd_name = "Graph tree reordering"
-# reorder_cmd_name = "Neuordnung des Grafikbaums"
-reorder_window_name = "Graph tree reordering"
-# reorder_window_name = "Neuordnung des Grafikstrukturbaums"
-window_text_ok = "OK"
-# window_text_ok = "OK"
-window_text_apply = "Apply"
-# window_text_apply = "Anwenden"
-window_text_move_up = "Move Up"
-# window_text_move_up = "Nach oben verschieben"
-window_text_move_down = "Move Down"
-# window_text_move_down = "Nach unten verschieben"
-window_text_list_box = "ListProd"
-# window_text_list_box = "ListProd"
+lang = 'EN'  # only EN and DE currently supported, more translations welcomed.
+sleep = 0.25
 
+text_translations = {
+    'OK': {
+        'EN': 'OK',
+        'DE': 'OK',
+    },
+    'Apply': {
+        'EN': 'Apply',
+        'DE': 'Anwenden',
+    },
+    'Move Up': {
+        'EN': 'Move Up',
+        'DE': 'Nach oben verschieben',
+    },
+    'Move Down': {
+        'EN': 'Move Down',
+        'DE': 'Nach unten verschieben',
+    },
+    'List box': {
+        'EN': 'ListProd',
+        'DE': 'ListProd',
+    },
+    'graph_tree_cmd': {
+        'EN': 'Graph tree Reordering',
+        'DE': 'Neuordnung des Grafikbaums',
+    },
+    'graph_tree_window_name': {
+        'EN': 'Graph tree reordering',
+        'DE': 'Neuordnung des Grafikstrukturbaums'
+    }
+}
+
+
+def get_window_text(window_text_translations: dict, lang):
+    """
+
+    :param dict window_text_translations:
+    :param str lang:
+    :return: dict
+    """
+    _window_text = {}
+
+    for label in window_text_translations:
+        translation = window_text_translations[label][lang]
+        _window_text[label] = translation
+
+    return _window_text
+
+
+window_text = get_window_text(text_translations, lang)
 
 caa = catia()
 document = ProductDocument(caa.active_document.com_object)
@@ -95,53 +137,47 @@ product = Product(document.product.com_object)
 # But declaring 'document' and 'product' this way, your linter can't resolve the
 # product reference, see https://github.com/evereux/pycatia/issues/107#issuecomment-1336195688
 
-# create the selection object.
 selection = document.selection
-# add the product to the selection.
+selection.clear()
 selection.add(product)
-# open the Graph tree reordering window.
-caa.start_command(reorder_cmd_name)
+caa.start_command(window_text['graph_tree_cmd'])
 # that's it for pycatia.
 
-# if the import is placed at the top of the file the pycatia steps above will
-# not work.
+time.sleep(sleep)
 
 windows = Desktop().windows()
 
 graph_window = None
 for window in windows:
-    if "tree" in window.window_text():
-        print(window.window_text())
-    if reorder_window_name in window.window_text():
+    if window_text['graph_tree_window_name'] in window.window_text():
         graph_window = window
 
 if not graph_window:
     raise AttributeError("Could not find Graph tree reordering window.")
 
-# initialise the btn variables
-btn_move_up = None
-# btn_move_down = None
-btn_ok = None
-btn_apply = None
-list_box = None
+btn_move_up: Optional[ButtonWrapper] = None
+btn_move_down: Optional[ButtonWrapper] = None
+btn_ok: Optional[ButtonWrapper] = None
+btn_apply: Optional[ButtonWrapper] = None
+list_box: Optional[ListBoxWrapper] = None
+
 # loop through Graph tree reordering window and find the buttons we need and
 # the list_box.
-
 for child in graph_window.children():
-    print(child.window_text())
-
-
-for child in graph_window.children():
-    if child.window_text() == window_text_ok:
+    if child.window_text() == window_text['OK']:
         btn_ok = child
-    if child.window_text() == window_text_apply:
+    if child.window_text() == window_text['Apply']:
         btn_apply = child
-    if child.window_text() == window_text_move_up:
+    if child.window_text() == window_text['Move Up']:
         btn_move_up = child
-    if child.window_text() == window_text_move_down:
+    if child.window_text() == window_text['Move Down']:
         btn_move_down = child
-    if child.window_text() == window_text_list_box:
+    if child.window_text() == window_text['List box']:
         list_box = child
+
+btn_list = [btn_move_up, btn_ok, btn_apply, list_box]
+if not any(btn_list):
+    raise ValueError(f'One of the buttons has not been found. {btn_list}')
 
 # create a text list of the items in the list box and sort them.
 tree_items = []
