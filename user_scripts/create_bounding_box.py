@@ -119,7 +119,7 @@ if output == 'Cancel':
     logger.info('Existing Script.')
     exit()
 
-selected_face = selection.item(1).value
+selected_face = selection.item(1).reference
 extracted_face = hybrid_shape_factory.add_new_extract(selected_face)
 extracted_face.propagation_type = 1
 extracted_face.complementary_extract = False
