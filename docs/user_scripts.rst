@@ -6,6 +6,8 @@ User created scripts that are more advanced than the :ref:`examples`.
 Index
 -----
 
+:ref:`CREATE BOUNDING BOX<Create Bouding Box>`
+
 :ref:`CREATE PARAMETERS FROM YAML<Create Parameters From YAML>`
 
 :ref:`CREATE LINES NORMAL TO SURFACE<Create Lines Normal To Surface>`
@@ -15,6 +17,17 @@ Index
 :ref:`RENAME INSTANCES IN PRODUCT<Rename Instances In Product>`
 
 :ref:`WING SURFACE FROM NACA PROFILE<Wing Surface From Naca Profile>`
+
+
+CREATE BOUDING BOX
+------------------
+
+Creates a bounding box around the selected Body using the selected AxisSystem
+to orientate the bounding box.
+
+See script header for more information.
+
+`Create Bounding Box <https://github.com/evereux/pycatia/blob/master/user_scripts/create_bounding_box.py>`_
 
 
 
