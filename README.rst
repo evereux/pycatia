@@ -2,6 +2,7 @@
 .. _installation: https://pycatia.readthedocs.io/en/latest/installation.html
 .. _introduction: https://pycatia.readthedocs.io/en/latest/introduction.html
 .. _examples: https://pycatia.readthedocs.io/en/latest/examples.html
+.. _user_scripts: https://pycatia.readthedocs.io/en/latest/user_scripts.html
 .. _pypi.org: https://pypi.org/project/pycatia/
 
 pycatia
@@ -22,8 +23,8 @@ traditional methods will help) please do contribute. Bonus points for adding
 tests too.
 
 I have limited access to CATIA licences / workbenches. Also, there's are many
-modules that I simply don't know what they do. Thus my ability to test things
-is extremely limited.
+modules that I simply don't know what they do. Thus my ability to test and
+support can be limited.
 
 All this said many bugs that exist should be for the most part be quite easy to
 fix using those methods that do work as a reference.
@@ -45,7 +46,7 @@ pycatia accesses these methods by running VBA scripts using the
 public function to it. Otherwise, pycatia uses the VB method directly but
 exposes it within the same python class.
 
-There is now further functionality available which can be seen by looking at
+There is now a lot more functionality available which can be seen by looking at
 the examples provided and reading the API at pycatia.readthedocs.io_.
 
 
@@ -65,7 +66,8 @@ see installation_.
 Usage
 -----
 
-See the introduction_ and examples_ provided via the documentation link.
+See the introduction_,  examples_ and user_scripts_ for a good over view on how
+to use pycatia.
 
 
 Links
@@ -74,10 +76,10 @@ Links
 Releases: pycatia @ pypi.org_
 
 
-Examples
---------
+Examples And Scripts
+--------------------
 
-See the documentation @ examples_.
+See the documentation @ examples_ and user_scripts_.
 
 
 Asking Questions
@@ -85,13 +87,12 @@ Asking Questions
 
 Please read the following with regards to raising questions: https://github.com/evereux/pycatia/issues/28
 
-Please do not email me directly requesting support unless this is business
-related and you would like professional support.
 
 Contributing
 ------------
 
 See CONTRIBUTING.md in root of github repository.
+
 
 Running The Tests
 -----------------
