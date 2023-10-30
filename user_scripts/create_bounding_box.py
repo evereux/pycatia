@@ -312,10 +312,7 @@ ref_plane_offset = part.create_reference_from_object(plane_offset)
 
 part.update()
 
-#############################################################
-# create the line that sweeps around the XY sketch boundary #
-#############################################################
-
+# create the line that sweeps around the XY sketch boundary
 point_inf = hybrid_shape_factory.add_new_point_coord_with_reference(0, 0, 0, ref_point_6)
 point_inf.name = 'Point.Inf'
 gs_bbox.append_hybrid_shape(point_inf)
@@ -355,7 +352,7 @@ ref_sweep = part.create_reference_from_object(sweep)
 part.update()
 
 sf_close_surface = shape_factory.add_new_close_surface(ref_sweep)
-sf_close_surface.name = "BoundingBox"
+sf_close_surface.name = "CloseSurface.BoundingBox"
 
 part.update()
 
